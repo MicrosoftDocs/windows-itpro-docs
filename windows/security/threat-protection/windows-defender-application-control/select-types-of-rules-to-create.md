@@ -13,7 +13,7 @@ author: jgeurten
 ms.reviewer: jsuther1974
 ms.author: vinpa
 manager: aaroncz
-ms.date: 05/09/2023
+ms.date: 05/26/2023
 ms.technology: itpro-security
 ms.topic: article
 ---
@@ -55,7 +55,7 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 | **8 Required:EV Signers** | This option isn't currently supported. | No |
 | **9 Enabled:Advanced Boot Options Menu** | The F8 preboot menu is disabled by default for all WDAC policies. Setting this rule option allows the F8 menu to appear to physically present users. | No |
 | **10 Enabled:Boot Audit on Failure** | Used when the WDAC policy is in enforcement mode. When a boot-critical driver fails during startup, the WDAC policy is placed in audit mode so that Windows loads. Administrators can validate the reason for the failure in the CodeIntegrity event log. | No |
-| **11 Disabled:Script Enforcement** | This option disables script enforcement options, covering PowerShell, Windows Based Script Host (wscript.exe), Windows Console Based Script Host (cscript.exe), HTA files run in Microsoft HTML Application Host (mshta.exe), and MSXML. For more information on script enforcement, see [Script enforcement with WDAC](/windows/security/threat-protection/windows-defender-application-control/design/script-enforcement). <br/> NOTE: This option isn't supported on Windows Server 2016 and shouldn't be used on that operating system. | No |
+| **11 Disabled:Script Enforcement** | This option disables script enforcement options, covering PowerShell, Windows Based Script Host (wscript.exe), Windows Console Based Script Host (cscript.exe), HTA files run in Microsoft HTML Application Host (mshta.exe), and MSXML. For more information on script enforcement, see [Script enforcement with WDAC](/windows/security/threat-protection/windows-defender-application-control/design/script-enforcement). <br/> NOTE: This option isn't supported on Windows Server 2016 or Windows 10 1607 LTSB and shouldn't be used on those operating systems. | No |
 | **12 Required:Enforce Store Applications** | If this rule option is enabled, WDAC policies also apply to Universal Windows applications. | No |
 | **13 Enabled:Managed Installer** | Use this option to automatically allow applications installed by a managed installer. For more information, see [Authorize apps deployed with a WDAC managed installer](configure-authorized-apps-deployed-with-a-managed-installer.md) | Yes |
 | **14 Enabled:Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft's Intelligent Security Graph (ISG). | Yes |
