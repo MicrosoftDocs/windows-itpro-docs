@@ -45,7 +45,7 @@ Alternatively, configure UAC using the [LocalPoliciesSecurityOptions Policy CSP]
 
 You can use security policies to configure how User Account Control works in your organization. They can be configured locally by using the Local Security Policy snap-in (secpol.msc) or configured for the domain, OU, or specific groups by Group Policy.
 
-These policy settings are located in ``Security Settings\Local Policies\Security Options` in the Local Security Policy snap-in.
+These policy settings are located in `Security Settings\Local Policies\Security Options` in the Local Security Policy snap-in.
 
 | Group Policy setting |Default |
 | - | - | 
