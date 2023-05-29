@@ -166,7 +166,6 @@ The blocklist policy below includes "Allow all" rules for both kernel and user m
     <Deny ID="ID_DENY_KILL" FriendlyName="kill.exe" FileName="kill.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_LXRUN" FriendlyName="lxrun.exe" FileName="lxrun.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_LXSS" FriendlyName="LxssManager.dll" FileName="LxssManager.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
-    <Deny ID="ID_DENY_INTUNE_AGENT" FriendlyName="IntuneWindowsAgent.exe" FileName="Microsoft.Management.Services.IntuneWindowsAgent.exe" MinimumFileVersion="1.46.204.0" />
     <Deny ID="ID_DENY_MFC40" FriendlyName="mfc40.dll" FileName="mfc40.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_MS_BUILD" FriendlyName="Microsoft.Build.dll" FileName="Microsoft.Build.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_MS_BUILD_FMWK" FriendlyName="Microsoft.Build.Framework.dll" FileName="Microsoft.Build.Framework.dll" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
@@ -868,7 +867,6 @@ The blocklist policy below includes "Allow all" rules for both kernel and user m
           <FileRuleRef RuleID="ID_DENY_KILL" />
           <FileRuleRef RuleID="ID_DENY_LXSS" />
           <FileRuleRef RuleID="ID_DENY_LXRUN" />
-          <FileRuleRef RuleID="ID_DENY_INTUNE_AGENT" />
           <FileRuleRef RuleID="ID_DENY_MFC40" />
           <FileRuleRef RuleID="ID_DENY_MS_BUILD" />
           <FileRuleRef RuleID="ID_DENY_MS_BUILD_FMWK" />
