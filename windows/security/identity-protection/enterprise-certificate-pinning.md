@@ -8,7 +8,7 @@ ms.date: 05/24/2023
 # Enterprise certificate pinning overview
 
 Enterprise certificate pinning is a Windows feature for remembering (pinning), a root issuing certificate authority, or end-entity certificate, to a domain name.\
-Enterprise certificate pinning helps reducing man-in-the-middle attacks, by protecting internal domain names from chaining to unwanted or fraudulently issued certificates.
+The feature helps to reduce man-in-the-middle attacks by protecting internal domain names from chaining to unwanted or fraudulently issued certificates.
 
 > [!NOTE]
 > External domain names, where the certificate issued to these domains is issued by a public certificate authority, are not ideal for enterprise certificate pinning.
@@ -75,8 +75,8 @@ The **PinRule** element can have the following attributes.
 
 | Attribute | Description | Required |
 |-----------|-------------|----------|
-| **Name**  | Uniquely identifies the **PinRule**. Windows uses this attribute to identify the element for a parsing error or for verbose output. The attribute isn't included in the generated certificate trust list (CTL). | Yes.|
-| **Error** | Describes the action Windows performs when it encounters a PIN mismatch. You can choose from the following string values: <br>- **Revoked** - Windows reports the certificate protecting the site as if it was revoked. This typically prevents the user from accessing the site. <br>- **InvalidName** - Windows reports the certificate protecting the site as if the name on the certificate doesn't match the name of the site. This typically results in prompting the user before accessing the site. <br>- **None** - The default value.  No error is returned. You can use this setting to audit the pin rules without introducing any user friction. | No. |
+| **Name**  | Uniquely identifies the **PinRule**. Windows uses the attribute to identify the element for a parsing error or for verbose output. The attribute isn't included in the generated certificate trust list (CTL). | Yes.|
+| **Error** | Describes the action Windows performs when it encounters a PIN mismatch. You can choose from the following string values: <br>- **Revoked** - Windows reports the certificate protecting the site as if it was revoked. This typically prevents the user from accessing the site. <br>- **InvalidName** - Windows reports the certificate protecting the site as if the name on the certificate doesn't match the name of the site. This typically results in prompting the user before accessing the site. <br>- **None** - The default value.  No error is returned. You can use the setting to audit the pin rules without introducing any user friction. | No. |
 | **Log** | A Boolean value represents a string that equals **true** or **false**. By default, logging is enabled (**true**). | No. |
 
 #### Certificate element
@@ -88,7 +88,7 @@ The **Certificate** element can have the following attributes.
 | **File**  | Path to a file containing one or more certificates.  Where the certificate(s) can be encoded as: <br>- single certificate <br>- p7b <br>- sst <br> These files can also be Base64 formatted.  All **Site** elements included in the same **PinRule** element can match any of these certificates. | Yes (File, Directory, or Base64 must be present). |
 | **Directory** | Path to a directory containing one or more of the above certificate files. Skips any files not containing any certificates. | Yes (File, Directory, or Base64 must be present). | 
 | **Base64** | Base64 encoded certificate(s). Where the certificate(s) can be encoded as: <br>- single certificate <br>- p7b <br> - sst <br> This allows the certificates to be included in the XML file without a file directory dependency. <br> Note: <br> You can use **certutil -encode** to convert a .cer file into base64. You can then use Notepad to copy and paste the base64 encoded certificate into the pin rule.  | Yes (File, Directory, or Base64 must be present). |
-| **EndDate** | Enables you to configure an expiration date for when the certificate is no longer valid in the pin rule. <br>If you are in the process of switching to a new root or CA, you can set the **EndDate** to allow matching of this element's certificates.<br> If the current time is past the **EndDate**, then, when creating the certificate trust list (CTL), the parser outputs a warning message and excludes the certificate(s) from the Pin Rule in the generated CTL.<br> For help with formatting Pin Rules, see [Represent a date in XML](#represent-a-date-in-xml).| No.|
+| **EndDate** | Enables you to configure an expiration date for when the certificate is no longer valid in the pin rule. <br>If you are in the process of switching to a new root or CA, you can set the **EndDate** to allow matching of this element's certificates.<br> If the current time is past the **EndDate**, when creating the certificate trust list (CTL) the parser outputs a warning message and excludes the certificate(s) from the Pin Rule in the generated CTL.<br> For help with formatting Pin Rules, see [Represent a date in XML](#represent-a-date-in-xml).| No.|
 
 #### Site element
 
@@ -96,13 +96,13 @@ The **Site** element can have the following attributes.
 
 | Attribute | Description | Required |
 |-----------|-------------|----------|
-| **Domain** | Contains the DNS name to be matched for this pin rule. When creating the certificate trust list, the parser normalizes the input name string value as follows: <br>- If the DNS name has a leading "*", it's removed. <br>- Non-ASCII DNS name is converted to ASCII Puny Code. <br>- Upper case ASCII characters are converted to lower case. <br>If the normalized name has a leading ".", then wildcard left-hand label matching is enabled. For example, ".xyz.com" would match "abc.xyz.com". | Yes.|
+| **Domain** | Contains the DNS name to be matched for this pin rule. When you create the certificate trust list, the parser normalizes the input name string value as follows: <br>- If the DNS name has a leading "*", it's removed. <br>- Non-ASCII DNS name is converted to ASCII Puny Code. <br>- Upper case ASCII characters are converted to lower case. <br>If the normalized name has a leading ".", then wildcard left-hand label matching is enabled. For example, ".xyz.com" would match "abc.xyz.com". | Yes.|
 | **AllSubdomains** | By default, wildcard left-hand label matching is restricted to a single left-hand label. This attribute can be set to "true" to enable wildcard matching of all of the left-hand labels.<br>For example, setting this attribute would also match "123.abc.xyz.com" for the ".xyz.com" domain value.| No.|
 
 ### Create a pin rules certificate trust list
 
-The command line utility, *Certutil.exe*, includes the *generatePinRulesCTL* argument to parse the XML file and generate the encoded certificate trust list (CTL) that you add to your reference Windows 10 version 1703 computer and subsequently deploy.
-The usage syntax is:
+The *Certutil.exe* command includes the *generatePinRulesCTL* argument. The argument parses the XML file and generates the encoded certificate trust list (CTL) that you add to your reference Windows device and then deploy.
+The syntax is:
 
 ```cmd
 CertUtil [Options] -generatePinRulesCTL XMLFile CTLFile [SSTFile]
@@ -141,16 +141,18 @@ certutil -generatePinRulesCTL certPinRules.xml pinrules.stl
 Now that your certificate pinning rules are in the certificate trust list format, you need to apply the settings to a reference computer as a prerequisite to deploying the setting to your enterprise. 
 To simplify the deployment configuration, it's best to apply your certificate pinning rules to a computer that has the Group Policy Management Console (GPMC) included in the Remote Server Administration Tools (RSAT). 
 
-Use **certutil.exe** to apply your certificate pinning rules to your reference computer using the **setreg** argument. 
-The **setreg** argument takes a secondary argument that determines the location of where certutil writes the certificate pining rules. 
-This secondary argument is **chain\PinRules**. 
-The last argument you provide is the name of file that contains your certificate pinning rules in certificate trust list format (.stl). 
-You'll pass the name of the file as the last argument; however, you need to prefix the file name with the '@' symbol as shown in the following example. 
-You need to perform this command from an elevated command prompt.
+Use *certutil.exe* to apply your certificate pinning rules to your reference computer using the *setreg* argument.\
+The *setreg* argument takes a secondary argument that determines the location of where certutil writes the certificate pining rules.\
+The secondary argument is *chain\PinRules*.\
+The last argument you provide is the name of file that contains your certificate pinning rules in certificate trust list format (`.stl`).\
+You pass the name of the file as the last argument. You must prefix the file name with the `@` symbol as in the following example:
 
-```code
+```cmd
 Certutil -setreg chain\PinRules @pinrules.stl 
 ```
+
+> [!NOTE]
+> You must execute the command from an elevated command prompt.
 
 Certutil writes the binary information to the following registration location:
 
@@ -165,9 +167,9 @@ Certutil writes the binary information to the following registration location:
 
 ### Deploy enterprise pin rule settings using group policy
 
-You've successfully created a certificate pinning rules XML file.
-From the XML file you've created a certificate pinning trust list file, and you've applied the contents of that file to your reference computer from which you can run the Group Policy Management Console.
-Now you need to configure a Group Policy object to include the applied certificate pin rule settings and deploy it to your environment.
+From the XML file, you've created a certificate pinning trust list file. Then, you've applied the content of the file to your reference device from which you can run the Group Policy Management Console.
+
+The next step consists of configuring a group policy object that includes the applied certificate pin rule settings, and deploy it in your environment.
 
 Sign-in to the reference computer using domain administrator equivalent credentials.
 
@@ -184,7 +186,7 @@ Sign-in to the reference computer using domain administrator equivalent credenti
 
   `HKLM\SOFTWARE\Microsoft\Cryptography\OID\EncodingType0\CertDllCreateCertificateChainEngine\Config`
 
-  Click **Select** to close the **Registry Item Browser**.
+  Select **Select** to close the **Registry Item Browser**.
 
 1. The **Key Path** should contain the selected registry key. The **Value name** configuration should contain the registry value name **_PinRules_**. **Value type** should read **_REG\_BINARY_** and **Value data** should contain a long series of numbers from 0-9 and letters ranging from A-F (hexadecimal).  Select **OK** to save your settings and close the dialog box.
 
@@ -195,7 +197,7 @@ Sign-in to the reference computer using domain administrator equivalent credenti
 
 ## Additional pin rules logging
 
-To assist in constructing certificate pinning rules, you can configure the **PinRulesLogDir** setting under the certificate chain configuration registry key to include a parent directory to log pin rules.
+To help constructing certificate pinning rules, you can configure the **PinRulesLogDir** setting under the certificate chain configuration registry key to include a parent directory to log pin rules.
 
 | Name | Value |
 |------|-------|
@@ -209,7 +211,7 @@ To assist in constructing certificate pinning rules, you can configure the **Pin
 The folder in which Windows writes the additional pin rule logs must have permissions so that all users and applications have full access.
 You can run the following commands from an elevated command prompt to achieve the proper permissions.
 
-```code
+```cmd
 set PinRulesLogDir=c:\PinRulesLog
 mkdir %PinRulesLogDir%
 icacls %PinRulesLogDir% /grant *S-1-15-2-1:(OI)(CI)(F)
@@ -218,16 +220,13 @@ icacls %PinRulesLogDir% /grant *S-1-5-12:(OI)(CI)(F)
 icacls %PinRulesLogDir% /inheritance:e /setintegritylevel (OI)(CI)L
 ```
 
-Whenever an application verifies a TLS/SSL certificate chain that contains a server name matching a DNS name in the server certificate, Windows writes a .p7b file consisting of all the certificates in the server's chain to one of three child folders:
+When an application verifies a TLS/SSL certificate chain that contains a server name matching a DNS name in the server certificate, Windows writes a .p7b file consisting of all the certificates in the server's chain to one of three child folders:
 
-- AdminPinRules
-  Matched a site in the enterprise certificate pinning rules.
-- AutoUpdatePinRules
-  Matched a site in the certificate pinning rules managed by Microsoft.
-- NoPinRules
-  Didn't match any site in the certificate pin rules.
+- `AdminPinRules`: Matched a site in the enterprise certificate pinning rules.
+- `AutoUpdatePinRules`: Matched a site in the certificate pinning rules managed by Microsoft.
+- `NoPinRules`: Didn't match any site in the certificate pin rules.
 
-The output file name consists of the leading eight ASCII hex digits of the root's SHA1 thumbprint followed by the server name. 
+The output file name consists of the leading eight ASCII hex digits of the root's SHA1 thumbprint followed by the server name.
 For example:
 
 - `D4DE20D0_xsi.outlook.com.p7b`
@@ -248,7 +247,7 @@ You can then copy and paste the output of the cmdlet into the XML file.
 For simplicity, you can truncate decimal point (.) and the numbers after it. 
 However, be certain to append the uppercase "Z" to the end of the XML date string.
 
-```code
+```cmd
 2015-05-11T07:00:00.2655691Z
 2015-05-11T07:00:00Z
 ```

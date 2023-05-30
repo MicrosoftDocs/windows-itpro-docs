@@ -76,7 +76,7 @@ The elevation prompt color-coding is as follows:
 
 - Gray background: The application is a Windows administrative app, such as a Control Panel item, or an application signed by a verified publisher
   :::image type="content" source="images/uaccredentialpromptsigned.png" alt-text="UAC credential prompt with a signed executable.":::
-- Yellow background: the application is unsigned or signed but isn't trusted by the device
+- Yellow background: the application is unsigned or signed but isn't trusted
   :::image type="content" source="images/uaccredentialpromptunsigned.png" alt-text="UAC consent prompt with an unsigned executable.":::
 
 ### Shield icon
@@ -85,7 +85,7 @@ Some Control Panel items, such as **Date and Time**, contain a combination of ad
 
 :::image type="content" source="images/uacshieldicon.png" alt-text="UAC Shield Icon in Date and Time Properties" border="false":::
 
-The shield icon on the **Change date and time...** button indicates that the process requires a full administrator access token and will display a UAC elevation prompt.
+The shield icon on the **Change date and time...** button indicates that the process requires a full administrator access token.
 
 ## Securing the elevation prompt
 
@@ -117,14 +117,14 @@ To better understand each component, review the following tables:
 
 |Component|Description|
 |--- |--- |
-|<p>Application Information service|<p>A system service that helps start apps that require one or more elevated privileges or user rights to run, such as local administrative tasks, and apps that require higher integrity levels. The Application Information service helps start such apps by creating a new process for the application with an administrative user's full access token when elevation is required and (depending on Group Policy) consent is given by the user to do so.|
+|<p>Application Information service|<p>A system service that helps start apps that require one or more elevated privileges or user rights to run, such as local administrative tasks, and apps that require higher integrity levels. The Application Information service helps start such apps by creating a new process for the application with an administrative user's full access token when elevation is required. Depending on the configured policies, the user may give consent.|
 |<p>Elevating an ActiveX install|<p>If ActiveX isn't installed, the system checks the UAC slider level. If ActiveX is installed, the **User Account Control: Switch to the secure desktop when prompting for elevation** Group Policy setting is checked.|
 |<p>Check UAC slider level|<p>UAC has a slider to select from four levels of notification.<ul><li><p>**Always notify** will:<ul><li>Notify you when programs try to install software or make changes to your computer.</li><li>Notify you when you make changes to Windows settings.</li><li>Freeze other tasks until you respond.</li></ul><p>Recommended if you often install new software or visit unfamiliar websites.<br></li><li><p>**Notify me only when programs try to make changes to my computer** will:<ul><li>Notify you when programs try to install software or make changes to your computer.</li><li>Not notify you when you make changes to Windows settings.</li><li>Freeze other tasks until you respond.</li></ul><p>Recommended if you don't often install apps or visit unfamiliar websites.<br></li><li><p>**Notify me only when programs try to make changes to my computer (do not dim my desktop)** will:<ul><li>Notify you when programs try to install software or make changes to your computer.</li><li>Not notify you when you make changes to Windows settings.</li><li>Not freeze other tasks until you respond.</li></ul><p>Not recommended. Choose this only if it takes a long time to dim the desktop on your computer.<br></li><li><p>**Never notify (Disable UAC prompts)** will:<ul><li>Not notify you when programs try to install software or make changes to your computer.</li><li>Not notify you when you make changes to Windows settings.</li><li>Not freeze other tasks until you respond.</li></ul><p>Not recommended due to security concerns.|
-|<p>Secure desktop enabled|<p>The **User Account Control: Switch to the secure desktop when prompting for elevation** policy setting is checked: <ul><li><p>If the secure desktop is enabled, all elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users.</li><li><p>If the secure desktop isn't enabled, all elevation requests go to the interactive user&#39;s desktop, and the per-user settings for administrators and standard users are used.|
+|<p>Secure desktop enabled|<p>The **User Account Control: Switch to the secure desktop when prompting for elevation** policy setting is checked: <ul><li><p>If the secure desktop is enabled, all elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users.</li><li><p>If the secure desktop isn't enabled, all elevation requests go to the interactive user's desktop, and the per-user settings for administrators and standard users are used.|
 |<p>CreateProcess|<p>CreateProcess calls AppCompat, Fusion, and Installer detection to assess if the app requires elevation. The file is then inspected to determine its requested execution level, which is stored in the application manifest for the file. CreateProcess fails if the requested execution level specified in the manifest doesn't match the access token and returns an error (ERROR_ELEVATION_REQUIRED) to ShellExecute.|
 |<p>AppCompat|<p>The AppCompat database stores information in the application compatibility fix entries for an application.|
 |<p>Fusion|<p>The Fusion database stores information from application manifests that describe the applications. The manifest schema is updated to add a new requested execution level field.|
-|<p>Installer detection|<p>Installer detection detects setup files, which helps prevent installations from being run without the user&#39;s knowledge and consent.|
+|<p>Installer detection|<p>Installer detection detects setup files, which helps prevent installations from being run without the user's knowledge and consent.|
 
 ### Kernel
 
@@ -192,4 +192,4 @@ Before a 32-bit process is created, the following attributes are checked to dete
 
 ## Next steps
 
-Learn more about about [User Account Control settings and configuration](settings-and-configuration.md).
+Learn more about [User Account Control settings and configuration](settings-and-configuration.md).
