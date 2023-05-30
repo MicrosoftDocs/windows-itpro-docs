@@ -77,7 +77,7 @@ The elevation prompt color-coding is as follows:
 - Gray background: The application is a Windows administrative app, such as a Control Panel item, or an application signed by a verified publisher
   :::image type="content" source="images/uac-credential-prompt-signed.png" alt-text="Screenshot showing the UAC credential prompt with a signed executable.":::
 - Yellow background: the application is unsigned or signed but isn't trusted
-  :::image type="content" source="images/uacc-redential-prompt-unsigned.png" alt-text="Screenshot showing the UAC consent prompt with an unsigned executable.":::
+  :::image type="content" source="images/uac-credential-prompt-unsigned.png" alt-text="Screenshot showing the UAC consent prompt with an unsigned executable.":::
 
 ### Shield icon
 
