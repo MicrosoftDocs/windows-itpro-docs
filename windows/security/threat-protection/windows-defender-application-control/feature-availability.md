@@ -8,7 +8,7 @@ author: jgeurten
 ms.reviewer: aaroncz
 ms.author: jogeurte
 manager: aaroncz
-ms.date: 11/02/2022
+ms.date: 05/26/2023
 ms.custom: asr
 ms.topic: overview
 ---
@@ -31,6 +31,7 @@ ms.topic: overview
 | Management solutions   | <ul><li>[Intune](./deployment/deploy-windows-defender-application-control-policies-using-intune.md)</li><li>[Microsoft Configuration Manager](/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager) (limited built-in policies or custom policy deployment via software distribution)</li><li>[Group policy](./deployment/deploy-windows-defender-application-control-policies-using-group-policy.md) </li><li>[Script](/windows/security/threat-protection/windows-defender-application-control/deployment/deploy-wdac-policies-with-script)</li></ul>  | <ul><li>[Intune](/windows/client-management/mdm/applocker-csp) (custom policy deployment via OMA-URI only)</li><li>Configuration Manager (custom policy deployment via software distribution only)</li><li>[Group Policy](./applocker/determine-group-policy-structure-and-rule-enforcement.md)</li><li>PowerShell</li><ul> |
 | Per-User and Per-User group rules | Not available (policies are device-wide).  | Available on Windows 8+.  |
 | Kernel mode policies  | Available on Windows 10, Windows 11, and Windows Server 2016 or later. | Not available. |
+| [Rule option 11 - Disabled:Script Enforcement](/windows/security/threat-protection/windows-defender-application-control/design/script-enforcement)  | Available on all versions of Windows 10 except 1607 LTSB, Windows 11, and Windows Server 2019 and above. **Disabled:Script Enforcement** is not supported on **Windows Server 2016** or on **Windows 10 1607 LTSB** and should not be used on those platforms. Doing so will result in unexpected script enforcement behaviors. | MSI and Script rule collection is separately configurable. |
 | [Per-app rules](/windows/security/threat-protection/windows-defender-application-control/use-windows-defender-application-control-policy-to-control-specific-plug-ins-add-ins-and-modules)  | Available on Windows 10, Windows 11, and Windows Server 2019 or later.  | Not available. |
 | [Managed Installer (MI)](/windows/security/threat-protection/windows-defender-application-control/configure-authorized-apps-deployed-with-a-managed-installer)  | Available on Windows 10, Windows 11, and Windows Server 2019 or later. | Not available. |
 | [Reputation-Based intelligence](/windows/security/threat-protection/windows-defender-application-control/use-windows-defender-application-control-with-intelligent-security-graph)     | Available on Windows 10, Windows 11, and Windows Server 2019 or later.  | Not available. |
