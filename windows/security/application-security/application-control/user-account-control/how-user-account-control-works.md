@@ -75,9 +75,9 @@ The UAC elevation prompts are color-coded to be app-specific, enabling for easie
 The elevation prompt color-coding is as follows:
 
 - Gray background: The application is a Windows administrative app, such as a Control Panel item, or an application signed by a verified publisher
-  :::image type="content" source="images/uaccredentialpromptsigned.png" alt-text="UAC consent prompt.":::
+  :::image type="content" source="images/uaccredentialpromptsigned.png" alt-text="UAC credential prompt with a signed executable.":::
 - Yellow background: the application is unsigned or signed but isn't trusted by the device
-  :::image type="content" source="images/uaccredentialpromptunsigned.png" alt-text="UAC consent prompt.":::
+  :::image type="content" source="images/uaccredentialpromptunsigned.png" alt-text="UAC consent prompt with an unsigned executable.":::
 
 ### Shield icon
 
@@ -188,8 +188,8 @@ Before a 32-bit process is created, the following attributes are checked to dete
 > The keywords and sequences of bytes were derived from common characteristics observed from various installer technologies.
 
 > [!NOTE]
-> The User Account Control: Detect application installations and prompt for elevation policy setting must be enabled for installer detection to detect installation programs. For more info, see [User Account Control security policy settings](user-account-control-security-policy-settings.md).
+> The *User Account Control: Detect application installations and prompt for elevation* policy must be enabled for installer detection to detect installation programs. For more information, see [User Account Control settings list](settings-and-configuration.md#user-account-control-settings-list).
 
 ## Next steps
 
-Learn more about about the [UAC settings and how to configure them](configure.md).
+Learn more about about [User Account Control settings and configuration](settings-and-configuration.md).

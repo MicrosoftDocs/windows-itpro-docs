@@ -125,10 +125,6 @@ landingContent:
   # Card (optional)
   - title: Cloud services
     linkLists:
-      - linkListType: overview
-        links:
-        - text: Overview
-          url: cloud.md
       - linkListType: concept
         links:
         - text: Mobile device management
