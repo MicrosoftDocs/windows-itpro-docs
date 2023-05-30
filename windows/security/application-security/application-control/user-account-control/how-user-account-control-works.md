@@ -29,7 +29,7 @@ To better understand how this process works, let's take a closer look at the Win
 
 The following diagram shows how the sign in process for an administrator differs from the sign in process for a standard user.
 
-![uac windows logon process.](images/uacwindowslogonprocess.gif)
+:::image type="content" source="images/uac-windows-logon-process.gif" alt-text="UAC Windows logon process diagram.":::
 
 By default, both standard and administrator users access resources and execute apps in the security context of a standard user.\
 When a user signs in, the system creates an access token for that user. The access token contains information about the level of access that the user is granted, including specific security identifiers (SIDs) and Windows privileges.
@@ -56,13 +56,13 @@ The default, built-in UAC elevation component for an administrator account in Ad
 
 The credential prompt is presented when a standard user attempts to perform a task that requires a user's administrative access token. Administrators can also be required to provide their credentials by setting the **User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode** policy setting value to **Prompt for credentials**.
 
-:::image type="content" source="images/uaccredentialprompt.png" alt-text="UAC credential prompt.":::
+:::image type="content" source="images/uac-credential-prompt.png" alt-text="Screenshot showing the UAC credential prompt.":::
 
 ### The consent prompt
 
 The consent prompt is presented when a user attempts to perform a task that requires a user's administrative access token.
 
-  :::image type="content" source="images/uacconsentpromptadmin.png" alt-text="UAC consent prompt.":::
+  :::image type="content" source="images/uac-consent-prompt-admin.png" alt-text="Screenshot showing the UAC consent prompt.":::
 
 ### UAC elevation prompts
 
@@ -75,15 +75,15 @@ The UAC elevation prompts are color-coded to be app-specific, enabling for easie
 The elevation prompt color-coding is as follows:
 
 - Gray background: The application is a Windows administrative app, such as a Control Panel item, or an application signed by a verified publisher
-  :::image type="content" source="images/uaccredentialpromptsigned.png" alt-text="UAC credential prompt with a signed executable.":::
+  :::image type="content" source="images/uac-credential-prompt-signed.png" alt-text="Screenshot showing the UAC credential prompt with a signed executable.":::
 - Yellow background: the application is unsigned or signed but isn't trusted
-  :::image type="content" source="images/uaccredentialpromptunsigned.png" alt-text="UAC consent prompt with an unsigned executable.":::
+  :::image type="content" source="images/uacc-redential-prompt-unsigned.png" alt-text="Screenshot showing the UAC consent prompt with an unsigned executable.":::
 
 ### Shield icon
 
 Some Control Panel items, such as **Date and Time**, contain a combination of administrator and standard user operations. Standard users can view the clock and change the time zone, but a full administrator access token is required to change the local system time. The following is a screenshot of the **Date and Time** Control Panel item.
 
-:::image type="content" source="images/uacshieldicon.png" alt-text="UAC Shield Icon in Date and Time Properties" border="false":::
+:::image type="content" source="images/uac-shield-icon.png" alt-text="Screenshot showing the UAC Shield Icon in Date and Time Properties" border="false":::
 
 The shield icon on the **Change date and time...** button indicates that the process requires a full administrator access token.
 
@@ -101,7 +101,7 @@ While malware could present an imitation of the secure desktop, this issue can't
 
 The following diagram details the UAC architecture.
 
-![uac architecture.](images/uacarchitecture.gif)
+:::image type="content" source="images/uac-architecture.gif" alt-text="UAC architecture diagram.":::
 
 To better understand each component, review the following tables:
 

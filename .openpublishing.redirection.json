@@ -21462,22 +21462,22 @@
     },
     {
       "source_path": "windows/security/identity-protection/user-account-control/how-user-account-control-works.md",
-      "redirect_url": "windows/security/application-security/application-control/user-account-control/how-user-account-control-works",
+      "redirect_url": "/windows/security/application-security/application-control/user-account-control/how-user-account-control-works",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/identity-protection/user-account-control/user-account-control-group-policy-and-registry-key-settings.md",
-      "redirect_url": "windows/security/application-security/application-control/user-account-control/settings-and-configuration",
+      "redirect_url": "/windows/security/application-security/application-control/user-account-control/settings-and-configuration",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/identity-protection/user-account-control/user-account-control-security-policy-settings.md",
-      "redirect_url": "windows/security/application-security/application-control/user-account-control/settings-and-configuration",
+      "redirect_url": "/windows/security/application-security/application-control/user-account-control/settings-and-configuration",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/identity-protection/user-account-control/user-account-control-overview.md",
-      "redirect_url": "windows/security/application-security/application-control/user-account-control",
+      "redirect_url": "/windows/security/application-security/application-control/user-account-control",
       "redirect_document_id": false
     }
   ]

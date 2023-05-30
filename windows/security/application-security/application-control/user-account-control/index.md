@@ -24,7 +24,7 @@ When a user tries to perform an action that requires administrative privileges, 
 - If the user approves the change, the action is performed with the highest available privilege
 - If the user doesn't approve the change, the action isn't performed and the application that requested the change is prevented from running
 
-:::image type="content" source="images/uacconsentpromptadmin.png" alt-text="UAC prompt in Windows 11.":::
+:::image type="content" source="images/uac-consent-prompt-admin.png" alt-text="Screenshot showing the UAC consent prompt.":::
 
 When an app requires to run with more than standard user rights, UAC allows users to run apps with their *administrator token* (that is, with administrative rights and permissions) instead of their default, standard user token. Users continue to operate in the standard user security context, while enabling certain apps to run with elevated privileges, if needed.
 
