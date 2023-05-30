@@ -4,7 +4,7 @@ items:
   - name: Overview
     href: user-account-control/index.md
   - name: How UAC works
-    href: user-account-control/how-user-account-control-works.md
+    href: user-account-control/how-it-works.md
   - name: UAC settings and configuration
     href: user-account-control/settings-and-configuration.md
 - name: Windows Defender Application Control and virtualization-based protection of code integrity

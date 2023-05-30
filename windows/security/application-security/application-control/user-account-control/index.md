@@ -32,5 +32,5 @@ When an app requires to run with more than standard user rights, UAC allows user
 
 ## Next steps
 
-- [How User Account Control works](how-user-account-control-works.md)
+- [How User Account Control works](how-it-works.md)
 - [User Account Control settings and configuration](settings-and-configuration.md)
