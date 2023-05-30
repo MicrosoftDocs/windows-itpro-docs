@@ -2,7 +2,6 @@
 title: Deploy Windows 10 in a school district 
 description: Learn how to deploy Windows 10 in a school district. Integrate the school environment with Office 365, Active Directory Domain Services (AD DS), and Microsoft Azure Active Directory (Azure AD), use Microsoft Configuration Manager, Intune, and Group Policy to manage devices.
 ms.topic: how-to
-ms.author: scbree
 ms.date: 08/10/2022
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
