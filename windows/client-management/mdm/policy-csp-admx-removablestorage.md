@@ -4,7 +4,7 @@ description: Learn more about the ADMX_RemovableStorage Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_RemovableStorage-Begin -->
 # Policy CSP - ADMX_RemovableStorage
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_RemovableStorage-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- AccessRights_RebootTime_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AccessRights_RebootTime_1-Applicability-End -->
 
 <!-- AccessRights_RebootTime_1-OmaUri-Begin -->
@@ -46,10 +43,10 @@ This policy setting configures the amount of time (in seconds) that the operatin
 
 - If you enable this policy setting, you can set the number of seconds you want the system to wait until a reboot.
 
-- If you disable or do not configure this setting, the operating system does not force a reboot.
+- If you disable or don't configure this setting, the operating system doesn't force a reboot.
 
 > [!NOTE]
-> If no reboot is forced, the access right does not take effect until the operating system is restarted.
+> If no reboot is forced, the access right doesn't take effect until the operating system is restarted.
 <!-- AccessRights_RebootTime_1-Description-End -->
 
 <!-- AccessRights_RebootTime_1-Editable-Begin -->
@@ -61,13 +58,12 @@ This policy setting configures the amount of time (in seconds) that the operatin
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AccessRights_RebootTime_1-DFProperties-End -->
 
 <!-- AccessRights_RebootTime_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -94,7 +90,7 @@ This policy setting configures the amount of time (in seconds) that the operatin
 <!-- AccessRights_RebootTime_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AccessRights_RebootTime_2-Applicability-End -->
 
 <!-- AccessRights_RebootTime_2-OmaUri-Begin -->
@@ -109,10 +105,10 @@ This policy setting configures the amount of time (in seconds) that the operatin
 
 - If you enable this policy setting, you can set the number of seconds you want the system to wait until a reboot.
 
-- If you disable or do not configure this setting, the operating system does not force a reboot.
+- If you disable or don't configure this setting, the operating system doesn't force a reboot.
 
 > [!NOTE]
-> If no reboot is forced, the access right does not take effect until the operating system is restarted.
+> If no reboot is forced, the access right doesn't take effect until the operating system is restarted.
 <!-- AccessRights_RebootTime_2-Description-End -->
 
 <!-- AccessRights_RebootTime_2-Editable-Begin -->
@@ -124,13 +120,12 @@ This policy setting configures the amount of time (in seconds) that the operatin
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AccessRights_RebootTime_2-DFProperties-End -->
 
 <!-- AccessRights_RebootTime_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -157,7 +152,7 @@ This policy setting configures the amount of time (in seconds) that the operatin
 <!-- CDandDVD_DenyExecute_Access_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CDandDVD_DenyExecute_Access_2-Applicability-End -->
 
 <!-- CDandDVD_DenyExecute_Access_2-OmaUri-Begin -->
@@ -172,7 +167,7 @@ This policy setting denies execute access to the CD and DVD removable storage cl
 
 - If you enable this policy setting, execute access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, execute access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, execute access is allowed to this removable storage class.
 <!-- CDandDVD_DenyExecute_Access_2-Description-End -->
 
 <!-- CDandDVD_DenyExecute_Access_2-Editable-Begin -->
@@ -184,13 +179,12 @@ This policy setting denies execute access to the CD and DVD removable storage cl
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CDandDVD_DenyExecute_Access_2-DFProperties-End -->
 
 <!-- CDandDVD_DenyExecute_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -217,7 +211,7 @@ This policy setting denies execute access to the CD and DVD removable storage cl
 <!-- CDandDVD_DenyRead_Access_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CDandDVD_DenyRead_Access_1-Applicability-End -->
 
 <!-- CDandDVD_DenyRead_Access_1-OmaUri-Begin -->
@@ -232,7 +226,7 @@ This policy setting denies read access to the CD and DVD removable storage class
 
 - If you enable this policy setting, read access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
 <!-- CDandDVD_DenyRead_Access_1-Description-End -->
 
 <!-- CDandDVD_DenyRead_Access_1-Editable-Begin -->
@@ -244,13 +238,12 @@ This policy setting denies read access to the CD and DVD removable storage class
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CDandDVD_DenyRead_Access_1-DFProperties-End -->
 
 <!-- CDandDVD_DenyRead_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -277,7 +270,7 @@ This policy setting denies read access to the CD and DVD removable storage class
 <!-- CDandDVD_DenyRead_Access_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CDandDVD_DenyRead_Access_2-Applicability-End -->
 
 <!-- CDandDVD_DenyRead_Access_2-OmaUri-Begin -->
@@ -292,7 +285,7 @@ This policy setting denies read access to the CD and DVD removable storage class
 
 - If you enable this policy setting, read access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
 <!-- CDandDVD_DenyRead_Access_2-Description-End -->
 
 <!-- CDandDVD_DenyRead_Access_2-Editable-Begin -->
@@ -304,13 +297,12 @@ This policy setting denies read access to the CD and DVD removable storage class
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CDandDVD_DenyRead_Access_2-DFProperties-End -->
 
 <!-- CDandDVD_DenyRead_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -337,7 +329,7 @@ This policy setting denies read access to the CD and DVD removable storage class
 <!-- CDandDVD_DenyWrite_Access_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CDandDVD_DenyWrite_Access_1-Applicability-End -->
 
 <!-- CDandDVD_DenyWrite_Access_1-OmaUri-Begin -->
@@ -352,7 +344,7 @@ This policy setting denies write access to the CD and DVD removable storage clas
 
 - If you enable this policy setting, write access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 <!-- CDandDVD_DenyWrite_Access_1-Description-End -->
 
 <!-- CDandDVD_DenyWrite_Access_1-Editable-Begin -->
@@ -364,13 +356,12 @@ This policy setting denies write access to the CD and DVD removable storage clas
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CDandDVD_DenyWrite_Access_1-DFProperties-End -->
 
 <!-- CDandDVD_DenyWrite_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -397,7 +388,7 @@ This policy setting denies write access to the CD and DVD removable storage clas
 <!-- CDandDVD_DenyWrite_Access_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CDandDVD_DenyWrite_Access_2-Applicability-End -->
 
 <!-- CDandDVD_DenyWrite_Access_2-OmaUri-Begin -->
@@ -412,7 +403,7 @@ This policy setting denies write access to the CD and DVD removable storage clas
 
 - If you enable this policy setting, write access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 <!-- CDandDVD_DenyWrite_Access_2-Description-End -->
 
 <!-- CDandDVD_DenyWrite_Access_2-Editable-Begin -->
@@ -424,13 +415,12 @@ This policy setting denies write access to the CD and DVD removable storage clas
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CDandDVD_DenyWrite_Access_2-DFProperties-End -->
 
 <!-- CDandDVD_DenyWrite_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -457,7 +447,7 @@ This policy setting denies write access to the CD and DVD removable storage clas
 <!-- CustomClasses_DenyRead_Access_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CustomClasses_DenyRead_Access_1-Applicability-End -->
 
 <!-- CustomClasses_DenyRead_Access_1-OmaUri-Begin -->
@@ -472,7 +462,7 @@ This policy setting denies read access to custom removable storage classes.
 
 - If you enable this policy setting, read access is denied to these removable storage classes.
 
-- If you disable or do not configure this policy setting, read access is allowed to these removable storage classes.
+- If you disable or don't configure this policy setting, read access is allowed to these removable storage classes.
 <!-- CustomClasses_DenyRead_Access_1-Description-End -->
 
 <!-- CustomClasses_DenyRead_Access_1-Editable-Begin -->
@@ -484,13 +474,12 @@ This policy setting denies read access to custom removable storage classes.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CustomClasses_DenyRead_Access_1-DFProperties-End -->
 
 <!-- CustomClasses_DenyRead_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -517,7 +506,7 @@ This policy setting denies read access to custom removable storage classes.
 <!-- CustomClasses_DenyRead_Access_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CustomClasses_DenyRead_Access_2-Applicability-End -->
 
 <!-- CustomClasses_DenyRead_Access_2-OmaUri-Begin -->
@@ -532,7 +521,7 @@ This policy setting denies read access to custom removable storage classes.
 
 - If you enable this policy setting, read access is denied to these removable storage classes.
 
-- If you disable or do not configure this policy setting, read access is allowed to these removable storage classes.
+- If you disable or don't configure this policy setting, read access is allowed to these removable storage classes.
 <!-- CustomClasses_DenyRead_Access_2-Description-End -->
 
 <!-- CustomClasses_DenyRead_Access_2-Editable-Begin -->
@@ -544,13 +533,12 @@ This policy setting denies read access to custom removable storage classes.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CustomClasses_DenyRead_Access_2-DFProperties-End -->
 
 <!-- CustomClasses_DenyRead_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -577,7 +565,7 @@ This policy setting denies read access to custom removable storage classes.
 <!-- CustomClasses_DenyWrite_Access_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CustomClasses_DenyWrite_Access_1-Applicability-End -->
 
 <!-- CustomClasses_DenyWrite_Access_1-OmaUri-Begin -->
@@ -592,7 +580,7 @@ This policy setting denies write access to custom removable storage classes.
 
 - If you enable this policy setting, write access is denied to these removable storage classes.
 
-- If you disable or do not configure this policy setting, write access is allowed to these removable storage classes.
+- If you disable or don't configure this policy setting, write access is allowed to these removable storage classes.
 <!-- CustomClasses_DenyWrite_Access_1-Description-End -->
 
 <!-- CustomClasses_DenyWrite_Access_1-Editable-Begin -->
@@ -604,13 +592,12 @@ This policy setting denies write access to custom removable storage classes.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CustomClasses_DenyWrite_Access_1-DFProperties-End -->
 
 <!-- CustomClasses_DenyWrite_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -637,7 +624,7 @@ This policy setting denies write access to custom removable storage classes.
 <!-- CustomClasses_DenyWrite_Access_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CustomClasses_DenyWrite_Access_2-Applicability-End -->
 
 <!-- CustomClasses_DenyWrite_Access_2-OmaUri-Begin -->
@@ -652,7 +639,7 @@ This policy setting denies write access to custom removable storage classes.
 
 - If you enable this policy setting, write access is denied to these removable storage classes.
 
-- If you disable or do not configure this policy setting, write access is allowed to these removable storage classes.
+- If you disable or don't configure this policy setting, write access is allowed to these removable storage classes.
 <!-- CustomClasses_DenyWrite_Access_2-Description-End -->
 
 <!-- CustomClasses_DenyWrite_Access_2-Editable-Begin -->
@@ -664,13 +651,12 @@ This policy setting denies write access to custom removable storage classes.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CustomClasses_DenyWrite_Access_2-DFProperties-End -->
 
 <!-- CustomClasses_DenyWrite_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -697,7 +683,7 @@ This policy setting denies write access to custom removable storage classes.
 <!-- FloppyDrives_DenyExecute_Access_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- FloppyDrives_DenyExecute_Access_2-Applicability-End -->
 
 <!-- FloppyDrives_DenyExecute_Access_2-OmaUri-Begin -->
@@ -712,7 +698,7 @@ This policy setting denies execute access to the Floppy Drives removable storage
 
 - If you enable this policy setting, execute access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, execute access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, execute access is allowed to this removable storage class.
 <!-- FloppyDrives_DenyExecute_Access_2-Description-End -->
 
 <!-- FloppyDrives_DenyExecute_Access_2-Editable-Begin -->
@@ -724,13 +710,12 @@ This policy setting denies execute access to the Floppy Drives removable storage
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- FloppyDrives_DenyExecute_Access_2-DFProperties-End -->
 
 <!-- FloppyDrives_DenyExecute_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -757,7 +742,7 @@ This policy setting denies execute access to the Floppy Drives removable storage
 <!-- FloppyDrives_DenyRead_Access_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- FloppyDrives_DenyRead_Access_1-Applicability-End -->
 
 <!-- FloppyDrives_DenyRead_Access_1-OmaUri-Begin -->
@@ -772,7 +757,7 @@ This policy setting denies read access to the Floppy Drives removable storage cl
 
 - If you enable this policy setting, read access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
 <!-- FloppyDrives_DenyRead_Access_1-Description-End -->
 
 <!-- FloppyDrives_DenyRead_Access_1-Editable-Begin -->
@@ -784,13 +769,12 @@ This policy setting denies read access to the Floppy Drives removable storage cl
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- FloppyDrives_DenyRead_Access_1-DFProperties-End -->
 
 <!-- FloppyDrives_DenyRead_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -817,7 +801,7 @@ This policy setting denies read access to the Floppy Drives removable storage cl
 <!-- FloppyDrives_DenyRead_Access_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- FloppyDrives_DenyRead_Access_2-Applicability-End -->
 
 <!-- FloppyDrives_DenyRead_Access_2-OmaUri-Begin -->
@@ -832,7 +816,7 @@ This policy setting denies read access to the Floppy Drives removable storage cl
 
 - If you enable this policy setting, read access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
 <!-- FloppyDrives_DenyRead_Access_2-Description-End -->
 
 <!-- FloppyDrives_DenyRead_Access_2-Editable-Begin -->
@@ -844,13 +828,12 @@ This policy setting denies read access to the Floppy Drives removable storage cl
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- FloppyDrives_DenyRead_Access_2-DFProperties-End -->
 
 <!-- FloppyDrives_DenyRead_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -877,7 +860,7 @@ This policy setting denies read access to the Floppy Drives removable storage cl
 <!-- FloppyDrives_DenyWrite_Access_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- FloppyDrives_DenyWrite_Access_1-Applicability-End -->
 
 <!-- FloppyDrives_DenyWrite_Access_1-OmaUri-Begin -->
@@ -892,7 +875,7 @@ This policy setting denies write access to the Floppy Drives removable storage c
 
 - If you enable this policy setting, write access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 <!-- FloppyDrives_DenyWrite_Access_1-Description-End -->
 
 <!-- FloppyDrives_DenyWrite_Access_1-Editable-Begin -->
@@ -904,13 +887,12 @@ This policy setting denies write access to the Floppy Drives removable storage c
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- FloppyDrives_DenyWrite_Access_1-DFProperties-End -->
 
 <!-- FloppyDrives_DenyWrite_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -937,7 +919,7 @@ This policy setting denies write access to the Floppy Drives removable storage c
 <!-- FloppyDrives_DenyWrite_Access_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- FloppyDrives_DenyWrite_Access_2-Applicability-End -->
 
 <!-- FloppyDrives_DenyWrite_Access_2-OmaUri-Begin -->
@@ -952,7 +934,7 @@ This policy setting denies write access to the Floppy Drives removable storage c
 
 - If you enable this policy setting, write access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 <!-- FloppyDrives_DenyWrite_Access_2-Description-End -->
 
 <!-- FloppyDrives_DenyWrite_Access_2-Editable-Begin -->
@@ -964,13 +946,12 @@ This policy setting denies write access to the Floppy Drives removable storage c
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- FloppyDrives_DenyWrite_Access_2-DFProperties-End -->
 
 <!-- FloppyDrives_DenyWrite_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -997,7 +978,7 @@ This policy setting denies write access to the Floppy Drives removable storage c
 <!-- Removable_Remote_Allow_Access-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Removable_Remote_Allow_Access-Applicability-End -->
 
 <!-- Removable_Remote_Allow_Access-OmaUri-Begin -->
@@ -1012,7 +993,7 @@ This policy setting grants normal users direct access to removable storage devic
 
 - If you enable this policy setting, remote users can open direct handles to removable storage devices in remote sessions.
 
-- If you disable or do not configure this policy setting, remote users cannot open direct handles to removable storage devices in remote sessions.
+- If you disable or don't configure this policy setting, remote users can't open direct handles to removable storage devices in remote sessions.
 <!-- Removable_Remote_Allow_Access-Description-End -->
 
 <!-- Removable_Remote_Allow_Access-Editable-Begin -->
@@ -1024,13 +1005,12 @@ This policy setting grants normal users direct access to removable storage devic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Removable_Remote_Allow_Access-DFProperties-End -->
 
 <!-- Removable_Remote_Allow_Access-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1057,7 +1037,7 @@ This policy setting grants normal users direct access to removable storage devic
 <!-- RemovableDisks_DenyExecute_Access_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RemovableDisks_DenyExecute_Access_2-Applicability-End -->
 
 <!-- RemovableDisks_DenyExecute_Access_2-OmaUri-Begin -->
@@ -1072,7 +1052,7 @@ This policy setting denies execute access to removable disks.
 
 - If you enable this policy setting, execute access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, execute access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, execute access is allowed to this removable storage class.
 <!-- RemovableDisks_DenyExecute_Access_2-Description-End -->
 
 <!-- RemovableDisks_DenyExecute_Access_2-Editable-Begin -->
@@ -1084,13 +1064,12 @@ This policy setting denies execute access to removable disks.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RemovableDisks_DenyExecute_Access_2-DFProperties-End -->
 
 <!-- RemovableDisks_DenyExecute_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1117,7 +1096,7 @@ This policy setting denies execute access to removable disks.
 <!-- RemovableDisks_DenyRead_Access_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RemovableDisks_DenyRead_Access_1-Applicability-End -->
 
 <!-- RemovableDisks_DenyRead_Access_1-OmaUri-Begin -->
@@ -1132,7 +1111,7 @@ This policy setting denies read access to removable disks.
 
 - If you enable this policy setting, read access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
 <!-- RemovableDisks_DenyRead_Access_1-Description-End -->
 
 <!-- RemovableDisks_DenyRead_Access_1-Editable-Begin -->
@@ -1144,13 +1123,12 @@ This policy setting denies read access to removable disks.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RemovableDisks_DenyRead_Access_1-DFProperties-End -->
 
 <!-- RemovableDisks_DenyRead_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1177,7 +1155,7 @@ This policy setting denies read access to removable disks.
 <!-- RemovableDisks_DenyRead_Access_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RemovableDisks_DenyRead_Access_2-Applicability-End -->
 
 <!-- RemovableDisks_DenyRead_Access_2-OmaUri-Begin -->
@@ -1192,7 +1170,7 @@ This policy setting denies read access to removable disks.
 
 - If you enable this policy setting, read access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
 <!-- RemovableDisks_DenyRead_Access_2-Description-End -->
 
 <!-- RemovableDisks_DenyRead_Access_2-Editable-Begin -->
@@ -1204,13 +1182,12 @@ This policy setting denies read access to removable disks.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RemovableDisks_DenyRead_Access_2-DFProperties-End -->
 
 <!-- RemovableDisks_DenyRead_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1237,7 +1214,7 @@ This policy setting denies read access to removable disks.
 <!-- RemovableDisks_DenyWrite_Access_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RemovableDisks_DenyWrite_Access_1-Applicability-End -->
 
 <!-- RemovableDisks_DenyWrite_Access_1-OmaUri-Begin -->
@@ -1252,10 +1229,10 @@ This policy setting denies write access to removable disks.
 
 - If you enable this policy setting, write access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 
 > [!NOTE]
-> To require that users write data to BitLocker-protected storage, enable the policy setting "Deny write access to drives not protected by BitLocker," which is located in "Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Removable Data Drives."
+> To require that users write data to BitLocker-protected storage, enable the policy setting "Deny write access to drives not protected by BitLocker," which is located in "Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Removable Data Drives".
 <!-- RemovableDisks_DenyWrite_Access_1-Description-End -->
 
 <!-- RemovableDisks_DenyWrite_Access_1-Editable-Begin -->
@@ -1267,13 +1244,12 @@ This policy setting denies write access to removable disks.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RemovableDisks_DenyWrite_Access_1-DFProperties-End -->
 
 <!-- RemovableDisks_DenyWrite_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1300,7 +1276,7 @@ This policy setting denies write access to removable disks.
 <!-- RemovableStorageClasses_DenyAll_Access_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RemovableStorageClasses_DenyAll_Access_1-Applicability-End -->
 
 <!-- RemovableStorageClasses_DenyAll_Access_1-OmaUri-Begin -->
@@ -1317,7 +1293,7 @@ This policy setting takes precedence over any individual removable storage polic
 
 - If you enable this policy setting, no access is allowed to any removable storage class.
 
-- If you disable or do not configure this policy setting, write and read accesses are allowed to all removable storage classes.
+- If you disable or don't configure this policy setting, write and read accesses are allowed to all removable storage classes.
 <!-- RemovableStorageClasses_DenyAll_Access_1-Description-End -->
 
 <!-- RemovableStorageClasses_DenyAll_Access_1-Editable-Begin -->
@@ -1329,13 +1305,12 @@ This policy setting takes precedence over any individual removable storage polic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RemovableStorageClasses_DenyAll_Access_1-DFProperties-End -->
 
 <!-- RemovableStorageClasses_DenyAll_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1362,7 +1337,7 @@ This policy setting takes precedence over any individual removable storage polic
 <!-- RemovableStorageClasses_DenyAll_Access_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RemovableStorageClasses_DenyAll_Access_2-Applicability-End -->
 
 <!-- RemovableStorageClasses_DenyAll_Access_2-OmaUri-Begin -->
@@ -1379,7 +1354,7 @@ This policy setting takes precedence over any individual removable storage polic
 
 - If you enable this policy setting, no access is allowed to any removable storage class.
 
-- If you disable or do not configure this policy setting, write and read accesses are allowed to all removable storage classes.
+- If you disable or don't configure this policy setting, write and read accesses are allowed to all removable storage classes.
 <!-- RemovableStorageClasses_DenyAll_Access_2-Description-End -->
 
 <!-- RemovableStorageClasses_DenyAll_Access_2-Editable-Begin -->
@@ -1391,13 +1366,12 @@ This policy setting takes precedence over any individual removable storage polic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RemovableStorageClasses_DenyAll_Access_2-DFProperties-End -->
 
 <!-- RemovableStorageClasses_DenyAll_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1424,7 +1398,7 @@ This policy setting takes precedence over any individual removable storage polic
 <!-- TapeDrives_DenyExecute_Access_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- TapeDrives_DenyExecute_Access_2-Applicability-End -->
 
 <!-- TapeDrives_DenyExecute_Access_2-OmaUri-Begin -->
@@ -1439,7 +1413,7 @@ This policy setting denies execute access to the Tape Drive removable storage cl
 
 - If you enable this policy setting, execute access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, execute access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, execute access is allowed to this removable storage class.
 <!-- TapeDrives_DenyExecute_Access_2-Description-End -->
 
 <!-- TapeDrives_DenyExecute_Access_2-Editable-Begin -->
@@ -1451,13 +1425,12 @@ This policy setting denies execute access to the Tape Drive removable storage cl
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TapeDrives_DenyExecute_Access_2-DFProperties-End -->
 
 <!-- TapeDrives_DenyExecute_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1484,7 +1457,7 @@ This policy setting denies execute access to the Tape Drive removable storage cl
 <!-- TapeDrives_DenyRead_Access_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- TapeDrives_DenyRead_Access_1-Applicability-End -->
 
 <!-- TapeDrives_DenyRead_Access_1-OmaUri-Begin -->
@@ -1499,7 +1472,7 @@ This policy setting denies read access to the Tape Drive removable storage class
 
 - If you enable this policy setting, read access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
 <!-- TapeDrives_DenyRead_Access_1-Description-End -->
 
 <!-- TapeDrives_DenyRead_Access_1-Editable-Begin -->
@@ -1511,13 +1484,12 @@ This policy setting denies read access to the Tape Drive removable storage class
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TapeDrives_DenyRead_Access_1-DFProperties-End -->
 
 <!-- TapeDrives_DenyRead_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1544,7 +1516,7 @@ This policy setting denies read access to the Tape Drive removable storage class
 <!-- TapeDrives_DenyRead_Access_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- TapeDrives_DenyRead_Access_2-Applicability-End -->
 
 <!-- TapeDrives_DenyRead_Access_2-OmaUri-Begin -->
@@ -1559,7 +1531,7 @@ This policy setting denies read access to the Tape Drive removable storage class
 
 - If you enable this policy setting, read access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
 <!-- TapeDrives_DenyRead_Access_2-Description-End -->
 
 <!-- TapeDrives_DenyRead_Access_2-Editable-Begin -->
@@ -1571,13 +1543,12 @@ This policy setting denies read access to the Tape Drive removable storage class
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TapeDrives_DenyRead_Access_2-DFProperties-End -->
 
 <!-- TapeDrives_DenyRead_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1604,7 +1575,7 @@ This policy setting denies read access to the Tape Drive removable storage class
 <!-- TapeDrives_DenyWrite_Access_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- TapeDrives_DenyWrite_Access_1-Applicability-End -->
 
 <!-- TapeDrives_DenyWrite_Access_1-OmaUri-Begin -->
@@ -1619,7 +1590,7 @@ This policy setting denies write access to the Tape Drive removable storage clas
 
 - If you enable this policy setting, write access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 <!-- TapeDrives_DenyWrite_Access_1-Description-End -->
 
 <!-- TapeDrives_DenyWrite_Access_1-Editable-Begin -->
@@ -1631,13 +1602,12 @@ This policy setting denies write access to the Tape Drive removable storage clas
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TapeDrives_DenyWrite_Access_1-DFProperties-End -->
 
 <!-- TapeDrives_DenyWrite_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1664,7 +1634,7 @@ This policy setting denies write access to the Tape Drive removable storage clas
 <!-- TapeDrives_DenyWrite_Access_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- TapeDrives_DenyWrite_Access_2-Applicability-End -->
 
 <!-- TapeDrives_DenyWrite_Access_2-OmaUri-Begin -->
@@ -1679,7 +1649,7 @@ This policy setting denies write access to the Tape Drive removable storage clas
 
 - If you enable this policy setting, write access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 <!-- TapeDrives_DenyWrite_Access_2-Description-End -->
 
 <!-- TapeDrives_DenyWrite_Access_2-Editable-Begin -->
@@ -1691,13 +1661,12 @@ This policy setting denies write access to the Tape Drive removable storage clas
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TapeDrives_DenyWrite_Access_2-DFProperties-End -->
 
 <!-- TapeDrives_DenyWrite_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1724,7 +1693,7 @@ This policy setting denies write access to the Tape Drive removable storage clas
 <!-- WPDDevices_DenyRead_Access_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WPDDevices_DenyRead_Access_1-Applicability-End -->
 
 <!-- WPDDevices_DenyRead_Access_1-OmaUri-Begin -->
@@ -1739,7 +1708,7 @@ This policy setting denies read access to removable disks, which may include med
 
 - If you enable this policy setting, read access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
 <!-- WPDDevices_DenyRead_Access_1-Description-End -->
 
 <!-- WPDDevices_DenyRead_Access_1-Editable-Begin -->
@@ -1751,13 +1720,12 @@ This policy setting denies read access to removable disks, which may include med
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WPDDevices_DenyRead_Access_1-DFProperties-End -->
 
 <!-- WPDDevices_DenyRead_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1784,7 +1752,7 @@ This policy setting denies read access to removable disks, which may include med
 <!-- WPDDevices_DenyRead_Access_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WPDDevices_DenyRead_Access_2-Applicability-End -->
 
 <!-- WPDDevices_DenyRead_Access_2-OmaUri-Begin -->
@@ -1799,7 +1767,7 @@ This policy setting denies read access to removable disks, which may include med
 
 - If you enable this policy setting, read access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, read access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
 <!-- WPDDevices_DenyRead_Access_2-Description-End -->
 
 <!-- WPDDevices_DenyRead_Access_2-Editable-Begin -->
@@ -1811,13 +1779,12 @@ This policy setting denies read access to removable disks, which may include med
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WPDDevices_DenyRead_Access_2-DFProperties-End -->
 
 <!-- WPDDevices_DenyRead_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1844,7 +1811,7 @@ This policy setting denies read access to removable disks, which may include med
 <!-- WPDDevices_DenyWrite_Access_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WPDDevices_DenyWrite_Access_1-Applicability-End -->
 
 <!-- WPDDevices_DenyWrite_Access_1-OmaUri-Begin -->
@@ -1859,7 +1826,7 @@ This policy setting denies write access to removable disks, which may include me
 
 - If you enable this policy setting, write access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 <!-- WPDDevices_DenyWrite_Access_1-Description-End -->
 
 <!-- WPDDevices_DenyWrite_Access_1-Editable-Begin -->
@@ -1871,13 +1838,12 @@ This policy setting denies write access to removable disks, which may include me
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WPDDevices_DenyWrite_Access_1-DFProperties-End -->
 
 <!-- WPDDevices_DenyWrite_Access_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1904,7 +1870,7 @@ This policy setting denies write access to removable disks, which may include me
 <!-- WPDDevices_DenyWrite_Access_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WPDDevices_DenyWrite_Access_2-Applicability-End -->
 
 <!-- WPDDevices_DenyWrite_Access_2-OmaUri-Begin -->
@@ -1919,7 +1885,7 @@ This policy setting denies write access to removable disks, which may include me
 
 - If you enable this policy setting, write access is denied to this removable storage class.
 
-- If you disable or do not configure this policy setting, write access is allowed to this removable storage class.
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 <!-- WPDDevices_DenyWrite_Access_2-Description-End -->
 
 <!-- WPDDevices_DenyWrite_Access_2-Editable-Begin -->
@@ -1931,13 +1897,12 @@ This policy setting denies write access to removable disks, which may include me
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- WPDDevices_DenyWrite_Access_2-DFProperties-End -->
 
 <!-- WPDDevices_DenyWrite_Access_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

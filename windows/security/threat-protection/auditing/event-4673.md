@@ -1,5 +1,5 @@
 ---
-title: 4673(S, F) A privileged service was called. (Windows 10)
+title: 4673(S, F) A privileged service was called. 
 description: Describes security event 4673(S, F) A privileged service was called. This event is generated for an attempt to perform privileged system service operations.
 ms.pagetype: security
 ms.prod: windows-client

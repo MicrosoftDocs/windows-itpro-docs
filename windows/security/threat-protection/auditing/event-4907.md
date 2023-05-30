@@ -1,5 +1,5 @@
 ---
-title: 4907(S) Auditing settings on object were changed. (Windows 10)
+title: 4907(S) Auditing settings on object were changed. 
 description: Describes security event 4907(S) Auditing settings on object were changed.
 ms.pagetype: security
 ms.prod: windows-client

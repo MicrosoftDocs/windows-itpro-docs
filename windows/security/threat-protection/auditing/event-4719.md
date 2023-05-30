@@ -1,5 +1,5 @@
 ---
-title: 4719(S) System audit policy was changed. (Windows 10)
+title: 4719(S) System audit policy was changed. 
 description: Describes security event 4719(S) System audit policy was changed. This event is generated when the computer audit policy changes.
 ms.pagetype: security
 ms.prod: windows-client

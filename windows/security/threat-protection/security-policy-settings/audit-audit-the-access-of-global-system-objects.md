@@ -1,5 +1,5 @@
 ---
-title: Audit the access of global system objects (Windows 10)
+title: Audit the access of global system objects 
 description: Describes the best practices, location, values, and security considerations for the audit of the access to global system objects security policy setting.
 ms.assetid: 20d40a79-ce89-45e6-9bb4-148f83958460
 ms.reviewer: 

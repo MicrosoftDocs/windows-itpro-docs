@@ -1,5 +1,5 @@
 ---
-title: 4913(S) Central Access Policy on the object was changed. (Windows 10)
+title: 4913(S) Central Access Policy on the object was changed. 
 description: Describes security event 4913(S) Central Access Policy on the object was changed.
 ms.pagetype: security
 ms.prod: windows-client

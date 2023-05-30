@@ -1,5 +1,5 @@
 ---
-title: 4866(S) A trusted forest information entry was removed. (Windows 10)
+title: 4866(S) A trusted forest information entry was removed. 
 description: Describes security event 4866(S) A trusted forest information entry was removed.
 ms.pagetype: security
 ms.prod: windows-client

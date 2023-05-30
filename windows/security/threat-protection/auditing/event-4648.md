@@ -1,5 +1,5 @@
 ---
-title: 4648(S) A logon was attempted using explicit credentials. (Windows 10)
+title: 4648(S) A logon was attempted using explicit credentials. 
 description: Describes security event 4648(S) A logon was attempted using explicit credentials.
 ms.pagetype: security
 ms.prod: windows-client

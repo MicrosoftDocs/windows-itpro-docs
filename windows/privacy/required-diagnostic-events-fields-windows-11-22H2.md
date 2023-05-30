@@ -7,8 +7,8 @@ ms.technology: itpro-privacy
 localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: dougeby
-ms.date: 08/26/2022
+manager: laurawi
+ms.date: 05/23/2023
 ms.topic: reference
 ---
 
@@ -106,6 +106,29 @@ The following fields are available:
 - **IsAv**  Is the file an anti-virus reporting EXE?
 - **ResolveAttempted**  This will always be an empty string when sending diagnostic data.
 - **SdbEntries**  An array of fields that indicates the SDB entries that apply to this file.
+
+
+### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileBackupAdd
+
+This event sends true/false compatibility decision data about a file to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser binary generating the events.
+- **SdbEntries**  Indicates if any matching compat Sdb entries are associated with this application
+
+
+### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileBackupStartSync
+
+This event indicates that a full set of DataSourceMatchingInfoBlockStAdd events has completed being sent. This event is used to make compatibility decisions about files to help keep Windows up to date.
+
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
+
+The following fields are available:
+
+- **AppraiserVersion**  The version of the appraiser binary generating the events.
 
 
 ### Microsoft.Windows.Appraiser.General.DatasourceApplicationFileRemove
@@ -1269,7 +1292,6 @@ The following fields are available:
 - **uts**  A bit field, with 2 bits being assigned to each user ID listed in xid. This field is omitted if all users are retail accounts.
 - **xid**  A list of base10-encoded XBOX User IDs.
 
-
 ## Common data fields
 
 ### Ms.Device.DeviceInventoryChange
@@ -1283,6 +1305,7 @@ The following fields are available:
 - **objectInstanceId**  Object identity which is unique within the device scope.
 - **objectType**  Indicates the object type that the event applies to.
 - **syncId**  A string used to group StartSync, EndSync, Add, and Remove operations that belong together. This field is unique by Sync period and is used to disambiguate in situations where multiple agents perform overlapping inventories for the same object.
+
 
 ## Component-based servicing events
 
@@ -2245,6 +2268,18 @@ The following fields are available:
 
 
 ## Setup events
+
+### Microsoft.Windows.Setup.WinSetupMon.ProtectionViolation
+
+This event provides information about move or deletion of a file or a directory which is being monitored for data safety during feature updates. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **Path**  Path to the file or the directory which is being moved or deleted.
+- **Process**  Path to the process which is requesting the move or the deletion.
+- **SessionId**  Identifier to correlate this component's telemetry with that of others.
+- **TargetPath**  (Optional) If the operation is a move, the target path to which the file or directory is being moved.
+
 
 ### SetupPlatformTel.SetupPlatformTelEvent
 
@@ -3373,7 +3408,6 @@ The following fields are available:
 This event is derived event results for the LaunchPageDuration scenario.
 
 
-
 ### Microsoft.Windows.Update.WUClient.DownloadPaused
 
 This event is fired when the Download stage is paused.
@@ -3449,3 +3483,6 @@ The following fields are available:
 - **SessionId**  The UpdateAgent “SessionId” value.
 - **UpdateId**  Unique identifier for the Update.
 - **WuId**  Unique identifier for the Windows Update client.
+
+
+

@@ -1,5 +1,5 @@
 ---
-title: Enforce AppLocker rules (Windows)
+title: Enforce AppLocker rules 
 description: This topic for IT professionals describes how to enforce application control rules by using AppLocker.
 ms.assetid: e1528b7b-77f2-4419-8e27-c9cc3721d96d
 ms.reviewer: 

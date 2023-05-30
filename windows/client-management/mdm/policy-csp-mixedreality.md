@@ -4,7 +4,7 @@ description: Learn more about the MixedReality Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 04/26/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- MixedReality-Begin -->
 # Policy CSP - MixedReality
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- MixedReality-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -32,7 +29,7 @@ These policies are only supported on [Microsoft HoloLens 2](/hololens/hololens2-
 <!-- AADGroupMembershipCacheValidityInDays-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AADGroupMembershipCacheValidityInDays-Applicability-End -->
 
 <!-- AADGroupMembershipCacheValidityInDays-OmaUri-Begin -->
@@ -68,7 +65,7 @@ Steps to use this policy correctly:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-60]` |
 | Default Value  | 0 |
@@ -86,7 +83,7 @@ Steps to use this policy correctly:
 <!-- AllowCaptivePortalBeforeLogon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
 <!-- AllowCaptivePortalBeforeLogon-Applicability-End -->
 
 <!-- AllowCaptivePortalBeforeLogon-OmaUri-Begin -->
@@ -110,7 +107,7 @@ This opt-in policy can help with the setup of new devices in new areas or new us
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowCaptivePortalBeforeLogon-DFProperties-End -->
@@ -120,7 +117,7 @@ This opt-in policy can help with the setup of new devices in new areas or new us
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Displaying captive portal is not allowed. |
+| 0 (Default) | Displaying captive portal isn't allowed. |
 | 1 | Displaying captive portal is allowed. |
 <!-- AllowCaptivePortalBeforeLogon-AllowedValues-End -->
 
@@ -136,7 +133,7 @@ This opt-in policy can help with the setup of new devices in new areas or new us
 <!-- AllowLaunchUriInSingleAppKiosk-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
 <!-- AllowLaunchUriInSingleAppKiosk-Applicability-End -->
 
 <!-- AllowLaunchUriInSingleAppKiosk-OmaUri-Begin -->
@@ -162,7 +159,7 @@ For more information on the Launcher API, see [Launcher Class (Windows.System) -
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowLaunchUriInSingleAppKiosk-DFProperties-End -->
@@ -172,7 +169,7 @@ For more information on the Launcher API, see [Launcher Class (Windows.System) -
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Applications are not allowed to be launched with Launcher API, when in single app kiosk mode. |
+| 0 (Default) | Applications aren't allowed to be launched with Launcher API, when in single app kiosk mode. |
 | 1 | Applications are allowed to be launched with Launcher API, when in single app kiosk mode. |
 <!-- AllowLaunchUriInSingleAppKiosk-AllowedValues-End -->
 
@@ -188,7 +185,7 @@ For more information on the Launcher API, see [Launcher Class (Windows.System) -
 <!-- AutoLogonUser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
 <!-- AutoLogonUser-Applicability-End -->
 
 <!-- AutoLogonUser-OmaUri-Begin -->
@@ -221,7 +218,7 @@ On a device where you configure this policy, the user specified in the policy ne
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AutoLogonUser-DFProperties-End -->
 
@@ -237,7 +234,7 @@ On a device where you configure this policy, the user specified in the policy ne
 <!-- AutomaticDisplayAdjustment-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AutomaticDisplayAdjustment-Applicability-End -->
 
 <!-- AutomaticDisplayAdjustment-OmaUri-Begin -->
@@ -248,7 +245,7 @@ On a device where you configure this policy, the user specified in the policy ne
 
 <!-- AutomaticDisplayAdjustment-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy controls if the HoloLens displays will be automatically adjusted for your eyes to improve hologram visual quality when an user wears the device. When this feature is enabled, a new user upon wearing the device will not be prompted to calibrate and yet the displays will be adjusted to suite them automatically. However if an immersive application is launched that depends on eye tracking interactions, the user will be prompted to perform the calibration.
+This policy controls if the HoloLens displays will be automatically adjusted for your eyes to improve hologram visual quality when a user wears the device. When this feature is enabled, a new user upon wearing the device won't be prompted to calibrate and yet the displays will be adjusted to suite them automatically. However if an immersive application is launched that depends on eye tracking interactions, the user will be prompted to perform the calibration.
 <!-- AutomaticDisplayAdjustment-Description-End -->
 
 <!-- AutomaticDisplayAdjustment-Editable-Begin -->
@@ -260,7 +257,7 @@ This policy controls if the HoloLens displays will be automatically adjusted for
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AutomaticDisplayAdjustment-DFProperties-End -->
@@ -286,7 +283,7 @@ This policy controls if the HoloLens displays will be automatically adjusted for
 <!-- BrightnessButtonDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- BrightnessButtonDisabled-Applicability-End -->
 
 <!-- BrightnessButtonDisabled-OmaUri-Begin -->
@@ -309,7 +306,7 @@ This policy setting controls if pressing the brightness button changes the brigh
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- BrightnessButtonDisabled-DFProperties-End -->
@@ -320,7 +317,7 @@ This policy setting controls if pressing the brightness button changes the brigh
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Brightness can be changed with press of brightness button. |
-| 1 | Brightness cannot be changed with press of brightness button. |
+| 1 | Brightness can't be changed with press of brightness button. |
 <!-- BrightnessButtonDisabled-AllowedValues-End -->
 
 <!-- BrightnessButtonDisabled-Examples-Begin -->
@@ -335,7 +332,7 @@ This policy setting controls if pressing the brightness button changes the brigh
 <!-- ConfigureMovingPlatform-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
 <!-- ConfigureMovingPlatform-Applicability-End -->
 
 <!-- ConfigureMovingPlatform-OmaUri-Begin -->
@@ -359,7 +356,7 @@ For more information, see [Moving platform mode on low dynamic motion moving pla
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ConfigureMovingPlatform-DFProperties-End -->
@@ -370,8 +367,8 @@ For more information, see [Moving platform mode on low dynamic motion moving pla
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Last set user's preference. Initial state is OFF and after that user's preference is persisted across reboots and is used to initialize the system. |
-| 1 | Moving platform is disabled and cannot be changed by user. |
-| 2 | Moving platform is enabled and cannot be changed by user. |
+| 1 | Moving platform is disabled and can't be changed by user. |
+| 2 | Moving platform is enabled and can't be changed by user. |
 <!-- ConfigureMovingPlatform-AllowedValues-End -->
 
 <!-- ConfigureMovingPlatform-Examples-Begin -->
@@ -386,7 +383,7 @@ For more information, see [Moving platform mode on low dynamic motion moving pla
 <!-- ConfigureNtpClient-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
 <!-- ConfigureNtpClient-Applicability-End -->
 
 <!-- ConfigureNtpClient-OmaUri-Begin -->
@@ -401,28 +398,35 @@ This policy setting specifies a set of parameters for controlling the Windows NT
 
 - If you enable this policy setting, you can specify the following parameters for the Windows NTP Client.
 
-- If you disable or do not configure this policy setting, the WIndows NTP Client uses the defaults of each of the following parameters.
+- If you disable or don't configure this policy setting, the Windows NTP Client uses the defaults of each of the following parameters.
 
-NtpServer
+NtpServer.
+
 The Domain Name System (DNS) name or IP address of an NTP time source. This value is in the form of "dnsName,flags" where "flags" is a hexadecimal bitmask of the flags for that host. For more information, see the NTP Client Group Policy Settings Associated with Windows Time section of the Windows Time Service Group Policy Settings. The default value is "time.windows.com,0x09".
 
-Type
+Type.
+
 This value controls the authentication that W32time uses. The default value is NT5DS.
 
-CrossSiteSyncFlags
-This value, expressed as a bitmask, controls how W32time chooses time sources outside its own site. The possible values are 0, 1, and 2. Setting this value to 0 (None) indicates that the time client should not attempt to synchronize time outside its site. Setting this value to 1 (PdcOnly) indicates that only the computers that function as primary domain controller (PDC) emulator operations masters in other domains can be used as synchronization partners when the client has to synchronize time with a partner outside its own site. Setting a value of 2 (All) indicates that any synchronization partner can be used. This value is ignored if the NT5DS value is not set. The default value is 2 decimal (0x02 hexadecimal).
+CrossSiteSyncFlags.
 
-ResolvePeerBackoffMinutes
+This value, expressed as a bitmask, controls how W32time chooses time sources outside its own site. The possible values are 0, 1, and 2. Setting this value to 0 (None) indicates that the time client shouldn't attempt to synchronize time outside its site. Setting this value to 1 (PdcOnly) indicates that only the computers that function as primary domain controller (PDC) emulator operations masters in other domains can be used as synchronization partners when the client has to synchronize time with a partner outside its own site. Setting a value of 2 (All) indicates that any synchronization partner can be used. This value is ignored if the NT5DS value isn't set. The default value is 2 decimal (0x02 hexadecimal).
+
+ResolvePeerBackoffMinutes.
+
 This value, expressed in minutes, controls how long W32time waits before it attempts to resolve a DNS name when a previous attempt failed. The default value is 15 minutes.
 
-ResolvePeerBackoffMaxTimes
+ResolvePeerBackoffMaxTimes.
+
 This value controls how many times W32time attempts to resolve a DNS name before the discovery process is restarted. Each time DNS name resolution fails, the amount of time to wait before the next attempt will be twice the previous amount. The default value is seven attempts.
 
-SpecialPollInterval
-This NTP client value, expressed in seconds, controls how often a manually configured time source is polled when the time source is configured to use a special polling interval. If the SpecialInterval flag is enabled on the NTPServer setting, the client uses the value that is set as the SpecialPollInterval, instead of a variable interval between MinPollInterval and MaxPollInterval values, to determine how frequently to poll the time source. SpecialPollInterval must be in the range of [MinPollInterval, MaxPollInterval], else the nearest value of the range is picked. Default: 1024 seconds.
+SpecialPollInterval.
 
-EventLogFlags
-This value is a bitmask that controls events that may be logged to the System log in Event Viewer. Setting this value to 0x1 indicates that W32time will create an event whenever a time jump is detected. Setting this value to 0x2 indicates that W32time will create an event whenever a time source change is made. Because it is a bitmask value, setting 0x3 (the addition of 0x1 and 0x2) indicates that both time jumps and time source changes will be logged.
+This NTP client value, expressed in seconds, controls how often a manually configured time source is polled when the time source is configured to use a special polling interval. If the SpecialInterval flag is enabled on the NTPServer setting, the client uses the value that's set as the SpecialPollInterval, instead of a variable interval between MinPollInterval and MaxPollInterval values, to determine how frequently to poll the time source. SpecialPollInterval must be in the range of [MinPollInterval, MaxPollInterval], else the nearest value of the range is picked. Default: 1024 seconds.
+
+EventLogFlags.
+
+This value is a bitmask that controls events that may be logged to the System log in Event Viewer. Setting this value to 0x1 indicates that W32time will create an event whenever a time jump is detected. Setting this value to 0x2 indicates that W32time will create an event whenever a time source change is made. Because it's a bitmask value, setting 0x3 (the addition of 0x1 and 0x2) indicates that both time jumps and time source changes will be logged.
 <!-- ConfigureNtpClient-Description-End -->
 
 <!-- ConfigureNtpClient-Editable-Begin -->
@@ -444,13 +448,12 @@ For more information, see [ADMX_W32Time Policy CSP - W32Time_Policy_Configure_NT
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureNtpClient-DFProperties-End -->
 
 <!-- ConfigureNtpClient-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -491,7 +494,7 @@ The following XML string is an example of the value for this policy:
 <!-- DisallowNetworkConnectivityPassivePolling-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
 <!-- DisallowNetworkConnectivityPassivePolling-Applicability-End -->
 
 <!-- DisallowNetworkConnectivityPassivePolling-OmaUri-Begin -->
@@ -515,7 +518,7 @@ Windows Network Connectivity Status Indicator may get a false positive internet-
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisallowNetworkConnectivityPassivePolling-DFProperties-End -->
@@ -541,7 +544,7 @@ Windows Network Connectivity Status Indicator may get a false positive internet-
 <!-- EyeTrackingCalibrationPrompt-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- EyeTrackingCalibrationPrompt-Applicability-End -->
 
 <!-- EyeTrackingCalibrationPrompt-OmaUri-Begin -->
@@ -564,7 +567,7 @@ This policy controls when a new person uses HoloLens device, if HoloLens should 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- EyeTrackingCalibrationPrompt-DFProperties-End -->
@@ -590,7 +593,7 @@ This policy controls when a new person uses HoloLens device, if HoloLens should 
 <!-- FallbackDiagnostics-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- FallbackDiagnostics-Applicability-End -->
 
 <!-- FallbackDiagnostics-OmaUri-Begin -->
@@ -613,7 +616,7 @@ This policy setting controls, when and if diagnostic logs can be collected using
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 2 |
 <!-- FallbackDiagnostics-DFProperties-End -->
@@ -623,7 +626,7 @@ This policy setting controls, when and if diagnostic logs can be collected using
 
 | Value | Description |
 |:--|:--|
-| 0 | Not allowed. Diagnostic logs cannot be collected by pressing the button combination. |
+| 0 | Not allowed. Diagnostic logs can't be collected by pressing the button combination. |
 | 1 | Allowed for device owners only. Diagnostics logs can be collected by pressing the button combination only if signed-in user is considered as device owner. |
 | 2 (Default) | Allowed for all users. Diagnostic logs can be collected by pressing the button combination. |
 <!-- FallbackDiagnostics-AllowedValues-End -->
@@ -640,7 +643,7 @@ This policy setting controls, when and if diagnostic logs can be collected using
 <!-- HeadTrackingMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- HeadTrackingMode-Applicability-End -->
 
 <!-- HeadTrackingMode-OmaUri-Begin -->
@@ -669,7 +672,7 @@ This policy configures behavior of HUP to determine, which algorithm to use for 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1]` |
 | Default Value  | 0 |
@@ -687,7 +690,7 @@ This policy configures behavior of HUP to determine, which algorithm to use for 
 <!-- ManualDownDirectionDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
 <!-- ManualDownDirectionDisabled-Applicability-End -->
 
 <!-- ManualDownDirectionDisabled-OmaUri-Begin -->
@@ -711,7 +714,7 @@ When the system automatically determines the down direction, it's using the meas
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ManualDownDirectionDisabled-DFProperties-End -->
@@ -722,7 +725,7 @@ When the system automatically determines the down direction, it's using the meas
 | Value | Description |
 |:--|:--|
 | 0 (Default) | User is allowed to manually change down direction. |
-| 1 | User is not allowed to manually change down direction. |
+| 1 | User isn't allowed to manually change down direction. |
 <!-- ManualDownDirectionDisabled-AllowedValues-End -->
 
 <!-- ManualDownDirectionDisabled-Examples-Begin -->
@@ -737,7 +740,7 @@ When the system automatically determines the down direction, it's using the meas
 <!-- MicrophoneDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- MicrophoneDisabled-Applicability-End -->
 
 <!-- MicrophoneDisabled-OmaUri-Begin -->
@@ -760,7 +763,7 @@ This policy setting controls whether microphone on HoloLens 2 is disabled or not
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- MicrophoneDisabled-DFProperties-End -->
@@ -771,7 +774,7 @@ This policy setting controls whether microphone on HoloLens 2 is disabled or not
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Microphone can be used for voice. |
-| 1 | Microphone cannot be used for voice. |
+| 1 | Microphone can't be used for voice. |
 <!-- MicrophoneDisabled-AllowedValues-End -->
 
 <!-- MicrophoneDisabled-Examples-Begin -->
@@ -786,7 +789,7 @@ This policy setting controls whether microphone on HoloLens 2 is disabled or not
 <!-- NtpClientEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
 <!-- NtpClientEnabled-Applicability-End -->
 
 <!-- NtpClientEnabled-OmaUri-Begin -->
@@ -803,7 +806,7 @@ Enabling the Windows NTP Client allows your computer to synchronize its computer
 
 - If you enable this policy setting, you can set the local computer clock to synchronize time with NTP servers.
 
-- If you disable or do not configure this policy setting, the local computer clock does not synchronize time with NTP servers.
+- If you disable or don't configure this policy setting, the local computer clock doesn't synchronize time with NTP servers.
 <!-- NtpClientEnabled-Description-End -->
 
 <!-- NtpClientEnabled-Editable-Begin -->
@@ -816,13 +819,12 @@ For more information, see the [ConfigureNtpClient](#configurentpclient) policy.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NtpClientEnabled-DFProperties-End -->
 
 <!-- NtpClientEnabled-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -856,7 +858,7 @@ The following example XML string shows the value to enable this policy:
 <!-- SkipCalibrationDuringSetup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
 <!-- SkipCalibrationDuringSetup-Applicability-End -->
 
 <!-- SkipCalibrationDuringSetup-OmaUri-Begin -->
@@ -867,7 +869,7 @@ The following example XML string shows the value to enable this policy:
 
 <!-- SkipCalibrationDuringSetup-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy configures whether the device will take the user through the eye tracking calibration process during device setup and first time user setup. If this policy is enabled, the device will not show the eye tracking calibration process during device setup and first time user setup. **Note** that until the user goes through the calibration process, eye tracking will not work on the device. If an app requires eye tracking and the user has not gone through the calibration process, the user will be prompted to do so.
+This policy configures whether the device will take the user through the eye tracking calibration process during device setup and first time user setup. If this policy is enabled, the device won't show the eye tracking calibration process during device setup and first time user setup. Note that until the user goes through the calibration process, eye tracking won't work on the device. If an app requires eye tracking and the user hasn't gone through the calibration process, the user will be prompted to do so.
 <!-- SkipCalibrationDuringSetup-Description-End -->
 
 <!-- SkipCalibrationDuringSetup-Editable-Begin -->
@@ -881,7 +883,7 @@ This policy configures whether the device will take the user through the eye tra
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- SkipCalibrationDuringSetup-DFProperties-End -->
@@ -892,7 +894,7 @@ This policy configures whether the device will take the user through the eye tra
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Eye tracking calibration process will be shown during device setup and first time user setup. |
-| 1 | Eye tracking calibration process will not be shown during device setup and first time user setup. |
+| 1 | Eye tracking calibration process won't be shown during device setup and first time user setup. |
 <!-- SkipCalibrationDuringSetup-AllowedValues-End -->
 
 <!-- SkipCalibrationDuringSetup-Examples-Begin -->
@@ -907,7 +909,7 @@ This policy configures whether the device will take the user through the eye tra
 <!-- SkipTrainingDuringSetup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
 <!-- SkipTrainingDuringSetup-Applicability-End -->
 
 <!-- SkipTrainingDuringSetup-OmaUri-Begin -->
@@ -918,7 +920,7 @@ This policy configures whether the device will take the user through the eye tra
 
 <!-- SkipTrainingDuringSetup-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy configures whether the device will take the user through a training process during device setup and first time user setup. If this policy is enabled, the device will not show the training process during device setup and first time user setup. If the user wishes to go through that training process, the user can launch the Tips app.
+This policy configures whether the device will take the user through a training process during device setup and first time user setup. If this policy is enabled, the device won't show the training process during device setup and first time user setup. If the user wishes to go through that training process, the user can launch the Tips app.
 <!-- SkipTrainingDuringSetup-Description-End -->
 
 <!-- SkipTrainingDuringSetup-Editable-Begin -->
@@ -931,7 +933,7 @@ It skips the training experience of interactions with the hummingbird and Start 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- SkipTrainingDuringSetup-DFProperties-End -->
@@ -942,7 +944,7 @@ It skips the training experience of interactions with the hummingbird and Start 
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Training process will be shown during device setup and first time user setup. |
-| 1 | Training process will not be shown during device setup and first time user setup. |
+| 1 | Training process won't be shown during device setup and first time user setup. |
 <!-- SkipTrainingDuringSetup-AllowedValues-End -->
 
 <!-- SkipTrainingDuringSetup-Examples-Begin -->
@@ -957,7 +959,7 @@ It skips the training experience of interactions with the hummingbird and Start 
 <!-- VisitorAutoLogon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
 <!-- VisitorAutoLogon-Applicability-End -->
 
 <!-- VisitorAutoLogon-OmaUri-Begin -->
@@ -980,7 +982,7 @@ This policy controls whether a visitor user will be automatically logged in. Vis
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- VisitorAutoLogon-DFProperties-End -->
@@ -990,7 +992,7 @@ This policy controls whether a visitor user will be automatically logged in. Vis
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Visitor user will not be signed in automatically. |
+| 0 (Default) | Visitor user won't be signed in automatically. |
 | 1 | Visitor user will be signed in automatically. |
 <!-- VisitorAutoLogon-AllowedValues-End -->
 
@@ -1006,7 +1008,7 @@ This policy controls whether a visitor user will be automatically logged in. Vis
 <!-- VolumeButtonDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- VolumeButtonDisabled-Applicability-End -->
 
 <!-- VolumeButtonDisabled-OmaUri-Begin -->
@@ -1029,7 +1031,7 @@ This policy setting controls if pressing the volume button changes the volume or
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- VolumeButtonDisabled-DFProperties-End -->
@@ -1040,7 +1042,7 @@ This policy setting controls if pressing the volume button changes the volume or
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Volume can be changed with press of the volume button. |
-| 1 | Volume cannot be changed with press of the volume button. |
+| 1 | Volume can't be changed with press of the volume button. |
 <!-- VolumeButtonDisabled-AllowedValues-End -->
 
 <!-- VolumeButtonDisabled-Examples-Begin -->

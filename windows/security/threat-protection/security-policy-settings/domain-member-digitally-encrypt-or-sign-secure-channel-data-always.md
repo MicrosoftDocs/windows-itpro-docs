@@ -1,5 +1,5 @@
 ---
-title: Domain member Digitally encrypt or sign secure channel data (always) (Windows 10)
+title: Domain member Digitally encrypt or sign secure channel data (always) 
 description: Best practices, location, values, and security considerations for the policy setting, Domain member Digitally encrypt or sign secure channel data (always).
 ms.assetid: 4480c7cb-adca-4f29-b4b8-06eb68d272bf
 ms.reviewer: 

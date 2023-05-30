@@ -1,6 +1,6 @@
 ---
 title: Control the health of Windows devices
-description: This article details an end-to-end solution that helps you protect high-value assets by enforcing, controlling, and reporting the health of Windows 10-based devices.
+description: This article details an end-to-end solution that helps you protect high-value assets by enforcing, controlling, and reporting the health of Windows devices.
 ms.prod: windows-client
 ms.date: 10/13/2017
 ms.localizationpriority: medium
@@ -17,7 +17,7 @@ ms.topic: conceptual
 
 -   Windows 10
 
-This article details an end-to-end solution that helps you protect high-value assets by enforcing, controlling, and reporting the health of Windows 10-based devices.
+This article details an end-to-end solution that helps you protect high-value assets by enforcing, controlling, and reporting the health of Windows devices.
 
 ## Introduction
 

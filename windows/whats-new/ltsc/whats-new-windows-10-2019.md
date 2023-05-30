@@ -9,14 +9,13 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 ms.technology: itpro-fundamentals
 ms.date: 04/05/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/" target="_blank">Windows 10 Enterprise LTSC 2019</a>
 ---
 
 # What's new in Windows 10 Enterprise LTSC 2019
 
-**Applies to**
--   Windows 10 Enterprise LTSC 2019
-
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2019, compared to Windows 10 Enterprise LTSC 2016 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](index.md).
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2019, compared to Windows 10 Enterprise LTSC 2016 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](overview.md).
 
 >[!NOTE]
 >Features in Windows 10 Enterprise LTSC 2019 are equivalent to Windows 10, version 1809.
@@ -577,4 +576,4 @@ See the following example:
 
 ## See also
 
-[Windows 10 Enterprise LTSC](index.md): A short description of the LTSC servicing channel with links to information about each release.
+[Windows 10 Enterprise LTSC](overview.md): A short description of the LTSC servicing channel with links to information about each release.

@@ -1,5 +1,5 @@
 ---
-title: 4775(F) An account could not be mapped for logon. (Windows 10)
+title: 4775(F) An account could not be mapped for logon. 
 description: Describes security event 4775(F) An account could not be mapped for logon.
 ms.pagetype: security
 ms.prod: windows-client

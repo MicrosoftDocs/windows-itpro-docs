@@ -63,14 +63,14 @@ Keeping the hard-link migration store can result in extra disk space being consu
 
 For example, a company has decided to deploy Windows 10 on all of their computers. Each employee will keep the same computer, but the operating system on each computer will be updated.
 
-1. An administrator runs the  **ScanState** command-line tool on each computer, specifying the `/hardlink` command-line option. The  **ScanState** tool saves the user state to a hard-link migration store on each computer, improving performance by reducing file duplication, except in certain specific instances.
+1. An administrator runs the **ScanState** command-line tool on each computer, specifying the `/hardlink` command-line option. The **ScanState** tool saves the user state to a hard-link migration store on each computer, improving performance by reducing file duplication, except in certain specific instances.
 
     > [!NOTE]
-    > As a best practice, we recommend that you do not create your hard-link migration store until just before you perform the migration in order to migrate the latest versions of your files. You should not use your software applications on the computer after creating the migration store until you have finished migrating your files with  **LoadState**.
+    > As a best practice, we recommend that you do not create your hard-link migration store until just before you perform the migration in order to migrate the latest versions of your files. You should not use your software applications on the computer after creating the migration store until you have finished migrating your files with **LoadState**.
 
-2. On each computer, an administrator installs the company's standard operating environment (SOE), which includes Windows 7 and other applications the company currently uses.
+2. On each computer, an administrator installs the company's standard operating environment (SOE), which includes Windows 10 and other applications the company currently uses.
 
-3. An administrator runs the  **LoadState** command-line tool on each computer. The  **LoadState** tool restores user state back on each computer.
+3. An administrator runs the **LoadState** command-line tool on each computer. The **LoadState** tool restores user state back on each computer.
 
 > [!NOTE]
 > During the update of a domain-joined computer, the profiles of users whose SID cannot be resolved will not be migrated. When using a hard-link migration store, it could cause a data loss.
@@ -119,7 +119,7 @@ For more information, see [Migrate EFS files and certificates](usmt-migrate-efs-
 
 Files that are locked by an application or the operating system are handled differently when using a hard-link migration store.
 
-Files that are locked by the operating system can't remain in place and must be copied into the hard-link migration store. As a result, selecting many operating-system files for migration significantly reduces performance during a hard-link migration. As a best practice, we recommend that you don't migrate any files out of the `\Windows directory`, which minimizes performance-related issues.
+Files that are locked by the operating system can't remain in place and must be copied into the hard-link migration store. As a result, selecting many operating-system files for migration significantly reduces performance during a hard-link migration. As a best practice, we recommend that you don't migrate any files out of the `\Windows` directory, which minimizes performance-related issues.
 
 Files that are locked by an application are treated the same in hard-link migrations as in other scenarios when the volume shadow-copy service isn't being utilized. The volume shadow-copy service can't be used with hard-link migrations. However, by modifying the new **&lt;HardLinkStoreControl&gt;** section in the `Config.xml` file, it's possible to enable the migration of files locked by an application.
 
@@ -141,7 +141,7 @@ A new section in the `Config.xml` file allows optional configuration of some of 
 > [!IMPORTANT]
 > You must use the `/nocompress` option with the `/HardLink` option.
 
-The following XML sample specifies that files locked by an application under the `\Users` directory can remain in place during the migration. It also specifies that locked files that aren't located in the `\Users` directory should result in the **File in Use** error. It's important to exercise caution when specifying the paths using the `<createhardlink>`** tag in order to minimize scenarios that make the hard-link migration store more difficult to delete.
+The following XML sample specifies that files locked by an application under the `\Users` directory can remain in place during the migration. It also specifies that locked files that aren't located in the `\Users` directory should result in the **File in Use** error. It's important to exercise caution when specifying the paths using the **`<createhardlink>`** tag in order to minimize scenarios that make the hard-link migration store more difficult to delete.
 
 ```xml
 <Policies>

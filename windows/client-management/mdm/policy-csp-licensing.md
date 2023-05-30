@@ -4,7 +4,7 @@ description: Learn more about the Licensing Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowWindowsEntitlementReactivation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowWindowsEntitlementReactivation-Applicability-End -->
 
 <!-- AllowWindowsEntitlementReactivation-OmaUri-Begin -->
@@ -38,10 +38,12 @@ ms.topic: reference
 <!-- AllowWindowsEntitlementReactivation-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting controls whether OS Reactivation is blocked on a device.
+
 Policy Options:
-  - Not Configured (default -- Windows registration and reactivation is allowed)
-  - Disabled (Windows registration and reactivation is not allowed)
-  - Enabled (Windows registration is allowed)
+
+- Not Configured (default -- Windows registration and reactivation is allowed)
+- Disabled (Windows registration and reactivation isn't allowed)
+- Enabled (Windows registration is allowed)
 <!-- AllowWindowsEntitlementReactivation-Description-End -->
 
 <!-- AllowWindowsEntitlementReactivation-Editable-Begin -->
@@ -53,7 +55,7 @@ Policy Options:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowWindowsEntitlementReactivation-DFProperties-End -->
@@ -93,7 +95,7 @@ Policy Options:
 <!-- DisallowKMSClientOnlineAVSValidation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DisallowKMSClientOnlineAVSValidation-Applicability-End -->
 
 <!-- DisallowKMSClientOnlineAVSValidation-OmaUri-Begin -->
@@ -105,11 +107,14 @@ Policy Options:
 <!-- DisallowKMSClientOnlineAVSValidation-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting lets you opt-out of sending KMS client activation data to Microsoft automatically. Enabling this setting prevents this computer from sending data to Microsoft regarding its activation state.
-If you disable or do not configure this policy setting, KMS client activation data will be sent to Microsoft services when this device activates.
+
+If you disable or don't configure this policy setting, KMS client activation data will be sent to Microsoft services when this device activates.
+
 Policy Options:
-  - Not Configured (default -- data will be automatically sent to Microsoft)
-  - Disabled (data will be automatically sent to Microsoft)
-  - Enabled (data will not be sent to Microsoft)
+
+- Not Configured (default -- data will be automatically sent to Microsoft)
+- Disabled (data will be automatically sent to Microsoft)
+- Enabled (data won't be sent to Microsoft)
 <!-- DisallowKMSClientOnlineAVSValidation-Description-End -->
 
 <!-- DisallowKMSClientOnlineAVSValidation-Editable-Begin -->
@@ -121,7 +126,7 @@ Policy Options:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisallowKMSClientOnlineAVSValidation-DFProperties-End -->

@@ -1,5 +1,5 @@
 ---
-title: System Guard Secure Launch and SMM protection (Windows 10)
+title: System Guard Secure Launch and SMM protection 
 description: Explains how to configure System Guard Secure Launch and System Management Mode (SMM protection) to improve the startup security of Windows 10 devices.
 search.appverid: met150
 ms.prod: windows-client
