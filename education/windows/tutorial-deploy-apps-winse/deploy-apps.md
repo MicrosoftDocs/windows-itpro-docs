@@ -19,9 +19,11 @@ The following table provides an overview of the applications types that can be d
 |**Installer/App type**|**Installer extensions**|**Available installation methods via Intune**|**Considerations for Windows 11 SE**|
 |-|-|-|-|
 |[Win32][WIN-1]|`.exe`<br>`.msi`|- Intune Management Extension (IME)<br> - Microsoft Store integration|⚠️ There are known limitations that might prevent an app to install or run.|
-|[Universal Windows Platform (UWP)][WIN-2]|`.appx`<br>`.appxbundle`<br>`.msix`<br>|- For public apps: Microsoft Store integration<br>- For private apps: line-of-business (LOB) apps|✅ UWP public apps are supported.<br><br>⛔ UWP private apps are currently unsupported.<!--⚠️ LOB apps require a supplemental policy.-->|
+|[Universal Windows Platform (UWP)][WIN-2]|`.appx`<br>`.appxbundle`<br>`.msix`<br>|- For public apps: Microsoft Store integration<br>- For private apps: line-of-business (LOB) apps|⛔ UWP apps are currently unsupported.<!--⚠️ LOB apps require a supplemental policy.-->|
 |[Progressive Web Apps (PWAs)][EDGE-2] |`.msix`|- Settings catalog policies<br>- Microsoft Store integration|✅ PWAs are supported.|
 |Web links| n/a |- Windows web links|✅ Web links are supported.|
+
+<!--after Intune 2307 update the table above with ✅ UWP public apps are supported.<br><br>⛔ UWP private apps are currently unsupported.-->
 
 > [!IMPORTANT]
 > Although you'll be able to install apps on Windows 11 SE devices via Intune, some apps may not perform well on these devices due those apps' minimum spec requirements.
@@ -38,6 +40,9 @@ There are known limitations that might prevent applications to install or execut
 
 ## UWP apps
 
+UWP apps are currently unsupported for Windows 11 SE.
+
+<!-- 2307
 ### Microsoft Store apps
 
 Public UWP apps available in the Microsoft Store are supported for Windows 11 SE.
@@ -45,6 +50,9 @@ Public UWP apps available in the Microsoft Store are supported for Windows 11 SE
 ### Line of business apps
 
 Private UWP apps are currently unsupported for Windows 11 SE.
+
+> [!IMPORTANT]
+> UWP apps must be installed in device context. Deploying UWP apps in user context fail with error code `0x800711C7`
 
 <!--### Line of business apps
 
