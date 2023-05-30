@@ -78,7 +78,7 @@ The following table lists all the applications included in Windows 11 SE and the
 
 ## Available applications
 
-The following applications can also run on Windows 11 SE, and can be deployed using Intune for Education. For more information, see [Configure applications with Microsoft Intune][EDUWIN-1]
+The following applications can also run on Windows 11 SE, and can be deployed using Intune for Education. For more information, see [Configure applications with Microsoft Intune][EDUWIN-1].
 
 | Application                               | Supported version | App Type | Vendor                                    |
 |-------------------------------------------|-------------------|----------|-------------------------------------------|
