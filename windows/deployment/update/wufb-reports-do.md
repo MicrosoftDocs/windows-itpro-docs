@@ -147,15 +147,15 @@ DeviceCount = count_distinct(GlobalDeviceId) by GroupID | top 10 by DeviceCount 
 
 ### Delivery Optimization Supported Content Types
 
-There are many Microsoft [content types](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization) that are supported by Delivery Optimization. All of these content types show up in the 'Content Distribution' section in the Delivery Optimization report.
+There are many Microsoft [content types](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization) that are supported by Delivery Optimization. All of these content types show up in the 'Content Distribution' section in the Delivery Optimization report. See the [complete table](waas-delivery-optimization.md#windows-client) for P2P/MCC support types.
 
 | Content Category | Content Types Included |
 | --- | --- |
-| Apps | Windows 10 Store files,  Windows 10 Store for Business files, Windows 11 UWP Store apps |
+| Apps | Windows 10 Store apps,  Windows 10 Store for Business apps, Windows 11 UWP Store apps |
 | Driver Updates | Windows Update Driver updates |
-| Feature and Flighting Updates | Windows Update Feature and Flighting updates, language packs |
+| Feature and Flighting Updates | Windows Update Feature and Flighting updates |
 | Office | Microsoft 365 Apps and updates |
-| Other | Windows Defender definition updates, Intune Win32 apps, Edge Browser updates, Configuration Manager Express updates, Dynamic updates, MDM Agent, Xbox Game Pass (PC), Windows Package Manager, MSIX Installer (includes Windows 11 Store Win32 apps, Windows 11 Teams updates) |
+| Other | Windows Language Packs, Windows Defender definition updates, Intune Win32 apps, Edge Browser updates, Configuration Manager Express updates, Dynamic updates, MDM Agent, Xbox Game Pass (PC), Windows Package Manager, MSIX Installer (includes Windows 11 Store Win32 apps, Windows 11 Teams updates) |
 | Quality Updates | Windows Updates Quality updates |
 
 ## Frequency Asked Questions
