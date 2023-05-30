@@ -29,11 +29,11 @@ VBScript will be available as a [feature on demand](/windows-hardware/manufactur
 
 The [Microsoft Support Diagnostic Tool (MSDT)](/windows-server/administration/windows-commands/msdt) gathers diagnostic data for analysis by support professionals. MSDT is the engine used to run legacy Windows built-in troubleshooters. There are currently 28 built-in troubleshooters for MSDT. Half of the built-in troubleshooters have already been [redirected](#redirected-msdt-troubleshooters) to the Get Help platform, while the other half will be [retired](#retired-msdt-troubleshooters).  
 
-If you're using MSDT to run [custom troubleshooting packages](/previous-versions/windows/desktop/wintt/package-schema), it will be available as a [feature on demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) before the tool is fully retired in 2025. This change will allow you to continue to use MSDT to run custom troubleshooting packages while transitioning to a new platform. [Contact Microsoft support](https://support.microsoft.com/contactus) for Windows if you require additional assistance.
+If you're using MSDT to run [custom troubleshooting packages](/previous-versions/windows/desktop/wintt/package-schema), it will be available as a [feature on demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) before the tool is fully retired in 2025. This change allows you to continue to use MSDT to run custom troubleshooting packages while transitioning to a new platform. [Contact Microsoft support](https://support.microsoft.com/contactus) for Windows if you require more assistance.
 
 ### Redirected MSDT troubleshooters
 
-The following troubleshooters will automatically be redirected when you access them from **Start** > **Settings** > **System** > **Troubleshoot**:
+The following troubleshooters are automatically redirected when you access them from **Start** > **Settings** > **System** > **Troubleshoot**:
 
 - Background Intelligent Transfer Service (BITS)
 - Bluetooth
