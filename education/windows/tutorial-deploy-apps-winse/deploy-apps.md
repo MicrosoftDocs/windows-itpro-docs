@@ -36,6 +36,9 @@ The addition of Win32 applications to Intune consists of repackaging the apps an
 > [!IMPORTANT]
 > If you have Windows 11 SE devices that already have apps deployed through Intune, the apps will not get retroactively tagged with the *managed installer* mark. The reason is to avoid making any security assumptions for these apps. You may need to redeploy the apps through Intune to get them properly tagged with managed installer and allowed to run.
 
+> [!IMPORTANT]
+> Store apps must be installed in device context. Deploying apps in user context fails with error code `0x800711C7`.
+
 There are known limitations that might prevent applications to install or execute. For more information, see the next section [validate applications](validate-apps.md).
 
 ## UWP apps
@@ -52,7 +55,7 @@ Public UWP apps available in the Microsoft Store are supported for Windows 11 SE
 Private UWP apps are currently unsupported for Windows 11 SE.
 
 > [!IMPORTANT]
-> UWP apps must be installed in device context. Deploying UWP apps in user context fail with error code `0x800711C7`
+> Store apps must be installed in device context. Deploying apps in user context fails with error code `0x800711C7`.
 
 <!--### Line of business apps
 
