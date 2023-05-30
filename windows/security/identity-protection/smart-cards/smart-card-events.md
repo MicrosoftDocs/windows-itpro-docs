@@ -1,5 +1,5 @@
 ---
-title: Smart Card Events (Windows)
+title: Smart Card Events 
 description: This topic for the IT professional and smart card developer describes events that are related to smart card deployment and development.
 ms.reviewer: ardenw
 ms.topic: article

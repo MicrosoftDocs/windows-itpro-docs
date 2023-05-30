@@ -1,5 +1,5 @@
 ---
-title: Deny access to this computer from the network (Windows 10)
+title: Deny access to this computer from the network 
 description: Best practices, location, values, policy management, and security considerations for the Deny access to this computer from the network security policy setting.
 ms.assetid: 935e9f89-951b-4163-b186-fc325682bb0b
 ms.reviewer: 

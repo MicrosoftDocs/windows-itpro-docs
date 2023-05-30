@@ -1,5 +1,5 @@
 ---
-title: Network security Restrict NTLM Audit incoming NTLM traffic (Windows 10)
+title: Network security Restrict NTLM Audit incoming NTLM traffic 
 description: Best practices, security considerations and more for the security policy setting, Network Security Restrict NTLM Audit incoming NTLM traffic.
 ms.assetid: 37e380c2-22e1-44cd-9993-e12815b845cf
 ms.reviewer: 

@@ -1,5 +1,5 @@
 ---
-title: 4819(S) Central Access Policies on the machine have been changed. (Windows 10)
+title: 4819(S) Central Access Policies on the machine have been changed. 
 description: Describes security event 4819(S) Central Access Policies on the machine have been changed.
 ms.pagetype: security
 ms.prod: windows-client

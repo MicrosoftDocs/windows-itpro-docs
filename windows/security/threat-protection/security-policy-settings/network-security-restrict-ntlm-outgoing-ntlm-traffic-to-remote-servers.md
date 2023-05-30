@@ -1,5 +1,5 @@
 ---
-title: Network security Restrict NTLM Outgoing traffic (Windows 10)
+title: Network security Restrict NTLM Outgoing traffic 
 description: Learn about best practices, security considerations and more for the policy setting, Network Security Restrict NTLM Outgoing NTLM traffic to remote servers.
 ms.assetid: 63437a90-764b-4f06-aed8-a4a26cf81bd1
 ms.reviewer: 

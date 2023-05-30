@@ -1,5 +1,5 @@
 ---
-title: Monitor central access policies on a file server (Windows 10)
+title: Monitor central access policies on a file server 
 description: Learn how to monitor changes to the central access policies that apply to a file server when using advanced security auditing options.
 ms.assetid: 126b051e-c20d-41f1-b42f-6cff24dcf20c
 ms.reviewer: 

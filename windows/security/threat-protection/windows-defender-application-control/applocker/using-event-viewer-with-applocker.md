@@ -1,5 +1,5 @@
 ---
-title: Using Event Viewer with AppLocker (Windows)
+title: Using Event Viewer with AppLocker 
 description: This article lists AppLocker events and describes how to use Event Viewer with AppLocker.
 ms.assetid: 109abb10-78b1-4c29-a576-e5a17dfeb916
 ms.reviewer: 

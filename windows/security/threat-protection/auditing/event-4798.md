@@ -1,5 +1,5 @@
 ---
-title: 4798(S) A user's local group membership was enumerated. (Windows 10)
+title: 4798(S) A user's local group membership was enumerated. 
 description: Describes security event 4798(S) A user's local group membership was enumerated.
 ms.pagetype: security
 ms.prod: windows-client

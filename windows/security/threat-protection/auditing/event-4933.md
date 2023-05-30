@@ -1,5 +1,5 @@
 ---
-title: 4933(S, F) Synchronization of a replica of an Active Directory naming context has ended. (Windows 10)
+title: 4933(S, F) Synchronization of a replica of an Active Directory naming context has ended. 
 description: Describes security event 4933(S, F) Synchronization of a replica of an Active Directory naming context has ended.
 ms.pagetype: security
 ms.prod: windows-client

@@ -1,5 +1,5 @@
 ---
-title: Import an AppLocker policy from another computer (Windows)
+title: Import an AppLocker policy from another computer 
 description: This topic for IT professionals describes how to import an AppLocker policy.
 ms.assetid: b48cb2b2-8ef8-4cc0-89bd-309d0b1832f6
 ms.reviewer: 

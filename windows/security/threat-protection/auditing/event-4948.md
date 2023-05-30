@@ -1,5 +1,5 @@
 ---
-title: 4948(S) A change has been made to Windows Firewall exception list. A rule was deleted. (Windows 10)
+title: 4948(S) A change has been made to Windows Firewall exception list. A rule was deleted. 
 description: Describes security event 4948(S) A change has been made to Windows Firewall exception list. A rule was deleted.
 ms.pagetype: security
 ms.prod: windows-client

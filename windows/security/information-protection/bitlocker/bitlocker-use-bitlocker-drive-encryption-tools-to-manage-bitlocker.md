@@ -1,5 +1,5 @@
 ---
-title: BitLocker Use BitLocker Drive Encryption Tools to manage BitLocker (Windows 10)
+title: BitLocker Use BitLocker Drive Encryption Tools to manage BitLocker 
 description: This article for the IT professional describes how to use tools to manage BitLocker.
 ms.reviewer: 
 ms.prod: windows-client

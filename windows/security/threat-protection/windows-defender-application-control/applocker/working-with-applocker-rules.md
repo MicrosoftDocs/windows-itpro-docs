@@ -1,5 +1,5 @@
 ---
-title: Working with AppLocker rules (Windows)
+title: Working with AppLocker rules 
 description: This topic for IT professionals describes AppLocker rule types and how to work with them for your application control policies.
 ms.assetid: 3966b35b-f2da-4371-8b5f-aec031db6bc9
 ms.reviewer: 

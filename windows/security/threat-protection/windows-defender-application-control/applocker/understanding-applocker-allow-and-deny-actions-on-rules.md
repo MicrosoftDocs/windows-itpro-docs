@@ -1,5 +1,5 @@
 ---
-title: Understanding AppLocker allow and deny actions on rules (Windows)
+title: Understanding AppLocker allow and deny actions on rules 
 description: This topic explains the differences between allow and deny actions on AppLocker rules.
 ms.assetid: ea0370fa-2086-46b5-a0a4-4a7ead8cbed9
 ms.reviewer: 

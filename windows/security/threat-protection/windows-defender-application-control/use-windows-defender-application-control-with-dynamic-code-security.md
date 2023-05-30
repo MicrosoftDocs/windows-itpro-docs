@@ -1,5 +1,5 @@
 ---
-title: Windows Defender Application Control and .NET (Windows)
+title: Windows Defender Application Control and .NET 
 description: Understand how WDAC and .NET work together and use Dynamic Code Security to verify code loaded by .NET at runtime.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb

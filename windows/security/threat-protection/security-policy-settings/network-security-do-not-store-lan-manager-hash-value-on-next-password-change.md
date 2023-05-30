@@ -1,5 +1,5 @@
 ---
-title: Network security Do not store LAN Manager hash value on next password change (Windows 10)
+title: Network security Do not store LAN Manager hash value on next password change 
 description: Best practices, security considerations, and more for the security policy setting, Network security Do not store LAN Manager hash value on next password change.
 ms.assetid: 6452b268-e5ba-4889-9d38-db28f919af51
 ms.reviewer: 

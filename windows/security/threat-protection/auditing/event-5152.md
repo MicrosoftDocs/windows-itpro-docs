@@ -1,5 +1,5 @@
 ---
-title: 5152(F) The Windows Filtering Platform blocked a packet. (Windows 10)
+title: 5152(F) The Windows Filtering Platform blocked a packet. 
 description: Describes security event 5152(F) The Windows Filtering Platform blocked a packet.
 ms.pagetype: security
 ms.prod: windows-client

@@ -1,5 +1,5 @@
 ---
-title: 5064(S, F) A cryptographic context operation was attempted. (Windows 10)
+title: 5064(S, F) A cryptographic context operation was attempted. 
 description: Describes security event 5064(S, F) A cryptographic context operation was attempted.
 ms.pagetype: security
 ms.prod: windows-client

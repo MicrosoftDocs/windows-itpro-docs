@@ -1,5 +1,5 @@
 ---
-title: Using Outlook on the web with WIP (Windows 10)
+title: Using Outlook on the web with WIP 
 description: Options for using Outlook on the web with Windows Information Protection (WIP).
 ms.prod: windows-client
 ms.localizationpriority: medium

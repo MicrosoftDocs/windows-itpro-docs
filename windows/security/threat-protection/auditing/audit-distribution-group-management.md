@@ -1,5 +1,5 @@
 ---
-title: Audit Distribution Group Management (Windows 10)
+title: Audit Distribution Group Management 
 description: The policy setting, Audit Distribution Group Management, determines if audit events are generated for specific distribution-group management tasks.
 ms.assetid: d46693a4-5887-4a58-85db-2f6cba224a66
 ms.reviewer: 

@@ -1,5 +1,5 @@
 ---
-title: Understanding AppLocker rule condition types (Windows)
+title: Understanding AppLocker rule condition types 
 description: This topic for the IT professional describes the three types of AppLocker rule conditions.
 ms.assetid: c21af67f-60a1-4f7d-952c-a6f769c74729
 ms.reviewer: 

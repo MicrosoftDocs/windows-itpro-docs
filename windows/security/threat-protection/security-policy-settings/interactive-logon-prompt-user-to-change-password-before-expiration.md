@@ -1,5 +1,5 @@
 ---
-title: Interactive log-on prompt user to change password before expiration (Windows 10)
+title: Interactive log-on prompt user to change password before expiration 
 description: Best practices and security considerations for an interactive log-on prompt for users to change passwords before expiration.
 ms.assetid: 8fe94781-40f7-4fbe-8cfd-5e116e6833e9
 ms.reviewer: 

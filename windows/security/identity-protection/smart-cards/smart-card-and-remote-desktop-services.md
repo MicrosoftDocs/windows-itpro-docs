@@ -1,6 +1,6 @@
 ---
 ms.date: 09/24/2021
-title: Smart Card and Remote Desktop Services (Windows)
+title: Smart Card and Remote Desktop Services 
 description: This topic for the IT professional describes the behavior of Remote Desktop Services when you implement smart card sign-in.
 ms.topic: article
 ms.reviewer: ardenw
