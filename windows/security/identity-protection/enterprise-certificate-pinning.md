@@ -61,7 +61,7 @@ Each PinRule element contains a sequence of one or more Site elements and a sequ
 #### PinRules element
 
 The PinRules element can have the following attributes.
-For help with formatting Pin Rules, see [Representing a Date in XML](#representing-a-date-in-xml) or [Representing a Duration in XML](#representing-a-duration-in-xml). 
+For help with formatting Pin Rules, see [Represent a date in XML](#represent-a-date-in-xml) or [Represent a duration in XML](#represent-a-duration-in-xml). 
 
 | Attribute | Description | Required |
 |-----------|-------------|----------|
@@ -88,7 +88,7 @@ The **Certificate** element can have the following attributes.
 | **File**  | Path to a file containing one or more certificates.  Where the certificate(s) can be encoded as: <br>- single certificate <br>- p7b <br>- sst <br> These files can also be Base64 formatted.  All **Site** elements included in the same **PinRule** element can match any of these certificates. | Yes (File, Directory, or Base64 must be present). |
 | **Directory** | Path to a directory containing one or more of the above certificate files. Skips any files not containing any certificates. | Yes (File, Directory, or Base64 must be present). | 
 | **Base64** | Base64 encoded certificate(s). Where the certificate(s) can be encoded as: <br>- single certificate <br>- p7b <br> - sst <br> This allows the certificates to be included in the XML file without a file directory dependency. <br> Note: <br> You can use **certutil -encode** to convert a .cer file into base64. You can then use Notepad to copy and paste the base64 encoded certificate into the pin rule.  | Yes (File, Directory, or Base64 must be present). |
-| **EndDate** | Enables you to configure an expiration date for when the certificate is no longer valid in the pin rule. <br>If you are in the process of switching to a new root or CA, you can set the **EndDate** to allow matching of this element's certificates.<br> If the current time is past the **EndDate**, then, when creating the certificate trust list (CTL), the parser outputs a warning message and excludes the certificate(s) from the Pin Rule in the generated CTL.<br> For help with formatting Pin Rules, see [Representing a Date in XML](#representing-a-date-in-xml).| No.|
+| **EndDate** | Enables you to configure an expiration date for when the certificate is no longer valid in the pin rule. <br>If you are in the process of switching to a new root or CA, you can set the **EndDate** to allow matching of this element's certificates.<br> If the current time is past the **EndDate**, then, when creating the certificate trust list (CTL), the parser outputs a warning message and excludes the certificate(s) from the Pin Rule in the generated CTL.<br> For help with formatting Pin Rules, see [Represent a date in XML](#represent-a-date-in-xml).| No.|
 
 #### Site element
 
