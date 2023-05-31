@@ -105,7 +105,7 @@ This setting allows an administrator to revert specific Windows Shell behavior t
 
 - If you enable this setting, users can't configure their system to open items by single-clicking (such as in Mouse in Control Panel). As a result, the user interface looks and operates like the interface for Windows NT 4.0, and users can't restore the new features.
 
-Enabling this policy will also turn off the preview pane and set the folder options for File Explorer to Use classic folders view and disable the users ability to change these options.
+Enabling this policy will also turn off the preview pane and set the folder options for File Explorer to Use classic folders view and disable the user's ability to change these options.
 
 - If you disable or not configure this policy, the default File Explorer behavior is applied to the user.
 
