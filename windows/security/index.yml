@@ -80,7 +80,7 @@ landingContent:
       - linkListType: overview
         links:
         - text: Overview
-          url: apps.md
+          url: application-security/index.md
       - linkListType: concept
         links:
         - text: Application Control and virtualization-based protection
