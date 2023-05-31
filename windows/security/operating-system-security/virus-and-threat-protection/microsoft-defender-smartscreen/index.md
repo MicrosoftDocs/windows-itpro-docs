@@ -48,7 +48,7 @@ Microsoft Defender SmartScreen provide an early warning system against websites 
 > [!IMPORTANT]
 > SmartScreen protects against malicious files from the internet. It does not protect against malicious files on internal locations or network shares, such as shared folders with UNC paths or SMB/CIFS shares.
 
-[!INCLUDE [microsoft-defender-smartscreen](../../../../includes/licensing/microsoft-defender-smartscreen.md)]
+[!INCLUDE [microsoft-defender-smartscreen](/includes/licensing/microsoft-defender-smartscreen.md)]
 
 ## Submit files to Microsoft Defender SmartScreen for review
 

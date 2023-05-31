@@ -1,6 +1,4 @@
 items:
-  - name: Overview
-    href: index.md
   - name: Microsoft Defender Antivirus 🔗
     href: /microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows
   - name: Configuring LSA Protection 🔗
