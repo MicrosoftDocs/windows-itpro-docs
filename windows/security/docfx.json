@@ -53,6 +53,7 @@
           "folder_relative_path_in_docset": "./"
         }
       },
+      "titleSuffix": "Windows Security",
       "contributors_to_exclude": [
         "rjagiewich",
         "traya1",

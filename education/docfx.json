@@ -51,6 +51,7 @@
           "folder_relative_path_in_docset": "./"
         }
       },
+      "titleSuffix": "Windows Education",
       "contributors_to_exclude": [ 
         "rjagiewich", 
         "traya1", 
