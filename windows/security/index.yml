@@ -80,7 +80,7 @@ landingContent:
       - linkListType: overview
         links:
         - text: Overview
-          url: apps.md
+          url: application-security/index.md
       - linkListType: concept
         links:
         - text: Application Control and virtualization-based protection
@@ -125,10 +125,6 @@ landingContent:
   # Card (optional)
   - title: Cloud services
     linkLists:
-      - linkListType: overview
-        links:
-        - text: Overview
-          url: cloud.md
       - linkListType: concept
         links:
         - text: Mobile device management
