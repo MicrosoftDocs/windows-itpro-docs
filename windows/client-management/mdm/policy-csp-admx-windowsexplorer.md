@@ -3967,7 +3967,7 @@ To remove network computers from lists of network resources, use the "No Entire 
 
 <!-- PlacesBar-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Configures the list of items displayed in the Places Bar in the Windows File/Open dialog. If enable this setting you can specify from 1 to 5 items to be displayed in the Places Bar.
+Configures the list of items displayed in the Places Bar in the Windows File/Open dialog. If this setting is enabled, you can specify from 1 to 5 items to be displayed in the Places Bar.
 
 The valid items you may display in the Places Bar are:
 
