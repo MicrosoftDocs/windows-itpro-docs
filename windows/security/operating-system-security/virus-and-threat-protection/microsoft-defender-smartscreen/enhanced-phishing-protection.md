@@ -8,7 +8,7 @@ ms.author: vinpa
 ms.reviewer: paoloma
 manager: aaroncz
 ms.localizationpriority: medium
-ms.date: 10/07/2022
+ms.date: 05/31/2023
 adobe-target: true
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 22H2</a>
@@ -73,7 +73,7 @@ Enhanced Phishing Protection can be configured using the following Administrativ
 #### [:::image type="icon" source="images/icons/windows-os.svg"::: **CSP**](#tab/csp)
 
 Enhanced Phishing Protection can be configured using the [WebThreatDefense CSP][WIN-1].
-  
+
 | Setting                 | OMA-URI                                                                   | Data type |
 |-------------------------|---------------------------------------------------------------------------|-----------|
 | **ServiceEnabled**      | `./Device/Vendor/MSFT/Policy/Config/WebThreatDefense/ServiceEnabled`      | Integer   |
@@ -90,7 +90,7 @@ By default, Enhanced Phishing Protection is deployed in audit mode, preventing n
 To better help you protect your organization, we recommend turning on and using these specific Microsoft Defender SmartScreen settings.
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
-  
+
 |Settings catalog element|Recommendation|
 |---------|---------|
 |Service Enabled|**Enable**: Turns on Enhanced Phishing Protection in audit mode, which captures work or school password entry events and sends diagnostic data but doesn't show any notifications to your users.|

@@ -622,8 +622,7 @@ Some information is sent to Microsoft about files and programs run on PCs with t
 
 <!-- EnableSmartScreen-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
-For more information, see [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview).
+For more information, see [Microsoft Defender SmartScreen](/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen).
 <!-- EnableSmartScreen-Editable-End -->
 
 <!-- EnableSmartScreen-DFProperties-Begin -->
@@ -3174,7 +3173,7 @@ If you enable this setting, the system removes the Map Network Drive and Disconn
 This setting doesn't prevent users from connecting to another computer by typing the name of a shared folder in the Run dialog box.
 
 > [!NOTE]
-> 
+>
 
 This setting was documented incorrectly on the Explain tab in Group Policy for Windows 2000. The Explain tab states incorrectly that this setting prevents users from connecting and disconnecting drives.
 

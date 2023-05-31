@@ -92,7 +92,7 @@ landingContent:
         - text: Windows Sandbox
           url: application-security\application-isolation\windows-sandbox\windows-sandbox-overview.md
         - text: Microsoft Defender SmartScreen
-          url: threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md
+          url: operating-system-security\virus-and-threat-protection\microsoft-defender-smartscreen\index.md
         - text: S/MIME for Windows
           url: identity-protection/configure-s-mime.md
 # Cards and links should be based on top customer tasks or top subjects
