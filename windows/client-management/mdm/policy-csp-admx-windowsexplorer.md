@@ -3971,7 +3971,7 @@ Configures the list of items displayed in the Places Bar in the Windows File/Ope
 
 The valid items you may display in the Places Bar are:
 
-1) Shortcuts to a local folders -- (ex. C:\Windows)
+1) Shortcuts to a local folder -- (ex. C:\Windows)
 
 2) Shortcuts to remote folders -- (\\server\share)
 
