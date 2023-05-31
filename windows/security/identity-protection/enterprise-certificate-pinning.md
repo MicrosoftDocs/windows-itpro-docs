@@ -186,14 +186,14 @@ Sign-in to the reference computer using domain administrator equivalent credenti
 
   `HKLM\SOFTWARE\Microsoft\Cryptography\OID\EncodingType0\CertDllCreateCertificateChainEngine\Config`
 
-  Select **Select** to close the **Registry Item Browser**.
+  Select **Select** to close the **Registry Item Browser**
 
-1. The **Key Path** should contain the selected registry key. The **Value name** configuration should contain the registry value name **_PinRules_**. **Value type** should read **_REG\_BINARY_** and **Value data** should contain a long series of numbers from 0-9 and letters ranging from A-F (hexadecimal).  Select **OK** to save your settings and close the dialog box.
+1. The **Key Path** should contain the selected registry key. The **Value name** configuration should contain the registry value name **_PinRules_**. **Value type** should read **_REG\_BINARY_** and **Value data** should contain a long series of numbers from 0-9 and letters ranging from A-F (hexadecimal).  Select **OK** to save your settings and close the dialog box
 
   ![PinRules Properties.](images/enterprise-certificate-pinning-pinrules-properties.png)
 
-1. Close the **Group Policy Management Editor** to save your settings.
-1. Link the **Enterprise Certificate Pinning Rules** Group Policy object to apply to computers that run Windows 10, version 1703 in your enterprise. When these domain-joined computers apply Group Policy, the registry information configured in the Group Policy object is applied to the computer.
+1. Close the **Group Policy Management Editor** to save your settings
+1. Link the **Enterprise Certificate Pinning Rules** GPO to the OU containing the devices that you want to configure
 
 ## Additional pin rules logging
 
@@ -222,9 +222,9 @@ icacls %PinRulesLogDir% /inheritance:e /setintegritylevel (OI)(CI)L
 
 When an application verifies a TLS/SSL certificate chain that contains a server name matching a DNS name in the server certificate, Windows writes a .p7b file consisting of all the certificates in the server's chain to one of three child folders:
 
-- `AdminPinRules`: Matched a site in the enterprise certificate pinning rules.
-- `AutoUpdatePinRules`: Matched a site in the certificate pinning rules managed by Microsoft.
-- `NoPinRules`: Didn't match any site in the certificate pin rules.
+- `AdminPinRules`: Matched a site in the enterprise certificate pinning rules
+- `AutoUpdatePinRules`: Matched a site in the certificate pinning rules managed by Microsoft
+- `NoPinRules`: Didn't match any site in the certificate pin rules
 
 The output file name consists of the leading eight ASCII hex digits of the root's SHA1 thumbprint followed by the server name.
 For example:
@@ -237,10 +237,10 @@ If the pin rules have expired, then Windows writes the .p7b to the **ExpiredPinR
 
 ## Represent a date in XML
 
-Many attributes within the pin rules xml file are dates.  
-These dates must be properly formatted and represented in UTC.  
-You can use Windows PowerShell to format these dates.  
-You can then copy and paste the output of the cmdlet into the XML file. 
+Many attributes within the pin rules xml file are dates.\
+These dates must be properly formatted and represented in UTC.\
+You can use Windows PowerShell to format these dates.\
+You can then copy and paste the output of the cmdlet into the XML file.
 
 ![Representing a date.](images/enterprise-certificate-pinning-representing-a-date.png)
 

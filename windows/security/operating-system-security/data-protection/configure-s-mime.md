@@ -3,6 +3,8 @@ title: Configure S/MIME for Windows
 description: S/MIME lets users encrypt outgoing messages and attachments so that only intended recipients with a digital ID, also known as a certificate, can read them. Learn how to configure S/MIME for Windows.
 ms.topic: how-to
 ms.date: 05/31/2023
+author: paolomatarazzo
+ms.author: paoloma
 ---
 
 
@@ -22,7 +24,7 @@ Encrypted messages can be read only by recipients who have a certificate. If you
 
 A digitally signed message reassures the recipient that the message hasn't been tampered with, and verifies the identity of the sender. Recipients can only verify the digital signature if they're using an email client that supports S/MIME.
 
-[!INCLUDE [email-encryption-smime](../../../includes/licensing/email-encryption-smime.md)]
+[!INCLUDE [email-encryption-smime](../../../../includes/licensing/email-encryption-smime.md)]
 
 ## Prerequisites
 
