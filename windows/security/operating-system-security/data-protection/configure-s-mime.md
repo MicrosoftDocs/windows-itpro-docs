@@ -2,7 +2,7 @@
 title: Configure S/MIME for Windows
 description: S/MIME lets users encrypt outgoing messages and attachments so that only intended recipients with a digital ID, also known as a certificate, can read them. Learn how to configure S/MIME for Windows.
 ms.topic: how-to
-ms.date: 05/30/2023
+ms.date: 05/31/2023
 ---
 
 
@@ -35,28 +35,26 @@ A digitally signed message reassures the recipient that the message hasn't been 
 
 On the device, perform the following steps: (add select certificate)
 
-1.  Open the Mail app
-1.  Open **Settings**
-    :::image type="content" alt-text="settings icon in mail app." source="images/mailsettings.png":::
-1.  Select **Email security**
-    :::image type="content" alt-text="email security settings." source="images/emailsecurity.png":::
-1.  In **Select an account**, select the account for which you want to configure S/MIME options.
-1.  Make a certificate selection for digital signature and encryption.
-    - Select **Automatically** to let the app choose the certificate.
-    - Select **Manually** to specify the certificate yourself from the list of valid certificates on the device.
-1.  (Optional) Select **Always sign with S/MIME**, **Always encrypt with S/MIME**, or both, to automatically digitally sign or encrypt all outgoing messages.
+1. Open the Mail app
+1. Open **Settings > Email security**
+   :::image type="content" alt-text="Screenshot of the Windows Mail app, security settings." source="images/email-security.png":::
+1. In **Select an account**, select the account for which you want to configure S/MIME options
+1. Make a certificate selection for digital signature and encryption
+   - Select **Automatically** to let the app choose the certificate
+   - Select **Manually** to specify the certificate yourself from the list of valid certificates on the device
+1. (Optional) Select **Always sign with S/MIME**, **Always encrypt with S/MIME**, or both, to automatically digitally sign or encrypt all outgoing messages
 
-    > [!NOTE]
-    > The option to sign or encrypt can be changed for individual messages, unless EAS policies prevent it.
+   > [!NOTE]
+   > The option to sign or encrypt can be changed for individual messages, unless EAS policies prevent it.
 
-1.  Select the back arrow.
+1. Select the back arrow
 
 ## Encrypt or sign individual messages
 
-1.  While composing a message, select **Options** from the ribbon
-1.  Use **Sign** and **Encrypt** icons to turn on digital signature and encryption for this message
+1. While composing a message, select **Options** from the ribbon
+1. Use **Sign** and **Encrypt** icons to turn on digital signature and encryption for this message
 
-    :::image type="content" alt-text="sign or encrypt message." source="images/signencrypt.png":::
+    :::image type="content" alt-text="Screenshot of the Windows Mail app, showing the options to sign or encrypt message." source="images/sign-encrypt.png":::
 
 ## Read signed or encrypted messages
 
@@ -66,8 +64,8 @@ When you receive an encrypted message, the mail app checks whether there's a cer
 
 When you receive a signed email, the app provides a feature to install corresponding encryption certificate on your device if the certificate is available. This certificate can then be used to send encrypted email to this person.
 
-1.  Open a signed email
-1.  Select the digital signature icon in the reading pane
-1.  Select **Install.**
+1. Open a signed email
+1. Select the digital signature icon in the reading pane
+1. Select **Install.**
 
-  :::image type="content" alt-text="message security information." source="images/installcert.png":::
+  :::image type="content" alt-text="Screenshot of the Windows Mail app, showing a message to install the sender's encryption certificate." source="images/install-cert.png":::

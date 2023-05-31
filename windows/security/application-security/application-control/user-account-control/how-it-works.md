@@ -29,7 +29,7 @@ To better understand how this process works, let's take a closer look at the Win
 
 The following diagram shows how the sign in process for an administrator differs from the sign in process for a standard user.
 
-:::image type="content" source="images/uac-windows-logon-process.gif" alt-text="UAC Windows logon process diagram.":::
+:::image type="content" source="images/uac-windows-logon-process.gif" alt-text="Diagram that describes the UAC Windows logon process.":::
 
 By default, both standard and administrator users access resources and execute apps in the security context of a standard user.\
 When a user signs in, the system creates an access token for that user. The access token contains information about the level of access that the user is granted, including specific security identifiers (SIDs) and Windows privileges.
@@ -83,7 +83,7 @@ The elevation prompt color-coding is as follows:
 
 Some Control Panel items, such as **Date and Time**, contain a combination of administrator and standard user operations. Standard users can view the clock and change the time zone, but a full administrator access token is required to change the local system time. The following is a screenshot of the **Date and Time** Control Panel item.
 
-:::image type="content" source="images/uac-shield-icon.png" alt-text="Screenshot showing the UAC Shield Icon in Date and Time Properties" border="false":::
+:::image type="content" source="images/uac-shield-icon.png" alt-text="Screenshot showing the UAC Shield Icon in Date and Time Properties." border="false":::
 
 The shield icon on the **Change date and time...** button indicates that the process requires a full administrator access token.
 
@@ -101,7 +101,7 @@ While malware could present an imitation of the secure desktop, this issue can't
 
 The following diagram details the UAC architecture.
 
-:::image type="content" source="images/uac-architecture.gif" alt-text="UAC architecture diagram.":::
+:::image type="content" source="images/uac-architecture.gif" alt-text="Diagram that describes the UAC architecture.":::
 
 To better understand each component, review the following tables:
 
