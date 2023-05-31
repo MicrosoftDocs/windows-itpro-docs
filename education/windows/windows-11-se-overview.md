@@ -78,7 +78,7 @@ The following table lists all the applications included in Windows 11 SE and the
 
 ## Available applications
 
-The following applications can also run on Windows 11 SE, and can be deployed using Intune for Education. For more information, see [Configure applications with Microsoft Intune][EDUWIN-1]
+The following applications can also run on Windows 11 SE, and can be deployed using Intune for Education. For more information, see [Configure applications with Microsoft Intune][EDUWIN-1].
 
 | Application                               | Supported version | App Type | Vendor                                    |
 |-------------------------------------------|-------------------|----------|-------------------------------------------|
@@ -101,7 +101,8 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `DRC INSIGHT Online Assessments`          | 13.0.0.0          | `Store`  | `Data recognition Corporation`            |
 | `Duo from Cisco`                          | 3.0.0             | Win32    | `Cisco`                                   |
 | `e-Speaking Voice and Speech recognition` | 4.4.0.8           | Win32    | `e-speaking`                              |
-| `EasyReader`                              | 10.0.3.481        | Win32    | `Dolphin Computer Access`                 |
+| `EasyReader`                              | 10.0.4.498        | Win32    | `Dolphin Computer Access`                 |
+| `Easysense 2`                             | 1.32.0001         | Win32    | `Data Harvest`                            |                   
 | `Epson iProjection`                       | 3.31              | Win32    | `Epson`                                   |
 | `eTests`                                  | 4.0.25            | Win32    | `CASAS`                                   |
 | `Exam Writepad`                           | 22.10.14.1834     | Win32    | `Sheldnet`                                |
@@ -119,7 +120,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Inspiration 10`                          | 10.11             | Win32    | `TechEdology Ltd`                         |
 | `JAWS for Windows`                        | 2022.2112.24      | Win32    | `Freedom Scientific`                      |
 | `Kite Student Portal`                     | 9.0.0.0           | Win32    | `Dynamic Learning Maps`                   |
-| `Keyman`                                  | 16.0.138          | Win32    | `SIL International`
+| `Keyman`                                  | 16.0.138          | Win32    | `SIL International`                       |
 | `Kortext`                                 | 2.3.433.0         | `Store`  | `Kortext`                                 |
 | `Kurzweil 3000 Assistive Learning`        | 20.13.0000        | Win32    | `Kurzweil Educational Systems`            |
 | `LanSchool Classic`                       | 9.1.0.46          | Win32    | `Stoneware, Inc.`                         |
@@ -128,6 +129,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `MetaMoJi ClassRoom`                      | 3.12.4.0          | `Store`  | `MetaMoJi Corporation`                    |
 | `Microsoft Connect`                       | 10.0.22000.1      | `Store`  | `Microsoft`                               |
 | `Mozilla Firefox`                         | 105.0.0           | Win32    | `Mozilla`                                 |
+| `Mobile Plans`                            | 5.1911.3171.0     | `Store`  | `Microsoft Corporation`                   |
 | `NAPLAN`                                  | 5.2.2             | Win32    | `NAP`                                     |
 | `Netref Student`                          | 23.1.0            | Win32    | `NetRef`                                  |
 | `NetSupport Manager`                      | 12.01.0014        | Win32    | `NetSupport`                              |
@@ -136,14 +138,17 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `NextUp Talker`                           | 1.0.49            | Win32    | `NextUp Technologies`                     |
 | `NonVisual Desktop Access`                | 2021.3.1          | Win32    | `NV Access`                               |
 | `NWEA Secure Testing Browser`             | 5.4.356.0         | Win32    | `NWEA`                                    |
+| `PC Talker NEO`                           | 2209              | Win32    | `Kochi System Development`                |
+| `PC Talker NEO Plus`                      | 2209              | Win32    | `Kochi System Development`                |
 | `PaperCut`                                | 22.0.6            | Win32    | `PaperCut Software International Pty Ltd` |
-| `Pearson TestNav`                         | 1.10.2.0          | `Store`  | `Pearson`                                 |
+| `Pearson TestNav`                         | 1.11.3            | `Store`  | `Pearson`                                 |
 | `Questar Secure Browser`                  | 5.0.1.456         | Win32    | `Questar, Inc`                            |
 | `ReadAndWriteForWindows`                  | 12.0.74           | Win32    | `Texthelp Ltd.`                           |
 | `Remote Desktop client (MSRDC)`           | 1.2.3213.0        | Win32    | `Microsoft`                               |
 | `Remote Help`                             | 4.0.1.13          | Win32    | `Microsoft`                               |
 | `Respondus Lockdown Browser`              | 2.0.9.03          | Win32    | `Respondus`                               |
 | `Safe Exam Browser`                       | 3.4.1.505         | Win32    | `Safe Exam Browser`                       |
+|`SchoolYear`                               | 3.4.7             | Win32    |`SchoolYear`                               |
 | `Senso.Cloud`                             | 2021.11.15.0      | Win32    | `Senso.Cloud`                             |
 | `Smoothwall Monitor`                      | 2.9.2             | Win32    | `Smoothwall Ltd`                          |
 | `SuperNova Magnifier & Screen Reader`     | 21.02             | Win32    | `Dolphin Computer Access`                 |
