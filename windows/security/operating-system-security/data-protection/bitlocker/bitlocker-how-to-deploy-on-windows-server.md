@@ -1,49 +1,36 @@
 ---
-title: BitLocker How to deploy on Windows Server 2012 and later
-description: This article for the IT professional explains how to deploy BitLocker and Windows Server 2012 and later
+title: BitLocker How to deploy on Windows Server
+description: This article for the IT professional explains how to deploy BitLocker and Windows Server
 ms.topic: conceptual
 ms.date: 11/08/2022
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2022</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2019</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016</a>
 ---
 
-# BitLocker: How to deploy on Windows Server 2012 and later
+# BitLocker: How to deploy on Windows Server
 
-**Applies to:**
-
-- Windows Server 2012
-- Windows Server 2012 R2
-- Windows Server 2016 and above
-
-This article explains how to deploy BitLocker on Windows Server 2012 and later versions. For all Windows Server editions, BitLocker can be installed using Server Manager or Windows PowerShell cmdlets. BitLocker requires administrator privileges on the server on which it's to be installed.
+This article explains how to deploy BitLocker on Windows Server. For all Windows Server editions, BitLocker can be installed using Server Manager or Windows PowerShell cmdlets. BitLocker requires administrator privileges on the server on which it's to be installed.
 
 ## Installing BitLocker
 
 ### To install BitLocker using server manager
 
 1. Open server manager by selecting the server manager icon or running servermanager.exe.
-
-2. Select **Manage** from the **Server Manager Navigation** bar and select **Add Roles and Features** to start the **Add Roles and Features Wizard.**
-
-3. With the **Add Roles and Features** wizard open, select **Next** at the **Before you begin** pane (if shown).
-
-4. Select **Role-based or feature-based installation** on the **Installation type** pane of the **Add Roles and Features** wizard and select **Next** to continue.
-
-5. Select the **Select a server from the server pool** option in the **Server Selection** pane and confirm the server on which the BitLocker feature is to be installed.
-
-6. Select **Next** on the **Server Roles** pane of the **Add Roles and Features** wizard to proceed to the **Features** pane.
-
+1. Select **Manage** from the **Server Manager Navigation** bar and select **Add Roles and Features** to start the **Add Roles and Features Wizard.**
+1. With the **Add Roles and Features** wizard open, select **Next** at the **Before you begin** pane (if shown).
+1. Select **Role-based or feature-based installation** on the **Installation type** pane of the **Add Roles and Features** wizard and select **Next** to continue.
+1. Select the **Select a server from the server pool** option in the **Server Selection** pane and confirm the server on which the BitLocker feature is to be installed.
+1. Select **Next** on the **Server Roles** pane of the **Add Roles and Features** wizard to proceed to the **Features** pane.
    > [!NOTE]
    > Server roles and features are installed by using the same wizard in Server Manager.
-
-7. Select the check box next to **BitLocker Drive Encryption** within the **Features** pane of the **Add Roles and Features** wizard. The wizard shows the extra management features available for BitLocker. If the extra management features are not needed and/or don't need to be installed, deselect the **Include management tools**.
-
+1. Select the check box next to **BitLocker Drive Encryption** within the **Features** pane of the **Add Roles and Features** wizard. The wizard shows the extra management features available for BitLocker. If the extra management features are not needed and/or don't need to be installed, deselect the **Include management tools**.
    > [!NOTE]
    > The **Enhanced Storage** feature is a required feature for enabling BitLocker. This feature enables support for encrypted hard drives on capable systems.
-
-8. Select **Add Features**. Once optional features selection is complete, select **Next** to proceed in the wizard.
-
-9. Select **Install** on the **Confirmation** pane of the **Add Roles and Features** wizard to begin BitLocker feature installation. The BitLocker feature requires a restart for its installation to be complete. Selecting the **Restart the destination server automatically if required** option in the **Confirmation** pane forces a restart of the computer after installation is complete.
-
-10. If the **Restart the destination server automatically if required** check box isn't selected, the **Results** pane of the **Add Roles and Features** wizard displays the success or failure of the BitLocker feature installation. If necessary, a notification of other action necessary to complete the feature installation, such as the restart of the computer, will be displayed in the results text.
+1. Select **Add Features**. Once optional features selection is complete, select **Next** to proceed in the wizard.
+1. Select **Install** on the **Confirmation** pane of the **Add Roles and Features** wizard to begin BitLocker feature installation. The BitLocker feature requires a restart for its installation to be complete. Selecting the **Restart the destination server automatically if required** option in the **Confirmation** pane forces a restart of the computer after installation is complete.
+1. If the **Restart the destination server automatically if required** check box isn't selected, the **Results** pane of the **Add Roles and Features** wizard displays the success or failure of the BitLocker feature installation. If necessary, a notification of other action necessary to complete the feature installation, such as the restart of the computer, will be displayed in the results text.
 
 ### To install BitLocker using Windows PowerShell
 
