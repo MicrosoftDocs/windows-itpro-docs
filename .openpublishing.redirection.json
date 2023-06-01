@@ -21614,6 +21614,66 @@
       "source_path": "windows/security/information-protection/personal-data-encryption/pde-in-intune/intune-enable-pde.md",
       "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/intune-enable-pde",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/encryption-data-protection.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/faq-pde.yml",
+      "redirect_url": "/windows/operating-system-security/data-protection/personal-data-encryption/faq-pde",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-and-adds-faq.yml",
+      "redirect_url": "/windows/operating-system-security/data-protection/bitlocker/bitlocker-and-adds-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-deployment-and-administration-faq.yml",
+      "redirect_url": "/windows/operating-system-security/data-protection/bitlocker/bitlocker-deployment-and-administration-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-frequently-asked-question.yml",
+      "redirect_url": "/windows/operating-system-security/data-protection/bitlocker/bitlocker-frequently-asked-question",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-key-management-faq.yml",
+      "redirect_url": "/windows/operating-system-security/data-protection/bitlocker/bitlocker-key-management-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-network-unlock-faq.yml",
+      "redirect_url": "/windows/operating-system-security/data-protection/bitlocker/bitlocker-network-unlock-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-overview-and-requirements-faq.yml",
+      "redirect_url": "/windows/operating-system-security/data-protection/bitlocker/bitlocker-overview-and-requirements-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-security-faq.yml",
+      "redirect_url": "/windows/operating-system-security/data-protection/bitlocker/bitlocker-security-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-to-go-faq.yml",
+      "redirect_url": "/windows/operating-system-security/data-protection/bitlocker/bitlocker-to-go-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlockerbitlocker-upgrading-faq.yml",
+      "redirect_url": "/windows/operating-system-security/data-protection/bitlocker/bitlocker-upgrading-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-using-with-other-programs-faq.yml",
+      "redirect_url": "/windows/operating-system-security/data-protection/bitlocker/bitlocker-using-with-other-programs-faq",
+      "redirect_document_id": false
     }
   ]
 }
