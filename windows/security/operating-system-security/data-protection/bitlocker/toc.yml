@@ -54,21 +54,21 @@ items:
   items:
     - name: Troubleshoot BitLocker 🔗
       href: /troubleshoot/windows-client/windows-security/bitlocker-issues-troubleshooting
-    - name: "BitLocker cannot encrypt a drive: known issues" 🔗
+    - name: "BitLocker cannot encrypt a drive: known issues 🔗"
       href: /troubleshoot/windows-client/windows-security/bitlocker-cannot-encrypt-a-drive-known-issues
-    - name: "Enforcing BitLocker policies by using Intune: known issues" 🔗
+    - name: "Enforcing BitLocker policies by using Intune: known issues 🔗"
       href: /troubleshoot/windows-client/windows-security/enforcing-bitlocker-policies-by-using-intune-known-issues
-    - name: "BitLocker Network Unlock: known issues" 🔗
+    - name: "BitLocker Network Unlock: known issues 🔗"
       href: /troubleshoot/windows-client/windows-security/bitlocker-network-unlock-known-issues
-    - name: "BitLocker recovery: known issues" 🔗
+    - name: "BitLocker recovery: known issues 🔗"
       href: /troubleshoot/windows-client/windows-security/bitlocker-recovery-known-issues
-    - name: "BitLocker configuration: known issues" 🔗
+    - name: "BitLocker configuration: known issues 🔗"
       href: /troubleshoot/windows-client/windows-security/bitlocker-configuration-known-issues
     - name: Troubleshoot BitLocker and TPM issues
       items:
-        - name: "BitLocker cannot encrypt a drive: known TPM issues" 🔗
+        - name: "BitLocker cannot encrypt a drive: known TPM issues 🔗"
           href: /troubleshoot/windows-client/windows-security/bitlocker-cannot-encrypt-a-drive-known-tpm-issues
-        - name: "BitLocker and TPM: other known issues" 🔗
+        - name: "BitLocker and TPM: other known issues 🔗"
           href: /troubleshoot/windows-client/windows-security/bitlocker-and-tpm-other-known-issues
         - name: Decode Measured Boot logs to track PCR changes 🔗
           href: /troubleshoot/windows-client/windows-security/decode-measured-boot-logs-to-track-pcr-changes
