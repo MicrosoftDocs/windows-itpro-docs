@@ -1,25 +1,14 @@
 ### YamlMime:FAQ
 metadata:
-  title: BitLocker and Active Directory Domain Services (AD DS) FAQ (Windows 10)
+  title: BitLocker and Active Directory Domain Services (AD DS) FAQ
   description: Learn more about how BitLocker and Active Directory Domain Services (AD DS) can work together to keep devices secure. 
   ms.collection:
     - highpri
     - tier1
   ms.topic: faq
   ms.date: 11/08/2022
-  author: paolomatarazzo
-  ms.author: paoloma
-  appliesto: 
-    - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-    - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-    - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
-    - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
-    - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
 title: BitLocker and Active Directory Domain Services (AD DS) FAQ
 summary: |
-  **Applies to:**
-  - Windows 10 and later
-  - Windows Server 2016 and later
 
 sections:
   - name: Ignored

@@ -21666,7 +21666,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/security/information-protection/bitlockerbitlocker-upgrading-faq.yml",
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-upgrading-faq.yml",
       "redirect_url": "/windows/operating-system-security/data-protection/bitlocker/bitlocker-upgrading-faq",
       "redirect_document_id": false
     },
@@ -21674,6 +21674,26 @@
       "source_path": "windows/security/information-protection/bitlocker/bitlocker-using-with-other-programs-faq.yml",
       "redirect_url": "/windows/operating-system-security/data-protection/bitlocker/bitlocker-using-with-other-programs-faq",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions.yml",
+      "redirect_url": "/windows/operating-system-security/data-protection/bitlocker/bitlocker-frequently-asked-questions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-overview.md",
+      "redirect_url": "/windows/operating-system-security/data-protection/bitlocker/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-overview.md",
+      "redirect_url": "/windows/operating-system-security/data-protection/bitlocker/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/overview-pde.md",
+      "redirect_url": "/windows/operating-system-security/data-protection/personal-data-encryption/index",
+      "redirect_document_id": false
+    }    
   ]
 }

@@ -1,16 +1,8 @@
 ---
 title: Protecting cluster shared volumes and storage area networks with BitLocker 
 description: This article for IT pros describes how to protect CSVs and SANs with BitLocker.
-ms.reviewer: 
-ms.prod: windows-client
-ms.localizationpriority: medium
-author: frankroj
-ms.author: frankroj
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 11/08/2022
-ms.custom: bitlocker
-ms.technology: itpro-security
 ---
 
 # Protecting cluster shared volumes and storage area networks with BitLocker

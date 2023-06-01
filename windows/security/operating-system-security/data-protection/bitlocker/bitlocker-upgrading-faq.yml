@@ -2,15 +2,8 @@
 metadata:
   title: BitLocker Upgrading FAQ
   description: Learn more about upgrading systems that have BitLocker enabled. Find frequently asked questions, such as, "Can I upgrade to Windows 10 with BitLocker enabled?"
-  ms.prod: windows-client
-  ms.technology: itpro-security
-  author: frankroj
-  ms.author: frankroj
-  manager: aaroncz
   ms.topic: faq
   ms.date: 11/08/2022
-  ms.reviewer: 
-  ms.custom: bitlocker
 title: BitLocker Upgrading FAQ
 summary: |  
 

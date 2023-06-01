@@ -3,10 +3,6 @@ title: BitLocker How to deploy on Windows Server
 description: This article for the IT professional explains how to deploy BitLocker and Windows Server
 ms.topic: conceptual
 ms.date: 11/08/2022
-appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2022</a>
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2019</a>
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016</a>
 ---
 
 # BitLocker: How to deploy on Windows Server

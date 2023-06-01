@@ -5,9 +5,6 @@ ms.topic: how-to
 ms.date: 03/13/2023
 ---
 
-<!-- Max 5963468 OS 32516487 -->
-<!-- Max 6946251 -->
-
 # Personal Data Encryption (PDE)
 
 [!INCLUDE [Personal Data Encryption (PDE) description](includes/pde-description.md)]

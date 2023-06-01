@@ -10,12 +10,6 @@ ms.date: 11/08/2022
 
 # BitLocker group policy settings
 
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
-
 This article for IT professionals describes the function, location, and effect of each Group Policy setting that is used to manage BitLocker Drive Encryption.
 
 Group Policy administrative templates or local computer policy settings can be used to control what BitLocker drive encryption tasks and configurations can be performed by users, for example through the **BitLocker Drive Encryption** control panel. Which of these policies are configured and how they're configured depends on how BitLocker is implemented and what level of interaction is desired for end users.

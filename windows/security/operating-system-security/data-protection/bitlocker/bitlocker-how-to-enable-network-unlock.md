@@ -7,12 +7,6 @@ ms.date: 11/08/2022
 
 # BitLocker: How to enable Network Unlock
 
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
-
 This article describes how BitLocker Network Unlock works and how to configure it.
 
 Network Unlock is a BitLocker protector option for operating system volumes. Network Unlock enables easier management for BitLocker-enabled desktops and servers in a domain environment by providing automatic unlock of operating system volumes at system reboot when connected to a wired corporate network. This feature requires the client hardware to have a DHCP driver implemented in its UEFI firmware. Without Network Unlock, operating system volumes protected by TPM+PIN protectors require a PIN to be entered when a computer reboots or resumes from hibernation (for example, by Wake on LAN). Requiring a PIN after a reboot can make it difficult to enterprises to roll out software patches to unattended desktops and remotely administered servers.

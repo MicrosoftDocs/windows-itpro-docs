@@ -2,11 +2,6 @@
 metadata:
   title: BitLocker overview and requirements FAQ (Windows 10)
   description: This article for IT professionals answers frequently asked questions concerning the requirements to use BitLocker.
-  ms.prod: windows-client
-  ms.technology: itpro-security
-  author: frankroj
-  ms.author: frankroj
-  manager: aaroncz
   ms.collection:
     - highpri
     - tier1
