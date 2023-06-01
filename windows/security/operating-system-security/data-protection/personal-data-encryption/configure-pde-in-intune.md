@@ -26,5 +26,5 @@ The various required and recommended policies needed for Personal Data Encryptio
 
 ## See also
 
-- [Personal Data Encryption (PDE)](overview-pde.md)
+- [Personal Data Encryption (PDE)](index.md)
 - [Personal Data Encryption (PDE) FAQ](faq-pde.yml)

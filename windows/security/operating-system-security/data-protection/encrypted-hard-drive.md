@@ -2,7 +2,6 @@
 title: Encrypted Hard Drive 
 description: Encrypted Hard Drive uses the rapid encryption that is provided by BitLocker Drive Encryption to enhance data security and management.
 ms.date: 11/08/2022
-ms.technology: itpro-security
 ms.topic: conceptual
 ---
 

@@ -1,13 +1,8 @@
 ---
 title: Encryption and data protection in Windows
 description: Get an overview encryption and data protection in Windows 11 and Windows 10
-author: frankroj
-ms.author: frankroj
-manager: aaroncz
 ms.topic: overview
 ms.date: 09/22/2022
-ms.prod: windows-client
-ms.technology: itpro-security
 ms.reviewer: rafals
 ---
 
@@ -45,10 +40,10 @@ Windows consistently improves data protection by improving existing options and 
 <!-- Max 5963468 OS 32516487 -->
 (*Applies to: Windows 11, version 22H2 and later*)
 
-[!INCLUDE [Personal Data Encryption (PDE) description](information-protection/personal-data-encryption/includes/pde-description.md)]
+[!INCLUDE [Personal Data Encryption (PDE) description](personal-data-encryption/includes/pde-description.md)]
 
 ## See also
 
-- [Encrypted Hard Drive](information-protection/encrypted-hard-drive.md)
-- [BitLocker](information-protection/bitlocker/bitlocker-overview.md)
-- [Personal Data Encryption (PDE)](information-protection/personal-data-encryption/overview-pde.md)
+- [Encrypted Hard Drive](encrypted-hard-drive.md)
+- [BitLocker](bitlocker/bitlocker-overview.md)
+- [Personal Data Encryption (PDE)](personal-data-encryption/index.md)

@@ -1,6 +1,6 @@
 items:
 - name: Overview
-  href: ../../encryption-data-protection.md
+  href: index.md
 - name: BitLocker
   href: ../../information-protection/bitlocker/bitlocker-overview.md
   items:

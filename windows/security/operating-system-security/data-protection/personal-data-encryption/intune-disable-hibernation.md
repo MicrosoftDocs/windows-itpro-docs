@@ -58,5 +58,5 @@ The following PDE configurations can also be configured using Intune:
 
 ## More information
 
-- [Personal Data Encryption (PDE)](overview-pde.md)
+- [Personal Data Encryption (PDE)](index.md)
 - [Personal Data Encryption (PDE) FAQ](faq-pde.yml)
