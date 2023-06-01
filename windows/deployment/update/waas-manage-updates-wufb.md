@@ -23,7 +23,10 @@ ms.date: 12/31/2017
 - Windows 11
 
 
-Windows Update for Business is a free service that is available for all premium editions including Windows 10 and Windows 11 Pro, Enterprise, Pro for Workstation, and Education editions. (Note, Enterprise includes IoT Enterprise, Enterprise LTSC, and IoT Enterprise LTSC).
+Windows Update for Business is a free service that is available for the following editions of Windows 10 and Windows 11:
+- Pro, including Pro for Workstations
+- Education
+- Enterprise, including Enterprise LTSC, IoT Enterprise, and IoT Enterprise LTSC
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
@@ -49,7 +52,7 @@ Windows Update for Business enables an IT administrator to receive and manage a 
 
 Windows Update for Business provides management policies for several types of updates to Windows 10 devices:
 
-- **Feature updates:** Previously referred to as "upgrades," feature updates contain not only security and quality revisions, but also significant feature additions and changes. Feature updates are released as soon as they become available.
+- **Feature updates:** Previously referred to as "upgrades," feature updates contain not only security and quality revisions, but also significant feature additions and changes. Feature updates are released as soon as they become available. Feature updates aren't available for LTSC devices.
 - **Quality updates:** Quality updates are traditional operating system updates, typically released on the second Tuesday of each month (though they can be released at any time). These include security, critical, and driver updates.
 - **Driver updates:** Updates for non-Microsoft drivers that are relevant to your devices. Driver updates are on by default, but you can use Windows Update for Business policies to turn them off if you prefer. 
 - **Microsoft product updates**: Updates for other Microsoft products, such as versions of Office that are installed by using Windows Installer (MSI). Versions of Office that are installed by using Click-to-Run can't be updated by using Windows Update for Business. Product updates are off by default. You can turn them on by using Windows Update for Business policies.
