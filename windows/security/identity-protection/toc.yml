@@ -30,7 +30,7 @@ items:
     displayName: LAPS
     href: /windows-server/identity/laps/laps-overview
   - name: Enhanced Phishing Protection in Microsoft Defender SmartScreen
-    href: ../threat-protection/microsoft-defender-smartscreen/phishing-protection-microsoft-defender-smartscreen.md
+    href: ../operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection.md
     displayName: EPP
   - name: Access Control
     items:

@@ -12,7 +12,7 @@ adobe-target: true
 ms.collection:
   - tier2
   - highpri
-ms.date: 03/20/2023
+ms.date: 05/31/2023
 ms.topic: article
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -42,13 +42,13 @@ Microsoft Defender SmartScreen provide an early warning system against websites 
 - **Reputation-based URL and app protection:** Microsoft Defender SmartScreen evaluates a website's URLs to determine if they're known to distribute or host unsafe content. It also provides reputation checks for apps, checking downloaded programs and the digital signature used to sign a file. If a URL, a file, an app, or a certificate has an established reputation, users don't see any warnings. If there's no reputation, the item is marked as a higher risk and presents a warning to the user.
 - **Operating system integration:** Microsoft Defender SmartScreen is integrated into the Windows 10 operating system. It checks any files an app (including 3rd-party browsers and email clients) that attempts to download and run.
 - **Improved heuristics and diagnostic data:** Microsoft Defender SmartScreen is constantly learning and endeavoring to stay up to date, so it can help to protect you against potentially malicious sites and files.
-- **Management through group policy and Microsoft Intune:** Microsoft Defender SmartScreen supports using both group policy and Microsoft Intune settings. For more info about all available settings, see [Available Microsoft Defender SmartScreen group policy and mobile device management (MDM) settings](microsoft-defender-smartscreen-available-settings.md).
+- **Management through group policy and Microsoft Intune:** Microsoft Defender SmartScreen supports using both group policy and Microsoft Intune settings. For more info about all available settings, see [Available Microsoft Defender SmartScreen group policy and mobile device management (MDM) settings](available-settings.md).
 - **Blocking URLs associated with potentially unwanted applications:** In Microsoft Edge (based on Chromium), SmartScreen blocks URLs associated with potentially unwanted applications, or PUAs. For more information on blocking URLs associated with PUAs, see [Detect and block potentially unwanted applications](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
 > [!IMPORTANT]
 > SmartScreen protects against malicious files from the internet. It does not protect against malicious files on internal locations or network shares, such as shared folders with UNC paths or SMB/CIFS shares.
 
-[!INCLUDE [microsoft-defender-smartscreen](../../../../includes/licensing/microsoft-defender-smartscreen.md)]
+[!INCLUDE [microsoft-defender-smartscreen](../../../../../includes/licensing/microsoft-defender-smartscreen.md)]
 
 ## Submit files to Microsoft Defender SmartScreen for review
 
@@ -61,5 +61,4 @@ When submitting a file for Microsoft Defender SmartScreen, make sure to select *
 ## Related articles
 
 - [SmartScreen frequently asked questions](https://fb.smartscreen.microsoft.com/smartscreenfaq.aspx)
-- [Available Microsoft Defender SmartScreen group policy and mobile device management (MDM) settings](microsoft-defender-smartscreen-available-settings.md)
 - [Configuration service provider reference](/windows/client-management/mdm/configuration-service-provider-reference)
