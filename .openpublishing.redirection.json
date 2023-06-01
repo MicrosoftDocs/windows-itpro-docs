@@ -21489,6 +21489,116 @@
       "source_path": "windows/security/apps.md",
       "redirect_url": "/windows/security/application-security",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/encrypted-hard-drive.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/encrypted-hard-drive",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bcd-settings-and-bitlocker.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bcd-settings-and-bitlocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-basic-deployment.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-basic-deployment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-countermeasures.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-countermeasures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-deployment-comparison.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-deployment-comparison",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-device-encryption-overview-windows-10",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-group-policy-settings.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-group-policy-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-how-to-enable-network-unlock",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-management-for-enterprises.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-management-for-enterprises",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-recovery-guide-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-use-bitlocker-recovery-password-viewer.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-use-bitlocker-recovery-password-viewer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/configure-pde-in-intune.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/configure-pde-in-intune",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/pde-in-intune/intune-disable-arso.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/intune-disable-arso",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/pde-in-intune/intune-disable-hibernation.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/intune-disable-hibernation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/pde-in-intune/intune-disable-memory-dumps.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/intune-disable-memory-dumps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/pde-in-intune/intune-disable-password-connected-standby.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/intune-disable-password-connected-standby",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/pde-in-intune/intune-disable-wer.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/intune-disable-wer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/pde-in-intune/intune-enable-pde.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/intune-enable-pde",
+      "redirect_document_id": false
     }
   ]
 }
