@@ -4,7 +4,7 @@ description: A list of all available settings for Microsoft Defender SmartScreen
 ms.prod: windows-client
 author: vinaypamnani-msft
 ms.localizationpriority: medium
-ms.date: 09/28/2020
+ms.date: 05/31/2023
 ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
