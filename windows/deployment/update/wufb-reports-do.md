@@ -152,11 +152,11 @@ There are many Microsoft [content types](waas-delivery-optimization.md#types-of-
 | Content Category | Content Types Included |
 | --- | --- |
 | Apps | Windows 10 Store apps,  Windows 10 Store for Business apps, Windows 11 UWP Store apps |
-| Driver Updates | Windows Update Driver updates |
-| Feature and Flighting Updates | Windows Update Feature and Flighting updates |
+| Driver Updates | Windows Update [Driver updates](get-started-updates-channels-tools.md#types-of-updates) |
+| Feature Updates | Windows Update [Feature updates](get-started-updates-channels-tools.md#types-of-updates) |
 | Office | Microsoft 365 Apps and updates |
 | Other | Windows Language Packs, Windows Defender definition updates, Intune Win32 apps, Edge Browser updates, Configuration Manager Express updates, Dynamic updates, MDM Agent, Xbox Game Pass (PC), Windows Package Manager, MSIX Installer (includes Windows 11 Store Win32 apps, Windows 11 Teams updates) |
-| Quality Updates | Windows Updates Quality updates |
+| Quality Updates | Windows Updates [Quality updates](get-started-updates-channels-tools.md#types-of-updates)) |
 
 ## Frequency Asked Questions
 
