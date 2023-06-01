@@ -132,7 +132,7 @@
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2019</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
         ],
-        "operating-system-security/data-protection/personal-data-encryption/*.md": [
+        "operating-system-security/data-protection/personal-data-encryption/*.*": [
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>"
         ],
         "operating-system-security/network-security/windows-firewall/**/*.md": [
