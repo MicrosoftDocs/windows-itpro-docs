@@ -84,7 +84,7 @@ Windows Defender SmartScreen notifies users if they click on reported phishing a
 
 For Windows 10, Microsoft improved SmartScreen (now called Windows Defender SmartScreen) protection capability by integrating its app reputation abilities into the operating system itself, which allows Windows Defender SmartScreen to check the reputation of files downloaded from the Internet and warn users when they're about to run a high-risk downloaded file. The first time a user runs an app that originates from the Internet, Windows Defender SmartScreen checks the reputation of the application by using digital signatures and other factors against a service that Microsoft maintains. If the app lacks a reputation or is known to be malicious, Windows Defender SmartScreen warns the user or blocks execution entirely, depending on how the administrator has configured Microsoft Intune or Group Policy settings.
 
-For more information, see [Microsoft Defender SmartScreen overview]().
+For more information, see [Microsoft Defender SmartScreen overview](/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/).
 
 ### Microsoft Defender Antivirus
 
