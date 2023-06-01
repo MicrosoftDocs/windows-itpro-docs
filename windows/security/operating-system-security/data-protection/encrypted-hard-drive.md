@@ -1,26 +1,12 @@
 ---
 title: Encrypted Hard Drive 
 description: Encrypted Hard Drive uses the rapid encryption that is provided by BitLocker Drive Encryption to enhance data security and management.
-ms.reviewer: 
-manager: aaroncz
-ms.author: frankroj
-ms.prod: windows-client
-author: frankroj
 ms.date: 11/08/2022
 ms.technology: itpro-security
 ms.topic: conceptual
 ---
 
 # Encrypted Hard Drive
-
-*Applies to:*
-
-- Windows 10
-- Windows 11
-- Windows Server 2022
-- Windows Server 2019
-- Windows Server 2016
-- Azure Stack HCI
 
 Encrypted hard drive uses the rapid encryption that is provided by BitLocker drive encryption to enhance data security and management.
 
@@ -48,7 +34,7 @@ Encrypted hard drives are supported natively in the operating system through the
 
 If you're a storage device vendor who is looking for more info on how to implement Encrypted Hard Drive, see the [Encrypted Hard Drive Device Guide](/previous-versions/windows/hardware/design/dn653989(v=vs.85)).
 
-[!INCLUDE [encrypted-hard-drive](../../../includes/licensing/encrypted-hard-drive.md)]
+[!INCLUDE [encrypted-hard-drive](../../../../includes/licensing/encrypted-hard-drive.md)]
 
 ## System Requirements
 

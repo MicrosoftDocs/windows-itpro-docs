@@ -76,6 +76,7 @@
         "application-security/application-control/user-account-control/*.md": "paolomatarazzo",
         "application-security/application-isolation/windows-sandbox/**/*.md": "vinaypamnani-msft",
         "identity-protection/**/*.md": "paolomatarazzo",
+        "operating-system-security/data-protection/**/*.md": "paolomatarazzo",
         "operating-system-security/network-security/**/*.md": "paolomatarazzo",
         "operating-system-security/network-security/windows-firewall/**/*.md": "ngangulyms"
       },
@@ -83,6 +84,7 @@
         "application-security/application-control/user-account-control/*.md": "paoloma",
         "application-security/application-isolation/windows-sandbox/**/*.md": "vinpa",
         "identity-protection/**/*.md": "paoloma",
+        "operating-system-security/data-protection/**/*.md": "paoloma",
         "operating-system-security/network-security/**/*.md": "paoloma",
         "operating-system-security/network-security/windows-firewall/*.md": "nganguly"
       },
@@ -123,6 +125,16 @@
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2019</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
         ],
+        "operating-system-security/data-protection/**/*.md": [
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2022</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2019</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
+        ],
+        "operating-system-security/data-protection/personal-data-encryption/*.md": [
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>"
+        ],
         "operating-system-security/network-security/windows-firewall/**/*.md": [
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
@@ -136,16 +148,17 @@
         "identity-protection/credential-guard/*.md": "zwhittington",
         "identity-protection/access-control/*.md": "sulahiri",
         "operating-system-security/network-security/windows-firewall/*.md": "paoloma",
-        "operating-system-security/network-security/vpn/*.md": "pesmith"
+        "operating-system-security/network-security/vpn/*.md": "pesmith",
+        "operating-system-security/data-protection/personal-data-encryption/*.md":"rhonnegowda"
       },
       "ms.collection": {
         "identity-protection/hello-for-business/*.md": "tier1",
-        "information-protection/bitlocker/*.md": "tier1",
-        "information-protection/personal-data-encryption/*.md": "tier1",
         "information-protection/pluton/*.md": "tier1",
         "information-protection/tpm/*.md": "tier1",
         "threat-protection/auditing/*.md": "tier3",
         "threat-protection/windows-defender-application-control/*.md": "tier3",
+        "operating-system-security/data-protection/bitlocker/*.md": "tier1",
+        "operating-system-security/data-protection/personal-data-encryption/*.md": "tier1",
         "operating-system-security/network-security/windows-firewall/*.md": "tier3"
       }
     },

@@ -1,14 +1,7 @@
 ---
 title: Configure Personal Data Encryption (PDE) in Intune
 description: Configuring and enabling Personal Data Encryption (PDE) required and recommended policies in Intune
-author: frankroj
-ms.author: frankroj
-ms.reviewer: rhonnegowda
-manager: aaroncz
 ms.topic: how-to
-ms.prod: windows-client
-ms.technology: itpro-security
-ms.localizationpriority: medium
 ms.date: 03/13/2023
 ---
 
@@ -21,19 +14,15 @@ The various required and recommended policies needed for Personal Data Encryptio
 
 ## Required prerequisites
 
-1. [Enable Personal Data Encryption (PDE)](pde-in-intune/intune-enable-pde.md)
-
-1. [Disable Winlogon automatic restart sign-on (ARSO)](pde-in-intune/intune-disable-arso.md)
+1. [Enable Personal Data Encryption (PDE)](intune-enable-pde.md)
+1. [Disable Winlogon automatic restart sign-on (ARSO)](intune-disable-arso.md)
 
 ## Security hardening recommendations
 
-1. [Disable kernel-mode crash dumps and live dumps](pde-in-intune/intune-disable-memory-dumps.md)
-
-1. [Disable Windows Error Reporting (WER)/user-mode crash dumps](pde-in-intune/intune-disable-wer.md)
-
-1. [Disable hibernation](pde-in-intune/intune-disable-hibernation.md)
-
-1. [Disable allowing users to select when a password is required when resuming from connected standby](pde-in-intune/intune-disable-password-connected-standby.md)
+1. [Disable kernel-mode crash dumps and live dumps](intune-disable-memory-dumps.md)
+1. [Disable Windows Error Reporting (WER)/user-mode crash dumps](intune-disable-wer.md)
+1. [Disable hibernation](intune-disable-hibernation.md)
+1. [Disable allowing users to select when a password is required when resuming from connected standby](intune-disable-password-connected-standby.md)
 
 ## See also
 
