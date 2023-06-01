@@ -31,7 +31,7 @@ A trusted platform module (TPM) is a microchip designed to provide basic securit
 
 Unified Extensible Firmware Interface (UEFI) is a programmable boot environment that initializes devices and starts the operating system's bootloader.
 
-The UEFI specification defines a firmware execution authentication process called [Secure Boot](../secure-the-windows-10-boot-process.md). Secure Boot blocks untrusted firmware and bootloaders (signed or unsigned) from being able to start on the system.
+The UEFI specification defines a firmware execution authentication process called [Secure Boot](../../../information-protection/secure-the-windows-10-boot-process.md). Secure Boot blocks untrusted firmware and bootloaders (signed or unsigned) from being able to start on the system.
 
 By default, BitLocker provides integrity protection for Secure Boot by utilizing the TPM PCR[7] measurement. An unauthorized EFI firmware, EFI boot application, or bootloader can't run and acquire the BitLocker key.
 
@@ -48,7 +48,7 @@ The next sections cover pre-boot authentication and DMA policies that can provid
 
 ### Pre-boot authentication
 
-Pre-boot authentication with BitLocker is a policy setting that requires the use of either user input, such as a PIN, a startup key, or both to authenticate prior to making the contents of the system drive accessible. The Group Policy setting is [Require additional authentication at startup](./bitlocker-group-policy-settings.md) and the corresponding setting in the [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp) is SystemDrivesRequireStartupAuthentication.
+Pre-boot authentication with BitLocker is a policy setting that requires the use of either user input, such as a PIN, a startup key, or both to authenticate prior to making the contents of the system drive accessible. The Group Policy setting is [Require additional authentication at startup](bitlocker-group-policy-settings.md) and the corresponding setting in the [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp) is SystemDrivesRequireStartupAuthentication.
 
 BitLocker accesses and stores the encryption keys in memory only after pre-boot authentication is completed. If Windows can't access the encryption keys, the device can't read or edit the files on the system drive. The only option for bypassing pre-boot authentication is entering the recovery key.
 
@@ -128,7 +128,7 @@ Enable secure boot and mandatorily prompt a password to change BIOS settings. Fo
 ### Tricking BitLocker to pass the key to a rogue operating system
 
 An attacker might modify the boot manager configuration database (BCD) which is stored on a non-encrypted partition and add an entry point to a rogue operating system on a different partition. During the boot process, BitLocker code will make sure that the operating system that the encryption key obtained from the TPM is given to, is cryptographically verified to be the intended recipient. Because this strong cryptographic verification already exists, we don't recommend storing a hash of a disk partition table in Platform Configuration Register (PCR) 5.
- 
+
 An attacker might also replace the entire operating system disk while preserving the platform hardware and firmware and could then extract a protected BitLocker key blob from the metadata of the victim OS partition. The attacker could then attempt to unseal that BitLocker key blob by calling the TPM API from an operating system under their control. This will not succeed because when Windows seals the BitLocker key to the TPM, it does it with a PCR 11 value of 0, and to successfully unseal the blob, PCR 11 in the TPM must have a value of 0. However, when the boot manager passes the control to any boot loader (legitimate or rogue) it always changes PCR 11 to a value of 1. Since the PCR 11 value is guaranteed to be different after exiting the boot manager, the attacker can't unlock the BitLocker key.
 
 ## Attacker countermeasures

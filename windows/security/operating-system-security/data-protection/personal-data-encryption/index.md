@@ -16,7 +16,7 @@ ms.date: 03/13/2023
 ### Required
 
 - [Azure AD joined device](/azure/active-directory/devices/concept-azure-ad-join)
-- [Windows Hello for Business](identity-protection/hello-for-business/hello-overview.md)
+- [Windows Hello for Business Overview](../../../identity-protection/hello-for-business/hello-overview.md)
 - Windows 11, version 22H2 and later Enterprise and Education editions
 
 ### Not supported with PDE
@@ -24,7 +24,7 @@ ms.date: 03/13/2023
 - [FIDO/security key authentication](/azure/active-directory/authentication/howto-authentication-passwordless-security-key)
 - [Winlogon automatic restart sign-on (ARSO)](/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-)
   - For information on disabling ARSO via Intune, see [Disable Winlogon automatic restart sign-on (ARSO)](intune-disable-arso.md).
-- [Windows Information Protection (WIP)](windows-information-protection/protect-enterprise-data-using-wip.md)
+- [Protect your enterprise data using Windows Information Protection (WIP)](../../../information-protection/windows-information-protection/protect-enterprise-data-using-wip.md)
 - [Hybrid Azure AD joined devices](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
 - Remote Desktop connections
 
@@ -74,7 +74,7 @@ ms.date: 03/13/2023
 
    In certain scenarios such as TPM resets or destructive PIN resets, the keys used by PDE to protect content will be lost. In such scenarios, any content protected with PDE will no longer be accessible. The only way to recover such content would be from backup.
 
-- [Windows Hello for Business PIN reset service](identity-protection/hello-for-business/hello-feature-pin-reset.md)
+- [Windows Hello for Business PIN reset service](../../../identity-protection/hello-for-business/hello-feature-pin-reset.md)
 
    Destructive PIN resets will cause keys used by PDE to protect content to be lost. A destructive PIN reset will make any content protected with PDE no longer accessible after the destructive PIN reset has occurred. Content protected with PDE will need to be recovered from a backup after a destructive PIN reset. For this reason Windows Hello for Business PIN reset service is recommended since it provides non-destructive PIN resets.
 

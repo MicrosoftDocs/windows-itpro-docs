@@ -15,7 +15,7 @@ This article for IT professionals describes the function, location, and effect o
 Group Policy administrative templates or local computer policy settings can be used to control what BitLocker drive encryption tasks and configurations can be performed by users, for example through the **BitLocker Drive Encryption** control panel. Which of these policies are configured and how they're configured depends on how BitLocker is implemented and what level of interaction is desired for end users.
 
 > [!NOTE]
-> A separate set of Group Policy settings supports the use of the Trusted Platform Module (TPM). For details about those settings, see [Trusted Platform Module Group Policy settings](../tpm/trusted-platform-module-services-group-policy-settings.md).
+> A separate set of Group Policy settings supports the use of the Trusted Platform Module (TPM). For details about those settings, see [TPM Group Policy settings](../../../information-protection/tpm/trusted-platform-module-services-group-policy-settings.md).
 
 BitLocker Group Policy settings can be accessed using the Local Group Policy Editor and the Group Policy Management Console (GPMC) under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption**.
 
@@ -219,7 +219,7 @@ This policy setting is applied when BitLocker is turned on. The startup PIN must
 
 Originally, BitLocker allowed a length from 4 to 20 characters for a PIN. Windows Hello has its own PIN for sign-in, length of which can be 4 to 127 characters. Both BitLocker and Windows Hello use the TPM to prevent PIN brute-force attacks.
 
-The TPM can be configured to use Dictionary Attack Prevention parameters ([lockout threshold and lockout duration](../tpm/trusted-platform-module-services-group-policy-settings.md)) to control how many failed authorizations attempts are allowed before the TPM is locked out, and how much time must elapse before another attempt can be made.
+The TPM can be configured to use Dictionary Attack Prevention parameters ([lockout threshold and lockout duration](../../../information-protection/tpm/trusted-platform-module-services-group-policy-settings.md) to control how many failed authorizations attempts are allowed before the TPM is locked out, and how much time must elapse before another attempt can be made.
 
 The Dictionary Attack Prevention Parameters provide a way to balance security needs with usability. For example, when BitLocker is used with a TPM + PIN configuration, the number of PIN guesses is limited over time. A TPM 2.0 in this example could be configured to allow only 32 PIN guesses immediately, and then only one more guess every two hours. This number of attempts totals to a maximum of about 4415 guesses per year. If the PIN is four digits, all 9999 possible PIN combinations could be attempted in a little over two years.
 
@@ -438,7 +438,7 @@ When set to **Do not allow complexity**, no password complexity validation is do
 > [!NOTE]
 > Passwords can't be used if FIPS compliance is enabled. The **System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing** policy setting in **Computer Configuration** > **Windows Settings** > **Security Settings** > **Local Policies** > **Security Options** specifies whether FIPS compliance is enabled.
 
-For information about this setting, see [System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing](../../threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing.md).
+For information about this setting, see [System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing](../../../threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing.md).
 
 ### Validate smart card certificate usage rule compliance
 
@@ -1292,7 +1292,7 @@ The optional recovery key can be saved to a USB drive. Because recovery password
 
 The FIPS setting can be edited by using the Security Policy Editor (`Secpol.msc`) or by editing the Windows registry. Only administrators can perform these procedures.
 
-For more information about setting this policy, see [System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing](../../threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing.md).
+For more information about setting this policy, see [System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing](../../../threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing.md).
 
 ## Power management group policy settings: Sleep and Hibernate
 

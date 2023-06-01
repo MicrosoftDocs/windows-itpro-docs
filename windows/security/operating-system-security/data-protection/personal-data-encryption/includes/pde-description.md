@@ -6,7 +6,7 @@ ms.date: 03/13/2023
 <!-- Max 5963468 OS 32516487 -->
 <!-- Max 6946251 -->
 
-Starting in Windows 11, version 22H2, Personal Data Encryption (PDE) is a security feature that provides more encryption capabilities to Windows. 
+Starting in Windows 11, version 22H2, Personal Data Encryption (PDE) is a security feature that provides more encryption capabilities to Windows.
 
 PDE differs from BitLocker in that it  encrypts individual files and content instead of whole volumes and disks. PDE occurs in addition to other encryption methods such as BitLocker.
 
