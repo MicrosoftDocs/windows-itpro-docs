@@ -22,14 +22,12 @@ ms.date: 12/31/2017
 - Windows 10
 - Windows 11
 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 Windows Update for Business is a free service that is available for the following editions of Windows 10 and Windows 11:
 - Pro, including Pro for Workstations
 - Education
 - Enterprise, including Enterprise LTSC, IoT Enterprise, and IoT Enterprise LTSC
-
-> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
-
 
 Windows Update for Business enables IT administrators to keep the Windows client devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Windows Update service. You can use Group Policy or Mobile Device Management (MDM) solutions such as Microsoft Intune to configure the Windows Update for Business settings that control how and when devices are updated.
   
@@ -76,7 +74,7 @@ The branch readiness level enables administrators to specify which channel of fe
 
 #### Defer an update
 
-A Windows Update for Business administrator can defer the installation of both feature and quality updates from deploying to devices within a bounded range of time from when those updates are first made available on the Windows Update service. You can use this deferral to allow time to validate deployments as they are pushed to devices. Deferrals work by allowing you to specify the number of days after an update is released before it is offered to a device. That is, if you set a feature update deferral period of 365 days, the device will not install a feature update that has been released for less than 365 days. To defer feature updates, use the **Select when Preview Builds and feature updates are Received** policy.
+A Windows Update for Business administrator can defer the installation of both feature and quality updates from deploying to devices within a bounded range of time from when those updates are first made available on the Windows Update service. You can use this deferral to allow time to validate deployments as they're pushed to devices. Deferrals work by allowing you to specify the number of days after an update is released before it's offered to a device. That is, if you set a feature update deferral period of 365 days, the device won't install a feature update that has been released for less than 365 days. To defer feature updates, use the **Select when Preview Builds and feature updates are Received** policy.
 
 
 |Category  |Maximum deferral period  |
