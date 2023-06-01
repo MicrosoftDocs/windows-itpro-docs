@@ -452,4 +452,4 @@ Disable-BitLocker -MountPoint E:,F:,G:
 - [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)
 - [BitLocker recovery guide](bitlocker-recovery-guide-plan.md)
 - [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md)
-- [BitLocker overview](bitlocker-overview.md)
+- [BitLocker overview](index.md)

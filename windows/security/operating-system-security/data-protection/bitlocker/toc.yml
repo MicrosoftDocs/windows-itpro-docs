@@ -1,6 +1,6 @@
 items:
 - name: Overview
-  href: bitlocker-overview.md
+  href: index.md
 - name: BitLocker device encryption
   href: bitlocker-device-encryption-overview-windows-10.md
 - name: BitLocker frequently asked questions (FAQ)

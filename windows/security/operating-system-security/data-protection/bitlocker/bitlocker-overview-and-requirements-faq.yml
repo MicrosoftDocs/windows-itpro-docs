@@ -33,7 +33,7 @@ sections:
 
       - question: What are the BitLocker hardware and software requirements?
         answer: |
-          For requirements, see [System requirements](bitlocker-overview.md#system-requirements).
+          For requirements, see [System requirements](index.md#system-requirements).
           
           > [!NOTE]
           > Dynamic disks aren't supported by BitLocker. Dynamic data volumes won't be displayed in the Control Panel. Although the operating system volume will always be displayed in the Control Panel, regardless of whether it's a Dynamic disk, if it's a dynamic disk it can't be protected by BitLocker.

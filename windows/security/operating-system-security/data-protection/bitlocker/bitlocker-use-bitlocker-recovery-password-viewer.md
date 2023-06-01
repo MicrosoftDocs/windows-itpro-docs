@@ -58,7 +58,7 @@ By completing the procedures in this scenario, the recovery passwords for a comp
 
 ## Related articles
 
-- [BitLocker Overview](bitlocker-overview.md)
+- [BitLocker Overview](index.md)
 - [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.yml)
 - [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)
 - [BitLocker: How to deploy on Windows Server 2012](bitlocker-how-to-deploy-on-windows-server.md)

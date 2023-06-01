@@ -976,4 +976,4 @@ End Function
 
 ## Related articles
 
-- [BitLocker overview](bitlocker-overview.md)
+- [BitLocker overview](index.md)

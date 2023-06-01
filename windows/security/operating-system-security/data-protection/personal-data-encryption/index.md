@@ -69,7 +69,7 @@ ms.date: 03/13/2023
 
 ### Highly recommended
 
-- [BitLocker Drive Encryption](bitlocker/bitlocker-overview.md) enabled
+- [BitLocker Drive Encryption](../bitlocker/index.md) enabled
 
    Although PDE will work without BitLocker, it's recommended to also enable BitLocker. PDE is meant to work alongside BitLocker for increased security. PDE isn't a replacement for BitLocker.
 

@@ -5441,7 +5441,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/device-security/bitlocker/bitlocker-overview.md",
+      "source_path": "windows/device-security/bitlocker/index.md",
       "redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-overview",
       "redirect_document_id": false
     },
@@ -9836,7 +9836,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/keep-secure/bitlocker-overview.md",
+      "source_path": "windows/keep-secure/index.md",
       "redirect_url": "/windows/device-security/bitlocker/bitlocker-overview",
       "redirect_document_id": false
     },

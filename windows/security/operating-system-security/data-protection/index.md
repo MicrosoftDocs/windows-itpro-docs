@@ -45,5 +45,5 @@ Windows consistently improves data protection by improving existing options and 
 ## See also
 
 - [Encrypted Hard Drive](encrypted-hard-drive.md)
-- [BitLocker](bitlocker/bitlocker-overview.md)
+- [BitLocker](bitlocker/index.md)
 - [Personal Data Encryption (PDE)](personal-data-encryption/index.md)

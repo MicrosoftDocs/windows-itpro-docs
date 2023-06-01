@@ -188,6 +188,6 @@ On Windows Server 2012 R2 and Windows 8.1 and older, recovery passwords generate
 - [Trusted Platform Module](../tpm/trusted-platform-module-top-node.md)
 - [TPM Group Policy settings](../tpm/trusted-platform-module-services-group-policy-settings.md)
 - [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.yml)
-- [BitLocker](bitlocker-overview.md)
+- [BitLocker](index.md)
 - [BitLocker Group Policy settings](bitlocker-group-policy-settings.md)
 - [BitLocker basic deployment](bitlocker-basic-deployment.md)
