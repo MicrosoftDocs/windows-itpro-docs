@@ -11,12 +11,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 03/09/2023
 ms.technology: itpro-security
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+appliesto:
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ---
 
 # Secure the Windows boot process
-
 
 The Windows OS has many features to help protect you from malware, and it does an amazingly good job. Except for apps that businesses develop and use internally, all Microsoft Store apps must meet a series of requirements to be certified and included in the Microsoft Store. This certification process examines several criteria, including security, and is an effective means of preventing malware from entering the Microsoft Store. Even if a malicious app does get through, the Windows 10 OS includes a series of security features that can mitigate the effect. For instance, Microsoft Store apps are sandboxed and lack the privileges necessary to access user data or change system settings.
 
@@ -52,7 +52,7 @@ Figure 1 shows the Windows startup process.
 
 ![Windows startup process.](./images/dn168167.boot_process(en-us,MSDN.10).png)
 
-*Figure 1. Secure Boot, Trusted Boot, and Measured Boot block malware at every stage*
+*Figure 1. Secure Boot, Trusted Boot, and Measured Boot block malware at every stage*:
 
 Secure Boot and Measured Boot are only possible on PCs with UEFI 2.3.1 and a TPM chip. Fortunately, all Windows 10 and Windows 11 PCs that meet Windows Hardware Compatibility Program requirements have these components, and many PCs designed for earlier versions of Windows have them as well.
 
@@ -82,21 +82,17 @@ These requirements help protect you from rootkits while allowing you to run any 
 
 To prevent malware from abusing these options, the user must manually configure the UEFI firmware to trust a non-certified bootloader or to turn off Secure Boot. Software can't change the Secure Boot settings.
 
-The default state of Secure Boot has a wide circle of trust which can result in customers trusting boot components they may not need. Since the Microsoft 3rd Party UEFI CA certificate signs the bootloaders for all Linux distributions, trusting the Microsoft 3rd Party UEFI CA signature in the UEFI database  increase  s the attack surface of systems. A customer who intended to only trust and boot a single Linux distribution will trust all distributions – much more than their desired configuration. A vulnerability in any of the bootloaders exposes the system and places the customer at risk of exploit for a bootloader they never intended to use, as seen in recent vulnerabilities, for example [with the GRUB bootloader](https://msrc.microsoft.com/security-guidance/advisory/ADV200011) or [firmware-level rootkit]( https://www.darkreading.com/threat-intelligence/researchers-uncover-dangerous-new-firmware-level-rootkit) affecting boot components. [Secured-core PCs](/windows-hardware/design/device-experiences/OEM-highly-secure-11) require Secure Boot to be enabled and configured to distrust the Microsoft 3rd Party UEFI CA signature, by default, to provide customers with the most secure configuration of their PCs possible. 
+The default state of Secure Boot has a wide circle of trust which can result in customers trusting boot components they may not need. Since the Microsoft 3rd Party UEFI CA certificate signs the bootloaders for all Linux distributions, trusting the Microsoft 3rd Party UEFI CA signature in the UEFI database  increase  s the attack surface of systems. A customer who intended to only trust and boot a single Linux distribution will trust all distributions – much more than their desired configuration. A vulnerability in any of the bootloaders exposes the system and places the customer at risk of exploit for a bootloader they never intended to use, as seen in recent vulnerabilities, for example [with the GRUB bootloader](https://msrc.microsoft.com/security-guidance/advisory/ADV200011) or [firmware-level rootkit]( https://www.darkreading.com/threat-intelligence/researchers-uncover-dangerous-new-firmware-level-rootkit) affecting boot components. [Secured-core PCs](/windows-hardware/design/device-experiences/OEM-highly-secure-11) require Secure Boot to be enabled and configured to distrust the Microsoft 3rd Party UEFI CA signature, by default, to provide customers with the most secure configuration of their PCs possible.
 
 To trust and boot operating systems, like Linux, and components signed by the UEFI signature, Secured-core PCs can be configured in the BIOS menu to add the signature in the UEFI database by following these steps:
 
-1. Open the firmware menu, either: 
-  
-  - Boot the PC, and press the manufacturer's key to open the menus. Common keys used: Esc, Delete, F1, F2, F10, F11, or F12. On tablets, common buttons are Volume up or Volume down. During startup, there's often a screen that mentions the key. If there's not one, or if the screen goes by too fast to see it, check your manufacturer's site.
+1. Open the firmware menu, either:
+    - Boot the PC, and press the manufacturer's key to open the menus. Common keys used: Esc, Delete, F1, F2, F10, F11, or F12. On tablets, common buttons are Volume up or Volume down. During startup, there's often a screen that mentions the key. If there's not one, or if the screen goes by too fast to see it, check your manufacturer's site.
+    - Or, if Windows is already installed, from either the Sign on screen or the Start menu, select Power ( ) > hold Shift while selecting Restart. Select Troubleshoot > Advanced options > UEFI Firmware settings.
+2. From the firmware menu navigate to Security > Secure Boot and select the option to trust the "3rd Party CA".
+3. Save changes and exit.
 
-  - Or, if Windows is already installed, from either the Sign on screen or the Start menu, select Power ( ) > hold Shift while selecting Restart. Select Troubleshoot > Advanced options > UEFI Firmware settings.
-  
-2.    From the firmware menu navigate to Security > Secure Boot and select the option to trust the "3rd Party CA". 
-
-3.    Save changes and exit. 
- 
-Microsoft continues to collaborate with Linux and IHV ecosystem partners to design least privileged features to help you stay secure and opt-in trust for only the publishers and components you trust. 
+Microsoft continues to collaborate with Linux and IHV ecosystem partners to design least privileged features to help you stay secure and opt-in trust for only the publishers and components you trust.
 
 Like most mobile devices, Arm-based devices, such as the Microsoft Surface RT device, are designed to run only Windows 8.1. Therefore, Secure Boot can't be turned off, and you can't load a different OS. Fortunately, there's a large market of ARM processor devices designed to run other operating systems.
 
@@ -129,13 +125,12 @@ Depending on the implementation and configuration, the server can now determine 
 
 Figure 2 illustrates the Measured Boot and remote attestation process.
 
-
-
 ![Measured Boot and remote attestation process.](./images/dn168167.measure_boot(en-us,MSDN.10).png)
 
-*Figure 2. Measured Boot proves the PC's health to a remote server*
+*Figure 2. Measured Boot proves the PC's health to a remote server*:
 
 Windows includes the application programming interfaces to support Measured Boot, but you'll need non-Microsoft tools to implement a remote attestation client and trusted attestation server to take advantage of it. For example, see the following tools from Microsoft Research:
+
 - [TPM Platform Crypto-Provider Toolkit](https://www.microsoft.com/download/details.aspx?id=52487)
 - [TSS.MSR](https://github.com/microsoft/TSS.MSR#tssmsr)
 
