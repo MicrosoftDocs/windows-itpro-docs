@@ -1,25 +1,11 @@
 ---
 title: BitLocker Countermeasures 
 description: Windows uses technologies including TPM, Secure Boot, Trusted Boot, and Early Launch Anti-malware (ELAM) to protect against attacks on the BitLocker encryption key.
-ms.reviewer: 
-ms.prod: windows-client
-ms.localizationpriority: medium
-author: frankroj
-ms.author: frankroj
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 11/08/2022
-ms.custom: bitlocker
-ms.technology: itpro-security
 ---
 
 # BitLocker Countermeasures
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 Windows uses technologies including trusted platform module (TPM), secure boot, and measured boot to help protect BitLocker encryption keys against attacks. BitLocker is part of a strategic approach to securing data against offline attacks through encryption technology. Data on a lost or stolen computer is vulnerable. For example, there could be unauthorized access, either by running a software attack tool against the computer or by transferring the computer's hard disk to a different computer.
 

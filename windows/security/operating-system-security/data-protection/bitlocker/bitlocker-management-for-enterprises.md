@@ -1,15 +1,8 @@
 ---
 title: BitLocker management
 description: Refer to relevant documentation, products, and services to learn about managing BitLocker and see recommendations for different computers.
-ms.prod: windows-client
-ms.localizationpriority: medium
-author: frankroj
-ms.author: frankroj
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 11/08/2022
-ms.custom: bitlocker
-ms.technology: itpro-security
 ---
 
 # BitLocker management
@@ -18,7 +11,7 @@ The ideal solution for BitLocker management is to eliminate the need for IT admi
 
 Though much Windows [BitLocker documentation](bitlocker-overview.md) has been published, customers frequently ask for recommendations and pointers to specific, task-oriented documentation that is both easy to digest and focused on how to deploy and manage BitLocker. This article links to relevant documentation, products, and services to help answer this and other related frequently asked questions, and also provides BitLocker recommendations for different types of computers.
 
-[!INCLUDE [bitlocker](../../../../includes/licensing/bitlocker-management.md)]
+[!INCLUDE [bitlocker](../../../../../includes/licensing/bitlocker-management.md)]
 
 ## Managing domain-joined computers and moving to cloud  
 

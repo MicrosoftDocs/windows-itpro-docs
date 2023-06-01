@@ -1,25 +1,11 @@
 ---
 title: BitLocker basic deployment
 description: This article for the IT professional explains how BitLocker features can be used to protect your data through drive encryption.
-ms.reviewer: 
-ms.prod: windows-client
-ms.localizationpriority: medium
-author: frankroj
-ms.author: frankroj
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 11/08/2022
-ms.custom: bitlocker
-ms.technology: itpro-security
 ---
 
 # BitLocker basic deployment
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 This article for the IT professional explains how BitLocker features can be used to protect data through drive encryption.
 

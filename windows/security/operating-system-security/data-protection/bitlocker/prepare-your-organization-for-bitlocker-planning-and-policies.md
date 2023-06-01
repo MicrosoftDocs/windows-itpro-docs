@@ -1,25 +1,11 @@
 ---
 title: Prepare the organization for BitLocker Planning and policies 
 description: This article for the IT professional explains how can to plan for a BitLocker deployment.
-ms.reviewer: 
-ms.prod: windows-client
-ms.localizationpriority: medium
-author: frankroj
-ms.author: frankroj
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 11/08/2022
-ms.custom: bitlocker
-ms.technology: itpro-security
 ---
 
 # Prepare an organization for BitLocker: Planning and policies
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 This article for the IT professional explains how to plan BitLocker deployment.
 

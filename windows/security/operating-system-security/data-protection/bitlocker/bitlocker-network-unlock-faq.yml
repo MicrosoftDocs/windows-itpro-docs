@@ -10,14 +10,8 @@ metadata:
   audience: ITPro
   ms.topic: faq
   ms.date: 11/08/2022
-  ms.reviewer: 
-  ms.custom: bitlocker
 title: BitLocker Network Unlock FAQ
 summary: |
-  **Applies to:**
-  - Windows 10
-  - Windows 11
-  - Windows Server 2016 and above
 
 sections:
   - name: Ignored

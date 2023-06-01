@@ -13,12 +13,6 @@ metadata:
   ms.custom: bitlocker
 title: BitLocker Security FAQ
 summary: |
-  **Applies to:**
-  - Windows 10 and later
-  - Windows Server 2016 and later
-  
-  
-
 sections:
   - name: Ignored
     questions:

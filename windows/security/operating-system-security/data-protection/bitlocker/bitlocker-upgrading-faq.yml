@@ -12,11 +12,7 @@ metadata:
   ms.reviewer: 
   ms.custom: bitlocker
 title: BitLocker Upgrading FAQ
-summary: |
-  **Applies to:**
-  - Windows 10 and later
-  - Windows Server 2016 and later
-  
+summary: |  
 
 sections:
   - name: Ignored

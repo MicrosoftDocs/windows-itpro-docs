@@ -1,16 +1,8 @@
 ---
 title: BCD settings and BitLocker 
 description: This article for IT professionals describes the BCD settings that are used by BitLocker.
-ms.reviewer: 
-ms.prod: windows-client
-ms.localizationpriority: medium
-author: frankroj
-ms.author: frankroj
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 11/08/2022
-ms.custom: bitlocker
-ms.technology: itpro-security
 ---
 
 # Boot Configuration Data settings and BitLocker

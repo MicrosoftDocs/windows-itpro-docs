@@ -1,27 +1,14 @@
 ---
 title: Overview of BitLocker Device Encryption in Windows
 description: This article provides an overview of how BitLocker Device Encryption can help protect data on devices running Windows.
-ms.prod: windows-client
-ms.localizationpriority: medium
-author: frankroj
-ms.author: frankroj
-manager: aaroncz
 ms.collection: 
   - highpri
   - tier1
 ms.topic: conceptual
 ms.date: 11/08/2022
-ms.custom: bitlocker
-ms.technology: itpro-security
 ---
 
-# Overview of BitLocker Device Encryption in Windows
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
+# Overview of BitLocker device encryption
 
 This article explains how BitLocker Device Encryption can help protect data on devices running Windows. See [BitLocker](bitlocker-overview.md) for a general overview and list of articles.
 
@@ -30,7 +17,6 @@ When users travel, their organization's confidential data goes with them. Wherev
 ## Data Protection in Windows 11, Windows 10, and Windows 7
 
 The below table lists specific data-protection concerns and how they're addressed in Windows 11, Windows 10, and Windows 7.
-
 
 | Windows 7 | Windows 11 and Windows 10 |
 |---|---|

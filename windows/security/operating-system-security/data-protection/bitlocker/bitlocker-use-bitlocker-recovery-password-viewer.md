@@ -1,19 +1,11 @@
 ---
 title: BitLocker Use BitLocker Recovery Password Viewer 
 description: This article for the IT professional describes how to use the BitLocker Recovery Password Viewer.
-ms.reviewer: 
-ms.prod: windows-client
-ms.localizationpriority: medium
-author: frankroj
-ms.author: frankroj
-manager: aaroncz
 ms.collection: 
   - highpri
   - tier1
 ms.topic: conceptual
 ms.date: 11/08/2022
-ms.custom: bitlocker
-ms.technology: itpro-security
 ---
 
 # BitLocker: Use BitLocker Recovery Password Viewer

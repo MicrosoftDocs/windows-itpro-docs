@@ -1,31 +1,16 @@
 ---
-title: BitLocker
+title: BitLocker overview
 description: This article provides a high-level overview of BitLocker, including a list of system requirements, practical applications, and deprecated features.
-ms.author: frankroj
-ms.prod: windows-client
-ms.localizationpriority: medium
-author: frankroj
-manager: aaroncz
 ms.collection: 
   - highpri
   - tier1
 ms.topic: conceptual
 ms.date: 11/08/2022
-ms.custom: bitlocker
-ms.technology: itpro-security
 ---
 
-# BitLocker
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
+# BitLocker overview
 
 This article provides a high-level overview of BitLocker, including a list of system requirements, practical applications, and deprecated features.
-
-## BitLocker overview
 
 BitLocker Drive Encryption is a data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers.
 
@@ -48,7 +33,7 @@ There are two additional tools in the Remote Server Administration Tools that ca
 - **BitLocker Drive Encryption Tools**. BitLocker Drive Encryption Tools include the command-line tools, manage-bde and repair-bde, and the BitLocker cmdlets for Windows PowerShell. Both manage-bde and the BitLocker cmdlets can be used to perform any task that can be accomplished through the
 BitLocker control panel, and they're appropriate to be used for automated deployments and other scripting scenarios. Repair-bde is provided for disaster recovery scenarios in which a BitLocker-protected drive can't be unlocked normally or by using the recovery console.
 
-[!INCLUDE [bitlocker](../../../../includes/licensing/bitlocker-enablement.md)]
+[!INCLUDE [bitlocker](../../../../../includes/licensing/bitlocker-enablement.md)]
 
 ## System requirements
 

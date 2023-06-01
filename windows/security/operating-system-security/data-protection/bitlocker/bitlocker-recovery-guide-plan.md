@@ -1,28 +1,14 @@
 ---
 title: BitLocker recovery guide
 description: This article for IT professionals describes how to recover BitLocker keys from Active Directory Domain Services (AD DS).
-ms.prod: windows-client
-ms.technology: itpro-security
-ms.localizationpriority: medium
-author: frankroj
-ms.author: frankroj
-ms.reviewer: rafals
-manager: aaroncz
 ms.collection: 
   - highpri
   - tier1
 ms.topic: conceptual
 ms.date: 11/08/2022
-ms.custom: bitlocker
 ---
 
 # BitLocker recovery guide
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 This article describes how to recover BitLocker keys from AD DS.
 

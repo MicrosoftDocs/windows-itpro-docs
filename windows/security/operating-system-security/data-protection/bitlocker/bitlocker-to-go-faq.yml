@@ -12,10 +12,7 @@ metadata:
   ms.date: 11/08/2022
   ms.custom: bitlocker
 title: BitLocker To Go FAQ
-summary: |
-  **Applies to:**
-  - Windows 10
-  
+summary: |  
 
 sections:
   - name: Ignored
@@ -28,7 +25,7 @@ sections:
           - SD cards
           - External hard disk drives
           - Other drives that are formatted by using the NTFS, FAT16, FAT32, or exFAT file system. 
-           
+
           Drive partitioning must meet the [BitLocker Drive Encryption Partitioning Requirements](/windows-hardware/manufacture/desktop/bitlocker-drive-encryption#bitlocker-drive-encryption-partitioning-requirements).
           
           As with BitLocker, drives that are encrypted by BitLocker To Go can be opened by using a password or smart card on another computer. In Control Panel, use **BitLocker Drive Encryption**.
