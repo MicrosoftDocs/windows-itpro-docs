@@ -17,7 +17,7 @@ This article explains how to deploy BitLocker on Windows Server. For all Windows
 
 ### To install BitLocker using server manager
 
-1. Open server manager by selecting the server manager icon or running servermanager.exe.
+1. Open server manager by selecting the server manager icon or running `servermanager.exe`.
 1. Select **Manage** from the **Server Manager Navigation** bar and select **Add Roles and Features** to start the **Add Roles and Features Wizard.**
 1. With the **Add Roles and Features** wizard open, select **Next** at the **Before you begin** pane (if shown).
 1. Select **Role-based or feature-based installation** on the **Installation type** pane of the **Add Roles and Features** wizard and select **Next** to continue.
@@ -25,7 +25,7 @@ This article explains how to deploy BitLocker on Windows Server. For all Windows
 1. Select **Next** on the **Server Roles** pane of the **Add Roles and Features** wizard to proceed to the **Features** pane.
    > [!NOTE]
    > Server roles and features are installed by using the same wizard in Server Manager.
-1. Select the check box next to **BitLocker Drive Encryption** within the **Features** pane of the **Add Roles and Features** wizard. The wizard shows the extra management features available for BitLocker. If the extra management features are not needed and/or don't need to be installed, deselect the **Include management tools**.
+1. Select the check box next to **BitLocker Drive Encryption** within the **Features** pane of the **Add Roles and Features** wizard. The wizard shows the extra management features available for BitLocker. If the extra management features aren't needed and/or don't need to be installed, deselect the **Include management tools**.
    > [!NOTE]
    > The **Enhanced Storage** feature is a required feature for enabling BitLocker. This feature enables support for encrypted hard drives on capable systems.
 1. Select **Add Features**. Once optional features selection is complete, select **Next** to proceed in the wizard.
@@ -43,7 +43,7 @@ Windows PowerShell offers administrators another option for BitLocker feature in
 
 The `servermanager` Windows PowerShell module can use either the `Install-WindowsFeature` or `Add-WindowsFeature` to install the BitLocker feature. The `Add-WindowsFeature` cmdlet is merely a stub to the `Install-WindowsFeature`. This example uses the `Install-WindowsFeature` cmdlet. The feature name for BitLocker in the `servermanager` module is `BitLocker`.
 
-By default, installation of features in Windows PowerShell doesn't include optional sub-features or management tools as part of the installation process. What is installed as part of the installation process can be seen using the `-WhatIf` option in Windows PowerShell.
+By default, installation of features in Windows PowerShell doesn't include optional subfeatures or management tools as part of the installation process. What is installed as part of the installation process can be seen using the `-WhatIf` option in Windows PowerShell.
 
 ```powershell
 Install-WindowsFeature BitLocker -WhatIf
@@ -51,7 +51,7 @@ Install-WindowsFeature BitLocker -WhatIf
 
 The results of this command show that only the BitLocker Drive Encryption feature is installed using this command.
 
-To see what would be installed with the BitLocker feature, including all available management tools and sub-features, use the following command:
+To see what would be installed with the BitLocker feature, including all available management tools and subfeatures, use the following command:
 
 ```powershell
 Install-WindowsFeature BitLocker -IncludeAllSubFeature -IncludeManagementTools -WhatIf | fl
@@ -67,7 +67,7 @@ The result of this command displays the following list of all the administration
 - AD DS Tools
 - AD DS and AD LDS Tools
 
-The command to complete a full installation of the BitLocker feature with all available sub-features and then to reboot the server at completion is:
+The command to complete a full installation of the BitLocker feature with all available subfeatures and then to reboot the server at completion is:
 
 ```powershell
 Install-WindowsFeature BitLocker -IncludeAllSubFeature -IncludeManagementTools -Restart
@@ -78,13 +78,13 @@ Install-WindowsFeature BitLocker -IncludeAllSubFeature -IncludeManagementTools -
 
 ### Using the dism module to install BitLocker
 
-The `dism.exe` Windows PowerShell module uses the `Enable-WindowsOptionalFeature` cmdlet to install features. The BitLocker feature name for BitLocker is `BitLocker`. The `dism.exe` module doesn't support wildcards when searching for feature names. To list feature names for the `dism.exe` module, use the `Get-WindowsOptionalFeatures` cmdlet. The following command will list all of the optional features in an online (running) operating system.
+The `dism.exe` Windows PowerShell module uses the `Enable-WindowsOptionalFeature` cmdlet to install features. The BitLocker feature name for BitLocker is `BitLocker`. The `dism.exe` module doesn't support wildcards when searching for feature names. To list feature names for the `dism.exe` module, use the `Get-WindowsOptionalFeatures` cmdlet. The following command lists all of the optional features in an online (running) operating system.
 
 ```powershell
 Get-WindowsOptionalFeature -Online | ft
 ```
 
-From this output, it can be seen that there are three BitLocker-related optional feature names: **BitLocker**, **BitLocker-Utilities** and **BitLocker-NetworkUnlock**. To install the BitLocker feature, the **BitLocker** and **BitLocker-Utilities** features are the only required items.
+From this output, there are three BitLocker-related optional feature names: **BitLocker**, **BitLocker-Utilities** and **BitLocker-NetworkUnlock**. To install the BitLocker feature, the **BitLocker** and **BitLocker-Utilities** features are the only required items.
 
 To install BitLocker using the `dism.exe` module, use the following command:
 
