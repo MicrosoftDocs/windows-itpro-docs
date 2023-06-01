@@ -76,17 +76,26 @@
         "application-security/application-control/user-account-control/*.md": "paolomatarazzo",
         "application-security/application-isolation/windows-sandbox/**/*.md": "vinaypamnani-msft",
         "identity-protection/**/*.md": "paolomatarazzo",
-        "operating-system-security/data-protection/**/*.*": "paolomatarazzo",
+        "identity-protection/**/*.yml": "paolomatarazzo",
+        "operating-system-security/data-protection/**/*.md": "paolomatarazzo",
+        "operating-system-security/data-protection/**/*.yml": "paolomatarazzo",
         "operating-system-security/network-security/**/*.md": "paolomatarazzo",
-        "operating-system-security/network-security/windows-firewall/**/*.md": "ngangulyms"
+        "operating-system-security/network-security/**/*.yml": "paolomatarazzo",
+        "operating-system-security/network-security/windows-firewall/**/*.md": "ngangulyms",
+        "operating-system-security/network-security/windows-firewall/**/*.yml": "ngangulyms"
       },
       "ms.author":{
         "application-security/application-control/user-account-control/*.md": "paoloma",
+        "application-security/application-control/user-account-control/*.yml": "paoloma",
         "application-security/application-isolation/windows-sandbox/**/*.md": "vinpa",
-        "identity-protection/**/*.*": "paoloma",
+        "identity-protection/**/*.md": "paoloma",
+        "identity-protection/**/*.yml": "paoloma",
         "operating-system-security/data-protection/**/*.md": "paoloma",
+        "operating-system-security/data-protection/**/*.yml": "paoloma",
         "operating-system-security/network-security/**/*.md": "paoloma",
-        "operating-system-security/network-security/windows-firewall/*.md": "nganguly"
+        "operating-system-security/network-security/**/*.yml": "paoloma",
+        "operating-system-security/network-security/windows-firewall/*.md": "nganguly",
+        "operating-system-security/network-security/windows-firewall/*.yml": "nganguly"
       },
       "appliesto": {
         "application-security/application-isolation/windows-sandbox/**/*.md": [
@@ -132,7 +141,17 @@
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2019</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
         ],
-        "operating-system-security/data-protection/personal-data-encryption/*.*": [
+        "operating-system-security/data-protection/**/*.yml": [
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2022</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2019</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
+        ],
+        "operating-system-security/data-protection/personal-data-encryption/*.md": [
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>"
+        ],
+        "operating-system-security/data-protection/personal-data-encryption/*.yml": [
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>"
         ],
         "operating-system-security/network-security/windows-firewall/**/*.md": [
