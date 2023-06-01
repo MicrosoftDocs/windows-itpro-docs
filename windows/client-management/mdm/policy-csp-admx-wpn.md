@@ -4,7 +4,7 @@ description: Learn more about the ADMX_WPN Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_WPN-Begin -->
 # Policy CSP - ADMX_WPN
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_WPN-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- NoCallsDuringQuietHours-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoCallsDuringQuietHours-Applicability-End -->
 
 <!-- NoCallsDuringQuietHours-OmaUri-Begin -->
@@ -44,11 +41,11 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting blocks voice and video calls during Quiet Hours.
 
-- If you enable this policy setting, voice and video calls will be blocked during the designated Quiet Hours time window each day, and users will not be able to customize any other Quiet Hours settings.
+- If you enable this policy setting, voice and video calls will be blocked during the designated Quiet Hours time window each day, and users won't be able to customize any other Quiet Hours settings.
 
-- If you disable this policy setting, voice and video calls will be allowed during Quiet Hours, and users will not be able to customize this or any other Quiet Hours settings.
+- If you disable this policy setting, voice and video calls will be allowed during Quiet Hours, and users won't be able to customize this or any other Quiet Hours settings.
 
-- If you do not configure this policy setting, voice and video calls will be allowed during Quiet Hours by default. Adminstrators and users will be able to modify this setting.
+- If you don't configure this policy setting, voice and video calls will be allowed during Quiet Hours by default. Adminstrators and users will be able to modify this setting.
 <!-- NoCallsDuringQuietHours-Description-End -->
 
 <!-- NoCallsDuringQuietHours-Editable-Begin -->
@@ -60,13 +57,12 @@ This policy setting blocks voice and video calls during Quiet Hours.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoCallsDuringQuietHours-DFProperties-End -->
 
 <!-- NoCallsDuringQuietHours-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -93,7 +89,7 @@ This policy setting blocks voice and video calls during Quiet Hours.
 <!-- NoLockScreenToastNotification-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoLockScreenToastNotification-Applicability-End -->
 
 <!-- NoLockScreenToastNotification-OmaUri-Begin -->
@@ -106,9 +102,9 @@ This policy setting blocks voice and video calls during Quiet Hours.
 <!-- Description-Source-ADMX -->
 This policy setting turns off toast notifications on the lock screen.
 
-- If you enable this policy setting, applications will not be able to raise toast notifications on the lock screen.
+- If you enable this policy setting, applications won't be able to raise toast notifications on the lock screen.
 
-- If you disable or do not configure this policy setting, toast notifications on the lock screen are enabled and can be turned off by the administrator or user.
+- If you disable or don't configure this policy setting, toast notifications on the lock screen are enabled and can be turned off by the administrator or user.
 
 No reboots or service restarts are required for this policy setting to take effect.
 <!-- NoLockScreenToastNotification-Description-End -->
@@ -122,13 +118,12 @@ No reboots or service restarts are required for this policy setting to take effe
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoLockScreenToastNotification-DFProperties-End -->
 
 <!-- NoLockScreenToastNotification-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -155,7 +150,7 @@ No reboots or service restarts are required for this policy setting to take effe
 <!-- NoQuietHours-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoQuietHours-Applicability-End -->
 
 <!-- NoQuietHours-OmaUri-Begin -->
@@ -168,11 +163,11 @@ No reboots or service restarts are required for this policy setting to take effe
 <!-- Description-Source-ADMX -->
 This policy setting turns off Quiet Hours functionality.
 
-- If you enable this policy setting, toast notifications will not be suppressed and some background tasks will not be deferred during the designated Quiet Hours time window each day.
+- If you enable this policy setting, toast notifications won't be suppressed and some background tasks won't be deferred during the designated Quiet Hours time window each day.
 
-- If you disable this policy setting, toast notifications will be suppressed and some background task deferred during the designated Quiet Hours time window. Users will not be able to change this or any other Quiet Hours settings.
+- If you disable this policy setting, toast notifications will be suppressed and some background task deferred during the designated Quiet Hours time window. Users won't be able to change this or any other Quiet Hours settings.
 
-- If you do not configure this policy setting, Quiet Hours are enabled by default but can be turned off or by the administrator or user.
+- If you don't configure this policy setting, Quiet Hours are enabled by default but can be turned off or by the administrator or user.
 <!-- NoQuietHours-Description-End -->
 
 <!-- NoQuietHours-Editable-Begin -->
@@ -184,13 +179,12 @@ This policy setting turns off Quiet Hours functionality.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoQuietHours-DFProperties-End -->
 
 <!-- NoQuietHours-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -217,7 +211,7 @@ This policy setting turns off Quiet Hours functionality.
 <!-- NoToastNotification-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoToastNotification-Applicability-End -->
 
 <!-- NoToastNotification-OmaUri-Begin -->
@@ -234,13 +228,13 @@ This policy setting turns off Quiet Hours functionality.
 <!-- Description-Source-ADMX -->
 This policy setting turns off toast notifications for applications.
 
-- If you enable this policy setting, applications will not be able to raise toast notifications.
+- If you enable this policy setting, applications won't be able to raise toast notifications.
 
-**Note** that this policy does not affect taskbar notification balloons.
+Note that this policy doesn't affect taskbar notification balloons.
 
-**Note** that Windows system features are not affected by this policy. You must enable/disable system features individually to stop their ability to raise toast notifications.
+Note that Windows system features aren't affected by this policy. You must enable/disable system features individually to stop their ability to raise toast notifications.
 
-- If you disable or do not configure this policy setting, toast notifications are enabled and can be turned off by the administrator or user.
+- If you disable or don't configure this policy setting, toast notifications are enabled and can be turned off by the administrator or user.
 
 No reboots or service restarts are required for this policy setting to take effect.
 <!-- NoToastNotification-Description-End -->
@@ -254,13 +248,12 @@ No reboots or service restarts are required for this policy setting to take effe
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoToastNotification-DFProperties-End -->
 
 <!-- NoToastNotification-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -287,7 +280,7 @@ No reboots or service restarts are required for this policy setting to take effe
 <!-- QuietHoursDailyBeginMinute-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- QuietHoursDailyBeginMinute-Applicability-End -->
 
 <!-- QuietHoursDailyBeginMinute-OmaUri-Begin -->
@@ -300,11 +293,11 @@ No reboots or service restarts are required for this policy setting to take effe
 <!-- Description-Source-ADMX -->
 This policy setting specifies the number of minutes after midnight (local time) that Quiet Hours is to begin each day.
 
-- If you enable this policy setting, the specified time will be used, and users will not be able to customize any Quiet Hours settings.
+- If you enable this policy setting, the specified time will be used, and users won't be able to customize any Quiet Hours settings.
 
-- If you disable this policy setting, a default value will be used, and users will not be able to change it or any other Quiet Hours setting.
+- If you disable this policy setting, a default value will be used, and users won't be able to change it or any other Quiet Hours setting.
 
-- If you do not configure this policy setting, a default value will be used, which administrators and users will be able to modify.
+- If you don't configure this policy setting, a default value will be used, which administrators and users will be able to modify.
 <!-- QuietHoursDailyBeginMinute-Description-End -->
 
 <!-- QuietHoursDailyBeginMinute-Editable-Begin -->
@@ -316,13 +309,12 @@ This policy setting specifies the number of minutes after midnight (local time) 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- QuietHoursDailyBeginMinute-DFProperties-End -->
 
 <!-- QuietHoursDailyBeginMinute-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -348,7 +340,7 @@ This policy setting specifies the number of minutes after midnight (local time) 
 <!-- QuietHoursDailyEndMinute-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- QuietHoursDailyEndMinute-Applicability-End -->
 
 <!-- QuietHoursDailyEndMinute-OmaUri-Begin -->
@@ -361,11 +353,11 @@ This policy setting specifies the number of minutes after midnight (local time) 
 <!-- Description-Source-ADMX -->
 This policy setting specifies the number of minutes after midnight (local time) that Quiet Hours is to end each day.
 
-- If you enable this policy setting, the specified time will be used, and users will not be able to customize any Quiet Hours settings.
+- If you enable this policy setting, the specified time will be used, and users won't be able to customize any Quiet Hours settings.
 
-- If you disable this policy setting, a default value will be used, and users will not be able to change it or any other Quiet Hours setting.
+- If you disable this policy setting, a default value will be used, and users won't be able to change it or any other Quiet Hours setting.
 
-- If you do not configure this policy setting, a default value will be used, which administrators and users will be able to modify.
+- If you don't configure this policy setting, a default value will be used, which administrators and users will be able to modify.
 <!-- QuietHoursDailyEndMinute-Description-End -->
 
 <!-- QuietHoursDailyEndMinute-Editable-Begin -->
@@ -377,13 +369,12 @@ This policy setting specifies the number of minutes after midnight (local time) 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- QuietHoursDailyEndMinute-DFProperties-End -->
 
 <!-- QuietHoursDailyEndMinute-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

@@ -4,7 +4,7 @@ description: Learn more about the RemoteWipe CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -19,6 +19,8 @@ ms.topic: reference
 <!-- RemoteWipe-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The RemoteWipe configuration service provider can be used by mobile operators DM server or enterprise management server to remotely reset a device. The RemoteWipe configuration service provider can make the data stored in memory and hard disks difficult to recover if the device is remotely reset after being lost or stolen. Enterprise IT Professionals can update these settings by using the Exchange Server.
+
+[!INCLUDE [remote-wipe](../../../includes/licensing/remote-wipe.md)]
 <!-- RemoteWipe-Editable-End -->
 
 <!-- RemoteWipe-Tree-Begin -->
@@ -44,7 +46,7 @@ The following list shows the RemoteWipe configuration service provider nodes:
 <!-- Device-AutomaticRedeployment-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-AutomaticRedeployment-Applicability-End -->
 
 <!-- Device-AutomaticRedeployment-OmaUri-Begin -->
@@ -67,7 +69,7 @@ Node for the Autopilot Reset operation.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-AutomaticRedeployment-DFProperties-End -->
 
@@ -83,7 +85,7 @@ Node for the Autopilot Reset operation.
 <!-- Device-AutomaticRedeployment-doAutomaticRedeployment-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-AutomaticRedeployment-doAutomaticRedeployment-Applicability-End -->
 
 <!-- Device-AutomaticRedeployment-doAutomaticRedeployment-OmaUri-Begin -->
@@ -106,7 +108,7 @@ Exec on this node triggers Autopilot Reset operation. This works like PC Reset, 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec |
 <!-- Device-AutomaticRedeployment-doAutomaticRedeployment-DFProperties-End -->
 
@@ -122,7 +124,7 @@ Exec on this node triggers Autopilot Reset operation. This works like PC Reset, 
 <!-- Device-AutomaticRedeployment-LastError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-AutomaticRedeployment-LastError-Applicability-End -->
 
 <!-- Device-AutomaticRedeployment-LastError-OmaUri-Begin -->
@@ -145,7 +147,7 @@ Error value, if any, associated with Automatic Redeployment operation (typically
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 | Default Value  | 0 |
 <!-- Device-AutomaticRedeployment-LastError-DFProperties-End -->
@@ -162,7 +164,7 @@ Error value, if any, associated with Automatic Redeployment operation (typically
 <!-- Device-AutomaticRedeployment-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-AutomaticRedeployment-Status-Applicability-End -->
 
 <!-- Device-AutomaticRedeployment-Status-OmaUri-Begin -->
@@ -185,7 +187,7 @@ Status value indicating current state of an Automatic Redeployment operation. 0:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 | Default Value  | 0 |
 <!-- Device-AutomaticRedeployment-Status-DFProperties-End -->
@@ -202,7 +204,7 @@ Status value indicating current state of an Automatic Redeployment operation. 0:
 <!-- Device-doWipe-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-doWipe-Applicability-End -->
 
 <!-- Device-doWipe-OmaUri-Begin -->
@@ -226,7 +228,7 @@ A remote reset is equivalent to running **Reset this PC** > **Remove everything*
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec |
 <!-- Device-doWipe-DFProperties-End -->
 
@@ -242,7 +244,7 @@ A remote reset is equivalent to running **Reset this PC** > **Remove everything*
 <!-- Device-doWipeCloud-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-doWipeCloud-Applicability-End -->
 
 <!-- Device-doWipeCloud-OmaUri-Begin -->
@@ -265,7 +267,7 @@ Exec on this node will perform a cloud-based remote wipe on the device. The retu
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec |
 <!-- Device-doWipeCloud-DFProperties-End -->
 
@@ -281,7 +283,7 @@ Exec on this node will perform a cloud-based remote wipe on the device. The retu
 <!-- Device-doWipeCloudPersistProvisionedData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-doWipeCloudPersistProvisionedData-Applicability-End -->
 
 <!-- Device-doWipeCloudPersistProvisionedData-OmaUri-Begin -->
@@ -304,7 +306,7 @@ Exec on this node will back up provisioning data to a persistent location and pe
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec |
 <!-- Device-doWipeCloudPersistProvisionedData-DFProperties-End -->
 
@@ -320,7 +322,7 @@ Exec on this node will back up provisioning data to a persistent location and pe
 <!-- Device-doWipeCloudPersistUserData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-doWipeCloudPersistUserData-Applicability-End -->
 
 <!-- Device-doWipeCloudPersistUserData-OmaUri-Begin -->
@@ -343,7 +345,7 @@ Exec on this node will perform a cloud-based remote reset on the device and pers
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec |
 <!-- Device-doWipeCloudPersistUserData-DFProperties-End -->
 
@@ -359,7 +361,7 @@ Exec on this node will perform a cloud-based remote reset on the device and pers
 <!-- Device-doWipePersistProvisionedData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-doWipePersistProvisionedData-Applicability-End -->
 
 <!-- Device-doWipePersistProvisionedData-OmaUri-Begin -->
@@ -383,7 +385,7 @@ Provisioning packages are persisted in `%SystemDrive%\ProgramData\Microsoft\Prov
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec |
 <!-- Device-doWipePersistProvisionedData-DFProperties-End -->
 
@@ -399,7 +401,7 @@ Provisioning packages are persisted in `%SystemDrive%\ProgramData\Microsoft\Prov
 <!-- Device-doWipePersistUserData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-doWipePersistUserData-Applicability-End -->
 
 <!-- Device-doWipePersistUserData-OmaUri-Begin -->
@@ -423,7 +425,7 @@ Exec on this node will perform a remote reset on the device and persist user acc
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec |
 <!-- Device-doWipePersistUserData-DFProperties-End -->
 
@@ -439,7 +441,7 @@ Exec on this node will perform a remote reset on the device and persist user acc
 <!-- Device-doWipeProtected-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-doWipeProtected-Applicability-End -->
 
 <!-- Device-doWipeProtected-OmaUri-Begin -->
@@ -464,7 +466,7 @@ Exec on this node will perform a remote wipe on the device and fully clean the i
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec |
 <!-- Device-doWipeProtected-DFProperties-End -->
 

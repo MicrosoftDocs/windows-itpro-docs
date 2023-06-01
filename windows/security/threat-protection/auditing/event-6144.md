@@ -1,5 +1,5 @@
 ---
-title: 6144(S) Security policy in the group policy objects has been applied successfully. (Windows 10)
+title: 6144(S) Security policy in the group policy objects has been applied successfully. 
 description: Describes security event 6144(S) Security policy in the group policy objects has been applied successfully.
 ms.pagetype: security
 ms.prod: windows-client

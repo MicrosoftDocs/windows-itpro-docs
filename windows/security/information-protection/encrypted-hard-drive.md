@@ -1,5 +1,5 @@
 ---
-title: Encrypted Hard Drive (Windows)
+title: Encrypted Hard Drive 
 description: Encrypted Hard Drive uses the rapid encryption that is provided by BitLocker Drive Encryption to enhance data security and management.
 ms.reviewer: 
 manager: aaroncz
@@ -47,6 +47,8 @@ Encrypted hard drives are supported natively in the operating system through the
 >Self-encrypting hard drives and encrypted hard drives for Windows are not the same type of devices. Encrypted hard drives for Windows require compliance for specific TCG protocols as well as IEEE 1667 compliance; Self-encrypting hard drives do not have these requirements. It is important to confirm that the device type is an encrypted hard drive for Windows when planning for deployment.
 
 If you're a storage device vendor who is looking for more info on how to implement Encrypted Hard Drive, see the [Encrypted Hard Drive Device Guide](/previous-versions/windows/hardware/design/dn653989(v=vs.85)).
+
+[!INCLUDE [encrypted-hard-drive](../../../includes/licensing/encrypted-hard-drive.md)]
 
 ## System Requirements
 

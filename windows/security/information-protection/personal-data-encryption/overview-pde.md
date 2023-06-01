@@ -23,6 +23,8 @@ ms.date: 03/13/2023
 
 [!INCLUDE [Personal Data Encryption (PDE) description](includes/pde-description.md)]
 
+[!INCLUDE [personal-data-encryption-pde](../../../../includes/licensing/personal-data-encryption-pde.md)]
+
 ## Prerequisites
 
 ### Required

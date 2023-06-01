@@ -4,7 +4,7 @@ description: Learn more about the Defender CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/01/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -118,7 +118,7 @@ The following list shows the Defender configuration service provider nodes:
 <!-- Device-Configuration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Configuration-Applicability-End -->
 
 <!-- Device-Configuration-OmaUri-Begin -->
@@ -141,7 +141,7 @@ An interior node to group Windows Defender configuration information.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Configuration-DFProperties-End -->
 
@@ -157,7 +157,7 @@ An interior node to group Windows Defender configuration information.
 <!-- Device-Configuration-AllowDatagramProcessingOnWinServer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-AllowDatagramProcessingOnWinServer-Applicability-End -->
 
 <!-- Device-Configuration-AllowDatagramProcessingOnWinServer-OmaUri-Begin -->
@@ -180,7 +180,7 @@ This settings controls whether Network Protection is allowed to enable datagram 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-AllowDatagramProcessingOnWinServer-DFProperties-End -->
@@ -206,7 +206,7 @@ This settings controls whether Network Protection is allowed to enable datagram 
 <!-- Device-Configuration-AllowNetworkProtectionDownLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-AllowNetworkProtectionDownLevel-Applicability-End -->
 
 <!-- Device-Configuration-AllowNetworkProtectionDownLevel-OmaUri-Begin -->
@@ -229,7 +229,7 @@ This settings controls whether Network Protection is allowed to be configured in
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-AllowNetworkProtectionDownLevel-DFProperties-End -->
@@ -255,7 +255,7 @@ This settings controls whether Network Protection is allowed to be configured in
 <!-- Device-Configuration-AllowNetworkProtectionOnWinServer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Configuration-AllowNetworkProtectionOnWinServer-Applicability-End -->
 
 <!-- Device-Configuration-AllowNetworkProtectionOnWinServer-OmaUri-Begin -->
@@ -278,7 +278,7 @@ This settings controls whether Network Protection is allowed to be configured in
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Device-Configuration-AllowNetworkProtectionOnWinServer-DFProperties-End -->
@@ -304,7 +304,7 @@ This settings controls whether Network Protection is allowed to be configured in
 <!-- Device-Configuration-ASROnlyPerRuleExclusions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Configuration-ASROnlyPerRuleExclusions-Applicability-End -->
 
 <!-- Device-Configuration-ASROnlyPerRuleExclusions-OmaUri-Begin -->
@@ -327,7 +327,7 @@ Apply ASR only per rule exclusions.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Configuration-ASROnlyPerRuleExclusions-DFProperties-End -->
 
@@ -343,7 +343,7 @@ Apply ASR only per rule exclusions.
 <!-- Device-Configuration-DataDuplicationDirectory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DataDuplicationDirectory-Applicability-End -->
 
 <!-- Device-Configuration-DataDuplicationDirectory-OmaUri-Begin -->
@@ -366,7 +366,7 @@ Define data duplication directory for device control.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Configuration-DataDuplicationDirectory-DFProperties-End -->
 
@@ -382,7 +382,7 @@ Define data duplication directory for device control.
 <!-- Device-Configuration-DataDuplicationLocalRetentionPeriod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DataDuplicationLocalRetentionPeriod-Applicability-End -->
 
 <!-- Device-Configuration-DataDuplicationLocalRetentionPeriod-OmaUri-Begin -->
@@ -405,7 +405,7 @@ Define the retention period in days of how much time the evidence data will be k
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-120]` |
 | Default Value  | 60 |
@@ -423,7 +423,7 @@ Define the retention period in days of how much time the evidence data will be k
 <!-- Device-Configuration-DataDuplicationRemoteLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DataDuplicationRemoteLocation-Applicability-End -->
 
 <!-- Device-Configuration-DataDuplicationRemoteLocation-OmaUri-Begin -->
@@ -446,7 +446,7 @@ Define data duplication remote location for device control.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Configuration-DataDuplicationRemoteLocation-DFProperties-End -->
 
@@ -462,7 +462,7 @@ Define data duplication remote location for device control.
 <!-- Device-Configuration-DefaultEnforcement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DefaultEnforcement-Applicability-End -->
 
 <!-- Device-Configuration-DefaultEnforcement-OmaUri-Begin -->
@@ -485,7 +485,7 @@ Control Device Control default enforcement. This is the enforcement applied if t
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Device-Configuration-DefaultEnforcement-DFProperties-End -->
@@ -511,7 +511,7 @@ Control Device Control default enforcement. This is the enforcement applied if t
 <!-- Device-Configuration-DeviceControl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DeviceControl-Applicability-End -->
 
 <!-- Device-Configuration-DeviceControl-OmaUri-Begin -->
@@ -533,7 +533,7 @@ Control Device Control default enforcement. This is the enforcement applied if t
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Configuration-DeviceControl-DFProperties-End -->
 
@@ -549,7 +549,7 @@ Control Device Control default enforcement. This is the enforcement applied if t
 <!-- Device-Configuration-DeviceControl-PolicyGroups-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DeviceControl-PolicyGroups-Applicability-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyGroups-OmaUri-Begin -->
@@ -571,7 +571,7 @@ Control Device Control default enforcement. This is the enforcement applied if t
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Configuration-DeviceControl-PolicyGroups-DFProperties-End -->
 
@@ -587,7 +587,7 @@ Control Device Control default enforcement. This is the enforcement applied if t
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-Applicability-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-OmaUri-Begin -->
@@ -609,7 +609,7 @@ Control Device Control default enforcement. This is the enforcement applied if t
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-DFProperties-End -->
 
@@ -625,7 +625,7 @@ Control Device Control default enforcement. This is the enforcement applied if t
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-GroupData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-GroupData-Applicability-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-GroupData-OmaUri-Begin -->
@@ -648,7 +648,7 @@ For more information, see [Microsoft Defender for Endpoint Device Control Remova
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-GroupData-DFProperties-End -->
 
@@ -664,7 +664,7 @@ For more information, see [Microsoft Defender for Endpoint Device Control Remova
 <!-- Device-Configuration-DeviceControl-PolicyRules-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DeviceControl-PolicyRules-Applicability-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyRules-OmaUri-Begin -->
@@ -686,7 +686,7 @@ For more information, see [Microsoft Defender for Endpoint Device Control Remova
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Configuration-DeviceControl-PolicyRules-DFProperties-End -->
 
@@ -702,7 +702,7 @@ For more information, see [Microsoft Defender for Endpoint Device Control Remova
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-Applicability-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-OmaUri-Begin -->
@@ -724,7 +724,7 @@ For more information, see [Microsoft Defender for Endpoint Device Control Remova
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-DFProperties-End -->
 
@@ -740,7 +740,7 @@ For more information, see [Microsoft Defender for Endpoint Device Control Remova
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-RuleData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-RuleData-Applicability-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-RuleData-OmaUri-Begin -->
@@ -763,7 +763,7 @@ For more information, see [Microsoft Defender for Endpoint Device Control Remova
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-RuleData-DFProperties-End -->
 
@@ -779,7 +779,7 @@ For more information, see [Microsoft Defender for Endpoint Device Control Remova
 <!-- Device-Configuration-DeviceControlEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DeviceControlEnabled-Applicability-End -->
 
 <!-- Device-Configuration-DeviceControlEnabled-OmaUri-Begin -->
@@ -802,7 +802,7 @@ Control Device Control feature.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-DeviceControlEnabled-DFProperties-End -->
@@ -828,7 +828,7 @@ Control Device Control feature.
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-Applicability-End -->
 
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-OmaUri-Begin -->
@@ -839,7 +839,7 @@ Control Device Control feature.
 
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-Description-Begin -->
 <!-- Description-Source-DDF -->
-Indicates whether the CPU will be throttled for scheduled scans while the device is idle. This feature is enabled by default and will not throttle the CPU for scheduled scans performed when the device is otherwise idle, regardless of what ScanAvgCPULoadFactor is set to. For all other scheduled scans this flag will have no impact and normal throttling will occur.
+Indicates whether the CPU will be throttled for scheduled scans while the device is idle. This feature is enabled by default and won't throttle the CPU for scheduled scans performed when the device is otherwise idle, regardless of what ScanAvgCPULoadFactor is set to. For all other scheduled scans this flag will have no impact and normal throttling will occur.
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-Description-End -->
 
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-Editable-Begin -->
@@ -851,7 +851,7 @@ Indicates whether the CPU will be throttled for scheduled scans while the device
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-DFProperties-End -->
@@ -877,7 +877,7 @@ Indicates whether the CPU will be throttled for scheduled scans while the device
 <!-- Device-Configuration-DisableDnsOverTcpParsing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableDnsOverTcpParsing-Applicability-End -->
 
 <!-- Device-Configuration-DisableDnsOverTcpParsing-OmaUri-Begin -->
@@ -900,7 +900,7 @@ This setting disables DNS over TCP Parsing for Network Protection.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-DisableDnsOverTcpParsing-DFProperties-End -->
@@ -926,7 +926,7 @@ This setting disables DNS over TCP Parsing for Network Protection.
 <!-- Device-Configuration-DisableDnsParsing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableDnsParsing-Applicability-End -->
 
 <!-- Device-Configuration-DisableDnsParsing-OmaUri-Begin -->
@@ -949,7 +949,7 @@ This setting disables DNS Parsing for Network Protection.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-DisableDnsParsing-DFProperties-End -->
@@ -975,7 +975,7 @@ This setting disables DNS Parsing for Network Protection.
 <!-- Device-Configuration-DisableFtpParsing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableFtpParsing-Applicability-End -->
 
 <!-- Device-Configuration-DisableFtpParsing-OmaUri-Begin -->
@@ -998,7 +998,7 @@ This setting disables FTP Parsing for Network Protection.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-DisableFtpParsing-DFProperties-End -->
@@ -1024,7 +1024,7 @@ This setting disables FTP Parsing for Network Protection.
 <!-- Device-Configuration-DisableGradualRelease-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableGradualRelease-Applicability-End -->
 
 <!-- Device-Configuration-DisableGradualRelease-OmaUri-Begin -->
@@ -1047,7 +1047,7 @@ Enable this policy to disable gradual rollout of Defender updates.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-DisableGradualRelease-DFProperties-End -->
@@ -1073,7 +1073,7 @@ Enable this policy to disable gradual rollout of Defender updates.
 <!-- Device-Configuration-DisableHttpParsing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableHttpParsing-Applicability-End -->
 
 <!-- Device-Configuration-DisableHttpParsing-OmaUri-Begin -->
@@ -1096,7 +1096,7 @@ This setting disables HTTP Parsing for Network Protection.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-DisableHttpParsing-DFProperties-End -->
@@ -1122,7 +1122,7 @@ This setting disables HTTP Parsing for Network Protection.
 <!-- Device-Configuration-DisableInboundConnectionFiltering-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableInboundConnectionFiltering-Applicability-End -->
 
 <!-- Device-Configuration-DisableInboundConnectionFiltering-OmaUri-Begin -->
@@ -1145,7 +1145,7 @@ This setting disables Inbound connection filtering for Network Protection.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-DisableInboundConnectionFiltering-DFProperties-End -->
@@ -1171,7 +1171,7 @@ This setting disables Inbound connection filtering for Network Protection.
 <!-- Device-Configuration-DisableLocalAdminMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableLocalAdminMerge-Applicability-End -->
 
 <!-- Device-Configuration-DisableLocalAdminMerge-OmaUri-Begin -->
@@ -1194,7 +1194,7 @@ When this value is set to false, it allows a local admin the ability to specify 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-DisableLocalAdminMerge-DFProperties-End -->
@@ -1220,7 +1220,7 @@ When this value is set to false, it allows a local admin the ability to specify 
 <!-- Device-Configuration-DisableNetworkProtectionPerfTelemetry-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableNetworkProtectionPerfTelemetry-Applicability-End -->
 
 <!-- Device-Configuration-DisableNetworkProtectionPerfTelemetry-OmaUri-Begin -->
@@ -1243,7 +1243,7 @@ This setting disables the gathering and send of performance telemetry from Netwo
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-DisableNetworkProtectionPerfTelemetry-DFProperties-End -->
@@ -1269,7 +1269,7 @@ This setting disables the gathering and send of performance telemetry from Netwo
 <!-- Device-Configuration-DisableRdpParsing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableRdpParsing-Applicability-End -->
 
 <!-- Device-Configuration-DisableRdpParsing-OmaUri-Begin -->
@@ -1292,7 +1292,7 @@ This setting disables RDP Parsing for Network Protection.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-DisableRdpParsing-DFProperties-End -->
@@ -1318,7 +1318,7 @@ This setting disables RDP Parsing for Network Protection.
 <!-- Device-Configuration-DisableSmtpParsing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableSmtpParsing-Applicability-End -->
 
 <!-- Device-Configuration-DisableSmtpParsing-OmaUri-Begin -->
@@ -1341,7 +1341,7 @@ This setting disables SMTP Parsing for Network Protection.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-DisableSmtpParsing-DFProperties-End -->
@@ -1367,7 +1367,7 @@ This setting disables SMTP Parsing for Network Protection.
 <!-- Device-Configuration-DisableSshParsing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableSshParsing-Applicability-End -->
 
 <!-- Device-Configuration-DisableSshParsing-OmaUri-Begin -->
@@ -1390,7 +1390,7 @@ This setting disables SSH Parsing for Network Protection.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-DisableSshParsing-DFProperties-End -->
@@ -1416,7 +1416,7 @@ This setting disables SSH Parsing for Network Protection.
 <!-- Device-Configuration-DisableTlsParsing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableTlsParsing-Applicability-End -->
 
 <!-- Device-Configuration-DisableTlsParsing-OmaUri-Begin -->
@@ -1439,7 +1439,7 @@ This setting disables TLS Parsing for Network Protection.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-DisableTlsParsing-DFProperties-End -->
@@ -1465,7 +1465,7 @@ This setting disables TLS Parsing for Network Protection.
 <!-- Device-Configuration-EnableDnsSinkhole-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-EnableDnsSinkhole-Applicability-End -->
 
 <!-- Device-Configuration-EnableDnsSinkhole-OmaUri-Begin -->
@@ -1488,7 +1488,7 @@ This setting enables the DNS Sinkhole feature for Network Protection, respecting
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Device-Configuration-EnableDnsSinkhole-DFProperties-End -->
@@ -1514,7 +1514,7 @@ This setting enables the DNS Sinkhole feature for Network Protection, respecting
 <!-- Device-Configuration-EnableFileHashComputation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Configuration-EnableFileHashComputation-Applicability-End -->
 
 <!-- Device-Configuration-EnableFileHashComputation-OmaUri-Begin -->
@@ -1537,7 +1537,7 @@ Enables or disables file hash computation feature. When this feature is enabled 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-EnableFileHashComputation-DFProperties-End -->
@@ -1563,7 +1563,7 @@ Enables or disables file hash computation feature. When this feature is enabled 
 <!-- Device-Configuration-EngineUpdatesChannel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-EngineUpdatesChannel-Applicability-End -->
 
 <!-- Device-Configuration-EngineUpdatesChannel-OmaUri-Begin -->
@@ -1586,7 +1586,7 @@ Enable this policy to specify when devices receive Microsoft Defender engine upd
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-EngineUpdatesChannel-DFProperties-End -->
@@ -1616,7 +1616,7 @@ Enable this policy to specify when devices receive Microsoft Defender engine upd
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-Applicability-End -->
 
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-OmaUri-Begin -->
@@ -1641,7 +1641,7 @@ This policy setting controls whether or not exclusions are visible to local admi
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-DFProperties-End -->
@@ -1652,7 +1652,7 @@ This policy setting controls whether or not exclusions are visible to local admi
 | Value | Description |
 |:--|:--|
 | 1 | If you enable this setting, local admins will no longer be able to see the exclusion list in Windows Security App or via PowerShell. |
-| 0 (Default) | If you disable or do not configure this setting, local admins will be able to see exclusions in the Windows Security App and via PowerShell. |
+| 0 (Default) | If you disable or don't configure this setting, local admins will be able to see exclusions in the Windows Security App and via PowerShell. |
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-AllowedValues-End -->
 
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-Examples-Begin -->
@@ -1667,7 +1667,7 @@ This policy setting controls whether or not exclusions are visible to local admi
 <!-- Device-Configuration-HideExclusionsFromLocalUsers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-HideExclusionsFromLocalUsers-Applicability-End -->
 
 <!-- Device-Configuration-HideExclusionsFromLocalUsers-OmaUri-Begin -->
@@ -1690,7 +1690,7 @@ This policy setting controls whether or not exclusions are visible to local user
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-HideExclusionsFromLocalUsers-DFProperties-End -->
@@ -1701,7 +1701,7 @@ This policy setting controls whether or not exclusions are visible to local user
 | Value | Description |
 |:--|:--|
 | 1 | If you enable this setting, local users will no longer be able to see the exclusion list in Windows Security App or via PowerShell. |
-| 0 (Default) | If you disable or do not configure this setting, local users will be able to see exclusions in the Windows Security App and via PowerShell. |
+| 0 (Default) | If you disable or don't configure this setting, local users will be able to see exclusions in the Windows Security App and via PowerShell. |
 <!-- Device-Configuration-HideExclusionsFromLocalUsers-AllowedValues-End -->
 
 <!-- Device-Configuration-HideExclusionsFromLocalUsers-Examples-Begin -->
@@ -1716,7 +1716,7 @@ This policy setting controls whether or not exclusions are visible to local user
 <!-- Device-Configuration-IntelTDTEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-Configuration-IntelTDTEnabled-Applicability-End -->
 
 <!-- Device-Configuration-IntelTDTEnabled-OmaUri-Begin -->
@@ -1739,7 +1739,7 @@ This policy setting configures the Intel TDT integration level for Intel TDT-cap
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-IntelTDTEnabled-DFProperties-End -->
@@ -1749,7 +1749,7 @@ This policy setting configures the Intel TDT integration level for Intel TDT-cap
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | If you do not configure this setting, the default value will be applied. The default value is controlled by Microsoft security intelligence updates. Microsoft will enable Intel TDT if there is a known threat. |
+| 0 (Default) | If you don't configure this setting, the default value will be applied. The default value is controlled by Microsoft security intelligence updates. Microsoft will enable Intel TDT if there is a known threat. |
 | 1 | If you configure this setting to enabled, Intel TDT integration will turn on. |
 | 2 | If you configure this setting to disabled, Intel TDT integration will turn off. |
 <!-- Device-Configuration-IntelTDTEnabled-AllowedValues-End -->
@@ -1766,7 +1766,7 @@ This policy setting configures the Intel TDT integration level for Intel TDT-cap
 <!-- Device-Configuration-MeteredConnectionUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-MeteredConnectionUpdates-Applicability-End -->
 
 <!-- Device-Configuration-MeteredConnectionUpdates-OmaUri-Begin -->
@@ -1789,7 +1789,7 @@ Allow managed devices to update through metered connections. Default is 0 - not 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-MeteredConnectionUpdates-DFProperties-End -->
@@ -1815,7 +1815,7 @@ Allow managed devices to update through metered connections. Default is 0 - not 
 <!-- Device-Configuration-OobeEnableRtpAndSigUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-OobeEnableRtpAndSigUpdate-Applicability-End -->
 
 <!-- Device-Configuration-OobeEnableRtpAndSigUpdate-OmaUri-Begin -->
@@ -1838,7 +1838,7 @@ This setting allows you to configure whether real-time protection and Security I
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-OobeEnableRtpAndSigUpdate-DFProperties-End -->
@@ -1849,7 +1849,7 @@ This setting allows you to configure whether real-time protection and Security I
 | Value | Description |
 |:--|:--|
 | 1 | If you enable this setting, real-time protection and Security Intelligence Updates are enabled during OOBE. |
-| 0 (Default) | If you either disable or do not configure this setting, real-time protection and Security Intelligence Updates during OOBE is not enabled. |
+| 0 (Default) | If you either disable or don't configure this setting, real-time protection and Security Intelligence Updates during OOBE isn't enabled. |
 <!-- Device-Configuration-OobeEnableRtpAndSigUpdate-AllowedValues-End -->
 
 <!-- Device-Configuration-OobeEnableRtpAndSigUpdate-Examples-Begin -->
@@ -1864,7 +1864,7 @@ This setting allows you to configure whether real-time protection and Security I
 <!-- Device-Configuration-PassiveRemediation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-PassiveRemediation-Applicability-End -->
 
 <!-- Device-Configuration-PassiveRemediation-OmaUri-Begin -->
@@ -1887,7 +1887,7 @@ Setting to control automatic remediation for Sense scans.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-PassiveRemediation-DFProperties-End -->
@@ -1914,7 +1914,7 @@ Setting to control automatic remediation for Sense scans.
 <!-- Device-Configuration-PlatformUpdatesChannel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-PlatformUpdatesChannel-Applicability-End -->
 
 <!-- Device-Configuration-PlatformUpdatesChannel-OmaUri-Begin -->
@@ -1937,7 +1937,7 @@ Enable this policy to specify when devices receive Microsoft Defender platform u
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-PlatformUpdatesChannel-DFProperties-End -->
@@ -1967,7 +1967,7 @@ Enable this policy to specify when devices receive Microsoft Defender platform u
 <!-- Device-Configuration-RandomizeScheduleTaskTimes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-RandomizeScheduleTaskTimes-Applicability-End -->
 
 <!-- Device-Configuration-RandomizeScheduleTaskTimes-OmaUri-Begin -->
@@ -1990,7 +1990,7 @@ In Microsoft Defender Antivirus, randomize the start time of the scan to any int
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Device-Configuration-RandomizeScheduleTaskTimes-DFProperties-End -->
@@ -2016,7 +2016,7 @@ In Microsoft Defender Antivirus, randomize the start time of the scan to any int
 <!-- Device-Configuration-ScanOnlyIfIdleEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-ScanOnlyIfIdleEnabled-Applicability-End -->
 
 <!-- Device-Configuration-ScanOnlyIfIdleEnabled-OmaUri-Begin -->
@@ -2039,7 +2039,7 @@ In Microsoft Defender Antivirus, this setting will run scheduled scans only if t
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Device-Configuration-ScanOnlyIfIdleEnabled-DFProperties-End -->
@@ -2065,7 +2065,7 @@ In Microsoft Defender Antivirus, this setting will run scheduled scans only if t
 <!-- Device-Configuration-SchedulerRandomizationTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-SchedulerRandomizationTime-Applicability-End -->
 
 <!-- Device-Configuration-SchedulerRandomizationTime-OmaUri-Begin -->
@@ -2088,7 +2088,7 @@ This setting allows you to configure the scheduler randomization in hours. The r
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-23]` |
 | Default Value  | 4 |
@@ -2106,7 +2106,7 @@ This setting allows you to configure the scheduler randomization in hours. The r
 <!-- Device-Configuration-SecuredDevicesConfiguration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-SecuredDevicesConfiguration-Applicability-End -->
 
 <!-- Device-Configuration-SecuredDevicesConfiguration-OmaUri-Begin -->
@@ -2117,7 +2117,7 @@ This setting allows you to configure the scheduler randomization in hours. The r
 
 <!-- Device-Configuration-SecuredDevicesConfiguration-Description-Begin -->
 <!-- Description-Source-DDF -->
-Defines what are the devices primary ids that should be secured by Defender Device Control. The primary id values should be pipe (|) separated. Example: RemovableMediaDevices|CdRomDevices. If this configuration is not set the default value will be applied, meaning all of the supported devices will be secured.
+Defines what are the devices primary ids that should be secured by Defender Device Control. The primary id values should be pipe (|) separated. Example: RemovableMediaDevices|CdRomDevices. If this configuration isn't set the default value will be applied, meaning all of the supported devices will be secured.
 <!-- Device-Configuration-SecuredDevicesConfiguration-Description-End -->
 
 <!-- Device-Configuration-SecuredDevicesConfiguration-Editable-Begin -->
@@ -2129,7 +2129,7 @@ Defines what are the devices primary ids that should be secured by Defender Devi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Configuration-SecuredDevicesConfiguration-DFProperties-End -->
 
@@ -2145,7 +2145,7 @@ Defines what are the devices primary ids that should be secured by Defender Devi
 <!-- Device-Configuration-SecurityIntelligenceUpdatesChannel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-SecurityIntelligenceUpdatesChannel-Applicability-End -->
 
 <!-- Device-Configuration-SecurityIntelligenceUpdatesChannel-OmaUri-Begin -->
@@ -2168,7 +2168,7 @@ Enable this policy to specify when devices receive Microsoft Defender security i
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-SecurityIntelligenceUpdatesChannel-DFProperties-End -->
@@ -2195,7 +2195,7 @@ Enable this policy to specify when devices receive Microsoft Defender security i
 <!-- Device-Configuration-SupportLogLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-SupportLogLocation-Applicability-End -->
 
 <!-- Device-Configuration-SupportLogLocation-OmaUri-Begin -->
@@ -2230,7 +2230,7 @@ More details:
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Configuration-SupportLogLocation-DFProperties-End -->
 
@@ -2246,7 +2246,7 @@ More details:
 <!-- Device-Configuration-TamperProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Configuration-TamperProtection-Applicability-End -->
 
 <!-- Device-Configuration-TamperProtection-OmaUri-Begin -->
@@ -2262,6 +2262,8 @@ Tamper protection helps protect important security features from unwanted change
 
 <!-- Device-Configuration-TamperProtection-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Changes to this setting are not applied when [tamper protection][TAMPER-1] is enabled.
 <!-- Device-Configuration-TamperProtection-Editable-End -->
 
 <!-- Device-Configuration-TamperProtection-DFProperties-Begin -->
@@ -2269,7 +2271,7 @@ Tamper protection helps protect important security features from unwanted change
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Configuration-TamperProtection-DFProperties-End -->
@@ -2286,7 +2288,7 @@ Tamper protection helps protect important security features from unwanted change
 <!-- Device-Configuration-ThrottleForScheduledScanOnly-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-ThrottleForScheduledScanOnly-Applicability-End -->
 
 <!-- Device-Configuration-ThrottleForScheduledScanOnly-OmaUri-Begin -->
@@ -2309,7 +2311,7 @@ A CPU usage limit can be applied to scheduled scans only, or to scheduled and cu
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Device-Configuration-ThrottleForScheduledScanOnly-DFProperties-End -->
@@ -2335,7 +2337,7 @@ A CPU usage limit can be applied to scheduled scans only, or to scheduled and cu
 <!-- Device-Detections-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Detections-Applicability-End -->
 
 <!-- Device-Detections-OmaUri-Begin -->
@@ -2358,7 +2360,7 @@ An interior node to group all threats detected by Windows Defender.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Detections-DFProperties-End -->
 
@@ -2374,7 +2376,7 @@ An interior node to group all threats detected by Windows Defender.
 <!-- Device-Detections-{ThreatId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Detections-{ThreatId}-Applicability-End -->
 
 <!-- Device-Detections-{ThreatId}-OmaUri-Begin -->
@@ -2397,7 +2399,7 @@ The ID of a threat that has been detected by Windows Defender.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- Device-Detections-{ThreatId}-DFProperties-End -->
@@ -2414,7 +2416,7 @@ The ID of a threat that has been detected by Windows Defender.
 <!-- Device-Detections-{ThreatId}-Category-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Detections-{ThreatId}-Category-Applicability-End -->
 
 <!-- Device-Detections-{ThreatId}-Category-OmaUri-Begin -->
@@ -2427,57 +2429,108 @@ The ID of a threat that has been detected by Windows Defender.
 <!-- Description-Source-DDF -->
 Threat category ID. Supported values:
 
-| Value | Description |
-|:--|:--|
-| 0 | Invalid |
-| 1 | Adware |
-| 2 | Spyware |
-| 3 | Password stealer |
-| 4 | Trojan downloader |
-| 5 | Worm |
-| 6 | Backdoor |
-| 7 | Remote access Trojan |
-| 8 | Trojan |
-| 9 | Email flooder |
-| 10 | Keylogger |
-| 11 | Dialer |
-| 12 | Monitoring software |
-| 13 | Browser modifier |
-| 14 | Cookie |
-| 15 | Browser plugin |
-| 16 | AOL exploit |
-| 17 | Nuker |
-| 18 | Security disabler |
-| 19 | Joke program |
-| 20 | Hostile ActiveX control |
-| 21 | Software bundler |
-| 22 | Stealth modifier |
-| 23 | Settings modifier |
-| 24 | Toolbar |
-| 25 | Remote control software |
-| 26 | Trojan FTP |
-| 27 | Potential unwanted software |
-| 28 | ICQ exploit |
-| 29 | Trojan telnet |
-| 30 | Exploit |
-| 31 | File sharing program |
-| 32 | Malware creation tool |
-| 33 | Remote control software |
-| 34 | Tool |
-| 36 | Trojan denial of service |
-| 37 | Trojan dropper |
-| 38 | Trojan mass mailer |
-| 39 | Trojan monitoring software |
-| 40 | Trojan proxy server |
-| 42 | Virus |
-| 43 | Known |
-| 44 | Unknown |
-| 45 | SPP |
-| 46 | Behavior |
-| 47 | Vulnerability |
-| 48 | Policy |
-| 49 | EUS (Enterprise Unwanted Software) |
-| 50 | Ransomware |
+| Value | Description |.
+
+|:--|:--|.
+
+| 0 | Invalid |.
+
+| 1 | Adware |.
+
+| 2 | Spyware |.
+
+| 3 | Password stealer |.
+
+| 4 | Trojan downloader |.
+
+| 5 | Worm |.
+
+| 6 | Backdoor |.
+
+| 7 | Remote access Trojan |.
+
+| 8 | Trojan |.
+
+| 9 | Email flooder |.
+
+| 10 | Keylogger |.
+
+| 11 | Dialer |.
+
+| 12 | Monitoring software |.
+
+| 13 | Browser modifier |.
+
+| 14 | Cookie |.
+
+| 15 | Browser plugin |.
+
+| 16 | AOL exploit |.
+
+| 17 | Nuker |.
+
+| 18 | Security disabler |.
+
+| 19 | Joke program |.
+
+| 20 | Hostile ActiveX control |.
+
+| 21 | Software bundler |.
+
+| 22 | Stealth modifier |.
+
+| 23 | Settings modifier |.
+
+| 24 | Toolbar |.
+
+| 25 | Remote control software |.
+
+| 26 | Trojan FTP |.
+
+| 27 | Potential unwanted software |.
+
+| 28 | ICQ exploit |.
+
+| 29 | Trojan telnet |.
+
+| 30 | Exploit |.
+
+| 31 | File sharing program |.
+
+| 32 | Malware creation tool |.
+
+| 33 | Remote control software |.
+
+| 34 | Tool |.
+
+| 36 | Trojan denial of service |.
+
+| 37 | Trojan dropper |.
+
+| 38 | Trojan mass mailer |.
+
+| 39 | Trojan monitoring software |.
+
+| 40 | Trojan proxy server |.
+
+| 42 | Virus |.
+
+| 43 | Known |.
+
+| 44 | Unknown |.
+
+| 45 | SPP |.
+
+| 46 | Behavior |.
+
+| 47 | Vulnerability |.
+
+| 48 | Policy |.
+
+| 49 | EUS (Enterprise Unwanted Software) |.
+
+| 50 | Ransomware |.
+
 | 51 | ASR Rule |
 <!-- Device-Detections-{ThreatId}-Category-Description-End -->
 
@@ -2490,7 +2543,7 @@ Threat category ID. Supported values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Detections-{ThreatId}-Category-DFProperties-End -->
 
@@ -2506,7 +2559,7 @@ Threat category ID. Supported values:
 <!-- Device-Detections-{ThreatId}-CurrentStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Detections-{ThreatId}-CurrentStatus-Applicability-End -->
 
 <!-- Device-Detections-{ThreatId}-CurrentStatus-OmaUri-Begin -->
@@ -2519,18 +2572,30 @@ Threat category ID. Supported values:
 <!-- Description-Source-DDF -->
 Information about the current status of the threat. The following list shows the supported values:
 
-| Value | Description |
-|:--|:--|
-| 0 | Active |
-| 1 | Action failed |
-| 2 | Manual steps required |
-| 3 | Full scan required |
-| 4 | Reboot required |
-| 5 | Remediated with noncritical failures |
-| 6 | Quarantined |
-| 7 | Removed |
-| 8 | Cleaned |
-| 9 | Allowed |
+| Value | Description |.
+
+|:--|:--|.
+
+| 0 | Active |.
+
+| 1 | Action failed |.
+
+| 2 | Manual steps required |.
+
+| 3 | Full scan required |.
+
+| 4 | Reboot required |.
+
+| 5 | Remediated with noncritical failures |.
+
+| 6 | Quarantined |.
+
+| 7 | Removed |.
+
+| 8 | Cleaned |.
+
+| 9 | Allowed |.
+
 | 10 | No Status ( Cleared) |
 <!-- Device-Detections-{ThreatId}-CurrentStatus-Description-End -->
 
@@ -2543,7 +2608,7 @@ Information about the current status of the threat. The following list shows the
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Detections-{ThreatId}-CurrentStatus-DFProperties-End -->
 
@@ -2559,7 +2624,7 @@ Information about the current status of the threat. The following list shows the
 <!-- Device-Detections-{ThreatId}-ExecutionStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Detections-{ThreatId}-ExecutionStatus-Applicability-End -->
 
 <!-- Device-Detections-{ThreatId}-ExecutionStatus-OmaUri-Begin -->
@@ -2582,7 +2647,7 @@ Information about the execution status of the threat.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Detections-{ThreatId}-ExecutionStatus-DFProperties-End -->
 
@@ -2598,7 +2663,7 @@ Information about the execution status of the threat.
 <!-- Device-Detections-{ThreatId}-InitialDetectionTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Detections-{ThreatId}-InitialDetectionTime-Applicability-End -->
 
 <!-- Device-Detections-{ThreatId}-InitialDetectionTime-OmaUri-Begin -->
@@ -2621,7 +2686,7 @@ The first time this particular threat was detected.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Detections-{ThreatId}-InitialDetectionTime-DFProperties-End -->
 
@@ -2637,7 +2702,7 @@ The first time this particular threat was detected.
 <!-- Device-Detections-{ThreatId}-LastThreatStatusChangeTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Detections-{ThreatId}-LastThreatStatusChangeTime-Applicability-End -->
 
 <!-- Device-Detections-{ThreatId}-LastThreatStatusChangeTime-OmaUri-Begin -->
@@ -2660,7 +2725,7 @@ The last time this particular threat was changed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Detections-{ThreatId}-LastThreatStatusChangeTime-DFProperties-End -->
 
@@ -2676,7 +2741,7 @@ The last time this particular threat was changed.
 <!-- Device-Detections-{ThreatId}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Detections-{ThreatId}-Name-Applicability-End -->
 
 <!-- Device-Detections-{ThreatId}-Name-OmaUri-Begin -->
@@ -2699,7 +2764,7 @@ The name of the specific threat.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Detections-{ThreatId}-Name-DFProperties-End -->
 
@@ -2715,7 +2780,7 @@ The name of the specific threat.
 <!-- Device-Detections-{ThreatId}-NumberOfDetections-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Detections-{ThreatId}-NumberOfDetections-Applicability-End -->
 
 <!-- Device-Detections-{ThreatId}-NumberOfDetections-OmaUri-Begin -->
@@ -2738,7 +2803,7 @@ Number of times this threat has been detected on a particular client.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Detections-{ThreatId}-NumberOfDetections-DFProperties-End -->
 
@@ -2754,7 +2819,7 @@ Number of times this threat has been detected on a particular client.
 <!-- Device-Detections-{ThreatId}-Severity-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Detections-{ThreatId}-Severity-Applicability-End -->
 
 <!-- Device-Detections-{ThreatId}-Severity-OmaUri-Begin -->
@@ -2767,12 +2832,18 @@ Number of times this threat has been detected on a particular client.
 <!-- Description-Source-DDF -->
 Threat severity ID. The following list shows the supported values:
 
-| Value | Description |
-|:--|:--|
-| 0 | Unknown |
-| 1 | Low |
-| 2 | Moderate |
-| 4 | High |
+| Value | Description |.
+
+|:--|:--|.
+
+| 0 | Unknown |.
+
+| 1 | Low |.
+
+| 2 | Moderate |.
+
+| 4 | High |.
+
 | 5 | Severe |
 <!-- Device-Detections-{ThreatId}-Severity-Description-End -->
 
@@ -2785,7 +2856,7 @@ Threat severity ID. The following list shows the supported values:
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Detections-{ThreatId}-Severity-DFProperties-End -->
 
@@ -2801,7 +2872,7 @@ Threat severity ID. The following list shows the supported values:
 <!-- Device-Detections-{ThreatId}-URL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Detections-{ThreatId}-URL-Applicability-End -->
 
 <!-- Device-Detections-{ThreatId}-URL-OmaUri-Begin -->
@@ -2824,7 +2895,7 @@ URL link for additional threat information.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Detections-{ThreatId}-URL-DFProperties-End -->
 
@@ -2840,7 +2911,7 @@ URL link for additional threat information.
 <!-- Device-Health-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-Applicability-End -->
 
 <!-- Device-Health-OmaUri-Begin -->
@@ -2863,7 +2934,7 @@ An interior node to group information about Windows Defender health status.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Health-DFProperties-End -->
 
@@ -2879,7 +2950,7 @@ An interior node to group information about Windows Defender health status.
 <!-- Device-Health-ComputerState-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-ComputerState-Applicability-End -->
 
 <!-- Device-Health-ComputerState-OmaUri-Begin -->
@@ -2892,13 +2963,20 @@ An interior node to group information about Windows Defender health status.
 <!-- Description-Source-DDF -->
 Provide the current state of the device. The following list shows the supported values:
 
-| Value | Description |
-|:--|:--|
-| 0 | Clean |
-| 1 | Pending full scan |
-| 2 | Pending reboot |
-| 4 | Pending manual steps (Windows Defender is waiting for the user to take some action, such as restarting the computer or running a full scan) |
-| 8 | Pending offline scan |
+| Value | Description |.
+
+|:--|:--|.
+
+| 0 | Clean |.
+
+| 1 | Pending full scan |.
+
+| 2 | Pending reboot |.
+
+| 4 | Pending manual steps (Windows Defender is waiting for the user to take some action, such as restarting the computer or running a full scan) |.
+
+| 8 | Pending offline scan |.
+
 | 16 | Pending critical failure (Windows Defender has failed critically and an Administrator needs to investigate and take some action, such as restarting the computer or reinstalling Windows Defender) |
 <!-- Device-Health-ComputerState-Description-End -->
 
@@ -2911,7 +2989,7 @@ Provide the current state of the device. The following list shows the supported 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Health-ComputerState-DFProperties-End -->
 
@@ -2927,7 +3005,7 @@ Provide the current state of the device. The following list shows the supported 
 <!-- Device-Health-DefenderEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-DefenderEnabled-Applicability-End -->
 
 <!-- Device-Health-DefenderEnabled-OmaUri-Begin -->
@@ -2950,7 +3028,7 @@ Indicates whether the Windows Defender service is running.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get |
 <!-- Device-Health-DefenderEnabled-DFProperties-End -->
 
@@ -2966,7 +3044,7 @@ Indicates whether the Windows Defender service is running.
 <!-- Device-Health-DefenderVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-DefenderVersion-Applicability-End -->
 
 <!-- Device-Health-DefenderVersion-OmaUri-Begin -->
@@ -2989,7 +3067,7 @@ Version number of Windows Defender on the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Health-DefenderVersion-DFProperties-End -->
 
@@ -3005,7 +3083,7 @@ Version number of Windows Defender on the device.
 <!-- Device-Health-EngineVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-EngineVersion-Applicability-End -->
 
 <!-- Device-Health-EngineVersion-OmaUri-Begin -->
@@ -3028,7 +3106,7 @@ Version number of the current Windows Defender engine on the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Health-EngineVersion-DFProperties-End -->
 
@@ -3044,7 +3122,7 @@ Version number of the current Windows Defender engine on the device.
 <!-- Device-Health-FullScanOverdue-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-FullScanOverdue-Applicability-End -->
 
 <!-- Device-Health-FullScanOverdue-OmaUri-Begin -->
@@ -3055,7 +3133,7 @@ Version number of the current Windows Defender engine on the device.
 
 <!-- Device-Health-FullScanOverdue-Description-Begin -->
 <!-- Description-Source-DDF -->
-Indicates whether a Windows Defender full scan is overdue for the device. A Full scan is overdue when a scheduled Full scan did not complete successfully for 2 weeks and catchup Full scans are disabled (default).
+Indicates whether a Windows Defender full scan is overdue for the device. A Full scan is overdue when a scheduled Full scan didn't complete successfully for 2 weeks and catchup Full scans are disabled (default).
 <!-- Device-Health-FullScanOverdue-Description-End -->
 
 <!-- Device-Health-FullScanOverdue-Editable-Begin -->
@@ -3067,7 +3145,7 @@ Indicates whether a Windows Defender full scan is overdue for the device. A Full
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get |
 <!-- Device-Health-FullScanOverdue-DFProperties-End -->
 
@@ -3083,7 +3161,7 @@ Indicates whether a Windows Defender full scan is overdue for the device. A Full
 <!-- Device-Health-FullScanRequired-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-FullScanRequired-Applicability-End -->
 
 <!-- Device-Health-FullScanRequired-OmaUri-Begin -->
@@ -3106,7 +3184,7 @@ Indicates whether a Windows Defender full scan is required.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get |
 <!-- Device-Health-FullScanRequired-DFProperties-End -->
 
@@ -3122,7 +3200,7 @@ Indicates whether a Windows Defender full scan is required.
 <!-- Device-Health-FullScanSigVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-FullScanSigVersion-Applicability-End -->
 
 <!-- Device-Health-FullScanSigVersion-OmaUri-Begin -->
@@ -3145,7 +3223,7 @@ Signature version used for the last full scan of the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Health-FullScanSigVersion-DFProperties-End -->
 
@@ -3161,7 +3239,7 @@ Signature version used for the last full scan of the device.
 <!-- Device-Health-FullScanTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-FullScanTime-Applicability-End -->
 
 <!-- Device-Health-FullScanTime-OmaUri-Begin -->
@@ -3184,7 +3262,7 @@ Time of the last Windows Defender full scan of the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Health-FullScanTime-DFProperties-End -->
 
@@ -3200,7 +3278,7 @@ Time of the last Windows Defender full scan of the device.
 <!-- Device-Health-IsVirtualMachine-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Health-IsVirtualMachine-Applicability-End -->
 
 <!-- Device-Health-IsVirtualMachine-OmaUri-Begin -->
@@ -3223,7 +3301,7 @@ Indicates whether the device is a virtual machine.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get |
 <!-- Device-Health-IsVirtualMachine-DFProperties-End -->
 
@@ -3239,7 +3317,7 @@ Indicates whether the device is a virtual machine.
 <!-- Device-Health-NisEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-NisEnabled-Applicability-End -->
 
 <!-- Device-Health-NisEnabled-OmaUri-Begin -->
@@ -3262,7 +3340,7 @@ Indicates whether network protection is running.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get |
 <!-- Device-Health-NisEnabled-DFProperties-End -->
 
@@ -3278,7 +3356,7 @@ Indicates whether network protection is running.
 <!-- Device-Health-ProductStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Health-ProductStatus-Applicability-End -->
 
 <!-- Device-Health-ProductStatus-OmaUri-Begin -->
@@ -3291,33 +3369,60 @@ Indicates whether network protection is running.
 <!-- Description-Source-DDF -->
 Provide the current state of the product. This is a bitmask flag value that can represent one or multiple product states from below list. Supported product status values:
 
-| Value | Description |
-|:--|:--|
-| 0 | No status |
-| 1 (1 << 0) | Service not running |
-| 2 (1 << 1) | Service started without any malware protection engine |
-| 4 (1 << 2) | Pending full scan due to threat action |
-| 8 (1 << 3) | Pending reboot due to threat action |
-| 16 (1 << 4) | ending manual steps due to threat action |
-| 32 (1 << 5) | AV signatures out of date |
-| 64 (1 << 6) | AS signatures out of date |
-| 128 (1 << 7) | No quick scan has happened for a specified period |
-| 256 (1 << 8) | No full scan has happened for a specified period |
-| 512 (1 << 9) | System initiated scan in progress |
-| 1024 (1 << 10) | System initiated clean in progress |
-| 2048 (1 << 11) | There are samples pending submission |
-| 4096 (1 << 12) | Product running in evaluation mode |
-| 8192 (1 << 13) | Product running in non-genuine Windows mode |
-| 16384 (1 << 14) | Product expired |
-| 32768 (1 << 15) | Off-line scan required |
-| 65536 (1 << 16) | Service is shutting down as part of system shutdown |
-| 131072 (1 << 17) | Threat remediation failed critically |
-| 262144 (1 << 18) | Threat remediation failed non-critically |
-| 524288 (1 << 19) | No status flags set (well initialized state) |
-| 1048576 (1 << 20) | Platform is out of date |
-| 2097152 (1 << 21) | Platform update is in progress |
-| 4194304 (1 << 22) | Platform is about to be outdated |
-| 8388608 (1 << 23) | Signature or platform end of life is past or is impending |
+| Value | Description |.
+
+|:--|:--|.
+
+| 0 | No status |.
+
+| 1 (1 << 0) | Service not running |.
+
+| 2 (1 << 1) | Service started without any malware protection engine |.
+
+| 4 (1 << 2) | Pending full scan due to threat action |.
+
+| 8 (1 << 3) | Pending reboot due to threat action |.
+
+| 16 (1 << 4) | ending manual steps due to threat action |.
+
+| 32 (1 << 5) | AV signatures out of date |.
+
+| 64 (1 << 6) | AS signatures out of date |.
+
+| 128 (1 << 7) | No quick scan has happened for a specified period |.
+
+| 256 (1 << 8) | No full scan has happened for a specified period |.
+
+| 512 (1 << 9) | System initiated scan in progress |.
+
+| 1024 (1 << 10) | System initiated clean in progress |.
+
+| 2048 (1 << 11) | There are samples pending submission |.
+
+| 4096 (1 << 12) | Product running in evaluation mode |.
+
+| 8192 (1 << 13) | Product running in non-genuine Windows mode |.
+
+| 16384 (1 << 14) | Product expired |.
+
+| 32768 (1 << 15) | Off-line scan required |.
+
+| 65536 (1 << 16) | Service is shutting down as part of system shutdown |.
+
+| 131072 (1 << 17) | Threat remediation failed critically |.
+
+| 262144 (1 << 18) | Threat remediation failed non-critically |.
+
+| 524288 (1 << 19) | No status flags set (well initialized state) |.
+
+| 1048576 (1 << 20) | Platform is out of date |.
+
+| 2097152 (1 << 21) | Platform update is in progress |.
+
+| 4194304 (1 << 22) | Platform is about to be outdated |.
+
+| 8388608 (1 << 23) | Signature or platform end of life is past or is impending |.
+
 | 16777216 (1 << 24) | Windows SMode signatures still in use on non-Win10S install |
 <!-- Device-Health-ProductStatus-Description-End -->
 
@@ -3330,7 +3435,7 @@ Provide the current state of the product. This is a bitmask flag value that can 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-Health-ProductStatus-DFProperties-End -->
 
@@ -3363,7 +3468,7 @@ Provide the current state of the product. This is a bitmask flag value that can 
 <!-- Device-Health-QuickScanOverdue-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-QuickScanOverdue-Applicability-End -->
 
 <!-- Device-Health-QuickScanOverdue-OmaUri-Begin -->
@@ -3374,7 +3479,7 @@ Provide the current state of the product. This is a bitmask flag value that can 
 
 <!-- Device-Health-QuickScanOverdue-Description-Begin -->
 <!-- Description-Source-DDF -->
-Indicates whether a Windows Defender quick scan is overdue for the device. A Quick scan is overdue when a scheduled Quick scan did not complete successfully for 2 weeks and catchup Quick scans are disabled (default).
+Indicates whether a Windows Defender quick scan is overdue for the device. A Quick scan is overdue when a scheduled Quick scan didn't complete successfully for 2 weeks and catchup Quick scans are disabled (default).
 <!-- Device-Health-QuickScanOverdue-Description-End -->
 
 <!-- Device-Health-QuickScanOverdue-Editable-Begin -->
@@ -3386,7 +3491,7 @@ Indicates whether a Windows Defender quick scan is overdue for the device. A Qui
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get |
 <!-- Device-Health-QuickScanOverdue-DFProperties-End -->
 
@@ -3402,7 +3507,7 @@ Indicates whether a Windows Defender quick scan is overdue for the device. A Qui
 <!-- Device-Health-QuickScanSigVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-QuickScanSigVersion-Applicability-End -->
 
 <!-- Device-Health-QuickScanSigVersion-OmaUri-Begin -->
@@ -3425,7 +3530,7 @@ Signature version used for the last quick scan of the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Health-QuickScanSigVersion-DFProperties-End -->
 
@@ -3441,7 +3546,7 @@ Signature version used for the last quick scan of the device.
 <!-- Device-Health-QuickScanTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-QuickScanTime-Applicability-End -->
 
 <!-- Device-Health-QuickScanTime-OmaUri-Begin -->
@@ -3464,7 +3569,7 @@ Time of the last Windows Defender quick scan of the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Health-QuickScanTime-DFProperties-End -->
 
@@ -3480,7 +3585,7 @@ Time of the last Windows Defender quick scan of the device.
 <!-- Device-Health-RebootRequired-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-RebootRequired-Applicability-End -->
 
 <!-- Device-Health-RebootRequired-OmaUri-Begin -->
@@ -3503,7 +3608,7 @@ Indicates whether a device reboot is needed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get |
 <!-- Device-Health-RebootRequired-DFProperties-End -->
 
@@ -3519,7 +3624,7 @@ Indicates whether a device reboot is needed.
 <!-- Device-Health-RtpEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-RtpEnabled-Applicability-End -->
 
 <!-- Device-Health-RtpEnabled-OmaUri-Begin -->
@@ -3542,7 +3647,7 @@ Indicates whether real-time protection is running.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get |
 <!-- Device-Health-RtpEnabled-DFProperties-End -->
 
@@ -3558,7 +3663,7 @@ Indicates whether real-time protection is running.
 <!-- Device-Health-SignatureOutOfDate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-SignatureOutOfDate-Applicability-End -->
 
 <!-- Device-Health-SignatureOutOfDate-OmaUri-Begin -->
@@ -3581,7 +3686,7 @@ Indicates whether the Windows Defender signature is outdated.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get |
 <!-- Device-Health-SignatureOutOfDate-DFProperties-End -->
 
@@ -3597,7 +3702,7 @@ Indicates whether the Windows Defender signature is outdated.
 <!-- Device-Health-SignatureVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-SignatureVersion-Applicability-End -->
 
 <!-- Device-Health-SignatureVersion-OmaUri-Begin -->
@@ -3620,7 +3725,7 @@ Version number of the current Windows Defender signatures on the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Health-SignatureVersion-DFProperties-End -->
 
@@ -3636,7 +3741,7 @@ Version number of the current Windows Defender signatures on the device.
 <!-- Device-Health-TamperProtectionEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Health-TamperProtectionEnabled-Applicability-End -->
 
 <!-- Device-Health-TamperProtectionEnabled-OmaUri-Begin -->
@@ -3659,7 +3764,7 @@ Indicates whether the Windows Defender tamper protection feature is enabled.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get |
 <!-- Device-Health-TamperProtectionEnabled-DFProperties-End -->
 
@@ -3675,7 +3780,7 @@ Indicates whether the Windows Defender tamper protection feature is enabled.
 <!-- Device-OfflineScan-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-OfflineScan-Applicability-End -->
 
 <!-- Device-OfflineScan-OmaUri-Begin -->
@@ -3698,7 +3803,7 @@ OfflineScan action starts a Microsoft Defender Offline scan on the computer wher
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec, Get |
 | Reboot Behavior | ServerInitiated |
 <!-- Device-OfflineScan-DFProperties-End -->
@@ -3715,7 +3820,7 @@ OfflineScan action starts a Microsoft Defender Offline scan on the computer wher
 <!-- Device-RollbackEngine-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-RollbackEngine-Applicability-End -->
 
 <!-- Device-RollbackEngine-OmaUri-Begin -->
@@ -3738,7 +3843,7 @@ RollbackEngine action rolls back Microsoft Defender engine to it's last known go
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec, Get |
 | Reboot Behavior | ServerInitiated |
 <!-- Device-RollbackEngine-DFProperties-End -->
@@ -3755,7 +3860,7 @@ RollbackEngine action rolls back Microsoft Defender engine to it's last known go
 <!-- Device-RollbackPlatform-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-RollbackPlatform-Applicability-End -->
 
 <!-- Device-RollbackPlatform-OmaUri-Begin -->
@@ -3778,7 +3883,7 @@ RollbackPlatform action rolls back Microsoft Defender to it's last known good in
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec, Get |
 | Reboot Behavior | ServerInitiated |
 <!-- Device-RollbackPlatform-DFProperties-End -->
@@ -3795,7 +3900,7 @@ RollbackPlatform action rolls back Microsoft Defender to it's last known good in
 <!-- Device-Scan-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Scan-Applicability-End -->
 
 <!-- Device-Scan-OmaUri-Begin -->
@@ -3818,7 +3923,7 @@ Node that can be used to start a Windows Defender scan on a device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec, Get |
 <!-- Device-Scan-DFProperties-End -->
 
@@ -3843,7 +3948,7 @@ Node that can be used to start a Windows Defender scan on a device.
 <!-- Device-UpdateSignature-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-UpdateSignature-Applicability-End -->
 
 <!-- Device-UpdateSignature-OmaUri-Begin -->
@@ -3866,7 +3971,7 @@ Node that can be used to perform signature updates for Windows Defender.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec, Get |
 <!-- Device-UpdateSignature-DFProperties-End -->
 
@@ -3878,6 +3983,8 @@ Node that can be used to perform signature updates for Windows Defender.
 
 <!-- Defender-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Links -->
+[TAMPER-1]: /microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection
 <!-- Defender-CspMoreInfo-End -->
 
 <!-- Defender-End -->

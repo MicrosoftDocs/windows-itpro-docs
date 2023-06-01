@@ -1,5 +1,5 @@
 ---
-title: Change the TPM owner password (Windows)
+title: Change the TPM owner password 
 description: This topic for the IT professional describes how to change the password or PIN for the owner of the Trusted Platform Module (TPM) that is installed on your system.
 ms.prod: windows-client
 author: paolomatarazzo

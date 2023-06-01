@@ -1,0 +1,26 @@
+items:
+  - name: Security policy settings
+    href: ../../threat-protection/security-policy-settings/security-policy-settings.md
+  - name: Security auditing
+    href: ../../threat-protection/auditing/security-auditing-overview.md
+  - name: Secured-core configuration lock
+    href: /windows/client-management/config-lock
+  - name: Assigned Access (kiosk mode)
+    href: /windows/configuration/kiosk-methods
+  - name: Security baselines
+    href: ../../threat-protection/windows-security-configuration-framework/windows-security-baselines.md
+    items:
+    - name: Security Compliance Toolkit
+      href: ../../threat-protection/windows-security-configuration-framework/security-compliance-toolkit-10.md
+    - name: Get support
+      href: ../../threat-protection/windows-security-configuration-framework/get-support-for-security-baselines.md
+    - name: Guide to removing Microsoft Baseline Security Analyzer (MBSA)
+      href: ../../threat-protection/mbsa-removal-and-guidance.md
+  - name: More Windows security
+    items:
+    - name: Override Process Mitigation Options to help enforce app-related security policies
+      href: ../../threat-protection/override-mitigation-options-for-app-related-security-policies.md
+    - name: Use Windows Event Forwarding to help with intrusion detection
+      href: ../../threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection.md
+    - name: Block untrusted fonts in an enterprise
+      href: ../../threat-protection/block-untrusted-fonts-in-enterprise.md

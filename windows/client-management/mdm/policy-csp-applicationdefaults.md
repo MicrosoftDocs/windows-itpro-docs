@@ -4,7 +4,7 @@ description: Learn more about the ApplicationDefaults Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- DefaultAssociationsConfiguration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DefaultAssociationsConfiguration-Applicability-End -->
 
 <!-- DefaultAssociationsConfiguration-OmaUri-Begin -->
@@ -40,13 +40,14 @@ ms.topic: reference
 This policy specifies the path to a file (e.g. either stored locally or on a network location) that contains file type and protocol default application associations. This file can be created using the DISM tool.
 
 For example:
-Dism.exe /Online /Export-DefaultAppAssociations:C:\AppAssoc.txt
+
+Dism.exe /Online /Export-DefaultAppAssociations:C:\AppAssoc.txt.
 
 For more information, refer to the DISM documentation on TechNet.
 
 If this group policy is enabled and the client machine is domain-joined, the file will be processed and default associations will be applied at logon time.
 
-If the group policy is not configured, disabled, or the client machine is not domain-joined, no default associations will be applied at logon time.
+If the group policy isn't configured, disabled, or the client machine isn't domain-joined, no default associations will be applied at logon time.
 
 If the policy is enabled, disabled, or not configured, users will still be able to override default file type and protocol associations.
 <!-- DefaultAssociationsConfiguration-Description-End -->
@@ -60,7 +61,7 @@ If the policy is enabled, disabled, or not configured, users will still be able 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DefaultAssociationsConfiguration-DFProperties-End -->
 
@@ -141,7 +142,7 @@ Here's the SyncML example:
 <!-- EnableAppUriHandlers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- EnableAppUriHandlers-Applicability-End -->
 
 <!-- EnableAppUriHandlers-OmaUri-Begin -->
@@ -158,7 +159,7 @@ Enabling this policy setting enables web-to-app linking so that apps can be laun
 
 Disabling this policy disables web-to-app linking and http(s) URIs will be opened in the default browser instead of launching the associated app.
 
-If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
+If you don't configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
 <!-- EnableAppUriHandlers-Description-End -->
 
 <!-- EnableAppUriHandlers-Editable-Begin -->
@@ -170,7 +171,7 @@ If you do not configure this policy setting, the default behavior depends on the
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- EnableAppUriHandlers-DFProperties-End -->

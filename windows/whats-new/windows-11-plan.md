@@ -12,17 +12,14 @@ ms.collection:
   - tier1
 ms.technology: itpro-fundamentals
 ms.date: 12/31/2017
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
 
 # Plan for Windows 11
 
-**Applies to**
-
--   Windows 11
-
-## Deployment planning
-
 This article provides guidance to help you plan for Windows 11 in your organization.
+## Deployment planning
 
 Since Windows 11 is built on the same foundation as Windows 10, you can use the same deployment capabilities, scenarios, and tools—and the same basic deployment strategy that you use today for Windows 10. You'll need to review and update your servicing strategy to adjust for changes in [Servicing and support](#servicing-and-support) for Windows 11. 
 

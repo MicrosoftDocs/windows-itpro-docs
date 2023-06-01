@@ -7,7 +7,7 @@ ms.date: 03/31/2023
 
 # Windows Credential Theft Mitigation Guide Abstract
 
-This topic provides a summary of the Windows credential theft mitigation guide, which can be downloaded from the [Microsoft Download Center](https://download.microsoft.com/download/C/1/4/C14579CA-E564-4743-8B51-61C0882662AC/Windows%2010%20credential%20theft%20mitigation%20guide.docx).
+This article provides a summary of the Windows credential theft mitigation guide, which can be downloaded from the [Microsoft Download Center](https://download.microsoft.com/download/C/1/4/C14579CA-E564-4743-8B51-61C0882662AC/Windows%2010%20credential%20theft%20mitigation%20guide.docx).
 This guide explains how credential theft attacks occur and the strategies and countermeasures you can implement to mitigate them, following these security stages:
 
 - Identify high-value assets
@@ -51,7 +51,7 @@ Many other countermeasures are also covered, such as using Microsoft Passport an
 
 ## Detecting credential attacks
 
-This sections covers how to detect the use of stolen credentials and how to collect computer events to help you detect credential theft.
+This section covers how to detect the use of stolen credentials and how to collect computer events to help you detect credential theft.
 
 ## Responding to suspicious activity
 

@@ -1,5 +1,5 @@
 ---
-title: Account Lockout Policy (Windows 10)
+title: Account Lockout Policy 
 description: Describes the Account Lockout Policy settings and links to information about each policy setting.
 ms.assetid: eb968c28-17c5-405f-b413-50728cb7b724
 ms.reviewer: 
@@ -31,6 +31,8 @@ The following topics provide a discussion of each policy setting's implementatio
 
 >[!NOTE]
 >Account lockout settings for remote access clients can be configured separately by editing the Registry on the server that manages the remote access. For more information, see [How to configure remote access client account lockout](/troubleshoot/windows-server/networking/configure-remote-access-client-account-lockout).
+
+[!INCLUDE [account-lockout-policy](../../../../includes/licensing/account-lockout-policy.md)]
 
 ## In this section
 

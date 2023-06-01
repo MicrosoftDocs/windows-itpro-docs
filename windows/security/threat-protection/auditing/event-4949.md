@@ -1,5 +1,5 @@
 ---
-title: 4949(S) Windows Firewall settings were restored to the default values. (Windows 10)
+title: 4949(S) Windows Firewall settings were restored to the default values. 
 description: Describes security event 4949(S) Windows Firewall settings were restored to the default values.
 ms.pagetype: security
 ms.prod: windows-client

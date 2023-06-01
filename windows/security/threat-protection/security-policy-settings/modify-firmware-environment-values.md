@@ -1,5 +1,5 @@
 ---
-title: Modify firmware environment values (Windows 10)
+title: Modify firmware environment values 
 description: Describes the best practices, location, values, policy management, and security considerations for the Modify firmware environment values security policy setting.
 ms.assetid: 80bad5c4-d9eb-4e3a-a5dc-dcb742b83fca
 ms.reviewer: 

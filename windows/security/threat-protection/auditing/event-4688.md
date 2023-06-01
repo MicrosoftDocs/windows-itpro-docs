@@ -1,5 +1,5 @@
 ---
-title: 4688(S) A new process has been created. (Windows 10)
+title: 4688(S) A new process has been created. 
 description: Describes security event 4688(S) A new process has been created. This event is generated when a new process starts.
 ms.pagetype: security
 ms.prod: windows-client

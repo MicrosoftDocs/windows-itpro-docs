@@ -48,9 +48,7 @@ There are two additional tools in the Remote Server Administration Tools that ca
 - **BitLocker Drive Encryption Tools**. BitLocker Drive Encryption Tools include the command-line tools, manage-bde and repair-bde, and the BitLocker cmdlets for Windows PowerShell. Both manage-bde and the BitLocker cmdlets can be used to perform any task that can be accomplished through the
 BitLocker control panel, and they're appropriate to be used for automated deployments and other scripting scenarios. Repair-bde is provided for disaster recovery scenarios in which a BitLocker-protected drive can't be unlocked normally or by using the recovery console.
 
-## New and changed functionality
-
-To find out what's new in BitLocker for Windows, such as support for the XTS-AES encryption algorithm, see [What's new in Windows 10, versions 1507 and 1511 for IT Pros: BitLocker](/windows/whats-new/whats-new-windows-10-version-1507-and-1511#bitlocker).
+[!INCLUDE [bitlocker](../../../../includes/licensing/bitlocker-enablement.md)]
 
 ## System requirements
 

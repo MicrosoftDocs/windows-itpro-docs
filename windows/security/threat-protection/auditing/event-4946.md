@@ -1,5 +1,5 @@
 ---
-title: 4946(S) A change has been made to Windows Firewall exception list. A rule was added. (Windows 10)
+title: 4946(S) A change has been made to Windows Firewall exception list. A rule was added. 
 description: Describes security event 4946(S) A change has been made to Windows Firewall exception list. A rule was added.
 ms.pagetype: security
 ms.prod: windows-client

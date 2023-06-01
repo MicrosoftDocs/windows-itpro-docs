@@ -4,7 +4,7 @@ description: Learn more about the ADMX_DnsClient Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_DnsClient-Begin -->
 # Policy CSP - ADMX_DnsClient
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_DnsClient-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- DNS_AllowFQDNNetBiosQueries-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DNS_AllowFQDNNetBiosQueries-Applicability-End -->
 
 <!-- DNS_AllowFQDNNetBiosQueries-OmaUri-Begin -->
@@ -46,7 +43,7 @@ Specifies that NetBIOS over TCP/IP (NetBT) queries are issued for fully qualifie
 
 - If you enable this policy setting, NetBT queries will be issued for multi-label and fully qualified domain names such as "www.example.com" in addition to single-label names.
 
-- If you disable this policy setting, or if you do not configure this policy setting, NetBT queries will only be issued for single-label names such as "example" and not for multi-label and fully qualified domain names.
+- If you disable this policy setting, or if you don't configure this policy setting, NetBT queries will only be issued for single-label names such as "example" and not for multi-label and fully qualified domain names.
 <!-- DNS_AllowFQDNNetBiosQueries-Description-End -->
 
 <!-- DNS_AllowFQDNNetBiosQueries-Editable-Begin -->
@@ -58,13 +55,12 @@ Specifies that NetBIOS over TCP/IP (NetBT) queries are issued for fully qualifie
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DNS_AllowFQDNNetBiosQueries-DFProperties-End -->
 
 <!-- DNS_AllowFQDNNetBiosQueries-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -91,7 +87,7 @@ Specifies that NetBIOS over TCP/IP (NetBT) queries are issued for fully qualifie
 <!-- DNS_AppendToMultiLabelName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DNS_AppendToMultiLabelName-Applicability-End -->
 
 <!-- DNS_AppendToMultiLabelName-OmaUri-Begin -->
@@ -104,17 +100,17 @@ Specifies that NetBIOS over TCP/IP (NetBT) queries are issued for fully qualifie
 <!-- Description-Source-ADMX -->
 Specifies that computers may attach suffixes to an unqualified multi-label name before sending subsequent DNS queries if the original name query fails.
 
-A name containing dots, but not dot-terminated, is called an unqualified multi-label name, for example "server.corp" is an unqualified multi-label name. The name "server.corp.contoso.com." is an example of a fully qualified name because it contains a terminating dot.
+A name containing dots, but not dot-terminated, is called an unqualified multi-label name, for example "server.corp" is an unqualified multi-label name. The name "server.corp.contoso.com" is an example of a fully qualified name because it contains a terminating dot.
 
 For example, if attaching suffixes is allowed, an unqualified multi-label name query for "server.corp" will be queried by the DNS client first. If the query succeeds, the response is returned to the client. If the query fails, the unqualified multi-label name is appended with DNS suffixes. These suffixes can be derived from a combination of the local DNS client's primary domain suffix, a connection-specific domain suffix, and a DNS suffix search list.
 
-If attaching suffixes is allowed, and a DNS client with a primary domain suffix of "contoso.com" performs a query for "server.corp" the DNS client will send a query for "server.corp" first, and then a query for "server.corp.contoso.com." second if the first query fails.
+If attaching suffixes is allowed, and a DNS client with a primary domain suffix of "contoso.com" performs a query for "server.corp" the DNS client will send a query for "server.corp" first, and then a query for "server.corp.contoso.com" second if the first query fails.
 
 - If you enable this policy setting, suffixes are allowed to be appended to an unqualified multi-label name if the original name query fails.
 
 - If you disable this policy setting, no suffixes are appended to unqualified multi-label name queries if the original name query fails.
 
-- If you do not configure this policy setting, computers will use their local DNS client settings to determine the query behavior for unqualified multi-label names.
+- If you don't configure this policy setting, computers will use their local DNS client settings to determine the query behavior for unqualified multi-label names.
 <!-- DNS_AppendToMultiLabelName-Description-End -->
 
 <!-- DNS_AppendToMultiLabelName-Editable-Begin -->
@@ -126,13 +122,12 @@ If attaching suffixes is allowed, and a DNS client with a primary domain suffix 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DNS_AppendToMultiLabelName-DFProperties-End -->
 
 <!-- DNS_AppendToMultiLabelName-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -159,7 +154,7 @@ If attaching suffixes is allowed, and a DNS client with a primary domain suffix 
 <!-- DNS_Domain-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DNS_Domain-Applicability-End -->
 
 <!-- DNS_Domain-OmaUri-Begin -->
@@ -176,7 +171,7 @@ To use this policy setting, click Enabled, and then enter a string value represe
 
 - If you enable this policy setting, the DNS suffix that you enter will be applied to all network connections used by computers that receive this policy setting.
 
-- If you disable this policy setting, or if you do not configure this policy setting, computers will use the local or DHCP supplied connection specific DNS suffix, if configured.
+- If you disable this policy setting, or if you don't configure this policy setting, computers will use the local or DHCP supplied connection specific DNS suffix, if configured.
 <!-- DNS_Domain-Description-End -->
 
 <!-- DNS_Domain-Editable-Begin -->
@@ -188,13 +183,12 @@ To use this policy setting, click Enabled, and then enter a string value represe
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DNS_Domain-DFProperties-End -->
 
 <!-- DNS_Domain-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -220,7 +214,7 @@ To use this policy setting, click Enabled, and then enter a string value represe
 <!-- DNS_DomainNameDevolutionLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DNS_DomainNameDevolutionLevel-Applicability-End -->
 
 <!-- DNS_DomainNameDevolutionLevel-OmaUri-Begin -->
@@ -237,9 +231,9 @@ With devolution, a DNS client creates queries by appending a single-label, unqua
 
 The DNS client appends DNS suffixes to the single-label, unqualified domain name based on the state of the Append primary and connection specific DNS suffixes radio button and Append parent suffixes of the primary DNS suffix check box on the DNS tab in Advanced TCP/IP Settings for the Internet Protocol (TCP/IP) Properties dialog box.
 
-Devolution is not enabled if a global suffix search list is configured using Group Policy.
+Devolution isn't enabled if a global suffix search list is configured using Group Policy.
 
-If a global suffix search list is not configured, and the Append primary and connection specific DNS suffixes radio button is selected, the DNS client appends the following names to a single-label name when it sends DNS queries:
+If a global suffix search list isn't configured, and the Append primary and connection specific DNS suffixes radio button is selected, the DNS client appends the following names to a single-label name when it sends DNS queries:
 
 The primary DNS suffix, as specified on the Computer Name tab of the System control panel.
 
@@ -247,13 +241,13 @@ Each connection-specific DNS suffix, assigned either through DHCP or specified i
 
 For example, when a user submits a query for a single-label name such as "example," the DNS client attaches a suffix such as "microsoft.com" resulting in the query "example.microsoft.com," before sending the query to a DNS server.
 
-If a DNS suffix search list is not specified, the DNS client attaches the primary DNS suffix to a single-label name. If this query fails, the connection-specific DNS suffix is attached for a new query. If none of these queries are resolved, the client devolves the primary DNS suffix of the computer (drops the leftmost label of the primary DNS suffix), attaches this devolved primary DNS suffix to the single-label name, and submits this new query to a DNS server.
+If a DNS suffix search list isn't specified, the DNS client attaches the primary DNS suffix to a single-label name. If this query fails, the connection-specific DNS suffix is attached for a new query. If none of these queries are resolved, the client devolves the primary DNS suffix of the computer (drops the leftmost label of the primary DNS suffix), attaches this devolved primary DNS suffix to the single-label name, and submits this new query to a DNS server.
 
-For example, if the primary DNS suffix ooo.aaa.microsoft.com is attached to the non-dot-terminated single-label name "example," and the DNS query for example.ooo.aaa.microsoft.com fails, the DNS client devolves the primary DNS suffix (drops the leftmost label) till the specified devolution level, and submits a query for example.aaa.microsoft.com. If this query fails, the primary DNS suffix is devolved further if it is under specified devolution level and the query example.microsoft.com is submitted. If this query fails, devolution continues if it is under specified devolution level and the query example.microsoft.com is submitted, corresponding to a devolution level of two. The primary DNS suffix cannot be devolved beyond a devolution level of two. The devolution level can be configured using this policy setting. The default devolution level is two.
+For example, if the primary DNS suffix ooo.aaa.microsoft.com is attached to the non-dot-terminated single-label name "example," and the DNS query for example.ooo.aaa.microsoft.com fails, the DNS client devolves the primary DNS suffix (drops the leftmost label) till the specified devolution level, and submits a query for example.aaa.microsoft.com. If this query fails, the primary DNS suffix is devolved further if it's under specified devolution level and the query example.microsoft.com is submitted. If this query fails, devolution continues if it's under specified devolution level and the query example.microsoft.com is submitted, corresponding to a devolution level of two. The primary DNS suffix can't be devolved beyond a devolution level of two. The devolution level can be configured using this policy setting. The default devolution level is two.
 
 - If you enable this policy setting and DNS devolution is also enabled, DNS clients use the DNS devolution level that you specify.
 
-- If this policy setting is disabled, or if this policy setting is not configured, DNS clients use the default devolution level of two provided that DNS devolution is enabled.
+- If this policy setting is disabled, or if this policy setting isn't configured, DNS clients use the default devolution level of two provided that DNS devolution is enabled.
 <!-- DNS_DomainNameDevolutionLevel-Description-End -->
 
 <!-- DNS_DomainNameDevolutionLevel-Editable-Begin -->
@@ -265,13 +259,12 @@ For example, if the primary DNS suffix ooo.aaa.microsoft.com is attached to the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DNS_DomainNameDevolutionLevel-DFProperties-End -->
 
 <!-- DNS_DomainNameDevolutionLevel-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -298,7 +291,7 @@ For example, if the primary DNS suffix ooo.aaa.microsoft.com is attached to the 
 <!-- DNS_IdnEncoding-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DNS_IdnEncoding-Applicability-End -->
 
 <!-- DNS_IdnEncoding-OmaUri-Begin -->
@@ -311,9 +304,9 @@ For example, if the primary DNS suffix ooo.aaa.microsoft.com is attached to the 
 <!-- Description-Source-ADMX -->
 Specifies whether the DNS client should convert internationalized domain names (IDNs) to Punycode when the computer is on non-domain networks with no WINS servers configured.
 
-- If this policy setting is enabled, IDNs are not converted to Punycode.
+- If this policy setting is enabled, IDNs aren't converted to Punycode.
 
-- If this policy setting is disabled, or if this policy setting is not configured, IDNs are converted to Punycode when the computer is on non-domain networks with no WINS servers configured.
+- If this policy setting is disabled, or if this policy setting isn't configured, IDNs are converted to Punycode when the computer is on non-domain networks with no WINS servers configured.
 <!-- DNS_IdnEncoding-Description-End -->
 
 <!-- DNS_IdnEncoding-Editable-Begin -->
@@ -325,13 +318,12 @@ Specifies whether the DNS client should convert internationalized domain names (
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DNS_IdnEncoding-DFProperties-End -->
 
 <!-- DNS_IdnEncoding-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -358,7 +350,7 @@ Specifies whether the DNS client should convert internationalized domain names (
 <!-- DNS_IdnMapping-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DNS_IdnMapping-Applicability-End -->
 
 <!-- DNS_IdnMapping-OmaUri-Begin -->
@@ -373,7 +365,7 @@ Specifies whether the DNS client should convert internationalized domain names (
 
 - If this policy setting is enabled, IDNs are converted to the Nameprep form.
 
-- If this policy setting is disabled, or if this policy setting is not configured, IDNs are not converted to the Nameprep form.
+- If this policy setting is disabled, or if this policy setting isn't configured, IDNs aren't converted to the Nameprep form.
 <!-- DNS_IdnMapping-Description-End -->
 
 <!-- DNS_IdnMapping-Editable-Begin -->
@@ -385,13 +377,12 @@ Specifies whether the DNS client should convert internationalized domain names (
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DNS_IdnMapping-DFProperties-End -->
 
 <!-- DNS_IdnMapping-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -418,7 +409,7 @@ Specifies whether the DNS client should convert internationalized domain names (
 <!-- DNS_NameServer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DNS_NameServer-Applicability-End -->
 
 <!-- DNS_NameServer-OmaUri-Begin -->
@@ -435,7 +426,7 @@ To use this policy setting, click Enabled, and then enter a space-delimited list
 
 - If you enable this policy setting, the list of DNS servers is applied to all network connections used by computers that receive this policy setting.
 
-- If you disable this policy setting, or if you do not configure this policy setting, computers will use the local or DHCP supplied list of DNS servers, if configured.
+- If you disable this policy setting, or if you don't configure this policy setting, computers will use the local or DHCP supplied list of DNS servers, if configured.
 <!-- DNS_NameServer-Description-End -->
 
 <!-- DNS_NameServer-Editable-Begin -->
@@ -447,13 +438,12 @@ To use this policy setting, click Enabled, and then enter a space-delimited list
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DNS_NameServer-DFProperties-End -->
 
 <!-- DNS_NameServer-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -479,7 +469,7 @@ To use this policy setting, click Enabled, and then enter a space-delimited list
 <!-- DNS_PreferLocalResponsesOverLowerOrderDns-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DNS_PreferLocalResponsesOverLowerOrderDns-Applicability-End -->
 
 <!-- DNS_PreferLocalResponsesOverLowerOrderDns-OmaUri-Begin -->
@@ -490,11 +480,11 @@ To use this policy setting, click Enabled, and then enter a space-delimited list
 
 <!-- DNS_PreferLocalResponsesOverLowerOrderDns-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Specifies that responses from link local name resolution protocols received over a network interface that is higher in the binding order are preferred over DNS responses from network interfaces lower in the binding order. Examples of link local name resolution protocols include link local multicast name resolution (LLMNR) and NetBIOS over TCP/IP (NetBT).
+Specifies that responses from link local name resolution protocols received over a network interface that's higher in the binding order are preferred over DNS responses from network interfaces lower in the binding order. Examples of link local name resolution protocols include link local multicast name resolution (LLMNR) and NetBIOS over TCP/IP (NetBT).
 
 - If you enable this policy setting, responses from link local protocols will be preferred over DNS responses if the local responses are from a network with a higher binding order.
 
-- If you disable this policy setting, or if you do not configure this policy setting, then DNS responses from networks lower in the binding order will be preferred over responses from link local protocols received from networks higher in the binding order.
+- If you disable this policy setting, or if you don't configure this policy setting, then DNS responses from networks lower in the binding order will be preferred over responses from link local protocols received from networks higher in the binding order.
 
 > [!NOTE]
 > This policy setting is applicable only if the turn off smart multi-homed name resolution policy setting is disabled or not configured.
@@ -509,13 +499,12 @@ Specifies that responses from link local name resolution protocols received over
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DNS_PreferLocalResponsesOverLowerOrderDns-DFProperties-End -->
 
 <!-- DNS_PreferLocalResponsesOverLowerOrderDns-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -542,7 +531,7 @@ Specifies that responses from link local name resolution protocols received over
 <!-- DNS_PrimaryDnsSuffix-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DNS_PrimaryDnsSuffix-Applicability-End -->
 
 <!-- DNS_PrimaryDnsSuffix-OmaUri-Begin -->
@@ -564,7 +553,7 @@ To use this policy setting, click Enabled and enter the entire primary DNS suffi
 
 You can use this policy setting to prevent users, including local administrators, from changing the primary DNS suffix.
 
-- If you disable this policy setting, or if you do not configure this policy setting, each computer uses its local primary DNS suffix, which is usually the DNS name of Active Directory domain to which it is joined.
+- If you disable this policy setting, or if you don't configure this policy setting, each computer uses its local primary DNS suffix, which is usually the DNS name of Active Directory domain to which it's joined.
 <!-- DNS_PrimaryDnsSuffix-Description-End -->
 
 <!-- DNS_PrimaryDnsSuffix-Editable-Begin -->
@@ -576,13 +565,12 @@ You can use this policy setting to prevent users, including local administrators
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DNS_PrimaryDnsSuffix-DFProperties-End -->
 
 <!-- DNS_PrimaryDnsSuffix-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -608,7 +596,7 @@ You can use this policy setting to prevent users, including local administrators
 <!-- DNS_RegisterAdapterName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DNS_RegisterAdapterName-Applicability-End -->
 
 <!-- DNS_RegisterAdapterName-OmaUri-Begin -->
@@ -630,7 +618,7 @@ For example, with a computer name of mycomputer, a primary DNS suffix of microso
 > [!IMPORTANT]
 > This policy setting is ignored on a DNS client computer if dynamic DNS registration is disabled.
 
-- If you disable this policy setting, or if you do not configure this policy setting, a DNS client computer will not register any A and PTR resource records using a connection-specific DNS suffix.
+- If you disable this policy setting, or if you don't configure this policy setting, a DNS client computer won't register any A and PTR resource records using a connection-specific DNS suffix.
 <!-- DNS_RegisterAdapterName-Description-End -->
 
 <!-- DNS_RegisterAdapterName-Editable-Begin -->
@@ -642,13 +630,12 @@ For example, with a computer name of mycomputer, a primary DNS suffix of microso
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DNS_RegisterAdapterName-DFProperties-End -->
 
 <!-- DNS_RegisterAdapterName-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -675,7 +662,7 @@ For example, with a computer name of mycomputer, a primary DNS suffix of microso
 <!-- DNS_RegisterReverseLookup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DNS_RegisterReverseLookup-Applicability-End -->
 
 <!-- DNS_RegisterReverseLookup-OmaUri-Begin -->
@@ -694,13 +681,13 @@ By default, DNS clients configured to perform dynamic DNS registration will atte
 
 To use this policy setting, click Enabled, and then select one of the following options from the drop-down list:
 
-Do not register: Computers will not attempt to register PTR resource records.
+Don't register: Computers won't attempt to register PTR resource records.
 
-Register: Computers will attempt to register PTR resource records even if registration of the corresponding A records was not successful.
+Register: Computers will attempt to register PTR resource records even if registration of the corresponding A records wasn't successful.
 
 Register only if A record registration succeeds: Computers will attempt to register PTR resource records only if registration of the corresponding A records was successful.
 
-- If you disable this policy setting, or if you do not configure this policy setting, computers will use locally configured settings.
+- If you disable this policy setting, or if you don't configure this policy setting, computers will use locally configured settings.
 <!-- DNS_RegisterReverseLookup-Description-End -->
 
 <!-- DNS_RegisterReverseLookup-Editable-Begin -->
@@ -712,13 +699,12 @@ Register only if A record registration succeeds: Computers will attempt to regis
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DNS_RegisterReverseLookup-DFProperties-End -->
 
 <!-- DNS_RegisterReverseLookup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -744,7 +730,7 @@ Register only if A record registration succeeds: Computers will attempt to regis
 <!-- DNS_RegistrationEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DNS_RegistrationEnabled-Applicability-End -->
 
 <!-- DNS_RegistrationEnabled-OmaUri-Begin -->
@@ -757,7 +743,7 @@ Register only if A record registration succeeds: Computers will attempt to regis
 <!-- Description-Source-ADMX -->
 Specifies if DNS dynamic update is enabled. Computers configured for DNS dynamic update automatically register and update their DNS resource records with a DNS server.
 
-- If you enable this policy setting, or you do not configure this policy setting, computers will attempt to use dynamic DNS registration on all network connections that have connection-specific dynamic DNS registration enabled. For a dynamic DNS registration to be enabled on a network connection, the connection-specific configuration must allow dynamic DNS registration, and this policy setting must not be disabled.
+- If you enable this policy setting, or you don't configure this policy setting, computers will attempt to use dynamic DNS registration on all network connections that have connection-specific dynamic DNS registration enabled. For a dynamic DNS registration to be enabled on a network connection, the connection-specific configuration must allow dynamic DNS registration, and this policy setting mustn't be disabled.
 
 - If you disable this policy setting, computers may not use dynamic DNS registration for any of their network connections, regardless of the configuration for individual network connections.
 <!-- DNS_RegistrationEnabled-Description-End -->
@@ -771,13 +757,12 @@ Specifies if DNS dynamic update is enabled. Computers configured for DNS dynamic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DNS_RegistrationEnabled-DFProperties-End -->
 
 <!-- DNS_RegistrationEnabled-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -804,7 +789,7 @@ Specifies if DNS dynamic update is enabled. Computers configured for DNS dynamic
 <!-- DNS_RegistrationOverwritesInConflict-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DNS_RegistrationOverwritesInConflict-Applicability-End -->
 
 <!-- DNS_RegistrationOverwritesInConflict-OmaUri-Begin -->
@@ -817,13 +802,13 @@ Specifies if DNS dynamic update is enabled. Computers configured for DNS dynamic
 <!-- Description-Source-ADMX -->
 Specifies whether dynamic updates should overwrite existing resource records that contain conflicting IP addresses.
 
-This policy setting is designed for computers that register address (A) resource records in DNS zones that do not use Secure Dynamic Updates. Secure Dynamic Update preserves ownership of resource records and does not allow a DNS client to overwrite records that are registered by other computers.
+This policy setting is designed for computers that register address (A) resource records in DNS zones that don't use Secure Dynamic Updates. Secure Dynamic Update preserves ownership of resource records and doesn't allow a DNS client to overwrite records that are registered by other computers.
 
-During dynamic update of resource records in a zone that does not use Secure Dynamic Updates, an A resource record might exist that associates the client's host name with an IP address different than the one currently in use by the client. By default, the DNS client attempts to replace the existing A resource record with an A resource record that has the client's current IP address.
+During dynamic update of resource records in a zone that doesn't use Secure Dynamic Updates, an A resource record might exist that associates the client's host name with an IP address different than the one currently in use by the client. By default, the DNS client attempts to replace the existing A resource record with an A resource record that has the client's current IP address.
 
-- If you enable this policy setting or if you do not configure this policy setting, DNS clients maintain their default behavior and will attempt to replace conflicting A resource records during dynamic update.
+- If you enable this policy setting or if you don't configure this policy setting, DNS clients maintain their default behavior and will attempt to replace conflicting A resource records during dynamic update.
 
-- If you disable this policy setting, existing A resource records that contain conflicting IP addresses will not be replaced during a dynamic update, and an error will be recorded in Event Viewer.
+- If you disable this policy setting, existing A resource records that contain conflicting IP addresses won't be replaced during a dynamic update, and an error will be recorded in Event Viewer.
 <!-- DNS_RegistrationOverwritesInConflict-Description-End -->
 
 <!-- DNS_RegistrationOverwritesInConflict-Editable-Begin -->
@@ -835,13 +820,12 @@ During dynamic update of resource records in a zone that does not use Secure Dyn
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DNS_RegistrationOverwritesInConflict-DFProperties-End -->
 
 <!-- DNS_RegistrationOverwritesInConflict-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -868,7 +852,7 @@ During dynamic update of resource records in a zone that does not use Secure Dyn
 <!-- DNS_RegistrationRefreshInterval-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DNS_RegistrationRefreshInterval-Applicability-End -->
 
 <!-- DNS_RegistrationRefreshInterval-OmaUri-Begin -->
@@ -881,7 +865,7 @@ During dynamic update of resource records in a zone that does not use Secure Dyn
 <!-- Description-Source-ADMX -->
 Specifies the interval used by DNS clients to refresh registration of A and PTR resource. This policy setting only applies to computers performing dynamic DNS updates.
 
-Computers configured to perform dynamic DNS registration of A and PTR resource records periodically reregister their records with DNS servers, even if the record has not changed. This reregistration is required to indicate to DNS servers that records are current and should not be automatically removed (scavenged) when a DNS server is configured to delete stale records.
+Computers configured to perform dynamic DNS registration of A and PTR resource records periodically reregister their records with DNS servers, even if the record hasn't changed. This reregistration is required to indicate to DNS servers that records are current and shouldn't be automatically removed (scavenged) when a DNS server is configured to delete stale records.
 
 > [!WARNING]
 > If record scavenging is enabled on the zone, the value of this policy setting should never be longer than the value of the DNS zone refresh interval. Configuring the registration refresh interval to be longer than the refresh interval of the DNS zone might result in the undesired deletion of A and PTR resource records.
@@ -890,7 +874,7 @@ To specify the registration refresh interval, click Enabled and then enter a val
 
 - If you enable this policy setting, registration refresh interval that you specify will be applied to all network connections used by computers that receive this policy setting.
 
-- If you disable this policy setting, or if you do not configure this policy setting, computers will use the local or DHCP supplied setting. By default, client computers configured with a static IP address attempt to update their DNS resource records once every 24 hours and DHCP clients will attempt to update their DNS resource records when a DHCP lease is granted or renewed.
+- If you disable this policy setting, or if you don't configure this policy setting, computers will use the local or DHCP supplied setting. By default, client computers configured with a static IP address attempt to update their DNS resource records once every 24 hours and DHCP clients will attempt to update their DNS resource records when a DHCP lease is granted or renewed.
 <!-- DNS_RegistrationRefreshInterval-Description-End -->
 
 <!-- DNS_RegistrationRefreshInterval-Editable-Begin -->
@@ -902,13 +886,12 @@ To specify the registration refresh interval, click Enabled and then enter a val
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DNS_RegistrationRefreshInterval-DFProperties-End -->
 
 <!-- DNS_RegistrationRefreshInterval-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -934,7 +917,7 @@ To specify the registration refresh interval, click Enabled and then enter a val
 <!-- DNS_RegistrationTtl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DNS_RegistrationTtl-Applicability-End -->
 
 <!-- DNS_RegistrationTtl-OmaUri-Begin -->
@@ -951,7 +934,7 @@ To specify the TTL, click Enabled and then enter a value in seconds (for example
 
 - If you enable this policy setting, the TTL value that you specify will be applied to DNS resource records registered for all network connections used by computers that receive this policy setting.
 
-- If you disable this policy setting, or if you do not configure this policy setting, computers will use the TTL settings specified in DNS. By default, the TTL is 1200 seconds (20 minutes).
+- If you disable this policy setting, or if you don't configure this policy setting, computers will use the TTL settings specified in DNS. By default, the TTL is 1200 seconds (20 minutes).
 <!-- DNS_RegistrationTtl-Description-End -->
 
 <!-- DNS_RegistrationTtl-Editable-Begin -->
@@ -963,13 +946,12 @@ To specify the TTL, click Enabled and then enter a value in seconds (for example
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DNS_RegistrationTtl-DFProperties-End -->
 
 <!-- DNS_RegistrationTtl-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -995,7 +977,7 @@ To specify the TTL, click Enabled and then enter a value in seconds (for example
 <!-- DNS_SearchList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DNS_SearchList-Applicability-End -->
 
 <!-- DNS_SearchList-OmaUri-Begin -->
@@ -1008,15 +990,15 @@ To specify the TTL, click Enabled and then enter a value in seconds (for example
 <!-- Description-Source-ADMX -->
 Specifies the DNS suffixes to attach to an unqualified single-label name before submission of a DNS query for that name.
 
-An unqualified single-label name contains no dots. The name "example" is a single-label name. This is different from a fully qualified domain name such as "example.microsoft.com."
+An unqualified single-label name contains no dots. The name "example" is a single-label name. This is different from a fully qualified domain name such as "example.microsoft.com".
 
-Client computers that receive this policy setting will attach one or more suffixes to DNS queries for a single-label name. For example, a DNS query for the single-label name "example" will be modified to "example.microsoft.com" before sending the query to a DNS server if this policy setting is enabled with a suffix of "microsoft.com."
+Client computers that receive this policy setting will attach one or more suffixes to DNS queries for a single-label name. For example, a DNS query for the single-label name "example" will be modified to "example.microsoft.com" before sending the query to a DNS server if this policy setting is enabled with a suffix of "microsoft.com".
 
 To use this policy setting, click Enabled, and then enter a string value representing the DNS suffixes that should be appended to single-label names. You must specify at least one suffix. Use a comma-delimited string, such as "microsoft.com,serverua.microsoft.com,office.microsoft.com" to specify multiple suffixes.
 
 - If you enable this policy setting, one DNS suffix is attached at a time for each query. If a query is unsuccessful, a new DNS suffix is added in place of the failed suffix, and this new query is submitted. The values are used in the order they appear in the string, starting with the leftmost value and proceeding to the right until a query is successful or all suffixes are tried.
 
-- If you disable this policy setting, or if you do not configure this policy setting, the primary DNS suffix and network connection-specific DNS suffixes are appended to the unqualified queries.
+- If you disable this policy setting, or if you don't configure this policy setting, the primary DNS suffix and network connection-specific DNS suffixes are appended to the unqualified queries.
 <!-- DNS_SearchList-Description-End -->
 
 <!-- DNS_SearchList-Editable-Begin -->
@@ -1028,13 +1010,12 @@ To use this policy setting, click Enabled, and then enter a string value represe
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DNS_SearchList-DFProperties-End -->
 
 <!-- DNS_SearchList-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1060,7 +1041,7 @@ To use this policy setting, click Enabled, and then enter a string value represe
 <!-- DNS_SmartMultiHomedNameResolution-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DNS_SmartMultiHomedNameResolution-Applicability-End -->
 
 <!-- DNS_SmartMultiHomedNameResolution-OmaUri-Begin -->
@@ -1073,9 +1054,9 @@ To use this policy setting, click Enabled, and then enter a string value represe
 <!-- Description-Source-ADMX -->
 Specifies that a multi-homed DNS client should optimize name resolution across networks. The setting improves performance by issuing parallel DNS, link local multicast name resolution (LLMNR) and NetBIOS over TCP/IP (NetBT) queries across all networks. In the event that multiple positive responses are received, the network binding order is used to determine which response to accept.
 
-- If you enable this policy setting, the DNS client will not perform any optimizations. DNS queries will be issued across all networks first. LLMNR queries will be issued if the DNS queries fail, followed by NetBT queries if LLMNR queries fail.
+- If you enable this policy setting, the DNS client won't perform any optimizations. DNS queries will be issued across all networks first. LLMNR queries will be issued if the DNS queries fail, followed by NetBT queries if LLMNR queries fail.
 
-- If you disable this policy setting, or if you do not configure this policy setting, name resolution will be optimized when issuing DNS, LLMNR and NetBT queries.
+- If you disable this policy setting, or if you don't configure this policy setting, name resolution will be optimized when issuing DNS, LLMNR and NetBT queries.
 <!-- DNS_SmartMultiHomedNameResolution-Description-End -->
 
 <!-- DNS_SmartMultiHomedNameResolution-Editable-Begin -->
@@ -1087,13 +1068,12 @@ Specifies that a multi-homed DNS client should optimize name resolution across n
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DNS_SmartMultiHomedNameResolution-DFProperties-End -->
 
 <!-- DNS_SmartMultiHomedNameResolution-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1120,7 +1100,7 @@ Specifies that a multi-homed DNS client should optimize name resolution across n
 <!-- DNS_SmartProtocolReorder-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DNS_SmartProtocolReorder-Applicability-End -->
 
 <!-- DNS_SmartProtocolReorder-OmaUri-Begin -->
@@ -1135,7 +1115,7 @@ Specifies that the DNS client should prefer responses from link local name resol
 
 - If you enable this policy setting, the DNS client will prefer DNS responses, followed by LLMNR, followed by NetBT for all networks.
 
-- If you disable this policy setting, or if you do not configure this policy setting, the DNS client will prefer link local responses for flat name queries on non-domain networks.
+- If you disable this policy setting, or if you don't configure this policy setting, the DNS client will prefer link local responses for flat name queries on non-domain networks.
 
 > [!NOTE]
 > This policy setting is applicable only if the turn off smart multi-homed name resolution policy setting is disabled or not configured.
@@ -1150,13 +1130,12 @@ Specifies that the DNS client should prefer responses from link local name resol
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DNS_SmartProtocolReorder-DFProperties-End -->
 
 <!-- DNS_SmartProtocolReorder-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1183,7 +1162,7 @@ Specifies that the DNS client should prefer responses from link local name resol
 <!-- DNS_UpdateSecurityLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DNS_UpdateSecurityLevel-Applicability-End -->
 
 <!-- DNS_UpdateSecurityLevel-OmaUri-Begin -->
@@ -1206,7 +1185,7 @@ Only secure - computers send only secure dynamic updates.
 
 - If you enable this policy setting, computers that attempt to send dynamic DNS updates will use the security level that you specify in this policy setting.
 
-- If you disable this policy setting, or if you do not configure this policy setting, computers will use local settings. By default, DNS clients attempt to use unsecured dynamic update first. If an unsecured update is refused, clients try to use secure update.
+- If you disable this policy setting, or if you don't configure this policy setting, computers will use local settings. By default, DNS clients attempt to use unsecured dynamic update first. If an unsecured update is refused, clients try to use secure update.
 <!-- DNS_UpdateSecurityLevel-Description-End -->
 
 <!-- DNS_UpdateSecurityLevel-Editable-Begin -->
@@ -1218,13 +1197,12 @@ Only secure - computers send only secure dynamic updates.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DNS_UpdateSecurityLevel-DFProperties-End -->
 
 <!-- DNS_UpdateSecurityLevel-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1250,7 +1228,7 @@ Only secure - computers send only secure dynamic updates.
 <!-- DNS_UpdateTopLevelDomainZones-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DNS_UpdateTopLevelDomainZones-Applicability-End -->
 
 <!-- DNS_UpdateTopLevelDomainZones-OmaUri-Begin -->
@@ -1261,13 +1239,13 @@ Only secure - computers send only secure dynamic updates.
 
 <!-- DNS_UpdateTopLevelDomainZones-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Specifies if computers may send dynamic updates to zones with a single label name. These zones are also known as top-level domain zones, for example: "com."
+Specifies if computers may send dynamic updates to zones with a single label name. These zones are also known as top-level domain zones, for example: "com".
 
-By default, a DNS client that is configured to perform dynamic DNS update will update the DNS zone that is authoritative for its DNS resource records unless the authoritative zone is a top-level domain or root zone.
+By default, a DNS client that's configured to perform dynamic DNS update will update the DNS zone that's authoritative for its DNS resource records unless the authoritative zone is a top-level domain or root zone.
 
-- If you enable this policy setting, computers send dynamic updates to any zone that is authoritative for the resource records that the computer needs to update, except the root zone.
+- If you enable this policy setting, computers send dynamic updates to any zone that's authoritative for the resource records that the computer needs to update, except the root zone.
 
-- If you disable this policy setting, or if you do not configure this policy setting, computers do not send dynamic updates to the root zone or top-level domain zones that are authoritative for the resource records that the computer needs to update.
+- If you disable this policy setting, or if you don't configure this policy setting, computers don't send dynamic updates to the root zone or top-level domain zones that are authoritative for the resource records that the computer needs to update.
 <!-- DNS_UpdateTopLevelDomainZones-Description-End -->
 
 <!-- DNS_UpdateTopLevelDomainZones-Editable-Begin -->
@@ -1279,13 +1257,12 @@ By default, a DNS client that is configured to perform dynamic DNS update will u
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DNS_UpdateTopLevelDomainZones-DFProperties-End -->
 
 <!-- DNS_UpdateTopLevelDomainZones-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1312,7 +1289,7 @@ By default, a DNS client that is configured to perform dynamic DNS update will u
 <!-- DNS_UseDomainNameDevolution-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DNS_UseDomainNameDevolution-Applicability-End -->
 
 <!-- DNS_UseDomainNameDevolution-OmaUri-Begin -->
@@ -1329,9 +1306,9 @@ With devolution, a DNS client creates queries by appending a single-label, unqua
 
 The DNS client appends DNS suffixes to the single-label, unqualified domain name based on the state of the Append primary and connection specific DNS suffixes radio button and Append parent suffixes of the primary DNS suffix check box on the DNS tab in Advanced TCP/IP Settings for the Internet Protocol (TCP/IP) Properties dialog box.
 
-Devolution is not enabled if a global suffix search list is configured using Group Policy.
+Devolution isn't enabled if a global suffix search list is configured using Group Policy.
 
-If a global suffix search list is not configured, and the Append primary and connection specific DNS suffixes radio button is selected, the DNS client appends the following names to a single-label name when it sends DNS queries:
+If a global suffix search list isn't configured, and the Append primary and connection specific DNS suffixes radio button is selected, the DNS client appends the following names to a single-label name when it sends DNS queries:
 
 The primary DNS suffix, as specified on the Computer Name tab of the System control panel.
 
@@ -1339,13 +1316,13 @@ Each connection-specific DNS suffix, assigned either through DHCP or specified i
 
 For example, when a user submits a query for a single-label name such as "example," the DNS client attaches a suffix such as "microsoft.com" resulting in the query "example.microsoft.com," before sending the query to a DNS server.
 
-If a DNS suffix search list is not specified, the DNS client attaches the primary DNS suffix to a single-label name. If this query fails, the connection-specific DNS suffix is attached for a new query. If none of these queries are resolved, the client devolves the primary DNS suffix of the computer (drops the leftmost label of the primary DNS suffix), attaches this devolved primary DNS suffix to the single-label name, and submits this new query to a DNS server.
+If a DNS suffix search list isn't specified, the DNS client attaches the primary DNS suffix to a single-label name. If this query fails, the connection-specific DNS suffix is attached for a new query. If none of these queries are resolved, the client devolves the primary DNS suffix of the computer (drops the leftmost label of the primary DNS suffix), attaches this devolved primary DNS suffix to the single-label name, and submits this new query to a DNS server.
 
-For example, if the primary DNS suffix ooo.aaa.microsoft.com is attached to the non-dot-terminated single-label name "example," and the DNS query for example.ooo.aaa.microsoft.com fails, the DNS client devolves the primary DNS suffix (drops the leftmost label) till the specified devolution level, and submits a query for example.aaa.microsoft.com. If this query fails, the primary DNS suffix is devolved further if it is under specified devolution level and the query example.microsoft.com is submitted. If this query fails, devolution continues if it is under specified devolution level and the query example.microsoft.com is submitted, corresponding to a devolution level of two. The primary DNS suffix cannot be devolved beyond a devolution level of two. The devolution level can be configured using the primary DNS suffix devolution level policy setting. The default devolution level is two.
+For example, if the primary DNS suffix ooo.aaa.microsoft.com is attached to the non-dot-terminated single-label name "example," and the DNS query for example.ooo.aaa.microsoft.com fails, the DNS client devolves the primary DNS suffix (drops the leftmost label) till the specified devolution level, and submits a query for example.aaa.microsoft.com. If this query fails, the primary DNS suffix is devolved further if it's under specified devolution level and the query example.microsoft.com is submitted. If this query fails, devolution continues if it's under specified devolution level and the query example.microsoft.com is submitted, corresponding to a devolution level of two. The primary DNS suffix can't be devolved beyond a devolution level of two. The devolution level can be configured using the primary DNS suffix devolution level policy setting. The default devolution level is two.
 
-- If you enable this policy setting, or if you do not configure this policy setting, DNS clients attempt to resolve single-label names using concatenations of the single-label name to be resolved and the devolved primary DNS suffix.
+- If you enable this policy setting, or if you don't configure this policy setting, DNS clients attempt to resolve single-label names using concatenations of the single-label name to be resolved and the devolved primary DNS suffix.
 
-- If you disable this policy setting, DNS clients do not attempt to resolve names that are concatenations of the single-label name to be resolved and the devolved primary DNS suffix.
+- If you disable this policy setting, DNS clients don't attempt to resolve names that are concatenations of the single-label name to be resolved and the devolved primary DNS suffix.
 <!-- DNS_UseDomainNameDevolution-Description-End -->
 
 <!-- DNS_UseDomainNameDevolution-Editable-Begin -->
@@ -1357,13 +1334,12 @@ For example, if the primary DNS suffix ooo.aaa.microsoft.com is attached to the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DNS_UseDomainNameDevolution-DFProperties-End -->
 
 <!-- DNS_UseDomainNameDevolution-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1390,7 +1366,7 @@ For example, if the primary DNS suffix ooo.aaa.microsoft.com is attached to the 
 <!-- Turn_Off_Multicast-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Turn_Off_Multicast-Applicability-End -->
 
 <!-- Turn_Off_Multicast-OmaUri-Begin -->
@@ -1403,11 +1379,11 @@ For example, if the primary DNS suffix ooo.aaa.microsoft.com is attached to the 
 <!-- Description-Source-ADMX -->
 Specifies that link local multicast name resolution (LLMNR) is disabled on client computers.
 
-LLMNR is a secondary name resolution protocol. With LLMNR, queries are sent using multicast over a local network link on a single subnet from a client computer to another client computer on the same subnet that also has LLMNR enabled. LLMNR does not require a DNS server or DNS client configuration, and provides name resolution in scenarios in which conventional DNS name resolution is not possible.
+LLMNR is a secondary name resolution protocol. With LLMNR, queries are sent using multicast over a local network link on a single subnet from a client computer to another client computer on the same subnet that also has LLMNR enabled. LLMNR doesn't require a DNS server or DNS client configuration, and provides name resolution in scenarios in which conventional DNS name resolution isn't possible.
 
 - If you enable this policy setting, LLMNR will be disabled on all available network adapters on the client computer.
 
-- If you disable this policy setting, or you do not configure this policy setting, LLMNR will be enabled on all available network adapters.
+- If you disable this policy setting, or you don't configure this policy setting, LLMNR will be enabled on all available network adapters.
 <!-- Turn_Off_Multicast-Description-End -->
 
 <!-- Turn_Off_Multicast-Editable-Begin -->
@@ -1419,13 +1395,12 @@ LLMNR is a secondary name resolution protocol. With LLMNR, queries are sent usin
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Turn_Off_Multicast-DFProperties-End -->
 
 <!-- Turn_Off_Multicast-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

@@ -26,11 +26,9 @@ To summarize, config lock:
 
 ## Configuration Flow
 
-After a secured-core PC reaches the desktop, config lock will prevent configuration drift by detecting if the device is a secured-core PC or not. When the device isn't a secured-core PC, the lock won't apply. If the device is a secured-core PC, config lock will lock the policies listed under [List of locked policies](#list-of-locked-policies).
+After a [secured-core PCs](/windows-hardware/design/device-experiences/oem-highly-secure) reaches the desktop, config lock will prevent configuration drift by detecting if the device is a secured-core PC or not. When the device isn't a secured-core PC, the lock won't apply. If the device is a secured-core PC, config lock will lock the policies listed under [List of locked policies](#list-of-locked-policies).
 
-## System Requirements
-
-Config lock will be available for all Windows Professional and Enterprise Editions running on [secured-core PCs](/windows-hardware/design/device-experiences/oem-highly-secure).
+[!INCLUDE [secured-core-configuration-lock](../../includes/licensing/secured-core-configuration-lock.md)]
 
 ## Enabling config lock using Microsoft Intune
 
