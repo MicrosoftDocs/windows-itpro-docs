@@ -3173,9 +3173,7 @@ If you enable this setting, the system removes the Map Network Drive and Disconn
 This setting doesn't prevent users from connecting to another computer by typing the name of a shared folder in the Run dialog box.
 
 > [!NOTE]
-> 
-
-This setting was documented incorrectly on the Explain tab in Group Policy for Windows 2000. The Explain tab states incorrectly that this setting prevents users from connecting and disconnecting drives.
+> This setting was documented incorrectly on the Explain tab in Group Policy for Windows 2000. The Explain tab states incorrectly that this setting prevents users from connecting and disconnecting drives.
 
 > [!NOTE]
 > It's a requirement for third-party applications with Windows 2000 or later certification to adhere to this setting.
