@@ -100,7 +100,7 @@ items:
     - name: Disable allowing users to select when a password is required when resuming from connected standby for PDE
       href: ../../information-protection/personal-data-encryption/pde-in-intune/intune-disable-password-connected-standby.md
 - name: Configure S/MIME for Windows
-  href: ../../identity-protection/configure-s-mime.md
+  href: configure-s-mime.md
 - name: Windows Information Protection (WIP)
   href: ../../information-protection/windows-information-protection/protect-enterprise-data-using-wip.md
   items:
