@@ -16,13 +16,13 @@ PIN reset on Azure AD-joined devices uses a flow called *web sign-in* to authent
 
 The user can launch the PIN reset flow from the lock screen using the *I forgot my PIN* link in the PIN credential provider. Selecting the link launches a full screen UI for the PIN experience on Azure AD Join devices. Typically, the UI displays an Azure authentication page, where the user authenticates using Azure AD credentials and completes MFA.
 
-In federated environments, authentication may be configured to route to AD FS or a third-party identity provider. If the PIN reset flow is launched and attempts to navigate to a federated identity provider server page, it fails and display the *We can't open that page right now* error, if the domain for the server page isn't included in an allowlist.
+In federated environments, authentication may be configured to route to AD FS or a third-party identity provider. If the PIN reset flow is launched and attempts to navigate to a federated identity provider server page, it fails and displays the *We can't open that page right now* error, if the domain for the server page isn't included in an allowlist.
 
-If you're a customer of *Azure US Government* cloud, PIN reset also attempts to navigate to a domain that isn't included in the default allowlist. The result is the *We can't open that page right now* page.
+If you're a customer of *Azure US Government* cloud, PIN reset also attempts to navigate to a domain that isn't included in the default allowlist. The result is the message *We can't open that page right now*.
 
 ### Resolve PIN Reset allowed domains issue
 
-To resolve the error, you can configure a list of allowed domains for PIN reset, using the [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls) policy. For information on how to configure the policy, see [PIN Reset - Configure Web Sign-in Allowed URLs for Third Party Identity Providers on Azure AD Joined Devices](hello-feature-pin-reset.md#configure-web-sign-in-allowed-urls-for-third-party-identity-providers-on-azure-ad-joined-devices).
+To resolve the error, you can configure a list of allowed domains for PIN reset using the [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls) policy. For information on how to configure the policy, see [PIN Reset - Configure Web Sign-in Allowed URLs for Third Party Identity Providers on Azure AD Joined Devices](hello-feature-pin-reset.md#configure-web-sign-in-allowed-urls-for-third-party-identity-providers-on-azure-ad-joined-devices).
 
 ## Hybrid key trust sign in broken due to user public key deletion
 
@@ -36,13 +36,13 @@ In Hybrid key trust deployments with domain controllers running certain builds o
 
 ### Identify user public key deletion issue
 
-After the user provisions a Windows Hello for Business credential in a hybrid key trust environment, the key must sync from Azure AD to AD during an Azure AD Connect sync cycle. The user's public is written to the `msDS-KeyCredentialLink` attribute of the user object.
+After the user provisions a Windows Hello for Business credential in a hybrid key trust environment, the key must sync from Azure AD to AD during an Azure AD Connect sync cycle. The user's public key is written to the `msDS-KeyCredentialLink` attribute of the user object.
 
-Before the user's Windows Hello for Business key is synced, sign-ins with Windows Hello for Business fails with the error message, *That option is temporarily unavailable. For now, please use a different method to sign in.*. After the sync is successful, the user should be able to sign in and unlock with their PIN or enrolled biometrics.
+Before the user's Windows Hello for Business key syncs, sign-ins with Windows Hello for Business fail with the error message *That option is temporarily unavailable. For now, please use a different method to sign in.* After the key syncs successfully, the user can sign in and unlock with their PIN or enrolled biometrics.
 
 In environments with the issue, after the first sign-in with Windows Hello for Business and provisioning is complete, the next sign-in attempt fails. In environments where domain controllers are running a mix of builds, some users may be impacted by the issue, and subsequent sign in attempts may be sent to different domain controllers. The result is intermittent sign-in failures.
 
-After the initial sign in attempt, the user's Windows Hello for Business public key is deleted from the `msDS-KeyCredentialLink attribute`. You can verify the deletion by querying a user's `msDS-KeyCredentialLink` attribute before and after sign-in. The `msDS-KeyCredentialLink` can be queried in AD using [Get-ADUser](/powershell/module/activedirectory/get-aduser) and specifying `msds-keycredentiallink` for the `-Properties` parameter.
+After the initial sign-in attempt, the user's Windows Hello for Business public key is deleted from the `msDS-KeyCredentialLink attribute`. You can verify the deletion by querying a user's `msDS-KeyCredentialLink` attribute before and after sign-in. You can query the `msDS-KeyCredentialLink` in AD using [Get-ADUser](/powershell/module/activedirectory/get-aduser) and specifying `msds-keycredentiallink` for the `-Properties` parameter.
 
 ### Resolve user public key deletion issue
 
@@ -55,7 +55,7 @@ Applies to:
 - Azure AD joined key trust deployments
 - Third-party certificate authority (CA) issuing domain controller certificates
 
-Windows Hello for Business uses smart card-based authentication for many operations. Smart card has special guidelines when using a third-party CA for certificate issuance, some of which apply to the domain controllers. Not all Windows Hello for Business deployment types require these configurations. Accessing on-premises resources from an Azure AD Joined device does require special configuration when using a third-party CA to issue domain controller certificates.
+Windows Hello for Business uses smart-card based authentication for many operations. This type of authentication has special guidelines when using a third-party CA for certificate issuance, some of which apply to the domain controllers. Not all Windows Hello for Business deployment types require these configurations. Accessing on-premises resources from an Azure AD Joined device does require special configuration when using a third-party CA to issue domain controller certificates.
 
 For more information, read [Guidelines for enabling smart card sign in with third-party certification authorities](/troubleshoot/windows-server/windows-security/enabling-smart-card-logon-third-party-certification-authorities).
 
@@ -102,7 +102,7 @@ Domain controllers running early versions of Windows Server 2019 have an issue t
 
 ### Identify Windows Server 2019 key trust authentication issue
 
-On the client, authentication with Windows Hello for Business fails with the error message, *"That option is temporarily unavailable. For now, please use a different method to sign in."*
+On the client, authentication with Windows Hello for Business fails with the error message, *That option is temporarily unavailable. For now, please use a different method to sign in.*
 
 The error is presented on hybrid Azure AD-joined devices in key trust deployments after Windows Hello for Business is provisioned, but before a user's key is synced from Azure AD to AD. If a user's key isn't synced from Azure AD and the `msDS-keycredentiallink` attribute on the user object in AD is populated for NGC, then it's possible that the error occurs.
 
@@ -189,6 +189,6 @@ This issue is fixed in Windows Server, version 1903 and later. For Windows Serve
    (Get-AdfsApplicationPermission -ServerRoleIdentifiers 'http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope' | ?{ $_.ClientRoleIdentifier -eq '38aa3b87-a06d-4817-b275-7a316988d93b' }).ObjectIdentifier
    ```
 
-1. Execute the command `Set-AdfsApplicationPermission -TargetIdentifier <ObjectIdentifier from step 5> -AddScope 'ugs'`
-1. Restart the AD FS service
-1. On the client: Restart the client. User should be prompted to provision Windows Hello for Business
+1. Execute the command `Set-AdfsApplicationPermission -TargetIdentifier <ObjectIdentifier from step 5> -AddScope 'ugs'`.
+1. Restart the AD FS service.
+1. On the client: Restart the client. The user should be prompted to provision Windows Hello for Business.
