@@ -108,7 +108,7 @@ Set up School PCs uses the Universal app install policy to install school-releva
 
 The time it takes to install a package on a device depends on the:  
 
-- Strength of network connection 
+- Strength of network connection
 - Number of policies and apps within the package
 - Other configurations made to the device  
 
@@ -119,7 +119,7 @@ Review the table below to estimate your expected provisioning time. A package th
 | Default settings only | Wi-Fi | 3 to 5 minutes |
 | Default settings + apps | Wi-Fi | 10 to 15 minutes |
 | Default settings + remove preinstalled apps (CleanPC) | Wi-Fi | 60 minutes |
-| Default settings + other settings (Not CleanPC) | Wi-Fi | 5 minutes |  | 
+| Default settings + other settings (Not CleanPC) | Wi-Fi | 5 minutes |
 
 ## Next steps
 
@@ -127,6 +127,6 @@ Learn more about setting up devices with the Set up School PCs app.
 
 - [Azure AD Join with Set up School PCs](set-up-school-pcs-azure-ad-join.md)
 - [Set up School PCs technical reference](set-up-school-pcs-technical.md)
-- [Set up Windows 10 devices for education](set-up-windows-10.md) 
+- [Set up Windows 10 devices for education](set-up-windows-10.md)
 
 When you're ready to create and apply your provisioning package, see [Use Set up School PCs app](use-set-up-school-pcs-app.md).
