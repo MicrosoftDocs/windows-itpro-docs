@@ -4,7 +4,7 @@ description: Learn more about the Connectivity Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 06/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -65,7 +65,6 @@ Allows the user to enable Bluetooth or restrict access.
 | Value | Description |
 |:--|:--|
 | 0 | Disallow Bluetooth. If this is set to 0, the radio in the Bluetooth control panel will be grayed out and the user won't be able to turn Bluetooth on. |
-| 1 | Reserved. If this is set to 1, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on. |
 | 2 (Default) | Allow Bluetooth. If this is set to 2, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on. |
 <!-- AllowBluetooth-AllowedValues-End -->
 
