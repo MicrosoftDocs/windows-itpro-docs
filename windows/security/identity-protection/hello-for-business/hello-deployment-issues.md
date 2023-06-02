@@ -63,7 +63,7 @@ For more information, read [Guidelines for enabling smart card sign in with thir
 
 The issue can be identified using network traces or Kerberos logging from the client. In the network trace, the client fails to place a `TGS_REQ` request when a user attempts to access a resource. On the client, it can be observed in the Kerberos operation event log under `Application and Services/Microsoft/Windows/Security-Kerberos/Operational`. The logs are disabled by default. The failure event for this case includes the following information:
 
-```cmd
+```Console
 Log Name:      Microsoft-Windows-Kerberos/Operational
 Source:        Microsoft-Windows-Security-Kerberos
 Event ID:      107
@@ -126,7 +126,7 @@ AD FS running on Windows Server 2019 fails to complete device authentication due
 
 The provisioning experience for Windows Hello for Business launches if the prerequisite checks are successful. The result of the provisioningAdmin checks is available in event logs under **Microsoft-Windows-User Device Registration**. If provisioning is blocked because device authentication doesn't succeed, event ID *362* is logged stating *User has successfully authenticated to the enterprise STS: No*.
 
-```console
+```Console
 Log Name:      Microsoft-Windows-User Device Registration/Admin
 Source:        Microsoft-Windows-User Device Registration
 Date:          <Date and time>
@@ -156,7 +156,7 @@ If a device recently joined a domain, there may be a delay before the device aut
 
 If the AD FS scope issue is present, event logs on the AD FS server indicate an authentication failure from the client. The error is logged in event logs under **AD FS/Admin** as event ID *1021* and the event specifies that the client is forbidden access to resource `http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope` with scope `ugs`:
 
-```cmd
+```Console
 Log Name:      AD FS/Admin
 Source:        AD FS
 Date:          <Date and time>
