@@ -179,10 +179,10 @@ Microsoft.IdentityServer.Web.Protocols.OAuth.Exceptions.OAuthUnauthorizedClientE
 
 This issue is fixed in Windows Server, version 1903 and later. For Windows Server 2019, the issue can be remediated by adding the ugs scope manually.
 
-1. Launch AD FS management console. Browse to **Services > Scope Descriptions**
-1. Right select **Scope Descriptions** and select **Add Scope Description**
-1. Under name type *ugs*, and select **Apply > OK**
-1. Launch PowerShell as an administrator
+1. Launch AD FS management console. Browse to **Services > Scope Descriptions**.
+1. Right select **Scope Descriptions** and select **Add Scope Description**.
+1. Under name type *ugs*, and select **Apply > OK**.
+1. Launch PowerShell as an administrator.
 1. Get the ObjectIdentifier of the application permission with the ClientRoleIdentifier parameter equal to "38aa3b87-a06d-4817-b275-7a316988d93b":
 
    ```powershell
