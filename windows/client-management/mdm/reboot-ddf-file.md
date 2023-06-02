@@ -171,8 +171,8 @@ The following XML file contains the device description framework (DDF) for the R
             <MIME />
           </DFType>
           <MSFT:Applicability>
-            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+            <MSFT:OsBuildVersion>10.0.22621</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.0</MSFT:CspVersion>
           </MSFT:Applicability>
           <MSFT:AllowedValues ValueType="None">
           </MSFT:AllowedValues>
