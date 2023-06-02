@@ -741,8 +741,10 @@ The availability of per-user support is documented here: <https://go.microsoft.c
 
 <!-- PageVisibilityList-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
 For more information on the URI reference scheme used for the various pages of the System Settings app, see [ms-settings: URI scheme reference](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference).
+
+> [!WARNING]
+> When you configure this policy to hide any pages that contain `quietmoments` in the URI (for example, `ms-settings:quietmomentsgame`), the Notifications page under System category is hidden.
 
 To validate this policy, use the following steps:
 
