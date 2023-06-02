@@ -48,7 +48,7 @@ Windows Update for Business reports uses the following Delivery Optimization ter
 - **MCC Device Count**: The device count is the number of devices that have received bytes from the cache server, for supported content types.
 - **Total # of Devices**: The total number of devices with activity in last 28 days.
 - **LAN Bytes**: Bytes delivered from LAN peers.
-- **Group Bytes**: Bytes from Group peers. If a device is using Group DownloadMode, Delivery Optimization will first look for peers on the LAN and then in the Group. Therefore, if bytes are delivered from LAN peers, they'll be calculated in 'LAN Bytes'.
+- **Group Bytes**: Bytes from Group peers. If a device is using Group DownloadMode, Delivery Optimization first looks for peers on the LAN and then in the Group. Therefore, if bytes are delivered from LAN peers, they are calculated in 'LAN Bytes'.
 - **CDN Bytes**: Bytes delivered from Content Delivery Network (CDN).
 - **City**: City is determined based on the location of the device where the maximum amount of data is downloaded.
 - **Country**: Country is determined based on the location of the device where the maximum amount of data is downloaded.
@@ -56,7 +56,7 @@ Windows Update for Business reports uses the following Delivery Optimization ter
 
 ## Calculations for Delivery Optimization
 
-There are several calculated values that appear on the Delivery Optimization report. Listed below each calculation is the table that's used for it:
+Each calculated values used in the Delivery Optimization report are listed below.
 
 **Efficiency (%) Calculations**:
 
@@ -182,10 +182,10 @@ A row in UCDOStatus represents data downloaded by a combination of a single devi
 A row in UCDOAggregatedStatus represents data summarized at the tenant level (AzureADTenantID) for each content type (ContentType).
 
 - **How are BytesFromCache calculated when there's a Connected Cache server used by my ISP?**
-If there's a Connected Cache server at the ISP level, BytesFromCache will filter out any bytes coming the ISP's Connected Cache.
+If there's a Connected Cache server at the ISP level, BytesFromCache filters out any bytes coming the ISP's Connected Cache.
 
 - **How do the results from the Delivery Optimization PowerShell cmdlets compare to the results in the report?**
 [Delivery Optimization PowerShell cmdlets](waas-delivery-optimization-setup.md#monitor-delivery-optimization) can be a powerful tool used to monitor Delivery Optimization data on the device. These cmdlets use the cache on the device. The data calculated in the report is taken from the Delivery Optimization telemetry events.
 
-- **The report represents the last 28 days of data, why do some queries include >= 7 days?**
-The data in the report does represent the last 28 days of data. The query for last 7 days is just to get the data for the latest snapshot from past 7 days. It is possible that data is delayed for sometime and not available for current day, so we look for past 7 day snapshot in log analytics ans show the latest snapshot.
+- **The report represents the last 28 days of data, why do some queries include >= seven days?**
+The data in the report does represent the last 28 days of data. The query for last seven days is just to get the data for the latest snapshot from past seven days. It's possible that data is delayed for sometime and not available for current day, so we look for past 7 day snapshot in log analytics and show the latest snapshot.
