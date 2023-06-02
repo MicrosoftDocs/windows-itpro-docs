@@ -4,7 +4,7 @@ description: Learn more about the ADMX_WindowsExplorer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 06/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -105,7 +105,7 @@ This setting allows an administrator to revert specific Windows Shell behavior t
 
 - If you enable this setting, users can't configure their system to open items by single-clicking (such as in Mouse in Control Panel). As a result, the user interface looks and operates like the interface for Windows NT 4.0, and users can't restore the new features.
 
-Enabling this policy will also turn off the preview pane and set the folder options for File Explorer to Use classic folders view and disable the user's ability to change these options.
+Enabling this policy will also turn off the preview pane and set the folder options for File Explorer to Use classic folders view and disable the users ability to change these options.
 
 - If you disable or not configure this policy, the default File Explorer behavior is applied to the user.
 
@@ -3173,7 +3173,9 @@ If you enable this setting, the system removes the Map Network Drive and Disconn
 This setting doesn't prevent users from connecting to another computer by typing the name of a shared folder in the Run dialog box.
 
 > [!NOTE]
-> This setting was documented incorrectly on the Explain tab in Group Policy for Windows 2000. The Explain tab states incorrectly that this setting prevents users from connecting and disconnecting drives.
+> 
+
+This setting was documented incorrectly on the Explain tab in Group Policy for Windows 2000. The Explain tab states incorrectly that this setting prevents users from connecting and disconnecting drives.
 
 > [!NOTE]
 > It's a requirement for third-party applications with Windows 2000 or later certification to adhere to this setting.
@@ -3965,11 +3967,11 @@ To remove network computers from lists of network resources, use the "No Entire 
 
 <!-- PlacesBar-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Configures the list of items displayed in the Places Bar in the Windows File/Open dialog. If this setting is enabled, you can specify from 1 to 5 items to be displayed in the Places Bar.
+Configures the list of items displayed in the Places Bar in the Windows File/Open dialog. If enable this setting you can specify from 1 to 5 items to be displayed in the Places Bar.
 
 The valid items you may display in the Places Bar are:
 
-1) Shortcuts to a local folder -- (ex. C:\Windows)
+1) Shortcuts to a local folders -- (ex. C:\Windows)
 
 2) Shortcuts to remote folders -- (\\server\share)
 
