@@ -11,11 +11,6 @@ This article describes the events related to smart card deployment and developme
 
 Many events can be used to monitor smart card activities on a device, including installation, use, and errors. The next sections describe the events and information that you can use to manage smart cards in an organization.
 
-- [Smart card reader name](#smart-card-reader-name)
-- [Smart card warning events](#smart-card-warning-events)
-- [Smart card error events](#smart-card-error-events)
-- [Smart card Plug and Play events](#smart-card-plug-and-play-events)
-
 ## Smart card reader name
 
 The Smart Card Resource Manager doesn't use the device name from *Device Manager* to describe a smart card reader. Instead, the name is constructed from three device attributes that are queried directly from the smart card reader driver.
