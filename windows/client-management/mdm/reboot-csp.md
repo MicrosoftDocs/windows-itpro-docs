@@ -16,6 +16,8 @@ ms.topic: reference
 <!-- Reboot-Begin -->
 # Reboot CSP
 
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
+
 <!-- Reboot-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The Reboot configuration service provider is used to configure reboot settings.
@@ -194,7 +196,7 @@ Value in ISO8601, both the date and time are required. A reboot will be schedule
 <!-- Device-Schedule-WeeklyRecurrent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- Device-Schedule-WeeklyRecurrent-Applicability-End -->
 
 <!-- Device-Schedule-WeeklyRecurrent-OmaUri-Begin -->
