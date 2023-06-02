@@ -528,8 +528,8 @@ This policy setting allows you to control whether screen recording functionality
 
 | Value | Description |
 |:--|:--|
-| 0 | Disabled. |
-| 1 (Default) | Enabled. |
+| 0 | Disabled |
+| 1 (Default) | Enabled |
 <!-- AllowScreenRecorder-AllowedValues-End -->
 
 <!-- AllowScreenRecorder-GpMapping-Begin -->

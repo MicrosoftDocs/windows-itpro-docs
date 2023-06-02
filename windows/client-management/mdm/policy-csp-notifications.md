@@ -61,8 +61,8 @@ This policy allows you to prevent Windows from displaying notifications to Micro
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Disabled. |
-| 1 | Enabled. |
+| 0 (Default) | Disabled |
+| 1 | Enabled |
 <!-- DisableAccountNotifications-AllowedValues-End -->
 
 <!-- DisableAccountNotifications-GpMapping-Begin -->
