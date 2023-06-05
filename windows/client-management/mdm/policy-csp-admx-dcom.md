@@ -4,7 +4,7 @@ description: Learn more about the ADMX_DCOM Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 06/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -111,9 +111,8 @@ DCOM server appids added to this policy must be listed in curly-brace format. Fo
 
 - If you don't configure this policy setting, the appid exemption list defined by local computer administrators is used.
 
-Note:
-
-The DCOM Activation security check is done after a DCOM server process is started, but before an object activation request is dispatched to the server process. This access check is done against the DCOM server's custom launch permission security descriptor if it exists, or otherwise against the configured defaults.
+> [!NOTE]
+> The DCOM Activation security check is done after a DCOM server process is started, but before an object activation request is dispatched to the server process. This access check is done against the DCOM server's custom launch permission security descriptor if it exists, or otherwise against the configured defaults.
 
 If the DCOM server's custom launch permission contains explicit DENY entries this may mean that object activations that would've previously succeeded for such specified users, once the DCOM server process was up and running, might now fail instead. The proper action in this situation is to re-configure the DCOM server's custom launch permission settings for correct security settings, but this policy setting may be used in the short-term as an application compatibility deployment aid.
 
@@ -122,7 +121,8 @@ DCOM servers added to this exemption list are only exempted if their custom laun
 
 <!-- DCOMActivationSecurityCheckExemptionList-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-**NOTE** This policy setting applies to all sites in Trusted zones.
+> [!NOTE]
+> This policy setting applies to all sites in Trusted zones.
 <!-- DCOMActivationSecurityCheckExemptionList-Editable-End -->
 
 <!-- DCOMActivationSecurityCheckExemptionList-DFProperties-Begin -->
