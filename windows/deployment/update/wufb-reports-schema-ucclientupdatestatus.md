@@ -14,7 +14,7 @@ ms.technology: itpro-updates
 <!--37063317, 30141258, 37063041-->
 ***(Applies to: Windows 11 & Windows 10)***
 
-Update Event that combines the latest client-based data with the latest service-based data to create a complete picture for one device (client) and one update. There will be 3 records per device for the latest 3 security updates
+Update Event that combines the latest client-based data with the latest service-based data to create a complete picture for one device (client) and one update.
 
 | Field | Type | Example | Description |
 |---|---|---|---|
