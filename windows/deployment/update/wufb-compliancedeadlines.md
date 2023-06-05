@@ -36,7 +36,7 @@ With a current version, it's best to use the new policy introduced in June 2019 
 
 |Policy|Location|Quality update deadline in days|Feature update deadline in days|Grace period in days|
 |-|-|-|-|-|
-|(Windows 10, version 1709 and later) Specify deadlines for automatic updates and restarts | GPO: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Specify deadlines for automatic updates and restarts    | 3 | 7 | 2 |
+|(Windows 10, version 1709 and later) Specify deadlines for automatic updates and restarts | GPO: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Specify deadlines for automatic updates and restarts    | 2 | 2 | 5 |
 
 When **Specify deadlines for automatic updates and restarts** is set (Windows 10, version 1709 and later):
 
