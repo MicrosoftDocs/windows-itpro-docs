@@ -1,5 +1,5 @@
 ---
-title: The Windows Security app
+title: Windows Security app
 description: The Windows Security app brings together common Windows security features into one place.
 ms.prod: windows-client
 ms.localizationpriority: medium
@@ -17,7 +17,7 @@ appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
-# The Windows Security app
+# Windows Security app
 
 This library describes the Windows Security app, and provides information on configuring certain features, including:
 

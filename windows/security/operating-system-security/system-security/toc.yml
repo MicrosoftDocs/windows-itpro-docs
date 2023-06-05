@@ -9,7 +9,7 @@ items:
   href: protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices.md
 - name: Cryptography and certificate management
   href: cryptography-certificate-mgmt.md
-- name: The Windows Security app
+- name: Windows Security app
   href: windows-defender-security-center/windows-defender-security-center.md
   items:
   - name: Virus & threat protection

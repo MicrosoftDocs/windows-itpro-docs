@@ -57,7 +57,7 @@ landingContent:
       - linkListType: overview
         links:
         - text: Overview
-          url: operating-system-security\operating-system.md
+          url: operating-system-security/index.md
       - linkListType: concept
         links:
         - text: Trusted boot
