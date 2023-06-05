@@ -138,8 +138,8 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `NextUp Talker`                           | 1.0.49            | Win32    | `NextUp Technologies`                     |
 | `NonVisual Desktop Access`                | 2021.3.1          | Win32    | `NV Access`                               |
 | `NWEA Secure Testing Browser`             | 5.4.356.0         | Win32    | `NWEA`                                    |
-| `PC Talker NEO`                           | 2209              | Win32    | `Kochi System Development`                |
-| `PC Talker NEO Plus`                      | 2209              | Win32    | `Kochi System Development`                |
+| `PC Talker Neo`                           | 2209              | Win32    | `Kochi System Development`                |
+| `PC Talker Neo Plus`                      | 2209              | Win32    | `Kochi System Development`                |
 | `PaperCut`                                | 22.0.6            | Win32    | `PaperCut Software International Pty Ltd` |
 | `Pearson TestNav`                         | 1.11.3            | `Store`  | `Pearson`                                 |
 | `Questar Secure Browser`                  | 5.0.1.456         | Win32    | `Questar, Inc`                            |
