@@ -6,7 +6,7 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.topic: reference
-ms.date: 04/24/2023
+ms.date: 06/05/2023
 ms.technology: itpro-updates
 ---
 
@@ -14,7 +14,7 @@ ms.technology: itpro-updates
 <!--37063317, 30141258, 37063041-->
 ***(Applies to: Windows 11 & Windows 10)***
 
-Update Event that combines the latest client-based data with the latest service-based data to create a complete picture for one device (client) and one update.
+Update Event that combines the latest client-based data with the latest service-based data to create a complete picture for one device (client) and one update. There will be 3 records per device for the latest 3 security updates
 
 | Field | Type | Example | Description |
 |---|---|---|---|
