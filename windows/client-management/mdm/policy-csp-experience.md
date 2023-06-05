@@ -4,7 +4,7 @@ description: Learn more about the Experience Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 06/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -484,6 +484,68 @@ Allow screen capture.
 <!-- AllowScreenCapture-Examples-End -->
 
 <!-- AllowScreenCapture-End -->
+
+<!-- AllowScreenRecorder-Begin -->
+## AllowScreenRecorder
+
+<!-- AllowScreenRecorder-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
+<!-- AllowScreenRecorder-Applicability-End -->
+
+<!-- AllowScreenRecorder-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Experience/AllowScreenRecorder
+```
+<!-- AllowScreenRecorder-OmaUri-End -->
+
+<!-- AllowScreenRecorder-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to control whether screen recording functionality is available in the Windows Snipping Tool app.
+
+- If you disable this policy setting, screen recording functionality won't be accessible in the Windows Snipping Tool app.
+
+- If you enable or don't configure this policy setting, users will be able to access screen recording functionality.
+<!-- AllowScreenRecorder-Description-End -->
+
+<!-- AllowScreenRecorder-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowScreenRecorder-Editable-End -->
+
+<!-- AllowScreenRecorder-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowScreenRecorder-DFProperties-End -->
+
+<!-- AllowScreenRecorder-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Disabled |
+| 1 (Default) | Enabled |
+<!-- AllowScreenRecorder-AllowedValues-End -->
+
+<!-- AllowScreenRecorder-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowScreenRecorder |
+| Path | Programs > AT > WindowsComponents > SnippingTool |
+<!-- AllowScreenRecorder-GpMapping-End -->
+
+<!-- AllowScreenRecorder-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowScreenRecorder-Examples-End -->
+
+<!-- AllowScreenRecorder-End -->
 
 <!-- AllowSharingOfOfficeFiles-Begin -->
 ## AllowSharingOfOfficeFiles
