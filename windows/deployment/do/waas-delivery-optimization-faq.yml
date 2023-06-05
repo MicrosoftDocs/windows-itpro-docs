@@ -111,7 +111,7 @@ sections:
           The recommended configuration for Delivery Optimization Peer-to-Peer to work most efficiently along with cloud proxy solutions (for example, Zscaler) is to allow traffic to the Delivery Optimization services to go directly to the internet and not through the cloud proxy.
           At a minimum, the following FQDN that is used for communication between clients and the Delivery Optimization service should be allowed with direct Internet access and bypass the cloud proxy service: 
 
-              -	*.prod.do.dsp.mp.microsoft.com
+            - *.prod.do.dsp.mp.microsoft.com
 
           If allowing direct Internet access isn't an option, try using Group Download Mode '2' to define the peering group. [Learn more](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) about using Group Download mode.
           
