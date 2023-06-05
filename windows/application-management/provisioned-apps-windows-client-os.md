@@ -4,7 +4,7 @@ description: Use the Windows PowerShell Get-AppxProvisionedPackage command to ge
 author: nicholasswhite
 ms.author: nwhite
 manager: aaroncz
-ms.date: 01/12/2023
+ms.date: 06/05/2023
 ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-apps
