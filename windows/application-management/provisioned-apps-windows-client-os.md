@@ -325,7 +325,7 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
 
     ---
 
-- [Store Purchase App](ms-windows-store://pdp/?PFN=Microsoft.StorePurchaseApp_8wekyb3d8bbwe) | Package name: Microsoft.StorePurchaseApp
+- Store Purchase App | Package name: Microsoft.StorePurchaseApp
   - Supported versions:
 
     ---
