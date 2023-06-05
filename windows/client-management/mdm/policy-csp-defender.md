@@ -4,7 +4,7 @@ description: Learn more about the Defender Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 06/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1764,6 +1764,8 @@ Same as Disabled.
 | 0 (Default) | Disabled. |
 | 1 | Enabled. |
 | 2 | Audit Mode. |
+| 3 | Block disk modification only. |
+| 4 | Audit disk modification only. |
 <!-- EnableControlledFolderAccess-AllowedValues-End -->
 
 <!-- EnableControlledFolderAccess-GpMapping-Begin -->
