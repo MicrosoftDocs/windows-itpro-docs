@@ -63,7 +63,7 @@ landingContent:
         - text: Trusted boot
           url: operating-system-security\system-security\trusted-boot.md
         - text: Encryption and data protection
-          url: encryption-data-protection.md
+          url: operating-system-security/data-protection/index.md
         - text: Windows security baselines
           url: threat-protection/windows-security-configuration-framework/windows-security-baselines.md
         - text: Virtual private network guide
