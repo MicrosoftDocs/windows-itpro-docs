@@ -31,7 +31,7 @@ A trusted platform module (TPM) is a microchip designed to provide basic securit
 
 Unified Extensible Firmware Interface (UEFI) is a programmable boot environment that initializes devices and starts the operating system's bootloader.
 
-The UEFI specification defines a firmware execution authentication process called [Secure Boot](../../../information-protection/secure-the-windows-10-boot-process.md). Secure Boot blocks untrusted firmware and bootloaders (signed or unsigned) from being able to start on the system.
+The UEFI specification defines a firmware execution authentication process called [Secure Boot](../../system-security/secure-the-windows-10-boot-process.md). Secure Boot blocks untrusted firmware and bootloaders (signed or unsigned) from being able to start on the system.
 
 By default, BitLocker provides integrity protection for Secure Boot by utilizing the TPM PCR[7] measurement. An unauthorized EFI firmware, EFI boot application, or bootloader can't run and acquire the BitLocker key.
 
