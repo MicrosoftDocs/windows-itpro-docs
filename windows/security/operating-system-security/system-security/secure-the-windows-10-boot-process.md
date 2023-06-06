@@ -1,19 +1,11 @@
 ---
 title: Secure the Windows boot process
 description: This article describes how Windows security features help protect your PC from malware, including rootkits and other applications.
-ms.prod: windows-client
-ms.author: paoloma
-author: paolomatarazzo
-manager: aaroncz
+ms.topic: conceptual
+ms.date: 03/09/2023
 ms.collection:
   - highpri
   - tier1
-ms.topic: conceptual
-ms.date: 03/09/2023
-ms.technology: itpro-security
-appliesto:
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ---
 
 # Secure the Windows boot process

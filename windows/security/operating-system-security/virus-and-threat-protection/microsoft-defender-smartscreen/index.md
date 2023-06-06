@@ -1,19 +1,12 @@
 ---
 title: Microsoft Defender SmartScreen overview
 description: Learn how Microsoft Defender SmartScreen protects against phishing or malware websites and applications, and the downloading of potentially malicious files.
-ms.prod: windows-client
-author: vinaypamnani-msft
-ms.author: vinpa
+ms.date: 05/31/2023
+ms.topic: article
 ms.localizationpriority: high
-ms.reviewer:
-manager: aaroncz
-ms.technology: itpro-security
-adobe-target: true
 ms.collection:
   - tier2
   - highpri
-ms.date: 05/31/2023
-ms.topic: article
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>

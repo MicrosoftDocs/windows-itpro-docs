@@ -1,14 +1,11 @@
 ---
 title: Secure Boot and Trusted Boot
 description: Trusted Boot prevents corrupted components from loading during the boot-up process in Windows 11
-author: vinaypamnani-msft
-ms.author: vinpa
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2021
-ms.prod: windows-client
-ms.technology: itpro-security
 ms.reviewer: jsuther
+appliesto:
+  - "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>"
 ---
 
 # Secure Boot and Trusted Boot

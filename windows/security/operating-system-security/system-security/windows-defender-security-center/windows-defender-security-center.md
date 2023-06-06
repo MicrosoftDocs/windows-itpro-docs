@@ -1,20 +1,11 @@
 ---
 title: Windows Security app
 description: The Windows Security app brings together common Windows security features into one place.
-ms.prod: windows-client
-ms.localizationpriority: medium
-author: vinaypamnani-msft
-ms.author: vinpa
-ms.reviewer:
-manager: aaroncz
+ms.date: 12/31/2017
+ms.topic: article
 ms.collection:
   - highpri
   - tier2
-ms.date: 12/31/2017
-ms.topic: article
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Windows Security app

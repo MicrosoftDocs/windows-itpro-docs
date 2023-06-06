@@ -1,17 +1,8 @@
 ---
 title: Control the health of Windows devices
 description: This article details an end-to-end solution that helps you protect high-value assets by enforcing, controlling, and reporting the health of Windows devices.
-ms.prod: windows-client
 ms.date: 10/13/2017
-ms.localizationpriority: medium
-ms.technology: itpro-security
-author: vinaypamnani-msft
-ms.author: vinpa
-manager: aaroncz
 ms.topic: conceptual
-appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Control the health of Windows devices

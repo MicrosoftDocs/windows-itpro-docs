@@ -1,15 +1,8 @@
 ---
 title: Family options in the Windows Security app
 description: Learn how to hide the Family options section of Windows Security for enterprise environments. Family options aren't intended for business environments.
-ms.prod: windows-client
-author: vinaypamnani-msft
-ms.author: vinpa
 ms.date: 12/31/2018
-ms.technology: itpro-security
 ms.topic: article
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 

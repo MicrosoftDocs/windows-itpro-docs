@@ -1,16 +1,8 @@
 ---
 title: App & browser control in the Windows Security app
 description: Use the App & browser control section to see and configure Windows Defender SmartScreen and Exploit protection settings.
-ms.prod: windows-client
-author: vinaypamnani-msft
-ms.author: vinpa
 ms.date: 12/31/2018
-manager: aaroncz
-ms.technology: itpro-security
 ms.topic: article
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # App and browser control
