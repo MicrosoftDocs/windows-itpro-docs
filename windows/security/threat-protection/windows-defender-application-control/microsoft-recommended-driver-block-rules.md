@@ -2918,7 +2918,7 @@ To check that the policy was successfully applied on your computer:
     </Setting>
     <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
       <Value>
-        <String>10.0.25860.0</String>
+        <String>10.0.25873.0</String>
       </Value>
     </Setting>
   </Settings>
