@@ -742,7 +742,7 @@ hide:bluetooth.
 For more information on the URI reference scheme used for the various pages of the System Settings app, see [ms-settings: URI scheme reference](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference).
 
 > [!WARNING]
-> When you configure this policy to hide any pages that contain `quietmoments` in the URI (for example, `ms-settings:quietmomentsgame`), the Notifications page under System category is hidden.
+> In Windows 11, version 22H2 and later, when you configure this policy to hide any pages that contain `quietmoments` in the URI (for example, `ms-settings:quietmomentsgame`), the Notifications page under System category is hidden.
 
 To validate this policy, use the following steps:
 
