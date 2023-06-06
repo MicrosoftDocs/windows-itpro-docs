@@ -325,9 +325,9 @@ The following table details the hardware requirements for both virtualization-ba
 
 |Hardware|Motivation|
 |--- |--- |
-|UEFI 2.3.1 or later firmware with Secure Boot enabled|Required to support UEFI Secure Boot.<p>UEFI Secure Boot ensures that the device boots only authorized code.<p>Additionally, Boot Integrity (Platform Secure Boot) must be supported following the requirements in Hardware Compatibility Specification for Systems for Windows 10 under the subsection: "System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby"|
-|Virtualization extensions, such as Intel VT-x, AMD-V, and SLAT must be enabled|Required to support virtualization-based security.<div class="alert">**Note:** Device Guard can be enabled without using virtualization-based security.</div>|
-|X64 processor|Required to support virtualization-based security that uses Windows Hypervisor. Hyper-V is supported only on x64 processor (and not on x86).<p>Direct Memory Access (DMA) protection can be enabled to provide extra memory protection but requires processors to include DMA protection technologies.|
+|UEFI 2.3.1 or later firmware with Secure Boot enabled|Required to support UEFI Secure Boot. UEFI Secure Boot ensures that the device boots only authorized code. Additionally, Boot Integrity (Platform Secure Boot) must be supported following the requirements in Hardware Compatibility Specification for Systems for Windows 10 under the subsection: "System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby"|
+|Virtualization extensions, such as Intel VT-x, AMD-V, and SLAT must be enabled|Required to support virtualization-based security. **Note:** Device Guard can be enabled without using virtualization-based security.|
+|X64 processor|Required to support virtualization-based security that uses Windows Hypervisor. Hyper-V is supported only on x64 processor (and not on x86). Direct Memory Access (DMA) protection can be enabled to provide extra memory protection but requires processors to include DMA protection technologies.|
 |IOMMU, such as Intel VT-d, AMD-Vi|Support for the IOMMU in Windows 10 enhances system resiliency against DMA attacks.|
 |Trusted Platform Module (TPM)|Required to support health attestation and necessary for other key protections for virtualization-based security. TPM 2.0 is supported. Support for TPM 1.2 was added beginning in Windows 10, version 1607 (RS1)|
 

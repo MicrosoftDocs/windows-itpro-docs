@@ -2,7 +2,6 @@ items:
   - name: Microsoft Defender Antivirus 🔗
     href: /microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows
   - name: Configuring LSA Protection
-    # href: /windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection?toc=/windows/security/toc.json&bc=/windows/security/breadcrumb/toc.json
     href: /windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection
     preserveContext: true
   - name: Attack surface reduction (ASR) 🔗
