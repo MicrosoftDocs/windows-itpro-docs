@@ -13,7 +13,7 @@ author: jgeurten
 ms.reviewer: jsuther1974
 ms.author: vinpa
 manager: aaroncz
-ms.date: 05/26/2023
+ms.date: 06/06/2023
 ms.technology: itpro-security
 ms.topic: article
 ---
@@ -180,9 +180,13 @@ During validation, WDAC selects which hashes are calculated based on how the fil
 
 In the cmdlets, rather than try to predict which hash will be used, we precalculate and use the four hashes (sha1/sha2 authenticode, and sha1/sha2 of first page).  This method is also resilient to changes in how the file is signed since your WDAC policy has more than one hash available for the file already.
 
-### Why does scan create eight hash rules for certain XML files?
+### Why does scan create eight hash rules for certain files?
 
 Separate rules are created for UMCI and KMCI. If the cmdlets can't determine that a file will only run in user-mode or in the kernel, then rules are created for both signing scenarios out of an abundance of caution. If you know that a particular file will only load in either user-mode or kernel, then you can safely remove the extra rules.
+
+### When does WDAC use the flat file hash value?
+
+There are some rare cases where a file's format doesn't conform to the Authenticode spec and so WDAC falls back to use the flat file hash. There are a number of reasons this can occur, such as if changes are made to the in-memory version of the file at runtime. In such cases, you'll see that the hash shown in the correlated 3089 signature information event matches the flat file hash from the 3076/3077 block event. To create rules for files with invalid format, you can add hash rules to the policy for the flat file hash using the WDAC Wizard or by editing the policy XML directly.
 
 ## Windows Defender Application Control filename rules
 
