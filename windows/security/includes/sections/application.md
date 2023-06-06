@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 06/05/2023
+ms.date: 06/06/2023
 ms.topic: include
 ---
 
@@ -9,8 +9,8 @@ ms.topic: include
 
 | Security Measures | Features & Capabilities |
 |:---|:---|
-| **[User Account Control (UAC)](/windows/security/application-security/application-control/user-account-control/)** | User Account Control (UAC) helps prevent malware from damaging a PC and helps organizations deploy a better-managed desktop. With UAC, apps and tasks always run in the security context of a non-administrator account, unless an administrator specifically authorizes administrator-level access to the system. UAC can block the automatic installation of unauthorized apps and prevent inadvertent changes to system settings. Enabling UAC helps prevent malware from altering PC settings and potentially gaining access to networks and sensitive data. UAC can also block the automatic installation of unauthorized apps and prevent inadvertent changes to system settings.<br> |
-| **[Windows Defender Application Control (WDAC)](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)** |  |
+| **[User Account Control (UAC)](/windows/security/application-security/application-control/user-account-control/)** | User Account Control (UAC) helps prevent malware from damaging a device. With UAC, apps and tasks always run in the security context of a non-administrator account, unless an administrator authorizes administrator-level access to the system. UAC can block the automatic installation of unauthorized apps and prevents inadvertent changes to system settings. Enabling UAC helps to prevent malware from altering device settings and potentially gaining access to networks and sensitive data. UAC can also block the automatic installation of unauthorized apps and prevent inadvertent changes to system settings. |
+| **[Windows Defender Application Control (WDAC)](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)** | Your organization is only as secure as the applications that run on your devices. With application control, apps must earn trust to run, in contrast to an application trust model where all code is assumed trustworthy. By helping prevent unwanted or malicious code from running, application control is an important part of an effective security strategy. Many organizations cite application control as one of the most effective means for addressing the threat of executable file-based malware.<br><br>Windows 10 and above include Windows Defender Application Control (WDAC) as well as AppLocker. WDAC is the next generation app control solution for Windows and provides powerful control over what runs in your environment. Customers who were using AppLocker on previous versions of Windows can continue to use the feature as they consider whether to switch to WDAC for the stronger protection. |
 | **[Smart App Control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)** | Smart App Control prevents users from running malicious applications on Windows devices by blocking untrusted or unsigned applications. Smart App Control goes beyond previous built-in browser protections, by adding another layer of security that is woven directly into the core of the OS at the process level. Using AI, our new Smart App Control only allows processes to run that are predicted to be safe based on existing and new intelligence processed daily. Smart App Control builds on top of the same cloud-based AI used in Windows Defender Application Control (WDAC) to predict the safety of an application, so people can be confident they are using safe and reliable applications on their new Windows 11 devices, or Windows 11 devices that have been reset. |
 
 ## Application Isolation
