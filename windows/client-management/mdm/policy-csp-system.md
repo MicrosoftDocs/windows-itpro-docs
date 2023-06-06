@@ -4,7 +4,7 @@ description: Learn more about the System Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 06/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -687,9 +687,8 @@ By configuring this policy setting you can adjust what diagnostic data is collec
 
 If you disable or don't configure this policy setting, the device will send required diagnostic data and the end user can choose whether to send optional diagnostic data from the Settings app.
 
-Note:
-
-The "Configure diagnostic data opt-in settings user interface" group policy can be used to prevent end users from changing their data collection settings.
+> [!NOTE]
+> The "Configure diagnostic data opt-in settings user interface" group policy can be used to prevent end users from changing their data collection settings.
 <!-- AllowTelemetry-Description-End -->
 
 <!-- AllowTelemetry-Editable-Begin -->
@@ -1150,9 +1149,8 @@ If you set this policy setting to "Disable diagnostic data opt-in settings", dia
 
 If you don't configure this policy setting, or you set it to "Enable diagnostic data opt-in settings", end users can change the device diagnostic settings in the Settings app.
 
-Note:
-
-To set a limit on the amount of diagnostic data that's sent to Microsoft by your organization, use the "Allow Diagnostic Data" policy setting.
+> [!NOTE]
+> To set a limit on the amount of diagnostic data that's sent to Microsoft by your organization, use the "Allow Diagnostic Data" policy setting.
 <!-- ConfigureTelemetryOptInSettingsUx-Description-End -->
 
 <!-- ConfigureTelemetryOptInSettingsUx-Editable-Begin -->

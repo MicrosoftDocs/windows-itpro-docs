@@ -101,6 +101,9 @@ There are two scenarios that the Global release is used:
 | Scenario #1 | You assign Azure AD groups to be used with the deployment ring (Last) or you add additional deployment rings when you customize the [Default Autopatch group](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#edit-the-default-or-a-custom-autopatch-group).<p>A global Windows feature update policy is automatically assigned behind the scenes to the newly added deployment rings or when you assigned Azure AD groups to the deployment ring (Last) in the Default Autopatch group.</p> |
 | Scenario #2 | You create new [Custom Autopatch groups](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#create-a-custom-autopatch-group).<p>The global Windows feature policy is automatically assigned behind the scenes to all deployment rings as part of the Custom Autopatch groups you create.</p> |
 
+> [!NOTE]
+> Global releases don't show up in the Windows feature updates release management blade.
+
 #### Policy configuration values
 
 See the following table on how Windows Autopatch configures the values for its global Windows feature update policy. If your tenant is enrolled with Windows Autopatch, you can see the following default policies created by the service in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431):
