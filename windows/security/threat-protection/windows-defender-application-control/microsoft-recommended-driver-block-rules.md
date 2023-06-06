@@ -16,7 +16,7 @@ author: jgeurten
 ms.reviewer: jsuther
 ms.author: vinpa
 manager: aaroncz
-ms.date: 02/08/2023
+ms.date: 06/06/2023
 ms.technology: itpro-security
 ms.topic: article
 ---
@@ -1057,7 +1057,7 @@ To check that the policy was successfully applied on your computer:
     <Deny ID="ID_DENY_DBK_32" FriendlyName="Cheat Engine Driver" FileName="dbk32.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_DBK_64" FriendlyName="Cheat Engine Driver" FileName="dbk64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_GDRV" FriendlyName="gdrv.sys" FileName="gdrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
-    <Deny ID="ID_DENY_KLMD" FriendlyName="Kaspersky klmd.sys FileRule" FileName="klmd.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
+    <Deny ID="ID_DENY_KLMD" FriendlyName="Kaspersky klmd.sys FileRule" FileName="klmd.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.13.0.10"/>
     <Deny ID="ID_DENY_PCHUNTER_1" FriendlyName="PCHunter Driver" FileName="PCHunter.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_PCHUNTER_2" FriendlyName="PCHunter Driver" FileName="安全专用" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_PHYMEMX_64" FriendlyName="Phymemx64 Memory Mapping Driver" FileName="phymemx64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
