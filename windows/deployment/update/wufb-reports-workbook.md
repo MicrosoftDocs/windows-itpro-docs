@@ -79,7 +79,7 @@ Below the tiles, the **Quality updates** tab is subdivided into **Update status*
 
 The **Update status** group for quality updates contains the following items:
 
-- **Update states for all security releases**: Chart containing the number of devices in a specific state, such as installing, for security updates. The last 3 quality updates are used to populate this chart. The total number of update states is approximately 3 times the number of devices enrolled in Windows Update for Business reports.
+- **Update states for all security releases**: This chart is populated by the states of the latest 3 security updates for devices. Each device that sends update data usually has a state for each of the last 3 security updates. The total number of update states in this chart is approximately 3 times the number of devices that have sent data.
 - **Update alerts for all security releases**: Chart containing the count of active errors and warnings for security updates.
 
 
