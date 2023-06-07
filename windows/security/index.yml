@@ -63,7 +63,7 @@ landingContent:
         - text: System security
           url: trusted-boot.md
         - text: Encryption and data protection
-          url: encryption-data-protection.md
+          url: operating-system-security/data-protection/index.md
         - text: Windows security baselines
           url: threat-protection/windows-security-configuration-framework/windows-security-baselines.md
         - text: Virtual private network guide
@@ -80,7 +80,7 @@ landingContent:
       - linkListType: overview
         links:
         - text: Overview
-          url: apps.md
+          url: application-security/index.md
       - linkListType: concept
         links:
         - text: Application Control and virtualization-based protection
@@ -92,7 +92,7 @@ landingContent:
         - text: Windows Sandbox
           url: application-security\application-isolation\windows-sandbox\windows-sandbox-overview.md
         - text: Microsoft Defender SmartScreen
-          url: threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md
+          url: operating-system-security\virus-and-threat-protection\microsoft-defender-smartscreen\index.md
         - text: S/MIME for Windows
           url: identity-protection/configure-s-mime.md
 # Cards and links should be based on top customer tasks or top subjects
@@ -125,10 +125,6 @@ landingContent:
   # Card (optional)
   - title: Cloud services
     linkLists:
-      - linkListType: overview
-        links:
-        - text: Overview
-          url: cloud.md
       - linkListType: concept
         links:
         - text: Mobile device management

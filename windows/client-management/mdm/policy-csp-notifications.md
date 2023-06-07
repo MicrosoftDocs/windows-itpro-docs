@@ -4,7 +4,7 @@ description: Learn more about the Notifications Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 06/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,9 +16,69 @@ ms.topic: reference
 <!-- Notifications-Begin -->
 # Policy CSP - Notifications
 
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
+
 <!-- Notifications-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 <!-- Notifications-Editable-End -->
+
+<!-- DisableAccountNotifications-Begin -->
+## DisableAccountNotifications
+
+<!-- DisableAccountNotifications-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+<!-- DisableAccountNotifications-Applicability-End -->
+
+<!-- DisableAccountNotifications-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Notifications/DisableAccountNotifications
+```
+<!-- DisableAccountNotifications-OmaUri-End -->
+
+<!-- DisableAccountNotifications-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy allows you to prevent Windows from displaying notifications to Microsoft account (MSA) and local users in Start (user tile). Notifications include getting users to: reauthenticate; backup their device; manage cloud storage quotas as well as manage their Microsoft 365 or XBOX subscription. If you enable this policy setting, Windows won't send account related notifications for local and MSA users to the user tile in Start.
+<!-- DisableAccountNotifications-Description-End -->
+
+<!-- DisableAccountNotifications-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableAccountNotifications-Editable-End -->
+
+<!-- DisableAccountNotifications-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableAccountNotifications-DFProperties-End -->
+
+<!-- DisableAccountNotifications-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled |
+| 1 | Enabled |
+<!-- DisableAccountNotifications-AllowedValues-End -->
+
+<!-- DisableAccountNotifications-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableAccountNotifications |
+| Path | AccountNotifications > AT > WindowsComponents > AccountNotifications |
+<!-- DisableAccountNotifications-GpMapping-End -->
+
+<!-- DisableAccountNotifications-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableAccountNotifications-Examples-End -->
+
+<!-- DisableAccountNotifications-End -->
 
 <!-- DisallowCloudNotification-Begin -->
 ## DisallowCloudNotification
