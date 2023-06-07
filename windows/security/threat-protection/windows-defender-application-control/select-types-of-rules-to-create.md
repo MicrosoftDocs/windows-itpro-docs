@@ -13,7 +13,7 @@ author: jgeurten
 ms.reviewer: jsuther1974
 ms.author: vinpa
 manager: aaroncz
-ms.date: 06/06/2023
+ms.date: 06/07/2023
 ms.technology: itpro-security
 ms.topic: article
 ---
@@ -80,17 +80,17 @@ Each file rule level has advantages and disadvantages. Use Table 2 to select the
 | Rule level | Description |
 |----------- | ----------- |
 | **Hash** | Specifies individual [Authenticode/PE image hash values](#more-information-about-hashes) for each discovered binary. This level is the most specific level, and requires more effort to maintain the current product versions' hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. |
-| **FileName** | Specifies the original filename for each binary. Although the hash values for an application are modified when updated, the file names are typically not. This level offers less specific security than the hash level, but it doesn't typically require a policy update when any binary is modified. |
+| **FileName** | Specifies the original filename for each binary. Although the hash values for an application are modified when updated, the file names are typically not. This level offers less specific security than the hash level, but it doesn't typically require a policy update when any binary is modified. By default, this level uses the OriginalFileName attribute of the file's resource header. Use [-SpecificFileNameLevel](#use--specificfilenamelevel-with-filename-filepublisher-or-whqlfilepublisher-level-rules) to choose an alternative attribute, such as ProductName. |
 | **FilePath** | Beginning with Windows 10 version 1903, this level allows binaries to run from specific file path locations. FilePath rules only apply to user mode binaries and can't be used to allow kernel mode drivers. More information about FilePath level rules can be found later in this article. |
 | **SignedVersion** | This level combines the publisher rule with a version number. It allows anything to run from the specified publisher with a version at or above the specified version number. |
 | **Publisher** | This level combines the PcaCertificate level (typically one certificate below the root) and the common name (CN) of the leaf certificate. You can use this rule level to trust a certificate issued by a particular CA and issued to a specific company you trust (such as Intel, for device drivers). |
-| **FilePublisher** | This level combines the "FileName" attribute of the signed file, plus "Publisher" (PCA certificate with CN of leaf), plus a minimum version number. This option trusts specific files from the specified publisher, with a version at or above the specified version number. |
+| **FilePublisher** | This level combines the "FileName" attribute of the signed file, plus "Publisher" (PCA certificate with CN of leaf), plus a minimum version number. This option trusts specific files from the specified publisher, with a version at or above the specified version number. By default, this level uses the OriginalFileName attribute of the file's resource header. Use [-SpecificFileNameLevel](#use--specificfilenamelevel-with-filename-filepublisher-or-whqlfilepublisher-level-rules) to choose an alternative attribute, such as ProductName. |
 | **LeafCertificate** | Adds trusted signers at the individual signing certificate level. The benefit of using this level versus the individual hash level is that new versions of the product have different hash values but typically the same signing certificate. When this level is used, no policy update would be needed to run the new version of the application. However, leaf certificates typically have shorter validity periods than other certificate levels, so the WDAC policy must be updated whenever these certificates change. |
 | **PcaCertificate** | Adds the highest available certificate in the provided certificate chain to signers. This level is typically one certificate below the root because the scan doesn't resolve the complete certificate chain via the local root stores or with an online check. |
 | **RootCertificate** | Not supported. |
 | **WHQL** | Only trusts binaries that have been submitted to Microsoft and signed by the Windows Hardware Qualification Lab (WHQL). This level is primarily for kernel binaries. |
 | **WHQLPublisher** | This level combines the WHQL level and the CN on the leaf certificate, and is primarily for kernel binaries. |
-| **WHQLFilePublisher** | This level combines the "FileName" attribute of the signed file, plus "WHQLPublisher", plus a minimum version number. This level is primarily for kernel binaries. |
+| **WHQLFilePublisher** | This level combines the "FileName" attribute of the signed file, plus "WHQLPublisher", plus a minimum version number. This level is primarily for kernel binaries. By default, this level uses the OriginalFileName attribute of the file's resource header. Use [-SpecificFileNameLevel](#use--specificfilenamelevel-with-filename-filepublisher-or-whqlfilepublisher-level-rules) to choose an alternative attribute, such as ProductName. |
 
 > [!NOTE]
 > When you create WDAC policies with [New-CIPolicy](/powershell/module/configci/new-cipolicy), you can specify a primary file rule level, by including the **-Level** parameter. For discovered binaries that cannot be trusted based on the primary file rule criteria, use the **-Fallback** parameter. For example, if the primary file rule level is PCACertificate, but you would like to trust the unsigned applications as well, using the Hash rule level as a fallback adds the hash values of binaries that did not have a signing certificate.
@@ -121,6 +121,22 @@ WDAC has a built-in file rule conflict logic that translates to precedence order
 
 > [!NOTE]
 > To make it easier to reason over your WDAC policies, we recommend maintaining separate ALLOW and DENY policies on Windows versions that support [multiple WDAC policies](/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies).
+
+## Use -SpecificFileNameLevel with FileName, FilePublisher, or WHQLFilePublisher level rules
+
+By default, the FileName, FilePublisher, and WHQLFilePublisher rule levels will use the OriginalFileName attribute from the file's resource header. You can use an alternative resource header attribute for your rules by setting the **-SpecificFileNameLevel**. For instance, a software developer may use the same ProductName for all binaries that are part of an app. Using -SpecificFileNameLevel, you can create a single rule to cover all of those binaries in your policy rather than individual rules for every file.
+
+Table 3 describes the available resource header attribute options you can set with -SpecificFileNameLevel.
+
+### Table 3. -SpecificFileNameLevel options
+
+| SpecificFileNameLevel value | Description |
+|----------- | ----------- |
+| **FileDescription** |  Specifies the file description provided by the developer of the binary. |
+| **InternalName** |  Specifies the internal name of the binary. |
+| **OriginalFileName** | Specifies the original file name, or the name with which the file was first created, of the binary. |
+| **PackageFamilyName** | Specifies the package family name of the binary. The package family name consists of two parts: the name of the file and the publisher ID. |
+| **ProductName** |  Specifies the name of the product with which the binary ships. |
 
 ## More information about filepath rules
 
@@ -187,19 +203,3 @@ Separate rules are created for UMCI and KMCI. If the cmdlets can't determine tha
 ### When does WDAC use the flat file hash value?
 
 There are some rare cases where a file's format doesn't conform to the Authenticode spec and so WDAC falls back to use the flat file hash. This can occur for a number of reasons, such as if changes are made to the in-memory version of the file at runtime. In such cases, you'll see that the hash shown in the correlated 3089 signature information event matches the flat file hash from the 3076/3077 block event. To create rules for files with an invalid format, you can add hash rules to the policy for the flat file hash using the WDAC Wizard or by editing the policy XML directly.
-
-## Windows Defender Application Control filename rules
-
-File name rule levels let you specify file attributes to base a rule on. File name rules provide the same security guarantees that explicit signer rules do, as they're based on non-mutable file attributes. Specification of the file name level occurs when creating new policy rules.
-
-Use Table 3 to select the appropriate file name level for your use cases. For instance, an LOB or production application and its binaries may all share the same product name. This option lets you easily create targeted policies based on the Product Name filename rule level.
-
-### Table 3. Windows Defender Application Control policy - filename levels
-
-| Rule level | Description |
-|----------- | ----------- |
-| **File Description** |  Specifies the file description provided by the developer of the binary. |
-| **Internal Name** |  Specifies the internal name of the binary. |
-| **Original File Name** | Specifies the original file name, or the name with which the file was first created, of the binary. |
-| **Package Family Name** |  Specifies the package family name of the binary. The package family name consists of two parts: the name of the file and the publisher ID. |
-| **Product Name** |  Specifies the name of the product with which the binary ships. |
