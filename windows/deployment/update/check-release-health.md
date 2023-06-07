@@ -21,7 +21,7 @@ To be informed about the latest updates and releases, follow [@WindowsUpdate](ht
 
 ## Prerequisites
 
-Ensure the following prerequisites are met to display the Windows release health page in the Microsoft 365 admin center:
+Ensure the following prerequisites are met to display the Windows release health page in the Microsoft 365 admin center: <!--7872213-->
 
 - One of the following licenses:
    - Windows 10/11 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5)
