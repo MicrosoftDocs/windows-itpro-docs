@@ -175,7 +175,7 @@ To allow apps to run by setting their installers as managed installers, follow t
 
 ## Next steps
 
-<!-->
+<!--
 Before moving on to the next section, ensure that you've completed the following tasks.
 
 For a WDAC supplemental policy:

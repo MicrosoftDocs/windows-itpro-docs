@@ -158,7 +158,8 @@ Before moving on to the next section, ensure that you've completed the following
 
 Select one of the following options to learn the next steps:
 
-- If the apps don't work as expected, you must create and deploy WDAC or AppLocker policies to allow the apps to run
+<!--- If the apps don't work as expected, you must create and deploy WDAC or AppLocker policies to allow the apps to run-->
+- If the apps don't work as expected, you must create and deploy AppLocker policies to allow the apps to run
   > [!div class="nextstepaction"]
   > [Next: Create policies>](create-policies.md)
 - If the applications you are deploying don't have any issues, you can skip to important considerations when deploying apps and policies
