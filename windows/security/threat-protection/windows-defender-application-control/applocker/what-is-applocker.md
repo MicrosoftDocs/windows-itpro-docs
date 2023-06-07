@@ -1,29 +1,18 @@
 ---
-title: What Is AppLocker 
+title: What Is AppLocker
 description: This topic for the IT professional describes what AppLocker is and how its features differ from Software Restriction Policies.
-ms.assetid: 44a8a2bb-0f83-4f95-828e-1f364fb65869
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # What Is AppLocker?
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -83,5 +72,3 @@ The following table compares the application control functions of Software Restr
 ## Related topics
 
 - [AppLocker technical reference](applocker-technical-reference.md)
-
-

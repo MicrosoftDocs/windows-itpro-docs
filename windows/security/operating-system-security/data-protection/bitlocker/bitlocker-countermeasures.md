@@ -1,5 +1,5 @@
 ---
-title: BitLocker Countermeasures 
+title: BitLocker Countermeasures
 description: Windows uses technologies including TPM, Secure Boot, Trusted Boot, and Early Launch Anti-malware (ELAM) to protect against attacks on the BitLocker encryption key.
 ms.topic: conceptual
 ms.date: 11/08/2022
@@ -31,7 +31,7 @@ A trusted platform module (TPM) is a microchip designed to provide basic securit
 
 Unified Extensible Firmware Interface (UEFI) is a programmable boot environment that initializes devices and starts the operating system's bootloader.
 
-The UEFI specification defines a firmware execution authentication process called [Secure Boot](../../../information-protection/secure-the-windows-10-boot-process.md). Secure Boot blocks untrusted firmware and bootloaders (signed or unsigned) from being able to start on the system.
+The UEFI specification defines a firmware execution authentication process called [Secure Boot](../../system-security/secure-the-windows-10-boot-process.md). Secure Boot blocks untrusted firmware and bootloaders (signed or unsigned) from being able to start on the system.
 
 By default, BitLocker provides integrity protection for Secure Boot by utilizing the TPM PCR[7] measurement. An unauthorized EFI firmware, EFI boot application, or bootloader can't run and acquire the BitLocker key.
 
@@ -56,11 +56,11 @@ Pre-boot authentication is designed to prevent the encryption keys from being lo
 
 On computers with a compatible TPM, operating system drives that are BitLocker-protected can be unlocked in four ways:
 
-- **TPM-only.** Using TPM-only validation doesn't require any interaction with the user to unlock and provide access to the drive. If the TPM validation succeeds, the user sign-in experience is the same as a standard sign-in. If the TPM is missing or changed or if BitLocker detects changes to the BIOS or UEFI code or configuration, critical operating system startup files, or the boot configuration, BitLocker enters recovery mode, and the user must enter a recovery password to regain access to the data. This option is more convenient for sign-in but less secure than the other options, which require an additional authentication factor.  
+- **TPM-only.** Using TPM-only validation doesn't require any interaction with the user to unlock and provide access to the drive. If the TPM validation succeeds, the user sign-in experience is the same as a standard sign-in. If the TPM is missing or changed or if BitLocker detects changes to the BIOS or UEFI code or configuration, critical operating system startup files, or the boot configuration, BitLocker enters recovery mode, and the user must enter a recovery password to regain access to the data. This option is more convenient for sign-in but less secure than the other options, which require an additional authentication factor.
 
 - **TPM with startup key.** In addition to the protection that the TPM-only provides, part of the encryption key is stored on a USB flash drive, referred to as a startup key. Data on the encrypted volume can't be accessed without the startup key.
 
-- **TPM with PIN.** In addition to the protection that the TPM provides, BitLocker requires that the user enters a PIN. Data on the encrypted volume can't be accessed without entering the PIN. TPMs also have [anti-hammering protection](/windows/security/hardware-protection/tpm/tpm-fundamentals#anti-hammering) that is designed to prevent brute force attacks that attempt to determine the PIN.  
+- **TPM with PIN.** In addition to the protection that the TPM provides, BitLocker requires that the user enters a PIN. Data on the encrypted volume can't be accessed without entering the PIN. TPMs also have [anti-hammering protection](/windows/security/hardware-protection/tpm/tpm-fundamentals#anti-hammering) that is designed to prevent brute force attacks that attempt to determine the PIN.
 
 - **TPM with startup key and PIN.** In addition to the core component protection that the TPM-only provides, part of the encryption key is stored on a USB flash drive, and a PIN is required to authenticate the user to the TPM. This configuration provides multifactor authentication so that if the USB key is lost or stolen, it can't be used for access to the drive, because the correct PIN is also required.
 
@@ -72,11 +72,11 @@ Pre-boot authentication with a PIN can mitigate an attack vector for devices tha
 
 On the other hand, Pre-boot authentication-prompts can be inconvenient to users. In addition, users who forget their PIN or lose their startup key are denied access to their data until they can contact their organization's support team to obtain a recovery key. Pre-boot authentication can also make it more difficult to update unattended desktops and remotely administered servers because a PIN needs to be entered when a computer reboots or resumes from hibernation.
 
-To address these issues, [BitLocker Network Unlock](./bitlocker-how-to-enable-network-unlock.md) can be deployed. Network Unlock allows systems within the physical enterprise security perimeter that meet the hardware requirements and have BitLocker enabled with TPM+PIN to boot into Windows without user intervention. It requires direct ethernet connectivity to an enterprise Windows Deployment Services (WDS) server.  
+To address these issues, [BitLocker Network Unlock](./bitlocker-how-to-enable-network-unlock.md) can be deployed. Network Unlock allows systems within the physical enterprise security perimeter that meet the hardware requirements and have BitLocker enabled with TPM+PIN to boot into Windows without user intervention. It requires direct ethernet connectivity to an enterprise Windows Deployment Services (WDS) server.
 
 ### Protecting Thunderbolt and other DMA ports
 
-There are a few different options to protect DMA ports, such as Thunderbolt&trade;3. Beginning with Windows 10 version 1803, new Intel-based devices have kernel protection against DMA attacks via Thunderbolt&trade; 3 ports enabled by default. This Kernel DMA Protection is available only for new systems beginning with Windows 10 version 1803, as it requires changes in the system firmware and/or BIOS.  
+There are a few different options to protect DMA ports, such as Thunderbolt&trade;3. Beginning with Windows 10 version 1803, new Intel-based devices have kernel protection against DMA attacks via Thunderbolt&trade; 3 ports enabled by default. This Kernel DMA Protection is available only for new systems beginning with Windows 10 version 1803, as it requires changes in the system firmware and/or BIOS.
 
 You can use the System Information desktop app `MSINFO32.exe` to check if a device has kernel DMA protection enabled:
 
@@ -98,7 +98,7 @@ For Thunderbolt v1 and v2 (DisplayPort Connector), refer to the **Thunderbolt Mi
 
 ## Attack countermeasures
 
-This section covers countermeasures for specific types of attacks. 
+This section covers countermeasures for specific types of attacks.
 
 ### Bootkits and rootkits
 

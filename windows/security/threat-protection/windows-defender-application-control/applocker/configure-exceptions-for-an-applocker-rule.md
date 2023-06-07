@@ -1,29 +1,18 @@
 ---
-title: Add exceptions for an AppLocker rule 
+title: Add exceptions for an AppLocker rule
 description: This topic for IT professionals describes the steps to specify which apps can or cannot run as exceptions to an AppLocker rule.
-ms.assetid: d15c9d84-c14b-488d-9f48-bf31ff7ff0c5
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # Add exceptions for an AppLocker rule
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -45,5 +34,3 @@ You can perform this task by using the Group Policy Management Console for an Ap
     -   For a path exception, choose the file or folder path to exclude, and then click **OK**.
     -   For a file hash exception, edit the file hash rule, and click **Remove**.
     -   For a packaged apps exception, click **Add** to create the exceptions based on reference app and rule scope.
- 
- 
