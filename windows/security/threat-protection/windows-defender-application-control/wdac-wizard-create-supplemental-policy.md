@@ -14,7 +14,7 @@ ms.reviewer: isbrahm
 ms.author: vinpa
 manager: aaroncz
 ms.topic: conceptual
-ms.date: 10/14/2020
+ms.date: 06/07/2023
 ms.technology: itpro-security
 ---
 
@@ -35,7 +35,7 @@ Prerequisite information about application control can be accessed through the [
 
 ## Expanding a Base Policy
 
-Once the Supplemental Policy type is chosen on the New Policy page, policy name and file dialog fields can be used to name and save the supplemental policy. The next step requires selecting a base policy to expand. To expand a base policy, the base must allow supplemental policies. The WDAC Wizard will verify if the base policy allows supplementals and will show the following confirmation. 
+Once the Supplemental Policy type is chosen on the New Policy page, policy name and file dialog fields can be used to name and save the supplemental policy. The next step requires selecting a base policy to expand. To expand a base policy, the base must allow supplemental policies. The WDAC Wizard will verify if the base policy allows supplementals and will show the following confirmation.
 
 ![Base policy allows supplemental policies.](images/wdac-wizard-supplemental-expandable.png)
 
@@ -49,14 +49,13 @@ Policies that can't be supplemented, for instance, a supplemental policy, will b
 
 ## Configuring Policy Rules
 
-Upon page launch, policy rules will be automatically enabled/disabled depending on the chosen base policy from the previous page. Most of the supplemental policy rules must be inherited from the base policy. The Wizard will automatically parse the base policy and set the required supplemental policy rules to match the base policy rules. Inherited policy rules will be grayed out and won't be modifiable in the user interface. 
+Upon page launch, policy rules will be automatically enabled/disabled depending on the chosen base policy from the previous page. Most of the supplemental policy rules must be inherited from the base policy. The Wizard will automatically parse the base policy and set the required supplemental policy rules to match the base policy rules. Inherited policy rules will be grayed out and won't be modifiable in the user interface.
 
-A short description of the rule will be shown at the bottom of the page when the cursor is placed on the rule title. 
+A short description of the rule will be shown at the bottom of the page when the cursor is placed on the rule title.
 
 ### Configurable Supplemental Policy Rules Description
 
-There are only three policy rules that can be configured by the supplemental policy. A description of each policy rule, beginning with the left-most column, is provided below. Selecting the **+ Advanced Options** label will show another column of policy rules; advanced policy rules. 
-
+There are only three policy rules that can be configured by the supplemental policy. A description of each policy rule, beginning with the left-most column, is provided below. Selecting the **+ Advanced Options** label will show another column of policy rules; advanced policy rules.
 
 | Rule option | Description |
 |------------ | ----------- |
@@ -68,11 +67,11 @@ There are only three policy rules that can be configured by the supplemental pol
 
 ## Creating custom file rules
 
-File rules in an application control policy will specify the level at which applications will be identified and trusted. File rules are the main mechanism for defining trust in the application control policy. Selecting the **+ Custom Rules** will open the custom file rule conditions panel to create and customize targeted file rules for your policy. The Wizard supports four types of file rules: 
+File rules in an application control policy will specify the level at which applications will be identified and trusted. File rules are the main mechanism for defining trust in the application control policy. Selecting the **+ Custom Rules** will open the custom file rule conditions panel to create and customize targeted file rules for your policy. The Wizard supports four types of file rules:
 
 ### Publisher Rules
 
-The Publisher file rule type uses properties in the code signing certificate chain to base file rules. Once the file to base the rule off of, called the *reference file*, is selected, use the slider to indicate the specificity of the rule.  The table below shows the relationship between the slider placement, the corresponding Windows Defender Application Control (WDAC) rule level, and its description. The lower the placement on the table and the UI slider, the greater the specificity of the rule. 
+The Publisher file rule type uses properties in the code signing certificate chain to base file rules. Once the file to base the rule off of, called the *reference file*, is selected, use the slider to indicate the specificity of the rule.  The table below shows the relationship between the slider placement, the corresponding Windows Defender Application Control (WDAC) rule level, and its description. The lower the placement on the table and the UI slider, the greater the specificity of the rule.
 
 | Rule Condition | WDAC Rule Level | Description |
 |------------ | ----------- | ----------- |
@@ -86,11 +85,11 @@ The Publisher file rule type uses properties in the code signing certificate cha
 
 ### Filepath Rules
 
-Filepath rules don't provide the same security guarantees that explicit signer rules do, as they're based on mutable access permissions. To create a filepath rule, select the file using the *Browse* button. 
+Filepath rules don't provide the same security guarantees that explicit signer rules do, as they're based on mutable access permissions. To create a filepath rule, select the file using the *Browse* button.
 
 ### File Attribute Rules
 
-The Wizard supports the creation of [file name rules](select-types-of-rules-to-create.md#windows-defender-application-control-filename-rules) based on authenticated file attributes. File name rules are useful when an application and its dependencies (for example, DLLs) may all share the same product name, for instance. This rule level allows users to easily create targeted policies based on the Product Name file name. To select the file attribute to create the rule, move the slider on the Wizard to the desired attribute. The table below describes each of the supported file attributes off which to create a rule. 
+The Wizard supports the creation of [file name rules](select-types-of-rules-to-create.md#use--specificfilenamelevel-with-filename-filepublisher-or-whqlfilepublisher-level-rules) based on authenticated file attributes. File name rules are useful when an application and its dependencies (for example, DLLs) may all share the same product name, for instance. This rule level allows users to easily create targeted policies based on the Product Name file name. To select the file attribute to create the rule, move the slider on the Wizard to the desired attribute. The table below describes each of the supported file attributes off which to create a rule.
 
 | Rule level | Description |
 |------------ | ----------- |
@@ -99,17 +98,15 @@ The Wizard supports the creation of [file name rules](select-types-of-rules-to-c
 | **Product name** | Specifies the name of the product with which the binary ships. |
 | **Internal name** | Specifies the internal name of the binary. |
 
-
 ![Custom file attributes rule.](images/wdac-wizard-custom-file-attribute-rule.png)
 
 ### File Hash Rules
 
-Lastly, the Wizard supports creating file rules using the hash of the file. Although this level is specific, it can cause extra administrative overhead to maintain the current product versions’ hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. By default, the Wizard will use file hash as the fallback in case a file rule can't be created using the specified file rule level. 
+Lastly, the Wizard supports creating file rules using the hash of the file. Although this level is specific, it can cause extra administrative overhead to maintain the current product versions’ hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. By default, the Wizard will use file hash as the fallback in case a file rule can't be created using the specified file rule level.
 
-
-#### Deleting Signing Rules 
+#### Deleting Signing Rules
   
-The table on the left of the page will document the allow and deny rules in the template, and any custom rules you create. Rules can be deleted from the policy by selecting the rule from the rules list table. Once the rule is highlighted, press the delete button underneath the table. you'll be prompted for another confirmation. Select `Yes` to remove the rule from the policy and the rules table. 
+The table on the left of the page will document the allow and deny rules in the template, and any custom rules you create. Rules can be deleted from the policy by selecting the rule from the rules list table. Once the rule is highlighted, press the delete button underneath the table. you'll be prompted for another confirmation. Select `Yes` to remove the rule from the policy and the rules table.
 
 ## Up next
 
