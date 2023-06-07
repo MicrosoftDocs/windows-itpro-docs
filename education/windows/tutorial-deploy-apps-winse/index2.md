@@ -87,9 +87,74 @@ There are three main steps to install an application on Windows 11 SE using the 
     :::image type="icon" source="images/phase-3-off.svg" border="false":::
       [**Create additional policies (optional)**](create-policies.md)
    :::column-end:::
+   :::column span="":::
+    :::image type="icon" source="images/phase-3-off.svg" border="false":::
+      [**Create additional policies (optional)**](create-policies.md)
+   :::column-end:::
+   :::column span="":::
+    :::image type="icon" source="images/phase-3-off.svg" border="false":::
+      [**Create additional policies (optional)**](create-policies.md)
+   :::column-end:::
+   :::column span="":::
+    :::image type="icon" source="images/phase-3-off.svg" border="false":::
+      [**Create additional policies (optional)**](create-policies.md)
+   :::column-end:::
+   :::column span="":::
+    :::image type="icon" source="images/phase-3-off.svg" border="false":::
+      [**Create additional policies (optional)**](create-policies.md)
+   :::column-end:::
+   :::column span="":::
+    :::image type="icon" source="images/phase-3-off.svg" border="false":::
+      [**Create additional policies (optional)**](create-policies.md)
+   :::column-end:::
 :::row-end:::
 
-All the steps are done by the IT administrator. Once the steps are complete, users of Windows 11 SE devices should be able to run the applications deployed via Intune.
+## Installation process 4
+
+:::row:::
+   :::column span="":::
+    :::image type="icon" source="images/phase-1-off.svg" border="false":::
+      [**Deploy an application via Microsoft Intune**](deploy-apps.md)
+   :::column-end:::
+   :::column span="":::
+    :::image type="icon" source="images/phase-2-off.svg" border="false":::
+      [**Validate the application**](validate-apps.md)
+   :::column-end:::
+   :::column span="":::
+    :::image type="icon" source="images/phase-3-off.svg" border="false":::
+      [**Create additional policies (optional)**](create-policies.md)
+   :::column-end:::
+:::row-end:::
+
+## Installation process 5
+
+:::row:::
+   :::column span="1":::
+    :::image type="icon" source="images/phase-1-off.svg" border="false":::
+      [**Deploy an application via Microsoft Intune**](deploy-apps.md)
+   :::column-end:::
+   :::column span="3":::
+      Applications are deployed via Microsoft Intune. There are some restrictions on the types of apps that are compatible with managed installers, but the process is the same used for non-Windows 11 SE devices
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+    :::image type="icon" source="images/phase-1-off.svg" border="false":::
+      [**Deploy an application via Microsoft Intune**](deploy-apps.md)
+   :::column-end:::
+   :::column span="3":::
+      Applications are deployed via Microsoft Intune. There are some restrictions on the types of apps that are compatible with managed installers, but the process is the same used for non-Windows 11 SE devices
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="1":::
+    :::image type="icon" source="images/phase-1-off.svg" border="false":::
+      [**Deploy an application via Microsoft Intune**](deploy-apps.md)
+   :::column-end:::
+   :::column span="3":::
+      Applications are deployed via Microsoft Intune. There are some restrictions on the types of apps that are compatible with managed installers, but the process is the same used for non-Windows 11 SE devices
+   :::column-end:::
+:::row-end:::
 
 ## Prerequisites
 
