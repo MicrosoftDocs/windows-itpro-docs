@@ -156,14 +156,16 @@ Supported values:
 
 ### Protected client
 
-Applies more security settings to the sandbox Remote Desktop client, decreasing its attack surface.
+When Protected Mode is enabled, Sandbox adds a new layer of security boundary by running in an [AppContainer Isolation](/windows/win32/secauthz/appcontainer-isolation) execution environment.
+
+The AppContainer Isolation provides isolation of Credentil, Device, File, Network, Process, and Window.
 
 `<ProtectedClient>value</ProtectedClient>`
 
 Supported values:
 
-- *Enable*: Runs Windows sandbox in Protected Client mode. If this value is set, the sandbox runs with extra security mitigations enabled.
-- *Disable*: Runs the sandbox in standard mode without extra security mitigations.
+- *Enable*: Runs Windows sandbox in Protected Client mode. If this value is set, the Sandbox runs in AppContainer Isolation.
+- *Disable*: Runs the Sandbox in the standard mode without extra security mitigations.
 - *Default*: This value is the default value for Protected Client mode. Currently, this default value denotes that the sandbox doesn't run in Protected Client mode.
 
 > [!NOTE]
@@ -190,7 +192,7 @@ Enables or disables sharing of the host clipboard with the sandbox.
 Supported values:
 
 - *Enable*: Enables sharing of the host clipboard with the sandbox.
-- *Disable*: Disables clipboard redirection in the sandbox. If this value is set, copy/paste in and out of the sandbox will be restricted.
+- - *Disable*: Disables clipboard redirection in the sandbox. If this value is set, copy/paste in and out of the sandbox will be restricted.
 - *Default*: This value is the default value for clipboard redirection. Currently, copy/paste between the host and sandbox are permitted under *Default*.
 
 ### Memory in MB
@@ -303,3 +305,4 @@ $SwapButtons::SwapMouseButton(!([System.Windows.Forms.SystemInformation]::MouseB
   </LogonCommand>
 </Configuration>
 ```
+
