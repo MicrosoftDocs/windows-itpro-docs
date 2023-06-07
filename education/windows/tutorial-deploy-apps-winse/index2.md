@@ -131,28 +131,25 @@ There are three main steps to install an application on Windows 11 SE using the 
 :::row:::
    :::column span="1":::
     :::image type="icon" source="images/phase-1-off.svg" border="false":::
-      [**Deploy an application via Microsoft Intune**](deploy-apps.md)
    :::column-end:::
    :::column span="3":::
-      Applications are deployed via Microsoft Intune. There are some restrictions on the types of apps that are compatible with managed installers, but the process is the same used for non-Windows 11 SE devices
+      [**Deploy an application via Microsoft Intune**](deploy-apps.md) - Applications are deployed via Microsoft Intune. There are some restrictions on the types of apps that are compatible with managed installers, but the process is the same used for non-Windows 11 SE devices
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
     :::image type="icon" source="images/phase-1-off.svg" border="false":::
-      [**Deploy an application via Microsoft Intune**](deploy-apps.md)
    :::column-end:::
    :::column span="3":::
-      Applications are deployed via Microsoft Intune. There are some restrictions on the types of apps that are compatible with managed installers, but the process is the same used for non-Windows 11 SE devices
+      [**Deploy an application via Microsoft Intune**](deploy-apps.md) - Applications are deployed via Microsoft Intune. There are some restrictions on the types of apps that are compatible with managed installers, but the process is the same used for non-Windows 11 SE devices
    :::column-end:::
 :::row-end:::
 :::row:::
    :::column span="1":::
     :::image type="icon" source="images/phase-1-off.svg" border="false":::
-      [**Deploy an application via Microsoft Intune**](deploy-apps.md)
    :::column-end:::
    :::column span="3":::
-      Applications are deployed via Microsoft Intune. There are some restrictions on the types of apps that are compatible with managed installers, but the process is the same used for non-Windows 11 SE devices
+      [**Deploy an application via Microsoft Intune**](deploy-apps.md) - Applications are deployed via Microsoft Intune. There are some restrictions on the types of apps that are compatible with managed installers, but the process is the same used for non-Windows 11 SE devices
    :::column-end:::
 :::row-end:::
 
