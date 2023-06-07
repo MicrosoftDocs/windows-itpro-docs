@@ -35,7 +35,7 @@ Ensure the following prerequisites are met to display the Windows release health
 
 ## How to review Windows release health information
 
-1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com) and sign in with an administrator account.
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com) and sign in with an admin account.
   
 1. To view Windows release health in the Microsoft 365 Admin Center, go to **Health > Windows release health**.
 
@@ -43,15 +43,15 @@ Ensure the following prerequisites are met to display the Windows release health
 
    The **All versions** tab (the default view) shows all Windows products with access to their posted known issues.
 
-   ![View of current issues in release health.](images/WRH-menu.png)
+   ![Screenshot of current issues in release health.](images/WRH-menu.png)
 
    A known issue is an issue that has been identified in a Windows monthly update or feature update that impacts Windows devices. The **Active and recently resolved** column provides a link to the **Known issues** tab filtered to the version selected. Selecting the **Known issues** tab shows known issues that are active or resolved within the last 30 days.
 
-   ![View of known issues in release health.](images/WRH-known-issues-20H2.png)
+   ![Screenshot of known issues in release health.](images/WRH-known-issues-20H2.png)
 
    The **History** tab shows the history of known issues that have been resolved for up to 6 months.
 
-   ![View of history issues in release health.](images/WRH-history-20H2.png)
+   ![Screenshot of history issues in release health.](images/WRH-history-20H2.png)
 
    The known issue summary provides the following information:
 
@@ -98,11 +98,11 @@ In the **Windows release health** experience, every known issue is assigned as s
 
 The Windows release health page lets you view the history of all status updates posted for a specific known issue. To view all past updates posted for a given issue, select **View history** on the issue detail page.
   
-![Show link to view message history.](images/WRH-view-message-history-padded.png)
+![Screenshot of the link to view message history.](images/WRH-view-message-history-padded.png)
   
 A list of all status updates posted in the selected time frame is displayed. You can expand any row to view the specific information provided in that status update.  
 
-![View message history.](images/WRH-message-history-example-padded.png)
+![Screenshot of the message history.](images/WRH-message-history-example-padded.png)
   
 ## Frequently asked questions
 
