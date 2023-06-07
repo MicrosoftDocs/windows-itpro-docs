@@ -1,29 +1,18 @@
 ---
-title: AppLocker policy use scenarios 
+title: AppLocker policy use scenarios
 description: This topic for the IT professional lists the various application control scenarios in which AppLocker policies can be effectively implemented.
-ms.assetid: 33f71578-89f0-4063-ac04-cf4f4ca5c31f
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # AppLocker policy use scenarios
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -71,5 +60,3 @@ The following are examples of scenarios in which AppLocker can be used:
 
 ## Related topics
 - [AppLocker technical reference](applocker-technical-reference.md)
- 
- 
