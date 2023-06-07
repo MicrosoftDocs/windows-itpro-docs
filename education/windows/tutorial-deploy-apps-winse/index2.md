@@ -56,19 +56,36 @@ All the steps are done by the IT administrator. Once the steps are complete, use
 There are three main steps to install an application on Windows 11 SE using the managed installer. Each step will be covered in detail in the next sections of this tutorial:
 :::row:::
    :::column span="":::
-    :::image type="icon" source="phase-1-on.svg" border="false":::
+    :::image type="icon" source="images/phase-1-on.svg" border="false":::
       [**Deploy an application via Microsoft Intune**](deploy-apps.md)<br>
       Applications are deployed via Microsoft Intune. There are some restrictions on the types of apps that are compatible with managed installers, but the process is the same used for non-Windows 11 SE devices
    :::column-end:::
    :::column span="":::
-    :::image type="icon" source="phase-2-on.svg" border="false":::
+    :::image type="icon" source="images/phase-2-on.svg" border="false":::
       [**Validate the application**](validate-apps.md)<br>
       Applications are validated to ensure that they're installed and execute successfully. The process is the same for non-Windows 11 SE devices. Some applications may be incompatible due to how they're installed, how they execute, or how they update. You'll learn about known limitations in a later section of the tutorial
    :::column-end:::
    :::column span="":::
-    :::image type="icon" source="phase-3-on.svg" border="false":::
+    :::image type="icon" source="images/phase-3-on.svg" border="false":::
       [**Create additional policies (optional)**](create-policies.md)<br>
       To allow apps that aren't installable or don't behave as intended, more policies can be created and deployed so that the apps can be used
+   :::column-end:::
+:::row-end:::
+
+## Installation process 3
+
+:::row:::
+   :::column span="":::
+    :::image type="icon" source="images/phase-1-off.svg" border="false":::
+      [**Deploy an application via Microsoft Intune**](deploy-apps.md)
+   :::column-end:::
+   :::column span="":::
+    :::image type="icon" source="images/phase-2-off.svg" border="false":::
+      [**Validate the application**](validate-apps.md)
+   :::column-end:::
+   :::column span="":::
+    :::image type="icon" source="images/phase-3-off.svg" border="false":::
+      [**Create additional policies (optional)**](create-policies.md)
    :::column-end:::
 :::row-end:::
 
