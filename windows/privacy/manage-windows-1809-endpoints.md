@@ -296,6 +296,7 @@ If you [turn off traffic for these endpoints](manage-connections-from-windows-op
 | Source process | Protocol | Destination |
 |:--------------:|:--------:|:------------|
 |  | HTTP   | `storeedgefd.dsx.mp.microsoft.com`  |
+|  | HTTP \ HTTPS   | `pti.store.microsoft.com`  |
 ||TLS v1.2| `cy2.*.md.mp.microsoft.com.*.` |
 | svchost | HTTPS | `displaycatalog.mp.microsoft.com` |
 
