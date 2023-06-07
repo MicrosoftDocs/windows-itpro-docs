@@ -27,7 +27,7 @@ You can choose to hide the entire section by using Group Policy. The section won
 > [!NOTE]
 > If you hide all sections then the app will show a restricted interface, as in the following screenshot:
 >
-> ![Windows Security app with all sections hidden by Group Policy.](images/wdsc-all-hide.png)
+> ![Screenshot of the Windows Security app with all sections hidden by Group Policy.](images/wdsc-all-hide.png)
 
 ## Disable the Clear TPM button
 
