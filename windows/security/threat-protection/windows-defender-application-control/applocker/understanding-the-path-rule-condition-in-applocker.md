@@ -1,29 +1,18 @@
 ---
-title: Understanding the path rule condition in AppLocker 
+title: Understanding the path rule condition in AppLocker
 description: This topic explains the AppLocker path rule condition, the advantages and disadvantages, and how it's applied.
-ms.assetid: 3fa54ded-4466-4f72-bea4-2612031cad43
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # Understanding the path rule condition in AppLocker
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -43,7 +32,6 @@ AppLocker doesn't enforce rules that specify paths with short names. You should 
 The asterisk (\*) wildcard character can be used within **Path** field. The asterisk (\*) character used by itself represents any path. When combined with any string value, the rule is limited to the path of the file and all the files under that path. For example, %ProgramFiles%\\Internet Explorer\\\* indicates that all files and subfolders within the Internet Explorer folder will be affected by the rule.
 
 AppLocker uses path variables for well-known directories in Windows. Path variables aren't environment variables. The AppLocker engine can only interpret AppLocker path variables. The following table details these path variables.
-
 
 |               Windows directory or drive                | AppLocker path variable |      Windows environment variable      |
 |---------------------------------------------------------|-------------------------|----------------------------------------|
