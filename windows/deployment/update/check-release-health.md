@@ -1,7 +1,7 @@
 ---
 title: How to check Windows release health
 description: Check the release health status of Microsoft 365 services before you call support to see if there's an active service interruption.
-ms.date: 05/10/2023
+ms.date: 06/07/2023
 ms.author: mstewart
 author: mestew
 manager: aaroncz
@@ -23,10 +23,12 @@ To be informed about the latest updates and releases, follow [@WindowsUpdate](ht
 
 Ensure the following prerequisites are met to display the Windows release health page in the Microsoft 365 admin center:
 
-- Sign into the Microsoft 365 admin center using an [admin role](/microsoft-365/admin/add-users/about-admin-roles)
 - One of the following licenses:
    - Windows 10/11 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5)
    - Windows 10/11 Education A3 or A5 (included in Microsoft 365 A3 or A5)
+
+- Sign into the Microsoft 365 admin center using an [admin role](/microsoft-365/admin/add-users/about-admin-roles).
+   - Most roles containing the word `administrator` give you access to the Windows release health page such as [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator), [Helpdesk Administrator](/azure/active-directory/roles/permissions-reference#helpdesk-administrator), and [Service Support Administrator](/azure/active-directory/roles/permissions-reference#service-support-administrator). For more information, see [Assign admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/assign-admin-roles).
 
 > [!NOTE]
 > Currently, Windows release health isn't available for Government Community Cloud (GCC) tenants.
@@ -34,13 +36,10 @@ Ensure the following prerequisites are met to display the Windows release health
 ## How to review Windows release health information
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com) and sign in with an administrator account.
-
-    > [!NOTE]
-    > Most roles containing the word `admin` give you access to Windows release health such as global administrator, helpdesk administrator, and service support administrator. To allow Exchange, SharePoint, and Skype for Business admins to view the Windows release health page, you must first assign them to a Service admin role. For more information about roles that can view service health, see [About admin roles](/microsoft-365/admin/add-users/about-admin-roles#commonly-used-microsoft-365-admin-center-roles).
   
-2. To view Windows release health in the Microsoft 365 Admin Center, go to **Health > Windows release health**.
+1. To view Windows release health in the Microsoft 365 Admin Center, go to **Health > Windows release health**.
 
-3. On the **Windows release health** page, you'll have access to known issue information for all supported versions of the Windows operating system.
+1. On the **Windows release health** page, you'll have access to known issue information for all supported versions of the Windows operating system.
 
    The **All versions** tab (the default view) shows all Windows products with access to their posted known issues.
 
