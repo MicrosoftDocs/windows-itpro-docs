@@ -166,6 +166,8 @@ Using a WDAC supplemental policy instead, allows you to have more control over w
 To allow apps to run by setting their installers as managed installers, follow the guidance here:
 -->
 
+## AppLocker policies
+
 Additional AppLocker policies work by configuring other apps to be *managed installers*. However, since anything downloaded or installed by a managed installer is trusted to run, it creates a significant security risk. For example, if the executable for a third-party browser is set as a managed installer, anything downloaded from that browser will be allowed to run.
 
 To allow apps to run by setting their installers as managed installers, follow the guidance here:
