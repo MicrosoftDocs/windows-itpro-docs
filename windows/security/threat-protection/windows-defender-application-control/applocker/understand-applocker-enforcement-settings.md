@@ -1,5 +1,5 @@
 ---
-title: Understand AppLocker enforcement settings (Windows)
+title: Understand AppLocker enforcement settings 
 description: This topic describes the AppLocker enforcement settings for rule collections.
 ms.assetid: 48773007-a343-40bf-8961-b3ff0a450d7e
 ms.reviewer: 

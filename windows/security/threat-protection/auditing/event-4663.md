@@ -1,5 +1,5 @@
 ---
-title: 4663(S) An attempt was made to access an object. (Windows 10)
+title: 4663(S) An attempt was made to access an object. 
 description: Describes security event 4663(S) An attempt was made to access an object.
 ms.pagetype: security
 ms.prod: windows-client

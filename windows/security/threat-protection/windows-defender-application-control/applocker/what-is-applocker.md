@@ -1,5 +1,5 @@
 ---
-title: What Is AppLocker (Windows)
+title: What Is AppLocker 
 description: This topic for the IT professional describes what AppLocker is and how its features differ from Software Restriction Policies.
 ms.assetid: 44a8a2bb-0f83-4f95-828e-1f364fb65869
 ms.reviewer: 

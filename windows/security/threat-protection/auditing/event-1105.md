@@ -1,5 +1,5 @@
 ---
-title: 1105(S) Event log automatic backup. (Windows 10)
+title: 1105(S) Event log automatic backup. 
 description: This event generates every time Windows security log becomes full and new event log file was created.
 ms.pagetype: security
 ms.prod: windows-client

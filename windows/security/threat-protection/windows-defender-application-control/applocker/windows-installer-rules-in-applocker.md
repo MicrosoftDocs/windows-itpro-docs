@@ -1,5 +1,5 @@
 ---
-title: Windows Installer rules in AppLocker (Windows)
+title: Windows Installer rules in AppLocker 
 description: This topic describes the file formats and available default rules for the Windows Installer rule collection.
 ms.assetid: 3fecde5b-88b3-4040-81fa-a2d36d052ec9
 ms.reviewer: 

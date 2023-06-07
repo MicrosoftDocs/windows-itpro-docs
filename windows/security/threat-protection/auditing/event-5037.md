@@ -1,5 +1,5 @@
 ---
-title: 5037(F) The Windows Firewall Driver detected critical runtime error. Terminating. (Windows 10)
+title: 5037(F) The Windows Firewall Driver detected critical runtime error. Terminating. 
 description: Describes security event 5037(F) The Windows Firewall Driver detected critical runtime error. Terminating.
 ms.pagetype: security
 ms.prod: windows-client

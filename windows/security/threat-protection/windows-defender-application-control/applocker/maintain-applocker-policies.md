@@ -1,5 +1,5 @@
 ---
-title: Maintain AppLocker policies (Windows)
+title: Maintain AppLocker policies 
 description: Learn how to maintain rules within AppLocker policies. View common AppLocker maintenance scenarios and see the methods to use to maintain AppLocker policies.
 ms.assetid: b4fbfdfe-ef3d-49e0-a390-f2dfe74602bc
 ms.reviewer: 

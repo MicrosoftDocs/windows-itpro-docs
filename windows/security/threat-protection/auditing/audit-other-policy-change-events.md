@@ -1,5 +1,5 @@
 ---
-title: Audit Other Policy Change Events (Windows 10)
+title: Audit Other Policy Change Events 
 description: The policy setting, Audit Other Policy Change Events, determines if audit events are generated for security policy changes that are not otherwise audited.
 ms.assetid: 8618502e-c21c-41cc-8a49-3dc1eb359e60
 ms.reviewer: 

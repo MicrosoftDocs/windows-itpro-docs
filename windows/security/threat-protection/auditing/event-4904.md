@@ -1,5 +1,5 @@
 ---
-title: 4904(S) An attempt was made to register a security event source. (Windows 10)
+title: 4904(S) An attempt was made to register a security event source. 
 description: Describes security event 4904(S) An attempt was made to register a security event source.
 ms.pagetype: security
 ms.prod: windows-client

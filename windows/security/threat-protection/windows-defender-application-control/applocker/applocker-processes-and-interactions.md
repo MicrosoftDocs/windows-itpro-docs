@@ -1,5 +1,5 @@
 ---
-title: AppLocker processes and interactions (Windows)
+title: AppLocker processes and interactions 
 description: This topic for the IT professional describes the process dependencies and interactions when AppLocker evaluates and enforces rules.
 ms.assetid: 0beec616-6040-4be7-8703-b6c919755d8e
 ms.reviewer: 

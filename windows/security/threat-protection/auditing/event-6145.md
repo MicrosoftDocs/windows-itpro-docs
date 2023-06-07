@@ -1,5 +1,5 @@
 ---
-title: 6145(F) One or more errors occurred while processing security policy in the group policy objects. (Windows 10)
+title: 6145(F) One or more errors occurred while processing security policy in the group policy objects. 
 description: Describes security event 6145(F) One or more errors occurred while processing security policy in the group policy objects.
 ms.pagetype: security
 ms.prod: windows-client

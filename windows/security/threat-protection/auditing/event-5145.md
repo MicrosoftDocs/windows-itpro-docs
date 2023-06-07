@@ -1,5 +1,5 @@
 ---
-title: 5145(S, F) A network share object was checked to see whether client can be granted desired access. (Windows 10)
+title: 5145(S, F) A network share object was checked to see whether client can be granted desired access. 
 description: Describes security event 5145(S, F) A network share object was checked to see whether client can be granted desired access.
 ms.pagetype: security
 ms.prod: windows-client

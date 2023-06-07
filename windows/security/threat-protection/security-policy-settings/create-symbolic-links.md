@@ -1,5 +1,5 @@
 ---
-title: Create symbolic links (Windows 10)
+title: Create symbolic links 
 description: Describes the best practices, location, values, policy management, and security considerations for the Create symbolic links security policy setting.
 ms.assetid: 882922b9-0ff8-4ee9-8afc-4475515ee3fd
 ms.reviewer: 

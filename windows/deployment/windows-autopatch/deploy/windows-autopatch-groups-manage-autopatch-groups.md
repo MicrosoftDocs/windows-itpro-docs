@@ -1,7 +1,7 @@
 ---
 title: Manage Windows Autopatch groups
 description: This article explains how to manage Autopatch groups
-ms.date: 05/05/2023
+ms.date: 06/05/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -99,6 +99,10 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
 
 ## Edit the Default or a Custom Autopatch group
 
+> [!TIP]
+> You can't edit an Autopatch group when there's one or more Windows feature update releases targeted to it. If you try to edit an Autopatch group with one or more ongoing Windows feature update releases targeted to it, you get the following informational banner message: "**Some settings are not allowed to be modified as there’s one or more on-going Windows feature update release targeted to this Autopatch group.**"
+> See [Manage Windows feature update releases](../operate/windows-autopatch-groups-manage-windows-feature-update-release.md) for more information on release and phase statuses.
+
 **To edit either the Default or a Custom Autopatch group:**
 
 1. Select the **horizontal ellipses (…)** > **Edit** for the Autopatch group you want to edit.
@@ -110,6 +114,18 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
 
 > [!IMPORTANT]
 > Windows Autopatch creates the device-based Azure AD assigned groups based on the choices made in the deployment ring composition page. Additionally, the service assigns the update ring policies for each deployment ring created in the Autopatch group based on the choices made in the Windows Update settings page as part of the Autopatch group guided end-user experience.
+
+## Rename a Custom Autopatch group
+
+You **can’t** rename the Default Autopatch group. However, you can rename a Custom Autopatch group.
+
+**To rename a Custom Autopatch group:**
+
+1. Select the **horizontal ellipses (…)** > **Rename** for the Custom Autopatch group you want to rename. The **Rename Autopatch group** fly-in opens.
+1. In the **New Autopatch group name**, enter the new Autopatch group name of your choice, then click **Rename group**.
+
+> [!IMPORTANT]
+> Autopatch supports up to 64 characters for the custom Autopatch group name. Additionally, when you rename a custom Autopatch group all [update rings for Windows 10 and later policy in Intune](/mem/intune/protect/windows-10-update-rings) and [feature updates for Windows 10 and later policy in Intune](/mem/intune/protect/windows-10-feature-updates) associated with the custom Autopatch group are renamed to include the new Autopatch group name you define in its name string. Also, when renaming a custom Autopatch group all Azure AD groups representing the custom Autopatch group's deployment rings are renamed to include the new Autopatch group name you define in its name string.
 
 ## Delete a Custom Autopatch group
 
@@ -124,10 +140,6 @@ You **can’t** delete the Default Autopatch group. However, you can delete a Cu
 > You can’t delete a Custom Autopatch group when it’s being used as part of one or more active or paused feature update releases. However, you can delete a Custom Autopatch group when the release for either Windows quality or feature updates have either the **Scheduled** or **Paused** statuses.
 
 ## Manage device conflict scenarios when using Autopatch groups
-
-> [!IMPORTANT]
-> The Windows Autopatch groups functionaliy is in **public preview**. This feature is being actively developed and not all device conflict detection and resolution scenarios are working as expected.
-> For more information on what to expect for this scenario during public preview, see [Known issues](#known-issues).
 
 Overlap in device membership is a common scenario when working with device-based Azure AD groups since sometimes dynamic queries can be large in scope or the same assigned device membership can be used across different Azure AD groups.
 
@@ -179,22 +191,6 @@ Autopatch groups will keep monitoring for all device conflict scenarios listed i
 ## Known issues
 
 This section lists known issues with Autopatch groups during its public preview.
-
-### Device conflict scenarios when using Autopatch groups
-
-- **Status: Active**
-
-The Windows Autopatch team is aware that all device conflict scenarios listed below are currently being evaluated during the device registration process to make sure devices are properly registered with the service, and not evaluated post-device registration. The Windows Autopatch team is currently developing detection and resolution for the followin device conflict scenarios, and plan to make them available during public preview.
-
-- Default to Custom Autopatch device conflict detection and resolution.
-- Device conflict detection and resolution within an Autopatch group.
-- Custom to Custom Autopatch group device conflict detection.
-
-> [!TIP]
-> Use the following two best practices to help minimize device conflict scenarios when using Autopatch groups during the public preview:
-> 
-> - Review your software update deployment requirements thoroughly. If your deployment requirements allow, try using the Default Autopatch group as much as possible, instead of start creating Custom Autopatch groups. You can customize the Default Autopatch to have up to 15 deployment rings, and you can use your existing device-based Azure AD groups with custom update deployment cadences.
-> - If creating Custom Autopatch groups, try to avoid using device-based Azure AD groups that have device membership overlaps with the devices that are already registered with Windows Autopatch, and already belong to the Default Autopatch group.
 
 ### Autopatch group Azure AD group remediator
 

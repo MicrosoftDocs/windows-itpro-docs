@@ -4,7 +4,7 @@ description: Learn more about the ApplicationManagement Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowAllTrustedApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowAllTrustedApps-Applicability-End -->
 
 <!-- AllowAllTrustedApps-OmaUri-Begin -->
@@ -41,7 +41,7 @@ This policy setting allows you to manage the installation of trusted line-of-bus
 
 - If you enable this policy setting, you can install any LOB or developer-signed Windows Store app (which must be signed with a certificate chain that can be successfully validated by the local computer).
 
-- If you disable or do not configure this policy setting, you cannot install LOB or developer-signed Windows Store apps.
+- If you disable or don't configure this policy setting, you can't install LOB or developer-signed Windows Store apps.
 <!-- AllowAllTrustedApps-Description-End -->
 
 <!-- AllowAllTrustedApps-Editable-Begin -->
@@ -53,7 +53,7 @@ This policy setting allows you to manage the installation of trusted line-of-bus
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowAllTrustedApps-DFProperties-End -->
@@ -94,7 +94,7 @@ This policy setting allows you to manage the installation of trusted line-of-bus
 <!-- AllowAppStoreAutoUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowAppStoreAutoUpdate-Applicability-End -->
 
 <!-- AllowAppStoreAutoUpdate-OmaUri-Begin -->
@@ -117,7 +117,7 @@ Specifies whether automatic update of apps from Microsoft Store are allowed. Mos
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 2 |
 <!-- AllowAppStoreAutoUpdate-DFProperties-End -->
@@ -158,7 +158,7 @@ Specifies whether automatic update of apps from Microsoft Store are allowed. Mos
 <!-- AllowAutomaticAppArchiving-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowAutomaticAppArchiving-Applicability-End -->
 
 <!-- AllowAutomaticAppArchiving-OmaUri-Begin -->
@@ -173,9 +173,9 @@ This policy setting controls whether the system can archive infrequently used ap
 
 - If you enable this policy setting, then the system will periodically check for and archive infrequently used apps.
 
-- If you disable this policy setting, then the system will not archive any apps.
+- If you disable this policy setting, then the system won't archive any apps.
 
-- If you do not configure this policy setting (default), then the system will follow default behavior, which is to periodically check for and archive infrequently used apps, and the user will be able to configure this setting themselves.
+- If you don't configure this policy setting (default), then the system will follow default behavior, which is to periodically check for and archive infrequently used apps, and the user will be able to configure this setting themselves.
 <!-- AllowAutomaticAppArchiving-Description-End -->
 
 <!-- AllowAutomaticAppArchiving-Editable-Begin -->
@@ -187,7 +187,7 @@ This policy setting controls whether the system can archive infrequently used ap
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowAutomaticAppArchiving-DFProperties-End -->
@@ -228,7 +228,7 @@ This policy setting controls whether the system can archive infrequently used ap
 <!-- AllowDeveloperUnlock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowDeveloperUnlock-Applicability-End -->
 
 <!-- AllowDeveloperUnlock-OmaUri-Begin -->
@@ -243,7 +243,7 @@ Allows or denies development of Microsoft Store applications and installing them
 
 - If you enable this setting and enable the "Allow all trusted apps to install" Group Policy, you can develop Microsoft Store apps and install them directly from an IDE.
 
-- If you disable or do not configure this setting, you cannot develop Microsoft Store apps or install them directly from an IDE.
+- If you disable or don't configure this setting, you can't develop Microsoft Store apps or install them directly from an IDE.
 <!-- AllowDeveloperUnlock-Description-End -->
 
 <!-- AllowDeveloperUnlock-Editable-Begin -->
@@ -255,7 +255,7 @@ Allows or denies development of Microsoft Store applications and installing them
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowDeveloperUnlock-DFProperties-End -->
@@ -296,7 +296,7 @@ Allows or denies development of Microsoft Store applications and installing them
 <!-- AllowGameDVR-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowGameDVR-Applicability-End -->
 
 <!-- AllowGameDVR-OmaUri-Begin -->
@@ -309,7 +309,8 @@ Allows or denies development of Microsoft Store applications and installing them
 <!-- Description-Source-ADMX -->
 Windows Game Recording and Broadcasting.
 
-This setting enables or disables the Windows Game Recording and Broadcasting features. If you disable this setting, Windows Game Recording will not be allowed.
+This setting enables or disables the Windows Game Recording and Broadcasting features. If you disable this setting, Windows Game Recording won't be allowed.
+
 If the setting is enabled or not configured, then Recording and Broadcasting (streaming) will be allowed.
 <!-- AllowGameDVR-Description-End -->
 
@@ -324,7 +325,7 @@ If the setting is enabled or not configured, then Recording and Broadcasting (st
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowGameDVR-DFProperties-End -->
@@ -364,7 +365,7 @@ If the setting is enabled or not configured, then Recording and Broadcasting (st
 <!-- AllowSharedUserAppData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowSharedUserAppData-Applicability-End -->
 
 <!-- AllowSharedUserAppData-OmaUri-Begin -->
@@ -391,7 +392,7 @@ Manages a Windows app's ability to share data between users who have installed t
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowSharedUserAppData-DFProperties-End -->
@@ -434,7 +435,7 @@ Manages a Windows app's ability to share data between users who have installed t
 <!-- AllowStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowStore-Applicability-End -->
 
 <!-- AllowStore-OmaUri-Begin -->
@@ -457,7 +458,7 @@ This policy is deprecated.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowStore-DFProperties-End -->
@@ -486,7 +487,7 @@ This policy is deprecated.
 <!-- ApplicationRestrictions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ApplicationRestrictions-Applicability-End -->
 
 <!-- ApplicationRestrictions-OmaUri-Begin -->
@@ -509,7 +510,7 @@ This policy is deprecated.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ApplicationRestrictions-DFProperties-End -->
 
@@ -525,7 +526,7 @@ This policy is deprecated.
 <!-- BlockNonAdminUserInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- BlockNonAdminUserInstall-Applicability-End -->
 
 <!-- BlockNonAdminUserInstall-OmaUri-Begin -->
@@ -540,7 +541,7 @@ Manages non-Administrator users' ability to install Windows app packages.
 
 - If you enable this policy, non-Administrators will be unable to initiate installation of Windows app packages. Administrators who wish to install an app will need to do so from an Administrator context (for example, an Administrator PowerShell window). All users will still be able to install Windows app packages via the Microsoft Store, if permitted by other policies.
 
-- If you disable or do not configure this policy, all users will be able to initiate installation of Windows app packages.
+- If you disable or don't configure this policy, all users will be able to initiate installation of Windows app packages.
 <!-- BlockNonAdminUserInstall-Description-End -->
 
 <!-- BlockNonAdminUserInstall-Editable-Begin -->
@@ -552,7 +553,7 @@ Manages non-Administrator users' ability to install Windows app packages.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- BlockNonAdminUserInstall-DFProperties-End -->
@@ -563,7 +564,7 @@ Manages non-Administrator users' ability to install Windows app packages.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Disabled. All users will be able to initiate installation of Windows app packages. |
-| 1 | Enabled. Non-administrator users will not be able to initiate installation of Windows app packages. |
+| 1 | Enabled. Non-administrator users won't be able to initiate installation of Windows app packages. |
 <!-- BlockNonAdminUserInstall-AllowedValues-End -->
 
 <!-- BlockNonAdminUserInstall-GpMapping-Begin -->
@@ -592,7 +593,7 @@ Manages non-Administrator users' ability to install Windows app packages.
 <!-- DisableStoreOriginatedApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DisableStoreOriginatedApps-Applicability-End -->
 
 <!-- DisableStoreOriginatedApps-OmaUri-Begin -->
@@ -603,7 +604,7 @@ Manages non-Administrator users' ability to install Windows app packages.
 
 <!-- DisableStoreOriginatedApps-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Disable turns off the launch of all apps from the Microsoft Store that came pre-installed or were downloaded. Apps will not be updated. Your Store will also be disabled. Enable turns all of it back on. This setting applies only to Enterprise and Education editions of Windows.
+Disable turns off the launch of all apps from the Microsoft Store that came pre-installed or were downloaded. Apps won't be updated. Your Store will also be disabled. Enable turns all of it back on. This setting applies only to Enterprise and Education editions of Windows.
 <!-- DisableStoreOriginatedApps-Description-End -->
 
 <!-- DisableStoreOriginatedApps-Editable-Begin -->
@@ -615,7 +616,7 @@ Disable turns off the launch of all apps from the Microsoft Store that came pre-
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableStoreOriginatedApps-DFProperties-End -->
@@ -655,7 +656,7 @@ Disable turns off the launch of all apps from the Microsoft Store that came pre-
 <!-- LaunchAppAfterLogOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- LaunchAppAfterLogOn-Applicability-End -->
 
 <!-- LaunchAppAfterLogOn-OmaUri-Begin -->
@@ -682,7 +683,7 @@ This policy allows the IT admin to specify a list of applications that users can
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LaunchAppAfterLogOn-DFProperties-End -->
@@ -708,7 +709,7 @@ For this policy to work, the Windows apps need to declare in their manifest that
 <!-- MSIAllowUserControlOverInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- MSIAllowUserControlOverInstall-Applicability-End -->
 
 <!-- MSIAllowUserControlOverInstall-OmaUri-Begin -->
@@ -723,7 +724,7 @@ This policy setting permits users to change installation options that typically 
 
 - If you enable this policy setting, some of the security features of Windows Installer are bypassed. It permits installations to complete that otherwise would be halted due to a security violation.
 
-- If you disable or do not configure this policy setting, the security features of Windows Installer prevent users from changing installation options typically reserved for system administrators, such as specifying the directory to which files are installed.
+- If you disable or don't configure this policy setting, the security features of Windows Installer prevent users from changing installation options typically reserved for system administrators, such as specifying the directory to which files are installed.
 
 If Windows Installer detects that an installation package has permitted the user to change a protected option, it stops the installation and displays a message. These security features operate only when the installation program is running in a privileged security context in which it has access to directories denied to the user.
 
@@ -739,7 +740,7 @@ This policy setting is designed for less restrictive environments. It can be use
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- MSIAllowUserControlOverInstall-DFProperties-End -->
@@ -779,7 +780,7 @@ This policy setting is designed for less restrictive environments. It can be use
 <!-- MSIAlwaysInstallWithElevatedPrivileges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- MSIAlwaysInstallWithElevatedPrivileges-Applicability-End -->
 
 <!-- MSIAlwaysInstallWithElevatedPrivileges-OmaUri-Begin -->
@@ -798,13 +799,13 @@ This policy setting directs Windows Installer to use elevated permissions when i
 
 - If you enable this policy setting, privileges are extended to all programs. These privileges are usually reserved for programs that have been assigned to the user (offered on the desktop), assigned to the computer (installed automatically), or made available in Add or Remove Programs in Control Panel. This profile setting lets users install programs that require access to directories that the user might not have permission to view or change, including directories on highly restricted computers.
 
-- If you disable or do not configure this policy setting, the system applies the current user's permissions when it installs programs that a system administrator does not distribute or offer.
+- If you disable or don't configure this policy setting, the system applies the current user's permissions when it installs programs that a system administrator doesn't distribute or offer.
 
 > [!NOTE]
 > This policy setting appears both in the Computer Configuration and User Configuration folders. To make this policy setting effective, you must enable it in both folders.
 
 > [!CAUTION]
-> Skilled users can take advantage of the permissions this policy setting grants to change their privileges and gain permanent access to restricted files and folders. **Note** that the User Configuration version of this policy setting is not guaranteed to be secure.
+> Skilled users can take advantage of the permissions this policy setting grants to change their privileges and gain permanent access to restricted files and folders. Note that the User Configuration version of this policy setting isn't guaranteed to be secure.
 <!-- MSIAlwaysInstallWithElevatedPrivileges-Description-End -->
 
 <!-- MSIAlwaysInstallWithElevatedPrivileges-Editable-Begin -->
@@ -816,7 +817,7 @@ This policy setting directs Windows Installer to use elevated permissions when i
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- MSIAlwaysInstallWithElevatedPrivileges-DFProperties-End -->
@@ -856,7 +857,7 @@ This policy setting directs Windows Installer to use elevated permissions when i
 <!-- RequirePrivateStoreOnly-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- RequirePrivateStoreOnly-Applicability-End -->
 
 <!-- RequirePrivateStoreOnly-OmaUri-Begin -->
@@ -873,7 +874,7 @@ This policy setting directs Windows Installer to use elevated permissions when i
 <!-- Description-Source-ADMX -->
 Denies access to the retail catalog in the Microsoft Store, but displays the private store.
 
-- If you enable this setting, users will not be able to view the retail catalog in the Microsoft Store, but they will be able to view apps in the private store.
+- If you enable this setting, users won't be able to view the retail catalog in the Microsoft Store, but they will be able to view apps in the private store.
 
 - If you disable or don't configure this setting, users can access the retail catalog in the Microsoft Store.
 <!-- RequirePrivateStoreOnly-Description-End -->
@@ -887,7 +888,7 @@ Denies access to the retail catalog in the Microsoft Store, but displays the pri
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- RequirePrivateStoreOnly-DFProperties-End -->
@@ -927,7 +928,7 @@ Denies access to the retail catalog in the Microsoft Store, but displays the pri
 <!-- RestrictAppDataToSystemVolume-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- RestrictAppDataToSystemVolume-Applicability-End -->
 
 <!-- RestrictAppDataToSystemVolume-OmaUri-Begin -->
@@ -942,7 +943,7 @@ Prevent users' app data from moving to another location when an app is moved or 
 
 - If you enable this setting, all users' app data will stay on the system volume, regardless of where the app is installed.
 
-- If you disable or do not configure this setting, then when an app is moved to a different volume, the users' app data will also move to this volume.
+- If you disable or don't configure this setting, then when an app is moved to a different volume, the users' app data will also move to this volume.
 <!-- RestrictAppDataToSystemVolume-Description-End -->
 
 <!-- RestrictAppDataToSystemVolume-Editable-Begin -->
@@ -954,7 +955,7 @@ Prevent users' app data from moving to another location when an app is moved or 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- RestrictAppDataToSystemVolume-DFProperties-End -->
@@ -994,7 +995,7 @@ Prevent users' app data from moving to another location when an app is moved or 
 <!-- RestrictAppToSystemVolume-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- RestrictAppToSystemVolume-Applicability-End -->
 
 <!-- RestrictAppToSystemVolume-OmaUri-Begin -->
@@ -1007,9 +1008,9 @@ Prevent users' app data from moving to another location when an app is moved or 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to manage installing Windows apps on additional volumes such as secondary partitions, USB drives, or SD cards.
 
-- If you enable this setting, you can't move or install Windows apps on volumes that are not the system volume.
+- If you enable this setting, you can't move or install Windows apps on volumes that aren't the system volume.
 
-- If you disable or do not configure this setting, you can move or install Windows apps on other volumes.
+- If you disable or don't configure this setting, you can move or install Windows apps on other volumes.
 <!-- RestrictAppToSystemVolume-Description-End -->
 
 <!-- RestrictAppToSystemVolume-Editable-Begin -->
@@ -1021,7 +1022,7 @@ This policy setting allows you to manage installing Windows apps on additional v
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- RestrictAppToSystemVolume-DFProperties-End -->
@@ -1061,7 +1062,7 @@ This policy setting allows you to manage installing Windows apps on additional v
 <!-- ScheduleForceRestartForUpdateFailures-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- ScheduleForceRestartForUpdateFailures-Applicability-End -->
 
 <!-- ScheduleForceRestartForUpdateFailures-OmaUri-Begin -->
@@ -1084,7 +1085,7 @@ To ensure apps are up-to-date, this policy allows the admins to set a recurring 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ScheduleForceRestartForUpdateFailures-DFProperties-End -->
 

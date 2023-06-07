@@ -1,5 +1,5 @@
 ---
-title: 4793(S) The Password Policy Checking API was called. (Windows 10)
+title: 4793(S) The Password Policy Checking API was called. 
 description: Describes security event 4793(S) The Password Policy Checking API was called.
 ms.pagetype: security
 ms.prod: windows-client

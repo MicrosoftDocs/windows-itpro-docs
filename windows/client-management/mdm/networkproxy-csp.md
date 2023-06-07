@@ -4,7 +4,7 @@ description: Learn more about the NetworkProxy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -47,7 +47,7 @@ The following list shows the NetworkProxy configuration service provider nodes:
 <!-- Device-AutoDetect-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-AutoDetect-Applicability-End -->
 
 <!-- Device-AutoDetect-OmaUri-Begin -->
@@ -70,7 +70,7 @@ Automatically detect settings. If enabled, the system tries to find the path to 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Device-AutoDetect-DFProperties-End -->
@@ -96,7 +96,7 @@ Automatically detect settings. If enabled, the system tries to find the path to 
 <!-- Device-ProxyServer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-ProxyServer-Applicability-End -->
 
 <!-- Device-ProxyServer-OmaUri-Begin -->
@@ -107,7 +107,7 @@ Automatically detect settings. If enabled, the system tries to find the path to 
 
 <!-- Device-ProxyServer-Description-Begin -->
 <!-- Description-Source-DDF -->
-Node for configuring a static proxy for Ethernet and Wi-Fi connections. The same proxy server is used for all protocols - including HTTP, HTTPS, FTP, and SOCKS. These settings do not apply to VPN connections.
+Node for configuring a static proxy for Ethernet and Wi-Fi connections. The same proxy server is used for all protocols - including HTTP, HTTPS, FTP, and SOCKS. These settings don't apply to VPN connections.
 <!-- Device-ProxyServer-Description-End -->
 
 <!-- Device-ProxyServer-Editable-Begin -->
@@ -119,7 +119,7 @@ Node for configuring a static proxy for Ethernet and Wi-Fi connections. The same
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-ProxyServer-DFProperties-End -->
 
@@ -135,7 +135,7 @@ Node for configuring a static proxy for Ethernet and Wi-Fi connections. The same
 <!-- Device-ProxyServer-Exceptions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-ProxyServer-Exceptions-Applicability-End -->
 
 <!-- Device-ProxyServer-Exceptions-OmaUri-Begin -->
@@ -146,7 +146,7 @@ Node for configuring a static proxy for Ethernet and Wi-Fi connections. The same
 
 <!-- Device-ProxyServer-Exceptions-Description-Begin -->
 <!-- Description-Source-DDF -->
-Addresses that should not use the proxy server. The system will not use the proxy server for addresses beginning with what is specified in this node. Use semicolons (;) to separate entries.
+Addresses that shouldn't use the proxy server. The system won't use the proxy server for addresses beginning with what's specified in this node. Use semicolons (;) to separate entries.
 <!-- Device-ProxyServer-Exceptions-Description-End -->
 
 <!-- Device-ProxyServer-Exceptions-Editable-Begin -->
@@ -158,7 +158,7 @@ Addresses that should not use the proxy server. The system will not use the prox
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- Device-ProxyServer-Exceptions-DFProperties-End -->
@@ -175,7 +175,7 @@ Addresses that should not use the proxy server. The system will not use the prox
 <!-- Device-ProxyServer-ProxyAddress-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-ProxyServer-ProxyAddress-Applicability-End -->
 
 <!-- Device-ProxyServer-ProxyAddress-OmaUri-Begin -->
@@ -198,7 +198,7 @@ Address to the proxy server. Specify an address in the format `<server>`[":"`<po
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Delete, Get, Replace |
 <!-- Device-ProxyServer-ProxyAddress-DFProperties-End -->
 
@@ -214,7 +214,7 @@ Address to the proxy server. Specify an address in the format `<server>`[":"`<po
 <!-- Device-ProxyServer-UseProxyForLocalAddresses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-ProxyServer-UseProxyForLocalAddresses-Applicability-End -->
 
 <!-- Device-ProxyServer-UseProxyForLocalAddresses-OmaUri-Begin -->
@@ -237,7 +237,7 @@ Specifies whether the proxy server should be used for local (intranet) addresses
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- Device-ProxyServer-UseProxyForLocalAddresses-DFProperties-End -->
@@ -248,7 +248,7 @@ Specifies whether the proxy server should be used for local (intranet) addresses
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Use proxy server for local addresses. |
-| 1 | Do not use proxy server for local addresses. |
+| 1 | Don't use proxy server for local addresses. |
 <!-- Device-ProxyServer-UseProxyForLocalAddresses-AllowedValues-End -->
 
 <!-- Device-ProxyServer-UseProxyForLocalAddresses-Examples-Begin -->
@@ -263,7 +263,7 @@ Specifies whether the proxy server should be used for local (intranet) addresses
 <!-- Device-ProxySettingsPerUser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-ProxySettingsPerUser-Applicability-End -->
 
 <!-- Device-ProxySettingsPerUser-OmaUri-Begin -->
@@ -288,7 +288,7 @@ When set to 0, it enables proxy configuration as global, machine wide.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Device-ProxySettingsPerUser-DFProperties-End -->
@@ -314,7 +314,7 @@ When set to 0, it enables proxy configuration as global, machine wide.
 <!-- Device-SetupScriptUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-SetupScriptUrl-Applicability-End -->
 
 <!-- Device-SetupScriptUrl-OmaUri-Begin -->
@@ -337,7 +337,7 @@ Address to the PAC script you want to use.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Delete, Get, Replace |
 <!-- Device-SetupScriptUrl-DFProperties-End -->
 

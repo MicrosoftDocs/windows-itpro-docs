@@ -29,6 +29,8 @@ Trusted Boot picks up the process that started with Secure Boot. The Windows boo
 
 Often, Windows can automatically repair the corrupted component, restoring the integrity of Windows and allowing the Windows 11 device to start normally.
 
+[!INCLUDE [secure-boot-and-trusted-boot](../../includes/licensing/secure-boot-and-trusted-boot.md)]
+
 ## See also
 
 [Secure the Windows boot process](information-protection/secure-the-windows-10-boot-process.md)

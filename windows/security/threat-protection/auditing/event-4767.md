@@ -1,5 +1,5 @@
 ---
-title: 4767(S) A user account was unlocked. (Windows 10)
+title: 4767(S) A user account was unlocked. 
 description: Describes security event 4767(S) A user account was unlocked. This event is generated every time a user account is unlocked.
 ms.pagetype: security
 ms.prod: windows-client

@@ -4,7 +4,7 @@ description: Learn more about the Wifi Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/01/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowAutoConnectToWiFiSenseHotspots-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowAutoConnectToWiFiSenseHotspots-Applicability-End -->
 
 <!-- AllowAutoConnectToWiFiSenseHotspots-OmaUri-Begin -->
@@ -47,7 +47,7 @@ This policy setting determines whether users can enable the following WLAN setti
 
 - If this policy setting is disabled, both "Connect to suggested open hotspots," "Connect to networks shared by my contacts," and "Enable paid services" will be turned off and users on this device will be prevented from enabling them.
 
-- If this policy setting is not configured or is enabled, users can choose to enable or disable either "Connect to suggested open hotspots" or "Connect to networks shared by my contacts".
+- If this policy setting isn't configured or is enabled, users can choose to enable or disable either "Connect to suggested open hotspots" or "Connect to networks shared by my contacts".
 <!-- AllowAutoConnectToWiFiSenseHotspots-Description-End -->
 
 <!-- AllowAutoConnectToWiFiSenseHotspots-Editable-Begin -->
@@ -59,7 +59,7 @@ This policy setting determines whether users can enable the following WLAN setti
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowAutoConnectToWiFiSenseHotspots-DFProperties-End -->
@@ -99,7 +99,7 @@ This policy setting determines whether users can enable the following WLAN setti
 <!-- AllowInternetSharing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowInternetSharing-Applicability-End -->
 
 <!-- AllowInternetSharing-OmaUri-Begin -->
@@ -114,9 +114,9 @@ Determines whether administrators can enable and configure the Internet Connecti
 
 ICS lets administrators configure their system as an Internet gateway for a small network and provides network services, such as name resolution and addressing through DHCP, to the local private network.
 
-- If you enable this setting, ICS cannot be enabled or configured by administrators, and the ICS service cannot run on the computer. The Advanced tab in the Properties dialog box for a LAN or remote access connection is removed. The Internet Connection Sharing page is removed from the New Connection Wizard. The Network Setup Wizard is disabled.
+- If you enable this setting, ICS can't be enabled or configured by administrators, and the ICS service can't run on the computer. The Advanced tab in the Properties dialog box for a LAN or remote access connection is removed. The Internet Connection Sharing page is removed from the New Connection Wizard. The Network Setup Wizard is disabled.
 
-- If you disable this setting or do not configure it and have two or more connections, administrators can enable ICS. The Advanced tab in the properties dialog box for a LAN or remote access connection is available. In addition, the user is presented with the option to enable Internet Connection Sharing in the Network Setup Wizard and Make New Connection Wizard. (The Network Setup Wizard is available only in Windows XP Professional.)
+- If you disable this setting or don't configure it and have two or more connections, administrators can enable ICS. The Advanced tab in the properties dialog box for a LAN or remote access connection is available. In addition, the user is presented with the option to enable Internet Connection Sharing in the Network Setup Wizard and Make New Connection Wizard. (The Network Setup Wizard is available only in Windows XP Professional).
 
 By default, ICS is disabled when you create a remote access connection, but administrators can use the Advanced tab to enable it. When running the New Connection Wizard or Network Setup Wizard, administrators can choose to enable ICS.
 
@@ -130,7 +130,7 @@ By default, ICS is disabled when you create a remote access connection, but admi
 > Nonadministrators are already prohibited from configuring Internet Connection Sharing, regardless of this setting.
 
 > [!NOTE]
-> Disabling this setting does not prevent Wireless Hosted Networking from using the ICS service for DHCP services. To prevent the ICS service from running, on the Network Permissions tab in the network's policy properties, select the "Don't use hosted networks" check box.
+> Disabling this setting doesn't prevent Wireless Hosted Networking from using the ICS service for DHCP services. To prevent the ICS service from running, on the Network Permissions tab in the network's policy properties, select the "Do not use hosted networks" check box.
 <!-- AllowInternetSharing-Description-End -->
 
 <!-- AllowInternetSharing-Editable-Begin -->
@@ -142,7 +142,7 @@ By default, ICS is disabled when you create a remote access connection, but admi
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowInternetSharing-DFProperties-End -->
@@ -182,7 +182,7 @@ By default, ICS is disabled when you create a remote access connection, but admi
 <!-- AllowManualWiFiConfiguration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowManualWiFiConfiguration-Applicability-End -->
 
 <!-- AllowManualWiFiConfiguration-OmaUri-Begin -->
@@ -196,7 +196,7 @@ By default, ICS is disabled when you create a remote access connection, but admi
 Allow or disallow connecting to Wi-Fi outside of MDM server-installed networks. Most restricted value is 0.
 
 > [!NOTE]
-> Setting this policy deletes any previously installed user-configured and Wi-Fi sense Wi-Fi profiles from the device. Certain Wi-Fi profiles that are not user configured nor Wi-Fi sense might not be deleted. In addition, not all non-MDM profiles are completely deleted.
+> Setting this policy deletes any previously installed user-configured and Wi-Fi sense Wi-Fi profiles from the device. Certain Wi-Fi profiles that aren't user configured nor Wi-Fi sense might not be deleted. In addition, not all non-MDM profiles are completely deleted.
 <!-- AllowManualWiFiConfiguration-Description-End -->
 
 <!-- AllowManualWiFiConfiguration-Editable-Begin -->
@@ -208,7 +208,7 @@ Allow or disallow connecting to Wi-Fi outside of MDM server-installed networks. 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowManualWiFiConfiguration-DFProperties-End -->
@@ -234,7 +234,7 @@ Allow or disallow connecting to Wi-Fi outside of MDM server-installed networks. 
 <!-- AllowWFAQosManagementDSCPToUPMapping-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | <!-- Not-Found --> |
 <!-- AllowWFAQosManagementDSCPToUPMapping-Applicability-End -->
 
 <!-- AllowWFAQosManagementDSCPToUPMapping-OmaUri-Begin -->
@@ -257,7 +257,7 @@ Allow or disallow the device to use the DSCP to UP Mapping feature from the Wi-F
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 2 |
 <!-- AllowWFAQosManagementDSCPToUPMapping-DFProperties-End -->
@@ -269,7 +269,7 @@ Allow or disallow the device to use the DSCP to UP Mapping feature from the Wi-F
 |:--|:--|
 | 0 | DSCP to UP Mapping will be disabled. |
 | 1 | DSCP to UP Mapping will be enabled. |
-| 2 (Default) | DSCP to UP Mapping will be enabled only if it is enabled in the network profile. |
+| 2 (Default) | DSCP to UP Mapping will be enabled only if it's enabled in the network profile. |
 <!-- AllowWFAQosManagementDSCPToUPMapping-AllowedValues-End -->
 
 <!-- AllowWFAQosManagementDSCPToUPMapping-Examples-Begin -->
@@ -284,7 +284,7 @@ Allow or disallow the device to use the DSCP to UP Mapping feature from the Wi-F
 <!-- AllowWFAQosManagementMSCS-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | <!-- Not-Found --> |
 <!-- AllowWFAQosManagementMSCS-Applicability-End -->
 
 <!-- AllowWFAQosManagementMSCS-OmaUri-Begin -->
@@ -307,7 +307,7 @@ Allow or disallow the device to automatically request to enable Mirrored Stream 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowWFAQosManagementMSCS-DFProperties-End -->
@@ -317,7 +317,7 @@ Allow or disallow the device to automatically request to enable Mirrored Stream 
 
 | Value | Description |
 |:--|:--|
-| 0 | The device will not automatically request to enable MSCS when connecting to a MSCS capable network. |
+| 0 | The device won't automatically request to enable MSCS when connecting to a MSCS capable network. |
 | 1 (Default) | The device will automatically request to enable MSCS when connecting to a MSCS capable network. |
 <!-- AllowWFAQosManagementMSCS-AllowedValues-End -->
 
@@ -333,7 +333,7 @@ Allow or disallow the device to automatically request to enable Mirrored Stream 
 <!-- AllowWiFi-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowWiFi-Applicability-End -->
 
 <!-- AllowWiFi-OmaUri-Begin -->
@@ -356,7 +356,7 @@ Allow or disallow WiFi connection.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowWiFi-DFProperties-End -->
@@ -382,7 +382,7 @@ Allow or disallow WiFi connection.
 <!-- AllowWiFiDirect-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowWiFiDirect-Applicability-End -->
 
 <!-- AllowWiFiDirect-OmaUri-Begin -->
@@ -405,7 +405,7 @@ Allow WiFi Direct connection. .
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowWiFiDirect-DFProperties-End -->
@@ -431,7 +431,7 @@ Allow WiFi Direct connection. .
 <!-- WLANScanMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- WLANScanMode-Applicability-End -->
 
 <!-- WLANScanMode-OmaUri-Begin -->
@@ -454,7 +454,7 @@ Allow an enterprise to control the WLAN scanning behavior and how aggressively d
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-500]` |
 | Default Value  | 0 |

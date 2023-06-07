@@ -1,5 +1,5 @@
 ---
-title: Delete an AppLocker rule (Windows)
+title: Delete an AppLocker rule 
 description: This article for IT professionals describes the steps to delete an AppLocker rule.
 ms.assetid: 382b4be3-0df9-4308-89b2-dcf9df351eb5
 ms.reviewer: 

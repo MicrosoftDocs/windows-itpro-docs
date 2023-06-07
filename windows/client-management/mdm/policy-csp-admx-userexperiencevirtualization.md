@@ -4,7 +4,7 @@ description: Learn more about the ADMX_UserExperienceVirtualization Area in Poli
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_UserExperienceVirtualization-Begin -->
 # Policy CSP - ADMX_UserExperienceVirtualization
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_UserExperienceVirtualization-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- Calculator-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Calculator-Applicability-End -->
 
 <!-- Calculator-OmaUri-Begin -->
@@ -47,11 +44,14 @@ ms.topic: reference
 <!-- Calculator-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings of Calculator.
+
 By default, the user settings of Calculator synchronize between computers. Use the policy setting to prevent the user settings of Calculator from synchronization between computers.
 
 - If you enable this policy setting, the Calculator user settings continue to synchronize.
+
 - If you disable this policy setting, Calculator user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Calculator-Description-End -->
 
 <!-- Calculator-Editable-Begin -->
@@ -63,13 +63,12 @@ By default, the user settings of Calculator synchronize between computers. Use t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Calculator-DFProperties-End -->
 
 <!-- Calculator-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -96,7 +95,7 @@ By default, the user settings of Calculator synchronize between computers. Use t
 <!-- ConfigureSyncMethod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigureSyncMethod-Applicability-End -->
 
 <!-- ConfigureSyncMethod-OmaUri-Begin -->
@@ -112,11 +111,16 @@ By default, the user settings of Calculator synchronize between computers. Use t
 <!-- ConfigureSyncMethod-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the sync provider used by User Experience Virtualization (UE-V) to sync settings between users' computers. With Sync Method set to "SyncProvider," the UE-V Agent uses a built-in sync provider to keep user settings synchronized between the computer and the settings storage location. This is the default value. You can disable the sync provider on computers that never go offline and are always connected to the settings storage location.
+
 When SyncMethod is set to "None," the UE-V Agent uses no sync provider. Settings are written directly to the settings storage location rather than being cached to sync later.
+
 Set SyncMethod to "External" when an external synchronization engine is being deployed for settings sync. This could use OneDrive, Work Folders, SharePoint or any other engine that uses a local folder to synchronize data between users' computers. In this mode, UE-V writes settings data to the local folder specified in the settings storage path. These settings are then synchronized to other computers by an external synchronization engine. UE-V has no control over this synchronization. It only reads and writes the settings data when the normal UE-V triggers take place.
+
 With notifications enabled, UE-V users receive a message when the settings sync is delayed. The notification delay policy setting defines the delay before a notification appears.
+
 - If you disable this policy setting, the sync provider is used to synchronize settings between computers and the settings storage location.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- ConfigureSyncMethod-Description-End -->
 
 <!-- ConfigureSyncMethod-Editable-Begin -->
@@ -128,13 +132,12 @@ With notifications enabled, UE-V users receive a message when the settings sync 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureSyncMethod-DFProperties-End -->
 
 <!-- ConfigureSyncMethod-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -160,7 +163,7 @@ With notifications enabled, UE-V users receive a message when the settings sync 
 <!-- ConfigureVdi-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigureVdi-Applicability-End -->
 
 <!-- ConfigureVdi-OmaUri-Begin -->
@@ -178,8 +181,10 @@ With notifications enabled, UE-V users receive a message when the settings sync 
 This policy setting configures the synchronization of User Experience Virtualization (UE-V) rollback information for computers running in a non-persistent, pooled VDI environment. UE-V settings rollback data and checkpoints are normally stored only on the local computer. With this policy setting enabled, the rollback information is copied to the settings storage location when the user logs off or shuts down their VDI session. Enable this setting to register a VDI-specific settings location template and restore data on computers in pooled VDI environments that reset to a clean state on logout. With this policy enabled you can roll settings back to the state when UE-V was installed or to "last-known-good" configurations. Only enable this policy setting on computers running in a non-persistent VDI environment. The VDI Collection Name defines the name of the virtual desktop collection containing the virtual computers.
 
 - If you enable this policy setting, the UE-V rollback state is copied to the settings storage location on logout and restored on login.
+
 - If you disable this policy setting, no UE-V rollback state is copied to the settings storage location.
-- If you do not configure this policy, no UE-V rollback state is copied to the settings storage location.
+
+- If you don't configure this policy, no UE-V rollback state is copied to the settings storage location.
 <!-- ConfigureVdi-Description-End -->
 
 <!-- ConfigureVdi-Editable-Begin -->
@@ -191,13 +196,12 @@ This policy setting configures the synchronization of User Experience Virtualiza
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ConfigureVdi-DFProperties-End -->
 
 <!-- ConfigureVdi-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -224,7 +228,7 @@ This policy setting configures the synchronization of User Experience Virtualiza
 <!-- ContactITDescription-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ContactITDescription-Applicability-End -->
 
 <!-- ContactITDescription-OmaUri-Begin -->
@@ -238,8 +242,10 @@ This policy setting configures the synchronization of User Experience Virtualiza
 This policy setting specifies the text of the Contact IT URL hyperlink in the Company Settings Center.
 
 - If you enable this policy setting, the Company Settings Center displays the specified text in the link to the Contact IT URL.
-- If you disable this policy setting, the Company Settings Center does not display an IT Contact link.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, the Company Settings Center doesn't display an IT Contact link.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- ContactITDescription-Description-End -->
 
 <!-- ContactITDescription-Editable-Begin -->
@@ -251,13 +257,12 @@ This policy setting specifies the text of the Contact IT URL hyperlink in the Co
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ContactITDescription-DFProperties-End -->
 
 <!-- ContactITDescription-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -283,7 +288,7 @@ This policy setting specifies the text of the Contact IT URL hyperlink in the Co
 <!-- ContactITUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ContactITUrl-Applicability-End -->
 
 <!-- ContactITUrl-OmaUri-Begin -->
@@ -297,8 +302,10 @@ This policy setting specifies the text of the Contact IT URL hyperlink in the Co
 This policy setting specifies the URL for the Contact IT link in the Company Settings Center.
 
 - If you enable this policy setting, the Company Settings Center Contact IT text links to the specified URL. The link can be of any standard protocol such as http or mailto.
-- If you disable this policy setting, the Company Settings Center does not display an IT Contact link.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, the Company Settings Center doesn't display an IT Contact link.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- ContactITUrl-Description-End -->
 
 <!-- ContactITUrl-Editable-Begin -->
@@ -310,13 +317,12 @@ This policy setting specifies the URL for the Contact IT link in the Company Set
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ContactITUrl-DFProperties-End -->
 
 <!-- ContactITUrl-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -342,7 +348,7 @@ This policy setting specifies the URL for the Contact IT link in the Company Set
 <!-- DisableWin8Sync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableWin8Sync-Applicability-End -->
 
 <!-- DisableWin8Sync-OmaUri-Begin -->
@@ -358,14 +364,17 @@ This policy setting specifies the URL for the Contact IT link in the Company Set
 <!-- DisableWin8Sync-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting defines whether the User Experience Virtualization (UE-V) Agent synchronizes settings for Windows apps.
+
 By default, the UE-V Agent synchronizes settings for Windows apps between the computer and the settings storage location.
 
-- If you enable this policy setting, the UE-V Agent will not synchronize settings for Windows apps.
+- If you enable this policy setting, the UE-V Agent won't synchronize settings for Windows apps.
+
 - If you disable this policy setting, the UE-V Agent will synchronize settings for Windows apps.
-- If you do not configure this policy setting, any defined values are deleted.
+
+- If you don't configure this policy setting, any defined values are deleted.
 
 > [!NOTE]
-> If the user connects their Microsoft account for their computer then the UE-V Agent will not synchronize Windows apps. The Windows apps will default to whatever settings are configured in the Sync your settings configuration in Windows.
+> If the user connects their Microsoft account for their computer then the UE-V Agent won't synchronize Windows apps. The Windows apps will default to whatever settings are configured in the Sync your settings configuration in Windows.
 <!-- DisableWin8Sync-Description-End -->
 
 <!-- DisableWin8Sync-Editable-Begin -->
@@ -377,13 +386,12 @@ By default, the UE-V Agent synchronizes settings for Windows apps between the co
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableWin8Sync-DFProperties-End -->
 
 <!-- DisableWin8Sync-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -410,7 +418,7 @@ By default, the UE-V Agent synchronizes settings for Windows apps between the co
 <!-- DisableWindowsOSSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableWindowsOSSettings-Applicability-End -->
 
 <!-- DisableWindowsOSSettings-OmaUri-Begin -->
@@ -426,11 +434,14 @@ By default, the UE-V Agent synchronizes settings for Windows apps between the co
 <!-- DisableWindowsOSSettings-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of Windows settings between computers.
+
 Certain Windows settings will synchronize between computers by default. These settings include Windows themes, Windows desktop settings, Ease of Access settings, and network printers. Use this policy setting to specify which Windows settings synchronize between computers. You can also use these settings to enable synchronization of users' sign-in information for certain apps, networks, and certificates.
 
 - If you enable this policy setting, only the selected Windows settings synchronize. Unselected Windows settings are excluded from settings synchronization.
+
 - If you disable this policy setting, all Windows Settings are excluded from the settings synchronization.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- DisableWindowsOSSettings-Description-End -->
 
 <!-- DisableWindowsOSSettings-Editable-Begin -->
@@ -442,13 +453,12 @@ Certain Windows settings will synchronize between computers by default. These se
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableWindowsOSSettings-DFProperties-End -->
 
 <!-- DisableWindowsOSSettings-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -474,7 +484,7 @@ Certain Windows settings will synchronize between computers by default. These se
 <!-- EnableUEV-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- EnableUEV-Applicability-End -->
 
 <!-- EnableUEV-OmaUri-Begin -->
@@ -497,13 +507,12 @@ This policy setting allows you to enable or disable User Experience Virtualizati
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableUEV-DFProperties-End -->
 
 <!-- EnableUEV-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -530,7 +539,7 @@ This policy setting allows you to enable or disable User Experience Virtualizati
 <!-- Finance-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Finance-Applicability-End -->
 
 <!-- Finance-OmaUri-Begin -->
@@ -546,11 +555,14 @@ This policy setting allows you to enable or disable User Experience Virtualizati
 <!-- Finance-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for the Finance app.
+
 By default, the user settings of Finance sync between computers. Use the policy setting to prevent the user settings of Finance from synchronizing between computers.
 
 - If you enable this policy setting, Finance user settings continue to sync.
+
 - If you disable this policy setting, Finance user settings are excluded from synchronization.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Finance-Description-End -->
 
 <!-- Finance-Editable-Begin -->
@@ -562,13 +574,12 @@ By default, the user settings of Finance sync between computers. Use the policy 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Finance-DFProperties-End -->
 
 <!-- Finance-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -595,7 +606,7 @@ By default, the user settings of Finance sync between computers. Use the policy 
 <!-- FirstUseNotificationEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- FirstUseNotificationEnabled-Applicability-End -->
 
 <!-- FirstUseNotificationEnabled-OmaUri-Begin -->
@@ -607,10 +618,14 @@ By default, the user settings of Finance sync between computers. Use the policy 
 <!-- FirstUseNotificationEnabled-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting enables a notification in the system tray that appears when the User Experience Virtualization (UE-V) Agent runs for the first time.
+
 By default, a notification informs users that Company Settings Center, the user-facing name for the UE-V Agent, now helps to synchronize settings between their work computers.
+
 With this setting enabled, the notification appears the first time that the UE-V Agent runs.
+
 With this setting disabled, no notification appears.
-If you do not configure this policy setting, any defined values are deleted.
+
+If you don't configure this policy setting, any defined values are deleted.
 <!-- FirstUseNotificationEnabled-Description-End -->
 
 <!-- FirstUseNotificationEnabled-Editable-Begin -->
@@ -622,13 +637,12 @@ If you do not configure this policy setting, any defined values are deleted.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- FirstUseNotificationEnabled-DFProperties-End -->
 
 <!-- FirstUseNotificationEnabled-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -655,7 +669,7 @@ If you do not configure this policy setting, any defined values are deleted.
 <!-- Games-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Games-Applicability-End -->
 
 <!-- Games-OmaUri-Begin -->
@@ -671,11 +685,14 @@ If you do not configure this policy setting, any defined values are deleted.
 <!-- Games-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for the Games app.
+
 By default, the user settings of Games sync between computers. Use the policy setting to prevent the user settings of Games from synchronizing between computers.
 
 - If you enable this policy setting, Games user settings continue to sync.
+
 - If you disable this policy setting, Games user settings are excluded from synchronization.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Games-Description-End -->
 
 <!-- Games-Editable-Begin -->
@@ -687,13 +704,12 @@ By default, the user settings of Games sync between computers. Use the policy se
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Games-DFProperties-End -->
 
 <!-- Games-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -720,7 +736,7 @@ By default, the user settings of Games sync between computers. Use the policy se
 <!-- InternetExplorer10-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- InternetExplorer10-Applicability-End -->
 
 <!-- InternetExplorer10-OmaUri-Begin -->
@@ -736,11 +752,14 @@ By default, the user settings of Games sync between computers. Use the policy se
 <!-- InternetExplorer10-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings of Internet Explorer 10.
+
 By default, the user settings of Internet Explorer 10 synchronize between computers. Use the policy setting to prevent the user settings for Internet Explorer 10 from synchronization between computers.
 
 - If you enable this policy setting, the Internet Explorer 10 user settings continue to synchronize.
+
 - If you disable this policy setting, Internet Explorer 10 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- InternetExplorer10-Description-End -->
 
 <!-- InternetExplorer10-Editable-Begin -->
@@ -752,13 +771,12 @@ By default, the user settings of Internet Explorer 10 synchronize between comput
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetExplorer10-DFProperties-End -->
 
 <!-- InternetExplorer10-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -785,7 +803,7 @@ By default, the user settings of Internet Explorer 10 synchronize between comput
 <!-- InternetExplorer11-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- InternetExplorer11-Applicability-End -->
 
 <!-- InternetExplorer11-OmaUri-Begin -->
@@ -801,11 +819,14 @@ By default, the user settings of Internet Explorer 10 synchronize between comput
 <!-- InternetExplorer11-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings of Internet Explorer 11.
+
 By default, the user settings of Internet Explorer 11 synchronize between computers. Use the policy setting to prevent the user settings for Internet Explorer 11 from synchronization between computers.
 
 - If you enable this policy setting, the Internet Explorer 11 user settings continue to synchronize.
+
 - If you disable this policy setting, Internet Explorer 11 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- InternetExplorer11-Description-End -->
 
 <!-- InternetExplorer11-Editable-Begin -->
@@ -817,13 +838,12 @@ By default, the user settings of Internet Explorer 11 synchronize between comput
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetExplorer11-DFProperties-End -->
 
 <!-- InternetExplorer11-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -850,7 +870,7 @@ By default, the user settings of Internet Explorer 11 synchronize between comput
 <!-- InternetExplorer8-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- InternetExplorer8-Applicability-End -->
 
 <!-- InternetExplorer8-OmaUri-Begin -->
@@ -866,11 +886,14 @@ By default, the user settings of Internet Explorer 11 synchronize between comput
 <!-- InternetExplorer8-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Internet Explorer 8.
+
 By default, the user settings of Internet Explorer 8 synchronize between computers. Use the policy setting to prevent the user settings for Internet Explorer 8 from synchronization between computers.
 
 - If you enable this policy setting, the Internet Explorer 8 user settings continue to synchronize.
+
 - If you disable this policy setting, Internet Explorer 8 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- InternetExplorer8-Description-End -->
 
 <!-- InternetExplorer8-Editable-Begin -->
@@ -882,13 +905,12 @@ By default, the user settings of Internet Explorer 8 synchronize between compute
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetExplorer8-DFProperties-End -->
 
 <!-- InternetExplorer8-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -915,7 +937,7 @@ By default, the user settings of Internet Explorer 8 synchronize between compute
 <!-- InternetExplorer9-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- InternetExplorer9-Applicability-End -->
 
 <!-- InternetExplorer9-OmaUri-Begin -->
@@ -931,11 +953,14 @@ By default, the user settings of Internet Explorer 8 synchronize between compute
 <!-- InternetExplorer9-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Internet Explorer 9.
+
 By default, the user settings of Internet Explorer 9 synchronize between computers. Use the policy setting to prevent the user settings for Internet Explorer 9 from synchronization between computers.
 
 - If you enable this policy setting, the Internet Explorer 9 user settings continue to synchronize.
+
 - If you disable this policy setting, Internet Explorer 9 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- InternetExplorer9-Description-End -->
 
 <!-- InternetExplorer9-Editable-Begin -->
@@ -947,13 +972,12 @@ By default, the user settings of Internet Explorer 9 synchronize between compute
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetExplorer9-DFProperties-End -->
 
 <!-- InternetExplorer9-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -980,7 +1004,7 @@ By default, the user settings of Internet Explorer 9 synchronize between compute
 <!-- InternetExplorerCommon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- InternetExplorerCommon-Applicability-End -->
 
 <!-- InternetExplorerCommon-OmaUri-Begin -->
@@ -996,11 +1020,14 @@ By default, the user settings of Internet Explorer 9 synchronize between compute
 <!-- InternetExplorerCommon-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings which are common between the versions of Internet Explorer.
+
 By default, the user settings which are common between the versions of Internet Explorer synchronize between computers. Use the policy setting to prevent the user settings of Internet Explorer from synchronization between computers.
 
 - If you enable this policy setting, the user settings which are common between the versions of Internet Explorer continue to synchronize.
-- If you disable this policy setting, the user settings which are common between the versions of Internet Explorer are excluded from settings synchronization. If any version of the Internet Explorer settings are enabled this policy setting should not be disabled.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, the user settings which are common between the versions of Internet Explorer are excluded from settings synchronization. If any version of the Internet Explorer settings are enabled this policy setting shouldn't be disabled.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- InternetExplorerCommon-Description-End -->
 
 <!-- InternetExplorerCommon-Editable-Begin -->
@@ -1012,13 +1039,12 @@ By default, the user settings which are common between the versions of Internet 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InternetExplorerCommon-DFProperties-End -->
 
 <!-- InternetExplorerCommon-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1044,7 +1070,7 @@ By default, the user settings which are common between the versions of Internet 
 <!-- Maps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Maps-Applicability-End -->
 
 <!-- Maps-OmaUri-Begin -->
@@ -1060,11 +1086,14 @@ By default, the user settings which are common between the versions of Internet 
 <!-- Maps-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for the Maps app.
+
 By default, the user settings of Maps sync between computers. Use the policy setting to prevent the user settings of Maps from synchronizing between computers.
 
 - If you enable this policy setting, Maps user settings continue to sync.
+
 - If you disable this policy setting, Maps user settings are excluded from synchronization.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Maps-Description-End -->
 
 <!-- Maps-Editable-Begin -->
@@ -1076,13 +1105,12 @@ By default, the user settings of Maps sync between computers. Use the policy set
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Maps-DFProperties-End -->
 
 <!-- Maps-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1109,7 +1137,7 @@ By default, the user settings of Maps sync between computers. Use the policy set
 <!-- MaxPackageSizeInBytes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MaxPackageSizeInBytes-Applicability-End -->
 
 <!-- MaxPackageSizeInBytes-OmaUri-Begin -->
@@ -1124,10 +1152,11 @@ By default, the user settings of Maps sync between computers. Use the policy set
 
 <!-- MaxPackageSizeInBytes-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure the UE-V Agent to write a warning event to the event log when a settings package file size reaches a defined threshold. By default the UE-V Agent does not report information about package file size.
+This policy setting allows you to configure the UE-V Agent to write a warning event to the event log when a settings package file size reaches a defined threshold. By default the UE-V Agent doesn't report information about package file size.
 
 - If you enable this policy setting, specify the threshold file size in bytes. When the settings package file exceeds this threshold the UE-V Agent will write a warning event to the event log.
-- If you disable or do not configure this policy setting, no event is written to the event log to report settings package size.
+
+- If you disable or don't configure this policy setting, no event is written to the event log to report settings package size.
 <!-- MaxPackageSizeInBytes-Description-End -->
 
 <!-- MaxPackageSizeInBytes-Editable-Begin -->
@@ -1139,13 +1168,12 @@ This policy setting allows you to configure the UE-V Agent to write a warning ev
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MaxPackageSizeInBytes-DFProperties-End -->
 
 <!-- MaxPackageSizeInBytes-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1171,7 +1199,7 @@ This policy setting allows you to configure the UE-V Agent to write a warning ev
 <!-- MicrosoftOffice2010Access-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2010Access-Applicability-End -->
 
 <!-- MicrosoftOffice2010Access-OmaUri-Begin -->
@@ -1187,11 +1215,14 @@ This policy setting allows you to configure the UE-V Agent to write a warning ev
 <!-- MicrosoftOffice2010Access-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Access 2010.
+
 By default, the user settings of Microsoft Access 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Access 2010 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Access 2010 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Access 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010Access-Description-End -->
 
 <!-- MicrosoftOffice2010Access-Editable-Begin -->
@@ -1203,13 +1234,12 @@ By default, the user settings of Microsoft Access 2010 synchronize between compu
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2010Access-DFProperties-End -->
 
 <!-- MicrosoftOffice2010Access-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1235,7 +1265,7 @@ By default, the user settings of Microsoft Access 2010 synchronize between compu
 <!-- MicrosoftOffice2010Common-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2010Common-Applicability-End -->
 
 <!-- MicrosoftOffice2010Common-OmaUri-Begin -->
@@ -1251,11 +1281,13 @@ By default, the user settings of Microsoft Access 2010 synchronize between compu
 <!-- MicrosoftOffice2010Common-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2010 applications.
+
 By default, the user settings which are common between the Microsoft Office Suite 2010 applications synchronize between computers. Use the policy setting to prevent the user settings which are common between the Microsoft Office Suite 2010 applications from synchronization between computers.
 
 - If you enable this policy setting, the user settings which are common between the Microsoft Office Suite 2010 applications continue to synchronize.
-- If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2010 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2010 applications are enabled, this policy setting should not be disabled
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2010 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2010 applications are enabled, this policy setting shouldn't be disabled
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010Common-Description-End -->
 
 <!-- MicrosoftOffice2010Common-Editable-Begin -->
@@ -1267,13 +1299,12 @@ By default, the user settings which are common between the Microsoft Office Suit
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2010Common-DFProperties-End -->
 
 <!-- MicrosoftOffice2010Common-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1299,7 +1330,7 @@ By default, the user settings which are common between the Microsoft Office Suit
 <!-- MicrosoftOffice2010Excel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2010Excel-Applicability-End -->
 
 <!-- MicrosoftOffice2010Excel-OmaUri-Begin -->
@@ -1315,11 +1346,14 @@ By default, the user settings which are common between the Microsoft Office Suit
 <!-- MicrosoftOffice2010Excel-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Excel 2010.
+
 By default, the user settings of Microsoft Excel 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Excel 2010 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Excel 2010 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Excel 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010Excel-Description-End -->
 
 <!-- MicrosoftOffice2010Excel-Editable-Begin -->
@@ -1331,13 +1365,12 @@ By default, the user settings of Microsoft Excel 2010 synchronize between comput
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2010Excel-DFProperties-End -->
 
 <!-- MicrosoftOffice2010Excel-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1363,7 +1396,7 @@ By default, the user settings of Microsoft Excel 2010 synchronize between comput
 <!-- MicrosoftOffice2010InfoPath-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2010InfoPath-Applicability-End -->
 
 <!-- MicrosoftOffice2010InfoPath-OmaUri-Begin -->
@@ -1379,11 +1412,14 @@ By default, the user settings of Microsoft Excel 2010 synchronize between comput
 <!-- MicrosoftOffice2010InfoPath-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft InfoPath 2010.
+
 By default, the user settings of Microsoft InfoPath 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft InfoPath 2010 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft InfoPath 2010 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft InfoPath 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010InfoPath-Description-End -->
 
 <!-- MicrosoftOffice2010InfoPath-Editable-Begin -->
@@ -1395,13 +1431,12 @@ By default, the user settings of Microsoft InfoPath 2010 synchronize between com
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2010InfoPath-DFProperties-End -->
 
 <!-- MicrosoftOffice2010InfoPath-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1427,7 +1462,7 @@ By default, the user settings of Microsoft InfoPath 2010 synchronize between com
 <!-- MicrosoftOffice2010Lync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2010Lync-Applicability-End -->
 
 <!-- MicrosoftOffice2010Lync-OmaUri-Begin -->
@@ -1443,11 +1478,14 @@ By default, the user settings of Microsoft InfoPath 2010 synchronize between com
 <!-- MicrosoftOffice2010Lync-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Lync 2010.
+
 By default, the user settings of Microsoft Lync 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Lync 2010 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Lync 2010 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Lync 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010Lync-Description-End -->
 
 <!-- MicrosoftOffice2010Lync-Editable-Begin -->
@@ -1459,13 +1497,12 @@ By default, the user settings of Microsoft Lync 2010 synchronize between compute
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2010Lync-DFProperties-End -->
 
 <!-- MicrosoftOffice2010Lync-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1492,7 +1529,7 @@ By default, the user settings of Microsoft Lync 2010 synchronize between compute
 <!-- MicrosoftOffice2010OneNote-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2010OneNote-Applicability-End -->
 
 <!-- MicrosoftOffice2010OneNote-OmaUri-Begin -->
@@ -1508,11 +1545,14 @@ By default, the user settings of Microsoft Lync 2010 synchronize between compute
 <!-- MicrosoftOffice2010OneNote-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft OneNote 2010.
+
 By default, the user settings of Microsoft OneNote 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft OneNote 2010 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft OneNote 2010 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft OneNote 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010OneNote-Description-End -->
 
 <!-- MicrosoftOffice2010OneNote-Editable-Begin -->
@@ -1524,13 +1564,12 @@ By default, the user settings of Microsoft OneNote 2010 synchronize between comp
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2010OneNote-DFProperties-End -->
 
 <!-- MicrosoftOffice2010OneNote-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1556,7 +1595,7 @@ By default, the user settings of Microsoft OneNote 2010 synchronize between comp
 <!-- MicrosoftOffice2010Outlook-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2010Outlook-Applicability-End -->
 
 <!-- MicrosoftOffice2010Outlook-OmaUri-Begin -->
@@ -1572,11 +1611,14 @@ By default, the user settings of Microsoft OneNote 2010 synchronize between comp
 <!-- MicrosoftOffice2010Outlook-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Outlook 2010.
+
 By default, the user settings of Microsoft Outlook 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Outlook 2010 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Outlook 2010 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Outlook 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010Outlook-Description-End -->
 
 <!-- MicrosoftOffice2010Outlook-Editable-Begin -->
@@ -1588,13 +1630,12 @@ By default, the user settings of Microsoft Outlook 2010 synchronize between comp
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2010Outlook-DFProperties-End -->
 
 <!-- MicrosoftOffice2010Outlook-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1620,7 +1661,7 @@ By default, the user settings of Microsoft Outlook 2010 synchronize between comp
 <!-- MicrosoftOffice2010PowerPoint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2010PowerPoint-Applicability-End -->
 
 <!-- MicrosoftOffice2010PowerPoint-OmaUri-Begin -->
@@ -1636,11 +1677,14 @@ By default, the user settings of Microsoft Outlook 2010 synchronize between comp
 <!-- MicrosoftOffice2010PowerPoint-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft PowerPoint 2010.
+
 By default, the user settings of Microsoft PowerPoint 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft PowerPoint 2010 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft PowerPoint 2010 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft PowerPoint 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010PowerPoint-Description-End -->
 
 <!-- MicrosoftOffice2010PowerPoint-Editable-Begin -->
@@ -1652,13 +1696,12 @@ By default, the user settings of Microsoft PowerPoint 2010 synchronize between c
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2010PowerPoint-DFProperties-End -->
 
 <!-- MicrosoftOffice2010PowerPoint-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1684,7 +1727,7 @@ By default, the user settings of Microsoft PowerPoint 2010 synchronize between c
 <!-- MicrosoftOffice2010Project-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2010Project-Applicability-End -->
 
 <!-- MicrosoftOffice2010Project-OmaUri-Begin -->
@@ -1700,11 +1743,14 @@ By default, the user settings of Microsoft PowerPoint 2010 synchronize between c
 <!-- MicrosoftOffice2010Project-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Project 2010.
+
 By default, the user settings of Microsoft Project 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Project 2010 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Project 2010 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Project 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010Project-Description-End -->
 
 <!-- MicrosoftOffice2010Project-Editable-Begin -->
@@ -1716,13 +1762,12 @@ By default, the user settings of Microsoft Project 2010 synchronize between comp
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2010Project-DFProperties-End -->
 
 <!-- MicrosoftOffice2010Project-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1748,7 +1793,7 @@ By default, the user settings of Microsoft Project 2010 synchronize between comp
 <!-- MicrosoftOffice2010Publisher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2010Publisher-Applicability-End -->
 
 <!-- MicrosoftOffice2010Publisher-OmaUri-Begin -->
@@ -1764,11 +1809,14 @@ By default, the user settings of Microsoft Project 2010 synchronize between comp
 <!-- MicrosoftOffice2010Publisher-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Publisher 2010.
+
 By default, the user settings of Microsoft Publisher 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Publisher 2010 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Publisher 2010 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Publisher 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010Publisher-Description-End -->
 
 <!-- MicrosoftOffice2010Publisher-Editable-Begin -->
@@ -1780,13 +1828,12 @@ By default, the user settings of Microsoft Publisher 2010 synchronize between co
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2010Publisher-DFProperties-End -->
 
 <!-- MicrosoftOffice2010Publisher-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1812,7 +1859,7 @@ By default, the user settings of Microsoft Publisher 2010 synchronize between co
 <!-- MicrosoftOffice2010SharePointDesigner-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2010SharePointDesigner-Applicability-End -->
 
 <!-- MicrosoftOffice2010SharePointDesigner-OmaUri-Begin -->
@@ -1828,11 +1875,14 @@ By default, the user settings of Microsoft Publisher 2010 synchronize between co
 <!-- MicrosoftOffice2010SharePointDesigner-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft SharePoint Designer 2010.
+
 By default, the user settings of Microsoft SharePoint Designer 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft SharePoint Designer 2010 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft SharePoint Designer 2010 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft SharePoint Designer 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010SharePointDesigner-Description-End -->
 
 <!-- MicrosoftOffice2010SharePointDesigner-Editable-Begin -->
@@ -1844,13 +1894,12 @@ By default, the user settings of Microsoft SharePoint Designer 2010 synchronize 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2010SharePointDesigner-DFProperties-End -->
 
 <!-- MicrosoftOffice2010SharePointDesigner-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1876,7 +1925,7 @@ By default, the user settings of Microsoft SharePoint Designer 2010 synchronize 
 <!-- MicrosoftOffice2010SharePointWorkspace-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2010SharePointWorkspace-Applicability-End -->
 
 <!-- MicrosoftOffice2010SharePointWorkspace-OmaUri-Begin -->
@@ -1892,11 +1941,14 @@ By default, the user settings of Microsoft SharePoint Designer 2010 synchronize 
 <!-- MicrosoftOffice2010SharePointWorkspace-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft SharePoint Workspace 2010.
+
 By default, the user settings of Microsoft SharePoint Workspace 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft SharePoint Workspace 2010 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft SharePoint Workspace 2010 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft SharePoint Workspace 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010SharePointWorkspace-Description-End -->
 
 <!-- MicrosoftOffice2010SharePointWorkspace-Editable-Begin -->
@@ -1908,13 +1960,12 @@ By default, the user settings of Microsoft SharePoint Workspace 2010 synchronize
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2010SharePointWorkspace-DFProperties-End -->
 
 <!-- MicrosoftOffice2010SharePointWorkspace-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1940,7 +1991,7 @@ By default, the user settings of Microsoft SharePoint Workspace 2010 synchronize
 <!-- MicrosoftOffice2010Visio-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2010Visio-Applicability-End -->
 
 <!-- MicrosoftOffice2010Visio-OmaUri-Begin -->
@@ -1956,11 +2007,14 @@ By default, the user settings of Microsoft SharePoint Workspace 2010 synchronize
 <!-- MicrosoftOffice2010Visio-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Visio 2010.
+
 By default, the user settings of Microsoft Visio 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Visio 2010 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Visio 2010 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Visio 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010Visio-Description-End -->
 
 <!-- MicrosoftOffice2010Visio-Editable-Begin -->
@@ -1972,13 +2026,12 @@ By default, the user settings of Microsoft Visio 2010 synchronize between comput
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2010Visio-DFProperties-End -->
 
 <!-- MicrosoftOffice2010Visio-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2004,7 +2057,7 @@ By default, the user settings of Microsoft Visio 2010 synchronize between comput
 <!-- MicrosoftOffice2010Word-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2010Word-Applicability-End -->
 
 <!-- MicrosoftOffice2010Word-OmaUri-Begin -->
@@ -2020,11 +2073,14 @@ By default, the user settings of Microsoft Visio 2010 synchronize between comput
 <!-- MicrosoftOffice2010Word-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Word 2010.
+
 By default, the user settings of Microsoft Word 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Word 2010 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Word 2010 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Word 2010 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2010Word-Description-End -->
 
 <!-- MicrosoftOffice2010Word-Editable-Begin -->
@@ -2036,13 +2092,12 @@ By default, the user settings of Microsoft Word 2010 synchronize between compute
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2010Word-DFProperties-End -->
 
 <!-- MicrosoftOffice2010Word-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2068,7 +2123,7 @@ By default, the user settings of Microsoft Word 2010 synchronize between compute
 <!-- MicrosoftOffice2013Access-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013Access-Applicability-End -->
 
 <!-- MicrosoftOffice2013Access-OmaUri-Begin -->
@@ -2084,11 +2139,14 @@ By default, the user settings of Microsoft Word 2010 synchronize between compute
 <!-- MicrosoftOffice2013Access-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Access 2013.
+
 By default, the user settings of Microsoft Access 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Access 2013 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Access 2013 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Access 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013Access-Description-End -->
 
 <!-- MicrosoftOffice2013Access-Editable-Begin -->
@@ -2100,13 +2158,12 @@ By default, the user settings of Microsoft Access 2013 synchronize between compu
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013Access-DFProperties-End -->
 
 <!-- MicrosoftOffice2013Access-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2132,7 +2189,7 @@ By default, the user settings of Microsoft Access 2013 synchronize between compu
 <!-- MicrosoftOffice2013AccessBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013AccessBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2013AccessBackup-OmaUri-Begin -->
@@ -2148,11 +2205,14 @@ By default, the user settings of Microsoft Access 2013 synchronize between compu
 <!-- MicrosoftOffice2013AccessBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings for Microsoft Access 2013.
+
 Microsoft Access 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Access 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Access 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Access 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings of Microsoft Access 2013 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013AccessBackup-Description-End -->
 
 <!-- MicrosoftOffice2013AccessBackup-Editable-Begin -->
@@ -2164,13 +2224,12 @@ Microsoft Access 2013 has user settings that are backed up instead of synchroniz
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013AccessBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013AccessBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2196,7 +2255,7 @@ Microsoft Access 2013 has user settings that are backed up instead of synchroniz
 <!-- MicrosoftOffice2013Common-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013Common-Applicability-End -->
 
 <!-- MicrosoftOffice2013Common-OmaUri-Begin -->
@@ -2212,11 +2271,14 @@ Microsoft Access 2013 has user settings that are backed up instead of synchroniz
 <!-- MicrosoftOffice2013Common-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2013 applications.
+
 By default, the user settings which are common between the Microsoft Office Suite 2013 applications synchronize between computers. Use the policy setting to prevent the user settings which are common between the Microsoft Office Suite 2013 applications from synchronization between computers.
 
 - If you enable this policy setting, the user settings which are common between the Microsoft Office Suite 2013 applications continue to synchronize.
-- If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2013 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2013 applications are enabled, this policy setting should not be disabled.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2013 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2013 applications are enabled, this policy setting shouldn't be disabled.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013Common-Description-End -->
 
 <!-- MicrosoftOffice2013Common-Editable-Begin -->
@@ -2228,13 +2290,12 @@ By default, the user settings which are common between the Microsoft Office Suit
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013Common-DFProperties-End -->
 
 <!-- MicrosoftOffice2013Common-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2260,7 +2321,7 @@ By default, the user settings which are common between the Microsoft Office Suit
 <!-- MicrosoftOffice2013CommonBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013CommonBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2013CommonBackup-OmaUri-Begin -->
@@ -2276,11 +2337,14 @@ By default, the user settings which are common between the Microsoft Office Suit
 <!-- MicrosoftOffice2013CommonBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings which are common between the Microsoft Office Suite 2013 applications.
+
 Microsoft Office Suite 2013 has user settings which are common between applications and are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific common Microsoft Office Suite 2013 applications.
 
 - If you enable this policy setting, certain user settings which are common between the Microsoft Office Suite 2013 applications will continue to be backed up.
-- If you disable this policy setting, certain user settings which are common between the Microsoft Office Suite 2013 applications will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings which are common between the Microsoft Office Suite 2013 applications won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013CommonBackup-Description-End -->
 
 <!-- MicrosoftOffice2013CommonBackup-Editable-Begin -->
@@ -2292,13 +2356,12 @@ Microsoft Office Suite 2013 has user settings which are common between applicati
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013CommonBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013CommonBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2324,7 +2387,7 @@ Microsoft Office Suite 2013 has user settings which are common between applicati
 <!-- MicrosoftOffice2013Excel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013Excel-Applicability-End -->
 
 <!-- MicrosoftOffice2013Excel-OmaUri-Begin -->
@@ -2340,11 +2403,14 @@ Microsoft Office Suite 2013 has user settings which are common between applicati
 <!-- MicrosoftOffice2013Excel-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Excel 2013.
+
 By default, the user settings of Microsoft Excel 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Excel 2013 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Excel 2013 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Excel 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013Excel-Description-End -->
 
 <!-- MicrosoftOffice2013Excel-Editable-Begin -->
@@ -2356,13 +2422,12 @@ By default, the user settings of Microsoft Excel 2013 synchronize between comput
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013Excel-DFProperties-End -->
 
 <!-- MicrosoftOffice2013Excel-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2388,7 +2453,7 @@ By default, the user settings of Microsoft Excel 2013 synchronize between comput
 <!-- MicrosoftOffice2013ExcelBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013ExcelBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2013ExcelBackup-OmaUri-Begin -->
@@ -2404,11 +2469,14 @@ By default, the user settings of Microsoft Excel 2013 synchronize between comput
 <!-- MicrosoftOffice2013ExcelBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings for Microsoft Excel 2013.
+
 Microsoft Excel 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Excel 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Excel 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Excel 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings of Microsoft Excel 2013 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013ExcelBackup-Description-End -->
 
 <!-- MicrosoftOffice2013ExcelBackup-Editable-Begin -->
@@ -2420,13 +2488,12 @@ Microsoft Excel 2013 has user settings that are backed up instead of synchronizi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013ExcelBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013ExcelBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2452,7 +2519,7 @@ Microsoft Excel 2013 has user settings that are backed up instead of synchronizi
 <!-- MicrosoftOffice2013InfoPath-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013InfoPath-Applicability-End -->
 
 <!-- MicrosoftOffice2013InfoPath-OmaUri-Begin -->
@@ -2468,11 +2535,14 @@ Microsoft Excel 2013 has user settings that are backed up instead of synchronizi
 <!-- MicrosoftOffice2013InfoPath-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft InfoPath 2013.
+
 By default, the user settings of Microsoft InfoPath 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft InfoPath 2013 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft InfoPath 2013 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft InfoPath 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013InfoPath-Description-End -->
 
 <!-- MicrosoftOffice2013InfoPath-Editable-Begin -->
@@ -2484,13 +2554,12 @@ By default, the user settings of Microsoft InfoPath 2013 synchronize between com
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013InfoPath-DFProperties-End -->
 
 <!-- MicrosoftOffice2013InfoPath-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2516,7 +2585,7 @@ By default, the user settings of Microsoft InfoPath 2013 synchronize between com
 <!-- MicrosoftOffice2013InfoPathBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013InfoPathBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2013InfoPathBackup-OmaUri-Begin -->
@@ -2532,11 +2601,14 @@ By default, the user settings of Microsoft InfoPath 2013 synchronize between com
 <!-- MicrosoftOffice2013InfoPathBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings for Microsoft InfoPath 2013.
+
 Microsoft InfoPath 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft InfoPath 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft InfoPath 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft InfoPath 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings of Microsoft InfoPath 2013 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013InfoPathBackup-Description-End -->
 
 <!-- MicrosoftOffice2013InfoPathBackup-Editable-Begin -->
@@ -2548,13 +2620,12 @@ Microsoft InfoPath 2013 has user settings that are backed up instead of synchron
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013InfoPathBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013InfoPathBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2580,7 +2651,7 @@ Microsoft InfoPath 2013 has user settings that are backed up instead of synchron
 <!-- MicrosoftOffice2013Lync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013Lync-Applicability-End -->
 
 <!-- MicrosoftOffice2013Lync-OmaUri-Begin -->
@@ -2596,11 +2667,14 @@ Microsoft InfoPath 2013 has user settings that are backed up instead of synchron
 <!-- MicrosoftOffice2013Lync-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Lync 2013.
+
 By default, the user settings of Microsoft Lync 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Lync 2013 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Lync 2013 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Lync 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013Lync-Description-End -->
 
 <!-- MicrosoftOffice2013Lync-Editable-Begin -->
@@ -2612,13 +2686,12 @@ By default, the user settings of Microsoft Lync 2013 synchronize between compute
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013Lync-DFProperties-End -->
 
 <!-- MicrosoftOffice2013Lync-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2644,7 +2717,7 @@ By default, the user settings of Microsoft Lync 2013 synchronize between compute
 <!-- MicrosoftOffice2013LyncBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013LyncBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2013LyncBackup-OmaUri-Begin -->
@@ -2660,11 +2733,14 @@ By default, the user settings of Microsoft Lync 2013 synchronize between compute
 <!-- MicrosoftOffice2013LyncBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings for Microsoft Lync 2013.
+
 Microsoft Lync 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Lync 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Lync 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Lync 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings of Microsoft Lync 2013 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013LyncBackup-Description-End -->
 
 <!-- MicrosoftOffice2013LyncBackup-Editable-Begin -->
@@ -2676,13 +2752,12 @@ Microsoft Lync 2013 has user settings that are backed up instead of synchronizin
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013LyncBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013LyncBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2708,7 +2783,7 @@ Microsoft Lync 2013 has user settings that are backed up instead of synchronizin
 <!-- MicrosoftOffice2013OneDriveForBusiness-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013OneDriveForBusiness-Applicability-End -->
 
 <!-- MicrosoftOffice2013OneDriveForBusiness-OmaUri-Begin -->
@@ -2724,11 +2799,14 @@ Microsoft Lync 2013 has user settings that are backed up instead of synchronizin
 <!-- MicrosoftOffice2013OneDriveForBusiness-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for OneDrive for Business 2013.
+
 By default, the user settings of OneDrive for Business 2013 synchronize between computers. Use the policy setting to prevent the user settings of OneDrive for Business 2013 from synchronization between computers.
 
 - If you enable this policy setting, OneDrive for Business 2013 user settings continue to synchronize.
+
 - If you disable this policy setting, OneDrive for Business 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013OneDriveForBusiness-Description-End -->
 
 <!-- MicrosoftOffice2013OneDriveForBusiness-Editable-Begin -->
@@ -2740,13 +2818,12 @@ By default, the user settings of OneDrive for Business 2013 synchronize between 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013OneDriveForBusiness-DFProperties-End -->
 
 <!-- MicrosoftOffice2013OneDriveForBusiness-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2772,7 +2849,7 @@ By default, the user settings of OneDrive for Business 2013 synchronize between 
 <!-- MicrosoftOffice2013OneNote-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013OneNote-Applicability-End -->
 
 <!-- MicrosoftOffice2013OneNote-OmaUri-Begin -->
@@ -2788,11 +2865,14 @@ By default, the user settings of OneDrive for Business 2013 synchronize between 
 <!-- MicrosoftOffice2013OneNote-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft OneNote 2013.
+
 By default, the user settings of Microsoft OneNote 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft OneNote 2013 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft OneNote 2013 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft OneNote 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013OneNote-Description-End -->
 
 <!-- MicrosoftOffice2013OneNote-Editable-Begin -->
@@ -2804,13 +2884,12 @@ By default, the user settings of Microsoft OneNote 2013 synchronize between comp
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013OneNote-DFProperties-End -->
 
 <!-- MicrosoftOffice2013OneNote-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2836,7 +2915,7 @@ By default, the user settings of Microsoft OneNote 2013 synchronize between comp
 <!-- MicrosoftOffice2013OneNoteBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013OneNoteBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2013OneNoteBackup-OmaUri-Begin -->
@@ -2852,11 +2931,14 @@ By default, the user settings of Microsoft OneNote 2013 synchronize between comp
 <!-- MicrosoftOffice2013OneNoteBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings for Microsoft OneNote 2013.
+
 Microsoft OneNote 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft OneNote 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft OneNote 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft OneNote 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings of Microsoft OneNote 2013 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013OneNoteBackup-Description-End -->
 
 <!-- MicrosoftOffice2013OneNoteBackup-Editable-Begin -->
@@ -2868,13 +2950,12 @@ Microsoft OneNote 2013 has user settings that are backed up instead of synchroni
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013OneNoteBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013OneNoteBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2900,7 +2981,7 @@ Microsoft OneNote 2013 has user settings that are backed up instead of synchroni
 <!-- MicrosoftOffice2013Outlook-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013Outlook-Applicability-End -->
 
 <!-- MicrosoftOffice2013Outlook-OmaUri-Begin -->
@@ -2916,11 +2997,14 @@ Microsoft OneNote 2013 has user settings that are backed up instead of synchroni
 <!-- MicrosoftOffice2013Outlook-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Outlook 2013.
+
 By default, the user settings of Microsoft Outlook 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Outlook 2013 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Outlook 2013 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Outlook 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013Outlook-Description-End -->
 
 <!-- MicrosoftOffice2013Outlook-Editable-Begin -->
@@ -2932,13 +3016,12 @@ By default, the user settings of Microsoft Outlook 2013 synchronize between comp
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013Outlook-DFProperties-End -->
 
 <!-- MicrosoftOffice2013Outlook-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -2964,7 +3047,7 @@ By default, the user settings of Microsoft Outlook 2013 synchronize between comp
 <!-- MicrosoftOffice2013OutlookBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013OutlookBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2013OutlookBackup-OmaUri-Begin -->
@@ -2980,11 +3063,14 @@ By default, the user settings of Microsoft Outlook 2013 synchronize between comp
 <!-- MicrosoftOffice2013OutlookBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings for Microsoft Outlook 2013.
+
 Microsoft Outlook 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Outlook 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Outlook 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Outlook 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings of Microsoft Outlook 2013 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013OutlookBackup-Description-End -->
 
 <!-- MicrosoftOffice2013OutlookBackup-Editable-Begin -->
@@ -2996,13 +3082,12 @@ Microsoft Outlook 2013 has user settings that are backed up instead of synchroni
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013OutlookBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013OutlookBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3028,7 +3113,7 @@ Microsoft Outlook 2013 has user settings that are backed up instead of synchroni
 <!-- MicrosoftOffice2013PowerPoint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013PowerPoint-Applicability-End -->
 
 <!-- MicrosoftOffice2013PowerPoint-OmaUri-Begin -->
@@ -3044,11 +3129,14 @@ Microsoft Outlook 2013 has user settings that are backed up instead of synchroni
 <!-- MicrosoftOffice2013PowerPoint-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft PowerPoint 2013.
+
 By default, the user settings of Microsoft PowerPoint 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft PowerPoint 2013 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft PowerPoint 2013 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft PowerPoint 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013PowerPoint-Description-End -->
 
 <!-- MicrosoftOffice2013PowerPoint-Editable-Begin -->
@@ -3060,13 +3148,12 @@ By default, the user settings of Microsoft PowerPoint 2013 synchronize between c
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013PowerPoint-DFProperties-End -->
 
 <!-- MicrosoftOffice2013PowerPoint-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3092,7 +3179,7 @@ By default, the user settings of Microsoft PowerPoint 2013 synchronize between c
 <!-- MicrosoftOffice2013PowerPointBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013PowerPointBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2013PowerPointBackup-OmaUri-Begin -->
@@ -3108,11 +3195,14 @@ By default, the user settings of Microsoft PowerPoint 2013 synchronize between c
 <!-- MicrosoftOffice2013PowerPointBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings for Microsoft PowerPoint 2013.
+
 Microsoft PowerPoint 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft PowerPoint 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft PowerPoint 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft PowerPoint 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings of Microsoft PowerPoint 2013 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013PowerPointBackup-Description-End -->
 
 <!-- MicrosoftOffice2013PowerPointBackup-Editable-Begin -->
@@ -3124,13 +3214,12 @@ Microsoft PowerPoint 2013 has user settings that are backed up instead of synchr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013PowerPointBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013PowerPointBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3156,7 +3245,7 @@ Microsoft PowerPoint 2013 has user settings that are backed up instead of synchr
 <!-- MicrosoftOffice2013Project-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013Project-Applicability-End -->
 
 <!-- MicrosoftOffice2013Project-OmaUri-Begin -->
@@ -3172,11 +3261,14 @@ Microsoft PowerPoint 2013 has user settings that are backed up instead of synchr
 <!-- MicrosoftOffice2013Project-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Project 2013.
+
 By default, the user settings of Microsoft Project 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Project 2013 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Project 2013 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Project 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013Project-Description-End -->
 
 <!-- MicrosoftOffice2013Project-Editable-Begin -->
@@ -3188,13 +3280,12 @@ By default, the user settings of Microsoft Project 2013 synchronize between comp
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013Project-DFProperties-End -->
 
 <!-- MicrosoftOffice2013Project-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3220,7 +3311,7 @@ By default, the user settings of Microsoft Project 2013 synchronize between comp
 <!-- MicrosoftOffice2013ProjectBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013ProjectBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2013ProjectBackup-OmaUri-Begin -->
@@ -3236,11 +3327,14 @@ By default, the user settings of Microsoft Project 2013 synchronize between comp
 <!-- MicrosoftOffice2013ProjectBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings for Microsoft Project 2013.
+
 Microsoft Project 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Project 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Project 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Project 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings of Microsoft Project 2013 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013ProjectBackup-Description-End -->
 
 <!-- MicrosoftOffice2013ProjectBackup-Editable-Begin -->
@@ -3252,13 +3346,12 @@ Microsoft Project 2013 has user settings that are backed up instead of synchroni
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013ProjectBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013ProjectBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3284,7 +3377,7 @@ Microsoft Project 2013 has user settings that are backed up instead of synchroni
 <!-- MicrosoftOffice2013Publisher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013Publisher-Applicability-End -->
 
 <!-- MicrosoftOffice2013Publisher-OmaUri-Begin -->
@@ -3300,11 +3393,14 @@ Microsoft Project 2013 has user settings that are backed up instead of synchroni
 <!-- MicrosoftOffice2013Publisher-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Publisher 2013.
+
 By default, the user settings of Microsoft Publisher 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Publisher 2013 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Publisher 2013 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Publisher 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013Publisher-Description-End -->
 
 <!-- MicrosoftOffice2013Publisher-Editable-Begin -->
@@ -3316,13 +3412,12 @@ By default, the user settings of Microsoft Publisher 2013 synchronize between co
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013Publisher-DFProperties-End -->
 
 <!-- MicrosoftOffice2013Publisher-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3348,7 +3443,7 @@ By default, the user settings of Microsoft Publisher 2013 synchronize between co
 <!-- MicrosoftOffice2013PublisherBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013PublisherBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2013PublisherBackup-OmaUri-Begin -->
@@ -3364,11 +3459,14 @@ By default, the user settings of Microsoft Publisher 2013 synchronize between co
 <!-- MicrosoftOffice2013PublisherBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings for Microsoft Publisher 2013.
+
 Microsoft Publisher 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Publisher 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Publisher 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Publisher 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings of Microsoft Publisher 2013 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013PublisherBackup-Description-End -->
 
 <!-- MicrosoftOffice2013PublisherBackup-Editable-Begin -->
@@ -3380,13 +3478,12 @@ Microsoft Publisher 2013 has user settings that are backed up instead of synchro
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013PublisherBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013PublisherBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3412,7 +3509,7 @@ Microsoft Publisher 2013 has user settings that are backed up instead of synchro
 <!-- MicrosoftOffice2013SharePointDesigner-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013SharePointDesigner-Applicability-End -->
 
 <!-- MicrosoftOffice2013SharePointDesigner-OmaUri-Begin -->
@@ -3428,11 +3525,14 @@ Microsoft Publisher 2013 has user settings that are backed up instead of synchro
 <!-- MicrosoftOffice2013SharePointDesigner-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft SharePoint Designer 2013.
+
 By default, the user settings of Microsoft SharePoint Designer 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft SharePoint Designer 2013 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft SharePoint Designer 2013 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft SharePoint Designer 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013SharePointDesigner-Description-End -->
 
 <!-- MicrosoftOffice2013SharePointDesigner-Editable-Begin -->
@@ -3444,13 +3544,12 @@ By default, the user settings of Microsoft SharePoint Designer 2013 synchronize 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013SharePointDesigner-DFProperties-End -->
 
 <!-- MicrosoftOffice2013SharePointDesigner-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3476,7 +3575,7 @@ By default, the user settings of Microsoft SharePoint Designer 2013 synchronize 
 <!-- MicrosoftOffice2013SharePointDesignerBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013SharePointDesignerBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2013SharePointDesignerBackup-OmaUri-Begin -->
@@ -3492,11 +3591,14 @@ By default, the user settings of Microsoft SharePoint Designer 2013 synchronize 
 <!-- MicrosoftOffice2013SharePointDesignerBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings for Microsoft SharePoint Designer 2013.
+
 Microsoft SharePoint Designer 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft SharePoint Designer 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft SharePoint Designer 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft SharePoint Designer 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings of Microsoft SharePoint Designer 2013 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013SharePointDesignerBackup-Description-End -->
 
 <!-- MicrosoftOffice2013SharePointDesignerBackup-Editable-Begin -->
@@ -3508,13 +3610,12 @@ Microsoft SharePoint Designer 2013 has user settings that are backed up instead 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013SharePointDesignerBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013SharePointDesignerBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3540,7 +3641,7 @@ Microsoft SharePoint Designer 2013 has user settings that are backed up instead 
 <!-- MicrosoftOffice2013UploadCenter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013UploadCenter-Applicability-End -->
 
 <!-- MicrosoftOffice2013UploadCenter-OmaUri-Begin -->
@@ -3556,11 +3657,14 @@ Microsoft SharePoint Designer 2013 has user settings that are backed up instead 
 <!-- MicrosoftOffice2013UploadCenter-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 2013 Upload Center.
+
 By default, the user settings of Microsoft Office 2013 Upload Center synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Office 2013 Upload Center from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Office 2013 Upload Center user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Office 2013 Upload Center user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013UploadCenter-Description-End -->
 
 <!-- MicrosoftOffice2013UploadCenter-Editable-Begin -->
@@ -3572,13 +3676,12 @@ By default, the user settings of Microsoft Office 2013 Upload Center synchronize
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013UploadCenter-DFProperties-End -->
 
 <!-- MicrosoftOffice2013UploadCenter-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3604,7 +3707,7 @@ By default, the user settings of Microsoft Office 2013 Upload Center synchronize
 <!-- MicrosoftOffice2013Visio-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013Visio-Applicability-End -->
 
 <!-- MicrosoftOffice2013Visio-OmaUri-Begin -->
@@ -3620,11 +3723,14 @@ By default, the user settings of Microsoft Office 2013 Upload Center synchronize
 <!-- MicrosoftOffice2013Visio-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Visio 2013.
+
 By default, the user settings of Microsoft Visio 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Visio 2013 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Visio 2013 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Visio 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013Visio-Description-End -->
 
 <!-- MicrosoftOffice2013Visio-Editable-Begin -->
@@ -3636,13 +3742,12 @@ By default, the user settings of Microsoft Visio 2013 synchronize between comput
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013Visio-DFProperties-End -->
 
 <!-- MicrosoftOffice2013Visio-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3668,7 +3773,7 @@ By default, the user settings of Microsoft Visio 2013 synchronize between comput
 <!-- MicrosoftOffice2013VisioBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013VisioBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2013VisioBackup-OmaUri-Begin -->
@@ -3684,11 +3789,14 @@ By default, the user settings of Microsoft Visio 2013 synchronize between comput
 <!-- MicrosoftOffice2013VisioBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings for Microsoft Visio 2013.
+
 Microsoft Visio 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Visio 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Visio 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Visio 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings of Microsoft Visio 2013 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013VisioBackup-Description-End -->
 
 <!-- MicrosoftOffice2013VisioBackup-Editable-Begin -->
@@ -3700,13 +3808,12 @@ Microsoft Visio 2013 has user settings that are backed up instead of synchronizi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013VisioBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013VisioBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3732,7 +3839,7 @@ Microsoft Visio 2013 has user settings that are backed up instead of synchronizi
 <!-- MicrosoftOffice2013Word-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013Word-Applicability-End -->
 
 <!-- MicrosoftOffice2013Word-OmaUri-Begin -->
@@ -3748,11 +3855,14 @@ Microsoft Visio 2013 has user settings that are backed up instead of synchronizi
 <!-- MicrosoftOffice2013Word-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Word 2013.
+
 By default, the user settings of Microsoft Word 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Word 2013 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Word 2013 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Word 2013 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013Word-Description-End -->
 
 <!-- MicrosoftOffice2013Word-Editable-Begin -->
@@ -3764,13 +3874,12 @@ By default, the user settings of Microsoft Word 2013 synchronize between compute
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013Word-DFProperties-End -->
 
 <!-- MicrosoftOffice2013Word-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3796,7 +3905,7 @@ By default, the user settings of Microsoft Word 2013 synchronize between compute
 <!-- MicrosoftOffice2013WordBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2013WordBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2013WordBackup-OmaUri-Begin -->
@@ -3812,11 +3921,14 @@ By default, the user settings of Microsoft Word 2013 synchronize between compute
 <!-- MicrosoftOffice2013WordBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings for Microsoft Word 2013.
+
 Microsoft Word 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Word 2013 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Word 2013 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Word 2013 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings of Microsoft Word 2013 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2013WordBackup-Description-End -->
 
 <!-- MicrosoftOffice2013WordBackup-Editable-Begin -->
@@ -3828,13 +3940,12 @@ Microsoft Word 2013 has user settings that are backed up instead of synchronizin
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2013WordBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2013WordBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3860,7 +3971,7 @@ Microsoft Word 2013 has user settings that are backed up instead of synchronizin
 <!-- MicrosoftOffice2016Access-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016Access-Applicability-End -->
 
 <!-- MicrosoftOffice2016Access-OmaUri-Begin -->
@@ -3876,11 +3987,14 @@ Microsoft Word 2013 has user settings that are backed up instead of synchronizin
 <!-- MicrosoftOffice2016Access-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Access 2016.
+
 By default, the user settings of Microsoft Access 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Access 2016 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Access 2016 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Access 2016 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016Access-Description-End -->
 
 <!-- MicrosoftOffice2016Access-Editable-Begin -->
@@ -3892,13 +4006,12 @@ By default, the user settings of Microsoft Access 2016 synchronize between compu
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016Access-DFProperties-End -->
 
 <!-- MicrosoftOffice2016Access-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3924,7 +4037,7 @@ By default, the user settings of Microsoft Access 2016 synchronize between compu
 <!-- MicrosoftOffice2016AccessBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016AccessBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2016AccessBackup-OmaUri-Begin -->
@@ -3940,11 +4053,14 @@ By default, the user settings of Microsoft Access 2016 synchronize between compu
 <!-- MicrosoftOffice2016AccessBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings for Microsoft Access 2016.
+
 Microsoft Access 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Access 2016 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Access 2016 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Access 2016 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings of Microsoft Access 2016 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016AccessBackup-Description-End -->
 
 <!-- MicrosoftOffice2016AccessBackup-Editable-Begin -->
@@ -3956,13 +4072,12 @@ Microsoft Access 2016 has user settings that are backed up instead of synchroniz
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016AccessBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2016AccessBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -3988,7 +4103,7 @@ Microsoft Access 2016 has user settings that are backed up instead of synchroniz
 <!-- MicrosoftOffice2016Common-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016Common-Applicability-End -->
 
 <!-- MicrosoftOffice2016Common-OmaUri-Begin -->
@@ -4004,11 +4119,14 @@ Microsoft Access 2016 has user settings that are backed up instead of synchroniz
 <!-- MicrosoftOffice2016Common-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2016 applications.
+
 By default, the user settings which are common between the Microsoft Office Suite 2016 applications synchronize between computers. Use the policy setting to prevent the user settings which are common between the Microsoft Office Suite 2016 applications from synchronization between computers.
 
 - If you enable this policy setting, the user settings which are common between the Microsoft Office Suite 2016 applications continue to synchronize.
-- If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2016 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2016 applications are enabled, this policy setting should not be disabled.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2016 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2016 applications are enabled, this policy setting shouldn't be disabled.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016Common-Description-End -->
 
 <!-- MicrosoftOffice2016Common-Editable-Begin -->
@@ -4020,13 +4138,12 @@ By default, the user settings which are common between the Microsoft Office Suit
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016Common-DFProperties-End -->
 
 <!-- MicrosoftOffice2016Common-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4052,7 +4169,7 @@ By default, the user settings which are common between the Microsoft Office Suit
 <!-- MicrosoftOffice2016CommonBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016CommonBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2016CommonBackup-OmaUri-Begin -->
@@ -4068,11 +4185,14 @@ By default, the user settings which are common between the Microsoft Office Suit
 <!-- MicrosoftOffice2016CommonBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings which are common between the Microsoft Office Suite 2016 applications.
+
 Microsoft Office Suite 2016 has user settings which are common between applications and are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific common Microsoft Office Suite 2016 applications.
 
 - If you enable this policy setting, certain user settings which are common between the Microsoft Office Suite 2016 applications will continue to be backed up.
-- If you disable this policy setting, certain user settings which are common between the Microsoft Office Suite 2016 applications will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings which are common between the Microsoft Office Suite 2016 applications won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016CommonBackup-Description-End -->
 
 <!-- MicrosoftOffice2016CommonBackup-Editable-Begin -->
@@ -4084,13 +4204,12 @@ Microsoft Office Suite 2016 has user settings which are common between applicati
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016CommonBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2016CommonBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4116,7 +4235,7 @@ Microsoft Office Suite 2016 has user settings which are common between applicati
 <!-- MicrosoftOffice2016Excel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016Excel-Applicability-End -->
 
 <!-- MicrosoftOffice2016Excel-OmaUri-Begin -->
@@ -4132,11 +4251,14 @@ Microsoft Office Suite 2016 has user settings which are common between applicati
 <!-- MicrosoftOffice2016Excel-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Excel 2016.
+
 By default, the user settings of Microsoft Excel 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Excel 2016 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Excel 2016 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Excel 2016 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016Excel-Description-End -->
 
 <!-- MicrosoftOffice2016Excel-Editable-Begin -->
@@ -4148,13 +4270,12 @@ By default, the user settings of Microsoft Excel 2016 synchronize between comput
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016Excel-DFProperties-End -->
 
 <!-- MicrosoftOffice2016Excel-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4180,7 +4301,7 @@ By default, the user settings of Microsoft Excel 2016 synchronize between comput
 <!-- MicrosoftOffice2016ExcelBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016ExcelBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2016ExcelBackup-OmaUri-Begin -->
@@ -4196,11 +4317,14 @@ By default, the user settings of Microsoft Excel 2016 synchronize between comput
 <!-- MicrosoftOffice2016ExcelBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings for Microsoft Excel 2016.
+
 Microsoft Excel 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Excel 2016 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Excel 2016 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Excel 2016 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings of Microsoft Excel 2016 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016ExcelBackup-Description-End -->
 
 <!-- MicrosoftOffice2016ExcelBackup-Editable-Begin -->
@@ -4212,13 +4336,12 @@ Microsoft Excel 2016 has user settings that are backed up instead of synchronizi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016ExcelBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2016ExcelBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4244,7 +4367,7 @@ Microsoft Excel 2016 has user settings that are backed up instead of synchronizi
 <!-- MicrosoftOffice2016Lync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016Lync-Applicability-End -->
 
 <!-- MicrosoftOffice2016Lync-OmaUri-Begin -->
@@ -4260,11 +4383,14 @@ Microsoft Excel 2016 has user settings that are backed up instead of synchronizi
 <!-- MicrosoftOffice2016Lync-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Lync 2016.
+
 By default, the user settings of Microsoft Lync 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Lync 2016 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Lync 2016 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Lync 2016 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016Lync-Description-End -->
 
 <!-- MicrosoftOffice2016Lync-Editable-Begin -->
@@ -4276,13 +4402,12 @@ By default, the user settings of Microsoft Lync 2016 synchronize between compute
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016Lync-DFProperties-End -->
 
 <!-- MicrosoftOffice2016Lync-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4308,7 +4433,7 @@ By default, the user settings of Microsoft Lync 2016 synchronize between compute
 <!-- MicrosoftOffice2016LyncBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016LyncBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2016LyncBackup-OmaUri-Begin -->
@@ -4324,11 +4449,14 @@ By default, the user settings of Microsoft Lync 2016 synchronize between compute
 <!-- MicrosoftOffice2016LyncBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings for Microsoft Lync 2016.
+
 Microsoft Lync 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Lync 2016 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Lync 2016 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Lync 2016 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings of Microsoft Lync 2016 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016LyncBackup-Description-End -->
 
 <!-- MicrosoftOffice2016LyncBackup-Editable-Begin -->
@@ -4340,13 +4468,12 @@ Microsoft Lync 2016 has user settings that are backed up instead of synchronizin
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016LyncBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2016LyncBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4372,7 +4499,7 @@ Microsoft Lync 2016 has user settings that are backed up instead of synchronizin
 <!-- MicrosoftOffice2016OneDriveForBusiness-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016OneDriveForBusiness-Applicability-End -->
 
 <!-- MicrosoftOffice2016OneDriveForBusiness-OmaUri-Begin -->
@@ -4388,11 +4515,14 @@ Microsoft Lync 2016 has user settings that are backed up instead of synchronizin
 <!-- MicrosoftOffice2016OneDriveForBusiness-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for OneDrive for Business 2016.
+
 By default, the user settings of OneDrive for Business 2016 synchronize between computers. Use the policy setting to prevent the user settings of OneDrive for Business 2016 from synchronization between computers.
 
 - If you enable this policy setting, OneDrive for Business 2016 user settings continue to synchronize.
+
 - If you disable this policy setting, OneDrive for Business 2016 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016OneDriveForBusiness-Description-End -->
 
 <!-- MicrosoftOffice2016OneDriveForBusiness-Editable-Begin -->
@@ -4404,13 +4534,12 @@ By default, the user settings of OneDrive for Business 2016 synchronize between 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016OneDriveForBusiness-DFProperties-End -->
 
 <!-- MicrosoftOffice2016OneDriveForBusiness-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4436,7 +4565,7 @@ By default, the user settings of OneDrive for Business 2016 synchronize between 
 <!-- MicrosoftOffice2016OneNote-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016OneNote-Applicability-End -->
 
 <!-- MicrosoftOffice2016OneNote-OmaUri-Begin -->
@@ -4452,11 +4581,14 @@ By default, the user settings of OneDrive for Business 2016 synchronize between 
 <!-- MicrosoftOffice2016OneNote-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft OneNote 2016.
+
 By default, the user settings of Microsoft OneNote 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft OneNote 2016 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft OneNote 2016 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft OneNote 2016 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016OneNote-Description-End -->
 
 <!-- MicrosoftOffice2016OneNote-Editable-Begin -->
@@ -4468,13 +4600,12 @@ By default, the user settings of Microsoft OneNote 2016 synchronize between comp
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016OneNote-DFProperties-End -->
 
 <!-- MicrosoftOffice2016OneNote-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4500,7 +4631,7 @@ By default, the user settings of Microsoft OneNote 2016 synchronize between comp
 <!-- MicrosoftOffice2016OneNoteBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016OneNoteBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2016OneNoteBackup-OmaUri-Begin -->
@@ -4516,11 +4647,14 @@ By default, the user settings of Microsoft OneNote 2016 synchronize between comp
 <!-- MicrosoftOffice2016OneNoteBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings for Microsoft OneNote 2016.
+
 Microsoft OneNote 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft OneNote 2016 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft OneNote 2016 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft OneNote 2016 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings of Microsoft OneNote 2016 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016OneNoteBackup-Description-End -->
 
 <!-- MicrosoftOffice2016OneNoteBackup-Editable-Begin -->
@@ -4532,13 +4666,12 @@ Microsoft OneNote 2016 has user settings that are backed up instead of synchroni
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016OneNoteBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2016OneNoteBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4564,7 +4697,7 @@ Microsoft OneNote 2016 has user settings that are backed up instead of synchroni
 <!-- MicrosoftOffice2016Outlook-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016Outlook-Applicability-End -->
 
 <!-- MicrosoftOffice2016Outlook-OmaUri-Begin -->
@@ -4580,11 +4713,14 @@ Microsoft OneNote 2016 has user settings that are backed up instead of synchroni
 <!-- MicrosoftOffice2016Outlook-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Outlook 2016.
+
 By default, the user settings of Microsoft Outlook 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Outlook 2016 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Outlook 2016 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Outlook 2016 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016Outlook-Description-End -->
 
 <!-- MicrosoftOffice2016Outlook-Editable-Begin -->
@@ -4596,13 +4732,12 @@ By default, the user settings of Microsoft Outlook 2016 synchronize between comp
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016Outlook-DFProperties-End -->
 
 <!-- MicrosoftOffice2016Outlook-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4628,7 +4763,7 @@ By default, the user settings of Microsoft Outlook 2016 synchronize between comp
 <!-- MicrosoftOffice2016OutlookBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016OutlookBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2016OutlookBackup-OmaUri-Begin -->
@@ -4644,11 +4779,14 @@ By default, the user settings of Microsoft Outlook 2016 synchronize between comp
 <!-- MicrosoftOffice2016OutlookBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings for Microsoft Outlook 2016.
+
 Microsoft Outlook 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Outlook 2016 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Outlook 2016 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Outlook 2016 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings of Microsoft Outlook 2016 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016OutlookBackup-Description-End -->
 
 <!-- MicrosoftOffice2016OutlookBackup-Editable-Begin -->
@@ -4660,13 +4798,12 @@ Microsoft Outlook 2016 has user settings that are backed up instead of synchroni
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016OutlookBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2016OutlookBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4692,7 +4829,7 @@ Microsoft Outlook 2016 has user settings that are backed up instead of synchroni
 <!-- MicrosoftOffice2016PowerPoint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016PowerPoint-Applicability-End -->
 
 <!-- MicrosoftOffice2016PowerPoint-OmaUri-Begin -->
@@ -4708,11 +4845,14 @@ Microsoft Outlook 2016 has user settings that are backed up instead of synchroni
 <!-- MicrosoftOffice2016PowerPoint-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft PowerPoint 2016.
+
 By default, the user settings of Microsoft PowerPoint 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft PowerPoint 2016 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft PowerPoint 2016 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft PowerPoint 2016 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016PowerPoint-Description-End -->
 
 <!-- MicrosoftOffice2016PowerPoint-Editable-Begin -->
@@ -4724,13 +4864,12 @@ By default, the user settings of Microsoft PowerPoint 2016 synchronize between c
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016PowerPoint-DFProperties-End -->
 
 <!-- MicrosoftOffice2016PowerPoint-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4756,7 +4895,7 @@ By default, the user settings of Microsoft PowerPoint 2016 synchronize between c
 <!-- MicrosoftOffice2016PowerPointBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016PowerPointBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2016PowerPointBackup-OmaUri-Begin -->
@@ -4772,11 +4911,14 @@ By default, the user settings of Microsoft PowerPoint 2016 synchronize between c
 <!-- MicrosoftOffice2016PowerPointBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings for Microsoft PowerPoint 2016.
+
 Microsoft PowerPoint 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft PowerPoint 2016 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft PowerPoint 2016 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft PowerPoint 2016 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings of Microsoft PowerPoint 2016 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016PowerPointBackup-Description-End -->
 
 <!-- MicrosoftOffice2016PowerPointBackup-Editable-Begin -->
@@ -4788,13 +4930,12 @@ Microsoft PowerPoint 2016 has user settings that are backed up instead of synchr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016PowerPointBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2016PowerPointBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4820,7 +4961,7 @@ Microsoft PowerPoint 2016 has user settings that are backed up instead of synchr
 <!-- MicrosoftOffice2016Project-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016Project-Applicability-End -->
 
 <!-- MicrosoftOffice2016Project-OmaUri-Begin -->
@@ -4836,11 +4977,14 @@ Microsoft PowerPoint 2016 has user settings that are backed up instead of synchr
 <!-- MicrosoftOffice2016Project-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Project 2016.
+
 By default, the user settings of Microsoft Project 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Project 2016 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Project 2016 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Project 2016 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016Project-Description-End -->
 
 <!-- MicrosoftOffice2016Project-Editable-Begin -->
@@ -4852,13 +4996,12 @@ By default, the user settings of Microsoft Project 2016 synchronize between comp
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016Project-DFProperties-End -->
 
 <!-- MicrosoftOffice2016Project-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4884,7 +5027,7 @@ By default, the user settings of Microsoft Project 2016 synchronize between comp
 <!-- MicrosoftOffice2016ProjectBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016ProjectBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2016ProjectBackup-OmaUri-Begin -->
@@ -4900,11 +5043,14 @@ By default, the user settings of Microsoft Project 2016 synchronize between comp
 <!-- MicrosoftOffice2016ProjectBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings for Microsoft Project 2016.
+
 Microsoft Project 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Project 2016 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Project 2016 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Project 2016 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings of Microsoft Project 2016 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016ProjectBackup-Description-End -->
 
 <!-- MicrosoftOffice2016ProjectBackup-Editable-Begin -->
@@ -4916,13 +5062,12 @@ Microsoft Project 2016 has user settings that are backed up instead of synchroni
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016ProjectBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2016ProjectBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -4948,7 +5093,7 @@ Microsoft Project 2016 has user settings that are backed up instead of synchroni
 <!-- MicrosoftOffice2016Publisher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016Publisher-Applicability-End -->
 
 <!-- MicrosoftOffice2016Publisher-OmaUri-Begin -->
@@ -4964,11 +5109,14 @@ Microsoft Project 2016 has user settings that are backed up instead of synchroni
 <!-- MicrosoftOffice2016Publisher-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Publisher 2016.
+
 By default, the user settings of Microsoft Publisher 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Publisher 2016 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Publisher 2016 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Publisher 2016 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016Publisher-Description-End -->
 
 <!-- MicrosoftOffice2016Publisher-Editable-Begin -->
@@ -4980,13 +5128,12 @@ By default, the user settings of Microsoft Publisher 2016 synchronize between co
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016Publisher-DFProperties-End -->
 
 <!-- MicrosoftOffice2016Publisher-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5012,7 +5159,7 @@ By default, the user settings of Microsoft Publisher 2016 synchronize between co
 <!-- MicrosoftOffice2016PublisherBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016PublisherBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2016PublisherBackup-OmaUri-Begin -->
@@ -5028,11 +5175,14 @@ By default, the user settings of Microsoft Publisher 2016 synchronize between co
 <!-- MicrosoftOffice2016PublisherBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings for Microsoft Publisher 2016.
+
 Microsoft Publisher 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Publisher 2016 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Publisher 2016 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Publisher 2016 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings of Microsoft Publisher 2016 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016PublisherBackup-Description-End -->
 
 <!-- MicrosoftOffice2016PublisherBackup-Editable-Begin -->
@@ -5044,13 +5194,12 @@ Microsoft Publisher 2016 has user settings that are backed up instead of synchro
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016PublisherBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2016PublisherBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5076,7 +5225,7 @@ Microsoft Publisher 2016 has user settings that are backed up instead of synchro
 <!-- MicrosoftOffice2016UploadCenter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016UploadCenter-Applicability-End -->
 
 <!-- MicrosoftOffice2016UploadCenter-OmaUri-Begin -->
@@ -5092,11 +5241,14 @@ Microsoft Publisher 2016 has user settings that are backed up instead of synchro
 <!-- MicrosoftOffice2016UploadCenter-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 2016 Upload Center.
+
 By default, the user settings of Microsoft Office 2016 Upload Center synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Office 2016 Upload Center from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Office 2016 Upload Center user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Office 2016 Upload Center user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016UploadCenter-Description-End -->
 
 <!-- MicrosoftOffice2016UploadCenter-Editable-Begin -->
@@ -5108,13 +5260,12 @@ By default, the user settings of Microsoft Office 2016 Upload Center synchronize
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016UploadCenter-DFProperties-End -->
 
 <!-- MicrosoftOffice2016UploadCenter-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5140,7 +5291,7 @@ By default, the user settings of Microsoft Office 2016 Upload Center synchronize
 <!-- MicrosoftOffice2016Visio-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016Visio-Applicability-End -->
 
 <!-- MicrosoftOffice2016Visio-OmaUri-Begin -->
@@ -5156,11 +5307,14 @@ By default, the user settings of Microsoft Office 2016 Upload Center synchronize
 <!-- MicrosoftOffice2016Visio-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Visio 2016.
+
 By default, the user settings of Microsoft Visio 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Visio 2016 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Visio 2016 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Visio 2016 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016Visio-Description-End -->
 
 <!-- MicrosoftOffice2016Visio-Editable-Begin -->
@@ -5172,13 +5326,12 @@ By default, the user settings of Microsoft Visio 2016 synchronize between comput
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016Visio-DFProperties-End -->
 
 <!-- MicrosoftOffice2016Visio-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5204,7 +5357,7 @@ By default, the user settings of Microsoft Visio 2016 synchronize between comput
 <!-- MicrosoftOffice2016VisioBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016VisioBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2016VisioBackup-OmaUri-Begin -->
@@ -5220,11 +5373,14 @@ By default, the user settings of Microsoft Visio 2016 synchronize between comput
 <!-- MicrosoftOffice2016VisioBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings for Microsoft Visio 2016.
+
 Microsoft Visio 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Visio 2016 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Visio 2016 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Visio 2016 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings of Microsoft Visio 2016 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016VisioBackup-Description-End -->
 
 <!-- MicrosoftOffice2016VisioBackup-Editable-Begin -->
@@ -5236,13 +5392,12 @@ Microsoft Visio 2016 has user settings that are backed up instead of synchronizi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016VisioBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2016VisioBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5268,7 +5423,7 @@ Microsoft Visio 2016 has user settings that are backed up instead of synchronizi
 <!-- MicrosoftOffice2016Word-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016Word-Applicability-End -->
 
 <!-- MicrosoftOffice2016Word-OmaUri-Begin -->
@@ -5284,11 +5439,14 @@ Microsoft Visio 2016 has user settings that are backed up instead of synchronizi
 <!-- MicrosoftOffice2016Word-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Word 2016.
+
 By default, the user settings of Microsoft Word 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Word 2016 from synchronization between computers.
 
 - If you enable this policy setting, Microsoft Word 2016 user settings continue to synchronize.
+
 - If you disable this policy setting, Microsoft Word 2016 user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016Word-Description-End -->
 
 <!-- MicrosoftOffice2016Word-Editable-Begin -->
@@ -5300,13 +5458,12 @@ By default, the user settings of Microsoft Word 2016 synchronize between compute
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016Word-DFProperties-End -->
 
 <!-- MicrosoftOffice2016Word-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5332,7 +5489,7 @@ By default, the user settings of Microsoft Word 2016 synchronize between compute
 <!-- MicrosoftOffice2016WordBackup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice2016WordBackup-Applicability-End -->
 
 <!-- MicrosoftOffice2016WordBackup-OmaUri-Begin -->
@@ -5348,11 +5505,14 @@ By default, the user settings of Microsoft Word 2016 synchronize between compute
 <!-- MicrosoftOffice2016WordBackup-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings for Microsoft Word 2016.
+
 Microsoft Word 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Word 2016 settings.
 
 - If you enable this policy setting, certain user settings of Microsoft Word 2016 will continue to be backed up.
-- If you disable this policy setting, certain user settings of Microsoft Word 2016 will not be backed up.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, certain user settings of Microsoft Word 2016 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice2016WordBackup-Description-End -->
 
 <!-- MicrosoftOffice2016WordBackup-Editable-Begin -->
@@ -5364,13 +5524,12 @@ Microsoft Word 2016 has user settings that are backed up instead of synchronizin
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice2016WordBackup-DFProperties-End -->
 
 <!-- MicrosoftOffice2016WordBackup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5396,7 +5555,7 @@ Microsoft Word 2016 has user settings that are backed up instead of synchronizin
 <!-- MicrosoftOffice365Access2013-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365Access2013-Applicability-End -->
 
 <!-- MicrosoftOffice365Access2013-OmaUri-Begin -->
@@ -5412,11 +5571,14 @@ Microsoft Word 2016 has user settings that are backed up instead of synchronizin
 <!-- MicrosoftOffice365Access2013-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 365 Access 2013.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Access 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Access 2013 from synchronization between computers with UE-V.
 
 - If you enable this policy setting, Microsoft Office 365 Access 2013 user settings continue to sync with UE-V.
+
 - If you disable this policy setting, Microsoft Office 365 Access 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Access2013-Description-End -->
 
 <!-- MicrosoftOffice365Access2013-Editable-Begin -->
@@ -5428,13 +5590,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365Access2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365Access2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5460,7 +5621,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Access2016-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365Access2016-Applicability-End -->
 
 <!-- MicrosoftOffice365Access2016-OmaUri-Begin -->
@@ -5476,11 +5637,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Access2016-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 365 Access 2016.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Access 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Access 2016 from synchronization between computers with UE-V.
 
 - If you enable this policy setting, Microsoft Office 365 Access 2016 user settings continue to sync with UE-V.
+
 - If you disable this policy setting, Microsoft Office 365 Access 2016 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Access2016-Description-End -->
 
 <!-- MicrosoftOffice365Access2016-Editable-Begin -->
@@ -5492,13 +5656,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365Access2016-DFProperties-End -->
 
 <!-- MicrosoftOffice365Access2016-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5524,7 +5687,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Common2013-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365Common2013-Applicability-End -->
 
 <!-- MicrosoftOffice365Common2013-OmaUri-Begin -->
@@ -5540,11 +5703,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Common2013-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2013 applications.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings which are common between the Microsoft Office Suite 2013 applications will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings which are common between the Microsoft Office Suite 2013 applications from synchronization between computers with UE-V.
 
 - If you enable this policy setting, user settings which are common between the Microsoft Office Suite 2013 applications continue to synchronize with UE-V.
+
 - If you disable this policy setting, user settings which are common between the Microsoft Office Suite 2013 applications are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Common2013-Description-End -->
 
 <!-- MicrosoftOffice365Common2013-Editable-Begin -->
@@ -5556,13 +5722,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365Common2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365Common2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5588,7 +5753,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Common2016-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365Common2016-Applicability-End -->
 
 <!-- MicrosoftOffice365Common2016-OmaUri-Begin -->
@@ -5604,11 +5769,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Common2016-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2016 applications.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings which are common between the Microsoft Office Suite 2016 applications will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings which are common between the Microsoft Office Suite 2016 applications from synchronization between computers with UE-V.
 
 - If you enable this policy setting, user settings which are common between the Microsoft Office Suite 2016 applications continue to synchronize with UE-V.
+
 - If you disable this policy setting, user settings which are common between the Microsoft Office Suite 2016 applications are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Common2016-Description-End -->
 
 <!-- MicrosoftOffice365Common2016-Editable-Begin -->
@@ -5620,13 +5788,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365Common2016-DFProperties-End -->
 
 <!-- MicrosoftOffice365Common2016-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5652,7 +5819,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Excel2013-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365Excel2013-Applicability-End -->
 
 <!-- MicrosoftOffice365Excel2013-OmaUri-Begin -->
@@ -5668,11 +5835,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Excel2013-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 365 Excel 2013.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Excel 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Excel 2013 from synchronization between computers with UE-V.
 
 - If you enable this policy setting, Microsoft Office 365 Excel 2013 user settings continue to sync with UE-V.
+
 - If you disable this policy setting, Microsoft Office 365 Excel 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Excel2013-Description-End -->
 
 <!-- MicrosoftOffice365Excel2013-Editable-Begin -->
@@ -5684,13 +5854,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365Excel2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365Excel2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5716,7 +5885,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Excel2016-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365Excel2016-Applicability-End -->
 
 <!-- MicrosoftOffice365Excel2016-OmaUri-Begin -->
@@ -5732,11 +5901,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Excel2016-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 365 Excel 2016.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Excel 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Excel 2016 from synchronization between computers with UE-V.
 
 - If you enable this policy setting, Microsoft Office 365 Excel 2016 user settings continue to sync with UE-V.
+
 - If you disable this policy setting, Microsoft Office 365 Excel 2016 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Excel2016-Description-End -->
 
 <!-- MicrosoftOffice365Excel2016-Editable-Begin -->
@@ -5748,13 +5920,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365Excel2016-DFProperties-End -->
 
 <!-- MicrosoftOffice365Excel2016-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5780,7 +5951,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365InfoPath2013-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365InfoPath2013-Applicability-End -->
 
 <!-- MicrosoftOffice365InfoPath2013-OmaUri-Begin -->
@@ -5796,11 +5967,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365InfoPath2013-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 365 InfoPath 2013.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 InfoPath 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 InfoPath 2013 from synchronization between computers with UE-V.
 
 - If you enable this policy setting, Microsoft Office 365 InfoPath 2013 user settings continue to sync with UE-V.
+
 - If you disable this policy setting, Microsoft Office 365 InfoPath 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365InfoPath2013-Description-End -->
 
 <!-- MicrosoftOffice365InfoPath2013-Editable-Begin -->
@@ -5812,13 +5986,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365InfoPath2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365InfoPath2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5844,7 +6017,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Lync2013-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365Lync2013-Applicability-End -->
 
 <!-- MicrosoftOffice365Lync2013-OmaUri-Begin -->
@@ -5860,11 +6033,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Lync2013-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 365 Lync 2013.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Lync 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Lync 2013 from synchronization between computers with UE-V.
 
 - If you enable this policy setting, Microsoft Office 365 Lync 2013 user settings continue to sync with UE-V.
+
 - If you disable this policy setting, Microsoft Office 365 Lync 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Lync2013-Description-End -->
 
 <!-- MicrosoftOffice365Lync2013-Editable-Begin -->
@@ -5876,13 +6052,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365Lync2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365Lync2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5908,7 +6083,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Lync2016-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365Lync2016-Applicability-End -->
 
 <!-- MicrosoftOffice365Lync2016-OmaUri-Begin -->
@@ -5924,11 +6099,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Lync2016-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 365 Lync 2016.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Lync 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Lync 2016 from synchronization between computers with UE-V.
 
 - If you enable this policy setting, Microsoft Office 365 Lync 2016 user settings continue to sync with UE-V.
+
 - If you disable this policy setting, Microsoft Office 365 Lync 2016 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Lync2016-Description-End -->
 
 <!-- MicrosoftOffice365Lync2016-Editable-Begin -->
@@ -5940,13 +6118,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365Lync2016-DFProperties-End -->
 
 <!-- MicrosoftOffice365Lync2016-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -5972,7 +6149,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365OneNote2013-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365OneNote2013-Applicability-End -->
 
 <!-- MicrosoftOffice365OneNote2013-OmaUri-Begin -->
@@ -5988,11 +6165,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365OneNote2013-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 365 OneNote 2013.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 OneNote 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 OneNote 2013 from synchronization between computers with UE-V.
 
 - If you enable this policy setting, Microsoft Office 365 OneNote 2013 user settings continue to sync with UE-V.
+
 - If you disable this policy setting, Microsoft Office 365 OneNote 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365OneNote2013-Description-End -->
 
 <!-- MicrosoftOffice365OneNote2013-Editable-Begin -->
@@ -6004,13 +6184,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365OneNote2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365OneNote2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6036,7 +6215,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365OneNote2016-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365OneNote2016-Applicability-End -->
 
 <!-- MicrosoftOffice365OneNote2016-OmaUri-Begin -->
@@ -6052,11 +6231,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365OneNote2016-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 365 OneNote 2016.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 OneNote 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 OneNote 2016 from synchronization between computers with UE-V.
 
 - If you enable this policy setting, Microsoft Office 365 OneNote 2016 user settings continue to sync with UE-V.
+
 - If you disable this policy setting, Microsoft Office 365 OneNote 2016 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365OneNote2016-Description-End -->
 
 <!-- MicrosoftOffice365OneNote2016-Editable-Begin -->
@@ -6068,13 +6250,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365OneNote2016-DFProperties-End -->
 
 <!-- MicrosoftOffice365OneNote2016-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6100,7 +6281,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Outlook2013-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365Outlook2013-Applicability-End -->
 
 <!-- MicrosoftOffice365Outlook2013-OmaUri-Begin -->
@@ -6116,11 +6297,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Outlook2013-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 365 Outlook 2013.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Outlook 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Outlook 2013 from synchronization between computers with UE-V.
 
 - If you enable this policy setting, Microsoft Office 365 Outlook 2013 user settings continue to sync with UE-V.
+
 - If you disable this policy setting, Microsoft Office 365 Outlook 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Outlook2013-Description-End -->
 
 <!-- MicrosoftOffice365Outlook2013-Editable-Begin -->
@@ -6132,13 +6316,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365Outlook2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365Outlook2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6164,7 +6347,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Outlook2016-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365Outlook2016-Applicability-End -->
 
 <!-- MicrosoftOffice365Outlook2016-OmaUri-Begin -->
@@ -6180,11 +6363,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Outlook2016-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 365 Outlook 2016.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Outlook 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Outlook 2016 from synchronization between computers with UE-V.
 
 - If you enable this policy setting, Microsoft Office 365 Outlook 2016 user settings continue to sync with UE-V.
+
 - If you disable this policy setting, Microsoft Office 365 Outlook 2016 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Outlook2016-Description-End -->
 
 <!-- MicrosoftOffice365Outlook2016-Editable-Begin -->
@@ -6196,13 +6382,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365Outlook2016-DFProperties-End -->
 
 <!-- MicrosoftOffice365Outlook2016-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6228,7 +6413,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365PowerPoint2013-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365PowerPoint2013-Applicability-End -->
 
 <!-- MicrosoftOffice365PowerPoint2013-OmaUri-Begin -->
@@ -6244,11 +6429,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365PowerPoint2013-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 365 PowerPoint 2013.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 PowerPoint 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 PowerPoint 2013 from synchronization between computers with UE-V.
 
 - If you enable this policy setting, Microsoft Office 365 PowerPoint 2013 user settings continue to sync with UE-V.
+
 - If you disable this policy setting, Microsoft Office 365 PowerPoint 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365PowerPoint2013-Description-End -->
 
 <!-- MicrosoftOffice365PowerPoint2013-Editable-Begin -->
@@ -6260,13 +6448,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365PowerPoint2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365PowerPoint2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6292,7 +6479,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365PowerPoint2016-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365PowerPoint2016-Applicability-End -->
 
 <!-- MicrosoftOffice365PowerPoint2016-OmaUri-Begin -->
@@ -6308,11 +6495,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365PowerPoint2016-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 365 PowerPoint 2016.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 PowerPoint 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 PowerPoint 2016 from synchronization between computers with UE-V.
 
 - If you enable this policy setting, Microsoft Office 365 PowerPoint 2016 user settings continue to sync with UE-V.
+
 - If you disable this policy setting, Microsoft Office 365 PowerPoint 2016 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365PowerPoint2016-Description-End -->
 
 <!-- MicrosoftOffice365PowerPoint2016-Editable-Begin -->
@@ -6324,13 +6514,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365PowerPoint2016-DFProperties-End -->
 
 <!-- MicrosoftOffice365PowerPoint2016-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6356,7 +6545,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Project2013-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365Project2013-Applicability-End -->
 
 <!-- MicrosoftOffice365Project2013-OmaUri-Begin -->
@@ -6372,11 +6561,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Project2013-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 365 Project 2013.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Project 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Project 2013 from synchronization between computers with UE-V.
 
 - If you enable this policy setting, Microsoft Office 365 Project 2013 user settings continue to sync with UE-V.
+
 - If you disable this policy setting, Microsoft Office 365 Project 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Project2013-Description-End -->
 
 <!-- MicrosoftOffice365Project2013-Editable-Begin -->
@@ -6388,13 +6580,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365Project2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365Project2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6420,7 +6611,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Project2016-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365Project2016-Applicability-End -->
 
 <!-- MicrosoftOffice365Project2016-OmaUri-Begin -->
@@ -6436,11 +6627,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Project2016-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 365 Project 2016.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Project 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Project 2016 from synchronization between computers with UE-V.
 
 - If you enable this policy setting, Microsoft Office 365 Project 2016 user settings continue to sync with UE-V.
+
 - If you disable this policy setting, Microsoft Office 365 Project 2016 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Project2016-Description-End -->
 
 <!-- MicrosoftOffice365Project2016-Editable-Begin -->
@@ -6452,13 +6646,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365Project2016-DFProperties-End -->
 
 <!-- MicrosoftOffice365Project2016-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6484,7 +6677,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Publisher2013-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365Publisher2013-Applicability-End -->
 
 <!-- MicrosoftOffice365Publisher2013-OmaUri-Begin -->
@@ -6500,11 +6693,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Publisher2013-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 365 Publisher 2013.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Publisher 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Publisher 2013 from synchronization between computers with UE-V.
 
 - If you enable this policy setting, Microsoft Office 365 Publisher 2013 user settings continue to sync with UE-V.
+
 - If you disable this policy setting, Microsoft Office 365 Publisher 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Publisher2013-Description-End -->
 
 <!-- MicrosoftOffice365Publisher2013-Editable-Begin -->
@@ -6516,13 +6712,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365Publisher2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365Publisher2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6548,7 +6743,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Publisher2016-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365Publisher2016-Applicability-End -->
 
 <!-- MicrosoftOffice365Publisher2016-OmaUri-Begin -->
@@ -6564,11 +6759,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Publisher2016-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 365 Publisher 2016.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Publisher 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Publisher 2016 from synchronization between computers with UE-V.
 
 - If you enable this policy setting, Microsoft Office 365 Publisher 2016 user settings continue to sync with UE-V.
+
 - If you disable this policy setting, Microsoft Office 365 Publisher 2016 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Publisher2016-Description-End -->
 
 <!-- MicrosoftOffice365Publisher2016-Editable-Begin -->
@@ -6580,13 +6778,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365Publisher2016-DFProperties-End -->
 
 <!-- MicrosoftOffice365Publisher2016-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6612,7 +6809,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365SharePointDesigner2013-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365SharePointDesigner2013-Applicability-End -->
 
 <!-- MicrosoftOffice365SharePointDesigner2013-OmaUri-Begin -->
@@ -6628,11 +6825,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365SharePointDesigner2013-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 365 SharePoint Designer 2013.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 SharePoint Designer 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 SharePoint Designer 2013 from synchronization between computers with UE-V.
 
 - If you enable this policy setting, Microsoft Office 365 SharePoint Designer 2013 user settings continue to sync with UE-V.
+
 - If you disable this policy setting, Microsoft Office 365 SharePoint Designer 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365SharePointDesigner2013-Description-End -->
 
 <!-- MicrosoftOffice365SharePointDesigner2013-Editable-Begin -->
@@ -6644,13 +6844,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365SharePointDesigner2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365SharePointDesigner2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6676,7 +6875,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Visio2013-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365Visio2013-Applicability-End -->
 
 <!-- MicrosoftOffice365Visio2013-OmaUri-Begin -->
@@ -6692,11 +6891,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Visio2013-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 365 Visio 2013.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Visio 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Visio 2013 from synchronization between computers with UE-V.
 
 - If you enable this policy setting, Microsoft Office 365 Visio 2013 user settings continue to sync with UE-V.
+
 - If you disable this policy setting, Microsoft Office 365 Visio 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Visio2013-Description-End -->
 
 <!-- MicrosoftOffice365Visio2013-Editable-Begin -->
@@ -6708,13 +6910,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365Visio2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365Visio2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6740,7 +6941,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Visio2016-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365Visio2016-Applicability-End -->
 
 <!-- MicrosoftOffice365Visio2016-OmaUri-Begin -->
@@ -6756,11 +6957,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Visio2016-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 365 Visio 2016.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Visio 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Visio 2016 from synchronization between computers with UE-V.
 
 - If you enable this policy setting, Microsoft Office 365 Visio 2016 user settings continue to sync with UE-V.
+
 - If you disable this policy setting, Microsoft Office 365 Visio 2016 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Visio2016-Description-End -->
 
 <!-- MicrosoftOffice365Visio2016-Editable-Begin -->
@@ -6772,13 +6976,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365Visio2016-DFProperties-End -->
 
 <!-- MicrosoftOffice365Visio2016-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6804,7 +7007,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Word2013-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365Word2013-Applicability-End -->
 
 <!-- MicrosoftOffice365Word2013-OmaUri-Begin -->
@@ -6820,11 +7023,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Word2013-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 365 Word 2013.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Word 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Word 2013 from synchronization between computers with UE-V.
 
 - If you enable this policy setting, Microsoft Office 365 Word 2013 user settings continue to sync with UE-V.
+
 - If you disable this policy setting, Microsoft Office 365 Word 2013 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Word2013-Description-End -->
 
 <!-- MicrosoftOffice365Word2013-Editable-Begin -->
@@ -6836,13 +7042,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365Word2013-DFProperties-End -->
 
 <!-- MicrosoftOffice365Word2013-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6868,7 +7073,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Word2016-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- MicrosoftOffice365Word2016-Applicability-End -->
 
 <!-- MicrosoftOffice365Word2016-OmaUri-Begin -->
@@ -6884,11 +7089,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- MicrosoftOffice365Word2016-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Office 365 Word 2016.
+
 Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Word 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Word 2016 from synchronization between computers with UE-V.
 
 - If you enable this policy setting, Microsoft Office 365 Word 2016 user settings continue to sync with UE-V.
+
 - If you disable this policy setting, Microsoft Office 365 Word 2016 user settings are excluded from synchronization with UE-V.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- MicrosoftOffice365Word2016-Description-End -->
 
 <!-- MicrosoftOffice365Word2016-Editable-Begin -->
@@ -6900,13 +7108,12 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- MicrosoftOffice365Word2016-DFProperties-End -->
 
 <!-- MicrosoftOffice365Word2016-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6932,7 +7139,7 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- Music-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Music-Applicability-End -->
 
 <!-- Music-OmaUri-Begin -->
@@ -6948,11 +7155,14 @@ Microsoft Office 365 synchronizes certain settings by default without UE-V. If t
 <!-- Music-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for the Music app.
+
 By default, the user settings of Music sync between computers. Use the policy setting to prevent the user settings of Music from synchronizing between computers.
 
 - If you enable this policy setting, Music user settings continue to sync.
+
 - If you disable this policy setting, Music user settings are excluded from the synchronizing settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Music-Description-End -->
 
 <!-- Music-Editable-Begin -->
@@ -6964,13 +7174,12 @@ By default, the user settings of Music sync between computers. Use the policy se
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Music-DFProperties-End -->
 
 <!-- Music-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -6997,7 +7206,7 @@ By default, the user settings of Music sync between computers. Use the policy se
 <!-- News-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- News-Applicability-End -->
 
 <!-- News-OmaUri-Begin -->
@@ -7013,11 +7222,14 @@ By default, the user settings of Music sync between computers. Use the policy se
 <!-- News-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for the News app.
+
 By default, the user settings of News sync between computers. Use the policy setting to prevent the user settings of News from synchronizing between computers.
 
 - If you enable this policy setting, News user settings continue to sync.
+
 - If you disable this policy setting, News user settings are excluded from synchronization.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- News-Description-End -->
 
 <!-- News-Editable-Begin -->
@@ -7029,13 +7241,12 @@ By default, the user settings of News sync between computers. Use the policy set
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- News-DFProperties-End -->
 
 <!-- News-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7062,7 +7273,7 @@ By default, the user settings of News sync between computers. Use the policy set
 <!-- Notepad-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Notepad-Applicability-End -->
 
 <!-- Notepad-OmaUri-Begin -->
@@ -7078,11 +7289,14 @@ By default, the user settings of News sync between computers. Use the policy set
 <!-- Notepad-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings of Notepad.
+
 By default, the user settings of Notepad synchronize between computers. Use the policy setting to prevent the user settings of Notepad from synchronization between computers.
 
 - If you enable this policy setting, the Notepad user settings continue to synchronize.
+
 - If you disable this policy setting, Notepad user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Notepad-Description-End -->
 
 <!-- Notepad-Editable-Begin -->
@@ -7094,13 +7308,12 @@ By default, the user settings of Notepad synchronize between computers. Use the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Notepad-DFProperties-End -->
 
 <!-- Notepad-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7127,7 +7340,7 @@ By default, the user settings of Notepad synchronize between computers. Use the 
 <!-- Reader-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Reader-Applicability-End -->
 
 <!-- Reader-OmaUri-Begin -->
@@ -7143,11 +7356,14 @@ By default, the user settings of Notepad synchronize between computers. Use the 
 <!-- Reader-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for the Reader app.
+
 By default, the user settings of Reader sync between computers. Use the policy setting to prevent the user settings of Reader from synchronizing between computers.
 
 - If you enable this policy setting, Reader user settings continue to sync.
+
 - If you disable this policy setting, Reader user settings are excluded from the synchronization.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Reader-Description-End -->
 
 <!-- Reader-Editable-Begin -->
@@ -7159,13 +7375,12 @@ By default, the user settings of Reader sync between computers. Use the policy s
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Reader-DFProperties-End -->
 
 <!-- Reader-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7192,7 +7407,7 @@ By default, the user settings of Reader sync between computers. Use the policy s
 <!-- RepositoryTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RepositoryTimeout-Applicability-End -->
 
 <!-- RepositoryTimeout-OmaUri-Begin -->
@@ -7208,10 +7423,12 @@ By default, the user settings of Reader sync between computers. Use the policy s
 <!-- RepositoryTimeout-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the number of milliseconds that the computer waits when retrieving user settings from the settings storage location.
+
 You can use this setting to override the default value of 2000 milliseconds.
 
 - If you enable this policy setting, set the number of milliseconds that the system waits to retrieve settings.
-- If you disable or do not configure this policy setting, the default value of 2000 milliseconds is used.
+
+- If you disable or don't configure this policy setting, the default value of 2000 milliseconds is used.
 <!-- RepositoryTimeout-Description-End -->
 
 <!-- RepositoryTimeout-Editable-Begin -->
@@ -7223,13 +7440,12 @@ You can use this setting to override the default value of 2000 milliseconds.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RepositoryTimeout-DFProperties-End -->
 
 <!-- RepositoryTimeout-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7255,7 +7471,7 @@ You can use this setting to override the default value of 2000 milliseconds.
 <!-- SettingsStoragePath-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SettingsStoragePath-Applicability-End -->
 
 <!-- SettingsStoragePath-OmaUri-Begin -->
@@ -7273,7 +7489,8 @@ You can use this setting to override the default value of 2000 milliseconds.
 This policy setting configures where the settings package files that contain user settings are stored.
 
 - If you enable this policy setting, the user settings are stored in the specified location.
-- If you disable or do not configure this policy setting, the user settings are stored in the user's home directory if configured for your environment.
+
+- If you disable or don't configure this policy setting, the user settings are stored in the user's home directory if configured for your environment.
 <!-- SettingsStoragePath-Description-End -->
 
 <!-- SettingsStoragePath-Editable-Begin -->
@@ -7285,13 +7502,12 @@ This policy setting configures where the settings package files that contain use
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SettingsStoragePath-DFProperties-End -->
 
 <!-- SettingsStoragePath-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7317,7 +7533,7 @@ This policy setting configures where the settings package files that contain use
 <!-- SettingsTemplateCatalogPath-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SettingsTemplateCatalogPath-Applicability-End -->
 
 <!-- SettingsTemplateCatalogPath-OmaUri-Begin -->
@@ -7331,11 +7547,16 @@ This policy setting configures where the settings package files that contain use
 This policy setting configures where custom settings location templates are stored and if the catalog will be used to replace the default Microsoft templates installed with the UE-V Agent.
 
 - If you enable this policy setting, the UE-V Agent checks the specified location once each day and updates its synchronization behavior based on the templates in this location. Settings location templates added or updated since the last check are registered by the UE-V Agent. The UE-V Agent deregisters templates that were removed from this location.
+
 If you specify a UNC path and leave the option to replace the default Microsoft templates unchecked, the UE-V Agent will use the default Microsoft templates installed by the UE-V Agent and custom templates in the settings template catalog. If there are custom templates in the settings template catalog which use the same ID as the default Microsoft templates, they will be ignored.
+
 If you specify a UNC path and check the option to replace the default Microsoft templates, all of the default Microsoft templates installed by the UE-V Agent will be deleted from the computer and only the templates located in the settings template catalog will be used.
-- If you disable this policy setting, the UE-V Agent will not use the custom settings location templates.
-- If you disable this policy setting after it has been enabled, the UE-V Agent will not restore the default Microsoft templates.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you disable this policy setting, the UE-V Agent won't use the custom settings location templates.
+
+- If you disable this policy setting after it has been enabled, the UE-V Agent won't restore the default Microsoft templates.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- SettingsTemplateCatalogPath-Description-End -->
 
 <!-- SettingsTemplateCatalogPath-Editable-Begin -->
@@ -7347,13 +7568,12 @@ If you specify a UNC path and check the option to replace the default Microsoft 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SettingsTemplateCatalogPath-DFProperties-End -->
 
 <!-- SettingsTemplateCatalogPath-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7379,7 +7599,7 @@ If you specify a UNC path and check the option to replace the default Microsoft 
 <!-- Sports-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Sports-Applicability-End -->
 
 <!-- Sports-OmaUri-Begin -->
@@ -7395,11 +7615,14 @@ If you specify a UNC path and check the option to replace the default Microsoft 
 <!-- Sports-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for the Sports app.
+
 By default, the user settings of Sports sync between computers. Use the policy setting to prevent the user settings of Sports from synchronizing between computers.
 
 - If you enable this policy setting, Sports user settings continue to sync.
+
 - If you disable this policy setting, Sports user settings are excluded from synchronization.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Sports-Description-End -->
 
 <!-- Sports-Editable-Begin -->
@@ -7411,13 +7634,12 @@ By default, the user settings of Sports sync between computers. Use the policy s
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Sports-DFProperties-End -->
 
 <!-- Sports-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7444,7 +7666,7 @@ By default, the user settings of Sports sync between computers. Use the policy s
 <!-- SyncEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SyncEnabled-Applicability-End -->
 
 <!-- SyncEnabled-OmaUri-Begin -->
@@ -7471,13 +7693,12 @@ This policy setting allows you to enable or disable User Experience Virtualizati
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SyncEnabled-DFProperties-End -->
 
 <!-- SyncEnabled-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7504,7 +7725,7 @@ This policy setting allows you to enable or disable User Experience Virtualizati
 <!-- SyncOverMeteredNetwork-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SyncOverMeteredNetwork-Applicability-End -->
 
 <!-- SyncOverMeteredNetwork-OmaUri-Begin -->
@@ -7520,10 +7741,14 @@ This policy setting allows you to enable or disable User Experience Virtualizati
 <!-- SyncOverMeteredNetwork-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting defines whether the User Experience Virtualization (UE-V) Agent synchronizes settings over metered connections.
-By default, the UE-V Agent does not synchronize settings over a metered connection.
+
+By default, the UE-V Agent doesn't synchronize settings over a metered connection.
+
 With this setting enabled, the UE-V Agent synchronizes settings over a metered connection.
-With this setting disabled, the UE-V Agent does not synchronize settings over a metered connection.
-If you do not configure this policy setting, any defined values are deleted.
+
+With this setting disabled, the UE-V Agent doesn't synchronize settings over a metered connection.
+
+If you don't configure this policy setting, any defined values are deleted.
 <!-- SyncOverMeteredNetwork-Description-End -->
 
 <!-- SyncOverMeteredNetwork-Editable-Begin -->
@@ -7535,13 +7760,12 @@ If you do not configure this policy setting, any defined values are deleted.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SyncOverMeteredNetwork-DFProperties-End -->
 
 <!-- SyncOverMeteredNetwork-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7568,7 +7792,7 @@ If you do not configure this policy setting, any defined values are deleted.
 <!-- SyncOverMeteredNetworkWhenRoaming-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SyncOverMeteredNetworkWhenRoaming-Applicability-End -->
 
 <!-- SyncOverMeteredNetworkWhenRoaming-OmaUri-Begin -->
@@ -7584,10 +7808,14 @@ If you do not configure this policy setting, any defined values are deleted.
 <!-- SyncOverMeteredNetworkWhenRoaming-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting defines whether the User Experience Virtualization (UE-V) Agent synchronizes settings over metered connections outside of the home provider network, for example when connected via a roaming connection.
-By default, the UE-V Agent does not synchronize settings over a metered connection that is roaming.
-With this setting enabled, the UE-V Agent synchronizes settings over a metered connection that is roaming.
-With this setting disabled, the UE-V Agent will not synchronize settings over a metered connection that is roaming.
-If you do not configure this policy setting, any defined values are deleted.
+
+By default, the UE-V Agent doesn't synchronize settings over a metered connection that's roaming.
+
+With this setting enabled, the UE-V Agent synchronizes settings over a metered connection that's roaming.
+
+With this setting disabled, the UE-V Agent won't synchronize settings over a metered connection that's roaming.
+
+If you don't configure this policy setting, any defined values are deleted.
 <!-- SyncOverMeteredNetworkWhenRoaming-Description-End -->
 
 <!-- SyncOverMeteredNetworkWhenRoaming-Editable-Begin -->
@@ -7599,13 +7827,12 @@ If you do not configure this policy setting, any defined values are deleted.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SyncOverMeteredNetworkWhenRoaming-DFProperties-End -->
 
 <!-- SyncOverMeteredNetworkWhenRoaming-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7632,7 +7859,7 @@ If you do not configure this policy setting, any defined values are deleted.
 <!-- SyncProviderPingEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SyncProviderPingEnabled-Applicability-End -->
 
 <!-- SyncProviderPingEnabled-OmaUri-Begin -->
@@ -7650,8 +7877,10 @@ If you do not configure this policy setting, any defined values are deleted.
 This policy setting allows you to configure the User Experience Virtualization (UE-V) sync provider to ping the settings storage path before attempting to sync settings. If the ping is successful then the sync provider attempts to synchronize the settings packages. If the ping is unsuccessful then the sync provider doesn't attempt the synchronization.
 
 - If you enable this policy setting, the sync provider pings the settings storage location before synchronizing settings packages.
+
 - If you disable this policy setting, the sync provider doesn't ping the settings storage location before synchronizing settings packages.
-- If you do not configure this policy, any defined values will be deleted.
+
+- If you don't configure this policy, any defined values will be deleted.
 <!-- SyncProviderPingEnabled-Description-End -->
 
 <!-- SyncProviderPingEnabled-Editable-Begin -->
@@ -7663,13 +7892,12 @@ This policy setting allows you to configure the User Experience Virtualization (
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SyncProviderPingEnabled-DFProperties-End -->
 
 <!-- SyncProviderPingEnabled-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7696,7 +7924,7 @@ This policy setting allows you to configure the User Experience Virtualization (
 <!-- SyncUnlistedWindows8Apps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SyncUnlistedWindows8Apps-Applicability-End -->
 
 <!-- SyncUnlistedWindows8Apps-OmaUri-Begin -->
@@ -7707,11 +7935,15 @@ This policy setting allows you to configure the User Experience Virtualization (
 
 <!-- SyncUnlistedWindows8Apps-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting defines the default settings sync behavior of the User Experience Virtualization (UE-V) Agent for Windows apps that are not explicitly listed in Windows App List.
+This policy setting defines the default settings sync behavior of the User Experience Virtualization (UE-V) Agent for Windows apps that aren't explicitly listed in Windows App List.
+
 By default, the UE-V Agent only synchronizes settings of those Windows apps included in the Windows App List.
+
 With this setting enabled, the settings of all Windows apps not expressly disable in the Windows App List are synchronized.
+
 With this setting disabled, only the settings of the Windows apps set to synchronize in the Windows App List are synchronized.
-If you do not configure this policy setting, any defined values are deleted.
+
+If you don't configure this policy setting, any defined values are deleted.
 <!-- SyncUnlistedWindows8Apps-Description-End -->
 
 <!-- SyncUnlistedWindows8Apps-Editable-Begin -->
@@ -7723,13 +7955,12 @@ If you do not configure this policy setting, any defined values are deleted.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SyncUnlistedWindows8Apps-DFProperties-End -->
 
 <!-- SyncUnlistedWindows8Apps-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7756,7 +7987,7 @@ If you do not configure this policy setting, any defined values are deleted.
 <!-- Travel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Travel-Applicability-End -->
 
 <!-- Travel-OmaUri-Begin -->
@@ -7772,11 +8003,14 @@ If you do not configure this policy setting, any defined values are deleted.
 <!-- Travel-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for the Travel app.
+
 By default, the user settings of Travel sync between computers. Use the policy setting to prevent the user settings of Travel from synchronizing between computers.
 
 - If you enable this policy setting, Travel user settings continue to sync.
+
 - If you disable this policy setting, Travel user settings are excluded from synchronization.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Travel-Description-End -->
 
 <!-- Travel-Editable-Begin -->
@@ -7788,13 +8022,12 @@ By default, the user settings of Travel sync between computers. Use the policy s
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Travel-DFProperties-End -->
 
 <!-- Travel-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7821,7 +8054,7 @@ By default, the user settings of Travel sync between computers. Use the policy s
 <!-- TrayIconEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- TrayIconEnabled-Applicability-End -->
 
 <!-- TrayIconEnabled-OmaUri-Begin -->
@@ -7833,8 +8066,10 @@ By default, the user settings of Travel sync between computers. Use the policy s
 <!-- TrayIconEnabled-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting enables the User Experience Virtualization (UE-V) tray icon. By default, an icon appears in the system tray that displays notifications for UE-V. This icon also provides a link to the UE-V Agent application, Company Settings Center. Users can open the Company Settings Center by right-clicking the icon and selecting Open or by double-clicking the icon. When this group policy setting is enabled, the UE-V tray icon is visible, the UE-V notifications display, and the Company Settings Center is accessible from the tray icon.
-With this setting disabled, the tray icon does not appear in the system tray, UE-V never displays notifications, and the user cannot access Company Settings Center from the system tray. The Company Settings Center remains accessible through the Control Panel and the Start menu or Start screen.
-If you do not configure this policy setting, any defined values are deleted.
+
+With this setting disabled, the tray icon doesn't appear in the system tray, UE-V never displays notifications, and the user can't access Company Settings Center from the system tray. The Company Settings Center remains accessible through the Control Panel and the Start menu or Start screen.
+
+If you don't configure this policy setting, any defined values are deleted.
 <!-- TrayIconEnabled-Description-End -->
 
 <!-- TrayIconEnabled-Editable-Begin -->
@@ -7846,13 +8081,12 @@ If you do not configure this policy setting, any defined values are deleted.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TrayIconEnabled-DFProperties-End -->
 
 <!-- TrayIconEnabled-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7879,7 +8113,7 @@ If you do not configure this policy setting, any defined values are deleted.
 <!-- Video-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Video-Applicability-End -->
 
 <!-- Video-OmaUri-Begin -->
@@ -7895,11 +8129,14 @@ If you do not configure this policy setting, any defined values are deleted.
 <!-- Video-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for the Video app.
+
 By default, the user settings of Video sync between computers. Use the policy setting to prevent the user settings of Video from synchronizing between computers.
 
 - If you enable this policy setting, Video user settings continue to sync.
+
 - If you disable this policy setting, Video user settings are excluded from synchronization.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Video-Description-End -->
 
 <!-- Video-Editable-Begin -->
@@ -7911,13 +8148,12 @@ By default, the user settings of Video sync between computers. Use the policy se
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Video-DFProperties-End -->
 
 <!-- Video-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -7944,7 +8180,7 @@ By default, the user settings of Video sync between computers. Use the policy se
 <!-- Weather-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Weather-Applicability-End -->
 
 <!-- Weather-OmaUri-Begin -->
@@ -7960,11 +8196,14 @@ By default, the user settings of Video sync between computers. Use the policy se
 <!-- Weather-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for the Weather app.
+
 By default, the user settings of Weather sync between computers. Use the policy setting to prevent the user settings of Weather from synchronizing between computers.
 
 - If you enable this policy setting, Weather user settings continue to sync.
+
 - If you disable this policy setting, Weather user settings are excluded from synchronization.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Weather-Description-End -->
 
 <!-- Weather-Editable-Begin -->
@@ -7976,13 +8215,12 @@ By default, the user settings of Weather sync between computers. Use the policy 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Weather-DFProperties-End -->
 
 <!-- Weather-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -8009,7 +8247,7 @@ By default, the user settings of Weather sync between computers. Use the policy 
 <!-- Wordpad-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Wordpad-Applicability-End -->
 
 <!-- Wordpad-OmaUri-Begin -->
@@ -8025,11 +8263,14 @@ By default, the user settings of Weather sync between computers. Use the policy 
 <!-- Wordpad-Description-Begin -->
 <!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings of WordPad.
+
 By default, the user settings of WordPad synchronize between computers. Use the policy setting to prevent the user settings of WordPad from synchronization between computers.
 
 - If you enable this policy setting, the WordPad user settings continue to synchronize.
+
 - If you disable this policy setting, WordPad user settings are excluded from the synchronization settings.
-- If you do not configure this policy setting, any defined values will be deleted.
+
+- If you don't configure this policy setting, any defined values will be deleted.
 <!-- Wordpad-Description-End -->
 
 <!-- Wordpad-Editable-Begin -->
@@ -8041,13 +8282,12 @@ By default, the user settings of WordPad synchronize between computers. Use the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Wordpad-DFProperties-End -->
 
 <!-- Wordpad-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

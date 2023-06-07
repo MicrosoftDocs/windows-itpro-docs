@@ -1,15 +1,18 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 05/01/2023
+ms.date: 05/15/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
 ms.localizationpriority: medium
-author: tiaraquan
+author: tiaraquan 
 ms.author: tiaraquan
 manager: dougeby 
 ms.reviewer: hathind
+ms.collection:
+  - highpri
+  - tier1
 ---
 
 # What's new 2023
@@ -24,6 +27,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Article | Description |
 | ----- | ----- |
+| [Maintain the Windows Autopatch environment](../operate/windows-autopatch-maintain-environment.md) | Updated the following sections:<ul><li>Tenant actions</li><li>Tenant action severity types</li><li>Critical actions</li></ul><p>Added the [Inactive status](../operate/windows-autopatch-maintain-environment.md#inactive-status) section</p><ul><li>[MC536881](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
 | [Device registration overview](../deploy/windows-autopatch-device-registration-overview.md) | Updated article to include Windows Autopatch groups. The Windows Autopatch groups feature is in public preview |
 | [Register your devices](../deploy/windows-autopatch-register-devices.md) | Updated article to include Windows Autopatch groups. The Windows Autopatch groups feature is in public preview |
 | [Windows Autopatch groups overview](../deploy/windows-autopatch-groups-overview.md) | New article for the Windows Autopatch groups experience. Windows Autopatch groups is in public preview |
@@ -71,7 +75,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 | ----- | ----- |
 | [Windows quality update communications](../operate/windows-autopatch-windows-quality-update-communications.md#standard-communications) | Added guidance on how to [opt out of receiving emails for standard communications](../operate/windows-autopatch-windows-quality-update-communications.md#opt-out-of-receiving-emails-for-standard-communications) (public preview) |
 | [Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md) | <ul><li>Added support for subscription versions of Microsoft Project and Visio desktop apps</li><li>Updated device eligibility criteria</li><li>Clarified update controls</li></ul> |
-| [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) | New [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) feature. This feature is in public preview<li>[MC524715](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li> |
+| [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) | New [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) feature. This feature is in public preview<ul><li>[MC524715](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul>|
 
 ### March service release
 

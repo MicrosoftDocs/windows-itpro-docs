@@ -1,5 +1,5 @@
 ---
-title: User Account Control Admin Approval Mode for the Built-in Administrator account (Windows 10)
+title: User Account Control Admin Approval Mode for the Built-in Administrator account 
 description: Best practices, security considerations, and more for the policy setting, User Account Control Admin Approval Mode for the Built-in Administrator account.
 ms.assetid: d465fc27-1cd2-498b-9cf6-7ad2276e5998
 ms.reviewer: 

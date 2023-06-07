@@ -4,7 +4,7 @@ description: Learn more about the Connectivity Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 06/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- Connectivity-Begin -->
 # Policy CSP - Connectivity
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- Connectivity-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- AllowBluetooth-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowBluetooth-Applicability-End -->
 
 <!-- AllowBluetooth-OmaUri-Begin -->
@@ -45,7 +42,7 @@ ms.topic: reference
 Allows the user to enable Bluetooth or restrict access.
 
 > [!NOTE]
-> This value is not supported in Windows Phone 8. 1 MDM and EAS, Windows 10 for desktop, or Windows 10 Mobile. If this is not set or it is deleted, the default value of 2 (Allow) is used. Most restricted value is 0.
+> This value isn't supported in Windows Phone 8. 1 MDM and EAS, Windows 10 for desktop, or Windows 10 Mobile. If this isn't set or it's deleted, the default value of 2 (Allow) is used. Most restricted value is 0.
 <!-- AllowBluetooth-Description-End -->
 
 <!-- AllowBluetooth-Editable-Begin -->
@@ -57,7 +54,7 @@ Allows the user to enable Bluetooth or restrict access.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 2 |
 <!-- AllowBluetooth-DFProperties-End -->
@@ -67,8 +64,7 @@ Allows the user to enable Bluetooth or restrict access.
 
 | Value | Description |
 |:--|:--|
-| 0 | Disallow Bluetooth. If this is set to 0, the radio in the Bluetooth control panel will be grayed out and the user will not be able to turn Bluetooth on. |
-| 1 | Reserved. If this is set to 1, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on. |
+| 0 | Disallow Bluetooth. If this is set to 0, the radio in the Bluetooth control panel will be grayed out and the user won't be able to turn Bluetooth on. |
 | 2 (Default) | Allow Bluetooth. If this is set to 2, the radio in the Bluetooth control panel will be functional and the user will be able to turn Bluetooth on. |
 <!-- AllowBluetooth-AllowedValues-End -->
 
@@ -84,7 +80,7 @@ Allows the user to enable Bluetooth or restrict access.
 <!-- AllowCellularData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowCellularData-Applicability-End -->
 
 <!-- AllowCellularData-OmaUri-Begin -->
@@ -95,7 +91,7 @@ Allows the user to enable Bluetooth or restrict access.
 
 <!-- AllowCellularData-Description-Begin -->
 <!-- Description-Source-DDF -->
-Allows the cellular data channel on the device. Device reboot is not required to enforce the policy.
+Allows the cellular data channel on the device. Device reboot isn't required to enforce the policy.
 <!-- AllowCellularData-Description-End -->
 
 <!-- AllowCellularData-Editable-Begin -->
@@ -107,7 +103,7 @@ Allows the cellular data channel on the device. Device reboot is not required to
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowCellularData-DFProperties-End -->
@@ -117,9 +113,9 @@ Allows the cellular data channel on the device. Device reboot is not required to
 
 | Value | Description |
 |:--|:--|
-| 0 | Do not allow the cellular data channel. The user cannot turn it on. This value is not supported in Windows 10, version 1511. |
+| 0 | Don't allow the cellular data channel. The user can't turn it on. This value isn't supported in Windows 10, version 1511. |
 | 1 (Default) | Allow the cellular data channel. The user can turn it off. |
-| 2 | Allow the cellular data channel. The user cannot turn it off. |
+| 2 | Allow the cellular data channel. The user can't turn it off. |
 <!-- AllowCellularData-AllowedValues-End -->
 
 <!-- AllowCellularData-Examples-Begin -->
@@ -134,7 +130,7 @@ Allows the cellular data channel on the device. Device reboot is not required to
 <!-- AllowCellularDataRoaming-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowCellularDataRoaming-Applicability-End -->
 
 <!-- AllowCellularDataRoaming-OmaUri-Begin -->
@@ -149,7 +145,7 @@ This policy setting prevents clients from connecting to Mobile Broadband network
 
 - If this policy setting is enabled, all automatic and manual connection attempts to roaming provider networks are blocked until the client registers with the home provider network.
 
-- If this policy setting is not configured or is disabled, clients are allowed to connect to roaming provider Mobile Broadband networks.
+- If this policy setting isn't configured or is disabled, clients are allowed to connect to roaming provider Mobile Broadband networks.
 <!-- AllowCellularDataRoaming-Description-End -->
 
 <!-- AllowCellularDataRoaming-Editable-Begin -->
@@ -161,7 +157,7 @@ This policy setting prevents clients from connecting to Mobile Broadband network
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowCellularDataRoaming-DFProperties-End -->
@@ -171,9 +167,9 @@ This policy setting prevents clients from connecting to Mobile Broadband network
 
 | Value | Description |
 |:--|:--|
-| 0 | Do not allow cellular data roaming. The user cannot turn it on. This value is not supported in Windows 10, version 1511. |
+| 0 | Don't allow cellular data roaming. The user can't turn it on. This value isn't supported in Windows 10, version 1511. |
 | 1 (Default) | Allow cellular data roaming. |
-| 2 | Allow cellular data roaming on. The user cannot turn it off. |
+| 2 | Allow cellular data roaming on. The user can't turn it off. |
 <!-- AllowCellularDataRoaming-AllowedValues-End -->
 
 <!-- AllowCellularDataRoaming-GpMapping-Begin -->
@@ -209,7 +205,7 @@ To validate, the enterprise can confirm by observing the roaming enable switch i
 <!-- AllowConnectedDevices-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AllowConnectedDevices-Applicability-End -->
 
 <!-- AllowConnectedDevices-OmaUri-Begin -->
@@ -234,7 +230,7 @@ To validate, the enterprise can confirm by observing the roaming enable switch i
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowConnectedDevices-DFProperties-End -->
@@ -263,7 +259,7 @@ To validate, the enterprise can confirm by observing the roaming enable switch i
 <!-- AllowNFC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowNFC-Applicability-End -->
 
 <!-- AllowNFC-OmaUri-Begin -->
@@ -286,7 +282,7 @@ This policy is deprecated.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowNFC-DFProperties-End -->
@@ -312,7 +308,7 @@ This policy is deprecated.
 <!-- AllowPhonePCLinking-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AllowPhonePCLinking-Applicability-End -->
 
 <!-- AllowPhonePCLinking-OmaUri-Begin -->
@@ -327,9 +323,9 @@ This policy allows IT admins to turn off the ability to Link a Phone with a PC t
 
 - If you enable this policy setting, the Windows device will be able to enroll in Phone-PC linking functionality and participate in Continue on PC experiences.
 
-- If you disable this policy setting, the Windows device is not allowed to be linked to Phones, will remove itself from the device list of any linked Phones, and cannot participate in Continue on PC experiences.
+- If you disable this policy setting, the Windows device isn't allowed to be linked to Phones, will remove itself from the device list of any linked Phones, and can't participate in Continue on PC experiences.
 
-- If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
+- If you don't configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
 <!-- AllowPhonePCLinking-Description-End -->
 
 <!-- AllowPhonePCLinking-Editable-Begin -->
@@ -341,7 +337,7 @@ This policy allows IT admins to turn off the ability to Link a Phone with a PC t
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowPhonePCLinking-DFProperties-End -->
@@ -351,7 +347,7 @@ This policy allows IT admins to turn off the ability to Link a Phone with a PC t
 
 | Value | Description |
 |:--|:--|
-| 0 | Do not link. |
+| 0 | Don't link. |
 | 1 (Default) | Allow phone-PC linking. |
 <!-- AllowPhonePCLinking-AllowedValues-End -->
 
@@ -386,7 +382,7 @@ Device that has previously opt-in to MMX will also stop showing on the device li
 <!-- AllowUSBConnection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowUSBConnection-Applicability-End -->
 
 <!-- AllowUSBConnection-OmaUri-Begin -->
@@ -399,7 +395,7 @@ Device that has previously opt-in to MMX will also stop showing on the device li
 <!-- Description-Source-DDF -->
 
 > [!NOTE]
-> Currently, this policy is supported only in HoloLens 2, HoloLens (1st gen) Commercial Suite, and HoloLens (1st gen) Development Edition. Enables USB connection between the device and a computer to sync files with the device or to use developer tools to deploy or debug applications. Changing this policy does not affect USB charging. Both Media Transfer Protocol (MTP) and IP over USB are disabled when this policy is enforced. Most restricted value is 0.
+> Currently, this policy is supported only in HoloLens 2, HoloLens (1st gen) Commercial Suite, and HoloLens (1st gen) Development Edition. Enables USB connection between the device and a computer to sync files with the device or to use developer tools to deploy or debug applications. Changing this policy doesn't affect USB charging. Both Media Transfer Protocol (MTP) and IP over USB are disabled when this policy is enforced. Most restricted value is 0.
 <!-- AllowUSBConnection-Description-End -->
 
 <!-- AllowUSBConnection-Editable-Begin -->
@@ -411,7 +407,7 @@ Device that has previously opt-in to MMX will also stop showing on the device li
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowUSBConnection-DFProperties-End -->
@@ -437,7 +433,7 @@ Device that has previously opt-in to MMX will also stop showing on the device li
 <!-- AllowVPNOverCellular-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowVPNOverCellular-Applicability-End -->
 
 <!-- AllowVPNOverCellular-OmaUri-Begin -->
@@ -460,7 +456,7 @@ Specifies what type of underlying connections VPN is allowed to use. Most restri
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowVPNOverCellular-DFProperties-End -->
@@ -470,7 +466,7 @@ Specifies what type of underlying connections VPN is allowed to use. Most restri
 
 | Value | Description |
 |:--|:--|
-| 0 | VPN is not allowed over cellular. |
+| 0 | VPN isn't allowed over cellular. |
 | 1 (Default) | VPN can use any connection, including cellular. |
 <!-- AllowVPNOverCellular-AllowedValues-End -->
 
@@ -486,7 +482,7 @@ Specifies what type of underlying connections VPN is allowed to use. Most restri
 <!-- AllowVPNRoamingOverCellular-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowVPNRoamingOverCellular-Applicability-End -->
 
 <!-- AllowVPNRoamingOverCellular-OmaUri-Begin -->
@@ -509,7 +505,7 @@ Prevents the device from connecting to VPN when the device roams over cellular n
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowVPNRoamingOverCellular-DFProperties-End -->
@@ -535,7 +531,7 @@ Prevents the device from connecting to VPN when the device roams over cellular n
 <!-- DiablePrintingOverHTTP-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DiablePrintingOverHTTP-Applicability-End -->
 
 <!-- DiablePrintingOverHTTP-OmaUri-Begin -->
@@ -551,11 +547,11 @@ This policy setting specifies whether to allow printing over HTTP from this clie
 Printing over HTTP allows a client to print to printers on the intranet as well as the Internet.
 
 > [!NOTE]
-> This policy setting affects the client side of Internet printing only. It does not prevent this computer from acting as an Internet Printing server and making its shared printers available via HTTP.
+> This policy setting affects the client side of Internet printing only. It doesn't prevent this computer from acting as an Internet Printing server and making its shared printers available via HTTP.
 
 - If you enable this policy setting, it prevents this client from printing to Internet printers over HTTP.
 
-- If you disable or do not configure this policy setting, users can choose to print to Internet printers over HTTP.
+- If you disable or don't configure this policy setting, users can choose to print to Internet printers over HTTP.
 
 Also, see the "Web-based printing" policy setting in Computer Configuration/Administrative Templates/Printers.
 <!-- DiablePrintingOverHTTP-Description-End -->
@@ -569,13 +565,12 @@ Also, see the "Web-based printing" policy setting in Computer Configuration/Admi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DiablePrintingOverHTTP-DFProperties-End -->
 
 <!-- DiablePrintingOverHTTP-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -602,7 +597,7 @@ Also, see the "Web-based printing" policy setting in Computer Configuration/Admi
 <!-- DisableDownloadingOfPrintDriversOverHTTP-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableDownloadingOfPrintDriversOverHTTP-Applicability-End -->
 
 <!-- DisableDownloadingOfPrintDriversOverHTTP-OmaUri-Begin -->
@@ -618,11 +613,11 @@ This policy setting specifies whether to allow this client to download print dri
 To set up HTTP printing, non-inbox drivers need to be downloaded over HTTP.
 
 > [!NOTE]
-> This policy setting does not prevent the client from printing to printers on the Intranet or the Internet over HTTP. It only prohibits downloading drivers that are not already installed locally.
+> This policy setting doesn't prevent the client from printing to printers on the Intranet or the Internet over HTTP. It only prohibits downloading drivers that aren't already installed locally.
 
-- If you enable this policy setting, print drivers cannot be downloaded over HTTP.
+- If you enable this policy setting, print drivers can't be downloaded over HTTP.
 
-- If you disable or do not configure this policy setting, users can download print drivers over HTTP.
+- If you disable or don't configure this policy setting, users can download print drivers over HTTP.
 <!-- DisableDownloadingOfPrintDriversOverHTTP-Description-End -->
 
 <!-- DisableDownloadingOfPrintDriversOverHTTP-Editable-Begin -->
@@ -634,13 +629,12 @@ To set up HTTP printing, non-inbox drivers need to be downloaded over HTTP.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableDownloadingOfPrintDriversOverHTTP-DFProperties-End -->
 
 <!-- DisableDownloadingOfPrintDriversOverHTTP-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -667,7 +661,7 @@ To set up HTTP printing, non-inbox drivers need to be downloaded over HTTP.
 <!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-Applicability-End -->
 
 <!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-OmaUri-Begin -->
@@ -682,9 +676,9 @@ This policy setting specifies whether Windows should download a list of provider
 
 These wizards allow users to select from a list of companies that provide services such as online storage and photographic printing. By default, Windows displays providers downloaded from a Windows website in addition to providers specified in the registry.
 
-- If you enable this policy setting, Windows does not download providers, and only the service providers that are cached in the local registry are displayed.
+- If you enable this policy setting, Windows doesn't download providers, and only the service providers that are cached in the local registry are displayed.
 
-- If you disable or do not configure this policy setting, a list of providers are downloaded when the user uses the web publishing or online ordering wizards.
+- If you disable or don't configure this policy setting, a list of providers are downloaded when the user uses the web publishing or online ordering wizards.
 
 See the documentation for the web publishing and online ordering wizards for more information, including details on specifying service providers in the registry.
 <!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-Description-End -->
@@ -698,13 +692,12 @@ See the documentation for the web publishing and online ordering wizards for mor
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-DFProperties-End -->
 
 <!-- DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -731,7 +724,7 @@ See the documentation for the web publishing and online ordering wizards for mor
 <!-- DisallowNetworkConnectivityActiveTests-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DisallowNetworkConnectivityActiveTests-Applicability-End -->
 
 <!-- DisallowNetworkConnectivityActiveTests-OmaUri-Begin -->
@@ -746,9 +739,9 @@ This policy setting turns off the active tests performed by the Windows Network 
 
 As part of determining the connectivity level, NCSI performs one of two active tests: downloading a page from a dedicated Web server or making a DNS request for a dedicated address.
 
-- If you enable this policy setting, NCSI does not run either of the two active tests. This may reduce the ability of NCSI, and of other components that use NCSI, to determine Internet access.
+- If you enable this policy setting, NCSI doesn't run either of the two active tests. This may reduce the ability of NCSI, and of other components that use NCSI, to determine Internet access.
 
-- If you disable or do not configure this policy setting, NCSI runs one of the two active tests.
+- If you disable or don't configure this policy setting, NCSI runs one of the two active tests.
 <!-- DisallowNetworkConnectivityActiveTests-Description-End -->
 
 <!-- DisallowNetworkConnectivityActiveTests-Editable-Begin -->
@@ -760,7 +753,7 @@ As part of determining the connectivity level, NCSI performs one of two active t
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisallowNetworkConnectivityActiveTests-DFProperties-End -->
@@ -800,7 +793,7 @@ As part of determining the connectivity level, NCSI performs one of two active t
 <!-- HardenedUNCPaths-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- HardenedUNCPaths-Applicability-End -->
 
 <!-- HardenedUNCPaths-OmaUri-Begin -->
@@ -826,13 +819,12 @@ For more information, see [MS15-011: Vulnerability in Group Policy could allow r
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- HardenedUNCPaths-DFProperties-End -->
 
 <!-- HardenedUNCPaths-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -858,7 +850,7 @@ For more information, see [MS15-011: Vulnerability in Group Policy could allow r
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Applicability-End -->
 
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-OmaUri-Begin -->
@@ -872,11 +864,11 @@ For more information, see [MS15-011: Vulnerability in Group Policy could allow r
 Determines whether a user can install and configure the Network Bridge.
 
 > [!IMPORTANT]
-> This settings is location aware. It only applies when a computer is connected to the same DNS domain network it was connected to when the setting was refreshed on that computer. If a computer is connected to a DNS domain network other than the one it was connected to when the setting was refreshed, this setting does not apply.
+> This settings is location aware. It only applies when a computer is connected to the same DNS domain network it was connected to when the setting was refreshed on that computer. If a computer is connected to a DNS domain network other than the one it was connected to when the setting was refreshed, this setting doesn't apply.
 
 The Network Bridge allows users to create a layer 2 MAC bridge, enabling them to connect two or more network segements together. This connection appears in the Network Connections folder.
 
-If you disable this setting or do not configure it, the user will be able to create and modify the configuration of a Network Bridge. Enabling this setting does not remove an existing Network Bridge from the user's computer.
+If you disable this setting or don't configure it, the user will be able to create and modify the configuration of a Network Bridge. Enabling this setting doesn't remove an existing Network Bridge from the user's computer.
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Description-End -->
 
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-Editable-Begin -->
@@ -888,13 +880,12 @@ If you disable this setting or do not configure it, the user will be able to cre
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-DFProperties-End -->
 
 <!-- ProhibitInstallationAndConfigurationOfNetworkBridge-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

@@ -1,5 +1,5 @@
 ---
-title: Deploy Windows Defender Application Control (WDAC) policies using script (Windows)
+title: Deploy Windows Defender Application Control (WDAC) policies using script 
 description: Use scripts to deploy Windows Defender Application Control (WDAC) policies. Learn how with this step-by-step guide.
 keywords: security, malware
 ms.prod: windows-client

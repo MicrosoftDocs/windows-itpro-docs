@@ -1,5 +1,5 @@
 ---
-title: Deploy WDAC policies via Group Policy (Windows)
+title: Deploy WDAC policies via Group Policy 
 description: Windows Defender Application Control (WDAC) policies can easily be deployed and managed with Group Policy. Learn how by following this step-by-step guide.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb

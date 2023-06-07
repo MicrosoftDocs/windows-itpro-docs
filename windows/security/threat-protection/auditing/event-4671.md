@@ -1,5 +1,5 @@
 ---
-title: 4671(-) An application attempted to access a blocked ordinal through the TBS. (Windows 10)
+title: 4671(-) An application attempted to access a blocked ordinal through the TBS. 
 description: Describes security event 4671(-) An application attempted to access a blocked ordinal through the TBS.
 ms.pagetype: security
 ms.prod: windows-client

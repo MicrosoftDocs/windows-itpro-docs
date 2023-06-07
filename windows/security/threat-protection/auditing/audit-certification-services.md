@@ -1,5 +1,5 @@
 ---
-title: Audit Certification Services (Windows 10)
+title: Audit Certification Services 
 description: The policy setting, Audit Certification Services, decides if events are generated when Active Directory Certificate Services (ADA CS) operations are performed.
 ms.assetid: cdefc34e-fb1f-4eff-b766-17713c5a1b03
 ms.reviewer: 

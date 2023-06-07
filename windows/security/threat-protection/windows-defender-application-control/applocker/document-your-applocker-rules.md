@@ -1,5 +1,5 @@
 ---
-title: Document your AppLocker rules (Windows)
+title: Document your AppLocker rules 
 description: Learn how to document your AppLocker rules and associate rule conditions with files, permissions, rule source, and implementation.
 ms.assetid: 91a198ce-104a-45ff-b49b-487fb40cd2dd
 ms.reviewer: 

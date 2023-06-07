@@ -1,5 +1,5 @@
 ---
-title: Manage packaged apps with AppLocker (Windows)
+title: Manage packaged apps with AppLocker 
 description: Learn concepts and lists procedures to help you manage packaged apps with AppLocker as part of your overall application control strategy.
 ms.assetid: 6d0c99e7-0284-4547-a30a-0685a9916650
 ms.reviewer: 

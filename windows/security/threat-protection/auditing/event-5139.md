@@ -1,5 +1,5 @@
 ---
-title: 5139(S) A directory service object was moved. (Windows 10)
+title: 5139(S) A directory service object was moved. 
 description: Describes security event 5139(S) A directory service object was moved.
 ms.pagetype: security
 ms.prod: windows-client

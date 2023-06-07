@@ -1,5 +1,5 @@
 ---
-title: AppLocker design guide (Windows)
+title: AppLocker design guide 
 description: This topic for the IT professional introduces the design and planning steps required to deploy application control policies by using AppLocker.
 ms.assetid: 1c8e4a7b-3164-4eb4-9277-11b1d5a09c7b
 ms.reviewer: 

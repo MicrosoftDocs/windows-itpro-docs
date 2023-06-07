@@ -1,5 +1,5 @@
 ---
-title: Requirements for deploying AppLocker policies (Windows)
+title: Requirements for deploying AppLocker policies 
 description: This deployment topic for the IT professional lists the requirements that you need to consider before you deploy AppLocker policies.
 ms.assetid: 3e55bda2-3cd7-42c7-bad3-c7dfbe193d48
 ms.reviewer: 

@@ -1,5 +1,5 @@
 ---
-title: Script rules in AppLocker (Windows)
+title: Script rules in AppLocker 
 description: This article describes the file formats and available default rules for the script rule collection.
 ms.assetid: fee24ca4-935a-4c5e-8a92-8cf1d134d35f
 ms.reviewer: 

@@ -1,5 +1,5 @@
 ---
-title: 5142(S) A network share object was added. (Windows 10)
+title: 5142(S) A network share object was added. 
 description: Describes security event 5142(S) A network share object was added. This event is generated when a network share object is added.
 ms.pagetype: security
 ms.prod: windows-client

@@ -1,5 +1,5 @@
 ---
-title: 5060(F) Verification operation failed. (Windows 10)
+title: 5060(F) Verification operation failed. 
 description: Describes security event 5060(F) Verification operation failed. This event is generated when the CNG verification operation fails.
 ms.pagetype: security
 ms.prod: windows-client

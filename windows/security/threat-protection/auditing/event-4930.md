@@ -1,5 +1,5 @@
 ---
-title: 4930(S, F) An Active Directory replica source naming context was modified. (Windows 10)
+title: 4930(S, F) An Active Directory replica source naming context was modified. 
 description: Describes security event 4930(S, F) An Active Directory replica source naming context was modified.
 ms.pagetype: security
 ms.prod: windows-client

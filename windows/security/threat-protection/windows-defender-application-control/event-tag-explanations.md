@@ -1,5 +1,5 @@
 ---
-title: Understanding Application Control event tags (Windows)
+title: Understanding Application Control event tags 
 description: Learn what different Windows Defender Application Control event tags signify.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -13,7 +13,7 @@ author: jsuther1974
 ms.reviewer: jogeurte
 ms.author: vinpa
 manager: aaroncz
-ms.date: 03/24/2023
+ms.date: 05/09/2023
 ms.technology: itpro-security
 ms.topic: article
 ---
@@ -62,35 +62,35 @@ Represents why verification failed, or if it succeeded.
 
 | VerificationError Value | Explanation |
 |---|----------|
-| 0 | Successfully verified signature |
-| 1 | File has an invalid hash |
-| 2 | File contains shared writable sections |
-| 3 | File isn't signed|
-| 4 | Revoked signature |
-| 5 | Expired signature |
-| 6 | File is signed using a weak hashing algorithm, which doesn't meet the minimum policy |
-| 7 | Invalid root certificate |
-| 8 | Signature was unable to be validated; generic error |
-| 9 | Signing time not trusted |
-| 10 | The file must be signed using page hashes for this scenario |
-| 11 | Page hash mismatch |
-| 12 | Not valid for a PPL (Protected Process Light) |
-| 13 | Not valid for a PP (Protected Process) |
-| 14 | The signature is missing the required ARM processor EKU |
-| 15 | Failed WHQL check |
-| 16 | Default policy signing level not met |
-| 17 | Custom policy signing level not met; returned when signature doesn't validate against an SBCP-defined set of certs |
-| 18 | Custom signing level not met; returned if signature fails to match `CISigners` in UMCI |
-| 19 | Binary is revoked based on its file hash |
-| 20 | SHA1 cert hash's timestamp is missing or after valid cutoff as defined by Weak Crypto Policy |
-| 21 | Failed to pass Windows Defender Application Control policy |
-| 22 | Not Isolated User Mode (IUM)) signed; indicates an attempt to load a non-trustlet binary into a trustlet |
-| 23 | Invalid image hash |
-| 24 | Flight root not allowed; indicates trying to run flight-signed code on production OS |
-| 25 | Anti-cheat policy violation |
-| 26 | Explicitly denied by WADC policy |
-| 27 | The signing chain appears to be tampered/invalid |
-| 28 | Resource page hash mismatch |
+| 0 | Successfully verified signature. |
+| 1 | File has an invalid hash. |
+| 2 | File contains shared writable sections. |
+| 3 | File isn't signed. |
+| 4 | Revoked signature. |
+| 5 | Expired signature. |
+| 6 | File is signed using a weak hashing algorithm, which doesn't meet the minimum policy. |
+| 7 | Invalid root certificate. |
+| 8 | Signature was unable to be validated; generic error. |
+| 9 | Signing time not trusted. |
+| 10 | The file must be signed using page hashes for this scenario. |
+| 11 | Page hash mismatch. |
+| 12 | Not valid for a PPL (Protected Process Light). |
+| 13 | Not valid for a PP (Protected Process). |
+| 14 | The signature is missing the required ARM processor EKU. |
+| 15 | Failed WHQL check. |
+| 16 | Default policy signing level not met. |
+| 17 | Custom policy signing level not met; returned when signature doesn't validate against an SBCP-defined set of certs. |
+| 18 | Custom signing level not met; returned if signature fails to match `CISigners` in UMCI. |
+| 19 | Binary is revoked based on its file hash. |
+| 20 | SHA1 cert hash's timestamp is missing or after valid cutoff as defined by Weak Crypto Policy. |
+| 21 | Failed to pass Windows Defender Application Control policy. |
+| 22 | Not Isolated User Mode (IUM)) signed; indicates an attempt to load a standard Windows binary into a virtualization-based security (VBS) trustlet. |
+| 23 | Invalid image hash. This error can indicate file corruption or a problem with the file's signature. Signatures using elliptic curve cryptography (ECC), such as ECDSA, return this VerificationError. |
+| 24 | Flight root not allowed; indicates trying to run flight-signed code on production OS. |
+| 25 | Anti-cheat policy violation. |
+| 26 | Explicitly denied by WADC policy. |
+| 27 | The signing chain appears to be tampered/invalid. |
+| 28 | Resource page hash mismatch. |
 
 ## Policy activation event Options
 

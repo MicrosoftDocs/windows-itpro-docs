@@ -1,5 +1,5 @@
 ---
-title: Mitigate threats by using Windows 10 security features (Windows 10)
+title: Mitigate threats by using Windows 10 security features
 description: An overview of software and firmware threats faced in the current security landscape, and the mitigations that Windows 10 offers in response to these threats.
 ms.prod: windows-client
 ms.localizationpriority: medium
@@ -84,7 +84,7 @@ Windows Defender SmartScreen notifies users if they click on reported phishing a
 
 For Windows 10, Microsoft improved SmartScreen (now called Windows Defender SmartScreen) protection capability by integrating its app reputation abilities into the operating system itself, which allows Windows Defender SmartScreen to check the reputation of files downloaded from the Internet and warn users when they're about to run a high-risk downloaded file. The first time a user runs an app that originates from the Internet, Windows Defender SmartScreen checks the reputation of the application by using digital signatures and other factors against a service that Microsoft maintains. If the app lacks a reputation or is known to be malicious, Windows Defender SmartScreen warns the user or blocks execution entirely, depending on how the administrator has configured Microsoft Intune or Group Policy settings.
 
-For more information, see [Microsoft Defender SmartScreen overview](microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md).
+For more information, see [Microsoft Defender SmartScreen overview](/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/).
 
 ### Microsoft Defender Antivirus
 
@@ -124,7 +124,7 @@ Data Execution Prevention (DEP) does exactly that, by substantially reducing the
 
 5. Click **OK**.
 
-You can now see which processes have DEP enabled. 
+You can now see which processes have DEP enabled.
 
 <!-- This might be a good place to mention the cmdlet that lets you see the same kind of output. -->
 
@@ -296,7 +296,7 @@ Some of the protections available in Windows 10 are provided through functions t
 | Extension point disable to block the use of certain third-party extension points | [UpdateProcThreadAttribute function](/windows/win32/api/processthreadsapi/nf-processthreadsapi-updateprocthreadattribute)<br>\[PROCESS\_CREATION\_MITIGATION\_POLICY\_EXTENSION\_POINT\_DISABLE\_ALWAYS\_ON\] |
 | Heap terminate on corruption to protect the system against a corrupted heap      | [UpdateProcThreadAttribute function](/windows/win32/api/processthreadsapi/nf-processthreadsapi-updateprocthreadattribute)<br>\[PROCESS\_CREATION\_MITIGATION\_POLICY\_HEAP\_TERMINATE\_ALWAYS\_ON\]  |
 
-## Understanding Windows 10 in relation to the Enhanced Mitigation Experience Toolkit 
+## Understanding Windows 10 in relation to the Enhanced Mitigation Experience Toolkit
 
 You might already be familiar with the [Enhanced Mitigation Experience Toolkit (EMET)](https://support.microsoft.com/topic/emet-mitigations-guidelines-b529d543-2a81-7b5a-d529-84b30e1ecee0), which has since 2009 offered various exploit mitigations, and an interface for configuring those mitigations. You can use this section to understand how EMET mitigations relate to those mitigations in Windows 10. Many of EMET's mitigations have been built into Windows 10, some with extra improvements. However, some EMET mitigations carry high-performance cost, or appear to be relatively ineffective against modern threats, and therefore haven't been brought into Windows 10.
 
@@ -322,7 +322,7 @@ One of EMET's strengths is that it allows you to import and export configuration
 Install-Module -Name ProcessMitigations
 ```
 
-The Get-ProcessMitigation cmdlet gets the current mitigation settings from the registry or from a running process, or it can save all settings to an XML file. 
+The Get-ProcessMitigation cmdlet gets the current mitigation settings from the registry or from a running process, or it can save all settings to an XML file.
 
 To get the current settings on all running instances of notepad.exe:
 
@@ -377,7 +377,7 @@ ConvertTo-ProcessMitigationPolicy -EMETFilePath <String> -OutputFilePath <String
 Examples:
 
 - **Convert EMET settings to Windows 10 settings**: You can run ConvertTo-ProcessMitigationPolicy and provide an EMET XML settings file as input, which will generate a result file of Windows 10 mitigation settings. For example:
-    
+
     ```powershell
     ConvertTo-ProcessMitigationPolicy -EMETFilePath policy.xml -OutputFilePath result.xml
     ```

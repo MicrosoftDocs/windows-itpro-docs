@@ -73,6 +73,8 @@ Smart App Control enforces the [Microsoft Recommended Driver Block rules](micros
 - Microsoft.Build.Framework.dll
 - Wslhost.dll
 
+[!INCLUDE [windows-defender-application-control-wdac](../../../../includes/licensing/windows-defender-application-control-wdac.md)]
+
 ## Related articles
 
 - [WDAC design guide](windows-defender-application-control-design-guide.md)

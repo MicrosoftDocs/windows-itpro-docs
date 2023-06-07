@@ -1,5 +1,5 @@
 ---
-title: Devices Allow undock without having to log on (Windows 10)
+title: Devices Allow undock without having to log on 
 description: Describes the best practices, location, values, and security considerations for the Devices Allow undock without having to sign in security policy setting.
 ms.assetid: 1d403f5d-ad41-4bb4-9f4a-0779c1c14b8c
 ms.reviewer: 

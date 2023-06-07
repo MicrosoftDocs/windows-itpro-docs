@@ -1,5 +1,5 @@
 ---
-title: Microsoft recommended driver block rules (Windows)
+title: Microsoft recommended driver block rules 
 description: View a list of recommended block rules to block vulnerable third-party drivers discovered by Microsoft and the security research community.
 keywords: security, malware, kernel mode, driver
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -16,7 +16,7 @@ author: jgeurten
 ms.reviewer: jsuther
 ms.author: vinpa
 manager: aaroncz
-ms.date: 02/08/2023
+ms.date: 06/06/2023
 ms.technology: itpro-security
 ms.topic: article
 ---
@@ -59,6 +59,8 @@ The blocklist is updated with each new major release of Windows, typically 1-2 t
 
 Customers who always want the most up-to-date driver blocklist can also use Windows Defender Application Control (WDAC) to apply the latest recommended driver blocklist contained in this article. For your convenience, we've provided a download of the most up-to-date vulnerable driver blocklist along with instructions to apply it on your computer at the end of this article. Otherwise, you can use the XML provided below to create your own custom WDAC policies.
 
+[!INCLUDE [microsoft-vulnerable-driver-blocklist](../../../../includes/licensing/microsoft-vulnerable-driver-blocklist.md)]
+
 ## Blocking vulnerable drivers using WDAC
 
 Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or S mode to protect your devices against security threats. If this setting isn't possible, Microsoft recommends blocking [this list of drivers](#vulnerable-driver-blocklist-xml) within your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can cause devices or software to malfunction, and in rare cases, blue screen. It's recommended to first validate this policy in [audit mode](/windows/security/threat-protection/windows-defender-application-control/audit-windows-defender-application-control-policies) and review the audit block events.
@@ -98,7 +100,7 @@ To check that the policy was successfully applied on your computer:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
-  <VersionEx>10.0.25310.0</VersionEx>
+  <VersionEx>10.0.25873.0</VersionEx>
   <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
   <Rules>
     <Rule>
@@ -581,6 +583,14 @@ To check that the policy was successfully applied on your computer:
     <Deny ID="ID_DENY_DIRECTIO_39" FriendlyName="PassMark DirectIo.sys Hash Sha256" Hash="2FB5D7E6DB01C9090BBA92ABF580D38993E02CE9357E08FE1F224A9B18056E5A" />
     <Deny ID="ID_DENY_DIRECTIO_3A" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="AE806CA05E141B71664D9C6F20CC2369EF26F996" />
     <Deny ID="ID_DENY_DIRECTIO_3B" FriendlyName="PassMark DirectIo.sys Hash Sha1" Hash="D0559503988DAA407FCC11E59079560CB456BB84" />
+    <Deny ID="ID_DENY_EIO64_1" FriendlyName="Asus EIO64\b17507a3246020fa0052a172485d7b3567e0161747927f2edf27c40e310852e0 Hash Sha1" Hash="200BE5A696990EE97B4C3176234CDE46C3EBC2CE" />
+    <Deny ID="ID_DENY_EIO64_2" FriendlyName="Asus EIO64\b17507a3246020fa0052a172485d7b3567e0161747927f2edf27c40e310852e0 Hash Sha256" Hash="72B36C64F0B349D7816C8E5E2D1A7F59807DE0C87D3F071A04DBC56BEC9C00DB" />
+    <Deny ID="ID_DENY_EIO64_3" FriendlyName="Asus EIO64\b17507a3246020fa0052a172485d7b3567e0161747927f2edf27c40e310852e0 Hash Page Sha1" Hash="DB88BFE5F3DE4E3CC778FE456B542EC4135433A4" />
+    <Deny ID="ID_DENY_EIO64_4" FriendlyName="Asus EIO64\b17507a3246020fa0052a172485d7b3567e0161747927f2edf27c40e310852e0 Hash Page Sha256" Hash="609E8789D16176622F6EC629A8BEA7513A37CB6BBA7775971FD24056F8F3BCE0" />
+    <Deny ID="ID_DENY_EIO64_5" FriendlyName="Asus EIO64\cf69704755ec2643dfd245ae1d4e15d77f306aeb1a576ffa159453de1a7345cb Hash Sha1" Hash="ED54E23998978F8124BD1F97C265F708DDBA1DE0" />
+    <Deny ID="ID_DENY_EIO64_6" FriendlyName="Asus EIO64\cf69704755ec2643dfd245ae1d4e15d77f306aeb1a576ffa159453de1a7345cb Hash Sha256" Hash="D4E7335A177E47688D68AD89940C272F82728C882623F1630E7FD2E03E16F003" />
+    <Deny ID="ID_DENY_EIO64_7" FriendlyName="Asus EIO64\cf69704755ec2643dfd245ae1d4e15d77f306aeb1a576ffa159453de1a7345cb Hash Page Sha1" Hash="D1AAAAF1EEA34073BAF39C7494E646C5AD2475F5" />
+    <Deny ID="ID_DENY_EIO64_8" FriendlyName="Asus EIO64\cf69704755ec2643dfd245ae1d4e15d77f306aeb1a576ffa159453de1a7345cb Hash Page Sha256" Hash="796BEC283155309F2DF0B1779CABC78A3B2161FFCED9F521DB231550DCB376A1" />
     <Deny ID="ID_DENY_HW_22" FriendlyName="hw_sys\b8fcc8ef2b27c0c0622d069981e39f112d3b3b0dbede053340bc157ba1316eab Hash Sha1" Hash="924A088149D6EE89551E15D45E7BC847B9561196" />
     <Deny ID="ID_DENY_HW_23" FriendlyName="hw_sys\b8fcc8ef2b27c0c0622d069981e39f112d3b3b0dbede053340bc157ba1316eab Hash Sha256" Hash="5E1E1489A1A01CFB466B527543D9D25112A83792BDE443DE9E34E4D3ADA697E3" />
     <Deny ID="ID_DENY_HW_24" FriendlyName="hw_sys\b8fcc8ef2b27c0c0622d069981e39f112d3b3b0dbede053340bc157ba1316eab Hash Page Sha1" Hash="ADB70331BE7B68359C3EC3065C045349EA5B2EE2" />
@@ -826,14 +836,6 @@ To check that the policy was successfully applied on your computer:
     <Deny ID="ID_DENY_PHYMEMX64_SHA256" FriendlyName="phymemx64 Hash Sha256" Hash="A6AE7364FD188C10D6B5A729A7FF58A3EB11E7FEB0D107D18F9133655C11FB66" />
     <Deny ID="ID_DENY_PHYMEMX64_SHA1_PAGE" FriendlyName="phymemx64 Hash Page Sha1" Hash="6E7D8ABF7F81A2433F27B052B3952EFC4B9CC0B1" />
     <Deny ID="ID_DENY_PHYMEMX64_SHA256_PAGE" FriendlyName="phymemx64 Hash Page Sha256" Hash="B7113B9A68E17428E2107B19BA099571AAFFC854B8FB9CBCEB79EF9E3FD1CC62" />
-    <Deny ID="ID_DENY_SEMAV6MSR64_SHA1" FriendlyName="semav6msr64.sys Hash Sha1" Hash="E3DBE2AA03847DF621591A4CAD69A5609DE5C237" />
-    <Deny ID="ID_DENY_SEMAV6MSR64_SHA256" FriendlyName="semav6msr64.sys Hash Sha256" Hash="EB71A8ECEF692E74AE356E8CB734029B233185EE5C2CCB6CC87CC6B36BEA65CF" />
-    <Deny ID="ID_DENY_SEMAV6MSR64_SHA1_PAGE" FriendlyName="semav6msr64.sys Hash Page Sha1" Hash="F3821EC0AEF270F749DF9F44FBA91AFA5C8C38E8" />
-    <Deny ID="ID_DENY_SEMAV6MSR64_SHA256_PAGE" FriendlyName="semav6msr64.sys Hash Page Sha256" Hash="4F12EE563E7496E7105D67BF64AF6B436902BE4332033AF0B5A242B206372CB7" />
-    <Deny ID="ID_DENY_WINRING0_SHA1" FriendlyName="WinRing0.sys Hash Sha1" Hash="12EB825418A932B1E4C6697DC7647E89AE52CF3F" />
-    <Deny ID="ID_DENY_WINRING0_SHA256" FriendlyName="WinRing0.sys Hash Sha256" Hash="4582ADB2E67EEBAFF755AE740C1F24BC3AF78E0F28E8E8DECB99F86BF155AB23" />
-    <Deny ID="ID_DENY_WINRING0_SHA1_PAGE" FriendlyName="WinRing0.sys Hash Page Sha1" Hash="497AFEB0D5B97D4B863704A2F77FFEF31220402D" />
-    <Deny ID="ID_DENY_WINRING0_SHA256_PAGE" FriendlyName="WinRing0.sys Hash Page Sha256" Hash="8D8A5696BDF11D2427016F91F9726AFF4F0C80FADBC3E6033662FA11C8B282BD" />
     <Deny ID="ID_DENY_RETLIFTEN_SHA1_1" FriendlyName="80.sys Hash Sha1" Hash="BC2F3850C7B858340D7ED27B90E63B036881FD6C" />
     <Deny ID="ID_DENY_RETLIFTEN_SHA1_2" FriendlyName="netfilterdrv.sys Hash Sha1" Hash="E74B6DDA8BC53BC687FC21218BD34062A78D8467" />
     <Deny ID="ID_DENY_RETLIFTEN_SHA1_3" FriendlyName="netfilterdrv.sys Hash Sha1" Hash="2C27ABBBBCF10DFB75AD79557E30ACE5ED314DF8" />
@@ -1002,11 +1004,11 @@ To check that the policy was successfully applied on your computer:
     <Deny ID="ID_DENY_RTCORE_16" FriendlyName="RTCore64\3ff50c67d51553c08dcb7c98342f68a0f54ad6658c5346c428bdcd1f185569f6 Hash Sha256" Hash="3C9829A16EB85272B0E1A2917FEFFAAB8DDB23E633B168B389669339A0CEE0B5" />
     <Deny ID="ID_DENY_RTCORE_17" FriendlyName="RTCore64\3ff50c67d51553c08dcb7c98342f68a0f54ad6658c5346c428bdcd1f185569f6 Hash Page Sha1" Hash="060C4D64F67F9300F2DBD09F68B4B591AAAFA698" />
     <Deny ID="ID_DENY_RTCORE_18" FriendlyName="RTCore64\3ff50c67d51553c08dcb7c98342f68a0f54ad6658c5346c428bdcd1f185569f6 Hash Page Sha256" Hash="BF0439DB3DCC00355291FEFF1D31F5B48CD1334DBBA3DAEB761E7084335D40E7" />
-    <Deny ID="ID_DENY_RTCORE_19" FriendlyName="RTCore64\40061b30b1243be76d5283cbc8abfe007e148097d4de7337670ff1536c4c7ba1 Hash Sha1" Hash="8498265D4CA81B83EC1454D9EC013D7A9C0C87BF" />
-    <Deny ID="ID_DENY_RTCORE_1A" FriendlyName="RTCore64\40061b30b1243be76d5283cbc8abfe007e148097d4de7337670ff1536c4c7ba1 Hash Sha256" Hash="606BECED7746CDB684D3A44F41E48713C6BBE5BFB1486C52B5CCA815E99D31B4" />
-    <Deny ID="ID_DENY_RTCORE_1B" FriendlyName="RTCore64\40061b30b1243be76d5283cbc8abfe007e148097d4de7337670ff1536c4c7ba1 Hash Page Sha1" Hash="3B05785D8AD770E4356BC8041606B08BDAB56C99" />
-    <Deny ID="ID_DENY_RTCORE_1C" FriendlyName="RTCore64\40061b30b1243be76d5283cbc8abfe007e148097d4de7337670ff1536c4c7ba1 Hash Page Sha256" Hash="2DC771BED765E9FE8E79171A851BA158B8E84034FE0518A619F47F3450FFA2BC" />
     <Deny ID="ID_DENY_RTCORE_1D" FriendlyName="RTCore64\bea8c6728d57d4b075f372ac82b8134ac8044fe13f533696a58e8864fa3efee3 Hash Sha256" Hash="6279821BF9ECCED596F474C8FC547DAB0BDDBB3AB972390596BD4C5C7B85C685" />
+    <Deny ID="ID_DENY_SEMAV6MSR64_SHA1" FriendlyName="semav6msr64.sys Hash Sha1" Hash="E3DBE2AA03847DF621591A4CAD69A5609DE5C237" />
+    <Deny ID="ID_DENY_SEMAV6MSR64_SHA256" FriendlyName="semav6msr64.sys Hash Sha256" Hash="EB71A8ECEF692E74AE356E8CB734029B233185EE5C2CCB6CC87CC6B36BEA65CF" />
+    <Deny ID="ID_DENY_SEMAV6MSR64_SHA1_PAGE" FriendlyName="semav6msr64.sys Hash Page Sha1" Hash="F3821EC0AEF270F749DF9F44FBA91AFA5C8C38E8" />
+    <Deny ID="ID_DENY_SEMAV6MSR64_SHA256_PAGE" FriendlyName="semav6msr64.sys Hash Page Sha256" Hash="4F12EE563E7496E7105D67BF64AF6B436902BE4332033AF0B5A242B206372CB7" />
     <Deny ID="ID_DENY_SUPERBMC_2" FriendlyName="superbmc.sys\1d804efc9a1a012e1f68288c0a2833b13d00eecd4a6e93258ba100aa07e3406f Hash Sha1" Hash="989BDDC6B7076947277AB6EB7F002AB6731AAEAE" />
     <Deny ID="ID_DENY_SUPERBMC_3" FriendlyName="superbmc.sys\1d804efc9a1a012e1f68288c0a2833b13d00eecd4a6e93258ba100aa07e3406f Hash Sha256" Hash="5147B0F2CA9D0BDE1F9FCEB382C05F7FA9C333709D7BF081D6C00A4132D914AF" />
     <Deny ID="ID_DENY_SUPERBMC_4" FriendlyName="superbmc.sys\1d804efc9a1a012e1f68288c0a2833b13d00eecd4a6e93258ba100aa07e3406f Hash Page Sha1" Hash="4378B656A1C94CD885323B6D6E36038E8522E6CC" />
@@ -1039,6 +1041,10 @@ To check that the policy was successfully applied on your computer:
     <Deny ID="ID_DENY_WINIO_8" FriendlyName="WinIO32A.sys\01779ee53f999464465ed690d823d160f73f10e7 Hash Sha1" Hash="01779EE53F999464465ED690D823D160F73F10E7" />
     <Deny ID="ID_DENY_WINIO_9" FriendlyName="WinIo64C.sys\b242b0332b9c9e8e17ec27ef10d75503d20d97b6 Hash Sha1" Hash="B242B0332B9C9E8E17EC27EF10D75503D20D97B6" />
     <Deny ID="ID_DENY_WINIO_10" FriendlyName="WinIO64C.sys\a65fabaf64aa1934314aae23f25cdf215cbaa4b6 Hash Sha1" Hash="A65FABAF64AA1934314AAE23F25CDF215CBAA4B6" />
+    <Deny ID="ID_DENY_WINRING0_SHA1" FriendlyName="WinRing0.sys Hash Sha1" Hash="12EB825418A932B1E4C6697DC7647E89AE52CF3F" />
+    <Deny ID="ID_DENY_WINRING0_SHA256" FriendlyName="WinRing0.sys Hash Sha256" Hash="4582ADB2E67EEBAFF755AE740C1F24BC3AF78E0F28E8E8DECB99F86BF155AB23" />
+    <Deny ID="ID_DENY_WINRING0_SHA1_PAGE" FriendlyName="WinRing0.sys Hash Page Sha1" Hash="497AFEB0D5B97D4B863704A2F77FFEF31220402D" />
+    <Deny ID="ID_DENY_WINRING0_SHA256_PAGE" FriendlyName="WinRing0.sys Hash Page Sha256" Hash="8D8A5696BDF11D2427016F91F9726AFF4F0C80FADBC3E6033662FA11C8B282BD" />
     <!-- Deny and FileAttrib rules specifying FileName should always specify MinimumFileVersion and MaximumFileVersion. SiPolicy checks matches minVer <= ver && maxVer >= ver-->
     <Deny ID="ID_DENY_PROCESSHACKER" FriendlyName="kprocesshacker.sys FileRule" FileName="kprocesshacker.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.65535.65535" />
     <Deny ID="ID_DENY_AMP" FriendlyName="System Mechanic CVE-2018-5701" FileName="amp.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="5.4.11.1" />
@@ -1047,12 +1053,14 @@ To check that the policy was successfully applied on your computer:
     <Deny ID="ID_DENY_DBK_32" FriendlyName="Cheat Engine Driver" FileName="dbk32.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_DBK_64" FriendlyName="Cheat Engine Driver" FileName="dbk64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_GDRV" FriendlyName="gdrv.sys" FileName="gdrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
-    <Deny ID="ID_DENY_KLMD" FriendlyName="Kaspersky klmd.sys FileRule" FileName="klmd.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
+    <Deny ID="ID_DENY_KLMD" FriendlyName="Kaspersky klmd.sys FileRule" FileName="klmd.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.13.0.10"/>
     <Deny ID="ID_DENY_PCHUNTER_1" FriendlyName="PCHunter Driver" FileName="PCHunter.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_PCHUNTER_2" FriendlyName="PCHunter Driver" FileName="安全专用" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_PHYMEMX_64" FriendlyName="Phymemx64 Memory Mapping Driver" FileName="phymemx64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_AMD_RYZEN" FriendlyName="amdryzenmaster.sys" FileName="AMDRyzenMasterDriver.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.5.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_AMDPP" FriendlyName="AMDPowerProfiler.sys FileAttribute" FileName="AMDPowerProfiler.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="6.1.0.0" />
+    <FileAttrib ID="ID_FILEATTRIB_ASR_AUTOCHECK_1" FriendlyName="ASRAutoCheck\2aa1b08f47fbb1e2bd2e4a492f5d616968e703e1359a921f62b38b8e4662f0c4 FileAttribute" FileName="AsrAutoChkUpdDrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
+    <FileAttrib ID="ID_FILEATTRIB_ASR_AUTOCHECK_2" FriendlyName="ASRAutoCheck\4ae42c1f11a98dee07a0d7199f611699511f1fb95120fabc4c3c349c485467fe FileAttribute" FileName="AsrAutoChkUpdDrv_1_0_32.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_ASWARPOT" FriendlyName="Avast aswArpot FileAttribute" FileName="aswArPot.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="21.4.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_ATILLK" FriendlyName="atillk64 FileAttribute" FileName="atillk64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_ATSZIO" FriendlyName="ATSZIO.sys FileAttribute" FileName="ATSZIO.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
@@ -1066,6 +1074,7 @@ To check that the policy was successfully applied on your computer:
     <FileAttrib ID="ID_FILEATTRIB_BSMI" FriendlyName="" FileName="BSMI.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.0.3" />
     <FileAttrib ID="ID_FILEATTRIB_CPUZ_DRIVER" FriendlyName="" FileName="cpuz.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.4.3" />
     <FileAttrib ID="ID_FILEATTRIB_DRIVER7" FriendlyName="Asus driver7.sys\1beb15c90dcf7a5234ed077833a0a3e900969b60be1d04fcebce0a9f8994bdbb FileAttribute" FileName="Driver7" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
+    <FileAttrib ID="ID_FILEATTRIB_EIO64" FriendlyName="ASUS EIO64.sys\1fac3fab8ea2137a7e81a26de121187bf72e7d16ffa3e9aec3886e2376d3c718 FileAttribute" FileName="EIO.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_ELBY_DRIVER" FriendlyName="" FileName="ElbyCDIO.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="6.0.3.2" />
     <FileAttrib ID="ID_FILEATTRIB_FAIRPLAY" FriendlyName="Deny FairplayKD.sys MTA San Andreas Versions 367.*" ProductName="MTA San Andreas" MinimumFileVersion="367.0.0.0" MaximumFileVersion="367.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_GMER" FriendlyName="GMEREK gmer64 FileAttribute" FileName="gmer64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
@@ -1116,6 +1125,7 @@ To check that the policy was successfully applied on your computer:
     <FileAttrib ID="ID_FILEATTRIB_VIRAGT" FriendlyName="viragt.sys 32-bit" FileName="viragt.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.80.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_VIRAGT64" FriendlyName="viragt64.sys" FileName="viragt64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.0.11" />
     <FileAttrib ID="ID_FILEATTRIB_VMDRV" FriendlyName="vmdrv.sys FileAttribute" FileName="vmdrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.10011.16384" />
+    <FileAttrib ID="ID_FILEATTRIB_WCPU" FriendlyName="WCPU\159e7c5a12157af92e0d14a0d3ea116f91c09e21a9831486e6dc592c93c10980 FileAttribute" FileName="CPU Driver" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_WINRING0" FriendlyName="WinRing0.sys" FileName="WinRing0.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.0.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_WISEUNLO" FriendlyName="WiseUnlo FileAttribute" FileName="WiseUnlo.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
   </FileRules>
@@ -1124,6 +1134,8 @@ To check that the policy was successfully applied on your computer:
     <Signer ID="ID_SIGNER_VERISIGN_2010" Name="VeriSign Class 3 Code Signing 2010 CA">
       <CertRoot Type="TBS" Value="4843A82ED3B1F2BFBEE9671960E1940C942F688D" />
       <FileAttribRef RuleID="ID_FILEATTRIB_AMDPP" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ASR_AUTOCHECK_1" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_ASR_AUTOCHECK_2" />
       <FileAttribRef RuleID="ID_FILEATTRIB_ATSZIO" />
       <FileAttribRef RuleID="ID_FILEATTRIB_CPUZ_DRIVER" />
       <FileAttribRef RuleID="ID_FILEATTRIB_DRIVER7" />
@@ -1157,6 +1169,10 @@ To check that the policy was successfully applied on your computer:
     <Signer ID="ID_SIGNER_MB_RB_HACKS" Name="Microsoft Windows Third Party Component CA 2014 ENE Tech OPUS">
       <CertRoot Type="TBS" Value="D8BE9E4D9074088EF818BC6F6FB64955E90378B2754155126FEEBBBD969CF0AE" />
       <CertOemID Value="MB Rb online" />
+    </Signer>
+    <Signer ID="ID_SIGNER_MAN_MUS" Name="Microsoft Windows Third Party Component CA 2014 MANUEL OPUS">
+      <CertRoot Type="TBS" Value="D8BE9E4D9074088EF818BC6F6FB64955E90378B2754155126FEEBBBD969CF0AE" />
+      <CertOemID Value="DIGITAL SERVICES OF MANUEL MUSARELLA" />
     </Signer>
     <Signer ID="ID_SIGNER_DIGICERT_EV" Name="DigiCert EV Code Signing CA (SHA2)">
       <CertRoot Type="TBS" Value="EEC58131DC11CD7F512501B15FDBC6074C603B68CA91F7162D5A042054EDB0CF" />
@@ -1299,6 +1315,7 @@ To check that the policy was successfully applied on your computer:
       <CertPublisher Value="ASUSTeK Computer Inc." />
       <FileAttribRef RuleID="ID_FILEATTRIB_BS_DEF" />
       <FileAttribRef RuleID="ID_FILEATTRIB_BS_DEF_64" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_WCPU" />
     </Signer>
     <Signer ID="ID_SIGNER_VERISIGN_2009_BIOSTAR" Name="VeriSign Class 3 Code Signing 2009-2 CA">
       <CertRoot Type="TBS" Value="4CDC38C800761463749C3CBD94A12F32E49877BF" />
@@ -1608,8 +1625,8 @@ To check that the policy was successfully applied on your computer:
     </Signer>
     <Signer ID="ID_SIGNER_MS_ELAM" Name="Microsoft Code Signing PCA 2010">
       <CertRoot Type="TBS" Value="121AF4B922A74247EA49DF50DE37609CC1451A1FE06B2CB7E1E079B492BD8195" />
-      <FileAttribRef RuleID="ID_FILEATTRIB_TMEL" />
       <FileAttribRef RuleID="ID_FILEATTRIB_AVGELAM" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_TMEL" />
     </Signer>
     <Signer ID="ID_SIGNER_AVGELAM_1" Name="DigiCert High Assurance Code Signing CA-1">
       <CertRoot Type="TBS" Value="1D7E838ACCD498C2E5BA9373AF819EC097BB955C" />
@@ -1814,7 +1831,7 @@ To check that the policy was successfully applied on your computer:
   </Signers>
   <!--Driver Signing Scenarios-->
   <SigningScenarios>
-    <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_DRIVERS_1" FriendlyName="Auto generated policy on 09-19-2022">
+    <SigningScenario Value="131" ID="ID_SIGNINGSCENARIO_DENIED_VULN_MAL_SIGNERS" FriendlyName="Signers of known vulnerable or malicious drivers">
       <ProductSigners>
         <DeniedSigners>
           <DeniedSigner SignerId="ID_SIGNER_AGNITUM_2004" />
@@ -1838,13 +1855,13 @@ To check that the policy was successfully applied on your computer:
           <DeniedSigner SignerId="ID_SIGNER_CAPCOM" />
           <DeniedSigner SignerId="ID_SIGNER_CHEAT_ENGINE" />
           <DeniedSigner SignerId="ID_SIGNER_COMODO_IQVW" />
+          <DeniedSigner SignerId="ID_SIGNER_DIGICERT_EV" />
           <DeniedSigner SignerId="ID_SIGNER_ELBY" />
           <DeniedSigner SignerId="ID_SIGNER_ENE" />
           <DeniedSigner SignerId="ID_SIGNER_FAIRPLAY_1" />
           <DeniedSigner SignerId="ID_SIGNER_FAIRPLAY_2" />
           <DeniedSigner SignerId="ID_SIGNER_FAIRPLAY_3" />
           <DeniedSigner SignerId="ID_SIGNER_FAIRPLAY_4" />
-          <DeniedSigner SignerId="ID_SIGNER_DIGICERT_EV" />
           <DeniedSigner SignerId="ID_SIGNER_GEOTRUST_SRL_2009" />
           <DeniedSigner SignerId="ID_SIGNER_GEOTRUST_SRL_2010" />
           <DeniedSigner SignerId="ID_SIGNER_GETAC" />
@@ -1882,6 +1899,7 @@ To check that the policy was successfully applied on your computer:
           <DeniedSigner SignerId="ID_SIGNER_LV_DIAG" />
           <DeniedSigner SignerId="ID_SIGNER_LV_DIAG_2" />
           <DeniedSigner SignerId="ID_SIGNER_LV_LOGITECH" />
+          <DeniedSigner SignerId="ID_SIGNER_MAN_MUS" />
           <DeniedSigner SignerId="ID_SIGNER_MB_RB_HACKS" />
           <DeniedSigner SignerId="ID_SIGNER_MIMIKATZ_KERNEL" />
           <DeniedSigner SignerId="ID_SIGNER_MIMIKATZ_KERNEL_SHA2" />
@@ -1896,7 +1914,7 @@ To check that the policy was successfully applied on your computer:
           <DeniedSigner SignerId="ID_SIGNER_NVFLASH_3" />
           <DeniedSigner SignerId="ID_SIGNER_PAN" />
           <DeniedSigner SignerId="ID_SIGNER_PHYSMEM" />
-         <DeniedSigner SignerId="ID_SIGNER_PROCEXP_1" />
+          <DeniedSigner SignerId="ID_SIGNER_PROCEXP_1" />
           <DeniedSigner SignerId="ID_SIGNER_PROCEXP_2" />
           <DeniedSigner SignerId="ID_SIGNER_PROCEXP_3" />
           <DeniedSigner SignerId="ID_SIGNER_PROCEXP_4" />
@@ -2405,6 +2423,14 @@ To check that the policy was successfully applied on your computer:
             <FileRuleRef RuleID="ID_DENY_DIRECTIO_39" />
             <FileRuleRef RuleID="ID_DENY_DIRECTIO_3A" />
             <FileRuleRef RuleID="ID_DENY_DIRECTIO_3B" />
+            <FileRuleRef RuleID="ID_DENY_EIO64_1" />
+            <FileRuleRef RuleID="ID_DENY_EIO64_2" />
+            <FileRuleRef RuleID="ID_DENY_EIO64_3" />
+            <FileRuleRef RuleID="ID_DENY_EIO64_4" />
+            <FileRuleRef RuleID="ID_DENY_EIO64_5" />
+            <FileRuleRef RuleID="ID_DENY_EIO64_6" />
+            <FileRuleRef RuleID="ID_DENY_EIO64_7" />
+            <FileRuleRef RuleID="ID_DENY_EIO64_8" />
             <FileRuleRef RuleID="ID_DENY_HW_22" />
             <FileRuleRef RuleID="ID_DENY_HW_23" />
             <FileRuleRef RuleID="ID_DENY_HW_24" />
@@ -2827,10 +2853,6 @@ To check that the policy was successfully applied on your computer:
             <FileRuleRef RuleID="ID_DENY_RTCORE_16" />
             <FileRuleRef RuleID="ID_DENY_RTCORE_17" />
             <FileRuleRef RuleID="ID_DENY_RTCORE_18" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_19" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_1A" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_1B" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_1C" />
             <FileRuleRef RuleID="ID_DENY_RTCORE_1D" />
             <FileRuleRef RuleID="ID_DENY_SUPERBMC_2" />
             <FileRuleRef RuleID="ID_DENY_SUPERBMC_3" />
@@ -2896,7 +2918,7 @@ To check that the policy was successfully applied on your computer:
     </Setting>
     <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
       <Value>
-        <String>10.0.25310.0</String>
+        <String>10.0.25873.0</String>
       </Value>
     </Setting>
   </Settings>

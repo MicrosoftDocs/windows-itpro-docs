@@ -27,10 +27,12 @@
       href: delivery-optimization-test.md
 - name: Microsoft Connected Cache
   items:
-    - name: Microsoft Connected Cache overview
+    - name: What is Microsoft Connected Cache?
       href: waas-microsoft-connected-cache.md
     - name: MCC for Enterprise and Education
       items:
+      - name: MCC for Enterprise and Education Overview
+        href: mcc-ent-edu-overview.md
       - name: Requirements
         href: mcc-enterprise-prerequisites.md
       - name: Deploy Microsoft Connected Cache
@@ -41,6 +43,8 @@
         href: mcc-enterprise-appendix.md
     - name: MCC for ISPs
       items:
+      - name: MCC for ISPs Overview
+        href: mcc-isp-overview.md
       - name: How-to guides
         items:  
         - name: Operator sign up and service onboarding
@@ -61,7 +65,7 @@
           href: mcc-isp-support.md
         - name: MCC for ISPs (early preview)
           href: mcc-isp.md
-- name: Content endpoints for Delivery Optimization and Microsoft Connected Cache
+- name: Endpoints for Microsoft Connected Cache content and services
   href: delivery-optimization-endpoints.md 
 
   

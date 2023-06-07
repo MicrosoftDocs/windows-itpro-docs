@@ -39,6 +39,8 @@ This content set contains:
   - [Service Accounts](/windows-server/identity/ad-ds/manage/understand-service-accounts)
   - [Active Directory Security Groups](/windows-server/identity/ad-ds/manage/understand-security-groups)
 
+[!INCLUDE [access-control-aclsscals](../../../../includes/licensing/access-control-aclsscals.md)]
+
 ## Practical applications
 
 Administrators who use the supported version of Windows can refine the application and management of access control to objects and subjects to provide the following security:

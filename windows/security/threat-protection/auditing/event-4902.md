@@ -1,5 +1,5 @@
 ---
-title: 4902(S) The Per-user audit policy table was created. (Windows 10)
+title: 4902(S) The Per-user audit policy table was created. 
 description: Describes security event 4902(S) The Per-user audit policy table was created.
 ms.pagetype: security
 ms.prod: windows-client

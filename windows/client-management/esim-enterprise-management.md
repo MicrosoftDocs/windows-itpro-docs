@@ -30,6 +30,7 @@ If you're a Mobile Device Management (MDM) Provider and want to support eSIM Man
 
   - [HPE Device Entitlement Gateway](https://www.hpe.com/emea_europe/en/solutions/digital-communications-services.html)
   - [IDEMIA The Smart Connect - Hub](https://www.idemia.com/smart-connect-hub)
+  - [Nokia IMPACT Mobile Device Manager](https://www.nokia.com/networks/internet-of-things/impact-mobile-device-manager/)
 
 - Assess solution type that you would like to provide your customers
 - Batch/offline solution

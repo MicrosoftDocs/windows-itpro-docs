@@ -1,5 +1,5 @@
 ---
-title: Prepare people to use Windows Hello (Windows)
+title: Prepare people to use Windows Hello 
 description: When you set a policy to require Windows Hello for Business in the workplace, you will want to prepare people in your organization.
 ms.date: 08/19/2018
 ms.topic: article

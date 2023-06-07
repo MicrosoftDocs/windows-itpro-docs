@@ -1,5 +1,5 @@
 ---
-title: Other Events (Windows 10)
+title: Other Events 
 description: Describes the Other Events auditing subcategory, which includes events that are generated automatically and enabled by default.
 ms.pagetype: security
 ms.prod: windows-client

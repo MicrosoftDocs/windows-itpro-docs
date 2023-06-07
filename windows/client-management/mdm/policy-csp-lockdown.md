@@ -4,7 +4,7 @@ description: Learn more about the LockDown Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowEdgeSwipe-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowEdgeSwipe-Applicability-End -->
 
 <!-- AllowEdgeSwipe-OmaUri-Begin -->
@@ -37,9 +37,9 @@ ms.topic: reference
 
 <!-- AllowEdgeSwipe-Description-Begin -->
 <!-- Description-Source-ADMX -->
-- If you disable this policy setting, users will not be able to invoke any system UI by swiping in from any screen edge.
+- If you disable this policy setting, users won't be able to invoke any system UI by swiping in from any screen edge.
 
-- If you enable or do not configure this policy setting, users will be able to invoke system UI by swiping in from the screen edges.
+- If you enable or don't configure this policy setting, users will be able to invoke system UI by swiping in from the screen edges.
 <!-- AllowEdgeSwipe-Description-End -->
 
 <!-- AllowEdgeSwipe-Editable-Begin -->
@@ -53,7 +53,7 @@ The easiest way to verify the policy is to restart the explorer process or to re
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowEdgeSwipe-DFProperties-End -->

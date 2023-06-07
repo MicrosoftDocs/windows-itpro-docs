@@ -1,5 +1,5 @@
 ---
-title: 4954(S) Windows Firewall Group Policy settings have changed. The new settings have been applied. (Windows 10)
+title: 4954(S) Windows Firewall Group Policy settings have changed. The new settings have been applied. 
 description: Describes security event 4954(S) Windows Firewall Group Policy settings have changed. The new settings have been applied.
 ms.pagetype: security
 ms.prod: windows-client

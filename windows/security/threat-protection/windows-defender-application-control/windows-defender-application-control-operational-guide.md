@@ -1,5 +1,5 @@
 ---
-title: Managing and troubleshooting Windows Defender Application Control policies (Windows)
+title: Managing and troubleshooting Windows Defender Application Control policies 
 description: Gather information about how your deployed Windows Defender Application Control policies are behaving.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb

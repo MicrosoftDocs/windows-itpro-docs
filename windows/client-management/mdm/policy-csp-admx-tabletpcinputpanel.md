@@ -4,7 +4,7 @@ description: Learn more about the ADMX_TabletPCInputPanel Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_TabletPCInputPanel-Begin -->
 # Policy CSP - ADMX_TabletPCInputPanel
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_TabletPCInputPanel-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- AutoComplete_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AutoComplete_1-Applicability-End -->
 
 <!-- AutoComplete_1-OmaUri-Begin -->
@@ -46,11 +43,11 @@ Turns off the integration of application auto complete lists with Tablet PC Inpu
 
 Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
 
-- If you enable this policy, application auto complete lists will never appear next to Input Panel. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy, application auto complete lists will never appear next to Input Panel. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you disable this policy, application auto complete lists will appear next to Input Panel in applications where the functionality is available. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you disable this policy, application auto complete lists will appear next to Input Panel in applications where the functionality is available. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you do not configure this policy, application auto complete lists will appear next to Input Panel in applications where the functionality is available. Users will be able to configure this setting on the Text completion tab in Input Panel Options.
+- If you don't configure this policy, application auto complete lists will appear next to Input Panel in applications where the functionality is available. Users will be able to configure this setting on the Text completion tab in Input Panel Options.
 <!-- AutoComplete_1-Description-End -->
 
 <!-- AutoComplete_1-Editable-Begin -->
@@ -62,13 +59,12 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AutoComplete_1-DFProperties-End -->
 
 <!-- AutoComplete_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -95,7 +91,7 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 <!-- AutoComplete_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AutoComplete_2-Applicability-End -->
 
 <!-- AutoComplete_2-OmaUri-Begin -->
@@ -110,11 +106,11 @@ Turns off the integration of application auto complete lists with Tablet PC Inpu
 
 Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
 
-- If you enable this policy, application auto complete lists will never appear next to Input Panel. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy, application auto complete lists will never appear next to Input Panel. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you disable this policy, application auto complete lists will appear next to Input Panel in applications where the functionality is available. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you disable this policy, application auto complete lists will appear next to Input Panel in applications where the functionality is available. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you do not configure this policy, application auto complete lists will appear next to Input Panel in applications where the functionality is available. Users will be able to configure this setting on the Text completion tab in Input Panel Options.
+- If you don't configure this policy, application auto complete lists will appear next to Input Panel in applications where the functionality is available. Users will be able to configure this setting on the Text completion tab in Input Panel Options.
 <!-- AutoComplete_2-Description-End -->
 
 <!-- AutoComplete_2-Editable-Begin -->
@@ -126,13 +122,12 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AutoComplete_2-DFProperties-End -->
 
 <!-- AutoComplete_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -159,7 +154,7 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 <!-- EdgeTarget_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- EdgeTarget_1-Applicability-End -->
 
 <!-- EdgeTarget_1-OmaUri-Begin -->
@@ -174,11 +169,11 @@ Prevents Input Panel tab from appearing on the edge of the Tablet PC screen.
 
 Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
 
-- If you enable this policy, Input Panel tab will not appear on the edge of the Tablet PC screen. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy, Input Panel tab won't appear on the edge of the Tablet PC screen. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you disable this policy, Input Panel tab will appear on the edge of the Tablet PC screen. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you disable this policy, Input Panel tab will appear on the edge of the Tablet PC screen. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you do not configure this policy, Input Panel tab will appear on the edge of the Tablet PC screen. Users will be able to configure this setting on the Opening tab in Input Panel Options.
+- If you don't configure this policy, Input Panel tab will appear on the edge of the Tablet PC screen. Users will be able to configure this setting on the Opening tab in Input Panel Options.
 
 > [!CAUTION]
 > If you enable both the "Prevent Input Panel from appearing next to text entry areas" policy and the "Prevent Input Panel tab from appearing" policy, and disable the "Show Input Panel taskbar icon" policy, the user will then have no way to access Input Panel.
@@ -193,13 +188,12 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EdgeTarget_1-DFProperties-End -->
 
 <!-- EdgeTarget_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -226,7 +220,7 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 <!-- EdgeTarget_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- EdgeTarget_2-Applicability-End -->
 
 <!-- EdgeTarget_2-OmaUri-Begin -->
@@ -241,11 +235,11 @@ Prevents Input Panel tab from appearing on the edge of the Tablet PC screen.
 
 Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
 
-- If you enable this policy, Input Panel tab will not appear on the edge of the Tablet PC screen. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy, Input Panel tab won't appear on the edge of the Tablet PC screen. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you disable this policy, Input Panel tab will appear on the edge of the Tablet PC screen. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you disable this policy, Input Panel tab will appear on the edge of the Tablet PC screen. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you do not configure this policy, Input Panel tab will appear on the edge of the Tablet PC screen. Users will be able to configure this setting on the Opening tab in Input Panel Options.
+- If you don't configure this policy, Input Panel tab will appear on the edge of the Tablet PC screen. Users will be able to configure this setting on the Opening tab in Input Panel Options.
 
 > [!CAUTION]
 > If you enable both the "Prevent Input Panel from appearing next to text entry areas" policy and the "Prevent Input Panel tab from appearing" policy, and disable the "Show Input Panel taskbar icon" policy, the user will then have no way to access Input Panel.
@@ -260,13 +254,12 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EdgeTarget_2-DFProperties-End -->
 
 <!-- EdgeTarget_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -293,7 +286,7 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 <!-- IPTIPTarget_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- IPTIPTarget_1-Applicability-End -->
 
 <!-- IPTIPTarget_1-OmaUri-Begin -->
@@ -308,11 +301,11 @@ Prevents the Tablet PC Input Panel icon from appearing next to any text entry ar
 
 Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
 
-- If you enable this policy, Input Panel will never appear next to text entry areas when using a tablet pen as an input device. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy, Input Panel will never appear next to text entry areas when using a tablet pen as an input device. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you disable this policy, Input Panel will appear next to any text entry area in applications where this behavior is available. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you disable this policy, Input Panel will appear next to any text entry area in applications where this behavior is available. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you do not configure this policy, Input Panel will appear next to text entry areas in applications where this behavior is available. Users will be able to configure this setting on the Opening tab in Input Panel Options.
+- If you don't configure this policy, Input Panel will appear next to text entry areas in applications where this behavior is available. Users will be able to configure this setting on the Opening tab in Input Panel Options.
 
 > [!CAUTION]
 > If you enable both the "Prevent Input Panel from appearing next to text entry areas" policy and the "Prevent Input Panel tab from appearing" policy, and disable the "Show Input Panel taskbar icon" policy, the user will then have no way to access Input Panel.
@@ -327,13 +320,12 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IPTIPTarget_1-DFProperties-End -->
 
 <!-- IPTIPTarget_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -360,7 +352,7 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 <!-- IPTIPTarget_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- IPTIPTarget_2-Applicability-End -->
 
 <!-- IPTIPTarget_2-OmaUri-Begin -->
@@ -375,11 +367,11 @@ Prevents the Tablet PC Input Panel icon from appearing next to any text entry ar
 
 Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
 
-- If you enable this policy, Input Panel will never appear next to text entry areas when using a tablet pen as an input device. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy, Input Panel will never appear next to text entry areas when using a tablet pen as an input device. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you disable this policy, Input Panel will appear next to any text entry area in applications where this behavior is available. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you disable this policy, Input Panel will appear next to any text entry area in applications where this behavior is available. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you do not configure this policy, Input Panel will appear next to text entry areas in applications where this behavior is available. Users will be able to configure this setting on the Opening tab in Input Panel Options.
+- If you don't configure this policy, Input Panel will appear next to text entry areas in applications where this behavior is available. Users will be able to configure this setting on the Opening tab in Input Panel Options.
 
 > [!CAUTION]
 > If you enable both the "Prevent Input Panel from appearing next to text entry areas" policy and the "Prevent Input Panel tab from appearing" policy, and disable the "Show Input Panel taskbar icon" policy, the user will then have no way to access Input Panel.
@@ -394,13 +386,12 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IPTIPTarget_2-DFProperties-End -->
 
 <!-- IPTIPTarget_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -427,7 +418,7 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 <!-- IPTIPTouchTarget_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- IPTIPTouchTarget_1-Applicability-End -->
 
 <!-- IPTIPTouchTarget_1-OmaUri-Begin -->
@@ -442,11 +433,11 @@ Prevents the Tablet PC Input Panel icon from appearing next to any text entry ar
 
 Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
 
-- If you enable this policy, Input Panel will never appear next to any text entry area when a user is using touch input. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy, Input Panel will never appear next to any text entry area when a user is using touch input. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you disable this policy, Input Panel will appear next to text entry areas in applications where this behavior is available. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you disable this policy, Input Panel will appear next to text entry areas in applications where this behavior is available. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you do not configure this policy, Input Panel will appear next to text entry areas in applications where this behavior is available. Users will be able to configure this setting on the Opening tab in Input Panel Options.
+- If you don't configure this policy, Input Panel will appear next to text entry areas in applications where this behavior is available. Users will be able to configure this setting on the Opening tab in Input Panel Options.
 <!-- IPTIPTouchTarget_1-Description-End -->
 
 <!-- IPTIPTouchTarget_1-Editable-Begin -->
@@ -458,13 +449,12 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IPTIPTouchTarget_1-DFProperties-End -->
 
 <!-- IPTIPTouchTarget_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -491,7 +481,7 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 <!-- IPTIPTouchTarget_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- IPTIPTouchTarget_2-Applicability-End -->
 
 <!-- IPTIPTouchTarget_2-OmaUri-Begin -->
@@ -506,11 +496,11 @@ Prevents the Tablet PC Input Panel icon from appearing next to any text entry ar
 
 Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
 
-- If you enable this policy, Input Panel will never appear next to any text entry area when a user is using touch input. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy, Input Panel will never appear next to any text entry area when a user is using touch input. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you disable this policy, Input Panel will appear next to text entry areas in applications where this behavior is available. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you disable this policy, Input Panel will appear next to text entry areas in applications where this behavior is available. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you do not configure this policy, Input Panel will appear next to text entry areas in applications where this behavior is available. Users will be able to configure this setting on the Opening tab in Input Panel Options.
+- If you don't configure this policy, Input Panel will appear next to text entry areas in applications where this behavior is available. Users will be able to configure this setting on the Opening tab in Input Panel Options.
 <!-- IPTIPTouchTarget_2-Description-End -->
 
 <!-- IPTIPTouchTarget_2-Editable-Begin -->
@@ -522,13 +512,12 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- IPTIPTouchTarget_2-DFProperties-End -->
 
 <!-- IPTIPTouchTarget_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -555,7 +544,7 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 <!-- PasswordSecurity_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PasswordSecurity_1-Applicability-End -->
 
 <!-- PasswordSecurity_1-OmaUri-Begin -->
@@ -570,19 +559,19 @@ Adjusts password security settings in Touch Keyboard and Handwriting panel (a.k.
 
 Touch Keyboard and Handwriting panel enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
 
-- If you enable this policy and choose "Low" from the drop-down box, password security is set to "Low." At this setting, all password security settings are turned off. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose "Low" from the drop-down box, password security is set to "Low". At this setting, all password security settings are turned off. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you enable this policy and choose "Medium-Low" from the drop-down box, password security is set to "Medium-Low." At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel displays the cursor and which keys are tapped. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose "Medium-Low" from the drop-down box, password security is set to "Medium-Low". At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel displays the cursor and which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you enable this policy and choose "Medium" from the drop-down box, password security is set to "Medium." At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is not allowed, and Input Panel displays the cursor and which keys are tapped. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose "Medium" from the drop-down box, password security is set to "Medium". At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching isn't allowed, and Input Panel displays the cursor and which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you enable this policy and choose to "Medium-High" from the drop-down box, password security is set to "Medium-High." At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel does not display the cursor or which keys are tapped. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose to "Medium-High" from the drop-down box, password security is set to "Medium-High". At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel doesn't display the cursor or which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you enable this policy and choose "High" from the drop-down box, password security is set to "High." At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is not allowed, and Input Panel does not display the cursor or which keys are tapped. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose "High" from the drop-down box, password security is set to "High". At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching isn't allowed, and Input Panel doesn't display the cursor or which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you disable this policy, password security is set to "Medium-High." At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel does not display the cursor or which keys are tapped. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you disable this policy, password security is set to "Medium-High". At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel doesn't display the cursor or which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you do not configure this policy, password security is set to "Medium-High" by default. At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel does not display the cursor or which keys are tapped. Users will be able to configure this setting on the Advanced tab in Input Panel Options in Windows 7 and Windows Vista.
+- If you don't configure this policy, password security is set to "Medium-High" by default. At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel doesn't display the cursor or which keys are tapped. Users will be able to configure this setting on the Advanced tab in Input Panel Options in Windows 7 and Windows Vista.
 
 > [!CAUTION]
 > If you lower password security settings, people who can see the user's screen might be able to see their passwords.
@@ -597,13 +586,12 @@ Touch Keyboard and Handwriting panel enables you to use handwriting or an on-scr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PasswordSecurity_1-DFProperties-End -->
 
 <!-- PasswordSecurity_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -630,7 +618,7 @@ Touch Keyboard and Handwriting panel enables you to use handwriting or an on-scr
 <!-- PasswordSecurity_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PasswordSecurity_2-Applicability-End -->
 
 <!-- PasswordSecurity_2-OmaUri-Begin -->
@@ -645,19 +633,19 @@ Adjusts password security settings in Touch Keyboard and Handwriting panel (a.k.
 
 Touch Keyboard and Handwriting panel enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
 
-- If you enable this policy and choose "Low" from the drop-down box, password security is set to "Low." At this setting, all password security settings are turned off. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose "Low" from the drop-down box, password security is set to "Low". At this setting, all password security settings are turned off. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you enable this policy and choose "Medium-Low" from the drop-down box, password security is set to "Medium-Low." At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel displays the cursor and which keys are tapped. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose "Medium-Low" from the drop-down box, password security is set to "Medium-Low". At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel displays the cursor and which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you enable this policy and choose "Medium" from the drop-down box, password security is set to "Medium." At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is not allowed, and Input Panel displays the cursor and which keys are tapped. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose "Medium" from the drop-down box, password security is set to "Medium". At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching isn't allowed, and Input Panel displays the cursor and which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you enable this policy and choose to "Medium-High" from the drop-down box, password security is set to "Medium-High." At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel does not display the cursor or which keys are tapped. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose to "Medium-High" from the drop-down box, password security is set to "Medium-High". At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel doesn't display the cursor or which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you enable this policy and choose "High" from the drop-down box, password security is set to "High." At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is not allowed, and Input Panel does not display the cursor or which keys are tapped. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose "High" from the drop-down box, password security is set to "High". At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching isn't allowed, and Input Panel doesn't display the cursor or which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you disable this policy, password security is set to "Medium-High." At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel does not display the cursor or which keys are tapped. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you disable this policy, password security is set to "Medium-High". At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel doesn't display the cursor or which keys are tapped. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you do not configure this policy, password security is set to "Medium-High" by default. At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel does not display the cursor or which keys are tapped. Users will be able to configure this setting on the Advanced tab in Input Panel Options in Windows 7 and Windows Vista.
+- If you don't configure this policy, password security is set to "Medium-High" by default. At this setting, when users enter passwords from Input Panel they use the on-screen keyboard by default, skin switching is allowed, and Input Panel doesn't display the cursor or which keys are tapped. Users will be able to configure this setting on the Advanced tab in Input Panel Options in Windows 7 and Windows Vista.
 
 > [!CAUTION]
 > If you lower password security settings, people who can see the user's screen might be able to see their passwords.
@@ -672,13 +660,12 @@ Touch Keyboard and Handwriting panel enables you to use handwriting or an on-scr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PasswordSecurity_2-DFProperties-End -->
 
 <!-- PasswordSecurity_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -705,7 +692,7 @@ Touch Keyboard and Handwriting panel enables you to use handwriting or an on-scr
 <!-- Prediction_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Prediction_1-Applicability-End -->
 
 <!-- Prediction_1-OmaUri-Begin -->
@@ -720,11 +707,11 @@ Prevents the Touch Keyboard and Handwriting panel (a.k.a. Tablet PC Input Panel 
 
 Touch Keyboard and Handwriting panel enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
 
-- If you enable this policy, Input Panel will not provide text prediction suggestions. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy, Input Panel won't provide text prediction suggestions. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you disable this policy, Input Panel will provide text prediction suggestions. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you disable this policy, Input Panel will provide text prediction suggestions. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you do not configure this policy, Input Panel will provide text prediction suggestions. Users will be able to configure this setting on the Text Completion tab in Input Panel Options in Windows 7 and Windows Vista.
+- If you don't configure this policy, Input Panel will provide text prediction suggestions. Users will be able to configure this setting on the Text Completion tab in Input Panel Options in Windows 7 and Windows Vista.
 <!-- Prediction_1-Description-End -->
 
 <!-- Prediction_1-Editable-Begin -->
@@ -736,13 +723,12 @@ Touch Keyboard and Handwriting panel enables you to use handwriting or an on-scr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Prediction_1-DFProperties-End -->
 
 <!-- Prediction_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -769,7 +755,7 @@ Touch Keyboard and Handwriting panel enables you to use handwriting or an on-scr
 <!-- Prediction_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Prediction_2-Applicability-End -->
 
 <!-- Prediction_2-OmaUri-Begin -->
@@ -784,11 +770,11 @@ Prevents the Touch Keyboard and Handwriting panel (a.k.a. Tablet PC Input Panel 
 
 Touch Keyboard and Handwriting panel enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
 
-- If you enable this policy, Input Panel will not provide text prediction suggestions. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy, Input Panel won't provide text prediction suggestions. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you disable this policy, Input Panel will provide text prediction suggestions. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you disable this policy, Input Panel will provide text prediction suggestions. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you do not configure this policy, Input Panel will provide text prediction suggestions. Users will be able to configure this setting on the Text Completion tab in Input Panel Options in Windows 7 and Windows Vista.
+- If you don't configure this policy, Input Panel will provide text prediction suggestions. Users will be able to configure this setting on the Text Completion tab in Input Panel Options in Windows 7 and Windows Vista.
 <!-- Prediction_2-Description-End -->
 
 <!-- Prediction_2-Editable-Begin -->
@@ -800,13 +786,12 @@ Touch Keyboard and Handwriting panel enables you to use handwriting or an on-scr
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Prediction_2-DFProperties-End -->
 
 <!-- Prediction_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -833,7 +818,7 @@ Touch Keyboard and Handwriting panel enables you to use handwriting or an on-scr
 <!-- RareChar_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RareChar_1-Applicability-End -->
 
 <!-- RareChar_1-OmaUri-Begin -->
@@ -848,11 +833,11 @@ Includes rarely used Chinese, Kanji, and Hanja characters when handwriting is co
 
 Touch Keyboard and Handwriting panel (a.k.a. Tablet PC Input Panel in Windows 7 and Windows Vista) enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
 
-- If you enable this policy, rarely used Chinese, Kanji, and Hanja characters will be included in recognition results when handwriting is converted to typed text. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy, rarely used Chinese, Kanji, and Hanja characters will be included in recognition results when handwriting is converted to typed text. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you disable this policy, rarely used Chinese, Kanji, and Hanja characters will not be included in recognition results when handwriting is converted to typed text. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you disable this policy, rarely used Chinese, Kanji, and Hanja characters won't be included in recognition results when handwriting is converted to typed text. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you do not configure this policy, rarely used Chinese, Kanji, and Hanja characters will not be included in recognition results when handwriting is converted to typed text. Users will be able to configure this setting on the Ink to text conversion tab in Input Panel Options (in Windows 7 and Windows Vista).
+- If you don't configure this policy, rarely used Chinese, Kanji, and Hanja characters won't be included in recognition results when handwriting is converted to typed text. Users will be able to configure this setting on the Ink to text conversion tab in Input Panel Options (in Windows 7 and Windows Vista).
 <!-- RareChar_1-Description-End -->
 
 <!-- RareChar_1-Editable-Begin -->
@@ -864,13 +849,12 @@ Touch Keyboard and Handwriting panel (a.k.a. Tablet PC Input Panel in Windows 7 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RareChar_1-DFProperties-End -->
 
 <!-- RareChar_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -897,7 +881,7 @@ Touch Keyboard and Handwriting panel (a.k.a. Tablet PC Input Panel in Windows 7 
 <!-- RareChar_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RareChar_2-Applicability-End -->
 
 <!-- RareChar_2-OmaUri-Begin -->
@@ -912,11 +896,11 @@ Includes rarely used Chinese, Kanji, and Hanja characters when handwriting is co
 
 Touch Keyboard and Handwriting panel (a.k.a. Tablet PC Input Panel in Windows 7 and Windows Vista) enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
 
-- If you enable this policy, rarely used Chinese, Kanji, and Hanja characters will be included in recognition results when handwriting is converted to typed text. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy, rarely used Chinese, Kanji, and Hanja characters will be included in recognition results when handwriting is converted to typed text. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you disable this policy, rarely used Chinese, Kanji, and Hanja characters will not be included in recognition results when handwriting is converted to typed text. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you disable this policy, rarely used Chinese, Kanji, and Hanja characters won't be included in recognition results when handwriting is converted to typed text. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you do not configure this policy, rarely used Chinese, Kanji, and Hanja characters will not be included in recognition results when handwriting is converted to typed text. Users will be able to configure this setting on the Ink to text conversion tab in Input Panel Options (in Windows 7 and Windows Vista).
+- If you don't configure this policy, rarely used Chinese, Kanji, and Hanja characters won't be included in recognition results when handwriting is converted to typed text. Users will be able to configure this setting on the Ink to text conversion tab in Input Panel Options (in Windows 7 and Windows Vista).
 <!-- RareChar_2-Description-End -->
 
 <!-- RareChar_2-Editable-Begin -->
@@ -928,13 +912,12 @@ Touch Keyboard and Handwriting panel (a.k.a. Tablet PC Input Panel in Windows 7 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RareChar_2-DFProperties-End -->
 
 <!-- RareChar_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -961,7 +944,7 @@ Touch Keyboard and Handwriting panel (a.k.a. Tablet PC Input Panel in Windows 7 
 <!-- ScratchOut_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ScratchOut_1-Applicability-End -->
 
 <!-- ScratchOut_1-OmaUri-Begin -->
@@ -978,15 +961,15 @@ The tolerant gestures let users scratch out ink in Input Panel by using striketh
 
 Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
 
-- If you enable this policy and choose "All" from the drop-down menu, no scratch-out gestures will be available in Input Panel. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose "All" from the drop-down menu, no scratch-out gestures will be available in Input Panel. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you enable this policy and choose "Tolerant," users will be able to use the Z-shaped scratch-out gesture that was available in Microsoft Windows XP Tablet PC Edition. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose "Tolerant," users will be able to use the Z-shaped scratch-out gesture that was available in Microsoft Windows XP Tablet PC Edition. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you enable this policy and choose "None," users will be able to use both the tolerant scratch-out gestures and the Z-shaped scratch-out gesture. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose "None," users will be able to use both the tolerant scratch-out gestures and the Z-shaped scratch-out gesture. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you disable this policy, users will be able to use both the tolerant scratch-out gestures and the Z-shaped scratch-out gesture. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you disable this policy, users will be able to use both the tolerant scratch-out gestures and the Z-shaped scratch-out gesture. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you do not configure this policy, users will be able to use both the tolerant scratch-out gestures and the Z-shaped scratch-out gesture. Users will be able to configure this setting on the Gestures tab in Input Panel Options.
+- If you don't configure this policy, users will be able to use both the tolerant scratch-out gestures and the Z-shaped scratch-out gesture. Users will be able to configure this setting on the Gestures tab in Input Panel Options.
 <!-- ScratchOut_1-Description-End -->
 
 <!-- ScratchOut_1-Editable-Begin -->
@@ -998,13 +981,12 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ScratchOut_1-DFProperties-End -->
 
 <!-- ScratchOut_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1031,7 +1013,7 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 <!-- ScratchOut_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ScratchOut_2-Applicability-End -->
 
 <!-- ScratchOut_2-OmaUri-Begin -->
@@ -1048,15 +1030,15 @@ The tolerant gestures let users scratch out ink in Input Panel by using striketh
 
 Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriting or an on-screen keyboard to enter text, symbols, numbers, or keyboard shortcuts.
 
-- If you enable this policy and choose "All" from the drop-down menu, no scratch-out gestures will be available in Input Panel. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose "All" from the drop-down menu, no scratch-out gestures will be available in Input Panel. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you enable this policy and choose "Tolerant," users will be able to use the Z-shaped scratch-out gesture that was available in Microsoft Windows XP Tablet PC Edition. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose "Tolerant," users will be able to use the Z-shaped scratch-out gesture that was available in Microsoft Windows XP Tablet PC Edition. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you enable this policy and choose "None," users will be able to use both the tolerant scratch-out gestures and the Z-shaped scratch-out gesture. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you enable this policy and choose "None," users will be able to use both the tolerant scratch-out gestures and the Z-shaped scratch-out gesture. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you disable this policy, users will be able to use both the tolerant scratch-out gestures and the Z-shaped scratch-out gesture. Users will not be able to configure this setting in the Input Panel Options dialog box.
+- If you disable this policy, users will be able to use both the tolerant scratch-out gestures and the Z-shaped scratch-out gesture. Users won't be able to configure this setting in the Input Panel Options dialog box.
 
-- If you do not configure this policy, users will be able to use both the tolerant scratch-out gestures and the Z-shaped scratch-out gesture. Users will be able to configure this setting on the Gestures tab in Input Panel Options.
+- If you don't configure this policy, users will be able to use both the tolerant scratch-out gestures and the Z-shaped scratch-out gesture. Users will be able to configure this setting on the Gestures tab in Input Panel Options.
 <!-- ScratchOut_2-Description-End -->
 
 <!-- ScratchOut_2-Editable-Begin -->
@@ -1068,13 +1050,12 @@ Tablet PC Input Panel is a Tablet PC accessory that enables you to use handwriti
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ScratchOut_2-DFProperties-End -->
 
 <!-- ScratchOut_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

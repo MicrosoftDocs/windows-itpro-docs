@@ -1,5 +1,5 @@
 ---
-title: 4929(S, F) An Active Directory replica source naming context was removed. (Windows 10)
+title: 4929(S, F) An Active Directory replica source naming context was removed. 
 description: Describes security event 4929(S, F) An Active Directory replica source naming context was removed.
 ms.pagetype: security
 ms.prod: windows-client

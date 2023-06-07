@@ -1,5 +1,5 @@
 ---
-title: 5067(S, F) A cryptographic function modification was attempted. (Windows 10)
+title: 5067(S, F) A cryptographic function modification was attempted. 
 description: Describes security event 5067(S, F) A cryptographic function modification was attempted.
 ms.pagetype: security
 ms.prod: windows-client

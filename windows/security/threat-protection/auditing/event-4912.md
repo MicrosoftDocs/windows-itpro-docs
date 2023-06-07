@@ -1,5 +1,5 @@
 ---
-title: 4912(S) Per User Audit Policy was changed. (Windows 10)
+title: 4912(S) Per User Audit Policy was changed. 
 description: Describes security event 4912(S) Per User Audit Policy was changed. This event is generated every time Per User Audit Policy is changed.
 ms.pagetype: security
 ms.prod: windows-client

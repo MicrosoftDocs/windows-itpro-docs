@@ -4,7 +4,7 @@ description: Learn more about the ADMX_TabletShell Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_TabletShell-Begin -->
 # Policy CSP - ADMX_TabletShell
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_TabletShell-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- DisableInkball_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableInkball_1-Applicability-End -->
 
 <!-- DisableInkball_1-OmaUri-Begin -->
@@ -44,11 +41,11 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 Prevents start of InkBall game.
 
-- If you enable this policy, the InkBall game will not run.
+- If you enable this policy, the InkBall game won't run.
 
 - If you disable this policy, the InkBall game will run.
 
-- If you do not configure this policy, the InkBall game will run.
+- If you don't configure this policy, the InkBall game will run.
 <!-- DisableInkball_1-Description-End -->
 
 <!-- DisableInkball_1-Editable-Begin -->
@@ -60,13 +57,12 @@ Prevents start of InkBall game.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableInkball_1-DFProperties-End -->
 
 <!-- DisableInkball_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -93,7 +89,7 @@ Prevents start of InkBall game.
 <!-- DisableInkball_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableInkball_2-Applicability-End -->
 
 <!-- DisableInkball_2-OmaUri-Begin -->
@@ -106,11 +102,11 @@ Prevents start of InkBall game.
 <!-- Description-Source-ADMX -->
 Prevents start of InkBall game.
 
-- If you enable this policy, the InkBall game will not run.
+- If you enable this policy, the InkBall game won't run.
 
 - If you disable this policy, the InkBall game will run.
 
-- If you do not configure this policy, the InkBall game will run.
+- If you don't configure this policy, the InkBall game will run.
 <!-- DisableInkball_2-Description-End -->
 
 <!-- DisableInkball_2-Editable-Begin -->
@@ -122,13 +118,12 @@ Prevents start of InkBall game.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableInkball_2-DFProperties-End -->
 
 <!-- DisableInkball_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -155,7 +150,7 @@ Prevents start of InkBall game.
 <!-- DisableJournal_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableJournal_1-Applicability-End -->
 
 <!-- DisableJournal_1-OmaUri-Begin -->
@@ -168,11 +163,11 @@ Prevents start of InkBall game.
 <!-- Description-Source-ADMX -->
 Prevents start of Windows Journal.
 
-- If you enable this policy, the Windows Journal accessory will not run.
+- If you enable this policy, the Windows Journal accessory won't run.
 
 - If you disable this policy, the Windows Journal accessory will run.
 
-- If you do not configure this policy, the Windows Journal accessory will run.
+- If you don't configure this policy, the Windows Journal accessory will run.
 <!-- DisableJournal_1-Description-End -->
 
 <!-- DisableJournal_1-Editable-Begin -->
@@ -184,13 +179,12 @@ Prevents start of Windows Journal.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableJournal_1-DFProperties-End -->
 
 <!-- DisableJournal_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -217,7 +211,7 @@ Prevents start of Windows Journal.
 <!-- DisableJournal_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableJournal_2-Applicability-End -->
 
 <!-- DisableJournal_2-OmaUri-Begin -->
@@ -230,11 +224,11 @@ Prevents start of Windows Journal.
 <!-- Description-Source-ADMX -->
 Prevents start of Windows Journal.
 
-- If you enable this policy, the Windows Journal accessory will not run.
+- If you enable this policy, the Windows Journal accessory won't run.
 
 - If you disable this policy, the Windows Journal accessory will run.
 
-- If you do not configure this policy, the Windows Journal accessory will run.
+- If you don't configure this policy, the Windows Journal accessory will run.
 <!-- DisableJournal_2-Description-End -->
 
 <!-- DisableJournal_2-Editable-Begin -->
@@ -246,13 +240,12 @@ Prevents start of Windows Journal.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableJournal_2-DFProperties-End -->
 
 <!-- DisableJournal_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -279,7 +272,7 @@ Prevents start of Windows Journal.
 <!-- DisableNoteWriterPrinting_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableNoteWriterPrinting_1-Applicability-End -->
 
 <!-- DisableNoteWriterPrinting_1-OmaUri-Begin -->
@@ -292,11 +285,11 @@ Prevents start of Windows Journal.
 <!-- Description-Source-ADMX -->
 Prevents printing to Journal Note Writer.
 
-- If you enable this policy, the Journal Note Writer printer driver will not allow printing to it. It will remain displayed in the list of available printers, but attempts to print to it will fail.
+- If you enable this policy, the Journal Note Writer printer driver won't allow printing to it. It will remain displayed in the list of available printers, but attempts to print to it will fail.
 
-- If you disable this policy, you will be able to use this feature to print to a Journal Note.
+- If you disable this policy, you'll be able to use this feature to print to a Journal Note.
 
-- If you do not configure this policy, users will be able to use this feature to print to a Journal Note.
+- If you don't configure this policy, users will be able to use this feature to print to a Journal Note.
 <!-- DisableNoteWriterPrinting_1-Description-End -->
 
 <!-- DisableNoteWriterPrinting_1-Editable-Begin -->
@@ -308,13 +301,12 @@ Prevents printing to Journal Note Writer.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableNoteWriterPrinting_1-DFProperties-End -->
 
 <!-- DisableNoteWriterPrinting_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -341,7 +333,7 @@ Prevents printing to Journal Note Writer.
 <!-- DisableNoteWriterPrinting_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableNoteWriterPrinting_2-Applicability-End -->
 
 <!-- DisableNoteWriterPrinting_2-OmaUri-Begin -->
@@ -354,11 +346,11 @@ Prevents printing to Journal Note Writer.
 <!-- Description-Source-ADMX -->
 Prevents printing to Journal Note Writer.
 
-- If you enable this policy, the Journal Note Writer printer driver will not allow printing to it. It will remain displayed in the list of available printers, but attempts to print to it will fail.
+- If you enable this policy, the Journal Note Writer printer driver won't allow printing to it. It will remain displayed in the list of available printers, but attempts to print to it will fail.
 
-- If you disable this policy, you will be able to use this feature to print to a Journal Note.
+- If you disable this policy, you'll be able to use this feature to print to a Journal Note.
 
-- If you do not configure this policy, users will be able to use this feature to print to a Journal Note.
+- If you don't configure this policy, users will be able to use this feature to print to a Journal Note.
 <!-- DisableNoteWriterPrinting_2-Description-End -->
 
 <!-- DisableNoteWriterPrinting_2-Editable-Begin -->
@@ -370,13 +362,12 @@ Prevents printing to Journal Note Writer.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableNoteWriterPrinting_2-DFProperties-End -->
 
 <!-- DisableNoteWriterPrinting_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -403,7 +394,7 @@ Prevents printing to Journal Note Writer.
 <!-- DisableSnippingTool_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableSnippingTool_1-Applicability-End -->
 
 <!-- DisableSnippingTool_1-OmaUri-Begin -->
@@ -416,11 +407,11 @@ Prevents printing to Journal Note Writer.
 <!-- Description-Source-ADMX -->
 Prevents the snipping tool from running.
 
-- If you enable this policy setting, the Snipping Tool will not run.
+- If you enable this policy setting, the Snipping Tool won't run.
 
 - If you disable this policy setting, the Snipping Tool will run.
 
-- If you do not configure this policy setting, the Snipping Tool will run.
+- If you don't configure this policy setting, the Snipping Tool will run.
 <!-- DisableSnippingTool_1-Description-End -->
 
 <!-- DisableSnippingTool_1-Editable-Begin -->
@@ -432,13 +423,12 @@ Prevents the snipping tool from running.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableSnippingTool_1-DFProperties-End -->
 
 <!-- DisableSnippingTool_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -465,7 +455,7 @@ Prevents the snipping tool from running.
 <!-- DisableSnippingTool_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableSnippingTool_2-Applicability-End -->
 
 <!-- DisableSnippingTool_2-OmaUri-Begin -->
@@ -478,11 +468,11 @@ Prevents the snipping tool from running.
 <!-- Description-Source-ADMX -->
 Prevents the snipping tool from running.
 
-- If you enable this policy setting, the Snipping Tool will not run.
+- If you enable this policy setting, the Snipping Tool won't run.
 
 - If you disable this policy setting, the Snipping Tool will run.
 
-- If you do not configure this policy setting, the Snipping Tool will run.
+- If you don't configure this policy setting, the Snipping Tool will run.
 <!-- DisableSnippingTool_2-Description-End -->
 
 <!-- DisableSnippingTool_2-Editable-Begin -->
@@ -494,13 +484,12 @@ Prevents the snipping tool from running.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableSnippingTool_2-DFProperties-End -->
 
 <!-- DisableSnippingTool_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -527,7 +516,7 @@ Prevents the snipping tool from running.
 <!-- PreventBackEscMapping_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PreventBackEscMapping_1-Applicability-End -->
 
 <!-- PreventBackEscMapping_1-OmaUri-Begin -->
@@ -540,11 +529,11 @@ Prevents the snipping tool from running.
 <!-- Description-Source-ADMX -->
 Removes the Back->ESC mapping that normally occurs when menus are visible, and for applications that subscribe to this behavior.
 
-- If you enable this policy, a button assigned to Back will not map to ESC.
+- If you enable this policy, a button assigned to Back won't map to ESC.
 
 - If you disable this policy, Back->ESC mapping will occur.
 
-- If you do not configure this policy, Back->ESC mapping will occur.
+- If you don't configure this policy, Back->ESC mapping will occur.
 <!-- PreventBackEscMapping_1-Description-End -->
 
 <!-- PreventBackEscMapping_1-Editable-Begin -->
@@ -556,13 +545,12 @@ Removes the Back->ESC mapping that normally occurs when menus are visible, and f
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventBackEscMapping_1-DFProperties-End -->
 
 <!-- PreventBackEscMapping_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -589,7 +577,7 @@ Removes the Back->ESC mapping that normally occurs when menus are visible, and f
 <!-- PreventBackEscMapping_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PreventBackEscMapping_2-Applicability-End -->
 
 <!-- PreventBackEscMapping_2-OmaUri-Begin -->
@@ -602,11 +590,11 @@ Removes the Back->ESC mapping that normally occurs when menus are visible, and f
 <!-- Description-Source-ADMX -->
 Removes the Back->ESC mapping that normally occurs when menus are visible, and for applications that subscribe to this behavior.
 
-- If you enable this policy, a button assigned to Back will not map to ESC.
+- If you enable this policy, a button assigned to Back won't map to ESC.
 
 - If you disable this policy, Back->ESC mapping will occur.
 
-- If you do not configure this policy, Back->ESC mapping will occur.
+- If you don't configure this policy, Back->ESC mapping will occur.
 <!-- PreventBackEscMapping_2-Description-End -->
 
 <!-- PreventBackEscMapping_2-Editable-Begin -->
@@ -618,13 +606,12 @@ Removes the Back->ESC mapping that normally occurs when menus are visible, and f
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventBackEscMapping_2-DFProperties-End -->
 
 <!-- PreventBackEscMapping_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -651,7 +638,7 @@ Removes the Back->ESC mapping that normally occurs when menus are visible, and f
 <!-- PreventFlicks_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PreventFlicks_1-Applicability-End -->
 
 <!-- PreventFlicks_1-OmaUri-Begin -->
@@ -666,7 +653,7 @@ Makes pen flicks and all related features unavailable.
 
 - If you enable this policy, pen flicks and all related features are unavailable. This includes: pen flicks themselves, pen flicks training, pen flicks training triggers in Internet Explorer, the pen flicks notification and the pen flicks tray icon.
 
-- If you disable or do not configure this policy, pen flicks and related features are available.
+- If you disable or don't configure this policy, pen flicks and related features are available.
 <!-- PreventFlicks_1-Description-End -->
 
 <!-- PreventFlicks_1-Editable-Begin -->
@@ -678,13 +665,12 @@ Makes pen flicks and all related features unavailable.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventFlicks_1-DFProperties-End -->
 
 <!-- PreventFlicks_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -711,7 +697,7 @@ Makes pen flicks and all related features unavailable.
 <!-- PreventFlicks_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PreventFlicks_2-Applicability-End -->
 
 <!-- PreventFlicks_2-OmaUri-Begin -->
@@ -726,7 +712,7 @@ Makes pen flicks and all related features unavailable.
 
 - If you enable this policy, pen flicks and all related features are unavailable. This includes: pen flicks themselves, pen flicks training, pen flicks training triggers in Internet Explorer, the pen flicks notification and the pen flicks tray icon.
 
-- If you disable or do not configure this policy, pen flicks and related features are available.
+- If you disable or don't configure this policy, pen flicks and related features are available.
 <!-- PreventFlicks_2-Description-End -->
 
 <!-- PreventFlicks_2-Editable-Begin -->
@@ -738,13 +724,12 @@ Makes pen flicks and all related features unavailable.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventFlicks_2-DFProperties-End -->
 
 <!-- PreventFlicks_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -771,7 +756,7 @@ Makes pen flicks and all related features unavailable.
 <!-- PreventFlicksLearningMode_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PreventFlicksLearningMode_1-Applicability-End -->
 
 <!-- PreventFlicksLearningMode_1-OmaUri-Begin -->
@@ -784,9 +769,9 @@ Makes pen flicks and all related features unavailable.
 <!-- Description-Source-ADMX -->
 Makes pen flicks learning mode unavailable.
 
-- If you enable this policy, pen flicks are still available but learning mode is not. Pen flicks are off by default and can be turned on system-wide, but cannot be restricted to learning mode applications. This means that the pen flicks training triggers in Internet Explorer are disabled and that the pen flicks notification will never be displayed. However, pen flicks, the pen flicks tray icon and pen flicks training (that can be accessed through CPL) are still available. Conceptually this policy is a subset of the Disable pen flicks policy.
+- If you enable this policy, pen flicks are still available but learning mode is not. Pen flicks are off by default and can be turned on system-wide, but can't be restricted to learning mode applications. This means that the pen flicks training triggers in Internet Explorer are disabled and that the pen flicks notification will never be displayed. However, pen flicks, the pen flicks tray icon and pen flicks training (that can be accessed through CPL) are still available. Conceptually this policy is a subset of the Disable pen flicks policy.
 
-- If you disable or do not configure this policy, all the features described above will be available.
+- If you disable or don't configure this policy, all the features described above will be available.
 <!-- PreventFlicksLearningMode_1-Description-End -->
 
 <!-- PreventFlicksLearningMode_1-Editable-Begin -->
@@ -798,13 +783,12 @@ Makes pen flicks learning mode unavailable.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventFlicksLearningMode_1-DFProperties-End -->
 
 <!-- PreventFlicksLearningMode_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -831,7 +815,7 @@ Makes pen flicks learning mode unavailable.
 <!-- PreventFlicksLearningMode_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PreventFlicksLearningMode_2-Applicability-End -->
 
 <!-- PreventFlicksLearningMode_2-OmaUri-Begin -->
@@ -844,9 +828,9 @@ Makes pen flicks learning mode unavailable.
 <!-- Description-Source-ADMX -->
 Makes pen flicks learning mode unavailable.
 
-- If you enable this policy, pen flicks are still available but learning mode is not. Pen flicks are off by default and can be turned on system-wide, but cannot be restricted to learning mode applications. This means that the pen flicks training triggers in Internet Explorer are disabled and that the pen flicks notification will never be displayed. However, pen flicks, the pen flicks tray icon and pen flicks training (that can be accessed through CPL) are still available. Conceptually this policy is a subset of the Disable pen flicks policy.
+- If you enable this policy, pen flicks are still available but learning mode is not. Pen flicks are off by default and can be turned on system-wide, but can't be restricted to learning mode applications. This means that the pen flicks training triggers in Internet Explorer are disabled and that the pen flicks notification will never be displayed. However, pen flicks, the pen flicks tray icon and pen flicks training (that can be accessed through CPL) are still available. Conceptually this policy is a subset of the Disable pen flicks policy.
 
-- If you disable or do not configure this policy, all the features described above will be available.
+- If you disable or don't configure this policy, all the features described above will be available.
 <!-- PreventFlicksLearningMode_2-Description-End -->
 
 <!-- PreventFlicksLearningMode_2-Editable-Begin -->
@@ -858,13 +842,12 @@ Makes pen flicks learning mode unavailable.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventFlicksLearningMode_2-DFProperties-End -->
 
 <!-- PreventFlicksLearningMode_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -891,7 +874,7 @@ Makes pen flicks learning mode unavailable.
 <!-- PreventLaunchApp_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PreventLaunchApp_1-Applicability-End -->
 
 <!-- PreventLaunchApp_1-OmaUri-Begin -->
@@ -904,11 +887,11 @@ Makes pen flicks learning mode unavailable.
 <!-- Description-Source-ADMX -->
 Prevents the user from launching an application from a Tablet PC hardware button.
 
-- If you enable this policy, applications cannot be launched from a hardware button, and "Launch an application" is removed from the drop down menu for configuring button actions (in the Tablet PC Control Panel buttons tab).
+- If you enable this policy, applications can't be launched from a hardware button, and "Launch an application" is removed from the drop down menu for configuring button actions (in the Tablet PC Control Panel buttons tab).
 
 - If you disable this policy, applications can be launched from a hardware button.
 
-- If you do not configure this policy, applications can be launched from a hardware button.
+- If you don't configure this policy, applications can be launched from a hardware button.
 <!-- PreventLaunchApp_1-Description-End -->
 
 <!-- PreventLaunchApp_1-Editable-Begin -->
@@ -920,13 +903,12 @@ Prevents the user from launching an application from a Tablet PC hardware button
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventLaunchApp_1-DFProperties-End -->
 
 <!-- PreventLaunchApp_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -953,7 +935,7 @@ Prevents the user from launching an application from a Tablet PC hardware button
 <!-- PreventLaunchApp_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PreventLaunchApp_2-Applicability-End -->
 
 <!-- PreventLaunchApp_2-OmaUri-Begin -->
@@ -966,11 +948,11 @@ Prevents the user from launching an application from a Tablet PC hardware button
 <!-- Description-Source-ADMX -->
 Prevents the user from launching an application from a Tablet PC hardware button.
 
-- If you enable this policy, applications cannot be launched from a hardware button, and "Launch an application" is removed from the drop down menu for configuring button actions (in the Tablet PC Control Panel buttons tab).
+- If you enable this policy, applications can't be launched from a hardware button, and "Launch an application" is removed from the drop down menu for configuring button actions (in the Tablet PC Control Panel buttons tab).
 
 - If you disable this policy, applications can be launched from a hardware button.
 
-- If you do not configure this policy, applications can be launched from a hardware button.
+- If you don't configure this policy, applications can be launched from a hardware button.
 <!-- PreventLaunchApp_2-Description-End -->
 
 <!-- PreventLaunchApp_2-Editable-Begin -->
@@ -982,13 +964,12 @@ Prevents the user from launching an application from a Tablet PC hardware button
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventLaunchApp_2-DFProperties-End -->
 
 <!-- PreventLaunchApp_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1015,7 +996,7 @@ Prevents the user from launching an application from a Tablet PC hardware button
 <!-- PreventPressAndHold_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PreventPressAndHold_1-Applicability-End -->
 
 <!-- PreventPressAndHold_1-OmaUri-Begin -->
@@ -1028,11 +1009,11 @@ Prevents the user from launching an application from a Tablet PC hardware button
 <!-- Description-Source-ADMX -->
 Prevents press and hold actions on hardware buttons, so that only one action is available per button.
 
-- If you enable this policy, press and hold actions are unavailable, and the button configuration dialog will display the following text: "Some settings are controlled by Group Policy. If a setting is unavailable, contact your system administrator."
+- If you enable this policy, press and hold actions are unavailable, and the button configuration dialog will display the following text: "Some settings are controlled by Group Policy. If a setting is unavailable, contact your system administrator".
 
 - If you disable this policy, press and hold actions for buttons will be available.
 
-- If you do not configure this policy, press and hold actions will be available.
+- If you don't configure this policy, press and hold actions will be available.
 <!-- PreventPressAndHold_1-Description-End -->
 
 <!-- PreventPressAndHold_1-Editable-Begin -->
@@ -1044,13 +1025,12 @@ Prevents press and hold actions on hardware buttons, so that only one action is 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventPressAndHold_1-DFProperties-End -->
 
 <!-- PreventPressAndHold_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1077,7 +1057,7 @@ Prevents press and hold actions on hardware buttons, so that only one action is 
 <!-- PreventPressAndHold_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PreventPressAndHold_2-Applicability-End -->
 
 <!-- PreventPressAndHold_2-OmaUri-Begin -->
@@ -1090,11 +1070,11 @@ Prevents press and hold actions on hardware buttons, so that only one action is 
 <!-- Description-Source-ADMX -->
 Prevents press and hold actions on hardware buttons, so that only one action is available per button.
 
-- If you enable this policy, press and hold actions are unavailable, and the button configuration dialog will display the following text: "Some settings are controlled by Group Policy. If a setting is unavailable, contact your system administrator."
+- If you enable this policy, press and hold actions are unavailable, and the button configuration dialog will display the following text: "Some settings are controlled by Group Policy. If a setting is unavailable, contact your system administrator".
 
 - If you disable this policy, press and hold actions for buttons will be available.
 
-- If you do not configure this policy, press and hold actions will be available.
+- If you don't configure this policy, press and hold actions will be available.
 <!-- PreventPressAndHold_2-Description-End -->
 
 <!-- PreventPressAndHold_2-Editable-Begin -->
@@ -1106,13 +1086,12 @@ Prevents press and hold actions on hardware buttons, so that only one action is 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PreventPressAndHold_2-DFProperties-End -->
 
 <!-- PreventPressAndHold_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1139,7 +1118,7 @@ Prevents press and hold actions on hardware buttons, so that only one action is 
 <!-- TurnOffButtons_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- TurnOffButtons_1-Applicability-End -->
 
 <!-- TurnOffButtons_1-OmaUri-Begin -->
@@ -1156,7 +1135,7 @@ Turns off Tablet PC hardware buttons.
 
 - If you disable this policy, user and OEM defined button actions will occur when the buttons are pressed.
 
-- If you do not configure this policy, user and OEM defined button actions will occur when the buttons are pressed.
+- If you don't configure this policy, user and OEM defined button actions will occur when the buttons are pressed.
 <!-- TurnOffButtons_1-Description-End -->
 
 <!-- TurnOffButtons_1-Editable-Begin -->
@@ -1168,13 +1147,12 @@ Turns off Tablet PC hardware buttons.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TurnOffButtons_1-DFProperties-End -->
 
 <!-- TurnOffButtons_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1201,7 +1179,7 @@ Turns off Tablet PC hardware buttons.
 <!-- TurnOffButtons_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- TurnOffButtons_2-Applicability-End -->
 
 <!-- TurnOffButtons_2-OmaUri-Begin -->
@@ -1218,7 +1196,7 @@ Turns off Tablet PC hardware buttons.
 
 - If you disable this policy, user and OEM defined button actions will occur when the buttons are pressed.
 
-- If you do not configure this policy, user and OEM defined button actions will occur when the buttons are pressed.
+- If you don't configure this policy, user and OEM defined button actions will occur when the buttons are pressed.
 <!-- TurnOffButtons_2-Description-End -->
 
 <!-- TurnOffButtons_2-Editable-Begin -->
@@ -1230,13 +1208,12 @@ Turns off Tablet PC hardware buttons.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TurnOffButtons_2-DFProperties-End -->
 
 <!-- TurnOffButtons_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1263,7 +1240,7 @@ Turns off Tablet PC hardware buttons.
 <!-- TurnOffFeedback_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- TurnOffFeedback_1-Applicability-End -->
 
 <!-- TurnOffFeedback_1-OmaUri-Begin -->
@@ -1278,7 +1255,7 @@ Disables visual pen action feedback, except for press and hold feedback.
 
 - If you enable this policy, all visual pen action feedback is disabled except for press and hold feedback. Additionally, the mouse cursors are shown instead of the pen cursors.
 
-- If you disable or do not configure this policy, visual feedback and pen cursors will be shown unless the user disables them in Control Panel.
+- If you disable or don't configure this policy, visual feedback and pen cursors will be shown unless the user disables them in Control Panel.
 <!-- TurnOffFeedback_1-Description-End -->
 
 <!-- TurnOffFeedback_1-Editable-Begin -->
@@ -1290,13 +1267,12 @@ Disables visual pen action feedback, except for press and hold feedback.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TurnOffFeedback_1-DFProperties-End -->
 
 <!-- TurnOffFeedback_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1323,7 +1299,7 @@ Disables visual pen action feedback, except for press and hold feedback.
 <!-- TurnOffFeedback_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- TurnOffFeedback_2-Applicability-End -->
 
 <!-- TurnOffFeedback_2-OmaUri-Begin -->
@@ -1338,7 +1314,7 @@ Disables visual pen action feedback, except for press and hold feedback.
 
 - If you enable this policy, all visual pen action feedback is disabled except for press and hold feedback. Additionally, the mouse cursors are shown instead of the pen cursors.
 
-- If you disable or do not configure this policy, visual feedback and pen cursors will be shown unless the user disables them in Control Panel.
+- If you disable or don't configure this policy, visual feedback and pen cursors will be shown unless the user disables them in Control Panel.
 <!-- TurnOffFeedback_2-Description-End -->
 
 <!-- TurnOffFeedback_2-Editable-Begin -->
@@ -1350,13 +1326,12 @@ Disables visual pen action feedback, except for press and hold feedback.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- TurnOffFeedback_2-DFProperties-End -->
 
 <!-- TurnOffFeedback_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

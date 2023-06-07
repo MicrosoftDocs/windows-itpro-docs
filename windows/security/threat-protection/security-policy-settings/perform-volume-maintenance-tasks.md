@@ -1,5 +1,5 @@
 ---
-title: Perform volume maintenance tasks (Windows 10)
+title: Perform volume maintenance tasks 
 description: Describes the best practices, location, values, policy management, and security considerations for the Perform volume maintenance tasks security policy setting.
 ms.assetid: b6990813-3898-43e2-8221-c9c06d893244
 ms.reviewer: 

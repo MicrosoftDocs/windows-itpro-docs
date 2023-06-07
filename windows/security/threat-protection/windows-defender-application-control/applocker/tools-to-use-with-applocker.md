@@ -1,5 +1,5 @@
 ---
-title: Tools to use with AppLocker (Windows)
+title: Tools to use with AppLocker 
 description: This topic for the IT professional describes the tools available to create and administer AppLocker policies.
 ms.assetid: db2b7cb3-7643-4be5-84eb-46ba551e1ad1
 ms.reviewer: 

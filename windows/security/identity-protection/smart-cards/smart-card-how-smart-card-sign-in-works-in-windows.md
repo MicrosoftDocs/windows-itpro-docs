@@ -21,3 +21,5 @@ This topic for IT professional provides links to resources about the implementat
 -   [Certificate Propagation Service](smart-card-certificate-propagation-service.md): Learn about how the certificate propagation service works when a smart card is inserted into a computer.
 
 -   [Smart Card Removal Policy Service](smart-card-removal-policy-service.md): Learn about using Group Policy to control what happens when a user removes a smart card.
+
+[!INCLUDE [smart-cards-for-windows-service](../../../../includes/licensing/smart-cards-for-windows-service.md)]

@@ -1,5 +1,5 @@
 ---
-title: 4649(S) A replay attack was detected. (Windows 10)
+title: 4649(S) A replay attack was detected. 
 description: Describes security event 4649(S) A replay attack was detected. This event is generated when a KRB_AP_ERR_REPEAT Kerberos response is sent to the client.
 ms.pagetype: security
 ms.prod: windows-client

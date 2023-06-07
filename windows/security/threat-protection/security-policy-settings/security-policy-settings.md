@@ -1,5 +1,5 @@
 ---
-title: Security policy settings (Windows 10)
+title: Security policy settings 
 description: This reference topic describes the common scenarios, architecture, and processes for security settings.
 ms.assetid: e7ac5204-7f6c-4708-a9f6-6af712ca43b9
 ms.reviewer: 
@@ -70,6 +70,8 @@ The Security Settings extension of the Local Group Policy Editor includes the fo
 - **Application Control Policies.** Specify settings to control which users or groups can run particular applications in your organization based on unique identities of files.
 - **IP Security Policies on Local Computer.** Specify settings to ensure private, secure communications over IP networks by using cryptographic security services. IPsec establishes trust and security from a source IP address to a destination IP address.
 - **Advanced Audit Policy Configuration.** Specify settings that control the logging of security events into the security log on the device. The settings under Advanced Audit Policy Configuration provide finer control over which activities to monitor as opposed to the Audit Policy settings under Local Policies.
+
+[!INCLUDE [windows-security-policy-settings-and-auditing](../../../../includes/licensing/windows-security-policy-settings-and-auditing.md)]
 
 ## Policy-based security settings management
 

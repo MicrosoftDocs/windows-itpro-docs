@@ -1,5 +1,5 @@
 ---
-title: Create a rule that uses a path condition (Windows)
+title: Create a rule that uses a path condition 
 description: This topic for IT professionals shows how to create an AppLocker rule with a path condition.
 ms.assetid: 9b2093f5-5976-45fa-90c3-da1e0e845d95
 ms.reviewer: 

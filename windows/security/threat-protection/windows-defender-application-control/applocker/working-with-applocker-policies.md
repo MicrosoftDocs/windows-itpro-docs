@@ -1,5 +1,5 @@
 ---
-title: Working with AppLocker policies (Windows)
+title: Working with AppLocker policies 
 description: This topic for IT professionals provides links to procedural topics about creating, maintaining, and testing AppLocker policies.
 ms.assetid: 7062d2e0-9cbb-4cb8-aa8c-b24945c3771d
 ms.reviewer: 
