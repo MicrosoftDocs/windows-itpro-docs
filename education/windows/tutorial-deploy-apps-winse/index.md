@@ -1,7 +1,7 @@
 ---
 title: Deploy applications to Windows 11 SE with Intune
 description: Learn how to deploy applications to Windows 11 SE with Intune and how to validate the apps.
-ms.date: 05/23/2023
+ms.date: 06/07/2023
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
@@ -42,11 +42,23 @@ In this tutorial you'll learn:
 
 There are three main steps to install an application on Windows 11 SE using the managed installer. Each step will be covered in detail in the next sections of this tutorial:
 
-:::image type="content" source="./images/process.png" alt-text="Diagram showing the three steps deploying apps to Windows SE devices with Intune." border="false":::
-
-1. **Deploy an application via Microsoft Intune** - Applications are deployed via Microsoft Intune. There are some restrictions on the types of apps that are compatible with managed installers, but the process is the same used for non-Windows 11 SE devices
-1. **Validate the application** - Applications are validated to ensure that they're installed and execute successfully. The process is the same for non-Windows 11 SE devices. Some applications may be incompatible due to how they're installed, how they execute, or how they update. You'll learn about known limitations in a later section of the tutorial
-1. **Create additional policies (optional)** - To allow apps that aren't installable or don't behave as intended, more policies can be created and deployed so that the apps can be used
+:::row:::
+   :::column span="":::
+    :::image type="icon" source="images/phase-1-on.svg" border="false":::
+      [**Deploy an application via Microsoft Intune**](deploy-apps.md)<br>
+      Applications are deployed via Microsoft Intune. There are some restrictions on the types of apps that are compatible with managed installers, but the process is the same used for non-Windows 11 SE devices
+   :::column-end:::
+   :::column span="":::
+    :::image type="icon" source="images/phase-2-on.svg" border="false":::
+      [**Validate the application**](validate-apps.md)<br>
+      Applications are validated to ensure that they're installed and execute successfully. The process is the same for non-Windows 11 SE devices. Some applications may be incompatible due to how they're installed, how they execute, or how they update. You'll learn about known limitations in a later section of the tutorial
+   :::column-end:::
+   :::column span="":::
+    :::image type="icon" source="images/phase-3-on.svg" border="false":::
+      [**Create additional policies (optional)**](create-policies.md)<br>
+      To allow apps that aren't installable or don't behave as intended, more policies can be created and deployed so that the apps can be used
+   :::column-end:::
+:::row-end:::
 
 All the steps are done by the IT administrator. Once the steps are complete, users of Windows 11 SE devices should be able to run the applications deployed via Intune.
 

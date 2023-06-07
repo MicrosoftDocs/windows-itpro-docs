@@ -9,7 +9,20 @@ appliesto:
 
 # Create policies to enable applications
 
-:::image type="content" source="./images/create-policies.png" alt-text="Diagram showing the three tutorial steps, highlighting the policy creation step." border="false":::
+:::row:::
+   :::column span="":::
+    :::image type="icon" source="images/phase-1-off.svg" border="false":::<br>
+      [**Deploy an application via Microsoft Intune**](deploy-apps.md)
+   :::column-end:::
+   :::column span="":::
+    :::image type="icon" source="images/phase-2-off.svg" border="false":::<br>
+      [**Validate the application**](validate-apps.md)
+   :::column-end:::
+   :::column span="":::
+    :::image type="icon" source="images/phase-3-on.svg" border="false":::<br>
+      [**Create additional policies (optional)**](create-policies.md)
+   :::column-end:::
+:::row-end:::
 
 You can create AppLocker policies to allow apps that are [semi-compatible](./validate-apps.md#semi-compatible-apps) or [incompatible](./validate-apps.md#incompatible-apps) with the managed installer to run.
 

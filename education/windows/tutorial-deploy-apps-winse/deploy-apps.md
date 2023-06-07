@@ -9,7 +9,20 @@ appliesto:
 
 # Applications deployment considerations
 
-:::image type="content" source="./images/deploy-app.png" alt-text="Diagram showing the three tutorial steps, highlighting the app deployment step." border="false":::
+:::row:::
+   :::column span="":::
+    :::image type="icon" source="images/phase-1-on.svg" border="false":::<br>
+      [**Deploy an application via Microsoft Intune**](deploy-apps.md)
+   :::column-end:::
+   :::column span="":::
+    :::image type="icon" source="images/phase-2-off.svg" border="false":::<br>
+      [**Validate the application**](validate-apps.md)
+   :::column-end:::
+   :::column span="":::
+    :::image type="icon" source="images/phase-3-off.svg" border="false":::<br>
+      [**Create additional policies (optional)**](create-policies.md)
+   :::column-end:::
+:::row-end:::
 
 The process to deploy applications to Windows SE devices via Microsoft Intune is the same used for non-SE devices. Applications must be defined in Intune, and then assigned to the correct groups.\
 However, on Windows SE devices, apps may successfully install, but they need validation to be certain that they're functional.

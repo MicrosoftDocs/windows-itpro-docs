@@ -1,8 +1,6 @@
 items: 
   - name: Introduction
     href: index.md
-  - name: Introduction2
-    href: index2.md
   - name: 1. Deploy apps
     href: deploy-apps.md
   - name: 2. Validate apps
