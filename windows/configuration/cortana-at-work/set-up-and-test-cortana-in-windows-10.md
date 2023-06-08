@@ -14,7 +14,8 @@ ms.topic: article
 ---
 
 # Set up and test Cortana in Windows 10, version 2004 and later
-
+<!--Using include for Cortana in Windows deprecation -->
+[!INCLUDE [Deprecation of Cortana in Windows](./includes/cortana-deprecation.md)]
 ## Before you begin
 
 - If your enterprise had previously disabled Cortana for your employees using the **Computer Configuration\Administrative Templates\Windows Components\Search\Allow Cortana** Group Policy or the **Experience\AllowCortana** MDM setting but want to enable it now that Cortana is part of Microsoft 365, you'll need to re-enable it at least for Windows 10, version 2004 and later, or Windows 11.
