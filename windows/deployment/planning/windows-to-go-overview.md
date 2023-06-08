@@ -94,22 +94,6 @@ As of the date of publication, the following are the USB drives currently certif
 - IronKey Workspace W500 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w500.html](https://www.kingston.com/support/technical/products?model=dtws))
 - IronKey Workspace W300 ([http://www.ironkey.com/windows-to-go-drives/ironkey-workspace-w300.html](https://www.kingston.com/support/technical/products?model=dtws))
 - Kingston DataTraveler Workspace for Windows To Go ([http://www.kingston.com/wtg/](https://go.microsoft.com/fwlink/p/?LinkId=618719))
-- Spyrus Portable Workplace ([http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
-
-    We recommend that you run the Spyrus Deployment Suite for Windows To Go to provision the Spyrus Portable Workplace.
-
-- Spyrus Secure Portable Workplace ([http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
-
-    > [!IMPORTANT]
-    > You must use the Spyrus Deployment Suite for Windows To Go to provision the Spyrus Secure Portable Workplace. For more information about the Spyrus Deployment Suite for Windows To Go, see [http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720).
-
-
-- Spyrus Worksafe ([http://www.spyruswtg.com/](https://go.microsoft.com/fwlink/p/?LinkId=618720))
-
-    > [!TIP]
-    > This device contains an embedded smart card.
-
-     
 
 -   Super Talent Express RC4 for Windows To Go
 
