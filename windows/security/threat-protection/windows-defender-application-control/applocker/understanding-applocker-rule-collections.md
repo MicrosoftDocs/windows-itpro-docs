@@ -1,29 +1,18 @@
 ---
-title: Understanding AppLocker rule collections 
+title: Understanding AppLocker rule collections
 description: This topic explains the five different types of AppLocker rules used to enforce AppLocker policies.
-ms.assetid: 03c05466-4fb3-4880-8d3c-0f6f59fc5579
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # Understanding AppLocker rule collections
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -40,7 +29,7 @@ An AppLocker rule collection is a set of rules that apply to one of five types:
 
 If you use DLL rules, a DLL allow rule has to be created for each DLL that is used by all of the allowed apps.
 
->**Important:**  Each app can load several DLLs, and AppLocker must check each DLL before it is allowed to run. Therefore, creating DLL rules might cause performance problems on some computers. Denying some DLLs from running can also create app compatibility problems. As a result, the DLL rule collection is not enabled by default.
+>**Important:**  Each app can load several DLLs, and AppLocker must check each DLL before it is allowed to run. Therefore, creating DLL rules might cause performance problems on some computers. Denying some DLLs from running can also create app compatibility problems. As a result, the DLL rule collection is not enabled by default.
  
 For info about how to enable the DLL rule collection, see [Enable the DLL rule collection](enable-the-dll-rule-collection.md).
 
@@ -48,4 +37,3 @@ For info about how to enable the DLL rule collection, see [Enable the DLL rule c
 
 - [How AppLocker works](how-applocker-works-techref.md)
 - [Understanding AppLocker default rules](understanding-applocker-default-rules.md)
-

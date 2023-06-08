@@ -20841,6 +20841,81 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/security/operating-system.md",
+      "redirect_url": "/windows/security/operating-system-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/cryptography-certificate-mgmt.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/cryptography-certificate-mgmt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/secure-the-windows-10-boot-process.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/secure-the-windows-10-boot-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/trusted-boot.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/trusted-boot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-account-protection.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-account-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-app-browser-control.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-app-browser-control",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-customize-contact-information",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-device-performance-health.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-device-performance-health",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-device-security.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-device-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-family-options.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-family-options",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-firewall-network-protection.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-firewall-network-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-hide-notifications.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-hide-notifications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-virus-threat-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/windows-defender-security-center",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/security/information-protection/index.md",
       "redirect_url": "/windows/security/encryption-data-protection",
       "redirect_document_id": false

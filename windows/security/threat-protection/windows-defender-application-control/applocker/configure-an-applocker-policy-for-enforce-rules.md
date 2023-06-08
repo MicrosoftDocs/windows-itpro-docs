@@ -1,17 +1,12 @@
 ---
-title: Configure an AppLocker policy for enforce rules 
+title: Configure an AppLocker policy for enforce rules
 description: This topic for IT professionals describes the steps to enable the AppLocker policy enforcement setting.
-ms.assetid: 5dbbb290-a5ae-4f88-82b3-21e95972e66c
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
@@ -19,18 +14,12 @@ ms.technology: itpro-security
 
 # Configure an AppLocker policy for enforce rules
 
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
-
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals describes the steps to enable the AppLocker policy enforcement setting.
 
->**Note:**  When AppLocker policy enforcement is set to **Enforce rules**, rules are enforced for the rule collection and all events are audited.
+>**Note:**  When AppLocker policy enforcement is set to **Enforce rules**, rules are enforced for the rule collection and all events are audited.
  
 For info about how AppLocker policies are applied within a GPO structure, see [Understand AppLocker rules and enforcement setting inheritance in Group Policy](understand-applocker-rules-and-enforcement-setting-inheritance-in-group-policy.md).
 
