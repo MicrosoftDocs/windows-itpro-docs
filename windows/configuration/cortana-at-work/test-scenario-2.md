@@ -13,6 +13,8 @@ ms.technology: itpro-configure
 ---
 
 # Test scenario 2 – Perform a quick search with Cortana at work
+<!--Using include for Cortana in Windows deprecation -->
+[!INCLUDE [Deprecation of Cortana in Windows](./includes/cortana-deprecation.md)]
 
 >[!Important]
 >The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering.
