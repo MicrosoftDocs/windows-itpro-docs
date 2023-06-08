@@ -1,31 +1,16 @@
 ---
-title: The Windows Security app
+title: Windows Security app
 description: The Windows Security app brings together common Windows security features into one place.
-search.product: eADQiWindows 10XVcnh
-ms.prod: windows-client
-ms.localizationpriority: medium
-author: vinaypamnani-msft
-ms.author: vinpa
-ms.reviewer: 
-manager: aaroncz
-ms.technology: itpro-security
-ms.collection: 
-  - highpri
-  - tier2
 ms.date: 12/31/2017
 ms.topic: article
+ms.collection:
+  - highpri
+  - tier2
 ---
 
-# The Windows Security app
-
-**Applies to**
-
-- Windows 10
-- Windows 11
+# Windows Security app
 
 This library describes the Windows Security app, and provides information on configuring certain features, including:
-
-<a id="customize-notifications-from-the-windows-defender-security-center"></a>
 
 - [Showing and customizing contact information on the app and in notifications](wdsc-customize-contact-information.md)
 - [Hiding notifications](wdsc-hide-notifications.md)
@@ -52,7 +37,7 @@ For more information about each section, options for configuring the sections, a
 - [Firewall & network protection](wdsc-firewall-network-protection.md), which has information and access to firewall settings, including Windows Defender Firewall.
 - [App & browser control](wdsc-app-browser-control.md), covering Windows Defender SmartScreen settings and Exploit protection mitigations.
 - [Device security](wdsc-device-security.md), which provides access to built-in device security settings.
-- [Device performance & health](wdsc-device-performance-health.md), which has information about drivers, storage space, and general Windows Update issues.  
+- [Device performance & health](wdsc-device-performance-health.md), which has information about drivers, storage space, and general Windows Update issues.
 - [Family options](wdsc-family-options.md), which include access to parental controls along with tips and information for keeping kids safe online.
 
 > [!NOTE]
@@ -65,9 +50,11 @@ For more information about each section, options for configuring the sections, a
 - Select the icon in the notification area on the taskbar.
 
     ![Screenshot of the icon for the Windows Security app on the Windows task bar.](images/security-center-taskbar.png)
+
 - Search the Start menu for **Windows Security**.
 
     ![Screenshot of the Start menu showing the results of a search for the Windows Security app, the first option with a large shield symbol is selected.](images/security-center-start-menu.png)
+
 - Open an area from Windows **Settings**.
 
     ![Screenshot of Windows Settings showing the different areas available in the Windows Security.](images/settings-windows-defender-security-center-areas.png)
@@ -78,7 +65,7 @@ For more information about each section, options for configuring the sections, a
 ## How the Windows Security app works with Windows security features
 
 > [!IMPORTANT]
-> Microsoft Defender Antivirus  and the Windows Security app use similarly named services for specific purposes.  
+> Microsoft Defender Antivirus and the Windows Security app use similarly named services for specific purposes.
 >
 > The Windows Security app uses the Windows Security Service (*SecurityHealthService* or *Windows Security Health Service*), which in turn utilizes the Windows Security Center Service (*wscsvc*). This service makes sure that the app provides the most up-to-date information about the protection status on the endpoint. This information includes protection offered by third-party antivirus products, Windows Defender Firewall, third-party firewalls, and other security protection.
 >
@@ -86,7 +73,7 @@ For more information about each section, options for configuring the sections, a
 >
 > Microsoft Defender Antivirus will be [disabled automatically when a third-party antivirus product is installed and kept up to date](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 >
-> Disabling the Windows Security Center Service won't disable Microsoft Defender Antivirus or [Windows Defender Firewall](../windows-firewall/windows-firewall-with-advanced-security.md).
+> Disabling the Windows Security Center Service won't disable Microsoft Defender Antivirus or [Windows Defender Firewall](../../network-security/windows-firewall/windows-firewall-with-advanced-security.md).
 
 > [!WARNING]
 > If you disable the Windows Security Center Service, or configure its associated group policy settings to prevent it from starting or running, the Windows Security app may display stale or inaccurate information about any antivirus or firewall products you have installed on the device.

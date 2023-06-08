@@ -1,29 +1,18 @@
 ---
-title: Monitor app usage with AppLocker 
+title: Monitor app usage with AppLocker
 description: This topic for IT professionals describes how to monitor app usage when AppLocker policies are applied.
-ms.assetid: 0516da6e-ebe4-45b4-a97b-31daba96d1cf
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # Monitor app usage with AppLocker
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -75,13 +64,13 @@ Membership in the local **Administrators** group, or equivalent, is the minimum 
 2.  Run the following command to review how many times a file would have been blocked from running if rules were enforced:
 
     ```powershell
-    Get-AppLockerFileInformation –EventLog –EventType Audited –Statistics
+    Get-AppLockerFileInformation -EventLog -EventType Audited -Statistics
     ```
 
 3.  Run the following command to review how many times a file has been allowed to run or prevented from running:
 
     ```powershell
-    Get-AppLockerFileInformation –EventLog –EventType Allowed –Statistics
+    Get-AppLockerFileInformation -EventLog -EventType Allowed -Statistics
     ```
 
 ### <a href="" id="bkmk-applkr-view-log"></a>View the AppLocker Log in Event Viewer

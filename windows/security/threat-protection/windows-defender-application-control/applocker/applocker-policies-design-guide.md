@@ -1,29 +1,18 @@
 ---
-title: AppLocker design guide 
+title: AppLocker design guide
 description: This topic for the IT professional introduces the design and planning steps required to deploy application control policies by using AppLocker.
-ms.assetid: 1c8e4a7b-3164-4eb4-9277-11b1d5a09c7b
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # AppLocker design guide
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -46,6 +35,5 @@ To understand if AppLocker is the correct application control solution for your 
 | [Determine the Group Policy structure and rule enforcement](determine-group-policy-structure-and-rule-enforcement.md) | This overview topic describes the process to follow when you're planning to deploy AppLocker rules. |
 | [Plan for AppLocker policy management](plan-for-applocker-policy-management.md) | This topic describes the decisions you need to make to establish the processes for managing and maintaining AppLocker policies. |
 
- 
+ 
 After careful design and detailed planning, the next step is to deploy AppLocker policies. [AppLocker Deployment Guide](applocker-policies-deployment-guide.md) covers the creation and testing of policies, deploying the enforcement setting, and managing and maintaining the policies.
- 
