@@ -156,9 +156,9 @@ Supported values:
 
 ### Protected client
 
-When Protected Mode is enabled, Sandbox adds a new layer of security boundary by running in an [AppContainer Isolation](/windows/win32/secauthz/appcontainer-isolation) execution environment.
+When Protected Client mode is enabled, Sandbox adds a new layer of security boundary by running inside an [AppContainer Isolation](/windows/win32/secauthz/appcontainer-isolation) execution environment.
 
-The AppContainer Isolation provides isolation of Credentil, Device, File, Network, Process, and Window.
+AppContainer Isolation provides Credential, Device, File, Network, Process, and Window isolation.
 
 `<ProtectedClient>value</ProtectedClient>`
 
@@ -192,7 +192,7 @@ Enables or disables sharing of the host clipboard with the sandbox.
 Supported values:
 
 - *Enable*: Enables sharing of the host clipboard with the sandbox.
-- - *Disable*: Disables clipboard redirection in the sandbox. If this value is set, copy/paste in and out of the sandbox will be restricted.
+- *Disable*: Disables clipboard redirection in the sandbox. If this value is set, copy/paste in and out of the sandbox will be restricted.
 - *Default*: This value is the default value for clipboard redirection. Currently, copy/paste between the host and sandbox are permitted under *Default*.
 
 ### Memory in MB
@@ -305,4 +305,3 @@ $SwapButtons::SwapMouseButton(!([System.Windows.Forms.SystemInformation]::MouseB
   </LogonCommand>
 </Configuration>
 ```
-
