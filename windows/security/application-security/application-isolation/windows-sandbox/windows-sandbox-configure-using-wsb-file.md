@@ -156,14 +156,16 @@ Supported values:
 
 ### Protected client
 
-Applies more security settings to the sandbox Remote Desktop client, decreasing its attack surface.
+When Protected Client mode is enabled, Sandbox adds a new layer of security boundary by running inside an [AppContainer Isolation](/windows/win32/secauthz/appcontainer-isolation) execution environment.
+
+AppContainer Isolation provides Credential, Device, File, Network, Process, and Window isolation.
 
 `<ProtectedClient>value</ProtectedClient>`
 
 Supported values:
 
-- *Enable*: Runs Windows sandbox in Protected Client mode. If this value is set, the sandbox runs with extra security mitigations enabled.
-- *Disable*: Runs the sandbox in standard mode without extra security mitigations.
+- *Enable*: Runs Windows sandbox in Protected Client mode. If this value is set, the Sandbox runs in AppContainer Isolation.
+- *Disable*: Runs the Sandbox in the standard mode without extra security mitigations.
 - *Default*: This value is the default value for Protected Client mode. Currently, this default value denotes that the sandbox doesn't run in Protected Client mode.
 
 > [!NOTE]
