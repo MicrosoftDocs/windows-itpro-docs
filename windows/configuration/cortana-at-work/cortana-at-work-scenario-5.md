@@ -13,6 +13,8 @@ ms.technology: itpro-configure
 ---
 
 # Test scenario 5 - Test scenario 5 – Find out about a person
+<!--Using include for Cortana in Windows deprecation -->
+[!INCLUDE [Deprecation of Cortana in Windows](./includes/cortana-deprecation.md)]
 
 Cortana can help you quickly look up information about someone or the org chart.
 
