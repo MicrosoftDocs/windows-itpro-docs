@@ -22,11 +22,12 @@ ms.date: 12/31/2017
 - Windows 10
 - Windows 11
 
-
-Windows Update for Business is a free service that is available for all premium editions including Windows 10 and Windows 11 Pro, Enterprise, Pro for Workstation, and Education editions. 
-
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
+Windows Update for Business is a free service that is available for the following editions of Windows 10 and Windows 11:
+- Pro, including Pro for Workstations
+- Education
+- Enterprise, including Enterprise LTSC, IoT Enterprise, and IoT Enterprise LTSC
 
 Windows Update for Business enables IT administrators to keep the Windows client devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Windows Update service. You can use Group Policy or Mobile Device Management (MDM) solutions such as Microsoft Intune to configure the Windows Update for Business settings that control how and when devices are updated.
   
@@ -49,7 +50,7 @@ Windows Update for Business enables an IT administrator to receive and manage a 
 
 Windows Update for Business provides management policies for several types of updates to Windows 10 devices:
 
-- **Feature updates:** Previously referred to as "upgrades," feature updates contain not only security and quality revisions, but also significant feature additions and changes. Feature updates are released as soon as they become available.
+- **Feature updates:** Previously referred to as "upgrades," feature updates contain not only security and quality revisions, but also significant feature additions and changes. Feature updates are released as soon as they become available. Feature updates aren't available for LTSC devices.
 - **Quality updates:** Quality updates are traditional operating system updates, typically released on the second Tuesday of each month (though they can be released at any time). These include security, critical, and driver updates.
 - **Driver updates:** Updates for non-Microsoft drivers that are relevant to your devices. Driver updates are on by default, but you can use Windows Update for Business policies to turn them off if you prefer. 
 - **Microsoft product updates**: Updates for other Microsoft products, such as versions of Office that are installed by using Windows Installer (MSI). Versions of Office that are installed by using Click-to-Run can't be updated by using Windows Update for Business. Product updates are off by default. You can turn them on by using Windows Update for Business policies.
@@ -73,7 +74,7 @@ The branch readiness level enables administrators to specify which channel of fe
 
 #### Defer an update
 
-A Windows Update for Business administrator can defer the installation of both feature and quality updates from deploying to devices within a bounded range of time from when those updates are first made available on the Windows Update service. You can use this deferral to allow time to validate deployments as they are pushed to devices. Deferrals work by allowing you to specify the number of days after an update is released before it is offered to a device. That is, if you set a feature update deferral period of 365 days, the device will not install a feature update that has been released for less than 365 days. To defer feature updates, use the **Select when Preview Builds and feature updates are Received** policy.
+A Windows Update for Business administrator can defer the installation of both feature and quality updates from deploying to devices within a bounded range of time from when those updates are first made available on the Windows Update service. You can use this deferral to allow time to validate deployments as they're pushed to devices. Deferrals work by allowing you to specify the number of days after an update is released before it's offered to a device. That is, if you set a feature update deferral period of 365 days, the device won't install a feature update that has been released for less than 365 days. To defer feature updates, use the **Select when Preview Builds and feature updates are Received** policy.
 
 
 |Category  |Maximum deferral period  |

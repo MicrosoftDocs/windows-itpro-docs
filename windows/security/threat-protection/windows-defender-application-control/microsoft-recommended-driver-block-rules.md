@@ -16,7 +16,7 @@ author: jgeurten
 ms.reviewer: jsuther
 ms.author: vinpa
 manager: aaroncz
-ms.date: 02/08/2023
+ms.date: 06/06/2023
 ms.technology: itpro-security
 ms.topic: article
 ---
@@ -100,7 +100,7 @@ To check that the policy was successfully applied on your computer:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
-  <VersionEx>10.0.25860.0</VersionEx>
+  <VersionEx>10.0.25873.0</VersionEx>
   <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
   <Rules>
     <Rule>
@@ -1004,10 +1004,6 @@ To check that the policy was successfully applied on your computer:
     <Deny ID="ID_DENY_RTCORE_16" FriendlyName="RTCore64\3ff50c67d51553c08dcb7c98342f68a0f54ad6658c5346c428bdcd1f185569f6 Hash Sha256" Hash="3C9829A16EB85272B0E1A2917FEFFAAB8DDB23E633B168B389669339A0CEE0B5" />
     <Deny ID="ID_DENY_RTCORE_17" FriendlyName="RTCore64\3ff50c67d51553c08dcb7c98342f68a0f54ad6658c5346c428bdcd1f185569f6 Hash Page Sha1" Hash="060C4D64F67F9300F2DBD09F68B4B591AAAFA698" />
     <Deny ID="ID_DENY_RTCORE_18" FriendlyName="RTCore64\3ff50c67d51553c08dcb7c98342f68a0f54ad6658c5346c428bdcd1f185569f6 Hash Page Sha256" Hash="BF0439DB3DCC00355291FEFF1D31F5B48CD1334DBBA3DAEB761E7084335D40E7" />
-    <Deny ID="ID_DENY_RTCORE_19" FriendlyName="RTCore64\40061b30b1243be76d5283cbc8abfe007e148097d4de7337670ff1536c4c7ba1 Hash Sha1" Hash="8498265D4CA81B83EC1454D9EC013D7A9C0C87BF" />
-    <Deny ID="ID_DENY_RTCORE_1A" FriendlyName="RTCore64\40061b30b1243be76d5283cbc8abfe007e148097d4de7337670ff1536c4c7ba1 Hash Sha256" Hash="606BECED7746CDB684D3A44F41E48713C6BBE5BFB1486C52B5CCA815E99D31B4" />
-    <Deny ID="ID_DENY_RTCORE_1B" FriendlyName="RTCore64\40061b30b1243be76d5283cbc8abfe007e148097d4de7337670ff1536c4c7ba1 Hash Page Sha1" Hash="3B05785D8AD770E4356BC8041606B08BDAB56C99" />
-    <Deny ID="ID_DENY_RTCORE_1C" FriendlyName="RTCore64\40061b30b1243be76d5283cbc8abfe007e148097d4de7337670ff1536c4c7ba1 Hash Page Sha256" Hash="2DC771BED765E9FE8E79171A851BA158B8E84034FE0518A619F47F3450FFA2BC" />
     <Deny ID="ID_DENY_RTCORE_1D" FriendlyName="RTCore64\bea8c6728d57d4b075f372ac82b8134ac8044fe13f533696a58e8864fa3efee3 Hash Sha256" Hash="6279821BF9ECCED596F474C8FC547DAB0BDDBB3AB972390596BD4C5C7B85C685" />
     <Deny ID="ID_DENY_SEMAV6MSR64_SHA1" FriendlyName="semav6msr64.sys Hash Sha1" Hash="E3DBE2AA03847DF621591A4CAD69A5609DE5C237" />
     <Deny ID="ID_DENY_SEMAV6MSR64_SHA256" FriendlyName="semav6msr64.sys Hash Sha256" Hash="EB71A8ECEF692E74AE356E8CB734029B233185EE5C2CCB6CC87CC6B36BEA65CF" />
@@ -1057,7 +1053,7 @@ To check that the policy was successfully applied on your computer:
     <Deny ID="ID_DENY_DBK_32" FriendlyName="Cheat Engine Driver" FileName="dbk32.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_DBK_64" FriendlyName="Cheat Engine Driver" FileName="dbk64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_GDRV" FriendlyName="gdrv.sys" FileName="gdrv.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
-    <Deny ID="ID_DENY_KLMD" FriendlyName="Kaspersky klmd.sys FileRule" FileName="klmd.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
+    <Deny ID="ID_DENY_KLMD" FriendlyName="Kaspersky klmd.sys FileRule" FileName="klmd.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.13.0.10"/>
     <Deny ID="ID_DENY_PCHUNTER_1" FriendlyName="PCHunter Driver" FileName="PCHunter.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_PCHUNTER_2" FriendlyName="PCHunter Driver" FileName="安全专用" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <Deny ID="ID_DENY_PHYMEMX_64" FriendlyName="Phymemx64 Memory Mapping Driver" FileName="phymemx64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
@@ -2857,10 +2853,6 @@ To check that the policy was successfully applied on your computer:
             <FileRuleRef RuleID="ID_DENY_RTCORE_16" />
             <FileRuleRef RuleID="ID_DENY_RTCORE_17" />
             <FileRuleRef RuleID="ID_DENY_RTCORE_18" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_19" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_1A" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_1B" />
-            <FileRuleRef RuleID="ID_DENY_RTCORE_1C" />
             <FileRuleRef RuleID="ID_DENY_RTCORE_1D" />
             <FileRuleRef RuleID="ID_DENY_SUPERBMC_2" />
             <FileRuleRef RuleID="ID_DENY_SUPERBMC_3" />
@@ -2926,7 +2918,7 @@ To check that the policy was successfully applied on your computer:
     </Setting>
     <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
       <Value>
-        <String>10.0.25860.0</String>
+        <String>10.0.25873.0</String>
       </Value>
     </Setting>
   </Settings>

@@ -5441,8 +5441,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/device-security/bitlocker/bitlocker-overview.md",
-      "redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-overview",
+      "source_path": "windows/device-security/bitlocker/index.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/index",
       "redirect_document_id": false
     },
     {
@@ -9836,8 +9836,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/keep-secure/bitlocker-overview.md",
-      "redirect_url": "/windows/device-security/bitlocker/bitlocker-overview",
+      "source_path": "windows/keep-secure/index.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/index",
       "redirect_document_id": false
     },
     {
@@ -20826,6 +20826,96 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings.md",
+      "redirect_url": "/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/available-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-smartscreen/phishing-protection-microsoft-defender-smartscreen.md",
+      "redirect_url": "/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md",
+      "redirect_url": "/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system.md",
+      "redirect_url": "/windows/security/operating-system-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/cryptography-certificate-mgmt.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/cryptography-certificate-mgmt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/secure-the-windows-10-boot-process.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/secure-the-windows-10-boot-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/trusted-boot.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/trusted-boot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-account-protection.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-account-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-app-browser-control.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-app-browser-control",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-customize-contact-information",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-device-performance-health.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-device-performance-health",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-device-security.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-device-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-family-options.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-family-options",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-firewall-network-protection.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-firewall-network-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-hide-notifications.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-hide-notifications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-virus-threat-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/windows-defender-security-center",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/security/information-protection/index.md",
       "redirect_url": "/windows/security/encryption-data-protection",
       "redirect_document_id": false
@@ -21454,6 +21544,226 @@
       "source_path": "windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security.md",
       "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/windows-firewall-with-advanced-security",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "windows/security/cloud.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/user-account-control/how-user-account-control-works.md",
+      "redirect_url": "/windows/security/application-security/application-control/user-account-control/how-it-works",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/user-account-control/user-account-control-group-policy-and-registry-key-settings.md",
+      "redirect_url": "/windows/security/application-security/application-control/user-account-control/settings-and-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/user-account-control/user-account-control-security-policy-settings.md",
+      "redirect_url": "/windows/security/application-security/application-control/user-account-control/settings-and-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/user-account-control/user-account-control-overview.md",
+      "redirect_url": "/windows/security/application-security/application-control/user-account-control",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/configure-s-mime.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/configure-s-mime",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/apps.md",
+      "redirect_url": "/windows/security/application-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/encrypted-hard-drive.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/encrypted-hard-drive",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bcd-settings-and-bitlocker.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bcd-settings-and-bitlocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-basic-deployment.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-basic-deployment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-countermeasures.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-countermeasures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-deployment-comparison.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-deployment-comparison",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-device-encryption-overview-windows-10",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-group-policy-settings.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-group-policy-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-how-to-enable-network-unlock",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-management-for-enterprises.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-management-for-enterprises",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-recovery-guide-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-use-bitlocker-recovery-password-viewer.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-use-bitlocker-recovery-password-viewer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/configure-pde-in-intune.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/configure-pde-in-intune",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/pde-in-intune/intune-disable-arso.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/intune-disable-arso",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/pde-in-intune/intune-disable-hibernation.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/intune-disable-hibernation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/pde-in-intune/intune-disable-memory-dumps.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/intune-disable-memory-dumps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/pde-in-intune/intune-disable-password-connected-standby.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/intune-disable-password-connected-standby",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/pde-in-intune/intune-disable-wer.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/intune-disable-wer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/pde-in-intune/intune-enable-pde.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/intune-enable-pde",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/encryption-data-protection.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/faq-pde.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/faq-pde",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-and-adds-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-and-adds-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-deployment-and-administration-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-deployment-and-administration-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-frequently-asked-question.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-frequently-asked-question",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-key-management-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-key-management-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-network-unlock-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-network-unlock-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-overview-and-requirements-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-overview-and-requirements-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-security-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-security-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-to-go-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-to-go-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-upgrading-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-upgrading-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-using-with-other-programs-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-using-with-other-programs-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-frequently-asked-questions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-overview.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/overview-pde.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/index",
+      "redirect_document_id": false
+    }    
   ]
 }

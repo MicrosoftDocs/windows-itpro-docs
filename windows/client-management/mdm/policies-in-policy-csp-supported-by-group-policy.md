@@ -4,7 +4,7 @@ description: Learn about the policies in Policy CSP supported by Group Policy.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/01/2023
+ms.date: 06/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -362,6 +362,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 
 ## Experience
 
+- [AllowScreenRecorder](policy-csp-experience.md)
 - [AllowSpotlightCollection](policy-csp-experience.md)
 - [AllowThirdPartySuggestionsInWindowsSpotlight](policy-csp-experience.md)
 - [AllowWindowsSpotlight](policy-csp-experience.md)
@@ -517,6 +518,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [DisallowNotificationMirroring](policy-csp-notifications.md)
 - [DisallowTileNotification](policy-csp-notifications.md)
 - [EnableExpandedToastNotifications](policy-csp-notifications.md)
+- [DisableAccountNotifications](policy-csp-notifications.md)
 - [DisallowCloudNotification](policy-csp-notifications.md)
 - [WnsEndpoint](policy-csp-notifications.md)
 

@@ -65,7 +65,7 @@
           href: mcc-isp-support.md
         - name: MCC for ISPs (early preview)
           href: mcc-isp.md
-- name: Content endpoints for Delivery Optimization and Microsoft Connected Cache
+- name: Endpoints for Microsoft Connected Cache content and services
   href: delivery-optimization-endpoints.md 
 
   

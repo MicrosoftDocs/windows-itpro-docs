@@ -1,29 +1,18 @@
 ---
-title: Manage packaged apps with AppLocker 
+title: Manage packaged apps with AppLocker
 description: Learn concepts and lists procedures to help you manage packaged apps with AppLocker as part of your overall application control strategy.
-ms.assetid: 6d0c99e7-0284-4547-a30a-0685a9916650
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # Manage packaged apps with AppLocker
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -38,16 +27,16 @@ With packaged apps, it's possible to control the entire app by using a single Ap
 > [!NOTE]
 > AppLocker supports only publisher rules for packaged apps. All packaged apps must be signed by the software publisher because Windows does not support unsigned packaged apps.
  
-Typically, an app consists of multiple components: the installer that is used to install the app, and one or more exes, dlls, or scripts. With classic Windows apps, not all these components always share common attributes such as the software’s publisher name, product name, and product version. Therefore, AppLocker controls each of these components separately through different rule collections, such as exe, dll, script, and Windows Installer rules. In contrast, all the components of a packaged app share the same publisher name, package name, and package version attributes. Therefore, you can control an entire app with a single rule.
+Typically, an app consists of multiple components: the installer that is used to install the app, and one or more exes, dlls, or scripts. With classic Windows apps, not all these components always share common attributes such as the software's publisher name, product name, and product version. Therefore, AppLocker controls each of these components separately through different rule collections, such as exe, dll, script, and Windows Installer rules. In contrast, all the components of a packaged app share the same publisher name, package name, and package version attributes. Therefore, you can control an entire app with a single rule.
 
 ### <a href="" id="bkmk-compareclassicmetro"></a>Comparing classic Windows apps and packaged apps
 
-AppLocker policies for packaged apps can only be applied to apps installed on computers running at least Windows Server 2012 or Windows 8, but classic Windows apps can be controlled on devices running at least Windows Server
-2008 R2 or Windows 7. The rules for classic Windows apps and packaged apps can be enforced in tandem. The differences between packaged apps and classic Windows apps that you should consider include:
+AppLocker policies for packaged apps can only be applied to apps installed on computers running at least Windows Server 2012 or Windows 8, but classic Windows apps can be controlled on devices running at least Windows Server
+2008 R2 or Windows 7. The rules for classic Windows apps and packaged apps can be enforced in tandem. The differences between packaged apps and classic Windows apps that you should consider include:
 
--   **Installing the apps**   All packaged apps can be installed by a standard user, whereas many classic Windows apps require administrative privileges to install. In an environment where most of the users are standard users, you might not have numerous exe rules (because classic Windows apps require administrative privileges to install), but you might want to have more explicit policies for packaged apps.
--   **Changing the system state**   Classic Windows apps can be written to change the system state if they're run with administrative privileges. Most packaged apps can't change the system state because they run with limited privileges. When you design your AppLocker policies, it's important to understand whether an app that you're allowing can make system-wide changes.
--   **Acquiring the apps**   Packaged apps can be acquired through the Store, or by loading using Windows PowerShell cmdlets (which requires a special enterprise license). Classic Windows apps can be acquired through traditional means.
+-   **Installing the apps**   All packaged apps can be installed by a standard user, whereas many classic Windows apps require administrative privileges to install. In an environment where most of the users are standard users, you might not have numerous exe rules (because classic Windows apps require administrative privileges to install), but you might want to have more explicit policies for packaged apps.
+-   **Changing the system state**   Classic Windows apps can be written to change the system state if they're run with administrative privileges. Most packaged apps can't change the system state because they run with limited privileges. When you design your AppLocker policies, it's important to understand whether an app that you're allowing can make system-wide changes.
+-   **Acquiring the apps**   Packaged apps can be acquired through the Store, or by loading using Windows PowerShell cmdlets (which requires a special enterprise license). Classic Windows apps can be acquired through traditional means.
 
 AppLocker uses different rule collections to control packaged apps and classic Windows apps. You have the choice to control one type, the other type, or both.
 
@@ -60,7 +49,7 @@ For more info about packaged apps, see [Packaged apps and packaged app installer
 You can use two methods to create an inventory of packaged apps on a computer: the AppLocker console or the **Get-AppxPackage** Windows PowerShell cmdlet.
 
 > [!NOTE]
-> Not all packaged apps are listed in AppLocker’s application inventory wizard. Certain app packages are framework packages that are leveraged by other apps. By themselves, these packages cannot do anything, but blocking such packages can inadvertently cause failure for apps that you want to allow. Instead, you can create Allow or Deny rules for the packaged apps that use these framework packages. The AppLocker user interface deliberately filters out all the packages that are registered as framework packages. For info about how to create an inventory list, see [Create list of apps deployed to each business group](create-list-of-applications-deployed-to-each-business-group.md).
+> Not all packaged apps are listed in AppLocker's application inventory wizard. Certain app packages are framework packages that are leveraged by other apps. By themselves, these packages cannot do anything, but blocking such packages can inadvertently cause failure for apps that you want to allow. Instead, you can create Allow or Deny rules for the packaged apps that use these framework packages. The AppLocker user interface deliberately filters out all the packages that are registered as framework packages. For info about how to create an inventory list, see [Create list of apps deployed to each business group](create-list-of-applications-deployed-to-each-business-group.md).
  
 For info about how to use the **Get-AppxPackage** Windows PowerShell cmdlet, see the [AppLocker PowerShell Command Reference](/powershell/module/applocker/).
 
