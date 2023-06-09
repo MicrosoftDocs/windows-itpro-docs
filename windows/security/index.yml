@@ -57,13 +57,13 @@ landingContent:
       - linkListType: overview
         links:
         - text: Overview
-          url: operating-system.md
+          url: operating-system-security/index.md
       - linkListType: concept
         links:
-        - text: System security
-          url: trusted-boot.md
+        - text: Trusted boot
+          url: operating-system-security\system-security\trusted-boot.md
         - text: Encryption and data protection
-          url: encryption-data-protection.md
+          url: operating-system-security/data-protection/index.md
         - text: Windows security baselines
           url: threat-protection/windows-security-configuration-framework/windows-security-baselines.md
         - text: Virtual private network guide
@@ -136,7 +136,7 @@ landingContent:
         - text: OneDrive
           url: /onedrive/onedrive
         - text: Family safety
-          url: threat-protection/windows-defender-security-center/wdsc-family-options.md
+          url: operating-system-security\system-security\windows-defender-security-center\wdsc-family-options.md
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)

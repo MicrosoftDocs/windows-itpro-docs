@@ -4,7 +4,7 @@ description: Learn more about the ADMX_OfflineFiles Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 06/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1347,9 +1347,8 @@ This policy setting prevents users from making network files and folders availab
 
 - If you disable or don't configure this policy setting, users can manually specify files and folders that they want to make available offline.
 
-Note:
-
-This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence.
+> [!NOTE]
+> This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence.
 
 The "Make Available Offline" command is called "Always available offline" on computers running Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, Windows 7, or Windows Vista.
 <!-- Pol_NoMakeAvailableOffline_1-Description-End -->
@@ -1412,9 +1411,8 @@ This policy setting prevents users from making network files and folders availab
 
 - If you disable or don't configure this policy setting, users can manually specify files and folders that they want to make available offline.
 
-Note:
-
-This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence.
+> [!NOTE]
+> This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence.
 
 The "Make Available Offline" command is called "Always available offline" on computers running Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, Windows 7, or Windows Vista.
 <!-- Pol_NoMakeAvailableOffline_2-Description-End -->
@@ -1479,9 +1477,8 @@ This policy setting allows you to manage a list of files and folders for which y
 
 - If you don't configure this policy setting, the "Make Available Offline" command is available for all files and folders.
 
-Note:
-
-This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy settings are combined, and the "Make Available Offline" command is unavailable for all specified files and folders.
+> [!NOTE]
+> This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy settings are combined, and the "Make Available Offline" command is unavailable for all specified files and folders.
 
 The "Make Available Offline" command is called "Always available offline" on computers running Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, Windows 7, or Windows Vista.
 
@@ -1549,9 +1546,8 @@ This policy setting allows you to manage a list of files and folders for which y
 
 - If you don't configure this policy setting, the "Make Available Offline" command is available for all files and folders.
 
-Note:
-
-This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy settings are combined, and the "Make Available Offline" command is unavailable for all specified files and folders.
+> [!NOTE]
+> This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy settings are combined, and the "Make Available Offline" command is unavailable for all specified files and folders.
 
 The "Make Available Offline" command is called "Always available offline" on computers running Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, Windows 7, or Windows Vista.
 

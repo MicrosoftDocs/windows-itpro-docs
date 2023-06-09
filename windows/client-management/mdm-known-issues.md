@@ -68,7 +68,7 @@ EAP XML must be updated with relevant information for your environment. This tas
 - For Wi-Fi, look for the &lt;EAPConfig&gt; section of your current WLAN Profile XML (This detail is what you specify for the WLanXml node in the Wi-Fi CSP). Within these tags, you'll find the complete EAP configuration. Replace the section under &lt;EAPConfig&gt; with your updated XML and update your Wi-Fi profile. You might need to refer to your MDM's guidance on how to deploy a new Wi-Fi profile.
 - For VPN, EAP Configuration is a separate field in the MDM Configuration. Work with your MDM provider to identify and update the appropriate Field.
 
-For information about EAP Settings, see <https://technet.microsoft.com/library/hh945104.aspx#BKMK_Cfg_cert_Selct>.
+For information about EAP Settings, see [Extensible Authentication Protocol (EAP) for network access](/windows-server/networking/technologies/extensible-authentication-protocol/network-access).
 
 For information about generating an EAP XML, see [EAP configuration](mdm/eap-configuration.md).
 
@@ -225,7 +225,7 @@ Alternatively you can use the following procedure to create an EAP Configuration
 1. Continue following the procedure in [EAP configuration](mdm/eap-configuration.md) from Step 9 to get an EAP TLS profile with appropriate filtering.
 
 > [!NOTE]
-> You can also set all the other applicable EAP Properties through this UI as well. A guide to what these properties mean can be found in [Extensible Authentication Protocol (EAP) Settings for Network Access](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh945104(v=ws.11)).
+> You can also set all the other applicable EAP Properties through this UI as well. A guide to what these properties mean can be found in [Extensible Authentication Protocol (EAP) for network access](/windows-server/networking/technologies/extensible-authentication-protocol/network-access).
 
 ## MDM client will immediately check in with the MDM server after client renews WNS channel URI
 

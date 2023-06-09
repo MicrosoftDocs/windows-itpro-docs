@@ -1,14 +1,10 @@
 ---
-title: Working with AppLocker rules 
+title: Working with AppLocker rules
 description: This topic for IT professionals describes AppLocker rule types and how to work with them for your application control policies.
-ms.assetid: 3966b35b-f2da-4371-8b5f-aec031db6bc9
 ms.reviewer: 
 manager: aaroncz
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 author: vinaypamnani-msft
 ms.localizationpriority: medium
 msauthor: v-anbic
@@ -18,12 +14,6 @@ ms.topic: conceptual
 ---
 
 # Working with AppLocker rules
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -67,7 +57,7 @@ The AppLocker console is organized into rule collections, which are executable f
 | Packaged apps and packaged app installers | .appx| 
 | DLL files | .dll<br/>.ocx| 
  
->**Important:**  If you use DLL rules, you need to create an allow rule for each DLL that is used by all of the allowed apps.
+>**Important:**  If you use DLL rules, you need to create an allow rule for each DLL that is used by all of the allowed apps.
 
 When DLL rules are used, AppLocker must check each DLL that an application loads. Therefore, users may experience a reduction in performance if DLL rules are used.
 
@@ -93,7 +83,7 @@ This condition identifies an app based on its digital signature and extended att
  
 When you select a reference file for a publisher condition, the wizard creates a rule that specifies the publisher, product, file name, and version number. You can make the rule more generic by moving up the slider or by using a wildcard character (\*) in the product, file name, or version number fields.
 
->**Note:**  To enter custom values for any of the fields of a publisher rule condition in the Create Rules Wizard, you must select the **Use custom values** check box. When this check box is selected, you cannot use the slider.
+>**Note:**  To enter custom values for any of the fields of a publisher rule condition in the Create Rules Wizard, you must select the **Use custom values** check box. When this check box is selected, you cannot use the slider.
  
 The **File version** and **Package version** control whether a user can run a specific version, earlier versions, or later versions of the app. You can choose a version number and then configure the following options:
 
@@ -103,8 +93,7 @@ The **File version** and **Package version** control whether a user can run a sp
 
 The following table describes how a publisher condition is applied.
 
-
-| Option | The publisher condition allows or denies… |
+| Option | The publisher condition allows or denies... |
 |---|---|
 | **All signed files** | All files that are signed by any publisher.| 
 | **Publisher only**| All files that are signed by the named publisher.| 
@@ -132,7 +121,7 @@ The following table details these path variables.
 | Removable media (for example, a CD or DVD)| %REMOVABLE%| |
 | Removable storage device (for example, a USB flash drive)| %HOT% | |
  
->**Important:**  Because a path rule condition can be configured to include a large number of folders and files, path conditions should be carefully planned. For example, if an allow rule with a path condition includes a folder location that non-administrators are allowed to write data into, a user can copy unapproved files into that location and run the files. For this reason, it is a best practice to not create path conditions for standard user writable locations, such as a user profile.
+>**Important:**  Because a path rule condition can be configured to include a large number of folders and files, path conditions should be carefully planned. For example, if an allow rule with a path condition includes a folder location that non-administrators are allowed to write data into, a user can copy unapproved files into that location and run the files. For this reason, it is a best practice to not create path conditions for standard user writable locations, such as a user profile.
  
 ### <a href="" id="bkmk-filehash"></a>File hash
 
@@ -202,7 +191,7 @@ Membership in the local **Administrators** group, or equivalent, is the minimum 
 3.  In the console tree, double-click **Application Control Policies**, right-click **AppLocker**, and then click **Properties**.
 4.  Click the **Advanced** tab, select the **Enable the DLL rule collection** check box, and then click **OK**.
 
-    >**Important:**  Before you enforce DLL rules, make sure that there are allow rules for each DLL that is used by any of the allowed apps.
+    >**Important:**  Before you enforce DLL rules, make sure that there are allow rules for each DLL that is used by any of the allowed apps.
      
 ## AppLocker wizards
 
@@ -221,7 +210,7 @@ You can create rules by using two AppLocker wizards:
     -   **A publisher condition with a specific product version set** If you create a publisher rule condition that uses the **Exactly** version option, the rule can't persist if a new version of the app is installed. A new publisher condition must be created, or the version must be edited in the rule to be made less specific.
 
 -   If an app isn't digitally signed, you can't use a publisher rule condition for that app.
--   AppLocker rules can't be used to manage computers running a Windows operating system earlier than Windows Server 2008 R2 or Windows 7. Software Restriction Policies must be used instead. If AppLocker rules are defined in a Group Policy Object (GPO), only those rules are applied. To ensure interoperability between Software Restriction Policies rules and AppLocker rules, define Software Restriction Policies rules and AppLocker rules in different GPOs.
+-   AppLocker rules can't be used to manage computers running a Windows operating system earlier than Windows Server 2008 R2 or Windows 7. Software Restriction Policies must be used instead. If AppLocker rules are defined in a Group Policy Object (GPO), only those rules are applied. To ensure interoperability between Software Restriction Policies rules and AppLocker rules, define Software Restriction Policies rules and AppLocker rules in different GPOs.
 -   The packaged apps and packaged apps installer rule collection is available on devices running at least Windows Server 2012 and Windows 8.
 -   When the rules for the executable rule collection are enforced and the packaged apps and packaged app installers rule collection doesn't contain any rules, no packaged apps and packaged app installers are allowed to run. In order to allow any packaged apps and packaged app installers, you must create rules for the packaged apps and packaged app installers rule collection.
 -   When an AppLocker rule collection is set to **Audit only**, the rules aren't enforced. When a user runs an application that is included in the rule, the app is opened and runs normally, and information about that app is added to the AppLocker event log.

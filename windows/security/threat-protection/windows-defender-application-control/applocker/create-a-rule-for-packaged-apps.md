@@ -1,29 +1,18 @@
 ---
-title: Create a rule for packaged apps 
+title: Create a rule for packaged apps
 description: This article for IT professionals shows how to create an AppLocker rule for packaged apps with a publisher condition.
-ms.assetid: e4ffd400-7860-47b3-9118-0e6853c3dfa0
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # Create a rule for packaged apps
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -63,7 +52,7 @@ You can perform this task by using the Group Policy Management Console for an Ap
     |Applies to a specific **Publisher** | This setting scopes the rule to all apps published by a particular publisher. | You want to allow all your users to install apps published by the publisher of Microsoft.BingMaps. You could select Microsoft.BingMaps as a reference and choose this rule scope. |
     |Applies to a **Package name** | This setting scopes the rule to all packages that share the publisher name and package name as the reference file. | You want to allow your Sales group to install any version of the Microsoft.BingMaps app. You could select the Microsoft.BingMaps app as a reference and choose this rule scope. |
     |Applies to a **Package version** | This setting scopes the rule to a particular version of the package. | You want to be selective in what you allow. You don't want to implicitly trust all future updates of the Microsoft.BingMaps app. You can limit the scope of your rule to the version of the app currently installed on your reference computer. |
-    |Applying custom values to the rule | Selecting the **Use custom values** check box allows you to adjust the scope fields for your particular circumstance. | You want to allow users to install all *Microsoft.Bing* applications, which include Microsoft.BingMaps, Microsoft.BingWeather, Microsoft.BingMoney. You can choose the Microsoft.BingMaps as a reference, select the **Use custom values** check box and edit the package name field by adding “Microsoft.Bing*” as the Package name. |
+    |Applying custom values to the rule | Selecting the **Use custom values** check box allows you to adjust the scope fields for your particular circumstance. | You want to allow users to install all *Microsoft.Bing* applications, which include Microsoft.BingMaps, Microsoft.BingWeather, Microsoft.BingMoney. You can choose the Microsoft.BingMaps as a reference, select the **Use custom values** check box and edit the package name field by adding "Microsoft.Bing*" as the Package name. |
 
 6.  Select **Next**.
 7.  (Optional) On the **Exceptions** page, specify conditions by which to exclude files from being affected by the rule. These conditions allow you to add exceptions based on the same rule reference and rule scope as you set before. Select **Next**.
