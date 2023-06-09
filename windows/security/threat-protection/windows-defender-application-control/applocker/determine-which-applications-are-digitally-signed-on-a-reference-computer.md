@@ -1,29 +1,18 @@
 ---
-title: Find digitally signed apps on a reference device 
+title: Find digitally signed apps on a reference device
 description: This topic for the IT professional describes how to use AppLocker logs and tools to determine which applications are digitally signed.
-ms.assetid: 24609a6b-fdcb-4083-b234-73e23ff8bcb8
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # Determine which apps are digitally signed on a reference device
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -46,5 +35,3 @@ For command parameters, syntax, and examples, see [Get-AppLockerFileInformation]
 ## Related topics
 
 - [Use a reference device to create and maintain AppLocker policies](use-a-reference-computer-to-create-and-maintain-applocker-policies.md)
- 
- 

@@ -24,10 +24,10 @@ More information about this change can be found on the [Microsoft Security Guida
 
 Any version of Windows baseline before Windows 10 1703 can still be downloaded using SCM. Any future versions of Windows baseline will be available through SCT. See the version matrix in this article to see if your version of Windows baseline is available on SCT.
 
--   [SCM 4.0 Download](/previous-versions/tn-archive/cc936627(v=technet.10))
--   [SCM Frequently Asked Questions (FAQ)](https://social.technet.microsoft.com/wiki/contents/articles/1836.microsoft-security-compliance-manager-scm-frequently-asked-questions-faq.aspx)
--   [SCM Release Notes](https://social.technet.microsoft.com/wiki/contents/articles/1864.microsoft-security-compliance-manager-scm-release-notes.aspx)
--   [SCM baseline download help](https://social.technet.microsoft.com/wiki/contents/articles/1865.microsoft-security-compliance-manager-scm-baseline-download-help.aspx)
+- [SCM 4.0 Download](/previous-versions/tn-archive/cc936627(v=technet.10))
+- [SCM Frequently Asked Questions (FAQ)](https://social.technet.microsoft.com/wiki/contents/articles/1836.microsoft-security-compliance-manager-scm-frequently-asked-questions-faq.aspx)
+- [SCM Release Notes](https://social.technet.microsoft.com/wiki/contents/articles/1864.microsoft-security-compliance-manager-scm-release-notes.aspx)
+- [SCM baseline download help](https://social.technet.microsoft.com/wiki/contents/articles/1865.microsoft-security-compliance-manager-scm-baseline-download-help.aspx)
 
 **What file formats are supported by the new SCT?**
 
@@ -45,41 +45,31 @@ No. A potential alternative is Desired State Configuration (DSC), a feature of t
 
 No. SCM supported only SCAP 1.0, which wasn't updated as SCAP evolved. The new toolkit likewise doesn't include SCAP support.
 
-<br />
-
 ## Version Matrix
 
-**Client Versions**
+**Client Versions**:
 
 | Name | Build | Baseline Release Date | Security Tools |
-| ---- | ----- | --------------------- | -------------- |
-| Windows 11 | [22H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/windows-11-version-22h2-security-baseline/ba-p/3632520) <br> | September 2022<br>|[SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
-| Windows 10 | [22H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/windows-10-version-22h2-security-baseline/ba-p/3655724) <br> [21H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-windows-10-version-21h2/ba-p/3042703) <br> [20H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-and-windows-server/ba-p/1999393) <br> [1809](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-v1809-and-windows-server/ba-p/701082) <br> [1607](/archive/blogs/secguide/security-baseline-for-windows-10-v1607-anniversary-edition-and-windows-server-2016) <br>[1507](/archive/blogs/secguide/security-baseline-for-windows-10-v1507-build-10240-th1-ltsb-update)| October 2022<br>December 2021<br>December 2020<br>October 2018<br>October 2016 <br>January 2016 |[SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
-Windows 8.1 |[9600 (April Update)](/archive/blogs/secguide/security-baselines-for-windows-8-1-windows-server-2012-r2-and-internet-explorer-11-final)| October 2013| [SCM 4.0](/previous-versions/tn-archive/cc936627(v=technet.10)) |
+|--|--|--|--|
+| Windows 11 | [22H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/windows-11-version-22h2-security-baseline/ba-p/3632520) <br> | September 2022<br> | [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
+| Windows 10 | [22H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/windows-10-version-22h2-security-baseline/ba-p/3655724) <br> [21H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-windows-10-version-21h2/ba-p/3042703) <br> [20H2](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-and-windows-server/ba-p/1999393) <br> [1809](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-v1809-and-windows-server/ba-p/701082) <br> [1607](/archive/blogs/secguide/security-baseline-for-windows-10-v1607-anniversary-edition-and-windows-server-2016) <br>[1507](/archive/blogs/secguide/security-baseline-for-windows-10-v1507-build-10240-th1-ltsb-update) | October 2022<br>December 2021<br>December 2020<br>October 2018<br>October 2016 <br>January 2016 | [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
 
-<br />
+**Server Versions**:
 
-**Server Versions**
+| Name                   | Build                                                                                                                                                       | Baseline Release Date | Security Tools                                                      |
+|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|---------------------------------------------------------------------|
+| Windows Server 2022    | [SecGuide](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/windows-server-2022-security-baseline/ba-p/2724685)                          | September 2021        | [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
+| Windows Server 2019    | [SecGuide](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-v1809-and-windows-server/ba-p/701082) | November 2018         | [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
+| Windows Server 2016    | [SecGuide](/archive/blogs/secguide/security-baseline-for-windows-10-v1607-anniversary-edition-and-windows-server-2016)                                      | October 2016          | [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
+| Windows Server 2012 R2 | [SecGuide](/archive/blogs/secguide/security-baseline-for-windows-10-v1607-anniversary-edition-and-windows-server-2016)                                      | August 2014           | [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
 
-| Name | Build | Baseline Release Date | Security Tools |
-|---|---|---|---|
-|Windows Server 2022 | [SecGuide](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/windows-server-2022-security-baseline/ba-p/2724685) |September 2021 |[SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
-|Windows Server 2019 | [SecGuide](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-final-for-windows-10-v1809-and-windows-server/ba-p/701082) |November 2018 |[SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
-|Windows Server 2016 | [SecGuide](/archive/blogs/secguide/security-baseline-for-windows-10-v1607-anniversary-edition-and-windows-server-2016) |October 2016 |[SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
-|Windows Server 2012 R2|[SecGuide](/archive/blogs/secguide/security-baseline-for-windows-10-v1607-anniversary-edition-and-windows-server-2016)|August 2014 | [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319)|
+**Microsoft Products**:
 
-<br />
+| Name                                            | Details                                                                                                                                                    | Security Tools                                                      |
+|-------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| Microsoft 365 Apps for enterprise, version 2206 | [SecGuide](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-365-apps-for-enterprise-v2206/ba-p/3502714) | [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
+| Microsoft Edge, version 107                     | [SecGuide](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-v98/ba-p/3165443)                      | [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319) |
 
-**Microsoft Products**
-
-
-|           Name            |                                                                            Details                                                                            |                               Security Tools                                |
-|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-|   Microsoft 365 Apps for enterprise, version 2206    | [SecGuide](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-365-apps-for-enterprise-v2206/ba-p/3502714) |     [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319)     |
-|   Microsoft Edge, version 107    | [SecGuide](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/security-baseline-for-microsoft-edge-v98/ba-p/3165443) |     [SCT 1.0](https://www.microsoft.com/download/details.aspx?id=55319)     |
-
-<br />
-
-## See also
+## Related articles
 
 [Windows security baselines](windows-security-baselines.md)

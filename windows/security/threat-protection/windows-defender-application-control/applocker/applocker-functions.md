@@ -1,29 +1,18 @@
 ---
-title: AppLocker functions 
+title: AppLocker functions
 description: This article for the IT professional lists the functions and security levels for the Software Restriction Policies (SRP) and AppLocker features.
-ms.assetid: bf704198-9e74-4731-8c5a-ee0512df34d2
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # AppLocker functions
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -32,7 +21,7 @@ This article for the IT professional lists the functions and security levels for
 
 ## Functions
 
-Here are the SRP functions beginning with Windows Server 2003 and AppLocker functions beginning with Windows Server 2008 R2:
+Here are the SRP functions beginning with Windows Server 2003 and AppLocker functions beginning with Windows Server 2008 R2:
 
 -   [SaferGetPolicyInformation Function](/windows/win32/api/winsafer/nf-winsafer-safergetpolicyinformation)
 -   [SaferCreateLevel Function](/windows/win32/api/winsafer/nf-winsafer-safercreatelevel)
@@ -61,4 +50,3 @@ AppLocker and SRP use the security level IDs to specify the access requirements 
 ## Related articles
 
 - [AppLocker technical reference](applocker-technical-reference.md)
- 

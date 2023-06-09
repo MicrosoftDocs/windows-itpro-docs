@@ -77,6 +77,8 @@
         "application-security/application-isolation/windows-sandbox/**/*.md": "vinaypamnani-msft",
         "identity-protection/**/*.md": "paolomatarazzo",
         "identity-protection/**/*.yml": "paolomatarazzo",
+        "operating-system-security/**/*.md": "vinaypamnani-msft",
+        "operating-system-security/**/*.yml": "vinaypamnani-msft",
         "operating-system-security/data-protection/**/*.md": "paolomatarazzo",
         "operating-system-security/data-protection/**/*.yml": "paolomatarazzo",
         "operating-system-security/network-security/**/*.md": "paolomatarazzo",
@@ -90,6 +92,8 @@
         "application-security/application-isolation/windows-sandbox/**/*.md": "vinpa",
         "identity-protection/**/*.md": "paoloma",
         "identity-protection/**/*.yml": "paoloma",
+        "operating-system-security/**/*.md": "vinpa",
+        "operating-system-security/**/*.yml": "vinpa",
         "operating-system-security/data-protection/**/*.md": "paoloma",
         "operating-system-security/data-protection/**/*.yml": "paoloma",
         "operating-system-security/network-security/**/*.md": "paoloma",
@@ -98,6 +102,13 @@
         "operating-system-security/network-security/windows-firewall/*.yml": "nganguly"
       },
       "appliesto": {
+        "threat-protection/windows-defender-application-control/applocker/*.md": [
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2022</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2019</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
+        ],
         "application-security/application-isolation/windows-sandbox/**/*.md": [
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
@@ -133,6 +144,10 @@
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2022</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2019</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
+        ],
+        "operating-system-security/**/*.md": [
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
         ],
         "operating-system-security/data-protection/**/*.md": [
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
