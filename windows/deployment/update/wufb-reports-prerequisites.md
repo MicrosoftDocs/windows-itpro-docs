@@ -6,7 +6,7 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.topic: article
-ms.date: 04/26/2023
+ms.date: 06/09/2023
 ms.technology: itpro-updates
 ---
 
@@ -64,7 +64,8 @@ Device names don't appear in Windows Update for Business reports unless you indi
 
 
 > [!TIP]
-> Windows Update for Business reports uses the [services configuration](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#bkmk-svccfg), also called OneSettings. Disabling the services configuration can cause some of the data from clients to be missing in Windows Update for Business reports. 
+> Windows Update for Business reports uses [services configuration](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#bkmk-svccfg), also called OneSettings. Disabling the services configuration can cause some of the client data to be incorrect or missing in reports. For more information, see the [DisableOneSettingsDownloads](/windows/client-management/mdm/policy-csp-system#disableonesettingsdownloads) policy settings.
+
 
 Microsoft is committed to providing you with effective controls over your data and ongoing transparency into our data handling practices.  For more information about data handling and privacy for Windows diagnostic data, see [Configure Windows diagnostic data in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization) and [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#services-that-rely-on-enhanced-diagnostic-data).
 
