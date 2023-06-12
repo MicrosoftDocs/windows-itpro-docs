@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Application Guard (Windows 10 or Windows 11)
+title: Microsoft Defender Application Guard 
 description: Learn about Microsoft Defender Application Guard and how it helps combat malicious content and malware out on the Internet.
 ms.prod: windows-client
 ms.mktglfcycl: manage
@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.author: vinpa
-ms.date: 09/09/2021
+ms.date: 05/01/2023
 ms.reviewer: 
 manager: aaroncz
 ms.custom: asr
@@ -26,14 +26,13 @@ ms.topic: conceptual
 - Windows 10
 - Windows 11
 
-Microsoft Defender Application Guard (Application Guard) is designed to help prevent old and newly emerging attacks to help keep employees productive. Using our unique hardware isolation approach, our goal is to destroy the playbook that attackers use by making current attack methods obsolete.
+Microsoft Defender Application Guard (MDAG) is designed to help prevent old and newly emerging attacks to help keep employees productive. Using our unique hardware isolation approach, our goal is to destroy the playbook that attackers use by making current attack methods obsolete.
 
 ## What is Application Guard and how does it work?
 
 For Microsoft Edge, Application Guard helps to isolate enterprise-defined untrusted sites, protecting your company while your employees browse the Internet. As an enterprise administrator, you define what is among trusted web sites, cloud resources, and internal networks. Everything not on your list is considered untrusted. If an employee goes to an untrusted site through either Microsoft Edge or Internet Explorer, Microsoft Edge opens the site in an isolated Hyper-V-enabled container.
 
 For Microsoft Office, Application Guard helps prevents untrusted Word, PowerPoint and Excel files from accessing trusted resources. Application Guard opens untrusted files in an isolated Hyper-V-enabled container. The isolated Hyper-V container is separate from the host operating system. This container isolation means that if the untrusted site or file turns out to be malicious, the host device is protected, and the attacker can't get to your enterprise data. For example, this approach makes the isolated container anonymous, so an attacker can't get to your employee's enterprise credentials.
-
 
 ![Hardware isolation diagram.](images/appguard-hardware-isolation.png)
 
@@ -49,6 +48,10 @@ Application Guard has been created to target several types of devices:
 
 - **Personal devices**. These personally owned desktops or mobile laptops aren't domain-joined or managed by an organization. The user is an admin on the device and uses a high-bandwidth wireless personal network while at home or a comparable public network while outside.
 
+[!INCLUDE [microsoft-defender-application-guard-mdag-for-edge-standalone-mode](../../../../includes/licensing/microsoft-defender-application-guard-mdag-for-edge-standalone-mode.md)]
+
+For more information about Microsoft Defender Application Guard (MDAG) for Edge enterprise mode, [Configure Microsoft Defender Application Guard policy settings.](/windows/security/threat-protection/microsoft-defender-application-guard/configure-md-app-guard)
+
 ## Related articles
 
 |Article |Description |
@@ -61,3 +64,4 @@ Application Guard has been created to target several types of devices:
 | [Microsoft Defender Application Guard for Microsoft Office](/microsoft-365/security/office-365-security/install-app-guard) | Describes Application Guard for Microsoft Office, including minimum hardware requirements, configuration, and a troubleshooting guide |
 |[Frequently asked questions - Microsoft Defender Application Guard](faq-md-app-guard.yml)|Provides answers to frequently asked questions about Application Guard features, integration with the Windows operating system, and general configuration.|
 |[Use a network boundary to add trusted sites on Windows devices in Microsoft Intune](/mem/intune/configuration/network-boundary-windows)|Network boundary, a feature that helps you protect your environment from sites that aren't trusted by your organization.|
+

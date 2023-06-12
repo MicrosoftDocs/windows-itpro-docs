@@ -1,5 +1,5 @@
 ---
-title: 4766(F) An attempt to add SID History to an account failed. (Windows 10)
+title: 4766(F) An attempt to add SID History to an account failed. 
 description: Describes security event 4766(F) An attempt to add SID History to an account failed.
 ms.pagetype: security
 ms.prod: windows-client

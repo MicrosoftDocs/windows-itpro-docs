@@ -1,29 +1,18 @@
 ---
-title: Plan for AppLocker policy management (Windows)
+title: Plan for AppLocker policy management
 description: This topic describes the decisions you need to make to establish the processes for managing and maintaining AppLocker policies.
-ms.assetid: dccc196f-6ae0-4ae4-853a-a3312b18751b
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # Plan for AppLocker policy management
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -91,7 +80,7 @@ You can edit an AppLocker policy by adding, changing, or removing rules. However
 
 **New version of a supported app**
 
-When a new version of an app is deployed in the organization, you need to determine whether to continue to support the previous version of that app. To add the new version, you might only need to create a new rule for each file that is associated with the app. If you're using publisher conditions and the version isn't specified, then the existing rule or rules might be sufficient to allow the updated file to run. You must ensure, however, that the updated app hasn't altered the file names or added files to support new functionality. If so, then you must modify the existing rules or create new rules. To continue to reuse a publisher-based rule without a specific file version, you must also ensure that the file's digital signature is still identical to the previous version—the publisher, product name, and file name (if configured in your rule) must all match for the rule to be correctly applied.
+When a new version of an app is deployed in the organization, you need to determine whether to continue to support the previous version of that app. To add the new version, you might only need to create a new rule for each file that is associated with the app. If you're using publisher conditions and the version isn't specified, then the existing rule or rules might be sufficient to allow the updated file to run. You must ensure, however, that the updated app hasn't altered the file names or added files to support new functionality. If so, then you must modify the existing rules or create new rules. To continue to reuse a publisher-based rule without a specific file version, you must also ensure that the file's digital signature is still identical to the previous version-the publisher, product name, and file name (if configured in your rule) must all match for the rule to be correctly applied.
 
 To determine whether a file has been modified during an app update, review the publisher's release details provided with the update package. You can also review the publisher's web page to retrieve this information. Each file can also be inspected to determine the version.
 
@@ -149,7 +138,7 @@ The following table contains the added sample data that was collected when deter
 ||||Windows files|C:\Windows|Create a path exception to the default rule to exclude \Windows\Temp|Allow||Help desk|
 |Human Resources|HR-All|Yes|Check Payout|C:\Program Files\Woodgrove\HR\Checkcut.exe|File is signed; create a publisher condition|Allow|HR-AppLockerHRRules|Web help|
 ||||Time Sheet Organizer|C:\Program Files\Woodgrove\HR\Timesheet.exe|File isn't signed; create a file hash condition|Allow||Web help|
-||||Internet Explorer 7|C:\Program Files\Internet Explorer</p>|File is signed; create a publisher condition|Deny||Web help|
+||||Internet Explorer 7|C:\Program Files\Internet Explorer</p>|File is signed; create a publisher condition|Deny||Web help|
 ||||Windows files|C:\Windows|Use the default rule for the Windows path|Allow||Help desk|
 
 The following two tables illustrate examples of documenting considerations to maintain and manage AppLocker policies.
@@ -173,4 +162,3 @@ The following table is an example of what to consider and record.
 |--- |--- |--- |--- |--- |
 |Bank Tellers|Planned: Monthly through business office triage<p>Emergency: Request through help desk|Through business office triage<p>30-day notice required|General policy: Keep past versions for 12 months<p>List policies for each application|Coordinated through business office<p>30-day notice required|
 |Human Resources|Planned: Monthly through HR triage<p>Emergency: Request through help desk|Through HR triage<p>30-day notice required|General policy: Keep past versions for 60 months<p>List policies for each application|Coordinated through HR<p>30-day notice required|
-

@@ -1,5 +1,5 @@
 ---
-title: 4985(S) The state of a transaction has changed. (Windows 10)
+title: 4985(S) The state of a transaction has changed. 
 description: Describes security event 4985(S) The state of a transaction has changed.
 ms.pagetype: security
 ms.prod: windows-client

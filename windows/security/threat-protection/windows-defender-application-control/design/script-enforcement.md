@@ -9,7 +9,7 @@ ms.reviewer: jogeurte
 ms.author: jogeurte
 ms.manager: jsuther
 manager: aaroncz
-ms.date: 04/05/2023
+ms.date: 05/26/2023
 ms.technology: itpro-security
 ms.topic: article
 ms.localizationpriority: medium
@@ -27,7 +27,7 @@ ms.localizationpriority: medium
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 > [!IMPORTANT]
-> Option **11 Disabled:Script Enforcement** is not supported on **Windows Server 2016** and should not be used on that platform. Doing so may result in unexpected script enforcement behaviors.
+> Option **11 Disabled:Script Enforcement** is not supported on **Windows Server 2016** or on **Windows 10 1607 LTSB** and should not be used on those platforms. Doing so will result in unexpected script enforcement behaviors.
 
 ## Script enforcement overview
 

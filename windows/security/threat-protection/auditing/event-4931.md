@@ -1,5 +1,5 @@
 ---
-title: 4931(S, F) An Active Directory replica destination naming context was modified. (Windows 10)
+title: 4931(S, F) An Active Directory replica destination naming context was modified. 
 description: Describes security event 4931(S, F) An Active Directory replica destination naming context was modified.
 ms.pagetype: security
 ms.prod: windows-client

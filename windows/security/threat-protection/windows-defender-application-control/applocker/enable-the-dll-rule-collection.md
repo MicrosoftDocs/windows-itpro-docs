@@ -1,29 +1,18 @@
 ---
-title: Enable the DLL rule collection (Windows)
+title: Enable the DLL rule collection
 description: This topic for IT professionals describes the steps to enable the DLL rule collection feature for AppLocker.
-ms.assetid: 88ef9561-6eb2-491a-803a-b8cdbfebae27
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # Enable the DLL rule collection
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -41,4 +30,4 @@ AppLocker, see [Administer AppLocker](administer-applocker.md#bkmk-using-snapins
 1.  From the AppLocker console, right-click **AppLocker**, and then click **Properties.**
 2.  Click the **Advanced** tab, select the **Enable the DLL rule collection** check box, and then click **OK**.
 
-    >**Important:**  Before you enforce DLL rules, make sure that there are allow rules for each DLL that is used by any of the allowed apps.
+    >**Important:**  Before you enforce DLL rules, make sure that there are allow rules for each DLL that is used by any of the allowed apps.

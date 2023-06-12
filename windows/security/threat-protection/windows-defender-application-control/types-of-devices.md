@@ -1,5 +1,5 @@
 ---
-title: Policy creation for common WDAC usage scenarios (Windows)
+title: Policy creation for common WDAC usage scenarios 
 description: Develop a plan for deploying Windows Defender Application Control (WDAC) in your organization based on these common scenarios.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb

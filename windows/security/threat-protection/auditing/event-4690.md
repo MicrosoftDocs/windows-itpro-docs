@@ -1,5 +1,5 @@
 ---
-title: 4690(S) An attempt was made to duplicate a handle to an object. (Windows 10)
+title: 4690(S) An attempt was made to duplicate a handle to an object. 
 description: Describes security event 4690(S) An attempt was made to duplicate a handle to an object.
 ms.pagetype: security
 ms.prod: windows-client

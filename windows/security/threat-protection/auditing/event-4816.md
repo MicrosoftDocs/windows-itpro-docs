@@ -1,5 +1,5 @@
 ---
-title: 4816(S) RPC detected an integrity violation while decrypting an incoming message. (Windows 10)
+title: 4816(S) RPC detected an integrity violation while decrypting an incoming message. 
 description: Describes security event 4816(S) RPC detected an integrity violation while decrypting an incoming message.
 ms.pagetype: security
 ms.prod: windows-client

@@ -18,7 +18,7 @@ ms.technology: itpro-security
 
 Microsoft Pluton security processor is a chip-to-cloud security technology built with [Zero Trust](/security/zero-trust/zero-trust-overview) principles at the core. Microsoft Pluton provides hardware-based root of trust, secure identity, secure attestation, and cryptographic services. Pluton technology is a combination of a secure subsystem which is part of the System on Chip (SoC) and Microsoft authored software that runs on this integrated secure subsystem.
 
-Microsoft Pluton is currently available on devices with Ryzen 6000 and Qualcomm Snapdragon® 8cx Gen 3 series processors. Microsoft Pluton can be enabled on devices with Pluton capable processors running Windows 11, version 22H2.
+Microsoft Pluton is currently available on devices with Ryzen 6000 and Qualcomm Snapdragon&reg; 8cx Gen 3 series processors. Microsoft Pluton can be enabled on devices with Pluton capable processors running Windows 11, version 22H2.
 
 ## What is Microsoft Pluton?
 
@@ -45,6 +45,8 @@ Pluton Security subsystem consists of the following layers:
 When the system boots, Pluton hardware initialization is performed by loading the Pluton firmware from the Serial Peripheral Interface (SPI) flash storage available on the motherboard. During Windows startup however, the latest version of the Pluton firmware is used by the operating system. If newer firmware is not available, Windows uses the firmware that was loaded during the hardware initialization. The diagram below illustrates this process:
 
 ![Diagram showing the Microsoft Pluton Firmware load flow](../images/pluton/pluton-firmware-load.png)
+
+[!INCLUDE [microsoft-pluton-security-processor](../../../../includes/licensing/microsoft-pluton-security-processor.md)]
 
 ## Related topics
 

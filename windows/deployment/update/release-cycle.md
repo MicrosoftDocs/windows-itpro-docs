@@ -8,7 +8,7 @@ ms.author: mstewart
 manager: aaroncz
 ms.topic: article
 ms.technology: itpro-updates
-ms.date: 03/23/2023
+ms.date: 05/19/2023
 ---
 
 # Update release cycle for Windows clients
@@ -96,7 +96,7 @@ Some of the new features may be disruptive to organizations. By default, these s
 - WSUS
   - Devices that have updates managed by Configuration Manager use WSUS
 
-Features that are turned off by default are listed in the KB article for the monthly cumulative update. If you want to enable these features, there's a client policy that allows admins to **Enable features introduced via servicing that are off by default**. For more information about this policy, see [Enable features introduced via servicing that are off by default](waas-configure-wufb.md#enable-features-introduced-via-servicing-that-are-off-by-default).
+Features that are turned off by default are listed in the KB article for the monthly cumulative update. If you want to enable these features, there's a client policy that allows admins to enable features that are behind temporary enterprise control. For more information about this policy, see [Enable features that are behind temporary enterprise feature control](waas-configure-wufb.md#enable-features-that-are-behind-temporary-enterprise-feature-control).
 
 ## Annual feature updates
 

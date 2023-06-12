@@ -1,5 +1,5 @@
 ---
-title: 5141(S) A directory service object was deleted. (Windows 10)
+title: 5141(S) A directory service object was deleted. 
 description: Describes security event 5141(S) A directory service object was deleted.
 ms.pagetype: security
 ms.prod: windows-client

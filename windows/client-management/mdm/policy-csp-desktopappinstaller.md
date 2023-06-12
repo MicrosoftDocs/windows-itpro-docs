@@ -4,7 +4,7 @@ description: Learn more about the DesktopAppInstaller Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- DesktopAppInstaller-Begin -->
 # Policy CSP - DesktopAppInstaller
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- DesktopAppInstaller-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- EnableAdditionalSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableAdditionalSources-Applicability-End -->
 
 <!-- EnableAdditionalSources-OmaUri-Begin -->
@@ -44,9 +41,9 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy controls additional sources provided by the enterprise IT administrator.
 
-- If you do not configure this policy, no additional sources will be configured for the [Windows Package Manager](/windows/package-manager/).
+- If you don't configure this policy, no additional sources will be configured for the [Windows Package Manager](/windows/package-manager/).
 
-- If you enable this policy, the additional sources will be added to the [Windows Package Manager](/windows/package-manager/) and cannot be removed. The representation for each additional source can be obtained from installed sources using '[winget source export](/windows/package-manager/winget)'.
+- If you enable this policy, the additional sources will be added to the [Windows Package Manager](/windows/package-manager/) and can't be removed. The representation for each additional source can be obtained from installed sources using '[winget source export](/windows/package-manager/winget)'.
 
 - If you disable this policy, no additional sources can be configured for the [Windows Package Manager](/windows/package-manager/).
 <!-- EnableAdditionalSources-Description-End -->
@@ -60,13 +57,12 @@ This policy controls additional sources provided by the enterprise IT administra
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableAdditionalSources-DFProperties-End -->
 
 <!-- EnableAdditionalSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -93,7 +89,7 @@ This policy controls additional sources provided by the enterprise IT administra
 <!-- EnableAllowedSources-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableAllowedSources-Applicability-End -->
 
 <!-- EnableAllowedSources-OmaUri-Begin -->
@@ -106,7 +102,7 @@ This policy controls additional sources provided by the enterprise IT administra
 <!-- Description-Source-ADMX -->
 This policy controls additional sources allowed by the enterprise IT administrator.
 
-- If you do not configure this policy, users will be able to add or remove additional sources other than those configured by policy.
+- If you don't configure this policy, users will be able to add or remove additional sources other than those configured by policy.
 
 - If you enable this policy, only the sources specified can be added or removed from the [Windows Package Manager](/windows/package-manager/). The representation for each allowed source can be obtained from installed sources using '[winget source export](/windows/package-manager/winget)'.
 
@@ -122,13 +118,12 @@ This policy controls additional sources allowed by the enterprise IT administrat
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableAllowedSources-DFProperties-End -->
 
 <!-- EnableAllowedSources-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -155,7 +150,7 @@ This policy controls additional sources allowed by the enterprise IT administrat
 <!-- EnableAppInstaller-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableAppInstaller-Applicability-End -->
 
 <!-- EnableAppInstaller-OmaUri-Begin -->
@@ -168,9 +163,9 @@ This policy controls additional sources allowed by the enterprise IT administrat
 <!-- Description-Source-ADMX -->
 This policy controls whether the [Windows Package Manager](/windows/package-manager/) can be used by users.
 
-- If you enable or do not configure this setting, users will be able to use the [Windows Package Manager](/windows/package-manager/).
+- If you enable or don't configure this setting, users will be able to use the [Windows Package Manager](/windows/package-manager/).
 
-- If you disable this setting, users will not be able to use the [Windows Package Manager](/windows/package-manager/).
+- If you disable this setting, users won't be able to use the [Windows Package Manager](/windows/package-manager/).
 <!-- EnableAppInstaller-Description-End -->
 
 <!-- EnableAppInstaller-Editable-Begin -->
@@ -183,13 +178,12 @@ Users will still be able to execute the *winget* command. The default help will 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableAppInstaller-DFProperties-End -->
 
 <!-- EnableAppInstaller-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -216,7 +210,7 @@ Users will still be able to execute the *winget* command. The default help will 
 <!-- EnableBypassCertificatePinningForMicrosoftStore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableBypassCertificatePinningForMicrosoftStore-Applicability-End -->
 
 <!-- EnableBypassCertificatePinningForMicrosoftStore-OmaUri-Begin -->
@@ -238,14 +232,13 @@ Users will still be able to execute the *winget* command. The default help will 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableBypassCertificatePinningForMicrosoftStore-DFProperties-End -->
 
 <!-- EnableBypassCertificatePinningForMicrosoftStore-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -267,7 +260,7 @@ Users will still be able to execute the *winget* command. The default help will 
 <!-- EnableDefaultSource-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableDefaultSource-Applicability-End -->
 
 <!-- EnableDefaultSource-OmaUri-Begin -->
@@ -280,11 +273,11 @@ Users will still be able to execute the *winget* command. The default help will 
 <!-- Description-Source-ADMX -->
 This policy controls the default source included with the [Windows Package Manager](/windows/package-manager/).
 
-- If you do not configure this setting, the default source for the [Windows Package Manager](/windows/package-manager/) will be available and can be removed.
+- If you don't configure this setting, the default source for the [Windows Package Manager](/windows/package-manager/) will be available and can be removed.
 
-- If you enable this setting, the default source for the [Windows Package Manager](/windows/package-manager/) will be available and cannot be removed.
+- If you enable this setting, the default source for the [Windows Package Manager](/windows/package-manager/) will be available and can't be removed.
 
-- If you disable this setting the default source for the [Windows Package Manager](/windows/package-manager/) will not be available.
+- If you disable this setting the default source for the [Windows Package Manager](/windows/package-manager/) won't be available.
 <!-- EnableDefaultSource-Description-End -->
 
 <!-- EnableDefaultSource-Editable-Begin -->
@@ -296,13 +289,12 @@ This policy controls the default source included with the [Windows Package Manag
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableDefaultSource-DFProperties-End -->
 
 <!-- EnableDefaultSource-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -329,7 +321,7 @@ This policy controls the default source included with the [Windows Package Manag
 <!-- EnableExperimentalFeatures-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableExperimentalFeatures-Applicability-End -->
 
 <!-- EnableExperimentalFeatures-OmaUri-Begin -->
@@ -342,9 +334,9 @@ This policy controls the default source included with the [Windows Package Manag
 <!-- Description-Source-ADMX -->
 This policy controls whether users can enable experimental features in the [Windows Package Manager](/windows/package-manager/).
 
-- If you enable or do not configure this setting, users will be able to enable experimental features for the [Windows Package Manager](/windows/package-manager/).
+- If you enable or don't configure this setting, users will be able to enable experimental features for the [Windows Package Manager](/windows/package-manager/).
 
-- If you disable this setting, users will not be able to enable experimental features for the [Windows Package Manager](/windows/package-manager/).
+- If you disable this setting, users won't be able to enable experimental features for the [Windows Package Manager](/windows/package-manager/).
 <!-- EnableExperimentalFeatures-Description-End -->
 
 <!-- EnableExperimentalFeatures-Editable-Begin -->
@@ -357,13 +349,12 @@ Experimental features are used during Windows Package Manager development cycle 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableExperimentalFeatures-DFProperties-End -->
 
 <!-- EnableExperimentalFeatures-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -390,7 +381,7 @@ Experimental features are used during Windows Package Manager development cycle 
 <!-- EnableHashOverride-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableHashOverride-Applicability-End -->
 
 <!-- EnableHashOverride-OmaUri-Begin -->
@@ -403,9 +394,9 @@ Experimental features are used during Windows Package Manager development cycle 
 <!-- Description-Source-ADMX -->
 This policy controls whether or not the [Windows Package Manager](/windows/package-manager/) can be configured to enable the ability override the SHA256 security validation in settings.
 
-- If you enable or do not configure this policy, users will be able to enable the ability override the SHA256 security validation in the [Windows Package Manager](/windows/package-manager/) settings.
+- If you enable or don't configure this policy, users will be able to enable the ability override the SHA256 security validation in the [Windows Package Manager](/windows/package-manager/) settings.
 
-- If you disable this policy, users will not be able to enable the ability override the SHA256 security validation in the [Windows Package Manager](/windows/package-manager/) settings.
+- If you disable this policy, users won't be able to enable the ability override the SHA256 security validation in the [Windows Package Manager](/windows/package-manager/) settings.
 <!-- EnableHashOverride-Description-End -->
 
 <!-- EnableHashOverride-Editable-Begin -->
@@ -417,13 +408,12 @@ This policy controls whether or not the [Windows Package Manager](/windows/packa
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableHashOverride-DFProperties-End -->
 
 <!-- EnableHashOverride-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -450,7 +440,7 @@ This policy controls whether or not the [Windows Package Manager](/windows/packa
 <!-- EnableLocalArchiveMalwareScanOverride-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableLocalArchiveMalwareScanOverride-Applicability-End -->
 
 <!-- EnableLocalArchiveMalwareScanOverride-OmaUri-Begin -->
@@ -472,14 +462,13 @@ This policy controls whether or not the [Windows Package Manager](/windows/packa
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableLocalArchiveMalwareScanOverride-DFProperties-End -->
 
 <!-- EnableLocalArchiveMalwareScanOverride-AdmxBacked-Begin -->
 <!-- ADMX-Not-Found -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -501,7 +490,7 @@ This policy controls whether or not the [Windows Package Manager](/windows/packa
 <!-- EnableLocalManifestFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableLocalManifestFiles-Applicability-End -->
 
 <!-- EnableLocalManifestFiles-OmaUri-Begin -->
@@ -514,9 +503,9 @@ This policy controls whether or not the [Windows Package Manager](/windows/packa
 <!-- Description-Source-ADMX -->
 This policy controls whether users can install packages with local manifest files.
 
-- If you enable or do not configure this setting, users will be able to install packages with local manifests using the [Windows Package Manager](/windows/package-manager/).
+- If you enable or don't configure this setting, users will be able to install packages with local manifests using the [Windows Package Manager](/windows/package-manager/).
 
-- If you disable this setting, users will not be able to install packages with local manifests using the [Windows Package Manager](/windows/package-manager/).
+- If you disable this setting, users won't be able to install packages with local manifests using the [Windows Package Manager](/windows/package-manager/).
 <!-- EnableLocalManifestFiles-Description-End -->
 
 <!-- EnableLocalManifestFiles-Editable-Begin -->
@@ -528,13 +517,12 @@ This policy controls whether users can install packages with local manifest file
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableLocalManifestFiles-DFProperties-End -->
 
 <!-- EnableLocalManifestFiles-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -561,7 +549,7 @@ This policy controls whether users can install packages with local manifest file
 <!-- EnableMicrosoftStoreSource-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableMicrosoftStoreSource-Applicability-End -->
 
 <!-- EnableMicrosoftStoreSource-OmaUri-Begin -->
@@ -574,11 +562,11 @@ This policy controls whether users can install packages with local manifest file
 <!-- Description-Source-ADMX -->
 This policy controls the Microsoft Store source included with the [Windows Package Manager](/windows/package-manager/).
 
-- If you do not configure this setting, the Microsoft Store source for the Windows Package manager will be available and can be removed.
+- If you don't configure this setting, the Microsoft Store source for the Windows Package manager will be available and can be removed.
 
-- If you enable this setting, the Microsoft Store source for the [Windows Package Manager](/windows/package-manager/) will be available and cannot be removed.
+- If you enable this setting, the Microsoft Store source for the [Windows Package Manager](/windows/package-manager/) will be available and can't be removed.
 
-- If you disable this setting the Microsoft Store source for the [Windows Package Manager](/windows/package-manager/) will not be available.
+- If you disable this setting the Microsoft Store source for the [Windows Package Manager](/windows/package-manager/) won't be available.
 <!-- EnableMicrosoftStoreSource-Description-End -->
 
 <!-- EnableMicrosoftStoreSource-Editable-Begin -->
@@ -590,13 +578,12 @@ This policy controls the Microsoft Store source included with the [Windows Packa
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableMicrosoftStoreSource-DFProperties-End -->
 
 <!-- EnableMicrosoftStoreSource-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -623,7 +610,7 @@ This policy controls the Microsoft Store source included with the [Windows Packa
 <!-- EnableMSAppInstallerProtocol-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableMSAppInstallerProtocol-Applicability-End -->
 
 <!-- EnableMSAppInstallerProtocol-OmaUri-Begin -->
@@ -634,11 +621,11 @@ This policy controls the Microsoft Store source included with the [Windows Packa
 
 <!-- EnableMSAppInstallerProtocol-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy controls whether users can install packages from a website that is using the ms-appinstaller protocol.
+This policy controls whether users can install packages from a website that's using the ms-appinstaller protocol.
 
-- If you enable or do not configure this setting, users will be able to install packages from websites that use this protocol.
+- If you enable or don't configure this setting, users will be able to install packages from websites that use this protocol.
 
-- If you disable this setting, users will not be able to install packages from websites that use this protocol.
+- If you disable this setting, users won't be able to install packages from websites that use this protocol.
 <!-- EnableMSAppInstallerProtocol-Description-End -->
 
 <!-- EnableMSAppInstallerProtocol-Editable-Begin -->
@@ -650,13 +637,12 @@ This policy controls whether users can install packages from a website that is u
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableMSAppInstallerProtocol-DFProperties-End -->
 
 <!-- EnableMSAppInstallerProtocol-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -683,7 +669,7 @@ This policy controls whether users can install packages from a website that is u
 <!-- EnableSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- EnableSettings-Applicability-End -->
 
 <!-- EnableSettings-OmaUri-Begin -->
@@ -696,9 +682,9 @@ This policy controls whether users can install packages from a website that is u
 <!-- Description-Source-ADMX -->
 This policy controls whether users can change their settings.
 
-- If you enable or do not configure this setting, users will be able to change settings for the [Windows Package Manager](/windows/package-manager/).
+- If you enable or don't configure this setting, users will be able to change settings for the [Windows Package Manager](/windows/package-manager/).
 
-- If you disable this setting, users will not be able to change settings for the [Windows Package Manager](/windows/package-manager/).
+- If you disable this setting, users won't be able to change settings for the [Windows Package Manager](/windows/package-manager/).
 <!-- EnableSettings-Description-End -->
 
 <!-- EnableSettings-Editable-Begin -->
@@ -711,13 +697,12 @@ The settings are stored inside of a .json file on the user’s system. It may be
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableSettings-DFProperties-End -->
 
 <!-- EnableSettings-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -744,7 +729,7 @@ The settings are stored inside of a .json file on the user’s system. It may be
 <!-- SourceAutoUpdateInterval-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- SourceAutoUpdateInterval-Applicability-End -->
 
 <!-- SourceAutoUpdateInterval-OmaUri-Begin -->
@@ -757,7 +742,7 @@ The settings are stored inside of a .json file on the user’s system. It may be
 <!-- Description-Source-ADMX -->
 This policy controls the auto update interval for package-based sources.
 
-- If you disable or do not configure this setting, the default interval or the value specified in settings will be used by the [Windows Package Manager](/windows/package-manager/).
+- If you disable or don't configure this setting, the default interval or the value specified in settings will be used by the [Windows Package Manager](/windows/package-manager/).
 
 - If you enable this setting, the number of minutes specified will be used by the [Windows Package Manager](/windows/package-manager/).
 <!-- SourceAutoUpdateInterval-Description-End -->
@@ -772,13 +757,12 @@ The default source for Windows Package Manager is configured such that an index 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- SourceAutoUpdateInterval-DFProperties-End -->
 
 <!-- SourceAutoUpdateInterval-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

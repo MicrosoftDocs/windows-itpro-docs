@@ -1,5 +1,5 @@
 ---
-title: Create a Windows Information Protection (WIP) policy using Microsoft Intune (Windows 10)
+title: Create a Windows Information Protection (WIP) policy using Microsoft Intune 
 description: Microsoft Intune helps you create and deploy your enterprise data protection (WIP) policy.
 ms.reviewer: 
 ms.prod: windows-client

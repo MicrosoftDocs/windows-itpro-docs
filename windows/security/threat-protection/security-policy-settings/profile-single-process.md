@@ -1,5 +1,5 @@
 ---
-title: Profile single process (Windows 10)
+title: Profile single process 
 description: Describes the best practices, location, values, policy management, and security considerations for the Profile single process security policy setting.
 ms.assetid: c0963de4-4f5e-430e-bfcd-dfd68e66a075
 ms.reviewer: 

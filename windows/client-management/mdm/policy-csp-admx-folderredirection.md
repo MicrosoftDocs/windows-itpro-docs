@@ -4,7 +4,7 @@ description: Learn more about the ADMX_FolderRedirection Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_FolderRedirection-Begin -->
 # Policy CSP - ADMX_FolderRedirection
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_FolderRedirection-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- DisableFRAdminPin-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableFRAdminPin-Applicability-End -->
 
 <!-- DisableFRAdminPin-OmaUri-Begin -->
@@ -46,13 +43,13 @@ This policy setting allows you to control whether all redirected shell folders, 
 
 - If you enable this policy setting, users must manually select the files they wish to make available offline.
 
-- If you disable or do not configure this policy setting, redirected shell folders are automatically made available offline. All subfolders within the redirected folders are also made available offline.
+- If you disable or don't configure this policy setting, redirected shell folders are automatically made available offline. All subfolders within the redirected folders are also made available offline.
 
 > [!NOTE]
-> This policy setting does not prevent files from being automatically cached if the network share is configured for "Automatic Caching", nor does it affect the availability of the "Always available offline" menu option in the user interface.
+> This policy setting doesn't prevent files from being automatically cached if the network share is configured for "Automatic Caching", nor does it affect the availability of the "Always available offline" menu option in the user interface.
 
 > [!NOTE]
-> Do not enable this policy setting if users will need access to their redirected files if the network or server holding the redirected files becomes unavailable.
+> Don't enable this policy setting if users will need access to their redirected files if the network or server holding the redirected files becomes unavailable.
 
 > [!NOTE]
 > If one or more valid folder GUIDs are specified in the policy setting "Do not automatically make specific redirected folders available offline", that setting will override the configured value of "Do not automatically make all redirected folders available offline".
@@ -67,13 +64,12 @@ This policy setting allows you to control whether all redirected shell folders, 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableFRAdminPin-DFProperties-End -->
 
 <!-- DisableFRAdminPin-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -100,7 +96,7 @@ This policy setting allows you to control whether all redirected shell folders, 
 <!-- DisableFRAdminPinByFolder-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableFRAdminPinByFolder-Applicability-End -->
 
 <!-- DisableFRAdminPinByFolder-OmaUri-Begin -->
@@ -115,10 +111,10 @@ This policy setting allows you to control whether individual redirected shell fo
 
 For the folders affected by this setting, users must manually select the files they wish to make available offline.
 
-If you disable or do not configure this policy setting, all redirected shell folders are automatically made available offline. All subfolders within the redirected folders are also made available offline.
+If you disable or don't configure this policy setting, all redirected shell folders are automatically made available offline. All subfolders within the redirected folders are also made available offline.
 
 > [!NOTE]
-> This policy setting does not prevent files from being automatically cached if the network share is configured for "Automatic Caching", nor does it affect the availability of the "Always available offline" menu option in the user interface.
+> This policy setting doesn't prevent files from being automatically cached if the network share is configured for "Automatic Caching", nor does it affect the availability of the "Always available offline" menu option in the user interface.
 
 > [!NOTE]
 > The configuration of this policy for any folder will override the configured value of "Do not automatically make all redirected folders available offline".
@@ -133,13 +129,12 @@ If you disable or do not configure this policy setting, all redirected shell fol
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableFRAdminPinByFolder-DFProperties-End -->
 
 <!-- DisableFRAdminPinByFolder-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -165,7 +160,7 @@ If you disable or do not configure this policy setting, all redirected shell fol
 <!-- FolderRedirectionEnableCacheRename-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- FolderRedirectionEnableCacheRename-Applicability-End -->
 
 <!-- FolderRedirectionEnableCacheRename-OmaUri-Begin -->
@@ -180,7 +175,7 @@ This policy setting controls whether the contents of redirected folders is copie
 
 - If you enable this policy setting, when the path to a redirected folder is changed from one network location to another and Folder Redirection is configured to move the content to the new location, instead of copying the content to the new location, the cached content is renamed in the local cache and not copied to the new location. To use this policy setting, you must move or restore the server content to the new network location using a method that preserves the state of the files, including their timestamps, before updating the Folder Redirection location.
 
-- If you disable or do not configure this policy setting, when the path to a redirected folder is changed and Folder Redirection is configured to move the content to the new location, Windows copies the contents of the local cache to the new network location, then deleted the content from the old network location.
+- If you disable or don't configure this policy setting, when the path to a redirected folder is changed and Folder Redirection is configured to move the content to the new location, Windows copies the contents of the local cache to the new network location, then deleted the content from the old network location.
 <!-- FolderRedirectionEnableCacheRename-Description-End -->
 
 <!-- FolderRedirectionEnableCacheRename-Editable-Begin -->
@@ -192,13 +187,12 @@ This policy setting controls whether the contents of redirected folders is copie
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- FolderRedirectionEnableCacheRename-DFProperties-End -->
 
 <!-- FolderRedirectionEnableCacheRename-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -225,7 +219,7 @@ This policy setting controls whether the contents of redirected folders is copie
 <!-- LocalizeXPRelativePaths_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LocalizeXPRelativePaths_1-Applicability-End -->
 
 <!-- LocalizeXPRelativePaths_1-OmaUri-Begin -->
@@ -255,13 +249,12 @@ This policy setting allows the administrator to define whether Folder Redirectio
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LocalizeXPRelativePaths_1-DFProperties-End -->
 
 <!-- LocalizeXPRelativePaths_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -288,7 +281,7 @@ This policy setting allows the administrator to define whether Folder Redirectio
 <!-- LocalizeXPRelativePaths_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LocalizeXPRelativePaths_2-Applicability-End -->
 
 <!-- LocalizeXPRelativePaths_2-OmaUri-Begin -->
@@ -318,13 +311,12 @@ This policy setting allows the administrator to define whether Folder Redirectio
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- LocalizeXPRelativePaths_2-DFProperties-End -->
 
 <!-- LocalizeXPRelativePaths_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -351,7 +343,7 @@ This policy setting allows the administrator to define whether Folder Redirectio
 <!-- PrimaryComputer_FR_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PrimaryComputer_FR_1-Applicability-End -->
 
 <!-- PrimaryComputer_FR_1-OmaUri-Begin -->
@@ -368,7 +360,7 @@ To designate a user's primary computers, an administrator must use management so
 
 - If you enable this policy setting and the user has redirected folders, such as the Documents and Pictures folders, the folders are redirected on the user's primary computer only.
 
-- If you disable or do not configure this policy setting and the user has redirected folders, the folders are redirected on every computer that the user logs on to.
+- If you disable or don't configure this policy setting and the user has redirected folders, the folders are redirected on every computer that the user logs on to.
 
 > [!NOTE]
 > If you enable this policy setting in Computer Configuration and User Configuration, the Computer Configuration policy setting takes precedence.
@@ -383,13 +375,12 @@ To designate a user's primary computers, an administrator must use management so
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PrimaryComputer_FR_1-DFProperties-End -->
 
 <!-- PrimaryComputer_FR_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -416,7 +407,7 @@ To designate a user's primary computers, an administrator must use management so
 <!-- PrimaryComputer_FR_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PrimaryComputer_FR_2-Applicability-End -->
 
 <!-- PrimaryComputer_FR_2-OmaUri-Begin -->
@@ -433,7 +424,7 @@ To designate a user's primary computers, an administrator must use management so
 
 - If you enable this policy setting and the user has redirected folders, such as the Documents and Pictures folders, the folders are redirected on the user's primary computer only.
 
-- If you disable or do not configure this policy setting and the user has redirected folders, the folders are redirected on every computer that the user logs on to.
+- If you disable or don't configure this policy setting and the user has redirected folders, the folders are redirected on every computer that the user logs on to.
 
 > [!NOTE]
 > If you enable this policy setting in Computer Configuration and User Configuration, the Computer Configuration policy setting takes precedence.
@@ -448,13 +439,12 @@ To designate a user's primary computers, an administrator must use management so
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PrimaryComputer_FR_2-DFProperties-End -->
 
 <!-- PrimaryComputer_FR_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

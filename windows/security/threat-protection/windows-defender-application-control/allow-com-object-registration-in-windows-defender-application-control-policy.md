@@ -1,5 +1,5 @@
 ---
-title: Allow COM object registration in a WDAC policy (Windows)
+title: Allow COM object registration in a WDAC policy 
 description: You can allow COM object registration in a Windows Defender Application Control policy.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb

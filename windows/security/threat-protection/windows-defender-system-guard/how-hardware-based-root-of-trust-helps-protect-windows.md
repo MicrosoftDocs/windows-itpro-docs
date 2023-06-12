@@ -30,7 +30,7 @@ With Windows 7, one of the means attackers would use to persist and evade detect
 This malicious software would start before Windows started, or during the boot process itself, enabling it to start with the highest level of privilege.
 
 With Windows 10 running on modern hardware (that is, Windows 8-certified or greater) a hardware-based root of trust helps ensure that no unauthorized firmware or software (such as a bootkit) can start before the Windows bootloader. 
-This hardware-based root of trust comes from the device’s Secure Boot feature, which is part of the Unified Extensible Firmware Interface (UEFI). 
+This hardware-based root of trust comes from the device's Secure Boot feature, which is part of the Unified Extensible Firmware Interface (UEFI). 
 This technique of measuring the static early boot UEFI components is called the Static Root of Trust for Measurement (SRTM). 
 
 As there are thousands of PC vendors that produce many models with different UEFI BIOS versions, there becomes an incredibly large number of SRTM measurements upon bootup. 
@@ -69,17 +69,19 @@ Paging protection can be implemented to lock certain code tables to be read-only
 A hardware-enforced processor feature known as a supervisor SMI handler can monitor the SMM and make sure it doesn't access any part of the address space that it isn't supposed to. 
 
 SMM protection is built on top of the Secure Launch technology and requires it to function. 
-In the future, Windows 10 will also measure this SMI Handler’s behavior and attest that no OS-owned memory has been tampered with. 
+In the future, Windows 10 will also measure this SMI Handler's behavior and attest that no OS-owned memory has been tampered with. 
 
 ## Validating platform integrity after Windows is running (run time)
 
-While Windows Defender System Guard provides advanced protection that will help protect and maintain the integrity of the platform during boot and at run time, the reality is that we must apply an "assume breach" mentality to even our most sophisticated security technologies. We can trust that the technologies are successfully doing their jobs, but we also need the ability to verify that they were successful in achieving their goals. For platform integrity, we can’t just trust the platform, which potentially could be compromised, to self-attest to its security state. So Windows Defender System Guard includes a series of technologies that enable remote analysis of the device’s integrity.
+While Windows Defender System Guard provides advanced protection that will help protect and maintain the integrity of the platform during boot and at run time, the reality is that we must apply an "assume breach" mentality to even our most sophisticated security technologies. We can trust that the technologies are successfully doing their jobs, but we also need the ability to verify that they were successful in achieving their goals. For platform integrity, we can't just trust the platform, which potentially could be compromised, to self-attest to its security state. So Windows Defender System Guard includes a series of technologies that enable remote analysis of the device's integrity.
 
-As Windows 10 boots, a series of integrity measurements are taken by Windows Defender System Guard using the device’s Trusted Platform Module 2.0 (TPM 2.0). System Guard Secure Launch won't support earlier TPM versions, such as TPM 1.2. This process and data are hardware-isolated away from Windows to help ensure that the measurement data isn't subject to the type of tampering that could happen if the platform was compromised. From here, the measurements can be used to determine the integrity of the device’s firmware, hardware configuration state, and Windows boot-related components, just to name a few.
+As Windows 10 boots, a series of integrity measurements are taken by Windows Defender System Guard using the device's Trusted Platform Module 2.0 (TPM 2.0). System Guard Secure Launch won't support earlier TPM versions, such as TPM 1.2. This process and data are hardware-isolated away from Windows to help ensure that the measurement data isn't subject to the type of tampering that could happen if the platform was compromised. From here, the measurements can be used to determine the integrity of the device's firmware, hardware configuration state, and Windows boot-related components, just to name a few.
 
 ![Boot time integrity.](images/windows-defender-system-guard-boot-time-integrity.png)
 
 After the system boots, Windows Defender System Guard signs and seals these measurements using the TPM. Upon request, a management system like Intune or Microsoft Configuration Manager can acquire them for remote analysis. If Windows Defender System Guard indicates that the device lacks integrity, the management system can take a series of actions, such as denying the device access to resources.
+
+[!INCLUDE [windows-defender-system-guard](../../../../includes/licensing/windows-defender-system-guard.md)]
 
 ## System requirements for System Guard
 

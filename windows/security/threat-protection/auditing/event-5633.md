@@ -1,5 +1,5 @@
 ---
-title: 5633(S, F) A request was made to authenticate to a wired network. (Windows 10)
+title: 5633(S, F) A request was made to authenticate to a wired network. 
 description: Describes security event 5633(S, F) A request was made to authenticate to a wired network.
 ms.pagetype: security
 ms.prod: windows-client

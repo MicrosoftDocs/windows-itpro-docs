@@ -1,5 +1,5 @@
 ---
-title: Maximum lifetime for user ticket renewal (Windows 10)
+title: Maximum lifetime for user ticket renewal 
 description: Describes the best practices, location, values, policy management, and security considerations for the Maximum lifetime for user ticket renewal security policy setting.
 ms.assetid: f88cd819-3dd1-4e38-b560-13fe6881b609
 ms.reviewer: 

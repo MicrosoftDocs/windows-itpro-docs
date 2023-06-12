@@ -1,0 +1,24 @@
+### YamlMime:FAQ
+metadata:
+  title: BitLocker Network Unlock FAQ (Windows 10)
+  description: Familiarize yourself with BitLocker Network Unlock. Learn how it can make desktop and server management easier within domain environments.
+  ms.topic: faq
+  ms.date: 11/08/2022
+title: BitLocker Network Unlock FAQ
+summary: |
+
+sections:
+  - name: Ignored
+    questions:
+      - question: |
+          BitLocker Network Unlock FAQ
+        answer: |  
+          BitLocker Network Unlock enables easier management for BitLocker-enabled desktops and servers that use the TPM+PIN protection method in a domain environment. When a computer that is connected to a wired corporate network is rebooted, Network Unlock allows the PIN entry prompt to be bypassed. It automatically unlocks BitLocker-protected operating system volumes by using a trusted key that is provided by the Windows Deployment Services server as its secondary authentication method.
+          
+          To use Network Unlock, a PIN must be configured for the computer. When the computer isn't connected to the network, a PIN will need to be provided to unlock it.
+          
+          BitLocker Network Unlock has software and hardware requirements for both client computers, Windows Deployment services, and domain controllers that must be met before it can be used.
+          
+          Network Unlock uses two protectors - the TPM protector and the protector provided by the network or by the PIN. Automatic unlock uses a single protector - the one stored in the TPM. If the computer is joined to a network without the key protector, it will prompt to enter a PIN. If the PIN isn't available, the recovery key will need to be used to unlock the computer if it can't be connected to the network.
+          
+          For more info, see [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md).

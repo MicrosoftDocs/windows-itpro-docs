@@ -4,7 +4,7 @@ description: Learn more about the DiagnosticLog CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -70,7 +70,7 @@ The following list shows the DiagnosticLog configuration service provider nodes:
 <!-- Device-DeviceStateData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-DeviceStateData-Applicability-End -->
 
 <!-- Device-DeviceStateData-OmaUri-Begin -->
@@ -94,7 +94,7 @@ The DeviceStateData functionality within the DiagnosticLog CSP provides extra de
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-DeviceStateData-DFProperties-End -->
 
@@ -110,7 +110,7 @@ The DeviceStateData functionality within the DiagnosticLog CSP provides extra de
 <!-- Device-DeviceStateData-MdmConfiguration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-DeviceStateData-MdmConfiguration-Applicability-End -->
 
 <!-- Device-DeviceStateData-MdmConfiguration-OmaUri-Begin -->
@@ -133,7 +133,7 @@ This node is to trigger snapping of the Device Management state data with "SNAP"
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec, Get |
 <!-- Device-DeviceStateData-MdmConfiguration-DFProperties-End -->
 
@@ -171,7 +171,7 @@ This node is to trigger snapping of the Device Management state data with "SNAP"
 <!-- Device-DiagnosticArchive-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-DiagnosticArchive-Applicability-End -->
 
 <!-- Device-DiagnosticArchive-OmaUri-Begin -->
@@ -200,7 +200,7 @@ DiagnosticArchive is designed for ad-hoc troubleshooting scenarios, such as an I
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-DiagnosticArchive-DFProperties-End -->
 
@@ -216,7 +216,7 @@ DiagnosticArchive is designed for ad-hoc troubleshooting scenarios, such as an I
 <!-- Device-DiagnosticArchive-ArchiveDefinition-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-DiagnosticArchive-ArchiveDefinition-Applicability-End -->
 
 <!-- Device-DiagnosticArchive-ArchiveDefinition-OmaUri-Begin -->
@@ -323,7 +323,7 @@ Additionally, the XML may include **One or more data gathering directives, which
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec, Get, Replace |
 <!-- Device-DiagnosticArchive-ArchiveDefinition-DFProperties-End -->
 
@@ -339,7 +339,7 @@ Additionally, the XML may include **One or more data gathering directives, which
 <!-- Device-DiagnosticArchive-ArchiveResults-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-DiagnosticArchive-ArchiveResults-Applicability-End -->
 
 <!-- Device-DiagnosticArchive-ArchiveResults-OmaUri-Begin -->
@@ -362,7 +362,7 @@ Pull up the results of the last archive run.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-DiagnosticArchive-ArchiveResults-DFProperties-End -->
 
@@ -427,7 +427,7 @@ To learn how to read the resulting data, see [How to review ArchiveResults](#how
 <!-- Device-EtwLog-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Applicability-End -->
 
 <!-- Device-EtwLog-OmaUri-Begin -->
@@ -456,7 +456,7 @@ The ETW log feature is designed for advanced usage, and assumes developers' fami
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-EtwLog-DFProperties-End -->
 
@@ -472,7 +472,7 @@ The ETW log feature is designed for advanced usage, and assumes developers' fami
 <!-- Device-EtwLog-Channels-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Channels-Applicability-End -->
 
 <!-- Device-EtwLog-Channels-OmaUri-Begin -->
@@ -506,7 +506,7 @@ For more information about using DiagnosticLog to collect logs remotely from a P
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-EtwLog-Channels-DFProperties-End -->
 
@@ -522,7 +522,7 @@ For more information about using DiagnosticLog to collect logs remotely from a P
 <!-- Device-EtwLog-Channels-{ChannelName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Channels-{ChannelName}-Applicability-End -->
 
 <!-- Device-EtwLog-Channels-{ChannelName}-OmaUri-Begin -->
@@ -545,7 +545,7 @@ Each dynamic node represents a registered 'Channel' node. The node name must be 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: The node name must be a valid Windows event log channel name, such as "Microsoft-Client-Licensing-Platform%2FAdmin" |
 <!-- Device-EtwLog-Channels-{ChannelName}-DFProperties-End -->
@@ -604,7 +604,7 @@ Each dynamic node represents a registered 'Channel' node. The node name must be 
 <!-- Device-EtwLog-Channels-{ChannelName}-Export-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Channels-{ChannelName}-Export-Applicability-End -->
 
 <!-- Device-EtwLog-Channels-{ChannelName}-Export-OmaUri-Begin -->
@@ -627,7 +627,7 @@ This node is to trigger exporting events into a log file from this node's associ
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Exec, Get |
 <!-- Device-EtwLog-Channels-{ChannelName}-Export-DFProperties-End -->
 
@@ -661,7 +661,7 @@ This node is to trigger exporting events into a log file from this node's associ
 <!-- Device-EtwLog-Channels-{ChannelName}-Filter-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Channels-{ChannelName}-Filter-Applicability-End -->
 
 <!-- Device-EtwLog-Channels-{ChannelName}-Filter-OmaUri-Begin -->
@@ -684,7 +684,7 @@ This node is used for setting or getting the xpath query string to filter the ev
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 | Default Value  | "" |
 <!-- Device-EtwLog-Channels-{ChannelName}-Filter-DFProperties-End -->
@@ -719,7 +719,7 @@ This node is used for setting or getting the xpath query string to filter the ev
 <!-- Device-EtwLog-Channels-{ChannelName}-State-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Channels-{ChannelName}-State-Applicability-End -->
 
 <!-- Device-EtwLog-Channels-{ChannelName}-State-OmaUri-Begin -->
@@ -742,7 +742,7 @@ This node is used for setting or getting the 'Enabled' state of this node's asso
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 <!-- Device-EtwLog-Channels-{ChannelName}-State-DFProperties-End -->
 
@@ -810,7 +810,7 @@ This node is used for setting or getting the 'Enabled' state of this node's asso
 <!-- Device-EtwLog-Collectors-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Collectors-Applicability-End -->
 
 <!-- Device-EtwLog-Collectors-OmaUri-Begin -->
@@ -858,7 +858,7 @@ The changes on **State**, **Keywords**, and **TraceLevel** takes effect immediat
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-EtwLog-Collectors-DFProperties-End -->
 
@@ -890,7 +890,7 @@ To gather diagnostics using this CSP:
 <!-- Device-EtwLog-Collectors-{CollectorName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Collectors-{CollectorName}-Applicability-End -->
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-OmaUri-Begin -->
@@ -901,7 +901,7 @@ To gather diagnostics using this CSP:
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Each dynamic node represents a registered 'Collector' node. CSP will maintain an ETW trace session for this collector with its name used as a unique identifier. In a collector, a valid ETW provider can be registered and unregistered. The collector's associated trace session will enable the registered providers in it if the provider's state is 'Enabled'. Each provider's state, trace level and keywords can be controlled separately. The name of this node must not be a valid Windows event channel name. It can be a etw provider guid as long as it is not equal to an already registered 'Provider' node name.
+Each dynamic node represents a registered 'Collector' node. CSP will maintain an ETW trace session for this collector with its name used as a unique identifier. In a collector, a valid ETW provider can be registered and unregistered. The collector's associated trace session will enable the registered providers in it if the provider's state is 'Enabled'. Each provider's state, trace level and keywords can be controlled separately. The name of this node mustn't be a valid Windows event channel name. It can be a etw provider guid as long as it isn't equal to an already registered 'Provider' node name.
 <!-- Device-EtwLog-Collectors-{CollectorName}-Description-End -->
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-Editable-Begin -->
@@ -913,7 +913,7 @@ Each dynamic node represents a registered 'Collector' node. CSP will maintain an
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
 <!-- Device-EtwLog-Collectors-{CollectorName}-DFProperties-End -->
@@ -972,7 +972,7 @@ Each dynamic node represents a registered 'Collector' node. CSP will maintain an
 <!-- Device-EtwLog-Collectors-{CollectorName}-LogFileSizeLimitMB-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Collectors-{CollectorName}-LogFileSizeLimitMB-Applicability-End -->
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-LogFileSizeLimitMB-OmaUri-Begin -->
@@ -995,7 +995,7 @@ This node is used for setting or getting the trace log file size limit(in Megaby
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Allowed Values | Range: `[1-2048]` |
 | Default Value  | 4 |
@@ -1013,7 +1013,7 @@ This node is used for setting or getting the trace log file size limit(in Megaby
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-Applicability-End -->
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-OmaUri-Begin -->
@@ -1036,7 +1036,7 @@ Root node of all providers registered in this collector node.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-DFProperties-End -->
 
@@ -1052,7 +1052,7 @@ Root node of all providers registered in this collector node.
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-Applicability-End -->
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-OmaUri-Begin -->
@@ -1075,7 +1075,7 @@ Each dynamic node represents an ETW provider registered in this collector node. 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: The node name must be a valid provider GUID. |
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-DFProperties-End -->
@@ -1134,7 +1134,7 @@ Each dynamic node represents an ETW provider registered in this collector node. 
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-Keywords-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-Keywords-Applicability-End -->
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-Keywords-OmaUri-Begin -->
@@ -1157,7 +1157,7 @@ This node is used for setting or getting the keywords of the event provider in t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get, Replace |
 | Default Value  | "0" |
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-Keywords-DFProperties-End -->
@@ -1220,7 +1220,7 @@ This node is used for setting or getting the keywords of the event provider in t
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-State-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-State-Applicability-End -->
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-State-OmaUri-Begin -->
@@ -1243,7 +1243,7 @@ This node is used for setting or getting the state of the event provider in this
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Get, Replace |
 | Default Value  | true |
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-State-DFProperties-End -->
@@ -1293,7 +1293,7 @@ Set provider State:
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-TraceLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-TraceLevel-Applicability-End -->
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-TraceLevel-OmaUri-Begin -->
@@ -1316,7 +1316,7 @@ This node is used for setting or getting the trace level of this event provider 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 5 |
 <!-- Device-EtwLog-Collectors-{CollectorName}-Providers-{ProviderGuid}-TraceLevel-DFProperties-End -->
@@ -1369,7 +1369,7 @@ Set provider TraceLevel:
 <!-- Device-EtwLog-Collectors-{CollectorName}-TraceControl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Collectors-{CollectorName}-TraceControl-Applicability-End -->
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-TraceControl-OmaUri-Begin -->
@@ -1392,7 +1392,7 @@ This node is to trigger "start" and "stop" of this collector node's associated t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Exec, Get |
 <!-- Device-EtwLog-Collectors-{CollectorName}-TraceControl-DFProperties-End -->
 
@@ -1466,7 +1466,7 @@ After you've added a logging task, you can start/stop a trace by running an Exec
 <!-- Device-EtwLog-Collectors-{CollectorName}-TraceLogFileMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Collectors-{CollectorName}-TraceLogFileMode-Applicability-End -->
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-TraceLogFileMode-OmaUri-Begin -->
@@ -1489,7 +1489,7 @@ This node is used for setting or getting the trace log file mode of this collect
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 1 |
 <!-- Device-EtwLog-Collectors-{CollectorName}-TraceLogFileMode-DFProperties-End -->
@@ -1515,7 +1515,7 @@ This node is used for setting or getting the trace log file mode of this collect
 <!-- Device-EtwLog-Collectors-{CollectorName}-TraceStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-EtwLog-Collectors-{CollectorName}-TraceStatus-Applicability-End -->
 
 <!-- Device-EtwLog-Collectors-{CollectorName}-TraceStatus-OmaUri-Begin -->
@@ -1538,7 +1538,7 @@ This node is used for getting the status of this collector node's associated tra
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-EtwLog-Collectors-{CollectorName}-TraceStatus-DFProperties-End -->
 
@@ -1554,7 +1554,7 @@ This node is used for getting the status of this collector node's associated tra
 <!-- Device-FileDownload-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FileDownload-Applicability-End -->
 
 <!-- Device-FileDownload-OmaUri-Begin -->
@@ -1589,7 +1589,7 @@ The FileDownload feature of the DiagnosticLog CSP enables a management server to
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-FileDownload-DFProperties-End -->
 
@@ -1605,7 +1605,7 @@ The FileDownload feature of the DiagnosticLog CSP enables a management server to
 <!-- Device-FileDownload-DMChannel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FileDownload-DMChannel-Applicability-End -->
 
 <!-- Device-FileDownload-DMChannel-OmaUri-Begin -->
@@ -1628,7 +1628,7 @@ Root node of all csp nodes that are used for controlling file download for their
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-FileDownload-DMChannel-DFProperties-End -->
 
@@ -1644,7 +1644,7 @@ Root node of all csp nodes that are used for controlling file download for their
 <!-- Device-FileDownload-DMChannel-{FileContext}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FileDownload-DMChannel-{FileContext}-Applicability-End -->
 
 <!-- Device-FileDownload-DMChannel-{FileContext}-OmaUri-Begin -->
@@ -1667,7 +1667,7 @@ Each dynamic node represents a 'FileContext' node corresponding to a log file ge
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 | Dynamic Node Naming | UniqueName: The node name must be the name of a registered 'Provider', 'Collector' or 'Channel' node.  |
 <!-- Device-FileDownload-DMChannel-{FileContext}-DFProperties-End -->
@@ -1684,7 +1684,7 @@ Each dynamic node represents a 'FileContext' node corresponding to a log file ge
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockCount-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockCount-Applicability-End -->
 
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockCount-OmaUri-Begin -->
@@ -1707,7 +1707,7 @@ This node is used for getting the total number of blocks for the associated log 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockCount-DFProperties-End -->
 
@@ -1741,7 +1741,7 @@ This node is used for getting the total number of blocks for the associated log 
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockData-Applicability-End -->
 
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockData-OmaUri-Begin -->
@@ -1764,7 +1764,7 @@ This node is used to get the binary data of the block that 'BlockIndexToRead' no
 
 | Property name | Property value |
 |:--|:--|
-| Format | b64 |
+| Format | `b64` |
 | Access Type | Get |
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockData-DFProperties-End -->
 
@@ -1798,7 +1798,7 @@ This node is used to get the binary data of the block that 'BlockIndexToRead' no
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockIndexToRead-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockIndexToRead-Applicability-End -->
 
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockIndexToRead-OmaUri-Begin -->
@@ -1868,7 +1868,7 @@ This node is used for setting and getting the block index that points to the dat
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockIndexToRead-DFProperties-End -->
 
@@ -1884,7 +1884,7 @@ This node is used for setting and getting the block index that points to the dat
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockSizeKB-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockSizeKB-Applicability-End -->
 
 <!-- Device-FileDownload-DMChannel-{FileContext}-BlockSizeKB-OmaUri-Begin -->
@@ -1907,7 +1907,7 @@ This node is used for setting or getting the block size (in Kilobytes) for the d
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Allowed Values | Range: `[1-16]` |
 | Default Value  | 4 |
@@ -1968,7 +1968,7 @@ This node is used for setting or getting the block size (in Kilobytes) for the d
 <!-- Device-FileDownload-DMChannel-{FileContext}-DataBlocks-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FileDownload-DMChannel-{FileContext}-DataBlocks-Applicability-End -->
 
 <!-- Device-FileDownload-DMChannel-{FileContext}-DataBlocks-OmaUri-Begin -->
@@ -1991,7 +1991,7 @@ Root node of all 'BlockNumber' nodes for the associated log file. The number of 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-FileDownload-DMChannel-{FileContext}-DataBlocks-DFProperties-End -->
 
@@ -2007,7 +2007,7 @@ Root node of all 'BlockNumber' nodes for the associated log file. The number of 
 <!-- Device-FileDownload-DMChannel-{FileContext}-DataBlocks-{BlockNumber}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-FileDownload-DMChannel-{FileContext}-DataBlocks-{BlockNumber}-Applicability-End -->
 
 <!-- Device-FileDownload-DMChannel-{FileContext}-DataBlocks-{BlockNumber}-OmaUri-Begin -->
@@ -2030,7 +2030,7 @@ Each dynamic node represents a 'BlockNumber' node. The node name is an integer e
 
 | Property name | Property value |
 |:--|:--|
-| Format | b64 |
+| Format | `b64` |
 | Access Type | Get |
 | Dynamic Node Naming | ClientInventory |
 <!-- Device-FileDownload-DMChannel-{FileContext}-DataBlocks-{BlockNumber}-DFProperties-End -->
@@ -2047,7 +2047,7 @@ Each dynamic node represents a 'BlockNumber' node. The node name is an integer e
 <!-- Device-Policy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Policy-Applicability-End -->
 
 <!-- Device-Policy-OmaUri-Begin -->
@@ -2071,7 +2071,7 @@ This can be used to configure Windows event log policies, such as maximum log si
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Policy-DFProperties-End -->
 
@@ -2087,7 +2087,7 @@ This can be used to configure Windows event log policies, such as maximum log si
 <!-- Device-Policy-Channels-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Policy-Channels-Applicability-End -->
 
 <!-- Device-Policy-Channels-OmaUri-Begin -->
@@ -2110,7 +2110,7 @@ Contains policy for Event Log channel settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Policy-Channels-DFProperties-End -->
 
@@ -2126,7 +2126,7 @@ Contains policy for Event Log channel settings.
 <!-- Device-Policy-Channels-{ChannelName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Policy-Channels-{ChannelName}-Applicability-End -->
 
 <!-- Device-Policy-Channels-{ChannelName}-OmaUri-Begin -->
@@ -2149,7 +2149,7 @@ Each dynamic node represents a registered 'Channel' node. The node name must be 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: The node name must be a valid Windows event log channel name, such as Microsoft-Client-Licensing-Platform%2FAdmin. When specifying the name in the LocURI, it must be URL encoded, otherwise it may unexpectedly translate into a different URI. |
 <!-- Device-Policy-Channels-{ChannelName}-DFProperties-End -->
@@ -2231,7 +2231,7 @@ Each dynamic node represents a registered 'Channel' node. The node name must be 
 <!-- Device-Policy-Channels-{ChannelName}-ActionWhenFull-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Policy-Channels-{ChannelName}-ActionWhenFull-Applicability-End -->
 
 <!-- Device-Policy-Channels-{ChannelName}-ActionWhenFull-OmaUri-Begin -->
@@ -2255,7 +2255,7 @@ If you disable or don't configure this policy setting, the locally configured va
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Policy-Channels-{ChannelName}-ActionWhenFull-DFProperties-End -->
 
@@ -2264,9 +2264,9 @@ If you disable or don't configure this policy setting, the locally configured va
 
 | Value | Description |
 |:--|:--|
-| Truncate | When the log file reaches its maximum file size, new events are not written to the log and are lost. |
+| Truncate | When the log file reaches its maximum file size, new events aren't written to the log and are lost. |
 | Overwrite | When the log file reaches its maximum file size, new events overwrite old events. |
-| Archive | When the log file reaches its maximum size, the log file is saved to the location specified by the "Archive Location" policy setting. If archive location value is not set, the new file is saved in the same directory as current log file. |
+| Archive | When the log file reaches its maximum size, the log file is saved to the location specified by the "Archive Location" policy setting. If archive location value isn't set, the new file is saved in the same directory as current log file. |
 <!-- Device-Policy-Channels-{ChannelName}-ActionWhenFull-AllowedValues-End -->
 
 <!-- Device-Policy-Channels-{ChannelName}-ActionWhenFull-Examples-Begin -->
@@ -2372,7 +2372,7 @@ If you disable or don't configure this policy setting, the locally configured va
 <!-- Device-Policy-Channels-{ChannelName}-Enabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Policy-Channels-{ChannelName}-Enabled-Applicability-End -->
 
 <!-- Device-Policy-Channels-{ChannelName}-Enabled-OmaUri-Begin -->
@@ -2396,7 +2396,7 @@ If you disable or don't configure this policy setting, the locally configured va
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Policy-Channels-{ChannelName}-Enabled-DFProperties-End -->
 
@@ -2512,7 +2512,7 @@ If you disable or don't configure this policy setting, the locally configured va
 <!-- Device-Policy-Channels-{ChannelName}-MaximumFileSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Policy-Channels-{ChannelName}-MaximumFileSize-Applicability-End -->
 
 <!-- Device-Policy-Channels-{ChannelName}-MaximumFileSize-OmaUri-Begin -->
@@ -2537,7 +2537,7 @@ Maximum size of the channel log file in MB.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-2000000]` |
 | Default Value  | 1 |
@@ -2646,7 +2646,7 @@ Maximum size of the channel log file in MB.
 <!-- Device-Policy-Channels-{ChannelName}-SDDL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Policy-Channels-{ChannelName}-SDDL-Applicability-End -->
 
 <!-- Device-Policy-Channels-{ChannelName}-SDDL-OmaUri-Begin -->
@@ -2669,7 +2669,7 @@ SDDL String controlling access to the channel. For more information, see [Channe
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Case Sensitive | True |
 <!-- Device-Policy-Channels-{ChannelName}-SDDL-DFProperties-End -->

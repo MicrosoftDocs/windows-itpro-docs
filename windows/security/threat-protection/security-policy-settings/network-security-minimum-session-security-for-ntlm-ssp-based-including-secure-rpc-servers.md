@@ -1,5 +1,5 @@
 ---
-title: Network security Minimum session security for NTLM SSP based (including secure RPC) servers (Windows 10)
+title: Network security Minimum session security for NTLM SSP based (including secure RPC) servers 
 description: Best practices and security considerations for the policy setting, Network security Minimum session security for NTLM SSP based (including secure RPC) servers.
 ms.assetid: c6a60c1b-bc8d-4d02-9481-f847a411b4fc
 ms.reviewer: 

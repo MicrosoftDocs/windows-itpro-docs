@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.author: vinpa
 author: vinaypamnani-msft
 manager: aaroncz
-ms.collection: 
+ms.collection:
   - highpri
   - tier3
 ms.topic: conceptual
@@ -41,6 +41,8 @@ For example, there are over 3,000 group policy settings for Windows 10, which do
 
 In modern organizations, the security threat landscape is constantly evolving, and IT pros and policy-makers must keep up with security threats and make required changes to security settings to help mitigate these threats. To enable faster deployments and make managing Microsoft products easier, Microsoft provides customers with security baselines that are available in consumable formats, such as group policy object backups.
 
+[!INCLUDE [security-baselines](../../../../includes/licensing/security-baselines.md)]
+
 ## Baseline principles
 
 Our recommendations follow a streamlined and efficient approach to baseline definitions. The foundation of that approach is essentially:
@@ -68,12 +70,7 @@ There are several ways to get and use security baselines:
 
 3. MDM security baselines can easily be configured in Microsoft Intune on devices that run Windows 10 and Windows 11. For more information, see [List of the settings in the Windows 10/11 MDM security baseline in Intune](/mem/intune/protect/security-baseline-settings-mdm-all).
 
-## Community
-
-[![Microsoft Security Guidance Blog.](./../images/community.png)](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines)
-
-
-## See also
+## Related articles
 
 - [Microsoft Security Baselines Blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines)
 - [Microsoft Security Compliance Toolkit](https://www.microsoft.com/download/details.aspx?id=55319)

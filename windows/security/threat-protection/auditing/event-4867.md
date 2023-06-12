@@ -1,5 +1,5 @@
 ---
-title: 4867(S) A trusted forest information entry was modified. (Windows 10)
+title: 4867(S) A trusted forest information entry was modified. 
 description: Describes security event 4867(S) A trusted forest information entry was modified.
 ms.pagetype: security
 ms.prod: windows-client

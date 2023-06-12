@@ -1,29 +1,18 @@
 ---
-title: Export an AppLocker policy from a GPO (Windows)
+title: Export an AppLocker policy from a GPO
 description: This topic for IT professionals describes the steps to export an AppLocker policy from a Group Policy Object (GPO) so that it can be modified.
-ms.assetid: 7db59719-a8be-418b-bbfd-22cf2176c9c0
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # Export an AppLocker policy from a GPO
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -32,7 +21,7 @@ This topic for IT professionals describes the steps to export an AppLocker polic
 
 Updating an AppLocker policy that is currently enforced in your production environment can have unintended results. Therefore, export the policy from the GPO and update the rule or rules by using AppLocker on your AppLocker reference device.
 
-To complete this procedure, you must have the **Edit Setting** permission to edit a GPO. By default, members of the **Domain Admins** group, the **Enterprise Admins** group, and the **Group Policy Creator Owners** group have this permission.
+To complete this procedure, you must have the **Edit Setting** permission to edit a GPO. By default, members of the **Domain Admins** group, the **Enterprise Admins** group, and the **Group Policy Creator Owners** group have this permission.
 
 **Export the policy from the GPO**
 

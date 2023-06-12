@@ -1,5 +1,5 @@
 ---
-title: 4781(S) The name of an account was changed. (Windows 10)
+title: 4781(S) The name of an account was changed. 
 description: Describes security event 4781(S) The name of an account was changed. This event is generated every time a user or computer account name is changed.
 ms.pagetype: security
 ms.prod: windows-client

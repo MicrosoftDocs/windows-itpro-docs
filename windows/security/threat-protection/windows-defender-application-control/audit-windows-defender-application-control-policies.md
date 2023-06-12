@@ -1,5 +1,5 @@
 ---
-title: Use audit events to create WDAC policy rules (Windows)
+title: Use audit events to create WDAC policy rules 
 description: Audits allow admins to discover apps, binaries, and scripts that should be added to the WDAC policy.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb

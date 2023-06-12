@@ -1,5 +1,5 @@
 ---
-title: 4616(S) The system time was changed. (Windows 10)
+title: 4616(S) The system time was changed. 
 description: Describes security event 4616(S) The system time was changed. This event is generated every time system time is changed.
 ms.pagetype: security
 ms.prod: windows-client

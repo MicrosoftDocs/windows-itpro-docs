@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/24/2023
+ms.date: 06/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -47,7 +47,7 @@ The following XML file contains the device description framework (DDF) for the D
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>10.0.10240</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x77;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x87;0x88;0x88*;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xB4;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -484,7 +484,7 @@ The following XML file contains the device description framework (DDF) for the D
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>10.0.10240</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x77;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x87;0x88;0x88*;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xB4;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -2944,6 +2944,125 @@ The following XML file contains the device description framework (DDF) for the D
               <DFType>
                 <MIME />
               </DFType>
+            </DFProperties>
+          </Node>
+        </Node>
+        <Node>
+          <NodeName>ConfigRefresh</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+            </AccessType>
+            <Description>Parent node for ConfigRefresh nodes</Description>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <DDFName />
+            </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.6</MSFT:CspVersion>
+            </MSFT:Applicability>
+          </DFProperties>
+          <Node>
+            <NodeName>Enabled</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <DefaultValue>false</DefaultValue>
+              <Description>This node determines whether or not a periodic settings refresh for MDM policies will occur.</Description>
+              <DFFormat>
+                <bool />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>true</MSFT:Value>
+                  <MSFT:ValueDescription>ConfigRefresh is enabled.</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>false</MSFT:Value>
+                  <MSFT:ValueDescription>ConfigRefresh is disabled.</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
+              <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>Cadence</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <DefaultValue>90</DefaultValue>
+              <Description>This node determines the number of minutes between refreshes.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:AllowedValues ValueType="Range">
+                <MSFT:Value>[30-1440]</MSFT:Value>
+              </MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>PausePeriod</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <DefaultValue>0</DefaultValue>
+              <Description>This node determines the number of minutes ConfigRefresh should be paused for.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:AllowedValues ValueType="Range">
+                <MSFT:Value>[0-1440]</MSFT:Value>
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
         </Node>

@@ -1,7 +1,7 @@
 ---
 title: Device registration overview
 description: This article provides an overview on how to register devices in Autopatch
-ms.date: 05/02/2023
+ms.date: 06/06/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -115,13 +115,13 @@ The Windows Autopatch deployment ring calculation occurs during the device reg
 > [!NOTE]
 > You can customize the deployment ring calculation logic by editing the Default Autopatch group.
 
-| Deployment ring | Default device balancing percentage | Description |
-| ----- | ----- | ----- |
-| Test | **zero** | Windows Autopatch doesn't automatically add devices to this deployment ring. You must manually add devices to the Test ring following the required procedure. For more information on these procedures, see [Moving devices in between deployment rings](/windows/deployment/windows-autopatch/operate/windows-autopatch-update-management#moving-devices-in-between-deployment-rings). The recommended number of devices in this ring, based upon your environment size, is as follows:<br><ul><li>**0–500** devices: minimum **one** device.</li><li>**500–5000** devices: minimum **five** devices.</li><li>**5000+** devices: minimum **50** devices.</li></ul>Devices in this group are intended for your IT Administrators and testers since changes are released here first. This release schedule provides your organization the opportunity to validate updates prior to reaching production users. |
-| First |  **1%** | The First ring is the first group of production users to receive a change.<p><p>This group is the first set of devices to send data to Windows Autopatch and are used to generate a health signal across all end-users. For example, Windows Autopatch can generate a statistically significant signal saying that critical errors are trending up in a specific release for all end-users, but can't be confident that it's doing so in your organization.<p><p>Since Windows Autopatch doesn't yet have sufficient data to inform a release decision, devices in this deployment ring might experience outages if there are scenarios that weren't covered during early testing in the Test ring.|
-| Fast | **9%** | The Fast ring is the second group of production users to receive changes. The signals from the First ring are considered as a part of the release process to the Broad ring.<p><p>The goal with this deployment ring is to cross the **500**-device threshold needed to generate statistically significant analysis at the tenant level. These extra devices allow Windows Autopatch to consider the effect of a release on the rest of your devices and evaluate if a targeted action for your tenant is needed.</p> |
-| Broad | Either **80%** or **90%** | The Broad ring is the last group of users to receive software update deployments. Since it contains most of the devices registered with Windows Autopatch, it favors stability over speed in a software update deployment.|
-| Last | **zero** | The Last ring is intended to be used for either specialized devices or devices that belong to VIP/executives in an organization. Windows Autopatch doesn't automatically add devices to this deployment ring. |
+| Service-based deployment ring | Default Autopatch group deployment ring | Default device balancing percentage | Description |
+| ----- | ----- | ----- | ----- |
+| Test | Test | **zero** | Windows Autopatch doesn't automatically add devices to this deployment ring. You must manually add devices to the Test ring following the required procedure. For more information on these procedures, see [Moving devices in between deployment rings](/windows/deployment/windows-autopatch/operate/windows-autopatch-update-management#moving-devices-in-between-deployment-rings). The recommended number of devices in this ring, based upon your environment size, is as follows:<br><ul><li>**0–500** devices: minimum **one** device.</li><li>**500–5000** devices: minimum **five** devices.</li><li>**5000+** devices: minimum **50** devices.</li></ul>Devices in this group are intended for your IT Administrators and testers since changes are released here first. This release schedule provides your organization the opportunity to validate updates prior to reaching production users. |
+| First | Ring 1 |  **1%** | The First ring is the first group of production users to receive a change.<p><p>This group is the first set of devices to send data to Windows Autopatch and are used to generate a health signal across all end-users. For example, Windows Autopatch can generate a statistically significant signal saying that critical errors are trending up in a specific release for all end-users, but can't be confident that it's doing so in your organization.<p><p>Since Windows Autopatch doesn't yet have sufficient data to inform a release decision, devices in this deployment ring might experience outages if there are scenarios that weren't covered during early testing in the Test ring.|
+| Fast | Ring 2 | **9%** | The Fast ring is the second group of production users to receive changes. The signals from the First ring are considered as a part of the release process to the Broad ring.<p><p>The goal with this deployment ring is to cross the **500**-device threshold needed to generate statistically significant analysis at the tenant level. These extra devices allow Windows Autopatch to consider the effect of a release on the rest of your devices and evaluate if a targeted action for your tenant is needed.</p> |
+| Broad | Ring 3 | Either **80%** or **90%** | The Broad ring is the last group of users to receive software update deployments. Since it contains most of the devices registered with Windows Autopatch, it favors stability over speed in a software update deployment.|
+| N/A | Last | **zero** | The Last ring is intended to be used for either specialized devices or devices that belong to VIP/executives in an organization. Windows Autopatch doesn't automatically add devices to this deployment ring. |
 
 ## Software update-based to service-based deployment ring mapping
 
@@ -141,6 +141,9 @@ If your Autopatch groups have more than five deployment rings, and you must move
 
 If you want to move devices to different deployment rings (either service or software update-based), after Windows Autopatch's deployment ring assignment, you can repeat the following steps for one or more devices from the **Registered** tab.
 
+> [!IMPORTANT]
+> You can only move devices in between deployment rings within the **same** Autopatch group. You can't move devices in between deployment rings across different Autopatch groups. If you try to select a device that belongs to one Autopatch group, and another device that belongs to a different Autopatch group, you'll receive the following error message on the top right corner of the Microsoft Intune portal: "**An error occurred. Please select devices within the same Autopatch group**.
+
 **To move devices in between deployment rings:**
 
 > [!NOTE]
@@ -150,7 +153,7 @@ If you want to move devices to different deployment rings (either service or sof
 1. In the **Windows Autopatch** section, select **Devices**.
 1. In the **Registered** tab, select one or more devices you want to assign. All selected devices will be assigned to the deployment ring you specify.
 1. Select **Device actions** from the menu.
-1. Select **Assign device group**. A fly-in opens.
+1. Select **Assign ring**. A fly-in opens.
 1. Use the dropdown menu to select the deployment ring to move devices to, and then select Save. The Ring assigned by column will change to Pending.
 1. When the assignment is complete, the **Ring assigned by** column changes to Admin (which indicates that you made the change) and the **Ring** column shows the new deployment ring assignment.
 

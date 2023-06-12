@@ -1,5 +1,5 @@
 ---
-title: 5447(S) A Windows Filtering Platform filter has been changed. (Windows 10)
+title: 5447(S) A Windows Filtering Platform filter has been changed. 
 description: Describes security event 5447(S) A Windows Filtering Platform filter has been changed.
 ms.pagetype: security
 ms.prod: windows-client

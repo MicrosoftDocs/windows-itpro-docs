@@ -1,5 +1,5 @@
 ---
-title: Audit PNP Activity (Windows 10)
+title: Audit PNP Activity 
 description: The advanced security audit policy setting, Audit PNP Activity, determines when plug and play detects an external device.
 ms.assetid: A3D87B3B-EBBE-442A-953B-9EB75A5F600E
 ms.reviewer: 

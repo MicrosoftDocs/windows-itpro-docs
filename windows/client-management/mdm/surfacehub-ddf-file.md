@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/24/2023
+ms.date: 05/01/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -50,102 +50,6 @@ The following XML file contains the device description framework (DDF) for the S
         <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x77;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xB4;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
-    <Node>
-      <NodeName>AutopilotSelfdeploy</NodeName>
-      <DFProperties>
-        <AccessType>
-          <Get />
-        </AccessType>
-        <Description>Node for setting Autopilot self-deployment mode device account information. This information is stored and committed by the Autopilot client during the Enrollment Status Page phase of OOBE for Surface Hub devices that are using Autopilot self-deploying mode. These values should be set only during the first sync phase of enrollment and are ignored at any other time.</Description>
-        <DFFormat>
-          <node />
-        </DFFormat>
-        <Occurrence>
-          <One />
-        </Occurrence>
-        <Scope>
-          <Permanent />
-        </Scope>
-        <DFType>
-          <DDFName />
-        </DFType>
-        <CaseSense>
-          <CS />
-        </CaseSense>
-      </DFProperties>
-      <Node>
-        <NodeName>UserPrincipalName</NodeName>
-        <DFProperties>
-          <AccessType>
-            <Get />
-            <Replace />
-          </AccessType>
-          <Description>User principal name (UPN) of the device account. Autopilot on Surface Hub only supports Azure Active Directory, and this should specify the UPN of the device account. Get is allowed here but only returns a blank</Description>
-          <DFFormat>
-            <chr />
-          </DFFormat>
-          <Occurrence>
-            <One />
-          </Occurrence>
-          <Scope>
-            <Permanent />
-          </Scope>
-          <DFType>
-            <MIME />
-          </DFType>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
-        </DFProperties>
-      </Node>
-      <Node>
-        <NodeName>Password</NodeName>
-        <DFProperties>
-          <AccessType>
-            <Get />
-            <Replace />
-          </AccessType>
-          <Description>Password for the device account. Get is allowed here, but will always return a blank.</Description>
-          <DFFormat>
-            <chr />
-          </DFFormat>
-          <Occurrence>
-            <One />
-          </Occurrence>
-          <Scope>
-            <Permanent />
-          </Scope>
-          <DFType>
-            <MIME />
-          </DFType>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
-        </DFProperties>
-      </Node>
-      <Node>
-        <NodeName>FriendlyName</NodeName>
-        <DFProperties>
-          <AccessType>
-            <Get />
-            <Replace />
-          </AccessType>
-          <Description>The device friendly name set during Autopilot self-deploying mode on Surface Hub. Get is allowed here but only returns a blank</Description>
-          <DFFormat>
-            <chr />
-          </DFFormat>
-          <Occurrence>
-            <One />
-          </Occurrence>
-          <Scope>
-            <Permanent />
-          </Scope>
-          <DFType>
-            <MIME />
-          </DFType>
-          <MSFT:AllowedValues ValueType="None">
-          </MSFT:AllowedValues>
-        </DFProperties>
-      </Node>
-    </Node>
     <Node>
       <NodeName>DeviceAccount</NodeName>
       <DFProperties>

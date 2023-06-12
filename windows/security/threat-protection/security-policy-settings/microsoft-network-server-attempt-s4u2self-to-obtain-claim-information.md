@@ -1,5 +1,5 @@
 ---
-title: Microsoft network server Attempt S4U2Self (Windows 10)
+title: Microsoft network server Attempt S4U2Self 
 description: Learn about the security policy setting, Microsoft network server Attempt S4U2Self to obtain claim information.
 ms.assetid: e4508387-35ed-4a3f-a47c-27f8396adbba
 ms.reviewer: 

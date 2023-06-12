@@ -1,5 +1,5 @@
 ---
-title: 5158(S) The Windows Filtering Platform has permitted a bind to a local port. (Windows 10)
+title: 5158(S) The Windows Filtering Platform has permitted a bind to a local port. 
 description: Describes security event 5158(S) The Windows Filtering Platform has permitted a bind to a local port.
 ms.pagetype: security
 ms.prod: windows-client

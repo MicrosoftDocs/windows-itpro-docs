@@ -1,5 +1,5 @@
 ---
-title: 4906(S) The CrashOnAuditFail value has changed. (Windows 10)
+title: 4906(S) The CrashOnAuditFail value has changed. 
 description: Describes security event 4906(S) The CrashOnAuditFail value has changed.
 ms.pagetype: security
 ms.prod: windows-client

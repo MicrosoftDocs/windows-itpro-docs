@@ -1,0 +1,7 @@
+items:
+- name: Overview
+  href: ../security-foundations.md
+- name: Microsoft Security Development Lifecycle
+  href: ../threat-protection/msft-security-dev-lifecycle.md
+- name: Certification
+  href: certification/toc.yml

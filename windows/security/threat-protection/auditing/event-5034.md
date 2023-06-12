@@ -1,5 +1,5 @@
 ---
-title: 5034(S) The Windows Firewall Driver was stopped. (Windows 10)
+title: 5034(S) The Windows Firewall Driver was stopped. 
 description: Describes security event 5034(S) The Windows Firewall Driver was stopped.
 ms.pagetype: security
 ms.prod: windows-client

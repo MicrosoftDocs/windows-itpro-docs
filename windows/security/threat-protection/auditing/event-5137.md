@@ -1,5 +1,5 @@
 ---
-title: 5137(S) A directory service object was created. (Windows 10)
+title: 5137(S) A directory service object was created. 
 description: Describes security event 5137(S) A directory service object was created.
 ms.pagetype: security
 ms.prod: windows-client

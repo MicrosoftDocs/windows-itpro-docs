@@ -4,7 +4,7 @@ description: Learn about the policies in Policy CSP supported by Windows 10 Team
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/28/2023
+ms.date: 05/01/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -257,6 +257,7 @@ This article lists the policies in Policy CSP that are applicable for the Surfac
 
 ## Start
 
+- [HideRecommendedPersonalizedSites](policy-csp-start.md#hiderecommendedpersonalizedsites)
 - [StartLayout](policy-csp-start.md#startlayout)
 
 ## System

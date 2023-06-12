@@ -1,5 +1,5 @@
 ---
-title: 4610(S) An authentication package has been loaded by the Local Security Authority. (Windows 10)
+title: 4610(S) An authentication package has been loaded by the Local Security Authority. 
 description: Describes security event 4610(S) An authentication package has been loaded by the Local Security Authority.
 ms.pagetype: security
 ms.prod: windows-client

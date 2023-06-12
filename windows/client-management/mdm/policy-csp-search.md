@@ -4,7 +4,7 @@ description: Learn more about the Search Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,8 +16,7 @@ ms.topic: reference
 <!-- Search-Begin -->
 # Policy CSP - Search
 
-> [!IMPORTANT]
-> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- Search-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -29,7 +28,7 @@ ms.topic: reference
 <!-- AllowCloudSearch-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowCloudSearch-Applicability-End -->
 
 <!-- AllowCloudSearch-OmaUri-Begin -->
@@ -52,7 +51,7 @@ Allow search and Cortana to search cloud sources like OneDrive and SharePoint.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowCloudSearch-DFProperties-End -->
@@ -92,7 +91,7 @@ Allow search and Cortana to search cloud sources like OneDrive and SharePoint.
 <!-- AllowCortanaInAAD-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- AllowCortanaInAAD-Applicability-End -->
 
 <!-- AllowCortanaInAAD-OmaUri-Begin -->
@@ -115,7 +114,7 @@ Allow the cortana opt-in page during windows setup out of the box experience.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowCortanaInAAD-DFProperties-End -->
@@ -125,7 +124,7 @@ Allow the cortana opt-in page during windows setup out of the box experience.
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Not allowed. The Cortana consent page will not appear in AAD OOBE during setup. |
+| 0 (Default) | Not allowed. The Cortana consent page won't appear in AAD OOBE during setup. |
 | 1 | Allowed. The Cortana consent page will appear in Azure AAD OOBE during setup. |
 <!-- AllowCortanaInAAD-AllowedValues-End -->
 
@@ -155,7 +154,7 @@ Allow the cortana opt-in page during windows setup out of the box experience.
 <!-- AllowFindMyFiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- AllowFindMyFiles-Applicability-End -->
 
 <!-- AllowFindMyFiles-OmaUri-Begin -->
@@ -180,7 +179,7 @@ This policy controls whether the user can configure search to *Find My Files* mo
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowFindMyFiles-DFProperties-End -->
@@ -215,7 +214,7 @@ This policy controls whether the user can configure search to *Find My Files* mo
 <!-- AllowIndexingEncryptedStoresOrItems-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowIndexingEncryptedStoresOrItems-Applicability-End -->
 
 <!-- AllowIndexingEncryptedStoresOrItems-OmaUri-Begin -->
@@ -229,8 +228,10 @@ This policy controls whether the user can configure search to *Find My Files* mo
 This policy setting allows encrypted items to be indexed.
 
 - If you enable this policy setting, indexing will attempt to decrypt and index the content (access restrictions will still apply).
-- If you disable this policy setting, the search service components (including non-Microsoft components) are expected not to index encrypted items or encrypted stores. This policy setting is not configured by default.
-- If you do not configure this policy setting, the local setting, configured through Control Panel, will be used. By default, the Control Panel setting is set to not index encrypted content.
+
+- If you disable this policy setting, the search service components (including non-Microsoft components) are expected not to index encrypted items or encrypted stores. This policy setting isn't configured by default.
+
+- If you don't configure this policy setting, the local setting, configured through Control Panel, will be used. By default, the Control Panel setting is set to not index encrypted content.
 
 When this setting is enabled or disabled, the index is rebuilt completely.
 
@@ -252,7 +253,7 @@ The most restrictive value is `0` to not allow indexing of encrypted items.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowIndexingEncryptedStoresOrItems-DFProperties-End -->
@@ -292,7 +293,7 @@ The most restrictive value is `0` to not allow indexing of encrypted items.
 <!-- AllowSearchHighlights-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | <!-- Not-Found --> |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | <!-- Not-Found --> |
 <!-- AllowSearchHighlights-Applicability-End -->
 
 <!-- AllowSearchHighlights-OmaUri-Begin -->
@@ -322,7 +323,7 @@ Disabling this setting turns off search highlights in the start menu search box 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-1]` |
 | Default Value  | 1 |
@@ -354,7 +355,7 @@ Disabling this setting turns off search highlights in the start menu search box 
 <!-- AllowSearchToUseLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowSearchToUseLocation-Applicability-End -->
 
 <!-- AllowSearchToUseLocation-OmaUri-Begin -->
@@ -381,7 +382,7 @@ The most restrictive value is `0` to not allow search to use location.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowSearchToUseLocation-DFProperties-End -->
@@ -421,7 +422,7 @@ The most restrictive value is `0` to not allow search to use location.
 <!-- AllowStoringImagesFromVisionSearch-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowStoringImagesFromVisionSearch-Applicability-End -->
 
 <!-- AllowStoringImagesFromVisionSearch-OmaUri-Begin -->
@@ -444,7 +445,7 @@ This policy has been deprecated.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowStoringImagesFromVisionSearch-DFProperties-End -->
@@ -470,7 +471,7 @@ This policy has been deprecated.
 <!-- AllowUsingDiacritics-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowUsingDiacritics-Applicability-End -->
 
 <!-- AllowUsingDiacritics-OmaUri-Begin -->
@@ -484,8 +485,10 @@ This policy has been deprecated.
 This policy setting allows words that contain diacritic characters to be treated as separate words.
 
 - If you enable this policy setting, words that only differ in diacritics are treated as different words.
-- If you disable this policy setting, words with diacritics and words without diacritics are treated as identical words. This policy setting is not configured by default.
-- If you do not configure this policy setting, the local setting, configured through Control Panel, will be used.
+
+- If you disable this policy setting, words with diacritics and words without diacritics are treated as identical words. This policy setting isn't configured by default.
+
+- If you don't configure this policy setting, the local setting, configured through Control Panel, will be used.
 
 > [!NOTE]
 > By default, the Control Panel setting is set to treat words that differ only because of diacritics as the same word.
@@ -502,7 +505,7 @@ The most restrictive value is `0` to not allow the use of diacritics.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowUsingDiacritics-DFProperties-End -->
@@ -542,7 +545,7 @@ The most restrictive value is `0` to not allow the use of diacritics.
 <!-- AllowWindowsIndexer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowWindowsIndexer-Applicability-End -->
 
 <!-- AllowWindowsIndexer-OmaUri-Begin -->
@@ -565,7 +568,7 @@ Allow Windows indexer. Value type is integer.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-3]` |
 | Default Value  | 3 |
@@ -583,7 +586,7 @@ Allow Windows indexer. Value type is integer.
 <!-- AlwaysUseAutoLangDetection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AlwaysUseAutoLangDetection-Applicability-End -->
 
 <!-- AlwaysUseAutoLangDetection-OmaUri-Begin -->
@@ -597,7 +600,8 @@ Allow Windows indexer. Value type is integer.
 This policy setting determines when Windows uses automatic language detection results, and when it relies on indexing history.
 
 - If you enable this policy setting, Windows will always use automatic language detection to index (as it did in Windows 7). Using automatic language detection can increase memory usage. We recommend enabling this policy setting only on PCs where documents are stored in many languages.
-- If you disable or do not configure this policy setting, Windows will use automatic language detection only when it can determine the language of a document with high confidence.
+
+- If you disable or don't configure this policy setting, Windows will use automatic language detection only when it can determine the language of a document with high confidence.
 <!-- AlwaysUseAutoLangDetection-Description-End -->
 
 <!-- AlwaysUseAutoLangDetection-Editable-Begin -->
@@ -611,7 +615,7 @@ The most restrictive value is `0` to now allow automatic language detection.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AlwaysUseAutoLangDetection-DFProperties-End -->
@@ -651,7 +655,7 @@ The most restrictive value is `0` to now allow automatic language detection.
 <!-- ConfigureSearchOnTaskbarMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
 <!-- ConfigureSearchOnTaskbarMode-Applicability-End -->
 
 <!-- ConfigureSearchOnTaskbarMode-OmaUri-Begin -->
@@ -664,15 +668,15 @@ The most restrictive value is `0` to now allow automatic language detection.
 <!-- Description-Source-ADMX-Forced -->
 This policy setting allows you to configure search on the taskbar.
 
-- If you enable this policy setting and set it to hide, search on taskbar will be hidden by default. Users cannot change it in Settings.
+- If you enable this policy setting and set it to hide, search on taskbar will be hidden by default. Users can't change it in Settings.
 
-- If you enable this policy setting and set it to search icon only, the search icon will be displayed on the taskbar by default. Users cannot change it in Settings.
+- If you enable this policy setting and set it to search icon only, the search icon will be displayed on the taskbar by default. Users can't change it in Settings.
 
-- If you enable this policy setting and set it to search icon and label, the search icon and label will be displayed on the taskbar by default. Users cannot change it in Settings.
+- If you enable this policy setting and set it to search icon and label, the search icon and label will be displayed on the taskbar by default. Users can't change it in Settings.
 
-- If you enable this policy setting and set it to search box, the search box will be displayed on the taskbar by default. Users cannot change it in Settings.
+- If you enable this policy setting and set it to search box, the search box will be displayed on the taskbar by default. Users can't change it in Settings.
 
-- If you disable or do not configure this policy setting, search on taskbar will be configured according to the defaults for your Windows edition. Users will be able to change search on taskbar in Settings.
+- If you disable or don't configure this policy setting, search on taskbar will be configured according to the defaults for your Windows edition. Users will be able to change search on taskbar in Settings.
 <!-- ConfigureSearchOnTaskbarMode-Description-End -->
 
 <!-- ConfigureSearchOnTaskbarMode-Editable-Begin -->
@@ -684,7 +688,7 @@ This policy setting allows you to configure search on the taskbar.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 3 |
 <!-- ConfigureSearchOnTaskbarMode-DFProperties-End -->
@@ -726,7 +730,7 @@ This policy setting allows you to configure search on the taskbar.
 <!-- DisableBackoff-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DisableBackoff-Applicability-End -->
 
 <!-- DisableBackoff-OmaUri-Begin -->
@@ -749,7 +753,7 @@ If enabled, the search indexer backoff feature will be disabled. Indexing will c
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableBackoff-DFProperties-End -->
@@ -789,7 +793,7 @@ If enabled, the search indexer backoff feature will be disabled. Indexing will c
 <!-- DisableRemovableDriveIndexing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DisableRemovableDriveIndexing-Applicability-End -->
 
 <!-- DisableRemovableDriveIndexing-OmaUri-Begin -->
@@ -802,9 +806,9 @@ If enabled, the search indexer backoff feature will be disabled. Indexing will c
 <!-- Description-Source-ADMX -->
 This policy setting configures whether or not locations on removable drives can be added to libraries.
 
-- If you enable this policy setting, locations on removable drives cannot be added to libraries. In addition, locations on removable drives cannot be indexed.
+- If you enable this policy setting, locations on removable drives can't be added to libraries. In addition, locations on removable drives can't be indexed.
 
-- If you disable or do not configure this policy setting, locations on removable drives can be added to libraries. In addition, locations on removable drives can be indexed.
+- If you disable or don't configure this policy setting, locations on removable drives can be added to libraries. In addition, locations on removable drives can be indexed.
 <!-- DisableRemovableDriveIndexing-Description-End -->
 
 <!-- DisableRemovableDriveIndexing-Editable-Begin -->
@@ -816,7 +820,7 @@ This policy setting configures whether or not locations on removable drives can 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableRemovableDriveIndexing-DFProperties-End -->
@@ -856,7 +860,7 @@ This policy setting configures whether or not locations on removable drives can 
 <!-- DisableSearch-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- DisableSearch-Applicability-End -->
 
 <!-- DisableSearch-OmaUri-Begin -->
@@ -882,7 +886,7 @@ This policy setting configures whether or not locations on removable drives can 
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisableSearch-DFProperties-End -->
@@ -892,7 +896,7 @@ This policy setting configures whether or not locations on removable drives can 
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | Do not disable. |
+| 0 (Default) | Don't disable. |
 | 1 | Disable. |
 <!-- DisableSearch-AllowedValues-End -->
 
@@ -922,7 +926,7 @@ This policy setting configures whether or not locations on removable drives can 
 <!-- DoNotUseWebResults-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DoNotUseWebResults-Applicability-End -->
 
 <!-- DoNotUseWebResults-OmaUri-Begin -->
@@ -935,7 +939,7 @@ This policy setting configures whether or not locations on removable drives can 
 <!-- Description-Source-ADMX -->
 This policy setting allows you to control whether or not Search can perform queries on the web, if web results are displayed in Search, and if search highlights are shown in the search box and in search home.
 
-- If you enable this policy setting, queries won't be performed on the web, web results won't be displayed when a user performs a query in Search, and search highlights will not be shown in the search box and in search home.
+- If you enable this policy setting, queries won't be performed on the web, web results won't be displayed when a user performs a query in Search, and search highlights won't be shown in the search box and in search home.
 
 - If you disable this policy setting, queries will be performed on the web, web results will be displayed when a user performs a query in Search, and search highlights will be shown in the search box and in search home.
 
@@ -951,7 +955,7 @@ This policy setting allows you to control whether or not Search can perform quer
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- DoNotUseWebResults-DFProperties-End -->
@@ -991,7 +995,7 @@ This policy setting allows you to control whether or not Search can perform quer
 <!-- PreventIndexingLowDiskSpaceMB-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- PreventIndexingLowDiskSpaceMB-Applicability-End -->
 
 <!-- PreventIndexingLowDiskSpaceMB-OmaUri-Begin -->
@@ -1014,7 +1018,7 @@ Enabling this policy prevents indexing from continuing after less than the speci
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- PreventIndexingLowDiskSpaceMB-DFProperties-End -->
@@ -1053,7 +1057,7 @@ Enabling this policy prevents indexing from continuing after less than the speci
 <!-- PreventRemoteQueries-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- PreventRemoteQueries-Applicability-End -->
 
 <!-- PreventRemoteQueries-OmaUri-Begin -->
@@ -1064,7 +1068,7 @@ Enabling this policy prevents indexing from continuing after less than the speci
 
 <!-- PreventRemoteQueries-Description-Begin -->
 <!-- Description-Source-DDF-Forced -->
-If enabled, clients will be unable to query this computer's index remotely. Thus, when they are browsing network shares that are stored on this computer, they will not search them using the index. If disabled, client search requests will use this computer's index. .
+If enabled, clients will be unable to query this computer's index remotely. Thus, when they're browsing network shares that are stored on this computer, they won't search them using the index. If disabled, client search requests will use this computer's index. .
 <!-- PreventRemoteQueries-Description-End -->
 
 <!-- PreventRemoteQueries-Editable-Begin -->
@@ -1076,7 +1080,7 @@ If enabled, clients will be unable to query this computer's index remotely. Thus
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- PreventRemoteQueries-DFProperties-End -->
@@ -1119,7 +1123,7 @@ If enabled, clients will be unable to query this computer's index remotely. Thus
 <!-- SafeSearchPermissions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :x: Enterprise <br> :x: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- SafeSearchPermissions-Applicability-End -->
 
 <!-- SafeSearchPermissions-OmaUri-Begin -->
@@ -1142,7 +1146,7 @@ This policy is deprecated.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- SafeSearchPermissions-DFProperties-End -->

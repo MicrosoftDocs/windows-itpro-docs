@@ -1,5 +1,5 @@
 ---
-title: Smart Card Tools and Settings (Windows)
+title: Smart Card Tools and Settings 
 description: This topic for the IT professional and smart card developer links to information about smart card debugging, settings, and events.
 ms.reviewer: ardenw
 ms.topic: article

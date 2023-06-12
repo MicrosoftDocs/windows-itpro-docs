@@ -4,7 +4,7 @@ description: Learn more about the ADMX_PreviousVersions Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_PreviousVersions-Begin -->
 # Policy CSP - ADMX_PreviousVersions
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_PreviousVersions-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- DisableBackupRestore_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableBackupRestore_1-Applicability-End -->
 
 <!-- DisableBackupRestore_1-OmaUri-Begin -->
@@ -48,7 +45,7 @@ This policy setting lets you suppress the Restore button in the previous version
 
 - If you disable this policy setting, the Restore button remains active for a previous version corresponding to a backup. If the Restore button is clicked, Windows attempts to restore the file from the backup media.
 
-- If you do not configure this policy setting, it is disabled by default. The Restore button is active when the previous version is of a local file and stored on the backup.
+- If you don't configure this policy setting, it's disabled by default. The Restore button is active when the previous version is of a local file and stored on the backup.
 <!-- DisableBackupRestore_1-Description-End -->
 
 <!-- DisableBackupRestore_1-Editable-Begin -->
@@ -60,13 +57,12 @@ This policy setting lets you suppress the Restore button in the previous version
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableBackupRestore_1-DFProperties-End -->
 
 <!-- DisableBackupRestore_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -93,7 +89,7 @@ This policy setting lets you suppress the Restore button in the previous version
 <!-- DisableBackupRestore_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableBackupRestore_2-Applicability-End -->
 
 <!-- DisableBackupRestore_2-OmaUri-Begin -->
@@ -110,7 +106,7 @@ This policy setting lets you suppress the Restore button in the previous version
 
 - If you disable this policy setting, the Restore button remains active for a previous version corresponding to a backup. If the Restore button is clicked, Windows attempts to restore the file from the backup media.
 
-- If you do not configure this policy setting, it is disabled by default. The Restore button is active when the previous version is of a local file and stored on the backup.
+- If you don't configure this policy setting, it's disabled by default. The Restore button is active when the previous version is of a local file and stored on the backup.
 <!-- DisableBackupRestore_2-Description-End -->
 
 <!-- DisableBackupRestore_2-Editable-Begin -->
@@ -122,13 +118,12 @@ This policy setting lets you suppress the Restore button in the previous version
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableBackupRestore_2-DFProperties-End -->
 
 <!-- DisableBackupRestore_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -155,7 +150,7 @@ This policy setting lets you suppress the Restore button in the previous version
 <!-- DisableLocalPage_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableLocalPage_1-Applicability-End -->
 
 <!-- DisableLocalPage_1-OmaUri-Begin -->
@@ -168,11 +163,11 @@ This policy setting lets you suppress the Restore button in the previous version
 <!-- Description-Source-ADMX -->
 This policy setting lets you hide the list of previous versions of files that are on local disks. The previous versions could come from the on-disk restore points or from backup media.
 
-- If you enable this policy setting, users cannot list or restore previous versions of files on local disks.
+- If you enable this policy setting, users can't list or restore previous versions of files on local disks.
 
-- If you disable this policy setting, users cannot list and restore previous versions of files on local disks.
+- If you disable this policy setting, users can't list and restore previous versions of files on local disks.
 
-- If you do not configure this policy setting, it defaults to disabled.
+- If you don't configure this policy setting, it defaults to disabled.
 <!-- DisableLocalPage_1-Description-End -->
 
 <!-- DisableLocalPage_1-Editable-Begin -->
@@ -184,13 +179,12 @@ This policy setting lets you hide the list of previous versions of files that ar
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableLocalPage_1-DFProperties-End -->
 
 <!-- DisableLocalPage_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -217,7 +211,7 @@ This policy setting lets you hide the list of previous versions of files that ar
 <!-- DisableLocalPage_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableLocalPage_2-Applicability-End -->
 
 <!-- DisableLocalPage_2-OmaUri-Begin -->
@@ -230,11 +224,11 @@ This policy setting lets you hide the list of previous versions of files that ar
 <!-- Description-Source-ADMX -->
 This policy setting lets you hide the list of previous versions of files that are on local disks. The previous versions could come from the on-disk restore points or from backup media.
 
-- If you enable this policy setting, users cannot list or restore previous versions of files on local disks.
+- If you enable this policy setting, users can't list or restore previous versions of files on local disks.
 
-- If you disable this policy setting, users cannot list and restore previous versions of files on local disks.
+- If you disable this policy setting, users can't list and restore previous versions of files on local disks.
 
-- If you do not configure this policy setting, it defaults to disabled.
+- If you don't configure this policy setting, it defaults to disabled.
 <!-- DisableLocalPage_2-Description-End -->
 
 <!-- DisableLocalPage_2-Editable-Begin -->
@@ -246,13 +240,12 @@ This policy setting lets you hide the list of previous versions of files that ar
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableLocalPage_2-DFProperties-End -->
 
 <!-- DisableLocalPage_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -279,7 +272,7 @@ This policy setting lets you hide the list of previous versions of files that ar
 <!-- DisableLocalRestore_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableLocalRestore_1-Applicability-End -->
 
 <!-- DisableLocalRestore_1-OmaUri-Begin -->
@@ -296,7 +289,7 @@ This policy setting lets you suppress the Restore button in the previous version
 
 - If you disable this policy setting, the Restore button remains active for a previous version corresponding to a local file. If the user clicks the Restore button, Windows attempts to restore the file from the local disk.
 
-- If you do not configure this policy setting, it is disabled by default. The Restore button is active when the previous version is of a local file.
+- If you don't configure this policy setting, it's disabled by default. The Restore button is active when the previous version is of a local file.
 <!-- DisableLocalRestore_1-Description-End -->
 
 <!-- DisableLocalRestore_1-Editable-Begin -->
@@ -308,13 +301,12 @@ This policy setting lets you suppress the Restore button in the previous version
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableLocalRestore_1-DFProperties-End -->
 
 <!-- DisableLocalRestore_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -341,7 +333,7 @@ This policy setting lets you suppress the Restore button in the previous version
 <!-- DisableLocalRestore_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableLocalRestore_2-Applicability-End -->
 
 <!-- DisableLocalRestore_2-OmaUri-Begin -->
@@ -358,7 +350,7 @@ This policy setting lets you suppress the Restore button in the previous version
 
 - If you disable this policy setting, the Restore button remains active for a previous version corresponding to a local file. If the user clicks the Restore button, Windows attempts to restore the file from the local disk.
 
-- If you do not configure this policy setting, it is disabled by default. The Restore button is active when the previous version is of a local file.
+- If you don't configure this policy setting, it's disabled by default. The Restore button is active when the previous version is of a local file.
 <!-- DisableLocalRestore_2-Description-End -->
 
 <!-- DisableLocalRestore_2-Editable-Begin -->
@@ -370,13 +362,12 @@ This policy setting lets you suppress the Restore button in the previous version
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableLocalRestore_2-DFProperties-End -->
 
 <!-- DisableLocalRestore_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -403,7 +394,7 @@ This policy setting lets you suppress the Restore button in the previous version
 <!-- DisableRemotePage_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableRemotePage_1-Applicability-End -->
 
 <!-- DisableRemotePage_1-OmaUri-Begin -->
@@ -416,11 +407,11 @@ This policy setting lets you suppress the Restore button in the previous version
 <!-- Description-Source-ADMX -->
 This policy setting lets you hide the list of previous versions of files that are on file shares. The previous versions come from the on-disk restore points on the file share.
 
-- If you enable this policy setting, users cannot list or restore previous versions of files on file shares.
+- If you enable this policy setting, users can't list or restore previous versions of files on file shares.
 
 - If you disable this policy setting, users can list and restore previous versions of files on file shares.
 
-- If you do not configure this policy setting, it is disabled by default.
+- If you don't configure this policy setting, it's disabled by default.
 <!-- DisableRemotePage_1-Description-End -->
 
 <!-- DisableRemotePage_1-Editable-Begin -->
@@ -432,13 +423,12 @@ This policy setting lets you hide the list of previous versions of files that ar
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableRemotePage_1-DFProperties-End -->
 
 <!-- DisableRemotePage_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -465,7 +455,7 @@ This policy setting lets you hide the list of previous versions of files that ar
 <!-- DisableRemotePage_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableRemotePage_2-Applicability-End -->
 
 <!-- DisableRemotePage_2-OmaUri-Begin -->
@@ -478,11 +468,11 @@ This policy setting lets you hide the list of previous versions of files that ar
 <!-- Description-Source-ADMX -->
 This policy setting lets you hide the list of previous versions of files that are on file shares. The previous versions come from the on-disk restore points on the file share.
 
-- If you enable this policy setting, users cannot list or restore previous versions of files on file shares.
+- If you enable this policy setting, users can't list or restore previous versions of files on file shares.
 
 - If you disable this policy setting, users can list and restore previous versions of files on file shares.
 
-- If you do not configure this policy setting, it is disabled by default.
+- If you don't configure this policy setting, it's disabled by default.
 <!-- DisableRemotePage_2-Description-End -->
 
 <!-- DisableRemotePage_2-Editable-Begin -->
@@ -494,13 +484,12 @@ This policy setting lets you hide the list of previous versions of files that ar
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableRemotePage_2-DFProperties-End -->
 
 <!-- DisableRemotePage_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -527,7 +516,7 @@ This policy setting lets you hide the list of previous versions of files that ar
 <!-- DisableRemoteRestore_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableRemoteRestore_1-Applicability-End -->
 
 <!-- DisableRemoteRestore_1-OmaUri-Begin -->
@@ -544,7 +533,7 @@ This setting lets you suppress the Restore button in the previous versions prope
 
 - If you disable this policy setting, the Restore button remains active for a previous version corresponding to a file on a file share. If the user clicks the Restore button, Windows attempts to restore the file from the file share.
 
-- If you do not configure this policy setting, it is disabled by default. The Restore button is active when the previous version is of a file on a file share.
+- If you don't configure this policy setting, it's disabled by default. The Restore button is active when the previous version is of a file on a file share.
 <!-- DisableRemoteRestore_1-Description-End -->
 
 <!-- DisableRemoteRestore_1-Editable-Begin -->
@@ -556,13 +545,12 @@ This setting lets you suppress the Restore button in the previous versions prope
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableRemoteRestore_1-DFProperties-End -->
 
 <!-- DisableRemoteRestore_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -589,7 +577,7 @@ This setting lets you suppress the Restore button in the previous versions prope
 <!-- DisableRemoteRestore_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableRemoteRestore_2-Applicability-End -->
 
 <!-- DisableRemoteRestore_2-OmaUri-Begin -->
@@ -606,7 +594,7 @@ This setting lets you suppress the Restore button in the previous versions prope
 
 - If you disable this policy setting, the Restore button remains active for a previous version corresponding to a file on a file share. If the user clicks the Restore button, Windows attempts to restore the file from the file share.
 
-- If you do not configure this policy setting, it is disabled by default. The Restore button is active when the previous version is of a file on a file share.
+- If you don't configure this policy setting, it's disabled by default. The Restore button is active when the previous version is of a file on a file share.
 <!-- DisableRemoteRestore_2-Description-End -->
 
 <!-- DisableRemoteRestore_2-Editable-Begin -->
@@ -618,13 +606,12 @@ This setting lets you suppress the Restore button in the previous versions prope
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableRemoteRestore_2-DFProperties-End -->
 
 <!-- DisableRemoteRestore_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -651,7 +638,7 @@ This setting lets you suppress the Restore button in the previous versions prope
 <!-- HideBackupEntries_1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- HideBackupEntries_1-Applicability-End -->
 
 <!-- HideBackupEntries_1-OmaUri-Begin -->
@@ -664,11 +651,11 @@ This setting lets you suppress the Restore button in the previous versions prope
 <!-- Description-Source-ADMX -->
 This policy setting lets you hide entries in the list of previous versions of a file in which the previous version is located on backup media. Previous versions can come from the on-disk restore points or the backup media.
 
-- If you enable this policy setting, users cannot see any previous versions corresponding to backup copies, and can see only previous versions corresponding to on-disk restore points.
+- If you enable this policy setting, users can't see any previous versions corresponding to backup copies, and can see only previous versions corresponding to on-disk restore points.
 
 - If you disable this policy setting, users can see previous versions corresponding to backup copies as well as previous versions corresponding to on-disk restore points.
 
-- If you do not configure this policy setting, it is disabled by default.
+- If you don't configure this policy setting, it's disabled by default.
 <!-- HideBackupEntries_1-Description-End -->
 
 <!-- HideBackupEntries_1-Editable-Begin -->
@@ -680,13 +667,12 @@ This policy setting lets you hide entries in the list of previous versions of a 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- HideBackupEntries_1-DFProperties-End -->
 
 <!-- HideBackupEntries_1-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -713,7 +699,7 @@ This policy setting lets you hide entries in the list of previous versions of a 
 <!-- HideBackupEntries_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- HideBackupEntries_2-Applicability-End -->
 
 <!-- HideBackupEntries_2-OmaUri-Begin -->
@@ -726,11 +712,11 @@ This policy setting lets you hide entries in the list of previous versions of a 
 <!-- Description-Source-ADMX -->
 This policy setting lets you hide entries in the list of previous versions of a file in which the previous version is located on backup media. Previous versions can come from the on-disk restore points or the backup media.
 
-- If you enable this policy setting, users cannot see any previous versions corresponding to backup copies, and can see only previous versions corresponding to on-disk restore points.
+- If you enable this policy setting, users can't see any previous versions corresponding to backup copies, and can see only previous versions corresponding to on-disk restore points.
 
 - If you disable this policy setting, users can see previous versions corresponding to backup copies as well as previous versions corresponding to on-disk restore points.
 
-- If you do not configure this policy setting, it is disabled by default.
+- If you don't configure this policy setting, it's disabled by default.
 <!-- HideBackupEntries_2-Description-End -->
 
 <!-- HideBackupEntries_2-Editable-Begin -->
@@ -742,13 +728,12 @@ This policy setting lets you hide entries in the list of previous versions of a 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- HideBackupEntries_2-DFProperties-End -->
 
 <!-- HideBackupEntries_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

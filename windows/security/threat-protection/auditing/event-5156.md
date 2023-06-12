@@ -1,5 +1,5 @@
 ---
-title: 5156(S) The Windows Filtering Platform has permitted a connection. (Windows 10)
+title: 5156(S) The Windows Filtering Platform has permitted a connection. 
 description: Describes security event 5156(S) The Windows Filtering Platform has permitted a connection.
 ms.pagetype: security
 ms.prod: windows-client

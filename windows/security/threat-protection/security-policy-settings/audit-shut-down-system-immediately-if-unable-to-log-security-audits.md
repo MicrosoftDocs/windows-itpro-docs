@@ -1,5 +1,5 @@
 ---
-title: Audit Shut down system immediately if unable to log security audits (Windows 10)
+title: Audit Shut down system immediately if unable to log security audits 
 description: Best practices, security considerations, and more for the security policy setting, Audit Shut down system immediately if unable to log security audits.
 ms.assetid: 2cd23cd9-0e44-4d0b-a1f1-39fc29303826
 ms.reviewer: 

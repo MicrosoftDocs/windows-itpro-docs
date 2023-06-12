@@ -1,29 +1,18 @@
 ---
-title: Refresh an AppLocker policy (Windows)
+title: Refresh an AppLocker policy
 description: This topic for IT professionals describes the steps to force an update for an AppLocker policy.
-ms.assetid: 3f24fcbc-3926-46b9-a1a2-dd036edab8a9
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # Refresh an AppLocker policy
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -36,7 +25,7 @@ To use Group Policy to distribute the AppLocker policy change, you need to retri
 
 [Edit an AppLocker policy](edit-an-applocker-policy.md) and [Use the AppLocker Windows PowerShell cmdlets](use-the-applocker-windows-powershell-cmdlets.md).
 
-To complete this procedure, you must have Edit Setting permission to edit a GPO. By default, members of the **Domain Admins** group, the **Enterprise Admins** group, and the **Group Policy Creator Owners** group have this permission.
+To complete this procedure, you must have Edit Setting permission to edit a GPO. By default, members of the **Domain Admins** group, the **Enterprise Admins** group, and the **Group Policy Creator Owners** group have this permission.
 
 **To manually refresh the AppLocker policy by using Group Policy**
 
@@ -65,6 +54,6 @@ To make the same change on another device, you can use any of the following meth
 
 -   From the device that you made the change on, export the AppLocker policy, and then import the policy onto the other device. To do these tasks, use the AppLocker **Export Policy** and **Import Policy** features to copy the rules from the changed computer.
 
-    >**Caution:**  When importing rules from another computer, all the rules will be applied, not just the one that was updated. Merging policies allows both existing and updated (or new) rules to be applied.
-     
+    >**Caution:**  When importing rules from another computer, all the rules will be applied, not just the one that was updated. Merging policies allows both existing and updated (or new) rules to be applied.
+     
 -   Merge AppLocker policies. For information on the procedures to do this merging, see [Merge AppLocker policies manually](merge-applocker-policies-manually.md) and [Merge AppLocker policies by using Set-ApplockerPolicy](merge-applocker-policies-by-using-set-applockerpolicy.md).

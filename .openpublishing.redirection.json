@@ -5441,8 +5441,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/device-security/bitlocker/bitlocker-overview.md",
-      "redirect_url": "/windows/security/information-protection/bitlocker/bitlocker-overview",
+      "source_path": "windows/device-security/bitlocker/index.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/index",
       "redirect_document_id": false
     },
     {
@@ -9836,8 +9836,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/keep-secure/bitlocker-overview.md",
-      "redirect_url": "/windows/device-security/bitlocker/bitlocker-overview",
+      "source_path": "windows/keep-secure/index.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/index",
       "redirect_document_id": false
     },
     {
@@ -20809,6 +20809,961 @@
       "source_path": "store-for-business/sign-up-microsoft-store-for-business.md",
       "redirect_url": "/microsoft-store",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-sandbox/windows-sandbox-architecture.md",
+      "redirect_url": "/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-architecture",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file.md",
+      "redirect_url": "/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-configure-using-wsb-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-sandbox/windows-sandbox-overview.md",
+      "redirect_url": "/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings.md",
+      "redirect_url": "/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/available-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-smartscreen/phishing-protection-microsoft-defender-smartscreen.md",
+      "redirect_url": "/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md",
+      "redirect_url": "/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system.md",
+      "redirect_url": "/windows/security/operating-system-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/cryptography-certificate-mgmt.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/cryptography-certificate-mgmt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/secure-the-windows-10-boot-process.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/secure-the-windows-10-boot-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/trusted-boot.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/trusted-boot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-account-protection.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-account-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-app-browser-control.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-app-browser-control",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-customize-contact-information",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-device-performance-health.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-device-performance-health",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-device-security.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-device-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-family-options.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-family-options",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-firewall-network-protection.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-firewall-network-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-hide-notifications.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-hide-notifications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/wdsc-virus-threat-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center.md",
+      "redirect_url": "/windows/security/operating-system-security/system-security/windows-defender-security-center/windows-defender-security-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/index.md",
+      "redirect_url": "/windows/security/encryption-data-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/vpn/how-to-configure-diffie-hellman-protocol-over-ikev2-vpn-connections.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/vpn/how-to-configure-diffie-hellman-protocol-over-ikev2-vpn-connections",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/vpn/how-to-use-single-sign-on-sso-over-vpn-and-wi-fi-connections.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/vpn/how-to-use-single-sign-on-sso-over-vpn-and-wi-fi-connections",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/vpn/vpn-authentication.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/vpn/vpn-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/vpn/vpn-auto-trigger-profile.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/vpn/vpn-auto-trigger-profile",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/vpn/vpn-conditional-access.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/vpn/vpn-conditional-access",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/vpn/vpn-connection-type.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/vpn/vpn-connection-type",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/vpn/vpn-guide.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/vpn/vpn-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/vpn/vpn-name-resolution.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/vpn/vpn-name-resolution",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/vpn/vpn-office-365-optimization.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/vpn/vpn-office-365-optimization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/vpn/vpn-profile-options.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/vpn/vpn-profile-options",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/vpn/vpn-routing.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/vpn/vpn-routing",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/vpn/vpn-security-features.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/vpn/vpn-security-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/add-production-devices-to-the-membership-group-for-a-zone.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/add-production-devices-to-the-membership-group-for-a-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/add-test-devices-to-the-membership-group-for-a-zone.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/add-test-devices-to-the-membership-group-for-a-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/appendix-a-sample-gpo-template-files-for-settings-used-in-this-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/assign-security-group-filters-to-the-gpo.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/assign-security-group-filters-to-the-gpo",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/basic-firewall-policy-design.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/basic-firewall-policy-design",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/best-practices-configuring.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/best-practices-configuring",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/boundary-zone-gpos.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/boundary-zone-gpos",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/boundary-zone.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/boundary-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/certificate-based-isolation-policy-design-example.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/certificate-based-isolation-policy-design-example",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/certificate-based-isolation-policy-design.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/certificate-based-isolation-policy-design",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/change-rules-from-request-to-require-mode.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/change-rules-from-request-to-require-mode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/checklist-configuring-basic-firewall-settings.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/checklist-configuring-basic-firewall-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/checklist-configuring-rules-for-an-isolated-server-zone.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/checklist-configuring-rules-for-an-isolated-server-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/checklist-configuring-rules-for-servers-in-a-standalone-isolated-server-zone.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/checklist-configuring-rules-for-servers-in-a-standalone-isolated-server-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/checklist-configuring-rules-for-the-boundary-zone.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/checklist-configuring-rules-for-the-boundary-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/checklist-configuring-rules-for-the-encryption-zone.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/checklist-configuring-rules-for-the-encryption-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/checklist-configuring-rules-for-the-isolated-domain.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/checklist-configuring-rules-for-the-isolated-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/checklist-creating-group-policy-objects.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/checklist-creating-group-policy-objects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/checklist-creating-inbound-firewall-rules.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/checklist-creating-inbound-firewall-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/checklist-creating-outbound-firewall-rules.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/checklist-creating-outbound-firewall-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/checklist-creating-rules-for-clients-of-a-standalone-isolated-server-zone.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/checklist-creating-rules-for-clients-of-a-standalone-isolated-server-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/checklist-implementing-a-basic-firewall-policy-design.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/checklist-implementing-a-basic-firewall-policy-design",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/checklist-implementing-a-certificate-based-isolation-policy-design.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/checklist-implementing-a-certificate-based-isolation-policy-design",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/checklist-implementing-a-domain-isolation-policy-design.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/checklist-implementing-a-domain-isolation-policy-design",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/checklist-implementing-a-standalone-server-isolation-policy-design.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/checklist-implementing-a-standalone-server-isolation-policy-design",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/configure-authentication-methods.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure-authentication-methods",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/configure-data-protection-quick-mode-settings.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure-data-protection-quick-mode-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/configure-group-policy-to-autoenroll-and-deploy-certificates.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure-group-policy-to-autoenroll-and-deploy-certificates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/configure-key-exchange-main-mode-settings.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure-key-exchange-main-mode-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/configure-the-rules-to-require-encryption.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure-the-rules-to-require-encryption",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure-the-windows-firewall-log",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/configure-the-workstation-authentication-certificate-template.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure-the-workstation-authentication-certificate-template",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/configure-windows-firewall-to-suppress-notifications-when-a-program-is-blocked.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/configure-windows-firewall-to-suppress-notifications-when-a-program-is-blocked",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/confirm-that-certificates-are-deployed-correctly.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/confirm-that-certificates-are-deployed-correctly",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/copy-a-gpo-to-create-a-new-gpo.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/copy-a-gpo-to-create-a-new-gpo",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/create-a-group-account-in-active-directory.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/create-a-group-account-in-active-directory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/create-a-group-policy-object.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/create-a-group-policy-object",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/create-an-authentication-exemption-list-rule.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/create-an-authentication-exemption-list-rule",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/create-an-authentication-request-rule.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/create-an-authentication-request-rule",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/create-an-inbound-icmp-rule.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/create-an-inbound-icmp-rule",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/create-an-inbound-port-rule.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/create-an-inbound-port-rule",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/create-an-inbound-program-or-service-rule.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/create-an-inbound-program-or-service-rule",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/create-an-outbound-port-rule.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/create-an-outbound-port-rule",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/create-an-outbound-program-or-service-rule.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/create-an-outbound-program-or-service-rule",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/create-inbound-rules-to-support-rpc.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/create-inbound-rules-to-support-rpc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/create-windows-firewall-rules-in-intune.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/create-windows-firewall-rules-in-intune",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/create-wmi-filters-for-the-gpo.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/create-wmi-filters-for-the-gpo",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/designing-a-windows-firewall-with-advanced-security-strategy.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/designing-a-windows-firewall-with-advanced-security-strategy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/determining-the-trusted-state-of-your-devices.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/determining-the-trusted-state-of-your-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/documenting-the-zones.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/documenting-the-zones",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/domain-isolation-policy-design-example.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/domain-isolation-policy-design-example",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/domain-isolation-policy-design.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/domain-isolation-policy-design",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/enable-predefined-inbound-rules.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/enable-predefined-inbound-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/enable-predefined-outbound-rules.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/enable-predefined-outbound-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/encryption-zone-gpos.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/encryption-zone-gpos",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/encryption-zone.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/encryption-zone",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/exempt-icmp-from-authentication.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/exempt-icmp-from-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/exemption-list.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/exemption-list",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/filter-origin-documentation.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/filter-origin-documentation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/firewall-gpos.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/firewall-gpos",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/firewall-policy-design-example.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/firewall-policy-design-example",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/firewall-settings-lost-on-upgrade.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/firewall-settings-lost-on-upgrade",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/gathering-information-about-your-active-directory-deployment.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/gathering-information-about-your-active-directory-deployment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/gathering-information-about-your-current-network-infrastructure.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/gathering-information-about-your-current-network-infrastructure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/gathering-information-about-your-devices.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/gathering-information-about-your-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/gathering-other-relevant-information.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/gathering-other-relevant-information",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/gathering-the-information-you-need.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/gathering-the-information-you-need",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/gpo-domiso-boundary.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/gpo-domiso-boundary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/gpo-domiso-encryption.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/gpo-domiso-encryption",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/gpo-domiso-firewall.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/gpo-domiso-firewall",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/gpo-domiso-isolateddomain-clients.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/gpo-domiso-isolateddomain-clients",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/gpo-domiso-isolateddomain-servers.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/gpo-domiso-isolateddomain-servers",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/identifying-your-windows-firewall-with-advanced-security-deployment-goals.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/identifying-your-windows-firewall-with-advanced-security-deployment-goals",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/implementing-your-windows-firewall-with-advanced-security-design-plan.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/implementing-your-windows-firewall-with-advanced-security-design-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/isolated-domain-gpos.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/isolated-domain-gpos",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/isolated-domain.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/isolated-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/isolating-apps-on-your-network.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/isolating-apps-on-your-network",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/link-the-gpo-to-the-domain.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/link-the-gpo-to-the-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/mapping-your-deployment-goals-to-a-windows-firewall-with-advanced-security-design.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/mapping-your-deployment-goals-to-a-windows-firewall-with-advanced-security-design",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/modify-gpo-filters-to-apply-to-a-different-zone-or-version-of-windows.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/modify-gpo-filters-to-apply-to-a-different-zone-or-version-of-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/open-the-group-policy-management-console-to-ip-security-policies.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/open-the-group-policy-management-console-to-ip-security-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/open-the-group-policy-management-console-to-windows-firewall-with-advanced-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/open-the-group-policy-management-console-to-windows-firewall.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/open-the-group-policy-management-console-to-windows-firewall",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/open-windows-firewall-with-advanced-security.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/open-windows-firewall-with-advanced-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/planning-certificate-based-authentication.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/planning-certificate-based-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/planning-domain-isolation-zones.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/planning-domain-isolation-zones",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/planning-gpo-deployment.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/planning-gpo-deployment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/planning-group-policy-deployment-for-your-isolation-zones.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/planning-group-policy-deployment-for-your-isolation-zones",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/planning-isolation-groups-for-the-zones.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/planning-isolation-groups-for-the-zones",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/planning-network-access-groups.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/planning-network-access-groups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/planning-server-isolation-zones.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/planning-server-isolation-zones",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/planning-settings-for-a-basic-firewall-policy.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/planning-settings-for-a-basic-firewall-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/planning-the-gpos.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/planning-the-gpos",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/planning-to-deploy-windows-firewall-with-advanced-security.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/planning-to-deploy-windows-firewall-with-advanced-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/planning-your-windows-firewall-with-advanced-security-design.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/planning-your-windows-firewall-with-advanced-security-design",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/protect-devices-from-unwanted-network-traffic.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/protect-devices-from-unwanted-network-traffic",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/quarantine.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/quarantine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/require-encryption-when-accessing-sensitive-network-resources.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/require-encryption-when-accessing-sensitive-network-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/restrict-access-to-only-specified-users-or-devices.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/restrict-access-to-only-specified-users-or-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/restrict-access-to-only-trusted-devices.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/restrict-access-to-only-trusted-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/restrict-server-access-to-members-of-a-group-only.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/restrict-server-access-to-members-of-a-group-only",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/securing-end-to-end-ipsec-connections-by-using-ikev2.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/securing-end-to-end-ipsec-connections-by-using-ikev2",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/server-isolation-gpos.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/server-isolation-gpos",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/server-isolation-policy-design-example.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/server-isolation-policy-design-example",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/server-isolation-policy-design.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/server-isolation-policy-design",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/troubleshooting-uwp-firewall.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/troubleshooting-uwp-firewall",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/turn-on-windows-firewall-and-configure-default-behavior.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/turn-on-windows-firewall-and-configure-default-behavior",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/understanding-the-windows-firewall-with-advanced-security-design-process.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/understanding-the-windows-firewall-with-advanced-security-design-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/verify-that-network-traffic-is-authenticated.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/verify-that-network-traffic-is-authenticated",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/windows-firewall-with-advanced-security-deployment-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/windows-firewall-with-advanced-security-design-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security.md",
+      "redirect_url": "/windows/security/operating-system-security/network-security/windows-firewall/windows-firewall-with-advanced-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/cloud.md",
+      "redirect_url": "/windows/security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/user-account-control/how-user-account-control-works.md",
+      "redirect_url": "/windows/security/application-security/application-control/user-account-control/how-it-works",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/user-account-control/user-account-control-group-policy-and-registry-key-settings.md",
+      "redirect_url": "/windows/security/application-security/application-control/user-account-control/settings-and-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/user-account-control/user-account-control-security-policy-settings.md",
+      "redirect_url": "/windows/security/application-security/application-control/user-account-control/settings-and-configuration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/user-account-control/user-account-control-overview.md",
+      "redirect_url": "/windows/security/application-security/application-control/user-account-control",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/configure-s-mime.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/configure-s-mime",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/apps.md",
+      "redirect_url": "/windows/security/application-security",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/encrypted-hard-drive.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/encrypted-hard-drive",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bcd-settings-and-bitlocker.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bcd-settings-and-bitlocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-basic-deployment.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-basic-deployment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-countermeasures.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-countermeasures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-deployment-comparison.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-deployment-comparison",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-device-encryption-overview-windows-10",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-group-policy-settings.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-group-policy-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-how-to-enable-network-unlock.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-how-to-enable-network-unlock",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-management-for-enterprises.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-management-for-enterprises",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-recovery-guide-plan.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-recovery-guide-plan",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-use-bitlocker-recovery-password-viewer.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-use-bitlocker-recovery-password-viewer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/configure-pde-in-intune.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/configure-pde-in-intune",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/pde-in-intune/intune-disable-arso.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/intune-disable-arso",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/pde-in-intune/intune-disable-hibernation.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/intune-disable-hibernation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/pde-in-intune/intune-disable-memory-dumps.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/intune-disable-memory-dumps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/pde-in-intune/intune-disable-password-connected-standby.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/intune-disable-password-connected-standby",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/pde-in-intune/intune-disable-wer.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/intune-disable-wer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/pde-in-intune/intune-enable-pde.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/intune-enable-pde",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/encryption-data-protection.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/faq-pde.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/faq-pde",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-and-adds-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-and-adds-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-deployment-and-administration-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-deployment-and-administration-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-frequently-asked-question.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-frequently-asked-question",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-key-management-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-key-management-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-network-unlock-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-network-unlock-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-overview-and-requirements-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-overview-and-requirements-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-security-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-security-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-to-go-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-to-go-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-upgrading-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-upgrading-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-using-with-other-programs-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-using-with-other-programs-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-frequently-asked-questions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/bitlocker/bitlocker-overview.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/personal-data-encryption/overview-pde.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/index",
+      "redirect_document_id": false
+    }    
   ]
 }

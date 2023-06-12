@@ -1,5 +1,5 @@
 ---
-title: 4770(S) A Kerberos service ticket was renewed. (Windows 10)
+title: 4770(S) A Kerberos service ticket was renewed. 
 description: Describes security event 4770(S) A Kerberos service ticket was renewed.
 ms.pagetype: security
 ms.prod: windows-client

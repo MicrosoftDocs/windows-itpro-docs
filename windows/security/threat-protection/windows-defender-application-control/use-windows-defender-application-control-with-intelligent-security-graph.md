@@ -1,5 +1,5 @@
 ---
-title: Authorize reputable apps with the Intelligent Security Graph (ISG) (Windows)
+title: Authorize reputable apps with the Intelligent Security Graph (ISG) 
 description: Automatically authorize applications that Microsoft’s ISG recognizes as having known good reputation.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb

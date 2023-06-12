@@ -4,7 +4,7 @@ description: Learn more about the DeviceHealthMonitoring Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowDeviceHealthMonitoring-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- AllowDeviceHealthMonitoring-Applicability-End -->
 
 <!-- AllowDeviceHealthMonitoring-OmaUri-Begin -->
@@ -50,7 +50,7 @@ DeviceHealthMonitoring is an opt-in health monitoring connection between the dev
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowDeviceHealthMonitoring-DFProperties-End -->
@@ -76,7 +76,7 @@ DeviceHealthMonitoring is an opt-in health monitoring connection between the dev
 <!-- ConfigDeviceHealthMonitoringScope-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigDeviceHealthMonitoringScope-Applicability-End -->
 
 <!-- ConfigDeviceHealthMonitoringScope-OmaUri-Begin -->
@@ -87,7 +87,7 @@ DeviceHealthMonitoring is an opt-in health monitoring connection between the dev
 
 <!-- ConfigDeviceHealthMonitoringScope-Description-Begin -->
 <!-- Description-Source-DDF -->
-If the device is not opted-in to the DeviceHealthMonitoring service via the AllowDeviceHealthMonitoring then this policy has no meaning. For devices which are opted in, the value of this policy modifies which types of events are monitored.
+If the device isn't opted-in to the DeviceHealthMonitoring service via the AllowDeviceHealthMonitoring then this policy has no meaning. For devices which are opted in, the value of this policy modifies which types of events are monitored.
 <!-- ConfigDeviceHealthMonitoringScope-Description-End -->
 
 <!-- ConfigDeviceHealthMonitoringScope-Editable-Begin -->
@@ -100,7 +100,7 @@ This policy is applicable only if the [AllowDeviceHealthMonitoring](#allowdevice
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Dependency [DeviceHealthMonitoring_ConfigDeviceHealthMonitoringScope_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/DeviceHealthMonitoring/AllowDeviceHealthMonitoring` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
 <!-- ConfigDeviceHealthMonitoringScope-DFProperties-End -->
@@ -117,7 +117,7 @@ This policy is applicable only if the [AllowDeviceHealthMonitoring](#allowdevice
 <!-- ConfigDeviceHealthMonitoringServiceInstance-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigDeviceHealthMonitoringServiceInstance-Applicability-End -->
 
 <!-- ConfigDeviceHealthMonitoringServiceInstance-OmaUri-Begin -->
@@ -128,7 +128,7 @@ This policy is applicable only if the [AllowDeviceHealthMonitoring](#allowdevice
 
 <!-- ConfigDeviceHealthMonitoringServiceInstance-Description-Begin -->
 <!-- Description-Source-DDF -->
-If the device is not opted-in to the DeviceHealthMonitoring service via the AllowDeviceHealthMonitoring then this policy has no meaning. For devices which are opted in, the value of this policy modifies which service instance to which events are to be uploaded.
+If the device isn't opted-in to the DeviceHealthMonitoring service via the AllowDeviceHealthMonitoring then this policy has no meaning. For devices which are opted in, the value of this policy modifies which service instance to which events are to be uploaded.
 <!-- ConfigDeviceHealthMonitoringServiceInstance-Description-End -->
 
 <!-- ConfigDeviceHealthMonitoringServiceInstance-Editable-Begin -->
@@ -140,7 +140,7 @@ If the device is not opted-in to the DeviceHealthMonitoring service via the Allo
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Dependency [DeviceHealthMonitoring_ConfigDeviceHealthMonitoringServiceInstance_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/DeviceHealthMonitoring/AllowDeviceHealthMonitoring` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
 <!-- ConfigDeviceHealthMonitoringServiceInstance-DFProperties-End -->
@@ -157,7 +157,7 @@ If the device is not opted-in to the DeviceHealthMonitoring service via the Allo
 <!-- ConfigDeviceHealthMonitoringUploadDestination-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigDeviceHealthMonitoringUploadDestination-Applicability-End -->
 
 <!-- ConfigDeviceHealthMonitoringUploadDestination-OmaUri-Begin -->
@@ -168,7 +168,7 @@ If the device is not opted-in to the DeviceHealthMonitoring service via the Allo
 
 <!-- ConfigDeviceHealthMonitoringUploadDestination-Description-Begin -->
 <!-- Description-Source-DDF -->
-If the device is not opted-in to the DeviceHealthMonitoring service via the AllowDeviceHealthMonitoring then this policy has no meaning. For devices which are opted in, the value of this policy modifies which destinations are in-scope for monitored events to be uploaded.
+If the device isn't opted-in to the DeviceHealthMonitoring service via the AllowDeviceHealthMonitoring then this policy has no meaning. For devices which are opted in, the value of this policy modifies which destinations are in-scope for monitored events to be uploaded.
 <!-- ConfigDeviceHealthMonitoringUploadDestination-Description-End -->
 
 <!-- ConfigDeviceHealthMonitoringUploadDestination-Editable-Begin -->
@@ -186,7 +186,7 @@ Configure this policy manually only when explicitly instructed to do so by a Mic
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Dependency [DeviceHealthMonitoring_ConfigDeviceHealthMonitoringUploadDestination_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/DeviceHealthMonitoring/AllowDeviceHealthMonitoring` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
 <!-- ConfigDeviceHealthMonitoringUploadDestination-DFProperties-End -->

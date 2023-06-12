@@ -1,5 +1,5 @@
 ---
-title: 4778(S) A session was reconnected to a Window Station. (Windows 10)
+title: 4778(S) A session was reconnected to a Window Station. 
 description: Describes security event 4778(S) A session was reconnected to a Window Station.
 ms.pagetype: security
 ms.prod: windows-client

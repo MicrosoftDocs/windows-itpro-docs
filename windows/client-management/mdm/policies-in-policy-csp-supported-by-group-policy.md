@@ -4,7 +4,7 @@ description: Learn about the policies in Policy CSP supported by Group Policy.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 06/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -340,9 +340,6 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [ClearTextPassword](policy-csp-devicelock.md)
 - [PasswordComplexity](policy-csp-devicelock.md)
 - [PasswordHistorySize](policy-csp-devicelock.md)
-- [AccountLockoutThreshold](policy-csp-devicelock.md)
-- [AccountLockoutDuration](policy-csp-devicelock.md)
-- [ResetAccountLockoutCounterAfter](policy-csp-devicelock.md)
 - [AllowAdministratorLockout](policy-csp-devicelock.md)
 
 ## Display
@@ -365,6 +362,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 
 ## Experience
 
+- [AllowScreenRecorder](policy-csp-experience.md)
 - [AllowSpotlightCollection](policy-csp-experience.md)
 - [AllowThirdPartySuggestionsInWindowsSpotlight](policy-csp-experience.md)
 - [AllowWindowsSpotlight](policy-csp-experience.md)
@@ -520,6 +518,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [DisallowNotificationMirroring](policy-csp-notifications.md)
 - [DisallowTileNotification](policy-csp-notifications.md)
 - [EnableExpandedToastNotifications](policy-csp-notifications.md)
+- [DisableAccountNotifications](policy-csp-notifications.md)
 - [DisallowCloudNotification](policy-csp-notifications.md)
 - [WnsEndpoint](policy-csp-notifications.md)
 
@@ -689,7 +688,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [StartLayout](policy-csp-start.md)
 - [ConfigureStartPins](policy-csp-start.md)
 - [HideRecommendedSection](policy-csp-start.md)
-- [HideRecoPersonalizedSites](policy-csp-start.md)
+- [HideRecommendedPersonalizedSites](policy-csp-start.md)
 - [HideTaskViewButton](policy-csp-start.md)
 - [DisableControlCenter](policy-csp-start.md)
 - [ForceStartSize](policy-csp-start.md)
@@ -700,7 +699,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [StartLayout](policy-csp-start.md)
 - [ConfigureStartPins](policy-csp-start.md)
 - [HideRecommendedSection](policy-csp-start.md)
-- [HideRecoPersonalizedSites](policy-csp-start.md)
+- [HideRecommendedPersonalizedSites](policy-csp-start.md)
 - [SimplifyQuickSettings](policy-csp-start.md)
 - [DisableEditingQuickSettings](policy-csp-start.md)
 - [HideTaskViewButton](policy-csp-start.md)
@@ -884,7 +883,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [DenyLogOnAsBatchJob](policy-csp-userrights.md)
 - [LogOnAsService](policy-csp-userrights.md)
 - [IncreaseProcessWorkingSet](policy-csp-userrights.md)
-- [DenyServiceLogonRight](policy-csp-userrights.md)
+- [DenyLogOnAsService](policy-csp-userrights.md)
 
 ## VirtualizationBasedTechnology
 
@@ -897,7 +896,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [NotifyMalicious](policy-csp-webthreatdefense.md)
 - [NotifyPasswordReuse](policy-csp-webthreatdefense.md)
 - [NotifyUnsafeApp](policy-csp-webthreatdefense.md)
-- [CaptureThreatWindow](policy-csp-webthreatdefense.md)
+- [AutomaticDataCollection](policy-csp-webthreatdefense.md)
 
 ## Wifi
 

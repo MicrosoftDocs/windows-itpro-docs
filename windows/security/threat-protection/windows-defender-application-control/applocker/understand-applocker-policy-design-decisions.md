@@ -1,29 +1,18 @@
 ---
-title: Understand AppLocker policy design decisions (Windows)
+title: Understand AppLocker policy design decisions
 description: Review some common considerations while you're planning to use AppLocker to deploy application control policies within a Windows environment.
-ms.assetid: 3475def8-949a-4b51-b480-dc88b5c1e6e6
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 10/13/2017
 ms.technology: itpro-security
 ---
 
 # Understand AppLocker policy design decisions
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -107,7 +96,7 @@ If your organization supports multiple Windows operating systems, app control po
 
 ### Are there specific groups in your organization that need customized application control policies?
 
-Most business groups or departments have specific security requirements that pertain to data access and the applications used to access that data. You should consider the scope of the project for each group and the group’s priorities before you deploy application control policies for the entire organization.
+Most business groups or departments have specific security requirements that pertain to data access and the applications used to access that data. You should consider the scope of the project for each group and the group's priorities before you deploy application control policies for the entire organization.
 
 | Possible answers | Design considerations |
 | - | - |
@@ -132,7 +121,6 @@ Preventing your users from accessing known, deployed, or personal applications w
 | Yes | Involve the support department early in the planning phase because your users may inadvertently be blocked from using their applications, or they may seek exceptions to use specific applications. |
 | No | Invest time in developing online support processes and documentation before deployment. |
 
-
 ### Do you know what applications require restrictive policies?
 Any successful application control policy implementation is based on your knowledge and understanding of app usage within the organization or business group. In addition, the application control design is dependent on the security requirements for data and the apps that access that data.
 
@@ -150,7 +138,6 @@ Implementing a successful application control policy is based on your knowledge 
 | Ad hoc | You need to gather requirements from each group. Some groups might want unrestricted access or installation, while other groups might want strict controls.| 
 |  Strict written policy or guidelines to follow | You need to develop AppLocker rules that reflect those policies, and then test and maintain the rules. |
 | No process in place | You need to determine if you have the resources to develop an application control policy, and for which groups. |
-
 
 ### Does your organization already have SRP deployed?
 
@@ -196,4 +183,3 @@ Because the effectiveness of application control policies is dependent on the ab
 The next step in the process is to record and analyze your answers to the preceding questions. If AppLocker is the right solution for your goals, you can set your application control policy objectives and plan your AppLocker rules. This process culminates in creating your planning document.
 
 -   For info about setting your policy goals, see [Determine your application control objectives](determine-your-application-control-objectives.md).
-

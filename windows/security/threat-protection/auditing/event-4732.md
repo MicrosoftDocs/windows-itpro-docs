@@ -1,5 +1,5 @@
 ---
-title: 4732(S) A member was added to a security-enabled local group. (Windows 10)
+title: 4732(S) A member was added to a security-enabled local group. 
 description: Describes security event 4732(S) A member was added to a security-enabled local group.
 ms.pagetype: security
 ms.prod: windows-client

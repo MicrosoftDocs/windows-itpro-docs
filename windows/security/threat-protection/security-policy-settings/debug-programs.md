@@ -1,5 +1,5 @@
 ---
-title: Debug programs (Windows 10)
+title: Debug programs 
 description: Describes the best practices, location, values, policy management, and security considerations for the Debug programs security policy setting.
 ms.assetid: 594d9f2c-8ffc-444b-9522-75615ec87786
 ms.reviewer: 

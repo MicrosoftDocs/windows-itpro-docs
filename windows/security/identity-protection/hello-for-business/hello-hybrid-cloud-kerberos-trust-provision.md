@@ -67,7 +67,7 @@ To configure Windows Hello for Business using an account protection policy:
 1. Under **Block Windows Hello for Business**, select **Disabled** and multiple policies become available.
     - These policies are optional to configure, but it's recommended to configure **Enable to use a Trusted Platform Module (TPM)** to **Yes**.
     - For more information about these policies, see [MDM policy settings for Windows Hello for Business](hello-manage-in-organization.md#mdm-policy-settings-for-windows-hello-for-business).
-1. Under **Enable to certificate for on-premises resources**, select **Disabled** and multiple policies become available.
+1. Under **Enable to certificate for on-premises resources**, select **Not configured**
 1. Select **Next**.
 1. Optionally, add **scope tags** and select **Next**.
 1. Assign the policy to a security group that contains as members the devices or users that you want to configure > **Next**.
@@ -138,7 +138,7 @@ You can configure Windows Hello for Business cloud Kerberos trust using a Group 
 ---
 
 > [!IMPORTANT]
-> If the **Use certificate for on-premises authentication** policy is enabled, certificate trust will take precedence over cloud Kerberos trust. Ensure that the machines that you want to enable cloud Kerberos trust have this policy **not configured** or **disabled**.
+> If the **Use certificate for on-premises authentication** policy is enabled, certificate trust will take precedence over cloud Kerberos trust. Ensure that the machines that you want to enable cloud Kerberos trust have this policy **not configured**.
 
 ## Provision Windows Hello for Business
 

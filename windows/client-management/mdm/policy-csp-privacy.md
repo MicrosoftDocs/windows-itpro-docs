@@ -4,7 +4,7 @@ description: Learn more about the Privacy Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-Applicability-End -->
 
 <!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-OmaUri-Begin -->
@@ -52,7 +52,7 @@ Allows or disallows the automatic acceptance of the pairing and privacy user con
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- AllowAutoAcceptPairingAndPrivacyConsentPrompts-DFProperties-End -->
@@ -78,7 +78,7 @@ Allows or disallows the automatic acceptance of the pairing and privacy user con
 <!-- AllowCrossDeviceClipboard-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowCrossDeviceClipboard-Applicability-End -->
 
 <!-- AllowCrossDeviceClipboard-OmaUri-Begin -->
@@ -92,7 +92,9 @@ Allows or disallows the automatic acceptance of the pairing and privacy user con
 This policy setting determines whether Clipboard contents can be synchronized across devices.
 
 - If you enable this policy setting, Clipboard contents are allowed to be synchronized across devices logged in under the same Microsoft account or Azure AD account.
-- If you disable this policy setting, Clipboard contents cannot be shared to other devices.
+
+- If you disable this policy setting, Clipboard contents can't be shared to other devices.
+
 Policy change takes effect immediately.
 <!-- AllowCrossDeviceClipboard-Description-End -->
 
@@ -107,7 +109,7 @@ Most restrictive value is `0` to not allow cross-device clipboard.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowCrossDeviceClipboard-DFProperties-End -->
@@ -147,7 +149,7 @@ Most restrictive value is `0` to not allow cross-device clipboard.
 <!-- AllowInputPersonalization-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowInputPersonalization-Applicability-End -->
 
 <!-- AllowInputPersonalization-OmaUri-Begin -->
@@ -162,7 +164,7 @@ This policy specifies whether users on the device have the option to enable onli
 
 If this policy is enabled or not configured, control is deferred to users, and users may choose whether to enable speech services via settings.
 
-If this policy is disabled, speech services will be disabled, and users cannot enable speech services via settings.
+If this policy is disabled, speech services will be disabled, and users can't enable speech services via settings.
 <!-- AllowInputPersonalization-Description-End -->
 
 <!-- AllowInputPersonalization-Editable-Begin -->
@@ -180,7 +182,7 @@ The most restrictive value is `0` to not allow speech services.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- AllowInputPersonalization-DFProperties-End -->
@@ -220,7 +222,7 @@ The most restrictive value is `0` to not allow speech services.
 <!-- DisableAdvertisingId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DisableAdvertisingId-Applicability-End -->
 
 <!-- DisableAdvertisingId-OmaUri-Begin -->
@@ -235,7 +237,7 @@ This policy setting turns off the advertising ID, preventing apps from using the
 
 - If you enable this policy setting, the advertising ID is turned off. Apps can't use the ID for experiences across apps.
 
-- If you disable or do not configure this policy setting, users can control whether apps can use the advertising ID for experiences across apps.
+- If you disable or don't configure this policy setting, users can control whether apps can use the advertising ID for experiences across apps.
 <!-- DisableAdvertisingId-Description-End -->
 
 <!-- DisableAdvertisingId-Editable-Begin -->
@@ -247,7 +249,7 @@ This policy setting turns off the advertising ID, preventing apps from using the
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- DisableAdvertisingId-DFProperties-End -->
@@ -288,7 +290,7 @@ This policy setting turns off the advertising ID, preventing apps from using the
 <!-- DisablePrivacyExperience-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- DisablePrivacyExperience-Applicability-End -->
 
 <!-- DisablePrivacyExperience-OmaUri-Begin -->
@@ -305,9 +307,9 @@ This policy setting turns off the advertising ID, preventing apps from using the
 <!-- Description-Source-ADMX -->
 When logging into a new user account for the first time or after an upgrade in some scenarios, that user may be presented with a screen or series of screens that prompts the user to choose privacy settings for their account. Enable this policy to prevent this experience from launching.
 
-If this policy is enabled, the privacy experience will not launch for newly-created user accounts or for accounts that would have been prompted to choose their privacy settings after an upgrade.
+If this policy is enabled, the privacy experience won't launch for newly created user accounts or for accounts that would've been prompted to choose their privacy settings after an upgrade.
 
-If this policy is disabled or not configured, then the privacy experience may launch for newly-created user accounts or for accounts that should be prompted to choose their privacy settings after an upgrade.
+If this policy is disabled or not configured, then the privacy experience may launch for newly created user accounts or for accounts that should be prompted to choose their privacy settings after an upgrade.
 <!-- DisablePrivacyExperience-Description-End -->
 
 <!-- DisablePrivacyExperience-Editable-Begin -->
@@ -321,7 +323,7 @@ In some managed environments, the privacy settings may be set by other policies.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- DisablePrivacyExperience-DFProperties-End -->
@@ -332,7 +334,7 @@ In some managed environments, the privacy settings may be set by other policies.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | Allow the 'choose privacy settings for your device' screen for a new user during their first logon or when an existing user logs in for the first time after an upgrade. |
-| 1 | Do not allow the 'choose privacy settings for your device' screen when a new user logs in or an existing user logs in for the first time after an upgrade. |
+| 1 | Don't allow the 'choose privacy settings for your device' screen when a new user logs in or an existing user logs in for the first time after an upgrade. |
 <!-- DisablePrivacyExperience-AllowedValues-End -->
 
 <!-- DisablePrivacyExperience-GpMapping-Begin -->
@@ -361,7 +363,7 @@ In some managed environments, the privacy settings may be set by other policies.
 <!-- EnableActivityFeed-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- EnableActivityFeed-Applicability-End -->
 
 <!-- EnableActivityFeed-OmaUri-Begin -->
@@ -375,7 +377,9 @@ In some managed environments, the privacy settings may be set by other policies.
 This policy setting determines whether ActivityFeed is enabled.
 
 - If you enable this policy setting, all activity types (as applicable) are allowed to be published and ActivityFeed shall roam these activities across device graph of the user.
+
 - If you disable this policy setting, activities can't be published and ActivityFeed shall disable cloud sync.
+
 Policy change takes effect immediately.
 <!-- EnableActivityFeed-Description-End -->
 
@@ -388,7 +392,7 @@ Policy change takes effect immediately.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- EnableActivityFeed-DFProperties-End -->
@@ -428,7 +432,7 @@ Policy change takes effect immediately.
 <!-- LetAppsAccessAccountInfo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessAccountInfo-Applicability-End -->
 
 <!-- LetAppsAccessAccountInfo-OmaUri-Begin -->
@@ -445,11 +449,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access account information by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access account information and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access account information and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access account information and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access account information and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access account information by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access account information by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessAccountInfo-Description-End -->
@@ -465,7 +469,7 @@ The most restrictive value is `2` to deny apps access to account information.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LetAppsAccessAccountInfo-DFProperties-End -->
@@ -506,7 +510,7 @@ The most restrictive value is `2` to deny apps access to account information.
 <!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-OmaUri-Begin -->
@@ -523,11 +527,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access account information by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access account information and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access account information and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access account information and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access account information and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access account information by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access account information by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-Description-End -->
@@ -541,7 +545,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessAccountInfo_ForceAllowTheseApps-DFProperties-End -->
@@ -571,7 +575,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-OmaUri-Begin -->
@@ -588,11 +592,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access account information by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access account information and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access account information and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access account information and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access account information and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access account information by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access account information by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-Description-End -->
@@ -606,7 +610,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessAccountInfo_ForceDenyTheseApps-DFProperties-End -->
@@ -636,7 +640,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -653,11 +657,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access account information by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access account information and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access account information and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access account information and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access account information and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access account information by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access account information by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-Description-End -->
@@ -671,7 +675,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessAccountInfo_UserInControlOfTheseApps-DFProperties-End -->
@@ -701,7 +705,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessBackgroundSpatialPerception-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- LetAppsAccessBackgroundSpatialPerception-Applicability-End -->
 
 <!-- LetAppsAccessBackgroundSpatialPerception-OmaUri-Begin -->
@@ -726,7 +730,7 @@ This policy setting specifies whether Windows apps can access the movement of th
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LetAppsAccessBackgroundSpatialPerception-DFProperties-End -->
@@ -753,7 +757,7 @@ This policy setting specifies whether Windows apps can access the movement of th
 <!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-OmaUri-Begin -->
@@ -778,7 +782,7 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. Listed 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessBackgroundSpatialPerception_ForceAllowTheseApps-DFProperties-End -->
@@ -795,7 +799,7 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. Listed 
 <!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-OmaUri-Begin -->
@@ -821,7 +825,7 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. Listed 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessBackgroundSpatialPerception_ForceDenyTheseApps-DFProperties-End -->
@@ -838,7 +842,7 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. Listed 
 <!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -864,7 +868,7 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. The use
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessBackgroundSpatialPerception_UserInControlOfTheseApps-DFProperties-End -->
@@ -881,7 +885,7 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. The use
 <!-- LetAppsAccessCalendar-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCalendar-Applicability-End -->
 
 <!-- LetAppsAccessCalendar-OmaUri-Begin -->
@@ -898,11 +902,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the calendar by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access the calendar and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access the calendar and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access the calendar and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access the calendar and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the calendar by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access the calendar by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCalendar-Description-End -->
@@ -918,7 +922,7 @@ The most restrictive value is `2` to deny apps access to the calendar.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LetAppsAccessCalendar-DFProperties-End -->
@@ -959,7 +963,7 @@ The most restrictive value is `2` to deny apps access to the calendar.
 <!-- LetAppsAccessCalendar_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCalendar_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessCalendar_ForceAllowTheseApps-OmaUri-Begin -->
@@ -976,11 +980,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the calendar by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access the calendar and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access the calendar and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access the calendar and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access the calendar and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the calendar by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access the calendar by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCalendar_ForceAllowTheseApps-Description-End -->
@@ -994,7 +998,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessCalendar_ForceAllowTheseApps-DFProperties-End -->
@@ -1024,7 +1028,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessCalendar_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCalendar_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessCalendar_ForceDenyTheseApps-OmaUri-Begin -->
@@ -1041,11 +1045,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the calendar by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access the calendar and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access the calendar and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access the calendar and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access the calendar and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the calendar by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access the calendar by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCalendar_ForceDenyTheseApps-Description-End -->
@@ -1059,7 +1063,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessCalendar_ForceDenyTheseApps-DFProperties-End -->
@@ -1089,7 +1093,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessCalendar_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCalendar_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessCalendar_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -1106,11 +1110,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the calendar by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access the calendar and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access the calendar and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access the calendar and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access the calendar and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the calendar by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access the calendar by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCalendar_UserInControlOfTheseApps-Description-End -->
@@ -1124,7 +1128,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessCalendar_UserInControlOfTheseApps-DFProperties-End -->
@@ -1154,7 +1158,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessCallHistory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCallHistory-Applicability-End -->
 
 <!-- LetAppsAccessCallHistory-OmaUri-Begin -->
@@ -1171,11 +1175,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access call history by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access the call history and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access the call history and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access the call history and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access the call history and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the call history by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access the call history by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCallHistory-Description-End -->
@@ -1191,7 +1195,7 @@ The most restrictive value is `2` to deny apps access to call history.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LetAppsAccessCallHistory-DFProperties-End -->
@@ -1232,7 +1236,7 @@ The most restrictive value is `2` to deny apps access to call history.
 <!-- LetAppsAccessCallHistory_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCallHistory_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessCallHistory_ForceAllowTheseApps-OmaUri-Begin -->
@@ -1249,11 +1253,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access call history by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access the call history and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access the call history and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access the call history and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access the call history and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the call history by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access the call history by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCallHistory_ForceAllowTheseApps-Description-End -->
@@ -1267,7 +1271,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessCallHistory_ForceAllowTheseApps-DFProperties-End -->
@@ -1297,7 +1301,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessCallHistory_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCallHistory_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessCallHistory_ForceDenyTheseApps-OmaUri-Begin -->
@@ -1314,11 +1318,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access call history by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access the call history and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access the call history and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access the call history and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access the call history and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the call history by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access the call history by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCallHistory_ForceDenyTheseApps-Description-End -->
@@ -1332,7 +1336,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessCallHistory_ForceDenyTheseApps-DFProperties-End -->
@@ -1362,7 +1366,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -1379,11 +1383,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access call history by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access the call history and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access the call history and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access the call history and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access the call history and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the call history by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access the call history by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-Description-End -->
@@ -1397,7 +1401,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessCallHistory_UserInControlOfTheseApps-DFProperties-End -->
@@ -1427,7 +1431,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessCamera-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCamera-Applicability-End -->
 
 <!-- LetAppsAccessCamera-OmaUri-Begin -->
@@ -1444,11 +1448,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the camera by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access the camera and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access the camera and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access the camera and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access the camera and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the camera by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access the camera by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCamera-Description-End -->
@@ -1464,7 +1468,7 @@ The most restrictive value is `2` to deny apps access to the camera.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LetAppsAccessCamera-DFProperties-End -->
@@ -1505,7 +1509,7 @@ The most restrictive value is `2` to deny apps access to the camera.
 <!-- LetAppsAccessCamera_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCamera_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessCamera_ForceAllowTheseApps-OmaUri-Begin -->
@@ -1522,11 +1526,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the camera by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access the camera and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access the camera and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access the camera and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access the camera and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the camera by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access the camera by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCamera_ForceAllowTheseApps-Description-End -->
@@ -1540,7 +1544,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessCamera_ForceAllowTheseApps-DFProperties-End -->
@@ -1570,7 +1574,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessCamera_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCamera_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessCamera_ForceDenyTheseApps-OmaUri-Begin -->
@@ -1587,11 +1591,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the camera by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access the camera and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access the camera and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access the camera and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access the camera and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the camera by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access the camera by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCamera_ForceDenyTheseApps-Description-End -->
@@ -1605,7 +1609,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessCamera_ForceDenyTheseApps-DFProperties-End -->
@@ -1635,7 +1639,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessCamera_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessCamera_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessCamera_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -1652,11 +1656,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the camera by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access the camera and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access the camera and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access the camera and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access the camera and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the camera by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access the camera by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessCamera_UserInControlOfTheseApps-Description-End -->
@@ -1670,7 +1674,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessCamera_UserInControlOfTheseApps-DFProperties-End -->
@@ -1700,7 +1704,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessContacts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessContacts-Applicability-End -->
 
 <!-- LetAppsAccessContacts-OmaUri-Begin -->
@@ -1717,11 +1721,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access contacts by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access contacts and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access contacts and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access contacts and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access contacts and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access contacts by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access contacts by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessContacts-Description-End -->
@@ -1737,7 +1741,7 @@ The most restrictive value is `2` to deny apps access to contacts.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LetAppsAccessContacts-DFProperties-End -->
@@ -1778,7 +1782,7 @@ The most restrictive value is `2` to deny apps access to contacts.
 <!-- LetAppsAccessContacts_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessContacts_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessContacts_ForceAllowTheseApps-OmaUri-Begin -->
@@ -1795,11 +1799,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access contacts by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access contacts and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access contacts and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access contacts and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access contacts and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access contacts by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access contacts by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessContacts_ForceAllowTheseApps-Description-End -->
@@ -1813,7 +1817,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessContacts_ForceAllowTheseApps-DFProperties-End -->
@@ -1843,7 +1847,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessContacts_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessContacts_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessContacts_ForceDenyTheseApps-OmaUri-Begin -->
@@ -1860,11 +1864,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access contacts by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access contacts and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access contacts and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access contacts and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access contacts and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access contacts by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access contacts by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessContacts_ForceDenyTheseApps-Description-End -->
@@ -1878,7 +1882,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessContacts_ForceDenyTheseApps-DFProperties-End -->
@@ -1908,7 +1912,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessContacts_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessContacts_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessContacts_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -1925,11 +1929,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access contacts by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access contacts and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access contacts and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access contacts and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access contacts and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access contacts by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access contacts by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessContacts_UserInControlOfTheseApps-Description-End -->
@@ -1943,7 +1947,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessContacts_UserInControlOfTheseApps-DFProperties-End -->
@@ -1973,7 +1977,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessEmail-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessEmail-Applicability-End -->
 
 <!-- LetAppsAccessEmail-OmaUri-Begin -->
@@ -1990,11 +1994,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access email by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access email and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access email and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access email and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access email and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access email by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access email by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessEmail-Description-End -->
@@ -2010,7 +2014,7 @@ The most restrictive value is `2` to deny apps access to email.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LetAppsAccessEmail-DFProperties-End -->
@@ -2051,7 +2055,7 @@ The most restrictive value is `2` to deny apps access to email.
 <!-- LetAppsAccessEmail_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessEmail_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessEmail_ForceAllowTheseApps-OmaUri-Begin -->
@@ -2068,11 +2072,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access email by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access email and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access email and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access email and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access email and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access email by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access email by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessEmail_ForceAllowTheseApps-Description-End -->
@@ -2086,7 +2090,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessEmail_ForceAllowTheseApps-DFProperties-End -->
@@ -2116,7 +2120,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessEmail_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessEmail_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessEmail_ForceDenyTheseApps-OmaUri-Begin -->
@@ -2133,11 +2137,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access email by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access email and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access email and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access email and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access email and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access email by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access email by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessEmail_ForceDenyTheseApps-Description-End -->
@@ -2151,7 +2155,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessEmail_ForceDenyTheseApps-DFProperties-End -->
@@ -2181,7 +2185,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessEmail_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessEmail_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessEmail_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -2198,11 +2202,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access email by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access email and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access email and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access email and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access email and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access email by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access email by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessEmail_UserInControlOfTheseApps-Description-End -->
@@ -2216,7 +2220,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessEmail_UserInControlOfTheseApps-DFProperties-End -->
@@ -2246,7 +2250,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessGazeInput-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- LetAppsAccessGazeInput-Applicability-End -->
 
 <!-- LetAppsAccessGazeInput-OmaUri-Begin -->
@@ -2269,7 +2273,7 @@ This policy setting specifies whether Windows apps can access the eye tracker.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-2]` |
 | Default Value  | 0 |
@@ -2287,7 +2291,7 @@ This policy setting specifies whether Windows apps can access the eye tracker.
 <!-- LetAppsAccessGazeInput_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- LetAppsAccessGazeInput_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessGazeInput_ForceAllowTheseApps-OmaUri-Begin -->
@@ -2310,7 +2314,7 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. Listed 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessGazeInput_ForceAllowTheseApps-DFProperties-End -->
@@ -2327,7 +2331,7 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. Listed 
 <!-- LetAppsAccessGazeInput_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- LetAppsAccessGazeInput_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessGazeInput_ForceDenyTheseApps-OmaUri-Begin -->
@@ -2350,7 +2354,7 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. Listed 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessGazeInput_ForceDenyTheseApps-DFProperties-End -->
@@ -2367,7 +2371,7 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. Listed 
 <!-- LetAppsAccessGazeInput_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- LetAppsAccessGazeInput_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessGazeInput_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -2390,7 +2394,7 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. The use
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessGazeInput_UserInControlOfTheseApps-DFProperties-End -->
@@ -2407,7 +2411,7 @@ List of semi-colon delimited Package Family Names of Windows Store Apps. The use
 <!-- LetAppsAccessGraphicsCaptureProgrammatic-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LetAppsAccessGraphicsCaptureProgrammatic-Applicability-End -->
 
 <!-- LetAppsAccessGraphicsCaptureProgrammatic-OmaUri-Begin -->
@@ -2424,11 +2428,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can take screenshots of various windows or displays by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to take screenshots of various windows or displays and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to take screenshots of various windows or displays and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to take screenshots of various windows or displays and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to take screenshots of various windows or displays and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can take screenshots of various windows or displays by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can take screenshots of various windows or displays by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessGraphicsCaptureProgrammatic-Description-End -->
@@ -2442,7 +2446,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-2]` |
 | Default Value  | 0 |
@@ -2473,7 +2477,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-OmaUri-Begin -->
@@ -2490,11 +2494,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can take screenshots of various windows or displays by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to take screenshots of various windows or displays and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to take screenshots of various windows or displays and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to take screenshots of various windows or displays and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to take screenshots of various windows or displays and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can take screenshots of various windows or displays by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can take screenshots of various windows or displays by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-Description-End -->
@@ -2508,7 +2512,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceAllowTheseApps-DFProperties-End -->
@@ -2538,7 +2542,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-OmaUri-Begin -->
@@ -2555,11 +2559,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can take screenshots of various windows or displays by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to take screenshots of various windows or displays and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to take screenshots of various windows or displays and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to take screenshots of various windows or displays and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to take screenshots of various windows or displays and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can take screenshots of various windows or displays by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can take screenshots of various windows or displays by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-Description-End -->
@@ -2573,7 +2577,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_ForceDenyTheseApps-DFProperties-End -->
@@ -2603,7 +2607,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -2620,11 +2624,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can take screenshots of various windows or displays by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to take screenshots of various windows or displays and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to take screenshots of various windows or displays and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to take screenshots of various windows or displays and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to take screenshots of various windows or displays and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can take screenshots of various windows or displays by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can take screenshots of various windows or displays by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-Description-End -->
@@ -2638,7 +2642,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessGraphicsCaptureProgrammatic_UserInControlOfTheseApps-DFProperties-End -->
@@ -2668,7 +2672,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder-Applicability-End -->
 
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder-OmaUri-Begin -->
@@ -2685,11 +2689,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can turn off the screenshot border by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to turn off the screenshot border and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to turn off the screenshot border and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to turn off the screenshot border and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to turn off the screenshot border and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can turn off the screenshot border by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can turn off the screenshot border by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder-Description-End -->
@@ -2703,7 +2707,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-2]` |
 | Default Value  | 0 |
@@ -2735,7 +2739,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-OmaUri-Begin -->
@@ -2752,11 +2756,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can turn off the screenshot border by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to turn off the screenshot border and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to turn off the screenshot border and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to turn off the screenshot border and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to turn off the screenshot border and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can turn off the screenshot border by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can turn off the screenshot border by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-Description-End -->
@@ -2770,7 +2774,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceAllowTheseApps-DFProperties-End -->
@@ -2800,7 +2804,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-OmaUri-Begin -->
@@ -2817,11 +2821,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can turn off the screenshot border by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to turn off the screenshot border and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to turn off the screenshot border and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to turn off the screenshot border and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to turn off the screenshot border and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can turn off the screenshot border by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can turn off the screenshot border by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-Description-End -->
@@ -2835,7 +2839,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_ForceDenyTheseApps-DFProperties-End -->
@@ -2865,7 +2869,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -2882,11 +2886,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can turn off the screenshot border by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to turn off the screenshot border and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to turn off the screenshot border and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to turn off the screenshot border and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to turn off the screenshot border and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can turn off the screenshot border by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can turn off the screenshot border by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-Description-End -->
@@ -2900,7 +2904,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessGraphicsCaptureWithoutBorder_UserInControlOfTheseApps-DFProperties-End -->
@@ -2930,7 +2934,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessHumanPresence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.25000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.25000] and later |
 <!-- LetAppsAccessHumanPresence-Applicability-End -->
 
 <!-- LetAppsAccessHumanPresence-OmaUri-Begin -->
@@ -2953,7 +2957,7 @@ This policy setting specifies whether Windows apps can access the human presence
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LetAppsAccessHumanPresence-DFProperties-End -->
@@ -2990,7 +2994,7 @@ This policy setting specifies whether Windows apps can access the human presence
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.25000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.25000] and later |
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-OmaUri-Begin -->
@@ -3013,7 +3017,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-DFProperties-End -->
@@ -3040,7 +3044,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.25000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.25000] and later |
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-OmaUri-Begin -->
@@ -3063,7 +3067,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-DFProperties-End -->
@@ -3090,7 +3094,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.25000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.25000] and later |
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -3113,7 +3117,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-DFProperties-End -->
@@ -3140,7 +3144,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. The u
 <!-- LetAppsAccessLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessLocation-Applicability-End -->
 
 <!-- LetAppsAccessLocation-OmaUri-Begin -->
@@ -3157,11 +3161,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access location by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access location and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access location and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access location and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access location and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access location by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access location by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessLocation-Description-End -->
@@ -3177,7 +3181,7 @@ The most restrictive value is `2` to deny apps access to the device's location.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LetAppsAccessLocation-DFProperties-End -->
@@ -3218,7 +3222,7 @@ The most restrictive value is `2` to deny apps access to the device's location.
 <!-- LetAppsAccessLocation_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessLocation_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessLocation_ForceAllowTheseApps-OmaUri-Begin -->
@@ -3235,11 +3239,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access location by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access location and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access location and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access location and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access location and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access location by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access location by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessLocation_ForceAllowTheseApps-Description-End -->
@@ -3253,7 +3257,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessLocation_ForceAllowTheseApps-DFProperties-End -->
@@ -3283,7 +3287,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessLocation_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessLocation_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessLocation_ForceDenyTheseApps-OmaUri-Begin -->
@@ -3300,11 +3304,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access location by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access location and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access location and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access location and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access location and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access location by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access location by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessLocation_ForceDenyTheseApps-Description-End -->
@@ -3318,7 +3322,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessLocation_ForceDenyTheseApps-DFProperties-End -->
@@ -3348,7 +3352,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessLocation_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessLocation_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessLocation_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -3365,11 +3369,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access location by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access location and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access location and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access location and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access location and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access location by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access location by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessLocation_UserInControlOfTheseApps-Description-End -->
@@ -3383,7 +3387,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessLocation_UserInControlOfTheseApps-DFProperties-End -->
@@ -3413,7 +3417,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessMessaging-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMessaging-Applicability-End -->
 
 <!-- LetAppsAccessMessaging-OmaUri-Begin -->
@@ -3430,11 +3434,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can read or send messages by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps can read or send messages and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps can read or send messages and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps cannot read or send messages and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps can't read or send messages and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can read or send messages by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can read or send messages by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMessaging-Description-End -->
@@ -3450,7 +3454,7 @@ The most restrictive value is `2` to deny apps access to messaging.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LetAppsAccessMessaging-DFProperties-End -->
@@ -3491,7 +3495,7 @@ The most restrictive value is `2` to deny apps access to messaging.
 <!-- LetAppsAccessMessaging_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMessaging_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessMessaging_ForceAllowTheseApps-OmaUri-Begin -->
@@ -3508,11 +3512,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can read or send messages by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps can read or send messages and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps can read or send messages and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps cannot read or send messages and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps can't read or send messages and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can read or send messages by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can read or send messages by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMessaging_ForceAllowTheseApps-Description-End -->
@@ -3526,7 +3530,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessMessaging_ForceAllowTheseApps-DFProperties-End -->
@@ -3556,7 +3560,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessMessaging_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMessaging_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessMessaging_ForceDenyTheseApps-OmaUri-Begin -->
@@ -3573,11 +3577,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can read or send messages by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps can read or send messages and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps can read or send messages and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps cannot read or send messages and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps can't read or send messages and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can read or send messages by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can read or send messages by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMessaging_ForceDenyTheseApps-Description-End -->
@@ -3591,7 +3595,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessMessaging_ForceDenyTheseApps-DFProperties-End -->
@@ -3621,7 +3625,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessMessaging_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMessaging_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessMessaging_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -3638,11 +3642,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can read or send messages by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps can read or send messages and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps can read or send messages and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps cannot read or send messages and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps can't read or send messages and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can read or send messages by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can read or send messages by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMessaging_UserInControlOfTheseApps-Description-End -->
@@ -3656,7 +3660,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessMessaging_UserInControlOfTheseApps-DFProperties-End -->
@@ -3686,7 +3690,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessMicrophone-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMicrophone-Applicability-End -->
 
 <!-- LetAppsAccessMicrophone-OmaUri-Begin -->
@@ -3703,11 +3707,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the microphone by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access the microphone and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access the microphone and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access the microphone and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access the microphone and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the microphone by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access the microphone by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMicrophone-Description-End -->
@@ -3723,7 +3727,7 @@ The most restrictive value is `2` to deny apps access to the microphone.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LetAppsAccessMicrophone-DFProperties-End -->
@@ -3764,7 +3768,7 @@ The most restrictive value is `2` to deny apps access to the microphone.
 <!-- LetAppsAccessMicrophone_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMicrophone_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessMicrophone_ForceAllowTheseApps-OmaUri-Begin -->
@@ -3781,11 +3785,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the microphone by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access the microphone and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access the microphone and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access the microphone and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access the microphone and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the microphone by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access the microphone by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMicrophone_ForceAllowTheseApps-Description-End -->
@@ -3799,7 +3803,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessMicrophone_ForceAllowTheseApps-DFProperties-End -->
@@ -3829,7 +3833,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessMicrophone_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMicrophone_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessMicrophone_ForceDenyTheseApps-OmaUri-Begin -->
@@ -3846,11 +3850,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the microphone by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access the microphone and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access the microphone and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access the microphone and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access the microphone and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the microphone by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access the microphone by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMicrophone_ForceDenyTheseApps-Description-End -->
@@ -3864,7 +3868,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessMicrophone_ForceDenyTheseApps-DFProperties-End -->
@@ -3894,7 +3898,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -3911,11 +3915,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access the microphone by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access the microphone and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access the microphone and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access the microphone and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access the microphone and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access the microphone by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access the microphone by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-Description-End -->
@@ -3929,7 +3933,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessMicrophone_UserInControlOfTheseApps-DFProperties-End -->
@@ -3959,7 +3963,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessMotion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMotion-Applicability-End -->
 
 <!-- LetAppsAccessMotion-OmaUri-Begin -->
@@ -3976,11 +3980,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access motion data by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access motion data and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access motion data and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access motion data and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access motion data and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access motion data by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access motion data by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMotion-Description-End -->
@@ -3996,7 +4000,7 @@ The most restrictive value is `2` to deny apps access to motion data.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LetAppsAccessMotion-DFProperties-End -->
@@ -4037,7 +4041,7 @@ The most restrictive value is `2` to deny apps access to motion data.
 <!-- LetAppsAccessMotion_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMotion_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessMotion_ForceAllowTheseApps-OmaUri-Begin -->
@@ -4054,11 +4058,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access motion data by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access motion data and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access motion data and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access motion data and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access motion data and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access motion data by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access motion data by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMotion_ForceAllowTheseApps-Description-End -->
@@ -4072,7 +4076,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessMotion_ForceAllowTheseApps-DFProperties-End -->
@@ -4102,7 +4106,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessMotion_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMotion_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessMotion_ForceDenyTheseApps-OmaUri-Begin -->
@@ -4119,11 +4123,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access motion data by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access motion data and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access motion data and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access motion data and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access motion data and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access motion data by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access motion data by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMotion_ForceDenyTheseApps-Description-End -->
@@ -4137,7 +4141,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessMotion_ForceDenyTheseApps-DFProperties-End -->
@@ -4167,7 +4171,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessMotion_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessMotion_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessMotion_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -4184,11 +4188,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access motion data by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access motion data and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access motion data and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access motion data and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access motion data and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access motion data by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access motion data by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessMotion_UserInControlOfTheseApps-Description-End -->
@@ -4202,7 +4206,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessMotion_UserInControlOfTheseApps-DFProperties-End -->
@@ -4232,7 +4236,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsAccessNotifications-Applicability-End -->
 
 <!-- LetAppsAccessNotifications-OmaUri-Begin -->
@@ -4249,11 +4253,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access notifications by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access notifications and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access notifications and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access notifications and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access notifications and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access notifications by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access notifications by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessNotifications-Description-End -->
@@ -4269,7 +4273,7 @@ The most restrictive value is `2` to deny apps access to notifications.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LetAppsAccessNotifications-DFProperties-End -->
@@ -4310,7 +4314,7 @@ The most restrictive value is `2` to deny apps access to notifications.
 <!-- LetAppsAccessNotifications_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsAccessNotifications_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessNotifications_ForceAllowTheseApps-OmaUri-Begin -->
@@ -4327,11 +4331,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access notifications by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access notifications and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access notifications and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access notifications and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access notifications and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access notifications by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access notifications by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessNotifications_ForceAllowTheseApps-Description-End -->
@@ -4345,7 +4349,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessNotifications_ForceAllowTheseApps-DFProperties-End -->
@@ -4375,7 +4379,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessNotifications_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsAccessNotifications_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessNotifications_ForceDenyTheseApps-OmaUri-Begin -->
@@ -4392,11 +4396,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access notifications by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access notifications and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access notifications and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access notifications and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access notifications and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access notifications by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access notifications by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessNotifications_ForceDenyTheseApps-Description-End -->
@@ -4410,7 +4414,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessNotifications_ForceDenyTheseApps-DFProperties-End -->
@@ -4440,7 +4444,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessNotifications_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsAccessNotifications_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessNotifications_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -4457,11 +4461,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access notifications by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access notifications and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access notifications and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access notifications and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access notifications and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access notifications by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access notifications by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessNotifications_UserInControlOfTheseApps-Description-End -->
@@ -4475,7 +4479,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessNotifications_UserInControlOfTheseApps-DFProperties-End -->
@@ -4505,7 +4509,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessPhone-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessPhone-Applicability-End -->
 
 <!-- LetAppsAccessPhone-OmaUri-Begin -->
@@ -4522,11 +4526,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can make phone calls by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to make phone calls and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to make phone calls and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to make phone calls and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to make phone calls and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can make phone calls by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can make phone calls by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessPhone-Description-End -->
@@ -4542,7 +4546,7 @@ The most restrictive value is `2` to deny apps access to make phone calls.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LetAppsAccessPhone-DFProperties-End -->
@@ -4583,7 +4587,7 @@ The most restrictive value is `2` to deny apps access to make phone calls.
 <!-- LetAppsAccessPhone_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessPhone_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessPhone_ForceAllowTheseApps-OmaUri-Begin -->
@@ -4600,11 +4604,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can make phone calls by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to make phone calls and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to make phone calls and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to make phone calls and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to make phone calls and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can make phone calls by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can make phone calls by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessPhone_ForceAllowTheseApps-Description-End -->
@@ -4618,7 +4622,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessPhone_ForceAllowTheseApps-DFProperties-End -->
@@ -4648,7 +4652,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessPhone_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessPhone_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessPhone_ForceDenyTheseApps-OmaUri-Begin -->
@@ -4665,11 +4669,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can make phone calls by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to make phone calls and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to make phone calls and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to make phone calls and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to make phone calls and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can make phone calls by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can make phone calls by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessPhone_ForceDenyTheseApps-Description-End -->
@@ -4683,7 +4687,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessPhone_ForceDenyTheseApps-DFProperties-End -->
@@ -4713,7 +4717,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessPhone_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessPhone_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessPhone_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -4730,11 +4734,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can make phone calls by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to make phone calls and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to make phone calls and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to make phone calls and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to make phone calls and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can make phone calls by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can make phone calls by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessPhone_UserInControlOfTheseApps-Description-End -->
@@ -4748,7 +4752,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessPhone_UserInControlOfTheseApps-DFProperties-End -->
@@ -4778,7 +4782,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessRadios-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessRadios-Applicability-End -->
 
 <!-- LetAppsAccessRadios-OmaUri-Begin -->
@@ -4795,11 +4799,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps have access to control radios by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps will have access to control radios and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps will have access to control radios and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps will not have access to control radios and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps won't have access to control radios and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps have access to control radios by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps have access to control radios by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessRadios-Description-End -->
@@ -4815,7 +4819,7 @@ The most restrictive value is `2` to deny apps access to control radios.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LetAppsAccessRadios-DFProperties-End -->
@@ -4856,7 +4860,7 @@ The most restrictive value is `2` to deny apps access to control radios.
 <!-- LetAppsAccessRadios_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessRadios_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessRadios_ForceAllowTheseApps-OmaUri-Begin -->
@@ -4873,11 +4877,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps have access to control radios by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps will have access to control radios and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps will have access to control radios and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps will not have access to control radios and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps won't have access to control radios and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps have access to control radios by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps have access to control radios by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessRadios_ForceAllowTheseApps-Description-End -->
@@ -4891,7 +4895,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessRadios_ForceAllowTheseApps-DFProperties-End -->
@@ -4921,7 +4925,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessRadios_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessRadios_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessRadios_ForceDenyTheseApps-OmaUri-Begin -->
@@ -4938,11 +4942,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps have access to control radios by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps will have access to control radios and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps will have access to control radios and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps will not have access to control radios and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps won't have access to control radios and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps have access to control radios by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps have access to control radios by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessRadios_ForceDenyTheseApps-Description-End -->
@@ -4956,7 +4960,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessRadios_ForceDenyTheseApps-DFProperties-End -->
@@ -4986,7 +4990,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessRadios_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessRadios_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessRadios_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -5003,11 +5007,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps have access to control radios by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps will have access to control radios and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps will have access to control radios and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps will not have access to control radios and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps won't have access to control radios and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps have access to control radios by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps have access to control radios by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessRadios_UserInControlOfTheseApps-Description-End -->
@@ -5021,7 +5025,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessRadios_UserInControlOfTheseApps-DFProperties-End -->
@@ -5051,7 +5055,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessTasks-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsAccessTasks-Applicability-End -->
 
 <!-- LetAppsAccessTasks-OmaUri-Begin -->
@@ -5068,11 +5072,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access tasks by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access tasks and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access tasks and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access tasks and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access tasks and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access tasks by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access tasks by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessTasks-Description-End -->
@@ -5086,7 +5090,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-2]` |
 | Default Value  | 0 |
@@ -5118,7 +5122,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessTasks_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsAccessTasks_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessTasks_ForceAllowTheseApps-OmaUri-Begin -->
@@ -5135,11 +5139,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access tasks by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access tasks and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access tasks and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access tasks and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access tasks and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access tasks by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access tasks by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessTasks_ForceAllowTheseApps-Description-End -->
@@ -5153,7 +5157,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessTasks_ForceAllowTheseApps-DFProperties-End -->
@@ -5183,7 +5187,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessTasks_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsAccessTasks_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessTasks_ForceDenyTheseApps-OmaUri-Begin -->
@@ -5200,11 +5204,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access tasks by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access tasks and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access tasks and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access tasks and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access tasks and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access tasks by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access tasks by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessTasks_ForceDenyTheseApps-Description-End -->
@@ -5218,7 +5222,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessTasks_ForceDenyTheseApps-DFProperties-End -->
@@ -5248,7 +5252,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessTasks_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsAccessTasks_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessTasks_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -5265,11 +5269,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access tasks by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access tasks and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access tasks and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access tasks and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access tasks and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access tasks by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access tasks by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessTasks_UserInControlOfTheseApps-Description-End -->
@@ -5283,7 +5287,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessTasks_UserInControlOfTheseApps-DFProperties-End -->
@@ -5313,7 +5317,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessTrustedDevices-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessTrustedDevices-Applicability-End -->
 
 <!-- LetAppsAccessTrustedDevices-OmaUri-Begin -->
@@ -5330,11 +5334,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access trusted devices by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access trusted devices and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access trusted devices and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access trusted devices and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access trusted devices and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access trusted devices by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access trusted devices by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessTrustedDevices-Description-End -->
@@ -5350,7 +5354,7 @@ The most restrictive value is `2` to deny apps access trusted devices.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LetAppsAccessTrustedDevices-DFProperties-End -->
@@ -5391,7 +5395,7 @@ The most restrictive value is `2` to deny apps access trusted devices.
 <!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-OmaUri-Begin -->
@@ -5408,11 +5412,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access trusted devices by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access trusted devices and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access trusted devices and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access trusted devices and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access trusted devices and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access trusted devices by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access trusted devices by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-Description-End -->
@@ -5426,7 +5430,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessTrustedDevices_ForceAllowTheseApps-DFProperties-End -->
@@ -5456,7 +5460,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-OmaUri-Begin -->
@@ -5473,11 +5477,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access trusted devices by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access trusted devices and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access trusted devices and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access trusted devices and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access trusted devices and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access trusted devices by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access trusted devices by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-Description-End -->
@@ -5491,7 +5495,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessTrustedDevices_ForceDenyTheseApps-DFProperties-End -->
@@ -5521,7 +5525,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -5538,11 +5542,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can access trusted devices by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to access trusted devices and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to access trusted devices and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to access trusted devices and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to access trusted devices and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can access trusted devices by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can access trusted devices by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-Description-End -->
@@ -5556,7 +5560,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsAccessTrustedDevices_UserInControlOfTheseApps-DFProperties-End -->
@@ -5586,7 +5590,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsActivateWithVoice-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- LetAppsActivateWithVoice-Applicability-End -->
 
 <!-- LetAppsActivateWithVoice-OmaUri-Begin -->
@@ -5601,11 +5605,11 @@ This policy setting specifies whether Windows apps can be activated by voice.
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can be activated with a voice keyword by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to be activated with a voice keyword and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to be activated with a voice keyword and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to be activated with a voice keyword and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to be activated with a voice keyword and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can be activated with a voice keyword by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can be activated with a voice keyword by using Settings > Privacy on the device.
 
 This policy is applied to Windows apps and Cortana.
 <!-- LetAppsActivateWithVoice-Description-End -->
@@ -5619,7 +5623,7 @@ This policy is applied to Windows apps and Cortana.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LetAppsActivateWithVoice-DFProperties-End -->
@@ -5630,8 +5634,8 @@ This policy is applied to Windows apps and Cortana.
 | Value | Description |
 |:--|:--|
 | 0 (Default) | User in control. Users can decide if Windows apps can be activated by voice using Settings > Privacy options on the device. |
-| 1 | Force allow. Windows apps can be activated by voice and users cannot change it. |
-| 2 | Force deny. Windows apps cannot be activated by voice and users cannot change it. |
+| 1 | Force allow. Windows apps can be activated by voice and users can't change it. |
+| 2 | Force deny. Windows apps can't be activated by voice and users can't change it. |
 <!-- LetAppsActivateWithVoice-AllowedValues-End -->
 
 <!-- LetAppsActivateWithVoice-GpMapping-Begin -->
@@ -5660,7 +5664,7 @@ This policy is applied to Windows apps and Cortana.
 <!-- LetAppsActivateWithVoiceAboveLock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- LetAppsActivateWithVoiceAboveLock-Applicability-End -->
 
 <!-- LetAppsActivateWithVoiceAboveLock-OmaUri-Begin -->
@@ -5675,11 +5679,11 @@ This policy setting specifies whether Windows apps can be activated by voice whi
 
 If you choose the "User is in control" option, employees in your organization can decide whether users can interact with applications using speech while the system is locked by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, users can interact with applications using speech while the system is locked and employees in your organization cannot change it.
+If you choose the "Force Allow" option, users can interact with applications using speech while the system is locked and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, users cannot interact with applications using speech while the system is locked and employees in your organization cannot change it.
+If you choose the "Force Deny" option, users can't interact with applications using speech while the system is locked and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether users can interact with applications using speech while the system is locked by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether users can interact with applications using speech while the system is locked by using Settings > Privacy on the device.
 
 This policy is applied to Windows apps and Cortana. It takes precedence of the "Allow Cortana above lock" policy. This policy is applicable only when "Allow voice activation" policy is configured to allow applications to be activated with voice.
 <!-- LetAppsActivateWithVoiceAboveLock-Description-End -->
@@ -5693,7 +5697,7 @@ This policy is applied to Windows apps and Cortana. It takes precedence of the "
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LetAppsActivateWithVoiceAboveLock-DFProperties-End -->
@@ -5704,8 +5708,8 @@ This policy is applied to Windows apps and Cortana. It takes precedence of the "
 | Value | Description |
 |:--|:--|
 | 0 (Default) | User in control. Users can decide if Windows apps can be activated by voice while the screen is locked using Settings > Privacy options on the device. |
-| 1 | Force allow. Windows apps can be activated by voice while the screen is locked, and users cannot change it. |
-| 2 | Force deny. Windows apps cannot be activated by voice while the screen is locked, and users cannot change it. |
+| 1 | Force allow. Windows apps can be activated by voice while the screen is locked, and users can't change it. |
+| 2 | Force deny. Windows apps can't be activated by voice while the screen is locked, and users can't change it. |
 <!-- LetAppsActivateWithVoiceAboveLock-AllowedValues-End -->
 
 <!-- LetAppsActivateWithVoiceAboveLock-GpMapping-Begin -->
@@ -5734,7 +5738,7 @@ This policy is applied to Windows apps and Cortana. It takes precedence of the "
 <!-- LetAppsGetDiagnosticInfo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsGetDiagnosticInfo-Applicability-End -->
 
 <!-- LetAppsGetDiagnosticInfo-OmaUri-Begin -->
@@ -5751,11 +5755,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can get diagnostic information about other apps using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to get diagnostic information about other apps and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to get diagnostic information about other apps and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to get diagnostic information about other apps and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to get diagnostic information about other apps and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can get diagnostic information about other apps by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can get diagnostic information about other apps by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsGetDiagnosticInfo-Description-End -->
@@ -5771,7 +5775,7 @@ The most restrictive value is `2` to deny apps access to diagnostic data.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LetAppsGetDiagnosticInfo-DFProperties-End -->
@@ -5812,7 +5816,7 @@ The most restrictive value is `2` to deny apps access to diagnostic data.
 <!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-OmaUri-Begin -->
@@ -5829,11 +5833,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can get diagnostic information about other apps using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to get diagnostic information about other apps and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to get diagnostic information about other apps and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to get diagnostic information about other apps and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to get diagnostic information about other apps and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can get diagnostic information about other apps by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can get diagnostic information about other apps by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-Description-End -->
@@ -5847,7 +5851,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsGetDiagnosticInfo_ForceAllowTheseApps-DFProperties-End -->
@@ -5877,7 +5881,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-OmaUri-Begin -->
@@ -5894,11 +5898,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can get diagnostic information about other apps using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to get diagnostic information about other apps and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to get diagnostic information about other apps and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to get diagnostic information about other apps and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to get diagnostic information about other apps and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can get diagnostic information about other apps by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can get diagnostic information about other apps by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-Description-End -->
@@ -5912,7 +5916,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsGetDiagnosticInfo_ForceDenyTheseApps-DFProperties-End -->
@@ -5942,7 +5946,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -5959,11 +5963,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can get diagnostic information about other apps using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to get diagnostic information about other apps and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to get diagnostic information about other apps and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to get diagnostic information about other apps and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to get diagnostic information about other apps and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can get diagnostic information about other apps by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can get diagnostic information about other apps by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-Description-End -->
@@ -5977,7 +5981,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsGetDiagnosticInfo_UserInControlOfTheseApps-DFProperties-End -->
@@ -6007,7 +6011,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsRunInBackground-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsRunInBackground-Applicability-End -->
 
 <!-- LetAppsRunInBackground-OmaUri-Begin -->
@@ -6024,11 +6028,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can run in the background by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to run in the background and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to run in the background and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to run in the background and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to run in the background and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can run in the background by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can run in the background by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsRunInBackground-Description-End -->
@@ -6046,7 +6050,7 @@ The most restrictive value is `2` to deny apps from running in the background.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LetAppsRunInBackground-DFProperties-End -->
@@ -6087,7 +6091,7 @@ The most restrictive value is `2` to deny apps from running in the background.
 <!-- LetAppsRunInBackground_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsRunInBackground_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsRunInBackground_ForceAllowTheseApps-OmaUri-Begin -->
@@ -6104,11 +6108,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can run in the background by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to run in the background and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to run in the background and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to run in the background and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to run in the background and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can run in the background by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can run in the background by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsRunInBackground_ForceAllowTheseApps-Description-End -->
@@ -6122,7 +6126,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsRunInBackground_ForceAllowTheseApps-DFProperties-End -->
@@ -6152,7 +6156,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsRunInBackground_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsRunInBackground_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsRunInBackground_ForceDenyTheseApps-OmaUri-Begin -->
@@ -6169,11 +6173,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can run in the background by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to run in the background and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to run in the background and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to run in the background and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to run in the background and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can run in the background by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can run in the background by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsRunInBackground_ForceDenyTheseApps-Description-End -->
@@ -6187,7 +6191,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsRunInBackground_ForceDenyTheseApps-DFProperties-End -->
@@ -6217,7 +6221,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsRunInBackground_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- LetAppsRunInBackground_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsRunInBackground_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -6234,11 +6238,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can run in the background by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to run in the background and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to run in the background and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to run in the background and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to run in the background and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can run in the background by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can run in the background by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsRunInBackground_UserInControlOfTheseApps-Description-End -->
@@ -6252,7 +6256,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsRunInBackground_UserInControlOfTheseApps-DFProperties-End -->
@@ -6282,7 +6286,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsSyncWithDevices-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsSyncWithDevices-Applicability-End -->
 
 <!-- LetAppsSyncWithDevices-OmaUri-Begin -->
@@ -6299,11 +6303,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can communicate with unpaired wireless devices by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to communicate with unpaired wireless devices and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to communicate with unpaired wireless devices and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to communicate with unpaired wireless devices and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to communicate with unpaired wireless devices and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can communicate with unpaired wireless devices by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can communicate with unpaired wireless devices by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsSyncWithDevices-Description-End -->
@@ -6319,7 +6323,7 @@ The most restrictive value is `2` to deny apps syncing with devices.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LetAppsSyncWithDevices-DFProperties-End -->
@@ -6360,7 +6364,7 @@ The most restrictive value is `2` to deny apps syncing with devices.
 <!-- LetAppsSyncWithDevices_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsSyncWithDevices_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsSyncWithDevices_ForceAllowTheseApps-OmaUri-Begin -->
@@ -6377,11 +6381,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can communicate with unpaired wireless devices by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to communicate with unpaired wireless devices and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to communicate with unpaired wireless devices and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to communicate with unpaired wireless devices and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to communicate with unpaired wireless devices and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can communicate with unpaired wireless devices by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can communicate with unpaired wireless devices by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsSyncWithDevices_ForceAllowTheseApps-Description-End -->
@@ -6395,7 +6399,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsSyncWithDevices_ForceAllowTheseApps-DFProperties-End -->
@@ -6425,7 +6429,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsSyncWithDevices_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsSyncWithDevices_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsSyncWithDevices_ForceDenyTheseApps-OmaUri-Begin -->
@@ -6442,11 +6446,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can communicate with unpaired wireless devices by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to communicate with unpaired wireless devices and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to communicate with unpaired wireless devices and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to communicate with unpaired wireless devices and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to communicate with unpaired wireless devices and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can communicate with unpaired wireless devices by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can communicate with unpaired wireless devices by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsSyncWithDevices_ForceDenyTheseApps-Description-End -->
@@ -6460,7 +6464,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsSyncWithDevices_ForceDenyTheseApps-DFProperties-End -->
@@ -6490,7 +6494,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-OmaUri-Begin -->
@@ -6507,11 +6511,11 @@ You can specify either a default setting for all apps or a per-app setting by sp
 
 If you choose the "User is in control" option, employees in your organization can decide whether Windows apps can communicate with unpaired wireless devices by using Settings > Privacy on the device.
 
-If you choose the "Force Allow" option, Windows apps are allowed to communicate with unpaired wireless devices and employees in your organization cannot change it.
+If you choose the "Force Allow" option, Windows apps are allowed to communicate with unpaired wireless devices and employees in your organization can't change it.
 
-If you choose the "Force Deny" option, Windows apps are not allowed to communicate with unpaired wireless devices and employees in your organization cannot change it.
+If you choose the "Force Deny" option, Windows apps aren't allowed to communicate with unpaired wireless devices and employees in your organization can't change it.
 
-If you disable or do not configure this policy setting, employees in your organization can decide whether Windows apps can communicate with unpaired wireless devices by using Settings > Privacy on the device.
+If you disable or don't configure this policy setting, employees in your organization can decide whether Windows apps can communicate with unpaired wireless devices by using Settings > Privacy on the device.
 
 If an app is open when this Group Policy object is applied on a device, employees must restart the app or device for the policy changes to be applied to the app.
 <!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-Description-End -->
@@ -6525,7 +6529,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | List (Delimiter: `;`) |
 <!-- LetAppsSyncWithDevices_UserInControlOfTheseApps-DFProperties-End -->
@@ -6555,7 +6559,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- PublishUserActivities-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- PublishUserActivities-Applicability-End -->
 
 <!-- PublishUserActivities-OmaUri-Begin -->
@@ -6569,7 +6573,9 @@ If an app is open when this Group Policy object is applied on a device, employee
 This policy setting determines whether User Activities can be published.
 
 - If you enable this policy setting, activities of type User Activity are allowed to be published.
-- If you disable this policy setting, activities of type User Activity are not allowed to be published.
+
+- If you disable this policy setting, activities of type User Activity aren't allowed to be published.
+
 Policy change takes effect immediately.
 <!-- PublishUserActivities-Description-End -->
 
@@ -6584,7 +6590,7 @@ For more information, see [Windows activity history and your privacy](https://su
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- PublishUserActivities-DFProperties-End -->
@@ -6624,7 +6630,7 @@ For more information, see [Windows activity history and your privacy](https://su
 <!-- UploadUserActivities-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- UploadUserActivities-Applicability-End -->
 
 <!-- UploadUserActivities-OmaUri-Begin -->
@@ -6638,8 +6644,11 @@ For more information, see [Windows activity history and your privacy](https://su
 This policy setting determines whether published User Activities can be uploaded.
 
 - If you enable this policy setting, activities of type User Activity are allowed to be uploaded.
-- If you disable this policy setting, activities of type User Activity are not allowed to be uploaded.
+
+- If you disable this policy setting, activities of type User Activity aren't allowed to be uploaded.
+
 Deletion of activities of type User Activity are independent of this setting.
+
 Policy change takes effect immediately.
 <!-- UploadUserActivities-Description-End -->
 
@@ -6654,7 +6663,7 @@ For more information, see [Windows activity history and your privacy](https://su
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- UploadUserActivities-DFProperties-End -->

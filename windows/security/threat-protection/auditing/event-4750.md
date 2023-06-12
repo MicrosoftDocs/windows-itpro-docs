@@ -1,5 +1,5 @@
 ---
-title: 4750(S) A security-disabled global group was changed. (Windows 10)
+title: 4750(S) A security-disabled global group was changed. 
 description: Describes security event 4750(S) A security-disabled global group was changed.
 ms.pagetype: security
 ms.prod: windows-client

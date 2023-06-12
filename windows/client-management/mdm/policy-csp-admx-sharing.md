@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Sharing Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_Sharing-Begin -->
 # Policy CSP - ADMX_Sharing
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_Sharing-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- DisableHomeGroup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableHomeGroup-Applicability-End -->
 
 <!-- DisableHomeGroup-OmaUri-Begin -->
@@ -44,11 +41,11 @@ ms.topic: reference
 <!-- Description-Source-ADMX -->
 This policy setting specifies whether users can add computers to a homegroup. By default, users can add their computer to a homegroup on a private network.
 
-- If you enable this policy setting, users cannot add computers to a homegroup. This policy setting does not affect other network sharing features.
+- If you enable this policy setting, users can't add computers to a homegroup. This policy setting doesn't affect other network sharing features.
 
-- If you disable or do not configure this policy setting, users can add computers to a homegroup. However, data on a domain-joined computer is not shared with the homegroup.
+- If you disable or don't configure this policy setting, users can add computers to a homegroup. However, data on a domain-joined computer isn't shared with the homegroup.
 
-This policy setting is not configured by default.
+This policy setting isn't configured by default.
 
 You must restart the computer for this policy setting to take effect.
 <!-- DisableHomeGroup-Description-End -->
@@ -62,13 +59,12 @@ You must restart the computer for this policy setting to take effect.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DisableHomeGroup-DFProperties-End -->
 
 <!-- DisableHomeGroup-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -95,7 +91,7 @@ You must restart the computer for this policy setting to take effect.
 <!-- NoInplaceSharing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- NoInplaceSharing-Applicability-End -->
 
 <!-- NoInplaceSharing-OmaUri-Begin -->
@@ -108,7 +104,7 @@ You must restart the computer for this policy setting to take effect.
 <!-- Description-Source-ADMX -->
 This policy setting specifies whether users can share files within their profile. By default users are allowed to share files within their profile to other users on their network after an administrator opts in the computer. An administrator can opt in the computer by using the sharing wizard to share a file within their profile.
 
-- If you enable this policy setting, users cannot share files within their profile using the sharing wizard. Also, the sharing wizard cannot create a share at %root%\users and can only be used to create SMB shares on folders.
+- If you enable this policy setting, users can't share files within their profile using the sharing wizard. Also, the sharing wizard can't create a share at %root%\users and can only be used to create SMB shares on folders.
 
 - If you disable or don't configure this policy setting, users can share files out of their user profile after an administrator has opted in the computer.
 <!-- NoInplaceSharing-Description-End -->
@@ -122,13 +118,12 @@ This policy setting specifies whether users can share files within their profile
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- NoInplaceSharing-DFProperties-End -->
 
 <!-- NoInplaceSharing-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

@@ -4,7 +4,7 @@ description: Learn more about the VPNv2 CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -250,7 +250,7 @@ The following list shows the VPNv2 configuration service provider nodes:
 <!-- Device-{ProfileName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-Applicability-End -->
 
 <!-- Device-{ProfileName}-OmaUri-Begin -->
@@ -261,7 +261,7 @@ The following list shows the VPNv2 configuration service provider nodes:
 
 <!-- Device-{ProfileName}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Unique alpha numeric identifier for the profile. The profile name must not include a forward slash (/). If the profile name has a space or other non-alphanumeric character, it must be properly escaped according to the URL encoding standard.
+Unique alpha numeric identifier for the profile. The profile name mustn't include a forward slash (/). If the profile name has a space or other non-alphanumeric character, it must be properly escaped according to the URL encoding standard.
 <!-- Device-{ProfileName}-Description-End -->
 
 <!-- Device-{ProfileName}-Editable-Begin -->
@@ -273,7 +273,7 @@ Unique alpha numeric identifier for the profile. The profile name must not inclu
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 | Atomic Required | True |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
@@ -292,7 +292,7 @@ Unique alpha numeric identifier for the profile. The profile name must not inclu
 <!-- Device-{ProfileName}-AlwaysOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-AlwaysOn-Applicability-End -->
 
 <!-- Device-{ProfileName}-AlwaysOn-OmaUri-Begin -->
@@ -315,7 +315,7 @@ An optional flag to enable Always On mode. This will automatically connect the V
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- Device-{ProfileName}-AlwaysOn-DFProperties-End -->
@@ -341,7 +341,7 @@ An optional flag to enable Always On mode. This will automatically connect the V
 <!-- Device-{ProfileName}-AlwaysOnActive-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-AlwaysOnActive-Applicability-End -->
 
 <!-- Device-{ProfileName}-AlwaysOnActive-OmaUri-Begin -->
@@ -364,7 +364,7 @@ An optional flag to activate Always On mode. This is true by default if AlwaysOn
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Device-{ProfileName}-AlwaysOnActive-DFProperties-End -->
@@ -390,7 +390,7 @@ An optional flag to activate Always On mode. This is true by default if AlwaysOn
 <!-- Device-{ProfileName}-APNBinding-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-APNBinding-Applicability-End -->
 
 <!-- Device-{ProfileName}-APNBinding-OmaUri-Begin -->
@@ -413,7 +413,7 @@ Reserved for future use.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-{ProfileName}-APNBinding-DFProperties-End -->
 
@@ -429,7 +429,7 @@ Reserved for future use.
 <!-- Device-{ProfileName}-APNBinding-AccessPointName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-APNBinding-AccessPointName-Applicability-End -->
 
 <!-- Device-{ProfileName}-APNBinding-AccessPointName-OmaUri-Begin -->
@@ -452,7 +452,7 @@ Reserved for future use.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-APNBinding-AccessPointName-DFProperties-End -->
 
@@ -468,7 +468,7 @@ Reserved for future use.
 <!-- Device-{ProfileName}-APNBinding-AuthenticationType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-APNBinding-AuthenticationType-Applicability-End -->
 
 <!-- Device-{ProfileName}-APNBinding-AuthenticationType-OmaUri-Begin -->
@@ -491,7 +491,7 @@ Reserved for future use.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-APNBinding-AuthenticationType-DFProperties-End -->
 
@@ -507,7 +507,7 @@ Reserved for future use.
 <!-- Device-{ProfileName}-APNBinding-IsCompressionEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-APNBinding-IsCompressionEnabled-Applicability-End -->
 
 <!-- Device-{ProfileName}-APNBinding-IsCompressionEnabled-OmaUri-Begin -->
@@ -530,7 +530,7 @@ Reserved for future use.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-APNBinding-IsCompressionEnabled-DFProperties-End -->
 
@@ -546,7 +546,7 @@ Reserved for future use.
 <!-- Device-{ProfileName}-APNBinding-Password-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-APNBinding-Password-Applicability-End -->
 
 <!-- Device-{ProfileName}-APNBinding-Password-OmaUri-Begin -->
@@ -569,7 +569,7 @@ Reserved for future use.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-APNBinding-Password-DFProperties-End -->
 
@@ -585,7 +585,7 @@ Reserved for future use.
 <!-- Device-{ProfileName}-APNBinding-ProviderId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-APNBinding-ProviderId-Applicability-End -->
 
 <!-- Device-{ProfileName}-APNBinding-ProviderId-OmaUri-Begin -->
@@ -608,7 +608,7 @@ Reserved for future use.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-APNBinding-ProviderId-DFProperties-End -->
 
@@ -624,7 +624,7 @@ Reserved for future use.
 <!-- Device-{ProfileName}-APNBinding-UserName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-APNBinding-UserName-Applicability-End -->
 
 <!-- Device-{ProfileName}-APNBinding-UserName-OmaUri-Begin -->
@@ -647,7 +647,7 @@ Reserved for future use.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-APNBinding-UserName-DFProperties-End -->
 
@@ -663,7 +663,7 @@ Reserved for future use.
 <!-- Device-{ProfileName}-AppTriggerList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-AppTriggerList-Applicability-End -->
 
 <!-- Device-{ProfileName}-AppTriggerList-OmaUri-Begin -->
@@ -686,7 +686,7 @@ List of applications set to trigger the VPN. If any of these apps are launched a
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-{ProfileName}-AppTriggerList-DFProperties-End -->
 
@@ -702,7 +702,7 @@ List of applications set to trigger the VPN. If any of these apps are launched a
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-Applicability-End -->
 
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-OmaUri-Begin -->
@@ -713,7 +713,7 @@ List of applications set to trigger the VPN. If any of these apps are launched a
 
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-Description-Begin -->
 <!-- Description-Source-DDF -->
-A sequential integer identifier which allows the ability to specify multiple apps for App Trigger. Sequencing must start at 0 and you should not skip numbers.
+A sequential integer identifier which allows the ability to specify multiple apps for App Trigger. Sequencing must start at 0 and you shouldn't skip numbers.
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-Description-End -->
 
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-Editable-Begin -->
@@ -725,7 +725,7 @@ A sequential integer identifier which allows the ability to specify multiple app
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: A sequential integer identifier which allows the ability to specify multiple apps for App Trigger. Sequencing must start at 0 and you should not skip numbers. |
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-DFProperties-End -->
@@ -742,7 +742,7 @@ A sequential integer identifier which allows the ability to specify multiple app
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Applicability-End -->
 
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-OmaUri-Begin -->
@@ -765,7 +765,7 @@ App Node under the Row Id.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-DFProperties-End -->
 
@@ -781,7 +781,7 @@ App Node under the Row Id.
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Id-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Id-Applicability-End -->
 
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Id-OmaUri-Begin -->
@@ -804,7 +804,7 @@ App Identity. Specified, based on the Type Field.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Id-DFProperties-End -->
 
@@ -820,7 +820,7 @@ App Identity. Specified, based on the Type Field.
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Type-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Type-Applicability-End -->
 
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Type-OmaUri-Begin -->
@@ -843,7 +843,7 @@ Returns the type of App/Id. This value can be either of the following: PackageFa
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Type-DFProperties-End -->
 
@@ -859,7 +859,7 @@ Returns the type of App/Id. This value can be either of the following: PackageFa
 <!-- Device-{ProfileName}-ByPassForLocal-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-ByPassForLocal-Applicability-End -->
 
 <!-- Device-{ProfileName}-ByPassForLocal-OmaUri-Begin -->
@@ -870,8 +870,9 @@ Returns the type of App/Id. This value can be either of the following: PackageFa
 
 <!-- Device-{ProfileName}-ByPassForLocal-Description-Begin -->
 <!-- Description-Source-DDF -->
-False : Do not Bypass for Local traffic
-True : ByPass VPN Interface for Local Traffic
+False: Don't Bypass for Local traffic.
+
+True: ByPass VPN Interface for Local Traffic.
 
 Optional. When this setting is True, requests to local resources that are available on the same Wi-Fi network as the VPN client can bypass the VPN. For example, if enterprise policy for VPN requires force tunnel for VPN, but enterprise intends to allow the remote user to connect locally to media center in their home, then this option should be set to True. The user can bypass VPN for local subnet traffic. When this is set to False, the setting is disabled and no subnet exceptions are allowed.
 <!-- Device-{ProfileName}-ByPassForLocal-Description-End -->
@@ -885,7 +886,7 @@ Optional. When this setting is True, requests to local resources that are availa
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-ByPassForLocal-DFProperties-End -->
 
@@ -901,7 +902,7 @@ Optional. When this setting is True, requests to local resources that are availa
 <!-- Device-{ProfileName}-DataEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-{ProfileName}-DataEncryption-Applicability-End -->
 
 <!-- Device-{ProfileName}-DataEncryption-OmaUri-Begin -->
@@ -924,7 +925,7 @@ Determines the level of data encryption required for the connection.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | Require |
 <!-- Device-{ProfileName}-DataEncryption-DFProperties-End -->
@@ -952,7 +953,7 @@ Determines the level of data encryption required for the connection.
 <!-- Device-{ProfileName}-DeviceCompliance-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-DeviceCompliance-Applicability-End -->
 
 <!-- Device-{ProfileName}-DeviceCompliance-OmaUri-Begin -->
@@ -975,7 +976,7 @@ Nodes under DeviceCompliance can be used to enable AAD based Conditional Access 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Get |
 <!-- Device-{ProfileName}-DeviceCompliance-DFProperties-End -->
 
@@ -991,7 +992,7 @@ Nodes under DeviceCompliance can be used to enable AAD based Conditional Access 
 <!-- Device-{ProfileName}-DeviceCompliance-Enabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-DeviceCompliance-Enabled-Applicability-End -->
 
 <!-- Device-{ProfileName}-DeviceCompliance-Enabled-OmaUri-Begin -->
@@ -1014,7 +1015,7 @@ Enables the Device Compliance flow from the client. If marked as True, the VPN C
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-DeviceCompliance-Enabled-DFProperties-End -->
 
@@ -1039,7 +1040,7 @@ Enables the Device Compliance flow from the client. If marked as True, the VPN C
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-Applicability-End -->
 
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-OmaUri-Begin -->
@@ -1062,7 +1063,7 @@ Nodes under SSO can be used to choose a certificate different from the VPN Authe
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Get |
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-DFProperties-End -->
 
@@ -1078,7 +1079,7 @@ Nodes under SSO can be used to choose a certificate different from the VPN Authe
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-Eku-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-Eku-Applicability-End -->
 
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-Eku-OmaUri-Begin -->
@@ -1101,7 +1102,7 @@ Comma Separated list of EKU's for the VPN Client to look for the correct certifi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-Eku-DFProperties-End -->
 
@@ -1117,7 +1118,7 @@ Comma Separated list of EKU's for the VPN Client to look for the correct certifi
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-Enabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-Enabled-Applicability-End -->
 
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-Enabled-OmaUri-Begin -->
@@ -1140,7 +1141,7 @@ If this field is set to True the VPN Client will look for a separate certificate
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-Enabled-DFProperties-End -->
 
@@ -1165,7 +1166,7 @@ If this field is set to True the VPN Client will look for a separate certificate
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-IssuerHash-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-IssuerHash-Applicability-End -->
 
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-IssuerHash-OmaUri-Begin -->
@@ -1188,7 +1189,7 @@ Comma Separated list of Issuer Hashes for the VPN Client to look for the correct
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-IssuerHash-DFProperties-End -->
 
@@ -1204,7 +1205,7 @@ Comma Separated list of Issuer Hashes for the VPN Client to look for the correct
 <!-- Device-{ProfileName}-DeviceTunnel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-{ProfileName}-DeviceTunnel-Applicability-End -->
 
 <!-- Device-{ProfileName}-DeviceTunnel-OmaUri-Begin -->
@@ -1216,9 +1217,13 @@ Comma Separated list of Issuer Hashes for the VPN Client to look for the correct
 <!-- Device-{ProfileName}-DeviceTunnel-Description-Begin -->
 <!-- Description-Source-DDF -->
 If turned on a device tunnel profile does four things.
+
 First, it automatically becomes an always on profile.
-Second, it does not require the presence or logging in of any user to the machine in order for it to connect.
+
+Second, it doesn't require the presence or logging in of any user to the machine in order for it to connect.
+
 Third, no other Device Tunnel profile maybe be present on the same machine.
+
 A device tunnel profile must be deleted before another device tunnel profile can be added, removed, or connected.
 <!-- Device-{ProfileName}-DeviceTunnel-Description-End -->
 
@@ -1231,7 +1236,7 @@ A device tunnel profile must be deleted before another device tunnel profile can
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- Device-{ProfileName}-DeviceTunnel-DFProperties-End -->
@@ -1241,7 +1246,7 @@ A device tunnel profile must be deleted before another device tunnel profile can
 
 | Value | Description |
 |:--|:--|
-| false (Default) | This is not a device tunnel profile. |
+| false (Default) | This isn't a device tunnel profile. |
 | true | This is a device tunnel profile. |
 <!-- Device-{ProfileName}-DeviceTunnel-AllowedValues-End -->
 
@@ -1257,7 +1262,7 @@ A device tunnel profile must be deleted before another device tunnel profile can
 <!-- Device-{ProfileName}-DisableAdvancedOptionsEditButton-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-{ProfileName}-DisableAdvancedOptionsEditButton-Applicability-End -->
 
 <!-- Device-{ProfileName}-DisableAdvancedOptionsEditButton-OmaUri-Begin -->
@@ -1280,7 +1285,7 @@ Optional. When this setting is True, the Advanced Options page will have its edi
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-DisableAdvancedOptionsEditButton-DFProperties-End -->
 
@@ -1305,7 +1310,7 @@ Optional. When this setting is True, the Advanced Options page will have its edi
 <!-- Device-{ProfileName}-DisableDisconnectButton-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-{ProfileName}-DisableDisconnectButton-Applicability-End -->
 
 <!-- Device-{ProfileName}-DisableDisconnectButton-OmaUri-Begin -->
@@ -1316,7 +1321,7 @@ Optional. When this setting is True, the Advanced Options page will have its edi
 
 <!-- Device-{ProfileName}-DisableDisconnectButton-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. When this setting is True, the Disconnect button will not be visible for connected profiles.
+Optional. When this setting is True, the Disconnect button won't be visible for connected profiles.
 <!-- Device-{ProfileName}-DisableDisconnectButton-Description-End -->
 
 <!-- Device-{ProfileName}-DisableDisconnectButton-Editable-Begin -->
@@ -1328,7 +1333,7 @@ Optional. When this setting is True, the Disconnect button will not be visible f
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-DisableDisconnectButton-DFProperties-End -->
 
@@ -1338,7 +1343,7 @@ Optional. When this setting is True, the Disconnect button will not be visible f
 | Value | Description |
 |:--|:--|
 | false | Disconnect Button is visible. |
-| true | Disconnect Button is not visible. |
+| true | Disconnect Button isn't visible. |
 <!-- Device-{ProfileName}-DisableDisconnectButton-AllowedValues-End -->
 
 <!-- Device-{ProfileName}-DisableDisconnectButton-Examples-Begin -->
@@ -1353,7 +1358,7 @@ Optional. When this setting is True, the Disconnect button will not be visible f
 <!-- Device-{ProfileName}-DisableIKEv2Fragmentation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-{ProfileName}-DisableIKEv2Fragmentation-Applicability-End -->
 
 <!-- Device-{ProfileName}-DisableIKEv2Fragmentation-OmaUri-Begin -->
@@ -1376,7 +1381,7 @@ Set to disable IKEv2 Fragmentation.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- Device-{ProfileName}-DisableIKEv2Fragmentation-DFProperties-End -->
@@ -1386,7 +1391,7 @@ Set to disable IKEv2 Fragmentation.
 
 | Value | Description |
 |:--|:--|
-| true | IKEv2 Fragmentation will not be used. |
+| true | IKEv2 Fragmentation won't be used. |
 | false (Default) | IKEv2 Fragmentation is used as normal. |
 <!-- Device-{ProfileName}-DisableIKEv2Fragmentation-AllowedValues-End -->
 
@@ -1402,7 +1407,7 @@ Set to disable IKEv2 Fragmentation.
 <!-- Device-{ProfileName}-DnsSuffix-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-DnsSuffix-Applicability-End -->
 
 <!-- Device-{ProfileName}-DnsSuffix-OmaUri-Begin -->
@@ -1425,7 +1430,7 @@ Specifies one or more comma separated DNS suffixes. The first in the list is als
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-DnsSuffix-DFProperties-End -->
 
@@ -1441,7 +1446,7 @@ Specifies one or more comma separated DNS suffixes. The first in the list is als
 <!-- Device-{ProfileName}-DomainNameInformationList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-DomainNameInformationList-Applicability-End -->
 
 <!-- Device-{ProfileName}-DomainNameInformationList-OmaUri-Begin -->
@@ -1466,7 +1471,7 @@ NRPT ([Name Resolution Policy Table](/previous-versions/windows/it-pro/windows-s
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-{ProfileName}-DomainNameInformationList-DFProperties-End -->
 
@@ -1482,7 +1487,7 @@ NRPT ([Name Resolution Policy Table](/previous-versions/windows/it-pro/windows-s
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-Applicability-End -->
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-OmaUri-Begin -->
@@ -1505,7 +1510,7 @@ A sequential integer identifier for the Domain Name information. Sequencing must
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: A sequential integer identifier for the Domain Name information. Sequencing must start at 0. |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DFProperties-End -->
@@ -1522,7 +1527,7 @@ A sequential integer identifier for the Domain Name information. Sequencing must
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-AutoTrigger-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-AutoTrigger-Applicability-End -->
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-AutoTrigger-OmaUri-Begin -->
@@ -1545,7 +1550,7 @@ Boolean to determine whether this domain name rule will trigger the VPN.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-AutoTrigger-DFProperties-End -->
@@ -1555,7 +1560,7 @@ Boolean to determine whether this domain name rule will trigger the VPN.
 
 | Value | Description |
 |:--|:--|
-| false (Default) | This DomainName rule will not trigger the VPN. |
+| false (Default) | This DomainName rule won't trigger the VPN. |
 | true | This DomainName rule will trigger the VPN. |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-AutoTrigger-AllowedValues-End -->
 
@@ -1571,7 +1576,7 @@ Boolean to determine whether this domain name rule will trigger the VPN.
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DnsServers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DnsServers-Applicability-End -->
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DnsServers-OmaUri-Begin -->
@@ -1594,7 +1599,7 @@ Comma Seperated list of IP addresses for the DNS Servers to use for the domain n
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DnsServers-DFProperties-End -->
 
@@ -1610,7 +1615,7 @@ Comma Seperated list of IP addresses for the DNS Servers to use for the domain n
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainName-Applicability-End -->
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainName-OmaUri-Begin -->
@@ -1633,7 +1638,7 @@ Used to indicate the namespace to which the policy applies. When a Name query is
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainName-DFProperties-End -->
 
@@ -1649,7 +1654,7 @@ Used to indicate the namespace to which the policy applies. When a Name query is
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-Applicability-End -->
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-OmaUri-Begin -->
@@ -1660,7 +1665,7 @@ Used to indicate the namespace to which the policy applies. When a Name query is
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-Description-Begin -->
 <!-- Description-Source-DDF -->
-Returns the namespace type. This value can be one of the following: FQDN - If the DomainName was not prepended with a . and applies only to the fully qualified domain name (FQDN) of a specified host. Suffix - If the DomainName was prepended with a . and applies to the specified namespace, all records in that namespace, and all subdomains.
+Returns the namespace type. This value can be one of the following: FQDN - If the DomainName wasn't prepended with a . and applies only to the fully qualified domain name (FQDN) of a specified host. Suffix - If the DomainName was prepended with a . and applies to the specified namespace, all records in that namespace, and all subdomains.
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-Description-End -->
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-Editable-Begin -->
@@ -1672,7 +1677,7 @@ Returns the namespace type. This value can be one of the following: FQDN - If th
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-DFProperties-End -->
 
@@ -1688,7 +1693,7 @@ Returns the namespace type. This value can be one of the following: FQDN - If th
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-Applicability-End -->
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-OmaUri-Begin -->
@@ -1699,7 +1704,7 @@ Returns the namespace type. This value can be one of the following: FQDN - If th
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-Description-Begin -->
 <!-- Description-Source-DDF -->
-A boolean value that specifies if the rule being added should persist even when the VPN is not connected.
+A boolean value that specifies if the rule being added should persist even when the VPN isn't connected.
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-Description-End -->
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-Editable-Begin -->
@@ -1711,7 +1716,7 @@ A boolean value that specifies if the rule being added should persist even when 
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-DFProperties-End -->
@@ -1737,7 +1742,7 @@ A boolean value that specifies if the rule being added should persist even when 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-WebProxyServers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-WebProxyServers-Applicability-End -->
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-WebProxyServers-OmaUri-Begin -->
@@ -1760,7 +1765,7 @@ Web Proxy Server IP address if you are redirecting traffic through your intranet
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-WebProxyServers-DFProperties-End -->
 
@@ -1776,7 +1781,7 @@ Web Proxy Server IP address if you are redirecting traffic through your intranet
 <!-- Device-{ProfileName}-EdpModeId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-EdpModeId-Applicability-End -->
 
 <!-- Device-{ProfileName}-EdpModeId-OmaUri-Begin -->
@@ -1799,7 +1804,7 @@ Enterprise ID, which is required for connecting this VPN profile with an WIP pol
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-EdpModeId-DFProperties-End -->
 
@@ -1815,7 +1820,7 @@ Enterprise ID, which is required for connecting this VPN profile with an WIP pol
 <!-- Device-{ProfileName}-IPv4InterfaceMetric-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-{ProfileName}-IPv4InterfaceMetric-Applicability-End -->
 
 <!-- Device-{ProfileName}-IPv4InterfaceMetric-OmaUri-Begin -->
@@ -1838,7 +1843,7 @@ The metric for the IPv4 interface.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-9999]` |
 <!-- Device-{ProfileName}-IPv4InterfaceMetric-DFProperties-End -->
@@ -1855,7 +1860,7 @@ The metric for the IPv4 interface.
 <!-- Device-{ProfileName}-IPv6InterfaceMetric-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-{ProfileName}-IPv6InterfaceMetric-Applicability-End -->
 
 <!-- Device-{ProfileName}-IPv6InterfaceMetric-OmaUri-Begin -->
@@ -1878,7 +1883,7 @@ The metric for the IPv6 interface.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-9999]` |
 <!-- Device-{ProfileName}-IPv6InterfaceMetric-DFProperties-End -->
@@ -1895,7 +1900,7 @@ The metric for the IPv6 interface.
 <!-- Device-{ProfileName}-NativeProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-OmaUri-Begin -->
@@ -1918,7 +1923,7 @@ Nodes under NativeProfile are required when using a Windows Inbox VPN Protocol (
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Get |
 <!-- Device-{ProfileName}-NativeProfile-DFProperties-End -->
 
@@ -1934,7 +1939,7 @@ Nodes under NativeProfile are required when using a Windows Inbox VPN Protocol (
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Authentication-OmaUri-Begin -->
@@ -1957,7 +1962,7 @@ Required node for native profile. It contains authentication information for the
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-DFProperties-End -->
 
@@ -1973,7 +1978,7 @@ Required node for native profile. It contains authentication information for the
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Certificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Certificate-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Certificate-OmaUri-Begin -->
@@ -1996,7 +2001,7 @@ Reserved for future use.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Certificate-DFProperties-End -->
 
@@ -2012,7 +2017,7 @@ Reserved for future use.
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Certificate-Eku-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Certificate-Eku-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Certificate-Eku-OmaUri-Begin -->
@@ -2035,7 +2040,7 @@ Reserved for future use.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Certificate-Eku-DFProperties-End -->
 
@@ -2051,7 +2056,7 @@ Reserved for future use.
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Certificate-Issuer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Certificate-Issuer-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Certificate-Issuer-OmaUri-Begin -->
@@ -2074,7 +2079,7 @@ Reserved for future use.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Certificate-Issuer-DFProperties-End -->
 
@@ -2090,7 +2095,7 @@ Reserved for future use.
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-OmaUri-Begin -->
@@ -2113,7 +2118,7 @@ Required when the native profile specifies EAP authentication. EAP configuration
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-DFProperties-End -->
 
@@ -2129,7 +2134,7 @@ Required when the native profile specifies EAP authentication. EAP configuration
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-Configuration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-Configuration-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-Configuration-OmaUri-Begin -->
@@ -2152,7 +2157,7 @@ HTML encoded XML of the EAP configuration. For more information,see [EAP configu
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-Configuration-DFProperties-End -->
 
@@ -2168,7 +2173,7 @@ HTML encoded XML of the EAP configuration. For more information,see [EAP configu
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-Type-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-Type-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-Type-OmaUri-Begin -->
@@ -2194,7 +2199,7 @@ Required node for EAP profiles. This specifies the EAP Type ID
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-Eap-Type-DFProperties-End -->
 
@@ -2210,7 +2215,7 @@ Required node for EAP profiles. This specifies the EAP Type ID
 <!-- Device-{ProfileName}-NativeProfile-Authentication-MachineMethod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-MachineMethod-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Authentication-MachineMethod-OmaUri-Begin -->
@@ -2233,7 +2238,7 @@ This is only supported in IKEv2.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-MachineMethod-DFProperties-End -->
 
@@ -2257,7 +2262,7 @@ This is only supported in IKEv2.
 <!-- Device-{ProfileName}-NativeProfile-Authentication-UserMethod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-UserMethod-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Authentication-UserMethod-OmaUri-Begin -->
@@ -2280,7 +2285,7 @@ Type of user authentication.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-UserMethod-DFProperties-End -->
 
@@ -2290,7 +2295,7 @@ Type of user authentication.
 | Value | Description |
 |:--|:--|
 | EAP | EAP. |
-| MSChapv2 | MSChapv2: This is not supported for IKEv2. |
+| MSChapv2 | MSChapv2: This isn't supported for IKEv2. |
 <!-- Device-{ProfileName}-NativeProfile-Authentication-UserMethod-AllowedValues-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Authentication-UserMethod-Examples-Begin -->
@@ -2305,7 +2310,7 @@ Type of user authentication.
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-OmaUri-Begin -->
@@ -2328,7 +2333,7 @@ Properties of IPSec tunnels.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-DFProperties-End -->
 
@@ -2344,7 +2349,7 @@ Properties of IPSec tunnels.
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-AuthenticationTransformConstants-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-AuthenticationTransformConstants-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-AuthenticationTransformConstants-OmaUri-Begin -->
@@ -2367,7 +2372,7 @@ Type of authentication transform constant.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-AuthenticationTransformConstants-DFProperties-End -->
 
@@ -2396,7 +2401,7 @@ Type of authentication transform constant.
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-CipherTransformConstants-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-CipherTransformConstants-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-CipherTransformConstants-OmaUri-Begin -->
@@ -2419,7 +2424,7 @@ Type of Cipher transform constant.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-CipherTransformConstants-DFProperties-End -->
 
@@ -2450,7 +2455,7 @@ Type of Cipher transform constant.
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-DHGroup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-DHGroup-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-DHGroup-OmaUri-Begin -->
@@ -2473,7 +2478,7 @@ Group used for DH (Diffie-Hellman).
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-DHGroup-DFProperties-End -->
 
@@ -2503,7 +2508,7 @@ Group used for DH (Diffie-Hellman).
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-EncryptionMethod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-EncryptionMethod-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-EncryptionMethod-OmaUri-Begin -->
@@ -2526,7 +2531,7 @@ Type of encryption method.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-EncryptionMethod-DFProperties-End -->
 
@@ -2556,7 +2561,7 @@ Type of encryption method.
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-IntegrityCheckMethod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-IntegrityCheckMethod-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-IntegrityCheckMethod-OmaUri-Begin -->
@@ -2579,7 +2584,7 @@ Type of integrity check.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-IntegrityCheckMethod-DFProperties-End -->
 
@@ -2606,7 +2611,7 @@ Type of integrity check.
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-PfsGroup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-PfsGroup-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-PfsGroup-OmaUri-Begin -->
@@ -2629,7 +2634,7 @@ Group used for PFS (Perfect Forward Secrecy).
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-NativeProfile-CryptographySuite-PfsGroup-DFProperties-End -->
 
@@ -2660,7 +2665,7 @@ Group used for PFS (Perfect Forward Secrecy).
 <!-- Device-{ProfileName}-NativeProfile-DisableClassBasedDefaultRoute-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-NativeProfile-DisableClassBasedDefaultRoute-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-DisableClassBasedDefaultRoute-OmaUri-Begin -->
@@ -2683,7 +2688,7 @@ Specifies the class based default routes. For example, if the interface IP begin
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-NativeProfile-DisableClassBasedDefaultRoute-DFProperties-End -->
 
@@ -2708,7 +2713,7 @@ Specifies the class based default routes. For example, if the interface IP begin
 <!-- Device-{ProfileName}-NativeProfile-L2tpPsk-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-NativeProfile-L2tpPsk-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-L2tpPsk-OmaUri-Begin -->
@@ -2731,7 +2736,7 @@ The preshared key used for an L2TP connection.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-NativeProfile-L2tpPsk-DFProperties-End -->
 
@@ -2747,7 +2752,7 @@ The preshared key used for an L2TP connection.
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-OmaUri-Begin -->
@@ -2763,6 +2768,8 @@ Required for native profiles. Type of tunneling protocol used.
 
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Using NativeProtocolType requires additional configuration of the NativeProfile/ProtocolList parameter.
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-Editable-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-DFProperties-Begin -->
@@ -2770,7 +2777,7 @@ Required for native profiles. Type of tunneling protocol used.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-NativeProfile-NativeProtocolType-DFProperties-End -->
 
@@ -2799,7 +2806,7 @@ Required for native profiles. Type of tunneling protocol used.
 <!-- Device-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-OmaUri-Begin -->
@@ -2810,7 +2817,7 @@ Required for native profiles. Type of tunneling protocol used.
 
 <!-- Device-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-Description-Begin -->
 <!-- Description-Source-DDF -->
-True: Plumb traffic selectors as routes onto VPN interface, False: Do not plumb traffic selectors as routes.
+True: Plumb traffic selectors as routes onto VPN interface, False: Don't plumb traffic selectors as routes.
 <!-- Device-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-Description-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-Editable-Begin -->
@@ -2822,7 +2829,7 @@ True: Plumb traffic selectors as routes onto VPN interface, False: Do not plumb 
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-DFProperties-End -->
 
@@ -2838,7 +2845,7 @@ True: Plumb traffic selectors as routes onto VPN interface, False: Do not plumb 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20207] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20207] and later |
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-OmaUri-Begin -->
@@ -2860,7 +2867,7 @@ True: Plumb traffic selectors as routes onto VPN interface, False: Do not plumb 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-DFProperties-End -->
 
@@ -2876,7 +2883,7 @@ True: Plumb traffic selectors as routes onto VPN interface, False: Do not plumb 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20207] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20207] and later |
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-OmaUri-Begin -->
@@ -2892,6 +2899,8 @@ List of inbox VPN protocols in priority order.
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Up to 4 VPN protocols are supported. A separate entry is needed for every VPN protocol. For a sample format, see [Examples](#examples).
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Editable-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-DFProperties-Begin -->
@@ -2899,7 +2908,7 @@ List of inbox VPN protocols in priority order.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-DFProperties-End -->
 
@@ -2915,7 +2924,7 @@ List of inbox VPN protocols in priority order.
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20207] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20207] and later |
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-OmaUri-Begin -->
@@ -2930,6 +2939,8 @@ List of inbox VPN protocols in priority order.
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> A separate entry is needed for every VPN protocol. For a sample format, see [Examples](#examples).
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Editable-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-DFProperties-Begin -->
@@ -2937,7 +2948,7 @@ List of inbox VPN protocols in priority order.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-DFProperties-End -->
 
@@ -2953,7 +2964,7 @@ List of inbox VPN protocols in priority order.
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20207] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20207] and later |
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-OmaUri-Begin -->
@@ -2969,6 +2980,8 @@ Inbox VPN protocols type.
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> A separate entry is needed for every VPN protocol. For a sample format, see [Examples](#examples).
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-Editable-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-DFProperties-Begin -->
@@ -2976,7 +2989,7 @@ Inbox VPN protocols type.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-DFProperties-End -->
 
@@ -3003,7 +3016,7 @@ Inbox VPN protocols type.
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20207] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20207] and later |
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-OmaUri-Begin -->
@@ -3019,6 +3032,7 @@ Default 168, max 500000.
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+RetryTimeInHours specifies the length of time Windows tries to use the last succesful protocol when making a new connection. Setting this value to 0 disables remembering the last successful protocol.
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Editable-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-DFProperties-Begin -->
@@ -3026,7 +3040,7 @@ Default 168, max 500000.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-DFProperties-End -->
 
@@ -3042,7 +3056,7 @@ Default 168, max 500000.
 <!-- Device-{ProfileName}-NativeProfile-RoutingPolicyType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-RoutingPolicyType-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-RoutingPolicyType-OmaUri-Begin -->
@@ -3065,7 +3079,7 @@ Type of routing policy.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-NativeProfile-RoutingPolicyType-DFProperties-End -->
 
@@ -3090,7 +3104,7 @@ Type of routing policy.
 <!-- Device-{ProfileName}-NativeProfile-Servers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-NativeProfile-Servers-Applicability-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Servers-OmaUri-Begin -->
@@ -3101,7 +3115,7 @@ Type of routing policy.
 
 <!-- Device-{ProfileName}-NativeProfile-Servers-Description-Begin -->
 <!-- Description-Source-DDF -->
-Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com. The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. You can make a list of server by making a list of server names (with optional friendly names) seperated by commas. For example, server1.example.com,server2.example.com.
+Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. You can make a list of server by making a list of server names (with optional friendly names) seperated by commas. For example, server1.example.com,server2.example.com.
 <!-- Device-{ProfileName}-NativeProfile-Servers-Description-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Servers-Editable-Begin -->
@@ -3113,7 +3127,7 @@ Required for native profiles. Public or routable IP address or DNS name for the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-NativeProfile-Servers-DFProperties-End -->
 
@@ -3129,7 +3143,7 @@ Required for native profiles. Public or routable IP address or DNS name for the 
 <!-- Device-{ProfileName}-NetworkOutageTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-{ProfileName}-NetworkOutageTime-Applicability-End -->
 
 <!-- Device-{ProfileName}-NetworkOutageTime-OmaUri-Begin -->
@@ -3152,7 +3166,7 @@ The amount of time in seconds the network is allowed to idle. 0 means no limit.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 <!-- Device-{ProfileName}-NetworkOutageTime-DFProperties-End -->
@@ -3169,7 +3183,7 @@ The amount of time in seconds the network is allowed to idle. 0 means no limit.
 <!-- Device-{ProfileName}-PluginProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-PluginProfile-Applicability-End -->
 
 <!-- Device-{ProfileName}-PluginProfile-OmaUri-Begin -->
@@ -3192,7 +3206,7 @@ Nodes under the PluginProfile are required when using a Microsoft Store based VP
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Get |
 <!-- Device-{ProfileName}-PluginProfile-DFProperties-End -->
 
@@ -3208,7 +3222,7 @@ Nodes under the PluginProfile are required when using a Microsoft Store based VP
 <!-- Device-{ProfileName}-PluginProfile-CustomConfiguration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-PluginProfile-CustomConfiguration-Applicability-End -->
 
 <!-- Device-{ProfileName}-PluginProfile-CustomConfiguration-OmaUri-Begin -->
@@ -3219,7 +3233,7 @@ Nodes under the PluginProfile are required when using a Microsoft Store based VP
 
 <!-- Device-{ProfileName}-PluginProfile-CustomConfiguration-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. This is an HTML encoded XML blob for SSL-VPN plug-in specific configuration including authentication information that is deployed to the device to make it available for SSL-VPN plug-ins. Contact the plugin provider for format and other details. Most plugins can also configure values based on the server negotiations as well as defaults.
+Optional. This is an HTML encoded XML blob for SSL-VPN plug-in specific configuration including authentication information that's deployed to the device to make it available for SSL-VPN plug-ins. Contact the plugin provider for format and other details. Most plugins can also configure values based on the server negotiations as well as defaults.
 <!-- Device-{ProfileName}-PluginProfile-CustomConfiguration-Description-End -->
 
 <!-- Device-{ProfileName}-PluginProfile-CustomConfiguration-Editable-Begin -->
@@ -3231,7 +3245,7 @@ Optional. This is an HTML encoded XML blob for SSL-VPN plug-in specific configur
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-PluginProfile-CustomConfiguration-DFProperties-End -->
 
@@ -3247,7 +3261,7 @@ Optional. This is an HTML encoded XML blob for SSL-VPN plug-in specific configur
 <!-- Device-{ProfileName}-PluginProfile-PluginPackageFamilyName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-PluginProfile-PluginPackageFamilyName-Applicability-End -->
 
 <!-- Device-{ProfileName}-PluginProfile-PluginPackageFamilyName-OmaUri-Begin -->
@@ -3270,7 +3284,7 @@ Required for Plugin Profiles. This node specifies the Package Family Name of the
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-PluginProfile-PluginPackageFamilyName-DFProperties-End -->
 
@@ -3286,7 +3300,7 @@ Required for Plugin Profiles. This node specifies the Package Family Name of the
 <!-- Device-{ProfileName}-PluginProfile-ServerUrlList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-PluginProfile-ServerUrlList-Applicability-End -->
 
 <!-- Device-{ProfileName}-PluginProfile-ServerUrlList-OmaUri-Begin -->
@@ -3309,7 +3323,7 @@ Required for plug-in profiles. Semicolon-separated list of servers in URL, hostn
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-PluginProfile-ServerUrlList-DFProperties-End -->
 
@@ -3325,7 +3339,7 @@ Required for plug-in profiles. Semicolon-separated list of servers in URL, hostn
 <!-- Device-{ProfileName}-PrivateNetwork-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-{ProfileName}-PrivateNetwork-Applicability-End -->
 
 <!-- Device-{ProfileName}-PrivateNetwork-OmaUri-Begin -->
@@ -3348,7 +3362,7 @@ Determines whether the VPN connection is public or private.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | true |
 <!-- Device-{ProfileName}-PrivateNetwork-DFProperties-End -->
@@ -3374,7 +3388,7 @@ Determines whether the VPN connection is public or private.
 <!-- Device-{ProfileName}-ProfileXML-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-ProfileXML-Applicability-End -->
 
 <!-- Device-{ProfileName}-ProfileXML-OmaUri-Begin -->
@@ -3397,7 +3411,7 @@ The XML schema for provisioning all the fields of a VPN.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | See [ProfileXML XSD Schema](#profilexml-xsd-schema) |
 <!-- Device-{ProfileName}-ProfileXML-DFProperties-End -->
@@ -3414,7 +3428,7 @@ The XML schema for provisioning all the fields of a VPN.
 <!-- Device-{ProfileName}-Proxy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-Proxy-Applicability-End -->
 
 <!-- Device-{ProfileName}-Proxy-OmaUri-Begin -->
@@ -3437,7 +3451,7 @@ A collection of configuration objects to enable a post-connect proxy support for
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-{ProfileName}-Proxy-DFProperties-End -->
 
@@ -3453,7 +3467,7 @@ A collection of configuration objects to enable a post-connect proxy support for
 <!-- Device-{ProfileName}-Proxy-AutoConfigUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-Proxy-AutoConfigUrl-Applicability-End -->
 
 <!-- Device-{ProfileName}-Proxy-AutoConfigUrl-OmaUri-Begin -->
@@ -3476,7 +3490,7 @@ Optional. Set a URL to automatically retrieve the proxy settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-Proxy-AutoConfigUrl-DFProperties-End -->
 
@@ -3492,7 +3506,7 @@ Optional. Set a URL to automatically retrieve the proxy settings.
 <!-- Device-{ProfileName}-Proxy-Manual-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-Proxy-Manual-Applicability-End -->
 
 <!-- Device-{ProfileName}-Proxy-Manual-OmaUri-Begin -->
@@ -3515,7 +3529,7 @@ Optional node containing the manual server settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-{ProfileName}-Proxy-Manual-DFProperties-End -->
 
@@ -3531,7 +3545,7 @@ Optional node containing the manual server settings.
 <!-- Device-{ProfileName}-Proxy-Manual-Server-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-Proxy-Manual-Server-Applicability-End -->
 
 <!-- Device-{ProfileName}-Proxy-Manual-Server-OmaUri-Begin -->
@@ -3554,7 +3568,7 @@ Optional. The value is the proxy server address as a fully qualified hostname or
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-Proxy-Manual-Server-DFProperties-End -->
 
@@ -3570,7 +3584,7 @@ Optional. The value is the proxy server address as a fully qualified hostname or
 <!-- Device-{ProfileName}-RegisterDNS-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-{ProfileName}-RegisterDNS-Applicability-End -->
 
 <!-- Device-{ProfileName}-RegisterDNS-OmaUri-Begin -->
@@ -3593,7 +3607,7 @@ Allows registration of the connection's address in DNS.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- Device-{ProfileName}-RegisterDNS-DFProperties-End -->
@@ -3603,7 +3617,7 @@ Allows registration of the connection's address in DNS.
 
 | Value | Description |
 |:--|:--|
-| false (Default) | Do not register the connection's address in DNS. |
+| false (Default) | Don't register the connection's address in DNS. |
 | true | Register the connection's addresses in DNS. |
 <!-- Device-{ProfileName}-RegisterDNS-AllowedValues-End -->
 
@@ -3619,7 +3633,7 @@ Allows registration of the connection's address in DNS.
 <!-- Device-{ProfileName}-RememberCredentials-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-RememberCredentials-Applicability-End -->
 
 <!-- Device-{ProfileName}-RememberCredentials-OmaUri-Begin -->
@@ -3642,7 +3656,7 @@ Boolean value (true or false) for caching credentials.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- Device-{ProfileName}-RememberCredentials-DFProperties-End -->
@@ -3652,7 +3666,7 @@ Boolean value (true or false) for caching credentials.
 
 | Value | Description |
 |:--|:--|
-| false (Default) | Do not cache credentials. |
+| false (Default) | Don't cache credentials. |
 | true | Credentials are cached whenever possible. |
 <!-- Device-{ProfileName}-RememberCredentials-AllowedValues-End -->
 
@@ -3668,7 +3682,7 @@ Boolean value (true or false) for caching credentials.
 <!-- Device-{ProfileName}-RouteList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-RouteList-Applicability-End -->
 
 <!-- Device-{ProfileName}-RouteList-OmaUri-Begin -->
@@ -3691,7 +3705,7 @@ List of routes to be added to the Routing table for the VPN Interface. Required 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-{ProfileName}-RouteList-DFProperties-End -->
 
@@ -3707,7 +3721,7 @@ List of routes to be added to the Routing table for the VPN Interface. Required 
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-Applicability-End -->
 
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-OmaUri-Begin -->
@@ -3730,7 +3744,7 @@ A sequential integer identifier for the RouteList. This is required if you are a
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: A sequential integer identifier for the RouteList. This is required if you are adding routes. Sequencing must start at 0. |
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-DFProperties-End -->
@@ -3747,7 +3761,7 @@ A sequential integer identifier for the RouteList. This is required if you are a
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-Address-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-Address-Applicability-End -->
 
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-Address-OmaUri-Begin -->
@@ -3770,7 +3784,7 @@ Subnet address in IPv4/v6 address format which, along with the prefix will be us
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-Address-DFProperties-End -->
 
@@ -3786,7 +3800,7 @@ Subnet address in IPv4/v6 address format which, along with the prefix will be us
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-ExclusionRoute-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-ExclusionRoute-Applicability-End -->
 
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-ExclusionRoute-OmaUri-Begin -->
@@ -3809,7 +3823,7 @@ A boolean value that specifies if the route being added should point to the VPN 
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-ExclusionRoute-DFProperties-End -->
@@ -3835,7 +3849,7 @@ A boolean value that specifies if the route being added should point to the VPN 
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-Metric-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-Metric-Applicability-End -->
 
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-Metric-OmaUri-Begin -->
@@ -3858,7 +3872,7 @@ The route's metric.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-Metric-DFProperties-End -->
 
@@ -3874,7 +3888,7 @@ The route's metric.
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-PrefixSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-PrefixSize-Applicability-End -->
 
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-PrefixSize-OmaUri-Begin -->
@@ -3897,7 +3911,7 @@ The subnet prefix size part of the destination prefix for the route entry. This,
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 <!-- Device-{ProfileName}-RouteList-{routeRowId}-PrefixSize-DFProperties-End -->
@@ -3914,7 +3928,7 @@ The subnet prefix size part of the destination prefix for the route entry. This,
 <!-- Device-{ProfileName}-TrafficFilterList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-OmaUri-Begin -->
@@ -3939,7 +3953,7 @@ A list of rules allowing traffic over the VPN Interface. Each Rule ID is OR'ed. 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-{ProfileName}-TrafficFilterList-DFProperties-End -->
 
@@ -3955,7 +3969,7 @@ A list of rules allowing traffic over the VPN Interface. Each Rule ID is OR'ed. 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-OmaUri-Begin -->
@@ -3978,7 +3992,7 @@ A sequential integer identifier for the Traffic Filter rules. Sequencing must st
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: A sequential integer identifier for the Traffic Filter rules. Sequencing must start at 0. |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-DFProperties-End -->
@@ -3995,7 +4009,7 @@ A sequential integer identifier for the Traffic Filter rules. Sequencing must st
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-OmaUri-Begin -->
@@ -4018,7 +4032,7 @@ Per App VPN Rule. This will Allow only the Apps specified to be allowed over VPN
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-DFProperties-End -->
 
@@ -4034,7 +4048,7 @@ Per App VPN Rule. This will Allow only the Apps specified to be allowed over VPN
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Id-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Id-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Id-OmaUri-Begin -->
@@ -4057,7 +4071,7 @@ App identity for the app-based traffic filter. The value for this node can be on
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Id-DFProperties-End -->
 
@@ -4073,7 +4087,7 @@ App identity for the app-based traffic filter. The value for this node can be on
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Type-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Type-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Type-OmaUri-Begin -->
@@ -4096,7 +4110,7 @@ Returns the type of ID of the App/Id. Either PackageFamilyName, FilePath, or Sys
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Type-DFProperties-End -->
 
@@ -4112,7 +4126,7 @@ Returns the type of ID of the App/Id. Either PackageFamilyName, FilePath, or Sys
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Claims-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Claims-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Claims-OmaUri-Begin -->
@@ -4135,7 +4149,7 @@ Specifies a rule in Security Descriptor Definition Language (SDDL) format to che
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Claims-DFProperties-End -->
 
@@ -4151,7 +4165,7 @@ Specifies a rule in Security Descriptor Definition Language (SDDL) format to che
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Direction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Direction-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Direction-OmaUri-Begin -->
@@ -4163,6 +4177,7 @@ Specifies a rule in Security Descriptor Definition Language (SDDL) format to che
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Direction-Description-Begin -->
 <!-- Description-Source-DDF -->
 Outbound - The traffic filter allows traffic to reach destinations matching this rule. This is the default.
+
 Inbound - The traffic filter allows traffic coming from external locations matching this rule.
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Direction-Description-End -->
 
@@ -4175,7 +4190,7 @@ Inbound - The traffic filter allows traffic coming from external locations match
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Direction-DFProperties-End -->
 
@@ -4191,7 +4206,7 @@ Inbound - The traffic filter allows traffic coming from external locations match
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalAddressRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalAddressRanges-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalAddressRanges-OmaUri-Begin -->
@@ -4214,7 +4229,7 @@ A list of comma separated values specifying local IP address ranges to allow.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalAddressRanges-DFProperties-End -->
 
@@ -4230,7 +4245,7 @@ A list of comma separated values specifying local IP address ranges to allow.
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalPortRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalPortRanges-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalPortRanges-OmaUri-Begin -->
@@ -4253,7 +4268,7 @@ Comma Separated list of ranges for eg. 100-120,200,300-320.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Regular Expression: `^[\d]*$` |
 | Dependency [ProtocolDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/VPNv2/[ProfileName]/TrafficFilterList/[trafficFilterId]/Protocol` <br> Dependency Allowed Value: `[6,17]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -4271,7 +4286,7 @@ Comma Separated list of ranges for eg. 100-120,200,300-320.
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Protocol-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Protocol-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Protocol-OmaUri-Begin -->
@@ -4294,7 +4309,7 @@ Comma Separated list of ranges for eg. 100-120,200,300-320.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-255]` |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-Protocol-DFProperties-End -->
@@ -4311,7 +4326,7 @@ Comma Separated list of ranges for eg. 100-120,200,300-320.
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemoteAddressRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemoteAddressRanges-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemoteAddressRanges-OmaUri-Begin -->
@@ -4334,7 +4349,7 @@ A list of comma separated values specifying remote IP address ranges to allow.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemoteAddressRanges-DFProperties-End -->
 
@@ -4350,7 +4365,7 @@ A list of comma separated values specifying remote IP address ranges to allow.
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemotePortRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemotePortRanges-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemotePortRanges-OmaUri-Begin -->
@@ -4373,7 +4388,7 @@ A list of comma separated values specifying remote port ranges to allow. For exa
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Regular Expression: `^[\d]*$` |
 | Dependency [ProtocolDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/VPNv2/[ProfileName]/TrafficFilterList/[trafficFilterId]/Protocol` <br> Dependency Allowed Value: `[6,17]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -4391,7 +4406,7 @@ A list of comma separated values specifying remote port ranges to allow. For exa
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-RoutingPolicyType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-RoutingPolicyType-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-RoutingPolicyType-OmaUri-Begin -->
@@ -4414,7 +4429,7 @@ Specifies the routing policy if an App or Claims type is used in the traffic fil
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-{ProfileName}-TrafficFilterList-{trafficFilterId}-RoutingPolicyType-DFProperties-End -->
 
@@ -4439,7 +4454,7 @@ Specifies the routing policy if an App or Claims type is used in the traffic fil
 <!-- Device-{ProfileName}-TrustedNetworkDetection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProfileName}-TrustedNetworkDetection-Applicability-End -->
 
 <!-- Device-{ProfileName}-TrustedNetworkDetection-OmaUri-Begin -->
@@ -4450,7 +4465,7 @@ Specifies the routing policy if an App or Claims type is used in the traffic fil
 
 <!-- Device-{ProfileName}-TrustedNetworkDetection-Description-Begin -->
 <!-- Description-Source-DDF -->
-Comma separated string to identify the trusted network. VPN will not connect automatically when the user is on their corporate wireless network where protected resources are directly accessible to the device.
+Comma separated string to identify the trusted network. VPN won't connect automatically when the user is on their corporate wireless network where protected resources are directly accessible to the device.
 <!-- Device-{ProfileName}-TrustedNetworkDetection-Description-End -->
 
 <!-- Device-{ProfileName}-TrustedNetworkDetection-Editable-Begin -->
@@ -4462,7 +4477,7 @@ Comma separated string to identify the trusted network. VPN will not connect aut
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | `,` |
 <!-- Device-{ProfileName}-TrustedNetworkDetection-DFProperties-End -->
@@ -4479,7 +4494,7 @@ Comma separated string to identify the trusted network. VPN will not connect aut
 <!-- Device-{ProfileName}-UseRasCredentials-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-{ProfileName}-UseRasCredentials-Applicability-End -->
 
 <!-- Device-{ProfileName}-UseRasCredentials-OmaUri-Begin -->
@@ -4502,7 +4517,7 @@ Determines whether the credential manager will save ras credentials after a conn
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | true |
 <!-- Device-{ProfileName}-UseRasCredentials-DFProperties-End -->
@@ -4512,7 +4527,7 @@ Determines whether the credential manager will save ras credentials after a conn
 
 | Value | Description |
 |:--|:--|
-| false | Ras Credentials are not saved. |
+| false | Ras Credentials aren't saved. |
 | true (Default) | Ras Credentials are saved. |
 <!-- Device-{ProfileName}-UseRasCredentials-AllowedValues-End -->
 
@@ -4528,7 +4543,7 @@ Determines whether the credential manager will save ras credentials after a conn
 <!-- User-{ProfileName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-Applicability-End -->
 
 <!-- User-{ProfileName}-OmaUri-Begin -->
@@ -4539,7 +4554,7 @@ Determines whether the credential manager will save ras credentials after a conn
 
 <!-- User-{ProfileName}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Unique alpha numeric identifier for the profile. The profile name must not include a forward slash (/). If the profile name has a space or other non-alphanumeric character, it must be properly escaped according to the URL encoding standard.
+Unique alpha numeric identifier for the profile. The profile name mustn't include a forward slash (/). If the profile name has a space or other non-alphanumeric character, it must be properly escaped according to the URL encoding standard.
 <!-- User-{ProfileName}-Description-End -->
 
 <!-- User-{ProfileName}-Editable-Begin -->
@@ -4551,7 +4566,7 @@ Unique alpha numeric identifier for the profile. The profile name must not inclu
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
 | Atomic Required | True |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
@@ -4570,7 +4585,7 @@ Unique alpha numeric identifier for the profile. The profile name must not inclu
 <!-- User-{ProfileName}-AlwaysOn-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-AlwaysOn-Applicability-End -->
 
 <!-- User-{ProfileName}-AlwaysOn-OmaUri-Begin -->
@@ -4593,7 +4608,7 @@ An optional flag to enable Always On mode. This will automatically connect the V
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- User-{ProfileName}-AlwaysOn-DFProperties-End -->
@@ -4619,7 +4634,7 @@ An optional flag to enable Always On mode. This will automatically connect the V
 <!-- User-{ProfileName}-AlwaysOnActive-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-AlwaysOnActive-Applicability-End -->
 
 <!-- User-{ProfileName}-AlwaysOnActive-OmaUri-Begin -->
@@ -4642,7 +4657,7 @@ An optional flag to activate Always On mode. This is true by default if AlwaysOn
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- User-{ProfileName}-AlwaysOnActive-DFProperties-End -->
@@ -4668,7 +4683,7 @@ An optional flag to activate Always On mode. This is true by default if AlwaysOn
 <!-- User-{ProfileName}-APNBinding-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-APNBinding-Applicability-End -->
 
 <!-- User-{ProfileName}-APNBinding-OmaUri-Begin -->
@@ -4691,7 +4706,7 @@ Reserved for future use.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-{ProfileName}-APNBinding-DFProperties-End -->
 
@@ -4707,7 +4722,7 @@ Reserved for future use.
 <!-- User-{ProfileName}-APNBinding-AccessPointName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-APNBinding-AccessPointName-Applicability-End -->
 
 <!-- User-{ProfileName}-APNBinding-AccessPointName-OmaUri-Begin -->
@@ -4730,7 +4745,7 @@ Reserved for future use.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-APNBinding-AccessPointName-DFProperties-End -->
 
@@ -4746,7 +4761,7 @@ Reserved for future use.
 <!-- User-{ProfileName}-APNBinding-AuthenticationType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-APNBinding-AuthenticationType-Applicability-End -->
 
 <!-- User-{ProfileName}-APNBinding-AuthenticationType-OmaUri-Begin -->
@@ -4769,7 +4784,7 @@ Reserved for future use.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-APNBinding-AuthenticationType-DFProperties-End -->
 
@@ -4785,7 +4800,7 @@ Reserved for future use.
 <!-- User-{ProfileName}-APNBinding-IsCompressionEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-APNBinding-IsCompressionEnabled-Applicability-End -->
 
 <!-- User-{ProfileName}-APNBinding-IsCompressionEnabled-OmaUri-Begin -->
@@ -4808,7 +4823,7 @@ Reserved for future use.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-APNBinding-IsCompressionEnabled-DFProperties-End -->
 
@@ -4824,7 +4839,7 @@ Reserved for future use.
 <!-- User-{ProfileName}-APNBinding-Password-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-APNBinding-Password-Applicability-End -->
 
 <!-- User-{ProfileName}-APNBinding-Password-OmaUri-Begin -->
@@ -4847,7 +4862,7 @@ Reserved for future use.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-APNBinding-Password-DFProperties-End -->
 
@@ -4863,7 +4878,7 @@ Reserved for future use.
 <!-- User-{ProfileName}-APNBinding-ProviderId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-APNBinding-ProviderId-Applicability-End -->
 
 <!-- User-{ProfileName}-APNBinding-ProviderId-OmaUri-Begin -->
@@ -4886,7 +4901,7 @@ Reserved for future use.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-APNBinding-ProviderId-DFProperties-End -->
 
@@ -4902,7 +4917,7 @@ Reserved for future use.
 <!-- User-{ProfileName}-APNBinding-UserName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-APNBinding-UserName-Applicability-End -->
 
 <!-- User-{ProfileName}-APNBinding-UserName-OmaUri-Begin -->
@@ -4925,7 +4940,7 @@ Reserved for future use.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-APNBinding-UserName-DFProperties-End -->
 
@@ -4941,7 +4956,7 @@ Reserved for future use.
 <!-- User-{ProfileName}-AppTriggerList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-AppTriggerList-Applicability-End -->
 
 <!-- User-{ProfileName}-AppTriggerList-OmaUri-Begin -->
@@ -4964,7 +4979,7 @@ List of applications set to trigger the VPN. If any of these apps are launched a
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-{ProfileName}-AppTriggerList-DFProperties-End -->
 
@@ -4980,7 +4995,7 @@ List of applications set to trigger the VPN. If any of these apps are launched a
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-Applicability-End -->
 
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-OmaUri-Begin -->
@@ -4991,7 +5006,7 @@ List of applications set to trigger the VPN. If any of these apps are launched a
 
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-Description-Begin -->
 <!-- Description-Source-DDF -->
-A sequential integer identifier which allows the ability to specify multiple apps for App Trigger. Sequencing must start at 0 and you should not skip numbers.
+A sequential integer identifier which allows the ability to specify multiple apps for App Trigger. Sequencing must start at 0 and you shouldn't skip numbers.
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-Description-End -->
 
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-Editable-Begin -->
@@ -5003,7 +5018,7 @@ A sequential integer identifier which allows the ability to specify multiple app
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: A sequential integer identifier which allows the ability to specify multiple apps for App Trigger. Sequencing must start at 0 and you should not skip numbers. |
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-DFProperties-End -->
@@ -5020,7 +5035,7 @@ A sequential integer identifier which allows the ability to specify multiple app
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Applicability-End -->
 
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-OmaUri-Begin -->
@@ -5043,7 +5058,7 @@ App Node under the Row Id.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-DFProperties-End -->
 
@@ -5059,7 +5074,7 @@ App Node under the Row Id.
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Id-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Id-Applicability-End -->
 
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Id-OmaUri-Begin -->
@@ -5082,7 +5097,7 @@ App Identity. Specified, based on the Type Field.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Id-DFProperties-End -->
 
@@ -5098,7 +5113,7 @@ App Identity. Specified, based on the Type Field.
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Type-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Type-Applicability-End -->
 
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Type-OmaUri-Begin -->
@@ -5121,7 +5136,7 @@ Returns the type of App/Id. This value can be either of the following: PackageFa
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-{ProfileName}-AppTriggerList-{appTriggerRowId}-App-Type-DFProperties-End -->
 
@@ -5137,7 +5152,7 @@ Returns the type of App/Id. This value can be either of the following: PackageFa
 <!-- User-{ProfileName}-ByPassForLocal-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-ByPassForLocal-Applicability-End -->
 
 <!-- User-{ProfileName}-ByPassForLocal-OmaUri-Begin -->
@@ -5148,8 +5163,9 @@ Returns the type of App/Id. This value can be either of the following: PackageFa
 
 <!-- User-{ProfileName}-ByPassForLocal-Description-Begin -->
 <!-- Description-Source-DDF -->
-False : Do not Bypass for Local traffic
-True : ByPass VPN Interface for Local Traffic
+False: Don't Bypass for Local traffic.
+
+True: ByPass VPN Interface for Local Traffic.
 
 Optional. When this setting is True, requests to local resources that are available on the same Wi-Fi network as the VPN client can bypass the VPN. For example, if enterprise policy for VPN requires force tunnel for VPN, but enterprise intends to allow the remote user to connect locally to media center in their home, then this option should be set to True. The user can bypass VPN for local subnet traffic. When this is set to False, the setting is disabled and no subnet exceptions are allowed.
 <!-- User-{ProfileName}-ByPassForLocal-Description-End -->
@@ -5163,7 +5179,7 @@ Optional. When this setting is True, requests to local resources that are availa
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-ByPassForLocal-DFProperties-End -->
 
@@ -5179,7 +5195,7 @@ Optional. When this setting is True, requests to local resources that are availa
 <!-- User-{ProfileName}-DataEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-{ProfileName}-DataEncryption-Applicability-End -->
 
 <!-- User-{ProfileName}-DataEncryption-OmaUri-Begin -->
@@ -5202,7 +5218,7 @@ Determines the level of data encryption required for the connection.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | Require |
 <!-- User-{ProfileName}-DataEncryption-DFProperties-End -->
@@ -5230,7 +5246,7 @@ Determines the level of data encryption required for the connection.
 <!-- User-{ProfileName}-DeviceCompliance-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-DeviceCompliance-Applicability-End -->
 
 <!-- User-{ProfileName}-DeviceCompliance-OmaUri-Begin -->
@@ -5253,7 +5269,7 @@ Nodes under DeviceCompliance can be used to enable AAD based Conditional Access 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Get |
 <!-- User-{ProfileName}-DeviceCompliance-DFProperties-End -->
 
@@ -5269,7 +5285,7 @@ Nodes under DeviceCompliance can be used to enable AAD based Conditional Access 
 <!-- User-{ProfileName}-DeviceCompliance-Enabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-DeviceCompliance-Enabled-Applicability-End -->
 
 <!-- User-{ProfileName}-DeviceCompliance-Enabled-OmaUri-Begin -->
@@ -5292,7 +5308,7 @@ Enables the Device Compliance flow from the client. If marked as True, the VPN C
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-DeviceCompliance-Enabled-DFProperties-End -->
 
@@ -5317,7 +5333,7 @@ Enables the Device Compliance flow from the client. If marked as True, the VPN C
 <!-- User-{ProfileName}-DeviceCompliance-Sso-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-DeviceCompliance-Sso-Applicability-End -->
 
 <!-- User-{ProfileName}-DeviceCompliance-Sso-OmaUri-Begin -->
@@ -5340,7 +5356,7 @@ Nodes under SSO can be used to choose a certificate different from the VPN Authe
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Get |
 <!-- User-{ProfileName}-DeviceCompliance-Sso-DFProperties-End -->
 
@@ -5356,7 +5372,7 @@ Nodes under SSO can be used to choose a certificate different from the VPN Authe
 <!-- User-{ProfileName}-DeviceCompliance-Sso-Eku-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-DeviceCompliance-Sso-Eku-Applicability-End -->
 
 <!-- User-{ProfileName}-DeviceCompliance-Sso-Eku-OmaUri-Begin -->
@@ -5379,7 +5395,7 @@ Comma Separated list of EKU's for the VPN Client to look for the correct certifi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-DeviceCompliance-Sso-Eku-DFProperties-End -->
 
@@ -5395,7 +5411,7 @@ Comma Separated list of EKU's for the VPN Client to look for the correct certifi
 <!-- User-{ProfileName}-DeviceCompliance-Sso-Enabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-DeviceCompliance-Sso-Enabled-Applicability-End -->
 
 <!-- User-{ProfileName}-DeviceCompliance-Sso-Enabled-OmaUri-Begin -->
@@ -5418,7 +5434,7 @@ If this field is set to True the VPN Client will look for a separate certificate
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-DeviceCompliance-Sso-Enabled-DFProperties-End -->
 
@@ -5443,7 +5459,7 @@ If this field is set to True the VPN Client will look for a separate certificate
 <!-- User-{ProfileName}-DeviceCompliance-Sso-IssuerHash-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-DeviceCompliance-Sso-IssuerHash-Applicability-End -->
 
 <!-- User-{ProfileName}-DeviceCompliance-Sso-IssuerHash-OmaUri-Begin -->
@@ -5466,7 +5482,7 @@ Comma Separated list of Issuer Hashes for the VPN Client to look for the correct
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-DeviceCompliance-Sso-IssuerHash-DFProperties-End -->
 
@@ -5482,7 +5498,7 @@ Comma Separated list of Issuer Hashes for the VPN Client to look for the correct
 <!-- User-{ProfileName}-DisableAdvancedOptionsEditButton-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-{ProfileName}-DisableAdvancedOptionsEditButton-Applicability-End -->
 
 <!-- User-{ProfileName}-DisableAdvancedOptionsEditButton-OmaUri-Begin -->
@@ -5505,7 +5521,7 @@ Optional. When this setting is True, the Advanced Options page will have its edi
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-DisableAdvancedOptionsEditButton-DFProperties-End -->
 
@@ -5530,7 +5546,7 @@ Optional. When this setting is True, the Advanced Options page will have its edi
 <!-- User-{ProfileName}-DisableDisconnectButton-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-{ProfileName}-DisableDisconnectButton-Applicability-End -->
 
 <!-- User-{ProfileName}-DisableDisconnectButton-OmaUri-Begin -->
@@ -5541,7 +5557,7 @@ Optional. When this setting is True, the Advanced Options page will have its edi
 
 <!-- User-{ProfileName}-DisableDisconnectButton-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. When this setting is True, the Disconnect button will not be visible for connected profiles.
+Optional. When this setting is True, the Disconnect button won't be visible for connected profiles.
 <!-- User-{ProfileName}-DisableDisconnectButton-Description-End -->
 
 <!-- User-{ProfileName}-DisableDisconnectButton-Editable-Begin -->
@@ -5553,7 +5569,7 @@ Optional. When this setting is True, the Disconnect button will not be visible f
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-DisableDisconnectButton-DFProperties-End -->
 
@@ -5563,7 +5579,7 @@ Optional. When this setting is True, the Disconnect button will not be visible f
 | Value | Description |
 |:--|:--|
 | false | Disconnect Button is visible. |
-| true | Disconnect Button is not visible. |
+| true | Disconnect Button isn't visible. |
 <!-- User-{ProfileName}-DisableDisconnectButton-AllowedValues-End -->
 
 <!-- User-{ProfileName}-DisableDisconnectButton-Examples-Begin -->
@@ -5578,7 +5594,7 @@ Optional. When this setting is True, the Disconnect button will not be visible f
 <!-- User-{ProfileName}-DisableIKEv2Fragmentation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-{ProfileName}-DisableIKEv2Fragmentation-Applicability-End -->
 
 <!-- User-{ProfileName}-DisableIKEv2Fragmentation-OmaUri-Begin -->
@@ -5601,7 +5617,7 @@ Set to disable IKEv2 Fragmentation.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- User-{ProfileName}-DisableIKEv2Fragmentation-DFProperties-End -->
@@ -5611,7 +5627,7 @@ Set to disable IKEv2 Fragmentation.
 
 | Value | Description |
 |:--|:--|
-| true | IKEv2 Fragmentation will not be used. |
+| true | IKEv2 Fragmentation won't be used. |
 | false (Default) | IKEv2 Fragmentation is used as normal. |
 <!-- User-{ProfileName}-DisableIKEv2Fragmentation-AllowedValues-End -->
 
@@ -5627,7 +5643,7 @@ Set to disable IKEv2 Fragmentation.
 <!-- User-{ProfileName}-DnsSuffix-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-DnsSuffix-Applicability-End -->
 
 <!-- User-{ProfileName}-DnsSuffix-OmaUri-Begin -->
@@ -5650,7 +5666,7 @@ Specifies one or more comma separated DNS suffixes. The first in the list is als
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-DnsSuffix-DFProperties-End -->
 
@@ -5666,7 +5682,7 @@ Specifies one or more comma separated DNS suffixes. The first in the list is als
 <!-- User-{ProfileName}-DomainNameInformationList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-DomainNameInformationList-Applicability-End -->
 
 <!-- User-{ProfileName}-DomainNameInformationList-OmaUri-Begin -->
@@ -5691,7 +5707,7 @@ NRPT ([Name Resolution Policy Table](/previous-versions/windows/it-pro/windows-s
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-{ProfileName}-DomainNameInformationList-DFProperties-End -->
 
@@ -5707,7 +5723,7 @@ NRPT ([Name Resolution Policy Table](/previous-versions/windows/it-pro/windows-s
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-Applicability-End -->
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-OmaUri-Begin -->
@@ -5730,7 +5746,7 @@ A sequential integer identifier for the Domain Name information. Sequencing must
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: A sequential integer identifier for the Domain Name information. Sequencing must start at 0. |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DFProperties-End -->
@@ -5747,7 +5763,7 @@ A sequential integer identifier for the Domain Name information. Sequencing must
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-AutoTrigger-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-AutoTrigger-Applicability-End -->
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-AutoTrigger-OmaUri-Begin -->
@@ -5770,7 +5786,7 @@ Boolean to determine whether this domain name rule will trigger the VPN.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-AutoTrigger-DFProperties-End -->
@@ -5780,7 +5796,7 @@ Boolean to determine whether this domain name rule will trigger the VPN.
 
 | Value | Description |
 |:--|:--|
-| false (Default) | This DomainName rule will not trigger the VPN. |
+| false (Default) | This DomainName rule won't trigger the VPN. |
 | true | This DomainName rule will trigger the VPN. |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-AutoTrigger-AllowedValues-End -->
 
@@ -5796,7 +5812,7 @@ Boolean to determine whether this domain name rule will trigger the VPN.
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DnsServers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DnsServers-Applicability-End -->
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DnsServers-OmaUri-Begin -->
@@ -5819,7 +5835,7 @@ Comma Seperated list of IP addresses for the DNS Servers to use for the domain n
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DnsServers-DFProperties-End -->
 
@@ -5835,7 +5851,7 @@ Comma Seperated list of IP addresses for the DNS Servers to use for the domain n
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainName-Applicability-End -->
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainName-OmaUri-Begin -->
@@ -5858,7 +5874,7 @@ Used to indicate the namespace to which the policy applies. When a Name query is
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainName-DFProperties-End -->
 
@@ -5874,7 +5890,7 @@ Used to indicate the namespace to which the policy applies. When a Name query is
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-Applicability-End -->
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-OmaUri-Begin -->
@@ -5885,7 +5901,7 @@ Used to indicate the namespace to which the policy applies. When a Name query is
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-Description-Begin -->
 <!-- Description-Source-DDF -->
-Returns the namespace type. This value can be one of the following: FQDN - If the DomainName was not prepended with a . and applies only to the fully qualified domain name (FQDN) of a specified host. Suffix - If the DomainName was prepended with a . and applies to the specified namespace, all records in that namespace, and all subdomains.
+Returns the namespace type. This value can be one of the following: FQDN - If the DomainName wasn't prepended with a . and applies only to the fully qualified domain name (FQDN) of a specified host. Suffix - If the DomainName was prepended with a . and applies to the specified namespace, all records in that namespace, and all subdomains.
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-Description-End -->
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-Editable-Begin -->
@@ -5897,7 +5913,7 @@ Returns the namespace type. This value can be one of the following: FQDN - If th
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DomainNameType-DFProperties-End -->
 
@@ -5913,7 +5929,7 @@ Returns the namespace type. This value can be one of the following: FQDN - If th
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-Applicability-End -->
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-OmaUri-Begin -->
@@ -5924,7 +5940,7 @@ Returns the namespace type. This value can be one of the following: FQDN - If th
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-Description-Begin -->
 <!-- Description-Source-DDF -->
-A boolean value that specifies if the rule being added should persist even when the VPN is not connected.
+A boolean value that specifies if the rule being added should persist even when the VPN isn't connected.
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-Description-End -->
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-Editable-Begin -->
@@ -5936,7 +5952,7 @@ A boolean value that specifies if the rule being added should persist even when 
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-Persistent-DFProperties-End -->
@@ -5962,7 +5978,7 @@ A boolean value that specifies if the rule being added should persist even when 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-WebProxyServers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-WebProxyServers-Applicability-End -->
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-WebProxyServers-OmaUri-Begin -->
@@ -5985,7 +6001,7 @@ Web Proxy Server IP address if you are redirecting traffic through your intranet
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-WebProxyServers-DFProperties-End -->
 
@@ -6001,7 +6017,7 @@ Web Proxy Server IP address if you are redirecting traffic through your intranet
 <!-- User-{ProfileName}-EdpModeId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-EdpModeId-Applicability-End -->
 
 <!-- User-{ProfileName}-EdpModeId-OmaUri-Begin -->
@@ -6024,7 +6040,7 @@ Enterprise ID, which is required for connecting this VPN profile with an WIP pol
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-EdpModeId-DFProperties-End -->
 
@@ -6040,7 +6056,7 @@ Enterprise ID, which is required for connecting this VPN profile with an WIP pol
 <!-- User-{ProfileName}-IPv4InterfaceMetric-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-{ProfileName}-IPv4InterfaceMetric-Applicability-End -->
 
 <!-- User-{ProfileName}-IPv4InterfaceMetric-OmaUri-Begin -->
@@ -6063,7 +6079,7 @@ The metric for the IPv4 interface.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-9999]` |
 <!-- User-{ProfileName}-IPv4InterfaceMetric-DFProperties-End -->
@@ -6080,7 +6096,7 @@ The metric for the IPv4 interface.
 <!-- User-{ProfileName}-IPv6InterfaceMetric-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-{ProfileName}-IPv6InterfaceMetric-Applicability-End -->
 
 <!-- User-{ProfileName}-IPv6InterfaceMetric-OmaUri-Begin -->
@@ -6103,7 +6119,7 @@ The metric for the IPv6 interface.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[1-9999]` |
 <!-- User-{ProfileName}-IPv6InterfaceMetric-DFProperties-End -->
@@ -6120,7 +6136,7 @@ The metric for the IPv6 interface.
 <!-- User-{ProfileName}-NativeProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-OmaUri-Begin -->
@@ -6143,7 +6159,7 @@ InboxNodes under NativeProfile are required when using a Windows Inbox VPN Proto
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Get |
 <!-- User-{ProfileName}-NativeProfile-DFProperties-End -->
 
@@ -6159,7 +6175,7 @@ InboxNodes under NativeProfile are required when using a Windows Inbox VPN Proto
 <!-- User-{ProfileName}-NativeProfile-Authentication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-Authentication-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-OmaUri-Begin -->
@@ -6182,7 +6198,7 @@ Required node for native profile. It contains authentication information for the
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-{ProfileName}-NativeProfile-Authentication-DFProperties-End -->
 
@@ -6198,7 +6214,7 @@ Required node for native profile. It contains authentication information for the
 <!-- User-{ProfileName}-NativeProfile-Authentication-Certificate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-Authentication-Certificate-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-Certificate-OmaUri-Begin -->
@@ -6221,7 +6237,7 @@ Reserved for future use.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-{ProfileName}-NativeProfile-Authentication-Certificate-DFProperties-End -->
 
@@ -6237,7 +6253,7 @@ Reserved for future use.
 <!-- User-{ProfileName}-NativeProfile-Authentication-Certificate-Eku-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-Authentication-Certificate-Eku-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-Certificate-Eku-OmaUri-Begin -->
@@ -6260,7 +6276,7 @@ Reserved for future use.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-NativeProfile-Authentication-Certificate-Eku-DFProperties-End -->
 
@@ -6276,7 +6292,7 @@ Reserved for future use.
 <!-- User-{ProfileName}-NativeProfile-Authentication-Certificate-Issuer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-Authentication-Certificate-Issuer-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-Certificate-Issuer-OmaUri-Begin -->
@@ -6299,7 +6315,7 @@ Reserved for future use.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-NativeProfile-Authentication-Certificate-Issuer-DFProperties-End -->
 
@@ -6315,7 +6331,7 @@ Reserved for future use.
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-OmaUri-Begin -->
@@ -6338,7 +6354,7 @@ Required when the native profile specifies EAP authentication. EAP configuration
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-DFProperties-End -->
 
@@ -6354,7 +6370,7 @@ Required when the native profile specifies EAP authentication. EAP configuration
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-Configuration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-Configuration-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-Configuration-OmaUri-Begin -->
@@ -6377,7 +6393,7 @@ HTML encoded XML of the EAP configuration. For more information,see [EAP configu
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-Configuration-DFProperties-End -->
 
@@ -6393,7 +6409,7 @@ HTML encoded XML of the EAP configuration. For more information,see [EAP configu
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-Type-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-Type-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-Type-OmaUri-Begin -->
@@ -6419,7 +6435,7 @@ Required node for EAP profiles. This specifies the EAP Type ID
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-NativeProfile-Authentication-Eap-Type-DFProperties-End -->
 
@@ -6435,7 +6451,7 @@ Required node for EAP profiles. This specifies the EAP Type ID
 <!-- User-{ProfileName}-NativeProfile-Authentication-MachineMethod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-Authentication-MachineMethod-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-MachineMethod-OmaUri-Begin -->
@@ -6458,7 +6474,7 @@ This is only supported in IKEv2.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-NativeProfile-Authentication-MachineMethod-DFProperties-End -->
 
@@ -6482,7 +6498,7 @@ This is only supported in IKEv2.
 <!-- User-{ProfileName}-NativeProfile-Authentication-UserMethod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-Authentication-UserMethod-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-UserMethod-OmaUri-Begin -->
@@ -6493,7 +6509,7 @@ This is only supported in IKEv2.
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-UserMethod-Description-Begin -->
 <!-- Description-Source-DDF -->
-This value can be one of the following: EAP or MSChapv2 (This is not supported for IKEv2).
+This value can be one of the following: EAP or MSChapv2 (This isn't supported for IKEv2).
 <!-- User-{ProfileName}-NativeProfile-Authentication-UserMethod-Description-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-UserMethod-Editable-Begin -->
@@ -6505,7 +6521,7 @@ This value can be one of the following: EAP or MSChapv2 (This is not supported f
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-NativeProfile-Authentication-UserMethod-DFProperties-End -->
 
@@ -6515,7 +6531,7 @@ This value can be one of the following: EAP or MSChapv2 (This is not supported f
 | Value | Description |
 |:--|:--|
 | EAP | EAP. |
-| MSChapv2 | MSChapv2: This is not supported for IKEv2. |
+| MSChapv2 | MSChapv2: This isn't supported for IKEv2. |
 <!-- User-{ProfileName}-NativeProfile-Authentication-UserMethod-AllowedValues-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Authentication-UserMethod-Examples-Begin -->
@@ -6530,7 +6546,7 @@ This value can be one of the following: EAP or MSChapv2 (This is not supported f
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-OmaUri-Begin -->
@@ -6553,7 +6569,7 @@ Properties of IPSec tunnels.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-DFProperties-End -->
 
@@ -6569,7 +6585,7 @@ Properties of IPSec tunnels.
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-AuthenticationTransformConstants-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-AuthenticationTransformConstants-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-AuthenticationTransformConstants-OmaUri-Begin -->
@@ -6592,7 +6608,7 @@ Type of authentication transform constant.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-AuthenticationTransformConstants-DFProperties-End -->
 
@@ -6621,7 +6637,7 @@ Type of authentication transform constant.
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-CipherTransformConstants-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-CipherTransformConstants-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-CipherTransformConstants-OmaUri-Begin -->
@@ -6644,7 +6660,7 @@ Type of Cipher transform constant.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-CipherTransformConstants-DFProperties-End -->
 
@@ -6675,7 +6691,7 @@ Type of Cipher transform constant.
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-DHGroup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-DHGroup-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-DHGroup-OmaUri-Begin -->
@@ -6698,7 +6714,7 @@ Group used for DH (Diffie-Hellman).
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-DHGroup-DFProperties-End -->
 
@@ -6728,7 +6744,7 @@ Group used for DH (Diffie-Hellman).
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-EncryptionMethod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-EncryptionMethod-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-EncryptionMethod-OmaUri-Begin -->
@@ -6751,7 +6767,7 @@ Type of encryption method.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-EncryptionMethod-DFProperties-End -->
 
@@ -6781,7 +6797,7 @@ Type of encryption method.
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-IntegrityCheckMethod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-IntegrityCheckMethod-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-IntegrityCheckMethod-OmaUri-Begin -->
@@ -6804,7 +6820,7 @@ Type of integrity check.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-IntegrityCheckMethod-DFProperties-End -->
 
@@ -6831,7 +6847,7 @@ Type of integrity check.
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-PfsGroup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-PfsGroup-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-PfsGroup-OmaUri-Begin -->
@@ -6854,7 +6870,7 @@ Group used for PFS (Perfect Forward Secrecy).
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-NativeProfile-CryptographySuite-PfsGroup-DFProperties-End -->
 
@@ -6885,7 +6901,7 @@ Group used for PFS (Perfect Forward Secrecy).
 <!-- User-{ProfileName}-NativeProfile-DisableClassBasedDefaultRoute-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-NativeProfile-DisableClassBasedDefaultRoute-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-DisableClassBasedDefaultRoute-OmaUri-Begin -->
@@ -6908,7 +6924,7 @@ Specifies the class based default routes. For example, if the interface IP begin
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-NativeProfile-DisableClassBasedDefaultRoute-DFProperties-End -->
 
@@ -6933,7 +6949,7 @@ Specifies the class based default routes. For example, if the interface IP begin
 <!-- User-{ProfileName}-NativeProfile-L2tpPsk-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-NativeProfile-L2tpPsk-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-L2tpPsk-OmaUri-Begin -->
@@ -6956,7 +6972,7 @@ The preshared key used for an L2TP connection.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-NativeProfile-L2tpPsk-DFProperties-End -->
 
@@ -6972,7 +6988,7 @@ The preshared key used for an L2TP connection.
 <!-- User-{ProfileName}-NativeProfile-NativeProtocolType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-NativeProtocolType-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-NativeProtocolType-OmaUri-Begin -->
@@ -6988,6 +7004,8 @@ Required for native profiles. Type of tunneling protocol used.
 
 <!-- User-{ProfileName}-NativeProfile-NativeProtocolType-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Using NativeProtocolType requires additional configuration of the NativeProfile/ProtocolList parameter.
 <!-- User-{ProfileName}-NativeProfile-NativeProtocolType-Editable-End -->
 
 <!-- User-{ProfileName}-NativeProfile-NativeProtocolType-DFProperties-Begin -->
@@ -6995,7 +7013,7 @@ Required for native profiles. Type of tunneling protocol used.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-NativeProfile-NativeProtocolType-DFProperties-End -->
 
@@ -7024,7 +7042,7 @@ Required for native profiles. Type of tunneling protocol used.
 <!-- User-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- User-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-OmaUri-Begin -->
@@ -7035,7 +7053,7 @@ Required for native profiles. Type of tunneling protocol used.
 
 <!-- User-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-Description-Begin -->
 <!-- Description-Source-DDF -->
-True: Plumb traffic selectors as routes onto VPN interface, False: Do not plumb traffic selectors as routes.
+True: Plumb traffic selectors as routes onto VPN interface, False: Don't plumb traffic selectors as routes.
 <!-- User-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-Description-End -->
 
 <!-- User-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-Editable-Begin -->
@@ -7047,7 +7065,7 @@ True: Plumb traffic selectors as routes onto VPN interface, False: Do not plumb 
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-NativeProfile-PlumbIKEv2TSAsRoutes-DFProperties-End -->
 
@@ -7063,7 +7081,7 @@ True: Plumb traffic selectors as routes onto VPN interface, False: Do not plumb 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20207] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20207] and later |
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-OmaUri-Begin -->
@@ -7085,7 +7103,7 @@ True: Plumb traffic selectors as routes onto VPN interface, False: Do not plumb 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-DFProperties-End -->
 
@@ -7101,7 +7119,7 @@ True: Plumb traffic selectors as routes onto VPN interface, False: Do not plumb 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20207] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20207] and later |
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-OmaUri-Begin -->
@@ -7117,6 +7135,8 @@ List of inbox VPN protocols in priority order.
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Up to 4 VPN protocols are supported. A separate entry is needed for every VPN protocol. For a sample format, see [Examples](#examples).
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-Editable-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-DFProperties-Begin -->
@@ -7124,7 +7144,7 @@ List of inbox VPN protocols in priority order.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-DFProperties-End -->
 
@@ -7140,7 +7160,7 @@ List of inbox VPN protocols in priority order.
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20207] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20207] and later |
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-OmaUri-Begin -->
@@ -7155,6 +7175,8 @@ List of inbox VPN protocols in priority order.
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> A separate entry is needed for every VPN protocol. For a sample format, see [Examples](#examples).
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Editable-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-DFProperties-Begin -->
@@ -7162,7 +7184,7 @@ List of inbox VPN protocols in priority order.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-DFProperties-End -->
 
@@ -7178,7 +7200,7 @@ List of inbox VPN protocols in priority order.
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20207] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20207] and later |
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-OmaUri-Begin -->
@@ -7194,6 +7216,8 @@ Inbox VPN protocols type.
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> A separate entry is needed for every VPN protocol. For a sample format, see [Examples](#examples).
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-Editable-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-DFProperties-Begin -->
@@ -7201,7 +7225,7 @@ Inbox VPN protocols type.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-NativeProtocolList-{NativeProtocolRowId}-Type-DFProperties-End -->
 
@@ -7228,7 +7252,7 @@ Inbox VPN protocols type.
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.20207] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20207] and later |
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-OmaUri-Begin -->
@@ -7244,6 +7268,7 @@ Default 168, max 500000.
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+RetryTimeInHours specifies the length of time Windows tries to use the last succesful protocol when making a new connection. Setting this value to 0 disables remembering the last successful protocol.
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-Editable-End -->
 
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-DFProperties-Begin -->
@@ -7251,7 +7276,7 @@ Default 168, max 500000.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-NativeProfile-ProtocolList-RetryTimeInHours-DFProperties-End -->
 
@@ -7267,7 +7292,7 @@ Default 168, max 500000.
 <!-- User-{ProfileName}-NativeProfile-RoutingPolicyType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-RoutingPolicyType-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-RoutingPolicyType-OmaUri-Begin -->
@@ -7290,7 +7315,7 @@ Type of routing policy.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-NativeProfile-RoutingPolicyType-DFProperties-End -->
 
@@ -7315,7 +7340,7 @@ Type of routing policy.
 <!-- User-{ProfileName}-NativeProfile-Servers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-NativeProfile-Servers-Applicability-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Servers-OmaUri-Begin -->
@@ -7326,7 +7351,7 @@ Type of routing policy.
 
 <!-- User-{ProfileName}-NativeProfile-Servers-Description-Begin -->
 <!-- Description-Source-DDF -->
-Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com. The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. You can make a list of server by making a list of server names (with optional friendly names) seperated by commas. For example, server1.example.com,server2.example.com.
+Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. You can make a list of server by making a list of server names (with optional friendly names) seperated by commas. For example, server1.example.com,server2.example.com.
 <!-- User-{ProfileName}-NativeProfile-Servers-Description-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Servers-Editable-Begin -->
@@ -7338,7 +7363,7 @@ Required for native profiles. Public or routable IP address or DNS name for the 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-NativeProfile-Servers-DFProperties-End -->
 
@@ -7354,7 +7379,7 @@ Required for native profiles. Public or routable IP address or DNS name for the 
 <!-- User-{ProfileName}-NetworkOutageTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-{ProfileName}-NetworkOutageTime-Applicability-End -->
 
 <!-- User-{ProfileName}-NetworkOutageTime-OmaUri-Begin -->
@@ -7377,7 +7402,7 @@ The amount of time in seconds the network is allowed to idle. 0 means no limit.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 <!-- User-{ProfileName}-NetworkOutageTime-DFProperties-End -->
@@ -7394,7 +7419,7 @@ The amount of time in seconds the network is allowed to idle. 0 means no limit.
 <!-- User-{ProfileName}-PluginProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-PluginProfile-Applicability-End -->
 
 <!-- User-{ProfileName}-PluginProfile-OmaUri-Begin -->
@@ -7417,7 +7442,7 @@ Nodes under the PluginProfile are required when using a Microsoft Store based VP
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Get |
 <!-- User-{ProfileName}-PluginProfile-DFProperties-End -->
 
@@ -7433,7 +7458,7 @@ Nodes under the PluginProfile are required when using a Microsoft Store based VP
 <!-- User-{ProfileName}-PluginProfile-CustomConfiguration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-PluginProfile-CustomConfiguration-Applicability-End -->
 
 <!-- User-{ProfileName}-PluginProfile-CustomConfiguration-OmaUri-Begin -->
@@ -7444,7 +7469,7 @@ Nodes under the PluginProfile are required when using a Microsoft Store based VP
 
 <!-- User-{ProfileName}-PluginProfile-CustomConfiguration-Description-Begin -->
 <!-- Description-Source-DDF -->
-Optional. This is an HTML encoded XML blob for SSL-VPN plug-in specific configuration including authentication information that is deployed to the device to make it available for SSL-VPN plug-ins. Contact the plugin provider for format and other details. Most plugins can also configure values based on the server negotiations as well as defaults.
+Optional. This is an HTML encoded XML blob for SSL-VPN plug-in specific configuration including authentication information that's deployed to the device to make it available for SSL-VPN plug-ins. Contact the plugin provider for format and other details. Most plugins can also configure values based on the server negotiations as well as defaults.
 <!-- User-{ProfileName}-PluginProfile-CustomConfiguration-Description-End -->
 
 <!-- User-{ProfileName}-PluginProfile-CustomConfiguration-Editable-Begin -->
@@ -7456,7 +7481,7 @@ Optional. This is an HTML encoded XML blob for SSL-VPN plug-in specific configur
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-PluginProfile-CustomConfiguration-DFProperties-End -->
 
@@ -7472,7 +7497,7 @@ Optional. This is an HTML encoded XML blob for SSL-VPN plug-in specific configur
 <!-- User-{ProfileName}-PluginProfile-PluginPackageFamilyName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-PluginProfile-PluginPackageFamilyName-Applicability-End -->
 
 <!-- User-{ProfileName}-PluginProfile-PluginPackageFamilyName-OmaUri-Begin -->
@@ -7495,7 +7520,7 @@ Required for Plugin Profiles. This node specifies the Package Family Name of the
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-PluginProfile-PluginPackageFamilyName-DFProperties-End -->
 
@@ -7511,7 +7536,7 @@ Required for Plugin Profiles. This node specifies the Package Family Name of the
 <!-- User-{ProfileName}-PluginProfile-ServerUrlList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-PluginProfile-ServerUrlList-Applicability-End -->
 
 <!-- User-{ProfileName}-PluginProfile-ServerUrlList-OmaUri-Begin -->
@@ -7534,7 +7559,7 @@ Required for plug-in profiles. Semicolon-separated list of servers in URL, hostn
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-PluginProfile-ServerUrlList-DFProperties-End -->
 
@@ -7550,7 +7575,7 @@ Required for plug-in profiles. Semicolon-separated list of servers in URL, hostn
 <!-- User-{ProfileName}-PrivateNetwork-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-{ProfileName}-PrivateNetwork-Applicability-End -->
 
 <!-- User-{ProfileName}-PrivateNetwork-OmaUri-Begin -->
@@ -7573,7 +7598,7 @@ Determines whether the VPN connection is public or private.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | true |
 <!-- User-{ProfileName}-PrivateNetwork-DFProperties-End -->
@@ -7599,7 +7624,7 @@ Determines whether the VPN connection is public or private.
 <!-- User-{ProfileName}-ProfileXML-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-ProfileXML-Applicability-End -->
 
 <!-- User-{ProfileName}-ProfileXML-OmaUri-Begin -->
@@ -7622,7 +7647,7 @@ The XML schema for provisioning all the fields of a VPN.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | See [ProfileXML XSD Schema](#profilexml-xsd-schema) |
 <!-- User-{ProfileName}-ProfileXML-DFProperties-End -->
@@ -7639,7 +7664,7 @@ The XML schema for provisioning all the fields of a VPN.
 <!-- User-{ProfileName}-Proxy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-Proxy-Applicability-End -->
 
 <!-- User-{ProfileName}-Proxy-OmaUri-Begin -->
@@ -7662,7 +7687,7 @@ A collection of configuration objects to enable a post-connect proxy support for
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-{ProfileName}-Proxy-DFProperties-End -->
 
@@ -7678,7 +7703,7 @@ A collection of configuration objects to enable a post-connect proxy support for
 <!-- User-{ProfileName}-Proxy-AutoConfigUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-Proxy-AutoConfigUrl-Applicability-End -->
 
 <!-- User-{ProfileName}-Proxy-AutoConfigUrl-OmaUri-Begin -->
@@ -7701,7 +7726,7 @@ Optional. Set a URL to automatically retrieve the proxy settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-Proxy-AutoConfigUrl-DFProperties-End -->
 
@@ -7717,7 +7742,7 @@ Optional. Set a URL to automatically retrieve the proxy settings.
 <!-- User-{ProfileName}-Proxy-Manual-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-Proxy-Manual-Applicability-End -->
 
 <!-- User-{ProfileName}-Proxy-Manual-OmaUri-Begin -->
@@ -7740,7 +7765,7 @@ Optional node containing the manual server settings.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-{ProfileName}-Proxy-Manual-DFProperties-End -->
 
@@ -7756,7 +7781,7 @@ Optional node containing the manual server settings.
 <!-- User-{ProfileName}-Proxy-Manual-Server-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-Proxy-Manual-Server-Applicability-End -->
 
 <!-- User-{ProfileName}-Proxy-Manual-Server-OmaUri-Begin -->
@@ -7779,7 +7804,7 @@ Optional. The value is the proxy server address as a fully qualified hostname or
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-Proxy-Manual-Server-DFProperties-End -->
 
@@ -7795,7 +7820,7 @@ Optional. The value is the proxy server address as a fully qualified hostname or
 <!-- User-{ProfileName}-RegisterDNS-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- User-{ProfileName}-RegisterDNS-Applicability-End -->
 
 <!-- User-{ProfileName}-RegisterDNS-OmaUri-Begin -->
@@ -7818,7 +7843,7 @@ Allows registration of the connection's address in DNS.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- User-{ProfileName}-RegisterDNS-DFProperties-End -->
@@ -7828,7 +7853,7 @@ Allows registration of the connection's address in DNS.
 
 | Value | Description |
 |:--|:--|
-| false (Default) | Do not register the connection's address in DNS. |
+| false (Default) | Don't register the connection's address in DNS. |
 | true | Register the connection's addresses in DNS. |
 <!-- User-{ProfileName}-RegisterDNS-AllowedValues-End -->
 
@@ -7844,7 +7869,7 @@ Allows registration of the connection's address in DNS.
 <!-- User-{ProfileName}-RememberCredentials-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-RememberCredentials-Applicability-End -->
 
 <!-- User-{ProfileName}-RememberCredentials-OmaUri-Begin -->
@@ -7867,7 +7892,7 @@ Boolean value (true or false) for caching credentials.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- User-{ProfileName}-RememberCredentials-DFProperties-End -->
@@ -7877,7 +7902,7 @@ Boolean value (true or false) for caching credentials.
 
 | Value | Description |
 |:--|:--|
-| false (Default) | Do not cache credentials. |
+| false (Default) | Don't cache credentials. |
 | true | Credentials are cached whenever possible. |
 <!-- User-{ProfileName}-RememberCredentials-AllowedValues-End -->
 
@@ -7893,7 +7918,7 @@ Boolean value (true or false) for caching credentials.
 <!-- User-{ProfileName}-RequireVpnClientAppUI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Unknown [10.0.19628] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.19628] and later |
 <!-- User-{ProfileName}-RequireVpnClientAppUI-Applicability-End -->
 
 <!-- User-{ProfileName}-RequireVpnClientAppUI-OmaUri-Begin -->
@@ -7906,8 +7931,9 @@ Boolean value (true or false) for caching credentials.
 <!-- Description-Source-DDF -->
 Applicable only to AppContainer profiles.
 
-False : Do not show profile in Settings UI.
-True : Show profile in Settings UI.
+False: Don't show profile in Settings UI.
+
+True: Show profile in Settings UI.
 
 Optional. This node is only relevant for AppContainer profiles (i.e. using the VpnManagementAgent::AddProfileFromXmlAsync method).
 <!-- User-{ProfileName}-RequireVpnClientAppUI-Description-End -->
@@ -7921,7 +7947,7 @@ Optional. This node is only relevant for AppContainer profiles (i.e. using the V
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-RequireVpnClientAppUI-DFProperties-End -->
 
@@ -7937,7 +7963,7 @@ Optional. This node is only relevant for AppContainer profiles (i.e. using the V
 <!-- User-{ProfileName}-RouteList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-RouteList-Applicability-End -->
 
 <!-- User-{ProfileName}-RouteList-OmaUri-Begin -->
@@ -7960,7 +7986,7 @@ List of routes to be added to the Routing table for the VPN Interface. Required 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-{ProfileName}-RouteList-DFProperties-End -->
 
@@ -7976,7 +8002,7 @@ List of routes to be added to the Routing table for the VPN Interface. Required 
 <!-- User-{ProfileName}-RouteList-{routeRowId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-RouteList-{routeRowId}-Applicability-End -->
 
 <!-- User-{ProfileName}-RouteList-{routeRowId}-OmaUri-Begin -->
@@ -7999,7 +8025,7 @@ A sequential integer identifier for the RouteList. This is required if you are a
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: A sequential integer identifier for the RouteList. This is required if you are adding routes. Sequencing must start at 0. |
 <!-- User-{ProfileName}-RouteList-{routeRowId}-DFProperties-End -->
@@ -8016,7 +8042,7 @@ A sequential integer identifier for the RouteList. This is required if you are a
 <!-- User-{ProfileName}-RouteList-{routeRowId}-Address-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-RouteList-{routeRowId}-Address-Applicability-End -->
 
 <!-- User-{ProfileName}-RouteList-{routeRowId}-Address-OmaUri-Begin -->
@@ -8039,7 +8065,7 @@ Subnet address in IPv4/v6 address format which, along with the prefix will be us
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-RouteList-{routeRowId}-Address-DFProperties-End -->
 
@@ -8055,7 +8081,7 @@ Subnet address in IPv4/v6 address format which, along with the prefix will be us
 <!-- User-{ProfileName}-RouteList-{routeRowId}-ExclusionRoute-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-RouteList-{routeRowId}-ExclusionRoute-Applicability-End -->
 
 <!-- User-{ProfileName}-RouteList-{routeRowId}-ExclusionRoute-OmaUri-Begin -->
@@ -8078,7 +8104,7 @@ A boolean value that specifies if the route being added should point to the VPN 
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | false |
 <!-- User-{ProfileName}-RouteList-{routeRowId}-ExclusionRoute-DFProperties-End -->
@@ -8104,7 +8130,7 @@ A boolean value that specifies if the route being added should point to the VPN 
 <!-- User-{ProfileName}-RouteList-{routeRowId}-Metric-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-{ProfileName}-RouteList-{routeRowId}-Metric-Applicability-End -->
 
 <!-- User-{ProfileName}-RouteList-{routeRowId}-Metric-OmaUri-Begin -->
@@ -8127,7 +8153,7 @@ The route's metric.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-RouteList-{routeRowId}-Metric-DFProperties-End -->
 
@@ -8143,7 +8169,7 @@ The route's metric.
 <!-- User-{ProfileName}-RouteList-{routeRowId}-PrefixSize-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-RouteList-{routeRowId}-PrefixSize-Applicability-End -->
 
 <!-- User-{ProfileName}-RouteList-{routeRowId}-PrefixSize-OmaUri-Begin -->
@@ -8166,7 +8192,7 @@ The subnet prefix size part of the destination prefix for the route entry. This,
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-4294967295]` |
 <!-- User-{ProfileName}-RouteList-{routeRowId}-PrefixSize-DFProperties-End -->
@@ -8183,7 +8209,7 @@ The subnet prefix size part of the destination prefix for the route entry. This,
 <!-- User-{ProfileName}-TrafficFilterList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-OmaUri-Begin -->
@@ -8208,7 +8234,7 @@ A list of rules allowing traffic over the VPN Interface. Each Rule ID is OR'ed. 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-{ProfileName}-TrafficFilterList-DFProperties-End -->
 
@@ -8224,7 +8250,7 @@ A list of rules allowing traffic over the VPN Interface. Each Rule ID is OR'ed. 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-OmaUri-Begin -->
@@ -8247,7 +8273,7 @@ A sequential integer identifier for the Traffic Filter rules. Sequencing must st
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: A sequential integer identifier for the Traffic Filter rules. Sequencing must start at 0. |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-DFProperties-End -->
@@ -8264,7 +8290,7 @@ A sequential integer identifier for the Traffic Filter rules. Sequencing must st
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-OmaUri-Begin -->
@@ -8287,7 +8313,7 @@ Per App VPN Rule. This will Allow only the Apps specified to be allowed over VPN
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-DFProperties-End -->
 
@@ -8303,7 +8329,7 @@ Per App VPN Rule. This will Allow only the Apps specified to be allowed over VPN
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Id-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Id-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Id-OmaUri-Begin -->
@@ -8326,7 +8352,7 @@ App identity for the app-based traffic filter. The value for this node can be on
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Id-DFProperties-End -->
 
@@ -8342,7 +8368,7 @@ App identity for the app-based traffic filter. The value for this node can be on
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Type-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Type-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Type-OmaUri-Begin -->
@@ -8365,7 +8391,7 @@ Returns the type of ID of the App/Id. Either PackageFamilyName, FilePath, or Sys
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-App-Type-DFProperties-End -->
 
@@ -8381,7 +8407,7 @@ Returns the type of ID of the App/Id. Either PackageFamilyName, FilePath, or Sys
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Claims-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Claims-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Claims-OmaUri-Begin -->
@@ -8404,7 +8430,7 @@ Specifies a rule in Security Descriptor Definition Language (SDDL) format to che
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Claims-DFProperties-End -->
 
@@ -8420,7 +8446,7 @@ Specifies a rule in Security Descriptor Definition Language (SDDL) format to che
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Direction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Direction-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Direction-OmaUri-Begin -->
@@ -8432,6 +8458,7 @@ Specifies a rule in Security Descriptor Definition Language (SDDL) format to che
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Direction-Description-Begin -->
 <!-- Description-Source-DDF -->
 Outbound - The traffic filter allows traffic to reach destinations matching this rule. This is the default.
+
 Inbound - The traffic filter allows traffic coming from external locations matching this rule.
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Direction-Description-End -->
 
@@ -8444,7 +8471,7 @@ Inbound - The traffic filter allows traffic coming from external locations match
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Direction-DFProperties-End -->
 
@@ -8460,7 +8487,7 @@ Inbound - The traffic filter allows traffic coming from external locations match
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalAddressRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalAddressRanges-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalAddressRanges-OmaUri-Begin -->
@@ -8483,7 +8510,7 @@ A list of comma separated values specifying local IP address ranges to allow.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalAddressRanges-DFProperties-End -->
 
@@ -8499,7 +8526,7 @@ A list of comma separated values specifying local IP address ranges to allow.
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalPortRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalPortRanges-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-LocalPortRanges-OmaUri-Begin -->
@@ -8522,7 +8549,7 @@ Comma Separated list of ranges for eg. 100-120,200,300-320.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Regular Expression: `^[\d]*$` |
 | Dependency [ProtocolDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/VPNv2/[ProfileName]/TrafficFilterList/[trafficFilterId]/Protocol` <br> Dependency Allowed Value: `[6,17]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -8540,7 +8567,7 @@ Comma Separated list of ranges for eg. 100-120,200,300-320.
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Protocol-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Protocol-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Protocol-OmaUri-Begin -->
@@ -8563,7 +8590,7 @@ Comma Separated list of ranges for eg. 100-120,200,300-320.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Range: `[0-255]` |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-Protocol-DFProperties-End -->
@@ -8580,7 +8607,7 @@ Comma Separated list of ranges for eg. 100-120,200,300-320.
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemoteAddressRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemoteAddressRanges-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemoteAddressRanges-OmaUri-Begin -->
@@ -8603,7 +8630,7 @@ A list of comma separated values specifying remote IP address ranges to allow.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemoteAddressRanges-DFProperties-End -->
 
@@ -8619,7 +8646,7 @@ A list of comma separated values specifying remote IP address ranges to allow.
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemotePortRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemotePortRanges-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-RemotePortRanges-OmaUri-Begin -->
@@ -8642,7 +8669,7 @@ A list of comma separated values specifying remote port ranges to allow. For exa
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | Regular Expression: `^[\d]*$` |
 | Dependency [ProtocolDependency] | Dependency Type: `DependsOn` <br> Dependency URI: `Vendor/MSFT/VPNv2/[ProfileName]/TrafficFilterList/[trafficFilterId]/Protocol` <br> Dependency Allowed Value: `[6,17]` <br> Dependency Allowed Value Type: `Range` <br>  |
@@ -8660,7 +8687,7 @@ A list of comma separated values specifying remote port ranges to allow. For exa
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-RoutingPolicyType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-RoutingPolicyType-Applicability-End -->
 
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-RoutingPolicyType-OmaUri-Begin -->
@@ -8683,7 +8710,7 @@ Specifies the routing policy if an App or Claims type is used in the traffic fil
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-{ProfileName}-TrafficFilterList-{trafficFilterId}-RoutingPolicyType-DFProperties-End -->
 
@@ -8708,7 +8735,7 @@ Specifies the routing policy if an App or Claims type is used in the traffic fil
 <!-- User-{ProfileName}-TrustedNetworkDetection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-{ProfileName}-TrustedNetworkDetection-Applicability-End -->
 
 <!-- User-{ProfileName}-TrustedNetworkDetection-OmaUri-Begin -->
@@ -8719,7 +8746,7 @@ Specifies the routing policy if an App or Claims type is used in the traffic fil
 
 <!-- User-{ProfileName}-TrustedNetworkDetection-Description-Begin -->
 <!-- Description-Source-DDF -->
-Comma separated string to identify the trusted network. VPN will not connect automatically when the user is on their corporate wireless network where protected resources are directly accessible to the device.
+Comma separated string to identify the trusted network. VPN won't connect automatically when the user is on their corporate wireless network where protected resources are directly accessible to the device.
 <!-- User-{ProfileName}-TrustedNetworkDetection-Description-End -->
 
 <!-- User-{ProfileName}-TrustedNetworkDetection-Editable-Begin -->
@@ -8731,7 +8758,7 @@ Comma separated string to identify the trusted network. VPN will not connect aut
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 | Allowed Values | `,` |
 <!-- User-{ProfileName}-TrustedNetworkDetection-DFProperties-End -->
@@ -8748,7 +8775,7 @@ Comma separated string to identify the trusted network. VPN will not connect aut
 <!-- User-{ProfileName}-UseRasCredentials-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-{ProfileName}-UseRasCredentials-Applicability-End -->
 
 <!-- User-{ProfileName}-UseRasCredentials-OmaUri-Begin -->
@@ -8771,7 +8798,7 @@ Determines whether the credential manager will save ras credentials after a conn
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | true |
 <!-- User-{ProfileName}-UseRasCredentials-DFProperties-End -->
@@ -8781,7 +8808,7 @@ Determines whether the credential manager will save ras credentials after a conn
 
 | Value | Description |
 |:--|:--|
-| false | Ras Credentials are not saved. |
+| false | Ras Credentials aren't saved. |
 | true (Default) | Ras Credentials are saved. |
 <!-- User-{ProfileName}-UseRasCredentials-AllowedValues-End -->
 
@@ -8994,7 +9021,16 @@ Profile example
   <ProfileName>VPN_Demo</ProfileName>
   <NativeProfile>
     <Servers>VPNServer.contoso.com</Servers>
-    <NativeProtocolType>Automatic</NativeProtocolType>
+    <NativeProtocolType>ProtocolList</NativeProtocolType>
+      <ProtocolList>
+        <NativeProtocol>
+          <Type>Ikev2</Type>
+        </NativeProtocol>
+        <NativeProtocol>
+          <Type>Sstp</Type>
+        </NativeProtocol>
+        <RetryTimeinHours>168</RetryTimeinHours>
+      </ProtocolList>
     <Authentication>
       <UserMethod>Eap</UserMethod>
       <Eap>

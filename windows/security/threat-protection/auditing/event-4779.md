@@ -1,5 +1,5 @@
 ---
-title: 4779(S) A session was disconnected from a Window Station. (Windows 10)
+title: 4779(S) A session was disconnected from a Window Station. 
 description: Describes security event 4779(S) A session was disconnected from a Window Station.
 ms.pagetype: security
 ms.prod: windows-client
