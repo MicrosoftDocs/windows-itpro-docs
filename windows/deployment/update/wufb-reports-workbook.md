@@ -6,7 +6,7 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.topic: article
-ms.date: 06/05/2023
+ms.date: 06/12/2023
 ms.technology: itpro-updates
 ---
 
@@ -79,7 +79,7 @@ Below the tiles, the **Quality updates** tab is subdivided into **Update status*
 
 The **Update status** group for quality updates contains the following items:
 
-- **Update states for all security releases**: The update states for the last 3 quality updates are used to populate this chart. The total number of update states is approximately 3 times the number of devices that have reported update data to Windows Update for Business reports in the past 30 days.
+- **Update states for all security releases**: The update states for the last 3 security updates are used to populate this chart. The total number of update states is approximately 3 times the number of devices that have reported update data to Windows Update for Business reports in the past 30 days.
 - **Update alerts for all security releases**: Chart containing the count of active errors and warnings for security updates.
 
 
