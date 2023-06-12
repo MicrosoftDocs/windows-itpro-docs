@@ -21,7 +21,7 @@ summary: |
 
   **Setup questions**:
 
-  - [How do you setup Windows Update for Business reports?](#how-do-you-setup-windows-update-for-business-reports)
+  - [How do you set up Windows Update for Business reports?](#how-do-you-setup-windows-update-for-business-reports)
   - [Why is "Waiting for Windows Update for Business reports data" displayed on the page](#why-is--waiting-for-windows-update-for-business-reports-data--displayed-on-the-page)
   - [Why am I getting the error "400 Bad Request: The specified resource already exists"?](#why-am-i-getting-the-error--400-bad-request--the-specified-resource-already-exists-)
   - [Why am I getting the error "400 Bad Request: Identifier must be GUID"?](#why-am-i-getting-the-error--400-bad-request--identifier-must-be-guid-)
@@ -32,10 +32,10 @@ summary: |
   - [Why am I missing devices in reports?](#why-am-i-missing-devices-in-reports)
   - [What is the difference between OS version and target version?](#what-is-the-difference-between-os-version-and-target-version)
   - [Why are there multiple records for the same device?](#why-are-there-multiple-records-for-the-same-device)
-  - [When should I use the UCClient, UCClientUpdateStatus, or UCUpdateAlert tables?](#when-should-i-use-the-ucclient--ucclientupdatestatus--or-ucupdatealert-tables)
+  - [When should I use the `UCClient`, `UCClientUpdateStatus`, or `UCUpdateAlert` tables?](#when-should-i-use-the-ucclient--ucclientupdatestatus--or-ucupdatealert-tables)
   - [What is the difference between quality and security updates?](#what-is-the-difference-between-quality-and-security-updates)
   - [How do I confirm that devices are sending data?](#how-do-i-confirm-that-devices-are-sending-data)
-  - [Why isn't the workbook displaying data even though my UCClient table has data?](#why-isn-t-the-workbook-displaying-data-even-though-my-ucclient-table-has-data)
+  - [Why isn't the workbook displaying data even though my `UCClient` table has data?](#why-isn-t-the-workbook-displaying-data-even-though-my-ucclient-table-has-data)
 
   **Delivery Optimization data**:
 
@@ -59,14 +59,14 @@ sections:
       - question: Is Windows Update for Business reports free?
         answer: |
           Data ingested into your Log Analytics workspace can be retained at no charge for up to first 31 days (or 90 days if [Microsoft Sentinel](/azure/sentinel/overview) is enabled on the workspace). Data ingested into [Application Insights](/azure/azure-monitor/app/app-insights-overview), either classic or workspace-based, is retained for 90 days without any charge.
-          Data retained beyond these no-charge periods will be charged for each GB of data retained for a month, pro-rated daily. For more information, see **Log Data Retention** in [Azure Monitor pricing](https://azure.microsoft.com/en-us/pricing/details/monitor/#pricing).
+          Data retained beyond these no-charge periods are charged for each GB of data retained for a month, pro-rated daily. For more information, see **Log Data Retention** in [Azure Monitor pricing](https://azure.microsoft.com/en-us/pricing/details/monitor/#pricing).
       - question: What Windows versions are supported?
         answer: |
           Windows Update for Business reports supports clients running a [supported version of Windows 10 or Windows 11](/windows/release-health/supported-versions-windows-client) Professional, Education, Enterprise, and Enterprise multi-session editions. Windows Update for Business reports only provides data for the standard Desktop Windows client version and isn't currently compatible with Windows Server, Surface Hub, IoT, or other versions.
 
   - name: Setup questions
     questions:
-      - question: How do you setup Windows Update for Business reports?
+      - question: How do you set up Windows Update for Business reports?
         answer: |
           After verifying the [prerequisites](wufb-reports-prerequisites.md) are met, you can start to set up Windows Update for Business reports. 
           The two main steps for setting up  Windows Update for Business reports are:
@@ -86,7 +86,7 @@ sections:
           - You may not have the correct [permissions](wufb-reports-prerequisites.md#permissions) to display the data. 
           - The initial enrollment may not be complete yet.
           - It's possible that devices aren't sharing data. If you received a successful save message during enrollment but still haven't seen any data after 48 hours, try using the [configuration script](wufb-reports-configuration-script.md) on devices to ensure they're configured properly.
-          If you've verified the above items, but still aren't seeing data, you can unenroll then re-enroll. However, it will take another 24-48 hours for the enrollment to complete. If the issue persists, [contact support](wufb-reports-help.md).  
+          If you've verified the above items, but still aren't seeing data, you can unenroll then re-enroll. However, it takes another 24-48 hours for the enrollment to complete. If the issue persists, [contact support](wufb-reports-help.md).  
       - question: "Why am I getting the error `400 Bad Request: The specified resource already exists`?"
         answer: |
           A `400 Bad Request: The specified resource already exists` error message indicates that the service already has a subscription and workspace mapping saved. If you're trying to re-enroll with the same configuration settings, wait a few minutes, then refresh the page before saving your subscription and workspace again. Sometimes it can take time to register the save, so it's important to not re-enroll too quickly.
@@ -100,8 +100,7 @@ sections:
           If you're seeing the device ID but not the device name, it's possible that the required policy for displaying the device name isn't set on the client. Ensure clients have the policy configured.
           - CSP: [System/AllowDeviceNameInDiagnosticData](/windows/client-management/mdm/policy-csp-system#allowdevicenameindiagnosticdata)
           - Group Policy: Allow device name to be sent in Windows diagnostic data
-            - Located in **Computer Configuration** > **Administrative Templates** > **Windows Components** >**Data Collection and Preview Builds**
-          It can take up to 21 days for all device names to show in up in reports assuming they are powered on and active.
+            - Located in **Computer Configuration** > **Administrative Templates** > **Windows Components** >**Data Collection and Preview Builds**. It can take up to 21 days for all device names to show in up in reports assuming they're powered on and active.
       - question: Why am I missing devices in reports?
         answer: |
           Here are some reasons why you may not be seeing devices in reports:
@@ -109,14 +108,14 @@ sections:
           - **The device isn't enrolled with Azure Active Directory**: A [prerequisite](wufb-reports-prerequisites.md#azure-and-azure-active-directory) for devices is that they're either [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join) or [hybrid Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
           - **The device isn't sending data**: It's possible devices aren't sharing data due to a policy being incorrectly configured or a proxy or firewall configuration. Try using the [configuration script](wufb-reports-configuration-script.md) on devices to ensure they're configured properly.
           - **The device isn't active enough**: Clients must be active and connected to the internet to scan against Microsoft Update. Ensure devices are powered on and have been active at least once in the past 28 days.
-          - **The workbook has limited the results**: The default limit for rows in Azure workbooks is set to 1000. This is to avoid any delay in the load time for the interface. If you noticed that you can't find a specific device, you can export the output in Excel, or open the results in the logs view for the full result by selecting the three dots beside each component.
+          - **The workbook has limited the results**: The default limit for rows in Azure workbooks is set to 1000. This limit is to avoid any delay in the load time for the interface. If you noticed that you can't find a specific device, you can export the output in Excel, or open the results in the logs view for the full result by selecting the three dots beside each component.
       - question: Why are there multiple records for the same device?
         answer: |
-          Devices will have multiple records when the UCClientUpdateStatus or UCClientServiceStatus tables are queried. These tables contain multiple records because they have the history for all devices that have discovered applicable updates within the past 28 days. For example, it's possible that a device has discovered multiple security updates, each with different update states, at various times over the past 28 days. It's also possible that a device can be in multiple deployments, so multiple records are displayed.    
+          Devices have multiple records when the `UCClientUpdateStatus` or `UCClientServiceStatus` tables are queried. These tables contain multiple records because they have the history for all devices that have discovered applicable updates within the past 28 days. For example, it's possible that a device has discovered multiple security updates, each with different update states, at various times over the past 28 days. It's also possible that a device can be in multiple deployments, so multiple records are displayed.    
       - question: What is the difference between OS version and target version?
         answer: |
           The word *target* in data labels refers to the update version, build or KB the client intends to update to. Typically, the fields starting with *OS*, such as OSbuild and OSversion, represents what the device is currently running.
-      - question: When should I use the UCClient, UCClientUpdateStatus, or UCUpdateAlert tables?
+      - question: When should I use the `UCClient`, `UCClientUpdateStatus`, or `UCUpdateAlert` tables?
         answer: |
           These tables can be used for the following information:
 
@@ -139,7 +138,7 @@ sections:
               `UCUpdateAlert |where AlertStatus =="Active"|summarize Devices=count() by AlertSubtype`
       - question: What is the difference between quality and security updates?
         answer: |
-          Windows quality updates are monthly updates that are [released on the second or fourth Tuesday of the month](release-cycle.md). The cumulative updates released on the second Tuesday of the month can contain both security updates and non-security updates. Cumulative updates released on the fourth Tuesday of the month are optional non-security preview releases. Use the fields within the [UCClient table](wufb-reports-schema-ucclient.md) for additional information, such as:
+          Windows quality updates are monthly updates that are [released on the second or fourth Tuesday of the month](release-cycle.md). The cumulative updates released on the second Tuesday of the month can contain both security updates and nonsecurity updates. Cumulative updates released on the fourth Tuesday of the month are optional nonsecurity preview releases. Use the fields within the [UCClient table](wufb-reports-schema-ucclient.md) for additional information, such as:
             
             - **OSSecurityUpdateStatus**: Indicates the status of the monthly update that's released on the second Tuesday
             - **OSQualityUpdateStatus**: Indicates the status of the monthly update that's released on the fourth Tuesday
@@ -181,7 +180,7 @@ sections:
             If there's a Connected Cache server at the ISP level, BytesFromCache filters out any bytes coming the ISP's Connected Cache.
       - question: How do the results from the Delivery Optimization PowerShell cmdlets compare to the results in the report?
         answer: |
-            [Delivery Optimization PowerShell cmdlets](waas-delivery-optimization-setup.md#monitor-delivery-optimization) can be a powerful tool used to monitor Delivery Optimization data on the device. These cmdlets use the cache on the device. The data calculated in the report is taken from the Delivery Optimization telemetry events.
+            [Delivery Optimization PowerShell cmdlets](waas-delivery-optimization-setup.md#monitor-delivery-optimization) can be a powerful tool used to monitor Delivery Optimization data on the device. These cmdlets use the cache on the device. The data calculated in the report is taken from the Delivery Optimization events.
       - question: The report represents the last 28 days of data, why do some queries include >= seven days?
         answer: |
-            The data in the report does represent the last 28 days of data. The query for last seven days is just to get the data for the latest snapshot from past seven days. It's possible that data is delayed for sometime and not available for current day, so we look for past 7 day snapshot in log analytics and show the latest snapshot.
+            The data in the report does represent the last 28 days of data. The query for last seven days is just to get the data for the latest snapshot from past seven days. It's possible that data is delayed for sometime and not available for current day, so we look for past seven day snapshot in log analytics and show the latest snapshot.
