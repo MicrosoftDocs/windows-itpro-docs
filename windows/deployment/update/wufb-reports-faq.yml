@@ -85,7 +85,8 @@ sections:
           Typically, the **Waiting for Windows Update for Business reports data** message is displayed because: 
           - You may not have the correct [permissions](wufb-reports-prerequisites.md#permissions) to display the data. 
           - The initial enrollment may not be complete yet.
-          - It's possible that devices aren't sharing data. If you received a successful save message during enrollment but still haven't seen any data after 48 hours, try using the [configuration script]((wufb-reports-configuration-script.md) on devices to ensure they're configured properly.
+          - It's possible that devices aren't sharing data. If you received a successful save message during enrollment but still haven't seen any data after 48 hours, try using the [configuration script](wufb-reports-configuration-script.md) on devices to ensure they're configured properly.
+          If you've verified the above items, but still aren't seeing data, you can unenroll then re-enroll. However, it will take another 24-48 hours for the enrollment to complete. If the issue persists, contact support.  
       - question: "Why am I getting the error `400 Bad Request: The specified resource already exists`?"
         answer: |
           A `400 Bad Request: The specified resource already exists` error message indicates that the service already has a subscription and workspace mapping saved. If you're trying to re-enroll with the same configuration settings, wait a few minutes, then refresh the page before saving your subscription and workspace again. Sometimes it can take time to register the save, so it's important to not re-enroll too quickly.
