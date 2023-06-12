@@ -88,7 +88,7 @@ The **Update deployment status** table displays the quality updates for each ope
 | Column name | Description | Drill-in description |
 |---|---|---|
 |**Alerts**| Number of different error codes encountered by devices for the update. | Selecting this number lists the alert name for each error code and a count of devices with the error. Select the device count to display a list of devices that have an active alert for the error code.  
-| **KB Number** | KB number for the update |  Selecting the KB number will open the support information webpage for the update.|
+| **KB Number** | KB number for the update |  Selecting the KB number opens the support information webpage for the update.|
 | **Total devices** | Number of devices that have been offered the update, or are installing, have installed, or canceled the update. | Selecting the device count opens a device list table. This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).  |
 
 ### <a name="bkmk_device-group-quality"></a> Device status group for quality updates
@@ -119,7 +119,7 @@ The **Update status** group for feature updates contains the following items:
 - **Safeguard holds**: Chart containing count of devices per operating system version that are under a safeguard hold for a feature update
 - **Update alerts**: Chart containing the count of active errors and warnings for feature updates.
 
-**Update deployment status** table for feature updates displays the installation status by targeted operating system version. For each operating system version targeted the following columns are available:
+**Update deployment status** table for feature updates displays the installation status by targeted operating system version. For each operating system version targeted, the following columns are available:
 
 | Column name | Description | Drill-in description |
 |---|---|---|
