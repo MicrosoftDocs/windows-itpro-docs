@@ -1,32 +1,39 @@
 ### YamlMime:Hub
 
-title: Windows client documentation for IT Pros # < 60 chars
-summary: Evaluate, plan, deploy, secure, and manage devices running Windows 10 and Windows 11. # < 160 chars
+title: Windows client documentation # < 60 chars
+summary: Empower your organization with secure and efficient Windows client devices. Learn how to deploy, secure, and manage Windows 10 and 11 for your organization. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: windows
 
 metadata:
-  title: Windows client documentation for IT Pros # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Evaluate, plan, deploy, secure, and manage devices running Windows 10 and Windows 11. # Required; article description that is displayed in search results. < 160 chars.
+  title: Windows client documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn how to deploy, secure, and manage Windows 10 and 11 for your organization. # Required; article description that is displayed in search results. < 160 chars.
   ms.topic: hub-page
   ms.prod: windows-client
   ms.collection:
     - highpri
     - tier1
-  author: aczechowski #Required; your GitHub user alias, with correct capitalization.
-  ms.author: aaroncz #Required; microsoft alias of author; optional team alias.
-  ms.date: 10/01/2021 #Required; mm/dd/yyyy format.
-  localization_priority: medium
-
+  author: paolomatarazzo #Required; your GitHub user alias, with correct capitalization.
+  ms.author: paoloma #Required; microsoft alias of author; optional team alias.
+  manager: aaroncz
+  ms.date: 06/12/2023 #Required; mm/dd/yyyy format.
+  
 # highlightedContent section (optional)
 # Maximum of 8 items
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Become a Windows Insider
-      itemType: overview
-      url: https://insider.windows.com
+    - title: Get started with Windows 11
+      itemType: get-started
+      url: /whats-new/windows-11-overview
+    - title: What's new in Windows 11, version-22H2?
+      itemType: whats-new
+      url: /whats-new/whats-new-windows-11-version-22H2
+    # Card
+    - title: Get started with the Windows Insider Program
+      itemType: get-started
+      url: /windows-insider/get-started
     # Card
     - title: See what's new in Windows release health
       itemType: overview
