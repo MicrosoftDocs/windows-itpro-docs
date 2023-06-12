@@ -46,7 +46,9 @@ summary: |
   - [How can I see data for device in the office vs. out of the office?](#how-can-i-see-data-for-device-in-the-office-vs--out-of-the-office)
   - [What does the data in UCDOStatus table represent?](#what-does-the-data-in-ucdostatus-table-represent)
   - [What does the data in UCDOAggregatedStatus table represent?](#what-does-the-data-in-ucdoaggregatedstatus-table-represent)
-  - [How are the calculations for Delivery Optimization done?](#how-are-the-calculations-for-delivery-optimization-done)
+  - [How are BytesFromCache calculated when there's a Connected Cache server used by my ISP?](#how-are-bytesfromcache-calculated-when-there-s-a-connected-cache-server-used-by-my-isp)
+  - [How do the results from the Delivery Optimization PowerShell cmdlets compare to the results in the report?](#how-do-the-results-from-the-delivery-optimization-powershell-cmdlets-compare-to-the-results-in-the-report?)
+  - [The report represents the last 28 days of data, why do some queries include >= seven days?](#the-report-represents-the-last-28-days-of-data--why-do-some-queries-include---seven-days)  
 
 sections:
   - name: General
@@ -152,7 +154,7 @@ sections:
     questions:  
       - question: What time period does the Delivery Optimization data include?
         answer: |
-          Data is available for the last 28 days.
+          Data is aggregated for the last 28 days for active devices.
       - question: Data is showing as 'Unknown', what does that mean?
         answer: |
           You may see data in the report listed as 'Unknown'. This status indicates that the Delivery Optimization DownloadMode setting is either invalid or empty.
@@ -161,7 +163,7 @@ sections:
           The top groups are represented by the number of devices in a particular group, for any of the four group types (GroupID, City, Country, and ISP).
       - question: The GroupIDs don't look familiar, why are they different?
         answer: |
-          The GroupID values are encoded for data protection telemetry requirements. You can find more information in the 'Mapping GroupIDs' section above.
+          The GroupID values are encoded for data protection requirements. For more information, see [Mapping GroupIDs](wufb-reports-do.md#mapping-groupid).
       - question: How can I see data for device in the office vs. out of the office?
         answer: |
           Today, we don't have a distinction for data that was downloaded by location. 
@@ -171,6 +173,12 @@ sections:
       - question: What does the data in UCDOAggregatedStatus table represent?
         answer: |
           A row in UCDOAggregatedStatus represents data summarized at the tenant level (AzureADTenantID) for each content type (ContentType).
-      - question: How are the calculations for Delivery Optimization done?
+      - question: How are BytesFromCache calculated when there's a Connected Cache server used by my ISP?
         answer: |
-            Volume from the CDN is calculated by subtracting the number bytes that came from the cache server: BytesFromCDN = BytesFromCDN - BytesFromEnterpriseCache
+            If there's a Connected Cache server at the ISP level, BytesFromCache filters out any bytes coming the ISP's Connected Cache.
+      - question: How do the results from the Delivery Optimization PowerShell cmdlets compare to the results in the report?
+        answer: |
+            [Delivery Optimization PowerShell cmdlets](waas-delivery-optimization-setup.md#monitor-delivery-optimization) can be a powerful tool used to monitor Delivery Optimization data on the device. These cmdlets use the cache on the device. The data calculated in the report is taken from the Delivery Optimization telemetry events.
+      - question: The report represents the last 28 days of data, why do some queries include >= seven days?
+        answer: |
+            The data in the report does represent the last 28 days of data. The query for last seven days is just to get the data for the latest snapshot from past seven days. It's possible that data is delayed for sometime and not available for current day, so we look for past 7 day snapshot in log analytics and show the latest snapshot.
