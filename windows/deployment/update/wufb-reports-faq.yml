@@ -32,10 +32,10 @@ summary: |
   - [Why am I missing devices in reports?](#why-am-i-missing-devices-in-reports)
   - [What is the difference between OS version and target version?](#what-is-the-difference-between-os-version-and-target-version)
   - [Why are there multiple records for the same device?](#why-are-there-multiple-records-for-the-same-device)
-  - [When should I use the `UCClient`, `UCClientUpdateStatus`, or `UCUpdateAlert` tables?](#when-should-i-use-the-ucclient--ucclientupdatestatus--or-ucupdatealert-tables)
+  - [When should I use the **UCClient**, UCClientUpdateStatus, or UCUpdateAlert tables?](#when-should-i-use-the-ucclient--ucclientupdatestatus--or-ucupdatealert-tables)
   - [What is the difference between quality and security updates?](#what-is-the-difference-between-quality-and-security-updates)
   - [How do I confirm that devices are sending data?](#how-do-i-confirm-that-devices-are-sending-data)
-  - [Why isn't the workbook displaying data even though my `UCClient` table has data?](#why-isn-t-the-workbook-displaying-data-even-though-my-ucclient-table-has-data)
+  - [Why isn't the workbook displaying data even though my UCClient table has data?](#why-isn-t-the-workbook-displaying-data-even-though-my-ucclient-table-has-data)
 
   **Delivery Optimization data**:
 
