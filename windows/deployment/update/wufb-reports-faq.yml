@@ -4,7 +4,7 @@ metadata:
   description: Answers to frequently asked questions about Windows Update for Business reports.
   ms.prod: windows-client
   ms.topic: faq
-  ms.date: 04/26/2023
+  ms.date: 06/15/2023
   manager: aaroncz
   author: mestew
   ms.author: mstewart
@@ -18,6 +18,7 @@ summary: |
   - [What is Windows Update for Business reports?](#what-is-windows-update-for-business-reports)
   - [Is Windows Update for Business reports free?](#is-windows-update-for-business-reports-free)
   - [What Windows versions are supported?](#what-windows-versions-are-supported)
+  - [What kind of security and compliance policies does Windows Update for Business reports follow?](#what-kind-of-security-and-compliance-policies-does-windows-update-for-business-reports-follow)
 
   **Setup questions**:
 
@@ -47,8 +48,8 @@ summary: |
   - [What does the data in UCDOStatus table represent?](#what-does-the-data-in-ucdostatus-table-represent)
   - [What does the data in UCDOAggregatedStatus table represent?](#what-does-the-data-in-ucdoaggregatedstatus-table-represent)
   - [How are BytesFromCache calculated when there's a Connected Cache server used by my ISP?](#how-are-bytesfromcache-calculated-when-there-s-a-connected-cache-server-used-by-my-isp)
-  - [How do the results from the Delivery Optimization PowerShell cmdlets compare to the results in the report?](#how-do-the-results-from-the-delivery-optimization-powershell-cmdlets-compare-to-the-results-in-the-report?)
-  - [The report represents the last 28 days of data, why do some queries include >= seven days?](#the-report-represents-the-last-28-days-of-data--why-do-some-queries-include---seven-days)  
+  - [How do the results from the Delivery Optimization PowerShell cmdlets compare to the results in the report?](#how-do-the-results-from-the-delivery-optimization-powershell-cmdlets-compare-to-the-results-in-the-report)
+  - [The report represents the last 28 days of data, why do some queries include >= seven days?](#the-report-represents-the-last-28-days-of-data--why-do-some-queries-include----seven-days)  
 
 sections:
   - name: General
@@ -63,6 +64,9 @@ sections:
       - question: What Windows versions are supported?
         answer: |
           Windows Update for Business reports supports clients running a [supported version of Windows 10 or Windows 11](/windows/release-health/supported-versions-windows-client) Professional, Education, Enterprise, and Enterprise multi-session editions. Windows Update for Business reports only provides data for the standard Desktop Windows client version and isn't currently compatible with Windows Server, Surface Hub, IoT, or other versions.
+
+  - name: Setup questions
+    questions:
       - question: How do you setup Windows Update for Business reports?
         answer: |
           After verifying the [prerequisites](wufb-reports-prerequisites.md) are met, you can start to set up Windows Update for Business reports. 
@@ -76,9 +80,7 @@ sections:
           1. Configure the clients to send data to Windows Update for Business reports. You can configure clients in the following three ways:
               - Use a [script](wufb-reports-configuration-script.md)
               - Use [Microsoft Intune](wufb-reports-configuration-intune.md)
-              - Configure [manually](wufb-reports-configuration-manual.md)          
-  - name: Setup issues
-    questions:
+              - Configure [manually](wufb-reports-configuration-manual.md)    
       - question: Why is `Waiting for Windows Update for Business reports data` displayed on the page?
         answer: |
           Typically, the **Waiting for Windows Update for Business reports data** message is displayed because: 
@@ -99,6 +101,7 @@ sections:
           - CSP: [System/AllowDeviceNameInDiagnosticData](/windows/client-management/mdm/policy-csp-system#allowdevicenameindiagnosticdata)
           - Group Policy: Allow device name to be sent in Windows diagnostic data
             - Located in **Computer Configuration** > **Administrative Templates** > **Windows Components** >**Data Collection and Preview Builds**
+          It can take up to 21 days for all device names to show in up in reports assuming they are powered on and active.
       - question: Why am I missing devices in reports?
         answer: |
           Here are some reasons why you may not be seeing devices in reports:
@@ -109,10 +112,10 @@ sections:
           - **The workbook has limited the results**: The default limit for rows in Azure workbooks is set to 1000. This is to avoid any delay in the load time for the interface. If you noticed that you can't find a specific device, you can export the output in Excel, or open the results in the logs view for the full result by selecting the three dots beside each component.
       - question: Why are there multiple records for the same device?
         answer: |
-          Devices will have multiple records when the UCClientUpdateStatus or UCClientServiceStatus tables are queried. These tables contain multiple records because they have the history for all devices that have discovered applicable updates within the past 28 days. For example, it's possible that a device has discovered multiple security updates, each with different update states, at various times over the past 28 days.   
+          Devices will have multiple records when the UCClientUpdateStatus or UCClientServiceStatus tables are queried. These tables contain multiple records because they have the history for all devices that have discovered applicable updates within the past 28 days. For example, it's possible that a device has discovered multiple security updates, each with different update states, at various times over the past 28 days. It's also possible that a device can be in multiple deployments, so multiple records are displayed.    
       - question: What is the difference between OS version and target version?
         answer: |
-          The word *target* in data labels refers to the update version, build or KB the client is actively being updated to. Typically, the fields starting with *OS*, such as OSbuild and OSversion, represents what the device is currently running.
+          The word *target* in data labels refers to the update version, build or KB the client intends to update to. Typically, the fields starting with *OS*, such as OSbuild and OSversion, represents what the device is currently running.
       - question: When should I use the UCClient, UCClientUpdateStatus, or UCUpdateAlert tables?
         answer: |
           These tables can be used for the following information:
@@ -123,7 +126,7 @@ sections:
             - To display all device records for devices running any Windows 11 OS version:</br>
               `UCClient | where OSVersion contains "Windows 11"`
 
-          - **UCClientUpdateStatus**: Contains records for every update the device determined was applicable. There can be multiple records for a device if it's discovered multiple applicable updates in the past 60 days. Use this table if you want to get detailed update status for your active deployments.     
+          - **UCClientUpdateStatus**: Contains records for every update the device determined was applicable. There can be multiple records for a device if it's discovered multiple applicable updates in the past 60 days. Use this table if you want to get detailed update status for your active deployments. There will typically be 3 update status records per device for the latest 3 security updates.    
             - To find device records for devices that determined the March 14, 2023 update was applicable:</br>
               `UCClientUpdateStatus | where UpdateCategory =="WindowsQualityUpdate" and UpdateReleaseTime == "3/14/2023"`  
             - To display devices that are in the restart required substate:</br>
