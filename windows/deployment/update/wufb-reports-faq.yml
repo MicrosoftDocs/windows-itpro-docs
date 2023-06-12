@@ -21,7 +21,7 @@ summary: |
 
   **Setup questions**:
 
-  - [How do you set up Windows Update for Business reports?](#how-do-you-setup-windows-update-for-business-reports)
+  - [How do you set up Windows Update for Business reports?](#how-do-you-set-up-windows-update-for-business-reports)
   - [Why is "Waiting for Windows Update for Business reports data" displayed on the page](#why-is--waiting-for-windows-update-for-business-reports-data--displayed-on-the-page)
   - [Why am I getting the error "400 Bad Request: The specified resource already exists"?](#why-am-i-getting-the-error--400-bad-request--the-specified-resource-already-exists-)
   - [Why am I getting the error "400 Bad Request: Identifier must be GUID"?](#why-am-i-getting-the-error--400-bad-request--identifier-must-be-guid-)
@@ -32,7 +32,7 @@ summary: |
   - [Why am I missing devices in reports?](#why-am-i-missing-devices-in-reports)
   - [What is the difference between OS version and target version?](#what-is-the-difference-between-os-version-and-target-version)
   - [Why are there multiple records for the same device?](#why-are-there-multiple-records-for-the-same-device)
-  - [When should I use the **UCClient**, UCClientUpdateStatus, or UCUpdateAlert tables?](#when-should-i-use-the-ucclient--ucclientupdatestatus--or-ucupdatealert-tables)
+  - [When should I use the UCClient, UCClientUpdateStatus, or UCUpdateAlert tables?](#when-should-i-use-the-ucclient--ucclientupdatestatus--or-ucupdatealert-tables)
   - [What is the difference between quality and security updates?](#what-is-the-difference-between-quality-and-security-updates)
   - [How do I confirm that devices are sending data?](#how-do-i-confirm-that-devices-are-sending-data)
   - [Why isn't the workbook displaying data even though my UCClient table has data?](#why-isn-t-the-workbook-displaying-data-even-though-my-ucclient-table-has-data)
@@ -115,7 +115,7 @@ sections:
       - question: What is the difference between OS version and target version?
         answer: |
           The word *target* in data labels refers to the update version, build or KB the client intends to update to. Typically, the fields starting with *OS*, such as OSbuild and OSversion, represents what the device is currently running.
-      - question: When should I use the `UCClient`, `UCClientUpdateStatus`, or `UCUpdateAlert` tables?
+      - question: When should I use the UCClient, UCClientUpdateStatus, or UCUpdateAlert tables?
         answer: |
           These tables can be used for the following information:
 
