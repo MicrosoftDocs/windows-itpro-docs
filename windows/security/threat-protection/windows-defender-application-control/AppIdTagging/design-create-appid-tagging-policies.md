@@ -35,9 +35,14 @@ You can use the Windows Defender Application Control (WDAC) Wizard and the Power
 
 1. Create a new base policy using the templates:
 
-	Start with the Policy Creator task and select Multiple Policy Format and Base Policy. Select the Base Template to use for the policy. The example below shows beginning with the [Default Windows Mode](../wdac-wizard-create-base-policy.md#template-base-policies) template and build on top of these rules. 
+	Start with the Policy Creator task and select Multiple Policy Format and Base Policy. Select the Base Template to use for the policy. The following example shows beginning with the [Default Windows Mode](../wdac-wizard-create-base-policy.md#template-base-policies) template and build on top of these rules. 
 
 	![Configuring the policy base and template.](../images/appid-wdac-wizard-1.png)
+	
+	> [!NOTE]
+	> If your AppId Tagging Policy does build off the base templates or does not allow Windows in-box processes, you will notice significant performance regressions, especially during boot. For this reason, it is strongly recommended to build off the base templates. 
+	For more information on the issue, see the [AppId Tagging Known Issue](../operations/known-issues.md#slow-boot-and-performance-with-custom-policies).
+
 
 2. 	Set the following rule-options using the Wizard toggles:
 
@@ -45,7 +50,7 @@ You can use the Windows Defender Application Control (WDAC) Wizard and the Power
 
 3. Create custom rules:
 
-	Selecting the `+ Custom Rules` button will open the Custom Rules panel. The Wizard supports five types of file rules: 
+	Selecting the `+ Custom Rules` button opens the Custom Rules panel. The Wizard supports five types of file rules: 
 
 	- Publisher rules: Create a rule based off the signing certificate hierarchy. Additionally, the original filename and version can be combined with the signing certificate for added security. 
 	- Path rules: Create a rule based off the path to a file or a parent folder path. Path rules support wildcards. 
@@ -58,16 +63,16 @@ You can use the Windows Defender Application Control (WDAC) Wizard and the Power
 
 4. Convert to AppId Tagging Policy:
 
-	After the Wizard builds the policy file, open the file in a text editor and remove the entire "Value=131" SigningScenario text block. The only remaining signing scenario should be "Value=12" which is the usermode application section. Next, open PowerShell in an elevated prompt and run the following command. Replace the AppIdTagging Key-Value pair for your scenario:
+	After the Wizard builds the policy file, open the file in a text editor and remove the entire "Value=131" SigningScenario text block. The only remaining signing scenario should be "Value=12" which is the user mode application section. Next, open PowerShell in an elevated prompt and run the following command. Replace the AppIdTagging Key-Value pair for your scenario:
 
 	```powershell
 	Set-CIPolicyIdInfo -ResetPolicyID -FilePath .\AppIdPolicy.xml -AppIdTaggingPolicy -AppIdTaggingKey "MyKey" -AppIdTaggingValue "MyValue"
 	```
-	The policyID GUID will be returned by PowerShell if successful. 
+	The policyID GUID is returned by the PowerShell command if successful. 
 
 ## Create the policy using PowerShell 
 
-Using this method, you'll create an AppId Tagging policy directly using the WDAC PowerShell commands. These PowerShell commands are only available on the supported platforms listed in [AppId Tagging Guide](./windows-defender-application-control-appid-tagging-guide.md). In an elevate PowerShell instance:
+Using this method, you create an AppId Tagging policy directly using the WDAC PowerShell commands. These PowerShell commands are only available on the supported platforms listed in [AppId Tagging Guide](./windows-defender-application-control-appid-tagging-guide.md). In an elevate PowerShell instance:
 
 1. Create an AppId rule for the policy based on a combination of the signing certificate chain and version of the application. In the example below, the level has been set to SignedVersion. Any of the [WDAC File Rule Levels](../select-types-of-rules-to-create.md#table-2-windows-defender-application-control-policy---file-rule-levels) can be used in AppId rules:
 
@@ -87,14 +92,14 @@ Using this method, you'll create an AppId Tagging policy directly using the WDAC
 	Set-RuleOption -Option 18 .\AppIdPolicy.xml # (Optional) Disable FilePath Rule Protection
 	```
 
-	If you're using filepath rules, you'll likely want to set option 18. Otherwise, there's no need. 
+	If you're using filepath rules, you may want to set option 18. Otherwise, there's no need. 
 	
 4. Set the name and ID on the policy, which is helpful for future debugging:
 
 	```powershell
 	Set-CIPolicyIdInfo -ResetPolicyId -PolicyName "MyPolicyName" -PolicyId "MyPolicyId"" -AppIdTaggingPolicy -FilePath ".\AppIdPolicy.xml"
 	```
-	The policyID GUID will be returned by PowerShell if successful. 
+	The policyID GUID is returned by the PowerShell command if successful. 
 
 ## Deploy for Local Testing
 
