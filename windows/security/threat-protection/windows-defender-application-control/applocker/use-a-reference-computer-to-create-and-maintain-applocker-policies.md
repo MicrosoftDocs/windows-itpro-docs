@@ -1,16 +1,11 @@
 ---
-title: Use a reference device to create and maintain AppLocker policies 
+title: Use a reference device to create and maintain AppLocker policies
 description: This topic for the IT professional describes the steps to create and maintain AppLocker policies by using a reference computer.
-ms.assetid: 10c3597f-f44c-4c8e-8fe5-105d4ac016a6
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.reviewer: 
@@ -18,12 +13,6 @@ ms.technology: itpro-security
 ---
 
 # Use a reference device to create and maintain AppLocker policies
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -36,7 +25,7 @@ An AppLocker reference device is a baseline device you can use to configure poli
 
 An AppLocker reference device that is used to create and maintain AppLocker policies should contain the corresponding apps for each organizational unit (OU) to mimic your production environment.
 
->**Important:**  The reference device must be running one of the supported editions of Windows. For information about operating system requirements for AppLocker, see [Requirements to use AppLocker](requirements-to-use-applocker.md).
+>**Important:**  The reference device must be running one of the supported editions of Windows. For information about operating system requirements for AppLocker, see [Requirements to use AppLocker](requirements-to-use-applocker.md).
  
 You can perform AppLocker policy testing on the reference device by using the **Audit only** enforcement setting or Windows PowerShell cmdlets. You can also use the reference device as part of a testing configuration that includes policies that are created by using Software Restriction Policies.
 
@@ -44,13 +33,13 @@ You can perform AppLocker policy testing on the reference device by using the **
 
 With AppLocker, you can automatically generate rules for all files within a folder. AppLocker scans the specified folder and creates the condition types that you choose for each file in that folder. For information on how to automatically generate rules, see [Run the Automatically Generate Rules wizard](run-the-automatically-generate-rules-wizard.md).
 
->**Note:**  If you run this wizard to create your first rules for a Group Policy Object (GPO), after you complete the wizard, you will be prompted to create the default rules, which allow critical system files to run. You can edit the default rules at any time. If your organization has decided to edit the default rules or create custom rules to allow the Windows system files to run, ensure that you delete the default rules after you replace them with your custom rules.
+>**Note:**  If you run this wizard to create your first rules for a Group Policy Object (GPO), after you complete the wizard, you will be prompted to create the default rules, which allow critical system files to run. You can edit the default rules at any time. If your organization has decided to edit the default rules or create custom rules to allow the Windows system files to run, ensure that you delete the default rules after you replace them with your custom rules.
  
 ## Step 2: Create the default rules on the reference device
 
 AppLocker includes default rules for each rule collection. These rules are intended to help ensure that the files that are required for Windows to operate properly are allowed in an AppLocker rule collection. You must run the default rules for each rule collection. For info about default rules and considerations for using them, see [Understanding AppLocker default rules](understanding-applocker-default-rules.md). For the procedure to create default rules, see [Create AppLocker default rules](create-applocker-default-rules.md).
 
->**Important:**  You can use the default rules as a template when you create your own rules. This allows files within the Windows directory to run. However, these rules are only meant to function as a starter policy when you are first testing AppLocker rules.
+>**Important:**  You can use the default rules as a template when you create your own rules. This allows files within the Windows directory to run. However, these rules are only meant to function as a starter policy when you are first testing AppLocker rules.
  
 ## Step 3: Modify rules and the rule collection on the reference device
 
@@ -72,7 +61,7 @@ You should test each set of rules to ensure that they perform as intended. The *
 -   [Test an AppLocker Policy with Test-AppLockerPolicy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee791772(v=ws.10))
 -   [Discover the Effect of an AppLocker Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee791823(v=ws.10))
 
->**Caution:**  If you have set the enforcement setting on the rule collection to **Enforce rules** or you have not configured the rule collection, the policy will be implemented when the GPO is updated in the next step. If you have set the enforcement setting on the rule collection to **Audit only**, application access events are written to the AppLocker log, and the policy will not take effect.
+>**Caution:**  If you have set the enforcement setting on the rule collection to **Enforce rules** or you have not configured the rule collection, the policy will be implemented when the GPO is updated in the next step. If you have set the enforcement setting on the rule collection to **Audit only**, application access events are written to the AppLocker log, and the policy will not take effect.
  
 ## Step 5: Export and import the policy into production
 
