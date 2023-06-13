@@ -19,10 +19,15 @@ appliesto:
       [**Validate the application**](validate-apps.md)
    :::column-end:::
    :::column span="":::
-    :::image type="icon" source="images/phase-3-on.svg" border="false":::<br>
+    :::image type="icon" source="images/phase-3-on.svg" border="false" link:::<br>
       [**Create additional policies (optional)**](create-policies.md)
    :::column-end:::
+   :::column span="":::
+    <a href="create-policies.md"><img src="images/phase-3-on.svg"/></a><br>
+      [**Create additional policies 2 (optional)**](create-policies.md)
+   :::column-end:::
 :::row-end:::
+
 
 You can create AppLocker policies to allow apps that are [semi-compatible](./validate-apps.md#semi-compatible-apps) or [incompatible](./validate-apps.md#incompatible-apps) with the managed installer to run.
 
