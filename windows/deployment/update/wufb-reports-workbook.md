@@ -6,7 +6,7 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.topic: article
-ms.date: 04/26/2023
+ms.date: 06/12/2023
 ms.technology: itpro-updates
 ---
 
@@ -79,17 +79,16 @@ Below the tiles, the **Quality updates** tab is subdivided into **Update status*
 
 The **Update status** group for quality updates contains the following items:
 
-- **Update states for all security releases**: Chart containing the number of devices in a specific state, such as installing, for security updates.
+- **Update states for all security releases**: The update states for the last 3 security updates are used to populate this chart. The total number of update states is approximately 3 times the number of devices that have reported update data to Windows Update for Business reports in the past 30 days.
 - **Update alerts for all security releases**: Chart containing the count of active errors and warnings for security updates.
 
-:::image type="content" source="media/33771278-update-deployment-status-table.png" alt-text="Screenshot of the charts and table in the workbook's quality updates tab" lightbox="media/33771278-update-deployment-status-table.png":::
 
 The **Update deployment status** table displays the quality updates for each operating system version that were released within the last 60 days. For each update, drill-in further by selecting a value from the following columns:
 
 | Column name | Description | Drill-in description |
 |---|---|---|
 |**Alerts**| Number of different error codes encountered by devices for the update. | Selecting this number lists the alert name for each error code and a count of devices with the error. Select the device count to display a list of devices that have an active alert for the error code.  
-| **KB Number** | KB number for the update |  Selecting the KB number will open the support information webpage for the update.|
+| **KB Number** | KB number for the update |  Selecting the KB number opens the support information webpage for the update.|
 | **Total devices** | Number of devices that have been offered the update, or are installing, have installed, or canceled the update. | Selecting the device count opens a device list table. This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).  |
 
 ### <a name="bkmk_device-group-quality"></a> Device status group for quality updates
@@ -120,7 +119,7 @@ The **Update status** group for feature updates contains the following items:
 - **Safeguard holds**: Chart containing count of devices per operating system version that are under a safeguard hold for a feature update
 - **Update alerts**: Chart containing the count of active errors and warnings for feature updates.
 
-**Update deployment status** table for feature updates displays the installation status by targeted operating system version. For each operating system version targeted the following columns are available:
+**Update deployment status** table for feature updates displays the installation status by targeted operating system version. For each operating system version targeted, the following columns are available:
 
 | Column name | Description | Drill-in description |
 |---|---|---|

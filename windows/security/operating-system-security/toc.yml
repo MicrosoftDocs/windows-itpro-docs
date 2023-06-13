@@ -1,6 +1,6 @@
 items:
 - name: Overview
-  href: ../operating-system.md
+  href: index.md
 - name: System security
   href: system-security/toc.yml
 - name: Virus and threat protection

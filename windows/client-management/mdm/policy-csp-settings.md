@@ -4,7 +4,7 @@ description: Learn more about the Settings Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 06/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -735,14 +735,14 @@ showonly:about;bluetooth.
 Example: to specify that only the Bluetooth page (which has URI ms-settings:bluetooth) should be hidden:
 
 hide:bluetooth.
-
-The availability of per-user support is documented here: <https://go.microsoft.com/fwlink/?linkid=2102995>
 <!-- PageVisibilityList-Description-End -->
 
 <!-- PageVisibilityList-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-
 For more information on the URI reference scheme used for the various pages of the System Settings app, see [ms-settings: URI scheme reference](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference).
+
+> [!WARNING]
+> In Windows 11, version 22H2 and later, when you configure this policy to hide any pages that contain `quietmoments` in the URI (for example, `ms-settings:quietmomentsgame`), the Notifications page under System category is hidden.
 
 To validate this policy, use the following steps:
 

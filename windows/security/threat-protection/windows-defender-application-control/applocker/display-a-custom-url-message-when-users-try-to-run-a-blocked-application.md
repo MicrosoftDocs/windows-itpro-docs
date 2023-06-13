@@ -1,29 +1,18 @@
 ---
-title: Display a custom URL message when users try to run a blocked app 
+title: Display a custom URL message when users try to run a blocked app
 description: This topic for IT professionals describes the steps for displaying a customized message to users when an AppLocker policy denies access to an app.
-ms.assetid: 9a2534a5-d1fa-48a9-93c6-989d4857cf85
 ms.reviewer: 
 ms.author: vinpa
-ms.pagetype: security
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # Display a custom URL message when users try to run a blocked app
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -32,7 +21,7 @@ This topic for IT professionals describes the steps for displaying a customized 
 
 With the help of Group Policy, AppLocker can be configured to display a message with a custom URL. You can use this URL to redirect users to a support site that contains info about why the user received the error and which apps are allowed. If you don't display a custom message when an app is blocked, the default access denied message is displayed.
 
-To complete this procedure, you must have the **Edit Setting** permission to edit a GPO. By default, members of the **Domain Admins** group, the **Enterprise Admins** group, and the **Group Policy Creator Owners** group have this permission.
+To complete this procedure, you must have the **Edit Setting** permission to edit a GPO. By default, members of the **Domain Admins** group, the **Enterprise Admins** group, and the **Group Policy Creator Owners** group have this permission.
 
 **To display a custom URL message when users try to run a blocked app**
 

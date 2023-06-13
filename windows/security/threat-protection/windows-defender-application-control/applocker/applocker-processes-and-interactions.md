@@ -1,29 +1,18 @@
 ---
-title: AppLocker processes and interactions 
+title: AppLocker processes and interactions
 description: This topic for the IT professional describes the process dependencies and interactions when AppLocker evaluates and enforces rules.
-ms.assetid: 0beec616-6040-4be7-8703-b6c919755d8e
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # AppLocker processes and interactions
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
