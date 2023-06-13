@@ -159,10 +159,10 @@ The blocklist policy that follows includes "Allow all" rules for both kernel and
     <Deny ID="ID_DENY_DOTNET" FriendlyName="dotnet.exe" FileName="dotnet.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_FSI" FriendlyName="fsi.exe" FileName="fsi.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_FSI_ANYCPU" FriendlyName="fsiAnyCpu.exe" FileName="fsiAnyCpu.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
-    <Deny ID="ID_DENY_HVCISCAN_AMD_1" FriendlyName="HVCIScan.exe with missing resources Hash Sha1" Hash="424823CD625834C05D55C7B825B0D8059D589748" />
-    <Deny ID="ID_DENY_HVCISCAN_AMD_2" FriendlyName="HVCIScan.exe with missing resources  Hash Sha256" Hash="4968BA3E491CF6471C5D1C6CBECE84294012298D8EB6D32C03E476892F34279C" />
-    <Deny ID="ID_DENY_HVCISCAN_AMD_3" FriendlyName="HVCIScan.exe with missing resources  Hash Page Sha1" Hash="FCFA167F5F1FC88E0886132AB0B2E0C32B4B1BF5" />
-    <Deny ID="ID_DENY_HVCISCAN_AMD_4" FriendlyName="HVCIScan.exe with missing resources  Hash Page Sha256" Hash="283F6E8998E7A20C68FFD8715E6F130EC7648055285883686336F5711DB1C978" />
+    <Deny ID="ID_DENY_HVCISCAN_AMD_1" FriendlyName="HVCIScan.exe with missing resources AMD Hash Sha1" Hash="424823CD625834C05D55C7B825B0D8059D589748" />
+    <Deny ID="ID_DENY_HVCISCAN_AMD_2" FriendlyName="HVCIScan.exe with missing resources AMD Hash Sha256" Hash="4968BA3E491CF6471C5D1C6CBECE84294012298D8EB6D32C03E476892F34279C" />
+    <Deny ID="ID_DENY_HVCISCAN_AMD_3" FriendlyName="HVCIScan.exe with missing resources AMD Hash Page Sha1" Hash="FCFA167F5F1FC88E0886132AB0B2E0C32B4B1BF5" />
+    <Deny ID="ID_DENY_HVCISCAN_AMD_4" FriendlyName="HVCIScan.exe with missing resources AMD Hash Page Sha256" Hash="283F6E8998E7A20C68FFD8715E6F130EC7648055285883686336F5711DB1C978" />
     <Deny ID="ID_DENY_INFINSTALL" FriendlyName="infdefaultinstall.exe" FileName="infdefaultinstall.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_INSTALLUTIL" FriendlyName="Microsoft InstallUtil" FileName="InstallUtil.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_KD" FriendlyName="kd.exe" FileName="kd.Exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
