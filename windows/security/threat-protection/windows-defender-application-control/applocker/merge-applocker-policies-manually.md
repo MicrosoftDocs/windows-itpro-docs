@@ -1,29 +1,18 @@
 ---
-title: Merge AppLocker policies manually 
+title: Merge AppLocker policies manually
 description: This topic for IT professionals describes the steps to manually merge AppLocker policies to update the Group Policy Object (GPO).
-ms.assetid: 3605f293-e5f2-481d-8efd-775f9f23c30f
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # Merge AppLocker policies manually
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).

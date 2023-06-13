@@ -11,17 +11,19 @@ ms.technology: itpro-updates
 ---
 
 # Delivery Optimization data in Windows Update for Business reports
+
 <!--7715481-->
 ***(Applies to: Windows 11 & Windows 10)***
 
-[Delivery Optimization](../do/waas-delivery-optimization.md) (DO) is a Windows feature that can be used to reduce bandwidth consumption by sharing the work of downloading updates among multiple devices in your environment. You can use DO with many other deployment methods, but it's a cloud-managed solution, and access to the DO cloud services is a requirement. 
+[Delivery Optimization](../do/waas-delivery-optimization.md) (DO) is a Windows feature that can be used to reduce bandwidth consumption by sharing the work of downloading updates among multiple devices in your environment. You can use DO with many other deployment methods, but it's a cloud-managed solution, and access to the DO cloud services is a requirement.
 
 Windows Update for Business reports provides Delivery Optimization information in the following places:
+
 - The Windows Update for Business reports [workbook](wufb-reports-workbook.md)
 - [UCDOAggregatedStatus](wufb-reports-schema-ucdoaggregatedstatus.md)
 - [UCDOStatus](wufb-reports-schema-ucdostatus.md)
 
-Windows Update for Business reports doesn't include Delivery Optimization data for Windows Insider devices. 
+Windows Update for Business reports doesn't include Delivery Optimization data for Windows Insider devices.
 
 ## Delivery Optimization terms
 
@@ -29,23 +31,24 @@ Windows Update for Business reports uses the following Delivery Optimization ter
 
 - **Peer**: A device in the solution
 - **Peering 'ON'** - Devices where DO peer-to-peer is enabled in one of the following modes:
-   - LAN (1)
-   - Group (2)
-   - Internet (3)
+  - LAN (1)
+  - Group (2)
+  - Internet (3)
+  
 - **Peering 'OFF'**: Devices where DO peer-to-peer is disabled, set to one of the following modes:
-   - HTTP Only (0)
-   - Simple Mode (99)
-   - Bypass (100), deprecated in Windows 11
+  - HTTP Only (0)
+  - Simple Mode (99)
+  - Bypass (100), deprecated in Windows 11
 - **Bandwidth savings**: The percentage of bandwidth that was downloaded from alternate sources (Peers or Microsoft Connected Cache (MCC) out of the total amount of data downloaded.
-   - If bandwidth savings are <= 60%, a *Warning* icon is displayed
-   - When bandwidth savings are <10%, an *Error* icon is displayed.
+- If bandwidth savings are <= 60%, a *Warning* icon is displayed
+- When bandwidth savings are <10%, an *Error* icon is displayed.
 - **Configurations**: Based on the DownloadMode configuration set via MDM, Group Policy, or end-user via the user interface.
 - **P2P Device Count**: The device count is the number of devices configured to use peering.
 - **Microsoft Connected Cache (MCC)**: Microsoft Connected Cache is a software-only caching solution that delivers Microsoft content. For more information, see [Microsoft Connected Cache overview](../do/waas-microsoft-connected-cache.md).
 - **MCC Device Count**: The device count is the number of devices that have received bytes from the cache server, for supported content types.
 - **Total # of Devices**: The total number of devices with activity in last 28 days.
 - **LAN Bytes**: Bytes delivered from LAN peers.
-- **Group Bytes**: Bytes from Group peers. If a device is using Group DownloadMode, Delivery Optimization will first look for peers on the LAN and then in the Group. Therefore, if bytes are delivered from LAN peers, they'll be calculated in 'LAN Bytes'.
+- **Group Bytes**: Bytes from Group peers. If a device is using Group DownloadMode, Delivery Optimization first looks for peers on the LAN and then in the Group. Therefore, if bytes are delivered from LAN peers, they are calculated in 'LAN Bytes'.
 - **CDN Bytes**: Bytes delivered from Content Delivery Network (CDN).
 - **City**: City is determined based on the location of the device where the maximum amount of data is downloaded.
 - **Country**: Country is determined based on the location of the device where the maximum amount of data is downloaded.
@@ -53,16 +56,16 @@ Windows Update for Business reports uses the following Delivery Optimization ter
 
 ## Calculations for Delivery Optimization
 
-There are several calculated values that appear on the Delivery Optimization report. Listed below each calculation is the table that's used for it:
+Each calculated values used in the Delivery Optimization report are listed below.
 
 **Efficiency (%) Calculations**:
- 
+
 - Bandwidth Savings (BW SAV%) = 100 * (BytesFromPeers + BytesFromGroupPeers + BytesFromCache) /
 (BytesFromPeers + BytesFromGroupPeers+BytesFromCDN + BytesFromCache)
   - [UCDOAggregatedStatus](wufb-reports-schema-ucdostatus.md) table
 - % P2P Efficiency = 100 * (BytesFromPeers + BytesFromGroupPeers) / (BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache)
   - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
-- % MCC Efficiency = 100 * BytesFromCache / (BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache) 
+- % MCC Efficiency = 100 * BytesFromCache / (BytesFromPeers + BytesFromGroupPeers+BytesFromCDN+BytesFromCache)
   - [UCDOStatus](wufb-reports-schema-ucdostatus.md) table
 
 **Bytes Calculations**:
@@ -92,7 +95,7 @@ There are several calculated values that appear on the Delivery Optimization rep
 In the **Efficiency By Group** subsection, the **GroupID** is displayed as an encoded SHA256 hash. You can create a mapping of original to encoded GroupIDs using the following PowerShell example:
 
 ```powershell
-$text = "<myEncodedGroupID>`0"; (the null-terminator (`0) must be included in the string hash)
+$text = "<myOriginalGroupID>" ;
 
 $hashObj = [System.Security.Cryptography.HashAlgorithm]::Create('sha256') ; $dig = $hashObj.ComputeHash([System.Text.Encoding]::Unicode.GetBytes($text)) ; $digB64 = [System.Convert]::ToBase64String($dig) ; Write-Host "$text ==> $digB64"
 ```
@@ -106,8 +109,8 @@ Get-DeliveryOptimizationLog -Flush | Set-Content C:\dosvc.log
 The below two lines are together in verbose logs:
 
 ```text
-2023-02-15T12:33:11.3811337Z 1514  1F4          {CGlobalConfigManager::GetGroupId} Using groupID = **<myEncodedGroupId>**
-2023-02-15T12:33:11.3811432Z 1514  1F4          {CGlobalConfigManager::GetGroupId} Hashed groupID = **<myDecodedGroupId>**
+2023-02-15T12:33:11.3811337Z 1514  1F4          {CGlobalConfigManager::GetGroupId} Using groupID = **<myOriginalGroupId>**
+2023-02-15T12:33:11.3811432Z 1514  1F4          {CGlobalConfigManager::GetGroupId} Hashed groupID = **<myEncodedGroupId>**
 ```
 
 ## Sample queries
@@ -142,6 +145,19 @@ DeviceCount = count_distinct(GlobalDeviceId) by GroupID | top 10 by DeviceCount 
 | project  GroupID , P2PPercentage , MCCPercentage ,  VolumeBytesFromPeers , VolumeBytesFromMCC ,VolumeByCDN , DeviceCount
 ```
 
+### Delivery Optimization Supported Content Types
+
+There are many Microsoft [content types](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization) that are supported by Delivery Optimization. All of these content types show up in the 'Content Distribution' section in the Delivery Optimization report. See the [complete table](waas-delivery-optimization.md#windows-client) for P2P/MCC support types.
+
+| Content Category | Content Types Included |
+| --- | --- |
+| Apps | Windows 10 Store apps,  Windows 10 Store for Business apps, Windows 11 UWP Store apps |
+| Driver Updates | Windows Update [Driver updates](get-started-updates-channels-tools.md#types-of-updates) |
+| Feature Updates | Windows Update [Feature updates](get-started-updates-channels-tools.md#types-of-updates) |
+| Office | Microsoft 365 Apps and updates |
+| Other | Windows Language Packs, Windows Defender definition updates, Intune Win32 apps, Edge Browser updates, Configuration Manager Express updates, Dynamic updates, MDM Agent, Xbox Game Pass (PC), Windows Package Manager, MSIX Installer (includes Windows 11 Store Win32 apps, Windows 11 Teams updates) |
+| Quality Updates | Windows Updates [Quality updates](get-started-updates-channels-tools.md#types-of-updates)) |
+
 ## Frequency Asked Questions
 
 - **What time period does the Delivery Optimization data include?**
@@ -157,13 +173,19 @@ The top groups are represented by the number of devices in a particular group, f
 The GroupID values are encoded for data protection telemetry requirements. You can find more information in the 'Mapping GroupIDs' section above.
 
 - **How can I see data for device in the office vs. out of the office?**
-Today, we don't have a distinction for data that was downloaded by location. 
+Today, we don't have a distinction for data that was downloaded by location.
 
 - **What does the data in UCDOStatus table represent?**
-A row in UCDOStatus represents data downloaded by a combination of a single device ID (AzureADDeviceId) by content type (ContentType). 
+A row in UCDOStatus represents data downloaded by a combination of a single device ID (AzureADDeviceId) by content type (ContentType).
 
 - **What does the data in UCDOAggregatedStatus table represent?**
 A row in UCDOAggregatedStatus represents data summarized at the tenant level (AzureADTenantID) for each content type (ContentType).
 
 - **How are BytesFromCache calculated when there's a Connected Cache server used by my ISP?**
-If there's a Connected Cache server at the ISP level, BytesFromCache will filter out any bytes coming the ISP's Connected Cache.
+If there's a Connected Cache server at the ISP level, BytesFromCache filters out any bytes coming the ISP's Connected Cache.
+
+- **How do the results from the Delivery Optimization PowerShell cmdlets compare to the results in the report?**
+[Delivery Optimization PowerShell cmdlets](waas-delivery-optimization-setup.md#monitor-delivery-optimization) can be a powerful tool used to monitor Delivery Optimization data on the device. These cmdlets use the cache on the device. The data calculated in the report is taken from the Delivery Optimization telemetry events.
+
+- **The report represents the last 28 days of data, why do some queries include >= seven days?**
+The data in the report does represent the last 28 days of data. The query for last seven days is just to get the data for the latest snapshot from past seven days. It's possible that data is delayed for sometime and not available for current day, so we look for past 7 day snapshot in log analytics and show the latest snapshot.

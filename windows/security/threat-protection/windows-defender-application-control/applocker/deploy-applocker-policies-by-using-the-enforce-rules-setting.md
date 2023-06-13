@@ -1,29 +1,18 @@
 ---
-title: Deploy AppLocker policies by using the enforce rules setting 
+title: Deploy AppLocker policies by using the enforce rules setting
 description: This topic for IT professionals describes the steps to deploy AppLocker policies by using the enforcement setting method.
-ms.assetid: fd3a3d25-ff3b-4060-8390-6262a90749ba
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # Deploy AppLocker policies by using the enforce rules setting
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -51,7 +40,7 @@ Rule enforcement is applied only to a collection of rules, not to individual rul
 You can edit an AppLocker policy by adding, changing, or removing rules. However, you can't specify a version for the AppLocker policy by importing more rules. To ensure version control when modifying an AppLocker policy, use Group Policy management software that allows you to create versions of GPOs. An example of this type of software is the [Advanced Group Policy Management](https://go.microsoft.com/fwlink/p/?LinkId=145013) feature from the 
 Microsoft Desktop Optimization Pack.
 
->**Caution:**  You should not edit an AppLocker rule collection while it is being enforced in Group Policy. Because AppLocker controls what files are allowed to run, making changes to a live policy can create unexpected behavior.
+>**Caution:**  You should not edit an AppLocker rule collection while it is being enforced in Group Policy. Because AppLocker controls what files are allowed to run, making changes to a live policy can create unexpected behavior.
  
 For the procedure to update the GPO, see [Import an AppLocker policy into a GPO](import-an-applocker-policy-into-a-gpo.md).
 
@@ -64,5 +53,3 @@ When a policy is deployed, it's important to monitor the actual implementation o
 ## Other resources
 
 -   For steps to perform other AppLocker policy tasks, see [Administer AppLocker](administer-applocker.md).
- 
- 
