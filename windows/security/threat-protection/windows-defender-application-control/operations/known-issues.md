@@ -98,3 +98,16 @@ msiexec –i c:\temp\Windows10_Version_1511_ADMX.msi
 ### Slow boot and performance with custom policies
 
 WDAC will evaluate all running processes, including inbox Windows processes. If policies don't build off the WDAC templates or don't trust the Windows signers, you'll see slower boot times, degraded performance and possibly boot issues. For these reasons, it's strongly recommended to build off the [WDAC base templates](../example-wdac-base-policies.md). 
+
+#### AppId Tagging policy considerations
+
+If the AppId Tagging Policy wasn't built off the WDAC base templates or doesn't allow the Windows in-box signers, you'll notice a significant increase in boot times (~2 minutes). 
+
+If you can't allowlist the Windows signers, or build off the WDAC base templates, it is strongly recommended to add the following rule to your policies to improve the performance:
+
+![Allow all DLLs in the policy.](../images/appid-DLL-rule.png) 
+
+![Allow all DLLs in the XML policy.](../images/appid-DLL-rule-xml.png)
+
+
+Since AppId Tagging policies evaluate but can't tag DLLs, this rule will short circuit DLL evaluation and improve evaluation performance.
