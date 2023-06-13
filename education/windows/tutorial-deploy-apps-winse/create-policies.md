@@ -11,19 +11,15 @@ appliesto:
 
 :::row:::
    :::column span="":::
-    :::image type="icon" source="images/phase-1-off.svg" border="false":::<br>
+    <a href="create-policies.md"><img src="images/phase-1-off.svg"" alt="Icon representing the first phase."/></a><br>
       [**Deploy an application via Microsoft Intune**](deploy-apps.md)
    :::column-end:::
    :::column span="":::
-    :::image type="icon" source="images/phase-2-off.svg" border="false":::<br>
+    <a href="create-policies.md"><img src="images/phase-2-off.svg"" alt="Icon representing the second phase."/></a><br>
       [**Validate the application**](validate-apps.md)
    :::column-end:::
    :::column span="":::
-    :::image type="icon" source="images/phase-3-on.svg" border="false" link:::<br>
-      [**Create additional policies (optional)**](create-policies.md)
-   :::column-end:::
-   :::column span="":::
-    <a href="create-policies.md"><img src="images/phase-3-on.svg"/></a><br>
+    <a href="create-policies.md"><img src="images/phase-3-on.svg" alt="Icon representing the third phase."/></a><br>
       [**Create additional policies 2 (optional)**](create-policies.md)
    :::column-end:::
 :::row-end:::
