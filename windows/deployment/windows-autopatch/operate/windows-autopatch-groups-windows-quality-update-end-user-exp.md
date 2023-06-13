@@ -10,6 +10,9 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: adnich
+ms.collection:
+  - highpri
+  - tier1
 ---
 
 # Windows quality update end user experience: Windows Autopatch groups experience (public preview) 
