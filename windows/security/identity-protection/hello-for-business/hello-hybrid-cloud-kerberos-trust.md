@@ -37,7 +37,7 @@ When Azure AD Kerberos is enabled in an Active Directory domain, an *Azure AD Ke
 - Appears as a Read Only Domain Controller (RODC) object, but isn't associated with any physical servers
 - Is only used by Azure AD to generate TGTs for the Active Directory domain.
   > [!NOTE]
-  > The same rules and restrictions used for RODCs apply to the Azure AD Kerberos Server object. For example, users that are direct or indirect members of the built-in security group *Denied RODC Password Replication Group* won't be able to use cloud Kerberos trust.
+  > The same rules and restrictions used for RODCs apply to the Azure AD Kerberos Server object. For example, users that are direct or indirect members of the built-in security group *Denied RODC Password Replication Group* won't be able to use cloud Kerberos trust. <= WARNING: this statement in the note about the "Denied RODC Password Replication Group" IS NOT true, as by default, that group is not even listed in the DENY part of the PRP for the AzureADKerberos computer account. See; https://jorgequestforknowledge.wordpress.com/2023/06/14/securing-or-attacking-your-active-directory-with-azure-ad-passwordless-authentication-that-is-the-question/
 
 :::image type="content" source="images/azuread-kerberos-object.png" alt-text="Active Directory Users and Computers console, showing the computer object representing the Azure AD Kerberos server ":::
 
@@ -70,6 +70,7 @@ The following scenarios aren't supported using Windows Hello for Business cloud 
 > The default security policy for AD does not grant permission to sign high privilege accounts on to on-premises resources with cloud Kerberos trust or FIDO2 security keys.
 >
 > To unblock the accounts, use Active Directory Users and Computers to modify the msDS-NeverRevealGroup property of the Azure AD Kerberos Computer object `CN=AzureADKerberos,OU=Domain Controllers,<domain-DN>`.
+<= WARNING: the PRP should not be relaxed, but rather hardened due to possible attack from Azure AD!. See; https://jorgequestforknowledge.wordpress.com/2023/06/14/securing-or-attacking-your-active-directory-with-azure-ad-passwordless-authentication-that-is-the-question/
 
 ## Next steps
 
