@@ -10,6 +10,9 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: andredm7
+ms.collection:
+  - highpri
+  - tier1
 ---
 
 # Manage Windows feature update releases: Windows Autopatch groups experience (public preview) 

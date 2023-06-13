@@ -10,6 +10,9 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: hathind
+ms.collection:
+  - highpri
+  - tier1
 ---
 
 # Windows quality update signals: Windows Autopatch groups experience (public preview) 
