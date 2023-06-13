@@ -10,6 +10,8 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: hathind
+ms.collection:
+  - tier2
 ---
 
 # Microsoft 365 Apps for enterprise update policies

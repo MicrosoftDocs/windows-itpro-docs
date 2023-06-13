@@ -10,6 +10,8 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: adnich
+ms.collection:
+  - tier2
 ---
 
 # Windows update policies
