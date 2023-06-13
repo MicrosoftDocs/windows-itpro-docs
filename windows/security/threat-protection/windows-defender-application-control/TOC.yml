@@ -130,8 +130,6 @@
       href: AppIdTagging/deploy-appid-tagging-policies.md
     - name: Testing and Debugging AppId Tagging Policies
       href: AppIdTagging/debugging-operational-guide-appid-tagging-policies.md
-    - name: AppId Tagging Policies Known Issues
-      href: AppIdTagging/known-issues-appid-tagging-policies.md
 - name: AppLocker
   href: applocker\applocker-overview.md
   items:

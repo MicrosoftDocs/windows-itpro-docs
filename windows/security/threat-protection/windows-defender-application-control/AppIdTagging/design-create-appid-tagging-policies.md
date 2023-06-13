@@ -41,7 +41,7 @@ You can use the Windows Defender Application Control (WDAC) Wizard and the Power
 	
 	> [!NOTE]
 	> If your AppId Tagging Policy does build off the base templates or does not allow Windows in-box processes, you will notice significant performance regressions, especially during boot. For this reason, it is strongly recommended to build off the base templates. 
-	For more information on the issue, see the [AppId Tagging Known Issues page](./known-issues-appid-tagging-policies.md).
+	For more information on the issue, see the [AppId Tagging Known Issue](../operations/known-issues.md#Slow-boot-and-performance-with-custom-policies).
 
 
 2. 	Set the following rule-options using the Wizard toggles:
