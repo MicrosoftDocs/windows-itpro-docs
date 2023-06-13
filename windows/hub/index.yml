@@ -16,7 +16,7 @@ metadata:
   author: paolomatarazzo #Required; your GitHub user alias, with correct capitalization.
   ms.author: paoloma #Required; microsoft alias of author; optional team alias.
   manager: aaroncz
-  ms.date: 06/12/2023 #Required; mm/dd/yyyy format.
+  ms.date: 06/13/2023
   
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -27,13 +27,13 @@ highlightedContent:
     - title: Get started with Windows 11
       itemType: get-started
       url: /whats-new/windows-11-overview
-    - title: What's new in Windows 11, version-22H2?
-      itemType: whats-new
-      url: /whats-new/whats-new-windows-11-version-22H2
     # Card
     - title: Get started with the Windows Insider Program
       itemType: get-started
       url: /windows-insider/get-started
+    - title: What's new in Windows 11, version-22H2?
+      itemType: whats-new
+      url: /whats-new/whats-new-windows-11-version-22H2
     # Card
     - title: See what's new in Windows release health
       itemType: overview
@@ -50,27 +50,27 @@ productDirectory:
   items:
   # Card
     - title: Windows 11 overview
-      imageSrc: /windows/resources/images/winlogo.svg
+      imageSrc: /media/logos/logo_Windows.svg
       summary: Get more information about features and improvements that are important to admins
       url: /windows/whats-new/windows-11-overview
     - title: Windows 11 requirements
-      imageSrc: /windows/resources/images/winlogo.svg
+      imageSrc: /media/logos/logo_Windows.svg
       summary: See the system requirements for Windows 11, including running Windows 11 on a virtual machine
       url: /windows/whats-new/windows-11-requirements
     - title: Learn more about Windows 11 Enterprise
-      imageSrc: /windows/resources/images/winlogo.svg
+      imageSrc: /media/logos/logo_Windows.svg
       summary: Get more information on the features, security, and licensing plans designed for organizations
       url: https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise
     - title: FAQ - Upgrade to Windows 11
-      imageSrc: /windows/resources/images/winlogo.svg
+      imageSrc: /media/logos/logo_Windows.svg
       summary: See some common questions and answers when upgrading to Windows 11
       url: https://support.microsoft.com/windows/upgrade-to-windows-11-faq-fb6206a2-1a0f-448a-80f1-8668ee5b2bf9
     - title: Windows 11 chip to cloud protection - Security challenges of hybrid work
-      imageSrc: /windows/resources/images/winlogo.svg
+      imageSrc: /media/logos/logo_Windows.svg
       summary: Blog from the Microsoft Windows Security Team
       url: https://www.microsoft.com/security/blog/2021/10/04/windows-11-offers-chip-to-cloud-protection-to-meet-the-new-security-challenges-of-hybrid-work
     - title: Trusted Platform Module (TPM)
-      imageSrc: /windows/resources/images/winlogo.svg
+      imageSrc: /media/logos/logo_Windows.svg
       summary: Learn more about TPM, and why it's a good thing
       url: /windows/security/information-protection/tpm/trusted-platform-module-overview
       
