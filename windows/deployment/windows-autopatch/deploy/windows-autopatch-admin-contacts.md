@@ -10,6 +10,8 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: hathind
+ms.collection:
+  - tier2
 ---
 
 # Add and verify admin contacts
