@@ -8,6 +8,8 @@
     href: introduction/index.md
   - name: Zero Trust and Windows
     href: zero-trust-windows-device-health.md
+  - name: Security features licensing and edition requirements
+    href: introduction/licensing-and-edition-requirements.md
   - name: Security features and edition requirements
     href: introduction/security-features-edition-requirements.md
   - name: Security features and licensing requirements
