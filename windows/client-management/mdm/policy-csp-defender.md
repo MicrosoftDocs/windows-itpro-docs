@@ -1544,9 +1544,9 @@ This policy setting defines the number of days items should be kept in the Quara
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure catch-up scans for scheduled full scans. A catch-up scan is a scan that's initiated because a regularly scheduled scan was missed. Usually these scheduled scans are missed because the computer was turned off at the scheduled time.
 
-- If you enable this setting, catch-up scans for scheduled full scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
+- If you enable this setting or don't configure this feature, catch-up scans for scheduled full scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer. If there is no scheduled scan configured, there will be no catch-up scan run.
 
-- If you disable or don't configure this setting, catch-up scans for scheduled full scans will be turned off.
+- If you disable this setting, catch-up scans for scheduled full scans will be turned off.
 <!-- DisableCatchupFullScan-Description-End -->
 
 <!-- DisableCatchupFullScan-Editable-Begin -->
