@@ -38,7 +38,11 @@ The table below provides support details for specific deployment scenarios. Boot
 
 ## Reason for the change
 
-Alternatives to WDS, such as [Microsoft Configuration Manager](/mem/configmgr/) and [Microsoft Deployment Toolkit](/mem/configmgr/mdt/) (MDT) provides a better, more flexible, and feature-rich experience for deploying Windows images in certain scenarios. [Utilizing MDT with Windows 11 is not supported.](/mem/configmgr/mdt/known-issues.md).
+Alternatives to WDS, such as [Microsoft Configuration Manager](/mem/configmgr/) and [Microsoft Deployment Toolkit](/mem/configmgr/mdt/) (MDT) provide a better, more flexible, and feature-rich experience for deploying Windows images.
+
+> [!NOTE]
+>
+> [Microsoft Deployment Toolkit](/mem/configmgr/mdt/) (MDT) only supports deployment of Windows 10. It doesn't support deployment of Windows 11. For more information, see [Supported platforms](/mem/configmgr/mdt/release-notes#supported-platforms).
 
 ## Not affected
 
