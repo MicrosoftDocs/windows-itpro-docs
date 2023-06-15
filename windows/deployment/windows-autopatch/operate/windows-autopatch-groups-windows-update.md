@@ -10,6 +10,9 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: rekhanr
+ms.collection:
+  - highpri
+  - tier1
 ---
 
 # Customize Windows Update settings: Autopatch groups experience (public preview) 
