@@ -4,7 +4,7 @@ description: Learn about Windows licensing and edition requirements for the feat
 ms.collection:
 - tier2
 ms.topic: conceptual
-ms.date: 06/13/2023
+ms.date: 06/15/2023
 appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 ms.author: paoloma
@@ -20,11 +20,11 @@ Select one of the two tabs to learn about licensing requirements to use the secu
 
 #### [:::image type="icon" source="../images/icons/windows-os.svg" border="false"::: **Licensing requirements**](#tab/licensing)
 
-[!INCLUDE [licensing-requirements](../../../includes/licensing/_licensing-requirements.md)]
+[!INCLUDE [licensing-requirements](../../includes/licensing/_licensing-requirements.md)]
 
 #### [:::image type="icon" source="../images/icons/windows-os.svg" border="false"::: **Edition requirements**](#tab/edition)
 
-[!INCLUDE [_edition-requirements](../../../includes/licensing/_edition-requirements.md)]
+[!INCLUDE [_edition-requirements](../../includes/licensing/_edition-requirements.md)]
 
 ---
 
