@@ -42,6 +42,35 @@ CiTool makes Windows Defender Application Control (WDAC) policy management easie
 | --refresh | Attempt to Refresh WDAC Policies | -r |
 | --help | Display the tool's help menu | -h |
 
+## Output Parameters and Descriptions
+
+1. List Policies
+
+Policy:
+    Policy ID: d2bda982-ccf6-4344-ac5b-0b44427b6816
+    Base Policy ID: d2bda982-ccf6-4344-ac5b-0b44427b6816
+    Friendly Name: Microsoft Windows Driver Policy
+    Version: 2814751463178240
+    Platform Policy: true
+    Policy is Signed: true
+    Has File on Disk: false
+    Is Currently Enforced: true
+    Is Authorized: true
+    Status: 0
+    ```
+
+| Command | Description |
+|--------|---------|
+| Policy ID | The ID of the Policy listed in <PolicyID>
+| Base Policy ID | The ID of the Base Policy listed in <BasePolicyID>
+| Friendly Name | Value listed in <Setting Provider="PolicyInfo" Key="Information" ValueName="Name">
+| Version | Version of the policy listed in <VersionEx> 
+| Platform Policy | Whether the policy is a policy provided by Microsoft (e.g. Vulnerable Driver blocklist policy)
+| Policy is Signed | Whether the policy has a valid signature
+| Has File on Disk | Whether the policy file is currently on the disk
+| Is Currently Enforced | Whether the policy file is active
+| Is Authorized | If the policy requires a token to be activated, it will return the state of authorization for the token. If the policy does not require a token, matches the state of Is Currently Enforced"
+
 ## Examples
 
 1. Deploy a WDAC policy
