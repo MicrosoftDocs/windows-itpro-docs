@@ -1,47 +1,41 @@
 ### YamlMime:Hub
 
-title: Windows client documentation # < 60 chars
-summary: Empower your organization with secure and efficient Windows client devices. Learn how to deploy, secure, and manage Windows 10 and 11 for your organization. # < 160 chars
-# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
+title: Windows client documentation
+summary: Learn how to deploy, secure, and manage Windows clients for your organization.
 brand: windows
 
 metadata:
-  title: Windows client documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn how to deploy, secure, and manage Windows 10 and 11 for your organization. # Required; article description that is displayed in search results. < 160 chars.
+  title: Windows client documentation
+  description: Learn how to deploy, secure, and manage Windows clients for your organization.
   ms.topic: hub-page
   ms.prod: windows-client
   ms.collection:
     - highpri
     - tier1
-  author: paolomatarazzo #Required; your GitHub user alias, with correct capitalization.
-  ms.author: paoloma #Required; microsoft alias of author; optional team alias.
+  author: paolomatarazzo
+  ms.author: paoloma
   manager: aaroncz
-  ms.date: 06/13/2023
+  ms.date: 06/15/2023
   
-# highlightedContent section (optional)
 # Maximum of 8 items
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
-    # Card
-    - title: Get started with Windows 11
-      itemType: get-started
-      url: /whats-new/windows-11-overview
-    # Card
-    - title: Get started with the Windows Insider Program
-      itemType: get-started
-      url: /windows-insider/get-started
-    - title: What's new in Windows 11, version-22H2?
-      itemType: whats-new
-      url: /whats-new/whats-new-windows-11-version-22H2
-    # Card
-    - title: See what's new in Windows release health
-      itemType: overview
-      url: /windows/release-health/
-    # Card
-    - title: Empower your hybrid workforce
-      itemType: overview
-      url: https://www.microsoft.com/microsoft-365/blog/2021/10/04/empower-your-hybrid-workforce-today-with-windows-11/
+  - title: Get started with Windows 11
+    itemType: get-started
+    url: /whats-new/windows-11-overview
+  - title: What's new in Windows 11, version 22H2
+    itemType: whats-new
+    url: /whats-new/whats-new-windows-11-version-22H2
+  - title: Windows 11 requirements
+    itemType: whats-new
+    url: /windows/whats-new/windows-11-requirements
+  - title: Get started with the Windows Insider Program
+    itemType: get-started
+    url: /windows-insider/get-started
+  - title: Windows Commercial Licensing overview
+    itemType: overview
+    url: /windows/whats-new/windows-licensing
 
 # productDirectory section (optional)
 productDirectory:
@@ -141,7 +135,7 @@ conceptualContent:
         - url: /windows/deployment/windows-autopatch
           itemType: deploy
           text: Windows Autopatch
- 
+
   # Card
     - title: App management
       links:
