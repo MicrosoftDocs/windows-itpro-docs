@@ -48,14 +48,23 @@ CiTool makes Windows Defender Application Control (WDAC) policy management easie
 
 Policy:
     Policy ID: d2bda982-ccf6-4344-ac5b-0b44427b6816
+
     Base Policy ID: d2bda982-ccf6-4344-ac5b-0b44427b6816
+
     Friendly Name: Microsoft Windows Driver Policy
+
     Version: 2814751463178240
+
     Platform Policy: true
+
     Policy is Signed: true
+
     Has File on Disk: false
+
     Is Currently Enforced: true
+
     Is Authorized: true
+
     Status: 0
 
 | Command | Description |
