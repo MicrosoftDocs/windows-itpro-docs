@@ -57,7 +57,6 @@ Policy:
     Is Currently Enforced: true
     Is Authorized: true
     Status: 0
-    ```
 
 | Command | Description |
 |--------|---------|
