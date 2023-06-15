@@ -10,6 +10,9 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: adnich
+ms.collection:
+  - highpri
+  - tier1
 ---
 
 # Eligible devices report—historical
