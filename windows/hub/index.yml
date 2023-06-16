@@ -44,7 +44,7 @@ productDirectory:
   items:
   # Card
     - title: Learn more about Windows 11 Enterprise
-      imageSrc: /media/logos/logo_Windows.svg
+      imageSrc: /media/common/i_get-started.svg
       summary: Get more information on the features, security, and licensing plans designed for organizations
       url: https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise
     - title: FAQ - Upgrade to Windows 11
@@ -55,7 +55,10 @@ productDirectory:
       imageSrc: /media/logos/logo_Windows.svg
       summary: Learn more about TPM, and why it's a good thing
       url: /windows/security/information-protection/tpm/trusted-platform-module-overview
-      
+    - title: Microsoft Pluton security processor
+      imageSrc: /media/logos/logo_Windows.svg
+      summary: Learn more about Microsoft Pluton, the security processor built with Zero Trust principles at its core.
+      url: /windows/security/information-protection/pluton/microsoft-pluton-security-processor
 # conceptualContent section (optional)
 conceptualContent:
 # Supports up to 3 sections
