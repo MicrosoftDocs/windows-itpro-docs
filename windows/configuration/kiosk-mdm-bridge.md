@@ -26,8 +26,11 @@ Here's an example to set AssignedAccess configuration:
 
 1. Download the [psexec tool](/sysinternals/downloads/psexec).  
 2. Run `psexec.exe -i -s cmd.exe`.
-3. In the command prompt launched by psexec.exe, enter `powershell.exe` to open PowerShell. 
-4. Execute the following script:
+3. In the command prompt launched by psexec.exe, enter `powershell.exe` to open PowerShell.
+
+Step 4 is different for Windows 10 or Windows 11
+
+4. Execute the following script for Windows 10:
 
 ```xml
 $nameSpaceName="root\cimv2\mdm\dmmap"
@@ -83,6 +86,58 @@ $obj.Configuration = [System.Web.HttpUtility]::HtmlEncode(@"
     </Config>
   </Configs>
 </AssignedAccessConfiguration>
+"@)
+
+Set-CimInstance -CimInstance $obj
+```
+4. Execute the following script for Windows 11:
+
+ ```xml
+$nameSpaceName="root\cimv2\mdm\dmmap"
+$className="MDM_AssignedAccess"
+$obj = Get-CimInstance -Namespace $namespaceName -ClassName $className
+Add-Type -AssemblyName System.Web
+$obj.Configuration = [System.Web.HttpUtility]::HtmlEncode(@"
+
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration  
+  xmlns=http://schemas.microsoft.com/AssignedAccess/2017/config xmlns:win11=http://schemas.microsoft.com/AssignedAccess/2022/config>
+  <Profiles>
+    <Profile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}">       
+      <AllAppsList>
+        <AllowedApps> 
+          <App AppUserModelId="Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic" /> 
+          <App AppUserModelId="Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo" /> 
+          <App AppUserModelId="Microsoft.Windows.Photos_8wekyb3d8bbwe!App" /> 
+          <App AppUserModelId="Microsoft.BingWeather_8wekyb3d8bbwe!App" /> 
+          <App AppUserModelId="Microsoft.WindowsCalculator_8wekyb3d8bbwe!App" /> 
+          <App DesktopAppPath="%windir%\system32\mspaint.exe" /> 
+          <App DesktopAppPath="C:\Windows\System32\notepad.exe" /> 
+        </AllowedApps> 
+      </AllAppsList> 
+      <win11:StartPins>
+        <![CDATA[  
+          { "pinnedList":[
+            {"packagedAppId":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"},
+            {"packagedAppId":"Microsoft.Windows.Photos_8wekyb3d8bbwe!App"},
+            {"packagedAppId":"Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic"},
+            {"packagedAppId":"Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo"},
+            {"packagedAppId":"Microsoft.BingWeather_8wekyb3d8bbwe!App"},
+            {"desktopAppLink":"%ALLUSERSPROFILE%\\Microsoft\\Windows\\StartMenu\\Programs\\Accessories\\Paint.lnk"},
+            {"desktopAppLink":"%APPDATA%\\Microsoft\\Windows\\StartMenu\\Programs\\Accessories\\Notepad.lnk"}
+          ] }
+        ]]>
+      </win11:StartPins>
+      <Taskbar ShowTaskbar="true"/>
+    </Profile> 
+  </Profiles>
+  <Configs>
+    <Config>
+      <Account>MultiAppKioskUser</Account>
+      <DefaultProfile Id="{9A2A490F-10F6-4764-974A-43B19E722C23}"/>
+    </Config>
+  </Configs>
+</AssignedAccessConfiguration>    
 "@)
 
 Set-CimInstance -CimInstance $obj
