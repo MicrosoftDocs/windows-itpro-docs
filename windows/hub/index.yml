@@ -43,14 +43,6 @@ productDirectory:
   summary: Learn more about what's new, what's updated, and what you get in Windows 11 # < 160 chars (optional)
   items:
   # Card
-    - title: Windows 11 overview
-      imageSrc: /media/logos/logo_Windows.svg
-      summary: Get more information about features and improvements that are important to admins
-      url: /windows/whats-new/windows-11-overview
-    - title: Windows 11 requirements
-      imageSrc: /media/logos/logo_Windows.svg
-      summary: See the system requirements for Windows 11, including running Windows 11 on a virtual machine
-      url: /windows/whats-new/windows-11-requirements
     - title: Learn more about Windows 11 Enterprise
       imageSrc: /media/logos/logo_Windows.svg
       summary: Get more information on the features, security, and licensing plans designed for organizations
@@ -59,10 +51,6 @@ productDirectory:
       imageSrc: /media/logos/logo_Windows.svg
       summary: See some common questions and answers when upgrading to Windows 11
       url: https://support.microsoft.com/windows/upgrade-to-windows-11-faq-fb6206a2-1a0f-448a-80f1-8668ee5b2bf9
-    - title: Windows 11 chip to cloud protection - Security challenges of hybrid work
-      imageSrc: /media/logos/logo_Windows.svg
-      summary: Blog from the Microsoft Windows Security Team
-      url: https://www.microsoft.com/security/blog/2021/10/04/windows-11-offers-chip-to-cloud-protection-to-meet-the-new-security-challenges-of-hybrid-work
     - title: Trusted Platform Module (TPM)
       imageSrc: /media/logos/logo_Windows.svg
       summary: Learn more about TPM, and why it's a good thing
@@ -142,18 +130,7 @@ conceptualContent:
         - url: /windows/application-management/index
           itemType: overview
           text: Windows application management
-        - url: /windows/application-management/apps-in-windows-10
-          itemType: overview
-          text: Learn more about the different apps types for Windows
-        - url: /windows/application-management/private-app-repository-mdm-company-portal-windows-11
-          itemType: how-to-guide
-          text: Use the private app repo on Windows 11
-        - url:  /windows/application-management/remove-provisioned-apps-during-update
-          itemType: how-to-guide
-          text: Keep removed apps from returning during an update
-        - url:  https://blogs.windows.com/windowsdeveloper/2021/10/04/developing-for-windows-11/
-          itemType: overview
-          text: Blog - Develop apps for Windows 11
+
 
   # Card
     - title: Client management
