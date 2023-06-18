@@ -40,9 +40,10 @@ items:
               - name: Identity protection
                 tocHref: /windows/security/identity-protection/
                 topicHref: /windows/security/identity-protection/
-              - name: Windows Hello for Business
-                tocHref: /windows/security/identity-protection/hello-for-business/
-                topicHref: /windows/security/identity-protection/hello-for-business
+                items:
+                - name: Windows Hello for Business
+                  tocHref: /windows/security/identity-protection/hello-for-business/
+                  topicHref: /windows/security/identity-protection/hello-for-business
               - name: Security auditing
                 tocHref: /windows/security/threat-protection/auditing/
                 topicHref: /windows/security/threat-protection/auditing/security-auditing-overview
