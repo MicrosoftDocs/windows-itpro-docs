@@ -39,7 +39,7 @@ items:
             items:
               - name: Identity protection
                 tocHref: /windows/security/identity-protection/
-                topicHref: /windows/security/identity
+                topicHref: /windows/security/identity-protection/
               - name: Windows Hello for Business
                 tocHref: /windows/security/identity-protection/hello-for-business/
                 topicHref: /windows/security/identity-protection/hello-for-business
