@@ -56,22 +56,24 @@ productDirectory:
       links:
         - url: /windows/deployment
           text: Deploy
-        - url: /windows/deployment
-          text: Deploy Python apps to Azure App Service
+        - url: /mem/autopilot/
+          text: Windows Autopilot overview
+        - url: /mem/autopilot/tutorial/autopilot-scenarios
+          text: "Tutorial: Windows Autopilot scenarios"
+        - url: /windows/deployment/windows-autopatch
+          text: Windows Autopatch overview
         - url: /windows/deployment
           text: Learn more about Windows deployment
-        - url: /windows/deployment/index      
-          text: Deploy and update Windows
-        - url: /windows/deployment/windows-autopatch
-          text: Windows Autopatch
 
     - title: Learn how to manage Windows
       imageSrc: /media/common/i_management.svg
       links:
+        - url: /windows/client-management/mobile-device-enrollment
+          text: MDM enrollment
+        - url: /windows/client-management/mdm/
+          text: Configuration Service Provider (CSP)
         - url: /windows/client-management/administrative-tools-in-windows-10
-          text: Administrative tools 
-        - url: /windows/client-management/mdm/configuration-service-provider-reference
-          text: Configuration service provider reference
+          text: Windows administrative tools 
         - url: /windows/application-management/index
           text: Learn about application management
         - url: /windows/client-management
@@ -132,10 +134,7 @@ additionalContent:
         - title: Windows product site
           summary: Find out how Windows enables your business to do more
           url: https://www.microsoft.com/microsoft-365/windows
-        - title: "Windows 11: A new era for the PC begins today"
-          summary: Blog article that describes how Windows 11 empowers you to produce and inspires you to create
-          url: https://blogs.windows.com/windowsexperience/2021/10/04/windows-11-a-new-era-for-the-pc-begins-today/
-        - title: Windows IT Pro blogs
+        - title: Windows IT Pro blog
           summary: The latest Windows blog articles for the IT Pro 
           url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog
         - title: Windows blogs
@@ -147,29 +146,11 @@ additionalContent:
         - title: Ask the community
           summary: Get help, and help others
           url: https://answers.microsoft.com/windows/forum
-
-    - title: Other resources
-      items:
-        - title: Microsoft endpoint management with Intune
-          links:
-            - text: Intune is a family of products
-              url: /mem/endpoint-manager-overview
-            - text: What is Microsoft Intune?
-              url: /mem/intune/fundamentals/what-is-intune
-            - text: Microsoft Intune services simplify upgrades to Windows 11
-              url: https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/endpoint-manager-simplifies-upgrades-to-windows-11/ba-p/2771886
-            - text: Understanding readiness for Windows 11 with Microsoft Intune services
-              url: https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/understanding-readiness-for-windows-11-with-microsoft-endpoint/ba-p/2770866
-            - text: Microsoft endpoint management blog
-              url: https://aka.ms/memblog
-
         - title: Windows Server
           links:
             - text: Windows Server documentation
               url: /windows-server
             - text: What's new in Windows Server 2022?
               url: /windows-server/get-started/whats-new-in-windows-server-2022
-            - text: Get started with Windows Server
-              url: /windows-server/get-started/get-started-with-windows-server
             - text: Windows Server blog
               url: https://cloudblogs.microsoft.com/windowsserver/
