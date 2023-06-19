@@ -36,6 +36,15 @@ highlightedContent:
   - title: Windows Commercial Licensing overview
     itemType: overview
     url: /windows/whats-new/windows-licensing
+  - title: Windows Commercial Licensing overview
+    itemType: overview
+    url: /windows/whats-new/windows-licensing
+  - title: Windows Commercial Licensing overview
+    itemType: overview
+    url: /windows/whats-new/windows-licensing
+  - title: Windows Commercial Licensing overview
+    itemType: overview
+    url: /windows/whats-new/windows-licensing
 
 # productDirectory section (optional)
 productDirectory:
@@ -43,37 +52,83 @@ productDirectory:
   items:
   # Card
     - title: Deploy
-      imageSrc: /media/common/i_get-started.svg
-      summary: Learn about the options to deploy Windows in your organization
+      imageSrc: /media/common/i_deploy.svg
+      summary: Learn about the options to deploy Windows clients in your organization
       url: /windows/deployment
+      links:
+        - url: /azure/azure-functions/create-first-function-vs-code-python
+          text: Deploy serverless Python apps to Azure Functions
+        - url: ./python/configure-python-web-app-local-environment.md
+          text: Deploy Python apps to Azure App Service
+        - url: /azure/storage/blobs/storage-quickstart-blobs-python
+          text: Manage storage blobs with the Azure SDK for Python
     - title: Manage
-      imageSrc: /media/common/i_get-started.svg
-      summary: Get more information on the features, security, and licensing plans designed for organizations
-      url: https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise
+      imageSrc: /media/common/i_management.svg
+      summary: Learn how to manage Windows
+      url: /windows/client-management
+      links:
+        - url: /azure/azure-functions/create-first-function-vs-code-python
+          text: Deploy serverless Python apps to Azure Functions
+        - url: ./python/configure-python-web-app-local-environment.md
+          text: Deploy Python apps to Azure App Service
+        - url: /azure/storage/blobs/storage-quickstart-blobs-python
+          text: Manage storage blobs with the Azure SDK for Python
     - title: Configure
-      imageSrc: /media/common/i_get-started.svg
+      imageSrc: /media/common/i_config-tools.svg
       summary: Get more information on the features, security, and licensing plans designed for organizations
-      url: https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise
+      url: /windows/configuration
+      links:
+        - url: /azure/azure-functions/create-first-function-vs-code-python
+          text: Deploy serverless Python apps to Azure Functions
+        - url: ./python/configure-python-web-app-local-environment.md
+          text: Deploy Python apps to Azure App Service
+        - url: /azure/storage/blobs/storage-quickstart-blobs-python
+          text: Manage storage blobs with the Azure SDK for Python
     - title: Secure
-      imageSrc: /media/common/i_get-started.svg
+      imageSrc: /media/common/i_security-management.svg
       summary: Get more information on the features, security, and licensing plans designed for organizations
       url: https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise
+      links:
+        - url: /azure/azure-functions/create-first-function-vs-code-python
+          text: Deploy serverless Python apps to Azure Functions
+        - url: ./python/configure-python-web-app-local-environment.md
+          text: Deploy Python apps to Azure App Service
+        - url: /azure/storage/blobs/storage-quickstart-blobs-python
+          text: Manage storage blobs with the Azure SDK for Python
     - title: Privacy
-      imageSrc: /media/common/i_get-started.svg
+      imageSrc: /media/common/i_lock.svg
       summary: Get more information on the features, security, and licensing plans designed for organizations
       url: https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise
-    - title: FAQ - Upgrade to Windows 11
-      imageSrc: /media/logos/logo_Windows.svg
-      summary: See some common questions and answers when upgrading to Windows 11
-      url: https://support.microsoft.com/windows/upgrade-to-windows-11-faq-fb6206a2-1a0f-448a-80f1-8668ee5b2bf9
-    - title: Trusted Platform Module (TPM)
-      imageSrc: /media/logos/logo_Windows.svg
-      summary: Learn more about TPM, and why it's a good thing
-      url: /windows/security/information-protection/tpm/trusted-platform-module-overview
-    - title: Microsoft Pluton security processor
-      imageSrc: /media/logos/logo_Windows.svg
-      summary: Learn more about Microsoft Pluton, the security processor built with Zero Trust principles at its core.
-      url: /windows/security/information-protection/pluton/microsoft-pluton-security-processor
+      links:
+        - url: /azure/azure-functions/create-first-function-vs-code-python
+          text: Deploy serverless Python apps to Azure Functions
+        - url: ./python/configure-python-web-app-local-environment.md
+          text: Deploy Python apps to Azure App Service
+        - url: /azure/storage/blobs/storage-quickstart-blobs-python
+          text: Manage storage blobs with the Azure SDK for Python
+    - title: Privacy
+      imageSrc: /media/common/i_lock.svg
+      summary: Get more information on the features, security, and licensing plans designed for organizations
+      url: https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise
+      links:
+        - url: /azure/azure-functions/create-first-function-vs-code-python
+          text: Deploy serverless Python apps to Azure Functions
+        - url: ./python/configure-python-web-app-local-environment.md
+          text: Deploy Python apps to Azure App Service
+        - url: /azure/storage/blobs/storage-quickstart-blobs-python
+          text: Manage storage blobs with the Azure SDK for Python
+    - title: Privacy
+      imageSrc: /media/common/i_lock.svg
+      summary: Get more information on the features, security, and licensing plans designed for organizations
+      url: https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise
+      links:
+        - url: /azure/azure-functions/create-first-function-vs-code-python
+          text: Deploy serverless Python apps to Azure Functions
+        - url: ./python/configure-python-web-app-local-environment.md
+          text: Deploy Python apps to Azure App Service
+        - url: /azure/storage/blobs/storage-quickstart-blobs-python
+          text: Manage storage blobs with the Azure SDK for Python
+
 # conceptualContent section (optional)
 conceptualContent:
 # Supports up to 3 sections
