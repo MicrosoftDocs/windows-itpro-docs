@@ -21,27 +21,27 @@ metadata:
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
+  - title: Windows 11, version 22H2
+    itemType: whats-new
+    url: /whats-new/whats-new-windows-11-version-22H2
   - title: Get started with Windows 11
     itemType: get-started
     url: /whats-new/windows-11-overview
-  - title: What's new in Windows 11, version 22H2
-    itemType: whats-new
-    url: /whats-new/whats-new-windows-11-version-22H2
   - title: Windows 11 requirements
-    itemType: whats-new
+    itemType: get-started
     url: /windows/whats-new/windows-11-requirements
-  - title: Get started with the Windows Insider Program
+  - title: Windows Insider Program
     itemType: get-started
     url: /windows-insider/get-started
-  - title: Windows Commercial Licensing overview
+  - title: Windows Commercial Licensing
     itemType: overview
     url: /windows/whats-new/windows-licensing
+  - title: Windows 365 documentation
+    itemType: overview
+    url: /windows-365
   - title: Explore all Windows trainings and learning paths for IT pros
     itemType: learn
     url: https://learn.microsoft.com/en-us/training/browse/?products=windows&roles=administrator
-  - title: Windows 365 documentation
-    itemType: learn
-    url: /windows-365
   - title: Enroll Windows client devices in Microsoft Intune
     itemType: how-to-guide
     url: /intune/fundamentals/deployment-guide-enrollment-windows
@@ -153,7 +153,7 @@ additionalContent:
           links:
             - text: Windows community
               url: https://techcommunity.microsoft.com/t5/windows/ct-p/Windows10
-            - text: Ask the community
+            - text: Microsoft Support community
               url: https://answers.microsoft.com/windows/forum
           url: https://answers.microsoft.com/windows/forum
         - title: Windows Server
