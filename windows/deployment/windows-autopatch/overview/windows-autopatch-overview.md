@@ -11,7 +11,7 @@ ms.author: tiaraquan
 manager: dougeby
 ms.collection:
   - highpri
-  - tier2
+  - tier1
 ms.reviewer: hathind
 ---
 
