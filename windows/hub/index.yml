@@ -48,12 +48,11 @@ highlightedContent:
 
 # productDirectory section (optional)
 productDirectory:
-  title: Windows client resources and documentation
+  title: Get started
   items:
   # Card
-    - title: Deploy
+    - title: Learn how to deploy Windows
       imageSrc: /media/common/i_deploy.svg
-      summary: Learn about the options to deploy Windows clients in your organization
       links:
         - url: /windows/deployment
           text: Deploy
@@ -61,9 +60,8 @@ productDirectory:
           text: Deploy Python apps to Azure App Service
         - url: /windows/deployment
           text: Learn more about Windows deployment
-    - title: Manage
+    - title: Learn how to manage Windows
       imageSrc: /media/common/i_management.svg
-      summary: Learn how to manage Windows
       links:
         - url: /windows/client-managemen
           text: Deploy serverless Python apps to Azure Functions
@@ -71,9 +69,8 @@ productDirectory:
           text: Deploy Python apps to Azure App Service
         - url: /windows/client-managemen
           text: Learn more about Windows management
-    - title: Configure
+    - title: Learn how to configure Windows
       imageSrc: /media/common/i_config-tools.svg
-      summary: Get more information on the features, security, and licensing plans designed for organizations
       links:
         - url: /windows/configurationn
           text: Deploy serverless Python apps to Azure Functions
@@ -81,9 +78,8 @@ productDirectory:
           text: Deploy Python apps to Azure App Service
         - url: /windows/configuration
           text: Learn more about Windows configuration
-    - title: Secure
+    - title: Learn how to secure Windows
       imageSrc: /media/common/i_security-management.svg
-      summary: Get more information on the features, security, and licensing plans designed for organizations
       links:
         - url: /windows/security
           text: Deploy serverless Python apps to Azure Functions
@@ -91,38 +87,15 @@ productDirectory:
           text: Deploy Python apps to Azure App Service
         - url: /windows/security
           text: Learn more about Windows security
-    - title: Privacy
+    - title: Learn about privacy in Windows
       imageSrc: /media/common/i_lock.svg
-      summary: Get more information on the features, security, and licensing plans designed for organizations
       links:
-        - url: /azure/azure-functions/create-first-function-vs-code-python
+        - url: /windows/privacy
           text: Deploy serverless Python apps to Azure Functions
-        - url: ./python/configure-python-web-app-local-environment.md
+        - url: /windows/privacy
           text: Deploy Python apps to Azure App Service
-        - url: /azure/storage/blobs/storage-quickstart-blobs-python
-          text: Manage storage blobs with the Azure SDK for Python
-    - title: Privacy
-      imageSrc: /media/common/i_lock.svg
-      summary: Get more information on the features, security, and licensing plans designed for organizations
-      url: https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise
-      links:
-        - url: /azure/azure-functions/create-first-function-vs-code-python
-          text: Deploy serverless Python apps to Azure Functions
-        - url: ./python/configure-python-web-app-local-environment.md
-          text: Deploy Python apps to Azure App Service
-        - url: /azure/storage/blobs/storage-quickstart-blobs-python
-          text: Manage storage blobs with the Azure SDK for Python
-    - title: Privacy
-      imageSrc: /media/common/i_lock.svg
-      summary: Get more information on the features, security, and licensing plans designed for organizations
-      url: https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise
-      links:
-        - url: /azure/azure-functions/create-first-function-vs-code-python
-          text: Deploy serverless Python apps to Azure Functions
-        - url: ./python/configure-python-web-app-local-environment.md
-          text: Deploy Python apps to Azure App Service
-        - url: /azure/storage/blobs/storage-quickstart-blobs-python
-          text: Manage storage blobs with the Azure SDK for Python
+        - url: /windows/privacy
+          text: Learn more about privacy in Windows
 
 # conceptualContent section (optional)
 conceptualContent:
