@@ -24,7 +24,6 @@ summary: |
   - [How do you set up Windows Update for Business reports?](#how-do-you-set-up-windows-update-for-business-reports)
   - [Why is "Waiting for Windows Update for Business reports data" displayed on the page](#why-is--waiting-for-windows-update-for-business-reports-data--displayed-on-the-page)
   - [Why am I getting the error "400 Bad Request: The specified resource already exists"?](#why-am-i-getting-the-error--400-bad-request--the-specified-resource-already-exists-)
-  - [Why am I getting the error "400 Bad Request: Identifier must be GUID"?](#why-am-i-getting-the-error--400-bad-request--identifier-must-be-guid-)
 
   **Questions about using Windows Update for Business reports**:
 
@@ -90,9 +89,6 @@ sections:
       - question: "Why am I getting the error `400 Bad Request: The specified resource already exists`?"
         answer: |
           A `400 Bad Request: The specified resource already exists` error message indicates that the service already has a subscription and workspace mapping saved. If you're trying to re-enroll with the same configuration settings, wait a few minutes, then refresh the page before saving your subscription and workspace again. Sometimes it can take time to register the save, so it's important to not re-enroll too quickly.
-      - question: "Why am I getting the error `400 Bad Request: Identifier must be GUID`?"
-        answer: |
-          The `400 Bad Request: Identifier must be GUID` error message indicates that you've provided an invalid or incorrect value for the resource connection ID when making a request to the Log Analytics API. Ensure that the resource group within your Azure subscription is a valid GUID (Globally Unique Identifier). 
   - name: Using Windows Update for Business reports
     questions:
       - question: Why is the device name null(#)?
