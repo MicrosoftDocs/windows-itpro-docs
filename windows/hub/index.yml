@@ -15,7 +15,7 @@ metadata:
   author: paolomatarazzo
   ms.author: paoloma
   manager: aaroncz
-  ms.date: 06/15/2023
+  ms.date: 06/19/2023
   
 # Maximum of 8 items
 highlightedContent:
@@ -39,11 +39,26 @@ highlightedContent:
 
 # productDirectory section (optional)
 productDirectory:
-  title: Get to know Windows 11 # < 60 chars (optional)
-  summary: Learn more about what's new, what's updated, and what you get in Windows 11 # < 160 chars (optional)
+  title: Windows client resources and documentation
   items:
   # Card
-    - title: Learn more about Windows 11 Enterprise
+    - title: Deploy
+      imageSrc: /media/common/i_get-started.svg
+      summary: Learn about the options to deploy Windows in your organization
+      url: /windows/deployment
+    - title: Manage
+      imageSrc: /media/common/i_get-started.svg
+      summary: Get more information on the features, security, and licensing plans designed for organizations
+      url: https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise
+    - title: Configure
+      imageSrc: /media/common/i_get-started.svg
+      summary: Get more information on the features, security, and licensing plans designed for organizations
+      url: https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise
+    - title: Secure
+      imageSrc: /media/common/i_get-started.svg
+      summary: Get more information on the features, security, and licensing plans designed for organizations
+      url: https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise
+    - title: Privacy
       imageSrc: /media/common/i_get-started.svg
       summary: Get more information on the features, security, and licensing plans designed for organizations
       url: https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise
