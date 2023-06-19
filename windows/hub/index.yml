@@ -36,6 +36,15 @@ highlightedContent:
   - title: Windows Commercial Licensing overview
     itemType: overview
     url: /windows/whats-new/windows-licensing
+  - title: Explore all Windows trainings and learning paths for IT pros
+    itemType: learn
+    url: https://learn.microsoft.com/en-us/training/browse/?products=windows&roles=administrator
+  - title: Windows 365 documentation
+    itemType: learn
+    url: /windows-365
+  - title: Enroll Windows client devices in Microsoft Intune
+    itemType: how-to-guide
+    url: /intune/fundamentals/deployment-guide-enrollment-windows
 
 # productDirectory section (optional)
 productDirectory:
@@ -115,12 +124,9 @@ productDirectory:
           text: Learn more about Windows for Education
 
 
-# additionalContent section (optional)
-# Card with summary style
 additionalContent:
-  # Supports up to 4 subsections
   sections:
-    - title: More Windows resources # < 60 chars (optional)
+    - title: More Windows resources
       items:
         # Card
         - title: Windows product site
@@ -156,16 +162,6 @@ additionalContent:
               url: https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/understanding-readiness-for-windows-11-with-microsoft-endpoint/ba-p/2770866
             - text: Microsoft endpoint management blog
               url: https://aka.ms/memblog
-        - title: Windows 365
-          links:
-            - text: Windows 365 documentation
-              url: /windows-365
-            - text: What is Windows 365
-              url: /windows-365/overview
-            - text: Windows 365 Enterprise now supports Windows 11
-              url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-365-enterprise-now-supports-windows-11/ba-p/2810334              
-            - text: Windows 365 blog
-              url: https://www.microsoft.com/microsoft-365/blog/
 
         - title: Windows Server
           links:
