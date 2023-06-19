@@ -36,15 +36,6 @@ highlightedContent:
   - title: Windows Commercial Licensing overview
     itemType: overview
     url: /windows/whats-new/windows-licensing
-  - title: Windows Commercial Licensing overview
-    itemType: overview
-    url: /windows/whats-new/windows-licensing
-  - title: Windows Commercial Licensing overview
-    itemType: overview
-    url: /windows/whats-new/windows-licensing
-  - title: Windows Commercial Licensing overview
-    itemType: overview
-    url: /windows/whats-new/windows-licensing
 
 # productDirectory section (optional)
 productDirectory:
@@ -60,24 +51,37 @@ productDirectory:
           text: Deploy Python apps to Azure App Service
         - url: /windows/deployment
           text: Learn more about Windows deployment
+        - url: /windows/deployment/index      
+          text: Deploy and update Windows
+        - url: /windows/deployment/windows-autopatch
+          text: Windows Autopatch
+
     - title: Learn how to manage Windows
       imageSrc: /media/common/i_management.svg
       links:
-        - url: /windows/client-managemen
-          text: Deploy serverless Python apps to Azure Functions
-        - url: /windows/client-managemen
-          text: Deploy Python apps to Azure App Service
-        - url: /windows/client-managemen
+        - url: /windows/client-management/administrative-tools-in-windows-10
+          text: Administrative tools 
+        - url: /windows/client-management/mdm/configuration-service-provider-reference
+          text: Configuration service provider reference
+        - url: /windows/application-management/index
+          text: Learn about application management
+        - url: /windows/client-management
           text: Learn more about Windows management
+
     - title: Learn how to configure Windows
       imageSrc: /media/common/i_config-tools.svg
       links:
-        - url: /windows/configurationn
-          text: Deploy serverless Python apps to Azure Functions
-        - url: /windows/configuration
-          text: Deploy Python apps to Azure App Service
+        - url: /windows/configuration/provisioning-packages/provisioning-packages
+          text: Use Provisioning packages to configure new devices
+        - url: /windows/configuration/windows-accessibility-for-itpros
+          text: Accessibility information
+        - url: /windows/configuration/customize-start-menu-layout-windows-11
+          text: Customize the Start menu layout
+        - url: /windows/configuration/set-up-shared-or-guest-pc
+          text: Set up a shared or guest PC
         - url: /windows/configuration
           text: Learn more about Windows configuration
+
     - title: Learn how to secure Windows
       imageSrc: /media/common/i_security-management.svg
       links:
@@ -87,136 +91,29 @@ productDirectory:
           text: Deploy Python apps to Azure App Service
         - url: /windows/security
           text: Learn more about Windows security
+
     - title: Learn about privacy in Windows
       imageSrc: /media/common/i_lock.svg
       links:
-        - url: /windows/privacy
-          text: Deploy serverless Python apps to Azure Functions
-        - url: /windows/privacy
-          text: Deploy Python apps to Azure App Service
+        - url: /windows/privacy/required-diagnostic-events-fields-windows-11-22h2
+          text: Windows 11 required diagnostics data
+        - url: /windows/privacy/configure-windows-diagnostic-data-in-your-organization
+          text: Configure Windows diagnostic data in your organization
         - url: /windows/privacy
           text: Learn more about privacy in Windows
 
-# conceptualContent section (optional)
-conceptualContent:
-# Supports up to 3 sections
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
-
-  title: Windows client resources and documentation for IT Pros 
-  summary: Plan, deploy, secure, and manage devices running Windows 10 and Windows 11.
-  items:
-  # card
-    - title: Overview
+    - title: Learn about Windows for Education
+      imageSrc: /media/common/i_advanced.svg
       links:
-        - url: /windows/whats-new/windows-11-overview
-          itemType: overview
-          text: Windows 11 overview
-        - url: /windows/whats-new/windows-11-plan
-          itemType: overview
-          text: Plan for Windows 11
-        - url: /windows/whats-new/windows-11-prepare
-          itemType: overview
-          text: Prepare for Windows 11
-        - url: /windows/whats-new/whats-new-windows-10-version-21H1
-          itemType: overview
-          text: What's new in Windows 10, version 21H1
-        - url:  /windows/release-health/release-information
-          itemType: overview
-          text: Windows release information
+        - url: /education/windows/tutorial-school-deployment/
+          text: "Tutorial: deploy and manage Windows devices in a school"
+        - url: /education/windows/windows-11-se-overview
+          text: Windows 11 SE Overview
+        - url: /education/windows/federated-sign-in
+          text: Configure federated sign-in for Windows devices
+        - url: /education/Windows
+          text: Learn more about Windows for Education
 
-  # Card (optional)
-    - title: Configuration
-      links:
-        - url: /windows/configuration/index
-          itemType: overview
-          text: Configure Windows
-        - url: /windows/configuration/provisioning-packages/provisioning-packages
-          itemType: how-to-guide
-          text: Use Provisioning packages to configure new devices
-        - url: /windows/configuration/windows-accessibility-for-itpros
-          itemType: overview
-          text: Accessibility information for IT Pros
-        - url: /windows/configuration/customize-start-menu-layout-windows-11
-          itemType: how-to-guide
-          text: Customize the Start menu layout
-        - url: /windows/configuration/stop-employees-from-using-microsoft-store
-          itemType: how-to-guide
-          text: Control access to Microsoft Store
-        - url: /windows/configuration/set-up-shared-or-guest-pc
-          itemType: how-to-guide
-          text: Set up a shared or guest PC
-
-  # Card (optional)
-    - title: Deployment
-      links:
-        - url: /windows/deployment/index      
-          itemType: deploy
-          text: Deploy and update Windows
-        - url: /windows/deployment/windows-10-deployment-scenarios
-          itemType: deploy
-          text: Windows deployment scenarios
-        - url: /windows/deployment/update/create-deployment-plan
-          itemType: deploy
-          text: Create a deployment plan
-        - url: /windows/deployment/update/prepare-deploy-windows
-          itemType: deploy
-          text: Prepare to deploy Windows client
-        - url: /windows/deployment/windows-autopatch
-          itemType: deploy
-          text: Windows Autopatch
-
-  # Card
-    - title: App management
-      links:
-        - url: /windows/application-management/index
-          itemType: overview
-          text: Windows application management
-
-
-  # Card
-    - title: Client management
-      links:
-
-        - url: /windows/client-management/index
-          itemType: overview
-          text: Windows client management
-        - url: /windows/client-management/administrative-tools-in-windows-10
-          itemType: overview
-          text: Administrative tools 
-        - url: /windows/client-management/mandatory-user-profile
-          itemType: how-to-guide
-          text: Create mandatory user profiles
-        - url: /windows/client-management/new-policies-for-windows-10
-          itemType: overview
-          text: New policies for Windows 10
-        - url: /windows/client-management/mdm/configuration-service-provider-reference
-          itemType: reference
-          text: Configuration service provider reference
-
-  # Card (optional)
-    - title: Security and Privacy
-      links:
-        - url: /windows/security/index    
-          itemType: overview
-          text: Windows Enterprise Security
-        - url: /windows/security/hardware
-          itemType: overview
-          text: Hardware security
-        - url: /windows/security/operating-system
-          itemType: overview
-          text: Operating system security
-        - url: /windows/security/apps         
-          itemType: overview
-          text: Application security
-        - url: /windows/security/identity
-          itemType: overview
-          text: Identity and privacy
-        - url: /windows/security/cloud
-          itemType: overview
-          text: Cloud services
-        - url: /windows/privacy/index
-          itemType: overview
-          text: Windows Privacy
 
 # additionalContent section (optional)
 # Card with summary style
