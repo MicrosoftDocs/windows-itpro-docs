@@ -54,12 +54,14 @@ productDirectory:
     - title: Learn how to deploy Windows
       imageSrc: /media/common/i_deploy.svg
       links:
-        - url: /windows/deployment
-          text: Deploy
         - url: /mem/autopilot/
           text: Windows Autopilot overview
         - url: /mem/autopilot/tutorial/autopilot-scenarios
           text: "Tutorial: Windows Autopilot scenarios"
+        - url: /windows/deployment/do/
+          text: Delivery optimization
+        - url: /windows/deployment/update/deployment-service-overview
+          text: Windows Update for Business deployment service
         - url: /windows/deployment/windows-autopatch
           text: Windows Autopatch overview
         - url: /windows/deployment
@@ -82,6 +84,8 @@ productDirectory:
     - title: Learn how to configure Windows
       imageSrc: /media/common/i_config-tools.svg
       links:
+        - url: /windows/configuration/windows-accessibility-for-itpros
+          text: Accessibility information
         - url: /windows/configuration/provisioning-packages/provisioning-packages
           text: Use Provisioning packages to configure new devices
         - url: /windows/configuration/windows-accessibility-for-itpros
@@ -96,10 +100,16 @@ productDirectory:
     - title: Learn how to secure Windows
       imageSrc: /media/common/i_security-management.svg
       links:
-        - url: /windows/security
-          text: Deploy serverless Python apps to Azure Functions
-        - url: /windows/security
-          text: Deploy Python apps to Azure App Service
+        - url: /windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines
+          text: Windows security baselines
+        - url: /windows/security/identity-protection/credential-guard/credential-guard-how-it-works
+          text: Windows Defender Credential Guard
+        - url: /windows/security/identity-protection/hello-for-business/hello-hybrid-cloud-kerberos-trust
+          text: Windows Hello for Business cloud Kerberos trust
+        - url: /education/windows/tutorial-school-deployment/windows/security/threat-protection/windows-defender-application-control/
+          text: Windows Defender Application Control (WDAC)
+        - url: /windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview
+          text: Microsoft Defender Application Guard
         - url: /windows/security
           text: Learn more about Windows security
 
@@ -131,20 +141,20 @@ additionalContent:
     - title: More Windows resources
       items:
         # Card
-        - title: Windows product site
-          summary: Find out how Windows enables your business to do more
-          url: https://www.microsoft.com/microsoft-365/windows
-        - title: Windows IT Pro blog
-          summary: The latest Windows blog articles for the IT Pro 
-          url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog
-        - title: Windows blogs
-          summary: Keep up with the latest news about Windows
-          url: https://blogs.windows.com/
-        - title: Participate in the Tech Community
-          summary: Learn how to be part of the Windows Tech Community
-          url: https://techcommunity.microsoft.com/t5/windows/ct-p/Windows10
-        - title: Ask the community
-          summary: Get help, and help others
+        - title: Windows product site and blogs
+          links:
+            - text: Find out how Windows enables your business to do more
+              url: https://www.microsoft.com/microsoft-365/windows
+            - text: Windows blogs
+              url: https://blogs.windows.com/
+            - text: Windows IT Pro blog
+              url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog
+        - title: Participate in the community
+          links:
+            - text: Windows community
+              url: https://techcommunity.microsoft.com/t5/windows/ct-p/Windows10
+            - text: Ask the community
+              url: https://answers.microsoft.com/windows/forum
           url: https://answers.microsoft.com/windows/forum
         - title: Windows Server
           links:
