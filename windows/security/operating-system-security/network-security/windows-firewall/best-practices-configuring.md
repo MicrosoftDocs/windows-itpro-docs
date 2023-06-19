@@ -147,7 +147,7 @@ In general, to maintain maximum security, admins should only push firewall excep
 
 The Windows Firewall settings configured via group policy are stored in the registry. By default, group policies are refreshed in the background every 90 minutes, with a random offset of 0 to 30 minutes.
 
-When Windows Firewall checks the registry for any configuration changes, the *Windows Filtering Platform (WFP)* perfoms the following actions:
+When Windows Firewall checks the registry for any configuration changes, the *Windows Filtering Platform (WFP)* performs the following actions:
 
 - Reads all firewall rules and settings
 - Applies any new filters
