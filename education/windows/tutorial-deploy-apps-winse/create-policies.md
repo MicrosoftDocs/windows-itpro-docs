@@ -1,7 +1,7 @@
 ---
 title: Create policies to enable applications
 description: Learn how to create policies to enable the installation and execution of apps on Windows SE.
-ms.date: 05/23/2023
+ms.date: 06/19/2023
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
@@ -64,7 +64,7 @@ From a non-Windows SE device with the WDAC Policy Wizard installed, follow these
 1. Apply an audit mode WDAC Base policy. The WDAC Wizard includes a template policy called *WinSEPolicy.xml*, which is based on the Windows 11 SE base policy:
     - Open the **WDAC Wizard** and select **Policy Editor**
     - In the Policy Path to Edit field, browse for *%ProgramFiles%\WindowsApps\Microsoft.WDAC\** and select the file called *WinSEPolicy.xml*. Select **Next**
-      :::image type="content" source="images/wdac-winsepolicy.png" alt-text="WDAC wizard - creation of a policy targeting the base WinSEPolicy.xml policy":::
+      :::image type="content" source="images/wdac-winsepolicy.png" alt-text="Screenshot of the WDAC wizard - creation of a policy targeting the base WinSEPolicy.xml policy":::
     - Toggle the option for **Audit Mode** and complete the wizard. Note the location of the *.cip* and *.xml* files shown on the final page of the wizard
     - From an elevated PowerShell session, run the following command to activate the policy:
 
@@ -124,7 +124,7 @@ From a non-Windows SE device with the WDAC Policy Wizard installed, you can crea
       - **Rule action**: **Allow**
       - **Rule type**: **Packaged App**
       - **Package Name**: specify the package name of app. If the app is installed, you can search by name. If the app isn't installed, check the **Use Custom Package Family** box and specify the package family name of the app
-        :::image type="content" source="images/wdac-uwp-policy.png" alt-text="WDAC wizard - selection of an installed UWP app package.":::
+        :::image type="content" source="images/wdac-uwp-policy.png" alt-text="Screenshot of the WDAC wizard - selection of an installed UWP app package.":::
     - Select the app name
     - Select **Create Rule**
     - Select **Next**

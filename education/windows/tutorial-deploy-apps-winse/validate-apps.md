@@ -1,7 +1,7 @@
 ---
 title: Validate the applications deployed to Windows SE devices
 description: Learn how to validate the applications deployed to Windows SE devices via Intune.
-ms.date: 06/07/2023
+ms.date: 06/19/2023
 ms.topic: tutorial
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE, version 22H2 and later</a>
@@ -66,11 +66,11 @@ To check the installation status of an app from the Intune portal:
 1. Select the application you want to check
 1. From the **Overview** page, you can verify the overall installation status
     
-    :::image type="content" source="./images/intune-app-install-overview.png" alt-text="Microsoft Intune admin center - App installation details." lightbox="./images/intune-app-install-overview.png":::
+    :::image type="content" source="./images/intune-app-install-overview.png" alt-text="Screenshot of the Microsoft Intune admin center - App installation details." lightbox="./images/intune-app-install-overview.png":::
 
 1. From the **Device install status** page, you can verify the installation status for each device, and the status code that indicates the cause of the failure
     
-    :::image type="content" source="./images/intune-app-install-status.png" alt-text="Microsoft Intune admin center - App installation status for each device." lightbox="./images/intune-app-install-status.png":::
+    :::image type="content" source="./images/intune-app-install-status.png" alt-text="Screenshot of the Microsoft Intune admin center - App installation status for each device." lightbox="./images/intune-app-install-status.png":::
 
 > [!NOTE]
 > A Win32 application may install correctly, but report to Intune as failed.\
@@ -120,7 +120,7 @@ These apps are eventually blocked before any of their functionalities can be acc
 
 You may see a dialog indicating **This app won't run on your PC**. Check the indicated executable and verify that it matches the executable of the installed application.
 
-:::image type="content" source="images/winse-app-block.png" alt-text="Windows SE - error window while opening an app.":::
+:::image type="content" source="images/winse-app-block.png" alt-text="Screenshot of Windows SE - error window while opening an app.":::
 
 ### Event Viewer
 
