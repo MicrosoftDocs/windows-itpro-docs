@@ -54,51 +54,46 @@ productDirectory:
     - title: Deploy
       imageSrc: /media/common/i_deploy.svg
       summary: Learn about the options to deploy Windows clients in your organization
-      url: /windows/deployment
       links:
-        - url: /azure/azure-functions/create-first-function-vs-code-python
-          text: Deploy serverless Python apps to Azure Functions
-        - url: ./python/configure-python-web-app-local-environment.md
+        - url: /windows/deployment
+          text: Deploy
+        - url: /windows/deployment
           text: Deploy Python apps to Azure App Service
-        - url: /azure/storage/blobs/storage-quickstart-blobs-python
-          text: Manage storage blobs with the Azure SDK for Python
+        - url: /windows/deployment
+          text: Learn more about Windows deployment
     - title: Manage
       imageSrc: /media/common/i_management.svg
       summary: Learn how to manage Windows
-      url: /windows/client-management
       links:
-        - url: /azure/azure-functions/create-first-function-vs-code-python
+        - url: /windows/client-managemen
           text: Deploy serverless Python apps to Azure Functions
-        - url: ./python/configure-python-web-app-local-environment.md
+        - url: /windows/client-managemen
           text: Deploy Python apps to Azure App Service
-        - url: /azure/storage/blobs/storage-quickstart-blobs-python
-          text: Manage storage blobs with the Azure SDK for Python
+        - url: /windows/client-managemen
+          text: Learn more about Windows management
     - title: Configure
       imageSrc: /media/common/i_config-tools.svg
       summary: Get more information on the features, security, and licensing plans designed for organizations
-      url: /windows/configuration
       links:
-        - url: /azure/azure-functions/create-first-function-vs-code-python
+        - url: /windows/configurationn
           text: Deploy serverless Python apps to Azure Functions
-        - url: ./python/configure-python-web-app-local-environment.md
+        - url: /windows/configuration
           text: Deploy Python apps to Azure App Service
-        - url: /azure/storage/blobs/storage-quickstart-blobs-python
-          text: Manage storage blobs with the Azure SDK for Python
+        - url: /windows/configuration
+          text: Learn more about Windows configuration
     - title: Secure
       imageSrc: /media/common/i_security-management.svg
       summary: Get more information on the features, security, and licensing plans designed for organizations
-      url: https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise
       links:
-        - url: /azure/azure-functions/create-first-function-vs-code-python
+        - url: /windows/security
           text: Deploy serverless Python apps to Azure Functions
-        - url: ./python/configure-python-web-app-local-environment.md
+        - url: /windows/security
           text: Deploy Python apps to Azure App Service
-        - url: /azure/storage/blobs/storage-quickstart-blobs-python
-          text: Manage storage blobs with the Azure SDK for Python
+        - url: /windows/security
+          text: Learn more about Windows security
     - title: Privacy
       imageSrc: /media/common/i_lock.svg
       summary: Get more information on the features, security, and licensing plans designed for organizations
-      url: https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise
       links:
         - url: /azure/azure-functions/create-first-function-vs-code-python
           text: Deploy serverless Python apps to Azure Functions
