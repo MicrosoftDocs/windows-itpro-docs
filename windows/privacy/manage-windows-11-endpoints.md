@@ -60,7 +60,7 @@ The following methodology was used to derive these network endpoints:
 |||HTTP|c-ring.msedge.net|
 |||TLSv1.2/HTTPS/HTTP|fp.msedge.net|
 |||TLSv1.2|I-ring.msedge.net|
-|||HTTP/HTTPS|s-ring.msedge.net|
+|||HTTPS/HTTP|s-ring.msedge.net|
 |||HTTP|dual-s-ring.msedge.net|
 |||HTTP|creativecdn.com|
 |||HTTP|edgeassetservice.azureedge.net|
@@ -69,26 +69,26 @@ The following methodology was used to derive these network endpoints:
 |Device metadata|The following endpoint is used to retrieve device metadata. If you turn off traffic for this endpoint, metadata won't be updated for the device.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#4-device-metadata-retrieval)|
 |||HTTP|dmd.metaservices.microsoft.com|
 |Diagnostic Data|The following endpoints are used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service. If you turn off traffic for this endpoint, diagnostic and usage information, which helps Microsoft find and fix problems and improve our products and services, won't be sent back to Microsoft. ||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback)|
-|||TLSv1.2/HTTPS/HTTP|self.events.data.microsoft.com|
+|||TLSv1.2/HTTP|self.events.data.microsoft.com|
 |||TLSv1.2/HTTPS/HTTP|v10.events.data.microsoft.com|
 |||TLSv1.2/HTTP|v20.events.data.microsoft.com|
-|||TLSv1.2/HTTP|watson.events.data.microsoft.com|
-|||TLSv1.2|www.telecommandsvc.microsoft.com|
 ||The following endpoints are used by Windows Error Reporting. To turn off traffic for these endpoints, enable the following Group Policy: Administrative Templates > Windows Components > Windows Error Reporting > Disable Windows Error Reporting. This means error reporting information won't be sent back to Microsoft.|TLSv1.2|telecommand.telemetry.microsoft.com|
 |||TLS v1.2/HTTPS/HTTP|watson.*.microsoft.com|
+|||TLSv1.2/HTTP|watson.events.data.microsoft.com|
+|||TLSv1.2|www.telecommandsvc.microsoft.com|
 |Font Streaming|The following endpoints are used to download fonts on demand. If you turn off traffic for these endpoints, you won't be able to download fonts on demand.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#6-font-streaming)|
 |||HTTPS|fs.microsoft.com|
 |Licensing|The following endpoint is used for online activation and some app licensing. To turn off traffic for this endpoint, disable the Windows License Manager Service. This will also block online activation and app licensing may not work.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#9-license-manager)|
 |||TLSv1.2/HTTPS/HTTP|licensing.mp.microsoft.com|
 |Location|The following endpoint is used for location data. If you turn off traffic for this endpoint, apps cannot use location data.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#182-location)|
-|||TLSv1.2/HTTP|inference.location.live.net|
+|||TLSv1.2|inference.location.live.net|
 |Maps|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-offlinemaps)|
 ||The following endpoints are used to check for updates to maps that have been downloaded for offline use. If you turn off traffic for this endpoint, offline maps won't be updated.|TLSv1.2/HTTPS/HTTP|maps.windows.com|
 |||HTTP|ecn.dev.virtualearth.net|
 |||HTTP|ecn-us.dev.virtualearth.net|
 |||HTTPS|weathermapdata.blob.core.windows.net|
 |Microsoft Account|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-microsoft-account)|
-||The following endpoints are used for Microsoft accounts to sign in. If you turn off traffic for these endpoints, users can't sign in with Microsoft accounts. |TLSv1.2/HTTP/HTTPS|login.live.com|
+||The following endpoints are used for Microsoft accounts to sign in. If you turn off traffic for these endpoints, users can't sign in with Microsoft accounts. |TLSv1.2/HTTPS/HTTP|login.live.com|
 |Microsoft Edge|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#13-microsoft-edge)|
 ||This network traffic is related to the Microsoft Edge browser. The Microsoft Edge browser requires this endpoint to contact external websites.|HTTPS|iecvlist.microsoft.com|
 ||The following endpoint is used by Microsoft Edge Update service to check for new updates. If you disable this endpoint, Microsoft Edge won’t be able to check for and apply new edge updates.|TLSv1.2/HTTPS/HTTP|msedge.api.cdp.microsoft.com|
@@ -96,18 +96,15 @@ The following methodology was used to derive these network endpoints:
 |||TLSv1.2/HTTP|windows.msn.com|
 |Microsoft Store|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#26-microsoft-store)|
 ||The following endpoint is used to download image files that are called when applications run (Microsoft Store or Inbox MSN Apps). If you turn off traffic for these endpoints, the image files won't be downloaded, and apps can't be installed or updated from the Microsoft Store. Additionally, the Microsoft Store won't be able to revoke malicious apps and users will still be able to open them.|TLSv1.2/HTTPS|img-prod-cms-rt-microsoft-com.akamaized.net|
+|||HTTP|img-s-msn-com.akamaized.net|
 ||The following endpoint is needed to load the content in the Microsoft Store app.|HTTPS|livetileedge.dsx.mp.microsoft.com|
+|||HTTP|storeedgefd.dsx.mp.microsoft.com|
 ||The following endpoint is used for the Windows Push Notification Services (WNS). WNS enables third-party developers to send toast, tile, badge, and raw updates from their own cloud service. This provides a mechanism to deliver new updates to your users in a power-efficient and dependable way. If you turn off traffic for this endpoint, push notifications will no longer work, including MDM device management, mail synchronization, settings synchronization.|TLSv1.2/HTTPS|*.wns.windows.com|
 ||The following endpoints are used to revoke licenses for malicious apps in the Microsoft Store. To turn off traffic for this endpoint, either uninstall the app or disable the Microsoft Store. If you disable the Microsoft Store, other Microsoft Store apps can't be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious apps and users will still be able to open them|TLSv1.2/HTTPS/HTTP|storecatalogrevocation.storequality.microsoft.com|
 ||The following endpoint is used to get Microsoft Store analytics.|HTTPS|manage.devcenter.microsoft.com|
 ||The following endpoints are used to communicate with Microsoft Store. If you turn off traffic for these endpoints, apps can't be installed or updated from the Microsoft Store.|TLSv1.2/HTTPS/HTTP|displaycatalog.mp.microsoft.com|
 |||HTTP|share.microsoft.com|
 ||The following endpoint is used to get Microsoft Store analytics.|TLSv1.2/HTTPS/HTTP|manage.devcenter.microsoft.com|
-|||TLSv1.2/HTTP|displaycatalog.mp.microsoft.com|
-|||TLSv1.2|client.wns.windows.com|
-|||HTTP|img-s-msn-com.akamaized.net|
-|||HTTP|storeedgefd.dsx.mp.microsoft.com|
-|||TLSv1.2|wns2-db5p.wns.windows.com|
 |Microsoft To Do|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#26-microsoft-store)|
 ||The following endpoints are used for the Microsoft To Do app.|HTTP|staging.to-do.officeppe.com|
 |||HTTP|staging.to-do.microsoft.com|
@@ -146,7 +143,7 @@ The following methodology was used to derive these network endpoints:
 |||TLSv1.2/HTTPS/HTTP|arc.msn.com|
 |||HTTPS|ris.api.iris.microsoft.com|
 |||TLSv1.2/HTTP|api.msn.com|
-|||TLSv1.2/HTTP|assests.msn.com|
+|||TLSv1.2/HTTP|assets.msn.com|
 |||HTTP|c.msn.com|
 |||HTTP|ntp.msn.com|
 |||HTTP|srtb.msn.com|
