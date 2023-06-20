@@ -217,8 +217,10 @@
           - name: Software updates in the Microsoft 365 admin center
             href: update/wufb-reports-admin-center.md                                
           - name: Use Windows Update for Business reports data
-            href: update/wufb-reports-use.md                                
-          - name: Feedback, support, and troubleshooting 
+            href: update/wufb-reports-use.md
+          - name: FAQ for Windows Update for Business reports
+            href: update/wufb-reports-faq.yml                                            
+          - name: Feedback and support 
             href: update/wufb-reports-help.md                                               
         - name: Windows Update for Business reports schema reference
           items:
