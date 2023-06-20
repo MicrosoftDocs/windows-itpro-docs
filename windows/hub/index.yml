@@ -62,7 +62,7 @@ productDirectory:
         - url: /windows/deployment/windows-autopatch
           text: Windows Autopatch overview
         - url: /windows/deployment
-          text: Learn more about Windows deployment
+          text: Learn more about Windows deployment >
 
     - title: Learn how to manage Windows
       imageSrc: /media/common/i_management.svg
@@ -78,7 +78,7 @@ productDirectory:
         - url: /windows/client-management/client-tools/quick-assist
           text: Use Quick Assist to help users
         - url: /windows/client-management
-          text: Learn more about Windows management
+          text: Learn more about Windows management >
 
     - title: Learn how to configure Windows
       imageSrc: /media/common/i_config-tools.svg
@@ -94,7 +94,7 @@ productDirectory:
         - url: /windows/configuration/kiosk-methods
           text: Configure kiosks and digital signs
         - url: /windows/configuration
-          text: Learn more about Windows configuration
+          text: Learn more about Windows configuration >
 
     - title: Learn how to secure Windows
       imageSrc: /media/common/i_security-management.svg
@@ -110,7 +110,7 @@ productDirectory:
         - url: /windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview
           text: Microsoft Defender Application Guard
         - url: /windows/security
-          text: Learn more about Windows security
+          text: Learn more about Windows security >
 
     - title: Learn about privacy in Windows
       imageSrc: /media/common/i_lock.svg
@@ -126,7 +126,7 @@ productDirectory:
         - url: /windows/privacy/changes-to-windows-diagnostic-data-collection
           text: Changes to Windows diagnostic data collection
         - url: /windows/privacy
-          text: Learn more about privacy in Windows
+          text: Learn more about privacy in Windows >
 
     - title: Learn about Windows for Education
       imageSrc: /media/common/i_advanced.svg
@@ -142,7 +142,7 @@ productDirectory:
         - url: /education/windows/tutorial-deploy-apps-winse/
           text: "Tutorial: deploy applications to Windows 11 SE"
         - url: /education/Windows
-          text: Learn more about Windows for Education
+          text: Learn more about Windows for Education >
 
 additionalContent:
   sections:
