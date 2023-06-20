@@ -32,12 +32,13 @@ Windows Hello for Business cloud Kerberos trust uses *Azure AD Kerberos*, which 
 Cloud Kerberos trust uses Azure AD Kerberos, which doesn't require a PKI to request TGTs.\
 With Azure AD Kerberos, Azure AD can issue TGTs for one or more AD domains. Windows can request a TGT from Azure AD when authenticating with Windows Hello for Business, and use the returned TGT for sign-in or to access AD-based resources. The on-premises domain controllers are still responsible for Kerberos service tickets and authorization.
 
-When Azure AD Kerberos is enabled in an Active Directory domain, an *Azure AD Kerberos server object* is created in the domain. This object:
+When Azure AD Kerberos is enabled in an Active Directory domain, an *AzureADKerberos* computer object is created in the domain. This object:
 
 - Appears as a Read Only Domain Controller (RODC) object, but isn't associated with any physical servers
-- Is only used by Azure AD to generate TGTs for the Active Directory domain.
+- Is only used by Azure AD to generate TGTs for the Active Directory domain
+
   > [!NOTE]
-  > The same rules and restrictions used for RODCs apply to the Azure AD Kerberos Server object. For example, users that are direct or indirect members of the built-in security group *Denied RODC Password Replication Group* won't be able to use cloud Kerberos trust.
+  > Similar rules and restrictions used for RODCs apply to the AzureADKerberos computer object. For example, users that are direct or indirect members of priviliged built-in security groups won't be able to use cloud Kerberos trust.
 
 :::image type="content" source="images/azuread-kerberos-object.png" alt-text="Active Directory Users and Computers console, showing the computer object representing the Azure AD Kerberos server ":::
 
@@ -67,9 +68,9 @@ The following scenarios aren't supported using Windows Hello for Business cloud 
 - Signing in with cloud Kerberos trust on a Hybrid Azure AD joined device without previously signing in with DC connectivity
 
 > [!NOTE]
-> The default security policy for AD does not grant permission to sign high privilege accounts on to on-premises resources with cloud Kerberos trust or FIDO2 security keys.
+> The default *Password Replication Policy* configured on the AzureADKerberos computer object doesn't allow to sign high privilege accounts on to on-premises resources with cloud Kerberos trust or FIDO2 security keys.
 >
-> To unblock the accounts, use Active Directory Users and Computers to modify the msDS-NeverRevealGroup property of the Azure AD Kerberos Computer object `CN=AzureADKerberos,OU=Domain Controllers,<domain-DN>`.
+> Due to possible attack vectors from Azure AD to Active Directory, it **isn't recommended** to unblock these accounts by relaxing the Password Replication Policy of the computer object `CN=AzureADKerberos,OU=Domain Controllers,<domain-DN>`.
 
 ## Next steps
 
