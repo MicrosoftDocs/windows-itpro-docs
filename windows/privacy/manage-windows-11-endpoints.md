@@ -108,8 +108,8 @@ The following methodology was used to derive these network endpoints:
 |||HTTP|img-s-msn-com.akamaized.net|
 |||HTTP|storeedgefd.dsx.mp.microsoft.com|
 |||TLSv1.2|wns2-db5p.wns.windows.com|
-|Microsoft To Do|The following endpoints are used for the Microsoft To Do app. |||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#26-microsoft-store)|
-|||HTTP|staging.to-do.officeppe.com|
+|Microsoft To Do|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#26-microsoft-store)|
+||The following endpoints are used for the Microsoft To Do app.|HTTP|staging.to-do.officeppe.com|
 |||HTTP|staging.to-do.microsoft.com|
 |||TLSv1.2/HTTP|to-do.microsoft.com|
 |Network Connection Status Indicator (NCSI)|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-ncsi)|
