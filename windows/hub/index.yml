@@ -19,15 +19,15 @@ metadata:
 
 highlightedContent:
   items:
-  - title: Windows 11, version 22H2
-    itemType: whats-new
-    url: /whats-new/whats-new-windows-11-version-22H2
   - title: Get started with Windows 11
     itemType: get-started
-    url: /whats-new/windows-11-overview
-  - title: Windows 11 requirements
-    itemType: get-started
-    url: /windows/whats-new/windows-11-requirements
+    url: /windows/whats-new/windows-11-overview
+  - title: Windows 11, version 22H2
+    itemType: whats-new
+    url: /windows/whats-new/whats-new-windows-11-version-22H2
+  - title: Windows 11, version 22H2 group policy settings reference 
+    itemType: download
+    url: https://www.microsoft.com/en-us/download/details.aspx?id=104594
   - title: Windows Insider Program
     itemType: get-started
     url: /windows-insider/get-started
@@ -136,22 +136,22 @@ additionalContent:
   sections:
     - title: More Windows resources
       items:
-        # Card
-        - title: Windows product site and blogs
+      
+        - title: Windows harware
           links:
-            - text: Find out how Windows enables your business to do more
-              url: https://www.microsoft.com/microsoft-365/windows
-            - text: Windows blogs
-              url: https://blogs.windows.com/
-            - text: Windows IT Pro blog
-              url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog
-        - title: Participate in the community
-          links:
-            - text: Windows community
-              url: https://techcommunity.microsoft.com/t5/windows/ct-p/Windows10
-            - text: Microsoft Support community
-              url: https://answers.microsoft.com/windows/forum
-          url: https://answers.microsoft.com/windows/forum
+            - text: Windows hardware developer documentation
+              url: /windows-hardware/drivers/
+            - text: Get started with building Windows devices
+              url: /windows-hardware/get-started
+            - text: Download the Windows Driver Kit
+              url: /windows-hardware/drivers/download-the-wdk
+            - text: Device and driver installation
+              url: /windows-hardware/drivers/install/overview-of-device-and-driver-installation
+            - text: Windows Driver Frameworks
+              url: /windows-hardware/drivers/wdf/
+            - text: Kernel-mode driver architecture design guide
+              url: /windows-hardware/drivers/kernel/
+
         - title: Windows Server
           links:
             - text: Windows Server documentation
@@ -160,3 +160,20 @@ additionalContent:
               url: /windows-server/get-started/whats-new-in-windows-server-2022
             - text: Windows Server blog
               url: https://cloudblogs.microsoft.com/windowsserver/
+
+        - title: Windows product site and blogs
+          links:
+            - text: Find out how Windows enables your business to do more
+              url: https://www.microsoft.com/microsoft-365/windows
+            - text: Windows blogs
+              url: https://blogs.windows.com/
+            - text: Windows IT Pro blog
+              url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog
+
+        - title: Participate in the community
+          links:
+            - text: Windows community
+              url: https://techcommunity.microsoft.com/t5/windows/ct-p/Windows10
+            - text: Microsoft Support community
+              url: https://answers.microsoft.com/windows/forum
+          url: https://answers.microsoft.com/windows/forum
