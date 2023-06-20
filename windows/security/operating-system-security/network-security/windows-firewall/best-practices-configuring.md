@@ -147,18 +147,18 @@ In general, to maintain maximum security, admins should only push firewall excep
 
 The Windows Firewall settings configured via group policy are stored in the registry. By default, group policies are refreshed in the background every 90 minutes, with a random offset of 0 to 30 minutes.
 
-When Windows Firewall checks the registry for any configuration changes, the *Windows Filtering Platform (WFP)* performs the following actions:
+Windows Firewall monitors the registry for changes, and if something is written to the registry it notifies the *Windows Filtering Platform (WFP)*, which performs the following actions:
 
 - Reads all firewall rules and settings
 - Applies any new filters
 - Removes the old filters
 
 > [!NOTE]
-> The actions are triggered regardless if there's a configuration change. During the process, IPsec connections are disconnected.
+> The actions are triggered whenever something is written to, or deleted from the registry location the GPO settings are stored, regardless if there's really a configuration change. During the process, IPsec connections are disconnected.
 
 Many policy implementations specify that they are updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired policy setting in case a user has changed it. To control the behavior of the registry group policy processing, you can use the policy `Computer Configuration > Administrative Templates > System > Group Policy > Configure registry policy processing`. The *Process even if the Group Policy objects have not changed* option updates and reapplies the policies even if the policies have not changed. This option is disabled by default.
 
-If you enable the option *Process even if the Group Policy objects have not changed*, the WFP filters get reapplied during every background refresh. In case you have ten group policies, the WFP filters get reapplied ten times during the refresh interval. If an error happens during policy processing, the applied settings may be incomplete, resulting in issues like:
+If you enable the option *Process even if the Group Policy objects have not changed*, the WFP filters get reapplied during **every** background refresh. In case you have ten group policies, the WFP filters get reapplied ten times during the refresh interval. If an error happens during policy processing, the applied settings may be incomplete, resulting in issues like:
 
 - Windows Defender Firewall blocks inbound or outbound traffic allowed by group policies
 - Local Firewall settings are applied instead of group policy settings
