@@ -43,7 +43,7 @@ Windows supports a number of EAP authentication methods.
 
   - Fast Reconnect: reduces the delay between an authentication request by a client and the response by the Network Policy Server (NPS) or other Remote Authentication Dial-in User Service (RADIUS) server. This reduces resource requirements for both client and server, and minimizes the number of times that users are prompted for credentials.
 
-  - [Cryptobinding](/openspecs/windows_protocols/ms-peap/757a16c7-0826-4ba9-bb71-8c3f1339e937): By deriving and exchanging values from the PEAP phase 1 key material (**Tunnel Key**) and from the PEAP phase 2 inner EAP method key material (**Inner Session Key**), it is possible to prove that the two authentications terminate at the same two entities (PEAP peer and PEAP server). This process, termed "cryptobinding", is used to protect the PEAP negotiation against "Man in the Middle" attacks.
+  - [Cryptobinding](/openspecs/windows_protocols/ms-peap/757a16c7-0826-4ba9-bb71-8c3f1339e937): By deriving and exchanging values from the PEAP phase 1 key material (**Tunnel Key**) and from the PEAP phase 2 inner EAP method key material (**Inner Session Key**), it's possible to prove that the two authentications terminate at the same two entities (PEAP peer and PEAP server). This process, termed "cryptobinding", is used to protect the PEAP negotiation against "Man in the Middle" attacks.
 
 - Tunneled Transport Layer Security (TTLS)
   - Inner method
