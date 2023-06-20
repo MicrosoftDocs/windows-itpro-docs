@@ -15,11 +15,9 @@ metadata:
   author: paolomatarazzo
   ms.author: paoloma
   manager: aaroncz
-  ms.date: 06/19/2023
-  
-# Maximum of 8 items
+  ms.date: 06/20/2023
+
 highlightedContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
   - title: Windows 11, version 22H2
     itemType: whats-new
@@ -46,11 +44,10 @@ highlightedContent:
     itemType: how-to-guide
     url: /intune/fundamentals/deployment-guide-enrollment-windows
 
-# productDirectory section (optional)
 productDirectory:
   title: Get started
   items:
-  # Card
+
     - title: Learn how to deploy Windows
       imageSrc: /media/common/i_deploy.svg
       links:
@@ -88,12 +85,12 @@ productDirectory:
           text: Accessibility information
         - url: /windows/configuration/provisioning-packages/provisioning-packages
           text: Use Provisioning packages to configure new devices
-        - url: /windows/configuration/windows-accessibility-for-itpros
-          text: Accessibility information
         - url: /windows/configuration/customize-start-menu-layout-windows-11
           text: Customize the Start menu layout
         - url: /windows/configuration/set-up-shared-or-guest-pc
           text: Set up a shared or guest PC
+        - url: /windows/configuration/kiosk-methods
+          text: Configure kiosks and digital signs
         - url: /windows/configuration
           text: Learn more about Windows configuration
 
@@ -134,7 +131,6 @@ productDirectory:
           text: Configure federated sign-in for Windows devices
         - url: /education/Windows
           text: Learn more about Windows for Education
-
 
 additionalContent:
   sections:
