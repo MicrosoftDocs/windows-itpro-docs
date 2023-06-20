@@ -1,7 +1,7 @@
 ---
 title: VPN authentication options 
 description: Learn about the EAP authentication methods that Windows supports in VPNs to provide secure authentication using username/password and certificate-based methods.
-ms.date: 09/23/2021
+ms.date: 06/20/2023
 ms.topic: conceptual
 ---
 
@@ -9,7 +9,7 @@ ms.topic: conceptual
 
 In addition to older and less-secure password-based authentication methods (which should be avoided), the built-in VPN solution uses Extensible Authentication Protocol (EAP) to provide secure authentication using both user name and password, and certificate-based methods. You can only configure EAP-based authentication if you select a built-in VPN type (IKEv2, L2TP, PPTP or Automatic).
 
-Windows supports a number of EAP authentication methods. 
+Windows supports a number of EAP authentication methods.
 
 - EAP-Microsoft Challenge Handshake Authentication Protocol version 2 (EAP-MSCHAPv2):
   - User name and password authentication
@@ -71,14 +71,14 @@ For a UWP VPN plug-in, the app vendor controls the authentication method to be u
 
 ## Configure authentication
 
-See [EAP configuration](/windows/client-management/mdm/eap-configuration) for EAP XML configuration. 
+See [EAP configuration](/windows/client-management/mdm/eap-configuration) for EAP XML configuration.
 
 >[!NOTE]
 >To configure Windows Hello for Business authentication, follow the steps in [EAP configuration](/windows/client-management/mdm/eap-configuration) to create a smart card certificate. [Learn more about Windows Hello for Business.](../../../identity-protection/hello-for-business/hello-identity-verification.md).
 
 The following image shows the field for EAP XML in a Microsoft Intune VPN profile. The EAP XML field only appears when you select a built-in connection type (automatic, IKEv2, L2TP, PPTP).
 
-:::image type="content" source="images/vpn-eap-xml.png" alt-text="EAP XML configuration in Intune profile.":::
+:::image type="content" source="images/vpn-eap-xml.png" alt-text="Screenshot showing EAP XML configuration in Intune profile.":::
 
 ## Related topics
 
@@ -90,3 +90,4 @@ The following image shows the field for EAP XML in a Microsoft Intune VPN profil
 - [VPN auto-triggered profile options](vpn-auto-trigger-profile.md)
 - [VPN security features](vpn-security-features.md)
 - [VPN profile options](vpn-profile-options.md)
+- [Extensible Authentication Protocol (EAP) for network access](/windows-server/networking/technologies/extensible-authentication-protocol/network-access)
