@@ -38,7 +38,7 @@ Use the Event Viewer to see if a supplemental policy is deployed correctly. Thes
     - The policy that allows managed installers is **`C0DB889B-59C5-453C-B297-399C851934E4`**. Checking that this policy is applied correctly, indicates that a device is setup to allow managed installers (and therefore, can allow installation of Win32 apps via the Intune Management Extension).\
     You can check that the **Managed Installer policy** rule was set in the policy, by checking the **Options** field in the **details** pane. For more information, see: [Understanding Application Control event IDs][WIN-1]
 
-    :::image type="content" source="images/troubleshoot-managed-installer-policy.png" alt-text="Screenshot of the CodeIntegrity operational log" lightbox="images/troubleshoot-managed-installer-policy.png":::
+    :::image type="content" source="images/troubleshoot-managed-installer-policy.png" alt-text="Screenshot of the CodeIntegrity operational log." lightbox="images/troubleshoot-managed-installer-policy.png":::
 
     You can also verify that the policy has been activated by running the following from the <kbd>Win</kbd> + <kbd>R</kbd> *Run dialog* on a target device as an Administrator (hold <kbd>CTRL</kbd> + <kbd>Shift</kbd> when pressing Enter to run the command):
 
