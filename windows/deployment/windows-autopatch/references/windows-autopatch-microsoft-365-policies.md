@@ -10,13 +10,15 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: hathind
+ms.collection:
+  - tier2
 ---
 
 # Microsoft 365 Apps for enterprise update policies
 
 ## Conflicting and unsupported policies
 
-Deploying any of the following policies to a managed device will make that device ineligible for management since the device will prevent us from delivering the service as designed.
+Deploying any of the following policies to a managed device makes that device ineligible for management since the device prevents us from delivering the service as designed.
 
 ### Update policies
 
