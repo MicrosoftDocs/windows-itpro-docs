@@ -1,5 +1,5 @@
 ---
-title: Testing scenarios for Windows Information Protection (WIP) (Windows 10)
+title: Testing scenarios for Windows Information Protection (WIP) 
 description: A list of suggested testing scenarios that you can use to test Windows Information Protection (WIP) in your company.
 ms.reviewer: 
 ms.prod: windows-client

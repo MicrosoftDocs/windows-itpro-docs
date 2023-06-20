@@ -1,5 +1,5 @@
 ---
-title: Account Lockout Policy (Windows 10)
+title: Account Lockout Policy 
 description: Describes the Account Lockout Policy settings and links to information about each policy setting.
 ms.assetid: eb968c28-17c5-405f-b413-50728cb7b724
 ms.reviewer: 

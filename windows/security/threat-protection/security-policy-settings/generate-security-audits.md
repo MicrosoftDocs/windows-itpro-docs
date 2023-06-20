@@ -1,5 +1,5 @@
 ---
-title: Generate security audits (Windows 10)
+title: Generate security audits 
 description: Describes the best practices, location, values, policy management, and security considerations for the Generate security audits security policy setting.
 ms.assetid: c0e1cd80-840e-4c74-917c-5c2349de885f
 ms.reviewer: 

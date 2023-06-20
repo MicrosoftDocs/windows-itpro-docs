@@ -1,5 +1,5 @@
 ---
-title: Audit Process Creation (Windows 10)
+title: Audit Process Creation 
 description: The Advanced Security Audit policy setting, Audit Process Creation, determines if audit events are generated when a process is created (starts).
 ms.assetid: 67e39fcd-ded6-45e8-b1b6-d411e4e93019
 ms.reviewer: 

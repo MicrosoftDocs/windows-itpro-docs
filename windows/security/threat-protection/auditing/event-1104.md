@@ -1,5 +1,5 @@
 ---
-title: 1104(S) The security log is now full. (Windows 10)
+title: 1104(S) The security log is now full. 
 description: This event generates every time Windows security log becomes full and the event log retention method is set to Do not overwrite events.
 ms.pagetype: security
 ms.prod: windows-client

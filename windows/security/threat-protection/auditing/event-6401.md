@@ -1,5 +1,5 @@
 ---
-title: 6401(-) BranchCache Received invalid data from a peer. Data discarded. (Windows 10)
+title: 6401(-) BranchCache Received invalid data from a peer. Data discarded. 
 description: Describes security event 6401(-) BranchCache Received invalid data from a peer. Data discarded.
 ms.pagetype: security
 ms.prod: windows-client

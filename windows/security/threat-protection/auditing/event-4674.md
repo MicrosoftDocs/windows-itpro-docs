@@ -1,5 +1,5 @@
 ---
-title: 4674(S, F) An operation was attempted on a privileged object. (Windows 10)
+title: 4674(S, F) An operation was attempted on a privileged object. 
 description: Describes security event 4674(S, F) An operation was attempted on a privileged object.
 ms.pagetype: security
 ms.prod: windows-client

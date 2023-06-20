@@ -1,5 +1,5 @@
 ---
-title: 4932(S) Synchronization of a replica of an Active Directory naming context has begun. (Windows 10)
+title: 4932(S) Synchronization of a replica of an Active Directory naming context has begun. 
 description: Describes security event 4932(S) Synchronization of a replica of an Active Directory naming context has begun.
 ms.pagetype: security
 ms.prod: windows-client

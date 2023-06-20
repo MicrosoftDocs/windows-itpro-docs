@@ -1,5 +1,5 @@
 ---
-title: 4694(S, F) Protection of auditable protected data was attempted. (Windows 10)
+title: 4694(S, F) Protection of auditable protected data was attempted. 
 description: Describes security event 4694(S, F) Protection of auditable protected data was attempted.
 ms.pagetype: security
 ms.prod: windows-client

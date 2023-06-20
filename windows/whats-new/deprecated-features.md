@@ -1,7 +1,7 @@
 ---
 title: Deprecated features in the Windows client
 description: Review the list of features that Microsoft is no longer developing in Windows 10 and Windows 11.
-ms.date: 12/05/2022
+ms.date: 06/08/2023
 ms.prod: windows-client
 ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
@@ -12,14 +12,12 @@ ms.topic: conceptual
 ms.collection:
   - highpri
   - tier1
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Deprecated features for Windows client
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 Each version of Windows client adds new features and functionality. Occasionally, new versions also remove features and functionality, often because they've added a newer option. This article provides details about the features and functionalities that are no longer being developed in Windows client. For more information about features that have been removed, see [Windows features removed](removed-features.md).
 
@@ -38,6 +36,7 @@ The features in this article are no longer being actively developed, and might b
 
 |Feature    |  Details and mitigation  | Deprecation announced |
 | ----------- | --------------------- | ---- |
+| Cortana in Windows <!--7987543--> | Cortana in Windows as a standalone app is deprecated. This change only impacts Cortana in Windows, and your productivity assistant, Cortana, will continue to be available in Outlook mobile, Teams mobile, Microsoft Teams display, and Microsoft Teams rooms. | June 2023 | 
 | Microsoft Support Diagnostic Tool (MSDT) <!--6968128--> | [MSDT](/windows-server/administration/windows-commands/msdt) is deprecated and will be removed in a future release of Windows. MSDT is used to gather diagnostic data for analysis by support professionals. For more information, see [Resources for deprecated features](deprecated-features-resources.md) | January 2023 |
 | Universal Windows Platform (UWP) Applications for 32-bit Arm <!--7116112-->| This change is applicable only to devices with an Arm processor, for example Snapdragon processors from Qualcomm. If you have a PC built with a processor from Intel or AMD, this content is not applicable. If you are not sure which type of processor you have, check **Settings** > **System** > **About**.</br> </br> Support for 32-bit Arm versions of applications will be removed in a future release of Windows 11. After this change, for the small number of applications affected, app features might be different and you might notice a difference in performance. For more technical details about this change, see [Update app architecture from Arm32 to Arm64](/windows/arm/arm32-to-arm64). | January 2023 |
 | Update Compliance <!--7260188-->| [Update Compliance](/windows/deployment/update/update-compliance-monitor), a cloud-based service for the Windows client, is no longer being developed. This service has been replaced with [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview), which provides reporting on client compliance with Microsoft updates from the Azure portal. | November 2022|

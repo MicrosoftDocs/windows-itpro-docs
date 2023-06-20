@@ -1,5 +1,5 @@
 ---
-title: 4951(F) A rule has been ignored because its major version number wasn't recognized by Windows Firewall. (Windows 10)
+title: 4951(F) A rule has been ignored because its major version number wasn't recognized by Windows Firewall. 
 description: Describes security event 4951(F) A rule has been ignored because its major version number wasn't recognized by Windows Firewall.
 ms.pagetype: security
 ms.prod: windows-client

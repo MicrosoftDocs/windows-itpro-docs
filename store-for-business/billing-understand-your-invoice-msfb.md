@@ -9,19 +9,22 @@ author: cmcatee-MSFT
 manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 07/21/2021
+ms.date: 05/24/2023
 ms.reviewer: 
 ---
 
 # Understand your Microsoft Customer Agreement invoice
 
 > [!IMPORTANT]
-> The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
+>
+> - The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
+> - In April 2023 the Microsoft Store for Business tab was removed from Microsoft Store apps on Windows 10 and Windows 11 PCs. An interaction with existing MDM and GPO policies may lead to customers seeing errors when accessing the Microsoft Store app. For more information see [Microsoft Store for Business tab removed](manage-access-to-private-store.md#microsoft-store-for-business-tab-removed).
 
 The invoice provides a summary of your charges and provides instructions for payment. It's available for
 download in the Portable Document Format (.pdf) for commercial customers from Microsoft Store for Business [Microsoft Store for Business - Invoice](https://businessstore.microsoft.com/manage/payments-billing/invoices) or can be sent via email. This article applies to invoices generated for a Microsoft Customer Agreement billing account. Check if you have a [Microsoft Customer Agreement](https://businessstore.microsoft.com/manage/organization/agreements).
 
 ## General invoice information
+
 Invoices are your bill from Microsoft. A few things to note:
 
 - **Invoice schedule** - You're invoiced on a monthly basis. You can find out which day of the month you receive invoices by checking invoice date under billing profile overview in [Microsoft Store for Business](https://businessstore.microsoft.com/manage/payments-billing/billing-profiles). Charges that occur between the end of the billing period and the invoice date are included in the next month's invoice, since they are in the next billing period. The billing period start and end dates for each invoice are listed in the invoice PDF above **Billing Summary**.

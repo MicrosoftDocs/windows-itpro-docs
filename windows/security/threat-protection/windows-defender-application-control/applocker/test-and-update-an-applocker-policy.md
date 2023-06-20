@@ -1,29 +1,18 @@
 ---
-title: Test and update an AppLocker policy (Windows)
+title: Test and update an AppLocker policy
 description: This topic discusses the steps required to test an AppLocker policy prior to deployment.
-ms.assetid: 7d53cbef-078c-4d20-8b00-e821e33b6ea1
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # Test and update an AppLocker policy
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -67,10 +56,8 @@ After you've identified which rules need to be edited or added to the policy, yo
 
 ## Step 6: Repeat policy testing, analysis, and policy modification
 
-Repeat the previous steps 3–5 until all the rules perform as intended before applying enforcement.
+Repeat the previous steps 3-5 until all the rules perform as intended before applying enforcement.
 
 ## Other resources
 
 -   For steps to perform other AppLocker policy tasks, see [Administer AppLocker](administer-applocker.md).
- 
- 

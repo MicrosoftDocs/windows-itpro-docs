@@ -1,29 +1,18 @@
 ---
-title: Windows Installer rules in AppLocker (Windows)
+title: Windows Installer rules in AppLocker
 description: This topic describes the file formats and available default rules for the Windows Installer rule collection.
-ms.assetid: 3fecde5b-88b3-4040-81fa-a2d36d052ec9
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # Windows Installer rules in AppLocker
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -47,5 +36,3 @@ The purpose of this collection is to allow you to control the installation of fi
 ## Related topics
 
 - [Understanding AppLocker default rules](understanding-applocker-default-rules.md)
- 
- 

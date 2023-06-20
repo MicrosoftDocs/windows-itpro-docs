@@ -1,5 +1,5 @@
 ---
-title: System cryptography Use FIPS compliant algorithms for encryption, hashing, and signing (Windows 10)
+title: System cryptography Use FIPS compliant algorithms for encryption, hashing, and signing 
 description: Best practices, security considerations, and more for the policy setting System cryptography Use FIPS compliant algorithms for encryption, hashing, and signing
 ms.assetid: 83988865-dc0f-45eb-90d1-ee33495eb045
 ms.reviewer: 

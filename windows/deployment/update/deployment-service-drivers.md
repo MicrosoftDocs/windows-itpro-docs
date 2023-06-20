@@ -8,7 +8,7 @@ ms.author: mstewart
 manager: aaroncz
 ms.topic: article
 ms.technology: itpro-updates
-ms.date: 02/14/2023
+ms.date: 06/16/2023
 ---
 
 # Deploy drivers and firmware updates with Windows Update for Business deployment service
@@ -123,7 +123,7 @@ To create a policy with additional settings, in the request body:
    {
      "@odata.type": "#microsoft.graph.windowsUpdates.updatePolicy",
      "audience": {
-       "@odata.id": "d39ad1ce-0123-4567-89ab-cdef01234567"
+       "id": "d39ad1ce-0123-4567-89ab-cdef01234567"
      },
      "complianceChanges": [
        {

@@ -1,5 +1,5 @@
 ---
-title: 4950(S) A Windows Firewall setting has changed. (Windows 10)
+title: 4950(S) A Windows Firewall setting has changed. 
 description: Describes security event 4950(S) A Windows Firewall setting has changed.
 ms.pagetype: security
 ms.prod: windows-client

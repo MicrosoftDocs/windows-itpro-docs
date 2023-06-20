@@ -1,5 +1,5 @@
 ---
-title: Accounts Administrator account status (Windows 10)
+title: Accounts Administrator account status 
 description: Describes the best practices, location, values, and security considerations for the Accounts Administrator account status security policy setting.
 ms.assetid: 71a3bd48-1014-49e0-a936-bfe9433af23e
 ms.reviewer: 

@@ -1,5 +1,5 @@
 ---
-title: 4664(S) An attempt was made to create a hard link. (Windows 10)
+title: 4664(S) An attempt was made to create a hard link. 
 description: Describes security event 4664(S) An attempt was made to create a hard link.
 ms.pagetype: security
 ms.prod: windows-client

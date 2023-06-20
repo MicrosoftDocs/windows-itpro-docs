@@ -4,7 +4,7 @@ description: Learn more about the LocalUsersAndGroups Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- Configure-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- Configure-Applicability-End -->
 
 <!-- Configure-OmaUri-Begin -->
@@ -41,12 +41,11 @@ This Setting allows an administrator to manage local groups on a Device.
 Possible settings:
 
 1. Update Group Membership: Update a group and add and/or remove members though the 'U' action.
-When using Update, existing group members that are not specified in the policy remain untouched.
-
+When using Update, existing group members that aren't specified in the policy remain untouched.
 2. Replace Group Membership: Restrict a group by replacing group membership through the 'R' action.
 When using Replace, existing group membership is replaced by the list of members specified in
 the add member section. This option works in the same way as a Restricted Group and any group
-members that are not specified in the policy are removed.
+members that aren't specified in the policy are removed.
 
 > [!CAUTION]
 > If the same group is configured with both Replace and Update, then Replace will win.
@@ -65,7 +64,7 @@ members that are not specified in the policy are removed.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Configure-DFProperties-End -->
 

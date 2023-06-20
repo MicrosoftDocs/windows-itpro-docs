@@ -1,5 +1,5 @@
 ---
-title: Remove Windows Defender Application Control policies  (Windows)
+title: Remove Windows Defender Application Control policies  
 description: Learn how to disable both signed and unsigned Windows Defender Application Control policies, within Windows and within the BIOS.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb

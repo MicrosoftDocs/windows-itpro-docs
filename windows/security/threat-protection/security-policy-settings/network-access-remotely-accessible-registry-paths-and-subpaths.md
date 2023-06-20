@@ -1,5 +1,5 @@
 ---
-title: Network access Remotely accessible registry paths and subpaths (Windows 10)
+title: Network access Remotely accessible registry paths and subpaths 
 description: Describes best practices, location, values, and security considerations for the policy setting, Network access Remotely accessible registry paths and subpaths.
 ms.assetid: 3fcbbf70-a002-4f85-8e86-8dabad21928e
 ms.reviewer: 

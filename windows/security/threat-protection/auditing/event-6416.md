@@ -1,5 +1,5 @@
 ---
-title: 6416(S) A new external device was recognized by the System. (Windows 10)
+title: 6416(S) A new external device was recognized by the System. 
 description: Describes security event 6416(S) A new external device was recognized by the System.
 ms.pagetype: security
 ms.prod: windows-client

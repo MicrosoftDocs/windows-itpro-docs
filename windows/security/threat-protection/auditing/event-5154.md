@@ -1,5 +1,5 @@
 ---
-title: 5154(S) The Windows Filtering Platform has permitted an application or service to listen on a port for incoming connections. (Windows 10)
+title: 5154(S) The Windows Filtering Platform has permitted an application or service to listen on a port for incoming connections. 
 description: Describes security event 5154(S) The Windows Filtering Platform has permitted an application or service to listen on a port for incoming connections.
 ms.pagetype: security
 ms.prod: windows-client

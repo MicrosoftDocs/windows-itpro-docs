@@ -1,29 +1,18 @@
 ---
-title: Understanding AppLocker rule condition types (Windows)
+title: Understanding AppLocker rule condition types
 description: This topic for the IT professional describes the three types of AppLocker rule conditions.
-ms.assetid: c21af67f-60a1-4f7d-952c-a6f769c74729
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # Understanding AppLocker rule condition types
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -58,15 +47,15 @@ Selecting the appropriate condition for each rule depends on the overall applica
     
         > [!NOTE]
         > To determine how many applications on a reference computer are digitally signed, you can use the **Get-AppLockerFileInformation** Windows PowerShell cmdlet for a directory of files. For example, 
-        `Get-AppLockerFileInformation –Directory C:\Windows\ -FileType EXE -recurse` displays the properties for all .exe and .com files within the Windows directory.
-         
+        `Get-AppLockerFileInformation -Directory C:\Windows\ -FileType EXE -recurse` displays the properties for all .exe and .com files within the Windows directory.
+         
 2.  What rule condition type does your organization prefer?
     
     If your organization is already using Software Restriction Policies (SRP) to restrict what files users can run, rules using file hash or path conditions are probably already in place.
     
     > [!NOTE]
     > For a list of supported operating system versions and editions to which SRP and AppLocker rules can be applied, see [Requirements to use AppLocker](requirements-to-use-applocker.md).
-     
+     
 ## Related topics
 
 - [How AppLocker works](how-applocker-works-techref.md)

@@ -34,7 +34,7 @@ Windows 11 is a natural evolution of its predecessor, Windows 10. We have collab
 
 With hardware-based isolation security that begins at the chip, Windows 11 stores sensitive data behind other barriers separated from the operating system. As a result, information including encryption keys and user credentials are protected from unauthorized access and tampering.
 
-In Windows 11, hardware and software work together to protect the operating system. For example, new devices come with [Virtualization-based security (VBS)](/windows-hardware/design/device-experiences/oem-vbs) and [Secure Boot](../trusted-boot.md) built-in and enabled by default to contain and limit malware exploits.
+In Windows 11, hardware and software work together to protect the operating system. For example, new devices come with [Virtualization-based security (VBS)](/windows-hardware/design/device-experiences/oem-vbs) and [Secure Boot](../operating-system-security/system-security/trusted-boot.md) built-in and enabled by default to contain and limit malware exploits.
 
 ### Robust application security and privacy controls
 

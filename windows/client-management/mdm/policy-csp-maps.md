@@ -4,7 +4,7 @@ description: Learn more about the Maps Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowOfflineMapsDownloadOverMeteredConnection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowOfflineMapsDownloadOverMeteredConnection-Applicability-End -->
 
 <!-- AllowOfflineMapsDownloadOverMeteredConnection-OmaUri-Begin -->
@@ -49,7 +49,7 @@ Allows the download and update of map data over metered connections. After the p
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- AllowOfflineMapsDownloadOverMeteredConnection-DFProperties-End -->
@@ -76,7 +76,7 @@ Allows the download and update of map data over metered connections. After the p
 <!-- EnableOfflineMapsAutoUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- EnableOfflineMapsAutoUpdate-Applicability-End -->
 
 <!-- EnableOfflineMapsAutoUpdate-OmaUri-Begin -->
@@ -99,7 +99,7 @@ Disables the automatic download and update of map data. After the policy is appl
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 65535 |
 <!-- EnableOfflineMapsAutoUpdate-DFProperties-End -->

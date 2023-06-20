@@ -10,6 +10,9 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: andredm7
+ms.collection:
+  - highpri
+  - tier1
 ---
 
 # Manage Windows feature update releases: Windows Autopatch groups experience (public preview) 
@@ -91,6 +94,7 @@ The release statuses are described in the following table:
 | Active | All phases in the release are active. This means all phases have reached their first deployment date, which created the Windows feature update policies. |<ul><li>Release can be paused but can't be edited or canceled since the Windows feature update policy was already created for its phases.</li><li>Autopatch groups and their deployment rings can be assigned to another release.</li></ul> |
 | Inactive | All the Autopatch groups within the release have been assigned to a new release. As a result, the Windows feature update policies were unassigned from all phases from within the release. |<ul><li>Release can be viewed as a historical record.</li><li>Releases can't be deleted, edited, or canceled.</li></ul> |
 | Paused | All phases in the release are paused. The release will remain paused until you resume it. | <ul><li>Releases with Paused status can't be edited or canceled since the Windows feature update policy was already created for its phases.</li><li>Release can be resumed.</li></ul> |
+| Canceled | All phases in the release are canceled. | <ul><li>Releases with Canceled status can't be edited or canceled since the Windows feature update policy wasn't created for its phases.</li><li>Canceled release can't be deleted.</li></ul> |
 
 ##### Phase statuses
 
@@ -105,6 +109,7 @@ A phase is made of one or more Autopatch group deployment rings. Each phase repo
 | Active | The first deployment date has been reached. The Windows feature update policy has been created for the respective phase. |
 | Inactive | All Autopatch groups within the phase were re-assigned to a new release. All Windows feature update policies were unassigned from the Autopatch groups. |
 | Paused | Phase is paused. You must resume the phase. |
+| Canceled | Phase is canceled. All Autopatch groups within the phase can be used with a new release. A phase that's canceled can't be deleted. |
 
 #### Details about Windows feature update policies
 
@@ -145,6 +150,9 @@ The following table is an example of the Windows feature update policies that we
     1. The **Goal completion date** only applies to the [Deadline-driven deployment cadence type](../operate/windows-autopatch-groups-windows-update.md#deadline-driven). The Deadline-drive deployment cadence type can be specified when you configure the Windows Updates settings during the Autopatch group creation/editing flow.
     2. Additionally, the formula for the goal completion date is `<First Deployment Date> + (<Number of gradual rollout groups> – 1) * Days in between groups (7) + Deadline for feature updates (5 days) + Grace Period (2 days)`.
 1. In the **Review + create** page, review all settings. Once you’re ready, select **Create**.
+
+> [!NOTE]
+> Custom releases can't be deleted from the Windows feature updates release management blade. The custom release record serves as a historical record for auditing purposes when needed.
 
 ## Edit a release
 

@@ -1,5 +1,5 @@
 ---
-title: 4801(S) The workstation was unlocked. (Windows 10)
+title: 4801(S) The workstation was unlocked. 
 description: Describes security event 4801(S) The workstation was unlocked. This event is generated when workstation is unlocked.
 ms.pagetype: security
 ms.prod: windows-client

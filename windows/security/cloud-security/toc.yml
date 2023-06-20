@@ -1,6 +1,4 @@
 items:
-- name: Overview
-  href: ../cloud.md
 - name: Join Active Directory and Azure AD with single sign-on (SSO) 🔗
   href: /azure/active-directory/devices/concept-azure-ad-join
 - name: Security baselines with Intune 🔗

@@ -1,5 +1,5 @@
 ---
-title: 4957(F) Windows Firewall did not apply the following rule. (Windows 10)
+title: 4957(F) Windows Firewall did not apply the following rule. 
 description: Describes security event 4957(F) Windows Firewall didn't apply the following rule.
 ms.pagetype: security
 ms.prod: windows-client

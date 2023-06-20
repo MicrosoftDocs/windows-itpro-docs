@@ -4,7 +4,7 @@ description: Learn more about the DevInfo CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -45,7 +45,7 @@ The following list shows the DevInfo configuration service provider nodes:
 <!-- Device-DevId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-DevId-Applicability-End -->
 
 <!-- Device-DevId-OmaUri-Begin -->
@@ -74,7 +74,7 @@ An unique device identifier. An application-specific global unique device identi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-DevId-DFProperties-End -->
 
@@ -90,7 +90,7 @@ An unique device identifier. An application-specific global unique device identi
 <!-- Device-DmV-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-DmV-Applicability-End -->
 
 <!-- Device-DmV-OmaUri-Begin -->
@@ -113,7 +113,7 @@ The current management client revision of the device.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-DmV-DFProperties-End -->
 
@@ -129,7 +129,7 @@ The current management client revision of the device.
 <!-- Device-Ext-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-Applicability-End -->
 
 <!-- Device-Ext-OmaUri-Begin -->
@@ -152,7 +152,7 @@ Parent node for nodes extended by Microsoft.
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Ext-DFProperties-End -->
 
@@ -168,7 +168,7 @@ Parent node for nodes extended by Microsoft.
 <!-- Device-Ext-ICCID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Ext-ICCID-Applicability-End -->
 
 <!-- Device-Ext-ICCID-OmaUri-Begin -->
@@ -191,7 +191,7 @@ Retrieves the ICCID of the first adapter.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Ext-ICCID-DFProperties-End -->
 
@@ -207,7 +207,7 @@ Retrieves the ICCID of the first adapter.
 <!-- Device-Lang-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Lang-Applicability-End -->
 
 <!-- Device-Lang-OmaUri-Begin -->
@@ -230,7 +230,7 @@ Returns the current user interface (UI) language setting of the device as define
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Lang-DFProperties-End -->
 
@@ -246,7 +246,7 @@ Returns the current user interface (UI) language setting of the device as define
 <!-- Device-Man-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Man-Applicability-End -->
 
 <!-- Device-Man-OmaUri-Begin -->
@@ -269,7 +269,7 @@ Returns the name of the OEM. For Windows 10 for desktop editions, it returns the
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Man-DFProperties-End -->
 
@@ -285,7 +285,7 @@ Returns the name of the OEM. For Windows 10 for desktop editions, it returns the
 <!-- Device-Mod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Mod-Applicability-End -->
 
 <!-- Device-Mod-OmaUri-Begin -->
@@ -308,7 +308,7 @@ Returns the name of the hardware device model as specified by the mobile operato
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Get |
 <!-- Device-Mod-DFProperties-End -->
 

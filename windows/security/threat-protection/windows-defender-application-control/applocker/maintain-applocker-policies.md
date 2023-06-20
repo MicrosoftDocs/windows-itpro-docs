@@ -1,29 +1,18 @@
 ---
-title: Maintain AppLocker policies (Windows)
+title: Maintain AppLocker policies
 description: Learn how to maintain rules within AppLocker policies. View common AppLocker maintenance scenarios and see the methods to use to maintain AppLocker policies.
-ms.assetid: b4fbfdfe-ef3d-49e0-a390-f2dfe74602bc
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.technology: itpro-security
 ms.date: 12/31/2017
 ---
 
 # Maintain AppLocker policies
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -50,7 +39,6 @@ Using the AppLocker configuration service provider, you can select which apps ar
 
 For more information, see the [AppLocker CSP](/windows/client-management/mdm/applocker-csp).
 
-
 ## <a href="" id="bkmk-applkr-use-gp"></a>Maintaining AppLocker policies by using Group Policy
 
 For every scenario, the steps to maintain an AppLocker policy distributed by Group Policy include the following tasks.
@@ -60,7 +48,7 @@ As new apps are deployed or existing apps are removed by your organization or up
 You can edit an AppLocker policy by adding, changing, or removing rules. However, you can't specify a version for the AppLocker policy by importing more rules. To ensure version control when modifying an AppLocker policy, use Group Policy management software that allows you to create 
 versions of GPOs.
 
->**Caution:**  You should not edit an AppLocker rule collection while it is being enforced in Group Policy. Because AppLocker controls what files are allowed to run, making changes to a live policy can create unexpected behavior.
+>**Caution:**  You should not edit an AppLocker rule collection while it is being enforced in Group Policy. Because AppLocker controls what files are allowed to run, making changes to a live policy can create unexpected behavior.
 
 ### Step 1: Understand the current behavior of the policy
 

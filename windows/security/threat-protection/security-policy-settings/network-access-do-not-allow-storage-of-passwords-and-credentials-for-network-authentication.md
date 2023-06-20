@@ -1,5 +1,5 @@
 ---
-title: Network access Do not allow storage of passwords and credentials for network authentication (Windows 10)
+title: Network access Do not allow storage of passwords and credentials for network authentication 
 description: Learn about best practices and more for the security policy setting, Network access Do not allow storage of passwords and credentials for network authentication
 ms.assetid: b9b64360-36ea-40fa-b795-2d6558c46563
 ms.reviewer: 
@@ -55,12 +55,12 @@ The following table lists the actual and effective default values for this polic
 
 | Server type or Group Policy Object (GPO) | Default value |
 | - | - |
-| Default domain policy| Disabled| 
-| Default domain controller policy| Disabled| 
-| Stand-alone server default settings | Disabled| 
-| Domain controller effective default settings| Not defined| 
-| Member server effective default settings | Not defined| 
-| Effective GPO default settings on client computers | Not defined| 
+| Default domain policy| Not defined| 
+| Default domain controller policy| Not defined| 
+| Stand-alone server default settings | Not defined| 
+| Domain controller effective default settings| Disabled| 
+| Member server effective default settings | Disabled| 
+| Effective GPO default settings on client computers |Disabled| 
  
 ### Policy management
 

@@ -1,5 +1,5 @@
 ---
-title: 4752(S) A member was removed from a security-disabled global group. (Windows 10)
+title: 4752(S) A member was removed from a security-disabled global group. 
 description: Describes security event 4752(S) A member was removed from a security-disabled global group.
 ms.pagetype: security
 ms.prod: windows-client

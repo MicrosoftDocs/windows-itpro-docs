@@ -1,5 +1,5 @@
 ---
-title: Create a WDAC policy for lightly managed devices (Windows)
+title: Create a WDAC policy for lightly managed devices 
 description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
 keywords: security, malware
 ms.topic: conceptual

@@ -1,30 +1,18 @@
 ---
-title: AppLocker deployment guide (Windows)
+title: AppLocker deployment guide
 description: This topic for IT professionals introduces the concepts and describes the steps required to deploy AppLocker policies.
-ms.assetid: 38632795-be13-46b0-a7af-487a4340bea1
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
-
 # AppLocker deployment guide
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -63,4 +51,3 @@ This guide provides steps based on your design and planning investigation for de
 | [Use Software Restriction Policies and AppLocker policies](using-software-restriction-policies-and-applocker-policies.md) | This topic for the IT professional describes how to use Software Restriction Policies (SRP) and AppLocker policies in the same Windows deployment. |
 | [Create Your AppLocker policies](create-your-applocker-policies.md) | This overview topic for the IT professional describes the steps to create an AppLocker policy and prepare it for deployment. |
 | [Deploy the AppLocker policy into production](deploy-the-applocker-policy-into-production.md) | This topic for the IT professional describes the tasks that should be completed before you deploy AppLocker application control settings. |
-

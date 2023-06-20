@@ -23,7 +23,7 @@ This article is targeted at configuring devices enrolled to [Microsoft Intune](/
 
 > [!TIP]
 > - If you need to troubleshoot client enrollment, consider deploying the [configuration script](#deploy-the-configuration-script) as a Win32 app to a few devices and reviewing the logs it creates. Additional checks are performed with the script to ensure devices are correctly configured.
-> - Intune provides compliance reports and they have their own prerequisites for use. The number of devices that appear in the Intune reports may also vary from the Windows Update for Business reports. For more information, see [Intune compliance reports for updates](/mem/intune/protect/windows-update-compliance-reports).
+> - Intune provides compliance reports and they have their own prerequisites for use. The number of devices that appear in the Intune reports may also vary from the Windows Update for Business reports. For more information, see [Intune compliance reports for updates](/mem/intune/protect/windows-update-reports).
 
 ## Create a configuration profile
 

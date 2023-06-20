@@ -1,29 +1,18 @@
 ---
-title: Understand AppLocker enforcement settings (Windows)
+title: Understand AppLocker enforcement settings
 description: This topic describes the AppLocker enforcement settings for rule collections.
-ms.assetid: 48773007-a343-40bf-8961-b3ff0a450d7e
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
 ---
 
 # Understand AppLocker enforcement settings
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).

@@ -1,5 +1,5 @@
 ---
-title: 4689(S) A process has exited. (Windows 10)
+title: 4689(S) A process has exited. 
 description: Describes security event 4689(S) A process has exited. This event is generates when a process exits.
 ms.pagetype: security
 ms.prod: windows-client

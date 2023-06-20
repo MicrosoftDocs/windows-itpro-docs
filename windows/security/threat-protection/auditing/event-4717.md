@@ -1,5 +1,5 @@
 ---
-title: 4717(S) System security access was granted to an account. (Windows 10)
+title: 4717(S) System security access was granted to an account. 
 description: Describes security event 4717(S) System security access was granted to an account.
 ms.pagetype: security
 ms.prod: windows-client

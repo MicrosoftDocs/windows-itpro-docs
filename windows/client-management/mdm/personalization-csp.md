@@ -4,7 +4,7 @@ description: Learn more about the Personalization CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -19,6 +19,9 @@ ms.topic: reference
 <!-- Personalization-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The Personalization CSP can set the lock screen and desktop background images. Setting these policies also prevents the user from changing the image. You can also use the Personalization settings in a provisioning package.
+
+> [!IMPORTANT]
+> Personalization CSP is supported in Windows Enterprise and Education SKUs. It works in Windows Professional only when SetEduPolicies in [SharedPC CSP](sharedpc-csp.md) is set.
 <!-- Personalization-Editable-End -->
 
 <!-- Personalization-Tree-Begin -->
@@ -37,7 +40,7 @@ The following list shows the Personalization configuration service provider node
 <!-- Device-DesktopImageStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-DesktopImageStatus-Applicability-End -->
 
 <!-- Device-DesktopImageStatus-OmaUri-Begin -->
@@ -60,7 +63,7 @@ This represents the status of the DesktopImage. 1 - Successfully downloaded or c
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-DesktopImageStatus-DFProperties-End -->
 
@@ -76,7 +79,7 @@ This represents the status of the DesktopImage. 1 - Successfully downloaded or c
 <!-- Device-DesktopImageUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-DesktopImageUrl-Applicability-End -->
 
 <!-- Device-DesktopImageUrl-OmaUri-Begin -->
@@ -99,7 +102,7 @@ A http or https Url to a jpg, jpeg or png image that needs to be downloaded and 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-DesktopImageUrl-DFProperties-End -->
 
@@ -115,7 +118,7 @@ A http or https Url to a jpg, jpeg or png image that needs to be downloaded and 
 <!-- Device-LockScreenImageStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-LockScreenImageStatus-Applicability-End -->
 
 <!-- Device-LockScreenImageStatus-OmaUri-Begin -->
@@ -138,7 +141,7 @@ This represents the status of the LockScreenImage. 1 - Successfully downloaded o
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- Device-LockScreenImageStatus-DFProperties-End -->
 
@@ -154,7 +157,7 @@ This represents the status of the LockScreenImage. 1 - Successfully downloaded o
 <!-- Device-LockScreenImageUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-LockScreenImageUrl-Applicability-End -->
 
 <!-- Device-LockScreenImageUrl-OmaUri-Begin -->
@@ -177,7 +180,7 @@ A http or https Url to a jpg, jpeg or png image that neeeds to be downloaded and
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-LockScreenImageUrl-DFProperties-End -->
 

@@ -1,5 +1,5 @@
 ---
-title: 4670(S) Permissions on an object were changed. (Windows 10)
+title: 4670(S) Permissions on an object were changed. 
 description: Describes security event 4670(S) Permissions on an object were changed.
 ms.pagetype: security
 ms.prod: windows-client

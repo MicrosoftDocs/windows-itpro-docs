@@ -1,5 +1,5 @@
 ---
-title: 4769(S, F) A Kerberos service ticket was requested. (Windows 10)
+title: 4769(S, F) A Kerberos service ticket was requested. 
 description: Describes security event 4769(S, F) A Kerberos service ticket was requested.
 ms.pagetype: security
 ms.prod: windows-client

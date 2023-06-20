@@ -1,5 +1,5 @@
 ---
-title: Domain member Digitally encrypt secure channel data (when possible) (Windows 10)
+title: Domain member Digitally encrypt secure channel data (when possible) 
 description: Best practices, security considerations, and more for the security policy setting, Domain member Digitally encrypt secure channel data (when possible).
 ms.assetid: 73e6023e-0af3-4531-8238-82f0f0e4965b
 ms.reviewer: 

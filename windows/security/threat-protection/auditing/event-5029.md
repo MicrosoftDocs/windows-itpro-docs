@@ -1,5 +1,5 @@
 ---
-title: 5029(F) The Windows Firewall Service failed to initialize the driver. The service will continue to enforce the current policy. (Windows 10)
+title: 5029(F) The Windows Firewall Service failed to initialize the driver. The service will continue to enforce the current policy. 
 description: Describes security event 5029(F) The Windows Firewall Service failed to initialize the driver. The service will continue to enforce the current policy.
 ms.pagetype: security
 ms.prod: windows-client

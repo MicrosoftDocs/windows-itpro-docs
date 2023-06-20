@@ -10,6 +10,8 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: andredm7
+ms.collection:
+  - tier2
 ---
 
 # Deregister a device

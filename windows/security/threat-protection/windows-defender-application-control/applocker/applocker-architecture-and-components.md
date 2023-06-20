@@ -1,17 +1,12 @@
 ---
-title: AppLocker architecture and components (Windows)
+title: AppLocker architecture and components
 description: This topic for IT professional describes AppLocker’s basic architecture and its major components.
-ms.assetid: efdd8494-553c-443f-bd5f-c8976535135a
 ms.reviewer: 
 ms.author: vinpa
 ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 manager: aaroncz
-audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.technology: itpro-security
@@ -19,16 +14,10 @@ ms.technology: itpro-security
 
 # AppLocker architecture and components
 
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
-
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
-This topic for IT professional describes AppLocker’s basic architecture and its major components.
+This topic for IT professional describes AppLocker's basic architecture and its major components.
 
 AppLocker relies on the Application Identity service to provide attributes for a file and to evaluate the AppLocker policy for the file. AppLocker policies are conditional access control entries (ACEs), and policies are evaluated by using the attribute-based access control **SeAccessCheckWithSecurityAttributes** or **AuthzAccessCheck** functions.
 
@@ -49,5 +38,3 @@ Before a script file is run, the script host (for example, for .ps1 files, the s
 ## Related topics
 
 - [AppLocker technical reference](applocker-technical-reference.md)
- 
- 

@@ -4,7 +4,7 @@ description: Learn more about the PrinterProvisioning CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -39,7 +39,7 @@ The following list shows the PrinterProvisioning configuration service provider 
 <!-- User-UPPrinterInstalls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1806] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1806] and later <br> :heavy_check_mark: Windows 10, version 21H2 [10.0.19044.1806] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042.1806] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1806] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1806] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-UPPrinterInstalls-Applicability-End -->
 
 <!-- User-UPPrinterInstalls-OmaUri-Begin -->
@@ -62,7 +62,7 @@ This setting will take the action on the specified user account to install or un
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-UPPrinterInstalls-DFProperties-End -->
 
@@ -78,7 +78,7 @@ This setting will take the action on the specified user account to install or un
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1806] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1806] and later <br> :heavy_check_mark: Windows 10, version 21H2 [10.0.19044.1806] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042.1806] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1806] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1806] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Applicability-End -->
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-OmaUri-Begin -->
@@ -89,7 +89,7 @@ This setting will take the action on the specified user account to install or un
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Description-Begin -->
 <!-- Description-Source-DDF -->
-Identifies the Universal Print printer, by its Share ID, you wish to install on the targeted user account. The printer's Share ID can be found in the printer's properties via the Universal Print portal. **Note** the targeted user account must have access rights to both the printer and to the Universal Print service.
+Identifies the Universal Print printer, by its Share ID, you wish to install on the targeted user account. The printer's Share ID can be found in the printer's properties via the Universal Print portal. Note the targeted user account must have access rights to both the printer and to the Universal Print service.
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Description-End -->
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Editable-Begin -->
@@ -101,7 +101,7 @@ Identifies the Universal Print printer, by its Share ID, you wish to install on 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get |
 | Dynamic Node Naming | UniqueName: PrinterSharedID from the Universal Print system, which is used to discover and install Univeral Print printer |
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-DFProperties-End -->
@@ -118,7 +118,7 @@ Identifies the Universal Print printer, by its Share ID, you wish to install on 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-CloudDeviceID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1806] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1806] and later <br> :heavy_check_mark: Windows 10, version 21H2 [10.0.19044.1806] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042.1806] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1806] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1806] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-CloudDeviceID-Applicability-End -->
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-CloudDeviceID-OmaUri-Begin -->
@@ -129,7 +129,7 @@ Identifies the Universal Print printer, by its Share ID, you wish to install on 
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-CloudDeviceID-Description-Begin -->
 <!-- Description-Source-DDF -->
-Identifies the Universal Print printer, by its Printer ID, you wish to install on the targeted user account. The printer's Printer ID can be found in the printer's properties via the Universal Print portal. **Note** the targeted user account must have access rights to both the printer and to the Universal Print service.
+Identifies the Universal Print printer, by its Printer ID, you wish to install on the targeted user account. The printer's Printer ID can be found in the printer's properties via the Universal Print portal. Note the targeted user account must have access rights to both the printer and to the Universal Print service.
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-CloudDeviceID-Description-End -->
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-CloudDeviceID-Editable-Begin -->
@@ -141,7 +141,7 @@ Identifies the Universal Print printer, by its Printer ID, you wish to install o
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-CloudDeviceID-DFProperties-End -->
 
@@ -157,7 +157,7 @@ Identifies the Universal Print printer, by its Printer ID, you wish to install o
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-ErrorCode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1806] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1806] and later <br> :heavy_check_mark: Windows 10, version 21H2 [10.0.19044.1806] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042.1806] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1806] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1806] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-ErrorCode-Applicability-End -->
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-ErrorCode-OmaUri-Begin -->
@@ -180,7 +180,7 @@ HRESULT of the last installation returned code.
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-ErrorCode-DFProperties-End -->
 
@@ -196,7 +196,7 @@ HRESULT of the last installation returned code.
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Install-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1806] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1806] and later <br> :heavy_check_mark: Windows 10, version 21H2 [10.0.19044.1806] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042.1806] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1806] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1806] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Install-Applicability-End -->
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Install-OmaUri-Begin -->
@@ -219,7 +219,7 @@ Support async execute. Install Universal Print printer.
 
 | Property name | Property value |
 |:--|:--|
-| Format | null |
+| Format | `null` |
 | Access Type | Exec, Get |
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Install-DFProperties-End -->
 
@@ -235,7 +235,7 @@ Support async execute. Install Universal Print printer.
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-PrinterSharedName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1806] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1806] and later <br> :heavy_check_mark: Windows 10, version 21H2 [10.0.19044.1806] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042.1806] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1806] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1806] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-PrinterSharedName-Applicability-End -->
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-PrinterSharedName-OmaUri-Begin -->
@@ -246,7 +246,7 @@ Support async execute. Install Universal Print printer.
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-PrinterSharedName-Description-Begin -->
 <!-- Description-Source-DDF -->
-Identifies the Universal Print printer, by its Share Name, you wish to install on the targeted user account. The printer's Share Name can be found in the printer's properties via the Universal Print portal. **Note** the targeted user account must have access rights to both the printer and to the Universal Print service.
+Identifies the Universal Print printer, by its Share Name, you wish to install on the targeted user account. The printer's Share Name can be found in the printer's properties via the Universal Print portal. Note the targeted user account must have access rights to both the printer and to the Universal Print service.
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-PrinterSharedName-Description-End -->
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-PrinterSharedName-Editable-Begin -->
@@ -258,7 +258,7 @@ Identifies the Universal Print printer, by its Share Name, you wish to install o
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-PrinterSharedName-DFProperties-End -->
 
@@ -274,7 +274,7 @@ Identifies the Universal Print printer, by its Share Name, you wish to install o
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1806] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1806] and later <br> :heavy_check_mark: Windows 10, version 21H2 [10.0.19044.1806] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042.1806] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1806] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1806] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Status-Applicability-End -->
 
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Status-OmaUri-Begin -->
@@ -297,7 +297,7 @@ Identifies the Universal Print printer, by its Share Name, you wish to install o
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get |
 <!-- User-UPPrinterInstalls-{PrinterSharedID}-Status-DFProperties-End -->
 

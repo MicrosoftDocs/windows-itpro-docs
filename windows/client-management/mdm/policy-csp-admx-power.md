@@ -4,7 +4,7 @@ description: Learn more about the ADMX_Power Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_Power-Begin -->
 # Policy CSP - ADMX_Power
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_Power-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- ACConnectivityInStandby_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ACConnectivityInStandby_2-Applicability-End -->
 
 <!-- ACConnectivityInStandby_2-OmaUri-Begin -->
@@ -46,9 +43,9 @@ This policy setting allows you to control the network connectivity state in stan
 
 - If you enable this policy setting, network connectivity will be maintained in standby.
 
-- If you disable this policy setting, network connectivity in standby is not guaranteed. This connectivity restriction currently applies to WLAN networks only, and is subject to change.
+- If you disable this policy setting, network connectivity in standby isn't guaranteed. This connectivity restriction currently applies to WLAN networks only, and is subject to change.
 
-- If you do not configure this policy setting, users control this setting.
+- If you don't configure this policy setting, users control this setting.
 <!-- ACConnectivityInStandby_2-Description-End -->
 
 <!-- ACConnectivityInStandby_2-Editable-Begin -->
@@ -60,13 +57,12 @@ This policy setting allows you to control the network connectivity state in stan
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ACConnectivityInStandby_2-DFProperties-End -->
 
 <!-- ACConnectivityInStandby_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -93,7 +89,7 @@ This policy setting allows you to control the network connectivity state in stan
 <!-- ACCriticalSleepTransitionsDisable_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ACCriticalSleepTransitionsDisable_2-Applicability-End -->
 
 <!-- ACCriticalSleepTransitionsDisable_2-OmaUri-Begin -->
@@ -108,7 +104,7 @@ This policy setting allows you to turn on the ability for applications and servi
 
 - If you enable this policy setting, an application or service may prevent the system from sleeping (Hybrid Sleep, Stand By, or Hibernate).
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 <!-- ACCriticalSleepTransitionsDisable_2-Description-End -->
 
 <!-- ACCriticalSleepTransitionsDisable_2-Editable-Begin -->
@@ -120,13 +116,12 @@ This policy setting allows you to turn on the ability for applications and servi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ACCriticalSleepTransitionsDisable_2-DFProperties-End -->
 
 <!-- ACCriticalSleepTransitionsDisable_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -153,7 +148,7 @@ This policy setting allows you to turn on the ability for applications and servi
 <!-- ACStartMenuButtonAction_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ACStartMenuButtonAction_2-Applicability-End -->
 
 <!-- ACStartMenuButtonAction_2-OmaUri-Begin -->
@@ -167,11 +162,12 @@ This policy setting allows you to turn on the ability for applications and servi
 This policy setting specifies the action that Windows takes when a user presses the Start menu Power button.
 
 - If you enable this policy setting, select one of the following actions:
+
 -Sleep
 -Hibernate
--Shut down
+-Shut down.
 
-- If you disable this policy or do not configure this policy setting, users control this setting.
+- If you disable this policy or don't configure this policy setting, users control this setting.
 <!-- ACStartMenuButtonAction_2-Description-End -->
 
 <!-- ACStartMenuButtonAction_2-Editable-Begin -->
@@ -183,13 +179,12 @@ This policy setting specifies the action that Windows takes when a user presses 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ACStartMenuButtonAction_2-DFProperties-End -->
 
 <!-- ACStartMenuButtonAction_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -215,7 +210,7 @@ This policy setting specifies the action that Windows takes when a user presses 
 <!-- AllowSystemPowerRequestAC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowSystemPowerRequestAC-Applicability-End -->
 
 <!-- AllowSystemPowerRequestAC-OmaUri-Begin -->
@@ -230,7 +225,7 @@ This policy setting allows applications and services to prevent automatic sleep.
 
 - If you enable this policy setting, any application, service, or device driver prevents Windows from automatically transitioning to sleep after a period of user inactivity.
 
-- If you disable or do not configure this policy setting, applications, services, or drivers do not prevent Windows from automatically transitioning to sleep. Only user input is used to determine if Windows should automatically sleep.
+- If you disable or don't configure this policy setting, applications, services, or drivers don't prevent Windows from automatically transitioning to sleep. Only user input is used to determine if Windows should automatically sleep.
 <!-- AllowSystemPowerRequestAC-Description-End -->
 
 <!-- AllowSystemPowerRequestAC-Editable-Begin -->
@@ -242,13 +237,12 @@ This policy setting allows applications and services to prevent automatic sleep.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowSystemPowerRequestAC-DFProperties-End -->
 
 <!-- AllowSystemPowerRequestAC-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -275,7 +269,7 @@ This policy setting allows applications and services to prevent automatic sleep.
 <!-- AllowSystemPowerRequestDC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowSystemPowerRequestDC-Applicability-End -->
 
 <!-- AllowSystemPowerRequestDC-OmaUri-Begin -->
@@ -290,7 +284,7 @@ This policy setting allows applications and services to prevent automatic sleep.
 
 - If you enable this policy setting, any application, service, or device driver prevents Windows from automatically transitioning to sleep after a period of user inactivity.
 
-- If you disable or do not configure this policy setting, applications, services, or drivers do not prevent Windows from automatically transitioning to sleep. Only user input is used to determine if Windows should automatically sleep.
+- If you disable or don't configure this policy setting, applications, services, or drivers don't prevent Windows from automatically transitioning to sleep. Only user input is used to determine if Windows should automatically sleep.
 <!-- AllowSystemPowerRequestDC-Description-End -->
 
 <!-- AllowSystemPowerRequestDC-Editable-Begin -->
@@ -302,13 +296,12 @@ This policy setting allows applications and services to prevent automatic sleep.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowSystemPowerRequestDC-DFProperties-End -->
 
 <!-- AllowSystemPowerRequestDC-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -335,7 +328,7 @@ This policy setting allows applications and services to prevent automatic sleep.
 <!-- AllowSystemSleepWithRemoteFilesOpenAC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowSystemSleepWithRemoteFilesOpenAC-Applicability-End -->
 
 <!-- AllowSystemSleepWithRemoteFilesOpenAC-OmaUri-Begin -->
@@ -350,7 +343,7 @@ This policy setting allows you to manage automatic sleep with open network files
 
 - If you enable this policy setting, the computer automatically sleeps when network files are open.
 
-- If you disable or do not configure this policy setting, the computer does not automatically sleep when network files are open.
+- If you disable or don't configure this policy setting, the computer doesn't automatically sleep when network files are open.
 <!-- AllowSystemSleepWithRemoteFilesOpenAC-Description-End -->
 
 <!-- AllowSystemSleepWithRemoteFilesOpenAC-Editable-Begin -->
@@ -362,13 +355,12 @@ This policy setting allows you to manage automatic sleep with open network files
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowSystemSleepWithRemoteFilesOpenAC-DFProperties-End -->
 
 <!-- AllowSystemSleepWithRemoteFilesOpenAC-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -395,7 +387,7 @@ This policy setting allows you to manage automatic sleep with open network files
 <!-- AllowSystemSleepWithRemoteFilesOpenDC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowSystemSleepWithRemoteFilesOpenDC-Applicability-End -->
 
 <!-- AllowSystemSleepWithRemoteFilesOpenDC-OmaUri-Begin -->
@@ -410,7 +402,7 @@ This policy setting allows you to manage automatic sleep with open network files
 
 - If you enable this policy setting, the computer automatically sleeps when network files are open.
 
-- If you disable or do not configure this policy setting, the computer does not automatically sleep when network files are open.
+- If you disable or don't configure this policy setting, the computer doesn't automatically sleep when network files are open.
 <!-- AllowSystemSleepWithRemoteFilesOpenDC-Description-End -->
 
 <!-- AllowSystemSleepWithRemoteFilesOpenDC-Editable-Begin -->
@@ -422,13 +414,12 @@ This policy setting allows you to manage automatic sleep with open network files
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowSystemSleepWithRemoteFilesOpenDC-DFProperties-End -->
 
 <!-- AllowSystemSleepWithRemoteFilesOpenDC-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -455,7 +446,7 @@ This policy setting allows you to manage automatic sleep with open network files
 <!-- CustomActiveSchemeOverride_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- CustomActiveSchemeOverride_2-Applicability-End -->
 
 <!-- CustomActiveSchemeOverride_2-OmaUri-Begin -->
@@ -470,7 +461,7 @@ This policy setting specifies the active power plan from a specified power plan'
 
 - If you enable this policy setting, you must specify a power plan, specified as a GUID using the following format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX (For example, 103eea6e-9fcd-4544-a713-c282d8e50083), indicating the power plan to be active.
 
-- If you disable or do not configure this policy setting, users can see and change this setting.
+- If you disable or don't configure this policy setting, users can see and change this setting.
 <!-- CustomActiveSchemeOverride_2-Description-End -->
 
 <!-- CustomActiveSchemeOverride_2-Editable-Begin -->
@@ -482,13 +473,12 @@ This policy setting specifies the active power plan from a specified power plan'
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- CustomActiveSchemeOverride_2-DFProperties-End -->
 
 <!-- CustomActiveSchemeOverride_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -514,7 +504,7 @@ This policy setting specifies the active power plan from a specified power plan'
 <!-- DCBatteryDischargeAction0_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DCBatteryDischargeAction0_2-Applicability-End -->
 
 <!-- DCBatteryDischargeAction0_2-OmaUri-Begin -->
@@ -528,12 +518,13 @@ This policy setting specifies the active power plan from a specified power plan'
 This policy setting specifies the action that Windows takes when battery capacity reaches the critical battery notification level.
 
 - If you enable this policy setting, select one of the following actions:
+
 -Take no action
 -Sleep
 -Hibernate
--Shut down
+-Shut down.
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 <!-- DCBatteryDischargeAction0_2-Description-End -->
 
 <!-- DCBatteryDischargeAction0_2-Editable-Begin -->
@@ -545,13 +536,12 @@ This policy setting specifies the action that Windows takes when battery capacit
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DCBatteryDischargeAction0_2-DFProperties-End -->
 
 <!-- DCBatteryDischargeAction0_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -577,7 +567,7 @@ This policy setting specifies the action that Windows takes when battery capacit
 <!-- DCBatteryDischargeAction1_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DCBatteryDischargeAction1_2-Applicability-End -->
 
 <!-- DCBatteryDischargeAction1_2-OmaUri-Begin -->
@@ -591,12 +581,13 @@ This policy setting specifies the action that Windows takes when battery capacit
 This policy setting specifies the action that Windows takes when battery capacity reaches the low battery notification level.
 
 - If you enable this policy setting, select one of the following actions:
+
 -Take no action
 -Sleep
 -Hibernate
--Shut down
+-Shut down.
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 <!-- DCBatteryDischargeAction1_2-Description-End -->
 
 <!-- DCBatteryDischargeAction1_2-Editable-Begin -->
@@ -608,13 +599,12 @@ This policy setting specifies the action that Windows takes when battery capacit
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DCBatteryDischargeAction1_2-DFProperties-End -->
 
 <!-- DCBatteryDischargeAction1_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -640,7 +630,7 @@ This policy setting specifies the action that Windows takes when battery capacit
 <!-- DCBatteryDischargeLevel0_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DCBatteryDischargeLevel0_2-Applicability-End -->
 
 <!-- DCBatteryDischargeLevel0_2-OmaUri-Begin -->
@@ -655,9 +645,9 @@ This policy setting specifies the percentage of battery capacity remaining that 
 
 - If you enable this policy setting, you must enter a numeric value (percentage) to set the battery level that triggers the critical notification.
 
-To set the action that is triggered, see the "Critical Battery Notification Action" policy setting.
+To set the action that's triggered, see the "Critical Battery Notification Action" policy setting.
 
-- If you disable this policy setting or do not configure it, users control this setting.
+- If you disable this policy setting or don't configure it, users control this setting.
 <!-- DCBatteryDischargeLevel0_2-Description-End -->
 
 <!-- DCBatteryDischargeLevel0_2-Editable-Begin -->
@@ -669,13 +659,12 @@ To set the action that is triggered, see the "Critical Battery Notification Acti
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DCBatteryDischargeLevel0_2-DFProperties-End -->
 
 <!-- DCBatteryDischargeLevel0_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -701,7 +690,7 @@ To set the action that is triggered, see the "Critical Battery Notification Acti
 <!-- DCBatteryDischargeLevel1_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DCBatteryDischargeLevel1_2-Applicability-End -->
 
 <!-- DCBatteryDischargeLevel1_2-OmaUri-Begin -->
@@ -716,9 +705,9 @@ This policy setting specifies the percentage of battery capacity remaining that 
 
 - If you enable this policy setting, you must enter a numeric value (percentage) to set the battery level that triggers the low notification.
 
-To set the action that is triggered, see the "Low Battery Notification Action" policy setting.
+To set the action that's triggered, see the "Low Battery Notification Action" policy setting.
 
-- If you disable this policy setting or do not configure it, users control this setting.
+- If you disable this policy setting or don't configure it, users control this setting.
 <!-- DCBatteryDischargeLevel1_2-Description-End -->
 
 <!-- DCBatteryDischargeLevel1_2-Editable-Begin -->
@@ -730,13 +719,12 @@ To set the action that is triggered, see the "Low Battery Notification Action" p
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DCBatteryDischargeLevel1_2-DFProperties-End -->
 
 <!-- DCBatteryDischargeLevel1_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -762,7 +750,7 @@ To set the action that is triggered, see the "Low Battery Notification Action" p
 <!-- DCBatteryDischargeLevel1UINotification_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DCBatteryDischargeLevel1UINotification_2-Applicability-End -->
 
 <!-- DCBatteryDischargeLevel1UINotification_2-OmaUri-Begin -->
@@ -779,7 +767,7 @@ This policy setting turns off the user notification when the battery capacity re
 
 The notification will only be shown if the "Low Battery Notification Action" policy setting is configured to "No Action".
 
-- If you disable or do not configure this policy setting, users can control this setting.
+- If you disable or don't configure this policy setting, users can control this setting.
 <!-- DCBatteryDischargeLevel1UINotification_2-Description-End -->
 
 <!-- DCBatteryDischargeLevel1UINotification_2-Editable-Begin -->
@@ -791,13 +779,12 @@ The notification will only be shown if the "Low Battery Notification Action" pol
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DCBatteryDischargeLevel1UINotification_2-DFProperties-End -->
 
 <!-- DCBatteryDischargeLevel1UINotification_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -824,7 +811,7 @@ The notification will only be shown if the "Low Battery Notification Action" pol
 <!-- DCConnectivityInStandby_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DCConnectivityInStandby_2-Applicability-End -->
 
 <!-- DCConnectivityInStandby_2-OmaUri-Begin -->
@@ -839,9 +826,9 @@ This policy setting allows you to control the network connectivity state in stan
 
 - If you enable this policy setting, network connectivity will be maintained in standby.
 
-- If you disable this policy setting, network connectivity in standby is not guaranteed. This connectivity restriction currently applies to WLAN networks only, and is subject to change.
+- If you disable this policy setting, network connectivity in standby isn't guaranteed. This connectivity restriction currently applies to WLAN networks only, and is subject to change.
 
-- If you do not configure this policy setting, users control this setting.
+- If you don't configure this policy setting, users control this setting.
 <!-- DCConnectivityInStandby_2-Description-End -->
 
 <!-- DCConnectivityInStandby_2-Editable-Begin -->
@@ -853,13 +840,12 @@ This policy setting allows you to control the network connectivity state in stan
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DCConnectivityInStandby_2-DFProperties-End -->
 
 <!-- DCConnectivityInStandby_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -886,7 +872,7 @@ This policy setting allows you to control the network connectivity state in stan
 <!-- DCCriticalSleepTransitionsDisable_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DCCriticalSleepTransitionsDisable_2-Applicability-End -->
 
 <!-- DCCriticalSleepTransitionsDisable_2-OmaUri-Begin -->
@@ -901,7 +887,7 @@ This policy setting allows you to turn on the ability for applications and servi
 
 - If you enable this policy setting, an application or service may prevent the system from sleeping (Hybrid Sleep, Stand By, or Hibernate).
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 <!-- DCCriticalSleepTransitionsDisable_2-Description-End -->
 
 <!-- DCCriticalSleepTransitionsDisable_2-Editable-Begin -->
@@ -913,13 +899,12 @@ This policy setting allows you to turn on the ability for applications and servi
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DCCriticalSleepTransitionsDisable_2-DFProperties-End -->
 
 <!-- DCCriticalSleepTransitionsDisable_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -946,7 +931,7 @@ This policy setting allows you to turn on the ability for applications and servi
 <!-- DCStartMenuButtonAction_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DCStartMenuButtonAction_2-Applicability-End -->
 
 <!-- DCStartMenuButtonAction_2-OmaUri-Begin -->
@@ -960,11 +945,12 @@ This policy setting allows you to turn on the ability for applications and servi
 This policy setting specifies the action that Windows takes when a user presses the Start menu Power button.
 
 - If you enable this policy setting, select one of the following actions:
+
 -Sleep
 -Hibernate
--Shut down
+-Shut down.
 
-- If you disable this policy or do not configure this policy setting, users control this setting.
+- If you disable this policy or don't configure this policy setting, users control this setting.
 <!-- DCStartMenuButtonAction_2-Description-End -->
 
 <!-- DCStartMenuButtonAction_2-Editable-Begin -->
@@ -976,13 +962,12 @@ This policy setting specifies the action that Windows takes when a user presses 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DCStartMenuButtonAction_2-DFProperties-End -->
 
 <!-- DCStartMenuButtonAction_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1008,7 +993,7 @@ This policy setting specifies the action that Windows takes when a user presses 
 <!-- DiskACPowerDownTimeOut_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DiskACPowerDownTimeOut_2-Applicability-End -->
 
 <!-- DiskACPowerDownTimeOut_2-OmaUri-Begin -->
@@ -1023,7 +1008,7 @@ This policy setting specifies the period of inactivity before Windows turns off 
 
 - If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the hard disk.
 
-- If you disable or do not configure this policy setting, users can see and change this setting.
+- If you disable or don't configure this policy setting, users can see and change this setting.
 <!-- DiskACPowerDownTimeOut_2-Description-End -->
 
 <!-- DiskACPowerDownTimeOut_2-Editable-Begin -->
@@ -1035,13 +1020,12 @@ This policy setting specifies the period of inactivity before Windows turns off 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DiskACPowerDownTimeOut_2-DFProperties-End -->
 
 <!-- DiskACPowerDownTimeOut_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1067,7 +1051,7 @@ This policy setting specifies the period of inactivity before Windows turns off 
 <!-- DiskDCPowerDownTimeOut_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DiskDCPowerDownTimeOut_2-Applicability-End -->
 
 <!-- DiskDCPowerDownTimeOut_2-OmaUri-Begin -->
@@ -1082,7 +1066,7 @@ This policy setting specifies the period of inactivity before Windows turns off 
 
 - If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the hard disk.
 
-- If you disable or do not configure this policy setting, users can see and change this setting.
+- If you disable or don't configure this policy setting, users can see and change this setting.
 <!-- DiskDCPowerDownTimeOut_2-Description-End -->
 
 <!-- DiskDCPowerDownTimeOut_2-Editable-Begin -->
@@ -1094,13 +1078,12 @@ This policy setting specifies the period of inactivity before Windows turns off 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DiskDCPowerDownTimeOut_2-DFProperties-End -->
 
 <!-- DiskDCPowerDownTimeOut_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1126,7 +1109,7 @@ This policy setting specifies the period of inactivity before Windows turns off 
 <!-- Dont_PowerOff_AfterShutdown-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Dont_PowerOff_AfterShutdown-Applicability-End -->
 
 <!-- Dont_PowerOff_AfterShutdown-OmaUri-Begin -->
@@ -1137,13 +1120,13 @@ This policy setting specifies the period of inactivity before Windows turns off 
 
 <!-- Dont_PowerOff_AfterShutdown-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows you to configure whether power is automatically turned off when Windows shutdown completes. This setting does not affect Windows shutdown behavior when shutdown is manually selected using the Start menu or Task Manager user interfaces. Applications such as UPS software may rely on Windows shutdown behavior.
+This policy setting allows you to configure whether power is automatically turned off when Windows shutdown completes. This setting doesn't affect Windows shutdown behavior when shutdown is manually selected using the Start menu or Task Manager user interfaces. Applications such as UPS software may rely on Windows shutdown behavior.
 
 This setting is only applicable when Windows shutdown is initiated by software programs invoking the Windows programming interfaces ExitWindowsEx() or InitiateSystemShutdown().
 
 - If you enable this policy setting, the computer system safely shuts down and remains in a powered state, ready for power to be safely removed.
 
-- If you disable or do not configure this policy setting, the computer system safely shuts down to a fully powered-off state.
+- If you disable or don't configure this policy setting, the computer system safely shuts down to a fully powered-off state.
 <!-- Dont_PowerOff_AfterShutdown-Description-End -->
 
 <!-- Dont_PowerOff_AfterShutdown-Editable-Begin -->
@@ -1155,13 +1138,12 @@ This setting is only applicable when Windows shutdown is initiated by software p
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Dont_PowerOff_AfterShutdown-DFProperties-End -->
 
 <!-- Dont_PowerOff_AfterShutdown-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1188,7 +1170,7 @@ This setting is only applicable when Windows shutdown is initiated by software p
 <!-- EnableDesktopSlideShowAC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- EnableDesktopSlideShowAC-Applicability-End -->
 
 <!-- EnableDesktopSlideShowAC-OmaUri-Begin -->
@@ -1205,7 +1187,7 @@ This policy setting allows you to specify if Windows should enable the desktop b
 
 - If you disable this policy setting, the desktop background slideshow is disabled.
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 <!-- EnableDesktopSlideShowAC-Description-End -->
 
 <!-- EnableDesktopSlideShowAC-Editable-Begin -->
@@ -1217,13 +1199,12 @@ This policy setting allows you to specify if Windows should enable the desktop b
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableDesktopSlideShowAC-DFProperties-End -->
 
 <!-- EnableDesktopSlideShowAC-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1250,7 +1231,7 @@ This policy setting allows you to specify if Windows should enable the desktop b
 <!-- EnableDesktopSlideShowDC-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- EnableDesktopSlideShowDC-Applicability-End -->
 
 <!-- EnableDesktopSlideShowDC-OmaUri-Begin -->
@@ -1267,7 +1248,7 @@ This policy setting allows you to specify if Windows should enable the desktop b
 
 - If you disable this policy setting, the desktop background slideshow is disabled.
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 <!-- EnableDesktopSlideShowDC-Description-End -->
 
 <!-- EnableDesktopSlideShowDC-Editable-Begin -->
@@ -1279,13 +1260,12 @@ This policy setting allows you to specify if Windows should enable the desktop b
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- EnableDesktopSlideShowDC-DFProperties-End -->
 
 <!-- EnableDesktopSlideShowDC-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1312,7 +1292,7 @@ This policy setting allows you to specify if Windows should enable the desktop b
 <!-- InboxActiveSchemeOverride_2-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- InboxActiveSchemeOverride_2-Applicability-End -->
 
 <!-- InboxActiveSchemeOverride_2-OmaUri-Begin -->
@@ -1327,7 +1307,7 @@ This policy setting specifies the active power plan from a list of default Windo
 
 - If you enable this policy setting, specify a power plan from the Active Power Plan list.
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 <!-- InboxActiveSchemeOverride_2-Description-End -->
 
 <!-- InboxActiveSchemeOverride_2-Editable-Begin -->
@@ -1339,13 +1319,12 @@ This policy setting specifies the active power plan from a list of default Windo
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- InboxActiveSchemeOverride_2-DFProperties-End -->
 
 <!-- InboxActiveSchemeOverride_2-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1371,7 +1350,7 @@ This policy setting specifies the active power plan from a list of default Windo
 <!-- PowerThrottlingTurnOff-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PowerThrottlingTurnOff-Applicability-End -->
 
 <!-- PowerThrottlingTurnOff-OmaUri-Begin -->
@@ -1386,7 +1365,7 @@ This policy setting allows you to turn off Power Throttling.
 
 - If you enable this policy setting, Power Throttling will be turned off.
 
-- If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 <!-- PowerThrottlingTurnOff-Description-End -->
 
 <!-- PowerThrottlingTurnOff-Editable-Begin -->
@@ -1398,13 +1377,12 @@ This policy setting allows you to turn off Power Throttling.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PowerThrottlingTurnOff-DFProperties-End -->
 
 <!-- PowerThrottlingTurnOff-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1431,7 +1409,7 @@ This policy setting allows you to turn off Power Throttling.
 <!-- PW_PromptPasswordOnResume-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :x: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- PW_PromptPasswordOnResume-Applicability-End -->
 
 <!-- PW_PromptPasswordOnResume-OmaUri-Begin -->
@@ -1444,9 +1422,9 @@ This policy setting allows you to turn off Power Throttling.
 <!-- Description-Source-ADMX -->
 This policy setting allows you to configure client computers to lock and prompt for a password when resuming from a hibernate or suspend state.
 
-- If you enable this policy setting, the client computer is locked and prompted for a password when it is resumed from a suspend or hibernate state.
+- If you enable this policy setting, the client computer is locked and prompted for a password when it's resumed from a suspend or hibernate state.
 
-- If you disable or do not configure this policy setting, users control if their computer is automatically locked or not after performing a resume operation.
+- If you disable or don't configure this policy setting, users control if their computer is automatically locked or not after performing a resume operation.
 <!-- PW_PromptPasswordOnResume-Description-End -->
 
 <!-- PW_PromptPasswordOnResume-Editable-Begin -->
@@ -1458,13 +1436,12 @@ This policy setting allows you to configure client computers to lock and prompt 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- PW_PromptPasswordOnResume-DFProperties-End -->
 
 <!-- PW_PromptPasswordOnResume-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -1491,7 +1468,7 @@ This policy setting allows you to configure client computers to lock and prompt 
 <!-- ReserveBatteryNotificationLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ReserveBatteryNotificationLevel-Applicability-End -->
 
 <!-- ReserveBatteryNotificationLevel-OmaUri-Begin -->
@@ -1506,7 +1483,7 @@ This policy setting specifies the percentage of battery capacity remaining that 
 
 - If you enable this policy setting, you must enter a numeric value (percentage) to set the battery level that triggers the reserve power notification.
 
-- If you disable or do not configure this policy setting, users can see and change this setting.
+- If you disable or don't configure this policy setting, users can see and change this setting.
 <!-- ReserveBatteryNotificationLevel-Description-End -->
 
 <!-- ReserveBatteryNotificationLevel-Editable-Begin -->
@@ -1518,13 +1495,12 @@ This policy setting specifies the percentage of battery capacity remaining that 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- ReserveBatteryNotificationLevel-DFProperties-End -->
 
 <!-- ReserveBatteryNotificationLevel-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
