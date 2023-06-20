@@ -64,7 +64,7 @@ From a non-Windows SE device with the WDAC Policy Wizard installed, follow these
 1. Apply an audit mode WDAC Base policy. The WDAC Wizard includes a template policy called *WinSEPolicy.xml*, which is based on the Windows 11 SE base policy:
     - Open the **WDAC Wizard** and select **Policy Editor**
     - In the Policy Path to Edit field, browse for *%ProgramFiles%\WindowsApps\Microsoft.WDAC\** and select the file called *WinSEPolicy.xml*. Select **Next**
-      :::image type="content" source="images/wdac-winsepolicy.png" alt-text="Screenshot of the WDAC wizard - creation of a policy targeting the base WinSEPolicy.xml policy":::
+      :::image type="content" source="images/wdac-winsepolicy.png" alt-text="Screenshot of the WDAC wizard - creation of a policy targeting the base WinSEPolicy.xml policy.":::
     - Toggle the option for **Audit Mode** and complete the wizard. Note the location of the *.cip* and *.xml* files shown on the final page of the wizard
     - From an elevated PowerShell session, run the following command to activate the policy:
 
