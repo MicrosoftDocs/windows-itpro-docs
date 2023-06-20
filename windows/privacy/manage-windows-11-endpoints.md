@@ -7,7 +7,7 @@ ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 01/18/2018
+ms.date: 06/20/2023
 ms.topic: reference
 ---
 
@@ -66,7 +66,7 @@ The following methodology was used to derive these network endpoints:
 |||HTTP|edgeassetservice.azureedge.net|
 |Device authentication|||[Learn how to turn off traffic to all of the following endpoint(s) for device authentication.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback)|
 ||The following endpoint is used to authenticate a device. If you turn off traffic for this endpoint, the device won't be authenticated.|HTTPS|login.live.com*|
-|Device metadata|The following endpoint is used to retrieve device metadata. If you turn off traffic for this endpoint, metadata won't be updated for the device.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#4-device-metadata-retrieval)|
+|Device metadata|The following endpoint is used to retrieve device metadata. If you turn off traffic for this endpoint, metadata won't be updated for the device.||[Learn how to turn off traffic to all of the following endpoint(s) for device metadata.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#4-device-metadata-retrieval)|
 |||HTTP|dmd.metaservices.microsoft.com|
 |Diagnostic Data|The following endpoints are used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service. If you turn off traffic for this endpoint, diagnostic and usage information, which helps Microsoft find and fix problems and improve our products and services, won't be sent back to Microsoft. ||[Learn how to turn off traffic to all of the following endpoint(s) for diagnostic data.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback)|
 |||TLSv1.2/HTTP|self.events.data.microsoft.com|
@@ -76,7 +76,7 @@ The following methodology was used to derive these network endpoints:
 |||TLS v1.2/HTTPS/HTTP|watson.*.microsoft.com|
 |||TLSv1.2/HTTP|watson.events.data.microsoft.com|
 |||TLSv1.2|www.telecommandsvc.microsoft.com|
-|Font Streaming|The following endpoints are used to download fonts on demand. If you turn off traffic for these endpoints, you won't be able to download fonts on demand.||[Learn how to turn off traffic to all of the following endpoint(s) font streaming.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#6-font-streaming)|
+|Font Streaming|The following endpoints are used to download fonts on demand. If you turn off traffic for these endpoints, you won't be able to download fonts on demand.||[Learn how to turn off traffic to all of the following endpoint(s) for font streaming.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#6-font-streaming)|
 |||HTTPS|fs.microsoft.com|
 |Licensing|The following endpoint is used for online activation and some app licensing. To turn off traffic for this endpoint, disable the Windows License Manager Service. This will also block online activation and app licensing may not work.||[Learn how to turn off traffic to all of the following endpoint(s) for licensing.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#9-license-manager)|
 |||TLSv1.2/HTTPS/HTTP|licensing.mp.microsoft.com|
