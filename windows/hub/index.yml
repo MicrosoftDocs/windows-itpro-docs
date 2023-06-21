@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 
-title: Windows client documentation
+title: Windows client documentation for IT Pros
 summary: Learn how to deploy, secure, and manage Windows clients for your organization.
 brand: windows
 
@@ -28,10 +28,10 @@ highlightedContent:
   - title: Windows 11, version 22H2 group policy settings reference 
     itemType: download
     url: https://www.microsoft.com/en-us/download/details.aspx?id=104594
-  - title: Windows Insider Program
-    itemType: get-started
+  - title: Windows release health
+    itemType: whats-new
     url: /windows-insider/get-started
-  - title: Windows Commercial Licensing
+  - title: Windows commercial licensing
     itemType: overview
     url: /windows/whats-new/windows-licensing
   - title: Windows 365 documentation
@@ -64,38 +64,6 @@ productDirectory:
         - url: /windows/deployment
           text: Learn more about Windows deployment >
 
-    - title: Learn how to manage Windows
-      imageSrc: /media/common/i_management.svg
-      links:
-        - url: /windows/client-management/mobile-device-enrollment
-          text: MDM enrollment
-        - url: /windows/client-management/mdm/
-          text: Configuration Service Provider (CSP)
-        - url: /windows/client-management/administrative-tools-in-windows-10
-          text: Windows administrative tools 
-        - url: /windows/application-management/index
-          text: Learn about application management
-        - url: /windows/client-management/client-tools/quick-assist
-          text: Use Quick Assist to help users
-        - url: /windows/client-management
-          text: Learn more about Windows management >
-
-    - title: Learn how to configure Windows
-      imageSrc: /media/common/i_config-tools.svg
-      links:
-        - url: /windows/configuration/windows-accessibility-for-itpros
-          text: Accessibility information
-        - url: /windows/configuration/provisioning-packages/provisioning-packages
-          text: Use Provisioning packages to configure new devices
-        - url: /windows/configuration/customize-start-menu-layout-windows-11
-          text: Customize the Start menu layout
-        - url: /windows/configuration/set-up-shared-or-guest-pc
-          text: Set up a shared or guest PC
-        - url: /windows/configuration/kiosk-methods
-          text: Configure kiosks and digital signs
-        - url: /windows/configuration
-          text: Learn more about Windows configuration >
-
     - title: Learn how to secure Windows
       imageSrc: /media/common/i_security-management.svg
       links:
@@ -127,6 +95,38 @@ productDirectory:
           text: Changes to Windows diagnostic data collection
         - url: /windows/privacy
           text: Learn more about privacy in Windows >
+
+    - title: Learn how to manage Windows
+      imageSrc: /media/common/i_management.svg
+      links:
+        - url: /windows/client-management/mobile-device-enrollment
+          text: MDM enrollment
+        - url: /windows/client-management/mdm/
+          text: Configuration Service Provider (CSP)
+        - url: /windows/client-management/administrative-tools-in-windows-10
+          text: Windows administrative tools
+        - url: /windows/client-management/client-tools/quick-assist
+          text: Use Quick Assist to help users
+        - url: /windows/application-management/index
+          text: Learn more about application management >
+        - url: /windows/client-management
+          text: Learn more about Windows management >
+
+    - title: Learn how to configure Windows
+      imageSrc: /media/common/i_config-tools.svg
+      links:
+        - url: /windows/configuration/windows-accessibility-for-itpros
+          text: Accessibility information
+        - url: /windows/configuration/provisioning-packages/provisioning-packages
+          text: Use Provisioning packages to configure new devices
+        - url: /windows/configuration/customize-start-menu-layout-windows-11
+          text: Customize the Start menu layout
+        - url: /windows/configuration/set-up-shared-or-guest-pc
+          text: Set up a shared or guest PC
+        - url: /windows/configuration/kiosk-methods
+          text: Configure kiosks and digital signs
+        - url: /windows/configuration
+          text: Learn more about Windows configuration >
 
     - title: Learn about Windows for Education
       imageSrc: /media/common/i_advanced.svg
@@ -183,6 +183,8 @@ additionalContent:
               url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog
             - text: Microsoft Intune blog
               url: https://techcommunity.microsoft.com/t5/microsoft-intune-blog/bg-p/MicrosoftEndpointManagerBlog
+            - text: "Windows help & learning: end-user documentation"
+              url: https://support.microsoft.com/windows
 
         - title: Participate in the community
           links:
