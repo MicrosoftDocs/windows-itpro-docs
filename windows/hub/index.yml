@@ -91,8 +91,8 @@ productDirectory:
           text: Diagnostic Data Viewer
         - url: /windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services
           text: Manage connections to Microsoft services
-        - url: /windows/privacy/changes-to-windows-diagnostic-data-collection
-          text: Changes to Windows diagnostic data collection
+        - url: /windows/privacy/manage-windows-11-endpoints
+          text: Manage connection endpoints for Windows 11 Enterprise
         - url: /windows/privacy
           text: Learn more about privacy in Windows >
 
