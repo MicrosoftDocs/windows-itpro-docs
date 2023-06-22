@@ -145,7 +145,7 @@ landingContent:
       - linkListType: overview
         links:
         - text: Overview
-          url: security-foundations.md
+          url: security-foundations/index.md
       - linkListType: reference
         links:
           - text: Microsoft Security Development Lifecycle

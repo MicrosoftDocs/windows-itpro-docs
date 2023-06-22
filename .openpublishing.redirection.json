@@ -21854,6 +21854,21 @@
       "source_path": "windows/deployment/update/update-compliance-schema-wudoaggregatedstatus.md",
       "redirect_url": "/windows/deployment/update/wufb-reports-overview",
       "redirect_document_id": false
-    }                                                      
+    },
+    {
+      "source_path": "windows/security/introduction/security-features-edition-requirements.md",
+      "redirect_url": "/windows/security/licensing-and-edition-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/introduction/security-features-licensing-requirements.md",
+      "redirect_url": "/windows/security/licensing-and-edition-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/security-foundations.md",
+      "redirect_url": "/windows/security/security-foundations/index",
+      "redirect_document_id": false
+    }
   ]
 }
