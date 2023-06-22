@@ -149,7 +149,7 @@ additionalContent:
     - title: More Windows resources
       items:
 
-        - title: Windows harware
+        - title: Windows hardware
           links:
             - text: Windows hardware developer documentation
               url: /windows-hardware/drivers/
