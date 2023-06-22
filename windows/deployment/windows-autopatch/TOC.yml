@@ -169,7 +169,7 @@
         - name: Windows Autopatch groups public preview addendum
           href: references/windows-autopatch-groups-public-preview-addendum.md
         - name: Driver and firmware updates public preview addendum
-          href: references/windows-autopatch-drivers-and-firmware-updates-public-preview-addendum.md
+          href: references/windows-autopatch-driver-and-firmware-updates-public-preview-addendum.md
     - name: What's new
       href:
       items: 
