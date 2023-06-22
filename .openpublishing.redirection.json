@@ -21764,6 +21764,96 @@
       "source_path": "windows/security/information-protection/personal-data-encryption/overview-pde.md",
       "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/index",
       "redirect_document_id": false
-    }    
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-monitor.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-get-started.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "windows/deployment/update/update-compliance-configuration-script.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "windows/deployment/update/update-compliance-configuration-manual.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "windows/deployment/update/update-compliance-configuration-mem.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-using.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-need-attention.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-security-update-status.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-feature-update-status.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-safeguard-holds.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-delivery-optimization.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-privacy.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-schema.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-schema-waasupdatestatus.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-schema-waasinsiderstatus.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },  
+    {
+      "source_path": "windows/deployment/update/update-compliance-schema-waasdeploymentstatus.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-schema-wudostatus.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-schema-wudoaggregatedstatus.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    }                                                      
   ]
 }
