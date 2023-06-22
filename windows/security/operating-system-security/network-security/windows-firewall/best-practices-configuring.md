@@ -143,6 +143,36 @@ In general, to maintain maximum security, admins should only push firewall excep
 > [!NOTE]
 > The use of wildcard patterns, such as *C:\*\\teams.exe* is not supported in application rules. We currently only support rules created using the full path to the application(s).
 
+## Understand Group Policy Processing  
+
+The Windows Firewall settings configured via group policy are stored in the registry. By default, group policies are refreshed in the background every 90 minutes, with a random offset of 0 to 30 minutes.
+
+Windows Firewall monitors the registry for changes, and if something is written to the registry it notifies the *Windows Filtering Platform (WFP)*, which performs the following actions:
+
+- Reads all firewall rules and settings
+- Applies any new filters
+- Removes the old filters
+
+> [!NOTE]
+> The actions are triggered whenever something is written to, or deleted from the registry location the GPO settings are stored, regardless if there's really a configuration change. During the process, IPsec connections are disconnected.
+
+Many policy implementations specify that they are updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired policy setting in case a user has changed it. To control the behavior of the registry group policy processing, you can use the policy `Computer Configuration > Administrative Templates > System > Group Policy > Configure registry policy processing`. The *Process even if the Group Policy objects have not changed* option updates and reapplies the policies even if the policies have not changed. This option is disabled by default.
+
+If you enable the option *Process even if the Group Policy objects have not changed*, the WFP filters get reapplied during **every** background refresh. In case you have ten group policies, the WFP filters get reapplied ten times during the refresh interval. If an error happens during policy processing, the applied settings may be incomplete, resulting in issues like:
+
+- Windows Defender Firewall blocks inbound or outbound traffic allowed by group policies
+- Local Firewall settings are applied instead of group policy settings
+- IPsec connections cannot establish
+
+The temporary solution is to refresh the group policy settings, using the command `gpupdate.exe /force`, which requires connectivity to a domain controller.
+
+To avoid the issue, leave the policy `Computer Configuration > Administrative Templates > System > Group Policy > Configure registry policy processing` to the default value of *Not Configured* or, if already configured, configure it *Disabled*.
+
+> [!IMPORTANT]
+> The checkbox next to **Process even if the Group Policy objects have not changed** must be unchecked. If you leave it unchecked, WFP filters are written only in case there's a configuration change.
+>
+> If there's a requirement to force registry deletion and rewrite, then disable background processing by checking the checkbox next to **Do not apply during periodic background processing**.
+
 ## Know how to use "shields up" mode for active attacks
 
 An important firewall feature you can use to mitigate damage during an active attack is the "shields up" mode. It's an informal term referring to an easy method a firewall administrator can use to temporarily increase security in the face of an active attack.

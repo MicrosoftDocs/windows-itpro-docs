@@ -8,7 +8,7 @@ author: jsuther1974
 ms.reviewer: jgeurten
 ms.author: vinpa
 manager: aaroncz
-ms.date: 11/04/2022
+ms.date: 06/14/2023
 ms.topic: reference
 ---
 
@@ -25,7 +25,7 @@ ms.topic: reference
 
 Members of the security community<sup>*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass WDAC.
 
-Unless your use scenarios explicitly require them, Microsoft recommends that you block the following applications. These applications or files can be used by an attacker to circumvent application allow policies, including WDAC:
+Unless your use scenarios explicitly require them, Microsoft recommends that you block the following applications. An attacker can use these applications or files to circumvent application allow policies, including WDAC:
 
 - addinprocess.exe
 - addinprocess32.exe
@@ -72,7 +72,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 
 <sup>1</sup> A vulnerability in bginfo.exe was fixed in version 4.22. If you use BGInfo, for security, make sure to download and run the latest version of [BGInfo](/sysinternals/downloads/bginfo). BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
 
-<sup>2</sup> If you're using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you allow msbuild.exe in your code integrity policies. However, if your reference system is an end-user device that isn't being used in a development context, we recommend that you block msbuild.exe.
+<sup>2</sup> If you're using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you allow msbuild.exe in your code integrity policies. Otherwise, we recommend that you block msbuild.exe.
 
 <sup>*</sup> Microsoft recognizes the efforts of people in the security community who help us protect customers through responsible vulnerability disclosure, and extends thanks to the following people:
 
@@ -99,9 +99,9 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 > [!NOTE]
 > This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered.
 
-Certain software applications may allow other code to run by design. Such applications should be blocked by your WDAC policy. In addition, when an application version is upgraded to fix a security vulnerability or potential WDAC bypass, you should add *deny* rules to your application control policies for that application’s previous, less secure versions.
+Certain software applications may allow other code to run by design. Unless these applications are business critical, you should block them in your WDAC policy. In addition, when an application version is upgraded to fix a security vulnerability or potential WDAC bypass, add *deny* rules to your application control policies for that application’s previous, less secure versions.
 
-Microsoft recommends that you install the latest security updates. For example, updates help resolve several issues in PowerShell modules that allowed an attacker to bypass WDAC. These modules can't be blocked by name or version, and therefore must be blocked by their corresponding hashes.
+Microsoft recommends that you install the latest security updates. For example, updates help resolve several issues in PowerShell modules that allowed an attacker to bypass WDAC. These modules can be blocked by their corresponding hashes.
 
 As of October 2017, system.management.automation.dll is updated to revoke earlier versions by hash values, instead of version rules.
 
@@ -111,14 +111,14 @@ If you wish to use this blocklist policy on Windows Server 2016, locate the deny
 - msxml6.dll
 - jscript9.dll
 
-The blocklist policy below includes "Allow all" rules for both kernel and user mode that make it safe to deploy as a standalone WDAC policy. On Windows versions 1903 and above, Microsoft recommends converting this policy to multiple policy format using the *Set-CiPolicyIdInfo* cmdlet with the *-ResetPolicyId* switch. Then, you can deploy it as a Base policy side-by-side with any other policies in your environment. To instead add these rules to an existing Base policy, you can merge the policy below using the *Merge-CIPolicy* cmdlet. If merging into an existing policy that includes an explicit allowlist, you should first remove the two "Allow all" rules and their corresponding FileRuleRefs from the sample policy below.
+The blocklist policy that follows includes "Allow all" rules for both kernel and user mode that make it safe to deploy as a standalone WDAC policy. On Windows versions 1903 and above, Microsoft recommends converting this policy to multiple policy format using the *Set-CiPolicyIdInfo* cmdlet with the *-ResetPolicyId* switch. Then, you can deploy it as a Base policy side-by-side with any other policies in your environment. To instead add these rules to an existing Base policy, you can merge the policy that follows using the *Merge-CIPolicy* cmdlet. If merging into an existing policy that includes an explicit allowlist, you should first remove the two "Allow all" rules and their corresponding FileRuleRefs from the blocklist policy.
 
 **WDAC policy XML**:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <SiPolicy xmlns="urn:schemas-microsoft-com:sipolicy">
-  <VersionEx>10.1.0.0</VersionEx>
+  <VersionEx>10.1.0.2</VersionEx>
   <PolicyTypeID>{A244370E-44C9-4C06-B551-F6016E563076}</PolicyTypeID>
   <PlatformID>{2E07F7E4-194C-4D20-B7C9-6F44A6C5A234}</PlatformID>
   <Rules>
@@ -159,6 +159,14 @@ The blocklist policy below includes "Allow all" rules for both kernel and user m
     <Deny ID="ID_DENY_DOTNET" FriendlyName="dotnet.exe" FileName="dotnet.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_FSI" FriendlyName="fsi.exe" FileName="fsi.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_FSI_ANYCPU" FriendlyName="fsiAnyCpu.exe" FileName="fsiAnyCpu.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
+    <Deny ID="ID_DENY_HVCISCAN_AMD_1" FriendlyName="HVCIScan.exe with missing resources AMD Hash Sha1" Hash="424823CD625834C05D55C7B825B0D8059D589748" />
+    <Deny ID="ID_DENY_HVCISCAN_AMD_2" FriendlyName="HVCIScan.exe with missing resources AMD Hash Sha256" Hash="4968BA3E491CF6471C5D1C6CBECE84294012298D8EB6D32C03E476892F34279C" />
+    <Deny ID="ID_DENY_HVCISCAN_AMD_3" FriendlyName="HVCIScan.exe with missing resources AMD Hash Page Sha1" Hash="FCFA167F5F1FC88E0886132AB0B2E0C32B4B1BF5" />
+    <Deny ID="ID_DENY_HVCISCAN_AMD_4" FriendlyName="HVCIScan.exe with missing resources AMD Hash Page Sha256" Hash="283F6E8998E7A20C68FFD8715E6F130EC7648055285883686336F5711DB1C978" />
+    <Deny ID="ID_DENY_HVCISCAN_ARM_1" FriendlyName="HVCIScan.exe with missing resources ARM Hash Sha1" Hash="A72B1B9554B682F9180E5051C1DA1F2601DCD773" />
+    <Deny ID="ID_DENY_HVCISCAN_ARM_2" FriendlyName="HVCIScan.exe with missing resources ARM Hash Sha256" Hash="AC399FA29FAB56F01F63B499766D489198021C54C000463342E0382AD3AF29BE" />
+    <Deny ID="ID_DENY_HVCISCAN_ARM_3" FriendlyName="HVCIScan.exe with missing resources ARM Hash Page Sha1" Hash="9FD720F1D4913073054D93CF446C9ADC7F0BA445" />
+    <Deny ID="ID_DENY_HVCISCAN_ARM_4" FriendlyName="HVCIScan.exe with missing resources ARM Hash Page Sha256" Hash="8CBB25C135FBB43C67F70E933C482A8F6DA9F37FF4761FA061BBD91B30CEFE17" />
     <Deny ID="ID_DENY_INFINSTALL" FriendlyName="infdefaultinstall.exe" FileName="infdefaultinstall.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_INSTALLUTIL" FriendlyName="Microsoft InstallUtil" FileName="InstallUtil.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_KD" FriendlyName="kd.exe" FileName="kd.Exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
@@ -1500,6 +1508,14 @@ The blocklist policy below includes "Allow all" rules for both kernel and user m
           <FileRuleRef RuleID="ID_DENY_D_604" />
           <FileRuleRef RuleID="ID_DENY_D_605" />
           <FileRuleRef RuleID="ID_DENY_D_606" />
+          <FileRuleRef RuleID="ID_DENY_HVCISCAN_AMD_1" />
+          <FileRuleRef RuleID="ID_DENY_HVCISCAN_AMD_2" />
+          <FileRuleRef RuleID="ID_DENY_HVCISCAN_AMD_3" />
+          <FileRuleRef RuleID="ID_DENY_HVCISCAN_AMD_4" />
+          <FileRuleRef RuleID="ID_DENY_HVCISCAN_ARM_1" />
+          <FileRuleRef RuleID="ID_DENY_HVCISCAN_ARM_2" />
+          <FileRuleRef RuleID="ID_DENY_HVCISCAN_ARM_3" />
+          <FileRuleRef RuleID="ID_DENY_HVCISCAN_ARM_4" />
         </FileRulesRef>
       </ProductSigners>
     </SigningScenario>
@@ -1507,6 +1523,18 @@ The blocklist policy below includes "Allow all" rules for both kernel and user m
   <UpdatePolicySigners />
   <CiSigners />
   <HvciOptions>0</HvciOptions>
+  <Settings>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Name">
+      <Value>
+        <String>Microsoft Windows Recommended User Mode BlockList</String>
+      </Value>
+    </Setting>
+    <Setting Provider="PolicyInfo" Key="Information" ValueName="Id">
+      <Value>
+        <String>10.1.0.2</String>
+      </Value>
+    </Setting>
+  </Settings>
 </SiPolicy>
 ```
 

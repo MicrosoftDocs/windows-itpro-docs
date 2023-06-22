@@ -21,7 +21,6 @@ There are several resources that you can use to find help with Windows Update fo
 - Open a [Microsoft support case](#open-a-microsoft-support-case)
 
 - [Documentation feedback](#documentation-feedback)
-- [Troubleshooting tips](#troubleshooting-tips) for Windows Update for Business reports
 - Follow the [Windows IT Pro blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog) to learn about upcoming changes to Windows Update for Business reports
 - Use Microsoft Q&A to [ask product questions](/answers/products/)
 
@@ -82,19 +81,3 @@ If you create an issue for something not related to documentation, Microsoft wil
 - [Support requests](#open-a-microsoft-support-case) for Windows Update for Business reports
 
 To share feedback about the Microsoft Learn platform, see [Microsoft Learn feedback](https://aka.ms/sitefeedback). The platform includes all of the wrapper components such as the header, table of contents, and right menu. Also how the articles render in the browser, such as the font, alert boxes, and page anchors.
-
-## Troubleshooting tips
-
-Use the following troubleshooting tips to resolve the most common problems when using Windows Update for Business reports:
-
-### Ensuring devices are configured correctly to send data
-
-The first step in troubleshooting Windows Update for Business reports is ensuring that devices are configured. Review [Manually configuring devices for Windows Update for Business reports](wufb-reports-configuration-manual.md) for the settings. We recommend using the [Windows Update for Business reports configuration script](wufb-reports-configuration-script.md) for troubleshooting and configuring devices.
-
-### Devices have been correctly configured but aren't showing up in Windows Update for Business reports
-
-It takes some time for data to appear in Windows Update for Business reports for the first time, or if you moved to a new Log Analytics workspace. To learn more about data latencies for Windows Update for Business reports, review [Windows Update for Business reports data latency](wufb-reports-use.md#data-latency).
-
-### Devices are appearing, but without a device name
-
-Device Name is  an opt-in via policy. Review the required policies for enabling device name in the [Manually configuring devices for Windows Update for Business reports](wufb-reports-configuration-manual.md) article.
