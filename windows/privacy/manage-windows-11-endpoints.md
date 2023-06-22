@@ -7,7 +7,7 @@ ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 06/20/2023
+ms.date: 06/23/2023
 ms.topic: reference
 ---
 
@@ -41,6 +41,8 @@ The following methodology was used to derive these network endpoints:
 
 > [!NOTE]
 > Microsoft uses global load balancers that can appear in network trace-routes. For example, an endpoint for *.akadns.net might be used to load balance requests to an Azure datacenter, which can change over time.
+
+To view endpoints for non-Enterprise Windows 11 editions, see [Windows 11 connection endpoints for non-Enterprise editions](windows-11-endpoints-non-enterprise-editions.md).
 
 ## Windows 11 Enterprise connection endpoints
 
@@ -79,7 +81,7 @@ The following methodology was used to derive these network endpoints:
 |||HTTPS|fs.microsoft.com|
 |Licensing|The following endpoint is used for online activation and some app licensing. To turn off traffic for this endpoint, disable the Windows License Manager Service. This will also block online activation and app licensing may not work.||[Learn how to turn off traffic to all of the following endpoint(s) for licensing.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#9-license-manager)|
 |||TLSv1.2/HTTPS/HTTP|licensing.mp.microsoft.com|
-|Location|The following endpoint is used for location data. If you turn off traffic for this endpoint, apps cannot use location data.||[Learn how to turn off traffic to all of the following endpoint(s) for location.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#182-location)|
+|Location|The following endpoint is used for location data. If you turn off traffic for this endpoint, apps can't use location data.||[Learn how to turn off traffic to all of the following endpoint(s) for location.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#182-location)|
 |||TLSv1.2|inference.location.live.net|
 |Maps|||[Learn how to turn off traffic to all of the following endpoint(s) for maps.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-offlinemaps)|
 ||The following endpoints are used to check for updates to maps that have been downloaded for offline use. If you turn off traffic for this endpoint, offline maps won't be updated.|TLSv1.2/HTTPS/HTTP|maps.windows.com|
@@ -160,25 +162,6 @@ The following methodology was used to derive these network endpoints:
 ||The following endpoint is used for content regulation. If you turn off traffic for this endpoint, the Windows Update Agent will be unable to contact the endpoint, and fallback behavior will be used. This may result in content being either incorrectly downloaded or not downloaded at all.|TLSv1.2/HTTPS/HTTP|tsfe.trafficshaping.dsp.mp.microsoft.com|
 |Xbox Live|The following endpoint is used for Xbox Live.||[Learn how to turn off traffic to all of the following endpoint(s) for Xbox Live.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#26-microsoft-store)|
 |||HTTPS|dlassets-ssl.xboxlive.com|
-
-## Other Windows 10 editions
-
-To view endpoints for other versions of Windows 10 Enterprise, see:
-
-- [Manage connection endpoints for Windows 10, version 21H1](manage-windows-21H1-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 21H2](manage-windows-21H2-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 2004](manage-windows-2004-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 1909](manage-windows-1909-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 1903](manage-windows-1903-endpoints.md)
-- [Manage connection endpoints for Windows 10, version 1809](manage-windows-1809-endpoints.md)
-
-To view endpoints for non-Enterprise Windows 10 editions, see:
-
-- [Windows 10, version 21H1, connection endpoints for non-Enterprise editions](windows-endpoints-21H1-non-enterprise-editions.md)
-- [Windows 10, version 2004, connection endpoints for non-Enterprise editions](windows-endpoints-2004-non-enterprise-editions.md)
-- [Windows 10, version 1909, connection endpoints for non-Enterprise editions](windows-endpoints-1909-non-enterprise-editions.md)
-- [Windows 10, version 1903, connection endpoints for non-Enterprise editions](windows-endpoints-1903-non-enterprise-editions.md)
-- [Windows 10, version 1809, connection endpoints for non-Enterprise editions](windows-endpoints-1809-non-enterprise-editions.md)
 
 ## Related links
 
