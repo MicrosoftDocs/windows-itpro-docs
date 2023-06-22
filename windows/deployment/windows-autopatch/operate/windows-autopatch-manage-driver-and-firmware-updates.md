@@ -17,6 +17,9 @@ ms.collection:
 
 # Manage driver and firmware updates (public preview)
 
+> [!IMPORTANT]
+> This feature is in **public preview**. The feature is being actively developed, and might not be complete. You can test and use these features in production environments and provide feedback.
+
 We're excited to announce a new feature that gives you greater control over your driver and firmware updates. You can choose to receive driver and firmware updates automatically, or self-manage the deployment. We're building this driver and firmware functionality based on Intune’s release; therefore, you can use both Intune and Windows Autopatch controls together.
 
 ## Automatic and Self-managed modes
@@ -52,7 +55,7 @@ The `CreateDriverUpdatePolicy` is created for the Test, First, Fast, and Broad d
 | `CreateDriverUpdatePolicy` | Windows Autopatch – Driver Update policy [Test/First/Fast/Broad] | Driver Update Policy for device Test/First/Fast/Broad group | Automatic | `0` |
 
 > [!NOTE]
-> In public preview, the DeploymentDeferralInDays setting is `0` for all deployment rings.
+> In public preview, the DeploymentDeferralInDays setting is set to `0` for all deployment rings.
 
 ## Feedback and support
 
