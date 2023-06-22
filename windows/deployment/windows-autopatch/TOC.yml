@@ -147,7 +147,7 @@
         - name: Maintain the Windows Autopatch environment
           href: operate/windows-autopatch-maintain-environment.md
         - name: Manage driver and firmware updates
-          href: operate/windows-autopatch-manage-drivers-and-firmware-updates.md
+          href: operate/windows-autopatch-manage-driver-and-firmware-updates.md
         - name: Submit a support request
           href: operate/windows-autopatch-support-request.md
         - name: Deregister a device
