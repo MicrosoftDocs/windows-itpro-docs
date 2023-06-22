@@ -58,7 +58,7 @@ Windows 10, version 1909 also includes two new features called **Key-rolling** a
 An experimental implementation of TLS 1.3 is included in Windows 10, version 1909. TLS 1.3 disabled by default system wide. If you enable TLS 1.3 on a device for testing, then it can also be enabled in Internet Explorer 11.0 and Microsoft Edge by using Internet Options. For beta versions of Microsoft Edge on Chromium, TLS 1.3 isn't built on the Windows TLS stack, and is instead configured independently, using the **Edge://flags** dialog. Also see [Microsoft Edge platform status](https://developer.microsoft.com/microsoft-edge/status/tls13/)
 
 >[!NOTE]
->The experiental implementation of TLS 1.3 is not supported.  See [Protocols in TLS/SSL (Schannel SSP)](https://learn.microsoft.com/en-us/windows/win32/secauthn/protocols-in-tls-ssl--schannel-ssp-).
+>The experiental implementation of TLS 1.3 is not supported.  TLS 1.3 is only supported on Windows 11 and Server 2022.  See [Protocols in TLS/SSL (Schannel SSP)](https://learn.microsoft.com/en-us/windows/win32/secauthn/protocols-in-tls-ssl--schannel-ssp-).
 
 ## Virtualization
 
