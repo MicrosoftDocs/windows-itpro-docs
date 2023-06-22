@@ -84,15 +84,15 @@ productDirectory:
       imageSrc: /media/common/i_lock.svg
       links:
         - url: /windows/privacy/required-diagnostic-events-fields-windows-11-22h2
-          text: Windows 11 required diagnostics data
+          text: Windows 11 required diagnostic data
         - url: /windows/privacy/configure-windows-diagnostic-data-in-your-organization
           text: Configure Windows diagnostic data in your organization
         - url: /windows/privacy/diagnostic-data-viewer-overview
           text: Diagnostic Data Viewer
         - url: /windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services
           text: Manage connections to Microsoft services
-        - url: /windows/privacy/manage-windows-11-endpoints
-          text: Manage connection endpoints for Windows 11 Enterprise
+        - url: /windows/privacy/windows-10-and-privacy-compliance
+          text: Windows privacy compliance guide
         - url: /windows/privacy
           text: Learn more about privacy in Windows >
 
