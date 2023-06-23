@@ -31,7 +31,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 | [Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md) | Updated [deadline link](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#behavior-during-updates) |
 | [Microsoft 365 Apps for enterprise update policies](../references/windows-autopatch-microsoft-365-policies.md) | Updated the [Update policies](../references/windows-autopatch-microsoft-365-policies.md#update-policies) section |
 
-## June service releases
+### June service releases
 
 | Message center post number | Description |
 | ----- | ----- |
@@ -68,7 +68,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 | [Policy health and remediation](../operate/windows-autopatch-policy-health-and-remediation.md) | Add new Policy health and remediation feature. This feature is in public preview |
 | [Windows Autopatch groups public preview addendum](../references/windows-autopatch-groups-public-preview-addendum.md) | Added addendum for the Windows Autopatch groups public preview |
 
-## May service releases
+### May service releases
 
 | Message center post number | Description |
 | ----- | ----- |
