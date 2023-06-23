@@ -1879,7 +1879,7 @@ The name of the domain admin group to add to the administrators group on the dev
 
 <!-- Device-Management-GroupSid-Description-Begin -->
 <!-- Description-Source-DDF -->
-The sid of the domain admin group to add to the administrators group on the device.
+The side of the domain admin group to add to the administrators group on the device.
 <!-- Device-Management-GroupSid-Description-End -->
 
 <!-- Device-Management-GroupSid-Editable-Begin -->
