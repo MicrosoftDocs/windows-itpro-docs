@@ -20,7 +20,7 @@ appliesto:
    :::column-end:::
    :::column span="":::
     <a href="create-policies.md"><img src="images/phase-3-off.svg" alt="Icon representing the third phase."/></a><br>
-    [**Create additional policies 2 (optional)**](create-policies.md)
+    [**Create additional policies (optional)**](create-policies.md)
    :::column-end:::
 :::row-end:::
 
