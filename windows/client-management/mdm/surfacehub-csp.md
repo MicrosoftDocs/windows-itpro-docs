@@ -75,7 +75,7 @@ The following list shows the SurfaceHub configuration service provider nodes:
   - [Properties](#properties)
     - [AllowAutoProxyAuth](#propertiesallowautoproxyauth)
     - [AllowSessionResume](#propertiesallowsessionresume)
-    - [DefaultAutomaticFraming][(#propertiesdefaultautomaticframing)
+    - [DefaultAutomaticFraming](#propertiesdefaultautomaticframing)
     - [DefaultVolume](#propertiesdefaultvolume)
     - [DisableSigninSuggestions](#propertiesdisablesigninsuggestions)
     - [DoNotShowMyMeetingsAndFiles](#propertiesdonotshowmymeetingsandfiles)
