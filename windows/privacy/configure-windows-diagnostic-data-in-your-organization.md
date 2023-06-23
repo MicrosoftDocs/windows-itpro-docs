@@ -373,7 +373,7 @@ To enable Windows diagnostic data processor configuration, you can use Group Pol
 - For Group Policy, you can use the “Allow commercial data pipeline” policy, which is also available in the Intune [settings catalog](/mem/intune/configuration/settings-catalog).
 - For an MDM solution, you can use the AllowCommercialDataPipeline setting in the System Policy configuration service provider (CSP).
 
-For more information about AllowCommercialDataPipeline and the “Allow commercial data pipeline” policy, [review this information](../client-management/mdm/policy-csp-system.md#allowcommercialdatapipeline).
+For more information about AllowCommercialDataPipeline and the “Allow commercial data pipeline” policy, [review this information](/window/client-management/mdm/policy-csp-system.md#allowcommercialdatapipeline).
 
 ## Change privacy settings on a single server
 
