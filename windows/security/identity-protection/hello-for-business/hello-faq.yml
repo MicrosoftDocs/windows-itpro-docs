@@ -124,6 +124,15 @@ sections:
       - question: What is Event ID 300?
         answer: |
           This event is created when Windows Hello for Business is successfully created and registered with Azure Active Directory (Azure AD). Applications or services can trigger actions on this event. For example, a certificate provisioning service can listen to this event and trigger a certificate request. This is a normal condition and no further action is required.
+      - question: What happens when an unauthorized user gains possession of a device enrolled with Windows Hello for Business?
+        answer: |
+          The unauthorized user won't be able to utilize any biometric options and will have the only option to enter a PIN.
+
+          If the user attempts to unlock the device by entering random PINs, after three unsuccessful attempts the credential provider will display the following message: *You've entered an incorrect PIN several times. To try again, enter A1B2C3 below*.
+          Upon entering the challenge phrase "A1B2C3", the user will be granted one more opportunity to enter the PIN. If unsuccessful, the provider will be disabled, leaving the user with the sole option to reboot the device. Following the reboot, the aforementioned pattern repeats.
+          
+          If unsuccessful attempts continue, the device will enter a lockout state, lasting for 1 minute after the first reboot, 2 minutes after the fourth reboot, and 10 minutes after the fifth reboot. The duration of each lockout increases accordingly. This behavior is a result of the TPM 2.0 anti-hammering feature.
+          For more information about the TPM anti-hammering feature, [TPM 2.0 anti-hammering](/windows/security/information-protection/tpm/tpm-fundamentals#tpm-20-anti-hammering).
 
   - name: Design and planning
     questions:
