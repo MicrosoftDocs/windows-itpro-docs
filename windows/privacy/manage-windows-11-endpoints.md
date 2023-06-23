@@ -73,7 +73,6 @@ To view endpoints for non-Enterprise Windows 11 editions, see [Windows 11 connec
 |Diagnostic Data| ||[Learn how to turn off traffic to all of the following endpoint(s) for diagnostic data.](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback)|
 ||The following endpoints are used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service. If you turn off traffic for this endpoint, diagnostic and usage information, which helps Microsoft find and fix problems and improve our products and services, won't be sent back to Microsoft.|TLSv1.2/HTTP|self.events.data.microsoft.com|
 |||TLSv1.2/HTTPS/HTTP|v10.events.data.microsoft.com|
-|||TLSv1.2/HTTP|v20.events.data.microsoft.com|
 ||The following endpoints are used by Windows Error Reporting. To turn off traffic for these endpoints, enable the following Group Policy: Administrative Templates > Windows Components > Windows Error Reporting > Disable Windows Error Reporting. This means error reporting information won't be sent back to Microsoft.|TLSv1.2|telecommand.telemetry.microsoft.com|
 |||TLS v1.2/HTTPS/HTTP|watson.*.microsoft.com|
 |||TLSv1.2|www.telecommandsvc.microsoft.com|
