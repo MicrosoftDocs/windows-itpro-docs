@@ -1,7 +1,7 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 06/12/2023
+ms.date: 06/23/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
@@ -21,9 +21,25 @@ This article lists new and updated feature releases, and service releases, with 
 
 Minor corrections such as typos, style, or formatting issues aren't listed.
 
+## June 2023
+
+### June feature release
+
+| Article | Description |
+| ----- | ----- |
+| [Changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) | Added Location for updates (Device) setting and value to the [Windows Autopatch - Office Configuration policy](../references/windows-autopatch-changes-to-tenant.md#microsoft-office-update-policies) |
+| [Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md) | Updated [deadline link](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#behavior-during-updates) |
+| [Microsoft 365 Apps for enterprise update policies](../references/windows-autopatch-microsoft-365-policies.md) | Updated the [Update policies](../references/windows-autopatch-microsoft-365-policies.md#update-policies) section |
+
+## June service release
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC591864](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Updated ticket categories to reduce how long it takes to resolve support requests |
+
 ## May 2023
 
-### May 2023 feature release
+### May feature release
 
 | Article | Description |
 | ----- | ----- |
