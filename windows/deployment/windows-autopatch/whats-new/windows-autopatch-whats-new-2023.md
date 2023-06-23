@@ -35,6 +35,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Message center post number | Description |
 | ----- | ----- |
+| [MC602590](https://admin.microsoft.com/adminportal/home#/MessageCenter) | June 2023 Windows Autopatch baseline configuration update |
 | [MC591864](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Updated ticket categories to reduce how long it takes to resolve support requests |
 
 ## May 2023
