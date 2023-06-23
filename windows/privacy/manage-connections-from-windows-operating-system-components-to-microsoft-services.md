@@ -1915,12 +1915,13 @@ Add a REG_DWORD value named **DisableOneSettingsDownloads** to **HKEY_LOCAL_MACH
 ### <a href="" id="bkmk-widgets"></a>32. Widgets
 
 Widgets is a news and feeds service that can be customized by the user. If you turn off this service, apps using this service may stop working.
+
 To turn off Widgets, you can use Group Policy or a custom setting in an MDM solution, such as Microsoft Intune.
 
 - For Group Policy, you can use the “Allow widgets” policy, which is also available in the Intune [settings catalog](/mem/intune/configuration/settings-catalog).
 - For an MDM solution, you can use the AllowNewsAndInterests setting in the NewsandInterests configuration service provider (CSP).
 
-For more information about AllowNewsAndInterests and the “Allow widgets” policy, [review this information](/windows/client-management/mdm/policy-csp-newsandinterests.md#allownewsandinterests).
+For more information about AllowNewsAndInterests and the “Allow widgets” policy, [review this information](/windows/client-management/mdm/policy-csp-newsandinterests#allownewsandinterests).
 
 
 ### <a href="" id="bkmk-allowedtraffic"></a> Allowed traffic list for Windows Restricted Traffic Limited Functionality Baseline
