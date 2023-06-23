@@ -368,21 +368,12 @@ If you don’t sign up for any of these enterprise services, Microsoft will act 
 > - Windows 10, versions 1809, 1903, 1909, and 2004.
 > - Newer versions of Windows 10 and Windows 11 that have not updated yet to at least the January 2023 preview cumulative update.
 
-Use the instructions below to enable Windows diagnostic data processor configuration using a single setting, through Group Policy, or an MDM solution.
+To enable Windows diagnostic data processor configuration, you can use Group Policy or a custom setting in an MDM solution, such as Microsoft Intune.
 
-In Group Policy, to enable Windows diagnostic data processor configuration, go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds** and switch the **Allow commercial data pipeline** setting to **enabled**.
+- For Group Policy, you can use the “Allow commercial data pipeline” policy, which is also available in the Intune [settings catalog](/mem/intune/configuration/settings-catalog).
+- For an MDM solution, you can use the AllowCommercialDataPipeline setting in the System Policy configuration service provider (CSP).
 
-If you wish to disable, at any time, switch the same setting to **disabled**. The default state of the above setting is **disabled**.
-
-To use an MDM solution, such as [Microsoft Intune](/mem/intune/configuration/custom-settings-windows-10), to deploy the Windows diagnostic data processor configuration to your supported devices, use the following custom OMA-URI setting configuration:
-
- - **Name:** System/AllowCommercialDataPipeline
- - **OMA-URI:** ./Vendor/MSFT/Policy/Config/System/AllowCommercialDataPipeline
- - **Data type:** Integer
-
-Under **Value**, use **1** to enable the service.
-
-If you wish to disable, at any time, switch the same setting to **0**. The default value is **0**.
+For more information about AllowCommercialDataPipeline and the “Allow commercial data pipeline” policy, [review this information](../client-management/mdm/policy-csp-system.md#allowcommercialdatapipeline).
 
 ## Change privacy settings on a single server
 
