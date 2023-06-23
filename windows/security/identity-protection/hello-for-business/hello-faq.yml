@@ -124,7 +124,7 @@ sections:
       - question: What is Event ID 300?
         answer: |
           This event is created when Windows Hello for Business is successfully created and registered with Azure Active Directory (Azure AD). Applications or services can trigger actions on this event. For example, a certificate provisioning service can listen to this event and trigger a certificate request. This is a normal condition and no further action is required.
-      - question: What happens when an unauthorized user gains possession of a device enrolled with Windows Hello for Business?
+      - question: What happens when an unauthorized user gains possession of a device enrolled in Windows Hello for Business?
         answer: |
           The unauthorized user won't be able to utilize any biometric options and will have the only option to enter a PIN.
 
