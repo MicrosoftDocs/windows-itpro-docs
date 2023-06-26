@@ -55,7 +55,7 @@ There are three main steps to install an application on Windows 11 SE using the 
    :::column-end:::
    :::column span="":::
     <a href="create-policies.md"><img src="images/phase-3-on.svg" alt="Icon representing the third phase."/></a><br>
-    [**Create additional policies 2 (optional)**](create-policies.md)<br>
+    [**Create additional policies (optional)**](create-policies.md)<br>
       To allow apps that aren't installable or don't behave as intended, more policies can be created and deployed so that the apps can be used
    :::column-end:::
 :::row-end:::
