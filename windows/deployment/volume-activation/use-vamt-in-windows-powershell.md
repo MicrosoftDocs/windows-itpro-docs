@@ -44,7 +44,7 @@ To open PowerShell with administrative credentials, select **Start** and enter `
 For all supported operating systems, you can use the VAMT PowerShell module included with the Windows ADK. By default, the module is installed with the Windows ADK in the VAMT folder. Change directories to the directory where VAMT is located. For example, if the Windows ADK is installed in the default location of `C:\Program Files(x86)\Windows Kits\10`, enter:
 
   ```powershell
-  cd "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\VAMT 3.0"
+  cd "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\VAMT3"
   ```
 
 ### Import the VAMT PowerShell module
