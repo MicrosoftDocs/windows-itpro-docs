@@ -30,7 +30,7 @@ highlightedContent:
     url: https://www.microsoft.com/en-us/download/details.aspx?id=104594
   - title: Windows release health
     itemType: whats-new
-    url: /windows-insider/get-started
+    url: /windows/release-health
   - title: Windows commercial licensing
     itemType: overview
     url: /windows/whats-new/windows-licensing
