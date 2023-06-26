@@ -72,6 +72,10 @@ The **Quality updates** tab displays generalized data at the top by using tiles.
 | **Missing multiple security updates** | Count of devices that are missing two or more security updates. | - Select **View details** to display a flyout with a chart that displays the first 1000 items. </br> - Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial). |
 | **Expedite performance** | Overview of the performance of the expedited deployments for the latest security update. | - Select **View details** to display a flyout with a chart that displays the total progress of each deployment, number of alerts, and count of devices. </br> - Select the count from the **Alerts** column to display the alerts, by name, for the deployment. Selecting the device count for the alert name displays a list of devices with the alert. </br> - Select the count in the **TotalDevices** column to display a list of clients and their information for the deployment. <!--7626683-->|
 
+<!--8052067--> 
+> [!TIP]
+> Clients can be in an **Unknown** state for an update. This state occurs when there's a record for the device in the [UCClient](wufb-reports-schema-uclient.md) table, but there isn't a record for the specific update for a specific computer in the [UCClientUpdateStatus](wufb-reports-schema-ucclientupdatestatus.md) table. 
+
 
 Below the tiles, the **Quality updates** tab is subdivided into **Update status** and **Device status** groups. These different chart groups allow you to easily discover trends in compliance data. For instance, you may remember that about third of your devices were in the installing state yesterday, but this number didn't change as much as you were expecting. That unexpected trend may cause you to investigate and resolve a potential issue before end users are impacted.
 
