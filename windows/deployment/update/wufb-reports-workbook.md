@@ -34,7 +34,7 @@ Updates can go though many phases from when they're initially deployed to being 
 - **Cancelled**: The update was cancelled from the [deployment service](deployment-service-overview.md) before it was installed
 - **Uninstalled**: The update was uninstalled from the device by either an admin or a user
 - **OnHold**: The update was put on hold from the [deployment service](deployment-service-overview.md) before it was installed
-- **Unknown**:  This state occurs when there's a record for the device in the [UCClient](wufb-reports-schema-uclient.md) table, but there isn't a record for the specific update for a specific computer in the [UCClientUpdateStatus](wufb-reports-schema-ucclientupdatestatus.md) table.
+- **Unknown**:  This state occurs when there's a record for the device in the [UCClient](wufb-reports-schema-ucclient.md) table, but there isn't a record for the specific update for a specific computer in the [UCClientUpdateStatus](wufb-reports-schema-ucclientupdatestatus.md) table.
 
 ## Open the Windows Update for Business reports workbook
 
