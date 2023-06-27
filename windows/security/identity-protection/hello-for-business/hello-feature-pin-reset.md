@@ -69,8 +69,11 @@ When non-destructive PIN reset is enabled on a client, a 256-bit AES key is gene
 Using Group Policy, Microsoft Intune or a compatible MDM solution, you can configure Windows devices to securely use the **Microsoft PIN Reset Service** which enables users to reset their forgotten PIN without requiring re-enrollment.
 
 >[!IMPORTANT]
-> The Microsoft PIN Reset service only works with **Enterprise Edition** for Windows 10, version 1709 to 1809 and later, and Windows 11. The feature works with **Enterprise Edition** and **Pro** edition with Windows 10, version 1903 and later, Windows 11.
-> The Microsoft PIN Reset service is not currently available in Azure Government.
+> The Microsoft PIN Reset service works with following versions of Windows.
+>
+> Windows 10 Enterprise Edition, version 1709 to 1809
+> Windows 10 Enterprise Edition and Pro edition, version 1903 and later
+> All Editions of Windows 11
 
 ### Summary
 
