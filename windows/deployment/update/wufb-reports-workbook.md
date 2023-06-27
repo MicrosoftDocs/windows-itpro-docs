@@ -25,6 +25,17 @@ ms.technology: itpro-updates
 
 :::image type="content" source="media/33771278-wufb-reports-workbook-summary.png" alt-text="Screenshot of the summary tab in the Windows Update for Business reports workbook. The three tabbed sections are outlined in red." lightbox="media/33771278-wufb-reports-workbook-summary.png":::
 
+Updates can go though many phases from when they're initially deployed to being installed on the device. Transition from one state to another can be rapid, which makes some states less likely to be displayed in reports. The workbook can report the following high-level states for a device update: <!--8052067-->
+
+- **Offering**: The update is being offered to the device for installation
+- **Pending**: The update has been offered to the device, but the device hasn't started the installation process because it isn't ready
+- **Installing**: The update is in the process of being installed on the device
+- **Installed**: The update has been installed on the device
+- **Cancelled**: The update was cancelled from the [deployment service](deployment-service-overview.md) before it was installed
+- **Uninstalled**: The update was uninstalled from the device by either an admin or a user
+- **OnHold**: The update was put on hold from the [deployment service](deployment-service-overview.md) before it was installed
+- **Unknown**:  This state occurs when there's a record for the device in the [UCClient](wufb-reports-schema-uclient.md) table, but there isn't a record for the specific update for a specific computer in the [UCClientUpdateStatus](wufb-reports-schema-ucclientupdatestatus.md) table.
+
 ## Open the Windows Update for Business reports workbook
 
 To access the Windows Update for Business reports workbook:
@@ -34,6 +45,7 @@ To access the Windows Update for Business reports workbook:
 
 1. When the gallery opens, select the **Windows Update for Business reports** workbook. If needed, you can filter workbooks by name in the gallery.
 1. When the workbook opens, you may need to specify which **Subscription** and **Workspace** you used when [enabling Windows Update for Business reports](wufb-reports-enable.md).
+
 
 ## Summary tab
 
