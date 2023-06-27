@@ -53,7 +53,7 @@ At minimum, Windows Update for Business reports requires devices to send diagnos
 
 The following levels are recommended, but not required:
 - The *Enhanced* level for Windows 10 devices
-- The *Optional* level for Windows 11 devices  <!--8027083-->
+- The *Optional* level for Windows 11 devices (previously *Full*) <!--8027083-->
 
 Device names don't appear in Windows Update for Business reports unless you individually opt-in devices by using a policy. The configuration script does this for you, but when using other client configuration methods, set one of the following to display device names:
 
