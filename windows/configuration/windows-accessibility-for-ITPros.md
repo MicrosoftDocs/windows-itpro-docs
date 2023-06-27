@@ -5,6 +5,7 @@ ms.prod: windows-client
 ms.technology: itpro-configure
 ms.author: lizlong
 author: lizgt2000
+ms.date: 06/27/2024
 ms.reviewer: 
 manager: aaroncz
 ms.localizationpriority: medium
