@@ -64,15 +64,14 @@ The charts displayed in the **Summary** tab give you a general idea of the overa
 
 ## Quality updates tab
 
-The **Quality updates** tab displays generalized data at the top by using tiles. The quality update data becomes more specific as you navigate lower in this tab. The top of the **Quality updates** tab contains tiles with the following information:
+The **Quality updates** tab displays generalized data at the top by using tiles. The quality update data becomes more specific as you navigate lower in this tab. The top of the **Quality updates** tab contains tiles with the following information and drill-down options:
 
-- **Latest security update**: Count of devices that have reported successful installation of the latest security update.
-- **Missing one security update**: Count of devices that haven't installed the latest security update.
-- **Missing multiple security updates**: Count of devices that are missing two or more security updates.
-- **Active alerts**: Count of active update and device alerts for quality updates.
-
-Selecting **View details** on any of the tiles displays a flyout with a chart that displays the first 1000 items. Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
-
+| Tile name | Description | Drill-in description |
+|---|---|---|
+|**Latest security update**| Count of devices that have reported successful installation of the latest security update. | - Select **View details** to display a flyout with a chart that displays the first 1000 items. </br> - Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial). | 
+| **Missing one security update** | Count of devices that haven't installed the latest security update.| - Select **View details** to display a flyout with a chart that displays the first 1000 items. </br> - Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).|
+| **Missing multiple security updates** | Count of devices that are missing two or more security updates. | - Select **View details** to display a flyout with a chart that displays the first 1000 items. </br> - Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial). |
+| **Expedite performance** | Overview of the progress for the expedited deployments of the latest security update. | - Select **View details** to display a flyout with a chart that displays the total progress of each deployment, number of alerts, and count of devices. </br> - Select the count from the **Alerts** column to display the alerts, by name, for the deployment. Selecting the device count for the alert name displays a list of devices with the alert. </br> - Select the count in the **TotalDevices** column to display a list of clients and their information for the deployment. <!--7626683-->|
 
 Below the tiles, the **Quality updates** tab is subdivided into **Update status** and **Device status** groups. These different chart groups allow you to easily discover trends in compliance data. For instance, you may remember that about third of your devices were in the installing state yesterday, but this number didn't change as much as you were expecting. That unexpected trend may cause you to investigate and resolve a potential issue before end users are impacted.
 
