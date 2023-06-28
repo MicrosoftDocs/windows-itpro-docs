@@ -12,7 +12,7 @@ metadata:
     - highpri
     - tier3
   ms.topic: faq
-  ms.date: 04/17/2023
+  ms.date: 06/28/2023
 title: Delivery Optimization Frequently Asked Questions
 summary: |
   **Applies to**
@@ -111,7 +111,7 @@ sections:
           The recommended configuration for Delivery Optimization Peer-to-Peer to work most efficiently along with cloud proxy solutions (for example, Zscaler) is to allow traffic to the Delivery Optimization services to go directly to the internet and not through the cloud proxy.
           At a minimum, the following FQDN that is used for communication between clients and the Delivery Optimization service should be allowed with direct Internet access and bypass the cloud proxy service: 
 
-            - *.prod.do.dsp.mp.microsoft.com
+            - `*.prod.do.dsp.mp.microsoft.com`
 
           If allowing direct Internet access isn't an option, try using Group Download Mode '2' to define the peering group. [Learn more](waas-delivery-optimization-reference.md#select-the-source-of-group-ids) about using Group Download mode.
           
@@ -119,7 +119,7 @@ sections:
         answer: |
           Delivery Optimization is an HTTP downloader used by most content providers from Microsoft. When a device is configured to use Delivery Optimization peering (on by default), it does so with the HTTP downloader capabilities to optimize bandwidth usage. 
           If you'd like to disable peer-to-peer capabilities of Delivery Optimization, change the Delivery Optimization [Download mode](waas-delivery-optimization-reference.md#download-mode) setting to '0', which will disable peer-to-peer and provide hash checks. [Download mode](waas-delivery-optimization-reference.md#download-mode) set to '99' should only be used when the device is offline and doesn't have internet access.
-          We do not recommend setting Download mode to ‘100’ (Bypass) as some content may fail to download as a result. In addition, Download mode ‘100’ is deprecated starting in Windows 11.
+          Don't set **Download mode** to '100' (Bypass), which can cause some content to fail to download. Starting in Windows 11, Download mode '100' is deprecated.
          
           > [!NOTE]
           > Disabling Delivery Optimization won't prevent content from downloading to your devices. If you're looking to pause updates, you need to set policies for the relevant components such as Windows Update, Windows Store or Edge browser.  If you're looking to reduce the load on your network, look into using Delivery Optimization Peer-to-Peer, Microsoft Connected Cache or apply the [network throttling policies](waas-delivery-optimization-reference.md#maximum-download-bandwidth) available for Delivery Optimization.
