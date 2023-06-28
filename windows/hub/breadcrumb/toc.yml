@@ -59,9 +59,6 @@ items:
               - name: OS
                 tocHref: /windows/security/operating-system-security/
                 topicHref: /windows/security/operating-system-security/
-              - name: Network
-                tocHref: /windows/security/operating-system-security/network-security/
-                topicHref: /windows/security/operating-system-security/network-security/
               - name: Windows Defender Firewall
                 tocHref: /windows/security/operating-system-security/network-security/windows-firewall/
                 topicHref: /windows/security/operating-system-security/network-security/windows-firewall/windows-firewall-with-advanced-security
