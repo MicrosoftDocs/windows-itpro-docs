@@ -6,7 +6,7 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.topic: article
-ms.date: 06/12/2023
+ms.date: 06/23/2023
 ms.technology: itpro-updates
 ---
 
@@ -44,13 +44,13 @@ The **Summary** tab gives you a brief high-level overview of the devices that yo
 
 Each of these tiles contains an option to **View details**. When **View details** is selected for a tile, a flyout appears with additional information.
 
-:::image type="content" source="media/33771278-workbook-summary-tab-tiles.png" alt-text="Screenshot of the summary tab tiles in the Windows Update for Business reports workbook":::
+:::image type="content" source="media/8037522-workbook-summary-tab-tiles.png" alt-text="Screenshot of the summary tab tiles in the Windows Update for Business reports workbook":::
 
 | Tile name | Description | View details description |
 |---|---|------|
 | **Enrolled devices** | Total number of devices that are enrolled into Windows Update for Business reports | Displays multiple charts about the operating systems (OS) for enrolled devices: </br> **OS Version** </br> **OS Edition** </br> **OS Servicing Channel** </br> **OS Architecture**|
 |**Active alerts** | Total number of active alerts on enrolled devices | Displays the top three active alert subtypes and the count of devices in each. </br> </br> Select the count of **Devices** to display a table of the devices. This table is limited to the first 1000 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial). </br> </br> Select an **AlertSubtype** to display a list containing: </br> - Each **Error Code** in the alert subtype </br>- A **Description** of the error code </br> - A **Recommendation** to help you remediate the error code </br> - A count of **Devices** with the specific error code |
-|  **Windows 11 eligibility** | Percentage of devices that are capable of running Windows 11 | Displays the following items: </br> - **Windows 11 Readiness Status** chart </br> - **Readiness Reason(s) Breakdown** chart that displays  Windows 11 requirements that aren't met. </br> - A table for **Readiness reason**. Select a reason to display a list of devices that don't meet a specific requirement for Windows 11. |
+|  **Windows 11 adoption** | Number of devices that are running Windows 11 | Displays the following items: </br> - **Windows 11 Device Count** chart, broken down by Windows 11 version </br> - **Windows 11 Eligibility Status** contains a **Readiness status** chart that lists the count of devices by OS version that are either capable or not capable of running Windows 11. </br> - The **Device List** allows you to choose a Windows 11 **Ineligibility Reason** to display devices that don't meet the selected requirement. <!--8037522-->|
 
 ### Summary tab charts
 
