@@ -34,13 +34,13 @@ Switching the toggle between Automatic and Self-managed modes creates driver pro
 | Automatic | We recommend using **Automatic** mode.<p>Automatic mode (default) is recommended for organizations with standard Original Equipment Manufacturer (OEM) devices where no recent driver or hardware issues have occurred due to Windows Updates. Automatic mode ensures the most secure drivers are installed using Autopatch deployment ring rollout.</p> |
 | Self-managed | When you use the the **Self-managed** mode for drivers and firmware, no drivers are installed in your environment without your explicit approval. You can still use Intune to choose specific drivers and deploy them on a ring-by-ring basis.<p>Self-managed mode turns off Windows Autopatch’s automatic driver deployment. Instead, the Administrator controls the driver deployment.<p>The Administrator selects the individual driver within an Intune driver update profile. Then, Autopatch creates an Intune driver update profile per deployment ring. Drivers can vary between deployment rings.</p><p>The drivers listed for selection represent only the drivers needed for the targeted clients, which are the Autopatch rings. Therefore, the drivers offered may vary between rings depending on the variety of device hardware in an organization.</p> |
 
-## Set the mode to Automatic or Self-managed mode
+## Set driver and firmware updates to Automatic or Self-managed mode
 
-**To set the mode to Automatic or Self-managed:**
+**To set driver and firmware updates to Automatic or Self-managed mode:**
 
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Navigate to **Devices** > **Windows Autopatch** > **Release management** > **Release settings**.
-1. Find the **Windows Driver Updates** section, read and accept the agreement.
+1. In the **Windows Driver Updates** section, read and accept the agreement.
 1. Select either **Automatic** or **Self-managed**.
 
 ## View driver and firmware policies created by Windows Autopatch
