@@ -23,7 +23,7 @@ ms.collection:
 You can manage and control your driver and firmware updates with Windows Autopatch. You can choose to receive driver and firmware updates automatically, or self-manage the deployment.
 
 > [!TIP]
-> Windows Autopatch's driver and firmware update management is based on Intune’s driver and firmware update management. You can use **both** Intune and Windows Autopatch to manage your drivers and firmware updates.
+> Windows Autopatch's driver and firmware update management is based on [Intune’s driver and firmware update management](/mem/intune/protect/windows-driver-updates-overview). You can use **both** Intune and Windows Autopatch to manage your driver and firmware updates.
 
 ## Automatic and Self-managed modes
 
