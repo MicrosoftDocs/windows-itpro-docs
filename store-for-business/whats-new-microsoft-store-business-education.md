@@ -55,7 +55,7 @@ We've been working on bug fixes and performance improvements to provide you a be
 ## Previous releases and updates
 
 [April 2023](release-history-microsoft-store-business-education.md#april-2023)
-- Tab removed from Microsoft Store apps on Windows 10 and Windows 11 PCs.
+- Tab removed from Microsoft Store apps on Windows 11 PCs.
 
 [October 2018](release-history-microsoft-store-business-education.md#october-2018)
 - Use security groups with Private store apps
