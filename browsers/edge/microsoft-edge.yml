@@ -7,7 +7,7 @@ metadata:
   title: Microsoft Edge Legacy # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Find the tools and resources you need to help deploy and use Microsoft Edge in your organization. # Required; article description that is displayed in search results. < 160 chars.
   keywords: Microsoft Edge, issues, fixes, announcements, Windows Server, advisories
-  ms.prod: edge
+  ms.prod: microsoft-edge
   ms.localizationpriority: medium
   author: aczechowski
   ms.author: aaroncz
