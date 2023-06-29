@@ -24,11 +24,11 @@ Looking for info on the latest release? Check out [What's new in Microsoft Store
 
 ## May 2023
 
-### Removal of Microsoft Store for Business tab from Microsoft Store app on Windows 10 and Windows 11 PCs
+### Removal of Microsoft Store for Business tab from Microsoft Store app on Windows 10 PCs
 
-The Microsoft Store for Business tab was removed from the Microsoft Store app on Windows 10 and Windows 11. The Microsoft Store for Business tab is still available on HoloLens devices.
+The Microsoft Store for Business tab was removed from the Microsoft Store app on Windows 10. The Microsoft Store for Business tab is still available on HoloLens devices.
 
-Users on Windows 10 and Windows 11 PCs can no longer do the following tasks:
+Users on Windows 10 PCs can no longer do the following tasks:
 
 - see Line of Business (LOB) products listed in the Microsoft Store for Business tab
 - acquire or install [online apps](/mem/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business#online-and-offline-apps)
