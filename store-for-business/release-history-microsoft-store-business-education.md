@@ -44,9 +44,6 @@ We recommend that you add your apps through the new Microsoft Store app experien
 
 Follow the [Intune Customer Success blog](https://aka.ms/IntuneCustomerSuccess) where we will publish more information about this change.
 
-## April 2023
-- Tab removed from Microsoft Store apps on Windows 10 and Windows 11 PCs – The Microsoft Store for Business tab was removed from Microsoft Store apps on Windows 10 and Windows 11 PCs. An interaction with existing MDM and GPO policies may lead to customers seeing errors when accessing the Microsoft Store app. [Get more info](manage-access-to-private-store.md#microsoft-store-for-business-tab-removed)
-
 ## October 2018
 - Use security groups with Private store apps - On the details page for apps in your private store, you can set Private store availability. This allows you to choose which security groups can see an app in the private store. [Get more info](app-inventory-management-microsoft-store-for-business.md)
 
