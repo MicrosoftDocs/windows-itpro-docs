@@ -1,6 +1,6 @@
 ---
 title: Whats new in Microsoft Store for Business and Education
-description: Learn about newest features in Microsoft Store for Business and Microsoft Store for Education.
+description: Learn about the newest features in Microsoft Store for Business and Microsoft Store for Education.
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
@@ -8,7 +8,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
 ms.topic: conceptual
-ms.date: 05/24/2023
+ms.date: 06/29/2023
 ms.reviewer: 
 ---
 
@@ -17,23 +17,30 @@ ms.reviewer:
 > [!IMPORTANT]
 >
 > - The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
-> - In April 2023 the Microsoft Store for Business tab was removed from Microsoft Store apps on Windows 10 and Windows 11 PCs. An interaction with existing MDM and GPO policies may lead to customers seeing errors when accessing the Microsoft Store app. For more information see [Microsoft Store for Business tab removed](manage-access-to-private-store.md#microsoft-store-for-business-tab-removed).
-
-Microsoft Store for Business and Education regularly releases new and improved features.  
 
 ## Latest updates for Store for Business and Education
 
-**October 2018**
+**May 2023**
 
-:::row:::
-   :::column span="1":::
-   ![Security groups.](images/security-groups-icon.png)
-   :::column-end:::
-   :::column span="1":::
-   **Use security groups with Private store apps**<br /><br /> On the details page for apps in your private store, you can set **Private store availability**. This allows you to choose which security groups can see an app in the private store. <br /><br />[Get more info](./app-inventory-management-microsoft-store-for-business.md#private-store-availability)<br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education
-   :::column-end:::
-:::row-end:::
+**Removal of Microsoft Store for Business tab from Microsoft Store app on Windows 10 PCs**
 
+The Microsoft Store for Business tab was removed from the Microsoft Store app on Windows 10. The Microsoft Store for Business tab is still available on HoloLens devices.
+
+Users on Windows 10 PCs can no longer do the following tasks:
+
+- see Line of Business (LOB) products listed in the Microsoft Store for Business tab
+- acquire or install [online apps](/mem/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business#online-and-offline-apps)
+- assign licenses for existing [online apps](/mem/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business#online-and-offline-apps) using the Store for Business portal or Store for Business app
+
+[Offline app](/mem/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business#online-and-offline-apps) distribution and licensing scenarios aren't impacted by this change.
+
+We recommend that you add your apps through the new Microsoft Store app experience in Intune. If an app isn’t available in the Microsoft Store, you must retrieve an app package from the vendor and install it as an LOB app or Win32 app. For instructions, read the following articles:
+
+- [Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps-microsoft)
+- [Add a Windows line-of-business app to Microsoft Intune](/mem/intune/apps/lob-apps-windows)
+- [Add, assign, and monitor a Win32 app in Microsoft Intune](/mem/intune/apps/apps-win32-add)
+
+Follow the [Intune Customer Success blog](https://aka.ms/IntuneCustomerSuccess) where we will publish more information about this change.
 
 <!---
 We've been working on bug fixes and performance improvements to provide you a better experience. Stay tuned for new features!
@@ -46,6 +53,12 @@ We've been working on bug fixes and performance improvements to provide you a be
 -->
 
 ## Previous releases and updates
+
+[April 2023](release-history-microsoft-store-business-education.md#april-2023)
+- Tab removed from Microsoft Store apps on Windows 11 PCs.
+
+[October 2018](release-history-microsoft-store-business-education.md#october-2018)
+- Use security groups with Private store apps
 
 [September 2018](release-history-microsoft-store-business-education.md#september-2018)
 - Performance improvements
