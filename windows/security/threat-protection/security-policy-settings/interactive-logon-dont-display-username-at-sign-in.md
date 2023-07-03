@@ -89,7 +89,7 @@ Enable the **Interactive logon: Don't display user name at sign-in** setting.
 
 ### Potential impact
 
-Users must always type their usernames and passwords when they log on locally or to the domain. The sign in tiles of all logged on users aren't displayed. When this policy is Enabled, you will be unable to change the default credential to anything other than username/password. In addition, this policy may be incompatible with Autologon and Multi-Factor Unlock.
+Users must always type their usernames and passwords when they log on locally or to the domain. The sign in tiles of all logged on users aren't displayed. When this policy is Enabled, you will be unable to change the default credential provider to anything other than username/password. In addition, this policy may be incompatible with Autologon and Multi-Factor Unlock.
 
 ## Related topics
 
