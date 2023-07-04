@@ -57,6 +57,11 @@ sections:
 
           For more information, see [Endpoints for Delivery Optimization and Microsoft Connected Cache](../do/delivery-optimization-endpoints.md) for a list of all content endpoints needed.
 
+     - question: My firewall requires IP Address and cannot process FQDN's, how do I configure it to download content with Delivery Optimization?
+        answer: | 
+          Microsoft content such as Windows Updates are hosted and delivered globally via Content Delivery Networks (CDNs) as well as Microsoft's Connected Cache (MCC) servers which are hosted within Internet Service Provider (ISP) networks. 
+          The network of CDNs and MCCs allows Microsoft to reach the scale required to meet the demand of the Windows user base. Given this delivery infrastructure changes dynamically, providing an exhaustive list of IPs and keeping it up to date is not feasible. 
+        
       - question: Does Delivery Optimization use multicast?
         answer: No. It relies on the cloud service for peer discovery, resulting in a list of peers and their IP addresses. Client devices then connect to their peers to obtain download files over TCP/IP.
           
