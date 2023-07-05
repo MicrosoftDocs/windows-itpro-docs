@@ -1,7 +1,7 @@
 ---
 title: Manage driver and firmware updates
 description: This article explains how you can manage driver and firmware updates with Windows Autopatch
-ms.date: 06/27/2023 
+ms.date: 07/04/2023 
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -18,7 +18,7 @@ ms.collection:
 # Manage driver and firmware updates (public preview)
 
 > [!IMPORTANT]
-> **This feature will be rolled out when Intune's rollout is complete**. This feature is in **public preview**. The feature is being actively developed, and might not be complete. You can test and use these features in production environments and provide feedback.
+> This feature is in **public preview**. The feature is being actively developed, and might not be complete. You can test and use these features in production environments and provide feedback.
 
 You can manage and control your driver and firmware updates with Windows Autopatch. You can choose to receive driver and firmware updates automatically, or self-manage the deployment.
 
