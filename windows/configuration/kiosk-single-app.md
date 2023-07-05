@@ -12,7 +12,7 @@ ms.collection:
  - highpri
  - tier1
 ms.technology: itpro-configure
-ms.date: 12/31/2017
+ms.date: 06/15/2023
 ---
 
 # Set up a single-app kiosk on Windows 10/11

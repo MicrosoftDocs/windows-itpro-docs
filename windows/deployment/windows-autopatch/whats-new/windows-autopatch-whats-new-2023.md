@@ -1,7 +1,7 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 06/12/2023
+ms.date: 06/26/2023 
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
@@ -21,9 +21,28 @@ This article lists new and updated feature releases, and service releases, with 
 
 Minor corrections such as typos, style, or formatting issues aren't listed.
 
+## June 2023
+
+### June feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Manage driver and firmware updates](../operate/windows-autopatch-manage-driver-and-firmware-updates.md) | New article on how to manage driver and firmware updates. This feature is in public preview |
+| [Changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) | Added Location for updates (Device) setting and value to the [Windows Autopatch - Office Configuration policy](../references/windows-autopatch-changes-to-tenant.md#microsoft-office-update-policies) |
+| [Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md) | Updated [deadline link](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#behavior-during-updates) |
+| [Microsoft 365 Apps for enterprise update policies](../references/windows-autopatch-microsoft-365-policies.md) | Updated the [Update policies](../references/windows-autopatch-microsoft-365-policies.md#update-policies) section |
+
+### June service releases
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC604889](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Expanding Windows Autopatch availability in August 2023 |
+| [MC602590](https://admin.microsoft.com/adminportal/home#/MessageCenter) | June 2023 Windows Autopatch baseline configuration update |
+| [MC591864](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Updated ticket categories to reduce how long it takes to resolve support requests |
+
 ## May 2023
 
-### May 2023 feature release
+### May feature releases or updates
 
 | Article | Description |
 | ----- | ----- |
@@ -51,7 +70,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 | [Policy health and remediation](../operate/windows-autopatch-policy-health-and-remediation.md) | Add new Policy health and remediation feature. This feature is in public preview |
 | [Windows Autopatch groups public preview addendum](../references/windows-autopatch-groups-public-preview-addendum.md) | Added addendum for the Windows Autopatch groups public preview |
 
-## May service release
+### May service releases
 
 | Message center post number | Description |
 | ----- | ----- |
@@ -65,7 +84,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 | ----- | ----- |
 | [Changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) | Updated the [Deployment rings for Windows 10 and later](../references/windows-autopatch-changes-to-tenant.md#deployment-rings-for-windows-10-and-later) section |
 
-### April service release
+### April service releases
 
 | Message center post number | Description |
 | ----- | ----- |
@@ -83,7 +102,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 | [Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md) | <ul><li>Added support for subscription versions of Microsoft Project and Visio desktop apps</li><li>Updated device eligibility criteria</li><li>Clarified update controls</li></ul> |
 | [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) | New [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) feature. This feature is in public preview<ul><li>[MC524715](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul>|
 
-### March service release
+### March service releases
 
 | Message center post number | Description |
 | ----- | ----- |
@@ -107,7 +126,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 | [Changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) | Updated Feature update policies section with Windows Autopatch - DSS Policy [deployment ring] |
 | [Register your devices](../deploy/windows-autopatch-register-devices.md) |<ul><li>Updated the [Built-in roles required for registration](../deploy/windows-autopatch-register-devices.md#built-in-roles-required-for-device-registration) section</li><li>Added more information about assigning less-privileged user accounts</li></ul> |
 
-### February service release
+### February service releases
 
 | Message center post number | Description |
 | ----- | ----- |
@@ -126,7 +145,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 | [Submit a tenant enrollment support request](../prepare/windows-autopatch-enrollment-support-request.md) | Added the Submit a tenant enrollment support request section. You can submit a tenant enrollment support request through the Tenant enrollment tool if you're running into issues with enrollment |
 | [Submit a support request](../operate/windows-autopatch-support-request.md) | Added Premier and Unified support options section |
 
-### January service release
+### January service releases
 
 | Message center post number | Description |
 | ----- | ----- |

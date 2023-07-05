@@ -35,11 +35,10 @@
       ],
       "breadcrumb_path": "/microsoft-edge/breadcrumbs/toc.json",
       "ROBOTS": "INDEX, FOLLOW",
-      "ms.technology": "microsoft-edge",
       "audience": "ITPro",
       "ms.topic": "article",
       "manager": "dansimp",
-      "ms.prod": "edge",
+      "ms.prod": "microsoft-edge",
       "feedback_system": "None",
       "hideEdit": true,
       "_op_documentIdPathDepotMapping": {

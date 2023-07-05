@@ -137,6 +137,7 @@ Table 3 describes the available resource header attribute options you can set wi
 | **OriginalFileName** | Specifies the original file name, or the name with which the file was first created, of the binary. |
 | **PackageFamilyName** | Specifies the package family name of the binary. The package family name consists of two parts: the name of the file and the publisher ID. |
 | **ProductName** |  Specifies the name of the product with which the binary ships. |
+| **Filepath** |  Specifies the file path of the binary. |
 
 ## More information about filepath rules
 

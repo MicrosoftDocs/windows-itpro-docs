@@ -12,7 +12,7 @@ ms.topic: conceptual
 ms.date: 06/07/2023
 ---
 
-# Password must meet complexity requirements
+  # Password must meet complexity requirements
 
 **Applies to**
 -  Windows 11
@@ -30,11 +30,20 @@ The **Passwords must meet complexity requirements** policy setting determines wh
 
 2. The password contains characters from three of the following categories:
 
-   - Uppercase letters of European languages (A through Z, with diacritic marks, Greek and Cyrillic characters)
-   - Lowercase letters of European languages (a through z, sharp-s, with diacritic marks, Greek and Cyrillic characters)
-   - Base 10 digits (0 through 9)
-   - Non-alphanumeric characters (special characters): ``(~!@#$%^&*_-+=`|\\(){}\[\]:;"'<>,.?/)``
+   - Uppercase letters of European languages (A through Z, with diacritic marks, Greek and Cyrillic characters).
+
+   - Lowercase letters of European languages (a through z, sharp-s, with diacritic marks, Greek and Cyrillic characters).
+
+   - Base 10 digits (0 through 9).
+
+   - Non-alphanumeric characters (special characters):
+
+     ```
+     '-!"#$%&()*,./:;?@[]^_`{|}~+<=>
+     ```
+
      Currency symbols such as the Euro or British Pound aren't counted as special characters for this policy setting.
+
    - Any Unicode character that's categorized as an alphabetic character but isn't uppercase or lowercase. This group includes Unicode characters from Asian languages.
 
 Complexity requirements are enforced when passwords are changed or created.
@@ -104,3 +113,4 @@ The use of ALT key character combinations may greatly enhance the complexity of 
 ## Related articles
 
 - [Password Policy](/microsoft-365/admin/misc/password-policy-recommendations)
+
