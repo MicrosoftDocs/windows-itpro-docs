@@ -66,6 +66,6 @@ To configure account lockout threshold, follow these steps:
 
 ## Why do you need a PIN to use biometrics?
 
-Windows Hello enables biometric sign-in for Windows: fingerprint, iris, or facial recognition. When you set up Windows Hello, you're asked to create a PIN first. This PIN enables you to sign in using the PIN when you can't use your preferred biometric because of an injury or because the sensor is unavailable or not working properly.
+Windows Hello enables biometric sign-in for Windows: fingerprint, iris, or facial recognition. When you set up Windows Hello, you're asked to create a PIN after the biometric setup. The PIN enables you to sign in when you can't use your preferred biometric because of an injury or because the sensor is unavailable or not working properly.
 
 If you only had a biometric sign-in configured and, for any reason, were unable to use that method to sign in, you would have to sign in using your account and password, which doesn't provide you with the same level of protection as Hello.

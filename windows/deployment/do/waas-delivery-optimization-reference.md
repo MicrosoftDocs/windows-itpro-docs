@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ms.author: carmenf
 ms.topic: article
 ms.technology: itpro-updates
-ms.date: 12/31/2017
+ms.date: 06/28/2023
 ms.collection: tier3
 ---
 
@@ -128,11 +128,8 @@ Download mode dictates which download sources clients are allowed to use when do
 | Group (2) | When group mode is set, the group is automatically selected based on the device's Active Directory Domain Services (AD DS) site (Windows 10, version 1607) or the domain the device is authenticated to (Windows 10, version 1511). In group mode, peering occurs across internal subnets, between devices that belong to the same group, including devices in remote offices. You can use GroupID option to create your own custom group independently of domains and AD DS sites. Starting with Windows 10, version 1803, you can use the GroupIDSource parameter to take advantage of other method to create groups dynamically. Group download mode is the recommended option for most organizations looking to achieve the best bandwidth optimization with Delivery Optimization. |
 | Internet (3) | Enable Internet peer sources for Delivery Optimization. |
 | Simple (99) | Simple mode disables the use of Delivery Optimization cloud services completely (for offline environments). Delivery Optimization switches to this mode automatically when the Delivery Optimization cloud services are unavailable, unreachable, or when the content file size is less than 10 MB. In this mode, Delivery Optimization provides a reliable download experience over HTTP from the download's original source or a Microsoft Connected Cache server, with no peer-to-peer caching. |
-| Bypass (100) | This option is deprecated starting in Windows 11. If you want to disable peer-to-peer functionality, it's best to set DownloadMode to (0). If your device doesn’t have internet access, set Download Mode to (99). Bypass Delivery Optimization and use BITS, instead. You should only select this mode if you use WSUS and prefer to use BranchCache. You don't need to set this option if you're using Configuration Manager. |
+| Bypass (100) | Starting in Windows 11, this option is deprecated. Don't set **Download mode** to '100' (Bypass), which can cause some content to fail to download. If you want to disable peer-to-peer functionality, set DownloadMode to (0). If your device doesn't have internet access, set Download Mode to (99). When you set Bypass (100), the download bypasses Delivery Optimization and uses BITS instead. You don't need to set this option if you're using Configuration Manager. |
 
-> [!NOTE]
-> Starting in Windows 11, the Bypass option of Download Mode is deprecated.
->
 > [!NOTE]
 > When you use Azure Active Directory tenant, AD Site, or AD Domain as the source of group IDs, the association of devices participating in the group should not be relied on for an authentication of identity of those devices.
 
