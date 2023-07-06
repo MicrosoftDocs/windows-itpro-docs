@@ -4,7 +4,7 @@ description: Learn more about the ActiveSync CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 07/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -129,6 +129,7 @@ When managing over OMA DM, make sure to always use a unique GUID. Provisioning w
 |:--|:--|
 | Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
+| Atomic Required | True |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
 | Allowed Values | Regular Expression: `\{[0-9A-Fa-f]{8}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{12}\}` |
 <!-- User-Accounts-{Account GUID}-DFProperties-End -->
