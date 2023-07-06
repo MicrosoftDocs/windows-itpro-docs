@@ -22,9 +22,10 @@ ms.technology: itpro-security
 **Applies to**
 -   Windows 10, version 1607 and earlier
 
-(In Windows 10, version 1703 and later, this policy is no longer effective because the process for adding Microsoft Accounts has been changed. Instead of using this policy, use the policy "Block all consumer Microsoft user account authentication" located under Computer Configuration\Administrative Templates\Windows Components\Microsoft account for Windows 10, version 1703 and later.)
-
 Describes the best practices, location, values, management, and security considerations for the **Accounts: Block Microsoft accounts** security policy setting.
+
+> [!IMPORTANT]
+> In Windows 10, version 1703 and later, this policy is no longer effective because the process for adding Microsoft Accounts changed. For Windows 10, version 1703 and later, instead of using this policy use the "Block all consumer Microsoft user account authentication" policy located under Computer Configuration\Administrative Templates\Windows Components\Microsoft account.
 
 ## Reference
 
