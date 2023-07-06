@@ -4,7 +4,7 @@ description: Learn more about the VPNv2 CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 07/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1090,7 +1090,7 @@ Nodes under SSO can be used to choose a certificate different from the VPN Authe
 
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-Eku-Description-Begin -->
 <!-- Description-Source-DDF -->
-Comma Separated list of EKUs for the VPN Client to look for the correct certificate for Kerberos Authentication.
+Comma Separated list of EKU's for the VPN Client to look for the correct certificate for Kerberos Authentication.
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-Eku-Description-End -->
 
 <!-- Device-{ProfileName}-DeviceCompliance-Sso-Eku-Editable-Begin -->
@@ -1222,7 +1222,7 @@ First, it automatically becomes an always on profile.
 
 Second, it doesn't require the presence or logging in of any user to the machine in order for it to connect.
 
-Third, no other Device Tunnel profile may be present on the same machine.
+Third, no other Device Tunnel profile maybe be present on the same machine.
 
 A device tunnel profile must be deleted before another device tunnel profile can be added, removed, or connected.
 <!-- Device-{ProfileName}-DeviceTunnel-Description-End -->
@@ -1587,7 +1587,7 @@ Boolean to determine whether this domain name rule will trigger the VPN.
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DnsServers-Description-Begin -->
 <!-- Description-Source-DDF -->
-Comma Separated list of IP addresses for the DNS Servers to use for the domain name.
+Comma Seperated list of IP addresses for the DNS Servers to use for the domain name.
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DnsServers-Description-End -->
 
 <!-- Device-{ProfileName}-DomainNameInformationList-{dniRowId}-DnsServers-Editable-Begin -->
@@ -1792,7 +1792,7 @@ Web Proxy Server IP address if you are redirecting traffic through your intranet
 
 <!-- Device-{ProfileName}-EdpModeId-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enterprise ID, which is required for connecting this VPN profile with a WIP policy. When this is set, the networking stack looks for this Enterprise ID in the app token to determine if the traffic is allowed to go over the VPN. If the profile is active, it also automatically triggers the VPN to connect. We recommend having only one such profile per device.
+Enterprise ID, which is required for connecting this VPN profile with an WIP policy. When this is set, the networking stack looks for this Enterprise ID in the app token to determine if the traffic is allowed to go over the VPN. If the profile is active, it also automatically triggers the VPN to connect. We recommend having only one such profile per device.
 <!-- Device-{ProfileName}-EdpModeId-Description-End -->
 
 <!-- Device-{ProfileName}-EdpModeId-Editable-Begin -->
@@ -3119,7 +3119,7 @@ Type of routing policy.
 
 <!-- Device-{ProfileName}-NativeProfile-Servers-Description-Begin -->
 <!-- Description-Source-DDF -->
-Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. You can make a list of server by making a list of server names (with optional friendly names) separated by commas. For example, server1.example.com,server2.example.com.
+Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. You can make a list of server by making a list of server names (with optional friendly names) seperated by commas. For example, server1.example.com,server2.example.com.
 <!-- Device-{ProfileName}-NativeProfile-Servers-Description-End -->
 
 <!-- Device-{ProfileName}-NativeProfile-Servers-Editable-Begin -->
@@ -5387,7 +5387,7 @@ Nodes under SSO can be used to choose a certificate different from the VPN Authe
 
 <!-- User-{ProfileName}-DeviceCompliance-Sso-Eku-Description-Begin -->
 <!-- Description-Source-DDF -->
-Comma Separated list of EKUs for the VPN Client to look for the correct certificate for Kerberos Authentication.
+Comma Separated list of EKU's for the VPN Client to look for the correct certificate for Kerberos Authentication.
 <!-- User-{ProfileName}-DeviceCompliance-Sso-Eku-Description-End -->
 
 <!-- User-{ProfileName}-DeviceCompliance-Sso-Eku-Editable-Begin -->
@@ -5827,7 +5827,7 @@ Boolean to determine whether this domain name rule will trigger the VPN.
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DnsServers-Description-Begin -->
 <!-- Description-Source-DDF -->
-Comma Separated list of IP addresses for the DNS Servers to use for the domain name.
+Comma Seperated list of IP addresses for the DNS Servers to use for the domain name.
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DnsServers-Description-End -->
 
 <!-- User-{ProfileName}-DomainNameInformationList-{dniRowId}-DnsServers-Editable-Begin -->
@@ -6032,7 +6032,7 @@ Web Proxy Server IP address if you are redirecting traffic through your intranet
 
 <!-- User-{ProfileName}-EdpModeId-Description-Begin -->
 <!-- Description-Source-DDF -->
-Enterprise ID, which is required for connecting this VPN profile with a WIP policy. When this is set, the networking stack looks for this Enterprise ID in the app token to determine if the traffic is allowed to go over the VPN. If the profile is active, it also automatically triggers the VPN to connect. We recommend having only one such profile per device.
+Enterprise ID, which is required for connecting this VPN profile with an WIP policy. When this is set, the networking stack looks for this Enterprise ID in the app token to determine if the traffic is allowed to go over the VPN. If the profile is active, it also automatically triggers the VPN to connect. We recommend having only one such profile per device.
 <!-- User-{ProfileName}-EdpModeId-Description-End -->
 
 <!-- User-{ProfileName}-EdpModeId-Editable-Begin -->
@@ -7359,7 +7359,7 @@ Type of routing policy.
 
 <!-- User-{ProfileName}-NativeProfile-Servers-Description-Begin -->
 <!-- Description-Source-DDF -->
-Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. You can make a list of server by making a list of server names (with optional friendly names) separated by commas. For example, server1.example.com,server2.example.com.
+Required for native profiles. Public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm. Examples, 208.147.66.130 or vpn.contoso.com The name can be a server name plus a friendly name separated with a semi-colon. For example, server2.example.com;server2FriendlyName. When you get the value, the return will include both the server name and the friendly name; if no friendly name had been supplied it will default to the server name. You can make a list of server by making a list of server names (with optional friendly names) seperated by commas. For example, server1.example.com,server2.example.com.
 <!-- User-{ProfileName}-NativeProfile-Servers-Description-End -->
 
 <!-- User-{ProfileName}-NativeProfile-Servers-Editable-Begin -->

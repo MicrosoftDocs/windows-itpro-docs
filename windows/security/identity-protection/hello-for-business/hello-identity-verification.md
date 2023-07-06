@@ -1,10 +1,9 @@
 ---
-ms.date: 12/13/2022
+ms.date: 07/05/2023
 title: Windows Hello for Business Deployment Prerequisite Overview
 description: Overview of all the different infrastructure requirements for Windows Hello for Business deployment models
 ms.topic: article
 ms.collection:
-- highpri
 - tier1
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
@@ -29,16 +28,16 @@ This article lists the infrastructure requirements for the different deployment 
 
 The table shows the minimum requirements for each deployment. For key trust in a multi-domain/multi-forest deployment, the following requirements are applicable for each domain/forest that hosts Windows Hello for business components or is involved in the Kerberos referral process.
 
-| Requirement | cloud Kerberos trust<br/>Group Policy or Modern managed | Key trust<br/>Group Policy or Modern managed | Certificate Trust<br/>Mixed managed | Certificate Trust<br/>Modern managed | 
+| Requirement | Cloud Kerberos trust<br/>Group Policy or Modern managed | Key trust<br/>Group Policy or Modern managed | Certificate Trust<br/>Mixed managed | Certificate Trust<br/>Modern managed | 
 | --- | --- | --- | --- | --- |
 | **Windows Version** | Any supported Windows client versions| Any supported Windows client versions | Any supported Windows client versions |
 | **Schema Version** | No specific Schema requirement | Windows Server 2016 or later schema | Windows Server 2016 or later schema | Windows Server 2016 or later schema |
 | **Domain and Forest Functional Level** | Windows Server 2008 R2 Domain/Forest functional level | Windows Server 2008 R2 Domain/Forest functional level | Windows Server 2008 R2 Domain/Forest functional level |Windows Server 2008 R2 Domain/Forest functional level |
 | **Domain Controller Version** | Any supported Windows Server versions | Any supported Windows Server versions | Any supported Windows Server versions | Any supported Windows Server versions  |
-| **Certificate Authority**| N/A |Any supported Windows Server versions | Any supported Windows Server versions | Any supported Windows Server versions |
-| **AD FS Version** | N/A | N/A | Any supported Windows Server versions | Any supported Windows Server versions |
+| **Certificate Authority**| Not required |Any supported Windows Server versions | Any supported Windows Server versions | Any supported Windows Server versions |
+| **AD FS Version** | Not required | Not required | Any supported Windows Server versions | Any supported Windows Server versions |
 | **MFA Requirement** | Azure MFA, or<br/>AD FS w/Azure MFA adapter, or<br/>AD FS w/Azure MFA Server adapter, or<br/>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or<br/>AD FS w/Azure MFA adapter, or<br/>AD FS w/Azure MFA Server adapter, or<br/>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or<br/>AD FS w/Azure MFA adapter, or<br/>AD FS w/Azure MFA Server adapter, or<br/>AD FS w/3rd Party MFA Adapter | Azure MFA tenant, or<br/>AD FS w/Azure MFA adapter, or<br/>AD FS w/Azure MFA Server adapter, or<br/>AD FS w/3rd Party MFA Adapter |
-| **Azure AD Connect** | N/A | Required | Required | Required |
+| **Azure AD Connect** | Not required | Required | Required | Required |
 | **Azure AD License** | Azure AD Premium, optional | Azure AD Premium, optional | Azure AD Premium, needed for device write-back | Azure AD Premium, optional. Intune license required |
 
 ## On-premises Deployments
