@@ -8,7 +8,7 @@ ms.author: mstewart
 manager: aaroncz
 ms.topic: article
 ms.technology: itpro-updates
-ms.date: 05/09/2023
+ms.date: 07/06/2023
 ms.reviewer: stevedia
 ---
 
@@ -39,18 +39,37 @@ Devices must be able to connect to the internet to obtain Dynamic Updates. In so
 
 ## Acquire Dynamic Update packages
 
-You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx). At that site, use the search bar in the upper right to find the Dynamic Update packages for a particular release. For example, you could enter *1809 Dynamic Update x64*, which would return results like this:
+You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx). At that site, use the search bar in the upper right to find the Dynamic Update packages for a particular release. The various Dynamic Update packages might not all be present in the results from a single search, so you might have to search with different keywords to find all of the updates. And you'll need to check various parts of the results to be sure you've identified the needed files. The following tables shows the key values to search for or look for in the results. 
 
-![Table with columns labeled Title, Products, Classification, Last Updated, Version, and Size and four rows listing various dynamic updates and associated KB articles.](images/update-catalog.png)
+### Windows 11, version 22H2 Dynamic Update packages
+| Update packages                   |Title                                                          |
+|-----------------------------------|---------------------------------------------------------------|
+|Safe OS Dynamic Update             | YYYY-MM Safe OS Dynamic Update for Windows 11 Version 22H2    |
+|Setup Dynamic Update               | YYYY-MM Setup Dynamic Update for Windows 11 Version 22H2      |
+|Latest cumulative update           | YYYY-MM Cumulative Update for Windows 11 Version 22H2         |
+|Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Windows 11 Version 22H2    |
 
-The various Dynamic Update packages might not all be present in the results from a single search, so you might have to search with different keywords to find all of the updates. And you'll need to check various parts of the results to be sure you've identified the needed files. This table shows in **bold** the key items to search for or look for in the results. For example, to find the relevant "Setup Dynamic Update," you'll have to check the detailed description for the download by selecting the link in the **Title** column of the search results.
+**Note:** Titles can distinguish each Dynamic Package. Cumulative Update has the Servicing Stack embedded. Servicing Stack published only if required for a given Cumulative Update.
 
-|To find this Dynamic Update packages, search for or check the results here  |Title  |Product  |Description (select the **Title** link to see **Details**)  |
-|---------|---------|---------|---------|
-|Safe OS Dynamic Update      | 2019-08 Dynamic Update...        | Windows 10 Dynamic Update, Windows **Safe OS Dynamic Update**         | ComponentUpdate:        |
-|Setup Dynamic Update     | 2019-08 Dynamic Update...         | Windows 10 Dynamic Update        | **SetupUpdate**        |
-|Latest cumulative update     | 2019-08 **Cumulative Update for Windows 10**    |  Windows 10       |  Install this update to resolve issues in Windows...       |
-|Servicing stack Dynamic Update     | 2019-09 **Servicing Stack Update for Windows 10**        |  Windows 10...       | Install this update to resolve issues in Windows...        |
+### Windows 11, version 21H2 Dynamic Update packages
+| Update packages                   |Title                                                          |Product                                                                        |Description       |
+|-----------------------------------|---------------------------------------------------------------|-------------------------------------------------------------------------------|------------------|
+|Safe OS Dynamic Update             | YYYY-MM Dynamic Update for Windows 11                         |Windows Safe OS Dynamic Update                                                 | ComponentUpdate |
+|Setup Dynamic Update               | YYYY-MM Dynamic Update for Windows 11                         |Windows 10 and later Dynamic Update                                            | SetupUpdate      |
+|Latest cumulative update           | YYYY-MM Cumulative Update for Windows 11                      |                                                                               |                  |
+|Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Windows 11 Version 22H2    |                                                                               |                  |
+
+**Note:** Titles, Product and Description are required to distinguish each Dynamic Package. Cumulative Update has the Servicing Stack embedded. Servicing Stack published only if required for a given Cumulative Update.
+
+### For Windows 10, version 22H2 Dynamic Update packages
+| Update packages                   |Title                                                          |Product                                                                        |Description       |
+|-----------------------------------|---------------------------------------------------------------|-------------------------------------------------------------------------------|------------------|
+|Safe OS Dynamic Update             | YYYY-MM Dynamic Update for Windows 10 Version 22H2            |Windows Safe OS Dynamic Update                                                 | ComponentUpdate |
+|Setup Dynamic Update               | YYYY-MM Dynamic Update for Windows 10 Version 22H2            |Windows 10 and later Dynamic Update                                            | SetupUpdate      |
+|Latest cumulative update           | YYYY-MM Cumulative Update for Windows 10 Version 22H2         |                                                                               |                  |
+|Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Windows 10 Version 22H2    |                                                                               |                  |
+
+**Note:** Titles, Product and Description are required to distinguish each Dynamic Package. Cumulative Update has the Servicing Stack embedded. Servicing Stack published only if required for a given Cumulative Update.
 
 If you want to customize the image with additional languages or Features on Demand, download supplemental media ISO files from the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx). For example, since Dynamic Update will be disabled for your devices, and if users require specific Features on Demand, you can preinstall these into the image.
 
@@ -126,8 +145,10 @@ $LANG  = "ja-jp"
 $LANG_FONT_CAPABILITY = "jpan"
 
 # Declare media for FOD and LPs
+# Note: Starting with Windows 11, version 21H2, the language pack (LANGPACK) ISO has been superceded by the FOD ISO.
+# Language packs and the \Windows Preinstallation Environment packages are par of the LOF ISO.
+# If you are using this script for Windows 10, modify to mount and use the LANGPACK ISO.
 $FOD_ISO_PATH    = "C:\mediaRefresh\packages\FOD-PACKAGES_OEM_PT1_amd64fre_MULTI.iso"
-$LP_ISO_PATH     = "C:\mediaRefresh\packages\CLIENTLANGPACKDVD_OEM_MULTI.iso"
 
 # Declare Dynamic Update packages
 $LCU_PATH        = "C:\mediaRefresh\packages\LCU.msu"
@@ -144,24 +165,23 @@ $MAIN_OS_MOUNT   = "C:\mediaRefresh\temp\MainOSMount"
 $WINRE_MOUNT     = "C:\mediaRefresh\temp\WinREMount"
 $WINPE_MOUNT     = "C:\mediaRefresh\temp\WinPEMount"
 
-# Mount the language pack ISO
-Write-Output "$(Get-TS): Mounting LP ISO"
-$LP_ISO_DRIVE_LETTER = (Mount-DiskImage -ImagePath $LP_ISO_PATH -ErrorAction stop | Get-Volume).DriveLetter
+# Mount the Features on Demand ISO
+Write-Output "$(Get-TS): Mounting FOD ISO"
+$FOD_ISO_DRIVE_LETTER = (Mount-DiskImage -ImagePath $FOD_ISO_PATH -ErrorAction stop | Get-Volume).DriveLetter
+
+# Note: Starting with Windows 11, version 21H2, the correct path for main OS language and optional features
+# moved to \LanguagesAndOptionalFeatures instead of the root. For Windows 10, use $FOD_PATH = $FOD_ISO_DRIVE_LETTER + ":\"
+$FOD_PATH = $FOD_ISO_DRIVE_LETTER + ":\LanguagesAndOptionalFeatures"
 
 # Declare language related cabs
-$WINPE_OC_PATH              = "$LP_ISO_DRIVE_LETTER`:\Windows Preinstallation Environment\x64\WinPE_OCs"
+$WINPE_OC_PATH              = "$FOD_ISO_DRIVE_LETTER`:\Windows Preinstallation Environment\x64\WinPE_OCs"
 $WINPE_OC_LANG_PATH         = "$WINPE_OC_PATH\$LANG"
 $WINPE_OC_LANG_CABS         = Get-ChildItem $WINPE_OC_LANG_PATH -Name
 $WINPE_OC_LP_PATH           = "$WINPE_OC_LANG_PATH\lp.cab"
 $WINPE_FONT_SUPPORT_PATH    = "$WINPE_OC_PATH\WinPE-FontSupport-$LANG.cab"
 $WINPE_SPEECH_TTS_PATH      = "$WINPE_OC_PATH\WinPE-Speech-TTS.cab"
 $WINPE_SPEECH_TTS_LANG_PATH = "$WINPE_OC_PATH\WinPE-Speech-TTS-$LANG.cab"
-$OS_LP_PATH                 = "$LP_ISO_DRIVE_LETTER`:\x64\langpacks\Microsoft-Windows-Client-Language-Pack_x64_$LANG.cab"
-
-# Mount the Features on Demand ISO
-Write-Output "$(Get-TS): Mounting FOD ISO"
-$FOD_ISO_DRIVE_LETTER = (Mount-DiskImage -ImagePath $FOD_ISO_PATH -ErrorAction stop | Get-Volume).DriveLetter
-$FOD_PATH = $FOD_ISO_DRIVE_LETTER + ":\"
+$OS_LP_PATH                 = "$FOD_PATH\Microsoft-Windows-Client-Language-Pack_x64_$LANG.cab"
 
 # Create folders for mounting images and storing temporary files
 New-Item -ItemType directory -Path $WORKING_PATH -ErrorAction Stop | Out-Null
@@ -415,7 +435,7 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
 
     # Perform image cleanup
     Write-Output "$(Get-TS): Performing image cleanup on WinPE"
-    DISM /image:$WINPE_MOUNT /cleanup-image /StartComponentCleanup | Out-Null
+    DISM /image:$WINPE_MOUNT /cleanup-image /StartComponentCleanup /ResetBase /Defer | Out-Null
 
     if ($IMAGE.ImageIndex -eq "2") {
 
@@ -590,7 +610,6 @@ Remove-Item -Path $WORKING_PATH -Recurse -Force -ErrorAction stop | Out-Null
 
 # Dismount ISO images
 Write-Output "$(Get-TS): Dismounting ISO images"
-Dismount-DiskImage -ImagePath $LP_ISO_PATH -ErrorAction stop | Out-Null
 Dismount-DiskImage -ImagePath $FOD_ISO_PATH -ErrorAction stop | Out-Null
 
 Write-Output "$(Get-TS): Media refresh completed!"
