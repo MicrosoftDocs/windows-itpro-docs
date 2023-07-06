@@ -227,6 +227,8 @@ Denies or allows access to the Store application.
 
 <!-- RemoveWindowsStore_1-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> This policy is not supported on Windows Professional edition, and requires Windows Enterprise or Windows Education to function. For more information, see [Can't disable Microsoft Store in Windows Pro through Group Policy](/troubleshoot/windows-client/group-policy/cannot-disable-microsoft-store).
 <!-- RemoveWindowsStore_1-Editable-End -->
 
 <!-- RemoveWindowsStore_1-DFProperties-Begin -->
@@ -286,6 +288,8 @@ Denies or allows access to the Store application.
 
 <!-- RemoveWindowsStore_2-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> This policy is not supported on Windows Professional edition, and requires Windows Enterprise or Windows Education to function. For more information, see [Can't disable Microsoft Store in Windows Pro through Group Policy](/troubleshoot/windows-client/group-policy/cannot-disable-microsoft-store).
 <!-- RemoveWindowsStore_2-Editable-End -->
 
 <!-- RemoveWindowsStore_2-DFProperties-Begin -->
