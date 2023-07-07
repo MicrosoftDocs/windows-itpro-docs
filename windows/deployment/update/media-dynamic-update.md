@@ -145,7 +145,7 @@ $LANG  = "ja-jp"
 $LANG_FONT_CAPABILITY = "jpan"
 
 # Declare media for FOD and LPs
-# Note: Starting with Windows 11, version 21H2, the language pack (LANGPACK) ISO has been superceded by the FOD ISO.
+# Note: Starting with Windows 11, version 21H2, the language pack (LANGPACK) ISO has been superseded by the FOD ISO.
 # Language packs and the \Windows Preinstallation Environment packages are par of the LOF ISO.
 # If you are using this script for Windows 10, modify to mount and use the LANGPACK ISO.
 $FOD_ISO_PATH    = "C:\mediaRefresh\packages\FOD-PACKAGES_OEM_PT1_amd64fre_MULTI.iso"
@@ -219,7 +219,7 @@ Mount-WindowsImage -ImagePath $WORKING_PATH"\winre.wim" -Index 1 -Path $WINRE_MO
 # Depending on the Windows release that you are updating, there are 2 different approaches for updating the servicing stack
 # The first approach is to use the combined cumulative update. This is for Windows releases that are shipping a combined 
 # cumulative update that includes the servicing stack updates (i.e. SSU + LCU are combined). Windows 11, version 21H2 and 
-# Windows 11, version 22H2 are examples. In these cases, the servicing stack update is not published seperately; the combined 
+# Windows 11, version 22H2 are examples. In these cases, the servicing stack update is not published separately; the combined 
 # cumulative update should be used for this step. However, in hopefully rare cases, there may breaking change in the combined 
 # cumulative update format, that requires a standalone servicing stack update to be published, and installed first before the 
 # combined cumulative update can be installed. 
@@ -342,7 +342,7 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
     # Depending on the Windows release that you are updating, there are 2 different approaches for updating the servicing stack
     # The first approach is to use the combined cumulative update. This is for Windows releases that are shipping a combined 
     # cumulative update that includes the servicing stack updates (i.e. SSU + LCU are combined). Windows 11, version 21H2 and 
-    # Windows 11, version 22H2 are examples. In these cases, the servicing stack update is not published seperately; the combined 
+    # Windows 11, version 22H2 are examples. In these cases, the servicing stack update is not published separately; the combined 
     # cumulative update should be used for this step. However, in hopefully rare cases, there may breaking change in the combined 
     # cumulative update format, that requires a standalone servicing stack update to be published, and installed first before the 
     # combined cumulative update can be installed. 
@@ -374,7 +374,7 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
     }
 
     # The second approach for Step 9 is for Windows releases that have not adopted the combined cumulative update
-    # but instead continue to have a seperate servicing stack update published. In this case, we'll install the SSU
+    # but instead continue to have a separate servicing stack update published. In this case, we'll install the SSU
     # update. This second approach is commented out below.
 
     # Write-Output "$(Get-TS): Adding package $SSU_PATH"
@@ -478,7 +478,7 @@ You can install Optional Components, along with the .NET feature, offline, but t
 # Depending on the Windows release that you are updating, there are 2 different approaches for updating the servicing stack
 # The first approach is to use the combined cumulative update. This is for Windows releases that are shipping a combined cumulative update that
 # includes the servicing stack updates (i.e. SSU + LCU are combined). Windows 11, version 21H2 and Windows 11, version 22H2 are examples. In these
-# cases, the servicing stack update is not published seperately; the combined cumulative update should be used for this step. However, in hopefully
+# cases, the servicing stack update is not published separately; the combined cumulative update should be used for this step. However, in hopefully
 # rare cases, there may breaking change in the combined cumulative update format, that requires a standalone servicing stack update to be published, 
 # and installed first before the combined cumulative update can be installed. 
 
