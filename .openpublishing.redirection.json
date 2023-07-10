@@ -5291,6 +5291,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/threat-protection/windows-information-protection/faq-md-app-guard.yml",
+      "redirect_url": "/windows/security/information-protection/windows-information-protection/faq-md-app-guard",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/threat-protection/windows-information-protection/collect-wip-audit-event-logs.md",
       "redirect_url": "/windows/security/information-protection/windows-information-protection/collect-wip-audit-event-logs",
       "redirect_document_id": false
