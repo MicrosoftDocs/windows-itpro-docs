@@ -5,7 +5,7 @@ manager: aaroncz
 ms.technology: itpro-updates
 ms.prod: windows-client
 ms.topic: include
-ms.date: 08/18/2022
+ms.date: 07/11/2023
 ms.localizationpriority: medium
 ---
 <!--This file is shared by updates/wufb-reports-configuration-script.md and the update/update-compliance-configuration-script.md articles. Headings are driven by article context. Updated with 8099827 -->
