@@ -1,7 +1,7 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 06/26/2023 
+ms.date: 07/10/2023 
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
@@ -20,6 +20,14 @@ ms.collection:
 This article lists new and updated feature releases, and service releases, with their corresponding Message center post numbers (if applicable).
 
 Minor corrections such as typos, style, or formatting issues aren't listed.
+
+## July 2023
+
+### July service releases
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter) | General Availability: New Features in Windows Autopatch |
 
 ## June 2023
 
