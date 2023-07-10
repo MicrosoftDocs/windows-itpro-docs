@@ -42,7 +42,7 @@ Secure Launch configuration: 0 - Unmanaged, configurable by Administrative user,
 
 <!-- ConfigureSystemGuardLaunch-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-For more information about System Guard, see [Introducing Windows Defender System Guard runtime attestation](https://www.microsoft.com/security/blog/2018/04/19/introducing-windows-defender-system-guard-runtime-attestation) and [How a hardware-based root of trust helps protect Windows 10](../../security/hardware-security/how-hardware-based-root-of-trust-helps-protect-windows.md).
+For more information about System Guard, see [Introducing Windows Defender System Guard runtime attestation](https://www.microsoft.com/security/blog/2018/04/19/introducing-windows-defender-system-guard-runtime-attestation) and [How a hardware-based root of trust helps protect Windows 10](/windows/security/hardware-security/how-hardware-based-root-of-trust-helps-protect-windows).
 <!-- ConfigureSystemGuardLaunch-Editable-End -->
 
 <!-- ConfigureSystemGuardLaunch-DFProperties-Begin -->
