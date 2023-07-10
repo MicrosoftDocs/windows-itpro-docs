@@ -42,6 +42,8 @@ Devices must be able to connect to the internet to obtain Dynamic Updates. In so
 You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx). At that site, use the search bar in the upper right to find the Dynamic Update packages for a particular release. The various Dynamic Update packages might not all be present in the results from a single search, so you might have to search with different keywords to find all of the updates. And you'll need to check various parts of the results to be sure you've identified the needed files. The following tables shows the key values to search for or look for in the results. 
 
 ### Windows 11, version 22H2 Dynamic Update packages
+**Title** can distinguish each Dynamic Package. Cumulative Update has the Servicing Stack embedded. Servicing Stack published only if required for a given Cumulative Update.
+
 | Update packages                   |Title                                                          |
 |-----------------------------------|---------------------------------------------------------------|
 |Safe OS Dynamic Update             | YYYY-MM Safe OS Dynamic Update for Windows 11 Version 22H2    |
@@ -49,9 +51,10 @@ You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https
 |Latest cumulative update           | YYYY-MM Cumulative Update for Windows 11 Version 22H2         |
 |Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Windows 11 Version 22H2    |
 
-**Note:** Titles can distinguish each Dynamic Package. Cumulative Update has the Servicing Stack embedded. Servicing Stack published only if required for a given Cumulative Update.
 
 ### Windows 11, version 21H2 Dynamic Update packages
+**Title**, **Product** and **Description** are required to distinguish each Dynamic Package. Latest cumulative update has the Servicing Stack embedded. Servicing Stack published seperately only if required as a prerequisite for a given cumulative Update.
+
 | Update packages                   |Title                                                          |Product                                                                        |Description       |
 |-----------------------------------|---------------------------------------------------------------|-------------------------------------------------------------------------------|------------------|
 |Safe OS Dynamic Update             | YYYY-MM Dynamic Update for Windows 11                         |Windows Safe OS Dynamic Update                                                 | ComponentUpdate |
@@ -59,9 +62,9 @@ You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https
 |Latest cumulative update           | YYYY-MM Cumulative Update for Windows 11                      |                                                                               |                  |
 |Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Windows 11 Version 22H2    |                                                                               |                  |
 
-**Note:** Titles, Product and Description are required to distinguish each Dynamic Package. Cumulative Update has the Servicing Stack embedded. Servicing Stack published only if required for a given Cumulative Update.
-
 ### For Windows 10, version 22H2 Dynamic Update packages
+**Title**, **Product** and **Description** are required to distinguish each Dynamic Package. Latest cumulative update has the Servicing Stack embedded. Servicing Stack published seperately only if required as a prerequisite for a given cumulative Update.
+
 | Update packages                   |Title                                                          |Product                                                                        |Description       |
 |-----------------------------------|---------------------------------------------------------------|-------------------------------------------------------------------------------|------------------|
 |Safe OS Dynamic Update             | YYYY-MM Dynamic Update for Windows 10 Version 22H2            |Windows Safe OS Dynamic Update                                                 | ComponentUpdate |
@@ -69,9 +72,7 @@ You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https
 |Latest cumulative update           | YYYY-MM Cumulative Update for Windows 10 Version 22H2         |                                                                               |                  |
 |Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Windows 10 Version 22H2    |                                                                               |                  |
 
-**Note:** Titles, Product and Description are required to distinguish each Dynamic Package. Cumulative Update has the Servicing Stack embedded. Servicing Stack published only if required for a given Cumulative Update.
-
-If you want to customize the image with additional languages or Features on Demand, download supplemental media ISO files from the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx). For example, since Dynamic Update will be disabled for your devices, and if users require specific Features on Demand, you can preinstall these into the image.
+If you want to customize the image with additional languages or Features on Demand, download supplemental media ISO files from the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx). For example, if Dynamic Update will be disabled for your devices, and if users require specific Features on Demand, you can preinstall these into the image.
 
 ## Update Windows installation media
 
@@ -82,7 +83,7 @@ Properly updating the installation media involves a large number of actions oper
 - Windows operating system: one or more editions of Windows stored in \sources\install.wim
 - Windows installation media: the complete collection of files and folders in the Windows installation media. For example, \sources folder, \boot folder, Setup.exe, and so on.
 
-This table shows the correct sequence for applying the various tasks to the files. For example, the full sequence starts with adding the servicing stack update to WinRE (1) and concludes with adding the Dynamic Update for Setup to the new media (26).
+This table shows the correct sequence for applying the various tasks to the files. For example, the full sequence starts with adding the servicing stack update to WinRE (1) and concludes with adding boot manager from WinPE to the new media (28).
 
 |Task  |WinRE (winre.wim)  |WinPE (boot.wim)  |Operating system (install.wim)  | New media |
 |---------|---------|---------|---------|------|
