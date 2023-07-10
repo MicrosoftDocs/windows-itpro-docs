@@ -38,7 +38,7 @@ items:
             href: ../information-protection/pluton/pluton-as-tpm.md
   - name: Silicon assisted security
     items:
-      - name: Virtualization-based security (VBS)
+      - name: Virtualization-based security (VBS) 🔗
         href: /windows-hardware/design/device-experiences/oem-vbs
       - name: Memory integrity (HVCI)
         href: enable-virtualization-based-protection-of-code-integrity.md
