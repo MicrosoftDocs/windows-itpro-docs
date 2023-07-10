@@ -4,7 +4,7 @@ description: Learn more about the Defender CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 07/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -30,6 +30,7 @@ The following list shows the Defender configuration service provider nodes:
     - [AllowDatagramProcessingOnWinServer](#configurationallowdatagramprocessingonwinserver)
     - [AllowNetworkProtectionDownLevel](#configurationallownetworkprotectiondownlevel)
     - [AllowNetworkProtectionOnWinServer](#configurationallownetworkprotectiononwinserver)
+    - [AllowSwitchToAsyncInspection](#configurationallowswitchtoasyncinspection)
     - [ASROnlyPerRuleExclusions](#configurationasronlyperruleexclusions)
     - [DataDuplicationDirectory](#configurationdataduplicationdirectory)
     - [DataDuplicationLocalRetentionPeriod](#configurationdataduplicationlocalretentionperiod)
@@ -44,6 +45,7 @@ The following list shows the Defender configuration service provider nodes:
           - [RuleData](#configurationdevicecontrolpolicyrulesruleidruledata)
     - [DeviceControlEnabled](#configurationdevicecontrolenabled)
     - [DisableCpuThrottleOnIdleScans](#configurationdisablecputhrottleonidlescans)
+    - [DisableDatagramProcessing](#configurationdisabledatagramprocessing)
     - [DisableDnsOverTcpParsing](#configurationdisablednsovertcpparsing)
     - [DisableDnsParsing](#configurationdisablednsparsing)
     - [DisableFtpParsing](#configurationdisableftpparsing)
@@ -297,6 +299,55 @@ This settings controls whether Network Protection is allowed to be configured in
 <!-- Device-Configuration-AllowNetworkProtectionOnWinServer-Examples-End -->
 
 <!-- Device-Configuration-AllowNetworkProtectionOnWinServer-End -->
+
+<!-- Device-Configuration-AllowSwitchToAsyncInspection-Begin -->
+### Configuration/AllowSwitchToAsyncInspection
+
+<!-- Device-Configuration-AllowSwitchToAsyncInspection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-AllowSwitchToAsyncInspection-Applicability-End -->
+
+<!-- Device-Configuration-AllowSwitchToAsyncInspection-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/AllowSwitchToAsyncInspection
+```
+<!-- Device-Configuration-AllowSwitchToAsyncInspection-OmaUri-End -->
+
+<!-- Device-Configuration-AllowSwitchToAsyncInspection-Description-Begin -->
+<!-- Description-Source-DDF -->
+Control whether network protection can improve performance by switching from real-time inspection to asynchronous inspection.
+<!-- Device-Configuration-AllowSwitchToAsyncInspection-Description-End -->
+
+<!-- Device-Configuration-AllowSwitchToAsyncInspection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-AllowSwitchToAsyncInspection-Editable-End -->
+
+<!-- Device-Configuration-AllowSwitchToAsyncInspection-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-AllowSwitchToAsyncInspection-DFProperties-End -->
+
+<!-- Device-Configuration-AllowSwitchToAsyncInspection-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 | Allow switching to asynchronous inspection. |
+| 0 (Default) | Don’t allow asynchronous inspection. |
+<!-- Device-Configuration-AllowSwitchToAsyncInspection-AllowedValues-End -->
+
+<!-- Device-Configuration-AllowSwitchToAsyncInspection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-AllowSwitchToAsyncInspection-Examples-End -->
+
+<!-- Device-Configuration-AllowSwitchToAsyncInspection-End -->
 
 <!-- Device-Configuration-ASROnlyPerRuleExclusions-Begin -->
 ### Configuration/ASROnlyPerRuleExclusions
@@ -870,6 +921,55 @@ Indicates whether the CPU will be throttled for scheduled scans while the device
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-Examples-End -->
 
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-End -->
+
+<!-- Device-Configuration-DisableDatagramProcessing-Begin -->
+### Configuration/DisableDatagramProcessing
+
+<!-- Device-Configuration-DisableDatagramProcessing-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-DisableDatagramProcessing-Applicability-End -->
+
+<!-- Device-Configuration-DisableDatagramProcessing-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/DisableDatagramProcessing
+```
+<!-- Device-Configuration-DisableDatagramProcessing-OmaUri-End -->
+
+<!-- Device-Configuration-DisableDatagramProcessing-Description-Begin -->
+<!-- Description-Source-DDF -->
+Control whether network protection inspects User Datagram Protocol (UDP) traffic.
+<!-- Device-Configuration-DisableDatagramProcessing-Description-End -->
+
+<!-- Device-Configuration-DisableDatagramProcessing-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-DisableDatagramProcessing-Editable-End -->
+
+<!-- Device-Configuration-DisableDatagramProcessing-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-DisableDatagramProcessing-DFProperties-End -->
+
+<!-- Device-Configuration-DisableDatagramProcessing-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 | UDP inspection is off. |
+| 0 (Default) | UDP inspection is on. |
+<!-- Device-Configuration-DisableDatagramProcessing-AllowedValues-End -->
+
+<!-- Device-Configuration-DisableDatagramProcessing-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-DisableDatagramProcessing-Examples-End -->
+
+<!-- Device-Configuration-DisableDatagramProcessing-End -->
 
 <!-- Device-Configuration-DisableDnsOverTcpParsing-Begin -->
 ### Configuration/DisableDnsOverTcpParsing

@@ -202,7 +202,7 @@ For a list of frequently asked questions about Windows Hello for Business cloud 
 <!--Links-->
 
 [AZ-2]: /azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises#install-the-azure-ad-kerberos-powershell-module
-[AZ-3]: /azure/active-directory/fundamentals/active-directory-how-to-find-tenant
+[AZ-3]: /azure/active-directory/fundamentals/how-to-find-tenant
 [AZ-4]: /azure/active-directory/devices/troubleshoot-device-dsregcmd
 
 [MEM-1]: /mem/intune/protect/identity-protection-windows-settings

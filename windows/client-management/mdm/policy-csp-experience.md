@@ -4,7 +4,7 @@ description: Learn more about the Experience Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 06/02/2023
+ms.date: 07/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -528,8 +528,8 @@ This policy setting allows you to control whether screen recording functionality
 
 | Value | Description |
 |:--|:--|
-| 0 | Disabled |
-| 1 (Default) | Enabled |
+| 0 | Disabled. |
+| 1 (Default) | Enabled. |
 <!-- AllowScreenRecorder-AllowedValues-End -->
 
 <!-- AllowScreenRecorder-GpMapping-Begin -->

@@ -30,7 +30,7 @@ highlightedContent:
     url: https://www.microsoft.com/en-us/download/details.aspx?id=104594
   - title: Windows release health
     itemType: whats-new
-    url: /windows-insider/get-started
+    url: /windows/release-health
   - title: Windows commercial licensing
     itemType: overview
     url: /windows/whats-new/windows-licensing
@@ -73,7 +73,7 @@ productDirectory:
           text: Windows Defender Credential Guard
         - url: /windows/security/identity-protection/hello-for-business/hello-hybrid-cloud-kerberos-trust
           text: Windows Hello for Business cloud Kerberos trust
-        - url: /education/windows/tutorial-school-deployment/windows/security/threat-protection/windows-defender-application-control/
+        - url: /windows/security/threat-protection/windows-defender-application-control
           text: Windows Defender Application Control (WDAC)
         - url: /windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview
           text: Microsoft Defender Application Guard

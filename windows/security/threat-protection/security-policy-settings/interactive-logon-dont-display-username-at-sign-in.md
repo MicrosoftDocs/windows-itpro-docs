@@ -1,8 +1,8 @@
 ---
-title: Interactive logon Don't display username at sign-in 
+title: Interactive logon Don't display username at sign-in
 description: Describes the best practices, location, values, and security considerations for the Interactive logon Don't display username at sign-in security policy setting.
 ms.assetid: 98b24b03-95fe-4edc-8e97-cbdaa8e314fd
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -22,7 +22,9 @@ ms.technology: itpro-security
 **Applies to**
 - Windows 11
 - Windows 10
+- Windows Server 2022
 - Windows Server 2019
+- Windows Server 2016
 
 Describes the best practices, location, values, and security considerations for the **Interactive logon: Don't display username at sign-in** security policy setting.
 
