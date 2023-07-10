@@ -30,7 +30,7 @@ ms.topic: article
 > Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
 > [!IMPORTANT]
-> Due to a known issue, you should always activate new **signed** WDAC Base policies *with a reboot* on systems with [**memory integrity**](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) enabled. Instead of Group Policy, deploy new signed WDAC Base policies [via script](/windows/security/threat-protection/windows-defender-application-control/deployment/deploy-wdac-policies-with-script#deploying-signed-policies) and activate the policy with a system restart.
+> Due to a known issue, you should always activate new **signed** WDAC Base policies *with a reboot* on systems with [**memory integrity**](../../../hardware-security/enable-virtualization-based-protection-of-code-integrity.md) enabled. Instead of Group Policy, deploy new signed WDAC Base policies [via script](/windows/security/threat-protection/windows-defender-application-control/deployment/deploy-wdac-policies-with-script#deploying-signed-policies) and activate the policy with a system restart.
 >
 > This issue does not affect updates to signed Base policies that are already active on the system, deployment of unsigned policies, or deployment of supplemental policies (signed or unsigned). It also does not affect deployments to systems that are not running memory integrity.
 

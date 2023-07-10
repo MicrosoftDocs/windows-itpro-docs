@@ -1,7 +1,7 @@
 ---
 title: How a Windows Defender System Guard helps protect Windows 10
 description: Windows Defender System Guard reorganizes the existing Windows 10 system integrity features under one roof. Learn how it works.
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.author: vinpa
 search.appverid: met150
@@ -29,47 +29,47 @@ Windows Defender System Guard reorganizes the existing Windows 10 system integri
 With Windows 7, one of the means attackers would use to persist and evade detection was to install what is often referred to as a bootkit or rootkit on the system.
 This malicious software would start before Windows started, or during the boot process itself, enabling it to start with the highest level of privilege.
 
-With Windows 10 running on modern hardware (that is, Windows 8-certified or greater) a hardware-based root of trust helps ensure that no unauthorized firmware or software (such as a bootkit) can start before the Windows bootloader. 
-This hardware-based root of trust comes from the device's Secure Boot feature, which is part of the Unified Extensible Firmware Interface (UEFI). 
-This technique of measuring the static early boot UEFI components is called the Static Root of Trust for Measurement (SRTM). 
+With Windows 10 running on modern hardware (that is, Windows 8-certified or greater) a hardware-based root of trust helps ensure that no unauthorized firmware or software (such as a bootkit) can start before the Windows bootloader.
+This hardware-based root of trust comes from the device's Secure Boot feature, which is part of the Unified Extensible Firmware Interface (UEFI).
+This technique of measuring the static early boot UEFI components is called the Static Root of Trust for Measurement (SRTM).
 
-As there are thousands of PC vendors that produce many models with different UEFI BIOS versions, there becomes an incredibly large number of SRTM measurements upon bootup. 
-Two techniques exist to establish trust here—either maintain a list of known 'bad' SRTM measurements (also known as a blocklist), or a list of known 'good' SRTM measurements (also known as an allowlist). 
+As there are thousands of PC vendors that produce many models with different UEFI BIOS versions, there becomes an incredibly large number of SRTM measurements upon bootup.
+Two techniques exist to establish trust here—either maintain a list of known 'bad' SRTM measurements (also known as a blocklist), or a list of known 'good' SRTM measurements (also known as an allowlist).
 
 Each option has a drawback:
 
 - A list of known 'bad' SRTM measurements allows a hacker to change just 1 bit in a component to create an entirely new SRTM hash that needs to be listed. This means that the SRTM flow is inherently brittle - a minor change can invalidate the entire chain of trust.
-- A list of known 'good' SRTM measurements requires each new BIOS/PC combination measurement to be carefully added, which is slow. 
+- A list of known 'good' SRTM measurements requires each new BIOS/PC combination measurement to be carefully added, which is slow.
 Also, a bug fix for UEFI code can take a long time to design, build, retest, validate, and redeploy.
 
 ### Secure Launch—the Dynamic Root of Trust for Measurement (DRTM)
 
-[Windows Defender System Guard Secure Launch](system-guard-secure-launch-and-smm-protection.md), first introduced in Windows 10 version 1809, aims to alleviate these issues by leveraging a technology known as the Dynamic Root of Trust for Measurement (DRTM). 
-DRTM lets the system freely boot into untrusted code initially, but shortly after launches the system into a trusted state by taking control of all CPUs and forcing them down a well-known and measured code path. 
+[Windows Defender System Guard Secure Launch](system-guard-secure-launch-and-smm-protection.md), first introduced in Windows 10 version 1809, aims to alleviate these issues by leveraging a technology known as the Dynamic Root of Trust for Measurement (DRTM).
+DRTM lets the system freely boot into untrusted code initially, but shortly after launches the system into a trusted state by taking control of all CPUs and forcing them down a well-known and measured code path.
 This has the benefit of allowing untrusted early UEFI code to boot the system, but then being able to securely transition into a trusted and measured state.
 
 
 ![System Guard Secure Launch.](images/system-guard-secure-launch.png)
 
-Secure Launch simplifies management of SRTM measurements because the launch code is now unrelated to a specific hardware configuration. This means the number of valid code measurements is small, and future updates can be deployed more widely and quickly. 
+Secure Launch simplifies management of SRTM measurements because the launch code is now unrelated to a specific hardware configuration. This means the number of valid code measurements is small, and future updates can be deployed more widely and quickly.
 
 ### System Management Mode (SMM) protection
 
-System Management Mode (SMM) is a special-purpose CPU mode in x86 microcontrollers that handles power management, hardware configuration, thermal monitoring, and anything else the manufacturer deems useful. 
-Whenever one of these system operations is requested, a non-maskable interrupt (SMI) is invoked at runtime, which executes SMM code installed by the BIOS. 
-SMM code executes in the highest privilege level and is invisible to the OS, which makes it an attractive target for malicious activity. Even if System Guard Secure Launch is used to late launch, SMM code can potentially access hypervisor memory and change the hypervisor. 
+System Management Mode (SMM) is a special-purpose CPU mode in x86 microcontrollers that handles power management, hardware configuration, thermal monitoring, and anything else the manufacturer deems useful.
+Whenever one of these system operations is requested, a non-maskable interrupt (SMI) is invoked at runtime, which executes SMM code installed by the BIOS.
+SMM code executes in the highest privilege level and is invisible to the OS, which makes it an attractive target for malicious activity. Even if System Guard Secure Launch is used to late launch, SMM code can potentially access hypervisor memory and change the hypervisor.
 
 To defend against this, two techniques are used:
 
  - Paging protection to prevent inappropriate access to code and data
  - SMM hardware supervision and attestation
 
-Paging protection can be implemented to lock certain code tables to be read-only to prevent tampering. This prevents access to any memory that hasn't been assigned. 
+Paging protection can be implemented to lock certain code tables to be read-only to prevent tampering. This prevents access to any memory that hasn't been assigned.
 
-A hardware-enforced processor feature known as a supervisor SMI handler can monitor the SMM and make sure it doesn't access any part of the address space that it isn't supposed to. 
+A hardware-enforced processor feature known as a supervisor SMI handler can monitor the SMM and make sure it doesn't access any part of the address space that it isn't supposed to.
 
-SMM protection is built on top of the Secure Launch technology and requires it to function. 
-In the future, Windows 10 will also measure this SMI Handler's behavior and attest that no OS-owned memory has been tampered with. 
+SMM protection is built on top of the Secure Launch technology and requires it to function.
+In the future, Windows 10 will also measure this SMI Handler's behavior and attest that no OS-owned memory has been tampered with.
 
 ## Validating platform integrity after Windows is running (run time)
 
@@ -81,7 +81,7 @@ As Windows 10 boots, a series of integrity measurements are taken by Windows Def
 
 After the system boots, Windows Defender System Guard signs and seals these measurements using the TPM. Upon request, a management system like Intune or Microsoft Configuration Manager can acquire them for remote analysis. If Windows Defender System Guard indicates that the device lacks integrity, the management system can take a series of actions, such as denying the device access to resources.
 
-[!INCLUDE [windows-defender-system-guard](../../../../includes/licensing/windows-defender-system-guard.md)]
+[!INCLUDE [windows-defender-system-guard](../../../includes/licensing/windows-defender-system-guard.md)]
 
 ## System requirements for System Guard
 

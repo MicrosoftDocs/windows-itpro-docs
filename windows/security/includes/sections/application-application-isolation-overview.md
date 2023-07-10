@@ -15,7 +15,7 @@ The following table lists the edition applicability for all Application Isolatio
 |[Microsoft Defender Application Guard (MDAG) for Microsoft Office](https://support.microsoft.com/office/application-guard-for-office-9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)|❌|Yes|❌|Yes|
 |[Microsoft Defender Application Guard (MDAG) configure via MDM](/windows/client-management/mdm/windowsdefenderapplicationguard-csp)|❌|Yes|❌|Yes|
 |[Windows containers](/virtualization/windowscontainers/about/)|Yes|Yes|Yes|Yes|
-|[Windows Sandbox](/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview)|Yes|Yes|Yes|Yes|
+|[Windows Sandbox](../../application-security/application-isolation/windows-sandbox/windows-sandbox-overview.md)|Yes|Yes|Yes|Yes|
 
 The following table lists the licensing applicability for all Application Isolation features.
 
@@ -27,4 +27,4 @@ The following table lists the licensing applicability for all Application Isolat
 |[Microsoft Defender Application Guard (MDAG) for Microsoft Office](https://support.microsoft.com/office/application-guard-for-office-9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)|❌|❌|❌|❌|❌|
 |[Microsoft Defender Application Guard (MDAG) configure via MDM](/windows/client-management/mdm/windowsdefenderapplicationguard-csp)|❌|Yes|Yes|Yes|Yes|
 |[Windows containers](/virtualization/windowscontainers/about/)|Yes|Yes|Yes|Yes|Yes|
-|[Windows Sandbox](/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview)|Yes|Yes|Yes|Yes|Yes|
+|[Windows Sandbox](../../application-security/application-isolation/windows-sandbox/windows-sandbox-overview.md)|Yes|Yes|Yes|Yes|Yes|

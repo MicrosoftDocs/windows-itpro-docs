@@ -8,18 +8,18 @@ ms.author: vinpa
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
-ms.collection: 
+ms.collection:
   - highpri
   - tier2
 ms.topic: conceptual
 ms.date: 03/16/2023
-ms.reviewer: 
+ms.reviewer:
 ms.technology: itpro-security
 ---
 
 # Enable virtualization-based protection of code integrity
 
-**Applies to** 
+**Applies to**
 
 - Windows 10
 - Windows 11
@@ -73,7 +73,7 @@ Enabling in Intune requires using the Code Integrity node in the [Virtualization
 
 4. Select **Enabled** and under **Virtualization Based Protection of Code Integrity**, select **Enabled without UEFI lock**. Only select **Enabled with UEFI lock** if you want to prevent memory integrity from being disabled remotely or by policy update. Once enabled with UEFI lock, you must have access to the UEFI BIOS menu to turn off Secure Boot if you want to turn off memory integrity.
 
-   ![Enable memory integrity using Group Policy.](../images/enable-hvci-gp.png)
+   ![Enable memory integrity using Group Policy.](images/enable-hvci-gp.png)
 
 5. Select **Ok** to close the editor.
 

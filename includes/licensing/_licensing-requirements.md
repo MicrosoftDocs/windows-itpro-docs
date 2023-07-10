@@ -28,10 +28,10 @@ ms.topic: include
 |**[Federal Information Processing Standard (FIPS) 140 validation](/windows/security/threat-protection/fips-140-validation)**|Yes|Yes|Yes|Yes|Yes|
 |**[Federated sign-in](/education/windows/federated-sign-in)**|❌|❌|❌|Yes|Yes|
 |**[Hardware-enforced stack protection](https://techcommunity.microsoft.com/t5/windows-os-platform-blog/understanding-hardware-enforced-stack-protection/ba-p/1247815)**|Yes|Yes|Yes|Yes|Yes|
-|**[Hypervisor-protected Code Integrity (HVCI)](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity)**|Yes|Yes|Yes|Yes|Yes|
-|**[Kernel Direct Memory Access (DMA) protection](/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)**|Yes|Yes|Yes|Yes|Yes|
+|**[Hypervisor-protected Code Integrity (HVCI)](../../windows/security/hardware-security/enable-virtualization-based-protection-of-code-integrity.md)**|Yes|Yes|Yes|Yes|Yes|
+|**[Kernel Direct Memory Access (DMA) protection](../../windows/security/hardware-security/kernel-dma-protection-for-thunderbolt.md)**|Yes|Yes|Yes|Yes|Yes|
 |**Local Security Authority (LSA) Protection**|Yes|Yes|Yes|Yes|Yes|
-|**[Manage by Mobile Device Management (MDM) and group policy](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines)**|Yes|Yes|Yes|Yes|Yes|
+|**[Manage by Mobile Device Management (MDM) and group policy](../../windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines.md)**|Yes|Yes|Yes|Yes|Yes|
 |**[Measured boot](/windows/compatibility/measured-boot)**|Yes|Yes|Yes|Yes|Yes|
 |**[Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows)**|Yes|Yes|Yes|Yes|Yes|
 |**[Microsoft Defender Application Guard (MDAG) configure via MDM](/windows/client-management/mdm/windowsdefenderapplicationguard-csp)**|❌|Yes|Yes|Yes|Yes|
@@ -51,7 +51,7 @@ ms.topic: include
 |**[Secure Boot and Trusted Boot](/windows/security/trusted-boot)**|Yes|Yes|Yes|Yes|Yes|
 |**[Secured-core configuration lock](/windows/client-management/config-lock)**|Yes|Yes|Yes|Yes|Yes|
 |**[Secured-core PC](/windows-hardware/design/device-experiences/oem-highly-secure-11)**|Yes|Yes|Yes|Yes|Yes|
-|**[Security baselines](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines)**|Yes|Yes|Yes|Yes|Yes|
+|**[Security baselines](../../windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines.md)**|Yes|Yes|Yes|Yes|Yes|
 |**[Server Message Block (SMB) file service](/windows-server/storage/file-server/file-server-smb-overview)**|Yes|Yes|Yes|Yes|Yes|
 |**[Server Message Block Direct (SMB Direct)](/windows-server/storage/file-server/smb-direct)**|Yes|Yes|Yes|Yes|Yes|
 |**[Smart App Control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)**|Yes|Yes|Yes|Yes|Yes|
@@ -70,11 +70,11 @@ ms.topic: include
 |**[Windows Defender Application Control (WDAC)](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard)**|❌|Yes|Yes|Yes|Yes|
 |**[Windows Defender Remote Credential Guard](/windows/security/identity-protection/remote-credential-guard)**|Yes|Yes|Yes|Yes|Yes|
-|**[Windows Defender System Guard](/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows)**|Yes|Yes|Yes|Yes|Yes|
+|**[Windows Defender System Guard](../../windows/security/hardware-security/how-hardware-based-root-of-trust-helps-protect-windows.md)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Hello for Business](/windows/security/identity-protection/hello-for-business)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Hello for Business Enhanced Security Sign-in (ESS)](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows LAPS](/windows-server/identity/laps/laps-overview)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows presence sensing](https://support.microsoft.com/windows/wake-your-windows-11-pc-when-you-approach-82285c93-440c-4e15-9081-c9e38c1290bb)**|Yes|Yes|Yes|Yes|Yes|
-|**[Windows Sandbox](/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview)**|Yes|Yes|Yes|Yes|Yes|
+|**[Windows Sandbox](../../windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview.md)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Security policy settings and auditing](/windows/security/threat-protection/security-policy-settings/security-policy-settings)**|Yes|Yes|Yes|Yes|Yes|
