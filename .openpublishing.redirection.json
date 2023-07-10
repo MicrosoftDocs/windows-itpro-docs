@@ -5286,21 +5286,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/security//application-security/application-isolation/windows-sandbox/windows-sandbox-architecture.md",
-      "redirect_url": "/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-architecture",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/security//application-security/application-isolation/windows-sandbox/windows-sandbox-configure-using-wsb-file.md",
-      "redirect_url": "/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-configure-using-wsb-file",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/security//application-security/application-isolation/windows-sandbox/windows-sandbox-overview.md",
-      "redirect_url": "/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "windows/threat-protection/windows-information-protection/app-behavior-with-wip.md",
       "redirect_url": "/windows/security/information-protection/windows-information-protection/app-behavior-with-wip",
       "redirect_document_id": false

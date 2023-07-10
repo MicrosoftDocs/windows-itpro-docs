@@ -1,5 +1,5 @@
 ---
-title: Configure the Group Policy settings for Microsoft Defender Application Guard 
+title: Configure the Group Policy settings for Microsoft Defender Application Guard
 description: Learn about the available Group Policy settings for Microsoft Defender Application Guard.
 ms.prod: windows-client
 ms.mktglfcycl: manage
@@ -9,7 +9,7 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.author: vinpa
 ms.date: 08/22/2022
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.custom: sasr
 ms.technology: itpro-security
@@ -27,7 +27,7 @@ Microsoft Defender Application Guard (Application Guard) works with Group Policy
 
 Application Guard uses both network isolation and application-specific settings.
 
-[!INCLUDE [microsoft-defender-application-guard-mdag-for-edge-enterprise-mode-and-enterprise-management](../../../../includes/licensing/microsoft-defender-application-guard-mdag-for-edge-enterprise-mode-and-enterprise-management.md)]
+[!INCLUDE [microsoft-defender-application-guard-mdag-for-edge-enterprise-mode-and-enterprise-management](../../../../../includes/licensing/microsoft-defender-application-guard-mdag-for-edge-enterprise-mode-and-enterprise-management.md)]
 
 For more information about Microsoft Defender Application Guard (MDAG) for Edge in stand-alone mode, see [Microsoft Defender Application Guard overview](md-app-guard-overview.md).
 

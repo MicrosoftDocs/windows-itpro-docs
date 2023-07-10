@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Application Guard 
+title: Microsoft Defender Application Guard
 description: Learn about Microsoft Defender Application Guard and how it helps combat malicious content and malware out on the Internet.
 ms.prod: windows-client
 ms.mktglfcycl: manage
@@ -9,11 +9,11 @@ ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.author: vinpa
 ms.date: 05/01/2023
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.custom: asr
 ms.technology: itpro-security
-ms.collection: 
+ms.collection:
   - highpri
   - tier2
 ms.topic: conceptual
@@ -21,7 +21,7 @@ ms.topic: conceptual
 
 # Microsoft Defender Application Guard overview
 
-**Applies to** 
+**Applies to**
 
 - Windows 10
 - Windows 11
@@ -48,7 +48,7 @@ Application Guard has been created to target several types of devices:
 
 - **Personal devices**. These personally owned desktops or mobile laptops aren't domain-joined or managed by an organization. The user is an admin on the device and uses a high-bandwidth wireless personal network while at home or a comparable public network while outside.
 
-[!INCLUDE [microsoft-defender-application-guard-mdag-for-edge-standalone-mode](../../../../includes/licensing/microsoft-defender-application-guard-mdag-for-edge-standalone-mode.md)]
+[!INCLUDE [microsoft-defender-application-guard-mdag-for-edge-standalone-mode](../../../../../includes/licensing/microsoft-defender-application-guard-mdag-for-edge-standalone-mode.md)]
 
 For more information about Microsoft Defender Application Guard (MDAG) for Edge enterprise mode, [Configure Microsoft Defender Application Guard policy settings.](configure-md-app-guard.md)
 
