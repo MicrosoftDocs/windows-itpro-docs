@@ -2,7 +2,7 @@ items:
 - name: Microsoft Defender Application Guard (MDAG)
   href: ../../threat-protection\microsoft-defender-application-guard\md-app-guard-overview.md
 - name: MDAG for Edge standalone mode
-  href: ../../threat-protection/microsoft-defender-application-guard/md-app-guard-overview.md
+  href: microsoft-defender-application-guard/md-app-guard-overview.md
 - name: MDAG for Edge enterprise mode and enterprise management 🔗
   href: /deployedge/microsoft-edge-security-windows-defender-application-guard
 - name: MDAG for Microsoft Office

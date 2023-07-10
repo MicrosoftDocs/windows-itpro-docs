@@ -29,7 +29,7 @@ Application Guard uses both network isolation and application-specific settings.
 
 [!INCLUDE [microsoft-defender-application-guard-mdag-for-edge-enterprise-mode-and-enterprise-management](../../../../includes/licensing/microsoft-defender-application-guard-mdag-for-edge-enterprise-mode-and-enterprise-management.md)]
 
-For more information about Microsoft Defender Application Guard (MDAG) for Edge in stand-alone mode, see [Microsoft Defender Application Guard overview](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview).
+For more information about Microsoft Defender Application Guard (MDAG) for Edge in stand-alone mode, see [Microsoft Defender Application Guard overview](md-app-guard-overview.md).
 
 ## Network isolation settings
 
@@ -75,4 +75,3 @@ These settings, located at `Computer Configuration\Administrative Templates\Wind
 These settings are located at `Administrative Templates\Windows Components\Windows Security\Enterprise Customization`. If an error is encountered, you're presented with a dialog box. By default, this dialog box only contains the error information and a button for you to report it to Microsoft via the feedback hub. However, it's possible to provide additional information in the dialog box.
 
 [Use Group Policy to enable and customize contact information](/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information#use-group-policy-to-enable-and-customize-contact-information).
-
