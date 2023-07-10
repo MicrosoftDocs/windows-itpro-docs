@@ -27,6 +27,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Message center post number | Description |
 | ----- | ----- |
+| [MC617077](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Windows Autopatch Public Preview: Drivers and Firmware Management |
 | [MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter) | General Availability: New Features in Windows Autopatch |
 
 ## June 2023
