@@ -54,9 +54,6 @@ In summary, the Windows 10/11 Enterprise E3 in CSP program is an upgrade offerin
 
 ## Compare Windows 10 Pro and Enterprise editions
 
-> [!NOTE]
-> The following table only lists Windows 10. More information will be available about differences between Windows 11 editions after Windows 11 is generally available.
-
 Windows 10 Enterprise edition has many features that are unavailable in Windows 10 Pro. Table 1 lists the Windows 10 Enterprise features not found in Windows 10 Pro. Many of these features are security-related, whereas others enable finer-grained device management.
 
 ### Table 1. Windows 10 Enterprise features not found in Windows 10 Pro
