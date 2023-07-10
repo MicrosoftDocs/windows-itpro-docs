@@ -5286,13 +5286,13 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/threat-protection/windows-information-protection/app-behavior-with-wip.md",
-      "redirect_url": "/windows/security/information-protection/windows-information-protection/app-behavior-with-wip",
+      "source_path": "windows/security//threat-protection/microsoft-defender-application-guard/faq-md-app-guard.yml",
+      "redirect_url": "/windows/security/application-security/application-isolation/microsoft-defender-application-guard/faq-md-app-guard",
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/threat-protection/windows-information-protection/faq-md-app-guard.yml",
-      "redirect_url": "/windows/security/information-protection/windows-information-protection/faq-md-app-guard",
+      "source_path": "windows/threat-protection/windows-information-protection/app-behavior-with-wip.md",
+      "redirect_url": "/windows/security/information-protection/windows-information-protection/app-behavior-with-wip",
       "redirect_document_id": false
     },
     {
