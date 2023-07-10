@@ -5,7 +5,7 @@ ms.prod: windows-client
 author: vinaypamnani-msft
 ms.author: vinpa
 manager: aaroncz
-ms.collection: 
+ms.collection:
   - highpri
   - tier1
 ms.topic: conceptual
