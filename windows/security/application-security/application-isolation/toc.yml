@@ -12,9 +12,9 @@ items:
 - name: Windows containers 🔗
   href: /virtualization/windowscontainers/about
 - name: Windows Sandbox
-  href: ./windows-sandbox/windows-sandbox-overview.md
+  href: windows-sandbox/windows-sandbox-overview.md
   items:
   - name: Windows Sandbox architecture
-    href: ./windows-sandbox/windows-sandbox-architecture.md
+    href: windows-sandbox/windows-sandbox-architecture.md
   - name: Windows Sandbox configuration
-    href: ./windows-sandbox/windows-sandbox-configure-using-wsb-file.md
+    href: windows-sandbox/windows-sandbox-configure-using-wsb-file.md
