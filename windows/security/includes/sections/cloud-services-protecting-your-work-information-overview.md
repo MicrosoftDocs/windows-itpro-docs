@@ -12,7 +12,7 @@ The following table lists the edition applicability for all Protecting Your Work
 |[Azure AD join, Active Directory domain join, and Hybrid Azure AD join with single sign-on (SSO)](/azure/active-directory/devices/concept-azure-ad-join)|Yes|Yes|Yes|Yes|
 |[Security baselines](/mem/intune/protect/security-baselines)|Yes|Yes|Yes|Yes|
 |[Remote wipe](/windows/client-management/mdm/remotewipe-csp)|Yes|Yes|Yes|Yes|
-|[Manage by Mobile Device Management (MDM) and group policy](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines)|Yes|Yes|Yes|Yes|
+|[Manage by Mobile Device Management (MDM) and group policy](../../operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines.md)|Yes|Yes|Yes|Yes|
 |[Universal Print](/universal-print/)|Yes|Yes|Yes|Yes|
 
 The following table lists the licensing applicability for all Protecting Your Work Information features.
@@ -22,5 +22,5 @@ The following table lists the licensing applicability for all Protecting Your Wo
 |[Azure AD join, Active Directory domain join, and Hybrid Azure AD join with single sign-on (SSO)](/azure/active-directory/devices/concept-azure-ad-join)|Yes|Yes|Yes|Yes|Yes|
 |[Security baselines](/mem/intune/protect/security-baselines)|Yes|Yes|Yes|Yes|Yes|
 |[Remote wipe](/windows/client-management/mdm/remotewipe-csp)|Yes|Yes|Yes|Yes|Yes|
-|[Manage by Mobile Device Management (MDM) and group policy](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines)|Yes|Yes|Yes|Yes|Yes|
+|[Manage by Mobile Device Management (MDM) and group policy](../../operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines.md)|Yes|Yes|Yes|Yes|Yes|
 |[Universal Print](/universal-print/)|❌|Yes|Yes|Yes|Yes|

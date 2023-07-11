@@ -13,7 +13,7 @@ The following table lists the edition applicability for all Silicon Assisted Sec
 |[Hypervisor-protected Code Integrity (HVCI)](/windows-hardware/design/device-experiences/oem-hvci-enablement)|Yes|Yes|Yes|Yes|
 |[Hardware-enforced stack protection](https://techcommunity.microsoft.com/t5/windows-os-platform-blog/understanding-hardware-enforced-stack-protection/ba-p/1247815)|Yes|Yes|Yes|Yes|
 |[Secured-core PC](/windows-hardware/design/device-experiences/oem-highly-secure-11)|Yes|Yes|Yes|Yes|
-|[Kernel Direct Memory Access (DMA) protection](/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)|Yes|Yes|Yes|Yes|
+|[Kernel Direct Memory Access (DMA) protection](../../hardware-security/kernel-dma-protection-for-thunderbolt.md)|Yes|Yes|Yes|Yes|
 
 The following table lists the licensing applicability for all Silicon Assisted Security (Secured Kernel) features.
 
@@ -23,4 +23,4 @@ The following table lists the licensing applicability for all Silicon Assisted S
 |[Hypervisor-protected Code Integrity (HVCI)](/windows-hardware/design/device-experiences/oem-hvci-enablement)|Yes|Yes|Yes|Yes|Yes|
 |[Hardware-enforced stack protection](https://techcommunity.microsoft.com/t5/windows-os-platform-blog/understanding-hardware-enforced-stack-protection/ba-p/1247815)|Yes|Yes|Yes|Yes|Yes|
 |[Secured-core PC](/windows-hardware/design/device-experiences/oem-highly-secure-11)|Yes|Yes|Yes|Yes|Yes|
-|[Kernel Direct Memory Access (DMA) protection](/windows/security/information-protection/kernel-dma-protection-for-thunderbolt)|Yes|Yes|Yes|Yes|Yes|
+|[Kernel Direct Memory Access (DMA) protection](../../hardware-security/kernel-dma-protection-for-thunderbolt.md)|Yes|Yes|Yes|Yes|Yes|

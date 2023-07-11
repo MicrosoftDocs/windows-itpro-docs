@@ -1,23 +1,12 @@
 ---
 title: System requirements for Microsoft Defender Application Guard
 description: Learn about the system requirements for installing and running Microsoft Defender Application Guard.
-ms.prod: windows-client
-ms.technology: itpro-security
 ms.topic: overview
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-ms.author: vinpa
-ms.date: 08/25/2022
-ms.reviewer: sazankha
-manager: aaroncz
+ms.date: 07/11/2023
 ---
 
 # System requirements for Microsoft Defender Application Guard
-
-**Applies to** 
-
-- Windows 10 Education, Enterprise, and Professional
-- Windows 11 Education, Enterprise, and Professional
 
 The threat landscape is continually evolving. While hackers are busy developing new techniques to breach enterprise networks by compromising workstations, phishing schemes remain one of the top ways to lure employees into social engineering attacks. Microsoft Defender Application Guard is designed to help prevent old, and newly emerging attacks, to help keep employees productive.
 

@@ -1,35 +1,20 @@
 ---
-title: Configure the Group Policy settings for Microsoft Defender Application Guard 
+title: Configure the Group Policy settings for Microsoft Defender Application Guard
 description: Learn about the available Group Policy settings for Microsoft Defender Application Guard.
-ms.prod: windows-client
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-ms.author: vinpa
-ms.date: 08/22/2022
-ms.reviewer: 
-manager: aaroncz
-ms.custom: sasr
-ms.technology: itpro-security
+ms.date: 07/11/2023
 ms.topic: how-to
 ---
 
 # Configure Microsoft Defender Application Guard policy settings
 
-**Applies to:**
-
-- Windows 10
-- Windows 11
-
 Microsoft Defender Application Guard (Application Guard) works with Group Policy to help you manage your organization's computer settings. By using Group Policy, you can configure a setting once, and then copy it onto many computers. For example, you can set up multiple security settings in a Group Policy Object, which is linked to a domain, and then apply all those settings to every endpoint in the domain.
 
 Application Guard uses both network isolation and application-specific settings.
 
-[!INCLUDE [microsoft-defender-application-guard-mdag-for-edge-enterprise-mode-and-enterprise-management](../../../../includes/licensing/microsoft-defender-application-guard-mdag-for-edge-enterprise-mode-and-enterprise-management.md)]
+[!INCLUDE [microsoft-defender-application-guard-mdag-for-edge-enterprise-mode-and-enterprise-management](../../../../../includes/licensing/microsoft-defender-application-guard-mdag-for-edge-enterprise-mode-and-enterprise-management.md)]
 
-For more information about Microsoft Defender Application Guard (MDAG) for Edge in stand-alone mode, see [Microsoft Defender Application Guard overview](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview).
+For more information about Microsoft Defender Application Guard (MDAG) for Edge in stand-alone mode, see [Microsoft Defender Application Guard overview](md-app-guard-overview.md).
 
 ## Network isolation settings
 
@@ -75,4 +60,3 @@ These settings, located at `Computer Configuration\Administrative Templates\Wind
 These settings are located at `Administrative Templates\Windows Components\Windows Security\Enterprise Customization`. If an error is encountered, you're presented with a dialog box. By default, this dialog box only contains the error information and a button for you to report it to Microsoft via the feedback hub. However, it's possible to provide additional information in the dialog box.
 
 [Use Group Policy to enable and customize contact information](/windows/security/threat-protection/windows-defender-security-center/wdsc-customize-contact-information#use-group-policy-to-enable-and-customize-contact-information).
-

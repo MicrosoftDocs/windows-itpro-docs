@@ -15,7 +15,7 @@ appliesto:
 
 The acceleration of digital transformation and the expansion of both remote and hybrid work brings new opportunities to organizations, communities, and individuals. This expansion introduces new threats and risks.
 
-Organizations worldwide are adopting a **Zero Trust** security model based on the premise that no person or device anywhere can have access until safety and integrity is proven. Windows 11 is built on Zero Trust principles to enable hybrid productivity and new experiences anywhere, without compromising security. Windows 11 raises the [security baselines](../threat-protection/windows-security-configuration-framework/windows-security-baselines.md) with new requirements for advanced hardware and software protection that extends from chip to cloud.
+Organizations worldwide are adopting a **Zero Trust** security model based on the premise that no person or device anywhere can have access until safety and integrity is proven. Windows 11 is built on Zero Trust principles to enable hybrid productivity and new experiences anywhere, without compromising security. Windows 11 raises the [security baselines](../operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines.md) with new requirements for advanced hardware and software protection that extends from chip to cloud.
 
 ## How Windows 11 enables Zero Trust protection
 
