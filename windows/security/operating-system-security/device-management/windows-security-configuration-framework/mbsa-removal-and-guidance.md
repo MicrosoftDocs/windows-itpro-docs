@@ -1,13 +1,8 @@
 ---
 title: Guide to removing Microsoft Baseline Security Analyzer (MBSA)
 description: This article documents the removal of Microsoft Baseline Security Analyzer (MBSA) and provides alternative solutions.
-ms.prod: windows-client
 ms.localizationpriority: medium
-ms.author: paoloma
-author: paolomatarazzo
-manager: aaroncz
-ms.technology: itpro-security
-ms.date: 03/29/2023
+ms.date: 07/11/2023
 ms.topic: article
 ---
 

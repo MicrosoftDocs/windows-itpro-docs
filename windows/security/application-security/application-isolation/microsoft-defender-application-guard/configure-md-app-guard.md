@@ -1,27 +1,12 @@
 ---
 title: Configure the Group Policy settings for Microsoft Defender Application Guard
 description: Learn about the available Group Policy settings for Microsoft Defender Application Guard.
-ms.prod: windows-client
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-ms.author: vinpa
-ms.date: 08/22/2022
-ms.reviewer:
-manager: aaroncz
-ms.custom: sasr
-ms.technology: itpro-security
+ms.date: 07/11/2023
 ms.topic: how-to
 ---
 
 # Configure Microsoft Defender Application Guard policy settings
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
 
 Microsoft Defender Application Guard (Application Guard) works with Group Policy to help you manage your organization's computer settings. By using Group Policy, you can configure a setting once, and then copy it onto many computers. For example, you can set up multiple security settings in a Group Policy Object, which is linked to a domain, and then apply all those settings to every endpoint in the domain.
 

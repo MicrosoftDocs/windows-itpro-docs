@@ -1,18 +1,12 @@
 ---
 title: Microsoft Security Compliance Toolkit Guide
 description: This article describes how to use Security Compliance Toolkit in your organization
-ms.prod: windows-client
 ms.localizationpriority: medium
-ms.author: vinpa
-author: vinaypamnani-msft
-manager: aaroncz
 ms.collection:
   - highpri
   - tier3
 ms.topic: conceptual
-ms.date: 06/07/2023
-ms.reviewer: rmunck
-ms.technology: itpro-security
+ms.date: 07/11/2023
 ---
 
 # Microsoft Security Compliance Toolkit - How to use

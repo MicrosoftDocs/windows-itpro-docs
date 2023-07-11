@@ -1,22 +1,11 @@
 ---
 title: Enable hardware-based isolation for Microsoft Edge
 description: Learn about the Microsoft Defender Application Guard modes (Standalone or Enterprise-managed), and how to install Application Guard in your enterprise.
-ms.prod: windows-client
-ms.localizationpriority: medium
-author: vinaypamnani-msft
-ms.author: vinpa
-ms.date: 11/30/2022
-ms.reviewer:
-manager: aaroncz
-ms.custom: asr
-ms.technology: itpro-security
-appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+ms.date: 07/11/2023
+ms.topic: how-to
 ms.collection:
   - highpri
   - tier2
-ms.topic: how-to
 ---
 
 # Prepare to install Microsoft Defender Application Guard

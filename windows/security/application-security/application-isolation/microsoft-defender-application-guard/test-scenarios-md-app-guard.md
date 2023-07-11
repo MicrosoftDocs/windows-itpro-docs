@@ -1,24 +1,12 @@
 ---
 title: Testing scenarios with Microsoft Defender Application Guard
 description: Suggested testing scenarios for Microsoft Defender Application Guard, showing how it works in both Standalone and Enterprise-managed mode.
-ms.prod: windows-client
-ms.technology: itpro-security
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-ms.author: vinpa
-ms.reviewer: sazankha
-manager: aaroncz
-ms.date: 09/23/2022
-ms.custom: asr
+ms.date: 07/11/2023
 ms.topic: conceptual
 ---
 
 # Application Guard testing scenarios
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
 
 We've come up with a list of scenarios that you can use to test hardware-based isolation in your organization.
 

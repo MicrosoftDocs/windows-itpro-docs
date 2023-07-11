@@ -1,18 +1,8 @@
 ---
 title: Microsoft Defender Application Guard
 description: Learn about Microsoft Defender Application Guard and how it helps combat malicious content and malware out on the Internet.
-ms.prod: windows-client
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-ms.author: vinpa
-ms.date: 05/01/2023
-ms.reviewer:
-manager: aaroncz
-ms.custom: asr
-ms.technology: itpro-security
+ms.date: 07/11/2023
 ms.collection:
   - highpri
   - tier2
@@ -20,11 +10,6 @@ ms.topic: conceptual
 ---
 
 # Microsoft Defender Application Guard overview
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 Microsoft Defender Application Guard (MDAG) is designed to help prevent old and newly emerging attacks to help keep employees productive. Using our unique hardware isolation approach, our goal is to destroy the playbook that attackers use by making current attack methods obsolete.
 

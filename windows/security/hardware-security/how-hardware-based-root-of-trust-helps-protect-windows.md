@@ -1,23 +1,16 @@
 ---
-title: How a Windows Defender System Guard helps protect Windows 10
-description: Windows Defender System Guard reorganizes the existing Windows 10 system integrity features under one roof. Learn how it works.
-ms.reviewer:
-manager: aaroncz
-ms.author: vinpa
-search.appverid: met150
-ms.prod: windows-client
+title: How a Windows Defender System Guard helps protect Windows
+description: Windows Defender System Guard reorganizes the existing Windows system integrity features under one roof. Learn how it works.
 ms.localizationpriority: medium
-author: vinaypamnani-msft
 ms.date: 03/01/2019
-ms.technology: itpro-security
 ms.topic: conceptual
 ---
 
-# Windows Defender System Guard: How a hardware-based root of trust helps protect Windows 10
+# Windows Defender System Guard: How a hardware-based root of trust helps protect Windows
 
 To protect critical resources such as the Windows authentication stack, single sign-on tokens, the Windows Hello biometric stack, and the Virtual Trusted Platform Module, a system's firmware and hardware must be trustworthy.
 
-Windows Defender System Guard reorganizes the existing Windows 10 system integrity features under one roof and sets up the next set of investments in Windows security. It's designed to make these security guarantees:
+Windows Defender System Guard reorganizes the existing Windows system integrity features under one roof and sets up the next set of investments in Windows security. It's designed to make these security guarantees:
 
 - Protect and maintain the integrity of the system as it starts up
 - Validate that system integrity has truly been maintained through local and remote attestation
@@ -48,7 +41,6 @@ Also, a bug fix for UEFI code can take a long time to design, build, retest, val
 DRTM lets the system freely boot into untrusted code initially, but shortly after launches the system into a trusted state by taking control of all CPUs and forcing them down a well-known and measured code path.
 This has the benefit of allowing untrusted early UEFI code to boot the system, but then being able to securely transition into a trusted and measured state.
 
-
 ![System Guard Secure Launch.](images/system-guard-secure-launch.png)
 
 Secure Launch simplifies management of SRTM measurements because the launch code is now unrelated to a specific hardware configuration. This means the number of valid code measurements is small, and future updates can be deployed more widely and quickly.
@@ -61,8 +53,8 @@ SMM code executes in the highest privilege level and is invisible to the OS, whi
 
 To defend against this, two techniques are used:
 
- - Paging protection to prevent inappropriate access to code and data
- - SMM hardware supervision and attestation
+- Paging protection to prevent inappropriate access to code and data
+- SMM hardware supervision and attestation
 
 Paging protection can be implemented to lock certain code tables to be read-only to prevent tampering. This prevents access to any memory that hasn't been assigned.
 

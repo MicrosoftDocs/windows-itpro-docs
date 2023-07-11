@@ -2,19 +2,9 @@
 metadata:
   title: FAQ - Microsoft Defender Application Guard (Windows 10)
   description: Learn about the commonly asked questions and answers for Microsoft Defender Application Guard.
-  ms.mktglfcycl: manage
-  ms.sitesec: library
-  ms.pagetype: security
   ms.localizationpriority: medium
-  ms.prod: windows-client
-  ms.technology: itpro-security
-  author: vinaypamnani-msft
-  ms.author: vinpa
-  ms.reviewer:
-  manager: aaroncz
-  ms.custom: asr
   ms.topic: faq
-  ms.date: 12/31/2017
+  ms.date: 07/11/2023
 title: Frequently asked questions - Microsoft Defender Application Guard
 summary: |
 
