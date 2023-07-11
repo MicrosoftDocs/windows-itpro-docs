@@ -25,10 +25,7 @@ You can download the script from the [Microsoft Download Center](https://www.mic
 
 ## How this script is organized
 
-This script's two primary files are `ConfigScript.ps1` and `RunConfig.bat`. You configure `RunConfig.bat` according to the directions in the `.bat` itself, which will then run `ConfigScript.ps1` with the parameters entered to `RunConfig.bat`. There are two ways of using the script: in **Pilot** mode or **Deployment** mode. 
-
-- In **Pilot** mode (`runMode=Pilot`), the script will enter a verbose mode with enhanced diagnostics, and save the results in the path defined with `logpath` in `RunConfig.bat`. Pilot mode is best for a pilot run of the script or for troubleshooting configuration.
-- In **Deployment** mode (`runMode=Deployment`), the script doesn't run any additional diagnostics or additional logging.
+This script's two primary files are `ConfigScript.ps1` and `RunConfig.bat`. You configure `RunConfig.bat` according to the directions in the `.bat` itself, which will then run `ConfigScript.ps1` with the parameters entered to `RunConfig.bat`. There are two ways of using the script: in **Pilot** mode or **Deployment** mode.
 
 > [!Important]
 > [PsExec](/sysinternals/downloads/psexec) is used to run the script in the system context. Once the device is configured, remove PsExec.exe from the device.
@@ -39,7 +36,7 @@ Edit the `RunConfig.bat` file to configure the following variables, then run the
 
 | Variable | Allowed values and description | Example |
 |---|---|---|
-| runMode | **Pilot** (default): Verbose mode with additional diagnostics with additional logging <br> **Deployment**: Doesn't run any additional diagnostics or add extra logging | `runMode=Pilot` |
+| runMode | **Pilot** (default): Verbose mode with additional diagnostics with additional logging. Pilot mode is best for a testing run of the script or for troubleshooting. <br> **Deployment**: Doesn't run any additional diagnostics or add extra logging | `runMode=Pilot` |
 | logPath | Path where the logs will be saved. The default location of the logs is `.\UCLogs`. | `logPath=C:\temp\logs` |
 | logMode | **0**: Log to the console only </br> **1** (default): Log to file and console. </br> **2**: Log to file only. | `logMode=2` |
 | DeviceNameOptIn | **true** (default): Device name is sent to Microsoft. </br> **false**: Device name isn't sent to Microsoft. | `DeviceNameOptIn=true` |
