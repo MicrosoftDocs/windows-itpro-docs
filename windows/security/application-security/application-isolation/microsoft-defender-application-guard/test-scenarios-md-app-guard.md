@@ -1,24 +1,12 @@
 ---
 title: Testing scenarios with Microsoft Defender Application Guard
 description: Suggested testing scenarios for Microsoft Defender Application Guard, showing how it works in both Standalone and Enterprise-managed mode.
-ms.prod: windows-client
-ms.technology: itpro-security
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-ms.author: vinpa
-ms.reviewer: sazankha
-manager: aaroncz
-ms.date: 09/23/2022
-ms.custom: asr
+ms.date: 07/11/2023
 ms.topic: conceptual
 ---
 
 # Application Guard testing scenarios
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
 
 We've come up with a list of scenarios that you can use to test hardware-based isolation in your organization.
 
@@ -28,7 +16,7 @@ You can see how an employee would use standalone mode with Application Guard.
 
 ### To test Application Guard in Standalone mode
 
-1. [Install Application Guard](./install-md-app-guard.md).
+1. [Install Application Guard](install-md-app-guard.md).
 
 2. Restart the device, start Microsoft Edge, and then select **New Application Guard window** from the menu.
 
@@ -51,7 +39,7 @@ How to install, set up, turn on, and configure Application Guard for Enterprise-
 
 Before you can use Application Guard in managed mode, you must install Windows 10 Enterprise edition, version 1709, and Windows 11 which includes the functionality. Then, you must use Group Policy to set up the required settings.
 
-1. [Install Application Guard](./install-md-app-guard.md#install-application-guard).
+1. [Install Application Guard](install-md-app-guard.md#install-application-guard).
 
 2. Restart the device, and then start Microsoft Edge.
 

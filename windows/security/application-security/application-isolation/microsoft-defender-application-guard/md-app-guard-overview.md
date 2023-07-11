@@ -1,30 +1,15 @@
 ---
-title: Microsoft Defender Application Guard 
+title: Microsoft Defender Application Guard
 description: Learn about Microsoft Defender Application Guard and how it helps combat malicious content and malware out on the Internet.
-ms.prod: windows-client
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-ms.author: vinpa
-ms.date: 05/01/2023
-ms.reviewer: 
-manager: aaroncz
-ms.custom: asr
-ms.technology: itpro-security
-ms.collection: 
+ms.date: 07/11/2023
+ms.collection:
   - highpri
   - tier2
 ms.topic: conceptual
 ---
 
 # Microsoft Defender Application Guard overview
-
-**Applies to** 
-
-- Windows 10
-- Windows 11
 
 Microsoft Defender Application Guard (MDAG) is designed to help prevent old and newly emerging attacks to help keep employees productive. Using our unique hardware isolation approach, our goal is to destroy the playbook that attackers use by making current attack methods obsolete.
 
@@ -48,9 +33,9 @@ Application Guard has been created to target several types of devices:
 
 - **Personal devices**. These personally owned desktops or mobile laptops aren't domain-joined or managed by an organization. The user is an admin on the device and uses a high-bandwidth wireless personal network while at home or a comparable public network while outside.
 
-[!INCLUDE [microsoft-defender-application-guard-mdag-for-edge-standalone-mode](../../../../includes/licensing/microsoft-defender-application-guard-mdag-for-edge-standalone-mode.md)]
+[!INCLUDE [microsoft-defender-application-guard-mdag-for-edge-standalone-mode](../../../../../includes/licensing/microsoft-defender-application-guard-mdag-for-edge-standalone-mode.md)]
 
-For more information about Microsoft Defender Application Guard (MDAG) for Edge enterprise mode, [Configure Microsoft Defender Application Guard policy settings.](/windows/security/threat-protection/microsoft-defender-application-guard/configure-md-app-guard)
+For more information about Microsoft Defender Application Guard (MDAG) for Edge enterprise mode, [Configure Microsoft Defender Application Guard policy settings.](configure-md-app-guard.md)
 
 ## Related articles
 
@@ -64,4 +49,3 @@ For more information about Microsoft Defender Application Guard (MDAG) for Edge 
 | [Microsoft Defender Application Guard for Microsoft Office](/microsoft-365/security/office-365-security/install-app-guard) | Describes Application Guard for Microsoft Office, including minimum hardware requirements, configuration, and a troubleshooting guide |
 |[Frequently asked questions - Microsoft Defender Application Guard](faq-md-app-guard.yml)|Provides answers to frequently asked questions about Application Guard features, integration with the Windows operating system, and general configuration.|
 |[Use a network boundary to add trusted sites on Windows devices in Microsoft Intune](/mem/intune/configuration/network-boundary-windows)|Network boundary, a feature that helps you protect your environment from sites that aren't trusted by your organization.|
-

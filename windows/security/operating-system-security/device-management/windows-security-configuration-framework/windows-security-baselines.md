@@ -1,18 +1,12 @@
 ---
 title: Security baselines guide
 description: Learn how to use security baselines in your organization.
-ms.prod: windows-client
 ms.localizationpriority: medium
-ms.author: vinpa
-author: vinaypamnani-msft
-manager: aaroncz
 ms.collection:
   - highpri
   - tier3
 ms.topic: conceptual
-ms.date: 01/26/2022
-ms.reviewer: jmunck
-ms.technology: itpro-security
+ms.date: 07/11/2023
 ---
 
 # Security baselines
@@ -41,7 +35,7 @@ For example, there are over 3,000 group policy settings for Windows 10, which do
 
 In modern organizations, the security threat landscape is constantly evolving, and IT pros and policy-makers must keep up with security threats and make required changes to security settings to help mitigate these threats. To enable faster deployments and make managing Microsoft products easier, Microsoft provides customers with security baselines that are available in consumable formats, such as group policy object backups.
 
-[!INCLUDE [security-baselines](../../../../includes/licensing/security-baselines.md)]
+[!INCLUDE [security-baselines](../../../../../includes/licensing/security-baselines.md)]
 
 ## Baseline principles
 

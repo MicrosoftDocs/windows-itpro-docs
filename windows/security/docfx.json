@@ -73,8 +73,11 @@
     },
     "fileMetadata": {
       "author":{
+        "application-security//**/*.md": "vinaypamnani-msft",
+        "application-security//**/*.yml": "vinaypamnani-msft",
         "application-security/application-control/user-account-control/*.md": "paolomatarazzo",
-        "application-security/application-isolation/windows-sandbox/**/*.md": "vinaypamnani-msft",
+        "hardware-security/**/*.md": "vinaypamnani-msft",
+        "hardware-security/**/*.yml": "vinaypamnani-msft",
         "identity-protection/**/*.md": "paolomatarazzo",
         "identity-protection/**/*.yml": "paolomatarazzo",
         "operating-system-security/**/*.md": "vinaypamnani-msft",
@@ -87,9 +90,12 @@
         "operating-system-security/network-security/windows-firewall/**/*.yml": "ngangulyms"
       },
       "ms.author":{
+        "application-security//**/*.md": "vinpa",
+        "application-security//**/*.yml": "vinpa",
         "application-security/application-control/user-account-control/*.md": "paoloma",
         "application-security/application-control/user-account-control/*.yml": "paoloma",
-        "application-security/application-isolation/windows-sandbox/**/*.md": "vinpa",
+        "hardware-security//**/*.md": "vinpa",
+        "hardware-security//**/*.yml": "vinpa",
         "identity-protection/**/*.md": "paoloma",
         "identity-protection/**/*.yml": "paoloma",
         "operating-system-security/**/*.md": "vinpa",
@@ -109,7 +115,18 @@
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2019</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
         ],
-        "application-security/application-isolation/windows-sandbox/**/*.md": [
+        "application-security//**/*.md": [
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
+        ],
+        "application-security/application-control/user-account-control/**/*.md": [
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2022</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2019</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
+        ],
+        "hardware-security//**/*.md": [
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
         ],
@@ -125,13 +142,6 @@
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
         ],
         "identity-protection/smart-cards/**/*.md": [
-          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
-          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
-          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2022</a>",
-          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2019</a>",
-          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
-        ],
-        "identity-protection/user-account-control/**/*.md": [
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2022</a>",
@@ -169,6 +179,13 @@
         "operating-system-security/data-protection/personal-data-encryption/*.yml": [
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>"
         ],
+        "operating-system-security/device-management/windows-security-configuration-framework/**/*.md": [
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2022</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2019</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
+        ],
         "operating-system-security/network-security/windows-firewall/**/*.md": [
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
@@ -178,12 +195,14 @@
         ]
       },
       "ms.reviewer": {
+        "application-security/application-isolation/microsoft-defender-application-guard/*.md": "sazankha",
         "identity-protection/hello-for-business/*.md": "erikdau",
         "identity-protection/credential-guard/*.md": "zwhittington",
         "identity-protection/access-control/*.md": "sulahiri",
         "operating-system-security/network-security/windows-firewall/*.md": "paoloma",
         "operating-system-security/network-security/vpn/*.md": "pesmith",
-        "operating-system-security/data-protection/personal-data-encryption/*.md":"rhonnegowda"
+        "operating-system-security/data-protection/personal-data-encryption/*.md":"rhonnegowda",
+        "operating-system-security/device-management/windows-security-configuration-framework/*.md": "jmunck"
       },
       "ms.collection": {
         "identity-protection/hello-for-business/*.md": "tier1",
