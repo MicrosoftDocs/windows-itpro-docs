@@ -14,6 +14,7 @@ ms.collection:
 ms.technology: itpro-configure
 ms.date: 07/12/2023
 ---
+<!--8107263-->
 
 # Set up a single-app kiosk on Windows 10/11
 
