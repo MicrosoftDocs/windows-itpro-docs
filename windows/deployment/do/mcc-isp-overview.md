@@ -18,7 +18,7 @@ ms.collection: tier3
 - Windows 10
 - Windows 11
 
-Microsoft Connected Cache (MCC) for Internet Service Providers (preview) is a software-only caching solution that delivers Microsoft content. MCC can be deployed to as many bare-metal servers or VMs as needed and is managed from a cloud portal. When deployed, MCC can help to reduce your network bandwidth usage for Microsoft software content and updates. Cache nodes are created in the cloud portal and are configured to deliver traffic to customers by manual CIDR or BGP routing.
+Microsoft Connected Cache (MCC) for Internet Service Providers (preview) is a free software-only caching solution that delivers Microsoft content. MCC can be deployed free of charge to as many bare-metal servers or VMs as needed and is managed from a cloud portal. When deployed, MCC can help to reduce your network bandwidth usage for Microsoft software content and updates. Cache nodes are created in the cloud portal and are configured to deliver traffic to customers by manual CIDR or BGP routing.
 
 ## Supported scenarios
 
