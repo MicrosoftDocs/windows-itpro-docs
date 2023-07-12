@@ -47,7 +47,7 @@ Because vulnerabilities can exist when this value is configured and when it's no
 
 ### Best practices
 
-The threshold that you select is a balance between operational efficiency and security, and it depends on your organization's risk level. To allow for user error and to thwart brute force attacks, [Windows security baselines](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines) recommend a value of 10 could be an acceptable starting point for your organization.
+The threshold that you select is a balance between operational efficiency and security, and it depends on your organization's risk level. To allow for user error and to thwart brute force attacks, [Windows security baselines](../../operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines.md) recommend a value of 10 could be an acceptable starting point for your organization.
 
 As with other account lockout settings, this value is more of a guideline than a rule or best practice because there's no "one size fits all." For more information, see [Configuring Account Lockout](/archive/blogs/secguide/configuring-account-lockout).
 
@@ -117,7 +117,7 @@ Because vulnerabilities can exist when this value is configured and when it's no
     
 -   Configure the **Account lockout threshold** policy setting to a sufficiently high value to provide users with the ability to accidentally mistype their password several times before the account is locked, but ensure that a brute force password attack still locks the account.
 
-    [Windows security baselines](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines) recommend configuring a threshold of 10 invalid sign-in attempts, which prevents accidental account lockouts and reduces the number of Help Desk calls, but doesn't prevent a DoS attack.
+    [Windows security baselines](../../operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines.md) recommend configuring a threshold of 10 invalid sign-in attempts, which prevents accidental account lockouts and reduces the number of Help Desk calls, but doesn't prevent a DoS attack.
     
     Using this type of policy must be accompanied by a process to unlock locked accounts. It must be possible to implement this policy whenever it's needed to help mitigate massive lockouts caused by an attack on your systems.
 

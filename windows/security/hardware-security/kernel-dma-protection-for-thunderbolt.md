@@ -1,18 +1,11 @@
 ---
 title: Kernel DMA Protection
 description: Learn how Kernel DMA Protection protects Windows devices against drive-by Direct Memory Access (DMA) attacks using PCI hot plug devices.
-ms.prod: windows-client
-author: vinaypamnani-msft
-ms.author: vinpa
-manager: aaroncz
-ms.collection: 
+ms.collection:
   - highpri
   - tier1
 ms.topic: conceptual
 ms.date: 03/30/2023
-ms.technology: itpro-security
-appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10 and later</a>
 ---
 
 # Kernel DMA Protection
@@ -81,7 +74,7 @@ If the current state of **Kernel DMA Protection** is **OFF** and **Hyper-V - Vir
 
 If the state of **Kernel DMA Protection** remains Off, then the system doesn't support Kernel DMA Protection.
 
-For systems that don't support Kernel DMA Protection, refer to the [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md) or [Thunderbolt 3 and Security on Microsoft Windows Operating system][EXT-1] for other means of DMA protection.
+For systems that don't support Kernel DMA Protection, refer to the [BitLocker countermeasures](../operating-system-security/data-protection/bitlocker/bitlocker-countermeasures.md) or [Thunderbolt 3 and Security on Microsoft Windows Operating system][EXT-1] for other means of DMA protection.
 
 ## Frequently asked questions
 
