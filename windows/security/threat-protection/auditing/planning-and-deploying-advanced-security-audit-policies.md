@@ -175,7 +175,7 @@ The following table illustrates an analysis of computers in an organization.
  
 ### Regulatory requirements
 
-Many industries and locales have specific requirements for network operations and how resources are protected. In the health care and financial industries, for example, strict guidelines control who can access records and how the records are used. Many countries have strict privacy rules. To identify regulatory requirements, work with your organization's legal department and other departments responsible for these requirements. Then consider the security configuration and auditing options that you can use to comply with these regulations and verify compliance.
+Many industries and locales have specific requirements for network operations and how resources are protected. In the health care and financial industries, for example, strict guidelines control who can access records and how the records are used. Many countries/regions have strict privacy rules. To identify regulatory requirements, work with your organization's legal department and other departments responsible for these requirements. Then consider the security configuration and auditing options that you can use to comply with these regulations and verify compliance.
 
 For more information, see the [System Center Process Pack for IT GRC](/previous-versions/tn-archive/dd206732(v=technet.10)).
 
