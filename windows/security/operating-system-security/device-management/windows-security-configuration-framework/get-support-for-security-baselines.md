@@ -1,15 +1,9 @@
 ---
 title: Get support for security baselines
 description: Find answers to frequently asked question on how to get support for baselines, the Security Compliance Toolkit (SCT), and related articles.
-ms.prod: windows-client
 ms.localizationpriority: medium
-ms.author: vinpa
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
-ms.date: 10/19/2022
-ms.reviewer: jmunck
-ms.technology: itpro-security
+ms.date: 07/11/2023
 ---
 
 # Get Support
