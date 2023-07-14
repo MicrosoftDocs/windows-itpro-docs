@@ -1,694 +1,781 @@
 ---
-title: Policy CSP - Settings
-description: Learn how to use the Policy CSP - Settings setting so that you can allow the user to change Auto Play settings.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+title: Settings Policy CSP
+description: Learn more about the Settings Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 06/02/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Settings-Begin -->
 # Policy CSP - Settings
 
-<hr/>
+<!-- Settings-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Settings-Editable-End -->
 
-<!--Policies-->
-## Settings policies  
+<!-- AllowAutoPlay-Begin -->
+## AllowAutoPlay
 
-<dl>
-  <dd>
-    <a href="#settings-allowautoplay">Settings/AllowAutoPlay</a>
-  </dd>
-  <dd>
-    <a href="#settings-allowdatasense">Settings/AllowDataSense</a>
-  </dd>
-  <dd>
-    <a href="#settings-allowdatetime">Settings/AllowDateTime</a>
-  </dd>
-  <dd>
-    <a href="#settings-alloweditdevicename">Settings/AllowEditDeviceName</a>
-  </dd>
-  <dd>
-    <a href="#settings-allowlanguage">Settings/AllowLanguage</a>
-  </dd>
-  <dd>
-    <a href="#settings-allowonlinetips">Settings/AllowOnlineTips</a>
-  </dd>
-  <dd>
-    <a href="#settings-allowpowersleep">Settings/AllowPowerSleep</a>
-  </dd>
-  <dd>
-    <a href="#settings-allowregion">Settings/AllowRegion</a>
-  </dd>
-  <dd>
-    <a href="#settings-allowsigninoptions">Settings/AllowSignInOptions</a>
-  </dd>
-  <dd>
-    <a href="#settings-allowvpn">Settings/AllowVPN</a>
-  </dd>
-  <dd>
-    <a href="#settings-allowworkplace">Settings/AllowWorkplace</a>
-  </dd>
-  <dd>
-    <a href="#settings-allowyouraccount">Settings/AllowYourAccount</a>
-  </dd>
-  <dd>
-    <a href="#settings-configuretaskbarcalendar">Settings/ConfigureTaskbarCalendar</a>
-  </dd>
-  <dd>
-    <a href="#settings-pagevisibilitylist">Settings/PageVisibilityList</a>
-  </dd>
-</dl>
+<!-- AllowAutoPlay-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowAutoPlay-Applicability-End -->
 
+<!-- AllowAutoPlay-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Settings/AllowAutoPlay
+```
+<!-- AllowAutoPlay-OmaUri-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="settings-allowautoplay"></a>**Settings/AllowAutoPlay**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-
+<!-- AllowAutoPlay-Description-Begin -->
+<!-- Description-Source-DDF -->
 Allows the user to change Auto Play settings.
 
 > [!NOTE]
-> Setting this policy to 0 (Not allowed) does not affect the autoplay dialog box that appears when a device is connected.
+> Setting this policy to 0 (Not allowed) doesn't affect the autoplay dialog box that appears when a device is connected.
+<!-- AllowAutoPlay-Description-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowAutoPlay-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowAutoPlay-Editable-End -->
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+<!-- AllowAutoPlay-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowAutoPlay-DFProperties-End -->
 
-<hr/>
+<!-- AllowAutoPlay-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="settings-allowdatasense"></a>**Settings/AllowDataSense**  
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowAutoPlay-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowAutoPlay-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowAutoPlay-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowAutoPlay-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowDataSense-Begin -->
+## AllowDataSense
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowDataSense-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowDataSense-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowDataSense-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Settings/AllowDataSense
+```
+<!-- AllowDataSense-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowDataSense-Description-Begin -->
+<!-- Description-Source-DDF -->
 Allows the user to change Data Sense settings.
+<!-- AllowDataSense-Description-End -->
+
+<!-- AllowDataSense-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 > [!NOTE]
-> The **AllowDataSense** policy is not supported on Windows 10, version 2004 and later.
+> The AllowDataSense policy isn't supported on Windows 10, version 2004 and later.
+<!-- AllowDataSense-Editable-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowDataSense-DFProperties-Begin -->
+**Description framework properties**:
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowDataSense-DFProperties-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AllowDataSense-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowDataSense-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="settings-allowdatetime"></a>**Settings/AllowDateTime**  
+<!-- AllowDataSense-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowDataSense-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowDataSense-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowDateTime-Begin -->
+## AllowDateTime
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowDateTime-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowDateTime-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowDateTime-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Settings/AllowDateTime
+```
+<!-- AllowDateTime-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowDateTime-Description-Begin -->
+<!-- Description-Source-DDF -->
 Allows the user to change date and time settings.
+<!-- AllowDateTime-Description-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowDateTime-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowDateTime-Editable-End -->
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+<!-- AllowDateTime-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowDateTime-DFProperties-End -->
 
-<hr/>
+<!-- AllowDateTime-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="settings-alloweditdevicename"></a>**Settings/AllowEditDeviceName**  
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowDateTime-AllowedValues-End -->
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+<!-- AllowDateTime-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowDateTime-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowDateTime-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowEditDeviceName-Begin -->
+## AllowEditDeviceName
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowEditDeviceName-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowEditDeviceName-Applicability-End -->
 
-<hr/>
+<!-- AllowEditDeviceName-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Settings/AllowEditDeviceName
+```
+<!-- AllowEditDeviceName-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy disables edit device name option on Settings.
+<!-- AllowEditDeviceName-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows the user to edit the device name.
+<!-- AllowEditDeviceName-Description-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
+<!-- AllowEditDeviceName-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowEditDeviceName-Editable-End -->
 
-Describes what value are supported in by this policy and meaning of each value, default value.
+<!-- AllowEditDeviceName-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowEditDeviceName-DFProperties-End -->
 
-<hr/>
+<!-- AllowEditDeviceName-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="settings-allowlanguage"></a>**Settings/AllowLanguage**  
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowEditDeviceName-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowEditDeviceName-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowEditDeviceName-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowEditDeviceName-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowLanguage-Begin -->
+## AllowLanguage
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowLanguage-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowLanguage-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowLanguage-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Settings/AllowLanguage
+```
+<!-- AllowLanguage-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-
+<!-- AllowLanguage-Description-Begin -->
+<!-- Description-Source-DDF -->
 Allows the user to change the language settings.
+<!-- AllowLanguage-Description-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowLanguage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowLanguage-Editable-End -->
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+<!-- AllowLanguage-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowLanguage-DFProperties-End -->
 
-<hr/>
+<!-- AllowLanguage-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="settings-allowonlinetips"></a>**Settings/AllowOnlineTips**  
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowLanguage-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowLanguage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowLanguage-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowLanguage-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowOnlineTips-Begin -->
+## AllowOnlineTips
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowOnlineTips-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- AllowOnlineTips-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowOnlineTips-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Settings/AllowOnlineTips
+```
+<!-- AllowOnlineTips-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowOnlineTips-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Enables or disables the retrieval of online tips and help for the Settings app.
 
 If disabled, Settings won't contact Microsoft content services to retrieve tips and help content.
+<!-- AllowOnlineTips-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Allow Online Tips*
--   GP name: *AllowOnlineTips*
--   GP element: *CheckBox_AllowOnlineTips*
--   GP path: *Control Panel*
--   GP ADMX file name: *ControlPanel.admx*
+<!-- AllowOnlineTips-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowOnlineTips-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- AllowOnlineTips-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowOnlineTips-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="settings-allowpowersleep"></a>**Settings/AllowPowerSleep**  
+<!-- AllowOnlineTips-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--SupportedSKUs-->
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowOnlineTips-AllowedValues-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowOnlineTips-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AllowOnlineTips |
+| Friendly Name | Allow Online Tips |
+| Element Name | Allow Settings to retrieve online tips. |
+| Location | Computer Configuration |
+| Path | Control Panel |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| ADMX File Name | ControlPanel.admx |
+<!-- AllowOnlineTips-GpMapping-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowOnlineTips-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowOnlineTips-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowOnlineTips-End -->
 
-<hr/>
+<!-- AllowPowerSleep-Begin -->
+## AllowPowerSleep
 
-<!--/Scope-->
-<!--Description-->
+<!-- AllowPowerSleep-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowPowerSleep-Applicability-End -->
 
+<!-- AllowPowerSleep-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Settings/AllowPowerSleep
+```
+<!-- AllowPowerSleep-OmaUri-End -->
+
+<!-- AllowPowerSleep-Description-Begin -->
+<!-- Description-Source-DDF -->
 Allows the user to change power and sleep settings.
+<!-- AllowPowerSleep-Description-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowPowerSleep-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowPowerSleep-Editable-End -->
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+<!-- AllowPowerSleep-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowPowerSleep-DFProperties-End -->
 
-<hr/>
+<!-- AllowPowerSleep-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="settings-allowregion"></a>**Settings/AllowRegion**  
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowPowerSleep-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowPowerSleep-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowPowerSleep-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowPowerSleep-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowRegion-Begin -->
+## AllowRegion
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowRegion-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowRegion-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowRegion-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Settings/AllowRegion
+```
+<!-- AllowRegion-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-
+<!-- AllowRegion-Description-Begin -->
+<!-- Description-Source-DDF -->
 Allows the user to change the region settings.
+<!-- AllowRegion-Description-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowRegion-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowRegion-Editable-End -->
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+<!-- AllowRegion-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowRegion-DFProperties-End -->
 
-<hr/>
+<!-- AllowRegion-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="settings-allowsigninoptions"></a>**Settings/AllowSignInOptions**  
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowRegion-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowRegion-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowRegion-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowRegion-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowSignInOptions-Begin -->
+## AllowSignInOptions
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowSignInOptions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowSignInOptions-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowSignInOptions-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Settings/AllowSignInOptions
+```
+<!-- AllowSignInOptions-OmaUri-End -->
 
-<hr/>
+<!-- AllowSignInOptions-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows the user to change sign-in options.
+<!-- AllowSignInOptions-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- AllowSignInOptions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowSignInOptions-Editable-End -->
 
-Allows the user to change sign in options.
+<!-- AllowSignInOptions-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowSignInOptions-DFProperties-End -->
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+<!-- AllowSignInOptions-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowSignInOptions-AllowedValues-End -->
 
-<hr/>
+<!-- AllowSignInOptions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowSignInOptions-Examples-End -->
 
-<!--Policy-->
-<a href="" id="settings-allowvpn"></a>**Settings/AllowVPN**  
+<!-- AllowSignInOptions-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowVPN-Begin -->
+## AllowVPN
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowVPN-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowVPN-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowVPN-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Settings/AllowVPN
+```
+<!-- AllowVPN-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowVPN-Description-Begin -->
+<!-- Description-Source-DDF -->
 Allows the user to change VPN settings.
+<!-- AllowVPN-Description-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowVPN-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowVPN-Editable-End -->
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+<!-- AllowVPN-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowVPN-DFProperties-End -->
 
-<hr/>
+<!-- AllowVPN-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="settings-allowworkplace"></a>**Settings/AllowWorkplace**  
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowVPN-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowVPN-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowVPN-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowVPN-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowWorkplace-Begin -->
+## AllowWorkplace
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowWorkplace-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowWorkplace-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowWorkplace-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Settings/AllowWorkplace
+```
+<!-- AllowWorkplace-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-
+<!-- AllowWorkplace-Description-Begin -->
+<!-- Description-Source-DDF -->
 Allows user to change workplace settings.
+<!-- AllowWorkplace-Description-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowWorkplace-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowWorkplace-Editable-End -->
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+<!-- AllowWorkplace-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowWorkplace-DFProperties-End -->
 
-<hr/>
+<!-- AllowWorkplace-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="settings-allowyouraccount"></a>**Settings/AllowYourAccount**  
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowWorkplace-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowWorkplace-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowWorkplace-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowWorkplace-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowYourAccount-Begin -->
+## AllowYourAccount
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowYourAccount-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowYourAccount-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowYourAccount-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Settings/AllowYourAccount
+```
+<!-- AllowYourAccount-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowYourAccount-Description-Begin -->
+<!-- Description-Source-DDF -->
 Allows user to change account settings.
+<!-- AllowYourAccount-Description-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowYourAccount-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowYourAccount-Editable-End -->
 
--   0 – Not allowed.
--   1 (default) – Allowed.
+<!-- AllowYourAccount-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowYourAccount-DFProperties-End -->
 
-<hr/>
+<!-- AllowYourAccount-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="settings-configuretaskbarcalendar"></a>**Settings/ConfigureTaskbarCalendar**  
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowYourAccount-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowYourAccount-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowYourAccount-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowYourAccount-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ConfigureTaskbarCalendar-Begin -->
+## ConfigureTaskbarCalendar
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ConfigureTaskbarCalendar-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- ConfigureTaskbarCalendar-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- ConfigureTaskbarCalendar-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Settings/ConfigureTaskbarCalendar
+```
+<!-- ConfigureTaskbarCalendar-OmaUri-End -->
 
-<hr/>
+<!-- ConfigureTaskbarCalendar-Description-Begin -->
+<!-- Description-Source-ADMX -->
+By default, the calendar is set according to the locale of the operating system, and users can show an additional calendar. For zh-CN and zh-SG locales, an additional calendar shows the lunar month and date and holiday names in Simplified Chinese (Lunar) by default. For zh-TW, zh-HK, and zh-MO locales, an additional calendar shows the lunar month and date and holiday names in Traditional Chinese (Lunar) by default.
 
-<!--/Scope-->
-<!--Description-->
-Allows IT Admins to configure the default setting for showing more calendars (besides the default calendar for the locale) in the taskbar clock and calendar flyout. Other supported calendars are: Simplified or Traditional Chinese lunar calendar. Turning on one of these calendars will display Chinese lunar dates below the default calendar for the locale.  Select "Don't show additional calendars" to prevent showing other calendars besides the default calendar for the locale.
+- If you enable this policy setting, users can show an additional calendar in either Simplified Chinese (Lunar) or Traditional Chinese (Lunar), regardless of the locale.
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Show additional calendar*
--   GP name: *ConfigureTaskbarCalendar*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+- If you disable this policy setting, users can't show an additional calendar, regardless of the locale.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+- If you don't configure this policy setting, the calendar will be set according to the default logic.
+<!-- ConfigureTaskbarCalendar-Description-End -->
 
--   0 (default) – User will be allowed to configure the setting.
--   1  – Don't show additional calendars.
--   2  - Simplified Chinese (Lunar).
--   3  - Traditional Chinese (Lunar).
+<!-- ConfigureTaskbarCalendar-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureTaskbarCalendar-Editable-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- ConfigureTaskbarCalendar-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ConfigureTaskbarCalendar-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="settings-pagevisibilitylist"></a>**Settings/PageVisibilityList**  
+<!-- ConfigureTaskbarCalendar-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--SupportedSKUs-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | User will be allowed to configure the setting. |
+| 1 | Don't show additional calendars. |
+| 2 | Simplified Chinese (Lunar). |
+| 3 | Traditional Chinese (Lunar). |
+<!-- ConfigureTaskbarCalendar-AllowedValues-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ConfigureTaskbarCalendar-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ConfigureTaskbarCalendar |
+| Friendly Name | Show additional calendar |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Settings |
+| Registry Value Name | AllowConfigureTaskbarCalendar |
+| ADMX File Name | Taskbar.admx |
+<!-- ConfigureTaskbarCalendar-GpMapping-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ConfigureTaskbarCalendar-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureTaskbarCalendar-Examples-End -->
 
-> [!div class = "checklist"]
-> * User
-> * Device
+<!-- ConfigureTaskbarCalendar-End -->
 
-<hr/>
+<!-- PageVisibilityList-Begin -->
+## PageVisibilityList
 
-<!--/Scope-->
-<!--Description-->
-Allows IT Admins to either:
+<!-- PageVisibilityList-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- PageVisibilityList-Applicability-End -->
 
-- Prevent specific pages in the System Settings app from being visible or accessible
+<!-- PageVisibilityList-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList
+```
 
-  OR
+```Device
+./Device/Vendor/MSFT/Policy/Config/Settings/PageVisibilityList
+```
+<!-- PageVisibilityList-OmaUri-End -->
 
-- To do so for all pages except the pages you enter
+<!-- PageVisibilityList-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies the list of pages to show or hide from the System Settings app.
 
-The mode will be specified by the policy string beginning with either the string `showonly:` or `hide:`. Pages are identified by a shortened version of their already published URIs, which is the URI minus the "ms-settings:" prefix.
+This policy allows an administrator to block a given set of pages from the System Settings app. Blocked pages won't be visible in the app, and if all pages in a category are blocked the category will be hidden as well. Direct navigation to a blocked page via URI, context menu in Explorer or other means will result in the front page of Settings being shown instead.
 
-For example, if the URI for a settings page is "ms-settings:bluetooth", the page identifier used in the policy will be just "bluetooth".  Multiple page identifiers are separated by semicolons. For more information on the URI reference scheme used for the various pages of the System Settings app, see [ms-settings: URI scheme reference](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference).
+This policy has two modes: it can either specify a list of settings pages to show or a list of pages to hide. To specify a list of pages to show, the policy string must begin with "showonly:" (without quotes), and to specify a list of pages to hide, it must begin with "hide:". If a page in a showonly list would normally be hidden for other reasons (such as a missing hardware device), this policy won't force that page to appear. After this, the policy string must contain a semicolon-delimited list of settings page identifiers. The identifier for any given settings page is the published URI for that page, minus the "ms-settings:" protocol part.
 
-The following example shows a policy that allows access only to the **about** and **bluetooth** pages, which have URI "ms-settings:about" and "ms-settings:bluetooth" respectively:
+Example: to specify that only the About and Bluetooth pages should be shown (their respective URIs are ms-settings:about and ms-settings:bluetooth) and all other pages hidden:
 
-`showonly:about;bluetooth`
+showonly:about;bluetooth.
 
-If the policy isn't specified, then the behavior is that no pages are affected. If the policy string is formatted incorrectly, then it's ignored (that is, treated as not set). It's ignored to prevent the machine from becoming unserviceable if data corruption occurs. If a page is already hidden for another reason, then it stays hidden, even if the page is in a `showonly:` list.
+Example: to specify that only the Bluetooth page (which has URI ms-settings:bluetooth) should be hidden:
 
-The format of the PageVisibilityList value is as follows:
+hide:bluetooth.
+<!-- PageVisibilityList-Description-End -->
 
-- The value is a unicode string up to 10,000 characters long, which will be used without case sensitivity.
-- There are two variants: one that shows only the given pages and one that hides the given pages.
-- The first variant starts with the string `showonly:` and the second with the string "hide:".
-- Following the variant identifier is a semicolon-delimited list of page identifiers, which must not have any extra whitespace.
-- Each page identifier is the `ms-settings:xyz` URI for the page, minus the `ms-settings:` prefix. So the identifier for the page with the `ms-settings:network-wifi` URI would be `network-wifi`.
+<!-- PageVisibilityList-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+For more information on the URI reference scheme used for the various pages of the System Settings app, see [ms-settings: URI scheme reference](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference).
 
-The default value for this setting is an empty string, which is interpreted as show everything.
+> [!WARNING]
+> In Windows 11, version 22H2 and later, when you configure this policy to hide any pages that contain `quietmoments` in the URI (for example, `ms-settings:quietmomentsgame`), the Notifications page under System category is hidden.
+
+To validate this policy, use the following steps:
+
+1. In the Settings app, open **System** and verify that the **About** page is visible and accessible.
+2. Configure this policy with the following string: `hide:about`.
+3. Open **System** settings again and verify that the **About** page is hidden.
+<!-- PageVisibilityList-Editable-End -->
+
+<!-- PageVisibilityList-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PageVisibilityList-DFProperties-End -->
+
+<!-- PageVisibilityList-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | SettingsPageVisibility |
+| Friendly Name | Settings Page Visibility |
+| Element Name | Settings Page Visibility. |
+| Location | Computer and User Configuration |
+| Path | Control Panel |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| ADMX File Name | ControlPanel.admx |
+<!-- PageVisibilityList-GpMapping-End -->
+
+<!-- PageVisibilityList-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
 
 **Example 1**: Only the wifi and bluetooth pages should be shown. They have URIs `ms-settings:network-wifi` and `ms-settings:bluetooth`. All other pages (and the categories they're in) will be hidden:
 
@@ -698,26 +785,19 @@ The default value for this setting is an empty string, which is interpreted as s
 
 `hide:network-wifi`
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Settings Page Visibility*
--   GP name: *SettingsPageVisibility*
--   GP element: *SettingsPageVisibilityBox*
--   GP path: *Control Panel*
--   GP ADMX file name: *ControlPanel.admx*
+**Example 3**: Allow access only to the **about** and **bluetooth** pages, which have URI "ms-settings:about" and "ms-settings:bluetooth" respectively:
 
-<!--/ADMXMapped-->
-<!--Validation-->
-To validate on Desktop, use the following steps:
+`showonly:about;bluetooth`
+<!-- PageVisibilityList-Examples-End -->
 
-1.   Open System Settings and verify that the About page is visible and accessible.
-2.   Configure the policy with the following string: "hide:about".
-3.   Open System Settings again and verify that the About page is no longer accessible.
+<!-- PageVisibilityList-End -->
 
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
+<!-- Settings-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Settings-CspMoreInfo-End -->
 
-<!--/Policies-->
+<!-- Settings-End -->
 
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

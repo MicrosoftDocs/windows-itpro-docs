@@ -1,15 +1,15 @@
 ---
 title: NetworkProxy (Windows 10)
 description: This section describes the NetworkProxy settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: greg-lindsay
+ms.prod: windows-client
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # NetworkProxy (Windows Configuration Designer reference)
@@ -29,18 +29,18 @@ Automatically detect network proxy settings.
 
 |  Value | Description |
 | --- | --- |
-| 0 | Disabled. Do not automatically detect settings. |
+| 0 | Disabled. Don't automatically detect settings. |
 | 1 | Enabled. Automatically detect settings. |
 
 ## ProxyServer
 
-Node for configuring a static proxy for Ethernet and Wi-Fi connections. The same proxy server is used for all protocols - including HTTP, HTTPS, FTP, and SOCKS. These settings do not apply to VPN connections.
+Node for configuring a static proxy for Ethernet and Wi-Fi connections. The same proxy server is used for all protocols - including HTTP, HTTPS, FTP, and SOCKS. These settings don't apply to VPN connections.
 
 | Setting | Description |
 | --- | --- |
 | ProxyAddress | Address to the proxy server. Specify an address in the format `server:port`. |
-| ProxyExceptions | Addresses that should not use the proxy server. The system will not use the proxy server for addresses that begin with the values specified in this node. Use semicolons (;) to separate entries. |
-| UseProxyForLocalAddresses | Whether the proxy server should be used for local (intranet) addresses.</br></br>- 0 = Disabled. Do not use the proxy server for local addresses.</br>- 1 = Enabled. Use the proxy server for local addresses.  |
+| ProxyExceptions | Addresses that shouldn't use the proxy server. The system won't use the proxy server for addresses that begin with the values specified in this node. Use semicolons (;) to separate entries. |
+| UseProxyForLocalAddresses | Whether the proxy server should be used for local (intranet) addresses.</br></br>- 0 = Disabled. Don't use the proxy server for local addresses.</br>- 1 = Enabled. Use the proxy server for local addresses.  |
 
 
 ## SetupScriptUrl

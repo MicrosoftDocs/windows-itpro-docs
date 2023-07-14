@@ -1,21 +1,20 @@
 ---
-title: Audit object access (Windows 10)
+title: Audit object access 
 description: The policy setting, Audit object access, determines whether to audit the event generated when a user accesses an object that has its own SACL specified.
 ms.assetid: D15B6D67-7886-44C2-9972-3F192D5407EA
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: none
-author: dansimp
-manager: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/06/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Audit object access

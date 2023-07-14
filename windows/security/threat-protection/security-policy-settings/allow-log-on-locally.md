@@ -1,26 +1,26 @@
 ---
-title: Allow log on locally - security policy setting (Windows 10)
+title: Allow log on locally - security policy setting 
 description: Describes the best practices, location, values, policy management, and security considerations for the Allow log on locally security policy setting.
 ms.assetid: d9e5e1f3-3bff-4da7-a9a2-4bb3e0c79055
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Allow log on locally - security policy setting
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Allow log on locally** security policy setting.

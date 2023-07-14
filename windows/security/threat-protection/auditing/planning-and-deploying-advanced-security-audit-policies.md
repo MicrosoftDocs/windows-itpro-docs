@@ -1,21 +1,20 @@
 ---
-title: Plan and deploy advanced security audit policies (Windows 10)
+title: Plan and deploy advanced security audit policies 
 description: Learn to deploy an effective security audit policy in a network that includes advanced security audit policies.
 ms.assetid: 7428e1db-aba8-407b-a39e-509671e5a442
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/09/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Plan and deploy advanced security audit policies
@@ -23,7 +22,7 @@ ms.technology: windows-sec
 
 This article for IT professionals explains the options that security policy planners should consider and the tasks they must complete to deploy an effective security audit policy in a network that includes advanced security audit policies.
 
-Organizations invest heavily in security applications and services, such as antimalware software, firewalls, and encryption. But no matter how much security hardware or software you deploy, how tightly you control the rights of users, or how carefully you configure security permissions on your data, the job isn't complete unless you have a well-defined, timely auditing strategy to track the effectiveness of your defenses and identify attempts to circumvent them.
+Organizations invest heavily in security applications and services, such as antimalware software, firewalls, and encryption. But no matter how much security hardware or software you deploy, how tightly you control the rights of users, or how carefully you configure security permissions on your data, the job isn't complete unless you've a well-defined, timely auditing strategy to track the effectiveness of your defenses and identify attempts to circumvent them.
 
 To be well-defined and timely, an auditing strategy must provide useful tracking data for an organization's most important resources, critical behaviors, and potential risks. In many organizations, it must also provide proof that IT operations comply with corporate and regulatory requirements.
 
@@ -134,7 +133,7 @@ To effectively audit user activity, begin by listing the different types of user
 
 Also, if external users can access your organization's data, be sure to identify them. Determine whether they're a business partner, customer, or general user; the data they have access to; and the permissions they have to access that data.
 
-The following table illustrates an analysis of users on a network. Our example contains only a single column titled "Possible auditing considerations," but you may want to create additional columns to differentiate between different types of network activity, such as logon hours and permission use.
+The following table illustrates an analysis of users on a network. Our example contains only a single column titled "Possible auditing considerations," but you may want to create more columns to differentiate between different types of network activity, such as sign-in hours and permission use.
 
 | Groups | Data | Possible auditing considerations |
 | - | - | - |
@@ -187,7 +186,7 @@ By using Group Policy, you can apply your security audit policy to defined group
 -   Decide whether every policy setting that you select should be enforced across the organization or apply only to selected users or computers. You can then combine these audit policy settings into GPOs and link them to the appropriate Active Directory containers.
 -   By default, options set in GPOs that are linked to higher levels of Active Directory sites, domains, and OUs are inherited by all OUs at lower levels. However, a GPO that's linked at a lower level can overwrite inherited policies.
 
-    For example, you might use a domain GPO to assign an organization-wide group of audit settings but want a certain OU to get a defined group of additional settings. To do this, you can link a second GPO to that specific lower-level OU. Then, a logon audit setting that's applied at the OU level will override a conflicting logon audit setting that's applied at the domain level, unless you've taken special steps to apply Group Policy loopback processing.
+    For example, you might use a domain GPO to assign an organization-wide group of audit settings but want a certain OU to get a defined group of extra settings. To do this assignation, you can link a second GPO to that specific lower-level OU. Then, a sign-in audit setting that's applied at the OU level will override a conflicting sign-in audit setting that's applied at the domain level, unless you've taken special steps to apply Group Policy loopback processing.
 
 -   Audit policies are computer policies. Therefore, they must be applied through GPOs that are applied to *computer* OUs, not to *user* OUs. But in most cases, you can apply audit settings for only specified resources and groups of users by configuring SACLs on the relevant objects. This functionality enables auditing for a security group that contains only the users you specify.
 
@@ -270,12 +269,12 @@ Compromise to an organization's data resources can cause tremendous financial lo
 
 The settings in the previous section relate to activity involving the files, folders, and network shares that are stored on a network. The settings in this section focus on the users who may try to access those resources, including employees, partners, and customers.
 
-In most cases, these attempts are legitimate, and the network needs to make data readily available to legitimate users. But in other cases, employees, partners, and others may try to access resources that they have no legitimate reason to access. You can use security auditing to track a variety of user activities on a particular computer to diagnose and resolve problems for legitimate users and to identify and address illegitimate activities. The following are important settings that you should evaluate to track user activity on your network:
+In most cases, these attempts are legitimate, and the network needs to make data readily available to legitimate users. But in other cases, employees, partners, and others may try to access resources that they have no legitimate reason to access. You can use security auditing to track various user activities on a particular computer to diagnose and resolve problems for legitimate users and to identify and address illegitimate activities. The following are important settings that you should evaluate to track user activity on your network:
 
--   **Account Logon\\[Audit Credential Validation](audit-credential-validation.md)**: This setting enables you to track all successful and unsuccessful logon attempts. A pattern of unsuccessful attempts may indicate that a user or application is using credentials that are no longer valid. Or the user or app is trying to use a variety of credentials in succession in hope that one of these attempts will eventually succeed. These events occur on the computer that's authoritative for the credentials. For domain accounts, the domain controller is authoritative. For local accounts, the local computer is authoritative.
+-   **Account Logon\\[Audit Credential Validation](audit-credential-validation.md)**: This setting enables you to track all successful and unsuccessful sign-in attempts. A pattern of unsuccessful attempts may indicate that a user or application is using credentials that are no longer valid. Or the user or app is trying to use various credentials in succession in hope that one of these attempts will eventually succeed. These events occur on the computer that's authoritative for the credentials. For domain accounts, the domain controller is authoritative. For local accounts, the local computer is authoritative.
 -   **Detailed Tracking\\[Audit Process Creation](audit-process-creation.md) and Detailed Tracking\\[Audit Process Termination](audit-process-termination.md)**: These policy settings enable you to monitor the applications that a user opens and close on a computer.
--   **DS Access\\[Audit Directory Service Access](audit-directory-service-access.md)** and **DS Access\\[Audit Directory Service Changes](audit-directory-service-changes.md)**: These policy settings provide a detailed audit trail of attempts to access, create, modify, delete, move, or undelete objects in Active Directory Domain Services (AD DS). Only domain administrators have permissions to modify AD DS objects, so it's important to identify malicious attempts to modify these objects. Also, although domain administrators should be among an organization's most trusted employees, the use of the **Audit Directory Service Access** and **Audit Directory Service Changes** settings enable you to monitor and verify that only approved changes are made to AD DS. These audit events are logged only on domain controllers.
--   **Logon/Logoff\\[Audit Account Lockout](audit-account-lockout.md)**: Another common security scenario occurs when a user attempts to log on with an account that's been locked out. It's important to identify these events and to determine whether the attempt to use an account that was locked out is malicious.
+-   **DS Access\\[Audit Directory Service Access](audit-directory-service-access.md)** and **DS Access\\[Audit Directory Service Changes](audit-directory-service-changes.md)**: These policy settings provide a detailed audit trail of attempts to access, create, modify, delete, move, or undelete objects in Active Directory Domain Services (AD DS). Only domain administrators have permissions to modify AD DS objects, so it's important to identify malicious attempts to modify these objects. Also, although domain administrators should be among an organization's most trusted employees, the use of the **Audit Directory Service Access** and **Audit Directory Service Changes** settings enables you to monitor and verify that only approved changes are made to AD DS. These audit events are logged only on domain controllers.
+-   **Logon/Logoff\\[Audit Account Lockout](audit-account-lockout.md)**: Another common security scenario occurs when a user attempts to sign in with an account that's been locked out. It's important to identify these events and to determine whether the attempt to use an account that was locked out is malicious.
 -   **Logon/Logoff\\[Audit Logoff](audit-logoff.md)** and **Logon/Logoff\\[Audit Logon](audit-logon.md)**: Logon and logoff events are essential to tracking user activity and detecting potential attacks. Logon events are related to the creation of logon sessions, and they occur on the computer that was accessed. For an interactive logon, events are generated on the computer that was logged on to. For network logon, such as accessing a shared resource, events are generated on the computer that hosts the resource that was accessed. Logoff events are generated when logon sessions are terminated.
 
     > [!NOTE]
@@ -309,7 +308,7 @@ The following network activity policy settings enable you to monitor security-re
 -   **Logon/Logoff\\[Audit Network Policy Server](audit-network-policy-server.md)**: Organizations that use RADIUS (IAS) and Network Access Protection (NAP) to set and maintain security requirements for external users can use this policy setting to monitor the effectiveness of these policies and to determine whether anyone is trying to circumvent these protections.
 -   **Policy Change**: These policy settings and events enable you to track changes to important security policies on a local computer or network. Because policies are typically established by administrators to help secure network resources, monitoring any changes or attempted changes to these policies can be an important aspect of security management for a network.
 -   **Policy Change\\[Audit Audit Policy Change](audit-audit-policy-change.md)**: This policy setting allows you to monitor changes to the audit policy. If malicious users obtain domain administrator credentials, they can temporarily disable essential security audit policy settings so that their other activities on the network can't be detected.
--   **Policy Change\\[Audit Filtering Platform Policy Change](audit-filtering-platform-policy-change.md)**: This policy setting can be used to monitor a variety of changes to an organization's IPsec policies.
+-   **Policy Change\\[Audit Filtering Platform Policy Change](audit-filtering-platform-policy-change.md)**: This policy setting can be used to monitor various changes to an organization's IPsec policies.
 -   **Policy Change\\[Audit MPSSVC Rule-Level Policy Change](audit-mpssvc-rule-level-policy-change.md)**: This policy setting determines if the operating system generates audit events when changes are made to policy rules for the Microsoft Protection Service (MPSSVC.exe), which is used by Windows Firewall. Changes to firewall rules are important for understanding the security state of the computer and how well it's protected against network attacks.
 
 ### Confirm operating system version compatibility
@@ -331,9 +330,9 @@ These settings enable you to exercise much tighter control over which activities
 
 ### *Success*, *failure*, or both
 
-Whichever event settings you include in your plan, you also have to decide whether you want to log an event when the activity fails or succeeds or both successes *and* failures. This is an important question. The answer depends on the criticality of the event and the implications of the decision for event volume.
+Whichever event settings you include in your plan, you also have to decide whether you want to log an event when the activity fails or succeeds or both successes *and* failures. This question is an important one. The answer depends on the criticality of the event and the implications of the decision for event volume.
 
-For example, on a file server that's accessed frequently by legitimate users, you may want to log an event only when an *unsuccessful* attempt to access data takes place, because this could be evidence of an unauthorized or malicious user. In this case, logging *successful* attempts to access the server would quickly fill the event log with benign events.
+For example, on a file server that's accessed frequently by legitimate users, you may want to log an event only when an *unsuccessful* attempt to access data takes place, because this access failure could be evidence of an unauthorized or malicious user. In this case, logging *successful* attempts to access the server would quickly fill the event log with benign events.
 
 But if the file share has sensitive information, such as trade secrets, you may want to log every access attempt so that you have an audit trail of every user who tries to access the resource.
 
@@ -341,12 +340,12 @@ But if the file share has sensitive information, such as trade secrets, you may 
 
 Networks may contain hundreds of servers that run critical services or store critical data, all of which need to be monitored. There may be tens or even hundreds of thousands of computers on the network. These numbers may not be an issue if the ratio of servers or client computers per administrator is low. And even if an administrator who is responsible for auditing security and performance issues has relatively few computers to monitor, you need to decide how the administrator will obtain event data to review. Following are some options for obtaining the event data.
 
--   Will you keep event data on a local computer until an administrator logs on to review this data? If so, the administrator needs to have physical or remote access to the Event Viewer on each client computer or server. And the remote access and firewall settings on each client computer or server need to be configured to enable this access. You also need to decide how often the administrator can visit each computer, and adjust the size of the audit log so that critical information isn't deleted if the log reaches capacity.
--   Will you collect event data so that it can be reviewed from a central console? If so, there are a number of computer management products, such as the Audit Collection Services in Microsoft Operations Manager 2007 and 2012, that you can use to collect and filter event data. Presumably this solution enables a single administrator to review larger amounts of data than using the local storage option. But in some cases, this method can make it more difficult to detect clusters of related events that can occur on a single computer.
+-   Will you keep event data on a local computer until an administrator signs in to review this data? If so, the administrator needs to have physical or remote access to the Event Viewer on each client computer or server. And the remote access and firewall settings on each client computer or server need to be configured to enable this access. You also need to decide how often the administrator can visit each computer, and adjust the size of the audit log so that critical information isn't deleted if the log reaches capacity.
+-   Will you collect event data so that it can be reviewed from a central console? If so, there are many computer management products, such as the Audit Collection Services in Microsoft Operations Manager 2007 and 2012, that you can use to collect and filter event data. Presumably this solution enables a single administrator to review larger amounts of data than using the local storage option. But in some cases, this method can make it more difficult to detect clusters of related events that can occur on a single computer.
 
 In addition, whether you choose to leave audit data on an individual computer or consolidate it at a central location, you need to decide how large the log file should be and what happens when the log reaches its maximum size. To configure these options, open Event Viewer, expand **Windows Logs**, right-click **Security**, and select **Properties**. You can configure the following properties:
 
--   **Overwrite events as needed (oldest events first)**: This is the default option, which is acceptable in most situations.
+-   **Overwrite events as needed (oldest events first)**: This option is the default one, which is acceptable in most situations.
 -   **Archive the log when full, do not overwrite events**: This option can be used when all log data needs to be saved. But the scenario suggests that you may not be reviewing audit data frequently enough.
 -   **Do not overwrite events (Clear logs manually)**. This option stops the collection of audit data when the log file reaches its maximum size. Older data is retained at the expense of the most recent audit events. Use this option only if you don't want to lose any audit data, don't want to create an archive of the event log, and are committed to reviewing data before the maximum log size is reached.
 
@@ -359,7 +358,7 @@ Configuration\\Administrative Templates\\Windows Components\\Event Log Service\\
 -   **Retain old events**: This policy setting controls event log behavior when the log file reaches its maximum size. When this policy setting is enabled and a log file reaches its maximum size, new events aren't written to the log and are lost. When this policy setting is disabled and a log file reaches its maximum size, new events overwrite old events.
 -   **Backup log automatically when full**: This policy setting controls event log behavior when the log file reaches its maximum size. It takes effect only if the **Retain old events** policy setting is enabled. If you enable these policy settings, the event log file is automatically closed and renamed when it's full. A new log file is then started. If you disable or don't configure this policy setting and the **Retain old events** policy setting is enabled, new events are discarded, and the old events are retained.
 
-Many organizations are now required to store archived log files for a number of years. Consult with regulatory compliance officers in your organization to determine whether such guidelines apply to your organization. For more information, see the [IT Compliance Management Guide](/previous-versions/tn-archive/dd206732(v=technet.10)).
+Many organizations are now required to store archived log files for many years. Consult with regulatory compliance officers in your organization to determine whether such guidelines apply to your organization. For more information, see the [IT Compliance Management Guide](/previous-versions/tn-archive/dd206732(v=technet.10)).
 
 ## <a href="" id="bkmk-5"></a>Deploy the security audit policy
 
@@ -373,4 +372,4 @@ However, unless you can run fairly realistic simulations of network usage patter
 -   A limited set of security audit policy settings, such as **Logon/Logoff** and **Account Logon**
 -   A combination of limited OUs and audit policy settings—for example, targeting servers in only the Accounting OU with **Object Access** policy settings
 
-After you successfully complete one or more limited deployments, you should confirm that the audit data that's collected is manageable with your management tools and administrators. After you confirm that the pilot deployment is effective, you need to ensure that you have the necessary tools and staff to expand the deployment to include additional OUs and sets of audit policy settings until production deployment is complete.
+After you successfully complete one or more limited deployments, you should confirm that the audit data that's collected is manageable with your management tools and administrators. After you confirm that the pilot deployment is effective, you need to ensure that you have the necessary tools and staff to expand the deployment to include more OUs and sets of audit policy settings until production deployment is complete.

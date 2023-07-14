@@ -1,151 +1,112 @@
 ---
-title: Manage packaged apps with WDAC  (Windows)
+title: Manage packaged apps with WDAC  
 description: Packaged apps, also known as Universal Windows apps, allow you to control the entire app by using a single Windows Defender Application Control (WDAC) rule.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
-ms.date: 05/29/2020
-ms.technology: windows-sec
+ms.reviewer: jogeurte
+ms.author: vinpa
+manager: aaroncz
+ms.date: 03/01/2023
+ms.technology: itpro-security
+ms.topic: article
 ---
 
-# Manage Packaged Apps with Windows Defender Application Control 
+# Manage Packaged Apps with Windows Defender Application Control
 
 **Applies to:**
 
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [WDAC feature availability](feature-availability.md).
 
-This topic for IT professionals describes concepts and lists procedures to help you manage packaged apps with Windows Defender Application Control (WDAC) as part of your overall application control strategy.
+This article for IT professionals describes concepts and lists procedures to help you manage packaged apps with Windows Defender Application Control (WDAC) as part of your overall application control strategy.
 
-## Understanding Packaged Apps and Packaged App Installers
+## Comparing classic Windows Apps and Packaged Apps
 
-Packaged apps, also known as Universal Windows apps, are based on a model that ensures all the files within an app package share the same identity. With classic Windows apps, each file within the app could have a unique identity. 
-With packaged apps, it is possible to control the entire app by using a single WDAC rule.
- 
-Typically, an app consists of multiple components: the installer that is used to install the app, and one or more exes, dlls, or scripts. With classic Windows apps, these components don't always share common attributes such as the software’s publisher name, product name, and product version. Therefore, WDAC controls each of these components separately through different rule collections, such as exe, dll, script, and Windows Installer rules. In contrast, all the components of a packaged app share the same publisher name, package name, and package version attributes. Therefore, you can control an entire app with a single rule.
+The biggest challenge in adopting application control is the lack of a strong app identity for classic Windows apps, also known as win32 apps. A typical win32 app consists of multiple components, including the installer that is used to install the app, and one or more exes, dlls, or scripts. An app can consist of hundreds or even thousands of individual binaries that work together to deliver the functionality that your users understand as the app. Some of that code may be signed by the software publisher, some may be signed by other companies, and some of it may not be signed at all. Much of the code may be written to disk by a common set of installers, but some may already be installed and some downloaded on demand. Some of the binaries have common resource header metadata, such as product name and product version, but other files won't share that information. So while you want to be able to express rules like "allow app Foo", that isn't something Windows inherently understands for classic Windows apps. Instead, you may have to create many WDAC rules to allow all the files that comprise the app.
 
-### <a href="" id="bkmk-compareclassicmetro"></a>Comparing classic Windows Apps and Packaged Apps
-
-WDAC policies for packaged apps can only be applied to apps installed on computers running at least Windows Server 2012 or Windows 8, but classic Windows apps can be controlled on devices running at least Windows Server 
-2008 R2 or Windows 7. The rules for classic Windows apps and packaged apps can be enforced in tandem. The differences between packaged apps and classic Windows apps that you should consider include:
-
--   **Installing the apps**   All packaged apps can be installed by a standard user, whereas a number of classic Windows apps require administrative privileges to install. In an environment where most of the users are standard users, you might not have numerous exe rules (because classic Windows apps require administrative privileges to install), but you might want to have more explicit policies for packaged apps.
--   **Changing the system state**   Classic Windows apps can be written to change the system state if they are run with administrative privileges. Most packaged apps cannot change the system state because they run with limited privileges. When you design your WDAC policies, it is important to understand whether an app that you are allowing can make system-wide changes.
--   **Acquiring the apps**   Packaged apps can be acquired through the Store, or by loading using Windows PowerShell cmdlets (which requires a special enterprise license). Classic Windows apps can be acquired through traditional means.
-
-WDAC uses different rule collections to control packaged apps and classic Windows apps. You have the choice to control one type, the other type, or both.
+Packaged apps on the other hand, also known as [MSIX](/windows/msix/overview), ensure that all the files that make up an app share the same identity and have a common signature. Therefore, with packaged apps, it's possible to control the entire app with a single WDAC rule.
 
 ## Using WDAC to Manage Packaged Apps
 
-Just as there are differences in managing each rule collection, you need to manage the packaged apps with the following strategy:
+> [!IMPORTANT]
+> When controlling packaged apps, you must choose between signer rules or Package Family Name (PFN) rules. If **any** Package Family Name (PFN) rule is used in your WDAC base policy or one of its supplemental policies, then **all** packaged apps must be controlled exclusively using PFN rules. You can't mix-and-match PFN rules with signature-based rules within a given base policy's scope. This will affect many inbox system apps like the Start menu. You can use wildcards in PFN rules on Windows 11 to simplify the rule creation.
 
-1.  Gather information about which packaged apps are running in your environment. 
+### Creating signature-based rules for Packaged Apps
 
-2.  Create WDAC rules for specific packaged apps based on your policy strategies. For more information, see [Deploy WDAC policy rules and file rules](select-types-of-rules-to-create.md).
+All of the files that make up an MSIX app are signed with a common catalog signature. You can create a signer rule from the MSIX app's installer file (\.msix or \.msixbundle) or from the AppxSignature.p7x file found in the app's installation folder under %ProgramFiles%\\WindowsApps\\ using the [New-CIPolicyRule](/powershell/module/configci/new-cipolicyrule) PowerShell cmdlet. For example:
 
-3.  Continue to update the WDAC policies as new package apps are introduced into your environment. To do this, see [Merge WDAC policies](merge-windows-defender-application-control-policies.md).
+#### Create signer rule from MSIX/MSIXBUNDLE
 
-## Blocking Packaged Apps
-
-You can now use `New-CIPolicyRule -Package $Package -Deny` to block packaged apps.
-
-### Blocking Packaged Apps Which Are Installed on the System
-
-Below are the list of steps you can follow to block one or more packaged apps in the case that the apps are on the system you are using the WDAC PowerShell cmdlets on:
-
-1. Get the app identifier for an installed package
-
-   ```powershell
-   $package = Get-AppxPackage -name *<example_app>*
-   ```
-   Where the name of the app is surrounded by asterisks, for example &ast;windowsstore&ast;
-   
-2. Make a rule by using the New-CIPolicyRule cmdlet
-
-   ```powershell   
-   $Rule = New-CIPolicyRule -Package $package -deny
-   ```
-3. Repeat for other packages you want to block using $rule +=…
-
-4. Make a policy for just the blocks you created for packages
-
-   ```powershell
-   New-CIpolicy -rules $rule -f .\policy.xml -u
-   ```
-
-5. Merge with an existing policy that authorizes the other applications and system components required for your scenario. Here we use the sample Allow Windows policy
-
-   ```powershell
-   Merge-CIPolicy -PolicyPaths .\policy.xml,C:\windows\Schemas\codeintegrity\examplepolicies\DefaultWindows_Audit.xml -o allowWindowsDenyPackages.xml
-   ```
-
-6. Disable audit mode if needed
-
-   ```powershell
-   Set-RuleOption -o 3 -Delete .\allowWindowsDenyPackages.xml
-   ```
-
-7. Enable invalidate EAs on reboot
-
-   ```powershell
-   Set-RuleOption -o 15 .\allowWindowsDenyPackages.xml 
-   ```
-
-8. Compile the policy
-
-   ```powershell
-   ConvertFrom-CIPolicy .\AllowWindowsDenyPackages.xml C:\compiledpolicy.bin
-   ```
-
-9. Install the policy without restarting
-
-   ```powershell
-   Invoke-CimMethod -Namespace root\Microsoft\Windows\CI -ClassName PS_UpdateAndCompareCIPolicy -MethodName Update -Arguments @{FilePath = "C:\compiledpolicy.bin"}
-   ```
-   ### Blocking Packaged Apps Which Are Not Installed on the System
-
-If the app you intend to block is not installed on the system you are using the WDAC PowerShell cmdlets on, then follow the steps below:
-
-1. Create a dummy rule using Steps 1-5 in the Blocking Packaged Apps Which Are Installed on the System section above
-
-2. Navigate to the app you want to block on the Store website
-
-3. Copy the GUID in the URL for the app
-    - Example: the GUID for the Microsoft To-Do app is 9nblggh5r558
-    - `https://www.microsoft.com/p/microsoft-to-do-list-task-reminder/9nblggh5r558?activetab=pivot:overviewtab` 
-4. Use the GUID in the following REST query URL to retrieve the identifiers for the app
-   - Example: for the Microsoft To-Do app, the URL would be `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9nblggh5r558/applockerdata`
-   - The URL will return:
-   
-   ```
-   { "packageFamilyName": "Microsoft.Todos_8wekyb3d8bbwe", 
-    "packageIdentityName": "Microsoft.Todos", 
-    "windowsPhoneLegacyId": "6088f001-776c-462e-984d-25b6399c6607", 
-    "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" 
-   }
-   ```
-
-5. Use the value returned by the query URL for the packageFamilyName to replace the package name generated earlier in the dummy rule from Step 1. 
-
-## Allowing Packaged Apps
-The method for allowing specific packaged apps is similar to the method outlined above for blocking packaged apps, with the only difference being the parameter to the New-CIPolicyRule cmdlet.
-
-```powershell   
-$Rule = New-CIPolicyRule -Package $package -allow
+```powershell
+$FilePath = $env:USERPROFILE+'\Downloads\WDACWizard_2.1.0.1_x64_8wekyb3d8bbwe.MSIX'
+$Rules = New-CIPolicyRule -DriverFilePath $FilePath -Level Publisher
 ```
 
-Since a lot of system apps are packaged apps, it is generally advised that customers rely on the sample policies in `C:\Windows\schemas\CodeIntegrity\ExamplePolicies` to help allow all inbox apps by the Store signature already included in the policies and control apps with deny rules. 
+Then use the [Merge-CIPolicy](/powershell/module/configci/merge-cipolicy) PowerShell cmdlet to merge your new rule into your existing WDAC policy XML.
+
+#### Create signer rule from AppxSignature.p7x
+
+```powershell
+$FilePath = $env:ProgramFiles+'\WindowsApps\Microsoft.WDAC.WDACWizard_2.1.0.1_x64__8wekyb3d8bbwe\AppxSignature.p7x'
+$Rules = New-CIPolicyRule -DriverFilePath $FilePath -Level Publisher
+```
+
+Then use the [Merge-CIPolicy](/powershell/module/configci/merge-cipolicy) PowerShell cmdlet to merge your new rule into your existing WDAC policy XML.
+
+### Creating PackageFamilyName rules for Packaged Apps
+
+#### Create PFN rules from PowerShell
+
+You can create PFN rules directly from packaged apps that are currently installed using the [Get-AppXPackage](/powershell/module/appx/get-appxpackage) and [New-CIPolicyRule](/powershell/module/configci/new-cipolicyrule) PowerShell cmdlets. For example:
+
+```powershell
+# Query for the packaged apps. This example looks for all packages from Microsoft.
+$Packages = Get-AppXPackage -Name Microsoft.*
+foreach ($Package in $Packages)
+{
+   $Rules += New-CIPolicyRule -Package $Package
+}
+```
+
+Then use the [Merge-CIPolicy](/powershell/module/configci/merge-cipolicy) PowerShell cmdlet to merge your new rule(s) into your existing WDAC policy XML.
+
+#### Create PFN rules using the WDAC Wizard
+
+##### Create PFN rule from an installed MSIX app
+
+Use the following steps to create a WDAC PFN rule for an app that is installed on the system:
+
+1. From the **Policy Signing Rules** page of the [WDAC Wizard](https://aka.ms/wdacwizard), select **Add Custom Rule**.
+2. Check **Usermode Rule** as the Rule Scope, if not checked.
+3. Select either **Allow** or **Deny** for your Rule Action.
+4. Select **Packaged App** for your Rule Type.
+5. In the **Package Name** field, enter a string value to search. You can use `?` or `*` wildcards in the search string. Then select **Search**.
+6. In the results box, check one or more apps for which you want to create rules.
+7. Select **Create Rule**.
+8. Create any other rules desired, then complete the Wizard.
+
+![Create PFN rule from WDAC Wizard](images/wdac-wizard-custom-pfn-rule.png)
+
+##### Create a PFN rule using a custom string
+
+Use the following steps to create a PFN rule with a custom string value:
+
+1. Repeat steps 1-4 in the previous example.
+2. Check the box labeled **Use Custom Package Family**. The *Search* button label changes to *Create*.
+3. In the **Package Name** field, enter a string value for your PFN rule. You can use `?` or `*` wildcards if targeting Windows 11 devices. Then select **Create**
+4. In the results box, check one or more apps for which you want to create rules.
+5. Select **Create Rule**.
+6. Create any other rules desired, then complete the Wizard.
+
+![Create PFN rule with custom string from WDAC Wizard](images/wdac-wizard-custom-manual-pfn-rule.png)

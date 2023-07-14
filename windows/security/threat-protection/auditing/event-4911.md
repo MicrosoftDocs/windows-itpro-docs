@@ -1,17 +1,18 @@
 ---
-title: 4911(S) Resource attributes of the object were changed. (Windows 10)
+title: 4911(S) Resource attributes of the object were changed. 
 description: Describes security event 4911(S) Resource attributes of the object were changed.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4911(S): Resource attributes of the object were changed.
@@ -23,7 +24,7 @@ ms.technology: windows-sec
 
 ***Event Description:***
 
-This event generates when [resource attributes](https://blogs.technet.com/b/canitpro/archive/2013/05/07/step-by-step-protecting-your-information-with-dynamic-access-control.aspx) of the file system object were changed.
+This event generates when [resource attributes](/windows-server/identity/solution-guides/dynamic-access-control--scenario-overview) of the file system object were changed.
 
 Resource attributes for file or folder can be changed, for example, using Windows File Explorer (object’s Properties-&gt;Classification tab).
 

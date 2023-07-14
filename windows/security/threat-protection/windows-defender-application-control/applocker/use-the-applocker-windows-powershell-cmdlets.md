@@ -1,30 +1,18 @@
 ---
-title: Use the AppLocker Windows PowerShell cmdlets (Windows)
+title: Use the AppLocker Windows PowerShell cmdlets
 description: This topic for IT professionals describes how each AppLocker Windows PowerShell cmdlet can help you administer your AppLocker application control policies.
-ms.assetid: 374e029c-5c0a-44ab-a57a-2a9dd17dc57d
 ms.reviewer: 
-ms.author: macapara
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.author: vinpa
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: mjcaparas
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+author: vinaypamnani-msft
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Use the AppLocker Windows PowerShell cmdlets
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -36,14 +24,14 @@ This topic for IT professionals describes how each AppLocker Windows PowerShell 
 The five AppLocker cmdlets are designed to streamline the administration of an AppLocker policy. They can be used to help create, test, maintain, and troubleshoot an AppLocker policy. The cmdlets are intended to be used in conjunction with the AppLocker user interface that is accessed through the
 Microsoft Management Console (MMC) snap-in extension to the Local Security Policy snap-in and Group Policy Management Console.
 
-To edit or update a Group Policy Object (GPO) by using the AppLocker cmdlets, you must have Edit Setting permission. By default, members of the **Domain Admins** group, the **Enterprise Admins** group, and the **Group Policy Creator Owners** group have this permission. To perform tasks by using the
+To edit or update a Group Policy Object (GPO) by using the AppLocker cmdlets, you must have Edit Setting permission. By default, members of the **Domain Admins** group, the **Enterprise Admins** group, and the **Group Policy Creator Owners** group have this permission. To perform tasks by using the
 Local Security policy snap-in, you must be a member of the local **Administrators** group, or equivalent, on the computer.
 
 ### Retrieve application information
 
 The [Get-AppLockerFileInformation](/powershell/module/applocker/get-applockerfileinformation) cmdlet retrieves the AppLocker file information from a list of files or from an event log. File information that is retrieved can include publisher information, file hash information, and file path information.
 
-File information from an event log may not contain all of these fields. Files that are not signed do not have any publisher information.
+File information from an event log may not contain all of these fields. Files that aren't signed don't have any publisher information.
 
 ### Set AppLocker policy
 
@@ -62,6 +50,6 @@ list of file information.
 
 The [Test-AppLockerPolicy](/powershell/module/applocker/test-applockerpolicy) cmdlet uses the specified AppLocker policy to test whether a specified list of files are allowed to run or not on the local device for a specific user.
 
-## Additional resources
+## Other resources
 
 -   For steps to perform other AppLocker policy tasks, see [Administer AppLocker](administer-applocker.md).

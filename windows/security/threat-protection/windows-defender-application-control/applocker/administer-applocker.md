@@ -1,30 +1,18 @@
 ---
-title: Administer AppLocker (Windows)
+title: Administer AppLocker
 description: This topic for IT professionals provides links to specific procedures to use when administering AppLocker policies.
-ms.assetid: 511a3b6a-175f-4d6d-a6e0-c1780c02e818
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.author: vinpa
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+author: vinaypamnani-msft
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 02/28/2019
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Administer AppLocker
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -63,7 +51,7 @@ You can administer AppLocker policies by using the Group Policy Management Conso
 
 ### Administer AppLocker using Group Policy
 
-You must have Edit Setting permission to edit a GPO. By default, members of the **Domain Admins** group, the **Enterprise Admins** group, and the **Group Policy Creator Owners** group have this permission. Also, the Group Policy Management feature must be installed on the computer.
+You must have Edit Setting permission to edit a GPO. By default, members of the **Domain Admins** group, the **Enterprise Admins** group, and the **Group Policy Creator Owners** group have this permission. Also, the Group Policy Management feature must be installed on the computer.
 
 1.  Open the Group Policy Management Console (GPMC).
 2.  Locate the GPO that contains the AppLocker policy to modify, right-click the GPO, and then click **Edit**.

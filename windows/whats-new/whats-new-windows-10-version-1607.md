@@ -1,16 +1,15 @@
 ---
 title: What's new in Windows 10, version 1607 (Windows 10)
-description: What's new in Windows 10 for Windows 10 (version 1607).
-keywords: ["What's new in Windows 10", "Windows 10", "anniversary update"]
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.localizationpriority: high
-ms.reviewer: 
-author: greg-lindsay
-manager: laurawi
-ms.author: greglin
+description: What's new in Windows 10 for Windows 10 (version 1607)?
+ms.prod: windows-client
+ms.localizationpriority: medium
+author: mestew
+manager: aaroncz
+ms.author: mstewart
 ms.topic: article
+ROBOTS: NOINDEX
+ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
 ---
 
 # What's new in Windows 10, version 1607 for IT Pros
@@ -24,7 +23,7 @@ Below is a list of some of the new and updated features in Windows 10, version 1
 
 ### Windows Imaging and Configuration Designer (ICD)
 
-In previous versions of the Windows 10 Assessment and Deployment Kit (ADK), you had to install additional features for Windows ICD to run. Starting in version 1607, you can install just the configuration designer component independent of the rest of the imaging components. [Install the ADK.](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
+In previous versions of the Windows 10 Assessment and Deployment Kit (ADK), you had to install more features for Windows ICD to run. Starting in version 1607, you can install just the configuration designer component independent of the rest of the imaging components. [Install the ADK.](https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit)
 
 Windows ICD now includes simplified workflows for creating provisioning packages:
 
@@ -36,9 +35,9 @@ Windows ICD now includes simplified workflows for creating provisioning packages
 
 ### Windows Upgrade Readiness
 
-Microsoft developed Upgrade Readiness in response to demand from enterprise customers looking for additional direction and details about upgrading to Windows 10. Upgrade Readiness was built taking into account multiple channels of customer feedback, testing, and Microsoft’s experience upgrading millions of devices to Windows 10. 
+Microsoft developed Upgrade Readiness in response to demand from enterprise customers looking for more direction and details about upgrading to Windows 10. Upgrade Readiness was built taking into account multiple channels of customer feedback, testing, and Microsoft’s experience upgrading millions of devices to Windows 10. 
 
-With Windows diagnostic data enabled, Upgrade Readiness collects system, application, and driver data for analysis. We then identify compatibility issues that can block an upgrade and suggest fixes when they are known to Microsoft.
+With Windows diagnostic data enabled, Upgrade Readiness collects system, application, and driver data for analysis. We then identify compatibility issues that can block an upgrade and suggest fixes when they're known to Microsoft.
 
 Use Upgrade Readiness to get:
 
@@ -71,9 +70,9 @@ Isolated User Mode is now included with Hyper-V so you don't have to install it 
 
 ### Windows Hello for Business
 
-When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multi-factor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name in Windows 10, version 1607. Customers who have already deployed Microsoft Passport for Work will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics.
+When Windows 10 was first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multi-factor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name in Windows 10, version 1607. Customers who have already deployed Microsoft Passport for Work won't experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics.
 
-Additional changes for Windows Hello in Windows 10, version 1607:
+Other changes for Windows Hello in Windows 10, version 1607:
 
 - Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys.
 - Group Policy settings for managing Windows Hello for Business are now available for both **User Configuration** and **Computer Configuration**.
@@ -84,7 +83,7 @@ Additional changes for Windows Hello in Windows 10, version 1607:
 ### VPN
 
 - The VPN client can integrate with the Conditional Access Framework, a cloud-based policy engine built into Azure Active Directory, to provide a device compliance option for remote clients.
-- The VPN client can integrate with Windows Information Protection (WIP) policy to provide additional security. [Learn more about Windows Information Protection](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip), previously known as Enterprise Data Protection.
+- The VPN client can integrate with Windows Information Protection (WIP) policy to provide extra security. [Learn more about Windows Information Protection](/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip), previously known as Enterprise Data Protection.
 - New VPNv2 configuration service provider (CSP) adds configuration settings. For details, see [What's new in MDM enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew_1607)
 - Microsoft Intune: *VPN* profile template includes support for native VPN plug-ins. For more information, see [Create VPN profiles to connect to VPN servers in Intune](/mem/intune/configuration/vpn-settings-configure).
 
@@ -102,12 +101,12 @@ Windows Information Protection (WIP) helps to protect against this potential dat
 ### Windows Defender
 Several new features and management options have been added to Windows Defender in Windows 10, version 1607.
 
-- [Windows Defender Offline in Windows 10](/windows/threat-protection/microsoft-defender-antivirus/windows-defender-offline) can be run directly from within Windows, without having to create bootable media.
-- [Use PowerShell cmdlets for Windows Defender](/windows/threat-protection/microsoft-defender-antivirus/use-powershell-cmdlets-microsoft-defender-antivirus) to configure options and run scans.
-- [Enable the Block at First Sight feature in Windows 10](/windows/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus) to leverage the Windows Defender cloud for near-instant protection against new malware.
-- [Configure enhanced notifications for Windows Defender in Windows 10](/windows/threat-protection/microsoft-defender-antivirus/configure-notifications-microsoft-defender-antivirus) to see more information about threat detections and removal.
-- [Run a Windows Defender scan from the command line](/windows/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus).
-- [Detect and block Potentially Unwanted Applications with Windows Defender](/windows/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) during download and install times.
+- [Windows Defender Offline in Windows 10](/microsoft-365/security/defender-endpoint/microsoft-defender-offline) can be run directly from within Windows, without having to create bootable media.
+- [Use PowerShell cmdlets for Windows Defender](/microsoft-365/security/defender-endpoint/use-powershell-cmdlets-microsoft-defender-antivirus) to configure options and run scans.
+- [Enable the Block at First Sight feature in Windows 10](/microsoft-365/security/defender-endpoint/configure-block-at-first-sight-microsoft-defender-antivirus) to use the Windows Defender cloud for near-instant protection against new malware.
+- [Configure enhanced notifications for Windows Defender in Windows 10](/microsoft-365/security/defender-endpoint/configure-notifications-microsoft-defender-antivirus) to see more information about threat detections and removal.
+- [Run a Windows Defender scan from the command line](/microsoft-365/security/defender-endpoint/command-line-arguments-microsoft-defender-antivirus).
+- [Detect and block Potentially Unwanted Applications with Windows Defender](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus) during download and install times.
 
 ### Microsoft Defender for Endpoint
 
@@ -138,17 +137,17 @@ Windows 10, Version 1607, introduces shared PC mode, which optimizes Windows 10 
 
 Application Virtualization (App-V) enables organizations to deliver Win32 applications to users as virtual applications. Virtual applications are installed on centrally managed servers and delivered to users as a service – in real time and on as as-needed basis. Users launch virtual applications from familiar access points, including the Microsoft Store, and interact with them as if they were installed locally.
 
-With the release of Windows 10, version 1607, App-V is included with the Windows 10 for Enterprise edition. If you are new to Windows 10 and App-V or if you're upgrading from a previous version of App-V, you’ll need to download, activate, and install server- and client-side components to start delivering virtual applications to users. 
+With the release of Windows 10, version 1607, App-V is included with the Windows 10 for Enterprise edition. If you're new to Windows 10 and App-V or if you're upgrading from a previous version of App-V, you’ll need to download, activate, and install server- and client-side components to start delivering virtual applications to users. 
 
 [Learn how to deliver virtual applications with App-V.](/windows/application-management/app-v/appv-getting-started)
 
 ### User Experience Virtualization (UE-V) for Windows 10
 
-Many users customize their settings for Windows and for specific applications. Customizable Windows settings include Microsoft Store appearance, language, background picture, font size, and accent colors. Customizable application settings include language, appearance, behavior, and user interface options. 
+Many users customize their settings for Windows and for specific applications. Customizable Windows settings include Microsoft Store appearance, language, background picture, font size, and accent colors. Customizable application settings include language, appearance, behavior, and user interface options.
 
-With User Experience Virtualization (UE-V), you can capture user-customized Windows and application settings and store them on a centrally managed network file share. When users log on, their personalized settings are applied to their work session, regardless of which device or virtual desktop infrastructure (VDI) sessions they log on to.
+With User Experience Virtualization (UE-V), you can capture user-customized Windows and application settings and store them on a centrally managed network file share. When users sign in, their personalized settings are applied to their work session, regardless of which device or virtual desktop infrastructure (VDI) sessions they sign in to.
 
-With the release of Windows 10, version 1607, UE-V is included with the Windows 10 for Enterprise edition. If you are new to Windows 10 and UE-V or upgrading from a previous version of UE-V, you’ll need to download, activate, and install server- and client-side components to start synchronizing user-customized settings across devices. 
+With the release of Windows 10, version 1607, UE-V is included with the Windows 10 for Enterprise edition. If you're new to Windows 10 and UE-V or upgrading from a previous version of UE-V, you’ll need to download, activate, and install server- and client-side components to start synchronizing user-customized settings across devices. 
 
 [Learn how to synchronize user-customized settings with UE-V.](/windows/configuration/ue-v/uev-for-windows)
 

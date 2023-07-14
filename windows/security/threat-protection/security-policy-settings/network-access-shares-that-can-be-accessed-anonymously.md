@@ -1,26 +1,26 @@
 ---
-title: Network access Shares that can be accessed anonymously (Windows 10)
+title: Network access Shares that can be accessed anonymously 
 description: Learn about best practices, security considerations, and more for the security policy setting, Network access Shares that can be accessed anonymously.
 ms.assetid: f3e4b919-8279-4972-b415-5f815e2f0a1a
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network access: Shares that can be accessed anonymously
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Network access: Shares that can be accessed anonymously** security policy setting.
@@ -36,7 +36,7 @@ This policy setting determines which shared folders can be accessed by anonymous
 
 ### Best practices
 
--   Set this policy to a null value. There should be little impact because this is the default value. All users will have to be authenticated before they can access shared resources on the server.
+-   Set this policy to a null value. There should be little impact because this null value is the default one. All users will have to be authenticated before they can access shared resources on the server.
 
 ### Location
 
@@ -61,7 +61,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ## Security considerations
 
@@ -77,7 +77,7 @@ Configure the **Network access: Shares that can be accessed anonymously** settin
 
 ### Potential impact
 
-There should be little impact because this is the default configuration. Only authenticated users have access to shared resources on the server.
+There should be little impact because this state is the default configuration. Only authenticated users have access to shared resources on the server.
 
 ## Related topics
 

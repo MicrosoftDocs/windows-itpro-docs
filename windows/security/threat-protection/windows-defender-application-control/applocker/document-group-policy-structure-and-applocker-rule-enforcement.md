@@ -1,30 +1,18 @@
 ---
-title: Document Group Policy structure & AppLocker rule enforcement (Windows)
+title: Document Group Policy structure & AppLocker rule enforcement
 description: This planning topic describes what you need to investigate, determine, and record in your application control policies plan when you use AppLocker.
-ms.assetid: 389ffa8e-11fc-49ff-b0b1-89553e6fb6e5
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.author: vinpa
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+author: vinaypamnani-msft
+manager: aaroncz
 ms.topic: conceptual
-ms.pagetype: security
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Document the Group Policy structure and AppLocker rule enforcement
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -40,7 +28,7 @@ To complete this AppLocker planning document, you should first complete the foll
 3.  [Select the types of rules to create](select-types-of-rules-to-create.md)
 4.  [Determine the Group Policy structure and rule enforcement](determine-group-policy-structure-and-rule-enforcement.md)
 
-After you determine how to structure your Group Policy Objects (GPOs) so that you can apply AppLocker policies, you should record your findings. You can use the following table to determine how many GPOs to create (or edit) and which objects they are linked to. If you decided to create custom rules to allow system files to run, note the high-level rule configuration in the **Use default rule or define new rule condition** column.
+After you determine how to structure your Group Policy Objects (GPOs) so that you can apply AppLocker policies, you should record your findings. You can use the following table to determine how many GPOs to create (or edit) and which objects they're linked to. If you decided to create custom rules to allow system files to run, note the high-level rule configuration in the **Use default rule or define new rule condition** column.
 
 The following table includes the sample data that was collected when you determined your enforcement settings and the GPO structure for your AppLocker policies.
 
@@ -49,14 +37,11 @@ The following table includes the sample data that was collected when you determi
 |Bank Tellers|Teller-East and Teller-West|Yes|Teller Software|C:\Program Files\Woodgrove\Teller.exe|File is signed; create a publisher condition|Allow|Tellers-AppLockerTellerRules|
 ||||Windows files|C:\Windows|Create a path exception to the default rule to exclude \Windows\Temp|Allow||
 |Human Resources|HR-All|Yes|Check Payout|C:\Program Files\Woodgrove\HR\Checkcut.exe|File is signed; create a publisher condition|Allow|HR-AppLockerHRRules|
-||||Time Sheet Organizer|C:\Program Files\Woodgrove\HR\Timesheet.exe|File is not signed; create a file hash condition|Allow||
-||||Internet Explorer 7|C:\Program Files\Internet Explorer</p>|File is signed; create a publisher condition|Deny||
+||||Time Sheet Organizer|C:\Program Files\Woodgrove\HR\Timesheet.exe|File isn't signed; create a file hash condition|Allow||
+||||Internet Explorer 7|C:\Program Files\Internet Explorer</p>|File is signed; create a publisher condition|Deny||
 ||||Windows files|C:\Windows|Use a default rule for the Windows path|Allow||
 
 ## Next steps
 
-After you have determined the Group Policy structure and rule enforcement strategy for each business group's apps, the following tasks remain:
+After you've determined the Group Policy structure and rule enforcement strategy for each business group's apps, the following tasks remain:
 -   [Plan for AppLocker policy management](plan-for-applocker-policy-management.md)
-
- 
- 

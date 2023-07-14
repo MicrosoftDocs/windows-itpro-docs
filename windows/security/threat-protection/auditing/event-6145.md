@@ -1,17 +1,18 @@
 ---
-title: 6145(F) One or more errors occurred while processing security policy in the group policy objects. (Windows 10)
+title: 6145(F) One or more errors occurred while processing security policy in the group policy objects. 
 description: Describes security event 6145(F) One or more errors occurred while processing security policy in the group policy objects.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 6145(F): One or more errors occurred while processing security policy in the group policy objects.
@@ -25,7 +26,7 @@ ms.technology: windows-sec
 
 This event generates every time settings from the “Security Settings” section in the group policy object are applied to a computer with one or more errors. This event generates on the target computer itself.
 
-This event generates, for example, if the [SID](/windows/win32/secauthz/security-identifiers) of a security principal which was included in one of the Group Policy settings cannot be resolved or translated to the real account name.
+This event generates, for example, if the [SID](/windows/win32/secauthz/security-identifiers) of a security principal which was included in one of the Group Policy settings can't be resolved or translated to the real account name.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -66,7 +67,7 @@ This event generates, for example, if the [SID](/windows/win32/secauthz/security
 
 ***Field Descriptions:***
 
-**Error Code** \[Type = UInt32\]: specific error code which shows the error which happened during Group Policy processing. You can find the meaning of specific error code here: <https://msdn.microsoft.com/library/windows/desktop/ms681381(v=vs.85).aspx>. For example, error code 1332 means that “no mapping between account names and security IDs was done”.
+**Error Code** \[Type = UInt32\]: specific error code that shows the error that happened during Group Policy processing. You can find the meaning of specific error code here: <https://msdn.microsoft.com/library/windows/desktop/ms681381(v=vs.85).aspx>. For example, error code 1332 means that “no mapping between account names and security IDs was done”.
 
 **GPO List** \[Type = UnicodeString\]: the list of Group Policy Objects that include “Security Settings” policies, and that were applied with errors to the computer. The format of the list item is: “GROUP\_POLICY\_GUID GROUP\_POLICY\_NAME”.
 
@@ -80,7 +81,7 @@ You can find specific GROUP\_POLICY\_GUID using **Get-GPO** PowerShell cmdlet wi
 
 For 6145(F): One or more errors occurred while processing security policy in the group policy objects.
 
--   This event indicates that Group Policy Objects which were applied to the computer or device had some errors during processing. If you see this event, we recommend checking settings in the GPOs from **GPO List** and resolving the cause of the errors.
+-   This event indicates that Group Policy Objects that were applied to the computer or device had some errors during processing. If you see this event, we recommend checking settings in the GPOs from **GPO List** and resolving the cause of the errors.
 
 -   If you have a pre-defined list of Group Policy Objects that contain Security Settings and that must be applied to specific computers, check this event to see if errors occurred when the Security Settings were applied. If so, you can review the error codes and investigate the cause of the failure.
 

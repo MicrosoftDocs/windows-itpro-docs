@@ -1,17 +1,16 @@
 ---
 title: Getting Started with App-V (Windows 10/11)
 description: Get started with Microsoft Application Virtualization (App-V) for Windows 10/11. App-V for Windows client devices delivers Win32 applications to users as virtual applications.
-author: greg-lindsay
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.prod: w10
+author: aczechowski
+ms.prod: windows-client
 ms.date: 04/18/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
+
 # Getting started with App-V for Windows client
 
 [!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
@@ -38,7 +37,7 @@ To start using App-V to deliver virtual applications to users, you’ll need to 
 
 | Component  | What it does     | Where to find it     |
 |------------|--|------|
-| App-V server components | App-V offers five server components that work together to allow you to host and publish virtual applications, generate usage reports, and manage your App-V environment. For more details, see [Deploying the App-V Server](appv-deploying-the-appv-server.md).<br><br>If you're already using App-V 5.x, you don't need to redeploy the App-V server components, as they haven't changed since App-V 5.0's release. | The App-V server components are included in the Microsoft Desktop Optimization Pack (MDOP) 2015 ISO package that can be downloaded from the following locations:<br><br> If you have a Microsoft Developer Network (MSDN) subscription, use the [MSDN (Microsoft Developer Network) subscriptions site](https://msdn.microsoft.com/subscriptions/downloads/default.aspx#FileId=65215) to download the MDOP ISO package.<br><br> If you're using [Windows client for Enterprise or Education](https://www.microsoft.com/WindowsForBusiness/windows-product-home), download it from the [Volume Licensing Service Center](https://www.microsoft.com/licensing/default.aspx).<br><br>See [Deploying the App-V Server](appv-deploying-the-appv-server.md) for more information about installing and using the server components.|
+| App-V server components | App-V offers five server components that work together to allow you to host and publish virtual applications, generate usage reports, and manage your App-V environment. For more information, see [Deploying the App-V Server](appv-deploying-the-appv-server.md).<br><br>If you're already using App-V 5.x, you don't need to redeploy the App-V server components, as they haven't changed since App-V 5.0's release. | The App-V server components are included in the Microsoft Desktop Optimization Pack (MDOP) 2015 ISO package that can be downloaded from the following locations:<br><br> If you have a Microsoft Developer Network (MSDN) subscription, use the [MSDN (Microsoft Developer Network) subscriptions site](https://msdn.microsoft.com/subscriptions/downloads/default.aspx#FileId=65215) to download the MDOP ISO package.<br><br> If you're using [Windows client for Enterprise or Education](https://www.microsoft.com/WindowsForBusiness/windows-product-home), download it from the [Volume Licensing Service Center](https://www.microsoft.com/licensing/default.aspx).<br><br>For more information about installing and using the server components, see [Deploying the App-V Server](appv-deploying-the-appv-server.md).|
 | App-V client and App-V Remote Desktop Services (RDS) client | The App-V client is the component that runs virtualized applications on user devices, allowing users to interact with icons and file names to start virtualized applications. | Starting with Windows 10 version 1607, the App-V client is automatically installed. <br><br>To learn how to enable the client, see [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md).           |
 | App-V sequencer      | Use the App-V sequencer to convert Win32 applications into virtual packages for deployment to user devices. Devices must run the App-V client to allow users to interact with virtual applications.    | Installed with the [Windows Assessment and Deployment kit (ADK) for Windows client](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).  |
 
@@ -48,7 +47,7 @@ If you're new to App-V, it's a good idea to read the documentation thoroughly. B
 
 ## Getting started with App-V
 
-[What's new in App-V](appv-about-appv.md) provides a high-level overview of App-V and how it can be used in your organization.
+[What's new in App-V](appv-about-appv.md) provides a high-level overview of App-V and how it can be used in your organization?
 
 [Evaluating App-V](appv-evaluating-appv.md) provides information about how you can best evaluate App-V for use in your organization.
 

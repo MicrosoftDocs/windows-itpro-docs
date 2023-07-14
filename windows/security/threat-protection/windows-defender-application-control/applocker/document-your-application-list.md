@@ -1,30 +1,18 @@
 ---
-title: Document your app list (Windows)
+title: Document your app list
 description: This planning topic describes the app information that you should document when you create a list of apps for AppLocker policies.
-ms.assetid: b155284b-f75d-4405-aecf-b74221622dc0
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.author: vinpa
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+author: vinaypamnani-msft
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Document your app list
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -49,7 +37,7 @@ The following table provides an example of how to list applications for each bus
 ||||Windows files|C:\Windows|
 |Human Resources|HR-All|Yes|Check Payout|C:\Program Files\Woodgrove\HR\Checkcut.exe|
 ||||Time Sheet Organizer|C:\Program Files\Woodgrove\HR\Timesheet.exe|
-||||Internet Explorer 7|C:\Program Files\Internet Explorer</p>|
+||||Internet Explorer 7|C:\Program Files\Internet Explorer</p>|
 ||||Windows files|C:\Windows|
 
 >[!NOTE]

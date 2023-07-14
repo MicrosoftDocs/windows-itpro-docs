@@ -1,11 +1,11 @@
 ---
 title: EnrollmentStatusTracking DDF
 description: View the OMA DM DDF for the EnrollmentStatusTracking configuration service provider. DDF files are used only with OMA DM provisioning XML.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+ms.author: vinpa
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
+author: vinaypamnani-msft
 ms.date: 05/17/2019
 ---
 
@@ -14,7 +14,7 @@ ms.date: 05/17/2019
 
 This topic shows the OMA DM device description framework (DDF) for the **EnrollmentStatusTracking** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 ### EnrollmentStatusTracking CSP
 

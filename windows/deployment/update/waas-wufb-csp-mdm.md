@@ -1,14 +1,14 @@
 ---
 title: Configure Windows Update for Business by using CSPs and MDM
-description: Walk-through demonstration of how to configure Windows Update for Business settings using Configuration Service Providers and MDM.
-ms.prod: w10
-ms.mktglfcycl: manage
-author: jaimeo
+description: Walk through demonstration of how to configure Windows Update for Business settings using Configuration Service Providers and MDM.
+ms.prod: windows-client
+author: mestew
 ms.localizationpriority: medium
-ms.author: jaimeo
-ms.reviewer: 
-manager: laurawi
+ms.author: mstewart
+manager: aaroncz
 ms.topic: article
+ms.technology: itpro-updates
+ms.date: 02/28/2023
 ---
 
 # Walkthrough: Use CSPs and MDMs to configure Windows Update for Business
@@ -16,8 +16,8 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10
--   Windows 11
+- Windows 10
+- Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
@@ -42,9 +42,9 @@ You can control when updates are applied, for example by deferring when an updat
 
 Both feature and quality updates are automatically offered to devices that are connected to Windows Update using Windows Update for Business policies. However, you can choose whether you want the devices to additionally receive other Microsoft Updates or drivers that are applicable to that device.
 
-To enable Microsoft Updates use [Update/AllwMUUpdateService](/windows/client-management/mdm/policy-csp-update#update-allowmuupdateservice).
+To enable Microsoft Updates, use [Update/AllwMUUpdateService](/windows/client-management/mdm/policy-csp-update#update-allowmuupdateservice).
 
-Drivers are automatically enabled because they are beneficial to device systems. We recommend that you allow the driver policy to allow drivers to updated on devices (the default), but you can turn this setting off if you prefer to manage drivers manually. If you want to disable driver updates for some reason, use Update/[ExcludeWUDriversInQualityUpdate](/windows/client-management/mdm/policy-csp-update#update-excludewudriversinqualityupdate).
+Drivers are automatically enabled because they're beneficial to device systems. We recommend that you allow the driver policy to allow drivers to be updated on devices (the default), but you can turn off this setting if you prefer to manage drivers manually. If you want to disable driver updates for some reason, use Update/[ExcludeWUDriversInQualityUpdate](/windows/client-management/mdm/policy-csp-update#update-excludewudriversinqualityupdate).
 
  We also recommend that you allow Microsoft product updates as discussed previously.
 
@@ -52,17 +52,17 @@ Drivers are automatically enabled because they are beneficial to device systems.
 
 #### I want to receive pre-release versions of the next feature update
 
-1. Ensure that you are enrolled in the Windows Insider Program for Business. This is a completely free program available to commercial customers to aid them in their validation of feature updates before they are released. Joining the program enables you to receive updates prior to their release as well as receive emails and content related to what is coming in the next updates. 
+1. Ensure that you're enrolled in the Windows Insider Program for Business. This is a free program available to commercial customers to aid them in their validation of feature updates before they're released. Joining the program enables you to receive updates prior to their release as well as receive emails and content related to what is coming in the next updates. 
 
 1. For any of test devices you want to install pre-release builds, use [Update/ManagePreviewBuilds](/windows/client-management/mdm/policy-csp-update#update-managepreviewbuilds). Set this to **Enable preview builds**.
 
 1. Use [Update/BranchReadinessLevel](/windows/client-management/mdm/policy-csp-update#update-branchreadinesslevel) and select one of the preview Builds. Windows Insider Program Slow is the recommended channel for commercial customers who are using pre-release builds for validation.
 
-1. Additionally, you can defer pre-release feature updates the same way as released updates, by setting a deferral period up to 14 days by using [Update/DeferFeatureUpdatesPeriodInDays](/windows/client-management/mdm/policy-csp-update#update-deferfeatureupdatesperiodindays). If you are testing with Windows Insider Program Slow builds, we recommend that you receive the preview updates to your IT department on day 0, when the update is released, and then have a 7-10 day deferral before rolling out to your group of testers. This ensures that if a problem is discovered, you can pause the rollout of the preview update before it reaches your tests.
+1. Additionally, you can defer pre-release feature updates the same way as released updates, by setting a deferral period up to 14 days by using [Update/DeferFeatureUpdatesPeriodInDays](/windows/client-management/mdm/policy-csp-update#update-deferfeatureupdatesperiodindays). If you're testing with Windows Insider Program Slow builds, we recommend that you receive the preview updates to your IT department on day 0, when the update is released, and then have a 7-10 day deferral before rolling out to your group of testers. This ensures that if a problem is discovered, you can pause the rollout of the preview update before it reaches your tests.
 
 #### I want to manage which released feature update my devices receive
 
-A Windows Update for Business administrator can defer or pause updates. You can defer feature updates for up to 365 days and defer quality updates for up to 30 days. Deferring simply means that you will not receive the update until it has been released for at least the number of deferral days you specified (offer date = release date + deferral date). You can pause feature or quality updates for up to 35 days from a given start date that you specify.
+A Windows Update for Business administrator can defer or pause updates. You can defer feature updates for up to 365 days and defer quality updates for up to 30 days. Deferring simply means that you won't receive the update until it has been released for at least the number of deferral days you specified (offer date = release date + deferral date). You can pause feature or quality updates for up to 35 days from a given start date that you specify.
 
 - To defer a feature update: [Update/DeferFeatureUpdatesPeriodInDays](/windows/client-management/mdm/policy-csp-update#update-deferfeatureupdatesperiodindays)
 - To pause a feature update: [Update/PauseFeatureUpdatesStartTime](/windows/client-management/mdm/policy-csp-update#update-pausefeatureupdatesstarttime)
@@ -99,7 +99,7 @@ At this point, the IT administrator can set a policy to pause the update. In thi
 
 ![illustration of rings with pause quality update check box selected.](images/waas-wufb-pause.png)
 
-Now all devices are paused from updating for 35 days. When the pause is removed, they will be offered the *next* quality update, which ideally will not have the same issue. If there is still an issue, the IT admin can pause updates again.
+Now all devices are paused from updating for 35 days. When the pause is removed, they'll be offered the *next* quality update, which ideally won't have the same issue. If there's still an issue, the IT admin can pause updates again.
 
 
 
@@ -156,7 +156,7 @@ When **Specify deadlines for automatic updates and restarts** is set (For Window
 
      ![The notification users get for an impending restart prior to deadline.](images/wufb-update-deadline-warning.png)
 
-   - If the user scheduled a restart, or if an auto restart is scheduled, 15 minutes before the scheduled time the user is receives this notification that the restart is about to occur:
+   - If the user scheduled a restart, or if an auto restart is scheduled, 15 minutes before the scheduled time the user receives this notification that the restart is about to occur:
 
      ![The notification users get for an impending restart 15 minutes prior to restart.](images/wufb-restart-imminent-warning.png)
 
@@ -174,7 +174,7 @@ When **Specify deadlines for automatic updates and restarts** is set (For Window
 
 There are additional settings that affect the notifications.
 
-We recommend that you use the default notifications as they aim to provide the best user experience while adjusting for the compliance policies that you have set. If you do have further needs that are not met by the default notification settings, you can use the [Update/UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel) policy with these values:
+We recommend that you use the default notifications as they aim to provide the best user experience while adjusting for the compliance policies that you have set. If you do have further needs that aren't met by the default notification settings, you can use the [Update/UpdateNotificationLevel](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel) policy with these values:
 
 **0** (default) – Use the default Windows Update notifications<br/>
 **1** – Turn off all notifications, excluding restart warnings<br/>
@@ -194,4 +194,16 @@ When you disable this setting, users will see **Some settings are managed by you
 
 If you use Windows Server Update Server (WSUS), you can prevent users from scanning Windows Update. To do this, use [Update/SetDisableUXWUAccess](/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess).
 
+#### I want to enable features introduced via servicing that are off by default
+<!--6544872-->
+(*Starting in Windows 11, version 22H2 or later*)
 
+New features and enhancements are introduced through the monthly cumulative update to provide continuous innovation for Windows 11. To give organizations time to plan and prepare, some of these new features are temporarily turned off by default. Features that are turned off by default are listed in the KB article for the monthly cumulative update. Typically, a feature is selected to be off by default because it either impacts the user experience or IT administrators significantly.
+
+The features that are turned off by default from servicing updates will be enabled in the next annual feature update. Organizations can choose to deploy feature updates at their own pace, to delay these features until they're ready for them.
+
+ You can enable these features by using [AllowTemporaryEnterpriseFeatureControl](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowtemporaryenterprisefeaturecontrol). The following options are available:
+
+- **0** (default): Allowed. All features in the latest monthly cumulative update are enabled.
+  - When the policy is set to **0**, all features that are currently turned off will turn on when the device next reboots
+- **1** - Not allowed. Features that are shipped turned off by default will remain off

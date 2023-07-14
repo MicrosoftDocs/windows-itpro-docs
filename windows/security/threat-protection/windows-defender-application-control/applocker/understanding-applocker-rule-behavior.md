@@ -1,30 +1,18 @@
 ---
-title: Understanding AppLocker rule behavior (Windows)
+title: Understanding AppLocker rule behavior
 description: This topic describes how AppLocker rules are enforced by using the allow and deny options in AppLocker.
-ms.assetid: 3e2738a3-8041-4095-8a84-45c1894c97d0
 ms.reviewer: 
-ms.author: macapara
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.author: vinpa
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: mjcaparas
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+author: vinaypamnani-msft
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Understanding AppLocker rule behavior
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -36,10 +24,10 @@ If no AppLocker rules for a specific rule collection exist, all files with that 
 A rule can be configured to use either an allow or deny action:
 
 -   **Allow**. You can specify which files are allowed to run in your environment and for which users or groups of users. You can also configure exceptions to identify files that are excluded from the rule.
--   **Deny**. You can specify which files are not allowed to run in your environment and for which users or groups of users. You can also configure exceptions to identify files that are excluded from the rule.
+-   **Deny**. You can specify which files aren't allowed to run in your environment and for which users or groups of users. You can also configure exceptions to identify files that are excluded from the rule.
 
->**Important:**  You can use a combination of allow actions and deny actions. However, we recommend using allow actions with exceptions because deny actions override allow actions in all cases. Deny actions can also be circumvented. For example, if you configure a deny action for a file or folder path, the user can still run the file from any other path.
- 
+>**Important:**  You can use a combination of allow actions and deny actions. However, we recommend using allow actions with exceptions because deny actions override allow actions in all cases. Deny actions can also be circumvented. For example, if you configure a deny action for a file or folder path, the user can still run the file from any other path.
+ 
 ## Related topics
 
 - [How AppLocker works](how-applocker-works-techref.md)

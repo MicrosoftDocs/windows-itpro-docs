@@ -1,89 +1,95 @@
 ---
-title: Policy CSP - ADMX_Cpls
-description: Policy CSP - ADMX_Cpls
-ms.author: dansimp
+title: ADMX_Cpls Policy CSP
+description: Learn more about the ADMX_Cpls Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 08/26/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_Cpls-Begin -->
 # Policy CSP - ADMX_Cpls
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<hr/>
+<!-- ADMX_Cpls-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Cpls-Editable-End -->
 
-<!--Policies-->
-## ADMX_Cpls policies  
+<!-- UseDefaultTile-Begin -->
+## UseDefaultTile
 
-<dl>
-  <dd>
-    <a href="#admx-cpls-usedefaulttile">ADMX_Cpls/UseDefaultTile</a>
-  </dd>
-</dl>
+<!-- UseDefaultTile-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- UseDefaultTile-Applicability-End -->
 
+<!-- UseDefaultTile-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Cpls/UseDefaultTile
+```
+<!-- UseDefaultTile-OmaUri-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-cpls-usedefaulttile"></a>**ADMX_Cpls/UseDefaultTile**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- UseDefaultTile-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows an administrator to standardize the account pictures for all users on a system to the default account picture. One application for this policy setting is to standardize the account pictures to a company logo.
 
-> [!NOTE] 
-> The default account picture is stored at %PROGRAMDATA%\Microsoft\User Account Pictures\user.jpg. The default guest picture is stored at %PROGRAMDATA%\Microsoft\User Account Pictures\guest.jpg. If the default pictures do not exist, an empty frame is displayed.
+> [!NOTE]
+> The default account picture is stored at %PROGRAMDATA%\Microsoft\User Account Pictures\user.jpg. The default guest picture is stored at %PROGRAMDATA%\Microsoft\User Account Pictures\guest.jpg. If the default pictures don't exist, an empty frame is displayed.
 
-If you enable this policy setting, the default user account picture will display for all users on the system with no customization allowed.
+- If you enable this policy setting, the default user account picture will display for all users on the system with no customization allowed.
 
-If you disable or do not configure this policy setting, users will be able to customize their account pictures.
+- If you disable or don't configure this policy setting, users will be able to customize their account pictures.
+<!-- UseDefaultTile-Description-End -->
 
-<!--/Description-->
+<!-- UseDefaultTile-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- UseDefaultTile-Editable-End -->
 
+<!-- UseDefaultTile-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Apply the default account picture to all users*
--   GP name: *UseDefaultTile*
--   GP path: *Control Panel/User Accounts*
--   GP ADMX file name: *Cpls.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- UseDefaultTile-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- UseDefaultTile-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
-<!--/Policies-->
+| Name | Value |
+|:--|:--|
+| Name | UseDefaultTile |
+| Friendly Name | Apply the default account picture to all users |
+| Location | Computer Configuration |
+| Path | Control Panel > User Accounts |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | UseDefaultTile |
+| ADMX File Name | Cpls.admx |
+<!-- UseDefaultTile-AdmxBacked-End -->
 
+<!-- UseDefaultTile-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- UseDefaultTile-Examples-End -->
+
+<!-- UseDefaultTile-End -->
+
+<!-- ADMX_Cpls-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Cpls-CspMoreInfo-End -->
+
+<!-- ADMX_Cpls-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

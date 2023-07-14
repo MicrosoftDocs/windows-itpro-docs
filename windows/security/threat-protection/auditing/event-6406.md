@@ -1,17 +1,18 @@
 ---
-title: 6406(-) %1 registered to Windows Firewall to control filtering for the following %2. (Windows 10)
+title: 6406(-) %1 registered to Windows Firewall to control filtering for the following %2. 
 description: Describes security event 6406(-) %1 registered to Windows Firewall to control filtering for the following %2.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/09/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 6406(-): %1 registered to Windows Firewall to control filtering for the following: %2.
@@ -19,7 +20,7 @@ ms.technology: windows-sec
 
 [BranchCache](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj127252(v=ws.11)) events are outside the scope of this document.
 
-There is no example of this event in this document.
+There's no example of this event in this document.
 
 ***Subcategory:***&nbsp;[Audit Other System Events](audit-other-system-events.md)
 
@@ -37,4 +38,4 @@ There is no example of this event in this document.
 
 ## Security Monitoring Recommendations
 
--   There is no recommendation for this event in this document.
+-   There's no recommendation for this event in this document.

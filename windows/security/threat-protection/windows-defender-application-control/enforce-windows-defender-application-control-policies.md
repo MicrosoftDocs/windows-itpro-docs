@@ -1,17 +1,16 @@
 ---
-title: Enforce Windows Defender Application Control (WDAC) policies (Windows)
+title: Enforce Windows Defender Application Control (WDAC) policies 
 description: Learn how to switch a WDAC policy from audit to enforced mode.
 keywords: security, malware
-ms.prod: m365-security
+ms.prod: windows-client
 audience: ITPro
-ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: jogeurte
 ms.author: jogeurte
 ms.manager: jsuther
-manager: dansimp
+manager: aaroncz
 ms.date: 04/22/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ms.topic: article
 ms.localizationpriority: medium
 ---
@@ -25,16 +24,16 @@ ms.localizationpriority: medium
 -   Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-You should now have one or more WDAC policies broadly deployed in audit mode. You have analyzed events collected from the devices with those policies and you're ready to enforce. Use this procedure to prepare and deploy your WDAC policies in enforcement mode.
+You should now have one or more Windows Defender Application Control policies broadly deployed in audit mode. You have analyzed events collected from the devices with those policies and you're ready to enforce. Use this procedure to prepare and deploy your WDAC policies in enforcement mode.
 
 > [!NOTE]
 > Some of the steps described in this article only apply to Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's WDAC policies, consider whether your managed clients can use all or some of these features. Evaluate the impact for any features that may be unavailable on your clients running earlier versions of Windows 10 and Windows Server. You may need to adapt this guidance to meet your specific organization's needs.
 
 ## Convert WDAC **base** policy from audit to enforced
 
-As described in [common WDAC deployment scenarios](types-of-devices.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
+As described in [common Windows Defender Application Control deployment scenarios](types-of-devices.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
 
 **Alice Pena** is the IT team lead responsible for Lamna's WDAC rollout.
 
@@ -102,7 +101,7 @@ Since the enforced policy was given a unique PolicyID in the previous procedure,
    > [!NOTE]
    > If Set-CIPolicyIdInfo does not output the new PolicyID value on your Windows 10 version, you will need to obtain the *PolicyId* value from the XML directly.
 
-3. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the new WDAC supplemental policy to binary:
+3. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the new Windows Defender Application Control supplemental policy to binary:
 
    ```powershell
    $EnforcedSuppPolicyBinary = $env:USERPROFILE+"\Desktop\"+$SupplementalPolicyName+"_"+$SupplementalPolicyID+".xml"

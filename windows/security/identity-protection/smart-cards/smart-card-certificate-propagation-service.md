@@ -1,24 +1,12 @@
 ---
-title: Certificate Propagation Service (Windows)
+title: Certificate Propagation Service 
 description: This topic for the IT professional describes the certificate propagation service (CertPropSvc), which is used in smart card implementation.
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.collection: M365-identity-device-management
+ms.reviewer: ardenw
 ms.topic: article
-ms.localizationpriority: medium
 ms.date: 08/24/2021
-ms.reviewer: 
 ---
 
 # Certificate Propagation Service
-
-Applies To: Windows 10, Windows 11, Windows Server 2016 and above
 
 This topic for the IT professional describes the certificate propagation service (CertPropSvc), which is used in smart card implementation.
 

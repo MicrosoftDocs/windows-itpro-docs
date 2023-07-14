@@ -1,17 +1,16 @@
 ---
 title: About the connection group file (Windows 10/11)
 description: A summary of what the connection group file is and how to configure it.
-author: greg-lindsay
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.prod: w10
+author: aczechowski
+ms.prod: windows-client
 ms.date: 06/25/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
+
 # About the connection group file
 
 [!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
@@ -141,6 +140,6 @@ App-V supports the following application connection configurations.
 
 
 
-## Related topics
+## Related articles
 
 - [Managing connection groups](appv-managing-connection-groups.md)

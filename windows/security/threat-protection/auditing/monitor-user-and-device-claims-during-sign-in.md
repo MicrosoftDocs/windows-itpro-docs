@@ -1,31 +1,30 @@
 ---
-title: Monitor user and device claims during sign-in (Windows 10)
+title: Monitor user and device claims during sign-in 
 description: Learn how to monitor user and device claims that are associated with a user’s security token. This advice assumes you have deployed Dynamic Access Control.
 ms.assetid: 71796ea9-5fe4-4183-8475-805c3c1f319f
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/09/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Monitor user and device claims during sign-in
 
 
-This topic for the IT professional describes how to monitor user and device claims that are associated with a user’s security token when you are using advanced security auditing options to monitor dynamic access control objects.
+This topic for the IT professional describes how to monitor user and device claims that are associated with a user’s security token when you're using advanced security auditing options to monitor dynamic access control objects.
 
-Device claims are associated with the system that is used to access resources that are protected with Dynamic Access Control. User claims are attributes that are associated with a user. User claims and device claims are included in the user’s security token used at sign-on. For example, information about Department, Company, Project, or Security clearances might be included in the token.
+Device claims are associated with the system that is used to access resources that are protected with Dynamic Access Control. User claims are attributes that are associated with a user. User claims and device claims are included in the user’s security token used at the sign-in stage. For example, information about Department, Company, Project, or Security clearances might be included in the token.
 
-Use the following procedures to monitor changes to user claims and device claims in the user’s sign-on token and to verify the changes. These procedures assume that you have configured and deployed Dynamic Access Control, including central access policies, claims, and other components, in your network. If you have not yet deployed Dynamic Access Control in your network, see [Deploy a Central Access Policy (Demonstration Steps)](/windows-server/identity/solution-guides/deploy-a-central-access-policy--demonstration-steps-).
+Use the following procedures to monitor changes to user claims and device claims in the user’s sign-in token and to verify the changes. These procedures assume that you have configured and deployed Dynamic Access Control, including central access policies, claims, and other components, in your network. If you haven't yet deployed Dynamic Access Control in your network, see [Deploy a Central Access Policy (Demonstration Steps)](/windows-server/identity/solution-guides/deploy-a-central-access-policy--demonstration-steps-).
 
 >**Note:**  Your server might function differently based on the version and edition of the operating system that is installed, your account permissions, and your menu settings.
  

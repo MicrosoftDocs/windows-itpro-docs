@@ -1,41 +1,44 @@
 ---
-title: Network security LAN Manager authentication level (Windows 10)
+title: Network security LAN Manager authentication level 
 description: Best practices, location, values, policy management and security considerations for the policy setting, Network security LAN Manager authentication level.
 ms.assetid: bbe1a98c-420a-41e7-9d3c-3a2fe0f1843e
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - highpri
+  - tier3
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network security: LAN Manager authentication level
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Network security: LAN Manager authentication level** security policy setting.
 
 ## Reference
 
-This policy setting determines which challenge or response authentication protocol is used for network logons. LAN Manager (LM) includes client computer and server software from Microsoft that allows users to link personal devices together on a single network. Network capabilities include transparent file and print sharing, user security features, and network administration tools. In Active Directory domains, the Kerberos protocol is the default authentication protocol. However, if the Kerberos protocol is not negotiated for some reason, Active Directory uses LM, NTLM, or NTLM version 2 (NTLMv2).
+This policy setting determines which challenge or response authentication protocol is used for network logons. LAN Manager (LM) includes client computer and server software from Microsoft that allows users to link personal devices together on a single network. Network capabilities include transparent file and print sharing, user security features, and network administration tools. In Active Directory domains, the Kerberos protocol is the default authentication protocol. However, if the Kerberos protocol isn't negotiated for some reason, Active Directory uses LM, NTLM, or NTLM version 2 (NTLMv2).
 
-LAN Manager authentication includes the LM, NTLM, and NTLMv2 variants, and it is the protocol that is used to authenticate all client devices running the Windows operating system when they perform the following operations:
+LAN Manager authentication includes the LM, NTLM, and NTLMv2 variants, and it's the protocol that is used to authenticate all client devices running the Windows operating system when they perform the following operations:
 
 -   Join a domain
 -   Authenticate between Active Directory forests
 -   Authenticate to domains based on earlier versions of the Windows operating system
--   Authenticate to computers that do not run Windows operating systems, beginning with Windows 2000
--   Authenticate to computers that are not in the domain
+-   Authenticate to computers that don't run Windows operating systems, beginning with Windows 2000
+-   Authenticate to computers that aren't in the domain
 
 ### Possible values
 
@@ -56,8 +59,8 @@ authentication level that servers accept. The following table identifies the pol
 | Send LM &amp; NTLM – use NTLMv2 session security if negotiated | Client devices use LM and NTLM authentication, and they use NTLMv2 session security if the server supports it. Domain controllers accept LM, NTLM, and NTLMv2 authentication.| 1| 
 | Send NTLM response only| Client devices use NTLMv1 authentication, and they use NTLMv2 session security if the server supports it. Domain controllers accept LM, NTLM, and NTLMv2 authentication.| 2| 
 | Send NTLMv2 response only | Client devices use NTLMv2 authentication, and they use NTLMv2 session security if the server supports it. Domain controllers accept LM, NTLM, and NTLMv2 authentication.| 3| 
-| Send NTLMv2 response only. Refuse LM | Client devices use NTLMv2 authentication, and they use NTLMv2 session security if the server supports it. Domain controllers refuse to accept LM authentication, and they will accept only NTLM and NTLMv2 authentication.| 4| 
-| Send NTLMv2 response only. Refuse LM &amp; NTLM | Client devices use NTLMv2 authentication, and they use NTLMv2 session security if the server supports it. Domain controllers refuse to accept LM and NTLM authentication, and they will accept only NTLMv2 authentication.| 5| 
+| Send NTLMv2 response only. Refuse LM | Client devices use NTLMv2 authentication, and they use NTLMv2 session security if the server supports it. Domain controllers refuse to accept LM authentication, and they'll accept only NTLM and NTLMv2 authentication.| 4| 
+| Send NTLMv2 response only. Refuse LM &amp; NTLM | Client devices use NTLMv2 authentication, and they use NTLMv2 session security if the server supports it. Domain controllers refuse to accept LM and NTLM authentication, and they'll accept only NTLMv2 authentication.| 5| 
  
 ### Best practices
 
@@ -73,7 +76,7 @@ HKLM\System\CurrentControlSet\Control\Lsa\LmCompatibilityLevel
 
 ### Default values
 
-The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
+The following table lists the actual and effective default values for this policy. Default values are also listed on the policy's property page.
 
 | Server type or GPO | Default value |
 | - | - |
@@ -90,7 +93,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ### Group Policy
 
@@ -106,11 +109,11 @@ In Windows 7 and Windows Vista, this setting is undefined. In Windows Server�
 
 ### Countermeasure
 
-Configure the **Network security: LAN Manager Authentication Level** setting to **Send NTLMv2 responses only**. Microsoft and a number of independent organizations strongly recommend this level of authentication when all client computers support NTLMv2.
+Configure the **Network security: LAN Manager Authentication Level** setting to **Send NTLMv2 responses only**. Microsoft and many independent organizations strongly recommend this level of authentication when all client computers support NTLMv2.
 
 ### Potential impact
 
-Client devices that do not support NTLMv2 authentication cannot authenticate in the domain and access domain resources by using LM and NTLM.
+Client devices that don't support NTLMv2 authentication can't authenticate in the domain and access domain resources by using LM and NTLM.
 
 ## Related topics
 

@@ -1,262 +1,294 @@
 ---
-title: Policy CSP - ADMX_Reliability
-description: Policy CSP - ADMX_Reliability
-ms.author: dansimp
+title: ADMX_Reliability Policy CSP
+description: Learn more about the ADMX_Reliability Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/11/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 08/13/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_Reliability-Begin -->
 # Policy CSP - ADMX_Reliability
->[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ADMX_Reliability policies  
+<!-- ADMX_Reliability-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Reliability-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-reliability-ee-enablepersistenttimestamp">ADMX_Reliability/EE_EnablePersistentTimeStamp</a>
-  </dd>
-  <dd>
-    <a href="#admx-reliability-pch-reportshutdownevents">ADMX_Reliability/PCH_ReportShutdownEvents</a>
-  </dd>
-  <dd>
-    <a href="#admx-reliability-shutdowneventtrackerstatefile">ADMX_Reliability/ShutdownEventTrackerStateFile</a>
-  </dd>
-  <dd>
-    <a href="#admx-reliability-shutdownreason">ADMX_Reliability/ShutdownReason</a>
-  </dd>
-</dl>
+<!-- EE_EnablePersistentTimeStamp-Begin -->
+## EE_EnablePersistentTimeStamp
 
+<!-- EE_EnablePersistentTimeStamp-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- EE_EnablePersistentTimeStamp-Applicability-End -->
 
-<hr/>
+<!-- EE_EnablePersistentTimeStamp-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Reliability/EE_EnablePersistentTimeStamp
+```
+<!-- EE_EnablePersistentTimeStamp-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-reliability-ee-enablepersistenttimestamp"></a>**ADMX_Reliability/EE_EnablePersistentTimeStamp**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- EE_EnablePersistentTimeStamp-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows the system to detect the time of unexpected shutdowns by writing the current time to disk on a schedule controlled by the Timestamp Interval.
 
-If you enable this policy setting, you are able to specify how often the Persistent System Timestamp is refreshed and subsequently written to the disk. You can specify the Timestamp Interval in seconds.
+- If you enable this policy setting, you are able to specify how often the Persistent System Timestamp is refreshed and subsequently written to the disk. You can specify the Timestamp Interval in seconds.
 
-If you disable this policy setting, the Persistent System Timestamp is turned off and the timing of unexpected shutdowns is not recorded.
+- If you disable this policy setting, the Persistent System Timestamp is turned off and the timing of unexpected shutdowns isn't recorded.
 
-If you do not configure this policy setting, the Persistent System Timestamp is refreshed according the default, which is every 60 seconds beginning with Windows Server 2003.
+- If you don't configure this policy setting, the Persistent System Timestamp is refreshed according the default, which is every 60 seconds beginning with Windows Server 2003.
 
 > [!NOTE]
 > This feature might interfere with power configuration settings that turn off hard disks after a period of inactivity. These power settings may be accessed in the Power Options Control Panel.
+<!-- EE_EnablePersistentTimeStamp-Description-End -->
 
-<!--/Description-->
+<!-- EE_EnablePersistentTimeStamp-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EE_EnablePersistentTimeStamp-Editable-End -->
 
+<!-- EE_EnablePersistentTimeStamp-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Enable Persistent Time Stamp*
--   GP name: *EE_EnablePersistentTimeStamp*
--   GP path: *System*
--   GP ADMX file name: *Reliability.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EE_EnablePersistentTimeStamp-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- EE_EnablePersistentTimeStamp-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-reliability-pch-reportshutdownevents"></a>**ADMX_Reliability/PCH_ReportShutdownEvents**  
+| Name | Value |
+|:--|:--|
+| Name | EE_EnablePersistentTimeStamp |
+| Friendly Name | Enable Persistent Time Stamp |
+| Location | Computer Configuration |
+| Path | System |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\Reliability |
+| Registry Value Name | TimeStampEnabled |
+| ADMX File Name | Reliability.admx |
+<!-- EE_EnablePersistentTimeStamp-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- EE_EnablePersistentTimeStamp-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EE_EnablePersistentTimeStamp-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EE_EnablePersistentTimeStamp-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PCH_ReportShutdownEvents-Begin -->
+## PCH_ReportShutdownEvents
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PCH_ReportShutdownEvents-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PCH_ReportShutdownEvents-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PCH_ReportShutdownEvents-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Reliability/PCH_ReportShutdownEvents
+```
+<!-- PCH_ReportShutdownEvents-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- PCH_ReportShutdownEvents-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting controls whether or not unplanned shutdown events can be reported when error reporting is enabled.
 
-If you enable this policy setting, error reporting includes unplanned shutdown events.
+- If you enable this policy setting, error reporting includes unplanned shutdown events.
 
-If you disable this policy setting, unplanned shutdown events are not included in error reporting.
+- If you disable this policy setting, unplanned shutdown events aren't included in error reporting.
 
-If you do not configure this policy setting, users can adjust this setting using the control panel, which is set to "Upload unplanned shutdown events" by default.
+- If you don't configure this policy setting, users can adjust this setting using the control panel, which is set to "Upload unplanned shutdown events" by default.
 
 Also see the "Configure Error Reporting" policy setting.
+<!-- PCH_ReportShutdownEvents-Description-End -->
 
-<!--/Description-->
+<!-- PCH_ReportShutdownEvents-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PCH_ReportShutdownEvents-Editable-End -->
 
+<!-- PCH_ReportShutdownEvents-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Report unplanned shutdown events*
--   GP name: *PCH_ReportShutdownEvents*
--   GP path: *Windows Components\Windows Error Reporting\Advanced Error Reporting Settings*
--   GP ADMX file name: *Reliability.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PCH_ReportShutdownEvents-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- PCH_ReportShutdownEvents-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-reliability-shutdowneventtrackerstatefile"></a>**ADMX_Reliability/ShutdownEventTrackerStateFile**  
+| Name | Value |
+|:--|:--|
+| Name | PCH_ReportShutdownEvents |
+| Friendly Name | Report unplanned shutdown events |
+| Location | Computer Configuration |
+| Path | CAT_WindowsErrorReporting > Advanced Error Reporting Settings |
+| Registry Key Name | Software\Policies\Microsoft\PCHealth\ErrorReporting |
+| Registry Value Name | IncludeShutdownErrs |
+| ADMX File Name | Reliability.admx |
+<!-- PCH_ReportShutdownEvents-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- PCH_ReportShutdownEvents-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PCH_ReportShutdownEvents-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PCH_ReportShutdownEvents-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ShutdownEventTrackerStateFile-Begin -->
+## ShutdownEventTrackerStateFile
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ShutdownEventTrackerStateFile-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ShutdownEventTrackerStateFile-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ShutdownEventTrackerStateFile-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Reliability/ShutdownEventTrackerStateFile
+```
+<!-- ShutdownEventTrackerStateFile-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- ShutdownEventTrackerStateFile-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting defines when the Shutdown Event Tracker System State Data feature is activated.
 
 The system state data file contains information about the basic system state as well as the state of all running processes.
 
-If you enable this policy setting, the System State Data feature is activated when the user indicates that the shutdown or restart is unplanned.
+- If you enable this policy setting, the System State Data feature is activated when the user indicates that the shutdown or restart is unplanned.
 
-If you disable this policy setting, the System State Data feature is never activated.
+- If you disable this policy setting, the System State Data feature is never activated.
 
-If you do not configure this policy setting, the default behavior for the System State Data feature occurs.
+- If you don't configure this policy setting, the default behavior for the System State Data feature occurs.
 
+> [!NOTE]
+> By default, the System State Data feature is always enabled on Windows Server 2003. See "Supported on" for all supported versions.
+<!-- ShutdownEventTrackerStateFile-Description-End -->
 
-<!--/Description-->
+<!-- ShutdownEventTrackerStateFile-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ShutdownEventTrackerStateFile-Editable-End -->
 
+<!-- ShutdownEventTrackerStateFile-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Activate Shutdown Event Tracker System State Data feature*
--   GP name: *ShutdownEventTrackerStateFile*
--   GP path: *System*
--   GP ADMX file name: *Reliability.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ShutdownEventTrackerStateFile-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- ShutdownEventTrackerStateFile-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-reliability-shutdownreason"></a>**ADMX_Reliability/ShutdownReason**  
+| Name | Value |
+|:--|:--|
+| Name | ShutdownEventTrackerStateFile |
+| Friendly Name | Activate Shutdown Event Tracker System State Data feature |
+| Location | Computer Configuration |
+| Path | System |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\Reliability |
+| Registry Value Name | SnapShot |
+| ADMX File Name | Reliability.admx |
+<!-- ShutdownEventTrackerStateFile-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- ShutdownEventTrackerStateFile-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ShutdownEventTrackerStateFile-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ShutdownEventTrackerStateFile-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ShutdownReason-Begin -->
+## ShutdownReason
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ShutdownReason-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ShutdownReason-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ShutdownReason-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Reliability/ShutdownReason
+```
+<!-- ShutdownReason-OmaUri-End -->
 
-<hr/>
+<!-- ShutdownReason-Description-Begin -->
+<!-- Description-Source-ADMX -->
+The Shutdown Event Tracker can be displayed when you shut down a workstation or server. This is an extra set of questions that's displayed when you invoke a shutdown to collect information related to why you are shutting down the computer.
 
-<!--/Scope-->
-<!--Description-->
-The Shutdown Event Tracker can be displayed when you shut down a workstation or server.  This is an extra set of questions that is displayed when you invoke a shutdown to collect information related to why you are shutting down the computer.
+- If you enable this setting and choose "Always" from the drop-down menu list, the Shutdown Event Tracker is displayed when the computer shuts down.
 
-If you enable this setting and choose "Always" from the drop-down menu list, the Shutdown Event Tracker is displayed when the computer shuts down.
+- If you enable this policy setting and choose "Server Only" from the drop-down menu list, the Shutdown Event Tracker is displayed when you shut down a computer running Windows Server. (See "Supported on" for supported versions).
 
-If you enable this policy setting and choose "Server Only" from the drop-down menu list, the Shutdown Event Tracker is displayed when you shut down a computer running Windows Server. (See "Supported on" for supported versions.)
+- If you enable this policy setting and choose "Workstation Only" from the drop-down menu list, the Shutdown Event Tracker is displayed when you shut down a computer running a client version of Windows. (See "Supported on" for supported versions).
 
-If you enable this policy setting and choose "Workstation Only" from the drop-down menu list, the Shutdown Event Tracker is displayed when you shut down a computer running a client version of Windows. (See "Supported on" for supported versions.)
+- If you disable this policy setting, the Shutdown Event Tracker isn't displayed when you shut down the computer.
 
-If you disable this policy setting, the Shutdown Event Tracker is not displayed when you shut down the computer.
-
-If you do not configure this policy setting, the default behavior for the Shutdown Event Tracker occurs.
+- If you don't configure this policy setting, the default behavior for the Shutdown Event Tracker occurs.
 
 > [!NOTE]
 > By default, the Shutdown Event Tracker is only displayed on computers running Windows Server.
+<!-- ShutdownReason-Description-End -->
 
-<!--/Description-->
+<!-- ShutdownReason-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ShutdownReason-Editable-End -->
 
+<!-- ShutdownReason-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Display Shutdown Event Tracker*
--   GP name: *ShutdownReason*
--   GP path: *System*
--   GP ADMX file name: *Reliability.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ShutdownReason-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- ShutdownReason-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | ShutdownReason |
+| Friendly Name | Display Shutdown Event Tracker |
+| Location | Computer Configuration |
+| Path | System |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\Reliability |
+| Registry Value Name | ShutdownReasonOn |
+| ADMX File Name | Reliability.admx |
+<!-- ShutdownReason-AdmxBacked-End -->
 
-<!--/Policies-->
+<!-- ShutdownReason-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ShutdownReason-Examples-End -->
 
+<!-- ShutdownReason-End -->
+
+<!-- ADMX_Reliability-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Reliability-CspMoreInfo-End -->
+
+<!-- ADMX_Reliability-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

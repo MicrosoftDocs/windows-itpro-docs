@@ -1,26 +1,54 @@
 ---
 title: Microsoft Store for Business and Education release history
 description: Know the release history of Microsoft Store for Business and Microsoft Store for Education.
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
-author: TrudyHa
-ms.author: TrudyHa
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: scotv
 ms.topic: conceptual
-ms.date: 07/21/2021
+ms.date: 06/29/2023
 ms.reviewer: 
-manager: dansimp
 ---
 
 # Microsoft Store for Business and Education release history
 
 > [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
+>
+> - The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
 
-Microsoft Store for Business and Education regularly releases new and improved features. Here's a summary of new or updated features in previous releases.
+Because Microsoft Store for Business and Education will be retired, we no longer release new and improved features. Here's a summary of new or updated features in previous releases.
 
-Looking for info on the latest release? Check out [What's new in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md) 
+Looking for info on the latest release? Check out [What's new in Microsoft Store for Business and Education](whats-new-microsoft-store-business-education.md)
+
+## May 2023
+
+### Removal of Microsoft Store for Business tab from Microsoft Store app on Windows 10 PCs
+
+The Microsoft Store for Business tab was removed from the Microsoft Store app on Windows 10. The Microsoft Store for Business tab is still available on HoloLens devices.
+
+Users on Windows 10 PCs can no longer do the following tasks:
+
+- see Line of Business (LOB) products listed in the Microsoft Store for Business tab
+- acquire or install [online apps](/mem/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business#online-and-offline-apps)
+- assign licenses for existing [online apps](/mem/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business#online-and-offline-apps) using the Store for Business portal or Store for Business app
+
+[Offline app](/mem/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business#online-and-offline-apps) distribution and licensing scenarios aren't impacted by this change.
+
+We recommend that you add your apps through the new Microsoft Store app experience in Intune. If an app isn’t available in the Microsoft Store, you must retrieve an app package from the vendor and install it as an LOB app or Win32 app. For instructions, read the following articles:
+
+- [Add Microsoft Store apps to Microsoft Intune](/mem/intune/apps/store-apps-microsoft)
+- [Add a Windows line-of-business app to Microsoft Intune](/mem/intune/apps/lob-apps-windows)
+- [Add, assign, and monitor a Win32 app in Microsoft Intune](/mem/intune/apps/apps-win32-add)
+
+Follow the [Intune Customer Success blog](https://aka.ms/IntuneCustomerSuccess) where we will publish more information about this change.
+
+## April 2023
+- **Tab removed from Microsoft Store apps on Windows 11 PCs** – The Microsoft Store for Business tab was removed from Microsoft Store apps on Windows 11 PCs. An interaction with existing MDM and GPO policies may lead to customers seeing errors when accessing the Microsoft Store app. [Get more info](manage-access-to-private-store.md#microsoft-store-for-business-tab-removed)
+
+## October 2018
+- **Use security groups with Private store apps** - On the details page for apps in your private store, you can set Private store availability. This allows you to choose which security groups can see an app in the private store. [Get more info](app-inventory-management-microsoft-store-for-business.md)
 
 ## September 2018
 - **Performance improvements** - With updates and improvements in the private store, most changes, like adding an app, will take fifteen minutes or less. [Get more info](/microsoft-store/manage-private-store-settings#private-store-performance)
@@ -39,13 +67,13 @@ Looking for info on the latest release? Check out [What's new in Microsoft Store
 - **Immersive Reader app available in Microsoft Store for Education** - This app is a free tool that uses proven techniques to improve reading and writing for people regardless of their age or ability. You can add the app to your private store, so students can easily install and use it.  
 
 ## April 2018
-- **Assign apps to larger groups** - We're making it easier for admins to assign apps to groups of people. Admins can assign licenses to groups of any size, and include subgroups within those groups. We’ll figure out who’s in those groups, and assign licenses to people in the groups (skipping people who already have licenses). Along the way, we’ll let you know how many licenses are needed, and provide an estimate on the time required to assign licenses.
+- **Assign apps to larger groups** - We're making it easier for admins to assign apps to groups of people. Admins can assign licenses to groups of any size, and include subgroups within those groups. We'll figure out who's in those groups, and assign licenses to people in the groups (skipping people who already have licenses). Along the way, we'll let you know how many licenses are needed, and provide an estimate on the time required to assign licenses.
 - **Change collection order in private store** - Private store collections make it easy for groups of people to find the apps that they need. Now, you can customize the order of your private store collections. 
 - **Office 365 subscription management** -  We know that sometimes customers need to cancel a subscription. While we don't want to lose a customer, we want the process for managing subscriptions to be easy. Now, you can delete your Office 365 subscription without calling Support. From Microsoft Store for Business and Education, you can request to delete an Office 365 subscription. We'll wait three days before permanently deleting the subscription. In case of a mistake, customers are welcome to reactivate subscriptions during the three-day period.
 
 ## March 2018
 - **Performance improvements in private store** - We've made it significantly faster for you to update the private store. Many changes to the private store are available immediately after you make them. [Get more info](./manage-private-store-settings.md#private-store-performance)
-- **Private store collection updates** - We’ve made it easier to find apps when creating private store collections – now you can search and filter results. 
+- **Private store collection updates** - We've made it easier to find apps when creating private store collections – now you can search and filter results. 
  [Get more info](./manage-private-store-settings.md#private-store-collections) 
 - **Manage Skype Communication credits** - Office 365 customers that own Skype Communication Credits can now see and manage them in Microsoft Store for Business. You can view your account, add funds to your account, and manage auto-recharge settings.
 - **Upgrade Microsoft 365 trial subscription** - Customers with Office 365 can upgrade their subscription and automatically re-assign their user licenses over to a new target subscription. For example, you could upgrade your Office 365 for business subscription to a Microsoft 365 for business subscription.

@@ -1,32 +1,28 @@
 ---
 title: Windows 11 overview for administrators
 description: Learn more about Windows 11. Read about the features IT professionals and administrators should know about Windows 11, including security, using apps, using Android apps, the new desktop, and deploying and servicing PCs.
-ms.reviewer: 
-manager: dougeby
-ms.audience: itpro
-author: greg-lindsay
-ms.author: greglin
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
+manager: aaroncz
+author: mestew
+ms.author: mstewart
+ms.prod: windows-client
+ms.date: 09/20/2022
+ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
-audience: itpro
-ms.topic: article
-ms.collection: highpri
-ms.custom: intro-overview
+ms.topic: overview
+ms.collection:
+  - highpri
+  - tier1
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
 
 # Windows 11 overview
-
-**Applies to**:
-
-- Windows 11
 
 Windows 11 is the next client operating system, and includes features that organizations should know. Windows 11 is built on the same foundation as Windows 10. If you use Windows 10, then Windows 11 is a natural transition. It's an update to what you know, and what you're familiar with.
 
 It offers innovations focused on enhancing end-user productivity, and is designed to support today's hybrid work environment.
 
-Your investments in update and device management are carried forward. For example, many of the same apps and tools can be used in Windows 11. Many of the same security settings and policies can be applied to Windows 11 devices, including PCs. You can use Windows Autopilot with a zero touch deployment to enroll your Windows devices in Microsoft Endpoint Manager. You can also use newer features, such as Azure Virtual Desktop and Windows 365 on your Windows 11 devices.
+Your investments in update and device management are carried forward. For example, many of the same apps and tools can be used in Windows 11. Many of the same security settings and policies can be applied to Windows 11 devices, including PCs. You can use Windows Autopilot with a zero touch deployment to enroll your Windows devices in Microsoft Intune. You can also use newer features, such as Azure Virtual Desktop and Windows 365 on your Windows 11 devices.
 
 This article lists what's new, and some of the features & improvements. For more information on what's new for OEMs, see [What's new in manufacturing, customization, and design](/windows-hardware/get-started/what-s-new-in-windows).
 
@@ -42,7 +38,7 @@ The security and privacy features in Windows 11 are similar to Windows 10. Secur
   
   For more information, see [Windows security baselines](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines).
 
-- **Microsoft Defender Antivirus** is built into Windows, and helps protect devices using next-generation security. When used with Microsoft Defender for Endpoint, your organization gets strong endpoint protection, and advanced endpoint protection & response. If you use Endpoint Manager to manage devices, then you can create policies based on threat levels in Microsoft Defender for Endpoint.
+- **Microsoft Defender Antivirus** is built into Windows, and helps protect devices using next-generation security. When used with Microsoft Defender for Endpoint, your organization gets strong endpoint protection, and advanced endpoint protection & response. If you use Intune to manage devices, then you can create policies based on threat levels in Microsoft Defender for Endpoint.
 
   For more information, see:
 
@@ -56,15 +52,15 @@ The security and privacy features in Windows 11 are similar to Windows 10. Secur
 
 - **Windows Hello for Business** helps protect users and identities. It replaces passwords, and uses a PIN or biometric that stays locally on the device. Device manufacturers are including more secure hardware features, such as IR cameras and TPM chips. These features are used with Windows Hello for Business to help protect user identities on your organization devices.
 
-  As an admin, going passwordless help secures user identities. The Windows OS, Azure AD, and Endpoint Manager work together to remove passwords, create more secure policies, and help enforce compliance.
+  As an admin, going passwordless help secures user identities. The Windows OS, Azure AD, and Intune work together to remove passwords, create more secure policies, and help enforce compliance.
 
   For more information, see:
 
   - [Windows Hello for Business Overview](/windows/security/identity-protection/hello-for-business/hello-overview)
   - [Trusted Platform Module Technology Overview](/windows/security/information-protection/tpm/trusted-platform-module-overview)
-  - [Integrate Windows Hello for Business with Endpoint Manager](/mem/intune/protect/windows-hello)
+  - [Integrate Windows Hello for Business with Intune](/mem/intune/protect/windows-hello)
 
-For more information on the security features you can configure, manage, and enforce using Endpoint Manager, see [Protect data and devices with Microsoft Endpoint Manager](/mem/intune/protect/device-protect).
+For more information on the security features you can configure, manage, and enforce using Intune, see [Protect data and devices with Microsoft Intune](/mem/intune/protect/device-protect).
 
 ## Easier access to new services, and services you already use
 
@@ -76,11 +72,11 @@ For more information on the security features you can configure, manage, and enf
 
   :::image type="content" source="./images/windows-11-whats-new/windows-11-taskbar-microsoft-teams.png" alt-text="On the Windows 11 taskbar, select the camera chat icon to start a Microsoft Teams call.":::
 
-  This version of Microsoft Teams is for personal accounts. For organization accounts, such as `user@contoso.com`, you can deploy the Microsoft Teams app using MDM policy, such as Endpoint Manager. For more information, see:
+  This version of Microsoft Teams is for personal accounts. For organization accounts, such as `user@contoso.com`, you can deploy the Microsoft Teams app using MDM policy, such as Intune. For more information, see:
 
-  - [Get started with Microsoft Endpoint Manager](/mem/endpoint-manager-getting-started)
+  - [What is Intune?](/mem/intune/fundamentals/what-is-intune)
   - [Add Microsoft 365 apps to Windows 10 devices with Microsoft Intune](/mem/intune/apps/apps-add-office365)
-  - [Install Microsoft Teams using Microsoft Endpoint Configuration Manager](/microsoftteams/msi-deployment)
+  - [Install Microsoft Teams using Microsoft Configuration Manager](/microsoftteams/msi-deployment)
 
   Users can manage preinstalled apps using the **Settings** app > **Apps** > **Apps & Features**. Admins can [create a policy that pins apps, or removes the default pinned apps from the Taskbar](/windows/configuration/customize-taskbar-windows-11).
 
@@ -103,6 +99,12 @@ For more information on the security features you can configure, manage, and enf
   Users can manage some snap features using the **Settings** app > **System** > **Multitasking**. For more information on the end-user experience, see [Snap your windows](https://support.microsoft.com/windows/snap-your-windows-885a9b1e-a983-a3b1-16cd-c531795e6241).
 
   You can also add Snap Layouts to apps your organization creates. For more information, see [Support snap layouts for desktop apps on Windows 11](/windows/apps/desktop/modernize/apply-snap-layout-menu).
+
+  Starting in Windows 11, version 22H2, you can also activate snap layouts by dragging a window to the top of the screen. The feature is available for both mouse and touch.<!-- MAX 6294246, OS 32513582 -->
+
+  :::image type="content" source="images/windows-11-whats-new/windows-11-22h2-snap-layouts.png" alt-text="In Windows 11, version 22H2, activate snap layouts by dragging a window to the top of the screen.":::
+
+  For more information on the end-user experience, see [Snap your windows](https://support.microsoft.com/windows/snap-your-windows-885a9b1e-a983-a3b1-16cd-c531795e6241).
 
 - **Start menu**: The Start menu includes some apps that are pinned by default. You can customize the Start menu layout by pinning (and unpinning) the apps you want. For example, you can pin commonly used apps in your organization, such as Outlook, Microsoft Teams, apps your organization creates, and more.
 
@@ -154,9 +156,9 @@ For more information on the security features you can configure, manage, and enf
 
   In the **Settings** app > **Apps**, users can manage some of the app settings. For example, they can get apps anywhere, but let the user know if there's a comparable app in the Microsoft Store. They can also choose which apps start when they sign in.
 
-  Using an MDM provider, like Endpoint Manager, you can create policies that also manage some app settings. For a list of settings, see [App Store in Endpoint Manager](/mem/intune/configuration/device-restrictions-windows-10#app-store).
+  Using an MDM provider, like Intune, you can create policies that also manage some app settings. For a list of settings, see [App Store in Intune](/mem/intune/configuration/device-restrictions-windows-10#app-store).
 
-- If you manage devices using Endpoint Manager, then you might be familiar with the **Company Portal app**. Starting with Windows 11, the Company Portal is your private app repository for your organization apps. For more information, see [Private app repository in Windows 11](/windows/application-management/private-app-repository-mdm-company-portal-windows-11).
+- If you manage devices using Intune, then you might be familiar with the **Company Portal app**. Starting with Windows 11, the Company Portal is your private app repository for your organization apps. For more information, see [Private app repository in Windows 11](/windows/application-management/private-app-repository-mdm-company-portal-windows-11).
 
   For public and retail apps, continue using the Microsoft Store.
 
@@ -179,7 +181,7 @@ For more information on the security features you can configure, manage, and enf
 
   To save system resources, Microsoft Edge uses sleeping tabs. Users can configure these settings, and more, in `edge://settings/system`.
 
-  Using Group Policy or an MDM provider, such as Endpoint Manager, you can configure some Microsoft Edge settings. For more information, see [Microsoft Edge - Policies](/deployedge/microsoft-edge-policies) and [Configure Microsoft Edge policy settings](/mem/intune/configuration/administrative-templates-configure-edge).
+  Using Group Policy or an MDM provider, such as Intune, you can configure some Microsoft Edge settings. For more information, see [Microsoft Edge - Policies](/deployedge/microsoft-edge-policies) and [Configure Microsoft Edge policy settings](/mem/intune/configuration/administrative-templates-configure-edge).
 
 ## Deployment and servicing
 
@@ -193,15 +195,15 @@ For more information on the security features you can configure, manage, and enf
 
   If you have a global or remote workforce, then Autopilot might be the right option to install the OS, and get it ready for use. For more information, see [Overview of Windows Autopilot](/mem/autopilot/windows-autopilot).
 
-- **Microsoft Endpoint Manager** is a mobile application management (MAM) and mobile device management (MDM) provider. It helps manage devices, and manage apps on devices in your organization. You configure policies, and then deploy these policies to users and groups. You can create and deploy policies that install apps, configure device features, enforce PIN requirements, block compromised devices, and more.
+- **Microsoft Intune** is a mobile application management (MAM) and mobile device management (MDM) provider. It helps manage devices, and manage apps on devices in your organization. You configure policies, and then deploy these policies to users and groups. You can create and deploy policies that install apps, configure device features, enforce PIN requirements, block compromised devices, and more.
 
-  If you use Group Policy to manage your Windows 10 devices, then you can also use Group Policy to manage Windows 11 devices. In Endpoint Manager, there are [administrative templates](/mem/intune/configuration/administrative-templates-windows) and the [settings catalog](/mem/intune/configuration/settings-catalog) that include many of the same policies. [Group Policy analytics](/mem/intune/configuration/group-policy-analytics) analyze your on-premises group policy objects.
+  If you use Group Policy to manage your Windows 10 devices, then you can also use Group Policy to manage Windows 11 devices. In Intune, there are [administrative templates](/mem/intune/configuration/administrative-templates-windows) and the [settings catalog](/mem/intune/configuration/settings-catalog) that include many of the same policies. [Group Policy analytics](/mem/intune/configuration/group-policy-analytics) analyze your on-premises group policy objects.
 
 - **Windows Updates and Delivery optimization** helps manage updates, and manage features on your devices. Starting with Windows 11, the OS feature updates are installed annually. For more information on servicing channels, and what they are, see [Servicing channels](/windows/deployment/update/waas-overview#servicing-channels).
 
   Like Windows 10, Windows 11 will receive monthly quality updates.
 
-  You have options to install updates on your Windows devices, including Endpoint Manager, Group Policy, Windows Server Update Services (WSUS), and more. For more information, see [Assign devices to servicing channels](/windows/deployment/update/waas-servicing-channels-windows-10-updates).
+  You have options to install updates on your Windows devices, including Intune, Group Policy, Windows Server Update Services (WSUS), and more. For more information, see [Assign devices to servicing channels](/windows/deployment/update/waas-servicing-channels-windows-10-updates).
 
   Some updates are large, and use bandwidth. Delivery optimization helps reduce bandwidth consumption. It shares the work of downloading the update packages with multiple devices in your deployment. Windows 11 updates are smaller, as they only pull down source files that are different. You can create policies that configure delivery optimization settings. For example, set the maximum upload and download bandwidth, set caching sizes, and more.
 

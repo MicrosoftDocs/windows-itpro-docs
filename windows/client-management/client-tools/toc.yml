@@ -1,0 +1,19 @@
+items:
+  - name: Windows Tools/Administrative Tools
+    href: administrative-tools-in-windows.md
+  - name: Use Quick Assist to help users
+    href: quick-assist.md
+  - name: Connect to remote Azure Active Directory-joined PC
+    href: connect-to-remote-aadj-pc.md
+  - name: Create mandatory user profiles
+    href: mandatory-user-profile.md
+  - name: Manage Device Installation with Group Policy
+    href: manage-device-installation-with-group-policy.md
+  - name: Manage the Settings app with Group Policy
+    href: manage-settings-app-with-group-policy.md
+  - name: Manage default media removal policy
+    href: change-default-removal-policy-external-storage-media.md
+  - name: What version of Windows am I running
+    href: windows-version-search.md
+  - name: Windows libraries
+    href: windows-libraries.md

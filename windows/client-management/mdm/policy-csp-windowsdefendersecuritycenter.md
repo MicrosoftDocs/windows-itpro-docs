@@ -1,1207 +1,1665 @@
 ---
-title: Policy CSP - WindowsDefenderSecurityCenter
-description: Learn how to use the Policy CSP - WindowsDefenderSecurityCenter setting to display the Account protection area in Windows Defender Security Center. 
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+title: WindowsDefenderSecurityCenter Policy CSP
+description: Learn more about the WindowsDefenderSecurityCenter Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/11/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- WindowsDefenderSecurityCenter-Begin -->
 # Policy CSP - WindowsDefenderSecurityCenter
 
+<!-- WindowsDefenderSecurityCenter-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- WindowsDefenderSecurityCenter-Editable-End -->
 
-<hr/>
+<!-- CompanyName-Begin -->
+## CompanyName
 
-<!--Policies-->
-## WindowsDefenderSecurityCenter policies  
+<!-- CompanyName-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- CompanyName-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#windowsdefendersecuritycenter-companyname">WindowsDefenderSecurityCenter/CompanyName</a>
-  </dd>
-  <dd>
-    <a href="#windowsdefendersecuritycenter-disableaccountprotectionui">WindowsDefenderSecurityCenter/DisableAccountProtectionUI</a>
-  </dd>
-  <dd>
-    <a href="#windowsdefendersecuritycenter-disableappbrowserui">WindowsDefenderSecurityCenter/DisableAppBrowserUI</a>
-  </dd>
-  <dd>
-    <a href="#windowsdefendersecuritycenter-disablecleartpmbutton">WindowsDefenderSecurityCenter/DisableClearTpmButton</a>
-  </dd>
-  <dd>
-    <a href="#windowsdefendersecuritycenter-disabledevicesecurityui">WindowsDefenderSecurityCenter/DisableDeviceSecurityUI</a>
-  </dd>
-  <dd>
-    <a href="#windowsdefendersecuritycenter-disableenhancednotifications">WindowsDefenderSecurityCenter/DisableEnhancedNotifications</a>
-  </dd>
-  <dd>
-    <a href="#windowsdefendersecuritycenter-disablefamilyui">WindowsDefenderSecurityCenter/DisableFamilyUI</a>
-  </dd>
-  <dd>
-    <a href="#windowsdefendersecuritycenter-disablehealthui">WindowsDefenderSecurityCenter/DisableHealthUI</a>
-  </dd>
-  <dd>
-    <a href="#windowsdefendersecuritycenter-disablenetworkui">WindowsDefenderSecurityCenter/DisableNetworkUI</a>
-  </dd>
-  <dd>
-    <a href="#windowsdefendersecuritycenter-disablenotifications">WindowsDefenderSecurityCenter/DisableNotifications</a>
-  </dd>
-  <dd>
-    <a href="#windowsdefendersecuritycenter-disabletpmfirmwareupdatewarning">WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning</a>
-  </dd>
-  <dd>
-    <a href="#windowsdefendersecuritycenter-disablevirusui">WindowsDefenderSecurityCenter/DisableVirusUI</a>
-  </dd>
-  <dd>
-    <a href="#windowsdefendersecuritycenter-disallowexploitprotectionoverride">WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride</a>
-  </dd>
-  <dd>
-    <a href="#windowsdefendersecuritycenter-email">WindowsDefenderSecurityCenter/Email</a>
-  </dd>
-  <dd>
-    <a href="#windowsdefendersecuritycenter-enablecustomizedtoasts">WindowsDefenderSecurityCenter/EnableCustomizedToasts</a>
-  </dd>
-  <dd>
-    <a href="#windowsdefendersecuritycenter-enableinappcustomization">WindowsDefenderSecurityCenter/EnableInAppCustomization</a>
-  </dd>
-  <dd>
-    <a href="#windowsdefendersecuritycenter-hideransomwaredatarecovery">WindowsDefenderSecurityCenter/HideRansomwareDataRecovery</a>
-  </dd>
-  <dd>
-    <a href="#windowsdefendersecuritycenter-hidesecureboot">WindowsDefenderSecurityCenter/HideSecureBoot</a>
-  </dd>
-  <dd>
-    <a href="#windowsdefendersecuritycenter-hidetpmtroubleshooting">WindowsDefenderSecurityCenter/HideTPMTroubleshooting</a>
-  </dd>
-  <dd>
-    <a href="#windowsdefendersecuritycenter-hidewindowssecuritynotificationareacontrol">WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl</a>
-  </dd>
-  <dd>
-    <a href="#windowsdefendersecuritycenter-phone">WindowsDefenderSecurityCenter/Phone</a>
-  </dd>
-  <dd>
-    <a href="#windowsdefendersecuritycenter-url">WindowsDefenderSecurityCenter/URL</a>
-  </dd>
-</dl>
+<!-- CompanyName-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsDefenderSecurityCenter/CompanyName
+```
+<!-- CompanyName-OmaUri-End -->
 
+<!-- CompanyName-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specify the company name that will be displayed in Windows Security and associated notifications. This setting must be enabled for any contact information to appear.
 
-<hr/>
+Enabled:
 
-<!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-companyname"></a>**WindowsDefenderSecurityCenter/CompanyName**  
+Enter the company name in the Options section.
 
-<!--SupportedSKUs-->
+Disabled:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+Company information won't be shown at all in either Windows Security or any notifications that it creates.
 
-<!--/SupportedSKUs-->
-<hr/>
+Not configured:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Same as Disabled.
+<!-- CompanyName-Description-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- CompanyName-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CompanyName-Editable-End -->
 
-<hr/>
+<!-- CompanyName-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Scope-->
-<!--Description-->
-The company name that is displayed to the users. CompanyName is required for both EnableCustomizedToasts and EnableInAppCustomization. If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display the contact options.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CompanyName-DFProperties-End -->
 
-Value type is string. Supported operations are Add, Get, Replace and Delete.
+<!-- CompanyName-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Specify contact company name*
--   GP name: *EnterpriseCustomization_CompanyName*
--   GP element: *Presentation_EnterpriseCustomization_CompanyName*
--   GP path: *Windows Components/Windows Defender Security Center/Enterprise Customization*
--   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+| Name | Value |
+|:--|:--|
+| Name | EnterpriseCustomization_CompanyName |
+| Friendly Name | Specify contact company name |
+| Element Name | Company name. |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Security > Enterprise Customization |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Enterprise Customization |
+| ADMX File Name | WindowsDefenderSecurityCenter.admx |
+<!-- CompanyName-GpMapping-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+<!-- CompanyName-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CompanyName-Examples-End -->
 
-<hr/>
+<!-- CompanyName-End -->
 
-<!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disableaccountprotectionui"></a>**WindowsDefenderSecurityCenter/DisableAccountProtectionUI**  
+<!-- DisableAccountProtectionUI-Begin -->
+## DisableAccountProtectionUI
 
-<!--SupportedSKUs-->
+<!-- DisableAccountProtectionUI-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- DisableAccountProtectionUI-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableAccountProtectionUI-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsDefenderSecurityCenter/DisableAccountProtectionUI
+```
+<!-- DisableAccountProtectionUI-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableAccountProtectionUI-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Hide the Account protection area in Windows Security.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Enabled:
 
-> [!div class = "checklist"]
-> * Device
+The Account protection area will be hidden.
 
-<hr/>
+Disabled:
 
-<!--/Scope-->
-<!--Description-->
-Use this policy setting to specify if to display the Account protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows Defender Security Center will display this area.
+The Account protection area will be shown.
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Hide the Account protection area*
--   GP name: *AccountProtection_UILockdown*
--   GP path: *Windows Components/Windows Defender Security Center/Account protection*
--   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+Not configured:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-Valid values:
+Same as Disabled.
+<!-- DisableAccountProtectionUI-Description-End -->
 
-- 0 - (Disable) The users can see the display of the Account protection area in Windows Defender Security Center.
-- 1 - (Enable) The users cannot see the display of the Account protection area in Windows Defender Security Center.
+<!-- DisableAccountProtectionUI-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableAccountProtectionUI-Editable-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- DisableAccountProtectionUI-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableAccountProtectionUI-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disableappbrowserui"></a>**WindowsDefenderSecurityCenter/DisableAppBrowserUI**  
+<!-- DisableAccountProtectionUI-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--SupportedSKUs-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | (Disable) The users can see the display of the Account protection area in Windows Defender Security Center. |
+| 1 | (Enable) The users can't see the display of the Account protection area in Windows Defender Security Center. |
+<!-- DisableAccountProtectionUI-AllowedValues-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableAccountProtectionUI-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AccountProtection_UILockdown |
+| Friendly Name | Hide the Account protection area |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Security > Account protection |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Account protection |
+| Registry Value Name | UILockdown |
+| ADMX File Name | WindowsDefenderSecurityCenter.admx |
+<!-- DisableAccountProtectionUI-GpMapping-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableAccountProtectionUI-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableAccountProtectionUI-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableAccountProtectionUI-End -->
 
-<hr/>
+<!-- DisableAppBrowserUI-Begin -->
+## DisableAppBrowserUI
 
-<!--/Scope-->
-<!--Description-->
-Use this policy setting if you want to disable the display of the app and browser protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows Defender Security Center will display this area.
+<!-- DisableAppBrowserUI-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- DisableAppBrowserUI-Applicability-End -->
 
-Value type is integer. Supported operations are Add, Get, Replace and Delete.
+<!-- DisableAppBrowserUI-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsDefenderSecurityCenter/DisableAppBrowserUI
+```
+<!-- DisableAppBrowserUI-OmaUri-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Hide the App and browser protection area*
--   GP name: *AppBrowserProtection_UILockdown*
--   GP path: *Windows Components/Windows Defender Security Center/App and browser protection*
--   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+<!-- DisableAppBrowserUI-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Hide the App and browser protection area in Windows Security.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+Enabled:
 
-- 0 - (Disable) The users can see the display of the app and browser protection area in Windows Defender Security Center.
-- 1 - (Enable) The users cannot see the display of the app and browser protection area in Windows Defender Security Center.
+The App and browser protection area will be hidden.
 
-<!--/SupportedValues-->
-<!--/Policy-->
+Disabled:
 
-<hr/>
+The App and browser protection area will be shown.
 
-<!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disablecleartpmbutton"></a>**WindowsDefenderSecurityCenter/DisableClearTpmButton**  
+Not configured:
 
-<!--SupportedSKUs-->
+Same as Disabled.
+<!-- DisableAppBrowserUI-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableAppBrowserUI-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableAppBrowserUI-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableAppBrowserUI-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableAppBrowserUI-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableAppBrowserUI-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | (Disable) The users can see the display of the app and browser protection area in Windows Defender Security Center. |
+| 1 | (Enable) The users can't see the display of the app and browser protection area in Windows Defender Security Center. |
+<!-- DisableAppBrowserUI-AllowedValues-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisableAppBrowserUI-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AppBrowserProtection_UILockdown |
+| Friendly Name | Hide the App and browser protection area |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Security > App and browser protection |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\App and Browser protection |
+| Registry Value Name | UILockdown |
+| ADMX File Name | WindowsDefenderSecurityCenter.admx |
+<!-- DisableAppBrowserUI-GpMapping-End -->
+
+<!-- DisableAppBrowserUI-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableAppBrowserUI-Examples-End -->
+
+<!-- DisableAppBrowserUI-End -->
+
+<!-- DisableClearTpmButton-Begin -->
+## DisableClearTpmButton
+
+<!-- DisableClearTpmButton-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+<!-- DisableClearTpmButton-Applicability-End -->
+
+<!-- DisableClearTpmButton-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsDefenderSecurityCenter/DisableClearTpmButton
+```
+<!-- DisableClearTpmButton-OmaUri-End -->
+
+<!-- DisableClearTpmButton-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Disable the Clear TPM button in Windows Security.
 
 Enabled:
+
 The Clear TPM button will be unavailable for use.
 
 Disabled:
-The Clear TPM button will be available for use on supported systems.
+
+The Clear TPM button will be available for use.
 
 Not configured:
+
 Same as Disabled.
+<!-- DisableClearTpmButton-Description-End -->
+
+<!-- DisableClearTpmButton-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableClearTpmButton-Editable-End -->
+
+<!-- DisableClearTpmButton-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableClearTpmButton-DFProperties-End -->
+
+<!-- DisableClearTpmButton-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | (Disabled or not configured) The security processor troubleshooting page shows a button that initiates the process to clear the security processor (TPM). |
+| 1 | (Enabled) The security processor troubleshooting page won't show a button to initiate the process to clear the security processor (TPM). |
+<!-- DisableClearTpmButton-AllowedValues-End -->
+
+<!-- DisableClearTpmButton-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DeviceSecurity_DisableClearTpmButton |
+| Friendly Name | Disable the Clear TPM button |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Security > Device security |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Device security |
+| Registry Value Name | DisableClearTpmButton |
+| ADMX File Name | WindowsDefenderSecurityCenter.admx |
+<!-- DisableClearTpmButton-GpMapping-End -->
+
+<!-- DisableClearTpmButton-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableClearTpmButton-Examples-End -->
+
+<!-- DisableClearTpmButton-End -->
+
+<!-- DisableDeviceSecurityUI-Begin -->
+## DisableDeviceSecurityUI
 
-Supported values:
+<!-- DisableDeviceSecurityUI-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- DisableDeviceSecurityUI-Applicability-End -->
 
-- 0 - Disabled (default)
-- 1 - Enabled
+<!-- DisableDeviceSecurityUI-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsDefenderSecurityCenter/DisableDeviceSecurityUI
+```
+<!-- DisableDeviceSecurityUI-OmaUri-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Disable the Clear TPM button*
--   GP name: *DeviceSecurity_DisableClearTpmButton*
--   GP path: *Windows Components/Windows Security/Device security*
--   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+<!-- DisableDeviceSecurityUI-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Hide the Device security area in Windows Security.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+Enabled:
 
-<!--/SupportedValues-->
-<!--Example-->
+The Device security area will be hidden.
 
-<!--/Example-->
-<!--Validation-->
+Disabled:
 
-<!--/Validation-->
-<!--/Policy-->
+The Device security area will be shown.
 
-<hr/>
+Not configured:
 
-<!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disabledevicesecurityui"></a>**WindowsDefenderSecurityCenter/DisableDeviceSecurityUI**  
+Same as Disabled.
+<!-- DisableDeviceSecurityUI-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- DisableDeviceSecurityUI-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableDeviceSecurityUI-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableDeviceSecurityUI-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableDeviceSecurityUI-DFProperties-End -->
+
+<!-- DisableDeviceSecurityUI-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | (Disable) The users can see the display of the Device security area in Windows Defender Security Center. |
+| 1 | (Enable) The users can't see the display of the Device security area in Windows Defender Security Center. |
+<!-- DisableDeviceSecurityUI-AllowedValues-End -->
+
+<!-- DisableDeviceSecurityUI-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DeviceSecurity_UILockdown |
+| Friendly Name | Hide the Device security area |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Security > Device security |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Device security |
+| Registry Value Name | UILockdown |
+| ADMX File Name | WindowsDefenderSecurityCenter.admx |
+<!-- DisableDeviceSecurityUI-GpMapping-End -->
+
+<!-- DisableDeviceSecurityUI-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableDeviceSecurityUI-Examples-End -->
+
+<!-- DisableDeviceSecurityUI-End -->
+
+<!-- DisableEnhancedNotifications-Begin -->
+## DisableEnhancedNotifications
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableEnhancedNotifications-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- DisableEnhancedNotifications-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableEnhancedNotifications-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsDefenderSecurityCenter/DisableEnhancedNotifications
+```
+<!-- DisableEnhancedNotifications-OmaUri-End -->
 
-<hr/>
+<!-- DisableEnhancedNotifications-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Only show critical notifications from Windows Security.
 
-<!--/Scope-->
-<!--Description-->
-Use this policy setting if you want to disable the display of the Device security area in the Windows Defender Security Center. If you disable or do not configure this setting, Windows Defender Security Center will display this area.
+If the Suppress all notifications GP setting has been enabled, this setting will have no effect.
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Hide the Device security area*
--   GP name: *DeviceSecurity_UILockdown*
--   GP path: *Windows Components/Windows Defender Security Center/Device security*
--   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+Enabled:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-Valid values:
+Local users will only see critical notifications from Windows Security. They won't see other types of notifications, such as regular PC or device health information.
 
-- 0 - (Disable) The users can see the display of the Device security area in Windows Defender Security Center.
-- 1 - (Enable) The users cannot see the display of the Device security area in Windows Defender Security Center.
+Disabled:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+Local users will see all types of notifications from Windows Security.
 
-<hr/>
+Not configured:
 
-<!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disableenhancednotifications"></a>**WindowsDefenderSecurityCenter/DisableEnhancedNotifications**  
+Same as Disabled.
+<!-- DisableEnhancedNotifications-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- DisableEnhancedNotifications-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableEnhancedNotifications-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableEnhancedNotifications-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableEnhancedNotifications-DFProperties-End -->
+
+<!-- DisableEnhancedNotifications-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | (Disable) Windows Defender Security Center will display critical and non-critical notifications to users.. |
+| 1 | (Enable) Windows Defender Security Center only display notifications which are considered critical on clients. |
+<!-- DisableEnhancedNotifications-AllowedValues-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableEnhancedNotifications-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Notifications_DisableEnhancedNotifications |
+| Friendly Name | Hide non-critical notifications |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Security > Notifications |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications |
+| Registry Value Name | DisableEnhancedNotifications |
+| ADMX File Name | WindowsDefenderSecurityCenter.admx |
+<!-- DisableEnhancedNotifications-GpMapping-End -->
+
+<!-- DisableEnhancedNotifications-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableEnhancedNotifications-Examples-End -->
+
+<!-- DisableEnhancedNotifications-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableFamilyUI-Begin -->
+## DisableFamilyUI
 
-<hr/>
+<!-- DisableFamilyUI-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- DisableFamilyUI-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-Use this policy if you want Windows Defender Security Center to only display notifications which are considered critical. If you disable or do not configure this setting, Windows Defender Security Center will display critical and non-critical notifications to users.
+<!-- DisableFamilyUI-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsDefenderSecurityCenter/DisableFamilyUI
+```
+<!-- DisableFamilyUI-OmaUri-End -->
 
-> [!NOTE]
-> If Suppress notification is enabled then users will not see critical or non-critical messages.
+<!-- DisableFamilyUI-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Hide the Family options area in Windows Security.
 
-Value type is integer. Supported operations are Add, Get, Replace and Delete.
+Enabled:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Hide non-critical notifications*
--   GP name: *Notifications_DisableEnhancedNotifications*
--   GP path: *Windows Components/Windows Defender Security Center/Notifications*
--   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+The Family options area will be hidden.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+Disabled:
 
-- 0 - (Disable) Windows Defender Security Center will display critical and non-critical notifications to users..
-- 1 - (Enable) Windows Defender Security Center only display notifications which are considered critical on clients.
+The Family options area will be shown.
 
-<!--/SupportedValues-->
-<!--/Policy-->
+Not configured:
 
-<hr/>
+Same as Disabled.
+<!-- DisableFamilyUI-Description-End -->
 
-<!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disablefamilyui"></a>**WindowsDefenderSecurityCenter/DisableFamilyUI**  
+<!-- DisableFamilyUI-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableFamilyUI-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- DisableFamilyUI-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableFamilyUI-DFProperties-End -->
+
+<!-- DisableFamilyUI-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | (Disable) The users can see the display of the family options area in Windows Defender Security Center. |
+| 1 | (Enable) The users can't see the display of the family options area in Windows Defender Security Center. |
+<!-- DisableFamilyUI-AllowedValues-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableFamilyUI-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | FamilyOptions_UILockdown |
+| Friendly Name | Hide the Family options area |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Security > Family options |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Family options |
+| Registry Value Name | UILockdown |
+| ADMX File Name | WindowsDefenderSecurityCenter.admx |
+<!-- DisableFamilyUI-GpMapping-End -->
+
+<!-- DisableFamilyUI-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableFamilyUI-Examples-End -->
+
+<!-- DisableFamilyUI-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableHealthUI-Begin -->
+## DisableHealthUI
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableHealthUI-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- DisableHealthUI-Applicability-End -->
 
-<hr/>
+<!-- DisableHealthUI-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsDefenderSecurityCenter/DisableHealthUI
+```
+<!-- DisableHealthUI-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Use this policy setting if you want to disable the display of the family options area in Windows Defender Security Center. If you disable or do not configure this setting, Windows Defender Security Center will display this area.
+<!-- DisableHealthUI-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Hide the Device performance and health area in Windows Security.
 
-Value type is integer. Supported operations are Add, Get, Replace and Delete.
+Enabled:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Hide the Family options area*
--   GP name: *FamilyOptions_UILockdown*
--   GP path: *Windows Components/Windows Defender Security Center/Family options*
--   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+The Device performance and health area will be hidden.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+Disabled:
 
-- 0 - (Disable) The users can see the display of the family options area in Windows Defender Security Center.
-- 1 - (Enable) The users cannot see the display of the family options area in Windows Defender Security Center.
+The Device performance and health area will be shown.
 
-<!--/SupportedValues-->
-<!--/Policy-->
+Not configured:
 
-<hr/>
+Same as Disabled.
+<!-- DisableHealthUI-Description-End -->
 
-<!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disablehealthui"></a>**WindowsDefenderSecurityCenter/DisableHealthUI**  
+<!-- DisableHealthUI-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableHealthUI-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- DisableHealthUI-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableHealthUI-DFProperties-End -->
+
+<!-- DisableHealthUI-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | (Disable) The users can see the display of the device performance and health area in Windows Defender Security Center. |
+| 1 | (Enable) The users can't see the display of the device performance and health area in Windows Defender Security Center. |
+<!-- DisableHealthUI-AllowedValues-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableHealthUI-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DevicePerformanceHealth_UILockdown |
+| Friendly Name | Hide the Device performance and health area |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Security > Device performance and health |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Device performance and health |
+| Registry Value Name | UILockdown |
+| ADMX File Name | WindowsDefenderSecurityCenter.admx |
+<!-- DisableHealthUI-GpMapping-End -->
+
+<!-- DisableHealthUI-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableHealthUI-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableHealthUI-End -->
 
-<hr/>
+<!-- DisableNetworkUI-Begin -->
+## DisableNetworkUI
 
-<!--/Scope-->
-<!--Description-->
-Use this policy setting if you want to disable the display of the device performance and health area in Windows Defender Security Center. If you disable or do not configure this setting, Windows Defender Security Center will display this area.
+<!-- DisableNetworkUI-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- DisableNetworkUI-Applicability-End -->
 
-Value type is integer. Supported operations are Add, Get, Replace and Delete.
+<!-- DisableNetworkUI-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsDefenderSecurityCenter/DisableNetworkUI
+```
+<!-- DisableNetworkUI-OmaUri-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Hide the Device performance and health area*
--   GP name: *DevicePerformanceHealth_UILockdown*
--   GP path: *Windows Components/Windows Defender Security Center/Device performance and health*
--   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+<!-- DisableNetworkUI-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Hide the Firewall and network protection area in Windows Security.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+Enabled:
 
-- 0 - (Disable) The users can see the display of the device performance and health area in Windows Defender Security Center.
-- 1 - (Enable) The users cannot see the display of the device performance and health area in Windows Defender Security Center.
+The Firewall and network protection area will be hidden.
 
-<!--/SupportedValues-->
-<!--/Policy-->
+Disabled:
 
-<hr/>
+The Firewall and network protection area will be shown.
 
-<!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disablenetworkui"></a>**WindowsDefenderSecurityCenter/DisableNetworkUI**  
+Not configured:
 
-<!--SupportedSKUs-->
+Same as Disabled.
+<!-- DisableNetworkUI-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableNetworkUI-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableNetworkUI-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableNetworkUI-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableNetworkUI-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableNetworkUI-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | (Disable) The users can see the display of the firewall and network protection area in Windows Defender Security Center. |
+| 1 | (Enable) The users can't see the display of the firewall and network protection area in Windows Defender Security Center. |
+<!-- DisableNetworkUI-AllowedValues-End -->
 
-<!--/Scope-->
-<!--Description-->
-Use this policy setting if you want to disable the display of the firewall and network protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows Defender Security Center will display this area.
+<!-- DisableNetworkUI-GpMapping-Begin -->
+**Group policy mapping**:
 
-Value type is integer. Supported operations are Add, Get, Replace and Delete.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Hide the Firewall and network protection area*
--   GP name: *FirewallNetworkProtection_UILockdown*
--   GP path: *Windows Components/Windows Defender Security Center/Firewall and network protection*
--   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
-- 0 - (Disable) The users can see the display of the firewall and network protection area in Windows Defender Security Center.
-- 1 - (Enable) The users cannot see the display of the firewall and network protection area in Windows Defender Security Center.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disablenotifications"></a>**WindowsDefenderSecurityCenter/DisableNotifications**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Use this policy setting if you want to disable the display of Windows Defender Security Center notifications. If you disable or do not configure this setting, Windows Defender Security Center notifications will display on devices.
-
-Value type is integer. Supported operations are Add, Get, Replace and Delete.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Hide all notifications*
--   GP name: *Notifications_DisableNotifications*
--   GP path: *Windows Components/Windows Defender Security Center/Notifications*
--   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
-- 0 - (Disable) The users can see the display of Windows Defender Security Center notifications.
-- 1 - (Enable) The users cannot see the display of Windows Defender Security Center notifications.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disabletpmfirmwareupdatewarning"></a>**WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+| Name | Value |
+|:--|:--|
+| Name | FirewallNetworkProtection_UILockdown |
+| Friendly Name | Hide the Firewall and network protection area |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Security > Firewall and network protection |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Firewall and network protection |
+| Registry Value Name | UILockdown |
+| ADMX File Name | WindowsDefenderSecurityCenter.admx |
+<!-- DisableNetworkUI-GpMapping-End -->
+
+<!-- DisableNetworkUI-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableNetworkUI-Examples-End -->
+
+<!-- DisableNetworkUI-End -->
+
+<!-- DisableNotifications-Begin -->
+## DisableNotifications
+
+<!-- DisableNotifications-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- DisableNotifications-Applicability-End -->
+
+<!-- DisableNotifications-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsDefenderSecurityCenter/DisableNotifications
+```
+<!-- DisableNotifications-OmaUri-End -->
+
+<!-- DisableNotifications-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Hide notifications from Windows Security.
+
+Enabled:
+
+Local users won't see notifications from Windows Security.
+
+Disabled:
+
+Local users can see notifications from Windows Security.
+
+Not configured:
+
+Same as Disabled.
+<!-- DisableNotifications-Description-End -->
+
+<!-- DisableNotifications-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableNotifications-Editable-End -->
+
+<!-- DisableNotifications-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableNotifications-DFProperties-End -->
+
+<!-- DisableNotifications-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | (Disable) The users can see the display of Windows Defender Security Center notifications. |
+| 1 | (Enable) The users can't see the display of Windows Defender Security Center notifications. |
+<!-- DisableNotifications-AllowedValues-End -->
+
+<!-- DisableNotifications-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Notifications_DisableNotifications |
+| Friendly Name | Hide all notifications |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Security > Notifications |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications |
+| Registry Value Name | DisableNotifications |
+| ADMX File Name | WindowsDefenderSecurityCenter.admx |
+<!-- DisableNotifications-GpMapping-End -->
+
+<!-- DisableNotifications-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableNotifications-Examples-End -->
+
+<!-- DisableNotifications-End -->
+
+<!-- DisableTpmFirmwareUpdateWarning-Begin -->
+## DisableTpmFirmwareUpdateWarning
+
+<!-- DisableTpmFirmwareUpdateWarning-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+<!-- DisableTpmFirmwareUpdateWarning-Applicability-End -->
+
+<!-- DisableTpmFirmwareUpdateWarning-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning
+```
+<!-- DisableTpmFirmwareUpdateWarning-OmaUri-End -->
+
+<!-- DisableTpmFirmwareUpdateWarning-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Hide the recommendation to update TPM Firmware when a vulnerable firmware is detected.
 
 Enabled:
-Users will not be shown a recommendation to update their TPM Firmware.
+
+Users won't be shown a recommendation to update their TPM Firmware.
 
 Disabled:
-Users will see a recommendation to update their TPM Firmware if Windows Security detects the system contains a TPM with vulnerable firmware.        
+
+Users will see a recommendation to update their TPM Firmware if Windows Security detects the system contains a TPM with vulnerable firmware.
 
 Not configured:
+
 Same as Disabled.
+<!-- DisableTpmFirmwareUpdateWarning-Description-End -->
+
+<!-- DisableTpmFirmwareUpdateWarning-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableTpmFirmwareUpdateWarning-Editable-End -->
+
+<!-- DisableTpmFirmwareUpdateWarning-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableTpmFirmwareUpdateWarning-DFProperties-End -->
+
+<!-- DisableTpmFirmwareUpdateWarning-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | (Disable or Not configured) A warning will be displayed if the firmware of the security processor (TPM) should be updated for TPMs that have a vulnerability. |
+| 1 | (Enabled) No warning will be displayed if the firmware of the security processor (TPM) should be updated. |
+<!-- DisableTpmFirmwareUpdateWarning-AllowedValues-End -->
+
+<!-- DisableTpmFirmwareUpdateWarning-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DeviceSecurity_DisableTpmFirmwareUpdateWarning |
+| Friendly Name | Hide the TPM Firmware Update recommendation. |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Security > Device security |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Device security |
+| Registry Value Name | DisableTpmFirmwareUpdateWarning |
+| ADMX File Name | WindowsDefenderSecurityCenter.admx |
+<!-- DisableTpmFirmwareUpdateWarning-GpMapping-End -->
+
+<!-- DisableTpmFirmwareUpdateWarning-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableTpmFirmwareUpdateWarning-Examples-End -->
+
+<!-- DisableTpmFirmwareUpdateWarning-End -->
+
+<!-- DisableVirusUI-Begin -->
+## DisableVirusUI
 
-Supported values:
+<!-- DisableVirusUI-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- DisableVirusUI-Applicability-End -->
 
-- 0 - Disabled (default)
-- 1 - Enabled
+<!-- DisableVirusUI-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsDefenderSecurityCenter/DisableVirusUI
+```
+<!-- DisableVirusUI-OmaUri-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Hide the TPM Firmware Update recommendation.*
--   GP name: *DeviceSecurity_DisableTpmFirmwareUpdateWarning*
--   GP path: *Windows Components/Windows Security/Device security*
--   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+<!-- DisableVirusUI-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Hide the Virus and threat protection area in Windows Security.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+Enabled:
+
+The Virus and threat protection area will be hidden.
 
-<!--/SupportedValues-->
-<!--Example-->
+Disabled:
 
-<!--/Example-->
-<!--Validation-->
+The Virus and threat protection area will be shown.
 
-<!--/Validation-->
-<!--/Policy-->
+Not configured:
+
+Same as Disabled.
+<!-- DisableVirusUI-Description-End -->
 
-<hr/>
+<!-- DisableVirusUI-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableVirusUI-Editable-End -->
 
-<!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disablevirusui"></a>**WindowsDefenderSecurityCenter/DisableVirusUI**  
+<!-- DisableVirusUI-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisableVirusUI-DFProperties-End -->
+
+<!-- DisableVirusUI-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | (Disable) The users can see the display of the virus and threat protection area in Windows Defender Security Center. |
+| 1 | (Enable) The users can't see the display of the virus and threat protection area in Windows Defender Security Center. |
+<!-- DisableVirusUI-AllowedValues-End -->
+
+<!-- DisableVirusUI-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | VirusThreatProtection_UILockdown |
+| Friendly Name | Hide the Virus and threat protection area |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Security > Virus and threat protection |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Virus and threat protection |
+| Registry Value Name | UILockdown |
+| ADMX File Name | WindowsDefenderSecurityCenter.admx |
+<!-- DisableVirusUI-GpMapping-End -->
+
+<!-- DisableVirusUI-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableVirusUI-Examples-End -->
+
+<!-- DisableVirusUI-End -->
+
+<!-- DisallowExploitProtectionOverride-Begin -->
+## DisallowExploitProtectionOverride
 
-<!--SupportedSKUs-->
+<!-- DisallowExploitProtectionOverride-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- DisallowExploitProtectionOverride-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisallowExploitProtectionOverride-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride
+```
+<!-- DisallowExploitProtectionOverride-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisallowExploitProtectionOverride-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Prevent users from making changes to the Exploit protection settings area in Windows Security.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Enabled:
 
-> [!div class = "checklist"]
-> * Device
+Local users can't make changes in the Exploit protection settings area.
 
-<hr/>
+Disabled:
 
-<!--/Scope-->
-<!--Description-->
-Use this policy setting if you want to disable the display of the virus and threat protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows Defender Security Center will display this area.
+Local users are allowed to make changes in the Exploit protection settings area.
 
-Value type is integer. Supported operations are Add, Get, Replace and Delete.
+Not configured:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Hide the Virus and threat protection area*
--   GP name: *VirusThreatProtection_UILockdown*
--   GP path: *Windows Components/Windows Defender Security Center/Virus and threat protection*
--   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+Same as Disabled.
+<!-- DisallowExploitProtectionOverride-Description-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- DisallowExploitProtectionOverride-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisallowExploitProtectionOverride-Editable-End -->
+
+<!-- DisallowExploitProtectionOverride-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DisallowExploitProtectionOverride-DFProperties-End -->
 
-- 0 - (Disable) The users can see the display of the virus and threat protection area in Windows Defender Security Center.
-- 1 - (Enable) The users cannot see the display of the virus and threat protection area in Windows Defender Security Center.
+<!-- DisallowExploitProtectionOverride-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | (Disable) Local users are allowed to make changes in the exploit protection settings area. |
+| 1 | (Enable) Local users can't make changes in the exploit protection settings area. |
+<!-- DisallowExploitProtectionOverride-AllowedValues-End -->
+
+<!-- DisallowExploitProtectionOverride-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AppBrowserProtection_DisallowExploitProtectionOverride |
+| Friendly Name | Prevent users from modifying settings |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Security > App and browser protection |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\App and Browser protection |
+| Registry Value Name | DisallowExploitProtectionOverride |
+| ADMX File Name | WindowsDefenderSecurityCenter.admx |
+<!-- DisallowExploitProtectionOverride-GpMapping-End -->
 
-<hr/>
+<!-- DisallowExploitProtectionOverride-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisallowExploitProtectionOverride-Examples-End -->
 
-<!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-disallowexploitprotectionoverride"></a>**WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride**  
+<!-- DisallowExploitProtectionOverride-End -->
 
-<!--SupportedSKUs-->
+<!-- Email-Begin -->
+## Email
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Email-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Email-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Email-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsDefenderSecurityCenter/Email
+```
+<!-- Email-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Email-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specify the email address or email ID that will be displayed in Windows Security and associated notifications.
 
-> [!div class = "checklist"]
-> * Device
+Users can click on the contact information to create an email that will be sent to the specified address. The default email application will be used.
 
-<hr/>
+Enabled:
 
-<!--/Scope-->
-<!--Description-->
-Prevent users from making changes to the exploit protection settings area in the Windows Defender Security Center. If you disable or do not configure this setting, local users can make changes in the exploit protection settings area.
+Enter the email address or email ID in the Options section.
 
-Value type is integer. Supported operations are Add, Get, Replace and Delete.
+Disabled:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Prevent users from modifying settings*
--   GP name: *AppBrowserProtection_DisallowExploitProtectionOverride*
--   GP path: *Windows Components/Windows Defender Security Center/App and browser protection*
--   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+A contact email address or email ID won't be shown in either Windows Security or any notifications it creates.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+Not configured:
 
-- 0 - (Disable) Local users are allowed to make changes in the exploit protection settings area.
-- 1 - (Enable) Local users cannot make changes in the exploit protection settings area.
+Same as Disabled.
+<!-- Email-Description-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- Email-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Email-Editable-End -->
 
-<hr/>
+<!-- Email-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-email"></a>**WindowsDefenderSecurityCenter/Email**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Email-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- Email-GpMapping-Begin -->
+**Group policy mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | EnterpriseCustomization_Email |
+| Friendly Name | Specify contact email address or Email ID |
+| Element Name | Email address or email ID. |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Security > Enterprise Customization |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Enterprise Customization |
+| ADMX File Name | WindowsDefenderSecurityCenter.admx |
+<!-- Email-GpMapping-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Email-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Email-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Email-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- EnableCustomizedToasts-Begin -->
+## EnableCustomizedToasts
 
-<hr/>
+<!-- EnableCustomizedToasts-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- EnableCustomizedToasts-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-The email address that is displayed to users.  The default mail application is used to initiate email actions. If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display contact options.
+<!-- EnableCustomizedToasts-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsDefenderSecurityCenter/EnableCustomizedToasts
+```
+<!-- EnableCustomizedToasts-OmaUri-End -->
 
-Value type is string. Supported operations are Add, Get, Replace and Delete.
+<!-- EnableCustomizedToasts-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Display specified contact information to local users in Windows Security notifications.
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Specify contact email address or Email ID*
--   GP name: *EnterpriseCustomization_Email*
--   GP element: *Presentation_EnterpriseCustomization_Email*
--   GP path: *Windows Components/Windows Defender Security Center/Enterprise Customization*
--   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+Enabled:
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+Your company contact information will be displayed in notifications that come from Windows Security.
 
-<hr/>
+After setting this to Enabled, you must configure the Specify contact company name GP setting and at least one of the following GP settings:
 
-<!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-enablecustomizedtoasts"></a>**WindowsDefenderSecurityCenter/EnableCustomizedToasts**  
+-Specify contact phone number or Skype ID
+-Specify contact email number or email ID
+-Specify contact website.
 
-<!--SupportedSKUs-->
+Please note that in some cases we will be limiting the contact options that are displayed based on the notification space available.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+Disabled:
 
-<!--/SupportedSKUs-->
-<hr/>
+No contact information will be shown on notifications.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Not configured:
 
-> [!div class = "checklist"]
-> * Device
+Same as Disabled.
+<!-- EnableCustomizedToasts-Description-End -->
 
-<hr/>
+<!-- EnableCustomizedToasts-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableCustomizedToasts-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
-Enable this policy to display your company name and contact options in the notifications. If you disable or do not configure this setting, or do not provide CompanyName and a minimum of one contact method (Phone using Skype, Email, Help portal URL) Windows Defender Security Center will display a default notification text.
+<!-- EnableCustomizedToasts-DFProperties-Begin -->
+**Description framework properties**:
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableCustomizedToasts-DFProperties-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Configure customized notifications*
--   GP name: *EnterpriseCustomization_EnableCustomizedToasts*
--   GP path: *Windows Components/Windows Defender Security Center/Enterprise Customization*
--   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+<!-- EnableCustomizedToasts-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Notification text. |
+| 1 | (Enable) Notifications contain the company name and contact options. |
+<!-- EnableCustomizedToasts-AllowedValues-End -->
 
-- 0 - (Disable) Notifications contain a default notification text.
-- 1 - (Enable) Notifications contain the company name and contact options.
+<!-- EnableCustomizedToasts-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | EnterpriseCustomization_EnableCustomizedToasts |
+| Friendly Name | Configure customized notifications |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Security > Enterprise Customization |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Enterprise Customization |
+| Registry Value Name | EnableForToasts |
+| ADMX File Name | WindowsDefenderSecurityCenter.admx |
+<!-- EnableCustomizedToasts-GpMapping-End -->
 
-<hr/>
+<!-- EnableCustomizedToasts-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableCustomizedToasts-Examples-End -->
 
-<!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-enableinappcustomization"></a>**WindowsDefenderSecurityCenter/EnableInAppCustomization**  
+<!-- EnableCustomizedToasts-End -->
 
-<!--SupportedSKUs-->
+<!-- EnableInAppCustomization-Begin -->
+## EnableInAppCustomization
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EnableInAppCustomization-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- EnableInAppCustomization-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableInAppCustomization-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsDefenderSecurityCenter/EnableInAppCustomization
+```
+<!-- EnableInAppCustomization-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnableInAppCustomization-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Display specified contact information to local users in a contact card flyout menu in Windows Security.
 
-> [!div class = "checklist"]
-> * Device
+Enabled:
 
-<hr/>
+Your company contact information will be displayed in a flyout menu in Windows Security.
 
-<!--/Scope-->
-<!--Description-->
-Enable this policy to have your company name and contact options displayed in a contact card fly out in Windows Defender Security Center. If you disable or do not configure this setting, or do not provide CompanyName and a minimum of one contact method (Phone using Skype, Email, Help portal URL) Windows Defender Security Center will not display the contact card fly out notification.
+After setting this to Enabled, you must configure the Specify contact company name GP setting and at least one of the following GP settings:
 
-Value type is integer. Supported operations are Add, Get, Replace, and Delete.
+-Specify contact phone number or Skype ID
+-Specify contact email number or email ID
+-Specify contact website.
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Configure customized contact information*
--   GP name: *EnterpriseCustomization_EnableInAppCustomization*
--   GP path: *Windows Components/Windows Defender Security Center/Enterprise Customization*
--   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+Disabled:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+No contact information will be shown in Windows Security.
 
-- 0 - (Disable) Do not display the company name and contact options in the card fly out notification.
-- 1 - (Enable) Display the company name and contact options in the card fly out notification.
+Not configured:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+Same as Disabled.
+<!-- EnableInAppCustomization-Description-End -->
 
-<hr/>
+<!-- EnableInAppCustomization-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableInAppCustomization-Editable-End -->
 
-<!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-hideransomwaredatarecovery"></a>**WindowsDefenderSecurityCenter/HideRansomwareDataRecovery**  
+<!-- EnableInAppCustomization-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableInAppCustomization-DFProperties-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EnableInAppCustomization-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | (Disable) Don't display the company name and contact options in the card fly out notification. |
+| 1 | (Enable) Display the company name and contact options in the card fly out notification. |
+<!-- EnableInAppCustomization-AllowedValues-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnableInAppCustomization-GpMapping-Begin -->
+**Group policy mapping**:
 
-> [!div class = "checklist"]
-> * Device
+| Name | Value |
+|:--|:--|
+| Name | EnterpriseCustomization_EnableInAppCustomization |
+| Friendly Name | Configure customized contact information |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Security > Enterprise Customization |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Enterprise Customization |
+| Registry Value Name | EnableInApp |
+| ADMX File Name | WindowsDefenderSecurityCenter.admx |
+<!-- EnableInAppCustomization-GpMapping-End -->
 
-<hr/>
+<!-- EnableInAppCustomization-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableInAppCustomization-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-Use this policy setting to hide the Ransomware data recovery area in Windows Defender Security Center.
+<!-- EnableInAppCustomization-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Hide the Ransomware data recovery area*
--   GP name: *VirusThreatProtection_HideRansomwareRecovery*
--   GP path: *Windows Components/Windows Defender Security Center/Virus and threat protection*
--   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+<!-- HideRansomwareDataRecovery-Begin -->
+## HideRansomwareDataRecovery
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-Valid values:
+<!-- HideRansomwareDataRecovery-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- HideRansomwareDataRecovery-Applicability-End -->
 
-- 0 - (Disable or not configured) The Ransomware data recovery area will be visible.
-- 1 - (Enable) The Ransomware data recovery area is hidden.
+<!-- HideRansomwareDataRecovery-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsDefenderSecurityCenter/HideRansomwareDataRecovery
+```
+<!-- HideRansomwareDataRecovery-OmaUri-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- HideRansomwareDataRecovery-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Hide the Ransomware data recovery area in Windows Security.
 
-<hr/>
+Enabled:
 
-<!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-hidesecureboot"></a>**WindowsDefenderSecurityCenter/HideSecureBoot**  
+The Ransomware data recovery area will be hidden.
 
-<!--SupportedSKUs-->
+Disabled:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+The Ransomware data recovery area will be shown.
 
-<!--/SupportedSKUs-->
-<hr/>
+Not configured:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Same as Disabled.
+<!-- HideRansomwareDataRecovery-Description-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- HideRansomwareDataRecovery-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideRansomwareDataRecovery-Editable-End -->
 
-<hr/>
+<!-- HideRansomwareDataRecovery-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Scope-->
-<!--Description-->
-Use this policy to hide the Secure boot area in the Windows Defender Security Center.
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- HideRansomwareDataRecovery-DFProperties-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Hide the Secure boot area*
--   GP name: *DeviceSecurity_HideSecureBoot*
--   GP path: *Windows Components/Windows Defender Security Center/Device security*
--   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+<!-- HideRansomwareDataRecovery-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-Valid values:
+| Value | Description |
+|:--|:--|
+| 0 (Default) | (Disable or not configured) The Ransomware data recovery area will be visible. |
+| 1 | (Enable) The Ransomware data recovery area is hidden. |
+<!-- HideRansomwareDataRecovery-AllowedValues-End -->
 
-- 0 - (Disable or not configured) The Secure boot area is displayed.
-- 1 - (Enable) The Secure boot area is hidden.
+<!-- HideRansomwareDataRecovery-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | VirusThreatProtection_HideRansomwareRecovery |
+| Friendly Name | Hide the Ransomware data recovery area |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Security > Virus and threat protection |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Virus and threat protection |
+| Registry Value Name | HideRansomwareRecovery |
+| ADMX File Name | WindowsDefenderSecurityCenter.admx |
+<!-- HideRansomwareDataRecovery-GpMapping-End -->
 
-<hr/>
+<!-- HideRansomwareDataRecovery-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideRansomwareDataRecovery-Examples-End -->
 
-<!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-hidetpmtroubleshooting"></a>**WindowsDefenderSecurityCenter/HideTPMTroubleshooting**  
+<!-- HideRansomwareDataRecovery-End -->
 
-<!--SupportedSKUs-->
+<!-- HideSecureBoot-Begin -->
+## HideSecureBoot
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- HideSecureBoot-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- HideSecureBoot-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HideSecureBoot-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsDefenderSecurityCenter/HideSecureBoot
+```
+<!-- HideSecureBoot-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- HideSecureBoot-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Hide the Secure boot area in Windows Security.
 
-> [!div class = "checklist"]
-> * Device
+Enabled:
 
-<hr/>
+The Secure boot area will be hidden.
 
-<!--/Scope-->
-<!--Description-->
-Use this policy to hide the Security processor (TPM) troubleshooting area in the Windows Defender Security Center.
+Disabled:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Hide the Security processor (TPM) troubleshooter page*
--   GP name: *DeviceSecurity_HideTPMTroubleshooting*
--   GP path: *Windows Components/Windows Defender Security Center/Device security*
--   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+The Secure boot area will be shown.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-Valid values:
+Not configured:
 
-- 0 - (Disable or not configured) The Security processor (TPM) troubleshooting area is displayed.
-- 1 - (Enable) The Security processor (TPM) troubleshooting area is hidden.
+Same as Disabled.
+<!-- HideSecureBoot-Description-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- HideSecureBoot-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideSecureBoot-Editable-End -->
 
-<hr/>
+<!-- HideSecureBoot-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-hidewindowssecuritynotificationareacontrol"></a>**WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl**  
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- HideSecureBoot-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- HideSecureBoot-AllowedValues-Begin -->
+**Allowed values**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Value | Description |
+|:--|:--|
+| 0 (Default) | (Disable or not configured) The Secure boot area is displayed. |
+| 1 | (Enable) The Secure boot area is hidden. |
+<!-- HideSecureBoot-AllowedValues-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HideSecureBoot-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | DeviceSecurity_HideSecureBoot |
+| Friendly Name | Hide the Secure boot area |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Security > Device security |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Device security |
+| Registry Value Name | HideSecureBoot |
+| ADMX File Name | WindowsDefenderSecurityCenter.admx |
+<!-- HideSecureBoot-GpMapping-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- HideSecureBoot-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideSecureBoot-Examples-End -->
 
-<hr/>
+<!-- HideSecureBoot-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- HideTPMTroubleshooting-Begin -->
+## HideTPMTroubleshooting
+
+<!-- HideTPMTroubleshooting-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- HideTPMTroubleshooting-Applicability-End -->
+
+<!-- HideTPMTroubleshooting-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsDefenderSecurityCenter/HideTPMTroubleshooting
+```
+<!-- HideTPMTroubleshooting-OmaUri-End -->
+
+<!-- HideTPMTroubleshooting-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Hide the Security processor (TPM) troubleshooting area in Windows Security.
+
+Enabled:
+
+The Security processor (TPM) troubleshooting area will be hidden.
+
+Disabled:
+
+The Security processor (TPM) troubleshooting area will be shown.
+
+Not configured:
+
+Same as Disabled.
+<!-- HideTPMTroubleshooting-Description-End -->
+
+<!-- HideTPMTroubleshooting-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideTPMTroubleshooting-Editable-End -->
+
+<!-- HideTPMTroubleshooting-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- HideTPMTroubleshooting-DFProperties-End -->
+
+<!-- HideTPMTroubleshooting-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | (Disable or not configured) The Security processor (TPM) troubleshooting area is displayed. |
+| 1 | (Enable) The Security processor (TPM) troubleshooting area is hidden. |
+<!-- HideTPMTroubleshooting-AllowedValues-End -->
+
+<!-- HideTPMTroubleshooting-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DeviceSecurity_HideTPMTroubleshooting |
+| Friendly Name | Hide the Security processor (TPM) troubleshooter page |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Security > Device security |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Device security |
+| Registry Value Name | HideTPMTroubleshooting |
+| ADMX File Name | WindowsDefenderSecurityCenter.admx |
+<!-- HideTPMTroubleshooting-GpMapping-End -->
+
+<!-- HideTPMTroubleshooting-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideTPMTroubleshooting-Examples-End -->
+
+<!-- HideTPMTroubleshooting-End -->
+
+<!-- HideWindowsSecurityNotificationAreaControl-Begin -->
+## HideWindowsSecurityNotificationAreaControl
+
+<!-- HideWindowsSecurityNotificationAreaControl-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+<!-- HideWindowsSecurityNotificationAreaControl-Applicability-End -->
+
+<!-- HideWindowsSecurityNotificationAreaControl-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl
+```
+<!-- HideWindowsSecurityNotificationAreaControl-OmaUri-End -->
+
+<!-- HideWindowsSecurityNotificationAreaControl-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting hides the Windows Security notification area control.
 
 The user needs to either sign out and sign in or reboot the computer for this setting to take effect.
 
 Enabled:
+
 Windows Security notification area control will be hidden.
 
 Disabled:
+
 Windows Security notification area control will be shown.
 
 Not configured:
+
 Same as Disabled.
+<!-- HideWindowsSecurityNotificationAreaControl-Description-End -->
 
-Supported values:
+<!-- HideWindowsSecurityNotificationAreaControl-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideWindowsSecurityNotificationAreaControl-Editable-End -->
 
-- 0 - Disabled (default)
-- 1 - Enabled
+<!-- HideWindowsSecurityNotificationAreaControl-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Hide Windows Security Systray*
--   GP name: *Systray_HideSystray*
--   GP path: *Windows Components/Windows Security/Systray*
--   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- HideWindowsSecurityNotificationAreaControl-DFProperties-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+<!-- HideWindowsSecurityNotificationAreaControl-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | . |
+| 1 | Enabled. |
+<!-- HideWindowsSecurityNotificationAreaControl-AllowedValues-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- HideWindowsSecurityNotificationAreaControl-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Systray_HideSystray |
+| Friendly Name | Hide Windows Security Systray |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Security > Systray |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Systray |
+| Registry Value Name | HideSystray |
+| ADMX File Name | WindowsDefenderSecurityCenter.admx |
+<!-- HideWindowsSecurityNotificationAreaControl-GpMapping-End -->
 
-<hr/>
+<!-- HideWindowsSecurityNotificationAreaControl-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideWindowsSecurityNotificationAreaControl-Examples-End -->
 
-<!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-phone"></a>**WindowsDefenderSecurityCenter/Phone**  
+<!-- HideWindowsSecurityNotificationAreaControl-End -->
 
-<!--SupportedSKUs-->
+<!-- Phone-Begin -->
+## Phone
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Phone-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Phone-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Phone-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsDefenderSecurityCenter/Phone
+```
+<!-- Phone-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Phone-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specify the phone number or Skype ID that will be displayed in Windows Security and associated notifications.
 
-> [!div class = "checklist"]
-> * Device
+Users can click on the contact information to automatically call the supplied number. Skype will be used to initiate the call.
 
-<hr/>
+Enabled:
 
-<!--/Scope-->
-<!--Description-->
-The phone number or Skype ID that is displayed to users.  Skype is used to initiate the call. If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then devices will not display contact options.
+Enter the phone number or Skype ID in the Options section.
 
-Value type is string. Supported operations are Add, Get, Replace, and Delete.
+Disabled:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Specify contact phone number or Skype ID*
--   GP name: *EnterpriseCustomization_Phone*
--   GP element: *Presentation_EnterpriseCustomization_Phone*
--   GP path: *Windows Components/Windows Defender Security Center/Enterprise Customization*
--   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+A contact phone number or Skype ID won't be shown in either Windows Security or any notifications it creates.
 
-<!--/ADMXMapped-->
-<!--/Policy-->
+Not configured:
 
-<hr/>
+Same as Disabled.
+<!-- Phone-Description-End -->
 
-<!--Policy-->
-<a href="" id="windowsdefendersecuritycenter-url"></a>**WindowsDefenderSecurityCenter/URL**  
+<!-- Phone-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Phone-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- Phone-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Phone-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Phone-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | EnterpriseCustomization_Phone |
+| Friendly Name | Specify contact phone number or Skype ID |
+| Element Name | Phone number or Skype ID. |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Security > Enterprise Customization |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Enterprise Customization |
+| ADMX File Name | WindowsDefenderSecurityCenter.admx |
+<!-- Phone-GpMapping-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- Phone-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Phone-Examples-End -->
 
-<hr/>
+<!-- Phone-End -->
 
-<!--/Scope-->
-<!--Description-->
-The help portal URL this is displayed to users. The default browser is used to initiate this action. If you disable or do not configure this setting, or do not have EnableCustomizedToasts or EnableInAppCustomization enabled, then the device will not display contact options.
+<!-- URL-Begin -->
+## URL
 
-Value type is Value type is string. Supported operations are Add, Get, Replace, and Delete.
+<!-- URL-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- URL-Applicability-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Specify contact website*
--   GP name: *EnterpriseCustomization_URL*
--   GP element: *Presentation_EnterpriseCustomization_URL*
--   GP path: *Windows Components/Windows Defender Security Center/Enterprise Customization*
--   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
+<!-- URL-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsDefenderSecurityCenter/URL
+```
+<!-- URL-OmaUri-End -->
 
-<!--/ADMXMapped-->
-<!--/Policy-->
-<hr/>
+<!-- URL-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specify the URL that will be displayed in Windows Security and associated notifications.
 
-<!--/Policies-->
+Users can click on the contact information to visit the specified website. The default web browser will be used.
+
+Enabled:
+
+Enter the URL in the Options section.
+
+Disabled:
+
+A contact website URL won't be shown in either Windows Security or any notifications it creates.
+
+Not configured:
+
+Same as Disabled.
+<!-- URL-Description-End -->
+
+<!-- URL-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- URL-Editable-End -->
+
+<!-- URL-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- URL-DFProperties-End -->
+
+<!-- URL-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | EnterpriseCustomization_URL |
+| Friendly Name | Specify contact website |
+| Element Name | IT or support website. |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Security > Enterprise Customization |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Enterprise Customization |
+| ADMX File Name | WindowsDefenderSecurityCenter.admx |
+<!-- URL-GpMapping-End -->
+
+<!-- URL-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- URL-Examples-End -->
+
+<!-- URL-End -->
+
+<!-- WindowsDefenderSecurityCenter-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- WindowsDefenderSecurityCenter-CspMoreInfo-End -->
+
+<!-- WindowsDefenderSecurityCenter-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

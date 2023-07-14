@@ -1,17 +1,18 @@
 ---
-title: 5139(S) A directory service object was moved. (Windows 10)
+title: 5139(S) A directory service object was moved. 
 description: Describes security event 5139(S) A directory service object was moved.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5139(S): A directory service object was moved.
@@ -77,13 +78,13 @@ This event only generates if the destination object has a particular entry in it
 
 **Subject:**
 
--   **Security ID** \[Type = SID\]**:** SID of account that requested the “move object” operation. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
+-   **Security ID** \[Type = SID\]**:** SID of account that requested the “move object” operation. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID can't be resolved, you'll see the source data in the event.
 
 > **Note**&nbsp;&nbsp;A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
 
 -   **Account Name** \[Type = UnicodeString\]**:** the name of the account that requested the “move object” operation.
 
--   **Account Domain** \[Type = UnicodeString\]**:** subject’s domain or computer name. Formats vary, and include the following:
+-   **Account Domain** \[Type = UnicodeString\]**:** subject’s domain or computer name. Formats vary, and include the following ones:
 
     -   Domain NETBIOS name example: CONTOSO
 
@@ -139,13 +140,13 @@ This event only generates if the destination object has a particular entry in it
 
                 -   We have this GUID to search for: a6b34ab5-551b-4626-b8ee-2b36b3ee6672
 
-                -   Take first 3 sections a6b34ab5-551b-4626.
+                -   Take first three sections a6b34ab5-551b-4626.
 
-                -   For each of these 3 sections you need to change (Invert) the order of bytes, like this b54ab3a6-1b55-2646
+                -   For each of these three sections, you need to change (Invert) the order of bytes, like this b54ab3a6-1b55-2646
 
-                -   Add the last 2 sections without transformation: b54ab3a6-1b55-2646-b8ee-2b36b3ee6672
+                -   Add the last two sections without transformation: b54ab3a6-1b55-2646-b8ee-2b36b3ee6672
 
-                -   Delete - : b54ab3a61b552646b8ee2b36b3ee6672
+                -   Delete: b54ab3a61b552646b8ee2b36b3ee6672
 
                 -   Divide bytes with backslashes: \\b5\\4a\\b3\\a6\\1b\\55\\26\\46\\b8\\ee\\2b\\36\\b3\\ee\\66\\72
 
@@ -185,4 +186,4 @@ For 5139(S): A directory service object was moved.
 
 -   If you need to monitor movement of Active Directory objects with specific classes, monitor for **Class** field with specific class name.
 
--   You must set correct auditing access lists (SACLs) for specific classes within Active Directory container to get [5139](event-5139.md). There is no reason to audit all movement events for all types of Active Directory objects, you need to find the most important locations (organizational units, folders, etc.) and monitor for movement of specific classes only to these locations (user, computer, group, etc.).
+-   You must set correct auditing access lists (SACLs) for specific classes within Active Directory container to get [5139](event-5139.md). There's no reason to audit all movement events for all types of Active Directory objects, you need to find the most important locations (organizational units, folders, etc.) and monitor for movement of specific classes only to these locations (user, computer, group, etc.).

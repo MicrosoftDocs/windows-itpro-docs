@@ -1,26 +1,26 @@
 ---
-title: Trust computer and user accounts for delegation (Windows 10)
+title: Trust computer and user accounts for delegation 
 description: Learn about best practices, security considerations and more for the security policy setting, Enable computer and user accounts to be trusted for delegation.
 ms.assetid: 524062d4-1595-41f3-8ce1-9c85fd21497b
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Enable computer and user accounts to be trusted for delegation
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Enable computer and user accounts to be trusted for delegation** security policy setting.
@@ -28,7 +28,7 @@ Describes the best practices, location, values, policy management, and security 
 ## Reference
 
 This policy setting determines which users can set the **Trusted for Delegation** setting on a user or computer object.
-Security account delegation provides the ability to connect to multiple servers, and each server change retains the authentication credentials of the original client. Delegation of authentication is a capability that client and server applications use when they have multiple tiers. It allows a public-facing service to use client credentials to authenticate to an application or database service. For this configuration to be possible, the client and the server must run under accounts that are trusted for delegation.
+Security account delegation enables connection to multiple servers, and each server change retains the authentication credentials of the original client. Delegation of authentication is a capability that client and server applications use when they have multiple tiers. It allows a public-facing service to use client credentials to authenticate to an application or database service. For this configuration to be possible, the client and the server must run under accounts that are trusted for delegation.
 
 Only administrators who have the **Enable computer and user accounts to be trusted for delegation** credential can set up delegation. Domain admins and Enterprise admins have this credential. The procedure to allow a user to be trusted for delegation depends on the functionality level of the domain.
 
@@ -43,7 +43,7 @@ Constant: SeEnableDelegationPrivilege
 
 ### Best practices
 
--   There is no reason to assign this user right to anyone on member servers and workstations that belong to a domain because it has no meaning in those contexts. It is only relevant on domain controllers and stand-alone devices.
+-   There's no reason to assign this user right to anyone on member servers and workstations that belong to a domain because it has no meaning in those contexts. It's only relevant on domain controllers and stand-alone devices.
 
 ### Location
 
@@ -68,7 +68,7 @@ This section describes features, tools and guidance to help you manage this poli
 
 Modifying this setting might affect compatibility with clients, services, and applications.
 
-A restart of the device is not required for this policy setting to be effective.
+A restart of the device isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 
@@ -99,7 +99,7 @@ after a security incident.
 
 ### Countermeasure
 
-The **Enable computer and user accounts to be trusted for delegation** user right should be assigned only if there is a clear need for its functionality. When you assign this right, you should investigate the use of constrained delegation to control what the delegated accounts can do. On domain controllers, this right is assigned to the Administrators group by default.
+The **Enable computer and user accounts to be trusted for delegation** user right should be assigned only if there's a clear need for its functionality. When you assign this right, you should investigate the use of constrained delegation to control what the delegated accounts can do. On domain controllers, this right is assigned to the Administrators group by default.
 
 >**Note:**  There is no reason to assign this user right to anyone on member servers and workstations that belong to a domain because it has no meaning in those contexts. It is only relevant on domain controllers and stand-alone computers.
  

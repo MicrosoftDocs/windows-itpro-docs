@@ -1,449 +1,816 @@
 ---
-title: Policy CSP - Kerberos
-description: Define the list of trusting forests that the Kerberos client searches when attempting to resolve two-part service principal names (SPNs).
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+title: Kerberos Policy CSP
+description: Learn more about the Kerberos Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/11/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Kerberos-Begin -->
 # Policy CSP - Kerberos
 
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<hr/>
+<!-- Kerberos-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Kerberos-Editable-End -->
 
-<!--Policies-->
-## Kerberos policies  
+<!-- AllowForestSearchOrder-Begin -->
+## AllowForestSearchOrder
 
-<dl>
-  <dd>
-    <a href="#kerberos-allowforestsearchorder">Kerberos/AllowForestSearchOrder</a>
-  </dd>
-  <dd>
-    <a href="#kerberos-cloudkerberosticketretrievalenabled">Kerberos/CloudKerberosTicketRetrievalEnabled</a>
-  </dd>
-  <dd>
-    <a href="#kerberos-kerberosclientsupportsclaimscompoundarmor">Kerberos/KerberosClientSupportsClaimsCompoundArmor</a>
-  </dd>
-  <dd>
-    <a href="#kerberos-pkinithashalgorithmconfiguration">Kerberos/PKInitHashAlgorithmConfiguration</a>
-  </dd>
-  <dd>
-    <a href="#kerberos-requirekerberosarmoring">Kerberos/RequireKerberosArmoring</a>
-  </dd>
-  <dd>
-    <a href="#kerberos-requirestrictkdcvalidation">Kerberos/RequireStrictKDCValidation</a>
-  </dd>
-  <dd>
-    <a href="#kerberos-setmaximumcontexttokensize">Kerberos/SetMaximumContextTokenSize</a>
-  </dd>
-  <dd>
-    <a href="#kerberos-upnnamehints">Kerberos/UPNNameHints</a>
-  </dd>
-</dl>
+<!-- AllowForestSearchOrder-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowForestSearchOrder-Applicability-End -->
 
-> [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+<!-- AllowForestSearchOrder-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Kerberos/AllowForestSearchOrder
+```
+<!-- AllowForestSearchOrder-OmaUri-End -->
 
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="kerberos-allowforestsearchorder"></a>**Kerberos/AllowForestSearchOrder**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowForestSearchOrder-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting defines the list of trusting forests that the Kerberos client searches when attempting to resolve two-part service principal names (SPNs).
 
-If you enable this policy setting, the Kerberos client searches the forests in this list, if it is unable to resolve a two-part SPN. If a match is found, the Kerberos client requests a referral ticket to the appropriate domain.
+- If you enable this policy setting, the Kerberos client searches the forests in this list, if it's unable to resolve a two-part SPN. If a match is found, the Kerberos client requests a referral ticket to the appropriate domain.
 
-If you disable or do not configure this policy setting, the Kerberos client does not search the listed forests to resolve the SPN. If the Kerberos client is unable to resolve the SPN because the name is not found, NTLM authentication might be used.
+- If you disable or don't configure this policy setting, the Kerberos client doesn't search the listed forests to resolve the SPN. If the Kerberos client is unable to resolve the SPN because the name isn't found, NTLM authentication might be used.
+<!-- AllowForestSearchOrder-Description-End -->
 
-<!--/Description-->
+<!-- AllowForestSearchOrder-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowForestSearchOrder-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Use forest search order*
--   GP name: *ForestSearch*
--   GP path: *System/Kerberos*
--   GP ADMX file name: *Kerberos.admx*
+<!-- AllowForestSearchOrder-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowForestSearchOrder-DFProperties-End -->
 
-<hr/>
+<!-- AllowForestSearchOrder-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="kerberos-cloudkerberosticketretrievalenabled"></a>**Kerberos/CloudKerberosTicketRetrievalEnabled**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | ForestSearch |
+| Friendly Name | Use forest search order |
+| Location | Computer Configuration |
+| Path | System > Kerberos |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters |
+| Registry Value Name | UseForestSearch |
+| ADMX File Name | Kerberos.admx |
+<!-- AllowForestSearchOrder-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowForestSearchOrder-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowForestSearchOrder-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowForestSearchOrder-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- CloudKerberosTicketRetrievalEnabled-Begin -->
+## CloudKerberosTicketRetrievalEnabled
 
-> [!div class = "checklist"]
-> * Device
+<!-- CloudKerberosTicketRetrievalEnabled-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- CloudKerberosTicketRetrievalEnabled-Applicability-End -->
 
-<hr/>
+<!-- CloudKerberosTicketRetrievalEnabled-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Kerberos/CloudKerberosTicketRetrievalEnabled
+```
+<!-- CloudKerberosTicketRetrievalEnabled-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy allows retrieving the cloud Kerberos ticket during the logon.
+<!-- CloudKerberosTicketRetrievalEnabled-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows retrieving the Azure AD Kerberos Ticket Granting Ticket during logon.
 
-- If you disable (0) or do not configure this policy setting, the cloud Kerberos ticket is not retrieved during the logon.
+- If you disable or don't configure this policy setting, the Azure AD Kerberos Ticket Granting Ticket isn't retrieved during logon.
 
-- If you enable (1) this policy, the cloud Kerberos ticket is retrieved during the logon.
-<!--/Description-->
+- If you enable this policy setting, the Azure AD Kerberos Ticket Granting Ticket is retrieved during logon.
+<!-- CloudKerberosTicketRetrievalEnabled-Description-End -->
 
-<!--SupportedValues-->
-Valid values:  
-0 (default) - Disabled. 
-1 - Enabled. 
+<!-- CloudKerberosTicketRetrievalEnabled-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CloudKerberosTicketRetrievalEnabled-Editable-End -->
 
-<!--/SupportedValues-->
+<!-- CloudKerberosTicketRetrievalEnabled-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow retrieving the cloud Kerberos ticket during the logon*
--   GP name: *CloudKerberosTicketRetrievalEnabled*
--   GP path: *System/Kerberos*
--   GP ADMX file name: *Kerberos.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- CloudKerberosTicketRetrievalEnabled-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- CloudKerberosTicketRetrievalEnabled-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- CloudKerberosTicketRetrievalEnabled-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="kerberos-kerberosclientsupportsclaimscompoundarmor"></a>**Kerberos/KerberosClientSupportsClaimsCompoundArmor**  
+<!-- CloudKerberosTicketRetrievalEnabled-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | CloudKerberosTicketRetrievalEnabled |
+| Friendly Name | Allow retrieving the Azure AD Kerberos Ticket Granting Ticket during logon |
+| Location | Computer Configuration |
+| Path | System > Kerberos |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters |
+| Registry Value Name | CloudKerberosTicketRetrievalEnabled |
+| ADMX File Name | Kerberos.admx |
+<!-- CloudKerberosTicketRetrievalEnabled-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- CloudKerberosTicketRetrievalEnabled-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CloudKerberosTicketRetrievalEnabled-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CloudKerberosTicketRetrievalEnabled-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- KerberosClientSupportsClaimsCompoundArmor-Begin -->
+## KerberosClientSupportsClaimsCompoundArmor
 
-> [!div class = "checklist"]
-> * Device
+<!-- KerberosClientSupportsClaimsCompoundArmor-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- KerberosClientSupportsClaimsCompoundArmor-Applicability-End -->
 
-<hr/>
+<!-- KerberosClientSupportsClaimsCompoundArmor-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Kerberos/KerberosClientSupportsClaimsCompoundArmor
+```
+<!-- KerberosClientSupportsClaimsCompoundArmor-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting controls whether a device will request claims and compound authentication for Dynamic Access Control and Kerberos armoring using Kerberos authentication with domains that support these features. 
-If you enable this policy setting, the client computers will request claims, provide information required to create compounded authentication and armor Kerberos messages in domains which support claims and compound authentication for Dynamic Access Control and Kerberos armoring.
+<!-- KerberosClientSupportsClaimsCompoundArmor-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting controls whether a device will request claims and compound authentication for Dynamic Access Control and Kerberos armoring using Kerberos authentication with domains that support these features.
 
-If you disable or do not configure this policy setting, the client devices will not request claims, provide information required to create compounded authentication and armor Kerberos messages. Services hosted on the device will not be able to retrieve claims for clients using Kerberos protocol transition.
+- If you enable this policy setting, the client computers will request claims, provide information required to create compounded authentication and armor Kerberos messages in domains which support claims and compound authentication for Dynamic Access Control and Kerberos armoring.
 
-<!--/Description-->
+- If you disable or don't configure this policy setting, the client devices won't request claims, provide information required to create compounded authentication and armor Kerberos messages. Services hosted on the device won't be able to retrieve claims for clients using Kerberos protocol transition.
+<!-- KerberosClientSupportsClaimsCompoundArmor-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Kerberos client support for claims, compound authentication and Kerberos armoring*
--   GP name: *EnableCbacAndArmor*
--   GP path: *System/Kerberos*
--   GP ADMX file name: *Kerberos.admx*
+<!-- KerberosClientSupportsClaimsCompoundArmor-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- KerberosClientSupportsClaimsCompoundArmor-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- KerberosClientSupportsClaimsCompoundArmor-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- KerberosClientSupportsClaimsCompoundArmor-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="kerberos-pkinithashalgorithmconfiguration"></a>**Kerberos/PKInitHashAlgorithmConfiguration**  
+<!-- KerberosClientSupportsClaimsCompoundArmor-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | EnableCbacAndArmor |
+| Friendly Name | Kerberos client support for claims, compound authentication and Kerberos armoring |
+| Location | Computer Configuration |
+| Path | System > Kerberos |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters |
+| Registry Value Name | EnableCbacAndArmor |
+| ADMX File Name | Kerberos.admx |
+<!-- KerberosClientSupportsClaimsCompoundArmor-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- KerberosClientSupportsClaimsCompoundArmor-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- KerberosClientSupportsClaimsCompoundArmor-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- KerberosClientSupportsClaimsCompoundArmor-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PKInitHashAlgorithmConfiguration-Begin -->
+## PKInitHashAlgorithmConfiguration
 
-<hr/>
+<!-- PKInitHashAlgorithmConfiguration-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- PKInitHashAlgorithmConfiguration-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- PKInitHashAlgorithmConfiguration-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Kerberos/PKInitHashAlgorithmConfiguration
+```
+<!-- PKInitHashAlgorithmConfiguration-OmaUri-End -->
 
+<!-- PKInitHashAlgorithmConfiguration-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting controls hash or checksum algorithms used by the Kerberos client when performing certificate authentication.
 
-If you enable this policy, you will be able to configure one of four states for each algorithm:
+- If you enable this policy, you'll be able to configure one of four states for each algorithm:
 
-* **Default**: This sets the algorithm to the recommended state.
-* **Supported**: This enables usage of the algorithm. Enabling algorithms that have been disabled by default may reduce your security.
-* **Audited**: This enables usage of the algorithm and reports an event (ID 205) every time it is used. This state is intended to verify that the algorithm is not being used and can be safely disabled.
-* **Not Supported**: This disables usage of the algorithm. This state is intended for algorithms that are deemed to be insecure.
+- "Default" sets the algorithm to the recommended state.
 
-If you disable or do not configure this policy, each algorithm will assume the **Default** state.
+- "Supported" enables usage of the algorithm. Enabling algorithms that have been disabled by default may reduce your security.
 
-More information about the hash and checksum algorithms supported by the Windows Kerberos client and their default states can be found https://go.microsoft.com/fwlink/?linkid=2169037.
+- "Audited" enables usage of the algorithm and reports an event (ID 206) every time it's used. This state is intended to verify that the algorithm isn't being used and can be safely disabled.
 
-<!--/Description-->
+- "Not Supported" disables usage of the algorithm. This state is intended for algorithms that are deemed to be insecure.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Introducing agility to PKINIT in Kerberos protocol*
--   GP name: *PKInitHashAlgorithmConfiguration*
--   GP path: *System/Kerberos*
--   GP ADMX file name: *Kerberos.admx*
+- If you disable or don't configure this policy, each algorithm will assume the "Default" state.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+Events generated by this configuration: 205, 206, 207, 208.
+<!-- PKInitHashAlgorithmConfiguration-Description-End -->
 
-<hr/>
+<!-- PKInitHashAlgorithmConfiguration-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PKInitHashAlgorithmConfiguration-Editable-End -->
 
-<!--Policy-->
-<a href="" id="kerberos-requirekerberosarmoring"></a>**Kerberos/RequireKerberosArmoring**  
+<!-- PKInitHashAlgorithmConfiguration-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- PKInitHashAlgorithmConfiguration-DFProperties-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PKInitHashAlgorithmConfiguration-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled / Not Configured. |
+| 1 | Enabled. |
+<!-- PKInitHashAlgorithmConfiguration-AllowedValues-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PKInitHashAlgorithmConfiguration-GpMapping-Begin -->
+**Group policy mapping**:
 
-> [!div class = "checklist"]
-> * Device
+| Name | Value |
+|:--|:--|
+| Name | PKInitHashAlgorithmConfiguration |
+| Friendly Name | Configure hash algorithms for certificate logon |
+| Location | Computer Configuration |
+| Path | System > Kerberos |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters |
+| Registry Value Name | PKInitHashAlgorithmConfigurationEnabled |
+| ADMX File Name | Kerberos.admx |
+<!-- PKInitHashAlgorithmConfiguration-GpMapping-End -->
 
-<hr/>
+<!-- PKInitHashAlgorithmConfiguration-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PKInitHashAlgorithmConfiguration-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- PKInitHashAlgorithmConfiguration-End -->
+
+<!-- PKInitHashAlgorithmSHA1-Begin -->
+## PKInitHashAlgorithmSHA1
+
+<!-- PKInitHashAlgorithmSHA1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- PKInitHashAlgorithmSHA1-Applicability-End -->
+
+<!-- PKInitHashAlgorithmSHA1-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Kerberos/PKInitHashAlgorithmSHA1
+```
+<!-- PKInitHashAlgorithmSHA1-OmaUri-End -->
+
+<!-- PKInitHashAlgorithmSHA1-Description-Begin -->
+<!-- Description-Source-Manual-Forced -->
+<!-- PKInitHashAlgorithmSHA1-Description-End -->
+
+<!-- PKInitHashAlgorithmSHA1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This policy setting controls the configuration of the SHA1 algorithm used by the Kerberos client when performing certificate authentication. This policy is only enforced if Kerberos/PKInitHashAlgorithmConfiguration is enabled. You can configure one of four states for this algorithm:
+
+- 0 - **Not Supported**: This state disables usage of the algorithm. This state is intended for algorithms that are deemed to be insecure.
+- 1 - **Default**: This state sets the algorithm to the recommended state.
+- 2 - **Audited**: This state enables usage of the algorithm and reports an event (ID 206) every time it's used. This state is intended to verify that the algorithm isn't being used and can be safely disabled.
+- 3 - **Supported**: This state enables usage of the algorithm. Enabling algorithms that have been disabled by default may reduce your security.
+
+If you don't configure this policy, the SHA1 algorithm will assume the **Default** state.
+<!-- PKInitHashAlgorithmSHA1-Editable-End -->
+
+<!-- PKInitHashAlgorithmSHA1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+| Dependency [PKINIT_Hash_Algorithm_Configuration_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/Kerberos/PKInitHashAlgorithmConfigurationEnabled` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
+<!-- PKInitHashAlgorithmSHA1-DFProperties-End -->
+
+<!-- PKInitHashAlgorithmSHA1-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not Supported. |
+| 1 (Default) | Default. |
+| 2 | Audited. |
+| 3 | Supported. |
+<!-- PKInitHashAlgorithmSHA1-AllowedValues-End -->
+
+<!-- PKInitHashAlgorithmSHA1-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | PKInitHashAlgorithmConfiguration |
+| Friendly Name | Configure hash algorithms for certificate logon |
+| Location | Computer Configuration |
+| Path | System > Kerberos |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters |
+| Registry Value Name | PKInitHashAlgorithmConfigurationEnabled |
+| ADMX File Name | Kerberos.admx |
+<!-- PKInitHashAlgorithmSHA1-GpMapping-End -->
+
+<!-- PKInitHashAlgorithmSHA1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PKInitHashAlgorithmSHA1-Examples-End -->
+
+<!-- PKInitHashAlgorithmSHA1-End -->
+
+<!-- PKInitHashAlgorithmSHA256-Begin -->
+## PKInitHashAlgorithmSHA256
+
+<!-- PKInitHashAlgorithmSHA256-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- PKInitHashAlgorithmSHA256-Applicability-End -->
+
+<!-- PKInitHashAlgorithmSHA256-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Kerberos/PKInitHashAlgorithmSHA256
+```
+<!-- PKInitHashAlgorithmSHA256-OmaUri-End -->
+
+<!-- PKInitHashAlgorithmSHA256-Description-Begin -->
+<!-- Description-Source-Manual-Forced -->
+<!-- PKInitHashAlgorithmSHA256-Description-End -->
+
+<!-- PKInitHashAlgorithmSHA256-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This policy setting controls the configuration of the SHA256 algorithm used by the Kerberos client when performing certificate authentication. This policy is only enforced if Kerberos/PKInitHashAlgorithmConfiguration is enabled. You can configure one of four states for this algorithm:
+
+- 0 - **Not Supported**: This state disables usage of the algorithm. This state is intended for algorithms that are deemed to be insecure.
+- 1 - **Default**: This state sets the algorithm to the recommended state.
+- 2 - **Audited**: This state enables usage of the algorithm and reports an event (ID 206) every time it's used. This state is intended to verify that the algorithm isn't being used and can be safely disabled.
+- 3 - **Supported**: This state enables usage of the algorithm. Enabling algorithms that have been disabled by default may reduce your security.
+
+If you don't configure this policy, the SHA256 algorithm will assume the **Default** state.
+<!-- PKInitHashAlgorithmSHA256-Editable-End -->
+
+<!-- PKInitHashAlgorithmSHA256-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+| Dependency [PKINIT_Hash_Algorithm_Configuration_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/Kerberos/PKInitHashAlgorithmConfigurationEnabled` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
+<!-- PKInitHashAlgorithmSHA256-DFProperties-End -->
+
+<!-- PKInitHashAlgorithmSHA256-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not Supported. |
+| 1 (Default) | Default. |
+| 2 | Audited. |
+| 3 | Supported. |
+<!-- PKInitHashAlgorithmSHA256-AllowedValues-End -->
+
+<!-- PKInitHashAlgorithmSHA256-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | PKInitHashAlgorithmConfiguration |
+| Friendly Name | Configure hash algorithms for certificate logon |
+| Location | Computer Configuration |
+| Path | System > Kerberos |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters |
+| Registry Value Name | PKInitHashAlgorithmConfigurationEnabled |
+| ADMX File Name | Kerberos.admx |
+<!-- PKInitHashAlgorithmSHA256-GpMapping-End -->
+
+<!-- PKInitHashAlgorithmSHA256-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PKInitHashAlgorithmSHA256-Examples-End -->
+
+<!-- PKInitHashAlgorithmSHA256-End -->
+
+<!-- PKInitHashAlgorithmSHA384-Begin -->
+## PKInitHashAlgorithmSHA384
+
+<!-- PKInitHashAlgorithmSHA384-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- PKInitHashAlgorithmSHA384-Applicability-End -->
+
+<!-- PKInitHashAlgorithmSHA384-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Kerberos/PKInitHashAlgorithmSHA384
+```
+<!-- PKInitHashAlgorithmSHA384-OmaUri-End -->
+
+<!-- PKInitHashAlgorithmSHA384-Description-Begin -->
+<!-- Description-Source-Manual-Forced -->
+<!-- PKInitHashAlgorithmSHA384-Description-End -->
+
+<!-- PKInitHashAlgorithmSHA384-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This policy setting controls the configuration of the SHA384 algorithm used by the Kerberos client when performing certificate authentication. This policy is only enforced if Kerberos/PKInitHashAlgorithmConfiguration is enabled. You can configure one of four states for this algorithm:
+
+- 0 - **Not Supported**: This state disables usage of the algorithm. This state is intended for algorithms that are deemed to be insecure.
+- 1 - **Default**: This state sets the algorithm to the recommended state.
+- 2 - **Audited**: This state enables usage of the algorithm and reports an event (ID 206) every time it's used. This state is intended to verify that the algorithm isn't being used and can be safely disabled.
+- 3 - **Supported**: This state enables usage of the algorithm. Enabling algorithms that have been disabled by default may reduce your security.
+
+If you don't configure this policy, the SHA384 algorithm will assume the **Default** state.
+<!-- PKInitHashAlgorithmSHA384-Editable-End -->
+
+<!-- PKInitHashAlgorithmSHA384-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+| Dependency [PKINIT_Hash_Algorithm_Configuration_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/Kerberos/PKInitHashAlgorithmConfigurationEnabled` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
+<!-- PKInitHashAlgorithmSHA384-DFProperties-End -->
+
+<!-- PKInitHashAlgorithmSHA384-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not Supported. |
+| 1 (Default) | Default. |
+| 2 | Audited. |
+| 3 | Supported. |
+<!-- PKInitHashAlgorithmSHA384-AllowedValues-End -->
+
+<!-- PKInitHashAlgorithmSHA384-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | PKInitHashAlgorithmConfiguration |
+| Friendly Name | Configure hash algorithms for certificate logon |
+| Location | Computer Configuration |
+| Path | System > Kerberos |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters |
+| Registry Value Name | PKInitHashAlgorithmConfigurationEnabled |
+| ADMX File Name | Kerberos.admx |
+<!-- PKInitHashAlgorithmSHA384-GpMapping-End -->
+
+<!-- PKInitHashAlgorithmSHA384-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PKInitHashAlgorithmSHA384-Examples-End -->
+
+<!-- PKInitHashAlgorithmSHA384-End -->
+
+<!-- PKInitHashAlgorithmSHA512-Begin -->
+## PKInitHashAlgorithmSHA512
+
+<!-- PKInitHashAlgorithmSHA512-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+<!-- PKInitHashAlgorithmSHA512-Applicability-End -->
+
+<!-- PKInitHashAlgorithmSHA512-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Kerberos/PKInitHashAlgorithmSHA512
+```
+<!-- PKInitHashAlgorithmSHA512-OmaUri-End -->
+
+<!-- PKInitHashAlgorithmSHA512-Description-Begin -->
+<!-- Description-Source-Manual-Forced -->
+<!-- PKInitHashAlgorithmSHA512-Description-End -->
+
+<!-- PKInitHashAlgorithmSHA512-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This policy setting controls the configuration of the SHA512 algorithm used by the Kerberos client when performing certificate authentication. This policy is only enforced if Kerberos/PKInitHashAlgorithmConfiguration is enabled. You can configure one of four states for this algorithm:
+
+- 0 - **Not Supported**: This state disables usage of the algorithm. This state is intended for algorithms that are deemed to be insecure.
+- 1 - **Default**: This state sets the algorithm to the recommended state.
+- 2 - **Audited**: This state enables usage of the algorithm and reports an event (ID 206) every time it's used. This state is intended to verify that the algorithm isn't being used and can be safely disabled.
+- 3 - **Supported**: This state enables usage of the algorithm. Enabling algorithms that have been disabled by default may reduce your security.
+
+If you don't configure this policy, the SHA512 algorithm will assume the **Default** state.
+<!-- PKInitHashAlgorithmSHA512-Editable-End -->
+
+<!-- PKInitHashAlgorithmSHA512-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+| Dependency [PKINIT_Hash_Algorithm_Configuration_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/Kerberos/PKInitHashAlgorithmConfigurationEnabled` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
+<!-- PKInitHashAlgorithmSHA512-DFProperties-End -->
+
+<!-- PKInitHashAlgorithmSHA512-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not Supported. |
+| 1 (Default) | Default. |
+| 2 | Audited. |
+| 3 | Supported. |
+<!-- PKInitHashAlgorithmSHA512-AllowedValues-End -->
+
+<!-- PKInitHashAlgorithmSHA512-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | PKInitHashAlgorithmConfiguration |
+| Friendly Name | Configure hash algorithms for certificate logon |
+| Location | Computer Configuration |
+| Path | System > Kerberos |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters |
+| Registry Value Name | PKInitHashAlgorithmConfigurationEnabled |
+| ADMX File Name | Kerberos.admx |
+<!-- PKInitHashAlgorithmSHA512-GpMapping-End -->
+
+<!-- PKInitHashAlgorithmSHA512-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PKInitHashAlgorithmSHA512-Examples-End -->
+
+<!-- PKInitHashAlgorithmSHA512-End -->
+
+<!-- RequireKerberosArmoring-Begin -->
+## RequireKerberosArmoring
+
+<!-- RequireKerberosArmoring-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- RequireKerberosArmoring-Applicability-End -->
+
+<!-- RequireKerberosArmoring-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Kerberos/RequireKerberosArmoring
+```
+<!-- RequireKerberosArmoring-OmaUri-End -->
+
+<!-- RequireKerberosArmoring-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting controls whether a computer requires that Kerberos message exchanges be armored when communicating with a domain controller.
 
-Warning: When a domain does not support Kerberos armoring by enabling "Support Dynamic Access Control and Kerberos armoring", then all authentication for all its users will fail from computers with this policy setting enabled.
+> [!WARNING]
+> When a domain doesn't support Kerberos armoring by enabling "Support Dynamic Access Control and Kerberos armoring", then all authentication for all its users will fail from computers with this policy setting enabled.
 
-If you enable this policy setting, the client computers in the domain enforce the use of Kerberos armoring in only authentication service (AS) and ticket-granting service (TGS) message exchanges with the domain controllers. 
+- If you enable this policy setting, the client computers in the domain enforce the use of Kerberos armoring in only authentication service (AS) and ticket-granting service (TGS) message exchanges with the domain controllers.
 
 > [!NOTE]
-> The Kerberos Group Policy "Kerberos client support for claims, compound authentication and Kerberos armoring" must also be enabled to support Kerberos armoring. 
+> The Kerberos Group Policy "Kerberos client support for claims, compound authentication and Kerberos armoring" must also be enabled to support Kerberos armoring.
 
-If you disable or do not configure this policy setting, the client computers in the domain enforce the use of Kerberos armoring when possible as supported by the target domain.
+- If you disable or don't configure this policy setting, the client computers in the domain enforce the use of Kerberos armoring when possible as supported by the target domain.
+<!-- RequireKerberosArmoring-Description-End -->
 
-<!--/Description-->
+<!-- RequireKerberosArmoring-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RequireKerberosArmoring-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Fail authentication requests when Kerberos armoring is not available*
--   GP name: *ClientRequireFast*
--   GP path: *System/Kerberos*
--   GP ADMX file name: *Kerberos.admx*
+<!-- RequireKerberosArmoring-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RequireKerberosArmoring-DFProperties-End -->
 
-<hr/>
+<!-- RequireKerberosArmoring-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="kerberos-requirestrictkdcvalidation"></a>**Kerberos/RequireStrictKDCValidation**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | ClientRequireFast |
+| Friendly Name | Fail authentication requests when Kerberos armoring is not available |
+| Location | Computer Configuration |
+| Path | System > Kerberos |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters |
+| Registry Value Name | RequireFast |
+| ADMX File Name | Kerberos.admx |
+<!-- RequireKerberosArmoring-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- RequireKerberosArmoring-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RequireKerberosArmoring-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RequireKerberosArmoring-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RequireStrictKDCValidation-Begin -->
+## RequireStrictKDCValidation
 
-> [!div class = "checklist"]
-> * Device
+<!-- RequireStrictKDCValidation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- RequireStrictKDCValidation-Applicability-End -->
 
-<hr/>
+<!-- RequireStrictKDCValidation-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Kerberos/RequireStrictKDCValidation
+```
+<!-- RequireStrictKDCValidation-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting controls the Kerberos client's behavior in validating the KDC certificate for smart card and system certificate logon.  
+<!-- RequireStrictKDCValidation-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting controls the Kerberos client's behavior in validating the KDC certificate for smart card and system certificate logon.
 
-If you enable this policy setting, the Kerberos client requires that the KDC's X.509 certificate contains the KDC key purpose object identifier in the Extended Key Usage (EKU) extensions, and that the KDC's X.509 certificate contains a dNSName subjectAltName (SAN) extension that matches the DNS name of the domain. If the computer is joined to a domain, the Kerberos client requires that the KDC's X.509 certificate must be signed by a Certificate Authority (CA) in the NTAuth store. If the computer is not joined to a domain, the Kerberos client allows the root CA certificate on the smart card to be used in the path validation of the KDC's X.509 certificate.
+- If you enable this policy setting, the Kerberos client requires that the KDC's X.509 certificate contains the KDC key purpose object identifier in the Extended Key Usage (EKU) extensions, and that the KDC's X.509 certificate contains a dNSName subjectAltName (SAN) extension that matches the DNS name of the domain. If the computer is joined to a domain, the Kerberos client requires that the KDC's X.509 certificate must be signed by a Certificate Authority (CA) in the NTAuth store. If the computer isn't joined to a domain, the Kerberos client allows the root CA certificate on the smart card to be used in the path validation of the KDC's X.509 certificate.
 
-If you disable or do not configure this policy setting, the Kerberos client requires only that the KDC certificate contain the Server Authentication purpose object identifier in the EKU extensions which can be issued to any server.
+- If you disable or don't configure this policy setting, the Kerberos client requires only that the KDC certificate contains the Server Authentication purpose object identifier in the EKU extensions which can be issued to any server.
+<!-- RequireStrictKDCValidation-Description-End -->
 
-<!--/Description-->
+<!-- RequireStrictKDCValidation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RequireStrictKDCValidation-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Require strict KDC validation*
--   GP name: *ValidateKDC*
--   GP path: *System/Kerberos*
--   GP ADMX file name: *Kerberos.admx*
+<!-- RequireStrictKDCValidation-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RequireStrictKDCValidation-DFProperties-End -->
 
-<hr/>
+<!-- RequireStrictKDCValidation-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="kerberos-setmaximumcontexttokensize"></a>**Kerberos/SetMaximumContextTokenSize**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | ValidateKDC |
+| Friendly Name | Require strict KDC validation |
+| Location | Computer Configuration |
+| Path | System > Kerberos |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters |
+| Registry Value Name | KdcValidation |
+| ADMX File Name | Kerberos.admx |
+<!-- RequireStrictKDCValidation-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- RequireStrictKDCValidation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RequireStrictKDCValidation-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RequireStrictKDCValidation-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SetMaximumContextTokenSize-Begin -->
+## SetMaximumContextTokenSize
 
-> [!div class = "checklist"]
-> * Device
+<!-- SetMaximumContextTokenSize-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- SetMaximumContextTokenSize-Applicability-End -->
 
-<hr/>
+<!-- SetMaximumContextTokenSize-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Kerberos/SetMaximumContextTokenSize
+```
+<!-- SetMaximumContextTokenSize-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- SetMaximumContextTokenSize-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to set the value returned to applications which request the maximum size of the SSPI context token buffer size.
 
-The size of the context token buffer determines the maximum size of SSPI context tokens an application expects and allocates. Depending upon authentication request processing and group memberships, the buffer might be smaller than the actual size of the SSPI context token. 
+The size of the context token buffer determines the maximum size of SSPI context tokens an application expects and allocates. Depending upon authentication request processing and group memberships, the buffer might be smaller than the actual size of the SSPI context token.
 
-If you enable this policy setting, the Kerberos client or server uses the configured value, or the locally allowed maximum value, whichever is smaller.
+- If you enable this policy setting, the Kerberos client or server uses the configured value, or the locally allowed maximum value, whichever is smaller.
 
-If you disable or do not configure this policy setting, the Kerberos client or server uses the locally configured value or the default value. 
+- If you disable or don't configure this policy setting, the Kerberos client or server uses the locally configured value or the default value.
 
 > [!NOTE]
-> This policy setting configures the existing MaxTokenSize registry value in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\Kerberos\Parameters, which was added in Windows XP and Windows Server 2003, with a default value of 12,000 bytes. Beginning with Windows 8 the default is 48,000 bytes. Due to HTTP's base64 encoding of authentication context tokens, it is not advised to set this value more than 48,000 bytes.
+> This policy setting configures the existing MaxTokenSize registry value in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\Kerberos\Parameters, which was added in Windows XP and Windows Server 2003, with a default value of 12,000 bytes. Beginning with Windows 8 the default is 48,000 bytes. Due to HTTP's base64 encoding of authentication context tokens, it isn't advised to set this value more than 48,000 bytes.
+<!-- SetMaximumContextTokenSize-Description-End -->
 
-<!--/Description-->
+<!-- SetMaximumContextTokenSize-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SetMaximumContextTokenSize-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Set maximum Kerberos SSPI context token buffer size*
--   GP name: *MaxTokenSize*
--   GP path: *System/Kerberos*
--   GP ADMX file name: *Kerberos.admx*
+<!-- SetMaximumContextTokenSize-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SetMaximumContextTokenSize-DFProperties-End -->
 
-<hr/>
+<!-- SetMaximumContextTokenSize-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="kerberos-upnnamehints"></a>**Kerberos/UPNNameHints**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | MaxTokenSize |
+| Friendly Name | Set maximum Kerberos SSPI context token buffer size |
+| Location | Computer Configuration |
+| Path | System > Kerberos |
+| Registry Key Name | System\CurrentControlSet\Control\Lsa\Kerberos\Parameters |
+| Registry Value Name | EnableMaxTokenSize |
+| ADMX File Name | Kerberos.admx |
+<!-- SetMaximumContextTokenSize-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- SetMaximumContextTokenSize-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SetMaximumContextTokenSize-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SetMaximumContextTokenSize-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- UPNNameHints-Begin -->
+## UPNNameHints
 
-> [!div class = "checklist"]
-> * Device
+<!-- UPNNameHints-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+<!-- UPNNameHints-Applicability-End -->
 
-<hr/>
+<!-- UPNNameHints-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Kerberos/UPNNameHints
+```
+<!-- UPNNameHints-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Adds a list of domains that an Azure Active Directory joined device can attempt to contact when it cannot resolve a UPN to a principal.
+<!-- UPNNameHints-Description-Begin -->
+<!-- Description-Source-DDF -->
+Devices joined to Azure Active Directory in a hybrid environment need to interact with Active Directory Domain Controllers, but they lack the built-in ability to find a Domain Controller that a domain-joined device has. This can cause failures when such a device needs to resolve an AAD UPN into an Active Directory Principal.
+This parameter adds a list of domains that an Azure Active Directory joined device should attempt to contact if it's otherwise unable to resolve a UPN to a principal.
+<!-- UPNNameHints-Description-End -->
 
-Devices joined to Azure Active Directory in a hybrid environment need to interact with Active Directory Domain Controllers, but they lack the built-in ability to find a Domain Controller that a domain-joined device has. This can cause failures when such a device needs to resolve an Azure Active Directory UPN into an Active Directory Principal. You can use this policy to avoid those failures.
+<!-- UPNNameHints-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- UPNNameHints-Editable-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
+<!-- UPNNameHints-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `0xF000`) |
+<!-- UPNNameHints-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- UPNNameHints-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- UPNNameHints-Examples-End -->
 
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
+<!-- UPNNameHints-End -->
 
-<!--/Policies-->
+<!-- Kerberos-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Kerberos-CspMoreInfo-End -->
 
+<!-- Kerberos-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

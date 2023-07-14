@@ -1,17 +1,15 @@
 ---
 title: More kiosk methods and reference information (Windows 10/11)
 description: Find more information for configuring, validating, and troubleshooting kiosk configuration.
-ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
 ms.reviewer: sybruckm
-manager: dansimp
-ms.author: greglin
-keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-author: greg-lindsay
+manager: aaroncz
+ms.author: lizlong
+ms.prod: windows-client
+author: lizgt2000
 ms.localizationpriority: medium
 ms.topic: reference
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # More kiosk methods and reference information
@@ -35,5 +33,4 @@ Topic | Description
 [Use AppLocker to create a Windows client kiosk](lock-down-windows-10-applocker.md) | Learn how to use AppLocker to configure a Windows client kiosk device running Enterprise or Education so that users can only run a few specific apps.
 [Use Shell Launcher to create a Windows client kiosk](kiosk-shelllauncher.md) |  Using Shell Launcher, you can configure a kiosk device that runs a Windows application as the user interface.
 [Use MDM Bridge WMI Provider to create a Windows client kiosk](kiosk-mdm-bridge.md) | Environments that use Windows Management Instrumentation (WMI) can use the MDM Bridge WMI Provider to configure the MDM_AssignedAccess class.
-[Troubleshoot kiosk mode issues](kiosk-troubleshoot.md) | Tips for troubleshooting multi-app kiosk configuration.
-
+[Troubleshoot kiosk mode issues](/troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting) | Tips for troubleshooting multi-app kiosk configuration.

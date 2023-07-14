@@ -1,30 +1,18 @@
 ---
-title: Configure the Application Identity service (Windows)
+title: Configure the Application Identity service
 description: This topic for IT professionals shows how to configure the Application Identity service to start automatically or manually.
-ms.assetid: dc469599-37fd-448b-b23e-5b8e4f17e561
 ms.reviewer: 
-ms.author: dansimp
-ms.pagetype: security
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
+ms.author: vinpa
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+author: vinaypamnani-msft
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 07/01/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Configure the Application Identity service
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -33,7 +21,7 @@ This topic for IT professionals shows how to configure the Application Identity 
 
 The Application Identity service determines and verifies the identity of an app. Stopping this service will prevent AppLocker policies from being enforced.
 
->**Important:**  When using Group Policy, you must configure it to start automatically in at least one Group Policy Object (GPO) that applies AppLocker rules. This is because AppLocker uses this service to verify the attributes of a file.
+>**Important:**  When using Group Policy, you must configure it to start automatically in at least one Group Policy Object (GPO) that applies AppLocker rules. This is because AppLocker uses this service to verify the attributes of a file.
  
 **To start the Application Identity service automatically using Group Policy**
 

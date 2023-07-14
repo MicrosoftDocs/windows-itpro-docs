@@ -1,21 +1,20 @@
 ---
-title: Monitor central access policy and rule definitions (Windows 10)
+title: Monitor central access policy and rule definitions 
 description: Learn how to use advanced security auditing options to monitor changes to central access policy and central access rule definitions.
 ms.assetid: 553f98a6-7606-4518-a3c5-347a33105130
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/09/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Monitor central access policy and rule definitions
@@ -23,7 +22,7 @@ ms.technology: windows-sec
 
 This article for IT professionals describes how to monitor changes to central access policy and central access rule definitions when you use advanced security auditing options to monitor dynamic access control objects.
 
-Central access policies and rules determine access permissions for files on multiple file servers, so it's important to monitor changes to them. Like user claim and device claim definitions, central access policy and rule definitions reside in Active Directory Domain Services (AD DS). You can monitor them just like any other object in Active Directory. These policies and rules are critical elements in a Dynamic Access Control deployment. They are stored in AD DS, so they're less likely to be tampered with than other network objects. But it's important to monitor them for potential changes in security auditing and to verify that policies are being enforced.
+Central access policies and rules determine access permissions for files on multiple file servers, so it's important to monitor changes to them. Like user claim and device claim definitions, central access policy and rule definitions reside in Active Directory Domain Services (AD DS). You can monitor them just like any other object in Active Directory. These policies and rules are critical elements in a Dynamic Access Control deployment. They're stored in AD DS, so they're less likely to be tampered with than other network objects. But it's important to monitor them for potential changes in security auditing and to verify that policies are being enforced.
 
 Follow the procedures in this article to configure settings to monitor changes to central access policy and central access rule definitions and to verify the changes. These procedures assume that you've configured and deployed Dynamic Access Control, including central access policies, claims, and other components, in your network. If you haven't yet deployed Dynamic Access Control in your network, see [Deploy a Central Access Policy (demonstration steps)](/windows-server/identity/solution-guides/deploy-a-central-access-policy--demonstration-steps-).
 

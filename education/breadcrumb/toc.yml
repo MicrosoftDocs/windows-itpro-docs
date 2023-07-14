@@ -1,3 +1,4 @@
+items:
 - name: Docs
   tocHref: /
   topicHref: /
@@ -12,4 +13,12 @@
       - name: Windows
         tocHref: /education/windows
         topicHref: /education/windows/index
-        
+      - name: Windows
+        tocHref: /windows/configuration/
+        topicHref: /education/windows/index
+      - name: Windows
+        tocHref: /windows/deployment/
+        topicHref: /education/windows/index
+      - name: Windows
+        tocHref: /windows/Security/Application Control for Windows/
+        topicHref: /education/windows/index

@@ -1,24 +1,12 @@
 ---
-title: Smart Card Group Policy and Registry Settings (Windows)
+title: Smart Card Group Policy and Registry Settings 
 description: Discover the Group Policy, registry key, local security policy, and credential delegation policy settings that are available for configuring smart cards.
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.collection: M365-identity-device-management
+ms.reviewer: ardenw
 ms.topic: article
-ms.localizationpriority: medium
 ms.date: 11/02/2021
-ms.reviewer: 
 ---
 
 # Smart Card Group Policy and Registry Settings
-
-Applies to: Windows 10, Windows 11, Windows Server 2016 and above
 
 This article for IT professionals and smart card developers describes the Group Policy settings, registry key settings, local security policy settings, and credential delegation policy settings that are available for configuring smart cards.
 
@@ -93,10 +81,10 @@ The following table lists the default values for these GPO settings. Variations 
 
 ### Allow certificates with no extended key usage certificate attribute
 
-You can use this policy setting to allow certificates without an enhanced key usage (EKU) set to be used for sign in.
+You can use this policy setting to allow certificates without an extended key usage (EKU) set to be used for sign-in.
 
 > [!NOTE]
-> Enhanced key usage certificate attribute is also known as extended key usage.
+> extended key usage certificate attribute is also known as extended key usage.
 > 
 > In versions of Windows before Windows Vista, smart card certificates that are used to sign in require an EKU extension with a smart card logon object identifier. This policy setting can be used to modify that restriction.
 
@@ -149,9 +137,9 @@ When this setting isn't turned on, the feature is not available.
 
 ### Allow signature keys valid for Logon
 
-You can use this policy setting to allow signature key–based certificates to be enumerated and available for sign in. 
+You can use this policy setting to allow signature key–based certificates to be enumerated and available for sign-in.
 
-When this setting is turned on, any certificates that are available on the smart card with a signature-only key are listed on the sign-in screen. 
+When this setting is turned on, any certificates that are available on the smart card with a signature-only key are listed on the sign-in screen.
 
 When this setting isn't turned on, certificates available on the smart card with a signature-only key aren't listed on the sign-in screen.
 
@@ -164,7 +152,7 @@ When this setting isn't turned on, certificates available on the smart card with
 
 ### Allow time invalid certificates
 
-You can use this policy setting to permit certificates that are expired or not yet valid to be displayed for sign in.
+You can use this policy setting to permit certificates that are expired or not yet valid to be displayed for sign-in.
 
 > [!NOTE]
 > Before Windows Vista, certificates were required to contain a valid time and to not expire. For a certificate to be used, it must be accepted by the domain controller. This policy setting only controls which certificates are displayed on the client computer.
@@ -182,7 +170,7 @@ When this policy setting isn't turned on, certificates that are expired or not y
 
 ### Allow user name hint
 
-You can use this policy setting to determine whether an optional field appears during sign in and provides a subsequent elevation process where users can enter their username or username and domain, which associates a certificate with the user. 
+You can use this policy setting to determine whether an optional field appears during sign-in and provides a subsequent elevation process where users can enter their username or username and domain, which associates a certificate with the user. 
 
 When this policy setting is turned on, users see an optional field where they can enter their username or username and domain. 
 
@@ -195,7 +183,7 @@ When this policy setting isn't turned on, users don't see this optional field.
 | Policy management | Restart requirement: None<br>Sign off requirement: None<br>Policy conflicts: None    |
 | Notes and resources                  |              |
 
-### Configure root certificate clean up
+### Configure root certificate clean-up
 
 You can use this policy setting to manage the cleanup behavior of root certificates. Certificates are verified by using a trust chain, and the trust anchor for the digital certificate is the Root Certification Authority (CA). A CA can issue multiple certificates with the root certificate as the top certificate of the tree structure. A private key is used to sign other certificates. This creates an inherited trustworthiness for all certificates immediately under the root certificate. 
 
@@ -222,7 +210,7 @@ You can use this policy setting to change the default message that a user sees i
 
 When this policy setting is turned on, you can create and manage the displayed message that the user sees when a smart card is blocked. 
 
-When this policy setting isn't turned on (and the integrated unblock feature is also enabled), the user sees the system’s default message when the smart card is blocked.
+When this policy setting isn't turned on (and the integrated unblock feature is also enabled), the user sees the system's default message when the smart card is blocked.
 
 | **Item**          | **Description**             |
 |--------------------------------------|-------------------------|
@@ -236,7 +224,7 @@ When this policy setting isn't turned on (and the integrated unblock feature is 
 You can use this policy setting to configure which valid sign-in certificates are displayed. 
 
 > [!NOTE]
-> During the certificate renewal period, a user’s smart card can have multiple valid sign-in certificates issued from the same certificate template, which can cause confusion about which certificate to select. This behavior can occur when a certificate is renewed and the old certificate has not expired yet.
+> During the certificate renewal period, a user's smart card can have multiple valid sign-in certificates issued from the same certificate template, which can cause confusion about which certificate to select. This behavior can occur when a certificate is renewed and the old certificate has not expired yet.
 > 
 > If two certificates are issued from the same template with the same major version and they are for the same user (this is determined by their UPN), they are determined to be the same.  
 
@@ -255,17 +243,17 @@ This policy setting is applied to the computer after the [Allow time invalid cer
 
 ### Force the reading of all certificates from the smart card
 
-You can use this policy setting to manage how Windows reads all certificates from the smart card for sign in. During sign in, Windows reads only the default certificate from the smart card unless it supports retrieval of all certificates in a single call. This policy setting forces Windows to read all the certificates from the smart card.
+You can use this policy setting to manage how Windows reads all certificates from the smart card for sign-in. During sign-in, Windows reads only the default certificate from the smart card unless it supports retrieval of all certificates in a single call. This policy setting forces Windows to read all the certificates from the smart card.
 
-When this policy setting is turned on, Windows attempts to read all certificates from the smart card, regardless of the CSP feature set. 
+When this policy setting is turned on, Windows attempts to read all certificates from the smart card, regardless of the CSP feature set.
 
-When this policy isn't turned on, Windows attempts to read only the default certificate from smart cards that don't support retrieval of all certificates in a single call. Certificates other than the default aren't available for sign in.
+When this policy isn't turned on, Windows attempts to read only the default certificate from smart cards that don't support retrieval of all certificates in a single call. Certificates other than the default aren't available for sign-in.
 
 | **Item**          | **Description**                 |
 |--------------------------------------|----------------------------------------------------------------------------|
 | Registry key      | **ForceReadingAllCertificates** |
 | Default values    | No changes per operating system versions<br>Disabled and not configured are equivalent |
-| Policy management | Restart requirement: None<br>Sign off requirement: None<br>Policy conflicts: None<br><br>**Important**: Enabling this policy setting can adversely impact performance during the sign in process in certain situations.  |
+| Policy management | Restart requirement: None<br>Sign off requirement: None<br>Policy conflicts: None<br><br>**Important**: Enabling this policy setting can adversely impact performance during the sign-in process in certain situations.  |
 | Notes and resources                  | Contact the smart card vendor to determine if your smart card and associated CSP support the required behavior.                |
 
 ### Notify user of successful smart card driver installation
@@ -288,7 +276,7 @@ When this setting isn't turned on, the user doesn't see a smart card device driv
 You can use this policy setting to prevent Credential Manager from returning plaintext PINs. 
 
 > [!NOTE]
-> Credential Manager is controlled by the user on the local computer, and it stores credentials from supported browsers and Windows applications. Credentials are saved in special encrypted folders on the computer under the user’s profile. 
+> Credential Manager is controlled by the user on the local computer, and it stores credentials from supported browsers and Windows applications. Credentials are saved in special encrypted folders on the computer under the user's profile. 
 
 When this policy setting is turned on, Credential Manager doesn't return a plaintext PIN. 
 
@@ -303,14 +291,14 @@ When this setting isn't turned on, Credential Manager can return plaintext PINs.
 
 ### Reverse the subject name stored in a certificate when displaying
 
-You can use this policy setting to control the way the subject name appears during sign in.
+You can use this policy setting to control the way the subject name appears during sign-in.
 
 > [!NOTE]
 > To help users distinguish one certificate from another, the user principal name (UPN) and the common name are displayed by default. For example, when this setting is enabled, if the certificate subject is CN=User1, OU=Users, DN=example, DN=com and the UPN is user1@example.com, "User1" is displayed with "user1@example.com." If the UPN is not present, the entire subject name is displayed. This setting controls the appearance of that subject name, and it might need to be adjusted for your organization.
 
-When this policy setting is turned on, the subject name during sign in appears reversed from the way that it's stored in the certificate.
+When this policy setting is turned on, the subject name during sign-in appears reversed from the way that it's stored in the certificate.
 
-When this policy setting isn’t turned on, the subject name appears the same as it’s stored in the certificate.
+When this policy setting isn't turned on, the subject name appears the same as it's stored in the certificate.
 
 
 | **Item**          | **Description**                 |
@@ -346,7 +334,7 @@ You can use this policy setting to manage the root certificate propagation that 
 
 When this policy setting is turned on, root certificate propagation occurs when the user inserts the smart card.
 
-When this policy setting isn’t turned on, root certificate propagation doesn’t occur when the user inserts the smart card.
+When this policy setting isn't turned on, root certificate propagation doesn't occur when the user inserts the smart card.
 
 | **Item**          | **Description**   |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------|

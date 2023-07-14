@@ -1,437 +1,514 @@
 ---
-title: Policy CSP - ADMX_nca
-description: Policy CSP - ADMX_nca
-ms.author: dansimp
+title: ADMX_nca Policy CSP
+description: Learn more about the ADMX_nca Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/11/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 09/14/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_nca-Begin -->
 # Policy CSP - ADMX_nca
->[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ADMX_nca policies  
+<!-- ADMX_nca-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_nca-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-nca-corporateresources">ADMX_nca/CorporateResources</a>
-  </dd>
-  <dd>
-    <a href="#admx-nca-customcommands">ADMX_nca/CustomCommands</a>
-  </dd>
-  <dd>
-    <a href="#admx-nca-dtes">ADMX_nca/DTEs</a>
-  </dd>
-  <dd>
-    <a href="#admx-nca-friendlyname">ADMX_nca/FriendlyName</a>
-  </dd>
-  <dd>
-    <a href="#admx-nca-localnameson">ADMX_nca/LocalNamesOn</a>
-  </dd>
-  <dd>
-    <a href="#admx-nca-passivemode">ADMX_nca/PassiveMode</a>
-  </dd>
-  <dd>
-    <a href="#admx-nca-showui">ADMX_nca/ShowUI</a>
-  </dd>
-  <dd>
-    <a href="#admx-nca-supportemail">ADMX_nca/SupportEmail</a>
-  </dd>
-</dl>
+<!-- CorporateResources-Begin -->
+## CorporateResources
 
+<!-- CorporateResources-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- CorporateResources-Applicability-End -->
 
-<hr/>
+<!-- CorporateResources-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_nca/CorporateResources
+```
+<!-- CorporateResources-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-nca-corporateresources"></a>**ADMX_nca/CorporateResources**  
+<!-- CorporateResources-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies resources on your intranet that are normally accessible to DirectAccess clients. Each entry is a string that identifies the type of resource and the location of the resource.
 
-<!--SupportedSKUs-->
+Each string can be one of the following types:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- A DNS name or IPv6 address that NCA pings. The syntax is "PING:" followed by a fully qualified domain name (FQDN) that resolves to an IPv6 address, or an IPv6 address. Examples: PING:myserver.corp.contoso.com or PING:2002:836b:1::1.
 
-<!--/SupportedSKUs-->
-<hr/>
+Note.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+We recommend that you use FQDNs instead of IPv6 addresses wherever possible.
 
-> [!div class = "checklist"]
-> * Device
+Important.
 
-<hr/>
+At least one of the entries must be a PING: resource.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting specifies resources on your intranet that are normally accessible to DirectAccess clients. Each entry is a string that identifies the type of resource and the location of the resource. 
+-	A Uniform Resource Locator (URL) that NCA queries with a Hypertext Transfer Protocol (HTTP) request. The contents of the web page don't matter. The syntax is "HTTP:" followed by a URL. The host portion of the URL must resolve to an IPv6 address of a Web server or contain an IPv6 address. Examples: HTTP:https://myserver.corp.contoso.com/ or HTTP:https://2002:836b:1::1/.
 
-Each string can be one of the following types:  
-
-- A DNS name or IPv6 address that NCA pings. The syntax is “PING:” followed by a fully qualified domain name (FQDN) that resolves to an IPv6 address, or an IPv6 address. Examples: PING:myserver.corp.contoso.com or PING:2002:836b:1::1. 
-
-> [!NOTE]
-> We recommend that you use FQDNs instead of IPv6 addresses wherever possible.
-
-> [!IMPORTANT]
-> At least one of the entries must be a PING: resource.
-> -	A Uniform Resource Locator (URL) that NCA queries with a Hypertext Transfer Protocol (HTTP) request. The contents of the web page do not matter. The syntax is “HTTP:” followed by a URL. The host portion of the URL must resolve to an IPv6 address of a Web server or contain an IPv6 address. Examples: HTTP:http://myserver.corp.contoso.com/ or HTTP:http://2002:836b:1::1/.
-> -	A Universal Naming Convention (UNC) path to a file that NCA checks for existence. The contents of the file do not matter. The syntax is “FILE:” followed by a UNC path. The ComputerName portion of the UNC path must resolve to an IPv6 address or contain an IPv6 address. Examples: FILE:\\myserver\myshare\test.txt or FILE:\\2002:836b:1::1\myshare\test.txt.
+-	A Universal Naming Convention (UNC) path to a file that NCA checks for existence. The contents of the file don't matter. The syntax is "FILE:" followed by a UNC path. The ComputerName portion of the UNC path must resolve to an IPv6 address or contain an IPv6 address. Examples: FILE:\\myserver\myshare\test.txt or FILE:\\2002:836b:1::1\myshare\test.txt.
 
 You must configure this setting to have complete NCA functionality.
+<!-- CorporateResources-Description-End -->
 
-<!--/Description-->
+<!-- CorporateResources-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CorporateResources-Editable-End -->
 
+<!-- CorporateResources-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Corporate Resources*
--   GP name: *CorporateResources*
--   GP path: *Network\DirectAccess Client Experience Settings*
--   GP ADMX file name: *nca.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CorporateResources-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- CorporateResources-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-nca-customcommands"></a>**ADMX_nca/CustomCommands**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | CorporateResources |
+| Friendly Name | Corporate Resources |
+| Location | Computer Configuration |
+| Path | Network > DirectAccess Client Experience Settings |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityAssistant |
+| ADMX File Name | nca.admx |
+<!-- CorporateResources-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- CorporateResources-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CorporateResources-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CorporateResources-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- CustomCommands-Begin -->
+## CustomCommands
 
-> [!div class = "checklist"]
-> * Device
+<!-- CustomCommands-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- CustomCommands-Applicability-End -->
 
-<hr/>
+<!-- CustomCommands-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_nca/CustomCommands
+```
+<!-- CustomCommands-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting specifies commands configured by the administrator for custom logging. These commands will run in addition to default log commands.
+<!-- CustomCommands-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies commands configured by the administrator for custom logging. These commands will run in addition to default log commands.
+<!-- CustomCommands-Description-End -->
 
-<!--/Description-->
+<!-- CustomCommands-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CustomCommands-Editable-End -->
 
+<!-- CustomCommands-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Custom Commands*
--   GP name: *CustomCommands*
--   GP path: *Network\DirectAccess Client Experience Settings*
--   GP ADMX file name: *nca.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CustomCommands-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- CustomCommands-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-nca-dtes"></a>**ADMX_nca/DTEs**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | CustomCommands |
+| Friendly Name | Custom Commands |
+| Location | Computer Configuration |
+| Path | Network > DirectAccess Client Experience Settings |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityAssistant\CustomCommands |
+| ADMX File Name | nca.admx |
+<!-- CustomCommands-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- CustomCommands-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CustomCommands-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- CustomCommands-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DTEs-Begin -->
+## DTEs
 
-> [!div class = "checklist"]
-> * Device
+<!-- DTEs-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DTEs-Applicability-End -->
 
-<hr/>
+<!-- DTEs-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_nca/DTEs
+```
+<!-- DTEs-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting specifies the IPv6 addresses of the endpoints of the Internet Protocol security (IPsec) tunnels that enable DirectAccess. NCA attempts to access the resources that are specified in the Corporate Resources setting through these configured tunnel endpoints. 
+<!-- DTEs-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies the IPv6 addresses of the endpoints of the Internet Protocol security (IPsec) tunnels that enable DirectAccess. NCA attempts to access the resources that are specified in the Corporate Resources setting through these configured tunnel endpoints.
 
 By default, NCA uses the same DirectAccess server that the DirectAccess client computer connection is using. In default configurations of DirectAccess, there are typically two IPsec tunnel endpoints: one for the infrastructure tunnel and one for the intranet tunnel. You should configure one endpoint for each tunnel.
 
 Each entry consists of the text PING: followed by the IPv6 address of an IPsec tunnel endpoint. Example: PING:2002:836b:1::836b:1.
 
 You must configure this setting to have complete NCA functionality.
+<!-- DTEs-Description-End -->
 
-<!--/Description-->
+<!-- DTEs-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DTEs-Editable-End -->
 
+<!-- DTEs-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *IPsec Tunnel Endpoints*
--   GP name: *DTEs*
--   GP path: *Network\DirectAccess Client Experience Settings*
--   GP ADMX file name: *nca.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DTEs-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DTEs-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-nca-friendlyname"></a>**ADMX_nca/FriendlyName**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DTEs |
+| Friendly Name | IPsec Tunnel Endpoints |
+| Location | Computer Configuration |
+| Path | Network > DirectAccess Client Experience Settings |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityAssistant\DTEs |
+| ADMX File Name | nca.admx |
+<!-- DTEs-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DTEs-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DTEs-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DTEs-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- FriendlyName-Begin -->
+## FriendlyName
 
-> [!div class = "checklist"]
-> * Device
+<!-- FriendlyName-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- FriendlyName-Applicability-End -->
 
-<hr/>
+<!-- FriendlyName-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_nca/FriendlyName
+```
+<!-- FriendlyName-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting specifies the string that appears for DirectAccess connectivity when the user clicks the Networking notification area icon. For example, you can specify “Contoso Intranet Access” for the DirectAccess clients of the Contoso Corporation.
+<!-- FriendlyName-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies the string that appears for DirectAccess connectivity when the user clicks the Networking notification area icon. For example, you can specify "Contoso Intranet Access" for the DirectAccess clients of the Contoso Corporation.
 
-If this setting is not configured, the string that appears for DirectAccess connectivity is “Corporate Connection”.
+If this setting isn't configured, the string that appears for DirectAccess connectivity is "Corporate Connection".
+<!-- FriendlyName-Description-End -->
 
-<!--/Description-->
+<!-- FriendlyName-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- FriendlyName-Editable-End -->
 
+<!-- FriendlyName-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Friendly Name*
--   GP name: *FriendlyName*
--   GP path: *Network\DirectAccess Client Experience Settings*
--   GP ADMX file name: *nca.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- FriendlyName-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- FriendlyName-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-nca-localnameson"></a>**ADMX_nca/LocalNamesOn**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | FriendlyName |
+| Friendly Name | Friendly Name |
+| Location | Computer Configuration |
+| Path | Network > DirectAccess Client Experience Settings |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityAssistant |
+| ADMX File Name | nca.admx |
+<!-- FriendlyName-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- FriendlyName-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- FriendlyName-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- FriendlyName-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LocalNamesOn-Begin -->
+## LocalNamesOn
 
-> [!div class = "checklist"]
-> * Device
+<!-- LocalNamesOn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LocalNamesOn-Applicability-End -->
 
-<hr/>
+<!-- LocalNamesOn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_nca/LocalNamesOn
+```
+<!-- LocalNamesOn-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting specifies whether the user has Connect and Disconnect options for the DirectAccess entry when the user clicks the Networking notification area icon.
+<!-- LocalNamesOn-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies whether the user has Connect and Disconnect options for the DirectAccess entry when the user clicks the Networking notification area icon.
 
-If the user clicks the Disconnect option, NCA removes the DirectAccess rules from the Name Resolution Policy Table (NRPT) and the DirectAccess client computer uses whatever normal name resolution is available to the client computer in its current network configuration, including sending all DNS queries to the local intranet or Internet DNS servers. Note that NCA does not remove the existing IPsec tunnels and users can still access intranet resources across the DirectAccess server by specifying IPv6 addresses rather than names.
+If the user clicks the Disconnect option, NCA removes the DirectAccess rules from the [Name Resolution Policy Table](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn593632(v=ws.11)) (NRPT) and the DirectAccess client computer uses whatever normal name resolution is available to the client computer in its current network configuration, including sending all DNS queries to the local intranet or Internet DNS servers. Note that NCA doesn't remove the existing IPsec tunnels and users can still access intranet resources across the DirectAccess server by specifying IPv6 addresses rather than names.
 
-The ability to disconnect allows users to specify single-label, unqualified names (such as “PRINTSVR”) for local resources when connected to a different intranet and for temporary access to intranet resources when network location detection has not correctly determined that the DirectAccess client computer is connected to its own intranet.
+The ability to disconnect allows users to specify single-label, unqualified names (such as "PRINTSVR") for local resources when connected to a different intranet and for temporary access to intranet resources when network location detection hasn't correctly determined that the DirectAccess client computer is connected to its own intranet.
 
 To restore the DirectAccess rules to the NRPT and resume normal DirectAccess functionality, the user clicks Connect.
 
-> [!NOTE]
-> If the DirectAccess client computer is on the intranet and has correctly determined its network location, the Disconnect option has no effect because the rules for DirectAccess are already removed from the NRPT.
+Note.
 
-If this setting is not configured, users do not have Connect or Disconnect options.
+If the DirectAccess client computer is on the intranet and has correctly determined its network location, the Disconnect option has no effect because the rules for DirectAccess are already removed from the NRPT.
 
-<!--/Description-->
+If this setting isn't configured, users don't have Connect or Disconnect options.
+<!-- LocalNamesOn-Description-End -->
 
+<!-- LocalNamesOn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LocalNamesOn-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Prefer Local Names Allowed*
--   GP name: *LocalNamesOn*
--   GP path: *Network\DirectAccess Client Experience Settings*
--   GP ADMX file name: *nca.admx*
+<!-- LocalNamesOn-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- LocalNamesOn-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-nca-passivemode"></a>**ADMX_nca/PassiveMode**  
+<!-- LocalNamesOn-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | LocalNamesOn |
+| Friendly Name | Prefer Local Names Allowed |
+| Location | Computer Configuration |
+| Path | Network > DirectAccess Client Experience Settings |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityAssistant |
+| Registry Value Name | NamePreferenceAllowed |
+| ADMX File Name | nca.admx |
+<!-- LocalNamesOn-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LocalNamesOn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LocalNamesOn-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LocalNamesOn-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PassiveMode-Begin -->
+## PassiveMode
 
-<hr/>
+<!-- PassiveMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PassiveMode-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting specifies whether NCA service runs in Passive Mode or not.
+<!-- PassiveMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_nca/PassiveMode
+```
+<!-- PassiveMode-OmaUri-End -->
 
-Set this to Disabled to keep NCA probing actively all the time. If this setting is not configured, NCA probing is in active mode by default.
-<!--/Description-->
+<!-- PassiveMode-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies whether NCA service runs in Passive Mode or not.
 
+Set this to Disabled to keep NCA probing actively all the time. If this setting isn't configured, NCA probing is in active mode by default.
+<!-- PassiveMode-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *DirectAccess Passive Mode*
--   GP name: *PassiveMode*
--   GP path: *Network\DirectAccess Client Experience Settings*
--   GP ADMX file name: *nca.admx*
+<!-- PassiveMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PassiveMode-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- PassiveMode-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-nca-showui"></a>**ADMX_nca/ShowUI**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PassiveMode-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- PassiveMode-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | PassiveMode |
+| Friendly Name | DirectAccess Passive Mode |
+| Location | Computer Configuration |
+| Path | Network > DirectAccess Client Experience Settings |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityAssistant |
+| Registry Value Name | PassiveMode |
+| ADMX File Name | nca.admx |
+<!-- PassiveMode-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PassiveMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PassiveMode-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PassiveMode-End -->
 
-<hr/>
+<!-- ShowUI-Begin -->
+## ShowUI
 
-<!--/Scope-->
-<!--Description-->
-This policy setting specifies whether an entry for DirectAccess connectivity appears when the user clicks the Networking notification area icon.
+<!-- ShowUI-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ShowUI-Applicability-End -->
 
-Set this to Disabled to prevent user confusion when you are just using DirectAccess to remotely manage DirectAccess client computers from your intranet and not providing seamless intranet access. 
+<!-- ShowUI-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_nca/ShowUI
+```
+<!-- ShowUI-OmaUri-End -->
 
-If this setting is not configured, the entry for DirectAccess connectivity appears.
+<!-- ShowUI-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies whether an entry for DirectAccess connectivity appears when the user clicks the Networking notification area icon.
 
-<!--/Description-->
+Set this to Disabled to prevent user confusion when you are just using DirectAccess to remotely manage DirectAccess client computers from your intranet and not providing seamless intranet access.
 
+If this setting isn't configured, the entry for DirectAccess connectivity appears.
+<!-- ShowUI-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *User Interface*
--   GP name: *ShowUI*
--   GP path: *Network\DirectAccess Client Experience Settings*
--   GP ADMX file name: *nca.admx*
+<!-- ShowUI-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ShowUI-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- ShowUI-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-nca-supportemail"></a>**ADMX_nca/SupportEmail**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ShowUI-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- ShowUI-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ShowUI |
+| Friendly Name | User Interface |
+| Location | Computer Configuration |
+| Path | Network > DirectAccess Client Experience Settings |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityAssistant |
+| Registry Value Name | ShowUI |
+| ADMX File Name | nca.admx |
+<!-- ShowUI-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ShowUI-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ShowUI-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ShowUI-End -->
 
-<hr/>
+<!-- SupportEmail-Begin -->
+## SupportEmail
 
-<!--/Scope-->
-<!--Description-->
-This policy setting specifies the e-mail address to be used when sending the log files that are generated by NCA to the network administrator. 
+<!-- SupportEmail-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SupportEmail-Applicability-End -->
+
+<!-- SupportEmail-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_nca/SupportEmail
+```
+<!-- SupportEmail-OmaUri-End -->
+
+<!-- SupportEmail-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies the e-mail address to be used when sending the log files that are generated by NCA to the network administrator.
 
 When the user sends the log files to the Administrator, NCA uses the default e-mail client to open a new message with the support email address in the To: field of the message, then attaches the generated log files as a .html file. The user can review the message and add additional information before sending the message.
+<!-- SupportEmail-Description-End -->
 
-<!--/Description-->
+<!-- SupportEmail-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SupportEmail-Editable-End -->
 
+<!-- SupportEmail-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Support Email Address*
--   GP name: *SupportEmail*
--   GP path: *Network\DirectAccess Client Experience Settings*
--   GP ADMX file name: *nca.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SupportEmail-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- SupportEmail-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | SupportEmail |
+| Friendly Name | Support Email Address |
+| Location | Computer Configuration |
+| Path | Network > DirectAccess Client Experience Settings |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\NetworkConnectivityAssistant |
+| ADMX File Name | nca.admx |
+<!-- SupportEmail-AdmxBacked-End -->
 
-<!--/Policies-->
+<!-- SupportEmail-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SupportEmail-Examples-End -->
 
+<!-- SupportEmail-End -->
+
+<!-- ADMX_nca-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_nca-CspMoreInfo-End -->
+
+<!-- ADMX_nca-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,87 +1,83 @@
 ---
-title: Manage TPM commands (Windows)
-description: This topic for the IT professional describes how to manage which Trusted Platform Module (TPM) commands are available to domain users and to local users.
-ms.assetid: a78e751a-2806-43ae-9c20-2e7ca466b765
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-author: dulcemontemayor
-manager: dansimp
-audience: ITPro
-ms.collection:
-  - M365-security-compliance
-  - highpri
+title: Manage TPM commands 
+description: This article for the IT professional describes how to manage which Trusted Platform Module (TPM) commands are available to domain users and to local users.
+ms.prod: windows-client
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
 ms.topic: conceptual
-ms.date: 09/06/2021
+ms.date: 04/26/2023
+ms.technology: itpro-security
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2022</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2019</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016</a>
 ---
 
 # Manage TPM commands
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
-
-This topic for the IT professional describes how to manage which Trusted Platform Module (TPM) commands are available to domain users and to local users.
+This article for the IT professional describes how to manage which Trusted Platform Module (TPM) commands are available to domain users and to local users.
 
 After a computer user takes ownership of the TPM, the TPM owner can limit which TPM commands can be run by creating a list of blocked TPM commands. The list can be created and applied to all computers in a domain by using Group Policy, or a list can be created for individual computers by using the TPM MMC. Because some hardware vendors might provide additional commands or the Trusted Computing Group may decide to add commands in the future, the TPM MMC also supports the ability to block new commands.
 
 The following procedures describe how to manage the TPM command lists. You must be a member of the local Administrators group.
 
-**To block TPM commands by using the Local Group Policy Editor**
+## Block TPM commands by using the Local Group Policy Editor
 
-1.  Open the Local Group Policy Editor (gpedit.msc). If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then click **Yes**.
-
-    > [!NOTE]
-    > Administrators with appropriate rights in a domain can configure a Group Policy Object (GPO) that can be applied through Active Directory Domain Services (AD DS).
-
-2.  In the console tree, under **Computer Configuration**, expand **Administrative Templates**, and then expand **System**.
-
-3.  Under **System**, click **Trusted Platform Module Services**.
-
-4.  In the details pane, double-click **Configure the list of blocked TPM commands**.
-
-5.  Click **Enabled**, and then click **Show**.
-
-6.  For each command that you want to block, click **Add**, enter the command number, and then click **OK**.
+1. Open the Local Group Policy Editor (gpedit.msc). If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then select **Yes**.
 
     > [!NOTE]
+    >
+    > Administrators with appropriate rights in a domain can configure a Group Policy Object (GPO) that can be applied through Active Directory Domain Services (AD DS).
+
+1. In the console tree, under **Computer Configuration**, expand **Administrative Templates**, and then expand **System**.
+
+1. Under **System**, select **Trusted Platform Module Services**.
+
+1. In the details pane, double-click **Configure the list of blocked TPM commands**.
+
+1. Select **Enabled**, and then select **Show**.
+
+1. For each command that you want to block, select **Add**, enter the command number, and then select **OK**.
+
+    > [!NOTE]
+    >
     > For a list of commands, see links in the [TPM Specification](https://www.trustedcomputinggroup.org/tpm-main-specification/).
 
-7.  After you have added numbers for each command that you want to block, click **OK** twice.
+1. After you have added numbers for each command that you want to block, select **OK** twice.
 
-8.  Close the Local Group Policy Editor.
+1. Close the Local Group Policy Editor.
 
-**To block or allow TPM commands by using the TPM MMC**
+## Block or allow TPM commands by using the TPM MMC
 
-1.  Open the TPM MMC (tpm.msc)
+1. Open the TPM MMC (tpm.msc)
 
-2.  If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then click **Yes**.
+1. If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then select **Yes**.
 
-3.  In the console tree, click **Command Management**. A list of TPM commands is displayed.
+1. In the console tree, select **Command Management**. A list of TPM commands is displayed.
 
-4.  In the list, select a command that you want to block or allow.
+1. In the list, select a command that you want to block or allow.
 
-5.  Under **Actions**, click **Block Selected Command** or **Allow Selected Command** as needed. If **Allow Selected Command** is unavailable, that command is currently blocked by Group Policy.
+1. Under **Actions**, select **Block Selected Command** or **Allow Selected Command** as needed. If **Allow Selected Command** is unavailable, that command is currently blocked by Group Policy.
 
-**To block new commands**
+## Block new commands
 
-1.  Open the TPM MMC (tpm.msc).
+1. Open the TPM MMC (tpm.msc).
 
-    If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then click **Yes**.
+    If the **User Account Control** dialog box appears, confirm that the action it displays is what you want, and then select **Yes**.
 
-2.  In the console tree, click **Command Management**. A list of TPM commands is displayed.
+1. In the console tree, select **Command Management**. A list of TPM commands is displayed.
 
-3.  In the **Action** pane, click **Block New Command**. The **Block New Command** dialog box is displayed.
+1. In the **Action** pane, select **Block New Command**. The **Block New Command** dialog box is displayed.
 
-4.  In the **Command Number** text box, type the number of the new command that you want to block, and then click **OK**. The command number you entered is added to the blocked list.
+1. In the **Command Number** text box, type the number of the new command that you want to block, and then select **OK**. The command number you entered is added to the blocked list.
 
 ## Use the TPM cmdlets
 
 You can manage the TPM using Windows PowerShell. For details, see [TrustedPlatformModule PowerShell cmdlets](/powershell/module/trustedplatformmodule/?view=win10-ps&preserve-view=true).
 
-## Related topics
+## Related articles
 
-- [Trusted Platform Module](trusted-platform-module-top-node.md) (list of topics)
+- [Trusted Platform Module](trusted-platform-module-top-node.md)

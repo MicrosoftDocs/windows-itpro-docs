@@ -1,800 +1,947 @@
 ---
-title: Policy CSP - RemoteManagement
-description: Learn how the Policy CSP - RemoteManagement setting allows you to manage whether the Windows Remote Management (WinRM) client uses Basic authentication.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+title: RemoteManagement Policy CSP
+description: Learn more about the RemoteManagement Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- RemoteManagement-Begin -->
 # Policy CSP - RemoteManagement
 
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
+<!-- RemoteManagement-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RemoteManagement-Editable-End -->
 
-<hr/>
+<!-- AllowBasicAuthentication_Client-Begin -->
+## AllowBasicAuthentication_Client
 
-<!--Policies-->
-## RemoteManagement policies  
+<!-- AllowBasicAuthentication_Client-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- AllowBasicAuthentication_Client-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#remotemanagement-allowbasicauthentication-client">RemoteManagement/AllowBasicAuthentication_Client</a>
-  </dd>
-  <dd>
-    <a href="#remotemanagement-allowbasicauthentication-service">RemoteManagement/AllowBasicAuthentication_Service</a>
-  </dd>
-  <dd>
-    <a href="#remotemanagement-allowcredsspauthenticationclient">RemoteManagement/AllowCredSSPAuthenticationClient</a>
-  </dd>
-  <dd>
-    <a href="#remotemanagement-allowcredsspauthenticationservice">RemoteManagement/AllowCredSSPAuthenticationService</a>
-  </dd>
-  <dd>
-    <a href="#remotemanagement-allowremoteservermanagement">RemoteManagement/AllowRemoteServerManagement</a>
-  </dd>
-  <dd>
-    <a href="#remotemanagement-allowunencryptedtraffic-client">RemoteManagement/AllowUnencryptedTraffic_Client</a>
-  </dd>
-  <dd>
-    <a href="#remotemanagement-allowunencryptedtraffic-service">RemoteManagement/AllowUnencryptedTraffic_Service</a>
-  </dd>
-  <dd>
-    <a href="#remotemanagement-disallowdigestauthentication">RemoteManagement/DisallowDigestAuthentication</a>
-  </dd>
-  <dd>
-    <a href="#remotemanagement-disallownegotiateauthenticationclient">RemoteManagement/DisallowNegotiateAuthenticationClient</a>
-  </dd>
-  <dd>
-    <a href="#remotemanagement-disallownegotiateauthenticationservice">RemoteManagement/DisallowNegotiateAuthenticationService</a>
-  </dd>
-  <dd>
-    <a href="#remotemanagement-disallowstoringofrunascredentials">RemoteManagement/DisallowStoringOfRunAsCredentials</a>
-  </dd>
-  <dd>
-    <a href="#remotemanagement-specifychannelbindingtokenhardeninglevel">RemoteManagement/SpecifyChannelBindingTokenHardeningLevel</a>
-  </dd>
-  <dd>
-    <a href="#remotemanagement-trustedhosts">RemoteManagement/TrustedHosts</a>
-  </dd>
-  <dd>
-    <a href="#remotemanagement-turnoncompatibilityhttplistener">RemoteManagement/TurnOnCompatibilityHTTPListener</a>
-  </dd>
-  <dd>
-    <a href="#remotemanagement-turnoncompatibilityhttpslistener">RemoteManagement/TurnOnCompatibilityHTTPSListener</a>
-  </dd>
-</dl>
+<!-- AllowBasicAuthentication_Client-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteManagement/AllowBasicAuthentication_Client
+```
+<!-- AllowBasicAuthentication_Client-OmaUri-End -->
 
-> [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="remotemanagement-allowbasicauthentication-client"></a>**RemoteManagement/AllowBasicAuthentication_Client**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowBasicAuthentication_Client-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) client uses Basic authentication.
 
-If you enable this policy setting, the WinRM client uses Basic authentication. If WinRM is configured to use HTTP transport, the user name and password are sent over the network as clear text.
+- If you enable this policy setting, the WinRM client uses Basic authentication. If WinRM is configured to use HTTP transport, the user name and password are sent over the network as clear text.
 
-If you disable or do not configure this policy setting, the WinRM client does not use Basic authentication.
+- If you disable or don't configure this policy setting, the WinRM client doesn't use Basic authentication.
+<!-- AllowBasicAuthentication_Client-Description-End -->
 
-<!--/Description-->
+<!-- AllowBasicAuthentication_Client-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowBasicAuthentication_Client-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow Basic authentication*
--   GP name: *AllowBasic_2*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Client*
--   GP ADMX file name: *WindowsRemoteManagement.admx*
+<!-- AllowBasicAuthentication_Client-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowBasicAuthentication_Client-DFProperties-End -->
 
-<hr/>
+<!-- AllowBasicAuthentication_Client-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="remotemanagement-allowbasicauthentication-service"></a>**RemoteManagement/AllowBasicAuthentication_Service**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | AllowBasic_2 |
+| Friendly Name | Allow Basic authentication |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Management (WinRM) > WinRM Client |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Client |
+| Registry Value Name | AllowBasic |
+| ADMX File Name | WindowsRemoteManagement.admx |
+<!-- AllowBasicAuthentication_Client-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowBasicAuthentication_Client-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowBasicAuthentication_Client-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowBasicAuthentication_Client-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowBasicAuthentication_Service-Begin -->
+## AllowBasicAuthentication_Service
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowBasicAuthentication_Service-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- AllowBasicAuthentication_Service-Applicability-End -->
 
-<hr/>
+<!-- AllowBasicAuthentication_Service-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteManagement/AllowBasicAuthentication_Service
+```
+<!-- AllowBasicAuthentication_Service-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- AllowBasicAuthentication_Service-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) service accepts Basic authentication from a remote client.
 
-If you enable this policy setting, the WinRM service accepts Basic authentication from a remote client.
+- If you enable this policy setting, the WinRM service accepts Basic authentication from a remote client.
 
-If you disable or do not configure this policy setting, the WinRM service does not accept Basic authentication from a remote client.
+- If you disable or don't configure this policy setting, the WinRM service doesn't accept Basic authentication from a remote client.
+<!-- AllowBasicAuthentication_Service-Description-End -->
 
-<!--/Description-->
+<!-- AllowBasicAuthentication_Service-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowBasicAuthentication_Service-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow Basic authentication*
--   GP name: *AllowBasic_1*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
--   GP ADMX file name: *WindowsRemoteManagement.admx*
+<!-- AllowBasicAuthentication_Service-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowBasicAuthentication_Service-DFProperties-End -->
 
-<hr/>
+<!-- AllowBasicAuthentication_Service-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="remotemanagement-allowcredsspauthenticationclient"></a>**RemoteManagement/AllowCredSSPAuthenticationClient**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | AllowBasic_1 |
+| Friendly Name | Allow Basic authentication |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Management (WinRM) > WinRM Service |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Service |
+| Registry Value Name | AllowBasic |
+| ADMX File Name | WindowsRemoteManagement.admx |
+<!-- AllowBasicAuthentication_Service-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowBasicAuthentication_Service-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowBasicAuthentication_Service-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowBasicAuthentication_Service-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowCredSSPAuthenticationClient-Begin -->
+## AllowCredSSPAuthenticationClient
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowCredSSPAuthenticationClient-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- AllowCredSSPAuthenticationClient-Applicability-End -->
 
-<hr/>
+<!-- AllowCredSSPAuthenticationClient-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteManagement/AllowCredSSPAuthenticationClient
+```
+<!-- AllowCredSSPAuthenticationClient-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- AllowCredSSPAuthenticationClient-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) client uses CredSSP authentication.
 
-If you enable this policy setting, the WinRM client uses CredSSP authentication.
+- If you enable this policy setting, the WinRM client uses CredSSP authentication.
 
-If you disable or do not configure this policy setting, the WinRM client does not use CredSSP authentication.
+- If you disable or don't configure this policy setting, the WinRM client doesn't use CredSSP authentication.
+<!-- AllowCredSSPAuthenticationClient-Description-End -->
 
-<!--/Description-->
+<!-- AllowCredSSPAuthenticationClient-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowCredSSPAuthenticationClient-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow CredSSP authentication*
--   GP name: *AllowCredSSP_2*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Client*
--   GP ADMX file name: *WindowsRemoteManagement.admx*
+<!-- AllowCredSSPAuthenticationClient-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowCredSSPAuthenticationClient-DFProperties-End -->
 
-<hr/>
+<!-- AllowCredSSPAuthenticationClient-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="remotemanagement-allowcredsspauthenticationservice"></a>**RemoteManagement/AllowCredSSPAuthenticationService**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | AllowCredSSP_2 |
+| Friendly Name | Allow CredSSP authentication |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Management (WinRM) > WinRM Client |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Client |
+| Registry Value Name | AllowCredSSP |
+| ADMX File Name | WindowsRemoteManagement.admx |
+<!-- AllowCredSSPAuthenticationClient-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowCredSSPAuthenticationClient-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowCredSSPAuthenticationClient-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowCredSSPAuthenticationClient-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowCredSSPAuthenticationService-Begin -->
+## AllowCredSSPAuthenticationService
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowCredSSPAuthenticationService-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- AllowCredSSPAuthenticationService-Applicability-End -->
 
-<hr/>
+<!-- AllowCredSSPAuthenticationService-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteManagement/AllowCredSSPAuthenticationService
+```
+<!-- AllowCredSSPAuthenticationService-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- AllowCredSSPAuthenticationService-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) service accepts CredSSP authentication from a remote client.
 
-If you enable this policy setting, the WinRM service accepts CredSSP authentication from a remote client.
+- If you enable this policy setting, the WinRM service accepts CredSSP authentication from a remote client.
 
-If you disable or do not configure this policy setting, the WinRM service does not accept CredSSP authentication from a remote client.
+- If you disable or don't configure this policy setting, the WinRM service doesn't accept CredSSP authentication from a remote client.
+<!-- AllowCredSSPAuthenticationService-Description-End -->
 
-<!--/Description-->
+<!-- AllowCredSSPAuthenticationService-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowCredSSPAuthenticationService-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow CredSSP authentication*
--   GP name: *AllowCredSSP_1*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
--   GP ADMX file name: *WindowsRemoteManagement.admx*
+<!-- AllowCredSSPAuthenticationService-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowCredSSPAuthenticationService-DFProperties-End -->
 
-<hr/>
+<!-- AllowCredSSPAuthenticationService-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="remotemanagement-allowremoteservermanagement"></a>**RemoteManagement/AllowRemoteServerManagement**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | AllowCredSSP_1 |
+| Friendly Name | Allow CredSSP authentication |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Management (WinRM) > WinRM Service |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Service |
+| Registry Value Name | AllowCredSSP |
+| ADMX File Name | WindowsRemoteManagement.admx |
+<!-- AllowCredSSPAuthenticationService-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowCredSSPAuthenticationService-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowCredSSPAuthenticationService-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowCredSSPAuthenticationService-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowRemoteServerManagement-Begin -->
+## AllowRemoteServerManagement
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowRemoteServerManagement-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- AllowRemoteServerManagement-Applicability-End -->
 
-<hr/>
+<!-- AllowRemoteServerManagement-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteManagement/AllowRemoteServerManagement
+```
+<!-- AllowRemoteServerManagement-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- AllowRemoteServerManagement-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) service automatically listens on the network for requests on the HTTP transport over the default HTTP port.
 
-If you enable this policy setting, the WinRM service automatically listens on the network for requests on the HTTP transport over the default HTTP port.
+- If you enable this policy setting, the WinRM service automatically listens on the network for requests on the HTTP transport over the default HTTP port.
 
 To allow WinRM service to receive requests over the network, configure the Windows Firewall policy setting with exceptions for Port 5985 (default port for HTTP).
 
-If you disable or do not configure this policy setting, the WinRM service will not respond to requests from a remote computer, regardless of whether or not any WinRM listeners are configured.
+- If you disable or don't configure this policy setting, the WinRM service won't respond to requests from a remote computer, regardless of whether or not any WinRM listeners are configured.
 
 The service listens on the addresses specified by the IPv4 and IPv6 filters. The IPv4 filter specifies one or more ranges of IPv4 addresses, and the IPv6 filter specifies one or more ranges of IPv6addresses. If specified, the service enumerates the available IP addresses on the computer and uses only addresses that fall within one of the filter ranges.
 
-You should use an asterisk (\*) to indicate that the service listens on all available IP addresses on the computer. When \* is used, other ranges in the filter are ignored. If the filter is left blank, the service does not listen on any addresses.
+You should use an asterisk (*) to indicate that the service listens on all available IP addresses on the computer. When * is used, other ranges in the filter are ignored. If the filter is left blank, the service doesn't listen on any addresses.
 
 For example, if you want the service to listen only on IPv4 addresses, leave the IPv6 filter empty.
 
 Ranges are specified using the syntax IP1-IP2. Multiple ranges are separated using "," (comma) as the delimiter.
 
 Example IPv4 filters:\n2.0.0.1-2.0.0.20, 24.0.0.1-24.0.0.22
-Example IPv6 filters:\n3FFE:FFFF:7654:FEDA:1245:BA98:0000:0000-3FFE:FFFF:7654:FEDA:1245:BA98:3210:4562
+Example IPv6 filters:\n3FFE:FFFF:7654:FEDA:1245:BA98:0000:0000-3. FFE:FFFF:7654:FEDA:1245:BA98:3210:4562.
+<!-- AllowRemoteServerManagement-Description-End -->
 
-<!--/Description-->
+<!-- AllowRemoteServerManagement-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowRemoteServerManagement-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow remote server management through WinRM*
--   GP name: *AllowAutoConfig*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
--   GP ADMX file name: *WindowsRemoteManagement.admx*
+<!-- AllowRemoteServerManagement-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowRemoteServerManagement-DFProperties-End -->
 
-<hr/>
+<!-- AllowRemoteServerManagement-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="remotemanagement-allowunencryptedtraffic-client"></a>**RemoteManagement/AllowUnencryptedTraffic_Client**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | AllowAutoConfig |
+| Friendly Name | Allow remote server management through WinRM |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Management (WinRM) > WinRM Service |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Service |
+| Registry Value Name | AllowAutoConfig |
+| ADMX File Name | WindowsRemoteManagement.admx |
+<!-- AllowRemoteServerManagement-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowRemoteServerManagement-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowRemoteServerManagement-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowRemoteServerManagement-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowUnencryptedTraffic_Client-Begin -->
+## AllowUnencryptedTraffic_Client
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowUnencryptedTraffic_Client-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- AllowUnencryptedTraffic_Client-Applicability-End -->
 
-<hr/>
+<!-- AllowUnencryptedTraffic_Client-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteManagement/AllowUnencryptedTraffic_Client
+```
+<!-- AllowUnencryptedTraffic_Client-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- AllowUnencryptedTraffic_Client-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) client sends and receives unencrypted messages over the network.
 
-If you enable this policy setting, the WinRM client sends and receives unencrypted messages over the network.
+- If you enable this policy setting, the WinRM client sends and receives unencrypted messages over the network.
 
-If you disable or do not configure this policy setting, the WinRM client sends or receives only encrypted messages over the network.
+- If you disable or don't configure this policy setting, the WinRM client sends or receives only encrypted messages over the network.
+<!-- AllowUnencryptedTraffic_Client-Description-End -->
 
-<!--/Description-->
+<!-- AllowUnencryptedTraffic_Client-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowUnencryptedTraffic_Client-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow unencrypted traffic*
--   GP name: *AllowUnencrypted_2*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Client*
--   GP ADMX file name: *WindowsRemoteManagement.admx*
+<!-- AllowUnencryptedTraffic_Client-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowUnencryptedTraffic_Client-DFProperties-End -->
 
-<hr/>
+<!-- AllowUnencryptedTraffic_Client-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="remotemanagement-allowunencryptedtraffic-service"></a>**RemoteManagement/AllowUnencryptedTraffic_Service**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | AllowUnencrypted_2 |
+| Friendly Name | Allow unencrypted traffic |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Management (WinRM) > WinRM Client |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Client |
+| Registry Value Name | AllowUnencryptedTraffic |
+| ADMX File Name | WindowsRemoteManagement.admx |
+<!-- AllowUnencryptedTraffic_Client-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowUnencryptedTraffic_Client-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowUnencryptedTraffic_Client-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowUnencryptedTraffic_Client-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowUnencryptedTraffic_Service-Begin -->
+## AllowUnencryptedTraffic_Service
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowUnencryptedTraffic_Service-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- AllowUnencryptedTraffic_Service-Applicability-End -->
 
-<hr/>
+<!-- AllowUnencryptedTraffic_Service-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteManagement/AllowUnencryptedTraffic_Service
+```
+<!-- AllowUnencryptedTraffic_Service-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- AllowUnencryptedTraffic_Service-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) service sends and receives unencrypted messages over the network.
 
-If you enable this policy setting, the WinRM client sends and receives unencrypted messages over the network.
+- If you enable this policy setting, the WinRM client sends and receives unencrypted messages over the network.
 
-If you disable or do not configure this policy setting, the WinRM client sends or receives only encrypted messages over the network.
+- If you disable or don't configure this policy setting, the WinRM client sends or receives only encrypted messages over the network.
+<!-- AllowUnencryptedTraffic_Service-Description-End -->
 
-<!--/Description-->
+<!-- AllowUnencryptedTraffic_Service-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowUnencryptedTraffic_Service-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow unencrypted traffic*
--   GP name: *AllowUnencrypted_1*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
--   GP ADMX file name: *WindowsRemoteManagement.admx*
+<!-- AllowUnencryptedTraffic_Service-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowUnencryptedTraffic_Service-DFProperties-End -->
 
-<hr/>
+<!-- AllowUnencryptedTraffic_Service-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="remotemanagement-disallowdigestauthentication"></a>**RemoteManagement/DisallowDigestAuthentication**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | AllowUnencrypted_1 |
+| Friendly Name | Allow unencrypted traffic |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Management (WinRM) > WinRM Service |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Service |
+| Registry Value Name | AllowUnencryptedTraffic |
+| ADMX File Name | WindowsRemoteManagement.admx |
+<!-- AllowUnencryptedTraffic_Service-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowUnencryptedTraffic_Service-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowUnencryptedTraffic_Service-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowUnencryptedTraffic_Service-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisallowDigestAuthentication-Begin -->
+## DisallowDigestAuthentication
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisallowDigestAuthentication-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- DisallowDigestAuthentication-Applicability-End -->
 
-<hr/>
+<!-- DisallowDigestAuthentication-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteManagement/DisallowDigestAuthentication
+```
+<!-- DisallowDigestAuthentication-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisallowDigestAuthentication-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) client uses Digest authentication.
 
-If you enable this policy setting, the WinRM client does not use Digest authentication.
+- If you enable this policy setting, the WinRM client doesn't use Digest authentication.
 
-If you disable or do not configure this policy setting, the WinRM client uses Digest authentication.
+- If you disable or don't configure this policy setting, the WinRM client uses Digest authentication.
+<!-- DisallowDigestAuthentication-Description-End -->
 
-<!--/Description-->
+<!-- DisallowDigestAuthentication-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisallowDigestAuthentication-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Disallow Digest authentication*
--   GP name: *DisallowDigest*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Client*
--   GP ADMX file name: *WindowsRemoteManagement.admx*
+<!-- DisallowDigestAuthentication-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisallowDigestAuthentication-DFProperties-End -->
 
-<hr/>
+<!-- DisallowDigestAuthentication-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="remotemanagement-disallownegotiateauthenticationclient"></a>**RemoteManagement/DisallowNegotiateAuthenticationClient**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DisallowDigest |
+| Friendly Name | Disallow Digest authentication |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Management (WinRM) > WinRM Client |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Client |
+| Registry Value Name | AllowDigest |
+| ADMX File Name | WindowsRemoteManagement.admx |
+<!-- DisallowDigestAuthentication-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisallowDigestAuthentication-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisallowDigestAuthentication-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisallowDigestAuthentication-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisallowNegotiateAuthenticationClient-Begin -->
+## DisallowNegotiateAuthenticationClient
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisallowNegotiateAuthenticationClient-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- DisallowNegotiateAuthenticationClient-Applicability-End -->
 
-<hr/>
+<!-- DisallowNegotiateAuthenticationClient-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteManagement/DisallowNegotiateAuthenticationClient
+```
+<!-- DisallowNegotiateAuthenticationClient-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisallowNegotiateAuthenticationClient-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) client uses Negotiate authentication.
 
-If you enable this policy setting, the WinRM client does not use Negotiate authentication.
+- If you enable this policy setting, the WinRM client doesn't use Negotiate authentication.
 
-If you disable or do not configure this policy setting, the WinRM client uses Negotiate authentication.
+- If you disable or don't configure this policy setting, the WinRM client uses Negotiate authentication.
+<!-- DisallowNegotiateAuthenticationClient-Description-End -->
 
-<!--/Description-->
+<!-- DisallowNegotiateAuthenticationClient-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisallowNegotiateAuthenticationClient-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Disallow Negotiate authentication*
--   GP name: *DisallowNegotiate_2*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Client*
--   GP ADMX file name: *WindowsRemoteManagement.admx*
+<!-- DisallowNegotiateAuthenticationClient-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisallowNegotiateAuthenticationClient-DFProperties-End -->
 
-<hr/>
+<!-- DisallowNegotiateAuthenticationClient-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="remotemanagement-disallownegotiateauthenticationservice"></a>**RemoteManagement/DisallowNegotiateAuthenticationService**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DisallowNegotiate_2 |
+| Friendly Name | Disallow Negotiate authentication |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Management (WinRM) > WinRM Client |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Client |
+| Registry Value Name | AllowNegotiate |
+| ADMX File Name | WindowsRemoteManagement.admx |
+<!-- DisallowNegotiateAuthenticationClient-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisallowNegotiateAuthenticationClient-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisallowNegotiateAuthenticationClient-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisallowNegotiateAuthenticationClient-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisallowNegotiateAuthenticationService-Begin -->
+## DisallowNegotiateAuthenticationService
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisallowNegotiateAuthenticationService-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- DisallowNegotiateAuthenticationService-Applicability-End -->
 
-<hr/>
+<!-- DisallowNegotiateAuthenticationService-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteManagement/DisallowNegotiateAuthenticationService
+```
+<!-- DisallowNegotiateAuthenticationService-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisallowNegotiateAuthenticationService-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) service accepts Negotiate authentication from a remote client.
 
-If you enable this policy setting, the WinRM service does not accept Negotiate authentication from a remote client.
+- If you enable this policy setting, the WinRM service doesn't accept Negotiate authentication from a remote client.
 
-If you disable or do not configure this policy setting, the WinRM service accepts Negotiate authentication from a remote client.
+- If you disable or don't configure this policy setting, the WinRM service accepts Negotiate authentication from a remote client.
+<!-- DisallowNegotiateAuthenticationService-Description-End -->
 
-<!--/Description-->
+<!-- DisallowNegotiateAuthenticationService-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisallowNegotiateAuthenticationService-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Disallow Negotiate authentication*
--   GP name: *DisallowNegotiate_1*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
--   GP ADMX file name: *WindowsRemoteManagement.admx*
+<!-- DisallowNegotiateAuthenticationService-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisallowNegotiateAuthenticationService-DFProperties-End -->
 
-<hr/>
+<!-- DisallowNegotiateAuthenticationService-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="remotemanagement-disallowstoringofrunascredentials"></a>**RemoteManagement/DisallowStoringOfRunAsCredentials**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DisallowNegotiate_1 |
+| Friendly Name | Disallow Negotiate authentication |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Management (WinRM) > WinRM Service |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Service |
+| Registry Value Name | AllowNegotiate |
+| ADMX File Name | WindowsRemoteManagement.admx |
+<!-- DisallowNegotiateAuthenticationService-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisallowNegotiateAuthenticationService-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisallowNegotiateAuthenticationService-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisallowNegotiateAuthenticationService-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisallowStoringOfRunAsCredentials-Begin -->
+## DisallowStoringOfRunAsCredentials
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisallowStoringOfRunAsCredentials-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- DisallowStoringOfRunAsCredentials-Applicability-End -->
 
-<hr/>
+<!-- DisallowStoringOfRunAsCredentials-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteManagement/DisallowStoringOfRunAsCredentials
+```
+<!-- DisallowStoringOfRunAsCredentials-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to manage whether the Windows Remote Management (WinRM) service will not allow RunAs credentials to be stored for any plug-ins.
+<!-- DisallowStoringOfRunAsCredentials-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage whether the Windows Remote Management (WinRM) service won't allow RunAs credentials to be stored for any plug-ins.
 
-If you enable this policy setting, the WinRM service will not allow the RunAsUser or RunAsPassword configuration values to be set for any plug-ins.  If a plug-in has already set the RunAsUser and RunAsPassword configuration values, the RunAsPassword configuration value will be erased from the credential store on this computer.
+- If you enable this policy setting, the WinRM service won't allow the RunAsUser or RunAsPassword configuration values to be set for any plug-ins. If a plug-in has already set the RunAsUser and RunAsPassword configuration values, the RunAsPassword configuration value will be erased from the credential store on this computer.
 
-If you disable or do not configure this policy setting, the WinRM service will allow the RunAsUser and RunAsPassword configuration values to be set for plug-ins and the RunAsPassword value will be stored securely.
+- If you disable or don't configure this policy setting, the WinRM service will allow the RunAsUser and RunAsPassword configuration values to be set for plug-ins and the RunAsPassword value will be stored securely.
 
 If you enable and then disable this policy setting,any values that were previously configured for RunAsPassword will need to be reset.
+<!-- DisallowStoringOfRunAsCredentials-Description-End -->
 
-<!--/Description-->
+<!-- DisallowStoringOfRunAsCredentials-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisallowStoringOfRunAsCredentials-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Disallow WinRM from storing RunAs credentials*
--   GP name: *DisableRunAs*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
--   GP ADMX file name: *WindowsRemoteManagement.admx*
+<!-- DisallowStoringOfRunAsCredentials-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisallowStoringOfRunAsCredentials-DFProperties-End -->
 
-<hr/>
+<!-- DisallowStoringOfRunAsCredentials-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="remotemanagement-specifychannelbindingtokenhardeninglevel"></a>**RemoteManagement/SpecifyChannelBindingTokenHardeningLevel**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DisableRunAs |
+| Friendly Name | Disallow WinRM from storing RunAs credentials |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Management (WinRM) > WinRM Service |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Service |
+| Registry Value Name | DisableRunAs |
+| ADMX File Name | WindowsRemoteManagement.admx |
+<!-- DisallowStoringOfRunAsCredentials-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisallowStoringOfRunAsCredentials-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisallowStoringOfRunAsCredentials-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisallowStoringOfRunAsCredentials-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SpecifyChannelBindingTokenHardeningLevel-Begin -->
+## SpecifyChannelBindingTokenHardeningLevel
 
-> [!div class = "checklist"]
-> * Device
+<!-- SpecifyChannelBindingTokenHardeningLevel-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- SpecifyChannelBindingTokenHardeningLevel-Applicability-End -->
 
-<hr/>
+<!-- SpecifyChannelBindingTokenHardeningLevel-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteManagement/SpecifyChannelBindingTokenHardeningLevel
+```
+<!-- SpecifyChannelBindingTokenHardeningLevel-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- SpecifyChannelBindingTokenHardeningLevel-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to set the hardening level of the Windows Remote Management (WinRM) service with regard to channel binding tokens.
 
-If you enable this policy setting, the WinRM service uses the level specified in HardeningLevel to determine whether or not to accept a received request, based on a supplied channel binding token.
+- If you enable this policy setting, the WinRM service uses the level specified in HardeningLevel to determine whether or not to accept a received request, based on a supplied channel binding token.
 
-If you disable or do not configure this policy setting, you can configure the hardening level locally on each computer.
+- If you disable or don't configure this policy setting, you can configure the hardening level locally on each computer.
 
 If HardeningLevel is set to Strict, any request not containing a valid channel binding token is rejected.
 
-If HardeningLevel is set to Relaxed (default value), any request containing an invalid channel binding token is rejected. However, a request that does not contain a channel binding token is accepted (though it is not protected from credential-forwarding attacks).
+If HardeningLevel is set to Relaxed (default value), any request containing an invalid channel binding token is rejected. However, a request that doesn't contain a channel binding token is accepted (though it isn't protected from credential-forwarding attacks).
 
-If HardeningLevel is set to None, all requests are accepted (though they are not protected from credential-forwarding attacks).
+If HardeningLevel is set to None, all requests are accepted (though they aren't protected from credential-forwarding attacks).
+<!-- SpecifyChannelBindingTokenHardeningLevel-Description-End -->
 
-<!--/Description-->
+<!-- SpecifyChannelBindingTokenHardeningLevel-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SpecifyChannelBindingTokenHardeningLevel-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Specify channel binding token hardening level*
--   GP name: *CBTHardeningLevel_1*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
--   GP ADMX file name: *WindowsRemoteManagement.admx*
+<!-- SpecifyChannelBindingTokenHardeningLevel-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SpecifyChannelBindingTokenHardeningLevel-DFProperties-End -->
 
-<hr/>
+<!-- SpecifyChannelBindingTokenHardeningLevel-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="remotemanagement-trustedhosts"></a>**RemoteManagement/TrustedHosts**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | CBTHardeningLevel_1 |
+| Friendly Name | Specify channel binding token hardening level |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Management (WinRM) > WinRM Service |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Service |
+| Registry Value Name | CBTHardeningLevelStatus |
+| ADMX File Name | WindowsRemoteManagement.admx |
+<!-- SpecifyChannelBindingTokenHardeningLevel-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- SpecifyChannelBindingTokenHardeningLevel-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SpecifyChannelBindingTokenHardeningLevel-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SpecifyChannelBindingTokenHardeningLevel-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TrustedHosts-Begin -->
+## TrustedHosts
 
-> [!div class = "checklist"]
-> * Device
+<!-- TrustedHosts-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- TrustedHosts-Applicability-End -->
 
-<hr/>
+<!-- TrustedHosts-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteManagement/TrustedHosts
+```
+<!-- TrustedHosts-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- TrustedHosts-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether the Windows Remote Management (WinRM) client uses the list specified in TrustedHostsList to determine if the destination host is a trusted entity.
 
-If you enable this policy setting, the WinRM client uses the list specified in TrustedHostsList to determine if the destination host is a trusted entity. The WinRM client uses this list when neither HTTPS nor Kerberos are used to authenticate the identity of the host.
+- If you enable this policy setting, the WinRM client uses the list specified in TrustedHostsList to determine if the destination host is a trusted entity. The WinRM client uses this list when neither HTTPS nor Kerberos are used to authenticate the identity of the host.
 
-If you disable or do not configure this policy setting and the WinRM client needs to use the list of trusted hosts, you must configure the list of trusted hosts locally on each computer.
+- If you disable or don't configure this policy setting and the WinRM client needs to use the list of trusted hosts, you must configure the list of trusted hosts locally on each computer.
+<!-- TrustedHosts-Description-End -->
 
-<!--/Description-->
+<!-- TrustedHosts-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TrustedHosts-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Trusted Hosts*
--   GP name: *TrustedHosts*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Client*
--   GP ADMX file name: *WindowsRemoteManagement.admx*
+<!-- TrustedHosts-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TrustedHosts-DFProperties-End -->
 
-<hr/>
+<!-- TrustedHosts-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="remotemanagement-turnoncompatibilityhttplistener"></a>**RemoteManagement/TurnOnCompatibilityHTTPListener**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | TrustedHosts |
+| Friendly Name | Trusted Hosts |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Management (WinRM) > WinRM Client |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Client |
+| Registry Value Name | TrustedHosts |
+| ADMX File Name | WindowsRemoteManagement.admx |
+<!-- TrustedHosts-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- TrustedHosts-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TrustedHosts-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TrustedHosts-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TurnOnCompatibilityHTTPListener-Begin -->
+## TurnOnCompatibilityHTTPListener
 
-> [!div class = "checklist"]
-> * Device
+<!-- TurnOnCompatibilityHTTPListener-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- TurnOnCompatibilityHTTPListener-Applicability-End -->
 
-<hr/>
+<!-- TurnOnCompatibilityHTTPListener-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteManagement/TurnOnCompatibilityHTTPListener
+```
+<!-- TurnOnCompatibilityHTTPListener-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- TurnOnCompatibilityHTTPListener-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting turns on or turns off an HTTP listener created for backward compatibility purposes in the Windows Remote Management (WinRM) service.
 
-If you enable this policy setting, the HTTP listener always appears.
+- If you enable this policy setting, the HTTP listener always appears.
 
-If you disable or do not configure this policy setting, the HTTP listener never appears.
+- If you disable or don't configure this policy setting, the HTTP listener never appears.
 
 When certain port 80 listeners are migrated to WinRM 2.0, the listener port number changes to 5985.
 
 A listener might be automatically created on port 80 to ensure backward compatibility.
+<!-- TurnOnCompatibilityHTTPListener-Description-End -->
 
-<!--/Description-->
+<!-- TurnOnCompatibilityHTTPListener-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TurnOnCompatibilityHTTPListener-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn On Compatibility HTTP Listener*
--   GP name: *HttpCompatibilityListener*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
--   GP ADMX file name: *WindowsRemoteManagement.admx*
+<!-- TurnOnCompatibilityHTTPListener-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TurnOnCompatibilityHTTPListener-DFProperties-End -->
 
-<hr/>
+<!-- TurnOnCompatibilityHTTPListener-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="remotemanagement-turnoncompatibilityhttpslistener"></a>**RemoteManagement/TurnOnCompatibilityHTTPSListener**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | HttpCompatibilityListener |
+| Friendly Name | Turn On Compatibility HTTP Listener |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Management (WinRM) > WinRM Service |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Service |
+| Registry Value Name | HttpCompatibilityListener |
+| ADMX File Name | WindowsRemoteManagement.admx |
+<!-- TurnOnCompatibilityHTTPListener-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- TurnOnCompatibilityHTTPListener-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TurnOnCompatibilityHTTPListener-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TurnOnCompatibilityHTTPListener-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TurnOnCompatibilityHTTPSListener-Begin -->
+## TurnOnCompatibilityHTTPSListener
 
-> [!div class = "checklist"]
-> * Device
+<!-- TurnOnCompatibilityHTTPSListener-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- TurnOnCompatibilityHTTPSListener-Applicability-End -->
 
-<hr/>
+<!-- TurnOnCompatibilityHTTPSListener-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteManagement/TurnOnCompatibilityHTTPSListener
+```
+<!-- TurnOnCompatibilityHTTPSListener-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- TurnOnCompatibilityHTTPSListener-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting turns on or turns off an HTTPS listener created for backward compatibility purposes in the Windows Remote Management (WinRM) service.
 
-If you enable this policy setting, the HTTPS listener always appears.
+- If you enable this policy setting, the HTTPS listener always appears.
 
-If you disable or do not configure this policy setting, the HTTPS listener never appears.
+- If you disable or don't configure this policy setting, the HTTPS listener never appears.
 
 When certain port 443 listeners are migrated to WinRM 2.0, the listener port number changes to 5986.
 
 A listener might be automatically created on port 443 to ensure backward compatibility.
+<!-- TurnOnCompatibilityHTTPSListener-Description-End -->
 
-<!--/Description-->
+<!-- TurnOnCompatibilityHTTPSListener-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TurnOnCompatibilityHTTPSListener-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn On Compatibility HTTPS Listener*
--   GP name: *HttpsCompatibilityListener*
--   GP path: *Windows Components/Windows Remote Management (WinRM)/WinRM Service*
--   GP ADMX file name: *WindowsRemoteManagement.admx*
+<!-- TurnOnCompatibilityHTTPSListener-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TurnOnCompatibilityHTTPSListener-DFProperties-End -->
 
-<!--/Policies-->
+<!-- TurnOnCompatibilityHTTPSListener-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | HttpsCompatibilityListener |
+| Friendly Name | Turn On Compatibility HTTPS Listener |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Remote Management (WinRM) > WinRM Service |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WinRM\Service |
+| Registry Value Name | HttpsCompatibilityListener |
+| ADMX File Name | WindowsRemoteManagement.admx |
+<!-- TurnOnCompatibilityHTTPSListener-AdmxBacked-End -->
+
+<!-- TurnOnCompatibilityHTTPSListener-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TurnOnCompatibilityHTTPSListener-Examples-End -->
+
+<!-- TurnOnCompatibilityHTTPSListener-End -->
+
+<!-- RemoteManagement-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- RemoteManagement-CspMoreInfo-End -->
+
+<!-- RemoteManagement-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,17 +1,18 @@
 ---
-title: 5031(F) The Windows Firewall Service blocked an application from accepting incoming connections on the network. (Windows 10)
+title: 5031(F) The Windows Firewall Service blocked an application from accepting incoming connections on the network. 
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 description: Describes security event 5031(F) The Windows Firewall Service blocked an application from accepting incoming connections on the network.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5031(F): The Windows Firewall Service blocked an application from accepting incoming connections on the network.
@@ -25,7 +26,7 @@ ms.technology: windows-sec
 
 This event generates when an application was blocked from accepting incoming connections on the network by [Windows Filtering Platform](/windows/win32/fwp/windows-filtering-platform-start-page).
 
-If you don’t have any firewall rules (Allow or Deny) in Windows Firewall for specific applications, you will get this event from [Windows Filtering Platform](/windows/win32/fwp/windows-filtering-platform-start-page) layer, because by default this layer is denying any incoming connections.
+If you don’t have any firewall rules (Allow or Deny) in Windows Firewall for specific applications, you'll get this event from [Windows Filtering Platform](/windows/win32/fwp/windows-filtering-platform-start-page) layer, because by default this layer is denying any incoming connections.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -82,8 +83,8 @@ For 5031(F): The Windows Firewall Service blocked an application from accepting 
 
 -   You can use this event to detect applications for which no Windows Firewall rules were created.
 
--   If you have a pre-defined application which should be used to perform the operation that was reported by this event, monitor events with “**Application**” not equal to your defined application.
+-   If you have a pre-defined application that should be used to perform the operation that was reported by this event, monitor events with “**Application**” not equal to your defined application.
 
--   You can monitor to see if “**Application**” is not in a standard folder (for example, not in **System32** or **Program Files**) or is in a restricted folder (for example, **Temporary Internet Files**).
+-   You can monitor to see if “**Application**” isn't in a standard folder (for example, not in **System32** or **Program Files**) or is in a restricted folder (for example, **Temporary Internet Files**).
 
 -   If you have a pre-defined list of restricted substrings or words in application names (for example, “**mimikatz**” or “**cain.exe**”), check for these substrings in “**Application**.”

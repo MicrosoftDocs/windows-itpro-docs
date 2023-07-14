@@ -1,675 +1,709 @@
 ---
-title: Policy CSP - AppVirtualization
-description: Learn how the Policy CSP - AppVirtualization setting allows you to enable or disable Microsoft Application Virtualization (App-V) feature.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+title: AppVirtualization Policy CSP
+description: Learn more about the AppVirtualization Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- AppVirtualization-Begin -->
 # Policy CSP - AppVirtualization
 
-> [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
+<!-- AppVirtualization-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AppVirtualization-Editable-End -->
 
-<hr/>
+<!-- AllowAppVClient-Begin -->
+## AllowAppVClient
 
-<!--Policies-->
-## AppVirtualization policies  
+<!-- AllowAppVClient-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowAppVClient-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#appvirtualization-allowappvclient">AppVirtualization/AllowAppVClient</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-allowdynamicvirtualization">AppVirtualization/AllowDynamicVirtualization</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-allowpackagecleanup">AppVirtualization/AllowPackageCleanup</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-allowpackagescripts">AppVirtualization/AllowPackageScripts</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-allowpublishingrefreshux">AppVirtualization/AllowPublishingRefreshUX</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-allowreportingserver">AppVirtualization/AllowReportingServer</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-allowroamingfileexclusions">AppVirtualization/AllowRoamingFileExclusions</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-allowroamingregistryexclusions">AppVirtualization/AllowRoamingRegistryExclusions</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-allowstreamingautoload">AppVirtualization/AllowStreamingAutoload</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-clientcoexistenceallowmigrationmode">AppVirtualization/ClientCoexistenceAllowMigrationmode</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-integrationallowrootglobal">AppVirtualization/IntegrationAllowRootGlobal</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-integrationallowrootuser">AppVirtualization/IntegrationAllowRootUser</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-publishingallowserver1">AppVirtualization/PublishingAllowServer1</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-publishingallowserver2">AppVirtualization/PublishingAllowServer2</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-publishingallowserver3">AppVirtualization/PublishingAllowServer3</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-publishingallowserver4">AppVirtualization/PublishingAllowServer4</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-publishingallowserver5">AppVirtualization/PublishingAllowServer5</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-streamingallowcertificatefilterforclient-ssl">AppVirtualization/StreamingAllowCertificateFilterForClient_SSL</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-streamingallowhighcostlaunch">AppVirtualization/StreamingAllowHighCostLaunch</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-streamingallowlocationprovider">AppVirtualization/StreamingAllowLocationProvider</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-streamingallowpackageinstallationroot">AppVirtualization/StreamingAllowPackageInstallationRoot</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-streamingallowpackagesourceroot">AppVirtualization/StreamingAllowPackageSourceRoot</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-streamingallowreestablishmentinterval">AppVirtualization/StreamingAllowReestablishmentInterval</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-streamingallowreestablishmentretries">AppVirtualization/StreamingAllowReestablishmentRetries</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-streamingsharedcontentstoremode">AppVirtualization/StreamingSharedContentStoreMode</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-streamingsupportbranchcache">AppVirtualization/StreamingSupportBranchCache</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-streamingverifycertificaterevocationlist">AppVirtualization/StreamingVerifyCertificateRevocationList</a>
-  </dd>
-  <dd>
-    <a href="#appvirtualization-virtualcomponentsallowlist">AppVirtualization/VirtualComponentsAllowList</a>
-  </dd>
-</dl>
+<!-- AllowAppVClient-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowAppVClient
+```
+<!-- AllowAppVClient-OmaUri-End -->
 
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="appvirtualization-allowappvclient"></a>**AppVirtualization/AllowAppVClient**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowAppVClient-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to enable or disable Microsoft Application Virtualization (App-V) feature. Reboot is needed for disable to take effect.
+<!-- AllowAppVClient-Description-End -->
 
-<!--/Description-->
+<!-- AllowAppVClient-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowAppVClient-Editable-End -->
 
+<!-- AllowAppVClient-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Enable App-V Client*
--   GP name: *EnableAppV*
--   GP path: *System/App-V*
--   GP ADMX file name: *appv.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowAppVClient-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- AllowAppVClient-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="appvirtualization-allowdynamicvirtualization"></a>**AppVirtualization/AllowDynamicVirtualization**  
+| Name | Value |
+|:--|:--|
+| Name | EnableAppV |
+| Friendly Name | Enable App-V Client |
+| Location | Computer Configuration |
+| Path | System > App-V |
+| Registry Key Name | Software\Policies\Microsoft\AppV\Client |
+| Registry Value Name | Enabled |
+| ADMX File Name | appv.admx |
+<!-- AllowAppVClient-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowAppVClient-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowAppVClient-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowAppVClient-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowDynamicVirtualization-Begin -->
+## AllowDynamicVirtualization
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowDynamicVirtualization-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowDynamicVirtualization-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowDynamicVirtualization-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowDynamicVirtualization
+```
+<!-- AllowDynamicVirtualization-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowDynamicVirtualization-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Enables Dynamic Virtualization of supported shell extensions, browser helper objects, and ActiveX controls.
+<!-- AllowDynamicVirtualization-Description-End -->
 
-<!--/Description-->
+<!-- AllowDynamicVirtualization-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowDynamicVirtualization-Editable-End -->
 
+<!-- AllowDynamicVirtualization-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Enable Dynamic Virtualization*
--   GP name: *Virtualization_JITVEnable*
--   GP path: *System/App-V/Virtualization*
--   GP ADMX file name: *appv.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowDynamicVirtualization-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- AllowDynamicVirtualization-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="appvirtualization-allowpackagecleanup"></a>**AppVirtualization/AllowPackageCleanup**  
+| Name | Value |
+|:--|:--|
+| Name | Virtualization_JITVEnable |
+| Friendly Name | Enable Dynamic Virtualization |
+| Location | Computer Configuration |
+| Path | System > App-V > Virtualization |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Virtualization |
+| Registry Value Name | EnableDynamicVirtualization |
+| ADMX File Name | appv.admx |
+<!-- AllowDynamicVirtualization-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowDynamicVirtualization-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowDynamicVirtualization-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowDynamicVirtualization-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowPackageCleanup-Begin -->
+## AllowPackageCleanup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowPackageCleanup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowPackageCleanup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowPackageCleanup-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowPackageCleanup
+```
+<!-- AllowPackageCleanup-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowPackageCleanup-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Enables automatic cleanup of appv packages that were added after Windows10 anniversary release.
+<!-- AllowPackageCleanup-Description-End -->
 
-<!--/Description-->
+<!-- AllowPackageCleanup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowPackageCleanup-Editable-End -->
 
+<!-- AllowPackageCleanup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Enable automatic cleanup of unused appv packages*
--   GP name: *PackageManagement_AutoCleanupEnable*
--   GP path: *System/App-V/PackageManagement*
--   GP ADMX file name: *appv.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowPackageCleanup-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- AllowPackageCleanup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="appvirtualization-allowpackagescripts"></a>**AppVirtualization/AllowPackageScripts**  
+| Name | Value |
+|:--|:--|
+| Name | PackageManagement_AutoCleanupEnable |
+| Friendly Name | Enable automatic cleanup of unused appv packages |
+| Location | Computer Configuration |
+| Path | System > App-V > PackageManagement |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\PackageManagement |
+| Registry Value Name | AutoCleanupEnabled |
+| ADMX File Name | appv.admx |
+<!-- AllowPackageCleanup-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowPackageCleanup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowPackageCleanup-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowPackageCleanup-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowPackageScripts-Begin -->
+## AllowPackageScripts
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowPackageScripts-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowPackageScripts-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowPackageScripts-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowPackageScripts
+```
+<!-- AllowPackageScripts-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowPackageScripts-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Enables scripts defined in the package manifest of configuration files that should run.
+<!-- AllowPackageScripts-Description-End -->
 
-<!--/Description-->
+<!-- AllowPackageScripts-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowPackageScripts-Editable-End -->
 
+<!-- AllowPackageScripts-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Enable Package Scripts*
--   GP name: *Scripting_Enable_Package_Scripts*
--   GP path: *System/App-V/Scripting*
--   GP ADMX file name: *appv.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowPackageScripts-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- AllowPackageScripts-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="appvirtualization-allowpublishingrefreshux"></a>**AppVirtualization/AllowPublishingRefreshUX**  
+| Name | Value |
+|:--|:--|
+| Name | Scripting_Enable_Package_Scripts |
+| Friendly Name | Enable Package Scripts |
+| Location | Computer Configuration |
+| Path | System > App-V > Scripting |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Scripting |
+| Registry Value Name | EnablePackageScripts |
+| ADMX File Name | appv.admx |
+<!-- AllowPackageScripts-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowPackageScripts-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowPackageScripts-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowPackageScripts-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowPublishingRefreshUX-Begin -->
+## AllowPublishingRefreshUX
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowPublishingRefreshUX-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowPublishingRefreshUX-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowPublishingRefreshUX-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowPublishingRefreshUX
+```
+<!-- AllowPublishingRefreshUX-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowPublishingRefreshUX-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Enables a UX to display to the user when a publishing refresh is performed on the client.
+<!-- AllowPublishingRefreshUX-Description-End -->
 
-<!--/Description-->
+<!-- AllowPublishingRefreshUX-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowPublishingRefreshUX-Editable-End -->
 
+<!-- AllowPublishingRefreshUX-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Enable Publishing Refresh UX*
--   GP name: *Enable_Publishing_Refresh_UX*
--   GP path: *System/App-V/Publishing*
--   GP ADMX file name: *appv.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowPublishingRefreshUX-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- AllowPublishingRefreshUX-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="appvirtualization-allowreportingserver"></a>**AppVirtualization/AllowReportingServer**  
+| Name | Value |
+|:--|:--|
+| Name | Enable_Publishing_Refresh_UX |
+| Friendly Name | Enable Publishing Refresh UX |
+| Location | Computer Configuration |
+| Path | System > App-V > Publishing |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Publishing |
+| Registry Value Name | EnablePublishingRefreshUI |
+| ADMX File Name | appv.admx |
+<!-- AllowPublishingRefreshUX-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowPublishingRefreshUX-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowPublishingRefreshUX-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowPublishingRefreshUX-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowReportingServer-Begin -->
+## AllowReportingServer
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowReportingServer-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowReportingServer-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowReportingServer-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowReportingServer
+```
+<!-- AllowReportingServer-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowReportingServer-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Reporting Server URL: Displays the URL of reporting server.
 
-Reporting Time: When the client data should be reported to the server. Acceptable range is 0~23, corresponding to the 24 hours in a day. A good practice is, don't set this time to a busy hour, e.g. 9AM.
+Reporting Time: When the client data should be reported to the server. Acceptable range is 0~23, corresponding to the 24 hours in a day. A good practice is, don't set this time to a busy hour, e.g. 9. AM.
 
 Delay reporting for the random minutes: The maximum minutes of random delay on top of the reporting time. For a busy system, the random delay will help reduce the server load.
 
 Repeat reporting for every (days): The periodical interval in days for sending the reporting data.
 
-Data Cache Limit: This value specifies the maximum size in megabytes (MB) of the XML cache for storing reporting information. The default value is 20 MB. The size applies to the cache in memory. When the limit is reached, the log file will roll over. When a new record is to be added (bottom of the list), one or more of the oldest records (top of the list) will be deleted to make room. A warning will be logged to the Client log and the event log the first time this occurs, and will not be logged again until after the cache has been successfully cleared on transmission and the log has filled up again.
+Data Cache Limit: This value specifies the maximum size in megabytes (MB) of the XML cache for storing reporting information. The default value is 20 MB. The size applies to the cache in memory. When the limit's reached, the log file will roll over. When a new record is to be added (bottom of the list), one or more of the oldest records (top of the list) will be deleted to make room. A warning will be logged to the Client log and the event log the first time this occurs, and won't be logged again until after the cache has been successfully cleared on transmission and the log has filled up again.
 
-Data Block Size: This value specifies the maximum size in bytes to transmit to the server at once on a reporting upload, to avoid permanent transmission failures when the log has reached a significant size. The  default value is 65536. When transmitting report data to the server, one block at a time of application records that is less than or equal to the block size in bytes of XML data will be removed from the cache and sent to the server. Each block will have the general Client data and global package list data prepended, and these will not factor into the block size calculations; the potential exists for an extremely large package list to result in transmission failures over low bandwidth or unreliable connections.
+Data Block Size: This value specifies the maximum size in bytes to transmit to the server at once on a reporting upload, to avoid permanent transmission failures when the log has reached a significant size. The default value is 65536. When transmitting report data to the server, one block at a time of application records that's less than or equal to the block size in bytes of XML data will be removed from the cache and sent to the server. Each block will have the general Client data and global package list data prepended, and these won't factor into the block size calculations; the potential exists for an extremely large package list to result in transmission failures over low bandwidth or unreliable connections.
+<!-- AllowReportingServer-Description-End -->
 
-<!--/Description-->
+<!-- AllowReportingServer-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowReportingServer-Editable-End -->
 
+<!-- AllowReportingServer-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Reporting Server*
--   GP name: *Reporting_Server_Policy*
--   GP path: *System/App-V/Reporting*
--   GP ADMX file name: *appv.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowReportingServer-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- AllowReportingServer-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="appvirtualization-allowroamingfileexclusions"></a>**AppVirtualization/AllowRoamingFileExclusions**  
+| Name | Value |
+|:--|:--|
+| Name | Reporting_Server_Policy |
+| Friendly Name | Reporting Server |
+| Location | Computer Configuration |
+| Path | System > App-V > Reporting |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Reporting |
+| Registry Value Name | ReportingEnabled |
+| ADMX File Name | appv.admx |
+<!-- AllowReportingServer-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowReportingServer-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowReportingServer-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowReportingServer-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowRoamingFileExclusions-Begin -->
+## AllowRoamingFileExclusions
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowRoamingFileExclusions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowRoamingFileExclusions-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowRoamingFileExclusions-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowRoamingFileExclusions
+```
+<!-- AllowRoamingFileExclusions-OmaUri-End -->
 
-<hr/>
+<!-- AllowRoamingFileExclusions-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies the file paths relative to %userprofile% that don't roam with a user's profile. Example usage: /FILEEXCLUSIONLIST='desktop;my pictures'.
+<!-- AllowRoamingFileExclusions-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-Specifies the file paths relative to %userprofile% that do not roam with a user's profile. Example usage: /FILEEXCLUSIONLIST='desktop;my pictures'.
+<!-- AllowRoamingFileExclusions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowRoamingFileExclusions-Editable-End -->
 
-<!--/Description-->
+<!-- AllowRoamingFileExclusions-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowRoamingFileExclusions-DFProperties-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Roaming File Exclusions*
--   GP name: *Integration_Roaming_File_Exclusions*
--   GP path: *System/App-V/Integration*
--   GP ADMX file name: *appv.admx*
+<!-- AllowRoamingFileExclusions-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+**ADMX mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Integration_Roaming_File_Exclusions |
+| Friendly Name | Roaming File Exclusions |
+| Location | Computer Configuration |
+| Path | System > App-V > Integration |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Integration |
+| ADMX File Name | appv.admx |
+<!-- AllowRoamingFileExclusions-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-allowroamingregistryexclusions"></a>**AppVirtualization/AllowRoamingRegistryExclusions**  
+<!-- AllowRoamingFileExclusions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowRoamingFileExclusions-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowRoamingFileExclusions-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowRoamingRegistryExclusions-Begin -->
+## AllowRoamingRegistryExclusions
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowRoamingRegistryExclusions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowRoamingRegistryExclusions-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowRoamingRegistryExclusions-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowRoamingRegistryExclusions
+```
+<!-- AllowRoamingRegistryExclusions-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowRoamingRegistryExclusions-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies the registry paths that don't roam with a user profile. Example usage: /REGISTRYEXCLUSIONLIST=software\classes;software\clients.
+<!-- AllowRoamingRegistryExclusions-Description-End -->
 
-<hr/>
+<!-- AllowRoamingRegistryExclusions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowRoamingRegistryExclusions-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
-Specifies the registry paths that do not roam with a user profile. Example usage: /REGISTRYEXCLUSIONLIST=software\classes;software\clients.
+<!-- AllowRoamingRegistryExclusions-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowRoamingRegistryExclusions-DFProperties-End -->
 
+<!-- AllowRoamingRegistryExclusions-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Roaming Registry Exclusions*
--   GP name: *Integration_Roaming_Registry_Exclusions*
--   GP path: *System/App-V/Integration*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Integration_Roaming_Registry_Exclusions |
+| Friendly Name | Roaming Registry Exclusions |
+| Location | Computer Configuration |
+| Path | System > App-V > Integration |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Integration |
+| ADMX File Name | appv.admx |
+<!-- AllowRoamingRegistryExclusions-AdmxBacked-End -->
 
-<hr/>
+<!-- AllowRoamingRegistryExclusions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowRoamingRegistryExclusions-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-allowstreamingautoload"></a>**AppVirtualization/AllowStreamingAutoload**  
+<!-- AllowRoamingRegistryExclusions-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowStreamingAutoload-Begin -->
+## AllowStreamingAutoload
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowStreamingAutoload-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowStreamingAutoload-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowStreamingAutoload-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/AllowStreamingAutoload
+```
+<!-- AllowStreamingAutoload-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowStreamingAutoload-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies how new packages should be loaded automatically by App-V on a specific computer.
+<!-- AllowStreamingAutoload-Description-End -->
 
-<!--/Description-->
+<!-- AllowStreamingAutoload-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowStreamingAutoload-Editable-End -->
 
+<!-- AllowStreamingAutoload-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Specify what to load in background (also known as AutoLoad)*
--   GP name: *Steaming_Autoload*
--   GP path: *System/App-V/Streaming*
--   GP ADMX file name: *appv.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowStreamingAutoload-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- AllowStreamingAutoload-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="appvirtualization-clientcoexistenceallowmigrationmode"></a>**AppVirtualization/ClientCoexistenceAllowMigrationmode**  
+| Name | Value |
+|:--|:--|
+| Name | Steaming_Autoload |
+| Friendly Name | Specify what to load in background (aka AutoLoad) |
+| Location | Computer Configuration |
+| Path | System > App-V > Streaming |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Streaming |
+| ADMX File Name | appv.admx |
+<!-- AllowStreamingAutoload-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowStreamingAutoload-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowStreamingAutoload-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowStreamingAutoload-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ClientCoexistenceAllowMigrationmode-Begin -->
+## ClientCoexistenceAllowMigrationmode
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ClientCoexistenceAllowMigrationmode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- ClientCoexistenceAllowMigrationmode-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ClientCoexistenceAllowMigrationmode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/ClientCoexistenceAllowMigrationmode
+```
+<!-- ClientCoexistenceAllowMigrationmode-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- ClientCoexistenceAllowMigrationmode-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Migration mode allows the App-V client to modify shortcuts and FTA's for packages created using a previous version of App-V.
+<!-- ClientCoexistenceAllowMigrationmode-Description-End -->
 
-<!--/Description-->
+<!-- ClientCoexistenceAllowMigrationmode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ClientCoexistenceAllowMigrationmode-Editable-End -->
 
+<!-- ClientCoexistenceAllowMigrationmode-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Enable Migration Mode*
--   GP name: *Client_Coexistence_Enable_Migration_mode*
--   GP path: *System/App-V/Client Coexistence*
--   GP ADMX file name: *appv.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ClientCoexistenceAllowMigrationmode-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- ClientCoexistenceAllowMigrationmode-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="appvirtualization-integrationallowrootglobal"></a>**AppVirtualization/IntegrationAllowRootGlobal**  
+| Name | Value |
+|:--|:--|
+| Name | Client_Coexistence_Enable_Migration_mode |
+| Friendly Name | Enable Migration Mode |
+| Location | Computer Configuration |
+| Path | System > App-V > Client Coexistence |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Coexistence |
+| Registry Value Name | MigrationMode |
+| ADMX File Name | appv.admx |
+<!-- ClientCoexistenceAllowMigrationmode-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- ClientCoexistenceAllowMigrationmode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ClientCoexistenceAllowMigrationmode-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ClientCoexistenceAllowMigrationmode-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IntegrationAllowRootGlobal-Begin -->
+## IntegrationAllowRootGlobal
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IntegrationAllowRootGlobal-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- IntegrationAllowRootGlobal-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- IntegrationAllowRootGlobal-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/IntegrationAllowRootGlobal
+```
+<!-- IntegrationAllowRootGlobal-OmaUri-End -->
 
-<hr/>
+<!-- IntegrationAllowRootGlobal-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies the location where symbolic links are created to the current version of a per-user published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links aren't used during publishing. Example: %localappdata%\Microsoft\AppV\Client\Integration.
+<!-- IntegrationAllowRootGlobal-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-Specifies the location where symbolic links are created to the current version of a per-user published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links are not used during publishing. Example: %localappdata%\Microsoft\AppV\Client\Integration.
+<!-- IntegrationAllowRootGlobal-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IntegrationAllowRootGlobal-Editable-End -->
 
-<!--/Description-->
+<!-- IntegrationAllowRootGlobal-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IntegrationAllowRootGlobal-DFProperties-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Integration Root User*
--   GP name: *Integration_Root_User*
--   GP path: *System/App-V/Integration*
--   GP ADMX file name: *appv.admx*
+<!-- IntegrationAllowRootGlobal-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+**ADMX mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Integration_Root_User |
+| Friendly Name | Integration Root User |
+| Location | Computer Configuration |
+| Path | System > App-V > Integration |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Integration |
+| ADMX File Name | appv.admx |
+<!-- IntegrationAllowRootGlobal-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-integrationallowrootuser"></a>**AppVirtualization/IntegrationAllowRootUser**  
+<!-- IntegrationAllowRootGlobal-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IntegrationAllowRootGlobal-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- IntegrationAllowRootGlobal-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- IntegrationAllowRootUser-Begin -->
+## IntegrationAllowRootUser
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IntegrationAllowRootUser-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- IntegrationAllowRootUser-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IntegrationAllowRootUser-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/IntegrationAllowRootUser
+```
+<!-- IntegrationAllowRootUser-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- IntegrationAllowRootUser-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies the location where symbolic links are created to the current version of a globally published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links aren't used during publishing. Example: %allusersprofile%\Microsoft\AppV\Client\Integration.
+<!-- IntegrationAllowRootUser-Description-End -->
 
-<hr/>
+<!-- IntegrationAllowRootUser-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IntegrationAllowRootUser-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
-Specifies the location where symbolic links are created to the current version of a globally published package. Shortcuts, file type associations, etc. are created pointing to this path. If empty, symbolic links are not used during publishing. Example: %allusersprofile%\Microsoft\AppV\Client\Integration.
+<!-- IntegrationAllowRootUser-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IntegrationAllowRootUser-DFProperties-End -->
 
+<!-- IntegrationAllowRootUser-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Integration Root Global*
--   GP name: *Integration_Root_Global*
--   GP path: *System/App-V/Integration*
--   GP ADMX file name: *appv.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | Integration_Root_Global |
+| Friendly Name | Integration Root Global |
+| Location | Computer Configuration |
+| Path | System > App-V > Integration |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Integration |
+| ADMX File Name | appv.admx |
+<!-- IntegrationAllowRootUser-AdmxBacked-End -->
 
-<hr/>
+<!-- IntegrationAllowRootUser-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IntegrationAllowRootUser-Examples-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-publishingallowserver1"></a>**AppVirtualization/PublishingAllowServer1**  
+<!-- IntegrationAllowRootUser-End -->
 
-<!--SupportedSKUs-->
+<!-- PublishingAllowServer1-Begin -->
+## PublishingAllowServer1
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PublishingAllowServer1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- PublishingAllowServer1-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PublishingAllowServer1-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/PublishingAllowServer1
+```
+<!-- PublishingAllowServer1-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- PublishingAllowServer1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Publishing Server Display Name: Displays the name of publishing server.
 
 Publishing Server URL: Displays the URL of publishing server.
@@ -689,48 +723,59 @@ User Publishing Refresh On Logon: Triggers a user publishing refresh on logon (B
 User Publishing Refresh Interval: Specifies the publishing refresh interval using the UserRefreshIntervalUnit. To disable package refresh, select 0.
 
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
+<!-- PublishingAllowServer1-Description-End -->
 
-<!--/Description-->
+<!-- PublishingAllowServer1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PublishingAllowServer1-Editable-End -->
 
+<!-- PublishingAllowServer1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Publishing Server 1 Settings*
--   GP name: *Publishing_Server1_Policy*
--   GP path: *System/App-V/Publishing*
--   GP ADMX file name: *appv.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PublishingAllowServer1-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- PublishingAllowServer1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="appvirtualization-publishingallowserver2"></a>**AppVirtualization/PublishingAllowServer2**  
+| Name | Value |
+|:--|:--|
+| Name | Publishing_Server1_Policy |
+| Friendly Name | Publishing Server 1 Settings |
+| Location | Computer Configuration |
+| Path | System > App-V > Publishing |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Publishing\Servers\1 |
+| ADMX File Name | appv.admx |
+<!-- PublishingAllowServer1-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- PublishingAllowServer1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PublishingAllowServer1-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PublishingAllowServer1-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PublishingAllowServer2-Begin -->
+## PublishingAllowServer2
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PublishingAllowServer2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- PublishingAllowServer2-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PublishingAllowServer2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/PublishingAllowServer2
+```
+<!-- PublishingAllowServer2-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- PublishingAllowServer2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Publishing Server Display Name: Displays the name of publishing server.
 
 Publishing Server URL: Displays the URL of publishing server.
@@ -750,48 +795,59 @@ User Publishing Refresh On Logon: Triggers a user publishing refresh on logon (B
 User Publishing Refresh Interval: Specifies the publishing refresh interval using the UserRefreshIntervalUnit. To disable package refresh, select 0.
 
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
+<!-- PublishingAllowServer2-Description-End -->
 
-<!--/Description-->
+<!-- PublishingAllowServer2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PublishingAllowServer2-Editable-End -->
 
+<!-- PublishingAllowServer2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Publishing Server 2 Settings*
--   GP name: *Publishing_Server2_Policy*
--   GP path: *System/App-V/Publishing*
--   GP ADMX file name: *appv.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PublishingAllowServer2-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- PublishingAllowServer2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="appvirtualization-publishingallowserver3"></a>**AppVirtualization/PublishingAllowServer3**  
+| Name | Value |
+|:--|:--|
+| Name | Publishing_Server2_Policy |
+| Friendly Name | Publishing Server 2 Settings |
+| Location | Computer Configuration |
+| Path | System > App-V > Publishing |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Publishing\Servers\2 |
+| ADMX File Name | appv.admx |
+<!-- PublishingAllowServer2-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- PublishingAllowServer2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PublishingAllowServer2-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PublishingAllowServer2-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PublishingAllowServer3-Begin -->
+## PublishingAllowServer3
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PublishingAllowServer3-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- PublishingAllowServer3-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PublishingAllowServer3-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/PublishingAllowServer3
+```
+<!-- PublishingAllowServer3-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- PublishingAllowServer3-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Publishing Server Display Name: Displays the name of publishing server.
 
 Publishing Server URL: Displays the URL of publishing server.
@@ -811,48 +867,59 @@ User Publishing Refresh On Logon: Triggers a user publishing refresh on logon (B
 User Publishing Refresh Interval: Specifies the publishing refresh interval using the UserRefreshIntervalUnit. To disable package refresh, select 0.
 
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
+<!-- PublishingAllowServer3-Description-End -->
 
-<!--/Description-->
+<!-- PublishingAllowServer3-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PublishingAllowServer3-Editable-End -->
 
+<!-- PublishingAllowServer3-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Publishing Server 3 Settings*
--   GP name: *Publishing_Server3_Policy*
--   GP path: *System/App-V/Publishing*
--   GP ADMX file name: *appv.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PublishingAllowServer3-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- PublishingAllowServer3-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="appvirtualization-publishingallowserver4"></a>**AppVirtualization/PublishingAllowServer4**  
+| Name | Value |
+|:--|:--|
+| Name | Publishing_Server3_Policy |
+| Friendly Name | Publishing Server 3 Settings |
+| Location | Computer Configuration |
+| Path | System > App-V > Publishing |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Publishing\Servers\3 |
+| ADMX File Name | appv.admx |
+<!-- PublishingAllowServer3-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- PublishingAllowServer3-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PublishingAllowServer3-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PublishingAllowServer3-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PublishingAllowServer4-Begin -->
+## PublishingAllowServer4
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PublishingAllowServer4-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- PublishingAllowServer4-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PublishingAllowServer4-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/PublishingAllowServer4
+```
+<!-- PublishingAllowServer4-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- PublishingAllowServer4-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Publishing Server Display Name: Displays the name of publishing server.
 
 Publishing Server URL: Displays the URL of publishing server.
@@ -872,48 +939,59 @@ User Publishing Refresh On Logon: Triggers a user publishing refresh on logon (B
 User Publishing Refresh Interval: Specifies the publishing refresh interval using the UserRefreshIntervalUnit. To disable package refresh, select 0.
 
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
+<!-- PublishingAllowServer4-Description-End -->
 
-<!--/Description-->
+<!-- PublishingAllowServer4-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PublishingAllowServer4-Editable-End -->
 
+<!-- PublishingAllowServer4-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Publishing Server 4 Settings*
--   GP name: *Publishing_Server4_Policy*
--   GP path: *System/App-V/Publishing*
--   GP ADMX file name: *appv.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PublishingAllowServer4-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- PublishingAllowServer4-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="appvirtualization-publishingallowserver5"></a>**AppVirtualization/PublishingAllowServer5**  
+| Name | Value |
+|:--|:--|
+| Name | Publishing_Server4_Policy |
+| Friendly Name | Publishing Server 4 Settings |
+| Location | Computer Configuration |
+| Path | System > App-V > Publishing |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Publishing\Servers\4 |
+| ADMX File Name | appv.admx |
+<!-- PublishingAllowServer4-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- PublishingAllowServer4-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PublishingAllowServer4-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PublishingAllowServer4-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PublishingAllowServer5-Begin -->
+## PublishingAllowServer5
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PublishingAllowServer5-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- PublishingAllowServer5-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PublishingAllowServer5-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/PublishingAllowServer5
+```
+<!-- PublishingAllowServer5-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- PublishingAllowServer5-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Publishing Server Display Name: Displays the name of publishing server.
 
 Publishing Server URL: Displays the URL of publishing server.
@@ -933,495 +1011,647 @@ User Publishing Refresh On Logon: Triggers a user publishing refresh on logon (B
 User Publishing Refresh Interval: Specifies the publishing refresh interval using the UserRefreshIntervalUnit. To disable package refresh, select 0.
 
 User Publishing Refresh Interval Unit: Specifies the interval unit (Hour 0-23, Day 0-31).
+<!-- PublishingAllowServer5-Description-End -->
 
-<!--/Description-->
+<!-- PublishingAllowServer5-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PublishingAllowServer5-Editable-End -->
 
+<!-- PublishingAllowServer5-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Publishing Server 5 Settings*
--   GP name: *Publishing_Server5_Policy*
--   GP path: *System/App-V/Publishing*
--   GP ADMX file name: *appv.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PublishingAllowServer5-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- PublishingAllowServer5-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="appvirtualization-streamingallowcertificatefilterforclient-ssl"></a>**AppVirtualization/StreamingAllowCertificateFilterForClient_SSL**  
+| Name | Value |
+|:--|:--|
+| Name | Publishing_Server5_Policy |
+| Friendly Name | Publishing Server 5 Settings |
+| Location | Computer Configuration |
+| Path | System > App-V > Publishing |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Publishing\Servers\5 |
+| ADMX File Name | appv.admx |
+<!-- PublishingAllowServer5-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- PublishingAllowServer5-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PublishingAllowServer5-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PublishingAllowServer5-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StreamingAllowCertificateFilterForClient_SSL-Begin -->
+## StreamingAllowCertificateFilterForClient_SSL
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StreamingAllowCertificateFilterForClient_SSL-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- StreamingAllowCertificateFilterForClient_SSL-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- StreamingAllowCertificateFilterForClient_SSL-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/StreamingAllowCertificateFilterForClient_SSL
+```
+<!-- StreamingAllowCertificateFilterForClient_SSL-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- StreamingAllowCertificateFilterForClient_SSL-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies the path to a valid certificate in the certificate store.
+<!-- StreamingAllowCertificateFilterForClient_SSL-Description-End -->
 
-<!--/Description-->
+<!-- StreamingAllowCertificateFilterForClient_SSL-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StreamingAllowCertificateFilterForClient_SSL-Editable-End -->
 
+<!-- StreamingAllowCertificateFilterForClient_SSL-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Certificate Filter For Client SSL*
--   GP name: *Streaming_Certificate_Filter_For_Client_SSL*
--   GP path: *System/App-V/Streaming*
--   GP ADMX file name: *appv.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StreamingAllowCertificateFilterForClient_SSL-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- StreamingAllowCertificateFilterForClient_SSL-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="appvirtualization-streamingallowhighcostlaunch"></a>**AppVirtualization/StreamingAllowHighCostLaunch**  
+| Name | Value |
+|:--|:--|
+| Name | Streaming_Certificate_Filter_For_Client_SSL |
+| Friendly Name | Certificate Filter For Client SSL |
+| Location | Computer Configuration |
+| Path | System > App-V > Streaming |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Streaming |
+| ADMX File Name | appv.admx |
+<!-- StreamingAllowCertificateFilterForClient_SSL-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- StreamingAllowCertificateFilterForClient_SSL-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StreamingAllowCertificateFilterForClient_SSL-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- StreamingAllowCertificateFilterForClient_SSL-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StreamingAllowHighCostLaunch-Begin -->
+## StreamingAllowHighCostLaunch
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StreamingAllowHighCostLaunch-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- StreamingAllowHighCostLaunch-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- StreamingAllowHighCostLaunch-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/StreamingAllowHighCostLaunch
+```
+<!-- StreamingAllowHighCostLaunch-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- StreamingAllowHighCostLaunch-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This setting controls whether virtualized applications are launched on Windows 8 machines connected via a metered network connection (e.g. 4G).
+<!-- StreamingAllowHighCostLaunch-Description-End -->
 
-<!--/Description-->
+<!-- StreamingAllowHighCostLaunch-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StreamingAllowHighCostLaunch-Editable-End -->
 
+<!-- StreamingAllowHighCostLaunch-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow First Time Application Launches if on a High Cost Windows 8 Metered Connection*
--   GP name: *Streaming_Allow_High_Cost_Launch*
--   GP path: *System/App-V/Streaming*
--   GP ADMX file name: *appv.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StreamingAllowHighCostLaunch-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- StreamingAllowHighCostLaunch-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="appvirtualization-streamingallowlocationprovider"></a>**AppVirtualization/StreamingAllowLocationProvider**  
+| Name | Value |
+|:--|:--|
+| Name | Streaming_Allow_High_Cost_Launch |
+| Friendly Name | Allow First Time Application Launches if on a High Cost Windows 8 Metered Connection |
+| Location | Computer Configuration |
+| Path | System > App-V > Streaming |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Streaming |
+| Registry Value Name | AllowHighCostLaunch |
+| ADMX File Name | appv.admx |
+<!-- StreamingAllowHighCostLaunch-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- StreamingAllowHighCostLaunch-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StreamingAllowHighCostLaunch-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- StreamingAllowHighCostLaunch-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StreamingAllowLocationProvider-Begin -->
+## StreamingAllowLocationProvider
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StreamingAllowLocationProvider-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- StreamingAllowLocationProvider-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- StreamingAllowLocationProvider-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/StreamingAllowLocationProvider
+```
+<!-- StreamingAllowLocationProvider-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- StreamingAllowLocationProvider-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies the CLSID for a compatible implementation of the IAppvPackageLocationProvider interface.
+<!-- StreamingAllowLocationProvider-Description-End -->
 
-<!--/Description-->
+<!-- StreamingAllowLocationProvider-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StreamingAllowLocationProvider-Editable-End -->
 
+<!-- StreamingAllowLocationProvider-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Location Provider*
--   GP name: *Streaming_Location_Provider*
--   GP path: *System/App-V/Streaming*
--   GP ADMX file name: *appv.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StreamingAllowLocationProvider-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- StreamingAllowLocationProvider-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="appvirtualization-streamingallowpackageinstallationroot"></a>**AppVirtualization/StreamingAllowPackageInstallationRoot**  
+| Name | Value |
+|:--|:--|
+| Name | Streaming_Location_Provider |
+| Friendly Name | Location Provider |
+| Location | Computer Configuration |
+| Path | System > App-V > Streaming |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Streaming |
+| ADMX File Name | appv.admx |
+<!-- StreamingAllowLocationProvider-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- StreamingAllowLocationProvider-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StreamingAllowLocationProvider-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- StreamingAllowLocationProvider-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StreamingAllowPackageInstallationRoot-Begin -->
+## StreamingAllowPackageInstallationRoot
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StreamingAllowPackageInstallationRoot-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- StreamingAllowPackageInstallationRoot-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- StreamingAllowPackageInstallationRoot-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/StreamingAllowPackageInstallationRoot
+```
+<!-- StreamingAllowPackageInstallationRoot-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- StreamingAllowPackageInstallationRoot-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies directory where all new applications and updates will be installed.
+<!-- StreamingAllowPackageInstallationRoot-Description-End -->
 
-<!--/Description-->
+<!-- StreamingAllowPackageInstallationRoot-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StreamingAllowPackageInstallationRoot-Editable-End -->
 
+<!-- StreamingAllowPackageInstallationRoot-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Package Installation Root*
--   GP name: *Streaming_Package_Installation_Root*
--   GP path: *System/App-V/Streaming*
--   GP ADMX file name: *appv.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StreamingAllowPackageInstallationRoot-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- StreamingAllowPackageInstallationRoot-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="appvirtualization-streamingallowpackagesourceroot"></a>**AppVirtualization/StreamingAllowPackageSourceRoot**  
+| Name | Value |
+|:--|:--|
+| Name | Streaming_Package_Installation_Root |
+| Friendly Name | Package Installation Root |
+| Location | Computer Configuration |
+| Path | System > App-V > Streaming |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Streaming |
+| ADMX File Name | appv.admx |
+<!-- StreamingAllowPackageInstallationRoot-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- StreamingAllowPackageInstallationRoot-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StreamingAllowPackageInstallationRoot-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- StreamingAllowPackageInstallationRoot-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StreamingAllowPackageSourceRoot-Begin -->
+## StreamingAllowPackageSourceRoot
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StreamingAllowPackageSourceRoot-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- StreamingAllowPackageSourceRoot-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- StreamingAllowPackageSourceRoot-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/StreamingAllowPackageSourceRoot
+```
+<!-- StreamingAllowPackageSourceRoot-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- StreamingAllowPackageSourceRoot-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Overrides source location for downloading package content.
+<!-- StreamingAllowPackageSourceRoot-Description-End -->
 
-<!--/Description-->
+<!-- StreamingAllowPackageSourceRoot-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StreamingAllowPackageSourceRoot-Editable-End -->
 
+<!-- StreamingAllowPackageSourceRoot-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Package Source Root*
--   GP name: *Streaming_Package_Source_Root*
--   GP path: *System/App-V/Streaming*
--   GP ADMX file name: *appv.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StreamingAllowPackageSourceRoot-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- StreamingAllowPackageSourceRoot-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="appvirtualization-streamingallowreestablishmentinterval"></a>**AppVirtualization/StreamingAllowReestablishmentInterval**  
+| Name | Value |
+|:--|:--|
+| Name | Streaming_Package_Source_Root |
+| Friendly Name | Package Source Root |
+| Location | Computer Configuration |
+| Path | System > App-V > Streaming |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Streaming |
+| ADMX File Name | appv.admx |
+<!-- StreamingAllowPackageSourceRoot-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- StreamingAllowPackageSourceRoot-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StreamingAllowPackageSourceRoot-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- StreamingAllowPackageSourceRoot-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StreamingAllowReestablishmentInterval-Begin -->
+## StreamingAllowReestablishmentInterval
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StreamingAllowReestablishmentInterval-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- StreamingAllowReestablishmentInterval-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- StreamingAllowReestablishmentInterval-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/StreamingAllowReestablishmentInterval
+```
+<!-- StreamingAllowReestablishmentInterval-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- StreamingAllowReestablishmentInterval-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies the number of seconds between attempts to reestablish a dropped session.
+<!-- StreamingAllowReestablishmentInterval-Description-End -->
 
-<!--/Description-->
+<!-- StreamingAllowReestablishmentInterval-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StreamingAllowReestablishmentInterval-Editable-End -->
 
+<!-- StreamingAllowReestablishmentInterval-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Reestablishment Interval*
--   GP name: *Streaming_Reestablishment_Interval*
--   GP path: *System/App-V/Streaming*
--   GP ADMX file name: *appv.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StreamingAllowReestablishmentInterval-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- StreamingAllowReestablishmentInterval-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="appvirtualization-streamingallowreestablishmentretries"></a>**AppVirtualization/StreamingAllowReestablishmentRetries**  
+| Name | Value |
+|:--|:--|
+| Name | Streaming_Reestablishment_Interval |
+| Friendly Name | Reestablishment Interval |
+| Location | Computer Configuration |
+| Path | System > App-V > Streaming |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Streaming |
+| ADMX File Name | appv.admx |
+<!-- StreamingAllowReestablishmentInterval-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- StreamingAllowReestablishmentInterval-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StreamingAllowReestablishmentInterval-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- StreamingAllowReestablishmentInterval-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StreamingAllowReestablishmentRetries-Begin -->
+## StreamingAllowReestablishmentRetries
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StreamingAllowReestablishmentRetries-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- StreamingAllowReestablishmentRetries-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- StreamingAllowReestablishmentRetries-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/StreamingAllowReestablishmentRetries
+```
+<!-- StreamingAllowReestablishmentRetries-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- StreamingAllowReestablishmentRetries-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies the number of times to retry a dropped session.
+<!-- StreamingAllowReestablishmentRetries-Description-End -->
 
-<!--/Description-->
+<!-- StreamingAllowReestablishmentRetries-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StreamingAllowReestablishmentRetries-Editable-End -->
 
+<!-- StreamingAllowReestablishmentRetries-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Reestablishment Retries*
--   GP name: *Streaming_Reestablishment_Retries*
--   GP path: *System/App-V/Streaming*
--   GP ADMX file name: *appv.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StreamingAllowReestablishmentRetries-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- StreamingAllowReestablishmentRetries-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="appvirtualization-streamingsharedcontentstoremode"></a>**AppVirtualization/StreamingSharedContentStoreMode**  
+| Name | Value |
+|:--|:--|
+| Name | Streaming_Reestablishment_Retries |
+| Friendly Name | Reestablishment Retries |
+| Location | Computer Configuration |
+| Path | System > App-V > Streaming |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Streaming |
+| ADMX File Name | appv.admx |
+<!-- StreamingAllowReestablishmentRetries-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- StreamingAllowReestablishmentRetries-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StreamingAllowReestablishmentRetries-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- StreamingAllowReestablishmentRetries-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StreamingSharedContentStoreMode-Begin -->
+## StreamingSharedContentStoreMode
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StreamingSharedContentStoreMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- StreamingSharedContentStoreMode-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- StreamingSharedContentStoreMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/StreamingSharedContentStoreMode
+```
+<!-- StreamingSharedContentStoreMode-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- StreamingSharedContentStoreMode-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Specifies that streamed package contents will be not be saved to the local hard disk.
+<!-- StreamingSharedContentStoreMode-Description-End -->
 
-<!--/Description-->
+<!-- StreamingSharedContentStoreMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StreamingSharedContentStoreMode-Editable-End -->
 
+<!-- StreamingSharedContentStoreMode-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Shared Content Store (SCS) mode*
--   GP name: *Streaming_Shared_Content_Store_Mode*
--   GP path: *System/App-V/Streaming*
--   GP ADMX file name: *appv.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StreamingSharedContentStoreMode-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- StreamingSharedContentStoreMode-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="appvirtualization-streamingsupportbranchcache"></a>**AppVirtualization/StreamingSupportBranchCache**  
+| Name | Value |
+|:--|:--|
+| Name | Streaming_Shared_Content_Store_Mode |
+| Friendly Name | Shared Content Store (SCS) mode |
+| Location | Computer Configuration |
+| Path | System > App-V > Streaming |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Streaming |
+| Registry Value Name | SharedContentStoreMode |
+| ADMX File Name | appv.admx |
+<!-- StreamingSharedContentStoreMode-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- StreamingSharedContentStoreMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StreamingSharedContentStoreMode-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- StreamingSharedContentStoreMode-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StreamingSupportBranchCache-Begin -->
+## StreamingSupportBranchCache
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StreamingSupportBranchCache-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- StreamingSupportBranchCache-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- StreamingSupportBranchCache-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/StreamingSupportBranchCache
+```
+<!-- StreamingSupportBranchCache-OmaUri-End -->
 
-<hr/>
+<!-- StreamingSupportBranchCache-Description-Begin -->
+<!-- Description-Source-ADMX -->
+If enabled, the App-V client will support BrancheCache compatible HTTP streaming. If BranchCache support isn't desired, this should be disabled. The client can then apply HTTP optimizations which are incompatible with BranchCache.
+<!-- StreamingSupportBranchCache-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-If enabled, the App-V client will support BrancheCache compatible HTTP streaming. If BranchCache support is not desired, this should be disabled. The client can then apply HTTP optimizations which are incompatible with BranchCache
+<!-- StreamingSupportBranchCache-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StreamingSupportBranchCache-Editable-End -->
 
-<!--/Description-->
+<!-- StreamingSupportBranchCache-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StreamingSupportBranchCache-DFProperties-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Enable Support for BranchCache*
--   GP name: *Streaming_Support_Branch_Cache*
--   GP path: *System/App-V/Streaming*
--   GP ADMX file name: *appv.admx*
+<!-- StreamingSupportBranchCache-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+**ADMX mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Streaming_Support_Branch_Cache |
+| Friendly Name | Enable Support for BranchCache |
+| Location | Computer Configuration |
+| Path | System > App-V > Streaming |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Streaming |
+| Registry Value Name | SupportBranchCache |
+| ADMX File Name | appv.admx |
+<!-- StreamingSupportBranchCache-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="appvirtualization-streamingverifycertificaterevocationlist"></a>**AppVirtualization/StreamingVerifyCertificateRevocationList**  
+<!-- StreamingSupportBranchCache-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StreamingSupportBranchCache-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- StreamingSupportBranchCache-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- StreamingVerifyCertificateRevocationList-Begin -->
+## StreamingVerifyCertificateRevocationList
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StreamingVerifyCertificateRevocationList-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- StreamingVerifyCertificateRevocationList-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StreamingVerifyCertificateRevocationList-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/StreamingVerifyCertificateRevocationList
+```
+<!-- StreamingVerifyCertificateRevocationList-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- StreamingVerifyCertificateRevocationList-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Verifies Server certificate revocation status before streaming using HTTPS.
+<!-- StreamingVerifyCertificateRevocationList-Description-End -->
 
-<!--/Description-->
+<!-- StreamingVerifyCertificateRevocationList-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StreamingVerifyCertificateRevocationList-Editable-End -->
 
+<!-- StreamingVerifyCertificateRevocationList-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Verify certificate revocation list*
--   GP name: *Streaming_Verify_Certificate_Revocation_List*
--   GP path: *System/App-V/Streaming*
--   GP ADMX file name: *appv.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StreamingVerifyCertificateRevocationList-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- StreamingVerifyCertificateRevocationList-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="appvirtualization-virtualcomponentsallowlist"></a>**AppVirtualization/VirtualComponentsAllowList**  
+| Name | Value |
+|:--|:--|
+| Name | Streaming_Verify_Certificate_Revocation_List |
+| Friendly Name | Verify certificate revocation list |
+| Location | Computer Configuration |
+| Path | System > App-V > Streaming |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Streaming |
+| Registry Value Name | VerifyCertificateRevocationList |
+| ADMX File Name | appv.admx |
+<!-- StreamingVerifyCertificateRevocationList-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- StreamingVerifyCertificateRevocationList-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StreamingVerifyCertificateRevocationList-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- StreamingVerifyCertificateRevocationList-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- VirtualComponentsAllowList-Begin -->
+## VirtualComponentsAllowList
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- VirtualComponentsAllowList-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- VirtualComponentsAllowList-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- VirtualComponentsAllowList-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AppVirtualization/VirtualComponentsAllowList
+```
+<!-- VirtualComponentsAllowList-OmaUri-End -->
 
-<hr/>
+<!-- VirtualComponentsAllowList-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies a list of process paths (may contain wildcards) which are candidates for using virtual components (shell extensions, browser helper objects, etc). Only processes whose full path matches one of these items can use virtual components.
+<!-- VirtualComponentsAllowList-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-Specifies a list of process paths (may contain wildcards) which are candidates for using virtual components (shell extensions, browser helper objects, etc.). Only processes whose full path matches one of these items can use virtual components.
+<!-- VirtualComponentsAllowList-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- VirtualComponentsAllowList-Editable-End -->
 
-<!--/Description-->
+<!-- VirtualComponentsAllowList-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- VirtualComponentsAllowList-DFProperties-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Virtual Component Process Allow List*
--   GP name: *Virtualization_JITVAllowList*
--   GP path: *System/App-V/Virtualization*
--   GP ADMX file name: *appv.admx*
+<!-- VirtualComponentsAllowList-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | Virtualization_JITVAllowList |
+| Friendly Name | Virtual Component Process Allow List |
+| Location | Computer Configuration |
+| Path | System > App-V > Virtualization |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\AppV\Client\Virtualization |
+| Registry Value Name | ProcessesUsingVirtualComponents |
+| ADMX File Name | appv.admx |
+<!-- VirtualComponentsAllowList-AdmxBacked-End -->
 
+<!-- VirtualComponentsAllowList-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- VirtualComponentsAllowList-Examples-End -->
 
-<!--/Policies-->
+<!-- VirtualComponentsAllowList-End -->
 
+<!-- AppVirtualization-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- AppVirtualization-CspMoreInfo-End -->
+
+<!-- AppVirtualization-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

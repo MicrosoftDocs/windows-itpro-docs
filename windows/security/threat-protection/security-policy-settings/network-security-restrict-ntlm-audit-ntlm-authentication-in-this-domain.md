@@ -1,27 +1,21 @@
 ---
-title: Network security Restrict NTLM Audit NTLM authentication in this domain (Windows 10)
+title: Network security Restrict NTLM Audit NTLM authentication in this domain
 description: Best practices, security considerations, and more for the security policy setting, Network Security Restrict NTLM Audit NTLM authentication in this domain.
-ms.assetid: 33183ef9-53b5-4258-8605-73dc46335e6e
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.author: vinpa
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+author: vinaypamnani-msft
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network security: Restrict NTLM: Audit NTLM authentication in this domain
 
 **Applies to**
--   Windows 10
+- Windows Server
 
 Describes the best practices, location, values, management aspects, and security considerations for the **Network Security: Restrict NTLM: Audit NTLM authentication in this domain** security policy setting.
 
@@ -31,25 +25,29 @@ The **Network Security: Restrict NTLM: Audit NTLM authentication in this domain*
 
 When you enable this policy setting on the domain controller, only authentication traffic to that domain controller will be logged.
 
-When you enable this audit policy, it functions in the same way as the **Network Security: Restrict NTLM: NTLM authentication in this domain** policy setting, but it does not actually block any traffic. Therefore, you can use it effectively to understand the authentication traffic to your domain controllers and when you are ready to block that traffic, you can enable the **Network Security: Restrict NTLM: NTLM authentication in this domain** policy setting and select **Deny for domain accounts to domain servers**, **Deny for domain servers**, or **Deny for domain accounts**.
+When you enable this audit policy, it functions in the same way as the **Network Security: Restrict NTLM: NTLM authentication in this domain** policy setting, but it doesn't actually block any traffic. Therefore, you can use it effectively to understand the authentication traffic to your domain controllers and when you're ready to block that traffic, you can enable the **Network Security: Restrict NTLM: NTLM authentication in this domain** policy setting and select **Deny for domain accounts to domain servers**, **Deny for domain servers**, or **Deny for domain accounts**.
 
 ### Possible values
 
 -   **Disable**
 
-    The domain controller on which this policy is set will not log events for incoming NTLM traffic.
+    The domain controller on which this policy is set won't log events for incoming NTLM traffic.
 
 -   **Enable for domain accounts to domain servers**
 
-    The domain controller on which this policy is set will log events for NTLM authentication logon attempts for accounts in the domain to domain servers when NTLM authentication would be denied because the **Network security: Restrict NTLM: NTLM authentication in this domain** policy setting is set to **Deny for domain accounts to domain servers**.
+    The domain controller on which this policy is set will log events for NTLM authentication sign-in attempts for accounts in the domain to domain servers when NTLM authentication would be denied because the **Network security: Restrict NTLM: NTLM authentication in this domain** policy setting is set to **Deny for domain accounts to domain servers**.
 
 -   **Enable for domain accounts**
 
-    The domain controller will log events for NTLM authentication logon attempts that use domain accounts when NTLM authentication would be denied because the **Network security: Restrict NTLM: NTLM authentication in this domain** policy setting is set to **Deny for domain accounts**.
+    The domain controller will log events for NTLM authentication sign-in attempts that use domain accounts when NTLM authentication would be denied because the **Network security: Restrict NTLM: NTLM authentication in this domain** policy setting is set to **Deny for domain accounts**.
 
--   Not defined
+- **Enable for domain servers**
 
-    This is the same as **Disable** and results in no auditing of NTLM traffic.
+    The domain controller will log events for NTLM authentication requests to all servers in the domain when NTLM authentication would be denied because the **Network security: Restrict NTLM: NTLM authentication in this domain** policy setting is set to **Deny for domain servers**.
+
+- **Enable all**
+    
+    The domain controller on which this policy is set will log all events for incoming NTLM traffic.
 
 ### Best practices
 
@@ -92,19 +90,19 @@ There are no security audit event policies that can be configured to view output
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
-NTLM and NTLMv2 authentication is vulnerable to a variety of malicious attacks, including SMB replay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the 
+NTLM and NTLMv2 authentication is vulnerable to various malicious attacks, including SMB relay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the 
 Kerberos version 5 protocol, or different authentication mechanisms, such as smart cards.
 
 ### Vulnerability
 
-Enabling this policy setting will reveal through logging which devices within your network or domain handle NTLM traffic. The identity of these devices can be used in malicious ways if NTLM authentication traffic is compromised. The policy setting does not prevent or mitigate any vulnerability because it is for audit purposes only.
+Enabling this policy setting will reveal through logging which devices within your network or domain handle NTLM traffic. The identity of these devices can be used in malicious ways if NTLM authentication traffic is compromised. The policy setting doesn't prevent or mitigate any vulnerability because it is for audit purposes only.
 ### Countermeasure
 
 Restrict access to the log files when this policy setting is enabled in your production environment.
 
 ### Potential impact
 
-If you do not enable or configure this policy setting, no NTLM authentication traffic information will be logged. If you do enable this policy setting, only auditing functions will occur; no security enhancements will be implemented.
+If you don't enable or configure this policy setting, no NTLM authentication traffic information will be logged. If you do enable this policy setting, only auditing functions will occur; no security enhancements will be implemented.
 
 ## Related topics
 

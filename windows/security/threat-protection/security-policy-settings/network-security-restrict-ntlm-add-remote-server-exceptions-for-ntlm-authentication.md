@@ -1,26 +1,26 @@
 ---
-title: Network security Restrict NTLM Add remote server exceptions for NTLM authentication (Windows 10)
+title: Network security Restrict NTLM Add remote server exceptions for NTLM authentication 
 description: Best practices, security considerations, and more for the policy setting, Network security Restrict NTLM Add remote server exceptions for NTLM authentication.
 ms.assetid: 9b017399-0a54-4580-bfae-614c2beda3a1
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, management aspects, and security considerations for the **Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication** security policy setting.
@@ -31,7 +31,7 @@ The **Network security: Restrict NTLM: Add remote server exceptions for NTLM aut
 
 If you configure this policy setting, you can define a list of remote servers to which client devices are allowed to use NTLM authentication.
 
-If you do not configure this policy setting, no exceptions will be applied, and if [Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers](network-security-restrict-ntlm-outgoing-ntlm-traffic-to-remote-servers.md) is enabled, NTLM authentication attempts from the client devices will fail.
+If you don't configure this policy setting, no exceptions will be applied, and if [Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers](network-security-restrict-ntlm-outgoing-ntlm-traffic-to-remote-servers.md) is enabled, NTLM authentication attempts from the client devices will fail.
 
 List the NetBIOS server names that are used by the applications as the naming format, one per line. To ensure exceptions, the names that are used by all applications need to be in the list. A single asterisk (\*) can be used anywhere in the string as a wildcard character.
 
@@ -43,7 +43,7 @@ List the NetBIOS server names that are used by the applications as the naming fo
 
 -   Not defined
 
-    If you do not configure this policy setting by defining a list of servers, the policy is undefined and no exceptions will be applied.
+    If you don't configure this policy setting by defining a list of servers, the policy is undefined and no exceptions will be applied.
 
 ### Best practices
 
@@ -72,7 +72,7 @@ This section describes the features and tools that are available to help you man
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ### Group Policy
 
@@ -90,7 +90,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-When it has been determined that the NTLM authentication protocol should not be used from a client device to any remote servers because you are required to use a more secure protocol such as Kerberos, there might be some client applications that still use NTLM. If so, and you set [Network Security: 
+When it has been determined that the NTLM authentication protocol shouldn't be used from a client device to any remote servers because you're required to use a more secure protocol such as Kerberos, there might be some client applications that still use NTLM. If so, and you set [Network Security: 
 Restrict NTLM: Outgoing NTLM traffic to remote servers](network-security-restrict-ntlm-outgoing-ntlm-traffic-to-remote-servers.md) to any of the deny options, those applications will fail because the outbound NTLM authentication traffic from the client computer will be blocked.
 
 If you define an exception list of servers to which client devices are allowed to use NTLM authentication, then NTLM authentication traffic will continue to flow between those client applications and servers. The servers then are vulnerable to any malicious attack that takes advantage of security weaknesses in NTLM.
@@ -98,13 +98,13 @@ If you define an exception list of servers to which client devices are allowed t
 ### Countermeasure
 
 When you use [Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers](network-security-restrict-ntlm-outgoing-ntlm-traffic-to-remote-servers.md) in audit-only mode, you can determine by reviewing which client applications are making NTLM authentication requests to the remote 
-servers in your environment. When assessed, you will have to determine on a case-by-case basis if NTLM authentication still minimally meets your security requirements. If not, the client application has to be upgraded to use something other than NTLM authentication.
+servers in your environment. When assessed, you'll have to determine on a case-by-case basis if NTLM authentication still minimally meets your security requirements. If not, the client application has to be upgraded to use something other than NTLM authentication.
 
 ### Potential impact
 
-Defining a list of servers for this policy setting will enable NTLM authentication traffic from the client application that uses those servers, and this might result in a security vulnerability.
+Defining a list of servers for this policy setting will enable NTLM authentication traffic from the client application that uses those servers, and this traffic might result in a security vulnerability.
 
-If this list is not defined and [Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers](network-security-restrict-ntlm-outgoing-ntlm-traffic-to-remote-servers.md) is enabled, then client applications that use NTLM will fail to authenticate to those servers that they have previously used.
+If this list isn't defined and [Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers](network-security-restrict-ntlm-outgoing-ntlm-traffic-to-remote-servers.md) is enabled, then client applications that use NTLM will fail to authenticate to those servers that they've previously used.
 
 ## Related topics
 

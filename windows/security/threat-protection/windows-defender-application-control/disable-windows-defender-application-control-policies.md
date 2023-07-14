@@ -1,95 +1,174 @@
 ---
-title: Disable Windows Defender Application Control policies  (Windows)
+title: Remove Windows Defender Application Control policies  
 description: Learn how to disable both signed and unsigned Windows Defender Application Control policies, within Windows and within the BIOS.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
-ms.date: 05/03/2018
-ms.technology: windows-sec
+ms.reviewer: jogeurte
+ms.author: vinpa
+manager: aaroncz
+ms.date: 11/04/2022
+ms.technology: itpro-security
+ms.topic: article
 ---
 
-# Disable Windows Defender Application Control policies
+# Remove Windows Defender Application Control (WDAC) policies
 
 **Applies to:**
 
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-This topic covers how to disable unsigned or signed WDAC policies.
+## Removing WDAC policies
 
-## Disable unsigned Windows Defender Application Control policies
+There may come a time when you want to remove one or more WDAC policies, or remove all WDAC policies you've deployed. This article describes the various ways to remove WDAC policies.
 
-There may come a time when an administrator wants to disable a WDAC policy. For unsigned WDAC policies, this process is simple. The method used to deploy the policy (such as Group Policy) must first be disabled, then simply delete the SIPolicy.p7b policy file from the following locations, and the WDAC policy will be disabled on the next computer restart:
+> [!IMPORTANT]
+> **Signed WDAC policy**
+>
+> If the policy you are trying to remove is a signed WDAC policy, you must first deploy a signed replacement policy that includes option **6 Enabled:Unsigned System Integrity Policy**.
+>
+> The replacement policy must have the same PolicyId as the one it's replacing and a version that's equal to or greater than the existing policy. The replacement policy must also include \<UpdatePolicySigners\>.
+>
+> To take effect, this policy must be signed with a certificate included in the \<UpdatePolicySigners\> section of the original policy you want to replace.
+>
+> You must then restart the computer so that the UEFI protection of the policy is deactivated. ***Failing to do so will result in a boot start failure.***
 
--   &lt;EFI System Partition&gt;\\Microsoft\\Boot\\
--   &lt;OS Volume&gt;\\Windows\\System32\\CodeIntegrity\\
+Before removing any policy, you must first disable the method used to deploy it (such as Group Policy or MDM). Otherwise, the policy may redeploy to the computer.
 
-Note that as of the Windows 10 May 2019 Update (1903), WDAC allows multiple policies to be deployed to a device. To fully disable WDAC when multiple policies are in effect, you must first disable each method being used to deploy a policy. Then delete the {Policy GUID}.cip policy files found in the \CIPolicies\Active subfolder under each of the paths listed above in addition to any SIPolicy.p7b file found in the root directory.
+To make a policy effectively inactive before removing it, you can first replace the policy with a new one that includes the following changes:
 
-## Disable signed Windows Defender Application Control policies within Windows
+1. Replace the policy rules with "Allow *" rules;
+2. Set option **3 Enabled:Audit Mode** to change the policy to audit mode only;
+3. Set option **11 Disabled:Script Enforcement**;
+4. Allow all COM objects. See [Allow COM object registration in a WDAC policy](/windows/security/threat-protection/windows-defender-application-control/allow-com-object-registration-in-windows-defender-application-control-policy#examples);
+5. If applicable, remove option **0 Enabled:UMCI** to convert the policy to kernel mode only.
 
-Signed policies protect Windows from administrative manipulation as well as malware that has gained administrative-level access to the system. For this reason, signed WDAC policies are intentionally more difficult to remove than unsigned policies. They inherently protect themselves from modification or removal and therefore are difficult even for administrators to remove successfully. If the signed WDAC policy is manually enabled and copied to the CodeIntegrity folder, to remove the policy, you must complete the following steps.
+> [!IMPORTANT]
+> After a policy has been removed, you must restart the computer for it to take effect. You can't remove WDAC policies rebootlessly.
+
+### Remove WDAC policies using CiTool.exe
+
+Beginning with the Windows 11 2022 Update, you can remove WDAC policies using CiTool.exe. From an elevated command window, run the following command. Be sure to replace the text *PolicyId GUID* with the actual PolicyId of the WDAC policy you want to remove:
+
+```powershell
+    CiTool.exe -rp "{PolicyId GUID}" -json
+```
+
+Then restart the computer.
+
+### Remove WDAC policies using MDM solutions like Intune
+
+You can use a Mobile Device Management (MDM) solution, like Microsoft Intune, to remove WDAC policies from client machines using the [ApplicationControl CSP](/windows/client-management/mdm/applicationcontrol-csp).
+
+<!-- Waiting for information from Intune team on specific steps...
+
+The steps to use Intune's custom OMA-URI functionality to remove a WDAC policy are:
+
+1. Open the Microsoft Intune portal and [create a profile with custom settings](/mem/intune/configuration/custom-settings-windows-10).
+
+2. Specify a **Name** and **Description** and use the following values for the remaining custom OMA-URI settings:
+    - **OMA-URI**: `./Vendor/MSFT/ApplicationControl/Policies/_PolicyId GUID_/Policy`
+    - **Data type**: Base64 (file)
+    - **Certificate file**: upload your binary format policy file. You don't need to upload a Base64 file, as Intune will convert the uploaded .bin file to Base64 on your behalf.
+
+    > [!div class="mx-imgBorder"]
+    > ![Configure custom WDAC.](../images/wdac-intune-custom-oma-uri.png)
 
 > [!NOTE]
-> For reference, signed WDAC policies should be replaced and removed from the following locations:
-> 
-> * &lt;EFI System Partition&gt;\\Microsoft\\Boot\\
-> * &lt;OS Volume&gt;\\Windows\\System32\\CodeIntegrity\\
+> For the _Policy GUID_ value, do not include the curly brackets.
+-->
 
+Consult your MDM solution provider for specific information on using the ApplicationControl CSP.
 
-1.  Replace the existing policy with another signed policy that has the **6 Enabled: Unsigned System Integrity Policy** rule option enabled.
+Then restart the computer.
 
-    > [!NOTE]
-    > To take effect, this policy must be signed with a certificate previously added to the **UpdatePolicySigners** section of the original signed policy you want to replace.
+### Remove WDAC policies using script
 
-2.  Restart the client computer.
+To remove WDAC policies using script, your script must delete the policy file(s) from the computer. For **multiple policy format (1903+) WDAC policies**, look for the policy files in the following locations. Be sure to replace the *PolicyId GUID* with the actual PolicyId of the WDAC policy you want to remove.
 
-3.  Verify that the new signed policy exists on the client.
+- &lt;EFI System Partition&gt;\\Microsoft\\Boot\\CiPolicies\Active\\*\{PolicyId GUID\}*.cip
+- &lt;OS Volume&gt;\\Windows\\System32\\CodeIntegrity\\CiPolicies\Active\\*\{PolicyId GUID\}*.cip
 
-    > [!NOTE]
-    > If the signed policy that contains rule option 6 has not been processed on the client, the addition of an unsigned policy may cause boot failures.
+For **single policy format WDAC policies**, in addition to the two locations above, also look for a file called SiPolicy.p7b that may be found in the following locations:
 
-4.  Delete the new policy.
+- &lt;EFI System Partition&gt;\\Microsoft\\Boot\\SiPolicy.p7b
+- &lt;OS Volume&gt;\\Windows\\System32\\CodeIntegrity\\SiPolicy.p7b
 
-5.  Restart the client computer.
+Then restart the computer.
 
-If the signed WDAC policy has been deployed using by using Group Policy, you must complete the following steps:
+#### Sample script to delete a single WDAC policy
 
-1.  Replace the existing policy in the GPO with another signed policy that has the **6 Enabled: Unsigned System Integrity Policy** rule option enabled.
+```powershell
+# Set PolicyId GUID to the PolicyId from your WDAC policy XML
+$PolicyId = "{PolicyId GUID}"
 
-    > [!NOTE]  
-    > To take effect, this policy must be signed with a certificate previously added to the **UpdatePolicySigners** section of the original signed policy you want to replace.
+# Initialize variables
+$SinglePolicyFormatPolicyId = "{A244370E-44C9-4C06-B551-F6016E563076}"
+$SinglePolicyFormatFileName = "\SiPolicy.p7b"
+$MountPoint =  $env:SystemDrive+"\EFIMount"
+$SystemCodeIntegrityFolderRoot = $env:windir+"\System32\CodeIntegrity"
+$EFICodeIntegrityFolderRoot = $MountPoint+"\EFI\Microsoft\Boot"
+$MultiplePolicyFilePath = "\CiPolicies\Active\"+$PolicyId+".cip"
 
-2.  Restart the client computer.
+# Mount the EFI partition
+$EFIPartition = (Get-Partition | Where-Object IsSystem).AccessPaths[0]
+if (-Not (Test-Path $MountPoint)) { New-Item -Path $MountPoint -Type Directory -Force }
+mountvol $MountPoint $EFIPartition
 
-3.  Verify that the new signed policy exists on the client.
+# Check if the PolicyId to be removed is the system reserved GUID for single policy format.
+# If so, the policy may exist as both SiPolicy.p7b in the policy path root as well as
+# {GUID}.cip in the CiPolicies\Active subdirectory
+if ($PolicyId -eq $SinglePolicyFormatPolicyId) {$NumFilesToDelete = 4} else {$NumFilesToDelete = 2}
 
-    > [!NOTE]
-    > If the signed policy that contains rule option 6 has not been processed on the client, the addition of an unsigned policy may cause boot failures.
+$Count = 1
+while ($Count -le $NumFilesToDelete)
+{
 
-4.  Set the GPO to disabled.
+    # Set the $PolicyPath to the file to be deleted, if exists
+    Switch ($Count)
+    {
+        1 {$PolicyPath = $SystemCodeIntegrityFolderRoot+$MultiplePolicyFilePath}
+        2 {$PolicyPath = $EFICodeIntegrityFolderRoot+$MultiplePolicyFilePath}
+        3 {$PolicyPath = $SystemCodeIntegrityFolderRoot+$SinglePolicyFormatFileName}
+        4 {$PolicyPath = $EFICodeIntegrityFolderRoot+$SinglePolicyFormatFileName}
+    }
 
-5.  Delete the new policy.
+    # Delete the policy file from the current $PolicyPath
+    Write-Host "Attempting to remove $PolicyPath..." -ForegroundColor Cyan
+    if (Test-Path $PolicyPath) {Remove-Item -Path $PolicyPath -Force -ErrorAction Continue}
 
-6.  Restart the client computer.
+    $Count = $Count + 1
+}
 
-## Disable signed Windows Defender Application Control policies within the BIOS
+# Dismount the EFI partition
+mountvol $MountPoint /D
+```
 
-There may be a time when signed WDAC policies cause a boot failure. Because WDAC policies enforce kernel mode drivers, it is important that they be thoroughly tested on each software and hardware configuration before being enforced and signed. Signed WDAC policies are validated in the pre-boot sequence by using Secure Boot. When you disable the Secure Boot feature in the BIOS, and then delete the file from the following locations on the operating system disk, it allows the system to boot into Windows:
+> [!NOTE]
+> You must run the script as administrator to remove WDAC policies on your computer.
 
--   &lt;EFI System Partition&gt;\\Microsoft\\Boot\\
--   &lt;OS Volume&gt;\\Windows\\System32\\CodeIntegrity\\
+## Remove WDAC policies causing boot stop failures
+
+A WDAC policy that blocks boot critical drivers can cause a boot stop failure (BSOD) to occur, though this can be mitigated by setting option **10 Enabled:Boot Audit On Failure** in your policies. Additionally, signed WDAC policies protect the policy from administrative manipulation and malware that has gained administrative-level access to the system. For this reason, signed WDAC policies are intentionally more difficult to remove than unsigned policies even for administrators. Tampering with or removing a signed WDAC policy will cause a BSOD to occur.
+
+To remove a policy that is causing boot stop failures:
+
+1. If the policy is a **signed** WDAC policy, turn off Secure Boot from your [UEFI BIOS menu](/windows-hardware/manufacture/desktop/boot-to-uefi-mode-or-legacy-bios-mode). For help with locating where to turn off Secure Boot within your BIOS menu, consult with your original equipment manufacturer (OEM).
+2. Access the Advanced Boot Options menu on your computer and choose the option to **Disable Driver Signature Enforcement**. For instructions on accessing the Advanced Boot Options menu during startup, consult with your OEM. This option will suspend all code integrity checks, including WDAC, for a single boot session.
+3. Start Windows normally and sign in. Then, [remove WDAC policies using script](#remove-wdac-policies-using-script).
+4. If you turned off Secure Boot in step 1 above and your drive is protected by BitLocker, [suspend BitLocker protection](/troubleshoot/windows-client/windows-security/suspend-bitlocker-protection-non-microsoft-updates) then turn on Secure Boot from your UEFI BIOS menu.
+5. Restart the computer.
+
+> [!NOTE]
+> If your drive is protected by Bitlocker, you may need your Bitlocker recovery keys to perform steps 1-2 above.

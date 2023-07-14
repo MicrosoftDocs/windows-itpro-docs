@@ -1,26 +1,26 @@
 ---
-title: Network security Restrict NTLM Incoming NTLM traffic (Windows 10)
+title: Network security Restrict NTLM Incoming NTLM traffic 
 description: Best practices, security considerations, and more for the security policy setting, Network Security Restrict NTLM Incoming NTLM traffic.
 ms.assetid: c0eff7d3-ed59-4004-908a-2205295fefb8
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network security: Restrict NTLM: Incoming NTLM traffic
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, management aspects, and security considerations for the **Network Security: Restrict NTLM: Incoming NTLM traffic** security policy setting.
@@ -37,20 +37,20 @@ The **Network Security: Restrict NTLM: Incoming NTLM traffic** policy setting al
 
 -   **Deny all domain accounts**
 
-    The server will deny NTLM authentication requests for domain logon, return an NTLM blocked error message to the client device, and log the error, but the server will allow local account logon.
+    The server will deny NTLM authentication requests for domain sign in, return an NTLM blocked error message to the client device, and log the error, but the server will allow local account sign in.
 
 
 -   **Deny all accounts**
 
-    The server will deny NTLM authentication requests from all incoming traffic (whether domain account logon or local account logon), return an NTLM blocked error message to the client device, and log the error.
+    The server will deny NTLM authentication requests from all incoming traffic (whether domain account sign in or local account sign in), return an NTLM blocked error message to the client device, and log the error.
 
 -   Not defined
 
-    This is the same as **Allow all**, and the server will allow all NTLM authentication requests.
+    This state of not being defined is the same as **Allow all**, and the server will allow all NTLM authentication requests.
 
 ### Best practices
 
-If you select **Deny all domain accounts** or **Deny all accounts**, incoming NTLM traffic to the member server will be restricted. It is better to set the **Network Security: Restrict NTLM: Audit Incoming NTLM traffic** policy setting and then review the Operational log to understand what authentication attempts are made to the member servers, and subsequently what client applications are using NTLM.
+If you select **Deny all domain accounts** or **Deny all accounts**, incoming NTLM traffic to the member server will be restricted. It's better to set the **Network Security: Restrict NTLM: Audit Incoming NTLM traffic** policy setting and then review the Operational log to understand what authentication attempts are made to the member servers, and then what client applications are using NTLM.
 
 ### Location
 
@@ -89,7 +89,7 @@ There are no Security Audit Event policies that can be configured to view event 
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
-NTLM and NTLMv2 authentication is vulnerable to a variety of malicious attacks, including SMB replay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the Kerberos version 5 protocol, or different authentication mechanisms, such as smart cards.
+NTLM and NTLMv2 authentication is vulnerable to various malicious attacks, including SMB replay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the Kerberos version 5 protocol, or different authentication mechanisms, such as smart cards.
 
 ### Vulnerability
 
@@ -97,7 +97,7 @@ Malicious attacks on NTLM authentication traffic that result in a compromised se
 
 ### Countermeasure
 
-When it has been determined that the NTLM authentication protocol should not be used within a network because you are required to use a more secure protocol such as Kerberos, you can select one of several options that this security policy setting offers to restrict NTLM usage.
+When it has been determined that the NTLM authentication protocol shouldn't be used within a network because you're required to use a more secure protocol such as Kerberos, you can select one of several options that this security policy setting offers to restrict NTLM usage.
 
 ### Potential impact
 

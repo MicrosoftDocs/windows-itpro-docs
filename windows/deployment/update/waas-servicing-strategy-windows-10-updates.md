@@ -1,18 +1,17 @@
 ---
-title: Prepare servicing strategy for Windows client updates
-description: A strong Windows client deployment strategy begins with establishing a simple, repeatable process for testing and deploying each feature update. 
-ms.prod: w10
-ms.mktglfcycl: manage
-author: jaimeo
+title: Prepare a servicing strategy for Windows client updates
+description: A strong Windows client deployment strategy begins with establishing a simple, repeatable process for testing and deploying each feature update.
+ms.prod: windows-client
+author: mestew
 ms.localizationpriority: medium
-ms.author: jaimeo
-ms.reviewer: 
-manager: laurawi
+ms.author: mstewart
+manager: aaroncz
 ms.topic: article
-ms.collection: m365initiative-coredeploy
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
-# Prepare servicing strategy for Windows client updates
+# Prepare a servicing strategy for Windows client updates
 
 
 **Applies to**
@@ -26,10 +25,10 @@ ms.collection: m365initiative-coredeploy
 Here’s an example of what this process might look like:
 
 - **Configure test devices.** Configure test devices in the Windows Insider Program so that Insiders can test feature updates before they’re available to the General Availability Channel. Typically, this population would be a few test devices that IT staff members use to evaluate pre-release builds of Windows. Microsoft provides current development builds to Windows Insider members approximately every week so that interested users can see the functionality Microsoft is adding. See the section Windows Insider for details on how to enroll in the Windows Insider Program for Business.
-- **Identify excluded devices.** For some organizations, special-purpose devices such as those used to control factory or medical equipment or run ATMs require a stricter, less frequent feature update cycle than the General Availability Channel can offer. For those devices, install the Enterprise LTSC edition to avoid feature updates for up to 10 years. Identify these devices, and separate them from the phased deployment and servicing cycles to help remove confusion for your administrators and ensure that devices are handled correctly. 
+- **Identify excluded devices.** For some organizations, special-purpose devices, like devices that control factory or medical equipment or run ATMs, require a stricter, less frequent feature update cycle than the General Availability Channel can offer. For those devices, install the Enterprise LTSC edition to avoid feature updates for up to 10 years. Identify these devices, and separate them from the phased deployment and servicing cycles to help remove confusion for your administrators and ensure that devices are handled correctly. 
 - **Recruit volunteers.** The purpose of testing a deployment is to receive feedback. One effective way to recruit pilot users is to request volunteers. When doing so, clearly state that you’re looking for feedback rather than people to just “try it out” and that there could be occasional issues involved with accepting feature updates right away. With Windows as a service, the expectation is that there should be few issues, but if an issue does arise, you want testers to let you know as soon as possible. When considering whom to recruit for pilot groups, be sure to include members who provide the broadest set of applications and devices to validate the largest number of apps and devices possible.
 - **Update Group Policy.** Each feature update includes new group policies to manage new features. If you use Group Policy to manage devices, the Group Policy Admin for the Active Directory domain will need to download an .admx package and copy it to their [Central Store](/troubleshoot/windows-server/group-policy/create-central-store-domain-controller) (or to the [PolicyDefinitions](/previous-versions/dotnet/articles/bb530196(v=msdn.10)) directory in the SYSVOL folder of a domain controller if not using a Central Store). You can manage new group policies from the latest release of Windows by using Remote Server Administration Tools. The ADMX download package is created at the end of each development cycle and then posted for download. To find the ADMX download package for a given Windows build, search for “ADMX download for Windows build xxxx”. For details about Group Policy management, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)
-- **Choose a servicing tool.** Decide which product you’ll use to manage the Windows updates in your environment. If you’re currently using Windows Server Update Services (WSUS) or Microsoft Endpoint Manager to manage your Windows updates, you can continue using those products to manage Windows 10 or Windows 11 updates. Alternatively, you can use Windows Update for Business. In addition to which product you’ll use, consider how you’ll deliver the updates. Multiple peer-to-peer options are available to make update distribution faster. For a comparison of tools, see [Servicing tools](waas-overview.md#servicing-tools).
+- **Choose a servicing tool.** Decide which product you’ll use to manage the Windows updates in your environment. If you’re currently using Windows Server Update Services (WSUS) or Microsoft Configuration Manager to manage your Windows updates, you can continue using those products to manage Windows 10 or Windows 11 updates. Alternatively, you can use Windows Update for Business. In addition to which product you’ll use, consider how you’ll deliver the updates. Multiple peer-to-peer options are available to make update distribution faster. For a comparison of tools, see [Servicing tools](waas-overview.md#servicing-tools).
 - **Prioritize applications.** First, create an application portfolio. This list should include everything installed in your organization and any webpages your organization hosts. Next, prioritize this list to identify those apps that are the most business critical. Because the expectation is that application compatibility with new versions of Windows will be high, only the most business-critical applications should be tested before the pilot phase; everything else can be tested afterwards. For more information about identifying compatibility issues withe applications, see [Manage Windows upgrades with Upgrade Analytics](/mem/configmgr/desktop-analytics/overview). 
 
 

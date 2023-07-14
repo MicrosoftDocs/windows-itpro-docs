@@ -1,17 +1,18 @@
 ---
-title: 4692(S, F) Backup of data protection master key was attempted. (Windows 10)
+title: 4692(S, F) Backup of data protection master key was attempted. 
 description: Describes security event 4692(S, F) Backup of data protection master key was attempted.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4692(S, F): Backup of data protection master key was attempted.

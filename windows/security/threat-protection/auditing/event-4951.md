@@ -1,20 +1,21 @@
 ---
-title: 4951(F) A rule has been ignored because its major version number was not recognized by Windows Firewall. (Windows 10)
-description: Describes security event 4951(F) A rule has been ignored because its major version number was not recognized by Windows Firewall.
+title: 4951(F) A rule has been ignored because its major version number wasn't recognized by Windows Firewall. 
+description: Describes security event 4951(F) A rule has been ignored because its major version number wasn't recognized by Windows Firewall.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
-# 4951(F): A rule has been ignored because its major version number was not recognized by Windows Firewall.
+# 4951(F): A rule has been ignored because its major version number wasn't recognized by Windows Firewall.
 
 
 <img src="images/event-4951.png" alt="Event 4951 illustration" width="449" height="364" hspace="10" align="left" />
@@ -25,7 +26,7 @@ ms.technology: windows-sec
 
 When you create or edit a Windows Firewall rule, the settings that you can include depend upon the version of Windows you use when creating the rule. As new settings are added to later versions of Windows or to service packs for existing versions of Windows, the version number of the rules processing engine is updated, and that version number is stamped into rules that are created by using that version of Windows. For example, Windows Vista produces firewall rules that are stamped with version "v2.0". Future versions of Windows might use "v2.1", or "v3.0" to indicate, respectively, minor or major changes and additions.
 
-If you create a firewall rule on a newer version of Windows that references firewall settings that are not available on earlier versions of Windows, and then try to deploy that rule to computers running the earlier version of Windows, the firewall engine produces this error to indicate that it cannot process the rule.
+If you create a firewall rule on a newer version of Windows that references firewall settings that aren't available on earlier versions of Windows, and then try to deploy that rule to computers running the earlier version of Windows, the firewall engine produces this error to indicate that it can't process the rule.
 
 The only solution is to remove the incompatible rule, and then deploy a compatible rule.
 
@@ -73,11 +74,11 @@ The only solution is to remove the incompatible rule, and then deploy a compatib
 
 -   All
 
--   Domain,Public
+-   Domain, Public
 
--   Domain,Private
+-   Domain, Private
 
--   Private,Public
+-   Private, Public
 
 -   Public
 
@@ -89,17 +90,17 @@ The only solution is to remove the incompatible rule, and then deploy a compatib
 
 -   **ID** \[Type = UnicodeString\]: the unique identifier for ignored firewall rule.
 
-    To see the unique ID of the rule you need to navigate to “**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\FirewallRules”** registry key and you will see the list of Windows Firewall rule IDs (Name column) with parameters:
+    To see the unique ID of the rule, you need to navigate to “**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\FirewallRules”** registry key and you'll see the list of Windows Firewall rule IDs (Name column) with parameters:
 
 <img src="images/registry-editor-firewallrules.png" alt="Registry Editor FirewallRules key illustration" width="1412" height="422" />
 
--   **Name** \[Type = UnicodeString\]: the name of the rule which was ignored. You can see the name of Windows Firewall rule using Windows Firewall with Advanced Security management console (**wf.msc**), check “Name” column:
+-   **Name** \[Type = UnicodeString\]: the name of the rule that was ignored. You can see the name of Windows Firewall rule using Windows Firewall with Advanced Security management console (**wf.msc**), check “Name” column:
 
 <img src="images/windows-firewall-with-advanced-security.png" alt="Windows Firewall with Advanced Security illustration" width="1082" height="363" />
 
 ## Security Monitoring Recommendations
 
-For 4951(F): A rule has been ignored because its major version number was not recognized by Windows Firewall.
+For 4951(F): A rule has been ignored because its major version number wasn't recognized by Windows Firewall.
 
 -   This event can be a sign of software issues, Windows Firewall registry errors or corruption, or Group Policy setting misconfigurations. We recommend monitoring this event and investigating the reason for the condition. Typically this event indicates configuration issues, not security issues.
 

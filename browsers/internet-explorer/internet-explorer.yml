@@ -6,9 +6,10 @@ metadata:
   title: Internet Explorer 11 documentation
   description: Consistent, reliable web browsing on Windows 7, Windows 8.1, and Windows 10, with the security, performance, backward compatibility, and modern standards support that large organizations need.
   ms.topic: landing-page
-  author: lizap 
-  ms.author: elizapo
-  ms.date: 07/06/2020
+  author: aczechowski
+  ms.author: aaroncz
+  ms.date: 07/29/2022
+  ms.prod: ie11
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -34,22 +35,10 @@ landingContent:
             url: /lifecycle/faq/internet-explorer-microsoft-edge
       - linkListType: download
         links:
-          - text: Download IE11 with Windows 10
-            url: https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise
           - text: Enterprise Mode Site List Manager (schema, v.2)
             url: https://www.microsoft.com/download/details.aspx?id=49974
           - text: Cumulative security updates for Internet Explorer 11
             url: https://www.catalog.update.microsoft.com/Search.aspx?q=cumulative%20security%20update%20for%20internet%20explorer%2011
-      - linkListType: learn
-        links:
-          - text: Getting started with Windows 10 for IT professionals
-            url: https://mva.microsoft.com/training-courses/getting-started-with-windows-10-for-it-professionals-10629?l=fCowqpy8_5905094681
-          - text: 'Windows 10: Top Features for IT Pros'
-            url: https://mva.microsoft.com/training-courses/windows-10-top-features-for-it-pros-16319?l=xBnT2ihhC_7306218965
-          - text: Manage and modernize Internet Explorer with Enterprise Mode
-            url: https://channel9.msdn.com/events/teched/newzealand/2014/pcit307
-          - text: 'Virtual Lab: Enterprise Mode'
-            url: https://www.microsoft.com/handsonlabs/SelfPacedLabs/?storyGuid=e4155067-2c7e-4b46-8496-eca38bedca02
 
   # Card
   - title: Plan
@@ -66,8 +55,6 @@ landingContent:
             url: ./ie11-deploy-guide/collect-data-using-enterprise-site-discovery.md
           - text: Manage Windows upgrades with Upgrade Readiness
             url: /windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness
-          - text: 'Demo: Plan and manage Windows 10 upgrades and feature updates with'
-            url: https://techcommunity.microsoft.com/t5/Microsoft-Ignite-Content-2017/Windows-Analytics-Plan-and-manage-Windows-10-upgrades-and/td-p/98639
       - linkListType: how-to-guide
         links:
           - text: Turn on Enterprise Mode and use a site list
@@ -129,11 +116,7 @@ landingContent:
           - text: Out-of-date ActiveX control blocking
             url: ./ie11-deploy-guide/out-of-date-activex-control-blocking.md
           - text: Update to block out-of-date ActiveX controls in Internet Explorer
-            url: https://support.microsoft.com/help/2991000/update-to-block-out-of-date-activex-controls-in-internet-explorer
-          - text: Script to join user to AD with automatic Local user Profile Migration
-            url: https://gallery.technet.microsoft.com/scriptcenter/script-to-join-active-7b16d9d3
-          - text: Scripts for IT professionals
-            url: https://gallery.technet.microsoft.com/scriptcenter/site/search?query=Microsoft%20Edge%20or%20Internet
+            url: https://support.microsoft.com/topic/update-to-block-out-of-date-activex-controls-in-internet-explorer-39ced8f8-5d98-3c7b-4792-b62fad4e2277
  
   # Card 
   - title: Support
@@ -141,25 +124,19 @@ landingContent:
       - linkListType: get-started
         links:
           - text: Change or reset Internet Explorer settings
-            url: https://support.microsoft.com/help/17441/windows-internet-explorer-change-reset-settings
+            url: https://support.microsoft.com/windows/change-or-reset-internet-explorer-settings-2d4bac50-5762-91c5-a057-a922533f77d5
           - text: Troubleshoot problems with setup, installation, auto configuration, and more
             url: ./ie11-deploy-guide/troubleshoot-ie11.md
           - text: Disable VBScript execution in Internet Explorer for Internet Zone and Restricted Sites Zone
-            url: https://support.microsoft.com/help/4012494/option-to-disable-vbscript-execution-in-internet-explorer-for-internet
+            url: https://support.microsoft.com/topic/option-to-disable-vbscript-execution-in-internet-explorer-for-internet-zone-and-restricted-sites-zone-3a2104c0-5af0-9aae-6c57-8207d3cb3e65
           - text: Frequently asked questions about IEAK 11
             url: ./ie11-faq/faq-ieak11.yml
           - text: Internet Explorer 8, 9, 10, 11 forum
             url: https://social.technet.microsoft.com/forums/ie/home?forum=ieitprocurrentver
           - text: Contact a Microsoft support professional
             url: https://support.microsoft.com/contactus
-          - text: Support options for Microsoft Partners
-            url: https://mspartner.microsoft.com/Pages/Support/get-support.aspx
-          - text: Microsoft Services Premier Support
-            url: https://www.microsoft.com/en-us/microsoftservices/support.aspx
-          - text: Microsoft Small Business Support Center
-            url: https://smallbusiness.support.microsoft.com/product/internet-explorer
           - text: General support
-            url: https://support.microsoft.com/products/internet-explorer
+            url: https://support.microsoft.com/windows/internet-explorer-help-23360e49-9cd3-4dda-ba52-705336cc0de2
 
   # Card 
   - title: Stay informed

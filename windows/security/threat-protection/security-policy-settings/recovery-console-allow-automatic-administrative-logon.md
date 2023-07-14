@@ -1,26 +1,26 @@
 ---
-title: Recovery console Allow automatic administrative logon (Windows 10)
+title: Recovery console Allow automatic administrative logon 
 description: Best practices, location, values, policy management, and security considerations for the policy setting, Recovery console Allow automatic administrative logon.
 ms.assetid: be2498fc-48f4-43f3-ad09-74664e45e596
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Recovery console: Allow automatic administrative logon
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Recovery console: Allow automatic administrative logon** security policy setting.
@@ -29,7 +29,7 @@ Describes the best practices, location, values, policy management, and security 
 
 This policy setting determines whether the built-in Administrator account password must be provided before access to the device is granted. If you enable this setting, the built-in Administrator account is automatically logged on to the computer at the Recovery Console; no password is required.
 
-The Recovery Console can be useful when troubleshooting and repairing systems that cannot be restarted. However, enabling this policy setting so a user can automatically log on to the console is dangerous. Anyone can walk up to the server, shut it down by disconnecting the power, reboot it, select **Recovery Console** from the **Restart** menu, and then assume full control of the server.
+The Recovery Console can be useful when troubleshooting and repairing systems that can't be restarted. However, enabling this policy setting so a user can automatically sign in to the console is dangerous. Anyone can walk up to the server, shut it down by disconnecting the power, reboot it, select **Recovery Console** from the **Restart** menu, and then assume full control of the server.
 
 ### Possible values
 
@@ -39,15 +39,15 @@ The Recovery Console can be useful when troubleshooting and repairing systems th
 
 -   Disabled
 
-    Automatic administrative logon is not allowed.
+    Automatic administrative logon isn't allowed.
 
 -   Not defined
 
-    Automatic administrative logon is not allowed.
+    Automatic administrative logon isn't allowed.
 
 ### Best practices
 
--   Set **Recovery Console: Allow automatic administrative logon** to **Disabled**. This requires a user to enter a user name and password to access the Recovery Console account.
+-   Set **Recovery Console: Allow automatic administrative logon** to **Disabled**. This setting requires a user to enter a user name and password to access the Recovery Console account.
 
 ### Location
 
@@ -72,7 +72,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ### Group Policy
 
@@ -88,7 +88,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-The Recovery Console can be very useful when you must troubleshoot and repair device that do not start. However, allowing automatic logon to the Recovery Console can make it possible for someone to assume full control of the server.
+The Recovery Console can be useful when you must troubleshoot and repair devices that don't start. However, allowing automatic logon to the Recovery Console can make it possible for someone to assume full control of the server.
 
 ### Countermeasure
 

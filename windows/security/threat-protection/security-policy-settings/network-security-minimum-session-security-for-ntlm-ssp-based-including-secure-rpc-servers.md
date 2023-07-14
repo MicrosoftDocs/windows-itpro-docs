@@ -1,26 +1,26 @@
 ---
-title: Network security Minimum session security for NTLM SSP based (including secure RPC) servers (Windows 10)
+title: Network security Minimum session security for NTLM SSP based (including secure RPC) servers 
 description: Best practices and security considerations for the policy setting, Network security Minimum session security for NTLM SSP based (including secure RPC) servers.
 ms.assetid: c6a60c1b-bc8d-4d02-9481-f847a411b4fc
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network security: Minimum session security for NTLM SSP based (including secure RPC) servers
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Network security: Minimum session security for NTLM SSP based (including secure RPC) servers** security policy setting.
@@ -33,13 +33,13 @@ Setting all of these values for this policy setting will help protect network tr
 
 ### Possible values
 
--   Require 128-bit encryption. The connection fails if strong encryption (128-bit) is not negotiated.
--   Require NTLMv2 session security. The connection fails if the NTLMv2 protocol is not negotiated.
+-   Require 128-bit encryption. The connection fails if strong encryption (128-bit) isn't negotiated.
+-   Require NTLMv2 session security. The connection fails if the NTLMv2 protocol isn't negotiated.
 -   Not Defined.
 
 ### Best practices
 
--   Enable all values that are available for this security policy. Legacy client devices that do not support these policy settings will be unable to communicate with the server.
+-   Enable all values that are available for this security policy. Legacy client devices that don't support these policy settings will be unable to communicate with the server.
 
 ### Location
 
@@ -64,7 +64,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ### Policy dependencies
 
@@ -84,7 +84,7 @@ Enable all options that are available for the **Network security: Minimum sessio
 
 ### Potential impact
 
-Older client devices that do not support these security settings cannot communicate with the computer on which this policy is set.
+Older client devices that don't support these security settings can't communicate with the computer on which this policy is set.
 
 ## Related topics
 

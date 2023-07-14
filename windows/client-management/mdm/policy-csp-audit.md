@@ -1,3794 +1,3799 @@
 ---
-title: Policy CSP - Audit
-description: Learn how the Policy CSP - Audit setting causes an audit event to be generated when an account can't sign in to a computer because the account is locked out.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+title: Audit Policy CSP
+description: Learn more about the Audit Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/11/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Audit-Begin -->
 # Policy CSP - Audit
 
-<hr/>
-
-<!--Policies-->
-## Audit policies  
-
-<dl>
-  <dd>
-    <a href="#audit-accountlogonlogoff-auditaccountlockout">Audit/AccountLogonLogoff_AuditAccountLockout</a>
-  </dd>
-  <dd>
-    <a href="#audit-accountlogonlogoff-auditgroupmembership">Audit/AccountLogonLogoff_AuditGroupMembership</a>
-  </dd>
-  <dd>
-    <a href="#audit-accountlogonlogoff-auditipsecextendedmode">Audit/AccountLogonLogoff_AuditIPsecExtendedMode</a>
-  </dd>
-  <dd>
-    <a href="#audit-accountlogonlogoff-auditipsecmainmode">Audit/AccountLogonLogoff_AuditIPsecMainMode</a>
-  </dd>
-  <dd>
-    <a href="#audit-accountlogonlogoff-auditipsecquickmode">Audit/AccountLogonLogoff_AuditIPsecQuickMode</a>
-  </dd>
-  <dd>
-    <a href="#audit-accountlogonlogoff-auditlogoff">Audit/AccountLogonLogoff_AuditLogoff</a>
-  </dd>
-  <dd>
-    <a href="#audit-accountlogonlogoff-auditlogon">Audit/AccountLogonLogoff_AuditLogon</a>
-  </dd>
-  <dd>
-    <a href="#audit-accountlogonlogoff-auditnetworkpolicyserver">Audit/AccountLogonLogoff_AuditNetworkPolicyServer</a>
-  </dd>
-  <dd>
-    <a href="#audit-accountlogonlogoff-auditotherlogonlogoffevents">Audit/AccountLogonLogoff_AuditOtherLogonLogoffEvents</a>
-  </dd>
-  <dd>
-    <a href="#audit-accountlogonlogoff-auditspeciallogon">Audit/AccountLogonLogoff_AuditSpecialLogon</a>
-  </dd>
-  <dd>
-    <a href="#audit-accountlogonlogoff-audituserdeviceclaims">Audit/AccountLogonLogoff_AuditUserDeviceClaims</a>
-  </dd>
-  <dd>
-    <a href="#audit-accountlogon-auditcredentialvalidation">Audit/AccountLogon_AuditCredentialValidation</a>
-  </dd>
-  <dd>
-    <a href="#audit-accountlogon-auditkerberosauthenticationservice">Audit/AccountLogon_AuditKerberosAuthenticationService</a>
-  </dd>
-  <dd>
-    <a href="#audit-accountlogon-auditkerberosserviceticketoperations">Audit/AccountLogon_AuditKerberosServiceTicketOperations</a>
-  </dd>
-  <dd>
-    <a href="#audit-accountlogon-auditotheraccountlogonevents">Audit/AccountLogon_AuditOtherAccountLogonEvents</a>
-  </dd>
-  <dd>
-    <a href="#audit-accountmanagement-auditapplicationgroupmanagement">Audit/AccountManagement_AuditApplicationGroupManagement</a>
-  </dd>
-  <dd>
-    <a href="#audit-accountmanagement-auditcomputeraccountmanagement">Audit/AccountManagement_AuditComputerAccountManagement</a>
-  </dd>
-  <dd>
-    <a href="#audit-accountmanagement-auditdistributiongroupmanagement">Audit/AccountManagement_AuditDistributionGroupManagement</a>
-  </dd>
-  <dd>
-    <a href="#audit-accountmanagement-auditotheraccountmanagementevents">Audit/AccountManagement_AuditOtherAccountManagementEvents</a>
-  </dd>
-  <dd>
-    <a href="#audit-accountmanagement-auditsecuritygroupmanagement">Audit/AccountManagement_AuditSecurityGroupManagement</a>
-  </dd>
-  <dd>
-    <a href="#audit-accountmanagement-audituseraccountmanagement">Audit/AccountManagement_AuditUserAccountManagement</a>
-  </dd>
-  <dd>
-    <a href="#audit-dsaccess-auditdetaileddirectoryservicereplication">Audit/DSAccess_AuditDetailedDirectoryServiceReplication</a>
-  </dd>
-  <dd>
-    <a href="#audit-dsaccess-auditdirectoryserviceaccess">Audit/DSAccess_AuditDirectoryServiceAccess</a>
-  </dd>
-  <dd>
-    <a href="#audit-dsaccess-auditdirectoryservicechanges">Audit/DSAccess_AuditDirectoryServiceChanges</a>
-  </dd>
-  <dd>
-    <a href="#audit-dsaccess-auditdirectoryservicereplication">Audit/DSAccess_AuditDirectoryServiceReplication</a>
-  </dd>
-  <dd>
-    <a href="#audit-detailedtracking-auditdpapiactivity">Audit/DetailedTracking_AuditDPAPIActivity</a>
-  </dd>
-  <dd>
-    <a href="#audit-detailedtracking-auditpnpactivity">Audit/DetailedTracking_AuditPNPActivity</a>
-  </dd>
-  <dd>
-    <a href="#audit-detailedtracking-auditprocesscreation">Audit/DetailedTracking_AuditProcessCreation</a>
-  </dd>
-  <dd>
-    <a href="#audit-detailedtracking-auditprocesstermination">Audit/DetailedTracking_AuditProcessTermination</a>
-  </dd>
-  <dd>
-    <a href="#audit-detailedtracking-auditrpcevents">Audit/DetailedTracking_AuditRPCEvents</a>
-  </dd>
-  <dd>
-    <a href="#audit-detailedtracking-audittokenrightadjusted">Audit/DetailedTracking_AuditTokenRightAdjusted</a>
-  </dd>
-  <dd>
-    <a href="#audit-objectaccess-auditapplicationgenerated">Audit/ObjectAccess_AuditApplicationGenerated</a>
-  </dd>
-  <dd>
-    <a href="#audit-objectaccess-auditcentralaccesspolicystaging">Audit/ObjectAccess_AuditCentralAccessPolicyStaging</a>
-  </dd>
-  <dd>
-    <a href="#audit-objectaccess-auditcertificationservices">Audit/ObjectAccess_AuditCertificationServices</a>
-  </dd>
-  <dd>
-    <a href="#audit-objectaccess-auditdetailedfileshare">Audit/ObjectAccess_AuditDetailedFileShare</a>
-  </dd>
-  <dd>
-    <a href="#audit-objectaccess-auditfileshare">Audit/ObjectAccess_AuditFileShare</a>
-  </dd>
-  <dd>
-    <a href="#audit-objectaccess-auditfilesystem">Audit/ObjectAccess_AuditFileSystem</a>
-  </dd>
-  <dd>
-    <a href="#audit-objectaccess-auditfilteringplatformconnection">Audit/ObjectAccess_AuditFilteringPlatformConnection</a>
-  </dd>
-  <dd>
-    <a href="#audit-objectaccess-auditfilteringplatformpacketdrop">Audit/ObjectAccess_AuditFilteringPlatformPacketDrop</a>
-  </dd>
-  <dd>
-    <a href="#audit-objectaccess-audithandlemanipulation">Audit/ObjectAccess_AuditHandleManipulation</a>
-  </dd>
-  <dd>
-    <a href="#audit-objectaccess-auditkernelobject">Audit/ObjectAccess_AuditKernelObject</a>
-  </dd>
-  <dd>
-    <a href="#audit-objectaccess-auditotherobjectaccessevents">Audit/ObjectAccess_AuditOtherObjectAccessEvents</a>
-  </dd>
-  <dd>
-    <a href="#audit-objectaccess-auditregistry">Audit/ObjectAccess_AuditRegistry</a>
-  </dd>
-  <dd>
-    <a href="#audit-objectaccess-auditremovablestorage">Audit/ObjectAccess_AuditRemovableStorage</a>
-  </dd>
-  <dd>
-    <a href="#audit-objectaccess-auditsam">Audit/ObjectAccess_AuditSAM</a>
-  </dd>
-  <dd>
-    <a href="#audit-policychange-auditauthenticationpolicychange">Audit/PolicyChange_AuditAuthenticationPolicyChange</a>
-  </dd>
-  <dd>
-    <a href="#audit-policychange-auditauthorizationpolicychange">Audit/PolicyChange_AuditAuthorizationPolicyChange</a>
-  </dd>
-  <dd>
-    <a href="#audit-policychange-auditfilteringplatformpolicychange">Audit/PolicyChange_AuditFilteringPlatformPolicyChange</a>
-  </dd>
-  <dd>
-    <a href="#audit-policychange-auditmpssvcrulelevelpolicychange">Audit/PolicyChange_AuditMPSSVCRuleLevelPolicyChange</a>
-  </dd>
-  <dd>
-    <a href="#audit-policychange-auditotherpolicychangeevents">Audit/PolicyChange_AuditOtherPolicyChangeEvents</a>
-  </dd>
-  <dd>
-    <a href="#audit-policychange-auditpolicychange">Audit/PolicyChange_AuditPolicyChange</a>
-  </dd>
-  <dd>
-    <a href="#audit-privilegeuse-auditnonsensitiveprivilegeuse">Audit/PrivilegeUse_AuditNonSensitivePrivilegeUse</a>
-  </dd>
-  <dd>
-    <a href="#audit-privilegeuse-auditotherprivilegeuseevents">Audit/PrivilegeUse_AuditOtherPrivilegeUseEvents</a>
-  </dd>
-  <dd>
-    <a href="#audit-privilegeuse-auditsensitiveprivilegeuse">Audit/PrivilegeUse_AuditSensitivePrivilegeUse</a>
-  </dd>
-  <dd>
-    <a href="#audit-system-auditipsecdriver">Audit/System_AuditIPsecDriver</a>
-  </dd>
-  <dd>
-    <a href="#audit-system-auditothersystemevents">Audit/System_AuditOtherSystemEvents</a>
-  </dd>
-  <dd>
-    <a href="#audit-system-auditsecuritystatechange">Audit/System_AuditSecurityStateChange</a>
-  </dd>
-  <dd>
-    <a href="#audit-system-auditsecuritysystemextension">Audit/System_AuditSecuritySystemExtension</a>
-  </dd>
-  <dd>
-    <a href="#audit-system-auditsystemintegrity">Audit/System_AuditSystemIntegrity</a>
-  </dd>
-</dl>
-
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="audit-accountlogonlogoff-auditaccountlockout"></a>**Audit/AccountLogonLogoff_AuditAccountLockout**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by a failed attempt to sign in to an account that is locked out.
-
-If you configure this policy setting, an audit event is generated when an account can't sign in to a computer because the account is locked out. Success audits record successful attempts and Failure audits record unsuccessful attempts.
-
-Sign in events are essential for understanding user activity and to detect potential attacks.
-
-Volume: Low.
-
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Account Lockout*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Logon/Logoff*
-
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0—Off/None
-- 1 (default)—Success 
-- 2—Failure
-- 3—Success+Failure
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="audit-accountlogonlogoff-auditgroupmembership"></a>**Audit/AccountLogonLogoff_AuditGroupMembership**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy allows you to audit the group membership information in the user's sign in token. Events in this subcategory are generated on the computer on which a sign in session is created. For an interactive sign in, the security audit event is generated on the computer that the user logged on to. For a network sign in, such as accessing a shared folder on the network, the security audit event is generated on the computer hosting the resource.
-
-When this setting is configured, one or more security audit events are generated for each successful sign in. Enable the Audit Logon setting under Advanced Audit Policy Configuration\System Audit Policies\Logon/Logoff. Multiple events are generated if the group membership information can't fit in a single security audit event.
-
-Volume: Low on a client computer. Medium on a domain controller or a network server.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Group Membership*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Logon/Logoff*
-
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="audit-accountlogonlogoff-auditipsecextendedmode"></a>**Audit/AccountLogonLogoff_AuditIPsecExtendedMode**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by Internet Key Exchange protocol (IKE) and Authenticated Internet Protocol (AuthIP) during Extended Mode negotiations.
-
-If you configure this policy setting, an audit event is generated during an IPsec Extended Mode negotiation. Success audits record successful attempts and Failure audits record unsuccessful attempts.
-If you do not configure this policy setting, no audit event is generated during an IPsec Extended Mode negotiation.
-
-Volume: High.
-
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit IPsec Extended Mode*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Logon/Logoff*
-
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="audit-accountlogonlogoff-auditipsecmainmode"></a>**Audit/AccountLogonLogoff_AuditIPsecMainMode**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by Internet Key Exchange protocol (IKE) and Authenticated Internet Protocol (AuthIP) during Main Mode negotiations.
-
-If you configure this policy setting, an audit event is generated during an IPsec Main Mode negotiation. Success audits record successful attempts and Failure audits record unsuccessful attempts.
-If you don't configure this policy setting, no audit event is generated during an IPsec Main Mode negotiation.
-
-Volume: High.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit IPsec Main Mode*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Logon/Logoff*
-
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="audit-accountlogonlogoff-auditipsecquickmode"></a>**Audit/AccountLogonLogoff_AuditIPsecQuickMode**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by Internet Key Exchange protocol (IKE) and Authenticated Internet Protocol (AuthIP) during Quick Mode negotiations.
-
-If you configure this policy setting, an audit event is generated during an IPsec Quick Mode negotiation. Success audits record successful attempts and Failure audits record unsuccessful attempts. If you don't configure this policy setting, no audit event is generated during an IPsec Quick Mode negotiation.
-
-Volume: High.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit IPsec Quick Mode*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Logon/Logoff*
-
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="audit-accountlogonlogoff-auditlogoff"></a>**Audit/AccountLogonLogoff_AuditLogoff**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by the closing of a sign in session. These events occur on the computer that was accessed. For an interactive sign out the security audit event is generated on the computer that the user account logged on to.
-
-If you configure this policy setting, an audit event is generated when a sign in session is closed. Success audits record successful attempts to close sessions and Failure audits record unsuccessful attempts to close sessions.
-If you don't configure this policy setting, no audit event is generated when a sign in session is closed.
-
-Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Logoff*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Logon/Logoff*
-
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0—Off/None
-- 1 (default)—Success
-- 2—Failure
-- 3—Success+Failure
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="audit-accountlogonlogoff-auditlogon"></a>**Audit/AccountLogonLogoff_AuditLogon**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by user account sign in attempts on the computer.
-Events in this subcategory are related to the creation of sign in sessions and occur on the computer that was accessed. For an interactive sign in, the security audit event is generated on the computer that the user account logged on to. For a network sign in, such as accessing a shared folder on the network, the security audit event is generated on the computer hosting the resource. 
-The following events are included:  
-- Successful sign in attempts.
-- Failed sign in attempts.
-- sign in attempts using explicit credentials. This event is generated when a process attempts to sign in an account by explicitly specifying that account’s credentials. This most commonly occurs in batch sign in configurations, such as scheduled tasks or when using the RUNAS command.
-- Security identifiers (SIDs) were filtered and not allowed to sign in.
-
-Volume: Low on a client computer. Medium on a domain controller or a network server.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Logon*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Logon/Logoff*
-
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0—Off/None
-- 1 (default)—Success
-- 2—Failure
-- 3—Success+Failure
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="audit-accountlogonlogoff-auditnetworkpolicyserver"></a>**Audit/AccountLogonLogoff_AuditNetworkPolicyServer**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by RADIUS (IAS) and Network Access Protection (NAP) user access requests. These requests can be Grant, Deny, Discard, Quarantine, Lock, and Unlock.
-If you configure this policy setting, an audit event is generated for each IAS and NAP user access request. Success audits record successful user access requests and Failure audits record unsuccessful attempts.
-If you do not configure this policy settings, IAS and NAP user access requests are not audited.
-
-Volume: Medium or High on NPS and IAS server. No volume on other computers.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Network Policy Server*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Logon/Logoff*
-
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0—Off/None
-- 1—Success
-- 2—Failure
-- 3 (default)—Success+Failure
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="audit-accountlogonlogoff-auditotherlogonlogoffevents"></a>**Audit/AccountLogonLogoff_AuditOtherLogonLogoffEvents**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit other logon/logoff-related events that aren't covered in the “Logon/Logoff” policy setting, such as the following:  
-- Terminal Services session disconnections.
-- New Terminal Services sessions.
-- Locking and unlocking a workstation.
-- Invoking a screen saver.
-- Dismissal of a screen saver.
-- Detection of a Kerberos replay attack, in which a Kerberos request was received twice with identical information. This condition could be caused by network misconfiguration.
-- Access to a wireless network granted to a user or computer account.
-- Access to a wired 802.1x network granted to a user or computer account.
-
-Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Other Logon Logoff Events*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Logon/Logoff*
-
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="audit-accountlogonlogoff-auditspeciallogon"></a>**Audit/AccountLogonLogoff_AuditSpecialLogon**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by special logons, such as the following:  
-- The use of a special sign in, which is a sign in that has administrator-equivalent privileges and can be used to elevate a process to a higher level.
-- A sign in by a member of a Special Group. Special Groups enable you to audit events generated when a member of a certain group has logged on to your network. You can configure a list of group security identifiers (SIDs) in the registry. If any of those SIDs are added to a token during sign in and the subcategory is enabled, an event is logged. For more information about this feature, see [Audit Special Logon](/windows/security/threat-protection/auditing/audit-special-logon).
-
-Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Special Logon*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Logon/Logoff*
-
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0—Off/None
-- 1 (default)—Success
-- 2—Failure
-- 3—Success+Failure
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="audit-accountlogonlogoff-audituserdeviceclaims"></a>**Audit/AccountLogonLogoff_AuditUserDeviceClaims**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy allows you to audit user and device claims information in the user's sign in token. Events in this subcategory are generated on the computer on which a sign in session is created. For an interactive sign in, the security audit event is generated on the computer that the user logged on to. For a network sign in, such as accessing a shared folder on the network, the security audit event is generated on the computer hosting the resource.
-
-User claims are added to a sign in token when claims are included with a user's account attributes in Active Directory. Device claims are added to the sign in token when claims are included with a device's computer account attributes in Active Directory. In addition, compound identity must be enabled for the domain and on the computer where the user logged on.
-
-When this setting is configured, one or more security audit events are generated for each successful sign in. You must also enable the Audit Logon setting under Advanced Audit Policy Configuration\System Audit Policies\Logon/Logoff. Multiple events are generated if the user and device claims information cannot fit in a single security audit event.
-
-Volume: Low on a client computer. Medium on a domain controller or a network server.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit User Device Claims*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Logon/Logoff*
-
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="audit-accountlogon-auditcredentialvalidation"></a>**Audit/AccountLogon_AuditCredentialValidation**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by validation tests on user account sign in credentials.
-
-Events in this subcategory occur only on the computer that is authoritative for those credentials. For domain accounts, the domain controller is authoritative. For local accounts, the local computer is authoritative.
-
+<!-- Audit-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Audit-Editable-End -->
+
+<!-- AccountLogon_AuditCredentialValidation-Begin -->
+## AccountLogon_AuditCredentialValidation
+
+<!-- AccountLogon_AuditCredentialValidation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- AccountLogon_AuditCredentialValidation-Applicability-End -->
+
+<!-- AccountLogon_AuditCredentialValidation-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/AccountLogon_AuditCredentialValidation
+```
+<!-- AccountLogon_AuditCredentialValidation-OmaUri-End -->
+
+<!-- AccountLogon_AuditCredentialValidation-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by validation tests on user account logon credentials. Events in this subcategory occur only on the computer that's authoritative for those credentials. For domain accounts, the domain controller is authoritative. For local accounts, the local computer is authoritative.
+<!-- AccountLogon_AuditCredentialValidation-Description-End -->
+
+<!-- AccountLogon_AuditCredentialValidation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: High on domain controllers.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Credential Validation*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Account Logon*
+<!-- AccountLogon_AuditCredentialValidation-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
+<!-- AccountLogon_AuditCredentialValidation-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AccountLogon_AuditCredentialValidation-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- AccountLogon_AuditCredentialValidation-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- AccountLogon_AuditCredentialValidation-AllowedValues-End -->
 
-<hr/>
+<!-- AccountLogon_AuditCredentialValidation-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="audit-accountlogon-auditkerberosauthenticationservice"></a>**Audit/AccountLogon_AuditKerberosAuthenticationService**  
+| Name | Value |
+|:--|:--|
+| Name | Audit Credential Validation |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Account Logon |
+<!-- AccountLogon_AuditCredentialValidation-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- AccountLogon_AuditCredentialValidation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountLogon_AuditCredentialValidation-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AccountLogon_AuditCredentialValidation-End -->
 
+<!-- AccountLogon_AuditKerberosAuthenticationService-Begin -->
+## AccountLogon_AuditKerberosAuthenticationService
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AccountLogon_AuditKerberosAuthenticationService-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- AccountLogon_AuditKerberosAuthenticationService-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AccountLogon_AuditKerberosAuthenticationService-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/AccountLogon_AuditKerberosAuthenticationService
+```
+<!-- AccountLogon_AuditKerberosAuthenticationService-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AccountLogon_AuditKerberosAuthenticationService-Description-Begin -->
+<!-- Description-Source-DDF -->
 This policy setting allows you to audit events generated by Kerberos authentication ticket-granting ticket (TGT) requests.
 
-If you configure this policy setting, an audit event is generated after a Kerberos authentication TGT request. Success audits record successful requests and Failure audits record unsuccessful requests.
-If you do not configure this policy setting, no audit event is generated after a Kerberos authentication TGT request.
+- If you configure this policy setting, an audit event is generated after a Kerberos authentication TGT request. Success audits record successful requests and Failure audits record unsuccessful requests.
 
+- If you don't configure this policy setting, no audit event is generated after a Kerberos authentication TGT request.
+<!-- AccountLogon_AuditKerberosAuthenticationService-Description-End -->
+
+<!-- AccountLogon_AuditKerberosAuthenticationService-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: High on Kerberos Key Distribution Center servers.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Kerberos Authentication Service*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Account Logon*
+<!-- AccountLogon_AuditKerberosAuthenticationService-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
+<!-- AccountLogon_AuditKerberosAuthenticationService-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AccountLogon_AuditKerberosAuthenticationService-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- AccountLogon_AuditKerberosAuthenticationService-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- AccountLogon_AuditKerberosAuthenticationService-AllowedValues-End -->
 
-<hr/>
+<!-- AccountLogon_AuditKerberosAuthenticationService-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="audit-accountlogon-auditkerberosserviceticketoperations"></a>**Audit/AccountLogon_AuditKerberosServiceTicketOperations**  
+| Name | Value |
+|:--|:--|
+| Name | Audit Kerberos Authentication Service |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Account Logon |
+<!-- AccountLogon_AuditKerberosAuthenticationService-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- AccountLogon_AuditKerberosAuthenticationService-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountLogon_AuditKerberosAuthenticationService-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AccountLogon_AuditKerberosAuthenticationService-End -->
 
+<!-- AccountLogon_AuditKerberosServiceTicketOperations-Begin -->
+## AccountLogon_AuditKerberosServiceTicketOperations
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AccountLogon_AuditKerberosServiceTicketOperations-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- AccountLogon_AuditKerberosServiceTicketOperations-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AccountLogon_AuditKerberosServiceTicketOperations-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/AccountLogon_AuditKerberosServiceTicketOperations
+```
+<!-- AccountLogon_AuditKerberosServiceTicketOperations-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AccountLogon_AuditKerberosServiceTicketOperations-Description-Begin -->
+<!-- Description-Source-DDF -->
 This policy setting allows you to audit events generated by Kerberos authentication ticket-granting ticket (TGT) requests submitted for user accounts.
 
-If you configure this policy setting, an audit event is generated after a Kerberos authentication TGT is requested for a user account. Success audits record successful requests and Failure audits record unsuccessful requests.
-If you do not configure this policy setting, no audit event is generated after a Kerberos authentication TGT is request for a user account.
+- If you configure this policy setting, an audit event is generated after a Kerberos authentication TGT is requested for a user account. Success audits record successful requests and Failure audits record unsuccessful requests.
 
+- If you don't configure this policy setting, no audit event is generated after a Kerberos authentication TGT is request for a user account.
+<!-- AccountLogon_AuditKerberosServiceTicketOperations-Description-End -->
+
+<!-- AccountLogon_AuditKerberosServiceTicketOperations-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Kerberos Service Ticket Operations*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Account Logon*
+<!-- AccountLogon_AuditKerberosServiceTicketOperations-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
+<!-- AccountLogon_AuditKerberosServiceTicketOperations-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AccountLogon_AuditKerberosServiceTicketOperations-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- AccountLogon_AuditKerberosServiceTicketOperations-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- AccountLogon_AuditKerberosServiceTicketOperations-AllowedValues-End -->
 
-<hr/>
+<!-- AccountLogon_AuditKerberosServiceTicketOperations-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="audit-accountlogon-auditotheraccountlogonevents"></a>**Audit/AccountLogon_AuditOtherAccountLogonEvents**  
+| Name | Value |
+|:--|:--|
+| Name | Audit Kerberos Service Ticket Operations |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Account Logon |
+<!-- AccountLogon_AuditKerberosServiceTicketOperations-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- AccountLogon_AuditKerberosServiceTicketOperations-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountLogon_AuditKerberosServiceTicketOperations-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AccountLogon_AuditKerberosServiceTicketOperations-End -->
 
+<!-- AccountLogon_AuditOtherAccountLogonEvents-Begin -->
+## AccountLogon_AuditOtherAccountLogonEvents
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AccountLogon_AuditOtherAccountLogonEvents-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- AccountLogon_AuditOtherAccountLogonEvents-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AccountLogon_AuditOtherAccountLogonEvents-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/AccountLogon_AuditOtherAccountLogonEvents
+```
+<!-- AccountLogon_AuditOtherAccountLogonEvents-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AccountLogon_AuditOtherAccountLogonEvents-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by responses to credential requests submitted for a user account logon that aren't credential validation or Kerberos tickets. Currently, there are no events in this subcategory.
+<!-- AccountLogon_AuditOtherAccountLogonEvents-Description-End -->
 
-<hr/>
+<!-- AccountLogon_AuditOtherAccountLogonEvents-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AccountLogon_AuditOtherAccountLogonEvents-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by responses to credential requests submitted for a user account sign in that are not credential validation or Kerberos tickets.
+<!-- AccountLogon_AuditOtherAccountLogonEvents-DFProperties-Begin -->
+**Description framework properties**:
 
-Currently, there are no events in this subcategory.
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AccountLogon_AuditOtherAccountLogonEvents-DFProperties-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Other Account Logon Events*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Account Logon*
+<!-- AccountLogon_AuditOtherAccountLogonEvents-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- AccountLogon_AuditOtherAccountLogonEvents-AllowedValues-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- AccountLogon_AuditOtherAccountLogonEvents-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/Example-->
-<!--Validation-->
+| Name | Value |
+|:--|:--|
+| Name | Audit Other Account Logon Events |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Account Logon |
+<!-- AccountLogon_AuditOtherAccountLogonEvents-GpMapping-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- AccountLogon_AuditOtherAccountLogonEvents-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountLogon_AuditOtherAccountLogonEvents-Examples-End -->
 
-<hr/>
+<!-- AccountLogon_AuditOtherAccountLogonEvents-End -->
 
-<!--Policy-->
-<a href="" id="audit-accountmanagement-auditapplicationgroupmanagement"></a>**Audit/AccountManagement_AuditApplicationGroupManagement**  
+<!-- AccountLogonLogoff_AuditAccountLockout-Begin -->
+## AccountLogonLogoff_AuditAccountLockout
 
-<!--SupportedSKUs-->
+<!-- AccountLogonLogoff_AuditAccountLockout-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- AccountLogonLogoff_AuditAccountLockout-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AccountLogonLogoff_AuditAccountLockout-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/AccountLogonLogoff_AuditAccountLockout
+```
+<!-- AccountLogonLogoff_AuditAccountLockout-OmaUri-End -->
 
+<!-- AccountLogonLogoff_AuditAccountLockout-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by a failed attempt to log on to an account that's locked out. If you configure this policy setting, an audit event is generated when an account can't log on to a computer because the account is locked out. Success audits record successful attempts and Failure audits record unsuccessful attempts. Logon events are essential for understanding user activity and to detect potential attacks.
+<!-- AccountLogonLogoff_AuditAccountLockout-Description-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by changes to application groups as follows:  
-- Application group is created, changed, or deleted.
-- Member is added or removed from an application group.
-
-If you configure this policy setting, an audit event is generated when an attempt to change an application group is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
-If you do not configure this policy setting, no audit event is generated when an application group changes.
-
+<!-- AccountLogonLogoff_AuditAccountLockout-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Application Group Management*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Account Management*
+<!-- AccountLogonLogoff_AuditAccountLockout-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
+<!-- AccountLogonLogoff_AuditAccountLockout-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AccountLogonLogoff_AuditAccountLockout-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- AccountLogonLogoff_AuditAccountLockout-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 | Off/None. |
+| 1 (Default) | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- AccountLogonLogoff_AuditAccountLockout-AllowedValues-End -->
 
-<hr/>
+<!-- AccountLogonLogoff_AuditAccountLockout-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="audit-accountmanagement-auditcomputeraccountmanagement"></a>**Audit/AccountManagement_AuditComputerAccountManagement**  
+| Name | Value |
+|:--|:--|
+| Name | Audit Account Lockout |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Logon/Logoff |
+<!-- AccountLogonLogoff_AuditAccountLockout-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- AccountLogonLogoff_AuditAccountLockout-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountLogonLogoff_AuditAccountLockout-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AccountLogonLogoff_AuditAccountLockout-End -->
 
+<!-- AccountLogonLogoff_AuditGroupMembership-Begin -->
+## AccountLogonLogoff_AuditGroupMembership
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AccountLogonLogoff_AuditGroupMembership-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- AccountLogonLogoff_AuditGroupMembership-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AccountLogonLogoff_AuditGroupMembership-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/AccountLogonLogoff_AuditGroupMembership
+```
+<!-- AccountLogonLogoff_AuditGroupMembership-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AccountLogonLogoff_AuditGroupMembership-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy allows you to audit the group membership information in the user's logon token. Events in this subcategory are generated on the computer on which a logon session is created. For an interactive logon, the security audit event is generated on the computer that the user logged-on to. For a network logon, such as accessing a shared folder on the network, the security audit event is generated on the computer hosting the resource. When this setting is configured, one or more security audit events are generated for each successful logon. You must also enable the Audit Logon setting under Advanced Audit Policy Configuration\System Audit Policies\Logon/Logoff. Multiple events are generated if the group membership information can't fit in a single security audit event.
+<!-- AccountLogonLogoff_AuditGroupMembership-Description-End -->
 
-<hr/>
+<!-- AccountLogonLogoff_AuditGroupMembership-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Volume: Low on a client computer. Medium on a domain controller or a network server.
+<!-- AccountLogonLogoff_AuditGroupMembership-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- AccountLogonLogoff_AuditGroupMembership-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AccountLogonLogoff_AuditGroupMembership-DFProperties-End -->
+
+<!-- AccountLogonLogoff_AuditGroupMembership-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- AccountLogonLogoff_AuditGroupMembership-AllowedValues-End -->
+
+<!-- AccountLogonLogoff_AuditGroupMembership-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Audit Group Membership |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Logon/Logoff |
+<!-- AccountLogonLogoff_AuditGroupMembership-GpMapping-End -->
+
+<!-- AccountLogonLogoff_AuditGroupMembership-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountLogonLogoff_AuditGroupMembership-Examples-End -->
+
+<!-- AccountLogonLogoff_AuditGroupMembership-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecExtendedMode-Begin -->
+## AccountLogonLogoff_AuditIPsecExtendedMode
+
+<!-- AccountLogonLogoff_AuditIPsecExtendedMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- AccountLogonLogoff_AuditIPsecExtendedMode-Applicability-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecExtendedMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/AccountLogonLogoff_AuditIPsecExtendedMode
+```
+<!-- AccountLogonLogoff_AuditIPsecExtendedMode-OmaUri-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecExtendedMode-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by Internet Key Exchange protocol (IKE) and Authenticated Internet Protocol (AuthIP) during Extended Mode negotiations.
+
+- If you configure this policy setting, an audit event is generated during an IPsec Extended Mode negotiation. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+
+- If you don't configure this policy setting, no audit event is generated during an IPsec Extended Mode negotiation.
+<!-- AccountLogonLogoff_AuditIPsecExtendedMode-Description-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecExtendedMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Volume: High.
+<!-- AccountLogonLogoff_AuditIPsecExtendedMode-Editable-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecExtendedMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AccountLogonLogoff_AuditIPsecExtendedMode-DFProperties-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecExtendedMode-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- AccountLogonLogoff_AuditIPsecExtendedMode-AllowedValues-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecExtendedMode-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Audit IPsec Extended Mode |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Logon/Logoff |
+<!-- AccountLogonLogoff_AuditIPsecExtendedMode-GpMapping-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecExtendedMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountLogonLogoff_AuditIPsecExtendedMode-Examples-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecExtendedMode-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecMainMode-Begin -->
+## AccountLogonLogoff_AuditIPsecMainMode
+
+<!-- AccountLogonLogoff_AuditIPsecMainMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- AccountLogonLogoff_AuditIPsecMainMode-Applicability-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecMainMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/AccountLogonLogoff_AuditIPsecMainMode
+```
+<!-- AccountLogonLogoff_AuditIPsecMainMode-OmaUri-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecMainMode-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by Internet Key Exchange protocol (IKE) and Authenticated Internet Protocol (AuthIP) during Main Mode negotiations.
+
+- If you configure this policy setting, an audit event is generated during an IPsec Main Mode negotiation. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+
+- If you don't configure this policy setting, no audit event is generated during an IPsec Main Mode negotiation.
+<!-- AccountLogonLogoff_AuditIPsecMainMode-Description-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecMainMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Volume: High.
+<!-- AccountLogonLogoff_AuditIPsecMainMode-Editable-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecMainMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AccountLogonLogoff_AuditIPsecMainMode-DFProperties-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecMainMode-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- AccountLogonLogoff_AuditIPsecMainMode-AllowedValues-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecMainMode-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Audit IPsec Main Mode |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Logon/Logoff |
+<!-- AccountLogonLogoff_AuditIPsecMainMode-GpMapping-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecMainMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountLogonLogoff_AuditIPsecMainMode-Examples-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecMainMode-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecQuickMode-Begin -->
+## AccountLogonLogoff_AuditIPsecQuickMode
+
+<!-- AccountLogonLogoff_AuditIPsecQuickMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- AccountLogonLogoff_AuditIPsecQuickMode-Applicability-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecQuickMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/AccountLogonLogoff_AuditIPsecQuickMode
+```
+<!-- AccountLogonLogoff_AuditIPsecQuickMode-OmaUri-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecQuickMode-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by Internet Key Exchange protocol (IKE) and Authenticated Internet Protocol (AuthIP) during Quick Mode negotiations. If you configure this policy setting, an audit event is generated during an IPsec Quick Mode negotiation. Success audits record successful attempts and Failure audits record unsuccessful attempts. If you don't configure this policy setting, no audit event is generated during an IPsec Quick Mode negotiation.
+<!-- AccountLogonLogoff_AuditIPsecQuickMode-Description-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecQuickMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Volume: High.
+<!-- AccountLogonLogoff_AuditIPsecQuickMode-Editable-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecQuickMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AccountLogonLogoff_AuditIPsecQuickMode-DFProperties-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecQuickMode-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- AccountLogonLogoff_AuditIPsecQuickMode-AllowedValues-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecQuickMode-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Audit IPsec Quick Mode |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Logon/Logoff |
+<!-- AccountLogonLogoff_AuditIPsecQuickMode-GpMapping-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecQuickMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountLogonLogoff_AuditIPsecQuickMode-Examples-End -->
+
+<!-- AccountLogonLogoff_AuditIPsecQuickMode-End -->
+
+<!-- AccountLogonLogoff_AuditLogoff-Begin -->
+## AccountLogonLogoff_AuditLogoff
+
+<!-- AccountLogonLogoff_AuditLogoff-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- AccountLogonLogoff_AuditLogoff-Applicability-End -->
+
+<!-- AccountLogonLogoff_AuditLogoff-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/AccountLogonLogoff_AuditLogoff
+```
+<!-- AccountLogonLogoff_AuditLogoff-OmaUri-End -->
+
+<!-- AccountLogonLogoff_AuditLogoff-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by the closing of a logon session. These events occur on the computer that was accessed. For an interactive logoff the security audit event is generated on the computer that the user account logged-on to.
+
+- If you configure this policy setting, an audit event is generated when a logon session is closed. Success audits record successful attempts to close sessions and Failure audits record unsuccessful attempts to close sessions.
+
+- If you don't configure this policy setting, no audit event is generated when a logon session is closed.
+<!-- AccountLogonLogoff_AuditLogoff-Description-End -->
+
+<!-- AccountLogonLogoff_AuditLogoff-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Volume: Low.
+<!-- AccountLogonLogoff_AuditLogoff-Editable-End -->
+
+<!-- AccountLogonLogoff_AuditLogoff-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AccountLogonLogoff_AuditLogoff-DFProperties-End -->
+
+<!-- AccountLogonLogoff_AuditLogoff-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Off/None. |
+| 1 (Default) | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- AccountLogonLogoff_AuditLogoff-AllowedValues-End -->
+
+<!-- AccountLogonLogoff_AuditLogoff-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Audit Logoff |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Logon/Logoff |
+<!-- AccountLogonLogoff_AuditLogoff-GpMapping-End -->
+
+<!-- AccountLogonLogoff_AuditLogoff-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountLogonLogoff_AuditLogoff-Examples-End -->
+
+<!-- AccountLogonLogoff_AuditLogoff-End -->
+
+<!-- AccountLogonLogoff_AuditLogon-Begin -->
+## AccountLogonLogoff_AuditLogon
+
+<!-- AccountLogonLogoff_AuditLogon-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- AccountLogonLogoff_AuditLogon-Applicability-End -->
+
+<!-- AccountLogonLogoff_AuditLogon-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/AccountLogonLogoff_AuditLogon
+```
+<!-- AccountLogonLogoff_AuditLogon-OmaUri-End -->
+
+<!-- AccountLogonLogoff_AuditLogon-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by user account logon attempts on the computer. Events in this subcategory are related to the creation of logon sessions and occur on the computer which was accessed. For an interactive logon, the security audit event is generated on the computer that the user account logged-on to. For a network logon, such as accessing a shared folder on the network, the security audit event is generated on the computer hosting the resource. The following events are included: Successful logon attempts. Failed logon attempts. Logon attempts using explicit credentials. This event is generated when a process attempts to log on an account by explicitly specifying that account's credentials. This most commonly occurs in batch logon configurations, such as scheduled tasks or when using the RUNAS command. Security identifiers (SIDs) were filtered and not allowed to log on.
+<!-- AccountLogonLogoff_AuditLogon-Description-End -->
+
+<!-- AccountLogonLogoff_AuditLogon-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Volume: Low on a client computer. Medium on a domain controller or a network server.
+<!-- AccountLogonLogoff_AuditLogon-Editable-End -->
+
+<!-- AccountLogonLogoff_AuditLogon-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AccountLogonLogoff_AuditLogon-DFProperties-End -->
+
+<!-- AccountLogonLogoff_AuditLogon-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Off/None. |
+| 1 (Default) | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- AccountLogonLogoff_AuditLogon-AllowedValues-End -->
+
+<!-- AccountLogonLogoff_AuditLogon-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Audit Logon |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Logon/Logoff |
+<!-- AccountLogonLogoff_AuditLogon-GpMapping-End -->
+
+<!-- AccountLogonLogoff_AuditLogon-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountLogonLogoff_AuditLogon-Examples-End -->
+
+<!-- AccountLogonLogoff_AuditLogon-End -->
+
+<!-- AccountLogonLogoff_AuditNetworkPolicyServer-Begin -->
+## AccountLogonLogoff_AuditNetworkPolicyServer
+
+<!-- AccountLogonLogoff_AuditNetworkPolicyServer-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- AccountLogonLogoff_AuditNetworkPolicyServer-Applicability-End -->
+
+<!-- AccountLogonLogoff_AuditNetworkPolicyServer-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/AccountLogonLogoff_AuditNetworkPolicyServer
+```
+<!-- AccountLogonLogoff_AuditNetworkPolicyServer-OmaUri-End -->
+
+<!-- AccountLogonLogoff_AuditNetworkPolicyServer-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by RADIUS (IAS) and Network Access Protection (NAP) user access requests. These requests can be Grant, Deny, Discard, Quarantine, Lock, and Unlock.
+
+- If you configure this policy setting, an audit event is generated for each IAS and NAP user access request. Success audits record successful user access requests and Failure audits record unsuccessful attempts.
+
+- If you don't configure this policy settings, IAS and NAP user access requests aren't audited.
+<!-- AccountLogonLogoff_AuditNetworkPolicyServer-Description-End -->
+
+<!-- AccountLogonLogoff_AuditNetworkPolicyServer-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Volume: Medium or High on NPS and IAS server. No volume on other computers.
+<!-- AccountLogonLogoff_AuditNetworkPolicyServer-Editable-End -->
+
+<!-- AccountLogonLogoff_AuditNetworkPolicyServer-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 3 |
+<!-- AccountLogonLogoff_AuditNetworkPolicyServer-DFProperties-End -->
+
+<!-- AccountLogonLogoff_AuditNetworkPolicyServer-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 (Default) | Success+Failure. |
+<!-- AccountLogonLogoff_AuditNetworkPolicyServer-AllowedValues-End -->
+
+<!-- AccountLogonLogoff_AuditNetworkPolicyServer-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Audit Network Policy Server |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Logon/Logoff |
+<!-- AccountLogonLogoff_AuditNetworkPolicyServer-GpMapping-End -->
+
+<!-- AccountLogonLogoff_AuditNetworkPolicyServer-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountLogonLogoff_AuditNetworkPolicyServer-Examples-End -->
+
+<!-- AccountLogonLogoff_AuditNetworkPolicyServer-End -->
+
+<!-- AccountLogonLogoff_AuditOtherLogonLogoffEvents-Begin -->
+## AccountLogonLogoff_AuditOtherLogonLogoffEvents
+
+<!-- AccountLogonLogoff_AuditOtherLogonLogoffEvents-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- AccountLogonLogoff_AuditOtherLogonLogoffEvents-Applicability-End -->
+
+<!-- AccountLogonLogoff_AuditOtherLogonLogoffEvents-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/AccountLogonLogoff_AuditOtherLogonLogoffEvents
+```
+<!-- AccountLogonLogoff_AuditOtherLogonLogoffEvents-OmaUri-End -->
+
+<!-- AccountLogonLogoff_AuditOtherLogonLogoffEvents-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit other logon/logoff-related events that aren't covered in the "Logon/Logoff" policy setting such as the following: Terminal Services session disconnections. New Terminal Services sessions. Locking and unlocking a workstation. Invoking a screen saver. Dismissal of a screen saver. Detection of a Kerberos replay attack, in which a Kerberos request was received twice with identical information. This condition could be caused by network misconfiguration. Access to a wireless network granted to a user or computer account. Access to a wired 802.1x network granted to a user or computer account.
+<!-- AccountLogonLogoff_AuditOtherLogonLogoffEvents-Description-End -->
+
+<!-- AccountLogonLogoff_AuditOtherLogonLogoffEvents-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Volume: Low.
+<!-- AccountLogonLogoff_AuditOtherLogonLogoffEvents-Editable-End -->
+
+<!-- AccountLogonLogoff_AuditOtherLogonLogoffEvents-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AccountLogonLogoff_AuditOtherLogonLogoffEvents-DFProperties-End -->
+
+<!-- AccountLogonLogoff_AuditOtherLogonLogoffEvents-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- AccountLogonLogoff_AuditOtherLogonLogoffEvents-AllowedValues-End -->
+
+<!-- AccountLogonLogoff_AuditOtherLogonLogoffEvents-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Audit Other Logon Logoff Events |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Logon/Logoff |
+<!-- AccountLogonLogoff_AuditOtherLogonLogoffEvents-GpMapping-End -->
+
+<!-- AccountLogonLogoff_AuditOtherLogonLogoffEvents-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountLogonLogoff_AuditOtherLogonLogoffEvents-Examples-End -->
+
+<!-- AccountLogonLogoff_AuditOtherLogonLogoffEvents-End -->
+
+<!-- AccountLogonLogoff_AuditSpecialLogon-Begin -->
+## AccountLogonLogoff_AuditSpecialLogon
+
+<!-- AccountLogonLogoff_AuditSpecialLogon-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- AccountLogonLogoff_AuditSpecialLogon-Applicability-End -->
+
+<!-- AccountLogonLogoff_AuditSpecialLogon-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/AccountLogonLogoff_AuditSpecialLogon
+```
+<!-- AccountLogonLogoff_AuditSpecialLogon-OmaUri-End -->
+
+<!-- AccountLogonLogoff_AuditSpecialLogon-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by special logons such as the following: The use of a special logon, which is a logon that has administrator-equivalent privileges and can be used to elevate a process to a higher level. A logon by a member of a Special Group. Special Groups enable you to audit events generated when a member of a certain group has logged-on to your network. You can configure a list of group security identifiers (SIDs) in the registry. If any of those SIDs are added to a token during logon and the subcategory is enabled, an event is logged. For more information about this feature, see [article 947223 in the Microsoft Knowledge Base](https://go.microsoft.com/fwlink/?LinkId=121697).
+<!-- AccountLogonLogoff_AuditSpecialLogon-Description-End -->
+
+<!-- AccountLogonLogoff_AuditSpecialLogon-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Volume: Low.
+<!-- AccountLogonLogoff_AuditSpecialLogon-Editable-End -->
+
+<!-- AccountLogonLogoff_AuditSpecialLogon-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AccountLogonLogoff_AuditSpecialLogon-DFProperties-End -->
+
+<!-- AccountLogonLogoff_AuditSpecialLogon-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Off/None. |
+| 1 (Default) | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- AccountLogonLogoff_AuditSpecialLogon-AllowedValues-End -->
+
+<!-- AccountLogonLogoff_AuditSpecialLogon-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Audit Special Logon |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Logon/Logoff |
+<!-- AccountLogonLogoff_AuditSpecialLogon-GpMapping-End -->
+
+<!-- AccountLogonLogoff_AuditSpecialLogon-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountLogonLogoff_AuditSpecialLogon-Examples-End -->
+
+<!-- AccountLogonLogoff_AuditSpecialLogon-End -->
+
+<!-- AccountLogonLogoff_AuditUserDeviceClaims-Begin -->
+## AccountLogonLogoff_AuditUserDeviceClaims
+
+<!-- AccountLogonLogoff_AuditUserDeviceClaims-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- AccountLogonLogoff_AuditUserDeviceClaims-Applicability-End -->
+
+<!-- AccountLogonLogoff_AuditUserDeviceClaims-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/AccountLogonLogoff_AuditUserDeviceClaims
+```
+<!-- AccountLogonLogoff_AuditUserDeviceClaims-OmaUri-End -->
+
+<!-- AccountLogonLogoff_AuditUserDeviceClaims-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy allows you to audit user and device claims information in the user's logon token. Events in this subcategory are generated on the computer on which a logon session is created. For an interactive logon, the security audit event is generated on the computer that the user logged-on to. For a network logon, such as accessing a shared folder on the network, the security audit event is generated on the computer hosting the resource. User claims are added to a logon token when claims are included with a user's account attributes in Active Directory. Device claims are added to the logon token when claims are included with a device's computer account attributes in Active Directory. In addition, compound identity must be enabled for the domain and on the computer where the user logged on. When this setting is configured, one or more security audit events are generated for each successful logon. You must also enable the Audit Logon setting under Advanced Audit Policy Configuration\System Audit Policies\Logon/Logoff. Multiple events are generated if the user and device claims information can't fit in a single security audit event.
+<!-- AccountLogonLogoff_AuditUserDeviceClaims-Description-End -->
+
+<!-- AccountLogonLogoff_AuditUserDeviceClaims-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Volume: Low on a client computer. Medium on a domain controller or a network server.
+<!-- AccountLogonLogoff_AuditUserDeviceClaims-Editable-End -->
+
+<!-- AccountLogonLogoff_AuditUserDeviceClaims-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AccountLogonLogoff_AuditUserDeviceClaims-DFProperties-End -->
+
+<!-- AccountLogonLogoff_AuditUserDeviceClaims-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- AccountLogonLogoff_AuditUserDeviceClaims-AllowedValues-End -->
+
+<!-- AccountLogonLogoff_AuditUserDeviceClaims-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Audit User Device Claims |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Logon/Logoff |
+<!-- AccountLogonLogoff_AuditUserDeviceClaims-GpMapping-End -->
+
+<!-- AccountLogonLogoff_AuditUserDeviceClaims-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountLogonLogoff_AuditUserDeviceClaims-Examples-End -->
+
+<!-- AccountLogonLogoff_AuditUserDeviceClaims-End -->
+
+<!-- AccountManagement_AuditApplicationGroupManagement-Begin -->
+## AccountManagement_AuditApplicationGroupManagement
+
+<!-- AccountManagement_AuditApplicationGroupManagement-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- AccountManagement_AuditApplicationGroupManagement-Applicability-End -->
+
+<!-- AccountManagement_AuditApplicationGroupManagement-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/AccountManagement_AuditApplicationGroupManagement
+```
+<!-- AccountManagement_AuditApplicationGroupManagement-OmaUri-End -->
+
+<!-- AccountManagement_AuditApplicationGroupManagement-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by changes to application groups such as the following: Application group is created, changed, or deleted. Member is added or removed from an application group.
+
+- If you configure this policy setting, an audit event is generated when an attempt to change an application group is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+
+- If you don't configure this policy setting, no audit event is generated when an application group changes.
+<!-- AccountManagement_AuditApplicationGroupManagement-Description-End -->
+
+<!-- AccountManagement_AuditApplicationGroupManagement-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Volume: Low.
+<!-- AccountManagement_AuditApplicationGroupManagement-Editable-End -->
+
+<!-- AccountManagement_AuditApplicationGroupManagement-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AccountManagement_AuditApplicationGroupManagement-DFProperties-End -->
+
+<!-- AccountManagement_AuditApplicationGroupManagement-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- AccountManagement_AuditApplicationGroupManagement-AllowedValues-End -->
+
+<!-- AccountManagement_AuditApplicationGroupManagement-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Audit Application Group Management |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Account Management |
+<!-- AccountManagement_AuditApplicationGroupManagement-GpMapping-End -->
+
+<!-- AccountManagement_AuditApplicationGroupManagement-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountManagement_AuditApplicationGroupManagement-Examples-End -->
+
+<!-- AccountManagement_AuditApplicationGroupManagement-End -->
+
+<!-- AccountManagement_AuditComputerAccountManagement-Begin -->
+## AccountManagement_AuditComputerAccountManagement
+
+<!-- AccountManagement_AuditComputerAccountManagement-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- AccountManagement_AuditComputerAccountManagement-Applicability-End -->
+
+<!-- AccountManagement_AuditComputerAccountManagement-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/AccountManagement_AuditComputerAccountManagement
+```
+<!-- AccountManagement_AuditComputerAccountManagement-OmaUri-End -->
+
+<!-- AccountManagement_AuditComputerAccountManagement-Description-Begin -->
+<!-- Description-Source-DDF -->
 This policy setting allows you to audit events generated by changes to computer accounts such as when a computer account is created, changed, or deleted.
 
-If you configure this policy setting, an audit event is generated when an attempt to change a computer account is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
-If you do not configure this policy setting, no audit event is generated when a computer account changes.
+- If you configure this policy setting, an audit event is generated when an attempt to change a computer account is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
 
+- If you don't configure this policy setting, no audit event is generated when a computer account changes.
+<!-- AccountManagement_AuditComputerAccountManagement-Description-End -->
+
+<!-- AccountManagement_AuditComputerAccountManagement-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Computer Account Management*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Account Management*
+<!-- AccountManagement_AuditComputerAccountManagement-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
+<!-- AccountManagement_AuditComputerAccountManagement-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AccountManagement_AuditComputerAccountManagement-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- AccountManagement_AuditComputerAccountManagement-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- AccountManagement_AuditComputerAccountManagement-AllowedValues-End -->
 
-<hr/>
+<!-- AccountManagement_AuditComputerAccountManagement-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="audit-accountmanagement-auditdistributiongroupmanagement"></a>**Audit/AccountManagement_AuditDistributionGroupManagement**  
+| Name | Value |
+|:--|:--|
+| Name | Audit Computer Account Management |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Account Management |
+<!-- AccountManagement_AuditComputerAccountManagement-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- AccountManagement_AuditComputerAccountManagement-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountManagement_AuditComputerAccountManagement-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AccountManagement_AuditComputerAccountManagement-End -->
 
+<!-- AccountManagement_AuditDistributionGroupManagement-Begin -->
+## AccountManagement_AuditDistributionGroupManagement
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AccountManagement_AuditDistributionGroupManagement-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- AccountManagement_AuditDistributionGroupManagement-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AccountManagement_AuditDistributionGroupManagement-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/AccountManagement_AuditDistributionGroupManagement
+```
+<!-- AccountManagement_AuditDistributionGroupManagement-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AccountManagement_AuditDistributionGroupManagement-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by changes to distribution groups such as the following: Distribution group is created, changed, or deleted. Member is added or removed from a distribution group. Distribution group type is changed.
 
-<hr/>
+- If you configure this policy setting, an audit event is generated when an attempt to change a distribution group is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by changes to distribution groups as follows:  
-- Distribution group is created, changed, or deleted.
-- Member is added or removed from a distribution group.
-- Distribution group type is changed.
+- If you don't configure this policy setting, no audit event is generated when a distribution group changes.
 
-If you configure this policy setting, an audit event is generated when an attempt to change a distribution group is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
-If you do not configure this policy setting, no audit event is generated when a distribution group changes.
-
-> [!Note]
+> [!NOTE]
 > Events in this subcategory are logged only on domain controllers.
+<!-- AccountManagement_AuditDistributionGroupManagement-Description-End -->
 
+<!-- AccountManagement_AuditDistributionGroupManagement-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Distribution Group Management*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Account Management*
+<!-- AccountManagement_AuditDistributionGroupManagement-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
+<!-- AccountManagement_AuditDistributionGroupManagement-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AccountManagement_AuditDistributionGroupManagement-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- AccountManagement_AuditDistributionGroupManagement-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- AccountManagement_AuditDistributionGroupManagement-AllowedValues-End -->
 
-<hr/>
+<!-- AccountManagement_AuditDistributionGroupManagement-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="audit-accountmanagement-auditotheraccountmanagementevents"></a>**Audit/AccountManagement_AuditOtherAccountManagementEvents**  
+| Name | Value |
+|:--|:--|
+| Name | Audit Distribution Group Management |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Account Management |
+<!-- AccountManagement_AuditDistributionGroupManagement-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- AccountManagement_AuditDistributionGroupManagement-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountManagement_AuditDistributionGroupManagement-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AccountManagement_AuditDistributionGroupManagement-End -->
 
+<!-- AccountManagement_AuditOtherAccountManagementEvents-Begin -->
+## AccountManagement_AuditOtherAccountManagementEvents
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AccountManagement_AuditOtherAccountManagementEvents-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- AccountManagement_AuditOtherAccountManagementEvents-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AccountManagement_AuditOtherAccountManagementEvents-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/AccountManagement_AuditOtherAccountManagementEvents
+```
+<!-- AccountManagement_AuditOtherAccountManagementEvents-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AccountManagement_AuditOtherAccountManagementEvents-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by other user account changes that aren't covered in this category, such as the following: The password hash of a user account was accessed. This typically happens during an Active Directory Management Tool password migration. The Password Policy Checking API was called. Calls to this function can be part of an attack when a malicious application tests the policy to reduce the number of attempts during a password dictionary attack. Changes to the Default Domain Group Policy under the following Group Policy paths: Computer Configuration\Windows Settings\Security Settings\Account Policies\Password Policy Computer Configuration\Windows Settings\Security Settings\Account Policies\Account Lockout Policy.
+<!-- AccountManagement_AuditOtherAccountManagementEvents-Description-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by other user account changes that are not covered in this category as follows:  
-- The password hash of a user account was accessed. This typically happens during an Active Directory Management Tool password migration.
-- The Password Policy Checking API was called. Calls to this function can be part of an attack when a malicious application tests the policy to reduce the number of attempts during a password dictionary attack.
-- Changes to the Default Domain Group Policy under the following Group Policy paths:
-Computer Configuration\Windows Settings\Security Settings\Account Policies\Password Policy
-Computer Configuration\Windows Settings\Security Settings\Account Policies\Account Lockout Policy.
-
-> [!Note]
-> The security audit event is logged when the policy setting is applied. It does not occur at the time when the settings are modified.
-
+<!-- AccountManagement_AuditOtherAccountManagementEvents-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Other Account Management Events*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Account Management*
+<!-- AccountManagement_AuditOtherAccountManagementEvents-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
+<!-- AccountManagement_AuditOtherAccountManagementEvents-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AccountManagement_AuditOtherAccountManagementEvents-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- AccountManagement_AuditOtherAccountManagementEvents-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- AccountManagement_AuditOtherAccountManagementEvents-AllowedValues-End -->
 
-<hr/>
+<!-- AccountManagement_AuditOtherAccountManagementEvents-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="audit-accountmanagement-auditsecuritygroupmanagement"></a>**Audit/AccountManagement_AuditSecurityGroupManagement**  
+| Name | Value |
+|:--|:--|
+| Name | Audit Other Account Management Events |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Account Management |
+<!-- AccountManagement_AuditOtherAccountManagementEvents-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- AccountManagement_AuditOtherAccountManagementEvents-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountManagement_AuditOtherAccountManagementEvents-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AccountManagement_AuditOtherAccountManagementEvents-End -->
 
+<!-- AccountManagement_AuditSecurityGroupManagement-Begin -->
+## AccountManagement_AuditSecurityGroupManagement
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AccountManagement_AuditSecurityGroupManagement-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- AccountManagement_AuditSecurityGroupManagement-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AccountManagement_AuditSecurityGroupManagement-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/AccountManagement_AuditSecurityGroupManagement
+```
+<!-- AccountManagement_AuditSecurityGroupManagement-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AccountManagement_AuditSecurityGroupManagement-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by changes to security groups such as the following: Security group is created, changed, or deleted. Member is added or removed from a security group. Group type is changed.
 
-<hr/>
+- If you configure this policy setting, an audit event is generated when an attempt to change a security group is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by changes to security groups, such as the following:  
-- Security group is created, changed, or deleted.
-- Member is added or removed from a security group.
-- Group type is changed.
+- If you don't configure this policy setting, no audit event is generated when a security group changes.
+<!-- AccountManagement_AuditSecurityGroupManagement-Description-End -->
 
-If you configure this policy setting, an audit event is generated when an attempt to change a security group is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
-If you do not configure this policy setting, no audit event is generated when a security group changes.
-
+<!-- AccountManagement_AuditSecurityGroupManagement-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Security Group Management*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Account Management*
+<!-- AccountManagement_AuditSecurityGroupManagement-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0—Off/None
-- 1 (default)—Success
-- 2—Failure
-- 3—Success+Failure
+<!-- AccountManagement_AuditSecurityGroupManagement-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AccountManagement_AuditSecurityGroupManagement-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- AccountManagement_AuditSecurityGroupManagement-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 | Off/None. |
+| 1 (Default) | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- AccountManagement_AuditSecurityGroupManagement-AllowedValues-End -->
 
-<hr/>
+<!-- AccountManagement_AuditSecurityGroupManagement-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="audit-accountmanagement-audituseraccountmanagement"></a>**Audit/AccountManagement_AuditUserAccountManagement**  
+| Name | Value |
+|:--|:--|
+| Name | Audit Security Group Management |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Account Management |
+<!-- AccountManagement_AuditSecurityGroupManagement-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- AccountManagement_AuditSecurityGroupManagement-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountManagement_AuditSecurityGroupManagement-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AccountManagement_AuditSecurityGroupManagement-End -->
 
+<!-- AccountManagement_AuditUserAccountManagement-Begin -->
+## AccountManagement_AuditUserAccountManagement
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AccountManagement_AuditUserAccountManagement-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- AccountManagement_AuditUserAccountManagement-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AccountManagement_AuditUserAccountManagement-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/AccountManagement_AuditUserAccountManagement
+```
+<!-- AccountManagement_AuditUserAccountManagement-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AccountManagement_AuditUserAccountManagement-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit changes to user accounts. Events include the following: A user account is created, changed, deleted; renamed, disabled, enabled, locked out, or unlocked. A user account's password is set or changed. A security identifier (SID) is added to the SID History of a user account. The Directory Services Restore Mode password is configured. Permissions on administrative user accounts are changed. Credential Manager credentials are backed up or restored.
 
-<hr/>
+- If you configure this policy setting, an audit event is generated when an attempt to change a user account is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit changes to user accounts. 
-The events included are as follows:  
-- A user account is created, changed, deleted; renamed, disabled, enabled, locked out, or unlocked.
-- A user account’s password is set or changed.
-- A security identifier (SID) is added to the SID History of a user account.
-- The Directory Services Restore Mode password is configured.
-- Permissions on administrative user accounts are changed.
-- Credential Manager credentials are backed up or restored.
+- If you don't configure this policy setting, no audit event is generated when a user account changes.
+<!-- AccountManagement_AuditUserAccountManagement-Description-End -->
 
-If you configure this policy setting, an audit event is generated when an attempt to change a user account is made. Success audits record successful attempts and Failure audits record unsuccessful attempts. 
-If you do not configure this policy setting, no audit event is generated when a user account changes.
-
+<!-- AccountManagement_AuditUserAccountManagement-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit User Account Management*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Account Management*
-
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0—Off/None
-- 1 (default)—Success
-- 2—Failure
-- 3—Success+Failure
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="audit-dsaccess-auditdetaileddirectoryservicereplication"></a>**Audit/DSAccess_AuditDetailedDirectoryServiceReplication**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by detailed Active Directory Domain Services (AD DS) replication between domain controllers.
-
-Volume: High.
-
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Detailed Directory Service Replication*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/DS Access*
-
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="audit-dsaccess-auditdirectoryserviceaccess"></a>**Audit/DSAccess_AuditDirectoryServiceAccess**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated when an Active Directory Domain Services (AD DS) object is accessed. 
-
-Only AD DS objects with a matching system access control list (SACL) are logged.
-
-Events in this subcategory are similar to the Directory Service Access events available in previous versions of Windows.
-
-Volume: High on domain controllers. None on client computers.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Directory Service Access*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/DS Access*
-
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="audit-dsaccess-auditdirectoryservicechanges"></a>**Audit/DSAccess_AuditDirectoryServiceChanges**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by changes to objects in Active Directory Domain Services (AD DS). Events are logged when an object is created, deleted, modified, moved, or undeleted.
-
-When possible, events logged in this subcategory indicate the old and new values of the object’s properties.
-
-Events in this subcategory are logged only on domain controllers, and only objects in AD DS with a matching system access control list (SACL) are logged.
-
-> [!Note]
-> Actions on some objects and properties do not cause audit events to be generated due to settings on the object class in the schema.
-
-If you configure this policy setting, an audit event is generated when an attempt to change an object in AD DS is made. Success audits record successful attempts, however unsuccessful attempts are NOT recorded.
-If you do not configure this policy setting, no audit event is generated when an attempt to change an object in AD DS object is made.
-
-Volume: High on domain controllers only.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Directory Service Changes*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/DS Access*
-
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="audit-dsaccess-auditdirectoryservicereplication"></a>**Audit/DSAccess_AuditDirectoryServiceReplication**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit replication between two Active Directory Domain Services (AD DS) domain controllers.
-
-If you configure this policy setting, an audit event is generated during AD DS replication. Success audits record successful replication and Failure audits record unsuccessful replication.
-If you do not configure this policy setting, no audit event is generated during AD DS replication.
-
->[!Note]
-> Events in this subcategory are logged only on domain controllers.
-
-Volume: Medium on domain controllers. None on client computers.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Directory Service Replication*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/DS Access*
-
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="audit-detailedtracking-auditdpapiactivity"></a>**Audit/DetailedTracking_AuditDPAPIActivity**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated when encryption or decryption requests are made to the Data Protection application interface (DPAPI). DPAPI is used to protect secret information such as stored password and key information. For more information about DPAPI, see https://go.microsoft.com/fwlink/?LinkId=121720.
-
-If you configure this policy setting, an audit event is generated when an encryption or decryption request is made to DPAPI. Success audits record successful requests and Failure audits record unsuccessful requests.
-If you do not configure this policy setting, no audit event is generated when an encryption or decryption request is made to DPAPI.
-
+<!-- AccountManagement_AuditUserAccountManagement-Editable-End -->
+
+<!-- AccountManagement_AuditUserAccountManagement-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AccountManagement_AuditUserAccountManagement-DFProperties-End -->
+
+<!-- AccountManagement_AuditUserAccountManagement-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Off/None. |
+| 1 (Default) | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- AccountManagement_AuditUserAccountManagement-AllowedValues-End -->
+
+<!-- AccountManagement_AuditUserAccountManagement-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Audit User Account Management |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Account Management |
+<!-- AccountManagement_AuditUserAccountManagement-GpMapping-End -->
+
+<!-- AccountManagement_AuditUserAccountManagement-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AccountManagement_AuditUserAccountManagement-Examples-End -->
+
+<!-- AccountManagement_AuditUserAccountManagement-End -->
+
+<!-- DetailedTracking_AuditDPAPIActivity-Begin -->
+## DetailedTracking_AuditDPAPIActivity
+
+<!-- DetailedTracking_AuditDPAPIActivity-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- DetailedTracking_AuditDPAPIActivity-Applicability-End -->
+
+<!-- DetailedTracking_AuditDPAPIActivity-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/DetailedTracking_AuditDPAPIActivity
+```
+<!-- DetailedTracking_AuditDPAPIActivity-OmaUri-End -->
+
+<!-- DetailedTracking_AuditDPAPIActivity-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated when encryption or decryption requests are made to the Data Protection application interface (DPAPI). DPAPI is used to protect secret information such as stored password and key information. For more information about DPAPI, see [How to Use Data Protection](/dotnet/standard/security/how-to-use-data-protection).
+
+- If you configure this policy setting, an audit event is generated when an encryption or decryption request is made to DPAPI. Success audits record successful requests and Failure audits record unsuccessful requests.
+
+- If you don't configure this policy setting, no audit event is generated when an encryption or decryption request is made to DPAPI.
+<!-- DetailedTracking_AuditDPAPIActivity-Description-End -->
+
+<!-- DetailedTracking_AuditDPAPIActivity-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit DPAPI Activity*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Detailed Tracking*
+<!-- DetailedTracking_AuditDPAPIActivity-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-<!--/SupportedValues-->
-<!--Example-->
+<!-- DetailedTracking_AuditDPAPIActivity-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DetailedTracking_AuditDPAPIActivity-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- DetailedTracking_AuditDPAPIActivity-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- DetailedTracking_AuditDPAPIActivity-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="audit-detailedtracking-auditpnpactivity"></a>**Audit/DetailedTracking_AuditPNPActivity**  
+<!-- DetailedTracking_AuditDPAPIActivity-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Audit DPAPI Activity |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Detailed Tracking |
+<!-- DetailedTracking_AuditDPAPIActivity-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DetailedTracking_AuditDPAPIActivity-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DetailedTracking_AuditDPAPIActivity-Examples-End -->
 
+<!-- DetailedTracking_AuditDPAPIActivity-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DetailedTracking_AuditPNPActivity-Begin -->
+## DetailedTracking_AuditPNPActivity
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DetailedTracking_AuditPNPActivity-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- DetailedTracking_AuditPNPActivity-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DetailedTracking_AuditPNPActivity-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/DetailedTracking_AuditPNPActivity
+```
+<!-- DetailedTracking_AuditPNPActivity-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DetailedTracking_AuditPNPActivity-Description-Begin -->
+<!-- Description-Source-DDF -->
 This policy setting allows you to audit when plug and play detects an external device.
 
-If you configure this policy setting, an audit event is generated whenever plug and play detects an external device. Only Success audits are recorded for this category.
-If you do not configure this policy setting, no audit event is generated when an external device is detected by plug and play.
+- If you configure this policy setting, an audit event is generated whenever plug and play detects an external device. Only Success audits are recorded for this category.
 
+- If you don't configure this policy setting, no audit event is generated when an external device is detected by plug and play.
+<!-- DetailedTracking_AuditPNPActivity-Description-End -->
+
+<!-- DetailedTracking_AuditPNPActivity-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit PNP Activity*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Detailed Tracking*
+<!-- DetailedTracking_AuditPNPActivity-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-<!--/SupportedValues-->
-<!--Example-->
+<!-- DetailedTracking_AuditPNPActivity-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DetailedTracking_AuditPNPActivity-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- DetailedTracking_AuditPNPActivity-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- DetailedTracking_AuditPNPActivity-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="audit-detailedtracking-auditprocesscreation"></a>**Audit/DetailedTracking_AuditProcessCreation**  
+<!-- DetailedTracking_AuditPNPActivity-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Audit PNP Activity |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Detailed Tracking |
+<!-- DetailedTracking_AuditPNPActivity-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DetailedTracking_AuditPNPActivity-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DetailedTracking_AuditPNPActivity-Examples-End -->
 
+<!-- DetailedTracking_AuditPNPActivity-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DetailedTracking_AuditProcessCreation-Begin -->
+## DetailedTracking_AuditProcessCreation
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DetailedTracking_AuditProcessCreation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- DetailedTracking_AuditProcessCreation-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DetailedTracking_AuditProcessCreation-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/DetailedTracking_AuditProcessCreation
+```
+<!-- DetailedTracking_AuditProcessCreation-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DetailedTracking_AuditProcessCreation-Description-Begin -->
+<!-- Description-Source-DDF -->
 This policy setting allows you to audit events generated when a process is created or starts. The name of the application or user that created the process is also audited.
 
-If you configure this policy setting, an audit event is generated when a process is created. Success audits record successful attempts and Failure audits record unsuccessful attempts.
-If you do not configure this policy setting, no audit event is generated when a process is created.
+- If you configure this policy setting, an audit event is generated when a process is created. Success audits record successful attempts and Failure audits record unsuccessful attempts.
 
+- If you don't configure this policy setting, no audit event is generated when a process is created.
+<!-- DetailedTracking_AuditProcessCreation-Description-End -->
+
+<!-- DetailedTracking_AuditProcessCreation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Depends on how the computer is used.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Process Creation*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Detailed Tracking*
+<!-- DetailedTracking_AuditProcessCreation-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-<!--/SupportedValues-->
-<!--Example-->
+<!-- DetailedTracking_AuditProcessCreation-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DetailedTracking_AuditProcessCreation-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- DetailedTracking_AuditProcessCreation-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- DetailedTracking_AuditProcessCreation-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="audit-detailedtracking-auditprocesstermination"></a>**Audit/DetailedTracking_AuditProcessTermination**  
+<!-- DetailedTracking_AuditProcessCreation-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Audit Process Creation |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Detailed Tracking |
+<!-- DetailedTracking_AuditProcessCreation-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DetailedTracking_AuditProcessCreation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DetailedTracking_AuditProcessCreation-Examples-End -->
 
+<!-- DetailedTracking_AuditProcessCreation-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DetailedTracking_AuditProcessTermination-Begin -->
+## DetailedTracking_AuditProcessTermination
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DetailedTracking_AuditProcessTermination-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- DetailedTracking_AuditProcessTermination-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DetailedTracking_AuditProcessTermination-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/DetailedTracking_AuditProcessTermination
+```
+<!-- DetailedTracking_AuditProcessTermination-OmaUri-End -->
 
-<hr/>
+<!-- DetailedTracking_AuditProcessTermination-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated when a process ends.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated when a process ends. 
+- If you configure this policy setting, an audit event is generated when a process ends. Success audits record successful attempts and Failure audits record unsuccessful attempts.
 
-If you configure this policy setting, an audit event is generated when a process ends. Success audits record successful attempts and Failure audits record unsuccessful attempts.
-If you do not configure this policy setting, no audit event is generated when a process ends.
+- If you don't configure this policy setting, no audit event is generated when a process ends.
+<!-- DetailedTracking_AuditProcessTermination-Description-End -->
 
+<!-- DetailedTracking_AuditProcessTermination-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Depends on how the computer is used.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Process Termination*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Detailed Tracking*
+<!-- DetailedTracking_AuditProcessTermination-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-<!--/SupportedValues-->
-<!--Example-->
+<!-- DetailedTracking_AuditProcessTermination-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DetailedTracking_AuditProcessTermination-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- DetailedTracking_AuditProcessTermination-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- DetailedTracking_AuditProcessTermination-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="audit-detailedtracking-auditrpcevents"></a>**Audit/DetailedTracking_AuditRPCEvents**  
+<!-- DetailedTracking_AuditProcessTermination-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Audit Process Termination |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Detailed Tracking |
+<!-- DetailedTracking_AuditProcessTermination-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DetailedTracking_AuditProcessTermination-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DetailedTracking_AuditProcessTermination-Examples-End -->
 
+<!-- DetailedTracking_AuditProcessTermination-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DetailedTracking_AuditRPCEvents-Begin -->
+## DetailedTracking_AuditRPCEvents
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DetailedTracking_AuditRPCEvents-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- DetailedTracking_AuditRPCEvents-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DetailedTracking_AuditRPCEvents-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/DetailedTracking_AuditRPCEvents
+```
+<!-- DetailedTracking_AuditRPCEvents-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DetailedTracking_AuditRPCEvents-Description-Begin -->
+<!-- Description-Source-DDF -->
 This policy setting allows you to audit inbound remote procedure call (RPC) connections.
 
-If you configure this policy setting, an audit event is generated when a remote RPC connection is attempted. Success audits record successful attempts and Failure audits record unsuccessful attempts.
-If you do not configure this policy setting, no audit event is generated when a remote RPC connection is attempted.
+- If you configure this policy setting, an audit event is generated when a remote RPC connection is attempted. Success audits record successful attempts and Failure audits record unsuccessful attempts.
 
+- If you don't configure this policy setting, no audit event is generated when a remote RPC connection is attempted.
+<!-- DetailedTracking_AuditRPCEvents-Description-End -->
+
+<!-- DetailedTracking_AuditRPCEvents-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: High on RPC servers.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit RPC Events*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Detailed Tracking*
+<!-- DetailedTracking_AuditRPCEvents-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-<!--/SupportedValues-->
-<!--Example-->
+<!-- DetailedTracking_AuditRPCEvents-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DetailedTracking_AuditRPCEvents-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- DetailedTracking_AuditRPCEvents-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- DetailedTracking_AuditRPCEvents-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="audit-detailedtracking-audittokenrightadjusted"></a>**Audit/DetailedTracking_AuditTokenRightAdjusted**  
+<!-- DetailedTracking_AuditRPCEvents-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Audit RPC Events |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Detailed Tracking |
+<!-- DetailedTracking_AuditRPCEvents-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DetailedTracking_AuditRPCEvents-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DetailedTracking_AuditRPCEvents-Examples-End -->
 
+<!-- DetailedTracking_AuditRPCEvents-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DetailedTracking_AuditTokenRightAdjusted-Begin -->
+## DetailedTracking_AuditTokenRightAdjusted
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DetailedTracking_AuditTokenRightAdjusted-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- DetailedTracking_AuditTokenRightAdjusted-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DetailedTracking_AuditTokenRightAdjusted-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/DetailedTracking_AuditTokenRightAdjusted
+```
+<!-- DetailedTracking_AuditTokenRightAdjusted-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DetailedTracking_AuditTokenRightAdjusted-Description-Begin -->
+<!-- Description-Source-DDF -->
 This policy setting allows you to audit events generated by adjusting the privileges of a token.
+<!-- DetailedTracking_AuditTokenRightAdjusted-Description-End -->
 
+<!-- DetailedTracking_AuditTokenRightAdjusted-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: High.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Token Right Adjusted*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Detailed Tracking*
+<!-- DetailedTracking_AuditTokenRightAdjusted-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
+<!-- DetailedTracking_AuditTokenRightAdjusted-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DetailedTracking_AuditTokenRightAdjusted-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- DetailedTracking_AuditTokenRightAdjusted-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- DetailedTracking_AuditTokenRightAdjusted-AllowedValues-End -->
 
-<hr/>
+<!-- DetailedTracking_AuditTokenRightAdjusted-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="audit-objectaccess-auditapplicationgenerated"></a>**Audit/ObjectAccess_AuditApplicationGenerated**  
+| Name | Value |
+|:--|:--|
+| Name | Audit Token Right Adjusted |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Detailed Tracking |
+<!-- DetailedTracking_AuditTokenRightAdjusted-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- DetailedTracking_AuditTokenRightAdjusted-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DetailedTracking_AuditTokenRightAdjusted-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DetailedTracking_AuditTokenRightAdjusted-End -->
 
+<!-- DSAccess_AuditDetailedDirectoryServiceReplication-Begin -->
+## DSAccess_AuditDetailedDirectoryServiceReplication
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DSAccess_AuditDetailedDirectoryServiceReplication-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- DSAccess_AuditDetailedDirectoryServiceReplication-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DSAccess_AuditDetailedDirectoryServiceReplication-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/DSAccess_AuditDetailedDirectoryServiceReplication
+```
+<!-- DSAccess_AuditDetailedDirectoryServiceReplication-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DSAccess_AuditDetailedDirectoryServiceReplication-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by detailed Active Directory Domain Services (AD DS) replication between domain controllers.
+<!-- DSAccess_AuditDetailedDirectoryServiceReplication-Description-End -->
 
-<hr/>
+<!-- DSAccess_AuditDetailedDirectoryServiceReplication-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Volume: High.
+<!-- DSAccess_AuditDetailedDirectoryServiceReplication-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit applications that generate events using the Windows Auditing application programming interfaces (APIs). Applications designed to use the Windows Auditing API use this subcategory to log auditing events related to their function.
-Events in this subcategory include:  
-- Creation of an application client context.
-- Deletion of an application client context.
-- Initialization of an application client context.
-- Other application operations using the Windows Auditing APIs.
+<!-- DSAccess_AuditDetailedDirectoryServiceReplication-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DSAccess_AuditDetailedDirectoryServiceReplication-DFProperties-End -->
+
+<!-- DSAccess_AuditDetailedDirectoryServiceReplication-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- DSAccess_AuditDetailedDirectoryServiceReplication-AllowedValues-End -->
+
+<!-- DSAccess_AuditDetailedDirectoryServiceReplication-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Audit Detailed Directory Service Replication |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > DS Access |
+<!-- DSAccess_AuditDetailedDirectoryServiceReplication-GpMapping-End -->
+
+<!-- DSAccess_AuditDetailedDirectoryServiceReplication-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DSAccess_AuditDetailedDirectoryServiceReplication-Examples-End -->
+
+<!-- DSAccess_AuditDetailedDirectoryServiceReplication-End -->
+
+<!-- DSAccess_AuditDirectoryServiceAccess-Begin -->
+## DSAccess_AuditDirectoryServiceAccess
+
+<!-- DSAccess_AuditDirectoryServiceAccess-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- DSAccess_AuditDirectoryServiceAccess-Applicability-End -->
+
+<!-- DSAccess_AuditDirectoryServiceAccess-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/DSAccess_AuditDirectoryServiceAccess
+```
+<!-- DSAccess_AuditDirectoryServiceAccess-OmaUri-End -->
+
+<!-- DSAccess_AuditDirectoryServiceAccess-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated when an Active Directory Domain Services (AD DS) object is accessed. Only AD DS objects with a matching system access control list (SACL) are logged. Events in this subcategory are similar to the Directory Service Access events available in previous versions of Windows.
+<!-- DSAccess_AuditDirectoryServiceAccess-Description-End -->
+
+<!-- DSAccess_AuditDirectoryServiceAccess-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Volume: High on domain controllers. None on client computers.
+<!-- DSAccess_AuditDirectoryServiceAccess-Editable-End -->
+
+<!-- DSAccess_AuditDirectoryServiceAccess-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DSAccess_AuditDirectoryServiceAccess-DFProperties-End -->
+
+<!-- DSAccess_AuditDirectoryServiceAccess-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- DSAccess_AuditDirectoryServiceAccess-AllowedValues-End -->
+
+<!-- DSAccess_AuditDirectoryServiceAccess-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Audit Directory Service Access |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > DS Access |
+<!-- DSAccess_AuditDirectoryServiceAccess-GpMapping-End -->
+
+<!-- DSAccess_AuditDirectoryServiceAccess-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DSAccess_AuditDirectoryServiceAccess-Examples-End -->
+
+<!-- DSAccess_AuditDirectoryServiceAccess-End -->
+
+<!-- DSAccess_AuditDirectoryServiceChanges-Begin -->
+## DSAccess_AuditDirectoryServiceChanges
+
+<!-- DSAccess_AuditDirectoryServiceChanges-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- DSAccess_AuditDirectoryServiceChanges-Applicability-End -->
+
+<!-- DSAccess_AuditDirectoryServiceChanges-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/DSAccess_AuditDirectoryServiceChanges
+```
+<!-- DSAccess_AuditDirectoryServiceChanges-OmaUri-End -->
+
+<!-- DSAccess_AuditDirectoryServiceChanges-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by changes to objects in Active Directory Domain Services (AD DS). Events are logged when an object is created, deleted, modified, moved, or undeleted. When possible, events logged in this subcategory indicate the old and new values of the object's properties. Events in this subcategory are logged only on domain controllers, and only objects in AD DS with a matching system access control list (SACL) are logged.
+
+> [!NOTE]
+> Actions on some objects and properties don't cause audit events to be generated due to settings on the object class in the schema.
+
+- If you configure this policy setting, an audit event is generated when an attempt to change an object in AD DS is made. Success audits record successful attempts, however unsuccessful attempts are NOT recorded.
+
+- If you don't configure this policy setting, no audit event is generated when an attempt to change an object in AD DS object is made.
+<!-- DSAccess_AuditDirectoryServiceChanges-Description-End -->
+
+<!-- DSAccess_AuditDirectoryServiceChanges-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Volume: High on domain controllers only.
+<!-- DSAccess_AuditDirectoryServiceChanges-Editable-End -->
+
+<!-- DSAccess_AuditDirectoryServiceChanges-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DSAccess_AuditDirectoryServiceChanges-DFProperties-End -->
+
+<!-- DSAccess_AuditDirectoryServiceChanges-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- DSAccess_AuditDirectoryServiceChanges-AllowedValues-End -->
+
+<!-- DSAccess_AuditDirectoryServiceChanges-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Audit Directory Service Changes |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > DS Access |
+<!-- DSAccess_AuditDirectoryServiceChanges-GpMapping-End -->
+
+<!-- DSAccess_AuditDirectoryServiceChanges-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DSAccess_AuditDirectoryServiceChanges-Examples-End -->
+
+<!-- DSAccess_AuditDirectoryServiceChanges-End -->
+
+<!-- DSAccess_AuditDirectoryServiceReplication-Begin -->
+## DSAccess_AuditDirectoryServiceReplication
+
+<!-- DSAccess_AuditDirectoryServiceReplication-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- DSAccess_AuditDirectoryServiceReplication-Applicability-End -->
+
+<!-- DSAccess_AuditDirectoryServiceReplication-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/DSAccess_AuditDirectoryServiceReplication
+```
+<!-- DSAccess_AuditDirectoryServiceReplication-OmaUri-End -->
+
+<!-- DSAccess_AuditDirectoryServiceReplication-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit replication between two Active Directory Domain Services (AD DS) domain controllers.
+
+- If you configure this policy setting, an audit event is generated during AD DS replication. Success audits record successful replication and Failure audits record unsuccessful replication.
+
+- If you don't configure this policy setting, no audit event is generated during AD DS replication.
+<!-- DSAccess_AuditDirectoryServiceReplication-Description-End -->
+
+<!-- DSAccess_AuditDirectoryServiceReplication-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Volume: Medium on domain controllers. None on client computers.
+<!-- DSAccess_AuditDirectoryServiceReplication-Editable-End -->
+
+<!-- DSAccess_AuditDirectoryServiceReplication-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- DSAccess_AuditDirectoryServiceReplication-DFProperties-End -->
+
+<!-- DSAccess_AuditDirectoryServiceReplication-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- DSAccess_AuditDirectoryServiceReplication-AllowedValues-End -->
+
+<!-- DSAccess_AuditDirectoryServiceReplication-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Audit Directory Service Replication |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > DS Access |
+<!-- DSAccess_AuditDirectoryServiceReplication-GpMapping-End -->
+
+<!-- DSAccess_AuditDirectoryServiceReplication-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DSAccess_AuditDirectoryServiceReplication-Examples-End -->
+
+<!-- DSAccess_AuditDirectoryServiceReplication-End -->
+
+<!-- ObjectAccess_AuditApplicationGenerated-Begin -->
+## ObjectAccess_AuditApplicationGenerated
+
+<!-- ObjectAccess_AuditApplicationGenerated-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- ObjectAccess_AuditApplicationGenerated-Applicability-End -->
+
+<!-- ObjectAccess_AuditApplicationGenerated-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/ObjectAccess_AuditApplicationGenerated
+```
+<!-- ObjectAccess_AuditApplicationGenerated-OmaUri-End -->
+
+<!-- ObjectAccess_AuditApplicationGenerated-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit applications that generate events using the Windows Auditing application programming interfaces (APIs). Applications designed to use the Windows Auditing API use this subcategory to log auditing events related to their function. Events in this subcategory include: Creation of an application client context. Deletion of an application client context. Initialization of an application client context. Other application operations using the Windows Auditing APIs.
+<!-- ObjectAccess_AuditApplicationGenerated-Description-End -->
+
+<!-- ObjectAccess_AuditApplicationGenerated-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Depends on the applications that are generating them.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Application Generated*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
+<!-- ObjectAccess_AuditApplicationGenerated-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-<!--/SupportedValues-->
-<!--Example-->
+<!-- ObjectAccess_AuditApplicationGenerated-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ObjectAccess_AuditApplicationGenerated-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- ObjectAccess_AuditApplicationGenerated-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- ObjectAccess_AuditApplicationGenerated-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="audit-objectaccess-auditcentralaccesspolicystaging"></a>**Audit/ObjectAccess_AuditCentralAccessPolicyStaging**  
+<!-- ObjectAccess_AuditApplicationGenerated-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Audit Application Generated |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Object Access |
+<!-- ObjectAccess_AuditApplicationGenerated-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ObjectAccess_AuditApplicationGenerated-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ObjectAccess_AuditApplicationGenerated-Examples-End -->
 
+<!-- ObjectAccess_AuditApplicationGenerated-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ObjectAccess_AuditCentralAccessPolicyStaging-Begin -->
+## ObjectAccess_AuditCentralAccessPolicyStaging
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ObjectAccess_AuditCentralAccessPolicyStaging-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- ObjectAccess_AuditCentralAccessPolicyStaging-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ObjectAccess_AuditCentralAccessPolicyStaging-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/ObjectAccess_AuditCentralAccessPolicyStaging
+```
+<!-- ObjectAccess_AuditCentralAccessPolicyStaging-OmaUri-End -->
 
-<hr/>
+<!-- ObjectAccess_AuditCentralAccessPolicyStaging-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit access requests where the permission granted or denied by a proposed policy differs from the current central access policy on an object. If you configure this policy setting, an audit event is generated each time a user accesses an object and the permission granted by the current central access policy on the object differs from that granted by the proposed policy. The resulting audit event will be generated as follows: 1) Success audits, when configured, records access attempts when the current central access policy grants access but the proposed policy denies access. 2) Failure audits when configured records access attempts when: a) The current central access policy doesn't grant access but the proposed policy grants access. b) A principal requests the maximum access rights they're allowed and the access rights granted by the current central access policy are different than the access rights granted by the proposed policy. Volume: Potentially high on a file server when the proposed policy differs significantly from the current central access policy.
+<!-- ObjectAccess_AuditCentralAccessPolicyStaging-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit access requests where the permission granted or denied by a proposed policy differs from the current central access policy on an object.
-
-If you configure this policy setting, an audit event is generated each time a user accesses an object and the permission granted by the current central access policy on the object differs from that granted by the proposed policy. The resulting audit event will be generated as follows:  
-1. Success audits, when configured, records access attempts when the current central access policy grants access but the proposed policy denies access.
-2. Failure audits when configured records access attempts when:  
-   - The current central access policy does not grant access but the proposed policy grants access.
-   - A principal requests the maximum access rights they are allowed and the access rights granted by the current central access policy are different than the access rights granted by the proposed policy.
-
+<!-- ObjectAccess_AuditCentralAccessPolicyStaging-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Potentially high on a file server when the proposed policy differs significantly from the current central access policy.
+<!-- ObjectAccess_AuditCentralAccessPolicyStaging-Editable-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Central Access Policy Staging*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
+<!-- ObjectAccess_AuditCentralAccessPolicyStaging-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ObjectAccess_AuditCentralAccessPolicyStaging-DFProperties-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- ObjectAccess_AuditCentralAccessPolicyStaging-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Example-->
-<!--Validation-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- ObjectAccess_AuditCentralAccessPolicyStaging-AllowedValues-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- ObjectAccess_AuditCentralAccessPolicyStaging-GpMapping-Begin -->
+**Group policy mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Audit Central Access Policy Staging |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Object Access |
+<!-- ObjectAccess_AuditCentralAccessPolicyStaging-GpMapping-End -->
 
-<!--Policy-->
-<a href="" id="audit-objectaccess-auditcertificationservices"></a>**Audit/ObjectAccess_AuditCertificationServices**  
+<!-- ObjectAccess_AuditCentralAccessPolicyStaging-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ObjectAccess_AuditCentralAccessPolicyStaging-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- ObjectAccess_AuditCentralAccessPolicyStaging-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ObjectAccess_AuditCertificationServices-Begin -->
+## ObjectAccess_AuditCertificationServices
 
+<!-- ObjectAccess_AuditCertificationServices-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- ObjectAccess_AuditCertificationServices-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ObjectAccess_AuditCertificationServices-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/ObjectAccess_AuditCertificationServices
+```
+<!-- ObjectAccess_AuditCertificationServices-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ObjectAccess_AuditCertificationServices-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit Active Directory Certificate Services (AD CS) operations. AD CS operations include the following: AD CS startup/shutdown/backup/restore. Changes to the certificate revocation list (CRL). New certificate requests. Issuing of a certificate. Revocation of a certificate. Changes to the Certificate Manager settings for AD CS. Changes in the configuration of AD CS. Changes to a Certificate Services template. Importing of a certificate. Publishing of a certification authority certificate is to Active Directory Domain Services. Changes to the security permissions for AD CS. Archival of a key. Importing of a key. Retrieval of a key. Starting of Online Certificate Status Protocol (OCSP) Responder Service. Stopping of Online Certificate Status Protocol (OCSP) Responder Service.
+<!-- ObjectAccess_AuditCertificationServices-Description-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit Active Directory Certificate Services (AD CS) operations.
-AD CS operations include the following:  
-
-- AD CS startup/shutdown/backup/restore.
-- Changes to the certificate revocation list (CRL).
-- New certificate requests.
-- Issuing of a certificate.
-- Revocation of a certificate.
-- Changes to the Certificate Manager settings for AD CS.
-- Changes in the configuration of AD CS.
-- Changes to a Certificate Services template.
-- Importing of a certificate.
-- Publishing of a certification authority certificate is to Active Directory Domain Services.
-- Changes to the security permissions for AD CS.
-- Archival of a key.
-- Importing of a key.
-- Retrieval of a key.
-- Starting of Online Certificate Status Protocol (OCSP) Responder Service.
-- Stopping of Online Certificate Status Protocol (OCSP) Responder Service.
-
+<!-- ObjectAccess_AuditCertificationServices-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Medium or Low on computers running Active Directory Certificate Services.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Certification Services*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
+<!-- ObjectAccess_AuditCertificationServices-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-<!--/SupportedValues-->
-<!--Example-->
+<!-- ObjectAccess_AuditCertificationServices-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ObjectAccess_AuditCertificationServices-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- ObjectAccess_AuditCertificationServices-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- ObjectAccess_AuditCertificationServices-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="audit-objectaccess-auditdetailedfileshare"></a>**Audit/ObjectAccess_AuditDetailedFileShare**  
+<!-- ObjectAccess_AuditCertificationServices-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Audit Certification Services |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Object Access |
+<!-- ObjectAccess_AuditCertificationServices-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ObjectAccess_AuditCertificationServices-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ObjectAccess_AuditCertificationServices-Examples-End -->
 
+<!-- ObjectAccess_AuditCertificationServices-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ObjectAccess_AuditDetailedFileShare-Begin -->
+## ObjectAccess_AuditDetailedFileShare
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ObjectAccess_AuditDetailedFileShare-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- ObjectAccess_AuditDetailedFileShare-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ObjectAccess_AuditDetailedFileShare-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/ObjectAccess_AuditDetailedFileShare
+```
+<!-- ObjectAccess_AuditDetailedFileShare-OmaUri-End -->
 
-<hr/>
+<!-- ObjectAccess_AuditDetailedFileShare-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit attempts to access files and folders on a shared folder. The Detailed File Share setting logs an event every time a file or folder is accessed, whereas the File Share setting only records one event for any connection established between a client and file share. Detailed File Share audit events include detailed information about the permissions or other criteria used to grant or deny access.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit attempts to access files and folders on a shared folder. The Detailed File Share setting logs an event every time a file or folder is accessed, whereas the File Share setting only records one event for any connection established between a client and file share.  Detailed File Share audit events include detailed information about the permissions or other criteria used to grant or deny access.
+- If you configure this policy setting, an audit event is generated when an attempt is made to access a file or folder on a share. The administrator can specify whether to audit only successes, only failures, or both successes and failures.
 
-If you configure this policy setting, an audit event is generated when an attempt is made to access a file or folder on a share. The administrator can specify whether to audit only successes, only failures, or both successes and failures.
+> [!NOTE]
+> There are no system access control lists (SACLs) for shared folders.
 
-> [!Note]
-> There are no system access control lists (SACLs) for shared folders. If this policy setting is enabled, access to all shared files and folders on the system is audited.
+- If this policy setting is enabled, access to all shared files and folders on the system is audited.
+<!-- ObjectAccess_AuditDetailedFileShare-Description-End -->
 
+<!-- ObjectAccess_AuditDetailedFileShare-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: High on a file server or domain controller because of SYSVOL network access required by Group Policy.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Detailed File Share*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
+<!-- ObjectAccess_AuditDetailedFileShare-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-<!--/SupportedValues-->
-<!--Example-->
+<!-- ObjectAccess_AuditDetailedFileShare-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ObjectAccess_AuditDetailedFileShare-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- ObjectAccess_AuditDetailedFileShare-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- ObjectAccess_AuditDetailedFileShare-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="audit-objectaccess-auditfileshare"></a>**Audit/ObjectAccess_AuditFileShare**  
+<!-- ObjectAccess_AuditDetailedFileShare-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Audit Detailed File Share |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Object Access |
+<!-- ObjectAccess_AuditDetailedFileShare-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ObjectAccess_AuditDetailedFileShare-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ObjectAccess_AuditDetailedFileShare-Examples-End -->
 
+<!-- ObjectAccess_AuditDetailedFileShare-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ObjectAccess_AuditFileShare-Begin -->
+## ObjectAccess_AuditFileShare
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ObjectAccess_AuditFileShare-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- ObjectAccess_AuditFileShare-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ObjectAccess_AuditFileShare-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/ObjectAccess_AuditFileShare
+```
+<!-- ObjectAccess_AuditFileShare-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- ObjectAccess_AuditFileShare-Description-Begin -->
+<!-- Description-Source-DDF -->
 This policy setting allows you to audit attempts to access a shared folder.
 
-If you configure this policy setting, an audit event is generated when an attempt is made to access a shared folder. If this policy setting is defined, the administrator can specify whether to audit only successes, only failures, or both successes and failures.
+- If you configure this policy setting, an audit event is generated when an attempt is made to access a shared folder.
 
-> [!Note]
-> There are no system access control lists (SACLs) for shared folders. If this policy setting is enabled, access to all shared folders on the system is audited.
+- If this policy setting is defined, the administrator can specify whether to audit only successes, only failures, or both successes and failures.
 
+> [!NOTE]
+> There are no system access control lists (SACLs) for shared folders.
+
+- If this policy setting is enabled, access to all shared folders on the system is audited.
+<!-- ObjectAccess_AuditFileShare-Description-End -->
+
+<!-- ObjectAccess_AuditFileShare-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: High on a file server or domain controller because of SYSVOL network access required by Group Policy.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit File Share*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
+<!-- ObjectAccess_AuditFileShare-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-<!--/SupportedValues-->
-<!--Example-->
+<!-- ObjectAccess_AuditFileShare-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ObjectAccess_AuditFileShare-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- ObjectAccess_AuditFileShare-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- ObjectAccess_AuditFileShare-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="audit-objectaccess-auditfilesystem"></a>**Audit/ObjectAccess_AuditFileSystem**  
+<!-- ObjectAccess_AuditFileShare-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Audit File Share |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Object Access |
+<!-- ObjectAccess_AuditFileShare-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ObjectAccess_AuditFileShare-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ObjectAccess_AuditFileShare-Examples-End -->
 
+<!-- ObjectAccess_AuditFileShare-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ObjectAccess_AuditFileSystem-Begin -->
+## ObjectAccess_AuditFileSystem
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ObjectAccess_AuditFileSystem-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- ObjectAccess_AuditFileSystem-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ObjectAccess_AuditFileSystem-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/ObjectAccess_AuditFileSystem
+```
+<!-- ObjectAccess_AuditFileSystem-OmaUri-End -->
 
-<hr/>
+<!-- ObjectAccess_AuditFileSystem-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit user attempts to access file system objects. A security audit event is generated only for objects that have system access control lists (SACL) specified, and only if the type of access requested, such as Write, Read, or Modify and the account making the request match the settings in the SACL. For more information about enabling object access auditing, see< https://go.microsoft.com/fwlink/?LinkId=122083>.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit user attempts to access file system objects. A security audit event is generated only for objects that have system access control lists (SACL) specified, and only if the type of access requested, such as Write, Read, or Modify and the account making the request match the settings in the SACL. For more information about enabling object access auditing, see [Apply a basic audit policy on a file or folder](/windows/security/threat-protection/auditing/apply-a-basic-audit-policy-on-a-file-or-folder).
+- If you configure this policy setting, an audit event is generated each time an account accesses a file system object with a matching SACL. Success audits record successful attempts and Failure audits record unsuccessful attempts.
 
-If you configure this policy setting, an audit event is generated each time an account accesses a file system object with a matching SACL. Success audits record successful attempts and Failure audits record unsuccessful attempts.
-If you do not configure this policy setting, no audit event is generated when an account accesses a file system object with a matching SACL.
+- If you don't configure this policy setting, no audit event is generated when an account accesses a file system object with a matching SACL.
 
-> [!Note]
+> [!NOTE]
 > You can set a SACL on a file system object using the Security tab in that object's Properties dialog box.
+<!-- ObjectAccess_AuditFileSystem-Description-End -->
 
+<!-- ObjectAccess_AuditFileSystem-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Depends on how the file system SACLs are configured.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit File System*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
+<!-- ObjectAccess_AuditFileSystem-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-<!--/SupportedValues-->
-<!--Example-->
+<!-- ObjectAccess_AuditFileSystem-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ObjectAccess_AuditFileSystem-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- ObjectAccess_AuditFileSystem-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- ObjectAccess_AuditFileSystem-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="audit-objectaccess-auditfilteringplatformconnection"></a>**Audit/ObjectAccess_AuditFilteringPlatformConnection**  
+<!-- ObjectAccess_AuditFileSystem-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Audit File System |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Object Access |
+<!-- ObjectAccess_AuditFileSystem-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ObjectAccess_AuditFileSystem-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ObjectAccess_AuditFileSystem-Examples-End -->
 
+<!-- ObjectAccess_AuditFileSystem-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ObjectAccess_AuditFilteringPlatformConnection-Begin -->
+## ObjectAccess_AuditFilteringPlatformConnection
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ObjectAccess_AuditFilteringPlatformConnection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- ObjectAccess_AuditFilteringPlatformConnection-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ObjectAccess_AuditFilteringPlatformConnection-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/ObjectAccess_AuditFilteringPlatformConnection
+```
+<!-- ObjectAccess_AuditFilteringPlatformConnection-OmaUri-End -->
 
-<hr/>
+<!-- ObjectAccess_AuditFilteringPlatformConnection-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit connections that are allowed or blocked by the Windows Filtering Platform (WFP). The following events are included: The Windows Firewall Service blocks an application from accepting incoming connections on the network. The WFP allows a connection. The WFP blocks a connection. The WFP permits a bind to a local port. The WFP blocks a bind to a local port. The WFP allows a connection. The WFP blocks a connection. The WFP permits an application or service to listen on a port for incoming connections. The WFP blocks an application or service to listen on a port for incoming connections.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit connections that are allowed or blocked by the Windows Filtering Platform (WFP). 
-The following events are included:  
-- The Windows Firewall Service blocks an application from accepting incoming connections on the network.
-- The WFP allows a connection.
-- The WFP blocks a connection.
-- The WFP permits a bind to a local port.
-- The WFP blocks a bind to a local port.
-- The WFP allows a connection.
-- The WFP blocks a connection.
-- The WFP permits an application or service to listen on a port for incoming connections.
-- The WFP blocks an application or service to listen on a port for incoming connections.
+- If you configure this policy setting, an audit event is generated when connections are allowed or blocked by the WFP. Success audits record events generated when connections are allowed and Failure audits record events generated when connections are blocked.
 
-If you configure this policy setting, an audit event is generated when connections are allowed or blocked by the WFP. Success audits record events generated when connections are allowed and Failure audits record events generated when connections are blocked.
+- If you don't configure this policy setting, no audit event is generated when connected are allowed or blocked by the WFP.
+<!-- ObjectAccess_AuditFilteringPlatformConnection-Description-End -->
 
-If you do not configure this policy setting, no audit event is generated when connected are allowed or blocked by the WFP.
-
+<!-- ObjectAccess_AuditFilteringPlatformConnection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: High.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Filtering Platform Connection*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
+<!-- ObjectAccess_AuditFilteringPlatformConnection-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-<!--/SupportedValues-->
-<!--Example-->
+<!-- ObjectAccess_AuditFilteringPlatformConnection-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ObjectAccess_AuditFilteringPlatformConnection-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- ObjectAccess_AuditFilteringPlatformConnection-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- ObjectAccess_AuditFilteringPlatformConnection-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="audit-objectaccess-auditfilteringplatformpacketdrop"></a>**Audit/ObjectAccess_AuditFilteringPlatformPacketDrop**  
+<!-- ObjectAccess_AuditFilteringPlatformConnection-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Audit Filtering Platform Connection |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Object Access |
+<!-- ObjectAccess_AuditFilteringPlatformConnection-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ObjectAccess_AuditFilteringPlatformConnection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ObjectAccess_AuditFilteringPlatformConnection-Examples-End -->
 
+<!-- ObjectAccess_AuditFilteringPlatformConnection-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ObjectAccess_AuditFilteringPlatformPacketDrop-Begin -->
+## ObjectAccess_AuditFilteringPlatformPacketDrop
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ObjectAccess_AuditFilteringPlatformPacketDrop-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- ObjectAccess_AuditFilteringPlatformPacketDrop-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ObjectAccess_AuditFilteringPlatformPacketDrop-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/ObjectAccess_AuditFilteringPlatformPacketDrop
+```
+<!-- ObjectAccess_AuditFilteringPlatformPacketDrop-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- ObjectAccess_AuditFilteringPlatformPacketDrop-Description-Begin -->
+<!-- Description-Source-DDF -->
 This policy setting allows you to audit packets that are dropped by Windows Filtering Platform (WFP).
+<!-- ObjectAccess_AuditFilteringPlatformPacketDrop-Description-End -->
 
+<!-- ObjectAccess_AuditFilteringPlatformPacketDrop-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: High.
+<!-- ObjectAccess_AuditFilteringPlatformPacketDrop-Editable-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Filtering Platform Packet Drop*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
+<!-- ObjectAccess_AuditFilteringPlatformPacketDrop-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ObjectAccess_AuditFilteringPlatformPacketDrop-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- ObjectAccess_AuditFilteringPlatformPacketDrop-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- ObjectAccess_AuditFilteringPlatformPacketDrop-AllowedValues-End -->
 
-<hr/>
+<!-- ObjectAccess_AuditFilteringPlatformPacketDrop-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="audit-objectaccess-audithandlemanipulation"></a>**Audit/ObjectAccess_AuditHandleManipulation**  
+| Name | Value |
+|:--|:--|
+| Name | Audit Filtering Platform Packet Drop |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Object Access |
+<!-- ObjectAccess_AuditFilteringPlatformPacketDrop-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- ObjectAccess_AuditFilteringPlatformPacketDrop-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ObjectAccess_AuditFilteringPlatformPacketDrop-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ObjectAccess_AuditFilteringPlatformPacketDrop-End -->
 
+<!-- ObjectAccess_AuditHandleManipulation-Begin -->
+## ObjectAccess_AuditHandleManipulation
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ObjectAccess_AuditHandleManipulation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- ObjectAccess_AuditHandleManipulation-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ObjectAccess_AuditHandleManipulation-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/ObjectAccess_AuditHandleManipulation
+```
+<!-- ObjectAccess_AuditHandleManipulation-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- ObjectAccess_AuditHandleManipulation-Description-Begin -->
+<!-- Description-Source-DDF -->
 This policy setting allows you to audit events generated when a handle to an object is opened or closed. Only objects with a matching system access control list (SACL) generate security audit events.
 
-If you configure this policy setting, an audit event is generated when a handle is manipulated. Success audits record successful attempts and Failure audits record unsuccessful attempts.
-If you do not configure this policy setting, no audit event is generated when a handle is manipulated.
+- If you configure this policy setting, an audit event is generated when a handle is manipulated. Success audits record successful attempts and Failure audits record unsuccessful attempts.
 
-> [!Note]
-> Events in this subcategory generate events only for object types where the corresponding Object Access subcategory is enabled. For example, if File system object access is enabled, handle manipulation security audit events are generated. If Registry object access is not enabled, handle manipulation security audit events will not be generated.
+- If you don't configure this policy setting, no audit event is generated when a handle is manipulated.
 
+> [!NOTE]
+> Events in this subcategory generate events only for object types where the corresponding Object Access subcategory is enabled. For example, if File system object access is enabled, handle manipulation security audit events are generated. If Registry object access isn't enabled, handle manipulation security audit events won't be generated.
+<!-- ObjectAccess_AuditHandleManipulation-Description-End -->
+
+<!-- ObjectAccess_AuditHandleManipulation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Depends on how SACLs are configured.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Handle Manipulation*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
+<!-- ObjectAccess_AuditHandleManipulation-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-<!--/SupportedValues-->
-<!--Example-->
+<!-- ObjectAccess_AuditHandleManipulation-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ObjectAccess_AuditHandleManipulation-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- ObjectAccess_AuditHandleManipulation-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- ObjectAccess_AuditHandleManipulation-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="audit-objectaccess-auditkernelobject"></a>**Audit/ObjectAccess_AuditKernelObject**  
+<!-- ObjectAccess_AuditHandleManipulation-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Audit Handle Manipulation |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Object Access |
+<!-- ObjectAccess_AuditHandleManipulation-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ObjectAccess_AuditHandleManipulation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ObjectAccess_AuditHandleManipulation-Examples-End -->
 
+<!-- ObjectAccess_AuditHandleManipulation-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ObjectAccess_AuditKernelObject-Begin -->
+## ObjectAccess_AuditKernelObject
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ObjectAccess_AuditKernelObject-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- ObjectAccess_AuditKernelObject-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ObjectAccess_AuditKernelObject-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/ObjectAccess_AuditKernelObject
+```
+<!-- ObjectAccess_AuditKernelObject-OmaUri-End -->
 
-<hr/>
+<!-- ObjectAccess_AuditKernelObject-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit attempts to access the kernel, which include mutexes and semaphores. Only kernel objects with a matching system access control list (SACL) generate security audit events.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit attempts to access the kernel, which includes mutexes and semaphores. 
-Only kernel objects with a matching system access control list (SACL) generate security audit events.
-
-> [!Note]
+> [!NOTE]
 > The Audit: Audit the access of global system objects policy setting controls the default SACL of kernel objects.
+<!-- ObjectAccess_AuditKernelObject-Description-End -->
 
+<!-- ObjectAccess_AuditKernelObject-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: High if auditing access of global system objects is enabled.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Kernel Object*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
+<!-- ObjectAccess_AuditKernelObject-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-<!--/SupportedValues-->
-<!--Example-->
+<!-- ObjectAccess_AuditKernelObject-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ObjectAccess_AuditKernelObject-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- ObjectAccess_AuditKernelObject-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- ObjectAccess_AuditKernelObject-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="audit-objectaccess-auditotherobjectaccessevents"></a>**Audit/ObjectAccess_AuditOtherObjectAccessEvents**  
+<!-- ObjectAccess_AuditKernelObject-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Audit Kernel Object |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Object Access |
+<!-- ObjectAccess_AuditKernelObject-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ObjectAccess_AuditKernelObject-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ObjectAccess_AuditKernelObject-Examples-End -->
 
+<!-- ObjectAccess_AuditKernelObject-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ObjectAccess_AuditOtherObjectAccessEvents-Begin -->
+## ObjectAccess_AuditOtherObjectAccessEvents
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ObjectAccess_AuditOtherObjectAccessEvents-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- ObjectAccess_AuditOtherObjectAccessEvents-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ObjectAccess_AuditOtherObjectAccessEvents-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/ObjectAccess_AuditOtherObjectAccessEvents
+```
+<!-- ObjectAccess_AuditOtherObjectAccessEvents-OmaUri-End -->
 
-<hr/>
+<!-- ObjectAccess_AuditOtherObjectAccessEvents-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by the management of task scheduler jobs or COM+ objects. For scheduler jobs, the following are audited: Job created. Job deleted. Job enabled. Job disabled. Job updated. For COM+ objects, the following are audited: Catalog object added. Catalog object updated. Catalog object deleted.
+<!-- ObjectAccess_AuditOtherObjectAccessEvents-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by the management of task scheduler jobs or COM+ objects. 
-For scheduler jobs, the following are audited:  
-- Job created.
-- Job deleted.
-- Job enabled.
-- Job disabled.
-- Job updated.
-
-For COM+ objects, the following are audited:  
-- Catalog object added.
-- Catalog object updated.
-- Catalog object deleted.
-
+<!-- ObjectAccess_AuditOtherObjectAccessEvents-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Other Object Access Events*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
+<!-- ObjectAccess_AuditOtherObjectAccessEvents-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-<!--/SupportedValues-->
-<!--Example-->
+<!-- ObjectAccess_AuditOtherObjectAccessEvents-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ObjectAccess_AuditOtherObjectAccessEvents-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- ObjectAccess_AuditOtherObjectAccessEvents-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- ObjectAccess_AuditOtherObjectAccessEvents-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="audit-objectaccess-auditregistry"></a>**Audit/ObjectAccess_AuditRegistry**  
+<!-- ObjectAccess_AuditOtherObjectAccessEvents-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Audit Other Object Access Events |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Object Access |
+<!-- ObjectAccess_AuditOtherObjectAccessEvents-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ObjectAccess_AuditOtherObjectAccessEvents-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ObjectAccess_AuditOtherObjectAccessEvents-Examples-End -->
 
+<!-- ObjectAccess_AuditOtherObjectAccessEvents-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ObjectAccess_AuditRegistry-Begin -->
+## ObjectAccess_AuditRegistry
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ObjectAccess_AuditRegistry-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- ObjectAccess_AuditRegistry-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ObjectAccess_AuditRegistry-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/ObjectAccess_AuditRegistry
+```
+<!-- ObjectAccess_AuditRegistry-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- ObjectAccess_AuditRegistry-Description-Begin -->
+<!-- Description-Source-DDF -->
 This policy setting allows you to audit attempts to access registry objects. A security audit event is generated only for objects that have system access control lists (SACLs) specified, and only if the type of access requested, such as Read, Write, or Modify, and the account making the request match the settings in the SACL.
 
-If you configure this policy setting, an audit event is generated each time an account accesses a registry object with a matching SACL. Success audits record successful attempts and Failure audits record unsuccessful attempts.
-If you do not configure this policy setting, no audit event is generated when an account accesses a registry object with a matching SACL.
+- If you configure this policy setting, an audit event is generated each time an account accesses a registry object with a matching SACL. Success audits record successful attempts and Failure audits record unsuccessful attempts.
 
-> [!Note]
+- If you don't configure this policy setting, no audit event is generated when an account accesses a registry object with a matching SACL.
+
+> [!NOTE]
 > You can set a SACL on a registry object using the Permissions dialog box.
+<!-- ObjectAccess_AuditRegistry-Description-End -->
 
+<!-- ObjectAccess_AuditRegistry-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Depends on how registry SACLs are configured.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Registry*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
+<!-- ObjectAccess_AuditRegistry-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-<!--/SupportedValues-->
-<!--Example-->
+<!-- ObjectAccess_AuditRegistry-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ObjectAccess_AuditRegistry-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- ObjectAccess_AuditRegistry-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- ObjectAccess_AuditRegistry-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="audit-objectaccess-auditremovablestorage"></a>**Audit/ObjectAccess_AuditRemovableStorage**  
+<!-- ObjectAccess_AuditRegistry-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Audit Registry |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Object Access |
+<!-- ObjectAccess_AuditRegistry-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ObjectAccess_AuditRegistry-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ObjectAccess_AuditRegistry-Examples-End -->
 
+<!-- ObjectAccess_AuditRegistry-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ObjectAccess_AuditRemovableStorage-Begin -->
+## ObjectAccess_AuditRemovableStorage
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ObjectAccess_AuditRemovableStorage-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- ObjectAccess_AuditRemovableStorage-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ObjectAccess_AuditRemovableStorage-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/ObjectAccess_AuditRemovableStorage
+```
+<!-- ObjectAccess_AuditRemovableStorage-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- ObjectAccess_AuditRemovableStorage-Description-Begin -->
+<!-- Description-Source-DDF -->
 This policy setting allows you to audit user attempts to access file system objects on a removable storage device. A security audit event is generated only for all objects for all types of access requested.
 
-If you configure this policy setting, an audit event is generated each time an account accesses a file system object on a removable storage. Success audits record successful attempts and Failure audits record unsuccessful attempts.
+- If you configure this policy setting, an audit event is generated each time an account accesses a file system object on a removable storage. Success audits record successful attempts and Failure audits record unsuccessful attempts.
 
-If you do not configure this policy setting, no audit event is generated when an account accesses a file system object on a removable storage.
+- If you don't configure this policy setting, no audit event is generated when an account accesses a file system object on a removable storage.
+<!-- ObjectAccess_AuditRemovableStorage-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Removable Storage*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
+<!-- ObjectAccess_AuditRemovableStorage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ObjectAccess_AuditRemovableStorage-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-<!--/SupportedValues-->
-<!--Example-->
+<!-- ObjectAccess_AuditRemovableStorage-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ObjectAccess_AuditRemovableStorage-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- ObjectAccess_AuditRemovableStorage-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- ObjectAccess_AuditRemovableStorage-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="audit-objectaccess-auditsam"></a>**Audit/ObjectAccess_AuditSAM**  
+<!-- ObjectAccess_AuditRemovableStorage-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Audit Removable Storage |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Object Access |
+<!-- ObjectAccess_AuditRemovableStorage-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ObjectAccess_AuditRemovableStorage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ObjectAccess_AuditRemovableStorage-Examples-End -->
 
+<!-- ObjectAccess_AuditRemovableStorage-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ObjectAccess_AuditSAM-Begin -->
+## ObjectAccess_AuditSAM
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ObjectAccess_AuditSAM-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- ObjectAccess_AuditSAM-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ObjectAccess_AuditSAM-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/ObjectAccess_AuditSAM
+```
+<!-- ObjectAccess_AuditSAM-OmaUri-End -->
 
-<hr/>
+<!-- ObjectAccess_AuditSAM-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by attempts to access to Security Accounts Manager (SAM) objects. SAM objects include the following: SAM_ALIAS -- A local group. SAM_GROUP -- A group that isn't a local group. SAM_USER - A user account. SAM_DOMAIN - A domain. SAM_SERVER - A computer account.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by attempts to access to Security Accounts Manager (SAM) objects.
-SAM objects include the following:  
-- SAM_ALIAS -- A local group.
-- SAM_GROUP -- A group that is not a local group.
-- SAM_USER – A user account.
-- SAM_DOMAIN – A domain.
-- SAM_SERVER – A computer account.
+- If you configure this policy setting, an audit event is generated when an attempt to access a kernel object is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
 
-If you configure this policy setting, an audit event is generated when an attempt to access a kernel object is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
-If you do not configure this policy setting, no audit event is generated when an attempt to access a kernel object is made.
+- If you don't configure this policy setting, no audit event is generated when an attempt to access a kernel object is made.
 
-> [!Note]
-> Only the System Access Control List (SACL) for SAM_SERVER can be modified.
+> [!NOTE]
+> Only the System Access Control List (SACL) for SAM_SERVER can be modified. Volume: High on domain controllers.
+<!-- ObjectAccess_AuditSAM-Description-End -->
 
-Volume: High on domain controllers. For information about reducing the amount of events generated in this subcategory, see [article 841001 in the Microsoft Knowledge Base](https://go.microsoft.com/fwlink/?LinkId=121698).
+<!-- ObjectAccess_AuditSAM-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+Volume: High on domain controllers. For more information about reducing the number of events generated by auditing the access of global system objects, see [Audit the access of global system objects](/windows/security/threat-protection/security-policy-settings/audit-audit-the-access-of-global-system-objects).
+<!-- ObjectAccess_AuditSAM-Editable-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit SAM*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Object Access*
+<!-- ObjectAccess_AuditSAM-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- ObjectAccess_AuditSAM-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- ObjectAccess_AuditSAM-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- ObjectAccess_AuditSAM-AllowedValues-End -->
 
-<hr/>
+<!-- ObjectAccess_AuditSAM-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="audit-policychange-auditauthenticationpolicychange"></a>**Audit/PolicyChange_AuditAuthenticationPolicyChange**  
+| Name | Value |
+|:--|:--|
+| Name | Audit SAM |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Object Access |
+<!-- ObjectAccess_AuditSAM-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- ObjectAccess_AuditSAM-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ObjectAccess_AuditSAM-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ObjectAccess_AuditSAM-End -->
 
+<!-- PolicyChange_AuditAuthenticationPolicyChange-Begin -->
+## PolicyChange_AuditAuthenticationPolicyChange
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PolicyChange_AuditAuthenticationPolicyChange-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- PolicyChange_AuditAuthenticationPolicyChange-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PolicyChange_AuditAuthenticationPolicyChange-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/PolicyChange_AuditAuthenticationPolicyChange
+```
+<!-- PolicyChange_AuditAuthenticationPolicyChange-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PolicyChange_AuditAuthenticationPolicyChange-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by changes to the authentication policy such as the following: Creation of forest and domain trusts. Modification of forest and domain trusts. Removal of forest and domain trusts. Changes to Kerberos policy under Computer Configuration\Windows Settings\Security Settings\Account Policies\Kerberos Policy. Granting of any of the following user rights to a user or group: Access This Computer From the Network. Allow Logon Locally. Allow Logon Through Terminal Services. Logon as a Batch Job. Logon a Service. Namespace collision. For example, when a new trust has the same name as an existing namespace name.
 
-<hr/>
+- If you configure this policy setting, an audit event is generated when an attempt to change the authentication policy is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by changes to the authentication policy, such as the following:  
-- Creation of forest and domain trusts.
-- Modification of forest and domain trusts.
-- Removal of forest and domain trusts.
-- Changes to Kerberos policy under Computer Configuration\Windows Settings\Security Settings\Account Policies\Kerberos Policy.
-- Granting of any of the following user rights to a user or group:  
-    - Access This Computer From the Network.
-    - Allow Logon Locally.
-    - Allow Logon Through Terminal Services.
-    - Logon as a Batch Job.
-    - Logon a Service.
-- Namespace collision. For example, when a new trust has the same name as an existing namespace name.
+- If you don't configure this policy setting, no audit event is generated when the authentication policy is changed.
 
-If you configure this policy setting, an audit event is generated when an attempt to change the authentication policy is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
-If you do not configure this policy setting, no audit event is generated when the authentication policy is changed.
+> [!NOTE]
+> The security audit event is logged when the group policy is applied. It doesn't occur at the time when the settings are modified.
+<!-- PolicyChange_AuditAuthenticationPolicyChange-Description-End -->
 
-> [!Note]
-> The security audit event is logged when the group policy is applied. It does not occur at the time when the settings are modified.
-
+<!-- PolicyChange_AuditAuthenticationPolicyChange-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Authentication Policy Change*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Policy Change*
+<!-- PolicyChange_AuditAuthenticationPolicyChange-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0—Off/None
-- 1 (default)—Success
-- 2—Failure
-- 3—Success+Failure
+<!-- PolicyChange_AuditAuthenticationPolicyChange-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- PolicyChange_AuditAuthenticationPolicyChange-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- PolicyChange_AuditAuthenticationPolicyChange-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 | Off/None. |
+| 1 (Default) | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- PolicyChange_AuditAuthenticationPolicyChange-AllowedValues-End -->
 
-<hr/>
+<!-- PolicyChange_AuditAuthenticationPolicyChange-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="audit-policychange-auditauthorizationpolicychange"></a>**Audit/PolicyChange_AuditAuthorizationPolicyChange**  
+| Name | Value |
+|:--|:--|
+| Name | Audit Authentication Policy Change |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Policy Change |
+<!-- PolicyChange_AuditAuthenticationPolicyChange-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- PolicyChange_AuditAuthenticationPolicyChange-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PolicyChange_AuditAuthenticationPolicyChange-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PolicyChange_AuditAuthenticationPolicyChange-End -->
 
+<!-- PolicyChange_AuditAuthorizationPolicyChange-Begin -->
+## PolicyChange_AuditAuthorizationPolicyChange
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PolicyChange_AuditAuthorizationPolicyChange-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- PolicyChange_AuditAuthorizationPolicyChange-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PolicyChange_AuditAuthorizationPolicyChange-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/PolicyChange_AuditAuthorizationPolicyChange
+```
+<!-- PolicyChange_AuditAuthorizationPolicyChange-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PolicyChange_AuditAuthorizationPolicyChange-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by changes to the authorization policy such as the following: Assignment of user rights (privileges), such as SeCreateTokenPrivilege, that aren't audited through the "Authentication Policy Change" subcategory. Removal of user rights (privileges), such as SeCreateTokenPrivilege, that aren't audited through the "Authentication Policy Change" subcategory. Changes in the Encrypted File System (EFS) policy. Changes to the Resource attributes of an object. Changes to the Central Access Policy (CAP) applied to an object.
 
-<hr/>
+- If you configure this policy setting, an audit event is generated when an attempt to change the authorization policy is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by changes to the authorization policy, such as the following:  
-- Assignment of user rights (privileges), such as SeCreateTokenPrivilege, that are not audited through the “Authentication Policy Change” subcategory.
-- Removal of user rights (privileges), such as SeCreateTokenPrivilege, that are not audited through the “Authentication Policy Change” subcategory.
-- Changes in the Encrypted File System (EFS) policy.
-- Changes to the Resource attributes of an object.
-- Changes to the Central Access Policy (CAP) applied to an object.
+- If you don't configure this policy setting, no audit event is generated when the authorization policy changes.
+<!-- PolicyChange_AuditAuthorizationPolicyChange-Description-End -->
 
-If you configure this policy setting, an audit event is generated when an attempt to change the authorization policy is made. Success audits record successful attempts and Failure audits record unsuccessful attempts.
-If you do not configure this policy setting, no audit event is generated when the authorization policy changes.
-
+<!-- PolicyChange_AuditAuthorizationPolicyChange-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Authorization Policy Change*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Policy Change*
+<!-- PolicyChange_AuditAuthorizationPolicyChange-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
+<!-- PolicyChange_AuditAuthorizationPolicyChange-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- PolicyChange_AuditAuthorizationPolicyChange-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- PolicyChange_AuditAuthorizationPolicyChange-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- PolicyChange_AuditAuthorizationPolicyChange-AllowedValues-End -->
 
-<hr/>
+<!-- PolicyChange_AuditAuthorizationPolicyChange-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="audit-policychange-auditfilteringplatformpolicychange"></a>**Audit/PolicyChange_AuditFilteringPlatformPolicyChange**  
+| Name | Value |
+|:--|:--|
+| Name | Audit Authorization Policy Change |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Policy Change |
+<!-- PolicyChange_AuditAuthorizationPolicyChange-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- PolicyChange_AuditAuthorizationPolicyChange-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PolicyChange_AuditAuthorizationPolicyChange-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PolicyChange_AuditAuthorizationPolicyChange-End -->
 
+<!-- PolicyChange_AuditFilteringPlatformPolicyChange-Begin -->
+## PolicyChange_AuditFilteringPlatformPolicyChange
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PolicyChange_AuditFilteringPlatformPolicyChange-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- PolicyChange_AuditFilteringPlatformPolicyChange-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PolicyChange_AuditFilteringPlatformPolicyChange-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/PolicyChange_AuditFilteringPlatformPolicyChange
+```
+<!-- PolicyChange_AuditFilteringPlatformPolicyChange-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PolicyChange_AuditFilteringPlatformPolicyChange-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by changes to the Windows Filtering Platform (WFP) such as the following: IPsec services status. Changes to IPsec policy settings. Changes to Windows Firewall policy settings. Changes to WFP providers and engine.
 
-<hr/>
+- If you configure this policy setting, an audit event is generated when a change to the WFP is attempted. Success audits record successful attempts and Failure audits record unsuccessful attempts.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by changes to the Windows Filtering Platform (WFP), such as the following: 
-- IPsec services status.
-- Changes to IPsec policy settings.
-- Changes to Windows Firewall policy settings.
-- Changes to WFP providers and engine.
+- If you don't configure this policy setting, no audit event is generated when a change occurs to the WFP.
+<!-- PolicyChange_AuditFilteringPlatformPolicyChange-Description-End -->
 
-If you configure this policy setting, an audit event is generated when a change to the WFP is attempted. Success audits record successful attempts and Failure audits record unsuccessful attempts.
-If you do not configure this policy setting, no audit event is generated when a change occurs to the WFP.
-
+<!-- PolicyChange_AuditFilteringPlatformPolicyChange-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Filtering Platform Policy Change*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Policy Change*
+<!-- PolicyChange_AuditFilteringPlatformPolicyChange-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
+<!-- PolicyChange_AuditFilteringPlatformPolicyChange-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- PolicyChange_AuditFilteringPlatformPolicyChange-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- PolicyChange_AuditFilteringPlatformPolicyChange-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- PolicyChange_AuditFilteringPlatformPolicyChange-AllowedValues-End -->
 
-<hr/>
+<!-- PolicyChange_AuditFilteringPlatformPolicyChange-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="audit-policychange-auditmpssvcrulelevelpolicychange"></a>**Audit/PolicyChange_AuditMPSSVCRuleLevelPolicyChange**  
+| Name | Value |
+|:--|:--|
+| Name | Audit Filtering Platform Policy Change |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Policy Change |
+<!-- PolicyChange_AuditFilteringPlatformPolicyChange-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- PolicyChange_AuditFilteringPlatformPolicyChange-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PolicyChange_AuditFilteringPlatformPolicyChange-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PolicyChange_AuditFilteringPlatformPolicyChange-End -->
 
+<!-- PolicyChange_AuditMPSSVCRuleLevelPolicyChange-Begin -->
+## PolicyChange_AuditMPSSVCRuleLevelPolicyChange
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PolicyChange_AuditMPSSVCRuleLevelPolicyChange-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- PolicyChange_AuditMPSSVCRuleLevelPolicyChange-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PolicyChange_AuditMPSSVCRuleLevelPolicyChange-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/PolicyChange_AuditMPSSVCRuleLevelPolicyChange
+```
+<!-- PolicyChange_AuditMPSSVCRuleLevelPolicyChange-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PolicyChange_AuditMPSSVCRuleLevelPolicyChange-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by changes in policy rules used by the Microsoft Protection Service (MPSSVC). This service is used by Windows Firewall. Events include the following: Reporting of active policies when Windows Firewall service starts. Changes to Windows Firewall rules. Changes to Windows Firewall exception list. Changes to Windows Firewall settings. Rules ignored or not applied by Windows Firewall Service. Changes to Windows Firewall Group Policy settings.
 
-<hr/>
+- If you configure this policy setting, an audit event is generated by attempts to change policy rules used by the MPSSVC. Success audits record successful attempts and Failure audits record unsuccessful attempts.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by changes in policy rules used by the Microsoft Protection Service (MPSSVC). This service is used by Windows Firewall. 
-Events include the following:  
-- Reporting of active policies when Windows Firewall service starts.
-- Changes to Windows Firewall rules.
-- Changes to Windows Firewall exception list.
-- Changes to Windows Firewall settings.
-- Rules ignored or not applied by Windows Firewall Service.
-- Changes to Windows Firewall Group Policy settings.
+- If you don't configure this policy setting, no audit event is generated by changes in policy rules used by the MPSSVC.
+<!-- PolicyChange_AuditMPSSVCRuleLevelPolicyChange-Description-End -->
 
-If you configure this policy setting, an audit event is generated by attempts to change policy rules used by the MPSSVC. Success audits record successful attempts and Failure audits record unsuccessful attempts.
-If you do not configure this policy setting, no audit event is generated by changes in policy rules used by the MPSSVC.
-
+<!-- PolicyChange_AuditMPSSVCRuleLevelPolicyChange-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit MPSSVC Rule Level Policy Change*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Policy Change*
+<!-- PolicyChange_AuditMPSSVCRuleLevelPolicyChange-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
+<!-- PolicyChange_AuditMPSSVCRuleLevelPolicyChange-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- PolicyChange_AuditMPSSVCRuleLevelPolicyChange-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- PolicyChange_AuditMPSSVCRuleLevelPolicyChange-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- PolicyChange_AuditMPSSVCRuleLevelPolicyChange-AllowedValues-End -->
 
-<hr/>
+<!-- PolicyChange_AuditMPSSVCRuleLevelPolicyChange-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="audit-policychange-auditotherpolicychangeevents"></a>**Audit/PolicyChange_AuditOtherPolicyChangeEvents**  
+| Name | Value |
+|:--|:--|
+| Name | Audit MPSSVC Rule Level Policy Change |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Policy Change |
+<!-- PolicyChange_AuditMPSSVCRuleLevelPolicyChange-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- PolicyChange_AuditMPSSVCRuleLevelPolicyChange-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PolicyChange_AuditMPSSVCRuleLevelPolicyChange-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PolicyChange_AuditMPSSVCRuleLevelPolicyChange-End -->
 
+<!-- PolicyChange_AuditOtherPolicyChangeEvents-Begin -->
+## PolicyChange_AuditOtherPolicyChangeEvents
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PolicyChange_AuditOtherPolicyChangeEvents-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- PolicyChange_AuditOtherPolicyChangeEvents-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PolicyChange_AuditOtherPolicyChangeEvents-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/PolicyChange_AuditOtherPolicyChangeEvents
+```
+<!-- PolicyChange_AuditOtherPolicyChangeEvents-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PolicyChange_AuditOtherPolicyChangeEvents-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by other security policy changes that aren't audited in the policy change category, such as the following: Trusted Platform Module (TPM) configuration changes. Kernel-mode cryptographic self tests. Cryptographic provider operations. Cryptographic context operations or modifications. Applied Central Access Policies (CAPs) changes. Boot Configuration Data (BCD) modifications.
+<!-- PolicyChange_AuditOtherPolicyChangeEvents-Description-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by other security policy changes that are not audited in the policy change category, such as the following:  
-- Trusted Platform Module (TPM) configuration changes.
-- Kernel-mode cryptographic self tests.
-- Cryptographic provider operations.
-- Cryptographic context operations or modifications.
-- Applied Central Access Policies (CAPs) changes.
-- Boot Configuration Data (BCD) modifications.
-
+<!-- PolicyChange_AuditOtherPolicyChangeEvents-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Other Policy Change Events*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Policy Change*
+<!-- PolicyChange_AuditOtherPolicyChangeEvents-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
+<!-- PolicyChange_AuditOtherPolicyChangeEvents-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- PolicyChange_AuditOtherPolicyChangeEvents-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- PolicyChange_AuditOtherPolicyChangeEvents-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- PolicyChange_AuditOtherPolicyChangeEvents-AllowedValues-End -->
 
-<hr/>
+<!-- PolicyChange_AuditOtherPolicyChangeEvents-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="audit-policychange-auditpolicychange"></a>**Audit/PolicyChange_AuditPolicyChange**  
+| Name | Value |
+|:--|:--|
+| Name | Audit Other Policy Change Events |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Policy Change |
+<!-- PolicyChange_AuditOtherPolicyChangeEvents-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- PolicyChange_AuditOtherPolicyChangeEvents-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PolicyChange_AuditOtherPolicyChangeEvents-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PolicyChange_AuditOtherPolicyChangeEvents-End -->
 
+<!-- PolicyChange_AuditPolicyChange-Begin -->
+## PolicyChange_AuditPolicyChange
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PolicyChange_AuditPolicyChange-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- PolicyChange_AuditPolicyChange-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PolicyChange_AuditPolicyChange-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/PolicyChange_AuditPolicyChange
+```
+<!-- PolicyChange_AuditPolicyChange-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PolicyChange_AuditPolicyChange-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit changes in the security audit policy settings such as the following: Settings permissions and audit settings on the Audit Policy object. Changes to the system audit policy. Registration of security event sources. De-registration of security event sources. Changes to the per-user audit settings. Changes to the value of CrashOnAuditFail. Changes to the system access control list on a file system or registry object. Changes to the Special Groups list.
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit changes in the security audit policy settings, such as the following:  
-- Settings permissions and audit settings on the Audit Policy object.
-- Changes to the system audit policy.
-- Registration of security event sources.
-- De-registration of security event sources.
-- Changes to the per-user audit settings.
-- Changes to the value of CrashOnAuditFail.
-- Changes to the system access control list on a file system or registry object.
-- Changes to the Special Groups list.
-
-> [!Note]
+> [!NOTE]
 > System access control list (SACL) change auditing is done when a SACL for an object changes and the policy change category is enabled. Discretionary access control list (DACL) and ownership changes are audited when object access auditing is enabled and the object's SACL is configured for auditing of DACL/Owner change.
+<!-- PolicyChange_AuditPolicyChange-Description-End -->
 
+<!-- PolicyChange_AuditPolicyChange-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Policy Change*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Policy Change*
+<!-- PolicyChange_AuditPolicyChange-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0—Off/None
-- 1 (default)—Success
-- 2—Failure
-- 3—Success+Failure
+<!-- PolicyChange_AuditPolicyChange-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- PolicyChange_AuditPolicyChange-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- PolicyChange_AuditPolicyChange-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 | Off/None. |
+| 1 (Default) | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- PolicyChange_AuditPolicyChange-AllowedValues-End -->
 
-<hr/>
+<!-- PolicyChange_AuditPolicyChange-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="audit-privilegeuse-auditnonsensitiveprivilegeuse"></a>**Audit/PrivilegeUse_AuditNonSensitivePrivilegeUse**  
+| Name | Value |
+|:--|:--|
+| Name | Audit Policy Change |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Policy Change |
+<!-- PolicyChange_AuditPolicyChange-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- PolicyChange_AuditPolicyChange-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PolicyChange_AuditPolicyChange-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PolicyChange_AuditPolicyChange-End -->
 
+<!-- PrivilegeUse_AuditNonSensitivePrivilegeUse-Begin -->
+## PrivilegeUse_AuditNonSensitivePrivilegeUse
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PrivilegeUse_AuditNonSensitivePrivilegeUse-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- PrivilegeUse_AuditNonSensitivePrivilegeUse-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PrivilegeUse_AuditNonSensitivePrivilegeUse-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/PrivilegeUse_AuditNonSensitivePrivilegeUse
+```
+<!-- PrivilegeUse_AuditNonSensitivePrivilegeUse-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PrivilegeUse_AuditNonSensitivePrivilegeUse-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by the use of non-sensitive privileges (user rights). The following privileges are non-sensitive: Access Credential Manager as a trusted caller. Access this computer from the network. Add workstations to domain. Adjust memory quotas for a process. Allow log on locally. Allow log on through Terminal Services. Bypass traverse checking. Change the system time. Create a pagefile. Create global objects.
+Create permanent shared objects. Create symbolic links. Deny access this computer from the network. Deny log on as a batch job. Deny log on as a service. Deny log on locally. Deny log on through Terminal Services. Force shutdown from a remote system. Increase a process working set. Increase scheduling priority. Lock pages in memory. Log on as a batch job. Log on as a service. Modify an object label. Perform volume maintenance tasks. Profile single process. Profile system performance. Remove computer from docking station. Shut down the system. Synchronize directory service data.
 
-<hr/>
+- If you configure this policy setting, an audit event is generated when a non-sensitive privilege is called. Success audits record successful calls and Failure audits record unsuccessful calls.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by the use of non-sensitive privileges (user rights).
-The following privileges are non-sensitive:  
-- Access Credential Manager as a trusted caller.
-- Access this computer from the network.
-- Add workstations to domain.
-- Adjust memory quotas for a process.
-- Allow log on locally.
-- Allow log on through Terminal Services.
-- Bypass traverse checking.
-- Change the system time.
-- Create a pagefile.
-- Create global objects.
-- Create permanent shared objects.
-- Create symbolic links.
-- Deny access this computer from the network.
-- Deny log on as a batch job.
-- Deny log on as a service.
-- Deny log on locally.
-- Deny log on through Terminal Services.
-- Force shutdown from a remote system.
-- Increase a process working set.
-- Increase scheduling priority.
-- Lock pages in memory.
-- Log on as a batch job.
-- Log on as a service.
-- Modify an object label.
-- Perform volume maintenance tasks.
-- Profile single process.
-- Profile system performance.
-- Remove computer from docking station.
-- Shut down the system.
-- Synchronize directory service data.
+- If you don't configure this policy setting, no audit event is generated when a non-sensitive privilege is called.
+<!-- PrivilegeUse_AuditNonSensitivePrivilegeUse-Description-End -->
 
-If you configure this policy setting, an audit event is generated when a non-sensitive privilege is called. Success audits record successful calls and Failure audits record unsuccessful calls.
-If you do not configure this policy setting, no audit event is generated when a non-sensitive privilege is called.
-
+<!-- PrivilegeUse_AuditNonSensitivePrivilegeUse-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Very High.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Non Sensitive Privilege Use*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Privilege Use*
+<!-- PrivilegeUse_AuditNonSensitivePrivilegeUse-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-<!--/SupportedValues-->
-<!--Example-->
+<!-- PrivilegeUse_AuditNonSensitivePrivilegeUse-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- PrivilegeUse_AuditNonSensitivePrivilegeUse-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- PrivilegeUse_AuditNonSensitivePrivilegeUse-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- PrivilegeUse_AuditNonSensitivePrivilegeUse-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="audit-privilegeuse-auditotherprivilegeuseevents"></a>**Audit/PrivilegeUse_AuditOtherPrivilegeUseEvents**  
+<!-- PrivilegeUse_AuditNonSensitivePrivilegeUse-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Audit Non Sensitive Privilege Use |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Privilege Use |
+<!-- PrivilegeUse_AuditNonSensitivePrivilegeUse-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PrivilegeUse_AuditNonSensitivePrivilegeUse-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PrivilegeUse_AuditNonSensitivePrivilegeUse-Examples-End -->
 
+<!-- PrivilegeUse_AuditNonSensitivePrivilegeUse-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PrivilegeUse_AuditOtherPrivilegeUseEvents-Begin -->
+## PrivilegeUse_AuditOtherPrivilegeUseEvents
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PrivilegeUse_AuditOtherPrivilegeUseEvents-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- PrivilegeUse_AuditOtherPrivilegeUseEvents-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PrivilegeUse_AuditOtherPrivilegeUseEvents-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/PrivilegeUse_AuditOtherPrivilegeUseEvents
+```
+<!-- PrivilegeUse_AuditOtherPrivilegeUseEvents-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- PrivilegeUse_AuditOtherPrivilegeUseEvents-Description-Begin -->
+<!-- Description-Source-DDF -->
 Not used.
+<!-- PrivilegeUse_AuditOtherPrivilegeUseEvents-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Other Privilege Use Events*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Privilege Use*
+<!-- PrivilegeUse_AuditOtherPrivilegeUseEvents-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PrivilegeUse_AuditOtherPrivilegeUseEvents-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-<!--/SupportedValues-->
-<!--Example-->
+<!-- PrivilegeUse_AuditOtherPrivilegeUseEvents-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- PrivilegeUse_AuditOtherPrivilegeUseEvents-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- PrivilegeUse_AuditOtherPrivilegeUseEvents-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- PrivilegeUse_AuditOtherPrivilegeUseEvents-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="audit-privilegeuse-auditsensitiveprivilegeuse"></a>**Audit/PrivilegeUse_AuditSensitivePrivilegeUse**  
+<!-- PrivilegeUse_AuditOtherPrivilegeUseEvents-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Audit Other Privilege Use Events |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Privilege Use |
+<!-- PrivilegeUse_AuditOtherPrivilegeUseEvents-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PrivilegeUse_AuditOtherPrivilegeUseEvents-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PrivilegeUse_AuditOtherPrivilegeUseEvents-Examples-End -->
 
+<!-- PrivilegeUse_AuditOtherPrivilegeUseEvents-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PrivilegeUse_AuditSensitivePrivilegeUse-Begin -->
+## PrivilegeUse_AuditSensitivePrivilegeUse
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PrivilegeUse_AuditSensitivePrivilegeUse-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- PrivilegeUse_AuditSensitivePrivilegeUse-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- PrivilegeUse_AuditSensitivePrivilegeUse-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/PrivilegeUse_AuditSensitivePrivilegeUse
+```
+<!-- PrivilegeUse_AuditSensitivePrivilegeUse-OmaUri-End -->
 
-<hr/>
+<!-- PrivilegeUse_AuditSensitivePrivilegeUse-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated when sensitive privileges (user rights) are used such as the following: A privileged service is called. One of the following privileges are called: Act as part of the operating system. Back up files and directories. Create a token object. Debug programs. Enable computer and user accounts to be trusted for delegation. Generate security audits. Impersonate a client after authentication. Load and unload device drivers. Manage auditing and security log. Modify firmware environment values. Replace a process-level token. Restore files and directories. Take ownership of files or other objects.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated when sensitive privileges (user rights) are used, such as the following:  
-- A privileged service is called.
-- One of the following privileges are called:  
-    - Act as part of the operating system.
-    - Back up files and directories.
-    - Create a token object.
-    - Debug programs.
-    - Enable computer and user accounts to be trusted for delegation.
-    - Generate security audits.
-    - Impersonate a client after authentication.
-    - Load and unload device drivers.
-    - Manage auditing and security log.
-    - Modify firmware environment values.
-    - Replace a process-level token.
-    - Restore files and directories.
-    - Take ownership of files or other objects.
+- If you configure this policy setting, an audit event is generated when sensitive privilege requests are made. Success audits record successful requests and Failure audits record unsuccessful requests.
 
-If you configure this policy setting, an audit event is generated when sensitive privilege requests are made. Success audits record successful requests and Failure audits record unsuccessful requests.
-If you do not configure this policy setting, no audit event is generated when sensitive privilege requests are made.
+- If you don't configure this policy setting, no audit event is generated when sensitive privilege requests are made.
+<!-- PrivilegeUse_AuditSensitivePrivilegeUse-Description-End -->
 
+<!-- PrivilegeUse_AuditSensitivePrivilegeUse-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: High.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Sensitive Privilege Use*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/Privilege Use*
+<!-- PrivilegeUse_AuditSensitivePrivilegeUse-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
-<!--/SupportedValues-->
-<!--Example-->
+<!-- PrivilegeUse_AuditSensitivePrivilegeUse-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- PrivilegeUse_AuditSensitivePrivilegeUse-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- PrivilegeUse_AuditSensitivePrivilegeUse-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- PrivilegeUse_AuditSensitivePrivilegeUse-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="audit-system-auditipsecdriver"></a>**Audit/System_AuditIPsecDriver**  
+<!-- PrivilegeUse_AuditSensitivePrivilegeUse-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Audit Sensitive Privilege Use |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > Privilege Use |
+<!-- PrivilegeUse_AuditSensitivePrivilegeUse-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PrivilegeUse_AuditSensitivePrivilegeUse-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PrivilegeUse_AuditSensitivePrivilegeUse-Examples-End -->
 
+<!-- PrivilegeUse_AuditSensitivePrivilegeUse-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- System_AuditIPsecDriver-Begin -->
+## System_AuditIPsecDriver
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- System_AuditIPsecDriver-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- System_AuditIPsecDriver-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- System_AuditIPsecDriver-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/System_AuditIPsecDriver
+```
+<!-- System_AuditIPsecDriver-OmaUri-End -->
 
-<hr/>
+<!-- System_AuditIPsecDriver-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by the IPsec filter driver such as the following: Startup and shutdown of the IPsec services. Network packets dropped due to integrity check failure. Network packets dropped due to replay check failure. Network packets dropped due to being in plaintext. Network packets received with incorrect Security Parameter Index (SPI). This may indicate that either the network card isn't working correctly or the driver needs to be updated. Inability to process IPsec filters.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by the IPsec filter driver, such as the following:  
-- Startup and shutdown of the IPsec services.
-- Network packets dropped due to integrity check failure.
-- Network packets dropped due to replay check failure.
-- Network packets dropped due to being in plaintext.
-- Network packets received with incorrect Security Parameter Index (SPI). This may indicate that either the network card is not working correctly or the driver needs to be updated.
-- Inability to process IPsec filters.
+- If you configure this policy setting, an audit event is generated on an IPsec filter driver operation. Success audits record successful attempts and Failure audits record unsuccessful attempts.
 
-If you configure this policy setting, an audit event is generated on an IPsec filter driver operation. Success audits record successful attempts and Failure audits record unsuccessful attempts.
-If you do not configure this policy setting, no audit event is generated on an IPSec filter driver operation.
+- If you don't configure this policy setting, no audit event is generated on an IPSec filter driver operation.
+<!-- System_AuditIPsecDriver-Description-End -->
 
+<!-- System_AuditIPsecDriver-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit IPsec Driver*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/System*
+<!-- System_AuditIPsecDriver-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
+<!-- System_AuditIPsecDriver-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- System_AuditIPsecDriver-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- System_AuditIPsecDriver-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- System_AuditIPsecDriver-AllowedValues-End -->
 
-<hr/>
+<!-- System_AuditIPsecDriver-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="audit-system-auditothersystemevents"></a>**Audit/System_AuditOtherSystemEvents**  
+| Name | Value |
+|:--|:--|
+| Name | Audit IPsec Driver |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > System |
+<!-- System_AuditIPsecDriver-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- System_AuditIPsecDriver-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- System_AuditIPsecDriver-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- System_AuditIPsecDriver-End -->
 
+<!-- System_AuditOtherSystemEvents-Begin -->
+## System_AuditOtherSystemEvents
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- System_AuditOtherSystemEvents-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- System_AuditOtherSystemEvents-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- System_AuditOtherSystemEvents-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/System_AuditOtherSystemEvents
+```
+<!-- System_AuditOtherSystemEvents-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- System_AuditOtherSystemEvents-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit any of the following events: Startup and shutdown of the Windows Firewall service and driver. Security policy processing by the Windows Firewall Service. Cryptography key file and migration operations.
+<!-- System_AuditOtherSystemEvents-Description-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit any of the following events:  
-- Startup and shutdown of the Windows Firewall service and driver.
-- Security policy processing by the Windows Firewall Service.
-- Cryptography key file and migration operations.
-
+<!-- System_AuditOtherSystemEvents-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Other System Events*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/System*
+<!-- System_AuditOtherSystemEvents-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0—Off/None
-- 1—Success
-- 2—Failure
-- 3 (default)—Success+Failure
+<!-- System_AuditOtherSystemEvents-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 3 |
+<!-- System_AuditOtherSystemEvents-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- System_AuditOtherSystemEvents-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 (Default) | Success+Failure. |
+<!-- System_AuditOtherSystemEvents-AllowedValues-End -->
 
-<hr/>
+<!-- System_AuditOtherSystemEvents-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="audit-system-auditsecuritystatechange"></a>**Audit/System_AuditSecurityStateChange**  
+| Name | Value |
+|:--|:--|
+| Name | Audit Other System Events |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > System |
+<!-- System_AuditOtherSystemEvents-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- System_AuditOtherSystemEvents-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- System_AuditOtherSystemEvents-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- System_AuditOtherSystemEvents-End -->
 
+<!-- System_AuditSecurityStateChange-Begin -->
+## System_AuditSecurityStateChange
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- System_AuditSecurityStateChange-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- System_AuditSecurityStateChange-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- System_AuditSecurityStateChange-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/System_AuditSecurityStateChange
+```
+<!-- System_AuditSecurityStateChange-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- System_AuditSecurityStateChange-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events generated by changes in the security state of the computer such as the following events: Startup and shutdown of the computer. Change of system time. Recovering the system from CrashOnAuditFail, which is logged after a system restarts when the security event log is full and the CrashOnAuditFail registry entry is configured.
+<!-- System_AuditSecurityStateChange-Description-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events generated by changes in the security state of the computer, such as the following events:  
-- Startup and shutdown of the computer.
-- Change of system time.
-- Recovering the system from CrashOnAuditFail, which is logged after a system restarts when the security event log is full and the CrashOnAuditFail registry entry is configured.
-
+<!-- System_AuditSecurityStateChange-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Security State Change*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/System*
+<!-- System_AuditSecurityStateChange-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0—Off/None
-- 1 (default)—Success
-- 2—Failure
-- 3—Success+Failure
+<!-- System_AuditSecurityStateChange-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- System_AuditSecurityStateChange-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- System_AuditSecurityStateChange-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 | Off/None. |
+| 1 (Default) | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- System_AuditSecurityStateChange-AllowedValues-End -->
 
-<hr/>
+<!-- System_AuditSecurityStateChange-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="audit-system-auditsecuritysystemextension"></a>**Audit/System_AuditSecuritySystemExtension**  
+| Name | Value |
+|:--|:--|
+| Name | Audit Security State Change |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > System |
+<!-- System_AuditSecurityStateChange-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- System_AuditSecurityStateChange-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- System_AuditSecurityStateChange-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- System_AuditSecurityStateChange-End -->
 
+<!-- System_AuditSecuritySystemExtension-Begin -->
+## System_AuditSecuritySystemExtension
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- System_AuditSecuritySystemExtension-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- System_AuditSecuritySystemExtension-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- System_AuditSecuritySystemExtension-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/System_AuditSecuritySystemExtension
+```
+<!-- System_AuditSecuritySystemExtension-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- System_AuditSecuritySystemExtension-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events related to security system extensions or services such as the following: A security system extension, such as an authentication, notification, or security package is loaded and is registered with the Local Security Authority (LSA). It's used to authenticate logon attempts, submit logon requests, and any account or password changes. Examples of security system extensions are Kerberos and NTLM. A service is installed and registered with the Service Control Manager. The audit log contains information about the service name, binary, type, start type, and service account.
 
-<hr/>
+- If you configure this policy setting, an audit event is generated when an attempt is made to load a security system extension. Success audits record successful attempts and Failure audits record unsuccessful attempts.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events related to security system extensions or services, such as the following:  
-- A security system extension, such as an authentication, notification, or security package is loaded and is registered with the Local Security Authority (LSA). It is used to authenticate logon attempts, submit logon requests, and any account or password changes. Examples of security system extensions are Kerberos and NTLM.
-- A service is installed and registered with the Service Control Manager. The audit log contains information about the service name, binary, type, start type, and service account.
+- If you don't configure this policy setting, no audit event is generated when an attempt is made to load a security system extension.
+<!-- System_AuditSecuritySystemExtension-Description-End -->
 
-If you configure this policy setting, an audit event is generated when an attempt is made to load a security system extension. Success audits record successful attempts and Failure audits record unsuccessful attempts.
-If you do not configure this policy setting, no audit event is generated when an attempt is made to load a security system extension.
-
+<!-- System_AuditSecuritySystemExtension-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Low. Security system extension events are generated more often on a domain controller than on client computers or member servers.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit Security System Extension*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/System*
+<!-- System_AuditSecuritySystemExtension-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 (default)—Off/None
-- 1—Success
-- 2—Failure
-- 3—Success+Failure
+<!-- System_AuditSecuritySystemExtension-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- System_AuditSecuritySystemExtension-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- System_AuditSecuritySystemExtension-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 | Success+Failure. |
+<!-- System_AuditSecuritySystemExtension-AllowedValues-End -->
 
-<hr/>
+<!-- System_AuditSecuritySystemExtension-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="audit-system-auditsystemintegrity"></a>**Audit/System_AuditSystemIntegrity**  
+| Name | Value |
+|:--|:--|
+| Name | Audit Security System Extension |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > System |
+<!-- System_AuditSecuritySystemExtension-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- System_AuditSecuritySystemExtension-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- System_AuditSecuritySystemExtension-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- System_AuditSecuritySystemExtension-End -->
 
+<!-- System_AuditSystemIntegrity-Begin -->
+## System_AuditSystemIntegrity
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- System_AuditSystemIntegrity-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1039] and later <br> ✅ Windows 10, version 1809 [10.0.17763.774] and later <br> ✅ Windows 10, version 1903 [10.0.18362.329] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+<!-- System_AuditSystemIntegrity-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- System_AuditSystemIntegrity-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Audit/System_AuditSystemIntegrity
+```
+<!-- System_AuditSystemIntegrity-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- System_AuditSystemIntegrity-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting allows you to audit events that violate the integrity of the security subsystem, such as the following: Events that couldn't be written to the event log because of a problem with the auditing system. A process that uses a local procedure call (LPC) port that isn't valid in an attempt to impersonate a client by replying, reading, or writing to or from a client address space. The detection of a Remote Procedure Call (RPC) that compromises system integrity. The detection of a hash value of an executable file that isn't valid as determined by Code Integrity. Cryptographic operations that compromise system integrity.
+<!-- System_AuditSystemIntegrity-Description-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to audit events that violate the integrity of the security subsystem, such as the following:  
-- Events that could not be written to the event log because of a problem with the auditing system.
-- A process that uses a local procedure call (LPC) port that is not valid in an attempt to impersonate a client by replying, reading, or writing to or from a client address space.
-- The detection of a Remote Procedure Call (RPC) that compromises system integrity.
-- The detection of a hash value of an executable file that is not valid as determined by Code Integrity.
-- Cryptographic operations that compromise system integrity.
-
+<!-- System_AuditSystemIntegrity-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 Volume: Low.
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Audit System Integrity*
--   GP path: *Windows Settings/Security Settings/Advanced Audit Policy Configuration/System Audit Policies/System*
+<!-- System_AuditSystemIntegrity-Editable-End -->
 
-<!--/DbMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0—Off/None
-- 1—Success
-- 2—Failure
-- 3 (default)—Success+Failure
+<!-- System_AuditSystemIntegrity-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 3 |
+<!-- System_AuditSystemIntegrity-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- System_AuditSystemIntegrity-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 | Off/None. |
+| 1 | Success. |
+| 2 | Failure. |
+| 3 (Default) | Success+Failure. |
+<!-- System_AuditSystemIntegrity-AllowedValues-End -->
 
+<!-- System_AuditSystemIntegrity-GpMapping-Begin -->
+**Group policy mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | Audit System Integrity |
+| Path | Windows Settings > Security Settings > Advanced Audit Policy Configuration > System Audit Policies > System |
+<!-- System_AuditSystemIntegrity-GpMapping-End -->
 
-<!--/Policies-->
+<!-- System_AuditSystemIntegrity-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- System_AuditSystemIntegrity-Examples-End -->
+
+<!-- System_AuditSystemIntegrity-End -->
+
+<!-- Audit-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Audit-CspMoreInfo-End -->
+
+<!-- Audit-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

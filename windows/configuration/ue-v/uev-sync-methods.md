@@ -1,16 +1,15 @@
 ---
 title: Sync Methods for UE-V
 description: Learn how User Experience Virtualization (UE-V) service sync methods let you synchronize users’ application and Windows settings with the settings storage location.
-author: greg-lindsay
-ms.pagetype: mdop, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.prod: w10
+author: aczechowski
+ms.prod: windows-client
+ms.collection: tier3
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-configure
 ---
 
 # Sync Methods for UE-V
@@ -28,13 +27,13 @@ This table provides a description of each SyncMethod configuration:
 |------------------------------|---------------------|
 | SyncProvider (Default)       | Settings changes for a specific application or for global Windows desktop settings are saved locally to a cache folder. These changes are then synchronized with the settings storage location when a synchronization trigger event takes place. Pushing out changes will save the local changes to the settings storage path.<br>This default setting is the gold standard for computers. This option attempts to synchronize the setting and times out after a short delay to ensure that the application or operating system startup isn’t delayed for a long period of time.<br>This functionality is also tied to the Scheduled task – Sync Controller Application. The administrator controls the frequency of the Scheduled task. By default, computers synchronize their settings every 30 min after logging on.     |
 | External                     | This configuration method specifies that if UE-V settings are written to a local folder on the user computer, then any external sync engine (such as OneDrive for Business, Work Folders, Sharepoint, or Dropbox) can be used to apply these settings to the different computers that users access.    |
-| None                         | This configuration setting is designed for the Virtual Desktop Infrastructure (VDI) and Streamed Application experience primarily. This setting should be used on computers running the Windows Server operating system in a datacenter, where the connection will always be available.<br>Any settings changes are saved directly to the server. If the network connection to the settings storage path is not available, then the settings changes are cached on the device and are synchronized the next time that the Sync Provider runs. If the settings storage path is not found and the user profile is removed from a pooled VDI environment on logoff, then these settings changes are lost, and the user must reapply the change when the computer can again reach the settings storage path.<br>Apps and OS will wait indefinitely for the location to be present. This could cause App load or OS logon time to dramatically increase if the location is not found. |
+| None                         | This configuration setting is designed for the Virtual Desktop Infrastructure (VDI) and Streamed Application experience primarily. This setting should be used on computers running the Windows Server operating system in a datacenter, where the connection will always be available.<br>Any settings changes are saved directly to the server. If the network connection to the settings storage path isn't available, then the settings changes are cached on the device and are synchronized the next time that the Sync Provider runs. If the settings storage path isn't found and the user profile is removed from a pooled VDI environment on sign out, then these settings changes are lost, and the user must reapply the change when the computer can again reach the settings storage path.<br>Apps and OS will wait indefinitely for the location to be present. This waiting period could cause App load or OS sign-in time to dramatically increase if the location isn't found. |
 
 You can configure the sync method in these ways:
 
 -   Through [Group Policy](uev-configuring-uev-with-group-policy-objects.md) settings
 
--   With the [System Center Configuration Pack](uev-configuring-uev-with-system-center-configuration-manager.md) for UE-V
+-   With the [Configuration Manager Pack](uev-configuring-uev-with-system-center-configuration-manager.md) for UE-V
 
 -   With [Windows PowerShell or Windows Management Instrumentation (WMI)](uev-administering-uev-with-windows-powershell-and-wmi.md)
 

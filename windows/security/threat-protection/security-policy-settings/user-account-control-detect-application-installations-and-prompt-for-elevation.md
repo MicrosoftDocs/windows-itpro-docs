@@ -1,26 +1,26 @@
 ---
-title: User Account Control Detect application installations and prompt for elevation (Windows 10)
+title: User Account Control Detect application installations and prompt for elevation 
 description: Learn about best practices and more for the security policy setting, User Account Control Detect application installations and prompt for elevation.
 ms.assetid: 3f8cb170-ba77-4c9f-abb3-c3ed1ef264fc
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # User Account Control: Detect application installations and prompt for elevation
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **User Account Control: Detect application installations and prompt for elevation** security policy setting.
@@ -38,7 +38,7 @@ Some software might attempt to install itself after being given permission to ru
 
 -   **Disabled**
 
-    Application installation packages that require an elevation of privilege to install are not detected and the user is not prompted for administrative credentials.
+    Application installation packages that require an elevation of privilege to install aren't detected and the user isn't prompted for administrative credentials.
 
 ### Best practices
 
@@ -68,7 +68,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ## Security considerations
 

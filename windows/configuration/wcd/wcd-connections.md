@@ -1,16 +1,15 @@
 ---
 title: Connections (Windows 10)
 description: This section describes the Connections settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: greg-lindsay
+ms.prod: windows-client
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ms.date: 04/30/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
+ms.technology: itpro-configure
 ---
 
 # Connections (Windows Configuration Designer reference)
@@ -26,7 +25,7 @@ Use to configure settings related to various types of phone connections.
 
 For each setting group:
 1. In **Available customizations**, select the setting group (such as **Cellular**), enter a friendly name for the connection, and then click **Add**.
-2. In **Available customizations**, select the name that you just created. 
+2. In **Available customizations**, select the name that you created. 
 
 ## Cellular
 

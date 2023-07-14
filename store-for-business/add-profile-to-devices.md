@@ -1,26 +1,28 @@
 ---
 title: Manage Windows device deployment with Windows Autopilot Deployment
 description: Add an Autopilot profile to devices. Autopilot profiles control what is included in Windows set up experience for your employees.
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
-author: TrudyHa
-ms.author: TrudyHa
-ms.date: 07/21/2021
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: scotv
+ms.date: 05/24/2023
 ms.reviewer: 
-manager: dansimp
 ms.topic: conceptual
 ms.localizationpriority: medium
 ---
 
 # Manage Windows device deployment with Windows Autopilot Deployment
 
-**Applies to**
--   Windows 10
+**Applies to:**
+
+- Windows 10
 
 > [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
+>
+> - The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
+> - In April 2023 the Microsoft Store for Business tab was removed from Microsoft Store apps on Windows 10 and Windows 11 PCs. An interaction with existing MDM and GPO policies may lead to customers seeing errors when accessing the Microsoft Store app. For more information see [Microsoft Store for Business tab removed](manage-access-to-private-store.md#microsoft-store-for-business-tab-removed).
 
 Windows Autopilot simplifies device set up for IT Admins. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows Autopilot](/windows/deployment/windows-autopilot/windows-10-autopilot).
 
@@ -136,11 +138,11 @@ Here's info on some of the errors you might see while working with Autopilot dep
 | ---------- | ------------------- |
 | wadp001    | Check your file, or ask your device partner for a complete .csv file. This file is missing Serial Number and Product Id info. |
 | wadp002    | Check your file, or ask your device partner for updated hardware hash info in the .csv file. Hardware hash info is invalid in the current .csv file. |
-| wadp003    | Looks like you need more than one .csv file for your devices. The maximum allowed is 1,000 items. You’re over the limit! Divide this device data into multiple .csv files. |
+| wadp003    | Looks like you need more than one .csv file for your devices. The maximum allowed is 1,000 items. You're over the limit! Divide this device data into multiple .csv files. |
 | wadp004    | Try that again. Something happened on our end. Waiting a bit might help. |
 | wadp005    | Check your .csv file with your device provider. One of the devices on your list has been claimed by another organization. |
 | wadp006    | Try that again. Something happened on our end. Waiting a bit might help. |
 | wadp007    | Check the info for this device in your .csv file. The device is already registered in your organization. |
 | wadp008    | The device does not meet Autopilot Deployment requirements. |
-| wadp009    | Check with your device provider for an update .csv file. The current file doesn’t work |
+| wadp009    | Check with your device provider for an update .csv file. The current file doesn't work |
 | wadp010    | Try that again. Something happened on our end. Waiting a bit might help. |

@@ -1,89 +1,94 @@
 ---
-title: Policy CSP - ADMX_DFS
-description: Policy CSP - ADMX_DFS
-ms.author: dansimp
+title: ADMX_DFS Policy CSP
+description: Learn more about the ADMX_DFS Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nimishasatapathy
-ms.date: 09/08/2021
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_DFS-Begin -->
 # Policy CSP - ADMX_DFS
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ADMX_DFS policies 
+<!-- ADMX_DFS-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_DFS-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-dfs-dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
-  </dd>
-</dl>
+<!-- DFSDiscoverDC-Begin -->
+## DFSDiscoverDC
 
+<!-- DFSDiscoverDC-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DFSDiscoverDC-Applicability-End -->
 
-<hr/>
+<!-- DFSDiscoverDC-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_DFS/DFSDiscoverDC
+```
+<!-- DFSDiscoverDC-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-dfs-dfsdiscoverdc"></a>**ADMX_DFS/DFSDiscoverDC**  
+<!-- DFSDiscoverDC-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure how often a Distributed File System (DFS) client attempts to discover domain controllers on a network. By default, a DFS client attempts to discover domain controllers every 15 minutes.
 
-<!--SupportedSKUs-->
+- If you enable this policy setting, you can configure how often a DFS client attempts to discover domain controllers. This value is specified in minutes.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to configure how often a Distributed File System (DFS) client attempts to discover domain controllers on a network. 
-By default, a DFS client attempts to discover domain controllers every 15 minutes.  
-
-- If you enable this policy setting, you can configure how often a DFS client attempts to discover domain controllers. 
-This value is specified in minutes.  
-
-- If you disable or do not configure this policy setting, the default value of 15 minutes applies.  
+- If you disable or don't configure this policy setting, the default value of 15 minutes applies.
 
 > [!NOTE]
 > The minimum value you can select is 15 minutes. If you try to set this setting to a value less than 15 minutes, the default value of 15 minutes is applied.
+<!-- DFSDiscoverDC-Description-End -->
 
-<!--/Description-->
+<!-- DFSDiscoverDC-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DFSDiscoverDC-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Configure how often a DFS client discovers domain controllers*
--   GP name: *DFSDiscoverDC*
--   GP path: *Windows Components\ActiveX Installer Service*
--   GP ADMX file name: *DFS.admx*
+<!-- DFSDiscoverDC-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DFSDiscoverDC-DFProperties-End -->
 
+<!-- DFSDiscoverDC-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/Policies-->
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | DFSDiscoverDC |
+| Friendly Name | Configure how often a DFS client discovers domain controllers |
+| Location | Computer Configuration |
+| Path | Network |
+| Registry Key Name | Software\Policies\Microsoft\System\DFSClient |
+| ADMX File Name | DFS.admx |
+<!-- DFSDiscoverDC-AdmxBacked-End -->
+
+<!-- DFSDiscoverDC-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DFSDiscoverDC-Examples-End -->
+
+<!-- DFSDiscoverDC-End -->
+
+<!-- ADMX_DFS-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_DFS-CspMoreInfo-End -->
+
+<!-- ADMX_DFS-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

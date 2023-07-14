@@ -1,31 +1,33 @@
 ---
 title: Understand your Microsoft Customer Agreement invoice
 description: Learn how to read and understand your MCA bill
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
-author: trudyha
-ms.author: TrudyHa
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 07/21/2021
+ms.date: 05/24/2023
 ms.reviewer: 
-manager: dansimp
 ---
 
 # Understand your Microsoft Customer Agreement invoice
 
 > [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
+>
+> - The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
+> - In April 2023 the Microsoft Store for Business tab was removed from Microsoft Store apps on Windows 10 and Windows 11 PCs. An interaction with existing MDM and GPO policies may lead to customers seeing errors when accessing the Microsoft Store app. For more information see [Microsoft Store for Business tab removed](manage-access-to-private-store.md#microsoft-store-for-business-tab-removed).
 
-The invoice provides a summary of your charges and provides instructions for payment. It’s available for
+The invoice provides a summary of your charges and provides instructions for payment. It's available for
 download in the Portable Document Format (.pdf) for commercial customers from Microsoft Store for Business [Microsoft Store for Business - Invoice](https://businessstore.microsoft.com/manage/payments-billing/invoices) or can be sent via email. This article applies to invoices generated for a Microsoft Customer Agreement billing account. Check if you have a [Microsoft Customer Agreement](https://businessstore.microsoft.com/manage/organization/agreements).
 
 ## General invoice information
+
 Invoices are your bill from Microsoft. A few things to note:
 
-- **Invoice schedule** - You’re invoiced on a monthly basis. You can find out which day of the month you receive invoices by checking invoice date under billing profile overview in [Microsoft Store for Business](https://businessstore.microsoft.com/manage/payments-billing/billing-profiles). Charges that occur between the end of the billing period and the invoice date are included in the next month's invoice, since they are in the next billing period. The billing period start and end dates for each invoice are listed in the invoice PDF above **Billing Summary**.
+- **Invoice schedule** - You're invoiced on a monthly basis. You can find out which day of the month you receive invoices by checking invoice date under billing profile overview in [Microsoft Store for Business](https://businessstore.microsoft.com/manage/payments-billing/billing-profiles). Charges that occur between the end of the billing period and the invoice date are included in the next month's invoice, since they are in the next billing period. The billing period start and end dates for each invoice are listed in the invoice PDF above **Billing Summary**.
 - **Billing profile** - Billing profiles are created during your purchase. Invoices are created for each billing profile. Billing profiles let you customize what products are purchased, how you pay for them, and who can make purchases. For more information, see [Understand billing profiles](billing-profile.md)
 - **Items included** - Your invoice includes total charges for all first and third-party software and hardware products purchased under a Microsoft Customer Agreement. That includes items purchased from Microsoft Store for Business and Azure Marketplace. 
 - **Charges** - Your invoice provides information about products purchased and their related charges and taxes. Purchases are aggregated to provide a concise view of your bill. 
@@ -110,7 +112,7 @@ At the bottom of the invoice, there are instructions for paying your bill. You c
 If you have third-party services in your bill, the name and address of each publisher is listed at the bottom of your invoice.
 
 ## Next steps
-If there are Azure charges on your invoice that you would like more details on, see [Understand the Azure charges on your Microsoft Customer Agreement invoice](/azure/billing/billing-understand-your-invoice-mca).
+If there are Azure charges on your invoice that you would like more details on, see [Understand the Azure charges on your Microsoft Customer Agreement invoice](/azure/cost-management-billing/understand/mca-understand-your-invoice).
 
 ## Need help? Contact us.
 

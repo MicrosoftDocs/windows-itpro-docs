@@ -1,16 +1,16 @@
 ---
 title: Get the provisioned apps on Windows client operating system | Microsoft Docs
-ms.reviewer: 
-manager: dougeby
 description: Use the Windows PowerShell Get-AppxProvisionedPackage command to get a list off the provisioned apps installed in Windows OS. See a list of some common provisioned apps installed a Windows Enterprise client computer or device, including Windows 10/11.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: mobile
-ms.author: mandia
-author: MandiOhlinger
-ms.localizationpriority: medium
+author: nicholasswhite
+ms.author: nwhite
+manager: aaroncz
+ms.date: 06/05/2023
 ms.topic: article
+ms.prod: windows-client
+ms.technology: itpro-apps
+ms.localizationpriority: medium
+ms.collection: tier1
+ms.reviewer:
 ---
 
 # Provisioned apps installed with the Windows client OS
@@ -20,7 +20,7 @@ ms.topic: article
 - Windows 10
 - Windows 11
 
-Provisioned apps are included with the OS, and automatically installed when a user signs into a Windows device the first time. They are per-user apps, and typically installed in the `C:\Program Files\WindowsApps` folder. On your Windows devices, you can use Windows PowerShell to see the provisioned apps automatically installed.
+Provisioned apps are included with the OS, and automatically installed when a user signs into a Windows device the first time. They're per-user apps, and typically installed in the `C:\Program Files\WindowsApps` folder. On your Windows devices, you can use Windows PowerShell to see the provisioned apps automatically installed.
 
 This article lists some of the built-in provisioned apps on the different Windows client OS versions, and lists the Windows PowerShell command to get a list.
 
@@ -47,19 +47,49 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ✔️ | ✔️ | | | | | |
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ | ✔️ | ✔️ | ✔️️|
 
     ---
 
-- [Bing Weather](ms-windows-store://pdp/?PFN=Microsoft.BingWeather_8wekyb3d8bbwe) | Package name: Microsoft.BingWeather
+- [Clipchamp](ms-windows-store://pdp/?ProductId=9P1J8S7CCWWT) | Package name: Clipchamp.Clipchamp
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 |
+    | --- | --- | --- | --- |
+    | ✔️ | ✔️ | ✔️ | ❌️|
+
+    ---
+
+- [Cortana](ms-windows-store://pdp/?PFN=Microsoft.549981C3f5f10_8wekyb3d8bbwe) | Package name: Microsoft.549981C3f5f10
+  - Supported versions:
+
+    ---
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 |
+    | --- | --- | --- | --- |
+    | ❌ | ✔️ | ✔️ | ✔️️|
+
+    ---
+
+- [Microsoft News](ms-windows-store://pdp/?PFN=Microsoft.BingNews_8wekyb3d8bbwe) | Package name: Microsoft.BingNews
+  - Supported versions:
+
+    ---
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 |
+    | --- | --- | --- | --- |
+    | ✔️ | ✔️ | ✔️ | ✔️️|
+
+    ---
+
+- [MSN Weather](ms-windows-store://pdp/?PFN=Microsoft.BingWeather_8wekyb3d8bbwe) | Package name: Microsoft.BingWeather
+  - Supported versions:
+
+    ---
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ | ✔️ | ✔️ | ✔️️|
 
     ---
 
@@ -67,9 +97,19 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | Use Settings App | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | Use Settings App | ✔️ | ✔️ | ✔️|
+
+    ---
+
+- [Xbox App](ms-windows-store://pdp/?PFN=Microsoft.GamingApp_8wekyb3d8bbwe) | Package name: Microsoft.GamingApp
+  - Supported versions:
+
+    ---
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ | ✔️ | ✔️ | ✔️️|
 
     ---
 
@@ -77,9 +117,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    |---| --- | --- | --- |
+    | ❌ |  ✔️| ✔️| ✔️|
 
     ---
 
@@ -87,9 +127,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️| ✔️|
 
     ---
 
@@ -97,9 +137,31 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️| ✔️| ✔️|
+
+    ---
+    
+- [HEVC Video Extensions](ms-windows-store://pdp/?productid=9NMZLZ57R3T7) | Package name: Microsoft.HEVCVideoExtension 
+  - Supported versions:
+
+    ---
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ |  ✔️| ✔️| ✔️|
+    
+    ---  
+    >[!NOTE]
+    >For devices running Windows 11, version 21H2, and any supported version of Windows 10, you need to acquire the [HEVC Video Extensions](ms-windows-store://pdp/?productid=9NMZLZ57R3T7) from the Microsoft Store.
+
+- [Microsoft Edge](ms-windows-store://pdp/?productid=XPFFTQ037JWMHS) | Package name:Microsoft.MicrosoftEdge.Stable
+  - Supported versions:
+
+    ---
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -107,29 +169,29 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
-- [Microsoft 3D Viewer](ms-windows-store://pdp/?PFN=Microsoft.Microsoft3DViewer_8wekyb3d8bbwe) | Package name: Microsoft.Microsoft3DViewer
+- [3D Viewer](ms-windows-store://pdp/?PFN=Microsoft.Microsoft3DViewer_8wekyb3d8bbwe) | Package name: Microsoft.Microsoft3DViewer
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
-- [Office](ms-windows-store://pdp/?PFN=Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe) | Package name: Microsoft.MicrosoftOfficeHub
+- [Microsoft 365 (Office)](ms-windows-store://pdp/?PFN=Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe) | Package name: Microsoft.MicrosoftOfficeHub
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ✔️ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ | ✔️ | ✔️ | ✔️️|
 
     ---
 
@@ -137,9 +199,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ✔️ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ | ✔️ | ✔️ | ✔️️|
 
     ---
 
@@ -147,9 +209,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -157,19 +219,19 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
-- [Paint 3D](ms-windows-store://pdp/?PFN=Microsoft.MSPaint_8wekyb3d8bbwe) | Package name: Microsoft.MSPaint
+- [MPEG2 Video Extension](ms-windows-store://pdp/?PFN=Microsoft.MPEG2VideoExtension_8wekyb3d8bbwe) | Package name: Microsoft.MPEG2VideoExtension
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -177,9 +239,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ✔️ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ | ❌ | ✔️ | ✔️️|
 
     ---
 
@@ -187,29 +249,49 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| | ✔️| ✔️| ✔️|
+    | Uninstall through UI? |22H2| 21H1 | 20H2 |
+    | --- | --- | --- | --- |
+    | ✔️ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
-- Microsoft.Outlook.DesktopIntegrationServices
+- OneDrive Sync | Package name: Microsoft.OneDriveSync
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    |  | ✔️ | ✔️| | ✔️| | |
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
-- [Microsoft People](ms-windows-store://pdp/?PFN=Microsoft.People_8wekyb3d8bbwe) | Package name: Microsoft.People
+- Outlook Desktop Integration | Package name: Microsoft.OutlookDesktopIntegrationServices
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ |  ✔️ | ✔️ | ✔️|  
+
+    ---
+
+- [Paint](ms-windows-store://pdp/?PFN=Microsoft.paint_8wekyb3d8bbwe) | Package name: Microsoft.Paint
+  - Supported versions:
+
+    ---
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ |  ✔️ | ✔️ | ✔️|  
+
+    ---
+
+- [People](ms-windows-store://pdp/?PFN=Microsoft.people_8wekyb3d8bbwe) | Package name: Microsoft.People
+  - Supported versions:
+
+    ---
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -217,59 +299,80 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ❌ | ✔️ | ✔️|  
 
     ---
 
-- [Snip & Sketch](ms-windows-store://pdp/?PFN=Microsoft.ScreenSketch_8wekyb3d8bbwe) | Package name: Microsoft.ScreenSketch
+- [Raw Image Extension](ms-windows-store://pdp/?PFN=Microsoft.RawImageExtension_8wekyb3d8bbwe) | Package name: Microsoft.RawImageExtension
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
-- [Skype](ms-windows-store://pdp/?PFN=Microsoft.SkypeApp_kzf8qxf38zg5c) | Package name: Microsoft.SkypeApp
+- [Snipping Tool](ms-windows-store://pdp/?PFN=Microsoft.ScreenSketch_8wekyb3d8bbwe) | Package name: Microsoft.ScreenSketch
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
-- [Store Purchase App](ms-windows-store://pdp/?PFN=Microsoft.StorePurchaseApp_8wekyb3d8bbwe) | Package name: Microsoft.StorePurchaseApp
+- Store Purchase App | Package name: Microsoft.StorePurchaseApp
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
-- Microsoft.VP9VideoExtensions
+- [Microsoft To Do](ms-windows-store://pdp/?PFN=Microsoft.ToDos_8wekyb3d8bbwe) | Package name: Microsoft.ToDos
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
-- [Microsoft Pay](ms-windows-store://pdp/?PFN=Microsoft.Wallet_8wekyb3d8bbwe) | Package name: Microsoft.Wallet
+- UI.Xaml | Package name: Microsoft.UI.Xaml
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
+
+    ---
+
+- VCLibs | Package name: Microsoft.VCLibs
+  - Supported versions:
+
+    ---
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
+
+    ---
+
+
+- [VP9 Video Extensions](ms-windows-store://pdp/?PFN=Microsoft.VP9VideoExtensions_8wekyb3d8bbwe) | Microsoft.VP9VideoExtensions
+  - Supported versions:
+
+    ---
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -277,9 +380,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -287,9 +390,19 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
+
+    ---
+
+- [Whiteboard](ms-windows-store://pdp/?PFN=Microsoft.Whiteboard_8wekyb3d8bbwe) | Package name: Microsoft.Whiteboard
+  - Supported versions:
+
+    ---
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ |  ✔️ | ✔️| ✔️|  
 
     ---
 
@@ -297,9 +410,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -307,9 +420,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -317,9 +430,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -327,9 +440,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -337,9 +450,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -347,9 +460,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -357,19 +470,29 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
-- [Windows Voice Recorder](ms-windows-store://pdp/?PFN=Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe) | Package name: Microsoft.WindowsSoundRecorder
+- [Windows Notepad](ms-windows-store://pdp/?PFN=Microsoft.WindowsNotepad_8wekyb3d8bbwe) | Package name: Microsoft.Notepad
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ |  ✔️ | ✔️ | ✔️|  
+
+    ---
+
+- [Windows Sound Recorder](ms-windows-store://pdp/?PFN=Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe) | Package name: Microsoft.WindowsSoundRecorder
+  - Supported versions:
+
+    ---
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -377,31 +500,19 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
-
-  - The Store app shouldn't be removed. If you remove the Store app, and want to reinstall it, you must restore your system from a backup, or reset your system. Instead of removing the Store app, use group policies to hide or disable it.
 
 - [Xbox Live in-game experience](ms-windows-store://pdp/?PFN=Microsoft.Xbox.TCUI_8wekyb3d8bbwe) | Package name: Microsoft.Xbox.TCUI
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Xbox Console Companion](ms-windows-store://pdp/?PFN=Microsoft.XboxApp_8wekyb3d8bbwe) | Package name: Microsoft.XboxApp
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -409,9 +520,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -419,9 +530,9 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -429,39 +540,39 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
-- Microsoft.XboxSpeechToTextOverlay
+- Xbox speech to text overlay | Package name: Microsoft.XboxSpeechToTextOverlay
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
-- [Your Phone](ms-windows-store://pdp/?PFN=Microsoft.YourPhone_8wekyb3d8bbwe) | Package name: Microsoft.YourPhone
+- [Phone Link](ms-windows-store://pdp/?PFN=Microsoft.YourPhone_8wekyb3d8bbwe) | Package name: Microsoft.YourPhone
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
-- [Groove Music](ms-windows-store://pdp/?PFN=Microsoft.ZuneMusic_8wekyb3d8bbwe) | Package name: Microsoft.ZuneMusic
+- [Windows Media Player](ms-windows-store://pdp/?PFN=Microsoft.ZuneMusic_8wekyb3d8bbwe) | Package name: Microsoft.ZuneMusic
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
 
     ---
 
@@ -469,8 +580,28 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
   - Supported versions:
 
     ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ✔️|  
+
+    ---
+
+- [Quick Assist](ms-windows-store://pdp/?PFN=MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe) | Package name: MicrosoftCorporationII.QuickAssist
+  - Supported versions:
+
+    ---
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ✔️ |  ✔️ | ✔️ | ✔️|  
+
+    ---
+
+- Windows Web Experience | Package name: MicrosoftWindows.Client.WebExperience
+  - Supported versions:
+
+    ---
+    | Uninstall through UI? | KB5026446 | 22H2 | 21H2 | 
+    | --- | --- | --- | --- |
+    | ❌ |  ✔️ | ✔️ | ❌|  
 
     ---

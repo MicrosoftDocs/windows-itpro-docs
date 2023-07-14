@@ -1,17 +1,18 @@
 ---
-title: 4826(S) Boot Configuration Data loaded. (Windows 10)
+title: 4826(S) Boot Configuration Data loaded. 
 description: Describes security event 4826(S) Boot Configuration Data loaded. This event is generated every time system starts and loads Boot Configuration Data settings.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4826(S): Boot Configuration Data loaded.
@@ -120,9 +121,9 @@ This event is always logged regardless of the "Audit Other Policy Change Events"
 
 -   **HyperVisor Load Options** \[Type = UnicodeString\]**:** shows hypervisor **loadoptions**. See more information here: <https://msdn.microsoft.com/library/windows/hardware/ff542202(v=vs.85).aspx>.
 
--   **HyperVisor Launch Type** \[Type = UnicodeString\]**:** shows the hypervisor launch options (**Off** or **Auto**). If you are setting up a debugger to debug Hyper-V on a target computer, set this option to **Auto** on the target computer. For more information, see [Attaching to a Target Computer Running Hyper-V](https://msdn.microsoft.com/library/windows/hardware/ff538138(v=vs.85).aspx). Information about [Hyper-V](/windows/deployment/deploy-whats-new) technology is available on Microsoft TechNet web site.
+-   **HyperVisor Launch Type** \[Type = UnicodeString\]**:** shows the hypervisor launch options (**Off** or **Auto**). If you are setting up a debugger to debug Hyper-V on a target computer, set this option to **Auto** on the target computer. For more information, see [Attaching to a Target Computer Running Hyper-V](/windows-hardware/drivers/debugger/setting-up-network-debugging-of-a-virtual-machine-host). Information about [Hyper-V](/windows/deployment/deploy-whats-new) technology is available on Microsoft TechNet web site.
 
--   **HyperVisor Debugging** \[Type = UnicodeString\]**:** shows whether the hypervisor debugger is enabled or not (**Yes** or **No**). For information about hypervisor debugging, see [Attaching to a Target Computer Running Hyper-V](https://msdn.microsoft.com/library/windows/hardware/ff538138(v=vs.85).aspx).
+-   **HyperVisor Debugging** \[Type = UnicodeString\]**:** shows whether the hypervisor debugger is enabled or not (**Yes** or **No**). For information about hypervisor debugging, see [Attaching to a Target Computer Running Hyper-V](/windows-hardware/drivers/debugger/setting-up-network-debugging-of-a-virtual-machine-host).
 
 ## Security Monitoring Recommendations
 

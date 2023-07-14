@@ -1,131 +1,150 @@
 ---
-title: Policy CSP - ADMX_CredUI
-description: Policy CSP - ADMX_CredUI
-ms.author: dansimp
+title: ADMX_CredUI Policy CSP
+description: Learn more about the ADMX_CredUI Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 11/09/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_CredUI-Begin -->
 # Policy CSP - ADMX_CredUI
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<hr/>
+<!-- ADMX_CredUI-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_CredUI-Editable-End -->
 
-<!--Policies-->
-## ADMX_CredUI policies  
+<!-- EnableSecureCredentialPrompting-Begin -->
+## EnableSecureCredentialPrompting
 
-<dl>
-  <dd>
-    <a href="#admx-credui-enablesecurecredentialprompting">ADMX_CredUI/EnableSecureCredentialPrompting</a>
-  </dd>
-  <dd>
-    <a href="#admx-credui-nolocalpasswordresetquestions">ADMX_CredUI/NoLocalPasswordResetQuestions</a>
-  </dd>
-</dl>
+<!-- EnableSecureCredentialPrompting-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- EnableSecureCredentialPrompting-Applicability-End -->
 
+<!-- EnableSecureCredentialPrompting-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_CredUI/EnableSecureCredentialPrompting
+```
+<!-- EnableSecureCredentialPrompting-OmaUri-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-credui-enablesecurecredentialprompting"></a>**ADMX_CredUI/EnableSecureCredentialPrompting**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting requires the user to enter Microsoft Windows credentials using a trusted path, to prevent a Trojan horse or other types of malicious code from stealing the user’s Windows credentials.
+<!-- EnableSecureCredentialPrompting-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting requires the user to enter Microsoft Windows credentials using a trusted path, to prevent a Trojan horse or other types of malicious code from stealing the user's Windows credentials.
 
 > [!NOTE]
 > This policy affects nonlogon authentication tasks only. As a security best practice, this policy should be enabled.
 
-If you enable this policy setting, users will be required to enter Windows credentials on the Secure Desktop by means of the trusted path mechanism.
+- If you enable this policy setting, users will be required to enter Windows credentials on the Secure Desktop by means of the trusted path mechanism.
 
-If you disable or do not configure this policy setting, users will enter Windows credentials within the user’s desktop session, potentially allowing malicious code access to the user’s Windows credentials.
+- If you disable or don't configure this policy setting, users will enter Windows credentials within the user's desktop session, potentially allowing malicious code access to the user's Windows credentials.
+<!-- EnableSecureCredentialPrompting-Description-End -->
 
-<!--/Description-->
+<!-- EnableSecureCredentialPrompting-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableSecureCredentialPrompting-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Require trusted path for credential entry*
--   GP name: *EnableSecureCredentialPrompting*
--   GP path: *Windows Components\Credential User Interface*
--   GP ADMX file name: *CredUI.admx*
+<!-- EnableSecureCredentialPrompting-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnableSecureCredentialPrompting-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-credui-nolocalpasswordresetquestions"></a>**ADMX_CredUI/NoLocalPasswordResetQuestions**  
+<!-- EnableSecureCredentialPrompting-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | EnableSecureCredentialPrompting |
+| Friendly Name | Require trusted path for credential entry |
+| Location | Computer Configuration |
+| Path | Windows Components > Credential User Interface |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\CredUI |
+| Registry Value Name | EnableSecureCredentialPrompting |
+| ADMX File Name | CredUI.admx |
+<!-- EnableSecureCredentialPrompting-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableSecureCredentialPrompting-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableSecureCredentialPrompting-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnableSecureCredentialPrompting-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- NoLocalPasswordResetQuestions-Begin -->
+## NoLocalPasswordResetQuestions
 
-<hr/>
+<!-- NoLocalPasswordResetQuestions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoLocalPasswordResetQuestions-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-Available in the latest Windows 10 Insider Preview Build. If you turn this policy setting on, local users won’t be able to set up and use security questions to reset their passwords.
+<!-- NoLocalPasswordResetQuestions-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_CredUI/NoLocalPasswordResetQuestions
+```
+<!-- NoLocalPasswordResetQuestions-OmaUri-End -->
 
-<!--/Description-->
+<!-- NoLocalPasswordResetQuestions-Description-Begin -->
+<!-- Description-Source-ADMX -->
+If you turn this policy setting on, local users won't be able to set up and use security questions to reset their passwords.
+<!-- NoLocalPasswordResetQuestions-Description-End -->
 
+<!-- NoLocalPasswordResetQuestions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoLocalPasswordResetQuestions-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Prevent the use of security questions for local accounts*
--   GP name: *NoLocalPasswordResetQuestions*
--   GP path: *Windows Components\Credential User Interface*
--   GP ADMX file name: *CredUI.admx*
+<!-- NoLocalPasswordResetQuestions-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<
-<!--/Policies-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoLocalPasswordResetQuestions-DFProperties-End -->
 
+<!-- NoLocalPasswordResetQuestions-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoLocalPasswordResetQuestions |
+| Friendly Name | Prevent the use of security questions for local accounts |
+| Location | Computer Configuration |
+| Path | Windows Components > Credential User Interface |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| Registry Value Name | NoLocalPasswordResetQuestions |
+| ADMX File Name | CredUI.admx |
+<!-- NoLocalPasswordResetQuestions-AdmxBacked-End -->
+
+<!-- NoLocalPasswordResetQuestions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoLocalPasswordResetQuestions-Examples-End -->
+
+<!-- NoLocalPasswordResetQuestions-End -->
+
+<!-- ADMX_CredUI-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_CredUI-CspMoreInfo-End -->
+
+<!-- ADMX_CredUI-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

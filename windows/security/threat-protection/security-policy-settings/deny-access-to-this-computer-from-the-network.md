@@ -1,27 +1,27 @@
 ---
-title: Deny access to this computer from the network (Windows 10)
+title: Deny access to this computer from the network 
 description: Best practices, location, values, policy management, and security considerations for the Deny access to this computer from the network security policy setting.
 ms.assetid: 935e9f89-951b-4163-b186-fc325682bb0b
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/19/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Deny access to this computer from the network
 
 **Applies to**
-- Windows 10
+-   Windows 11
+-   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Deny access to this computer from the network** security policy setting.
 
@@ -64,7 +64,7 @@ The following table lists the actual and effective default policy values. Defaul
 
 This section describes features and tools available to help you manage this policy.
 
-A restart of the device is not required for this policy setting to be effective.
+A restart of the device isn't required for this policy setting to be effective.
 
 This policy setting supersedes the **Access this computer from the network** policy setting if a user account is subject to both policies.
 
@@ -87,25 +87,25 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-Users who can log on to the device over the network can enumerate lists of account names, group names, and shared resources. Users with permission to access shared folders and files can connect over the network and possibly view or modify data.
+Users who can sign in to the device over the network can enumerate lists of account names, group names, and shared resources. Users with permission to access shared folders and files can connect over the network and possibly view or modify data.
 
 ### Countermeasure
 
 Assign the **Deny access to this computer from the network** user right to the following accounts:
 
-- Anonymous logon
+- Anonymous sign in
 - Built-in local Administrator account
 - Local Guest account
 - All service accounts
 
-An important exception to this list is any service accounts that are used to start services that must connect to the device over the network. For example, let’s say you have configured a shared folder for web servers to access, and you present content within that folder through a website. You may need to allow the account that runs IIS to log on to the server with the shared folder from the network. This user right is particularly effective when you must configure servers and workstations on which sensitive information is handled because of regulatory compliance concerns.
+An important exception to this list is any service accounts that are used to start services that must connect to the device over the network. For example, let’s say you've configured a shared folder for web servers to access, and you present content within that folder through a website. You may need to allow the account that runs IIS to sign in to the server with the shared folder from the network. This user right is effective when you must configure servers and workstations on which sensitive information is handled because of regulatory compliance concerns.
 
 > [!NOTE]
 > If the service account is configured in the logon properties of a Windows service, it requires network logon rights to the domain controllers to start properly.
 
 ### Potential impact
 
-If you configure the **Deny access to this computer from the network** user right for other accounts, you could limit the abilities of users who are assigned to specific administrative roles in your environment. You should verify that delegated tasks are not negatively affected.
+If you configure the **Deny access to this computer from the network** user right for other accounts, you could limit the abilities of users who are assigned to specific administrative roles in your environment. You should verify that delegated tasks aren't negatively affected.
 
 ## Related topics
 

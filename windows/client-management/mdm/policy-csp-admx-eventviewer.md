@@ -1,172 +1,195 @@
 ---
-title: Policy CSP - ADMX_EventViewer
-description: Policy CSP - ADMX_EventViewer
-ms.author: dansimp
+title: ADMX_EventViewer Policy CSP
+description: Learn more about the ADMX_EventViewer Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nimishasatapathy
-ms.date: 09/13/2021
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_EventViewer-Begin -->
 # Policy CSP - ADMX_EventViewer
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<hr/>
+<!-- ADMX_EventViewer-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_EventViewer-Editable-End -->
 
-<!--Policies-->
-## ADMX_EventViewer policies  
+<!-- EventViewer_RedirectionProgram-Begin -->
+## EventViewer_RedirectionProgram
 
-<dl>
-  <dd>
-    <a href="#admx-eventviewer-eventviewer_redirectionprogram">ADMX_EventViewer/EventViewer_RedirectionProgram</a>
-  </dd>
-  <dd>
-    <a href="#admx-eventviewer-eventviewer_redirectionprogramcommandlineparameters">ADMX_EventViewer_RedirectionProgramCommandLineParameters</a>
-  </dd>
-  <dd>
-    <a href="#admx-eventviewer-eventviewer_redirectionurl">ADMX_EventViewer/EventViewer_RedirectionURL</a>
-  </dd>
-</dl>
+<!-- EventViewer_RedirectionProgram-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- EventViewer_RedirectionProgram-Applicability-End -->
 
+<!-- EventViewer_RedirectionProgram-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_EventViewer/EventViewer_RedirectionProgram
+```
+<!-- EventViewer_RedirectionProgram-OmaUri-End -->
 
-<hr/>
+<!-- EventViewer_RedirectionProgram-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This is the program that will be invoked when the user clicks the events.asp link.
+<!-- EventViewer_RedirectionProgram-Description-End -->
 
-<!--Policy-->
-<a href="" id="admx-eventviewer-eventviewer_redirectionprogram"></a>**ADMX_EventViewer/EventViewer_RedirectionProgram**  
+<!-- EventViewer_RedirectionProgram-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EventViewer_RedirectionProgram-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- EventViewer_RedirectionProgram-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EventViewer_RedirectionProgram-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EventViewer_RedirectionProgram-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+**ADMX mapping**:
 
-> [!div class = "checklist"]
-> * Device
+| Name | Value |
+|:--|:--|
+| Name | EventViewer_RedirectionProgram |
+| Friendly Name | Events.asp program |
+| Location | Computer Configuration |
+| Path | Windows Components > Event Viewer |
+| Registry Key Name | Software\Policies\Microsoft\EventViewer |
+| ADMX File Name | EventViewer.admx |
+<!-- EventViewer_RedirectionProgram-AdmxBacked-End -->
 
-<hr/>
+<!-- EventViewer_RedirectionProgram-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EventViewer_RedirectionProgram-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-This is the program that will be invoked when the user clicks the `events.asp` link.
+<!-- EventViewer_RedirectionProgram-End -->
 
-<!--/Description-->
- 
-  
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Events.asp program*
--   GP name: *EventViewer_RedirectionProgram*
--   GP path: *Windows Components\Event Viewer*
--   GP ADMX file name: *EventViewer.admx*
+<!-- EventViewer_RedirectionProgramCommandLineParameters-Begin -->
+## EventViewer_RedirectionProgramCommandLineParameters
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- EventViewer_RedirectionProgramCommandLineParameters-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- EventViewer_RedirectionProgramCommandLineParameters-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="admx-eventviewer-eventviewer_redirectionprogramcommandlineparameters"></a>**ADMX_EventViewer/EventViewer_RedirectionProgramCommandLineParameters**  
+<!-- EventViewer_RedirectionProgramCommandLineParameters-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_EventViewer/EventViewer_RedirectionProgramCommandLineParameters
+```
+<!-- EventViewer_RedirectionProgramCommandLineParameters-OmaUri-End -->
 
-<!--SupportedSKUs-->
+<!-- EventViewer_RedirectionProgramCommandLineParameters-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This specifies the command line parameters that will be passed to the events.asp program.
+<!-- EventViewer_RedirectionProgramCommandLineParameters-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EventViewer_RedirectionProgramCommandLineParameters-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EventViewer_RedirectionProgramCommandLineParameters-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EventViewer_RedirectionProgramCommandLineParameters-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EventViewer_RedirectionProgramCommandLineParameters-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- EventViewer_RedirectionProgramCommandLineParameters-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--/Scope-->
-<!--Description-->
-This specifies the command line parameters that will be passed to the `events.asp` program.
+| Name | Value |
+|:--|:--|
+| Name | EventViewer_RedirectionProgramCommandLineParameters |
+| Friendly Name | Events.asp program command line parameters |
+| Location | Computer Configuration |
+| Path | Windows Components > Event Viewer |
+| Registry Key Name | Software\Policies\Microsoft\EventViewer |
+| ADMX File Name | EventViewer.admx |
+<!-- EventViewer_RedirectionProgramCommandLineParameters-AdmxBacked-End -->
 
-<!--/Description-->
+<!-- EventViewer_RedirectionProgramCommandLineParameters-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EventViewer_RedirectionProgramCommandLineParameters-Examples-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Events.asp program command line parameters*
--   GP name: *EventViewer_RedirectionProgramCommandLineParameters*
--   GP path: *Windows Components\Event Viewer*
--   GP ADMX file name: *EventViewer.admx*
+<!-- EventViewer_RedirectionProgramCommandLineParameters-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- EventViewer_RedirectionURL-Begin -->
+## EventViewer_RedirectionURL
 
-<!--Policy-->
-<a href="" id="admx-eventviewer-eventviewer_redirectionurl"></a>**ADMX_EventViewer/EventViewer_RedirectionURL**  
+<!-- EventViewer_RedirectionURL-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- EventViewer_RedirectionURL-Applicability-End -->
 
-<!--SupportedSKUs-->
+<!-- EventViewer_RedirectionURL-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_EventViewer/EventViewer_RedirectionURL
+```
+<!-- EventViewer_RedirectionURL-OmaUri-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EventViewer_RedirectionURL-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This is the URL that will be passed to the Description area in the Event Properties dialog box. Change this value if you want to use a different Web server to handle event information requests.
+<!-- EventViewer_RedirectionURL-Description-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EventViewer_RedirectionURL-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EventViewer_RedirectionURL-Editable-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EventViewer_RedirectionURL-DFProperties-Begin -->
+**Description framework properties**:
 
-> [!div class = "checklist"]
-> * Device
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EventViewer_RedirectionURL-DFProperties-End -->
 
-<hr/>
+<!-- EventViewer_RedirectionURL-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/Scope-->
-<!--Description-->
-This is the URL that will be passed to the Description area in the Event Properties dialog box. 
-Change this value if you want to use a different Web server to handle event information requests.
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | EventViewer_RedirectionURL |
+| Friendly Name | Events.asp URL |
+| Location | Computer Configuration |
+| Path | Windows Components > Event Viewer |
+| Registry Key Name | Software\Policies\Microsoft\EventViewer |
+| ADMX File Name | EventViewer.admx |
+<!-- EventViewer_RedirectionURL-AdmxBacked-End -->
 
-<!--/Description--> 
+<!-- EventViewer_RedirectionURL-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EventViewer_RedirectionURL-Examples-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Events.asp URL*
--   GP name: *EventViewer_RedirectionURL*
--   GP path: *Windows Components\Event Viewer*
--   GP ADMX file name: *EventViewer.admx*
+<!-- EventViewer_RedirectionURL-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- ADMX_EventViewer-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_EventViewer-CspMoreInfo-End -->
 
+<!-- ADMX_EventViewer-End -->
 
-<!--/Policies-->
+## Related articles
 
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,24 +1,22 @@
 ---
 title: What's new in Windows 10, version 21H2 for IT pros
 description: Learn more about what's new in Windows 10 version 21H2, including servicing updates, Windows Subsystem for Linux, the latest CSPs, and more.
-manager: dougeby
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: mobile
-ms.author: mandia
-author: MandiOhlinger
+manager: aaroncz
+ms.prod: windows-client
+ms.author: mstewart
+author: mestew
 ms.localizationpriority: medium
 ms.topic: article
-ms.collection: highpri
-ms.custom: intro-overview
+ms.collection:
+  - highpri
+  - tier2
+ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10, version 21H2</a>
 ---
 
 # What's new in Windows 10, version 21H2
-
-**Applies to**:
-
-- Windows 10, version 21H2
 
 Windows 10, version 21H2 is the next feature update. This article lists the new and updated features IT Pros should know. Windows 10, version 21H2 is also known as the Windows 10 November 2021 Update. It includes all features and fixes in previous cumulative updates to Windows 10, version 21H1.
 
@@ -37,7 +35,7 @@ To learn more about the status of the November 2021 Update rollout, known issues
 
 Windows 10, version 21H2 feature updates are installed annually using the General Availability Channel. Previous feature updates were installed using the General Availability Channel. For more information on this change, see the [How to get the Windows 10 November 2021 Update](https://blogs.windows.com/windowsexperience/?p=176473).
 
-Quality updates are still installed monthly on patch Tuesday.
+Quality updates are still installed monthly on the second Tuesday of the month.
 
 For more information, see:
 
@@ -54,7 +52,7 @@ For more information, and what GPU compute support means for you, see the [GPU a
 
 The [KB5005101  September 1, 2021 update](https://support.microsoft.com/topic/september-1-2021-kb5005101-os-builds-19041-1202-19042-1202-and-19043-1202-preview-82a50f27-a56f-4212-96ce-1554e8058dc1) includes about 1400 CSPs that were made available to MDM providers.
 
-These CSPs are built in to Windows 10, version 21H2. These settings are available in Endpoint Manager in the [Settings Catalog](/mem/intune/configuration/settings-catalog). [Group Policy analytics](/mem/intune/configuration/group-policy-analytics) also includes these GPOs in its analysis.
+These CSPs are built in to Windows 10, version 21H2. These settings are available in Microsoft Intune in the [Settings Catalog](/mem/intune/configuration/settings-catalog). [Group Policy analytics](/mem/intune/configuration/group-policy-analytics) also includes these GPOs in its analysis.
 
 For more information on the CSPs, see the [Configuration service provider reference](/windows/client-management/mdm/configuration-service-provider-reference).
 

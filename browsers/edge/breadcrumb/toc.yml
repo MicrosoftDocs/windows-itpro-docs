@@ -1,7 +1,3 @@
-- name: Docs
-  tocHref: /
-  topicHref: /
-  items:
-    - name: Microsoft Edge deployment
-      tocHref: /microsoft-edge/deploy
-      topicHref: /microsoft-edge/deploy/index
+- name: Microsoft Edge 
+  tocHref: /microsoft-edge/
+  topicHref: /microsoft-edge/index

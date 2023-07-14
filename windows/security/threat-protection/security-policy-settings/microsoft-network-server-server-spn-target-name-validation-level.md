@@ -1,26 +1,26 @@
 ---
-title: Microsoft network server Server SPN target name validation level (Windows 10)
+title: Microsoft network server Server SPN target name validation level 
 description: Best practices, security considerations, and more for the security policy setting, Microsoft network server Server SPN target name validation level.
 ms.assetid: 18337f78-eb45-42fd-bdbd-f8cd02c3e154
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Microsoft network server: Server SPN target name validation level
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, and values, policy management and security considerations for the **Microsoft network server: Server SPN target name validation level** security policy setting.
@@ -37,15 +37,15 @@ The options for validation levels are:
 
 -   **Off**
 
-    The SPN from a SMB client is not required or validated by the SMB server.
+    The SPN from an SMB client isn't required or validated by the SMB server.
 
 -   **Accept if provided by client**
 
-    The SMB server will accept and validate the SPN provided by the SMB client and allow a session to be established if it matches the SMB server’s list of SPN’s. If the SPN does not match, the session request for that SMB client will be denied.
+    The SMB server will accept and validate the SPN provided by the SMB client and allow a session to be established if it matches the SMB server’s list of SPNs. If the SPN doesn't match, the session request for that SMB client will be denied.
 
 -   **Required from client**
 
-    The SMB client must send a SPN name in session setup, and the SPN name provided must match the SMB server that is being requested to establish a connection. If no SPN is provided by the client device, or the SPN provided does not match, the session is denied.
+    The SMB client must send an SPN name in session setup, and the SPN name provided must match the SMB server that is being requested to establish a connection. If no SPN is provided by the client device, or the SPN provided doesn't match, the session is denied.
 
 The default setting is Off.
 
@@ -78,7 +78,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ### Policy conflict considerations
 
@@ -86,7 +86,7 @@ None.
 
 ### Group Policy
 
-This policy setting can be configured by using the Group Policy Management Console (GPMC) to be distributed through Group Policy Objects (GPOs). If this policy is not contained in a distributed GPO, this policy can be configured on the local computer by using the Local Security Policy snap-in.
+This policy setting can be configured by using the Group Policy Management Console (GPMC) to be distributed through Group Policy Objects (GPOs). If this policy isn't contained in a distributed GPO, this policy can be configured on the local computer by using the Local Security Policy snap-in.
 
 ## Security considerations
 

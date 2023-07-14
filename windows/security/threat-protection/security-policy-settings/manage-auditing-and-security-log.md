@@ -1,34 +1,33 @@
 ---
-title: Manage auditing and security log (Windows 10)
+title: Manage auditing and security log 
 description: Describes the best practices, location, values, policy management, and security considerations for the Manage auditing and security log security policy setting.
 ms.assetid: 4b946c0d-f904-43db-b2d5-7f0917575347
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Manage auditing and security log
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Manage auditing and security log** security policy setting.
 
 ## Reference
 
-This policy setting determines which users can specify object access audit options for individual resources such as files, Active Directory objects, and registry keys. These objects specify their system access control lists (SACL). A user who is assigned this user right can also view and clear the 
-Security log in Event Viewer. For more info about the Object Access audit policy, see [Audit object access](../auditing/basic-audit-object-access.md).
+This policy setting determines which users can specify object access audit options for individual resources such as files, Active Directory objects, and registry keys. These objects specify their system access control lists (SACL). A user who is assigned this user right can also view and clear the Security log in Event Viewer. For more information about the Object Access audit policy, see [Audit object access](../auditing/basic-audit-object-access.md).
 
 Constant: SeSecurityPrivilege
 
@@ -40,7 +39,7 @@ Constant: SeSecurityPrivilege
 ### Best practices
 
 1.  Before removing this right from a group, investigate whether applications are dependent on this right.
-2.  Generally, assigning this user right to groups other than Administrators is not necessary.
+2.  Generally, assigning this user right to groups other than Administrators isn't necessary.
 
 ### Location
 
@@ -65,11 +64,11 @@ The following table lists the actual and effective default policy values for the
 
 This section describes features, tools, and guidance to help you manage this policy.
 
-A restart of the computer is not required for this policy setting to be effective.
+A restart of the computer isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 
-Audits for object access are not performed unless you enable them by using the Local Group Policy Editor, the Group Policy Management Console (GPMC), or the Auditpol command-line tool.
+Audits for object access aren't performed unless you enable them by using the Local Group Policy Editor, the Group Policy Management Console (GPMC), or the Auditpol command-line tool.
 
 For more information about the Object Access audit policy, see [Audit object access](../auditing/basic-audit-object-access.md).
 

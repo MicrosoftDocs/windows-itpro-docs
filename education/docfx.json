@@ -17,7 +17,8 @@
         "files": [
           "**/*.png",
           "**/*.jpg",
-          "**/*.svg"
+          "**/*.svg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
@@ -27,32 +28,55 @@
     ],
     "globalMetadata": {
       "recommendations": true,
-      "ROBOTS": "INDEX, FOLLOW",
-      "audience": "windows-education",
+      "adobe-target": true,
       "ms.topic": "article",
-      "ms.technology": "windows",
-      "manager": "laurawi",
-      "audience": "ITPro",
+      "ms.collection": [
+        "education",
+        "tier2"
+      ],
+      "ms.prod": "windows-client",
+      "ms.technology": "itpro-edu",
+      "author": "paolomatarazzo",
+      "ms.author": "paoloma",
+      "manager": "aaroncz",
+      "ms.localizationpriority": "medium",
       "breadcrumb_path": "/education/breadcrumb/toc.json",
-      "ms.date": "05/09/2017",
-      "feedback_system": "None",
-      "hideEdit": true,
+      "uhfHeaderId": "MSDocsHeader-M365-IT",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
+      "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "Win.education",
           "folder_relative_path_in_docset": "./"
         }
       },
+      "titleSuffix": "Windows Education",
       "contributors_to_exclude": [ 
         "rjagiewich", 
         "traya1", 
         "rmca14", 
-        "claydetels19", 
+        "claydetels19",
         "Kellylorenebaker",
         "jborsecnik",
         "tiburd",
-        "garycentric"
+        "AngelaMotherofDragons",
+        "dstrome",
+        "v-dihans",
+        "garycentric",
+        "v-stsavell",
+        "beccarobins",
+        "v-stchambers"
       ]
+    },
+    "fileMetadata": {
+      "appliesto":{
+        "windows/**/*.md": [
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11 SE</a>",
+        "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
+        ]
+      }
     },
     "externalReference": [],
     "template": "op.html",

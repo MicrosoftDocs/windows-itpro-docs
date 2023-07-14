@@ -1,3715 +1,4533 @@
 ---
-title: Policy CSP - ADMX_WindowsExplorer
-description: Policy CSP - ADMX_WindowsExplorer
-ms.author: dansimp
+title: ADMX_WindowsExplorer Policy CSP
+description: Learn more about the ADMX_WindowsExplorer Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 07/06/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 10/29/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_WindowsExplorer-Begin -->
 # Policy CSP - ADMX_WindowsExplorer
 
-> [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<hr/>
+<!-- ADMX_WindowsExplorer-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_WindowsExplorer-Editable-End -->
 
-<!--Policies-->
+<!-- CheckSameSourceAndTargetForFRAndDFS-Begin -->
+## CheckSameSourceAndTargetForFRAndDFS
 
-## ADMX_WindowsExplorer policies  
+<!-- CheckSameSourceAndTargetForFRAndDFS-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- CheckSameSourceAndTargetForFRAndDFS-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-windowsexplorer-checksamesourceandtargetforfranddfs">ADMX_WindowsExplorer/CheckSameSourceAndTargetForFRAndDFS</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-classicshell">ADMX_WindowsExplorer/ClassicShell</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-confirmfiledelete">ADMX_WindowsExplorer/ConfirmFileDelete</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-defaultlibrarieslocation">ADMX_WindowsExplorer/DefaultLibrariesLocation</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-disablebinddirectlytopropertysetstorage">ADMX_WindowsExplorer/DisableBindDirectlyToPropertySetStorage</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-disableindexedlibraryexperience">ADMX_WindowsExplorer/DisableIndexedLibraryExperience</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-disableknownfolders">ADMX_WindowsExplorer/DisableKnownFolders</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-disablesearchboxsuggestions">ADMX_WindowsExplorer/DisableSearchBoxSuggestions</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-enableshellshortcuticonremotepath">ADMX_WindowsExplorer/EnableShellShortcutIconRemotePath</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-enablesmartscreen">ADMX_WindowsExplorer/EnableSmartScreen</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-enforceshellextensionsecurity">ADMX_WindowsExplorer/EnforceShellExtensionSecurity</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-explorerribbonstartsminimized">ADMX_WindowsExplorer/ExplorerRibbonStartsMinimized</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-hidecontentviewmodesnippets">ADMX_WindowsExplorer/HideContentViewModeSnippets</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-iz-policy-opensearchpreview-internet">ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Internet</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-iz-policy-opensearchpreview-internetlockdown">ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_InternetLockdown</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-iz-policy-opensearchpreview-intranet">ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Intranet</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-iz-policy-opensearchpreview-intranetlockdown">ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_IntranetLockdown</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-iz-policy-opensearchpreview-localmachine">ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_LocalMachine</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-iz-policy-opensearchpreview-localmachinelockdown">ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_LocalMachineLockdown</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-iz-policy-opensearchpreview-restricted">ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Restricted</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-iz-policy-opensearchpreview-restrictedlockdown">ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_RestrictedLockdown</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-iz-policy-opensearchpreview-trusted">ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Trusted</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-iz-policy-opensearchpreview-trustedlockdown">ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_TrustedLockdown</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-iz-policy-opensearchquery-internet">ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Internet</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-iz-policy-opensearchquery-internetlockdown">ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_InternetLockdown</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-iz-policy-opensearchquery-intranet">ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Intranet</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-iz-policy-opensearchquery-intranetlockdown">ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_IntranetLockdown</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-iz-policy-opensearchquery-localmachine">ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_LocalMachine</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-iz-policy-opensearchquery-localmachinelockdown">ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_LocalMachineLockdown</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-iz-policy-opensearchquery-restricted">ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Restricted</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-iz-policy-opensearchquery-restrictedlockdown">ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_RestrictedLockdown</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-iz-policy-opensearchquery-trusted">ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Trusted</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-iz-policy-opensearchquery-trustedlockdown">ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_TrustedLockdown</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-linkresolveignorelinkinfo">ADMX_WindowsExplorer/LinkResolveIgnoreLinkInfo</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-maxrecentdocs">ADMX_WindowsExplorer/MaxRecentDocs</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-nobackbutton">ADMX_WindowsExplorer/NoBackButton</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-nocdburning">ADMX_WindowsExplorer/NoCDBurning</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-nocachethumbnailpictures">ADMX_WindowsExplorer/NoCacheThumbNailPictures</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-nochangeanimation">ADMX_WindowsExplorer/NoChangeAnimation</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-nochangekeyboardnavigationindicators">ADMX_WindowsExplorer/NoChangeKeyboardNavigationIndicators</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-nodfstab">ADMX_WindowsExplorer/NoDFSTab</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-nodrives">ADMX_WindowsExplorer/NoDrives</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-noentirenetwork">ADMX_WindowsExplorer/NoEntireNetwork</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-nofilemru">ADMX_WindowsExplorer/NoFileMRU</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-nofilemenu">ADMX_WindowsExplorer/NoFileMenu</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-nofolderoptions">ADMX_WindowsExplorer/NoFolderOptions</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-nohardwaretab">ADMX_WindowsExplorer/NoHardwareTab</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-nomanagemycomputerverb">ADMX_WindowsExplorer/NoManageMyComputerVerb</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-nomycomputershareddocuments">ADMX_WindowsExplorer/NoMyComputerSharedDocuments</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-nonetconnectdisconnect">ADMX_WindowsExplorer/NoNetConnectDisconnect</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-nonewappalert">ADMX_WindowsExplorer/NoNewAppAlert</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-noplacesbar">ADMX_WindowsExplorer/NoPlacesBar</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-norecyclefiles">ADMX_WindowsExplorer/NoRecycleFiles</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-norunasinstallprompt">ADMX_WindowsExplorer/NoRunAsInstallPrompt</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-nosearchinternettryharderbutton">ADMX_WindowsExplorer/NoSearchInternetTryHarderButton</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-nosecuritytab">ADMX_WindowsExplorer/NoSecurityTab</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-noshellsearchbutton">ADMX_WindowsExplorer/NoShellSearchButton</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-nostrcmplogical">ADMX_WindowsExplorer/NoStrCmpLogical</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-noviewcontextmenu">ADMX_WindowsExplorer/NoViewContextMenu</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-noviewondrive">ADMX_WindowsExplorer/NoViewOnDrive</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-nowindowshotkeys">ADMX_WindowsExplorer/NoWindowsHotKeys</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-noworkgroupcontents">ADMX_WindowsExplorer/NoWorkgroupContents</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-placesbar">ADMX_WindowsExplorer/PlacesBar</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-promptrunasinstallnetpath">ADMX_WindowsExplorer/PromptRunasInstallNetPath</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-recyclebinsize">ADMX_WindowsExplorer/RecycleBinSize</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-shellprotocolprotectedmodetitle-1">ADMX_WindowsExplorer/ShellProtocolProtectedModeTitle_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-shellprotocolprotectedmodetitle-2">ADMX_WindowsExplorer/ShellProtocolProtectedModeTitle_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-showhibernateoption">ADMX_WindowsExplorer/ShowHibernateOption</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-showsleepoption">ADMX_WindowsExplorer/ShowSleepOption</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-tryharderpinnedlibrary">ADMX_WindowsExplorer/TryHarderPinnedLibrary</a>
-  </dd>
-  <dd>
-    <a href="#admx-windowsexplorer-tryharderpinnedopensearch">ADMX_WindowsExplorer/TryHarderPinnedOpenSearch</a>
-  </dd>
-</dl>
+<!-- CheckSameSourceAndTargetForFRAndDFS-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/CheckSameSourceAndTargetForFRAndDFS
+```
+<!-- CheckSameSourceAndTargetForFRAndDFS-OmaUri-End -->
 
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-checksamesourceandtargetforfranddfs"></a>**ADMX_WindowsExplorer/CheckSameSourceAndTargetForFRAndDFS**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- CheckSameSourceAndTargetForFRAndDFS-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to prevent data loss when you change the target location for Folder Redirection, and the new and old targets point to the same network share, but have different network paths.
 
-If you enable this policy setting, Folder Redirection creates a temporary file in the old location in order to verify that new and old locations point to the same network share. If both new and old locations point to the same share, the target path is updated and files are not copied or deleted. The temporary file is deleted.
+- If you enable this policy setting, Folder Redirection creates a temporary file in the old location in order to verify that new and old locations point to the same network share. If both new and old locations point to the same share, the target path is updated and files aren't copied or deleted. The temporary file is deleted.
 
-If you disable or do not configure this policy setting, Folder Redirection does not create a temporary file and functions as if both new and old locations point to different shares when their network paths are different.
+- If you disable or don't configure this policy setting, Folder Redirection doesn't create a temporary file and functions as if both new and old locations point to different shares when their network paths are different.
 
 > [!NOTE]
-> If the paths point to different network shares, this policy setting is not required. If the paths point to the same network share, any data contained in the redirected folders is deleted if this policy setting is not enabled.
+> If the paths point to different network shares, this policy setting isn't required. If the paths point to the same network share, any data contained in the redirected folders is deleted if this policy setting isn't enabled.
+<!-- CheckSameSourceAndTargetForFRAndDFS-Description-End -->
 
-<!--/Description-->
+<!-- CheckSameSourceAndTargetForFRAndDFS-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CheckSameSourceAndTargetForFRAndDFS-Editable-End -->
 
+<!-- CheckSameSourceAndTargetForFRAndDFS-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Verify old and new Folder Redirection targets point to the same share before redirecting*
--   GP name: *CheckSameSourceAndTargetForFRAndDFS*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- CheckSameSourceAndTargetForFRAndDFS-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- CheckSameSourceAndTargetForFRAndDFS-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-classicshell"></a>**ADMX_WindowsExplorer/ClassicShell**  
+| Name | Value |
+|:--|:--|
+| Name | CheckSameSourceAndTargetForFRAndDFS |
+| Friendly Name | Verify old and new Folder Redirection targets point to the same share before redirecting |
+| Location | Computer Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | CheckSameSourceAndTargetForFRAndDFS |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- CheckSameSourceAndTargetForFRAndDFS-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- CheckSameSourceAndTargetForFRAndDFS-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- CheckSameSourceAndTargetForFRAndDFS-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- CheckSameSourceAndTargetForFRAndDFS-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ClassicShell-Begin -->
+## ClassicShell
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ClassicShell-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ClassicShell-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- ClassicShell-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/ClassicShell
+```
+<!-- ClassicShell-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- ClassicShell-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This setting allows an administrator to revert specific Windows Shell behavior to classic Shell behavior.
 
-If you enable this setting, users cannot configure their system to open items by single-clicking (such as in Mouse in Control Panel). As a result, the user interface looks and operates like the interface for Windows NT 4.0, and users cannot restore the new features.
+- If you enable this setting, users can't configure their system to open items by single-clicking (such as in Mouse in Control Panel). As a result, the user interface looks and operates like the interface for Windows NT 4.0, and users can't restore the new features.
 
 Enabling this policy will also turn off the preview pane and set the folder options for File Explorer to Use classic folders view and disable the users ability to change these options.
 
-If you disable or not configure this policy, the default File Explorer behavior is applied to the user.
+- If you disable or not configure this policy, the default File Explorer behavior is applied to the user.
 
+> [!NOTE]
+> In operating systems earlier than Windows Vista, enabling this policy will also disable the Active Desktop and Web view. This setting will also take precedence over the "Enable Active Desktop" setting. If both policies are enabled, Active Desktop is disabled.
 
-<!--/Description-->
+Also, see the "Disable Active Desktop" setting in User Configuration\Administrative Templates\Desktop\Active Desktop and the "Do not allow Folder Options to be opened from the Options button on the View tab of the ribbon" setting in User Configuration\Administrative Templates\Windows Components\File Explorer.
+<!-- ClassicShell-Description-End -->
 
+<!-- ClassicShell-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ClassicShell-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn on Classic Shell*
--   GP name: *ClassicShell*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+<!-- ClassicShell-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ClassicShell-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-confirmfiledelete"></a>**ADMX_WindowsExplorer/ConfirmFileDelete**  
+<!-- ClassicShell-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | ClassicShell |
+| Friendly Name | Turn on Classic Shell |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | ClassicShell |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- ClassicShell-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ClassicShell-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ClassicShell-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ClassicShell-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- ConfirmFileDelete-Begin -->
+## ConfirmFileDelete
 
-<hr/>
+<!-- ConfirmFileDelete-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ConfirmFileDelete-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-Allows you to have File Explorer display a confirmation dialog  whenever a file is deleted or moved to the Recycle Bin.
+<!-- ConfirmFileDelete-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/ConfirmFileDelete
+```
+<!-- ConfirmFileDelete-OmaUri-End -->
 
-If you enable this setting, a confirmation dialog is displayed when a file is deleted or moved to the Recycle Bin by the user.
+<!-- ConfirmFileDelete-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Allows you to have File Explorer display a confirmation dialog whenever a file is deleted or moved to the Recycle Bin.
 
-If you disable or do not configure this setting, the default behavior of not displaying a confirmation dialog occurs.
+- If you enable this setting, a confirmation dialog is displayed when a file is deleted or moved to the Recycle Bin by the user.
 
-<!--/Description-->
+- If you disable or don't configure this setting, the default behavior of not displaying a confirmation dialog occurs.
+<!-- ConfirmFileDelete-Description-End -->
 
+<!-- ConfirmFileDelete-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfirmFileDelete-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Display confirmation dialog when deleting files*
--   GP name: *ConfirmFileDelete*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+<!-- ConfirmFileDelete-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ConfirmFileDelete-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-defaultlibrarieslocation"></a>**ADMX_WindowsExplorer/DefaultLibrariesLocation**  
+<!-- ConfirmFileDelete-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | ConfirmFileDelete |
+| Friendly Name | Display confirmation dialog when deleting files |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | ConfirmFileDelete |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- ConfirmFileDelete-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ConfirmFileDelete-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfirmFileDelete-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ConfirmFileDelete-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- DefaultLibrariesLocation-Begin -->
+## DefaultLibrariesLocation
 
-<hr/>
+<!-- DefaultLibrariesLocation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DefaultLibrariesLocation-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DefaultLibrariesLocation-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/DefaultLibrariesLocation
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/DefaultLibrariesLocation
+```
+<!-- DefaultLibrariesLocation-OmaUri-End -->
+
+<!-- DefaultLibrariesLocation-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to specify a location where all default Library definition files for users/machines reside.
 
-If you enable this policy setting, administrators can specify a path where all default Library definition files for users reside. The user will not be allowed to make changes to these Libraries from the UI. On every logon, the policy settings are verified and Libraries for the user are updated or changed according to the path defined.
+- If you enable this policy setting, administrators can specify a path where all default Library definition files for users reside. The user won't be allowed to make changes to these Libraries from the UI. On every logon, the policy settings are verified and Libraries for the user are updated or changed according to the path defined.
 
-If you disable or do not configure this policy setting, no changes are made to the location of the default Library definition files.
+- If you disable or don't configure this policy setting, no changes are made to the location of the default Library definition files.
+<!-- DefaultLibrariesLocation-Description-End -->
 
-<!--/Description-->
+<!-- DefaultLibrariesLocation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DefaultLibrariesLocation-Editable-End -->
 
+<!-- DefaultLibrariesLocation-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Location where all default Library definition files for users/machines reside.*
--   GP name: *DefaultLibrariesLocation*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DefaultLibrariesLocation-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DefaultLibrariesLocation-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-disablebinddirectlytopropertysetstorage"></a>**ADMX_WindowsExplorer/DisableBindDirectlyToPropertySetStorage**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DefaultLibrariesLocation |
+| Friendly Name | Location where all default Library definition files for users/machines reside. |
+| Location | Computer and User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Explorer |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- DefaultLibrariesLocation-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DefaultLibrariesLocation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DefaultLibrariesLocation-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DefaultLibrariesLocation-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableBindDirectlyToPropertySetStorage-Begin -->
+## DisableBindDirectlyToPropertySetStorage
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- DisableBindDirectlyToPropertySetStorage-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableBindDirectlyToPropertySetStorage-Applicability-End -->
 
-<hr/>
+<!-- DisableBindDirectlyToPropertySetStorage-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/DisableBindDirectlyToPropertySetStorage
+```
 
-<!--/Scope-->
-<!--Description-->
-Changes the behavior of IShellFolder::BindToObject for IID_IPropertySetStorage to not bind directly to the IPropertySetStorage implementation, and to include the intermediate layers provided by the Property System.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/DisableBindDirectlyToPropertySetStorage
+```
+<!-- DisableBindDirectlyToPropertySetStorage-OmaUri-End -->
 
-This behavior is consistent with Windows Vista's behavior in this scenario.
+<!-- DisableBindDirectlyToPropertySetStorage-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Changes the behavior of IShellFolder::BindToObject for IID_IPropertySetStorage to not bind directly to the IPropertySetStorage implementation, and to include the intermediate layers provided by the Property System. This behavior is consistent with Windows Vista's behavior in this scenario.
 
 This disables access to user-defined properties, and properties stored in NTFS secondary streams.
+<!-- DisableBindDirectlyToPropertySetStorage-Description-End -->
 
-<!--/Description-->
+<!-- DisableBindDirectlyToPropertySetStorage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableBindDirectlyToPropertySetStorage-Editable-End -->
 
+<!-- DisableBindDirectlyToPropertySetStorage-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Disable binding directly to IPropertySetStorage without intermediate layers.*
--   GP name: *DisableBindDirectlyToPropertySetStorage*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableBindDirectlyToPropertySetStorage-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisableBindDirectlyToPropertySetStorage-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-disableindexedlibraryexperience"></a>**ADMX_WindowsExplorer/DisableIndexedLibraryExperience**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DisableBindDirectlyToPropertySetStorage |
+| Friendly Name | Disable binding directly to IPropertySetStorage without intermediate layers. |
+| Location | Computer and User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | DisableBindDirectlyToPropertySetStorage |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- DisableBindDirectlyToPropertySetStorage-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableBindDirectlyToPropertySetStorage-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableBindDirectlyToPropertySetStorage-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableBindDirectlyToPropertySetStorage-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableIndexedLibraryExperience-Begin -->
+## DisableIndexedLibraryExperience
 
-> [!div class = "checklist"]
-> * User
+<!-- DisableIndexedLibraryExperience-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableIndexedLibraryExperience-Applicability-End -->
 
-<hr/>
+<!-- DisableIndexedLibraryExperience-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/DisableIndexedLibraryExperience
+```
+<!-- DisableIndexedLibraryExperience-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisableIndexedLibraryExperience-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to turn off Windows Libraries features that need indexed file metadata to function properly.
 
-If you enable this policy, some Windows Libraries features will be turned off to better handle included folders that have been redirected to non-indexed network locations.
+- If you enable this policy, some Windows Libraries features will be turned off to better handle included folders that have been redirected to non-indexed network locations.
 
-Setting this policy will:  
+Setting this policy will:
 
-- Disable all Arrangement views except for "By Folder"
-- Disable all Search filter suggestions other than "Date Modified" and "Size"
-- Disable view of file content snippets in Content mode when search results are returned
-- Disable ability to stack in the Context menu and Column headers
-- Exclude Libraries from the scope of Start search  This policy will not enable users to add unsupported locations to Libraries
+* Disable all Arrangement views except for "By Folder"
+* Disable all Search filter suggestions other than "Date Modified" and "Size"
+* Disable view of file content snippets in Content mode when search results are returned
+* Disable ability to stack in the Context menu and Column headers
+* Exclude Libraries from the scope of Start search.
 
-If you enable this policy, Windows Libraries features that rely on indexed file data will be disabled.
+This policy won't enable users to add unsupported locations to Libraries.
 
-If you disable or do not configure this policy, all default Windows Libraries features will be enabled.
+- If you enable this policy, Windows Libraries features that rely on indexed file data will be disabled.
 
-<!--/Description-->
+- If you disable or don't configure this policy, all default Windows Libraries features will be enabled.
+<!-- DisableIndexedLibraryExperience-Description-End -->
 
+<!-- DisableIndexedLibraryExperience-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableIndexedLibraryExperience-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off Windows Libraries features that rely on indexed file data*
--   GP name: *DisableIndexedLibraryExperience*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+<!-- DisableIndexedLibraryExperience-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableIndexedLibraryExperience-DFProperties-End -->
 
-<hr/>
+<!-- DisableIndexedLibraryExperience-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-disableknownfolders"></a>**ADMX_WindowsExplorer/DisableKnownFolders**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DisableIndexedLibraryExperience |
+| Friendly Name | Turn off Windows Libraries features that rely on indexed file data |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | DisableIndexedLibraryExperience |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- DisableIndexedLibraryExperience-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableIndexedLibraryExperience-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableIndexedLibraryExperience-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableIndexedLibraryExperience-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableKnownFolders-Begin -->
+## DisableKnownFolders
 
-> [!div class = "checklist"]
-> * User
+<!-- DisableKnownFolders-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableKnownFolders-Applicability-End -->
 
-<hr/>
+<!-- DisableKnownFolders-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/DisableKnownFolders
+```
+<!-- DisableKnownFolders-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to specify a list of known folders that should be disabled.
+<!-- DisableKnownFolders-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify a list of known folders that should be disabled. Disabling a known folder will prevent the underlying file or directory from being created via the known folder API. If the folder exists before the policy is applied, the folder must be manually deleted since the policy only blocks the creation of the folder.
 
-Disabling a known folder will prevent the underlying file or directory from being created via the known folder API. If the folder exists before the policy is applied, the folder must be manually deleted since the policy only blocks the creation of the folder.
-
-You can specify a known folder using its known folder ID or using its canonical name. For example, the Sample Videos known folder can be disabled by specifying {440fcffd-a92b-4739-ae1a-d4a54907c53f} or SampleVideos.
+You can specify a known folder using its known folder id or using its canonical name. For example, the Sample Videos known folder can be disabled by specifying {440fcffd-a92b-4739-ae1a-d4a54907c53f} or SampleVideos.
 
 > [!NOTE]
 > Disabling a known folder can introduce application compatibility issues in applications that depend on the existence of the known folder.
+<!-- DisableKnownFolders-Description-End -->
 
-<!--/Description-->
+<!-- DisableKnownFolders-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableKnownFolders-Editable-End -->
 
+<!-- DisableKnownFolders-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Disable Known Folders*
--   GP name: *DisableKnownFolders*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableKnownFolders-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisableKnownFolders-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-disablesearchboxsuggestions"></a>**ADMX_WindowsExplorer/DisableSearchBoxSuggestions**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DisableKnownFolders |
+| Friendly Name | Disable Known Folders |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | DisableKnownFolders |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- DisableKnownFolders-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableKnownFolders-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableKnownFolders-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableKnownFolders-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableSearchBoxSuggestions-Begin -->
+## DisableSearchBoxSuggestions
 
-> [!div class = "checklist"]
-> * User
+<!-- DisableSearchBoxSuggestions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableSearchBoxSuggestions-Applicability-End -->
 
-<hr/>
+<!-- DisableSearchBoxSuggestions-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/DisableSearchBoxSuggestions
+```
+<!-- DisableSearchBoxSuggestions-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisableSearchBoxSuggestions-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Disables suggesting recent queries for the Search Box and prevents entries into the Search Box from being stored in the registry for future references.
 
-File Explorer shows suggestion pop-ups as users type into the Search Box.
-
-These suggestions are based on their past entries into the Search Box.
+File Explorer shows suggestion pop-ups as users type into the Search Box. These suggestions are based on their past entries into the Search Box.
 
 > [!NOTE]
-> If you enable this policy, File Explorer will not show suggestion pop-ups as users type into the Search Box, and it will not store Search Box entries into the registry for future references. If the user types a property, values that match this property will be shown but no data will be saved in the registry or re-shown on subsequent uses of the search box.
+> If you enable this policy, File Explorer won't show suggestion pop-ups as users type into the Search Box, and it won't store Search Box entries into the registry for future references. If the user types a property, values that match this property will be shown but no data will be saved in the registry or re-shown on subsequent uses of the search box.
+<!-- DisableSearchBoxSuggestions-Description-End -->
 
-<!--/Description-->
+<!-- DisableSearchBoxSuggestions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableSearchBoxSuggestions-Editable-End -->
 
+<!-- DisableSearchBoxSuggestions-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off display of recent search entries in the File Explorer search box*
--   GP name: *DisableSearchBoxSuggestions*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableSearchBoxSuggestions-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- DisableSearchBoxSuggestions-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-enableshellshortcuticonremotepath"></a>**ADMX_WindowsExplorer/EnableShellShortcutIconRemotePath**  
+| Name | Value |
+|:--|:--|
+| Name | DisableSearchBoxSuggestions |
+| Friendly Name | Turn off display of recent search entries in the File Explorer search box |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | DisableSearchBoxSuggestions |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- DisableSearchBoxSuggestions-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- DisableSearchBoxSuggestions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableSearchBoxSuggestions-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableSearchBoxSuggestions-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableShellShortcutIconRemotePath-Begin -->
+## EnableShellShortcutIconRemotePath
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnableShellShortcutIconRemotePath-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- EnableShellShortcutIconRemotePath-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- EnableShellShortcutIconRemotePath-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/EnableShellShortcutIconRemotePath
+```
+<!-- EnableShellShortcutIconRemotePath-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- EnableShellShortcutIconRemotePath-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting determines whether remote paths can be used for file shortcut (.lnk file) icons.
 
-If you enable this policy setting, file shortcut icons are allowed to be obtained from remote paths.
+- If you enable this policy setting, file shortcut icons are allowed to be obtained from remote paths.
 
-If you disable or do not configure this policy setting, file shortcut icons that use remote paths are prevented from being displayed.
+- If you disable or don't configure this policy setting, file shortcut icons that use remote paths are prevented from being displayed.
 
 > [!NOTE]
-> Allowing the use of remote paths in file shortcut icons can expose users’ computers to security risks.
+> Allowing the use of remote paths in file shortcut icons can expose users' computers to security risks.
+<!-- EnableShellShortcutIconRemotePath-Description-End -->
 
-<!--/Description-->
+<!-- EnableShellShortcutIconRemotePath-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableShellShortcutIconRemotePath-Editable-End -->
 
+<!-- EnableShellShortcutIconRemotePath-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow the use of remote paths in file shortcut icons*
--   GP name: *EnableShellShortcutIconRemotePath*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnableShellShortcutIconRemotePath-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- EnableShellShortcutIconRemotePath-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-enablesmartscreen"></a>**ADMX_WindowsExplorer/EnableSmartScreen**  
+| Name | Value |
+|:--|:--|
+| Name | EnableShellShortcutIconRemotePath |
+| Friendly Name | Allow the use of remote paths in file shortcut icons |
+| Location | Computer Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | EnableShellShortcutIconRemotePath |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- EnableShellShortcutIconRemotePath-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- EnableShellShortcutIconRemotePath-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableShellShortcutIconRemotePath-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EnableShellShortcutIconRemotePath-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableSmartScreen-Begin -->
+## EnableSmartScreen
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnableSmartScreen-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- EnableSmartScreen-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- EnableSmartScreen-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/EnableSmartScreen
+```
+<!-- EnableSmartScreen-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy allows you to turn Windows Defender SmartScreen on or off. SmartScreen helps protect PCs by warning users before running potentially malicious programs downloaded from the Internet. This warning is presented as an interstitial dialog shown before running an app that has been downloaded from the Internet and is unrecognized or known to be malicious. No dialog is shown for apps that do not appear to be suspicious. 
+<!-- EnableSmartScreen-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy allows you to turn Windows Defender SmartScreen on or off. SmartScreen helps protect PCs by warning users before running potentially malicious programs downloaded from the Internet. This warning is presented as an interstitial dialog shown before running an app that has been downloaded from the Internet and is unrecognized or known to be malicious. No dialog is shown for apps that don't appear to be suspicious.
 
 Some information is sent to Microsoft about files and programs run on PCs with this feature enabled.
 
-If you enable this policy, SmartScreen will be turned on for all users. Its behavior can be controlled by the following options:  
+- If you enable this policy, SmartScreen will be turned on for all users. Its behavior can be controlled by the following options:
 
 - Warn and prevent bypass
-- Warn  
+- Warn.
 
-If you enable this policy with the "Warn and prevent bypass" option, SmartScreen's dialogs will not present the user with the option to disregard the warning and run the app. SmartScreen will continue to show the warning on subsequent attempts to run the app. If you enable this policy with the "Warn" option, SmartScreen's dialogs will warn the user that the app appears suspicious, but will permit the user to disregard the warning and run the app anyway. SmartScreen will not warn the user again for that app if the user tells SmartScreen to run the app.
+- If you enable this policy with the "Warn and prevent bypass" option, SmartScreen's dialogs won't present the user with the option to disregard the warning and run the app. SmartScreen will continue to show the warning on subsequent attempts to run the app.
 
-If you disable this policy, SmartScreen will be turned off for all users. Users will not be warned if they try to run suspicious apps from the Internet.
+- If you enable this policy with the "Warn" option, SmartScreen's dialogs will warn the user that the app appears suspicious, but will permit the user to disregard the warning and run the app anyway. SmartScreen won't warn the user again for that app if the user tells SmartScreen to run the app.
 
-If you do not configure this policy, SmartScreen will be enabled by default, but users may change their settings.
+- If you disable this policy, SmartScreen will be turned off for all users. Users won't be warned if they try to run suspicious apps from the Internet.
 
-<!--/Description-->
+- If you don't configure this policy, SmartScreen will be enabled by default, but users may change their settings.
+<!-- EnableSmartScreen-Description-End -->
 
+<!-- EnableSmartScreen-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+For more information, see [Microsoft Defender SmartScreen](/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen).
+<!-- EnableSmartScreen-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Configure Windows Defender SmartScreen*
--   GP name: *EnableSmartScreen*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+<!-- EnableSmartScreen-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnableSmartScreen-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-enforceshellextensionsecurity"></a>**ADMX_WindowsExplorer/EnforceShellExtensionSecurity**  
+<!-- EnableSmartScreen-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | EnableSmartScreen |
+| Friendly Name | Configure Windows Defender SmartScreen |
+| Location | Computer Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| Registry Value Name | EnableSmartScreen |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- EnableSmartScreen-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableSmartScreen-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableSmartScreen-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnableSmartScreen-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- EnforceShellExtensionSecurity-Begin -->
+## EnforceShellExtensionSecurity
 
-<hr/>
+<!-- EnforceShellExtensionSecurity-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- EnforceShellExtensionSecurity-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-This setting is designed to ensure that shell extensions can operate on a per-user basis.
+<!-- EnforceShellExtensionSecurity-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/EnforceShellExtensionSecurity
+```
+<!-- EnforceShellExtensionSecurity-OmaUri-End -->
 
-If you enable this setting, Windows is directed to only run those shell extensions that have either been approved by an administrator or that will not impact other users of the machine. A shell extension only runs if there is an entry in at least one of the following locations in registry.
+<!-- EnforceShellExtensionSecurity-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This setting is designed to ensure that shell extensions can operate on a per-user basis. If you enable this setting, Windows is directed to only run those shell extensions that have either been approved by an administrator or that won't impact other users of the machine.
+
+A shell extension only runs if there is an entry in at least one of the following locations in registry.
 
 For shell extensions that have been approved by the administrator and are available to all users of the computer, there must be an entry at HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Shell Extensions\Approved.
 
 For shell extensions to run on a per-user basis, there must be an entry at HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Shell Extensions\Approved.
+<!-- EnforceShellExtensionSecurity-Description-End -->
 
-<!--/Description-->
+<!-- EnforceShellExtensionSecurity-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnforceShellExtensionSecurity-Editable-End -->
 
+<!-- EnforceShellExtensionSecurity-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow only per user or approved shell extensions*
--   GP name: *EnforceShellExtensionSecurity*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnforceShellExtensionSecurity-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- EnforceShellExtensionSecurity-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-explorerribbonstartsminimized"></a>**ADMX_WindowsExplorer/ExplorerRibbonStartsMinimized**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | EnforceShellExtensionSecurity |
+| Friendly Name | Allow only per user or approved shell extensions |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | EnforceShellExtensionSecurity |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- EnforceShellExtensionSecurity-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EnforceShellExtensionSecurity-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnforceShellExtensionSecurity-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnforceShellExtensionSecurity-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ExplorerRibbonStartsMinimized-Begin -->
+## ExplorerRibbonStartsMinimized
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- ExplorerRibbonStartsMinimized-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ExplorerRibbonStartsMinimized-Applicability-End -->
 
-<hr/>
+<!-- ExplorerRibbonStartsMinimized-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/ExplorerRibbonStartsMinimized
+```
 
-<!--/Scope-->
-<!--Description-->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/ExplorerRibbonStartsMinimized
+```
+<!-- ExplorerRibbonStartsMinimized-OmaUri-End -->
+
+<!-- ExplorerRibbonStartsMinimized-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to specify whether the ribbon appears minimized or in full when new File Explorer windows are opened.
 
-If you enable this policy setting, you can set how the ribbon appears the first time users open File Explorer and whenever they open new windows.
+- If you enable this policy setting, you can set how the ribbon appears the first time users open File Explorer and whenever they open new windows.
 
-If you disable or do not configure this policy setting, users can choose how the ribbon appears when they open new windows.
+- If you disable or don't configure this policy setting, users can choose how the ribbon appears when they open new windows.
+<!-- ExplorerRibbonStartsMinimized-Description-End -->
 
-<!--/Description-->
+<!-- ExplorerRibbonStartsMinimized-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ExplorerRibbonStartsMinimized-Editable-End -->
 
+<!-- ExplorerRibbonStartsMinimized-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Start File Explorer with ribbon minimized*
--   GP name: *ExplorerRibbonStartsMinimized*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ExplorerRibbonStartsMinimized-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- ExplorerRibbonStartsMinimized-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-hidecontentviewmodesnippets"></a>**ADMX_WindowsExplorer/HideContentViewModeSnippets**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | ExplorerRibbonStartsMinimized |
+| Friendly Name | Start File Explorer with ribbon minimized |
+| Location | Computer and User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | ExplorerRibbonStartsMinimized |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- ExplorerRibbonStartsMinimized-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ExplorerRibbonStartsMinimized-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ExplorerRibbonStartsMinimized-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ExplorerRibbonStartsMinimized-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- HideContentViewModeSnippets-Begin -->
+## HideContentViewModeSnippets
 
-> [!div class = "checklist"]
-> * User
+<!-- HideContentViewModeSnippets-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- HideContentViewModeSnippets-Applicability-End -->
 
-<hr/>
+<!-- HideContentViewModeSnippets-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/HideContentViewModeSnippets
+```
+<!-- HideContentViewModeSnippets-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- HideContentViewModeSnippets-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to turn off the display of snippets in Content view mode.
 
-If you enable this policy setting, File Explorer will not display snippets in Content view mode.
+- If you enable this policy setting, File Explorer won't display snippets in Content view mode.
 
-If you disable or do not configure this policy setting, File Explorer shows snippets in Content view mode by default.
+- If you disable or don't configure this policy setting, File Explorer shows snippets in Content view mode by default.
+<!-- HideContentViewModeSnippets-Description-End -->
 
-<!--/Description-->
+<!-- HideContentViewModeSnippets-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideContentViewModeSnippets-Editable-End -->
 
+<!-- HideContentViewModeSnippets-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off the display of snippets in Content view mode*
--   GP name: *HideContentViewModeSnippets*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HideContentViewModeSnippets-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- HideContentViewModeSnippets-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-internet"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Internet**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | HideContentViewModeSnippets |
+| Friendly Name | Turn off the display of snippets in Content view mode |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | HideContentViewModeSnippets |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- HideContentViewModeSnippets-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- HideContentViewModeSnippets-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideContentViewModeSnippets-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HideContentViewModeSnippets-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IZ_Policy_OpenSearchPreview_Internet-Begin -->
+## IZ_Policy_OpenSearchPreview_Internet
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- IZ_Policy_OpenSearchPreview_Internet-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IZ_Policy_OpenSearchPreview_Internet-Applicability-End -->
 
-<hr/>
+<!-- IZ_Policy_OpenSearchPreview_Internet-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Internet
+```
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to manage whether a user may preview an item from this zone or display custom thumbnails in the preview pane in File Explorer. While this policy setting usually applies to items returned by OpenSearch queries using Search Connectors (which allow rich searching of remote sources from within the File Explorer), it might affect other items as well that are marked from this zone. For example, some application-specific items such as MAPI (Messaging Application Programming Interface) items that are returned as search results in File Explorer will be affected. MAPI items reside in the Internet zone, so disabling this policy for the Internet zone will prevent the previewing of these items in File Explorer. For the case of custom thumbnails, it is the zone of the thumbnail that is checked, not the zone of item. Typically these are the same but a source is able to define a specific location of a thumbnail that is different than the location of the item.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Internet
+```
+<!-- IZ_Policy_OpenSearchPreview_Internet-OmaUri-End -->
 
-If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+<!-- IZ_Policy_OpenSearchPreview_Internet-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage whether a user may preview an item from this zone or display custom thumbnails in the preview pane in File Explorer. While this policy setting usually applies to items returned by OpenSearch queries using Search Connectors (which allow rich searching of remote sources from within the File Explorer), it might affect other items as well that are marked from this zone. For example, some application-specific items such as MAPI (Messaging Application Programming Interface) items that are returned as search results in File Explorer will be affected. MAPI items reside in the Internet zone, so disabling this policy for the Internet zone will prevent the previewing of these items in File Explorer. For the case of custom thumbnails, it's the zone of the thumbnail that's checked, not the zone of item. Typically these are the same but a source is able to define a specific location of a thumbnail that's different than the location of the item.
 
-If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+- If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
 
-If you do not configure this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+- If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
 
-Changes to this setting may not be applied until the user logs off from Windows.
-
-<!--/Description-->
-
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
--   GP name: *IZ_Policy_OpenSearchPreview_Internet*
--   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Internet Zone*
--   GP ADMX file name: *WindowsExplorer.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-internetlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_InternetLockdown**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to manage whether a user may preview an item from this zone or display custom thumbnails in the preview pane in File Explorer. While this policy setting usually applies to items returned by OpenSearch queries using Search Connectors (which allow rich searching of remote sources from within the File Explorer), it might affect other items as well that are marked from this zone. For example, some application-specific items such as MAPI (Messaging Application Programming Interface) items that are returned as search results in File Explorer will be affected. MAPI items reside in the Internet zone, so disabling this policy for the Internet zone will prevent the previewing of these items in File Explorer. For the case of custom thumbnails, it is the zone of the thumbnail that is checked, not the zone of item. Typically these are the same but a source is able to define a specific location of a thumbnail that is different than the location of the item.
-
-If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
-
-If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
-
-If you do not configure this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+- If you don't configure this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
 
 Changes to this setting may not be applied until the user logs off from Windows.
+<!-- IZ_Policy_OpenSearchPreview_Internet-Description-End -->
 
-<!--/Description-->
+<!-- IZ_Policy_OpenSearchPreview_Internet-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchPreview_Internet-Editable-End -->
 
+<!-- IZ_Policy_OpenSearchPreview_Internet-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow OpenSearch queries in File Explorer*
--   GP name: *IZ_Policy_OpenSearchPreview_InternetLockdown*
--   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Internet Zone*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IZ_Policy_OpenSearchPreview_Internet-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- IZ_Policy_OpenSearchPreview_Internet-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-intranet"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Intranet**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | IZ_Policy_OpenSearchPreview_Internet |
+| Friendly Name | Allow previewing and custom thumbnails of OpenSearch query results in File Explorer |
+| Location | Computer and User Configuration |
+| Path | IZ_SecurityPage > Internet Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3 |
+| Registry Value Name | 180F |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- IZ_Policy_OpenSearchPreview_Internet-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- IZ_Policy_OpenSearchPreview_Internet-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchPreview_Internet-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IZ_Policy_OpenSearchPreview_Internet-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IZ_Policy_OpenSearchPreview_InternetLockdown-Begin -->
+## IZ_Policy_OpenSearchPreview_InternetLockdown
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- IZ_Policy_OpenSearchPreview_InternetLockdown-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IZ_Policy_OpenSearchPreview_InternetLockdown-Applicability-End -->
 
-<hr/>
+<!-- IZ_Policy_OpenSearchPreview_InternetLockdown-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_InternetLockdown
+```
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to manage whether a user may preview an item from this zone or display custom thumbnails in the preview pane in File Explorer. While this policy setting usually applies to items returned by OpenSearch queries using Search Connectors (which allow rich searching of remote sources from within the File Explorer), it might affect other items as well that are marked from this zone. For example, some application-specific items such as MAPI (Messaging Application Programming Interface) items that are returned as search results in File Explorer will be affected. MAPI items reside in the Internet zone, so disabling this policy for the Internet zone will prevent the previewing of these items in File Explorer. For the case of custom thumbnails, it is the zone of the thumbnail that is checked, not the zone of item. Typically these are the same but a source is able to define a specific location of a thumbnail that is different than the location of the item.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_InternetLockdown
+```
+<!-- IZ_Policy_OpenSearchPreview_InternetLockdown-OmaUri-End -->
 
-If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+<!-- IZ_Policy_OpenSearchPreview_InternetLockdown-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage whether a user may preview an item from this zone or display custom thumbnails in the preview pane in File Explorer. While this policy setting usually applies to items returned by OpenSearch queries using Search Connectors (which allow rich searching of remote sources from within the File Explorer), it might affect other items as well that are marked from this zone. For example, some application-specific items such as MAPI (Messaging Application Programming Interface) items that are returned as search results in File Explorer will be affected. MAPI items reside in the Internet zone, so disabling this policy for the Internet zone will prevent the previewing of these items in File Explorer. For the case of custom thumbnails, it's the zone of the thumbnail that's checked, not the zone of item. Typically these are the same but a source is able to define a specific location of a thumbnail that's different than the location of the item.
 
-If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+- If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
 
-If you do not configure this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+- If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
 
-Changes to this setting may not be applied until the user logs off from Windows.
-
-<!--/Description-->
-
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
--   GP name: *IZ_Policy_OpenSearchPreview_Intranet*
--   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Intranet Zone*
--   GP ADMX file name: *WindowsExplorer.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-intranetlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_IntranetLockdown**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to manage whether a user may preview an item from this zone or display custom thumbnails in the preview pane in File Explorer. While this policy setting usually applies to items returned by OpenSearch queries using Search Connectors (which allow rich searching of remote sources from within the File Explorer), it might affect other items as well that are marked from this zone. For example, some application-specific items such as MAPI (Messaging Application Programming Interface) items that are returned as search results in File Explorer will be affected. MAPI items reside in the Internet zone, so disabling this policy for the Internet zone will prevent the previewing of these items in File Explorer. For the case of custom thumbnails, it is the zone of the thumbnail that is checked, not the zone of item. Typically these are the same but a source is able to define a specific location of a thumbnail that is different than the location of the item.
-
-If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
-
-If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
-
-If you do not configure this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+- If you don't configure this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
 
 Changes to this setting may not be applied until the user logs off from Windows.
+<!-- IZ_Policy_OpenSearchPreview_InternetLockdown-Description-End -->
 
-<!--/Description-->
+<!-- IZ_Policy_OpenSearchPreview_InternetLockdown-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchPreview_InternetLockdown-Editable-End -->
 
+<!-- IZ_Policy_OpenSearchPreview_InternetLockdown-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
--   GP name: *IZ_Policy_OpenSearchPreview_IntranetLockdown*
--   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Intranet Zone*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IZ_Policy_OpenSearchPreview_InternetLockdown-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- IZ_Policy_OpenSearchPreview_InternetLockdown-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-localmachine"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_LocalMachine**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | IZ_Policy_OpenSearchPreview_InternetLockdown |
+| Friendly Name | Allow previewing and custom thumbnails of OpenSearch query results in File Explorer |
+| Location | Computer and User Configuration |
+| Path | IZ_SecurityPage > Locked-Down Internet Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\3 |
+| Registry Value Name | 180F |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- IZ_Policy_OpenSearchPreview_InternetLockdown-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- IZ_Policy_OpenSearchPreview_InternetLockdown-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchPreview_InternetLockdown-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IZ_Policy_OpenSearchPreview_InternetLockdown-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IZ_Policy_OpenSearchPreview_Intranet-Begin -->
+## IZ_Policy_OpenSearchPreview_Intranet
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- IZ_Policy_OpenSearchPreview_Intranet-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IZ_Policy_OpenSearchPreview_Intranet-Applicability-End -->
 
-<hr/>
+<!-- IZ_Policy_OpenSearchPreview_Intranet-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Intranet
+```
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to manage whether a user may preview an item from this zone or display custom thumbnails in the preview pane in File Explorer. While this policy setting usually applies to items returned by OpenSearch queries using Search Connectors (which allow rich searching of remote sources from within the File Explorer), it might affect other items as well that are marked from this zone. For example, some application-specific items such as MAPI (Messaging Application Programming Interface) items that are returned as search results in File Explorer will be affected. MAPI items reside in the Internet zone, so disabling this policy for the Internet zone will prevent the previewing of these items in File Explorer. For the case of custom thumbnails, it is the zone of the thumbnail that is checked, not the zone of item. Typically these are the same but a source is able to define a specific location of a thumbnail that is different than the location of the item.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Intranet
+```
+<!-- IZ_Policy_OpenSearchPreview_Intranet-OmaUri-End -->
 
-If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+<!-- IZ_Policy_OpenSearchPreview_Intranet-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage whether a user may preview an item from this zone or display custom thumbnails in the preview pane in File Explorer. While this policy setting usually applies to items returned by OpenSearch queries using Search Connectors (which allow rich searching of remote sources from within the File Explorer), it might affect other items as well that are marked from this zone. For example, some application-specific items such as MAPI (Messaging Application Programming Interface) items that are returned as search results in File Explorer will be affected. MAPI items reside in the Internet zone, so disabling this policy for the Internet zone will prevent the previewing of these items in File Explorer. For the case of custom thumbnails, it's the zone of the thumbnail that's checked, not the zone of item. Typically these are the same but a source is able to define a specific location of a thumbnail that's different than the location of the item.
 
-If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+- If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
 
-If you do not configure this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+- If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
 
-Changes to this setting may not be applied until the user logs off from Windows.
-
-<!--/Description-->
-
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
--   GP name: *IZ_Policy_OpenSearchPreview_LocalMachine*
--   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Local Machine Zone*
--   GP ADMX file name: *WindowsExplorer.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-localmachinelockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_LocalMachineLockdown**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to manage whether a user may preview an item from this zone or display custom thumbnails in the preview pane in File Explorer. While this policy setting usually applies to items returned by OpenSearch queries using Search Connectors (which allow rich searching of remote sources from within the File Explorer), it might affect other items as well that are marked from this zone. For example, some application-specific items such as MAPI (Messaging Application Programming Interface) items that are returned as search results in File Explorer will be affected. MAPI items reside in the Internet zone, so disabling this policy for the Internet zone will prevent the previewing of these items in File Explorer. For the case of custom thumbnails, it is the zone of the thumbnail that is checked, not the zone of item. Typically these are the same but a source is able to define a specific location of a thumbnail that is different than the location of the item.
-
-If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
-
-If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
-
-If you do not configure this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+- If you don't configure this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
 
 Changes to this setting may not be applied until the user logs off from Windows.
+<!-- IZ_Policy_OpenSearchPreview_Intranet-Description-End -->
 
-<!--/Description-->
+<!-- IZ_Policy_OpenSearchPreview_Intranet-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchPreview_Intranet-Editable-End -->
 
+<!-- IZ_Policy_OpenSearchPreview_Intranet-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
--   GP name: *IZ_Policy_OpenSearchPreview_LocalMachineLockdown*
--   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Local Machine Zone*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IZ_Policy_OpenSearchPreview_Intranet-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- IZ_Policy_OpenSearchPreview_Intranet-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-restricted"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Restricted**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | IZ_Policy_OpenSearchPreview_Intranet |
+| Friendly Name | Allow previewing and custom thumbnails of OpenSearch query results in File Explorer |
+| Location | Computer and User Configuration |
+| Path | IZ_SecurityPage > Intranet Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1 |
+| Registry Value Name | 180F |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- IZ_Policy_OpenSearchPreview_Intranet-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- IZ_Policy_OpenSearchPreview_Intranet-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchPreview_Intranet-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IZ_Policy_OpenSearchPreview_Intranet-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IZ_Policy_OpenSearchPreview_IntranetLockdown-Begin -->
+## IZ_Policy_OpenSearchPreview_IntranetLockdown
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- IZ_Policy_OpenSearchPreview_IntranetLockdown-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IZ_Policy_OpenSearchPreview_IntranetLockdown-Applicability-End -->
 
-<hr/>
+<!-- IZ_Policy_OpenSearchPreview_IntranetLockdown-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_IntranetLockdown
+```
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to manage whether a user may preview an item from this zone or display custom thumbnails in the preview pane in File Explorer. While this policy setting usually applies to items returned by OpenSearch queries using Search Connectors (which allow rich searching of remote sources from within the File Explorer), it might affect other items as well that are marked from this zone. For example, some application-specific items such as MAPI (Messaging Application Programming Interface) items that are returned as search results in File Explorer will be affected. MAPI items reside in the Internet zone, so disabling this policy for the Internet zone will prevent the previewing of these items in File Explorer. For the case of custom thumbnails, it is the zone of the thumbnail that is checked, not the zone of item. Typically these are the same but a source is able to define a specific location of a thumbnail that is different than the location of the item.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_IntranetLockdown
+```
+<!-- IZ_Policy_OpenSearchPreview_IntranetLockdown-OmaUri-End -->
 
-If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+<!-- IZ_Policy_OpenSearchPreview_IntranetLockdown-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage whether a user may preview an item from this zone or display custom thumbnails in the preview pane in File Explorer. While this policy setting usually applies to items returned by OpenSearch queries using Search Connectors (which allow rich searching of remote sources from within the File Explorer), it might affect other items as well that are marked from this zone. For example, some application-specific items such as MAPI (Messaging Application Programming Interface) items that are returned as search results in File Explorer will be affected. MAPI items reside in the Internet zone, so disabling this policy for the Internet zone will prevent the previewing of these items in File Explorer. For the case of custom thumbnails, it's the zone of the thumbnail that's checked, not the zone of item. Typically these are the same but a source is able to define a specific location of a thumbnail that's different than the location of the item.
 
-If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+- If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
 
-If you do not configure this policy setting, users cannot preview items or get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+- If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
 
-Changes to this setting may not be applied until the user logs off from Windows.
-
-<!--/Description-->
-
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
--   GP name: *IZ_Policy_OpenSearchPreview_Restricted*
--   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Restricted Sites Zone*
--   GP ADMX file name: *WindowsExplorer.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-restrictedlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_RestrictedLockdown**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to manage whether a user may preview an item from this zone or display custom thumbnails in the preview pane in File Explorer. While this policy setting usually applies to items returned by OpenSearch queries using Search Connectors (which allow rich searching of remote sources from within the File Explorer), it might affect other items as well that are marked from this zone. For example, some application-specific items such as MAPI (Messaging Application Programming Interface) items that are returned as search results in File Explorer will be affected. MAPI items reside in the Internet zone, so disabling this policy for the Internet zone will prevent the previewing of these items in File Explorer. For the case of custom thumbnails, it is the zone of the thumbnail that is checked, not the zone of item. Typically these are the same but a source is able to define a specific location of a thumbnail that is different than the location of the item.
-
-If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
-
-If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
-
-If you do not configure this policy setting, users cannot preview items or get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+- If you don't configure this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
 
 Changes to this setting may not be applied until the user logs off from Windows.
+<!-- IZ_Policy_OpenSearchPreview_IntranetLockdown-Description-End -->
 
-<!--/Description-->
+<!-- IZ_Policy_OpenSearchPreview_IntranetLockdown-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchPreview_IntranetLockdown-Editable-End -->
 
+<!-- IZ_Policy_OpenSearchPreview_IntranetLockdown-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
--   GP name: *IZ_Policy_OpenSearchPreview_RestrictedLockdown*
--   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Restricted Sites Zone*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IZ_Policy_OpenSearchPreview_IntranetLockdown-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- IZ_Policy_OpenSearchPreview_IntranetLockdown-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-trusted"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Trusted**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | IZ_Policy_OpenSearchPreview_IntranetLockdown |
+| Friendly Name | Allow previewing and custom thumbnails of OpenSearch query results in File Explorer |
+| Location | Computer and User Configuration |
+| Path | IZ_SecurityPage > Locked-Down Intranet Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\1 |
+| Registry Value Name | 180F |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- IZ_Policy_OpenSearchPreview_IntranetLockdown-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- IZ_Policy_OpenSearchPreview_IntranetLockdown-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchPreview_IntranetLockdown-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IZ_Policy_OpenSearchPreview_IntranetLockdown-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IZ_Policy_OpenSearchPreview_LocalMachine-Begin -->
+## IZ_Policy_OpenSearchPreview_LocalMachine
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- IZ_Policy_OpenSearchPreview_LocalMachine-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IZ_Policy_OpenSearchPreview_LocalMachine-Applicability-End -->
 
-<hr/>
+<!-- IZ_Policy_OpenSearchPreview_LocalMachine-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_LocalMachine
+```
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to manage whether a user may preview an item from this zone or display custom thumbnails in the preview pane in File Explorer. While this policy setting usually applies to items returned by OpenSearch queries using Search Connectors (which allow rich searching of remote sources from within the File Explorer), it might affect other items as well that are marked from this zone. For example, some application-specific items such as MAPI (Messaging Application Programming Interface) items that are returned as search results in File Explorer will be affected. MAPI items reside in the Internet zone, so disabling this policy for the Internet zone will prevent the previewing of these items in File Explorer. For the case of custom thumbnails, it is the zone of the thumbnail that is checked, not the zone of item. Typically these are the same but a source is able to define a specific location of a thumbnail that is different than the location of the item.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_LocalMachine
+```
+<!-- IZ_Policy_OpenSearchPreview_LocalMachine-OmaUri-End -->
 
-If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+<!-- IZ_Policy_OpenSearchPreview_LocalMachine-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage whether a user may preview an item from this zone or display custom thumbnails in the preview pane in File Explorer. While this policy setting usually applies to items returned by OpenSearch queries using Search Connectors (which allow rich searching of remote sources from within the File Explorer), it might affect other items as well that are marked from this zone. For example, some application-specific items such as MAPI (Messaging Application Programming Interface) items that are returned as search results in File Explorer will be affected. MAPI items reside in the Internet zone, so disabling this policy for the Internet zone will prevent the previewing of these items in File Explorer. For the case of custom thumbnails, it's the zone of the thumbnail that's checked, not the zone of item. Typically these are the same but a source is able to define a specific location of a thumbnail that's different than the location of the item.
 
-If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+- If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
 
-If you do not configure this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+- If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
 
-Changes to this setting may not be applied until the user logs off from Windows.
-
-<!--/Description-->
-
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
--   GP name: *IZ_Policy_OpenSearchPreview_Trusted*
--   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Trusted Sites Zone*
--   GP ADMX file name: *WindowsExplorer.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchpreview-trustedlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_TrustedLockdown**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to manage whether a user may preview an item from this zone or display custom thumbnails in the preview pane in File Explorer. While this policy setting usually applies to items returned by OpenSearch queries using Search Connectors (which allow rich searching of remote sources from within the File Explorer), it might affect other items as well that are marked from this zone. For example, some application-specific items such as MAPI (Messaging Application Programming Interface) items that are returned as search results in File Explorer will be affected. MAPI items reside in the Internet zone, so disabling this policy for the Internet zone will prevent the previewing of these items in File Explorer. For the case of custom thumbnails, it is the zone of the thumbnail that is checked, not the zone of item. Typically these are the same but a source is able to define a specific location of a thumbnail that is different than the location of the item.
-
-If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
-
-If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
-
-If you do not configure this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+- If you don't configure this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
 
 Changes to this setting may not be applied until the user logs off from Windows.
+<!-- IZ_Policy_OpenSearchPreview_LocalMachine-Description-End -->
 
-<!--/Description-->
+<!-- IZ_Policy_OpenSearchPreview_LocalMachine-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchPreview_LocalMachine-Editable-End -->
 
+<!-- IZ_Policy_OpenSearchPreview_LocalMachine-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
--   GP name: *IZ_Policy_OpenSearchPreview_TrustedLockdown*
--   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Trusted Sites Zone*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IZ_Policy_OpenSearchPreview_LocalMachine-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- IZ_Policy_OpenSearchPreview_LocalMachine-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-internet"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Internet**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | IZ_Policy_OpenSearchPreview_LocalMachine |
+| Friendly Name | Allow previewing and custom thumbnails of OpenSearch query results in File Explorer |
+| Location | Computer and User Configuration |
+| Path | IZ_SecurityPage > Local Machine Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0 |
+| Registry Value Name | 180F |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- IZ_Policy_OpenSearchPreview_LocalMachine-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- IZ_Policy_OpenSearchPreview_LocalMachine-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchPreview_LocalMachine-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IZ_Policy_OpenSearchPreview_LocalMachine-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IZ_Policy_OpenSearchPreview_LocalMachineLockdown-Begin -->
+## IZ_Policy_OpenSearchPreview_LocalMachineLockdown
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- IZ_Policy_OpenSearchPreview_LocalMachineLockdown-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IZ_Policy_OpenSearchPreview_LocalMachineLockdown-Applicability-End -->
 
-<hr/>
+<!-- IZ_Policy_OpenSearchPreview_LocalMachineLockdown-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_LocalMachineLockdown
+```
 
-<!--/Scope-->
-<!--Description-->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_LocalMachineLockdown
+```
+<!-- IZ_Policy_OpenSearchPreview_LocalMachineLockdown-OmaUri-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_LocalMachineLockdown-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage whether a user may preview an item from this zone or display custom thumbnails in the preview pane in File Explorer. While this policy setting usually applies to items returned by OpenSearch queries using Search Connectors (which allow rich searching of remote sources from within the File Explorer), it might affect other items as well that are marked from this zone. For example, some application-specific items such as MAPI (Messaging Application Programming Interface) items that are returned as search results in File Explorer will be affected. MAPI items reside in the Internet zone, so disabling this policy for the Internet zone will prevent the previewing of these items in File Explorer. For the case of custom thumbnails, it's the zone of the thumbnail that's checked, not the zone of item. Typically these are the same but a source is able to define a specific location of a thumbnail that's different than the location of the item.
+
+- If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+
+- If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+
+- If you don't configure this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+
+Changes to this setting may not be applied until the user logs off from Windows.
+<!-- IZ_Policy_OpenSearchPreview_LocalMachineLockdown-Description-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_LocalMachineLockdown-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchPreview_LocalMachineLockdown-Editable-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_LocalMachineLockdown-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IZ_Policy_OpenSearchPreview_LocalMachineLockdown-DFProperties-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_LocalMachineLockdown-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | IZ_Policy_OpenSearchPreview_LocalMachineLockdown |
+| Friendly Name | Allow previewing and custom thumbnails of OpenSearch query results in File Explorer |
+| Location | Computer and User Configuration |
+| Path | IZ_SecurityPage > Locked-Down Local Machine Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\0 |
+| Registry Value Name | 180F |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- IZ_Policy_OpenSearchPreview_LocalMachineLockdown-AdmxBacked-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_LocalMachineLockdown-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchPreview_LocalMachineLockdown-Examples-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_LocalMachineLockdown-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_Restricted-Begin -->
+## IZ_Policy_OpenSearchPreview_Restricted
+
+<!-- IZ_Policy_OpenSearchPreview_Restricted-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IZ_Policy_OpenSearchPreview_Restricted-Applicability-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_Restricted-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Restricted
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Restricted
+```
+<!-- IZ_Policy_OpenSearchPreview_Restricted-OmaUri-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_Restricted-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage whether a user may preview an item from this zone or display custom thumbnails in the preview pane in File Explorer. While this policy setting usually applies to items returned by OpenSearch queries using Search Connectors (which allow rich searching of remote sources from within the File Explorer), it might affect other items as well that are marked from this zone. For example, some application-specific items such as MAPI (Messaging Application Programming Interface) items that are returned as search results in File Explorer will be affected. MAPI items reside in the Internet zone, so disabling this policy for the Internet zone will prevent the previewing of these items in File Explorer. For the case of custom thumbnails, it's the zone of the thumbnail that's checked, not the zone of item. Typically these are the same but a source is able to define a specific location of a thumbnail that's different than the location of the item.
+
+- If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+
+- If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+
+- If you don't configure this policy setting, users can't preview items or get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+
+Changes to this setting may not be applied until the user logs off from Windows.
+<!-- IZ_Policy_OpenSearchPreview_Restricted-Description-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_Restricted-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchPreview_Restricted-Editable-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_Restricted-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IZ_Policy_OpenSearchPreview_Restricted-DFProperties-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_Restricted-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | IZ_Policy_OpenSearchPreview_Restricted |
+| Friendly Name | Allow previewing and custom thumbnails of OpenSearch query results in File Explorer |
+| Location | Computer and User Configuration |
+| Path | IZ_SecurityPage > Restricted Sites Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4 |
+| Registry Value Name | 180F |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- IZ_Policy_OpenSearchPreview_Restricted-AdmxBacked-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_Restricted-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchPreview_Restricted-Examples-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_Restricted-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_RestrictedLockdown-Begin -->
+## IZ_Policy_OpenSearchPreview_RestrictedLockdown
+
+<!-- IZ_Policy_OpenSearchPreview_RestrictedLockdown-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IZ_Policy_OpenSearchPreview_RestrictedLockdown-Applicability-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_RestrictedLockdown-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_RestrictedLockdown
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_RestrictedLockdown
+```
+<!-- IZ_Policy_OpenSearchPreview_RestrictedLockdown-OmaUri-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_RestrictedLockdown-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage whether a user may preview an item from this zone or display custom thumbnails in the preview pane in File Explorer. While this policy setting usually applies to items returned by OpenSearch queries using Search Connectors (which allow rich searching of remote sources from within the File Explorer), it might affect other items as well that are marked from this zone. For example, some application-specific items such as MAPI (Messaging Application Programming Interface) items that are returned as search results in File Explorer will be affected. MAPI items reside in the Internet zone, so disabling this policy for the Internet zone will prevent the previewing of these items in File Explorer. For the case of custom thumbnails, it's the zone of the thumbnail that's checked, not the zone of item. Typically these are the same but a source is able to define a specific location of a thumbnail that's different than the location of the item.
+
+- If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+
+- If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+
+- If you don't configure this policy setting, users can't preview items or get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+
+Changes to this setting may not be applied until the user logs off from Windows.
+<!-- IZ_Policy_OpenSearchPreview_RestrictedLockdown-Description-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_RestrictedLockdown-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchPreview_RestrictedLockdown-Editable-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_RestrictedLockdown-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IZ_Policy_OpenSearchPreview_RestrictedLockdown-DFProperties-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_RestrictedLockdown-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | IZ_Policy_OpenSearchPreview_RestrictedLockdown |
+| Friendly Name | Allow previewing and custom thumbnails of OpenSearch query results in File Explorer |
+| Location | Computer and User Configuration |
+| Path | IZ_SecurityPage > Locked-Down Restricted Sites Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\4 |
+| Registry Value Name | 180F |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- IZ_Policy_OpenSearchPreview_RestrictedLockdown-AdmxBacked-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_RestrictedLockdown-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchPreview_RestrictedLockdown-Examples-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_RestrictedLockdown-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_Trusted-Begin -->
+## IZ_Policy_OpenSearchPreview_Trusted
+
+<!-- IZ_Policy_OpenSearchPreview_Trusted-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IZ_Policy_OpenSearchPreview_Trusted-Applicability-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_Trusted-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Trusted
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_Trusted
+```
+<!-- IZ_Policy_OpenSearchPreview_Trusted-OmaUri-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_Trusted-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage whether a user may preview an item from this zone or display custom thumbnails in the preview pane in File Explorer. While this policy setting usually applies to items returned by OpenSearch queries using Search Connectors (which allow rich searching of remote sources from within the File Explorer), it might affect other items as well that are marked from this zone. For example, some application-specific items such as MAPI (Messaging Application Programming Interface) items that are returned as search results in File Explorer will be affected. MAPI items reside in the Internet zone, so disabling this policy for the Internet zone will prevent the previewing of these items in File Explorer. For the case of custom thumbnails, it's the zone of the thumbnail that's checked, not the zone of item. Typically these are the same but a source is able to define a specific location of a thumbnail that's different than the location of the item.
+
+- If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+
+- If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+
+- If you don't configure this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+
+Changes to this setting may not be applied until the user logs off from Windows.
+<!-- IZ_Policy_OpenSearchPreview_Trusted-Description-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_Trusted-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchPreview_Trusted-Editable-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_Trusted-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IZ_Policy_OpenSearchPreview_Trusted-DFProperties-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_Trusted-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | IZ_Policy_OpenSearchPreview_Trusted |
+| Friendly Name | Allow previewing and custom thumbnails of OpenSearch query results in File Explorer |
+| Location | Computer and User Configuration |
+| Path | IZ_SecurityPage > Trusted Sites Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2 |
+| Registry Value Name | 180F |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- IZ_Policy_OpenSearchPreview_Trusted-AdmxBacked-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_Trusted-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchPreview_Trusted-Examples-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_Trusted-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_TrustedLockdown-Begin -->
+## IZ_Policy_OpenSearchPreview_TrustedLockdown
+
+<!-- IZ_Policy_OpenSearchPreview_TrustedLockdown-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IZ_Policy_OpenSearchPreview_TrustedLockdown-Applicability-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_TrustedLockdown-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_TrustedLockdown
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchPreview_TrustedLockdown
+```
+<!-- IZ_Policy_OpenSearchPreview_TrustedLockdown-OmaUri-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_TrustedLockdown-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to manage whether a user may preview an item from this zone or display custom thumbnails in the preview pane in File Explorer. While this policy setting usually applies to items returned by OpenSearch queries using Search Connectors (which allow rich searching of remote sources from within the File Explorer), it might affect other items as well that are marked from this zone. For example, some application-specific items such as MAPI (Messaging Application Programming Interface) items that are returned as search results in File Explorer will be affected. MAPI items reside in the Internet zone, so disabling this policy for the Internet zone will prevent the previewing of these items in File Explorer. For the case of custom thumbnails, it's the zone of the thumbnail that's checked, not the zone of item. Typically these are the same but a source is able to define a specific location of a thumbnail that's different than the location of the item.
+
+- If you enable this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+
+- If you disable this policy setting, users will be prevented from previewing items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+
+- If you don't configure this policy setting, users can preview items and get custom thumbnails from OpenSearch query results in this zone using File Explorer.
+
+Changes to this setting may not be applied until the user logs off from Windows.
+<!-- IZ_Policy_OpenSearchPreview_TrustedLockdown-Description-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_TrustedLockdown-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchPreview_TrustedLockdown-Editable-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_TrustedLockdown-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IZ_Policy_OpenSearchPreview_TrustedLockdown-DFProperties-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_TrustedLockdown-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | IZ_Policy_OpenSearchPreview_TrustedLockdown |
+| Friendly Name | Allow previewing and custom thumbnails of OpenSearch query results in File Explorer |
+| Location | Computer and User Configuration |
+| Path | IZ_SecurityPage > Locked-Down Trusted Sites Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\2 |
+| Registry Value Name | 180F |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- IZ_Policy_OpenSearchPreview_TrustedLockdown-AdmxBacked-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_TrustedLockdown-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchPreview_TrustedLockdown-Examples-End -->
+
+<!-- IZ_Policy_OpenSearchPreview_TrustedLockdown-End -->
+
+<!-- IZ_Policy_OpenSearchQuery_Internet-Begin -->
+## IZ_Policy_OpenSearchQuery_Internet
+
+<!-- IZ_Policy_OpenSearchQuery_Internet-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IZ_Policy_OpenSearchQuery_Internet-Applicability-End -->
+
+<!-- IZ_Policy_OpenSearchQuery_Internet-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Internet
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Internet
+```
+<!-- IZ_Policy_OpenSearchQuery_Internet-OmaUri-End -->
+
+<!-- IZ_Policy_OpenSearchQuery_Internet-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether OpenSearch queries in this zone can be performed using Search Connectors in File Explorer. Search Connectors allow rich searching of remote sources from within File Explorer. Search results will be returned in File Explorer and can be acted upon like local files.
 
-If you enable this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+- If you enable this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
 
-If you disable this policy setting, users are prevented from performing OpenSearch queries in this zone using Search Connectors.
+- If you disable this policy setting, users are prevented from performing OpenSearch queries in this zone using Search Connectors.
 
-If you do not configure this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+- If you don't configure this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+<!-- IZ_Policy_OpenSearchQuery_Internet-Description-End -->
 
-<!--/Description-->
+<!-- IZ_Policy_OpenSearchQuery_Internet-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchQuery_Internet-Editable-End -->
 
+<!-- IZ_Policy_OpenSearchQuery_Internet-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow OpenSearch queries in File Explorer*
--   GP name: *IZ_Policy_OpenSearchQuery_Internet*
--   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Internet Zone*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IZ_Policy_OpenSearchQuery_Internet-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_Internet-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-internetlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_InternetLockdown**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | IZ_Policy_OpenSearchQuery_Internet |
+| Friendly Name | Allow OpenSearch queries in File Explorer |
+| Location | Computer and User Configuration |
+| Path | IZ_SecurityPage > Internet Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3 |
+| Registry Value Name | 180E |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- IZ_Policy_OpenSearchQuery_Internet-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- IZ_Policy_OpenSearchQuery_Internet-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchQuery_Internet-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_Internet-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IZ_Policy_OpenSearchQuery_InternetLockdown-Begin -->
+## IZ_Policy_OpenSearchQuery_InternetLockdown
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- IZ_Policy_OpenSearchQuery_InternetLockdown-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IZ_Policy_OpenSearchQuery_InternetLockdown-Applicability-End -->
 
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_InternetLockdown-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_InternetLockdown
+```
 
-<!--/Scope-->
-<!--Description-->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_InternetLockdown
+```
+<!-- IZ_Policy_OpenSearchQuery_InternetLockdown-OmaUri-End -->
+
+<!-- IZ_Policy_OpenSearchQuery_InternetLockdown-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether OpenSearch queries in this zone can be performed using Search Connectors in File Explorer. Search Connectors allow rich searching of remote sources from within File Explorer. Search results will be returned in File Explorer and can be acted upon like local files.
 
-If you enable this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+- If you enable this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
 
-If you disable this policy setting, users are prevented from performing OpenSearch queries in this zone using Search Connectors.
+- If you disable this policy setting, users are prevented from performing OpenSearch queries in this zone using Search Connectors.
 
-If you do not configure this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+- If you don't configure this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+<!-- IZ_Policy_OpenSearchQuery_InternetLockdown-Description-End -->
 
-<!--/Description-->
+<!-- IZ_Policy_OpenSearchQuery_InternetLockdown-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchQuery_InternetLockdown-Editable-End -->
 
+<!-- IZ_Policy_OpenSearchQuery_InternetLockdown-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow OpenSearch queries in File Explorer*
--   GP name: *IZ_Policy_OpenSearchQuery_InternetLockdown*
--   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Internet Zone*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IZ_Policy_OpenSearchQuery_InternetLockdown-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_InternetLockdown-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-intranet"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Intranet**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | IZ_Policy_OpenSearchQuery_InternetLockdown |
+| Friendly Name | Allow OpenSearch queries in File Explorer |
+| Location | Computer and User Configuration |
+| Path | IZ_SecurityPage > Locked-Down Internet Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\3 |
+| Registry Value Name | 180E |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- IZ_Policy_OpenSearchQuery_InternetLockdown-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- IZ_Policy_OpenSearchQuery_InternetLockdown-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchQuery_InternetLockdown-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_InternetLockdown-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IZ_Policy_OpenSearchQuery_Intranet-Begin -->
+## IZ_Policy_OpenSearchQuery_Intranet
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- IZ_Policy_OpenSearchQuery_Intranet-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IZ_Policy_OpenSearchQuery_Intranet-Applicability-End -->
 
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_Intranet-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Intranet
+```
 
-<!--/Scope-->
-<!--Description-->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Intranet
+```
+<!-- IZ_Policy_OpenSearchQuery_Intranet-OmaUri-End -->
+
+<!-- IZ_Policy_OpenSearchQuery_Intranet-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether OpenSearch queries in this zone can be performed using Search Connectors in File Explorer. Search Connectors allow rich searching of remote sources from within File Explorer. Search results will be returned in File Explorer and can be acted upon like local files.
 
-If you enable this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+- If you enable this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
 
-If you disable this policy setting, users are prevented from performing OpenSearch queries in this zone using Search Connectors.
+- If you disable this policy setting, users are prevented from performing OpenSearch queries in this zone using Search Connectors.
 
-If you do not configure this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+- If you don't configure this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+<!-- IZ_Policy_OpenSearchQuery_Intranet-Description-End -->
 
-<!--/Description-->
+<!-- IZ_Policy_OpenSearchQuery_Intranet-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchQuery_Intranet-Editable-End -->
 
+<!-- IZ_Policy_OpenSearchQuery_Intranet-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow OpenSearch queries in File Explorer*
--   GP name: *IZ_Policy_OpenSearchQuery_Intranet*
--   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Intranet Zone*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IZ_Policy_OpenSearchQuery_Intranet-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_Intranet-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-intranetlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_IntranetLockdown**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | IZ_Policy_OpenSearchQuery_Intranet |
+| Friendly Name | Allow OpenSearch queries in File Explorer |
+| Location | Computer and User Configuration |
+| Path | IZ_SecurityPage > Intranet Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\1 |
+| Registry Value Name | 180E |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- IZ_Policy_OpenSearchQuery_Intranet-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- IZ_Policy_OpenSearchQuery_Intranet-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchQuery_Intranet-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_Intranet-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IZ_Policy_OpenSearchQuery_IntranetLockdown-Begin -->
+## IZ_Policy_OpenSearchQuery_IntranetLockdown
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- IZ_Policy_OpenSearchQuery_IntranetLockdown-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IZ_Policy_OpenSearchQuery_IntranetLockdown-Applicability-End -->
 
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_IntranetLockdown-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_IntranetLockdown
+```
 
-<!--/Scope-->
-<!--Description-->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_IntranetLockdown
+```
+<!-- IZ_Policy_OpenSearchQuery_IntranetLockdown-OmaUri-End -->
+
+<!-- IZ_Policy_OpenSearchQuery_IntranetLockdown-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether OpenSearch queries in this zone can be performed using Search Connectors in File Explorer. Search Connectors allow rich searching of remote sources from within File Explorer. Search results will be returned in File Explorer and can be acted upon like local files.
 
-If you enable this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+- If you enable this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
 
-If you disable this policy setting, users are prevented from performing OpenSearch queries in this zone using Search Connectors.
+- If you disable this policy setting, users are prevented from performing OpenSearch queries in this zone using Search Connectors.
 
-If you do not configure this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+- If you don't configure this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+<!-- IZ_Policy_OpenSearchQuery_IntranetLockdown-Description-End -->
 
-<!--/Description-->
+<!-- IZ_Policy_OpenSearchQuery_IntranetLockdown-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchQuery_IntranetLockdown-Editable-End -->
 
+<!-- IZ_Policy_OpenSearchQuery_IntranetLockdown-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow OpenSearch queries in File Explorer*
--   GP name: *IZ_Policy_OpenSearchQuery_IntranetLockdown*
--   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Intranet Zone*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IZ_Policy_OpenSearchQuery_IntranetLockdown-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_IntranetLockdown-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-localmachine"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_LocalMachine**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | IZ_Policy_OpenSearchQuery_IntranetLockdown |
+| Friendly Name | Allow OpenSearch queries in File Explorer |
+| Location | Computer and User Configuration |
+| Path | IZ_SecurityPage > Locked-Down Intranet Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\1 |
+| Registry Value Name | 180E |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- IZ_Policy_OpenSearchQuery_IntranetLockdown-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- IZ_Policy_OpenSearchQuery_IntranetLockdown-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchQuery_IntranetLockdown-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_IntranetLockdown-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IZ_Policy_OpenSearchQuery_LocalMachine-Begin -->
+## IZ_Policy_OpenSearchQuery_LocalMachine
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- IZ_Policy_OpenSearchQuery_LocalMachine-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IZ_Policy_OpenSearchQuery_LocalMachine-Applicability-End -->
 
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_LocalMachine-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_LocalMachine
+```
 
-<!--/Scope-->
-<!--Description-->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_LocalMachine
+```
+<!-- IZ_Policy_OpenSearchQuery_LocalMachine-OmaUri-End -->
+
+<!-- IZ_Policy_OpenSearchQuery_LocalMachine-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether OpenSearch queries in this zone can be performed using Search Connectors in File Explorer. Search Connectors allow rich searching of remote sources from within File Explorer. Search results will be returned in File Explorer and can be acted upon like local files.
 
-If you enable this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+- If you enable this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
 
-If you disable this policy setting, users are prevented from performing OpenSearch queries in this zone using Search Connectors.
+- If you disable this policy setting, users are prevented from performing OpenSearch queries in this zone using Search Connectors.
 
-If you do not configure this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+- If you don't configure this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+<!-- IZ_Policy_OpenSearchQuery_LocalMachine-Description-End -->
 
-<!--/Description-->
+<!-- IZ_Policy_OpenSearchQuery_LocalMachine-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchQuery_LocalMachine-Editable-End -->
 
+<!-- IZ_Policy_OpenSearchQuery_LocalMachine-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow OpenSearch queries in File Explorer*
--   GP name: *IZ_Policy_OpenSearchQuery_LocalMachine*
--   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Local Machine Zone*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IZ_Policy_OpenSearchQuery_LocalMachine-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_LocalMachine-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-localmachinelockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_LocalMachineLockdown**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | IZ_Policy_OpenSearchQuery_LocalMachine |
+| Friendly Name | Allow OpenSearch queries in File Explorer |
+| Location | Computer and User Configuration |
+| Path | IZ_SecurityPage > Local Machine Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\0 |
+| Registry Value Name | 180E |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- IZ_Policy_OpenSearchQuery_LocalMachine-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- IZ_Policy_OpenSearchQuery_LocalMachine-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchQuery_LocalMachine-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_LocalMachine-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IZ_Policy_OpenSearchQuery_LocalMachineLockdown-Begin -->
+## IZ_Policy_OpenSearchQuery_LocalMachineLockdown
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- IZ_Policy_OpenSearchQuery_LocalMachineLockdown-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IZ_Policy_OpenSearchQuery_LocalMachineLockdown-Applicability-End -->
 
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_LocalMachineLockdown-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_LocalMachineLockdown
+```
 
-<!--/Scope-->
-<!--Description-->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_LocalMachineLockdown
+```
+<!-- IZ_Policy_OpenSearchQuery_LocalMachineLockdown-OmaUri-End -->
+
+<!-- IZ_Policy_OpenSearchQuery_LocalMachineLockdown-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether OpenSearch queries in this zone can be performed using Search Connectors in File Explorer. Search Connectors allow rich searching of remote sources from within File Explorer. Search results will be returned in File Explorer and can be acted upon like local files.
 
-If you enable this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+- If you enable this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
 
-If you disable this policy setting, users are prevented from performing OpenSearch queries in this zone using Search Connectors.
+- If you disable this policy setting, users are prevented from performing OpenSearch queries in this zone using Search Connectors.
 
-If you do not configure this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+- If you don't configure this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+<!-- IZ_Policy_OpenSearchQuery_LocalMachineLockdown-Description-End -->
 
-<!--/Description-->
+<!-- IZ_Policy_OpenSearchQuery_LocalMachineLockdown-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchQuery_LocalMachineLockdown-Editable-End -->
 
+<!-- IZ_Policy_OpenSearchQuery_LocalMachineLockdown-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow OpenSearch queries in File Explorer*
--   GP name: *IZ_Policy_OpenSearchQuery_LocalMachineLockdown*
--   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Local Machine Zone*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IZ_Policy_OpenSearchQuery_LocalMachineLockdown-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_LocalMachineLockdown-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-restricted"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Restricted**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | IZ_Policy_OpenSearchQuery_LocalMachineLockdown |
+| Friendly Name | Allow OpenSearch queries in File Explorer |
+| Location | Computer and User Configuration |
+| Path | IZ_SecurityPage > Locked-Down Local Machine Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\0 |
+| Registry Value Name | 180E |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- IZ_Policy_OpenSearchQuery_LocalMachineLockdown-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- IZ_Policy_OpenSearchQuery_LocalMachineLockdown-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchQuery_LocalMachineLockdown-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_LocalMachineLockdown-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IZ_Policy_OpenSearchQuery_Restricted-Begin -->
+## IZ_Policy_OpenSearchQuery_Restricted
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- IZ_Policy_OpenSearchQuery_Restricted-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IZ_Policy_OpenSearchQuery_Restricted-Applicability-End -->
 
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_Restricted-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Restricted
+```
 
-<!--/Scope-->
-<!--Description-->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Restricted
+```
+<!-- IZ_Policy_OpenSearchQuery_Restricted-OmaUri-End -->
+
+<!-- IZ_Policy_OpenSearchQuery_Restricted-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether OpenSearch queries in this zone can be performed using Search Connectors in File Explorer. Search Connectors allow rich searching of remote sources from within File Explorer. Search results will be returned in File Explorer and can be acted upon like local files.
 
-If you enable this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+- If you enable this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
 
-If you disable this policy setting, users are prevented from performing OpenSearch queries in this zone using Search Connectors.
+- If you disable this policy setting, users are prevented from performing OpenSearch queries in this zone using Search Connectors.
 
-If you do not configure this policy setting, users cannot perform OpenSearch queries in this zone using Search Connectors.
+- If you don't configure this policy setting, users can't perform OpenSearch queries in this zone using Search Connectors.
+<!-- IZ_Policy_OpenSearchQuery_Restricted-Description-End -->
 
-<!--/Description-->
+<!-- IZ_Policy_OpenSearchQuery_Restricted-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchQuery_Restricted-Editable-End -->
 
+<!-- IZ_Policy_OpenSearchQuery_Restricted-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow OpenSearch queries in File Explorer*
--   GP name: *IZ_Policy_OpenSearchQuery_Restricted*
--   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Restricted Sites Zone*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IZ_Policy_OpenSearchQuery_Restricted-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- IZ_Policy_OpenSearchQuery_Restricted-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-restrictedlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_RestrictedLockdown**  
+| Name | Value |
+|:--|:--|
+| Name | IZ_Policy_OpenSearchQuery_Restricted |
+| Friendly Name | Allow OpenSearch queries in File Explorer |
+| Location | Computer and User Configuration |
+| Path | IZ_SecurityPage > Restricted Sites Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\4 |
+| Registry Value Name | 180E |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- IZ_Policy_OpenSearchQuery_Restricted-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- IZ_Policy_OpenSearchQuery_Restricted-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchQuery_Restricted-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- IZ_Policy_OpenSearchQuery_Restricted-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_RestrictedLockdown-Begin -->
+## IZ_Policy_OpenSearchQuery_RestrictedLockdown
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IZ_Policy_OpenSearchQuery_RestrictedLockdown-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IZ_Policy_OpenSearchQuery_RestrictedLockdown-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- IZ_Policy_OpenSearchQuery_RestrictedLockdown-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_RestrictedLockdown
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_RestrictedLockdown
+```
+<!-- IZ_Policy_OpenSearchQuery_RestrictedLockdown-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- IZ_Policy_OpenSearchQuery_RestrictedLockdown-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether OpenSearch queries in this zone can be performed using Search Connectors in File Explorer. Search Connectors allow rich searching of remote sources from within File Explorer. Search results will be returned in File Explorer and can be acted upon like local files.
 
-If you enable this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+- If you enable this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
 
-If you disable this policy setting, users are prevented from performing OpenSearch queries in this zone using Search Connectors.
+- If you disable this policy setting, users are prevented from performing OpenSearch queries in this zone using Search Connectors.
 
-If you do not configure this policy setting, users cannot perform OpenSearch queries in this zone using Search Connectors.
+- If you don't configure this policy setting, users can't perform OpenSearch queries in this zone using Search Connectors.
+<!-- IZ_Policy_OpenSearchQuery_RestrictedLockdown-Description-End -->
 
-<!--/Description-->
+<!-- IZ_Policy_OpenSearchQuery_RestrictedLockdown-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchQuery_RestrictedLockdown-Editable-End -->
 
+<!-- IZ_Policy_OpenSearchQuery_RestrictedLockdown-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow OpenSearch queries in File Explorer*
--   GP name: *IZ_Policy_OpenSearchQuery_RestrictedLockdown*
--   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Restricted Sites Zone*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IZ_Policy_OpenSearchQuery_RestrictedLockdown-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- IZ_Policy_OpenSearchQuery_RestrictedLockdown-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-trusted"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Trusted**  
+| Name | Value |
+|:--|:--|
+| Name | IZ_Policy_OpenSearchQuery_RestrictedLockdown |
+| Friendly Name | Allow OpenSearch queries in File Explorer |
+| Location | Computer and User Configuration |
+| Path | IZ_SecurityPage > Locked-Down Restricted Sites Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\4 |
+| Registry Value Name | 180E |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- IZ_Policy_OpenSearchQuery_RestrictedLockdown-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- IZ_Policy_OpenSearchQuery_RestrictedLockdown-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchQuery_RestrictedLockdown-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- IZ_Policy_OpenSearchQuery_RestrictedLockdown-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_Trusted-Begin -->
+## IZ_Policy_OpenSearchQuery_Trusted
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IZ_Policy_OpenSearchQuery_Trusted-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IZ_Policy_OpenSearchQuery_Trusted-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- IZ_Policy_OpenSearchQuery_Trusted-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Trusted
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_Trusted
+```
+<!-- IZ_Policy_OpenSearchQuery_Trusted-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- IZ_Policy_OpenSearchQuery_Trusted-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether OpenSearch queries in this zone can be performed using Search Connectors in File Explorer. Search Connectors allow rich searching of remote sources from within File Explorer. Search results will be returned in File Explorer and can be acted upon like local files.
 
-If you enable this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+- If you enable this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
 
-If you disable this policy setting, users are prevented from performing OpenSearch queries in this zone using Search Connectors.
+- If you disable this policy setting, users are prevented from performing OpenSearch queries in this zone using Search Connectors.
 
-If you do not configure this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+- If you don't configure this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+<!-- IZ_Policy_OpenSearchQuery_Trusted-Description-End -->
 
-<!--/Description-->
+<!-- IZ_Policy_OpenSearchQuery_Trusted-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchQuery_Trusted-Editable-End -->
 
+<!-- IZ_Policy_OpenSearchQuery_Trusted-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow OpenSearch queries in File Explorer*
--   GP name: *IZ_Policy_OpenSearchQuery_Trusted*
--   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Trusted Sites Zone*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IZ_Policy_OpenSearchQuery_Trusted-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_Trusted-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-iz-policy-opensearchquery-trustedlockdown"></a>**ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_TrustedLockdown**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | IZ_Policy_OpenSearchQuery_Trusted |
+| Friendly Name | Allow OpenSearch queries in File Explorer |
+| Location | Computer and User Configuration |
+| Path | IZ_SecurityPage > Trusted Sites Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2 |
+| Registry Value Name | 180E |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- IZ_Policy_OpenSearchQuery_Trusted-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- IZ_Policy_OpenSearchQuery_Trusted-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchQuery_Trusted-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_Trusted-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- IZ_Policy_OpenSearchQuery_TrustedLockdown-Begin -->
+## IZ_Policy_OpenSearchQuery_TrustedLockdown
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- IZ_Policy_OpenSearchQuery_TrustedLockdown-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- IZ_Policy_OpenSearchQuery_TrustedLockdown-Applicability-End -->
 
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_TrustedLockdown-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_TrustedLockdown
+```
 
-<!--/Scope-->
-<!--Description-->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/IZ_Policy_OpenSearchQuery_TrustedLockdown
+```
+<!-- IZ_Policy_OpenSearchQuery_TrustedLockdown-OmaUri-End -->
+
+<!-- IZ_Policy_OpenSearchQuery_TrustedLockdown-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to manage whether OpenSearch queries in this zone can be performed using Search Connectors in File Explorer. Search Connectors allow rich searching of remote sources from within File Explorer. Search results will be returned in File Explorer and can be acted upon like local files.
 
-If you enable this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+- If you enable this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
 
-If you disable this policy setting, users are prevented from performing OpenSearch queries in this zone using Search Connectors.
+- If you disable this policy setting, users are prevented from performing OpenSearch queries in this zone using Search Connectors.
 
-If you do not configure this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+- If you don't configure this policy setting, users can perform OpenSearch queries in this zone using Search Connectors.
+<!-- IZ_Policy_OpenSearchQuery_TrustedLockdown-Description-End -->
 
-<!--/Description-->
+<!-- IZ_Policy_OpenSearchQuery_TrustedLockdown-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchQuery_TrustedLockdown-Editable-End -->
 
+<!-- IZ_Policy_OpenSearchQuery_TrustedLockdown-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow OpenSearch queries in File Explorer*
--   GP name: *IZ_Policy_OpenSearchQuery_TrustedLockdown*
--   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Trusted Sites Zone*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- IZ_Policy_OpenSearchQuery_TrustedLockdown-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_TrustedLockdown-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-linkresolveignorelinkinfo"></a>**ADMX_WindowsExplorer/LinkResolveIgnoreLinkInfo**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | IZ_Policy_OpenSearchQuery_TrustedLockdown |
+| Friendly Name | Allow OpenSearch queries in File Explorer |
+| Location | Computer and User Configuration |
+| Path | IZ_SecurityPage > Locked-Down Trusted Sites Zone |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CurrentVersion\Internet Settings\Lockdown_Zones\2 |
+| Registry Value Name | 180E |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- IZ_Policy_OpenSearchQuery_TrustedLockdown-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- IZ_Policy_OpenSearchQuery_TrustedLockdown-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- IZ_Policy_OpenSearchQuery_TrustedLockdown-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- IZ_Policy_OpenSearchQuery_TrustedLockdown-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LinkResolveIgnoreLinkInfo-Begin -->
+## LinkResolveIgnoreLinkInfo
 
-> [!div class = "checklist"]
-> * User
+<!-- LinkResolveIgnoreLinkInfo-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LinkResolveIgnoreLinkInfo-Applicability-End -->
 
-<hr/>
+<!-- LinkResolveIgnoreLinkInfo-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/LinkResolveIgnoreLinkInfo
+```
+<!-- LinkResolveIgnoreLinkInfo-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting determines whether Windows traces shortcuts back to their sources when it cannot find the target on the user's system.
+<!-- LinkResolveIgnoreLinkInfo-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting determines whether Windows traces shortcuts back to their sources when it can't find the target on the user's system.
 
-Shortcut files typically include an absolute path to the original target file as well as the relative path to the current target file. When the system cannot find the file in the current target path, then, by default, it searches for the target in the original path. If the shortcut has been copied to a different computer, the original path might lead to a network computer, including external resources, such as an Internet server.
+Shortcut files typically include an absolute path to the original target file as well as the relative path to the current target file. When the system can't find the file in the current target path, then, by default, it searches for the target in the original path. If the shortcut has been copied to a different computer, the original path might lead to a network computer, including external resources, such as an Internet server.
 
-If you enable this policy setting, Windows only searches the current target path. It does not search for the original path even when it cannot find the target file in the current target path.
+- If you enable this policy setting, Windows only searches the current target path. It doesn't search for the original path even when it can't find the target file in the current target path.
 
-If you disable or do not configure this policy setting, Windows searches for the original path when it cannot find the target file in the current target path.
+- If you disable or don't configure this policy setting, Windows searches for the original path when it can't find the target file in the current target path.
+<!-- LinkResolveIgnoreLinkInfo-Description-End -->
 
-<!--/Description-->
+<!-- LinkResolveIgnoreLinkInfo-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LinkResolveIgnoreLinkInfo-Editable-End -->
 
+<!-- LinkResolveIgnoreLinkInfo-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not track Shell shortcuts during roaming*
--   GP name: *LinkResolveIgnoreLinkInfo*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- LinkResolveIgnoreLinkInfo-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- LinkResolveIgnoreLinkInfo-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-maxrecentdocs"></a>**ADMX_WindowsExplorer/MaxRecentDocs**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | LinkResolveIgnoreLinkInfo |
+| Friendly Name | Do not track Shell shortcuts during roaming |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | LinkResolveIgnoreLinkInfo |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- LinkResolveIgnoreLinkInfo-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- LinkResolveIgnoreLinkInfo-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LinkResolveIgnoreLinkInfo-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LinkResolveIgnoreLinkInfo-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MaxRecentDocs-Begin -->
+## MaxRecentDocs
 
-> [!div class = "checklist"]
-> * User
+<!-- MaxRecentDocs-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MaxRecentDocs-Applicability-End -->
 
-<hr/>
+<!-- MaxRecentDocs-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/MaxRecentDocs
+```
+<!-- MaxRecentDocs-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to set the maximum number of shortcuts the system can display in the Recent Items menu on the Start menu. The Recent Items menu contains shortcuts to the nonprogram files the user has most recently opened.
+<!-- MaxRecentDocs-Description-Begin -->
+<!-- Description-Source-ADMX -->
+"This policy setting allows you to set the maximum number of shortcuts the system can display in the Recent Items menu on the Start menu.
 
-If you enable this policy setting, the system displays the number of shortcuts specified by the policy setting.
+The Recent Items menu contains shortcuts to the nonprogram files the user has most recently opened.
 
-If you disable or do not configure this policy setting, by default, the system displays shortcuts to the 10 most recently opened documents.
+- If you enable this policy setting, the system displays the number of shortcuts specified by the policy setting.
 
-<!--/Description-->
+- If you disable or don't configure this policy setting, by default, the system displays shortcuts to the 10 most recently opened documents".
+<!-- MaxRecentDocs-Description-End -->
 
+<!-- MaxRecentDocs-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MaxRecentDocs-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Maximum number of recent documents*
--   GP name: *MaxRecentDocs*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+<!-- MaxRecentDocs-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MaxRecentDocs-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-nobackbutton"></a>**ADMX_WindowsExplorer/NoBackButton**  
+<!-- MaxRecentDocs-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | MaxRecentDocs |
+| Friendly Name | Maximum number of recent documents |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- MaxRecentDocs-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MaxRecentDocs-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MaxRecentDocs-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MaxRecentDocs-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoBackButton-Begin -->
+## NoBackButton
 
-<hr/>
+<!-- NoBackButton-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoBackButton-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-Hide the Back button in the Open dialog box. This policy setting lets you remove new features added in Microsoft Windows 2000 Professional, so the Open dialog box appears as it did in Windows NT 4.0 and earlier. This policy setting affects only programs that use the standard Open dialog box provided to developers of Windows programs.
+<!-- NoBackButton-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoBackButton
+```
+<!-- NoBackButton-OmaUri-End -->
 
-If you enable this policy setting, the Back button is removed from the standard Open dialog box.
+<!-- NoBackButton-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Hide the Back button in the Open dialog box.
 
-If you disable or do not configure this policy setting, the Back button is displayed for any standard Open dialog box. To see an example of the standard Open dialog box, start Notepad and, on the File menu, click Open.
+This policy setting lets you remove new features added in Microsoft Windows 2000 Professional, so the Open dialog box appears as it did in Windows NT 4.0 and earlier. This policy setting affects only programs that use the standard Open dialog box provided to developers of Windows programs.
 
-<!--/Description-->
+- If you enable this policy setting, the Back button is removed from the standard Open dialog box.
 
+- If you disable or don't configure this policy setting, the Back button is displayed for any standard Open dialog box.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Hide the common dialog back button*
--   GP name: *NoBackButton*
--   GP path: *Windows Components\File Explorer\Common Open File Dialog*
--   GP ADMX file name: *WindowsExplorer.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-nocdburning"></a>**ADMX_WindowsExplorer/NoCDBurning**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to remove CD Burning features. File Explorer allows you to create and modify re-writable CDs if you have a CD writer connected to your PC.
-
-If you enable this policy setting, all features in the File Explorer that allow you to use your CD writer are removed.
-
-If you disable or do not configure this policy setting, users are able to use the File Explorer CD burning features.
+To see an example of the standard Open dialog box, start Notepad and, on the File menu, click Open.
 
 > [!NOTE]
-> This policy setting does not prevent users from using third-party applications to create or modify CDs using a CD writer.
+> In Windows Vista, this policy setting applies only to applications that are using the Windows XP common dialog box style. This policy setting doesn't apply to the new Windows Vista common dialog box style. Also, third-party applications with Windows 2000 or later certification to are required to adhere to this policy setting.
+<!-- NoBackButton-Description-End -->
 
-<!--/Description-->
+<!-- NoBackButton-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoBackButton-Editable-End -->
 
+<!-- NoBackButton-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove CD Burning features*
--   GP name: *NoCDBurning*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoBackButton-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NoBackButton-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-nocachethumbnailpictures"></a>**ADMX_WindowsExplorer/NoCacheThumbNailPictures**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | NoBackButton |
+| Friendly Name | Hide the common dialog back button |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer > Common Open File Dialog |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Comdlg32 |
+| Registry Value Name | NoBackButton |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoBackButton-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NoBackButton-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoBackButton-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoBackButton-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoCacheThumbNailPictures-Begin -->
+## NoCacheThumbNailPictures
 
-> [!div class = "checklist"]
-> * User
+<!-- NoCacheThumbNailPictures-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoCacheThumbNailPictures-Applicability-End -->
 
-<hr/>
+<!-- NoCacheThumbNailPictures-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoCacheThumbNailPictures
+```
+<!-- NoCacheThumbNailPictures-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoCacheThumbNailPictures-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to turn off caching of thumbnail pictures.
 
-If you enable this policy setting, thumbnail views are not cached.
+- If you enable this policy setting, thumbnail views aren't cached.
 
-If you disable or do not configure this policy setting, thumbnail views are cached.
+- If you disable or don't configure this policy setting, thumbnail views are cached.
 
 > [!NOTE]
 > For shared corporate workstations or computers where security is a top concern, you should enable this policy setting to turn off the thumbnail view cache, because the thumbnail cache can be read by everyone.
+<!-- NoCacheThumbNailPictures-Description-End -->
 
-<!--/Description-->
+<!-- NoCacheThumbNailPictures-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoCacheThumbNailPictures-Editable-End -->
 
+<!-- NoCacheThumbNailPictures-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off caching of thumbnail pictures*
--   GP name: *NoCacheThumbNailPictures*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoCacheThumbNailPictures-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NoCacheThumbNailPictures-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-nochangeanimation"></a>**ADMX_WindowsExplorer/NoChangeAnimation**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | NoCacheThumbNailPictures |
+| Friendly Name | Turn off caching of thumbnail pictures |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoThumbnailCache |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoCacheThumbNailPictures-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NoCacheThumbNailPictures-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoCacheThumbNailPictures-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoCacheThumbNailPictures-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoCDBurning-Begin -->
+## NoCDBurning
 
-> [!div class = "checklist"]
-> * User
+<!-- NoCDBurning-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoCDBurning-Applicability-End -->
 
-<hr/>
+<!-- NoCDBurning-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoCDBurning
+```
+<!-- NoCDBurning-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoCDBurning-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove CD Burning features. File Explorer allows you to create and modify re-writable CDs if you have a CD writer connected to your PC.
+
+- If you enable this policy setting, all features in the File Explorer that allow you to use your CD writer are removed.
+
+- If you disable or don't configure this policy setting, users are able to use the File Explorer CD burning features.
+
+> [!NOTE]
+> This policy setting doesn't prevent users from using third-party applications to create or modify CDs using a CD writer.
+<!-- NoCDBurning-Description-End -->
+
+<!-- NoCDBurning-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoCDBurning-Editable-End -->
+
+<!-- NoCDBurning-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoCDBurning-DFProperties-End -->
+
+<!-- NoCDBurning-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoCDBurning |
+| Friendly Name | Remove CD Burning features |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoCDBurning |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoCDBurning-AdmxBacked-End -->
+
+<!-- NoCDBurning-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoCDBurning-Examples-End -->
+
+<!-- NoCDBurning-End -->
+
+<!-- NoChangeAnimation-Begin -->
+## NoChangeAnimation
+
+<!-- NoChangeAnimation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoChangeAnimation-Applicability-End -->
+
+<!-- NoChangeAnimation-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoChangeAnimation
+```
+<!-- NoChangeAnimation-OmaUri-End -->
+
+<!-- NoChangeAnimation-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to prevent users from enabling or disabling minor animations in the operating system for the movement of windows, menus, and lists.
 
-If you enable this policy setting, the "Use transition effects for menus and tooltips" option in Display in Control Panel is disabled, and cannot be toggled by users.
+- If you enable this policy setting, the "Use transition effects for menus and tooltips" option in Display in Control Panel is disabled, and can't be toggled by users.
 
 Effects, such as animation, are designed to enhance the user's experience but might be confusing or distracting to some users.
 
-If you disable or do not configure this policy setting, users are allowed to turn on or off these minor system animations using the "Use transition effects for menus and tooltips" option in Display in Control Panel.
+- If you disable or don't configure this policy setting, users are allowed to turn on or off these minor system animations using the "Use transition effects for menus and tooltips" option in Display in Control Panel.
+<!-- NoChangeAnimation-Description-End -->
 
-<!--/Description-->
+<!-- NoChangeAnimation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoChangeAnimation-Editable-End -->
 
+<!-- NoChangeAnimation-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove UI to change menu animation setting*
--   GP name: *NoChangeAnimation*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoChangeAnimation-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NoChangeAnimation-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-nochangekeyboardnavigationindicators"></a>**ADMX_WindowsExplorer/NoChangeKeyboardNavigationIndicators**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | NoChangeAnimation |
+| Friendly Name | Remove UI to change menu animation setting |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoChangeAnimation |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoChangeAnimation-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NoChangeAnimation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoChangeAnimation-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoChangeAnimation-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoChangeKeyboardNavigationIndicators-Begin -->
+## NoChangeKeyboardNavigationIndicators
 
-> [!div class = "checklist"]
-> * User
+<!-- NoChangeKeyboardNavigationIndicators-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoChangeKeyboardNavigationIndicators-Applicability-End -->
 
-<hr/>
+<!-- NoChangeKeyboardNavigationIndicators-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoChangeKeyboardNavigationIndicators
+```
+<!-- NoChangeKeyboardNavigationIndicators-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Disables the "Hide keyboard navigation indicators until I use the ALT key" option in Display in Control Panel. When this Display Properties option is selected, the underlining that indicates a keyboard shortcut character (hot key) does not appear on menus until you press ALT.
+<!-- NoChangeKeyboardNavigationIndicators-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Disables the "Hide keyboard navigation indicators until I use the ALT key" option in Display in Control Panel.
+
+When this Display Properties option is selected, the underlining that indicates a keyboard shortcut character (hot key) doesn't appear on menus until you press ALT.
 
 Effects, such as transitory underlines, are designed to enhance the user's experience but might be confusing or distracting to some users.
+<!-- NoChangeKeyboardNavigationIndicators-Description-End -->
 
-<!--/Description-->
+<!-- NoChangeKeyboardNavigationIndicators-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoChangeKeyboardNavigationIndicators-Editable-End -->
 
+<!-- NoChangeKeyboardNavigationIndicators-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove UI to change keyboard navigation indicator setting*
--   GP name: *NoChangeKeyboardNavigationIndicators*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoChangeKeyboardNavigationIndicators-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NoChangeKeyboardNavigationIndicators-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-nodfstab"></a>**ADMX_WindowsExplorer/NoDFSTab**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | NoChangeKeyboardNavigationIndicators |
+| Friendly Name | Remove UI to change keyboard navigation indicator setting |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoChangeKeyboardNavigationIndicators |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoChangeKeyboardNavigationIndicators-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NoChangeKeyboardNavigationIndicators-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoChangeKeyboardNavigationIndicators-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoChangeKeyboardNavigationIndicators-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoDFSTab-Begin -->
+## NoDFSTab
 
-> [!div class = "checklist"]
-> * User
+<!-- NoDFSTab-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoDFSTab-Applicability-End -->
 
-<hr/>
+<!-- NoDFSTab-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoDFSTab
+```
+<!-- NoDFSTab-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoDFSTab-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to remove the DFS tab from File Explorer.
 
-If you enable this policy setting, the DFS (Distributed File System) tab is removed from File Explorer and from other programs that use the File Explorer browser, such as My Computer. As a result, users cannot use this tab to view or change the properties of the DFS shares available from their computer. This policy setting does not prevent users from using other methods to configure DFS.
+- If you enable this policy setting, the DFS (Distributed File System) tab is removed from File Explorer and from other programs that use the File Explorer browser, such as My Computer. As a result, users can't use this tab to view or change the properties of the DFS shares available from their computer.
 
-If you disable or do not configure this policy setting, the DFS tab is available.
+This policy setting doesn't prevent users from using other methods to configure DFS.
 
-<!--/Description-->
+- If you disable or don't configure this policy setting, the DFS tab is available.
+<!-- NoDFSTab-Description-End -->
 
+<!-- NoDFSTab-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoDFSTab-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove DFS tab*
--   GP name: *NoDFSTab*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+<!-- NoDFSTab-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoDFSTab-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-nodrives"></a>**ADMX_WindowsExplorer/NoDrives**  
+<!-- NoDFSTab-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | NoDFSTab |
+| Friendly Name | Remove DFS tab |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoDFSTab |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoDFSTab-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoDFSTab-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoDFSTab-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoDFSTab-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoDrives-Begin -->
+## NoDrives
 
-<hr/>
+<!-- NoDrives-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoDrives-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoDrives-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoDrives
+```
+<!-- NoDrives-OmaUri-End -->
+
+<!-- NoDrives-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to hide these specified drives in My Computer.
 
-This policy setting allows you to remove the icons representing selected hard drives from My Computer and File Explorer. Also, the drive letters representing the selected drives do not appear in the standard Open dialog box.
+This policy setting allows you to remove the icons representing selected hard drives from My Computer and File Explorer. Also, the drive letters representing the selected drives don't appear in the standard Open dialog box.
 
-If you enable this policy setting, select a drive or combination of drives in the drop-down list.
+- If you enable this policy setting, select a drive or combination of drives in the drop-down list.
 
 > [!NOTE]
-> This policy setting removes the drive icons. Users can still gain access to drive contents by using other methods, such as by typing the path to a directory on the drive in the Map Network Drive dialog box, in the Run dialog box, or in a command window. Also, this policy setting does not prevent users from using programs to access these drives or their contents. And, it does not prevent users from using the Disk Management snap-in to view and change drive characteristics.
+> This policy setting removes the drive icons. Users can still gain access to drive contents by using other methods, such as by typing the path to a directory on the drive in the Map Network Drive dialog box, in the Run dialog box, or in a command window.
 
-If you disable or do not configure this policy setting, all drives are displayed, or select the "Do not restrict drives" option in the drop-down list. Also, see the "Prevent access to drives from My Computer" policy setting.
+Also, this policy setting doesn't prevent users from using programs to access these drives or their contents. And, it doesn't prevent users from using the Disk Management snap-in to view and change drive characteristics.
 
-<!--/Description-->
+- If you disable or don't configure this policy setting, all drives are displayed, or select the "Do not restrict drives" option in the drop-down list.
 
+Also, see the "Prevent access to drives from My Computer" policy setting.
+<!-- NoDrives-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Hide these specified drives in My Computer*
--   GP name: *NoDrives*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+<!-- NoDrives-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoDrives-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NoDrives-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-noentirenetwork"></a>**ADMX_WindowsExplorer/NoEntireNetwork**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoDrives-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- NoDrives-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoDrives |
+| Friendly Name | Hide these specified drives in My Computer |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoDrives-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoDrives-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoDrives-Examples-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoDrives-End -->
 
-<hr/>
+<!-- NoEntireNetwork-Begin -->
+## NoEntireNetwork
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoEntireNetwork-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoEntireNetwork-Applicability-End -->
+
+<!-- NoEntireNetwork-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoEntireNetwork
+```
+<!-- NoEntireNetwork-OmaUri-End -->
+
+<!-- NoEntireNetwork-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Removes all computers outside of the user's workgroup or local domain from lists of network resources in File Explorer and Network Locations.
 
 If you enable this setting, the system removes the Entire Network option and the icons representing networked computers from Network Locations and from the browser associated with the Map Network Drive option.
 
-This setting does not prevent users from viewing or connecting to computers in their workgroup or domain. It also does not prevent users from connecting to remote computers by other commonly used methods, such as by typing the share name in the Run dialog box or the Map Network Drive dialog box.
+This setting doesn't prevent users from viewing or connecting to computers in their workgroup or domain. It also doesn't prevent users from connecting to remote computers by other commonly used methods, such as by typing the share name in the Run dialog box or the Map Network Drive dialog box.
 
 To remove computers in the user's workgroup or domain from lists of network resources, use the "No Computers Near Me in Network Locations" setting.
 
 > [!NOTE]
-> It is a requirement for third-party applications with Windows 2000 or later certification to adhere to this setting.
+> It's a requirement for third-party applications with Windows 2000 or later certification to adhere to this setting.
+<!-- NoEntireNetwork-Description-End -->
 
-<!--/Description-->
+<!-- NoEntireNetwork-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoEntireNetwork-Editable-End -->
 
+<!-- NoEntireNetwork-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *No Entire Network in Network Locations*
--   GP name: *NoEntireNetwork*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoEntireNetwork-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NoEntireNetwork-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-nofilemru"></a>**ADMX_WindowsExplorer/NoFileMRU**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | NoEntireNetwork |
+| Friendly Name | No Entire Network in Network Locations |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Network |
+| Registry Value Name | NoEntireNetwork |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoEntireNetwork-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NoEntireNetwork-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoEntireNetwork-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoEntireNetwork-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoFileMenu-Begin -->
+## NoFileMenu
 
-> [!div class = "checklist"]
-> * User
+<!-- NoFileMenu-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoFileMenu-Applicability-End -->
 
-<hr/>
+<!-- NoFileMenu-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoFileMenu
+```
+<!-- NoFileMenu-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoFileMenu-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Removes the File menu from My Computer and File Explorer.
+
+This setting doesn't prevent users from using other methods to perform tasks available on the File menu.
+<!-- NoFileMenu-Description-End -->
+
+<!-- NoFileMenu-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoFileMenu-Editable-End -->
+
+<!-- NoFileMenu-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoFileMenu-DFProperties-End -->
+
+<!-- NoFileMenu-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoFileMenu |
+| Friendly Name | Remove File menu from File Explorer |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoFileMenu |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoFileMenu-AdmxBacked-End -->
+
+<!-- NoFileMenu-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoFileMenu-Examples-End -->
+
+<!-- NoFileMenu-End -->
+
+<!-- NoFileMRU-Begin -->
+## NoFileMRU
+
+<!-- NoFileMRU-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoFileMRU-Applicability-End -->
+
+<!-- NoFileMRU-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoFileMRU
+```
+<!-- NoFileMRU-OmaUri-End -->
+
+<!-- NoFileMRU-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Removes the list of most recently used files from the Open dialog box.
 
-If you disable this setting or do not configure it, the "File name" field includes a drop-down list of recently used files. If you enable this setting, the "File name" field is a simple text box. Users must browse directories to find a file or type a file name in the text box.
+- If you disable this setting or don't configure it, the "File name" field includes a drop-down list of recently used files.
+
+- If you enable this setting, the "File name" field is a simple text box. Users must browse directories to find a file or type a file name in the text box.
 
 This setting, and others in this folder, lets you remove new features added in Windows 2000 Professional, so that the Open dialog box looks like it did in Windows NT 4.0 and earlier. These policies only affect programs that use the standard Open dialog box provided to developers of Windows programs.
 
-To see an example of the standard Open dialog box, start WordPad and, on the File menu, click Open.
+To see an example of the standard Open dialog box, start Wordpad and, on the File menu, click Open.
 
+> [!NOTE]
+> In Windows Vista, this policy setting applies only to applications that are using the Windows XP common dialog box style. This policy setting doesn't apply to the new Windows Vista common dialog box style. It's a requirement for third-party applications with Windows 2000 or later certification to adhere to this setting.
+<!-- NoFileMRU-Description-End -->
 
+<!-- NoFileMRU-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoFileMRU-Editable-End -->
 
-<!--/Description-->
+<!-- NoFileMRU-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoFileMRU-DFProperties-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Hide the dropdown list of recent files*
--   GP name: *NoFileMRU*
--   GP path: *Windows Components\File Explorer\Common Open File Dialog*
--   GP ADMX file name: *WindowsExplorer.admx*
+<!-- NoFileMRU-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-nofilemenu"></a>**ADMX_WindowsExplorer/NoFileMenu**  
+| Name | Value |
+|:--|:--|
+| Name | NoFileMRU |
+| Friendly Name | Hide the dropdown list of recent files |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer > Common Open File Dialog |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Comdlg32 |
+| Registry Value Name | NoFileMru |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoFileMRU-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- NoFileMRU-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoFileMRU-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NoFileMRU-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoFolderOptions-Begin -->
+## NoFolderOptions
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoFolderOptions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoFolderOptions-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoFolderOptions-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoFolderOptions
+```
+<!-- NoFolderOptions-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Removes the File menu from My Computer and File Explorer.
-
-This setting does not prevent users from using other methods to perform tasks available on the File menu.
-
-<!--/Description-->
-
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove File menu from File Explorer*
--   GP name: *NoFileMenu*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-nofolderoptions"></a>**ADMX_WindowsExplorer/NoFolderOptions**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- NoFolderOptions-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to prevent users from accessing Folder Options through the View tab on the ribbon in File Explorer.
 
 Folder Options allows users to change the way files and folders open, what appears in the navigation pane, and other advanced view settings.
 
-If you enable this policy setting, users will receive an error message if they tap or click the Options button or choose the Change folder and search options command, and they will not be able to open Folder Options.
+- If you enable this policy setting, users will receive an error message if they tap or click the Options button or choose the Change folder and search options command, and they won't be able to open Folder Options.
 
-If you disable or do not configure this policy setting, users can open Folder Options from the View tab on the ribbon.
+- If you disable or don't configure this policy setting, users can open Folder Options from the View tab on the ribbon.
+<!-- NoFolderOptions-Description-End -->
 
-<!--/Description-->
+<!-- NoFolderOptions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoFolderOptions-Editable-End -->
 
+<!-- NoFolderOptions-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not allow Folder Options to be opened from the Options button on the View tab of the ribbon*
--   GP name: *NoFolderOptions*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoFolderOptions-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NoFolderOptions-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-nohardwaretab"></a>**ADMX_WindowsExplorer/NoHardwareTab**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | NoFolderOptions |
+| Friendly Name | Do not allow Folder Options to be opened from the Options button on the View tab of the ribbon |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoFolderOptions |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoFolderOptions-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NoFolderOptions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoFolderOptions-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoFolderOptions-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoHardwareTab-Begin -->
+## NoHardwareTab
 
-> [!div class = "checklist"]
-> * User
+<!-- NoHardwareTab-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoHardwareTab-Applicability-End -->
 
-<hr/>
+<!-- NoHardwareTab-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoHardwareTab
+```
+<!-- NoHardwareTab-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Removes the Hardware tab. This setting removes the Hardware tab from Mouse, Keyboard, and Sounds and Audio Devices in Control Panel. It also removes the Hardware tab from the Properties dialog box for all local drives, including hard drives, floppy disk drives, and CD-ROM drives. As a result, users cannot use the Hardware tab to view or change the device list or device properties, or use the Troubleshoot button to resolve problems with the device.
+<!-- NoHardwareTab-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Removes the Hardware tab.
 
-<!--/Description-->
+This setting removes the Hardware tab from Mouse, Keyboard, and Sounds and Audio Devices in Control Panel. It also removes the Hardware tab from the Properties dialog box for all local drives, including hard drives, floppy disk drives, and CD-ROM drives. As a result, users can't use the Hardware tab to view or change the device list or device properties, or use the Troubleshoot button to resolve problems with the device.
+<!-- NoHardwareTab-Description-End -->
 
+<!-- NoHardwareTab-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoHardwareTab-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove Hardware tab*
--   GP name: *NoHardwareTab*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+<!-- NoHardwareTab-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoHardwareTab-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-nomanagemycomputerverb"></a>**ADMX_WindowsExplorer/NoManageMyComputerVerb**  
+<!-- NoHardwareTab-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | NoHardwareTab |
+| Friendly Name | Remove Hardware tab |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoHardwareTab |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoHardwareTab-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoHardwareTab-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoHardwareTab-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoHardwareTab-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoManageMyComputerVerb-Begin -->
+## NoManageMyComputerVerb
 
-<hr/>
+<!-- NoManageMyComputerVerb-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoManageMyComputerVerb-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoManageMyComputerVerb-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoManageMyComputerVerb
+```
+<!-- NoManageMyComputerVerb-OmaUri-End -->
+
+<!-- NoManageMyComputerVerb-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Removes the Manage item from the File Explorer context menu. This context menu appears when you right-click File Explorer or My Computer.
 
 The Manage item opens Computer Management (Compmgmt.msc), a console tool that includes many of the primary Windows 2000 administrative tools, such as Event Viewer, Device Manager, and Disk Management. You must be an administrator to use many of the features of these tools.
 
-This setting does not remove the Computer Management item from the Start menu (Start, Programs, Administrative Tools, Computer Management), nor does it prevent users from using other methods to start Computer Management.
+This setting doesn't remove the Computer Management item from the Start menu (Start, Programs, Administrative Tools, Computer Management), nor does it prevent users from using other methods to start Computer Management.
+
+> [!TIP]
+> To hide all context menus, use the "Remove File Explorer's default context menu" setting.
+<!-- NoManageMyComputerVerb-Description-End -->
+
+<!-- NoManageMyComputerVerb-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoManageMyComputerVerb-Editable-End -->
+
+<!-- NoManageMyComputerVerb-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoManageMyComputerVerb-DFProperties-End -->
+
+<!-- NoManageMyComputerVerb-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoManageMyComputerVerb |
+| Friendly Name | Hides the Manage item on the File Explorer context menu |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoManageMyComputerVerb |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoManageMyComputerVerb-AdmxBacked-End -->
+
+<!-- NoManageMyComputerVerb-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoManageMyComputerVerb-Examples-End -->
+
+<!-- NoManageMyComputerVerb-End -->
+
+<!-- NoMyComputerSharedDocuments-Begin -->
+## NoMyComputerSharedDocuments
+
+<!-- NoMyComputerSharedDocuments-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoMyComputerSharedDocuments-Applicability-End -->
+
+<!-- NoMyComputerSharedDocuments-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoMyComputerSharedDocuments
+```
+<!-- NoMyComputerSharedDocuments-OmaUri-End -->
+
+<!-- NoMyComputerSharedDocuments-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove the Shared Documents folder from My Computer.
+
+When a Windows client is in a workgroup, a Shared Documents icon appears in the File Explorer Web view under "Other Places" and also under "Files Stored on This Computer" in My Computer. Using this policy setting, you can choose not to have these items displayed.
+
+- If you enable this policy setting, the Shared Documents folder isn't displayed in the Web view or in My Computer.
+
+- If you disable or don't configure this policy setting, the Shared Documents folder is displayed in Web view and also in My Computer when the client is part of a workgroup.
 
 > [!NOTE]
-> To hide all context menus, use the "Remove File Explorer's default context menu" setting.
+> The ability to remove the Shared Documents folder via Group Policy is only available on Windows XP Professional.
+<!-- NoMyComputerSharedDocuments-Description-End -->
 
-<!--/Description-->
+<!-- NoMyComputerSharedDocuments-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoMyComputerSharedDocuments-Editable-End -->
 
+<!-- NoMyComputerSharedDocuments-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Hides the Manage item on the File Explorer context menu*
--   GP name: *NoManageMyComputerVerb*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoMyComputerSharedDocuments-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NoMyComputerSharedDocuments-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-nomycomputershareddocuments"></a>**ADMX_WindowsExplorer/NoMyComputerSharedDocuments**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | NoMyComputerSharedDocuments |
+| Friendly Name | Remove Shared Documents from My Computer |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoSharedDocuments |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoMyComputerSharedDocuments-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NoMyComputerSharedDocuments-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoMyComputerSharedDocuments-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoMyComputerSharedDocuments-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoNetConnectDisconnect-Begin -->
+## NoNetConnectDisconnect
 
-> [!div class = "checklist"]
-> * User
+<!-- NoNetConnectDisconnect-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoNetConnectDisconnect-Applicability-End -->
 
-<hr/>
+<!-- NoNetConnectDisconnect-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoNetConnectDisconnect
+```
+<!-- NoNetConnectDisconnect-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to remove the Shared Documents folder from My Computer. When a Windows client is in a workgroup, a Shared Documents icon appears in the File Explorer Web view under "Other Places" and also under "Files Stored on This Computer" in My Computer. Using this policy setting, you can choose not to have these items displayed.
-
-If you enable this policy setting, the Shared Documents folder is not displayed in the Web view or in My Computer.
-
-If you disable or do not configure this policy setting, the Shared Documents folder is displayed in Web view and also in My Computer when the client is part of a workgroup.
-
-
-<!--/Description-->
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove Shared Documents from My Computer*
--   GP name: *NoMyComputerSharedDocuments*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-nonetconnectdisconnect"></a>**ADMX_WindowsExplorer/NoNetConnectDisconnect**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- NoNetConnectDisconnect-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Prevents users from using File Explorer or Network Locations to map or disconnect network drives.
 
 If you enable this setting, the system removes the Map Network Drive and Disconnect Network Drive commands from the toolbar and Tools menus in File Explorer and Network Locations and from menus that appear when you right-click the File Explorer or Network Locations icons.
 
-This setting does not prevent users from connecting to another computer by typing the name of a shared folder in the Run dialog box.
+This setting doesn't prevent users from connecting to another computer by typing the name of a shared folder in the Run dialog box.
 
 > [!NOTE]
-> This setting was documented incorrectly on the Explain tab in MDM Policy for Windows 2000. The Explain tab states incorrectly that this setting prevents users from connecting and disconnecting drives.
->
-> It is a requirement for third-party applications with Windows 2000 or later certification to adhere to this setting.
+> This setting was documented incorrectly on the Explain tab in Group Policy for Windows 2000. The Explain tab states incorrectly that this setting prevents users from connecting and disconnecting drives.
 
-<!--/Description-->
+> [!NOTE]
+> It's a requirement for third-party applications with Windows 2000 or later certification to adhere to this setting.
+<!-- NoNetConnectDisconnect-Description-End -->
 
+<!-- NoNetConnectDisconnect-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoNetConnectDisconnect-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove "Map Network Drive" and "Disconnect Network Drive"*
--   GP name: *NoNetConnectDisconnect*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+<!-- NoNetConnectDisconnect-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoNetConnectDisconnect-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-nonewappalert"></a>**ADMX_WindowsExplorer/NoNewAppAlert**  
+<!-- NoNetConnectDisconnect-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | NoNetConnectDisconnect |
+| Friendly Name | Remove "Map Network Drive" and "Disconnect Network Drive" |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoNetConnectDisconnect |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoNetConnectDisconnect-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoNetConnectDisconnect-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoNetConnectDisconnect-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoNetConnectDisconnect-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- NoNewAppAlert-Begin -->
+## NoNewAppAlert
 
-<hr/>
+<!-- NoNewAppAlert-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoNewAppAlert-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy removes the end-user notification for new application associations. These associations are based on file types (e.g. *.txt) or protocols (e.g. http:).
+<!-- NoNewAppAlert-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoNewAppAlert
+```
+<!-- NoNewAppAlert-OmaUri-End -->
 
-If this MDM Policy is enabled, no notifications will be shown. If the MDM Policy is not configured or disabled, notifications will be shown to the end user if a new application has been installed that can handle the file type or protocol association that was invoked.
+<!-- NoNewAppAlert-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy removes the end-user notification for new application associations. These associations are based on file types (e.g. *.txt) or protocols (e.g. http:)
 
-<!--/Description-->
+If this group policy is enabled, no notifications will be shown. If the group policy isn't configured or disabled, notifications will be shown to the end user if a new application has been installed that can handle the file type or protocol association that was invoked.
+<!-- NoNewAppAlert-Description-End -->
 
+<!-- NoNewAppAlert-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoNewAppAlert-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not show the 'new application installed' notification*
--   GP name: *NoNewAppAlert*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+<!-- NoNewAppAlert-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoNewAppAlert-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-noplacesbar"></a>**ADMX_WindowsExplorer/NoPlacesBar**  
+<!-- NoNewAppAlert-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | NoNewAppAlert |
+| Friendly Name | Do not show the 'new application installed' notification |
+| Location | Computer Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoNewAppAlert |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoNewAppAlert-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoNewAppAlert-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoNewAppAlert-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoNewAppAlert-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoPlacesBar-Begin -->
+## NoPlacesBar
 
-<hr/>
+<!-- NoPlacesBar-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoPlacesBar-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-Removes the shortcut bar from the Open dialog box. This setting, and others in this folder, lets you remove new features added in Windows 2000 Professional, so that the Open dialog box looks like it did in Windows NT 4.0 and earlier. These policies only affect programs that use the standard Open dialog box provided to developers of Windows programs.
+<!-- NoPlacesBar-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoPlacesBar
+```
+<!-- NoPlacesBar-OmaUri-End -->
 
-To see an example of the standard Open dialog box, start WordPad and, on the File menu, click Open.
+<!-- NoPlacesBar-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Removes the shortcut bar from the Open dialog box.
 
-<!--/Description-->
+This setting, and others in this folder, lets you remove new features added in Windows 2000 Professional, so that the Open dialog box looks like it did in Windows NT 4.0 and earlier. These policies only affect programs that use the standard Open dialog box provided to developers of Windows programs.
 
+To see an example of the standard Open dialog box, start Wordpad and, on the File menu, click Open.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Hide the common dialog places bar*
--   GP name: *NoPlacesBar*
--   GP path: *Windows Components\File Explorer\Common Open File Dialog*
--   GP ADMX file name: *WindowsExplorer.admx*
+> [!NOTE]
+> In Windows Vista, this policy setting applies only to applications that are using the Windows XP common dialog box style. This policy setting doesn't apply to the new Windows Vista common dialog box style. It's a requirement for third-party applications with Windows 2000 or later certification to adhere to this setting.
+<!-- NoPlacesBar-Description-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NoPlacesBar-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoPlacesBar-Editable-End -->
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-norecyclefiles"></a>**ADMX_WindowsExplorer/NoRecycleFiles**  
+<!-- NoPlacesBar-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoPlacesBar-DFProperties-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NoPlacesBar-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/SupportedSKUs-->
-<hr/>
+**ADMX mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | NoPlacesBar |
+| Friendly Name | Hide the common dialog places bar |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer > Common Open File Dialog |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Comdlg32 |
+| Registry Value Name | NoPlacesBar |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoPlacesBar-AdmxBacked-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoPlacesBar-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoPlacesBar-Examples-End -->
 
-<hr/>
+<!-- NoPlacesBar-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoRecycleFiles-Begin -->
+## NoRecycleFiles
+
+<!-- NoRecycleFiles-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoRecycleFiles-Applicability-End -->
+
+<!-- NoRecycleFiles-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoRecycleFiles
+```
+<!-- NoRecycleFiles-OmaUri-End -->
+
+<!-- NoRecycleFiles-Description-Begin -->
+<!-- Description-Source-ADMX -->
 When a file or folder is deleted in File Explorer, a copy of the file or folder is placed in the Recycle Bin. Using this setting, you can change this behavior.
 
-If you enable this setting, files and folders that are deleted using File Explorer will not be placed in the Recycle Bin and will therefore be permanently deleted.
+- If you enable this setting, files and folders that are deleted using File Explorer won't be placed in the Recycle Bin and will therefore be permanently deleted.
 
-If you disable or do not configure this setting, files and folders deleted using File Explorer will be placed in the Recycle Bin.
+- If you disable or don't configure this setting, files and folders deleted using File Explorer will be placed in the Recycle Bin.
+<!-- NoRecycleFiles-Description-End -->
 
-<!--/Description-->
+<!-- NoRecycleFiles-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoRecycleFiles-Editable-End -->
 
+<!-- NoRecycleFiles-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not move deleted files to the Recycle Bin*
--   GP name: *NoRecycleFiles*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoRecycleFiles-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NoRecycleFiles-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-norunasinstallprompt"></a>**ADMX_WindowsExplorer/NoRunAsInstallPrompt**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | NoRecycleFiles |
+| Friendly Name | Do not move deleted files to the Recycle Bin |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoRecycleFiles |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoRecycleFiles-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NoRecycleFiles-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoRecycleFiles-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoRecycleFiles-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoRunAsInstallPrompt-Begin -->
+## NoRunAsInstallPrompt
 
-> [!div class = "checklist"]
-> * User
+<!-- NoRunAsInstallPrompt-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoRunAsInstallPrompt-Applicability-End -->
 
-<hr/>
+<!-- NoRunAsInstallPrompt-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoRunAsInstallPrompt
+```
+<!-- NoRunAsInstallPrompt-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoRunAsInstallPrompt-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Prevents users from submitting alternate logon credentials to install a program.
 
-This setting suppresses the "Install Program As Other User" dialog box for local and network installations. This dialog box, which prompts the current user for the user name and password of an administrator, appears when users who are not administrators try to install programs locally on their computers. This setting allows administrators who have logged on as regular users to install programs without logging off and logging on again using their administrator credentials.
+This setting suppresses the "Install Program As Other User" dialog box for local and network installations. This dialog box, which prompts the current user for the user name and password of an administrator, appears when users who aren't administrators try to install programs locally on their computers. This setting allows administrators who have logged-on as regular users to install programs without logging off and logging on again using their administrator credentials.
 
-Many programs can be installed only by an administrator. If you enable this setting and a user does not have sufficient permissions to install a program, the installation continues with the current user's logon credentials. As a result, the installation might fail, or it might complete but not include all features. Or, it might appear to complete successfully, but the installed program might not operate correctly.
+Many programs can be installed only by an administrator.
 
-If you disable this setting or do not configure it, the "Install Program As Other User" dialog box appears whenever users install programs locally on the computer.
+- If you enable this setting and a user doesn't have sufficient permissions to install a program, the installation continues with the current user's logon credentials. As a result, the installation might fail, or it might complete but not include all features. Or, it might appear to complete successfully, but the installed program might not operate correctly.
 
-By default, users are not prompted for alternate logon credentials when installing programs from a network share. If enabled, this setting overrides the "Request credentials for network installations" setting.
+- If you disable this setting or don't configure it, the "Install Program As Other User" dialog box appears whenever users install programs locally on the computer.
 
-<!--/Description-->
+By default, users aren't prompted for alternate logon credentials when installing programs from a network share. If enabled, this setting overrides the "Request credentials for network installations" setting.
+<!-- NoRunAsInstallPrompt-Description-End -->
 
+<!-- NoRunAsInstallPrompt-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoRunAsInstallPrompt-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not request alternate credentials*
--   GP name: *NoRunAsInstallPrompt*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+<!-- NoRunAsInstallPrompt-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoRunAsInstallPrompt-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-nosearchinternettryharderbutton"></a>**ADMX_WindowsExplorer/NoSearchInternetTryHarderButton**  
+<!-- NoRunAsInstallPrompt-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | NoRunAsInstallPrompt |
+| Friendly Name | Do not request alternate credentials |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoRunasInstallPrompt |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoRunAsInstallPrompt-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoRunAsInstallPrompt-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoRunAsInstallPrompt-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoRunAsInstallPrompt-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoSearchInternetTryHarderButton-Begin -->
+## NoSearchInternetTryHarderButton
 
-<hr/>
+<!-- NoSearchInternetTryHarderButton-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoSearchInternetTryHarderButton-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-If you enable this policy, the "Internet" "Search again" link will not be shown when the user performs a search in the Explorer window.
+<!-- NoSearchInternetTryHarderButton-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoSearchInternetTryHarderButton
+```
+<!-- NoSearchInternetTryHarderButton-OmaUri-End -->
 
-If you disable this policy, there will be an "Internet" "Search again" link when the user performs a search in the Explorer window. This button launches a search in the default browser with the search terms.
+<!-- NoSearchInternetTryHarderButton-Description-Begin -->
+<!-- Description-Source-ADMX -->
 
-If you do not configure this policy (default), there will be an "Internet" link when the user performs a search in the Explorer window.
+- If you enable this policy, the "Internet" "Search again" link won't be shown when the user performs a search in the Explorer window.
 
-<!--/Description-->
+- If you disable this policy, there will be an "Internet" "Search again" link when the user performs a search in the Explorer window. This button launches a search in the default browser with the search terms.
 
+- If you don't configure this policy (default), there will be an "Internet" link when the user performs a search in the Explorer window.
+<!-- NoSearchInternetTryHarderButton-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove the Search the Internet "Search again" link*
--   GP name: *NoSearchInternetTryHarderButton*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+<!-- NoSearchInternetTryHarderButton-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoSearchInternetTryHarderButton-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NoSearchInternetTryHarderButton-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-nosecuritytab"></a>**ADMX_WindowsExplorer/NoSecurityTab**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoSearchInternetTryHarderButton-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- NoSearchInternetTryHarderButton-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoSearchInternetTryHarderButton |
+| Friendly Name | Remove the Search the Internet "Search again" link |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoSearchInternetTryHarderButton |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoSearchInternetTryHarderButton-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoSearchInternetTryHarderButton-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoSearchInternetTryHarderButton-Examples-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoSearchInternetTryHarderButton-End -->
 
-<hr/>
+<!-- NoSecurityTab-Begin -->
+## NoSecurityTab
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoSecurityTab-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoSecurityTab-Applicability-End -->
+
+<!-- NoSecurityTab-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoSecurityTab
+```
+<!-- NoSecurityTab-OmaUri-End -->
+
+<!-- NoSecurityTab-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Removes the Security tab from File Explorer.
 
-If you enable this setting, users opening the Properties dialog box for all file system objects, including folders, files, shortcuts, and drives, will not be able to access the Security tab. As a result, users will be able to neither change the security settings nor view a list of all users that have access to the resource in question.
+- If you enable this setting, users opening the Properties dialog box for all file system objects, including folders, files, shortcuts, and drives, won't be able to access the Security tab. As a result, users will be able to neither change the security settings nor view a list of all users that have access to the resource in question.
 
-If you disable or do not configure this setting, users will be able to access the security tab.
+- If you disable or don't configure this setting, users will be able to access the security tab.
+<!-- NoSecurityTab-Description-End -->
 
-<!--/Description-->
+<!-- NoSecurityTab-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoSecurityTab-Editable-End -->
 
+<!-- NoSecurityTab-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove Security tab*
--   GP name: *NoSecurityTab*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoSecurityTab-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NoSecurityTab-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-noshellsearchbutton"></a>**ADMX_WindowsExplorer/NoShellSearchButton**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | NoSecurityTab |
+| Friendly Name | Remove Security tab |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoSecurityTab |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoSecurityTab-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NoSecurityTab-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoSecurityTab-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoSecurityTab-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoShellSearchButton-Begin -->
+## NoShellSearchButton
 
-> [!div class = "checklist"]
-> * User
+<!-- NoShellSearchButton-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoShellSearchButton-Applicability-End -->
 
-<hr/>
+<!-- NoShellSearchButton-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoShellSearchButton
+```
+<!-- NoShellSearchButton-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to remove the Search button from the File Explorer toolbar. If you enable this policy setting, the Search button is removed from the Standard Buttons toolbar that appears in File Explorer and other programs that use the File Explorer window, such as My Computer and Network Locations. Enabling this policy setting does not remove the Search button or affect any search features of Internet browser windows, such as the Internet Explorer window.
+<!-- NoShellSearchButton-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to remove the Search button from the File Explorer toolbar.
 
-If you disable or do not configure this policy setting, the Search button is available from the File Explorer toolbar.
+- If you enable this policy setting, the Search button is removed from the Standard Buttons toolbar that appears in File Explorer and other programs that use the File Explorer window, such as My Computer and Network Locations.
 
-This policy setting does not affect the Search items on the File Explorer context menu or on the Start menu. To remove Search from the Start menu, use the "Remove Search menu from Start menu" policy setting (in User Configuration\Administrative Templates\Start Menu and Taskbar). To hide all context menus, use the "Remove File Explorer's default context menu" policy setting.
+Enabling this policy setting doesn't remove the Search button or affect any search features of Internet browser windows, such as the Internet Explorer window.
 
-<!--/Description-->
+- If you disable or don't configure this policy setting, the Search button is available from the File Explorer toolbar.
 
+This policy setting doesn't affect the Search items on the File Explorer context menu or on the Start menu. To remove Search from the Start menu, use the "Remove Search menu from Start menu" policy setting (in User Configuration\Administrative Templates\Start Menu and Taskbar). To hide all context menus, use the "Remove File Explorer's default context menu" policy setting.
+<!-- NoShellSearchButton-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove Search button from File Explorer*
--   GP name: *NoShellSearchButton*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+<!-- NoShellSearchButton-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoShellSearchButton-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NoShellSearchButton-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-nostrcmplogical"></a>**ADMX_WindowsExplorer/NoStrCmpLogical**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoShellSearchButton-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- NoShellSearchButton-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoShellSearchButton |
+| Friendly Name | Remove Search button from File Explorer |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoShellSearchButton |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoShellSearchButton-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoShellSearchButton-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoShellSearchButton-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- NoShellSearchButton-End -->
 
-<hr/>
+<!-- NoStrCmpLogical-Begin -->
+## NoStrCmpLogical
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoStrCmpLogical-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoStrCmpLogical-Applicability-End -->
+
+<!-- NoStrCmpLogical-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoStrCmpLogical
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoStrCmpLogical
+```
+<!-- NoStrCmpLogical-OmaUri-End -->
+
+<!-- NoStrCmpLogical-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to have file names sorted literally (as in Windows 2000 and earlier) rather than in numerical order.
 
-If you enable this policy setting, File Explorer will sort file names by each digit in a file name (for example, 111 < 22 < 3).
+- If you enable this policy setting, File Explorer will sort file names by each digit in a file name (for example, 111 < 22 < 3).
 
-If you disable or do not configure this policy setting, File Explorer will sort file names by increasing number value (for example, 3 < 22 < 111).
+- If you disable or don't configure this policy setting, File Explorer will sort file names by increasing number value (for example, 3 < 22 < 111).
+<!-- NoStrCmpLogical-Description-End -->
 
-<!--/Description-->
+<!-- NoStrCmpLogical-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoStrCmpLogical-Editable-End -->
 
+<!-- NoStrCmpLogical-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off numerical sorting in File Explorer*
--   GP name: *NoStrCmpLogical*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoStrCmpLogical-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NoStrCmpLogical-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-noviewcontextmenu"></a>**ADMX_WindowsExplorer/NoViewContextMenu**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | NoStrCmpLogical |
+| Friendly Name | Turn off numerical sorting in File Explorer |
+| Location | Computer and User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoStrCmpLogical |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoStrCmpLogical-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NoStrCmpLogical-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoStrCmpLogical-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoStrCmpLogical-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoViewContextMenu-Begin -->
+## NoViewContextMenu
 
-> [!div class = "checklist"]
-> * User
+<!-- NoViewContextMenu-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoViewContextMenu-Applicability-End -->
 
-<hr/>
+<!-- NoViewContextMenu-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoViewContextMenu
+```
+<!-- NoViewContextMenu-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoViewContextMenu-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Removes shortcut menus from the desktop and File Explorer. Shortcut menus appear when you right-click an item.
 
-If you enable this setting, menus do not appear when you right-click the desktop or when you right-click the items in File Explorer. This setting does not prevent users from using other methods to issue commands available on the shortcut menus.
+If you enable this setting, menus don't appear when you right-click the desktop or when you right-click the items in File Explorer. This setting doesn't prevent users from using other methods to issue commands available on the shortcut menus.
+<!-- NoViewContextMenu-Description-End -->
 
-<!--/Description-->
+<!-- NoViewContextMenu-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoViewContextMenu-Editable-End -->
 
+<!-- NoViewContextMenu-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove File Explorer's default context menu*
--   GP name: *NoViewContextMenu*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoViewContextMenu-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NoViewContextMenu-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-noviewondrive"></a>**ADMX_WindowsExplorer/NoViewOnDrive**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | NoViewContextMenu |
+| Friendly Name | Remove File Explorer's default context menu |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoViewContextMenu |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoViewContextMenu-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NoViewContextMenu-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoViewContextMenu-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoViewContextMenu-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoViewOnDrive-Begin -->
+## NoViewOnDrive
 
-> [!div class = "checklist"]
-> * User
+<!-- NoViewOnDrive-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoViewOnDrive-Applicability-End -->
 
-<hr/>
+<!-- NoViewOnDrive-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoViewOnDrive
+```
+<!-- NoViewOnDrive-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoViewOnDrive-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Prevents users from using My Computer to gain access to the content of selected drives.
 
-If you enable this setting, users can browse the directory structure of the selected drives in My Computer or File Explorer, but they cannot open folders and access the contents (open the files in the folders or see the files in the folders). Also, they cannot use the Run dialog box or the Map Network Drive dialog box to view the directories on these drives.
+If you enable this setting, users can browse the directory structure of the selected drives in My Computer or File Explorer, but they can't open folders and access the contents. Also, they can't use the Run dialog box or the Map Network Drive dialog box to view the directories on these drives.
 
 To use this setting, select a drive or combination of drives from the drop-down list. To allow access to all drive directories, disable this setting or select the "Do not restrict drives" option from the drop-down list.
 
 > [!NOTE]
 > The icons representing the specified drives still appear in My Computer, but if users double-click the icons, a message appears explaining that a setting prevents the action.
->
-> Also, this setting does not prevent users from using programs to access local and network drives. And, it does not prevent them from using the Disk Management snap-in to view and change drive characteristics. Also, see the "Hide these specified drives in My Computer" setting.
 
-<!--/Description-->
+Also, this setting doesn't prevent users from using programs to access local and network drives. And, it doesn't prevent them from using the Disk Management snap-in to view and change drive characteristics.
 
+Also, see the "Hide these specified drives in My Computer" setting.
+<!-- NoViewOnDrive-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Prevent access to drives from My Computer*
--   GP name: *NoViewOnDrive*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+<!-- NoViewOnDrive-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoViewOnDrive-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NoViewOnDrive-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-nowindowshotkeys"></a>**ADMX_WindowsExplorer/NoWindowsHotKeys**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoViewOnDrive-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- NoViewOnDrive-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoViewOnDrive |
+| Friendly Name | Prevent access to drives from My Computer |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoViewOnDrive-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoViewOnDrive-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoViewOnDrive-Examples-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoViewOnDrive-End -->
 
-<hr/>
+<!-- NoWindowsHotKeys-Begin -->
+## NoWindowsHotKeys
 
-<!--/Scope-->
-<!--Description-->
-Turn off Windows Key hotkeys. Keyboards with a Windows key provide users with shortcuts to common shell features. For example, pressing the keyboard sequence Windows+R opens the Run dialog box; pressing Windows+E starts File Explorer.
+<!-- NoWindowsHotKeys-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoWindowsHotKeys-Applicability-End -->
 
-By using this setting, you can disable these Windows Key hotkeys.
+<!-- NoWindowsHotKeys-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoWindowsHotKeys
+```
+<!-- NoWindowsHotKeys-OmaUri-End -->
 
-If you enable this setting, the Windows Key hotkeys are unavailable.
+<!-- NoWindowsHotKeys-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Turn off Windows Key hotkeys.
 
-If you disable or do not configure this setting, the Windows Key hotkeys are available.
+Keyboards with a Windows key provide users with shortcuts to common shell features. For example, pressing the keyboard sequence Windows+R opens the Run dialog box; pressing Windows+E starts File Explorer. By using this setting, you can disable these Windows Key hotkeys.
 
-<!--/Description-->
+- If you enable this setting, the Windows Key hotkeys are unavailable.
 
+- If you disable or don't configure this setting, the Windows Key hotkeys are available.
+<!-- NoWindowsHotKeys-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off Windows Key hotkeys*
--   GP name: *NoWindowsHotKeys*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+<!-- NoWindowsHotKeys-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoWindowsHotKeys-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NoWindowsHotKeys-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-noworkgroupcontents"></a>**ADMX_WindowsExplorer/NoWorkgroupContents**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoWindowsHotKeys-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- NoWindowsHotKeys-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NoWindowsHotKeys |
+| Friendly Name | Turn off Windows Key hotkeys |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoWinKeys |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoWindowsHotKeys-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoWindowsHotKeys-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoWindowsHotKeys-Examples-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoWindowsHotKeys-End -->
 
-<hr/>
+<!-- NoWorkgroupContents-Begin -->
+## NoWorkgroupContents
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoWorkgroupContents-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoWorkgroupContents-Applicability-End -->
+
+<!-- NoWorkgroupContents-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/NoWorkgroupContents
+```
+<!-- NoWorkgroupContents-OmaUri-End -->
+
+<!-- NoWorkgroupContents-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to remove computers in the user's workgroup and domain from lists of network resources in File Explorer and Network Locations.
 
-If you enable this policy setting, the system removes the "Computers Near Me" option and the icons representing nearby computers from Network Locations. This policy setting also removes these icons from the Map Network Drive browser.
+- If you enable this policy setting, the system removes the "Computers Near Me" option and the icons representing nearby computers from Network Locations. This policy setting also removes these icons from the Map Network Drive browser.
 
-If you disable or do not configure this policy setting, computers in the user's workgroup and domain appear in lists of network resources in File Explorer and Network Locations.
+- If you disable or don't configure this policy setting, computers in the user's workgroup and domain appear in lists of network resources in File Explorer and Network Locations.
 
-This policy setting does not prevent users from connecting to computers in their workgroup or domain by other commonly used methods, such as typing the share name in the Run dialog box or the Map Network Drive dialog box.
+This policy setting doesn't prevent users from connecting to computers in their workgroup or domain by other commonly used methods, such as typing the share name in the Run dialog box or the Map Network Drive dialog box.
 
 To remove network computers from lists of network resources, use the "No Entire Network in Network Locations" policy setting.
+<!-- NoWorkgroupContents-Description-End -->
 
-<!--/Description-->
+<!-- NoWorkgroupContents-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoWorkgroupContents-Editable-End -->
 
+<!-- NoWorkgroupContents-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *No Computers Near Me in Network Locations*
--   GP name: *NoWorkgroupContents*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoWorkgroupContents-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NoWorkgroupContents-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-placesbar"></a>**ADMX_WindowsExplorer/PlacesBar**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | NoWorkgroupContents |
+| Friendly Name | No Computers Near Me in Network Locations |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoComputersNearMe |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- NoWorkgroupContents-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NoWorkgroupContents-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoWorkgroupContents-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoWorkgroupContents-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PlacesBar-Begin -->
+## PlacesBar
 
-> [!div class = "checklist"]
-> * User
+<!-- PlacesBar-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PlacesBar-Applicability-End -->
 
-<hr/>
+<!-- PlacesBar-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/PlacesBar
+```
+<!-- PlacesBar-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Configures the list of items displayed in the Places Bar in the Windows File/Open dialog. If enable this setting you can specify from 1 to 5 items to be displayed in the Places Bar.
+<!-- PlacesBar-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Configures the list of items displayed in the Places Bar in the Windows File/Open dialog.
+
+- If you enable this setting you can specify from 1 to 5 items to be displayed in the Places Bar.
 
 The valid items you may display in the Places Bar are:
 
-1. Shortcuts to a local folders -- (example: `C:\Windows`)
-2. Shortcuts to remote folders -- (`\\server\share`)
-3. FTP folders
-4. web folders
-5. Common Shell folders.
+1) Shortcuts to a local folders -- (ex. C:\Windows)
+
+2) Shortcuts to remote folders -- (\\server\share)
+
+3) FTP folders.
+
+4) web folders.
+
+5) Common Shell folders.
 
 The list of Common Shell Folders that may be specified:
 
 Desktop, Recent Places, Documents, Pictures, Music, Recently Changed, Attachments and Saved Searches.
 
-If you disable or do not configure this setting the default list of items will be displayed in the Places Bar.
+- If you disable or don't configure this setting the default list of items will be displayed in the Places Bar.
 
+> [!NOTE]
+> In Windows Vista, this policy setting applies only to applications that are using the Windows XP common dialog box style. This policy setting doesn't apply to the new Windows Vista common dialog box style.
+<!-- PlacesBar-Description-End -->
 
-<!--/Description-->
+<!-- PlacesBar-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PlacesBar-Editable-End -->
 
+<!-- PlacesBar-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Items displayed in Places Bar*
--   GP name: *PlacesBar*
--   GP path: *Windows Components\File Explorer\Common Open File Dialog*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PlacesBar-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- PlacesBar-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-promptrunasinstallnetpath"></a>**ADMX_WindowsExplorer/PromptRunasInstallNetPath**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | PlacesBar |
+| Friendly Name | Items displayed in Places Bar |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer > Common Open File Dialog |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\comdlg32\Placesbar |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- PlacesBar-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PlacesBar-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PlacesBar-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PlacesBar-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PromptRunasInstallNetPath-Begin -->
+## PromptRunasInstallNetPath
 
-> [!div class = "checklist"]
-> * User
+<!-- PromptRunasInstallNetPath-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PromptRunasInstallNetPath-Applicability-End -->
 
-<hr/>
+<!-- PromptRunasInstallNetPath-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/PromptRunasInstallNetPath
+```
+<!-- PromptRunasInstallNetPath-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- PromptRunasInstallNetPath-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Prompts users for alternate logon credentials during network-based installations.
 
 This setting displays the "Install Program As Other User" dialog box even when a program is being installed from files on a network computer across a local area network connection.
 
-If you disable this setting or do not configure it, this dialog box appears only when users are installing programs from local media.
+If you disable this setting or don't configure it, this dialog box appears only when users are installing programs from local media.
 
-The "Install Program as Other User" dialog box prompts the current user for the user name and password of an administrator. This setting allows administrators who have logged on as regular users to install programs without logging off and logging on again using their administrator credentials.
+The "Install Program as Other User" dialog box prompts the current user for the user name and password of an administrator. This setting allows administrators who have logged-on as regular users to install programs without logging off and logging on again using their administrator credentials.
 
-If the dialog box does not appear, the installation proceeds with the current user's permissions. If these permissions are not sufficient, the installation might fail, or it might complete but not include all features. Or, it might appear to complete successfully, but the installed program might not operate correctly.
+If the dialog box doesn't appear, the installation proceeds with the current user's permissions. If these permissions aren't sufficient, the installation might fail, or it might complete but not include all features. Or, it might appear to complete successfully, but the installed program might not operate correctly.
 
 > [!NOTE]
-> If it is enabled, the "Do not request alternate credentials" setting takes precedence over this setting. When that setting is enabled, users are not prompted for alternate logon credentials on any installation.
+> If it's enabled, the "Do not request alternate credentials" setting takes precedence over this setting. When that setting is enabled, users aren't prompted for alternate logon credentials on any installation.
+<!-- PromptRunasInstallNetPath-Description-End -->
 
-<!--/Description-->
+<!-- PromptRunasInstallNetPath-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PromptRunasInstallNetPath-Editable-End -->
 
+<!-- PromptRunasInstallNetPath-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Request credentials for network installations*
--   GP name: *PromptRunasInstallNetPath*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PromptRunasInstallNetPath-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- PromptRunasInstallNetPath-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-recyclebinsize"></a>**ADMX_WindowsExplorer/RecycleBinSize**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | PromptRunasInstallNetPath |
+| Friendly Name | Request credentials for network installations |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | PromptRunasInstallNetPath |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- PromptRunasInstallNetPath-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PromptRunasInstallNetPath-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PromptRunasInstallNetPath-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PromptRunasInstallNetPath-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RecycleBinSize-Begin -->
+## RecycleBinSize
 
-> [!div class = "checklist"]
-> * User
+<!-- RecycleBinSize-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- RecycleBinSize-Applicability-End -->
 
-<hr/>
+<!-- RecycleBinSize-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/RecycleBinSize
+```
+<!-- RecycleBinSize-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- RecycleBinSize-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Limits the percentage of a volume's disk space that can be used to store deleted files.
 
-If you enable this setting, the user has a maximum amount of disk space that may be used for the Recycle Bin on their workstation.
+- If you enable this setting, the user has a maximum amount of disk space that may be used for the Recycle Bin on their workstation.
 
-If you disable or do not configure this setting, users can change the total amount of disk space used by the Recycle Bin.
+- If you disable or don't configure this setting, users can change the total amount of disk space used by the Recycle Bin.
 
 > [!NOTE]
 > This setting is applied to all volumes.
+<!-- RecycleBinSize-Description-End -->
 
-<!--/Description-->
+<!-- RecycleBinSize-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RecycleBinSize-Editable-End -->
 
+<!-- RecycleBinSize-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Maximum allowed Recycle Bin size*
--   GP name: *RecycleBinSize*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RecycleBinSize-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- RecycleBinSize-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-shellprotocolprotectedmodetitle-1"></a>**ADMX_WindowsExplorer/ShellProtocolProtectedModeTitle_1**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | RecycleBinSize |
+| Friendly Name | Maximum allowed Recycle Bin size |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- RecycleBinSize-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- RecycleBinSize-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RecycleBinSize-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RecycleBinSize-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ShellProtocolProtectedModeTitle_1-Begin -->
+## ShellProtocolProtectedModeTitle_1
 
-> [!div class = "checklist"]
-> * User
+<!-- ShellProtocolProtectedModeTitle_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ShellProtocolProtectedModeTitle_1-Applicability-End -->
 
-<hr/>
+<!-- ShellProtocolProtectedModeTitle_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/ShellProtocolProtectedModeTitle_1
+```
+<!-- ShellProtocolProtectedModeTitle_1-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to configure the amount of functionality that the shell protocol can have. When using the full functionality of this protocol, applications can open folders and launch files. The protected mode reduces the functionality of this protocol allowing applications to only open a limited set of folders. Applications are not able to open files with this protocol when it is in the protected mode. It is recommended to leave this protocol in the protected mode to increase the security of Windows.
+<!-- ShellProtocolProtectedModeTitle_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure the amount of functionality that the shell protocol can have. When using the full functionality of this protocol, applications can open folders and launch files. The protected mode reduces the functionality of this protocol allowing applications to only open a limited set of folders. Applications aren't able to open files with this protocol when it's in the protected mode. It's recommended to leave this protocol in the protected mode to increase the security of Windows.
 
-If you enable this policy setting the protocol is fully enabled, allowing the opening of folders and files.
+- If you enable this policy setting the protocol is fully enabled, allowing the opening of folders and files.
 
-If you disable this policy setting the protocol is in the protected mode, allowing applications to only open a limited set of folders.
+- If you disable this policy setting the protocol is in the protected mode, allowing applications to only open a limited set of folders.
 
-If you do not configure this policy setting the protocol is in the protected mode, allowing applications to only open a limited set of folders.
+- If you don't configure this policy setting the protocol is in the protected mode, allowing applications to only open a limited set of folders.
+<!-- ShellProtocolProtectedModeTitle_1-Description-End -->
 
-<!--/Description-->
+<!-- ShellProtocolProtectedModeTitle_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ShellProtocolProtectedModeTitle_1-Editable-End -->
 
+<!-- ShellProtocolProtectedModeTitle_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off shell protocol protected mode*
--   GP name: *ShellProtocolProtectedModeTitle_1*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ShellProtocolProtectedModeTitle_1-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- ShellProtocolProtectedModeTitle_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-shellprotocolprotectedmodetitle-2"></a>**ADMX_WindowsExplorer/ShellProtocolProtectedModeTitle_2**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | ShellProtocolProtectedModeTitle_1 |
+| Friendly Name | Turn off shell protocol protected mode |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | PreXPSP2ShellProtocolBehavior |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- ShellProtocolProtectedModeTitle_1-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ShellProtocolProtectedModeTitle_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ShellProtocolProtectedModeTitle_1-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ShellProtocolProtectedModeTitle_1-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ShellProtocolProtectedModeTitle_2-Begin -->
+## ShellProtocolProtectedModeTitle_2
 
-> [!div class = "checklist"]
-> * Device
+<!-- ShellProtocolProtectedModeTitle_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ShellProtocolProtectedModeTitle_2-Applicability-End -->
 
-<hr/>
+<!-- ShellProtocolProtectedModeTitle_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/ShellProtocolProtectedModeTitle_2
+```
+<!-- ShellProtocolProtectedModeTitle_2-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to configure the amount of functionality that the shell protocol can have. When using the full functionality of this protocol, applications can open folders and launch files. The protected mode reduces the functionality of this protocol allowing applications to only open a limited set of folders. Applications are not able to open files with this protocol when it is in the protected mode. It is recommended to leave this protocol in the protected mode to increase the security of Windows.
+<!-- ShellProtocolProtectedModeTitle_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure the amount of functionality that the shell protocol can have. When using the full functionality of this protocol, applications can open folders and launch files. The protected mode reduces the functionality of this protocol allowing applications to only open a limited set of folders. Applications aren't able to open files with this protocol when it's in the protected mode. It's recommended to leave this protocol in the protected mode to increase the security of Windows.
 
-If you enable this policy setting the protocol is fully enabled, allowing the opening of folders and files.
+- If you enable this policy setting the protocol is fully enabled, allowing the opening of folders and files.
 
-If you disable this policy setting the protocol is in the protected mode, allowing applications to only open a limited set of folders.
+- If you disable this policy setting the protocol is in the protected mode, allowing applications to only open a limited set of folders.
 
-If you do not configure this policy setting the protocol is in the protected mode, allowing applications to only open a limited set of folders.
+- If you don't configure this policy setting the protocol is in the protected mode, allowing applications to only open a limited set of folders.
+<!-- ShellProtocolProtectedModeTitle_2-Description-End -->
 
-<!--/Description-->
+<!-- ShellProtocolProtectedModeTitle_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ShellProtocolProtectedModeTitle_2-Editable-End -->
 
+<!-- ShellProtocolProtectedModeTitle_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off shell protocol protected mode*
--   GP name: *ShellProtocolProtectedModeTitle_2*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ShellProtocolProtectedModeTitle_2-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- ShellProtocolProtectedModeTitle_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-showhibernateoption"></a>**ADMX_WindowsExplorer/ShowHibernateOption**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | ShellProtocolProtectedModeTitle_2 |
+| Friendly Name | Turn off shell protocol protected mode |
+| Location | Computer Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | PreXPSP2ShellProtocolBehavior |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- ShellProtocolProtectedModeTitle_2-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ShellProtocolProtectedModeTitle_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ShellProtocolProtectedModeTitle_2-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ShellProtocolProtectedModeTitle_2-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ShowHibernateOption-Begin -->
+## ShowHibernateOption
 
-> [!div class = "checklist"]
-> * Device
+<!-- ShowHibernateOption-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ShowHibernateOption-Applicability-End -->
 
-<hr/>
+<!-- ShowHibernateOption-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/ShowHibernateOption
+```
+<!-- ShowHibernateOption-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- ShowHibernateOption-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Shows or hides hibernate from the power options menu.
 
-If you enable this policy setting, the hibernate option will be shown in the Power Options menu (as long as it is supported by the machine's hardware).
+- If you enable this policy setting, the hibernate option will be shown in the Power Options menu (as long as it's supported by the machine's hardware).
 
-If you disable this policy setting, the hibernate option will never be shown in the Power Options menu.
+- If you disable this policy setting, the hibernate option will never be shown in the Power Options menu.
 
-If you do not configure this policy setting, users will be able to choose whether they want hibernate to show through the Power Options Control Panel.
+- If you don't configure this policy setting, users will be able to choose whether they want hibernate to show through the Power Options Control Panel.
+<!-- ShowHibernateOption-Description-End -->
 
-<!--/Description-->
+<!-- ShowHibernateOption-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ShowHibernateOption-Editable-End -->
 
+<!-- ShowHibernateOption-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Show hibernate in the power options menu*
--   GP name: *ShowHibernateOption*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ShowHibernateOption-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- ShowHibernateOption-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-showsleepoption"></a>**ADMX_WindowsExplorer/ShowSleepOption**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | ShowHibernateOption |
+| Friendly Name | Show hibernate in the power options menu |
+| Location | Computer Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | ShowHibernateOption |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- ShowHibernateOption-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ShowHibernateOption-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ShowHibernateOption-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ShowHibernateOption-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ShowSleepOption-Begin -->
+## ShowSleepOption
 
-> [!div class = "checklist"]
-> * Device
+<!-- ShowSleepOption-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ShowSleepOption-Applicability-End -->
 
-<hr/>
+<!-- ShowSleepOption-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/ShowSleepOption
+```
+<!-- ShowSleepOption-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- ShowSleepOption-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Shows or hides sleep from the power options menu.
 
-If you enable this policy setting, the sleep option will be shown in the Power Options menu (as long as it is supported by the machine's hardware).
+- If you enable this policy setting, the sleep option will be shown in the Power Options menu (as long as it's supported by the machine's hardware).
 
-If you disable this policy setting, the sleep option will never be shown in the Power Options menu.
+- If you disable this policy setting, the sleep option will never be shown in the Power Options menu.
 
-If you do not configure this policy setting, users will be able to choose whether they want sleep to show through the Power Options Control Panel.
+- If you don't configure this policy setting, users will be able to choose whether they want sleep to show through the Power Options Control Panel.
+<!-- ShowSleepOption-Description-End -->
 
-<!--/Description-->
+<!-- ShowSleepOption-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ShowSleepOption-Editable-End -->
 
+<!-- ShowSleepOption-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Show sleep in the power options menu*
--   GP name: *ShowSleepOption*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ShowSleepOption-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- ShowSleepOption-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-tryharderpinnedlibrary"></a>**ADMX_WindowsExplorer/TryHarderPinnedLibrary**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | ShowSleepOption |
+| Friendly Name | Show sleep in the power options menu |
+| Location | Computer Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | ShowSleepOption |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- ShowSleepOption-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ShowSleepOption-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ShowSleepOption-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ShowSleepOption-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TryHarderPinnedLibrary-Begin -->
+## TryHarderPinnedLibrary
 
-> [!div class = "checklist"]
-> * User
+<!-- TryHarderPinnedLibrary-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TryHarderPinnedLibrary-Applicability-End -->
 
-<hr/>
+<!-- TryHarderPinnedLibrary-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/TryHarderPinnedLibrary
+```
+<!-- TryHarderPinnedLibrary-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows up to five Libraries or Search Connectors to be pinned to the "Search again" links and the Start menu links. The "Search again" links at the bottom of the Search Results view allow the user to reconduct a search but in a different location. To add a Library or Search Connector link, specify the path of the .Library-ms or .searchConnector-ms file in the "Location" text box (for example, "C:\sampleLibrary.Library-ms" for the Documents library, or "C:\sampleSearchConnector.searchConnector-ms" for a Search Connector). The pinned link will only work if this path is valid and the location contains the specified .Library-ms or .searchConnector-ms file.
-
-You can add up to five additional links to the "Search again" links at the bottom of results returned in File Explorer after a search is executed. These links will be shared between Internet search sites and Search Connectors/Libraries. Search Connector/Library links take precedence over Internet search links.
-
-The first several links will also be pinned to the Start menu. A total of four links can be included on the Start menu. The "See more results" link will be pinned first by default, unless it is disabled via MDM Policy. The "Search the Internet" link is pinned second, if it is pinned via MDM Policy (though this link is disabled by default). If a custom Internet search link is pinned using the "Custom Internet search provider" MDM Policy, this link will be pinned third on the Start menu. The remaining link(s) will be shared between pinned Search Connectors/Libraries and pinned Internet/intranet search links. Search Connector/Library links take precedence over Internet/intranet search links.
-
-If you enable this policy setting, the specified Libraries or Search Connectors will appear in the "Search again" links and the Start menu links.
-
-If you disable or do not configure this policy setting, no Libraries or Search Connectors will appear in the "Search again" links or the Start menu links.
-
-<!--/Description-->
-
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Pin Libraries or Search Connectors to the "Search again" links and the Start menu*
--   GP name: *TryHarderPinnedLibrary*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-windowsexplorer-tryharderpinnedopensearch"></a>**ADMX_WindowsExplorer/TryHarderPinnedOpenSearch**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to add Internet or intranet sites to the "Search again" links located at the bottom of search results in File Explorer and the Start menu links. The "Search again" links at the bottom of the Search Results view allow the user to reconduct a search but in a different location. The Internet search site will be searched with the text in the search box. To add an Internet search site, specify the URL of the search site in OpenSearch format with {searchTerms} for the query string (for example, http://www.example.com/results.aspx?q={searchTerms}).
+<!-- TryHarderPinnedLibrary-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows up to five Libraries or Search Connectors to be pinned to the "Search again" links and the Start menu links. The "Search again" links at the bottom of the Search Results view allow the user to reconduct a search but in a different location. To add a Library or Search Connector link, specify the path of the . Library-ms or .searchConnector-ms file in the "Location" text box (for example, "C:\sampleLibrary. Library-ms" for the Documents library, or "C:\sampleSearchConnector.searchConnector-ms" for a Search Connector). The pinned link will only work if this path is valid and the location contains the specified . Library-ms or .searchConnector-ms file.
 
 You can add up to five additional links to the "Search again" links at the bottom of results returned in File Explorer after a search is executed. These links will be shared between Internet search sites and Search Connectors/Libraries. Search Connector/Library links take precedence over Internet search links.
 
-The first several links will also be pinned to the Start menu. A total of four links can be pinned on the Start menu. The "See more results" link will be pinned first by default, unless it is disabled via MDM Policy. The "Search the Internet" link is pinned second, if it is pinned via MDM Policy (though this link is disabled by default). If a custom Internet search link is pinned using the "Custom Internet search provider" MDM Policy, this link will be pinned third on the Start menu. The remaining link(s) will be shared between pinned Internet/intranet links and pinned Search Connectors/Libraries. Search Connector/Library links take precedence over Internet/intranet search links.
+The first several links will also be pinned to the Start menu. A total of four links can be included on the Start menu. The "See more results" link will be pinned first by default, unless it's disabled via Group Policy. The "Search the Internet" link is pinned second, if it's pinned via Group Policy (though this link is disabled by default). If a custom Internet search link is pinned using the "Custom Internet search provider" Group Policy, this link will be pinned third on the Start menu. The remaining link(s) will be shared between pinned Search Connectors/Libraries and pinned Internet/intranet search links. Search Connector/Library links take precedence over Internet/intranet search links.
 
-If you enable this policy setting, the specified Internet sites will appear in the "Search again" links and the Start menu links.
+- If you enable this policy setting, the specified Libraries or Search Connectors will appear in the "Search again" links and the Start menu links.
 
-If you disable or do not configure this policy setting, no custom Internet search sites will be added to the "Search again" links or the Start menu links.
+- If you disable or don't configure this policy setting, no Libraries or Search Connectors will appear in the "Search again" links or the Start menu links.
+<!-- TryHarderPinnedLibrary-Description-End -->
 
-<!--/Description-->
+<!-- TryHarderPinnedLibrary-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TryHarderPinnedLibrary-Editable-End -->
 
+<!-- TryHarderPinnedLibrary-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Pin Internet search sites to the "Search again" links and the Start menu*
--   GP name: *TryHarderPinnedOpenSearch*
--   GP path: *Windows Components\File Explorer*
--   GP ADMX file name: *WindowsExplorer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TryHarderPinnedLibrary-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- TryHarderPinnedLibrary-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | TryHarderPinnedLibrary |
+| Friendly Name | Pin Libraries or Search Connectors to the "Search again" links and the Start menu |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | TryHarderPinnedLibrary |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- TryHarderPinnedLibrary-AdmxBacked-End -->
 
-<!--/Policies-->
+<!-- TryHarderPinnedLibrary-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TryHarderPinnedLibrary-Examples-End -->
+
+<!-- TryHarderPinnedLibrary-End -->
+
+<!-- TryHarderPinnedOpenSearch-Begin -->
+## TryHarderPinnedOpenSearch
+
+<!-- TryHarderPinnedOpenSearch-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TryHarderPinnedOpenSearch-Applicability-End -->
+
+<!-- TryHarderPinnedOpenSearch-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_WindowsExplorer/TryHarderPinnedOpenSearch
+```
+<!-- TryHarderPinnedOpenSearch-OmaUri-End -->
+
+<!-- TryHarderPinnedOpenSearch-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to add Internet or intranet sites to the "Search again" links located at the bottom of search results in File Explorer and the Start menu links. The "Search again" links at the bottom of the Search Results view allow the user to reconduct a search but in a different location. The Internet search site will be searched with the text in the search box. To add an Internet search site, specify the URL of the search site in OpenSearch format with {searchTerms} for the query string (for example, `https://www.example.com/results.aspx?q={searchTerms}`).
+
+You can add up to five additional links to the "Search again" links at the bottom of results returned in File Explorer after a search is executed. These links will be shared between Internet search sites and Search Connectors/Libraries. Search Connector/Library links take precedence over Internet search links.
+
+The first several links will also be pinned to the Start menu. A total of four links can be pinned on the Start menu. The "See more results" link will be pinned first by default, unless it's disabled via Group Policy. The "Search the Internet" link is pinned second, if it's pinned via Group Policy (though this link is disabled by default). If a custom Internet search link is pinned using the "Custom Internet search provider" Group Policy, this link will be pinned third on the Start menu. The remaining link(s) will be shared between pinned Internet/intranet links and pinned Search Connectors/Libraries. Search Connector/Library links take precedence over Internet/intranet search links.
+
+- If you enable this policy setting, the specified Internet sites will appear in the "Search again" links and the Start menu links.
+
+- If you disable or don't configure this policy setting, no custom Internet search sites will be added to the "Search again" links or the Start menu links.
+<!-- TryHarderPinnedOpenSearch-Description-End -->
+
+<!-- TryHarderPinnedOpenSearch-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TryHarderPinnedOpenSearch-Editable-End -->
+
+<!-- TryHarderPinnedOpenSearch-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TryHarderPinnedOpenSearch-DFProperties-End -->
+
+<!-- TryHarderPinnedOpenSearch-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TryHarderPinnedOpenSearch |
+| Friendly Name | Pin Internet search sites to the "Search again" links and the Start menu |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | TryHarderPinnedOpenSearch |
+| ADMX File Name | WindowsExplorer.admx |
+<!-- TryHarderPinnedOpenSearch-AdmxBacked-End -->
+
+<!-- TryHarderPinnedOpenSearch-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TryHarderPinnedOpenSearch-Examples-End -->
+
+<!-- TryHarderPinnedOpenSearch-End -->
+
+<!-- ADMX_WindowsExplorer-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_WindowsExplorer-CspMoreInfo-End -->
+
+<!-- ADMX_WindowsExplorer-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

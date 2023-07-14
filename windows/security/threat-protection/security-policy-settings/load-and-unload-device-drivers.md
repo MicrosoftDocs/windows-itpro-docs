@@ -1,36 +1,36 @@
 ---
-title: Load and unload device drivers (Windows 10)
+title: Load and unload device drivers 
 description: Describes the best practices, location, values, policy management, and security considerations for the Load and unload device drivers security policy setting.
 ms.assetid: 66262532-c610-470c-9792-35ff4389430f
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Load and unload device drivers
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Load and unload device drivers** security policy setting.
 
 ## Reference
 
-This policy setting determines which users can dynamically load and unload device drivers. This user right is not required if a signed driver for the new hardware already exists in the driver.cab file on the device. Device drivers run as highly privileged code.
+This policy setting determines which users can dynamically load and unload device drivers. This user right isn't required if a signed driver for the new hardware already exists in the driver.cab file on the device. Device drivers run as highly privileged code.
 Windows supports the Plug and Play specifications that define how a computer can detect and configure newly added hardware, and then automatically install the device driver. Prior to Plug and Play, users needed to manually configure devices before attaching them to the device. This model allows a user to plug in the hardware, then Windows searches for an appropriate device driver package and automatically configures it to work without interfering with other devices.
 
-Because device driver software runs as if it is a part of the operating system with unrestricted access to the entire computer, it is critical that only known and authorized device drivers be permitted.
+Because device driver software runs as if it's a part of the operating system with unrestricted access to the entire computer, it's critical that only known and authorized device drivers be permitted.
 
 Constant: SeLoadDriverPrivilege
 
@@ -42,7 +42,7 @@ Constant: SeLoadDriverPrivilege
 
 ### Best practices
 
--   Because of the potential security risk, do not assign this user right to any user, group, or process that you do not want to take over the system.
+-   Because of the potential security risk, don't assign this user right to any user, group, or process that you don't want to take over the system.
 
 ### Location
 
@@ -67,7 +67,7 @@ The following table lists the actual and effective default policy values. Defaul
 
 This section describes features, tools, and guidance to help you manage this policy.
 
-A restart of the device is not required for this policy setting to be effective.
+A restart of the device isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 
@@ -94,11 +94,11 @@ Device drivers run as highly privileged code. A user who has the **Load and unlo
  
 ### Countermeasure
 
-Do not assign the **Load and unload device drivers** user right to any user or group other than Administrators on member servers. On domain controllers, do not assign this user right to any user or group other than Domain Admins.
+Don't assign the **Load and unload device drivers** user right to any user or group other than Administrators on member servers. On domain controllers, don't assign this user right to any user or group other than Domain Admins.
 
 ### Potential impact
 
-If you remove the **Load and unload device drivers** user right from the Print Operators group or other accounts, you could limit the abilities of users who are assigned to specific administrative roles in your environment. You should ensure that delegated tasks are not negatively affected.
+If you remove the **Load and unload device drivers** user right from the Print Operators group or other accounts, you could limit the abilities of users who are assigned to specific administrative roles in your environment. You should ensure that delegated tasks aren't negatively affected.
 
 ## Related topics
 

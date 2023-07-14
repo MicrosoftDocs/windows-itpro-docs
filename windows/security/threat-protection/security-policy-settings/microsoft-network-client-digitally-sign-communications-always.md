@@ -1,27 +1,39 @@
 ---
-title: Microsoft network client Digitally sign communications (always) (Windows 10)
+title: Microsoft network client Digitally sign communications (always)
 description: Best practices and security considerations for the  Microsoft network client Digitally sign communications (always) security policy setting.
-ms.assetid: 4b7b0298-b130-40f8-960d-60418ba85f76
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+manager: aaroncz
+ms.author: vinpa
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-ms.date: 06/28/2018
-ms.technology: windows-sec
+author: vinaypamnani-msft
+ms.date: 01/13/2023
+ms.technology: itpro-security
+ms.topic: conceptual
 ---
 
 # Microsoft network client: Digitally sign communications (always)
 
 **Applies to**
--   Windows 10
--   Windows Server
+
+- Windows 11
+- Windows 10
+- Windows Server
 
 This article describes the best practices, location, values, policy management, and security considerations for the **Microsoft network client: Digitally sign communications (always)** security policy setting for SMBv3 and SMBv2.
+
+> [!NOTE]
+> This article is about the server message block (SMB) v2 and v3 protocols. SMBv1 isn't secure and has been deprecated in Windows. Starting with Windows 10, version 1709, and Windows Server, version 1709, [SMBv1 isn't installed by default](/windows-server/storage/file-server/troubleshoot/smbv1-not-installed-by-default-in-windows).
+
+> [!IMPORTANT]
+> Microsoft doesn't recommend using the following group policy settings:
+>
+> - **Microsoft network server: Digitally sign communications (if client agrees)**
+> - **Microsoft network client: Digitally sign communications (if server agrees)**
+>
+> Also don't use the **EnableSecuritySignature** registry settings.
+>
+> These options only affect the SMBv1 behavior. They can be effectively replaced by the **Digitally sign communications (always)** group policy setting or the **RequireSecuritySignature** registry setting.
 
 ## Reference
 
@@ -33,22 +45,21 @@ Beginning with SMBv2 clients and servers, signing can be either *required* or *n
 
 Negotiation occurs between the SMB client and the SMB server to decide whether signing will be used. The following table shows the effective behavior for SMBv3 and SMBv2.
 
-
-|                           |  Server – required  | Server – not required  |
+| Client |  Server - required  | Server - not required  |
 |---------------------------|---------------------|------------------------|
-|   **Client – required**   |       Signed        |         Signed         |
-| **Client – not required** | Signed <sup>1</sup> | Not signed<sup>2</sup> |
+|   **Client - required**   |       Signed        |         Signed         |
+| **Client - not required** | Signed <sup>1</sup> | Not signed<sup>2</sup> |
 
 </br>
 <sup>1</sup> Default for domain controller SMB traffic</br>
 <sup>2</sup> Default for all other SMB traffic
 
-Performance of SMB signing is improved in SMBv2. For more information, see [Potential impact](#potential-impact).
+Performance of SMB signing is improved in SMBv2. For more information, see [Potential effect](#potential-effect).
 
 ### Possible values
 
--   Enabled
--   Disabled
+- Enabled
+- Disabled
 
 ### Best practice
 
@@ -60,16 +71,16 @@ Enable **Microsoft network client: Digitally sign communications (always)**.
 
 ### Default values
 
-The following table lists the default values for this policy. Default values are also listed on the policy’s property page.
+The following table lists the default values for this policy. Default values are also listed on the policy's property page.
 
 | Server type or GPO | Default value |
 | - | - |
-| Default Domain Policy| Disabled| 
-| Default Domain Controller Policy | Disabled| 
-| Stand-Alone Server Default Settings | Disabled| 
-| DC Effective Default Settings | Disabled| 
-| Member Server Effective Default Settings | Disabled| 
-| Client Computer Effective Default Settings | Disabled| 
+| Default Domain Policy| Disabled|
+| Default Domain Controller Policy | Disabled|
+| Stand-Alone Server Default Settings | Disabled|
+| DC Effective Default Settings | Disabled|
+| Member Server Effective Default Settings | Disabled|
+| Client Computer Effective Default Settings | Disabled|
 
 ## Policy management
 
@@ -96,10 +107,11 @@ Enable **Microsoft network client: Digitally sign communications (always)**.
 > [!NOTE]
 > An alternative countermeasure that could protect all network traffic is to implement digital signatures through IPsec. There are hardware-based accelerators for IPsec encryption and signing that can be used to minimize the performance impact on servers. No such accelerators are available for SMB signing.
 
-### Potential impact
+### Potential effect
 
 Storage speeds affect performance. A faster drive on the source and destination allows more throughput, which causes more CPU usage for signing. If you're using a 1-Gb Ethernet network or slower storage speed with a modern CPU, there's limited degradation in performance. If you're using a faster network (such as 10 Gb), the performance impact of signing may be greater.
 
-## Related topics
+## Related articles
 
 - [Security options](security-options.md)
+- [Microsoft network server: Digitally sign communications (always)](microsoft-network-server-digitally-sign-communications-always.md)

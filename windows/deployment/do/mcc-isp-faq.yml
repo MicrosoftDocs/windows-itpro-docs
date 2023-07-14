@@ -1,0 +1,93 @@
+### YamlMime:FAQ
+metadata:
+  title: Microsoft Connected Cache Frequently Asked Questions
+  description: The following article is a list of frequently asked questions for Microsoft Connected Cache.
+  author: amymzhou
+  ms.author: amymzhou
+  manager: aaroncz
+  ms.collection:
+    - highpri
+    - tier3
+  ms.topic: faq
+  ms.date: 09/30/2022
+  ms.prod: windows-client
+  ms.technology: itpro-updates
+title: Microsoft Connected Cache Frequently Asked Questions
+summary: |
+  **Applies to**
+  -   Windows 10 and later
+  
+sections:
+  - name: Ignored
+    questions:
+      - question: Is this product a free service?
+        answer: Yes. Microsoft Connected Cache is a free service.  
+      - question: What will Microsoft Connected Cache do for me? How will it impact our customers?
+        answer: As an ISP, your network can benefit from reduced load on your backbone and improve customer download experience for supported Microsoft static content. It will also help you save on CDN costs.  
+      - question: Is there a non-disclosure agreement to sign?
+        answer: No, a non-disclosure agreement isn't required.
+      - question: What are the prerequisites and hardware requirements?
+        answer: | 
+         - Azure subscription  
+         - Hardware to host Microsoft Connected Cache
+         - Ubuntu 20.04 LTS on a physical server or VM of your choice. 
+         
+         > [!NOTE]
+         > The Microsoft Connected Cache is deployed and managed using Azure IoT Edge and Ubuntu 20.04 is an [Azure IoT Edge Tier 1 operating system](/azure/iot-edge/support?view=iotedge-2020-11#tier-1). Additionally, the Microsoft Connected Cache module is optimized for Ubuntu 20.04 LTS. 
+         
+         The following are recommended hardware configurations:   
+          
+          <!--Using include file, mcc-prerequisites.md, for shared content on DO monitoring-->
+          [!INCLUDE [Microsoft Connected Cache Prerequisites](includes/mcc-prerequisites.md)]
+
+         We have one customer who is able to achieve mid-30s Gbps egress rate using the following hardware specification:  
+          - Dell PowerEdge R330  
+          - 2 x Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40 GHz, total 32 core  
+          - 48 GB, Micron Technology 18ASF1G72PDZ-2G1A1, Speed: 2133 MT/s  
+          - 4 - Transcend SSD230s 1 TB SATA Drives  
+          Intel Corporation Ethernet 10G 2P X520 Adapter (Link Aggregated)
+      - question: Will I need to provide hardware BareMetal server or VM?
+        answer: Microsoft Connected Cache is a software-only caching solution and will require you to provide your own server to host the software.
+      - question: Can we use hard drives instead of SSDs?
+        answer: We highly recommend using SSDs as Microsoft Connected Cache is a read intensive application. We also recommend using multiple drives to improve performance.  
+      - question: Will I need to manually enter the CIDR blocks? If I have multiple cache nodes, should I configure a subset of CIDR blocks to each cache node?
+        answer: You can choose to route your traffic using manual CIDR blocks or BGP. If you have multiple Microsoft Connected Cache(s), you can allocate subsets of CIDR blocks to each cache node if you wish. However, since Microsoft Connected Cache has automatic load balancing, we recommend adding all of your traffic to all of your cache nodes.  
+      - question: Should I add any load balancing mechanism?
+        answer: You don't need to add any load balancing. Our service will take care of routing traffic if you have multiple cache nodes serving the same CIDR blocks based on the reported health of the cache node.  
+      - question: How many Microsoft Connected Cache instances will I need? How do we set up if we support multiple countries?
+        answer: As stated in the table above, the recommended configuration will achieve near the maximum possible egress of 40 Gbps with a two-port link aggregated NIC and four cache drives. We have a feature coming soon that will help you estimate the number of cache nodes needed. If your ISP spans multiple countries, you can set up separate cache nodes per country.  
+      - question: Where should we install Microsoft Connected Cache?
+        answer: You are in control of your hardware and you can pick the location based on your traffic and end customers. You can choose the location where you have your routers or where you have dense traffic or any other parameters.
+      - question: How long would a piece of content live within the Microsoft Connected Cache? Is content purged from the cache?
+        answer: Once a request for said content is made, NGINX will look at the cache control headers from the original acquisition. If that content has expired, NGINX will continue to serve the stale content while it's downloading the new content.  We cache the content for 30 days. The content will be in the hot cache path (open handles and such) for 24 hrs, but will reside on disk for 30 days. The drive fills up and nginx will start to delete content based on its own algorithm, probably some combination of least recently used.
+      - question: What content is cached by Microsoft Connected Cache?
+        answer: For more information about content cached, see [Delivery Optimization and Microsoft Connected Cache content endpoints - Windows Deployment](delivery-optimization-endpoints.md).  
+      - question: Does Microsoft Connected Cache support Xbox or Teams content?
+        answer: Currently, Microsoft Connected Cache doesn't support Xbox or Teams content. However, supporting Xbox content is of high priority, and we expect this feature soon. We'll let you know as soon as it becomes available!  
+      - question: Is IPv6 supported?
+        answer: No, we don't currently support IPV6. We plan to support it in the future.   
+      - question: Is Microsoft Connected Cache stable and reliable?
+        answer: We have already successfully onboarded ISPs in many countries around the world and have received positive feedback! However, you can always start off with a portion of your CIDR blocks to test out the performance of MCC before expanding to more customers.
+      - question: How does Microsoft Connected Cache populate its content?
+        answer: Microsoft Connected Cache is a cold cache warmed by client requests. The client requests content and that is what fills up the cache. There's no off-peak cache fill necessary. Microsoft Connected Cache will reach out to different CDN providers just like a client device would. The traffic flow from Microsoft Connected Cache will vary depending on how you currently transit to each of these CDN providers. The content can come from third party CDNs or from AFD.
+      - question: What CDNs will Microsoft Connected Cache pull content from?
+        answer: | 
+         Microsoft relies on a dynamic mix of 1st and 3rd party CDN providers to ensure enough capacity, redundancy, and performance for the delivery of Microsoft served content.  Though we don't provide lists of the CDN vendors we utilize as they can change without notice, our endpoints are public knowledge.  If someone were to perform a series of DNS lookups against our endpoints (tlu.dl.delivery.mp.microsoft.com for example), they would be able to determine which CDN or CDNs were in rotation at a given point in time:
+         
+         $ dig +noall +answer tlu.dl.delivery.mp.microsoft.com | grep -P "IN\tA"
+
+         c-0001.c-msedge.net.    20      IN      A       13.107.4.50
+
+         $ whois 13.107.4.50|grep "Organization:"
+         
+         Organization:   Microsoft Corporation (MSFT)
+      - question: I'm a network service provider and have downstream transit customers. If one of my downstream transit customers onboards to Microsoft Connected Cache, how will it affect my traffic?
+        answer: If a downstream customer deploys a Microsoft Connected Cache node, the cache controller will prefer the downstream ASN when handling that ASN's traffic.
+      - question: I signed up for Microsoft Connected Cache, but I'm not receiving the verification email. What should I do?
+        answer: First, check that the email under the NOC role is correct in your PeeringDB page. If the email associated with NOC role is correct, search for an email from the sender "microsoft-noreply@microsoft.com" with the email subject - "Here's your Microsoft Connected Cache verification code" in your Spam folders. Still can't find it? Ensure that your email admin rules allow emails from the sender "microsoft-noreply@microsoft.com".
+      - question: I noticed I can set up BGP for routing. How does BGP routing work for Microsoft Connected Cache?
+        answer: BGP routing can be set up as an automatic method of routing traffic. To learn more about how BGP is used with Microsoft Connected Cache, see [BGP Routing](mcc-isp-create-provision-deploy.md#bgp-routing).
+      - question: I have an active MCC, but I'm noticing I hit the message limit for my IoT Hub each day. Does this affect my MCC performance and should I be concerned?
+        answer: Even when the quota of 8k messages is hit, the MCC functionality won't be affected. Your client devices will continue to download content as normal. You'll also not be charged above the 8k message limit, so you don't need to worry at all about getting a paid plan. MCC will always be a free service. So if functionality isn't impacted, what is? Instead, messages about the configuration or edge deployment would be impacted. This means that if there was a request to update your MCC and the daily quota was reached, your MCC might not update. In that case, you would just need to wait for the next day to update. This is only a limitation of the early preview and isn't an issue during public preview.
+      - question: What do I do if I need more support and have more questions even after reading this FAQ page?
+        answer: For further support for Microsoft Connected Cache, visit [Troubleshooting Issues for Microsoft Connected Cache for ISP (public preview)](mcc-isp-support.md).

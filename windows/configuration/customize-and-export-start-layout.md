@@ -1,31 +1,29 @@
 ---
-title: Customize and export Start layout (Windows 10)
+title: Customize and export Start layout
 description: The easiest method for creating a customized Start layout is to set up the Start screen and export the layout.
-ms.assetid: CA8DF327-5DD4-452F-9FE5-F17C514B6236
 ms.reviewer: 
-manager: dansimp
-keywords: ["start screen"]
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-author: greg-lindsay
-ms.author: greglin
+manager: aaroncz
+ms.prod: windows-client
+author: lizgt2000
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 09/18/2018
-ms.collection: highpri
+ms.collection:
+ - highpri
+ - tier1
+ms.technology: itpro-configure
 ---
 
 # Customize and export Start layout
 
-
 **Applies to**
 
--   Windows 10
+- Windows 10
 
 >**Looking for consumer information?** See [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
 
-The easiest method for creating a customized Start layout to apply to other Windows 10 devices is to set up the Start screen on a test computer and then export the layout.
+The easiest method for creating a customized Start layout to apply to other Windows 10 devices is to set up the Start screen on a test computer and then export the layout.
 
 After you export the layout, decide whether you want to apply a *full* Start layout or a *partial* Start layout.
 
@@ -34,7 +32,7 @@ When a full Start layout is applied, the users cannot pin, unpin, or uninstall a
 When [a partial Start layout](#configure-a-partial-start-layout) is applied, the contents of the specified tile groups cannot be changed, but users can move those groups, and can also create and customize their own groups.
 
 >[!NOTE]
->Partial Start layout is only supported on Windows 10, version 1511 and later.
+>Partial Start layout is only supported on Windows 10, version 1511 and later.
 
  
 
@@ -52,7 +50,7 @@ To prepare a Start layout for export, you simply customize the Start layout on a
 
 **To prepare a test computer**
 
-1.  Set up a test computer on which to customize the Start layout. Your test computer should have the operating system that is installed on the users’ computers (Windows 10 Pro, Enterprise, or Education). Install all apps and services that the Start layout should display.
+1.  Set up a test computer on which to customize the Start layout. Your test computer should have the operating system that is installed on the users' computers (Windows 10 Pro, Enterprise, or Education). Install all apps and services that the Start layout should display.
 
 2.  Create a new user account that you will use to customize the Start layout.
 
@@ -66,7 +64,7 @@ To prepare a Start layout for export, you simply customize the Start layout on a
 
         To view all apps, click **All apps** in the bottom-left corner of Start. Right-click any app, and pin or unpin it from Start.
 
-    -   **Unpin apps** that you don’t want to display. To unpin an app, right-click the app, and then click **Unpin from Start**.
+    -   **Unpin apps** that you don't want to display. To unpin an app, right-click the app, and then click **Unpin from Start**.
 
     -   **Drag tiles** on Start to reorder or group apps.
 
@@ -92,7 +90,7 @@ When you have the Start layout that you want your users to see, use the [Export-
 
 2.  On a device running Windows 10, version 1607, 1703, or 1803, at the Windows PowerShell command prompt, enter the following command:
 
-    `Export-StartLayout –path <path><file name>.xml`
+    `Export-StartLayout -path <path><file name>.xml`
     
     On a device running Windows 10, version 1809 or higher, run the **Export-StartLayout** with the switch **-UseDesktopApplicationID**. For example:
 

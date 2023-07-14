@@ -1,88 +1,98 @@
 ---
-title: Policy CSP - ADMX_MSAPolicy
-description: Policy CSP - ADMX_MSAPolicy
-ms.author: dansimp
+title: ADMX_MSAPolicy Policy CSP
+description: Learn more about the ADMX_MSAPolicy Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/11/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 09/14/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_MSAPolicy-Begin -->
 # Policy CSP - ADMX_MSAPolicy
->[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ADMX_MSAPolicy policies  
+<!-- ADMX_MSAPolicy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_MSAPolicy-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-msapolicy-microsoftaccount-disableuserauth">ADMX_MSAPolicy/IncludeMicrosoftAccount_DisableUserAuthCmdLine</a>
-  </dd>
-</dl>
+<!-- MicrosoftAccount_DisableUserAuth-Begin -->
+## MicrosoftAccount_DisableUserAuth
 
+<!-- MicrosoftAccount_DisableUserAuth-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftAccount_DisableUserAuth-Applicability-End -->
 
-<hr/>
+<!-- MicrosoftAccount_DisableUserAuth-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_MSAPolicy/MicrosoftAccount_DisableUserAuth
+```
+<!-- MicrosoftAccount_DisableUserAuth-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-msapolicy-microsoftaccount-disableuserauth"></a>**ADMX_MSAPolicy/MicrosoftAccount_DisableUserAuth**  
+<!-- MicrosoftAccount_DisableUserAuth-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This setting controls whether users can provide Microsoft accounts for authentication for applications or services.
 
-<!--SupportedSKUs-->
+- If this setting is enabled, all applications and services on the device are prevented from using Microsoft accounts for authentication.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+This applies both to existing users of a device and new users who may be added. However, any application or service that has already authenticated a user won't be affected by enabling this setting until the authentication cache expires.
 
-<!--/SupportedSKUs-->
-<hr/>
+It's recommended to enable this setting before any user signs in to a device to prevent cached tokens from being present.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If this setting is disabled or not configured, applications and services can use Microsoft accounts for authentication.
 
-> [!div class = "checklist"]
-> * Device
+By default, this setting is Disabled. This setting doesn't affect whether users can sign in to devices by using Microsoft accounts, or the ability for users to provide Microsoft accounts via the browser for authentication with web-based applications.
+<!-- MicrosoftAccount_DisableUserAuth-Description-End -->
 
-<hr/>
+<!-- MicrosoftAccount_DisableUserAuth-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftAccount_DisableUserAuth-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting controls whether users can provide Microsoft accounts for authentication for applications or services. If this setting is enabled, all applications and services on the device are prevented from using Microsoft accounts for authentication.
+<!-- MicrosoftAccount_DisableUserAuth-DFProperties-Begin -->
+**Description framework properties**:
 
-This applies both to existing users of a device and new users who may be added. However, any application or service that has already authenticated a user will not be affected by enabling this setting until the authentication cache expires.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftAccount_DisableUserAuth-DFProperties-End -->
 
-It is recommended to enable this setting before any user signs in to a device to prevent cached tokens from being present. If this setting is disabled or not configured, applications and services can use Microsoft accounts for authentication.
+<!-- MicrosoftAccount_DisableUserAuth-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-By default, this setting is Disabled. This setting does not affect whether users can sign in to devices by using Microsoft accounts, or the ability for users to provide Microsoft accounts via the browser for authentication with web-based applications.
+**ADMX mapping**:
 
-<!--/Description-->
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftAccount_DisableUserAuth |
+| Friendly Name | Block all consumer Microsoft account user authentication |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft account |
+| Registry Key Name | Software\Policies\Microsoft\MicrosoftAccount |
+| Registry Value Name | DisableUserAuth |
+| ADMX File Name | MSAPolicy.admx |
+<!-- MicrosoftAccount_DisableUserAuth-AdmxBacked-End -->
 
+<!-- MicrosoftAccount_DisableUserAuth-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftAccount_DisableUserAuth-Examples-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Block all consumer Microsoft account user authentication*
--   GP name: *MicrosoftAccount_DisableUserAuth*
--   GP path: *Windows Components\Microsoft account*
--   GP ADMX file name: *MSAPolicy.admx*
+<!-- MicrosoftAccount_DisableUserAuth-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- ADMX_MSAPolicy-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_MSAPolicy-CspMoreInfo-End -->
 
+<!-- ADMX_MSAPolicy-End -->
 
+## Related articles
 
-<!--/Policies-->
-
+[Policy configuration service provider](policy-configuration-service-provider.md)

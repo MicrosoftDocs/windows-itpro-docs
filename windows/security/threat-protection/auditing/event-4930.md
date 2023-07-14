@@ -1,17 +1,18 @@
 ---
-title: 4930(S, F) An Active Directory replica source naming context was modified. (Windows 10)
+title: 4930(S, F) An Active Directory replica source naming context was modified. 
 description: Describes security event 4930(S, F) An Active Directory replica source naming context was modified.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4930(S, F): An Active Directory replica source naming context was modified.
@@ -27,7 +28,7 @@ This event generates every time Active Directory replica source naming context w
 
 Failure event generates if an error occurs (**Status Code** != 0).
 
-It is not possible to understand what exactly was modified from this event.
+It isn't possible to understand what exactly was modified from this event.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -91,18 +92,18 @@ It is not possible to understand what exactly was modified from this event.
 
 -   **Source Address** \[Type = UnicodeString\]: DNS record of computer from which the modification request was received.
 
--   **Naming Context** \[Type = UnicodeString\]**:** naming context which was modified.
+-   **Naming Context** \[Type = UnicodeString\]**:** naming context that was modified.
 
 > **Note**&nbsp;&nbsp;The Directory Tree of Active Directory tree is partitioned to allow sections to be distributed (replicated) to domain controllers in different domains within the forest. Each domain controller stores a copy of a specific part of the directory tree, called a **Naming Context** also known as Directory Partition. **Naming Context** is replicated as a unit to other domain controllers in the forest that contain a replica of the same sub tree. A **Naming Context** is also called a Directory Partition.
 
 -   **Options** \[Type = UInt32\]: decimal value of [DRS Options](/openspecs/windows_protocols/ms-drsr/ac9c8a11-cd46-4080-acbf-9faa86344030).
 
--   **Status Code** \[Type = UInt32\]**:** if there are no issues or errors, the status code will be 0. If an error happened, you will receive Failure event and Status Code will not be equal to “**0**”. You can check error code meaning here: <https://msdn.microsoft.com/library/windows/desktop/ms681381(v=vs.85).aspx>
+-   **Status Code** \[Type = UInt32\]**:** if there are no issues or errors, the status code will be 0. If an error happened, you'll receive Failure event and Status Code won't be equal to “**0**”. You can check error code meaning here: <https://msdn.microsoft.com/library/windows/desktop/ms681381(v=vs.85).aspx>
 
 ## Security Monitoring Recommendations
 
 For 4930(S, F): An Active Directory replica source naming context was modified.
 
--   Monitor for **Source Address** field, because the source of the request must be authorized for this action. If you find any unauthorized DRA you should trigger an event.
+-   Monitor for **Source Address** field, because the source of the request must be authorized for this action. If you find any unauthorized DRA, you should trigger an event.
 
 -   This event is typically used for Active Directory replication troubleshooting.

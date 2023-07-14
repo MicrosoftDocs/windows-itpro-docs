@@ -1,20 +1,21 @@
 ---
-title: 4953(F) Windows Firewall ignored a rule because it could not be parsed. (Windows 10)
-description: Describes security event 4953(F) Windows Firewall ignored a rule because it could not be parsed.
+title: 4953(F) Windows Firewall ignored a rule because it couldn't be parsed. 
+description: Describes security event 4953(F) Windows Firewall ignored a rule because it couldn't be parsed.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
-# 4953(F): Windows Firewall ignored a rule because it could not be parsed.
+# 4953(F): Windows Firewall ignored a rule because it couldn't be parsed.
 
 
 <img src="images/event-4953.png" alt="Event 4953 illustration" width="449" height="375" hspace="10" align="left" />
@@ -23,7 +24,7 @@ ms.technology: windows-sec
 
 ***Event Description:***
 
-This event generates if Windows Firewall was not able to parse Windows Firewall rule for some reason.
+This event generates if Windows Firewall wasn't able to parse Windows Firewall rule for some reason.
 
 It can happen if Windows Firewall rule registry entry was corrupted.
 
@@ -72,11 +73,11 @@ It can happen if Windows Firewall rule registry entry was corrupted.
 
 -   All
 
--   Domain,Public
+-   Domain, Public
 
--   Domain,Private
+-   Domain, Private
 
--   Private,Public
+-   Private, Public
 
 -   Public
 
@@ -90,7 +91,7 @@ It can happen if Windows Firewall rule registry entry was corrupted.
 
 -   **ID** \[Type = UnicodeString\]: the unique identifier for ignored firewall rule.
 
-    To see the unique ID of the rule, navigate to the “**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\FirewallRules”** registry key and you will see the list of Windows Firewall rule IDs (Name column) with parameters:
+    To see the unique ID of the rule, navigate to the “**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\FirewallRules”** registry key and you'll see the list of Windows Firewall rule IDs (Name column) with parameters:
 
 <img src="images/registry-editor-firewallrules.png" alt="Registry Editor FirewallRules key illustration" width="1412" height="422" />
 
@@ -100,7 +101,7 @@ It can happen if Windows Firewall rule registry entry was corrupted.
 
 ## Security Monitoring Recommendations
 
-For 4953(F): Windows Firewall ignored a rule because it could not be parsed.
+For 4953(F): Windows Firewall ignored a rule because it couldn't be parsed.
 
 -   This event can be a sign of software issues, Windows Firewall registry errors or corruption, or Group Policy setting misconfigurations. We recommend monitoring this event and investigating the reason for the condition. Typically this event indicates configuration issues, not security issues.
 

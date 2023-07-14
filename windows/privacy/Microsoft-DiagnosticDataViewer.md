@@ -1,28 +1,21 @@
 ---
 title: Diagnostic Data Viewer for PowerShell Overview (Windows 10)
 description: Use this article to use the Diagnostic Data Viewer for PowerShell to review the diagnostic data sent to Microsoft by your device.
-keywords: privacy
-ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: windows-client
+ms.technology: itpro-privacy
 ms.localizationpriority: high
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.date: 11/29/2021
-ms.reviewer: 
-ms.technology: privacy
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
+ms.date: 12/13/2018
+ms.topic: how-to
 ---
 
 # Diagnostic Data Viewer for PowerShell Overview
 
 **Applies to**
 
--   Windows 11
+-   Windows 11, version 21H2 and later
 -   Windows 10, version 1803 and later
 -   Windows Server, version 1803
 -   Windows Server 2019
@@ -187,4 +180,4 @@ When resetting the size of your data history to a lower value, be sure to turn o
 
 ## Related Links
 - [Module in PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.DiagnosticDataViewer)
-- [Documentation for Diagnostic Data Viewer for PowerShell](/powershell/module/microsoft.diagnosticdataviewer/?view=win10-ps)
+- [Documentation for Diagnostic Data Viewer for PowerShell](/powershell/module/microsoft.diagnosticdataviewer)

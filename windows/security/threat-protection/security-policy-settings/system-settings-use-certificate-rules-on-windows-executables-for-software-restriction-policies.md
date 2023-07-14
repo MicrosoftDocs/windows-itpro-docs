@@ -1,26 +1,26 @@
 ---
-title: System settings Use certificate rules on Windows executables for Software Restriction Policies (Windows 10)
+title: System settings Use certificate rules on Windows executables for Software Restriction Policies 
 description: Best practices and more for the security policy setting, System settings Use certificate rules on Windows executables for Software Restriction Policies.
 ms.assetid: 2380d93b-b553-4e56-a0c0-d1ef740d089c
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # System settings: Use certificate rules on Windows executables for Software Restriction Policies
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **System settings: Use certificate rules on Windows executables for Software Restriction Policies** security policy setting.
@@ -63,7 +63,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ## Security considerations
 

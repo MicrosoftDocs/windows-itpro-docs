@@ -1,26 +1,26 @@
 ---
-title: Interactive logon Machine account lockout threshold (Windows 10)
+title: Interactive logon Machine account lockout threshold 
 description: Best practices, location, values, management, and security considerations for the security policy setting, Interactive logon Machine account lockout threshold.
 ms.assetid: ebbd8e22-2611-4ebe-9db9-d49344e631e4
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Interactive logon: Machine account lockout threshold
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, management, and security considerations for the **Interactive logon: Machine account lockout threshold** security policy setting.
@@ -29,9 +29,9 @@ Describes the best practices, location, values, management, and security conside
 
 Beginning with Windows Server 2012 and Windows 8, the **Interactive logon: Machine account threshold** security policy setting enforces the lockout policy on those computers that have BitLocker enabled to protect operating system volumes.
 
-The security setting allows you to set a threshold for the number of failed logon attempts that causes the device to be locked by using BitLocker. This means, if the specified maximum number of failed logon attempts is exceeded, the device will invalidate the Trusted Platform Module (TPM) protector and any other protector except the 48-digit recovery password, and then reboot. During Device Lockout mode, the computer or device only boots into the touch-enabled Windows Recovery Environment (WinRE) until an authorized user enters the recovery password to restore full access.
+The security setting allows you to set a threshold for the number of failed sign-in attempts that causes the device to be locked by using BitLocker. This threshold means, if the specified maximum number of failed sign-in attempts is exceeded, the device will invalidate the Trusted Platform Module (TPM) protector and any other protector except the 48-digit recovery password, and then reboot. During Device Lockout mode, the computer or device only boots into the touch-enabled Windows Recovery Environment (WinRE) until an authorized user enters the recovery password to restore full access.
 
-Failed password attempts on workstations or member servers that have been locked by using either Ctrl+Alt+Delete or password-protected screen savers count as failed logon attempts.
+Failed password attempts on workstations or member servers that have been locked by using either Ctrl+Alt+Delete or password-protected screen savers count as failed sign-in attempts.
 
 ### Possible values
 
@@ -39,7 +39,7 @@ You can set the **invalid logon attempts** value between 1 and 999. Values from 
 
 ### Best practices
 
-Use this policy setting in conjunction with your other failed account logon attempts policy. For example, if the [Account lockout threshold](account-lockout-threshold.md) policy setting is set at 4, then setting **Interactive logon: Machine account lockout threshold** at 6 allows the user to restore access to resources without having to restore access to the device resulting from a BitLocker lock out.
+Use this policy setting in conjunction with your other failed account sign-in attempts policy. For example, if the [Account lockout threshold](account-lockout-threshold.md) policy setting is set at 4, then setting **Interactive logon: Machine account lockout threshold** at 6 allows the user to restore access to resources without having to restore access to the device resulting from a BitLocker lock out.
 
 ### Location
 
@@ -64,13 +64,13 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-A restart is required for changes to this policy to become effective when they are saved locally or distributed through Group Policy.
+A restart is required for changes to this policy to become effective when they're saved locally or distributed through Group Policy.
 
 ### Group Policy
 
 Because this policy setting was introduced in Windows Server 2012 and Windows 8, it can only be set locally on those devices that contain this policy setting, but it can be set and distributed through Group Policy to any computer running the Windows operating system that supports Group Policy and is BitLocker-enabled.
 
-When setting this policy, consider the [Account lockout threshold](account-lockout-threshold.md) policy setting, which determines the number of failed logon attempts that will cause a user account to be locked out.
+When setting this policy, consider the [Account lockout threshold](account-lockout-threshold.md) policy setting, which determines the number of failed sign-in attempts that will cause a user account to be locked out.
 
 ## Security considerations
 
@@ -82,7 +82,7 @@ This policy setting helps protect a BitLocker-encrypted device from attackers at
 
 ### Countermeasure
 
-Use this policy setting in conjunction with your other failed account logon attempts policy. For example, if the [Account lockout threshold](account-lockout-threshold.md) policy setting is set at 4, then setting **Interactive logon: Machine account lockout threshold** at 6 allows the user to restore access to resources without having to restore access to the device resulting from a BitLocker lock out.
+Use this policy setting in conjunction with your other failed account sign-in attempts policy. For example, if the [Account lockout threshold](account-lockout-threshold.md) policy setting is set at 4, then setting **Interactive logon: Machine account lockout threshold** at 6 allows the user to restore access to resources without having to restore access to the device resulting from a BitLocker lock out.
 
 ### Potential impact
 

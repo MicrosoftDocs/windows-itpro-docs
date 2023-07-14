@@ -1,15 +1,15 @@
 ---
 title: How provisioning works in Windows 10/11
-description: Learn more about how provisioning package work on Windows client devices. A provisioning package (.ppkg) is a container for a collection of configuration settings. 
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: greg-lindsay
-ms.author: greglin
+description: Learn more about how provisioning package work on Windows client devices. A provisioning package (.ppkg) is a container for a collection of configuration settings.
+ms.prod: windows-client
+author: lizgt2000
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: gkomatsu
-manager: dansimp
+manager: aaroncz
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # How provisioning works in Windows
@@ -142,12 +142,6 @@ When applying provisioning packages from a removable media attached to the devic
 When applying multiple provisioning packages to a device, the provisioning engine resolves settings with conflicting configuration values from different packages by evaluating the package ranking using the combination of package owner type and package rank level defined in the package metadata. A configuration setting applied from a provisioning package with the highest package ranking will be the final value applied to the device.
 
 After a stand-alone provisioning package is applied to the device, the package is persisted in the `%ProgramData%\Microsoft\Provisioning` folder on the device. Provisioning packages can be removed by an administrator by using the **Add or remove a provisioning package** available under **Settings** > **Accounts** > **Access work or school**. 
-
-
-## Learn more
-
--   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
-
 
 ## Related articles
 

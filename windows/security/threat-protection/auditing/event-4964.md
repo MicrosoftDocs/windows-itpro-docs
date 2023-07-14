@@ -1,17 +1,18 @@
 ---
-title: 4964(S) Special groups have been assigned to a new logon. (Windows 10)
+title: 4964(S) Special groups have been assigned to a new logon. 
 description: Describes security event 4964(S) Special groups have been assigned to a new logon.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4964(S): Special groups have been assigned to a new logon.
@@ -23,7 +24,7 @@ ms.technology: windows-sec
 
 ***Event Description:***
 
-This event occurs when an account that is a member of any defined [Special Group](https://blogs.technet.com/b/askds/archive/2008/03/11/special-groups-auditing-via-group-policy-preferences.aspx) logs in.
+This event occurs when an account that is a member of any defined [Special Group](https://techcommunity.microsoft.com/t5/ask-the-directory-services-team/special-groups-auditing-via-group-policy-preferences/ba-p/395095) logs in.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 

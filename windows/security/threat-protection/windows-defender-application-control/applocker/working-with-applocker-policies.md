@@ -1,30 +1,18 @@
 ---
-title: Working with AppLocker policies (Windows)
+title: Working with AppLocker policies
 description: This topic for IT professionals provides links to procedural topics about creating, maintaining, and testing AppLocker policies.
-ms.assetid: 7062d2e0-9cbb-4cb8-aa8c-b24945c3771d
 ms.reviewer: 
-ms.author: macapara
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.author: vinpa
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: mjcaparas
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+author: vinaypamnani-msft
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Working with AppLocker policies
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -47,5 +35,4 @@ This topic for IT professionals provides links to procedural topics about creati
 | [Merge AppLocker policies by using Set-ApplockerPolicy](merge-applocker-policies-by-using-set-applockerpolicy.md) | This topic for IT professionals describes the steps to merge AppLocker policies by using Windows PowerShell.| 
 | [Merge AppLocker policies manually](merge-applocker-policies-manually.md) | This topic for IT professionals describes the steps to manually merge AppLocker policies to update the Group Policy Object (GPO).| 
 | [Refresh an AppLocker policy](refresh-an-applocker-policy.md) | This topic for IT professionals describes the steps to force an update for an AppLocker policy.| 
-| [Test an AppLocker policy by using Test-AppLockerPolicy](test-an-applocker-policy-by-using-test-applockerpolicy.md) | This topic for IT professionals describes the steps to test an AppLocker policy prior to importing it into a Group Policy Object (GPO) or another computer.| 
-
+| [Test an AppLocker policy by using Test-AppLockerPolicy](test-an-applocker-policy-by-using-test-applockerpolicy.md) | This topic for IT professionals describes the steps to test an AppLocker policy prior to importing it into a Group Policy Object (GPO) or another computer.|

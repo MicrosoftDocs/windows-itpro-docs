@@ -1,135 +1,140 @@
 ---
-title: Policy CSP - RemoteDesktop
-description: Learn how the Policy CSP - RemoteDesktop setting allows you to specify a custom message to display.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+title: RemoteDesktop Policy CSP
+description: Learn more about the RemoteDesktop Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- RemoteDesktop-Begin -->
 # Policy CSP - RemoteDesktop
 
-<hr/>
+<!-- RemoteDesktop-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RemoteDesktop-Editable-End -->
 
-<!--Policies-->
-## RemoteDesktop policies  
+<!-- AutoSubscription-Begin -->
+## AutoSubscription
 
-<dl>
-  <dd>
-    <a href="#remotedesktop-autosubscription">RemoteDesktop/AutoSubscription</a>
-  </dd>
-  <dd>
-    <a href="#remotedesktop-loadaadcredkeyfromprofile">RemoteDesktop/LoadAadCredKeyFromProfile</a>
-  </dd>
-</dl>
+<!-- AutoSubscription-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1370] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1370] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1370] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1370] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AutoSubscription-Applicability-End -->
 
-> [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+<!-- AutoSubscription-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/RemoteDesktop/AutoSubscription
+```
+<!-- AutoSubscription-OmaUri-End -->
 
-<hr/>
+<!-- AutoSubscription-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Controls the list of URLs that the user should be auto-subscribed to.
+<!-- AutoSubscription-Description-End -->
 
-<!--Policy-->
-<a href="" id="remotedesktop-autosubscription"></a>**RemoteDesktop/AutoSubscription<**  
+<!-- AutoSubscription-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--SupportedSKUs-->
+This policy lets you enable automatic subscription for the Microsoft Remote Desktop client. If you define this policy, the client uses the specified URL to subscribe the signed-in user and retrieve the remote resources assigned to them.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+To automatically subscribe to [Azure Virtual Desktop](/azure/virtual-desktop/overview) in the Azure public cloud, set the URL to `https://rdweb.wvd.microsoft.com/api/arm/feeddiscovery`.
+<!-- AutoSubscription-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AutoSubscription-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `|`) |
+<!-- AutoSubscription-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AutoSubscription-GpMapping-Begin -->
+**Group policy mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | AutoSubscription |
+| Friendly Name | Enable auto-subscription |
+| Location | User Configuration |
+| Path | AutoSubscription |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services |
+| Registry Value Name | AutoSubscription |
+| ADMX File Name | TerminalServer.admx |
+<!-- AutoSubscription-GpMapping-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- AutoSubscription-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AutoSubscription-Examples-End -->
 
-This policy allows the user to load the DPAPI cred key from their user profile and decrypt any previously encrypted DPAPI data in the user profile or encrypt any new DPAPI data.
+<!-- AutoSubscription-End -->
 
-<!--/Description-->
+<!-- LoadAadCredKeyFromProfile-Begin -->
+## LoadAadCredKeyFromProfile
 
-<!--ADMXBacked-->
+<!-- LoadAadCredKeyFromProfile-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LoadAadCredKeyFromProfile-Applicability-End -->
 
-ADMX Info:  
--   GP Friendly name: *Customize warning messages*
--   GP name: *AutoSubscription*
--   GP path: *System/Remote Desktop*
--   GP ADMX file name: *remotedesktop.admx*
+<!-- LoadAadCredKeyFromProfile-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/RemoteDesktop/LoadAadCredKeyFromProfile
+```
+<!-- LoadAadCredKeyFromProfile-OmaUri-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- LoadAadCredKeyFromProfile-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allow encrypted DPAPI cred keys to be loaded from user profiles for AAD accounts.
+<!-- LoadAadCredKeyFromProfile-Description-End -->
 
-<hr/>
+<!-- LoadAadCredKeyFromProfile-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--Policy-->
-<a href="" id="remotedesktop-loadaadcredkeyfromprofile"></a>**RemoteDesktop/LoadAadCredKeyFromProfile**  
+This policy allows the user to load the data protection API (DPAPI) cred key from their user profile, and decrypt any previously encrypted DPAPI data in the user profile or encrypt any new DPAPI data. This policy is needed when using [FSLogix user profiles](/fslogix/overview) from Azure AD-joined VMs.
+<!-- LoadAadCredKeyFromProfile-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- LoadAadCredKeyFromProfile-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- LoadAadCredKeyFromProfile-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LoadAadCredKeyFromProfile-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not allowed. |
+| 1 | Allowed. |
+<!-- LoadAadCredKeyFromProfile-AllowedValues-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LoadAadCredKeyFromProfile-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LoadAadCredKeyFromProfile-Examples-End -->
 
-<hr/>
+<!-- LoadAadCredKeyFromProfile-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy allows the user to load the DPAPI cred key from their user profile and decrypt any previously encrypted DPAPI data in the user profile or encrypt any new DPAPI data.
+<!-- RemoteDesktop-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- RemoteDesktop-CspMoreInfo-End -->
 
-<!--/Description-->
+<!-- RemoteDesktop-End -->
 
-<!--SupportedValues-->
-The following list shows the supported values:
+## Related articles
 
-- 0 (default) - Disabled. 
-- 1 - Enabled. 
-
-<!--/SupportedValues-->
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow DPAPI cred keys to be loaded from user profiles during logon for AADJ accounts*
--   GP name: *LoadAadCredKeyFromProfile*
--   GP path: *System/RemoteDesktop*
--   GP ADMX file name: *remotedesktop.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-
-<hr/>
-
-
-<!--/Policies-->
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,74 +1,80 @@
 ---
-title: Policy CSP - WindowsAutoPilot
-description: Learn to use the Policy CSP - WindowsAutoPilot setting to enable or disable Autopilot Agility feature.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: alekyaj
+title: WindowsAutopilot Policy CSP
+description: Learn more about the WindowsAutopilot Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.date: 11/25/2021
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
-# Policy CSP - WindowsAutoPilot
+<!-- Auto-Generated CSP Document -->
 
+<!-- WindowsAutopilot-Begin -->
+# Policy CSP - WindowsAutopilot
 
+<!-- WindowsAutopilot-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- WindowsAutopilot-Editable-End -->
 
-<hr/>
+<!-- EnableAgilityPostEnrollment-Begin -->
+## EnableAgilityPostEnrollment
 
-<!--Policies-->
-## WindowsAutoPilot policies  
+<!-- EnableAgilityPostEnrollment-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- EnableAgilityPostEnrollment-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#windowsautopilot-enableagilitypostenrollment">WindowsAutoPilot/EnableAgilityPostEnrollment</a>
-  </dd>
-</dl>
+<!-- EnableAgilityPostEnrollment-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsAutopilot/EnableAgilityPostEnrollment
+```
+<!-- EnableAgilityPostEnrollment-OmaUri-End -->
 
+<!-- EnableAgilityPostEnrollment-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies whether to check for Windows Autopilot updates after enrollment. Most restricted value is 0.
+<!-- EnableAgilityPostEnrollment-Description-End -->
 
-<hr/>
+<!-- EnableAgilityPostEnrollment-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableAgilityPostEnrollment-Editable-End -->
 
-<!--Policy-->
-<a href="" id="windowsautopilot-enableagilitypostenrollment"></a>**WindowsAutoPilot/EnableAgilityPostEnrollment**  
+<!-- EnableAgilityPostEnrollment-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableAgilityPostEnrollment-DFProperties-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EnableAgilityPostEnrollment-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Not enabled. |
+| 1 | Enabled. |
+<!-- EnableAgilityPostEnrollment-AllowedValues-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnableAgilityPostEnrollment-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableAgilityPostEnrollment-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- EnableAgilityPostEnrollment-End -->
 
-<hr/>
+<!-- WindowsAutopilot-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- WindowsAutopilot-CspMoreInfo-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy enables Windows Autopilot to be kept up-to-date during the out-of-box experience after MDM enrollment.
+<!-- WindowsAutopilot-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
+## Related articles
 
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
-
-<!--/Policies-->
+[Policy configuration service provider](policy-configuration-service-provider.md)

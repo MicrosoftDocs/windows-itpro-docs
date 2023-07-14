@@ -1,51 +1,51 @@
 ---
-title: Network security Force logoff when logon hours expire (Windows 10)
+title: Network security Force logoff when logon hours expire 
 description: Best practices, location, values, policy management, and security considerations for the policy setting, Network security Force logoff when logon hours expire.
 ms.assetid: 64d5dde4-58e4-4217-b2c4-73bd554ec926
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network security: Force logoff when logon hours expire
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Network security: Force logoff when logon hours expire** security policy setting.
 
 ## Reference
 
-This security setting determines whether to disconnect users who are connected to the local device outside their user account's valid logon hours. This setting affects the Server Message Block (SMB) component.
+This security setting determines whether to disconnect users who are connected to the local device outside their user account's valid sign-in hours. This setting affects the Server Message Block (SMB) component.
 
-This policy setting does not apply to administrator accounts, but it behaves as an account policy. For domain accounts, there can be only one account policy. The account policy must be defined in the Default Domain Policy, and it is enforced by the domain controllers that make up the domain. A domain controller always pulls the account policy from the Default Domain Policy Group Policy Object (GPO), even if there is a different account policy that is applied to the organizational unit that contains the domain controller. By default, workstations and servers that are joined to a domain (for example, member devices) also receive the same account policy for their local accounts. However, local account policies for member devices can be different from the domain account policy by defining an account policy for the organizational unit that contains the member devices. Kerberos settings are not applied to member devices.
+This policy setting doesn't apply to administrator accounts, but it behaves as an account policy. For domain accounts, there can be only one account policy. The account policy must be defined in the Default Domain Policy, and it's enforced by the domain controllers that make up the domain. A domain controller always pulls the account policy from the Default Domain Policy Group Policy Object (GPO), even if there's a different account policy that is applied to the organizational unit that contains the domain controller. By default, workstations and servers that are joined to a domain (for example, member devices) also receive the same account policy for their local accounts. However, local account policies for member devices can be different from the domain account policy by defining an account policy for the organizational unit that contains the member devices. Kerberos settings aren't applied to member devices.
 
 ### Possible values
 
 -   Enabled
 
-    When enabled, this policy causes client sessions with the SMB server to be forcibly disconnected when the client's logon hours expire.
+    When enabled, this policy causes client sessions with the SMB server to be forcibly disconnected when the client's sign-in hours expire.
 
 -   Disabled
 
-    When disabled, this policy allows for the continuation of an established client session after the client's logon hours have expired.
+    When disabled, this policy allows for the continuation of an established client session after the client's sign-in hours have expired.
 
 -   Not defined
 
 ### Best practices
 
--   Set **Network security: Force logoff when logon hours expire** to Enabled. SMB sessions will be terminated on member servers when a user's logon time expires, and the user will be unable to log on to the system until their next scheduled access time begins.
+-   Set **Network security: Force logoff when logon hours expire** to Enabled. SMB sessions will be terminated on member servers when a user's sign-in time expires, and the user will be unable to sign in to the system until their next scheduled access time begins.
 
 ### Location
 
@@ -70,7 +70,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ## Security considerations
 
@@ -78,15 +78,15 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-If you disable this policy setting, users can remain connected to the computer outside of their allotted logon hours.
+If you disable this policy setting, users can remain connected to the computer outside of their allotted sign-in hours.
 
 ### Countermeasure
 
-Enable the **Network security: Force logoff when logon hours expire** setting. This policy setting does not apply to administrator accounts.
+Enable the **Network security: Force logoff when logon hours expire** setting. This policy setting doesn't apply to administrator accounts.
 
 ### Potential impact
 
-When a user's logon time expires, SMB sessions terminate. The user cannot log on to the device until the next scheduled access time commences.
+When a user's sign-in time expires, SMB sessions terminate. The user can't sign in to the device until the next scheduled access time commences.
 
 ## Related articles
 

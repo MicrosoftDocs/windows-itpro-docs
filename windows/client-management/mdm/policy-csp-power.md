@@ -1,1353 +1,1508 @@
 ---
-title: Policy CSP - Power
-description: Learn how the Policy CSP - Power setting manages whether or not Windows is allowed to use standby states when putting the computer in a sleep state.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+title: Power Policy CSP
+description: Learn more about the Power Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/11/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Power-Begin -->
 # Policy CSP - Power
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
+<!-- Power-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Power-Editable-End -->
 
-## Power policies  
+<!-- AllowHibernate-Begin -->
+## AllowHibernate
 
-<dl>
-  <dd>
-    <a href="#power-allowhibernate">Power/AllowHibernate</a>
-  </dd>
-  <dd>
-    <a href="#power-allowstandbystateswhensleepingonbattery">Power/AllowStandbyStatesWhenSleepingOnBattery</a>
-  </dd>
-  <dd>
-    <a href="#power-allowstandbywhensleepingpluggedin">Power/AllowStandbyWhenSleepingPluggedIn</a>
-  </dd>
-  <dd>
-    <a href="#power-displayofftimeoutonbattery">Power/DisplayOffTimeoutOnBattery</a>
-  </dd>
-  <dd>
-    <a href="#power-displayofftimeoutpluggedin">Power/DisplayOffTimeoutPluggedIn</a>
-  </dd>
-  <dd>
-    <a href="#power-energysaverbatterythresholdonbattery">Power/EnergySaverBatteryThresholdOnBattery</a>
-  </dd>
-  <dd>
-    <a href="#power-energysaverbatterythresholdpluggedin">Power/EnergySaverBatteryThresholdPluggedIn</a>
-  </dd>
-  <dd>
-    <a href="#power-hibernatetimeoutonbattery">Power/HibernateTimeoutOnBattery</a>
-  </dd>
-  <dd>
-    <a href="#power-hibernatetimeoutpluggedin">Power/HibernateTimeoutPluggedIn</a>
-  </dd>
-  <dd>
-    <a href="#power-requirepasswordwhencomputerwakesonbattery">Power/RequirePasswordWhenComputerWakesOnBattery</a>
-  </dd>
-  <dd>
-    <a href="#power-requirepasswordwhencomputerwakespluggedin">Power/RequirePasswordWhenComputerWakesPluggedIn</a>
-  </dd>
-  <dd>
-    <a href="#power-selectlidcloseactiononbattery">Power/SelectLidCloseActionOnBattery</a>
-  </dd>
-  <dd>
-    <a href="#power-selectlidcloseactionpluggedin">Power/SelectLidCloseActionPluggedIn</a>
-  </dd>
-  <dd>
-    <a href="#power-selectpowerbuttonactiononbattery">Power/SelectPowerButtonActionOnBattery</a>
-  </dd>
-  <dd>
-    <a href="#power-selectpowerbuttonactionpluggedin">Power/SelectPowerButtonActionPluggedIn</a>
-  </dd>
-  <dd>
-    <a href="#power-selectsleepbuttonactiononbattery">Power/SelectSleepButtonActionOnBattery</a>
-  </dd>
-  <dd>
-    <a href="#power-selectsleepbuttonactionpluggedin">Power/SelectSleepButtonActionPluggedIn</a>
-  </dd>
-  <dd>
-    <a href="#power-standbytimeoutonbattery">Power/StandbyTimeoutOnBattery</a>
-  </dd>
-  <dd>
-    <a href="#power-standbytimeoutpluggedin">Power/StandbyTimeoutPluggedIn</a>
-  </dd>
-  <dd>
-    <a href="#power-turnoffhybridsleeponbattery">Power/TurnOffHybridSleepOnBattery</a>
-  </dd>
-  <dd>
-    <a href="#power-turnoffhybridsleeppluggedin">Power/TurnOffHybridSleepPluggedIn</a>
-  </dd>
-  <dd>
-    <a href="#power-unattendedsleeptimeoutonbattery">Power/UnattendedSleepTimeoutOnBattery</a>
-  </dd>
-  <dd>
-    <a href="#power-unattendedsleeptimeoutpluggedin">Power/UnattendedSleepTimeoutPluggedIn</a>
-  </dd>
-</dl>
+<!-- AllowHibernate-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowHibernate-Applicability-End -->
 
-> [!TIP]
-> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+<!-- AllowHibernate-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/AllowHibernate
+```
+<!-- AllowHibernate-OmaUri-End -->
 
+<!-- AllowHibernate-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting decides if hibernate on the machine is allowed or not. Supported values: 0 - Disable hibernate. 1 (default) - Allow hibernate.
+<!-- AllowHibernate-Description-End -->
 
-<hr/>
+<!-- AllowHibernate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowHibernate-Editable-End -->
 
-<!--Policy-->
-<a href="" id="power-allowhibernate"></a>**Power/AllowHibernate**  
+<!-- AllowHibernate-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>No</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>No</td>
-    <td>Yes</td>
-</tr>
-</table>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowHibernate-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowHibernate-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Value | Description |
+|:--|:--|
+| 0 | Disable hibernate. |
+| 1 (Default) | Allow hibernate. |
+<!-- AllowHibernate-AllowedValues-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowHibernate-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowHibernate-Examples-End -->
 
-<hr/>
+<!-- AllowHibernate-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- AllowStandbyStatesWhenSleepingOnBattery-Begin -->
+## AllowStandbyStatesWhenSleepingOnBattery
 
-<!--/Description-->
+<!-- AllowStandbyStatesWhenSleepingOnBattery-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- AllowStandbyStatesWhenSleepingOnBattery-Applicability-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Decides if hibernate on the machine is allowed or not*
--   GP name: *AllowHibernate*
--   GP path: *System/Power Management/Sleep Settings*
--   GP ADMX file name: *power.admx*
+<!-- AllowStandbyStatesWhenSleepingOnBattery-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/AllowStandbyStatesWhenSleepingOnBattery
+```
+<!-- AllowStandbyStatesWhenSleepingOnBattery-OmaUri-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="power-allowstandbystateswhensleepingonbattery"></a>**Power/AllowStandbyStatesWhenSleepingOnBattery**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- AllowStandbyStatesWhenSleepingOnBattery-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting manages whether or not Windows is allowed to use standby states when putting the computer in a sleep state.
 
-If you enable or do not configure this policy setting, Windows uses standby states to put the computer in a sleep state.
+- If you enable or don't configure this policy setting, Windows uses standby states to put the computer in a sleep state.
 
-If you disable this policy setting, standby states (S1-S3) are not allowed.
+- If you disable this policy setting, standby states (S1-S3) aren't allowed.
+<!-- AllowStandbyStatesWhenSleepingOnBattery-Description-End -->
 
-<!--/Description-->
+<!-- AllowStandbyStatesWhenSleepingOnBattery-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowStandbyStatesWhenSleepingOnBattery-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow standby states (S1-S3) when sleeping (on battery)*
--   GP name: *AllowStandbyStatesDC_2*
--   GP path: *System/Power Management/Sleep Settings*
--   GP ADMX file name: *power.admx*
+<!-- AllowStandbyStatesWhenSleepingOnBattery-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowStandbyStatesWhenSleepingOnBattery-DFProperties-End -->
 
-<hr/>
+<!-- AllowStandbyStatesWhenSleepingOnBattery-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="power-allowstandbywhensleepingpluggedin"></a>**Power/AllowStandbyWhenSleepingPluggedIn**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | AllowStandbyStatesDC_2 |
+| Friendly Name | Allow standby states (S1-S3) when sleeping (on battery) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Sleep Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\abfc2519-3608-4c2a-94ea-171b0ed546ab |
+| Registry Value Name | DCSettingIndex |
+| ADMX File Name | Power.admx |
+<!-- AllowStandbyStatesWhenSleepingOnBattery-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowStandbyStatesWhenSleepingOnBattery-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowStandbyStatesWhenSleepingOnBattery-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowStandbyStatesWhenSleepingOnBattery-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowStandbyWhenSleepingPluggedIn-Begin -->
+## AllowStandbyWhenSleepingPluggedIn
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowStandbyWhenSleepingPluggedIn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- AllowStandbyWhenSleepingPluggedIn-Applicability-End -->
 
-<hr/>
+<!-- AllowStandbyWhenSleepingPluggedIn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/AllowStandbyWhenSleepingPluggedIn
+```
+<!-- AllowStandbyWhenSleepingPluggedIn-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- AllowStandbyWhenSleepingPluggedIn-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting manages whether or not Windows is allowed to use standby states when putting the computer in a sleep state.
 
-If you enable or do not configure this policy setting, Windows uses standby states to put the computer in a sleep state.
+- If you enable or don't configure this policy setting, Windows uses standby states to put the computer in a sleep state.
 
-If you disable this policy setting, standby states (S1-S3) are not allowed.
+- If you disable this policy setting, standby states (S1-S3) aren't allowed.
+<!-- AllowStandbyWhenSleepingPluggedIn-Description-End -->
 
-<!--/Description-->
+<!-- AllowStandbyWhenSleepingPluggedIn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowStandbyWhenSleepingPluggedIn-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow standby states (S1-S3) when sleeping (plugged in)*
--   GP name: *AllowStandbyStatesAC_2*
--   GP path: *System/Power Management/Sleep Settings*
--   GP ADMX file name: *power.admx*
+<!-- AllowStandbyWhenSleepingPluggedIn-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- AllowStandbyWhenSleepingPluggedIn-DFProperties-End -->
 
-<hr/>
+<!-- AllowStandbyWhenSleepingPluggedIn-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="power-displayofftimeoutonbattery"></a>**Power/DisplayOffTimeoutOnBattery**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | AllowStandbyStatesAC_2 |
+| Friendly Name | Allow standby states (S1-S3) when sleeping (plugged in) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Sleep Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\abfc2519-3608-4c2a-94ea-171b0ed546ab |
+| Registry Value Name | ACSettingIndex |
+| ADMX File Name | Power.admx |
+<!-- AllowStandbyWhenSleepingPluggedIn-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowStandbyWhenSleepingPluggedIn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowStandbyWhenSleepingPluggedIn-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowStandbyWhenSleepingPluggedIn-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisplayOffTimeoutOnBattery-Begin -->
+## DisplayOffTimeoutOnBattery
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisplayOffTimeoutOnBattery-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- DisplayOffTimeoutOnBattery-Applicability-End -->
 
-<hr/>
+<!-- DisplayOffTimeoutOnBattery-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/DisplayOffTimeoutOnBattery
+```
+<!-- DisplayOffTimeoutOnBattery-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisplayOffTimeoutOnBattery-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to specify the period of inactivity before Windows turns off the display.
 
-If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
+- If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
 
-If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the display from turning off.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the display from turning off. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+<!-- DisplayOffTimeoutOnBattery-Description-End -->
 
-<!--/Description-->
+<!-- DisplayOffTimeoutOnBattery-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisplayOffTimeoutOnBattery-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off the display (on battery)*
--   GP name: *VideoPowerDownTimeOutDC_2*
--   GP path: *System/Power Management/Video and Display Settings*
--   GP ADMX file name: *power.admx*
+<!-- DisplayOffTimeoutOnBattery-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisplayOffTimeoutOnBattery-DFProperties-End -->
 
-<hr/>
+<!-- DisplayOffTimeoutOnBattery-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="power-displayofftimeoutpluggedin"></a>**Power/DisplayOffTimeoutPluggedIn**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | VideoPowerDownTimeOutDC_2 |
+| Friendly Name | Turn off the display (on battery) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Video and Display Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\3C0BC021-C8A8-4E07-A973-6B14CBCB2B7E |
+| ADMX File Name | Power.admx |
+<!-- DisplayOffTimeoutOnBattery-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisplayOffTimeoutOnBattery-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisplayOffTimeoutOnBattery-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisplayOffTimeoutOnBattery-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisplayOffTimeoutPluggedIn-Begin -->
+## DisplayOffTimeoutPluggedIn
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisplayOffTimeoutPluggedIn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- DisplayOffTimeoutPluggedIn-Applicability-End -->
 
-<hr/>
+<!-- DisplayOffTimeoutPluggedIn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/DisplayOffTimeoutPluggedIn
+```
+<!-- DisplayOffTimeoutPluggedIn-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisplayOffTimeoutPluggedIn-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to specify the period of inactivity before Windows turns off the display.
 
-If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
+- If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
 
-If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the display from turning off.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the display from turning off. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+<!-- DisplayOffTimeoutPluggedIn-Description-End -->
 
-<!--/Description-->
+<!-- DisplayOffTimeoutPluggedIn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisplayOffTimeoutPluggedIn-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off the display (plugged in)*
--   GP name: *VideoPowerDownTimeOutAC_2*
--   GP path: *System/Power Management/Video and Display Settings*
--   GP ADMX file name: *power.admx*
+<!-- DisplayOffTimeoutPluggedIn-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisplayOffTimeoutPluggedIn-DFProperties-End -->
 
-<hr/>
+<!-- DisplayOffTimeoutPluggedIn-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="power-energysaverbatterythresholdonbattery"></a>**Power/EnergySaverBatteryThresholdOnBattery**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | VideoPowerDownTimeOutAC_2 |
+| Friendly Name | Turn off the display (plugged in) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Video and Display Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\3C0BC021-C8A8-4E07-A973-6B14CBCB2B7E |
+| ADMX File Name | Power.admx |
+<!-- DisplayOffTimeoutPluggedIn-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisplayOffTimeoutPluggedIn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisplayOffTimeoutPluggedIn-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisplayOffTimeoutPluggedIn-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnergySaverBatteryThresholdOnBattery-Begin -->
+## EnergySaverBatteryThresholdOnBattery
 
-> [!div class = "checklist"]
-> * Device
+<!-- EnergySaverBatteryThresholdOnBattery-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- EnergySaverBatteryThresholdOnBattery-Applicability-End -->
 
-<hr/>
+<!-- EnergySaverBatteryThresholdOnBattery-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/EnergySaverBatteryThresholdOnBattery
+```
+<!-- EnergySaverBatteryThresholdOnBattery-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-
+<!-- EnergySaverBatteryThresholdOnBattery-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to specify battery charge level at which Energy Saver is turned on.
 
-If you enable this policy setting, you must specify a percentage value that indicates the battery charge level. Energy Saver is automatically turned on at (and below) the specified battery charge level.
+- If you enable this policy setting, you must provide a percent value, indicating the battery charge level. Energy Saver will be automatically turned on at (and below) the specified level.
 
-If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
+<!-- EnergySaverBatteryThresholdOnBattery-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Energy Saver Battery Threshold (on battery)*
--   GP name: *EsBattThresholdDC*
--   GP element: *EnterEsBattThreshold*
--   GP path: *System/Power Management/Energy Saver Settings*
--   GP ADMX file name: *power.admx*
+<!-- EnergySaverBatteryThresholdOnBattery-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnergySaverBatteryThresholdOnBattery-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-Supported values: 0-100. The default is 70.
-<!--/SupportedValues-->
-<!--Example-->
+<!-- EnergySaverBatteryThresholdOnBattery-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-100]` |
+| Default Value  | 0 |
+<!-- EnergySaverBatteryThresholdOnBattery-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- EnergySaverBatteryThresholdOnBattery-GpMapping-Begin -->
+**Group policy mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | EsBattThresholdDC |
+| Friendly Name | Energy Saver Battery Threshold (on battery) |
+| Element Name | Energy Saver Battery Threshold (percent) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Energy Saver Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\E69653CA-CF7F-4F05-AA73-CB833FA90AD4 |
+| ADMX File Name | Power.admx |
+<!-- EnergySaverBatteryThresholdOnBattery-GpMapping-End -->
 
-<!--Policy-->
-<a href="" id="power-energysaverbatterythresholdpluggedin"></a>**Power/EnergySaverBatteryThresholdPluggedIn**  
+<!-- EnergySaverBatteryThresholdOnBattery-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnergySaverBatteryThresholdOnBattery-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- EnergySaverBatteryThresholdOnBattery-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EnergySaverBatteryThresholdPluggedIn-Begin -->
+## EnergySaverBatteryThresholdPluggedIn
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnergySaverBatteryThresholdPluggedIn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- EnergySaverBatteryThresholdPluggedIn-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnergySaverBatteryThresholdPluggedIn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/EnergySaverBatteryThresholdPluggedIn
+```
+<!-- EnergySaverBatteryThresholdPluggedIn-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- EnergySaverBatteryThresholdPluggedIn-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to specify battery charge level at which Energy Saver is turned on.
 
-If you enable this policy setting, you must provide a percentage value that indicates the battery charge level. Energy Saver is automatically turned on at (and below) the specified battery charge level.
+- If you enable this policy setting, you must provide a percent value, indicating the battery charge level. Energy Saver will be automatically turned on at (and below) the specified level.
 
-If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
+<!-- EnergySaverBatteryThresholdPluggedIn-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Energy Saver Battery Threshold (plugged in)*
--   GP name: *EsBattThresholdAC*
--   GP element: *EnterEsBattThreshold*
--   GP path: *System/Power Management/Energy Saver Settings*
--   GP ADMX file name: *power.admx*
+<!-- EnergySaverBatteryThresholdPluggedIn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnergySaverBatteryThresholdPluggedIn-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-Supported values: 0-100. The default is 70.
-<!--/SupportedValues-->
-<!--Example-->
+<!-- EnergySaverBatteryThresholdPluggedIn-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-100]` |
+| Default Value  | 0 |
+<!-- EnergySaverBatteryThresholdPluggedIn-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- EnergySaverBatteryThresholdPluggedIn-GpMapping-Begin -->
+**Group policy mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | EsBattThresholdAC |
+| Friendly Name | Energy Saver Battery Threshold (plugged in) |
+| Element Name | Energy Saver Battery Threshold (percent) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Energy Saver Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\E69653CA-CF7F-4F05-AA73-CB833FA90AD4 |
+| ADMX File Name | Power.admx |
+<!-- EnergySaverBatteryThresholdPluggedIn-GpMapping-End -->
 
-<!--Policy-->
-<a href="" id="power-hibernatetimeoutonbattery"></a>**Power/HibernateTimeoutOnBattery**  
+<!-- EnergySaverBatteryThresholdPluggedIn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnergySaverBatteryThresholdPluggedIn-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- EnergySaverBatteryThresholdPluggedIn-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- HibernateTimeoutOnBattery-Begin -->
+## HibernateTimeoutOnBattery
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HibernateTimeoutOnBattery-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- HibernateTimeoutOnBattery-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- HibernateTimeoutOnBattery-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/HibernateTimeoutOnBattery
+```
+<!-- HibernateTimeoutOnBattery-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- HibernateTimeoutOnBattery-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
 
-If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
+- If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
 
-If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+<!-- HibernateTimeoutOnBattery-Description-End -->
 
-<!--/Description-->
+<!-- HibernateTimeoutOnBattery-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HibernateTimeoutOnBattery-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Specify the system hibernate timeout (on battery)*
--   GP name: *DCHibernateTimeOut_2*
--   GP path: *System/Power Management/Sleep Settings*
--   GP ADMX file name: *power.admx*
+<!-- HibernateTimeoutOnBattery-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HibernateTimeoutOnBattery-DFProperties-End -->
 
-<hr/>
+<!-- HibernateTimeoutOnBattery-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="power-hibernatetimeoutpluggedin"></a>**Power/HibernateTimeoutPluggedIn**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DCHibernateTimeOut_2 |
+| Friendly Name | Specify the system hibernate timeout (on battery) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Sleep Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\9D7815A6-7EE4-497E-8888-515A05F02364 |
+| ADMX File Name | Power.admx |
+<!-- HibernateTimeoutOnBattery-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- HibernateTimeoutOnBattery-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HibernateTimeoutOnBattery-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HibernateTimeoutOnBattery-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- HibernateTimeoutPluggedIn-Begin -->
+## HibernateTimeoutPluggedIn
 
-> [!div class = "checklist"]
-> * Device
+<!-- HibernateTimeoutPluggedIn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- HibernateTimeoutPluggedIn-Applicability-End -->
 
-<hr/>
+<!-- HibernateTimeoutPluggedIn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/HibernateTimeoutPluggedIn
+```
+<!-- HibernateTimeoutPluggedIn-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- HibernateTimeoutPluggedIn-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
 
-If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
+- If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
 
-If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+<!-- HibernateTimeoutPluggedIn-Description-End -->
 
-<!--/Description-->
+<!-- HibernateTimeoutPluggedIn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HibernateTimeoutPluggedIn-Editable-End -->
 
+<!-- HibernateTimeoutPluggedIn-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Specify the system hibernate timeout (plugged in)*
--   GP name: *ACHibernateTimeOut_2*
--   GP path: *System/Power Management/Sleep Settings*
--   GP ADMX file name: *power.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HibernateTimeoutPluggedIn-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- HibernateTimeoutPluggedIn-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="power-requirepasswordwhencomputerwakesonbattery"></a>**Power/RequirePasswordWhenComputerWakesOnBattery**  
+| Name | Value |
+|:--|:--|
+| Name | ACHibernateTimeOut_2 |
+| Friendly Name | Specify the system hibernate timeout (plugged in) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Sleep Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\9D7815A6-7EE4-497E-8888-515A05F02364 |
+| ADMX File Name | Power.admx |
+<!-- HibernateTimeoutPluggedIn-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- HibernateTimeoutPluggedIn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HibernateTimeoutPluggedIn-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- HibernateTimeoutPluggedIn-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RequirePasswordWhenComputerWakesOnBattery-Begin -->
+## RequirePasswordWhenComputerWakesOnBattery
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RequirePasswordWhenComputerWakesOnBattery-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- RequirePasswordWhenComputerWakesOnBattery-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- RequirePasswordWhenComputerWakesOnBattery-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/RequirePasswordWhenComputerWakesOnBattery
+```
+<!-- RequirePasswordWhenComputerWakesOnBattery-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- RequirePasswordWhenComputerWakesOnBattery-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether or not the user is prompted for a password when the system resumes from sleep.
 
-If you enable or do not configure this policy setting, the user is prompted for a password when the system resumes from sleep.
+- If you enable or don't configure this policy setting, the user is prompted for a password when the system resumes from sleep.
 
-If you disable this policy setting, the user is not prompted for a password when the system resumes from sleep.
+- If you disable this policy setting, the user isn't prompted for a password when the system resumes from sleep.
+<!-- RequirePasswordWhenComputerWakesOnBattery-Description-End -->
 
-<!--/Description-->
+<!-- RequirePasswordWhenComputerWakesOnBattery-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RequirePasswordWhenComputerWakesOnBattery-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Require a password when a computer wakes (on battery)*
--   GP name: *DCPromptForPasswordOnResume_2*
--   GP path: *System/Power Management/Sleep Settings*
--   GP ADMX file name: *power.admx*
+<!-- RequirePasswordWhenComputerWakesOnBattery-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RequirePasswordWhenComputerWakesOnBattery-DFProperties-End -->
 
-<hr/>
+<!-- RequirePasswordWhenComputerWakesOnBattery-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="power-requirepasswordwhencomputerwakespluggedin"></a>**Power/RequirePasswordWhenComputerWakesPluggedIn**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DCPromptForPasswordOnResume_2 |
+| Friendly Name | Require a password when a computer wakes (on battery) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Sleep Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\0e796bdb-100d-47d6-a2d5-f7d2daa51f51 |
+| Registry Value Name | DCSettingIndex |
+| ADMX File Name | Power.admx |
+<!-- RequirePasswordWhenComputerWakesOnBattery-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- RequirePasswordWhenComputerWakesOnBattery-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RequirePasswordWhenComputerWakesOnBattery-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RequirePasswordWhenComputerWakesOnBattery-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RequirePasswordWhenComputerWakesPluggedIn-Begin -->
+## RequirePasswordWhenComputerWakesPluggedIn
 
-> [!div class = "checklist"]
-> * Device
+<!-- RequirePasswordWhenComputerWakesPluggedIn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- RequirePasswordWhenComputerWakesPluggedIn-Applicability-End -->
 
-<hr/>
+<!-- RequirePasswordWhenComputerWakesPluggedIn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/RequirePasswordWhenComputerWakesPluggedIn
+```
+<!-- RequirePasswordWhenComputerWakesPluggedIn-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- RequirePasswordWhenComputerWakesPluggedIn-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether or not the user is prompted for a password when the system resumes from sleep.
 
-If you enable or do not configure this policy setting, the user is prompted for a password when the system resumes from sleep.
+- If you enable or don't configure this policy setting, the user is prompted for a password when the system resumes from sleep.
 
-If you disable this policy setting, the user is not prompted for a password when the system resumes from sleep.
+- If you disable this policy setting, the user isn't prompted for a password when the system resumes from sleep.
+<!-- RequirePasswordWhenComputerWakesPluggedIn-Description-End -->
 
-<!--/Description-->
+<!-- RequirePasswordWhenComputerWakesPluggedIn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RequirePasswordWhenComputerWakesPluggedIn-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Require a password when a computer wakes (plugged in)*
--   GP name: *ACPromptForPasswordOnResume_2*
--   GP path: *System/Power Management/Sleep Settings*
--   GP ADMX file name: *power.admx*
+<!-- RequirePasswordWhenComputerWakesPluggedIn-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RequirePasswordWhenComputerWakesPluggedIn-DFProperties-End -->
 
-<hr/>
+<!-- RequirePasswordWhenComputerWakesPluggedIn-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="power-selectlidcloseactiononbattery"></a>**Power/SelectLidCloseActionOnBattery**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | ACPromptForPasswordOnResume_2 |
+| Friendly Name | Require a password when a computer wakes (plugged in) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Sleep Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\0e796bdb-100d-47d6-a2d5-f7d2daa51f51 |
+| Registry Value Name | ACSettingIndex |
+| ADMX File Name | Power.admx |
+<!-- RequirePasswordWhenComputerWakesPluggedIn-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- RequirePasswordWhenComputerWakesPluggedIn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RequirePasswordWhenComputerWakesPluggedIn-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RequirePasswordWhenComputerWakesPluggedIn-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SelectLidCloseActionOnBattery-Begin -->
+## SelectLidCloseActionOnBattery
 
-> [!div class = "checklist"]
-> * Device
+<!-- SelectLidCloseActionOnBattery-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- SelectLidCloseActionOnBattery-Applicability-End -->
 
-<hr/>
+<!-- SelectLidCloseActionOnBattery-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/SelectLidCloseActionOnBattery
+```
+<!-- SelectLidCloseActionOnBattery-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- SelectLidCloseActionOnBattery-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies the action that Windows takes when a user closes the lid on a mobile PC.
 
-If you enable this policy setting, you must select the desired action.
+Possible actions include:
 
-If you disable this policy setting or do not configure it, users can see and change this setting.
+-Take no action
+-Sleep
+-Hibernate
+-Shut down.
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Select the lid switch action (on battery)*
--   GP name: *DCSystemLidAction_2*
--   GP element: *SelectDCSystemLidAction*
--   GP path: *System/Power Management/Button Settings*
--   GP ADMX file name: *power.admx*
+- If you enable this policy setting, you must select the desired action.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+- If you disable this policy setting or don't configure it, users can see and change this setting.
+<!-- SelectLidCloseActionOnBattery-Description-End -->
 
-The following are the supported lid close switch actions (on battery):  
--   0 - Take no action
--   1 - Sleep
--   2 - System hibernate sleep state
--   3 - System shutdown
+<!-- SelectLidCloseActionOnBattery-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SelectLidCloseActionOnBattery-Editable-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- SelectLidCloseActionOnBattery-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- SelectLidCloseActionOnBattery-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- SelectLidCloseActionOnBattery-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 | Take no action. |
+| 1 (Default) | Sleep. |
+| 2 | System hibernate sleep state. |
+| 3 | System shutdown. |
+<!-- SelectLidCloseActionOnBattery-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="power-selectlidcloseactionpluggedin"></a>**Power/SelectLidCloseActionPluggedIn**  
+<!-- SelectLidCloseActionOnBattery-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DCSystemLidAction_2 |
+| Friendly Name | Select the lid switch action (on battery) |
+| Element Name | Lid Switch Action. |
+| Location | Computer Configuration |
+| Path | System > Power Management > Button Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\5CA83367-6E45-459F-A27B-476B1D01C936 |
+| ADMX File Name | Power.admx |
+<!-- SelectLidCloseActionOnBattery-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- SelectLidCloseActionOnBattery-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SelectLidCloseActionOnBattery-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SelectLidCloseActionOnBattery-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SelectLidCloseActionPluggedIn-Begin -->
+## SelectLidCloseActionPluggedIn
 
-> [!div class = "checklist"]
-> * Device
+<!-- SelectLidCloseActionPluggedIn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- SelectLidCloseActionPluggedIn-Applicability-End -->
 
-<hr/>
+<!-- SelectLidCloseActionPluggedIn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/SelectLidCloseActionPluggedIn
+```
+<!-- SelectLidCloseActionPluggedIn-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- SelectLidCloseActionPluggedIn-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies the action that Windows takes when a user closes the lid on a mobile PC.
 
-If you enable this policy setting, you must select the desired action.
-
-If you disable this policy setting or do not configure it, users can see and change this setting.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Select the lid switch action (plugged in)*
--   GP name: *ACSystemLidAction_2*
--   GP element: *SelectACSystemLidAction*
--   GP path: *System/Power Management/Button Settings*
--   GP ADMX file name: *power.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-
-The following are the supported lid close switch actions (plugged in):  
--   0 - Take no action
--   1 - Sleep
--   2 - System hibernate sleep state
--   3 - System shutdown
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="power-selectpowerbuttonactiononbattery"></a>**Power/SelectPowerButtonActionOnBattery**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting specifies the action that Windows takes when a user presses the Power button. 
-
-If you enable this policy setting, you must select the desired action.
-
-If you disable this policy setting or do not configure it, users can see and change this setting.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Select the Power button action (on battery)*
--   GP name: *DCPowerButtonAction_2*
--   GP element: *SelectDCPowerButtonAction*
--   GP path: *System/Power Management/Button Settings*
--   GP ADMX file name: *power.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-
-The following are the supported Power button actions (on battery):  
--   0 - Take no action
--   1 - Sleep
--   2 - System hibernate sleep state
--   3 - System shutdown
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="power-selectpowerbuttonactionpluggedin"></a>**Power/SelectPowerButtonActionPluggedIn**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting specifies the action that Windows takes when a user presses the Power button. 
-
-If you enable this policy setting, you must select the desired action.
-
-If you disable this policy setting or do not configure it, users can see and change this setting.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Select the Power button action (plugged in)*
--   GP name: *ACPowerButtonAction_2*
--   GP element: *SelectACPowerButtonAction*
--   GP path: *System/Power Management/Button Settings*
--   GP ADMX file name: *power.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-
-The following are the supported Power button actions (plugged in):  
--   0 - Take no action
--   1 - Sleep
--   2 - System hibernate sleep state
--   3 - System shutdown
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="power-selectsleepbuttonactiononbattery"></a>**Power/SelectSleepButtonActionOnBattery**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting specifies the action that Windows takes when a user presses the Sleep button.
-
-If you enable this policy setting, you must select the desired action.
-
-If you disable this policy setting or do not configure it, users can see and change this setting.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Select the Sleep button action (on battery)*
--   GP name: *DCSleepButtonAction_2*
--   GP element: *SelectDCSleepButtonAction*
--   GP path: *System/Power Management/Button Settings*
--   GP ADMX file name: *power.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-
-The following are the supported Sleep button actions (on battery):  
--   0 - Take no action
--   1 - Sleep
--   2 - System hibernate sleep state
--   3 - System shutdown
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="power-selectsleepbuttonactionpluggedin"></a>**Power/SelectSleepButtonActionPluggedIn**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting specifies the action that Windows takes when a user presses the Sleep button.
-
-If you enable this policy setting, you must select the desired action.
-
-If you disable this policy setting or do not configure it, users can see and change this setting.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Select the Sleep button action (plugged in)*
--   GP name: *ACSleepButtonAction_2*
--   GP element: *SelectACSleepButtonAction*
--   GP path: *System/Power Management/Button Settings*
--   GP ADMX file name: *power.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-
-The following are the supported Sleep button actions (plugged in):  
--   0 - Take no action
--   1 - Sleep
--   2 - System hibernate sleep state
--   3 - System shutdown
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="power-standbytimeoutonbattery"></a>**Power/StandbyTimeoutOnBattery**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+Possible actions include:
+
+-Take no action
+-Sleep
+-Hibernate
+-Shut down.
+
+- If you enable this policy setting, you must select the desired action.
+
+- If you disable this policy setting or don't configure it, users can see and change this setting.
+<!-- SelectLidCloseActionPluggedIn-Description-End -->
+
+<!-- SelectLidCloseActionPluggedIn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SelectLidCloseActionPluggedIn-Editable-End -->
+
+<!-- SelectLidCloseActionPluggedIn-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- SelectLidCloseActionPluggedIn-DFProperties-End -->
+
+<!-- SelectLidCloseActionPluggedIn-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Take no action. |
+| 1 (Default) | Sleep. |
+| 2 | System hibernate sleep state. |
+| 3 | System shutdown. |
+<!-- SelectLidCloseActionPluggedIn-AllowedValues-End -->
+
+<!-- SelectLidCloseActionPluggedIn-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ACSystemLidAction_2 |
+| Friendly Name | Select the lid switch action (plugged in) |
+| Element Name | Lid Switch Action. |
+| Location | Computer Configuration |
+| Path | System > Power Management > Button Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\5CA83367-6E45-459F-A27B-476B1D01C936 |
+| ADMX File Name | Power.admx |
+<!-- SelectLidCloseActionPluggedIn-GpMapping-End -->
+
+<!-- SelectLidCloseActionPluggedIn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SelectLidCloseActionPluggedIn-Examples-End -->
+
+<!-- SelectLidCloseActionPluggedIn-End -->
+
+<!-- SelectPowerButtonActionOnBattery-Begin -->
+## SelectPowerButtonActionOnBattery
+
+<!-- SelectPowerButtonActionOnBattery-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- SelectPowerButtonActionOnBattery-Applicability-End -->
+
+<!-- SelectPowerButtonActionOnBattery-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/SelectPowerButtonActionOnBattery
+```
+<!-- SelectPowerButtonActionOnBattery-OmaUri-End -->
+
+<!-- SelectPowerButtonActionOnBattery-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies the action that Windows takes when a user presses the power button.
+
+Possible actions include:
+
+-Take no action
+-Sleep
+-Hibernate
+-Shut down.
+
+- If you enable this policy setting, you must select the desired action.
+
+- If you disable this policy setting or don't configure it, users can see and change this setting.
+<!-- SelectPowerButtonActionOnBattery-Description-End -->
+
+<!-- SelectPowerButtonActionOnBattery-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SelectPowerButtonActionOnBattery-Editable-End -->
+
+<!-- SelectPowerButtonActionOnBattery-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- SelectPowerButtonActionOnBattery-DFProperties-End -->
+
+<!-- SelectPowerButtonActionOnBattery-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Take no action. |
+| 1 (Default) | Sleep. |
+| 2 | System hibernate sleep state. |
+| 3 | System shutdown. |
+<!-- SelectPowerButtonActionOnBattery-AllowedValues-End -->
+
+<!-- SelectPowerButtonActionOnBattery-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DCPowerButtonAction_2 |
+| Friendly Name | Select the Power button action (on battery) |
+| Element Name | Power Button Action. |
+| Location | Computer Configuration |
+| Path | System > Power Management > Button Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\7648EFA3-DD9C-4E3E-B566-50F929386280 |
+| ADMX File Name | Power.admx |
+<!-- SelectPowerButtonActionOnBattery-GpMapping-End -->
+
+<!-- SelectPowerButtonActionOnBattery-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SelectPowerButtonActionOnBattery-Examples-End -->
+
+<!-- SelectPowerButtonActionOnBattery-End -->
+
+<!-- SelectPowerButtonActionPluggedIn-Begin -->
+## SelectPowerButtonActionPluggedIn
+
+<!-- SelectPowerButtonActionPluggedIn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- SelectPowerButtonActionPluggedIn-Applicability-End -->
+
+<!-- SelectPowerButtonActionPluggedIn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/SelectPowerButtonActionPluggedIn
+```
+<!-- SelectPowerButtonActionPluggedIn-OmaUri-End -->
+
+<!-- SelectPowerButtonActionPluggedIn-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies the action that Windows takes when a user presses the power button.
+
+Possible actions include:
+
+-Take no action
+-Sleep
+-Hibernate
+-Shut down.
+
+- If you enable this policy setting, you must select the desired action.
+
+- If you disable this policy setting or don't configure it, users can see and change this setting.
+<!-- SelectPowerButtonActionPluggedIn-Description-End -->
+
+<!-- SelectPowerButtonActionPluggedIn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SelectPowerButtonActionPluggedIn-Editable-End -->
+
+<!-- SelectPowerButtonActionPluggedIn-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- SelectPowerButtonActionPluggedIn-DFProperties-End -->
+
+<!-- SelectPowerButtonActionPluggedIn-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Take no action. |
+| 1 (Default) | Sleep. |
+| 2 | System hibernate sleep state. |
+| 3 | System shutdown. |
+<!-- SelectPowerButtonActionPluggedIn-AllowedValues-End -->
+
+<!-- SelectPowerButtonActionPluggedIn-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ACPowerButtonAction_2 |
+| Friendly Name | Select the Power button action (plugged in) |
+| Element Name | Power Button Action. |
+| Location | Computer Configuration |
+| Path | System > Power Management > Button Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\7648EFA3-DD9C-4E3E-B566-50F929386280 |
+| ADMX File Name | Power.admx |
+<!-- SelectPowerButtonActionPluggedIn-GpMapping-End -->
+
+<!-- SelectPowerButtonActionPluggedIn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SelectPowerButtonActionPluggedIn-Examples-End -->
+
+<!-- SelectPowerButtonActionPluggedIn-End -->
+
+<!-- SelectSleepButtonActionOnBattery-Begin -->
+## SelectSleepButtonActionOnBattery
+
+<!-- SelectSleepButtonActionOnBattery-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- SelectSleepButtonActionOnBattery-Applicability-End -->
+
+<!-- SelectSleepButtonActionOnBattery-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/SelectSleepButtonActionOnBattery
+```
+<!-- SelectSleepButtonActionOnBattery-OmaUri-End -->
+
+<!-- SelectSleepButtonActionOnBattery-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies the action that Windows takes when a user presses the sleep button.
+
+Possible actions include:
+
+-Take no action
+-Sleep
+-Hibernate
+-Shut down.
+
+- If you enable this policy setting, you must select the desired action.
+
+- If you disable this policy setting or don't configure it, users can see and change this setting.
+<!-- SelectSleepButtonActionOnBattery-Description-End -->
+
+<!-- SelectSleepButtonActionOnBattery-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SelectSleepButtonActionOnBattery-Editable-End -->
+
+<!-- SelectSleepButtonActionOnBattery-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- SelectSleepButtonActionOnBattery-DFProperties-End -->
+
+<!-- SelectSleepButtonActionOnBattery-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Take no action. |
+| 1 (Default) | Sleep. |
+| 2 | System hibernate sleep state. |
+| 3 | System shutdown. |
+<!-- SelectSleepButtonActionOnBattery-AllowedValues-End -->
+
+<!-- SelectSleepButtonActionOnBattery-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DCSleepButtonAction_2 |
+| Friendly Name | Select the Sleep button action (on battery) |
+| Element Name | Sleep Button Action. |
+| Location | Computer Configuration |
+| Path | System > Power Management > Button Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\96996BC0-AD50-47EC-923B-6F41874DD9EB |
+| ADMX File Name | Power.admx |
+<!-- SelectSleepButtonActionOnBattery-GpMapping-End -->
+
+<!-- SelectSleepButtonActionOnBattery-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SelectSleepButtonActionOnBattery-Examples-End -->
+
+<!-- SelectSleepButtonActionOnBattery-End -->
+
+<!-- SelectSleepButtonActionPluggedIn-Begin -->
+## SelectSleepButtonActionPluggedIn
+
+<!-- SelectSleepButtonActionPluggedIn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- SelectSleepButtonActionPluggedIn-Applicability-End -->
+
+<!-- SelectSleepButtonActionPluggedIn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/SelectSleepButtonActionPluggedIn
+```
+<!-- SelectSleepButtonActionPluggedIn-OmaUri-End -->
+
+<!-- SelectSleepButtonActionPluggedIn-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies the action that Windows takes when a user presses the sleep button.
+
+Possible actions include:
+
+-Take no action
+-Sleep
+-Hibernate
+-Shut down.
+
+- If you enable this policy setting, you must select the desired action.
+
+- If you disable this policy setting or don't configure it, users can see and change this setting.
+<!-- SelectSleepButtonActionPluggedIn-Description-End -->
+
+<!-- SelectSleepButtonActionPluggedIn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SelectSleepButtonActionPluggedIn-Editable-End -->
+
+<!-- SelectSleepButtonActionPluggedIn-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- SelectSleepButtonActionPluggedIn-DFProperties-End -->
+
+<!-- SelectSleepButtonActionPluggedIn-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Take no action. |
+| 1 (Default) | Sleep. |
+| 2 | System hibernate sleep state. |
+| 3 | System shutdown. |
+<!-- SelectSleepButtonActionPluggedIn-AllowedValues-End -->
+
+<!-- SelectSleepButtonActionPluggedIn-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | ACSleepButtonAction_2 |
+| Friendly Name | Select the Sleep button action (plugged in) |
+| Element Name | Sleep Button Action. |
+| Location | Computer Configuration |
+| Path | System > Power Management > Button Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\96996BC0-AD50-47EC-923B-6F41874DD9EB |
+| ADMX File Name | Power.admx |
+<!-- SelectSleepButtonActionPluggedIn-GpMapping-End -->
+
+<!-- SelectSleepButtonActionPluggedIn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SelectSleepButtonActionPluggedIn-Examples-End -->
+
+<!-- SelectSleepButtonActionPluggedIn-End -->
+
+<!-- StandbyTimeoutOnBattery-Begin -->
+## StandbyTimeoutOnBattery
+
+<!-- StandbyTimeoutOnBattery-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- StandbyTimeoutOnBattery-Applicability-End -->
+
+<!-- StandbyTimeoutOnBattery-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/StandbyTimeoutOnBattery
+```
+<!-- StandbyTimeoutOnBattery-OmaUri-End -->
+
+<!-- StandbyTimeoutOnBattery-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
 
-If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
+- If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
 
-If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+<!-- StandbyTimeoutOnBattery-Description-End -->
 
-<!--/Description-->
+<!-- StandbyTimeoutOnBattery-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StandbyTimeoutOnBattery-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Specify the system sleep timeout (on battery)*
--   GP name: *DCStandbyTimeOut_2*
--   GP path: *System/Power Management/Sleep Settings*
--   GP ADMX file name: *power.admx*
+<!-- StandbyTimeoutOnBattery-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StandbyTimeoutOnBattery-DFProperties-End -->
 
-<hr/>
+<!-- StandbyTimeoutOnBattery-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="power-standbytimeoutpluggedin"></a>**Power/StandbyTimeoutPluggedIn**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DCStandbyTimeOut_2 |
+| Friendly Name | Specify the system sleep timeout (on battery) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Sleep Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\29F6C1DB-86DA-48C5-9FDB-F2B67B1F44DA |
+| ADMX File Name | Power.admx |
+<!-- StandbyTimeoutOnBattery-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- StandbyTimeoutOnBattery-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StandbyTimeoutOnBattery-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StandbyTimeoutOnBattery-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- StandbyTimeoutPluggedIn-Begin -->
+## StandbyTimeoutPluggedIn
 
-> [!div class = "checklist"]
-> * Device
+<!-- StandbyTimeoutPluggedIn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- StandbyTimeoutPluggedIn-Applicability-End -->
 
-<hr/>
+<!-- StandbyTimeoutPluggedIn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/StandbyTimeoutPluggedIn
+```
+<!-- StandbyTimeoutPluggedIn-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- StandbyTimeoutPluggedIn-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
 
-If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
+- If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
 
-If you disable or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+<!-- StandbyTimeoutPluggedIn-Description-End -->
 
-<!--/Description-->
+<!-- StandbyTimeoutPluggedIn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- StandbyTimeoutPluggedIn-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Specify the system sleep timeout (plugged in)*
--   GP name: *ACStandbyTimeOut_2*
--   GP path: *System/Power Management/Sleep Settings*
--   GP ADMX file name: *power.admx*
+<!-- StandbyTimeoutPluggedIn-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- StandbyTimeoutPluggedIn-DFProperties-End -->
 
-<hr/>
+<!-- StandbyTimeoutPluggedIn-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="power-turnoffhybridsleeponbattery"></a>**Power/TurnOffHybridSleepOnBattery**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | ACStandbyTimeOut_2 |
+| Friendly Name | Specify the system sleep timeout (plugged in) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Sleep Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\29F6C1DB-86DA-48C5-9FDB-F2B67B1F44DA |
+| ADMX File Name | Power.admx |
+<!-- StandbyTimeoutPluggedIn-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- StandbyTimeoutPluggedIn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- StandbyTimeoutPluggedIn-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- StandbyTimeoutPluggedIn-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TurnOffHybridSleepOnBattery-Begin -->
+## TurnOffHybridSleepOnBattery
 
-> [!div class = "checklist"]
-> * Device
+<!-- TurnOffHybridSleepOnBattery-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- TurnOffHybridSleepOnBattery-Applicability-End -->
 
-<hr/>
+<!-- TurnOffHybridSleepOnBattery-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/TurnOffHybridSleepOnBattery
+```
+<!-- TurnOffHybridSleepOnBattery-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- TurnOffHybridSleepOnBattery-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to turn off hybrid sleep.
 
-If you set this policy setting to 0, a hiberfile is not generated when the system transitions to sleep (Stand By).
+- If you enable this policy setting, a hiberfile isn't generated when the system transitions to sleep (Stand By).
 
-If you set this policy setting to 1 or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
+<!-- TurnOffHybridSleepOnBattery-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Turn off hybrid sleep (on battery)*
--   GP name: *DCStandbyWithHiberfileEnable_2*
--   GP path: *System/Power Management/Sleep Settings*
--   GP ADMX file name: *power.admx*
+<!-- TurnOffHybridSleepOnBattery-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TurnOffHybridSleepOnBattery-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+<!-- TurnOffHybridSleepOnBattery-DFProperties-Begin -->
+**Description framework properties**:
 
-The following are the supported values for Hybrid sleep (on battery):
--   0 - no hibernation file for sleep (default)
--   1 - hybrid sleep
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- TurnOffHybridSleepOnBattery-DFProperties-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- TurnOffHybridSleepOnBattery-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Example-->
-<!--Validation-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | . |
+| 1 | Hybrid sleep. |
+<!-- TurnOffHybridSleepOnBattery-AllowedValues-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- TurnOffHybridSleepOnBattery-GpMapping-Begin -->
+**Group policy mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DCStandbyWithHiberfileEnable_2 |
+| Friendly Name | Turn off hybrid sleep (on battery) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Sleep Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\94ac6d29-73ce-41a6-809f-6363ba21b47e |
+| Registry Value Name | DCSettingIndex |
+| ADMX File Name | Power.admx |
+<!-- TurnOffHybridSleepOnBattery-GpMapping-End -->
 
-<!--Policy-->
-<a href="" id="power-turnoffhybridsleeppluggedin"></a>**Power/TurnOffHybridSleepPluggedIn**  
+<!-- TurnOffHybridSleepOnBattery-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TurnOffHybridSleepOnBattery-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- TurnOffHybridSleepOnBattery-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- TurnOffHybridSleepPluggedIn-Begin -->
+## TurnOffHybridSleepPluggedIn
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TurnOffHybridSleepPluggedIn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- TurnOffHybridSleepPluggedIn-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TurnOffHybridSleepPluggedIn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/TurnOffHybridSleepPluggedIn
+```
+<!-- TurnOffHybridSleepPluggedIn-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- TurnOffHybridSleepPluggedIn-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to turn off hybrid sleep.
 
-If you set this policy setting to 0, a hiberfile is not generated when the system transitions to sleep (Stand By).
+- If you enable this policy setting, a hiberfile isn't generated when the system transitions to sleep (Stand By).
 
-If you set this policy setting to 1 or do not configure this policy setting, users control this setting.
+- If you disable or don't configure this policy setting, users control this setting.
+<!-- TurnOffHybridSleepPluggedIn-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Turn off hybrid sleep (plugged in)*
--   GP name: *ACStandbyWithHiberfileEnable_2*
--   GP path: *System/Power Management/Sleep Settings*
--   GP ADMX file name: *power.admx*
+<!-- TurnOffHybridSleepPluggedIn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TurnOffHybridSleepPluggedIn-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+<!-- TurnOffHybridSleepPluggedIn-DFProperties-Begin -->
+**Description framework properties**:
 
-The following are the supported values for Hybrid sleep (plugged in):
--   0 - no hibernation file for sleep (default)
--   1  - hybrid sleep
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- TurnOffHybridSleepPluggedIn-DFProperties-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- TurnOffHybridSleepPluggedIn-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Example-->
-<!--Validation-->
+| Value | Description |
+|:--|:--|
+| 0 (Default) | . |
+| 1 | Hybrid sleep. |
+<!-- TurnOffHybridSleepPluggedIn-AllowedValues-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- TurnOffHybridSleepPluggedIn-GpMapping-Begin -->
+**Group policy mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ACStandbyWithHiberfileEnable_2 |
+| Friendly Name | Turn off hybrid sleep (plugged in) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Sleep Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\94ac6d29-73ce-41a6-809f-6363ba21b47e |
+| Registry Value Name | ACSettingIndex |
+| ADMX File Name | Power.admx |
+<!-- TurnOffHybridSleepPluggedIn-GpMapping-End -->
 
-<!--Policy-->
-<a href="" id="power-unattendedsleeptimeoutonbattery"></a>**Power/UnattendedSleepTimeoutOnBattery**  
+<!-- TurnOffHybridSleepPluggedIn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TurnOffHybridSleepPluggedIn-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- TurnOffHybridSleepPluggedIn-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- UnattendedSleepTimeoutOnBattery-Begin -->
+## UnattendedSleepTimeoutOnBattery
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- UnattendedSleepTimeoutOnBattery-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- UnattendedSleepTimeoutOnBattery-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- UnattendedSleepTimeoutOnBattery-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/UnattendedSleepTimeoutOnBattery
+```
+<!-- UnattendedSleepTimeoutOnBattery-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- UnattendedSleepTimeoutOnBattery-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user isn't present at the computer.
 
-<hr/>
+- If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended. If you specify 0 seconds, Windows doesn't automatically transition to sleep.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user is not present at the computer.
+- If you disable or don't configure this policy setting, users control this setting.
 
-If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended. If you specify 0 seconds, Windows does not automatically transition to sleep.
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+<!-- UnattendedSleepTimeoutOnBattery-Description-End -->
 
-If you disable or do not configure this policy setting, users control this setting.
+<!-- UnattendedSleepTimeoutOnBattery-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- UnattendedSleepTimeoutOnBattery-Editable-End -->
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+<!-- UnattendedSleepTimeoutOnBattery-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Specify the unattended sleep timeout (on battery)*
--   GP name: *UnattendedSleepTimeOutDC*
--   GP element: *EnterUnattendedSleepTimeOut*
--   GP path: *System/Power Management/Sleep Settings*
--   GP ADMX file name: *power.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-4294967295]` |
+| Default Value  | 0 |
+<!-- UnattendedSleepTimeoutOnBattery-DFProperties-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-Default value for unattended sleep timeout (on battery):
-300
-<!--/SupportedValues-->
-<!--Example-->
+<!-- UnattendedSleepTimeoutOnBattery-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/Example-->
-<!--Validation-->
+| Name | Value |
+|:--|:--|
+| Name | UnattendedSleepTimeOutDC |
+| Friendly Name | Specify the unattended sleep timeout (on battery) |
+| Element Name | Unattended Sleep Timeout (seconds) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Sleep Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\7bc4a2f9-d8fc-4469-b07b-33eb785aaca0 |
+| ADMX File Name | Power.admx |
+<!-- UnattendedSleepTimeoutOnBattery-GpMapping-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- UnattendedSleepTimeoutOnBattery-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- UnattendedSleepTimeoutOnBattery-Examples-End -->
 
-<hr/>
+<!-- UnattendedSleepTimeoutOnBattery-End -->
 
-<!--Policy-->
-<a href="" id="power-unattendedsleeptimeoutpluggedin"></a>**Power/UnattendedSleepTimeoutPluggedIn**  
+<!-- UnattendedSleepTimeoutPluggedIn-Begin -->
+## UnattendedSleepTimeoutPluggedIn
 
-<!--SupportedSKUs-->
+<!-- UnattendedSleepTimeoutPluggedIn-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- UnattendedSleepTimeoutPluggedIn-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- UnattendedSleepTimeoutPluggedIn-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Power/UnattendedSleepTimeoutPluggedIn
+```
+<!-- UnattendedSleepTimeoutPluggedIn-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- UnattendedSleepTimeoutPluggedIn-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user isn't present at the computer.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended. If you specify 0 seconds, Windows doesn't automatically transition to sleep.
 
-> [!div class = "checklist"]
-> * Device
+- If you disable or don't configure this policy setting, users control this setting.
 
-<hr/>
+If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occuring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+<!-- UnattendedSleepTimeoutPluggedIn-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user is not present at the computer.
+<!-- UnattendedSleepTimeoutPluggedIn-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- UnattendedSleepTimeoutPluggedIn-Editable-End -->
 
-If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended. If you specify 0 seconds, Windows does not automatically transition to sleep.
+<!-- UnattendedSleepTimeoutPluggedIn-DFProperties-Begin -->
+**Description framework properties**:
 
-If you disable or do not configure this policy setting, users control this setting.
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-4294967295]` |
+| Default Value  | 0 |
+<!-- UnattendedSleepTimeoutPluggedIn-DFProperties-End -->
 
-If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring. The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
+<!-- UnattendedSleepTimeoutPluggedIn-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Specify the unattended sleep timeout (plugged in)*
--   GP name: *UnattendedSleepTimeOutAC*
--   GP element: *EnterUnattendedSleepTimeOut*
--   GP path: *System/Power Management/Sleep Settings*
--   GP ADMX file name: *power.admx*
+| Name | Value |
+|:--|:--|
+| Name | UnattendedSleepTimeOutAC |
+| Friendly Name | Specify the unattended sleep timeout (plugged in) |
+| Element Name | Unattended Sleep Timeout (seconds) |
+| Location | Computer Configuration |
+| Path | System > Power Management > Sleep Settings |
+| Registry Key Name | Software\Policies\Microsoft\Power\PowerSettings\7bc4a2f9-d8fc-4469-b07b-33eb785aaca0 |
+| ADMX File Name | Power.admx |
+<!-- UnattendedSleepTimeoutPluggedIn-GpMapping-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-Default value for unattended sleep timeout (plugged in):
-300
-<!--/SupportedValues-->
-<!--Example-->
+<!-- UnattendedSleepTimeoutPluggedIn-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- UnattendedSleepTimeoutPluggedIn-Examples-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- UnattendedSleepTimeoutPluggedIn-End -->
 
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
+<!-- Power-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Power-CspMoreInfo-End -->
 
+<!-- Power-End -->
 
-<!--/Policies-->
+## Related articles
 
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,16 +1,15 @@
 ---
 title: Accounts (Windows 10)
 description: This section describes the account settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: greg-lindsay
+ms.prod: windows-client
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ms.date: 04/30/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
+ms.technology: itpro-configure
 ---
 
 # Accounts (Windows Configuration Designer reference)
@@ -45,8 +44,8 @@ Specifies the settings you can configure when joining a device to a domain, incl
 | Account | String  | Account to use to join computer to domain  |
 | AccountOU | Enter the full path for the organizational unit. For example: OU=testOU,DC=domain,DC=Domain,DC=com.  | Name of organizational unit for the computer account  |
 | ComputerName | On desktop PCs, this setting specifies the DNS hostname of the computer (Computer Name) up to 63 characters. Use `%RAND:x%` to generate x number of random digits in the name, where x must be a number less than 63. For domain-joined computers, the unique name must use `%RAND:x%`. Use `%SERIAL%` to generate the name with the `computer's` serial number embedded. If the serial number exceeds the character limit, it will be truncated from the beginning of the sequence. The character restriction limit doesn't count the length of the macros, including `%RAND:x%` and `%SERIAL%`. This setting is supported only in Windows 10, version 1803 and later. To change this setting in Windows 10 version 1709 and earlier releases, use the **ComputerName** setting under **Accounts**. | Specifies the name of the Windows device (computer name on PCs)  |
-| DomainName | String (cannot be empty) | Specify the name of the domain that the device will join  |
-| Password | String (cannot be empty) | Corresponds to the password of the user account that's authorized to join the computer account to the domain.  |
+| DomainName | String (can't be empty) | Specify the name of the domain that the device will join  |
+| Password | String (can't be empty) | Corresponds to the password of the user account that's authorized to join the computer account to the domain.  |
 
 ## Users
 
@@ -54,7 +53,7 @@ Use these settings to add local user accounts to the device.
 
 | Setting | Value | Description |
 | --- | --- | --- |
-| UserName | String (cannot be empty)  | Specify a name for the local user account  |
-| HomeDir | String (cannot be empty) | Specify the path of the home directory for the user |
-| Password | String (cannot be empty)  | Specify the password for the user account |
-| UserGroup | String (cannot be empty) | Specify the local user group for the user |
+| UserName | String (can't be empty)  | Specify a name for the local user account  |
+| HomeDir | String (can't be empty) | Specify the path of the home directory for the user |
+| Password | String (can't be empty)  | Specify the password for the user account |
+| UserGroup | String (can't be empty) | Specify the local user group for the user |

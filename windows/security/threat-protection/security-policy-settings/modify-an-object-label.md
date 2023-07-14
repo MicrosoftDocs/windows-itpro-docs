@@ -1,26 +1,26 @@
 ---
-title: Modify an object label (Windows 10)
+title: Modify an object label 
 description: Describes the best practices, location, values, policy management, and security considerations for the Modify an object label security policy setting.
 ms.assetid: 3e5a97dd-d363-43a8-ae80-452e866ebfd5
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Modify an object label
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Modify an object label** security policy setting.
@@ -34,10 +34,10 @@ similar to NTFS file and folder permissions, which are discretionary controls on
 
 -   **Untrusted**   Default assignment for processes that are logged on anonymously.
 -   **Low**   Default assignment for processes that interact with the Internet.
--   **Medium**   Default assignment for standard user accounts and any object that is not explicitly designated with a lower or higher integrity level.
+-   **Medium**   Default assignment for standard user accounts and any object that isn't explicitly designated with a lower or higher integrity level.
 -   **High**  Default assignment for administrator accounts and processes that request to run using administrative rights.
 -   **System**   Default assignment for Windows kernel and core services.
--   **Installer**   Used by setup programs to install software. It is important that only trusted software is installed on computers because objects that are assigned the Installer integrity level can install, modify, and uninstall all other objects.
+-   **Installer**   Used by setup programs to install software. It's important that only trusted software is installed on computers because objects that are assigned the Installer integrity level can install, modify, and uninstall all other objects.
 
 Constant: SeRelabelPrivilege
 
@@ -48,7 +48,7 @@ Constant: SeRelabelPrivilege
 
 ### Best practices
 
--   Do not give any group this user right.
+-   Don't give any group this user right.
 
 ### Location
 
@@ -73,7 +73,7 @@ The following table lists the actual and effective default policy values for the
 
 This section describes features, tools, and guidance to help you manage this policy.
 
-A restart of the computer is not required for this policy setting to be effective.
+A restart of the computer isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 
@@ -97,11 +97,11 @@ This section describes how an attacker might exploit a feature or its configurat
 Anyone with the **Modify an object label** user right can change the integrity level of a file or process so that it becomes elevated or decreased to a point where it can be deleted by lower integrity processes. Either of these states effectively circumvents the protection that is offered by 
 Windows Integrity Controls and makes your system vulnerable to attacks by malicious software.
 
-If malicious software is set with an elevated integrity level such as Trusted Installer or System, administrator accounts do not have sufficient integrity levels to delete the program from the system. In that case, use of the **Modify an object label** right is mandated so that the object can be relabeled. However, the relabeling must occur by using a process that is at the same or a higher level of integrity than the object that you are attempting to relabel.
+If malicious software is set with an elevated integrity level such as Trusted Installer or System, administrator accounts don't have sufficient integrity levels to delete the program from the system. In that case, use of the **Modify an object label** right is mandated so that the object can be relabeled. However, the relabeling must occur by using a process that is at the same or a higher level of integrity than the object that you're attempting to relabel.
 
 ### Countermeasure
 
-Do not give any group this right. If necessary, implement it for a constrained period of time to a trusted individual to respond to a specific organizational need.
+Don't give any group this right. If necessary, implement it for a constrained period of time to a trusted individual to respond to a specific organizational need.
 
 ### Potential impact
 

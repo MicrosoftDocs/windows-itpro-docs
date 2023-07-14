@@ -1,29 +1,33 @@
 ---
-title: Network security Restrict NTLM Outgoing traffic (Windows 10)
+title: Network security Restrict NTLM Outgoing traffic 
 description: Learn about best practices, security considerations and more for the policy setting, Network Security Restrict NTLM Outgoing NTLM traffic to remote servers.
 ms.assetid: 63437a90-764b-4f06-aed8-a4a26cf81bd1
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.date: 06/15/2022
+ms.technology: itpro-security
 ---
 
 # Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, management aspects, and security considerations for the **Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers** security policy setting.
+
+
+> [!NOTE]
+> For more information about configuring a server to be accessed remotely, see [Remote Desktop - Allow access to your PC](/windows-server/remote/remote-desktop-services/clients/remote-desktop-allow-access).
 
 ## Reference
 
@@ -39,19 +43,19 @@ The **Network Security: Restrict NTLM: Outgoing NTLM traffic to remote servers**
 
 -   **Audit all**
 
-    The device that sends the NTLM authentication request to a remote server logs an event for each request. This allows you to identify those servers that receive NTLM authentication requests from the client device
+    The device that sends the NTLM authentication request to a remote server logs an event for each request. This event allows you to identify those servers that receive NTLM authentication requests from the client device.
 
 -   **Deny all**
 
-    The device cannot authenticate any identities to a remote server by using NTLM authentication. You can use the [Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication](network-security-restrict-ntlm-add-remote-server-exceptions-for-ntlm-authentication.md) policy setting to define a list of remote servers to which client devices are allowed to use NTLM authentication while denying others. This setting will also log an event on the device that is making the authentication request.
+    The device can't authenticate any identities to a remote server by using NTLM authentication. You can use the [Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication](network-security-restrict-ntlm-add-remote-server-exceptions-for-ntlm-authentication.md) policy setting to define a list of remote servers to which client devices are allowed to use NTLM authentication while denying others. This setting will also log an event on the device that is making the authentication request.
 
 -   Not defined
 
-    This is the same as **Allow all**, and the device will allow all NTLM authentication requests when the policy is deployed.
+    This state of being not defined is the same as **Allow all**, and the device will allow all NTLM authentication requests when the policy is deployed.
 
 ### Best practices
 
-If you select **Deny all**, the client device cannot authenticate identities to a remote server by using NTLM authentication. First, select **Audit all** and then review the operational event log to understand which servers are involved in these authentication attempts. You can then add those server names to a server exception list by using the [Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication](network-security-restrict-ntlm-add-remote-server-exceptions-for-ntlm-authentication.md) policy setting.
+If you select **Deny all**, the client device can't authenticate identities to a remote server by using NTLM authentication. First, select **Audit all** and then review the operational event log to understand which servers are involved in these authentication attempts. You can then add those server names to a server exception list by using the [Network security: Restrict NTLM: Add remote server exceptions for NTLM authentication](network-security-restrict-ntlm-add-remote-server-exceptions-for-ntlm-authentication.md) policy setting.
 
 ### Location
 
@@ -90,7 +94,7 @@ There are no security audit event policies that can be configured to view event 
 
 This section describes how an attacker might exploit a feature or its configuration, how to implement the countermeasure, and the possible negative consequences of countermeasure implementation.
 
-NTLM and NTLMv2 authentication is vulnerable to a variety of malicious attacks, including SMB replay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the Kerberos version 5 protocol, or different authentication mechanisms, such as smart cards.
+NTLM and NTLMv2 authentication is vulnerable to various malicious attacks, including SMB relay, man-in-the-middle attacks, and brute force attacks. Reducing and eliminating NTLM authentication from your environment forces the Windows operating system to use more secure protocols, such as the Kerberos version 5 protocol, or different authentication mechanisms, such as smart cards.
 
 ### Vulnerability
 
@@ -98,7 +102,7 @@ Malicious attacks on NTLM authentication traffic that result in a compromised se
 
 ### Countermeasure
 
-When it has been determined that the NTLM authentication protocol should not be used within a network because you are required to use a more secure protocol such as Kerberos, then you can select from several options to restrict NTLM usage to servers.
+When it has been determined that the NTLM authentication protocol shouldn't be used within a network because you're required to use a more secure protocol such as Kerberos, then you can select from several options to restrict NTLM usage to servers.
 
 ### Potential impact
 

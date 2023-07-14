@@ -1,187 +1,215 @@
 ---
-title: Policy CSP - ADMX_wlansvc
-description: Policy CSP - ADMX_wlansvc
-ms.author: dansimp
+title: ADMX_wlansvc Policy CSP
+description: Learn more about the ADMX_wlansvc Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 10/27/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_wlansvc-Begin -->
 # Policy CSP - ADMX_wlansvc
->[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<hr/>
+<!-- ADMX_wlansvc-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_wlansvc-Editable-End -->
 
-<!--Policies-->
-## ADMX_wlansvc policies  
+<!-- SetCost-Begin -->
+## SetCost
 
-<dl>
-  <dd>
-    <a href="#admx-wlansvc-setcost">ADMX_wlansvc/SetCost</a>
-  </dd>
-  <dd>
-    <a href="#admx-wlansvc-setpinenforced">ADMX_wlansvc/SetPINEnforced</a>
-  </dd>
-  <dd>
-    <a href="#admx-wlansvc-setpinpreferred">ADMX_wlansvc/SetPINPreferred</a>
-  </dd>
-</dl>
+<!-- SetCost-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SetCost-Applicability-End -->
 
+<!-- SetCost-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_wlansvc/SetCost
+```
+<!-- SetCost-OmaUri-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-wlansvc-setcost"></a>**ADMX_wlansvc/SetCost**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- SetCost-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures the cost of Wireless LAN (WLAN) connections on the local machine.
 
-If this policy setting is enabled, a drop-down list box presenting possible cost values will be active. Selecting one of the following values from the list will set the cost of all WLAN connections on the local machine:
+- If this policy setting is enabled, a drop-down list box presenting possible cost values will be active. Selecting one of the following values from the list will set the cost of all WLAN connections on the local machine:
 
 - Unrestricted: Use of this connection is unlimited and not restricted by usage charges and capacity constraints.
-- Fixed: Use of this connection is not restricted by usage charges and capacity constraints up to a certain data limit.  
-- Variable: This connection is costed on a per byte basis.  If this policy setting is disabled or is not configured, the cost of Wireless LAN connections is Unrestricted by default.
 
-<!--/Description-->
+- Fixed: Use of this connection isn't restricted by usage charges and capacity constraints up to a certain data limit.
 
+- Variable: This connection is costed on a per byte basis.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Set Cost*
--   GP name: *IncludeCmdLine*
--   GP path: *Network\WLAN Service\WLAN Media Cost*
--   GP ADMX file name: *wlansvc.admx*
+- If this policy setting is disabled or isn't configured, the cost of Wireless LAN connections is Unrestricted by default.
+<!-- SetCost-Description-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- SetCost-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SetCost-Editable-End -->
 
-<!--Policy-->
-<a href="" id="admx-wlansvc-setpinenforced"></a>**ADMX_wlansvc/SetPINEnforced**  
+<!-- SetCost-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SetCost-DFProperties-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- SetCost-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/SupportedSKUs-->
-<hr/>
+**ADMX mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | SetCost |
+| Friendly Name | Set Cost |
+| Location | Computer Configuration |
+| Path | Network > WLAN Service > WLAN Media Cost |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Wireless\NetCost |
+| ADMX File Name | wlansvc.admx |
+<!-- SetCost-AdmxBacked-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- SetCost-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SetCost-Examples-End -->
 
-<hr/>
+<!-- SetCost-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- SetPINEnforced-Begin -->
+## SetPINEnforced
+
+<!-- SetPINEnforced-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SetPINEnforced-Applicability-End -->
+
+<!-- SetPINEnforced-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_wlansvc/SetPINEnforced
+```
+<!-- SetPINEnforced-OmaUri-End -->
+
+<!-- SetPINEnforced-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy applies to Wireless Display connections. This policy means that the use of a PIN for pairing to Wireless Display devices is required rather than optional.
 
 Conversely it means that Push Button is NOT allowed.
 
-If this policy setting is disabled or is not configured, by default Push Button pairing is allowed (but not necessarily preferred).
+- If this policy setting is disabled or isn't configured, by default Push Button pairing is allowed (but not necessarily preferred).
+<!-- SetPINEnforced-Description-End -->
 
-<!--/Description-->
+<!-- SetPINEnforced-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SetPINEnforced-Editable-End -->
 
+<!-- SetPINEnforced-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Require PIN pairing*
--   GP name: *SetPINEnforced*
--   GP path: *Network\Wireless Display*
--   GP ADMX file name: *wlansvc.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SetPINEnforced-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- SetPINEnforced-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-wlansvc-setpinpreferred"></a>**ADMX_wlansvc/SetPINPreferred**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | SetPINEnforced |
+| Friendly Name | Require PIN pairing |
+| Location | Computer Configuration |
+| Path | Network > Wireless Display |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\WirelessDisplay |
+| Registry Value Name | EnforcePinBasedPairing |
+| ADMX File Name | wlansvc.admx |
+<!-- SetPINEnforced-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- SetPINEnforced-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SetPINEnforced-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SetPINEnforced-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SetPINPreferred-Begin -->
+## SetPINPreferred
 
-> [!div class = "checklist"]
-> * Device
+<!-- SetPINPreferred-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SetPINPreferred-Applicability-End -->
 
-<hr/>
+<!-- SetPINPreferred-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_wlansvc/SetPINPreferred
+```
+<!-- SetPINPreferred-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- SetPINPreferred-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy applies to Wireless Display connections. This policy changes the preference order of the pairing methods.
 
 When enabled, it makes the connections to prefer a PIN for pairing to Wireless Display devices over the Push Button pairing method.
 
-If this policy setting is disabled or is not configured, by default Push Button pairing is preferred (if allowed by other policies).
+- If this policy setting is disabled or isn't configured, by default Push Button pairing is preferred (if allowed by other policies).
+<!-- SetPINPreferred-Description-End -->
 
-<!--/Description-->
+<!-- SetPINPreferred-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SetPINPreferred-Editable-End -->
 
+<!-- SetPINPreferred-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Prefer PIN pairing*
--   GP name: *SetPINPreferred*
--   GP path: *Network\Wireless Display*
--   GP ADMX file name: *wlansvc.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SetPINPreferred-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- SetPINPreferred-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | SetPINPreferred |
+| Friendly Name | Prefer PIN pairing |
+| Location | Computer Configuration |
+| Path | Network > Wireless Display |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\WirelessDisplay |
+| Registry Value Name | PreferPinBasedPairing |
+| ADMX File Name | wlansvc.admx |
+<!-- SetPINPreferred-AdmxBacked-End -->
 
-<!--/Policies-->
+<!-- SetPINPreferred-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SetPINPreferred-Examples-End -->
 
+<!-- SetPINPreferred-End -->
+
+<!-- ADMX_wlansvc-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_wlansvc-CspMoreInfo-End -->
+
+<!-- ADMX_wlansvc-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,16 +1,14 @@
 ---
 title: How to Add or Remove an Administrator by Using the Management Console (Windows 10/11)
 description: Add or remove an administrator on the Microsoft Application Virtualization (App-V) server by using the Management Console.
-author: greg-lindsay
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.prod: w10
+author: aczechowski
+ms.prod: windows-client
 ms.date: 06/08/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
 # How to add or remove an administrator by using the Management Console
 
@@ -33,6 +31,6 @@ Use the following procedures to add or remove an administrator on the Microsoft 
 
 
 
-## Related topics
+## Related articles
 
 * [Operations for App-V](appv-operations.md)

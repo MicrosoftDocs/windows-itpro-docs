@@ -1,26 +1,26 @@
 ---
-title: Create a token object (Windows 10)
+title: Create a token object 
 description: Describes the best practices, location, values, policy management, and security considerations for the Create a token object security policy setting.
 ms.assetid: bfbf52fc-6ba4-442a-9df7-bd277e55729c
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Create a token object
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Create a token object** security policy setting.
@@ -29,7 +29,7 @@ Describes the best practices, location, values, policy management, and security 
 
 This policy setting determines which accounts a process can use to create a token, and which accounts it can then use to gain access to local resources when the process uses NtCreateToken() or other token-creation APIs.
 
-When a user logs on to the local device or connects to a remote device through a network, Windows builds the user’s access token. Then the system examines the token to determine the level of the user's privileges. When you revoke a privilege, the change is immediately recorded, but the change is not reflected in the user's access token until the next time the user logs on or connects.
+When a user signs in to the local device or connects to a remote device through a network, Windows builds the user’s access token. Then the system examines the token to determine the level of the user's privileges. When you revoke a privilege, the change is immediately recorded, but the change isn't reflected in the user's access token until the next time the user logs on or connects.
 
 Constant: SeCreateTokenPrivilege
 
@@ -40,7 +40,7 @@ Constant: SeCreateTokenPrivilege
 
 ### Best practices
 
--   This user right is used internally by the operating system. Unless it is necessary, do not assign this user right to a user, group, or process other than Local System.
+-   This user right is used internally by the operating system. Unless it's necessary, don't assign this user right to a user, group, or process other than Local System.
 
 ### Location
 
@@ -48,7 +48,7 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Use
 
 ### Default values
 
-This user right is used internally by the operating system. By default, it is not assigned to any user groups.
+This user right is used internally by the operating system. By default, it isn't assigned to any user groups.
 
 The following table lists the actual and effective default policy values. Default values are also listed on the policy’s property page.
 
@@ -63,7 +63,7 @@ The following table lists the actual and effective default policy values. Defaul
  
 ## Policy management
 
-A restart of the device is not required for this policy setting to be effective.
+A restart of the device isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 
@@ -86,11 +86,11 @@ This section describes how an attacker might exploit a feature or its configurat
 
 >**Caution:**  A user account that is given this user right has complete control over the system, and it can lead to the system being compromised. We highly recommend that you do not assign this right to any user accounts.
  
-Windows examines a user's access token to determine the level of the user's privileges. Access tokens are built when users log on to the local device or connect to a remote device over a network. When you revoke a privilege, the change is immediately recorded, but the change is not reflected in the user's access token until the next time the user logs on or connects. Users with the ability to create or modify tokens can change the level of access for any account on a computer if they are currently logged on. They could escalate their privileges or create a DoS condition.
+Windows examines a user's access token to determine the level of the user's privileges. Access tokens are built when users sign in to the local device or connect to a remote device over a network. When you revoke a privilege, the change is immediately recorded, but the change isn't reflected in the user's access token until the next time the user logs on or connects. Users with the ability to create or modify tokens can change the level of access for any account on a computer if they're currently logged on. They could escalate their privileges or create a DoS condition.
 
 ### Countermeasure
 
-Do not assign the **Create a token object** user right to any users. Processes that require this user right should use the Local System account, which already includes it, instead of a separate user account that has this user right assigned.
+Don't assign the **Create a token object** user right to any users. Processes that require this user right should use the Local System account, which already includes it, instead of a separate user account that has this user right assigned.
 
 ### Potential impact
 

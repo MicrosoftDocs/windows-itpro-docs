@@ -1,18 +1,14 @@
 ---
-title: Windows Update error code list by component 
+title: Windows Update error code list by component
 description: Learn about reference information for Windows Update error codes, including automatic update errors, UI errors, and reporter errors.
-ms.prod: w10
-ms.mktglfcycl: 
-audience: itpro
-itproauthor: jaimeo
-author: jaimeo
+ms.prod: windows-client
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: medium
-ms.audience: itpro
 ms.date: 09/18/2018
-manager: dougeby
 ms.topic: article
-ms.custom: seo-marvel-apr2020
-ms.collection: highpri
+ms.technology: itpro-updates
 ---
 
 # Windows Update error codes by component
@@ -45,8 +41,8 @@ This section lists the error codes for Microsoft Windows Update.
 | 0x80243002 |  `WU_E_INSTALLATION_RESULTS_INVALID_DATA`   |       The results of download and installation could not be read from the registry due to an invalid data format.        |
 | 0x80243003 |    `WU_E_INSTALLATION_RESULTS_NOT_FOUND`    |           The results of download and installation are not available; the operation may have failed to start.            |
 | 0x80243004 |           `WU_E_TRAYICON_FAILURE`           |                    A failure occurred when trying to create an icon in the taskbar notification area.                    |
-| 0x80243FFD |              `WU_E_NON_UI_MODE`             |                    Unable to show UI when in non-UI mode; WU client UI modules may not be installed.                     |
-| 0x80243FFE |     `WU_E_WUCLTUI_UNSUPPORTED_VERSION`      |                                 Unsupported version of WU client UI exported functions.                                  |
+| 0x80243FFD |              `WU_E_NON_UI_MODE`             |                    Unable to show UI when in non-UI mode; Windows Update client UI modules may not be installed.                     |
+| 0x80243FFE |     `WU_E_WUCLTUI_UNSUPPORTED_VERSION`      |                                 Unsupported version of Windows Update client UI exported functions.                                  |
 | 0x80243FFF |          `WU_E_AUCLIENT_UNEXPECTED`         |                   There was a user interface error not covered by another `WU_E_AUCLIENT_*` error code.                  |
 | 0x8024043D |          `WU_E_SERVICEPROP_NOTAVAIL`         |                   The requested service property is not available.                  |
 

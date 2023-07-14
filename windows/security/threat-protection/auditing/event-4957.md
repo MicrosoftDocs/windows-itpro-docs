@@ -1,17 +1,18 @@
 ---
-title: 4957(F) Windows Firewall did not apply the following rule. (Windows 10)
-description: Describes security event 4957(F) Windows Firewall did not apply the following rule.
+title: 4957(F) Windows Firewall did not apply the following rule. 
+description: Describes security event 4957(F) Windows Firewall didn't apply the following rule.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4957(F): Windows Firewall did not apply the following rule.
@@ -23,7 +24,7 @@ ms.technology: windows-sec
 
 ***Event Description:***
 
-This event generates when Windows Firewall starts or apply new rule, and the rule cannot be applied for some reason.
+This event generates when Windows Firewall starts or apply new rule, and the rule can't be applied for some reason.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -69,17 +70,17 @@ This event generates when Windows Firewall starts or apply new rule, and the rul
 
 -   **ID** \[Type = UnicodeString\]: the unique identifier for not applied firewall rule.
 
-    To see the unique ID of the rule you need to navigate to “**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\FirewallRules”** registry key and you will see the list of Windows Firewall rule IDs (Name column) with parameters:
+    To see the unique ID of the rule, you need to navigate to “**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\FirewallRules”** registry key and you'll see the list of Windows Firewall rule IDs (Name column) with parameters:
 
 <img src="images/registry-editor-firewallrules.png" alt="Registry Editor FirewallRules key illustration" width="1412" height="422" />
 
--   **Name** \[Type = UnicodeString\]: the name of the rule which was not applied. You can see the name of Windows Firewall rule using Windows Firewall with Advanced Security management console (**wf.msc**), check “Name” column:
+-   **Name** \[Type = UnicodeString\]: the name of the rule that wasn't applied. You can see the name of Windows Firewall rule using Windows Firewall with Advanced Security management console (**wf.msc**), check “Name” column:
 
 <img src="images/windows-firewall-with-advanced-security.png" alt="Windows Firewall with Advanced Security illustration" width="1082" height="363" />
 
 **Error Information:**
 
--   **Reason** \[Type = UnicodeString\]: the reason why the rule was not applied.
+-   **Reason** \[Type = UnicodeString\]: the reason why the rule wasn't applied.
 
 ## Security Monitoring Recommendations
 

@@ -2,15 +2,13 @@
 title: Windows identity and user security
 description: Get an overview of identity security in Windows 11 and Windows 10
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-author: dansimp
-ms.collection: M365-security-compliance
-ms.prod: m365-security
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: paoloma
+author: paolomatarazzo
+ms.prod: windows-client
+ms.technology: itpro-security
+ms.date: 12/31/2017
+ms.topic: article
 ---
 
 # Windows identity and privacy

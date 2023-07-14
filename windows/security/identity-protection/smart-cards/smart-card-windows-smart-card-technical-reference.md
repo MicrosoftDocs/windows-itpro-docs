@@ -1,24 +1,12 @@
 ---
-title: Smart Card Technical Reference (Windows)
+title: Smart Card Technical Reference 
 description: Learn about the Windows smart card infrastructure for physical smart cards, and how smart card-related components work in Windows.
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.collection: M365-identity-device-management
+ms.reviewer: ardenw
 ms.topic: article
-ms.localizationpriority: medium
 ms.date: 09/24/2021
-ms.reviewer: 
 ---
 
 # Smart Card Technical Reference
-
-Applies To: Windows 10, Windows 11, Windows Server 2016 and above
 
 The Smart Card Technical Reference describes the Windows smart card infrastructure for physical smart cards and how smart card-related components work in Windows. This document also contains information about tools that information technology (IT) developers and administrators can use to troubleshoot, debug, and deploy smart card-based strong authentication in the enterprise.
 
@@ -44,7 +32,9 @@ Smart cards provide:
 
 Smart cards can be used to sign in to domain accounts only, not local accounts. When you use a password to sign in interactively to a domain account, Windows uses the Kerberos version 5 (v5) protocol for authentication. If you use a smart card, the operating system uses Kerberos v5 authentication with X.509 v3 certificates.
 
-**Virtual smart cards** were introduced in Windows Server 2012 and Windows 8 to alleviate the need for a physical smart card, the smart card reader, and the associated administration of that hardware. For information about virtual smart card technology, see [Virtual Smart Card Overview](../virtual-smart-cards/virtual-smart-card-overview.md).
+**Virtual smart cards** were introduced in Windows Server 2012 and Windows 8 to alleviate the need for a physical smart card, the smart card reader, and the associated administration of that hardware.
+
+[!INCLUDE [virtual-smart-card-deprecation-notice](../../includes/virtual-smart-card-deprecation-notice.md)]
 
 ## In this technical reference
 

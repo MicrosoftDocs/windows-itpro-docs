@@ -1,27 +1,31 @@
 ---
-title: Access this computer from the network - security policy setting (Windows 10)
+title: Access this computer from the network - security policy setting 
 description: Describes the best practices, location, values, policy management, and security considerations for the Access this computer from the network security policy setting.
 ms.assetid: f6767bc2-83d1-45f1-847c-54f5362db022
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 06/11/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Access this computer from the network - security policy setting
 
 **Applies to**
--   Windows 10, Azure Stack HCI, Windows Server 2022, Windows Server 2019, Windows Server 2016
+-   Windows 11
+-   Windows 10
+-   Windows Server 2022
+-   Windows Server 2019
+-   Windows Server 2016
+-   Azure Stack HCI
 
 Describes the best practices, location, values, policy management, and security considerations for the **Access this computer from the network** security policy setting.
 
@@ -30,7 +34,7 @@ Describes the best practices, location, values, policy management, and security 
 
 ## Reference
 
-The **Access this computer from the network** policy setting determines which users can connect to the device from the network. This capability is required by a number of network protocols, including Server Message Block (SMB)-based protocols, NetBIOS, Common Internet File System (CIFS), and Component Object Model Plus (COM+).
+The **Access this computer from the network** policy setting determines which users can connect to the device from the network. This capability is required by many network protocols, including Server Message Block (SMB)-based protocols, NetBIOS, Common Internet File System (CIFS), and Component Object Model Plus (COM+).
 
 Users, devices, and service accounts gain or lose the **Access this computer from network** user right by being explicitly or implicitly added or removed from a security group that has been granted this user right. For example, a user account or a machine account may be explicitly added to a custom security group or a built-in security group, or it may be implicitly added by Windows to a computed security group such as Domain Users, Authenticated Users, or Enterprise Domain Controllers.
 By default, user accounts and machine accounts are granted the **Access this computer from network** user right when computed groups such as Authenticated Users, and for domain controllers, the Enterprise Domain Controllers group, are defined in the default domain controllers Group Policy Object (GPO).
@@ -47,7 +51,7 @@ Constant: SeNetworkLogonRight
 -   On desktop devices or member servers, grant this right only to users and administrators.
 -   On domain controllers, grant this right only to authenticated users, enterprise domain controllers, and administrators.
 -   On failover clusters, make sure this right is granted to authenticated users.
--   This setting includes the **Everyone** group to ensure backward compatibility. Upon Windows upgrade, after you have verified that all users and groups are correctly migrated, you should remove the **Everyone** group and use the **Authenticated Users** group instead.
+-   This setting includes the **Everyone** group to ensure backward compatibility. Upon Windows upgrade, after you've verified that all users and groups are correctly migrated, you should remove the **Everyone** group and use the **Authenticated Users** group instead.
 
 ### Location
 
@@ -68,13 +72,13 @@ The following table lists the actual and effective default policy values for the
  
 ## Policy management
 
-When modifying this user right, the following actions might cause users and services to experience network access issues:
+When you modify this user right, the following actions might cause users and services to experience network access issues:
 
 -   Removing the Enterprise Domain Controllers security group
 -   Removing the Authenticated Users group or an explicit group that allows users, computers, and service accounts the user right to connect to computers over the network
 -   Removing all user and machine accounts
 
-A restart of the device is not required for this policy setting to be effective.
+A restart of the device isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 
@@ -95,20 +99,20 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-Users who can connect from their device to the network can access resources on target devices for which they have permission. For example, the **Access this computer from the network** user right is required for users to connect to shared printers and folders. If this user right is assigned to the **Everyone** group, anyone in the group can read the files in those shared folders. This situation is unlikely because the groups created by a default installation of at least Windows Server 2008 R2 or Windows 7 do not include the **Everyone** group. However, if a device is upgraded and the original device includes the **Everyone** group as part of its defined users and groups, that group is transitioned as part of the upgrade process and is present on the device.
+Users who can connect from their device to the network can access resources on target devices for which they have permission. For example, the **Access this computer from the network** user right is required for users to connect to shared printers and folders. If this user right is assigned to the **Everyone** group, anyone in the group can read the files in those shared folders. This situation is unlikely because the groups created by a default installation of at least Windows Server 2008 R2 or Windows 7 don't include the **Everyone** group. However, if a device is upgraded and the original device includes the **Everyone** group as part of its defined users and groups, that group is transitioned as part of the upgrade process and is present on the device.
 
 ### Countermeasure
 
-Restrict the **Access this computer from the network** user right to only those users and groups who require access to the computer. For example, if you configure this policy setting to the **Administrators** and **Users** groups, users who log on to the domain can access resources that are shared 
+Restrict the **Access this computer from the network** user right to only those users and groups who require access to the computer. For example, if you configure this policy setting to the **Administrators** and **Users** groups, users who sign in to the domain can access resources that are shared 
 from servers in the domain if members of the **Domain Users** group are included in the local **Users** group.
 
 > **Note**  If you are using IPsec to help secure network communications in your organization, ensure that a group that includes machine accounts is given this right. This right is required for successful computer authentication. Assigning this right to **Authenticated Users** or **Domain Computers** meets this requirement.
  
 ### Potential impact
 
-If you remove the **Access this computer from the network** user right on domain controllers for all users, no one can log on to the domain or use network resources. If you remove this user right on member servers, users cannot connect to those servers through the network. If you have installed optional components such as ASP.NET or Internet Information Services (IIS), you may need to assign this user right to additional accounts that are required by those components. It is important to verify that authorized users are assigned this user right for the devices that they need to access the network.
+If you remove the **Access this computer from the network** user right on domain controllers for all users, no one can sign in to the domain or use network resources. If you remove this user right on member servers, users can't connect to those servers through the network. If you have installed optional components such as ASP.NET or Internet Information Services (IIS), you may need to assign this user right to other accounts that are required by those components. It's important to verify that authorized users are assigned this user right for the devices that they need to access the network.
 
-If running Windows Server or Azure Stack HCI Failover Clustering, do not remove Authenticated Users from the Access this computer from the network policy setting. Doing so may induce an unexpected production outage. This is due to the local user account CLIUSR that is used to run the cluster service. CLIUSR is not a member of the local Administrators group and if the Authenticated Users group is removed, the cluster service will not have sufficient rights to function or start properly.
+If running Windows Server or Azure Stack HCI Failover Clustering, don't remove Authenticated Users from the Access this computer from the network policy setting. Doing so may induce an unexpected production outage. This outage is due to the local user account CLIUSR that is used to run the cluster service. CLIUSR isn't a member of the local Administrators group and if the Authenticated Users group is removed, the cluster service won't have sufficient rights to function or start properly.
 
 ## Related topics
 [User Rights Assignment](user-rights-assignment.md)

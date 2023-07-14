@@ -1,156 +1,167 @@
 ---
-title: Policy CSP - ADMX_DCOM
-description: Policy CSP - ADMX_DCOM
-ms.author: dansimp
+title: ADMX_DCOM Policy CSP
+description: Learn more about the ADMX_DCOM Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 06/02/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nimishasatapathy
-ms.date: 09/08/2021
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_DCOM-Begin -->
 # Policy CSP - ADMX_DCOM
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<hr/>
+<!-- ADMX_DCOM-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_DCOM-Editable-End -->
 
-<!--Policies-->
-## ADMX_DCOM policies  
+<!-- DCOMActivationSecurityCheckAllowLocalList-Begin -->
+## DCOMActivationSecurityCheckAllowLocalList
 
-<dl>
-  <dd>
-    <a href="#admx-dcom-dcomactivationsecuritycheckallowlocallist">ADMX_DCOM/DCOMActivationSecurityCheckAllowLocalList</a>
-  </dd>
-  <dd>
-    <a href="#admx-dcom-dcomactivationsecuritycheckexemptionlist">ADMX_DCOM/DCOMActivationSecurityCheckExemptionList</a>
-  </dd>
-</dl>
+<!-- DCOMActivationSecurityCheckAllowLocalList-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DCOMActivationSecurityCheckAllowLocalList-Applicability-End -->
 
+<!-- DCOMActivationSecurityCheckAllowLocalList-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_DCOM/DCOMActivationSecurityCheckAllowLocalList
+```
+<!-- DCOMActivationSecurityCheckAllowLocalList-OmaUri-End -->
 
-<hr/>
+<!-- DCOMActivationSecurityCheckAllowLocalList-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Allows you to specify that local computer administrators can supplement the "Define Activation Security Check exemptions" list.
 
-<!--Policy-->
-<a href="" id="admx-dcom-dcomactivationsecuritycheckallowlocallist"></a>**ADMX_DCOM/DCOMActivationSecurityCheckAllowLocalList**  
+- If you enable this policy setting, and DCOM doesn't find an explicit entry for a DCOM server application id (appid) in the "Define Activation Security Check exemptions" policy (if enabled), DCOM will look for an entry in the locally configured list.
 
-<!--SupportedSKUs-->
+- If you disable this policy setting, DCOM won't look in the locally configured DCOM activation security check exemption list.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you don't configure this policy setting, DCOM will only look in the locally configured exemption list if the "Define Activation Security Check exemptions" policy isn't configured.
+<!-- DCOMActivationSecurityCheckAllowLocalList-Description-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DCOMActivationSecurityCheckAllowLocalList-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+**NOTE** This policy setting applies to all sites in Trusted zones.
+<!-- DCOMActivationSecurityCheckAllowLocalList-Editable-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DCOMActivationSecurityCheckAllowLocalList-DFProperties-Begin -->
+**Description framework properties**:
 
-> [!div class = "checklist"]
-> * Device
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DCOMActivationSecurityCheckAllowLocalList-DFProperties-End -->
 
-<hr/>
+<!-- DCOMActivationSecurityCheckAllowLocalList-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to specify that local computer administrators can supplement the "Define Activation Security Check exemptions" list.
-  
-- If you enable this policy setting, and DCOM does not find an explicit entry for a DCOM server application ID (appid) in the "Define Activation Security Check exemptions" policy (if enabled). Then DCOM will look for an entry in the locally configured list.
+**ADMX mapping**:
 
-- If you disable this policy setting, DCOM will not look in the locally configured DCOM activation security check exemption list.  
-If you do not configure this policy setting, DCOM will only look in the locally configured exemption list if the "Define Activation Security Check exemptions" policy is not configured.
+| Name | Value |
+|:--|:--|
+| Name | DCOMActivationSecurityCheckAllowLocalList |
+| Friendly Name | Allow local activation security check exemptions |
+| Location | Computer Configuration |
+| Path | System > Distributed COM > Application Compatibility Settings |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\DCOM\AppCompat |
+| Registry Value Name | AllowLocalActivationSecurityCheckExemptionList |
+| ADMX File Name | DCOM.admx |
+<!-- DCOMActivationSecurityCheckAllowLocalList-AdmxBacked-End -->
 
+<!-- DCOMActivationSecurityCheckAllowLocalList-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DCOMActivationSecurityCheckAllowLocalList-Examples-End -->
+
+<!-- DCOMActivationSecurityCheckAllowLocalList-End -->
+
+<!-- DCOMActivationSecurityCheckExemptionList-Begin -->
+## DCOMActivationSecurityCheckExemptionList
+
+<!-- DCOMActivationSecurityCheckExemptionList-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DCOMActivationSecurityCheckExemptionList-Applicability-End -->
+
+<!-- DCOMActivationSecurityCheckExemptionList-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_DCOM/DCOMActivationSecurityCheckExemptionList
+```
+<!-- DCOMActivationSecurityCheckExemptionList-OmaUri-End -->
+
+<!-- DCOMActivationSecurityCheckExemptionList-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Allows you to view and change a list of DCOM server application ids (appids) which are exempted from the DCOM Activation security check. DCOM uses two such lists, one configured via Group Policy through this policy setting, and the other via the actions of local computer administrators. DCOM ignores the second list when this policy setting is configured, unless the "Allow local activation security check exemptions" policy is enabled.
+
+DCOM server appids added to this policy must be listed in curly-brace format. For Example: `{b5dcb061-cefb-42e0-a1be-e6a6438133fe}`. If you enter a non-existent or improperly formatted appid DCOM will add it to the list without checking for errors.
+
+- If you enable this policy setting, you can view and change the list of DCOM activation security check exemptions defined by Group Policy settings. If you add an appid to this list and set its value to 1, DCOM won't enforce the Activation security check for that DCOM server. If you add an appid to this list and set its value to 0 DCOM will always enforce the Activation security check for that DCOM server regardless of local settings.
+
+- If you disable this policy setting, the appid exemption list defined by Group Policy is deleted, and the one defined by local computer administrators is used.
+
+- If you don't configure this policy setting, the appid exemption list defined by local computer administrators is used.
+
+> [!NOTE]
+> The DCOM Activation security check is done after a DCOM server process is started, but before an object activation request is dispatched to the server process. This access check is done against the DCOM server's custom launch permission security descriptor if it exists, or otherwise against the configured defaults.
+
+If the DCOM server's custom launch permission contains explicit DENY entries this may mean that object activations that would've previously succeeded for such specified users, once the DCOM server process was up and running, might now fail instead. The proper action in this situation is to re-configure the DCOM server's custom launch permission settings for correct security settings, but this policy setting may be used in the short-term as an application compatibility deployment aid.
+
+DCOM servers added to this exemption list are only exempted if their custom launch permissions don't contain specific LocalLaunch, RemoteLaunch, LocalActivate, or RemoteActivate grant or deny entries for any users or groups. Also note, exemptions for DCOM Server Appids added to this list will apply to both 32-bit and 64-bit versions of the server if present.
+<!-- DCOMActivationSecurityCheckExemptionList-Description-End -->
+
+<!-- DCOMActivationSecurityCheckExemptionList-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > This policy setting applies to all sites in Trusted zones.
+<!-- DCOMActivationSecurityCheckExemptionList-Editable-End -->
 
-<!--/Description-->
+<!-- DCOMActivationSecurityCheckExemptionList-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow local activation security check exemptions*
--   GP name: *DCOMActivationSecurityCheckAllowLocalList*
--   GP path: *Windows Components\AppCompat!AllowLocalActivationSecurityCheckExemptionList*
--   GP ADMX file name: *DCOM.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DCOMActivationSecurityCheckExemptionList-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DCOMActivationSecurityCheckExemptionList-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-dcom-dcomactivationsecuritycheckexemptionlist"></a>**ADMX_DCOM/DCOMActivationSecurityCheckExemptionList**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DCOMActivationSecurityCheckExemptionList |
+| Friendly Name | Define Activation Security Check exemptions |
+| Location | Computer Configuration |
+| Path | System > Distributed COM > Application Compatibility Settings |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\DCOM\AppCompat |
+| Registry Value Name | ListBox_Support_ActivationSecurityCheckExemptionList |
+| ADMX File Name | DCOM.admx |
+<!-- DCOMActivationSecurityCheckExemptionList-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DCOMActivationSecurityCheckExemptionList-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DCOMActivationSecurityCheckExemptionList-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DCOMActivationSecurityCheckExemptionList-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ADMX_DCOM-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_DCOM-CspMoreInfo-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ADMX_DCOM-End -->
 
-<hr/>
+## Related articles
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to view and change a list of DCOM server application IDs (app ids), which are exempted from the DCOM Activation security check.  
-DCOM uses two such lists, one configured via Group Policy through this policy setting, and the other via the actions of local computer administrators.  
-DCOM ignores the second list when this policy setting is configured, unless the "Allow local activation security check exemptions" policy is enabled. 
-DCOM server application IDs added to this policy must be listed in curly brace format.
-
-For example, `{b5dcb061-cefb-42e0-a1be-e6a6438133fe}`.
-If you enter a non-existent or improperly formatted application ID DCOM will add it to the list without checking for errors.  
-- If you enable this policy setting, you can view and change the list of DCOM activation security check exemptions defined by Group Policy settings. 
-
-If you add an application ID to this list and set its value to one, DCOM will not enforce the Activation security check for that DCOM server.   
-If you add an application ID to this list and set its value to zero DCOM will always enforce the Activation security check for that DCOM server regardless of local 
-settings.  
-- If you disable this policy setting, the application ID exemption list defined by Group Policy is deleted, and the one defined by local computer administrators is used.  
-
-If you do not configure this policy setting, the application ID exemption list defined by local computer administrators is used.  Notes:  The DCOM Activation security check is done after a DCOM server process is started, but before an object activation request is dispatched to the server process.   
-This access check is done against the DCOM server's custom launch permission security descriptor if it exists, or otherwise against the configured defaults.  If the DCOM server's custom launch permission contains explicit DENY entries this may mean that object activations that would have previously succeeded for such specified users, once the DCOM server process was up and running, might now fail instead.  
-
-The proper action in this situation is to reconfigure the DCOM server's custom launch permission settings for correct security settings, but this policy setting may be used in the short term as an application compatibility deployment aid.  
-DCOM servers added to this exemption list are only exempted if their custom launch permissions do not contain specific LocalLaunch, RemoteLaunch, LocalActivate, or RemoteActivate grant or deny entries for any users or groups.  
-
-> [!NOTE]
-> Exemptions for DCOM Server Application IDs added to this list will apply to both 32-bit and 64-bit versions of the server if present.
-> 
-> [!NOTE]
-> This policy setting applies to all sites in Trusted zones.
-
-<!--/Description-->
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow local activation security check exemptions*
--   GP name: *DCOMActivationSecurityCheckExemptionList*
--   GP path: *Windows Components\AppCompat!ListBox_Support_ActivationSecurityCheckExemptionList*
--   GP ADMX file name: *DCOM.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--/Policies-->
-
+[Policy configuration service provider](policy-configuration-service-provider.md)

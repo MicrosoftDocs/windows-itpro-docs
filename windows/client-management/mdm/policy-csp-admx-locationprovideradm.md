@@ -1,88 +1,94 @@
 ---
-title: Policy CSP - ADMX_LocationProviderAdm
-description: Policy CSP - ADMX_LocationProviderAdm
-ms.author: dansimp
+title: ADMX_LocationProviderAdm Policy CSP
+description: Learn more about the ADMX_LocationProviderAdm Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nimishasatapathy
-ms.date: 09/20/2021
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_LocationProviderAdm-Begin -->
 # Policy CSP - ADMX_LocationProviderAdm
+
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
+
+<!-- ADMX_LocationProviderAdm-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
+> Some information relates to pre-released products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
+<!-- ADMX_LocationProviderAdm-Editable-End -->
 
-<hr/>
+<!-- DisableWindowsLocationProvider_1-Begin -->
+## DisableWindowsLocationProvider_1
 
-<!--Policies-->
-## ADMX_LocationProviderAdm policies  
+<!-- DisableWindowsLocationProvider_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableWindowsLocationProvider_1-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-locationprovideradm-disablewindowslocationprovider_1">ADMX_LocationProviderAdm/DisableWindowsLocationProvider_1</a>
-  </dd>
-</dl>
+<!-- DisableWindowsLocationProvider_1-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_LocationProviderAdm/DisableWindowsLocationProvider_1
+```
+<!-- DisableWindowsLocationProvider_1-OmaUri-End -->
 
+<!-- DisableWindowsLocationProvider_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns off the Windows Location Provider feature for this computer.
 
-<hr/>
+- If you enable this policy setting, the Windows Location Provider feature will be turned off, and all programs on this computer won't be able to use the Windows Location Provider feature.
 
-<!--Policy-->
-<a href="" id="admx-locationprovideradm-disablewindowslocationprovider_1"></a>**ADMX_LocationProviderAdm/DisableWindowsLocationProvider_1**  
+- If you disable or don't configure this policy setting, all programs on this computer can use the Windows Location Provider feature.
+<!-- DisableWindowsLocationProvider_1-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- DisableWindowsLocationProvider_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableWindowsLocationProvider_1-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableWindowsLocationProvider_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableWindowsLocationProvider_1-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableWindowsLocationProvider_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-> [!div class = "checklist"]
-> * Machine
+**ADMX mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DisableWindowsLocationProvider_1 |
+| Friendly Name | Turn off Windows Location Provider |
+| Location | Computer Configuration |
+| Path | Windows Components > Location and Sensors > Windows Location Provider |
+| Registry Key Name | Software\Policies\Microsoft\Windows\LocationAndSensors |
+| Registry Value Name | DisableWindowsLocationProvider |
+| ADMX File Name | LocationProviderAdm.admx |
+<!-- DisableWindowsLocationProvider_1-AdmxBacked-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting turns off the Windows Location Provider feature for this computer.  
+<!-- DisableWindowsLocationProvider_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableWindowsLocationProvider_1-Examples-End -->
 
-- If you enable this policy setting, the Windows Location Provider feature will be turned off, and all programs on this computer will not be able to use the Windows Location Provider feature.  
+<!-- DisableWindowsLocationProvider_1-End -->
 
-- If you disable or do not configure this policy setting, all programs on this computer can use the Windows Location Provider feature.
+<!-- ADMX_LocationProviderAdm-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_LocationProviderAdm-CspMoreInfo-End -->
 
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+<!-- ADMX_LocationProviderAdm-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off Windows Location Provider*
--   GP name: *DisableWindowsLocationProvider_1*
--   GP path: *Windows Components\Location and Sensors\Windows Location Provider*
--   GP ADMX file name: *LocationProviderAdm.admx*
+## Related articles
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-> [!NOTE]
-> These policies are currently only available as part of a Windows Insider release.
-
-<!--/Policies-->
-
+[Policy configuration service provider](policy-configuration-service-provider.md)

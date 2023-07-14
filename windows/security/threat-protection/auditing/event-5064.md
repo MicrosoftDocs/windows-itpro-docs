@@ -1,23 +1,24 @@
 ---
-title: 5064(S, F) A cryptographic context operation was attempted. (Windows 10)
+title: 5064(S, F) A cryptographic context operation was attempted. 
 description: Describes security event 5064(S, F) A cryptographic context operation was attempted.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5064(S, F): A cryptographic context operation was attempted.
 
 
-This event generates in [BCryptCreateContext](/windows/win32/api/bcrypt/nf-bcrypt-bcryptcreatecontext)() and [BCryptDeleteContext](/windows/win32/api/bcrypt/nf-bcrypt-bcryptdeletecontext)() functions. These are Cryptographic Next Generation (CNG) functions.
+This event generates in [BCryptCreateContext](/windows/win32/api/bcrypt/nf-bcrypt-bcryptcreatecontext)() and [BCryptDeleteContext](/windows/win32/api/bcrypt/nf-bcrypt-bcryptdeletecontext)() functions. These functions are Cryptographic Next Generation (CNG) functions.
 
 This event generates when cryptographic context was created or deleted.
 
@@ -25,13 +26,11 @@ For more information about Cryptographic Next Generation (CNG) visit these pages
 
 -   <https://msdn.microsoft.com/library/windows/desktop/aa376214(v=vs.85).aspx>
 
--   <https://www.microsoft.com/download/details.aspx?id=1251>
-
 -   <https://www.microsoft.com/download/details.aspx?id=30688>
 
-This event is mainly used for Cryptographic Next Generation (CNG) troubleshooting.
+This event is used for Cryptographic Next Generation (CNG) troubleshooting.
 
-There is no example of this event in this document.
+There's no example of this event in this document.
 
 ***Subcategory:***&nbsp;[Audit Other Policy Change Events](audit-other-policy-change-events.md)
 

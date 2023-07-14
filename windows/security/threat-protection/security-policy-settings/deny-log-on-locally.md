@@ -1,26 +1,26 @@
 ---
-title: Deny log on locally (Windows 10)
+title: Deny log on locally 
 description: Describes the best practices, location, values, policy management, and security considerations for the Deny log on locally security policy setting.
 ms.assetid: 00150e88-ec9c-43e1-a70d-33bfe10434db
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Deny log on locally
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Deny log on locally** security policy setting.
@@ -62,11 +62,11 @@ The following table lists the actual and effective default policy values for the
 
 This section describes features, tools, and guidance to help you manage this policy.
 
-A restart of the device is not required for this policy setting to be effective.
+A restart of the device isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 
-If you apply this policy setting to the Everyone group, no one will be able to log on locally.
+If you apply this policy setting to the Everyone group, no one will be able to sign in locally.
 
 ### Group Policy
 
@@ -87,15 +87,15 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-Any account with the ability to log on locally could be used to log on at the console of the device. If this user right is not restricted to legitimate users who must log on to the console of the device, unauthorized users might download and run malicious software that elevates their user rights.
+Any account with the ability to sign in locally could be used to sign in at the console of the device. If this user right isn't restricted to legitimate users who must sign in to the console of the device, unauthorized users might download and run malicious software that elevates their user rights.
 
 ### Countermeasure
 
-Assign the **Deny log on locally** user right to the local Guest account. If you have installed optional components such as ASP.NET, you may want to assign this user right to additional accounts that are required by those components.
+Assign the **Deny log on locally** user right to the local Guest account. If you have installed optional components such as ASP.NET, you may want to assign this user right to other accounts that are required by those components.
 
 ### Potential impact
 
-If you assign the **Deny log on locally** user right to additional accounts, you could limit the abilities of users who are assigned to specific roles in your environment. However, this user right should explicitly be assigned to the ASPNET account on device that are configured with the Web Server role. You should confirm that delegated activities are not adversely affected.
+If you assign the **Deny log on locally** user right to other accounts, you could limit the abilities of users who are assigned to specific roles in your environment. However, this user right should explicitly be assigned to the ASPNET account on devices that are configured with the Web Server role. You should confirm that delegated activities aren't adversely affected.
 
 ## Related topics
 

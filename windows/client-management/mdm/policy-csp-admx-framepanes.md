@@ -1,134 +1,155 @@
 ---
-title: Policy CSP - ADMX_FramePanes
-description: Policy CSP - ADMX_FramePanes
-ms.author: dansimp
+title: ADMX_FramePanes Policy CSP
+description: Learn more about the ADMX_FramePanes Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nimishasatapathy
-ms.date: 09/14/2021
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_FramePanes-Begin -->
 # Policy CSP - ADMX_FramePanes
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ADMX_FramePanes policies  
+<!-- ADMX_FramePanes-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_FramePanes-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-framepanes-noreadingpane">ADMX_FramePanes/NoReadingPane</a>
-  </dd>
-  <dd>
-    <a href="#admx-framepanes-nopreviewpane">ADMX_FramePanes/NoPreviewPane</a>
-  </dd>  
-</dl>
+<!-- NoPreviewPane-Begin -->
+## NoPreviewPane
 
+<!-- NoPreviewPane-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoPreviewPane-Applicability-End -->
 
-<hr/>
+<!-- NoPreviewPane-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_FramePanes/NoPreviewPane
+```
+<!-- NoPreviewPane-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-framepanes-noreadingpane"></a>**ADMX_FramePanes/NoReadingPane**  
+<!-- NoPreviewPane-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting shows or hides the Details Pane in File Explorer.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+If you enable this policy setting and configure it to hide the pane, the Details Pane in File Explorer is hidden and can't be turned on by the user.
 
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting shows or hides the Details Pane in File Explorer.  
-
-- If you enable this policy setting and configure it to hide the pane, the Details Pane in File Explorer is hidden and cannot be turned on by the user.  
-
-- If you enable this policy setting and configure it to show the pane, the Details Pane is always visible and cannot be hidden by the user. 
+If you enable this policy setting and configure it to show the pane, the Details Pane is always visible and can't be hidden by the user.
 
 > [!NOTE]
-> This has a side effect of not being able to toggle to the Preview Pane since the two cannot be displayed at the same time.  
+> This has a side effect of not being able to toggle to the Preview Pane since the two can't be displayed at the same time.
 
-- If you disable, or do not configure this policy setting, the Details Pane is hidden by default and can be displayed by the user. 
+If you disable, or don't configure this policy setting, the Details Pane is hidden by default and can be displayed by the user. This is the default policy setting.
+<!-- NoPreviewPane-Description-End -->
 
-This is the default policy setting.
+<!-- NoPreviewPane-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoPreviewPane-Editable-End -->
 
-<!--/Description--> 
+<!-- NoPreviewPane-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn on or off details pane*
--   GP name: *NoReadingPane*
--   GP path: *Windows Components\File Explorer\Explorer Frame Pane*
--   GP ADMX file name: *FramePanes.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoPreviewPane-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NoPreviewPane-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-framepanes-nopreviewpane"></a>**ADMX_FramePanes/NoPreviewPane**  
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | NoPreviewPane |
+| Friendly Name | Turn on or off details pane |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer > Explorer Frame Pane |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| ADMX File Name | FramePanes.admx |
+<!-- NoPreviewPane-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NoPreviewPane-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoPreviewPane-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoPreviewPane-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoReadingPane-Begin -->
+## NoReadingPane
 
-> [!div class = "checklist"]
-> * User
+<!-- NoReadingPane-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoReadingPane-Applicability-End -->
 
-<hr/>
+<!-- NoReadingPane-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_FramePanes/NoReadingPane
+```
+<!-- NoReadingPane-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-Hides the Preview Pane in File Explorer.  
+<!-- NoReadingPane-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Hides the Preview Pane in File Explorer.
 
-- If you enable this policy setting, the Preview Pane in File Explorer is hidden and cannot be turned on by the user.  
+If you enable this policy setting, the Preview Pane in File Explorer is hidden and can't be turned on by the user.
 
-- If you disable, or do not configure this setting, the Preview Pane is hidden by default and can be displayed by the user.
+If you disable, or don't configure this setting, the Preview Pane is hidden by default and can be displayed by the user.
+<!-- NoReadingPane-Description-End -->
 
-<!--/Description-->
+<!-- NoReadingPane-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoReadingPane-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off Preview Pane*
--   GP name: *NoPreviewPane*
--   GP path: *Windows Components\File Explorer\Explorer Frame Pane*
--   GP ADMX file name: *FramePanes.admx*
+<!-- NoReadingPane-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoReadingPane-DFProperties-End -->
 
-<!--/Policies-->
+<!-- NoReadingPane-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | NoReadingPane |
+| Friendly Name | Turn off Preview Pane |
+| Location | User Configuration |
+| Path | WindowsComponents > File Explorer > Explorer Frame Pane |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | NoReadingPane |
+| ADMX File Name | FramePanes.admx |
+<!-- NoReadingPane-AdmxBacked-End -->
+
+<!-- NoReadingPane-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoReadingPane-Examples-End -->
+
+<!-- NoReadingPane-End -->
+
+<!-- ADMX_FramePanes-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_FramePanes-CspMoreInfo-End -->
+
+<!-- ADMX_FramePanes-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

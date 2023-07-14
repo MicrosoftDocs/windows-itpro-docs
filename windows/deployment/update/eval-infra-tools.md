@@ -1,16 +1,14 @@
 ---
 title: Evaluate infrastructure and tools
-manager: laurawi
 description: Steps to make sure your infrastructure is ready to deploy updates
-keywords: updates, servicing, current, deployment, General Availability Channel, feature, quality, rings, insider, tools
-ms.prod: w10
-ms.mktglfcycl: manage
-audience: itpro
-author: jaimeo
+ms.prod: windows-client
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: medium
-ms.audience: itpro
 ms.topic: article
-ms.collection: m365initiative-coredeploy
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Evaluate infrastructure and tools
@@ -47,7 +45,7 @@ Keep security baselines current to help ensure that your environment is secure a
 
 There are a number of Windows policies (set by Group Policy, Intune, or other methods) that affect when Windows updates are installed, deferral, end-user experience, and many other aspects. Check these policies to make sure they are set appropriately.
 
-- **Windows Administrative templates**: Each Windows client feature update has a supporting Administrative template (.admx) file. Group Policy tools use Administrative template files to populate policy settings in the user interface. The templates are available in the Download Center, for example, this one for [Windows 10, version 1909](https://www.microsoft.com/download/100591).
+- **Windows Administrative templates**: Each Windows client feature update has a supporting Administrative template (.admx) file. Group Policy tools use Administrative template files to populate policy settings in the user interface. The templates are available in the Download Center, for example, this one for [Windows 11, version 22H2](https://www.microsoft.com/download/details.aspx?id=104593).
 - **Policies for update compliance and end-user experience**: A number of settings affect when a device installs updates, whether and for how long a user can defer an update, restart behavior after installation, and many other aspects of update behavior. It's especially important to look for existing policies that are out of date or could conflict with new ones. 
 
 

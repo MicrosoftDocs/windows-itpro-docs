@@ -1,26 +1,26 @@
 ---
-title: Recovery console Allow floppy copy and access to all drives and folders (Windows 10)
+title: Recovery console Allow floppy copy and access to all drives and folders 
 description: Best practices, security considerations, and more for the policy setting, Recovery console Allow floppy copy and access to all drives and folders.
 ms.assetid: a5b4ac0c-f33d-42b5-a866-72afa7cbd0bd
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Recovery console: Allow floppy copy and access to all drives and folders
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Recovery console: Allow floppy copy and access to all drives and folders** security policy setting.
@@ -34,7 +34,7 @@ This policy setting enables or disables the Recovery Console SET command, which 
 -   **AllowRemovableMedia**. Allows files to be copied to removable media, such as a floppy disk.
 -   **NoCopyPrompt**. Suppresses the prompt that typically displays before an existing file is overwritten.
 
-You might forget to remove removable media, such as CD or floppy disk, with sensitive data or applications that a malicious user could then steal. Or you could accidentally leave a startup disk in the computer after using the Recovery Console. If the device is restarted for any reason and the BIOS has been configured to boot from the removable media before the hard disk drive, the server will start from the removable disk. This causes the server's network services to be unavailable.
+You might forget to remove removable media, such as CD or floppy disk, with sensitive data or applications that a malicious user could then steal. Or you could accidentally leave a startup disk in the computer after using the Recovery Console. If the device is restarted for any reason and the BIOS has been configured to boot from the removable media before the hard disk drive, the server will start from the removable disk. This boot causes the server's network services to be unavailable.
 
 ### Possible values
 
@@ -44,7 +44,7 @@ You might forget to remove removable media, such as CD or floppy disk, with sens
 
 ### Best practices
 
--   Set **Recovery Console: Allow floppy copy and access to drives and folders** to **Disabled**. Users who have started a server by using the Recovery Console and logged in with the built-in Administrator account will not be able to copy files and folders to a floppy disk.
+-   Set **Recovery Console: Allow floppy copy and access to drives and folders** to **Disabled**. Users who have started a server by using the Recovery Console and logged in with the built-in Administrator account won't be able to copy files and folders to a floppy disk.
 
 ### Location
 
@@ -69,7 +69,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ### Group Policy
 
@@ -86,7 +86,7 @@ Enabling this security option makes the Recovery Console SET command available, 
 -   AllowWildCards: Enable wildcard support for some commands (such as the DEL command).
 -   AllowAllPaths: Allow access to all files and folders on the device.
 -   AllowRemovableMedia: Allow files to be copied to removable media, such as a floppy disk.
--   NoCopyPrompt: Do not prompt when overwriting an existing file.
+-   NoCopyPrompt: Don't prompt when overwriting an existing file.
 
 ## Security considerations
 
@@ -102,7 +102,7 @@ Disable the **Recovery console: Allow floppy copy and access to drives and folde
 
 ### Potential impact
 
-Users who have started a server through the Recovery Console and logged in with the built-in Administrator account cannot copy files and folders to a floppy disk.
+Users who have started a server through the Recovery Console and logged in with the built-in Administrator account can't copy files and folders to a floppy disk.
 
 ## Related topics
 

@@ -1,19 +1,17 @@
 ---
 title: SetupDiag
-manager: dougeby
-ms.author: greglin
 description: SetupDiag works by examining Windows Setup log files. This article shows how to use the SetupDiag tool to diagnose Windows Setup errors.
-keywords: deploy, troubleshoot, windows, 10, upgrade, update, setup, diagnose
-ms.custom: seo-marvel-apr2020
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: deploy
-audience: itpro
-author: greg-lindsay
+ms.prod: windows-client
+ms.technology: itpro-deploy
+author: frankroj
+manager: aaroncz
+ms.author: frankroj
 ms.localizationpriority: medium
-ms.topic: article
-ms.collection: highpri
+ms.topic: troubleshooting
+ms.collection:
+  - highpri
+  - tier2
+ms.date: 10/28/2022
 ---
 
 # SetupDiag
@@ -40,7 +38,7 @@ SetupDiag works by examining Windows Setup log files. It attempts to parse these
 
 With the release of Windows 10, version 2004, SetupDiag is included with [Windows Setup](/windows-hardware/manufacture/desktop/deployment-troubleshooting-and-log-files#windows-setup-scenario).
 
-During the upgrade process, Windows Setup will extract all its sources files to the **%SystemDrive%\$Windows.~bt\Sources** directory. With Windows 10, version 2004 and later, **setupdiag.exe** is also installed to this directory. If there is an issue with the upgrade, SetupDiag will automatically run to determine the cause of the failure.
+During the upgrade process, Windows Setup will extract all its sources files to the **%SystemDrive%\$Windows.~bt\Sources** directory. With Windows 10, version 2004 and later, **setupdiag.exe** is also installed to this directory. If there's an issue with the upgrade, SetupDiag will automatically run to determine the cause of the failure.
 
 When run by Windows Setup, the following [parameters](#parameters) are used:
 
@@ -49,7 +47,7 @@ When run by Windows Setup, the following [parameters](#parameters) are used:
 - /Output:%windir%\logs\SetupDiag\SetupDiagResults.xml
 - /RegPath:HKEY_LOCAL_MACHINE\SYSTEM\Setup\SetupDiag\Results
 
-The resulting SetupDiag analysis can be found at **%WinDir%\Logs\SetupDiag\SetupDiagResults.xml** and in the registry under **HKLM\SYSTEM\Setup\SetupDiag\Results**.  Please note that this is not the same as the default registry path when SetupDiag is run manually. When SetupDiag is run manually, and the /RegPath parameter is not specified, data is stored in the registry at HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag.
+The resulting SetupDiag analysis can be found at **%WinDir%\Logs\SetupDiag\SetupDiagResults.xml** and in the registry under **HKLM\SYSTEM\Setup\SetupDiag\Results**.  Note that the registry path isn't the same as the default registry path when SetupDiag is run manually. When SetupDiag is run manually, and the /RegPath parameter isn't specified, data is stored in the registry at HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag.
 
 > [!IMPORTANT]
 > When SetupDiag indicates that there were multiple failures, the last failure in the log file is typically the fatal error, not the first one.
@@ -63,8 +61,8 @@ To quickly use SetupDiag on your current computer:
 2. [Download SetupDiag](https://go.microsoft.com/fwlink/?linkid=870142).
 3. If your web browser asks what to do with the file, choose **Save**. By default, the file will be saved to your **Downloads** folder. You can also save it to a different location if desired by using **Save As**.
 4. When SetupDiag has finished downloading, open the folder where you downloaded the file. By default, this folder is the **Downloads** folder, which is displayed in File Explorer under **Quick access** in the left navigation pane.
-5. Double-click the **SetupDiag** file to run it. Click **Yes** if you are asked to approve running the program.
-    - Double-clicking the file to run it will automatically close the command window when SetupDiag has completed its analysis. If you wish to keep this window open instead, and review the messages that you see, run the program by typing **SetupDiag** at the command prompt instead of double-clicking it. You will need to change directories to the location of SetupDiag to run it this way.
+5. Double-click the **SetupDiag** file to run it. Select **Yes** if you're asked to approve running the program.
+    - Double-clicking the file to run it will automatically close the command window when SetupDiag has completed its analysis. If you wish to keep this window open instead, and review the messages that you see, run the program by typing **SetupDiag** at the command prompt instead of double-clicking it. You'll need to change directories to the location of SetupDiag to run it this way.
 6. A command window will open while SetupDiag diagnoses your computer. Wait for this process to finish.
 7. When SetupDiag finishes, two files will be created in the same folder where you double-clicked SetupDiag. One is a configuration file, the other is a log file.
 8. Use Notepad to open the log file: **SetupDiagResults.log**.
@@ -72,12 +70,12 @@ To quickly use SetupDiag on your current computer:
 
 For instructions on how to run the tool in offline mode and with more advanced options, see the [Parameters](#parameters) and [Examples](#examples) sections below.
 
-The [Release notes](#release-notes) section at the bottom of this topic has information about recent updates to this tool. 
+The [Release notes](#release-notes) section at the bottom of this article has information about recent updates to this tool. 
 
 ## Requirements
 
 1. The destination OS must be Windows 10.
-2. [.NET Framework 4.6](https://www.microsoft.com/download/details.aspx?id=48137) must be installed. If you are not sure what version of .NET is currently installed, see [How to: Determine Which .NET Framework Versions Are Installed](/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed). You can also use the following command-line query to display the installed v4 versions:
+2. [.NET Framework 4.6](https://www.microsoft.com/download/details.aspx?id=48137) must be installed. If you aren't sure what version of .NET is currently installed, see [How to: Determine Which .NET Framework Versions Are Installed](/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed). You can also use the following command-line query to display the installed v4 versions:
 
     ```
     reg query "HKLM\SOFTWARE\Microsoft\Net Framework Setup\NDP\v4" /s
@@ -88,19 +86,19 @@ The [Release notes](#release-notes) section at the bottom of this topic has info
 | Parameter | Description |
 | --- | --- |
 | /? | <ul><li>Displays interactive help</ul> |
-| /Output:\<path to results file\> | <ul><li>This optional parameter enables you to specify the output file for results. This file is where you will find what SetupDiag was able to determine.  Only text format output is supported.  UNC paths will work, provided the context under which SetupDiag runs has access to the UNC path.  If the path has a space in it, you must enclose the entire path in double quotes (see the example section below). <li>Default: If not specified, SetupDiag will create the file **SetupDiagResults.log** in the same  directory where SetupDiag.exe is run.</ul> |
+| /Output:\<path to results file\> | <ul><li>This optional parameter enables you to specify the output file for results. This file is where you'll find what SetupDiag was able to determine.  Only text format output is supported.  UNC paths will work, provided the context under which SetupDiag runs has access to the UNC path.  If the path has a space in it, you must enclose the entire path in double quotes (see the example section below). <li>Default: If not specified, SetupDiag will create the file **SetupDiagResults.log** in the same  directory where SetupDiag.exe is run.</ul> |
 | /LogsPath:\<Path to logs\> | <ul><li>This optional parameter tells SetupDiag.exe where to find the log files for an offline analysis. These log files can be in a flat folder format, or containing multiple subdirectories.  SetupDiag will recursively search all child directories.</ul> |
 | /ZipLogs:\<True \| False\> | <ul><li>This optional parameter tells SetupDiag.exe to create a zip file containing the results and all the log files it parsed.  The zip file is created in the same directory where SetupDiag.exe is run.<li>Default: If not specified, a value of 'true' is used.</ul> |
-| /Format:\<xml \| json\> | <ul><li>This optional parameter can be used to output log files in xml or JSON format.  If this parameter is not specified, text format is used by default.</ul> |
+| /Format:\<xml \| json\> | <ul><li>This optional parameter can be used to output log files in xml or JSON format.  If this parameter isn't specified, text format is used by default.</ul> |
 | /Scenario:\[Recovery\] | <ul><li>This optional parameter instructs SetupDiag.exe to look for and process reset and recovery logs and ignore setup/upgrade logs.</ul>|
 | /Verbose | <ul><li>This optional parameter will output much more data to a log file.  By default, SetupDiag will only produce a log file entry for serious errors.  Using **/Verbose** will cause SetupDiag to always produce another log file with debugging details. These details can be useful when reporting a problem with SetupDiag.</ul> |
 | /NoTel | <ul><li>This optional parameter tells SetupDiag.exe not to send diagnostic telemetry to Microsoft.</ul> |
 | /AddReg | <ul><li>This optional parameter instructs SetupDiag.exe to add failure information to the registry in offline mode. By default, SetupDiag will add failure information to the registry in online mode only. Registry data is added to the following location on the system where SetupDiag is run: **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**.</ul> |
-| /RegPath | <ul><li>This optional parameter instructs SetupDiag.exe to add failure information to the registry using the specified path. If this parameter is not specified the default path is **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**.
+| /RegPath | <ul><li>This optional parameter instructs SetupDiag.exe to add failure information to the registry using the specified path. If this parameter isn't specified the default path is **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**.
 </ul> |
 
 Note: The **/Mode** parameter is deprecated in version 1.4.0.0 of SetupDiag. 
-- In previous versions, this command was used with the LogsPath parameter to specify that SetupDiag should run in an offline manner to analyze a set of log files that were captured from a different computer. In version 1.4.0.0, when you specify /LogsPath then SetupDiag will automatically run in offline mode, therefore the /Mode parameter is not needed.
+- In previous versions, this command was used with the LogsPath parameter to specify that SetupDiag should run in an offline manner to analyze a set of log files that were captured from a different computer. In version 1.4.0.0, when you specify /LogsPath then SetupDiag will automatically run in offline mode, therefore the /Mode parameter isn't needed.
 
 ### Examples:
 
@@ -110,7 +108,7 @@ In the following example, SetupDiag is run with default parameters (online mode,
 SetupDiag.exe
 ```
 
-In the following example, SetupDiag is run in online mode (this mode is the default).  It will know where to look for logs on the current (failing) system, so there is no need to gather logs ahead of time. A custom location for results is specified.
+In the following example, SetupDiag is run in online mode (this mode is the default).  It will know where to look for logs on the current (failing) system, so there's no need to gather logs ahead of time. A custom location for results is specified.
 
 ```
 SetupDiag.exe /Output:C:\SetupDiag\Results.log
@@ -154,12 +152,12 @@ If you copy the parent folder and all subfolders, SetupDiag will automatically s
 
 ## Setup bug check analysis
 
-When Microsoft Windows encounters a condition that compromises safe system operation, the system halts. This condition is called a bug check. It is also commonly referred to as a system crash, a kernel error, a Stop error, or BSOD. Typically a hardware device, hardware driver, or related software causes this error.
+When Microsoft Windows encounters a condition that compromises safe system operation, the system halts. This condition is called a bug check. It's also commonly referred to as a system crash, a kernel error, a Stop error, or BSOD. Typically a hardware device, hardware driver, or related software causes this error.
 
 If crash dumps [are enabled](/windows-hardware/drivers/debugger/enabling-a-kernel-mode-dump-file) on the system, a crash dump file is created. If the bug check occurs during an upgrade, Windows Setup will extract a minidump (setupmem.dmp) file. SetupDiag can also debug these setup-related minidumps.
 
 To debug a setup-related bug check, you must:
-- Specify the **/LogsPath** parameter. You cannot debug memory dumps in online mode. 
+- Specify the **/LogsPath** parameter. You can't debug memory dumps in online mode. 
 - Gather the setup memory dump file (setupmem.dmp) from the failing system. 
     - Setupmem.dmp will be created in either **%SystemDrive%\$Windows.~bt\Sources\Rollback**, or in **%WinDir%\Panther\NewOS\Rollback** depending on when the bug check occurs.
 - Install the [Windows Debugging Tools](/windows-hardware/drivers/debugger/debugger-download-tools) on the computer that runs SetupDiag.
@@ -215,34 +213,34 @@ Logs ZipFile created at: c:\setupdiag\Logs_14.zip
 
 ## Rules
 
-When searching log files, SetupDiag uses a set of rules to match known issues. These rules are contained in the rules.xml file which is extracted when SetupDiag is run. The rules.xml file might be updated as new versions of SetupDiag are made available. See the [release notes](#release-notes) section for more information.
+When searching log files, SetupDiag uses a set of rules to match known issues. These rules are contained in the rules.xml file that is extracted when SetupDiag is run. The rules.xml file might be updated as new versions of SetupDiag are made available. For more information, see the [release notes](#release-notes) section.
 
 Each rule name and its associated unique rule identifier are listed with a description of the known upgrade-blocking issue. In the rule descriptions, the term "down-level" refers to the first phase of the upgrade process, which runs under the starting OS.
 
 1. CompatScanOnly - FFDAFD37-DB75-498A-A893-472D49A1311D
-    - This rule indicates that setup.exe was called with a specific command line parameter that indicated setup was to do a compat scan only, not an upgrade.
+    - This rule indicates that `setup.exe` was called with a specific command line parameter that indicated setup was to do a compat scan only, not an upgrade.
 2. BitLockerHardblock - C30152E2-938E-44B8-915B-D1181BA635AE
-    - This is an upgrade block when the target OS does not support BitLocker, yet the host OS has BitLocker enabled.
+    - This is an upgrade block when the target OS doesn't support BitLocker, yet the host OS has BitLocker enabled.
 3. VHDHardblock - D9ED1B82-4ED8-4DFD-8EC0-BE69048978CC
-    - This block happens when the host OS is booted to a VHD image.  Upgrade is not supported when the host OS is booted from a VHD image.
+    - This block happens when the host OS is booted to a VHD image.  Upgrade isn't supported when the host OS is booted from a VHD image.
 4. PortableWorkspaceHardblock - 5B0D3AB4-212A-4CE4-BDB9-37CA404BB280
-    - This indicates that the host OS is booted from a Windows To-Go device (USB key).  Upgrade is not supported in the Windows To-Go environment.
+    - This indicates that the host OS is booted from a Windows To-Go device (USB key).  Upgrade isn't supported in the Windows To-Go environment.
 5. AuditModeHardblock - A03BD71B-487B-4ACA-83A0-735B0F3F1A90
-    - This block indicates that the host OS is currently booted into Audit Mode, a special mode for modifying the Windows state.  Upgrade is not supported from this state.
+    - This block indicates that the host OS is currently booted into Audit Mode, a special mode for modifying the Windows state.  Upgrade isn't supported from this state.
 6. SafeModeHardblock - 404D9523-B7A8-4203-90AF-5FBB05B6579B
-    - This block indicates that the host OS is booted to Safe Mode, where upgrade is not supported.
+    - This block indicates that the host OS is booted to Safe Mode, where upgrade isn't supported.
 7. InsufficientSystemPartitionDiskSpaceHardblock - 3789FBF8-E177-437D-B1E3-D38B4C4269D1
-    - This block is encountered when setup determines the system partition (where the boot loader files are stored) does not have enough space to be serviced with the newer boot files required during the upgrade process.
-8. CompatBlockedApplicationAutoUninstall – BEBA5BC6-6150-413E-8ACE-5E1EC8D34DD5
-    - This rule indicates there is an application that needs to be uninstalled before setup can continue.
+    - This block is encountered when setup determines the system partition (where the boot loader files are stored) doesn't have enough space to be serviced with the newer boot files required during the upgrade process.
+8. CompatBlockedApplicationAutoUninstall - BEBA5BC6-6150-413E-8ACE-5E1EC8D34DD5
+    - This rule indicates there's an application that needs to be uninstalled before setup can continue.
 9. CompatBlockedApplicationDismissable - EA52620B-E6A0-4BBC-882E-0686605736D9
-    - When running setup in /quiet mode, there are dismissible application messages that turn into blocks unless the command line also specifies “/compat ignorewarning”.  This rule indicates setup was executed in /quiet mode but there is an application dismissible block message that has prevented setup from continuing.
+    - When running setup in /quiet mode, there are dismissible application messages that turn into blocks unless the command line also specifies "/compat ignorewarning".  This rule indicates setup was executed in /quiet mode but there's an application dismissible block message that has prevented setup from continuing.
 10. CompatBlockedApplicationManualUninstall - 9E912E5F-25A5-4FC0-BEC1-CA0EA5432FF4
     - This rule indicates that an application without an Add/Remove Programs entry, is present on the system and blocking setup from continuing.  This typically requires manual removal of the files associated with this application to continue.
 11. HardblockDeviceOrDriver - ED3AEFA1-F3E2-4F33-8A21-184ADF215B1B
-    - This error indicates a device driver that is loaded on the host OS is not compatible with the newer OS version and needs to be removed prior to the upgrade.
+    - This error indicates a device driver that is loaded on the host OS isn't compatible with the newer OS version and needs to be removed prior to the upgrade.
 12. HardblockMismatchedLanguage - 60BA8449-CF23-4D92-A108-D6FCEFB95B45
-    - This rule indicates the host OS and the target OS language editions do not match.
+    - This rule indicates the host OS and the target OS language editions don't match.
 13. HardblockFlightSigning - 598F2802-3E7F-4697-BD18-7A6371C8B2F8
     - This rule indicates the target OS is a pre-release, Windows Insider build, and the target machine has Secure Boot enabled.  This will block the pre-release signed build from booting if installed on the machine.
 14. DiskSpaceBlockInDownLevel - 6080AFAC-892E-4903-94EA-7A17E69E549E
@@ -264,15 +262,15 @@ Each rule name and its associated unique rule identifier are listed with a descr
 22. AdvancedInstallerFailed - 77D36C96-32BE-42A2-BB9C-AAFFE64FCADC
     - Finds fatal advanced installer operations that cause setup failures.
 23. FindMigApplyUnitFailure - A4232E11-4043-4A37-9BF4-5901C46FD781
-    - Detects a migration unit failure that caused the update to fail.  This rule will output the name of the migration plug-in as well as the error code it produced for diagnostic purposes.
+    - Detects a migration unit failure that caused the update to fail.  This rule will output the name of the migration plug-in and the error code it produced for diagnostic purposes.
 24. FindMigGatherUnitFailure - D04C064B-CD77-4E64-96D6-D26F30B4EE29
-    - Detects a migration gather unit failure that caused the update to fail.  This rule will output the name of the gather unit/plug-in as well as the error code it produced for diagnostic purposes.
+    - Detects a migration gather unit failure that caused the update to fail.  This rule will output the name of the gather unit/plug-in and the error code it produced for diagnostic purposes.
 25. CriticalSafeOSDUFailure - 73566DF2-CA26-4073-B34C-C9BC70DBF043
     - This rule indicates a failure occurred while updating the SafeOS image with a critical dynamic update.  It will indicate the phase and error code that occurred while attempting to update the SafeOS image for diagnostic purposes.
 26. UserProfileCreationFailureDuringOnlineApply - 678117CE-F6A9-40C5-BC9F-A22575C78B14
     - Indicates there was a critical failure while creating or modifying a User Profile during the online apply phase of the update.  It will indicate the operation and error code associated with the failure for diagnostic purposes.
 27. WimMountFailure - BE6DF2F1-19A6-48C6-AEF8-D3B0CE3D4549
-    - This rule indicates the update failed to mount a wim file.  It will show the name of the wim file as well as the error message and error code associated with the failure for diagnostic purposes.
+    - This rule indicates the update failed to mount a WIM file.  It will show the name of the WIM file and the error message and error code associated with the failure for diagnostic purposes.
 28. FindSuccessfulUpgrade - 8A0824C8-A56D-4C55-95A0-22751AB62F3E
     - Determines if the given setup was a success or not based off the logs.
 29. FindSetupHostReportedFailure - 6253C04F-2E4E-4F7A-B88E-95A69702F7EC
@@ -285,21 +283,21 @@ Each rule name and its associated unique rule identifier are listed with a descr
     - Gives last phase and error information when SetupPlatform indicates a critical failure.  This rule will indicate the operation and error associated with the failure for diagnostic purposes.
 33. FindRollbackFailure - 3A43C9B5-05B3-4F7C-A955-88F991BB5A48
     - Gives last operation, failure phase and error information when a rollback occurs.
-34. AdvancedInstallerGenericFailure – 4019550D-4CAA-45B0-A222-349C48E86F71
+34. AdvancedInstallerGenericFailure - 4019550D-4CAA-45B0-A222-349C48E86F71
     - A rule to match AdvancedInstaller read/write failures in a generic sense.  Will output the executable being called as well as the error code and exit code reported.
-35. OptionalComponentFailedToGetOCsFromPackage – D012E2A2-99D8-4A8C-BBB2-088B92083D78  (NOTE:  This rule replaces the OptionalComponentInstallFailure rule present in v1.10.
+35. OptionalComponentFailedToGetOCsFromPackage - D012E2A2-99D8-4A8C-BBB2-088B92083D78  (NOTE:  This rule replaces the OptionalComponentInstallFailure rule present in v1.10.
     - This matches a specific Optional Component failure when attempting to enumerate components in a package.  Will output the package name and error code.
-36. OptionalComponentOpenPackageFailed – 22952520-EC89-4FBD-94E0-B67DF88347F6
+36. OptionalComponentOpenPackageFailed - 22952520-EC89-4FBD-94E0-B67DF88347F6
     - Matches a specific Optional Component failure when attempting to open an OC package.  Will output the package name and error code.
-37. OptionalComponentInitCBSSessionFailed – 63340812-9252-45F3-A0F2-B2A4CA5E9317
-    - Matches a specific failure where the advanced installer service or components aren’t operating or started on the system.  Will output the error code.
-38. UserProfileCreationFailureDuringFinalize – C6677BA6-2E53-4A88-B528-336D15ED1A64
+37. OptionalComponentInitCBSSessionFailed - 63340812-9252-45F3-A0F2-B2A4CA5E9317
+    - Matches a specific failure where the advanced installer service or components aren't operating or started on the system.  Will output the error code.
+38. UserProfileCreationFailureDuringFinalize - C6677BA6-2E53-4A88-B528-336D15ED1A64
     - Matches a specific User Profile creation error during the finalize phase of setup.  Will output the failure code.
-39. WimApplyExtractFailure – 746879E9-C9C5-488C-8D4B-0C811FF3A9A8
-    - Matches a wim apply failure during wim extraction phases of setup.  Will output the extension, path and error code.
-40. UpdateAgentExpanderFailure – 66E496B3-7D19-47FA-B19B-4040B9FD17E2
-    - Matches DPX expander failures in the down-level phase of update from WU.  Will output the package name, function, expression and error code.
-41. FindFatalPluginFailure – E48E3F1C-26F6-4AFB-859B-BF637DA49636
+39. WimApplyExtractFailure - 746879E9-C9C5-488C-8D4B-0C811FF3A9A8
+    - Matches a WIM apply failure during WIM extraction phases of setup.  Will output the extension, path and error code.
+40. UpdateAgentExpanderFailure - 66E496B3-7D19-47FA-B19B-4040B9FD17E2
+    - Matches DPX expander failures in the down-level phase of update from Windows Update.  Will output the package name, function, expression and error code.
+41. FindFatalPluginFailure - E48E3F1C-26F6-4AFB-859B-BF637DA49636
     - Matches any plug-in failure that setupplatform decides is fatal to setup.  Will output the plugin name, operation and error code.
 42. AdvancedInstallerFailed - 77D36C96-32BE-42A2-BB9C-AAFFE64FCADC
     - Indicates critical failure in the AdvancedInstaller while running an installer package, includes the .exe being called, the phase, mode, component and error codes.
@@ -355,16 +353,16 @@ Each rule name and its associated unique rule identifier are listed with a descr
 - Fixed an issue with registry output in which the "no match found" result caused a corrupted REG_SZ value.
 
 08/08/2019 - SetupDiag v1.6.0.42 is released with 60 rules, as a standalone tool available from the Download Center.
- - Log detection performance is improved.  What used to take up to a minute should take around 10 seconds or less.
+ - Log detection performance is improved.  Log detection takes around 10 seconds or less where before it could take up to a minute.
  - Added Setup Operation and Setup Phase information to both the results log and the registry information.
      - This is the last Operation and Phase that Setup was in when the failure occurred.
  - Added detailed Setup Operation and Setup Phase information (and timing) to output log when /verbose is specified.
-     - Note, if the issue found is a compat block, no Setup Operation or Phase info exists yet and therefore won’t be available.
+     - Note, if the issue found is a compat block, no Setup Operation or Phase info exists yet and therefore won't be available.
  - Added more info to the Registry output. 
-     - Detailed ‘FailureData’ info where available.  Example: “AppName = MyBlockedApplication” or “DiskSpace = 6603” (in MB)
-         - “Key = Value” data specific to the failure found.
-     - Added ‘UpgradeStartTime’, ‘UpgradeEndTime’ and ‘UpgradeElapsedTime’
-     - Added ‘SetupDiagVersion’, ‘DateTime’ (to indicate when SetupDiag was executed on the system), ‘TargetOSVersion’, ‘HostOSVersion’ and more…
+     - Detailed 'FailureData' info where available.  Example: "AppName = MyBlockedApplication" or "DiskSpace = 6603" (in MB)
+         - "Key = Value" data specific to the failure found.
+     - Added 'UpgradeStartTime', 'UpgradeEndTime' and 'UpgradeElapsedTime'
+     - Added 'SetupDiagVersion', 'DateTime' (to indicate when SetupDiag was executed on the system), 'TargetOSVersion', 'HostOSVersion' and more…
 
 
 06/19/2019 - SetupDiag v1.5.0.0 is released with 60 rules, as a standalone tool available from the Download Center.
@@ -376,10 +374,10 @@ Each rule name and its associated unique rule identifier are listed with a descr
 - Added "no match" reports for xml and json per user request.
 - Formatted Json output for easy readability.
 - Performance improvements when searching for setup logs; this should be much faster now.
-- Added 7 new rules: PlugInComplianceBlock, PreReleaseWimMountDriverFound, WinSetupBootFilterFailure, WimMountDriverIssue, DISMImageSessionFailure, FindEarlyDownlevelError, and FindSPFatalError. See the [Rules](#rules) section above for more information.
+- Added seven new rules: PlugInComplianceBlock, PreReleaseWimMountDriverFound, WinSetupBootFilterFailure, WimMountDriverIssue, DISMImageSessionFailure, FindEarlyDownlevelError, and FindSPFatalError. See the [Rules](#rules) section above for more information.
 - Diagnostic information is now output to the registry at **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**
   - The **/AddReg** command was added to toggle registry output. This setting is off by default for offline mode, and on by default for online mode. The command has no effect for online mode and enables registry output for offline mode.
-  - This registry key is deleted as soon as SetupDiag is run a second time, and replaced with current data, so it’s always up to date.
+  - This registry key is deleted as soon as SetupDiag is run a second time, and replaced with current data, so it's always up to date.
   - This registry key also gets deleted when a new update instance is invoked.
   - For an example, see [Sample registry key](#sample-registry-key).
 
@@ -388,33 +386,33 @@ Each rule name and its associated unique rule identifier are listed with a descr
 
 12/18/2018 - SetupDiag v1.4.0.0 is released with 53 rules, as a standalone tool available from the Download Center.
 - This release includes major improvements in rule processing performance: ~3x faster rule processing performance!
-  - The FindDownlevelFailure rule is up to 10x faster.
+  - The FindDownlevelFailure rule is up to 10 times faster.
 - New rules have been added to analyze failures upgrading to Windows 10 version 1809.
 - A new help link is available for resolving servicing stack failures on the down-level OS when the rule match indicates this type of failure.
 - Removed the need to specify /Mode parameter. Now if you specify /LogsPath, it automatically assumes offline mode.
 - Some functional and output improvements were made for several rules.
 
 07/16/2018 - SetupDiag v1.3.1 is released with 44 rules, as a standalone tool available from the Download Center.
-- This release fixes a problem that can occur when running SetupDiag in online mode on a computer that produces a setupmem.dmp file, but does not have debugger binaries installed.
+- This release fixes a problem that can occur when running SetupDiag in online mode on a computer that produces a setupmem.dmp file, but doesn't have debugger binaries installed.
 
 07/10/2018 - SetupDiag v1.30 is released with 44 rules, as a standalone tool available from the Download Center.
 - Bug fix for an over-matched plug-in rule. The rule will now correctly match only critical (setup failure) plug-in issues.
 - New feature: Ability to output logs in JSON and XML format.
   - Use "/Format:xml" or "/Format:json" command line parameters to specify the new output format. See [sample logs](#sample-logs) at the bottom of this topic.
-  - If the “/Format:xml” or “/Format:json” parameter is omitted, the log output format will default to text.
+  - If the "/Format:xml" or "/Format:json" parameter is omitted, the log output format will default to text.
 - New Feature: Where possible, specific instructions are now provided in rule output to repair the identified error. For example, instructions are provided to remediate known blocking issues such as uninstalling an incompatible app or freeing up space on the system drive.
-- 3 new rules added: AdvancedInstallerFailed, MigrationAbortedDueToPluginFailure, DISMAddPackageFailed.
+- Three new rules added: AdvancedInstallerFailed, MigrationAbortedDueToPluginFailure, DISMAddPackageFailed.
 
 05/30/2018 - SetupDiag v1.20 is released with 41 rules, as a standalone tool available from the Download Center.
 - Fixed a bug in device install failure detection in online mode.
 - Changed SetupDiag to work without an instance of setupact.log. Previously, SetupDiag required at least one setupact.log to operate.  This change enables the tool to analyze update failures that occur prior to calling SetupHost.
-- Telemetry is refactored to only send the rule name and GUID (or “NoRuleMatched” if no rule is matched) and the Setup360 ReportId. This change assures data privacy during rule processing.
+- Telemetry is refactored to only send the rule name and GUID (or "NoRuleMatched" if no rule is matched) and the Setup360 ReportId. This change assures data privacy during rule processing.
 
 05/02/2018 - SetupDiag v1.10 is released with 34 rules, as a standalone tool available from the Download Center.
 - A performance enhancement has been added to result in faster rule processing.
 - Rules output now includes links to support articles, if applicable.
-- SetupDiag now provides the path and name of files that it is processing.
-- You can now run SetupDiag by simply clicking on it and then examining the output log file.
+- SetupDiag now provides the path and name of files that it's processing.
+- You can now run SetupDiag by selecting it and then examining the output log file.
 - An output log file is now always created, whether or not a rule was matched.
 
 03/30/2018 - SetupDiag v1.00 is released with 26 rules, as a standalone tool available from the Download Center.
@@ -449,14 +447,14 @@ System Information:
 Error: SetupDiag reports Optional Component installation failed to open OC Package. Package Name: Foundation, Error: 0x8007001F
 Recommend you check the "Windows Modules Installer" service (Trusted Installer) is started on the system and set to automatic start, reboot and try the update again.  Optionally, you can check the status of optional components on the system (search for Windows Features), uninstall any unneeded optional components, reboot and try the update again.
 Error: SetupDiag reports down-level failure, Operation: Finalize, Error: 0x8007001F - 0x50015
-Refer to https://docs.microsoft.com/windows/deployment/upgrade/upgrade-error-codes for error information.
+Refer to https://learn.microsoft.com/windows/deployment/upgrade/upgrade-error-codes for error information.
 ```
 
 ### XML log sample
 
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
-<SetupDiag xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://docs.microsoft.com/windows/deployment/upgrade/setupdiag">
+<SetupDiag xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://learn.microsoft.com/windows/deployment/upgrade/setupdiag">
   <Version>1.6.0.0</Version>
   <ProfileName>FindSPFatalError</ProfileName>
   <ProfileGuid>A4028172-1B09-48F8-AD3B-86CDD7D55852</ProfileGuid>
@@ -499,7 +497,7 @@ Error: 0x00000057</FailureData>
   <FailureData>LogEntry: 2019-06-06 21:47:11, Error                 SP     Error converting install time 5/2/2019 to structure[gle=0x00000057]</FailureData>
   <FailureData>LogEntry: 2019-06-06 21:47:11, Error                 SP     Error converting install time 5/2/2019 to structure[gle=0x00000057]</FailureData>
   <FailureData>
-Refer to "https://docs.microsoft.com/windows/desktop/Debug/system-error-codes" for error information.</FailureData>
+Refer to "https://learn.microsoft.com/windows/desktop/Debug/system-error-codes" for error information.</FailureData>
   <FailureDetails>Err = 0x00000057, LastOperation = Gather data, scope: EVERYTHING, LastPhase = Downlevel</FailureDetails>
 </SetupDiag>
 ```
@@ -553,7 +551,7 @@ Refer to "https://docs.microsoft.com/windows/desktop/Debug/system-error-codes" f
         "LogEntry: 2019-06-06 21:47:11, Error                 SP     Error converting install time 5\/2\/2019 to structure[
             gle=0x00000057
         ]",
-        "\u000aRefer to \"https:\/\/docs.microsoft.com\/en-us\/windows\/desktop\/Debug\/system-error-codes\" for error information."
+        "\u000aRefer to \"https:\/\/learn.microsoft.com\/windows\/desktop\/Debug\/system-error-codes\" for error information."
     ],
     "FailureDetails":"Err = 0x00000057, LastOperation = Gather data, scope: EVERYTHING, LastPhase = Downlevel",
     "DeviceDriverInfo":null,
@@ -569,6 +567,6 @@ Refer to "https://docs.microsoft.com/windows/desktop/Debug/system-error-codes" f
 
 ![Example of Addreg.](./../images/addreg.png)
 
-## Related topics
+## Related articles
 
 [Resolve Windows 10 upgrade errors: Technical information for IT Pros](./resolve-windows-10-upgrade-errors.md)

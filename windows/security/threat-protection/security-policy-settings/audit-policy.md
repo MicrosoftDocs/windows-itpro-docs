@@ -1,31 +1,31 @@
 ---
-title: Audit Policy (Windows 10)
+title: Audit Policy 
 description: Provides information about basic audit policies that are available in Windows and links to information about each setting.
 ms.assetid: 2e8ea400-e555-43e5-89d6-0898cb89da90
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Audit Policy
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Provides information about basic audit policies that are available in Windows and links to information about each setting.
 
-The security audit policy settings under **Security Settings\\Local Policies\\Audit Policy** provide broad security audit capabilities for client devices and servers that cannot use advanced security audit policy settings.
+The security audit policy settings under **Security Settings\\Local Policies\\Audit Policy** provide broad security audit capabilities for client devices and servers that can't use advanced security audit policy settings.
 
 The basic audit policy settings under **Security Settings\\Local Policies\\Audit Policy** are:
 - [Audit account logon events](../auditing/basic-audit-account-logon-events.md)

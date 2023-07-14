@@ -1,36 +1,29 @@
 ---
 title: Using the Compatibility Administrator Tool (Windows 10)
 description: This section provides information about using the Compatibility Administrator tool.
-ms.assetid: 57271e47-b9b9-4018-a0b5-7115a533166d
-ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-ms.prod: w10
-ms.mktglfcycl: plan
-ms.pagetype: appcompat
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
-ms.date: 04/19/2017
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
+author: frankroj
+ms.date: 10/28/2022
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Using the Compatibility Administrator Tool
 
-
 **Applies to**
 
--   Windows 10
--   Windows 8.1
--   Windows 8
--   Windows 7
--   Windows Server 2012
--   Windows Server 2008 R2
+-   Windows 10
+-   Windows 8.1
+-   Windows 8
+-   Windows 7
+-   Windows Server 2012
+-   Windows Server 2008 R2
 
 This section provides information about using the Compatibility Administrator tool.
 
 ## In this section
-
 
 |Topic|Description|
 |--- |--- |
@@ -43,7 +36,3 @@ This section provides information about using the Compatibility Administrator to
 |[Viewing the Events Screen in Compatibility Administrator](viewing-the-events-screen-in-compatibility-administrator.md)|The **Events** screen enables you to record and to view your activities in the Compatibility Administrator tool, provided that the screen is open while you perform the activities.|
 |[Enabling and Disabling Compatibility Fixes in Compatibility Administrator](enabling-and-disabling-compatibility-fixes-in-compatibility-administrator.md)|You can disable and enable individual compatibility fixes in your customized databases for testing and troubleshooting purposes.|
 |[Installing and Uninstalling Custom Compatibility Databases in Compatibility Administrator](installing-and-uninstalling-custom-compatibility-databases-in-compatibility-administrator.md)|The Compatibility Administrator tool enables the creation and the use of custom-compatibility and standard-compatibility databases. Both the custom databases and the standard databases store the known compatibility fixes, compatibility modes, and AppHelp messages. They also store the required application-matching information for installation on your local computers.|
-
-
-
-

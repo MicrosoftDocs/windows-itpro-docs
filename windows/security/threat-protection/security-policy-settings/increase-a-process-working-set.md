@@ -1,33 +1,33 @@
 ---
-title: Increase a process working set (Windows 10)
+title: Increase a process working set 
 description: Describes the best practices, location, values, policy management, and security considerations for the Increase a process working set security policy setting.
 ms.assetid: b742ad96-37f3-4686-b8f7-f2b48367105b
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Increase a process working set
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Increase a process working set** security policy setting.
 
 ## Reference
 
-This policy setting determines which users can increase or decrease the size of the working set of a process. The working set of a process is the set of memory pages currently visible to the process in physical RAM. These pages are resident, and they are available for an application to use without triggering a page fault. The minimum and maximum working set sizes affect the virtual memory paging behavior of a process.
+This policy setting determines which users can increase or decrease the size of the working set of a process. The working set of a process is the set of memory pages currently visible to the process in physical RAM. These pages are resident, and they're available for an application to use without triggering a page fault. The minimum and maximum working set sizes affect the virtual memory paging behavior of a process.
 
 Constant: SeIncreaseWorkingSetPrivilege
 
@@ -63,7 +63,7 @@ The following table lists the actual and effective default policy values. Defaul
 
 This section describes features, tools, and guidance to help you manage this policy.
 
-A restart of the computer is not required for this policy setting to be effective.
+A restart of the computer isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 

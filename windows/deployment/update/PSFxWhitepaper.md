@@ -1,18 +1,14 @@
 ---
 title: Windows Updates using forward and reverse differentials
 description: A technique to produce compact software updates optimized for any origin and destination revision pair
-keywords: updates, servicing, current, deployment, General Availability Channel, feature, quality, rings, insider, tools
-ms.prod: w10
-ms.mktglfcycl: manage
-audience: itpro
-itproauthor: jaimeo
-author: jaimeo
+ms.prod: windows-client
+author: mestew
 ms.localizationpriority: medium
-ms.author: jaimeo
-ms.reviewer: 
-manager: laurawi
+ms.author: mstewart
+manager: aaroncz
 ms.topic: article
-ms.custom: seo-marvel-apr2020
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Windows Updates using forward and reverse differentials
@@ -71,7 +67,7 @@ numerous advantages:
 
 Historically, download sizes of Windows 10 quality updates (Windows 10, version 1803 and older supported versions of Windows 10) are optimized by using express download. Express download is optimized such that updating Windows 10 systems will download the minimum number of bytes. This is achieved by generating differentials for every updated file based on selected historical base revisions of the same file + its base or RTM version.
 
-For example, if the October monthly quality update has updated Notepad.exe, differentials for Notepad.exe file changes from September to October, August to October, July to October, June to October, and from the original feature release to October are generated. All these differentials are stored in a Patch Storage File (PSF, also referred to as “express download files”) and hosted or cached on Windows Update or other update management or distribution servers (for example, Windows Server Update Services (WSUS), Microsoft Endpoint Configuration Manager, or a non-Microsoft update management or distribution server that supports express updates). A device leveraging express updates uses network protocol to determine optimal differentials, then downloads only what is needed from the update distribution endpoints.
+For example, if the October monthly quality update has updated Notepad.exe, differentials for Notepad.exe file changes from September to October, August to October, July to October, June to October, and from the original feature release to October are generated. All these differentials are stored in a Patch Storage File (PSF, also referred to as “express download files”) and hosted or cached on Windows Update or other update management or distribution servers (for example, Windows Server Update Services (WSUS), Microsoft Configuration Manager, or a non-Microsoft update management or distribution server that supports express updates). A device leveraging express updates uses network protocol to determine optimal differentials, then downloads only what is needed from the update distribution endpoints.
 
 The flip side of express download is that the size of PSF files can be very large depending on the number of historical baselines against which differentials were calculated. Downloading and caching large PSF files to on-premises or remote update distribution servers is problematic for most organizations, hence they are unable to leverage express updates to keep their fleet of devices running Windows 10 up to date. Secondly, due to the complexity of generating differentials and size of the express files that need to be cached on update distribution servers, it is only feasible to generate express download files for the most common baselines, thus express updates are only applicable to selected baselines. Finally, calculation of optimal differentials is expensive in terms of system memory utilization, especially for low-cost systems, impacting their ability to download and apply an update seamlessly.
 

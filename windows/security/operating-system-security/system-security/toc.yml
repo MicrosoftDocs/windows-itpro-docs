@@ -1,0 +1,28 @@
+items:
+- name: Secure the Windows boot process
+  href: secure-the-windows-10-boot-process.md
+- name: Secure Boot and Trusted Boot
+  href: trusted-boot.md
+- name: Measured Boot 🔗
+  href: /windows/compatibility/measured-boot
+- name: Device health attestation service
+  href: protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices.md
+- name: Cryptography and certificate management
+  href: cryptography-certificate-mgmt.md
+- name: Windows Security app
+  href: windows-defender-security-center/windows-defender-security-center.md
+  items:
+  - name: Virus & threat protection
+    href: windows-defender-security-center\wdsc-virus-threat-protection.md
+  - name: Account protection
+    href: windows-defender-security-center\wdsc-account-protection.md
+  - name: Firewall & network protection
+    href: windows-defender-security-center\wdsc-firewall-network-protection.md
+  - name: App & browser control
+    href: windows-defender-security-center\wdsc-app-browser-control.md
+  - name: Device security
+    href: windows-defender-security-center\wdsc-device-security.md
+  - name: Device performance & health
+    href: windows-defender-security-center\wdsc-device-performance-health.md
+  - name: Family options
+    href: windows-defender-security-center\wdsc-family-options.md

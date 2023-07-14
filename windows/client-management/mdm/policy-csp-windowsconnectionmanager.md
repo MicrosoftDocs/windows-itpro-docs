@@ -1,94 +1,102 @@
 ---
-title: Policy CSP - WindowsConnectionManager
-description: The Policy CSP - WindowsConnectionManager setting prevents computers from connecting to a domain-based network and a non-domain-based network simultaneously.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+title: WindowsConnectionManager Policy CSP
+description: Learn more about the WindowsConnectionManager Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/11/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- WindowsConnectionManager-Begin -->
 # Policy CSP - WindowsConnectionManager
 
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
+<!-- WindowsConnectionManager-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- WindowsConnectionManager-Editable-End -->
 
-<hr/>
+<!-- ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork-Begin -->
+## ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork
 
-<!--Policies-->
-## WindowsConnectionManager policies  
+<!-- ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#windowsconnectionmanager-prohitconnectiontonondomainnetworkswhenconnectedtodomainauthenticatednetwork">WindowsConnectionManager/ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork</a>
-  </dd>
-</dl>
+<!-- ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsConnectionManager/ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork
+```
+<!-- ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork-OmaUri-End -->
 
+<!-- ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting prevents computers from connecting to both a domain based network and a non-domain based network at the same time.
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="windowsconnectionmanager-prohitconnectiontonondomainnetworkswhenconnectedtodomainauthenticatednetwork"></a>**WindowsConnectionManager/ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting prevents computers from connecting to both a domain-based network and a non-domain-based network at the same time.
-
-If this policy setting is enabled, the computer responds to automatic and manual network connection attempts based on the following circumstances:
+- If this policy setting is enabled, the computer responds to automatic and manual network connection attempts based on the following circumstances:
 
 Automatic connection attempts
-- When the computer is already connected to a domain-based network, all automatic connection attempts to non-domain networks are blocked.
-- When the computer is already connected to a non-domain-based network, automatic connection attempts to domain-based networks are blocked.
+- When the computer is already connected to a domain based network, all automatic connection attempts to non-domain networks are blocked.
+
+- When the computer is already connected to a non-domain based network, automatic connection attempts to domain based networks are blocked.
 
 Manual connection attempts
-- When the computer is already connected to either a non-domain-based network or a domain-based network over media other than Ethernet, and a user attempts to create a manual connection to an additional network in violation of this policy setting, the existing network connection is disconnected and the manual connection is allowed.
-- When the computer is already connected to either a non-domain-based network or a domain-based network over Ethernet, and a user attempts to create a manual connection to an additional network in violation of this policy setting, the existing Ethernet connection is maintained and the manual connection attempt is blocked.
+- When the computer is already connected to either a non-domain based network or a domain based network over media other than Ethernet, and a user attempts to create a manual connection to an additional network in violation of this policy setting, the existing network connection is disconnected and the manual connection is allowed.
 
-If this policy setting is not configured or is disabled, computers are allowed to connect simultaneously to both domain and non-domain networks.
+- When the computer is already connected to either a non-domain based network or a domain based network over Ethernet, and a user attempts to create a manual connection to an additional network in violation of this policy setting, the existing Ethernet connection is maintained and the manual connection attempt is blocked.
 
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+- If this policy setting isn't configured or is disabled, computers are allowed to connect simultaneously to both domain and non-domain networks.
+<!-- ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Prohibit connection to non-domain networks when connected to domain authenticated network*
--   GP name: *WCM_BlockNonDomain*
--   GP path: *Network/Windows Connection Manager*
--   GP ADMX file name: *WCM.admx*
+<!-- ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork-DFProperties-End -->
 
-<!--/Policies-->
+<!-- ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | WCM_BlockNonDomain |
+| Friendly Name | Prohibit connection to non-domain networks when connected to domain authenticated network |
+| Location | Computer Configuration |
+| Path | Network > Windows Connection Manager |
+| Registry Key Name | Software\Policies\Microsoft\Windows\WcmSvc\GroupPolicy |
+| Registry Value Name | fBlockNonDomain |
+| ADMX File Name | WCM.admx |
+<!-- ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork-AdmxBacked-End -->
+
+<!-- ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork-Examples-End -->
+
+<!-- ProhitConnectionToNonDomainNetworksWhenConnectedToDomainAuthenticatedNetwork-End -->
+
+<!-- WindowsConnectionManager-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- WindowsConnectionManager-CspMoreInfo-End -->
+
+<!-- WindowsConnectionManager-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

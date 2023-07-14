@@ -1,289 +1,2274 @@
 ---
 title: AppLocker CSP
-description: Learn how the AppLocker configuration service provider is used to specify which applications are allowed or disallowed.
-ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 11/19/2019
+description: Learn more about the AppLocker CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- AppLocker-Begin -->
 # AppLocker CSP
 
+<!-- AppLocker-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The AppLocker configuration service provider is used to specify which applications are allowed or disallowed. There's no user interface shown for apps that are blocked.
+<!-- AppLocker-Editable-End -->
 
-The AppLocker configuration service provider is used to specify which applications are allowed or disallowed. There is no user interface shown for apps that are blocked.
+<!-- AppLocker-Tree-Begin -->
+The following list shows the AppLocker configuration service provider nodes:
 
-The following shows the AppLocker configuration service provider in tree format.
+- ./Vendor/MSFT/AppLocker
+  - [ApplicationLaunchRestrictions](#applicationlaunchrestrictions)
+    - [{Grouping}](#applicationlaunchrestrictionsgrouping)
+      - [CodeIntegrity](#applicationlaunchrestrictionsgroupingcodeintegrity)
+        - [Policy](#applicationlaunchrestrictionsgroupingcodeintegritypolicy)
+      - [DLL](#applicationlaunchrestrictionsgroupingdll)
+        - [EnforcementMode](#applicationlaunchrestrictionsgroupingdllenforcementmode)
+        - [NonInteractiveProcessEnforcement](#applicationlaunchrestrictionsgroupingdllnoninteractiveprocessenforcement)
+        - [Policy](#applicationlaunchrestrictionsgroupingdllpolicy)
+      - [EXE](#applicationlaunchrestrictionsgroupingexe)
+        - [EnforcementMode](#applicationlaunchrestrictionsgroupingexeenforcementmode)
+        - [NonInteractiveProcessEnforcement](#applicationlaunchrestrictionsgroupingexenoninteractiveprocessenforcement)
+        - [Policy](#applicationlaunchrestrictionsgroupingexepolicy)
+      - [MSI](#applicationlaunchrestrictionsgroupingmsi)
+        - [EnforcementMode](#applicationlaunchrestrictionsgroupingmsienforcementmode)
+        - [Policy](#applicationlaunchrestrictionsgroupingmsipolicy)
+      - [Script](#applicationlaunchrestrictionsgroupingscript)
+        - [EnforcementMode](#applicationlaunchrestrictionsgroupingscriptenforcementmode)
+        - [Policy](#applicationlaunchrestrictionsgroupingscriptpolicy)
+      - [StoreApps](#applicationlaunchrestrictionsgroupingstoreapps)
+        - [EnforcementMode](#applicationlaunchrestrictionsgroupingstoreappsenforcementmode)
+        - [Policy](#applicationlaunchrestrictionsgroupingstoreappspolicy)
+  - [EnterpriseDataProtection](#enterprisedataprotection)
+    - [{Grouping}](#enterprisedataprotectiongrouping)
+      - [EXE](#enterprisedataprotectiongroupingexe)
+        - [Policy](#enterprisedataprotectiongroupingexepolicy)
+      - [StoreApps](#enterprisedataprotectiongroupingstoreapps)
+        - [Policy](#enterprisedataprotectiongroupingstoreappspolicy)
+  - [FamilySafety](#familysafety)
+    - [{Grouping}](#familysafetygrouping)
+      - [EXE](#familysafetygroupingexe)
+        - [EnforcementMode](#familysafetygroupingexeenforcementmode)
+        - [Policy](#familysafetygroupingexepolicy)
+      - [StoreApps](#familysafetygroupingstoreapps)
+        - [EnforcementMode](#familysafetygroupingstoreappsenforcementmode)
+        - [Policy](#familysafetygroupingstoreappspolicy)
+  - [LaunchControl](#launchcontrol)
+    - [{Grouping}](#launchcontrolgrouping)
+      - [EXE](#launchcontrolgroupingexe)
+        - [EnforcementMode](#launchcontrolgroupingexeenforcementmode)
+        - [Policy](#launchcontrolgroupingexepolicy)
+      - [StoreApps](#launchcontrolgroupingstoreapps)
+        - [EnforcementMode](#launchcontrolgroupingstoreappsenforcementmode)
+        - [Policy](#launchcontrolgroupingstoreappspolicy)
+<!-- AppLocker-Tree-End -->
 
-```console
-./Vendor/MSFT
-AppLocker
-----ApplicationLaunchRestrictions
---------Grouping
-------------EXE
-----------------Policy
-----------------EnforcementMode
-----------------NonInteractiveProcessEnforcement
-------------MSI
-----------------Policy
-----------------EnforcementMode
-------------Script
-----------------Policy
-----------------EnforcementMode
-------------StoreApps
-----------------Policy
-----------------EnforcementMode
-------------DLL
-----------------Policy
-----------------EnforcementMode
-----------------NonInteractiveProcessEnforcement
-------------CodeIntegrity
-----------------Policy
-----EnterpriseDataProtection
---------Grouping
-------------EXE
-----------------Policy
-------------StoreApps
-----------------Policy
-----LaunchControl
---------Grouping
-------------EXE
-----------------Policy
-----------------EnforcementMode
-------------StoreApps
-----------------Policy
-----------------EnforcementMode
-----FamilySafety
---------Grouping
-------------EXE
-----------------Policy
-----------------EnforcementMode
-------------StoreApps
-----------------Policy
-----------------EnforcementMode
+<!-- Device-ApplicationLaunchRestrictions-Begin -->
+## ApplicationLaunchRestrictions
+
+<!-- Device-ApplicationLaunchRestrictions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-ApplicationLaunchRestrictions-Applicability-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions
 ```
-<a href="" id="--vendor-msft-applocker"></a>**./Vendor/MSFT/AppLocker**  
-Defines the root node for the AppLocker configuration service provider.
+<!-- Device-ApplicationLaunchRestrictions-OmaUri-End -->
 
-<a href="" id="applocker-applicationlaunchrestrictions"></a>**AppLocker/ApplicationLaunchRestrictions**  
+<!-- Device-ApplicationLaunchRestrictions-Description-Begin -->
+<!-- Description-Source-DDF -->
 Defines restrictions for applications.
+<!-- Device-ApplicationLaunchRestrictions-Description-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> When you create a list of allowed apps, all [inbox apps](#inbox-apps-and-components) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
+>
+> Delete/unenrollment is not properly supported unless Grouping values are unique across enrollments. If multiple enrollments use the same Grouping value, then unenrollment will not work as expected since there are duplicate URIs that get deleted by the resource manager. To prevent this problem, the Grouping value should include some randomness. The best practice is to use a randomly generated GUID. However, there's no requirement on the exact value of the node.
 
 > [!NOTE]
-> When you create a list of allowed apps, all [inbox apps](#inboxappsandcomponents) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
+> The AppLocker CSP will schedule a reboot when a policy is applied or when a deletion occurs using the `AppLocker/ApplicationLaunchRestrictions/{Grouping}/CodeIntegrity/Policy` URI.
+<!-- Device-ApplicationLaunchRestrictions-Editable-End -->
 
-> Delete/unenrollment is not properly supported unless Grouping values are unique across enrollments. If multiple enrollments use the same Grouping value, then unenrollment will not work as expected since there are duplicate URIs that get deleted by the resource manager. To prevent this problem, the Grouping value should include some randomness. The best practice is to use a randomly generated GUID. However, there is no requirement on the exact value of the node.
+<!-- Device-ApplicationLaunchRestrictions-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Get |
+<!-- Device-ApplicationLaunchRestrictions-DFProperties-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-Examples-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Begin -->
+### ApplicationLaunchRestrictions/{Grouping}
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Applicability-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/{Grouping}
+```
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-OmaUri-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Description-Begin -->
+<!-- Description-Source-DDF -->
+Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it's to determine what their purpose is, and to not conflict with other identifiers that they define. Different enrollments and contexts may use the same Authority identifier, even if many such identifiers are active at the same time.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Description-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Editable-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get, Replace |
+| Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DFProperties-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Examples-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Begin -->
+#### ApplicationLaunchRestrictions/{Grouping}/CodeIntegrity
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Applicability-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/{Grouping}/CodeIntegrity
+```
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-OmaUri-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Description-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Editable-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-DFProperties-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Examples-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Policy-Begin -->
+##### ApplicationLaunchRestrictions/{Grouping}/CodeIntegrity/Policy
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Policy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Policy-Applicability-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Policy-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/{Grouping}/CodeIntegrity/Policy
+```
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Policy-OmaUri-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Policy-Description-Begin -->
+<!-- Description-Source-DDF -->
+Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy. This will need to be Base64 encoded.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Policy-Description-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Policy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> The AppLocker CSP will schedule a reboot when a policy is applied or a deletion occurs using the AppLocker/ApplicationLaunchRestrictions/Grouping/CodeIntegrity/Policy URI.
+> To use Code Integrity Policy, you first need to convert the policies to binary format using the `ConvertFrom-CIPolicy` cmdlet. Then a Base64-encoded blob of the binary policy representation should be created (for example, using the [certutil -encode](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732443(v=ws.11)) command line tool) and added to the Applocker CSP.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Policy-Editable-End -->
 
-Additional information:
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Policy-DFProperties-Begin -->
+**Description framework properties**:
 
-<a href="" id="applocker-applicationlaunchrestrictions-grouping"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_**  
-Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it is to determine what their purpose is, and to not conflict with other identifiers that they define.
-Different enrollments and contexts may use the same Authority identifier, even if many such identifiers are active at the same time.
+| Property name | Property value |
+|:--|:--|
+| Format | `b64` |
+| Access Type | Add, Delete, Get, Replace |
+| Reboot Behavior | Automatic |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Policy-DFProperties-End -->
 
-Supported operations are Get, Add, Delete, and Replace.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Policy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Policy-Examples-End -->
 
-<a href="" id="applocker-applicationlaunchrestrictions-grouping-exe"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/EXE**  
-Defines restrictions for launching executable applications.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-CodeIntegrity-Policy-End -->
 
-Supported operations are Get, Add, Delete, and Replace.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Begin -->
+#### ApplicationLaunchRestrictions/{Grouping}/DLL
 
-<a href="" id="applocker-applicationlaunchrestrictions-grouping-exe-policy"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/EXE/Policy**  
-Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Applicability-End -->
 
-Data type is string. 
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/{Grouping}/DLL
+```
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-OmaUri-End -->
 
-Supported operations are Get, Add, Delete, and Replace.
-
-<a href="" id="applocker-applicationlaunchrestrictions-grouping-exe-enforcementmode"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/EXE/EnforcementMode**  
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
-
-The data type is a string. 
-
-Supported operations are Get, Add, Delete, and Replace.
-
-<a href="" id="applocker-applicationlaunchrestrictions-grouping-exe-noninteractiveprocessenforcement"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/EXE/NonInteractiveProcessEnforcement**  
-The data type is a string.
-
-Supported operations are Add, Delete, Get, and Replace.
-
-<a href="" id="applocker-applicationlaunchrestrictions-grouping-msi"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/MSI**  
-Defines restrictions for executing Windows Installer files.
-
-Supported operations are Get, Add, Delete, and Replace.
-
-<a href="" id="applocker-applicationlaunchrestrictions-grouping-msi-policy"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/MSI/Policy**  
-Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
-
-Data type is string. 
-
-Supported operations are Get, Add, Delete, and Replace.
-
-<a href="" id="applocker-applicationlaunchrestrictions-grouping-msi-enforcementmode"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/MSI/EnforcementMode**  
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
-
-The data type is a string. 
-
-Supported operations are Get, Add, Delete, and Replace.
-
-<a href="" id="applocker-applicationlaunchrestrictions-grouping-script"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/Script**  
-Defines restrictions for running scripts.
-
-Supported operations are Get, Add, Delete, and Replace.
-
-<a href="" id="applocker-applicationlaunchrestrictions-grouping-script-policy"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/Script/Policy**  
-Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
-
-Data type is string. 
-
-Supported operations are Get, Add, Delete, and Replace.
-
-<a href="" id="applocker-applicationlaunchrestrictions-grouping-script-enforcementmode"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/Script/EnforcementMode**  
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
-
-The data type is a string.
-
-Supported operations are Get, Add, Delete, and Replace.
-
-<a href="" id="applocker-applicationlaunchrestrictions-grouping-storeapps"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/StoreApps**  
-Defines restrictions for running apps from the Microsoft Store.
-
-Supported operations are Get, Add, Delete, and Replace.
-
-<a href="" id="applocker-applicationlaunchrestrictions-grouping-storeapps-policy"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/StoreApps/Policy**  
-Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
-
-Data type is string.
-
-Supported operations are Get, Add, Delete, and Replace.
-
-<a href="" id="applocker-applicationlaunchrestrictions-grouping-storeapps-enforcementmode"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/StoreApps/EnforcementMode**  
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
-
-The data type is a string.
-
-Supported operations are Get, Add, Delete, and Replace.
-
-<a href="" id="applocker-applicationlaunchrestrictions-grouping-dll"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/DLL**  
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Description-Begin -->
+<!-- Description-Source-DDF -->
 Defines restrictions for processing DLL files.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Description-End -->
 
-Supported operations are Get, Add, Delete, and Replace.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Editable-End -->
 
-<a href="" id="applocker-applicationlaunchrestrictions-grouping-dll-policy"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/DLL/Policy**  
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-DFProperties-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Examples-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-Begin -->
+##### ApplicationLaunchRestrictions/{Grouping}/DLL/EnforcementMode
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-Applicability-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/{Grouping}/DLL/EnforcementMode
+```
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-OmaUri-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-Description-Begin -->
+<!-- Description-Source-DDF -->
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-Description-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-Editable-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-DFProperties-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-Examples-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-EnforcementMode-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-NonInteractiveProcessEnforcement-Begin -->
+##### ApplicationLaunchRestrictions/{Grouping}/DLL/NonInteractiveProcessEnforcement
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-NonInteractiveProcessEnforcement-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-NonInteractiveProcessEnforcement-Applicability-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-NonInteractiveProcessEnforcement-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/{Grouping}/DLL/NonInteractiveProcessEnforcement
+```
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-NonInteractiveProcessEnforcement-OmaUri-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-NonInteractiveProcessEnforcement-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-NonInteractiveProcessEnforcement-Description-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-NonInteractiveProcessEnforcement-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-NonInteractiveProcessEnforcement-Editable-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-NonInteractiveProcessEnforcement-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-NonInteractiveProcessEnforcement-DFProperties-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-NonInteractiveProcessEnforcement-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-NonInteractiveProcessEnforcement-Examples-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-NonInteractiveProcessEnforcement-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Policy-Begin -->
+##### ApplicationLaunchRestrictions/{Grouping}/DLL/Policy
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Policy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Policy-Applicability-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Policy-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/{Grouping}/DLL/Policy
+```
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Policy-OmaUri-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Policy-Description-Begin -->
+<!-- Description-Source-DDF -->
 Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Policy-Description-End -->
 
-Data type is string.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Policy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Policy-Editable-End -->
 
-Supported operations are Get, Add, Delete, and Replace.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Policy-DFProperties-Begin -->
+**Description framework properties**:
 
-<a href="" id="applocker-applicationlaunchrestrictions-grouping-dll-enforcementmode"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/DLL/EnforcementMode**  
-The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) does not affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Reboot Behavior | Automatic |
+| Allowed Values | See [Policy XSD Schema](#policy-xsd-schema) |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Policy-DFProperties-End -->
 
-The data type is a string.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Policy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Policy-Examples-End -->
 
-Supported operations are Get, Add, Delete, and Replace.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-DLL-Policy-End -->
 
-<a href="" id="applocker-applicationlaunchrestrictions-grouping-dll-noninteractiveprocessenforcement"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/DLL/NonInteractiveProcessEnforcement**  
-The data type is a string.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Begin -->
+#### ApplicationLaunchRestrictions/{Grouping}/EXE
 
-Supported operations are Add, Delete, Get, and Replace.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Applicability-End -->
 
-<a href="" id="applocker-applicationlaunchrestrictions-grouping-codeintegrity"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/CodeIntegrity**  
-This node is only supported on the desktop. 
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/{Grouping}/EXE
+```
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-OmaUri-End -->
 
-Supported operations are Get, Add, Delete, and Replace.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Description-Begin -->
+<!-- Description-Source-DDF -->
+Defines restrictions for launching executable applications.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Description-End -->
 
-<a href="" id="applocker-applicationlaunchrestrictions-grouping-codeintegrity-policy"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_/CodeIntegrity/Policy**  
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Editable-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-DFProperties-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Examples-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-Begin -->
+##### ApplicationLaunchRestrictions/{Grouping}/EXE/EnforcementMode
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-Applicability-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/{Grouping}/EXE/EnforcementMode
+```
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-OmaUri-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-Description-Begin -->
+<!-- Description-Source-DDF -->
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-Description-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-Editable-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-DFProperties-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-Examples-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-EnforcementMode-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-NonInteractiveProcessEnforcement-Begin -->
+##### ApplicationLaunchRestrictions/{Grouping}/EXE/NonInteractiveProcessEnforcement
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-NonInteractiveProcessEnforcement-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-NonInteractiveProcessEnforcement-Applicability-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-NonInteractiveProcessEnforcement-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/{Grouping}/EXE/NonInteractiveProcessEnforcement
+```
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-NonInteractiveProcessEnforcement-OmaUri-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-NonInteractiveProcessEnforcement-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-NonInteractiveProcessEnforcement-Description-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-NonInteractiveProcessEnforcement-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-NonInteractiveProcessEnforcement-Editable-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-NonInteractiveProcessEnforcement-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-NonInteractiveProcessEnforcement-DFProperties-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-NonInteractiveProcessEnforcement-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-NonInteractiveProcessEnforcement-Examples-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-NonInteractiveProcessEnforcement-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Policy-Begin -->
+##### ApplicationLaunchRestrictions/{Grouping}/EXE/Policy
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Policy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Policy-Applicability-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Policy-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/{Grouping}/EXE/Policy
+```
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Policy-OmaUri-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Policy-Description-Begin -->
+<!-- Description-Source-DDF -->
 Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Policy-Description-End -->
 
-Data type is Base64.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Policy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Policy-Editable-End -->
 
-Supported operations are Get, Add, Delete, and Replace.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Policy-DFProperties-Begin -->
+**Description framework properties**:
 
-> [!NOTE]
-> To use Code Integrity Policy, you first need to convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet. Then a Base64-encoded blob of the binary policy representation should be created (for example, using the [certutil -encode](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732443(v=ws.11)) command line tool) and added to the Applocker-CSP.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Reboot Behavior | Automatic |
+| Allowed Values | See [Policy XSD Schema](#policy-xsd-schema) |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Policy-DFProperties-End -->
 
-<a href="" id="applocker-enterprisedataprotection"></a>**AppLocker/EnterpriseDataProtection**  
-Captures the list of apps that are allowed to handle enterprise data. Should be used in conjunction with the settings in **./Device/Vendor/MSFT/EnterpriseDataProtection** in [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md).
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Policy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Policy-Examples-End -->
 
-In Windows 10, version 1607 the Windows Information Protection has a concept for allowed and exempt applications. Allowed applications can access enterprise data and the data handled by those applications are protected with encryption. Exempt applications can also access enterprise data, but the data handled by those applications are not protected. This is because some critical enterprise applications may have compatibility problems with encrypted data.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-EXE-Policy-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Begin -->
+#### ApplicationLaunchRestrictions/{Grouping}/MSI
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Applicability-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/{Grouping}/MSI
+```
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-OmaUri-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Description-Begin -->
+<!-- Description-Source-DDF -->
+Defines restrictions for executing Windows Installer files.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Description-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Editable-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-DFProperties-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Examples-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-Begin -->
+##### ApplicationLaunchRestrictions/{Grouping}/MSI/EnforcementMode
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-Applicability-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/{Grouping}/MSI/EnforcementMode
+```
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-OmaUri-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-Description-Begin -->
+<!-- Description-Source-DDF -->
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-Description-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-Editable-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-DFProperties-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-Examples-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-EnforcementMode-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Policy-Begin -->
+##### ApplicationLaunchRestrictions/{Grouping}/MSI/Policy
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Policy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Policy-Applicability-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Policy-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/{Grouping}/MSI/Policy
+```
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Policy-OmaUri-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Policy-Description-Begin -->
+<!-- Description-Source-DDF -->
+Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Policy-Description-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Policy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Policy-Editable-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Policy-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Reboot Behavior | Automatic |
+| Allowed Values | See [Policy XSD Schema](#policy-xsd-schema) |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Policy-DFProperties-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Policy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Policy-Examples-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-MSI-Policy-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Begin -->
+#### ApplicationLaunchRestrictions/{Grouping}/Script
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Applicability-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/{Grouping}/Script
+```
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-OmaUri-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Description-Begin -->
+<!-- Description-Source-DDF -->
+Defines restrictions for running scripts.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Description-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Editable-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-DFProperties-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Examples-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-Begin -->
+##### ApplicationLaunchRestrictions/{Grouping}/Script/EnforcementMode
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-Applicability-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/{Grouping}/Script/EnforcementMode
+```
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-OmaUri-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-Description-Begin -->
+<!-- Description-Source-DDF -->
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-Description-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-Editable-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-DFProperties-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-Examples-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-EnforcementMode-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Policy-Begin -->
+##### ApplicationLaunchRestrictions/{Grouping}/Script/Policy
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Policy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Policy-Applicability-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Policy-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/{Grouping}/Script/Policy
+```
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Policy-OmaUri-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Policy-Description-Begin -->
+<!-- Description-Source-DDF -->
+Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Policy-Description-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Policy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Policy-Editable-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Policy-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Reboot Behavior | Automatic |
+| Allowed Values | See [Policy XSD Schema](#policy-xsd-schema) |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Policy-DFProperties-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Policy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Policy-Examples-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-Script-Policy-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Begin -->
+#### ApplicationLaunchRestrictions/{Grouping}/StoreApps
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Applicability-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/{Grouping}/StoreApps
+```
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-OmaUri-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Description-Begin -->
+<!-- Description-Source-DDF -->
+Defines restrictions for running apps from the Microsoft Store.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Description-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Editable-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-DFProperties-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Examples-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-Begin -->
+##### ApplicationLaunchRestrictions/{Grouping}/StoreApps/EnforcementMode
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-Applicability-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/{Grouping}/StoreApps/EnforcementMode
+```
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-OmaUri-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-Description-Begin -->
+<!-- Description-Source-DDF -->
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-Description-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-Editable-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-DFProperties-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-Examples-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-EnforcementMode-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Policy-Begin -->
+##### ApplicationLaunchRestrictions/{Grouping}/StoreApps/Policy
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Policy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Policy-Applicability-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Policy-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/{Grouping}/StoreApps/Policy
+```
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Policy-OmaUri-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Policy-Description-Begin -->
+<!-- Description-Source-DDF -->
+Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Policy-Description-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Policy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Policy-Editable-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Policy-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Reboot Behavior | Automatic |
+| Allowed Values | See [Policy XSD Schema](#policy-xsd-schema) |
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Policy-DFProperties-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Policy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Policy-Examples-End -->
+
+<!-- Device-ApplicationLaunchRestrictions-{Grouping}-StoreApps-Policy-End -->
+
+<!-- Device-EnterpriseDataProtection-Begin -->
+## EnterpriseDataProtection
+
+<!-- Device-EnterpriseDataProtection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-EnterpriseDataProtection-Applicability-End -->
+
+<!-- Device-EnterpriseDataProtection-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/EnterpriseDataProtection
+```
+<!-- Device-EnterpriseDataProtection-OmaUri-End -->
+
+<!-- Device-EnterpriseDataProtection-Description-Begin -->
+<!-- Description-Source-DDF -->
+Captures the list of apps that are allowed to handle enterprise data. Should be used in conjunction with the settings in ./Device/Vendor/MSFT/EnterpriseDataProtection in EnterpriseDataProtection CSP.
+<!-- Device-EnterpriseDataProtection-Description-End -->
+
+<!-- Device-EnterpriseDataProtection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+In Windows 10, version 1607 the Windows Information Protection has a concept for allowed and exempt applications. Allowed applications can access enterprise data and the data handled by those applications are protected with encryption. Exempt applications can also access enterprise data, but the data handled by those applications aren't protected. This is because some critical enterprise applications may have compatibility problems with encrypted data.
 
 You can set the allowed list using the following URI:
+
 - ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/_Grouping_/EXE/Policy
 - ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/_Grouping_/StoreApps/Policy
 
 You can set the exempt list using the following URI. The _Grouping_ string must contain the keyword "EdpExempt" anywhere to help distinguish the exempt list from the allowed list. The "EdpExempt" keyword is also evaluated in a case-insensitive manner:
+
 - ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/_Grouping includes "EdpExempt"_/EXE/Policy
 - ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/_Grouping includes "EdpExempt"_/StoreApps/Policy
 
 Exempt examples:
+
 - ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/ContosoEdpExempt/EXE/Policy
 - ./Vendor/MSFT/AppLocker/EnterpriseDataProtection/xxxxxEdpExemptxxxxx/EXE/Policy
 
 Additional information:
 
-- [Recommended deny list for Windows Information Protection](#recommended-deny-list-for-windows-information-protection) - example for Windows 10, version 1607 that denies known unenlightened Microsoft apps from accessing enterprise data as an allowed app. This ensures an administrator does not accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
+- [Recommended blocklist for Windows Information Protection](#recommended-blocklist-for-windows-information-protection) - example for Windows 10, version 1607 that denies known unenlightened Microsoft apps from accessing enterprise data as an allowed app. This prevention ensures an administrator doesn't accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
+<!-- Device-EnterpriseDataProtection-Editable-End -->
 
-<a href="" id="applocker-enterprisedataprotection-grouping"></a>**AppLocker/EnterpriseDataProtection/_Grouping_**  
-Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it is to determine what their purpose is, and to not conflict with other identifiers that they define.
-Different enrollments and contexts may use the same Authority identifier, even if many such identifiers are active at the same time.
+<!-- Device-EnterpriseDataProtection-DFProperties-Begin -->
+**Description framework properties**:
 
-Supported operations are Get, Add, Delete, and Replace.
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Get |
+<!-- Device-EnterpriseDataProtection-DFProperties-End -->
 
-<a href="" id="applocker-enterprisedataprotection-grouping-exe"></a>**AppLocker/EnterpriseDataProtection/_Grouping_/EXE**  
+<!-- Device-EnterpriseDataProtection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-EnterpriseDataProtection-Examples-End -->
+
+<!-- Device-EnterpriseDataProtection-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-Begin -->
+### EnterpriseDataProtection/{Grouping}
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-EnterpriseDataProtection-{Grouping}-Applicability-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/EnterpriseDataProtection/{Grouping}
+```
+<!-- Device-EnterpriseDataProtection-{Grouping}-OmaUri-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-Description-Begin -->
+<!-- Description-Source-DDF -->
+Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it's to determine what their purpose is, and to not conflict with other identifiers that they define. Different enrollments and contexts may use the same Authority identifier, even if many such identifiers are active at the same time.
+<!-- Device-EnterpriseDataProtection-{Grouping}-Description-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-EnterpriseDataProtection-{Grouping}-Editable-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get, Replace |
+| Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
+<!-- Device-EnterpriseDataProtection-{Grouping}-DFProperties-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-EnterpriseDataProtection-{Grouping}-Examples-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Begin -->
+#### EnterpriseDataProtection/{Grouping}/EXE
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Applicability-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/EnterpriseDataProtection/{Grouping}/EXE
+```
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-OmaUri-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Description-Begin -->
+<!-- Description-Source-DDF -->
 Defines restrictions for launching executable applications.
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Description-End -->
 
-Supported operations are Get, Add, Delete, and Replace.
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Editable-End -->
 
-<a href="" id="applocker-enterprisedataprotection-grouping-exe-policy"></a>**AppLocker/EnterpriseDataProtection/_Grouping_/EXE/Policy**  
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-DFProperties-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Examples-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Policy-Begin -->
+##### EnterpriseDataProtection/{Grouping}/EXE/Policy
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Policy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Policy-Applicability-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Policy-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/EnterpriseDataProtection/{Grouping}/EXE/Policy
+```
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Policy-OmaUri-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Policy-Description-Begin -->
+<!-- Description-Source-DDF -->
 Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Policy-Description-End -->
 
-Data type is string. 
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Policy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Policy-Editable-End -->
 
-Supported operations are Get, Add, Delete, and Replace.
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Policy-DFProperties-Begin -->
+**Description framework properties**:
 
-<a href="" id="applocker-enterprisedataprotection-grouping-storeapps"></a>**AppLocker/EnterpriseDataProtection/_Grouping_/StoreApps**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Reboot Behavior | Automatic |
+| Allowed Values | See [Policy XSD Schema](#policy-xsd-schema) |
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Policy-DFProperties-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Policy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Policy-Examples-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-EXE-Policy-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Begin -->
+#### EnterpriseDataProtection/{Grouping}/StoreApps
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Applicability-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/EnterpriseDataProtection/{Grouping}/StoreApps
+```
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-OmaUri-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Description-Begin -->
+<!-- Description-Source-DDF -->
 Defines restrictions for running apps from the Microsoft Store.
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Description-End -->
 
-Supported operations are Get, Add, Delete, and Replace.
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Editable-End -->
 
-<a href="" id="applocker-enterprisedataprotection-grouping-exe-storeapps"></a>**AppLocker/EnterpriseDataProtection/_Grouping_/StoreApps/Policy**  
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-DFProperties-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Examples-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Policy-Begin -->
+##### EnterpriseDataProtection/{Grouping}/StoreApps/Policy
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Policy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Policy-Applicability-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Policy-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/EnterpriseDataProtection/{Grouping}/StoreApps/Policy
+```
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Policy-OmaUri-End -->
+
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Policy-Description-Begin -->
+<!-- Description-Source-DDF -->
 Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Policy-Description-End -->
 
-Data type is string.
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Policy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Policy-Editable-End -->
 
-Supported operations are Get, Add, Delete, and Replace.
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Policy-DFProperties-Begin -->
+**Description framework properties**:
 
-1.  On your phone under **Device discovery**, tap **Pair**. You will get a code (case sensitive).
-2.  On the browser on the **Set up access page**, enter the code (case sensitive) into the text box and click **Submit**.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Reboot Behavior | Automatic |
+| Allowed Values | See [Policy XSD Schema](#policy-xsd-schema) |
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Policy-DFProperties-End -->
 
-    The **Device Portal** page opens on your browser.
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Policy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Policy-Examples-End -->
 
-    ![device portal screenshot.](images/applocker-screenshot1.png)
+<!-- Device-EnterpriseDataProtection-{Grouping}-StoreApps-Policy-End -->
 
-3.  On the desktop **Device Portal** page, click **Apps** to open the **App Manager**.
-4.  On the **App Manager** page under **Running apps**, you will see the **Publisher** and **PackageFullName** of apps.
+<!-- Device-FamilySafety-Begin -->
+## FamilySafety
 
-    ![device portal app manager.](images/applocker-screenshot3.png)
+<!-- Device-FamilySafety-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-FamilySafety-Applicability-End -->
 
-5. If you do not see the app that you want, look under **Installed apps**. Using the drop- down menu, click on the application and you get the Version, Publisher, and PackageFullName displayed.
+<!-- Device-FamilySafety-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/FamilySafety
+```
+<!-- Device-FamilySafety-OmaUri-End -->
 
-    ![app manager.](images/applocker-screenshot2.png)
+<!-- Device-FamilySafety-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- Device-FamilySafety-Description-End -->
+
+<!-- Device-FamilySafety-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-FamilySafety-Editable-End -->
+
+<!-- Device-FamilySafety-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Get |
+<!-- Device-FamilySafety-DFProperties-End -->
+
+<!-- Device-FamilySafety-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-FamilySafety-Examples-End -->
+
+<!-- Device-FamilySafety-End -->
+
+<!-- Device-FamilySafety-{Grouping}-Begin -->
+### FamilySafety/{Grouping}
+
+<!-- Device-FamilySafety-{Grouping}-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-FamilySafety-{Grouping}-Applicability-End -->
+
+<!-- Device-FamilySafety-{Grouping}-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/FamilySafety/{Grouping}
+```
+<!-- Device-FamilySafety-{Grouping}-OmaUri-End -->
+
+<!-- Device-FamilySafety-{Grouping}-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- Device-FamilySafety-{Grouping}-Description-End -->
+
+<!-- Device-FamilySafety-{Grouping}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-FamilySafety-{Grouping}-Editable-End -->
+
+<!-- Device-FamilySafety-{Grouping}-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get, Replace |
+| Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
+<!-- Device-FamilySafety-{Grouping}-DFProperties-End -->
+
+<!-- Device-FamilySafety-{Grouping}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-FamilySafety-{Grouping}-Examples-End -->
+
+<!-- Device-FamilySafety-{Grouping}-End -->
+
+<!-- Device-FamilySafety-{Grouping}-EXE-Begin -->
+#### FamilySafety/{Grouping}/EXE
+
+<!-- Device-FamilySafety-{Grouping}-EXE-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-FamilySafety-{Grouping}-EXE-Applicability-End -->
+
+<!-- Device-FamilySafety-{Grouping}-EXE-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/FamilySafety/{Grouping}/EXE
+```
+<!-- Device-FamilySafety-{Grouping}-EXE-OmaUri-End -->
+
+<!-- Device-FamilySafety-{Grouping}-EXE-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- Device-FamilySafety-{Grouping}-EXE-Description-End -->
+
+<!-- Device-FamilySafety-{Grouping}-EXE-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-FamilySafety-{Grouping}-EXE-Editable-End -->
+
+<!-- Device-FamilySafety-{Grouping}-EXE-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-FamilySafety-{Grouping}-EXE-DFProperties-End -->
+
+<!-- Device-FamilySafety-{Grouping}-EXE-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-FamilySafety-{Grouping}-EXE-Examples-End -->
+
+<!-- Device-FamilySafety-{Grouping}-EXE-End -->
+
+<!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-Begin -->
+##### FamilySafety/{Grouping}/EXE/EnforcementMode
+
+<!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-Applicability-End -->
+
+<!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/FamilySafety/{Grouping}/EXE/EnforcementMode
+```
+<!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-OmaUri-End -->
+
+<!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-Description-Begin -->
+<!-- Description-Source-DDF -->
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+<!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-Description-End -->
+
+<!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-Editable-End -->
+
+<!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-DFProperties-End -->
+
+<!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-Examples-End -->
+
+<!-- Device-FamilySafety-{Grouping}-EXE-EnforcementMode-End -->
+
+<!-- Device-FamilySafety-{Grouping}-EXE-Policy-Begin -->
+##### FamilySafety/{Grouping}/EXE/Policy
+
+<!-- Device-FamilySafety-{Grouping}-EXE-Policy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-FamilySafety-{Grouping}-EXE-Policy-Applicability-End -->
+
+<!-- Device-FamilySafety-{Grouping}-EXE-Policy-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/FamilySafety/{Grouping}/EXE/Policy
+```
+<!-- Device-FamilySafety-{Grouping}-EXE-Policy-OmaUri-End -->
+
+<!-- Device-FamilySafety-{Grouping}-EXE-Policy-Description-Begin -->
+<!-- Description-Source-DDF -->
+Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
+<!-- Device-FamilySafety-{Grouping}-EXE-Policy-Description-End -->
+
+<!-- Device-FamilySafety-{Grouping}-EXE-Policy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-FamilySafety-{Grouping}-EXE-Policy-Editable-End -->
+
+<!-- Device-FamilySafety-{Grouping}-EXE-Policy-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Reboot Behavior | Automatic |
+| Allowed Values | See [Policy XSD Schema](#policy-xsd-schema) |
+<!-- Device-FamilySafety-{Grouping}-EXE-Policy-DFProperties-End -->
+
+<!-- Device-FamilySafety-{Grouping}-EXE-Policy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-FamilySafety-{Grouping}-EXE-Policy-Examples-End -->
+
+<!-- Device-FamilySafety-{Grouping}-EXE-Policy-End -->
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Begin -->
+#### FamilySafety/{Grouping}/StoreApps
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Applicability-End -->
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/FamilySafety/{Grouping}/StoreApps
+```
+<!-- Device-FamilySafety-{Grouping}-StoreApps-OmaUri-End -->
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Description-End -->
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Editable-End -->
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-FamilySafety-{Grouping}-StoreApps-DFProperties-End -->
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Examples-End -->
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-End -->
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-Begin -->
+##### FamilySafety/{Grouping}/StoreApps/EnforcementMode
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-Applicability-End -->
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/FamilySafety/{Grouping}/StoreApps/EnforcementMode
+```
+<!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-OmaUri-End -->
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-Description-Begin -->
+<!-- Description-Source-DDF -->
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+<!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-Description-End -->
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-Editable-End -->
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-DFProperties-End -->
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-Examples-End -->
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-EnforcementMode-End -->
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Policy-Begin -->
+##### FamilySafety/{Grouping}/StoreApps/Policy
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Policy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Policy-Applicability-End -->
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Policy-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/FamilySafety/{Grouping}/StoreApps/Policy
+```
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Policy-OmaUri-End -->
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Policy-Description-Begin -->
+<!-- Description-Source-DDF -->
+Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Policy-Description-End -->
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Policy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Policy-Editable-End -->
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Policy-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Reboot Behavior | Automatic |
+| Allowed Values | See [Policy XSD Schema](#policy-xsd-schema) |
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Policy-DFProperties-End -->
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Policy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Policy-Examples-End -->
+
+<!-- Device-FamilySafety-{Grouping}-StoreApps-Policy-End -->
+
+<!-- Device-LaunchControl-Begin -->
+## LaunchControl
+
+<!-- Device-LaunchControl-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-LaunchControl-Applicability-End -->
+
+<!-- Device-LaunchControl-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/LaunchControl
+```
+<!-- Device-LaunchControl-OmaUri-End -->
+
+<!-- Device-LaunchControl-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- Device-LaunchControl-Description-End -->
+
+<!-- Device-LaunchControl-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-LaunchControl-Editable-End -->
+
+<!-- Device-LaunchControl-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Get |
+<!-- Device-LaunchControl-DFProperties-End -->
+
+<!-- Device-LaunchControl-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-LaunchControl-Examples-End -->
+
+<!-- Device-LaunchControl-End -->
+
+<!-- Device-LaunchControl-{Grouping}-Begin -->
+### LaunchControl/{Grouping}
+
+<!-- Device-LaunchControl-{Grouping}-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-LaunchControl-{Grouping}-Applicability-End -->
+
+<!-- Device-LaunchControl-{Grouping}-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/LaunchControl/{Grouping}
+```
+<!-- Device-LaunchControl-{Grouping}-OmaUri-End -->
+
+<!-- Device-LaunchControl-{Grouping}-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- Device-LaunchControl-{Grouping}-Description-End -->
+
+<!-- Device-LaunchControl-{Grouping}-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-LaunchControl-{Grouping}-Editable-End -->
+
+<!-- Device-LaunchControl-{Grouping}-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get, Replace |
+| Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
+<!-- Device-LaunchControl-{Grouping}-DFProperties-End -->
+
+<!-- Device-LaunchControl-{Grouping}-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-LaunchControl-{Grouping}-Examples-End -->
+
+<!-- Device-LaunchControl-{Grouping}-End -->
+
+<!-- Device-LaunchControl-{Grouping}-EXE-Begin -->
+#### LaunchControl/{Grouping}/EXE
+
+<!-- Device-LaunchControl-{Grouping}-EXE-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-LaunchControl-{Grouping}-EXE-Applicability-End -->
+
+<!-- Device-LaunchControl-{Grouping}-EXE-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/LaunchControl/{Grouping}/EXE
+```
+<!-- Device-LaunchControl-{Grouping}-EXE-OmaUri-End -->
+
+<!-- Device-LaunchControl-{Grouping}-EXE-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- Device-LaunchControl-{Grouping}-EXE-Description-End -->
+
+<!-- Device-LaunchControl-{Grouping}-EXE-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-LaunchControl-{Grouping}-EXE-Editable-End -->
+
+<!-- Device-LaunchControl-{Grouping}-EXE-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-LaunchControl-{Grouping}-EXE-DFProperties-End -->
+
+<!-- Device-LaunchControl-{Grouping}-EXE-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-LaunchControl-{Grouping}-EXE-Examples-End -->
+
+<!-- Device-LaunchControl-{Grouping}-EXE-End -->
+
+<!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-Begin -->
+##### LaunchControl/{Grouping}/EXE/EnforcementMode
+
+<!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-Applicability-End -->
+
+<!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/LaunchControl/{Grouping}/EXE/EnforcementMode
+```
+<!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-OmaUri-End -->
+
+<!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-Description-Begin -->
+<!-- Description-Source-DDF -->
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+<!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-Description-End -->
+
+<!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-Editable-End -->
+
+<!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get, Replace |
+<!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-DFProperties-End -->
+
+<!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-Examples-End -->
+
+<!-- Device-LaunchControl-{Grouping}-EXE-EnforcementMode-End -->
+
+<!-- Device-LaunchControl-{Grouping}-EXE-Policy-Begin -->
+##### LaunchControl/{Grouping}/EXE/Policy
+
+<!-- Device-LaunchControl-{Grouping}-EXE-Policy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-LaunchControl-{Grouping}-EXE-Policy-Applicability-End -->
+
+<!-- Device-LaunchControl-{Grouping}-EXE-Policy-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/LaunchControl/{Grouping}/EXE/Policy
+```
+<!-- Device-LaunchControl-{Grouping}-EXE-Policy-OmaUri-End -->
+
+<!-- Device-LaunchControl-{Grouping}-EXE-Policy-Description-Begin -->
+<!-- Description-Source-DDF -->
+Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
+<!-- Device-LaunchControl-{Grouping}-EXE-Policy-Description-End -->
+
+<!-- Device-LaunchControl-{Grouping}-EXE-Policy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-LaunchControl-{Grouping}-EXE-Policy-Editable-End -->
+
+<!-- Device-LaunchControl-{Grouping}-EXE-Policy-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get, Replace |
+| Reboot Behavior | Automatic |
+| Allowed Values | See [Policy XSD Schema](#policy-xsd-schema) |
+<!-- Device-LaunchControl-{Grouping}-EXE-Policy-DFProperties-End -->
+
+<!-- Device-LaunchControl-{Grouping}-EXE-Policy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-LaunchControl-{Grouping}-EXE-Policy-Examples-End -->
+
+<!-- Device-LaunchControl-{Grouping}-EXE-Policy-End -->
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Begin -->
+#### LaunchControl/{Grouping}/StoreApps
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Applicability-End -->
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/LaunchControl/{Grouping}/StoreApps
+```
+<!-- Device-LaunchControl-{Grouping}-StoreApps-OmaUri-End -->
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Description-Begin -->
+<!-- Description-Source-Not-Found -->
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Description-End -->
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Editable-End -->
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-LaunchControl-{Grouping}-StoreApps-DFProperties-End -->
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Examples-End -->
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-End -->
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-Begin -->
+##### LaunchControl/{Grouping}/StoreApps/EnforcementMode
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-Applicability-End -->
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/LaunchControl/{Grouping}/StoreApps/EnforcementMode
+```
+<!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-OmaUri-End -->
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-Description-Begin -->
+<!-- Description-Source-DDF -->
+The EnforcementMode node for Windows Information Protection (formerly known as Enterprise Data Protection) doesn't affect the behavior of EnterpriseDataProtection. The EDPEnforcementLevel from Policy CSP should be used to enable and disable Windows Information Protection (formerly known as Enterprise Data Protection).
+<!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-Description-End -->
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-Editable-End -->
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get, Replace |
+<!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-DFProperties-End -->
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-Examples-End -->
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-EnforcementMode-End -->
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Policy-Begin -->
+##### LaunchControl/{Grouping}/StoreApps/Policy
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Policy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Policy-Applicability-End -->
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Policy-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/AppLocker/LaunchControl/{Grouping}/StoreApps/Policy
+```
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Policy-OmaUri-End -->
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Policy-Description-Begin -->
+<!-- Description-Source-DDF -->
+Policy nodes define the policy for launching executables, Windows Installer files, scripts, store apps, and DLL files. The contents of a given Policy node is precisely the XML format for a RuleCollection node in the corresponding AppLocker XML policy.
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Policy-Description-End -->
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Policy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Policy-Editable-End -->
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Policy-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Get, Replace |
+| Reboot Behavior | Automatic |
+| Allowed Values | See [Policy XSD Schema](#policy-xsd-schema) |
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Policy-DFProperties-End -->
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Policy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Policy-Examples-End -->
+
+<!-- Device-LaunchControl-{Grouping}-StoreApps-Policy-End -->
+
+<!-- AppLocker-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+## Policy XSD Schema
+
+```xml
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
+  <!-- -->
+  <!-- AppLockerPolicy-Type -->
+  <!-- -->
+  <xs:element name="AppLockerPolicy" type="PolicyType">
+    <xs:unique name="UniqueRuleCollectionTypeConstraint">
+      <xs:selector xpath="RuleCollection" />
+      <xs:field xpath="@Type" />
+    </xs:unique>
+    <xs:unique name="UniqueRuleIdConstraint">
+      <xs:selector xpath="RuleCollection/*" />
+      <xs:field xpath="@Id" />
+    </xs:unique>
+  </xs:element>
+  <!-- -->
+  <!-- Policy-Type -->
+  <!-- -->
+  <xs:complexType name="PolicyType">
+    <xs:sequence>
+      <xs:element name="RuleCollection" type="RuleCollectionType" minOccurs="0" maxOccurs="unbounded">
+      </xs:element>
+      <xs:element name="PolicyExtensions" type="PolicyExtensionsType" minOccurs="0" maxOccurs="1">
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="Version" type="PolicyVersionType" use="required" />
+  </xs:complexType>
+  <!-- -->
+  <!-- PolicyVersion-Type -->
+  <!-- -->
+  <xs:simpleType name="PolicyVersionType">
+    <xs:restriction base="xs:decimal">
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- -->
+  <!-- RuleCollection-Type -->
+  <!-- -->
+  <xs:complexType name="RuleCollectionType">
+    <xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FilePublisherRule" type="FilePublisherRuleType" minOccurs="0" maxOccurs="unbounded">
+        </xs:element>
+        <xs:element name="FilePathRule" type="FilePathRuleType" minOccurs="0" maxOccurs="unbounded">
+        </xs:element>
+        <xs:element name="FileHashRule" type="FileHashRuleType" minOccurs="0" maxOccurs="unbounded">
+        </xs:element>
+      </xs:choice>
+      <xs:element name="RuleCollectionExtensions" type="RuleCollectionExtensionsType" minOccurs="0" maxOccurs="1">
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="Type" type="xs:string" use="required" />
+    <xs:attribute name="EnforcementMode" type="EnforcementModeType" use="optional" />
+  </xs:complexType>
+  <!-- -->
+  <!-- PolicyExtensions-Type -->
+  <!-- -->
+  <xs:complexType name="PolicyExtensionsType">
+    <xs:sequence>
+      <xs:element name="ThresholdExtensions" type="ThresholdPolicyExtensionsType" minOccurs="1" maxOccurs="1" />
+      <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- -->
+  <!-- RuleCollectionExtensions-Type -->
+  <!-- -->
+  <xs:complexType name="RuleCollectionExtensionsType">
+    <xs:sequence>
+      <xs:element name="ThresholdExtensions" type="ThresholdCollectionExtensionsType" minOccurs="1" maxOccurs="1">
+        <!-- -->
+        <!-- Because of the way schema validation works, ThresholdExtensions must be present if RuleCollectionExtensions is present. Otherwise it could be ambiguous whether a ThresholdExtensions element matched the explicit element, or the xs:any element. As new extensions are invented in subsequent releases, they can follow the same model. -->
+        <!-- -->
+      </xs:element>
+      <xs:element name="RedstoneExtensions" type="RedstoneCollectionExtensionsType" minOccurs="1" maxOccurs="1" />
+      <xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- -->
+  <!-- EnforcementMode-Type -->
+  <!-- -->
+  <xs:simpleType name="EnforcementModeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotConfigured" />
+      <xs:enumeration value="Enabled" />
+      <xs:enumeration value="AuditOnly" />
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- -->
+  <!-- FilePublisherRule-Type -->
+  <!-- -->
+  <xs:complexType name="FilePublisherRuleType">
+    <xs:all>
+      <xs:element name="Conditions" type="FilePublisherRuleConditionsType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Exceptions" type="FilePublisherRuleExceptionsType" minOccurs="0" maxOccurs="1" />
+    </xs:all>
+    <xs:attributeGroup ref="RuleAttributes" />
+  </xs:complexType>
+  <!-- -->
+  <!-- FilePathRule-Type -->
+  <!-- -->
+  <xs:complexType name="FilePathRuleType">
+    <xs:all>
+      <xs:element name="Conditions" type="FilePathRuleConditionsType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="Exceptions" type="FilePathRuleExceptionsType" minOccurs="0" maxOccurs="1" />
+    </xs:all>
+    <xs:attributeGroup ref="RuleAttributes" />
+  </xs:complexType>
+  <!-- -->
+  <!-- FileHashRule-Type -->
+  <!-- -->
+  <xs:complexType name="FileHashRuleType">
+    <xs:all>
+      <xs:element name="Conditions" type="FileHashRuleConditionsType" minOccurs="1" maxOccurs="1" />
+    </xs:all>
+    <xs:attributeGroup ref="RuleAttributes" />
+  </xs:complexType>
+  <!-- -->
+  <!-- FilePublisherRuleConditions-Type -->
+  <!-- -->
+  <xs:complexType name="FilePublisherRuleConditionsType">
+    <xs:sequence>
+      <xs:element name="FilePublisherCondition" type="FilePublisherConditionType" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- -->
+  <!-- FilePublisherRuleExceptions-Type -->
+  <!-- -->
+  <xs:complexType name="FilePublisherRuleExceptionsType">
+    <xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FilePublisherCondition" type="FilePublisherConditionType" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="FilePathCondition" type="FilePathConditionType" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="FileHashCondition" type="FileHashConditionType" minOccurs="0" maxOccurs="unbounded" />
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <!-- -->
+  <!-- FilePathRuleConditions-Type -->
+  <!-- -->
+  <xs:complexType name="FilePathRuleConditionsType">
+    <xs:sequence>
+      <xs:element name="FilePathCondition" type="FilePathConditionType" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- -->
+  <!-- FilePathRuleExceptions-Type -->
+  <!-- -->
+  <xs:complexType name="FilePathRuleExceptionsType">
+    <xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FilePathCondition" type="FilePathConditionType" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="FilePublisherCondition" type="FilePublisherConditionType" minOccurs="0" maxOccurs="unbounded" />
+        <xs:element name="FileHashCondition" type="FileHashConditionType" minOccurs="0" maxOccurs="unbounded" />
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <!-- -->
+  <!-- FileHashRuleConditions-Type -->
+  <!-- -->
+  <xs:complexType name="FileHashRuleConditionsType">
+    <xs:sequence>
+      <xs:element name="FileHashCondition" type="FileHashConditionType" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- -->
+  <!-- Rule-Attributes -->
+  <!-- -->
+  <xs:attributeGroup name="RuleAttributes">
+    <xs:attribute name="Id" type="GuidType" use="required" />
+    <xs:attribute name="Name" type="RuleNameType" use="required" />
+    <xs:attribute name="Description" type="RuleDescriptionType" use="required" />
+    <xs:attribute name="UserOrGroupSid" type="SidType" use="required" />
+    <xs:attribute name="Action" type="RuleActionType" use="required" />
+  </xs:attributeGroup>
+  <!-- -->
+  <!-- RuleName-Type -->
+  <!-- -->
+  <xs:simpleType name="RuleNameType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="1024" />
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- -->
+  <!-- RuleDescription-Type -->
+  <!-- -->
+  <xs:simpleType name="RuleDescriptionType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="0" />
+      <xs:maxLength value="1024" />
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- -->
+  <!-- RuleAction-Type -->
+  <!-- -->
+  <xs:simpleType name="RuleActionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Allow" />
+      <xs:enumeration value="Deny" />
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- -->
+  <!-- FilePublisherCondition-Type -->
+  <!-- -->
+  <xs:complexType name="FilePublisherConditionType">
+    <xs:all>
+      <xs:element name="BinaryVersionRange" type="FileVersionRangeType" minOccurs="1" maxOccurs="1" />
+    </xs:all>
+    <xs:attribute name="PublisherName" type="PublisherNameType" use="required" />
+    <xs:attribute name="ProductName" type="ProductNameType" use="required" />
+    <xs:attribute name="BinaryName" type="BinaryNameType" use="required" />
+  </xs:complexType>
+  <!-- -->
+  <!-- PublisherName-Type -->
+  <!-- -->
+  <xs:simpleType name="PublisherNameType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- -->
+  <!-- ProductName-Type -->
+  <!-- -->
+  <xs:simpleType name="ProductNameType">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- -->
+  <!-- BinaryName-Type -->
+  <!-- -->
+  <xs:simpleType name="BinaryNameType">
+    <xs:restriction base="xs:string">
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- -->
+  <!-- FileVersionRange-Type -->
+  <!-- -->
+  <xs:complexType name="FileVersionRangeType">
+    <xs:attribute name="LowSection" type="FileVersionType" use="required" />
+    <xs:attribute name="HighSection" type="FileVersionType" use="required" />
+  </xs:complexType>
+  <!-- -->
+  <!-- FileVersion-Type -->
+  <!-- -->
+  <xs:simpleType name="FileVersionType">
+    <xs:union memberTypes="SpecificFileVersionType AnyFileVersionType" />
+  </xs:simpleType>
+  <!-- -->
+  <!-- SpecificFileVersion-Type -->
+  <!-- -->
+  <xs:simpleType name="SpecificFileVersionType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="([0-9]{1,5}.){3}[0-9]{1,5}" />
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- -->
+  <!-- AnyFileVersion-Type -->
+  <!-- -->
+  <xs:simpleType name="AnyFileVersionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="*" />
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- -->
+  <!-- FilePathCondition-Type -->
+  <!-- -->
+  <xs:complexType name="FilePathConditionType">
+    <xs:attribute name="Path" type="FilePathType" use="required" />
+  </xs:complexType>
+  <!-- -->
+  <!-- FilePath-Type -->
+  <!-- -->
+  <xs:simpleType name="FilePathType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="1" />
+      <xs:maxLength value="32767" />
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- -->
+  <!-- FileHashCondition-Type -->
+  <!-- -->
+  <xs:complexType name="FileHashConditionType">
+    <xs:sequence>
+      <xs:element name="FileHash" type="FileHashType" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- -->
+  <!-- FileHash-Type -->
+  <!-- -->
+  <xs:complexType name="FileHashType">
+    <xs:attribute name="Type" type="HashType" use="required" />
+    <xs:attribute name="Data" type="HashDataType" use="required" />
+    <xs:attribute name="SourceFileName" type="xs:string" use="optional" />
+    <xs:attribute name="SourceFileLength" type="xs:integer" use="optional" />
+  </xs:complexType>
+  <!-- -->
+  <!-- Hash-Type -->
+  <!-- -->
+  <xs:simpleType name="HashType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SHA256" />
+      <xs:enumeration value="SHA256Flat" />
+      <xs:enumeration value="SHA1" />
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- -->
+  <!-- HashData-Type -->
+  <!-- -->
+  <xs:simpleType name="HashDataType">
+    <xs:union memberTypes="SHA256HashDataType SHA256FlatHashDataType SHA1HashDataType" />
+  </xs:simpleType>
+  <xs:simpleType name="SHA256HashDataType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="0x([0-9A-Fa-f]{64})" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="SHA256FlatHashDataType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="0x([0-9A-Fa-f]{64})" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="SHA1HashDataType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="0x([0-9A-Fa-f]{40})" />
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- -->
+  <!-- ServicesEnforcementMode-Type -->
+  <!-- -->
+  <xs:simpleType name="ServicesEnforcementModeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotConfigured" />
+      <xs:enumeration value="Enabled" />
+      <xs:enumeration value="ServicesOnly" />
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- -->
+  <!-- Services-Type -->
+  <!-- -->
+  <xs:complexType name="ServicesType">
+    <xs:attribute name="EnforcementMode" type="ServicesEnforcementModeType" use="required" />
+  </xs:complexType>
+  <!-- -->
+  <!-- ThresholdCollectionExtensions-Type -->
+  <!-- -->
+  <xs:complexType name="ThresholdCollectionExtensionsType">
+    <xs:sequence>
+      <xs:element name="Services" type="ServicesType" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- -->
+  <!-- AllowSystemApps-Type -->
+  <!-- -->
+  <xs:simpleType name="AllowSystemAppsType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Enabled" />
+      <xs:enumeration value="NotEnabled" />
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- -->
+  <!-- SystemApps-Type -->
+  <!-- -->
+  <xs:complexType name="SystemAppsType">
+    <xs:attribute name="Allow" type="AllowSystemAppsType" use="required" />
+  </xs:complexType>
+  <!-- -->
+  <!-- OriginDataRevocation-Type -->
+  <!-- -->
+  <xs:complexType name="OriginDataRevocationType">
+    <xs:attribute name="CurrentOriginDataId" type="xs:unsignedInt" use="required" />
+    <xs:attribute name="TrustedOriginDataId" type="xs:unsignedInt" use="required" />
+  </xs:complexType>
+  <!-- -->
+  <!-- RedstoneCollectionExtensions-Type -->
+  <!-- -->
+  <xs:complexType name="RedstoneCollectionExtensionsType">
+    <xs:sequence>
+      <xs:element name="SystemApps" type="SystemAppsType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="OriginDataRevocation" type="OriginDataRevocationType" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- -->
+  <!-- ThresholdPolicyExtensions-Type -->
+  <!-- -->
+  <xs:complexType name="ThresholdPolicyExtensionsType">
+    <xs:sequence>
+      <xs:element name="Plugins" type="PluginsType" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PluginsType">
+    <xs:sequence>
+      <xs:element name="Plugin" type="PluginType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PluginType">
+    <xs:sequence>
+      <xs:element name="ExecutionCategories" type="ExecutionCategoriesType" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+    <xs:attribute name="Name" type="xs:string" />
+    <xs:attribute name="Id" type="GuidType" />
+  </xs:complexType>
+  <xs:complexType name="ExecutionCategoriesType">
+    <xs:sequence>
+      <xs:element name="ExecutionCategory" type="ExecutionCategoryType" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ExecutionCategoryType">
+    <xs:sequence>
+      <xs:element name="Policies" type="PluginPoliciesType" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+    <xs:attribute name="Id" type="GuidType" />
+    <xs:attribute name="AppidTypes" type="AttributeListType" use="optional" />
+  </xs:complexType>
+  <xs:simpleType name="AttributeListType">
+    <xs:list itemType="AttributeEnumType" />
+  </xs:simpleType>
+  <xs:simpleType name="AttributeEnumType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Hash" />
+      <xs:enumeration value="Path" />
+      <xs:enumeration value="Publisher" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="PluginPoliciesType">
+    <xs:sequence>
+      <xs:element name="Policy" type="PluginPolicyType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="PluginPolicyType">
+    <xs:attribute name="Id" type="GuidType" />
+  </xs:complexType>
+  <!-- -->
+  <!-- Generic Types... -->
+  <!-- -->
+  <!-- -->
+  <!-- Boolean-Type -->
+  <!-- -->
+  <xs:simpleType name="BooleanType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="True" />
+      <xs:enumeration value="False" />
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- -->
+  <!-- Guid-Type -->
+  <!-- -->
+  <xs:simpleType name="GuidType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[0-9A-Fa-f]{8}-([0-9A-Fa-f]{4}-){3}[0-9A-Fa-f]{12}" />
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- -->
+  <!-- Sid-Type -->
+  <!-- -->
+  <xs:simpleType name="SidType">
+    <xs:restriction base="xs:string">
+      <xs:minLength value="7" />
+      <xs:pattern value="S-1(-[0-9a-fA-F]+)+" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
+```
+
+## File Publisher Rules
 
 The following table shows the mapping of information to the AppLocker publisher rule field.
 
 |Device portal data|AppLocker publisher rule field|
 |--- |--- |
-|PackageFullName|ProductName<br><br> The product name is first part of the PackageFullName followed by the version number. In the Windows Camera example, the ProductName is Microsoft.WindowsCamera.|
+|PackageFullName|ProductName: The product name is first part of the PackageFullName followed by the version number. In the Windows Camera example, the ProductName is Microsoft.WindowsCamera.|
 |Publisher|Publisher|
-|Version|Version<br> <br>This can be used either in the HighSection or LowSection of the BinaryVersionRange.<br> <br>HighSection defines the highest version number and LowSection defines the lowest version number that should be trusted. You can use a wildcard for both versions to make a version- independent rule. Using a wildcard for one of the values will provide higher than or lower than a specific version semantics.|
+|Version|Version<br> <br>The version can be used either in the HighSection or LowSection of the BinaryVersionRange.<br> <br>HighSection defines the highest version number and LowSection defines the lowest version number that should be trusted. You can use a wildcard for both versions to make a version- independent rule. Using a wildcard for one of the values will provide higher than or lower than a specific version semantics.|
 
-Here is an example AppLocker publisher rule:
+Here's an example AppLocker publisher rule:
 
 ```xml
 <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Reader" BinaryName="*">
@@ -291,52 +2276,11 @@ Here is an example AppLocker publisher rule:
 </FilePublisherCondition>
 ```
 
-You can get the publisher name and product name of apps using a web API.
+You can get the publisher name and product name of apps using either `Get-AppxPackage` PowerShell cmdlet or [Windows Device Portal](/windows/uwp/debug-test-perf/device-portal-desktop).
 
-**To find publisher and product name for Microsoft apps in Microsoft Store for Business**
+## Settings apps that rely on splash apps
 
-1.  Go to the Microsoft Store for Business website, and find your app. For example, Microsoft OneNote.
-
-2.  Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, **9wzdncrfhvjl**.
-
-3.  In your browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values.
-
-Request URI:
-
-```http
-https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/{app ID}/applockerdata
-```
-
-Here is the example for Microsoft OneNote:
-
-Request
-
-```http
-https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata
-```
-
-Result
-
-```json
-{
-  "packageFamilyName": "Microsoft.Office.OneNote_8wekyb3d8bbwe",
-  "packageIdentityName": "Microsoft.Office.OneNote",
-  "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
-  "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
-}
-```
-
-|Result data|AppLocker publisher rule field|
-|--- |--- |
-|packageIdentityName|ProductName|
-|publisherCertificateName|Publisher|
-|windowsPhoneLegacyId|Same value maps to the ProductName and Publisher name. <br> <br> This value will only be present if there is a XAP package associated with the app in the Store. <br> <br>If this value is populated then the simple thing to do to cover both the AppX and XAP package would be to create two rules for the app. One rule for AppX using the packageIdentityName and publisherCertificateName value and another one using the windowsPhoneLegacyId value.|
-
-
-## <a href="" id="settingssplashapps"></a>Settings apps that rely on splash apps
-
-
-These apps are blocked unless they are explicitly added to the list of allowed apps. The following table shows the subset of Settings apps that rely on splash apps.
+These apps are blocked unless they're explicitly added to the list of allowed apps. The following table shows the subset of Settings apps that rely on splash apps.
 
 The product name is first part of the PackageFullName followed by the version number.
 
@@ -358,17 +2302,12 @@ The product name is first part of the PackageFullName followed by the version nu
 | SettingsPageAppsCorner             | 5b04b775-356b-4aa0-aaf8-6491ffea580a\_1.0.0.0\_neutral\_\_4vefaa8deck74 | 5b04b775-356b-4aa0-aaf8-6491ffea580a |
 | SettingsPagePhoneNfc               | b0894dfd-4671-4bb9-bc17-a8b39947ffb6\_1.0.0.0\_neutral\_\_1prqnbg33c1tj | b0894dfd-4671-4bb9-bc17-a8b39947ffb6 |
 
-
-
-## <a href="" id="inboxappsandcomponents"></a>Inbox apps and components
-
+## Inbox apps and components
 
 The following list shows the apps that may be included in the inbox.
 
 > [!NOTE]
 > This list identifies system apps that ship as part of Windows that you can add to your AppLocker policy to ensure proper functioning of the operating system. If you decide to block some of these apps, we recommend a thorough testing before deploying to your production environment. Failure to do so may result in unexpected failures and can significantly degrade the user experience.
-
-
 
 |App|Product ID|Product name|
 |--- |--- |--- |
@@ -461,7 +2400,7 @@ The following list shows the apps that may be included in the inbox.
 |Xbox|b806836f-eebe-41c9-8669-19e243b81b83|Microsoft.XboxApp|
 |Xbox identity provider|ba88225b-059a-45a2-a8eb-d3580283e49d|Microsoft.XboxIdentityProvider|
 
-## <a href="" id="allow-list-examples"></a>Allowlist examples
+## Allowlist examples
 
 The following example disables the calendar application.
 
@@ -526,7 +2465,7 @@ The following example blocks the usage of the map application.
 </SyncML>
 ```
 
-The following example disables the Mixed Reality Portal. In the example, the **Id** can be any generated GUID and the **Name** can be any name you choose. Note that `BinaryName="*"` allows you to block any app executable in the Mixed Reality Portal package. **Binary/VersionRange**, as shown in the example, will block all versions of the Mixed Reality Portal app.
+The following example disables the Mixed Reality Portal. In the example, the **Id** can be any generated GUID and the **Name** can be any name you choose. `BinaryName="*"` allows you to block any app executable in the Mixed Reality Portal package. **Binary/VersionRange**, as shown in the example, will block all versions of the Mixed Reality Portal app.
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.2">
@@ -1022,7 +2961,8 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
 ```
 
 ## Example for Windows 10 Holographic for Business
-The following example for Windows 10 Holographic for Business denies all apps and allows the minimum set of [inbox apps](#inboxappsandcomponents) to enable a working device, as well as Settings.
+
+The following example for Windows 10 Holographic for Business denies all apps and allows the minimum set of [inbox apps](#inbox-apps-and-components) to enable a working device, and Settings.
 
 ```xml
 <RuleCollection Type="Appx" EnforcementMode="Enabled">
@@ -1276,8 +3216,9 @@ The following example for Windows 10 Holographic for Business denies all apps an
 </RuleCollection>
 ```
 
-## Recommended deny list for Windows Information Protection
-The following example for Windows 10, version 1607 denies known unenlightened Microsoft apps from accessing enterprise data as an allowed app. (An administrator might still use an exempt rule, instead.) This ensures an administrator does not accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
+## Recommended blocklist for Windows Information Protection
+
+The following example for Windows 10, version 1607 denies known unenlightened Microsoft apps from accessing enterprise data as an allowed app. (An administrator might still use an exempt rule, instead.) This prevention ensures an administrator doesn't accidentally make these apps Windows Information Protection allowed, and avoid known compatibility issues related to automatic file encryption with these applications.
 
 In this example, Contoso is the node name. We recommend using a GUID for this node.
 
@@ -1343,7 +3284,7 @@ In this example, Contoso is the node name. We recommend using a GUID for this no
         <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT OFFICE" BinaryName="WINWORD.EXE">
           <BinaryVersionRange LowSection="16.0.10336.20000" HighSection="*" />
         </FilePublisherCondition>
-      </Exceptions>    
+      </Exceptions>
   </FilePublisherRule>
   <FilePublisherRule Id="de9f3461-6856-405d-9624-a80ca701f6cb" Name="MICROSOFT OFFICE 2003, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
     <Conditions>
@@ -1457,8 +3398,10 @@ In this example, Contoso is the node name. We recommend using a GUID for this no
   </SyncBody>
 </SyncML>
 ```
+<!-- AppLocker-CspMoreInfo-End -->
 
-## Related topics
+<!-- AppLocker-End -->
 
+## Related articles
 
 [Configuration service provider reference](configuration-service-provider-reference.md)

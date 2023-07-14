@@ -1,139 +1,155 @@
 ---
-title: Policy CSP - ADMX_DigitalLocker
-description: Policy CSP - ADMX_DigitalLocker
-ms.author: dansimp
+title: ADMX_DigitalLocker Policy CSP
+description: Learn more about the ADMX_DigitalLocker Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 08/31/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_DigitalLocker-Begin -->
 # Policy CSP - ADMX_DigitalLocker
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<hr/>
+<!-- ADMX_DigitalLocker-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_DigitalLocker-Editable-End -->
 
-<!--Policies-->
-## ADMX_DigitalLocker policies  
+<!-- Digitalx_DiableApplication_TitleText_1-Begin -->
+## Digitalx_DiableApplication_TitleText_1
 
-<dl>
-  <dd>
-    <a href="#admx-digitallocker-digitalx-diableapplication-titletext-1">ADMX_DigitalLocker/Digitalx_DiableApplication_TitleText_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-digitallocker-digitalx-diableapplication-titletext-2">ADMX_DigitalLocker/Digitalx_DiableApplication_TitleText_2</a>
-  </dd>
-</dl>
+<!-- Digitalx_DiableApplication_TitleText_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Digitalx_DiableApplication_TitleText_1-Applicability-End -->
 
+<!-- Digitalx_DiableApplication_TitleText_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_DigitalLocker/Digitalx_DiableApplication_TitleText_1
+```
+<!-- Digitalx_DiableApplication_TitleText_1-OmaUri-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-digitallocker-digitalx-diableapplication-titletext-1"></a>**ADMX_DigitalLocker/Digitalx_DiableApplication_TitleText_1**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting specifies whether Digital Locker can run.
+<!-- Digitalx_DiableApplication_TitleText_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies whether Digital Locker can run.
 
 Digital Locker is a dedicated download manager associated with Windows Marketplace and a feature of Windows that can be used to manage and download products acquired and stored in the user's Windows Marketplace Digital Locker.
 
-If you enable this setting, Digital Locker will not run.
+- If you enable this setting, Digital Locker won't run.
 
-If you disable or do not configure this setting, Digital Locker can be run.
+- If you disable or don't configure this setting, Digital Locker can be run.
+<!-- Digitalx_DiableApplication_TitleText_1-Description-End -->
 
-<!--/Description-->
+<!-- Digitalx_DiableApplication_TitleText_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Digitalx_DiableApplication_TitleText_1-Editable-End -->
 
+<!-- Digitalx_DiableApplication_TitleText_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not allow Digital Locker to run*
--   GP name: *Digitalx_DiableApplication_TitleText_1*
--   GP path: *Windows Components/Digital Locker*
--   GP ADMX file name: *DigitalLocker.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Digitalx_DiableApplication_TitleText_1-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- Digitalx_DiableApplication_TitleText_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-digitallocker-digitalx-diableapplication-titletext-2"></a>**ADMX_DigitalLocker/Digitalx_DiableApplication_TitleText_2**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Digitalx_DiableApplication_TitleText_1 |
+| Friendly Name | Do not allow Digital Locker to run |
+| Location | User Configuration |
+| Path | Windows Components > Digital Locker |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Digital Locker |
+| Registry Value Name | DoNotRunDigitalLocker |
+| ADMX File Name | DigitalLocker.admx |
+<!-- Digitalx_DiableApplication_TitleText_1-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Digitalx_DiableApplication_TitleText_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Digitalx_DiableApplication_TitleText_1-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Digitalx_DiableApplication_TitleText_1-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Digitalx_DiableApplication_TitleText_2-Begin -->
+## Digitalx_DiableApplication_TitleText_2
 
-> [!div class = "checklist"]
-> * Device
+<!-- Digitalx_DiableApplication_TitleText_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Digitalx_DiableApplication_TitleText_2-Applicability-End -->
 
-<hr/>
+<!-- Digitalx_DiableApplication_TitleText_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_DigitalLocker/Digitalx_DiableApplication_TitleText_2
+```
+<!-- Digitalx_DiableApplication_TitleText_2-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting specifies whether Digital Locker can run.
+<!-- Digitalx_DiableApplication_TitleText_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies whether Digital Locker can run.
 
 Digital Locker is a dedicated download manager associated with Windows Marketplace and a feature of Windows that can be used to manage and download products acquired and stored in the user's Windows Marketplace Digital Locker.
 
-If you enable this setting, Digital Locker will not run.
+- If you enable this setting, Digital Locker won't run.
 
-If you disable or do not configure this setting, Digital Locker can be run.
+- If you disable or don't configure this setting, Digital Locker can be run.
+<!-- Digitalx_DiableApplication_TitleText_2-Description-End -->
 
-<!--/Description-->
+<!-- Digitalx_DiableApplication_TitleText_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Digitalx_DiableApplication_TitleText_2-Editable-End -->
 
+<!-- Digitalx_DiableApplication_TitleText_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not allow Digital Locker to run*
--   GP name: *Digitalx_DiableApplication_TitleText_2*
--   GP path: *Windows Components/Digital Locker*
--   GP ADMX file name: *DigitalLocker.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Digitalx_DiableApplication_TitleText_2-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- Digitalx_DiableApplication_TitleText_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
-<!--/Policies-->
+| Name | Value |
+|:--|:--|
+| Name | Digitalx_DiableApplication_TitleText_2 |
+| Friendly Name | Do not allow Digital Locker to run |
+| Location | Computer Configuration |
+| Path | Windows Components > Digital Locker |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Digital Locker |
+| Registry Value Name | DoNotRunDigitalLocker |
+| ADMX File Name | DigitalLocker.admx |
+<!-- Digitalx_DiableApplication_TitleText_2-AdmxBacked-End -->
 
+<!-- Digitalx_DiableApplication_TitleText_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Digitalx_DiableApplication_TitleText_2-Examples-End -->
+
+<!-- Digitalx_DiableApplication_TitleText_2-End -->
+
+<!-- ADMX_DigitalLocker-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_DigitalLocker-CspMoreInfo-End -->
+
+<!-- ADMX_DigitalLocker-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

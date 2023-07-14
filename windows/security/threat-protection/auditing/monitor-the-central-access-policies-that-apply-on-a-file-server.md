@@ -1,21 +1,20 @@
 ---
-title: Monitor central access policies on a file server (Windows 10)
+title: Monitor central access policies on a file server 
 description: Learn how to monitor changes to the central access policies that apply to a file server when using advanced security auditing options.
 ms.assetid: 126b051e-c20d-41f1-b42f-6cff24dcf20c
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/09/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Monitor the central access policies that apply on a file server
@@ -23,7 +22,7 @@ ms.technology: windows-sec
 
 This article describes how to monitor changes to the central access policies (CAPs) that apply to a file server when using advanced security auditing options to monitor dynamic access control objects. CAPs are created on a domain controller and then applied to file servers through Group Policy management.
 
-Use the following procedures to configure and verify security auditing settings that are used to monitor changes to the set of CAPs on a file server. The following procedures assume that you have configured and deployed dynamic access control, including CAPs and claims, in your network. If you have not yet deployed dynamic access control in your network, see [Deploy a Central Access Policy (Demonstration Steps)](/windows-server/identity/solution-guides/deploy-a-central-access-policy--demonstration-steps-).
+Use the following procedures to configure and verify security auditing settings that are used to monitor changes to the set of CAPs on a file server. The following procedures assume that you have configured and deployed dynamic access control, including CAPs and claims, in your network. If you haven't yet deployed dynamic access control in your network, see [Deploy a Central Access Policy (Demonstration Steps)](/windows-server/identity/solution-guides/deploy-a-central-access-policy--demonstration-steps-).
 
 **To configure settings to monitor changes to central access policies**
 

@@ -1,17 +1,18 @@
 ---
-title: 5159(F) The Windows Filtering Platform has blocked a bind to a local port. (Windows 10)
+title: 5159(F) The Windows Filtering Platform has blocked a bind to a local port. 
 description: Describes security event 5159(F) The Windows Filtering Platform has blocked a bind to a local port.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5159(F): The Windows Filtering Platform has blocked a bind to a local port.
@@ -98,7 +99,7 @@ This event is logged if the Windows Filtering Platform has blocked a bind to a l
 
     -   0.0.0.0 - all IP addresses in IPv4 format
 
-    -   127.0.0.1 , ::1 - localhost
+    -   127.0.0.1, ::1 - localhost
 
 -   **Source Port** \[Type = UnicodeString\]**:** the port number used by the application.
 
@@ -124,7 +125,7 @@ This event is logged if the Windows Filtering Platform has blocked a bind to a l
 
 **Filter Information:**
 
--   **Filter Run-Time ID** \[Type = UInt64\]: unique filter ID that blocks the application from binding to the port. By default, Windows firewall won't prevent a port from binding by an application, and if this application doesn’t match any filters, you will get value 0 in this field.
+-   **Filter Run-Time ID** \[Type = UInt64\]: unique filter ID that blocks the application from binding to the port. By default, Windows firewall won't prevent a port from binding by an application, and if this application doesn’t match any filters, you'll get value 0 in this field.
 
     To find a specific Windows Filtering Platform filter by ID, run the following command: **netsh wfp show filters**. As a result of this command, the **filters.xml** file will be generated. Open this file and find the specific substring with the required filter ID (**&lt;filterId&gt;**)**,** for example:
 
@@ -138,4 +139,4 @@ This event is logged if the Windows Filtering Platform has blocked a bind to a l
 
 ## Security Monitoring Recommendations
 
--   There is no recommendation for this event in this document.
+-   There's no recommendation for this event in this document.

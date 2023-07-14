@@ -1,18 +1,19 @@
 ---
-title: Audit IPsec Main Mode (Windows 10)
+title: Audit IPsec Main Mode 
 description: Learn about the policy setting, Audit IPsec Main Mode, which determines if the results of certain protocols generate events during Main Mode negotiations.
 ms.assetid: 06ed26ec-3620-4ef4-a47a-c70df9c8827b
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/06/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit IPsec Main Mode

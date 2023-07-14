@@ -1,23 +1,15 @@
 ---
-title: Manage connections from Windows 10 and Windows 11 operating system components to Microsoft services
+title: Manage connections from Windows 10 and Windows 11 Server/Enterprise editions operating system components to Microsoft services
 description: Learn how to minimize connections from Windows to Microsoft services, and configure particular privacy settings related to these connections.
-ms.assetid: ACCEB0DD-BC6F-41B1-B359-140B242183D9
-ms.reviewer:
-keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
-ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
+ms.prod: windows-client
+ms.technology: itpro-privacy
 ms.localizationpriority: high
-audience: ITPro
-author: tomlayson
-ms.author: tomlayson
-manager: riche
-ms.collection:
-  - M365-security-compliance
-  - highpri
-ms.topic: article
-ms.date: 12/14/2021
-ms.technology: privacy
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
+ms.date: 03/07/2016
+ms.collection: highpri
+ms.topic: conceptual
 ---
 
 # Manage connections from Windows 10 and Windows 11 operating system components to Microsoft services
@@ -57,6 +49,11 @@ The following sections list the components that make network connections to Micr
 ### Settings for Windows 10 and Windows 11 Enterprise edition
 
 The following table lists management options for each setting,  For Windows 10 (beginning with Windows 10 Enterprise version 1607) and Windows 11.
+
+ > [!IMPORTANT]
+> **If you need assistance with troubleshooting issues, please refer to**:</br> 
+>  - [Keep your device running smoothly](https://support.microsoft.com/topic/keep-your-device-running-smoothly-with-recommended-troubleshooting-ec76fe10-4ac8-ce9d-49c6-757770fe68f1)</br>
+>  - [CSP - Troubleshooting](/windows/client-management/mdm/policy-csp-troubleshooting)
 
 
 | Setting | UI | Group Policy | Registry |
@@ -114,7 +111,8 @@ The following table lists management options for each setting,  For Windows 10 (
 | [28. Delivery Optimization](#bkmk-updates) | ![Check mark.](images/checkmark.png) | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [29. Windows Update](#bkmk-wu) | | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [30. Cloud Clipboard](#bkmk-clcp) | | ![Check mark](images/checkmark.png) |  |
-| [31. Services Configuration](#bkmk-svccfg) | | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [31. Services Configuration](#bkmk-svccfg) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [32. Widgets](#bkmk-widgets) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 
 
 ### Settings for Windows Server 2016 with Desktop Experience
@@ -307,6 +305,8 @@ You can also apply the Group Policies using the following registry keys:
 
 4. On the **Program** page, click **This program path**, type **%windir%\\systemapps\\Microsoft.Windows.Cortana\_cw5n1h2txyewy\\SearchUI.exe**, and then click **Next**.
 
+   - On Windows 11, type **"%windir%\\SystemApps\\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\\SearchHost.exe"** instead.
+
 5. On the **Action** page, click **Block the connection**, and then click **Next**.
 
 6. On the **Profile** page, ensure that the **Domain**, **Private**, and **Public** check boxes are selected, and then click **Next**.
@@ -326,6 +326,8 @@ You can also apply the Group Policies using the following registry keys:
 -or-
 
 - Create a new REG_SZ registry setting named **{0DE40C8E-C126-4A27-9371-A27DAB1039F7}** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\WindowsFirewall\\FirewallRules** and set it to a value of **v2.25|Action=Block|Active=TRUE|Dir=Out|Protocol=6|App=%windir%\\SystemApps\\Microsoft.Windows.Cortana_cw5n1h2txyewy\\searchUI.exe|Name=Block outbound Cortana|**
+
+- On Windows 11, follow the previous section instead and use the Group Policy editor.
 
 If your organization tests network traffic, do not use a network proxy as Windows Firewall does not block proxy traffic. Instead, use a network traffic analyzer. Based on your needs, there are many network traffic analyzers available at no cost.
 
@@ -577,7 +579,7 @@ Find the Microsoft Edge Group Policy objects under **Computer Configuration** > 
 | Configure search suggestions in Address Bar              | Choose whether the Address Bar shows search suggestions. <br /> **Set to Disabled**                    |
 | Configure Windows Defender SmartScreen (Windows 10, version 1703)               | Choose whether Microsoft Defender SmartScreen is turned on or off. <br /> **Set to Disabled**                            |
 | Allow web content on New Tab page                     | Choose whether a new tab page appears. <br /> **Set to Disabled**                                     |
-| Configure Start pages                       | Choose the Start page for domain-joined devices. <br /> **Enabled** and **Set this to <<about:blank>>**         |
+| Configure Start pages                       | Choose the Start page for domain-joined devices. <br /> **Enabled** and **Set this to ```<<about:blank>>```**         |
 | Prevent the First Run webpage from opening on Microsoft Edge                       | Choose whether employees see the First Run webpage. <br /> **Set to: Enable**        |
 | Allow Microsoft Compatibility List                       | Choose whether to use the Microsoft Compatibility List in Microsoft Edge. <br /> **Set to: Disabled**        |
 
@@ -587,13 +589,13 @@ Alternatively, you can configure the following Registry keys as described:
 | - | - |
 | Allow Address Bar drop-down list suggestions  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\ServiceUI<br/>REG_DWORD name: ShowOneBox<br/> Set to **0**|
 | Allow configuration updates for the Books Library  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\BooksLibrary<br/>REG_DWORD name: AllowConfigurationUpdateForBooksLibrary<br/> Set to **0**|
-| Configure Autofill  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main<br/>REG_SZ name: Use FormSuggest<br/>Value : **No** |
+| Configure Autofill  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main<br/>REG_SZ name: Use FormSuggest<br/>Value: **No** |
 | Configure Do Not Track   | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main<br/>REG_DWORD name: DoNotTrack<br/> REG_DWORD: **1** |
 | Configure Password Manager | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main<br/>REG_SZ name: FormSuggest Passwords<br /> REG_SZ: **No** |
 | Configure search suggestions in Address Bar | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\SearchScopes<br/>REG_DWORD name: ShowSearchSuggestionsGlobal <br />Value: **0**|
 | Configure Windows Defender SmartScreen (Windows 10, version 1703) | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\PhishingFilter<br/>REG_DWORD name: EnabledV9 <br/>Value: **0** |
 | Allow web content on New Tab page  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\ServiceUI<br/>REG_DWORD name: AllowWebContentOnNewTabPage <br/>Value: **0** |
-| Configure corporate Home pages | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Internet Settings<br/>REG_SZ name: ProvisionedHomePages <br/>Value: **<<about:blank>>**|
+| Configure corporate Home pages | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Internet Settings<br/>REG_SZ name: ProvisionedHomePages <br/>Value: **```<<about:blank>>```**|
 | Prevent the First Run webpage from opening on Microsoft Edge | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main <br>REG_DWORD name: PreventFirstRunPage <br/>Value: **1**|
 | Choose whether employees can configure Compatibility View. | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\BrowserEmulation<br/>REG_DWORD: MSCompatibilityMode <br />Value: **0**|
 
@@ -856,6 +858,8 @@ Use Settings > Privacy & security to configure some settings that may be importa
 - [18.22 Activity History](#bkmk-act-history)
 
 - [18.23 Voice Activation](#bkmk-voice-act)
+
+- [18.24 News and interests](#bkmk-priv-news)
 
 ### <a href="" id="bkmk-general"></a>18.1 General
 
@@ -1524,6 +1528,13 @@ To turn this Off in the UI:
 
 - Create a REG_DWORD registry setting named **LetAppsActivateWithVoiceAboveLock** in **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\AppPrivacy** with a **value of 2 (two)**
 
+### <a href="" id="bkmk-priv-news"></a>18.24 News and interests  
+
+In the **Windows Feeds** area, you can choose which apps have access to your diagnostic information.
+
+To turn this off:
+
+- Create a REG_DWORD registry setting named **EnableFeeds** in **HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Feeds** with a **value of 0 (zero)**.
 
 ### <a href="" id="bkmk-spp"></a>19. Software Protection Platform
 
@@ -1718,7 +1729,7 @@ In Group Policy, configure:
 
    -and-
 
-- Create a SZ registry setting named **ConfigureAppInstallControl** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\SmartScreen** with a value of **Anywhere**.
+- Create an SZ registry setting named **ConfigureAppInstallControl** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\SmartScreen** with a value of **Anywhere**.
 
 
 ### <a href="" id="bkmk-spotlight"></a>25. Personalized Experiences
@@ -1900,6 +1911,18 @@ Services Configuration is used by Windows components and apps, such as the telem
 You can turn off Services Configuration by setting the following registry entries:
 
 Add a REG_DWORD value named **DisableOneSettingsDownloads** to **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\DataCollection** and set the value to **1**.
+
+### <a href="" id="bkmk-widgets"></a>32. Widgets
+
+Widgets is a news and feeds service that can be customized by the user. If you turn off this service, apps using this service may stop working.
+
+To turn off Widgets, you can use Group Policy or a custom setting in an MDM solution, such as Microsoft Intune.
+
+- For Group Policy, you can use the “Allow widgets” policy, which is also available in the Intune [settings catalog](/mem/intune/configuration/settings-catalog).
+- For an MDM solution, you can use the AllowNewsAndInterests setting in the NewsandInterests configuration service provider (CSP).
+
+For more information about AllowNewsAndInterests and the “Allow widgets” policy, [review this information](/windows/client-management/mdm/policy-csp-newsandinterests#allownewsandinterests).
+
 
 ### <a href="" id="bkmk-allowedtraffic"></a> Allowed traffic list for Windows Restricted Traffic Limited Functionality Baseline
 

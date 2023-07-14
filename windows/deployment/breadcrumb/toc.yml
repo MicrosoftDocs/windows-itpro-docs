@@ -1,0 +1,60 @@
+items:
+- name: Learn
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Windows
+    tocHref: /troubleshoot/windows-client/
+    topicHref: /windows/resources/
+    items:
+    - name: Deployment
+      tocHref: /troubleshoot/windows-client/deployment/
+      topicHref: /windows/deployment/
+
+- name: Learn
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Windows
+    tocHref: /windows/
+    topicHref: /windows/resources/
+    items:
+    - name: Deployment
+      tocHref: /windows/whats-new
+      topicHref: /windows/deployment/
+
+- name: Learn
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Windows
+    tocHref: /mem/intune/
+    topicHref: /windows/resources/
+    items:
+    - name: Deployment
+      tocHref: /mem/intune/protect/
+      topicHref: /windows/deployment/
+
+- name: Learn
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Windows
+    tocHref: /windows/
+    topicHref: /windows/resources/
+    items:
+    - name: Deployment
+      tocHref: /windows/client-management/mdm
+      topicHref: /windows/deployment/     
+
+- name: Learn
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Windows
+    tocHref: /windows/
+    topicHref: /windows/resources/
+    items:
+    - name: Deployment
+      tocHref: /windows/deployment/do
+      topicHref: /windows/deployment/

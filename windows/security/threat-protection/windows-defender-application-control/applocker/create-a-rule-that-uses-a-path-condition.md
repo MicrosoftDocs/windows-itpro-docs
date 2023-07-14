@@ -1,30 +1,18 @@
 ---
-title: Create a rule that uses a path condition (Windows)
+title: Create a rule that uses a path condition
 description: This topic for IT professionals shows how to create an AppLocker rule with a path condition.
-ms.assetid: 9b2093f5-5976-45fa-90c3-da1e0e845d95
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.author: vinpa
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+author: vinaypamnani-msft
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Create a rule that uses a path condition
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -33,7 +21,7 @@ This topic for IT professionals shows how to create an AppLocker rule with a pat
 
 The path condition identifies an app by its location in the file system of the computer or on the network.
 
->**Important:**  When creating a rule that uses a deny action, path conditions are less secure for preventing access to a file because a user could easily copy the file to a different location than what is specified in the rule. Because path rules correspond to locations within the file system, you should ensure that there are no subdirectories that are writable by non-administrators. For example, if you create a path rule for C:\\ with the allow action, any file within C:\\ will be allowed to run, including users' profiles.
+>**Important:**  When creating a rule that uses a deny action, path conditions are less secure for preventing access to a file because a user could easily copy the file to a different location than what is specified in the rule. Because path rules correspond to locations within the file system, you should ensure that there are no subdirectories that are writable by non-administrators. For example, if you create a path rule for C:\\ with the allow action, any file within C:\\ will be allowed to run, including users' profiles.
  
 For info about the path condition, see [Understanding the path rule condition in AppLocker](understanding-the-path-rule-condition-in-applocker.md).
 
@@ -48,7 +36,7 @@ You can perform this task by using the Group Policy Management Console for an Ap
 5.  On the **Conditions** page, select the **Path** rule condition, and then click **Next**.
 6.  Click **Browse Files** to locate the targeted folder for the app.
 
-    >**Note:**  When you browse to a file or folder location, the wizard automatically converts absolute file paths to use AppLocker path variables. You may edit the path after browsing to specify an absolute path, or you may type the path directly into the **Path** box. To learn more about AppLocker path variables, see [Understanding the path rule condition in AppLocker](understanding-the-path-rule-condition-in-applocker.md).
+    >**Note:**  When you browse to a file or folder location, the wizard automatically converts absolute file paths to use AppLocker path variables. You may edit the path after browsing to specify an absolute path, or you may type the path directly into the **Path** box. To learn more about AppLocker path variables, see [Understanding the path rule condition in AppLocker](understanding-the-path-rule-condition-in-applocker.md).
      
 7.  Click **Next**.
 8.  (Optional) On the **Exceptions** page, specify conditions by which to exclude files from being affected by the rule. Click **Next**.

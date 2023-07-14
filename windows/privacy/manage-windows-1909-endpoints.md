@@ -1,19 +1,14 @@
 ---
 title: Connection endpoints for Windows 10 Enterprise, version 1909
 description: Explains what Windows 10 endpoints are used for, how to turn off traffic to them, and the impact. Specific to Windows 10 Enterprise, version 1909.
-keywords: privacy, manage connections to Microsoft, Windows 10
-ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
+ms.prod: windows-client
+ms.technology: itpro-privacy
 ms.localizationpriority: high
-audience: ITPro
-author: gental-giant
-ms.author: v-hakima
-manager: obezeajo
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.date: 11/29/2021
-ms.technology: privacy
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
+ms.date: 01/18/2018
+ms.topic: reference
 ---
 # Manage connection endpoints for Windows 10 Enterprise, version 1909
 
@@ -36,10 +31,10 @@ The following methodology was used to derive these network endpoints:
 
 1. Set up the latest version of Windows 10 on a test virtual machine using the default settings.
 2. Leave the device(s) running idle for a week ("idle" means a user is not interacting with the system/device).
-3. Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
+3. Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic. 
 4. Compile reports on traffic going to public IP addresses.
 5. The test virtual machine(s) was logged into using a local account, and was not joined to a domain or Azure Active Directory.
-6. All traffic was captured in our lab using a IPV4 network. Therefore, no IPV6 traffic is reported here.
+6. All traffic was captured in our lab using an IPV4 network. Therefore, no IPV6 traffic is reported here.
 7. These tests were conducted in an approved Microsoft lab. It's possible your results may be different.
 8. These tests were conducted for one week, but if you capture traffic for longer you may have different results.
 
@@ -54,8 +49,8 @@ The following methodology was used to derive these network endpoints:
 ||The following endpoint is used for the Weather app. To turn off traffic for this endpoint, either uninstall the Weather app or disable the Microsoft Store. If you disable the Microsoft store, other Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.|HTTP|tile-service.weather.microsoft.com|
 |||HTTP|tile-service.weather.microsoft.com/en-us/livetile/preinstall|
 ||The following endpoint is used for OneNote Live Tile. To turn off traffic for this endpoint, either uninstall OneNote or disable the Microsoft Store. If you disable the Microsoft store, other Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.|HTTPS|cdn.onenote.net/*|
-||The following endpoint is used by the Photos app to download configuration files, and to connect to the Office 365 portal's shared infrastructure, including Office in a browser. To turn off traffic for this endpoint, either uninstall the Photos app or disable the Microsoft Store. If you disable the Microsoft store, other Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.|TLS v1.2|evoke-windowsservices-tas.msedge.net
-|Certificates|The following endpoint is used by the Automatic Root Certificates Update component to automatically check the list of trusted authorities on Windows Update to see if an update is available. It is possible to turn off traffic to this endpoint, but it is not recommended because as root certificates are updated over time, applications and websites may stop working because they did not receive an updated root certificate the application uses. Additionally, it is used to download certificates that are publicly known to be fraudulent. These settings are critical for both Windows security and the overall security of the Internet. We do not recommend blocking this endpoint. If traffic to this endpoint is turned off, Windows no longer automatically downloads certificates known to be fraudulent, which increases the attack vector on the device.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#automatic-root-certificates-update)|
+||The following endpoint is used by the Photos app to download configuration files, and to connect to the Office 365 portal's shared infrastructure, including Office in a browser. To turn off traffic for this endpoint, either uninstall the Photos app or disable the Microsoft Store. If you disable the Microsoft store, other Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious Store apps and users will still be able to open them.|TLS v1.2|evoke-windowsservices-tas.msedge.net|
+|Certificates|Certificates are digital files, stored on client devices, used to both encrypt data and verify the identity of an individual or organization. Trusted root certificates issued by a certification authority (CA) are stored in a certificate trust list (CTL). The Automatic Root Certificates Update mechanism contacts Windows Updates to update the CTL. If a new version of the CTL is identified, the list of trusted root certificates cached on the local device will be updated. Untrusted certificates are certificates where the server certificate issuer is unknown or is not trusted by the service. Untrusted certificates are also stored in a list on the local device and updated by the Automatic Root Certificates Update mechanism.<br> <br>If automatic updates are turned off, applications and websites may stop working because they did not receive an updated root certificate that the application uses. Additionally, the list of untrusted certificates will no longer be updated, which increases the attack vector on the device.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#automatic-root-certificates-update)|
 |||HTTP|ctldl.windowsupdate.com|
 |Cortana and Live Tiles|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-cortana)|
 ||The following endpoints are related to Cortana and Live Tiles. If you turn off traffic for this endpoint, you will block updates to Cortana greetings, tips, and Live Tiles.|HTTPS|www.bing.com*|
@@ -136,5 +131,5 @@ To view endpoints for non-Enterprise Windows 10 editions, see:
 
 ## Related links
 
-- [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US)
+- [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 - [Network infrastructure requirements for Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)

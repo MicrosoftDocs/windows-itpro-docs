@@ -1,17 +1,16 @@
 ---
 title: How to Deploy the App-V Server (Windows 10/11)
 description: Use these instructions to deploy the Application Virtualization (App-V) Server in App-V for Windows 10/11.
-author: greg-lindsay
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.prod: w10
+author: aczechowski
+ms.prod: windows-client
 ms.date: 04/18/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
+
 # How to Deploy the App-V Server (new installation)
 
 >Applies to: Windows Server 2016
@@ -107,7 +106,7 @@ ms.topic: article
 
     Example: `http://localhost:12345/console.html`. If the installation succeeded, the App-V Management console will display with no errors.
 
-## Related topics
+## Related articles
 
 * [Deploying App-V](appv-deploying-appv.md)
 * [How to install the management and reporting databases on separate computers from the management and reporting services](appv-install-the-management-and-reporting-databases-on-separate-computers.md)

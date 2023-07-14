@@ -1,33 +1,27 @@
 ---
 title: Compatibility Administrator User's Guide (Windows 10)
-ms.assetid: 0ce05f66-9009-4739-a789-60f3ce380e76
-ms.reviewer: 
-manager: laurawi
-ms.author: greglin
+manager: aaroncz
+ms.author: frankroj
 description: The Compatibility Administrator tool helps you resolve potential application-compatibility issues before deploying a new version of Windows.
-ms.prod: w10
-ms.mktglfcycl: plan
-ms.pagetype: appcompat
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
+ms.prod: windows-client
+author: frankroj
 ms.topic: article
-ms.custom: seo-marvel-mar2020
+ms.technology: itpro-deploy
+ms.date: 10/28/2022
 ---
 
 # Compatibility Administrator User's Guide
 
-
 **Applies to**
 
-- Windows 10
-- Windows 8.1
-- Windows 8
-- Windows 7
-- Windows Server 2012
-- Windows Server 2008 R2
+- Windows 10
+- Windows 8.1
+- Windows 8
+- Windows 7
+- Windows Server 2012
+- Windows Server 2008 R2
 
-The Compatibility Administrator tool helps you resolve potential application-compatibility issues before deploying a new version of Windows to your organization. Compatibility Administrator provides the following:
+The Compatibility Administrator tool helps you resolve potential application-compatibility issues before deploying a new version of Windows to your organization. Compatibility Administrator provides:
 
 - Compatibility fixes, compatibility modes, and AppHelp messages that you can use to resolve specific compatibility issues.
 
@@ -48,4 +42,4 @@ The following flowchart shows the steps for using the Compatibility Administrato
 |--- |--- |
 |[Using the Compatibility Administrator Tool](using-the-compatibility-administrator-tool.md)|This section provides information about using the Compatibility Administrator tool.|
 |[Managing Application-Compatibility Fixes and Custom Fix Databases](managing-application-compatibility-fixes-and-custom-fix-databases.md)|This section provides information about managing your application-compatibility fixes and custom-compatibility fix databases. This section explains the reasons for using compatibility fixes and how to deploy custom-compatibility fix databases.|
-|[Using the Sdbinst.exe Command-Line Tool](using-the-sdbinstexe-command-line-tool.md)|You must deploy your customized database (.Sdb) files to other computers in your organization before your compatibility fixes, compatibility modes, and AppHelp messages are applied. You can deploy your customized database files in several ways. Including, by using a logon script, by using Group Policy, or by performing file copy operations.|
+|[Using the Sdbinst.exe Command-Line Tool](using-the-sdbinstexe-command-line-tool.md)|Ensure that you deploy your customized database (.Sdb) files to other computers in your organization before your compatibility fixes, compatibility modes, and AppHelp messages are applied. You can deploy your customized database files in several ways, including, by using a logon script, by using Group Policy, or by performing file copy operations.|

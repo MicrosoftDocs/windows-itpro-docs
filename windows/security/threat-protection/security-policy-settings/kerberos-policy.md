@@ -1,21 +1,20 @@
 ---
-title: Kerberos Policy (Windows 10)
+title: Kerberos Policy 
 description: Describes the Kerberos Policy settings and provides links to policy setting descriptions.
 ms.assetid: 94017dd9-b1a3-4624-af9f-b29161b4bf38
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Kerberos Policy
@@ -25,7 +24,7 @@ ms.technology: windows-sec
 
 Describes the Kerberos Policy settings and provides links to policy setting descriptions.
 
-The Kerberos version 5 authentication protocol provides the default mechanism for authentication services and the authorization data necessary for a user to access a resource and perform a task on that resource. By reducing the lifetime of Kerberos tickets, you reduce the risk of a legitimate user's credentials being stolen and successfully used by an attacker. However, this also increases the authorization overhead. In most environments, these settings should not need to be changed.
+The Kerberos version 5 authentication protocol provides the default mechanism for authentication services and the authorization data necessary for a user to access a resource and perform a task on that resource. By reducing the lifetime of Kerberos tickets, you reduce the risk of a legitimate user's credentials being stolen and successfully used by an attacker. However, this ticket lifetime reduction also increases the authorization overhead. In most environments, these settings shouldn't need to be changed.
 
 These policy settings are located in **\\Computer Configuration\\Windows Settings\\Security Settings\\Account Policies\\Kerberos Policy**.
 

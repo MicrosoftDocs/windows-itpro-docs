@@ -1,17 +1,18 @@
 ---
-title: 6144(S) Security policy in the group policy objects has been applied successfully. (Windows 10)
+title: 6144(S) Security policy in the group policy objects has been applied successfully. 
 description: Describes security event 6144(S) Security policy in the group policy objects has been applied successfully.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 6144(S): Security policy in the group policy objects has been applied successfully.
@@ -25,7 +26,7 @@ ms.technology: windows-sec
 
 This event generates every time settings from the “Security Settings” section in the group policy object are applied successfully to a computer, without any errors. This event generates on the target computer itself.
 
-It is a routine event which shows you the list of Group Policy Objects that include “Security Settings” policies, and that were applied to the computer.
+It's a routine event that shows you the list of Group Policy Objects that include “Security Settings” policies, and that were applied to the computer.
 
 This event generates every time Group Policy is applied to the computer.
 
@@ -82,7 +83,7 @@ You can find specific GROUP\_POLICY\_GUID using **Get-GPO** PowerShell cmdlet wi
 
 For 6144(S): Security policy in the group policy objects has been applied successfully.
 
--   If you have a pre-defined list of Group Policy Objects which contain Security Settings and must be applied to specific computers, then you can compare the list from this event with your list and in case of any difference trigger an alert.
+-   If you have a pre-defined list of Group Policy Objects that contain Security Settings and must be applied to specific computers, then you can compare the list from this event with your list and if there's any difference, you must trigger an alert.
 
 -   This event is mostly an informational event.
 

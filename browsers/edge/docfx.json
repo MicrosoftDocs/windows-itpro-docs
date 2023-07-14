@@ -27,14 +27,18 @@
       }
     ],
     "globalMetadata": {
+      "uhfHeaderId": "MSDocsHeader-MSEdge",
       "recommendations": true,
-      "breadcrumb_path": "/microsoft-edge/deploy/breadcrumb/toc.json",
+      "adobe-target": true,
+      "ms.collection": [
+        "tier3"
+      ],
+      "breadcrumb_path": "/microsoft-edge/breadcrumbs/toc.json",
       "ROBOTS": "INDEX, FOLLOW",
-      "ms.technology": "microsoft-edge",
       "audience": "ITPro",
       "ms.topic": "article",
-      "manager": "laurawi",
-      "ms.prod": "edge",
+      "manager": "dansimp",
+      "ms.prod": "microsoft-edge",
       "feedback_system": "None",
       "hideEdit": true,
       "_op_documentIdPathDepotMapping": {
@@ -51,7 +55,8 @@
         "claydetels19", 
         "jborsecnik",
         "tiburd",
-        "garycentric"
+        "garycentric",
+        "beccarobins"
       ]
     },
     "fileMetadata": {},

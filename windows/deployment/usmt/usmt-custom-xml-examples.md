@@ -1,25 +1,27 @@
 ---
 title: Custom XML Examples (Windows 10)
 description: Use custom XML examples to learn how to migrate an unsupported application, migrate files and registry keys, and migrate the My Videos folder.
-ms.assetid: 48f441d9-6c66-43ef-91e9-7c78cde6fcc0
-ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
+author: frankroj
 ms.topic: article
+ms.technology: itpro-deploy
+ms.date: 11/01/2022
 ---
 
 # Custom XML Examples
 
-## <a href="" id="example"></a>Example 1: Migrating an Unsupported Application
+## Example 1: Migrating an unsupported application
 
-The following is a template for the sections that you need to migrate your application. The template is not functional on its own, but you can use it to write your own .xml file.
+The following template is a template for the sections that you need to migrate your application. The template isn't functional on its own, but you can use it to write your own .xml file.
 
-``` xml
+**Template**
+<br>
+<details>
+  <summary>Expand to show <b>Example 1</b> application template:</summary>
+
+```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/migtestapp">
   <component type="Application">
     <!-- Name of the application -->
@@ -83,25 +85,30 @@ The following is a template for the sections that you need to migrate your appli
 </migration>
 ```
 
-## <a href="" id="example2"></a>Example 2: Migrating the My Videos Folder
+</details>
 
-The following sample is a custom .xml file named CustomFile.xml that migrates My Videos for all users, if the folder exists on the source computer.
+## Example 2: Migrating the My Videos folder
 
-- **Sample condition**: Verifies that My Videos exists on the source computer:
+The following sample is a custom .xml file named `CustomFile.xml` that migrates **My Videos** for all users, if the folder exists on the source computer.
+
+- **Sample condition**: Verifies that **My Videos** exists on the source computer:
 
   `<condition>MigXmlHelper.DoesObjectExist("File","%CSIDL_MYVIDEO%")</condition>`
 
-- **Sample filter**: Filters out the shortcuts in My Videos that do not resolve on the destination computer:
+- **Sample filter**: Filters out the shortcuts in **My Videos** that don't resolve on the destination computer:
 
   `<include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>`
 
-  This has no effect on files that are not shortcuts. For example, if there is a shortcut in My Videos on the source computer that points to C:\Folder1, that shortcut will be migrated only if C:\Folder1 exists on the destination computer. However, all other files, such as .mp3 files, migrate without any filtering.
+  This filter has no effect on files that aren't shortcuts. For example, if there's a shortcut in **My Videos** on the source computer that points to `C:\Folder1`, that shortcut will be migrated only if `C:\Folder1` exists on the destination computer. However, all other files, such as .mp3 files, migrate without any filtering.
 
-- **Sample pattern**: Migrates My Videos for all users:
+- **Sample pattern**: Migrates **My Videos** for all users:
 
   `<pattern type="File">%CSIDL_MYVIDEO%* [*]</pattern>`
 
 **XML file**
+<br>
+<details>
+  <summary>Expand to show <b>Example 2</b> XML file:</summary>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -126,11 +133,13 @@ The following sample is a custom .xml file named CustomFile.xml that migrates My
 </migration>
 ```
 
-## <a href="" id="example3"></a>Example 3: Migrating Files and Registry Keys
+</details>
+
+## Example 3: Migrating files and registry keys
 
 The sample patterns describe the behavior in the following example .xml file.
 
-- **Sample pattern**: Migrates all instances of the file Usmttestfile.txt from all sub-directories under `%ProgramFiles%\USMTTestFolder`:
+- **Sample pattern**: Migrates all instances of the file `Usmttestfile.txt` from all subdirectories under `%ProgramFiles%\USMTTestFolder`:
 
   `<pattern type="File">%ProgramFiles%\USMTTestFolder* [USMTTestFile.txt]</pattern>`
 
@@ -147,8 +156,11 @@ The sample patterns describe the behavior in the following example .xml file.
   `<pattern type="Registry">HKLM\Software\USMTTESTKEY* []</pattern>`
 
 **XML file**
+<br>
+<details>
+  <summary>Expand to show <b>Example 3</b> XML file:</summary>
 
-``` xml
+```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/testfilemig">
   <component type="Application" context="System">
    <displayName>File Migration Test</displayName>
@@ -179,12 +191,18 @@ The sample patterns describe the behavior in the following example .xml file.
 </migration>
 ```
 
-## <a href="" id="example4"></a>Example 4: Migrating Specific Folders from Various Locations
+</details>
 
+## Example 4: Migrating specific folders from various locations
 
 The behavior for this custom .xml file is described within the `<displayName>` tags in the code.
 
-``` xml
+**XML file**
+<br>
+<details>
+  <summary>Expand to show <b>Example 4</b> XML file:</summary>
+
+```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
 
 <component type="Documents" context="System">
@@ -253,8 +271,10 @@ The behavior for this custom .xml file is described within the `<displayName>` t
 </migration>
 ```
 
-## Related topics
+</details>
 
-[USMT XML Reference](usmt-xml-reference.md)
+## Related articles
 
-[Customize USMT XML Files](usmt-customize-xml-files.md)
+[USMT XML reference](usmt-xml-reference.md)
+
+[Customize USMT XML files](usmt-customize-xml-files.md)

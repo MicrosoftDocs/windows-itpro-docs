@@ -1,17 +1,18 @@
 ---
-title: 5158(S) The Windows Filtering Platform has permitted a bind to a local port. (Windows 10)
+title: 5158(S) The Windows Filtering Platform has permitted a bind to a local port. 
 description: Describes security event 5158(S) The Windows Filtering Platform has permitted a bind to a local port.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5158(S): The Windows Filtering Platform has permitted a bind to a local port.
@@ -90,7 +91,7 @@ This event generates every time [Windows Filtering Platform](/windows/win32/fwp/
 
 **Network Information:**
 
--   **Source Address** \[Type = UnicodeString\]**:** local IP address on which application was bind the port.
+-   **Source Address** \[Type = UnicodeString\]**:** local IP address on which application was bound the port.
 
     -   IPv4 Address
 
@@ -100,7 +101,7 @@ This event generates every time [Windows Filtering Platform](/windows/win32/fwp/
 
     -   0.0.0.0 - all IP addresses in IPv4 format
 
-    -   127.0.0.1 , ::1 - localhost
+    -   127.0.0.1, ::1 - localhost
 
 -   **Source Port** \[Type = UnicodeString\]**:** port number which application was bind.
 
@@ -126,7 +127,7 @@ This event generates every time [Windows Filtering Platform](/windows/win32/fwp/
 
 **Filter Information:**
 
--   **Filter Run-Time ID** \[Type = UInt64\]: unique filter ID that allows the application to bind the port. By default, Windows firewall won't prevent a port from being bound by an application. If this application doesn’t match any filters, you will get value 0 in this field.
+-   **Filter Run-Time ID** \[Type = UInt64\]: unique filter ID that allows the application to bind the port. By default, Windows firewall won't prevent a port from being bound by an application. If this application doesn’t match any filters, you'll get value 0 in this field.
 
     To find a specific Windows Filtering Platform filter by ID, run the following command: **netsh wfp show filters**. As a result of this command, the **filters.xml** file will be generated. Open this file and find specific substring with required filter ID (**&lt;filterId&gt;**)**,** for example:
 
@@ -144,7 +145,7 @@ For 5158(S): The Windows Filtering Platform has permitted a bind to a local port
 
 -   If you have a predefined application that should be used to perform the operation that was reported by this event, monitor events with “**Application**” not equal to your defined application.
 
--   You can monitor to see if “**Application**” is not in a standard folder (for example, not in **System32** or **Program Files**) or is in a restricted folder (for example, **Temporary Internet Files**).
+-   You can monitor to see if “**Application**” isn't in a standard folder (for example, not in **System32** or **Program Files**) or is in a restricted folder (for example, **Temporary Internet Files**).
 
 -   If you have a pre-defined list of restricted substrings or words in application names (for example, “**mimikatz**” or “**cain.exe**”), check for these substrings in “**Application**.”
 
@@ -152,6 +153,6 @@ For 5158(S): The Windows Filtering Platform has permitted a bind to a local port
 
 -   If you need to monitor all actions with a specific local port, monitor for [5158](event-5158.md) events with that “**Source Port.”**
 
--   Monitor for all connections with a “**Protocol Number”** that is not typical for this device or computer, for example, anything other than 6 or 17.
+-   Monitor for all connections with a “**Protocol Number”** that isn't typical for this device or computer, for example, anything other than 6 or 17.
 
 -   If the computer’s communication with “**Destination Address”** should always use a specific “**Destination Port**,**”** monitor for any other “**Destination Port**.”

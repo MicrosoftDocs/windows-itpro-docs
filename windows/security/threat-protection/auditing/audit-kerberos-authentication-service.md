@@ -1,18 +1,19 @@
 ---
-title: Audit Kerberos Authentication Service (Windows 10)
+title: Audit Kerberos Authentication Service 
 description: The policy setting Audit Kerberos Authentication Service decides if audit events are generated for Kerberos authentication ticket-granting ticket (TGT) requests
 ms.assetid: 990dd6d9-1a1f-4cce-97ba-5d7e0a7db859
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/06/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit Kerberos Authentication Service

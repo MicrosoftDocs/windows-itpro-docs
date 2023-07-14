@@ -1,23 +1,22 @@
 ---
 title: What's new in Windows 10, version 20H2
 description: New and updated features in Windows 10, version 20H2 (also known as the Windows 10 October 2020 Update).
-keywords: ["What's new in Windows 10", "Windows 10", "October 2020 Update"]
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
-ms.author: greglin
-manager: dougeby
+ms.prod: windows-client
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: high
 ms.topic: article
-ms.collection: highpri
+ms.collection:
+  - highpri
+  - tier2
+ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10, version 20H2</a>
 ---
 
 # What's new in Windows 10, version 20H2 for IT Pros
-
-**Applies to**
--   Windows 10, version 20H2
 
 This article lists new and updated features and content that is of interest to IT Pros for Windows 10, version 20H2, also known as the Windows 10 October 2020 Update. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 2004.
 
@@ -61,7 +60,7 @@ Activities are grouped into the following phases: **Plan** > **Prepare** > **Dep
 - Ensure that [users are ready](/windows/deployment/update/prepare-deploy-windows) for updates
 
 **Deploy** and manage Windows 10 strategically in your organization:
-- Use [Windows Autopilot](/mem/autopilot/windows-autopilot) to streamline the set up, configuration, and delivery of new devices
+- Use [Windows Autopilot](/mem/autopilot/windows-autopilot) to streamline the setup, configuration, and delivery of new devices
 - Use [Configuration Manager](/windows/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager) or [MDT](/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt) to deploy new devices and update existing devices
 - Use [Windows Update for Business](/windows/deployment/update/waas-configure-wufb) with Group Policy to [customize update settings](/windows/deployment/update/waas-wufb-group-policy) for your devices
 - [Deploy Windows updates](/windows/deployment/update/waas-manage-updates-wsus) with Windows Server Update Services (WSUS)
@@ -73,11 +72,11 @@ Activities are grouped into the following phases: **Plan** > **Prepare** > **Dep
 Enhancements to Windows Autopilot since the last release of Windows 10 include:
 - [Windows Autopilot for HoloLens](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-autopilot-for-hololens-2/ba-p/1371494): Set up HoloLens 2 devices with Windows Autopilot for HoloLens 2 self-deploying mode.
 - [Windows Autopilot with co-management](/mem/configmgr/comanage/quickstart-autopilot): Co-management and Autopilot together can help you reduce cost and improve the end user experience.
-- Enhancements to Windows Autopilot deployment reporting are in preview. From the Microsoft Endpoint Manager admin center (endpoint.microsoft.com), select **Devices** > **Monitor** and scroll down to the **Enrollment** section. Click **Autopilot deployment (preview)**.
+- Enhancements to Windows Autopilot deployment reporting are in preview. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** > **Monitor** and scroll down to the **Enrollment** section. Select **Autopilot deployment (preview)**.
 
 ### Windows Assessment and Deployment Toolkit (ADK)
 
-There is no new ADK for Windows 10, version 20H2. The ADK for Windows 10, version 2004 will also work with Windows 10, version 20H2.  For more information, see [Download and install the Windows ADK](/windows-hardware/get-started/adk-install).
+There's no new ADK for Windows 10, version 20H2. The ADK for Windows 10, version 2004 will also work with Windows 10, version 20H2.  For more information, see [Download and install the Windows ADK](/windows-hardware/get-started/adk-install).
 
 ## Device management
 
@@ -149,5 +148,5 @@ For information about Desktop Analytics and this release of Windows 10, see [Wha
 [Windows 10 Features](https://www.microsoft.com/windows/features): General information about Windows 10 features.<br>
 [What's New in Windows 10](./index.yml): See what’s new in other versions of Windows 10.<br>
 [Announcing more ways we’re making app development easier on Windows](https://blogs.windows.com/windowsdeveloper/2020/09/22/kevin-gallo-microsoft-ignite-2020/): Simplifying app development in Windows.<br>
-[Features and functionality removed in Windows 10](/windows/deployment/planning/windows-10-removed-features): Removed features.<br>
-[Windows 10 features we’re no longer developing](/windows/deployment/planning/windows-10-deprecated-features): Features that are not being developed.<br>
+[Features and functionality removed in Windows 10](removed-features.md): Removed features.<br>
+[Windows 10 features we're no longer developing](deprecated-features.md): Features that aren't being developed.<br>

@@ -1,18 +1,16 @@
 ---
 title: Technical Reference for UE-V
 description: Use this technical reference to learn about the various features of User Experience Virtualization (UE-V).
-author: greg-lindsay
-ms.pagetype: mdop, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.prod: w10
+author: aczechowski
+ms.prod: windows-client
+ms.collection: tier3
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-configure
 ---
-
 
 # Technical Reference for UE-V
 

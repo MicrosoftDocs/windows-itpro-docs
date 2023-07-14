@@ -1,26 +1,26 @@
 ---
-title: Accounts Rename guest account - security policy setting (Windows 10)
+title: Accounts Rename guest account - security policy setting 
 description: Describes the best practices, location, values, and security considerations for the Accounts Rename guest account security policy setting.
 ms.assetid: 9b8052b4-bbb9-4cc1-bfee-ce25390db707
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Accounts: Rename guest account - security policy setting
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Accounts: Rename guest account** security policy setting.
@@ -62,7 +62,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ### Policy conflict considerations
 
@@ -70,7 +70,7 @@ None.
 
 ### Group Policy
 
-This policy setting can be configured by using the Group Policy Management Console (GPMC) to be distributed through Group Policy Objects (GPOs). If this policy is not contained in a distributed GPO, this policy can be configured on the local device by using the Local Security Policy snap-in.
+This policy setting can be configured by using the Group Policy Management Console (GPMC) to be distributed through Group Policy Objects (GPOs). If this policy isn't contained in a distributed GPO, this policy can be configured on the local device by using the Local Security Policy snap-in.
 
 ## Security considerations
 
@@ -83,7 +83,7 @@ or install software that could be used for a later attack on your system.
 
 ### Countermeasure
 
-Specify a new name in the **Accounts: Rename guest account** setting to rename the Guest account. If you rename this account, it is slightly more difficult for unauthorized persons to guess this privileged user name and password combination.
+Specify a new name in the **Accounts: Rename guest account** setting to rename the Guest account. If you rename this account, it's slightly more difficult for unauthorized persons to guess this privileged user name and password combination.
 
 ### Potential impact
 

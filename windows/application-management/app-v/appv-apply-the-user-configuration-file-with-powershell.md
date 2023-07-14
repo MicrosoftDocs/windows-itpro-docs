@@ -1,16 +1,14 @@
 ---
 title: How to apply the user configuration file by using Windows PowerShell (Windows 10/11)
 description: How to apply the user configuration file by using Windows PowerShell (Windows 10/11).
-author: greg-lindsay
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.prod: w10
+author: aczechowski
+ms.prod: windows-client
 ms.date: 06/15/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
 # How to apply the user configuration file by using Windows PowerShell
 
@@ -44,6 +42,6 @@ Here's how to specify a user-specific configuration file:
 
 
 
-## Related topics
+## Related articles
 
 * [Operations for App-V](appv-operations.md)

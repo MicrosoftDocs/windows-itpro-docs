@@ -1,16 +1,15 @@
 ---
 title: Create a provisioning package (Windows 10/11)
 description: Learn how to create a provisioning package for Windows 10/11, which lets you quickly configure a device without having to install a new image.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: greg-lindsay
-ms.author: greglin
+ms.prod: windows-client
+author: lizgt2000
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: gkomatsu
-manager: dansimp
-ms.collection: highpri
+manager: aaroncz
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Create a provisioning package
@@ -44,6 +43,9 @@ You can use Windows Configuration Designer to create a provisioning package (`.p
         - [Instructions for Surface Hub wizard](/surface-hub/provisioning-packages-for-surface-hub)
 
       Wizards are also available for creating provisioning packages for Microsoft Surface Hub and Microsoft HoloLens devices. For a summary of the settings available in the desktop and kiosk devices, see [What you can configure using Configuration Designer wizards](provisioning-packages.md#configuration-designer-wizards).
+      
+      >[!NOTE]
+      >To target devices running versions earlier than Windows 10, version 2004, ComputerName customization must be defined from the setting path: `Accounts/ComputerAccount/ComputerName` from the advanced editor. The default path from the simple editor uses a new CSP that isn't available on older systems.
 
     - The **Advanced provisioning** option opens a new project with all the runtime settings available. (The rest of this procedure uses advanced provisioning.)
 
@@ -148,9 +150,7 @@ For details on each specific setting, see [Windows Provisioning settings referen
 
 ## Learn more
 
-- Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
-
-- [How to bulk-enroll devices with On-premises Mobile Device Management in Microsoft Endpoint Configuration Manager](/configmgr/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm)
+- [How to bulk-enroll devices with On-premises Mobile Device Management in Microsoft Configuration Manager](/configmgr/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm)
 
 ## Related articles
 

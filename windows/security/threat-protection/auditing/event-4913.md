@@ -1,17 +1,18 @@
 ---
-title: 4913(S) Central Access Policy on the object was changed. (Windows 10)
+title: 4913(S) Central Access Policy on the object was changed. 
 description: Describes security event 4913(S) Central Access Policy on the object was changed.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4913(S): Central Access Policy on the object was changed.
@@ -77,13 +78,13 @@ This event always generates, regardless of the object’s [SACL](/windows/win32/
 
 **Subject:**
 
--   **Security ID** \[Type = SID\]**:** SID of account that changed the Central Access Policy on the object. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
+-   **Security ID** \[Type = SID\]**:** SID of account that changed the Central Access Policy on the object. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID can't be resolved, you'll see the source data in the event.
 
 > **Note**&nbsp;&nbsp;A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
 
 -   **Account Name** \[Type = UnicodeString\]**:** the name of the account that changed the Central Access Policy on the object.
 
--   **Account Domain** \[Type = UnicodeString\]**:** subject’s domain or computer name. Formats vary, and include the following:
+-   **Account Domain** \[Type = UnicodeString\]**:** subject’s domain or computer name. Formats vary, and include the following ones:
 
     -   Domain NETBIOS name example: CONTOSO
 
@@ -137,7 +138,7 @@ This event always generates, regardless of the object’s [SACL](/windows/win32/
 
 -   **Original Security Descriptor** \[Type = UnicodeString\]**:** the Security Descriptor Definition Language (SDDL) value for the old Central Policy ID (for the policy that was formerly applied to the object).
 
-    SDDL contains Central Access Policy SID, here is an example: S:ARAI(SP;ID;;;;S-1-17-1442530252-1178042555-1247349694-2318402534), Central Access Policy SID here is “**S-1-17-1442530252-1178042555-1247349694-2318402534**”. To resolve this SID to the real Central Access Policy name you need to do the following:
+    SDDL contains Central Access Policy SID, here's an example: S:ARAI(SP;ID;;;;S-1-17-1442530252-1178042555-1247349694-2318402534), Central Access Policy SID here is “**S-1-17-1442530252-1178042555-1247349694-2318402534**”. To resolve this SID to the real Central Access Policy name, you need to do the following steps:
 
 1.  Find Central Access Policy Active Directory object in: “CN=Central Access Policies,CN=Claims Configuration,CN=Services,CN=Configuration,DC=XXX,DC=XX” Active Directory container.
 
@@ -166,11 +167,11 @@ This event always generates, regardless of the object’s [SACL](/windows/win32/
 |-------|--------------------------------------|-------|---------------------------------|
 | "AO"  | Account operators                    | "PA"  | Group Policy administrators     |
 | "RU"  | Alias to allow previous Windows 2000 | "IU"  | Interactively logged-on user    |
-| "AN"  | Anonymous logon                      | "LA"  | Local administrator             |
+| "AN"  | Anonymous sign in                      | "LA"  | Local administrator             |
 | "AU"  | Authenticated users                  | "LG"  | Local guest                     |
 | "BA"  | Built-in administrators              | "LS"  | Local service account           |
 | "BG"  | Built-in guests                      | "SY"  | Local system                    |
-| "BO"  | Backup operators                     | "NU"  | Network logon user              |
+| "BO"  | Backup operators                     | "NU"  | Network sign-in user              |
 | "BU"  | Built-in users                       | "NO"  | Network configuration operators |
 | "CA"  | Certificate server administrators    | "NS"  | Network service account         |
 | "CG"  | Creator group                        | "PO"  | Printer operators               |
@@ -182,7 +183,7 @@ This event always generates, regardless of the object’s [SACL](/windows/win32/
 | "DU"  | Domain users                         | "RC"  | Restricted code                 |
 | "EA"  | Enterprise administrators            | "SA"  | Schema administrators           |
 | "ED"  | Enterprise domain controllers        | "SO"  | Server operators                |
-| "WD"  | Everyone                             | "SU"  | Service logon user              |
+| "WD"  | Everyone                             | "SU"  | Service sign-in user              |
 
 - *G*: = Primary Group.
 - *D*: = DACL Entries.
@@ -202,7 +203,7 @@ Example: D:(A;;FA;;;WD)
 
 "P” - SDDL\_PROTECTED, Inheritance from containers that are higher in the folder hierarchy are blocked.
 
-"AI" - SDDL\_AUTO\_INHERITED, Inheritance is allowed, assuming that "P" Is not also set.
+"AI" - SDDL\_AUTO\_INHERITED, Inheritance is allowed, assuming that "P" isn't also set.
 
 "AR" - SDDL\_AUTO\_INHERIT\_REQ, Child objects inherit permissions from this object.
 
@@ -228,7 +229,7 @@ Example: D:(A;;FA;;;WD)
 
 "CI" - CONTAINER INHERIT: Child objects that are containers, such as directories, inherit the ACE as an explicit ACE.
 
-"OI" - OBJECT INHERIT: Child objects that are not containers inherit the ACE as an explicit ACE.
+"OI" - OBJECT INHERIT: Child objects that aren't containers inherit the ACE as an explicit ACE.
 
 "NP" - NO PROPAGATE: only immediate children inherit this ace.
 
@@ -239,7 +240,7 @@ Example: D:(A;;FA;;;WD)
 "SA" - SUCCESSFUL ACCESS AUDIT
 
 "FA" - FAILED ACCESS AUDIT
-- rights: A hexadecimal string which denotes the access mask or reserved value, for example: FA (File All Access), FX (File Execute), FW (File Write), etc.
+- rights: A hexadecimal string that denotes the access mask or reserved value, for example: FA (File All Access), FX (File Execute), FW (File Write), etc.
 
 | Value                      | Description                     | Value                | Description              |
 |----------------------------|---------------------------------|----------------------|--------------------------|
@@ -261,7 +262,7 @@ Example: D:(A;;FA;;;WD)
 
 - object\_guid: N/A
 - inherit\_object\_guid: N/A
-- account\_sid: SID of specific security principal, or reserved value, for example: AN (Anonymous), WD (Everyone), SY (LOCAL\_SYSTEM), etc. See the table above for more details.
+- account\_sid: SID of specific security principal, or reserved value, for example: AN (Anonymous), WD (Everyone), SY (LOCAL\_SYSTEM), etc. For more information, see the table above.
 
 For more information about SDDL syntax, see these articles: <https://msdn.microsoft.com/library/cc230374.aspx>, <https://msdn.microsoft.com/library/windows/hardware/aa374892(v=vs.85).aspx>.
 
@@ -277,7 +278,7 @@ For 4913(S): Central Access Policy on the object was changed.
 
 -   If you have a pre-defined “**Process Name**” for the process reported in this event, monitor all events with “**Process Name**” not equal to your defined value.
 
--   You can monitor to see if “**Process Name**” is not in a standard folder (for example, not in **System32** or **Program Files**) or is in a restricted folder (for example, **Temporary Internet Files**).
+-   You can monitor to see if “**Process Name**” isn't in a standard folder (for example, not in **System32** or **Program Files**) or is in a restricted folder (for example, **Temporary Internet Files**).
 
 <!-- -->
 

@@ -1,26 +1,26 @@
 ---
-title: Network access Sharing and security model for local accounts (Windows 10)
+title: Network access Sharing and security model for local accounts 
 description: Best practices, security considerations, and more for the security policy setting, Network access Sharing and security model for local accounts.
 ms.assetid: 0b3d703c-ea27-488f-8f59-b345af75b994
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network access: Sharing and security model for local accounts
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Network access: Sharing and security model for local accounts** security policy setting.
@@ -32,7 +32,7 @@ This policy setting determines how network logons that use local accounts are au
 >**Note:**  This policy setting does not affect network logons that use domain accounts. Nor does this policy setting affect interactive logons that are performed remotely through services such as Telnet or Remote Desktop Services.
 When the device is not joined to a domain, this policy setting also tailors the **Sharing** and **Security** tabs in Windows Explorer to correspond to the sharing and security model that is being used.
  
-When the value of this policy setting is **Guest only - local users authenticate as Guest**, any user who can access your device over the network does so with Guest user rights. This means that they will probably be unable to write to shared folders. Although this does increase security, it makes it impossible for authorized users to access shared resources on those systems. When the value is **Classic - local users authenticate as themselves**, local accounts must be password-protected; otherwise, anyone can use those user accounts to access shared system resources.
+When the value of this policy setting is **Guest only - local users authenticate as Guest**, any user who can access your device over the network does so with Guest user rights. This privilege means that they'll probably be unable to write to shared folders. Although this restriction does increase security, it makes it impossible for authorized users to access shared resources on those systems. When the value is **Classic - local users authenticate as themselves**, local accounts must be password-protected; otherwise, anyone can use those user accounts to access shared system resources.
 
 ### Possible values
 
@@ -68,11 +68,11 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ### Group Policy
 
-This policy setting can be configured by using the Group Policy Management Console (GPMC) to be distributed through Group Policy Objects (GPOs). If this policy is not contained in a distributed GPO, this policy can be configured on the local computer by using the Local Security Policy snap-in.
+This policy setting can be configured by using the Group Policy Management Console (GPMC) to be distributed through Group Policy Objects (GPOs). If this policy isn't contained in a distributed GPO, this policy can be configured on the local computer by using the Local Security Policy snap-in.
 
 ## Security considerations
 
@@ -80,7 +80,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-With the Guest only model, any user who can authenticate to your device over the network does so with Guest privileges, which probably means that they do not have Write access to shared resources on that device. Although this restriction does increase security, it makes it more difficult for authorized users to access shared resources on those computers because ACLs on those resources must include access control entries (ACEs) for the Guest account. With the Classic model, local accounts should be password protected. Otherwise, if Guest access is enabled, anyone can use those user accounts to access shared system resources.
+With the Guest only model, any user who can authenticate to your device over the network does so with Guest privileges, which probably means that they don't have Write access to shared resources on that device. Although this restriction does increase security, it makes it more difficult for authorized users to access shared resources on those computers because ACLs on those resources must include access control entries (ACEs) for the Guest account. With the Classic model, local accounts should be password protected. Otherwise, if Guest access is enabled, anyone can use those user accounts to access shared system resources.
 
 ### Countermeasure
 
@@ -88,7 +88,7 @@ For network servers, configure the **Network access: Sharing and security model 
 
 ### Potential impact
 
-None. This is the default configuration.
+None. This non-impact state is the default configuration.
 
 ## Related topics
 

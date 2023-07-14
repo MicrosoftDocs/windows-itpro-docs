@@ -1,22 +1,16 @@
 ---
 title: Create a Custom Compatibility Mode (Windows 10)
 description: Windows® provides several compatibility modes, groups of compatibility fixes found to resolve many common application-compatibility issues.
-ms.assetid: 661a1c0d-267f-4a79-8445-62a9a98d09b0
-ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-ms.prod: w10
-ms.mktglfcycl: plan
-ms.pagetype: appcompat
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
-ms.date: 04/19/2017
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
+author: frankroj
+ms.date: 10/28/2022
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Creating a Custom Compatibility Mode in Compatibility Administrator
-
 
 **Applies to**
 
@@ -31,18 +25,14 @@ Windows® provides several *compatibility modes*, groups of compatibility fixes 
 
 ## What Is a Compatibility Mode?
 
-
 A compatibility mode is a group of compatibility fixes. A compatibility fix, previously known as a shim, is a small piece of code that intercepts API calls from applications. The fix transforms the API calls so that the current version of the operating system supports the application in the same way as previous versions of the operating system. This can be anything from disabling a new feature in Windows to emulating a particular behavior of an older version of the Windows API.
 
 ## Searching for Existing Compatibility Modes
-
 
 The Compatibility Administrator tool has preloaded fixes for many common applications, including known compatibility fixes, compatibility modes, and AppHelp messages. Before you create a new compatibility mode, you can search for an existing application and then copy and paste the known fixes into your custom database.
 
 > [!IMPORTANT]
 > Application Compatibility Toolkit (ACT) installs a 32-bit and a 64-bit version of the Compatibility Administrator tool. You must use the 32-bit version to create custom databases for 32-bit applications and the 64-bit version to create custom databases for 64-bit applications.
-
-
 
 **To search for an existing application**
 
@@ -52,13 +42,10 @@ The Compatibility Administrator tool has preloaded fixes for many common applica
 
 ## Creating a New Compatibility Mode
 
-
 If you are unable to find a preloaded compatibility mode for your application, you can create a new one for use by your custom database.
 
 > [!IMPORTANT]  
 > A compatibility mode includes a set of compatibility fixes and must be deployed as a group. Therefore, you should include only fixes that you intend to deploy together to the database.
-
-
 
 **To create a new compatibility mode**
 
@@ -78,12 +65,3 @@ If you are unable to find a preloaded compatibility mode for your application, y
 
 ## Related topics
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)
-
-
-
-
-
-
-
-
-

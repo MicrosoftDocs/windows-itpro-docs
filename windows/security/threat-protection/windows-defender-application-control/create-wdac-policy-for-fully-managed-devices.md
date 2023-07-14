@@ -1,100 +1,96 @@
 ---
-title: Create a WDAC policy for fully managed devices (Windows)
+title: Create a WDAC policy for fully managed devices 
 description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in system core.
 keywords: security, malware
 ms.topic: conceptual
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
-ms.date: 11/20/2019
-ms.technology: windows-sec
+ms.reviewer: jogeurte
+ms.author: vinpa
+manager: aaroncz
+ms.date: 11/07/2022
+ms.technology: itpro-security
 ---
 
 # Create a WDAC policy for fully managed devices
 
 **Applies to:**
 
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-This section outlines the process to create a WDAC policy for **fully managed devices** within an organization. The key difference between this scenario and [lightly managed devices](create-wdac-policy-for-lightly-managed-devices.md) is that all software deployed to a fully managed device is managed by IT and users of the device cannot install arbitrary apps. Ideally, all apps are deployed using a software distribution solution, such as Microsoft Endpoint Manager (MEM). Additionally, users on fully managed devices should ideally run as standard user and only authorized IT pros have administrative access.
+This section outlines the process to create a Windows Defender Application Control (WDAC) policy for **fully managed devices** within an organization. The key difference between this scenario and [lightly managed devices](create-wdac-policy-for-lightly-managed-devices.md) is that all software deployed to a fully managed device is managed by IT and users of the device can't install arbitrary apps. Ideally, all apps are deployed using a software distribution solution, such as Microsoft Intune. Additionally, users on fully managed devices should ideally run as standard user and only authorized IT pros have administrative access.
 
 > [!NOTE]
-> Some of the WDAC options described in this topic are only available on Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's WDAC policies, consider whether your managed clients can use all or some of these features and assess the impact for any features that may be unavailable on your clients. You may need to adapt this guidance to meet your specific organization's needs.
+> Some of the Windows Defender Application Control options described in this topic are only available on Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's WDAC policies, consider whether your managed clients can use all or some of these features and assess the impact for any features that may be unavailable on your clients. You may need to adapt this guidance to meet your specific organization's needs.
 
-As described in [common WDAC deployment scenarios](types-of-devices.md), we will use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
+As described in [common Windows Defender Application Control deployment scenarios](types-of-devices.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
 
 **Alice Pena** is the IT team lead tasked with the rollout of WDAC.
 
-Alice previously created a policy for the organization's lightly managed devices. Some devices, however, are more tightly managed and can benefit from a more constrained policy. In particular, certain job functions such as administrative staff and firstline workers are not granted administrator level access to their devices. Similarly, shared kiosks are configured only with a managed set of apps and all users of the device except IT run as standard user. On these devices, all apps are deployed and installed by IT.
+Alice previously created a policy for the organization's lightly managed devices. Some devices, however, are more tightly managed and can benefit from a more constrained policy. In particular, certain job functions such as administrative staff and firstline workers aren't granted administrator level access to their devices. Similarly, shared kiosks are configured only with a managed set of apps and all users of the device except IT run as standard user. On these devices, all apps are deployed and installed by IT.
 
 ## Define the "circle-of-trust" for fully managed devices
 
 Alice identifies the following key factors to arrive at the "circle-of-trust" for Lamna's fully managed devices:
 
 - All clients are running Windows 10 version 1903 or above or Windows 11;
-- All clients are managed by Microsoft Endpoint Manager (MEM) either with Configuration Manager (MEMCM) standalone or hybrid mode with Intune;
-
-> [!NOTE]
-> Microsoft Endpoint Configuration Manager was previously known as System Center Configuration Manager (SCCM) 
-
-- Most, but not all, apps are deployed using MEMCM;
-- Sometimes, IT staff install apps directly to these devices without using MEMCM;
+- All clients are managed by Configuration Manager or with Intune;
+- Most, but not all, apps are deployed using Configuration Manager;
+- Sometimes, IT staff install apps directly to these devices without using Configuration Manager;
 - All users except IT are standard users on these devices.
 
-Alice's team develops a simple console application, called *LamnaITInstaller.exe*, which will become the authorized way for IT staff to install apps directly to devices. *LamnaITInstaller.exe* allows the IT pro to launch another process, such as an app installer. Alice will configure *LamnaITInstaller.exe* as an additional managed installer for WDAC and allows her to remove the need for filepath rules.
+Alice's team develops a simple console application, called *LamnaITInstaller.exe*, which will become the authorized way for IT staff to install apps directly to devices. *LamnaITInstaller.exe* allows the IT pro to launch another process, such as an app installer. Alice will configure *LamnaITInstaller.exe* as an extra managed installer for WDAC and allows her to remove the need for filepath rules.
 
 Based on the above, Alice defines the pseudo-rules for the policy:
 
 1. **“Windows works”** rules that authorize:
    - Windows
-   - WHQL (3rd party kernel drivers)
+   - WHQL (third-party kernel drivers)
    - Windows Store signed apps
 
-2. **"MEMCM works”** rules that include signer and hash rules for MEMCM components to properly function
-3. **Allow Managed Installer** (MEMCM and *LamnaITInstaller.exe* configured as a managed installer)
+2. **"ConfigMgr works”** rules that include signer and hash rules for Configuration Manager components to properly function.
+3. **Allow Managed Installer** (Configuration Manager and *LamnaITInstaller.exe* configured as a managed installer)
 
-The critical differences between this set of pseudo-rules and those defined for Lamna's [lightly managed devices](create-wdac-policy-for-lightly-managed-devices.md#define-the-circle-of-trust-for-lightly-managed-devices) are:
+The critical differences between this set of pseudo-rules and those pseudo-rules defined for Lamna's [lightly managed devices](create-wdac-policy-for-lightly-managed-devices.md#define-the-circle-of-trust-for-lightly-managed-devices) are:
 
 - Removal of the Intelligent Security Graph (ISG) option; and
 - Removal of filepath rules.
 
 ## Create a custom base policy using an example WDAC base policy
 
-Having defined the "circle-of-trust", Alice is ready to generate the initial policy for Lamna's fully-managed devices. She decides to use MEMCM to create the initial base policy and then customize it to meet Lamna's needs.
+Having defined the "circle-of-trust", Alice is ready to generate the initial policy for Lamna's fully managed devices and decides to use Configuration Manager to create the initial base policy and then customize it to meet Lamna's needs.
 
 Alice follows these steps to complete this task:
 
 > [!NOTE]
-> If you do not use MEMCM or prefer to use a different [example WDAC base policy](example-wdac-base-policies.md) for your own policy, skip to step 2 and substitute the MEMCM policy path with your preferred example base policy.
+> If you do not use Configuration Manager or prefer to use a different [example Windows Defender Application Control base policy](example-wdac-base-policies.md) for your own policy, skip to step 2 and substitute the Configuration Manager policy path with your preferred example base policy.
 
-1. [Use MEMCM to create and deploy an audit policy](/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager) to a client device running Windows 10 version 1903 or above, or Windows 11.
+1. [Use Configuration Manager to create and deploy an audit policy](/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager) to a client device running Windows 10 version 1903 or above, or Windows 11.
 
 2. On the client device, run the following commands in an elevated Windows PowerShell session to initialize variables:
 
       ```powershell
+      $PolicyPath=$env:userprofile+"\Desktop\"
       $PolicyName= "Lamna_FullyManagedClients_Audit"
-      $LamnaPolicy=$env:userprofile+"\Desktop\"+$PolicyName+".xml"
-      $MEMCMPolicy=$env:windir+"\CCM\DeviceGuard\MergedPolicy_Audit_ISG.xml"
+      $LamnaPolicy=$PolicyPath+$PolicyName+".xml"
+      $ConfigMgrPolicy=$env:windir+"\CCM\DeviceGuard\MergedPolicy_Audit_ISG.xml"
       ```
 
-3. Copy the policy created by MEMCM to the desktop:
+3. Copy the policy created by Configuration Manager to the desktop:
 
       ```powershell
-      cp $MEMCMPolicy $LamnaPolicy
+      cp $ConfigMgrPolicy $LamnaPolicy
       ```
 
 4. Give the new policy a unique ID, descriptive name, and initial version number:
@@ -117,16 +113,14 @@ Alice follows these steps to complete this task:
       Set-RuleOption -FilePath $LamnaPolicy -Option 19 # Dynamic Code Security
       ```
 
-6. If appropriate, add additional signer or file rules to further customize the policy for your organization.
+6. If appropriate, add more signer or file rules to further customize the policy for your organization.
 
-7. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the WDAC policy to a binary format:
-
-    > [!NOTE]
-    > In the sample commands below, replace the string "{InsertPolicyID}" with the actual PolicyID GUID (including braces **{ }**) found in your policy XML file.
+7. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the Windows Defender Application Control policy to a binary format:
 
    ```powershell
-   $WDACPolicyBin=$env:userprofile+"\Desktop\"+$PolicyName+"_{InsertPolicyID}.bin"
-   ConvertFrom-CIPolicy $LamnaPolicy $WDACPolicyBin
+    [xml]$PolicyXML = Get-Content $LamnaPolicy
+    $LamnaPolicyBin = Join-Path $PolicyPath "$($PolicyXML.SiPolicy.PolicyID).cip"
+    ConvertFrom-CIPolicy $LamnaPolicy $LamnaPolicyBin
    ```
 
 8. Upload your base policy XML and the associated binary to a source control solution such as [GitHub](https://github.com/) or a document management solution such as [Office 365 SharePoint](https://products.office.com/sharepoint/collaboration).
@@ -138,7 +132,7 @@ At this point, Alice now has an initial policy that is ready to deploy in audit 
 Alice has defined a policy for Lamna's fully managed devices that makes some trade-offs between security and manageability for apps. Some of the trade-offs include:
 
 - **Users with administrative access**<br>
-    Although applying to fewer users, Lamna still allows some IT staff to log in to its fully managed devices as administrator. This allows these admin users (or malware running with the user's privileges) to modify or remove altogether the WDAC policy applied on the device. Additionally, administrators can configure any app they wish to operate as a managed installer that would allow them to gain persistent app authorization for whatever apps or binaries they wish.
+    Although applying to fewer users, Lamna still allows some IT staff to sign in to its fully managed devices as administrator. This privilege allows these users (or malware running with the user's privileges) to modify or remove altogether the WDAC policy applied on the device. Additionally, administrators can configure any app they wish to operate as a managed installer that would allow them to gain persistent app authorization for whatever apps or binaries they wish.
 
    Possible mitigations:
   - Use signed WDAC policies and UEFI BIOS access protection to prevent tampering of WDAC policies.
@@ -169,5 +163,5 @@ Alice has defined a policy for Lamna's fully managed devices that makes some tra
 
 ## Up next
 
-- [Create a WDAC policy for fixed-workload devices using a reference computer](create-initial-default-policy.md)
-- [Prepare to deploy WDAC policies](windows-defender-application-control-deployment-guide.md)
+- [Create a Windows Defender Application Control policy for fixed-workload devices using a reference computer](create-initial-default-policy.md)
+- [Prepare to deploy Windows Defender Application Control policies](windows-defender-application-control-deployment-guide.md)

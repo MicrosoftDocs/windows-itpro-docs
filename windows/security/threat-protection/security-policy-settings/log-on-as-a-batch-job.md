@@ -1,33 +1,36 @@
 ---
-title: Log on as a batch job (Windows 10)
+title: Log on as a batch job 
 description: Describes the best practices, location, values, policy management, and security considerations for the Log on as a batch job security policy setting.
 ms.assetid: 4eaddb51-0a18-470e-9d3d-5e7cd7970b41
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - highpri
+  - tier3
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Log on as a batch job
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 This article describes the recommended practices, location, values, policy management, and security considerations for the **Log on as a batch job** security policy setting.
 
 ## Reference
 
-This policy setting determines which accounts can log on by using a batch-queue tool such as the Task Scheduler service. When you use the Add Scheduled Task Wizard to schedule a task to run under a particular user name and password, that user is automatically assigned the **Log on as a batch job** user right. When the scheduled time arrives, the Task Scheduler service logs on the user as a batch job instead of as an interactive user, and the task runs in the user's security context.
+This policy setting determines which accounts can sign in by using a batch-queue tool such as the Task Scheduler service. When you use the Add Scheduled Task Wizard to schedule a task to run under a particular user name and password, that user is automatically assigned the **Log on as a batch job** user right. When the scheduled time arrives, the Task Scheduler service logs on the user as a batch job instead of as an interactive user, and the task runs in the user's security context.
 
 Constant: SeBatchLogonRight
 
@@ -85,7 +88,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-The **Log on as a batch job** user right presents a low-risk vulnerability. For most organizations, the default settings are sufficient. Members of the local Administrators group have this right by default.
+The **Log on as a batch job** user right presents a low-risk vulnerability that allows non-administrators to perform administrator-like functions.  If not assessed, understood, and restricted accordingly, attackers can easily exploit this potential attack vector to compromise systems, credentials, and data. For most organizations, the default settings are sufficient. Members of the local Administrators group have this right by default.
 
 ### Countermeasure
 
@@ -95,7 +98,7 @@ For IIS servers, configure this policy locally instead of through domain–based
 
 ### Potential impact
 
-If you configure the **Log on as a batch job** setting by using domain-based Group Policy settings, the computer can't assign the user right to accounts that are used for scheduled jobs in the Task Scheduler. If you install optional components such as ASP.NET or IIS, you might need to assign this user right to additional accounts that those components require. For example, IIS requires assignment of this user right to the IIS\_WPG group and the IUSR\_*&lt;ComputerName&gt;*, ASPNET, and IWAM\_*&lt;ComputerName&gt;* accounts. If this user right isn't assigned to this group and these accounts, IIS can't run some COM objects that are necessary for proper functionality.
+If you configure the **Log on as a batch job** setting by using domain-based Group Policy settings, the computer can't assign the user right to accounts that are used for scheduled jobs in the Task Scheduler. If you install optional components such as ASP.NET or IIS, you might need to assign this user right to other accounts that those components require. For example, IIS requires assignment of this user right to the IIS\_WPG group and the IUSR\_*&lt;ComputerName&gt;*, ASPNET, and IWAM\_*&lt;ComputerName&gt;* accounts. If this user right isn't assigned to this group and these accounts, IIS can't run some COM objects that are necessary for proper functionality.
 
 ## Related topics
 

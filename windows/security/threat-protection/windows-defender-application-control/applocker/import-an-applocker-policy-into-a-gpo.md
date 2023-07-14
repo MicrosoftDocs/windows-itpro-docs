@@ -1,30 +1,18 @@
 ---
-title: Import an AppLocker policy into a GPO (Windows)
+title: Import an AppLocker policy into a GPO
 description: This topic for IT professionals describes the steps to import an AppLocker policy into a Group Policy Object (GPO).
-ms.assetid: 0629ce44-f5e2-48a8-ba47-06544c73261f
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.author: vinpa
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+author: vinaypamnani-msft
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Import an AppLocker policy into a GPO
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -32,9 +20,9 @@ ms.technology: windows-sec
 This topic for IT professionals describes the steps to import an AppLocker policy into a Group Policy Object (GPO).
 AppLocker policies can be created as local security policies and modified like any other local security policy, or they can be created as part of a GPO and managed by using Group Policy. You can create AppLocker policies on any supported computer. For info about which Windows editions are supported, see [Requirements to Use AppLocker](requirements-to-use-applocker.md).
 
->**Important:**  Follow your organization's standard procedures for updating GPOs. For info about specific steps to follow for AppLocker policies, see [Maintain AppLocker policies](maintain-applocker-policies.md).
+>**Important:**  Follow your organization's standard procedures for updating GPOs. For info about specific steps to follow for AppLocker policies, see [Maintain AppLocker policies](maintain-applocker-policies.md).
  
-To complete this procedure, you must have the **Edit Setting** permission to edit a GPO. By default, members of the **Domain Admins** group, the **Enterprise Admins** group, and the **Group Policy Creator Owners** group have this permission.
+To complete this procedure, you must have the **Edit Setting** permission to edit a GPO. By default, members of the **Domain Admins** group, the **Enterprise Admins** group, and the **Group Policy Creator Owners** group have this permission.
 
 **To import an AppLocker policy into a GPO**
 

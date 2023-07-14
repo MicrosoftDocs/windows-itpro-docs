@@ -1,17 +1,18 @@
 ---
-title: Configure and customize Windows 11 taskbar | Microsoft Docs
-description: On Windows 11 devices, pin and unpin default apps and organization apps on the taskbar using an XML file. Deploy the taskbar XML file using Group Policy or MDM and Microsoft Endpoint Manager. See what happens to the taskbar when the Windows OS client is installed or upgraded.
-ms.assetid: 
-manager: dougeby
-ms.author: mandia
+title: Configure and customize Windows 11 taskbar
+description: On Windows 11 devices, pin and unpin default apps and organization apps on the taskbar using an XML file. Deploy the taskbar XML file using Group Policy or MDM and Microsoft Intune. See what happens to the taskbar when the Windows OS client is installed or upgraded.
+manager: aaroncz
+ms.author: lizlong
 ms.reviewer: chataylo
-ms.prod: w11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: mobile
-author: MandiOhlinger
+ms.prod: windows-client
+author: lizgt2000
 ms.localizationpriority: medium
-ms.collection: highpri
+ms.collection:
+ - highpri
+ - tier1
+ms.technology: itpro-configure
+ms.date: 12/31/2017
+ms.topic: article
 ---
 
 # Customize the Taskbar on Windows 11
@@ -28,7 +29,7 @@ For example, you can override the default set of apps with your own a set of pin
 
 To add apps you want pinned to the taskbar, you use an XML file. You can use an existing XML file, or create a new file. If you have an XML file that's used on Windows 10 devices, you can also use it on Windows 11 devices. You may have to update the App IDs.
 
-This article shows you how to create the XML file, add apps to the XML, and deploy the XML file.
+This article shows you how to create the XML file, add apps to the XML, and deploy the XML file. To learn how to customize the taskbar buttons, see [CSP policies to customize Windows 11 taskbar buttons](supported-csp-taskbar-windows.md#csp-policies-to-customize-windows-11-taskbar-buttons).
 
 ## Before you begin
 
@@ -40,17 +41,17 @@ This article shows you how to create the XML file, add apps to the XML, and depl
 
 - Some classic Windows applications are packaged differently than they were in previous versions of Windows, including Notepad and File Explorer. Be sure to enter the correct AppID. For more information, see [Application User Model ID (AUMID)](./find-the-application-user-model-id-of-an-installed-app.md) and [Get the AUMID and Desktop app link path](#get-the-aumid-and-desktop-app-link-path) (in this article).
 
-- It's recommended to use a Mobile Device Management (MDM) provider. MDM providers help manage your devices, and help manage apps on your devices. For Microsoft, that includes using Microsoft Endpoint Manager. Endpoint Manager includes Microsoft Intune, which is a cloud service, and Configuration Manager, which is on-premises.
+- It's recommended to use a Mobile Device Management (MDM) provider. MDM providers help manage your devices, and help manage apps on your devices. You can use Microsoft Intune. Intune is a family of products that include Microsoft Intune, which is a cloud service, and Configuration Manager, which is on-premises.
 
   In this article, we mention these services. If you're not managing your devices using an MDM provider, the following resources may help you get started:
 
-  - [Microsoft Endpoint Manager overview](/mem/endpoint-manager-overview)
+  - [Endpoint Management at Microsoft](/mem/endpoint-manager-overview)
   - [What is Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Intune planning guide](/mem/intune/fundamentals/intune-planning-guide)
   - [What is Configuration Manager?](/mem/configmgr/core/understand/introduction)
 
 ## Create the XML file
 
-1. In a text editor, such as Visual Studio Code, create a new XML file. To help you get started, you can copy and paste the following XML sample. The sample pins two apps to the taskbar - File Explorer and the Command Prompt:
+1. In a text editor, such as Visual Studio Code, create a new XML file. To help you get started, you can copy and paste the following XML sample. The sample pins 2 apps to the taskbar - File Explorer and the Command Prompt:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -137,7 +138,7 @@ This article shows you how to create the XML file, add apps to the XML, and depl
 
 ## Use Group Policy or MDM to create and deploy a taskbar policy
 
-Now that you have the XML file with your customized taskbar, you're ready to deploy it to devices in your organization. You can deploy your taskbar XML file using Group Policy, or using an MDM provider, like Microsoft Endpoint Manager.
+Now that you have the XML file with your customized taskbar, you're ready to deploy it to devices in your organization. You can deploy your taskbar XML file using Group Policy, or using an MDM provider, like Microsoft Intune.
 
 This section shows you how to deploy the XML both ways.
 
@@ -161,15 +162,15 @@ Use the following steps to add your XML file to a group policy, and apply the po
 
 4. When you apply the policy, the taskbar includes your changes. The next time users sign in, they'll see the changes.
 
-    For more information on using group policies, see [Implement Group Policy Objects](/learn/modules/implement-group-policy-objects/).
+    For more information on using group policies, see [Implement Group Policy Objects](/training/modules/implement-group-policy-objects/).
 
-### Create a Microsoft Endpoint Manager policy to deploy your XML file
+### Create a Microsoft Intune policy to deploy your XML file
 
-MDM providers can deploy policies to devices managed by the organization, including organization-owned devices, and personal or bring your own device (BYOD). Using an MDM provider, such as Microsoft Endpoint Manager, you can deploy a policy that configures the pinned list.
+MDM providers can deploy policies to devices managed by the organization, including organization-owned devices, and personal or bring your own device (BYOD). Using an MDM provider, such as Microsoft Intune, you can deploy a policy that configures the pinned list.
 
-Use the following steps to create an Endpoint Manager policy that deploys your taskbar XML file:
+Use the following steps to create an Intune policy that deploys your taskbar XML file:
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
 2. Select **Devices** > **Configuration profiles** > **Create profile**.
 
@@ -191,7 +192,7 @@ Use the following steps to create an Endpoint Manager policy that deploys your t
 
 8. When the policy is created, you can deploy it now, or deploy it later. Since this policy is a customized taskbar, the policy can also be deployed before users sign in the first time.
 
-    For more information and guidance on assigning policies using Microsoft Endpoint Manager, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).
+    For more information and guidance on assigning policies using Microsoft Intune, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).
 
 > [!NOTE]
 > For third party partner MDM solutions, you may need to use an OMA-URI setting for Start layout, based on the [Policy configuration service provider (CSP)](/windows/client-management/mdm/policy-configuration-service-provider). The OMA-URI setting is `./User/Vendor/MSFT/Policy/Config/Start/StartLayout`.

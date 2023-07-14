@@ -1,26 +1,26 @@
 ---
-title: Accounts Rename administrator account (Windows 10)
+title: Accounts Rename administrator account 
 description: This security policy reference topic for the IT professional describes the best practices, location, values, and security considerations for this policy setting.
 ms.assetid: d21308eb-7c60-4e48-8747-62b8109844f9
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Accounts: Rename administrator account
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 This security policy reference topic for the IT professional describes the best practices, location, values, and security considerations for this policy setting.
@@ -62,7 +62,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a computer restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a computer restart when they're saved locally or distributed through Group Policy.
 
 ### Policy conflict considerations
 
@@ -70,7 +70,7 @@ None.
 
 ### Group Policy
 
-This policy setting can be configured by using the Group Policy Management Console (GPMC) to be distributed through Group Policy Objects (GPOs). If this policy is not contained in a distributed GPO, this policy can be configured on the local device by using the Local Security Policy snap-in.
+This policy setting can be configured by using the Group Policy Management Console (GPMC) to be distributed through Group Policy Objects (GPOs). If this policy isn't contained in a distributed GPO, this policy can be configured on the local device by using the Local Security Policy snap-in.
 
 ## Security considerations
 
@@ -78,9 +78,9 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-The Administrator account exists on all versions Windows 10 for desktop editions. If you rename this account, it is slightly more difficult for unauthorized persons to guess this privileged user name and password combination. Beginning with Windows Vista, the person who installs the operating system specifies an account that is the first member of the Administrator group and has full rights to configure the computer so this countermeasure is applied by default on new installations. If a device is upgraded from a previous version of Windows, the account with the name administrator is retained with all the rights and privileges that were defined for the account in the previous installation.
+The Administrator account exists on all versions Windows 10 for desktop editions. If you rename this account, it's slightly more difficult for unauthorized persons to guess this privileged user name and password combination. Beginning with Windows Vista, the person who installs the operating system specifies an account that is the first member of the Administrator group and has full rights to configure the computer so this countermeasure is applied by default on new installations. If a device is upgraded from a previous version of Windows, the account with the name administrator is retained with all the rights and privileges that were defined for the account in the previous installation.
 
-The built-in administrator account cannot be locked out, regardless of how many times an attacker might use a bad password. This capability makes the administrator account a popular target for brute-force attacks that attempt to guess passwords. The value of this countermeasure is lessened because this account has a well-known SID, and there are non-Microsoft tools that allow authentication by using the SID rather than the account name. Therefore, even if you rename the Administrator account, an attacker could launch a brute-force attack by using the SID to log on.
+The built-in administrator account can't be locked out, regardless of how many times an attacker might use a bad password. This capability makes the administrator account a popular target for brute-force attacks that attempt to guess passwords. The value of this countermeasure is lessened because this account has a well-known SID, and there are non-Microsoft tools that allow authentication by using the SID rather than the account name. Therefore, even if you rename the Administrator account, an attacker could launch a brute-force attack by using the SID to sign in.
 
 ### Countermeasure
 
@@ -88,7 +88,7 @@ Specify a new name in the **Accounts: Rename administrator account** setting to 
 
 ### Potential impact
 
-You must provide users who are authorized to use this account with the new account name. (The guidance for this setting assumes that the Administrator account was not disabled.)
+You must provide users who are authorized to use this account with the new account name. (The guidance for this setting assumes that the Administrator account wasn't disabled.)
 
 ## Related topics
 

@@ -1,354 +1,421 @@
 ---
-title: Policy CSP - ADMX_NCSI
-description: Policy CSP - ADMX_NCSI
-ms.author: dansimp
+title: ADMX_NCSI Policy CSP
+description: Learn more about the ADMX_NCSI Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 09/14/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_NCSI-Begin -->
 # Policy CSP - ADMX_NCSI
->[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ADMX_NCSI policies  
+<!-- ADMX_NCSI-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_NCSI-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-ncsi-ncsi-corpdnsprobecontent">ADMX_NCSI/NCSI_CorpDnsProbeContent</a>
-  </dd>
-  <dd>
-    <a href="#admx-ncsi-ncsi-corpdnsprobehost">ADMX_NCSI/NCSI_CorpDnsProbeHost</a>
-  </dd>
-  <dd>
-    <a href="#admx-ncsi-ncsi-corpsiteprefixes">ADMX_NCSI/NCSI_CorpSitePrefixes</a>
-  </dd>
-  <dd>
-    <a href="#admx-ncsi-ncsi-corpwebprobeurl">ADMX_NCSI/NCSI_CorpWebProbeUrl</a>
-  </dd>
-  <dd>
-    <a href="#admx-ncsi-ncsi-domainlocationdeterminationurl">ADMX_NCSI/NCSI_DomainLocationDeterminationUrl</a>
-  </dd>
-  <dd>
-    <a href="#admx-ncsi-ncsi-globaldns">ADMX_NCSI/NCSI_GlobalDns</a>
-  </dd>
-  <dd>
-    <a href="#admx-ncsi-ncsi-passivepolling">ADMX_NCSI/NCSI_PassivePolling</a>
-  </dd>
-</dl>
+<!-- NCSI_CorpDnsProbeContent-Begin -->
+## NCSI_CorpDnsProbeContent
 
+<!-- NCSI_CorpDnsProbeContent-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NCSI_CorpDnsProbeContent-Applicability-End -->
 
-<hr/>
+<!-- NCSI_CorpDnsProbeContent-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_NCSI/NCSI_CorpDnsProbeContent
+```
+<!-- NCSI_CorpDnsProbeContent-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-ncsi-ncsi-corpdnsprobecontent"></a>**ADMX_NCSI/NCSI_CorpDnsProbeContent**  
+<!-- NCSI_CorpDnsProbeContent-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting enables you to specify the expected address of the host name used for the DNS probe. Successful resolution of the host name to this address indicates corporate connectivity.
+<!-- NCSI_CorpDnsProbeContent-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- NCSI_CorpDnsProbeContent-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> This applies exclusively to DirectAccess clients.
+<!-- NCSI_CorpDnsProbeContent-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NCSI_CorpDnsProbeContent-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NCSI_CorpDnsProbeContent-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NCSI_CorpDnsProbeContent-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-> [!div class = "checklist"]
-> * Device
+**ADMX mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | NCSI_CorpDnsProbeContent |
+| Friendly Name | Specify corporate DNS probe host address |
+| Location | Computer Configuration |
+| Path | Network > Network Connectivity Status Indicator |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator\CorporateConnectivity |
+| ADMX File Name | NCSI.admx |
+<!-- NCSI_CorpDnsProbeContent-AdmxBacked-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting  enables you to specify the expected address of the host name used for the DNS probe. Successful resolution of the host name to this address indicates corporate connectivity.
+<!-- NCSI_CorpDnsProbeContent-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NCSI_CorpDnsProbeContent-Examples-End -->
 
-<!--/Description-->
+<!-- NCSI_CorpDnsProbeContent-End -->
 
+<!-- NCSI_CorpDnsProbeHost-Begin -->
+## NCSI_CorpDnsProbeHost
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Specify corporate DNS probe host address*
--   GP name: *NCSI_CorpDnsProbeContent*
--   GP path: *Network\Network Connectivity Status Indicator*
--   GP ADMX file name: *NCSI.admx*
+<!-- NCSI_CorpDnsProbeHost-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NCSI_CorpDnsProbeHost-Applicability-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NCSI_CorpDnsProbeHost-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_NCSI/NCSI_CorpDnsProbeHost
+```
+<!-- NCSI_CorpDnsProbeHost-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-ncsi-ncsi-corpdnsprobehost"></a>**ADMX_NCSI/NCSI_CorpDnsProbeHost**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- NCSI_CorpDnsProbeHost-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting enables you to specify the host name of a computer known to be on the corporate network. Successful resolution of this host name to the expected address indicates corporate connectivity.
+<!-- NCSI_CorpDnsProbeHost-Description-End -->
 
-<!--/Description-->
+<!-- NCSI_CorpDnsProbeHost-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> This applies exclusively to DirectAccess clients.
+<!-- NCSI_CorpDnsProbeHost-Editable-End -->
 
+<!-- NCSI_CorpDnsProbeHost-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Specify corporate DNS probe host name*
--   GP name: *NCSI_CorpDnsProbeHost*
--   GP path: *Network\Network Connectivity Status Indicator*
--   GP ADMX file name: *NCSI.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NCSI_CorpDnsProbeHost-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NCSI_CorpDnsProbeHost-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-ncsi-ncsi-corpsiteprefixes"></a>**ADMX_NCSI/NCSI_CorpSitePrefixes**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | NCSI_CorpDnsProbeHost |
+| Friendly Name | Specify corporate DNS probe host name |
+| Location | Computer Configuration |
+| Path | Network > Network Connectivity Status Indicator |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator\CorporateConnectivity |
+| ADMX File Name | NCSI.admx |
+<!-- NCSI_CorpDnsProbeHost-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NCSI_CorpDnsProbeHost-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NCSI_CorpDnsProbeHost-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NCSI_CorpDnsProbeHost-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NCSI_CorpSitePrefixes-Begin -->
+## NCSI_CorpSitePrefixes
 
-> [!div class = "checklist"]
-> * Device
+<!-- NCSI_CorpSitePrefixes-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NCSI_CorpSitePrefixes-Applicability-End -->
 
-<hr/>
+<!-- NCSI_CorpSitePrefixes-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_NCSI/NCSI_CorpSitePrefixes
+```
+<!-- NCSI_CorpSitePrefixes-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NCSI_CorpSitePrefixes-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting enables you to specify the list of IPv6 corporate site prefixes to monitor for corporate connectivity. Reachability of addresses with any of these prefixes indicates corporate connectivity.
+<!-- NCSI_CorpSitePrefixes-Description-End -->
 
-<!--/Description-->
+<!-- NCSI_CorpSitePrefixes-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> This applies exclusively to DirectAccess clients.
+<!-- NCSI_CorpSitePrefixes-Editable-End -->
 
+<!-- NCSI_CorpSitePrefixes-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Specify corporate site prefix list*
--   GP name: *NCSI_CorpSitePrefixes*
--   GP path: *Network\Network Connectivity Status Indicator*
--   GP ADMX file name: *NCSI.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NCSI_CorpSitePrefixes-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NCSI_CorpSitePrefixes-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-ncsi-ncsi-corpwebprobeurl"></a>**ADMX_NCSI/NCSI_CorpWebProbeUrl**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | NCSI_CorpSitePrefixes |
+| Friendly Name | Specify corporate site prefix list |
+| Location | Computer Configuration |
+| Path | Network > Network Connectivity Status Indicator |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator\CorporateConnectivity |
+| ADMX File Name | NCSI.admx |
+<!-- NCSI_CorpSitePrefixes-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NCSI_CorpSitePrefixes-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NCSI_CorpSitePrefixes-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NCSI_CorpSitePrefixes-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NCSI_CorpWebProbeUrl-Begin -->
+## NCSI_CorpWebProbeUrl
 
-> [!div class = "checklist"]
-> * Device
+<!-- NCSI_CorpWebProbeUrl-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NCSI_CorpWebProbeUrl-Applicability-End -->
 
-<hr/>
+<!-- NCSI_CorpWebProbeUrl-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_NCSI/NCSI_CorpWebProbeUrl
+```
+<!-- NCSI_CorpWebProbeUrl-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NCSI_CorpWebProbeUrl-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting enables you to specify the URL of the corporate website, against which an active probe is performed.
+<!-- NCSI_CorpWebProbeUrl-Description-End -->
 
-<!--/Description-->
+<!-- NCSI_CorpWebProbeUrl-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> This applies exclusively to DirectAccess clients.
+<!-- NCSI_CorpWebProbeUrl-Editable-End -->
 
+<!-- NCSI_CorpWebProbeUrl-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Specify corporate Website probe URL*
--   GP name: *NCSI_CorpWebProbeUrl*
--   GP path: *Network\Network Connectivity Status Indicator*
--   GP ADMX file name: *NCSI.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NCSI_CorpWebProbeUrl-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- NCSI_CorpWebProbeUrl-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/Policy-->
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-ncsi-ncsi-domainlocationdeterminationurl"></a>**ADMX_NCSI/NCSI_DomainLocationDeterminationUrl**  
+| Name | Value |
+|:--|:--|
+| Name | NCSI_CorpWebProbeUrl |
+| Friendly Name | Specify corporate Website probe URL |
+| Location | Computer Configuration |
+| Path | Network > Network Connectivity Status Indicator |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator\CorporateConnectivity |
+| ADMX File Name | NCSI.admx |
+<!-- NCSI_CorpWebProbeUrl-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- NCSI_CorpWebProbeUrl-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NCSI_CorpWebProbeUrl-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NCSI_CorpWebProbeUrl-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NCSI_DomainLocationDeterminationUrl-Begin -->
+## NCSI_DomainLocationDeterminationUrl
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NCSI_DomainLocationDeterminationUrl-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NCSI_DomainLocationDeterminationUrl-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- NCSI_DomainLocationDeterminationUrl-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_NCSI/NCSI_DomainLocationDeterminationUrl
+```
+<!-- NCSI_DomainLocationDeterminationUrl-OmaUri-End -->
 
-<hr/>
+<!-- NCSI_DomainLocationDeterminationUrl-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting enables you to specify the HTTPS URL of the corporate website that clients use to determine the current domain location (i.e. whether the computer is inside or outside the corporate network). Reachability of the URL destination indicates that the client location is inside corporate network; otherwise it's outside the network.
+<!-- NCSI_DomainLocationDeterminationUrl-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting enables you to specify the HTTPS URL of the corporate website that clients use to determine the current domain location (i.e. whether the computer is inside or outside the corporate network). Reachability of the URL destination indicates that the client location is inside corporate network; otherwise it is outside the network.
+<!-- NCSI_DomainLocationDeterminationUrl-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> This indicates the Network Location Server (NLS) URL and applies exclusively to DirectAccess clients (it does NOT apply for example to VPN clients). For non-DirectAccess scenarios, such as Azure AD only joined devices, please refer to [Policy CSP - NetworkListManager](./policy-csp-networklistmanager.md).
+<!-- NCSI_DomainLocationDeterminationUrl-Editable-End -->
 
-<!--/Description-->
+<!-- NCSI_DomainLocationDeterminationUrl-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NCSI_DomainLocationDeterminationUrl-DFProperties-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Specify domain location determination URL*
--   GP name: *NCSI_DomainLocationDeterminationUrl*
--   GP path: *Network\Network Connectivity Status Indicator*
--   GP ADMX file name: *NCSI.admx*
+<!-- NCSI_DomainLocationDeterminationUrl-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-ncsi-ncsi-globaldns"></a>**ADMX_NCSI/NCSI_GlobalDns**  
+| Name | Value |
+|:--|:--|
+| Name | NCSI_DomainLocationDeterminationUrl |
+| Friendly Name | Specify domain location determination URL |
+| Location | Computer Configuration |
+| Path | Network > Network Connectivity Status Indicator |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator\CorporateConnectivity |
+| ADMX File Name | NCSI.admx |
+<!-- NCSI_DomainLocationDeterminationUrl-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- NCSI_DomainLocationDeterminationUrl-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NCSI_DomainLocationDeterminationUrl-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NCSI_DomainLocationDeterminationUrl-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NCSI_GlobalDns-Begin -->
+## NCSI_GlobalDns
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NCSI_GlobalDns-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NCSI_GlobalDns-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- NCSI_GlobalDns-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_NCSI/NCSI_GlobalDns
+```
+<!-- NCSI_GlobalDns-OmaUri-End -->
 
-<hr/>
+<!-- NCSI_GlobalDns-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting enables you to specify DNS binding behavior. NCSI by default will restrict DNS lookups to the interface it's currently probing on. If you enable this setting, NCSI will allow the DNS lookups to happen on any interface.
+<!-- NCSI_GlobalDns-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting enables you to specify DNS binding behavior. NCSI by default will restrict DNS lookups to the interface it is currently probing on. If you enable this setting, NCSI will allow the DNS lookups to happen on any interface.
+<!-- NCSI_GlobalDns-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NCSI_GlobalDns-Editable-End -->
 
-<!--/Description-->
+<!-- NCSI_GlobalDns-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NCSI_GlobalDns-DFProperties-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Specify global DNS*
--   GP name: *NCSI_GlobalDns*
--   GP path: *Network\Network Connectivity Status Indicator*
--   GP ADMX file name: *NCSI.admx*
+<!-- NCSI_GlobalDns-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-ncsi-ncsi-passivepolling"></a>**ADMX_NCSI/NCSI_PassivePolling**  
+| Name | Value |
+|:--|:--|
+| Name | NCSI_GlobalDns |
+| Friendly Name | Specify global DNS |
+| Location | Computer Configuration |
+| Path | Network > Network Connectivity Status Indicator |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator |
+| ADMX File Name | NCSI.admx |
+<!-- NCSI_GlobalDns-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- NCSI_GlobalDns-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NCSI_GlobalDns-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NCSI_GlobalDns-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NCSI_PassivePolling-Begin -->
+## NCSI_PassivePolling
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NCSI_PassivePolling-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NCSI_PassivePolling-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- NCSI_PassivePolling-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_NCSI/NCSI_PassivePolling
+```
+<!-- NCSI_PassivePolling-OmaUri-End -->
 
-<hr/>
+<!-- NCSI_PassivePolling-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This Policy setting enables you to specify passive polling behavior. NCSI polls various measurements throughout the network stack on a frequent interval to determine if network connectivity has been lost. Use the options to control the passive polling behavior.
+<!-- NCSI_PassivePolling-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-This Policy setting enables you to specify passive polling behavior. NCSI polls various measurements throughout the network stack on a frequent interval to determine if network connectivity has been lost.  Use the options to control the passive polling behavior.
+<!-- NCSI_PassivePolling-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NCSI_PassivePolling-Editable-End -->
 
-<!--/Description-->
+<!-- NCSI_PassivePolling-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NCSI_PassivePolling-DFProperties-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Specify passive polling*
--   GP name: *NCSI_PassivePolling*
--   GP path: *Network\Network Connectivity Status Indicator*
--   GP ADMX file name: *NCSI.admx*
+<!-- NCSI_PassivePolling-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | NCSI_PassivePolling |
+| Friendly Name | Specify passive polling |
+| Location | Computer Configuration |
+| Path | Network > Network Connectivity Status Indicator |
+| Registry Key Name | Software\Policies\Microsoft\Windows\NetworkConnectivityStatusIndicator |
+| ADMX File Name | NCSI.admx |
+<!-- NCSI_PassivePolling-AdmxBacked-End -->
 
-<!--/Policies-->
+<!-- NCSI_PassivePolling-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NCSI_PassivePolling-Examples-End -->
 
+<!-- NCSI_PassivePolling-End -->
+
+<!-- ADMX_NCSI-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_NCSI-CspMoreInfo-End -->
+
+<!-- ADMX_NCSI-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -2,34 +2,111 @@
 
 title: Microsoft 365 Education Documentation
 summary: Microsoft 365 Education empowers educators to unlock creativity, promote teamwork, and provide a simple and safe experience in a single, affordable solution built for education.
+brand: m365
 
 metadata:
   title: Microsoft 365 Education Documentation
   description: Learn about product documentation and resources available for school IT administrators, teachers, students, and education app developers.
-  ms.service: help
   ms.topic: hub-page
-  author: LaurenMoynihan
-  ms.author: v-lamoyn
-  ms.date: 10/24/2019
+  ms.date: 08/10/2022
 
 productDirectory:
+  title: For IT admins
+  summary: This guide is designed for IT admins looking for the simplest way to move their platform to the cloud. It does not capture all the necessary steps for large scale or complex deployments.
   items:
     # Card    
-    - title: IT Admins
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./images/EDUAdmins.svg
-      links:
-        - url: itadmins.yml
-          text: Get started with deploying and managing a full cloud IT solution for your school.
+    - title: Phase 1 - Cloud deployment
+      imageSrc: ./images/EDU-Deploy.svg
+      summary: Create your Microsoft 365 tenant, secure and configure your environment, sync your Active Directory and SIS, and license users.
+      url: /microsoft-365/education/deploy/create-your-office-365-tenant
     # Card
-    - title: Developers
-      imageSrc: ./images/EDUDevelopers.svg
-      links:
-        - url: developers.yml
-          text: Looking for information about developing solutions on Microsoft Education products? Start here. 
+    - title: Phase 2 - Device management
+      imageSrc: ./images/EDU-Device-Mgmt.svg
+      summary: Get started with Windows for Education, set up and enroll devices in Intune.
+      url: /microsoft-365/education/deploy/set-up-windows-10-education-devices
     # Card    
-    - title: Partners
-      imageSrc: ./images/EDUPartners.svg
+    - title: Phase 3 - Apps management
+      imageSrc: ./images/EDU-Apps-Mgmt.svg
+      summary: Configure admin settings, set up Teams for Education, install apps and install Minecraft.
+      url: /microsoft-365/education/deploy/configure-admin-settings
+    # Card    
+    - title: Phase 4 - Complete your deployment
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: ./images/EDU-Tasks.svg
+      summary: Configure settings for Exchange and SharePoint.
+      url: /microsoft-365/education/deploy/deploy-exchange-online
+    # Card
+    - title: Security & compliance
+      imageSrc: ./images/EDU-Lockbox.svg
       links:
-        - url: partners.yml
-          text: Looking for resources available to Microsoft Education partners? Start here.
+        - url: /azure/active-directory/fundamentals/active-directory-deployment-checklist-p2
+          text: Azure Active Directory feature deployment guide
+        - url: https://techcommunity.microsoft.com/t5/security-compliance-and-identity/azure-information-protection-deployment-acceleration-guide/ba-p/334423
+          text: Azure information protection deployment acceleration guide
+        - url: /defender-cloud-apps/get-started
+          text: Microsoft Defender for Cloud Apps
+        - url: /microsoft-365/compliance/information-protection#prevent-data-loss
+          text: Data loss prevention
+        - url: /microsoft-365/compliance/
+          text: Microsoft Purview compliance
+        - url: https://social.technet.microsoft.com/wiki/contents/articles/35748.office-365-what-is-customer-lockbox-and-how-to-enable-it.aspx
+          text: Deploying Lockbox
+    # Card    
+    - title: Analytics & insights
+      imageSrc: ./images/EDU-Education.svg
+      links:
+        - url: /power-bi/admin/service-admin-administering-power-bi-in-your-organization
+          text: Power BI for IT admins
+        - url: /dynamics365/
+          text: Dynamics 365
+    # Card    
+    - title: Find deployment help and other support resources
+      imageSrc: ./images/EDU-Teachers.svg
+      links:
+        - url: /microsoft-365/education/deploy/find-deployment-help
+          text: IT admin help
+        - url: https://support.office.com/education
+          text: Education help center
+        - url: /training/educator-center/
+          text: Teacher training packs
+    # Card    
+    - title: Check out our education journey
+      imageSrc: ./images/EDU-ITJourney.svg
+      links:
+        - url: https://edujourney.microsoft.com/k-12/
+          text: K-12
+        - url: https://edujourney.microsoft.com/hed/
+          text: Higher education
+
+additionalContent:
+  sections:
+    - title: For developers # < 60 chars (optional)
+      summary: Are you an app developer looking for information about developing solutions on Microsoft Education products? Start here. # < 160 chars (optional)
+    - items:
+        # Card
+        - title: UWP apps for education
+          summary: Learn how to write universal apps for education.
+          url: /windows/uwp/apps-for-education/
+        # Card
+        - title: Take a test API
+          summary: Learn how web applications can use the API to provide a locked down experience for taking tests.
+          url: /windows/uwp/apps-for-education/take-a-test-api
+        # Card
+        - title: Office dev center
+          summary: Integrate with Office 365 across devices and services to extend Microsoft enterprise-scale compliance and security to students, teachers, and staff in your education app.
+          url: https://developer.microsoft.com/office/
+        # Card
+        - title: Data Streamer
+          summary: Bring new STEM experiences into the classroom with real-time data in Excel using Data Streamer. Data Streamer can send data to Excel from a sensor or application.
+          url: /microsoft-365/education/data-streamer
+    - title: For partners # < 60 chars (optional)
+      summary: Looking for resources available to Microsoft Education partners? Start here. # < 160 chars (optional)
+    - items:
+        # Card
+        - title: Microsoft Partner Network
+          summary: Discover the latest news and resources for Microsoft Education products, solutions, licensing and readiness.
+          url: https://partner.microsoft.com/explore/education
+        # Card
+        - title: Education Partner community Yammer group
+          summary: Sign in with your Microsoft Partner account and join the Education Partner community private group on Yammer.
+          url: https://www.yammer.com/mepn/

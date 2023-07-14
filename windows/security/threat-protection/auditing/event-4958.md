@@ -1,31 +1,32 @@
 ---
-title: 4958(F) Windows Firewall did not apply the following rule because the rule referred to items not configured on this computer. (Windows 10)
-description: Describes security event 4958(F) Windows Firewall did not apply the following rule because the rule referred to items not configured on this computer.
+title: 4958(F) Windows Firewall did not apply the following rule because the rule referred to items not configured on this computer. 
+description: Describes security event 4958(F) Windows Firewall didn't apply the following rule because the rule referred to items not configured on this computer.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4958(F): Windows Firewall did not apply the following rule because the rule referred to items not configured on this computer.
 
 
-Windows Firewall with Advanced Security processed a rule that contains parameters that cannot be resolved on the local computer. The rule is therefore not enforceable on the computer and so is excluded from the runtime state of the firewall. This is not necessarily an error. Examine the rule for applicability on the computers to which it was applied.
+Windows Firewall with Advanced Security processed a rule that contains parameters that can't be resolved on the local computer. The rule is therefore not enforceable on the computer and so is excluded from the runtime state of the firewall. This exclusion isn't necessarily an error. Examine the rule for applicability on the computers to which it was applied.
 
-There is no example of this event in this document.
+There's no example of this event in this document.
 
 ***Subcategory:***&nbsp;[Audit MPSSVC Rule-Level Policy Change](audit-mpssvc-rule-level-policy-change.md)
 
 ***Event Schema:***
 
-*Windows Firewall did not apply the following rule because the rule referred to items not configured on this computer:
+*Windows Firewall didn't apply the following rule because the rule referred to items not configured on this computer:
 Rule Information:
 %tID:%t%1
 %tName:%t%2

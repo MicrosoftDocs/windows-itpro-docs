@@ -1,26 +1,26 @@
 ---
-title: Network access Remotely accessible registry paths and subpaths (Windows 10)
+title: Network access Remotely accessible registry paths and subpaths 
 description: Describes best practices, location, values, and security considerations for the policy setting, Network access Remotely accessible registry paths and subpaths.
 ms.assetid: 3fcbbf70-a002-4f85-8e86-8dabad21928e
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network access: Remotely accessible registry paths and subpaths
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Network access: Remotely accessible registry paths and subpaths** security policy setting.
@@ -41,7 +41,7 @@ To allow remote access, you must also enable the Remote Registry service.
 
 ### Best practices
 
--   Set this policy to a null value; that is, enable the policy setting, but do not enter any paths in the text box. Remote management tools, such as the Microsoft Baseline Security Analyzer and Configuration Manager, require remote access to the registry. Removing the default registry paths from the list of accessible paths might cause these and other management tools to fail.
+-   Set this policy to a null value; that is, enable the policy setting, but don't enter any paths in the text box. Remote management tools, such as the Microsoft Baseline Security Analyzer and Configuration Manager, require remote access to the registry. Removing the default registry paths from the list of accessible paths might cause these and other management tools to fail.
 
 ### Location
 
@@ -80,7 +80,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a computer restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a computer restart when they're saved locally or distributed through Group Policy.
 
 ## Security considerations
 
@@ -92,7 +92,7 @@ The registry contains sensitive device configuration information that could be u
 
 ### Countermeasure
 
-Configure the **Network access: Remotely accessible registry paths and sub-paths** setting to a null value (enable the setting but do not enter any paths in the text box).
+Configure the **Network access: Remotely accessible registry paths and sub-paths** setting to a null value (enable the setting but don't enter any paths in the text box).
 
 ### Potential impact
 

@@ -1,17 +1,18 @@
 ---
-title: 4928(S, F) An Active Directory replica source naming context was established. (Windows 10)
+title: 4928(S, F) An Active Directory replica source naming context was established. 
 description: Describes security event 4928(S, F) An Active Directory replica source naming context was established.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4928(S, F): An Active Directory replica source naming context was established.
@@ -97,12 +98,12 @@ Failure event generates if an error occurs (**Status Code** != 0).
 
     <img src="images/ad-sites-and-services.png" alt="Directory Replication Service options in AD Sites and Services" width="890" height="529" />
 
--   **Status Code** \[Type = UInt32\]**:** if there are no issues or errors, the status code will be 0. If an error happened, you will receive Failure event and Status Code will not be equal to “**0**”. You can check error code meaning here: <https://msdn.microsoft.com/library/windows/desktop/ms681381(v=vs.85).aspx>
+-   **Status Code** \[Type = UInt32\]**:** if there are no issues or errors, the status code will be 0. If an error happened, you'll receive Failure event and Status Code won't be equal to “**0**”. You can check error code meaning here: <https://msdn.microsoft.com/library/windows/desktop/ms681381(v=vs.85).aspx>
 
 ## Security Monitoring Recommendations
 
 For 4928(S, F): An Active Directory replica source naming context was established.
 
--   Monitor for **Source Address** field, because the source of new replication (new DRA) must be authorized for this action. If you find any unauthorized DRA you should trigger an event.
+-   Monitor for **Source Address** field, because the source of new replication (new DRA) must be authorized for this action. If you find any unauthorized DRA, you should trigger an event.
 
 -   This event is typically used for Active Directory replication troubleshooting.

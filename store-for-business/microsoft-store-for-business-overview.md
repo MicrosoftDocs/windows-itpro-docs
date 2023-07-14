@@ -3,7 +3,6 @@ title: Microsoft Store for Business and Microsoft Store for Education overview (
 description: With Microsoft Store for Business and Microsoft Store for Education, organizations and schools can make volume purchases of Windows apps.
 ms.assetid: 9DA71F6B-654D-4121-9A40-D473CC654A1C
 ms.reviewer: 
-ms.prod: w10
 ms.pagetype: store
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,20 +11,22 @@ author: cmcatee-MSFT
 manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 07/21/2021
+ms.date: 05/24/2023
 ---
 
 # Microsoft Store for Business and Microsoft Store for Education overview
 
-**Applies to**
+**Applies to:**
 
--   Windows 10
-
-> [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
+- Windows 10
 
 > [!IMPORTANT]
-> Starting on April 14th, 2021, only free apps will be available in Microsoft Store for Business and Education. For more information, see [Microsoft Store for Business and Education](index.md).
+>
+> - The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
+> - In April 2023 the Microsoft Store for Business tab was removed from Microsoft Store apps on Windows 10 and Windows 11 PCs. An interaction with existing MDM and GPO policies may lead to customers seeing errors when accessing the Microsoft Store app. For more information see [Microsoft Store for Business tab removed](manage-access-to-private-store.md#microsoft-store-for-business-tab-removed).
+
+> [!NOTE]
+> As of April 14th, 2021, only free apps are available in Microsoft Store for Business and Education. For more information, see [Microsoft Store for Business and Education](index.md).
 
 Designed for organizations, Microsoft Store for Business and Microsoft Store for Education give IT decision makers and administrators in businesses or schools a flexible way to find, acquire, manage, and distribute free and paid apps in select markets to Windows 10 devices in volume. IT administrators can manage Microsoft Store apps and private line-of-business apps in one inventory, plus assign and re-use licenses as needed. You can choose the best distribution method for your organization: directly assign apps to individuals and teams, publish apps to private pages in Microsoft Store, or connect with management solutions for more options. There will be no support for Microsoft Store for Business and Education on Windows 11.
 
@@ -42,7 +43,7 @@ Organizations or schools of any size can benefit from using Microsoft Store for 
     - **Microsoft Store for Education** – Apps acquired from Microsoft Store for Education
     - **Office 365** – Subscriptions
     - **Volume licensing** - Apps purchased with volume licensing
-- **Private store** - Create a private store for your business that’s easily available from any Windows 10 device. Your private store is available from Microsoft Store on Windows 10, or with a browser on the Web. People in your organization can download apps from your organization's private store on Windows 10 devices. 
+- **Private store** - Create a private store for your business that's easily available from any Windows 10 device. Your private store is available from Microsoft Store on Windows 10, or with a browser on the Web. People in your organization can download apps from your organization's private store on Windows 10 devices. 
 - **Flexible distribution options** - Flexible options for distributing content and apps to your employee devices:
     - Distribute through Microsoft Store services. You can assign apps to individual employees, or make apps available to all employees in your private store.
     - Use a management tool from Microsoft, or a 3rd-party tool for advanced distribution and management functions, or for managing images.
@@ -68,7 +69,7 @@ Microsoft Azure Active Directory (AD) accounts for your employees:
 - Employees need Azure AD account when they access Store for Business content from Windows devices.
 - If you use a management tool to distribute and manage online-licensed apps, all employees will need an Azure AD account
 - For offline-licensed apps, Azure AD accounts are not required for employees.
-- Admins can add or remove user accounts in the Microsoft 365 admin center, even if you don’t have an Office 365 subscription. You can access the Office 365 admin portal directly from the Store for Business and Education. 
+- Admins can add or remove user accounts in the Microsoft 365 admin center, even if you don't have an Office 365 subscription. You can access the Office 365 admin portal directly from the Store for Business and Education. 
 
 For more information on Azure AD, see [About Office 365 and Azure Active Directory](/previous-versions//dn509517(v=technet.10)), and [Intro to Azure: identity and access](https://go.microsoft.com/fwlink/p/?LinkId=708611).
 
@@ -83,7 +84,7 @@ While not required, you can use a management tool to distribute and manage apps.
 
 ## Sign up!
 
-The first step for getting your organization started with Store for Business and Education is signing up. Sign up using an existing account (the same one you use for Office 365, Dynamics 365, Intune, Azure, etc.) or we’ll quickly create an account for you. You must be a Global Administrator for your organization.
+The first step for getting your organization started with Store for Business and Education is signing up. Sign up using an existing account (the same one you use for Office 365, Dynamics 365, Intune, Azure, etc.) or we'll quickly create an account for you. You must be a Global Administrator for your organization.
 
 ## Set up
 
@@ -101,7 +102,7 @@ After your admin signs up for the Store for Business and Education, they can ass
 
 In some cases, admins will need to add Azure Active Directory (AD) accounts for their employees. For more information, see [Manage user accounts and groups](manage-users-and-groups-microsoft-store-for-business.md).
 
-Also, if your organization plans to use a management tool, you’ll need to configure your management tool to sync with Store for Business and Education.
+Also, if your organization plans to use a management tool, you'll need to configure your management tool to sync with Store for Business and Education.
 
 ## Get apps and content
 
@@ -128,7 +129,7 @@ App distribution is handled through two channels, either through the Microsoft S
 
 **Distribute with Store for Business and Education**:
 - Email link – After purchasing an app, Admins can send employees a link in an email message. Employees can click the link to install the app.
-- Curate private store for all employees – A private store can include content you’ve purchased from Microsoft Store for Business, and your line-of-business apps that you’ve submitted to Microsoft Store for Business. Apps in your private store are available to all of your employees. They can browse the private store and install apps when needed.
+- Curate private store for all employees – A private store can include content you've purchased from Microsoft Store for Business, and your line-of-business apps that you've submitted to Microsoft Store for Business. Apps in your private store are available to all of your employees. They can browse the private store and install apps when needed.
 - To use the options above users must be signed in with an Azure AD account on a Windows 10 device. Licenses are assigned as individuals install apps. 
 
 **Using a management tool** – For larger organizations that want a greater level of control over how apps are distributed and managed, a management tools provides other distribution options:

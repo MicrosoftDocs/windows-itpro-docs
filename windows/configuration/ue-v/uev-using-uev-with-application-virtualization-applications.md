@@ -1,16 +1,15 @@
 ---
 title: Using UE-V with Application Virtualization applications
 description: Learn how to use User Experience Virtualization (UE-V) with Microsoft Application Virtualization (App-V).
-author: greg-lindsay
-ms.pagetype: mdop, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.prod: w10
+author: aczechowski
+ms.prod: windows-client
+ms.collection: tier3
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-configure
 ---
 
 
@@ -19,7 +18,7 @@ ms.topic: article
 **Applies to**
 -   Windows 10, version 1607
 
-User Experience Virtualization (UE-V) supports Microsoft Application Virtualization (App-V) applications without any required modifications to either the App-V package or the UE-V template. However, an additional step is required because you cannot run the UE-V template generator directly on a virtualized App-V application. Instead, you must install the application locally, generate the template, and then apply the template to the virtualized application. UE-V supports App-V for Windows 10 packages and App-V 5.0 packages.
+User Experience Virtualization (UE-V) supports Microsoft Application Virtualization (App-V) applications without any required modifications to either the App-V package or the UE-V template. However, another step is required because you can't run the UE-V template generator directly on a virtualized App-V application. Instead, you must install the application locally, generate the template, and then apply the template to the virtualized application. UE-V supports App-V for Windows 10 packages and App-V 5.0 packages.
 
 ## UE-V settings synchronization for App-V applications
 
@@ -29,7 +28,7 @@ UE-V monitors when an application opens by the program name and, optionally, by 
 
 1.  Run the UE-V template generator to collect the settings of the locally installed application whose settings you want to synchronize between computers. This process creates a settings location template. If you use a built-in template such as a Microsoft Office template, skip this step. For more information about using the UE-V template generator, see [Deploy UE-V for custom applications](uev-deploy-uev-for-custom-applications.md).
 
-2.  Install the App-V application package if you have not already done so.
+2.  Install the App-V application package if you haven't already done so.
 
 3.  Publish the template to the location of your settings template catalog or manually install the template by using the `Register-UEVTemplate` Windows PowerShell cmdlet.
 

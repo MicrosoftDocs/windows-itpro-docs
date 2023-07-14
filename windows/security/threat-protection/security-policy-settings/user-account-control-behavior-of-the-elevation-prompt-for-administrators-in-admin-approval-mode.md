@@ -1,26 +1,26 @@
 ---
-title: User Account Control Behavior of the elevation prompt for administrators in Admin Approval Mode (Windows 10)
+title: User Account Control Behavior of the elevation prompt for administrators in Admin Approval Mode 
 description: Best practices and more for the security policy setting, User Account Control Behavior of the elevation prompt for administrators in Admin Approval Mode.
 ms.assetid: 46a3c3a2-1d2e-4a6f-b5e6-29f9592f535d
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode** security policy setting.
@@ -33,9 +33,9 @@ This policy setting determines the behavior of the elevation prompt for accounts
 
 -   **Elevate without prompting**
 
-    Assumes that the administrator will permit an operation that requires elevation, and additional consent or credentials are not required.
+    Assumes that the administrator will permit an operation that requires elevation, and more consent or credentials aren't required.
 
-    **Note**  Selecting **Elevate without prompting** minimizes the protection that is provided by UAC. We do not recommend selecting this value unless administrator accounts are tightly controlled and the operating environment is highly secure.
+    **Note**  Selecting **Elevate without prompting** minimizes the protection that is provided by UAC. We don't recommend selecting this value unless administrator accounts are tightly controlled and the operating environment is highly secure.
      
 -   **Prompt for credentials on the secure desktop**
 
@@ -55,18 +55,18 @@ This policy setting determines the behavior of the elevation prompt for accounts
 
 -   **Prompt for consent for non-Windows binaries**
 
-    This is the default. When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select **Permit** or **Deny**. If the user selects **Permit**, the operation continues with the user's highest available privilege.
+    This prompt for consent is the default. When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select **Permit** or **Deny**. If the user selects **Permit**, the operation continues with the user's highest available privilege.
 
-\*If you have enabled the built-in Administrator account and have configured Admin Approval Mode, you must also configure the option **Prompt for consent on the secure desktop**. You can also configure this option from User Account Control, by typing **UAC** in the search box. From the User Account Control Settings dialog box, set the slider control to **Notify me only when apps try to make changes to my computer (default)**.
+\*If you've enabled the built-in Administrator account and have configured Admin Approval Mode, you must also configure the option **Prompt for consent on the secure desktop**. You can also configure this option from User Account Control, by typing **UAC** in the search box. From the User Account Control Settings dialog box, set the slider control to **Notify me only when apps try to make changes to my computer (default)**.
 
 > [!NOTE]
 > After enabling Admin Approval Mode, to activate the setting, you must first log in and out. Alternatively, You may perform **gpupdate /force** from an elevated command prompt. 
 
 ### Best practices
 
--   Selecting the option **Elevate without prompting** minimizes the protection that is provided by UAC. We do not recommend selecting this value unless administrator accounts are tightly controlled and the operating environment is highly secure.
+-   Selecting the option **Elevate without prompting** minimizes the protection that is provided by UAC. We don't recommend selecting this value unless administrator accounts are tightly controlled and the operating environment is highly secure.
 
--   It is recommended not to enable the built-in Administrator account on the client computer, but to use the standard user account and User Account Control (UAC) instead. If you want to enable the built-in Administrator account to carry out administrative tasks, for security reasons you should also enable Admin Approval Mode. For further information, see [UAC-Admin-Approval-Mode-for-the-Built-in-Administrator-account](/windows/device-security/security-policy-settings/user-account-control-admin-approval-mode-for-the-built-in-administrator-account)
+-   It's recommended not to enable the built-in Administrator account on the client computer, but to use the standard user account and User Account Control (UAC) instead. If you want to enable the built-in Administrator account to carry out administrative tasks, for security reasons you should also enable Admin Approval Mode. For more information, see [UAC-Admin-Approval-Mode-for-the-Built-in-Administrator-account](/windows/device-security/security-policy-settings/user-account-control-admin-approval-mode-for-the-built-in-administrator-account)
 
 ### Location
 
@@ -90,7 +90,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a computer restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a computer restart when they're saved locally or distributed through Group Policy.
 
 ### Group Policy
 
@@ -110,7 +110,7 @@ Configure the **User Account Control: Behavior of the elevation prompt for admin
 
 ### Potential impact
 
-Administrators should be made aware that they will be prompted for consent when all binaries attempt to run.
+Administrators should be made aware that they'll be prompted for consent when all binaries attempt to run.
 
 ## Related topics
 

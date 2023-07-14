@@ -1,326 +1,389 @@
 ---
-title: Policy CSP - ADMX_EnhancedStorage
-description: Policy CSP - ADMX_EnhancedStorage
-ms.author: dansimp
+title: ADMX_EnhancedStorage Policy CSP
+description: Learn more about the ADMX_EnhancedStorage Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 11/23/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_EnhancedStorage-Begin -->
 # Policy CSP - ADMX_EnhancedStorage
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<hr/>
+<!-- ADMX_EnhancedStorage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_EnhancedStorage-Editable-End -->
 
-<!--Policies-->
-## ADMX_EnhancedStorage policies  
+<!-- ApprovedEnStorDevices-Begin -->
+## ApprovedEnStorDevices
 
-<dl>
-  <dd>
-    <a href="#admx-enhancedstorage-approvedenstordevices">ADMX_EnhancedStorage/ApprovedEnStorDevices</a>
-  </dd>
-  <dd>
-    <a href="#admx-enhancedstorage-approvedsilos">ADMX_EnhancedStorage/ApprovedSilos</a>
-  </dd>
-  <dd>
-    <a href="#admx-enhancedstorage-disablepasswordauthentication">ADMX_EnhancedStorage/DisablePasswordAuthentication</a>
-  </dd>
-  <dd>
-    <a href="#admx-enhancedstorage-disallowlegacydiskdevices">ADMX_EnhancedStorage/DisallowLegacyDiskDevices</a>
-  </dd>
-  <dd>
-    <a href="#admx-enhancedstorage-lockdeviceonmachinelock">ADMX_EnhancedStorage/LockDeviceOnMachineLock</a>
-  </dd>
-  <dd>
-    <a href="#admx-enhancedstorage-roothubconnectedenstordevices">ADMX_EnhancedStorage/RootHubConnectedEnStorDevices</a>
-  </dd>
-</dl>
+<!-- ApprovedEnStorDevices-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ApprovedEnStorDevices-Applicability-End -->
 
+<!-- ApprovedEnStorDevices-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_EnhancedStorage/ApprovedEnStorDevices
+```
+<!-- ApprovedEnStorDevices-OmaUri-End -->
 
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-enhancedstorage-approvedenstordevices"></a>**ADMX_EnhancedStorage/ApprovedEnStorDevices**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- ApprovedEnStorDevices-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to configure a list of Enhanced Storage devices by manufacturer and product ID that are usable on your computer.
 
-If you enable this policy setting, only Enhanced Storage devices that contain a manufacturer and product ID specified in this policy are usable on your computer.
+- If you enable this policy setting, only Enhanced Storage devices that contain a manufacturer and product ID specified in this policy are usable on your computer.
 
-If you disable or do not configure this policy setting, all Enhanced Storage devices are usable on your computer.
+- If you disable or don't configure this policy setting, all Enhanced Storage devices are usable on your computer.
+<!-- ApprovedEnStorDevices-Description-End -->
 
-<!--/Description-->
+<!-- ApprovedEnStorDevices-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ApprovedEnStorDevices-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Configure list of Enhanced Storage devices usable on your computer*
--   GP name: *ApprovedEnStorDevices*
--   GP path: *System\Enhanced Storage Access*
--   GP ADMX file name: *EnhancedStorage.admx*
+<!-- ApprovedEnStorDevices-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ApprovedEnStorDevices-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-enhancedstorage-approvedsilos"></a>**ADMX_EnhancedStorage/ApprovedSilos**  
+<!-- ApprovedEnStorDevices-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | ApprovedEnStorDevices |
+| Friendly Name | Configure list of Enhanced Storage devices usable on your computer |
+| Location | Computer Configuration |
+| Path | System > Enhanced Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\EnhancedStorageDevices\ApprovedEnStorDevices |
+| Registry Value Name | PolicyEnabled |
+| ADMX File Name | EnhancedStorage.admx |
+<!-- ApprovedEnStorDevices-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ApprovedEnStorDevices-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ApprovedEnStorDevices-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ApprovedEnStorDevices-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ApprovedSilos-Begin -->
+## ApprovedSilos
 
-<hr/>
+<!-- ApprovedSilos-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ApprovedSilos-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- ApprovedSilos-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_EnhancedStorage/ApprovedSilos
+```
+<!-- ApprovedSilos-OmaUri-End -->
+
+<!-- ApprovedSilos-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to create a list of IEEE 1667 silos, compliant with the Institute of Electrical and Electronics Engineers, Inc. (IEEE) 1667 specification, that are usable on your computer.
 
-If you enable this policy setting, only IEEE 1667 silos that match a silo type identifier specified in this policy are usable on your computer.
+- If you enable this policy setting, only IEEE 1667 silos that match a silo type identifier specified in this policy are usable on your computer.
 
-If you disable or do not configure this policy setting, all IEEE 1667 silos on Enhanced Storage devices are usable on your computer.
+- If you disable or don't configure this policy setting, all IEEE 1667 silos on Enhanced Storage devices are usable on your computer.
+<!-- ApprovedSilos-Description-End -->
 
-<!--/Description-->
+<!-- ApprovedSilos-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ApprovedSilos-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Configure list of IEEE 1667 silos usable on your computer*
--   GP name: *ApprovedSilos*
--   GP path: *System\Enhanced Storage Access*
--   GP ADMX file name: *EnhancedStorage.admx*
+<!-- ApprovedSilos-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ApprovedSilos-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-enhancedstorage-disablepasswordauthentication"></a>**ADMX_EnhancedStorage/DisablePasswordAuthentication**  
+<!-- ApprovedSilos-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | ApprovedSilos |
+| Friendly Name | Configure list of IEEE 1667 silos usable on your computer |
+| Location | Computer Configuration |
+| Path | System > Enhanced Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\EnhancedStorageDevices\ApprovedSilos |
+| Registry Value Name | SiloAllowListPolicy |
+| ADMX File Name | EnhancedStorage.admx |
+<!-- ApprovedSilos-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ApprovedSilos-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ApprovedSilos-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ApprovedSilos-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisablePasswordAuthentication-Begin -->
+## DisablePasswordAuthentication
 
-<hr/>
+<!-- DisablePasswordAuthentication-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisablePasswordAuthentication-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisablePasswordAuthentication-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_EnhancedStorage/DisablePasswordAuthentication
+```
+<!-- DisablePasswordAuthentication-OmaUri-End -->
+
+<!-- DisablePasswordAuthentication-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures whether or not a password can be used to unlock an Enhanced Storage device.
 
-If you enable this policy setting, a password cannot be used to unlock an Enhanced Storage device.
+- If you enable this policy setting, a password can't be used to unlock an Enhanced Storage device.
 
-If you disable or do not configure this policy setting, a password can be used to unlock an Enhanced Storage device.
+- If you disable or don't configure this policy setting, a password can be used to unlock an Enhanced Storage device.
+<!-- DisablePasswordAuthentication-Description-End -->
 
-<!--/Description-->
+<!-- DisablePasswordAuthentication-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisablePasswordAuthentication-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not allow password authentication of Enhanced Storage devices*
--   GP name: *DisablePasswordAuthentication*
--   GP path: *System\Enhanced Storage Access*
--   GP ADMX file name: *EnhancedStorage.admx*
+<!-- DisablePasswordAuthentication-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisablePasswordAuthentication-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-enhancedstorage-disallowlegacydiskdevices"></a>**ADMX_EnhancedStorage/DisallowLegacyDiskDevices**  
+<!-- DisablePasswordAuthentication-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | DisablePasswordAuthentication |
+| Friendly Name | Do not allow password authentication of Enhanced Storage devices |
+| Location | Computer Configuration |
+| Path | System > Enhanced Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\EnhancedStorageDevices |
+| Registry Value Name | DisablePasswordAuthentication |
+| ADMX File Name | EnhancedStorage.admx |
+<!-- DisablePasswordAuthentication-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisablePasswordAuthentication-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisablePasswordAuthentication-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisablePasswordAuthentication-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisallowLegacyDiskDevices-Begin -->
+## DisallowLegacyDiskDevices
 
-<hr/>
+<!-- DisallowLegacyDiskDevices-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisallowLegacyDiskDevices-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisallowLegacyDiskDevices-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_EnhancedStorage/DisallowLegacyDiskDevices
+```
+<!-- DisallowLegacyDiskDevices-OmaUri-End -->
+
+<!-- DisallowLegacyDiskDevices-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures whether or not non-Enhanced Storage removable devices are allowed on your computer.
 
-If you enable this policy setting, non-Enhanced Storage removable devices are not allowed on your computer.
+- If you enable this policy setting, non-Enhanced Storage removable devices aren't allowed on your computer.
 
-If you disable or do not configure this policy setting, non-Enhanced Storage removable devices are allowed on your computer.
+- If you disable or don't configure this policy setting, non-Enhanced Storage removable devices are allowed on your computer.
+<!-- DisallowLegacyDiskDevices-Description-End -->
 
-<!--/Description-->
+<!-- DisallowLegacyDiskDevices-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisallowLegacyDiskDevices-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not allow non-Enhanced Storage removable devices*
--   GP name: *DisallowLegacyDiskDevices*
--   GP path: *System\Enhanced Storage Access*
--   GP ADMX file name: *EnhancedStorage.admx*
+<!-- DisallowLegacyDiskDevices-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisallowLegacyDiskDevices-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-enhancedstorage-lockdeviceonmachinelock"></a>**ADMX_EnhancedStorage/LockDeviceOnMachineLock**  
+<!-- DisallowLegacyDiskDevices-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | DisallowLegacyDiskDevices |
+| Friendly Name | Do not allow non-Enhanced Storage removable devices |
+| Location | Computer Configuration |
+| Path | System > Enhanced Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\EnhancedStorageDevices |
+| Registry Value Name | DisallowLegacyDiskDevices |
+| ADMX File Name | EnhancedStorage.admx |
+<!-- DisallowLegacyDiskDevices-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisallowLegacyDiskDevices-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisallowLegacyDiskDevices-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisallowLegacyDiskDevices-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- LockDeviceOnMachineLock-Begin -->
+## LockDeviceOnMachineLock
 
-<hr/>
+<!-- LockDeviceOnMachineLock-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LockDeviceOnMachineLock-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- LockDeviceOnMachineLock-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_EnhancedStorage/LockDeviceOnMachineLock
+```
+<!-- LockDeviceOnMachineLock-OmaUri-End -->
+
+<!-- LockDeviceOnMachineLock-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting locks Enhanced Storage devices when the computer is locked.
 
 This policy setting is supported in Windows Server SKUs only.
 
-If you enable this policy setting, the Enhanced Storage device remains locked when the computer is locked.
+- If you enable this policy setting, the Enhanced Storage device remains locked when the computer is locked.
 
-If you disable or do not configure this policy setting, the Enhanced Storage device state is not changed when the computer is locked.
+- If you disable or don't configure this policy setting, the Enhanced Storage device state isn't changed when the computer is locked.
+<!-- LockDeviceOnMachineLock-Description-End -->
 
-<!--/Description-->
+<!-- LockDeviceOnMachineLock-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LockDeviceOnMachineLock-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Lock Enhanced Storage when the computer is locked*
--   GP name: *LockDeviceOnMachineLock*
--   GP path: *System\Enhanced Storage Access*
--   GP ADMX file name: *EnhancedStorage.admx*
+<!-- LockDeviceOnMachineLock-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- LockDeviceOnMachineLock-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-enhancedstorage-roothubconnectedenstordevices"></a>**ADMX_EnhancedStorage/RootHubConnectedEnStorDevices**  
+<!-- LockDeviceOnMachineLock-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | LockDeviceOnMachineLock |
+| Friendly Name | Lock Enhanced Storage when the computer is locked |
+| Location | Computer Configuration |
+| Path | System > Enhanced Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\EnhancedStorageDevices |
+| Registry Value Name | LockDeviceOnMachineLock |
+| ADMX File Name | EnhancedStorage.admx |
+<!-- LockDeviceOnMachineLock-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LockDeviceOnMachineLock-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LockDeviceOnMachineLock-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- LockDeviceOnMachineLock-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- RootHubConnectedEnStorDevices-Begin -->
+## RootHubConnectedEnStorDevices
 
-<hr/>
+<!-- RootHubConnectedEnStorDevices-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- RootHubConnectedEnStorDevices-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- RootHubConnectedEnStorDevices-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_EnhancedStorage/RootHubConnectedEnStorDevices
+```
+<!-- RootHubConnectedEnStorDevices-OmaUri-End -->
+
+<!-- RootHubConnectedEnStorDevices-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures whether or not only USB root hub connected Enhanced Storage devices are allowed. Allowing only root hub connected Enhanced Storage devices minimizes the risk of an unauthorized USB device reading data on an Enhanced Storage device.
 
-If you enable this policy setting, only USB root hub connected Enhanced Storage devices are allowed.
+- If you enable this policy setting, only USB root hub connected Enhanced Storage devices are allowed.
 
-If you disable or do not configure this policy setting, USB Enhanced Storage devices connected to both USB root hubs and non-root hubs will be allowed.
+- If you disable or don't configure this policy setting, USB Enhanced Storage devices connected to both USB root hubs and non-root hubs will be allowed.
+<!-- RootHubConnectedEnStorDevices-Description-End -->
 
-<!--/Description-->
+<!-- RootHubConnectedEnStorDevices-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RootHubConnectedEnStorDevices-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow only USB root hub connected Enhanced Storage devices*
--   GP name: *RootHubConnectedEnStorDevices*
--   GP path: *System\Enhanced Storage Access*
--   GP ADMX file name: *EnhancedStorage.admx*
+<!-- RootHubConnectedEnStorDevices-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RootHubConnectedEnStorDevices-DFProperties-End -->
 
-<!--/Policies-->
+<!-- RootHubConnectedEnStorDevices-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | RootHubConnectedEnStorDevices |
+| Friendly Name | Allow only USB root hub connected Enhanced Storage devices |
+| Location | Computer Configuration |
+| Path | System > Enhanced Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\EnhancedStorageDevices |
+| Registry Value Name | RootHubConnectedEnStorDevices |
+| ADMX File Name | EnhancedStorage.admx |
+<!-- RootHubConnectedEnStorDevices-AdmxBacked-End -->
+
+<!-- RootHubConnectedEnStorDevices-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RootHubConnectedEnStorDevices-Examples-End -->
+
+<!-- RootHubConnectedEnStorDevices-End -->
+
+<!-- ADMX_EnhancedStorage-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_EnhancedStorage-CspMoreInfo-End -->
+
+<!-- ADMX_EnhancedStorage-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

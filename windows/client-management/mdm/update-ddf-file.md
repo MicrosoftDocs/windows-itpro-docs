@@ -1,14 +1,13 @@
 ---
 title: Update DDF file
 description: Learn about the OMA DM device description framework (DDF) for the Update configuration service provider (CSP).
-ms.assetid: E236E468-88F3-402A-BA7A-834ED38DD388
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+ms.reviewer:
+manager: aaroncz
+ms.author: vinpa
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
+author: vinaypamnani-msft
 ms.date: 02/23/2018
 ---
 
@@ -16,7 +15,7 @@ ms.date: 02/23/2018
 
 This topic shows the OMA DM device description framework (DDF) for the **Update** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 The XML below is for Windows 10, version 1803.
 
@@ -560,7 +559,7 @@ The XML below is for Windows 10, version 1803.
           </AccessType>
           <Description>
             Roll back Latest Quality Update, if the machine meets the following conditions:
-            Condition 1: Device must be WUfB Connected
+            Condition 1: Device must be Windows Update for Business connected
             Condition 2: Device must be in a Paused State
             Condition 3: Device must have the Latest Quality Update installed on the device (Current State)
             If the conditions are not true, the device will not Roll Back the Latest Quality Update.
@@ -588,7 +587,7 @@ The XML below is for Windows 10, version 1803.
           </AccessType>
           <Description>
             Roll Back Latest Feature Update, if the machine meets the following conditions:
-            Condition 1: Device must be WUfB Connected
+            Condition 1: Device must be Windows Update for Business connected
             Condition 2: Device must be in Paused State
             Condition 3: Device must have the Latest Feature Update Installed on the device (Current State)
             Condition 4: Machine should be within the uninstall period

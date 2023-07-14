@@ -1,26 +1,26 @@
 ---
-title: System settings Optional subsystems (Windows 10)
+title: System settings Optional subsystems 
 description: Describes the best practices, location, values, policy management, and security considerations for the System settings Optional subsystems security policy setting.
 ms.assetid: 5cb6519a-4f84-4b45-8072-e2aa8a72fb78
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # System settings: Optional subsystems
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **System settings: Optional subsystems** security policy setting.
@@ -29,7 +29,7 @@ Describes the best practices, location, values, policy management, and security 
 
 This policy setting determines which subsystems support your applications. You can use this security setting to specify as many subsystems as your environment demands.
 
-The subsystem introduces a security risk that is related to processes that can potentially persist across logons. If a user starts a process and then logs out, the next user who logs on to the system might access the process that the previous user started. This is dangerous, because the process started by the first user can retain that user's system user rights; therefore, anything that the second user does using that process is performed with the user rights of the first user. This makes it difficult to trace who creates processes and objects, which is essential for post-security incident forensics.
+The subsystem introduces a security risk that is related to processes that can potentially persist across logons. If a user starts a process and then signs out, the next user who signs in to the system might access the process that the previous user started. This pattern is dangerous, because the process started by the first user can retain that user's system user rights; therefore, anything that the second user does using that process is performed with the user rights of the first user. This privileges rollover makes it difficult to trace who creates processes and objects, which is essential for post-security incident forensics.
 
 ### Possible values
 
@@ -63,7 +63,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ## Security considerations
 
@@ -73,7 +73,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 The POSIX subsystem is an Institute of Electrical and Electronic Engineers (IEEE) standard that defines a set of operating system services. The POSIX subsystem is required if the server supports applications that use that subsystem.
 
-The POSIX subsystem introduces a security risk that relates to processes that can potentially persist across logons. If a user starts a process and then logs out, there is a potential that the next user who logs on to the computer could access the previous user's process. This would allow the second user to take actions on the process by using the privileges of the first user.
+The POSIX subsystem introduces a security risk that relates to processes that can potentially persist across sign-ins. If a user starts a process and then signs out, there's a potential that the next user who signs in to the computer could access the previous user's process. This accessibility would allow the second user to take actions on the process by using the privileges of the first user.
 
 ### Countermeasure
 

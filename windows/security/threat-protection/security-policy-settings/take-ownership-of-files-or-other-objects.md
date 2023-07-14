@@ -1,26 +1,26 @@
 ---
-title: Take ownership of files or other objects (Windows 10)
+title: Take ownership of files or other objects 
 description: Describes the best practices, location, values, policy management, and security considerations for the Take ownership of files or other objects security policy setting.
 ms.assetid: cb8595d1-74cc-4176-bb15-d97663eebb2d
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Take ownership of files or other objects
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Take ownership of files or other objects** security policy setting.
@@ -31,7 +31,7 @@ This policy setting determines which users can take ownership of any securable o
 
 Every object has an owner, whether the object resides in an NTFS volume or Active Directory database. The owner controls how permissions are set on the object and to whom permissions are granted.
 
-By default, the owner is the person who or the process which created the object. Owners can always change permissions to objects, even when they are denied all access to the object.
+By default, the owner is the person who or the process that created the object. Owners can always change permissions to objects, even when they're denied all access to the object.
 
 Constant: SeTakeOwnershipPrivilege
 
@@ -67,7 +67,7 @@ The following table lists the actual and effective default policy values. Defaul
 
 This section describes features, tools, and guidance to help you manage this policy.
 
-A restart of the device is not required for this policy setting to be effective.
+A restart of the device isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 

@@ -1,17 +1,18 @@
 ---
-title: 4945(S) A rule was listed when the Windows Firewall started. (Windows 10)
+title: 4945(S) A rule was listed when the Windows Firewall started. 
 description: Describes security event 4945(S) A rule was listed when the Windows Firewall started.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4945(S): A rule was listed when the Windows Firewall started.
@@ -25,7 +26,7 @@ ms.technology: windows-sec
 
 This event generates every time Windows Firewall service starts.
 
-This event shows the inbound and/or outbound rule which was listed when the Windows Firewall started and applied for “Public” profile.
+This event shows the inbound and/or outbound rule that was listed when the Windows Firewall started and applied for “Public” profile.
 
 This event generates per rule.
 
@@ -75,11 +76,11 @@ This event generates per rule.
 
 -   **Rule ID** \[Type = UnicodeString\]: the unique firewall rule identifier.
 
-    To see the unique ID of the rule you need to navigate to “**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\FirewallRules”** registry key and you will see the list of Windows Firewall rule IDs (Name column) with parameters:
+    To see the unique ID of the rule, you need to navigate to “**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\FirewallRules”** registry key and you'll see the list of Windows Firewall rule IDs (Name column) with parameters:
 
 <img src="images/registry-editor-firewallrules.png" alt="Registry Editor FirewallRules key illustration" width="1412" height="422" />
 
--   **Rule Name** \[Type = UnicodeString\]: the name of the rule which was listed when the Windows Firewall started. You can see the name of Windows Firewall rule using Windows Firewall with Advanced Security management console (**wf.msc**), check “Name” column:
+-   **Rule Name** \[Type = UnicodeString\]: the name of the rule that was listed when the Windows Firewall started. You can see the name of Windows Firewall rule using Windows Firewall with Advanced Security management console (**wf.msc**), check “Name” column:
 
 <img src="images/windows-firewall-with-advanced-security.png" alt="Windows Firewall with Advanced Security illustration" width="1082" height="363" />
 
@@ -89,5 +90,5 @@ For 4945(S): A rule was listed when the Windows Firewall started.
 
 -   Typically this event has an informational purpose.
 
--   Unfortunately this event shows rules only for **Public** profile, but you still can compare this list with your organization's Windows Firewall baseline for Public profile rules on different computers, and trigger an alert if the configuration is not the same.
+-   Unfortunately this event shows rules only for **Public** profile, but you still can compare this list with your organization's Windows Firewall baseline for Public profile rules on different computers, and trigger an alert if the configuration isn't the same.
 

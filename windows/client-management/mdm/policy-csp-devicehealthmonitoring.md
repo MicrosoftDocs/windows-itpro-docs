@@ -1,180 +1,208 @@
 ---
-title: Policy CSP - DeviceHealthMonitoring
-description: Learn how the Policy CSP - DeviceHealthMonitoring setting is used as an opt-in health monitoring connection between the device and Microsoft.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+title: DeviceHealthMonitoring Policy CSP
+description: Learn more about the DeviceHealthMonitoring Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- DeviceHealthMonitoring-Begin -->
 # Policy CSP - DeviceHealthMonitoring
 
+<!-- DeviceHealthMonitoring-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DeviceHealthMonitoring-Editable-End -->
 
+<!-- AllowDeviceHealthMonitoring-Begin -->
+## AllowDeviceHealthMonitoring
 
-<hr/>
+<!-- AllowDeviceHealthMonitoring-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- AllowDeviceHealthMonitoring-Applicability-End -->
 
-<!--Policies-->
-## DeviceHealthMonitoring policies  
+<!-- AllowDeviceHealthMonitoring-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DeviceHealthMonitoring/AllowDeviceHealthMonitoring
+```
+<!-- AllowDeviceHealthMonitoring-OmaUri-End -->
 
-<dl>
-  <dd>
-    <a href="#devicehealthmonitoring-allowdevicehealthmonitoring">DeviceHealthMonitoring/AllowDeviceHealthMonitoring</a>
-  </dd>
-  <dd>
-    <a href="#devicehealthmonitoring-configdevicehealthmonitoringscope">DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope</a>
-  </dd>
-  <dd>
-    <a href="#devicehealthmonitoring-configdevicehealthmonitoringuploaddestination">DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination</a>
-  </dd>
-</dl>
+<!-- AllowDeviceHealthMonitoring-Description-Begin -->
+<!-- Description-Source-DDF -->
+Enable/disable 4. Nines device health monitoring on devices.
+<!-- AllowDeviceHealthMonitoring-Description-End -->
 
+<!-- AllowDeviceHealthMonitoring-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+DeviceHealthMonitoring is an opt-in health monitoring connection between the device and Microsoft. You should enable this policy only if your organization is using a Microsoft device monitoring service that requires it.
+<!-- AllowDeviceHealthMonitoring-Editable-End -->
 
-<hr/>
+<!-- AllowDeviceHealthMonitoring-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="devicehealthmonitoring-allowdevicehealthmonitoring"></a>**DeviceHealthMonitoring/AllowDeviceHealthMonitoring**  
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowDeviceHealthMonitoring-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowDeviceHealthMonitoring-AllowedValues-Begin -->
+**Allowed values**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Value | Description |
+|:--|:--|
+| 1 | The DeviceHealthMonitoring connection is enabled. |
+| 0 (Default) | The DeviceHealthMonitoring connection is disabled. |
+<!-- AllowDeviceHealthMonitoring-AllowedValues-End -->
 
+<!-- AllowDeviceHealthMonitoring-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowDeviceHealthMonitoring-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowDeviceHealthMonitoring-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ConfigDeviceHealthMonitoringScope-Begin -->
+## ConfigDeviceHealthMonitoringScope
 
-> [!div class = "checklist"]
-> * Device
+<!-- ConfigDeviceHealthMonitoringScope-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- ConfigDeviceHealthMonitoringScope-Applicability-End -->
 
-<hr/>
+<!-- ConfigDeviceHealthMonitoringScope-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope
+```
+<!-- ConfigDeviceHealthMonitoringScope-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-DeviceHealthMonitoring is an opt-in health monitoring connection between the device and Microsoft. You should enable this policy only if your organization is using a Microsoft device monitoring service which requires it.
+<!-- ConfigDeviceHealthMonitoringScope-Description-Begin -->
+<!-- Description-Source-DDF -->
+If the device isn't opted-in to the DeviceHealthMonitoring service via the AllowDeviceHealthMonitoring then this policy has no meaning. For devices which are opted in, the value of this policy modifies which types of events are monitored.
+<!-- ConfigDeviceHealthMonitoringScope-Description-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:  
+<!-- ConfigDeviceHealthMonitoringScope-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This policy is applicable only if the [AllowDeviceHealthMonitoring](#allowdevicehealthmonitoring) policy has been set to 1 (Enabled) on the device. This policy modifies which health events are sent to Microsoft on the DeviceHealthMonitoring connection. IT Pros don't need to set this policy. Instead, Microsoft Intune is expected to dynamically manage this value in coordination with the Microsoft device health monitoring service.
+<!-- ConfigDeviceHealthMonitoringScope-Editable-End -->
 
-- 1 — The DeviceHealthMonitoring connection is enabled.
-- 0 (default) — The DeviceHealthMonitoring connection is disabled.
+<!-- ConfigDeviceHealthMonitoringScope-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Dependency [DeviceHealthMonitoring_ConfigDeviceHealthMonitoringScope_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/DeviceHealthMonitoring/AllowDeviceHealthMonitoring` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
+<!-- ConfigDeviceHealthMonitoringScope-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- ConfigDeviceHealthMonitoringScope-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigDeviceHealthMonitoringScope-Examples-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- ConfigDeviceHealthMonitoringScope-End -->
 
-<hr/>
+<!-- ConfigDeviceHealthMonitoringServiceInstance-Begin -->
+## ConfigDeviceHealthMonitoringServiceInstance
 
-<!--Policy-->
-<a href="" id="devicehealthmonitoring-configdevicehealthmonitoringscope"></a>**DeviceHealthMonitoring/ConfigDeviceHealthMonitoringScope**  
+<!-- ConfigDeviceHealthMonitoringServiceInstance-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ConfigDeviceHealthMonitoringServiceInstance-Applicability-End -->
 
-<!--SupportedSKUs-->
+<!-- ConfigDeviceHealthMonitoringServiceInstance-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DeviceHealthMonitoring/ConfigDeviceHealthMonitoringServiceInstance
+```
+<!-- ConfigDeviceHealthMonitoringServiceInstance-OmaUri-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ConfigDeviceHealthMonitoringServiceInstance-Description-Begin -->
+<!-- Description-Source-DDF -->
+If the device isn't opted-in to the DeviceHealthMonitoring service via the AllowDeviceHealthMonitoring then this policy has no meaning. For devices which are opted in, the value of this policy modifies which service instance to which events are to be uploaded.
+<!-- ConfigDeviceHealthMonitoringServiceInstance-Description-End -->
 
+<!-- ConfigDeviceHealthMonitoringServiceInstance-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigDeviceHealthMonitoringServiceInstance-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ConfigDeviceHealthMonitoringServiceInstance-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Dependency [DeviceHealthMonitoring_ConfigDeviceHealthMonitoringServiceInstance_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/DeviceHealthMonitoring/AllowDeviceHealthMonitoring` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
+<!-- ConfigDeviceHealthMonitoringServiceInstance-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ConfigDeviceHealthMonitoringServiceInstance-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigDeviceHealthMonitoringServiceInstance-Examples-End -->
 
-<hr/>
+<!-- ConfigDeviceHealthMonitoringServiceInstance-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy is applicable only if the [AllowDeviceHealthMonitoring](#devicehealthmonitoring-allowdevicehealthmonitoring) policy has been set to 1 (Enabled) on the device. 
-This policy modifies which health events are sent to Microsoft on the DeviceHealthMonitoring connection.
-IT Pros do not need to set this policy. Instead, Microsoft Intune is expected to dynamically manage this value in coordination with the Microsoft device health monitoring service.
+<!-- ConfigDeviceHealthMonitoringUploadDestination-Begin -->
+## ConfigDeviceHealthMonitoringUploadDestination
 
+<!-- ConfigDeviceHealthMonitoringUploadDestination-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- ConfigDeviceHealthMonitoringUploadDestination-Applicability-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
+<!-- ConfigDeviceHealthMonitoringUploadDestination-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination
+```
+<!-- ConfigDeviceHealthMonitoringUploadDestination-OmaUri-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- ConfigDeviceHealthMonitoringUploadDestination-Description-Begin -->
+<!-- Description-Source-DDF -->
+If the device isn't opted-in to the DeviceHealthMonitoring service via the AllowDeviceHealthMonitoring then this policy has no meaning. For devices which are opted in, the value of this policy modifies which destinations are in-scope for monitored events to be uploaded.
+<!-- ConfigDeviceHealthMonitoringUploadDestination-Description-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- ConfigDeviceHealthMonitoringUploadDestination-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This policy is applicable only if the [AllowDeviceHealthMonitoring](#allowdevicehealthmonitoring) policy has been set to 1 (Enabled) on the device.
 
-<!--/Validation-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="devicehealthmonitoring-configdevicehealthmonitoringuploaddestination"></a>**DeviceHealthMonitoring/ConfigDeviceHealthMonitoringUploadDestination**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy is applicable only if the [AllowDeviceHealthMonitoring](#devicehealthmonitoring-allowdevicehealthmonitoring) policy has been set to 1 (Enabled) on the device. 
 The value of this policy constrains the DeviceHealthMonitoring connection to certain destinations in order to support regional and sovereign cloud scenarios.
-In most cases, an IT Pro does not need to define this policy. Instead, it is expected that this value is dynamically managed by Microsoft Intune to align with the region or cloud to which the device's tenant is already linked. Only configure this policy manually if explicitly instructed to do so by a Microsoft device monitoring service.
+In most cases, an IT Pro doesn't need to define this policy. Instead, it's expected that this value is dynamically managed by Microsoft Intune to align with the region or cloud to which the device's tenant is already linked.
 
+Configure this policy manually only when explicitly instructed to do so by a Microsoft device monitoring service.
+<!-- ConfigDeviceHealthMonitoringUploadDestination-Editable-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
+<!-- ConfigDeviceHealthMonitoringUploadDestination-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+| Dependency [DeviceHealthMonitoring_ConfigDeviceHealthMonitoringUploadDestination_DependencyGroup] | Dependency Type: `DependsOn` <br> Dependency URI: `Device/Vendor/MSFT/Policy/Config/DeviceHealthMonitoring/AllowDeviceHealthMonitoring` <br> Dependency Allowed Value: `[1]` <br> Dependency Allowed Value Type: `Range` <br>  |
+<!-- ConfigDeviceHealthMonitoringUploadDestination-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- ConfigDeviceHealthMonitoringUploadDestination-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigDeviceHealthMonitoringUploadDestination-Examples-End -->
 
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
+<!-- ConfigDeviceHealthMonitoringUploadDestination-End -->
 
+<!-- DeviceHealthMonitoring-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- DeviceHealthMonitoring-CspMoreInfo-End -->
 
+<!-- DeviceHealthMonitoring-End -->
 
-<!--/Policies-->
+## Related articles
 
+[Policy configuration service provider](policy-configuration-service-provider.md)

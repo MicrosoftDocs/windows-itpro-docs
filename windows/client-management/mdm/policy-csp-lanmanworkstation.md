@@ -1,84 +1,100 @@
 ---
-title: Policy CSP - LanmanWorkstation
-description: Use the Policy CSP - LanmanWorkstation setting to determine if the SMB client will allow insecure guest logons to an SMB server.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+title: LanmanWorkstation Policy CSP
+description: Learn more about the LanmanWorkstation Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/11/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- LanmanWorkstation-Begin -->
 # Policy CSP - LanmanWorkstation
 
+<!-- LanmanWorkstation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LanmanWorkstation-Editable-End -->
 
+<!-- EnableInsecureGuestLogons-Begin -->
+## EnableInsecureGuestLogons
 
-<hr/>
+<!-- EnableInsecureGuestLogons-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- EnableInsecureGuestLogons-Applicability-End -->
 
-<!--Policies-->
-## LanmanWorkstation policies  
+<!-- EnableInsecureGuestLogons-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/LanmanWorkstation/EnableInsecureGuestLogons
+```
+<!-- EnableInsecureGuestLogons-OmaUri-End -->
 
-<dl>
-  <dd>
-    <a href="#lanmanworkstation-enableinsecureguestlogons">LanmanWorkstation/EnableInsecureGuestLogons</a>
-  </dd>
-</dl>
-
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="lanmanworkstation-enableinsecureguestlogons"></a>**LanmanWorkstation/EnableInsecureGuestLogons**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- EnableInsecureGuestLogons-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting determines if the SMB client will allow insecure guest logons to an SMB server.
 
-If you enable this policy setting or if you do not configure this policy setting, the SMB client will allow insecure guest logons.
+- If you enable this policy setting or if you don't configure this policy setting, the SMB client will allow insecure guest logons.
 
-If you disable this policy setting, the SMB client will reject insecure guest logons.
+- If you disable this policy setting, the SMB client will reject insecure guest logons.
 
-Insecure guest logons are used by file servers to allow unauthenticated access to shared folders. While uncommon in an enterprise environment, insecure guest logons are frequently used by consumer Network Attached Storage (NAS) appliances acting as file servers. Windows file servers require authentication and do not use insecure guest logons by default. Since insecure guest logons are unauthenticated, important security features such as SMB Signing and SMB Encryption are disabled. As a result, clients that allow insecure guest logons are vulnerable to a variety of man-in-the-middle attacks that can result in data loss, data corruption, and exposure to malware. Additionally, any data written to a file server using an insecure guest logon is potentially accessible to anyone on the network. Microsoft recommends disabling insecure guest logons and configuring file servers to require authenticated access.
+Insecure guest logons are used by file servers to allow unauthenticated access to shared folders. While uncommon in an enterprise environment, insecure guest logons are frequently used by consumer Network Attached Storage (NAS) appliances acting as file servers. Windows file servers require authentication and don't use insecure guest logons by default. Since insecure guest logons are unauthenticated, important security features such as SMB Signing and SMB Encryption are disabled. As a result, clients that allow insecure guest logons are vulnerable to a variety of man-in-the-middle attacks that can result in data loss, data corruption, and exposure to malware. Additionally, any data written to a file server using an insecure guest logon is potentially accessible to anyone on the network. Microsoft recommends disabling insecure guest logons and configuring file servers to require authenticated access".
+<!-- EnableInsecureGuestLogons-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Enable insecure guest logons*
--   GP name: *Pol_EnableInsecureGuestLogons*
--   GP path: *Network/Lanman Workstation*
--   GP ADMX file name: *LanmanWorkstation.admx*
+<!-- EnableInsecureGuestLogons-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableInsecureGuestLogons-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-This setting supports a range of values between 0 and 1.
+<!-- EnableInsecureGuestLogons-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- EnableInsecureGuestLogons-DFProperties-End -->
 
-<!--/Policies-->
+<!-- EnableInsecureGuestLogons-AllowedValues-Begin -->
+**Allowed values**:
 
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- EnableInsecureGuestLogons-AllowedValues-End -->
+
+<!-- EnableInsecureGuestLogons-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Pol_EnableInsecureGuestLogons |
+| Friendly Name | Enable insecure guest logons |
+| Location | Computer Configuration |
+| Path | Network > Lanman Workstation |
+| Registry Key Name | Software\Policies\Microsoft\Windows\LanmanWorkstation |
+| Registry Value Name | AllowInsecureGuestAuth |
+| ADMX File Name | LanmanWorkstation.admx |
+<!-- EnableInsecureGuestLogons-GpMapping-End -->
+
+<!-- EnableInsecureGuestLogons-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableInsecureGuestLogons-Examples-End -->
+
+<!-- EnableInsecureGuestLogons-End -->
+
+<!-- LanmanWorkstation-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- LanmanWorkstation-CspMoreInfo-End -->
+
+<!-- LanmanWorkstation-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

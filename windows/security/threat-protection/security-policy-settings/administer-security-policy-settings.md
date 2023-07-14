@@ -1,34 +1,34 @@
 ---
-title: Administer security policy settings (Windows 10)
+title: Administer security policy settings 
 description: This article discusses different methods to administer security policy settings on a local device or throughout a small- or medium-sized organization.
 ms.assetid: 7617d885-9d28-437a-9371-171197407599
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Administer security policy settings
 
 **Applies to**
 
-- Windows 10
+- Windows 11
+- Windows 10
 
 This article discusses different methods to administer security policy settings on a local device or throughout a small- or medium-sized organization.
 
 Security policy settings should be used as part of your overall security implementation to help secure domain controllers, servers, client devices, and other resources in your organization.
 
-Security settings policies are rules that you can configure on a device, or multiple devices, for the purpose of protecting resources on a device or network. The Security Settings extension of the Local Group Policy Editor snap-in (Gpedit.msc) allows you to define security configurations as part of a Group Policy Object (GPO). The GPOs are linked to Active Directory containers such as sites, domains, and organizational units, and they enable administrators to manage security settings for multiple computers from any device joined to the domain.
+Security settings policies are rules that you can configure on a device, or multiple devices, for protecting resources on a device or network. The Security Settings extension of the Local Group Policy Editor snap-in (Gpedit.msc) allows you to define security configurations as part of a Group Policy Object (GPO). The GPOs are linked to Active Directory containers such as sites, domains, and organizational units, and they enable administrators to manage security settings for multiple computers from any device joined to the domain.
 
 Security settings can control:
 
@@ -83,10 +83,10 @@ The secedit command-line tool works with security templates and provides six pri
 
 - The **Configure** parameter helps you resolve security discrepancies between devices by applying the correct security template to the errant server.
 - The **Analyze** parameter compares the server's security configuration with the selected template.
-- The **Import** parameter allows you to create a database from an existing template. The Security Configuration and Analysis tool does this also.
+- The **Import** parameter allows you to create a database from an existing template. The Security Configuration and Analysis tool does this cloning also.
 - The **Export** parameter allows you to export the settings from a database into a security settings template.
-- The **Validate** parameter allows you to validate the syntax of each or any lines of text that you created or added to a security template. This ensures that if the template fails to apply syntax, the template will not be the issue.
-- The **Generate Rollback** parameter saves the server's current security settings into a security template so it can be used to restore most of the server's security settings to a known state. The exceptions are that, when applied, the rollback template will not change access control list entries on files or registry entries that were changed by the most recently applied template.
+- The **Validate** parameter allows you to validate the syntax of each or any lines of text that you created or added to a security template. This validation ensures that if the template fails to apply syntax, the template won't be the issue.
+- The **Generate Rollback** parameter saves the server's current security settings into a security template so it can be used to restore most of the server's security settings to a known state. The exceptions are that, when applied, the rollback template won't change access control list entries on files or registry entries that were changed by the most recently applied template.
 
 ## <a href="" id="bkmk-scm"></a>Using the Security Compliance Manager
 
@@ -94,7 +94,7 @@ The Security Compliance Manager is a downloadable tool that helps you plan, depl
 
 **To administer security policies by using the Security Compliance Manager**
 
-1. Download the most recent version. You can find out more info on the [Microsoft Security Guidance](/archive/blogs/secguide/) blog.
+1. Download the most recent version. You can find more info on the [Microsoft Security Baselines](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines) blog.
 1. Read the relevant security baseline documentation that is included in this tool.
 1. Download and import the relevant security baselines. The installation process steps you through baseline selection.
 1. Open the Help and follow instructions how to customize, compare, or merge your security baselines before deploying those baselines.
@@ -107,9 +107,9 @@ SCW is a role-based tool: You can use it to create a policy that enables service
 The following are considerations for using SCW:
 
 - SCW disables unnecessary services and provides Windows Firewall with Advanced Security support.
-- Security policies that are created with SCW are not the same as security templates, which are files with an .inf extension. Security templates contain more security settings than those that can be set with SCW. However, it is possible to include a security template in an SCW security policy file.
+- Security policies that are created with SCW aren't the same as security templates, which are files with an .inf extension. Security templates contain more security settings than those settings that can be set with SCW. However, it's possible to include a security template in an SCW security policy file.
 - You can deploy security policies that you create with SCW by using Group Policy.
-- SCW does not install or uninstall the features necessary for the server to perform a role. You can install server role-specific features through Server Manager.
+- SCW doesn't install or uninstall the features necessary for the server to perform a role. You can install server role-specific features through Server Manager.
 - SCW detects server role dependencies. If you select a server role, it automatically selects dependent server roles.
 - All apps that use the IP protocol and ports must be running on the server when you run SCW.
 - In some cases, you must be connected to the Internet to use the links in the SCW help.
@@ -149,20 +149,19 @@ Security Configuration and Analysis is an MMC snap-in for analyzing and configur
 
 ### <a href="" id="h2-359808543"></a>Security analysis
 
-The state of the operating system and apps on a device is dynamic. For example, you may need to temporarily change security levels so that you can immediately resolve an administration or network issue. However, this change can often go unreversed. This means that a computer may no longer meet the requirements for enterprise security.
+The state of the operating system and apps on a device is dynamic. For example, you may need to temporarily change security levels so that you can immediately resolve an administration or network issue. However, this change can often go unreversed. This unreversed state of the changes means that a computer may no longer meet the requirements for enterprise security.
 
 Regular analysis enables you to track and ensure an adequate level of security on each computer as part of an enterprise risk management program. You can tune the security levels and, most importantly, detect any security flaws that may occur in the system over time.
 
-Security Configuration and Analysis enables you to quickly review security analysis results. It presents recommendations alongside of current system settings and uses visual flags or remarks to highlight any areas where the current settings do not match the proposed level of security. Security
-Configuration and Analysis also offers the ability to resolve any discrepancies that analysis reveals.
+Security Configuration and Analysis enables you to quickly review security analysis results. It presents recommendations alongside of current system settings and uses visual flags or remarks to highlight any areas where the current settings don't match the proposed level of security. Security Configuration and Analysis also offers the ability to resolve any discrepancies that analysis reveals.
 
 ### <a href="" id="h2-359810173"></a>Security configuration
 
-Security Configuration and Analysis can also be used to directly configure local system security. Through its use of personal databases, you can import security templates that have been created with Security Templates and apply these templates to the local computer. This immediately configures the system security with the levels specified in the template.
+Security Configuration and Analysis can also be used to directly configure local system security. Through its use of personal databases, you can import security templates that have been created with Security Templates and apply these templates to the local computer. These security templates immediately configure the system security with the levels specified in the template.
 
 ### <a href="" id="bkmk-sectmpl"></a>Security templates
 
-With the Security Templates snap-in for Microsoft Management Console, you can create a security policy for your device or for your network. It is a single point of entry where the full range of system security can be taken into account. The Security Templates snap-in does not introduce new security parameters, it simply organizes all existing security attributes into one place to ease security administration.
+With the Security Templates snap-in for Microsoft Management Console, you can create a security policy for your device or for your network. It's a single point of entry where the full range of system security can be taken into account. The Security Templates snap-in doesn't introduce new security parameters, it simply organizes all existing security attributes into one place to ease security administration.
 
 Importing a security template to a Group Policy Object eases domain administration by configuring security for a domain or organizational unit at once.
 
@@ -184,18 +183,18 @@ Security templates can be used to define:
 - Registry: Permissions for registry keys
 - File System: Permissions for folders and files
 
-Each template is saved as a text-based .inf file. This enables you to copy, paste, import, or export some or all of the template attributes. With the exceptions of Internet Protocol security and public key policies, all security attributes can be contained in a security template.
+Each template is saved as a text-based .inf file. This file enables you to copy, paste, import, or export some or all of the template attributes. With the exceptions of Internet Protocol security and public key policies, all security attributes can be contained in a security template.
 
 ### <a href="" id="bkmk-secextensions"></a>Security settings extension to Group Policy
 
-Organizational units, domains, and sites are linked to Group Policy Objects. The security settings tool allows you change the security configuration of the Group Policy Object, in turn, affecting multiple computers. With security settings, you can modify the security settings of many devices, depending on the Group Policy Object you modify, from just one device joined to a domain.
+Organizational units, domains, and sites are linked to Group Policy Objects. The security settings tool allows you to change the security configuration of the Group Policy Object, in turn, affecting multiple computers. With security settings, you can modify the security settings of many devices, depending on the Group Policy Object you modify, from just one device joined to a domain.
 
-Security settings or security policies are rules that are configured on a device or multiple device for protecting resources on a device or network. Security settings can control:
+Security settings or security policies are rules that are configured on a device or multiple devices for protecting resources on a device or network. Security settings can control:
 
 - How users are authenticated to a network or device
-- What resources users are authorized to use.
-- Whether or not a user's or group's actions are recorded in the event log.
-- Group membership.
+- What resources users are authorized to use
+- Whether or not a user's or group's actions are recorded in the event log
+- Group membership
 
 You can change the security configuration on multiple computers in two ways:
 
@@ -208,18 +207,18 @@ A security policy is a combination of security settings that affect the security
 
 With the local security policy, you can control:
 
-- Who accesses your device.
-- What resources users are authorized to use on your device.
-- Whether or not a user's or group's actions are recorded in the event log.
+- Who accesses your device
+- What resources users are authorized to use on your device
+- Whether or not a user's or group's actions are recorded in the event log
 
-If your local device is joined to a domain, you are subject to obtaining a security policy from the domain's policy or from the policy of any organizational unit that you are a member of. If you are getting a policy from more than one source, conflicts are resolved in the following order of precedence.
+If your local device is joined to a domain, you're subject to obtaining a security policy from the domain's policy or from the policy of any organizational unit that you're a member of. If you're getting a policy from more than one source, conflicts are resolved in the following order of precedence.
 
 1. Organizational unit policy
 1. Domain policy
 1. Site policy
 1. Local computer policy
 
-If you modify the security settings on your local device by using the local security policy, then you are directly modifying the settings on your device. Therefore, the settings take effect immediately, but this may only be temporary. The settings will actually remain in effect on your local device until the next refresh of Group Policy security settings, when the security settings that are received from Group Policy will override your local settings wherever there are conflicts.
+If you modify the security settings on your local device by using the local security policy, then you're directly modifying the settings on your device. Therefore, the settings take effect immediately, but this effect may only be temporary. The settings will actually remain in effect on your local device until the next refresh of Group Policy security settings, when the security settings that are received from Group Policy will override your local settings wherever there are conflicts.
 
 ### Using the Security Configuration Manager
 
@@ -233,10 +232,10 @@ For procedures on how to use the Security Configuration Manager, see [Security C
 
 ### <a href="" id="bkmk-applysecsettings"></a>Applying security settings
 
-Once you have edited the security settings, the settings are refreshed on the computers in the organizational unit linked to your Group Policy Object:
+Once you've edited the security settings, the settings are refreshed on the computers in the organizational unit linked to your Group Policy Object:
 
 - When a device is restarted, the settings on that device will be refreshed.
-- To force a device to refresh its security settings as well as all Group Policy settings, use gpupdate.exe.
+- To force a device to refresh its security settings and all Group Policy settings, use gpupdate.exe.
 
 **Precedence of a policy when more than one policy is applied to a computer**
 
@@ -247,7 +246,7 @@ For security settings that are defined by more than one policy, the following or
 1. Site Policy
 1. Local computer Policy
 
-For example, a workstation that is joined to a domain will have its local security settings overridden by the domain policy wherever there is a conflict. Likewise, if the same workstation is a member of an Organizational Unit, the settings applied from the Organizational Unit's policy will override
+For example, a workstation that is joined to a domain will have its local security settings overridden by the domain policy wherever there's a conflict. Likewise, if the same workstation is a member of an Organizational Unit, the settings applied from the Organizational Unit's policy will override
 both the domain and local settings. If the workstation is a member of more than one Organizational Unit, then the Organizational Unit that immediately contains the workstation has the highest order of precedence.
 
 > [!NOTE]
@@ -260,23 +259,23 @@ Security settings may still persist even if a setting is no longer defined in th
 
 Persistence in security settings occurs when:
 
-- The setting has not been previously defined for the device.
+- The setting hasn't been previously defined for the device.
 - The setting is for a registry object.
 - The setting is for a file system object.
 
-All settings applied through local policy or a Group Policy Object are stored in a local database on your device. Whenever a security setting is modified, the computer saves the security setting value to the local database, which retains a history of all the settings that have been applied to the device. If a policy first defines a security setting and then no longer defines that setting, then the setting takes on the previous value in the database. If a previous value does not exist in the database, then the setting does not revert to anything and remains defined as is. This behavior is sometimes called "tattooing."
+All settings applied through local policy or a Group Policy Object are stored in a local database on your device. Whenever a security setting is modified, the computer saves the security setting value to the local database, which retains a history of all the settings that have been applied to the device. If a policy first defines a security setting and then no longer defines that setting, then the setting takes on the previous value in the database. If a previous value doesn't exist in the database, then the setting doesn't revert to anything and remains defined as is. This behavior is sometimes called "tattooing."
 
 Registry and file settings will maintain the values applied through policy until that setting is set to other values.
 
 **Filtering security settings based on group membership**
 
-You can also decide what users or groups will or will not have a Group Policy Object applied to them regardless of what computer they have logged onto by denying them either the Apply Group Policy or Read permission on that Group Policy Object. Both of these permissions are needed to apply Group Policy.
+You can also decide what users or groups will or won't have a Group Policy Object applied to them regardless of what computer they've signed into by denying them either the Apply Group Policy or Read permission on that Group Policy Object. Both of these permissions are needed to apply Group Policy.
 
 ### <a href="" id="bkmk-impexpsectmpl"></a>Importing and exporting security templates
 
-Security Configuration and Analysis provides the ability to import and export security templates into or from a database.
+Security Configuration and Analysis enables import and export of security templates into or from a database.
 
-If you have made any changes to the analysis database, you can save those settings by exporting them into a template. The export feature provides the ability to save the analysis database settings as a new template file. This template file can then be used to analyze or configure a system, or it can be imported to a Group Policy Object.
+If you have made any changes to the analysis database, you can save those settings by exporting them into a template. The export feature enables saving the analysis database settings as a new template file. This template file can then be used to analyze or configure a system, or it can be imported to a Group Policy Object.
 
 ### <a href="" id="bkmk-anasecviewresults"></a>Analyzing security and viewing results
 
@@ -286,26 +285,26 @@ Security Configuration and Analysis displays the analysis results by security ar
 
 |Visual flag  |Meaning  |
 |---------|---------|
-|Red X |The entry is defined in the analysis database and on the system, but the security setting values do not match.|
+|Red X |The entry is defined in the analysis database and on the system, but the security setting values don't match.|
 |Green check mark |The entry is defined in the analysis database and on the system and the setting values match.|
-|Question mark |The entry is not defined in the analysis database and, therefore, was not analyzed. <br> If an entry is not analyzed, it may be that it was not defined in the analysis database or that the user who is running the analysis may not have sufficient permission to perform analysis on a specific object or area.|
-|Exclamation point |This item is defined in the analysis database, but does not exist on the actual system. For example, there may be a restricted group that is defined in the analysis database but does not actually exist on the analyzed system.|
-|No highlight |The item is not defined in the analysis database or on the system.|
+|Question mark |The entry isn't defined in the analysis database and, therefore, wasn't analyzed. <br> If an entry isn't analyzed, it may be that it wasn't defined in the analysis database or that the user who is running the analysis may not have sufficient permission to perform analysis on a specific object or area.|
+|Exclamation point |This item is defined in the analysis database, but doesn't exist on the actual system. For example, there may be a restricted group that is defined in the analysis database but doesn't actually exist on the analyzed system.|
+|No highlight |The item isn't defined in the analysis database or on the system.|
 
 If you choose to accept the current settings, the corresponding value in the base configuration is modified to match them. If you change the system setting to match the base configuration, the change will be reflected when you configure the system with Security Configuration and Analysis.
 
-To avoid continued flagging of settings that you have investigated and determined to be reasonable, you can modify the base configuration. The changes are made to a copy of the template.
+To avoid continued flagging of settings that you've investigated and determined to be reasonable, you can modify the base configuration. The changes are made to a copy of the template.
 
 ### <a href="" id="bkmk-resolvesecdiffs"></a>Resolving security discrepancies
 
 You can resolve discrepancies between analysis database and system settings by:
 
 - Accepting or changing some or all of the values that are flagged or not included in the configuration, if you determine that the local system security levels are valid due to the context (or role) of that computer. These attribute values are then updated in the database and applied to the system when you click **Configure Computer Now**.
-- Configuring the system to the analysis database values, if you determine the system is not in compliance with valid security levels.  
+- Configuring the system to the analysis database values, if you determine the system isn't in compliance with valid security levels.  
 - Importing a more appropriate template for the role of that computer into the database as the new base configuration and applying it to the system.  
 Changes to the analysis database are made to the stored template in the database, not to the security template file. The security template file will only be modified if you either return to Security Templates and edit that template or export the stored configuration to the same template file.  
 You should use **Configure Computer Now** only to modify security areas *not* affected by Group Policy settings, such as security on local files and folders, registry keys, and system services. Otherwise, when the Group Policy settings are applied, it will take precedence over local settings—such as account policies.  
-In general, do not use **Configure Computer Now** when you are analyzing security for domain-based clients, since you will have to configure each client individually. In this case, you should return to Security Templates, modify the template, and reapply it to the appropriate Group Policy Object.
+In general, don't use **Configure Computer Now** when you're analyzing security for domain-based clients, since you'll have to configure each client individually. In this case, you should return to Security Templates, modify the template, and reapply it to the appropriate Group Policy Object.
 
 ### <a href="" id="bkmk-autoseccfgtasks"></a>Automating security configuration tasks
 

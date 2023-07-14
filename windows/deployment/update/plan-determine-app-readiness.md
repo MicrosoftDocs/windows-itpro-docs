@@ -1,17 +1,14 @@
 ---
 title: Determine application readiness
-manager: laurawi
+manager: aaroncz
 description: How to test your apps to know which need attention prior to deploying an update
-keywords: updates, servicing, current, deployment, General Availability Channel, feature, quality, rings, insider, tools
-ms.prod: w10
-ms.mktglfcycl: manage
-audience: itpro
+ms.prod: windows-client
 ms.localizationpriority: medium
-ms.audience: itpro
 ms.topic: article
-ms.collection: m365initiative-coredeploy
-ms.author: jaimeo
-author: jaimeo
+ms.author: mstewart
+author: mestew
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Determine application readiness
@@ -66,15 +63,3 @@ There is more than one way to choose devices for app validation:
 - **Existing pilot devices**: You might already have a list of devices that you regularly use for testing updates as part of release cycles.
 - **Manual selection**: Some internal groups like operations will have expertise to help choose devices manually based on specifications, usage, or records of past support problems.
 - **Data-driven analysis**: With appropriate tools, you can use diagnostic data from devices to inform your choices.
-
-
-### Desktop Analytics
-
-Desktop Analytics can make all of the tasks discussed in this article significantly easier:
-
-- Creating and maintaining an application and device inventory
-- Assign owners to applications for testing
-- Automatically apply your app classifications (critical, important, not important)
-- Automatically identify application compatibility risks and provide recommendations for reducing those risks
-
-For more information, see [What is Desktop Analytics?](/mem/configmgr/desktop-analytics/overview)

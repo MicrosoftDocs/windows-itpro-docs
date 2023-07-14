@@ -1,30 +1,29 @@
 ---
 title: What's new in Windows 10, version 21H1
 description: New and updated features in Windows 10, version 21H1 (also known as the Windows 10 May 2021 Update).
-keywords: ["What's new in Windows 10", "Windows 10", "May 2021 Update"]
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
-ms.author: greglin
-manager: dougeby
+ms.prod: windows-client
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: high
 ms.topic: article
-ms.collection: highpri
+ms.collection:
+  - highpri
+  - tier2
+ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10, version 21H1</a>
 ---
 
 # What's new in Windows 10, version 21H1 for IT Pros
-
-**Applies to**
--   Windows 10, version 21H1
 
 This article lists new and updated features and content that is of interest to IT Pros for Windows 10, version 21H1, also known as the **Windows 10 May 2021 Update**. This update also contains all features and fixes included in previous cumulative updates to Windows 10, version 20H2.
 
 Windows 10, version 21H1 is a scoped set of features for select performance improvements, enterprise features, and quality enhancements. As an [H1-targeted release](/lifecycle/faq/windows#what-is-the-servicing-timeline-for-a-version--feature-update--of-windows-10-), 21H1 is serviced for 18 months from the release date for devices running Windows 10 Enterprise or Windows 10 Education editions. 
 
 
-For details on how to update your device, or the devices in your organization, see [How to get the Windows 10 May 2021 Update](https://blogs.windows.com/windowsexperience/?p=175674). Devices running Windows 10, versions 2004 and 20H2 have the ability to update quickly to version 21H1 via an enablement package. For more details, see [Feature Update through Windows 10, version 21H1 Enablement Package](https://support.microsoft.com/help/5000736).
+For details on how to update your device, or the devices in your organization, see [How to get the Windows 10 May 2021 Update](https://blogs.windows.com/windowsexperience/?p=175674). Devices running Windows 10, versions 2004 and 20H2, have the ability to update quickly to version 21H1 via an enablement package. For more information, see [Feature Update through Windows 10, version 21H1 Enablement Package](https://support.microsoft.com/help/5000736).
 
 ## Servicing
 
@@ -42,13 +41,13 @@ A new [resolved issues](/mem/autopilot/resolved-issues) article is available tha
 
 A new Intune remote action: **Collect diagnostics**, lets you collect the logs from corporate devices without interrupting or waiting for the end user. For more information, see [Collect diagnostics remote action](/mem/intune/fundamentals/whats-new#collect-diagnostics-remote-action).
 
-Intune has also added capabilities to [Role-based access control](/mem/intune/fundamentals/whats-new#role-based-access-control) (RBAC) that can be used to further define profile settings for the Enrollment Status Page (ESP). For more information see [Create Enrollment Status Page profile and assign to a group](/mem/intune/enrollment/windows-enrollment-status#create-enrollment-status-page-profile-and-assign-to-a-group).  
+Intune has also added capabilities to [Role-based access control](/mem/intune/fundamentals/whats-new#role-based-access-control) (RBAC) that can be used to further define profile settings for the Enrollment Status Page (ESP). For more information, see [Create Enrollment Status Page profile and assign to a group](/mem/intune/enrollment/windows-enrollment-status#create-enrollment-status-page-profile-and-assign-to-a-group).  
 
 For a full list of what's new in Microsoft Intune, see [What's new in Microsoft Intune](/mem/intune/fundamentals/whats-new).
 
 ### Windows Assessment and Deployment Toolkit (ADK)
 
-There is no new ADK for Windows 10, version 21H1. The ADK for Windows 10, version 2004 will also work with Windows 10, version 21H1.  For more information, see [Download and install the Windows ADK](/windows-hardware/get-started/adk-install).
+There's no new ADK for Windows 10, version 21H1. The ADK for Windows 10, version 2004 will also work with Windows 10, version 21H1.  For more information, see [Download and install the Windows ADK](/windows-hardware/get-started/adk-install).
 
 ## Device management
 
@@ -74,7 +73,7 @@ The new Chromium-based [Microsoft Edge](https://www.microsoft.com/edge/business)
 
 ## General fixes
 
-See the [Windows Insider blog](https://blogs.windows.com/windows-insider/2021/02/17/releasing-windows-10-build-19042-844-20h2-to-beta-and-release-preview-channels/) for more information.
+For more information on the general fixes, see the [Windows Insider blog](https://blogs.windows.com/windows-insider/2021/02/17/releasing-windows-10-build-19042-844-20h2-to-beta-and-release-preview-channels/).
 
 This release includes the following enhancements and issues fixed:
 
@@ -88,7 +87,7 @@ This release includes the following enhancements and issues fixed:
 - an issue that might cause video playback to flicker when rendering on certain low-latency capable monitors.
 - an issue that sometimes prevents the input of strings into the Input Method Editor (IME).
 - an issue that exhausts resources because Desktop Windows Manager (DWM) leaks handles and virtual memory in Remote Desktop sessions.
-- a stop error that occurs at start up.
+- a stop error that occurs at the start.
 - an issue that might delay a Windows Hello for Business (WHfB) Certificate Trust deployment when you open the Settings-> Accounts-> Sign-in Options page.
 - an issue that might prevent some keyboard keys from working, such as the home, Ctrl, or left arrow keys when you set the Japanese IME input mode to Kana.
 - removed the history of previously used pictures from a user account profile.
@@ -97,15 +96,15 @@ This release includes the following enhancements and issues fixed:
 - Windows Management Instrumentation (WMI) service caused a heap leak each time security settings are applied to WMI namespace permissions.
 - screen rendering after opening games with certain hardware configurations.
 - startup times for applications that have roaming settings when User Experience Virtualization (UE-V) is turned on.
-- a principal in a trusted MIT realm fails to obtain a Kerberos service ticket from Active Directory domain controllers (DC). This occurs on devices that installed Windows Updates that contain CVE-2020-17049 protections and configured PerfromTicketSignature to 1 or higher. These updates were released between November 10, 2020 and December 8, 2020. Ticket acquisition also fails with the error, “KRB_GENERIC_ERROR”, if callers submit a PAC-less Ticket Granting Ticket (TGT) as an evidence ticket without providing the USER_NO_AUTH_DATA_REQUIRED flag.
+- a principal in a trusted MIT realm fails to obtain a Kerberos service ticket from Active Directory domain controllers (DC). This occurs on devices that installed Windows Updates that contain CVE-2020-17049 protections and configured PerfromTicketSignature to 1 or higher. These updates were released between November 10, 2020 and December 8, 2020. Ticket acquisition also fails with the error, "KRB_GENERIC_ERROR", if callers submit a PAC-less Ticket Granting Ticket (TGT) as an evidence ticket without providing the USER_NO_AUTH_DATA_REQUIRED flag.
 - high memory and CPU utilization in Microsoft Defender for Endpoint.
 - We enhanced data loss prevention and insider risk management solution functionalities in Microsoft 365 endpoints.
-- an error when you attempt to open an untrusted webpage using Microsoft Edge or open an untrusted Microsoft Office document. The error is, “WDAG Report – Container: Error: 0x80070003, Ext error: 0x00000001”. This issue occurs after installing the .NET update KB4565627.
+- an error when you attempt to open an untrusted webpage using Microsoft Edge or open an untrusted Microsoft Office document. The error is, "WDAG Report - Container: Error: 0x80070003, Ext error: 0x00000001". This issue occurs after installing the .NET update KB4565627.
 - an issue that prevents wevtutil from parsing an XML file.
 - failure to report an error when the Elliptic Curve Digital Signature Algorithm (ECDSA) generates invalid keys of 163 bytes instead of 165 bytes.
 - We added support for using the new Chromium-based Microsoft Edge as the assigned access single kiosk app. Now, you can also customize a breakout key sequence for single app kiosks. For more information, see Configure Microsoft Edge kiosk mode.
-- User Datagram Protocol (UDP) broadcast packets that are larger than the maximum transmission unit (MTU). Devices that receive these packets discard them because the checksum is not valid.
-- the WinHTTP AutoProxy service does not comply with the value set for the maximum Time To Live (TTL) on the Proxy Auto-Configuration (PAC) file. This prevents the cached file from updating dynamically.
+- User Datagram Protocol (UDP) broadcast packets that are larger than the maximum transmission unit (MTU). Devices that receive these packets discard them because the checksum isn't valid.
+- the WinHTTP AutoProxy service doesn't comply with the value set for the maximum Time To Live (TTL) on the Proxy Auto-Configuration (PAC) file. This prevents the cached file from updating dynamically.
 - We improved the ability of the WinHTTP Web Proxy Auto-Discovery Service to ignore invalid Web Proxy Auto-Discovery Protocol (WPAD) URLs that the Dynamic Host Configuration Protocol (DHCP) server returns.
 - We displayed the proper Envelope media type as a selectable output paper type for Universal Print queues.
 - We ended the display of a random paper size for a printer when it uses the Microsoft Internet Printing Protocol (IPP) Class Driver.
@@ -122,7 +121,7 @@ This release includes the following enhancements and issues fixed:
   * Default value = 1; enables the log.
   * Value other than 1; disables the log.
 
-  If this key does not exist, it will be created automatically. 
+  If this key doesn't exist, it will be created automatically. 
   To take effect, any change to **dfslog/RootShareAcquireSuccessEvent** in the registry requires that you restart the DFSN service.
 - We updated the Open Mobile Alliance (OMA) Device Management (DM) sync protocol by adding a check-in reason for requests from the client to the server. The check-in reason will allow the mobile device management (MDM) service to make better decisions about sync sessions. With this change, the OMA-DM service must negotiate a protocol version of 4.0 with the Windows OMA-DM client.
 - We turned off token binding by default in Windows Internet (WinINet).
@@ -134,7 +133,7 @@ This release includes the following enhancements and issues fixed:
 [Introducing the next feature update to Windows 10, version 21H1](https://blogs.windows.com/windowsexperience/2021/02/17/introducing-the-next-feature-update-to-windows-10-version-21h1/): Windows Experience Blog.<br>
 [What's New in Windows Server](/windows-server/get-started/whats-new-in-windows-server): New and updated features in Windows Server.<br>
 [Windows 10 Features](https://www.microsoft.com/windows/features): General information about Windows 10 features.<br>
-[What's New in Windows 10](./index.yml): See what’s new in other versions of Windows 10.<br>
-[Announcing more ways we’re making app development easier on Windows](https://blogs.windows.com/windowsdeveloper/2020/09/22/kevin-gallo-microsoft-ignite-2020/): Simplifying app development in Windows.<br>
-[Features and functionality removed in Windows 10](/windows/deployment/planning/windows-10-removed-features): Removed features.<br>
-[Windows 10 features we’re no longer developing](/windows/deployment/planning/windows-10-deprecated-features): Features that are not being developed.<br>
+[What's New in Windows 10](./index.yml): See what's new in other versions of Windows 10.<br>
+[Announcing more ways we're making app development easier on Windows](https://blogs.windows.com/windowsdeveloper/2020/09/22/kevin-gallo-microsoft-ignite-2020/): Simplifying app development in Windows.<br>
+[Features and functionality removed in Windows 10](removed-features.md): Removed features.<br>
+[Windows 10 features we're no longer developing](deprecated-features.md): Features that aren't being developed.<br>

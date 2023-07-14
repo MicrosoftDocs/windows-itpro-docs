@@ -1,281 +1,328 @@
 ---
-title: Policy CSP - ADMX_Sensors
-description: Policy CSP - ADMX_Sensors
-ms.author: dansimp
+title: ADMX_Sensors Policy CSP
+description: Learn more about the ADMX_Sensors Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 10/22/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_Sensors-Begin -->
 # Policy CSP - ADMX_Sensors
-> [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ADMX_Sensors policies  
+<!-- ADMX_Sensors-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Sensors-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-sensors-disablelocationscripting-1">ADMX_Sensors/DisableLocationScripting_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-sensors-disablelocationscripting-2">ADMX_Sensors/DisableLocationScripting_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-sensors-disablelocation-1">ADMX_Sensors/DisableLocation_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-sensors-disablesensors-1">ADMX_Sensors/DisableSensors_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-sensors-disablesensors-2">ADMX_Sensors/DisableSensors_2</a>
-  </dd>
-</dl>
+<!-- DisableLocation_1-Begin -->
+## DisableLocation_1
 
+<!-- DisableLocation_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableLocation_1-Applicability-End -->
 
-<hr/>
+<!-- DisableLocation_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Sensors/DisableLocation_1
+```
+<!-- DisableLocation_1-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-sensors-disablelocationscripting-1"></a>**ADMX_Sensors/DisableLocationScripting_1**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting turns off scripting for the location feature.
-
-If you enable this policy setting, scripts for the location feature will not run.
-
-If you disable or do not configure this policy setting, all location scripts will run.
-
-<!--/Description-->
-
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off location scripting*
--   GP name: *DisableLocationScripting_1*
--   GP path: *Windows Components\Location and Sensors*
--   GP ADMX file name: *Sensors.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-sensors-disablelocationscripting-2"></a>**ADMX_Sensors/DisableLocationScripting_2**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting turns off scripting for the location feature.
-
-If you enable this policy setting, scripts for the location feature will not run.
-
-If you disable or do not configure this policy setting, all location scripts will run.
-
-<!--/Description-->
-
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off location scripting*
--   GP name: *DisableLocationScripting_2*
--   GP path: *Windows Components\Location and Sensors*
--   GP ADMX file name: *Sensors.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-sensors-disablelocation-1"></a>**ADMX_Sensors/DisableLocation_1**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DisableLocation_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting turns off the location feature for this computer.
 
-If you enable this policy setting, the location feature is turned off, and all programs on this computer are prevented from using location information from the location feature.
+- If you enable this policy setting, the location feature is turned off, and all programs on this computer are prevented from using location information from the location feature.
 
-If you disable or do not configure this policy setting, all programs on this computer will not be prevented from using location information from the location feature.
+- If you disable or don't configure this policy setting, all programs on this computer won't be prevented from using location information from the location feature.
+<!-- DisableLocation_1-Description-End -->
 
-<!--/Description-->
+<!-- DisableLocation_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableLocation_1-Editable-End -->
 
+<!-- DisableLocation_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off location*
--   GP name: *DisableLocation_1*
--   GP path: *Windows Components\Location and Sensors*
--   GP ADMX file name: *Sensors.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableLocation_1-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisableLocation_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-sensors-disablesensors-1"></a>**ADMX_Sensors/DisableSensors_1**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DisableLocation_1 |
+| Friendly Name | Turn off location |
+| Location | User Configuration |
+| Path | Windows Components > Location and Sensors |
+| Registry Key Name | Software\Policies\Microsoft\Windows\LocationAndSensors |
+| Registry Value Name | DisableLocation |
+| ADMX File Name | Sensors.admx |
+<!-- DisableLocation_1-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableLocation_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableLocation_1-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableLocation_1-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableLocationScripting_1-Begin -->
+## DisableLocationScripting_1
 
-> [!div class = "checklist"]
-> * User
+<!-- DisableLocationScripting_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableLocationScripting_1-Applicability-End -->
 
-<hr/>
+<!-- DisableLocationScripting_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Sensors/DisableLocationScripting_1
+```
+<!-- DisableLocationScripting_1-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisableLocationScripting_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns off scripting for the location feature.
+
+- If you enable this policy setting, scripts for the location feature won't run.
+
+- If you disable or don't configure this policy setting, all location scripts will run.
+<!-- DisableLocationScripting_1-Description-End -->
+
+<!-- DisableLocationScripting_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableLocationScripting_1-Editable-End -->
+
+<!-- DisableLocationScripting_1-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableLocationScripting_1-DFProperties-End -->
+
+<!-- DisableLocationScripting_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableLocationScripting_1 |
+| Friendly Name | Turn off location scripting |
+| Location | User Configuration |
+| Path | Windows Components > Location and Sensors |
+| Registry Key Name | Software\Policies\Microsoft\Windows\LocationAndSensors |
+| Registry Value Name | DisableLocationScripting |
+| ADMX File Name | Sensors.admx |
+<!-- DisableLocationScripting_1-AdmxBacked-End -->
+
+<!-- DisableLocationScripting_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableLocationScripting_1-Examples-End -->
+
+<!-- DisableLocationScripting_1-End -->
+
+<!-- DisableLocationScripting_2-Begin -->
+## DisableLocationScripting_2
+
+<!-- DisableLocationScripting_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableLocationScripting_2-Applicability-End -->
+
+<!-- DisableLocationScripting_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Sensors/DisableLocationScripting_2
+```
+<!-- DisableLocationScripting_2-OmaUri-End -->
+
+<!-- DisableLocationScripting_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting turns off scripting for the location feature.
+
+- If you enable this policy setting, scripts for the location feature won't run.
+
+- If you disable or don't configure this policy setting, all location scripts will run.
+<!-- DisableLocationScripting_2-Description-End -->
+
+<!-- DisableLocationScripting_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableLocationScripting_2-Editable-End -->
+
+<!-- DisableLocationScripting_2-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableLocationScripting_2-DFProperties-End -->
+
+<!-- DisableLocationScripting_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | DisableLocationScripting_2 |
+| Friendly Name | Turn off location scripting |
+| Location | Computer Configuration |
+| Path | Windows Components > Location and Sensors |
+| Registry Key Name | Software\Policies\Microsoft\Windows\LocationAndSensors |
+| Registry Value Name | DisableLocationScripting |
+| ADMX File Name | Sensors.admx |
+<!-- DisableLocationScripting_2-AdmxBacked-End -->
+
+<!-- DisableLocationScripting_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableLocationScripting_2-Examples-End -->
+
+<!-- DisableLocationScripting_2-End -->
+
+<!-- DisableSensors_1-Begin -->
+## DisableSensors_1
+
+<!-- DisableSensors_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableSensors_1-Applicability-End -->
+
+<!-- DisableSensors_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Sensors/DisableSensors_1
+```
+<!-- DisableSensors_1-OmaUri-End -->
+
+<!-- DisableSensors_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting turns off the sensor feature for this computer.
 
-If you enable this policy setting, the sensor feature is turned off, and all programs on this computer cannot use the sensor feature.
+- If you enable this policy setting, the sensor feature is turned off, and all programs on this computer can't use the sensor feature.
 
-If you disable or do not configure this policy setting, all programs on this computer can use the sensor feature.
+- If you disable or don't configure this policy setting, all programs on this computer can use the sensor feature.
+<!-- DisableSensors_1-Description-End -->
 
-<!--/Description-->
+<!-- DisableSensors_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableSensors_1-Editable-End -->
 
+<!-- DisableSensors_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off sensors*
--   GP name: *DisableSensors_1*
--   GP path: *Windows Components\Location and Sensors*
--   GP ADMX file name: *Sensors.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableSensors_1-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisableSensors_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-sensors-disablesensors-2"></a>**ADMX_Sensors/DisableSensors_2**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | DisableSensors_1 |
+| Friendly Name | Turn off sensors |
+| Location | User Configuration |
+| Path | Windows Components > Location and Sensors |
+| Registry Key Name | Software\Policies\Microsoft\Windows\LocationAndSensors |
+| Registry Value Name | DisableSensors |
+| ADMX File Name | Sensors.admx |
+<!-- DisableSensors_1-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableSensors_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableSensors_1-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableSensors_1-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableSensors_2-Begin -->
+## DisableSensors_2
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableSensors_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableSensors_2-Applicability-End -->
 
-<hr/>
+<!-- DisableSensors_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Sensors/DisableSensors_2
+```
+<!-- DisableSensors_2-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisableSensors_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting turns off the sensor feature for this computer.
 
-If you enable this policy setting, the sensor feature is turned off, and all programs on this computer cannot use the sensor feature.
+- If you enable this policy setting, the sensor feature is turned off, and all programs on this computer can't use the sensor feature.
 
-If you disable or do not configure this policy setting, all programs on this computer can use the sensor feature.
+- If you disable or don't configure this policy setting, all programs on this computer can use the sensor feature.
+<!-- DisableSensors_2-Description-End -->
 
-<!--/Description-->
+<!-- DisableSensors_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableSensors_2-Editable-End -->
 
+<!-- DisableSensors_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off sensors*
--   GP name: *DisableSensors_2*
--   GP path: *Windows Components\Location and Sensors*
--   GP ADMX file name: *Sensors.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableSensors_2-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisableSensors_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | DisableSensors_2 |
+| Friendly Name | Turn off sensors |
+| Location | Computer Configuration |
+| Path | Windows Components > Location and Sensors |
+| Registry Key Name | Software\Policies\Microsoft\Windows\LocationAndSensors |
+| Registry Value Name | DisableSensors |
+| ADMX File Name | Sensors.admx |
+<!-- DisableSensors_2-AdmxBacked-End -->
 
-<!--/Policies-->
+<!-- DisableSensors_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableSensors_2-Examples-End -->
+
+<!-- DisableSensors_2-End -->
+
+<!-- ADMX_Sensors-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Sensors-CspMoreInfo-End -->
+
+<!-- ADMX_Sensors-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,30 +1,19 @@
 ---
-title: Deploy Windows 10 in a school (Windows 10)
+title: Deploy Windows 10 in a school 
 description: Learn how to integrate your school environment with Microsoft Office 365, Active Directory Domain Services (AD DS), and Microsoft Azure Active Directory (Azure AD). Deploy Windows 10 and apps to new devices or upgrade existing devices to Windows 10. Manage faculty, students, and devices by using Microsoft Intune and Group Policy.
-keywords: configure, tools, device, school, deploy Windows 10
-ms.prod: w10
-ms.mktglfcycl: plan
-ms.pagetype: edu
-ms.sitesec: library
-ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.reviewer: 
-manager: dansimp
+ms.topic: how-to
+ms.date: 08/10/2022
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Deploy Windows 10 in a school
 
-
-**Applies to**
-
-- Windows 10
-
-This guide shows you how to deploy the Windows 10 operating system in a school environment. You learn how to deploy Windows 10 in classrooms; integrate the school environment with Microsoft Office 365, Active Directory Domain Services (AD DS), and Microsoft Azure Active Directory (Azure AD); and deploy Windows 10 and your apps to new devices or upgrade existing devices to Windows 10. This guide also describes how to use Microsoft Intune and Group Policy to manage devices. Finally, the guide discusses common, ongoing maintenance tasks that you will perform after initial deployment and the automated tools and built-in features of the operating system.
+This guide shows you how to deploy the Windows 10 operating system in a school environment. You learn how to deploy Windows 10 in classrooms; integrate the school environment with Microsoft Office 365, Active Directory Domain Services (AD DS), and Microsoft Azure Active Directory (Azure AD); and deploy Windows 10 and your apps to new devices or upgrade existing devices to Windows 10. This guide also describes how to use Microsoft Intune and Group Policy to manage devices. Finally, the guide discusses common, ongoing maintenance tasks that you'll perform after initial deployment and the automated tools and built-in features of the operating system.
 
 ## Prepare for school deployment
 
-Proper preparation is essential for a successful school deployment. To avoid common mistakes, your first step is to plan a typical school configuration. As with building a house, you need a blueprint for what your school should look like when it’s finished. The second step in preparation is to learn how you will configure your school. Just as a builder needs to have the right tools to build a house, you need the right set of tools to deploy your school.
+Proper preparation is essential for a successful school deployment. To avoid common mistakes, your first step is to plan a typical school configuration. As with building a house, you need a blueprint for what your school should look like when it’s finished. The second step in preparation is to learn how you'll configure your school. Just as a builder needs to have the right tools to build a house, you need the right set of tools to deploy your school.
 
 ### Plan a typical school configuration
 
@@ -58,7 +47,7 @@ This school configuration has the following characteristics:
   > In this guide, all references to MDT refer to the 64-bit version of MDT 2013 Update 2.
 
 - The devices use Azure AD in Office 365 Education for identity management.
-- If you have on-premises AD DS, you can [integrate Azure AD with on-premises AD DS](/azure/active-directory/hybrid/whatis-hybrid-identity).
+- If you've on-premises AD DS, you can [integrate Azure AD with on-premises AD DS](/azure/active-directory/hybrid/whatis-hybrid-identity).
 - Use [Intune](/mem/intune/), [Set up Basic Mobility and Security](/microsoft-365/admin/basic-mobility-security/set-up), or Group Policy in AD DS to manage devices.
 - Each device supports a one-student-per-device or multiple-students-per-device scenario.
 - The devices can be a mixture of different make, model, and processor architecture (32 bit or 64 bit) or be identical.
@@ -74,41 +63,41 @@ Office 365 Education allows:
 - Students and faculty to use email and calendars, with mailboxes up to 50 GB per user.
 - Faculty to use advanced email features like email archiving and legal hold capabilities.
 - Faculty to help prevent unauthorized users from accessing documents and email by using Azure Rights Management.
-- Faculty to use advanced compliance tools on the unified eDiscovery pages in the Office 365 Compliance Center.
+- Faculty to use advanced compliance tools on the unified eDiscovery pages in the Microsoft Purview compliance portal.
 - Faculty to host online classes, parent–teacher conferences, and other collaboration in Skype for Business or Skype.
 - Students and faculty to access up to 1 TB of personal cloud storage that users inside and outside the educational institution can share through OneDrive for Business.
 - Teachers to provide collaboration in the classroom through Microsoft SharePoint Online team sites.
 - Students and faculty to use Office 365 Video to manage videos.
-- Students and faculty to use Yammer to collaborate through private social networking.
+- Students and faculty to use Viva Engage to collaborate through private social networking.
 - Students and faculty to access classroom resources from anywhere on any device (including iOS and Android devices).
 
 For more information about Office 365 Education features and a FAQ, go to [Office 365 Education](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans).
 
 ## How to configure a school
 
-Now that you have the plan (blueprint) for your classroom, you’re ready to learn about the tools you will use to deploy it. There are many tools you could use to accomplish the task, but this guide focuses on using those tools that require the least infrastructure and technical knowledge.
+Now that you've the plan (blueprint) for your classroom, you’re ready to learn about the tools you'll use to deploy it. There are many tools you could use to accomplish the task, but this guide focuses on using those tools that require the least infrastructure and technical knowledge.
 
-The primary tool you will use to deploy Windows 10 in your school is MDT, which uses Windows ADK components to make deployment easier. You could just use the Windows ADK to perform your deployment, but MDT simplifies the process by providing an intuitive, wizard-driven user interface (UI).
+The primary tool you'll use to deploy Windows 10 in your school is MDT, which uses Windows ADK components to make deployment easier. You could just use the Windows ADK to perform your deployment, but MDT simplifies the process by providing an intuitive, wizard-driven user interface (UI).
 
-You can use MDT as a stand-alone tool or integrate it with Microsoft Endpoint Configuration Manager. As a stand-alone tool, MDT performs Lite Touch Installation (LTI) deployments—deployments that require minimal infrastructure and allow you to control the level of automation. When integrated with Configuration Manager, MDT performs Zero Touch Installation (ZTI) deployments, which require more infrastructure (such as Configuration Manager) but result in fully automated deployments.
+You can use MDT as a stand-alone tool or integrate it with Microsoft Configuration Manager. As a stand-alone tool, MDT performs Lite Touch Installation (LTI) deployments—deployments that require minimal infrastructure and allow you to control the level of automation. When integrated with Configuration Manager, MDT performs Zero Touch Installation (ZTI) deployments, which require more infrastructure (such as Configuration Manager) but result in fully automated deployments.
 
 MDT includes the Deployment Workbench—a console from which you can manage the deployment of Windows 10 and your apps. You configure the deployment process in the Deployment Workbench, including the management of operating systems, device drivers, apps, and migration of user settings on existing devices. 
 
-LTI performs deployment from a *deployment share*—a network-shared folder on the device where you installed MDT. You can perform over-the-network deployments from the deployment share or perform deployments from a local copy of the deployment share on a USB drive or DVD. You will learn more about MDT in the [Prepare the admin device](#prepare-the-admin-device) section.
+LTI performs deployment from a *deployment share*—a network-shared folder on the device where you installed MDT. You can perform over-the-network deployments from the deployment share or perform deployments from a local copy of the deployment share on a USB drive or DVD. You'll learn more about MDT in the [Prepare the admin device](#prepare-the-admin-device) section.
 
-The focus of MDT is deployment, so you also need tools that help you manage your Windows 10 devices and apps. You can manage Windows 10 devices and apps with [Microsoft Endpoint Manager](/mem/), the Compliance Management feature in Office 365, or Group Policy in AD DS. You can use any combination of these tools based on your school requirements.
+The focus of MDT is deployment, so you also need tools that help you manage your Windows 10 devices and apps. You can manage Windows 10 devices and apps with [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), [Configuration Manager](/mem/configmgr/core/understand/introduction), the Compliance Management feature in Office 365, or Group Policy in AD DS. You can use any combination of these tools based on your school requirements.
 
 The configuration process requires the following devices:
 
 - **Admin device.** This is the device you use for your day-to-day job functions. It’s also the one you use to create and manage the Windows 10 and app deployment process. You install the Windows ADK and MDT on this device.
 - **Faculty devices.** These are the devices that the teachers and other faculty use for their day-to-day job functions. You use the admin device to deploy (or upgrade) Windows 10 and apps to these devices.
-- **Student devices.** The students will use these devices. You will use the admin device deploy (or upgrade) Windows 10 and apps to them.
+- **Student devices.** The students will use these devices. You'll use the admin device deploy (or upgrade) Windows 10 and apps to them.
 
 The high-level process for deploying and configuring devices within individual classrooms and the school as a whole is as follows and illustrated in Figure 3:
 
 1. Prepare the admin device for use, which includes installing the Windows ADK and MDT.
-2. On the admin device, create and configure the Office 365 Education subscription that you will use for each classroom in the school.
-3. On the admin device, configure integration between on-premises AD DS and Azure AD (if you have an on premises AD DS configuration).
+2. On the admin device, create and configure the Office 365 Education subscription that you'll use for each classroom in the school.
+3. On the admin device, configure integration between on-premises AD DS and Azure AD (if you've an on premises AD DS configuration).
 4. On the admin device, create and configure a Microsoft Store for Business portal.
 5. On the admin device, prepare for management of the Windows 10 devices after deployment.
 6. On the student and faculty devices, deploy Windows 10 to new or existing devices, or upgrade eligible devices to Windows 10.
@@ -161,7 +150,7 @@ For more information about how to create a deployment share, see [Step 3-1: Crea
 
 ### Summary
 
-In this section, you installed the Windows ADK and MDT on the admin device. You also created the MDT deployment share that you will configure and use later in the LTI deployment process.
+In this section, you installed the Windows ADK and MDT on the admin device. You also created the MDT deployment share that you'll configure and use later in the LTI deployment process.
 
 ## Create and configure Office 365
 
@@ -182,8 +171,8 @@ Complete the following steps to select the appropriate Office 365 Education lice
 ---
 | Plan | Advantages | Disadvantages |
 | --- | --- | --- |
-| Standard | - Less expensive than Microsoft 365 Apps for enterprise <br/>- Can be run from any device <br/>- No installation necessary | - Must have an Internet connection to use it<br/>- Does not support all the features found in Microsoft 365 Apps for enterprise |
-| Office ProPlus | - Only requires an Internet connection every 30 days (for activation)<br/>- Supports full set of Office features | - Requires installation <br/>- Can be installed on only five devices per user (there is no limit to the number of devices on which you can run Office apps online) |
+| Standard | - Less expensive than Microsoft 365 Apps for enterprise <br/>- Can be run from any device <br/>- No installation necessary | - Must have an Internet connection to use it<br/>- Doesn't support all the features found in Microsoft 365 Apps for enterprise |
+| Office ProPlus | - Only requires an Internet connection every 30 days (for activation)<br/>- Supports full set of Office features | - Requires installation <br/>- Can be installed on only five devices per user (there's no limit to the number of devices on which you can run Office apps online) |
 
 ---
 
@@ -207,7 +196,7 @@ The best user experience is to run Microsoft 365 Apps for enterprise or use nati
 
 ---
 
-You will use the Office 365 Education license plan information you record in Table 2 in the [Create user accounts in Office 365](#create-user-accounts-in-office-365) section of this guide.
+You'll use the Office 365 Education license plan information you record in Table 2 in the [Create user accounts in Office 365](#create-user-accounts-in-office-365) section of this guide.
 
 ### Create a new Office 365 Education subscription
 
@@ -220,20 +209,20 @@ To create a new Office 365 Education subscription for use in the classroom, use 
 
 1. In Microsoft Edge or Internet Explorer, type `https://portal.office.com/start?sku=faculty` in the address bar.
 
-    If you have already used your current sign-in account to create a new Office 365 subscription, you will be prompted to sign in. If you want to create a new Office 365 subscription, start an In-Private Window. Your options:
+    If you've already used your current sign-in account to create a new Office 365 subscription, you'll be prompted to sign in. If you want to create a new Office 365 subscription, start an In-Private Window. Your options:
 
     - In Microsoft Edge, select Ctrl+Shift+N. Or, select **More actions** > **New InPrivate window**.
     - In Internet Explorer,  select Ctrl+Shift+P. Or, select **Settings** > **Safety** > **InPrivate Browsing**.
 
-2. On the **Get started** page, type your school email address in the **Enter your school email address** box, and then click **Sign up**. You will receive an email in your school email account.
+2. On the **Get started** page, type your school email address in the **Enter your school email address** box, and then click **Sign up**. You'll receive an email in your school email account.
 3. Click the hyperlink in the email in your school email account.
-4. On the **One last thing** page, complete your user information, and then click **Start**. The wizard creates your new Office 365 Education subscription, and you are automatically signed in as the administrative user you specified when you created the subscription.
+4. On the **One last thing** page, complete your user information, and then click **Start**. The wizard creates your new Office 365 Education subscription, and you're automatically signed in as the administrative user you specified when you created the subscription.
 
 ### Add domains and subdomains
 
-Now that you have created your new Office 365 Education subscription, add the domains and subdomains that your institution uses. For example, if your institution has `contoso.edu` as the primary domain name but you have subdomains for students or faculty (such as students.contoso.edu and faculty.contoso.edu), then you need to add the subdomains.
+Now that you've created your new Office 365 Education subscription, add the domains and subdomains that your institution uses. For example, if your institution has `contoso.edu` as the primary domain name but you've subdomains for students or faculty (such as students.contoso.edu and faculty.contoso.edu), then you need to add the subdomains.
 
-#### To add additional domains and subdomains
+#### To add more domains and subdomains
 
 1. In the admin center, in the list view, click **DOMAINS**.
 2. In the details pane, above the list of domains, on the menu bar, click **Add domain**.
@@ -252,12 +241,12 @@ To make it easier for faculty and students to join your Office 365 Education sub
 Office 365 uses the domain portion of the user’s email address to know which Office 365 tenant to join. For example, if a faculty member or student provides an email address of user@contoso.edu, then Office 365 automatically performs one of the following tasks:
 
 - If an Office 365 tenant with that domain name (contoso.edu) exists, Office 365 automatically adds the user to that tenant.
-- If an Office 365 tenant with that domain name (contoso.edu) does not exists, Office 365 automatically creates a new Office 365 tenant with that domain name and adds the user to it.
+- If an Office 365 tenant with that domain name (contoso.edu) doesn't exists, Office 365 automatically creates a new Office 365 tenant with that domain name and adds the user to it.
 
-You will always want faculty and students to join the Office 365 tenant that you created. Ensure that you perform the steps in the [Create a new Office 365 Education subscription](#create-a-new-office-365-education-subscription) and [Add domains and subdomains](#add-domains-and-subdomains) sections before allowing other faculty and students to join Office 365.
+You'll always want faculty and students to join the Office 365 tenant that you created. Ensure that you perform the steps in the [Create a new Office 365 Education subscription](#create-a-new-office-365-education-subscription) and [Add domains and subdomains](#add-domains-and-subdomains) sections before allowing other faculty and students to join Office 365.
 
 > [!NOTE]
-> You cannot merge multiple tenants, so any faculty or students who create their own tenant will need to abandon their existing tenant and join yours.
+> You can't  merge multiple tenants, so any faculty or students who create their own tenant will need to abandon their existing tenant and join yours.
 
 All new Office 365 Education subscriptions have automatic tenant join enabled by default, but you can enable or disable automatic tenant join by using the Windows PowerShell commands in Table 3. For more information about how to run these commands, see [How can I prevent students from joining my existing Office 365 tenant](/microsoft-365/education/deploy/office-365-education-self-sign-up#how-can-i-prevent-students-from-joining-my-existing-office-365-tenant).
 
@@ -276,7 +265,7 @@ All new Office 365 Education subscriptions have automatic tenant join enabled by
 
 ### Disable automatic licensing
 
-To reduce your administrative effort, automatically assign Office 365 Education or Office 365 Education Plus licenses to faculty and students when they sign up (automatic licensing). Automatic licensing also enables Office 365 Education or Office 365 Education Plus features that do not require administrative approval.
+To reduce your administrative effort, automatically assign Office 365 Education or Office 365 Education Plus licenses to faculty and students when they sign up (automatic licensing). Automatic licensing also enables Office 365 Education or Office 365 Education Plus features that don't require administrative approval.
 
 > [!NOTE]
 > By default, automatic licensing is enabled in Office 365 Education. If you want to use automatic licensing, then skip this section and go to the next section.
@@ -299,7 +288,7 @@ When you create your Office 365 subscription, you create an Office 365 tenant th
 
 Educational institutions can obtain Azure AD Basic edition licenses at no cost. After you obtain your licenses, activate your Azure AD access by completing the steps in [Step 3: Activate your Azure Active Directory access](/azure/active-directory/fundamentals/active-directory-get-started-premium#step-3-activate-your-azure-active-directory-access).
 
-The Azure AD Premium features that are not in Azure AD Basic include:
+The Azure AD Premium features that aren't in Azure AD Basic include:
 
 - Allow designated users to manage group membership
 - Dynamic group membership based on user metadata
@@ -313,7 +302,7 @@ The Azure AD Premium features that are not in Azure AD Basic include:
 
 You can assign Azure AD Premium licenses to the users who need these features. For example, you may want the users who have access to confidential student information to use MFA. In this example, you could assign Azure AD Premium to only those users.
 
-You can sign up for Azure AD Premium, and then assign licenses to users. In this section, you sign up for Azure AD Premium. You will assign Azure AD Premium licenses to users later in the deployment process.
+You can sign up for Azure AD Premium, and then assign licenses to users. In this section, you sign up for Azure AD Premium. You'll assign Azure AD Premium licenses to users later in the deployment process.
 
 For more information, see:
 
@@ -321,19 +310,19 @@ For more information, see:
 - [Sign up for Azure Active Directory Premium](/azure/active-directory/fundamentals/active-directory-get-started-premium)
 
 ### Summary
-You provision and initially configure Office 365 Education as part of the initial configuration. With the subscription in place, automatic tenant join configured, automatic licensing established, and Azure AD Premium enabled (if required), you’re ready to select the method you will use to create user accounts in Office 365.
+You provision and initially configure Office 365 Education as part of the initial configuration. With the subscription in place, automatic tenant join configured, automatic licensing established, and Azure AD Premium enabled (if necessary), you’re ready to select the method you'll use to create user accounts in Office 365.
 
 ## Select an Office 365 user account–creation method
 
 
-Now that you have an Office 365 subscription, you need to determine how you will create your Office 365 user accounts. Use the following methods to create Office 365 user accounts:
+Now that you've an Office 365 subscription, you need to determine how you'll create your Office 365 user accounts. Use the following methods to create Office 365 user accounts:
 
-- **Method 1:** Automatically synchronize your on-premises AD DS domain with Azure AD. Select this method if you have an on-premises AD DS domain.
+- **Method 1:** Automatically synchronize your on-premises AD DS domain with Azure AD. Select this method if you've an on-premises AD DS domain.
 - **Method 2:** Bulk-import the user accounts from a .csv file (based on information from other sources) into Azure AD. Select this method if you don’t have an on-premises AD DS domain.
 
 ### Method 1: Automatic synchronization between AD DS and Azure AD
 
-In this method, you have an on-premises AD DS domain. As shown in Figure 4, the Azure AD Connector tool automatically synchronizes AD DS with Azure AD. When you add or change any user accounts in AD DS, the Azure AD Connector tool automatically updates Azure AD.
+In this method, you've an on-premises AD DS domain. As shown in Figure 4, the Azure AD Connector tool automatically synchronizes AD DS with Azure AD. When you add or change any user accounts in AD DS, the Azure AD Connector tool automatically updates Azure AD.
 
 > [!NOTE]
 > Azure AD Connect also supports synchronization from any Lightweight Directory Access Protocol version 3 (LDAPv3)–compliant directory by using the information provided in [LDAP synchronization with Azure Active Directory](/azure/active-directory/fundamentals/sync-ldap).
@@ -346,7 +335,7 @@ For more information about how to perform this step, see the [Integrate on-premi
 
 ### Method 2: Bulk import into Azure AD from a .csv file
 
-In this method, you have no on-premises AD DS domain. As shown in Figure 5, you manually prepare a `.csv` file with the student information from your source, and then manually import the information directly into Azure AD. The `.csv` file must be in the format that Office 365 specifies.
+In this method, you've no on-premises AD DS domain. As shown in Figure 5, you manually prepare a `.csv` file with the student information from your source, and then manually import the information directly into Azure AD. The `.csv` file must be in the format that Office 365 specifies.
 
 :::image type="content" source="images/deploy-win-10-school-figure5.png" alt-text="Create a csv file with student information, and import the csv file into Azure AD.":::
 
@@ -366,7 +355,7 @@ In this section, you selected the method for creating user accounts in your Offi
 You can integrate your on-premises AD DS domain with Azure AD to provide identity management for your Office 365 tenant. With this integration, you can synchronize the users, security groups, and distribution lists in your AD DS domain with Azure AD with the Azure AD Connect tool. Users will be able to sign in to Office 365 automatically by using their email account and the same password they use to sign in to AD DS.
 
 > [!NOTE]
-> If your institution does not have an on-premises AD DS domain, you can skip this section.
+> If your institution doesn't have an on-premises AD DS domain, you can skip this section.
 
 ### Select synchronization model
 
@@ -374,13 +363,13 @@ Before you deploy AD DS and Azure AD synchronization, you need to determine wher
 
 You can deploy the Azure AD Connect tool by using one of the following methods:
 
-- **On premises**: As shown in Figure 6, Azure AD Connect runs on premises, which has the advantage of not requiring a virtual private network (VPN) connection to Azure. It does, however, require a virtual machine (VM) or physical server.
+- **On premises**: As shown in Figure 6, Azure AD Connect runs on premises, which have the advantage of not requiring a virtual private network (VPN) connection to Azure. It does, however, require a virtual machine (VM) or physical server.
 
   :::image type="content" source="images/deploy-win-10-school-figure6.png" alt-text="Azure AD Connect runs on-premises and uses a virtual machine.":::
 
   *Figure 6. Azure AD Connect on premises*
 
-- **In Azure**: As shown in Figure 7, Azure AD Connect runs on a VM in Azure AD, which has the advantages of being faster to provision (than a physical, on-premises server), offers better site availability, and helps reduce the number of on-premises servers. The disadvantage is that you need to deploy a VPN gateway on premises.
+- **In Azure**: As shown in Figure 7, Azure AD Connect runs on a VM in Azure AD which has the advantages of being faster to provision (than a physical, on-premises server), offers better site availability, and helps reduce the number of on-premises servers. The disadvantage is that you need to deploy a VPN gateway on premises.
 
   :::image type="content" source="images/deploy-win-10-school-figure7.png" alt-text="Azure AD Connect runs on a VM in Azure AD, and uses a VPN gateway on-premises.":::
 
@@ -399,7 +388,7 @@ In this synchronization model (illustrated in Figure 6), you run Azure AD Connec
 3. Install Azure AD Connect by performing the steps in [Install Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-select-installation).
 4. Configure Azure AD Connect features based on your institution’s requirements. For more information, see [Azure AD Connect sync: Understand and customize synchronization](/azure/active-directory/hybrid/how-to-connect-sync-whatis).
 
-Now that you have used on premises Azure AD Connect to deploy AD DS and Azure AD synchronization, you’re ready to verify that Azure AD Connect is synchronizing AD DS user and group accounts with Azure AD.
+Now that you've used on premises Azure AD Connect to deploy AD DS and Azure AD synchronization, you’re ready to verify that Azure AD Connect is synchronizing AD DS user and group accounts with Azure AD.
 
 ### Verify synchronization
 
@@ -417,7 +406,7 @@ Azure AD Connect should start synchronization immediately. Depending on the numb
 8. The list of security group members should mirror the group membership for the corresponding security group in AD DS.
 9. Close the browser.
 
-Now that you have verified Azure AD Connect synchronization, you’re ready to assign user licenses for Azure AD Premium.
+Now that you've verified Azure AD Connect synchronization, you’re ready to assign user licenses for Azure AD Premium.
 
 ### Summary
 
@@ -447,7 +436,7 @@ Several methods are available to bulk-import user accounts into AD DS domains. T
 
 ### Create a source file that contains the user and group accounts
 
-After you have selected your user and group account bulk import method, you’re ready to create the source file that contains the user and group account. You’ll use the source file as the input to the import process. The source file format depends on the method you selected. Table 6 lists the source file format for the bulk import methods.
+After you've selected your user and group account bulk import method, you’re ready to create the source file that contains the user and group account. You’ll use the source file as the input to the import process. The source file format depends on the method you selected. Table 6 lists the source file format for the bulk import methods.
 
 *Table 6. Source file format for each bulk import method*
 
@@ -475,7 +464,7 @@ For more information about how to import user accounts into AD DS by using:
 
 ### Summary
 
-In this section, you selected the bulk-import method, created the source file that contains the user and group accounts, and imported the user and group accounts in to AD DS. If you have Azure AD Connect, it automatically synchronizes the new AD DS user and group accounts to Azure AD. Now, you’re ready to assign user licenses for Azure AD Premium in the [Assign user licenses for Azure AD Premium](#assign-user-licenses-for-azure-ad-premium) section later in this guide.
+In this section, you selected the bulk-import method, created the source file that contains the user and group accounts, and imported the user and group accounts in to AD DS. If you've Azure AD Connect, it automatically synchronizes the new AD DS user and group accounts to Azure AD. Now, you’re ready to assign user licenses for Azure AD Premium in the [Assign user licenses for Azure AD Premium](#assign-user-licenses-for-azure-ad-premium) section later in this guide.
 
 ## Bulk-import user accounts into Office 365
 
@@ -483,9 +472,9 @@ You can bulk-import user and group accounts directly into Office 365, reducing t
 
 ### Create user accounts in Office 365
 
-Now that you have created your new Office 365 Education subscription, you need to create user accounts. You can add user accounts for the teachers, other faculty, and students who will use the classroom.
+Now that you've created your new Office 365 Education subscription, you need to create user accounts. You can add user accounts for the teachers, other faculty, and students who will use the classroom.
 
-You can use the Microsoft 365 admin center to add individual Office 365 accounts manually—a reasonable process when you’re adding only a few users. If you have many users, however, you can automate the process by creating a list of those users, and then use that list to create user accounts (that is, bulk-add users).
+You can use the Microsoft 365 admin center to add individual Office 365 accounts manually—a reasonable process when you’re adding only a few users. If you've many users, however, you can automate the process by creating a list of those users, and then use that list to create user accounts (that is, bulk-add users).
 
 The bulk-add process assigns the same Office 365 Education license plan to all users on the list. Therefore, you must create a separate list for each license plan you recorded in Table 2. Depending on the number of faculty members who need to use the classroom, you may want to add the faculty Office 365 accounts manually; however, use the bulk-add process to add student accounts.
 
@@ -517,13 +506,13 @@ Microsoft Exchange Online uses an email distribution group as a single email rec
 You can create email distribution groups based on job role (such as teachers, administration, or students) or specific interests (such as robotics, drama club, or soccer team). You can create any number of distribution groups, and users can be members of more than one group.
 
 > [!NOTE]
-> Office 365 can take some time to complete the Exchange Online creation process. You will have to wait until Office 365 completes the Exchange Online creation process before you can perform the following steps. 
+> Office 365 can take some time to complete the Exchange Online creation process. You'll have to wait until Office 365 completes the Exchange Online creation process before you can perform the following steps. 
 
 For information about how to create security groups, see [Create a group in the Microsoft 365 admin center](/microsoft-365/admin/create-groups/create-groups).
 
 ### Summary
 
-Now, you have bulk-imported the user accounts into Office 365. First, you selected the bulk-import method. Next, you created the Office 365 security groups in Office 365. Finally, you created the Office 365 email distribution groups. Now, you’re ready to assign user licenses for Azure AD Premium.
+Now, you've bulk-imported the user accounts into Office 365. First, you selected the bulk-import method. Next, you created the Office 365 security groups in Office 365. Finally, you created the Office 365 email distribution groups. Now, you’re ready to assign user licenses for Azure AD Premium.
 
 ## Assign user licenses for Azure AD Premium
 
@@ -572,17 +561,17 @@ After you create the Microsoft Store for Business portal, configure it by using 
 |---|---|
 | Account information  | Displays information about your Microsoft Store for Business account (no settings can be changed). You make changes to this information in Office 365 or the Azure portal. For more information, see [Update Microsoft Store for Business account settings](/microsoft-store/update-microsoft-store-for-business-account-settings).|
 | Device Guard signing |  Allows you to upload and sign Device Guard catalog and policy files. For more information about Device Guard, see [Device Guard deployment guide](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide).  |
-|    LOB publishers    |  Allows you to add line-of-business (LOB) publishers that can then publish apps to your private store. LOB publishers are usually internal developers or software vendors that are working with your institution. For more information, see [Working with line-of-business apps](/microsoft-store/working-with-line-of-business-apps).             |
+|    LOB publishers    |  Allows you to add line-of-business (LOB) publishers that can then publish apps to your private store. LOB publishers are internal developers or software vendors that are working with your institution. For more information, see [Working with line-of-business apps](/microsoft-store/working-with-line-of-business-apps).             |
 |   Management tools   |  Allows you to add tools that you can use to distribute (deploy) apps in your private store. For more information, see [Distribute apps with a management tool](/microsoft-store/distribute-apps-with-management-tool).                                                                    |
 |  Offline licensing   |  Allows you to show (or not show) offline licensed apps to people shopping in your private store. For more information, see [Licensing model: online and offline licenses](/microsoft-store/apps-in-microsoft-store-for-business#licensing-model).  |
-|     Permissions      | Allows you to grant other users in your organization the ability to buy, manage, and administer your Microsoft Store for Business portal. You can also remove permissions you have previously granted. For more information, see [Roles and permissions in Microsoft Store for Business](/microsoft-store/roles-and-permissions-microsoft-store-for-business). |
+|     Permissions      | Allows you to grant other users in your organization the ability to buy, manage, and administer your Microsoft Store for Business portal. You can also remove permissions you've previously granted. For more information, see [Roles and permissions in Microsoft Store for Business](/microsoft-store/roles-and-permissions-microsoft-store-for-business). |
 |    Private store     | Allows you to change the organization name used in your Microsoft Store for Business portal. When you create your portal, the private store uses the organization name that you used to create your Office 365 subscription. For more information, see [Distribute apps using your private store](/microsoft-store/distribute-apps-from-your-private-store). |
 
 ---
 
 ### Find, acquire, and distribute apps in the portal
 
-Now that you have created your Microsoft Store for Business portal, you’re ready to find, acquire, and distribute apps that you will add to your portal. You do this by using the Inventory page in Microsoft Store for Business.
+Now that you've created your Microsoft Store for Business portal, you’re ready to find, acquire, and distribute apps that you'll add to your portal. You do this task by using the Inventory page in Microsoft Store for Business.
 
 > [!NOTE]
 > Your educational institution can now use a credit card to pay for apps in Microsoft Store for Business.
@@ -593,18 +582,18 @@ For more information about how to find, acquire, and distribute apps in the port
 
 ### Summary
 
-At the end of this section, you should have a properly configured Microsoft Store for Business portal. You have also found and acquired your apps from Microsoft Store. Finally, you should have deployed all your Microsoft Store apps to your users. Now, you’re ready to deploy Microsoft Store apps to your users.
+At the end of this section, you should have a properly configured Microsoft Store for Business portal. You've also found and acquired your apps from Microsoft Store. Finally, you should have deployed all your Microsoft Store apps to your users. Now, you’re ready to deploy Microsoft Store apps to your users.
 
 ## Plan for deployment
 
-You will use the LTI deployment process in MDT to deploy Windows 10 to devices or to upgrade devices to Windows 10. Prior to preparing for deployment, you must make some deployment planning decisions, including selecting the operating systems you will use, the approach you will use to create your Windows 10 images, and the method you will use to initiate the LTI deployment process.
+You'll use the LTI deployment process in MDT to deploy Windows 10 to devices or to upgrade devices to Windows 10. Prior to preparing for deployment, you must make some deployment planning decisions, including selecting the operating systems you'll use, the approach you'll use to create your Windows 10 images, and the method you'll use to initiate the LTI deployment process.
 
 ### Select the operating systems
 
-Later in the process, you will import the versions of Windows 10 you want to deploy. You can deploy the operating system to new devices, refresh existing devices, or upgrade existing devices. If:
+Later in the process, you'll import the versions of Windows 10 you want to deploy. You can deploy the operating system to new devices, refresh existing devices, or upgrade existing devices. If:
 
-- New devices or refreshing existing devices, you will complete replace the existing operating system on a device with Windows 10.
-- Upgrading existing devices, you will upgrade the existing operating system (the Windows 8.1 or Windows 7 operating system) to Windows 10.
+- New devices or refreshing existing devices, you'll complete replace the existing operating system on a device with Windows 10.
+- Upgrading existing devices, you'll upgrade the existing operating system (the Windows 8.1 or Windows 7 operating system) to Windows 10.
 
 Depending on your school’s requirements, you may need any combination of the following Windows 10 editions:
 
@@ -618,14 +607,14 @@ Depending on your school’s requirements, you may need any combination of the f
 - **Windows 10 Pro Education**. Use this operating system to upgrade existing eligible institution-owned devices running Windows 10 Pro Education, version 1903 or later, to Windows 10 Education using [subscription activation](/windows/deployment/windows-10-subscription-activation).
 
 > [!NOTE]
-> Although you can use Windows 10 Home on institution-owned devices, Microsoft recommends that you use Windows 10 Pro or Windows 10 Education, instead. Windows 10 Pro and Windows 10 Education provide support for MDM, policy-based management, and Microsoft Store for Business. These features are not available in Windows 10 Home.
+> Although you can use Windows 10 Home on institution-owned devices, Microsoft recommends that you use Windows 10 Pro or Windows 10 Education, instead. Windows 10 Pro and Windows 10 Education provide support for MDM, policy-based management, and Microsoft Store for Business. These features aren't available in Windows 10 Home.
 
-One other consideration is the mix of processor architectures you will support. If you can, support only 64-bit versions of Windows 10. If you have devices that can run only 32-bit versions of Windows 10, you will need to import both 64-bit and 32-bit versions of the Windows 10 editions listed above.
+One other consideration is the mix of processor architectures you'll support. If you can, support only 64-bit versions of Windows 10. If you've devices that can run only 32-bit versions of Windows 10, you'll need to import both 64-bit and 32-bit versions of the Windows 10 editions listed above.
 
 > [!NOTE]
 > On devices that have minimal system resources (such as devices with only 2 GB of memory or 32 GB of storage), use 32-bit versions of Windows 10 because 64-bit versions of Windows 10 place more stress on device system resources.
 
-Finally, as a best practice, minimize the number of operating systems that you deploy and manage. If possible, standardize institution-owned devices on one Windows 10 edition (such as a 64-bit version of Windows 10 Education or Windows 10 Pro). You cannot standardize personal devices on a specific operating system version or processor architecture.
+Finally, as a best practice, minimize the number of operating systems that you deploy and manage. If possible, standardize institution-owned devices on one Windows 10 edition (such as a 64-bit version of Windows 10 Education or Windows 10 Pro). You can't  standardize personal devices on a specific operating system version or processor architecture.
 
 ### Select an image approach
 
@@ -645,7 +634,7 @@ The MDT deployment process is highly automated, requiring minimal information to
 | Method | Description and reason to select this method |
 | --- | --- |
 | **Windows Deployment Services** | This method:<br/><br/>- Uses diskless booting to initiate MDT deployment<br/>- Works only with devices that support PXE boot. <br/>- Deploys Windows 10 over the network, which consumes more network bandwidth than deployment from local media. <br/>-Deploys images more slowly than when using local media. <br/>- Requires that you deploy a Windows Deployment Services server. <br/><br/> Select this method when you want to deploy Windows over-the-network and perform diskless booting. The advantage of this method is that the diskless media are generic and typically don’t require updates after you create them (the Deployment Wizard accesses the centrally located deployment share over the network). The disadvantage of this method is that over-the-network deployments are slower than deployments from local media, and you must deploy a Windows Deployment Services server. |
-| **Bootable media** | This method:<br/><br/>- Initiates MDT deployment by booting from local media, including from USB drives, DVD-ROM, or CD-ROM.<br/>- Deploys Windows 10 over the network, which consumes more network bandwidth than deployment from local media. <br/>- Deploys images more slowly than when using local media. <br/>- Requires no additional infrastructure.<br/><br/>Select this method when you want to deploy Windows over-the-network and are willing to boot the target device from local media. The advantage of this method is that the media are generic and typically don’t require updates after you create them (the Deployment Wizard accesses the centrally located deployment share over the network). The disadvantage of this method is that over-the-network deployments are slower than deployment from local media. |
+| **Bootable media** | This method:<br/><br/>- Initiates MDT deployment by booting from local media, including from USB drives, DVD-ROM, or CD-ROM.<br/>- Deploys Windows 10 over the network, which consumes more network bandwidth than deployment from local media. <br/>- Deploys images more slowly than when using local media. <br/>- Requires no extra infrastructure.<br/><br/>Select this method when you want to deploy Windows over-the-network and are willing to boot the target device from local media. The advantage of this method is that the media are generic and typically don’t require updates after you create them (the Deployment Wizard accesses the centrally located deployment share over the network). The disadvantage of this method is that over-the-network deployments are slower than deployment from local media. |
 | **MDT deployment media** | This method:<br/><br/>- Initiates MDT deployment by booting from a local USB hard disk.<br/>- Deploys Windows 10 from local media, which consumes less network bandwidth than over-the-network methods.<br/>- Deploys images more quickly than network-based methods do.<br/>- Requires a USB hard disk because of the deployment share’s storage requirements (up to 100 GB).<br/><br/>Select this method when you want to perform local deployments and are willing to boot the target device from a local USB hard disk. The advantage of this method is that local deployments are faster than over-the-network deployments. The disadvantage of this method is that each time you change the deployment share, you must regenerate the MDT deployment media and update the USB hard disk. |
 
 ---
@@ -668,10 +657,10 @@ The first step in preparation for Windows 10 deployment is to configure—that i
 | Task | Description |
 | --- | --- |
 | **1. Import operating systems** | Import the operating systems that you selected in the [Select operating systems](#select-the-operating-systems) section into the deployment share. For more information about how to import operating systems, see [Import an Operating System into the Deployment Workbench](/mem/configmgr/mdt/use-the-mdt#ImportanOperatingSystemintotheDeploymentWorkbench). |
-| **2. Import device drives** | Device drivers allow Windows 10 to know a device’s hardware resources and connected hardware accessories. Without the proper device drivers, certain features may be unavailable. For example, without the proper audio driver, a device cannot play sounds; without the proper camera driver, the device cannot take photos or use video chat.<br/><br/> Import device drivers for each device in your institution. For more information about how to import device drivers, see [Import Device Drivers into the Deployment Workbench](/mem/configmgr/mdt/use-the-mdt#ImportDeviceDriversintotheDeploymentWorkbench). |
-| **3. Create MDT applications for Microsoft Store apps** | Create an MDT application for each Microsoft Store app you want to deploy. You can deploy Microsoft Store apps by using <em>sideloading</em>, which allows you to use the <strong>Add-AppxPackage</strong> Windows PowerShell cmdlet to deploy the .appx files associated with the app (called <em>provisioned apps</em>). Use this method to deploy up to 24 apps to Windows 10.<br/><br/>Prior to sideloading the .appx files, obtain the Microsoft Store .appx files that you will use to deploy (sideload) the apps in your provisioning package. For apps in Microsoft Store, you will need to obtain the .appx files from the app software vendor directly. If you are unable to obtain the .appx files from the app software vendor, then you or the students will need to install the apps on the student devices directly from Microsoft Store or Microsoft Store for Business.<br/><br/>If you have Intune, you can deploy Microsoft Store apps after you deploy Windows 10, as described in the [Deploy apps by using Intune](#deploy-apps-by-using-intune) section. This method provides granular deployment of Microsoft Store apps, and you can use it for ongoing management of Microsoft Store apps. This is the preferred method of deploying and managing Microsoft Store apps.<br/><br/>In addition, you must prepare your environment for sideloading (deploying) Microsoft Store apps. For more information about how to:<br/><br/>- Prepare your environment for sideloading, see [Sideload LOB apps in Windows 10](/windows/application-management/sideload-apps-in-windows-10).<br/>- Create an MDT application, see [Create a New Application in the Deployment Workbench](/mem/configmgr/mdt/use-the-mdt#CreateaNewApplicationintheDeploymentWorkbench). |
-| **4. Create MDT applications for Windows desktop apps** | You need to create an MDT application for each Windows desktop app you want to deploy. You can obtain the Windows desktop apps from any source, but ensure that you have sufficient licenses for them.<br/><br/>To help reduce the effort needed to deploy Microsoft Office 2016 desktop apps, use the Office Deployment Tool, as described in [Deploy Click-to-Run for Office 365 products by using the Office Deployment Tool](/deployoffice/deploy-microsoft-365-apps-local-source?f=255&MSPPError=-2147217396).<br/><br/>If you have Intune, you can deploy Windows desktop apps after you deploy Windows 10, as described in the [Deploy apps by using Intune](#deploy-apps-by-using-intune) section. This method provides granular deployment of Windows desktop apps, and you can use it for ongoing management of the apps. This is the preferred method for deploying and managing Windows desktop apps.<br/><br/> You can also deploy Windows desktop apps after you deploy Windows 10, as described in the [Deploy apps by using Intune](#deploy-apps-by-using-intune) section.<br/><br/>For more information about how to create an MDT application for Windows desktop apps, see [Create a New Application in the Deployment Workbench](/mem/configmgr/mdt/use-the-mdt#CreateaNewApplicationintheDeploymentWorkbench). | 
-| **5. Create task sequences.** | You must create a separate task sequence for each Windows 10 edition, processor architecture, operating system upgrade process, and new operating system deployment process. Minimally, create a task sequence for each Windows 10 operating system you imported in Step 1—for example, (1) if you want to deploy Windows 10 Education to new devices or refresh existing devices with a new deployment of Windows 10 Education; (2) if you want to upgrade existing devices running Windows 8.1 or Windows 7 to Windows 10 Education; or (3) if you want to run deployments and upgrades for both 32 bit and 64-bit versions of Windows 10. To do so, you must create task sequences that will:<br/><br/>- Deploy Windows 10 Education 64-bit to devices.<br/>- Deploy Windows 10 Education 32-bit to devices.<br/>- Upgrade existing devices to Windows 10 Education 64-bit.<br/>- Upgrade existing devices to Windows 10 Education 32-bit.<br/><br/>Again, you will create the task sequences based on the operating systems that you imported in Step 1. For more information about how to create a task sequence, see [Create a New Task Sequence in the Deployment Workbench](/mem/configmgr/mdt/use-the-mdt#CreateaNewTaskSequenceintheDeploymentWorkbench). |
+| **2. Import device drives** | Device drivers allow Windows 10 to know a device’s hardware resources and connected hardware accessories. Without the proper device drivers, certain features may be unavailable. For example, without the proper audio driver, a device can't  play sounds; without the proper camera driver, the device can't  take photos or use video chat.<br/><br/> Import device drivers for each device in your institution. For more information about how to import device drivers, see [Import Device Drivers into the Deployment Workbench](/mem/configmgr/mdt/use-the-mdt#ImportDeviceDriversintotheDeploymentWorkbench). |
+| **3. Create MDT applications for Microsoft Store apps** | Create an MDT application for each Microsoft Store app you want to deploy. You can deploy Microsoft Store apps by using <em>sideloading</em>, which allows you to use the <strong>Add-AppxPackage</strong> Windows PowerShell cmdlet to deploy the .appx files associated with the app (called <em>provisioned apps</em>). Use this method to deploy up to 24 apps to Windows 10.<br/><br/>Prior to sideloading the .appx files, obtain the Microsoft Store .appx files that you'll use to deploy (sideload) the apps in your provisioning package. For apps in Microsoft Store, you'll need to obtain the .appx files from the app software vendor directly. If you're unable to obtain the .appx files from the app software vendor, then you or the students will need to install the apps on the student devices directly from Microsoft Store or Microsoft Store for Business.<br/><br/>If you've Intune, you can deploy Microsoft Store apps after you deploy Windows 10, as described in the [Deploy apps by using Intune](#deploy-apps-by-using-intune) section. This method provides granular deployment of Microsoft Store apps, and you can use it for ongoing management of Microsoft Store apps. This method is the preferred one for deploying and managing Microsoft Store apps.<br/><br/>In addition, you must prepare your environment for sideloading (deploying) Microsoft Store apps. For more information about how to:<br/><br/>- Prepare your environment for sideloading, see [Sideload LOB apps in Windows 10](/windows/application-management/sideload-apps-in-windows-10).<br/>- Create an MDT application, see [Create a New Application in the Deployment Workbench](/mem/configmgr/mdt/use-the-mdt#CreateaNewApplicationintheDeploymentWorkbench). |
+| **4. Create MDT applications for Windows desktop apps** | You need to create an MDT application for each Windows desktop app you want to deploy. You can obtain the Windows desktop apps from any source, but ensure that you've sufficient licenses for them.<br/><br/>To help reduce the effort needed to deploy Microsoft Office 2016 desktop apps, use the Office Deployment Tool, as described in [Deploy Click-to-Run for Office 365 products by using the Office Deployment Tool](/deployoffice/deploy-microsoft-365-apps-local-source?f=255&MSPPError=-2147217396).<br/><br/>If you've Intune, you can deploy Windows desktop apps after you deploy Windows 10, as described in the [Deploy apps by using Intune](#deploy-apps-by-using-intune) section. This method provides granular deployment of Windows desktop apps, and you can use it for ongoing management of the apps. This method is the preferred one for deploying and managing Windows desktop apps.<br/><br/> You can also deploy Windows desktop apps after you deploy Windows 10, as described in the [Deploy apps by using Intune](#deploy-apps-by-using-intune) section.<br/><br/>For more information about how to create an MDT application for Windows desktop apps, see [Create a New Application in the Deployment Workbench](/mem/configmgr/mdt/use-the-mdt#CreateaNewApplicationintheDeploymentWorkbench). | 
+| **5. Create task sequences.** | You must create a separate task sequence for each Windows 10 edition, processor architecture, operating system upgrade process, and new operating system deployment process. Minimally, create a task sequence for each Windows 10 operating system you imported in Step 1—for example, (1) if you want to deploy Windows 10 Education to new devices or refresh existing devices with a new deployment of Windows 10 Education; (2) if you want to upgrade existing devices running Windows 8.1 or Windows 7 to Windows 10 Education; or (3) if you want to run deployments and upgrades for both 32 bit and 64-bit versions of Windows 10. To do so, you must create task sequences that will:<br/><br/>- Deploy Windows 10 Education 64-bit to devices.<br/>- Deploy Windows 10 Education 32-bit to devices.<br/>- Upgrade existing devices to Windows 10 Education 64-bit.<br/>- Upgrade existing devices to Windows 10 Education 32-bit.<br/><br/>Again, you'll create the task sequences based on the operating systems that you imported in Step 1. For more information about how to create a task sequence, see [Create a New Task Sequence in the Deployment Workbench](/mem/configmgr/mdt/use-the-mdt#CreateaNewTaskSequenceintheDeploymentWorkbench). |
 | **6. Update the deployment share.** | Updating a deployment share generates the MDT boot images you use to initiate the Windows 10 deployment process. You can configure the process to create 32 bit and 64-bit versions of the .iso and .wim files you can use to create bootable media or in Windows Deployment Services.<br/><br/> For more information about how to update a deployment share, see [Update a Deployment Share in the Deployment Workbench](/mem/configmgr/mdt/use-the-mdt#UpdateaDeploymentShareintheDeploymentWorkbench).|
 
 ---
@@ -692,19 +681,19 @@ You can use Windows Deployment Services with MDT to automatically initiate boot 
 
 2. Add LTI boot images (Windows PE images) to Windows Deployment Services.
 
-    The LTI boot images (.wim files) that you will add to Windows Deployment Services are in the MDT deployment share. Locate the .wim files in the Boot subfolder in the deployment share. For more information about how to perform this step, see [Add LTI Boot Images to Windows Deployment Services](/mem/configmgr/mdt/use-the-mdt#AddLTIBootImagestoWindowsDeploymentServices).
+    The LTI boot images (.wim files) that you'll add to Windows Deployment Services are in the MDT deployment share. Locate the .wim files in the Boot subfolder in the deployment share. For more information about how to perform this step, see [Add LTI Boot Images to Windows Deployment Services](/mem/configmgr/mdt/use-the-mdt#AddLTIBootImagestoWindowsDeploymentServices).
 
 ### Summary
 
-Now, Windows Deployment Services is ready to initiate the LTI deployment process in MDT. You have set up and configured Windows Deployment Services and added the LTI boot images, which you generated in the previous section, to Windows Deployment Services. Now, you’re ready to prepare to manage the devices in your institution.
+Now, Windows Deployment Services is ready to initiate the LTI deployment process in MDT. You've set up and configured Windows Deployment Services and added the LTI boot images, which you generated in the previous section, to Windows Deployment Services. Now, you’re ready to prepare to manage the devices in your institution.
 
 ## Prepare for device management
 
-Before you deploy Windows 10 in your institution, you must prepare for device management. You will deploy Windows 10 in a configuration that complies with your requirements, but you want to help ensure that your deployments remain compliant.
+Before you deploy Windows 10 in your institution, you must prepare for device management. You'll deploy Windows 10 in a configuration that complies with your requirements, but you want to help ensure that your deployments remain compliant.
 
 ### Select the management method
 
-If you have only one device to configure, manually configuring that one device is tedious but possible. When you have multiple classrooms of devices to configure, however, manually configuring each device becomes overwhelming. In addition, manually keeping an identical configuration on each device is difficult as the number of devices in the school increases.
+If you've only one device to configure, manually configuring that one device is tedious but possible. When you've multiple classrooms of devices to configure, however, manually configuring each device becomes overwhelming. In addition, manually keeping an identical configuration on each device is difficult as the number of devices in the school increases.
 
 For a school, there are many ways to manage devices. Table 10 lists the methods that this guide describes and recommends. Use the information in Table 10 to determine which combination of management methods is right for your institution.
 
@@ -713,23 +702,23 @@ For a school, there are many ways to manage devices. Table 10 lists the methods 
 ---
 | Method | Description |
 | --- | --- |
-| **Group Policy** | Group Policy is an integral part of AD DS and allows you to specify configuration settings for Windows 10 and previous versions of Windows. Select this method when you: <br/><br/>- Want to manage institution-owned devices that are domain joined (personally owned devices are typically not domain joined).<br/>- Want more granular control of device and user settings.<br/>- Have an existing AD DS infrastructure.<br/>- Typically manage on-premises devices.<br/>- Can manage a required setting only by using Group Policy.<br/><br/>The advantages of this method include:<br/><br/>- No cost beyond the AD DS infrastructure.<br/>- A larger number of settings.<br/><br/>The disadvantages of this method are:<br/><br/>- Can only manage domain-joined (institution-owned devices).<br/>- Requires an AD DS infrastructure (if the institution does not have AD DS already).<br/>- Typically manages on-premises devices (unless devices connect by using a VPN or DirectAccess). | 
-| **Intune** | Intune is a cloud-based management system that allows you to specify configuration settings for Windows 10 and other operating systems, such as iOS/iPadOS, macOS, and Android. Intune is a subscription-based cloud service that integrates with Microsoft 365 and Azure AD.<br/><br/>Select this method when you:<br/><br/>- Want to manage institution-owned and personal devices (does not require that the device be domain joined).<br/>- Don’t require the level of granular control over device and user settings (compared to Group Policy).<br/>- Don’t have an existing AD DS infrastructure.<br/>- Need to manage devices regardless of where they are (on or off premises).<br/>- Can manage a required setting only by using Intune.<br/><br/>The advantages of this method are:<br/><br/>- You can manage institution-owned and personal devices.<br/>- It doesn’t require that devices be domain joined.<br/>- It doesn’t require any on-premises infrastructure.<br/>- It can manage devices regardless of their location (on or off premises).<br/><br/>The disadvantages of this method are:<br/><br/>- Carries an additional cost for subscription.<br/>- Doesn’t have a granular level control over device and user settings (compared to Group Policy). | 
+| **Group Policy** | Group Policy is an integral part of AD DS and allows you to specify configuration settings for Windows 10 and previous versions of Windows. Select this method when you: <br/><br/>- Want to manage institution-owned devices that are domain joined (personally owned devices are typically not domain joined).<br/>- Want more granular control of device and user settings.<br/>- Have an existing AD DS infrastructure.<br/>- Typically manage on-premises devices.<br/>- Can manage a required setting only by using Group Policy.<br/><br/>The advantages of this method include:<br/><br/>- No cost beyond the AD DS infrastructure.<br/>- A larger number of settings.<br/><br/>The disadvantages of this method are:<br/><br/>- Can only manage domain-joined (institution-owned devices).<br/>- Requires an AD DS infrastructure (if the institution doesn't have AD DS already).<br/>- Typically manages on-premises devices (unless devices connect by using a VPN or DirectAccess). | 
+| **Intune** | Intune is a cloud-based management system that allows you to specify configuration settings for Windows 10 and other operating systems, such as iOS/iPadOS, macOS, and Android. Intune is a subscription-based cloud service that integrates with Microsoft 365 and Azure AD.<br/><br/>Select this method when you:<br/><br/>- Want to manage institution-owned and personal devices (doesn't require that the device be domain joined).<br/>- Don’t require the level of granular control over device and user settings (compared to Group Policy).<br/>- Don’t have an existing AD DS infrastructure.<br/>- Need to manage devices regardless of where they are (on or off premises).<br/>- Can manage a required setting only by using Intune.<br/><br/>The advantages of this method are:<br/><br/>- You can manage institution-owned and personal devices.<br/>- It doesn’t require that devices be domain joined.<br/>- It doesn’t require any on-premises infrastructure.<br/>- It can manage devices regardless of their location (on or off premises).<br/><br/>The disadvantages of this method are:<br/><br/>- Carries an extra cost for subscription.<br/>- Doesn’t have a granular level control over device and user settings (compared to Group Policy). | 
 
 ---
 
 ### Select Microsoft-recommended settings
 
-Microsoft has several recommended settings for educational institutions. Table 11 lists them, provides a brief description of why you need to configure them, and recommends methods for configuring the settings. Review the settings in Table 11 and evaluate their relevancy to your institution. Use the information to help you determine whether you need to configure the setting and which method you will use to do so. At the end, you will have a list of settings that you want to apply to the Windows 10 devices and know which management method you will use to configure the settings.
+Microsoft has several recommended settings for educational institutions. Table 11 lists them, provides a brief description of why you need to configure them, and recommends methods for configuring the settings. Review the settings in Table 11 and evaluate their relevancy to your institution. Use the information to help you determine whether you need to configure the setting and which method you'll use to do so. At the end, you'll have a list of settings that you want to apply to the Windows 10 devices and know which management method you'll use to configure the settings.
 
 *Table 11. Recommended settings for educational institutions*
 
 ---
 | Recommendation | Description |
 | --- | --- |
-| **Use of Microsoft accounts** | You want faculty and students to use only Azure AD accounts for institution-owned devices. For these devices, do not use Microsoft accounts or associate a Microsoft account with the Azure AD accounts.<br/><br/>Personal devices typically use Microsoft accounts. Faculty and students can associate their Microsoft account with their Azure AD account on these devices.<br/><br/>**Group Policy**: Configure the [Accounts: Block Microsoft accounts](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj966262(v=ws.11)?amp;MSPPError=-2147217396&f=255) Group Policy setting to use the Users can’t add Microsoft accounts setting option.<br/><br/>**Intune**: Enable or disable Microsoft accounts by using the **Allow Microsoft account**, **Allow adding non-Microsoft accounts manually**, and **Allow settings synchronization for Microsoft accounts** policy settings under the **Accounts and Synchronization** section of a **Windows 10 General Configuration** policy. |
+| **Use of Microsoft accounts** | You want faculty and students to use only Azure AD accounts for institution-owned devices. For these devices, don't use Microsoft accounts or associate a Microsoft account with the Azure AD accounts.<br/><br/>Personal devices typically use Microsoft accounts. Faculty and students can associate their Microsoft account with their Azure AD account on these devices.<br/><br/>**Group Policy**: Configure the [Accounts: Block Microsoft accounts](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj966262(v=ws.11)?amp;MSPPError=-2147217396&f=255) Group Policy setting to use the Users can’t add Microsoft accounts setting option.<br/><br/>**Intune**: Enable or disable Microsoft accounts by using the **Allow Microsoft account**, **Allow adding non-Microsoft accounts manually**, and **Allow settings synchronization for Microsoft accounts** policy settings under the **Accounts and Synchronization** section of a **Windows 10 General Configuration** policy. |
 | **Restrict local administrator accounts on the devices** | Ensure that only authorized users are local administrators on institution-owned devices. Typically, you don’t want students to be administrators on instruction-owned devices. Explicitly specify the users who will be local administrators on a group of devices.<br/><br/>**Group Policy**: Create a **Local Group** Group Policy preference to limit the local administrators group membership. Select the **Delete all member users** and **Delete all member groups** check boxes to remove any existing members. For more information about how to configure Local Group preferences, see [Configure a Local Group Item](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732525(v=ws.11)).<br/><br/>**Intune**: Not available |
-| **Manage the built-in administrator account created during device deployment** | When you use MDT to deploy Windows 10, the MDT deployment process automatically creates a local Administrator account with the password you specified. As a security best practice, rename the built-in Administrator account and optionally disable it.<br/><br/>**Group Policy**: Rename the built-in Administrator account by using the **Accounts: Rename administrator account** Group Policy setting. For more information about how to rename the built-in Administrator account, see [To rename the Administrator account using the Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-essentials-sbs/cc747484(v=ws.10)). You will specify the new name for the Administrator account. You can disable the built-in Administrator account by using the **Accounts: Administrator account status** Group Policy setting. For more information about how to disable the built-in Administrator account, see [Accounts: Administrator account status](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj852165(v=ws.11)).<br/><br/>**Intune**: Not available. |
+| **Manage the built-in administrator account created during device deployment** | When you use MDT to deploy Windows 10, the MDT deployment process automatically creates a local Administrator account with the password you specified. As a security best practice, rename the built-in Administrator account and optionally disable it.<br/><br/>**Group Policy**: Rename the built-in Administrator account by using the **Accounts: Rename administrator account** Group Policy setting. For more information about how to rename the built-in Administrator account, see [To rename the Administrator account using the Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-essentials-sbs/cc747484(v=ws.10)). You'll specify the new name for the Administrator account. You can disable the built-in Administrator account by using the **Accounts: Administrator account status** Group Policy setting. For more information about how to disable the built-in Administrator account, see [Accounts: Administrator account status](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj852165(v=ws.11)).<br/><br/>**Intune**: Not available. |
 | **Control Microsoft Store access** | You can control access to Microsoft Store and whether existing Microsoft Store apps receive updates. You can only disable the Microsoft Store app in Windows 10 Education and Windows 10 Enterprise.<br/><br/>**Group Policy**: You can disable the Microsoft Store app by using the **Turn off the Store Application** Group Policy setting. You can prevent Microsoft Store apps from receiving updates by using the **Turn off Automatic Download and Install of updates** Group Policy setting. For more information about configuring these settings, see [Can I use Group Policy to control the Microsoft Store in my enterprise environment?](/previous-versions/windows/it-pro/windows-8.1-and-8/hh832040(v=ws.11)#BKMK_UseGP).<br/><br/>**Intune**: You can enable or disable the camera by using the **Allow application store** policy setting in the **Apps** section of a **Windows 10 General Configuration** policy. |
 | **Use of Remote Desktop connections to devices** | Remote Desktop connections could allow unauthorized access to the device. Depending on your institution’s policies, you may want to disable Remote Desktop connections on your devices.<br/><br/>**Group Policy**: You can enable or disable Remote Desktop connections to devices by using the **Allow Users to connect remotely using Remote Desktop setting** in Computer Configuration\Policies\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Connections.<br/><br/>**Intune**: Not available. |
 | **Use of camera** | A device’s camera can be a source of disclosure or privacy issues in an education environment. Depending on your institution’s policies, you may want to disable the camera on your devices.<br/><br/>**Group Policy**: Not available.<br/><br/>**Intune**: You can enable or disable the camera by using the **Allow camera** policy setting in the **Hardware** section of a **Windows 10 General Configuration** policy. |
@@ -742,7 +731,7 @@ Microsoft has several recommended settings for educational institutions. Table 1
 
 ### Configure settings by using Group Policy
 
-Now, you’re ready to configure settings by using Group Policy. The steps in this section assume that you have an AD DS infrastructure. You will configure the Group Policy settings you select in the [Select Microsoft-recommended settings](#select-microsoft-recommended-settings) section.
+Now, you’re ready to configure settings by using Group Policy. The steps in this section assume that you've an AD DS infrastructure. You'll configure the Group Policy settings you select in the [Select Microsoft-recommended settings](#select-microsoft-recommended-settings) section.
 
 For more information about Group Policy, see [Group Policy Planning and Deployment Guide](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754948(v=ws.10)).
 
@@ -754,13 +743,13 @@ For more information about Group Policy, see [Group Policy Planning and Deployme
 
 ### Configure settings by using Intune
 
-Now, you’re ready to configure settings using Intune. The steps in this section assume that you have an Office 365 subscription. You will configure the Intune settings that you selected in the [Select Microsoft-recommended settings](#select-microsoft-recommended-settings) section.
+Now, you’re ready to configure settings using Intune. The steps in this section assume that you've an Office 365 subscription. You'll configure the Intune settings that you selected in the [Select Microsoft-recommended settings](#select-microsoft-recommended-settings) section.
 
 For more information about Intune, see [Documentation for Microsoft Intune](/mem/intune/).
 
 #### To configure Intune settings
 
-1. Check your Intune licensing. If you have a Microsoft 365 subscription, you may already have Intune. For more information, see [Microsoft Intune licensing](/mem/intune/fundamentals/licenses).
+1. Check your Intune licensing. If you've a Microsoft 365 subscription, you may already have Intune. For more information, see [Microsoft Intune licensing](/mem/intune/fundamentals/licenses).
 2. Enroll devices in Microsoft Intune. For more information on your enrollment options, see [Intune enrollment methods for Windows devices](/mem/intune/enrollment/windows-enrollment-methods). 
 3. Configure the [compliance settings](/mem/intune/protect/device-compliance-get-started) and [configuration settings](/mem/intune/configuration/device-profiles) that meet your school system's needs.
 4. Use the reporting features in Intune to monitor devices. For more information, see [Intune reports](/mem/intune/fundamentals/reports).
@@ -814,7 +803,7 @@ In most instances, deployments occur without incident. Only in rare occasions do
 
 ### Set up printers
 
-After you have deployed Windows 10, the devices are almost ready for use. First, you must set up the printers that each classroom will use. Typically, you connect the printers to the same network as the devices in the same classroom. If you don’t have printers in your classrooms, skip this section and proceed to the [Verify deployment](#verify-deployment) section.
+After you've deployed Windows 10, the devices are almost ready for use. First, you must set up the printers that each classroom will use. Typically, you connect the printers to the same network as the devices in the same classroom. If you don’t have printers in your classrooms, skip this section and proceed to the [Verify deployment](#verify-deployment) section.
 
 > [!NOTE]
 > If you’re performing an upgrade instead of a new deployment, the printers remain configured as they were in the previous version of Windows. As a result, you can skip this section and proceed to the [Verify deployment](#verify-deployment) section.
@@ -832,7 +821,7 @@ After you have deployed Windows 10, the devices are almost ready for use. First,
 
 ### Verify deployment
 
-As a final quality control step, verify the device configuration to ensure that all apps run. Microsoft recommends that you perform all the tasks that the user would perform. Specifically, verify the following:
+As a final quality control step, verify the device configuration to ensure that all apps run. Microsoft recommends that you perform all the tasks that the user would perform. Specifically, verify the following requirements:
 
 - The device can connect to the Internet and view the appropriate web content in Microsoft Edge.
 - Windows Update is active and current with software updates.
@@ -842,7 +831,7 @@ As a final quality control step, verify the device configuration to ensure that 
 - All Windows desktop apps are properly installed and updated.
 - Printers are properly configured.
 
-When you have verified that the first device is properly configured, you can move to the next device and perform the same steps.
+When you've verified that the first device is properly configured, you can move to the next device and perform the same steps.
 
 ### Summary
 
@@ -850,7 +839,7 @@ You prepared the devices for deployment by verifying that they have adequate sys
 
 ## Maintain Windows devices and Office 365
 
-After the initial deployment, you will need to perform certain tasks to maintain the Windows 10 devices and your Office 365 Education subscription. You should perform these tasks on the following schedule:
+After the initial deployment, you'll need to perform certain tasks to maintain the Windows 10 devices and your Office 365 Education subscription. You should perform these tasks on the following schedule:
 
 - **Monthly.** These tasks help ensure that the devices are current with software updates and properly protected against viruses and malware.
 - **New semester or academic year.** Perform these tasks prior to the start of a new curriculum—for example, at the start of a new academic year or semester. These tasks help ensure that the classroom environments are ready for the next group of students.
@@ -866,7 +855,7 @@ Table 13 lists the school and individual classroom maintenance tasks, the resour
 | Verify that Windows Update is active and current with operating system and software updates.<br/><br/>For more information about completing this task, see:<br/><br/>- Intune: See [Keep Windows PCs up to date with software updates in Microsoft Intune](https://www.microsoft.com/en-us/insidetrack/keeping-windows-10-devices-up-to-date-with-microsoft-intune-and-windows-update-for-business)<br/>- Group Policy: See [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb)<br/>- Windows Server Update Services (WSUS): See [Deploy Windows Server Update Services](/windows-server/administration/windows-server-update-services/deploy/deploy-windows-server-update-services)<br/>- Neither Intune, Group Policy, or WSUS: See [Update Windows](https://support.microsoft.com/windows/update-windows-3c5ae7fc-9fb6-9af1-1984-b5e0412c556a). | ✔️ | ✔️ | ✔️ |
 | Verify that Windows Defender is active and current with malware Security intelligence.<br/><br/>For more information, see [Enforce compliance for Microsoft Defender for Endpoint with Conditional Access in Intune](/mem/intune/protect/advanced-threat-protection) and [Enable and configure Microsoft Defender Antivirus always-on protection in Group Policy](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)). | ✔️ | ✔️ | ✔️ |
 | Verify that Windows Defender has run a scan in the past week and that no viruses or malware were found.<br/><br/>For more information about completing this task, see [Protect my PC from viruses](https://support.microsoft.com/windows/protect-my-pc-from-viruses-b2025ed1-02d5-1e87-ba5f-71999008e026). | ✔️ | ✔️ | ✔️ |
-| Verify that you are using the appropriate Windows 10 servicing options for updates and upgrades (such as selecting whether you want to use Current Branch or Current Branch for Business).<br/><br/> For more information about Windows 10 servicing options for updates and upgrades, see [Windows 10 servicing options for updates and upgrades](/windows/deployment/update/). |  | ✔️ | ✔️ |
+| Verify that you're using the appropriate Windows 10 servicing options for updates and upgrades (such as selecting whether you want to use Current Branch or Current Branch for Business).<br/><br/> For more information about Windows 10 servicing options for updates and upgrades, see [Windows 10 servicing options for updates and upgrades](/windows/deployment/update/). |  | ✔️ | ✔️ |
 | Refresh the operating system and apps on devices.<br/><br/>For more information about completing this task, see the [Deploy Windows 10 to devices](#deploy-windows-10-to-devices) section. |  | ✔️ | ✔️ |
 | Install any new Windows desktop apps or update any Windows desktop apps that are used in the curriculum.<br/><br/>For more information, see the [Deploy apps by using Intune](#deploy-apps-by-using-intune) section. |  | ✔️ | ✔️ |
 | Install new or update existing Microsoft Store apps that are used in the curriculum.<br/><br/>Microsoft Store apps are automatically updated from Microsoft Store. The menu bar in the Microsoft Store app shows whether any Microsoft Store app updates are available for download.<br/><br/>You can also deploy Microsoft Store apps directly to devices by using Intune. For more information, see the [Deploy apps by using Intune](#deploy-apps-by-using-intune) section. |  | ✔️ | ✔️ |
@@ -880,7 +869,7 @@ Table 13 lists the school and individual classroom maintenance tasks, the resour
 
 ### Summary
 
-Now, you have identified the tasks you need to perform monthly, at the end of an academic year or semester, and as required. Your school configuration should match the typical school configuration that you saw in the [Plan a typical school configuration](#plan-a-typical-school-configuration) section. By running these maintenance tasks, you help ensure that your school stays secure and is configured as you specified. 
+Now, you've identified the tasks you need to perform monthly, at the end of an academic year or semester, and as required. Your school configuration should match the typical school configuration that you saw in the [Plan a typical school configuration](#plan-a-typical-school-configuration) section. By running these maintenance tasks, you help ensure that your school stays secure and is configured as you specified. 
 
 ## Related resources
 

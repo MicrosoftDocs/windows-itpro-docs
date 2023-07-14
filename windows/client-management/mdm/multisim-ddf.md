@@ -1,14 +1,14 @@
 ---
 title: MultiSIM DDF file
 description: XML file containing the device description framework for the MultiSIM configuration service provider.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+ms.author: vinpa
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
+author: vinaypamnani-msft
 ms.date: 02/27/2018
-ms.reviewer: 
-manager: dansimp
+ms.reviewer:
+manager: aaroncz
 ---
 
 # MultiSIM DDF

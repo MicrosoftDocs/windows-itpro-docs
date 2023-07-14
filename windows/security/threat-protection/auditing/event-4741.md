@@ -1,23 +1,23 @@
 ---
-title: 4741(S) A computer account was created. (Windows 10)
+title: 4741(S) A computer account was created. 
 description: Describes security event 4741(S) A computer account was created. This event is generated every time a computer object is created.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4741(S): A computer account was created.
 
-
-<img src="images/event-4741.png" alt="Event 4741 illustration" width="449" height="837" hspace="10" align="left" />
+![Event 4741 illustration](images/event-4741.png)
 
 ***Subcategory:***&nbsp;[Audit Computer Account Management](audit-computer-account-management.md)
 

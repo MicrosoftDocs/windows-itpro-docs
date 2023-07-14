@@ -9,11 +9,10 @@ metadata:
   ms.reviewer: ramakoni, DEV_Triage
   ms.prod: internet-explorer
   ms.technology:
-  ms.topic: kb-support
+  ms.topic: faq
   ms.custom: CI=111020
   ms.localizationpriority: medium
   ms.date: 01/23/2020
-    
 title: Internet Explorer and Microsoft Edge frequently asked questions (FAQ) for IT Pros
 summary: |
 
@@ -94,7 +93,7 @@ sections:
       - question: |
           Is an example Proxy Auto Configuration (PAC) file available?
         answer: |
-          Here is a simple PAC file:
+          Here's a simple PAC file:
           
           ```vb
           function FindProxyForURL(url, host)
@@ -104,7 +103,7 @@ sections:
           ```
           
           > [!NOTE]
-          > The previous PAC always returns the **proxyserver:portnumber** proxy.
+          > The previous PAC always returns the `proxyserver:portnumber` proxy.
           
           For more information about how to write a PAC file and about the different functions in a PAC file, see [the FindProxyForURL website](https://findproxyforurl.com/).
           
@@ -114,8 +113,7 @@ sections:
       - question: |
           How to improve performance by using PAC scripts
         answer: |
-          - [Browser is slow to respond when you use an automatic configuration script](https://support.microsoft.com/en-us/topic/effa1aa0-8e95-543d-6606-03ac68e3f490)
-          - [Optimizing performance with automatic Proxyconfiguration scripts (PAC)](/troubleshoot/browsers/optimize-pac-performance)
+          For more information, see [Optimizing performance with automatic Proxy configuration scripts (PAC)](/troubleshoot/developer/browsers/connectivity-navigation/optimize-pac-performance).
           
   - name: Other questions
     questions:
@@ -124,7 +122,7 @@ sections:
         answer: |
           For more information, see the following blog article:
           
-          [How do I set the home page in Microsoft Edge?](https://support.microsoft.com/en-us/microsoft-edge/change-your-browser-home-page-a531e1b8-ed54-d057-0262-cc5983a065c6)
+          [How do I set the home page in Microsoft Edge?](https://support.microsoft.com/microsoft-edge/change-your-browser-home-page-a531e1b8-ed54-d057-0262-cc5983a065c6)
           
       - question: |
           How to add sites to the Enterprise Mode (EMIE) site list
@@ -134,7 +132,7 @@ sections:
       - question: |
           What is Content Security Policy (CSP)?
         answer: |
-          By using [Content Security Policy](/microsoft-edge/dev-guide/security/content-security-policy), you create an allow list of sources of trusted content in the HTTP headers. You also pre-approve certain servers for content that is loaded into a webpage, and instruct the browser to execute or render only resources from those sources. You can use this technique to prevent malicious content from being injected into sites.
+          By using [Content Security Policy](/microsoft-edge/dev-guide/security/content-security-policy), you create an allowlist of sources of trusted content in the HTTP headers. You also pre-approve certain servers for content that is loaded into a webpage, and instruct the browser to execute or render only resources from those sources. You can use this technique to prevent malicious content from being injected into sites.
           
           Content Security Policy is supported in all versions of Microsoft Edge. It lets web developers lock down the resources that can be used by their web application. This helps prevent [cross-site scripting](https://en.wikipedia.org/wiki/Cross-site_scripting) attacks that remain a common vulnerability on the web. However, the first version of Content Security Policy was difficult to implement on websites that used inline script elements that either pointed to script sources or contained script directly.
           
@@ -181,7 +179,7 @@ sections:
       - question: |
           What is Enterprise Mode Feature?
         answer: |
-          For more information about this topic, see [Enterprise Mode and the Enterprise Mode Site List](../ie11-deploy-guide/what-is-enterprise-mode.md).
+          For more information, see [Enterprise Mode and the Enterprise Mode Site List](../ie11-deploy-guide/what-is-enterprise-mode.md).
           
       - question: |
           Where can I obtain a list of HTTP Status codes?
@@ -191,9 +189,9 @@ sections:
       - question: |
           What is end of support for Internet Explorer 11?
         answer: |
-          Internet Explorer 11 is the last major version of Internet Explorer. Internet Explorer 11 will continue receiving security updates and technical support for the lifecycle of the version of Windows on which it is installed.
+          Internet Explorer 11 is the last major version of Internet Explorer. Internet Explorer 11 will continue receiving security updates and technical support for the lifecycle of the version of Windows on which it's installed.
           
-          For more information, see [Lifecycle FAQ — Internet Explorer and Edge](/lifecycle/faq/internet-explorer-microsoft-edge).
+          For more information, see [Lifecycle FAQ - Internet Explorer and Microsoft Edge](/lifecycle/faq/internet-explorer-microsoft-edge).
           
       - question: |
           How to configure TLS (SSL) for Internet Explorer
@@ -230,7 +228,7 @@ sections:
           - User Configuration > Administrative Templates > Windows Components > Internet Explorer > Internet Control Panel > Security Page
           
           **References**  
-          [How to configure Internet Explorer security zone sites using group polices](/archive/blogs/askie/how-to-configure-internet-explorer-security-zone-sites-using-group-polices)
+          [How to configure Internet Explorer security zone sites using group policies](/archive/blogs/askie/how-to-configure-internet-explorer-security-zone-sites-using-group-polices)
           
       - question: |
           What are the limits for MaxConnectionsPerServer, MaxConnectionsPer1_0Server for the current versions of Internet Explorer?

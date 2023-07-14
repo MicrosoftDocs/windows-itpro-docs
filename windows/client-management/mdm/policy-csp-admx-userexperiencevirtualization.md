@@ -1,6534 +1,8319 @@
 ---
-title: Policy CSP - ADMX_UserExperienceVirtualization
-description: Policy CSP - ADMX_UserExperienceVirtualization
-ms.author: dansimp
+title: ADMX_UserExperienceVirtualization Policy CSP
+description: Learn more about the ADMX_UserExperienceVirtualization Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/11/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 09/30/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_UserExperienceVirtualization-Begin -->
 # Policy CSP - ADMX_UserExperienceVirtualization
-> [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ADMX_UserExperienceVirtualization policies  
+<!-- ADMX_UserExperienceVirtualization-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_UserExperienceVirtualization-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-calculator">ADMX_UserExperienceVirtualization/Calculator</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-configuresyncmethod">ADMX_UserExperienceVirtualization/ConfigureSyncMethod</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-configurevdi">ADMX_UserExperienceVirtualization/ConfigureVdi</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-contactitdescription">ADMX_UserExperienceVirtualization/ContactITDescription</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-contactiturl">ADMX_UserExperienceVirtualization/ContactITUrl</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-disablewin8sync">ADMX_UserExperienceVirtualization/DisableWin8Sync</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-disablewindowsossettings">ADMX_UserExperienceVirtualization/DisableWindowsOSSettings</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-enableuev">ADMX_UserExperienceVirtualization/EnableUEV</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-finance">ADMX_UserExperienceVirtualization/Finance</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-firstusenotificationenabled">ADMX_UserExperienceVirtualization/FirstUseNotificationEnabled</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-games">ADMX_UserExperienceVirtualization/Games</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-internetexplorer8">ADMX_UserExperienceVirtualization/InternetExplorer8</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-internetexplorer9">ADMX_UserExperienceVirtualization/InternetExplorer9</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-internetexplorer10">ADMX_UserExperienceVirtualization/InternetExplorer10</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-internetexplorer11">ADMX_UserExperienceVirtualization/InternetExplorer11</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-internetexplorercommon">ADMX_UserExperienceVirtualization/InternetExplorerCommon</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-maps">ADMX_UserExperienceVirtualization/Maps</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-maxpackagesizeinbytes">ADMX_UserExperienceVirtualization/MaxPackageSizeInBytes</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010access">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Access</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010common">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Common</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010excel">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Excel</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010infopath">ADMX_UserExperienceVirtualization/MicrosoftOffice2010InfoPath</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010lync">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Lync</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010onenote">ADMX_UserExperienceVirtualization/MicrosoftOffice2010OneNote</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010outlook">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Outlook</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010powerpoint">ADMX_UserExperienceVirtualization/MicrosoftOffice2010PowerPoint</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010project">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Project</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010publisher">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Publisher</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010sharepointdesigner">ADMX_UserExperienceVirtualization/MicrosoftOffice2010SharePointDesigner</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010sharepointworkspace">ADMX_UserExperienceVirtualization/MicrosoftOffice2010SharePointWorkspace</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010visio">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Visio</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2010word">ADMX_UserExperienceVirtualization/MicrosoftOffice2010Word</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013access">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Access</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013accessbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013AccessBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013common">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Common</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013commonbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013CommonBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013excel">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Excel</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013excelbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013ExcelBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013infopath">ADMX_UserExperienceVirtualization/MicrosoftOffice2013InfoPath</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013infopathbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013InfoPathBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013lync">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Lync</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013lyncbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013LyncBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013onedriveforbusiness">ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneDriveForBusiness</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013onenote">ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneNote</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013onenotebackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneNoteBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013outlook">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Outlook</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013outlookbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013OutlookBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013powerpoint">ADMX_UserExperienceVirtualization/MicrosoftOffice2013PowerPoint</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013powerpointbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013PowerPointBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013project">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Project</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013projectbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013ProjectBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013publisher">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Publisher</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013publisherbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013PublisherBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013sharepointdesigner">ADMX_UserExperienceVirtualization/MicrosoftOffice2013SharePointDesigner</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013sharepointdesignerbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013SharePointDesignerBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013uploadcenter">ADMX_UserExperienceVirtualization/MicrosoftOffice2013UploadCenter</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013visio">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Visio</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013visiobackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013VisioBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013word">ADMX_UserExperienceVirtualization/MicrosoftOffice2013Word</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2013wordbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2013WordBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016access">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Access</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016accessbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016AccessBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016common">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Common</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016commonbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016CommonBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016excel">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Excel</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016excelbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016ExcelBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016lync">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Lync</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016lyncbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016LyncBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016onedriveforbusiness">ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneDriveForBusiness</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016onenote">ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneNote</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016onenotebackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneNoteBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016outlook">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Outlook</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016outlookbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016OutlookBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016powerpoint">ADMX_UserExperienceVirtualization/MicrosoftOffice2016PowerPoint</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016powerpointbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016PowerPointBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016project">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Project</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016projectbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016ProjectBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016publisher">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Publisher</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016publisherbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016PublisherBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016uploadcenter">ADMX_UserExperienceVirtualization/MicrosoftOffice2016UploadCenter</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016visio">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Visio</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016visiobackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016VisioBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016word">ADMX_UserExperienceVirtualization/MicrosoftOffice2016Word</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice2016wordbackup">ADMX_UserExperienceVirtualization/MicrosoftOffice2016WordBackup</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365access2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Access2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365access2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Access2016</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365common2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Common2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365common2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Common2016</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365excel2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Excel2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365excel2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Excel2016</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365infopath2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365InfoPath2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365lync2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Lync2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365lync2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Lync2016</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365onenote2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365OneNote2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365onenote2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365OneNote2016</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365outlook2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Outlook2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365outlook2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Outlook2016</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365powerpoint2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365PowerPoint2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365powerpoint2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365PowerPoint2016</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365project2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Project2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365project2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Project2016</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365publisher2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Publisher2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365publisher2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Publisher2016</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365sharepointdesigner2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365SharePointDesigner2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365visio2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Visio2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365visio2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Visio2016</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365word2013">ADMX_UserExperienceVirtualization/MicrosoftOffice365Word2013</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-microsoftoffice365word2016">ADMX_UserExperienceVirtualization/MicrosoftOffice365Word2016</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-music">ADMX_UserExperienceVirtualization/Music</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-news">ADMX_UserExperienceVirtualization/News</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-notepad">ADMX_UserExperienceVirtualization/Notepad</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-reader">ADMX_UserExperienceVirtualization/Reader</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-repositorytimeout">ADMX_UserExperienceVirtualization/RepositoryTimeout</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-settingsstoragepath">ADMX_UserExperienceVirtualization/SettingsStoragePath</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-settingstemplatecatalogpath">ADMX_UserExperienceVirtualization/SettingsTemplateCatalogPath</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-sports">ADMX_UserExperienceVirtualization/Sports</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-syncenabled">ADMX_UserExperienceVirtualization/SyncEnabled</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-syncovermeterednetwork">ADMX_UserExperienceVirtualization/SyncOverMeteredNetwork</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-syncovermeterednetworkwhenroaming">ADMX_UserExperienceVirtualization/SyncOverMeteredNetworkWhenRoaming</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-syncproviderpingenabled">ADMX_UserExperienceVirtualization/SyncProviderPingEnabled</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-syncunlistedwindows8apps">ADMX_UserExperienceVirtualization/SyncUnlistedWindows8Apps</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-travel">ADMX_UserExperienceVirtualization/Travel</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-trayiconenabled">ADMX_UserExperienceVirtualization/TrayIconEnabled</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-video">ADMX_UserExperienceVirtualization/Video</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-weather">ADMX_UserExperienceVirtualization/Weather</a>
-  </dd>
-  <dd>
-    <a href="#admx-userexperiencevirtualization-wordpad">ADMX_UserExperienceVirtualization/Wordpad</a>
-  </dd>
-</dl>
+<!-- Calculator-Begin -->
+## Calculator
 
+<!-- Calculator-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Calculator-Applicability-End -->
 
-<hr/>
+<!-- Calculator-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Calculator
+```
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-calculator"></a>**ADMX_UserExperienceVirtualization/Calculator**  
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Calculator
+```
+<!-- Calculator-OmaUri-End -->
 
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- Calculator-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings of Calculator.
 
 By default, the user settings of Calculator synchronize between computers. Use the policy setting to prevent the user settings of Calculator from synchronization between computers.
 
-If you enable this policy setting, the Calculator user settings continue to synchronize. 
+- If you enable this policy setting, the Calculator user settings continue to synchronize.
 
-If you disable this policy setting, Calculator user settings are excluded from the synchronization settings.
+- If you disable this policy setting, Calculator user settings are excluded from the synchronization settings.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- Calculator-Description-End -->
 
-<!--/Description-->
+<!-- Calculator-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Calculator-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Calculator*
--   GP name: *Calculator*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- Calculator-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Calculator-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-configuresyncmethod"></a>**ADMX_UserExperienceVirtualization/ConfigureSyncMethod**  
+<!-- Calculator-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | Calculator |
+| Friendly Name | Calculator |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| Registry Value Name | MicrosoftCalculator6 |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Calculator-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Calculator-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Calculator-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Calculator-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- ConfigureSyncMethod-Begin -->
+## ConfigureSyncMethod
 
-<hr/>
+<!-- ConfigureSyncMethod-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ConfigureSyncMethod-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the sync provider used by User Experience Virtualization (UE-V) to sync settings between users’ computers. 
+<!-- ConfigureSyncMethod-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/ConfigureSyncMethod
+```
 
-With Sync Method set to ”SyncProvider,” the UE-V Agent uses a built-in sync provider to keep user settings synchronized between the computer and the settings storage location. This is the default value. You can disable the sync provider on computers that never go offline and are always connected to the settings storage location.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/ConfigureSyncMethod
+```
+<!-- ConfigureSyncMethod-OmaUri-End -->
 
-When SyncMethod is set to “None,” the UE-V Agent uses no sync provider. Settings are written directly to the settings storage location rather than being cached to sync later. 
+<!-- ConfigureSyncMethod-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the sync provider used by User Experience Virtualization (UE-V) to sync settings between users' computers. With Sync Method set to "SyncProvider," the UE-V Agent uses a built-in sync provider to keep user settings synchronized between the computer and the settings storage location. This is the default value. You can disable the sync provider on computers that never go offline and are always connected to the settings storage location.
 
-Set SyncMethod to “External” when an external synchronization engine is being deployed for settings sync. This could use OneDrive, Work Folders, SharePoint or any other engine that uses a local folder to synchronize data between users’ computers. In this mode, UE-V writes settings data to the local folder specified in the settings storage path. 
+When SyncMethod is set to "None," the UE-V Agent uses no sync provider. Settings are written directly to the settings storage location rather than being cached to sync later.
 
-These settings are then synchronized to other computers by an external synchronization engine. UE-V has no control over this synchronization. It only reads and writes the settings data when the normal UE-V triggers take place.
+Set SyncMethod to "External" when an external synchronization engine is being deployed for settings sync. This could use OneDrive, Work Folders, SharePoint or any other engine that uses a local folder to synchronize data between users' computers. In this mode, UE-V writes settings data to the local folder specified in the settings storage path. These settings are then synchronized to other computers by an external synchronization engine. UE-V has no control over this synchronization. It only reads and writes the settings data when the normal UE-V triggers take place.
+
 With notifications enabled, UE-V users receive a message when the settings sync is delayed. The notification delay policy setting defines the delay before a notification appears.
 
-If you disable this policy setting, the sync provider is used to synchronize settings  between computers and the settings storage location.
+- If you disable this policy setting, the sync provider is used to synchronize settings between computers and the settings storage location.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- ConfigureSyncMethod-Description-End -->
 
-<!--/Description-->
+<!-- ConfigureSyncMethod-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureSyncMethod-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Configure Sync Method*
--   GP name: *ConfigureSyncMethod*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- ConfigureSyncMethod-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ConfigureSyncMethod-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-configurevdi"></a>**ADMX_UserExperienceVirtualization/ConfigureVdi**  
+<!-- ConfigureSyncMethod-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | ConfigureSyncMethod |
+| Friendly Name | Configure Sync Method |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- ConfigureSyncMethod-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ConfigureSyncMethod-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureSyncMethod-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ConfigureSyncMethod-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- ConfigureVdi-Begin -->
+## ConfigureVdi
 
-<hr/>
+<!-- ConfigureVdi-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ConfigureVdi-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of User Experience Virtualization (UE-V) rollback information for computers running in a non-persistent, pooled VDI environment. 
+<!-- ConfigureVdi-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/ConfigureVdi
+```
 
-UE-V settings rollback data and checkpoints are normally stored only on the local computer. With this policy setting enabled, the rollback information is copied to the settings storage location when the user logs off or shuts down their VDI session. 
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/ConfigureVdi
+```
+<!-- ConfigureVdi-OmaUri-End -->
 
-Enable this setting to register a VDI-specific settings location template and restore data on computers in pooled VDI environments that reset to a clean state on logout. With this policy enabled you can roll settings back to the state when UE-V was installed or to “last-known-good” configurations. Only enable this policy setting on computers running in a non-persistent VDI environment. The VDI Collection Name defines the name of the virtual desktop collection containing the virtual computers. 
+<!-- ConfigureVdi-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of User Experience Virtualization (UE-V) rollback information for computers running in a non-persistent, pooled VDI environment. UE-V settings rollback data and checkpoints are normally stored only on the local computer. With this policy setting enabled, the rollback information is copied to the settings storage location when the user logs off or shuts down their VDI session. Enable this setting to register a VDI-specific settings location template and restore data on computers in pooled VDI environments that reset to a clean state on logout. With this policy enabled you can roll settings back to the state when UE-V was installed or to "last-known-good" configurations. Only enable this policy setting on computers running in a non-persistent VDI environment. The VDI Collection Name defines the name of the virtual desktop collection containing the virtual computers.
 
-If you enable this policy setting, the UE-V rollback state is copied to the settings storage location on logout and restored on login.
+- If you enable this policy setting, the UE-V rollback state is copied to the settings storage location on logout and restored on login.
 
-If you disable this policy setting, no UE-V rollback state is copied to the settings storage location.
+- If you disable this policy setting, no UE-V rollback state is copied to the settings storage location.
 
-If you do not configure this policy, no UE-V rollback state is copied to the settings storage location.
-<!--/Description-->
+- If you don't configure this policy, no UE-V rollback state is copied to the settings storage location.
+<!-- ConfigureVdi-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *VDI Configuration*
--   GP name: *ConfigureVdi*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- ConfigureVdi-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureVdi-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- ConfigureVdi-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-contactitdescription"></a>**ADMX_UserExperienceVirtualization/ContactITDescription**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ConfigureVdi-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- ConfigureVdi-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ConfigureVdi |
+| Friendly Name | VDI Configuration |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\WindowsSettings |
+| Registry Value Name | VdiState |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- ConfigureVdi-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ConfigureVdi-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureVdi-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ConfigureVdi-End -->
 
-<hr/>
+<!-- ContactITDescription-Begin -->
+## ContactITDescription
 
-<!--/Scope-->
-<!--Description-->
+<!-- ContactITDescription-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ContactITDescription-Applicability-End -->
+
+<!-- ContactITDescription-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/ContactITDescription
+```
+<!-- ContactITDescription-OmaUri-End -->
+
+<!-- ContactITDescription-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies the text of the Contact IT URL hyperlink in the Company Settings Center.
 
-If you enable this policy setting, the Company Settings Center displays the specified text in the link to the Contact IT URL.
+- If you enable this policy setting, the Company Settings Center displays the specified text in the link to the Contact IT URL.
 
-If you disable this policy setting, the Company Settings Center does not display an IT Contact link.
+- If you disable this policy setting, the Company Settings Center doesn't display an IT Contact link.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- ContactITDescription-Description-End -->
 
-<!--/Description-->
+<!-- ContactITDescription-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ContactITDescription-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Contact IT Link Text*
--   GP name: *ContactITDescription*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- ContactITDescription-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ContactITDescription-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-contactiturl"></a>**ADMX_UserExperienceVirtualization/ContactITUrl**  
+<!-- ContactITDescription-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | ContactITDescription |
+| Friendly Name | Contact IT Link Text |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- ContactITDescription-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ContactITDescription-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ContactITDescription-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ContactITDescription-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ContactITUrl-Begin -->
+## ContactITUrl
 
-<hr/>
+<!-- ContactITUrl-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ContactITUrl-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- ContactITUrl-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/ContactITUrl
+```
+<!-- ContactITUrl-OmaUri-End -->
+
+<!-- ContactITUrl-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies the URL for the Contact IT link in the Company Settings Center.
 
-If you enable this policy setting, the Company Settings Center Contact IT text links to the specified URL. The link can be of any standard protocol such as http or mailto. 
+- If you enable this policy setting, the Company Settings Center Contact IT text links to the specified URL. The link can be of any standard protocol such as http or mailto.
 
-If you disable this policy setting, the Company Settings Center does not display an IT Contact link.
+- If you disable this policy setting, the Company Settings Center doesn't display an IT Contact link.
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- ContactITUrl-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Contact IT URL*
--   GP name: *ContactITUrl*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- ContactITUrl-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ContactITUrl-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- ContactITUrl-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-disablewin8sync"></a>**ADMX_UserExperienceVirtualization/DisableWin8Sync**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ContactITUrl-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- ContactITUrl-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | ContactITUrl |
+| Friendly Name | Contact IT URL |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- ContactITUrl-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ContactITUrl-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ContactITUrl-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- ContactITUrl-End -->
 
-<hr/>
+<!-- DisableWin8Sync-Begin -->
+## DisableWin8Sync
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisableWin8Sync-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableWin8Sync-Applicability-End -->
+
+<!-- DisableWin8Sync-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/DisableWin8Sync
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/DisableWin8Sync
+```
+<!-- DisableWin8Sync-OmaUri-End -->
+
+<!-- DisableWin8Sync-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting defines whether the User Experience Virtualization (UE-V) Agent synchronizes settings for Windows apps.
 
-By default, the UE-V Agent synchronizes settings for Windows apps between the computer and the settings storage location.  
+By default, the UE-V Agent synchronizes settings for Windows apps between the computer and the settings storage location.
 
-If you enable this policy setting, the UE-V Agent will not synchronize settings for Windows apps.
+- If you enable this policy setting, the UE-V Agent won't synchronize settings for Windows apps.
 
-If you disable this policy setting, the UE-V Agent will synchronize settings for Windows apps. 
+- If you disable this policy setting, the UE-V Agent will synchronize settings for Windows apps.
 
-If you do not configure this policy setting, any defined values are deleted.
+- If you don't configure this policy setting, any defined values are deleted.
 
 > [!NOTE]
-> If the user connects their Microsoft account for their computer then the UE-V Agent will not synchronize Windows apps. The Windows apps will default to whatever settings are configured in the Sync your settings configuration in Windows.
+> If the user connects their Microsoft account for their computer then the UE-V Agent won't synchronize Windows apps. The Windows apps will default to whatever settings are configured in the Sync your settings configuration in Windows.
+<!-- DisableWin8Sync-Description-End -->
 
-<!--/Description-->
+<!-- DisableWin8Sync-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableWin8Sync-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not synchronize Windows Apps*
--   GP name: *DisableWin8Sync*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- DisableWin8Sync-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableWin8Sync-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-disablewindowsossettings"></a>**ADMX_UserExperienceVirtualization/DisableWindowsOSSettings**  
+<!-- DisableWin8Sync-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | DisableWin8Sync |
+| Friendly Name | Do not synchronize Windows Apps |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| Registry Value Name | DontSyncWindows8AppSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- DisableWin8Sync-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableWin8Sync-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableWin8Sync-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableWin8Sync-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- DisableWindowsOSSettings-Begin -->
+## DisableWindowsOSSettings
 
-<hr/>
+<!-- DisableWindowsOSSettings-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableWindowsOSSettings-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of Windows settings between computers. Certain Windows settings will synchronize between computers by default. These settings include Windows themes, Windows desktop settings, Ease of Access settings, and network printers. Use this policy setting to specify which Windows settings synchronize between computers. You can also use these settings to enable synchronization of users' sign-in information for certain apps, networks, and certificates.
+<!-- DisableWindowsOSSettings-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/DisableWindowsOSSettings
+```
 
-If you enable this policy setting, only the selected Windows settings synchronize. Unselected Windows settings are excluded from settings synchronization.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/DisableWindowsOSSettings
+```
+<!-- DisableWindowsOSSettings-OmaUri-End -->
 
-If you disable this policy setting, all Windows Settings are excluded from the settings synchronization.
+<!-- DisableWindowsOSSettings-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of Windows settings between computers.
 
-If you do not configure this policy setting, any defined values will be deleted.
+Certain Windows settings will synchronize between computers by default. These settings include Windows themes, Windows desktop settings, Ease of Access settings, and network printers. Use this policy setting to specify which Windows settings synchronize between computers. You can also use these settings to enable synchronization of users' sign-in information for certain apps, networks, and certificates.
 
-<!--/Description-->
+- If you enable this policy setting, only the selected Windows settings synchronize. Unselected Windows settings are excluded from settings synchronization.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Synchronize Windows settings*
--   GP name: *DisableWindowsOSSettings*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you disable this policy setting, all Windows Settings are excluded from the settings synchronization.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- DisableWindowsOSSettings-Description-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-enableuev"></a>**ADMX_UserExperienceVirtualization/EnableUEV**  
+<!-- DisableWindowsOSSettings-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableWindowsOSSettings-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- DisableWindowsOSSettings-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableWindowsOSSettings-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableWindowsOSSettings-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+**ADMX mapping**:
 
-> [!div class = "checklist"]
-> * Device
+| Name | Value |
+|:--|:--|
+| Name | DisableWindowsOSSettings |
+| Friendly Name | Synchronize Windows settings |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\WindowsSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- DisableWindowsOSSettings-AdmxBacked-End -->
 
-<hr/>
+<!-- DisableWindowsOSSettings-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableWindowsOSSettings-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to enable or disable User Experience Virtualization (UE-V) feature. 
+<!-- DisableWindowsOSSettings-End -->
 
-Reboot is needed for enable to take effect. With Auto-register inbox templates enabled, the UE-V inbox templates such as Office 2016 will be automatically registered when the UE-V Service is enabled. If this option is changed, it will only take effect when UE-V service is re-enabled.
+<!-- EnableUEV-Begin -->
+## EnableUEV
 
-<!--/Description-->
+<!-- EnableUEV-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- EnableUEV-Applicability-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Enable UEV*
--   GP name: *EnableUEV*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- EnableUEV-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/EnableUEV
+```
+<!-- EnableUEV-OmaUri-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- EnableUEV-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to enable or disable User Experience Virtualization (UE-V) feature. Reboot is needed for enable to take effect. With Auto-register inbox templates enabled, the UE-V inbox templates such as Office 2016 will be automatically registered when the UE-V Service is enabled. If this option is changed, it will only take effect when UE-V service is re-enabled.
+<!-- EnableUEV-Description-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-finance"></a>**ADMX_UserExperienceVirtualization/Finance**  
+<!-- EnableUEV-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableUEV-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- EnableUEV-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnableUEV-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableUEV-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+**ADMX mapping**:
 
-> [!div class = "checklist"]
-> * Device
-> * User
+| Name | Value |
+|:--|:--|
+| Name | EnableUEV |
+| Friendly Name | Enable UEV |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent |
+| Registry Value Name | Enabled |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- EnableUEV-AdmxBacked-End -->
 
-<hr/>
+<!-- EnableUEV-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableUEV-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for the Finance app. By default, the user settings of Finance sync between computers. Use the policy setting to prevent the user settings of Finance from synchronizing between computers.
+<!-- EnableUEV-End -->
 
-If you enable this policy setting, Finance user settings continue to sync.
+<!-- Finance-Begin -->
+## Finance
 
-If you disable this policy setting, Finance user settings are excluded from synchronization.
+<!-- Finance-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Finance-Applicability-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- Finance-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Finance
+```
 
-<!--/Description-->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Finance
+```
+<!-- Finance-OmaUri-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Finance*
--   GP name: *Finance*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- Finance-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for the Finance app.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+By default, the user settings of Finance sync between computers. Use the policy setting to prevent the user settings of Finance from synchronizing between computers.
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-firstusenotificationenabled"></a>**ADMX_UserExperienceVirtualization/FirstUseNotificationEnabled**  
+- If you enable this policy setting, Finance user settings continue to sync.
 
-<!--SupportedSKUs-->
+- If you disable this policy setting, Finance user settings are excluded from synchronization.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- Finance-Description-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Finance-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Finance-Editable-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Finance-DFProperties-Begin -->
+**Description framework properties**:
 
-> [!div class = "checklist"]
-> * Device
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Finance-DFProperties-End -->
 
-<hr/>
+<!-- Finance-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/Scope-->
-<!--Description-->
-This policy setting enables a notification in the system tray that appears when the User Experience Virtualization (UE-V) Agent runs for the first time. By default, a notification informs users that Company Settings Center, the user-facing name for the UE-V Agent, now helps to synchronize settings between their work computers.
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Finance |
+| Friendly Name | Finance |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Windows Apps |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Windows8AppList\Microsoft.BingFinance_8wekyb3d8bbwe |
+| Registry Value Name | SyncSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Finance-AdmxBacked-End -->
+
+<!-- Finance-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Finance-Examples-End -->
+
+<!-- Finance-End -->
+
+<!-- FirstUseNotificationEnabled-Begin -->
+## FirstUseNotificationEnabled
+
+<!-- FirstUseNotificationEnabled-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- FirstUseNotificationEnabled-Applicability-End -->
+
+<!-- FirstUseNotificationEnabled-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/FirstUseNotificationEnabled
+```
+<!-- FirstUseNotificationEnabled-OmaUri-End -->
+
+<!-- FirstUseNotificationEnabled-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting enables a notification in the system tray that appears when the User Experience Virtualization (UE-V) Agent runs for the first time.
+
+By default, a notification informs users that Company Settings Center, the user-facing name for the UE-V Agent, now helps to synchronize settings between their work computers.
 
 With this setting enabled, the notification appears the first time that the UE-V Agent runs.
 
 With this setting disabled, no notification appears.
 
-If you do not configure this policy setting, any defined values are deleted.
+If you don't configure this policy setting, any defined values are deleted.
+<!-- FirstUseNotificationEnabled-Description-End -->
 
-<!--/Description-->
+<!-- FirstUseNotificationEnabled-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- FirstUseNotificationEnabled-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *First Use Notification*
--   GP name: *FirstUseNotificationEnabled*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- FirstUseNotificationEnabled-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- FirstUseNotificationEnabled-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-games"></a>**ADMX_UserExperienceVirtualization/Games**  
+<!-- FirstUseNotificationEnabled-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | FirstUseNotificationEnabled |
+| Friendly Name | First Use Notification |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| Registry Value Name | FirstUseNotificationEnabled |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- FirstUseNotificationEnabled-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- FirstUseNotificationEnabled-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- FirstUseNotificationEnabled-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- FirstUseNotificationEnabled-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- Games-Begin -->
+## Games
 
-<hr/>
+<!-- Games-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Games-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for the Games app. By default, the user settings of Games sync between computers. Use the policy setting to prevent the user settings of Games from synchronizing between computers.
+<!-- Games-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Games
+```
 
-If you enable this policy setting, Games user settings continue to sync.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Games
+```
+<!-- Games-OmaUri-End -->
 
-If you disable this policy setting, Games user settings are excluded from synchronization.
+<!-- Games-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for the Games app.
 
-If you do not configure this policy setting, any defined values will be deleted.
+By default, the user settings of Games sync between computers. Use the policy setting to prevent the user settings of Games from synchronizing between computers.
 
-<!--/Description-->
+- If you enable this policy setting, Games user settings continue to sync.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Games*
--   GP name: *Games*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you disable this policy setting, Games user settings are excluded from synchronization.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- Games-Description-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-internetexplorer8"></a>**ADMX_UserExperienceVirtualization/InternetExplorer8**  
+<!-- Games-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Games-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- Games-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Games-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Games-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+**ADMX mapping**:
 
-> [!div class = "checklist"]
-> * Device
-> * User
+| Name | Value |
+|:--|:--|
+| Name | Games |
+| Friendly Name | Games |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Windows Apps |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Windows8AppList\Microsoft.XboxLIVEGames_8wekyb3d8bbwe |
+| Registry Value Name | SyncSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Games-AdmxBacked-End -->
 
-<hr/>
+<!-- Games-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Games-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- Games-End -->
+
+<!-- InternetExplorer10-Begin -->
+## InternetExplorer10
+
+<!-- InternetExplorer10-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- InternetExplorer10-Applicability-End -->
+
+<!-- InternetExplorer10-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/InternetExplorer10
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/InternetExplorer10
+```
+<!-- InternetExplorer10-OmaUri-End -->
+
+<!-- InternetExplorer10-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings of Internet Explorer 10.
+
+By default, the user settings of Internet Explorer 10 synchronize between computers. Use the policy setting to prevent the user settings for Internet Explorer 10 from synchronization between computers.
+
+- If you enable this policy setting, the Internet Explorer 10 user settings continue to synchronize.
+
+- If you disable this policy setting, Internet Explorer 10 user settings are excluded from the synchronization settings.
+
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- InternetExplorer10-Description-End -->
+
+<!-- InternetExplorer10-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- InternetExplorer10-Editable-End -->
+
+<!-- InternetExplorer10-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- InternetExplorer10-DFProperties-End -->
+
+<!-- InternetExplorer10-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | InternetExplorer10 |
+| Friendly Name | Internet Explorer 10 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| Registry Value Name | MicrosoftInternetExplorer.Version10 |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- InternetExplorer10-AdmxBacked-End -->
+
+<!-- InternetExplorer10-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- InternetExplorer10-Examples-End -->
+
+<!-- InternetExplorer10-End -->
+
+<!-- InternetExplorer11-Begin -->
+## InternetExplorer11
+
+<!-- InternetExplorer11-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- InternetExplorer11-Applicability-End -->
+
+<!-- InternetExplorer11-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/InternetExplorer11
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/InternetExplorer11
+```
+<!-- InternetExplorer11-OmaUri-End -->
+
+<!-- InternetExplorer11-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings of Internet Explorer 11.
+
+By default, the user settings of Internet Explorer 11 synchronize between computers. Use the policy setting to prevent the user settings for Internet Explorer 11 from synchronization between computers.
+
+- If you enable this policy setting, the Internet Explorer 11 user settings continue to synchronize.
+
+- If you disable this policy setting, Internet Explorer 11 user settings are excluded from the synchronization settings.
+
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- InternetExplorer11-Description-End -->
+
+<!-- InternetExplorer11-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- InternetExplorer11-Editable-End -->
+
+<!-- InternetExplorer11-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- InternetExplorer11-DFProperties-End -->
+
+<!-- InternetExplorer11-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | InternetExplorer11 |
+| Friendly Name | Internet Explorer 11 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| Registry Value Name | MicrosoftInternetExplorer.Version11 |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- InternetExplorer11-AdmxBacked-End -->
+
+<!-- InternetExplorer11-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- InternetExplorer11-Examples-End -->
+
+<!-- InternetExplorer11-End -->
+
+<!-- InternetExplorer8-Begin -->
+## InternetExplorer8
+
+<!-- InternetExplorer8-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- InternetExplorer8-Applicability-End -->
+
+<!-- InternetExplorer8-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/InternetExplorer8
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/InternetExplorer8
+```
+<!-- InternetExplorer8-OmaUri-End -->
+
+<!-- InternetExplorer8-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Internet Explorer 8.
 
-By default, the user settings of Internet Explorer 8 synchronize between computers. Use the policy setting to prevent the user settings for Internet Explorer 8 from synchronization between computers. 
+By default, the user settings of Internet Explorer 8 synchronize between computers. Use the policy setting to prevent the user settings for Internet Explorer 8 from synchronization between computers.
 
-If you enable this policy setting, the Internet Explorer 8 user settings continue to synchronize. 
+- If you enable this policy setting, the Internet Explorer 8 user settings continue to synchronize.
 
-If you disable this policy setting, Internet Explorer 8 user settings are excluded from the synchronization settings.
+- If you disable this policy setting, Internet Explorer 8 user settings are excluded from the synchronization settings.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- InternetExplorer8-Description-End -->
 
-<!--/Description-->
+<!-- InternetExplorer8-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- InternetExplorer8-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Internet Explorer 8*
--   GP name: *InternetExplorer8*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- InternetExplorer8-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- InternetExplorer8-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-internetexplorer9"></a>**ADMX_UserExperienceVirtualization/InternetExplorer9**  
+<!-- InternetExplorer8-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | InternetExplorer8 |
+| Friendly Name | Internet Explorer 8 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| Registry Value Name | MicrosoftInternetExplorer.Version8 |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- InternetExplorer8-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- InternetExplorer8-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- InternetExplorer8-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- InternetExplorer8-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- InternetExplorer9-Begin -->
+## InternetExplorer9
 
-<hr/>
+<!-- InternetExplorer9-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- InternetExplorer9-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Internet Explorer 9. By default, the user settings of Internet Explorer 9 synchronize between computers. Use the policy setting to prevent the user settings for Internet Explorer 9 from synchronization between computers.
- 
-If you enable this policy setting, the Internet Explorer 9 user settings continue to synchronize. 
+<!-- InternetExplorer9-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/InternetExplorer9
+```
 
-If you disable this policy setting, Internet Explorer 9 user settings are excluded from the synchronization settings.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/InternetExplorer9
+```
+<!-- InternetExplorer9-OmaUri-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- InternetExplorer9-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Internet Explorer 9.
 
-<!--/Description-->
+By default, the user settings of Internet Explorer 9 synchronize between computers. Use the policy setting to prevent the user settings for Internet Explorer 9 from synchronization between computers.
 
+- If you enable this policy setting, the Internet Explorer 9 user settings continue to synchronize.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Internet Explorer 9*
--   GP name: *InternetExplorer9*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you disable this policy setting, Internet Explorer 9 user settings are excluded from the synchronization settings.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- InternetExplorer9-Description-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-internetexplorer10"></a>**ADMX_UserExperienceVirtualization/InternetExplorer10**  
+<!-- InternetExplorer9-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- InternetExplorer9-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- InternetExplorer9-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- InternetExplorer9-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- InternetExplorer9-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+**ADMX mapping**:
 
-> [!div class = "checklist"]
-> * Device
-> * User
+| Name | Value |
+|:--|:--|
+| Name | InternetExplorer9 |
+| Friendly Name | Internet Explorer 9 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| Registry Value Name | MicrosoftInternetExplorer.Version9 |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- InternetExplorer9-AdmxBacked-End -->
 
-<hr/>
+<!-- InternetExplorer9-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- InternetExplorer9-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings of Internet Explorer 10. By default, the user settings of Internet Explorer 10 synchronize between computers. Use the policy setting to prevent the user settings for Internet Explorer 10 from synchronization between computers.
+<!-- InternetExplorer9-End -->
 
-If you enable this policy setting, the Internet Explorer 10 user settings continue to synchronize. 
+<!-- InternetExplorerCommon-Begin -->
+## InternetExplorerCommon
 
-If you disable this policy setting, Internet Explorer 10 user settings are excluded from the synchronization settings.
+<!-- InternetExplorerCommon-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- InternetExplorerCommon-Applicability-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- InternetExplorerCommon-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/InternetExplorerCommon
+```
 
-<!--/Description-->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/InternetExplorerCommon
+```
+<!-- InternetExplorerCommon-OmaUri-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Internet Explorer 10*
--   GP name: *InternetExplorer10*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-internetexplorer11"></a>**ADMX_UserExperienceVirtualization/InternetExplorer11**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings of Internet Explorer 11. By default, the user settings of Internet Explorer 11 synchronize between computers. Use the policy setting to prevent the user settings for Internet Explorer 11 from synchronization between computers.
-
-If you enable this policy setting, the Internet Explorer 11 user settings continue to synchronize.
-
-If you disable this policy setting, Internet Explorer 11 user settings are excluded from the synchronization settings.
-
-If you do not configure this policy setting, any defined values will be deleted.
-
-<!--/Description-->
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Internet Explorer 11*
--   GP name: *InternetExplorer11*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-internetexplorercommon"></a>**ADMX_UserExperienceVirtualization/InternetExplorerCommon**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- InternetExplorerCommon-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings which are common between the versions of Internet Explorer.
+
 By default, the user settings which are common between the versions of Internet Explorer synchronize between computers. Use the policy setting to prevent the user settings of Internet Explorer from synchronization between computers.
 
-If you enable this policy setting, the user settings which are common between the versions of Internet Explorer continue to synchronize.
+- If you enable this policy setting, the user settings which are common between the versions of Internet Explorer continue to synchronize.
+
+- If you disable this policy setting, the user settings which are common between the versions of Internet Explorer are excluded from settings synchronization. If any version of the Internet Explorer settings are enabled this policy setting shouldn't be disabled.
 
-If you disable this policy setting, the user settings which are common between the versions of Internet Explorer are excluded from settings synchronization. If any version of the Internet Explorer settings are enabled this policy setting should not be disabled.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- InternetExplorerCommon-Description-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- InternetExplorerCommon-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- InternetExplorerCommon-Editable-End -->
 
-<!--/Description-->
+<!-- InternetExplorerCommon-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Internet Explorer Common Settings*
--   GP name: *InternetExplorerCommon*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- InternetExplorerCommon-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- InternetExplorerCommon-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-maps"></a>**ADMX_UserExperienceVirtualization/Maps**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | InternetExplorerCommon |
+| Friendly Name | Internet Explorer Common Settings |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- InternetExplorerCommon-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- InternetExplorerCommon-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- InternetExplorerCommon-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- InternetExplorerCommon-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Maps-Begin -->
+## Maps
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- Maps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Maps-Applicability-End -->
 
-<hr/>
+<!-- Maps-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Maps
+```
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for the Maps app. By default, the user settings of Maps sync between computers. Use the policy setting to prevent the user settings of Maps from synchronizing between computers.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Maps
+```
+<!-- Maps-OmaUri-End -->
 
-If you enable this policy setting, Maps user settings continue to sync.
+<!-- Maps-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for the Maps app.
+
+By default, the user settings of Maps sync between computers. Use the policy setting to prevent the user settings of Maps from synchronizing between computers.
+
+- If you enable this policy setting, Maps user settings continue to sync.
+
+- If you disable this policy setting, Maps user settings are excluded from synchronization.
+
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- Maps-Description-End -->
 
-If you disable this policy setting, Maps user settings are excluded from synchronization.
+<!-- Maps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Maps-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- Maps-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Maps-DFProperties-End -->
+
+<!-- Maps-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Maps |
+| Friendly Name | Maps |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Windows Apps |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Windows8AppList\Microsoft.BingMaps_8wekyb3d8bbwe |
+| Registry Value Name | SyncSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Maps-AdmxBacked-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Maps*
--   GP name: *Maps*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- Maps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Maps-Examples-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- Maps-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-maxpackagesizeinbytes"></a>**ADMX_UserExperienceVirtualization/MaxPackageSizeInBytes**  
+<!-- MaxPackageSizeInBytes-Begin -->
+## MaxPackageSizeInBytes
 
-<!--SupportedSKUs-->
+<!-- MaxPackageSizeInBytes-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MaxPackageSizeInBytes-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MaxPackageSizeInBytes-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MaxPackageSizeInBytes
+```
 
-<!--/SupportedSKUs-->
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MaxPackageSizeInBytes
+```
+<!-- MaxPackageSizeInBytes-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MaxPackageSizeInBytes-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure the UE-V Agent to write a warning event to the event log when a settings package file size reaches a defined threshold. By default the UE-V Agent doesn't report information about package file size.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+- If you enable this policy setting, specify the threshold file size in bytes. When the settings package file exceeds this threshold the UE-V Agent will write a warning event to the event log.
 
-<hr/>
+- If you disable or don't configure this policy setting, no event is written to the event log to report settings package size.
+<!-- MaxPackageSizeInBytes-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to configure the UE-V Agent to write a warning event to the event log when a settings package file size reaches a defined threshold. By default the UE-V Agent does not report information about package file size. 
+<!-- MaxPackageSizeInBytes-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MaxPackageSizeInBytes-Editable-End -->
 
-If you enable this policy setting, specify the threshold file size in bytes. When the settings package file exceeds this threshold the UE-V Agent will write a warning event to the event log.
+<!-- MaxPackageSizeInBytes-DFProperties-Begin -->
+**Description framework properties**:
 
-If you disable or do not configure this policy setting, no event is written to the event log to report settings package size.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MaxPackageSizeInBytes-DFProperties-End -->
 
-<!--/Description-->
+<!-- MaxPackageSizeInBytes-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Settings package size warning threshold*
--   GP name: *MaxPackageSizeInBytes*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | MaxPackageSizeInBytes |
+| Friendly Name | Settings package size warning threshold |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MaxPackageSizeInBytes-AdmxBacked-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MaxPackageSizeInBytes-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MaxPackageSizeInBytes-Examples-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010access"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010Access**  
+<!-- MaxPackageSizeInBytes-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2010Access-Begin -->
+## MicrosoftOffice2010Access
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2010Access-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010Access-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010Access-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Access
+```
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Access
+```
+<!-- MicrosoftOffice2010Access-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010Access-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Access 2010.
 
-<hr/>
+By default, the user settings of Microsoft Access 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Access 2010 from synchronization between computers.
+
+- If you enable this policy setting, Microsoft Access 2010 user settings continue to synchronize.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Access 2010. By default, the user settings of Microsoft Access 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Access 2010 from synchronization between computers. 
+- If you disable this policy setting, Microsoft Access 2010 user settings are excluded from the synchronization settings.
+
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Access-Description-End -->
 
-If you enable this policy setting, Microsoft Access 2010 user settings continue to synchronize.
+<!-- MicrosoftOffice2010Access-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Access-Editable-End -->
 
-If you disable this policy setting, Microsoft Access 2010 user settings are excluded from the synchronization settings. 
+<!-- MicrosoftOffice2010Access-DFProperties-Begin -->
+**Description framework properties**:
 
-If you do not configure this policy setting, any defined values will be deleted.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010Access-DFProperties-End -->
+
+<!-- MicrosoftOffice2010Access-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010Access |
+| Friendly Name | Microsoft Access 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010Access-AdmxBacked-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2010Access-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Access-Examples-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Access 2010*
--   GP name: *MicrosoftOffice2010Access*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2010Access-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2010Common-Begin -->
+## MicrosoftOffice2010Common
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010common"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010Common**  
+<!-- MicrosoftOffice2010Common-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010Common-Applicability-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2010Common-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Common
+```
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Common
+```
+<!-- MicrosoftOffice2010Common-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010Common-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2010 applications.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+By default, the user settings which are common between the Microsoft Office Suite 2010 applications synchronize between computers. Use the policy setting to prevent the user settings which are common between the Microsoft Office Suite 2010 applications from synchronization between computers.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+- If you enable this policy setting, the user settings which are common between the Microsoft Office Suite 2010 applications continue to synchronize.
 
-<hr/>
+- If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2010 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2010 applications are enabled, this policy setting shouldn't be disabled
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Common-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2010 applications. By default, the user settings which are common between the Microsoft Office Suite 2010 applications synchronize between computers. Use the policy setting to prevent the user settings which are common between the Microsoft Office Suite 2010 applications from synchronization between computers. 
+<!-- MicrosoftOffice2010Common-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Common-Editable-End -->
 
-If you enable this policy setting, the user settings which are common between the Microsoft Office Suite 2010 applications continue to synchronize.
+<!-- MicrosoftOffice2010Common-DFProperties-Begin -->
+**Description framework properties**:
 
-If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2010 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2010 applications are enabled, this policy setting should not be disabled 
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010Common-DFProperties-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Common-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/Description-->
+**ADMX mapping**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 2010 Common Settings*
--   GP name: *MicrosoftOffice2010Common*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010Common |
+| Friendly Name | Microsoft Office 2010 Common Settings |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010Common-AdmxBacked-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2010Common-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Common-Examples-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010excel"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010Excel**  
+<!-- MicrosoftOffice2010Common-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2010Excel-Begin -->
+## MicrosoftOffice2010Excel
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2010Excel-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010Excel-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010Excel-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Excel
+```
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Excel
+```
+<!-- MicrosoftOffice2010Excel-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010Excel-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Excel 2010.
 
-<hr/>
+By default, the user settings of Microsoft Excel 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Excel 2010 from synchronization between computers.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Excel 2010. By default, the user settings of Microsoft Excel 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Excel 2010 from synchronization between computers. 
+- If you enable this policy setting, Microsoft Excel 2010 user settings continue to synchronize.
 
-If you enable this policy setting, Microsoft Excel 2010 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft Excel 2010 user settings are excluded from the synchronization settings.
 
-If you disable this policy setting, Microsoft Excel 2010 user settings are excluded from the synchronization settings. 
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Excel-Description-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+<!-- MicrosoftOffice2010Excel-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Excel-Editable-End -->
 
+<!-- MicrosoftOffice2010Excel-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Excel 2010*
--   GP name: *MicrosoftOffice2010Excel*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010Excel-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2010Excel-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010infopath"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010InfoPath**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010Excel |
+| Friendly Name | Microsoft Excel 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010Excel-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2010Excel-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Excel-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010Excel-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010InfoPath-Begin -->
+## MicrosoftOffice2010InfoPath
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010InfoPath-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010InfoPath-Applicability-End -->
 
-<hr/>
+<!-- MicrosoftOffice2010InfoPath-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010InfoPath
+```
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft InfoPath 2010. By default, the user settings of Microsoft InfoPath 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft InfoPath 2010 from synchronization between computers.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010InfoPath
+```
+<!-- MicrosoftOffice2010InfoPath-OmaUri-End -->
 
-If you enable this policy setting, Microsoft InfoPath 2010 user settings continue to synchronize.
+<!-- MicrosoftOffice2010InfoPath-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft InfoPath 2010.
 
-If you disable this policy setting, Microsoft InfoPath 2010 user settings are excluded from the synchronization settings.
+By default, the user settings of Microsoft InfoPath 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft InfoPath 2010 from synchronization between computers.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you enable this policy setting, Microsoft InfoPath 2010 user settings continue to synchronize.
 
-<!--/Description-->
+- If you disable this policy setting, Microsoft InfoPath 2010 user settings are excluded from the synchronization settings.
 
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010InfoPath-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft InfoPath 2010*
--   GP name: *MicrosoftOffice2010InfoPath*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2010InfoPath-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010InfoPath-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2010InfoPath-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010lync"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010Lync**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010InfoPath-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2010InfoPath-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010InfoPath |
+| Friendly Name | Microsoft InfoPath 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010InfoPath-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010InfoPath-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010InfoPath-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010InfoPath-End -->
 
-<hr/>
+<!-- MicrosoftOffice2010Lync-Begin -->
+## MicrosoftOffice2010Lync
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Lync 2010. By default, the user settings of Microsoft Lync 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Lync 2010 from synchronization between computers. 
+<!-- MicrosoftOffice2010Lync-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010Lync-Applicability-End -->
 
-If you enable this policy setting, Microsoft Lync 2010 user settings continue to synchronize.
+<!-- MicrosoftOffice2010Lync-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Lync
+```
 
-If you disable this policy setting, Microsoft Lync 2010 user settings are excluded from the synchronization settings. 
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Lync
+```
+<!-- MicrosoftOffice2010Lync-OmaUri-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Lync-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Lync 2010.
 
-<!--/Description-->
+By default, the user settings of Microsoft Lync 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Lync 2010 from synchronization between computers.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Lync 2010*
--   GP name: *MicrosoftOffice2010Lync*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you enable this policy setting, Microsoft Lync 2010 user settings continue to synchronize.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+- If you disable this policy setting, Microsoft Lync 2010 user settings are excluded from the synchronization settings.
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010onenote"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010OneNote**  
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Lync-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2010Lync-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Lync-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2010Lync-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010Lync-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010Lync-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-> [!div class = "checklist"]
-> * Device
-> * User
+**ADMX mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010Lync |
+| Friendly Name | Microsoft Lync 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| Registry Value Name | MicrosoftLync2010 |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010Lync-AdmxBacked-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft OneNote 2010. By default, the user settings of Microsoft OneNote 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft OneNote 2010 from synchronization between computers.
+<!-- MicrosoftOffice2010Lync-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Lync-Examples-End -->
 
-If you enable this policy setting, Microsoft OneNote 2010 user settings continue to synchronize.
+<!-- MicrosoftOffice2010Lync-End -->
 
-If you disable this policy setting, Microsoft OneNote 2010 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2010OneNote-Begin -->
+## MicrosoftOffice2010OneNote
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+<!-- MicrosoftOffice2010OneNote-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010OneNote-Applicability-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft OneNote 2010*
--   GP name: *MicrosoftOffice2010OneNote*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2010OneNote-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010OneNote
+```
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010OneNote
+```
+<!-- MicrosoftOffice2010OneNote-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010outlook"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010Outlook**  
+<!-- MicrosoftOffice2010OneNote-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft OneNote 2010.
 
-<!--SupportedSKUs-->
+By default, the user settings of Microsoft OneNote 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft OneNote 2010 from synchronization between computers.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you enable this policy setting, Microsoft OneNote 2010 user settings continue to synchronize.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you disable this policy setting, Microsoft OneNote 2010 user settings are excluded from the synchronization settings.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010OneNote-Description-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010OneNote-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010OneNote-Editable-End -->
 
-<hr/>
+<!-- MicrosoftOffice2010OneNote-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Outlook 2010. By default, the user settings of Microsoft Outlook 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Outlook 2010 from synchronization between computers.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010OneNote-DFProperties-End -->
 
-If you enable this policy setting, Microsoft Outlook 2010 user settings continue to synchronize.
+<!-- MicrosoftOffice2010OneNote-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-If you disable this policy setting, Microsoft Outlook 2010 user settings are excluded from the synchronization settings.
+**ADMX mapping**:
 
-If you do not configure this policy setting, any defined values will be deleted.
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010OneNote |
+| Friendly Name | Microsoft OneNote 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010OneNote-AdmxBacked-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2010OneNote-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010OneNote-Examples-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Outlook 2010*
--   GP name: *MicrosoftOffice2010Outlook*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2010OneNote-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2010Outlook-Begin -->
+## MicrosoftOffice2010Outlook
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010powerpoint"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010PowerPoint**  
+<!-- MicrosoftOffice2010Outlook-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010Outlook-Applicability-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2010Outlook-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Outlook
+```
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Outlook
+```
+<!-- MicrosoftOffice2010Outlook-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010Outlook-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Outlook 2010.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+By default, the user settings of Microsoft Outlook 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Outlook 2010 from synchronization between computers.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+- If you enable this policy setting, Microsoft Outlook 2010 user settings continue to synchronize.
 
-<hr/>
+- If you disable this policy setting, Microsoft Outlook 2010 user settings are excluded from the synchronization settings.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft PowerPoint 2010. By default, the user settings of Microsoft PowerPoint 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft PowerPoint 2010 from synchronization between computers.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Outlook-Description-End -->
 
-If you enable this policy setting, Microsoft PowerPoint 2010 user settings continue to synchronize.
+<!-- MicrosoftOffice2010Outlook-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Outlook-Editable-End -->
 
-If you disable this policy setting, Microsoft PowerPoint 2010 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2010Outlook-DFProperties-Begin -->
+**Description framework properties**:
 
-If you do not configure this policy setting, any defined values will be deleted.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010Outlook-DFProperties-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2010Outlook-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft PowerPoint 2010*
--   GP name: *MicrosoftOffice2010PowerPoint*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010Outlook |
+| Friendly Name | Microsoft Outlook 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010Outlook-AdmxBacked-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2010Outlook-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Outlook-Examples-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010project"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010Project**  
+<!-- MicrosoftOffice2010Outlook-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2010PowerPoint-Begin -->
+## MicrosoftOffice2010PowerPoint
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2010PowerPoint-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010PowerPoint-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010PowerPoint-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010PowerPoint
+```
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010PowerPoint
+```
+<!-- MicrosoftOffice2010PowerPoint-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010PowerPoint-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft PowerPoint 2010.
 
-<hr/>
+By default, the user settings of Microsoft PowerPoint 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft PowerPoint 2010 from synchronization between computers.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Project 2010. By default, the user settings of Microsoft Project 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Project 2010 from synchronization between computers.
+- If you enable this policy setting, Microsoft PowerPoint 2010 user settings continue to synchronize.
 
-If you enable this policy setting, Microsoft Project 2010 user settings continue to synchronize.
+- If you disable this policy setting, Microsoft PowerPoint 2010 user settings are excluded from the synchronization settings.
 
-If you disable this policy setting, Microsoft Project 2010 user settings are excluded from the synchronization settings.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010PowerPoint-Description-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+<!-- MicrosoftOffice2010PowerPoint-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010PowerPoint-Editable-End -->
 
+<!-- MicrosoftOffice2010PowerPoint-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Project 2010*
--   GP name: *MicrosoftOffice2010Project*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010PowerPoint-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2010PowerPoint-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010publisher"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010Publisher**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010PowerPoint |
+| Friendly Name | Microsoft PowerPoint 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010PowerPoint-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2010PowerPoint-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010PowerPoint-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010PowerPoint-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010Project-Begin -->
+## MicrosoftOffice2010Project
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010Project-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010Project-Applicability-End -->
 
-<hr/>
+<!-- MicrosoftOffice2010Project-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Project
+```
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Publisher 2010. By default, the user settings of Microsoft Publisher 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Publisher 2010 from synchronization between computers.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Project
+```
+<!-- MicrosoftOffice2010Project-OmaUri-End -->
 
-If you enable this policy setting, Microsoft Publisher 2010 user settings continue to synchronize.
+<!-- MicrosoftOffice2010Project-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Project 2010.
 
-If you disable this policy setting, Microsoft Publisher 2010 user settings are excluded from the synchronization settings.
+By default, the user settings of Microsoft Project 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Project 2010 from synchronization between computers.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you enable this policy setting, Microsoft Project 2010 user settings continue to synchronize.
 
-<!--/Description-->
+- If you disable this policy setting, Microsoft Project 2010 user settings are excluded from the synchronization settings.
 
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Project-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Publisher 2010*
--   GP name: *MicrosoftOffice2010Publisher*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2010Project-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Project-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2010Project-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010sharepointdesigner"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010SharePointDesigner**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010Project-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2010Project-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010Project |
+| Friendly Name | Microsoft Project 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010Project-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010Project-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Project-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010Project-End -->
 
-<hr/>
+<!-- MicrosoftOffice2010Publisher-Begin -->
+## MicrosoftOffice2010Publisher
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft SharePoint Designer 2010. By default, the user settings of Microsoft SharePoint Designer 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft SharePoint Designer 2010 from synchronization between computers.
+<!-- MicrosoftOffice2010Publisher-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010Publisher-Applicability-End -->
 
-If you enable this policy setting, Microsoft SharePoint Designer 2010 user settings continue to synchronize.
+<!-- MicrosoftOffice2010Publisher-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Publisher
+```
 
-If you disable this policy setting, Microsoft SharePoint Designer 2010 user settings are excluded from the synchronization settings.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Publisher
+```
+<!-- MicrosoftOffice2010Publisher-OmaUri-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Publisher-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Publisher 2010.
 
-<!--/Description-->
+By default, the user settings of Microsoft Publisher 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Publisher 2010 from synchronization between computers.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft SharePoint Designer 2010*
--   GP name: *MicrosoftOffice2010SharePointDesigner*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you enable this policy setting, Microsoft Publisher 2010 user settings continue to synchronize.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+- If you disable this policy setting, Microsoft Publisher 2010 user settings are excluded from the synchronization settings.
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010sharepointworkspace"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010SharePointWorkspace**  
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Publisher-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2010Publisher-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Publisher-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2010Publisher-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010Publisher-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010Publisher-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-> [!div class = "checklist"]
-> * Device
-> * User
+**ADMX mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010Publisher |
+| Friendly Name | Microsoft Publisher 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010Publisher-AdmxBacked-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft SharePoint Workspace 2010. By default, the user settings of Microsoft SharePoint Workspace 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft SharePoint Workspace 2010 from synchronization between computers.
+<!-- MicrosoftOffice2010Publisher-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Publisher-Examples-End -->
 
-If you enable this policy setting, Microsoft SharePoint Workspace 2010 user settings continue to synchronize.
+<!-- MicrosoftOffice2010Publisher-End -->
 
-If you disable this policy setting, Microsoft SharePoint Workspace 2010 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2010SharePointDesigner-Begin -->
+## MicrosoftOffice2010SharePointDesigner
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010SharePointDesigner-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010SharePointDesigner-Applicability-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2010SharePointDesigner-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010SharePointDesigner
+```
 
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010SharePointDesigner
+```
+<!-- MicrosoftOffice2010SharePointDesigner-OmaUri-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft SharePoint Workspace 2010*
--   GP name: *MicrosoftOffice2010SharePointWorkspace*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2010SharePointDesigner-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft SharePoint Designer 2010.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+By default, the user settings of Microsoft SharePoint Designer 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft SharePoint Designer 2010 from synchronization between computers.
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010visio"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010Visio**  
+- If you enable this policy setting, Microsoft SharePoint Designer 2010 user settings continue to synchronize.
 
-<!--SupportedSKUs-->
+- If you disable this policy setting, Microsoft SharePoint Designer 2010 user settings are excluded from the synchronization settings.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010SharePointDesigner-Description-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010SharePointDesigner-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010SharePointDesigner-Editable-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010SharePointDesigner-DFProperties-Begin -->
+**Description framework properties**:
 
-> [!div class = "checklist"]
-> * Device
-> * User
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010SharePointDesigner-DFProperties-End -->
 
-<hr/>
+<!-- MicrosoftOffice2010SharePointDesigner-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Visio 2010. By default, the user settings of Microsoft Visio 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Visio 2010 from synchronization between computers.
+**ADMX mapping**:
 
-If you enable this policy setting, Microsoft Visio 2010 user settings continue to synchronize.
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010SharePointDesigner |
+| Friendly Name | Microsoft SharePoint Designer 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010SharePointDesigner-AdmxBacked-End -->
 
-If you disable this policy setting, Microsoft Visio 2010 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2010SharePointDesigner-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010SharePointDesigner-Examples-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010SharePointDesigner-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2010SharePointWorkspace-Begin -->
+## MicrosoftOffice2010SharePointWorkspace
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Visio 2010*
--   GP name: *MicrosoftOffice2010Visio*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2010SharePointWorkspace-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010SharePointWorkspace-Applicability-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2010SharePointWorkspace-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010SharePointWorkspace
+```
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2010word"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010Word**  
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010SharePointWorkspace
+```
+<!-- MicrosoftOffice2010SharePointWorkspace-OmaUri-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2010SharePointWorkspace-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft SharePoint Workspace 2010.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+By default, the user settings of Microsoft SharePoint Workspace 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft SharePoint Workspace 2010 from synchronization between computers.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you enable this policy setting, Microsoft SharePoint Workspace 2010 user settings continue to synchronize.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you disable this policy setting, Microsoft SharePoint Workspace 2010 user settings are excluded from the synchronization settings.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010SharePointWorkspace-Description-End -->
 
-<hr/>
+<!-- MicrosoftOffice2010SharePointWorkspace-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010SharePointWorkspace-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Word 2010. By default, the user settings of Microsoft Word 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Word 2010 from synchronization between computers.
+<!-- MicrosoftOffice2010SharePointWorkspace-DFProperties-Begin -->
+**Description framework properties**:
 
-If you enable this policy setting, Microsoft Word 2010 user settings continue to synchronize.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010SharePointWorkspace-DFProperties-End -->
 
-If you disable this policy setting, Microsoft Word 2010 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2010SharePointWorkspace-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-If you do not configure this policy setting, any defined values will be deleted.
+**ADMX mapping**:
 
-<!--/Description-->
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010SharePointWorkspace |
+| Friendly Name | Microsoft SharePoint Workspace 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010SharePointWorkspace-AdmxBacked-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Word 2010*
--   GP name: *MicrosoftOffice2010Word*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2010SharePointWorkspace-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010SharePointWorkspace-Examples-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2010SharePointWorkspace-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013access"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013Access**  
+<!-- MicrosoftOffice2010Visio-Begin -->
+## MicrosoftOffice2010Visio
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2010Visio-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010Visio-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2010Visio-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Visio
+```
 
-<!--/SupportedSKUs-->
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Visio
+```
+<!-- MicrosoftOffice2010Visio-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010Visio-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Visio 2010.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+By default, the user settings of Microsoft Visio 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Visio 2010 from synchronization between computers.
 
-<hr/>
+- If you enable this policy setting, Microsoft Visio 2010 user settings continue to synchronize.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Access 2013. By default, the user settings of Microsoft Access 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Access 2013 from synchronization between computers.
+- If you disable this policy setting, Microsoft Visio 2010 user settings are excluded from the synchronization settings.
 
-If you enable this policy setting, Microsoft Access 2013 user settings continue to synchronize.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Visio-Description-End -->
 
-If you disable this policy setting, Microsoft Access 2013 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2010Visio-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Visio-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+<!-- MicrosoftOffice2010Visio-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Access 2013*
--   GP name: *MicrosoftOffice2013Access*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010Visio-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2010Visio-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013accessbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013AccessBackup**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010Visio |
+| Friendly Name | Microsoft Visio 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010Visio-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2010Visio-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Visio-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2010Visio-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2010Word-Begin -->
+## MicrosoftOffice2010Word
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010Word-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2010Word-Applicability-End -->
 
-<hr/>
+<!-- MicrosoftOffice2010Word-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Word
+```
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the backup of certain user settings for Microsoft Access 2013. Microsoft Access 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Access 2013 settings.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2010Word
+```
+<!-- MicrosoftOffice2010Word-OmaUri-End -->
 
-If you enable this policy setting, certain user settings of Microsoft Access 2013 will continue to be backed up.
+<!-- MicrosoftOffice2010Word-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Word 2010.
 
-If you disable this policy setting, certain user settings of Microsoft Access 2013 will not be backed up.
+By default, the user settings of Microsoft Word 2010 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Word 2010 from synchronization between computers.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you enable this policy setting, Microsoft Word 2010 user settings continue to synchronize.
 
-<!--/Description-->
+- If you disable this policy setting, Microsoft Word 2010 user settings are excluded from the synchronization settings.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Access 2013 backup only*
--   GP name: *MicrosoftOffice2013AccessBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2010Word-Description-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2010Word-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Word-Editable-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013common"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013Common**  
+<!-- MicrosoftOffice2010Word-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2010Word-DFProperties-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2010Word-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/SupportedSKUs-->
-<hr/>
+**ADMX mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2010Word |
+| Friendly Name | Microsoft Word 2010 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2010Word-AdmxBacked-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2010Word-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2010Word-Examples-End -->
 
-<hr/>
+<!-- MicrosoftOffice2010Word-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2013 applications. By default, the user settings which are common between the Microsoft Office Suite 2013 applications synchronize between computers. Use the policy setting to prevent the user settings which are common between the Microsoft Office Suite 2013 applications from synchronization between computers.
+<!-- MicrosoftOffice2013Access-Begin -->
+## MicrosoftOffice2013Access
 
-If you enable this policy setting, the user settings which are common between the Microsoft Office Suite 2013 applications continue to synchronize.
+<!-- MicrosoftOffice2013Access-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013Access-Applicability-End -->
 
-If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2013 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2013 applications are enabled, this policy setting should not be disabled.
+<!-- MicrosoftOffice2013Access-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Access
+```
 
-If you do not configure this policy setting, any defined values will be deleted.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Access
+```
+<!-- MicrosoftOffice2013Access-OmaUri-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2013Access-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Access 2013.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 2013 Common Settings*
--   GP name: *MicrosoftOffice2013Common*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+By default, the user settings of Microsoft Access 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Access 2013 from synchronization between computers.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+- If you enable this policy setting, Microsoft Access 2013 user settings continue to synchronize.
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013commonbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013CommonBackup**  
+- If you disable this policy setting, Microsoft Access 2013 user settings are excluded from the synchronization settings.
 
-<!--SupportedSKUs-->
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Access-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2013Access-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Access-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013Access-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013Access-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013Access-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--/Scope-->
-<!--Description-->
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013Access |
+| Friendly Name | Microsoft Access 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013Access-AdmxBacked-End -->
+
+<!-- MicrosoftOffice2013Access-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Access-Examples-End -->
+
+<!-- MicrosoftOffice2013Access-End -->
+
+<!-- MicrosoftOffice2013AccessBackup-Begin -->
+## MicrosoftOffice2013AccessBackup
+
+<!-- MicrosoftOffice2013AccessBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013AccessBackup-Applicability-End -->
+
+<!-- MicrosoftOffice2013AccessBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013AccessBackup
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013AccessBackup
+```
+<!-- MicrosoftOffice2013AccessBackup-OmaUri-End -->
+
+<!-- MicrosoftOffice2013AccessBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Access 2013.
+
+Microsoft Access 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Access 2013 settings.
+
+- If you enable this policy setting, certain user settings of Microsoft Access 2013 will continue to be backed up.
+
+- If you disable this policy setting, certain user settings of Microsoft Access 2013 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013AccessBackup-Description-End -->
+
+<!-- MicrosoftOffice2013AccessBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013AccessBackup-Editable-End -->
+
+<!-- MicrosoftOffice2013AccessBackup-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013AccessBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2013AccessBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013AccessBackup |
+| Friendly Name | Access 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013AccessBackup-AdmxBacked-End -->
+
+<!-- MicrosoftOffice2013AccessBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013AccessBackup-Examples-End -->
+
+<!-- MicrosoftOffice2013AccessBackup-End -->
+
+<!-- MicrosoftOffice2013Common-Begin -->
+## MicrosoftOffice2013Common
+
+<!-- MicrosoftOffice2013Common-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013Common-Applicability-End -->
+
+<!-- MicrosoftOffice2013Common-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Common
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Common
+```
+<!-- MicrosoftOffice2013Common-OmaUri-End -->
+
+<!-- MicrosoftOffice2013Common-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2013 applications.
+
+By default, the user settings which are common between the Microsoft Office Suite 2013 applications synchronize between computers. Use the policy setting to prevent the user settings which are common between the Microsoft Office Suite 2013 applications from synchronization between computers.
+
+- If you enable this policy setting, the user settings which are common between the Microsoft Office Suite 2013 applications continue to synchronize.
+
+- If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2013 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2013 applications are enabled, this policy setting shouldn't be disabled.
+
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Common-Description-End -->
+
+<!-- MicrosoftOffice2013Common-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Common-Editable-End -->
+
+<!-- MicrosoftOffice2013Common-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013Common-DFProperties-End -->
+
+<!-- MicrosoftOffice2013Common-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013Common |
+| Friendly Name | Microsoft Office 2013 Common Settings |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013Common-AdmxBacked-End -->
+
+<!-- MicrosoftOffice2013Common-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Common-Examples-End -->
+
+<!-- MicrosoftOffice2013Common-End -->
+
+<!-- MicrosoftOffice2013CommonBackup-Begin -->
+## MicrosoftOffice2013CommonBackup
+
+<!-- MicrosoftOffice2013CommonBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013CommonBackup-Applicability-End -->
+
+<!-- MicrosoftOffice2013CommonBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013CommonBackup
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013CommonBackup
+```
+<!-- MicrosoftOffice2013CommonBackup-OmaUri-End -->
+
+<!-- MicrosoftOffice2013CommonBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings which are common between the Microsoft Office Suite 2013 applications.
+
 Microsoft Office Suite 2013 has user settings which are common between applications and are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific common Microsoft Office Suite 2013 applications.
 
-If you enable this policy setting, certain user settings which are common between the Microsoft Office Suite 2013 applications will continue to be backed up.
+- If you enable this policy setting, certain user settings which are common between the Microsoft Office Suite 2013 applications will continue to be backed up.
 
-If you disable this policy setting, certain user settings which are common between the Microsoft Office Suite 2013 applications will not be backed up. 
+- If you disable this policy setting, certain user settings which are common between the Microsoft Office Suite 2013 applications won't be backed up.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013CommonBackup-Description-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2013CommonBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013CommonBackup-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Common 2013 backup only*
--   GP name: *MicrosoftOffice2013CommonBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2013CommonBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013CommonBackup-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013excel"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013Excel**  
+<!-- MicrosoftOffice2013CommonBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013CommonBackup |
+| Friendly Name | Common 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013CommonBackup-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013CommonBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013CommonBackup-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013CommonBackup-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013Excel-Begin -->
+## MicrosoftOffice2013Excel
 
-<hr/>
+<!-- MicrosoftOffice2013Excel-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013Excel-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- MicrosoftOffice2013Excel-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Excel
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Excel
+```
+<!-- MicrosoftOffice2013Excel-OmaUri-End -->
+
+<!-- MicrosoftOffice2013Excel-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Excel 2013.
 
 By default, the user settings of Microsoft Excel 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Excel 2013 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Excel 2013 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Excel 2013 user settings continue to synchronize.
 
-If you disable this policy setting, Microsoft Excel 2013 user settings are excluded from the synchronization settings.
+- If you disable this policy setting, Microsoft Excel 2013 user settings are excluded from the synchronization settings.
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Excel-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Excel 2013*
--   GP name: *MicrosoftOffice2013Excel*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2013Excel-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Excel-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2013Excel-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013excelbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013ExcelBackup**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013Excel-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2013Excel-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013Excel |
+| Friendly Name | Microsoft Excel 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013Excel-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013Excel-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Excel-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013Excel-End -->
 
-<hr/>
+<!-- MicrosoftOffice2013ExcelBackup-Begin -->
+## MicrosoftOffice2013ExcelBackup
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the backup of certain user settings for Microsoft Excel 2013. Microsoft Excel 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Excel 2013 settings.
+<!-- MicrosoftOffice2013ExcelBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013ExcelBackup-Applicability-End -->
 
-If you enable this policy setting, certain user settings of Microsoft Excel 2013 will continue to be backed up.
+<!-- MicrosoftOffice2013ExcelBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013ExcelBackup
+```
 
-If you disable this policy setting, certain user settings of Microsoft Excel 2013 will not be backed up.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013ExcelBackup
+```
+<!-- MicrosoftOffice2013ExcelBackup-OmaUri-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+<!-- MicrosoftOffice2013ExcelBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Excel 2013.
 
+Microsoft Excel 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Excel 2013 settings.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Excel 2013 backup only*
--   GP name: *MicrosoftOffice2013ExcelBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you enable this policy setting, certain user settings of Microsoft Excel 2013 will continue to be backed up.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+- If you disable this policy setting, certain user settings of Microsoft Excel 2013 won't be backed up.
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013infopath"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013InfoPath**  
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013ExcelBackup-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2013ExcelBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013ExcelBackup-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2013ExcelBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013ExcelBackup-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013ExcelBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-> [!div class = "checklist"]
-> * Device
-> * User
+**ADMX mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013ExcelBackup |
+| Friendly Name | Excel 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013ExcelBackup-AdmxBacked-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft InfoPath 2013. By default, the user settings of Microsoft InfoPath 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft InfoPath 2013 from synchronization between computers.
+<!-- MicrosoftOffice2013ExcelBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013ExcelBackup-Examples-End -->
 
-If you enable this policy setting, Microsoft InfoPath 2013 user settings continue to synchronize.
+<!-- MicrosoftOffice2013ExcelBackup-End -->
 
-If you disable this policy setting, Microsoft InfoPath 2013 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2013InfoPath-Begin -->
+## MicrosoftOffice2013InfoPath
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013InfoPath-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013InfoPath-Applicability-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2013InfoPath-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013InfoPath
+```
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft InfoPath 2013*
--   GP name: *MicrosoftOffice2013InfoPath*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013InfoPath
+```
+<!-- MicrosoftOffice2013InfoPath-OmaUri-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2013InfoPath-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft InfoPath 2013.
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013infopathbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013InfoPathBackup**  
+By default, the user settings of Microsoft InfoPath 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft InfoPath 2013 from synchronization between computers.
 
-<!--SupportedSKUs-->
+- If you enable this policy setting, Microsoft InfoPath 2013 user settings continue to synchronize.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you disable this policy setting, Microsoft InfoPath 2013 user settings are excluded from the synchronization settings.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013InfoPath-Description-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013InfoPath-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013InfoPath-Editable-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013InfoPath-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013InfoPath-DFProperties-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the backup of certain user settings for Microsoft InfoPath 2013. Microsoft InfoPath 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft InfoPath 2013 settings.
+<!-- MicrosoftOffice2013InfoPath-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-If you enable this policy setting, certain user settings of Microsoft InfoPath 2013 will continue to be backed up.
+**ADMX mapping**:
 
-If you disable this policy setting, certain user settings of Microsoft InfoPath 2013 will not be backed up.
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013InfoPath |
+| Friendly Name | Microsoft InfoPath 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013InfoPath-AdmxBacked-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013InfoPath-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013InfoPath-Examples-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2013InfoPath-End -->
 
+<!-- MicrosoftOffice2013InfoPathBackup-Begin -->
+## MicrosoftOffice2013InfoPathBackup
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *InfoPath 2013 backup only*
--   GP name: *MicrosoftOffice2013InfoPathBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2013InfoPathBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013InfoPathBackup-Applicability-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2013InfoPathBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013InfoPathBackup
+```
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013lync"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013Lync**  
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013InfoPathBackup
+```
+<!-- MicrosoftOffice2013InfoPathBackup-OmaUri-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2013InfoPathBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft InfoPath 2013.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+Microsoft InfoPath 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft InfoPath 2013 settings.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you enable this policy setting, certain user settings of Microsoft InfoPath 2013 will continue to be backed up.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you disable this policy setting, certain user settings of Microsoft InfoPath 2013 won't be backed up.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013InfoPathBackup-Description-End -->
 
-<hr/>
+<!-- MicrosoftOffice2013InfoPathBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013InfoPathBackup-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Lync 2013. By default, the user settings of Microsoft Lync 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Lync 2013 from synchronization between computers.
+<!-- MicrosoftOffice2013InfoPathBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-If you enable this policy setting, Microsoft Lync 2013 user settings continue to synchronize.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013InfoPathBackup-DFProperties-End -->
 
-If you disable this policy setting, Microsoft Lync 2013 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2013InfoPathBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013InfoPathBackup |
+| Friendly Name | InfoPath 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013InfoPathBackup-AdmxBacked-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Lync 2013*
--   GP name: *MicrosoftOffice2013Lync*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2013InfoPathBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013InfoPathBackup-Examples-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2013InfoPathBackup-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013lyncbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013LyncBackup**  
+<!-- MicrosoftOffice2013Lync-Begin -->
+## MicrosoftOffice2013Lync
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2013Lync-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013Lync-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2013Lync-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Lync
+```
 
-<!--/SupportedSKUs-->
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Lync
+```
+<!-- MicrosoftOffice2013Lync-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013Lync-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Lync 2013.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+By default, the user settings of Microsoft Lync 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Lync 2013 from synchronization between computers.
 
-<hr/>
+- If you enable this policy setting, Microsoft Lync 2013 user settings continue to synchronize.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the backup of certain user settings for Microsoft Lync 2013. Microsoft Lync 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Lync 2013 settings.
+- If you disable this policy setting, Microsoft Lync 2013 user settings are excluded from the synchronization settings.
 
-If you enable this policy setting, certain user settings of Microsoft Lync 2013 will continue to be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Lync-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Lync 2013 will not be backed up.
+<!-- MicrosoftOffice2013Lync-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Lync-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Lync-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013Lync-DFProperties-End -->
 
+<!-- MicrosoftOffice2013Lync-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Lync 2013 backup only*
--   GP name: *MicrosoftOffice2013LyncBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013Lync |
+| Friendly Name | Microsoft Lync 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013Lync-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013onedriveforbusiness"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneDriveForBusiness**  
+<!-- MicrosoftOffice2013Lync-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Lync-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2013Lync-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2013LyncBackup-Begin -->
+## MicrosoftOffice2013LyncBackup
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013LyncBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013LyncBackup-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013LyncBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013LyncBackup
+```
 
-> [!div class = "checklist"]
-> * Device
-> * User
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013LyncBackup
+```
+<!-- MicrosoftOffice2013LyncBackup-OmaUri-End -->
 
-<hr/>
+<!-- MicrosoftOffice2013LyncBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Lync 2013.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for OneDrive for Business 2013. By default, the user settings of OneDrive for Business 2013 synchronize between computers. Use the policy setting to prevent the user settings of OneDrive for Business 2013 from synchronization between computers.
+Microsoft Lync 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Lync 2013 settings.
 
-If you enable this policy setting, OneDrive for Business 2013 user settings continue to synchronize.
+- If you enable this policy setting, certain user settings of Microsoft Lync 2013 will continue to be backed up.
 
-If you disable this policy setting, OneDrive for Business 2013 user settings are excluded from the synchronization settings.
+- If you disable this policy setting, certain user settings of Microsoft Lync 2013 won't be backed up.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013LyncBackup-Description-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2013LyncBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013LyncBackup-Editable-End -->
 
+<!-- MicrosoftOffice2013LyncBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft OneDrive for Business 2013*
--   GP name: *MicrosoftOffice2013OneDriveForBusiness*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013LyncBackup-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2013LyncBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013onenote"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneNote**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013LyncBackup |
+| Friendly Name | Lync 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013LyncBackup-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2013LyncBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013LyncBackup-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013LyncBackup-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013OneDriveForBusiness-Begin -->
+## MicrosoftOffice2013OneDriveForBusiness
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013OneDriveForBusiness-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013OneDriveForBusiness-Applicability-End -->
 
-<hr/>
+<!-- MicrosoftOffice2013OneDriveForBusiness-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneDriveForBusiness
+```
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft OneNote 2013. By default, the user settings of Microsoft OneNote 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft OneNote 2013 from synchronization between computers.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneDriveForBusiness
+```
+<!-- MicrosoftOffice2013OneDriveForBusiness-OmaUri-End -->
 
-If you enable this policy setting, Microsoft OneNote 2013 user settings continue to synchronize.
+<!-- MicrosoftOffice2013OneDriveForBusiness-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for OneDrive for Business 2013.
 
-If you disable this policy setting, Microsoft OneNote 2013 user settings are excluded from the synchronization settings.
+By default, the user settings of OneDrive for Business 2013 synchronize between computers. Use the policy setting to prevent the user settings of OneDrive for Business 2013 from synchronization between computers.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you enable this policy setting, OneDrive for Business 2013 user settings continue to synchronize.
 
-<!--/Description-->
+- If you disable this policy setting, OneDrive for Business 2013 user settings are excluded from the synchronization settings.
 
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013OneDriveForBusiness-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft OneNote 2013*
--   GP name: *MicrosoftOffice2013OneNote*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2013OneDriveForBusiness-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013OneDriveForBusiness-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2013OneDriveForBusiness-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013onenotebackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneNoteBackup**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013OneDriveForBusiness-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2013OneDriveForBusiness-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013OneDriveForBusiness |
+| Friendly Name | Microsoft OneDrive for Business 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013OneDriveForBusiness-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013OneDriveForBusiness-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013OneDriveForBusiness-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013OneDriveForBusiness-End -->
 
-<hr/>
+<!-- MicrosoftOffice2013OneNote-Begin -->
+## MicrosoftOffice2013OneNote
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the backup of certain user settings for Microsoft OneNote 2013. Microsoft OneNote 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft OneNote 2013 settings.
+<!-- MicrosoftOffice2013OneNote-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013OneNote-Applicability-End -->
 
-If you enable this policy setting, certain user settings of Microsoft OneNote 2013 will continue to be backed up.
+<!-- MicrosoftOffice2013OneNote-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneNote
+```
 
-If you disable this policy setting, certain user settings of Microsoft OneNote 2013 will not be backed up.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneNote
+```
+<!-- MicrosoftOffice2013OneNote-OmaUri-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013OneNote-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft OneNote 2013.
 
-<!--/Description-->
+By default, the user settings of Microsoft OneNote 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft OneNote 2013 from synchronization between computers.
 
+- If you enable this policy setting, Microsoft OneNote 2013 user settings continue to synchronize.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *OneNote 2013 backup only*
--   GP name: *MicrosoftOffice2013OneNoteBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you disable this policy setting, Microsoft OneNote 2013 user settings are excluded from the synchronization settings.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013OneNote-Description-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013outlook"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013Outlook**  
+<!-- MicrosoftOffice2013OneNote-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013OneNote-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2013OneNote-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013OneNote-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013OneNote-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+**ADMX mapping**:
 
-> [!div class = "checklist"]
-> * Device
-> * User
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013OneNote |
+| Friendly Name | Microsoft OneNote 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013OneNote-AdmxBacked-End -->
 
-<hr/>
+<!-- MicrosoftOffice2013OneNote-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013OneNote-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Outlook 2013. By default, the user settings of Microsoft Outlook 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Outlook 2013 from synchronization between computers.
+<!-- MicrosoftOffice2013OneNote-End -->
 
-If you enable this policy setting, Microsoft Outlook 2013 user settings continue to synchronize.
+<!-- MicrosoftOffice2013OneNoteBackup-Begin -->
+## MicrosoftOffice2013OneNoteBackup
 
-If you disable this policy setting, Microsoft Outlook 2013 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2013OneNoteBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013OneNoteBackup-Applicability-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+<!-- MicrosoftOffice2013OneNoteBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneNoteBackup
+```
 
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013OneNoteBackup
+```
+<!-- MicrosoftOffice2013OneNoteBackup-OmaUri-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Outlook 2013*
--   GP name: *MicrosoftOffice2013Outlook*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2013OneNoteBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft OneNote 2013.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+Microsoft OneNote 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft OneNote 2013 settings.
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013outlookbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013OutlookBackup**  
+- If you enable this policy setting, certain user settings of Microsoft OneNote 2013 will continue to be backed up.
 
-<!--SupportedSKUs-->
+- If you disable this policy setting, certain user settings of Microsoft OneNote 2013 won't be backed up.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013OneNoteBackup-Description-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013OneNoteBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013OneNoteBackup-Editable-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013OneNoteBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-> [!div class = "checklist"]
-> * Device
-> * User
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013OneNoteBackup-DFProperties-End -->
 
-<hr/>
+<!-- MicrosoftOffice2013OneNoteBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the backup of certain user settings for Microsoft Outlook 2013. Microsoft Outlook 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Outlook 2013 settings.
+**ADMX mapping**:
 
-If you enable this policy setting, certain user settings of Microsoft Outlook 2013 will continue to be backed up.
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013OneNoteBackup |
+| Friendly Name | OneNote 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013OneNoteBackup-AdmxBacked-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Outlook 2013 will not be backed up.
+<!-- MicrosoftOffice2013OneNoteBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013OneNoteBackup-Examples-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013OneNoteBackup-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2013Outlook-Begin -->
+## MicrosoftOffice2013Outlook
 
+<!-- MicrosoftOffice2013Outlook-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013Outlook-Applicability-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Outlook 2013 backup only*
--   GP name: *MicrosoftOffice2013OutlookBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2013Outlook-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Outlook
+```
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Outlook
+```
+<!-- MicrosoftOffice2013Outlook-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013powerpoint"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013PowerPoint**  
+<!-- MicrosoftOffice2013Outlook-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Outlook 2013.
 
-<!--SupportedSKUs-->
+By default, the user settings of Microsoft Outlook 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Outlook 2013 from synchronization between computers.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you enable this policy setting, Microsoft Outlook 2013 user settings continue to synchronize.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you disable this policy setting, Microsoft Outlook 2013 user settings are excluded from the synchronization settings.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Outlook-Description-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013Outlook-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Outlook-Editable-End -->
 
-<hr/>
+<!-- MicrosoftOffice2013Outlook-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft PowerPoint 2013. By default, the user settings of Microsoft PowerPoint 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft PowerPoint 2013 from synchronization between computers.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013Outlook-DFProperties-End -->
 
-If you enable this policy setting, Microsoft PowerPoint 2013 user settings continue to synchronize.
+<!-- MicrosoftOffice2013Outlook-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-If you disable this policy setting, Microsoft PowerPoint 2013 user settings are excluded from the synchronization settings.
+**ADMX mapping**:
 
-If you do not configure this policy setting, any defined values will be deleted.
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013Outlook |
+| Friendly Name | Microsoft Outlook 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013Outlook-AdmxBacked-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2013Outlook-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Outlook-Examples-End -->
 
+<!-- MicrosoftOffice2013Outlook-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft PowerPoint 2013*
--   GP name: *MicrosoftOffice2013PowerPoint*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2013OutlookBackup-Begin -->
+## MicrosoftOffice2013OutlookBackup
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2013OutlookBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013OutlookBackup-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013powerpointbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013PowerPointBackup**  
+<!-- MicrosoftOffice2013OutlookBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013OutlookBackup
+```
 
-<!--SupportedSKUs-->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013OutlookBackup
+```
+<!-- MicrosoftOffice2013OutlookBackup-OmaUri-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2013OutlookBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Outlook 2013.
 
-<!--/SupportedSKUs-->
-<hr/>
+Microsoft Outlook 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Outlook 2013 settings.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you enable this policy setting, certain user settings of Microsoft Outlook 2013 will continue to be backed up.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+- If you disable this policy setting, certain user settings of Microsoft Outlook 2013 won't be backed up.
 
-<hr/>
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013OutlookBackup-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the backup of certain user settings for Microsoft PowerPoint 2013. Microsoft PowerPoint 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft PowerPoint 2013 settings.
+<!-- MicrosoftOffice2013OutlookBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013OutlookBackup-Editable-End -->
 
-If you enable this policy setting, certain user settings of Microsoft PowerPoint 2013 will continue to be backed up.
+<!-- MicrosoftOffice2013OutlookBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-If you disable this policy setting, certain user settings of Microsoft PowerPoint 2013 will not be backed up.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013OutlookBackup-DFProperties-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013OutlookBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/Description-->
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013OutlookBackup |
+| Friendly Name | Outlook 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013OutlookBackup-AdmxBacked-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *PowerPoint 2013 backup only*
--   GP name: *MicrosoftOffice2013PowerPointBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2013OutlookBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013OutlookBackup-Examples-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2013OutlookBackup-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013project"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013Project**  
+<!-- MicrosoftOffice2013PowerPoint-Begin -->
+## MicrosoftOffice2013PowerPoint
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2013PowerPoint-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013PowerPoint-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2013PowerPoint-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013PowerPoint
+```
 
-<!--/SupportedSKUs-->
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013PowerPoint
+```
+<!-- MicrosoftOffice2013PowerPoint-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013PowerPoint-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft PowerPoint 2013.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+By default, the user settings of Microsoft PowerPoint 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft PowerPoint 2013 from synchronization between computers.
 
-<hr/>
+- If you enable this policy setting, Microsoft PowerPoint 2013 user settings continue to synchronize.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Project 2013. By default, the user settings of Microsoft Project 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Project 2013 from synchronization between computers.
+- If you disable this policy setting, Microsoft PowerPoint 2013 user settings are excluded from the synchronization settings.
 
-If you enable this policy setting, Microsoft Project 2013 user settings continue to synchronize.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013PowerPoint-Description-End -->
 
-If you disable this policy setting, Microsoft Project 2013 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2013PowerPoint-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013PowerPoint-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+<!-- MicrosoftOffice2013PowerPoint-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013PowerPoint-DFProperties-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Project 2013*
--   GP name: *MicrosoftOffice2013Project*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2013PowerPoint-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013projectbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013ProjectBackup**  
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013PowerPoint |
+| Friendly Name | Microsoft PowerPoint 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013PowerPoint-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2013PowerPoint-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013PowerPoint-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2013PowerPoint-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013PowerPointBackup-Begin -->
+## MicrosoftOffice2013PowerPointBackup
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013PowerPointBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013PowerPointBackup-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013PowerPointBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013PowerPointBackup
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013PowerPointBackup
+```
+<!-- MicrosoftOffice2013PowerPointBackup-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the backup of certain user settings for Microsoft Project 2013. Microsoft Project 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Project 2013 settings.
+<!-- MicrosoftOffice2013PowerPointBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft PowerPoint 2013.
 
-If you enable this policy setting, certain user settings of Microsoft Project 2013 will continue to be backed up.
+Microsoft PowerPoint 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft PowerPoint 2013 settings.
 
-If you disable this policy setting, certain user settings of Microsoft Project 2013 will not be backed up.
+- If you enable this policy setting, certain user settings of Microsoft PowerPoint 2013 will continue to be backed up.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, certain user settings of Microsoft PowerPoint 2013 won't be backed up.
 
-<!--/Description-->
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013PowerPointBackup-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Project 2013 backup only*
--   GP name: *MicrosoftOffice2013ProjectBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2013PowerPointBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013PowerPointBackup-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2013PowerPointBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013publisher"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013Publisher**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013PowerPointBackup-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2013PowerPointBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013PowerPointBackup |
+| Friendly Name | PowerPoint 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013PowerPointBackup-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013PowerPointBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013PowerPointBackup-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013PowerPointBackup-End -->
 
-<hr/>
+<!-- MicrosoftOffice2013Project-Begin -->
+## MicrosoftOffice2013Project
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Publisher 2013. By default, the user settings of Microsoft Publisher 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Publisher 2013 from synchronization between computers.
+<!-- MicrosoftOffice2013Project-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013Project-Applicability-End -->
 
-If you enable this policy setting, Microsoft Publisher 2013 user settings continue to synchronize.
+<!-- MicrosoftOffice2013Project-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Project
+```
 
-If you disable this policy setting, Microsoft Publisher 2013 user settings are excluded from the synchronization settings.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Project
+```
+<!-- MicrosoftOffice2013Project-OmaUri-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Project-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Project 2013.
 
-<!--/Description-->
+By default, the user settings of Microsoft Project 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Project 2013 from synchronization between computers.
 
+- If you enable this policy setting, Microsoft Project 2013 user settings continue to synchronize.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Publisher 2013*
--   GP name: *MicrosoftOffice2013Publisher*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you disable this policy setting, Microsoft Project 2013 user settings are excluded from the synchronization settings.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Project-Description-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013publisherbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013PublisherBackup**  
+<!-- MicrosoftOffice2013Project-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Project-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2013Project-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013Project-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013Project-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+**ADMX mapping**:
 
-> [!div class = "checklist"]
-> * Device
-> * User
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013Project |
+| Friendly Name | Microsoft Project 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013Project-AdmxBacked-End -->
 
-<hr/>
+<!-- MicrosoftOffice2013Project-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Project-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the backup of certain user settings for Microsoft Publisher 2013. Microsoft Publisher 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Publisher 2013 settings.
+<!-- MicrosoftOffice2013Project-End -->
 
-If you enable this policy setting, certain user settings of Microsoft Publisher 2013 will continue to be backed up.
+<!-- MicrosoftOffice2013ProjectBackup-Begin -->
+## MicrosoftOffice2013ProjectBackup
 
-If you disable this policy setting, certain user settings of Microsoft Publisher 2013 will not be backed up.
+<!-- MicrosoftOffice2013ProjectBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013ProjectBackup-Applicability-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013ProjectBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013ProjectBackup
+```
 
-<!--/Description-->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013ProjectBackup
+```
+<!-- MicrosoftOffice2013ProjectBackup-OmaUri-End -->
 
+<!-- MicrosoftOffice2013ProjectBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Project 2013.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Publisher 2013 backup only*
--   GP name: *MicrosoftOffice2013PublisherBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+Microsoft Project 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Project 2013 settings.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+- If you enable this policy setting, certain user settings of Microsoft Project 2013 will continue to be backed up.
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013sharepointdesigner"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013SharePointDesigner**  
+- If you disable this policy setting, certain user settings of Microsoft Project 2013 won't be backed up.
 
-<!--SupportedSKUs-->
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013ProjectBackup-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2013ProjectBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013ProjectBackup-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013ProjectBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013ProjectBackup-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013ProjectBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft SharePoint Designer 2013. By default, the user settings of Microsoft SharePoint Designer 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft SharePoint Designer 2013 from synchronization between computers.
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013ProjectBackup |
+| Friendly Name | Project 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013ProjectBackup-AdmxBacked-End -->
 
-If you enable this policy setting, Microsoft SharePoint Designer 2013 user settings continue to synchronize.
+<!-- MicrosoftOffice2013ProjectBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013ProjectBackup-Examples-End -->
 
-If you disable this policy setting, Microsoft SharePoint Designer 2013 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2013ProjectBackup-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Publisher-Begin -->
+## MicrosoftOffice2013Publisher
 
-<!--/Description-->
+<!-- MicrosoftOffice2013Publisher-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013Publisher-Applicability-End -->
 
+<!-- MicrosoftOffice2013Publisher-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Publisher
+```
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft SharePoint Designer 2013*
--   GP name: *MicrosoftOffice2013SharePointDesigner*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Publisher
+```
+<!-- MicrosoftOffice2013Publisher-OmaUri-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-<!--Policy-->
+<!-- MicrosoftOffice2013Publisher-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Publisher 2013.
 
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013sharepointdesignerbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013SharePointDesignerBackup**
+By default, the user settings of Microsoft Publisher 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Publisher 2013 from synchronization between computers.
 
-<!--SupportedSKUs-->
+- If you enable this policy setting, Microsoft Publisher 2013 user settings continue to synchronize.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you disable this policy setting, Microsoft Publisher 2013 user settings are excluded from the synchronization settings.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Publisher-Description-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013Publisher-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Publisher-Editable-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013Publisher-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013Publisher-DFProperties-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the backup of certain user settings for Microsoft SharePoint Designer 2013. Microsoft SharePoint Designer 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft SharePoint Designer 2013 settings.
+<!-- MicrosoftOffice2013Publisher-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-If you enable this policy setting, certain user settings of Microsoft SharePoint Designer 2013 will continue to be backed up.
+**ADMX mapping**:
 
-If you disable this policy setting, certain user settings of Microsoft SharePoint Designer 2013 will not be backed up.
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013Publisher |
+| Friendly Name | Microsoft Publisher 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013Publisher-AdmxBacked-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Publisher-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Publisher-Examples-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2013Publisher-End -->
 
+<!-- MicrosoftOffice2013PublisherBackup-Begin -->
+## MicrosoftOffice2013PublisherBackup
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *SharePoint Designer 2013 backup only*
--   GP name: *MicrosoftOffice2013SharePointDesignerBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2013PublisherBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013PublisherBackup-Applicability-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-<!--Policy-->
+<!-- MicrosoftOffice2013PublisherBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013PublisherBackup
+```
 
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013uploadcenter"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013UploadCenter**
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013PublisherBackup
+```
+<!-- MicrosoftOffice2013PublisherBackup-OmaUri-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2013PublisherBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Publisher 2013.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+Microsoft Publisher 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Publisher 2013 settings.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you enable this policy setting, certain user settings of Microsoft Publisher 2013 will continue to be backed up.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you disable this policy setting, certain user settings of Microsoft Publisher 2013 won't be backed up.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013PublisherBackup-Description-End -->
 
-<hr/>
+<!-- MicrosoftOffice2013PublisherBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013PublisherBackup-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 2013 Upload Center. By default, the user settings of Microsoft Office 2013 Upload Center synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Office 2013 Upload Center from synchronization between computers.
+<!-- MicrosoftOffice2013PublisherBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-If you enable this policy setting, Microsoft Office 2013 Upload Center user settings continue to synchronize.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013PublisherBackup-DFProperties-End -->
 
-If you disable this policy setting, Microsoft Office 2013 Upload Center user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2013PublisherBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-If you do not configure this policy setting, any defined values will be deleted.
+**ADMX mapping**:
 
-<!--/Description-->
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013PublisherBackup |
+| Friendly Name | Publisher 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013PublisherBackup-AdmxBacked-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 2013 Upload Center*
--   GP name: *MicrosoftOffice2013UploadCenter*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2013PublisherBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013PublisherBackup-Examples-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2013PublisherBackup-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013visio"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013Visio**  
+<!-- MicrosoftOffice2013SharePointDesigner-Begin -->
+## MicrosoftOffice2013SharePointDesigner
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2013SharePointDesigner-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013SharePointDesigner-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2013SharePointDesigner-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013SharePointDesigner
+```
 
-<!--/SupportedSKUs-->
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013SharePointDesigner
+```
+<!-- MicrosoftOffice2013SharePointDesigner-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013SharePointDesigner-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft SharePoint Designer 2013.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+By default, the user settings of Microsoft SharePoint Designer 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft SharePoint Designer 2013 from synchronization between computers.
 
-<hr/>
+- If you enable this policy setting, Microsoft SharePoint Designer 2013 user settings continue to synchronize.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Visio 2013. By default, the user settings of Microsoft Visio 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Visio 2013 from synchronization between computers.
+- If you disable this policy setting, Microsoft SharePoint Designer 2013 user settings are excluded from the synchronization settings.
 
-If you enable this policy setting, Microsoft Visio 2013 user settings continue to synchronize.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013SharePointDesigner-Description-End -->
 
-If you disable this policy setting, Microsoft Visio 2013 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2013SharePointDesigner-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013SharePointDesigner-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013SharePointDesigner-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013SharePointDesigner-DFProperties-End -->
 
+<!-- MicrosoftOffice2013SharePointDesigner-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Visio 2013*
--   GP name: *MicrosoftOffice2013Visio*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013SharePointDesigner |
+| Friendly Name | Microsoft SharePoint Designer 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013SharePointDesigner-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013visiobackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013VisioBackup**  
+<!-- MicrosoftOffice2013SharePointDesigner-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013SharePointDesigner-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2013SharePointDesigner-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2013SharePointDesignerBackup-Begin -->
+## MicrosoftOffice2013SharePointDesignerBackup
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013SharePointDesignerBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013SharePointDesignerBackup-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013SharePointDesignerBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013SharePointDesignerBackup
+```
 
-> [!div class = "checklist"]
-> * Device
-> * User
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013SharePointDesignerBackup
+```
+<!-- MicrosoftOffice2013SharePointDesignerBackup-OmaUri-End -->
 
-<hr/>
+<!-- MicrosoftOffice2013SharePointDesignerBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft SharePoint Designer 2013.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the backup of certain user settings for Microsoft Visio 2013. Microsoft Visio 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Visio 2013 settings.
+Microsoft SharePoint Designer 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft SharePoint Designer 2013 settings.
 
-If you enable this policy setting, certain user settings of Microsoft Visio 2013 will continue to be backed up.
+- If you enable this policy setting, certain user settings of Microsoft SharePoint Designer 2013 will continue to be backed up.
 
-If you disable this policy setting, certain user settings of Microsoft Visio 2013 will not be backed up.
+- If you disable this policy setting, certain user settings of Microsoft SharePoint Designer 2013 won't be backed up.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013SharePointDesignerBackup-Description-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2013SharePointDesignerBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013SharePointDesignerBackup-Editable-End -->
 
+<!-- MicrosoftOffice2013SharePointDesignerBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Visio 2013 backup only*
--   GP name: *MicrosoftOffice2013VisioBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013SharePointDesignerBackup-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2013SharePointDesignerBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013word"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013Word**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013SharePointDesignerBackup |
+| Friendly Name | SharePoint Designer 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013SharePointDesignerBackup-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2013SharePointDesignerBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013SharePointDesignerBackup-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013SharePointDesignerBackup-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013UploadCenter-Begin -->
+## MicrosoftOffice2013UploadCenter
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013UploadCenter-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013UploadCenter-Applicability-End -->
 
-<hr/>
+<!-- MicrosoftOffice2013UploadCenter-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013UploadCenter
+```
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Word 2013. By default, the user settings of Microsoft Word 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Word 2013 from synchronization between computers.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013UploadCenter
+```
+<!-- MicrosoftOffice2013UploadCenter-OmaUri-End -->
 
-If you enable this policy setting, Microsoft Word 2013 user settings continue to synchronize.
+<!-- MicrosoftOffice2013UploadCenter-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 2013 Upload Center.
 
-If you disable this policy setting, Microsoft Word 2013 user settings are excluded from the synchronization settings.
+By default, the user settings of Microsoft Office 2013 Upload Center synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Office 2013 Upload Center from synchronization between computers.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you enable this policy setting, Microsoft Office 2013 Upload Center user settings continue to synchronize.
 
-<!--/Description-->
+- If you disable this policy setting, Microsoft Office 2013 Upload Center user settings are excluded from the synchronization settings.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Word 2013*
--   GP name: *MicrosoftOffice2013Word*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013UploadCenter-Description-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2013UploadCenter-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013UploadCenter-Editable-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013wordbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013WordBackup**  
+<!-- MicrosoftOffice2013UploadCenter-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013UploadCenter-DFProperties-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2013UploadCenter-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/SupportedSKUs-->
-<hr/>
+**ADMX mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013UploadCenter |
+| Friendly Name | Microsoft Office 2013 Upload Center |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013UploadCenter-AdmxBacked-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013UploadCenter-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013UploadCenter-Examples-End -->
 
-<hr/>
+<!-- MicrosoftOffice2013UploadCenter-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the backup of certain user settings for Microsoft Word 2013. Microsoft Word 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Word 2013 settings.
+<!-- MicrosoftOffice2013Visio-Begin -->
+## MicrosoftOffice2013Visio
 
-If you enable this policy setting, certain user settings of Microsoft Word 2013 will continue to be backed up.
+<!-- MicrosoftOffice2013Visio-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013Visio-Applicability-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Word 2013 will not be backed up.
+<!-- MicrosoftOffice2013Visio-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Visio
+```
 
-If you do not configure this policy setting, any defined values will be deleted.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Visio
+```
+<!-- MicrosoftOffice2013Visio-OmaUri-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2013Visio-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Visio 2013.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Word 2013 backup only*
--   GP name: *MicrosoftOffice2013WordBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+By default, the user settings of Microsoft Visio 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Visio 2013 from synchronization between computers.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+- If you enable this policy setting, Microsoft Visio 2013 user settings continue to synchronize.
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016access"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016Access**  
+- If you disable this policy setting, Microsoft Visio 2013 user settings are excluded from the synchronization settings.
 
-<!--SupportedSKUs-->
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Visio-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2013Visio-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Visio-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2013Visio-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013Visio-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013Visio-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Access 2016. By default, the user settings of Microsoft Access 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Access 2016 from synchronization between computers.
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013Visio |
+| Friendly Name | Microsoft Visio 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013Visio-AdmxBacked-End -->
 
-If you enable this policy setting, Microsoft Access 2016 user settings continue to synchronize.
+<!-- MicrosoftOffice2013Visio-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Visio-Examples-End -->
 
-If you disable this policy setting, Microsoft Access 2016 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2013Visio-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013VisioBackup-Begin -->
+## MicrosoftOffice2013VisioBackup
 
-<!--/Description-->
+<!-- MicrosoftOffice2013VisioBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013VisioBackup-Applicability-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Access 2016*
--   GP name: *MicrosoftOffice2016Access*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2013VisioBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013VisioBackup
+```
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013VisioBackup
+```
+<!-- MicrosoftOffice2013VisioBackup-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016accessbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016AccessBackup**  
+<!-- MicrosoftOffice2013VisioBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Visio 2013.
 
-<!--SupportedSKUs-->
+Microsoft Visio 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Visio 2013 settings.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you enable this policy setting, certain user settings of Microsoft Visio 2013 will continue to be backed up.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you disable this policy setting, certain user settings of Microsoft Visio 2013 won't be backed up.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013VisioBackup-Description-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2013VisioBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013VisioBackup-Editable-End -->
 
-<hr/>
+<!-- MicrosoftOffice2013VisioBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the backup of certain user settings for Microsoft Access 2016. Microsoft Access 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Access 2016 settings.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013VisioBackup-DFProperties-End -->
 
-If you enable this policy setting, certain user settings of Microsoft Access 2016 will continue to be backed up.
+<!-- MicrosoftOffice2013VisioBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-If you disable this policy setting, certain user settings of Microsoft Access 2016 will not be backed up.
+**ADMX mapping**:
 
-If you do not configure this policy setting, any defined values will be deleted.
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013VisioBackup |
+| Friendly Name | Visio 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013VisioBackup-AdmxBacked-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2013VisioBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013VisioBackup-Examples-End -->
 
+<!-- MicrosoftOffice2013VisioBackup-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Access 2016 backup only*
--   GP name: *MicrosoftOffice2016AccessBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2013Word-Begin -->
+## MicrosoftOffice2013Word
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2013Word-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013Word-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016common"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016Common**  
+<!-- MicrosoftOffice2013Word-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Word
+```
 
-<!--SupportedSKUs-->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013Word
+```
+<!-- MicrosoftOffice2013Word-OmaUri-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2013Word-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Word 2013.
 
-<!--/SupportedSKUs-->
-<hr/>
+By default, the user settings of Microsoft Word 2013 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Word 2013 from synchronization between computers.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you enable this policy setting, Microsoft Word 2013 user settings continue to synchronize.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+- If you disable this policy setting, Microsoft Word 2013 user settings are excluded from the synchronization settings.
 
-<hr/>
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Word-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2016 applications. By default, the user settings which are common between the Microsoft Office Suite 2016 applications synchronize between computers. Use the policy setting to prevent the user settings which are common between the Microsoft Office Suite 2016 applications from synchronization between computers.
+<!-- MicrosoftOffice2013Word-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Word-Editable-End -->
 
-If you enable this policy setting, the user settings which are common between the Microsoft Office Suite 2016 applications continue to synchronize.
+<!-- MicrosoftOffice2013Word-DFProperties-Begin -->
+**Description framework properties**:
 
-If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2016 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2016 applications are enabled, this policy setting should not be disabled.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013Word-DFProperties-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013Word-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/Description-->
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013Word |
+| Friendly Name | Microsoft Word 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013Word-AdmxBacked-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 2016 Common Settings*
--   GP name: *MicrosoftOffice2016Common*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2013Word-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013Word-Examples-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2013Word-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016commonbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016CommonBackup**  
+<!-- MicrosoftOffice2013WordBackup-Begin -->
+## MicrosoftOffice2013WordBackup
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2013WordBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2013WordBackup-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2013WordBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013WordBackup
+```
 
-<!--/SupportedSKUs-->
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2013WordBackup
+```
+<!-- MicrosoftOffice2013WordBackup-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2013WordBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Word 2013.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+Microsoft Word 2013 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Word 2013 settings.
 
-<hr/>
+- If you enable this policy setting, certain user settings of Microsoft Word 2013 will continue to be backed up.
 
-<!--/Scope-->
-<!--Description-->
+- If you disable this policy setting, certain user settings of Microsoft Word 2013 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2013WordBackup-Description-End -->
+
+<!-- MicrosoftOffice2013WordBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013WordBackup-Editable-End -->
+
+<!-- MicrosoftOffice2013WordBackup-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2013WordBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2013WordBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2013WordBackup |
+| Friendly Name | Word 2013 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2013WordBackup-AdmxBacked-End -->
+
+<!-- MicrosoftOffice2013WordBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2013WordBackup-Examples-End -->
+
+<!-- MicrosoftOffice2013WordBackup-End -->
+
+<!-- MicrosoftOffice2016Access-Begin -->
+## MicrosoftOffice2016Access
+
+<!-- MicrosoftOffice2016Access-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016Access-Applicability-End -->
+
+<!-- MicrosoftOffice2016Access-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Access
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Access
+```
+<!-- MicrosoftOffice2016Access-OmaUri-End -->
+
+<!-- MicrosoftOffice2016Access-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Access 2016.
+
+By default, the user settings of Microsoft Access 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Access 2016 from synchronization between computers.
+
+- If you enable this policy setting, Microsoft Access 2016 user settings continue to synchronize.
+
+- If you disable this policy setting, Microsoft Access 2016 user settings are excluded from the synchronization settings.
+
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Access-Description-End -->
+
+<!-- MicrosoftOffice2016Access-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Access-Editable-End -->
+
+<!-- MicrosoftOffice2016Access-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016Access-DFProperties-End -->
+
+<!-- MicrosoftOffice2016Access-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016Access |
+| Friendly Name | Microsoft Access 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016Access-AdmxBacked-End -->
+
+<!-- MicrosoftOffice2016Access-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Access-Examples-End -->
+
+<!-- MicrosoftOffice2016Access-End -->
+
+<!-- MicrosoftOffice2016AccessBackup-Begin -->
+## MicrosoftOffice2016AccessBackup
+
+<!-- MicrosoftOffice2016AccessBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016AccessBackup-Applicability-End -->
+
+<!-- MicrosoftOffice2016AccessBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016AccessBackup
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016AccessBackup
+```
+<!-- MicrosoftOffice2016AccessBackup-OmaUri-End -->
+
+<!-- MicrosoftOffice2016AccessBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Access 2016.
+
+Microsoft Access 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Access 2016 settings.
+
+- If you enable this policy setting, certain user settings of Microsoft Access 2016 will continue to be backed up.
+
+- If you disable this policy setting, certain user settings of Microsoft Access 2016 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016AccessBackup-Description-End -->
+
+<!-- MicrosoftOffice2016AccessBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016AccessBackup-Editable-End -->
+
+<!-- MicrosoftOffice2016AccessBackup-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016AccessBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2016AccessBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016AccessBackup |
+| Friendly Name | Access 2016 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016AccessBackup-AdmxBacked-End -->
+
+<!-- MicrosoftOffice2016AccessBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016AccessBackup-Examples-End -->
+
+<!-- MicrosoftOffice2016AccessBackup-End -->
+
+<!-- MicrosoftOffice2016Common-Begin -->
+## MicrosoftOffice2016Common
+
+<!-- MicrosoftOffice2016Common-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016Common-Applicability-End -->
+
+<!-- MicrosoftOffice2016Common-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Common
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Common
+```
+<!-- MicrosoftOffice2016Common-OmaUri-End -->
+
+<!-- MicrosoftOffice2016Common-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2016 applications.
+
+By default, the user settings which are common between the Microsoft Office Suite 2016 applications synchronize between computers. Use the policy setting to prevent the user settings which are common between the Microsoft Office Suite 2016 applications from synchronization between computers.
+
+- If you enable this policy setting, the user settings which are common between the Microsoft Office Suite 2016 applications continue to synchronize.
+
+- If you disable this policy setting, the user settings which are common between the Microsoft Office Suite 2016 applications are excluded from the synchronization settings. If any of the Microsoft Office Suite 2016 applications are enabled, this policy setting shouldn't be disabled.
+
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Common-Description-End -->
+
+<!-- MicrosoftOffice2016Common-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Common-Editable-End -->
+
+<!-- MicrosoftOffice2016Common-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016Common-DFProperties-End -->
+
+<!-- MicrosoftOffice2016Common-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016Common |
+| Friendly Name | Microsoft Office 2016 Common Settings |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016Common-AdmxBacked-End -->
+
+<!-- MicrosoftOffice2016Common-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Common-Examples-End -->
+
+<!-- MicrosoftOffice2016Common-End -->
+
+<!-- MicrosoftOffice2016CommonBackup-Begin -->
+## MicrosoftOffice2016CommonBackup
+
+<!-- MicrosoftOffice2016CommonBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016CommonBackup-Applicability-End -->
+
+<!-- MicrosoftOffice2016CommonBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016CommonBackup
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016CommonBackup
+```
+<!-- MicrosoftOffice2016CommonBackup-OmaUri-End -->
+
+<!-- MicrosoftOffice2016CommonBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures the backup of certain user settings which are common between the Microsoft Office Suite 2016 applications.
+
 Microsoft Office Suite 2016 has user settings which are common between applications and are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific common Microsoft Office Suite 2016 applications.
 
-If you enable this policy setting, certain user settings which are common between the Microsoft Office Suite 2016 applications will continue to be backed up.
+- If you enable this policy setting, certain user settings which are common between the Microsoft Office Suite 2016 applications will continue to be backed up.
 
-If you disable this policy setting, certain user settings which are common between the Microsoft Office Suite 2016 applications will not be backed up. 
+- If you disable this policy setting, certain user settings which are common between the Microsoft Office Suite 2016 applications won't be backed up.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016CommonBackup-Description-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2016CommonBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016CommonBackup-Editable-End -->
 
+<!-- MicrosoftOffice2016CommonBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Common 2016 backup only*
--   GP name: *MicrosoftOffice2016CommonBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016CommonBackup-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2016CommonBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016excel"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016Excel**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016CommonBackup |
+| Friendly Name | Common 2016 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016CommonBackup-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2016CommonBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016CommonBackup-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016CommonBackup-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016Excel-Begin -->
+## MicrosoftOffice2016Excel
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016Excel-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016Excel-Applicability-End -->
 
-<hr/>
+<!-- MicrosoftOffice2016Excel-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Excel
+```
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Excel 2016. By default, the user settings of Microsoft Excel 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Excel 2016 from synchronization between computers.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Excel
+```
+<!-- MicrosoftOffice2016Excel-OmaUri-End -->
 
-If you enable this policy setting, Microsoft Excel 2016 user settings continue to synchronize.
+<!-- MicrosoftOffice2016Excel-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Excel 2016.
 
-If you disable this policy setting, Microsoft Excel 2016 user settings are excluded from the synchronization settings.
+By default, the user settings of Microsoft Excel 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Excel 2016 from synchronization between computers.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you enable this policy setting, Microsoft Excel 2016 user settings continue to synchronize.
 
-<!--/Description-->
+- If you disable this policy setting, Microsoft Excel 2016 user settings are excluded from the synchronization settings.
 
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Excel-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Excel 2016*
--   GP name: *MicrosoftOffice2016Excel*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2016Excel-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Excel-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2016Excel-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016excelbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016ExcelBackup**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016Excel-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2016Excel-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016Excel |
+| Friendly Name | Microsoft Excel 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016Excel-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016Excel-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Excel-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016Excel-End -->
 
-<hr/>
+<!-- MicrosoftOffice2016ExcelBackup-Begin -->
+## MicrosoftOffice2016ExcelBackup
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the backup of certain user settings for Microsoft Excel 2016. Microsoft Excel 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Excel 2016 settings.
+<!-- MicrosoftOffice2016ExcelBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016ExcelBackup-Applicability-End -->
 
-If you enable this policy setting, certain user settings of Microsoft Excel 2016 will continue to be backed up.
+<!-- MicrosoftOffice2016ExcelBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016ExcelBackup
+```
 
-If you disable this policy setting, certain user settings of Microsoft Excel 2016 will not be backed up.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016ExcelBackup
+```
+<!-- MicrosoftOffice2016ExcelBackup-OmaUri-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016ExcelBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Excel 2016.
 
-<!--/Description-->
+Microsoft Excel 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Excel 2016 settings.
 
+- If you enable this policy setting, certain user settings of Microsoft Excel 2016 will continue to be backed up.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Excel 2016 backup only*
--   GP name: *MicrosoftOffice2016ExcelBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you disable this policy setting, certain user settings of Microsoft Excel 2016 won't be backed up.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016ExcelBackup-Description-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016lync"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016Lync**  
+<!-- MicrosoftOffice2016ExcelBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016ExcelBackup-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2016ExcelBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016ExcelBackup-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016ExcelBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+**ADMX mapping**:
 
-> [!div class = "checklist"]
-> * Device
-> * User
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016ExcelBackup |
+| Friendly Name | Excel 2016 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016ExcelBackup-AdmxBacked-End -->
 
-<hr/>
+<!-- MicrosoftOffice2016ExcelBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016ExcelBackup-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Lync 2016. By default, the user settings of Microsoft Lync 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Lync 2016 from synchronization between computers.
+<!-- MicrosoftOffice2016ExcelBackup-End -->
 
-If you enable this policy setting, Microsoft Lync 2016 user settings continue to synchronize.
+<!-- MicrosoftOffice2016Lync-Begin -->
+## MicrosoftOffice2016Lync
 
-If you disable this policy setting, Microsoft Lync 2016 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2016Lync-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016Lync-Applicability-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Lync-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Lync
+```
 
-<!--/Description-->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Lync
+```
+<!-- MicrosoftOffice2016Lync-OmaUri-End -->
 
+<!-- MicrosoftOffice2016Lync-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Lync 2016.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Lync 2016*
--   GP name: *MicrosoftOffice2016Lync*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+By default, the user settings of Microsoft Lync 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Lync 2016 from synchronization between computers.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+- If you enable this policy setting, Microsoft Lync 2016 user settings continue to synchronize.
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016lyncbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016LyncBackup**  
+- If you disable this policy setting, Microsoft Lync 2016 user settings are excluded from the synchronization settings.
 
-<!--SupportedSKUs-->
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Lync-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2016Lync-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Lync-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016Lync-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016Lync-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016Lync-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the backup of certain user settings for Microsoft Lync 2016. Microsoft Lync 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Lync 2016 settings.
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016Lync |
+| Friendly Name | Microsoft Lync 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016Lync-AdmxBacked-End -->
 
-If you enable this policy setting, certain user settings of Microsoft Lync 2016 will continue to be backed up.
+<!-- MicrosoftOffice2016Lync-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Lync-Examples-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Lync 2016 will not be backed up.
+<!-- MicrosoftOffice2016Lync-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016LyncBackup-Begin -->
+## MicrosoftOffice2016LyncBackup
 
-<!--/Description-->
+<!-- MicrosoftOffice2016LyncBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016LyncBackup-Applicability-End -->
 
+<!-- MicrosoftOffice2016LyncBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016LyncBackup
+```
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Lync 2016 backup only*
--   GP name: *MicrosoftOffice2016LyncBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016LyncBackup
+```
+<!-- MicrosoftOffice2016LyncBackup-OmaUri-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2016LyncBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Lync 2016.
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016onedriveforbusiness"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneDriveForBusiness**  
+Microsoft Lync 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Lync 2016 settings.
 
-<!--SupportedSKUs-->
+- If you enable this policy setting, certain user settings of Microsoft Lync 2016 will continue to be backed up.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you disable this policy setting, certain user settings of Microsoft Lync 2016 won't be backed up.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016LyncBackup-Description-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016LyncBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016LyncBackup-Editable-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016LyncBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016LyncBackup-DFProperties-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for OneDrive for Business 2016. By default, the user settings of OneDrive for Business 2016 synchronize between computers. Use the policy setting to prevent the user settings of OneDrive for Business 2016 from synchronization between computers.
+<!-- MicrosoftOffice2016LyncBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-If you enable this policy setting, OneDrive for Business 2016 user settings continue to synchronize.
+**ADMX mapping**:
 
-If you disable this policy setting, OneDrive for Business 2016 user settings are excluded from the synchronization settings.
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016LyncBackup |
+| Friendly Name | Lync 2016 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016LyncBackup-AdmxBacked-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016LyncBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016LyncBackup-Examples-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2016LyncBackup-End -->
 
+<!-- MicrosoftOffice2016OneDriveForBusiness-Begin -->
+## MicrosoftOffice2016OneDriveForBusiness
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft OneDrive for Business 2016*
--   GP name: *MicrosoftOffice2016OneDriveForBusiness*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2016OneDriveForBusiness-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016OneDriveForBusiness-Applicability-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2016OneDriveForBusiness-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneDriveForBusiness
+```
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016onenote"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneNote**  
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneDriveForBusiness
+```
+<!-- MicrosoftOffice2016OneDriveForBusiness-OmaUri-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2016OneDriveForBusiness-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for OneDrive for Business 2016.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+By default, the user settings of OneDrive for Business 2016 synchronize between computers. Use the policy setting to prevent the user settings of OneDrive for Business 2016 from synchronization between computers.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you enable this policy setting, OneDrive for Business 2016 user settings continue to synchronize.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you disable this policy setting, OneDrive for Business 2016 user settings are excluded from the synchronization settings.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016OneDriveForBusiness-Description-End -->
 
-<hr/>
+<!-- MicrosoftOffice2016OneDriveForBusiness-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016OneDriveForBusiness-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft OneNote 2016. By default, the user settings of Microsoft OneNote 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft OneNote 2016 from synchronization between computers.
+<!-- MicrosoftOffice2016OneDriveForBusiness-DFProperties-Begin -->
+**Description framework properties**:
 
-If you enable this policy setting, Microsoft OneNote 2016 user settings continue to synchronize.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016OneDriveForBusiness-DFProperties-End -->
 
-If you disable this policy setting, Microsoft OneNote 2016 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2016OneDriveForBusiness-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-If you do not configure this policy setting, any defined values will be deleted.
+**ADMX mapping**:
 
-<!--/Description-->
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016OneDriveForBusiness |
+| Friendly Name | Microsoft OneDrive for Business 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016OneDriveForBusiness-AdmxBacked-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft OneNote 2016*
--   GP name: *MicrosoftOffice2016OneNote*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2016OneDriveForBusiness-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016OneDriveForBusiness-Examples-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2016OneDriveForBusiness-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016onenotebackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneNoteBackup**  
+<!-- MicrosoftOffice2016OneNote-Begin -->
+## MicrosoftOffice2016OneNote
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2016OneNote-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016OneNote-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2016OneNote-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneNote
+```
 
-<!--/SupportedSKUs-->
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneNote
+```
+<!-- MicrosoftOffice2016OneNote-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016OneNote-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft OneNote 2016.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+By default, the user settings of Microsoft OneNote 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft OneNote 2016 from synchronization between computers.
 
-<hr/>
+- If you enable this policy setting, Microsoft OneNote 2016 user settings continue to synchronize.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the backup of certain user settings for Microsoft OneNote 2016. Microsoft OneNote 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft OneNote 2016 settings.
+- If you disable this policy setting, Microsoft OneNote 2016 user settings are excluded from the synchronization settings.
 
-If you enable this policy setting, certain user settings of Microsoft OneNote 2016 will continue to be backed up.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016OneNote-Description-End -->
 
-If you disable this policy setting, certain user settings of Microsoft OneNote 2016 will not be backed up.
+<!-- MicrosoftOffice2016OneNote-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016OneNote-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016OneNote-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016OneNote-DFProperties-End -->
 
+<!-- MicrosoftOffice2016OneNote-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *OneNote 2016 backup only*
--   GP name: *MicrosoftOffice2016OneNoteBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016OneNote |
+| Friendly Name | Microsoft OneNote 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016OneNote-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016outlook"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016Outlook**  
+<!-- MicrosoftOffice2016OneNote-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016OneNote-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2016OneNote-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2016OneNoteBackup-Begin -->
+## MicrosoftOffice2016OneNoteBackup
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016OneNoteBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016OneNoteBackup-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016OneNoteBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneNoteBackup
+```
 
-> [!div class = "checklist"]
-> * Device
-> * User
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016OneNoteBackup
+```
+<!-- MicrosoftOffice2016OneNoteBackup-OmaUri-End -->
 
-<hr/>
+<!-- MicrosoftOffice2016OneNoteBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft OneNote 2016.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Outlook 2016. By default, the user settings of Microsoft Outlook 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Outlook 2016 from synchronization between computers.
+Microsoft OneNote 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft OneNote 2016 settings.
 
-If you enable this policy setting, Microsoft Outlook 2016 user settings continue to synchronize.
+- If you enable this policy setting, certain user settings of Microsoft OneNote 2016 will continue to be backed up.
 
-If you disable this policy setting, Microsoft Outlook 2016 user settings are excluded from the synchronization settings.
+- If you disable this policy setting, certain user settings of Microsoft OneNote 2016 won't be backed up.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016OneNoteBackup-Description-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2016OneNoteBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016OneNoteBackup-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Outlook 2016*
--   GP name: *MicrosoftOffice2016Outlook*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2016OneNoteBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016OneNoteBackup-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016outlookbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016OutlookBackup**  
+<!-- MicrosoftOffice2016OneNoteBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016OneNoteBackup |
+| Friendly Name | OneNote 2016 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016OneNoteBackup-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016OneNoteBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016OneNoteBackup-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016OneNoteBackup-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016Outlook-Begin -->
+## MicrosoftOffice2016Outlook
 
-<hr/>
+<!-- MicrosoftOffice2016Outlook-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016Outlook-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the backup of certain user settings for Microsoft Outlook 2016. Microsoft Outlook 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Outlook 2016 settings.
+<!-- MicrosoftOffice2016Outlook-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Outlook
+```
 
-If you enable this policy setting, certain user settings of Microsoft Outlook 2016 will continue to be backed up.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Outlook
+```
+<!-- MicrosoftOffice2016Outlook-OmaUri-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Outlook 2016 will not be backed up.
+<!-- MicrosoftOffice2016Outlook-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Outlook 2016.
 
-If you do not configure this policy setting, any defined values will be deleted.
+By default, the user settings of Microsoft Outlook 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Outlook 2016 from synchronization between computers.
 
-<!--/Description-->
+- If you enable this policy setting, Microsoft Outlook 2016 user settings continue to synchronize.
 
+- If you disable this policy setting, Microsoft Outlook 2016 user settings are excluded from the synchronization settings.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Outlook 2016 backup only*
--   GP name: *MicrosoftOffice2016OutlookBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Outlook-Description-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2016Outlook-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Outlook-Editable-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016powerpoint"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016PowerPoint**  
+<!-- MicrosoftOffice2016Outlook-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016Outlook-DFProperties-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2016Outlook-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/SupportedSKUs-->
-<hr/>
+**ADMX mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016Outlook |
+| Friendly Name | Microsoft Outlook 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016Outlook-AdmxBacked-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016Outlook-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Outlook-Examples-End -->
 
-<hr/>
+<!-- MicrosoftOffice2016Outlook-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft PowerPoint 2016. By default, the user settings of Microsoft PowerPoint 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft PowerPoint 2016 from synchronization between computers.
+<!-- MicrosoftOffice2016OutlookBackup-Begin -->
+## MicrosoftOffice2016OutlookBackup
 
-If you enable this policy setting, Microsoft PowerPoint 2016 user settings continue to synchronize.
+<!-- MicrosoftOffice2016OutlookBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016OutlookBackup-Applicability-End -->
 
-If you disable this policy setting, Microsoft PowerPoint 2016 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2016OutlookBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016OutlookBackup
+```
 
-If you do not configure this policy setting, any defined values will be deleted.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016OutlookBackup
+```
+<!-- MicrosoftOffice2016OutlookBackup-OmaUri-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2016OutlookBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Outlook 2016.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft PowerPoint 2016*
--   GP name: *MicrosoftOffice2016PowerPoint*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+Microsoft Outlook 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Outlook 2016 settings.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+- If you enable this policy setting, certain user settings of Microsoft Outlook 2016 will continue to be backed up.
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016powerpointbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016PowerPointBackup**  
+- If you disable this policy setting, certain user settings of Microsoft Outlook 2016 won't be backed up.
 
-<!--SupportedSKUs-->
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016OutlookBackup-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2016OutlookBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016OutlookBackup-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016OutlookBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016OutlookBackup-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016OutlookBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the backup of certain user settings for Microsoft PowerPoint 2016. Microsoft PowerPoint 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft PowerPoint 2016 settings.
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016OutlookBackup |
+| Friendly Name | Outlook 2016 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016OutlookBackup-AdmxBacked-End -->
 
-If you enable this policy setting, certain user settings of Microsoft PowerPoint 2016 will continue to be backed up.
+<!-- MicrosoftOffice2016OutlookBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016OutlookBackup-Examples-End -->
 
-If you disable this policy setting, certain user settings of Microsoft PowerPoint 2016 will not be backed up.
+<!-- MicrosoftOffice2016OutlookBackup-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016PowerPoint-Begin -->
+## MicrosoftOffice2016PowerPoint
 
-<!--/Description-->
+<!-- MicrosoftOffice2016PowerPoint-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016PowerPoint-Applicability-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *PowerPoint 2016 backup only*
--   GP name: *MicrosoftOffice2016PowerPointBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2016PowerPoint-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016PowerPoint
+```
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016PowerPoint
+```
+<!-- MicrosoftOffice2016PowerPoint-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016project"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016Project**  
+<!-- MicrosoftOffice2016PowerPoint-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft PowerPoint 2016.
 
-<!--SupportedSKUs-->
+By default, the user settings of Microsoft PowerPoint 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft PowerPoint 2016 from synchronization between computers.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you enable this policy setting, Microsoft PowerPoint 2016 user settings continue to synchronize.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you disable this policy setting, Microsoft PowerPoint 2016 user settings are excluded from the synchronization settings.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016PowerPoint-Description-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016PowerPoint-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016PowerPoint-Editable-End -->
 
-<hr/>
+<!-- MicrosoftOffice2016PowerPoint-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Scope-->
-<!--Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016PowerPoint-DFProperties-End -->
+
+<!-- MicrosoftOffice2016PowerPoint-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016PowerPoint |
+| Friendly Name | Microsoft PowerPoint 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016PowerPoint-AdmxBacked-End -->
+
+<!-- MicrosoftOffice2016PowerPoint-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016PowerPoint-Examples-End -->
+
+<!-- MicrosoftOffice2016PowerPoint-End -->
+
+<!-- MicrosoftOffice2016PowerPointBackup-Begin -->
+## MicrosoftOffice2016PowerPointBackup
+
+<!-- MicrosoftOffice2016PowerPointBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016PowerPointBackup-Applicability-End -->
+
+<!-- MicrosoftOffice2016PowerPointBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016PowerPointBackup
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016PowerPointBackup
+```
+<!-- MicrosoftOffice2016PowerPointBackup-OmaUri-End -->
+
+<!-- MicrosoftOffice2016PowerPointBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft PowerPoint 2016.
+
+Microsoft PowerPoint 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft PowerPoint 2016 settings.
+
+- If you enable this policy setting, certain user settings of Microsoft PowerPoint 2016 will continue to be backed up.
+
+- If you disable this policy setting, certain user settings of Microsoft PowerPoint 2016 won't be backed up.
+
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016PowerPointBackup-Description-End -->
+
+<!-- MicrosoftOffice2016PowerPointBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016PowerPointBackup-Editable-End -->
+
+<!-- MicrosoftOffice2016PowerPointBackup-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016PowerPointBackup-DFProperties-End -->
+
+<!-- MicrosoftOffice2016PowerPointBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016PowerPointBackup |
+| Friendly Name | PowerPoint 2016 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016PowerPointBackup-AdmxBacked-End -->
+
+<!-- MicrosoftOffice2016PowerPointBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016PowerPointBackup-Examples-End -->
+
+<!-- MicrosoftOffice2016PowerPointBackup-End -->
+
+<!-- MicrosoftOffice2016Project-Begin -->
+## MicrosoftOffice2016Project
+
+<!-- MicrosoftOffice2016Project-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016Project-Applicability-End -->
+
+<!-- MicrosoftOffice2016Project-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Project
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Project
+```
+<!-- MicrosoftOffice2016Project-OmaUri-End -->
+
+<!-- MicrosoftOffice2016Project-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures the synchronization of user settings for Microsoft Project 2016.
+
 By default, the user settings of Microsoft Project 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Project 2016 from synchronization between computers.
 
-If you enable this policy setting, Microsoft Project 2016 user settings continue to synchronize.
+- If you enable this policy setting, Microsoft Project 2016 user settings continue to synchronize.
 
-If you disable this policy setting, Microsoft Project 2016 user settings are excluded from the synchronization settings.
+- If you disable this policy setting, Microsoft Project 2016 user settings are excluded from the synchronization settings.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Project-Description-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2016Project-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Project-Editable-End -->
 
+<!-- MicrosoftOffice2016Project-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Project 2016*
--   GP name: *MicrosoftOffice2016Project*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016Project-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2016Project-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016projectbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016ProjectBackup**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016Project |
+| Friendly Name | Microsoft Project 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016Project-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2016Project-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Project-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016Project-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016ProjectBackup-Begin -->
+## MicrosoftOffice2016ProjectBackup
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016ProjectBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016ProjectBackup-Applicability-End -->
 
-<hr/>
+<!-- MicrosoftOffice2016ProjectBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016ProjectBackup
+```
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the backup of certain user settings for Microsoft Project 2016. Microsoft Project 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Project 2016 settings.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016ProjectBackup
+```
+<!-- MicrosoftOffice2016ProjectBackup-OmaUri-End -->
 
-If you enable this policy setting, certain user settings of Microsoft Project 2016 will continue to be backed up.
+<!-- MicrosoftOffice2016ProjectBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Project 2016.
 
-If you disable this policy setting, certain user settings of Microsoft Project 2016 will not be backed up.
+Microsoft Project 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Project 2016 settings.
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+- If you enable this policy setting, certain user settings of Microsoft Project 2016 will continue to be backed up.
 
+- If you disable this policy setting, certain user settings of Microsoft Project 2016 won't be backed up.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Project 2016 backup only*
--   GP name: *MicrosoftOffice2016ProjectBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016ProjectBackup-Description-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2016ProjectBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016ProjectBackup-Editable-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016publisher"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016Publisher**  
+<!-- MicrosoftOffice2016ProjectBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016ProjectBackup-DFProperties-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2016ProjectBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/SupportedSKUs-->
-<hr/>
+**ADMX mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016ProjectBackup |
+| Friendly Name | Project 2016 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016ProjectBackup-AdmxBacked-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016ProjectBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016ProjectBackup-Examples-End -->
 
-<hr/>
+<!-- MicrosoftOffice2016ProjectBackup-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Publisher 2016. By default, the user settings of Microsoft Publisher 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Publisher 2016 from synchronization between computers.
+<!-- MicrosoftOffice2016Publisher-Begin -->
+## MicrosoftOffice2016Publisher
 
-If you enable this policy setting, Microsoft Publisher 2016 user settings continue to synchronize.
+<!-- MicrosoftOffice2016Publisher-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016Publisher-Applicability-End -->
 
-If you disable this policy setting, Microsoft Publisher 2016 user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2016Publisher-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Publisher
+```
 
-If you do not configure this policy setting, any defined values will be deleted.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Publisher
+```
+<!-- MicrosoftOffice2016Publisher-OmaUri-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2016Publisher-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Publisher 2016.
 
+By default, the user settings of Microsoft Publisher 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Publisher 2016 from synchronization between computers.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Publisher 2016*
--   GP name: *MicrosoftOffice2016Publisher*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you enable this policy setting, Microsoft Publisher 2016 user settings continue to synchronize.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+- If you disable this policy setting, Microsoft Publisher 2016 user settings are excluded from the synchronization settings.
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016publisherbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016PublisherBackup**  
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Publisher-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2016Publisher-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Publisher-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2016Publisher-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016Publisher-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016Publisher-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-> [!div class = "checklist"]
-> * Device
-> * User
+**ADMX mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016Publisher |
+| Friendly Name | Microsoft Publisher 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016Publisher-AdmxBacked-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the backup of certain user settings for Microsoft Publisher 2016. Microsoft Publisher 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Publisher 2016 settings.
+<!-- MicrosoftOffice2016Publisher-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Publisher-Examples-End -->
 
-If you enable this policy setting, certain user settings of Microsoft Publisher 2016 will continue to be backed up.
+<!-- MicrosoftOffice2016Publisher-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Publisher 2016 will not be backed up.
+<!-- MicrosoftOffice2016PublisherBackup-Begin -->
+## MicrosoftOffice2016PublisherBackup
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016PublisherBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016PublisherBackup-Applicability-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2016PublisherBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016PublisherBackup
+```
 
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016PublisherBackup
+```
+<!-- MicrosoftOffice2016PublisherBackup-OmaUri-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Publisher 2016 backup only*
--   GP name: *MicrosoftOffice2016PublisherBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2016PublisherBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Publisher 2016.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-<!--Policy-->
+Microsoft Publisher 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Publisher 2016 settings.
 
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016uploadcenter"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016UploadCenter**
+- If you enable this policy setting, certain user settings of Microsoft Publisher 2016 will continue to be backed up.
 
-<!--SupportedSKUs-->
+- If you disable this policy setting, certain user settings of Microsoft Publisher 2016 won't be backed up.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016PublisherBackup-Description-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016PublisherBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016PublisherBackup-Editable-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016PublisherBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-> [!div class = "checklist"]
-> * Device
-> * User
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016PublisherBackup-DFProperties-End -->
 
-<hr/>
+<!-- MicrosoftOffice2016PublisherBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 2016 Upload Center. By default, the user settings of Microsoft Office 2016 Upload Center synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Office 2016 Upload Center from synchronization between computers.
+**ADMX mapping**:
 
-If you enable this policy setting, Microsoft Office 2016 Upload Center user settings continue to synchronize.
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016PublisherBackup |
+| Friendly Name | Publisher 2016 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016PublisherBackup-AdmxBacked-End -->
 
-If you disable this policy setting, Microsoft Office 2016 Upload Center user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice2016PublisherBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016PublisherBackup-Examples-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016PublisherBackup-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2016UploadCenter-Begin -->
+## MicrosoftOffice2016UploadCenter
 
+<!-- MicrosoftOffice2016UploadCenter-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016UploadCenter-Applicability-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 2016 Upload Center*
--   GP name: *MicrosoftOffice2016UploadCenter*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2016UploadCenter-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016UploadCenter
+```
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016UploadCenter
+```
+<!-- MicrosoftOffice2016UploadCenter-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016visio"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016Visio**  
+<!-- MicrosoftOffice2016UploadCenter-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 2016 Upload Center.
 
-<!--SupportedSKUs-->
+By default, the user settings of Microsoft Office 2016 Upload Center synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Office 2016 Upload Center from synchronization between computers.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you enable this policy setting, Microsoft Office 2016 Upload Center user settings continue to synchronize.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you disable this policy setting, Microsoft Office 2016 Upload Center user settings are excluded from the synchronization settings.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016UploadCenter-Description-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016UploadCenter-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016UploadCenter-Editable-End -->
 
-<hr/>
+<!-- MicrosoftOffice2016UploadCenter-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Visio 2016. By default, the user settings of Microsoft Visio 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Visio 2016 from synchronization between computers.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016UploadCenter-DFProperties-End -->
 
-If you enable this policy setting, Microsoft Visio 2016 user settings continue to synchronize.
+<!-- MicrosoftOffice2016UploadCenter-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-If you disable this policy setting, Microsoft Visio 2016 user settings are excluded from the synchronization settings.
+**ADMX mapping**:
 
-If you do not configure this policy setting, any defined values will be deleted.
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016UploadCenter |
+| Friendly Name | Microsoft Office 2016 Upload Center |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016UploadCenter-AdmxBacked-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2016UploadCenter-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016UploadCenter-Examples-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Visio 2016*
--   GP name: *MicrosoftOffice2016Visio*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2016UploadCenter-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2016Visio-Begin -->
+## MicrosoftOffice2016Visio
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016visiobackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016VisioBackup**  
+<!-- MicrosoftOffice2016Visio-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016Visio-Applicability-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2016Visio-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Visio
+```
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Visio
+```
+<!-- MicrosoftOffice2016Visio-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016Visio-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Visio 2016.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+By default, the user settings of Microsoft Visio 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Visio 2016 from synchronization between computers.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+- If you enable this policy setting, Microsoft Visio 2016 user settings continue to synchronize.
 
-<hr/>
+- If you disable this policy setting, Microsoft Visio 2016 user settings are excluded from the synchronization settings.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the backup of certain user settings for Microsoft Visio 2016. Microsoft Visio 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Visio 2016 settings.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Visio-Description-End -->
 
-If you enable this policy setting, certain user settings of Microsoft Visio 2016 will continue to be backed up.
+<!-- MicrosoftOffice2016Visio-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Visio-Editable-End -->
 
-If you disable this policy setting, certain user settings of Microsoft Visio 2016 will not be backed up.
+<!-- MicrosoftOffice2016Visio-DFProperties-Begin -->
+**Description framework properties**:
 
-If you do not configure this policy setting, any defined values will be deleted.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016Visio-DFProperties-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2016Visio-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Visio 2016 backup only*
--   GP name: *MicrosoftOffice2016VisioBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016Visio |
+| Friendly Name | Microsoft Visio 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016Visio-AdmxBacked-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2016Visio-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Visio-Examples-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016word"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016Word**  
+<!-- MicrosoftOffice2016Visio-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2016VisioBackup-Begin -->
+## MicrosoftOffice2016VisioBackup
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2016VisioBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016VisioBackup-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016VisioBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016VisioBackup
+```
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016VisioBackup
+```
+<!-- MicrosoftOffice2016VisioBackup-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016VisioBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Visio 2016.
 
-<hr/>
+Microsoft Visio 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Visio 2016 settings.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Word 2016. By default, the user settings of Microsoft Word 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Word 2016 from synchronization between computers.
+- If you enable this policy setting, certain user settings of Microsoft Visio 2016 will continue to be backed up.
 
-If you enable this policy setting, Microsoft Word 2016 user settings continue to synchronize.
+- If you disable this policy setting, certain user settings of Microsoft Visio 2016 won't be backed up.
 
-If you disable this policy setting, Microsoft Word 2016 user settings are excluded from the synchronization settings.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016VisioBackup-Description-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016VisioBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016VisioBackup-Editable-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice2016VisioBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Word 2016*
--   GP name: *MicrosoftOffice2016Word*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016VisioBackup-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2016VisioBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016wordbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016WordBackup**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016VisioBackup |
+| Friendly Name | Visio 2016 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016VisioBackup-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice2016VisioBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016VisioBackup-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016VisioBackup-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016Word-Begin -->
+## MicrosoftOffice2016Word
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016Word-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016Word-Applicability-End -->
 
-<hr/>
+<!-- MicrosoftOffice2016Word-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Word
+```
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the backup of certain user settings for Microsoft Word 2016. Microsoft Word 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Word 2016 settings.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016Word
+```
+<!-- MicrosoftOffice2016Word-OmaUri-End -->
 
-If you enable this policy setting, certain user settings of Microsoft Word 2016 will continue to be backed up.
+<!-- MicrosoftOffice2016Word-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Word 2016.
 
-If you disable this policy setting, certain user settings of Microsoft Word 2016 will not be backed up.
+By default, the user settings of Microsoft Word 2016 synchronize between computers. Use the policy setting to prevent the user settings of Microsoft Word 2016 from synchronization between computers.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you enable this policy setting, Microsoft Word 2016 user settings continue to synchronize.
 
-<!--/Description-->
+- If you disable this policy setting, Microsoft Word 2016 user settings are excluded from the synchronization settings.
 
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016Word-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Word 2016 backup only*
--   GP name: *MicrosoftOffice2016WordBackup*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice2016Word-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Word-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice2016Word-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365access2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Access2013**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016Word-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2016Word-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016Word |
+| Friendly Name | Microsoft Word 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016Word-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice2016Word-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016Word-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice2016Word-End -->
 
-<hr/>
+<!-- MicrosoftOffice2016WordBackup-Begin -->
+## MicrosoftOffice2016WordBackup
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 365 Access 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Access 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Access 2013 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice2016WordBackup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice2016WordBackup-Applicability-End -->
 
-If you enable this policy setting, Microsoft Office 365 Access 2013 user settings continue to sync with UE-V.
+<!-- MicrosoftOffice2016WordBackup-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016WordBackup
+```
 
-If you disable this policy setting, Microsoft Office 365 Access 2013 user settings are excluded from synchronization with UE-V.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice2016WordBackup
+```
+<!-- MicrosoftOffice2016WordBackup-OmaUri-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016WordBackup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the backup of certain user settings for Microsoft Word 2016.
 
-<!--/Description-->
+Microsoft Word 2016 has user settings that are backed up instead of synchronizing between computers. Use the policy setting to suppress the backup of specific Microsoft Word 2016 settings.
 
+- If you enable this policy setting, certain user settings of Microsoft Word 2016 will continue to be backed up.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 Access 2013*
--   GP name: *MicrosoftOffice365Access2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you disable this policy setting, certain user settings of Microsoft Word 2016 won't be backed up.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice2016WordBackup-Description-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365access2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Access2016**  
+<!-- MicrosoftOffice2016WordBackup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016WordBackup-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice2016WordBackup-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice2016WordBackup-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice2016WordBackup-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+**ADMX mapping**:
 
-> [!div class = "checklist"]
-> * Device
-> * User
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice2016WordBackup |
+| Friendly Name | Word 2016 backup only |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice2016WordBackup-AdmxBacked-End -->
 
-<hr/>
+<!-- MicrosoftOffice2016WordBackup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice2016WordBackup-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 365 Access 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Access 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Access 2016 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice2016WordBackup-End -->
 
-If you enable this policy setting, Microsoft Office 365 Access 2016 user settings continue to sync with UE-V.
+<!-- MicrosoftOffice365Access2013-Begin -->
+## MicrosoftOffice365Access2013
 
-If you disable this policy setting, Microsoft Office 365 Access 2016 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Access2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Access2013-Applicability-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Access2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Access2013
+```
 
-<!--/Description-->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Access2013
+```
+<!-- MicrosoftOffice365Access2013-OmaUri-End -->
 
+<!-- MicrosoftOffice365Access2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Access 2013.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 Access 2016*
--   GP name: *MicrosoftOffice365Access2016*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Access 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Access 2013 from synchronization between computers with UE-V.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+- If you enable this policy setting, Microsoft Office 365 Access 2013 user settings continue to sync with UE-V.
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365common2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Common2013**  
+- If you disable this policy setting, Microsoft Office 365 Access 2013 user settings are excluded from synchronization with UE-V.
 
-<!--SupportedSKUs-->
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Access2013-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice365Access2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Access2013-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Access2013-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Access2013-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Access2013-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2013 applications. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings which are common between the Microsoft Office Suite 2013 applications will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings which are common between the Microsoft Office Suite 2013 applications from synchronization between computers with UE-V.
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Access2013 |
+| Friendly Name | Microsoft Office 365 Access 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Access2013-AdmxBacked-End -->
 
-If you enable this policy setting, user settings which are common between the Microsoft Office Suite 2013 applications continue to synchronize with UE-V.
+<!-- MicrosoftOffice365Access2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Access2013-Examples-End -->
 
-If you disable this policy setting, user settings which are common between the Microsoft Office Suite 2013 applications are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Access2013-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Access2016-Begin -->
+## MicrosoftOffice365Access2016
 
-<!--/Description-->
+<!-- MicrosoftOffice365Access2016-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Access2016-Applicability-End -->
 
+<!-- MicrosoftOffice365Access2016-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Access2016
+```
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 Common 2013*
--   GP name: *MicrosoftOffice365Common2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Access2016
+```
+<!-- MicrosoftOffice365Access2016-OmaUri-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-<!--Policy-->
+<!-- MicrosoftOffice365Access2016-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Access 2016.
 
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365common2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Common2016**
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Access 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Access 2016 from synchronization between computers with UE-V.
 
-<!--SupportedSKUs-->
+- If you enable this policy setting, Microsoft Office 365 Access 2016 user settings continue to sync with UE-V.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you disable this policy setting, Microsoft Office 365 Access 2016 user settings are excluded from synchronization with UE-V.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Access2016-Description-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Access2016-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Access2016-Editable-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Access2016-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Access2016-DFProperties-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2016 applications. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings which are common between the Microsoft Office Suite 2016 applications will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings which are common between the Microsoft Office Suite 2016 applications from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365Access2016-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-If you enable this policy setting, user settings which are common between the Microsoft Office Suite 2016 applications continue to synchronize with UE-V.
+**ADMX mapping**:
 
-If you disable this policy setting, user settings which are common between the Microsoft Office Suite 2016 applications are excluded from synchronization with UE-V.
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Access2016 |
+| Friendly Name | Microsoft Office 365 Access 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Access2016-AdmxBacked-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Access2016-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Access2016-Examples-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice365Access2016-End -->
 
+<!-- MicrosoftOffice365Common2013-Begin -->
+## MicrosoftOffice365Common2013
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 Common 2016*
--   GP name: *MicrosoftOffice365Common2016*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice365Common2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Common2013-Applicability-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice365Common2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Common2013
+```
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365excel2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Excel2013**  
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Common2013
+```
+<!-- MicrosoftOffice365Common2013-OmaUri-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice365Common2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2013 applications.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings which are common between the Microsoft Office Suite 2013 applications will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings which are common between the Microsoft Office Suite 2013 applications from synchronization between computers with UE-V.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you enable this policy setting, user settings which are common between the Microsoft Office Suite 2013 applications continue to synchronize with UE-V.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you disable this policy setting, user settings which are common between the Microsoft Office Suite 2013 applications are excluded from synchronization with UE-V.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Common2013-Description-End -->
 
-<hr/>
+<!-- MicrosoftOffice365Common2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Common2013-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 365 Excel 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Excel 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Excel 2013 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365Common2013-DFProperties-Begin -->
+**Description framework properties**:
 
-If you enable this policy setting, Microsoft Office 365 Excel 2013 user settings continue to sync with UE-V.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Common2013-DFProperties-End -->
 
-If you disable this policy setting, Microsoft Office 365 Excel 2013 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Common2013-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-If you do not configure this policy setting, any defined values will be deleted.
+**ADMX mapping**:
 
-<!--/Description-->
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Common2013 |
+| Friendly Name | Microsoft Office 365 Common 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Common2013-AdmxBacked-End -->
 
+<!-- MicrosoftOffice365Common2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Common2013-Examples-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 Excel 2013*
--   GP name: *MicrosoftOffice365Excel2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice365Common2013-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice365Common2016-Begin -->
+## MicrosoftOffice365Common2016
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365excel2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Excel2016**  
+<!-- MicrosoftOffice365Common2016-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Common2016-Applicability-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice365Common2016-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Common2016
+```
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Common2016
+```
+<!-- MicrosoftOffice365Common2016-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Common2016-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings which are common between the Microsoft Office Suite 2016 applications.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings which are common between the Microsoft Office Suite 2016 applications will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings which are common between the Microsoft Office Suite 2016 applications from synchronization between computers with UE-V.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+- If you enable this policy setting, user settings which are common between the Microsoft Office Suite 2016 applications continue to synchronize with UE-V.
 
-<hr/>
+- If you disable this policy setting, user settings which are common between the Microsoft Office Suite 2016 applications are excluded from synchronization with UE-V.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 365 Excel 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Excel 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Excel 2016 from synchronization between computers with UE-V.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Common2016-Description-End -->
 
-If you enable this policy setting, Microsoft Office 365 Excel 2016 user settings continue to sync with UE-V.
+<!-- MicrosoftOffice365Common2016-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Common2016-Editable-End -->
 
-If you disable this policy setting, Microsoft Office 365 Excel 2016 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Common2016-DFProperties-Begin -->
+**Description framework properties**:
 
-If you do not configure this policy setting, any defined values will be deleted.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Common2016-DFProperties-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice365Common2016-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 Excel 2016*
--   GP name: *MicrosoftOffice365Excel2016*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Common2016 |
+| Friendly Name | Microsoft Office 365 Common 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Common2016-AdmxBacked-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice365Common2016-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Common2016-Examples-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365infopath2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365InfoPath2013**  
+<!-- MicrosoftOffice365Common2016-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice365Excel2013-Begin -->
+## MicrosoftOffice365Excel2013
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice365Excel2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Excel2013-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Excel2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Excel2013
+```
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Excel2013
+```
+<!-- MicrosoftOffice365Excel2013-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Excel2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Excel 2013.
 
-<hr/>
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Excel 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Excel 2013 from synchronization between computers with UE-V.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 365 InfoPath 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 InfoPath 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 InfoPath 2013 from synchronization between computers with UE-V.
+- If you enable this policy setting, Microsoft Office 365 Excel 2013 user settings continue to sync with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 InfoPath 2013 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 Excel 2013 user settings are excluded from synchronization with UE-V.
 
-If you disable this policy setting, Microsoft Office 365 InfoPath 2013 user settings are excluded from synchronization with UE-V.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Excel2013-Description-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+<!-- MicrosoftOffice365Excel2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Excel2013-Editable-End -->
 
+<!-- MicrosoftOffice365Excel2013-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 InfoPath 2013*
--   GP name: *MicrosoftOffice365InfoPath2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Excel2013-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice365Excel2013-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365lync2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Lync2013**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Excel2013 |
+| Friendly Name | Microsoft Office 365 Excel 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Excel2013-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice365Excel2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Excel2013-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Excel2013-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Excel2016-Begin -->
+## MicrosoftOffice365Excel2016
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Excel2016-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Excel2016-Applicability-End -->
 
-<hr/>
+<!-- MicrosoftOffice365Excel2016-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Excel2016
+```
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 365 Lync 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Lync 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Lync 2013 from synchronization between computers with UE-V.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Excel2016
+```
+<!-- MicrosoftOffice365Excel2016-OmaUri-End -->
 
-If you enable this policy setting, Microsoft Office 365 Lync 2013 user settings continue to sync with UE-V.
+<!-- MicrosoftOffice365Excel2016-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Excel 2016.
 
-If you disable this policy setting, Microsoft Office 365 Lync 2013 user settings are excluded from synchronization with UE-V.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Excel 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Excel 2016 from synchronization between computers with UE-V.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you enable this policy setting, Microsoft Office 365 Excel 2016 user settings continue to sync with UE-V.
 
-<!--/Description-->
+- If you disable this policy setting, Microsoft Office 365 Excel 2016 user settings are excluded from synchronization with UE-V.
 
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Excel2016-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 Lync 2013*
--   GP name: *MicrosoftOffice365Lync2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice365Excel2016-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Excel2016-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice365Excel2016-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365lync2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Lync2016**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Excel2016-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice365Excel2016-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Excel2016 |
+| Friendly Name | Microsoft Office 365 Excel 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Excel2016-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Excel2016-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Excel2016-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Excel2016-End -->
 
-<hr/>
+<!-- MicrosoftOffice365InfoPath2013-Begin -->
+## MicrosoftOffice365InfoPath2013
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 365 Lync 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Lync 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Lync 2016 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365InfoPath2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365InfoPath2013-Applicability-End -->
 
-If you enable this policy setting, Microsoft Office 365 Lync 2016 user settings continue to sync with UE-V.
+<!-- MicrosoftOffice365InfoPath2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365InfoPath2013
+```
 
-If you disable this policy setting, Microsoft Office 365 Lync 2016 user settings are excluded from synchronization with UE-V.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365InfoPath2013
+```
+<!-- MicrosoftOffice365InfoPath2013-OmaUri-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365InfoPath2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 InfoPath 2013.
 
-<!--/Description-->
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 InfoPath 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 InfoPath 2013 from synchronization between computers with UE-V.
 
+- If you enable this policy setting, Microsoft Office 365 InfoPath 2013 user settings continue to sync with UE-V.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 Lync 2016*
--   GP name: *MicrosoftOffice365Lync2016*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you disable this policy setting, Microsoft Office 365 InfoPath 2013 user settings are excluded from synchronization with UE-V.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365InfoPath2013-Description-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365onenote2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365OneNote2013**  
+<!-- MicrosoftOffice365InfoPath2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365InfoPath2013-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice365InfoPath2013-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365InfoPath2013-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365InfoPath2013-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+**ADMX mapping**:
 
-> [!div class = "checklist"]
-> * Device
-> * User
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365InfoPath2013 |
+| Friendly Name | Microsoft Office 365 InfoPath 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365InfoPath2013-AdmxBacked-End -->
 
-<hr/>
+<!-- MicrosoftOffice365InfoPath2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365InfoPath2013-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 365 OneNote 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 OneNote 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 OneNote 2013 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365InfoPath2013-End -->
 
-If you enable this policy setting, Microsoft Office 365 OneNote 2013 user settings continue to sync with UE-V.
+<!-- MicrosoftOffice365Lync2013-Begin -->
+## MicrosoftOffice365Lync2013
 
-If you disable this policy setting, Microsoft Office 365 OneNote 2013 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Lync2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Lync2013-Applicability-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Lync2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Lync2013
+```
 
-<!--/Description-->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Lync2013
+```
+<!-- MicrosoftOffice365Lync2013-OmaUri-End -->
 
+<!-- MicrosoftOffice365Lync2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Lync 2013.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 OneNote 2013*
--   GP name: *MicrosoftOffice365OneNote2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Lync 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Lync 2013 from synchronization between computers with UE-V.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+- If you enable this policy setting, Microsoft Office 365 Lync 2013 user settings continue to sync with UE-V.
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365onenote2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365OneNote2016**  
+- If you disable this policy setting, Microsoft Office 365 Lync 2013 user settings are excluded from synchronization with UE-V.
 
-<!--SupportedSKUs-->
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Lync2013-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice365Lync2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Lync2013-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Lync2013-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Lync2013-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Lync2013-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 365 OneNote 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 OneNote 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 OneNote 2016 from synchronization between computers with UE-V.
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Lync2013 |
+| Friendly Name | Microsoft Office 365 Lync 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Lync2013-AdmxBacked-End -->
 
-If you enable this policy setting, Microsoft Office 365 OneNote 2016 user settings continue to sync with UE-V.
+<!-- MicrosoftOffice365Lync2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Lync2013-Examples-End -->
 
-If you disable this policy setting, Microsoft Office 365 OneNote 2016 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Lync2013-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Lync2016-Begin -->
+## MicrosoftOffice365Lync2016
 
-<!--/Description-->
+<!-- MicrosoftOffice365Lync2016-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Lync2016-Applicability-End -->
 
+<!-- MicrosoftOffice365Lync2016-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Lync2016
+```
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 OneNote 2016*
--   GP name: *MicrosoftOffice365OneNote2016*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Lync2016
+```
+<!-- MicrosoftOffice365Lync2016-OmaUri-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice365Lync2016-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Lync 2016.
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365outlook2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Outlook2013**  
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Lync 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Lync 2016 from synchronization between computers with UE-V.
 
-<!--SupportedSKUs-->
+- If you enable this policy setting, Microsoft Office 365 Lync 2016 user settings continue to sync with UE-V.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you disable this policy setting, Microsoft Office 365 Lync 2016 user settings are excluded from synchronization with UE-V.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Lync2016-Description-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Lync2016-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Lync2016-Editable-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Lync2016-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Lync2016-DFProperties-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 365 Outlook 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Outlook 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Outlook 2013 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365Lync2016-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-If you enable this policy setting, Microsoft Office 365 Outlook 2013 user settings continue to sync with UE-V.
+**ADMX mapping**:
 
-If you disable this policy setting, Microsoft Office 365 Outlook 2013 user settings are excluded from synchronization with UE-V.
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Lync2016 |
+| Friendly Name | Microsoft Office 365 Lync 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Lync2016-AdmxBacked-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Lync2016-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Lync2016-Examples-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice365Lync2016-End -->
 
+<!-- MicrosoftOffice365OneNote2013-Begin -->
+## MicrosoftOffice365OneNote2013
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 Outlook 2013*
--   GP name: *MicrosoftOffice365Outlook2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice365OneNote2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365OneNote2013-Applicability-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice365OneNote2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365OneNote2013
+```
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365outlook2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Outlook2016**  
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365OneNote2013
+```
+<!-- MicrosoftOffice365OneNote2013-OmaUri-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice365OneNote2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 OneNote 2013.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 OneNote 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 OneNote 2013 from synchronization between computers with UE-V.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you enable this policy setting, Microsoft Office 365 OneNote 2013 user settings continue to sync with UE-V.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you disable this policy setting, Microsoft Office 365 OneNote 2013 user settings are excluded from synchronization with UE-V.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365OneNote2013-Description-End -->
 
-<hr/>
+<!-- MicrosoftOffice365OneNote2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365OneNote2013-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 365 Outlook 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Outlook 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Outlook 2016 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365OneNote2013-DFProperties-Begin -->
+**Description framework properties**:
 
-If you enable this policy setting, Microsoft Office 365 Outlook 2016 user settings continue to sync with UE-V.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365OneNote2013-DFProperties-End -->
 
-If you disable this policy setting, Microsoft Office 365 Outlook 2016 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365OneNote2013-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-If you do not configure this policy setting, any defined values will be deleted.
+**ADMX mapping**:
 
-<!--/Description-->
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365OneNote2013 |
+| Friendly Name | Microsoft Office 365 OneNote 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365OneNote2013-AdmxBacked-End -->
 
+<!-- MicrosoftOffice365OneNote2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365OneNote2013-Examples-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 Outlook 2016*
--   GP name: *MicrosoftOffice365Outlook2016*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice365OneNote2013-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice365OneNote2016-Begin -->
+## MicrosoftOffice365OneNote2016
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365powerpoint2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365PowerPoint2013**  
+<!-- MicrosoftOffice365OneNote2016-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365OneNote2016-Applicability-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice365OneNote2016-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365OneNote2016
+```
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365OneNote2016
+```
+<!-- MicrosoftOffice365OneNote2016-OmaUri-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365OneNote2016-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 OneNote 2016.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 OneNote 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 OneNote 2016 from synchronization between computers with UE-V.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+- If you enable this policy setting, Microsoft Office 365 OneNote 2016 user settings continue to sync with UE-V.
 
-<hr/>
+- If you disable this policy setting, Microsoft Office 365 OneNote 2016 user settings are excluded from synchronization with UE-V.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 365 PowerPoint 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 PowerPoint 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 PowerPoint 2013 from synchronization between computers with UE-V.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365OneNote2016-Description-End -->
 
-If you enable this policy setting, Microsoft Office 365 PowerPoint 2013 user settings continue to sync with UE-V.
+<!-- MicrosoftOffice365OneNote2016-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365OneNote2016-Editable-End -->
 
-If you disable this policy setting, Microsoft Office 365 PowerPoint 2013 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365OneNote2016-DFProperties-Begin -->
+**Description framework properties**:
 
-If you do not configure this policy setting, any defined values will be deleted.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365OneNote2016-DFProperties-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice365OneNote2016-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 PowerPoint 2013*
--   GP name: *MicrosoftOffice365PowerPoint2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365OneNote2016 |
+| Friendly Name | Microsoft Office 365 OneNote 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365OneNote2016-AdmxBacked-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice365OneNote2016-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365OneNote2016-Examples-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365powerpoint2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365PowerPoint2016**  
+<!-- MicrosoftOffice365OneNote2016-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice365Outlook2013-Begin -->
+## MicrosoftOffice365Outlook2013
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice365Outlook2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Outlook2013-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Outlook2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Outlook2013
+```
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Outlook2013
+```
+<!-- MicrosoftOffice365Outlook2013-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Outlook2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Outlook 2013.
 
-<hr/>
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Outlook 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Outlook 2013 from synchronization between computers with UE-V.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 365 PowerPoint 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 PowerPoint 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 PowerPoint 2016 from synchronization between computers with UE-V.
+- If you enable this policy setting, Microsoft Office 365 Outlook 2013 user settings continue to sync with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 PowerPoint 2016 user settings continue to sync with UE-V.
+- If you disable this policy setting, Microsoft Office 365 Outlook 2013 user settings are excluded from synchronization with UE-V.
 
-If you disable this policy setting, Microsoft Office 365 PowerPoint 2016 user settings are excluded from synchronization with UE-V.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Outlook2013-Description-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Outlook2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Outlook2013-Editable-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice365Outlook2013-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Outlook2013-DFProperties-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 PowerPoint 2016*
--   GP name: *MicrosoftOffice365PowerPoint2016*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice365Outlook2013-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365project2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Project2013**  
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Outlook2013 |
+| Friendly Name | Microsoft Office 365 Outlook 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Outlook2013-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice365Outlook2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Outlook2013-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice365Outlook2013-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Outlook2016-Begin -->
+## MicrosoftOffice365Outlook2016
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Outlook2016-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Outlook2016-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Outlook2016-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Outlook2016
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Outlook2016
+```
+<!-- MicrosoftOffice365Outlook2016-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 365 Project 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Project 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Project 2013 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365Outlook2016-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Outlook 2016.
 
-If you enable this policy setting, Microsoft Office 365 Project 2013 user settings continue to sync with UE-V.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Outlook 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Outlook 2016 from synchronization between computers with UE-V.
 
-If you disable this policy setting, Microsoft Office 365 Project 2013 user settings are excluded from synchronization with UE-V.
+- If you enable this policy setting, Microsoft Office 365 Outlook 2016 user settings continue to sync with UE-V.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting, Microsoft Office 365 Outlook 2016 user settings are excluded from synchronization with UE-V.
 
-<!--/Description-->
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Outlook2016-Description-End -->
 
+<!-- MicrosoftOffice365Outlook2016-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Outlook2016-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 Project 2013*
--   GP name: *MicrosoftOffice365Project2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice365Outlook2016-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-<!--Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Outlook2016-DFProperties-End -->
 
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365project2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Project2016**
+<!-- MicrosoftOffice365Outlook2016-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Outlook2016 |
+| Friendly Name | Microsoft Office 365 Outlook 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Outlook2016-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Outlook2016-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Outlook2016-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Outlook2016-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365PowerPoint2013-Begin -->
+## MicrosoftOffice365PowerPoint2013
 
-<hr/>
+<!-- MicrosoftOffice365PowerPoint2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365PowerPoint2013-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 365 Project 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Project 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Project 2016 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365PowerPoint2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365PowerPoint2013
+```
 
-If you enable this policy setting, Microsoft Office 365 Project 2016 user settings continue to sync with UE-V.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365PowerPoint2013
+```
+<!-- MicrosoftOffice365PowerPoint2013-OmaUri-End -->
 
-If you disable this policy setting, Microsoft Office 365 Project 2016 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365PowerPoint2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 PowerPoint 2013.
 
-If you do not configure this policy setting, any defined values will be deleted.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 PowerPoint 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 PowerPoint 2013 from synchronization between computers with UE-V.
 
-<!--/Description-->
+- If you enable this policy setting, Microsoft Office 365 PowerPoint 2013 user settings continue to sync with UE-V.
 
+- If you disable this policy setting, Microsoft Office 365 PowerPoint 2013 user settings are excluded from synchronization with UE-V.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 Project 2016*
--   GP name: *MicrosoftOffice365Project2016*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365PowerPoint2013-Description-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice365PowerPoint2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365PowerPoint2013-Editable-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365publisher2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Publisher2013**  
+<!-- MicrosoftOffice365PowerPoint2013-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365PowerPoint2013-DFProperties-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice365PowerPoint2013-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/SupportedSKUs-->
-<hr/>
+**ADMX mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365PowerPoint2013 |
+| Friendly Name | Microsoft Office 365 PowerPoint 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365PowerPoint2013-AdmxBacked-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365PowerPoint2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365PowerPoint2013-Examples-End -->
 
-<hr/>
+<!-- MicrosoftOffice365PowerPoint2013-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 365 Publisher 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Publisher 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Publisher 2013 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365PowerPoint2016-Begin -->
+## MicrosoftOffice365PowerPoint2016
 
-If you enable this policy setting, Microsoft Office 365 Publisher 2013 user settings continue to sync with UE-V.
+<!-- MicrosoftOffice365PowerPoint2016-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365PowerPoint2016-Applicability-End -->
 
-If you disable this policy setting, Microsoft Office 365 Publisher 2013 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365PowerPoint2016-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365PowerPoint2016
+```
 
-If you do not configure this policy setting, any defined values will be deleted.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365PowerPoint2016
+```
+<!-- MicrosoftOffice365PowerPoint2016-OmaUri-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice365PowerPoint2016-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 PowerPoint 2016.
 
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 PowerPoint 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 PowerPoint 2016 from synchronization between computers with UE-V.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 Publisher 2013*
--   GP name: *MicrosoftOffice365Publisher2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you enable this policy setting, Microsoft Office 365 PowerPoint 2016 user settings continue to sync with UE-V.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+- If you disable this policy setting, Microsoft Office 365 PowerPoint 2016 user settings are excluded from synchronization with UE-V.
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365publisher2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Publisher2016**  
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365PowerPoint2016-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice365PowerPoint2016-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365PowerPoint2016-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice365PowerPoint2016-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365PowerPoint2016-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365PowerPoint2016-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-> [!div class = "checklist"]
-> * Device
-> * User
+**ADMX mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365PowerPoint2016 |
+| Friendly Name | Microsoft Office 365 PowerPoint 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365PowerPoint2016-AdmxBacked-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 365 Publisher 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Publisher 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Publisher 2016 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365PowerPoint2016-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365PowerPoint2016-Examples-End -->
 
-If you enable this policy setting, Microsoft Office 365 Publisher 2016 user settings continue to sync with UE-V.
+<!-- MicrosoftOffice365PowerPoint2016-End -->
 
-If you disable this policy setting, Microsoft Office 365 Publisher 2016 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Project2013-Begin -->
+## MicrosoftOffice365Project2013
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Project2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Project2013-Applicability-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice365Project2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Project2013
+```
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 Publisher 2016*
--   GP name: *MicrosoftOffice365Publisher2016*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Project2013
+```
+<!-- MicrosoftOffice365Project2013-OmaUri-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice365Project2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Project 2013.
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365sharepointdesigner2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365SharePointDesigner2013**  
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Project 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Project 2013 from synchronization between computers with UE-V.
 
-<!--SupportedSKUs-->
+- If you enable this policy setting, Microsoft Office 365 Project 2013 user settings continue to sync with UE-V.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you disable this policy setting, Microsoft Office 365 Project 2013 user settings are excluded from synchronization with UE-V.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Project2013-Description-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Project2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Project2013-Editable-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Project2013-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Project2013-DFProperties-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 365 SharePoint Designer 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 SharePoint Designer 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 SharePoint Designer 2013 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365Project2013-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-If you enable this policy setting, Microsoft Office 365 SharePoint Designer 2013 user settings continue to sync with UE-V.
+**ADMX mapping**:
 
-If you disable this policy setting, Microsoft Office 365 SharePoint Designer 2013 user settings are excluded from synchronization with UE-V.
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Project2013 |
+| Friendly Name | Microsoft Office 365 Project 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Project2013-AdmxBacked-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Project2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Project2013-Examples-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice365Project2013-End -->
 
+<!-- MicrosoftOffice365Project2016-Begin -->
+## MicrosoftOffice365Project2016
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 SharePoint Designer 2013*
--   GP name: *MicrosoftOffice365SharePointDesigner2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice365Project2016-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Project2016-Applicability-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice365Project2016-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Project2016
+```
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365visio2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Visio2013**  
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Project2016
+```
+<!-- MicrosoftOffice365Project2016-OmaUri-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice365Project2016-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Project 2016.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Project 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Project 2016 from synchronization between computers with UE-V.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you enable this policy setting, Microsoft Office 365 Project 2016 user settings continue to sync with UE-V.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you disable this policy setting, Microsoft Office 365 Project 2016 user settings are excluded from synchronization with UE-V.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Project2016-Description-End -->
 
-<hr/>
+<!-- MicrosoftOffice365Project2016-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Project2016-Editable-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 365 Visio 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Visio 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Visio 2013 from synchronization between computers with UE-V.
+<!-- MicrosoftOffice365Project2016-DFProperties-Begin -->
+**Description framework properties**:
 
-If you enable this policy setting, Microsoft Office 365 Visio 2013 user settings continue to sync with UE-V.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Project2016-DFProperties-End -->
 
-If you disable this policy setting, Microsoft Office 365 Visio 2013 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Project2016-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-If you do not configure this policy setting, any defined values will be deleted.
+**ADMX mapping**:
 
-<!--/Description-->
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Project2016 |
+| Friendly Name | Microsoft Office 365 Project 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Project2016-AdmxBacked-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 Visio 2013*
--   GP name: *MicrosoftOffice365Visio2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice365Project2016-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Project2016-Examples-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice365Project2016-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365visio2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Visio2016**  
+<!-- MicrosoftOffice365Publisher2013-Begin -->
+## MicrosoftOffice365Publisher2013
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice365Publisher2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Publisher2013-Applicability-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice365Publisher2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Publisher2013
+```
 
-<!--/SupportedSKUs-->
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Publisher2013
+```
+<!-- MicrosoftOffice365Publisher2013-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Publisher2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Publisher 2013.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Publisher 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Publisher 2013 from synchronization between computers with UE-V.
 
-<hr/>
+- If you enable this policy setting, Microsoft Office 365 Publisher 2013 user settings continue to sync with UE-V.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 365 Visio 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Visio 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Visio 2016 from synchronization between computers with UE-V.
+- If you disable this policy setting, Microsoft Office 365 Publisher 2013 user settings are excluded from synchronization with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 Visio 2016 user settings continue to sync with UE-V.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Publisher2013-Description-End -->
 
-If you disable this policy setting, Microsoft Office 365 Visio 2016 user settings are excluded from synchronization with UE-V.
+<!-- MicrosoftOffice365Publisher2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Publisher2013-Editable-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Publisher2013-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Publisher2013-DFProperties-End -->
 
+<!-- MicrosoftOffice365Publisher2013-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 Visio 2016*
--   GP name: *MicrosoftOffice365Visio2016*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Publisher2013 |
+| Friendly Name | Microsoft Office 365 Publisher 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Publisher2013-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365word2013"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Word2013**  
+<!-- MicrosoftOffice365Publisher2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Publisher2013-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice365Publisher2013-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice365Publisher2016-Begin -->
+## MicrosoftOffice365Publisher2016
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Publisher2016-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Publisher2016-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Publisher2016-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Publisher2016
+```
 
-> [!div class = "checklist"]
-> * Device
-> * User
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Publisher2016
+```
+<!-- MicrosoftOffice365Publisher2016-OmaUri-End -->
 
-<hr/>
+<!-- MicrosoftOffice365Publisher2016-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Publisher 2016.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 365 Word 2013. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Word 2013 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Word 2013 from synchronization between computers with UE-V.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Publisher 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Publisher 2016 from synchronization between computers with UE-V.
 
-If you enable this policy setting, Microsoft Office 365 Word 2013 user settings continue to sync with UE-V.
+- If you enable this policy setting, Microsoft Office 365 Publisher 2016 user settings continue to sync with UE-V.
 
-If you disable this policy setting, Microsoft Office 365 Word 2013 user settings are excluded from synchronization with UE-V.
+- If you disable this policy setting, Microsoft Office 365 Publisher 2016 user settings are excluded from synchronization with UE-V.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Publisher2016-Description-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice365Publisher2016-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Publisher2016-Editable-End -->
 
+<!-- MicrosoftOffice365Publisher2016-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 Word 2013*
--   GP name: *MicrosoftOffice365Word2013*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Publisher2016-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice365Publisher2016-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365word2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Word2016**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Publisher2016 |
+| Friendly Name | Microsoft Office 365 Publisher 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Publisher2016-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice365Publisher2016-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Publisher2016-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Publisher2016-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365SharePointDesigner2013-Begin -->
+## MicrosoftOffice365SharePointDesigner2013
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365SharePointDesigner2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365SharePointDesigner2013-Applicability-End -->
 
-<hr/>
+<!-- MicrosoftOffice365SharePointDesigner2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365SharePointDesigner2013
+```
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for Microsoft Office 365 Word 2016. Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Word 2016 will synchronize between a user’s work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Word 2016 from synchronization between computers with UE-V.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365SharePointDesigner2013
+```
+<!-- MicrosoftOffice365SharePointDesigner2013-OmaUri-End -->
 
-If you enable this policy setting, Microsoft Office 365 Word 2016 user settings continue to sync with UE-V.
+<!-- MicrosoftOffice365SharePointDesigner2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 SharePoint Designer 2013.
 
-If you disable this policy setting, Microsoft Office 365 Word 2016 user settings are excluded from synchronization with UE-V.
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 SharePoint Designer 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 SharePoint Designer 2013 from synchronization between computers with UE-V.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you enable this policy setting, Microsoft Office 365 SharePoint Designer 2013 user settings continue to sync with UE-V.
 
-<!--/Description-->
+- If you disable this policy setting, Microsoft Office 365 SharePoint Designer 2013 user settings are excluded from synchronization with UE-V.
 
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365SharePointDesigner2013-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Microsoft Office 365 Word 2016*
--   GP name: *MicrosoftOffice365Word2016*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice365SharePointDesigner2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365SharePointDesigner2013-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice365SharePointDesigner2013-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-music"></a>**ADMX_UserExperienceVirtualization/Music**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365SharePointDesigner2013-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice365SharePointDesigner2013-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365SharePointDesigner2013 |
+| Friendly Name | Microsoft Office 365 SharePoint Designer 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365SharePointDesigner2013-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365SharePointDesigner2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365SharePointDesigner2013-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365SharePointDesigner2013-End -->
 
-<hr/>
+<!-- MicrosoftOffice365Visio2013-Begin -->
+## MicrosoftOffice365Visio2013
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for the Music app. By default, the user settings of Music sync between computers. Use the policy setting to prevent the user settings of Music from synchronizing between computers.
+<!-- MicrosoftOffice365Visio2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Visio2013-Applicability-End -->
 
-If you enable this policy setting, Music user settings continue to sync.
+<!-- MicrosoftOffice365Visio2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Visio2013
+```
 
-If you disable this policy setting, Music user settings are excluded from the synchronizing settings.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Visio2013
+```
+<!-- MicrosoftOffice365Visio2013-OmaUri-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
-<!--/Description-->
+<!-- MicrosoftOffice365Visio2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Visio 2013.
 
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Visio 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Visio 2013 from synchronization between computers with UE-V.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Music*
--   GP name: *Music*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you enable this policy setting, Microsoft Office 365 Visio 2013 user settings continue to sync with UE-V.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+- If you disable this policy setting, Microsoft Office 365 Visio 2013 user settings are excluded from synchronization with UE-V.
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-news"></a>**ADMX_UserExperienceVirtualization/News**  
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Visio2013-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- MicrosoftOffice365Visio2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Visio2013-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice365Visio2013-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Visio2013-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Visio2013-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-> [!div class = "checklist"]
-> * Device
-> * User
+**ADMX mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Visio2013 |
+| Friendly Name | Microsoft Office 365 Visio 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Visio2013-AdmxBacked-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for the News app. By default, the user settings of News sync between computers. Use the policy setting to prevent the user settings of News from synchronizing between computers.
+<!-- MicrosoftOffice365Visio2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Visio2013-Examples-End -->
 
-If you enable this policy setting, News user settings continue to sync.
+<!-- MicrosoftOffice365Visio2013-End -->
 
-If you disable this policy setting, News user settings are excluded from synchronization.
+<!-- MicrosoftOffice365Visio2016-Begin -->
+## MicrosoftOffice365Visio2016
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Visio2016-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Visio2016-Applicability-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice365Visio2016-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Visio2016
+```
 
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Visio2016
+```
+<!-- MicrosoftOffice365Visio2016-OmaUri-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *News*
--   GP name: *News*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice365Visio2016-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Visio 2016.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Visio 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Visio 2016 from synchronization between computers with UE-V.
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-notepad"></a>**ADMX_UserExperienceVirtualization/Notepad**  
+- If you enable this policy setting, Microsoft Office 365 Visio 2016 user settings continue to sync with UE-V.
 
-<!--SupportedSKUs-->
+- If you disable this policy setting, Microsoft Office 365 Visio 2016 user settings are excluded from synchronization with UE-V.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Visio2016-Description-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MicrosoftOffice365Visio2016-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Visio2016-Editable-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- MicrosoftOffice365Visio2016-DFProperties-Begin -->
+**Description framework properties**:
 
-> [!div class = "checklist"]
-> * Device
-> * User
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Visio2016-DFProperties-End -->
 
-<hr/>
+<!-- MicrosoftOffice365Visio2016-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings of Notepad. By default, the user settings of Notepad synchronize between computers. Use the policy setting to prevent the user settings of Notepad from synchronization between computers.
+**ADMX mapping**:
 
-If you enable this policy setting, the Notepad user settings continue to synchronize. 
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Visio2016 |
+| Friendly Name | Microsoft Office 365 Visio 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Visio2016-AdmxBacked-End -->
 
-If you disable this policy setting, Notepad user settings are excluded from the synchronization settings.
+<!-- MicrosoftOffice365Visio2016-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Visio2016-Examples-End -->
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Visio2016-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice365Word2013-Begin -->
+## MicrosoftOffice365Word2013
 
+<!-- MicrosoftOffice365Word2013-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Word2013-Applicability-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Notepad*
--   GP name: *Notepad*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice365Word2013-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Word2013
+```
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Word2013
+```
+<!-- MicrosoftOffice365Word2013-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-reader"></a>**ADMX_UserExperienceVirtualization/Reader**  
+<!-- MicrosoftOffice365Word2013-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Word 2013.
 
-<!--SupportedSKUs-->
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Word 2013 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Word 2013 from synchronization between computers with UE-V.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you enable this policy setting, Microsoft Office 365 Word 2013 user settings continue to sync with UE-V.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you disable this policy setting, Microsoft Office 365 Word 2013 user settings are excluded from synchronization with UE-V.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Word2013-Description-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- MicrosoftOffice365Word2013-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Word2013-Editable-End -->
 
-<hr/>
+<!-- MicrosoftOffice365Word2013-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for the Reader app. By default, the user settings of Reader sync between computers. Use the policy setting to prevent the user settings of Reader from synchronizing between computers.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Word2013-DFProperties-End -->
 
-If you enable this policy setting, Reader user settings continue to sync.
+<!-- MicrosoftOffice365Word2013-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-If you disable this policy setting, Reader user settings are excluded from the synchronization.
+**ADMX mapping**:
 
-If you do not configure this policy setting, any defined values will be deleted.
-      
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Word2013 |
+| Friendly Name | Microsoft Office 365 Word 2013 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Word2013-AdmxBacked-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice365Word2013-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Word2013-Examples-End -->
 
+<!-- MicrosoftOffice365Word2013-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Reader*
--   GP name: *Reader*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- MicrosoftOffice365Word2016-Begin -->
+## MicrosoftOffice365Word2016
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice365Word2016-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MicrosoftOffice365Word2016-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-repositorytimeout"></a>**ADMX_UserExperienceVirtualization/RepositoryTimeout**  
+<!-- MicrosoftOffice365Word2016-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Word2016
+```
 
-<!--SupportedSKUs-->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/MicrosoftOffice365Word2016
+```
+<!-- MicrosoftOffice365Word2016-OmaUri-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MicrosoftOffice365Word2016-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for Microsoft Office 365 Word 2016.
 
-<!--/SupportedSKUs-->
-<hr/>
+Microsoft Office 365 synchronizes certain settings by default without UE-V. If the synchronization capabilities of Microsoft Office 365 are disabled, then the user settings of Microsoft Office 365 Word 2016 will synchronize between a user's work computers with UE-V by default. Use this policy setting to prevent the user settings of Microsoft Office 365 Word 2016 from synchronization between computers with UE-V.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you enable this policy setting, Microsoft Office 365 Word 2016 user settings continue to sync with UE-V.
 
-> [!div class = "checklist"]
-> * Device
-> * User
+- If you disable this policy setting, Microsoft Office 365 Word 2016 user settings are excluded from synchronization with UE-V.
 
-<hr/>
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- MicrosoftOffice365Word2016-Description-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the number of milliseconds that the computer waits when retrieving user settings from the settings storage location. You can use this setting to override the default value of 2000 milliseconds. 
+<!-- MicrosoftOffice365Word2016-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Word2016-Editable-End -->
 
-If you enable this policy setting, set the number of milliseconds that the system waits to retrieve settings. 
+<!-- MicrosoftOffice365Word2016-DFProperties-Begin -->
+**Description framework properties**:
 
-If you disable or do not configure this policy setting, the default value of 2000 milliseconds is used.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MicrosoftOffice365Word2016-DFProperties-End -->
 
-<!--/Description-->
+<!-- MicrosoftOffice365Word2016-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Synchronization timeout*
--   GP name: *RepositoryTimeout*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+| Name | Value |
+|:--|:--|
+| Name | MicrosoftOffice365Word2016 |
+| Friendly Name | Microsoft Office 365 Word 2016 |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- MicrosoftOffice365Word2016-AdmxBacked-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MicrosoftOffice365Word2016-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MicrosoftOffice365Word2016-Examples-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-settingsstoragepath"></a>**ADMX_UserExperienceVirtualization/SettingsStoragePath**  
+<!-- MicrosoftOffice365Word2016-End -->
 
-<!--SupportedSKUs-->
+<!-- Music-Begin -->
+## Music
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Music-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Music-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Music-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Music
+```
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Music
+```
+<!-- Music-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- Music-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for the Music app.
 
-<hr/>
+By default, the user settings of Music sync between computers. Use the policy setting to prevent the user settings of Music from synchronizing between computers.
 
-<!--/Scope-->
-<!--Description-->
+- If you enable this policy setting, Music user settings continue to sync.
+
+- If you disable this policy setting, Music user settings are excluded from the synchronizing settings.
+
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- Music-Description-End -->
+
+<!-- Music-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Music-Editable-End -->
+
+<!-- Music-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Music-DFProperties-End -->
+
+<!-- Music-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Music |
+| Friendly Name | Music |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Windows Apps |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Windows8AppList\Microsoft.ZuneMusic_8wekyb3d8bbwe |
+| Registry Value Name | SyncSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Music-AdmxBacked-End -->
+
+<!-- Music-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Music-Examples-End -->
+
+<!-- Music-End -->
+
+<!-- News-Begin -->
+## News
+
+<!-- News-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- News-Applicability-End -->
+
+<!-- News-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/News
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/News
+```
+<!-- News-OmaUri-End -->
+
+<!-- News-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for the News app.
+
+By default, the user settings of News sync between computers. Use the policy setting to prevent the user settings of News from synchronizing between computers.
+
+- If you enable this policy setting, News user settings continue to sync.
+
+- If you disable this policy setting, News user settings are excluded from synchronization.
+
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- News-Description-End -->
+
+<!-- News-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- News-Editable-End -->
+
+<!-- News-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- News-DFProperties-End -->
+
+<!-- News-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | News |
+| Friendly Name | News |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Windows Apps |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Windows8AppList\Microsoft.BingNews_8wekyb3d8bbwe |
+| Registry Value Name | SyncSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- News-AdmxBacked-End -->
+
+<!-- News-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- News-Examples-End -->
+
+<!-- News-End -->
+
+<!-- Notepad-Begin -->
+## Notepad
+
+<!-- Notepad-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Notepad-Applicability-End -->
+
+<!-- Notepad-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Notepad
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Notepad
+```
+<!-- Notepad-OmaUri-End -->
+
+<!-- Notepad-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings of Notepad.
+
+By default, the user settings of Notepad synchronize between computers. Use the policy setting to prevent the user settings of Notepad from synchronization between computers.
+
+- If you enable this policy setting, the Notepad user settings continue to synchronize.
+
+- If you disable this policy setting, Notepad user settings are excluded from the synchronization settings.
+
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- Notepad-Description-End -->
+
+<!-- Notepad-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Notepad-Editable-End -->
+
+<!-- Notepad-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Notepad-DFProperties-End -->
+
+<!-- Notepad-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Notepad |
+| Friendly Name | Notepad |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| Registry Value Name | MicrosoftNotepad6 |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Notepad-AdmxBacked-End -->
+
+<!-- Notepad-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Notepad-Examples-End -->
+
+<!-- Notepad-End -->
+
+<!-- Reader-Begin -->
+## Reader
+
+<!-- Reader-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Reader-Applicability-End -->
+
+<!-- Reader-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Reader
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Reader
+```
+<!-- Reader-OmaUri-End -->
+
+<!-- Reader-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for the Reader app.
+
+By default, the user settings of Reader sync between computers. Use the policy setting to prevent the user settings of Reader from synchronizing between computers.
+
+- If you enable this policy setting, Reader user settings continue to sync.
+
+- If you disable this policy setting, Reader user settings are excluded from the synchronization.
+
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- Reader-Description-End -->
+
+<!-- Reader-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Reader-Editable-End -->
+
+<!-- Reader-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Reader-DFProperties-End -->
+
+<!-- Reader-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Reader |
+| Friendly Name | Reader |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Windows Apps |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Windows8AppList\Microsoft.Reader_8wekyb3d8bbwe |
+| Registry Value Name | SyncSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Reader-AdmxBacked-End -->
+
+<!-- Reader-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Reader-Examples-End -->
+
+<!-- Reader-End -->
+
+<!-- RepositoryTimeout-Begin -->
+## RepositoryTimeout
+
+<!-- RepositoryTimeout-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- RepositoryTimeout-Applicability-End -->
+
+<!-- RepositoryTimeout-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/RepositoryTimeout
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/RepositoryTimeout
+```
+<!-- RepositoryTimeout-OmaUri-End -->
+
+<!-- RepositoryTimeout-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the number of milliseconds that the computer waits when retrieving user settings from the settings storage location.
+
+You can use this setting to override the default value of 2000 milliseconds.
+
+- If you enable this policy setting, set the number of milliseconds that the system waits to retrieve settings.
+
+- If you disable or don't configure this policy setting, the default value of 2000 milliseconds is used.
+<!-- RepositoryTimeout-Description-End -->
+
+<!-- RepositoryTimeout-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RepositoryTimeout-Editable-End -->
+
+<!-- RepositoryTimeout-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RepositoryTimeout-DFProperties-End -->
+
+<!-- RepositoryTimeout-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | RepositoryTimeout |
+| Friendly Name | Synchronization timeout |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- RepositoryTimeout-AdmxBacked-End -->
+
+<!-- RepositoryTimeout-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RepositoryTimeout-Examples-End -->
+
+<!-- RepositoryTimeout-End -->
+
+<!-- SettingsStoragePath-Begin -->
+## SettingsStoragePath
+
+<!-- SettingsStoragePath-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SettingsStoragePath-Applicability-End -->
+
+<!-- SettingsStoragePath-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SettingsStoragePath
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SettingsStoragePath
+```
+<!-- SettingsStoragePath-OmaUri-End -->
+
+<!-- SettingsStoragePath-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures where the settings package files that contain user settings are stored.
 
-If you enable this policy setting, the user settings are stored in the specified location. 
+- If you enable this policy setting, the user settings are stored in the specified location.
 
-If you disable or do not configure this policy setting, the user settings are stored in the user’s home directory if configured for your environment. 
+- If you disable or don't configure this policy setting, the user settings are stored in the user's home directory if configured for your environment.
+<!-- SettingsStoragePath-Description-End -->
 
-<!--/Description-->
+<!-- SettingsStoragePath-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SettingsStoragePath-Editable-End -->
 
+<!-- SettingsStoragePath-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Settings storage path*
--   GP name: *SettingsStoragePath*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SettingsStoragePath-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- SettingsStoragePath-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-settingstemplatecatalogpath"></a>**ADMX_UserExperienceVirtualization/SettingsTemplateCatalogPath**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | SettingsStoragePath |
+| Friendly Name | Settings storage path |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- SettingsStoragePath-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- SettingsStoragePath-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SettingsStoragePath-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SettingsStoragePath-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SettingsTemplateCatalogPath-Begin -->
+## SettingsTemplateCatalogPath
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- SettingsTemplateCatalogPath-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SettingsTemplateCatalogPath-Applicability-End -->
 
-<hr/>
+<!-- SettingsTemplateCatalogPath-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SettingsTemplateCatalogPath
+```
+<!-- SettingsTemplateCatalogPath-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- SettingsTemplateCatalogPath-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures where custom settings location templates are stored and if the catalog will be used to replace the default Microsoft templates installed with the UE-V Agent.
 
-If you enable this policy setting, the UE-V Agent checks the specified location once each day and updates its synchronization behavior based on the templates in this location. Settings location templates added or updated since the last check are registered by the UE-V Agent. The UE-V Agent deregisters templates that were removed from this location.
+- If you enable this policy setting, the UE-V Agent checks the specified location once each day and updates its synchronization behavior based on the templates in this location. Settings location templates added or updated since the last check are registered by the UE-V Agent. The UE-V Agent deregisters templates that were removed from this location.
 
 If you specify a UNC path and leave the option to replace the default Microsoft templates unchecked, the UE-V Agent will use the default Microsoft templates installed by the UE-V Agent and custom templates in the settings template catalog. If there are custom templates in the settings template catalog which use the same ID as the default Microsoft templates, they will be ignored.
 
 If you specify a UNC path and check the option to replace the default Microsoft templates, all of the default Microsoft templates installed by the UE-V Agent will be deleted from the computer and only the templates located in the settings template catalog will be used.
 
-If you disable this policy setting, the UE-V Agent will not use the custom settings location templates. If you disable this policy setting after it has been enabled, the UE-V Agent will not restore the default Microsoft templates. 
+- If you disable this policy setting, the UE-V Agent won't use the custom settings location templates.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you disable this policy setting after it has been enabled, the UE-V Agent won't restore the default Microsoft templates.
 
-<!--/Description-->
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- SettingsTemplateCatalogPath-Description-End -->
 
+<!-- SettingsTemplateCatalogPath-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SettingsTemplateCatalogPath-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Settings template catalog path*
--   GP name: *SettingsTemplateCatalogPath*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- SettingsTemplateCatalogPath-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SettingsTemplateCatalogPath-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-sports"></a>**ADMX_UserExperienceVirtualization/Sports**  
+<!-- SettingsTemplateCatalogPath-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | SettingsTemplateCatalogPath |
+| Friendly Name | Settings template catalog path |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- SettingsTemplateCatalogPath-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SettingsTemplateCatalogPath-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SettingsTemplateCatalogPath-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SettingsTemplateCatalogPath-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- Sports-Begin -->
+## Sports
 
-<hr/>
+<!-- Sports-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Sports-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for the Sports app. By default, the user settings of Sports sync between computers. Use the policy setting to prevent the user settings of Sports from synchronizing between computers.
+<!-- Sports-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Sports
+```
 
-If you enable this policy setting, Sports user settings continue to sync.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Sports
+```
+<!-- Sports-OmaUri-End -->
 
-If you disable this policy setting, Sports user settings are excluded from synchronization.
+<!-- Sports-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for the Sports app.
 
-If you do not configure this policy setting, any defined values will be deleted.
+By default, the user settings of Sports sync between computers. Use the policy setting to prevent the user settings of Sports from synchronizing between computers.
 
-<!--/Description-->
+- If you enable this policy setting, Sports user settings continue to sync.
 
+- If you disable this policy setting, Sports user settings are excluded from synchronization.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Sports*
--   GP name: *Sports*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- Sports-Description-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- Sports-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Sports-Editable-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-syncenabled"></a>**ADMX_UserExperienceVirtualization/SyncEnabled**  
+<!-- Sports-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Sports-DFProperties-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Sports-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/SupportedSKUs-->
-<hr/>
+**ADMX mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | Sports |
+| Friendly Name | Sports |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Windows Apps |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Windows8AppList\Microsoft.BingSports_8wekyb3d8bbwe |
+| Registry Value Name | SyncSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Sports-AdmxBacked-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- Sports-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Sports-Examples-End -->
 
-<hr/>
+<!-- Sports-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- SyncEnabled-Begin -->
+## SyncEnabled
+
+<!-- SyncEnabled-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SyncEnabled-Applicability-End -->
+
+<!-- SyncEnabled-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SyncEnabled
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SyncEnabled
+```
+<!-- SyncEnabled-OmaUri-End -->
+
+<!-- SyncEnabled-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to enable or disable User Experience Virtualization (UE-V). Only applies to Windows 10 or earlier.
+<!-- SyncEnabled-Description-End -->
 
-<!--/Description-->
+<!-- SyncEnabled-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SyncEnabled-Editable-End -->
 
+<!-- SyncEnabled-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Use User Experience Virtualization (UE-V)*
--   GP name: *SyncEnabled*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SyncEnabled-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-<!--Policy-->
+<!-- SyncEnabled-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<a href="" id="admx-userexperiencevirtualization-syncovermeterednetwork"></a>**ADMX_UserExperienceVirtualization/SyncOverMeteredNetwork**
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | SyncEnabled |
+| Friendly Name | Use User Experience Virtualization (UE-V) |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| Registry Value Name | SyncEnabled |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- SyncEnabled-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- SyncEnabled-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SyncEnabled-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SyncEnabled-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SyncOverMeteredNetwork-Begin -->
+## SyncOverMeteredNetwork
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- SyncOverMeteredNetwork-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SyncOverMeteredNetwork-Applicability-End -->
 
-<hr/>
+<!-- SyncOverMeteredNetwork-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SyncOverMeteredNetwork
+```
 
-<!--/Scope-->
-<!--Description-->
-This policy setting defines whether the User Experience Virtualization (UE-V) Agent synchronizes settings over metered connections. By default, the UE-V Agent does not synchronize settings over a metered connection.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SyncOverMeteredNetwork
+```
+<!-- SyncOverMeteredNetwork-OmaUri-End -->
+
+<!-- SyncOverMeteredNetwork-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting defines whether the User Experience Virtualization (UE-V) Agent synchronizes settings over metered connections.
+
+By default, the UE-V Agent doesn't synchronize settings over a metered connection.
 
 With this setting enabled, the UE-V Agent synchronizes settings over a metered connection.
 
-With this setting disabled, the UE-V Agent does not synchronize settings over a metered connection.
+With this setting disabled, the UE-V Agent doesn't synchronize settings over a metered connection.
 
-If you do not configure this policy setting, any defined values are deleted.
+If you don't configure this policy setting, any defined values are deleted.
+<!-- SyncOverMeteredNetwork-Description-End -->
 
-<!--/Description-->
+<!-- SyncOverMeteredNetwork-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SyncOverMeteredNetwork-Editable-End -->
 
+<!-- SyncOverMeteredNetwork-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Sync settings over metered connections*
--   GP name: *SyncOverMeteredNetwork*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SyncOverMeteredNetwork-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- SyncOverMeteredNetwork-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-syncovermeterednetworkwhenroaming"></a>**ADMX_UserExperienceVirtualization/SyncOverMeteredNetworkWhenRoaming**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | SyncOverMeteredNetwork |
+| Friendly Name | Sync settings over metered connections |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| Registry Value Name | SyncOverMeteredNetwork |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- SyncOverMeteredNetwork-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- SyncOverMeteredNetwork-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SyncOverMeteredNetwork-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SyncOverMeteredNetwork-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SyncOverMeteredNetworkWhenRoaming-Begin -->
+## SyncOverMeteredNetworkWhenRoaming
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- SyncOverMeteredNetworkWhenRoaming-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SyncOverMeteredNetworkWhenRoaming-Applicability-End -->
 
-<hr/>
+<!-- SyncOverMeteredNetworkWhenRoaming-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SyncOverMeteredNetworkWhenRoaming
+```
 
-<!--/Scope-->
-<!--Description-->
-This policy setting defines whether the User Experience Virtualization (UE-V) Agent synchronizes settings over metered connections outside of the home provider network, for example when connected via a roaming connection. By default, the UE-V Agent does not synchronize settings over a metered connection that is roaming.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SyncOverMeteredNetworkWhenRoaming
+```
+<!-- SyncOverMeteredNetworkWhenRoaming-OmaUri-End -->
 
-With this setting enabled, the UE-V Agent synchronizes settings over a metered connection that is roaming.
+<!-- SyncOverMeteredNetworkWhenRoaming-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting defines whether the User Experience Virtualization (UE-V) Agent synchronizes settings over metered connections outside of the home provider network, for example when connected via a roaming connection.
 
-With this setting disabled, the UE-V Agent will not synchronize settings over a metered connection that is roaming.
+By default, the UE-V Agent doesn't synchronize settings over a metered connection that's roaming.
 
-If you do not configure this policy setting, any defined values are deleted.
+With this setting enabled, the UE-V Agent synchronizes settings over a metered connection that's roaming.
 
-<!--/Description-->
+With this setting disabled, the UE-V Agent won't synchronize settings over a metered connection that's roaming.
 
+If you don't configure this policy setting, any defined values are deleted.
+<!-- SyncOverMeteredNetworkWhenRoaming-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Sync settings over metered connections even when roaming*
--   GP name: *SyncOverMeteredNetworkWhenRoaming*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- SyncOverMeteredNetworkWhenRoaming-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SyncOverMeteredNetworkWhenRoaming-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- SyncOverMeteredNetworkWhenRoaming-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-syncproviderpingenabled"></a>**ADMX_UserExperienceVirtualization/SyncProviderPingEnabled**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SyncOverMeteredNetworkWhenRoaming-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- SyncOverMeteredNetworkWhenRoaming-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | SyncOverMeteredNetworkWhenRoaming |
+| Friendly Name | Sync settings over metered connections even when roaming |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| Registry Value Name | SyncOverMeteredNetworkWhenRoaming |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- SyncOverMeteredNetworkWhenRoaming-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SyncOverMeteredNetworkWhenRoaming-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SyncOverMeteredNetworkWhenRoaming-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- SyncOverMeteredNetworkWhenRoaming-End -->
 
-<hr/>
+<!-- SyncProviderPingEnabled-Begin -->
+## SyncProviderPingEnabled
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to configure the User Experience Virtualization (UE-V) sync provider to ping the settings storage path before attempting to sync settings. If the ping is successful then the sync provider attempts to synchronize the settings packages. If the ping is unsuccessful then the sync provider doesn’t attempt the synchronization.
+<!-- SyncProviderPingEnabled-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SyncProviderPingEnabled-Applicability-End -->
 
-If you enable this policy setting, the sync provider pings the settings storage location before synchronizing settings packages.
+<!-- SyncProviderPingEnabled-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SyncProviderPingEnabled
+```
 
-If you disable this policy setting, the sync provider doesn’t ping the settings storage location before synchronizing settings packages. 
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SyncProviderPingEnabled
+```
+<!-- SyncProviderPingEnabled-OmaUri-End -->
 
-If you do not configure this policy, any defined values will be deleted.    
+<!-- SyncProviderPingEnabled-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows you to configure the User Experience Virtualization (UE-V) sync provider to ping the settings storage path before attempting to sync settings. If the ping is successful then the sync provider attempts to synchronize the settings packages. If the ping is unsuccessful then the sync provider doesn't attempt the synchronization.
 
-<!--/Description-->
+- If you enable this policy setting, the sync provider pings the settings storage location before synchronizing settings packages.
 
+- If you disable this policy setting, the sync provider doesn't ping the settings storage location before synchronizing settings packages.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Ping the settings storage location before sync*
--   GP name: *SyncProviderPingEnabled*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you don't configure this policy, any defined values will be deleted.
+<!-- SyncProviderPingEnabled-Description-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- SyncProviderPingEnabled-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SyncProviderPingEnabled-Editable-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-syncunlistedwindows8apps"></a>**ADMX_UserExperienceVirtualization/SyncUnlistedWindows8Apps**  
+<!-- SyncProviderPingEnabled-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SyncProviderPingEnabled-DFProperties-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- SyncProviderPingEnabled-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/SupportedSKUs-->
-<hr/>
+**ADMX mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | SyncProviderPingEnabled |
+| Friendly Name | Ping the settings storage location before sync |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| Registry Value Name | SyncProviderPingEnabled |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- SyncProviderPingEnabled-AdmxBacked-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- SyncProviderPingEnabled-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SyncProviderPingEnabled-Examples-End -->
 
-<hr/>
+<!-- SyncProviderPingEnabled-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting defines the default settings sync behavior of the User Experience Virtualization (UE-V) Agent for Windows apps that are not explicitly listed in Windows App List. By default, the UE-V Agent only synchronizes settings of those Windows apps included in the Windows App List.
+<!-- SyncUnlistedWindows8Apps-Begin -->
+## SyncUnlistedWindows8Apps
+
+<!-- SyncUnlistedWindows8Apps-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SyncUnlistedWindows8Apps-Applicability-End -->
+
+<!-- SyncUnlistedWindows8Apps-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/SyncUnlistedWindows8Apps
+```
+<!-- SyncUnlistedWindows8Apps-OmaUri-End -->
+
+<!-- SyncUnlistedWindows8Apps-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting defines the default settings sync behavior of the User Experience Virtualization (UE-V) Agent for Windows apps that aren't explicitly listed in Windows App List.
+
+By default, the UE-V Agent only synchronizes settings of those Windows apps included in the Windows App List.
 
 With this setting enabled, the settings of all Windows apps not expressly disable in the Windows App List are synchronized.
 
 With this setting disabled, only the settings of the Windows apps set to synchronize in the Windows App List are synchronized.
 
-If you do not configure this policy setting, any defined values are deleted.
+If you don't configure this policy setting, any defined values are deleted.
+<!-- SyncUnlistedWindows8Apps-Description-End -->
 
-<!--/Description-->
+<!-- SyncUnlistedWindows8Apps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SyncUnlistedWindows8Apps-Editable-End -->
 
+<!-- SyncUnlistedWindows8Apps-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Sync Unlisted Windows Apps*
--   GP name: *SyncUnlistedWindows8Apps*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SyncUnlistedWindows8Apps-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- SyncUnlistedWindows8Apps-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-travel"></a>**ADMX_UserExperienceVirtualization/Travel**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | SyncUnlistedWindows8Apps |
+| Friendly Name | Sync Unlisted Windows Apps |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| Registry Value Name | SyncUnlistedWindows8Apps |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- SyncUnlistedWindows8Apps-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- SyncUnlistedWindows8Apps-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SyncUnlistedWindows8Apps-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- SyncUnlistedWindows8Apps-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Travel-Begin -->
+## Travel
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- Travel-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Travel-Applicability-End -->
 
-<hr/>
+<!-- Travel-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Travel
+```
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for the Travel app. By default, the user settings of Travel sync between computers. Use the policy setting to prevent the user settings of Travel from synchronizing between computers.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Travel
+```
+<!-- Travel-OmaUri-End -->
 
-If you enable this policy setting, Travel user settings continue to sync.
+<!-- Travel-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for the Travel app.
 
-If you disable this policy setting, Travel user settings are excluded from synchronization.
+By default, the user settings of Travel sync between computers. Use the policy setting to prevent the user settings of Travel from synchronizing between computers.
 
-If you do not configure this policy setting, any defined values will be deleted.
+- If you enable this policy setting, Travel user settings continue to sync.
 
-<!--/Description-->
+- If you disable this policy setting, Travel user settings are excluded from synchronization.
 
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- Travel-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Travel*
--   GP name: *Travel*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- Travel-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Travel-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- Travel-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-trayiconenabled"></a>**ADMX_UserExperienceVirtualization/TrayIconEnabled**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Travel-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- Travel-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Travel |
+| Friendly Name | Travel |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Windows Apps |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Windows8AppList\Microsoft.BingTravel_8wekyb3d8bbwe |
+| Registry Value Name | SyncSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Travel-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Travel-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Travel-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- Travel-End -->
 
-<hr/>
+<!-- TrayIconEnabled-Begin -->
+## TrayIconEnabled
 
-<!--/Scope-->
-<!--Description-->
+<!-- TrayIconEnabled-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TrayIconEnabled-Applicability-End -->
+
+<!-- TrayIconEnabled-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/TrayIconEnabled
+```
+<!-- TrayIconEnabled-OmaUri-End -->
+
+<!-- TrayIconEnabled-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting enables the User Experience Virtualization (UE-V) tray icon. By default, an icon appears in the system tray that displays notifications for UE-V. This icon also provides a link to the UE-V Agent application, Company Settings Center. Users can open the Company Settings Center by right-clicking the icon and selecting Open or by double-clicking the icon. When this group policy setting is enabled, the UE-V tray icon is visible, the UE-V notifications display, and the Company Settings Center is accessible from the tray icon.
 
-With this setting disabled, the tray icon does not appear in the system tray, UE-V never displays notifications, and the user cannot access Company Settings Center from the system tray. The Company Settings Center remains accessible through the Control Panel and the Start menu or Start screen.
+With this setting disabled, the tray icon doesn't appear in the system tray, UE-V never displays notifications, and the user can't access Company Settings Center from the system tray. The Company Settings Center remains accessible through the Control Panel and the Start menu or Start screen.
 
-If you do not configure this policy setting, any defined values are deleted.
+If you don't configure this policy setting, any defined values are deleted.
+<!-- TrayIconEnabled-Description-End -->
 
-<!--/Description-->
+<!-- TrayIconEnabled-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TrayIconEnabled-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Tray Icon*
--   GP name: *TrayIconEnabled*
--   GP path: *Windows Components\Microsoft User Experience Virtualization*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- TrayIconEnabled-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TrayIconEnabled-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-video"></a>**ADMX_UserExperienceVirtualization/Video**  
+<!-- TrayIconEnabled-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | TrayIconEnabled |
+| Friendly Name | Tray Icon |
+| Location | Computer Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration |
+| Registry Value Name | TrayIconEnabled |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- TrayIconEnabled-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TrayIconEnabled-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TrayIconEnabled-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TrayIconEnabled-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- Video-Begin -->
+## Video
 
-<hr/>
+<!-- Video-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Video-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for the Video app. By default, the user settings of Video sync between computers. Use the policy setting to prevent the user settings of Video from synchronizing between computers.
+<!-- Video-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Video
+```
 
-If you enable this policy setting, Video user settings continue to sync.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Video
+```
+<!-- Video-OmaUri-End -->
 
-If you disable this policy setting, Video user settings are excluded from synchronization.
+<!-- Video-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for the Video app.
 
-If you do not configure this policy setting, any defined values will be deleted.
+By default, the user settings of Video sync between computers. Use the policy setting to prevent the user settings of Video from synchronizing between computers.
 
-<!--/Description-->
+- If you enable this policy setting, Video user settings continue to sync.
 
+- If you disable this policy setting, Video user settings are excluded from synchronization.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Video*
--   GP name: *Video*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- Video-Description-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- Video-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Video-Editable-End -->
 
-<!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-weather"></a>**ADMX_UserExperienceVirtualization/Weather**  
+<!-- Video-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Video-DFProperties-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Video-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/SupportedSKUs-->
-<hr/>
+**ADMX mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | Video |
+| Friendly Name | Video |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Windows Apps |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Windows8AppList\Microsoft.ZuneVideo_8wekyb3d8bbwe |
+| Registry Value Name | SyncSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Video-AdmxBacked-End -->
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- Video-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Video-Examples-End -->
 
-<hr/>
+<!-- Video-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings for the Weather app. By default, the user settings of Weather sync between computers. Use the policy setting to prevent the user settings of Weather from synchronizing between computers.
+<!-- Weather-Begin -->
+## Weather
 
-If you enable this policy setting, Weather user settings continue to sync.
+<!-- Weather-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Weather-Applicability-End -->
 
-If you disable this policy setting, Weather user settings are excluded from synchronization.
+<!-- Weather-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Weather
+```
 
-If you do not configure this policy setting, any defined values will be deleted.
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Weather
+```
+<!-- Weather-OmaUri-End -->
 
-<!--/Description-->
+<!-- Weather-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings for the Weather app.
 
+By default, the user settings of Weather sync between computers. Use the policy setting to prevent the user settings of Weather from synchronizing between computers.
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Weather*
--   GP name: *Weather*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+- If you enable this policy setting, Weather user settings continue to sync.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-<!--Policy-->
+- If you disable this policy setting, Weather user settings are excluded from synchronization.
 
-<a href="" id="admx-userexperiencevirtualization-wordpad"></a>**ADMX_UserExperienceVirtualization/Wordpad**
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- Weather-Description-End -->
 
-<!--SupportedSKUs-->
+<!-- Weather-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Weather-Editable-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Weather-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Weather-DFProperties-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Weather-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-> [!div class = "checklist"]
-> * Device
-> * User
+**ADMX mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Weather |
+| Friendly Name | Weather |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Windows Apps |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Windows8AppList\Microsoft.BingWeather_8wekyb3d8bbwe |
+| Registry Value Name | SyncSettings |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Weather-AdmxBacked-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting configures the synchronization of user settings of WordPad. By default, the user settings of WordPad synchronize between computers. Use the policy setting to prevent the user settings of WordPad from synchronization between computers.
+<!-- Weather-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Weather-Examples-End -->
 
-If you enable this policy setting, the WordPad user settings continue to synchronize. 
+<!-- Weather-End -->
 
-If you disable this policy setting, WordPad user settings are excluded from the synchronization settings.
+<!-- Wordpad-Begin -->
+## Wordpad
 
-If you do not configure this policy setting, any defined values will be deleted.
+<!-- Wordpad-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Wordpad-Applicability-End -->
 
-<!--/Description-->
+<!-- Wordpad-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Wordpad
+```
 
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_UserExperienceVirtualization/Wordpad
+```
+<!-- Wordpad-OmaUri-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *WordPad*
--   GP name: *Wordpad*
--   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
--   GP ADMX file name: *UserExperienceVirtualization.admx*
+<!-- Wordpad-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures the synchronization of user settings of WordPad.
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+By default, the user settings of WordPad synchronize between computers. Use the policy setting to prevent the user settings of WordPad from synchronization between computers.
 
-<!--/Policies-->
+- If you enable this policy setting, the WordPad user settings continue to synchronize.
 
+- If you disable this policy setting, WordPad user settings are excluded from the synchronization settings.
+
+- If you don't configure this policy setting, any defined values will be deleted.
+<!-- Wordpad-Description-End -->
+
+<!-- Wordpad-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Wordpad-Editable-End -->
+
+<!-- Wordpad-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Wordpad-DFProperties-End -->
+
+<!-- Wordpad-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Wordpad |
+| Friendly Name | WordPad |
+| Location | Computer and User Configuration |
+| Path | Windows Components > Microsoft User Experience Virtualization > Applications |
+| Registry Key Name | Software\Policies\Microsoft\UEV\Agent\Configuration\Applications |
+| Registry Value Name | MicrosoftWordpad6 |
+| ADMX File Name | UserExperienceVirtualization.admx |
+<!-- Wordpad-AdmxBacked-End -->
+
+<!-- Wordpad-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Wordpad-Examples-End -->
+
+<!-- Wordpad-End -->
+
+<!-- ADMX_UserExperienceVirtualization-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_UserExperienceVirtualization-CspMoreInfo-End -->
+
+<!-- ADMX_UserExperienceVirtualization-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

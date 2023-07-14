@@ -1,16 +1,15 @@
 ---
 title: DeviceFormFactor (Windows 10)
 description: This section describes the DeviceFormFactor setting that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: greg-lindsay
+ms.prod: windows-client
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ms.date: 04/30/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
+ms.technology: itpro-configure
 ---
 
 # DeviceFormFactor (Windows Configuration Designer reference)
@@ -36,7 +35,7 @@ Select the appropriate form from the dropdown menu.
 | --- | --- |
 | Phone | A typical smartphone combines cellular connectivity, a touch screen, rechargeable power source, and other components into a single chassis. | 
 | LargeScreen | Microsoft Surface Hub |
-| HMD | (Head-mounted display) A holographic computer that is completely untethered - no wires, phones, or connection to a PC needed. |
+| HMD | (Head-mounted display) A holographic computer that is untethered - no wires, phones, or connection to a PC needed. |
 | IndustryHandheld | A device screen less than 7” diagonal designed for industrial solutions. May or may not have a cellular stack.  |
 | IndustryTablet | A device with an integrated screen greater than 7” diagonal and no attached keyboard designed for industrial solutions as opposed to consumer personal computer. May or may not have a cellular stack. |
 | Banking | A machine at a bank branch or another location that enables customers to perform basic banking activities including withdrawing money and checking one's bank balance. |
@@ -56,10 +55,10 @@ Select the appropriate form from the dropdown menu.
 | Toy | A device used solely for enjoyment or entertainment. |
 | Vending | A machine that dispenses items in exchange for payment in the form of coin, currency, or credit/debit card. |
 | IndustryOther |A device that doesn't fit into any of the previous categories.  |
-| Desktop | A desktop PC form factor traditional comes in an upright tower or small desktop chassis and does not have an integrated screen. |
-| Notebook | A notebook is a portable clamshell device with an attached keyboard that cannot be removed. |
-| Convertible | A convertible device is an evolution of the traditional notebook where the keyboard can be swiveled, rotated or flipped, but not completely removed. It is a blend between a traditional notebook and tablet, also called a 2-in-1. |
-| Detachable | A detachable device is an evolution of the traditional notebook where the keyboard can be completely removed. It is a blend between a traditional notebook and tablet, also called a 2-in-1. |
+| Desktop | A desktop PC form factor traditional comes in an upright tower or small desktop chassis and doesn't have an integrated screen. |
+| Notebook | A notebook is a portable clamshell device with an attached keyboard that can't be removed. |
+| Convertible | A convertible device is an evolution of the traditional notebook where the keyboard can be swiveled, rotated or flipped, but not completely removed. It's a blend between a traditional notebook and tablet, also called a 2-in-1. |
+| Detachable | A detachable device is an evolution of the traditional notebook where the keyboard can be removed. It's a blend between a traditional notebook and tablet, also called a 2-in-1. |
 | AIO | An All-in-One (AIO) device is an evolution of the traditional desktop with an attached display. |
 | Stick | A device that turns your TV into a Windows computer. Plug the stick into the HDMI slot on the TV and connect a USB or Bluetooth keyboard or mouse. |
 | Puck | A small-size PC that users can use to plug in a monitor and keyboard. |

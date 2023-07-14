@@ -1,16 +1,15 @@
 ---
 title: Configuration service providers for IT pros (Windows 10/11)
-description: Describes how IT pros and system administrators can use configuration service providers (CSPs) to configure devices. 
-ms.assetid: 25C1FDCA-0E10-42A1-A368-984FFDB2B7B6
+description: Describes how IT pros and system administrators can use configuration service providers (CSPs) to configure devices.
 ms.reviewer: gkomatsu
-manager: dansimp
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-author: greg-lindsay
-ms.author: greglin
+manager: aaroncz
+ms.prod: windows-client
+author: lizgt2000
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Configuration service providers for IT pros
@@ -34,7 +33,7 @@ CSPs are behind many of the management tasks and policies for Windows client, bo
 
 :::image type="content" source="../images/policytocsp.png" alt-text="How intune maps to CSP":::
 
-CSPs receive configuration policies in the XML-based Synchronization Markup Language (SyncML) format, pushed from an MDM-compliant management server, such as Microsoft Intune. Traditional enterprise management systems, such as Microsoft Endpoint Configuration Manager, can also target CSPs, by using a client-side Windows Management Instrumentation (WMI)-to-CSP Bridge.
+CSPs receive configuration policies in the XML-based Synchronization Markup Language (SyncML) format, pushed from an MDM-compliant management server, such as Microsoft Intune. Traditional enterprise management systems, such as Microsoft Configuration Manager, can also target CSPs, by using a client-side Windows Management Instrumentation (WMI)-to-CSP Bridge.
 
 ### Synchronization Markup Language (SyncML)
 
@@ -58,7 +57,7 @@ You can use Windows Configuration Designer to create [provisioning packages](./p
 
 Many settings in Windows Configuration Designer will display documentation for that setting in the center pane, and will include a reference to the CSP if the setting uses one, as shown in the following image.
 
-:::image type="content" source="../images/cspinicd.png" alt-text="In Windows Configuration Designer, how help content appears in icd.":::
+:::image type="content" source="../images/cspinicd.png" alt-text="In Windows Configuration Designer, how help content appears in ICD.":::
 
 [Provisioning packages in Windows client](provisioning-packages.md) explains how to use the Windows Configuration Designer tool to create a runtime provisioning package.
 
@@ -66,7 +65,7 @@ Many settings in Windows Configuration Designer will display documentation for t
 
 Most, if not all, CSPs are surfaced through your MDM service. If you see a CSP that provides a capability that you want to make use of and cannot find that capability in your MDM service, contact your MDM provider for assistance. It might be named differently than you expected. You can see the CSPs supported by MDM in the [Configuration service provider reference](/windows/client-management/mdm/configuration-service-provider-reference).
 
-When a CSP is available but is not explicitly included in your MDM solution, you may be able to make use of the CSP by using OMA-URI settings. In Intune, for example, you can use [custom policy settings](https://go.microsoft.com/fwlink/p/?LinkID=616316) to deploy settings. Intune documents [a partial list of settings](https://go.microsoft.com/fwlink/p/?LinkID=616317) that you can enter in the **OMA-URI Settings** section of a custom policy, if your MDM service provides that extension. You'll notice that the list doesn't explain the meanings of the allowed and default values, so use the [CSP reference documentation](/windows/client-management/mdm/configuration-service-provider-reference) to locate that information.
+When a CSP is available but is not explicitly included in your MDM solution, you may be able to make use of the CSP by using OMA-URI settings. In Intune, for example, you can use [custom policy settings](/mem/intune/configuration/custom-settings-configure) to deploy settings. Intune documents [a partial list of settings](/mem/intune/configuration/custom-settings-windows-10) that you can enter in the **OMA-URI Settings** section of a custom policy, if your MDM service provides that extension. You'll notice that the list doesn't explain the meanings of the allowed and default values, so use the [CSP reference documentation](/windows/client-management/mdm/configuration-service-provider-reference) to locate that information.
 
 ### CSPs in Lockdown XML
 
@@ -84,7 +83,7 @@ The full path to a specific configuration setting is represented by its Open Mob
 
 The following example shows the diagram for the [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp). The diagram maps to the XML for that CSP. Notice the different shapes in the diagram: rounded elements are nodes, and rectangular elements are settings or policies for which a value must be supplied.
 
-:::image type="content" source="../images/provisioning-csp-assignedaccess.png" alt-text="The CSP reference shows the assigned access csp tree.":::
+:::image type="content" source="../images/provisioning-csp-assignedaccess.png" alt-text="The CSP reference shows the assigned access CSP tree.":::
 
 The element in the tree diagram after the root node tells you the name of the CSP. Knowing this structure, you would recognize in XML the parts of the URI path for that CSP and, if you saw it in XML, you would know which CSP reference to look up. For example, in the following OMS-URI path for the kiosk mode app settings, you can see that it uses the [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp).
 
@@ -153,11 +152,9 @@ Here is a list of CSPs supported on Windows 10 Enterprise:
 -   [DMClient CSP](/windows/client-management/mdm/dmclient-csp)
 -   [Email2 CSP](/windows/client-management/mdm/email2-csp)
 -   [EnterpriseAPN CSP](/windows/client-management/mdm/enterpriseapn-csp)
--   [EnterpriseAppManagement CSP](/windows/client-management/mdm/enterpriseappmanagement-csp)
 -   [EnterpriseAssignedAccess CSP](/windows/client-management/mdm/enterpriseassignedaccess-csp)
 -   [EnterpriseDesktopAppManagement CSP](/windows/client-management/mdm/enterprisedesktopappmanagement-csp)
 -   [EnterpriseExt CSP](/windows/client-management/mdm/enterpriseext-csp)
--   [EnterpriseExtFileSystem CSP](/windows/client-management/mdm/enterpriseextfilessystem-csp)
 -   [EnterpriseModernAppManagement CSP](/windows/client-management/mdm/enterprisemodernappmanagement-csp)
 -   [FileSystem CSP](/windows/client-management/mdm/filesystem-csp)
 -   [HealthAttestation CSP](/windows/client-management/mdm/healthattestation-csp)
@@ -165,12 +162,12 @@ Here is a list of CSPs supported on Windows 10 Enterprise:
 -   [Maps CSP](/windows/client-management/mdm/maps-csp)
 -   [NAP CSP](/windows/client-management/mdm/filesystem-csp)
 -   [NAPDEF CSP](/windows/client-management/mdm/napdef-csp)
--   [NodeCache CSP]( https://go.microsoft.com/fwlink/p/?LinkId=723265)
+-   [NodeCache CSP](https://go.microsoft.com/fwlink/p/?LinkId=723265)
 -   [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp)
 -   [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider)
--   [PolicyManager CSP]( https://go.microsoft.com/fwlink/p/?LinkId=723418)
+-   [PolicyManager CSP](https://go.microsoft.com/fwlink/p/?LinkId=723418)
 -   [Provisioning CSP](/windows/client-management/mdm/provisioning-csp)
--   [Proxy CSP]( https://go.microsoft.com/fwlink/p/?LinkId=723372)
+-   [Proxy CSP](https://go.microsoft.com/fwlink/p/?LinkId=723372)
 -   [PXLOGICAL CSP](/windows/client-management/mdm/pxlogical-csp)
 -   [Registry CSP](/windows/client-management/mdm/registry-csp)
 -   [RemoteFind CSP](/windows/client-management/mdm/remotefind-csp)
@@ -184,6 +181,6 @@ Here is a list of CSPs supported on Windows 10 Enterprise:
 -   [Update CSP](/windows/client-management/mdm/update-csp)
 -   [VPN CSP](/windows/client-management/mdm/vpn-csp)
 -   [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)
--   [Wi-Fi CSP](/documentation/)
+-   [Wi-Fi CSP](/windows/client-management/mdm/wifi-csp)
 -   [WindowsLicensing CSP](/windows/client-management/mdm/windowslicensing-csp)
 -   [WindowsSecurityAuditing CSP](/windows/client-management/mdm/windowssecurityauditing-csp)

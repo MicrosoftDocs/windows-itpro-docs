@@ -1,18 +1,14 @@
 ---
 title: Manage connections from Windows operating system components to Microsoft services using Microsoft Intune MDM Server
 description: Use MDM CSPs to minimize connections from Windows to Microsoft services, or to configure particular privacy settings.
-ms.assetid: ACCEB0DD-BC6F-41B1-B359-140B242183D9
-keywords: privacy, manage connections to Microsoft, Windows 10
-ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
+ms.prod: windows-client
+ms.technology: itpro-privacy
 ms.localizationpriority: high
-audience: ITPro
-author: RyanHechtMSFT
-ms.author: dansimp
-manager: dansimp
-ms.date: 11/29/2021
-ms.technology: privacy
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
+ms.date: 05/15/2019
+ms.topic: conceptual
 ---
 
 # Manage connections from Windows 10 and Windows 11 operating system components to Microsoft services using Microsoft Intune MDM Server
@@ -84,7 +80,7 @@ For Windows 10 and Windows 11, the following MDM policies are available in the [
    1. MDM Policy: [Notifications/DisallowTileNotification](/windows/client-management/mdm/policy-csp-notifications). This policy setting turns off tile notifications. If you enable this policy setting applications and system features will not be able to update their tiles and tile badges in the Start screen.  **Integer value 1**
 
 1. **Mail synchronization**
-   1. MDM Policy: [Accounts/AllowMicrosoftAccountConnection](/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection). Specifies whether the user is allowed to use an MSA account for non-email related connection authentication and services. **Set to 0 (zero)**
+   1. MDM Policy: [Accounts/AllowMicrosoftAccountConnection](/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection). Specifies whether the user is allowed to use an Microsoft account for non-email related connection authentication and services. **Set to 0 (zero)**
 
 1. **Microsoft Account**
    1. MDM Policy: [Accounts/AllowMicrosoftAccountSignInAssistant](/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountsigninassistant). Disable the Microsoft Account Sign-In Assistant. **Set to 0 (zero)**
@@ -179,4 +175,4 @@ For Windows 10 and Windows 11, the following MDM policies are available in the [
 |settings-win.data.microsoft.com|
 |msedge.api.cdp.microsoft.com|
 |\*.dl.delivery.mp.microsoft.com|
-
+|edge.microsoft.com|

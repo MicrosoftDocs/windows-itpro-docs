@@ -1,125 +1,199 @@
 ---
-title: Policy CSP - AboveLock
-description: Learn the various AboveLock Policy configuration service provider (CSP) for Windows editions of Home, Pro, Business, and more. 
-ms.author: dansimp
+title: AboveLock Policy CSP
+description: Learn more about the AboveLock Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- AboveLock-Begin -->
 # Policy CSP - AboveLock
 
+<!-- AboveLock-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AboveLock-Editable-End -->
 
+<!-- AllowActionCenterNotifications-Begin -->
+## AllowActionCenterNotifications
 
-<hr/>
+> [!NOTE]
+> This policy is deprecated and may be removed in a future release.
 
-<!--Policies-->
-## AboveLock policies  
+<!-- AllowActionCenterNotifications-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+<!-- AllowActionCenterNotifications-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#abovelock-allowcortanaabovelock">AboveLock/AllowCortanaAboveLock</a>
-  </dd>
-  <dd>
-    <a href="#abovelock-allowtoasts">AboveLock/AllowToasts</a>
-  </dd>
-</dl>
+<!-- AllowActionCenterNotifications-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AboveLock/AllowActionCenterNotifications
+```
+<!-- AllowActionCenterNotifications-OmaUri-End -->
 
+<!-- AllowActionCenterNotifications-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy is deprecated.
+<!-- AllowActionCenterNotifications-Description-End -->
 
-<hr/>
+<!-- AllowActionCenterNotifications-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowActionCenterNotifications-Editable-End -->
 
+<!-- AllowActionCenterNotifications-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="abovelock-allowcortanaabovelock"></a>**AboveLock/AllowCortanaAboveLock**  
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowActionCenterNotifications-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowActionCenterNotifications-AllowedValues-Begin -->
+**Allowed values**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowActionCenterNotifications-AllowedValues-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowActionCenterNotifications-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowActionCenterNotifications-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowActionCenterNotifications-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowCortanaAboveLock-Begin -->
+## AllowCortanaAboveLock
 
-<hr/>
+<!-- AllowCortanaAboveLock-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowCortanaAboveLock-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-Added in Windows 10, version 1607. Specifies whether or not the user can interact with Cortana using speech while the system is locked. If you enable or don’t configure this setting, the user can interact with Cortana using speech while the system is locked. If you disable this setting, the system will need to be unlocked for the user to interact with Cortana using speech.
+<!-- AllowCortanaAboveLock-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AboveLock/AllowCortanaAboveLock
+```
+<!-- AllowCortanaAboveLock-OmaUri-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Allow Cortana above lock screen*
--   GP name: *AllowCortanaAboveLock*
--   GP path: *Windows Components/Search*
--   GP ADMX file name: *Search.admx*
+<!-- AllowCortanaAboveLock-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting determines whether or not the user can interact with Cortana using speech while the system is locked.
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+- If you enable or don't configure this setting, the user can interact with Cortana using speech while the system is locked.
 
--   0 - Not allowed.
--   1 (default) - Allowed.
+- If you disable this setting, the system will need to be unlocked for the user to interact with Cortana using speech.
+<!-- AllowCortanaAboveLock-Description-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
+<!-- AllowCortanaAboveLock-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowCortanaAboveLock-Editable-End -->
 
-<hr/>
+<!-- AllowCortanaAboveLock-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="abovelock-allowtoasts"></a>**AboveLock/AllowToasts**  
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowCortanaAboveLock-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowCortanaAboveLock-AllowedValues-Begin -->
+**Allowed values**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes, starting in Windows 10, version 1607|Yes|
-|Enterprise|Yes, starting in Windows 10, version 1607|Yes|
-|Education|Yes, starting in Windows 10, version 1607|Yes|
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowCortanaAboveLock-AllowedValues-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowCortanaAboveLock-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | AllowCortanaAboveLock |
+| Friendly Name | Allow Cortana above lock screen |
+| Location | Computer Configuration |
+| Path | Windows Components > Search |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Windows Search |
+| Registry Value Name | AllowCortanaAboveLock |
+| ADMX File Name | Search.admx |
+<!-- AllowCortanaAboveLock-GpMapping-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowCortanaAboveLock-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowCortanaAboveLock-Examples-End -->
 
-<hr/>
+<!-- AllowCortanaAboveLock-End -->
 
-<!--/Scope-->
-<!--Description-->
-Specifies whether to allow toast notifications above the device lock screen.
+<!-- AllowToasts-Begin -->
+## AllowToasts
 
-Most restricted value is 0.
+<!-- AllowToasts-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowToasts-Applicability-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowToasts-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/AboveLock/AllowToasts
+```
+<!-- AllowToasts-OmaUri-End -->
 
--   0 - Not allowed.
--   1 (default) - Allowed.
+<!-- AllowToasts-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies whether to allow toast notifications above the device lock screen. Most restricted value is 0.
+<!-- AllowToasts-Description-End -->
 
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
+<!-- AllowToasts-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowToasts-Editable-End -->
 
-<!--/Policies-->
+<!-- AllowToasts-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowToasts-DFProperties-End -->
+
+<!-- AllowToasts-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Not allowed. |
+| 1 (Default) | Allowed. |
+<!-- AllowToasts-AllowedValues-End -->
+
+<!-- AllowToasts-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowToasts-Examples-End -->
+
+<!-- AllowToasts-End -->
+
+<!-- AboveLock-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- AboveLock-CspMoreInfo-End -->
+
+<!-- AboveLock-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

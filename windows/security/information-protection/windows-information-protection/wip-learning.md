@@ -1,21 +1,15 @@
 ---
 title: Fine-tune Windows Information Policy (WIP) with WIP Learning
 description: How to access the WIP Learning report to monitor and apply Windows Information Protection in your company.
-ms.assetid: 53db29d2-d99d-4db6-b494-90e2b4872ca2
 ms.reviewer: 
-keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, WIP Learning
-ms.prod: m365-security
-ms.mktglfcycl:
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: cabailey
-ms.author: cabailey
-manager: laurawi
-audience: ITPro
-ms.collection: M365-security-compliance
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.topic: conceptual
 ms.date: 02/26/2019
+ms.technology: itpro-security
 ---
 
 # Fine-tune Windows Information Protection (WIP) with WIP Learning
@@ -31,9 +25,9 @@ In the **Website learning report**, you can view a summary of the devices that h
 
 ## Access the WIP Learning reports
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
-1. Click **Client apps** > **App protection status** > **Reports**.
+1. Select **Apps** > **Monitor** > **App protection status** > **Reports**.
 
    ![Image showing the UI path to the WIP report.](images/access-wip-learning-report.png) 
 

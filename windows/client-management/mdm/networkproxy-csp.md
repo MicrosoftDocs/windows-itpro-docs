@@ -1,93 +1,355 @@
 ---
 title: NetworkProxy CSP
-description: Learn how the NetworkProxy configuration service provider (CSP) is used to configure a proxy server for ethernet and Wi-Fi connections.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 08/29/2018
-ms.reviewer: 
-manager: dansimp
+description: Learn more about the NetworkProxy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- NetworkProxy-Begin -->
 # NetworkProxy CSP
 
+<!-- NetworkProxy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 The NetworkProxy configuration service provider (CSP) is used to configure a proxy server for ethernet and Wi-Fi connections. These settings do not apply to VPN connections. This CSP was added in Windows 10, version 1703.
 
-How the settings work:  
+How the settings work:
 
-- If auto-detect is enabled, the system tries to find the path to a proxy auto config (PAC) script and download it.
+- If auto-detect is enabled, the system tries to find the path to a Proxy Auto Config (PAC) script and download it.
 - If #1 fails and a setup script is specified, the system tries to download the explicitly configured PAC script.
 - If #2 fails and a proxy server is specified, the system tries to use the explicitly configured proxy server.
 - Otherwise, the system tries to reach the site directly.
+<!-- NetworkProxy-Editable-End -->
 
-The following shows the NetworkProxy configuration service provider in tree format.
+<!-- NetworkProxy-Tree-Begin -->
+The following list shows the NetworkProxy configuration service provider nodes:
 
-```console
-./Vendor/MSFT
-NetworkProxy
-----ProxySettingsPerUser
-----AutoDetect
-----SetupScriptUrl
-----ProxyServer
---------ProxyAddress
---------Exceptions
---------UseProxyForLocalAddresses
+- ./Vendor/MSFT/NetworkProxy
+  - [AutoDetect](#autodetect)
+  - [ProxyServer](#proxyserver)
+    - [Exceptions](#proxyserverexceptions)
+    - [ProxyAddress](#proxyserverproxyaddress)
+    - [UseProxyForLocalAddresses](#proxyserveruseproxyforlocaladdresses)
+  - [ProxySettingsPerUser](#proxysettingsperuser)
+  - [SetupScriptUrl](#setupscripturl)
+<!-- NetworkProxy-Tree-End -->
+
+<!-- Device-AutoDetect-Begin -->
+## AutoDetect
+
+<!-- Device-AutoDetect-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- Device-AutoDetect-Applicability-End -->
+
+<!-- Device-AutoDetect-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/NetworkProxy/AutoDetect
 ```
+<!-- Device-AutoDetect-OmaUri-End -->
 
-<a href="" id="networkproxy"></a>**./Vendor/MSFT/NetworkProxy**  
-The root node for the NetworkProxy configuration service provider.
-
-<a href="" id="proxysettingsperuser"></a>**ProxySettingsPerUser**  
-Added in Windows 10, version 1803. When set to 0, it enables proxy configuration as global, machine wide.
-
-Supported operations are Add, Get, Replace, and Delete.
-
-> [!Note]
-> Per user proxy configuration setting is not supported using a configuration file, only modifying registry settings on a local machine.
-
-<a href="" id="autodetect"></a>**AutoDetect**
+<!-- Device-AutoDetect-Description-Begin -->
+<!-- Description-Source-DDF -->
 Automatically detect settings. If enabled, the system tries to find the path to a PAC script.
+<!-- Device-AutoDetect-Description-End -->
 
-Valid values:
+<!-- Device-AutoDetect-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-AutoDetect-Editable-End -->
 
-- 0 - Disabled
-- 1 (default) - Enabled
+<!-- Device-AutoDetect-DFProperties-Begin -->
+**Description framework properties**:
 
-The data type is integer. Supported operations are Get and Replace. Starting in Windows 10, version 1803, the Delete operation is also supported.
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- Device-AutoDetect-DFProperties-End -->
 
-<a href="" id="setupscripturl"></a>**SetupScriptUrl**
+<!-- Device-AutoDetect-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Disabled. |
+| 1 (Default) | Enabled. |
+<!-- Device-AutoDetect-AllowedValues-End -->
+
+<!-- Device-AutoDetect-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-AutoDetect-Examples-End -->
+
+<!-- Device-AutoDetect-End -->
+
+<!-- Device-ProxyServer-Begin -->
+## ProxyServer
+
+<!-- Device-ProxyServer-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- Device-ProxyServer-Applicability-End -->
+
+<!-- Device-ProxyServer-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/NetworkProxy/ProxyServer
+```
+<!-- Device-ProxyServer-OmaUri-End -->
+
+<!-- Device-ProxyServer-Description-Begin -->
+<!-- Description-Source-DDF -->
+Node for configuring a static proxy for Ethernet and Wi-Fi connections. The same proxy server is used for all protocols - including HTTP, HTTPS, FTP, and SOCKS. These settings don't apply to VPN connections.
+<!-- Device-ProxyServer-Description-End -->
+
+<!-- Device-ProxyServer-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ProxyServer-Editable-End -->
+
+<!-- Device-ProxyServer-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `node` |
+| Access Type | Get |
+<!-- Device-ProxyServer-DFProperties-End -->
+
+<!-- Device-ProxyServer-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ProxyServer-Examples-End -->
+
+<!-- Device-ProxyServer-End -->
+
+<!-- Device-ProxyServer-Exceptions-Begin -->
+### ProxyServer/Exceptions
+
+<!-- Device-ProxyServer-Exceptions-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- Device-ProxyServer-Exceptions-Applicability-End -->
+
+<!-- Device-ProxyServer-Exceptions-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/NetworkProxy/ProxyServer/Exceptions
+```
+<!-- Device-ProxyServer-Exceptions-OmaUri-End -->
+
+<!-- Device-ProxyServer-Exceptions-Description-Begin -->
+<!-- Description-Source-DDF -->
+Addresses that shouldn't use the proxy server. The system won't use the proxy server for addresses beginning with what's specified in this node. Use semicolons (;) to separate entries.
+<!-- Device-ProxyServer-Exceptions-Description-End -->
+
+<!-- Device-ProxyServer-Exceptions-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ProxyServer-Exceptions-Editable-End -->
+
+<!-- Device-ProxyServer-Exceptions-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `;`) |
+<!-- Device-ProxyServer-Exceptions-DFProperties-End -->
+
+<!-- Device-ProxyServer-Exceptions-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ProxyServer-Exceptions-Examples-End -->
+
+<!-- Device-ProxyServer-Exceptions-End -->
+
+<!-- Device-ProxyServer-ProxyAddress-Begin -->
+### ProxyServer/ProxyAddress
+
+<!-- Device-ProxyServer-ProxyAddress-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- Device-ProxyServer-ProxyAddress-Applicability-End -->
+
+<!-- Device-ProxyServer-ProxyAddress-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/NetworkProxy/ProxyServer/ProxyAddress
+```
+<!-- Device-ProxyServer-ProxyAddress-OmaUri-End -->
+
+<!-- Device-ProxyServer-ProxyAddress-Description-Begin -->
+<!-- Description-Source-DDF -->
+Address to the proxy server. Specify an address in the format `<server>`[":"`<port>`].
+<!-- Device-ProxyServer-ProxyAddress-Description-End -->
+
+<!-- Device-ProxyServer-ProxyAddress-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ProxyServer-ProxyAddress-Editable-End -->
+
+<!-- Device-ProxyServer-ProxyAddress-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Delete, Get, Replace |
+<!-- Device-ProxyServer-ProxyAddress-DFProperties-End -->
+
+<!-- Device-ProxyServer-ProxyAddress-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ProxyServer-ProxyAddress-Examples-End -->
+
+<!-- Device-ProxyServer-ProxyAddress-End -->
+
+<!-- Device-ProxyServer-UseProxyForLocalAddresses-Begin -->
+### ProxyServer/UseProxyForLocalAddresses
+
+<!-- Device-ProxyServer-UseProxyForLocalAddresses-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- Device-ProxyServer-UseProxyForLocalAddresses-Applicability-End -->
+
+<!-- Device-ProxyServer-UseProxyForLocalAddresses-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/NetworkProxy/ProxyServer/UseProxyForLocalAddresses
+```
+<!-- Device-ProxyServer-UseProxyForLocalAddresses-OmaUri-End -->
+
+<!-- Device-ProxyServer-UseProxyForLocalAddresses-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies whether the proxy server should be used for local (intranet) addresses.
+<!-- Device-ProxyServer-UseProxyForLocalAddresses-Description-End -->
+
+<!-- Device-ProxyServer-UseProxyForLocalAddresses-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-ProxyServer-UseProxyForLocalAddresses-Editable-End -->
+
+<!-- Device-ProxyServer-UseProxyForLocalAddresses-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-ProxyServer-UseProxyForLocalAddresses-DFProperties-End -->
+
+<!-- Device-ProxyServer-UseProxyForLocalAddresses-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Use proxy server for local addresses. |
+| 1 | Don't use proxy server for local addresses. |
+<!-- Device-ProxyServer-UseProxyForLocalAddresses-AllowedValues-End -->
+
+<!-- Device-ProxyServer-UseProxyForLocalAddresses-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ProxyServer-UseProxyForLocalAddresses-Examples-End -->
+
+<!-- Device-ProxyServer-UseProxyForLocalAddresses-End -->
+
+<!-- Device-ProxySettingsPerUser-Begin -->
+## ProxySettingsPerUser
+
+<!-- Device-ProxySettingsPerUser-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- Device-ProxySettingsPerUser-Applicability-End -->
+
+<!-- Device-ProxySettingsPerUser-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/NetworkProxy/ProxySettingsPerUser
+```
+<!-- Device-ProxySettingsPerUser-OmaUri-End -->
+
+<!-- Device-ProxySettingsPerUser-Description-Begin -->
+<!-- Description-Source-DDF -->
+When set to 0, it enables proxy configuration as global, machine wide.
+<!-- Device-ProxySettingsPerUser-Description-End -->
+
+<!-- Device-ProxySettingsPerUser-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+> [!NOTE]
+> Per user proxy configuration setting is not supported using a configuration file, only modifying registry settings on a local machine.
+<!-- Device-ProxySettingsPerUser-Editable-End -->
+
+<!-- Device-ProxySettingsPerUser-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- Device-ProxySettingsPerUser-DFProperties-End -->
+
+<!-- Device-ProxySettingsPerUser-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Proxy configuration is global, machine wide. |
+| 1 (Default) | Proxy configuration is per user. |
+<!-- Device-ProxySettingsPerUser-AllowedValues-End -->
+
+<!-- Device-ProxySettingsPerUser-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-ProxySettingsPerUser-Examples-End -->
+
+<!-- Device-ProxySettingsPerUser-End -->
+
+<!-- Device-SetupScriptUrl-Begin -->
+## SetupScriptUrl
+
+<!-- Device-SetupScriptUrl-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- Device-SetupScriptUrl-Applicability-End -->
+
+<!-- Device-SetupScriptUrl-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/NetworkProxy/SetupScriptUrl
+```
+<!-- Device-SetupScriptUrl-OmaUri-End -->
+
+<!-- Device-SetupScriptUrl-Description-Begin -->
+<!-- Description-Source-DDF -->
 Address to the PAC script you want to use.
+<!-- Device-SetupScriptUrl-Description-End -->
 
-The data type is string. Supported operations are Get and Replace. Starting in Windows 10, version 1803, the Delete operation is also supported.
+<!-- Device-SetupScriptUrl-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-SetupScriptUrl-Editable-End -->
 
-<a href="" id="proxyserver"></a>**ProxyServer**  
-Node for configuring a static proxy for Ethernet and Wi-Fi connections. The same proxy server is used for all protocols - including HTTP, HTTPS, FTP, and SOCKS. These settings do not apply to VPN connections.
+<!-- Device-SetupScriptUrl-DFProperties-Begin -->
+**Description framework properties**:
 
-Supported operation is Get.
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Delete, Get, Replace |
+<!-- Device-SetupScriptUrl-DFProperties-End -->
 
-<a href="" id="proxyaddress"></a>**ProxyAddress**  
-Address to the proxy server. Specify an address in the format &lt;server&gt;[“:”&lt;port&gt;]. 
+<!-- Device-SetupScriptUrl-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-SetupScriptUrl-Examples-End -->
 
-The data type is string. Supported operations are Get and Replace. Starting in Windows 10, version 1803, the Delete operation is also supported.
+<!-- Device-SetupScriptUrl-End -->
 
-<a href="" id="exceptions"></a>**Exceptions**  
-Addresses that should not use the proxy server. The system will not use the proxy server for addresses beginning with what is specified in this node. Use semicolons (;) to separate entries. 
-
-The data type is string. Supported operations are Get and Replace. Starting in Windows 10, version 1803, the Delete operation is also supported.
-
-<a href="" id="useproxyforlocaladdresses"></a>**UseProxyForLocalAddresses**  
-Specifies whether the proxy server should be used for local (intranet) addresses. 
-
-Valid values:
-
-- 0 (default) - Use proxy server for local addresses
-- 1 - Do not use proxy server for local addresses
-
-The data type is integer. Supported operations are Get and Replace. Starting in Windows 10, version 1803, the Delete operation is also supported.
-
-## Configuration Example
+<!-- NetworkProxy-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+## Examples
 
 These generic code portions for the options **ProxySettingsPerUser**, **Autodetect**, and **SetupScriptURL** can be used for a specific operation, for example Replace.  Only enter the portion of code needed in the **Replace** section.
 
@@ -120,7 +382,7 @@ These generic code portions for the options **ProxySettingsPerUser**, **Autodete
         </Meta>
         <Data>1</Data>
     </Item>
-</Replace> 
+</Replace>
 ```
 
 ```xml
@@ -138,3 +400,10 @@ These generic code portions for the options **ProxySettingsPerUser**, **Autodete
     </Item>
 </Replace>
 ```
+<!-- NetworkProxy-CspMoreInfo-End -->
+
+<!-- NetworkProxy-End -->
+
+## Related articles
+
+[Configuration service provider reference](configuration-service-provider-reference.md)

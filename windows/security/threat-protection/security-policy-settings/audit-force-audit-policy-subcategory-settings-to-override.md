@@ -1,26 +1,26 @@
 ---
-title: Audit Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings (Windows 10)
+title: Audit Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings 
 description: Learn more about the security policy setting, Audit Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings.
 ms.assetid: 8ddc06bc-b6d6-4bac-9051-e0d77035bd4e
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Audit: Force audit policy subcategory settings (Windows Vista or later) to override audit policy category settings** security policy setting.
@@ -38,7 +38,7 @@ There are over 40 auditing subcategories that provide precise details about acti
 
 ### Best practices
 
--   Leave the setting enabled. This provides the ability to audit events at the category level without revising a policy.
+-   Leave the setting enabled. This "enabled" state helps audit events at the category level without revising a policy.
 
 ### Location
 
@@ -63,7 +63,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ### Group Policy
 
@@ -71,9 +71,9 @@ All auditing capabilities are integrated in Group Policy. You can configure, dep
 
 ### Auditing
 
-To manage an audit policy by using subcategories without requiring a change to Group Policy, the SCENoApplyLegacyAuditPolicy registry value , prevents the application of category-level audit policy from Group Policy and from the Local Security Policy administrative tool.
+To manage an audit policy by using subcategories without requiring a change to Group Policy, the SCENoApplyLegacyAuditPolicy registry value prevents the application of category-level audit policy from Group Policy and from the Local Security Policy administrative tool.
 
-If the category level audit policy that is set here is not consistent with the events that are currently being generated, the cause might be that this registry key is set.
+If the category level audit policy that is set here isn't consistent with the events that are currently being generated, the cause might be that this registry key is set.
 
 ### Command-line tools
 

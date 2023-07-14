@@ -1,16 +1,15 @@
 ---
 title: User Experience Virtualization for Windows 10, version 1607
 description: Overview of User Experience Virtualization for Windows 10, version 1607
-author: greg-lindsay
-ms.pagetype: mdop, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.prod: w10
+author: aczechowski
+ms.prod: windows-client
+ms.collection: tier3
 ms.date: 05/02/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-configure
 ---
 
 # User Experience Virtualization (UE-V) for Windows 10 overview

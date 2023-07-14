@@ -1,23 +1,21 @@
 ---
 title: Win32AppInventory DDF file
 description: Learn about the OMA DM device description framework (DDF) for the Win32AppInventory configuration service provider (CSP).
-ms.assetid: F6BCC10B-BFE4-40AB-AEEE-34679A4E15B0
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+ms.reviewer:
+manager: aaroncz
+ms.author: vinpa
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
+author: vinaypamnani-msft
 ms.date: 12/05/2017
 ---
 
 # Win32AppInventory DDF file
 
-
 This topic shows the OMA DM device description framework (DDF) for the **Win32AppInventory** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 The XML below is the current version for this CSP.
 
@@ -274,15 +272,4 @@ The XML below is the current version for this CSP.
 
 ## Related topics
 
-
 [Win32AppInventory configuration service provider](win32appinventory-csp.md)
-
- 
-
- 
-
-
-
-
-
-

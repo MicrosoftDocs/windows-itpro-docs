@@ -1,26 +1,26 @@
 ---
-title: Network access Allow anonymous SID/Name translation (Windows 10)
+title: Network access Allow anonymous SID/Name translation 
 description: Best practices, location, values, policy management and security considerations for the policy setting, Network access Allow anonymous SID/Name translation.
 ms.assetid: 0144477f-22a6-4d06-b70a-9c9c2196e99e
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network access: Allow anonymous SID/Name translation
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Network access: Allow anonymous SID/Name translation** security policy setting.
@@ -37,7 +37,7 @@ Misuse of this policy setting is a common error that can cause data loss or prob
 
 -   Enabled
 
-    An anonymous user can request the SID attribute for another user. An anonymous user with knowledge of an administrator's SID could contact a computer that has this policy enabled and use the SID to get the administrator's name. This setting affects the SID-to-name translation as well as the name-to-SID translation.
+    An anonymous user can request the SID attribute for another user. An anonymous user with knowledge of an administrator's SID could contact a computer that has this policy enabled and use the SID to get the administrator's name. This setting affects the SID-to-name translation and the name-to-SID translation.
 
 -   Disabled
 
@@ -47,7 +47,7 @@ Misuse of this policy setting is a common error that can cause data loss or prob
 
 ### Best practices
 
--   Set this policy to Disabled. This is the default value on member computers; therefore, it will have no impact on them. The default value for domain controllers is Enabled.
+-   Set this policy to Disabled, which is the default value on member computers; therefore, it will have no impact on them. The default value for domain controllers is Enabled.
 
 ### Location
 
@@ -79,7 +79,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ### Group Policy
 

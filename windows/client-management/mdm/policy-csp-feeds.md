@@ -1,24 +1,23 @@
 ---
 title: Policy CSP - Feeds
 description: Use the Policy CSP - Feeds setting policy specifies whether news and interests is allowed on the device.
-ms.author: v-nsatapathy
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: nimishasatapathy
+ms.author: vinpa
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
+author: vinaypamnani-msft
 ms.localizationpriority: medium
 ms.date: 09/17/2021
-ms.reviewer: 
-manager: dansimp
+ms.reviewer:
+manager: aaroncz
 ---
 
 # Policy CSP - Feeds
 
-
 <hr/>
 
 <!--Policies-->
-## Feeds policies  
+## Feeds policies
 
 <dl>
   <dd>
@@ -26,11 +25,10 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 <!--Policy-->
-<a href="" id="feeds-feedsenabled"></a>**Feeds/FeedsEnabled**  
+<a href="" id="feeds-feedsenabled"></a>**Feeds/FeedsEnabled**
 
 <!--SupportedSKUs-->
 
@@ -38,6 +36,7 @@ manager: dansimp
 |--- |--- |--- |
 |Home|No|No|
 |Pro|Yes|No|
+|Windows SE|No|No|
 |Business|Yes|No|
 |Enterprise|Yes|No|
 |Education|Yes|No|
@@ -55,7 +54,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting specifies whether news and interests is allowed on the device.
+This policy setting specifies, whether news and interests is allowed on the device.
 
 The values for this policy are 1 and 0. This policy defaults to 1.
 
@@ -66,7 +65,7 @@ The values for this policy are 1 and 0. This policy defaults to 1.
 <!--/Description-->
 
 <!--ADMXBacked-->
-ADMX Info:  
+ADMX Info:
 -   GP Friendly name: *Enable news and interests on the taskbar*
 -   GP name: *FeedsEnabled*
 -   GP path: *Windows Components\News and interests*
@@ -77,3 +76,6 @@ ADMX Info:
 
 <!--/Policies-->
 
+## Related topics
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

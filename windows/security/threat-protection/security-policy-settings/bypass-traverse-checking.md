@@ -1,26 +1,26 @@
 ---
-title: Bypass traverse checking (Windows 10)
+title: Bypass traverse checking 
 description: Describes the best practices, location, values, policy management, and security considerations for the Bypass traverse checking security policy setting.
 ms.assetid: 1c828655-68d3-4140-aa0f-caa903a7087e
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Bypass traverse checking
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 >Learn more about what features and functionality are supported in each Windows edition at [Compare Windows 10 Editions](https://www.microsoft.com/WindowsForBusiness/Compare).
@@ -29,7 +29,7 @@ Describes the best practices, location, values, policy management, and security 
 
 ## Reference
 
-This policy setting determines which users (or a process that acts on behalf of the user’s account) have permission to navigate an object path in the NTFS file system or in the registry without being checked for the Traverse Folder special access permission. This user right does not allow the user to list the contents of a folder. It only allows the user to traverse folders to access permitted files or subfolders.
+This policy setting determines which users (or a process that acts on behalf of the user’s account) have permission to navigate an object path in the NTFS file system or in the registry without being checked for the Traverse Folder special access permission. This user right doesn't allow the user to list the contents of a folder. It only allows the user to traverse folders to access permitted files or subfolders.
 
 Constant: SeChangeNotifyPrivilege
 
@@ -40,7 +40,7 @@ Constant: SeChangeNotifyPrivilege
 
 ### Best practices
 
-1.  Use access–based enumeration when you want to prevent users from seeing any folder or file to which they do not have access.
+1.  Use access–based enumeration when you want to prevent users from seeing any folder or file to which they don't have access.
 2.  Use the default settings of this policy in most cases. If you change the settings, verify your intent through testing.
 
 ### Location
@@ -62,9 +62,9 @@ The following table lists the actual and effective default policy values. Defaul
  
 ## Policy management
 
-Permissions to files and folders are controlled though the appropriate configuration of file system access control lists (ACLs).The ability to traverse the folder does not provide any Read or Write permissions to the user.
+Permissions to files and folders are controlled through the appropriate configuration of file system access control lists (ACLs). The ability to traverse the folder doesn't provide any Read or Write permissions to the user.
 
-A restart of the computer is not required for this policy setting to be effective.
+A restart of the computer isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 
@@ -85,11 +85,11 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-The default configuration for the **Bypass traverse checking** setting is to allow all users to bypass traverse checking. Permissions to files and folders are controlled though the appropriate configuration of file system access control lists (ACLs) because the ability to traverse the folder does not provide any Read or Write permissions to the user. The only scenario in which the default configuration could lead to a mishap would be if the administrator who configures permissions does not understand how this policy setting works. For example, the administrator might expect that users who are unable to access a folder are unable to access the contents of any child folders. Such a situation is unlikely, and, therefore, this vulnerability presents little risk.
+The default configuration for the **Bypass traverse checking** setting is to allow all users to bypass traverse checking. Permissions to files and folders are controlled through the appropriate configuration of file system access control lists (ACLs) because the ability to traverse the folder doesn't provide any Read or Write permissions to the user. The only scenario in which the default configuration could lead to a mishap would be if the administrator who configures permissions doesn't understand how this policy setting works. For example, the administrator might expect that users who are unable to access a folder are unable to access the contents of any child folders. Such a situation is unlikely, and, therefore, this vulnerability presents little risk.
 
 ### Countermeasure
 
-Organizations that are extremely concerned about security may want to remove the Everyone group, and perhaps the Users group, from the list of groups that have the **Bypass traverse checking** user right. Taking explicit control over traversal assignments can be an effective way to limit access to sensitive information. Access–based enumeration can also be used. If you use access–based enumeration, users cannot see any folder or file to which they do not have access. For more info about this feature, see [Access-based Enumeration](/previous-versions/windows/it-pro/windows-server-2003/cc784710(v=ws.10)).
+Organizations that are concerned about security may want to remove the Everyone group from the list of groups that have the **Bypass traverse checking** user right. Taking explicit control over traversal assignments can be an effective way to limit access to sensitive information. Access–based enumeration can also be used. If you use access–based enumeration, users can't see any folder or file to which they don't have access. For more info about this feature, see [Access-based Enumeration](/previous-versions/windows/it-pro/windows-server-2003/cc784710(v=ws.10)).
 
 ### Potential impact
 

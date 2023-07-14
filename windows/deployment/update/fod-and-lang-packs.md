@@ -1,18 +1,14 @@
 ---
 title: Make FoD and language packs available for WSUS/Configuration Manager
 description: Learn how to make FoD and language packs available when you're using WSUS/Configuration Manager.
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.pagetype: article
-ms.author: jaimeo
-audience: itpro
-author: jaimeo
+ms.prod: windows-client
+ms.author: mstewart
+author: mestew
 ms.localizationpriority: medium
 ms.date: 03/13/2019
-ms.reviewer: 
-manager: laurawi
+manager: aaroncz
 ms.topic: article
-ms.custom: seo-marvel-apr2020
+ms.technology: itpro-updates
 ---
 # How to make Features on Demand and language packs available when you're using WSUS or Configuration Manager
 

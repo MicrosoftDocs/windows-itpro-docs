@@ -1,21 +1,20 @@
 ---
-title: Enforce user logon restrictions (Windows 10)
+title: Enforce user logon restrictions 
 description: Describes the best practices, location, values, policy management, and security considerations for the Enforce user logon restrictions security policy setting.
 ms.assetid: 5891cb73-f1ec-48b9-b703-39249e48a29f
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Enforce user logon restrictions
@@ -37,9 +36,9 @@ The possible values for this Group Policy setting are:
 
 ### Best practices
 
--   If this policy setting is disabled, users might be granted session tickets for services that they do not have the right to use.
+-   If this policy setting is disabled, users might be granted session tickets for services that they don't have the right to use.
 
-    We recommend to set **Enforce user logon restrictions** to Enabled.
+    We recommend setting **Enforce user logon restrictions** to Enabled.
 
 ### Location
 
@@ -62,7 +61,7 @@ The following table lists the actual and effective default policy values. Defaul
 
 This section describes features, tools, and guidance to help you manage this policy.
 
-A restart of the device is not required for this policy setting to be effective.
+A restart of the device isn't required for this policy setting to be effective.
 
 ### Group Policy
 
@@ -91,7 +90,7 @@ Enable the **Enforce user logon restrictions** setting.
 
 ### Potential impact
 
-None. This is the default configuration.
+None. This non-impact state is the default configuration.
 
 ## Related topics
 

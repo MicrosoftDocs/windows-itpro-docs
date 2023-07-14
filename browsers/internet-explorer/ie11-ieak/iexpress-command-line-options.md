@@ -39,8 +39,6 @@ These command-line options work with IExpress:<br>
 |`/r:a` |Always restarts the computer after installation. |
 |`/r:s` |Restarts the computer after installation without prompting the employee. |
 
-For more information, see [Command-line switches for IExpress software update packages](https://go.microsoft.com/fwlink/p/?LinkId=317973).
-
 ## Related topics
 - [IExpress Wizard for Windows Server 2008 R2 with SP1](iexpress-wizard-for-win-server.md)
 - [Internet Explorer Setup command-line options and return codes](ie-setup-command-line-options-and-return-codes.md)

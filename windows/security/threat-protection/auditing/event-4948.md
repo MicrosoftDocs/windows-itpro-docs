@@ -1,17 +1,18 @@
 ---
-title: 4948(S) A change has been made to Windows Firewall exception list. A rule was deleted. (Windows 10)
+title: 4948(S) A change has been made to Windows Firewall exception list. A rule was deleted. 
 description: Describes security event 4948(S) A change has been made to Windows Firewall exception list. A rule was deleted.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4948(S): A change has been made to Windows Firewall exception list. A rule was deleted.
@@ -71,11 +72,11 @@ This event doesn't generate when the rule was deleted via Group Policy.
 
 -   All
 
--   Domain,Public
+-   Domain, Public
 
--   Domain,Private
+-   Domain, Private
 
--   Private,Public
+-   Private, Public
 
 -   Public
 
@@ -87,11 +88,11 @@ This event doesn't generate when the rule was deleted via Group Policy.
 
 -   **Rule ID** \[Type = UnicodeString\]: the unique identifier for deleted firewall rule.
 
-    To see the unique ID of the rule you need to navigate to “**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\FirewallRules”** registry key and you will see the list of Windows Firewall rule IDs (Name column) with parameters:
+    To see the unique ID of the rule, you need to navigate to “**HKEY\_LOCAL\_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\SharedAccess\\Parameters\\FirewallPolicy\\FirewallRules”** registry key and you'll see the list of Windows Firewall rule IDs (Name column) with parameters:
 
 <img src="images/registry-editor-firewallrules.png" alt="Registry Editor FirewallRules key illustration" width="1412" height="422" />
 
--   **Rule Name** \[Type = UnicodeString\]: the name of the rule which was deleted. You can see the name of Windows Firewall rule using Windows Firewall with Advanced Security management console (**wf.msc**), check “Name” column:
+-   **Rule Name** \[Type = UnicodeString\]: the name of the rule that was deleted. You can see the name of Windows Firewall rule using Windows Firewall with Advanced Security management console (**wf.msc**), check “Name” column:
 
 <img src="images/windows-firewall-with-advanced-security.png" alt="Windows Firewall with Advanced Security illustration" width="1082" height="363" />
 
@@ -99,5 +100,5 @@ This event doesn't generate when the rule was deleted via Group Policy.
 
 For 4948(S): A change has been made to Windows Firewall exception list. A rule was deleted.
 
--   This event can be helpful in case you want to monitor all deletions of Firewall rules which were done locally.
+-   This event can be helpful in case you want to monitor all deletions of Firewall rules that were done locally.
 

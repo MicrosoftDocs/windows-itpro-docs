@@ -1,18 +1,19 @@
 ---
-title: Audit Other Account Management Events (Windows 10)
+title: Audit Other Account Management Events 
 description: The Advanced Security Audit policy setting, Audit Other Account Management Events, determines if user account management audit events are generated.
 ms.assetid: 4ce22eeb-a96f-4cf9-a46d-6642961a31d5
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/06/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit Other Account Management Events

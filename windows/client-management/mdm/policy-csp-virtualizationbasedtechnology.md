@@ -1,133 +1,158 @@
 ---
-title: Policy CSP - VirtualizationBasedTechnology
-description: Learn to use the Policy CSP - VirtualizationBasedTechnology setting to control the state of Hypervisor-protected Code Integrity (HVCI) on devices.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: alekyaj
+title: VirtualizationBasedTechnology Policy CSP
+description: Learn more about the VirtualizationBasedTechnology Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.date: 11/25/2021
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- VirtualizationBasedTechnology-Begin -->
 # Policy CSP - VirtualizationBasedTechnology
 
-<hr/>
+<!-- VirtualizationBasedTechnology-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- VirtualizationBasedTechnology-Editable-End -->
 
-<!--Policies-->
-## VirtualizationBasedTechnology policies
+<!-- HypervisorEnforcedCodeIntegrity-Begin -->
+## HypervisorEnforcedCodeIntegrity
 
-<dl>
-  <dd>
-    <a href="#virtualizationbasedtechnology-hypervisorenforcedcodeintegrity">VirtualizationBasedTechnology/HypervisorEnforcedCodeIntegrity</a>
-  </dd>
-  <dd>
-    <a href="#virtualizationbasedtechnology-requireuefimemoryattributestable">VirtualizationBasedTechnology/RequireUEFIMemoryAttributesTable</a>
-  </dd>
-</dl>
+<!-- HypervisorEnforcedCodeIntegrity-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- HypervisorEnforcedCodeIntegrity-Applicability-End -->
 
+<!-- HypervisorEnforcedCodeIntegrity-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/VirtualizationBasedTechnology/HypervisorEnforcedCodeIntegrity
+```
+<!-- HypervisorEnforcedCodeIntegrity-OmaUri-End -->
 
-<hr/>
+<!-- HypervisorEnforcedCodeIntegrity-Description-Begin -->
+<!-- Description-Source-DDF-Forced -->
+Hypervisor-Protected Code Integrity: 0 - Turns off Hypervisor-Protected Code Integrity remotely if configured previously without UEFI Lock, 1 - Turns on Hypervisor-Protected Code Integrity with UEFI lock, 2 - Turns on Hypervisor-Protected Code Integrity without UEFI lock.
+<!-- HypervisorEnforcedCodeIntegrity-Description-End -->
 
-<!--Policy-->
-<a href="" id="virtualizationbasedtechnology-hypervisorenforcedcodeintegrity"></a>**VirtualizationBasedTechnology/HypervisorEnforcedCodeIntegrity**  
+<!-- HypervisorEnforcedCodeIntegrity-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HypervisorEnforcedCodeIntegrity-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- HypervisorEnforcedCodeIntegrity-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- HypervisorEnforcedCodeIntegrity-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HypervisorEnforcedCodeIntegrity-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Value | Description |
+|:--|:--|
+| 0 (Default) | (Disabled) Turns off Hypervisor-Protected Code Integrity remotely if configured previously without UEFI Lock. |
+| 1 | (Enabled with UEFI lock) Turns on Hypervisor-Protected Code Integrity with UEFI lock. |
+| 2 | (Enabled without lock) Turns on Hypervisor-Protected Code Integrity without UEFI lock. |
+<!-- HypervisorEnforcedCodeIntegrity-AllowedValues-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- HypervisorEnforcedCodeIntegrity-GpMapping-Begin -->
+**Group policy mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | VirtualizationBasedSecurity |
+| Friendly Name | Turn On Virtualization Based Security |
+| Element Name | Virtualization Based Protection of Code Integrity. |
+| Location | Computer Configuration |
+| Path | System > Device Guard |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeviceGuard |
+| ADMX File Name | DeviceGuard.admx |
+<!-- HypervisorEnforcedCodeIntegrity-GpMapping-End -->
 
-<!--/Scope-->
-<!--Description-->
-Allows the IT admin to control the state of Hypervisor-protected Code Integrity (HVCI) on devices. HVCI is a feature within Virtualization Based Security, and is frequently referred to as Memory integrity. Learn more [here](/windows-hardware/design/device-experiences/oem-vbs).
+<!-- HypervisorEnforcedCodeIntegrity-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HypervisorEnforcedCodeIntegrity-Examples-End -->
 
->[!NOTE]
->After the policy is pushed, a system reboot will be required to change the state of HVCI.
+<!-- HypervisorEnforcedCodeIntegrity-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following are the supported values:
+<!-- RequireUEFIMemoryAttributesTable-Begin -->
+## RequireUEFIMemoryAttributesTable
 
-- 0: (Disabled) Turns off Hypervisor-Protected Code Integrity remotely if configured previously without UEFI Lock
-- 1: (Enabled with UEFI lock) Turns on Hypervisor-Protected Code Integrity with UEFI lock
-- 2: (Enabled without lock) Turns on Hypervisor-Protected Code Integrity without UEFI lock
+<!-- RequireUEFIMemoryAttributesTable-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- RequireUEFIMemoryAttributesTable-Applicability-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- RequireUEFIMemoryAttributesTable-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/VirtualizationBasedTechnology/RequireUEFIMemoryAttributesTable
+```
+<!-- RequireUEFIMemoryAttributesTable-OmaUri-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- RequireUEFIMemoryAttributesTable-Description-Begin -->
+<!-- Description-Source-DDF-Forced -->
+Require UEFI Memory Attributes Table.
+<!-- RequireUEFIMemoryAttributesTable-Description-End -->
 
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
+<!-- RequireUEFIMemoryAttributesTable-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RequireUEFIMemoryAttributesTable-Editable-End -->
 
-<!--Policy-->
-<a href="" id="virtualizationbasedtechnology-requireuefimemoryattributestable"></a>**VirtualizationBasedTechnology/RequireUEFIMemoryAttributesTable**  
+<!-- RequireUEFIMemoryAttributesTable-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- RequireUEFIMemoryAttributesTable-DFProperties-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|Yes|Yes|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- RequireUEFIMemoryAttributesTable-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Don't require UEFI Memory Attributes Table. |
+| 1 | Require UEFI Memory Attributes Table. |
+<!-- RequireUEFIMemoryAttributesTable-AllowedValues-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RequireUEFIMemoryAttributesTable-GpMapping-Begin -->
+**Group policy mapping**:
 
-> [!div class = "checklist"]
-> * Device
+| Name | Value |
+|:--|:--|
+| Name | VirtualizationBasedSecurity |
+| Friendly Name | Turn On Virtualization Based Security |
+| Element Name | Require UEFI Memory Attributes Table. |
+| Location | Computer Configuration |
+| Path | System > Device Guard |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\DeviceGuard |
+| ADMX File Name | DeviceGuard.admx |
+<!-- RequireUEFIMemoryAttributesTable-GpMapping-End -->
 
-<hr/>
+<!-- RequireUEFIMemoryAttributesTable-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RequireUEFIMemoryAttributesTable-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-Allows the IT admin to control the state of Hypervisor-protected Code Integrity (HVCI) on devices. HVCI is a feature within Virtualization Based Security, and is frequently referred to as Memory integrity. Learn more [here](/windows-hardware/design/device-experiences/oem-vbs).
+<!-- RequireUEFIMemoryAttributesTable-End -->
 
->[!NOTE]
->After the policy is pushed, a system reboot will be required to change the state of HVCI.
+<!-- VirtualizationBasedTechnology-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- VirtualizationBasedTechnology-CspMoreInfo-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
+<!-- VirtualizationBasedTechnology-End -->
 
-The following are the supported values:
+## Related articles
 
-- 0: (Disabled) Do not require UEFI Memory Attributes Table
-- 1: (Enabled) Require UEFI Memory Attributes Table
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
-
-<!--/Policies-->
-
+[Policy configuration service provider](policy-configuration-service-provider.md)

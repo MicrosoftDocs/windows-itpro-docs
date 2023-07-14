@@ -1,33 +1,34 @@
 ---
-title: Act as part of the operating system (Windows 10)
+title: Act as part of the operating system 
 description: Describes the best practices, location, values, policy management, and security considerations for the Act as part of the operating system security policy setting.
 ms.assetid: c1b7e084-a9f7-4377-b678-07cc913c8b0c
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Act as part of the operating system
 
 **Applies to**
--   Windows 10
+-  Windows 11
+-  Windows 10    
 
 Describes the best practices, location, values, policy management, and security considerations for the **Act as part of the operating system** security policy setting.
 
 ## Reference
 
-The **Act as part of the operating system** policy setting determines whether a process can assume the identity of any user and thereby gain access to the resources that the user is authorized to access. Typically, only low-level authentication services require this user right. Potential access is not limited to what is associated with the user by default. The calling process may request that arbitrary additional privileges be added to the access token. The calling process may also build an access token that does not provide a primary identity for auditing in the system event logs.
+The **Act as part of the operating system** policy setting determines whether a process can assume the identity of any user and thereby gain access to the resources that the user is authorized to access. Typically, only low-level authentication services require this user right. Potential access isn't limited to what is associated with the user by default. The calling process may request that arbitrary extra privileges be added to the access token. The calling process may also build an access token that doesn't provide a primary identity for auditing in the system event logs.
+
 Constant: SeTcbPrivilege
 
 ### Possible values
@@ -35,8 +36,8 @@ Constant: SeTcbPrivilege
 -   Not defined
 
 ### Best practices
--   Do not assign this right to any user accounts. Only assign this user right to trusted users.
--   If a service requires this user right, configure the service to log on by using the local System account, which inherently includes this user right. Do not create a separate account and assign this user right to it.
+-   Don't assign this right to any user accounts. Only assign this user right to trusted users.
+-   If a service requires this user right, configure the service to sign in by using the local System account, which inherently includes this user right. Don't create a separate account and assign this user right to it.
 
 ### Location
 
@@ -57,7 +58,7 @@ The following table lists the actual and effective default policy values for the
  
 ## Policy management
 
-A restart of the device is not required for this policy setting to be effective.
+A restart of the device isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 
@@ -77,11 +78,11 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-The **Act as part of the operating system** user right is extremely powerful. Users with this user right can take complete control of the device and erase evidence of their activities.
+The **Act as part of the operating system** user right is powerful. Users with this user right can take complete control of the device and erase evidence of their activities.
 
 ### Countermeasure
 
-Restrict the **Act as part of the operating system** user right to as few accounts as possible—it should not even be assigned to the Administrators group under typical circumstances. When a service requires this user right, configure the service to log on with the Local System account, which inherently includes this privilege. Do not create a separate account and assign this user right to it.
+Restrict the **Act as part of the operating system** user right to as few accounts as possible—it shouldn't even be assigned to the Administrators group under typical circumstances. When a service requires this user right, configure the service to sign in with the Local System account, which inherently includes this privilege. Don't create a separate account and assign this user right to it.
 
 ### Potential impact
 

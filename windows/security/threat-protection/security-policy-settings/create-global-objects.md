@@ -1,35 +1,35 @@
 ---
-title: Create global objects (Windows 10)
+title: Create global objects 
 description: Describes the best practices, location, values, policy management, and security considerations for the Create global objects security policy setting.
 ms.assetid: 9cb6247b-44fc-4815-86f2-cb59b6f0221e
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Create global objects
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Create global objects** security policy setting.
 
 ## Reference
 
-This policy setting determines which users can create global objects that are available to all sessions. Users can still create objects that are specific to their own session if they do not have this user right.
+This policy setting determines which users can create global objects that are available to all sessions. Users can still create objects that are specific to their own session if they don't have this user right.
 
-A global object is an object that is created to be used by any number of processes or threads, even those not started within the user’s session. Remote Desktop Services uses global objects in its processes to facilitate connections and access.
+A global object is an object that can be used by any number of processes or threads, even those processes or threads not started within the user’s session. Remote Desktop Services uses global objects in its processes to facilitate connections and access.
 
 Constant: SeCreateGlobalPrivilege
 
@@ -40,7 +40,7 @@ Constant: SeCreateGlobalPrivilege
 
 ### Best practices
 
--   Do not assign any user accounts this right.
+-   Don't assign any user accounts this right.
 
 ### Location
 
@@ -63,7 +63,7 @@ The following table lists the actual and effective default policy values. Defaul
  
 ## Policy management
 
-A restart of the device is not required for this policy setting to take effect.
+A restart of the device isn't required for this policy setting to take effect.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 
@@ -90,7 +90,7 @@ By default, members of the **Administrators** group, the System account, and ser
 
 ### Countermeasure
 
-When non-administrators need to access a server using Remote Desktop, add the users to the **Remote Desktop Users** group rather than assining them this user right.
+When non-administrators need to access a server using Remote Desktop, add the users to the **Remote Desktop Users** group rather than assigning them this user right.
 
 ### Potential impact
 

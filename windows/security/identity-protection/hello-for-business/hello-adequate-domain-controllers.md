@@ -1,39 +1,26 @@
 ---
-title: Having enough Domain Controllers for Windows Hello for Business deployments
-description: Guide for planning to have an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments
-keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: mapalko
-ms.author: mapalko
-manager: dansimp
-ms.collection: M365-identity-device-management
-ms.topic: article
-localizationpriority: medium
-ms.date: 08/20/2018
-ms.reviewer: 
+title: Plan an adequate number of Domain Controllers for Windows Hello for Business deployments
+description: Learn how to plan for an adequate number of Domain Controllers to support Windows Hello for Business deployments.
+ms.date: 03/10/2023
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
+ms.topic: conceptual
 ---
-# Planning an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments
-
-**Applies to**
-
-- Windows 10, version 1703 or later, or Windows 11
-- Windows Server, versions 2016 or later
-- Hybrid or On-Premises deployment
-- Key trust
+# Plan an adequate number of Domain Controllers for Windows Hello for Business deployments
 
 > [!NOTE]
->There was an issue with key trust authentication on Windows Server 2019. To fix it, refer to [KB4487044](https://support.microsoft.com/en-us/help/4487044/windows-10-update-kb4487044).
+>There was an issue with key trust authentication on Windows Server 2019. To fix it, refer to [KB4487044](https://support.microsoft.com/help/4487044/windows-10-update-kb4487044).
 
 ## How many is adequate
 
 How can you find out how many domain controllers are needed? You can use performance monitoring on your domain controllers to determine existing authentication traffic.  Windows Server 2016 and above includes the KDC AS Requests performance counter. You can use this counter to determine how much of a domain controller's load is due to initial Kerberos authentication. It's important to remember that authentication for a Windows Hello for Business key trust deployment does not affect Kerberos authentication - it remains unchanged.
 
 Windows 10 or Windows 11 accomplishes Windows Hello for Business key trust authentication by mapping an Active Directory user account to one or more public keys. This mapping occurs on the domain controller, which is why the deployment needs Windows Server 2016 or later domain controllers. Public key mapping is only supported by Windows Server 2016 domain controllers and above. Therefore, users in a key trust deployment must authenticate to a Windows Server 2016 and above domain controller.
-  
+
 Determining an adequate number of Windows Server domain controllers is important to ensure you have enough domain controllers to satisfy all authentication requests, including users mapped with public key trust. What many administrators do not realize is that adding a domain controller that supports public key mapping (in this case Windows Server 2016 or later) to a deployment of existing domain controllers which do not support public key mapping (Windows Server 2008R2, Windows Server 2012R2) instantly makes that single domain controller susceptible to carrying the most load, or what is commonly referred to as "piling on". To illustrate the "piling on" concept, consider the following scenario:
 
 Consider a controlled environment where there are 1000 client computers and the authentication load of these 1000 client computers is evenly distributed across 10 domain controllers in the environment. The Kerberos AS requests load would look something like the following:
@@ -48,7 +35,7 @@ The Windows Server 2016 or later domain controller is handling 100 percent of al
 
 ![dc-chart3.](images/plan/dc-chart3.png)
 
-Upgrading another domain controller to Windows Server 2016 or later distributes the public key trust authentication across two domain controllers - each supporting 50 percent of the load.  But it doesn't change the distribution of password and certificate trust authentication. Both Windows Server 2019 domain controllers still share 10 percent of this load. Now look at the scenario when half of the domain controllers are upgraded to Windows Server 2016 or later, but the number of WHFB clients remains the same.
+Upgrading another domain controller to Windows Server 2016 or later distributes the public key trust authentication across two domain controllers - each supporting 50 percent of the load.  But it doesn't change the distribution of password and certificate trust authentication. Both Windows Server 2019 domain controllers still share 10 percent of this load. Now look at the scenario when half of the domain controllers are upgraded to Windows Server 2016 or later, but the number of Windows Hello for Business clients remains the same.
 
 ![dc-chart4.](images/plan/dc-chart4.png)
 
@@ -71,7 +58,7 @@ The preceding was an example to show why it's unrealistic to have a "one-size-fi
 ## Determining total AS Request load
 
 Each organization needs to have a baseline of the AS request load that occurs in their environment. Windows Server provides the KDC AS Requests performance counter that helps you determine this.
-  
+
 Pick a site where you plan to upgrade the clients to Windows Hello for Business public key trust.  Pick a time when authentication traffic is most significant--Monday morning is great time as everyone is returning to the office. Enable the performance counter on *all* the domain controllers in that site.  Collect KDC AS Requests performance counters for two hours:
 
 - A half-hour before you expect initial authentication (sign-ins and unlocks) to be significant
@@ -88,15 +75,15 @@ Aggregate the performance data of all domain controllers. Look for the maximum K
 Add the number of authentications for each domain controller for the median time. You now have the total authentication for the site during a peak time. Using this metric, you can determine the distribution of authentication across the domain controllers in the site by dividing the domain controller's authentication number for the median time by the total authentication. Multiply the quotient by 10 to convert the distribution to a percentage. To validate your math, all the distributions should equal 100 percent.
 
 Review the distribution of authentication. Hopefully, none of these are above 70 percent. It's always good to reserve some capacity for the unexpected. Also, the primary purposes of a domain controller are to provide authentication and handle Active Directory operations. Identify domain controllers with lower distributions of authentication as potential candidates for the initial domain controller upgrades in conjunction with a reasonable distribution of clients provisioned for Windows Hello for Business.
-  
+
 ## Monitoring Authentication
 
 Using the same methods described above, monitor the Kerberos authentication after upgrading a domain controller and your first phase of Windows Hello for Business deployments. Make note of the delta of authentication before and after upgrading the domain controller to Windows Server 2016 or newer. This delta is representative of authentication resulting from the first phase of your Windows Hello for Business clients. It gives you a baseline for your environment to where you can form a statement such as:
 
 ```"Every n Windows Hello for Business clients results in x percentage of key-trust authentication."```
 
-Where _n_ equals the number of clients you switched to Windows Hello for Business and _x_ equals the increased percentage of authentication from the upgraded domain controller. Armed with this information, you can apply the observations of upgrading domain controllers and increasing Windows Hello for Business client count to appropriately phase your deployment.
-  
+Where *n* equals the number of clients you switched to Windows Hello for Business and *x* equals the increased percentage of authentication from the upgraded domain controller. Armed with this information, you can apply the observations of upgrading domain controllers and increasing Windows Hello for Business client count to appropriately phase your deployment.
+
 Remember, increasing the number of clients changes the volume of authentication distributed across the Windows Server 2016 or newer domain controllers. If there is only one Windows Server 2016 or newer domain controller, there's no distribution and you are simply increasing the volume of authentication for which THAT domain controller is responsible.
 
 Increasing the number of domain controllers distributes the volume of authentication, but doesn't change it.  Therefore, as you add more domain controllers, the burden of authentication, for which each domain controller is responsible, decreases. Upgrading two domain controller changes the distribution to 50 percent. Upgrading three domain controllers changes the distribution to 33 percent, and so on.
@@ -104,9 +91,9 @@ Increasing the number of domain controllers distributes the volume of authentica
 ## Strategy
 
 The simplest strategy you can employ is to upgrade one domain controller and monitor the single domain controller as you continue to phase in new Windows Hello for Business key-trust clients until it reaches a 70 or 80 percent threshold.
-  
+
 Then, upgrade a second domain controller. Monitor the authentication on both domain controllers to determine how the authentication distributes between the two domain controllers. Introduce more Windows Hello for Business clients while monitoring the authentication on the two upgraded domain controllers. Once those reach your environment's designated capacity, you can upgrade another domain controller.
-  
+
 Repeat until your deployment for that site is complete.  Now, monitor authentication across all your domain controllers like you did the very first time.  Determine the distribution of authentication for each domain controller.  Identify the percentage of distribution for which it is responsible. If a single domain controller is responsible for 70 percent of more of the authentication, you may want to consider adding a domain controller to reduce the distribution of authentication volume.
-  
+
 However, before considering this, ensure the high load of authentication is not a result of applications and services where their configuration has a statically-configured domain controller. Adding domain controllers will not resolve the additional authentication load problem in this scenario.  Instead, manually distribute the authentication to different domain controllers among all the services or applications.  Alternatively, try simply using the domain name rather than a specific domain controller.  Each domain controller has an A record registered in DNS for the domain name, which DNS will round robin with each DNS query. It's not the best load balancer, however, it is a better alternative to static domain controller configurations, provided the configuration is compatible with your service or application.

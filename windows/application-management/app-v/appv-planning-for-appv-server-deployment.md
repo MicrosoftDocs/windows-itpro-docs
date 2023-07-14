@@ -1,17 +1,16 @@
 ---
 title: Planning for the App-V Server Deployment (Windows 10/11)
 description: Learn what you need to know so you can plan for the Microsoft Application Virtualization (App-V) 5.1 server deployment.
-author: greg-lindsay
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.prod: w10
+author: aczechowski
+ms.prod: windows-client
 ms.date: 04/18/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
+
 # Planning for the App-V server deployment
 
 >Applies to: Windows Server 2016
@@ -57,7 +56,7 @@ The following table lists server-related protocols used by the App-V servers, an
 
 
 
-## Related topics
+## Related articles
 
 * [Planning to deploy App-V](appv-planning-to-deploy-appv.md)
 * [Deploying the App-V server](appv-deploying-the-appv-server.md)

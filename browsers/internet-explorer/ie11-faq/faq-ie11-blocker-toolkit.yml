@@ -13,7 +13,7 @@ metadata:
   title: Internet Explorer 11 Blocker Toolkit - Frequently Asked Questions
   ms.sitesec: library
   ms.date: 05/10/2018
-    
+  ms.topic: faq
 title: Internet Explorer 11 Blocker Toolkit - Frequently Asked Questions
 summary: |
   [!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
@@ -22,7 +22,7 @@ summary: |
   Get answers to commonly asked questions about the Internet Explorer 11 Blocker Toolkit.
   
   > [!Important]
-  > If you administer your company’s environment using an update management solution, such as Windows Server Update Services (WSUS) or System Center 2012 Configuration Manager, you don’t need to use the Internet Explorer 11 Blocker Toolkit. Update management solutions let you completely manage your Windows Updates and Microsoft Updates, including your Internet Explorer 11 deployment.
+  > If you administer your company’s environment using an update management solution, such as Windows Server Update Services (WSUS) or Configuration Manager, you don’t need to use the Internet Explorer 11 Blocker Toolkit. Update management solutions let you completely manage your Windows Updates and Microsoft Updates, including your Internet Explorer 11 deployment.
   
   - [Automatic updates delivery process](/internet-explorer/ie11-faq/faq-ie11-blocker-toolkit#automatic-updates-delivery-process)
   
@@ -47,7 +47,7 @@ sections:
       - question: |
           Whtools cI use to manage Windows Updates and Microsoft Updates in my company?
         answer: |
-          We encourage anyone who wants full control over their company’s deployment of Windows Updates and Microsoft Updates, to use [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus), a free tool for users of Windows Server. You calso use the more advanced configuration management tool, [System Center 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682041(v=technet.10)).
+          We encourage anyone who wants full control over their company’s deployment of Windows Updates and Microsoft Updates, to use [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus), a free tool for users of Windows Server. You calso use the more advanced configuration management tool, [Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682041(v=technet.10)).
           
       - question: |
           How long does the blocker mechanism work?

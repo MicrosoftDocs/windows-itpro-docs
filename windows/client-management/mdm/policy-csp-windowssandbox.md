@@ -1,450 +1,417 @@
 ---
-title: Policy CSP - WindowsSandbox
-description: Policy CSP - WindowsSandbox
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+title: WindowsSandbox Policy CSP
+description: Learn more about the WindowsSandbox Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.date: 10/14/2020
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- WindowsSandbox-Begin -->
 # Policy CSP - WindowsSandbox
 
+<!-- WindowsSandbox-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- WindowsSandbox-Editable-End -->
 
-<hr/>
+<!-- AllowAudioInput-Begin -->
+## AllowAudioInput
 
-<!--Policies-->
-## WindowsSandbox policies  
+<!-- AllowAudioInput-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowAudioInput-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#windowssandbox-allowaudioinput">WindowsSandbox/AllowAudioInput</a>
-  </dd>
-  <dd>
-    <a href="#windowssandbox-allowclipboardredirection">WindowsSandbox/AllowClipboardRedirection</a>
-  </dd>
-  <dd>
-    <a href="#windowssandbox-allownetworking">WindowsSandbox/AllowNetworking</a>
-  </dd>
-  <dd>
-    <a href="#windowssandbox-allowprinterredirection">WindowsSandbox/AllowPrinterRedirection</a>
-  </dd>
-  <dd>
-    <a href="#windowssandbox-allowvgpu">WindowsSandbox/AllowVGPU</a>
-  </dd>
-  <dd>
-    <a href="#windowssandbox-allowvideoinput">WindowsSandbox/AllowVideoInput</a>
-  </dd>
-</dl>
+<!-- AllowAudioInput-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsSandbox/AllowAudioInput
+```
+<!-- AllowAudioInput-OmaUri-End -->
 
+<!-- AllowAudioInput-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting enables or disables audio input to the Sandbox.
 
-<hr/>
+- If you enable this policy setting, Windows Sandbox will be able to receive audio input from the user. Applications using a microphone may require this setting.
 
-<!--Policy-->
-<a href="" id="windowssandbox-allowaudioinput"></a>**WindowsSandbox/AllowAudioInput**
+- If you disable this policy setting, Windows Sandbox won't be able to receive audio input from the user. Applications using a microphone may not function properly with this setting.
 
-Available in the latest Windows 10 insider preview build.
+- If you don't configure this policy setting, audio input will be enabled.
 
-<!--SupportedSKUs-->
+Note that there may be security implications of exposing host audio input to the container.
+<!-- AllowAudioInput-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows the IT admin to enable or disable audio input to the Sandbox. 
-
-> [!NOTE]
-> There may be security implications of exposing host audio input to the container.
-
-If this policy is not configured, end-users get the default behavior (audio input enabled). 
-
-If audio input is disabled, a user will not be able to enable audio input from their own configuration file. 
-
-If audio input is enabled, a user will be able to disable audio input from their own configuration file to make the device more secure.
-
+<!-- AllowAudioInput-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > You must restart Windows Sandbox for any changes to this policy setting to take effect.
+<!-- AllowAudioInput-Editable-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
+<!-- AllowAudioInput-DFProperties-Begin -->
+**Description framework properties**:
 
-- GP Friendly name: *Allow audio input in Windows Sandbox*
-- GP name: *AllowAudioInput*
-- GP path: *Windows Components/Windows Sandbox* 
-- GP ADMX file name: *WindowsSandbox.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 1 |
+<!-- AllowAudioInput-DFProperties-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
+<!-- AllowAudioInput-GpMapping-Begin -->
+**Group policy mapping**:
 
-- 0 - Disabled
-- 1 (default) - Enabled
+| Name | Value |
+|:--|:--|
+| Name | AllowAudioInput |
+| Friendly Name | Allow audio input in Windows Sandbox |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Sandbox |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Sandbox |
+| Registry Value Name | AllowAudioInput |
+| ADMX File Name | WindowsSandbox.admx |
+<!-- AllowAudioInput-GpMapping-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- AllowAudioInput-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowAudioInput-Examples-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- AllowAudioInput-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- AllowClipboardRedirection-Begin -->
+## AllowClipboardRedirection
 
-<hr/>
+<!-- AllowClipboardRedirection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowClipboardRedirection-Applicability-End -->
 
+<!-- AllowClipboardRedirection-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsSandbox/AllowClipboardRedirection
+```
+<!-- AllowClipboardRedirection-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="windowssandbox-allowclipboardredirection"></a>**WindowsSandbox/AllowClipboardRedirection**  
+<!-- AllowClipboardRedirection-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting enables or disables clipboard sharing with the sandbox.
 
-Available in the latest Windows 10 insider preview build.
+- If you enable this policy setting, copy and paste between the host and Windows Sandbox are permitted.
 
-<!--SupportedSKUs-->
+- If you disable this policy setting, copy and paste in and out of Sandbox will be restricted.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you don't configure this policy setting, clipboard sharing will be enabled.
+<!-- AllowClipboardRedirection-Description-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows the IT admin to enable or disable sharing of the host clipboard with the sandbox.
-
-If this policy is not configured, end-users get the default behavior (clipboard redirection enabled. 
-
-If clipboard sharing is disabled, a user will not be able to enable clipboard sharing from their own configuration file. 
-
-If clipboard sharing is enabled, a user will be able to disable clipboard sharing from their own configuration file to make the device more secure.
-
+<!-- AllowClipboardRedirection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > You must restart Windows Sandbox for any changes to this policy setting to take effect.
+<!-- AllowClipboardRedirection-Editable-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
+<!-- AllowClipboardRedirection-DFProperties-Begin -->
+**Description framework properties**:
 
-- GP Friendly name: *Allow clipboard sharing with Windows Sandbox*
-- GP name: *AllowClipboardRedirection*
-- GP path: *Windows Components/Windows Sandbox*
-- GP ADMX file name: *WindowsSandbox.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 1 |
+<!-- AllowClipboardRedirection-DFProperties-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
+<!-- AllowClipboardRedirection-GpMapping-Begin -->
+**Group policy mapping**:
 
-- 0 - Disabled
-- 1 (default) - Enabled
+| Name | Value |
+|:--|:--|
+| Name | AllowClipboardRedirection |
+| Friendly Name | Allow clipboard sharing with Windows Sandbox |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Sandbox |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Sandbox |
+| Registry Value Name | AllowClipboardRedirection |
+| ADMX File Name | WindowsSandbox.admx |
+<!-- AllowClipboardRedirection-GpMapping-End -->
 
+<!-- AllowClipboardRedirection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowClipboardRedirection-Examples-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- AllowClipboardRedirection-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- AllowNetworking-Begin -->
+## AllowNetworking
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- AllowNetworking-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowNetworking-Applicability-End -->
 
-<hr/>
+<!-- AllowNetworking-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsSandbox/AllowNetworking
+```
+<!-- AllowNetworking-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="windowssandbox-allownetworking"></a>**WindowsSandbox/AllowNetworking**  
+<!-- AllowNetworking-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting enables or disables networking in the sandbox. You can disable network access to decrease the attack surface exposed by the sandbox.
 
-Available in the latest Windows 10 insider preview build.
+- If you enable this policy setting, networking is done by creating a virtual switch on the host, and connects the Windows Sandbox to it via a virtual NIC.
 
-<!--SupportedSKUs-->
+- If you disable this policy setting, networking is disabled in Windows Sandbox.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you don't configure this policy setting, networking will be enabled.
 
-<!--/SupportedSKUs-->
-<hr/>
+Note that enabling networking can expose untrusted applications to the internal network.
+<!-- AllowNetworking-Description-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows the IT admin to enable or disable networking in Windows Sandbox. Disabling network access can decrease the attack surface exposed by the Sandbox. Enabling networking can expose untrusted applications to the internal network.
-
-If this policy is not configured, end-users get the default behavior (networking enabled).
-
-If networking is disabled, a user will not be able to enable networking from their own configuration file.
-
-If networking is enabled, a user will be able to disable networking from their own configuration file to make the device more secure.
-
+<!-- AllowNetworking-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > You must restart Windows Sandbox for any changes to this policy setting to take effect.
+<!-- AllowNetworking-Editable-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
+<!-- AllowNetworking-DFProperties-Begin -->
+**Description framework properties**:
 
-- GP Friendly name: *Allow networking in Windows Sandbox*
-- GP name: *AllowNetworking*
-- GP path: *Windows Components/Windows Sandbox*
-- GP ADMX file name: *WindowsSandbox.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 1 |
+<!-- AllowNetworking-DFProperties-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following are the supported values:  
-- 0 - Disabled
-- 1 (default) - Enabled
+<!-- AllowNetworking-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Name | Value |
+|:--|:--|
+| Name | AllowNetworking |
+| Friendly Name | Allow networking in Windows Sandbox |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Sandbox |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Sandbox |
+| Registry Value Name | AllowNetworking |
+| ADMX File Name | WindowsSandbox.admx |
+<!-- AllowNetworking-GpMapping-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- AllowNetworking-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowNetworking-Examples-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- AllowNetworking-End -->
 
-<hr/>
+<!-- AllowPrinterRedirection-Begin -->
+## AllowPrinterRedirection
 
-<!--Policy-->
-<a href="" id="windowssandbox-allowprinterredirection"></a>**WindowsSandbox/AllowPrinterRedirection**  
+<!-- AllowPrinterRedirection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowPrinterRedirection-Applicability-End -->
 
-Available in the latest Windows 10 insider preview build.
+<!-- AllowPrinterRedirection-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsSandbox/AllowPrinterRedirection
+```
+<!-- AllowPrinterRedirection-OmaUri-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowPrinterRedirection-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting enables or disables printer sharing from the host into the Sandbox.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you enable this policy setting, host printers will be shared into Windows Sandbox.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you disable this policy setting, Windows Sandbox won't be able to view printers from the host.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+- If you don't configure this policy setting, printer redirection will be disabled.
+<!-- AllowPrinterRedirection-Description-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows the IT admin to enable or disable printer sharing from the host into the Sandbox. 
-
-If this policy is not configured, end-users get the default behavior (printer sharing disabled). 
-
-If printer sharing is disabled, a user will not be able to enable printer sharing from their own configuration file. 
-
-If printer sharing is enabled, a user will be able to disable printer sharing from their own configuration file to make the device more secure.
-
+<!-- AllowPrinterRedirection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > You must restart Windows Sandbox for any changes to this policy setting to take effect.
+<!-- AllowPrinterRedirection-Editable-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
+<!-- AllowPrinterRedirection-DFProperties-Begin -->
+**Description framework properties**:
 
-- GP Friendly name: *Allow printer sharing with Windows Sandbox*
-- GP name: *AllowPrinterRedirection*
-- GP path: *Windows Components/Windows Sandbox* 
-- GP ADMX file name: *WindowsSandbox.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 1 |
+<!-- AllowPrinterRedirection-DFProperties-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following are the supported values:
+<!-- AllowPrinterRedirection-GpMapping-Begin -->
+**Group policy mapping**:
 
-- 0 - Disabled
-- 1 (default) - Enabled
+| Name | Value |
+|:--|:--|
+| Name | AllowPrinterRedirection |
+| Friendly Name | Allow printer sharing with Windows Sandbox |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Sandbox |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Sandbox |
+| Registry Value Name | AllowPrinterRedirection |
+| ADMX File Name | WindowsSandbox.admx |
+<!-- AllowPrinterRedirection-GpMapping-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- AllowPrinterRedirection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowPrinterRedirection-Examples-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- AllowPrinterRedirection-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- AllowVGPU-Begin -->
+## AllowVGPU
 
-<hr/>
+<!-- AllowVGPU-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowVGPU-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="windowssandbox-allowvgpu"></a>**WindowsSandbox/AllowVGPU**  
+<!-- AllowVGPU-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsSandbox/AllowVGPU
+```
+<!-- AllowVGPU-OmaUri-End -->
 
-Available in the latest Windows 10 insider preview build.
+<!-- AllowVGPU-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting is to enable or disable the virtualized GPU.
 
-<!--SupportedSKUs-->
+- If you enable this policy setting, vGPU will be supported in the Windows Sandbox.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you disable this policy setting, Windows Sandbox will use software rendering, which can be slower than virtualized GPU.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you don't configure this policy setting, vGPU will be enabled.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Note that enabling virtualized GPU can potentially increase the attack surface of the sandbox.
+<!-- AllowVGPU-Description-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows the IT admin to enable or disable virtualized GPU for Windows Sandbox.
-
-> [!NOTE]
-> Enabling virtualized GPU can potentially increase the attack surface of Windows Sandbox. 
-
-If this policy is not configured, end-users get the default behavior (vGPU is disabled). 
-
-If vGPU is disabled, a user will not be able to enable vGPU support from their own configuration file. 
-
-If vGPU is enabled, a user will be able to disable vGPU support from their own configuration file to make the device more secure.
-
+<!-- AllowVGPU-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > You must restart Windows Sandbox for any changes to this policy setting to take effect.
+<!-- AllowVGPU-Editable-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:
+<!-- AllowVGPU-DFProperties-Begin -->
+**Description framework properties**:
 
-- GP Friendly name: *Allow vGPU sharing for Windows Sandbox*
-- GP name: *AllowVGPU*
-- GP path: *Windows Components/Windows Sandbox*
-- GP ADMX file name: *WindowsSandbox.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 1 |
+<!-- AllowVGPU-DFProperties-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following are the supported values:
+<!-- AllowVGPU-GpMapping-Begin -->
+**Group policy mapping**:
 
-- 0 (default) - Disabled
-- 1 - Enabled
+| Name | Value |
+|:--|:--|
+| Name | AllowVGPU |
+| Friendly Name | Allow vGPU sharing for Windows Sandbox |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Sandbox |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Sandbox |
+| Registry Value Name | AllowVGPU |
+| ADMX File Name | WindowsSandbox.admx |
+<!-- AllowVGPU-GpMapping-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- AllowVGPU-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowVGPU-Examples-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- AllowVGPU-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- AllowVideoInput-Begin -->
+## AllowVideoInput
 
-<hr/>
+<!-- AllowVideoInput-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- AllowVideoInput-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="windowssandbox-allowvideoinput"></a>**WindowsSandbox/AllowVideoInput**  
+<!-- AllowVideoInput-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/WindowsSandbox/AllowVideoInput
+```
+<!-- AllowVideoInput-OmaUri-End -->
 
-Available in the latest Windows 10 insider preview build.
+<!-- AllowVideoInput-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting enables or disables video input to the Sandbox.
 
-<!--SupportedSKUs-->
+- If you enable this policy setting, video input is enabled in Windows Sandbox.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you disable this policy setting, video input is disabled in Windows Sandbox. Applications using video input may not function properly in Windows Sandbox.
 
-<!--/SupportedSKUs-->
-<hr/>
+- If you don't configure this policy setting, video input will be disabled. Applications that use video input may not function properly in Windows Sandbox.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Note that there may be security implications of exposing host video input to the container.
+<!-- AllowVideoInput-Description-End -->
 
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows the IT admin to enable or disable video input to the Sandbox. 
-
-> [!NOTE]
-> There may be security implications of exposing host video input to the container.
-
-If this policy is not configured, users get the default behavior (video input disabled). 
-
-If video input is disabled, users will not be able to enable video input from their own configuration file. 
-
-If video input is enabled, users will be able to disable video input from their own configuration file to make the device more secure.
-
+<!-- AllowVideoInput-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
 > You must restart Windows Sandbox for any changes to this policy setting to take effect.
+<!-- AllowVideoInput-Editable-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info: 
-- GP Friendly name: *Allow video input in Windows Sandbox*
-- GP name: *AllowVideoInput*
-- GP path: *Windows Components/Windows Sandbox*
-- GP ADMX file name: *WindowsSandbox.admx*
+<!-- AllowVideoInput-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following are the supported values:
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-1]` |
+| Default Value  | 1 |
+<!-- AllowVideoInput-DFProperties-End -->
 
-- 0 (default) - Disabled
-- 1 - Enabled
+<!-- AllowVideoInput-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Name | Value |
+|:--|:--|
+| Name | AllowVideoInput |
+| Friendly Name | Allow video input in Windows Sandbox |
+| Location | Computer Configuration |
+| Path | Windows Components > Windows Sandbox |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\Sandbox |
+| Registry Value Name | AllowVideoInput |
+| ADMX File Name | WindowsSandbox.admx |
+<!-- AllowVideoInput-GpMapping-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- AllowVideoInput-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowVideoInput-Examples-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- AllowVideoInput-End -->
 
-<hr/>
+<!-- WindowsSandbox-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- WindowsSandbox-CspMoreInfo-End -->
 
-<!--/Policies-->
+<!-- WindowsSandbox-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,26 +1,26 @@
 ---
-title: Synchronize directory service data (Windows 10)
+title: Synchronize directory service data 
 description: Describes the best practices, location, values, policy management, and security considerations for the Synchronize directory service data security policy setting.
 ms.assetid: 97b0aaa4-674f-40f4-8974-b4bfb12c232c
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Synchronize directory service data
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Synchronize directory service data** security policy setting.
@@ -46,7 +46,7 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Use
 
 ### Default values
 
-By default this setting is not defined on domain controllers and on stand-alone servers.
+By default this setting isn't defined on domain controllers and on stand-alone servers.
 
 The following table lists the actual and effective default policy values. Default values are also listed on the policy’s property page.
 
@@ -63,7 +63,7 @@ The following table lists the actual and effective default policy values. Defaul
 
 This section describes features, tools, and guidance to help you manage this policy.
 
-A restart of the device is not required for this policy setting to be effective.
+A restart of the device isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 
@@ -84,7 +84,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-The **Synchronize directory service data** user right affects domain controllers (only domain controllers should be able to synchronize directory service data). Domain controllers have this user right inherently because the synchronization process runs in the context of the **System** account on domain controllers. Attackers who have this user right can view all information that is stored within the directory. They could then use some of that information to facilitate additional attacks or expose sensitive data, such as direct telephone numbers or physical addresses.
+The **Synchronize directory service data** user right affects domain controllers (only domain controllers should be able to synchronize directory service data). Domain controllers have this user right inherently because the synchronization process runs in the context of the **System** account on domain controllers. Attackers who have this user right can view all information that is stored within the directory. They could then use some of that information to facilitate more attacks or expose sensitive data, such as direct telephone numbers or physical addresses.
 
 ### Countermeasure
 

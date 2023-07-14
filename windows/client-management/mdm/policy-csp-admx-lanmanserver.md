@@ -1,210 +1,207 @@
 ---
-title: Policy CSP - ADMX_LanmanServer
-description: Policy CSP - ADMX_LanmanServer
-ms.author: dansimp
+title: ADMX_LanmanServer Policy CSP
+description: Learn more about the ADMX_LanmanServer Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/11/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 08/13/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_LanmanServer-Begin -->
 # Policy CSP - ADMX_LanmanServer
->[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ADMX_LanmanServer policies  
+<!-- ADMX_LanmanServer-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_LanmanServer-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-lanmanserver-pol-ciphersuiteorder">ADMX_LanmanServer/Pol_CipherSuiteOrder</a>
-  </dd>
-  <dd>
-    <a href="#admx-lanmanserver-pol-hashpublication">ADMX_LanmanServer/Pol_HashPublication</a>
-  </dd>
-  <dd>
-    <a href="#admx-lanmanserver-pol-hashsupportversion">ADMX_LanmanServer/Pol_HashSupportVersion</a>
-  </dd>
-  <dd>
-    <a href="#admx-lanmanserver-pol-honorciphersuiteorder">ADMX_LanmanServer/Pol_HonorCipherSuiteOrder</a>
-  </dd>
-</dl>
+<!-- Pol_CipherSuiteOrder-Begin -->
+## Pol_CipherSuiteOrder
 
+<!-- Pol_CipherSuiteOrder-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Pol_CipherSuiteOrder-Applicability-End -->
 
-<hr/>
+<!-- Pol_CipherSuiteOrder-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_LanmanServer/Pol_CipherSuiteOrder
+```
+<!-- Pol_CipherSuiteOrder-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-lanmanserver-pol-ciphersuiteorder"></a>**ADMX_LanmanServer/Pol_CipherSuiteOrder**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- Pol_CipherSuiteOrder-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting determines the cipher suites used by the SMB server.
 
 If you enable this policy setting, cipher suites are prioritized in the order specified.
 
-If you enable this policy setting and do not specify at least one supported cipher suite, or if you disable or do not configure this policy setting, the default cipher suite order is used.
+If you enable this policy setting and don't specify at least one supported cipher suite, or if you disable or don't configure this policy setting, the default cipher suite order is used.
 
-SMB 3.11 cipher suites:  
+SMB 3.11 cipher suites:
 
-- AES_128_GCM
-- AES_128_CCM
+AES_128_GCM.
 
-SMB 3.0 and 3.02 cipher suites:  
+AES_128_CCM.
 
-- AES_128_CCM
+AES_256_GCM.
 
-**How to modify this setting:**
+AES_256_CCM.
+
+SMB 3.0 and 3.02 cipher suites:
+
+AES_128_CCM.
+
+How to modify this setting:
 
 Arrange the desired cipher suites in the edit box, one cipher suite per line, in order from most to least preferred, with the most preferred cipher suite at the top. Remove any cipher suites you don't want to use.
 
 > [!NOTE]
-> When configuring this security setting, changes will not take effect until you restart Windows.
+> When configuring this security setting, changes won't take effect until you restart Windows.
+<!-- Pol_CipherSuiteOrder-Description-End -->
 
-<!--/Description-->
+<!-- Pol_CipherSuiteOrder-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Pol_CipherSuiteOrder-Editable-End -->
 
+<!-- Pol_CipherSuiteOrder-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Cipher suite order*
--   GP name: *Pol_CipherSuiteOrder*
--   GP path: *Network/Lanman Server*
--   GP ADMX file name: *LanmanServer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Pol_CipherSuiteOrder-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- Pol_CipherSuiteOrder-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policies-->
+**ADMX mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Pol_CipherSuiteOrder |
+| Friendly Name | Cipher suite order |
+| Location | Computer Configuration |
+| Path | Network > Lanman Server |
+| Registry Key Name | Software\Policies\Microsoft\Windows\LanmanServer |
+| ADMX File Name | LanmanServer.admx |
+<!-- Pol_CipherSuiteOrder-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="admx-lanmanserver-pol-hashpublication"></a>**ADMX_LanmanServer/Pol_HashPublication**  
+<!-- Pol_CipherSuiteOrder-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Pol_CipherSuiteOrder-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- Pol_CipherSuiteOrder-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Pol_HashPublication-Begin -->
+## Pol_HashPublication
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Pol_HashPublication-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Pol_HashPublication-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Pol_HashPublication-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_LanmanServer/Pol_HashPublication
+```
+<!-- Pol_HashPublication-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- Pol_HashPublication-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether a hash generation service generates hashes, also called content information, for data that's stored in shared folders. This policy setting must be applied to server computers that have the File Services role and both the File Server and the BranchCache for Network Files role services installed.
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting specifies whether a hash generation service generates hashes, also called content information, for data that is stored in shared folders. This policy setting must be applied to server computers that have the File Services role and both the File Server and the BranchCache for Network Files role services installed.
-
-Policy configuration
+Policy configuration.
 
 Select one of the following:
 
-- Not Configured. With this selection, hash publication settings are not applied to file servers. In the circumstance where file servers are domain members but you do not want to enable BranchCache on all file servers, you can specify Not Configured for this domain Group Policy setting, and then configure local machine policy to enable BranchCache on individual file servers. Because the domain Group Policy setting is not configured, it will not over-write the enabled setting that you use on individual servers where you want to enable BranchCache.
-- Enabled. With this selection, hash publication is turned on for all file servers where Group Policy is applied. For example, if Hash Publication for BranchCache is enabled in domain Group Policy, hash publication is turned on for all domain member file servers to which the policy is applied. The file servers are then able to create content information for all content that is stored in BranchCache-enabled file shares.
+- Not Configured. With this selection, hash publication settings aren't applied to file servers. In the circumstance where file servers are domain members but you don't want to enable BranchCache on all file servers, you can specify Not Configured for this domain Group Policy setting, and then configure local machine policy to enable BranchCache on individual file servers. Because the domain Group Policy setting isn't configured, it won't over-write the enabled setting that you use on individual servers where you want to enable BranchCache.
+
+- Enabled. With this selection, hash publication is turned on for all file servers where Group Policy is applied. For example, if Hash Publication for BranchCache is enabled in domain Group Policy, hash publication is turned on for all domain member file servers to which the policy is applied. The file servers are then able to create content information for all content that's stored in BranchCache-enabled file shares.
+
 - Disabled. With this selection, hash publication is turned off for all file servers where Group Policy is applied.
 
 In circumstances where this policy setting is enabled, you can also select the following configuration options:
 
 - Allow hash publication for all shared folders. With this option, BranchCache generates content information for all content in all shares on the file server.
+
 - Allow hash publication only for shared folders on which BranchCache is enabled. With this option, content information is generated only for shared folders on which BranchCache is enabled. If you use this setting, you must enable BranchCache for individual shares in Share and Storage Management on the file server.
-- Disallow hash publication on all shared folders. With this option, BranchCache does not generate content information for any shares on the computer and does not send content information to client computers that request content.
 
-<!--/Description-->
+- Disallow hash publication on all shared folders. With this option, BranchCache doesn't generate content information for any shares on the computer and doesn't send content information to client computers that request content.
+<!-- Pol_HashPublication-Description-End -->
 
+<!-- Pol_HashPublication-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Pol_HashPublication-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Hash Publication for BranchCache*
--   GP name: *Pol_HashPublication*
--   GP path: *Network/Lanman Server*
--   GP ADMX file name: *LanmanServer.admx*
+<!-- Pol_HashPublication-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Pol_HashPublication-DFProperties-End -->
 
-<!--Policies-->
+<!-- Pol_HashPublication-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-lanmanserver-pol-hashsupportversion"></a>**ADMX_LanmanServer/Pol_HashSupportVersion**  
+| Name | Value |
+|:--|:--|
+| Name | Pol_HashPublication |
+| Friendly Name | Hash Publication for BranchCache |
+| Location | Computer Configuration |
+| Path | Network > Lanman Server |
+| Registry Key Name | Software\Policies\Microsoft\Windows\LanmanServer |
+| ADMX File Name | LanmanServer.admx |
+<!-- Pol_HashPublication-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- Pol_HashPublication-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Pol_HashPublication-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Pol_HashPublication-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Pol_HashSupportVersion-Begin -->
+## Pol_HashSupportVersion
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Pol_HashSupportVersion-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Pol_HashSupportVersion-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- Pol_HashSupportVersion-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_LanmanServer/Pol_HashSupportVersion
+```
+<!-- Pol_HashSupportVersion-OmaUri-End -->
 
-<hr/>
+<!-- Pol_HashSupportVersion-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting specifies whether the BranchCache hash generation service supports version 1 (V1) hashes, version 2 (V2) hashes, or both V1 and V2 hashes. Hashes, also called content information, are created based on the data in shared folders where BranchCache is enabled.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting specifies whether the BranchCache hash generation service supports version 1 (V1) hashes, version 2 (V2) hashes, or both V1 and V2 hashes. Hashes, also called content information, are created based on the data in shared folders where BranchCache is enabled. 
+If you specify only one version that's supported, content information for that version is the only type that's generated by BranchCache, and it's the only type of content information that can be retrieved by client computers. For example, if you enable support for V1 hashes, BranchCache generates only V1 hashes and client computers can retrieve only V1 hashes.
 
-If you specify only one version that is supported, content information for that version is the only type that is generated by BranchCache, and it is the only type of content information that can be retrieved by client computers. For example, if you enable support for V1 hashes, BranchCache generates only V1 hashes and client computers can retrieve only V1 hashes.
-
-Policy configuration
+Policy configuration.
 
 Select one of the following:
 
-- Not Configured. With this selection, BranchCache settings are not applied to client computers by this policy setting. In this circumstance, which is the default, both V1 and V2 hash generation and retrieval are supported.
+- Not Configured. With this selection, BranchCache settings aren't applied to client computers by this policy setting. In this circumstance, which is the default, both V1 and V2 hash generation and retrieval are supported.
+
 - Enabled. With this selection, the policy setting is applied and the hash version(s) that are specified in "Hash version supported" are generated and retrieved.
+
 - Disabled. With this selection, both V1 and V2 hash generation and retrieval are supported.
 
 In circumstances where this setting is enabled, you can also select and configure the following option:
@@ -212,73 +209,114 @@ In circumstances where this setting is enabled, you can also select and configur
 Hash version supported:
 
 - To support V1 content information only, configure "Hash version supported" with the value of 1.
+
 - To support V2 content information only, configure "Hash version supported" with the value of 2.
+
 - To support both V1 and V2 content information, configure "Hash version supported" with the value of 3.
+<!-- Pol_HashSupportVersion-Description-End -->
 
-<!--/Description-->
+<!-- Pol_HashSupportVersion-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Pol_HashSupportVersion-Editable-End -->
 
+<!-- Pol_HashSupportVersion-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Hash Version support for BranchCache*
--   GP name: *Pol_HashSupportVersion*
--   GP path: *Network/Lanman Server*
--   GP ADMX file name: *LanmanServer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Pol_HashSupportVersion-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- Pol_HashSupportVersion-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-lanmanserver-pol-honorciphersuiteorder"></a>**ADMX_LanmanServer/Pol_HonorCipherSuiteOrder**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Pol_HashSupportVersion |
+| Friendly Name | Hash Version support for BranchCache |
+| Location | Computer Configuration |
+| Path | Network > Lanman Server |
+| Registry Key Name | Software\Policies\Microsoft\Windows\LanmanServer |
+| ADMX File Name | LanmanServer.admx |
+<!-- Pol_HashSupportVersion-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Pol_HashSupportVersion-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Pol_HashSupportVersion-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Pol_HashSupportVersion-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Pol_HonorCipherSuiteOrder-Begin -->
+## Pol_HonorCipherSuiteOrder
 
-> [!div class = "checklist"]
-> * Device
+<!-- Pol_HonorCipherSuiteOrder-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Pol_HonorCipherSuiteOrder-Applicability-End -->
 
-<hr/>
+<!-- Pol_HonorCipherSuiteOrder-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_LanmanServer/Pol_HonorCipherSuiteOrder
+```
+<!-- Pol_HonorCipherSuiteOrder-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- Pol_HonorCipherSuiteOrder-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting determines how the SMB server selects a cipher suite when negotiating a new connection with an SMB client.
 
-If you enable this policy setting, the SMB server will select the cipher suite it most prefers from the list of client-supported cipher suites, ignoring the client's preferences.
+- If you enable this policy setting, the SMB server will select the cipher suite it most prefers from the list of client-supported cipher suites, ignoring the client's preferences.
 
-If you disable or do not configure this policy setting, the SMB server will select the cipher suite the client most prefers from the list of server-supported cipher suites.
+- If you disable or don't configure this policy setting, the SMB server will select the cipher suite the client most prefers from the list of server-supported cipher suites.
 
 > [!NOTE]
-> When configuring this security setting, changes will not take effect until you restart Windows.
+> When configuring this security setting, changes won't take effect until you restart Windows.
+<!-- Pol_HonorCipherSuiteOrder-Description-End -->
 
-<!--/Description-->
+<!-- Pol_HonorCipherSuiteOrder-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Pol_HonorCipherSuiteOrder-Editable-End -->
 
+<!-- Pol_HonorCipherSuiteOrder-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Honor cipher suite order*
--   GP name: *Pol_HonorCipherSuiteOrder*
--   GP path: *Network/Lanman Server*
--   GP ADMX file name: *LanmanServer.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Pol_HonorCipherSuiteOrder-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- Pol_HonorCipherSuiteOrder-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | Pol_HonorCipherSuiteOrder |
+| Friendly Name | Honor cipher suite order |
+| Location | Computer Configuration |
+| Path | Network > Lanman Server |
+| Registry Key Name | Software\Policies\Microsoft\Windows\LanmanServer |
+| Registry Value Name | HonorCipherSuiteOrder |
+| ADMX File Name | LanmanServer.admx |
+<!-- Pol_HonorCipherSuiteOrder-AdmxBacked-End -->
 
-<!--/Policies-->
+<!-- Pol_HonorCipherSuiteOrder-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Pol_HonorCipherSuiteOrder-Examples-End -->
 
+<!-- Pol_HonorCipherSuiteOrder-End -->
+
+<!-- ADMX_LanmanServer-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_LanmanServer-CspMoreInfo-End -->
+
+<!-- ADMX_LanmanServer-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

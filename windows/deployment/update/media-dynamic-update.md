@@ -1,18 +1,15 @@
 ---
 title: Update Windows installation media with Dynamic Update
 description: Learn how to deploy feature updates to your mission critical devices
-ms.prod: w10
-ms.mktglfcycl: manage
-audience: itpro
-itproauthor: jaimeo
-author: SteveDiAcetis
+ms.prod: windows-client
+author: mestew
 ms.localizationpriority: medium
-ms.author: jaimeo
-manager: dougeby
-ms.collection:
-  - M365-modern-desktop
-  - highpri
+ms.author: mstewart
+manager: aaroncz
 ms.topic: article
+ms.technology: itpro-updates
+ms.date: 05/09/2023
+ms.reviewer: stevedia
 ---
 
 # Update Windows installation media with Dynamic Update
@@ -79,6 +76,8 @@ This table shows the correct sequence for applying the various tasks to the file
 |Add Features on Demand     |         |         |  20       |
 |Add Safe OS Dynamic Update     | 6        |        |       |
 |Add Setup Dynamic Update     |         |         |         | 26
+|Add setup.exe from WinPE     |         |         |         | 27
+|Add boot manager from WinPE     |         |         |         | 28
 |Add latest cumulative update     |         | 15        | 21        |
 |Clean up the image     |  7       | 16        | 22        |
 |Add Optional Components     |         |         |  23       |
@@ -191,25 +190,32 @@ Mount-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\install.wim" -Index 1 -Pa
 #
 # update Windows Recovery Environment (WinRE)
 #
-Copy-Item -Path $MAIN_OS_MOUNT"\windows\system32\recovery\winre.wim" -Destination $WORKING_PATH"\winre.wim" -Force -Recurse -ErrorAction stop | Out-Null
+Copy-Item -Path $MAIN_OS_MOUNT"\windows\system32\recovery\winre.wim" -Destination $WORKING_PATH"\winre.wim" -Force -ErrorAction stop | Out-Null
 Write-Output "$(Get-TS): Mounting WinRE"
 Mount-WindowsImage -ImagePath $WORKING_PATH"\winre.wim" -Index 1 -Path $WINRE_MOUNT -ErrorAction stop | Out-Null
 
-# Add servicing stack update
+# Add servicing stack update (Step 1 from the table)
 
-# Note: If you are using a combined cumulative update, there may be a prerequisite servicing stack update required
-# This is where you'd add the prerequisite SSU, before applying the latest combined cumulative update. 
+# Depending on the Windows release that you are updating, there are 2 different approaches for updating the servicing stack
+# The first approach is to use the combined cumulative update. This is for Windows releases that are shipping a combined 
+# cumulative update that includes the servicing stack updates (i.e. SSU + LCU are combined). Windows 11, version 21H2 and 
+# Windows 11, version 22H2 are examples. In these cases, the servicing stack update is not published seperately; the combined 
+# cumulative update should be used for this step. However, in hopefully rare cases, there may breaking change in the combined 
+# cumulative update format, that requires a standalone servicing stack update to be published, and installed first before the 
+# combined cumulative update can be installed. 
 
-# Note: If you are applying a combined cumulative update to a previously updated image (e.g. an image you updated last month)
-# There is a known issue where the servicing stack update is installed, but the cumulative update will fail.
-# This error should be caught and ignored, as the last step will be to apply the cumulative update 
-# (or in this case the combined cumulative update) and thus the image will be left with the correct packages installed.
+# This is the code to handle the rare case that the SSU is published and required for the combined cumulative update
+# Write-Output "$(Get-TS): Adding package $SSU_PATH"
+# Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SSU_PATH | Out-Null  
 
-Write-Output "$(Get-TS): Adding package $SSU_PATH"
+# Now, attempt the combined cumulative update.
+# There is a known issue where the servicing stack update is installed, but the cumulative update will fail. This error should 
+# be caught and ignored, as the last step will be to apply the Safe OS update and thus the image will be left with the correct 
+# packages installed.
 
 try
 {
-    Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SSU_PATH | Out-Null  
+    Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $LCU_PATH | Out-Null  
 }
 Catch
 {
@@ -223,6 +229,13 @@ Catch
         throw
     }
 }
+
+# The second approach for Step 1 is for Windows releases that have not adopted the combined cumulative update
+# but instead continue to have a seperate servicing stack update published. In this case, we'll install the SSU
+# update. This second approach is commented out below.
+
+# Write-Output "$(Get-TS): Adding package $SSU_PATH"
+# Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SSU_PATH | Out-Null  
 
 #
 # Optional: Add the language to recovery environment
@@ -288,7 +301,7 @@ Move-Item -Path $WORKING_PATH"\winre2.wim" -Destination $WORKING_PATH"\winre.wim
 
 ### Update WinPE
 
-This script is similar to the one that updates WinRE, but instead it mounts Boot.wim, applies the packages with the latest cumulative update last, and saves. It repeats this for all images inside of Boot.wim, typically two images. It starts by applying the servicing stack Dynamic Update. Since the script is customizing this media with Japanese, it installs the language pack from the WinPE folder on the language pack ISO. Additionally, add font support and text to speech (TTS) support. Since the script is adding a new language, it rebuilds lang.ini, used to identify languages installed in the image. Finally, it cleans and exports Boot.wim, and copies it back to the new media.
+This script is similar to the one that updates WinRE, but instead it mounts Boot.wim, applies the packages with the latest cumulative update last, and saves. It repeats this for all images inside of Boot.wim, typically two images. It starts by applying the servicing stack Dynamic Update. Since the script is customizing this media with Japanese, it installs the language pack from the WinPE folder on the language pack ISO. Additionally, it adds font support and text to speech (TTS) support. Since the script is adding a new language, it rebuilds lang.ini, used to identify languages installed in the image. For the second image, we'll save setup.exe for later use, to ensure this version matches the \sources\setup.exe version from the installation media. If these binaries are not identical, Windows Setup will fail during installation. We'll also save the serviced boot manager files for later use in the script. Finally, the script cleans and exports Boot.wim, and copies it back to the new media.
 
 ```powershell
 #
@@ -301,30 +314,37 @@ $WINPE_IMAGES = Get-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\boot.wim"
 Foreach ($IMAGE in $WINPE_IMAGES) {
 
     # update WinPE
-    Write-Output "$(Get-TS): Mounting WinPE"
+    Write-Output "$(Get-TS): Mounting WinPE, image index $($IMAGE.ImageIndex)"
     Mount-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\boot.wim" -Index $IMAGE.ImageIndex -Path $WINPE_MOUNT -ErrorAction stop | Out-Null  
 
-    # Add SSU
+    # Add servicing stack update (Step 9 from the table)
 
-    # Note: If you are using a combined cumulative update, there may be a prerequisite servicing stack update required
-    # This is where you'd add the prerequisite SSU, before applying the latest combined cumulative update. 
+    # Depending on the Windows release that you are updating, there are 2 different approaches for updating the servicing stack
+    # The first approach is to use the combined cumulative update. This is for Windows releases that are shipping a combined 
+    # cumulative update that includes the servicing stack updates (i.e. SSU + LCU are combined). Windows 11, version 21H2 and 
+    # Windows 11, version 22H2 are examples. In these cases, the servicing stack update is not published seperately; the combined 
+    # cumulative update should be used for this step. However, in hopefully rare cases, there may breaking change in the combined 
+    # cumulative update format, that requires a standalone servicing stack update to be published, and installed first before the 
+    # combined cumulative update can be installed. 
 
-    # Note: If you are applying a combined cumulative update to a previously updated image (e.g. an image you updated last month)
+    # This is the code to handle the rare case that the SSU is published and required for the combined cumulative update
+    # Write-Output "$(Get-TS): Adding package $SSU_PATH"
+    # Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $SSU_PATH | Out-Null  
+
+    # Now, attempt the combined cumulative update.
     # There is a known issue where the servicing stack update is installed, but the cumulative update will fail.
     # This error should be caught and ignored, as the last step will be to apply the cumulative update 
     # (or in this case the combined cumulative update) and thus the image will be left with the correct packages installed.
 
-    Write-Output "$(Get-TS): Adding package $SSU_PATH"
-    
     try
     {
-        Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $SSU_PATH | Out-Null
+        Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $LCU_PATH | Out-Null  
     }
     Catch
     {
         $theError = $_
         Write-Output "$(Get-TS): $theError"
-        
+
         if ($theError.Exception -like "*0x8007007e*") {
             Write-Output "$(Get-TS): This failure is a known issue with combined cumulative update, we can ignore."
         }
@@ -332,6 +352,13 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
             throw
         }
     }
+
+    # The second approach for Step 9 is for Windows releases that have not adopted the combined cumulative update
+    # but instead continue to have a seperate servicing stack update published. In this case, we'll install the SSU
+    # update. This second approach is commented out below.
+
+    # Write-Output "$(Get-TS): Adding package $SSU_PATH"
+    # Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $SSU_PATH | Out-Null 
 
     # Install lp.cab cab
     Write-Output "$(Get-TS): Adding package $WINPE_OC_LP_PATH"
@@ -390,6 +417,17 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
     Write-Output "$(Get-TS): Performing image cleanup on WinPE"
     DISM /image:$WINPE_MOUNT /cleanup-image /StartComponentCleanup | Out-Null
 
+    if ($IMAGE.ImageIndex -eq "2") {
+
+        # Save setup.exe for later use. This will address possible binary mismatch with the version in the main OS \sources folder
+        Copy-Item -Path $WINPE_MOUNT"\sources\setup.exe" -Destination $WORKING_PATH"\setup.exe" -Force -ErrorAction stop | Out-Null
+        
+        # Save serviced boot manager files later copy to the root media.
+        Copy-Item -Path $WINPE_MOUNT"\Windows\boot\efi\bootmgfw.efi" -Destination $WORKING_PATH"\bootmgfw.efi" -Force -ErrorAction stop | Out-Null
+        Copy-Item -Path $WINPE_MOUNT"\Windows\boot\efi\bootmgr.efi" -Destination $WORKING_PATH"\bootmgr.efi" -Force -ErrorAction stop | Out-Null
+    
+    }
+        
     # Dismount
     Dismount-WindowsImage -Path $WINPE_MOUNT -Save -ErrorAction stop | Out-Null
 
@@ -415,9 +453,29 @@ You can install Optional Components, along with the .NET feature, offline, but t
 # update Main OS
 #
 
-# Add servicing stack update
-Write-Output "$(Get-TS): Adding package $SSU_PATH"
-Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $SSU_PATH -ErrorAction stop | Out-Null
+# Add servicing stack update (Step 18 from the table)
+
+# Depending on the Windows release that you are updating, there are 2 different approaches for updating the servicing stack
+# The first approach is to use the combined cumulative update. This is for Windows releases that are shipping a combined cumulative update that
+# includes the servicing stack updates (i.e. SSU + LCU are combined). Windows 11, version 21H2 and Windows 11, version 22H2 are examples. In these
+# cases, the servicing stack update is not published seperately; the combined cumulative update should be used for this step. However, in hopefully
+# rare cases, there may breaking change in the combined cumulative update format, that requires a standalone servicing stack update to be published, 
+# and installed first before the combined cumulative update can be installed. 
+
+# This is the code to handle the rare case that the SSU is published and required for the combined cumulative update
+# Write-Output "$(Get-TS): Adding package $SSU_PATH"
+# Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $SSU_PATH | Out-Null  
+
+# Now, attempt the combined cumulative update. Unlike WinRE and WinPE, we don't need to check for error 0x8007007e
+Write-Output "$(Get-TS): Adding package $LCU_PATH"
+Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $LCU_PATH | Out-Null  
+
+# The second approach for Step 18 is for Windows releases that have not adopted the combined cumulative update
+# but instead continue to have a seperate servicing stack update published. In this case, we'll install the SSU
+# update. This second approach is commented out below.
+
+# Write-Output "$(Get-TS): Adding package $SSU_PATH"
+# Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $SSU_PATH | Out-Null  
 
 # Optional: Add language to main OS
 Write-Output "$(Get-TS): Adding package $OS_LP_PATH"
@@ -451,7 +509,7 @@ Add-WindowsPackage -Path $MAIN_OS_MOUNT -PackagePath $LCU_PATH -ErrorAction stop
 # Copy our updated recovery image from earlier into the main OS
 # Note: If I were updating more than 1 edition, I'd want to copy the same recovery image file
 # into each edition to enable single instancing
-Copy-Item -Path $WORKING_PATH"\winre.wim" -Destination $MAIN_OS_MOUNT"\windows\system32\recovery\winre.wim" -Force -Recurse -ErrorAction stop | Out-Null
+Copy-Item -Path $WORKING_PATH"\winre.wim" -Destination $MAIN_OS_MOUNT"\windows\system32\recovery\winre.wim" -Force -ErrorAction stop | Out-Null
 
 # Perform image cleanup
 Write-Output "$(Get-TS): Performing image cleanup on main OS"
@@ -481,7 +539,7 @@ Move-Item -Path $WORKING_PATH"\install2.wim" -Destination $MEDIA_NEW_PATH"\sourc
 
 ### Update remaining media files
 
-This part of the script updates the Setup files. It simply copies the individual files in the Setup Dynamic Update package to the new media. This step brings an updated Setup.exe as needed, along with the latest compatibility database, and replacement component manifests.
+This part of the script updates the Setup files. It simply copies the individual files in the Setup Dynamic Update package to the new media. This step brings in updated Setup files as needed, along with the latest compatibility database, and replacement component manifests. This script also does a final replacement of setup.exe and boot manager files using the previously saved versions from WinPE.
 
 ```powershell
 #
@@ -491,6 +549,31 @@ This part of the script updates the Setup files. It simply copies the individual
 # Add Setup DU by copy the files from the package into the newMedia
 Write-Output "$(Get-TS): Adding package $SETUP_DU_PATH"
 cmd.exe /c $env:SystemRoot\System32\expand.exe $SETUP_DU_PATH -F:* $MEDIA_NEW_PATH"\sources" | Out-Null
+
+# Copy setup.exe from boot.wim, saved earlier.
+Write-Output "$(Get-TS): Copying $WORKING_PATH\setup.exe to $MEDIA_NEW_PATH\sources\setup.exe"
+Copy-Item -Path $WORKING_PATH"\setup.exe" -Destination $MEDIA_NEW_PATH"\sources\setup.exe" -Force -ErrorAction stop | Out-Null
+
+
+# Copy bootmgr files from boot.wim, saved earlier.
+$MEDIA_NEW_FILES = Get-ChildItem $MEDIA_NEW_PATH -Force -Recurse -Filter b*.efi
+
+Foreach ($File in $MEDIA_NEW_FILES){
+    if (($File.Name -ieq "bootmgfw.efi") -or `
+        ($File.Name -ieq "bootx64.efi") -or `
+        ($File.Name -ieq "bootia32.efi") -or `
+        ($File.Name -ieq "bootaa64.efi")) 
+    {
+        Write-Output "$(Get-TS): Copying $WORKING_PATH\bootmgfw.efi to $($File.FullName)"
+        Copy-Item -Path $WORKING_PATH"\bootmgfw.efi" -Destination $File.FullName -Force -ErrorAction stop | Out-Null
+    }
+    elseif ($File.Name -ieq "bootmgr.efi") 
+    {
+        Write-Output "$(Get-TS): Copying $WORKING_PATH\bootmgr.efi to $($File.FullName)"
+        Copy-Item -Path $WORKING_PATH"\bootmgr.efi" -Destination $File.FullName -Force -ErrorAction stop | Out-Null
+    }
+}
+
 ```
 
 ### Finish up

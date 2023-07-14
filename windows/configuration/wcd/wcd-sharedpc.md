@@ -1,22 +1,20 @@
 ---
-title: SharedPC (Windows 10)
-description: This section describes the SharedPC settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: greg-lindsay
+title: SharedPC
+description: This section describes the SharedPC settings that you can configure in provisioning packages for Windows using Windows Configuration Designer.
+ms.prod: windows-client
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ms.date: 10/16/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
+ms.technology: itpro-configure
 ---
 
 # SharedPC (Windows Configuration Designer reference)
 
-Use SharedPC settings to optimize Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise and temporary customer use in retail. 
-
+Use SharedPC settings to optimize Windows devices for shared use scenarios, such as touchdown spaces in an enterprise and temporary customer use in retail.
 
 ## Applies to
 
@@ -39,16 +37,18 @@ Use these settings to configure settings for accounts allowed on the shared PC.
 | KioskModeAUMID  | String  | Set an Application User Model ID (AUMID) to enable the kiosk account on the sign in screen. A new account will be created and will use assigned access to only run the app specified by the AUMID. The app must be installed on the PC. Set the name of the account using **KioskModeUserTileDisplayText**, or a default name will be used. [Find the Application User Model ID of an installed app](/previous-versions/windows/embedded/dn449300(v=winembedded.82))  |
 | KioskModeUserTileDisplayText  | String  | Sets the display text on the kiosk account if **KioskModeAUMID** has been set.  |
 
-
 ## EnableSharedPCMode
 
-Set as **True**. When set to **False**, shared PC mode isn't turned on and none of the other settings apply. This setting controls this API: [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings).
+Set as **True** to enable **Shared PC Mode**. This setting controls this API: [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings).
 
-Some of the remaining settings in SharedPC are optional, but we strongly recommend that you also set **EnableAccountManager** to **True**.
+## EnableSharedPCModeWithOneDriveSync
+
+Set as **True** to enable **Shared PC Mode**. This setting controls this API: [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings).
+
 
 ## PolicyCustomization
 
-Use these settings to configure policies for shared PC mode.
+Use these settings to configure additional Shared PC policies.
 
 | Setting | Value | Description |
 | --- | --- | --- |

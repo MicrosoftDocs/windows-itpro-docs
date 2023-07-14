@@ -1,18 +1,20 @@
 ---
 title: Test scenario 2 - Perform a quick search with Cortana at work
 description: A test scenario about how to perform a quick search with Cortana at work.
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-author: greg-lindsay
+ms.prod: windows-client
+ms.collection: tier3
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
+ms.technology: itpro-configure
 ---
 
 # Test scenario 2 – Perform a quick search with Cortana at work
+<!--Using include for Cortana in Windows deprecation -->
+[!INCLUDE [Deprecation of Cortana in Windows](./includes/cortana-deprecation.md)]
 
 >[!Important]
 >The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering.

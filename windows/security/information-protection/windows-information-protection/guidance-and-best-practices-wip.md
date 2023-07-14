@@ -1,21 +1,14 @@
 ---
-title: General guidance and best practices for Windows Information Protection (WIP) (Windows 10)
+title: General guidance and best practices for Windows Information Protection (WIP) 
 description: Find resources about apps that can work with Windows Information Protection (WIP) to protect data. Enlightened apps can tell corporate and personal data apart.
-ms.assetid: aa94e733-53be-49a7-938d-1660deaf52b0
-ms.reviewer: 
-keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection
-ms.prod: m365-security
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.topic: conceptual
 ms.date: 02/26/2019
+ms.technology: itpro-security
 ---
 
 # General guidance and best practices for Windows Information Protection (WIP)

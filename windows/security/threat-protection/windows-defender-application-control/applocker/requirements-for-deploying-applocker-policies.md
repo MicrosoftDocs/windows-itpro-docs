@@ -1,30 +1,18 @@
 ---
-title: Requirements for deploying AppLocker policies (Windows)
+title: Requirements for deploying AppLocker policies
 description: This deployment topic for the IT professional lists the requirements that you need to consider before you deploy AppLocker policies.
-ms.assetid: 3e55bda2-3cd7-42c7-bad3-c7dfbe193d48
 ms.reviewer: 
-ms.author: macapara
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.author: vinpa
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: mjcaparas
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+author: vinaypamnani-msft
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Requirements for deploying AppLocker policies
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).

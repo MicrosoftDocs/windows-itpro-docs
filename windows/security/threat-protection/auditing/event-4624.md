@@ -1,17 +1,21 @@
 ---
-title: 4624(S) An account was successfully logged on. (Windows 10)
+title: 4624(S) An account was successfully logged on. 
 description: Describes security event 4624(S) An account was successfully logged on.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.collection: 
+  - highpri
+  - tier3
+ms.topic: reference
 ---
 
 # 4624(S): An account was successfully logged on.
@@ -117,14 +121,16 @@ This event generates when a logon session is created (on destination machine). I
 
 **Subject:**
 
-- **Security ID** [Type = SID]**:** SID of account that reported information about successful logon or invokes it. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
+- **Security ID** [Type = SID]**:** SID of account that reported information about successful logon or invokes it. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID can't be resolved, you will see the source data in the event.
+
+    This field may also contain no subject user information, but the NULL Sid "S-1-0-0" and no user or domain information.
 
   > [!NOTE]
-  > A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
+  > A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it can't ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
 
 - **Account Name** [Type = UnicodeString]**:** the name of the account that reported information about successful logon.
 
-- **Account Domain** [Type = UnicodeString]**:** subject’s domain or computer name. Formats vary, and include the following:
+- **Account Domain** [Type = UnicodeString]**:** subject's domain or computer name. Formats vary, and include the following:
 
     - Domain NETBIOS name example: CONTOSO
 
@@ -188,7 +194,7 @@ This event generates when a logon session is created (on destination machine). I
 
 - **Account Name** [Type = UnicodeString]**:** the name of the account for which logon was performed.
 
-- **Account Domain** [Type = UnicodeString]**:** subject’s domain or computer name. Formats vary, and include the following:
+- **Account Domain** [Type = UnicodeString]**:** subject's domain or computer name. Formats vary, and include the following:
 
     - Domain NETBIOS name example: CONTOSO
 
@@ -286,7 +292,7 @@ For 4624(S): An account was successfully logged on.
 | **Accounts of different types**: You might want to ensure that certain actions are performed only by certain account types, for example, local or domain account, machine or user account, vendor or employee account, and so on.                                                                                 | If this event corresponds to an action you want to monitor for certain account types, review the **"New Logon\\Security ID"** to see whether the account type is as expected. |
 | **External accounts**: You might be monitoring accounts from another domain, or "external" accounts that are not allowed to perform certain actions (represented by certain specific events).                                                                                                                     | Monitor this event for the **"Subject\\Account Domain"** corresponding to accounts from another domain or "external" accounts.                                                |
 | **Restricted-use computers or devices**: You might have certain computers, machines, or devices on which certain people (accounts) should not typically perform any actions.                                                                                                                                      | Monitor the target **Computer:** (or other target device) for actions performed by the **"New Logon\\Security ID"** that you are concerned about.                             |
-| **Account naming conventions**: Your organization might have specific naming conventions for account names.                                                                                                                                                                                                       | Monitor "**Subject\\Account Name"** for names that don’t comply with naming conventions.                                                                                      |
+| **Account naming conventions**: Your organization might have specific naming conventions for account names.                                                                                                                                                                                                       | Monitor "**Subject\\Account Name"** for names that don't comply with naming conventions.                                                                                      |
 
 - Because this event is typically triggered by the SYSTEM account, we recommend that you report it whenever **"Subject\\Security ID"** is not SYSTEM.
 
@@ -312,6 +318,6 @@ For 4624(S): An account was successfully logged on.
 
     - If the **Authentication Package** is NTLM. In this case, monitor for **Key Length** not equal to 128, because all Windows operating systems starting with Windows 2000 support 128-bit Key Length.
 
-- If you monitor for potentially malicious software, or software that is not authorized to request logon actions, monitor this event for **Process Name**.
+- If you monitor for potentially malicious software, or software that isn't authorized to request logon actions, monitor this event for **Process Name**.
 
-- If you have a trusted logon processes list, monitor for a **Logon Process** that is not from the list.
+- If you have a trusted logon processes list, monitor for a **Logon Process** that isn't from the list.

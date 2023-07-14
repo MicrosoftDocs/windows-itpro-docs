@@ -1,26 +1,26 @@
 ---
-title: Domain member Maximum machine account password age (Windows 10)
+title: Domain member Maximum machine account password age 
 description: Describes the best practices, location, values, and security considerations for the Domain member Maximum machine account password age security policy setting.
 ms.assetid: 0ec6f7c1-4d82-4339-94c0-debb2d1ac109
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/29/2020
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Domain member: Maximum machine account password age
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Domain member: Maximum machine account password age** security policy setting.
@@ -43,7 +43,7 @@ For more information, see [Machine Account Password Process](https://techcommuni
 
 ### Best practices
 
-We recommend that you set **Domain member: Maximum machine account password age** to about 30 days. Setting the value to fewer days can increase replication and affect domain controllers. For example, in Windows NT domains, machine passwords were changed every 7 days. The additional replication churn would affect domain controllers in large organizations that have many computers or slow links between sites. 
+We recommend that you set **Domain member: Maximum machine account password age** to about 30 days. Setting the value to fewer days can increase replication and affect domain controllers. For example, in Windows NT domains, machine passwords were changed every 7 days. The extra replication churn would affect domain controllers in large organizations that have many computers or slow links between sites. 
 
 ### Location
 
@@ -68,7 +68,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a computer restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a computer restart when they're saved locally or distributed through Group Policy.
 
 ## Security considerations
 
@@ -76,7 +76,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-By default, the domain members submit a password change every 30 days. If you increase this interval significantly so that the computers no longer submit a password change, an attacker has more time to undertake a brute-force attack to guess the password of one or more computer accounts.
+By default, the domain members submit a password change every 30 days. If you increase this interval so that the computers no longer submit a password change, an attacker has more time to undertake a brute-force attack to guess the password of one or more computer accounts.
 
 ### Countermeasure
 
@@ -84,7 +84,7 @@ Configure the **Domain member: Maximum machine account password age** setting to
 
 ### Potential impact
 
-None. This is the default configuration.
+None. This non-impact state is the default configuration.
 ## Related topics
 
 - [Security Options](security-options.md)

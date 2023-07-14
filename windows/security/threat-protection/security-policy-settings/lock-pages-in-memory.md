@@ -1,26 +1,26 @@
 ---
-title: Lock pages in memory (Windows 10)
+title: Lock pages in memory 
 description: Describes the best practices, location, values, policy management, and security considerations for the Lock pages in memory security policy setting.
 ms.assetid: cc724979-aec0-496d-be4e-7009aef660a3
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Lock pages in memory
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Lock pages in memory** security policy setting.
@@ -31,9 +31,10 @@ This policy setting determines which accounts can use a process to keep data in 
 
 Normally, an application running on Windows can negotiate for more physical memory, and in response to the request, the application begins to move the data from RAM (such as the data cache) to a disk. When the pageable memory is moved to a disk, more RAM is free for the operating system to use.
 
-Enabling this policy setting for a specific account (a user account or a process account for an application) prevents paging of the data. Thereby, the amount of memory that Windows can reclaim under pressure is limited. This could lead to performance degradation.
+Enabling this policy setting for a specific account (a user account or a process account for an application) prevents paging of the data. Thereby, the amount of memory that Windows can reclaim under pressure is limited. This limitation could lead to performance degradation.
 
->**Note:**  By configuring this policy setting, the performance of the Windows operating system will differ depending on if applications are running on 32-bit or 64-bit systems, and if they are virtualized images. Performance will also differ between earlier and later versions of the Windows operating system.
+> [!NOTE]
+> By configuring this policy setting, the performance of the Windows operating system will differ depending on if applications are running on 32-bit or 64-bit systems, and if they are virtualized images. Performance will also differ between earlier and later versions of the Windows operating system.
  
 Constant: SeLockMemoryPrivilege
 
@@ -67,7 +68,7 @@ The following table lists the actual and effective default policy values for the
 
 This section describes features, tools, and guidance to help you manage this policy.
 
-A restart of the computer is not required for this policy setting to be effective.
+A restart of the computer isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 
@@ -92,7 +93,7 @@ Users with the **Lock pages in memory** user right could assign physical memory 
 
 ### Countermeasure
 
-Do not assign the **Lock pages in memory** user right to any accounts.
+Don't assign the **Lock pages in memory** user right to any accounts.
 
 ### Potential impact
 

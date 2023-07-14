@@ -1,17 +1,18 @@
 ---
-title: 5154(S) The Windows Filtering Platform has permitted an application or service to listen on a port for incoming connections. (Windows 10)
+title: 5154(S) The Windows Filtering Platform has permitted an application or service to listen on a port for incoming connections. 
 description: Describes security event 5154(S) The Windows Filtering Platform has permitted an application or service to listen on a port for incoming connections.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5154(S): The Windows Filtering Platform has permitted an application or service to listen on a port for incoming connections.
@@ -95,10 +96,10 @@ This event generates every time [Windows Filtering Platform](/windows/win32/fwp/
     -   IPv6 Address
 
     -   :: - all IP addresses in IPv6 format
-
+s
     -   0.0.0.0 - all IP addresses in IPv4 format
 
-    -   127.0.0.1 , ::1 - localhost
+    -   127.0.0.1, ::1 - localhost
 
 -   **Source Port** \[Type = UnicodeString\]: source TCP\\UDP port number that was requested for listening by application.
 
@@ -112,7 +113,7 @@ This event generates every time [Windows Filtering Platform](/windows/win32/fwp/
 
 **Filter Information:**
 
--   **Filter Run-Time ID** \[Type = UInt64\]: unique filter ID that allows application to listen on the specific port. By default Windows firewall won't prevent a port from being listened by an application and if this application doesn’t match any filters you will get value **0** in this field.
+-   **Filter Run-Time ID** \[Type = UInt64\]: unique filter ID that allows application to listen on the specific port. By default Windows firewall won't prevent a port from being listened by an application and if this application doesn’t match any filters you'll get value **0** in this field.
 
     To find a specific Windows Filtering Platform filter by ID, run the following command: **netsh wfp show filters**. As a result of this command, the **filters.xml** file will be generated. Open this file and find specific substring with required filter ID (**&lt;filterId&gt;**)**,** for example:
 
@@ -128,7 +129,7 @@ This event generates every time [Windows Filtering Platform](/windows/win32/fwp/
 
 For 5154(S): The Windows Filtering Platform has permitted an application or service to listen on a port for incoming connections.
 
--   If you have an “allow list” of applications that are associated with certain operating systems or server roles, and that are expected to listen on specific ports, monitor this event for **“Application Name”** and other relevant information.
+-   If you've an “allowlist” of applications that are associated with certain operating systems or server roles, and that are expected to listen on specific ports, monitor this event for **“Application Name”** and other relevant information.
 
 -   If a certain application is allowed to listen only on specific port numbers, monitor this event for **“Application Name”** and **“Network Information\\Source Port**.**”**
 
@@ -138,7 +139,7 @@ For 5154(S): The Windows Filtering Platform has permitted an application or serv
 
 -   If you have a predefined application that should be used to perform the operation that was reported by this event, monitor events with “**Application**” not equal to your defined application.
 
--   You can monitor to see if “**Application**” is not in a standard folder (for example, not in **System32** or **Program Files**) or is in a restricted folder (for example, **Temporary Internet Files**).
+-   You can monitor to see if “**Application**” isn't in a standard folder (for example, not in **System32** or **Program Files**) or is in a restricted folder (for example, **Temporary Internet Files**).
 
 -   If you have a pre-defined list of restricted substrings or words in application names (for example, “**mimikatz**” or “**cain.exe**”), check for these substrings in “**Application**.”
 

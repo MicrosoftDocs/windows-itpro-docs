@@ -1,392 +1,495 @@
 ---
-title: Policy CSP - ADMX_FileSys
-description: Policy CSP - ADMX_FileSys
-ms.author: dansimp
+title: ADMX_FileSys Policy CSP
+description: Learn more about the ADMX_FileSys Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/11/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 09/02/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_FileSys-Begin -->
 # Policy CSP - ADMX_FileSys
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ADMX_FileSys policies 
+<!-- ADMX_FileSys-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_FileSys-Editable-End -->
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect). 
+<!-- DisableCompression-Begin -->
+## DisableCompression
 
-<dl>
-  <dd>
-    <a href="#admx-filesys-disablecompression">ADMX_FileSys/DisableCompression</a>
-  </dd>
-  <dd>
-    <a href="#admx-filesys-disabledeletenotification">ADMX_FileSys/DisableDeleteNotification</a>
-  </dd>
-  <dd>
-    <a href="#admx-filesys-disableencryption">ADMX_FileSys/DisableEncryption</a>
-  </dd>
-  <dd>
-    <a href="#admx-filesys-enablepagefileencryption">ADMX_FileSys/EnablePagefileEncryption</a>
-  </dd>
-  <dd>
-    <a href="#admx-filesys-longpathsenabled">ADMX_FileSys/LongPathsEnabled</a>
-  </dd>
-  <dd>
-    <a href="#admx-filesys-shortnamecreationsettings">ADMX_FileSys/ShortNameCreationSettings</a>
-  </dd>
-  <dd>
-    <a href="#admx-filesys-symlinkevaluation">ADMX_FileSys/SymlinkEvaluation</a>
-  </dd>
-  <dd>
-    <a href="#admx-filesys-txfdeprecatedfunctionality">ADMX_FileSys/TxfDeprecatedFunctionality</a>
-  </dd>
-</dl>
+<!-- DisableCompression-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableCompression-Applicability-End -->
 
+<!-- DisableCompression-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_FileSys/DisableCompression
+```
+<!-- DisableCompression-OmaUri-End -->
 
-<hr/>
+<!-- DisableCompression-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Compression can add to the processing overhead of filesystem operations. Enabling this setting will prevent access to and creation of compressed files.
 
-<!--Policy-->
-<a href="" id="admx-filesys-disablecompression"></a>**ADMX_FileSys/DisableCompression**  
+A reboot is required for this setting to take effect.
+<!-- DisableCompression-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableCompression-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableCompression-Editable-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableCompression-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableCompression-DFProperties-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableCompression-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--/Scope-->
-<!--Description-->
-Compression can add to the processing overhead of filesystem operations. Enabling this setting will prevent access to and creation of compressed files. 
+| Name | Value |
+|:--|:--|
+| Name | DisableCompression |
+| Friendly Name | Do not allow compression on all NTFS volumes |
+| Location | Computer Configuration |
+| Path | System > Filesystem > NTFS |
+| Registry Key Name | System\CurrentControlSet\Policies |
+| Registry Value Name | NtfsDisableCompression |
+| ADMX File Name | FileSys.admx |
+<!-- DisableCompression-AdmxBacked-End -->
 
-<!--/Description-->
+<!-- DisableCompression-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableCompression-Examples-End -->
 
+<!-- DisableCompression-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not allow compression on all NTFS volumes*
--   GP name: *DisableCompression*
--   GP path: *System/Filesystem/NTFS*
--   GP ADMX file name: *FileSys.admx*
+<!-- DisableDeleteNotification-Begin -->
+## DisableDeleteNotification
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisableDeleteNotification-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableDeleteNotification-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="admx-filesys-disabledeletenotification"></a>**ADMX_FileSys/DisableDeleteNotification**  
+<!-- DisableDeleteNotification-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_FileSys/DisableDeleteNotification
+```
+<!-- DisableDeleteNotification-OmaUri-End -->
 
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DisableDeleteNotification-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Delete notification is a feature that notifies the underlying storage device of clusters that are freed due to a file delete operation.
 
 A value of 0, the default, will enable delete notifications for all volumes.
 
 A value of 1 will disable delete notifications for all volumes.
+<!-- DisableDeleteNotification-Description-End -->
 
-<!--/Description-->
+<!-- DisableDeleteNotification-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableDeleteNotification-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Disable delete notifications on all volumes*
--   GP name: *DisableDeleteNotification*
--   GP path: *System/Filesystem*
--   GP ADMX file name: *FileSys.admx*
+<!-- DisableDeleteNotification-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableDeleteNotification-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-filesys-disableencryption"></a>**ADMX_FileSys/DisableEncryption**  
+<!-- DisableDeleteNotification-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | DisableDeleteNotification |
+| Friendly Name | Disable delete notifications on all volumes |
+| Location | Computer Configuration |
+| Path | System > Filesystem |
+| Registry Key Name | System\CurrentControlSet\Policies |
+| Registry Value Name | DisableDeleteNotification |
+| ADMX File Name | FileSys.admx |
+<!-- DisableDeleteNotification-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableDeleteNotification-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableDeleteNotification-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableDeleteNotification-End -->
 
-<hr/>
+<!-- DisableEncryption-Begin -->
+## DisableEncryption
 
-<!--/Scope-->
-<!--Description-->
+<!-- DisableEncryption-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableEncryption-Applicability-End -->
+
+<!-- DisableEncryption-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_FileSys/DisableEncryption
+```
+<!-- DisableEncryption-OmaUri-End -->
+
+<!-- DisableEncryption-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Encryption can add to the processing overhead of filesystem operations. Enabling this setting will prevent access to and creation of encrypted files.
 
+A reboot is required for this setting to take effect.
+<!-- DisableEncryption-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not allow encryption on all NTFS volumes*
--   GP name: *DisableEncryption*
--   GP path: *System/Filesystem/NTFS*
--   GP ADMX file name: *FileSys.admx*
+<!-- DisableEncryption-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableEncryption-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- DisableEncryption-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="admx-filesys-enablepagefileencryption"></a>**ADMX_FileSys/EnablePagefileEncryption**  
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableEncryption-DFProperties-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- DisableEncryption-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/SupportedSKUs-->
-<hr/>
+**ADMX mapping**:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+| Name | Value |
+|:--|:--|
+| Name | DisableEncryption |
+| Friendly Name | Do not allow encryption on all NTFS volumes |
+| Location | Computer Configuration |
+| Path | System > Filesystem > NTFS |
+| Registry Key Name | System\CurrentControlSet\Policies |
+| Registry Value Name | NtfsDisableEncryption |
+| ADMX File Name | FileSys.admx |
+<!-- DisableEncryption-AdmxBacked-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- DisableEncryption-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableEncryption-Examples-End -->
 
-<hr/>
+<!-- DisableEncryption-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- EnablePagefileEncryption-Begin -->
+## EnablePagefileEncryption
+
+<!-- EnablePagefileEncryption-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- EnablePagefileEncryption-Applicability-End -->
+
+<!-- EnablePagefileEncryption-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_FileSys/EnablePagefileEncryption
+```
+<!-- EnablePagefileEncryption-OmaUri-End -->
+
+<!-- EnablePagefileEncryption-Description-Begin -->
+<!-- Description-Source-ADMX -->
 Encrypting the page file prevents malicious users from reading data that has been paged to disk, but also adds processing overhead for filesystem operations. Enabling this setting will cause the page files to be encrypted.
+<!-- EnablePagefileEncryption-Description-End -->
 
-<!--/Description-->
+<!-- EnablePagefileEncryption-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnablePagefileEncryption-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Enable NTFS pagefile encryption*
--   GP name: *EnablePagefileEncryption*
--   GP path: *System/Filesystem/NTFS*
--   GP ADMX file name: *FileSys.admx*
+<!-- EnablePagefileEncryption-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnablePagefileEncryption-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-filesys-longpathsenabled"></a>**ADMX_FileSys/LongPathsEnabled**  
+<!-- EnablePagefileEncryption-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | EnablePagefileEncryption |
+| Friendly Name | Enable NTFS pagefile encryption |
+| Location | Computer Configuration |
+| Path | System > Filesystem > NTFS |
+| Registry Key Name | System\CurrentControlSet\Policies |
+| Registry Value Name | NtfsEncryptPagingFile |
+| ADMX File Name | FileSys.admx |
+<!-- EnablePagefileEncryption-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnablePagefileEncryption-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnablePagefileEncryption-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- EnablePagefileEncryption-End -->
 
-<hr/>
+<!-- LongPathsEnabled-Begin -->
+## LongPathsEnabled
 
-<!--/Scope-->
-<!--Description-->
-Enabling Win32 long paths will allow manifested win32 applications and Windows Store applications to access paths beyond the normal 260 character limit per node on file systems that support it. Enabling this setting will cause the long paths to be accessible within the process.
+<!-- LongPathsEnabled-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- LongPathsEnabled-Applicability-End -->
 
-<!--/Description-->
+<!-- LongPathsEnabled-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_FileSys/LongPathsEnabled
+```
+<!-- LongPathsEnabled-OmaUri-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Enable Win32 long paths*
--   GP name: *LongPathsEnabled*
--   GP path: *System/Filesystem*
--   GP ADMX file name: *FileSys.admx*
+<!-- LongPathsEnabled-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Enabling Win32 long paths will allow manifested win32 applications and Windows Store applications to access paths beyond the normal 260 character limit. Enabling this setting will cause the long paths to be accessible within the process.
+<!-- LongPathsEnabled-Description-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- LongPathsEnabled-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- LongPathsEnabled-Editable-End -->
 
-<!--Policy-->
-<a href="" id="admx-filesys-shortnamecreationsettings"></a>**ADMX_FileSys/ShortNameCreationSettings**  
+<!-- LongPathsEnabled-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- LongPathsEnabled-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- LongPathsEnabled-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+**ADMX mapping**:
 
-> [!div class = "checklist"]
-> * Device
+| Name | Value |
+|:--|:--|
+| Name | LongPathsEnabled |
+| Friendly Name | Enable Win32 long paths |
+| Location | Computer Configuration |
+| Path | System > Filesystem |
+| Registry Key Name | System\CurrentControlSet\Control\FileSystem |
+| Registry Value Name | LongPathsEnabled |
+| ADMX File Name | FileSys.admx |
+<!-- LongPathsEnabled-AdmxBacked-End -->
 
-<hr/>
+<!-- LongPathsEnabled-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- LongPathsEnabled-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting provides control over whether or not short names are generated during file creation. Some applications require short names for compatibility, but short names have a negative performance impact on the system.
+<!-- LongPathsEnabled-End -->
+
+<!-- ShortNameCreationSettings-Begin -->
+## ShortNameCreationSettings
+
+<!-- ShortNameCreationSettings-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ShortNameCreationSettings-Applicability-End -->
+
+<!-- ShortNameCreationSettings-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_FileSys/ShortNameCreationSettings
+```
+<!-- ShortNameCreationSettings-OmaUri-End -->
+
+<!-- ShortNameCreationSettings-Description-Begin -->
+<!-- Description-Source-ADMX -->
+These settings provide control over whether or not short names are generated during file creation. Some applications require short names for compatibility, but short names have a negative performance impact on the system.
 
 If you enable short names on all volumes then short names will always be generated. If you disable them on all volumes then they will never be generated. If you set short name creation to be configurable on a per volume basis then an on-disk flag will determine whether or not short names are created on a given volume. If you disable short name creation on all data volumes then short names will only be generated for files created on the system volume.
+<!-- ShortNameCreationSettings-Description-End -->
 
-<!--/Description-->
+<!-- ShortNameCreationSettings-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ShortNameCreationSettings-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Short name creation options*
--   GP name: *ShortNameCreationSettings*
--   GP path: *System/Filesystem/NTFS*
--   GP ADMX file name: *FileSys.admx*
+<!-- ShortNameCreationSettings-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ShortNameCreationSettings-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-filesys-symlinkevaluation"></a>**ADMX_FileSys/SymlinkEvaluation**  
+<!-- ShortNameCreationSettings-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | ShortNameCreationSettings |
+| Friendly Name | Short name creation options |
+| Location | Computer Configuration |
+| Path | System > Filesystem > NTFS |
+| Registry Key Name | System\CurrentControlSet\Policies |
+| ADMX File Name | FileSys.admx |
+<!-- ShortNameCreationSettings-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ShortNameCreationSettings-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ShortNameCreationSettings-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ShortNameCreationSettings-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- SymlinkEvaluation-Begin -->
+## SymlinkEvaluation
 
-<hr/>
+<!-- SymlinkEvaluation-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- SymlinkEvaluation-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-Symbolic links can introduce vulnerabilities in certain applications. To mitigate this issue, you can selectively enable or disable the evaluation of these types of symbolic links:  
+<!-- SymlinkEvaluation-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_FileSys/SymlinkEvaluation
+```
+<!-- SymlinkEvaluation-OmaUri-End -->
 
-- Local Link to a Local Target
-- Local Link to a Remote Target
-- Remote Link to Remote Target
-- Remote Link to Local Target
+<!-- SymlinkEvaluation-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Symbolic links can introduce vulnerabilities in certain applications. To mitigate this issue, you can selectively enable or disable the evaluation of these types of symbolic links:
 
-For more information, refer to the Windows Help section.
+Local Link to a Local Target.
+
+Local Link to a Remote Target.
+
+Remote Link to Remote Target.
+
+Remote Link to Local Target.
+
+For further information please refer to the Windows Help section.
 
 > [!NOTE]
-> If this policy is disabled or not configured, local administrators may select the types of symbolic links to be evaluated.
+> If this policy is Disabled or Not Configured, local administrators may select the types of symbolic links to be evaluated.
+<!-- SymlinkEvaluation-Description-End -->
 
-<!--/Description-->
+<!-- SymlinkEvaluation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SymlinkEvaluation-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Selectively allow the evaluation of a symbolic link*
--   GP name: *SymlinkEvaluation*
--   GP path: *System/Filesystem*
--   GP ADMX file name: *FileSys.admx*
+<!-- SymlinkEvaluation-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- SymlinkEvaluation-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-filesys-txfdeprecatedfunctionality"></a>**ADMX_FileSys/TxfDeprecatedFunctionality**  
+<!-- SymlinkEvaluation-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+**ADMX mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | SymlinkEvaluation |
+| Friendly Name | Selectively allow the evaluation of a symbolic link |
+| Location | Computer Configuration |
+| Path | System > Filesystem |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Filesystems\NTFS |
+| Registry Value Name | SymLinkState |
+| ADMX File Name | FileSys.admx |
+<!-- SymlinkEvaluation-AdmxBacked-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- SymlinkEvaluation-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SymlinkEvaluation-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- SymlinkEvaluation-End -->
 
-<hr/>
+<!-- TxfDeprecatedFunctionality-Begin -->
+## TxfDeprecatedFunctionality
 
-<!--/Scope-->
-<!--Description-->
-TXF deprecated features included savepoints, secondary RM, miniversion and roll forward. Enable it if you want to use the APIs.
+<!-- TxfDeprecatedFunctionality-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TxfDeprecatedFunctionality-Applicability-End -->
 
-<!--/Description-->
+<!-- TxfDeprecatedFunctionality-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_FileSys/TxfDeprecatedFunctionality
+```
+<!-- TxfDeprecatedFunctionality-OmaUri-End -->
 
+<!-- TxfDeprecatedFunctionality-Description-Begin -->
+<!-- Description-Source-ADMX -->
+TXF deprecated features included savepoints, secondary RM, miniversion and roll forward. Please enable it if you want to use these APIs.
+<!-- TxfDeprecatedFunctionality-Description-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Enable / disable TXF deprecated features*
--   GP name: *TxfDeprecatedFunctionality*
--   GP path: *System/Filesystem/NTFS*
--   GP ADMX file name: *FileSys.admx*
+<!-- TxfDeprecatedFunctionality-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TxfDeprecatedFunctionality-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- TxfDeprecatedFunctionality-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TxfDeprecatedFunctionality-DFProperties-End -->
 
-<!--/Policies-->
+<!-- TxfDeprecatedFunctionality-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TxfDeprecatedFunctionality |
+| Friendly Name | Enable / disable TXF deprecated features |
+| Location | Computer Configuration |
+| Path | System > Filesystem > NTFS |
+| Registry Key Name | System\CurrentControlSet\Policies |
+| Registry Value Name | NtfsEnableTxfDeprecatedFunctionality |
+| ADMX File Name | FileSys.admx |
+<!-- TxfDeprecatedFunctionality-AdmxBacked-End -->
+
+<!-- TxfDeprecatedFunctionality-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TxfDeprecatedFunctionality-Examples-End -->
+
+<!-- TxfDeprecatedFunctionality-End -->
+
+<!-- ADMX_FileSys-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_FileSys-CspMoreInfo-End -->
+
+<!-- ADMX_FileSys-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

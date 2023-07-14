@@ -1,19 +1,14 @@
 ---
 title: Windows 10, version 1909, connection endpoints for non-Enterprise editions
 description: Explains what Windows 10 endpoints are used in non-Enterprise editions. Specific to Windows 10, version 1909.
-keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
-ms.prod: m365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
+ms.prod: windows-client
+ms.technology: itpro-privacy
 ms.localizationpriority: high
-audience: ITPro
-author: gental-giant
-ms.author: v-hakima
-manager: obezeajo
-ms.collection: M365-security-compliance
-ms.topic: article
-ms.date: 12/01/2021
-ms.technology: privacy
+author: DHB-MSFT
+ms.author: danbrown
+manager: dougeby
+ms.date: 07/20/2020
+ms.topic: reference
 ---
 # Windows 10, version 1909, connection endpoints for non-Enterprise editions
 

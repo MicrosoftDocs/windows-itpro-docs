@@ -1,79 +1,88 @@
 ---
-title: Policy CSP - ADMX_PushToInstall
-description: Policy CSP - ADMX_PushToInstall
-ms.author: dansimp
+title: ADMX_PushToInstall Policy CSP
+description: Learn more about the ADMX_PushToInstall Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 12/01/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_PushToInstall-Begin -->
 # Policy CSP - ADMX_PushToInstall
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ADMX_PushToInstall policies  
+<!-- ADMX_PushToInstall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_PushToInstall-Editable-End -->
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+<!-- DisablePushToInstall-Begin -->
+## DisablePushToInstall
 
-<dl>
-  <dd>
-    <a href="#admx-pushtoinstall-disablepushtoinstall">ADMX_PushToInstall/DisablePushToInstall</a>
-  </dd>
-</dl>
+<!-- DisablePushToInstall-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisablePushToInstall-Applicability-End -->
 
+<!-- DisablePushToInstall-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_PushToInstall/DisablePushToInstall
+```
+<!-- DisablePushToInstall-OmaUri-End -->
 
-<hr/>
+<!-- DisablePushToInstall-Description-Begin -->
+<!-- Description-Source-ADMX -->
+If you enable this setting, users won't be able to push Apps to this device from the Microsoft Store running on other devices or the web.
+<!-- DisablePushToInstall-Description-End -->
 
-<!--Policy-->
-<a href="" id="admx-pushtoinstall-disablepushtoinstall"></a>**ADMX_PushToInstall/DisablePushToInstall**  
+<!-- DisablePushToInstall-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisablePushToInstall-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- DisablePushToInstall-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisablePushToInstall-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisablePushToInstall-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+**ADMX mapping**:
 
-> [!div class = "checklist"]
-> * Device
+| Name | Value |
+|:--|:--|
+| Name | DisablePushToInstall |
+| Friendly Name | Turn off Push To Install service |
+| Location | Computer Configuration |
+| Path | Windows Components > Push To Install |
+| Registry Key Name | Software\Policies\Microsoft\PushToInstall |
+| Registry Value Name | DisablePushToInstall |
+| ADMX File Name | PushToInstall.admx |
+<!-- DisablePushToInstall-AdmxBacked-End -->
 
-<hr/>
+<!-- DisablePushToInstall-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisablePushToInstall-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-If you enable this setting, users will not be able to push Apps to this device from the Microsoft Store running on other devices or the web.
+<!-- DisablePushToInstall-End -->
 
-<!--/Description-->
+<!-- ADMX_PushToInstall-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_PushToInstall-CspMoreInfo-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off Push To Install service*
--   GP name: *DisablePushToInstall*
--   GP path: *Windows Components\Push To Install*
--   GP ADMX file name: *PushToInstall.admx*
+<!-- ADMX_PushToInstall-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+## Related articles
 
-<!--/Policies-->
-
+[Policy configuration service provider](policy-configuration-service-provider.md)

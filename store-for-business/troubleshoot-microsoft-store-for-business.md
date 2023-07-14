@@ -3,30 +3,32 @@ title: Troubleshoot Microsoft Store for Business (Windows 10)
 description: Troubleshooting topics for Microsoft Store for Business.
 ms.assetid: 243755A3-9B20-4032-9A77-2207320A242A
 ms.reviewer: 
-manager: dansimp
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
-author: TrudyHa
-ms.author: TrudyHa
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 07/21/2021
+ms.date: 05/24/2023
 ---
 
 # Troubleshoot Microsoft Store for Business
 
-**Applies to**
+**Applies to:**
 
--   Windows 10
+- Windows 10
 
 > [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
+>
+> - The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
+> - In April 2023 the Microsoft Store for Business tab was removed from Microsoft Store apps on Windows 10 and Windows 11 PCs. An interaction with existing MDM and GPO policies may lead to customers seeing errors when accessing the Microsoft Store app. For more information see [Microsoft Store for Business tab removed](manage-access-to-private-store.md#microsoft-store-for-business-tab-removed).
 
 Troubleshooting topics for Microsoft Store for Business.
 
 ## Can't find apps in private store
+
 The private store for your organization is a page in Microsoft Store app that contains apps that are private to your organization. After your organization acquires an app, your Store for Business admin can add it to your organization's private store. Your private store usually has a name that is close to the name of your organization or company. If you can't see your private store, there are a couple of things to check:
 
 - **No apps in the private store** - The private store page is only available in Microsoft Store on Windows 10 if there are apps added to your private store. You won't see your private store page with no apps listed on it. If your Microsoft Store for Business admin has added an app to the private store, and the private store page is still not available, they can check the private store status for the app on **Product & services - Apps**. If the status under **Private store** is **Add in progress**, wait and check back.
@@ -54,7 +56,7 @@ The private store for your organization is a page in Microsoft Store app that co
 
     ![Private store for Contoso publishing.](images/wsfb-privatestoreapps.png)
 
-## Troubleshooting Microsoft Store for Business integration with Microsoft Endpoint Configuration Manager
+## Troubleshooting Microsoft Store for Business integration with Microsoft Configuration Manager
 
 If you encounter any problems when integrating Microsoft Store for Business with Configuration Manager, use the [troubleshooting guide](/troubleshoot/mem/configmgr/troubleshoot-microsoft-store-for-business-integration).
 

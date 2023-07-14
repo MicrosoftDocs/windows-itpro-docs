@@ -1,15 +1,14 @@
 ---
 title: Quick guide to Windows as a service (Windows 10)
 description: In Windows 10, Microsoft has streamlined servicing to make operating system updates simpler to test, manage, and deploy.
-keywords: updates, servicing, current, deployment, General Availability Channel, General Availability Channel, feature, quality, rings, insider, tools
-ms.prod: w10
-ms.mktglfcycl: manage
-author: jaimeo
+ms.prod: windows-client
+author: mestew
 ms.localizationpriority: high
-ms.author: jaimeo
-manager: dougeby
+ms.author: mstewart
+manager: aaroncz
 ms.topic: article
-ms.collection: highpri
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Quick guide to Windows as a service
@@ -31,7 +30,7 @@ Some new terms have been introduced as part of Windows as a service, so you shou
 - **Insider Preview** builds are made available during the development of the features that will be shipped in the next feature update, enabling organizations to validate new features and confirm compatibility with existing apps and infrastructure, providing feedback to Microsoft on any issues encountered.
 - **Servicing channels** allow organizations to choose when to deploy new features. 
   - The **General Availability Channel** receives feature updates annually.
-  - The **Long-Term Servicing Channel**, which meant only for specialized devices (which typically don't run Office) such as those that control medical equipment or ATM machines, receives new feature releases every two to three years.
+  - The **Long-Term Servicing Channel**, which is meant only for specialized devices (which typically don't run Office) such as those that control medical equipment or ATMs, receives new feature releases every two to three years.
 - **Deployment rings** are groups of devices used to initially pilot, and then to broadly deploy, each feature update in an organization. 
 
 See [Overview of Windows as a service](waas-overview.md) for more information.
@@ -48,7 +47,7 @@ For more information, see [Assign devices to servicing channels for Windows clie
 
 ## Staying up to date
 
-To stay up to date, deploy feature updates at an appropriate time after their release. You can use various management and update tools such as Windows Update, Windows Update for Business, Windows Server Update Services, Microsoft Endpoint Configuration Manager, and non-Microsoft products) to help with this process. [Upgrade Readiness](/windows/deployment/upgrade/upgrade-readiness-get-started), a free tool to streamline Windows upgrade projects, is another important tool to help.
+To stay up to date, deploy feature updates at an appropriate time after their release. You can use various management and update tools such as Windows Update, Windows Update for Business, Windows Server Update Services, Microsoft Configuration Manager, and non-Microsoft products) to help with this process. [Upgrade Readiness](/windows/deployment/upgrade/upgrade-readiness-get-started), a free tool to streamline Windows upgrade projects, is another important tool to help.
 
 Extensive advanced testing isn’t required. Instead, only business-critical apps need to be tested, with the remaining apps validated through a series of pilot deployment rings. Once these pilot deployments have validated most apps, broad deployment can begin.
 

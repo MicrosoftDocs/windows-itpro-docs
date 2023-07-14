@@ -1,33 +1,33 @@
 ---
-title: Deny log on through Remote Desktop Services (Windows 10)
+title: Deny log on through Remote Desktop Services 
 description: Best practices, location, values, policy management, and security considerations for the security policy setting, Deny log on through Remote Desktop Services.
 ms.assetid: 84bbb807-287c-4acc-a094-cf0ffdcbca67
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Deny log on through Remote Desktop Services
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Deny log on through Remote Desktop Services** security policy setting.
 
 ## Reference
 
-This policy setting determines which users are prevented from logging on to the device through a Remote Desktop connection through Remote Desktop Services. It is possible for a user to establish a Remote Desktop connection to a particular server, but not be able to log on to the console of that server.
+This policy setting determines which users are prevented from logging on to the device through a Remote Desktop connection through Remote Desktop Services. It's possible for a user to establish a Remote Desktop connection to a particular server, but not be able to sign in to the console of that server.
 
 Constant: SeDenyRemoteInteractiveLogonRight
 
@@ -38,7 +38,7 @@ Constant: SeDenyRemoteInteractiveLogonRight
 
 ### Best practices
 
--   To control who can open a Remote Desktop connection and log on to the device, add the user account to or remove user accounts from the Remote Desktop Users group.
+-   To control who can open a Remote Desktop connection and sign in to the device, add the user account to or remove user accounts from the Remote Desktop Users group.
 
 ### Location
 
@@ -61,7 +61,7 @@ The following table lists the actual and effective default policy values for the
 
 This section describes features, tools, and guidance to help you manage this policy.
 
-A restart of the computer is not required for this policy setting to be effective.
+A restart of the computer isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 
@@ -86,15 +86,15 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-Any account with the right to log on through Remote Desktop Services could be used to log on to the remote console of the device. If this user right is not restricted to legitimate users who need to log on to the console of the computer, malicious users might download and run software that elevates their user rights.
+Any account with the right to sign in through Remote Desktop Services could be used to sign in to the remote console of the device. If this user right isn't restricted to legitimate users who need to sign in to the console of the computer, malicious users might download and run software that elevates their user rights.
 
 ### Countermeasure
 
-Assign the **Deny log on through Remote Desktop Services** user right to the built-in local guest account and all service accounts. If you have installed optional components, such as ASP.NET, you may want to assign this user right to additional accounts that are required by those components.
+Assign the **Deny log on through Remote Desktop Services** user right to the built-in local guest account and all service accounts. If you have installed optional components, such as ASP.NET, you may want to assign this user right to other accounts that are required by those components.
 
 ### Potential impact
 
-If you assign the **Deny log on through Remote Desktop Services** user right to other groups, you could limit the abilities of users who are assigned to specific administrative roles in your environment. Accounts that have this user right cannot connect to the device through Remote Desktop Services or Remote Assistance. You should confirm that delegated tasks are not negatively affected.
+If you assign the **Deny log on through Remote Desktop Services** user right to other groups, you could limit the abilities of users who are assigned to specific administrative roles in your environment. Accounts that have this user right can't connect to the device through Remote Desktop Services or Remote Assistance. You should confirm that delegated tasks aren't negatively affected.
 
 ## Related topics
 

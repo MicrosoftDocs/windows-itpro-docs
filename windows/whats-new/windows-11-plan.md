@@ -1,29 +1,27 @@
 ---
 title: Plan for Windows 11
 description: Windows 11 deployment planning, IT Pro content.
-keywords: ["get started", "windows 11", "plan"]
-ms.prod: w11
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: greg-lindsay
-ms.author: greglin
-manager: dougeby
+ms.prod: windows-client
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: high
-ms.topic: article
-ms.collection: highpri
+ms.topic: conceptual
+ms.collection:
+  - highpri
+  - tier1
+ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
 
 # Plan for Windows 11
 
-**Applies to**
-
--   Windows 11
-
+This article provides guidance to help you plan for Windows 11 in your organization.
 ## Deployment planning
 
-This article provides guidance to help you plan for Windows 11 in your organization.
-
-Since Windows 11 is built on the same foundation as Windows 10, you can use the same deployment capabilities, scenarios, and tools—as well as the same basic deployment strategy that you use today for Windows 10. You will need to review and update your servicing strategy to adjust for changes in [Servicing and support](#servicing-and-support) for Windows 11. 
+Since Windows 11 is built on the same foundation as Windows 10, you can use the same deployment capabilities, scenarios, and tools—and the same basic deployment strategy that you use today for Windows 10. You'll need to review and update your servicing strategy to adjust for changes in [Servicing and support](#servicing-and-support) for Windows 11. 
 
 At a high level, this strategy should include the following steps:
 - [Create a deployment plan](/windows/deployment/update/create-deployment-plan)
@@ -32,13 +30,13 @@ At a high level, this strategy should include the following steps:
 - [Determine application readiness](/windows/deployment/update/plan-determine-app-readiness)
 - [Define your servicing strategy](/windows/deployment/update/plan-define-strategy)
 
-If you are looking for ways to optimize your approach to deploying Windows 11, or if deploying a new version of an operating system is not a familiar process for you, some items to consider are provided below. 
+If you're looking for ways to optimize your approach to deploying Windows 11, or if deploying a new version of an operating system isn't a familiar process for you, some items to consider are provided below:
 
 ## Determine eligibility
 
-As a first step, you will need to know which of your current devices meet the Windows 11 hardware requirements. Most devices purchased in the last 18-24 months will be compatible with Windows 11. Verify that your device meets or exceeds [Windows 11 requirements](windows-11-requirements.md) to ensure it is compatible.
+As a first step, you'll need to know which of your current devices meet the Windows 11 hardware requirements. Most devices purchased in the last 18-24 months will be compatible with Windows 11. Verify that your device meets or exceeds [Windows 11 requirements](windows-11-requirements.md) to ensure it's compatible.
 
-Microsoft is currently developing analysis tools to help you evaluate your devices against the Windows 11 hardware requirements. When Windows 11 reaches general availability, users running Windows 10 Home, Pro, and Pro for Workstations will be able to use the [PC Health Check](https://www.microsoft.com/windows/windows-11#pchealthcheck) app to determine their eligibility for Windows 11. Users running Windows 10 Enterprise and Education editions should rely on their IT administrators to let them know when they are eligible for the upgrade.  
+Microsoft is currently developing analysis tools to help you evaluate your devices against the Windows 11 hardware requirements. When Windows 11 reaches general availability, users running Windows 10 Home, Pro, and Pro for Workstations will be able to use the [PC Health Check](https://www.microsoft.com/windows/windows-11#pchealthcheck) app to determine their eligibility for Windows 11. Users running Windows 10 Enterprise and Education editions should rely on their IT administrators to let them know when they're eligible for the upgrade.  
  
 Enterprise organizations looking to evaluate device readiness in their environments can expect this capability to be integrated into existing Microsoft tools, such as Endpoint analytics and Update Compliance. This capability will be available when Windows 11 is generally available. Microsoft is also working with software publishing partners to facilitate adding Windows 11 device support into their solutions. 
 
@@ -48,19 +46,19 @@ The availability of Windows 11 will vary according to a device's hardware and wh
 
 ##### Managed devices
 
-Managed devices are devices that are under organization control. Managed devices include those managed by Microsoft Intune, Microsoft Endpoint Configuration Manager, or other endpoint management solutions. 
+Managed devices are devices that are under organization control. Managed devices include those devices managed by Microsoft Intune, Microsoft Configuration Manager, or other endpoint management solutions. 
 
-If you manage devices on behalf of your organization, you will be able to upgrade eligible devices to Windows 11 using your existing deployment and management tools at no cost when the upgrade reaches general availability. Organizations that use Windows Update for Business will have added benefits, such as:  
+If you manage devices on behalf of your organization, you'll be able to upgrade eligible devices to Windows 11 using your existing deployment and management tools at no cost when the upgrade reaches general availability. Organizations that use Windows Update for Business will have added benefits, such as:  
 
-- Ensuring that devices that don't meet the minimum hardware requirements are not automatically offered the Windows 11 upgrade. 
-- Additional insight into safeguard holds. While safeguard holds will function for Windows 11 devices just as they do for Windows 10 today, administrators using Windows Update for Business will have access to information on which safeguard holds are preventing individual devices from taking the upgrade to Windows 11. 
+- Ensuring that devices that don't meet the minimum hardware requirements aren't automatically offered the Windows 11 upgrade. 
+- More insight into safeguard holds. While safeguard holds will function for Windows 11 devices just as they do for Windows 10 today, administrators using Windows Update for Business will have access to information on which safeguard holds are preventing individual devices from taking the upgrade to Windows 11. 
 
 > [!NOTE]
 > Also, Windows 11 has new Microsoft Software License Terms. If you are deploying with Windows Update for Business or Windows Server Update Services, you are accepting these new license terms on behalf of the users in your organization. 
 
 ##### Unmanaged devices
 
-Unmanaged devices are devices that are not managed by an IT administrator on behalf of an organization. For operating system (OS) deployment, these devices are not subject to organizational policies that manage upgrades or updates.  
+Unmanaged devices are devices that aren't managed by an IT administrator on behalf of an organization. For operating system (OS) deployment, these devices aren't subject to organizational policies that manage upgrades or updates.  
 
 Windows 11 will be offered to eligible Windows 10 devices beginning later in the 2021 calendar year. Messaging on new devices will vary by PC manufacturer, but users will see labels such as **This PC will upgrade to Windows 11 once available** on products that are available for purchase. 
 
@@ -72,10 +70,10 @@ Just like Windows 10, the machine learning based [intelligent rollout](https://t
 
 The recommended method to determine if your infrastructure, deployment processes, and management tools are ready for Windows 11 is to join the [Windows Insider Program for Business](https://insider.windows.com/for-business). As a participant in the [Release Preview Channel](/windows-insider/business/validate-Release-Preview-Channel), you can validate that your devices and applications work as expected, and explore new features.
 
-As you plan your endpoint management strategy for Windows 11, consider moving to cloud-based mobile device management (MDM), such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). If a cloud-only approach isn't right for your organization just yet, you can still modernize and streamline essential pieces of your endpoint management strategy as follows:
+As you plan your endpoint management strategy for Windows 11, consider moving to cloud-based mobile device management (MDM), such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). If a cloud-only approach isn't right for your organization yet, you can still modernize and streamline essential pieces of your endpoint management strategy as follows:
 - Create a [cloud management gateway](/mem/configmgr/core/clients/manage/cmg/overview) (CMG) to manage Configuration Manager clients over the internet.
-- Attach your existing Configuration Management estate to the cloud with [tenant attach](/mem/configmgr/tenant-attach/device-sync-actions) so you can manage all devices from within the Microsoft Endpoint Manager admin center. 
-- Use [co-management](/mem/configmgr/comanage/overview) to concurrently manage devices using both Configuration Manager and Microsoft Intune. This allows you to take advantage of cloud-powered capabilities like [Conditional Access](/azure/active-directory/conditional-access/overview). 
+- Attach your existing Configuration Management estate to the cloud with [tenant attach](/mem/configmgr/tenant-attach/device-sync-actions) so you can manage all devices from within the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431). 
+- Use [co-management](/mem/configmgr/comanage/overview) to concurrently manage devices using both Configuration Manager and Microsoft Intune. This concurrent management allows you to take advantage of cloud-powered capabilities like [Conditional Access](/azure/active-directory/conditional-access/overview). 
 
 For more information on the benefits of these approaches, see [Cloud Attach Your Future: The Big 3](https://techcommunity.microsoft.com/t5/configuration-manager-blog/cloud-attach-your-future-part-ii-quot-the-big-3-quot/ba-p/1750664). 
 
@@ -95,7 +93,7 @@ Along with user experience and security improvements, Windows 11 introduces enha
 
 When Windows 11 reaches general availability, a consolidated Windows 11 update history will be available on support.microsoft.com, similar to what is [available today for Windows 10](https://support.microsoft.com/topic/windows-10-update-history-1b6aac92-bf01-42b5-b158-f80c6d93eb11). Similarly, the [Windows release health](/windows/release-health/) hub will offer quick access to Windows 11 servicing announcements, known issues, and safeguard holds. 
 
-It is important that organizations have adequate time to plan for Windows 11. Microsoft also recognizes that many organizations will have a mix of Windows 11 and Windows 10 devices across their ecosystem. Devices on in-service versions of Windows 10 will continue to receive monthly Windows 10 security updates through 2025, as well as incremental improvements to Windows 10 to support ongoing Microsoft 365 deployments. For more information, see the [Windows 10 release information](/windows/release-health/release-information) page, which offers information about the Windows 10 General Availability Channel and Long-term Servicing Channel (LTSC) releases. 
+It's important that organizations have adequate time to plan for Windows 11. Microsoft also recognizes that many organizations will have a mix of Windows 11 and Windows 10 devices across their ecosystem. Devices on in-service versions of Windows 10 will continue to receive monthly Windows 10 security updates through 2025, and incremental improvements to Windows 10 to support ongoing Microsoft 365 deployments. For more information, see the [Windows 10 release information](/windows/release-health/release-information) page, which offers information about the Windows 10 General Availability Channel and Long-term Servicing Channel (LTSC) releases. 
 
 ## Application compatibility
 
@@ -107,7 +105,7 @@ If you run into compatibility issues or want to ensure that your organization's 
 
 **App Assure**: With enrollment in the [App Assure](/windows/compatibility/app-assure) service, any app compatibility issues that you find with Windows 11 can be resolved. Microsoft will help you remedy application issues at no cost. Since 2018, App Assure has evaluated almost 800,000 apps, and subscriptions are free for eligible customers with 150+ seats. 
 
-**Test Base for Microsoft 365**: For software publishers, systems integrators, and IT administrators, [Test Base for Microsoft 365](https://aka.ms/testbase) (currently in private preview) is a service that allows you to validate your apps across a variety of Windows feature and quality updates and environments in a Microsoft-managed Azure environment. Enterprise organizations can also nominate their software publishers for participation by completing a short form.  
+**Test Base for Microsoft 365**: For software publishers, systems integrators, and IT administrators, [Test Base for Microsoft 365](https://aka.ms/testbase) is a service that allows you to validate your apps across various Windows features and quality updates and environments in a Microsoft-managed Azure environment. Enterprise organizations can also nominate their software publishers for participation by completing a short form.  
 
 You might already be using App Assure and Test Base in your Windows 10 environment. Both of these tools will continue to function with Windows 11. 
 
@@ -117,4 +115,4 @@ You might already be using App Assure and Test Base in your Windows 10 environme
 
 ## Also see
 
-[Plan to deploy updates for Windows 10 and Microsoft 365 Apps](/learn/modules/windows-plan/)
+[Plan to deploy updates for Windows 10 and Microsoft 365 Apps](/training/modules/windows-plan/)

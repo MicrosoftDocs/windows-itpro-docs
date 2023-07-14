@@ -1,20 +1,24 @@
 ---
 title: How to keep apps removed from Windows 10 from returning during an update
 description: How to keep provisioned apps that were removed from your machine from returning during an update.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.author: greglin
-author: greg-lindsay
+author: nicholasswhite
+ms.author: nwhite
+manager: aaroncz
 ms.date: 05/25/2018
-ms.reviewer: 
-manager: dansimp
+ms.topic: article
+ms.prod: windows-client
+ms.technology: itpro-apps
+ms.localizationpriority: medium
+ms.collection: tier1
+ms.reviewer:
 ---
 # How to keep apps removed from Windows 10 from returning during an update
 
-> Applies to: Windows 10 (General Availability Channel)
+**Applies to**:
 
-When you update a computer running Windows 10, version 1703 or 1709, you might see provisioned apps that you previously removed return post-update. This can happen if the computer was offline when you removed the apps. This issue was fixed in Windows 10, version 1803.
+- Windows 10
+
+When you update a computer running Windows 10, version 1703 or 1709, you might see provisioned apps that you previously removed post-update. This can happen if the computer was offline when you removed the apps. Windows 10, version 1803 has fixed this issue.
 
 >[!NOTE]
 >* This issue only occurs after a feature update (from one version to the next), not monthly updates or security-related updates.

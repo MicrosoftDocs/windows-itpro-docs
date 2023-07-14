@@ -1,704 +1,812 @@
 ---
-title: Policy CSP - ADMX_Scripts
-description: Policy CSP - ADMX_Scripts
-ms.author: dansimp
+title: ADMX_Scripts Policy CSP
+description: Learn more about the ADMX_Scripts Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 09/17/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_Scripts-Begin -->
 # Policy CSP - ADMX_Scripts
-> [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ADMX_Scripts policies  
+<!-- ADMX_Scripts-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Scripts-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-scripts-allow-logon-script-netbiosdisabled">ADMX_Scripts/Allow_Logon_Script_NetbiosDisabled</a>
-  </dd>
-  <dd>
-    <a href="#admx-scripts-maxgposcriptwaitpolicy">ADMX_Scripts/MaxGPOScriptWaitPolicy</a>
-  </dd>
-  <dd>
-    <a href="#admx-scripts-run-computer-ps-scripts-first">ADMX_Scripts/Run_Computer_PS_Scripts_First</a>
-  </dd>
-  <dd>
-    <a href="#admx-scripts-run-legacy-logon-script-hidden">ADMX_Scripts/Run_Legacy_Logon_Script_Hidden</a>
-  </dd>
-  <dd>
-    <a href="#admx-scripts-run-logoff-script-visible">ADMX_Scripts/Run_Logoff_Script_Visible</a>
-  </dd>
-  <dd>
-    <a href="#admx-scripts-run-logon-script-sync-1">ADMX_Scripts/Run_Logon_Script_Sync_1</a>
-  </dd>
-  <dd>
-    <a href="#admx-scripts-run-logon-script-sync-2">ADMX_Scripts/Run_Logon_Script_Sync_2</a>
-  </dd>
-  <dd>
-    <a href="#admx-scripts-run-logon-script-visible">ADMX_Scripts/Run_Logon_Script_Visible</a>
-  </dd>
-  <dd>
-    <a href="#admx-scripts-run-shutdown-script-visible">ADMX_Scripts/Run_Shutdown_Script_Visible</a>
-  </dd>
-  <dd>
-    <a href="#admx-scripts-run-startup-script-sync">ADMX_Scripts/Run_Startup_Script_Sync</a>
-  </dd>
-  <dd>
-    <a href="#admx-scripts-run-startup-script-visible">ADMX_Scripts/Run_Startup_Script_Visible</a>
-  </dd>
-  <dd>
-    <a href="#admx-scripts-run-user-ps-scripts-first">ADMX_Scripts/Run_User_PS_Scripts_First</a>
-  </dd>
-</dl>
+<!-- Allow_Logon_Script_NetbiosDisabled-Begin -->
+## Allow_Logon_Script_NetbiosDisabled
 
+<!-- Allow_Logon_Script_NetbiosDisabled-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Allow_Logon_Script_NetbiosDisabled-Applicability-End -->
 
-<hr/>
+<!-- Allow_Logon_Script_NetbiosDisabled-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Scripts/Allow_Logon_Script_NetbiosDisabled
+```
+<!-- Allow_Logon_Script_NetbiosDisabled-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-scripts-allow-logon-script-netbiosdisabled"></a>**ADMX_Scripts/Allow_Logon_Script_NetbiosDisabled**  
+<!-- Allow_Logon_Script_NetbiosDisabled-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting allows user logon scripts to run when the logon cross-forest, DNS suffixes aren't configured, and NetBIOS or WINS is disabled. This policy setting affects all user accounts interactively logging on to the computer.
 
-<!--SupportedSKUs-->
+- If you enable this policy setting, user logon scripts run if NetBIOS or WINS is disabled during cross-forest logons without the DNS suffixes being configured.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you disable or don't configure this policy setting, user account cross-forest, interactive logging can't run logon scripts if NetBIOS or WINS is disabled, and the DNS suffixes aren't configured.
+<!-- Allow_Logon_Script_NetbiosDisabled-Description-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Allow_Logon_Script_NetbiosDisabled-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Allow_Logon_Script_NetbiosDisabled-Editable-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Allow_Logon_Script_NetbiosDisabled-DFProperties-Begin -->
+**Description framework properties**:
 
-> [!div class = "checklist"]
-> * Device
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Allow_Logon_Script_NetbiosDisabled-DFProperties-End -->
 
-<hr/>
+<!-- Allow_Logon_Script_NetbiosDisabled-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows user logon scripts to run when the logon cross-forest, DNS suffixes are not configured, and NetBIOS or WINS is disabled. This policy setting affects all user accounts interactively logging on to the computer.
+**ADMX mapping**:
 
-If you enable this policy setting, user logon scripts run if NetBIOS or WINS is disabled during cross-forest logons without the DNS suffixes being configured.
+| Name | Value |
+|:--|:--|
+| Name | Allow_Logon_Script_NetbiosDisabled |
+| Friendly Name | Allow logon scripts when NetBIOS or WINS is disabled |
+| Location | Computer Configuration |
+| Path | System > Scripts |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | Allow-LogonScript-NetbiosDisabled |
+| ADMX File Name | Scripts.admx |
+<!-- Allow_Logon_Script_NetbiosDisabled-AdmxBacked-End -->
 
-If you disable or do not configure this policy setting, user account cross-forest, interactive logging cannot run logon scripts if NetBIOS or WINS is disabled, and the DNS suffixes are not configured.
+<!-- Allow_Logon_Script_NetbiosDisabled-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Allow_Logon_Script_NetbiosDisabled-Examples-End -->
 
-<!--/Description-->
+<!-- Allow_Logon_Script_NetbiosDisabled-End -->
 
+<!-- MaxGPOScriptWaitPolicy-Begin -->
+## MaxGPOScriptWaitPolicy
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow logon scripts when NetBIOS or WINS is disabled*
--   GP name: *Allow_Logon_Script_NetbiosDisabled*
--   GP path: *System\Scripts*
--   GP ADMX file name: *Scripts.admx*
+<!-- MaxGPOScriptWaitPolicy-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- MaxGPOScriptWaitPolicy-Applicability-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MaxGPOScriptWaitPolicy-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Scripts/MaxGPOScriptWaitPolicy
+```
+<!-- MaxGPOScriptWaitPolicy-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-scripts-maxgposcriptwaitpolicy"></a>**ADMX_Scripts/MaxGPOScriptWaitPolicy**  
+<!-- MaxGPOScriptWaitPolicy-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting determines how long the system waits for scripts applied by Group Policy to run.
 
-<!--SupportedSKUs-->
+This setting limits the total time allowed for all logon, logoff, startup, and shutdown scripts applied by Group Policy to finish running. If the scripts haven't finished running when the specified time expires, the system stops script processing and records an error event.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+- If you enable this setting, then, in the Seconds box, you can type a number from 1 to 32,000 for the number of seconds you want the system to wait for the set of scripts to finish. To direct the system to wait until the scripts have finished, no matter how long they take, type 0.
 
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy setting determines how long the system waits for scripts applied by Group Policy to run. 
-
-This setting limits the total time allowed for all logon, logoff, startup, and shutdown scripts applied by Group Policy to finish running. If the scripts have not finished running when the specified time expires, the system stops script processing and records an error event.
-
-If you enable this setting, then, in the Seconds box, you can type a number from 1 to 32,000 for the number of seconds you want the system to wait for the set of scripts to finish. To direct the system to wait until the scripts have finished, no matter how long they take, type 0. 
-
-This interval is particularly important when other system tasks must wait while the scripts complete. By default, each startup script must complete before the next one runs. Also, you can use the "Run logon scripts synchronously" setting to direct the system to wait for the logon scripts to complete before loading the desktop. 
+This interval is particularly important when other system tasks must wait while the scripts complete. By default, each startup script must complete before the next one runs. Also, you can use the "Run logon scripts synchronously" setting to direct the system to wait for the logon scripts to complete before loading the desktop.
 
 An excessively long interval can delay the system and inconvenience users. However, if the interval is too short, prerequisite tasks might not be done, and the system can appear to be ready prematurely.
 
-If you disable or do not configure this setting the system lets the combined set of scripts run for up to 600 seconds (10 minutes). This is the default.
+- If you disable or don't configure this setting the system lets the combined set of scripts run for up to 600 seconds (10 minutes). This is the default.
+<!-- MaxGPOScriptWaitPolicy-Description-End -->
 
-<!--/Description-->
+<!-- MaxGPOScriptWaitPolicy-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- MaxGPOScriptWaitPolicy-Editable-End -->
 
+<!-- MaxGPOScriptWaitPolicy-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Specify maximum wait time for Group Policy scripts*
--   GP name: *MaxGPOScriptWaitPolicy*
--   GP path: *System\Scripts*
--   GP ADMX file name: *Scripts.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- MaxGPOScriptWaitPolicy-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- MaxGPOScriptWaitPolicy-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-scripts-run-computer-ps-scripts-first"></a>**ADMX_Scripts/Run_Computer_PS_Scripts_First**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | MaxGPOScriptWaitPolicy |
+| Friendly Name | Specify maximum wait time for Group Policy scripts |
+| Location | Computer Configuration |
+| Path | System > Scripts |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| ADMX File Name | Scripts.admx |
+<!-- MaxGPOScriptWaitPolicy-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- MaxGPOScriptWaitPolicy-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- MaxGPOScriptWaitPolicy-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- MaxGPOScriptWaitPolicy-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Run_Computer_PS_Scripts_First-Begin -->
+## Run_Computer_PS_Scripts_First
 
-> [!div class = "checklist"]
-> * Device
+<!-- Run_Computer_PS_Scripts_First-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Run_Computer_PS_Scripts_First-Applicability-End -->
 
-<hr/>
+<!-- Run_Computer_PS_Scripts_First-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Scripts/Run_Computer_PS_Scripts_First
+```
+<!-- Run_Computer_PS_Scripts_First-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy setting determines whether Windows PowerShell scripts are run before non-Windows PowerShell scripts during computer startup and shutdown. By default, Windows PowerShell scripts run after non-Windows PowerShell scripts. 
- 
-If you enable this policy setting, within each applicable Group Policy Object (GPO), Windows PowerShell scripts are run before non-Windows PowerShell scripts during computer startup and shutdown. 
+<!-- Run_Computer_PS_Scripts_First-Description-Begin -->
+<!-- Description-Source-Manual-Forced -->
+<!-- Run_Computer_PS_Scripts_First-Description-End -->
 
-For example, assume the following scenario: 
+<!-- Run_Computer_PS_Scripts_First-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This policy setting determines whether Windows PowerShell scripts are run before non-Windows PowerShell scripts during computer startup and shutdown. By default, Windows PowerShell scripts run after non-Windows PowerShell scripts. If you enable this policy setting, within each applicable Group Policy Object (GPO), Windows PowerShell scripts are run before non-Windows PowerShell scripts during computer startup and shutdown.
 
-There are three GPOs (GPO A, GPO B, and GPO C). This policy setting is enabled in GPO A. 
+For example, assume the following scenario:
 
-GPO B and GPO C include the following computer startup scripts:
+There are three GPOs (GPO A, GPO B, and GPO C). This policy setting is enabled in GPO A. GPO B and GPO C include the following computer startup scripts:
 
-GPO B: B.cmd, B.ps1
-GPO C: C.cmd, C.ps1
+- GPO B: B.cmd, B.ps1
+- GPO C: C.cmd, C.ps1
 
-Assume also that there are two computers, DesktopIT and DesktopSales. 
-For DesktopIT, GPOs A, B, and C are applied. Therefore, the scripts for GPOs B and C run in the following order for DesktopIT:
+Assume also that there are two computers, DesktopIT and DesktopSales. For DesktopIT, GPOs A, B, and C are applied. Therefore, the scripts for GPOs B and C run in the following order for DesktopIT:
 
-Within GPO B: B.ps1, B.cmd
-Within GPO C: C.ps1, C.cmd
- 
+- Within GPO B: B.ps1, B.cmd
+- Within GPO C: C.ps1, C.cmd
+
 For DesktopSales, GPOs B and C are applied, but not GPO A. Therefore, the scripts for GPOs B and C run in the following order for DesktopSales:
 
-Within GPO B: B.cmd, B.ps1
-Within GPO C: C.cmd, C.ps1
+- Within GPO B: B.cmd, B.ps1
+- Within GPO C: C.cmd, C.ps1
 
 > [!NOTE]
 > This policy setting determines the order in which computer startup and shutdown scripts are run within all applicable GPOs. You can override this policy setting for specific script types within a specific GPO by configuring the following policy settings for the GPO:
+>
 > - Computer Configuration\Policies\Windows Settings\Scripts (Startup/Shutdown)\Startup
 > - Computer Configuration\Policies\Windows Settings\Scripts (Startup/Shutdown)\Shutdown
+<!-- Run_Computer_PS_Scripts_First-Editable-End -->
 
-<!--/Description-->
+<!-- Run_Computer_PS_Scripts_First-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Run_Computer_PS_Scripts_First-DFProperties-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Run Windows PowerShell scripts first at computer startup, shutdown*
--   GP name: *Run_Computer_PS_Scripts_First*
--   GP path: *System\Scripts*
--   GP ADMX file name: *Scripts.admx*
+<!-- Run_Computer_PS_Scripts_First-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-scripts-run-legacy-logon-script-hidden"></a>**ADMX_Scripts/Run_Legacy_Logon_Script_Hidden**  
+| Name | Value |
+|:--|:--|
+| Name | Run_Computer_PS_Scripts_First |
+| Friendly Name | Run Windows PowerShell scripts first at computer startup, shutdown |
+| Location | Computer Configuration |
+| Path | System > Scripts |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | RunComputerPSScriptsFirst |
+| ADMX File Name | Scripts.admx |
+<!-- Run_Computer_PS_Scripts_First-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- Run_Computer_PS_Scripts_First-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Run_Computer_PS_Scripts_First-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Run_Computer_PS_Scripts_First-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Run_Legacy_Logon_Script_Hidden-Begin -->
+## Run_Legacy_Logon_Script_Hidden
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Run_Legacy_Logon_Script_Hidden-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Run_Legacy_Logon_Script_Hidden-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- Run_Legacy_Logon_Script_Hidden-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Scripts/Run_Legacy_Logon_Script_Hidden
+```
+<!-- Run_Legacy_Logon_Script_Hidden-OmaUri-End -->
 
-<hr/>
+<!-- Run_Legacy_Logon_Script_Hidden-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting hides the instructions in logon scripts written for Windows NT 4.0 and earlier.
 
-<!--/Scope-->
-<!--Description-->
-This policy setting hides the instructions in logon scripts written for Windows NT 4.0 and earlier. 
+Logon scripts are batch files of instructions that run when the user logs on. By default, Windows 2000 displays the instructions in logon scripts written for Windows NT 4.0 and earlier in a command window as they run, although it doesn't display logon scripts written for Windows 2000.
 
-Logon scripts are batch files of instructions that run when the user logs on. By default, Windows displays the instructions in logon scripts written for Windows NT 4.0 and earlier in a command window as they run, although it does not display logon scripts written for Windows.
+- If you enable this setting, Windows 2000 doesn't display logon scripts written for Windows NT 4.0 and earlier.
 
-If you enable this setting, Windows does not display logon scripts written for Windows NT 4.0 and earlier.
-
-If you disable or do not configure this policy setting, Windows displays login scripts written for Windows NT 4.0 and earlier.
+- If you disable or don't configure this policy setting, Windows 2000 displays login scripts written for Windows NT 4.0 and earlier.
 
 Also, see the "Run Logon Scripts Visible" setting.
+<!-- Run_Legacy_Logon_Script_Hidden-Description-End -->
 
-<!--/Description-->
+<!-- Run_Legacy_Logon_Script_Hidden-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Run_Legacy_Logon_Script_Hidden-Editable-End -->
 
+<!-- Run_Legacy_Logon_Script_Hidden-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Run legacy logon scripts hidden*
--   GP name: *Run_Legacy_Logon_Script_Hidden*
--   GP path: *System\Scripts*
--   GP ADMX file name: *Scripts.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Run_Legacy_Logon_Script_Hidden-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- Run_Legacy_Logon_Script_Hidden-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-scripts-run-logoff-script-visible"></a>**ADMX_Scripts/Run_Logoff_Script_Visible**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Run_Legacy_Logon_Script_Hidden |
+| Friendly Name | Run legacy logon scripts hidden |
+| Location | User Configuration |
+| Path | System > Scripts |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | HideLegacyLogonScripts |
+| ADMX File Name | Scripts.admx |
+<!-- Run_Legacy_Logon_Script_Hidden-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Run_Legacy_Logon_Script_Hidden-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Run_Legacy_Logon_Script_Hidden-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Run_Legacy_Logon_Script_Hidden-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Run_Logoff_Script_Visible-Begin -->
+## Run_Logoff_Script_Visible
 
-> [!div class = "checklist"]
-> * User
+<!-- Run_Logoff_Script_Visible-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Run_Logoff_Script_Visible-Applicability-End -->
 
-<hr/>
+<!-- Run_Logoff_Script_Visible-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Scripts/Run_Logoff_Script_Visible
+```
+<!-- Run_Logoff_Script_Visible-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- Run_Logoff_Script_Visible-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting displays the instructions in logoff scripts as they run.
 
-Logoff scripts are batch files of instructions that run when the user logs off. By default, the system does not display the instructions in the logoff script.
+Logoff scripts are batch files of instructions that run when the user logs off. By default, the system doesn't display the instructions in the logoff script.
 
-If you enable this policy setting, the system displays each instruction in the logoff script as it runs. The instructions appear in a command window. This policy setting is designed for advanced users.
+- If you enable this policy setting, the system displays each instruction in the logoff script as it runs. The instructions appear in a command window. This policy setting is designed for advanced users.
 
-If you disable or do not configure this policy setting, the instructions are suppressed.
+- If you disable or don't configure this policy setting, the instructions are suppressed.
+<!-- Run_Logoff_Script_Visible-Description-End -->
 
-<!--/Description-->
+<!-- Run_Logoff_Script_Visible-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Run_Logoff_Script_Visible-Editable-End -->
 
+<!-- Run_Logoff_Script_Visible-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Display instructions in logoff scripts as they run*
--   GP name: *Run_Logoff_Script_Visible*
--   GP path: *System\Scripts*
--   GP ADMX file name: *Scripts.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Run_Logoff_Script_Visible-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- Run_Logoff_Script_Visible-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-scripts-run-logon-script-sync-1"></a>**ADMX_Scripts/Run_Logon_Script_Sync_1**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Run_Logoff_Script_Visible |
+| Friendly Name | Display instructions in logoff scripts as they run |
+| Location | User Configuration |
+| Path | System > Scripts |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | HideLogoffScripts |
+| ADMX File Name | Scripts.admx |
+<!-- Run_Logoff_Script_Visible-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Run_Logoff_Script_Visible-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Run_Logoff_Script_Visible-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Run_Logoff_Script_Visible-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Run_Logon_Script_Sync_1-Begin -->
+## Run_Logon_Script_Sync_1
 
-> [!div class = "checklist"]
-> * User
+<!-- Run_Logon_Script_Sync_1-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Run_Logon_Script_Sync_1-Applicability-End -->
 
-<hr/>
+<!-- Run_Logon_Script_Sync_1-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Scripts/Run_Logon_Script_Sync_1
+```
+<!-- Run_Logon_Script_Sync_1-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- Run_Logon_Script_Sync_1-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting directs the system to wait for logon scripts to finish running before it starts the File Explorer interface program and creates the desktop.
 
-If you enable this policy setting, File Explorer does not start until the logon scripts have finished running. This policy setting ensures that logon script processing is complete before the user starts working, but it can delay the appearance of the desktop.
+- If you enable this policy setting, File Explorer doesn't start until the logon scripts have finished running. This policy setting ensures that logon script processing is complete before the user starts working, but it can delay the appearance of the desktop.
 
-If you disable or do not configure this policy setting, the logon scripts and File Explorer are not synchronized and can run simultaneously.
+- If you disable or don't configure this policy setting, the logon scripts and File Explorer aren't synchronized and can run simultaneously.
 
 This policy setting appears in the Computer Configuration and User Configuration folders. The policy setting set in Computer Configuration takes precedence over the policy setting set in User Configuration.
+<!-- Run_Logon_Script_Sync_1-Description-End -->
 
-<!--/Description-->
+<!-- Run_Logon_Script_Sync_1-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Run_Logon_Script_Sync_1-Editable-End -->
 
+<!-- Run_Logon_Script_Sync_1-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Run logon scripts synchronously*
--   GP name: *Run_Logon_Script_Sync_1*
--   GP path: *System\Scripts*
--   GP ADMX file name: *Scripts.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Run_Logon_Script_Sync_1-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- Run_Logon_Script_Sync_1-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-scripts-run-logon-script-sync-2"></a>**ADMX_Scripts/Run_Logon_Script_Sync_2**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Run_Logon_Script_Sync_1 |
+| Friendly Name | Run logon scripts synchronously |
+| Location | User Configuration |
+| Path | System > Scripts |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | RunLogonScriptSync |
+| ADMX File Name | Scripts.admx |
+<!-- Run_Logon_Script_Sync_1-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Run_Logon_Script_Sync_1-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Run_Logon_Script_Sync_1-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Run_Logon_Script_Sync_1-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Run_Logon_Script_Sync_2-Begin -->
+## Run_Logon_Script_Sync_2
 
-> [!div class = "checklist"]
-> * Device
+<!-- Run_Logon_Script_Sync_2-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Run_Logon_Script_Sync_2-Applicability-End -->
 
-<hr/>
+<!-- Run_Logon_Script_Sync_2-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Scripts/Run_Logon_Script_Sync_2
+```
+<!-- Run_Logon_Script_Sync_2-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- Run_Logon_Script_Sync_2-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting directs the system to wait for logon scripts to finish running before it starts the File Explorer interface program and creates the desktop.
 
-If you enable this policy setting, File Explorer does not start until the logon scripts have finished running. This policy setting ensures that logon script processing is complete before the user starts working, but it can delay the appearance of the desktop.
+- If you enable this policy setting, File Explorer doesn't start until the logon scripts have finished running. This policy setting ensures that logon script processing is complete before the user starts working, but it can delay the appearance of the desktop.
 
-If you disable or do not configure this policy setting, the logon scripts and File Explorer are not synchronized and can run simultaneously.
+- If you disable or don't configure this policy setting, the logon scripts and File Explorer aren't synchronized and can run simultaneously.
 
 This policy setting appears in the Computer Configuration and User Configuration folders. The policy setting set in Computer Configuration takes precedence over the policy setting set in User Configuration.
+<!-- Run_Logon_Script_Sync_2-Description-End -->
 
-<!--/Description-->
+<!-- Run_Logon_Script_Sync_2-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Run_Logon_Script_Sync_2-Editable-End -->
 
+<!-- Run_Logon_Script_Sync_2-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Run logon scripts synchronously*
--   GP name: *Run_Logon_Script_Sync_2*
--   GP path: *System\Scripts*
--   GP ADMX file name: *Scripts.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Run_Logon_Script_Sync_2-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- Run_Logon_Script_Sync_2-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-scripts-run-logon-script-visible"></a>**ADMX_Scripts/Run_Logon_Script_Visible**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Run_Logon_Script_Sync_2 |
+| Friendly Name | Run logon scripts synchronously |
+| Location | Computer Configuration |
+| Path | System > Scripts |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | RunLogonScriptSync |
+| ADMX File Name | Scripts.admx |
+<!-- Run_Logon_Script_Sync_2-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Run_Logon_Script_Sync_2-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Run_Logon_Script_Sync_2-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Run_Logon_Script_Sync_2-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Run_Logon_Script_Visible-Begin -->
+## Run_Logon_Script_Visible
 
-> [!div class = "checklist"]
-> * User
+<!-- Run_Logon_Script_Visible-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Run_Logon_Script_Visible-Applicability-End -->
 
-<hr/>
+<!-- Run_Logon_Script_Visible-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Scripts/Run_Logon_Script_Visible
+```
+<!-- Run_Logon_Script_Visible-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- Run_Logon_Script_Visible-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting displays the instructions in logon scripts as they run.
 
-Logon scripts are batch files of instructions that run when the user logs on. By default, the system does not display the instructions in logon scripts.
+Logon scripts are batch files of instructions that run when the user logs on. By default, the system doesn't display the instructions in logon scripts.
 
-If you enable this policy setting, the system displays each instruction in the logon script as it runs. The instructions appear in a command window. This policy setting is designed for advanced users.
+- If you enable this policy setting, the system displays each instruction in the logon script as it runs. The instructions appear in a command window. This policy setting is designed for advanced users.
 
-If you disable or do not configure this policy setting, the instructions are suppressed.
+- If you disable or don't configure this policy setting, the instructions are suppressed.
+<!-- Run_Logon_Script_Visible-Description-End -->
 
-<!--/Description-->
+<!-- Run_Logon_Script_Visible-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Run_Logon_Script_Visible-Editable-End -->
 
+<!-- Run_Logon_Script_Visible-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Display instructions in logon scripts as they run*
--   GP name: *Run_Logon_Script_Visible*
--   GP path: *System\Scripts*
--   GP ADMX file name: *Scripts.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Run_Logon_Script_Visible-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- Run_Logon_Script_Visible-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-scripts-run-shutdown-script-visible"></a>**ADMX_Scripts/Run_Shutdown_Script_Visible**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Run_Logon_Script_Visible |
+| Friendly Name | Display instructions in logon scripts as they run |
+| Location | User Configuration |
+| Path | System > Scripts |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | HideLogonScripts |
+| ADMX File Name | Scripts.admx |
+<!-- Run_Logon_Script_Visible-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Run_Logon_Script_Visible-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Run_Logon_Script_Visible-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Run_Logon_Script_Visible-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Run_Shutdown_Script_Visible-Begin -->
+## Run_Shutdown_Script_Visible
 
-> [!div class = "checklist"]
-> * Device
+<!-- Run_Shutdown_Script_Visible-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Run_Shutdown_Script_Visible-Applicability-End -->
 
-<hr/>
+<!-- Run_Shutdown_Script_Visible-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Scripts/Run_Shutdown_Script_Visible
+```
+<!-- Run_Shutdown_Script_Visible-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- Run_Shutdown_Script_Visible-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting displays the instructions in shutdown scripts as they run.
 
-Shutdown scripts are batch files of instructions that run when the user restarts the system or shuts it down. By default, the system does not display the instructions in the shutdown script.
+Shutdown scripts are batch files of instructions that run when the user restarts the system or shuts it down. By default, the system doesn't display the instructions in the shutdown script.
 
-If you enable this policy setting, the system displays each instruction in the shutdown script as it runs. The instructions appear in a command window.
+- If you enable this policy setting, the system displays each instruction in the shutdown script as it runs. The instructions appear in a command window.
 
-If you disable or do not configure this policy setting, the instructions are suppressed.
+- If you disable or don't configure this policy setting, the instructions are suppressed.
+<!-- Run_Shutdown_Script_Visible-Description-End -->
 
-<!--/Description-->
+<!-- Run_Shutdown_Script_Visible-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Run_Shutdown_Script_Visible-Editable-End -->
 
+<!-- Run_Shutdown_Script_Visible-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Display instructions in shutdown scripts as they run*
--   GP name: *Run_Shutdown_Script_Visible*
--   GP path: *System\Scripts*
--   GP ADMX file name: *Scripts.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Run_Shutdown_Script_Visible-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- Run_Shutdown_Script_Visible-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-scripts-run-startup-script-sync"></a>**ADMX_Scripts/Run_Startup_Script_Sync**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Run_Shutdown_Script_Visible |
+| Friendly Name | Display instructions in shutdown scripts as they run |
+| Location | Computer Configuration |
+| Path | System > Scripts |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | HideShutdownScripts |
+| ADMX File Name | Scripts.admx |
+<!-- Run_Shutdown_Script_Visible-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Run_Shutdown_Script_Visible-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Run_Shutdown_Script_Visible-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Run_Shutdown_Script_Visible-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Run_Startup_Script_Sync-Begin -->
+## Run_Startup_Script_Sync
 
-> [!div class = "checklist"]
-> * Device
+<!-- Run_Startup_Script_Sync-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Run_Startup_Script_Sync-Applicability-End -->
 
-<hr/>
+<!-- Run_Startup_Script_Sync-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Scripts/Run_Startup_Script_Sync
+```
+<!-- Run_Startup_Script_Sync-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- Run_Startup_Script_Sync-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting lets the system run startup scripts simultaneously.
 
 Startup scripts are batch files that run before the user is invited to log on. By default, the system waits for each startup script to complete before it runs the next startup script.
 
-If you enable this policy setting, the system does not coordinate the running of startup scripts. As a result, startup scripts can run simultaneously.
+- If you enable this policy setting, the system doesn't coordinate the running of startup scripts. As a result, startup scripts can run simultaneously.
 
-If you disable or do not configure this policy setting, a startup cannot run until the previous script is complete.
+- If you disable or don't configure this policy setting, a startup can't run until the previous script is complete.
 
 > [!NOTE]
 > Starting with Windows Vista operating system, scripts that are configured to run asynchronously are no longer visible on startup, whether the "Run startup scripts visible" policy setting is enabled or not.
+<!-- Run_Startup_Script_Sync-Description-End -->
 
-<!--/Description-->
+<!-- Run_Startup_Script_Sync-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Run_Startup_Script_Sync-Editable-End -->
 
+<!-- Run_Startup_Script_Sync-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Run startup scripts asynchronously*
--   GP name: *Run_Startup_Script_Sync*
--   GP path: *System\Scripts*
--   GP ADMX file name: *Scripts.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Run_Startup_Script_Sync-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- Run_Startup_Script_Sync-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-scripts-run-startup-script-visible"></a>**ADMX_Scripts/Run_Startup_Script_Visible**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Run_Startup_Script_Sync |
+| Friendly Name | Run startup scripts asynchronously |
+| Location | Computer Configuration |
+| Path | System > Scripts |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | RunStartupScriptSync |
+| ADMX File Name | Scripts.admx |
+<!-- Run_Startup_Script_Sync-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Run_Startup_Script_Sync-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Run_Startup_Script_Sync-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Run_Startup_Script_Sync-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Run_Startup_Script_Visible-Begin -->
+## Run_Startup_Script_Visible
 
-> [!div class = "checklist"]
-> * Device
+<!-- Run_Startup_Script_Visible-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Run_Startup_Script_Visible-Applicability-End -->
 
-<hr/>
+<!-- Run_Startup_Script_Visible-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Scripts/Run_Startup_Script_Visible
+```
+<!-- Run_Startup_Script_Visible-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- Run_Startup_Script_Visible-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting displays the instructions in startup scripts as they run.
 
-Startup scripts are batch files of instructions that run before the user is invited to log on. By default, the system does not display the instructions in the startup script.
+Startup scripts are batch files of instructions that run before the user is invited to log on. By default, the system doesn't display the instructions in the startup script.
 
-If you enable this policy setting, the system displays each instruction in the startup script as it runs. Instructions appear in a command window. This policy setting is designed for advanced users.
+- If you enable this policy setting, the system displays each instruction in the startup script as it runs. Instructions appear in a command window. This policy setting is designed for advanced users.
 
-If you disable or do not configure this policy setting, the instructions are suppressed.
+- If you disable or don't configure this policy setting, the instructions are suppressed.
 
 > [!NOTE]
 > Starting with Windows Vista operating system, scripts that are configured to run asynchronously are no longer visible on startup, whether this policy setting is enabled or not.
+<!-- Run_Startup_Script_Visible-Description-End -->
 
-<!--/Description-->
+<!-- Run_Startup_Script_Visible-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Run_Startup_Script_Visible-Editable-End -->
 
+<!-- Run_Startup_Script_Visible-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Display instructions in startup scripts as they run*
--   GP name: *Run_Startup_Script_Visible*
--   GP path: *System\Scripts*
--   GP ADMX file name: *Scripts.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Run_Startup_Script_Visible-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- Run_Startup_Script_Visible-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-scripts-run-user-ps-scripts-first"></a>**ADMX_Scripts/Run_User_PS_Scripts_First**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | Run_Startup_Script_Visible |
+| Friendly Name | Display instructions in startup scripts as they run |
+| Location | Computer Configuration |
+| Path | System > Scripts |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | HideStartupScripts |
+| ADMX File Name | Scripts.admx |
+<!-- Run_Startup_Script_Visible-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- Run_Startup_Script_Visible-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Run_Startup_Script_Visible-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- Run_Startup_Script_Visible-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- Run_User_PS_Scripts_First-Begin -->
+## Run_User_PS_Scripts_First
 
-> [!div class = "checklist"]
-> * Device
-> * User
+<!-- Run_User_PS_Scripts_First-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Run_User_PS_Scripts_First-Applicability-End -->
 
-<hr/>
+<!-- Run_User_PS_Scripts_First-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Scripts/Run_User_PS_Scripts_First
+```
 
-<!--/Scope-->
-<!--Description-->
-This policy setting determines whether Windows PowerShell scripts are run before non-Windows PowerShell scripts during user logon and logoff. By default, Windows PowerShell scripts run after non-Windows PowerShell scripts. 
- 
-If you enable this policy setting, within each applicable Group Policy Object (GPO), PowerShell scripts are run before non-PowerShell scripts during user logon and logoff. 
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Scripts/Run_User_PS_Scripts_First
+```
+<!-- Run_User_PS_Scripts_First-OmaUri-End -->
 
-For example, assume the following scenario: 
+<!-- Run_User_PS_Scripts_First-Description-Begin -->
+<!-- Description-Source-Manual-Forced -->
+<!-- Run_User_PS_Scripts_First-Description-End -->
 
-There are three GPOs (GPO A, GPO B, and GPO C). This policy setting is enabled in GPO A. 
+<!-- Run_User_PS_Scripts_First-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+This policy setting determines whether Windows PowerShell scripts are run before non-Windows PowerShell scripts during user logon and logoff. By default, Windows PowerShell scripts run after non-Windows PowerShell scripts. If you enable this policy setting, within each applicable Group Policy Object (GPO), PowerShell scripts are run before non-PowerShell scripts during user logon and logoff.
 
-GPO B and GPO C include the following user logon scripts:
+For example, assume the following scenario:
 
-GPO B: B.cmd, B.ps1
-GPO C: C.cmd, C.ps1
+There are three GPOs (GPO A, GPO B, and GPO C). This policy setting is enabled in GPO A. GPO B and GPO C include the following user logon scripts:
 
-Assume also that there are two users, Qin Hong and Tamara Johnston. 
-For Qin, GPOs A, B, and C are applied. Therefore, the scripts for GPOs B and C run in the following order for Qin:
+- GPO B: B.cmd, B.ps1
+- GPO C: C.cmd, C.ps1
 
-Within GPO B: B.ps1, B.cmd
-Within GPO C: C.ps1, C.cmd
- 
+Assume also that there are two users, Qin Hong and Tamara Johnston. For Qin, GPOs A, B, and C are applied. Therefore, the scripts for GPOs B and C run in the following order for Qin:
+
+- Within GPO B: B.ps1, B.cmd
+- Within GPO C: C.ps1, C.cmd
+
 For Tamara, GPOs B and C are applied, but not GPO A. Therefore, the scripts for GPOs B and C run in the following order for Tamara:
 
-Within GPO B: B.cmd, B.ps1
-Within GPO C: C.cmd, C.ps1
+- Within GPO B: B.cmd, B.ps1
+- Within GPO C: C.cmd, C.ps1
 
 > [!NOTE]
 > This policy setting determines the order in which user logon and logoff scripts are run within all applicable GPOs. You can override this policy setting for specific script types within a specific GPO by configuring the following policy settings for the GPO:
+>
 > - User Configuration\Policies\Windows Settings\Scripts (Logon/Logoff)\Logon
 > - User Configuration\Policies\Windows Settings\Scripts (Logon/Logoff)\Logoff
+<!-- Run_User_PS_Scripts_First-Editable-End -->
 
-This policy setting appears in the Computer Configuration and User Configuration folders. The policy setting set in Computer Configuration takes precedence over the setting set in User Configuration.
+<!-- Run_User_PS_Scripts_First-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Run_User_PS_Scripts_First-DFProperties-End -->
 
+<!-- Run_User_PS_Scripts_First-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Run Windows PowerShell scripts first at user logon, logoff*
--   GP name: *Run_User_PS_Scripts_First*
--   GP path: *System\Scripts*
--   GP ADMX file name: *Scripts.admx*
+**ADMX mapping**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Run_User_PS_Scripts_First |
+| Friendly Name | Run Windows PowerShell scripts first at user logon, logoff |
+| Location | Computer and User Configuration |
+| Path | System > Scripts |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\System |
+| Registry Value Name | RunUserPSScriptsFirst |
+| ADMX File Name | Scripts.admx |
+<!-- Run_User_PS_Scripts_First-AdmxBacked-End -->
 
+<!-- Run_User_PS_Scripts_First-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Run_User_PS_Scripts_First-Examples-End -->
 
+<!-- Run_User_PS_Scripts_First-End -->
 
-<!--/Policies-->
+<!-- ADMX_Scripts-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Scripts-CspMoreInfo-End -->
 
+<!-- ADMX_Scripts-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

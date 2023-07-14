@@ -1,17 +1,18 @@
 ---
-title: 4661(S, F) A handle to an object was requested. (Windows 10)
+title: 4661(S, F) A handle to an object was requested. 
 description: Describes security event 4661(S, F) A handle to an object was requested.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 4661(S, F): A handle to an object was requested.
@@ -157,15 +158,15 @@ This event generates only if Success auditing is enabled for the [Audit Handle M
 
 **Access Request Information:**
 
--   **Transaction ID** \[Type = GUID\]: unique GUID of the transaction. This field can help you correlate this event with other events that might contain the same the **Transaction ID**, such as “[4660](event-4660.md)(S): An object was deleted.”
+-   **Transaction ID** \[Type = GUID\]: unique GUID of the transaction. This field can help you correlate this event with other events that might contain the same **Transaction ID**, such as “[4660](event-4660.md)(S): An object was deleted.”
 
     This parameter might not be captured in the event, and in that case appears as “{00000000-0000-0000-0000-000000000000}”.
 
 > **Note**&nbsp;&nbsp;**GUID** is an acronym for 'Globally Unique Identifier'. It is a 128-bit integer number used to identify resources, activities or instances.
 
--   **Accesses** \[Type = UnicodeString\]: the list of access rights which were requested by **Subject\\Security ID**. These access rights depend on **Object Type**. See “Table 13. File access codes.” for more information about file access rights. For information about SAM object access right use <https://technet.microsoft.com/> or other informational resources.
+-   **Accesses** \[Type = UnicodeString\]: the list of access rights which were requested by **Subject\\Security ID**. These access rights depend on **Object Type**. For more information about file access rights, see [Table of file access codes](/windows/security/threat-protection/auditing/event-5145#table-of-file-access-codes). For information about SAM object access right use <https://technet.microsoft.com/> or other informational resources.
 
--   **Access Mask** \[Type = HexInt32\]: hexadecimal mask for the operation that was requested or performed. See “Table 13. File access codes.” for more information about file access rights. For information about SAM object access right use <https://technet.microsoft.com/> or other informational resources.
+-   **Access Mask** \[Type = HexInt32\]: hexadecimal mask for the operation that was requested or performed. For more information about file access rights, see [Table of file access codes](/windows/security/threat-protection/auditing/event-5145#table-of-file-access-codes). For information about SAM object access right use <https://technet.microsoft.com/> or other informational resources.
 
 -   **Privileges Used for Access Check** \[Type = UnicodeString\]: the list of user privileges which were used during the operation, for example, SeBackupPrivilege. This parameter might not be captured in the event, and in that case appears as “-”. See full list of user privileges in the table below:
 

@@ -1,22 +1,16 @@
 ---
 title: Available Data Types and Operators in Compatibility Administrator (Windows 10)
 description: The Compatibility Administrator tool provides a way to query your custom-compatibility databases.
-ms.assetid: 67d9c03e-ab9d-4fda-8a55-8c5b90266d3b
-ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-ms.prod: w10
-ms.mktglfcycl: plan
-ms.pagetype: appcompat
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
-ms.date: 04/19/2017
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
+author: frankroj
+ms.date: 10/28/2022
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Available Data Types and Operators in Compatibility Administrator
-
 
 **Applies to**
 
@@ -31,7 +25,6 @@ The Compatibility Administrator tool provides a way to query your custom-compati
 
 ## Available Data Types
 
-
 Customized-compatibility databases in Compatibility Administrator contain the following data types.
 
 -   **Integer**. A numerical value with no fractional part. All integers are unsigned because none of the attributes can have a negative value.
@@ -41,7 +34,6 @@ Customized-compatibility databases in Compatibility Administrator contain the fo
 -   **Boolean**. A value of True or False.
 
 ## Available Attributes
-
 
 The following table shows the attributes you can use for querying your customized-compatibility databases in Compatibility Administrator.
 
@@ -82,4 +74,3 @@ The following table shows the operators that you can use for querying your custo
 ## Related topics
 
 [Using the Compatibility Administrator Tool](using-the-compatibility-administrator-tool.md)
-

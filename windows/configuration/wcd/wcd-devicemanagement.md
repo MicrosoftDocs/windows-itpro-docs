@@ -1,16 +1,15 @@
 ---
 title: DeviceManagement (Windows 10)
 description: This section describes the DeviceManagement setting that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: greg-lindsay
+ms.prod: windows-client
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.topic: article
 ms.date: 04/30/2018
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
+ms.technology: itpro-configure
 ---
 
 # DeviceManagement (Windows Configuration Designer reference)
@@ -29,7 +28,7 @@ Use to configure device management settings.
 ## Accounts
 
 1. In **Available customizations**, select **Accounts**, enter a friendly name for the account, and then click **Add**.
-2. In **Available customizations**, select the account that you just created. The following table describes the settings you can configure. Settings in **bold** are required.
+2. In **Available customizations**, select the account that you created. The following table describes the settings you can configure. Settings in **bold** are required.
 
 | Setting | Description | 
 | --- | --- |
@@ -60,14 +59,14 @@ Use to configure device management settings.
 ## PGList
 
 1. In **Available customizations**, select **PGList**, enter a LogicalProxyName, and then click **Add**.
-2. In **Available customizations**, select the LogicalProxyName that you just created, and then select **PhysicalProxies**.
+2. In **Available customizations**, select the LogicalProxyName that you created, and then select **PhysicalProxies**.
 3. Enter a PhysicalProxyName, and then click **Add**. The following table describes the settings you can configure for the physical proxy and for **Trust**. 
 
 | Setting | Description | 
 | --- | --- |
 | Address | Enter the address of the physical proxy |
 | AddressType | Select between **E164**, **IPV4**, and **IPV^** for the format and protocol of the PXADDR element for a physical proxy |
-| MatchedNapID | Enter a string that defines the SMS bearer. This string must match the NAPID exactly. The value must contains MVID macro if it is an IPv4 PXADDRTYPE.  |
+| MatchedNapID | Enter a string that defines the SMS bearer. This string must match the NAPID exactly. The value must contain MVID macro if it's an IPv4 PXADDRTYPE.  |
 | PushEnabled | Select whether push operations are enabled  |
 | Trust | Specify whether or not the physical proxies in this logical proxy are privileged  |
 

@@ -1,14 +1,13 @@
 ---
 title: UnifiedWriteFilter DDF File
 description: UnifiedWriteFilter DDF File
-ms.assetid: 23A7316E-A298-43F7-9407-A65155C8CEA6
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+ms.reviewer:
+manager: aaroncz
+ms.author: vinpa
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
+author: vinaypamnani-msft
 ms.date: 12/05/2017
 ---
 
@@ -17,7 +16,7 @@ ms.date: 12/05/2017
 
 This topic shows the OMA DM device description framework (DDF) for the **UnifiedWriteFilter** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

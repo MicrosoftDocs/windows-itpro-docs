@@ -1,0 +1,17 @@
+items:
+- name: Protect derived domain credentials with Credential Guard
+  href: credential-guard.md
+- name: How Credential Guard works
+  href: credential-guard-how-it-works.md
+- name: Requirements
+  href: credential-guard-requirements.md
+- name: Manage Credential Guard
+  href: credential-guard-manage.md
+- name: Credential Guard protection limits
+  href: credential-guard-protection-limits.md
+- name: Considerations when using Credential Guard
+  href: credential-guard-considerations.md
+- name: Additional mitigations
+  href: additional-mitigations.md
+- name: Known issues
+  href: credential-guard-known-issues.md

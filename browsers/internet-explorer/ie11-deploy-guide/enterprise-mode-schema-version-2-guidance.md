@@ -45,7 +45,7 @@ You can continue to use the v.1 version of the schema on Windows 10, but you wo
 The following is an example of the v.2 version of the Enterprise Mode schema.
 
 > [!IMPORTANT]
-> Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<url="contoso.com">`, automatically applies to both http://contoso.com and https://contoso.com.
+> Make sure that you don't specify a protocol when adding your URLs. Using a URL like `<url="contoso.com">`, automatically applies to both `http://contoso.com` and `https://contoso.com`.
  
 ```xml
 <site-list version="205">
@@ -109,9 +109,9 @@ The &lt;url&gt; attribute, as part of the &lt;site&gt; element in the v.2 versio
 
 |Attribute|Description|Supported browser|
 |---------|---------|---------|
-|allow-redirect|A boolean attribute of the &lt;open-in&gt; element that controls the behavior for redirected sites. Setting this attribute to "true" indicates that the site will open in IE11 or Microsoft Edge even if the site is navigated to as part of a HTTP or meta refresh redirection chain. Omitting the attribute is equivalent to "false" (sites in redirect chain will not open in another browser).<br>**Example**<pre class="syntax">&lt;site url="contoso.com/travel"&gt;<br>  &lt;open-in allow-redirect="true"&gt;IE11 &lt;/open-in&gt;<br>&lt;/site&gt;</pre> In this example, if [https://contoso.com/travel](https://contoso.com/travel) is encountered in a redirect chain in Microsoft Edge, it will be opened in Internet Explorer. <li>| Internet Explorer 11 and Microsoft Edge|
+|allow-redirect|A boolean attribute of the &lt;open-in&gt; element that controls the behavior for redirected sites. Setting this attribute to "true" indicates that the site will open in IE11 or Microsoft Edge even if the site is navigated to as part of a HTTP or meta refresh redirection chain. Omitting the attribute is equivalent to "false" (sites in redirect chain will not open in another browser).<br>**Example**<pre class="syntax">&lt;site url="contoso.com/travel"&gt;<br>  &lt;open-in allow-redirect="true"&gt;IE11 &lt;/open-in&gt;<br>&lt;/site&gt;</pre> In this example, if `https://contoso.com/travel` is encountered in a redirect chain in Microsoft Edge, it will be opened in Internet Explorer. | Internet Explorer 11 and Microsoft Edge|
 |version     |Specifies the version of the Enterprise Mode Site List. This attribute is supported for the &lt;site-list&gt; element.   | Internet Explorer 11 and Microsoft Edge|
-|url|Specifies the URL (and port number using standard port conventions) to which the child elements apply. The URL can be a domain, sub-domain, or any path URL.<br> **Note**<br> Make sure that you don't specify a protocol. Using &lt;site url="contoso.com"&gt;  applies to both [https://contoso.com](https://contoso.com) and [https://contoso.com](https://contoso.com). <br> **Example**<pre class="syntax">&lt;site url="contoso.com:8080"&gt;<br>   &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt; <br> &lt;open-in&gt;IE11&lt;/open-in&gt;<br>&lt;/site&gt;</pre>In this example, going to [https://contoso.com:8080](https://contoso.com:8080) using Microsoft Edge, causes the site to open in IE11 and load in IE8 Enterprise Mode. | Internet Explorer 11 and Microsoft Edge|
+|url|Specifies the URL (and port number using standard port conventions) to which the child elements apply. The URL can be a domain, sub-domain, or any path URL.<br> **Note**<br> Make sure that you don't specify a protocol. Using &lt;site url="contoso.com"&gt;  applies to both `http://contoso.com` and `https://contoso.com`. <br> **Example**<pre class="syntax">&lt;site url="contoso.com:8080"&gt;<br>   &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt; <br> &lt;open-in&gt;IE11&lt;/open-in&gt;<br>&lt;/site&gt;</pre>In this example, going to `https://contoso.com:8080` using Microsoft Edge, causes the site to open in IE11 and load in IE8 Enterprise Mode. | Internet Explorer 11 and Microsoft Edge|
 
 ### Deprecated attributes
 These v.1 version schema attributes have been deprecated in the v.2 version of the schema:

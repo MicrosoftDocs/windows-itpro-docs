@@ -1,110 +1,118 @@
 ---
 title: Log files and resolving upgrade errors
-manager: dougeby
-ms.author: greglin
-description: Learn how to interpret and analyze the log files that are generated during the Windows 10 upgrade process. 
-keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
-ms.custom: seo-marvel-apr2020
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: deploy
-audience: itpro
-author: greg-lindsay
+description: Learn how to interpret and analyze the log files that are generated during the Windows 10 upgrade process.
+ms.prod: windows-client
+author: frankroj
+manager: aaroncz
+ms.author: frankroj
 ms.localizationpriority: medium
-ms.topic: article
-ms.collection: highpri
+ms.topic: troubleshooting
+ms.collection:
+  - highpri
+  - tier2
+ms.technology: itpro-deploy
+ms.date: 10/28/2022
 ---
 
-# Log files
+# Windows upgrade log files
 
 **Applies to**
--   Windows 10
 
->[!NOTE]
->This is a 400 level topic (advanced).<br>
->See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
+- Windows 10
 
+> [!NOTE]
+> This is a 400-level topic (advanced).<br>
+
+> See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
 
 Several log files are created during each phase of the upgrade process. These log files are essential for troubleshooting upgrade problems. By default, the folders that contain these log files are hidden on the upgrade target computer. To view the log files, configure Windows Explorer to view hidden items, or use a tool to automatically gather these logs. The most useful log is **setupact.log**. The log files are located in a different folder depending on the Windows Setup phase. Recall that you can determine the phase from the extend code. 
 
->[!NOTE]
->Also see the [Windows Error Reporting](windows-error-reporting.md) section in this document for help locating error codes and log files.
+> [!NOTE]
+> Also see the [Windows Error Reporting](windows-error-reporting.md) section in this document for help locating error codes and log files.
 
-The following table describes some log files and how to use them for troubleshooting purposes:<br>
+The following table describes some log files and how to use them for troubleshooting purposes: 
+
+
 
 |Log file |Phase: Location |Description |When to use|
 |---|---|---|---|
-|setupact.log|Down-Level:<br>$Windows.~BT\Sources\Panther|Contains information about setup actions during the downlevel phase. |All down-level failures and starting point for rollback investigations.<br> This is the most important log for diagnosing setup issues.|
-|setupact.log|OOBE:<br>$Windows.~BT\Sources\Panther\UnattendGC|Contains information about actions during the OOBE phase.|Investigating rollbacks that failed during OOBE phase and operations – 0x4001C, 0x4001D, 0x4001E, 0x4001F.|
+|setupact.log|Down-Level:<br>$Windows.~BT\Sources\Panther|Contains information about setup actions during the downlevel phase. |All down-level failures and starting point for rollback investigations.<br> Setup.act is the most important log for diagnosing setup issues.|
+|setupact.log|OOBE:<br>$Windows.~BT\Sources\Panther\UnattendGC|Contains information about actions during the OOBE phase.|Investigating rollbacks that failed during OOBE phase and operations - 0x4001C, 0x4001D, 0x4001E, 0x4001F.|
 |setupact.log|Rollback:<br>$Windows.~BT\Sources\Rollback|Contains information about actions during rollback.|Investigating generic rollbacks - 0xC1900101.|
 |setupact.log|Pre-initialization (prior to downlevel):<br>Windows|Contains information about initializing setup.|If setup fails to launch.|
 |setupact.log|Post-upgrade (after OOBE):<br>Windows\Panther|Contains information about setup actions during the installation.|Investigate post-upgrade related issues.|
 |setuperr.log|Same as setupact.log|Contains information about setup errors during the installation.|Review all errors encountered during the installation phase.|
 |miglog.xml|Post-upgrade (after OOBE):<br>Windows\Panther|Contains information about what was migrated during the installation.|Identify post upgrade data migration issues.|
-|BlueBox.log|Down-Level:<br>Windows\Logs\Mosetup|Contains information communication between setup.exe and Windows Update.|Use during WSUS and WU down-level failures or for 0xC1900107.|
+|BlueBox.log|Down-Level:<br>Windows\Logs\Mosetup|Contains information communication between `setup.exe` and Windows Update.|Use during WSUS and Windows Update down-level failures or for 0xC1900107.|
 |Supplemental rollback logs:<br>Setupmem.dmp<br>setupapi.dev.log<br>Event logs (*.evtx)|$Windows.~BT\Sources\Rollback|Additional logs collected during rollback.|Setupmem.dmp: If OS bug checks during upgrade, setup will attempt to extract a mini-dump.<br>Setupapi: Device install issues - 0x30018<br>Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.|
 
 ## Log entry structure
 
 A setupact.log or setuperr.log entry (files are located at C:\Windows) includes the following elements:
 
-1.  **The date and time** - 2016-09-08 09:20:05.
+1. **The date and time** - 2016-09-08 09:20:05
 
-2.  **The log level** - Info, Warning, Error, Fatal Error.
 
-3.  **The logging component** - CONX, MOUPG, PANTHR, SP, IBSLIB, MIG, DISM, CSI, CBS.
+2. **The log level** - Info, Warning, Error, Fatal Error
 
-    The logging components SP (setup platform), MIG (migration engine), and CONX (compatibility information) are particularly useful for troubleshooting Windows Setup errors.
 
-4.  **The message** - Operation completed successfully.
+3. **The logging component** - CONX, MOUPG, PANTHR, SP, IBSLIB, MIG, DISM, CSI, CBS
+
+
+   The logging components SP (setup platform), MIG (migration engine), and CONX (compatibility information) are useful for troubleshooting Windows Setup errors.
+
+
+4. **The message** - Operation completed successfully.
 
 See the following example:
 
 | Date/Time | Log level | Component | Message |
 |------|------------|------------|------------|
-|2016-09-08 09:23:50,|  Warning |         MIG  |   Could not replace object C:\Users\name\Cookies. Target Object cannot be removed.|
-
+|2016-09-08 09:23:50,|  Warning |         MIG  |   Couldn't replace object C:\Users\name\Cookies. Target Object can't be removed.|
 
 ## Analyze log files
 
-The following instructions are meant for IT professionals. Also see the [Upgrade error codes](upgrade-error-codes.md) section in this guide to familiarize yourself with [result codes](upgrade-error-codes.md#result-codes) and [extend codes](upgrade-error-codes.md#extend-codes).
+The following instructions are meant for IT professionals. Also see the [Upgrade error codes](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json) section in this guide to familiarize yourself with [result codes](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#result-codes) and [extend codes](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#extend-codes).
 
 To analyze Windows Setup log files:
 
-1.  Determine the Windows Setup error code. This code should be returned by Windows Setup if it is not successful with the upgrade process.
+1. Determine the Windows Setup error code. This code should be returned by Windows Setup if it isn't successful with the upgrade process.
 
-2.  Based on the [extend code](upgrade-error-codes.md#extend-codes) portion of the error code, determine the type and location of a [log files](#log-files) to investigate.
+2. Based on the [extend code](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#extend-codes) portion of the error code, determine the type and location of a log file to investigate.
 
-3.  Open the log file in a text editor, such as notepad.
+3. Open the log file in a text editor, such as notepad.
 
-4.  Using the [result code](upgrade-error-codes.md#result-codes) portion of the Windows Setup error code, search for the result code in the file and find the last occurrence of the code. Alternatively search for the "abort" and abandoning" text strings described in step 7 below.
+4. Using the [result code](/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#result-codes) portion of the Windows Setup error code, search for the result code in the file and find the last occurrence of the code. Alternatively search for the "abort" and abandoning" text strings described in step 7 below.
 
-5.  To find the last occurrence of the result code:
+5. To find the last occurrence of the result code:
 
-    1.  Scroll to the bottom of the file and click after the last character.
-    2.  Click **Edit**.
-    3.  Click **Find**.
-    4.  Type the result code.
-    5.  Under **Direction** select **Up**.
-    6.  Click **Find Next**.
+    1. Scroll to the bottom of the file and select after the last character.
+    2. Select **Edit**.
+    3. Select **Find**.
+    4. Type the result code.
+    5. Under **Direction** select **Up**.
+    6. Select **Find Next**.
 
-6.  When you have located the last occurrence of the result code, scroll up a few lines from this location in the file and review the processes that failed just prior to generating the result code.
+6. When you've located the last occurrence of the result code, scroll up a few lines from this location in the file and review the processes that failed prior to generating the result code.
 
-7.  Search for the following important text strings:
+7. Search for the following important text strings:
 
-    *   **Shell application requested abort**
-    *   **Abandoning apply due to error for object**
+   - `Shell application requested abort`
+   - `Abandoning apply due to error for object`
 
-8.  Decode Win32 errors that appear in this section.
+8. Decode Win32 errors that appear in this section.
 
-9.  Write down the timestamp for the observed errors in this section.
+9. Write down the timestamp for the observed errors in this section.
 
 10. Search other log files for additional information matching these timestamps or errors.
 
 For example, assume that the error code for an error is 0x8007042B - 0x2000D. Searching for "8007042B" reveals the following content from the setuperr.log file:
 
-Some lines in the text below are shortened to enhance readability. The date and time at the start of each line (ex: 2016-10-05 15:27:08) is shortened to minutes and seconds, and the certificate file name which is a long text string is shortened to just "CN."
+> [!NOTE]
+> Some lines in the text below are shortened to enhance readability. For example
+> 
+> - The date and time at the start of each line (ex: 2016-10-05 15:27:08) is shortened to minutes and seconds
+> - The certificate file name, which is a long text string, is shortened to just "CN."
 
 **setuperr.log** content:
 
@@ -127,7 +135,7 @@ The first line indicates there was an error **0x00000570** with the file **C:\Pr
 
 The error 0x00000570 is a [Win32 error code](/openspecs/windows_protocols/ms-erref/18d8fbe8-a967-4f1c-ae50-99ca8e491d2d) corresponding to: ERROR_FILE_CORRUPT: The file or directory is corrupted and unreadable.
 
-Therefore, Windows Setup failed because it was not able to migrate the corrupt file **C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN]**.  This file is a local system certificate and can be safely deleted. Searching the setupact.log file for additional details, the phrase "Shell application requested abort" is found in a location with the same timestamp as the lines in setuperr.log. This confirms our suspicion that this file is the cause of the upgrade failure:
+Therefore, Windows Setup failed because it wasn't able to migrate the corrupt file **C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN]**.  This file is a local system certificate and can be safely deleted. Searching the setupact.log file for more details, the phrase "Shell application requested abort" is found in a location with the same timestamp as the lines in setuperr.log. This confirms our suspicion that this file is the cause of the upgrade failure:
 
 **setupact.log** content:
 
@@ -247,7 +255,7 @@ This analysis indicates that the Windows upgrade error can be resolved by deleti
 > [!NOTE]
 > In this example, the full, unshortened file name is  C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\be8228fb2d3cb6c6b0ccd9ad51b320b4_a43d512c-69f2-42de-aef9-7a88fabdaa3f. 
 
-## Related topics
+## Related articles
 
 [Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.yml)
 <br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)

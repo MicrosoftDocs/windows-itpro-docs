@@ -1,17 +1,28 @@
 ---
 title: Win32CompatibilityAppraiser CSP
 description: Learn how the Win32CompatibilityAppraiser configuration service provider enables the IT admin to query the current status of the Appraiser and UTC telemetry health.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+ms.author: vinpa
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
+author: vinaypamnani-msft
 ms.date: 07/19/2018
-ms.reviewer: 
-manager: dansimp
+ms.reviewer:
+manager: aaroncz
 ---
 
-# Win32CompatibilityAppraiser CSP 
+# Win32CompatibilityAppraiser CSP
+
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 > [!WARNING]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -45,143 +56,173 @@ Win32CompatibilityAppraiser
 ------------MostRestrictiveSetting
 --------WerConnectionReport
 ```
-<a href="" id="accountmanagement"></a>**./Vendor/MSFT/Win32CompatibilityAppraiser**  
+
+<a href="" id="accountmanagement"></a>**./Vendor/MSFT/Win32CompatibilityAppraiser**
 The root node for the Win32CompatibilityAppraiser configuration service provider.
 
-<a href="" id="compatibilityappraiser"></a>**CompatibilityAppraiser**  
+<a href="" id="compatibilityappraiser"></a>**CompatibilityAppraiser**
 This represents the state of the Compatibility Appraiser.
 
+<a href="" id="compatibilityappraiser-appraiserconfigurationdiagnosis"></a>**CompatibilityAppraiser/AppraiserConfigurationDiagnosis**
+This represents various settings that affect whether the Compatibility Appraiser can collect and upload compatibility data.
 
-<a href="" id="compatibilityappraiser-appraiserconfigurationdiagnosis"></a>**CompatibilityAppraiser/AppraiserConfigurationDiagnosis**  
-This represents various settings that affect whether the Compatibility Appraiser can collect and upload compatibility data. 
-
-
-<a href="" id="compatibilityappraiser-appraiserconfigurationdiagnosis-commercialid"></a>**CompatibilityAppraiser/AppraiserConfigurationDiagnosis/CommercialId**  
+<a href="" id="compatibilityappraiser-appraiserconfigurationdiagnosis-commercialid"></a>**CompatibilityAppraiser/AppraiserConfigurationDiagnosis/CommercialId**
 The unique identifier specifying what organization owns this device.  This helps correlate telemetry after it has been uploaded.
 
-Value type is string. Supported operation is Get.
+Value type is string.
 
-<a href="" id="compatibilityappraiser-appraiserconfigurationdiagnosiscommercialidsetandvalid"></a>**CompatibilityAppraiser/AppraiserConfigurationDiagnosis/CommercialIdSetAndValid**  
+Supported operation is Get.
+
+<a href="" id="compatibilityappraiser-appraiserconfigurationdiagnosiscommercialidsetandvalid"></a>**CompatibilityAppraiser/AppraiserConfigurationDiagnosis/CommercialIdSetAndValid**
 A boolean value representing whether the CommercialId is set to a valid value.  Valid values are strings in the form of GUIDs, with no surrounding braces.
 
-Value type is bool. Supported operation is Get.
+Value type is bool.
 
-<a href="" id="compatibilityappraiser-appraiserconfigurationdiagnosis-alltargetosversionsrequested"></a>**CompatibilityAppraiser/AppraiserConfigurationDiagnosis/AllTargetOsVersionsRequested**  
-A boolean value representing whether the flag to request that the Compatibility Appraiser check compatibility with all possible Windows 10 versions has been set.  By default, versions 1507 and 1511, and any version equal to or less than the current version, are not checked.
+Supported operation is Get.
 
-Value type is bool. Supported operation is Get.
+<a href="" id="compatibilityappraiser-appraiserconfigurationdiagnosis-alltargetosversionsrequested"></a>**CompatibilityAppraiser/AppraiserConfigurationDiagnosis/AllTargetOsVersionsRequested**
+A boolean value representing whether the flag to request that the Compatibility Appraiser check compatibility with all possible Windows 10 versions has been set. By default, versions 1507 and 1511, and any version equal to or less than the current version, are not checked.
 
-<a href="" id="compatibilityappraiser-appraiserconfigurationdiagnosis-osskuisvalidforappraiser"></a>**CompatibilityAppraiser/AppraiserConfigurationDiagnosis/OsSkuIsValidForAppraiser**  
+Value type is bool.
+
+Supported operation is Get.
+
+<a href="" id="compatibilityappraiser-appraiserconfigurationdiagnosis-osskuisvalidforappraiser"></a>**CompatibilityAppraiser/AppraiserConfigurationDiagnosis/OsSkuIsValidForAppraiser**
 A boolean value indicating whether the current Windows SKU is able to run the Compatibility Appraiser.
 
-Value type is bool. Supported operation is Get.
+Value type is bool.
 
-<a href="" id="compatibilityappraiser-appraiserconfigurationdiagnosis-appraisercodeanddataversionsaboveminimum"></a>**CompatibilityAppraiser/AppraiserConfigurationDiagnosis/AppraiserCodeAndDataVersionsAboveMinimum**  
-An integer value representing whether the installed versions of the Compatibility Appraiser code and data meet the minimum requirement to provide useful data.  
+Supported operation is Get.
 
-The values are:  
--  0 == Neither the code nor data is of a sufficient version  
--  1 == The code version is insufficient but the data version is sufficient 
--  2 == The code version is sufficient but the data version is insufficient
--  3 == Both the code and data are of a sufficient version
+<a href="" id="compatibilityappraiser-appraiserconfigurationdiagnosis-appraisercodeanddataversionsaboveminimum"></a>**CompatibilityAppraiser/AppraiserConfigurationDiagnosis/AppraiserCodeAndDataVersionsAboveMinimum**
+An integer value representing whether the installed versions of the Compatibility Appraiser code and data meet the minimum requirement to provide useful data.
 
-Value type is integer. Supported operation is Get.
+The values are:
 
-<a href="" id="compatibilityappraiser-appraiserconfigurationdiagnosis-rebootpending"></a>**CompatibilityAppraiser/AppraiserConfigurationDiagnosis/RebootPending**  
-A boolean value representing whether a reboot is pending on this computer.  A newly-installed version of the Compatibility Appraiser may require a reboot before useful data is able to be sent.
+- 0 == Neither the code nor data is of a sufficient version.
+- 1 == The code version is insufficient but the data version is sufficient.
+- 2 == The code version is sufficient but the data version is insufficient.
+- 3 == Both the code and data are of a sufficient version.
 
-Value type is bool. Supported operation is Get.
+Value type is integer.
 
-<a href="" id="compatibilityappraiser-appraiserrunresultreport"></a>**CompatibilityAppraiser/AppraiserRunResultReport**  
+Supported operation is Get.
+
+<a href="" id="compatibilityappraiser-appraiserconfigurationdiagnosis-rebootpending"></a>**CompatibilityAppraiser/AppraiserConfigurationDiagnosis/RebootPending**
+A boolean value representing whether a reboot is pending on this computer. A newly installed version of the Compatibility Appraiser may require a reboot before useful data is able to be sent.
+
+Value type is bool.
+
+Supported operation is Get.
+
+<a href="" id="compatibilityappraiser-appraiserrunresultreport"></a>**CompatibilityAppraiser/AppraiserRunResultReport**
 This provides an XML representation of the last run of Appraiser and the last runs of Appraiser of certain types or configurations.
 
 For the report XML schema see [Appraiser run result report](#appraiser-run-result-report).
 
-<a href="" id="universaltelemetryclient"></a>**UniversalTelemetryClient**  
+<a href="" id="universaltelemetryclient"></a>**UniversalTelemetryClient**
 This represents the state of the Universal Telemetry Client, or DiagTrack service.
 
-<a href="" id="universaltelemetryclient-utcconfigurationdiagnosis"></a>**UniversalTelemetryClient/UtcConfigurationDiagnosis**  
+<a href="" id="universaltelemetryclient-utcconfigurationdiagnosis"></a>**UniversalTelemetryClient/UtcConfigurationDiagnosis**
 This represents various settings that affect whether the Universal Telemetry Client can upload data and how much data it can upload.
 
-<a href="" id="universaltelemetryclient-utcconfigurationdiagnosis-telemetryoptin"></a>**UniversalTelemetryClient/UtcConfigurationDiagnosis/TelemetryOptIn**  
-An integer value representing what level of telemetry will be uploaded.  
+<a href="" id="universaltelemetryclient-utcconfigurationdiagnosis-telemetryoptin"></a>**UniversalTelemetryClient/UtcConfigurationDiagnosis/TelemetryOptIn**
+An integer value representing what level of telemetry will be uploaded.
 
-Value type is integer. Supported operation is Get.
+Value type is integer.
 
-The values are:  
--  0 == Security data will be sent 
--  1 == Basic telemetry will be sent 
--  2 == Enhanced telemetry will be sent 
--  3 == Full telemetry will be sent
+Supported operation is Get.
 
-<a href="" id="universaltelemetryclient-utcconfigurationdiagnosis-commercialdataoptin"></a>**UniversalTelemetryClient/UtcConfigurationDiagnosis/CommercialDataOptIn**  
-An integer value representing whether the CommercialDataOptIn setting is allowing any data to upload.  
+The values are:
 
-Value type is integer. Supported operation is Get.
+- 0 == Security data will be sent.
+- 1 == Basic telemetry will be sent.
+- 2 == Enhanced telemetry will be sent.
+- 3 == Full telemetry will be sent.
 
-The values are:  
--  0 == Setting is disabled
--  1 == Setting is enabled
--  2 == Setting is not applicable to this version of Windows
+<a href="" id="universaltelemetryclient-utcconfigurationdiagnosis-commercialdataoptin"></a>**UniversalTelemetryClient/UtcConfigurationDiagnosis/CommercialDataOptIn**
+An integer value representing whether the CommercialDataOptIn setting is allowing any data to upload.
 
-<a href="" id="universaltelemetryclient-utcconfigurationdiagnosis-diagtrackservicerunning"></a>**UniversalTelemetryClient/UtcConfigurationDiagnosis/DiagTrackServiceRunning**  
-A boolean value representing whether the DiagTrack service is running.  This service must be running in order to upload UTC data.
+Value type is integer.
 
-Value type is bool. Supported operation is Get.
+Supported operation is Get.
 
-<a href="" id="universaltelemetryclient-utcconfigurationdiagnosis-msaserviceenabled"></a>**UniversalTelemetryClient/UtcConfigurationDiagnosis/MsaServiceEnabled**  
-A boolean value representing whether the MSA service is enabled.  This service must be enabled for UTC data to be indexed with Global Device IDs.
+The values are:
 
-Value type is bool. Supported operation is Get.
+- 0 == Setting is disabled.
+- 1 == Setting is enabled.
+- 2 == Setting is not applicable to this version of Windows.
 
-<a href="" id="universaltelemetryclient-utcconfigurationdiagnosis-internetexplorertelemetryoptin"></a>**UniversalTelemetryClient/UtcConfigurationDiagnosis/InternetExplorerTelemetryOptIn**  
-An integer value representing what websites Internet Explorer will collect telemetry data for.    
+<a href="" id="universaltelemetryclient-utcconfigurationdiagnosis-diagtrackservicerunning"></a>**UniversalTelemetryClient/UtcConfigurationDiagnosis/DiagTrackServiceRunning**
+A boolean value representing whether the DiagTrack service is running. This service must be running in order to upload UTC data.
 
-Value type is integer. Supported operation is Get.
+Value type is bool.
 
-The values are:  
--  0 == Telemetry collection is disabled 
--  1 == Telemetry collection is enabled for websites in the local intranet, trusted websites, and machine local zones 
--  2 == Telemetry collection is enabled for internet websites and restricted website zones
--  3 == Telemetry collection is enabled for all websites
--  0x7FFFFFFF == Telemetry collection is not configured
+Supported operation is Get.
 
-<a href="" id="universaltelemetryclient-utcconnectionreport"></a>**UniversalTelemetryClient/UtcConnectionReport**  
+<a href="" id="universaltelemetryclient-utcconfigurationdiagnosis-msaserviceenabled"></a>**UniversalTelemetryClient/UtcConfigurationDiagnosis/MsaServiceEnabled**
+A boolean value representing whether the Microsoft account service is enabled. This service must be enabled for UTC data to be indexed with Global Device IDs.
+
+Value type is bool.
+
+Supported operation is Get.
+
+<a href="" id="universaltelemetryclient-utcconfigurationdiagnosis-internetexplorertelemetryoptin"></a>**UniversalTelemetryClient/UtcConfigurationDiagnosis/InternetExplorerTelemetryOptIn**
+An integer value representing what websites Internet Explorer will collect telemetry data for.
+
+Value type is integer.
+
+Supported operation is Get.
+
+The values are:
+
+- 0 == Telemetry collection is disabled.
+- 1 == Telemetry collection is enabled for websites in the local intranet, trusted websites, and machine local zones.
+- 2 == Telemetry collection is enabled for internet websites and restricted website zones.
+- 3 == Telemetry collection is enabled for all websites.
+- 0x7FFFFFFF == Telemetry collection is not configured.
+
+<a href="" id="universaltelemetryclient-utcconnectionreport"></a>**UniversalTelemetryClient/UtcConnectionReport**
 This provides an XML representation of the UTC connections during the most recent summary period.
 
 For the report XML schema, see [UTC connection report](#utc-connection-report).
 
-<a href="" id="windowserrorreporting"></a>**WindowsErrorReporting**  
+<a href="" id="windowserrorreporting"></a>**WindowsErrorReporting**
 This represents the state of the Windows Error Reporting service.
 
-<a href="" id="windowserrorreporting-werconfigurationdiagnosis"></a>**WindowsErrorReporting/WerConfigurationDiagnosis**  
+<a href="" id="windowserrorreporting-werconfigurationdiagnosis"></a>**WindowsErrorReporting/WerConfigurationDiagnosis**
 This represents various settings that affect whether the Windows Error Reporting service can upload data and how much data it can upload.
 
-<a href="" id="windowserrorreporting-werconfigurationdiagnosis-wertelemetryoptin"></a>**WindowsErrorReporting/WerConfigurationDiagnosis/WerTelemetryOptIn**  
-An integer value indicating the amount of WER data that will be uploaded.  
+<a href="" id="windowserrorreporting-werconfigurationdiagnosis-wertelemetryoptin"></a>**WindowsErrorReporting/WerConfigurationDiagnosis/WerTelemetryOptIn**
+An integer value indicating the amount of WER data that will be uploaded.
 
-Value type integer. Supported operation is Get.
+Value type is integer.
 
-The values are:  
--  0 == Data will not send due to UTC opt-in 
--  1 == Data will not send due to WER opt-in 
--  2 == Basic WER data will send but not the complete set of data 
--  3 == The complete set of WER data will send
+Supported operation is Get.
 
+The values are:
 
-<a href="" id="windowserrorreporting-werconfigurationdiagnosis-mostrestrictivesetting"></a>**WindowsErrorReporting/WerConfigurationDiagnosis/MostRestrictiveSetting**  
-An integer value representing which setting category (system telemetry, WER basic policies, WER advanced policies, and WER consent policies) is causing the overall WerTelemetryOptIn value to be restricted.  
+- 0 == Data will not send due to UTC opt-in.
+- 1 == Data will not send due to WER opt-in.
+- 2 == Basic WER data will send but not the complete set of data.
+- 3 == The complete set of WER data will send.
 
-Value type integer. Supported operation is Get.
+<a href="" id="windowserrorreporting-werconfigurationdiagnosis-mostrestrictivesetting"></a>**WindowsErrorReporting/WerConfigurationDiagnosis/MostRestrictiveSetting**
+An integer value representing which setting category (system telemetry, WER basic policies, WER advanced policies, and WER consent policies) is causing the overall WerTelemetryOptIn value to be restricted.
 
-The values are:  
--  0 == System telemetry settings are restricting uploads 
--  1 == WER basic policies are restricting uploads 
--  2 == WER advanced policies are restricting uploads 
--  3 == WER consent policies are restricting uploads 
--  4 == There are no restrictive settings
+Value type is integer.
 
-<a href="" id="windowserrorreporting-werconnectionreport"></a>**WindowsErrorReporting/WerConnectionReport**  
+Supported operation is Get.
+
+The values are:
+
+- 0 == System telemetry settings are restricting upload.
+- 1 == WER basic policies are restricting uploads.
+- 2 == WER advanced policies are restricting uploads.
+- 3 == WER consent policies are restricting uploads.
+- 4 == There are no restrictive settings.
+
+<a href="" id="windowserrorreporting-werconnectionreport"></a>**WindowsErrorReporting/WerConnectionReport**
 This provides an XML representation of the most recent WER connections of various types.
 
 For the report XML schema, see [Windows Error Reporting connection report](#windows-error-reporting-connection-report).
@@ -190,7 +231,7 @@ For the report XML schema, see [Windows Error Reporting connection report](#wind
 
 ### Appraiser run result report
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" >
     <xs:annotation>
@@ -362,7 +403,7 @@ For the report XML schema, see [Windows Error Reporting connection report](#wind
 
 ### UTC connection report
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fusion="urn:schemas-microsoft-com:asm.v1" elementFormDefault="qualified" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
     <xs:annotation>
@@ -440,7 +481,7 @@ For the report XML schema, see [Windows Error Reporting connection report](#wind
 
 ### Windows Error Reporting connection report
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fusion="urn:schemas-microsoft-com:asm.v1" elementFormDefault="qualified" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
     <xs:annotation>
@@ -638,3 +679,7 @@ For the report XML schema, see [Windows Error Reporting connection report](#wind
     <xs:element name="ConnectionReport" type="ConnectionReportType"/>
 </xs:schema>
 ```
+
+## Related topics
+
+[Configuration service provider reference](index.yml)

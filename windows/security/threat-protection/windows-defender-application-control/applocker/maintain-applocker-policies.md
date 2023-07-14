@@ -1,29 +1,18 @@
 ---
-title: Maintain AppLocker policies (Windows)
+title: Maintain AppLocker policies
 description: Learn how to maintain rules within AppLocker policies. View common AppLocker maintenance scenarios and see the methods to use to maintain AppLocker policies.
-ms.assetid: b4fbfdfe-ef3d-49e0-a390-f2dfe74602bc
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.author: vinpa
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+author: vinaypamnani-msft
+manager: aaroncz
 ms.topic: conceptual
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.date: 12/31/2017
 ---
 
 # Maintain AppLocker policies
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -50,17 +39,16 @@ Using the AppLocker configuration service provider, you can select which apps ar
 
 For more information, see the [AppLocker CSP](/windows/client-management/mdm/applocker-csp).
 
-
 ## <a href="" id="bkmk-applkr-use-gp"></a>Maintaining AppLocker policies by using Group Policy
 
 For every scenario, the steps to maintain an AppLocker policy distributed by Group Policy include the following tasks.
 
 As new apps are deployed or existing apps are removed by your organization or updated by the software publisher, you might need to make revisions to your rules and update the Group Policy Object (GPO) to ensure that your policy is current.
 
-You can edit an AppLocker policy by adding, changing, or removing rules. However, you cannot specify a version for the AppLocker policy by importing additional rules. To ensure version control when modifying an AppLocker policy, use Group Policy management software that allows you to create 
+You can edit an AppLocker policy by adding, changing, or removing rules. However, you can't specify a version for the AppLocker policy by importing more rules. To ensure version control when modifying an AppLocker policy, use Group Policy management software that allows you to create 
 versions of GPOs.
 
->**Caution:**  You should not edit an AppLocker rule collection while it is being enforced in Group Policy. Because AppLocker controls what files are allowed to run, making changes to a live policy can create unexpected behavior.
+>**Caution:**  You should not edit an AppLocker rule collection while it is being enforced in Group Policy. Because AppLocker controls what files are allowed to run, making changes to a live policy can create unexpected behavior.
 
 ### Step 1: Understand the current behavior of the policy
 
@@ -74,7 +62,7 @@ Updating an AppLocker policy that is currently enforced in your production envir
 
 After the AppLocker policy has been exported from the GPO into the AppLocker reference or test computer, or has been accessed on the local computer, the specific rules can be modified as required.
 
-To modify AppLocker rules, see the following:
+To modify AppLocker rules, see the following articles:
 
 -   [Edit AppLocker rules](edit-applocker-rules.md)
 -   [Merge AppLocker policies by using Set-ApplockerPolicy](merge-applocker-policies-by-using-set-applockerpolicy.md) or [Merge AppLocker policies manually](merge-applocker-policies-manually.md)
@@ -101,7 +89,7 @@ Before modifying a policy, evaluate how the policy is currently implemented.
 
 ### Step 2: Update the AppLocker policy by modifying the appropriate AppLocker rule
 
-Rules are grouped into a collection, which can have the policy enforcement setting applied to it. By default, AppLocker rules do not allow users to open or run any files that are not specifically allowed.
+Rules are grouped into a collection, which can have the policy enforcement setting applied to it. By default, AppLocker rules don't allow users to open or run any files that aren't allowed.
 
 To modify AppLocker rules, see the appropriate topic listed on [Administer AppLocker](administer-applocker.md).
 
@@ -117,6 +105,6 @@ You can export and then import AppLocker policies to deploy the policy to other 
 
 After deploying a policy, evaluate the policy's effectiveness.
 
-## Additional resources
+## Other resources
 
 -   For steps to perform other AppLocker policy tasks, see [Administer AppLocker](administer-applocker.md).

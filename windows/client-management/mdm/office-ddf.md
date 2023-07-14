@@ -1,62 +1,112 @@
 ---
-title: Office DDF
-description: This topic shows the OMA DM device description framework (DDF) for the Office configuration service provider. DDF files are used only with OMA DM provisioning XML.
-ms.assetid:
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 08/15/2018
+title: Office DDF file
+description: View the XML file containing the device description framework (DDF) for the Office configuration service provider.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 06/02/2023
+ms.localizationpriority: medium
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
-# Office DDF
+<!-- Auto-Generated CSP Document -->
 
-This topic shows the OMA DM device description framework (DDF) for the **Office** configuration service provider. DDF files are used only with OMA DM provisioning XML.
+# Office DDF file
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
-
-The XML below is for Windows 10, version 1809.
+The following XML file contains the device description framework (DDF) for the Office configuration service provider.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
-  "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
-  [<?oma-dm-ddf-ver supported-versions="1.2"?>]>
+<!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"[<?oma-dm-ddf-ver supported-versions="1.2"?>]>
 <MgmtTree xmlns:MSFT="http://schemas.microsoft.com/MobileDevice/DM">
   <VerDTD>1.2</VerDTD>
+  <MSFT:Diagnostics>
+  </MSFT:Diagnostics>
+  <Node>
+    <NodeName>Office</NodeName>
+    <Path>./User/Vendor/MSFT</Path>
+    <DFProperties>
+      <AccessType>
+        <Get />
+      </AccessType>
+      <Description>Root of the office CSP.</Description>
+      <DFFormat>
+        <node />
+      </DFFormat>
+      <Occurrence>
+        <One />
+      </Occurrence>
+      <Scope>
+        <Permanent />
+      </Scope>
+      <DFType>
+        <MIME />
+      </DFType>
+      <MSFT:Applicability>
+        <MSFT:OsBuildVersion>10.0.15063</MSFT:OsBuildVersion>
+        <MSFT:CspVersion>1.0</MSFT:CspVersion>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+      </MSFT:Applicability>
+    </DFProperties>
+    <Node>
+      <NodeName>Installation</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Get />
+        </AccessType>
+        <Description>Installation options for the office CSP.</Description>
+        <DFFormat>
+          <node />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Permanent />
+        </Scope>
+        <DFType>
+          <DDFName />
+        </DFType>
+      </DFProperties>
       <Node>
-        <NodeName>Office</NodeName>
-        <Path>./User/Vendor/MSFT</Path>
+        <NodeName>
+        </NodeName>
         <DFProperties>
           <AccessType>
+            <Add />
+            <Delete />
             <Get />
           </AccessType>
-          <Description>Root of the office CSP.</Description>
+          <Description>A unique identifier which represents the installation instance id.</Description>
           <DFFormat>
             <node />
           </DFFormat>
           <Occurrence>
-            <One />
+            <ZeroOrMore />
           </Occurrence>
           <Scope>
-            <Permanent />
+            <Dynamic />
           </Scope>
+          <DFTitle>id</DFTitle>
           <DFType>
-            <MIME>com.microsoft/1.5/MDM/Office</MIME>
+            <DDFName />
           </DFType>
+          <MSFT:DynamicNodeNaming>
+            <MSFT:UniqueName>A unique identifier which represents the installation instance id.</MSFT:UniqueName>
+          </MSFT:DynamicNodeNaming>
         </DFProperties>
         <Node>
-          <NodeName>Installation</NodeName>
+          <NodeName>Install</NodeName>
           <DFProperties>
             <AccessType>
+              <Exec />
               <Get />
             </AccessType>
-            <Description>Installation options for the office CSP.</Description>
+            <Description>The install action will install office given the configuration in the data.  The string data is the xml configuration to use in order to install office.</Description>
             <DFFormat>
-              <node />
+              <chr />
             </DFFormat>
             <Occurrence>
               <One />
@@ -65,149 +115,21 @@ The XML below is for Windows 10, version 1809.
               <Permanent />
             </Scope>
             <DFType>
-              <DDFName></DDFName>
+              <MIME />
             </DFType>
+            <MSFT:AllowedValues ValueType="None">
+            </MSFT:AllowedValues>
           </DFProperties>
-          <Node>
-            <NodeName></NodeName>
-            <DFProperties>
-              <AccessType>
-                <Add />
-                <Delete />
-                <Get />
-                <Replace />
-              </AccessType>
-              <Description>A unique identifier which represents the instalation instance id.</Description>
-              <DFFormat>
-                <node />
-              </DFFormat>
-              <Occurrence>
-                <ZeroOrMore />
-              </Occurrence>
-              <Scope>
-                <Dynamic />
-              </Scope>
-              <DFTitle>id</DFTitle>
-              <DFType>
-                <DDFName></DDFName>
-              </DFType>
-            </DFProperties>
-            <Node>
-              <NodeName>Install</NodeName>
-              <DFProperties>
-                <AccessType>
-                  <Exec />
-                  <Get />
-                </AccessType>
-                <Description>The install action will install office given the configuration in the data.  The string data is the xml configuration to use in order to install office.</Description>
-                <DFFormat>
-                  <chr />
-                </DFFormat>
-                <Occurrence>
-                  <One />
-                </Occurrence>
-                <Scope>
-                  <Permanent />
-                </Scope>
-                <DFType>
-                  <MIME>text/plain</MIME>
-                </DFType>
-              </DFProperties>
-            </Node>
-            <Node>
-              <NodeName>Status</NodeName>
-              <DFProperties>
-                <AccessType>
-                  <Get />
-                </AccessType>
-                <Description>The installation status of the CSP.</Description>
-                <DFFormat>
-                  <int />
-                </DFFormat>
-                <Occurrence>
-                  <One />
-                </Occurrence>
-                <Scope>
-                  <Permanent />
-                </Scope>
-                <DFType>
-                  <MIME>text/plain</MIME>
-                </DFType>
-              </DFProperties>
-            </Node>
-            <Node>
-              <NodeName>FinalStatus</NodeName>
-              <DFProperties>
-                <AccessType>
-                  <Get />
-                </AccessType>
-                <Description>Final Office 365 installation status.</Description>
-                <DFFormat>
-                  <int />
-                </DFFormat>
-                <Occurrence>
-                  <One />
-                </Occurrence>
-                <Scope>
-                  <Dynamic />
-                </Scope>
-                <DFType>
-                  <MIME>text/plain</MIME>
-                </DFType>
-              </DFProperties>
-            </Node>
-          </Node>
-          <Node>
-            <NodeName>CurrentStatus</NodeName>
-            <DFProperties>
-              <AccessType>
-                <Get />
-              </AccessType>
-              <Description>The current Office 365 installation status on the machine</Description>
-              <DFFormat>
-                <xml />
-              </DFFormat>
-              <Occurrence>
-                <One />
-              </Occurrence>
-              <Scope>
-                <Permanent />
-              </Scope>
-              <DFType>
-                <MIME>text/plain</MIME>
-              </DFType>
-            </DFProperties>
-          </Node>
         </Node>
-      </Node>
-      <Node>
-        <NodeName>Office</NodeName>
-        <Path>./Device/Vendor/MSFT</Path>
-        <DFProperties>
-          <AccessType>
-            <Get />
-          </AccessType>
-          <DFFormat>
-            <node />
-          </DFFormat>
-          <Occurrence>
-            <One />
-          </Occurrence>
-          <Scope>
-            <Permanent />
-          </Scope>
-          <DFType>
-            <MIME>com.microsoft/1.5/MDM/Office</MIME>
-          </DFType>
-        </DFProperties>
         <Node>
-          <NodeName>Installation</NodeName>
+          <NodeName>Status</NodeName>
           <DFProperties>
             <AccessType>
               <Get />
             </AccessType>
+            <Description>The installation status of the CSP.</Description>
             <DFFormat>
-              <node />
+              <int />
             </DFFormat>
             <Occurrence>
               <One />
@@ -216,117 +138,237 @@ The XML below is for Windows 10, version 1809.
               <Permanent />
             </Scope>
             <DFType>
-              <DDFName></DDFName>
+              <MIME />
             </DFType>
           </DFProperties>
-          <Node>
-            <NodeName>id</NodeName>
-            <DFProperties>
-              <AccessType>
-                <Add />
-                <Delete />
-                <Get />
-              </AccessType>
-              <Description>A unique identifier which represents the instalation instance id.</Description>
-              <DFFormat>
-                <node />
-              </DFFormat>
-              <Occurrence>
-                <ZeroOrMore />
-              </Occurrence>
-              <Scope>
-                <Dynamic />
-              </Scope>
-              <DFTitle>id</DFTitle>
-              <DFType>
-                <DDFName></DDFName>
-              </DFType>
-            </DFProperties>
-            <Node>
-              <NodeName>Install</NodeName>
-              <DFProperties>
-                <AccessType>
-                  <Exec />
-                  <Get />
-                </AccessType>
-                <DFFormat>
-                  <chr />
-                </DFFormat>
-                <Occurrence>
-                  <One />
-                </Occurrence>
-                <Scope>
-                  <Dynamic />
-                </Scope>
-                <DFType>
-                  <MIME>text/plain</MIME>
-                </DFType>
-              </DFProperties>
-            </Node>
-            <Node>
-              <NodeName>Status</NodeName>
-              <DFProperties>
-                <AccessType>
-                  <Get />
-                </AccessType>
-                <DFFormat>
-                  <int />
-                </DFFormat>
-                <Occurrence>
-                  <One />
-                </Occurrence>
-                <Scope>
-                  <Dynamic />
-                </Scope>
-                <DFType>
-                  <MIME>text/plain</MIME>
-                </DFType>
-              </DFProperties>
-            </Node>
-            <Node>
-              <NodeName>FinalStatus</NodeName>
-              <DFProperties>
-                <AccessType>
-                  <Get />
-                </AccessType>
-                <Description>Final Office 365 installation status.</Description>
-                <DFFormat>
-                  <int />
-                </DFFormat>
-                <Occurrence>
-                  <One />
-                </Occurrence>
-                <Scope>
-                  <Dynamic />
-                </Scope>
-                <DFType>
-                  <MIME>text/plain</MIME>
-                </DFType>
-              </DFProperties>
-            </Node>
-          </Node>
-          <Node>
-            <NodeName>CurrentStatus</NodeName>
-            <DFProperties>
-              <AccessType>
-                <Get />
-              </AccessType>
-              <Description>The current Office 365 installation status on the machine</Description>
-              <DFFormat>
-                <xml />
-              </DFFormat>
-              <Occurrence>
-                <One />
-              </Occurrence>
-              <Scope>
-                <Permanent />
-              </Scope>
-              <DFType>
-                <MIME>text/plain</MIME>
-              </DFType>
-            </DFProperties>
-          </Node>
+        </Node>
+        <Node>
+          <NodeName>FinalStatus</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Final Office 365 installation status.</Description>
+            <DFFormat>
+              <int />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME />
+            </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.17763</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.5</MSFT:CspVersion>
+            </MSFT:Applicability>
+          </DFProperties>
         </Node>
       </Node>
+      <Node>
+        <NodeName>CurrentStatus</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <Description>The current Office 365 installation status on the machine</Description>
+          <DFFormat>
+            <chr />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.16299</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+        </DFProperties>
+      </Node>
+    </Node>
+  </Node>
+  <Node>
+    <NodeName>Office</NodeName>
+    <Path>./Device/Vendor/MSFT</Path>
+    <DFProperties>
+      <AccessType>
+        <Get />
+      </AccessType>
+      <Description>Root of the office CSP.</Description>
+      <DFFormat>
+        <node />
+      </DFFormat>
+      <Occurrence>
+        <One />
+      </Occurrence>
+      <Scope>
+        <Permanent />
+      </Scope>
+      <DFType>
+        <MIME />
+      </DFType>
+      <MSFT:Applicability>
+        <MSFT:OsBuildVersion>10.0.15063</MSFT:OsBuildVersion>
+        <MSFT:CspVersion>1.0</MSFT:CspVersion>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+      </MSFT:Applicability>
+    </DFProperties>
+    <Node>
+      <NodeName>Installation</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Get />
+        </AccessType>
+        <Description>Installation options for the office CSP.</Description>
+        <DFFormat>
+          <node />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Permanent />
+        </Scope>
+        <DFType>
+          <DDFName />
+        </DFType>
+      </DFProperties>
+      <Node>
+        <NodeName>
+        </NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+          </AccessType>
+          <Description>A unique identifier which represents the installation instance id.</Description>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrMore />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFTitle>id</DFTitle>
+          <DFType>
+            <DDFName />
+          </DFType>
+          <MSFT:DynamicNodeNaming>
+            <MSFT:UniqueName>A unique identifier which represents the installation instance id.</MSFT:UniqueName>
+          </MSFT:DynamicNodeNaming>
+        </DFProperties>
+        <Node>
+          <NodeName>Install</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Exec />
+              <Get />
+            </AccessType>
+            <Description>The install action will install office given the configuration in the data.  The string data is the xml configuration to use in order to install office.</Description>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME />
+            </DFType>
+            <MSFT:AllowedValues ValueType="None">
+            </MSFT:AllowedValues>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>Status</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>The installation status of the CSP.</Description>
+            <DFFormat>
+              <int />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME />
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>FinalStatus</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Final Office 365 installation status.</Description>
+            <DFFormat>
+              <int />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME />
+            </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.17763</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.5</MSFT:CspVersion>
+            </MSFT:Applicability>
+          </DFProperties>
+        </Node>
+      </Node>
+      <Node>
+        <NodeName>CurrentStatus</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <Description>The current Office 365 installation status on the machine</Description>
+          <DFFormat>
+            <chr />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.16299</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+        </DFProperties>
+      </Node>
+    </Node>
+  </Node>
 </MgmtTree>
 ```
+
+## Related articles
+
+[Office configuration service provider reference](office-csp.md)

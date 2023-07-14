@@ -1,25 +1,12 @@
 ---
 title: How Smart Card Sign-in Works in Windows
 description: This topic for IT professional provides links to resources about the implementation of smart card technologies in the Windows operating system.
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.collection:
-  - M365-identity-device-management
-  - highpri
+ms.reviewer: ardenw
 ms.topic: article
-ms.localizationpriority: medium
 ms.date: 09/24/2021
 ---
 
 # How Smart Card Sign-in Works in Windows
-
-Applies To: Windows 10, Windows 11, Windows Server 2016 and above
 
 This topic for IT professional provides links to resources about the implementation of smart card technologies in the Windows operating system. It includes the following resources about the architecture, certificate management, and services that are related to smart card use:
 
@@ -34,3 +21,5 @@ This topic for IT professional provides links to resources about the implementat
 -   [Certificate Propagation Service](smart-card-certificate-propagation-service.md): Learn about how the certificate propagation service works when a smart card is inserted into a computer.
 
 -   [Smart Card Removal Policy Service](smart-card-removal-policy-service.md): Learn about using Group Policy to control what happens when a user removes a smart card.
+
+[!INCLUDE [smart-cards-for-windows-service](../../../../includes/licensing/smart-cards-for-windows-service.md)]

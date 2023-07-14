@@ -1,95 +1,143 @@
 ---
-title: Create a WDAC policy for fixed-workload devices using a reference computer (Windows)
-description: To create a Windows Defender Application Control (WDAC) policy for fixed-workload devices within your organization, follow this guide.
+title: Create a WDAC policy using a reference computer 
+description: To create a Windows Defender Application Control (WDAC) policy that allows all code installed on a reference computer within your organization, follow this guide.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
-ms.date: 05/03/2018
-ms.technology: windows-sec
+ms.reviewer: jogeurte
+ms.author: vinpa
+manager: aaroncz
+ms.date: 08/08/2022
+ms.technology: itpro-security
+ms.topic: article
 ---
 
-# Create a WDAC policy for fixed-workload devices using a reference computer
+# Create a WDAC policy using a reference computer
 
 **Applies to:**
 
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-This section outlines the process to create a WDAC policy for fixed-workload devices within an organization. Fixed-workload devices tend to be dedicated to a specific functional purpose and share common configuration attributes with other devices servicing the same functional role. Examples of fixed-workload devices may include Active Directory Domain Controllers, Secure Admin Workstations, pharmaceutical drug-mixing equipment, manufacturing devices, cash registers, ATMs, etc.
-
-For this example, you must initiate variables to be used during the creation process or use the full file paths in the command.
-Then create the WDAC policy by scanning the system for installed applications.
-The policy file is converted to binary format when it gets created so that Windows can interpret it.
-
-## Overview of the process of creating Windows Defender Application Control policies
-
-A common system imaging practice in today’s IT organization is to establish a “golden” image as a reference for what an ideal system should look like, and then use that image to clone additional company assets. WDAC policies follow a similar methodology, that begins with the establishment of a golden computer. As with imaging, you can have multiple golden computers based on model, department, application set, and so on. Although the thought process around the creation of WDAC policies is similar to imaging, these policies should be maintained independently. Assess the necessity of additional WDAC policies based on what should be allowed to be installed and run and for whom. For more details on doing this assessment, see the [WDAC Design Guide](windows-defender-application-control-design-guide.md).
-
-Optionally, WDAC can align with your software catalog and any IT department–approved applications. One straightforward method to implement WDAC is to use existing images to create one master WDAC policy. You do so by creating a WDAC policy from each image, and then by merging the policies. This way, what is installed on all of those images will be allowed to run, if the applications are installed on a computer based on a different image. Alternatively, you may choose to create a base applications policy and add policies based on the computer’s role or department. Organizations have a choice of how their policies are created, merged, or serviced, and managed.
-
-If you plan to use an internal CA to sign catalog files or WDAC policies, see the steps in [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md).
+This section outlines the process to create a Windows Defender Application Control (WDAC) policy **using a reference computer** that is already configured with the software you want to allow. You can use this approach for fixed-workload devices that are dedicated to a specific functional purpose and share common configuration attributes with other devices servicing the same functional role. Examples of fixed-workload devices may include Active Directory Domain Controllers, Secure Admin Workstations, pharmaceutical drug-mixing equipment, manufacturing devices, cash registers, ATMs, etc. This approach can also be used to turn on WDAC on systems "in the wild" and you want to minimize the potential impact on users' productivity.
 
 > [!NOTE]
-> Make sure the reference computer is virus and malware-free, and install any software you want to be scanned before creating the WDAC policy.
+> Some of the Windows Defender Application Control options described in this topic are only available on Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's WDAC policies, consider whether your managed clients can use all or some of these features and assess the impact for any features that may be unavailable on your clients. You may need to adapt this guidance to meet your specific organization's needs.
 
-Each installed software application should be validated as trustworthy before you create a policy.
-We recommend that you review the reference computer for software that can load arbitrary DLLs and run code or scripts that could render the PC more vulnerable.
-Examples include software aimed at development or scripting such as msbuild.exe (part of Visual Studio and the .NET Framework) which can be removed if you do not want to run scripts.
-You can remove or disable such software on the reference computer.
+As described in [common Windows Defender Application Control deployment scenarios](types-of-devices.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
 
+**Alice Pena** is the IT team lead tasked with the rollout of WDAC.
 
+## Create a custom base policy using a reference device
 
-To create a WDAC policy, copy each of the following commands into an elevated Windows PowerShell session, in order:
+Alice previously created a policy for the organization's fully managed end-user devices. She now wants to use WDAC to protect Lamna's critical infrastructure servers. Lamna's imaging practice for infrastructure systems is to establish a “golden” image as a reference for what an ideal system should look like, and then use that image to clone more company assets. Alice decides to use these same "golden" image systems to create the WDAC policies, which will result in separate custom base policies for each type of infrastructure server. As with imaging, she'll have to create policies from multiple golden computers based on model, department, application set, and so on.
 
-1. Initialize variables that you will use.
+> [!NOTE]
+> Make sure the reference computer is virus and malware-free, and install any software you want to be scanned before creating the WDAC policy. <br><br> Each installed software application should be validated as trustworthy before you create a policy. <br><br> We recommend that you review the reference computer for software that can load arbitrary DLLs and run code or scripts that could render the PC more vulnerable. Examples include software aimed at development or scripting such as msbuild.exe (part of Visual Studio and the .NET Framework) which can be removed if you don't want to run scripts. You can remove or disable such software on the reference computer.
+
+Alice identifies the following key factors to arrive at the "circle-of-trust" for Lamna's critical infrastructure servers:
+
+- All devices are running Windows Server 2019 or above;
+- All apps are centrally managed and deployed;
+- No interactive users.
+
+Based on the above, Alice defines the pseudo-rules for the policy:
+
+1. **“Windows works”** rules that authorize:
+   - Windows
+   - WHQL (third-party kernel drivers)
+   - Windows Store signed apps
+
+2. Rules for **scanned files** that authorize all pre-existing app binaries found on the device
+
+To create the WDAC policy, Alice runs each of the following commands in an elevated Windows PowerShell session, in order:
+
+1. Initialize variables.
 
    ```powershell
    $PolicyPath=$env:userprofile+"\Desktop\"
    $PolicyName="FixedWorkloadPolicy_Audit"
-   $WDACPolicy=$PolicyPath+$PolicyName+".xml"
-   $WDACPolicyBin=$PolicyPath+$PolicyName+".bin"
+   $LamnaServerPolicy=$PolicyPath+$PolicyName+".xml"
+   $DefaultWindowsPolicy=$env:windir+"\schemas\CodeIntegrity\ExamplePolicies\DefaultWindows_Audit.xml"
+   ```
 
 2. Use [New-CIPolicy](/powershell/module/configci/new-cipolicy) to create a new WDAC policy by scanning the system for installed applications:
 
    ```powershell
-   New-CIPolicy -Level PcaCertificate -FilePath $WDACPolicy –UserPEs 3> CIPolicyLog.txt 
+   New-CIPolicy -FilePath $LamnaServerPolicy -Level SignedVersion -Fallback FilePublisher,FileName,Hash -ScanPath c:\ -UserPEs -MultiplePolicyFormat -OmitPaths c:\Windows,'C:\Program Files\WindowsApps\',c:\windows.old\,c:\users\ 3> CIPolicyLog.txt
    ```
 
    > [!Note]
-   > 
-   > - When you specify the **-UserPEs** parameter (to include user mode executables in the scan), rule option **0 Enabled:UMCI** is automatically added to the WDAC policy. In contrast, if you do not specify **-UserPEs**, the policy will be empty of user mode executables and will only have rules for kernel mode binaries like drivers, in other words, the allow list will not include applications. If you create such a policy and later add rule option **0 Enabled:UMCI**, all attempts to start applications will cause a response from Windows Defender Application Control. In audit mode, the response is logging an event, and in enforced mode, the response is blocking the application. 
-   > - You can add the **-MultiplePolicyFormat** parameter when creating policies which will be deployed to computers which are running Windows build 1903+. For more information about multiple policies, see [Deploy multiple Windows Defender Application Control policies](deploy-multiple-windows-defender-application-control-policies.md).
+   >
    > - You can add the **-Fallback** parameter to catch any applications not discovered using the primary file rule level specified by the **-Level** parameter. For more information about file rule level options, see [Windows Defender Application Control file rule levels](select-types-of-rules-to-create.md).
-   > 
    > - To specify that the WDAC policy scan only a specific drive, include the **-ScanPath** parameter followed by a path. Without this parameter, the tool will scan the C-drive by default.
-   > 
+   > - When you specify the **-UserPEs** parameter (to include user mode executables in the scan), rule option **0 Enabled:UMCI** is automatically added to the WDAC policy. If you do not specify **-UserPEs**, the policy will be empty of user mode executables and will only have rules for kernel mode binaries like drivers. In other words, the allow list will not include applications. If you create such a policy and later add rule option **0 Enabled:UMCI**, all attempts to start applications will cause a response from Windows Defender Application Control. In audit mode, the response is logging an event, and in enforced mode, the response is blocking the application.
+   > - To create a policy for Windows 10 1903 and above, including support for supplemental policies, use **-MultiplePolicyFormat**.
+   > - To specify a list of paths to exclude from the scan, use the **-OmitPaths** option and supply a comma-delimited list of paths.
    > - The preceding example includes `3> CIPolicylog.txt`, which redirects warning messages to a text file, **CIPolicylog.txt**.
 
-3. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the WDAC policy to a binary format:
+3. Merge the new policy with the WindowsDefault_Audit policy to ensure all Windows binaries and kernel drivers will load.
+
+      ```powershell
+      Merge-CIPolicy -OutputFilePath $LamnaServerPolicy -PolicyPaths $LamnaServerPolicy,$DefaultWindowsPolicy
+      ```
+
+4. Give the new policy a descriptive name, and initial version number:
+
+      ```powershell
+      Set-CIPolicyIdInfo -FilePath $LamnaServerPolicy -PolicyName $PolicyName
+      Set-CIPolicyVersion -FilePath $LamnaServerPolicy -Version "1.0.0.0"
+      ```
+
+5. Modify the merged policy to set policy rules:
+
+      ```powershell
+      Set-RuleOption -FilePath $LamnaServerPolicy -Option 3 # Audit Mode
+      Set-RuleOption -FilePath $LamnaServerPolicy -Option 6 # Unsigned Policy
+      Set-RuleOption -FilePath $LamnaServerPolicy -Option 9 # Advanced Boot Menu
+      Set-RuleOption -FilePath $LamnaServerPolicy -Option 12 # Enforce Store Apps
+      Set-RuleOption -FilePath $LamnaServerPolicy -Option 16 # No Reboot
+      Set-RuleOption -FilePath $LamnaServerPolicy -Option 17 # Allow Supplemental
+      Set-RuleOption -FilePath $LamnaServerPolicy -Option 19 # Dynamic Code Security
+      ```
+
+6. If appropriate, add more signer or file rules to further customize the policy for your organization.
+
+7. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the WDAC policy to a binary format:
 
    ```powershell
-   ConvertFrom-CIPolicy $WDACPolicy $WDACPolicyBin
+   [xml]$LamnaServerPolicyXML = Get-Content $LamnaServerPolicy
+   $PolicyId = $LamnaServerPolicyXML.SiPolicy.PolicyId
+   $LamnaServerPolicyBin = $PolicyPath+$PolicyId+".cip"
+   ConvertFrom-CIPolicy $LamnaServerPolicy $LamnaServerPolicyBin
    ```
 
-After you complete these steps, the WDAC binary file ($WDACPolicyBin) and original .xml file ($WDACPolicy) will be available on your desktop. You can use the binary file as a WDAC policy or sign it for additional security.
+8. Upload the base policy XML and the associated binary to a source control solution such as [GitHub](https://github.com/) or a document management solution such as [Office 365 SharePoint](https://products.office.com/sharepoint/collaboration).
 
-> [!NOTE]
-> We recommend that you keep the original .xml file of the policy for use when you need to merge the WDAC policy with another policy or update its rule options. Alternatively, you would have to create a new policy from a new scan for servicing. For more information about how to merge WDAC policies, see [Merge Windows Defender Application Control policies](merge-windows-defender-application-control-policies.md).
+Alice now has an initial policy for Lamna's critical infrastructure servers that is ready to deploy in audit mode.
 
-We recommend that every WDAC policy be run in audit mode before being enforced. Doing so allows administrators to discover any issues with the policy without receiving error messages. For information about how to audit a WDAC policy, see [Audit Windows Defender Application Control policies](audit-windows-defender-application-control-policies.md).
+## Create a custom base policy to minimize user impact on in-use client devices
 
+Alice previously created a policy for the organization's fully managed devices. Alice has included the fully managed device policy as part of Lamna's device build process so all new devices now begin with WDAC enabled. She's preparing to deploy the policy to systems that are already in use, but is worried about causing disruption to users' productivity. To minimize that risk, Alice decides to take a different approach for those systems. She'll continue to deploy the fully managed device policy in audit mode to those devices, but for enforcement mode she'll merge the fully managed device policy rules with a policy created by scanning the device for all previously installed software. In this way, each device is treated as its own "golden" system.
 
+Alice identifies the following key factors to arrive at the "circle-of-trust" for Lamna's fully managed in-use devices:
+
+- Everything described for Lamna's [Fully Managed Devices](create-wdac-policy-for-fully-managed-devices.md);
+- Users have installed apps that they need to continue to run.
+
+Based on the above, Alice defines the pseudo-rules for the policy:
+
+1. Everything included in the Fully Managed Devices policy
+2. Rules for **scanned files** that authorize all pre-existing app binaries found on the device
+
+For Lamna's existing, in-use devices, Alice deploys a script along with the Fully Managed Devices policy XML (not the converted WDAC policy binary). The script then generates a custom policy locally on the client as described in the previous section, but instead of merging with the DefaultWindows policy, the script merges with Lamna's Fully Managed Devices policy. Alice also modifies the steps above to match the requirements of this different use case.

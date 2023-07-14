@@ -1,26 +1,29 @@
 ---
-title: Password Policy (Windows 10)
+title: Password Policy 
 description: An overview of password policies for Windows and links to information for each policy setting.
 ms.assetid: aec1220d-a875-4575-9050-f02f9c54a3b6
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - highpri
+  - tier3
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Password Policy
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 An overview of password policies for Windows and links to information for each policy setting.

@@ -1,18 +1,14 @@
 ---
 title: Windows as a service
-ms.prod: w10 
-ms.topic: landing-page
-ms.manager: laurawi
-audience: itpro
-itproauthor: jaimeo
-author: jaimeo
-ms.author: jaimeo
-description: Discover the latest news articles, videos, and podcasts about Windows as a service. Find resources for using Windows as a service within your organization. 
-ms.audience: itpro
-ms.reviewer: 
-manager: laurawi
+ms.prod: windows-client
+ms.topic: article
+author: mestew
+ms.author: mstewart
+description: Discover the latest news articles, videos, and podcasts about Windows as a service. Find resources for using Windows as a service within your organization.
+manager: aaroncz
 ms.localizationpriority: high
-ms.collection: M365-modern-desktop
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Windows as a service
@@ -75,7 +71,7 @@ Learn more about Windows as a service and its value to your organization.
 
 [What's new in Windows 10 deployment](../deploy-whats-new.md)
 
-[How Microsoft IT deploys Windows 10](https://channel9.msdn.com/events/Ignite/2015/BRK3303)</font>
+[Windows 10 deployment scenarios](/windows/deployment/windows-10-deployment-scenarios)</font>
 
 ## Plan
 
@@ -105,12 +101,6 @@ Secure your organization's deployment investment.
 
 [Configure Windows Update for Business](waas-configure-wufb.md)
 
-[Express update delivery](waas-optimize-windows-10-updates.md#express-update-delivery)
+[Express update delivery](../do/waas-optimize-windows-10-updates.md#express-update-delivery)
 
 [Windows 10 deployment considerations](../planning/windows-10-deployment-considerations.md)
-
-
-## Microsoft Ignite 2018
-<img src="images/ignite-land.jpg" alt="Ignite" width="640" height="320"/>
-
-Looking to learn more? These informative session replays from Microsoft Ignite 2018 (complete with downloadable slide decks) can provide some great insights on Windows as a service. See [MyIgnite - Session catalog](https://myignite.techcommunity.microsoft.com/sessions).

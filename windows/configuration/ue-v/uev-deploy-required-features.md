@@ -1,16 +1,15 @@
 ---
 title: Deploy required UE-V features
-description: Learn how to install and configure User Experience Virtualization (UE-V) features, for example a network share that stores and retrieves user settings.
-author: greg-lindsay
-ms.pagetype: mdop, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.prod: w10
+description: Learn how to install and configure User Experience Virtualization (UE-V) features, for example, a network share that stores and retrieves user settings.
+author: aczechowski
+ms.prod: windows-client
+ms.collection: tier3
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-configure
 ---
 
 # Deploy required UE-V features
@@ -22,7 +21,7 @@ To get up and running with User Experience Virtualization (UE-V), install and co
 
 -   [Deploy a settings storage location](#deploy-a-ue-v-settings-storage-location) that is accessible to end users.
 
-    This is a standard network share that stores and retrieves user settings.
+    This feature is a standard network share that stores and retrieves user settings.
 
 -   [Choose the configuration method for UE-V](#choose-the-configuration-method-for-ue-v)
 
@@ -32,7 +31,7 @@ To get up and running with User Experience Virtualization (UE-V), install and co
 
     With Windows 10, version 1607, UE-V is installed automatically. You need to enable the UE-V service on each user device you want to include in your UE-V environment.
 
-The topics in this section describe how to deploy these features.
+The articles in this section describe how to deploy these features.
 
 ## Deploy a UE-V Settings Storage Location
 
@@ -52,7 +51,7 @@ The settings storage location is defined by setting the SettingsStoragePath conf
 
 -   Through [Group Policy](uev-configuring-uev-with-group-policy-objects.md) settings
 
--   With the [System Center Configuration Pack](uev-configuring-uev-with-system-center-configuration-manager.md) for UE-V
+-   With the [Configuration Manager Pack](uev-configuring-uev-with-system-center-configuration-manager.md) for UE-V
 
 -   With [Windows PowerShell or Windows Management Instrumentation (WMI)](uev-administering-uev-with-windows-powershell-and-wmi.md)
 
@@ -88,10 +87,10 @@ The UE-V service dynamically creates a user-specific settings storage path, with
     | Creator/owner                | Full control                                      | Subfolders and files only |
     | Security group of UE-V users | List folder/read data, create folders/append data | This folder only          |
 
-With this configuration, the UE-V service creates and secures a Settingspackage folder while it runs in the context of the user, and grants each user permission to create folders for settings storage. Users receive full control to their Settingspackage folder while other users cannot access it.
+With this configuration, the UE-V service creates and secures a Settingspackage folder while it runs in the context of the user, and grants each user permission to create folders for settings storage. Users receive full control to their Settingspackage folder while other users can't access it.
 
 **Note**
-If you create the settings storage share on a computer running a Windows Server operating system, configure UE-V to verify that either the local Administrators group or the current user is the owner of the folder where settings packages are stored. To enable this additional security, specify this setting in the Windows Server Registry Editor:
+If you create the settings storage share on a computer running a Windows Server operating system, configure UE-V to verify that either the local Administrators group or the current user is the owner of the folder where settings packages are stored. To enable this extra security, specify this setting in the Windows Server Registry Editor:
 
 1.  Add a **REG\_DWORD** registry key named **"RepositoryOwnerCheckEnabled"** to **HKEY\_LOCAL\_MACHINE\\Software\\Microsoft\\UEV\\Agent\\Configuration**.
 
@@ -103,7 +102,7 @@ The UE-V service uses Active Directory (AD) by default if you don’t define a s
 
 ## Choose the Configuration Method for UE-V
 
-You’ll need to decide which configuration method you'll use to manage UE-V after deployment since this will be the configuration method you use to deploy the UE-V Agent. Typically, this is the configuration method that you already use in your environment, such as Windows PowerShell or Configuration Manager.
+You’ll need to decide which configuration method you'll use to manage UE-V after deployment since this configuration method is the one you'll use to deploy the UE-V Agent. Typically, this configuration method is the one that you already use in your environment, such as Windows PowerShell or Configuration Manager.
 
 You can configure UE-V before, during, or after you enable the UE-V service on user devices, depending on the configuration method that you use.
 
@@ -117,7 +116,7 @@ You can configure UE-V before, during, or after you enable the UE-V service on u
 
     Windows Server 2012 and Windows Server 2012 R2
 
--   [**Configuration Manager**](uev-configuring-uev-with-system-center-configuration-manager.md) The UE-V Configuration Pack lets you use the Compliance Settings feature of Microsoft Endpoint Manager to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
+-   [**Configuration Manager**](uev-configuring-uev-with-system-center-configuration-manager.md) The UE-V Configuration Pack lets you use the Compliance Settings feature of Microsoft Configuration Manager to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
 
 -   [**Windows PowerShell and WMI**](uev-administering-uev-with-windows-powershell-and-wmi.md) You can use scripted commands for Windows PowerShell and Windows Management Instrumentation (WMI) to modify the configuration of the UE-V service.
 
@@ -157,7 +156,7 @@ With Windows 10, version 1607 and later, the UE-V service is installed on user d
 
 
 
-## Related topics
+## Related articles
 
 [Prepare a UE-V deployment](uev-prepare-for-deployment.md)
 

@@ -1,30 +1,18 @@
 ---
-title: AppLocker processes and interactions (Windows)
+title: AppLocker processes and interactions
 description: This topic for the IT professional describes the process dependencies and interactions when AppLocker evaluates and enforces rules.
-ms.assetid: 0beec616-6040-4be7-8703-b6c919755d8e
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.author: vinpa
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+author: vinaypamnani-msft
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # AppLocker processes and interactions
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -35,7 +23,7 @@ This topic for the IT professional describes the process dependencies and intera
 
 AppLocker policies are collections of AppLocker rules that might contain any one of the enforcement settings configured. When applied, each rule is evaluated within the policy and the collection of rules is applied according to the enforcement setting and according to your Group Policy structure.
 
-The AppLocker policy is enforced on a computer through the Application Identity service, which is the engine that evaluates the policies. If the service is not running, policies will not be enforced. The Application Identity service returns the information from the binary -even if product or binary names are empty- to the results pane of the Local Security Policy snap-in.
+The AppLocker policy is enforced on a computer through the Application Identity service, which is the engine that evaluates the policies. If the service isn't running, policies won't be enforced. The Application Identity service returns the information from the binary -even if product or binary names are empty- to the results pane of the Local Security Policy snap-in.
 
 AppLocker policies are stored in a security descriptor format according to Application Identity service requirements. It uses file path, hash, or fully qualified binary name attributes to form allow or deny actions on a rule. Each rule is stored as an access control entry (ACE) in the security descriptor and contains the following information:
 
@@ -49,7 +37,7 @@ An AppLocker policy for DLLs and executable files is read and cached by kernel m
 
 ### Understanding AppLocker rules
 
-An AppLocker rule is a control placed on a file to govern whether or not it is allowed to run for a specific user or group. Rules apply to five different types, or collections, of files:
+An AppLocker rule is a control placed on a file to govern whether or not it's allowed to run for a specific user or group. Rules apply to five different types, or collections, of files:
 
 -   An executable rule controls whether a user or group can run an executable file. Executable files most often have the .exe or .com file name extensions and apply to applications.
 -   A script rule controls whether a user or group can run scripts with a file name extension of .ps1, .bat, .cmd, .vbs, and .js.
@@ -97,7 +85,7 @@ An AppLocker policy is a set of rule collections and their corresponding configu
 
 -   [Understand AppLocker enforcement settings](understand-applocker-enforcement-settings.md)
 
-    Rule enforcement is applied only to collections of rules, not individual rules. AppLocker divides the rules into four collections: executable files, Windows Installer files, scripts, and DLL files. The options for rule enforcement are **Not configured**, **Enforce rules**, or **Audit only**. Together, all AppLocker rule collections compose the application control policy, or AppLocker policy. By default, if enforcement is not configured and rules are present in a rule collection, those rules are enforced.
+    Rule enforcement is applied only to collections of rules, not individual rules. AppLocker divides the rules into four collections: executable files, Windows Installer files, scripts, and DLL files. The options for rule enforcement are **Not configured**, **Enforce rules**, or **Audit only**. Together, all AppLocker rule collections compose the application control policy, or AppLocker policy. By default, if enforcement isn't configured and rules are present in a rule collection, those rules are enforced.
 
 ### Understanding AppLocker and Group Policy
 
@@ -105,7 +93,7 @@ Group Policy can be used to create, modify, and distribute AppLocker policies in
 
 -   [Understand AppLocker rules and enforcement setting inheritance in Group Policy](understand-applocker-rules-and-enforcement-setting-inheritance-in-group-policy.md)
 
-    When Group Policy is used to distribute AppLocker policies, rule collections that are not configured will be enforced. Group Policy does not overwrite or replace rules that are already present in a linked Group Policy Object (GPO) and applies the AppLocker rules in addition to existing rules. 
+    When Group Policy is used to distribute AppLocker policies, rule collections that aren't configured will be enforced. Group Policy doesn't overwrite or replace rules that are already present in a linked Group Policy Object (GPO) and applies the AppLocker rules in addition to existing rules. 
     AppLocker processes the explicit deny rule configuration before the allow rule configuration, and for rule enforcement, the last write to the GPO is applied.
 
 ## Related topics

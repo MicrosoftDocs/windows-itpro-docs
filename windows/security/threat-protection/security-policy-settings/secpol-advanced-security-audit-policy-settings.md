@@ -1,26 +1,26 @@
 ---
-title: Advanced security audit policy settings in brief (Windows 10)
+title: Advanced security audit policy settings in brief 
 description: Provides information about the advanced security audit policy settings that are available in Windows and the audit events that they generate.
 ms.assetid: 6BF9A642-DBC3-4101-94A3-B2316C553CE3
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Advanced security audit policy settings for Windows 10
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Provides information about the advanced security audit policy settings that are available in Windows and the audit events that they generate.

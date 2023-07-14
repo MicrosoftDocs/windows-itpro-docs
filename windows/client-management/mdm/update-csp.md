@@ -1,25 +1,36 @@
 ---
 title: Update CSP
 description: Learn how the Update configuration service provider (CSP) enables IT administrators to manage and control the rollout of new updates.
-ms.assetid: F1627B57-0749-47F6-A066-677FDD3D7359
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+ms.reviewer:
+manager: aaroncz
+ms.author: vinpa
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
+author: vinaypamnani-msft
 ms.date: 02/23/2018
 ---
 
 # Update CSP
 
-The Update configuration service provider enables IT administrators to manage and control the rollout of new updates.
+The Update configuration service provider enables the IT administrators to manage and control the rollout of new updates.
+
+The table below shows the applicability of Windows:
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Windows SE|No|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+
 
 > [!NOTE]
 > The Update CSP functionality of 'ApprovedUpdates' is not recommended for managing desktop devices. To manage updates to desktop devices from Windows Update, see the [Policy CSP - Updates](policy-csp-update.md) documentation for the recommended policies.
 
-The following shows the Update configuration service provider in tree format.
+The following example shows the Update configuration service provider in tree format.
 
 ```
 ./Vendor/MSFT/Update
@@ -62,9 +73,9 @@ The following shows the Update configuration service provider in tree format.
 > [!NOTE]
 > When the RequireUpdateApproval policy is set, the MDM uses the ApprovedUpdates list to pass the approved GUIDs. These GUIDs should be a subset of the InstallableUpdates list.
 
-<p>The MDM must first present the EULA to IT and have them accept it before the update is approved. Failure to do this is a breach of legal or contractual obligations. The EULAs can be obtained from the update metadata and have their own EULA ID. It&#39;s possible for multiple updates to share the same EULA. It is only necessary to approve the EULA once per EULA ID, not one per update.
+<p>The MDM must first present the EULA to IT and have them accept it before the update is approved. Failure to do this is a breach of legal or contractual obligations. The EULAs can be obtained from the update metadata and have their own EULA ID. It's possible for multiple updates to share the same EULA. It is only necessary to approve the EULA once per EULA ID, not one per update.
 
-<p>The update approval list enables IT to approve individual updates and update classifications. Auto-approval by update classifications allows IT to automatically approve Definition Updates (i.e., updates to the virus and spyware definitions on devices) and Security Updates (i.e., product-specific updates for security-related vulnerability). The update approval list does not support the uninstallation of updates by revoking approval of already installed updates. Updates are approved based on UpdateID, and an UpdateID only needs to be approved once. An update UpdateID and RevisionNumber are part of the UpdateIdentity type. An UpdateID can be associated to several UpdateIdentity GUIDs due to changes to the RevisionNumber setting. MDM services must synchronize the UpdateIdentity of an UpdateID based on the latest RevisionNumber to get the latest metadata for an update. However, update approval is based on UpdateID.
+<p>The update approval list enables IT to approve individual updates and update classifications. Auto-approval by update classifications allows IT to automatically approve Definition Updates (that is, updates to the virus and spyware definitions on devices) and Security Updates (that is, product-specific updates for security-related vulnerability). The update approval list doesn't support the uninstallation of updates by revoking approval of already installed updates. Updates are approved based on UpdateID, and an UpdateID only needs to be approved once. An update UpdateID and RevisionNumber are part of the UpdateIdentity type. An UpdateID can be associated to several UpdateIdentity GUIDs due to changes to the RevisionNumber setting. MDM services must synchronize the UpdateIdentity of an UpdateID based on the latest RevisionNumber to get the latest metadata for an update. However, update approval is based on UpdateID.
 
 > [!NOTE]
 > For the Windows 10 build, the client may need to reboot after additional updates are added.
@@ -74,7 +85,7 @@ The following shows the Update configuration service provider in tree format.
 <a href="" id="approvedupdates-approved-update-guid"></a>**ApprovedUpdates/_Approved Update Guid_**
 <p>Specifies the update GUID.
 
-<p>To auto-approve a class of updates, you can specify the <a href="/previous-versions/windows/desktop/ff357803(v=vs.85)" data-raw-source="[Update Classifications](/previous-versions/windows/desktop/ff357803(v=vs.85))">Update Classifications</a> GUIDs. We strongly recommend to always specify the DefinitionsUpdates classification (E0789628-CE08-4437-BE74-2495B842F43B), which are used for anti-malware signatures. These are released periodically (several times a day). Some businesses may also want to auto-approve security updates to get them deployed quickly.
+<p>To auto-approve a class of updates, you can specify the <a href="/previous-versions/windows/desktop/ff357803(v=vs.85)" data-raw-source="[Update Classifications](/previous-versions/windows/desktop/ff357803(v=vs.85))">Update Classifications</a> GUIDs. We strongly recommend to always specify the DefinitionsUpdates classification (E0789628-CE08-4437-BE74-2495B842F43B), which are used for anti-malware signatures. These GUIDs are released periodically (several times a day). Some businesses may also want to auto-approve security updates to get them deployed quickly.
 
 <p>Supported operations are Get and Add.
 
@@ -130,7 +141,7 @@ The following shows the Update configuration service provider in tree format.
 <p>Supported operation is Get.
 
 <a href="" id="installableupdates"></a>**InstallableUpdates**
-<p>The updates that are applicable and not yet installed on the device. This includes updates that are not yet approved.
+<p>The updates that are applicable and not yet installed on the device. These updates include updates that aren't yet approved.
 
 <p>Supported operation is Get.
 
@@ -193,7 +204,7 @@ Added in Windows 10, version 1803. Roll back latest Quality Update, if the machi
 - Condition 2: Device must be in a Paused State
 - Condition 3: Device must have the Latest Quality Update installed on the device (Current State)
 
-If the conditions are not true, the device will not Roll Back the Latest Quality Update.
+If the conditions aren't true, the device won't Roll Back the Latest Quality Update.
 
 <a href="" id="rollback-featureupdate"></a>**Rollback/FeatureUpdate**
 Added in Windows 10, version 1803. Roll Back Latest Feature Update, if the machine meets the following conditions:
@@ -206,7 +217,7 @@ Added in Windows 10, version 1803. Roll Back Latest Feature Update, if the machi
 > [!NOTE]
 > This only works for General Availability Channel Targeted devices.
 
-If the conditions are not true, the device will not Roll Back the Latest Feature Update.
+If the conditions aren't true, the device won't Roll Back the Latest Feature Update.
 
 <a href="" id="rollback-qualityupdatestatus"></a>**Rollback/QualityUpdateStatus**
 Added in Windows 10, version 1803. Returns the result of last RollBack QualityUpdate operation.
@@ -216,4 +227,4 @@ Added in Windows 10, version 1803. Returns the result of last RollBack FeatureUp
 
 ## Related topics
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

@@ -1,31 +1,22 @@
 ---
-title: TPM recommendations (Windows)
+title: TPM recommendations 
 description: This topic provides recommendations for Trusted Platform Module (TPM) technology for Windows.
-ms.assetid: E85F11F5-4E6A-43E7-8205-672F77706561
-ms.reviewer: 
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection:
-  - M365-security-compliance
-  - highpri
+ms.prod: windows-client
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
 ms.topic: conceptual
-ms.date: 09/06/2021
+ms.date: 02/02/2023
+ms.technology: itpro-security
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
+ms.collection: 
+  - highpri
+  - tier1
 ---
 
 # TPM recommendations
-
-**Applies to**
-
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 This topic provides recommendations for Trusted Platform Module (TPM) technology for Windows.
 
@@ -33,9 +24,9 @@ For a basic feature description of TPM, see the [Trusted Platform Module Technol
 
 ## TPM design and implementation
 
-Traditionally, TPMs are discrete chips soldered to a computer’s motherboard. Such implementations allow the computer’s original equipment manufacturer (OEM) to evaluate and certify the TPM separate from the rest of the system. Discrete TPM implementations are common. However, they can be problematic for integrated devices that are small or have low power consumption. Some newer TPM implementations integrate TPM functionality into the same chipset as other platform components while still providing logical separation similar to discrete TPM chips.
+Traditionally, TPMs are discrete chips soldered to a computer's motherboard. Such implementations allow the computer's original equipment manufacturer (OEM) to evaluate and certify the TPM separate from the rest of the system. Discrete TPM implementations are common. However, they can be problematic for integrated devices that are small or have low power consumption. Some newer TPM implementations integrate TPM functionality into the same chipset as other platform components while still providing logical separation similar to discrete TPM chips.
 
-TPMs are passive: they receive commands and return responses. To realize the full benefit of a TPM, the OEM must carefully integrate system hardware and firmware with the TPM to send it commands and react to its responses. TPMs were originally designed to provide security and privacy benefits to a platform’s owner and users, but newer versions can provide security and privacy benefits to the system hardware itself. Before it can be used for advanced scenarios, however, a TPM must be provisioned. Windows automatically provisions a TPM, but if the user is planning to reinstall the operating system, he or she may need to clear the TPM before reinstalling so that Windows can take full advantage of the TPM.
+TPMs are passive: they receive commands and return responses. To realize the full benefit of a TPM, the OEM must carefully integrate system hardware and firmware with the TPM to send it commands and react to its responses. TPMs were originally designed to provide security and privacy benefits to a platform's owner and users, but newer versions can provide security and privacy benefits to the system hardware itself. Before it can be used for advanced scenarios, however, a TPM must be provisioned. Windows automatically provisions a TPM, but if the user is planning to reinstall the operating system, he or she may need to clear the TPM before reinstalling so that Windows can take full advantage of the TPM.
 
 The Trusted Computing Group (TCG) is the nonprofit organization that publishes and maintains the TPM specification. The TCG exists to develop, define, and promote vendor-neutral, global industry standards. These standards support a hardware-based root of trust for interoperable trusted computing platforms. The TCG also publishes the TPM specification as the international standard ISO/IEC 11889, using the Publicly Available Specification Submission Process that the Joint Technical Committee 1 defines between the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC).
 
@@ -61,7 +52,7 @@ TPM 2.0 products and systems have important security advantages over TPM 1.2, in
 
   - For the list of algorithms that Windows supports in the platform cryptographic storage provider, see [CNG Cryptographic Algorithm Providers](/windows/win32/seccertenroll/cng-cryptographic-algorithm-providers).
 
-  - TPM 2.0 achieved ISO standardization ([ISO/IEC 11889:2015](https://blogs.microsoft.com/cybertrust/2015/06/29/governments-recognize-the-importance-of-tpm-2-0-through-iso-adoption/)).
+  - TPM 2.0 achieved ISO standardization ([ISO/IEC 11889:2015](https://www.microsoft.com/security/blog/2015/06/29/governments-recognize-the-importance-of-tpm-2-0-through-iso-adoption)).
 
   - Use of TPM 2.0 may help eliminate the need for OEMs to make exception to standard configurations for certain countries and regions.
 

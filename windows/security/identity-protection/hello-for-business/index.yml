@@ -6,15 +6,11 @@ summary: Learn how to manage and deploy Windows Hello for Business.
 metadata:
   title: Windows Hello for Business documentation
   description: Learn how to manage and deploy Windows Hello for Business.
-  ms.prod: m365-security
   ms.topic: landing-page
-  author: mapalko
-  manager: dansimp
-  ms.author: mapalko
-  ms.date: 01/22/2021
+  ms.date: 03/09/2023  
   ms.collection:
-    - M365-identity-device-management
     - highpri
+    - tier1
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
 
@@ -64,6 +60,8 @@ landingContent:
             url: hello-identity-verification.md
       - linkListType: how-to-guide
         links:
+          - text: Hybrid Cloud Kerberos Trust Deployment
+            url: hello-hybrid-cloud-kerberos-trust.md
           - text: Hybrid Azure AD Joined Key Trust Deployment
             url: hello-hybrid-key-trust.md
           - text: Hybrid Azure AD Joined Certificate Trust Deployment

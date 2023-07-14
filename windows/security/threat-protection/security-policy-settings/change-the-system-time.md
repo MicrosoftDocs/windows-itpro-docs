@@ -1,33 +1,33 @@
 ---
-title: Change the system time - security policy setting (Windows 10)
+title: Change the system time - security policy setting 
 description: Describes the best practices, location, values, policy management, and security considerations for the Change the system time security policy setting.
 ms.assetid: f2f6637d-acbc-4352-8ca3-ec563f918e65
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Change the system time - security policy setting
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Change the system time** security policy setting.
 
 ## Reference
 
-This policy setting determines which users can adjust the time on the device's internal clock. This right allows the computer user to change the date and time associated with records in the event logs, database transactions, and the file system. This right is also required by the process that performs time synchronization. This setting does not impact the user’s ability to change the time zone or other display characteristics of the system time. For info about assigning the right to change the time zone, see [Change the time zone](change-the-time-zone.md).
+This policy setting determines which users can adjust the time on the device's internal clock. This right allows the computer user to change the date and time associated with records in the event logs, database transactions, and the file system. This right is also required by the process that performs time synchronization. This setting doesn't impact the user’s ability to change the time zone or other display characteristics of the system time. For info about assigning the right to change the time zone, see [Change the time zone](change-the-time-zone.md).
 
 Constant: SeSystemtimePrivilege
 
@@ -63,7 +63,7 @@ The following table lists the actual and effective default policy values. Defaul
 
 This section describes features, tools and guidance to help you manage this policy.
 
-A restart of the device is not required for this policy setting to be effective.
+A restart of the device isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 
@@ -89,7 +89,7 @@ Users who can change the time on a computer could cause several problems. For ex
 -   Time stamps on event log entries could be made inaccurate
 -   Time stamps on files and folders that are created or modified could be incorrect
 -   Computers that belong to a domain might not be able to authenticate themselves
--   Users who try to log on to the domain from devices with inaccurate time might not be able to authenticate.
+-   Users who try to sign in to the domain from devices with inaccurate time might not be able to authenticate.
 
 Also, because the Kerberos authentication protocol requires that the requester and authenticator have their clocks synchronized within an administrator-defined skew period, an attacker who changes a device's time may cause that computer to be unable to obtain or grant Kerberos protocol tickets.
 
@@ -100,7 +100,7 @@ The risk from these types of events is mitigated on most domain controllers, mem
 -   All PDC emulator operations masters follow the hierarchy of domains in the selection of their inbound time partner.
 -   The PDC emulator operations master at the root of the domain is authoritative for the organization. Therefore, we recommend that you configure this computer to synchronize with a reliable external time server.
 
-This vulnerability becomes much more serious if an attacker is able to change the system time and then stop the Windows Time Service or reconfigure it to synchronize with a time server that is not accurate.
+This vulnerability becomes much more serious if an attacker is able to change the system time and then stop the Windows Time Service or reconfigure it to synchronize with a time server that isn't accurate.
 
 ### Countermeasure
 
@@ -108,7 +108,7 @@ Restrict the **Change the system time** user right to users with a legitimate ne
 
 ### Potential impact
 
-There should be no impact because time synchronization for most organizations should be fully automated for all computers that belong to the domain. Computers that do not belong to the domain should be configured to synchronize with an external source, such as a web service.
+There should be no impact because time synchronization for most organizations should be fully automated for all computers that belong to the domain. Computers that don't belong to the domain should be configured to synchronize with an external source, such as a web service.
 
 ## Related topics
 

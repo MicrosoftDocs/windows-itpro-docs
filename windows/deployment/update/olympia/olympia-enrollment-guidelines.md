@@ -1,136 +1,43 @@
 ---
-title: Olympia Corp enrollment guidelines
-description: Learn about the Olympia Corp enrollment and setting up an Azure Active Directory-REGISTERED Windows 10 device or an Azure Active Directory-JOINED Windows 10 device.
-ms.author: jaimeo
+title: Olympia Corp Retirement
+description: Learn about the retirement of Olympia Corp and how to back up your data prior to October 31, 2022.
+ms.author: lizlong
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
-audience: itpro
-itproauthor: jaimeo
-author: jaimeo
-ms.reviewer: 
-manager: laurawi
-keywords: insider, trial, enterprise, lab, corporation, test
-ms.custom: seo-marvel-apr2020
+ms.prod: windows-client
+author: lizgt2000
+manager: aaroncz
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Olympia Corp
+<!-- 6472736 -->
+**Applies to**
 
-## What is Windows Insider Lab for Enterprise and Olympia Corp?
+- Windows 10
+- Windows 11
 
-Windows Insider Lab for Enterprise is intended for Windows Insiders who want to try new experimental and pre-release enterprise privacy and security features. To get the complete experience of these enterprise features, Olympia Corp, a virtual corporation has been set up to reflect the IT infrastructure of real world business. Selected customers are invited to join Olympia Corp and try these features.
+## Retirement of Olympia Corp
 
-As an Olympia user, you will have an opportunity to: 
+Olympia Corp, a virtual corporation was set up to reflect the IT infrastructure of real world businesses.</br>
+Olympia will be formally retired on October 31, 2022.</br>
+We'll begin unassigning Olympia licenses and deleting the Olympia feedback path on Feedback Hub. Olympia Corp will no longer be a part of Windows Insider Lab for Enterprise.
 
--   Use various enterprise features like Windows Information Protection (WIP), Microsoft Defender for Office 365, Windows Defender Application Guard (WDAG), and Application Virtualization (APP-V).
--   Learn how Microsoft is preparing for GDPR, as well as enabling enterprise customers to prepare for their own readiness.
--   Validate and test pre-release software in your environment.
--   Provide feedback.
--   Interact with engineering team members through a variety of communication channels.
+> [!WARNING]
+> To prevent data loss, Olympia participants need to complete the following:
+> - If you're using the provided Olympia licenses, make a back up of any data as you'll lose data once we unassign the licenses.
+> - Please remove your device from Olympia before October 31, 2022.
 
->[!Note]
->Enterprise features might have reduced or different security, privacy, accessibility, availability, and reliability standards relative to commercially provided services and software. We may change or discontinue any of the enterprise features at any time without notice.
+To remove the account from Azure Active Directory, follow the steps below:
 
-For more information about Olympia Corp, see [https://olympia.windows.com/Info/FAQ](https://olympia.windows.com/Info/FAQ).
+  1. Open the **Settings** app.
+  1. Go to **Accounts** > **Access work or school**.
+  1. Select the connected account that you want to remove, then select **Disconnect**.
+  1. To confirm device removal, select **Yes**.
 
-To request an Olympia Corp account, fill out the survey at [https://aka.ms/RegisterOlympia](https://aka.ms/RegisterOlympia).
+- After removing your account from Olympia, log in to your device using your local account.
 
-## Enrollment guidelines
-
-Welcome to Olympia Corp. Here are the steps needed to enroll.
-
-As part of Windows Insider Lab for Enterprise, you can upgrade to Windows 10 Enterprise from Windows 10 Pro. This upgrade is optional. Since certain features such as Windows Defender Application Guard are only available on Windows 10 Enterprise, we recommend you to upgrade.
-
-Choose one of the following two enrollment options:
-
-- To set up an AAD-registered device, [follow these steps](#enrollment-keep-current-edition). In this case, you log onto the device by using an existing (non-Olympia) account.
-
-- If you are running Windows 10 Pro, we recommend that you upgrade to Windows 10 Enterprise by following these steps to  [set up an Azure Active Directory-joined device](#enrollment-upgrade-to-enterprise). In this case, you will be able to log on to the device with your Olympia account.
-
-<a id="enrollment-keep-current-edition"></a>
-
-### Set up an Azure Active Directory-REGISTERED Windows 10 device
-
-This is the Bring Your Own Device (BYOD) method--your device will receive Olympia policies and features, but a new account will not be created. See [Set up Azure Active Directory registered Windows 10 devices](/azure/active-directory/device-management-azuread-registered-devices-windows10-setup) for additional information.
-
-1. Go to **Start > Settings > Accounts > Access work or school**. To see this setting, you need to have administrator rights to your device (see [local administrator](https://support.microsoft.com/windows/create-a-local-user-or-administrator-account-in-windows-20de74e0-ac7f-3502-a866-32915af2a34d)).
-
-    ![Settings -> Accounts.](images/1-1.png)
-
-2. If you are already connected to a domain, click the existing account and then click **Disconnect**. Click **Restart Later**.
-
-3. Click **Connect** and enter your **Olympia corporate account** (e.g., username@olympia.windows.com). Click **Next**.
-
-    ![Entering account information when setting up a work or school account.](images/1-3.png)
-
-4. Enter the temporary password that was sent to you. Click **Sign in**. Follow the instructions to set a new password.
-
-    > [!NOTE]
-    > Passwords should contain 8-16 characters, including at least one special character or number.
-
-    ![Update your password.](images/1-4.png)
-
-5. Read the **Terms and Conditions**. Click **Accept** to participate in the program.
-
-6. If this is the first time you are logging in, fill in the additional information to help you retrieve your account details.
-
-7. Create a PIN for signing into your Olympia corporate account.
-
-8. Go to **Start > Settings > Update & Security > Windows Insider Program**. Click on the current Windows Insider account, and click **Change**. Sign in with your **Olympia corporate account**.
-
-    > [!NOTE]
-    > To complete this step, you will need to register your account with the [Windows Insider Program for Business](https://insider.windows.com/ForBusiness).
-
-9. Open the **Feedback Hub**, and sign in with your **Olympia corporate account**.
-
-<a id="enrollment-upgrade-to-enterprise"></a>
-
-### Set up Azure Active Directory-JOINED Windows 10 device
-
--   This method will upgrade your Windows 10 Pro license to Enterprise and create a new account. See [Set up Azure Active Directory joined devices](/azure/active-directory/device-management-azuread-joined-devices-setup) for more information.
-
-    > [!NOTE]
-    > Make sure that you save your Pro license key before upgrading to the Enterprise edition. If the device gets disconnected from Olympia, you can use the Pro key to reactivate the license manually in the unlikely event that the license fails to downgrade back to Pro automatically. To reactivate manually, see [Upgrade by manually entering a product key](../../upgrade/windows-10-edition-upgrades.md#upgrade-by-manually-entering-a-product-key).
-
-1. Go to **Start > Settings > Accounts > Access work or school**. To see this setting, you need to have administrator rights to your device (see [local administrator](https://support.microsoft.com/windows/create-a-local-user-or-administrator-account-in-windows-20de74e0-ac7f-3502-a866-32915af2a34d)).
-
-    ![Settings -> Accounts.](images/1-1.png)
-
-2. If you are already connected to a domain, click the existing account and then click **Disconnect**. Click **Restart Later**.
-    
-3. Click **Connect**, then click **Join this device to Azure Active Directory**.
-
-    ![Joining device to Azure AD.](images/2-3.png)
-
-4. Enter your **Olympia corporate account** (e.g., username@olympia.windows.com). Click **Next**.
-
-    ![Set up a work or school account.](images/2-4.png)
-
-5. Enter the temporary password that was sent to you. Click **Sign in**. Follow the instructions to set a new password.
-
-    > [!NOTE]
-    > Passwords should contain 8-16 characters, including at least one special character or number.
-
-    ![Entering temporary password.](images/2-5.png)
-
-6. When asked to make sure this is your organization, verify that the information is correct. If so, click **Join**.
-
-7. If this is the first time you are signing in, fill in the additional information to help you retrieve your account details.
-
-8. Create a PIN for signing into your Olympia corporate account.
-
-9. When asked to make sure this is your organization, verify that the information is correct. If so, click **Join**.
-
-10. Restart your device.
-
-11. In the sign-in screen, choose **Other User** and sign in with your **Olympia corporate account**. Your device will upgrade to Windows 10 Enterprise.
-
-12. Go to **Start > Settings > Update & Security > Windows Insider Program**. Click on the current Windows Insider account, and click **Change**. Sign in with your **Olympia corporate account**.
-
-    > [!NOTE]
-    > To complete this step, you will need to register your account with the [Windows Insider Program for Business](https://insider.windows.com/ForBusiness).
-
-13. Open the **Feedback Hub**, and sign in with your **Olympia corporate account**.
-
->[!NOTE]
-> Your Windows 10 Enterprise license will not be renewed if your device is not connected to Olympia.
+- If you're looking for another program to join, the program we recommend is the Windows Insider Program for Business. Follow the instructions below to register:
+[Register for the Windows 10 Insider Program for Business](/windows-insider/business/register)
+<!-- https://learn.microsoft.com/en-us/windows-insider/business/register -->
+Thank you for your participation in Olympia and email Windows Insider Lab for Enterprise [olympia@microsoft.com](mailto:olympia@microsoft.com) with any questions.

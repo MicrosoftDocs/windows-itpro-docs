@@ -1,23 +1,22 @@
 ---
 title: WindowsAdvancedThreatProtection DDF file
-description: Learn how the OMA DM device description framework (DDF) for the WindowsAdvancedThreatProtection configuration service provider (CSP).
+description: Learn about the OMA DM device description framework (DDF) for the WindowsAdvancedThreatProtection configuration service provider (CSP).
 ms.assetid: 0C62A790-4351-48AF-89FD-7D46C42D13E0
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+ms.reviewer:
+manager: aaroncz
+ms.author: vinpa
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
+author: vinaypamnani-msft
 ms.date: 12/05/2017
 ---
 
 # WindowsAdvancedThreatProtection DDF file
 
-
 This topic shows the OMA DM device description framework (DDF) for the **WindowsAdvancedThreatProtection** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 The XML below is the current version for this CSP.
 
@@ -56,7 +55,7 @@ The XML below is the current version for this CSP.
               <Replace />
               <Get />
             </AccessType>
-            <Description>Set Windows Defender Advanced Threat Protection Onboarding blob and initiate onboarding to Windows Defender Advanced Threat Protection</Description>
+            <Description>Set Windows Defender Advanced Threat Protection Onboarding blob and initiate onboarding to Windows Defender Advanced Threat Protection.</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -77,7 +76,7 @@ The XML below is the current version for this CSP.
             <AccessType>
               <Get />
             </AccessType>
-            <Description>Represents Windows Defender Advanced Threat Protection Health State</Description>
+            <Description>Represents Windows Defender Advanced Threat Protection Health State.</Description>
             <DFFormat>
               <node />
             </DFFormat>
@@ -119,7 +118,7 @@ The XML below is the current version for this CSP.
                 <Get />
               </AccessType>
               <DefaultValue>false</DefaultValue>
-              <Description>Return Windows Defender Advanced Threat Protection service running state</Description>
+              <Description>Return Windows Defender Advanced Threat Protection service running state.</Description>
               <DFFormat>
                 <bool />
               </DFFormat>
@@ -141,7 +140,7 @@ The XML below is the current version for this CSP.
                 <Get />
               </AccessType>
               <DefaultValue>0</DefaultValue>
-              <Description>Return Windows Defender Advanced Threat Protection onboarding state: 0 – not onboarded; 1 - onboarded</Description>
+              <Description>Return Windows Defender Advanced Threat Protection onboarding state: 0 – not onboarded; 1 - onboarded.</Description>
               <DFFormat>
                 <int />
               </DFFormat>
@@ -184,7 +183,7 @@ The XML below is the current version for this CSP.
             <AccessType>
               <Get />
             </AccessType>
-            <Description>Represents Windows Defender Advanced Threat Protection Configuration</Description>
+            <Description>Represents Windows Defender Advanced Threat Protection Configuration.</Description>
             <DFFormat>
               <node />
             </DFFormat>
@@ -206,7 +205,7 @@ The XML below is the current version for this CSP.
                 <Replace />
               </AccessType>
               <DefaultValue>1</DefaultValue>
-              <Description>Return or set Windows Defender Advanced Threat Protection Sample Sharing configuration parameter: 0 - none, 1 - All</Description>
+              <Description>Return or set Windows Defender Advanced Threat Protection Sample Sharing configuration parameter: 0 - none, 1 - All.</Description>
               <DFFormat>
                 <int />
               </DFFormat>
@@ -229,7 +228,7 @@ The XML below is the current version for this CSP.
                 <Replace />
               </AccessType>
               <DefaultValue>1</DefaultValue>
-              <Description>Return or set Windows Defender Advanced Threat Protection diagnostic data reporting frequency. Allowed values are: 1 - Normal, 2 - Expedite</Description>
+              <Description>Return or set Windows Defender Advanced Threat Protection diagnostic data reporting frequency. Allowed values are: 1 - Normal, 2 - Expedite.</Description>
               <DFFormat>
                 <int />
               </DFFormat>
@@ -253,7 +252,7 @@ The XML below is the current version for this CSP.
               <Replace />
               <Get />
             </AccessType>
-            <Description>Set Windows Defender Advanced Threat Protection Offboarding blob and initiate offboarding</Description>
+            <Description>Set Windows Defender Advanced Threat Protection Offboarding blob and initiate offboarding.</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -274,7 +273,7 @@ The XML below is the current version for this CSP.
             <AccessType>
               <Get />
             </AccessType>
-            <Description>Represents Windows Defender Advanced Threat Protection configuration for managing role base access and device tagging</Description>
+            <Description>Represents Windows Defender Advanced Threat Protection configuration for managing role base access and device tagging.</Description>
             <DFFormat>
               <node />
             </DFFormat>
@@ -343,15 +342,4 @@ The XML below is the current version for this CSP.
 
 ## Related topics
 
-
-[Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-
+[WindowsAdvancedThreatProtection configuration service provider](windowsadvancedthreatprotection-csp.md)

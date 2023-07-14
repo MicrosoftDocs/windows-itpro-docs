@@ -1,0 +1,69 @@
+### YamlMime:Landing
+
+title: Configuration Service Provider # < 60 chars
+summary: Learn more about the configuration service provider (CSP) policies available on Windows 10 and Windows 11. # < 160 chars
+
+metadata:
+  title: Configuration Service Provider # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn more about the configuration service provider (CSP) policies available on Windows 10 and Windows 11. # Required; article description that is displayed in search results. < 160 chars.
+  ms.topic: landing-page
+  ms.technology: itpro-manage
+  ms.prod: windows-client
+  ms.collection:
+    - highpri
+    - tier1
+  ms.custom: intro-hub-or-landing
+  author: vinaypamnani-msft
+  ms.author: vinpa
+  manager: aaroncz
+  ms.date: 08/04/2022
+  localization_priority: medium
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+  # Cards and links should be based on top customer tasks or top subjects
+  # Start card title with a verb
+
+  # Card (optional)
+  - title: Configuration service provider reference
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Support scenarios
+            url: configuration-service-provider-support.md
+          - text: Device description framework (DDF) files
+            url: configuration-service-provider-ddf.md
+          - text: BitLocker CSP
+            url: bitlocker-csp.md
+          - text: DynamicManagement CSP
+            url: dynamicmanagement-csp.md
+
+
+  # Card (optional)
+  - title: Policy CSP
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Policy CSP
+            url: policy-configuration-service-provider.md
+          - text: Policy DDF file
+            url: configuration-service-provider-ddf.md
+          - text: Policy CSP - Start
+            url: policy-csp-start.md
+          - text: Policy CSP - Update
+            url: policy-csp-update.md
+
+  # Card (optional)
+  - title: Policy CSP support scenarios
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: ADMX policies
+            url: policies-in-policy-csp-admx-backed.md
+          - text: Policies supported by group policy
+            url: policies-in-policy-csp-supported-by-group-policy.md
+          - text: Policies supported by HoloLens 2
+            url: policies-in-policy-csp-supported-by-hololens2.md
+          - text: Policies supported by Microsoft Surface Hub
+            url: policies-in-policy-csp-supported-by-surface-hub.md

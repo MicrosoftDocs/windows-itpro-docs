@@ -1,35 +1,35 @@
 ---
-title: System objects Require case insensitivity for non-Windows subsystems (Windows 10)
+title: System objects Require case insensitivity for non-Windows subsystems 
 description: Best practices, security considerations and more for the security policy setting, System objects Require case insensitivity for non-Windows subsystems.
 ms.assetid: 340d6769-8f33-4067-8470-1458978d1522
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # System objects: Require case insensitivity for non-Windows subsystems
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **System objects: Require case insensitivity for non-Windows subsystems** security policy setting.
 
 ## Reference
 
-This policy setting determines whether case insensitivity is enforced for all subsystems. The Microsoft Win32 subsystem is not case sensitive; however, the kernel supports case sensitivity for other subsystems, such as Portable Operating System Interface for UNIX (POSIX). Enabling this policy setting enforces case insensitivity for all directory objects, symbolic links, and input/output (I/O) objects, including file objects. Disabling this policy setting does not allow the Win32 subsystem to become case sensitive.
+This policy setting determines whether case insensitivity is enforced for all subsystems. The Microsoft Win32 subsystem isn't case sensitive; however, the kernel supports case sensitivity for other subsystems, such as Portable Operating System Interface for UNIX (POSIX). Enabling this policy setting enforces case insensitivity for all directory objects, symbolic links, and input/output (I/O) objects, including file objects. Disabling this policy setting doesn't allow the Win32 subsystem to become case sensitive.
 
-Because Windows is case insensitive but the POSIX subsystem will support case sensitivity, if this policy setting is not enforced, it is possible for a user of that subsystem to create a file with the same name as another file but with a different mix of capital letters. That might confuse users when they try to access these files by using normal Win32 tools, because only one of the files will be available.
+Because Windows is case insensitive but the POSIX subsystem will support case sensitivity, if this policy setting isn't enforced, it's possible for a user of that subsystem to create a file with the same name as another file but with a different mix of capital letters. That convention might confuse users when they try to access these files by using normal Win32 tools, because only one of the files will be available.
 
 ### Possible values
 
@@ -39,13 +39,13 @@ Because Windows is case insensitive but the POSIX subsystem will support case se
 
 -   Disabled
 
-    Will not allow the Win32 subsystem to become case sensitive.
+    Won't allow the Win32 subsystem to become case sensitive.
 
 -   Not defined
 
 ### Best practices
 
--   Set this policy to **Enabled**. All subsystems will be forced to observe case insensitivity. However, this might confuse users who are familiar with one of the UNIX-based operating systems and are used to a case sensitive operating system.
+-   Set this policy to **Enabled**. All subsystems will be forced to observe case insensitivity. However, this insensitivity might confuse users who are familiar with one of the UNIX-based operating systems and are used to a case sensitive operating system.
 
 ### Location
 
@@ -70,7 +70,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ## Security considerations
 

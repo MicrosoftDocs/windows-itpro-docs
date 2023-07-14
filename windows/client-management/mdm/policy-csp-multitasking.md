@@ -1,98 +1,107 @@
 ---
-title: Policy CSP - Multitasking
-description: Policy CSP - Multitasking
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+title: Multitasking Policy CSP
+description: Learn more about the Multitasking Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.date: 10/30/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Multitasking-Begin -->
 # Policy CSP - Multitasking
 
-<hr/>
+<!-- Multitasking-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Multitasking-Editable-End -->
 
-<!--Policies-->
-## Multitasking policies  
+<!-- BrowserAltTabBlowout-Begin -->
+## BrowserAltTabBlowout
 
-<dl>
-  <dd>
-    <a href="#multitasking-browseralttabblowout">Multitasking/BrowserAltTabBlowout</a>
-  </dd>
- </dl>
+<!-- BrowserAltTabBlowout-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- BrowserAltTabBlowout-Applicability-End -->
 
+<!-- BrowserAltTabBlowout-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Multitasking/BrowserAltTabBlowout
+```
+<!-- BrowserAltTabBlowout-OmaUri-End -->
 
-<hr/>
+<!-- BrowserAltTabBlowout-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This setting controls the inclusion of Microsoft Edge tabs into Alt+Tab.
 
-<!--Policy-->
-<a href="" id="multitasking-browseralttabblowout"></a>**Multitasking/BrowserAltTabBlowout**  
+This can be set to show all tabs, the most recent 3 or 5 tabs, or no tabs from Microsoft Edge.
 
-<!--SupportedSKUs-->
+If this is set to show "Open windows only", the whole feature will be disabled.
+<!-- BrowserAltTabBlowout-Description-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- BrowserAltTabBlowout-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-<!--/SupportedSKUs-->
-<hr/>
+> [!WARNING]
+> This policy is currently in preview mode only. It may be used for testing purposes, but shouldn't be used in a production environment at this time.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Enabling this policy restricts the number of Microsoft Edge tabs that are allowed to appear in the Alt+Tab switcher. Alt+Tab can be configured to show all open Microsoft Edge tabs, only the five most recent tabs, only the three most recent tabs, or no tabs. Setting the policy to no tabs configures the Alt+Tab switcher to show app windows only, which is the classic Alt+Tab behavior.
 
-> [!div class = "checklist"]
-> * User
+This policy only applies to the Alt+Tab switcher. When the policy isn't enabled, the feature respects the user's setting in the Settings app.
+<!-- BrowserAltTabBlowout-Editable-End -->
 
-<hr/>
+<!-- BrowserAltTabBlowout-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Scope-->
-<!--Description-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- BrowserAltTabBlowout-DFProperties-End -->
 
-> [!Warning]
-> This policy is currently in preview mode only and will be supported in future releases. It may be used for testing purposes, but should not be used in a production environment at this time.
+<!-- BrowserAltTabBlowout-AllowedValues-Begin -->
+**Allowed values**:
 
-This policy controls the inclusion of Edge tabs into Alt+Tab.
+| Value | Description |
+|:--|:--|
+| 1 (Default) | Open windows and all tabs in Microsoft Edge. |
+| 2 | Open windows and 5 most recent tabs in Microsoft Edge. |
+| 3 | Open windows and 3 most recent tabs in Microsoft Edge. |
+| 4 | Open windows only. |
+<!-- BrowserAltTabBlowout-AllowedValues-End -->
 
-Enabling this policy restricts the number of Edge tabs that are allowed to appear in the Alt+Tab switcher. Alt+Tab can be configured to show all open Edge tabs, only the 5 most recent tabs, only the 3 most recent tabs, or no tabs. Setting the policy to no tabs configures the Alt+Tab switcher to show app windows only, which is the classic Alt+Tab behavior. 
+<!-- BrowserAltTabBlowout-GpMapping-Begin -->
+**Group policy mapping**:
 
-This policy only applies to the Alt+Tab switcher. When the policy is not enabled, the feature respects the user's setting in the Settings app.
-<!--/Description-->
+| Name | Value |
+|:--|:--|
+| Name | BrowserAltTabBlowout |
+| Friendly Name | Configure the inclusion of Microsoft Edge tabs into Alt-Tab |
+| Element Name | Pressing Alt + Tab shows. |
+| Location | User Configuration |
+| Path | Windows Components > Multitasking |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| ADMX File Name | Multitasking.admx |
+<!-- BrowserAltTabBlowout-GpMapping-End -->
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+<!-- BrowserAltTabBlowout-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- BrowserAltTabBlowout-Examples-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Configure the inclusion of Edge tabs into Alt-Tab*
--   GP name: *BrowserAltTabBlowout*
--   GP path: *Windows Components/Multitasking*
--   GP ADMX file name: *Multitasking.admx*
+<!-- BrowserAltTabBlowout-End -->
 
-<!--/ADMXBacked-->
+<!-- Multitasking-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Multitasking-CspMoreInfo-End -->
 
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- Multitasking-End -->
 
-- 1 - Open windows and all tabs in Edge.
-- 2 - Open windows and 5 most recent tabs in Edge.
-- 3 - Open windows and 3 most recent tabs in Edge.
-- 4 - Open windows only.
+## Related articles
 
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--/Policies-->
-
+[Policy configuration service provider](policy-configuration-service-provider.md)

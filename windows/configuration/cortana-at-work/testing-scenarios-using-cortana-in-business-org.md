@@ -1,18 +1,20 @@
 ---
 title: Testing scenarios using Cortana in your business or organization
 description: A list of suggested testing scenarios that you can use to test Cortana in your organization.
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-author: greg-lindsay
+ms.prod: windows-client
+ms.collection: tier3
+author: aczechowski
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
+ms.technology: itpro-configure
 ---
 
 # Testing scenarios using Cortana in your business or organization
+<!--Using include for Cortana in Windows deprecation -->
+[!INCLUDE [Deprecation of Cortana in Windows](./includes/cortana-deprecation.md)]
 
 We've come up with a list of suggested testing scenarios that you can use to test Cortana in your organization. After you complete all the scenarios, you should be able to:
 

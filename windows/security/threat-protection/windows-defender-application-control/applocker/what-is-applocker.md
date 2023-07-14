@@ -1,30 +1,18 @@
 ---
-title: What Is AppLocker (Windows)
+title: What Is AppLocker
 description: This topic for the IT professional describes what AppLocker is and how its features differ from Software Restriction Policies.
-ms.assetid: 44a8a2bb-0f83-4f95-828e-1f364fb65869
 ms.reviewer: 
-ms.author: macapara
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.author: vinpa
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: mjcaparas
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+author: vinaypamnani-msft
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # What Is AppLocker?
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -76,13 +64,11 @@ The following table compares the application control functions of Software Restr
 |User support|SRP allows users to install applications as an administrator.|AppLocker policies are maintained through Group Policy, and only the administrator of the device can update an AppLocker policy.<p>AppLocker permits customization of error messages to direct users to a Web page for help.|
 |Policy maintenance|SRP policies are updated by using the Local Security Policy snap-in or the Group Policy Management Console (GPMC).|AppLocker policies are updated by using the Local Security Policy snap-in or the GPMC.<p>AppLocker supports a small set of PowerShell cmdlets to aid in administration and maintenance.|
 |Policy management infrastructure|To manage SRP policies, SRP uses Group Policy within a domain and the Local Security Policy snap-in for a local computer.|To manage AppLocker policies, AppLocker uses Group Policy within a domain and the Local Security Policy snap-in for a local computer.|
-|Block malicious scripts|Rules for blocking malicious scripts prevents all scripts associated with the Windows Script Host from running, except those that are digitally signed by your organization.|AppLocker rules can control the following file formats: .ps1, .bat, .cmd, .vbs, and .js. In addition, you can set exceptions to allow specific files to run.|
+|Block malicious scripts|Rules for blocking malicious scripts prevent all scripts associated with the Windows Script Host from running, except those scripts that are digitally signed by your organization.|AppLocker rules can control the following file formats: .ps1, .bat, .cmd, .vbs, and .js. In addition, you can set exceptions to allow specific files to run.|
 |Manage software installation|SRP can prevent all Windows Installer packages from installing. It allows .msi files that are digitally signed by your organization to be installed.|The Windows Installer rule collection is a set of rules created for Windows Installer file types (.mst, .msi and .msp) to allow you to control the installation of files on client computers and servers.|
 |Manage all software on the computer|All software is managed in one rule set. By default, the policy for managing all software on a device disallows all software on the user's device, except software that is installed in the Windows folder, Program Files folder, or subfolders.|Unlike SRP, each AppLocker rule collection functions as an allowed list of files. Only the files that are listed within the rule collection will be allowed to run. This configuration makes it easier for administrators to determine what will occur when an AppLocker rule is applied.|
-|Different policies for different users|Rules are applied uniformly to all users on a particular device.|On a device that is shared by multiple users, an administrator can specify the groups of users who can access the installed software. Using AppLocker, an administrator can specify the user to whom a specific rule should apply.|
+|Different policies for different users|Rules are applied uniformly to all users on a particular device.|On a device that is shared by multiple users, an administrator can specify the groups of users who can access the installed software. An administrator uses AppLocker to specify the user to whom a specific rule should apply.|
 
 ## Related topics
 
 - [AppLocker technical reference](applocker-technical-reference.md)
-
-

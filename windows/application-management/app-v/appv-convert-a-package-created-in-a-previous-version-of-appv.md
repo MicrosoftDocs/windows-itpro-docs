@@ -1,16 +1,14 @@
 ---
 title: How to convert a package created in a previous version of App-V (Windows 10/11)
 description: Use the package converter utility to convert a virtual application package created in a previous version of App-V.
-author: greg-lindsay
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.prod: w10
+author: aczechowski
+ms.prod: windows-client
 ms.date: 07/10/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
 # How to convert a package created in a previous version of App-V
 
@@ -38,7 +36,7 @@ The App-V package converter will save the App-V 4.6 installation root folder and
 
 2. You can enter the following cmdlets to check or convert packages:
 
-   - **Test-AppvLegacyPackage**—This cmdlet checks packages. It will return information about any failures with the package such as missing **.sft** files, an invalid source, **.osd** file errors, or invalid package version. This cmdlet will not parse the **.sft** file or do any in-depth validation. For information about options and basic functionality for this cmdlet, using Windows PowerShell, enter the following cmdlet:
+   - **Test-AppvLegacyPackage**—This cmdlet checks packages. It will return information about any failures with the package such as missing **.sft** files, an invalid source, **.osd** file errors, or invalid package version. This cmdlet won't parse the **.sft** file or do any in-depth validation. For information about options and basic functionality for this cmdlet, using Windows PowerShell, enter the following cmdlet:
 
      ```PowerShell
      Test-AppvLegacyPackage -?
@@ -50,9 +48,9 @@ The App-V package converter will save the App-V 4.6 installation root folder and
      ConvertFrom-AppvLegacyPackage C:\contentStore C:\convertedPackages
      ```
 
-     In this cmdlet, `C:\contentStore` represents the location of the existing package and `C:\convertedPackages` is the output directory to which the resulting App-V for Windows client virtual application package file will be saved. By default, if you do not specify a new name, the old package name will be used.
+     In this cmdlet, `C:\contentStore` represents the location of the existing package and `C:\convertedPackages` is the output directory to which the resulting App-V for Windows client virtual application package file will be saved. By default, if you don't specify a new name, the old package name will be used.
 
-     Additionally, the package converter optimizes performance of packages in App-V for Windows client by setting the package to stream fault the App-V package.  This is more performant than the primary feature block and fully downloading the package. The flag **DownloadFullPackageOnFirstLaunch** allows you to convert the package and set the package to be fully downloaded by default.
+     Additionally, the package converter optimizes performance of packages in App-V for Windows client by setting the package to stream fault the App-V package.  This definition of setting is more performant than the primary feature block and fully downloading the package. The flag **DownloadFullPackageOnFirstLaunch** allows you to convert the package and set the package to be fully downloaded by default.
 
      > [!NOTE]
      > Before you specify the output directory, you must create the output directory.
@@ -71,9 +69,9 @@ The App-V package converter will save the App-V 4.6 installation root folder and
     dir .\ | Test-AppvLegacyPackage | ConvertFrom-AppvLegacyAppvPackage -Target .\ConvertedPackages
     ```
       
-    This piped example command tests packages, then passes the objects on for conversion. You can also apply a filter on packages without errors or only specify a directory which contains an **.sprj** file or pipe them to another cmdlet that adds the filtered package to the server or publishes them to the App-V client.
+    This piped example command tests packages, then passes the objects on for conversion. You can also apply a filter on packages without errors or only specify a directory that contains an **.sprj** file or pipe them to another cmdlet that adds the filtered package to the server or publishes them to the App-V client.
 
-- Batching—The Windows PowerShell command enables batching. More specifically, the cmdlets support taking a string\[\] object for the *-Source* parameter that represents a list of directory paths. This allows you to enter the following cmdlets together:
+- Batching—The Windows PowerShell command enables batching. More specifically, the cmdlets support taking a string\[\] object for the *-Source* parameter that represents a list of directory paths. This feature allows you to enter the following cmdlets together:
 
   ```PowerShell
   $packages = dir C:\contentStore
@@ -89,6 +87,6 @@ The App-V package converter will save the App-V 4.6 installation root folder and
 - Other functionality—Windows PowerShell has other built-in functionality for features such as aliases, lazy-binding, .NET Object, and many others. These features can help you create advanced scenarios for the Package Converter.
 
 
-## Related topics
+## Related articles
 
 - [Operations for App-V](appv-operations.md)

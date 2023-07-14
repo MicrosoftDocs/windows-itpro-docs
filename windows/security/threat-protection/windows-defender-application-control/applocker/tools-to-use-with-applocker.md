@@ -1,30 +1,18 @@
 ---
-title: Tools to use with AppLocker (Windows)
+title: Tools to use with AppLocker
 description: This topic for the IT professional describes the tools available to create and administer AppLocker policies.
-ms.assetid: db2b7cb3-7643-4be5-84eb-46ba551e1ad1
 ms.reviewer: 
-ms.author: macapara
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.author: vinpa
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: mjcaparas
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+author: vinaypamnani-msft
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Tools to use with AppLocker
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -49,7 +37,7 @@ The following tools can help you administer the application control policies cre
 
     You can edit an AppLocker policy by adding, changing, or removing rules by using the Group Policy Management Console (GPMC).
 
-    If you want additional features to manage AppLocker policies, such as version control, use Group Policy management software that allows you to create versions of Group Policy Objects (GPOs). An example of this type of software is the Advanced Group Policy Management feature from the Microsoft Desktop Optimization Pack.
+    If you want more features to manage AppLocker policies, such as version control, use Group Policy management software that allows you to create versions of Group Policy Objects (GPOs). An example of this type of software is the Advanced Group Policy Management feature from the Microsoft Desktop Optimization Pack.
 
 -   **Remote Server Administration Tools (RSAT)**
 

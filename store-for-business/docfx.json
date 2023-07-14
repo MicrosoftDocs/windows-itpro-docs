@@ -32,10 +32,14 @@
     "externalReference": [],
     "globalMetadata": {
       "recommendations": true,
+      "adobe-target": true,
+      "ms.collection": [
+        "tier2"
+      ],
       "breadcrumb_path": "/microsoft-store/breadcrumb/toc.json",
       "ms.author": "trudyha",
       "audience": "ITPro",
-      "ms.technology": "windows",
+      "ms.service": "store-for-business",
       "ms.topic": "article",
       "ms.date": "05/09/2017",
       "searchScope": [
@@ -57,7 +61,12 @@
         "Kellylorenebaker",
         "jborsecnik",
         "tiburd",
-        "garycentric"
+        "AngelaMotherofDragons",
+        "dstrome",
+        "v-dihans",        
+        "garycentric",
+        "v-stsavell",
+        "beccarobins"
       ]
     },
     "fileMetadata": {},

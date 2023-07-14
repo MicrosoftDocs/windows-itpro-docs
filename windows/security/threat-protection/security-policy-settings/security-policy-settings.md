@@ -1,21 +1,23 @@
 ---
-title: Security policy settings (Windows 10)
+title: Security policy settings 
 description: This reference topic describes the common scenarios, architecture, and processes for security settings.
 ms.assetid: e7ac5204-7f6c-4708-a9f6-6af712ca43b9
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - highpri
+  - tier3
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Security policy settings
@@ -23,10 +25,11 @@ ms.technology: windows-sec
 **Applies to**
 
 - Windows 10
+- Windows 11
 
 This reference topic describes the common scenarios, architecture, and processes for security settings.
 
-Security policy settings are rules that administrators configure on a computer or multiple devices for the purpose of protecting resources on a device or network. The Security Settings extension of the Local Group Policy Editor snap-in allows you to define security configurations as part of a Group Policy Object (GPO). The GPOs are linked to Active Directory containers such as sites, domains, or organizational units, and they enable you to manage security settings for multiple devices from any device joined to the domain. Security settings policies are used as part of your overall security implementation to help secure domain controllers, servers, clients, and other resources in your organization.
+Security policy settings are rules that administrators configure on a computer or multiple devices for protecting resources on a device or network. The Security Settings extension of the Local Group Policy Editor snap-in allows you to define security configurations as part of a Group Policy Object (GPO). The GPOs are linked to Active Directory containers such as sites, domains, or organizational units, and they enable you to manage security settings for multiple devices from any device joined to the domain. Security settings policies are used as part of your overall security implementation to help secure domain controllers, servers, clients, and other resources in your organization.
 
 Security settings can control:
 
@@ -44,7 +47,7 @@ For more info about managing security configurations, see [Administer security p
 
 The Security Settings extension of the Local Group Policy Editor includes the following types of security policies:
 
-- **Account Policies.** These polices are defined on devices; they affect how user accounts can interact with the computer or domain. Account policies include the following types of policies:
+- **Account Policies.** These policies are defined on devices; they affect how user accounts can interact with the computer or domain. Account policies include the following types of policies:
 
   - **Password Policy.** These policies determine settings for passwords, such as enforcement and lifetimes. Password policies are used for domain accounts.
   - **Account Lockout Policy.** These policies determine the conditions and length of time that an account will be locked out of the system. Account lockout policies are used for domain or local user accounts.
@@ -57,16 +60,18 @@ The Security Settings extension of the Local Group Policy Editor includes the fo
     > [!NOTE]
     > For devices running Windows 7 and later, we recommend to use the settings under Advanced Audit Policy Configuration rather than the Audit Policy settings under Local Policies.
 
-  - **User Rights Assignment.** Specify the users or groups that have logon rights or privileges on a device
-  - **Security Options.** Specify security settings for the computer, such as Administrator and Guest Account names; access to floppy disk drives and CD-ROM drives; installation of drivers; logon prompts; and so on.
+  - **User Rights Assignment.** Specify the users or groups that have sign-in rights or privileges on a device
+  - **Security Options.** Specify security settings for the computer, such as Administrator and Guest Account names; access to floppy disk drives and CD-ROM drives; installation of drivers; sign-in prompts; and so on.
 
 - **Windows Firewall with Advanced Security.** Specify settings to protect the device on your network by using a stateful firewall that allows you to determine which network traffic is permitted to pass between your device and the network.
 - **Network List Manager Policies.** Specify settings that you can use to configure different aspects of how networks are listed and displayed on one device or on many devices.
 - **Public Key Policies.** Specify settings to control Encrypting File System, Data Protection, and BitLocker Drive Encryption in addition to certain certificate paths and services settings.
 - **Software Restriction Policies.** Specify settings to identify software and to control its ability to run on your local device, organizational unit, domain, or site.
 - **Application Control Policies.** Specify settings to control which users or groups can run particular applications in your organization based on unique identities of files.
-- **IP Security Policies on Local Computer.** Specify settings to ensure private, secure communications over IP networks through the use of cryptographic security services. IPsec establishes trust and security from a source IP address to a destination IP address.
+- **IP Security Policies on Local Computer.** Specify settings to ensure private, secure communications over IP networks by using cryptographic security services. IPsec establishes trust and security from a source IP address to a destination IP address.
 - **Advanced Audit Policy Configuration.** Specify settings that control the logging of security events into the security log on the device. The settings under Advanced Audit Policy Configuration provide finer control over which activities to monitor as opposed to the Audit Policy settings under Local Policies.
+
+[!INCLUDE [windows-security-policy-settings-and-auditing](../../../../includes/licensing/windows-security-policy-settings-and-auditing.md)]
 
 ## Policy-based security settings management
 
@@ -87,7 +92,7 @@ Importing a security template to a GPO ensures that any accounts to which the GP
 > [!NOTE]
 > These refresh settings vary between versions of the operating system and can be configured.
 
-By using Group Policy−based security configurations in conjunction with the delegation of administration, you can ensure that specific security settings, rights, and behavior are applied to all servers and computers within an OU. This approach makes it simple to update a number of servers with any additional changes required in the future.
+By using Group Policy−based security configurations in conjunction with the delegation of administration, you can ensure that specific security settings, rights, and behavior are applied to all servers and computers within an OU. This approach makes it simple to update many servers with any other changes required in the future.
 
 ### Dependencies on other operating system technologies
 
@@ -95,7 +100,7 @@ For devices that are members of a Windows Server 2008 or later domain, securit
 
 - **Active Directory Domain Services (AD DS)**
 
-  The Windows-based directory service, AD DS, stores information about objects on a network and makes this information available to administrators and users. By using AD DS, you can view and manage network objects on the network from a single location, and users can access permitted network resources by using a single logon.
+  The Windows-based directory service, AD DS, stores information about objects on a network and makes this information available to administrators and users. By using AD DS, you can view and manage network objects on the network from a single location, and users can access permitted network resources by using a single sign in.
 
 - **Group Policy**
 
@@ -103,7 +108,7 @@ For devices that are members of a Windows Server 2008 or later domain, securit
 
 - **Domain Name System (DNS)**
 
-  A hierarchical naming system used for locating domain names on the Internet and on private TCP/IP networks. DNS provides a service for mapping DNS domain names to IP addresses, and IP addresses to domain names. This allows users, computers, and applications to query DNS to specify remote systems by fully qualified domain names rather than by IP addresses.
+  A hierarchical naming system used for locating domain names on the Internet and on private TCP/IP networks. DNS provides a service for mapping DNS domain names to IP addresses, and IP addresses to domain names. This service allows users, computers, and applications to query DNS to specify remote systems by fully qualified domain names rather than by IP addresses.
 
 - **Winlogon**
 
@@ -115,11 +120,11 @@ For devices that are members of a Windows Server 2008 or later domain, securit
 
 - **Security Accounts Manager (SAM)**
 
-  A Windows service used during the logon process. SAM maintains user account information, including groups to which a user belongs.
+  A Windows service used during the sign-in process. SAM maintains user account information, including groups to which a user belongs.
 
 - **Local Security Authority (LSA)**
 
-  A protected subsystem that authenticates and logs users onto the local system. LSA also maintains information about all aspects of local security on a system, collectively known as the Local Security Policy of the system.
+  A protected subsystem that authenticates and signs in users to the local system. LSA also maintains information about all aspects of local security on a system, collectively known as the Local Security Policy of the system.
 
 - **Windows Management Instrumentation (WMI)**
 
@@ -127,7 +132,7 @@ For devices that are members of a Windows Server 2008 or later domain, securit
 
 - **Resultant Set of Policy (RSoP)**
 
-  An enhanced Group Policy infrastructure that uses WMI in order to make it easier to plan and debug policy settings. RSoP provides public methods that expose what an extension to Group Policy would do in a what-if situation, and what the extension has done in an actual situation. This allows administrators to easily determine the combination of policy settings that apply to, or will apply to, a user or device.
+  An enhanced Group Policy infrastructure that uses WMI in order to make it easier to plan and debug policy settings. RSoP provides public methods that expose what an extension to Group Policy would do in a what-if situation, and what the extension has done in an actual situation. These public methods allow administrators to easily determine the combination of policy settings that apply to, or will apply to, a user or device.
 
 - **Service Control Manager (SCM)**
 
@@ -189,11 +194,11 @@ The following list describes these primary features of the security configuratio
 
 - **scesrv.dll**
 
-  This .dll is hosted in services.exe and runs under local system context. scesrv.dll provides core Security Configuration Manager functionality, such as import, configure, analyze, and policy propagation.
+  This .dll file is hosted in services.exe and runs under local system context. scesrv.dll provides core Security Configuration Manager functionality, such as import, configure, analyze, and policy propagation.
 
   Scesrv.dll performs configuration and analysis of various security-related system parameters by calling corresponding system APIs, including LSA, SAM, and the registry.
 
-  Scesrv.dll exposes APIs such as import, export, configure, and analyze. It checks that the request is made over LRPC (Windows XP) and fails the call if it is not.
+  Scesrv.dll exposes APIs such as import, export, configure, and analyze. It checks that the request is made over LRPC (Windows XP) and fails the call if it isn't.
 
   Communication between parts of the Security Settings extension occurs by using the following methods:
 
@@ -210,7 +215,7 @@ The following list describes these primary features of the security configuratio
 
 - **Scecli.dll**
 
-  This is the client-side interface or wrapper to scesrv.dll. scecli.dll is loaded into Wsecedit.dll to support MMC snap-ins. It is used by Setup to configure default system security and security of files, registry keys, and services installed by the Setup API .inf files.
+  This Scecli.dll is the client-side interface or wrapper to scesrv.dll. scecli.dll is loaded into Wsecedit.dll to support MMC snap-ins. It's used by Setup to configure default system security and security of files, registry keys, and services installed by the Setup API .inf files.
 
   The command-line version of the security configuration and analysis user interfaces, secedit.exe, uses scecli.dll.
 
@@ -228,7 +233,7 @@ The following list describes these primary features of the security configuratio
 
 - **Secedit.sdb**
 
-  This is a permanent system database used for policy propagation including a table of persistent settings for rollback purposes.
+  This Secedit.sdb is a permanent system database used for policy propagation including a table of persistent settings for rollback purposes.
 
 - **User databases**
 
@@ -236,7 +241,7 @@ The following list describes these primary features of the security configuratio
 
 - **.Inf Templates**
 
-  These are text files that contain declarative security settings. They are loaded into a database before configuration or analysis. Group Policy security policies are stored in .inf files on the SYSVOL folder of domain controllers, where they are downloaded (by using file copy) and merged into the system database during policy propagation.
+  These templates are text files that contain declarative security settings. They're loaded into a database before configuration or analysis. Group Policy security policies are stored in .inf files on the SYSVOL folder of domain controllers, where they're downloaded (by using file copy) and merged into the system database during policy propagation.
 
 ## <a href="" id="w2k3tr-gpssp-how-hjxe"></a>Security settings policy processes and interactions
 
@@ -244,27 +249,27 @@ For a domain-joined device, where Group Policy is administered, security setting
 
 ### <a href="" id="bkmk-gpprocessing"></a>Group Policy processing
 
-When a computer starts and a user logs on, computer policy and user policy are applied according to the following sequence:
+When a computer starts and a user signs in, computer policy and user policy are applied according to the following sequence:
 
 1. The network starts. Remote Procedure Call System Service (RPCSS) and Multiple Universal Naming Convention Provider (MUP) start.
 1. An ordered list of Group Policy Objects is obtained for the device. The list might depend on these factors:
 
    - Whether the device is part of a domain and, therefore, subject to Group Policy through Active Directory.
    - The location of the device in Active Directory.
-   - Whether the list of Group Policy Objects has changed. If the list of Group Policy Objects has not changed, no processing is done.
+   - Whether the list of Group Policy Objects has changed. If the list of Group Policy Objects hasn't changed, no processing is done.
 
-1. Computer policy is applied. These are the settings under Computer Configuration from the gathered list. This is a synchronous process by default and occurs in the following order: local, site, domain, organizational unit, child organizational unit, and so on. No user interface appears while computer policies are processed.
-1. Startup scripts run. This is hidden and synchronous by default; each script must complete or time out before the next one starts. The default time-out is 600 seconds. You can use several policy settings to modify this behavior.
-1. The user presses CTRL+ALT+DEL to log on.
-1. After the user is validated, the user profile loads; it is governed by the policy settings that are in effect.
+1. Computer policy is applied. These settings are the ones under Computer Configuration from the gathered list. This process is a synchronous one by default and occurs in the following order: local, site, domain, organizational unit, child organizational unit, and so on. No user interface appears while computer policies are processed.
+1. Startup scripts run. These scripts are hidden and synchronous by default; each script must complete or time out before the next one starts. The default time-out is 600 seconds. You can use several policy settings to modify this behavior.
+1. The user presses CTRL+ALT+DEL to sign in.
+1. After the user is validated, the user profile loads; it's governed by the policy settings that are in effect.
 1. An ordered list of Group Policy Objects is obtained for the user. The list might depend on these factors:
 
    - Whether the user is part of a domain and, therefore, subject to Group Policy through Active Directory.
    - Whether loopback policy processing is enabled, and if so, the state (Merge or Replace) of the loopback policy setting.
    - The location of the user in Active Directory.
-   - Whether the list of Group Policy Objects has changed. If the list of Group Policy Objects has not changed, no processing is done.
+   - Whether the list of Group Policy Objects has changed. If the list of Group Policy Objects hasn't changed, no processing is done.
 
-1. User policy is applied. These are the settings under User Configuration from the gathered list. This is synchronous by default and in the following order: local, site, domain, organizational unit, child organizational unit, and so on. No user interface appears while user policies are processed.
+1. User policy is applied. These settings are the ones under User Configuration from the gathered list. These settings are synchronous by default and in the following order: local, site, domain, organizational unit, child organizational unit, and so on. No user interface appears while user policies are processed.
 1. Logon scripts run. Group Policy−based logon scripts are hidden and asynchronous by default. The user object script runs last.
 1. The operating system user interface that is prescribed by Group Policy appears.
 
@@ -296,7 +301,7 @@ Group Policy settings are processed in the following order:
 
 1. **Domain.**
 
-   Processing of multiple domain-linked Group Policy Objects is synchronous and in an order you speciy.
+   Processing of multiple domain-linked Group Policy Objects is synchronous and in an order you specify.
 
 1. **Organizational units.**
 
@@ -306,7 +311,7 @@ At the level of each organizational unit in the Active Directory hierarchy, one,
 
 This order means that the local Group Policy Object is processed first, and Group Policy Objects that are linked to the organizational unit of which the computer or user is a direct member are processed last, which overwrites the earlier Group Policy Objects.
 
-This is the default processing order and administrators can specify exceptions to this order. A Group Policy Object that is linked to a site, domain, or organizational unit (not a local Group Policy Object) can be set to **Enforced** with respect to that site, domain, or organizational unit, so that none of its policy settings can be overridden. At any site, domain, or organizational unit, you can mark Group Policy inheritance selectively as **Block Inheritance**. Group Policy Object links that are set to **Enforced** are always applied, however, and they cannot be blocked. For more information see [Group Policy Basics – Part 2: Understanding Which GPOs to Apply](/archive/blogs/musings_of_a_technical_tam/group-policy-basics-part-2-understanding-which-gpos-to-apply).
+This order is the default processing order and administrators can specify exceptions to this order. A Group Policy Object that is linked to a site, domain, or organizational unit (not a local Group Policy Object) can be set to **Enforced** with respect to that site, domain, or organizational unit, so that none of its policy settings can be overridden. At any site, domain, or organizational unit, you can mark Group Policy inheritance selectively as **Block Inheritance**. Group Policy Object links that are set to **Enforced** are always applied, however, and they can't be blocked. For more information, see [Group Policy Basics – Part 2: Understanding Which GPOs to Apply](/archive/blogs/musings_of_a_technical_tam/group-policy-basics-part-2-understanding-which-gpos-to-apply).
 
 ### <a href="" id="bkmk-secpolprocessing"></a>Security settings policy processing
 
@@ -333,9 +338,9 @@ The following figure illustrates the security settings policy processing.
 
 ### Merging of security policies on domain controllers
 
-Password policies, Kerberos, and some security options are only merged from GPOs that are linked at the root level on the domain. This is done to keep those settings synchronized across all domain controllers in the domain. The following security options are merged:
+Password policies, Kerberos, and some security options are only merged from GPOs that are linked at the root level on the domain. This merging is done to keep those settings synchronized across all domain controllers in the domain. The following security options are merged:
 
-- Network Security: Force logoff when logon hours expire
+- Network Security: Force sign out when sign-in hours expire
 - Accounts: Administrator account status
 - Accounts: Guest account status
 - Accounts: Rename administrator account
@@ -349,11 +354,11 @@ If an application is installed on a primary domain controller (PDC) with operati
 
 ### When security settings are applied
 
-After you have edited the security settings policies, the settings are refreshed on the computers in the organizational unit linked to your Group Policy Object in the following instances:
+After you've edited the security settings policies, the settings are refreshed on the computers in the organizational unit linked to your Group Policy Object in the following instances:
 
 - When a device is restarted.
 - Every 90 minutes on a workstation or server and every 5 minutes on a domain controller. This refresh interval is configurable.
-- By default, Security policy settings delivered by Group Policy are also applied every 16 hours (960 minutes) even if a GPO has not changed.
+- By default, Security policy settings delivered by Group Policy are also applied every 16 hours (960 minutes) even if a GPO hasn't changed.
 
 ### Persistence of security settings policy
 
@@ -361,11 +366,11 @@ Security settings can persist even if a setting is no longer defined in the poli
 
 Security settings might persist in the following cases:
 
-- The setting has not been previously defined for the device.
+- The setting hasn't been previously defined for the device.
 - The setting is for a registry security object.
 - The settings are for a file system security object.
 
-All settings applied through local policy or through a Group Policy Object are stored in a local database on your computer. Whenever a security setting is modified, the computer saves the security setting value to the local database, which retains a history of all the settings that have been applied to the computer. If a policy first defines a security setting and then no longer defines that setting, then the setting takes on the previous value in the database. If a previous value does not exist in the database then the setting does not revert to anything and remains defined as is.
+All settings applied through local policy or through a Group Policy Object are stored in a local database on your computer. Whenever a security setting is modified, the computer saves the security setting value to the local database, which retains a history of all the settings that have been applied to the computer. If a policy first defines a security setting and then no longer defines that setting, then the setting takes on the previous value in the database. If a previous value doesn't exist in the database, then the setting doesn't revert to anything and remains defined as is.
 This behavior is sometimes referred to as "tattooing".
 
 Registry and file security settings will maintain the values applied through Group Policy until that setting is set to other values.
@@ -376,7 +381,7 @@ Both Apply Group Policy and Read permissions are required to have the settings f
 
 ### Filtering security policy
 
-By default, all GPOs have Read and Apply Group Policy both Allowed for the Authenticated Users group. The Authenticated Users group includes both users and computers. Security settings policies are computer-based. To specify which client computers will or will not have a Group Policy Object applied to them, you can deny them either the Apply Group Policy or Read permission on that Group Policy Object. Changing these permissions allows you to limit the scope of the GPO to a specific set of computers within a site, domain, or OU.
+By default, all GPOs have Read and Apply Group Policy both Allowed for the Authenticated Users group. The Authenticated Users group includes both users and computers. Security settings policies are computer-based. To specify which client computers will or won't have a Group Policy Object applied to them, you can deny them either the Apply Group Policy or Read permission on that Group Policy Object. Changing these permissions allows you to limit the scope of the GPO to a specific set of computers within a site, domain, or OU.
 
 > [!NOTE]
 > Do not use security policy filtering on a domain controller as this would prevent security policy from applying to it.
@@ -385,9 +390,9 @@ By default, all GPOs have Read and Apply Group Policy both Allowed for the Authe
 
 In some situations, you might want to migrate GPOs from one domain environment to another environment. The two most common scenarios are test-to-production migration, and production-to-production migration. The GPO copying process has implications for some types of security settings.
 
-Data for a single GPO is stored in multiple locations and in various formats; some data is contained in Active Directory and other data is stored on the SYSVOL share on the domain controllers. Certain policy data might be valid in one domain but might be invalid in the domain to which the GPO is being copied. For example, Security Identifiers (SIDs) stored in security policy settings are often domain-specific. So copying GPOs is not as simple as taking a folder and copying it from one device to another.
+Data for a single GPO is stored in multiple locations and in various formats; some data is contained in Active Directory and other data is stored on the SYSVOL share on the domain controllers. Certain policy data might be valid in one domain but might be invalid in the domain to which the GPO is being copied. For example, Security Identifiers (SIDs) stored in security policy settings are often domain-specific. So copying GPOs isn't as simple as taking a folder and copying it from one device to another.
 
-The following security policies can contain security principals and might require some additional work to successfully move them from one domain to another.
+The following security policies can contain security principals and might require some more work to successfully move them from one domain to another.
 
 - User rights assignment
 - Restricted groups
@@ -396,7 +401,7 @@ The following security policies can contain security principals and might requir
 - Registry
 - The GPO DACL, if you choose to preserve it during a copy operation
 
-To ensure that data is copied correctly, you can use Group Policy Management Console (GPMC). When migrating a GPO from one domain to another, GPMC ensures that all relevant data is properly copied. GPMC also offers migration tables, which can be used to update domain-specific data to new values as part of the migration process. GPMC hides much of the complexity involved in the migrating GPO operations, and it provides simple and reliable mechanisms for performing operations such as copy and backup of GPOs.
+To ensure that data is copied correctly, you can use Group Policy Management Console (GPMC). When there's a migration of a GPO from one domain to another, GPMC ensures that all relevant data is properly copied. GPMC also offers migration tables, which can be used to update domain-specific data to new values as part of the migration process. GPMC hides much of the complexity involved in the migrating GPO operations, and it provides simple and reliable mechanisms for performing operations such as copy and backup of GPOs.
 
 ## In this section
 

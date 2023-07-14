@@ -3,27 +3,27 @@ title: Apps in Microsoft Store for Business and Education (Windows 10)
 description: Microsoft Store for Business has thousands of apps from many different categories.
 ms.assetid: CC5641DA-3CEA-4950-AD81-1AF1AE876926
 ms.reviewer: 
-manager: dansimp
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
-author: TrudyHa
-ms.author: TrudyHa
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 07/21/2021
+ms.date: 05/24/2023
 ---
 
 # Apps in Microsoft Store for Business and Education
 
+**Applies to:**
 
-**Applies to**
-
--   Windows 10
+- Windows 10
 
 > [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
+>
+> - The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
+> - In April 2023 the Microsoft Store for Business tab was removed from Microsoft Store apps on Windows 10 and Windows 11 PCs. An interaction with existing MDM and GPO policies may lead to customers seeing errors when accessing the Microsoft Store app. For more information see [Microsoft Store for Business tab removed](manage-access-to-private-store.md#microsoft-store-for-business-tab-removed).
 
 Microsoft Store for Business and Education has thousands of apps from many different categories.
 
@@ -55,14 +55,14 @@ Line-of-business (LOB) apps are also supported using Microsoft Store. Admins can
 
 Some apps offer you the option to make in-app purchases. In-app purchases are not currently supported for apps that are acquired through Microsoft Store and distributed to employees.
 
-If an employee makes an in-app purchase, they'll make it with their personal Microsoft account and pay for it with a personal payment method. The employee will own the item purchased, and it cannot be transferred to your organization’s inventory.
+If an employee makes an in-app purchase, they'll make it with their personal Microsoft account and pay for it with a personal payment method. The employee will own the item purchased, and it cannot be transferred to your organization's inventory.
 
 ## <a href="" id="licensing-model"></a>Licensing model: online and offline licenses
 
 Microsoft Store supports two options to license apps: online and offline.
 
 ### Online licensing
-Online licensing is the default licensing model and is similar to the model used by Microsoft Store. Online licensed apps require customers and devices to connect to Microsoft Store service to acquire an app and its license. License management is enforced based on the user’s Azure AD identity and maintained by Microsoft Store as well as the management tool. By default app updates are handled by Windows Update.
+Online licensing is the default licensing model and is similar to the model used by Microsoft Store. Online licensed apps require customers and devices to connect to Microsoft Store service to acquire an app and its license. License management is enforced based on the user's Azure AD identity and maintained by Microsoft Store as well as the management tool. By default app updates are handled by Windows Update.
 
 Distribution options for online-licensed apps include the ability to:
 

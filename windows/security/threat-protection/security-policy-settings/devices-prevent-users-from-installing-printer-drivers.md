@@ -1,26 +1,26 @@
 ---
-title: Devices Prevent users from installing printer drivers (Windows 10)
+title: Devices Prevent users from installing printer drivers 
 description: Describes the best practices, location, values, and security considerations for the Devices Prevent users from installing printer drivers security policy setting.
 ms.assetid: ab70a122-f7f9-47e0-ad8c-541f30a27ec3
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 01/05/2022
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Devices: Prevent users from installing printer drivers
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Devices: Prevent users from installing printer drivers** security policy setting.
@@ -29,9 +29,9 @@ Describes the best practices, location, values, and security considerations for 
 
 For a device to print to a network printer, the driver for that network printer must be installed locally. The **Devices: Prevent users from installing printer drivers** policy setting determines who can install a printer driver as part of adding a network printer. When you set the value to **Enabled**, only Administrators and Power Users can install a printer driver as part of adding a network printer. Setting the value to **Disabled** allows any user to install a printer driver as part of adding a network printer. This setting prevents unprivileged users from downloading and installing an untrusted printer driver.
 
-This setting has no impact if you have configured a trusted path for downloading drivers. When using trusted paths, the print subsystem attempts to use the trusted path to download the driver. If the trusted path download succeeds, the driver is installed on behalf of any user. If the trusted path download fails, the driver is not installed and the network printer is not added.
+This setting has no impact if you've configured a trusted path for downloading drivers. If trusted paths are being used, the print subsystem attempts to use the trusted path to download the driver. If the trusted path download succeeds, the driver is installed on behalf of any user. If the trusted path download fails, the driver isn't installed and the network printer isn't added.
 
-Although it might be appropriate in some organizations to allow users to install printer drivers on their own workstations, this is not suitable for servers. Installing a printer driver on a server can cause the system to become less stable. Only administrators should have this user right on servers. A malicious user might deliberately try to damage the system by installing inappropriate printer drivers.
+Although it might be appropriate in some organizations to allow users to install printer drivers on their own workstations, this idea isn't suitable for servers. Installing a printer driver on a server can cause the system to become less stable. Only administrators should have this user right on servers. A malicious user might deliberately try to damage the system by installing inappropriate printer drivers.
 
 ### Possible values
 
@@ -41,7 +41,7 @@ Although it might be appropriate in some organizations to allow users to install
 
 ### Best practices
 
--   It is advisable to set **Devices: Prevent users from installing printer drivers** to Enabled. Only users in the Administrative, Power User, or Server Operator groups will be able to install printers on servers. If this policy setting is enabled, but the driver for a network printer already exists on the local computer, users can still add the network printer. This policy setting does not affect a user's ability to add a local printer.
+-   It's advisable to set **Devices: Prevent users from installing printer drivers** to Enabled. Only users in the Administrative, Power User, or Server Operator groups will be able to install printers on servers. If this policy setting is enabled, but the driver for a network printer already exists on the local computer, users can still add the network printer. This policy setting doesn't affect a user's ability to add a local printer.
 
 > [!NOTE]
 > After applying the [July 6, 2021 updates](https://support.microsoft.com/topic/kb5005010-restricting-installation-of-new-printer-drivers-after-applying-the-july-6-2021-updates-31b91c02-05bc-4ada-a7ea-183b129578a7), non-administrators, including delegated admin groups like printer operators, cannot install signed and unsigned printer drivers to a print server. By default, only administrators can install both signed and unsigned printer drivers to a print server. 
@@ -69,7 +69,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a computer restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a computer restart when they're saved locally or distributed through Group Policy.
 
 ## Security considerations
 

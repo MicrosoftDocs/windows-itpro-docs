@@ -1,17 +1,18 @@
 ---
-title: Guidelines for choosing an app for assigned access (Windows 10/11)
+title: Guidelines for choosing an app for assigned access
 description: The following guidelines may help you choose an appropriate Windows app for your assigned access experience.
-keywords: ["kiosk", "lockdown", "assigned access"]
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-author: greg-lindsay
+ms.prod: windows-client
+author: lizgt2000
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: lizlong
 ms.topic: article
 ms.reviewer: sybruckm
-manager: dansimp
-ms.collection: highpri
+manager: aaroncz
+ms.collection:
+ - highpri
+ - tier2
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Guidelines for choosing an app for assigned access (kiosk mode)
@@ -31,9 +32,9 @@ The following guidelines may help you choose an appropriate Windows app for your
 
 - Windows apps must be provisioned or installed for the assigned access account before they can be selected as the assigned access app. [Learn how to provision and install apps](/windows/client-management/mdm/enterprise-app-management#install_your_apps). 
 
-- Updating a Windows app can sometimes change the Application User Model ID (AUMID) of the app. If this happens, you must update the assigned access settings to launch the updated app, because assigned access uses the AUMID to determine which app to launch. 
+- Updating a Windows app can sometimes change the Application User Model ID (AUMID) of the app. If this change happens, you must update the assigned access settings to launch the updated app, because assigned access uses the AUMID to determine which app to launch. 
 
-- Apps that are generated using the [Desktop App Converter (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter) cannot be used as kiosk apps.
+- Apps that are generated using the [Desktop App Converter (Desktop Bridge)](/windows/uwp/porting/desktop-to-uwp-run-desktop-app-converter) can't be used as kiosk apps.
 
 
 
@@ -48,12 +49,12 @@ Avoid selecting Windows apps that are designed to launch other apps as part of t
 
 Starting with Windows 10 version 1809+, Microsoft Edge includes support for kiosk mode. [Learn how to deploy Microsoft Edge kiosk mode.](/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy)
 
-In Windows client, you can install the **Kiosk Browser** app from Microsoft to use as your kiosk app. For digital signage scenarios, you can configure **Kiosk Browser** to navigate to a URL and show only that content -- no navigation buttons, no address bar, etc. For kiosk scenarios, you can configure additional settings, such as allowed and blocked URLs, navigation buttons, and end session buttons. For example, you could configure your kiosk to show the online catalog for your store, where customers can navigate between departments and items, but aren’t allowed to go to a competitor's website. 
+In Windows client, you can install the **Kiosk Browser** app from Microsoft to use as your kiosk app. For digital signage scenarios, you can configure **Kiosk Browser** to navigate to a URL and show only that content -- no navigation buttons, no address bar, etc. For kiosk scenarios, you can configure more settings, such as allowed and blocked URLs, navigation buttons, and end session buttons. For example, you could configure your kiosk to show the online catalog for your store, where customers can navigate between departments and items, but aren't allowed to go to a competitor's website. 
 
 >[!NOTE]
 >Kiosk Browser supports a single tab. If a website has links that open a new tab, those links will not work with Kiosk Browser. Kiosk Browser does not support .pdfs.
 >
->Kiosk Browser cannot access intranet websites.
+>Kiosk Browser can't access intranet websites.
 
 
 **Kiosk Browser** must be downloaded for offline licensing using Microsoft Store For Business. You can deploy **Kiosk Browser** to devices running Windows 10, version 1803 (Pro, Business, Enterprise, and Education) and Windows 11.
@@ -104,10 +105,10 @@ URLs can include:
 - The path to the resource.
 - Query parameters.
 
-Additional guidelines for URLs:
+More guidelines for URLs:
 
 - If a period precedes the host, the policy filters exact host matches only.
-- You cannot use user:pass fields.
+- You can't use user:pass fields.
 - When both blocked URL and blocked URL exceptions apply with the same path length, the exception takes precedence.
 - The policy searches wildcards (*) last.
 - The optional query is a set of key-value and key-only tokens delimited by '&'.
@@ -120,7 +121,7 @@ The following table describes the results for different combinations of blocked 
 
 Blocked URL rule |  Block URL exception rule | Result
 --- | --- | ---
-`*` | `contoso.com`<br>`fabrikam.com` | All requests are blocked unless it is to contoso.com, fabrikam.com, or any of their subdomains.
+`*` | `contoso.com`<br>`fabrikam.com` | All requests are blocked unless it's to contoso.com, fabrikam.com, or any of their subdomains.
 `contoso.com` | `mail.contoso.com`<br>`.contoso.com`<br>`.www.contoso.com` | Block all requests to contoso.com, except for the main page and its mail subdomain.
 `youtube.com` | `youtube.com/watch?v=v1`<br>`youtube.com/watch?v=v2` | Blocks all access to youtube.com except for the specified videos (v1 and v2).
 
@@ -138,7 +139,7 @@ The following table gives examples for blocked URLs.
 |         `*:8080`         |                       Blocks all requests to port 8080.                       |
 |   `contoso.com/stuff`    |         Blocks all requests to contoso.com/stuff and its subdomains.          |
 |      `192.168.1.2`       |                        Blocks requests to 192.168.1.2.                        |
-| `youtube.com/watch?v=V1` |                       Blocks youtube video with id V1.                        |
+| `youtube.com/watch?v=V1` |                       Blocks YouTube video with id V1.                        |
 
 ### Other browsers
 
@@ -153,20 +154,20 @@ You can create your own web browser Windows app by using the WebView class. Lear
 
 ## Secure your information
 
-Avoid selecting Windows apps that may expose the information you don’t want to show in your kiosk, since kiosk usually means anonymous access and locates in a public setting like a shopping mall. For example, an app that has a file picker allows the user to gain access to files and folders on the user's system, avoid selecting these types of apps if they provide unnecessary data access.
+Avoid selecting Windows apps that may expose the information you don't want to show in your kiosk, since kiosk usually means anonymous access and locates in a public setting like a shopping mall. For example, an app that has a file picker allows the user to gain access to files and folders on the user's system, avoid selecting these types of apps if they provide unnecessary data access.
 
 ## App configuration
 
-Some apps may require additional configurations before they can be used appropriately in assigned access. For example, Microsoft OneNote requires you to set up a Microsoft account for the assigned access user account before OneNote will open in assigned access. 
+Some apps may require more configurations before they can be used appropriately in assigned access. For example, Microsoft OneNote requires you to set up a Microsoft account for the assigned access user account before OneNote will open in assigned access. 
 
 Check the guidelines published by your selected app and set up accordingly. 
 
 ## Develop your kiosk app
 
-Assigned access in Windows client leverages the new lock framework. When an assigned access user signs in, the selected kiosk app is launched above the lock screen. The kiosk app is running as an above lock screen app. 
+Assigned access in Windows client uses the new lock framework. When an assigned access user signs in, the selected kiosk app is launched above the lock screen. The kiosk app is running as an above lock screen app. 
 
 Follow the [best practices guidance for developing a kiosk app for assigned access](/windows-hardware/drivers/partnerapps/create-a-kiosk-app-for-assigned-access). 
 
 ## Test your assigned access experience
 
-The above guidelines may help you select or develop an appropriate Windows app for your assigned access experience. Once you have selected your app, we recommend that you thoroughly test the assigned access experience to ensure that your device provides a good customer experience.
+The above guidelines may help you select or develop an appropriate Windows app for your assigned access experience. Once you've selected your app, we recommend that you thoroughly test the assigned access experience to ensure that your device provides a good customer experience.

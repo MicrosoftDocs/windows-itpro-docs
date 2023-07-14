@@ -1,14 +1,13 @@
 ---
 title: CleanPC DDF
-description: This topic shows the OMA DM device description framework (DDF) for the CleanPC configuration service provider. DDF files are used only with OMA DM provisioning XML.
-ms.assetid: A2182898-1577-4675-BAE5-2A3A9C2AAC9B
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+description: Learn about the OMA DM device description framework (DDF) for the CleanPC configuration service provider. DDF files are used only with OMA DM provisioning XML.
+ms.reviewer:
+manager: aaroncz
+ms.author: vinpa
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
+author: vinaypamnani-msft
 ms.date: 12/05/2017
 ---
 
@@ -16,7 +15,7 @@ ms.date: 12/05/2017
 
 This topic shows the OMA DM device description framework (DDF) for the **CleanPC** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 The XML below is the current version for this CSP.
 
@@ -34,7 +33,7 @@ The XML below is the current version for this CSP.
             <AccessType>
                 <Get />
             </AccessType>
-            <Description>Allow removal of user installed and pre-installed applications, with option to persist user data</Description>
+            <Description>Allow removal of user installed and pre-installed applications, with option to persist user data.</Description>
             <DFFormat>
                 <node />
             </DFFormat>
@@ -51,10 +50,10 @@ The XML below is the current version for this CSP.
         <Node>
             <NodeName>CleanPCWithoutRetainingUserData</NodeName>
             <DFProperties>
-                <AccessType>                    
+                <AccessType>
                     <Exec />
                 </AccessType>
-                <Description>CleanPC operation without any retention of User data</Description>
+                <Description>CleanPC operation without any retention of User data.</Description>
                 <DFFormat>
                     <int />
                 </DFFormat>
@@ -63,7 +62,7 @@ The XML below is the current version for this CSP.
                 </Occurrence>
                 <Scope>
                     <Permanent />
-                </Scope>         
+                </Scope>
                 <DFType>
                     <MIME>text/plain</MIME>
                 </DFType>
@@ -75,7 +74,7 @@ The XML below is the current version for this CSP.
                 <AccessType>
                     <Exec />
                 </AccessType>
-                <Description>CleanPC operation with retention of User data</Description>
+                <Description>CleanPC operation with retention of User data.</Description>
                 <DFFormat>
                     <int />
                 </DFFormat>
@@ -94,12 +93,6 @@ The XML below is the current version for this CSP.
 </MgmtTree>
 ```
 
- 
+## Related topics
 
- 
-
-
-
-
-
-
+[CleanPC configuration service provider](cleanpc-csp.md)

@@ -1,23 +1,21 @@
 ---
 title: AllJoynManagement DDF
 description: Learn the OMA DM device description framework (DDF) for the AllJoynManagement configuration service provider.
-ms.assetid: 540C2E60-A041-4749-A027-BBAF0BB046E4
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+ms.reviewer:
+manager: aaroncz
+ms.author: vinpa
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
+author: vinaypamnani-msft
 ms.date: 12/05/2017
 ---
 
 # AllJoynManagement DDF
 
-
 This topic shows the OMA DM device description framework (DDF) for the **AllJoynManagement** configuration service provider. This CSP was added in Windows 10, version 1511.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -95,7 +93,7 @@ Looking for the DDF XML files? See [CSP DDF files download](configuration-servic
                         <AccessType>
                             <Get />
                         </AccessType>
-                        <Description>The set of Ports that this AllJoyn Object uses to communicate configuration settings through.  
+                        <Description>The set of Ports that this AllJoyn Object uses to communicate configuration settings through.
 
 Typically, only one port is used for communication, but it is possible that additional ports may be specified.</Description>
                         <DFFormat>
@@ -188,7 +186,7 @@ For example an AllJoyn Bridge with the Microsoft specific AllJoyn Configuration 
                 <AccessType>
                     <Get />
                 </AccessType>
-                <Description>This is the Credential Store.  An Administrator can set credentials for each AllJoyn device that requires authentication at this node.  
+                <Description>This is the Credential Store.  An Administrator can set credentials for each AllJoyn device that requires authentication at this node.
 If a SYNCML request arrives in the CSP to replace or query a configuration item on an AllJoyn Object that requires authentication, then the CSP will use the Credentials stored here during the authentication phase.
 
 </Description>
@@ -238,7 +236,7 @@ It is typically implemented as a GUID.</Description>
                             <Get />
                             <Replace />
                         </AccessType>
-                        <Description>An Alphanumeric KEY value that conforms to the AllJoyn SRP KEYX Authentication Standard</Description>
+                        <Description>An Alphanumeric KEY value that conforms to the AllJoyn SRP KEYX Authentication Standard.</Description>
                         <DFFormat>
                             <chr />
                         </DFFormat>
@@ -328,15 +326,4 @@ It is typically implemented as a GUID.</Description>
 
 ## Related topics
 
-
 [AllJoynManagement configuration service provider](alljoynmanagement-csp.md)
-
- 
-
- 
-
-
-
-
-
-

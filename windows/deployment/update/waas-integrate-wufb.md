@@ -1,14 +1,14 @@
 ---
 title: Integrate Windows Update for Business
-description: Use Windows Update for Business deployments with management tools such as Windows Server Update Services (WSUS) and Microsoft Endpoint Configuration Manager.
-ms.prod: w10
-ms.mktglfcycl: manage
-author: jaimeo
+description: Use Windows Update for Business deployments with management tools such as Windows Server Update Services (WSUS) and Microsoft Configuration Manager.
+ms.prod: windows-client
+author: mestew
 ms.localizationpriority: medium
-ms.author: jaimeo
-ms.collection: m365initiative-coredeploy
-manager: laurawi
+ms.author: mstewart
+manager: aaroncz
 ms.topic: article
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Integrate Windows Update for Business with management solutions
@@ -21,7 +21,7 @@ ms.topic: article
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
-You can integrate Windows Update for Business deployments with existing management tools such as Windows Server Update Services (WSUS) and Microsoft Endpoint Configuration Manager.
+You can integrate Windows Update for Business deployments with existing management tools such as Windows Server Update Services (WSUS) and Microsoft Configuration Manager.
 
 ## Integrate Windows Update for Business with Windows Server Update Services
 
@@ -88,7 +88,7 @@ In this example, the deferral behavior for updates to Office and other non-Windo
 >[!NOTE]
 > Because the admin enabled **Update/AllowMUUpdateService**, placing the content on WSUS was not needed for the particular device, as the device will always receive Microsoft Update content from Microsoft when configured in this manner.
 
-## Integrate Windows Update for Business with Microsoft Endpoint Configuration Manager
+## Integrate Windows Update for Business with Microsoft Configuration Manager
 
 For Windows 10, version 1607, organizations already managing their systems with a Configuration Manager solution can also have their devices configured for Windows Update for Business (that is, setting deferral policies on those devices). Such devices will be visible in the Configuration Manager console, however they will appear with a detection state of **Unknown**.
 

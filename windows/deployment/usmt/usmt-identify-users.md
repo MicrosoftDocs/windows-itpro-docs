@@ -1,66 +1,57 @@
 ---
 title: Identify Users (Windows 10)
-description: Learn how to identify users you plan to migrate, as well as how to migrate local accounts and domain accounts.
-ms.assetid: 957a4fe9-79fd-44a2-8c26-33e50f71f9de
-ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
+description: Learn how to identify users you plan to migrate, and how to migrate local accounts and domain accounts.
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
+author: frankroj
 ms.topic: article
 ms.localizationpriority: medium
+ms.technology: itpro-deploy
+ms.date: 11/01/2022
 ---
 
-# Identify Users
+# Identify users
 
-It is important to carefully consider how you plan to migrate users. By default, all users are migrated by User State Migration Tool (USMT) 5.0. You must specify which users to include by using the command line. You cannot specify users in the .xml files. For instructions on how to migrate users, see [Migrate User Accounts](usmt-migrate-user-accounts.md).
+It's important to carefully consider how you plan to migrate users. By default, all users are migrated by User State Migration Tool (USMT) 5.0. You must specify which users to include by using the command line. You can't specify users in the .xml files. For instructions on how to migrate users, see [Migrate user accounts](usmt-migrate-user-accounts.md).
 
-## In this topic
+## Migrating local accounts
 
-- [Migrating Local Accounts](#bkmk-8)
-- [Migrating Domain Accounts](#bkmk-9)
-- [Command-Line Options](#bkmk-7)
+Before migrating local accounts, be aware of the following items:
 
-## <a href="" id="bkmk-8"></a>Migrating Local Accounts
+- **You must explicitly specify that local accounts that are not on the destination computer should be migrated**. If you're migrating local accounts and the local account doesn't exist on the destination computer, you must use the `/lac` option when using the `LoadState.exe` command. If the `/lac` option isn't specified, no local user accounts will be migrated.
 
-Before migrating local accounts, note the following:
+- **Consider whether to enable user accounts that are new to the destination computer.** The `/lae` option enables the account that was created with the `/lac` option. However, if you create a disabled local account by using only the `/lac` option, a local administrator must enable the account on the destination computer.
 
-- [You must explicitly specify that local accounts that are not on the destination computer should be migrated.](#bkmk-8) If you are migrating local accounts and the local account does not exist on the destination computer, you must use the **/lac** option when using the LoadState command. If the **/lac** option is not specified, no local user accounts will be migrated.
+- **Be careful when specifying a password for local accounts.** If you create the local account with a blank password, anyone could sign in that account on the destination computer. If you create the local account with a password, the password is available to anyone with access to the USMT command-line tools.
 
-- [Consider whether to enable user accounts that are new to the destination computer.](#bkmk-8) The **/lae** option enables the account that was created with the **/lac** option. However, if you create a disabled local account by using only the **/lac** option, a local administrator must enable the account on the destination computer.
+> [!NOTE]
+> If there are multiple users on a computer, and you specify a password with the `/lac` option, all migrated users will have the same password.
 
-- [Be careful when specifying a password for local accounts.](#bkmk-8) If you create the local account with a blank password, anyone could log on to that account on the destination computer. If you create the local account with a password, the password is available to anyone with access to the USMT command-line tools.
+## Migrating domain accounts
 
->[!NOTE]
->If there are multiple users on a computer, and you specify a password with the **/lac** option, all migrated users will have the same password.
+The source and destination computers don't need to be connected to the domain for domain user profiles to be migrated.
 
-## <a href="" id="bkmk-9"></a>Migrating Domain Accounts
-
-The source and destination computers do not need to be connected to the domain for domain user profiles to be migrated.
-
-## <a href="" id="bkmk-7"></a>Command-Line Options
+## Command-line options
 
 USMT provides several options to migrate multiple users on a single computer. The following command-line options specify which users to migrate.
 
-- [Specifying users.](#bkmk-8) You can specify which users to migrate with the **/all**, **/ui**, **/uel**, and **/ue** options with both the ScanState and LoadState command-line tools.
+- **Specifying users.** You can specify which users to migrate with the `/all`, `/ui`, `/uel`, and `/ue` options with both the  **ScanState** and **LoadState** command-line tools.
 
-  >[!IMPORTANT]
-  >The **/uel** option excludes users based on the **LastModified** date of the Ntuser.dat file. The **/uel** option is not valid in offline migrations.
+  > [!IMPORTANT]
+  > The `/uel` option excludes users based on the **LastModified** date of the `Ntuser.dat` file. The `/uel` option is not valid in offline migrations.
 
-- [Moving users to another domain.](#bkmk-8) You can move user accounts to another domain using the **/md** option with the LoadState command-line tool.
+- **Moving users to another domain.** You can move user accounts to another domain using the `/md` option with the **LoadState** command-line tool.
 
-- [Creating local accounts.](#bkmk-8) You can create and enable local accounts using the **/lac** and **/lae** options with the LoadState command-line tool.
+- **Creating local accounts.** You can create and enable local accounts using the `/lac` and `/lae` options with the **LoadState** command-line tool.
 
-- [Renaming user accounts.](#bkmk-8) You can rename user accounts using the **/mu** option.
+- **Renaming user accounts.** You can rename user accounts using the `/mu` option.
 
-  >[!NOTE]
+  > [!NOTE]
   >By default, if a user name is not specified in any of the command-line options, the user will be migrated.
 
-## Related topics
+## Related articles
 
-[Determine What to Migrate](usmt-determine-what-to-migrate.md)<br>
-[ScanState Syntax](usmt-scanstate-syntax.md)<br>
-[LoadState Syntax](usmt-loadstate-syntax.md)
+- [Determine what to migrate](usmt-determine-what-to-migrate.md)
+- [ScanState syntax](usmt-scanstate-syntax.md)
+- [LoadState syntax](usmt-loadstate-syntax.md)

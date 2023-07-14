@@ -1,31 +1,25 @@
 ---
 title: Using the SUA Tool (Windows 10)
 description: The Standard User Analyzer (SUA) tool can test applications and monitor API calls to detect compatibility issues with the User Account Control (UAC) feature.
-ms.assetid: ebe52061-3816-47f7-a865-07bc5f405f03
-ms.reviewer: 
-manager: laurawi
-ms.author: greglin
-ms.prod: w10
-ms.mktglfcycl: plan
-ms.pagetype: appcompat
-ms.sitesec: library
-audience: itpro
-author: greg-lindsay
-ms.date: 04/19/2017
+manager: aaroncz
+ms.author: frankroj
+ms.prod: windows-client
+author: frankroj
+ms.date: 10/28/2022
 ms.topic: article
+ms.technology: itpro-deploy
 ---
 
 # Using the SUA Tool
 
-
 **Applies to**
 
--   Windows 10
--   Windows 8.1
--   Windows 8
--   Windows 7
--   Windows Server 2012
--   Windows Server 2008 R2
+-   Windows 10
+-   Windows 8.1
+-   Windows 8
+-   Windows 7
+-   Windows Server 2012
+-   Windows Server 2008 R2
 
 By using the Standard User Analyzer (SUA) tool, you can test your applications and monitor API calls to detect compatibility issues with the User Account Control (UAC) feature.
 
@@ -36,7 +30,6 @@ In the SUA tool, you can turn virtualization on and off. When you turn virtualiz
 In the SUA tool, you can choose to run the application as **Administrator** or as **Standard User**. Depending on your selection, you may locate different types of UAC-related issues.
 
 ## Testing an Application by Using the SUA Tool
-
 
 Before you can use the SUA tool, you must install Application Verifier. You must also install the Microsoft® .NET Framework 3.5 or later.
 
@@ -82,12 +75,3 @@ The following flowchart shows the process of using the SUA tool.
 [Applying Filters to Data in the SUA Tool](applying-filters-to-data-in-the-sua-tool.md)
 
 [Fixing Applications by Using the SUA Tool](fixing-applications-by-using-the-sua-tool.md)
-
- 
-
- 
-
-
-
-
-

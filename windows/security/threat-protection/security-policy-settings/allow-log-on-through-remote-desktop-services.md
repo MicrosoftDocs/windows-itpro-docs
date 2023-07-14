@@ -1,33 +1,33 @@
 ---
-title: Allow log on through Remote Desktop Services (Windows 10)
-description: Best practices, location, values, policy management, and security considerations for the security policy setting, Allow log on through Remote Desktop Services.
+title: Allow log on through Remote Desktop Services 
+description: Best practices, location, values, policy management, and security considerations for the security policy setting. Allow a sign-in through Remote Desktop Services.
 ms.assetid: 6267c376-8199-4f2b-ae56-9c5424e76798
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Allow log on through Remote Desktop Services
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Allow log on through Remote Desktop Services** security policy setting.
 
 ## Reference
 
-This policy setting determines which users or groups can access the logon screen of a remote device through a Remote Desktop Services connection. It is possible for a user to establish a Remote Desktop Services connection to a particular server but not be able to log on to the console of that same server.
+This policy setting determines which users or groups can access the sign-in screen of a remote device through a Remote Desktop Services connection. It's possible for a user to establish a Remote Desktop Services connection to a particular server but not be able to sign in to the console of that same server.
 
 Constant: SeRemoteInteractiveLogonRight
 
@@ -38,7 +38,7 @@ Constant: SeRemoteInteractiveLogonRight
 
 ### Best practices
 
--   To control who can open a Remote Desktop Services connection and log on to the device, add users to or remove users from the Remote Desktop Users group.
+-   To control who can open a Remote Desktop Services connection and sign in to the device, add users to or remove users from the Remote Desktop Users group.
 
 ### Location
 
@@ -66,13 +66,13 @@ This section describes different features and tools available to help you manage
 
 ### Group Policy
 
-To use Remote Desktop Services to successfully log on to a remote device, the user or group must be a member of the Remote Desktop Users or Administrators group and be granted the **Allow log on through Remote Desktop Services** right. It is possible for a user to establish an Remote Desktop Services session to a particular server, but not be able to log on to the console of that same server.
+To use Remote Desktop Services to successfully sign in to a remote device, the user or group must be a member of the Remote Desktop Users or Administrators group and be granted the **Allow log on through Remote Desktop Services** right. It's possible for a user to establish a Remote Desktop Services session to a particular server, but not be able to sign in to the console of that same server.
 
 To exclude users or groups, you can assign the **Deny log on through Remote Desktop Services** user right to those users or groups. However, be careful when you use this method because you could create conflicts for legitimate users or groups that have been allowed access through the **Allow log on through Remote Desktop Services** user right.
 
 For more information, see [Deny log on through Remote Desktop Services](deny-log-on-through-remote-desktop-services.md).
 
-A restart of the device is not required for this policy setting to be effective.
+A restart of the device isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 
@@ -89,11 +89,11 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-Any account with the **Allow log on through Remote Desktop Services** user right can log on to the remote console of the device. If you do not restrict this user right to legitimate users who must log on to the console of the computer, unauthorized users could download and run malicious software to elevate their privileges.
+Any account with the **Allow log on through Remote Desktop Services** user right can sign in to the remote console of the device. If you don't restrict this user right to legitimate users who must sign in to the console of the computer, unauthorized users could download and run malicious software to elevate their privileges.
 
 ### Countermeasure
 
-For domain controllers, assign the **Allow log on through Remote Desktop Services** user right only to the Administrators group. For other server roles and devices, add the Remote Desktop Users group. For servers that have the Remote Desktop (RD) Session Host role service enabled and do not run in Application Server mode, ensure that only authorized IT personnel who must manage the computers remotely belong to these groups.
+For domain controllers, assign the **Allow log on through Remote Desktop Services** user right only to the Administrators group. For other server roles and devices, add the Remote Desktop Users group. For servers that have the Remote Desktop (RD) Session Host role service enabled and don't run in Application Server mode, ensure that only authorized IT personnel who must manage the computers remotely belong to these groups.
 
 > **Caution:**  For RD Session Host servers that run in Application Server mode, ensure that only users who require access to the server have accounts that belong to the Remote Desktop Users group because this built-in group has this logon right by default.
  
@@ -101,7 +101,7 @@ Alternatively, you can assign the **Deny log on through Remote Desktop Services*
 
 ### Potential impact
 
-Removal of the **Allow log on through Remote Desktop Services** user right from other groups (or membership changes in these default groups) could limit the abilities of users who perform specific administrative roles in your environment. You should confirm that delegated activities are not adversely affected.
+Removal of the **Allow log on through Remote Desktop Services** user right from other groups (or membership changes in these default groups) could limit the abilities of users who perform specific administrative roles in your environment. You should confirm that delegated activities aren't adversely affected.
 
 ## Related topics
 

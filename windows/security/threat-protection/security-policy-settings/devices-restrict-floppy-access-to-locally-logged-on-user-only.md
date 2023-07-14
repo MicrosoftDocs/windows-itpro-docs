@@ -1,26 +1,26 @@
 ---
-title: Devices Restrict floppy access to locally logged-on user only (Windows 10)
+title: Devices Restrict floppy access to locally logged-on user only 
 description: Describes the best practices, location, values, and security considerations for the Devices Restrict floppy access to locally logged-on user only security policy setting.
 ms.assetid: 92997910-da95-4c03-ae6f-832915423898
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Devices: Restrict floppy access to locally logged-on user only
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Devices: Restrict floppy access to locally logged-on user only** security policy setting.
@@ -29,9 +29,9 @@ Describes the best practices, location, values, and security considerations for 
 
 This policy setting determines whether removable floppy disks are accessible to local and remote users simultaneously. Enabling this policy setting allows only the interactively logged-on user to access removable floppy disks. If this policy setting is enabled and no one is logged on interactively, the floppy disk can be accessed over the network.
 
-The security benefit of enabling this policy setting is small because it only prevents network users from accessing the floppy disk drive when someone is logged on to the local console of the system at the same time. Additionally, floppy disk drives are not automatically made available as network shared drives; you must deliberately choose to share the drive. This becomes important when you are installing software or copying data from a floppy disk and they do not want network users to be able to execute the applications or view the data.
+The security benefit of enabling this policy setting is small because it only prevents network users from accessing the floppy disk drive when someone is logged on to the local console of the system at the same time. Additionally, floppy disk drives aren't automatically made available as network shared drives; you must deliberately choose to share the drive. This setting to share becomes important when you're installing software or copying data from a floppy disk and they don't want network users to be able to execute the applications or view the data.
 
-If this policy setting is enabled, users who connect to the server over the network will not be able to use any floppy disk drives that are installed on the server when anyone is logged on to the local console of the server.
+If this policy setting is enabled, users who connect to the server over the network won't be able to use any floppy disk drives that are installed on the server when anyone is logged on to the local console of the server.
 
 ### Possible values
 
@@ -66,7 +66,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ## Security considerations
 
@@ -74,7 +74,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-A remote user could potentially access a mounted floppy disk that contains sensitive information. This risk is small because floppy disk drives are not automatically shared; administrators must deliberately choose to share the drive. However, you can deny network users the ability to view data or run applications from removable media on the server.
+A remote user could potentially access a mounted floppy disk that contains sensitive information. This risk is small because floppy disk drives aren't automatically shared; administrators must deliberately choose to share the drive. However, you can deny network users the ability to view data or run applications from removable media on the server.
 
 ### Countermeasure
 
@@ -82,7 +82,7 @@ Enable the **Devices: Restrict floppy access to locally logged-on user only** se
 
 ### Potential impact
 
-Users who connect to the server over the network cannot use any floppy disk drives that are installed on the device when anyone is logged on to the local console of the server. System tools that require access to floppy disk drives fail. For example, the Volume Shadow Copy service attempts to access all CD-ROM and floppy disk drives that are present on the computer when it initializes, and if the service cannot access one of these drives, it fails. This condition causes the Windows Backup tool to fail if volume shadow copies were specified for the backup job. Any non-Microsoft backup products that use volume shadow copies also fail.
+Users who connect to the server over the network can't use any floppy disk drives that are installed on the device when anyone is logged on to the local console of the server. System tools that require access to floppy disk drives fail. For example, the Volume Shadow Copy service attempts to access all CD-ROM and floppy disk drives that are present on the computer when it initializes, and if the service can't access one of these drives, it fails. This condition causes the Windows Backup tool to fail if volume shadow copies were specified for the backup job. Any non-Microsoft backup products that use volume shadow copies also fail.
 
 ## Related topics
 

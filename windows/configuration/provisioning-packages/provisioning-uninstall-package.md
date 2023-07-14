@@ -1,15 +1,15 @@
 ---
 title: Uninstall a provisioning package - reverted settings (Windows 10/11)
 description: This article lists the settings that are reverted when you uninstall a provisioning package on Windows 10/11 desktop client devices.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: greg-lindsay
-ms.author: greglin
+ms.prod: windows-client
+author: lizgt2000
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: gkomatsu
-manager: dansimp
+manager: aaroncz
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Settings changed when you uninstall a provisioning package
@@ -64,13 +64,11 @@ Here is the list of revertible settings based on configuration service providers
 [CMPolicyEnterprise CSP](/windows/client-management/mdm/cmpolicyenterprise-csp)   
 [EMAIL2 CSP](/windows/client-management/mdm/email2-csp)   
 [EnterpriseAPN CSP](/windows/client-management/mdm/enterpriseapn-csp)   
-[EnterpriseAppManagement CSP](/windows/client-management/mdm/enterpriseappmanagement-csp)   
 [EnterpriseDesktopAppManagement CSP](/windows/client-management/mdm/enterprisedesktopappmanagement-csp)   
 [EnterpriseModernAppManagement CSP](/windows/client-management/mdm/enterprisemodernappmanagement-csp)   
 [NAP CSP](/windows/client-management/mdm/nap-csp)   
 [PassportForWork CSP](/windows/client-management/mdm/passportforwork-csp)   
 [Provisioning CSP](/windows/client-management/mdm/provisioning-csp)   
-[PROXY CSP](/windows/client-management/mdm/proxy-csp)   
 [SecureAssessment CSP](/windows/client-management/mdm/secureassessment-csp)   
 [VPN CSP](/windows/client-management/mdm/vpn-csp)   
 [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)   

@@ -1,26 +1,26 @@
 ---
-title: User Account Control Virtualize file and registry write failures to per-user locations (Windows 10)
+title: User Account Control Virtualize file and registry write failures to per-user locations 
 description: Best practices, security considerations and more for the policy setting, User Account Control Virtualize file and registry write failures to per-user locations.
 ms.assetid: a7b47420-cc41-4b1c-b03e-f67a05221261
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # User Account Control: Virtualize file and registry write failures to per-user locations
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **User Account Control: Virtualize file and registry write failures to per-user locations** security policy setting.
@@ -29,7 +29,7 @@ Describes the best practices, location, values, policy management and security c
 
 This policy setting enables or disables the redirection of the write failures of earlier applications to defined locations in the registry and the file system. This feature mitigates applications that historically ran as administrator and wrote runtime application data to %ProgramFiles%, %Windir%, %Windir%\\system32, or HKEY\_LOCAL\_MACHINE\\Software\\.
 
-This feature can be disabled for applications on devices running at least Windows Vista because it is unnecessary.
+This feature can be disabled for applications on devices running at least Windows Vista because it's unnecessary.
 
 ### Possible values
 
@@ -43,7 +43,7 @@ This feature can be disabled for applications on devices running at least Window
 
 ### Best practices
 
-1.  If you run applications that are not Windows Vista-compliant, enable this security policy to prevent the possibility that these older applications could write data to unsecure locations.
+1.  If you run applications that aren't Windows Vista-compliant, enable this security policy to prevent the possibility that these older applications could write data to unsecure locations.
 2.  If you only run at least Windows Vista–compliant applications, this feature is unnecessary so you can disable this policy.
 
 ### Location
@@ -69,7 +69,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ### Group Policy
 
@@ -89,7 +89,7 @@ Enable the **User Account Control: Virtualize file and registry write failures t
 
 ### Potential impact
 
-None. This is the default configuration.
+None. This non-impact state is the default configuration.
 
 ## Related topics
 

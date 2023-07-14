@@ -1,16 +1,17 @@
 ---
 title: How to manage App-V packages running on a stand-alone computer by using Windows PowerShell (Windows 10/11)
 description: How to manage App-V packages running on a stand-alone computer by using Windows PowerShell.
-author: greg-lindsay
+author: aczechowski
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w10
+ms.prod: windows-client
 ms.date: 09/24/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
 # How to manage App-V packages running on a stand-alone computer by using Windows PowerShell
 

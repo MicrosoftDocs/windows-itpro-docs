@@ -1,17 +1,16 @@
 ---
 title: Deploying the App-V Server (Windows 10/11)
 description: Learn how to deploy the Application Virtualization (App-V) Server in App-V for Windows 10/11 by using different deployment configurations described in this article.
-author: greg-lindsay
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.prod: w10
+author: aczechowski
+ms.prod: windows-client
 ms.date: 04/18/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
+
 # Deploying the App-V server
 
 >Applies to: Windows Server 2016

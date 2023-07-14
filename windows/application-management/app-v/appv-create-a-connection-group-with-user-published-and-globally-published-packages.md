@@ -1,16 +1,14 @@
 ---
 title: How to create a connection croup with user-published and globally published packages (Windows 10/11)
 description: How to create a connection croup with user-published and globally published packages.
-author: greg-lindsay
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.prod: w10
+author: aczechowski
+ms.prod: windows-client
 ms.date: 07/10/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
 # How to create a connection croup with user-published and globally published packages
 
@@ -62,6 +60,6 @@ Here are some important things to know before you get started:
 
 
 
-## Related topics
+## Related articles
 
 - [Managing Connection Groups](appv-managing-connection-groups.md)

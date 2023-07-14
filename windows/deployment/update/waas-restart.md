@@ -1,16 +1,17 @@
 ---
-title: Manage device restarts after updates (Windows 10)
+title: Manage device restarts after updates
 description: Use Group Policy settings, mobile device management (MDM), or Registry to configure when devices will restart after a Windows 10 update is installed.
-ms.prod: w10
-ms.mktglfcycl: deploy
-author: jaimeo
+ms.prod: windows-client
+author: mestew
 ms.localizationpriority: medium
-ms.author: jaimeo
-manager: dougeby
-ms.topic: article
-ms.custom:
-- seo-marvel-apr2020
-ms.collection: highpri
+ms.author: mstewart
+manager: aaroncz
+ms.topic: how-to
+ms.collection:
+  - highpri
+  - tier2
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Manage device restarts after updates
@@ -19,11 +20,11 @@ ms.collection: highpri
 **Applies to**
 
 - Windows 10
-
+- Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
-You can use Group Policy settings, mobile device management (MDM), or Registry (not recommended) to configure when devices will restart after a Windows 10 update is installed. You can schedule update installation and set policies for restart, configure active hours for when restarts will not occur, or you can do both.
+You can use Group Policy settings, mobile device management (MDM), or Registry (not recommended) to configure when devices will restart after a Windows update is installed. You can schedule update installation and set policies for restart, configure active hours for when restarts will not occur, or you can do both.
 
 ## Schedule update installation
 
@@ -101,15 +102,27 @@ To configure active hours max range through MDM, use [**Update/ActiveHoursMaxRan
 
 ## Limit restart delays
 
-After an update is installed, Windows 10 attempts automatic restart outside of active hours. If the restart does not succeed after seven days (by default), the user will see a notification that restart is required. You can use the **Specify deadline before auto-restart for update installation** policy to change the delay from seven days to any number of days between two and 14.
+After an update is installed, Windows attempts automatic restart outside of active hours. If the restart does not succeed after seven days (by default), the user will see a notification that restart is required. You can use the **Specify deadline before auto-restart for update installation** policy to change the delay from seven days to any number of days between two and 14.
 
 ## Control restart notifications
 
-In Windows 10, version 1703, we have added settings to control restart notifications for users.
+### Display options for update notifications
+
+Starting in Windows 10 version 1809, you can define which Windows Update notifications are displayed to the user. This policy doesn't control how and when updates are downloaded and installed. You can use **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Display options for update notifications** with these values:
+
+**0** (default) - Use the default Windows Update notifications </br>
+**1** - Turn off all notifications, excluding restart warnings </br>
+**2** - Turn off all notifications, including restart warnings </br>
+
+To configure this behavior through MDM, use [**Update/UpdateNotificationLevel**](/windows/client-management/mdm/policy-configuration-service-provider#update-updatenotificationlevel).
+
+Starting in Windows 11, version 22H2, **Apply only during active hours** was added as an additional option for **Display options for update notifications**. When **Apply only during active hours** is selected, the notifications will only be disabled during active hours when options `1` or `2` are used. To ensure that the device stays updated, a notification will still be shown during active hours if **Apply only during active hours** is selected, and once a deadline has been reached when [Specify deadlines for automatic updates and restarts](wufb-compliancedeadlines.md) is configured. <!--6286260-->
+
+To configure this behavior through MDM, use [**Update/UpdateNotificationLevel**](/windows/client-management/mdm/policy-csp-update#update-NoUpdateNotificationDuringActiveHours).
 
 ### Auto-restart notifications
 
-Administrators can override the default behavior for the auto-restart required notification. By default, this notification will dismiss automatically.
+Administrators can override the default behavior for the auto-restart required notification. By default, this notification will dismiss automatically. This setting was added in Windows 10, version 1703.
 
 To configure this behavior through Group Policy, go to **Computer Configuration\Administrative Templates\Windows Components\Windows Update** and select **Configure auto-restart required notification for updates**. When configured to **2 - User Action**, a user that gets this notification must manually dismiss it.
 
@@ -199,10 +212,10 @@ There are three different registry combinations for controlling restart behavior
 
 ## Related articles
 
-- [Update Windows 10 in the enterprise](index.md)
+- [Update Windows in the enterprise](index.md)
 - [Overview of Windows as a service](waas-overview.md)
-- [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
-- [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
+- [Configure Delivery Optimization for Windows updates](../do/waas-delivery-optimization.md)
+- [Configure BranchCache for Windows updates](waas-branchcache.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)

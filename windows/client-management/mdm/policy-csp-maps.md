@@ -1,130 +1,145 @@
 ---
-title: Policy CSP - Maps
-description: Use the Policy CSP - Maps setting to allow the download and update of map data over metered connections.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+title: Maps Policy CSP
+description: Learn more about the Maps Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Maps-Begin -->
 # Policy CSP - Maps
 
+<!-- Maps-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Maps-Editable-End -->
 
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-Begin -->
+## AllowOfflineMapsDownloadOverMeteredConnection
 
-<hr/>
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-Applicability-End -->
 
-<!--Policies-->
-## Maps policies  
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Maps/AllowOfflineMapsDownloadOverMeteredConnection
+```
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-OmaUri-End -->
 
-<dl>
-  <dd>
-    <a href="#maps-allowofflinemapsdownloadovermeteredconnection">Maps/AllowOfflineMapsDownloadOverMeteredConnection</a>
-  </dd>
-  <dd>
-    <a href="#maps-enableofflinemapsautoupdate">Maps/EnableOfflineMapsAutoUpdate</a>
-  </dd>
-</dl>
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows the download and update of map data over metered connections. After the policy is applied, you can verify the settings in the user interface in System > Offline Maps.
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-Description-End -->
 
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-Editable-End -->
 
-<hr/>
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--Policy-->
-<a href="" id="maps-allowofflinemapsdownloadovermeteredconnection"></a>**Maps/AllowOfflineMapsDownloadOverMeteredConnection**  
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 65535 |
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-DFProperties-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-AllowedValues-Begin -->
+**Allowed values**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Value | Description |
+|:--|:--|
+| 0 | Disabled. Force disable auto-update over metered connection. |
+| 1 | Enabled. Force enable auto-update over metered connection. |
+| 65535 (Default) | Not configured. User's choice. |
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-AllowedValues-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowOfflineMapsDownloadOverMeteredConnection-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- EnableOfflineMapsAutoUpdate-Begin -->
+## EnableOfflineMapsAutoUpdate
 
-<hr/>
+<!-- EnableOfflineMapsAutoUpdate-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- EnableOfflineMapsAutoUpdate-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-Allows the download and update of map data over metered connections.
+<!-- EnableOfflineMapsAutoUpdate-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Maps/EnableOfflineMapsAutoUpdate
+```
+<!-- EnableOfflineMapsAutoUpdate-OmaUri-End -->
 
-After the policy is applied, you can verify the settings in the user interface in **System** &gt; **Offline Maps**.
+<!-- EnableOfflineMapsAutoUpdate-Description-Begin -->
+<!-- Description-Source-DDF -->
+Disables the automatic download and update of map data. After the policy is applied, you can verify the settings in the user interface in System > Offline Maps.
+<!-- EnableOfflineMapsAutoUpdate-Description-End -->
 
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- EnableOfflineMapsAutoUpdate-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableOfflineMapsAutoUpdate-Editable-End -->
 
--   0 – Disabled. Force disable auto-update over metered connection.
--   1 – Enabled. Force enable auto-update over metered connection.
--   65535 (default) – Not configured. User's choice.
+<!-- EnableOfflineMapsAutoUpdate-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 65535 |
+<!-- EnableOfflineMapsAutoUpdate-DFProperties-End -->
 
-<hr/>
+<!-- EnableOfflineMapsAutoUpdate-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="maps-enableofflinemapsautoupdate"></a>**Maps/EnableOfflineMapsAutoUpdate**  
+| Value | Description |
+|:--|:--|
+| 0 | Disabled. Force off auto-update. |
+| 1 | Enabled. Force on auto-update. |
+| 65535 (Default) | Not configured. User's choice. |
+<!-- EnableOfflineMapsAutoUpdate-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- EnableOfflineMapsAutoUpdate-GpMapping-Begin -->
+**Group policy mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | TurnOffAutoUpdate |
+| Friendly Name | Turn off Automatic Download and Update of Map Data |
+| Location | Computer Configuration |
+| Path | Windows Components > Maps |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Maps |
+| Registry Value Name | AutoDownloadAndUpdateMapData |
+| ADMX File Name | WinMaps.admx |
+<!-- EnableOfflineMapsAutoUpdate-GpMapping-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableOfflineMapsAutoUpdate-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableOfflineMapsAutoUpdate-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnableOfflineMapsAutoUpdate-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- Maps-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Maps-CspMoreInfo-End -->
 
-<hr/>
+<!-- Maps-End -->
 
-<!--/Scope-->
-<!--Description-->
-Disables the automatic download and update of map data.
+## Related articles
 
-After the policy is applied, you can verify the settings in the user interface in **System** &gt; **Offline Maps**.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Turn off Automatic Download and Update of Map Data*
--   GP name: *TurnOffAutoUpdate*
--   GP path: *Windows Components/Maps*
--   GP ADMX file name: *WinMaps.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 – Disabled. Force off auto-update.
--   1 – Enabled. Force on auto-update.
--   65535 (default) – Not configured. User's choice.
-
-<!--/SupportedValues-->
-<!--/Policy-->
-<hr/>
-
-<!--/Policies-->
-
+[Policy configuration service provider](policy-configuration-service-provider.md)

@@ -1,21 +1,20 @@
 ---
-title: Maximum tolerance for computer clock synchronization (Windows 10)
+title: Maximum tolerance for computer clock synchronization 
 description: Best practices, location, values, policy management, and security considerations for the policy setting, Maximum tolerance for computer clock synchronization.
 ms.assetid: ba2cf59e-d69d-469e-95e3-8e6a0ba643af
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Maximum tolerance for computer clock synchronization
@@ -30,7 +29,7 @@ Describes the best practices, location, values, policy management, and security 
 This security setting determines the maximum time difference (in minutes) that Kerberos V5 tolerates between the time on the client clock and the time on the domain controller that provides Kerberos authentication.
 
 To prevent "replay attacks," the Kerberos v5 protocol uses time stamps as part of its protocol definition. For time stamps to work properly, the clocks of the client and the domain controller need to be in sync as much as possible. In other words, both devices must be set to the same time and date. 
-Because the clocks of two computers are often out of sync, you can use this policy setting to establish the maximum acceptable difference to the Kerberos protocol between a client clock and domain controller clock. If the difference between a client computer clock and the domain controller clock is less than the maximum time difference that is specified in this policy, any time stamp that is used in a session between the two devices is considered to be authentic.
+Because the clocks of two computers are often out of sync, you can use this policy setting to establish the maximum acceptable difference to the Kerberos protocol between a client clock and domain controller clock. If the difference between a client computer clock and the domain controller clock is less than the maximum time difference that is specified in this policy, any timestamp that's used in a session between the two devices is considered to be authentic.
 
 The possible values for this Group Policy setting are:
 
@@ -39,7 +38,7 @@ The possible values for this Group Policy setting are:
 
 ### Best practices
 
--   It is advisable to set **Maximum tolerance for computer clock synchronization** to a value of 5 minutes.
+-   It's advisable to set **Maximum tolerance for computer clock synchronization** to a value of 5 minutes.
 
 ### Location
 
@@ -62,7 +61,7 @@ The following table lists the actual and effective default policy values. Defaul
 
 This section describes features, tools, and guidance to help you manage this policy.
 
-A restart of the device is not required for this policy setting to be effective.
+A restart of the device isn't required for this policy setting to be effective.
 
 This policy setting is configured on the domain controller.
 
@@ -85,7 +84,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-To prevent "replay attacks" (which are attacks in which an authentication credential is resubmitted by a malicious user or program to gain access to a protected resource), the Kerberos protocol uses time stamps as part of its definition. For time stamps to work properly, the clocks of the client computer and the domain controller need to be closely synchronized. Because the clocks of two computers are often not synchronized, administrators can use this policy to establish the maximum acceptable difference to the Kerberos protocol between a client computer clock and a domain controller clock. If the difference between the client computer clock and the domain controller clock is less than the maximum time difference specified in this setting, any time stamp that is used in a session between the two computers is considered to be authentic.
+To prevent "replay attacks" (which are attacks in which an authentication credential is resubmitted by a malicious user or program to gain access to a protected resource), the Kerberos protocol uses time stamps as part of its definition. For time stamps to work properly, the clocks of the client computer and the domain controller need to be closely synchronized. Because the clocks of two computers are often not synchronized, administrators can use this policy to establish the maximum acceptable difference to the Kerberos protocol between a client computer clock and a domain controller clock. If the difference between the client computer clock and the domain controller clock is less than the maximum time difference specified in this setting, any timestamp that's used in a session between the two computers is considered to be authentic.
 
 ### Countermeasure
 
@@ -93,7 +92,7 @@ Configure the **Maximum tolerance for computer clock synchronization** setting t
 
 ### Potential impact
 
-None. This is the default configuration.
+None. This non-impact state is the default configuration.
 
 ## Related topics
 

@@ -1,26 +1,26 @@
 ---
-title: Profile single process (Windows 10)
+title: Profile single process 
 description: Describes the best practices, location, values, policy management, and security considerations for the Profile single process security policy setting.
 ms.assetid: c0963de4-4f5e-430e-bfcd-dfd68e66a075
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Profile single process
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Profile single process** security policy setting.
@@ -64,7 +64,7 @@ The following table lists the actual and effective default policy values. Defaul
 
 This section describes features, tools, and guidance to help you manage this policy.
 
-A restart of the device is not required for this policy setting to be effective.
+A restart of the device isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 
@@ -85,7 +85,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-The **Profile single process** user right presents a moderate vulnerability. Attackers with this user right could monitor a computer's performance to help identify critical processes that they might want to attack directly. Attackers may be able to determine what processes run on the computer so that they could identify countermeasures that they may need to avoid, such as anti-virus software or an intrusion-detection system. They could also identify other users who are logged on to a computer.
+The **Profile single process** user right presents a moderate vulnerability. Attackers with this user right could monitor a computer's performance to help identify critical processes that they might want to attack directly. Attackers may be able to determine what processes run on the computer so that they could identify countermeasures that they may need to avoid, such as anti-virus software or an intrusion-detection system. They could also identify other users who are signed in to a computer.
 
 ### Countermeasure
 
@@ -93,7 +93,7 @@ Ensure that only the local Administrators group is assigned the **Profile single
 
 ### Potential impact
 
-If you remove the **Profile single process** user right from the Power Users group or other accounts, you could limit the abilities of users who are assigned to specific administrative roles in your environment. You should ensure that delegated tasks are not negatively affected.
+If you remove the **Profile single process** user right from the Power Users group or other accounts, you could limit the abilities of users who are assigned to specific administrative roles in your environment. You should ensure that delegated tasks aren't negatively affected.
 
 ## Related topics
 

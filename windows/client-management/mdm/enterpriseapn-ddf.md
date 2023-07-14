@@ -1,23 +1,21 @@
 ---
 title: EnterpriseAPN DDF
 description: Learn about the OMA DM device description framework (DDF) for the EnterpriseAPN configuration service provider (CSP).
-ms.assetid: A953ADEF-4523-425F-926C-48DA62EB9E21
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+ms.reviewer:
+manager: aaroncz
+ms.author: vinpa
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
+author: vinaypamnani-msft
 ms.date: 12/05/2017
 ---
 
 # EnterpriseAPN DDF
 
-
 This topic shows the OMA DM device description framework (DDF) for the **EnterpriseAPN** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 The content below are the different versions of the DDF for this CSP.
 

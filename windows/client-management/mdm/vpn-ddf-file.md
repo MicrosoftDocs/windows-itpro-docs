@@ -1,14 +1,13 @@
 ---
 title: VPN DDF file
 description: Learn about the OMA DM device description framework (DDF) for the VPN configuration service provider (CSP).
-ms.assetid: 728FCD9C-0B8E-413B-B54A-CD72C9F2B9EE
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+ms.reviewer:
+manager: aaroncz
+ms.author: vinpa
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
+author: vinaypamnani-msft
 ms.date: 06/26/2017
 ---
 
@@ -1394,4 +1393,4 @@ This topic shows the OMA DM device description framework (DDF) for the **VPN** c
 
 [VPN configuration service provider (deprecated)](vpn-csp.md)
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

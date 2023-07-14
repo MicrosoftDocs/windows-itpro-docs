@@ -21,6 +21,7 @@
         "files": [
           "**/**/*.png",
           "**/**/*.jpg",
+          "**/*.svg",
           "**/**/*.gif"
         ],
         "exclude": [
@@ -33,13 +34,17 @@
     "externalReference": [],
     "globalMetadata": {
       "recommendations": true,
-      "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
+      "adobe-target": true,
+      "ms.collection": [
+        "tier2"
+      ],
+      "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-M365-IT",
       "ms.topic": "article",
       "audience": "ITPro",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
-      "feedback_product_url": "https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app",
+      "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "MSDN.win-whats-new",
@@ -54,7 +59,8 @@
         "claydetels19", 
         "jborsecnik",
         "tiburd",
-        "garycentric"
+        "garycentric",
+        "beccarobins"
       ],
       "searchScope": ["Windows 10"]
     },

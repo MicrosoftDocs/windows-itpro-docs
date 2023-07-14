@@ -1,16 +1,15 @@
 ---
 title: What's new in Windows 10, version 1803
 description: New and updated features in Windows 10, version 1803 (also known as the Windows 10 April 2018 Update).
-keywords: ["What's new in Windows 10", "Windows 10", "April 2018 Update"]
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.reviewer: 
-author: greg-lindsay
-manager: laurawi
-ms.author: greglin
-ms.localizationpriority: high
+ms.prod: windows-client
+author: mestew
+manager: aaroncz
+ms.author: mstewart
+ms.localizationpriority: medium
 ms.topic: article
+ROBOTS: NOINDEX
+ms.technology: itpro-fundamentals
+ms.date: 12/31/2017
 ---
 
 # What's new in Windows 10, version 1803 for IT Pros
@@ -32,7 +31,7 @@ The following 3-minute video summarizes some of the new features that are availa
 
 [Windows Autopilot](/windows/deployment/windows-autopilot/windows-10-autopilot) provides a modern device lifecycle management service powered by the cloud that delivers a zero touch experience for deploying Windows 10. 
 
-Using Intune, Autopilot now enables locking the device during provisioning during the Windows Out Of Box Experience (OOBE) until policies and settings for the device get provisioned, thereby ensuring that by the time the user gets to the desktop, the device is secured and configured correctly. 
+With the help of Intune, Autopilot now enables locking the device during provisioning during the Windows Out Of Box Experience (OOBE) until policies and settings for the device get provisioned, thereby ensuring that by the time the user gets to the desktop, the device is secured and configured correctly. 
 
 Windows Autopilot is now available with Surface, Lenovo, and Dell. Other OEM partners such as HP, Toshiba, Panasonic, and Fujitsu will support Autopilot in coming months. Check back here later for more information.
 
@@ -47,13 +46,13 @@ Some additional information about Windows 10 in S mode:
 - Choice and flexibility. Save your files to your favorite cloud, like OneDrive or DropBox, and access them from any device you choose. Browse the Microsoft Store for thousands of apps.
 - S mode, on a range of modern devices. Enjoy all the great Windows multi-tasking features, like snapping Windows, task view and virtual desktops on a range of S mode enabled devices. 
 
-If you want to switch out of S mode, you will be able to do so at no charge, regardless of edition. Once you switch out of S mode, you cannot switch back.
+If you want to switch out of S mode, you'll be able to do so at no charge, regardless of edition. Once you switch out of S mode, you can't switch back.
 
 For more information, see [Windows 10 Pro/Enterprise in S mode](/windows/deployment/windows-10-pro-in-s-mode).
 
 ### Windows 10 kiosk and Kiosk Browser
 
-With this release you can easily deploy and manage kiosk devices with Microsoft Intune in single and multiple app scenarios. This includes the new Kiosk Browser available from the Microsoft Store. Kiosk Browser is great for delivering a reliable and custom-tailored browsing experience for scenarios such as retail and signage. A summary of new features is below.
+With this release, you can easily deploy and manage kiosk devices with Microsoft Intune in single- and multiple-app scenarios. These scenarios include the new Kiosk Browser available from the Microsoft Store. Kiosk Browser is great for delivering a reliable and custom-tailored browsing experience for scenarios such as retail and signage. A summary of new features is below.
 
 - Using Intune, you can deploy the Kiosk Browser from the Microsoft Store, configure start URL, allowed URLs, and enable/disable navigation buttons.
 - Using Intune, you can deploy and configure shared devices and kiosks using assigned access to create a curated experience with the correct apps and configuration policies
@@ -80,7 +79,7 @@ The following new DISM commands have been added to manage feature updates:
 
 | Command  | Description  |
 |---|---|
-| `DISM /Online /Initiate-OSUninstall`  | Initiates a OS uninstall to take the computer back to the previous installation of windows.  |
+| `DISM /Online /Initiate-OSUninstall`  | Initiates an OS uninstall to take the computer back to the previous installation of windows.  |
 | `DISM /Online /Remove-OSUninstall`  | Removes the OS uninstall capability from the computer.  |
 | `DISM /Online /Get-OSUninstallWindow`  | Displays the number of days after upgrade during which uninstall can be performed.  |
 | `DISM /Online /Set-OSUninstallWindow`  | Sets the number of days after upgrade during which uninstall can be performed.  |
@@ -98,7 +97,7 @@ Prerequisites:
 
 For more information, see [Run custom actions during feature update](/windows-hardware/manufacture/desktop/windows-setup-enable-custom-actions).
 
-It is also now possible to run a script if the user rolls back their version of Windows using the PostRollback option:
+It's also now possible to run a script if the user rolls back their version of Windows using the PostRollback option:
 
 `/PostRollback<location> [\setuprollback.cmd] [/postrollback {system / admin}]`
 
@@ -109,8 +108,8 @@ New command-line switches are also available to control BitLocker:
 | Command | Description |
 |---|---|
 | `Setup.exe /BitLocker AlwaysSuspend`  | Always suspend BitLocker during upgrade. |
-| `Setup.exe /BitLocker TryKeepActive`  | Enable upgrade without suspending BitLocker, but if upgrade does not work, then suspend BitLocker and complete the upgrade. |
-| `Setup.exe /BitLocker ForceKeepActive`  | Enable upgrade without suspending BitLocker, but if upgrade does not work, fail the upgrade. |
+| `Setup.exe /BitLocker TryKeepActive`  | Enable upgrade without suspending BitLocker, but if upgrade doesn't work, then suspend BitLocker and complete the upgrade. |
+| `Setup.exe /BitLocker ForceKeepActive`  | Enable upgrade without suspending BitLocker, but if upgrade doesn't work, fail the upgrade. |
 
 For more information, see [Windows Setup Command-Line Options](/windows-hardware/manufacture/desktop/windows-setup-command-line-options#33)
 
@@ -118,21 +117,21 @@ For more information, see [Windows Setup Command-Line Options](/windows-hardware
 
 [SetupDiag](/windows/deployment/upgrade/setupdiag) is a new command-line tool that can help diagnose why a Windows 10 update failed.
 
-SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 26 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available. 
+SetupDiag works by searching Windows Setup log files. When log files are being searched, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 26 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available. 
 
-### Windows Update for Business (WUfB)
+### Windows Update for Business
 
-Windows Update for Business now provides greater control over updates, with the ability to pause and uninstall problematic updates using Intune.  For more information, see [Manage software updates in Intune](/intune/windows-update-for-business-configure).
+Windows Update for Business now provides greater control over updates, with the ability to pause and uninstall problematic updates using Intune. For more information, see [Manage software updates in Intune](/intune/windows-update-for-business-configure).
 
 ### Feature update improvements
 
-Portions of the work done during the offline phases of a Windows update have been moved to the online phase. This has resulted in a significant reduction of offline time when installing updates. For more information, see [We're listening to you](https://insider.windows.com/en-us/articles/were-listening-to-you/).
+Portions of the work done during the offline phases of a Windows update have been moved to the online phase. This migration has resulted in a significant reduction of offline time when installing updates. For more information, see [We're listening to you](https://insider.windows.com/en-us/articles/were-listening-to-you/).
 
 ## Configuration
 
 ### Co-management
 
-**Intune** and **Microsoft Endpoint Configuration Manager** policies have been added to enable hybrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
+**Intune** and **Microsoft Configuration Manager** policies have been added to enable hybrid Azure AD-joined authentication. Mobile Device Management (MDM) has added over 150 new policies and settings in this release, including the [MDMWinsOverGP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) policy, to enable easier transition to cloud-based management.
 
 For more information, see [What's New in MDM enrollment and management](/windows/client-management/mdm/new-in-windows-mdm-enrollment-management#whatsnew1803)
 
@@ -146,10 +145,10 @@ The OS uninstall period is a length of time that users are given when they can o
 
 - Windows Hello is now [password-less on S-mode](https://www.windowslatest.com/2018/02/12/microsoft-make-windows-10-password-less-platform/).
 - Support for S/MIME with Windows Hello for Business and APIs for non-Microsoft identity lifecycle management solutions.
-- Windows Hello is part of the account protection pillar in Windows Defender Security Center. Account Protection will encourage password users to set up Windows Hello Face, Fingerprint or PIN for faster sign in, and will notify Dynamic lock users if Dynamic lock has stopped working because their phone or device Bluetooth is off.
-- You can set up Windows Hello from lock screen for MSA accounts. We’ve made it easier for Microsoft account users to set up Windows Hello on their devices for faster and more secure sign-in. Previously, you had to navigate deep into Settings to find Windows Hello. Now, you can set up Windows Hello Face, Fingerprint or PIN straight from your lock screen by clicking the Windows Hello tile under Sign-in options.
+- Windows Hello is part of the account protection pillar in Windows Defender Security Center. Account Protection will encourage password users to set up Windows Hello Face, Fingerprint or PIN for faster sign-in, and will notify Dynamic lock users if Dynamic lock has stopped working because their phone or device Bluetooth is off.
+- You can set up Windows Hello from lock screen for Microsoft accounts. We’ve made it easier for Microsoft account users to set up Windows Hello on their devices for faster and more secure sign-in. Previously, you had to navigate deep into Settings to find Windows Hello. Now, you can set up Windows Hello Face, Fingerprint or PIN straight from your lock screen by clicking the Windows Hello tile under Sign-in options.
 - New [public API](/uwp/api/windows.security.authentication.web.core.webauthenticationcoremanager.findallaccountsasync#Windows_Security_Authentication_Web_Core_WebAuthenticationCoreManager_FindAllAccountsAsync_Windows_Security_Credentials_WebAccountProvider_) for secondary account SSO for a particular identity provider.
-- It is easier to set up Dynamic lock, and WD SC actionable alerts have been added when Dynamic lock stops working (ex: phone Bluetooth is off).
+- It's easier to set up Dynamic lock, and WD SC actionable alerts have been added when Dynamic lock stops working (ex: phone Bluetooth is off).
  
 For more information, see: [Windows Hello and FIDO2 Security Keys enable secure and easy authentication for shared devices](https://blogs.windows.com/business/2018/04/17/windows-hello-fido2-security-keys/#OdKBg3pwJQcEKCbJ.97)
 
@@ -157,11 +156,11 @@ For more information, see: [Windows Hello and FIDO2 Security Keys enable secure 
 
 ### Accessibility
 
-"Out of box" accessibility is enhanced with auto-generated picture descriptions. For more information about accessibility, see [Accessibility information for IT Professionals](/windows/configuration/windows-10-accessibility-for-itpros). Also see the accessibility section in the [What’s new in the Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update/) blog post.
+"Out of box" accessibility is enhanced with auto-generated picture descriptions. For more information about accessibility, see [Accessibility information for IT Professionals](/windows/configuration/windows-accessibility-for-itpros). Also see the accessibility section in the [What’s new in the Windows 10 April 2018 Update](https://blogs.windows.com/windowsexperience/2018/04/30/whats-new-in-the-windows-10-april-2018-update/) blog post.
 
 ### Privacy
 
-In the Feedback and Settings page under Privacy Settings you can now delete the diagnostic data your device has sent to Microsoft. You can also view this diagnostic data using the [Diagnostic Data Viewer](/windows/configuration/diagnostic-data-viewer-overview) app. 
+In the Feedback and Settings page under Privacy Settings, you can now delete the diagnostic data your device has sent to Microsoft. You can also view this diagnostic data using the [Diagnostic Data Viewer](/windows/configuration/diagnostic-data-viewer-overview) app. 
 
 ## Security
 
@@ -171,7 +170,7 @@ The new [security baseline for Windows 10 version 1803](/windows/security/threat
 
 ### Microsoft Defender Antivirus
 
-Microsoft Defender Antivirus now shares detection status between M365 services and interoperates with Microsoft Defender for Endpoint.  Additional policies have also been implemented to enhance cloud based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](/microsoft-365/security/defender-endpoint/cloud-protection-microsoft-defender-antivirus).
+Microsoft Defender Antivirus now shares detection status between Microsoft 365 services and interoperates with Microsoft Defender for Endpoint. Other policies have also been implemented to enhance cloud-based protection, and new channels are available for emergency protection. For more information, see [Virus and threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection) and [Use next-gen technologies in Microsoft Defender Antivirus through cloud-delivered protection](/microsoft-365/security/defender-endpoint/cloud-protection-microsoft-defender-antivirus).
 
 ### Windows Defender Exploit Guard
 
@@ -195,7 +194,7 @@ Windows Defender Application Guard has added support for Edge. For more informat
 
 ### Windows Defender Device Guard
 
-Configurable code integrity is being rebranded as Windows Defender Application Control. This is to help distinguish it as a standalone feature to control execution of applications. For more information about Device Guard, see Windows [Defender Device Guard deployment guide](/windows/device-security/device-guard/device-guard-deployment-guide).
+Configurable code integrity is being rebranded as Windows Defender Application Control. This rebranding is to help distinguish it as a standalone feature to control execution of applications. For more information about Device Guard, see Windows [Defender Device Guard deployment guide](/windows/device-security/device-guard/device-guard-deployment-guide).
 
 ### Windows Information Protection
 
@@ -217,7 +216,7 @@ Update Compliance has added Delivery Optimization to assess the bandwidth consum
 
 ### Device Health
 
-Device Health’s new App Reliability reports enable you to see where app updates or configuration changes may be needed to reduce crashes. The Login Health reports reveal adoption, success rates, and errors for Windows Hello and for passwords— for a smooth migration to the password-less future. For more information, see [Using Device Health](/windows/deployment/update/device-health-using).
+Device Health’s new App Reliability reports enable you to see where app updates or configuration changes may be needed to reduce crashes. The Login Health reports reveal adoption, success rates, and errors for Windows Hello and for passwords—for a smooth migration to the password-less future. For more information, see [Using Device Health](/windows/deployment/update/device-health-using).
 
 ## Microsoft Edge
 

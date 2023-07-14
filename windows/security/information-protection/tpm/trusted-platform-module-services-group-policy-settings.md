@@ -1,29 +1,20 @@
 ---
-title: TPM Group Policy settings (Windows)
+title: TPM Group Policy settings 
 description: This topic describes the Trusted Platform Module (TPM) Services that can be controlled centrally by using Group Policy settings.
-ms.assetid: 54ff1c1e-a210-4074-a44e-58fee26e4dbd
-ms.reviewer: 
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection:
-  - M365-security-compliance
-  - highpri
+ms.prod: windows-client
+author: paolomatarazzo
+ms.author: paoloma
+manager: aaroncz
 ms.topic: conceptual
-ms.date: 09/06/2021
+ms.date: 02/02/2023
+ms.technology: itpro-security
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ---
 
 # TPM Group Policy settings
 
-**Applies to**
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 This topic describes the Trusted Platform Module (TPM) Services that can be controlled centrally by using Group Policy settings.
 

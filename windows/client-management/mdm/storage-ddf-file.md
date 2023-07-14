@@ -1,14 +1,13 @@
 ---
 title: Storage DDF file
 description: Learn about the OMA DM device description framework (DDF) for the Storage configuration service provider (CSP).
-ms.assetid: 247062A3-4DFB-4B14-A3D1-68D02C27703C
-ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+ms.reviewer:
+manager: aaroncz
+ms.author: vinpa
+ms.topic: reference
+ms.prod: windows-client
+ms.technology: itpro-manage
+author: vinaypamnani-msft
 ms.date: 12/05/2017
 ---
 
@@ -20,7 +19,7 @@ Storage CSP is deprecated. Use System/AllowStorageCard in [Policy CSP](policy-co
 
 This topic shows the OMA DM device description framework (DDF) for the **Storage** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download).
+Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
 
 The XML below is the current version for this CSP.
 
@@ -88,4 +87,4 @@ System/AllowStorageCard in [Policy CSP](policy-configuration-service-provider.md
 
 [Storage CSP (deprecated)](storage-csp.md)
 
-[Configuration service provider reference](configuration-service-provider-reference.md)
+[Configuration service provider reference](index.yml)

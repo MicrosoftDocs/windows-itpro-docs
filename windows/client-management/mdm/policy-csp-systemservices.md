@@ -1,283 +1,367 @@
 ---
-title: Policy CSP - SystemServices
-description: Learn how to use the Policy CSP - SystemServices setting to determine whether the service's start type is Automatic(2), Manual(3), Disabled(4).
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+title: SystemServices Policy CSP
+description: Learn more about the SystemServices Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- SystemServices-Begin -->
 # Policy CSP - SystemServices
 
+<!-- SystemServices-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SystemServices-Editable-End -->
 
+<!-- ConfigureHomeGroupListenerServiceStartupMode-Begin -->
+## ConfigureHomeGroupListenerServiceStartupMode
 
-<hr/>
+<!-- ConfigureHomeGroupListenerServiceStartupMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- ConfigureHomeGroupListenerServiceStartupMode-Applicability-End -->
 
-<!--Policies-->
-## SystemServices policies  
+<!-- ConfigureHomeGroupListenerServiceStartupMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/SystemServices/ConfigureHomeGroupListenerServiceStartupMode
+```
+<!-- ConfigureHomeGroupListenerServiceStartupMode-OmaUri-End -->
 
-<dl>
-  <dd>
-    <a href="#systemservices-configurehomegrouplistenerservicestartupmode">SystemServices/ConfigureHomeGroupListenerServiceStartupMode</a>
-  </dd>
-  <dd>
-    <a href="#systemservices-configurehomegroupproviderservicestartupmode">SystemServices/ConfigureHomeGroupProviderServiceStartupMode</a>
-  </dd>
-  <dd>
-    <a href="#systemservices-configurexboxaccessorymanagementservicestartupmode">SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode</a>
-  </dd>
-  <dd>
-    <a href="#systemservices-configurexboxliveauthmanagerservicestartupmode">SystemServices/ConfigureXboxLiveAuthManagerServiceStartupMode</a>
-  </dd>
-  <dd>
-    <a href="#systemservices-configurexboxlivegamesaveservicestartupmode">SystemServices/ConfigureXboxLiveGameSaveServiceStartupMode</a>
-  </dd>
-  <dd>
-    <a href="#systemservices-configurexboxlivenetworkingservicestartupmode">SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode</a>
-  </dd>
-</dl>
-
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="systemservices-configurehomegrouplistenerservicestartupmode"></a>**SystemServices/ConfigureHomeGroupListenerServiceStartupMode**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- ConfigureHomeGroupListenerServiceStartupMode-Description-Begin -->
+<!-- Description-Source-DDF -->
 This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
+<!-- ConfigureHomeGroupListenerServiceStartupMode-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *HomeGroup Listener*
--   GP path: *Windows Settings/Security Settings/System Services*
+<!-- ConfigureHomeGroupListenerServiceStartupMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureHomeGroupListenerServiceStartupMode-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- ConfigureHomeGroupListenerServiceStartupMode-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[2-4]` |
+| Default Value  | 3 |
+<!-- ConfigureHomeGroupListenerServiceStartupMode-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="systemservices-configurehomegroupproviderservicestartupmode"></a>**SystemServices/ConfigureHomeGroupProviderServiceStartupMode**  
+<!-- ConfigureHomeGroupListenerServiceStartupMode-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | HomeGroup Listener |
+| Path | Windows Settings > Security Settings > System Services |
+<!-- ConfigureHomeGroupListenerServiceStartupMode-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ConfigureHomeGroupListenerServiceStartupMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureHomeGroupListenerServiceStartupMode-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ConfigureHomeGroupListenerServiceStartupMode-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ConfigureHomeGroupProviderServiceStartupMode-Begin -->
+## ConfigureHomeGroupProviderServiceStartupMode
 
-> [!div class = "checklist"]
-> * Device
+<!-- ConfigureHomeGroupProviderServiceStartupMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- ConfigureHomeGroupProviderServiceStartupMode-Applicability-End -->
 
-<hr/>
+<!-- ConfigureHomeGroupProviderServiceStartupMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/SystemServices/ConfigureHomeGroupProviderServiceStartupMode
+```
+<!-- ConfigureHomeGroupProviderServiceStartupMode-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- ConfigureHomeGroupProviderServiceStartupMode-Description-Begin -->
+<!-- Description-Source-DDF -->
 This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
+<!-- ConfigureHomeGroupProviderServiceStartupMode-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *HomeGroup Provider*
--   GP path: *Windows Settings/Security Settings/System Services*
+<!-- ConfigureHomeGroupProviderServiceStartupMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureHomeGroupProviderServiceStartupMode-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- ConfigureHomeGroupProviderServiceStartupMode-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[2-4]` |
+| Default Value  | 3 |
+<!-- ConfigureHomeGroupProviderServiceStartupMode-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="systemservices-configurexboxaccessorymanagementservicestartupmode"></a>**SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode**  
+<!-- ConfigureHomeGroupProviderServiceStartupMode-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | HomeGroup Provider |
+| Path | Windows Settings > Security Settings > System Services |
+<!-- ConfigureHomeGroupProviderServiceStartupMode-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ConfigureHomeGroupProviderServiceStartupMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureHomeGroupProviderServiceStartupMode-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ConfigureHomeGroupProviderServiceStartupMode-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ConfigureXboxAccessoryManagementServiceStartupMode-Begin -->
+## ConfigureXboxAccessoryManagementServiceStartupMode
 
-> [!div class = "checklist"]
-> * Device
+<!-- ConfigureXboxAccessoryManagementServiceStartupMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- ConfigureXboxAccessoryManagementServiceStartupMode-Applicability-End -->
 
-<hr/>
+<!-- ConfigureXboxAccessoryManagementServiceStartupMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/SystemServices/ConfigureXboxAccessoryManagementServiceStartupMode
+```
+<!-- ConfigureXboxAccessoryManagementServiceStartupMode-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- ConfigureXboxAccessoryManagementServiceStartupMode-Description-Begin -->
+<!-- Description-Source-DDF -->
 This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
+<!-- ConfigureXboxAccessoryManagementServiceStartupMode-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Xbox Accessory Management Service*
--   GP path: *Windows Settings/Security Settings/System Services*
+<!-- ConfigureXboxAccessoryManagementServiceStartupMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureXboxAccessoryManagementServiceStartupMode-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- ConfigureXboxAccessoryManagementServiceStartupMode-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 3 |
+<!-- ConfigureXboxAccessoryManagementServiceStartupMode-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="systemservices-configurexboxliveauthmanagerservicestartupmode"></a>**SystemServices/ConfigureXboxLiveAuthManagerServiceStartupMode**  
+<!-- ConfigureXboxAccessoryManagementServiceStartupMode-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--SupportedSKUs-->
+| Value | Description |
+|:--|:--|
+| 2 | Automatic. |
+| 3 (Default) | Manual. |
+| 4 | Disabled. |
+<!-- ConfigureXboxAccessoryManagementServiceStartupMode-AllowedValues-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ConfigureXboxAccessoryManagementServiceStartupMode-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Xbox Accessory Management Service |
+| Path | Windows Settings > Security Settings > System Services |
+<!-- ConfigureXboxAccessoryManagementServiceStartupMode-GpMapping-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ConfigureXboxAccessoryManagementServiceStartupMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureXboxAccessoryManagementServiceStartupMode-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ConfigureXboxAccessoryManagementServiceStartupMode-End -->
 
-<hr/>
+<!-- ConfigureXboxLiveAuthManagerServiceStartupMode-Begin -->
+## ConfigureXboxLiveAuthManagerServiceStartupMode
 
-<!--/Scope-->
-<!--Description-->
+<!-- ConfigureXboxLiveAuthManagerServiceStartupMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- ConfigureXboxLiveAuthManagerServiceStartupMode-Applicability-End -->
+
+<!-- ConfigureXboxLiveAuthManagerServiceStartupMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/SystemServices/ConfigureXboxLiveAuthManagerServiceStartupMode
+```
+<!-- ConfigureXboxLiveAuthManagerServiceStartupMode-OmaUri-End -->
+
+<!-- ConfigureXboxLiveAuthManagerServiceStartupMode-Description-Begin -->
+<!-- Description-Source-DDF -->
 This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
+<!-- ConfigureXboxLiveAuthManagerServiceStartupMode-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Xbox Live Auth Manager*
--   GP path: *Windows Settings/Security Settings/System Services*
+<!-- ConfigureXboxLiveAuthManagerServiceStartupMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureXboxLiveAuthManagerServiceStartupMode-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- ConfigureXboxLiveAuthManagerServiceStartupMode-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 3 |
+<!-- ConfigureXboxLiveAuthManagerServiceStartupMode-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="systemservices-configurexboxlivegamesaveservicestartupmode"></a>**SystemServices/ConfigureXboxLiveGameSaveServiceStartupMode**  
+<!-- ConfigureXboxLiveAuthManagerServiceStartupMode-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--SupportedSKUs-->
+| Value | Description |
+|:--|:--|
+| 2 | Automatic. |
+| 3 (Default) | Manual. |
+| 4 | Disabled. |
+<!-- ConfigureXboxLiveAuthManagerServiceStartupMode-AllowedValues-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ConfigureXboxLiveAuthManagerServiceStartupMode-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Xbox Live Auth Manager |
+| Path | Windows Settings > Security Settings > System Services |
+<!-- ConfigureXboxLiveAuthManagerServiceStartupMode-GpMapping-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ConfigureXboxLiveAuthManagerServiceStartupMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureXboxLiveAuthManagerServiceStartupMode-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ConfigureXboxLiveAuthManagerServiceStartupMode-End -->
 
-<hr/>
+<!-- ConfigureXboxLiveGameSaveServiceStartupMode-Begin -->
+## ConfigureXboxLiveGameSaveServiceStartupMode
 
-<!--/Scope-->
-<!--Description-->
+<!-- ConfigureXboxLiveGameSaveServiceStartupMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- ConfigureXboxLiveGameSaveServiceStartupMode-Applicability-End -->
+
+<!-- ConfigureXboxLiveGameSaveServiceStartupMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/SystemServices/ConfigureXboxLiveGameSaveServiceStartupMode
+```
+<!-- ConfigureXboxLiveGameSaveServiceStartupMode-OmaUri-End -->
+
+<!-- ConfigureXboxLiveGameSaveServiceStartupMode-Description-Begin -->
+<!-- Description-Source-DDF -->
 This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
+<!-- ConfigureXboxLiveGameSaveServiceStartupMode-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Xbox Live Game Save*
--   GP path: *Windows Settings/Security Settings/System Services*
+<!-- ConfigureXboxLiveGameSaveServiceStartupMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureXboxLiveGameSaveServiceStartupMode-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
+<!-- ConfigureXboxLiveGameSaveServiceStartupMode-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 3 |
+<!-- ConfigureXboxLiveGameSaveServiceStartupMode-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="systemservices-configurexboxlivenetworkingservicestartupmode"></a>**SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode**  
+<!-- ConfigureXboxLiveGameSaveServiceStartupMode-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--SupportedSKUs-->
+| Value | Description |
+|:--|:--|
+| 2 | Automatic. |
+| 3 (Default) | Manual. |
+| 4 | Disabled. |
+<!-- ConfigureXboxLiveGameSaveServiceStartupMode-AllowedValues-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ConfigureXboxLiveGameSaveServiceStartupMode-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | Xbox Live Game Save |
+| Path | Windows Settings > Security Settings > System Services |
+<!-- ConfigureXboxLiveGameSaveServiceStartupMode-GpMapping-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ConfigureXboxLiveGameSaveServiceStartupMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureXboxLiveGameSaveServiceStartupMode-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ConfigureXboxLiveGameSaveServiceStartupMode-End -->
 
-<hr/>
+<!-- ConfigureXboxLiveNetworkingServiceStartupMode-Begin -->
+## ConfigureXboxLiveNetworkingServiceStartupMode
 
-<!--/Scope-->
-<!--Description-->
+<!-- ConfigureXboxLiveNetworkingServiceStartupMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- ConfigureXboxLiveNetworkingServiceStartupMode-Applicability-End -->
+
+<!-- ConfigureXboxLiveNetworkingServiceStartupMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/SystemServices/ConfigureXboxLiveNetworkingServiceStartupMode
+```
+<!-- ConfigureXboxLiveNetworkingServiceStartupMode-OmaUri-End -->
+
+<!-- ConfigureXboxLiveNetworkingServiceStartupMode-Description-Begin -->
+<!-- Description-Source-DDF -->
 This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.
+<!-- ConfigureXboxLiveNetworkingServiceStartupMode-Description-End -->
 
-<!--/Description-->
-<!--DbMapped-->
-GP Info:  
--   GP Friendly name: *Xbox Live Networking Service*
--   GP path: *Windows Settings/Security Settings/System Services*
+<!-- ConfigureXboxLiveNetworkingServiceStartupMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureXboxLiveNetworkingServiceStartupMode-Editable-End -->
 
-<!--/DbMapped-->
-<!--/Policy-->
-<hr/>
+<!-- ConfigureXboxLiveNetworkingServiceStartupMode-DFProperties-Begin -->
+**Description framework properties**:
 
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 3 |
+<!-- ConfigureXboxLiveNetworkingServiceStartupMode-DFProperties-End -->
 
-<!--/Policies-->
+<!-- ConfigureXboxLiveNetworkingServiceStartupMode-AllowedValues-Begin -->
+**Allowed values**:
 
+| Value | Description |
+|:--|:--|
+| 2 | Automatic. |
+| 3 (Default) | Manual. |
+| 4 | Disabled. |
+<!-- ConfigureXboxLiveNetworkingServiceStartupMode-AllowedValues-End -->
+
+<!-- ConfigureXboxLiveNetworkingServiceStartupMode-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | Xbox Live Networking Service |
+| Path | Windows Settings > Security Settings > System Services |
+<!-- ConfigureXboxLiveNetworkingServiceStartupMode-GpMapping-End -->
+
+<!-- ConfigureXboxLiveNetworkingServiceStartupMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureXboxLiveNetworkingServiceStartupMode-Examples-End -->
+
+<!-- ConfigureXboxLiveNetworkingServiceStartupMode-End -->
+
+<!-- SystemServices-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- SystemServices-CspMoreInfo-End -->
+
+<!-- SystemServices-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

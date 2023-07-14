@@ -1,21 +1,15 @@
 ---
-title: List of enlightened Microsoft apps for use with Windows Information Protection (WIP) (Windows 10)
+title: List of enlightened Microsoft apps for use with Windows Information Protection (WIP) 
 description: Learn the difference between enlightened and unenlightened apps. Find out which enlightened apps are provided by Microsoft. Learn how to allow-list them.
-ms.assetid: 17c85ea3-9b66-4b80-b511-8f277cb4345f
 ms.reviewer: 
-keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection
-ms.prod: m365-security
-ms.mktglfcycl: explore
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+author: aczechowski
+ms.author: aaroncz
+manager: dougeby
 ms.topic: conceptual
 ms.date: 05/02/2019
+ms.technology: itpro-security
 ---
 
 # List of enlightened Microsoft apps for use with Windows Information Protection (WIP)
@@ -37,7 +31,7 @@ Apps can be enlightened or unenlightened:
 
     -   Windows **Save As** experiences only allow you to save your files as enterprise.
 
-- **WIP-work only apps** are unenlightened line-of-business apps that have been tested and deemed safe for use in an enterprise with WIP and Mobile App Management (MAM) solutions without device enrollment. Unenlightened apps that are targeted by WIP without enrollment run under personal mode. 
+- **Windows Information Protection-work only apps** are unenlightened line-of-business apps that have been tested and deemed safe for use in an enterprise with WIP and Mobile App Management (MAM) solutions without device enrollment. Unenlightened apps that are targeted by WIP without enrollment run under personal mode. 
 
 ## List of enlightened Microsoft apps
 Microsoft has made a concerted effort to enlighten several of our more popular apps, including the following:
@@ -75,10 +69,10 @@ Microsoft has made a concerted effort to enlighten several of our more popular a
 - Microsoft To Do
 
 > [!NOTE]
-> Microsoft Visio, Microsoft Office Access, Microsoft Project, and Microsoft Publisher are not enlightened apps and need to be exempted from WIP policy. If they are allowed, there is a risk of data loss. For example, if a device is workplace-joined and managed and the user leaves the company, metadata files that the apps rely on remain encrypted and the apps stop functioning.
+> Microsoft Visio, Microsoft Office Access, Microsoft Project, and Microsoft Publisher are not enlightened apps and need to be exempted from Windows Information Protection policy. If they are allowed, there is a risk of data loss. For example, if a device is workplace-joined and managed and the user leaves the company, metadata files that the apps rely on remain encrypted and the apps stop functioning.
 
 ## List of WIP-work only apps from Microsoft
-Microsoft still has apps that are unenlightened, but which have been tested and deemed safe for use in an enterprise with WIP and MAM solutions.
+Microsoft still has apps that are unenlightened, but which have been tested and deemed safe for use in an enterprise with Windows Information Protection and MAM solutions.
 
 - Skype for Business
 
@@ -89,7 +83,7 @@ Microsoft still has apps that are unenlightened, but which have been tested and 
 > [!NOTE]
 > As of January 2019 it is no longer necessary to add Intune Company Portal as an exempt app since it is now included in the default list of protected apps.
 
-You can add any or all of the enlightened Microsoft apps to your allowed apps list. Included here is the **Publisher name**, **Product or File name**, and **App Type** info for both Microsoft Intune and Microsoft Endpoint Configuration Manager.
+You can add any or all of the enlightened Microsoft apps to your allowed apps list. Included here is the **Publisher name**, **Product or File name**, and **App Type** info for both Microsoft Intune and Microsoft Configuration Manager.
 
 
 |                     Product name                     |                                                                                                                                                                                                                        App info                                                                                                                                                                                                                        |
@@ -102,7 +96,7 @@ You can add any or all of the enlightened Microsoft apps to your allowed apps li
 |                  PowerPoint Mobile                   |                                                                                                                                   **Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Office.PowerPoint<br>**App Type:** Universal app                                                                                                                                    |
 |                       OneNote                        |                                                                                                                                     **Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Office.OneNote<br>**App Type:** Universal app                                                                                                                                     |
 |              Outlook Mail and Calendar               |                                                                                                                               **Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** microsoft.windowscommunicationsapps<br>**App Type:** Universal app                                                                                                                                |
-| Microsoft 365 Apps for enterprise and Office 2019 Professional Plus | Microsoft 365 Apps for enterprise and Office 2019 Professional Plus apps are set up as a suite. You must use the [O365 ProPlus - Allow and Exempt AppLocker policy files (.zip files)](https://download.microsoft.com/download/7/0/D/70D72459-D72D-4673-B309-F480E3BEBCC9/O365%20ProPlus%20-%20WIP%20Enterprise%20AppLocker%20Policy%20Files.zip) to turn the suite on for WIP.<br>We don't recommend setting up Office by using individual paths or publisher rules. |
+| Microsoft 365 Apps for enterprise and Office 2019 Professional Plus | Microsoft 365 Apps for enterprise and Office 2019 Professional Plus apps are set up as a suite. You must use the [O365 ProPlus - Allow and Exempt AppLocker policy files (.zip files)](https://download.microsoft.com/download/7/0/D/70D72459-D72D-4673-B309-F480E3BEBCC9/O365%20ProPlus%20-%20WIP%20Enterprise%20AppLocker%20Policy%20Files.zip) to turn the suite on for Windows Information Protection.<br>We don't recommend setting up Office by using individual paths or publisher rules. |
 |                   Microsoft Photos                   |                                                                                                                                     **Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.Windows.Photos<br>**App Type:** Universal app                                                                                                                                     |
 |                     Groove Music                     |                                                                                                                                       **Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.ZuneMusic<br>**App Type:** Universal app                                                                                                                                        |
 |                Microsoft Movies & TV                 |                                                                                                                                       **Publisher:** `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`<br>**Product Name:** Microsoft.ZuneVideo<br>**App Type:** Universal app                                                                                                                                        |

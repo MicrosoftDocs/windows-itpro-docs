@@ -1,17 +1,13 @@
 ---
 title: Introduction to the Windows Insider Program for Business
 description: In this article, you'll learn about the Windows Insider Program for Business and why IT Pros should join.
-keywords: updates, servicing, current, deployment, General Availability Channel, General Availability Channel, feature, quality, rings, insider, WiP4Biz, enterprise, rings, flight
-ms.custom: seo-marvel-apr2020
-ms.prod: w10
-ms.mktglfcycl: manage
-audience: itpro
-itproauthor: jaimeo
-author: jaimeo
-ms.audience: itpro
-ms.reviewer: 
-manager: laurawi
+ms.prod: windows-client
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.topic: article
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Introduction to the Windows Insider Program for Business
@@ -48,10 +44,10 @@ Windows 10 Insider Preview builds offer organizations a valuable and exciting op
 |Release channel  |**Fast Ring:** Insider Preview builds in the Fast Ring are released approximately once a week and contain the very latest features. This makes them ideal for feature exploration.|
 |Users    |    Because Fast Ring builds are released so early in the development cycle, we recommend limiting feature exploration in your organization to IT administrators and developers running Insider Preview builds on secondary devices.     |
 |Tasks   |  - Install and manage Insider Preview builds on devices (per device or centrally across multiple devices)<br>  - Explore new features in Windows designed for organizations, including new features related to current and planned line of business applications<br> - Before running an Insider Preview build, check our [Windows Insider blog](https://blogs.windows.com/windowsexperience/tag/windows-insider-program/#k3WWwxKCTWHCO82H.97) for a summary of current features.      |
-|Feedback   |  - Provide feedback via [Feedback Hub app](insiderhub://home/). This helps us make adjustments to features as quickly as possible.<br> - Encourage users to sign into the Feedback Hub using their AAD work accounts. This enables both you and Microsoft to track feedback submitted by users within your specific organization. (Note: This tracking is only visible to Microsoft and registered Insiders within your organization’s domain.)<br> - [Learn how to provide effective feedback in the Feedback Hub](https://insider.windows.com/how-to-feedback/)       |
+|Feedback   |  - This helps us make adjustments to features as quickly as possible.<br> - Encourage users to sign into the Feedback Hub using their Azure Active Directory work accounts. This enables both you and Microsoft to track feedback submitted by users within your specific organization. (Note: This tracking is only visible to Microsoft and registered Insiders within your organization’s domain.)<br> - [Learn how to provide effective feedback in the Feedback Hub](/windows-insider/feedback)       |
 
 ## Validate Insider Preview builds 
-Along with exploring new features, you also have the option to validate your apps and infrastructure on Insider Preview builds. This activity can play an important role in your [Windows 10 deployment strategy](/windows/deployment/update/waas-windows-insider-for-business). Early validation has several benefits:
+Along with exploring new features, you also have the option to validate your apps and infrastructure on Insider Preview builds. Early validation has several benefits:
 
 - Get a head start on your Windows validation process.
 - Identify issues sooner to accelerate your Windows deployment.

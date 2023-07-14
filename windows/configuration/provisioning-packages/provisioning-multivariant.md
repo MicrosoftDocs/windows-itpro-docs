@@ -1,15 +1,15 @@
 ---
 title: Create a provisioning package with multivariant settings (Windows 10/11)
 description: Create a provisioning package with multivariant settings to customize the provisioned settings for defined conditions.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: greg-lindsay
+ms.prod: windows-client
+author: lizgt2000
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: gkomatsu
-manager: dansimp
-ms.author: greglin
+manager: aaroncz
+ms.author: lizlong
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Create a provisioning package with multivariant settings
@@ -121,30 +121,30 @@ Follow these steps to create a provisioning package with multivariant capabiliti
     The following example shows the contents of a sample customizations.xml file.
 
     ```XML
-   &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; 
-   <WindowsCustomizatons> 
-   <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0"> 
-    <ID>{6aaa4dfa-00d7-4aaa-8adf-73c6a7e2501e}</ID> 
-    <Name>My Provisioning Package</Name> 
-    <Version>1.0</Version> 
-    <OwnerType>OEM</OwnerType> 
-    <Rank>50</Rank> 
-   </PackageConfig> 
-   <Settings xmlns="urn:schemas-microsoft-com:windows-provisioning"> 
-    <Customizations> 
-      <Common> 
-        <Policies> 
-          <AllowBrowser>0</AllowBrowser> 
-          <AllowCamera>0</AllowCamera> 
-          <AllowBluetooth>0</AllowBluetooth> 
-        </Policies> 
-        <HotSpot> 
-          <Enabled>0</Enabled> 
-        </HotSpot> 
-      </Common> 
-    </Customizations> 
-   </Settings> 
-   </WindowsCustomizatons> 
+   <?xml version="1.0" encoding="utf-8"?>
+   <WindowsCustomizations>
+     <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0">
+       <ID>{6aaa4dfa-00d7-4aaa-8adf-73c6a7e2501e}</ID>
+       <Name>My Provisioning Package</Name>
+       <Version>1.0</Version>
+       <OwnerType>OEM</OwnerType>
+       <Rank>50</Rank>
+     </PackageConfig>
+     <Settings xmlns="urn:schemas-microsoft-com:windows-provisioning">
+       <Customizations>
+         <Common>
+           <Policies>
+             <AllowBrowser>0</AllowBrowser>
+             <AllowCamera>0</AllowCamera>
+             <AllowBluetooth>0</AllowBluetooth>
+           </Policies>
+           <HotSpot>
+             <Enabled>0</Enabled>
+           </HotSpot>
+         </Common>
+       </Customizations>
+     </Settings>
+   </WindowsCustomizations> 
     ```
 
 5. Edit the customizations.xml file to create a **Targets** section to describe the conditions that will handle your multivariant settings. 
@@ -152,48 +152,48 @@ Follow these steps to create a provisioning package with multivariant capabiliti
     The following example shows the customizations.xml, which has been modified to include several conditions including **ProcessorName**, **ProcessorType**, **MCC**, and **MNC**.
     
     ```XML
-    <?xml version="1.0" encoding="utf-8"?> 
-   <WindowsCustomizatons> 
-   <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0"> 
-    <ID>{6aaa4dfa-00d7-4aaa-8adf-73c6a7e2501e}</ID> 
-    <Name>My Provisioning Package</Name> 
-    <Version>1.0</Version> 
-    <OwnerType>OEM</OwnerType> 
-    <Rank>50</Rank> 
-   </PackageConfig> 
-   <Settings xmlns="urn:schemas-microsoft-com:windows-provisioning"> 
-    <Customizations> 
-      <Common> 
-        <Policies> 
-          <AllowBrowser>0</AllowBrowser> 
-          <AllowCamera>0</AllowCamera> 
-          <AllowBluetooth>0</AllowBluetooth> 
-        </Policies> 
-        <HotSpot> 
-          <Enabled>0</Enabled> 
-        </HotSpot> 
-      </Common> 
-      <Targets> 
-        <Target Id="Unique target identifier for desktop"> 
-          <TargetState> 
-            <Condition Name="ProcessorName" Value="Pattern:.*Celeron.*" /> 
-            <Condition Name="ProcessorType" Value="Pattern:.*(I|i)ntel.*" /> 
-          </TargetState> 
-          <TargetState> 
-            <Condition Name="ProcessorName" Value="Barton" /> 
-            <Condition Name="ProcessorType" Value="Athlon MP" /> 
-          </TargetState> 
-        </Target> 
-        <Target Id="Mobile target"> 
-          <TargetState> 
-            <Condition Name="MCC" Value="Range:310, 320" /> 
-            <Condition Name="MNC" Value="!Range:400, 550" /> 
-          </TargetState> 
-        </Target> 
-      </Targets> 
-    </Customizations> 
-   </Settings> 
-   </WindowsCustomizatons> 
+   <?xml version="1.0" encoding="utf-8"?>
+   <WindowsCustomizations>
+     <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0">
+       <ID>{6aaa4dfa-00d7-4aaa-8adf-73c6a7e2501e}</ID>
+       <Name>My Provisioning Package</Name>
+       <Version>1.0</Version>
+       <OwnerType>OEM</OwnerType>
+       <Rank>50</Rank>
+     </PackageConfig>
+     <Settings xmlns="urn:schemas-microsoft-com:windows-provisioning">
+       <Customizations>
+         <Common>
+           <Policies>
+             <AllowBrowser>0</AllowBrowser>
+             <AllowCamera>0</AllowCamera>
+             <AllowBluetooth>0</AllowBluetooth>
+           </Policies>
+           <HotSpot>
+             <Enabled>0</Enabled>
+           </HotSpot>
+         </Common>
+         <Targets>
+           <Target Id="Unique target identifier for desktop">
+             <TargetState>
+               <Condition Name="ProcessorName" Value="Pattern:.*Celeron.*" />
+               <Condition Name="ProcessorType" Value="Pattern:.*(I|i)ntel.*" />
+             </TargetState>
+             <TargetState>
+               <Condition Name="ProcessorName" Value="Barton" />
+               <Condition Name="ProcessorType" Value="Athlon MP" />
+             </TargetState>
+           </Target>
+           <Target Id="Mobile target">
+             <TargetState>
+               <Condition Name="MCC" Value="Range:310, 320" />
+               <Condition Name="MNC" Value="!Range:400, 550" />
+             </TargetState>
+           </Target>
+         </Targets>
+       </Customizations>
+     </Settings>
+   </WindowsCustomizations> 
     ```
 
 6. In the customizations.xml file, create a **Variant** section for the settings you need to customize. To do this:
@@ -212,56 +212,56 @@ Follow these steps to create a provisioning package with multivariant capabiliti
     The following example shows the customizations.xml updated to include a **Variant** section and the moved settings that will be applied if the conditions for the variant are met.
 
     ```XML
-   &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt; 
-   <WindowsCustomizatons> 
-   <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0">
-    <ID>{6aaa4dfa-00d7-4aaa-8adf-73c6a7e2501e}</ID> 
-    <Name>My Provisioning Package</Name> 
-    <Version>1.0</Version> 
-    <OwnerType>OEM</OwnerType> 
-    <Rank>50</Rank> 
-   </PackageConfig> 
-   <Settings xmlns="urn:schemas-microsoft-com:windows-provisioning"> 
-    <Customizations> 
-      <Common> 
-      </Common> 
-      <Targets> 
-        <Target Id="Unique target identifier for desktop"> 
-          <TargetState> 
-            <Condition Name="ProcessorName" Value="Pattern:.*Celeron.*" /> 
-            <Condition Name="ProcessorType" Value="Pattern:.*(I|i)ntel.*" /> 
-          </TargetState> 
-          <TargetState> 
-            <Condition Name="ProcessorName" Value="Barton" /> 
-            <Condition Name="ProcessorType" Value="Athlon MP" /> 
-          </TargetState> 
-        </Target> 
-        <Target Id="Mobile target"> 
-          <TargetState> 
-            <Condition Name="MCC" Value="Range:310, 320" /> 
-            <Condition Name="MNC" Value="!Range:400, 550" /> 
-          </TargetState> 
-        </Target>
-      </Targets> 
-      <Variant> 
-        <TargetRefs> 
-          <TargetRef Id="Unique target identifier for desktop" /> 
-          <TargetRef Id="Mobile target" /> 
-        </TargetRefs> 
-        <Settings> 
-          <Policies> 
-            <AllowBrowser>1</AllowBrowser> 
-            <AllowCamera>1</AllowCamera> 
-            <AllowBluetooth>1</AllowBluetooth> 
-          </Policies> 
-          <HotSpot> 
-            <Enabled>1</Enabled> 
-          </HotSpot> 
-        </Settings> 
-      </Variant> 
-    </Customizations> 
-   </Settings> 
-   </WindowsCustomizatons> 
+   <?xml version="1.0" encoding="utf-8"?>
+   <WindowsCustomizations>
+     <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0">
+       <ID>{6aaa4dfa-00d7-4aaa-8adf-73c6a7e2501e}</ID>
+       <Name>My Provisioning Package</Name>
+       <Version>1.0</Version>
+       <OwnerType>OEM</OwnerType>
+       <Rank>50</Rank>
+     </PackageConfig>
+     <Settings xmlns="urn:schemas-microsoft-com:windows-provisioning">
+       <Customizations>
+         <Common>
+         </Common>
+         <Targets>
+           <Target Id="Unique target identifier for desktop">
+             <TargetState>
+               <Condition Name="ProcessorName" Value="Pattern:.*Celeron.*" />
+               <Condition Name="ProcessorType" Value="Pattern:.*(I|i)ntel.*" />
+             </TargetState>
+             <TargetState>
+               <Condition Name="ProcessorName" Value="Barton" />
+               <Condition Name="ProcessorType" Value="Athlon MP" />
+             </TargetState>
+           </Target>
+           <Target Id="Mobile target">
+             <TargetState>
+               <Condition Name="MCC" Value="Range:310, 320" />
+               <Condition Name="MNC" Value="!Range:400, 550" />
+             </TargetState>
+           </Target>
+         </Targets>
+         <Variant>
+           <TargetRefs>
+             <TargetRef Id="Unique target identifier for desktop" />
+             <TargetRef Id="Mobile target" />
+           </TargetRefs>
+           <Settings>
+             <Policies>
+               <AllowBrowser>1</AllowBrowser>
+               <AllowCamera>1</AllowCamera>
+               <AllowBluetooth>1</AllowBluetooth>
+             </Policies>
+             <HotSpot>
+               <Enabled>1</Enabled>
+             </HotSpot>
+           </Settings>
+         </Variant>
+       </Customizations>
+     </Settings>
+   </WindowsCustomizations> 
     ```
 
 7. Save the updated customizations.xml file and note the path to this updated file. You will need the path as one of the values for the next step.

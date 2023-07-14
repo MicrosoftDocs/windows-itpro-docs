@@ -2,28 +2,28 @@
 title: Update your Billing account settings
 description: The billing account page in Microsoft Store for Business and Microsoft Store for Education, and M365 admin center shows information about your organization that you can update, including country or region, organization contact info, agreements with Microsoft and admin approvals.
 keywords: billing accounts, organization info
-ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
-author: TrudyHa
-ms.author: TrudyHa
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 07/21/2021
-ms.reviewer: 
-manager: dansimp
+ms.date: 05/24/2023
 ---
 
 # Update Billing account settings
 
 > [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
+>
+> - The retirement of Microsoft Store for Business and Microsoft Store for Education has been postponed. We will update this notice when a new retirement date is announced. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Update to Intune integration with the Microsoft Store on Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/update-to-endpoint-manager-integration-with-the-microsoft-store/ba-p/3585077) and [FAQ: Supporting Microsoft Store experiences on managed devices](https://techcommunity.microsoft.com/t5/windows-management/faq-supporting-microsoft-store-experiences-on-managed-devices/m-p/3585286).
+> - In April 2023 the Microsoft Store for Business tab was removed from Microsoft Store apps on Windows 10 and Windows 11 PCs. An interaction with existing MDM and GPO policies may lead to customers seeing errors when accessing the Microsoft Store app. For more information see [Microsoft Store for Business tab removed](manage-access-to-private-store.md#microsoft-store-for-business-tab-removed).
 
-A billing account contains defining information about your organization. 
+A billing account contains defining information about your organization.
 
->[!NOTE]
->Billing accounts are available in Microsoft Store for Business, and M365 admin center preview. For more information, see [aka.ms/aboutM365preview](/microsoft-365/admin/microsoft-365-admin-center-preview).
+> [!NOTE]
+> Billing accounts are available in Microsoft Store for Business, and the Microsoft 365 admin center. For more information, see [Understand your Microsoft billing account](/microsoft-365/commerce/manage-billing-accounts).
 
 The **Billing account** page allows you to manage organization information, purchasing agreements that you have with Microsoft, and admin approvals. The organization information and payment options are required before you can shop for products that have a price.
 
@@ -35,9 +35,9 @@ We need your business address, email contact, and tax-exemption certificates tha
 
 Before purchasing apps that have a fee, you need to add or update your organization's business address, contact email address, and contact name.
 
-We use the Business address to calculate sales tax. If your organization's address has already been entered for other commercial purchases through Microsoft Store, or through other online purchases such as Office 365 or Azure subscriptions, then we’ll use the same address in Microsoft Store for Business and Microsoft Store for Education. If we don’t have an address, we’ll ask you to enter it during your first purchase.
+We use the Business address to calculate sales tax. If your organization's address has already been entered for other commercial purchases through Microsoft Store, or through other online purchases such as Office 365 or Azure subscriptions, then we'll use the same address in Microsoft Store for Business and Microsoft Store for Education. If we don't have an address, we'll ask you to enter it during your first purchase.
 
-We need an email address in case we need to contact you about your Microsoft Store for Business and for Education account. This email account should reach the admin for your organization’s Office 365 or Azure AD tenant that is used with Microsoft Store.
+We need an email address in case we need to contact you about your Microsoft Store for Business and for Education account. This email account should reach the admin for your organization's Office 365 or Azure AD tenant that is used with Microsoft Store.
 
 **To update billing account information**
 1. Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com) or [Microsoft Store for Education](https://educationstore.microsoft.com)
@@ -100,7 +100,7 @@ If you qualify for tax-exempt status in your market, start a service request to 
 1.  Sign in to the [Microsoft Store for Business](https://businessstore.microsoft.com).
 2. Select **Manage**, click **Support**, and then under **Store settings & configuration** select **Create technical support ticket**.
 
-You’ll need this documentation:
+You'll need this documentation:
 
 |Country/Region or locale | Documentation |
 |------------------|----------------|

@@ -18,41 +18,9 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "hololens",
-      "build_source_folder": "devices/hololens",
-      "build_output_subfolder": "hololens",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "internet-explorer",
       "build_source_folder": "browsers/internet-explorer",
       "build_output_subfolder": "internet-explorer",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "keep-secure",
-      "build_source_folder": "windows/keep-secure",
-      "build_output_subfolder": "keep-secure",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
@@ -82,38 +50,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "release-information",
-      "build_source_folder": "windows/release-information",
-      "build_output_subfolder": "release-information",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "smb",
-      "build_source_folder": "smb",
-      "build_output_subfolder": "smb",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "store-for-business",
       "build_source_folder": "store-for-business",
       "build_output_subfolder": "store-for-business",
@@ -121,22 +57,6 @@
       "monikers": [],
       "moniker_ranges": [],
       "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "win-access-protection",
-      "build_source_folder": "windows/access-protection",
-      "build_output_subfolder": "win-access-protection",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -210,89 +130,9 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "win-device-security",
-      "build_source_folder": "windows/device-security",
-      "build_output_subfolder": "win-device-security",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "windows-configure",
-      "build_source_folder": "windows/configure",
-      "build_output_subfolder": "windows-configure",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "windows-deploy",
-      "build_source_folder": "windows/deploy",
-      "build_output_subfolder": "windows-deploy",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "windows-hub",
       "build_source_folder": "windows/hub",
       "build_output_subfolder": "windows-hub",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "windows-manage",
-      "build_source_folder": "windows/manage",
-      "build_output_subfolder": "windows-manage",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "windows-plan",
-      "build_source_folder": "windows/plan",
-      "build_output_subfolder": "windows-plan",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
@@ -338,38 +178,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "windows-update",
-      "build_source_folder": "windows/update",
-      "build_output_subfolder": "windows-update",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "win-threat-protection",
-      "build_source_folder": "windows/threat-protection",
-      "build_output_subfolder": "win-threat-protection",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "win-whats-new",
       "build_source_folder": "windows/whats-new",
       "build_output_subfolder": "win-whats-new",
@@ -386,9 +194,7 @@
       "template_folder": "_themes"
     }
   ],
-  "notification_subscribers": [
-    "elizapo@microsoft.com"
-  ],
+  "notification_subscribers": [],
   "sync_notification_subscribers": [
     "dstrome@microsoft.com"
   ],
@@ -397,21 +203,19 @@
   ],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/windows-itpro-docs",
   "git_repository_branch_open_to_public_contributors": "public",
-  "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "resolve_user_profile_using_github": true,
-  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     },
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     }
   ],
@@ -420,20 +224,20 @@
       "Publish",
       "Pdf"
     ],
-    "master": [
+    "main": [
       "Publish",
       "Pdf"
     ]
   },
-  "need_generate_pdf_url_template": true,
   "targets": {
     "Pdf": {
       "template_folder": "_themes.pdf"
     }
   },
-  "docs_build_engine": {
-    "name": "docfx_v3"
-  },
+  "docs_build_engine": {},
+  "skip_source_output_uploading": false,
+  "need_generate_pdf_url_template": true,
+  "contribution_branch_mappings": {},
   "need_generate_pdf": false,
   "need_generate_intellisense": false
 }

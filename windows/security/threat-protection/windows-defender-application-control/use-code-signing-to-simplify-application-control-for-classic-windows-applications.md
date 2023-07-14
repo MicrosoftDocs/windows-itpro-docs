@@ -1,24 +1,18 @@
 ---
-title: Use code signing to simplify application control for classic Windows applications (Windows)
-description: With embedded signing, your WDAC policies typically do not have to be updated when an app is updated. To set this up, you can choose from a variety of methods.
-keywords: security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+title: Use code signing for added control and protection with WDAC
+description: Code signing can be used to better control Win32 app authorization and add protection for your Windows Defender Application Control (WDAC) policies.
+ms.prod: windows-client
 ms.localizationpriority: medium
-audience: ITPro
-ms.collection: M365-security-compliance
+ms.topic: conceptual
 author: jsuther1974
-ms.reviewer: isbrahm
-ms.author: dansimp
-manager: dansimp
-ms.date: 05/03/2018
-ms.technology: windows-sec
+ms.reviewer: jogeurte
+ms.author: vinpa
+manager: aaroncz
+ms.date: 11/29/2022
+ms.technology: itpro-security
 ---
 
-# Use code signing to simplify application control for classic Windows applications
+# Use code signing for added control and protection with Windows Defender Application Control
 
 **Applies to:**
 
@@ -27,47 +21,35 @@ ms.technology: windows-sec
 - Windows Server 2016 and above
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. For more information, see [Windows Defender Application Control feature availability](feature-availability.md).
 
-This topic covers guidelines for using code signing control classic Windows apps.
+## What is code signing and why is it important?
 
-## Reviewing your applications: application signing and catalog files
+Code signing provides some important benefits to application security features like Windows Defender Application Control (WDAC). First, it allows the system to cryptographically verify that a file hasn't been tampered with since it was signed and before any code is allowed to run. Second, it associates the file with a real-world identity, such as a company or an individual developer. This identity can make your policy trust decisions easier and allows for real-world consequences when code signing is abused or used maliciously. Although Windows doesn't require software developers to digitally sign their code, most major independent software vendors (ISV) do use code signing for much of their code. And metadata that a developer includes in a file's resource header (.RSRC), such as OriginalFileName or ProductName, can be combined with the file's signing certificate to limit the scope of trust decisions. For example, instead of allowing everything signed by Microsoft, you can choose to allow only files signed by Microsoft where ProductName is "Microsoft Teams". Then use other rules to authorize any other files that need to run.
 
-Typically, WDAC policies are configured to use the application's signing certificate as part or all of what identifies the application as trusted. This means that applications must either use embedded signing—where the signature is part of the binary—or catalog signing, where you generate a "catalog file" from the applications, sign it, and through the signed catalog file, configure the WDAC policy to recognize the applications as signed.
+Wherever possible, you should require all app binaries and scripts are code signed as part of your app acceptance criteria. And, you should ensure that internal line-of-business (LOB) app developers have access to code signing certificates controlled by your organization.
 
-Catalog files can be very useful for unsigned LOB applications that cannot easily be given an embedded signature. However, catalogs need to be updated each time an application is updated. In contrast, with embedded signing, your WDAC policies typically do not have to be updated when an application is updated. For this reason, if code-signing is or can be included in your in-house application development process, it can simplify the management of WDAC (compared to using catalog signing).
+## Catalog signing
 
-To obtain signed applications or embed signatures in your in-house applications, you can choose from a variety of methods:
+App binaries and scripts are typically either embed-signed or catalog-signed. Embedded signatures become part of the file itself and are carried with the file wherever it's copied or moved. Catalog signatures, on the other hand, are detached from the individual file(s). Instead, a separate "catalog file" is created that contains hash values for one or more files to be signed. This catalog file is then digitally signed and applied to any computer where you want the signature to exist. Any file whose hash value is included in the signed catalog inherits the signature from the catalog file. A file may have multiple signatures, including a mix of embedded and catalog signatures.
 
-- Using the Microsoft Store publishing process. All apps that come out of the Microsoft Store are automatically signed with special signatures that can roll-up to our certificate authority (CA) or to your own.
-
-- Using your own digital certificate or public key infrastructure (PKI). ISV's and enterprises can sign their own Classic Windows applications themselves, adding themselves to the trusted list of signers.
-
-- Using a non-Microsoft signing authority. ISV's and enterprises can use a trusted non-Microsoft signing authority to sign all of their own Classic Windows applications.
-
-To use catalog signing, you can choose from the following options:
-
-- Use the Windows Defender signing portal available in the Microsoft Store for Business and Education. The portal is a Microsoft web service that you can use to sign your Classic Windows applications. 
-
-- Create your own catalog files, which are described in the next section. 
-
-### Catalog files
-
-Catalog files (which you can create in Windows 10 and Windows 11 with a tool called Package Inspector) contain information about all deployed and executed binary files associated with your trusted but unsigned applications. When you create catalog files, you can also include signed applications for which you do not want to trust the signer but rather the specific application. After creating a catalog, you must sign the catalog file itself by using enterprise public key infrastructure (PKI), or a purchased code signing certificate. Then you can distribute the catalog, so that your trusted applications can be handled by WDAC in the same way as any other signed application.
-
-Catalog files are simply Secure Hash Algorithm 2 (SHA2) hash lists of discovered binaries. These binaries' hash values are updated each time an application is updated, which requires the catalog file to be updated also.
-
-After you have created and signed your catalog files, you can configure your WDAC policies to trust the signer or signing certificate of those files.
+You can use catalog files to easily add a signature to an existing application without needing access to the original source files and without any expensive repackaging. You can even use catalog files to add your own signature to an ISV app when you don't want to trust everything the ISV signs directly, themselves. Then you just deploy the signed catalog along with the app to all your managed endpoints.
 
 > [!NOTE]
-> Package Inspector only works on operating systems that support Windows Defender, such as Windows 10 and Windows 11 Enterprise, Windows 10 and Windows 11 Education, Windows 2016 Server, or Windows Enterprise IoT.
+> Since catalogs identify the files they sign by hash, any change to the file may invalidate its signature. You will need to deploy updated catalog signatures any time the application is updated. Integrating code signing with your app development or app deployment processes is generally the best approach. Be aware of self-updating apps, as their app binaries may change without your knowledge.
 
-For procedures for working with catalog files, see [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-windows-defender-application-control.md).
+To learn how to create and manage catalog files for existing apps, see [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-windows-defender-application-control.md).
 
-## Windows Defender Application Control policy formats and signing
+## Signed WDAC policies
 
-When you generate a WDAC policy, you are generating a binary-encoded XML document that includes configuration settings for both the User and Kernel-modes of Windows 10 and Windows 11 Enterprise, along with restrictions on Windows 10 and Windows 11 script hosts. You can view your original XML document in a text editor, for example if you want to check the rule options that are present in the **&lt;Rules&gt;** section of the file.
+While a WDAC policy begins as an XML document, it's then converted into a binary-encoded file before deployment. This binary version of your policy can be code signed like any other application binary, offering many of the same benefits as described above for signed code. Additionally, signed policies are treated specially by WDAC and help protect against tampering or removal of a policy even by an admin user.
 
-We recommend that you keep the original XML file for use when you need to merge the WDAC policy with another policy or update its rule options. For deployment purposes, the file is converted to a binary format, which can be done using a simple Windows PowerShell command.
+For more information on using signed policies, see [Use signed policies to protect Windows Defender Application Control against tampering](/windows/security/threat-protection/windows-defender-application-control/use-signed-policies-to-protect-windows-defender-application-control-against-tampering)
 
-When the WDAC policy is deployed, it restricts the software that can run on a device. The XML document can be signed, helping to add additional protection against administrative users changing or removing the policy. 
+## Obtain code signing certificates for your own use
+
+Some ways to obtain code signing certificates for your own use, include:
+
+- Purchase a code signing certificate from one of the [Microsoft Trusted Root Program participants](/security/trusted-root/participants-list).
+- To use your own digital certificate or public key infrastructure (PKI) to issue code signing certificates, see [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md).
+- Use Microsoft's [Azure Code Signing (ACS) service](https://aka.ms/AzureCodeSigning).

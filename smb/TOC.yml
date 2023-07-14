@@ -1,5 +1,0 @@
-- name: Windows 10 for SMB
-  href: index.md
-  items: 
-    - name: "Get started: Deploy and manage a full cloud IT solution for your business"
-      href: cloud-mode-business-setup.md

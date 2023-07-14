@@ -1,17 +1,18 @@
 ---
-title: 5140(S, F) A network share object was accessed. (Windows 10)
+title: 5140(S, F) A network share object was accessed. 
 description: Describes security event 5140(S, F) A network share object was accessed.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5140(S, F): A network share object was accessed.
@@ -78,13 +79,13 @@ This event generates once per session, when first access attempt was made.
 
 **Subject:**
 
--   **Security ID** \[Type = SID\]**:** SID of account that requested access to network share object. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
+-   **Security ID** \[Type = SID\]**:** SID of account that requested access to network share object. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID can't be resolved, you'll see the source data in the event.
 
 > **Note**&nbsp;&nbsp;A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
 
 -   **Account Name** \[Type = UnicodeString\]**:** the name of the account that requested access to network share object.
 
--   **Account Domain** \[Type = UnicodeString\]**:** subject’s domain or computer name. Formats vary, and include the following:
+-   **Account Domain** \[Type = UnicodeString\]**:** subject’s domain or computer name. Formats vary, and include the following ones:
 
     -   Domain NETBIOS name example: CONTOSO
 
@@ -120,7 +121,7 @@ This event generates once per session, when first access attempt was made.
 
     -   ::1 or 127.0.0.1 means localhost.
 
--   **Source Port** \[Type = UnicodeString\]: source TCP or UDP port which was used from remote or local machine to request the access.
+-   **Source Port** \[Type = UnicodeString\]: source TCP or UDP port that was used from remote or local machine to request the access.
 
     -   0 for local access attempts.
 
@@ -132,9 +133,9 @@ This event generates once per session, when first access attempt was made.
 
 **Access Request Information:**
 
--   **Access Mask** \[Type = HexInt32\]: the sum of hexadecimal values of requested access rights. See “Table 13. File access codes.” for different hexadecimal values for access rights. Has always “**0x1**” value for this event.
+-   **Access Mask** \[Type = HexInt32\]: the sum of hexadecimal values of requested access rights. See [Table of file access codes](/windows/security/threat-protection/auditing/event-5145#table-of-file-access-codes) for different hexadecimal values for access rights. It always has “**0x1**” value for this event.
 
--   **Accesses** \[Type = UnicodeString\]: the list of access rights which were requested by **Subject\\Security ID**. These access rights depend on **Object Type**. Has always “**ReadData (or ListDirectory)**” value for this event.
+-   **Accesses** \[Type = UnicodeString\]: the list of access rights that were requested by **Subject\\Security ID**. These access rights depend on **Object Type**. Has always “**ReadData (or ListDirectory)**” value for this event.
 
 ## Security Monitoring Recommendations
 
@@ -144,9 +145,9 @@ For 5140(S, F): A network share object was accessed.
 
 - If you have high-value computers for which you need to monitor all access to all shares or specific shares (“**Share Name**”), monitor this event<b>.</b> For example, you could monitor share **C$** on domain controllers.
 
-- Monitor this event if the **Network Information\\Source Address** is not from your internal IP range.
+- Monitor this event if the **Network Information\\Source Address** isn't from your internal IP range.
 
-- Monitor this event if the **Network Information\\Source Address** should not be able to connect with the specific computer (**Computer:**).
+- Monitor this event if the **Network Information\\Source Address** shouldn't be able to connect with the specific computer (**Computer:**).
 
 - If you need to monitor access attempts to local shares from a specific IP address (“**Network Information\\Source Address”)**, use this event.
 

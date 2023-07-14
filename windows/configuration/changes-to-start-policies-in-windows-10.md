@@ -1,18 +1,15 @@
 ---
 title: Changes to Group Policy settings for Windows 10 Start menu (Windows 10)
 description: Learn about changes to Group Policy settings for the Windows 10 Start menu. Also, learn about the new Windows 10 Start experience.
-ms.assetid: 612FB68A-3832-451F-AA97-E73791FEAA9F
 ms.reviewer: 
-manager: dansimp
-keywords: ["group policy", "start menu", "start screen"]
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-author: greg-lindsay
-ms.author: greglin
+manager: aaroncz
+ms.prod: windows-client
+author: lizgt2000
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/28/2017
+ms.technology: itpro-configure
 ---
 
 # Changes to Group Policy settings for Windows 10 Start
@@ -32,27 +29,27 @@ These policy settings are available in **Administrative Templates\\Start Menu an
 |Policy|Notes|
 |--- |--- |
 |Clear history of recently opened documents on exit|Documents that the user opens are tracked during the session. When the user signs off, the history of opened documents is deleted.|
-|Do not allow pinning items in Jump Lists|Jump Lists are lists of recently opened items, such as files, folders, or websites, organized by the program that you use to open them. This policy prevents users from pinning items to any Jump List.|
-|Do not display or track items in Jump Lists from remote locations|When this policy is applied, only items local on the computer are shown in Jump Lists.|
-|Do not keep history of recently opened documents|Documents that the user opens are not tracked during the session.|
-|Prevent changes to Taskbar and Start Menu Settings|In Windows 10, this disables all of the settings in **Settings** > **Personalization** > **Start** as well as the options in dialog available via right-click Taskbar > **Properties**|
+|Don't allow pinning items in Jump Lists|Jump Lists are lists of recently opened items, such as files, folders, or websites, organized by the program that you use to open them. This policy prevents users from pinning items to any Jump List.|
+|Don't display or track items in Jump Lists from remote locations|When this policy is applied, only items local on the computer are shown in Jump Lists.|
+|Don't keep history of recently opened documents|Documents that the user opens aren't tracked during the session.|
+|Prevent changes to Taskbar and Start Menu Settings|In Windows 10, this policy disables all of the settings in **Settings** > **Personalization** > **Start** and the options in dialog available via right-click Taskbar > **Properties**|
 |Prevent users from customizing their Start Screen|Use this policy in conjunction with a [customized Start layout](windows-10-start-layout-options-and-policies.md) to prevent users from changing it|
-|Prevent users from uninstalling applications from Start|In Windows 10, this removes the uninstall button in the context menu. It does not prevent users from uninstalling the app through other entry points (e.g. PowerShell)|
-|Remove All Programs list from the Start menu|In Windows 10, this removes the **All apps** button.|
-|Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands|This removes the Shut Down, Restart, Sleep, and Hibernate commands from the Start Menu, Start Menu power button, CTRL+ALT+DEL screen, and Alt+F4 Shut Down Windows menu.|
-|Remove common program groups from Start Menu|As in earlier versions of Windows, this removes apps specified in the All Users profile from Start|
-|Remove frequent programs list from the Start Menu|In Windows 10, this removes the top left **Most used** group of apps.|
+|Prevent users from uninstalling applications from Start|In Windows 10, this policy removes the uninstall button in the context menu. It doesn't prevent users from uninstalling the app through other entry points (for example, PowerShell)|
+|Remove All Programs list from the Start menu|In Windows 10, this policy removes the **All apps** button.|
+|Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands|This policy removes the Shut Down, Restart, Sleep, and Hibernate commands from the Start Menu, Start Menu power button, CTRL+ALT+DEL screen, and Alt+F4 Shut Down Windows menu.|
+|Remove common program groups from Start Menu|As in earlier versions of Windows, this policy removes apps specified in the All Users profile from Start|
+|Remove frequent programs list from the Start Menu|In Windows 10, this policy removes the top left **Most used** group of apps.|
 |Remove Logoff on the Start Menu|**Logoff** has been changed to **Sign Out** in the user interface, however the functionality is the same.|
-|Remove pinned programs list from the Start Menu|In Windows 10, this removes the bottom left group of apps (by default, only File Explorer and Settings are pinned).|
-|Show "Run as different user" command on Start|This enables the **Run as different user** option in the right-click menu for apps.|
-|Start Layout|This applies a specific Start layout, and it also prevents users from changing the layout. This policy can be configured in **User Configuration** or **Computer Configuration**.|
-|Force Start to be either full screen size or menu size|This applies a specific size for Start.|
+|Remove pinned programs list from the Start Menu|In Windows 10, this policy removes the bottom left group of apps (by default, only File Explorer and Settings are pinned).|
+|Show "Run as different user" command on Start|This policy enables the **Run as different user** option in the right-click menu for apps.|
+|Start Layout|This policy applies a specific Start layout, and it also prevents users from changing the layout. This policy can be configured in **User Configuration** or **Computer Configuration**.|
+|Force Start to be either full screen size or menu size|This policy applies a specific size for Start.|
  
 
 ## <a href="" id="deprecated-group-policy-settings-for-start-"></a>Deprecated Group Policy settings for Start
 
 
-The Start policy settings listed below do not work on Windows 10. Most of them were deprecated in Windows 8 however a few more were deprecated in Windows 10. Deprecation in this case means that the policy setting will not work on Windows 10. The “Supported on” text for a policy setting will not list Windows 10. The policy settings are still in the Group Policy Management Console and can be used on the operating systems that they apply to.
+The Start policy settings listed below don't work on Windows 10. Most of them were deprecated in Windows 8 however a few more were deprecated in Windows 10. Deprecation in this case means that the policy setting won't work on Windows 10. The “Supported on” text for a policy setting won't list Windows 10. The policy settings are still in the Group Policy Management Console and can be used on the operating systems that they apply to.
 
 | Policy                                                                           | When deprecated |
 |----------------------------------------------------------------------------------|-----------------|
@@ -94,7 +91,7 @@ The Start policy settings listed below do not work on Windows 10. Most of them 
 - [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
 - [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
 - [Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-- [Customize Windows 10 Start and tasbkar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
+- [Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 
 
 

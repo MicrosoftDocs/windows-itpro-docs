@@ -1,33 +1,33 @@
 ---
-title: Create a pagefile - security policy setting (Windows 10)
+title: Create a pagefile - security policy setting 
 description: Describes the best practices, location, values, policy management, and security considerations for the Create a pagefile security policy setting.
 ms.assetid: dc087897-459d-414b-abe0-cd86c8dccdea
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Create a pagefile - security policy setting
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Create a pagefile** security policy setting.
 
 ## Reference
 
-Windows designates a section of the hard drive as virtual memory known as the page file, or more specifically, as pagefile.sys. It is used to supplement the computer’s Random Access Memory (RAM) to improve performance for frequently used programs and data. Although the file is hidden from browsing, you can manage it using the system settings.
+Windows designates a section of the hard drive as virtual memory known as the page file, or more specifically, as pagefile.sys. It's used to supplement the computer’s Random Access Memory (RAM) to improve performance for frequently used programs and data. Although the file is hidden from browsing, you can manage it using the system settings.
 
 This policy setting determines which users can create and change the size of a page file. It determines whether users can specify a page file size for a particular drive in the **Performance Options** box located on the **Advanced** tab of the **System Properties** dialog box or through using internal application interfaces (APIs).
 
@@ -63,7 +63,7 @@ The following table lists the actual and effective default policy values for the
  
 ## Policy management
 
-A restart of the device is not required for this policy setting to be effective.
+A restart of the device isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 
@@ -84,7 +84,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-Users who can change the page file size could make it extremely small or move the file to a highly fragmented storage volume, which could cause reduced device performance.
+Users who can change the page file size could make it small or move the file to a highly fragmented storage volume, which could cause reduced device performance.
 
 ### Countermeasure
 

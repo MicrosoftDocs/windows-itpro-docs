@@ -1,141 +1,157 @@
 ---
-title: Policy CSP - ADMX_SharedFolders
-description: Policy CSP - ADMX_SharedFolders
-ms.author: dansimp
+title: ADMX_SharedFolders Policy CSP
+description: Learn more about the ADMX_SharedFolders Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 09/21/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_SharedFolders-Begin -->
 # Policy CSP - ADMX_SharedFolders
-> [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ADMX_SharedFolders policies  
+<!-- ADMX_SharedFolders-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_SharedFolders-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-sharedfolders-publishdfsroots">ADMX_SharedFolders/PublishDfsRoots</a>
-  </dd>
-  <dd>
-    <a href="#admx-sharedfolders-publishsharedfolders">ADMX_SharedFolders/PublishSharedFolders</a>
-  </dd>
-</dl>
+<!-- PublishDfsRoots-Begin -->
+## PublishDfsRoots
 
-<hr/>
+<!-- PublishDfsRoots-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PublishDfsRoots-Applicability-End -->
 
-<!--Policy-->
-<a href="" id="admx-sharedfolders-publishdfsroots"></a>**ADMX_SharedFolders/PublishDfsRoots**  
+<!-- PublishDfsRoots-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_SharedFolders/PublishDfsRoots
+```
+<!-- PublishDfsRoots-OmaUri-End -->
 
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- PublishDfsRoots-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting determines whether the user can publish DFS roots in Active Directory Domain Services (AD DS).
 
-If you enable or do not configure this policy setting, users can use the "Publish in Active Directory" option to publish DFS roots as shared folders in AD DS .
+- If you enable or don't configure this policy setting, users can use the "Publish in Active Directory" option to publish DFS roots as shared folders in AD DS .
 
-If you disable this policy setting, users cannot publish DFS roots in AD DS and the "Publish in Active Directory" option is disabled. 
+- If you disable this policy setting, users can't publish DFS roots in AD DS and the "Publish in Active Directory" option is disabled.
 
 > [!NOTE]
-> The default is to allow shared folders to be published when this setting is not configured.
+> The default is to allow shared folders to be published when this setting isn't configured.
+<!-- PublishDfsRoots-Description-End -->
 
-<!--/Description-->
+<!-- PublishDfsRoots-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PublishDfsRoots-Editable-End -->
 
+<!-- PublishDfsRoots-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow DFS roots to be published*
--   GP name: *PublishDfsRoots*
--   GP path: *Shared Folders*
--   GP ADMX file name: *SharedFolders.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PublishDfsRoots-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- PublishDfsRoots-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<hr/>
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-sharedfolders-publishsharedfolders"></a>**ADMX_SharedFolders/PublishSharedFolders**  
+| Name | Value |
+|:--|:--|
+| Name | PublishDfsRoots |
+| Friendly Name | Allow DFS roots to be published |
+| Location | User Configuration |
+| Path | Shared Folders |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\SharedFolders |
+| Registry Value Name | PublishDfsRoots |
+| ADMX File Name | SharedFolders.admx |
+<!-- PublishDfsRoots-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- PublishDfsRoots-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PublishDfsRoots-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- PublishDfsRoots-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- PublishSharedFolders-Begin -->
+## PublishSharedFolders
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- PublishSharedFolders-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- PublishSharedFolders-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- PublishSharedFolders-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_SharedFolders/PublishSharedFolders
+```
+<!-- PublishSharedFolders-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- PublishSharedFolders-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting determines whether the user can publish shared folders in Active Directory Domain Services (AD DS).
 
-If you enable or do not configure this policy setting, users can use the "Publish in Active Directory" option in the Shared Folders snap-in to publish shared folders in AD DS.
+- If you enable or don't configure this policy setting, users can use the "Publish in Active Directory" option in the Shared Folders snap-in to publish shared folders in AD DS.
 
-If you disable this policy setting, users cannot publish shared folders in AD DS, and the "Publish in Active Directory" option is disabled. 
+- If you disable this policy setting, users can't publish shared folders in AD DS, and the "Publish in Active Directory" option is disabled.
 
 > [!NOTE]
-> The default is to allow shared folders to be published when this setting is not configured.
+> The default is to allow shared folders to be published when this setting isn't configured.
+<!-- PublishSharedFolders-Description-End -->
 
-<!--/Description-->
+<!-- PublishSharedFolders-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PublishSharedFolders-Editable-End -->
 
+<!-- PublishSharedFolders-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow shared folders to be published*
--   GP name: *PublishSharedFolders*
--   GP path: *Shared Folders*
--   GP ADMX file name: *SharedFolders.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- PublishSharedFolders-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- PublishSharedFolders-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | PublishSharedFolders |
+| Friendly Name | Allow shared folders to be published |
+| Location | User Configuration |
+| Path | Shared Folders |
+| Registry Key Name | Software\Policies\Microsoft\Windows NT\SharedFolders |
+| Registry Value Name | PublishSharedFolders |
+| ADMX File Name | SharedFolders.admx |
+<!-- PublishSharedFolders-AdmxBacked-End -->
 
-<!--/Policies-->
+<!-- PublishSharedFolders-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PublishSharedFolders-Examples-End -->
 
+<!-- PublishSharedFolders-End -->
+
+<!-- ADMX_SharedFolders-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_SharedFolders-CspMoreInfo-End -->
+
+<!-- ADMX_SharedFolders-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

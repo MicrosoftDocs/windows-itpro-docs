@@ -1,37 +1,25 @@
 ---
-title: Merge AppLocker policies manually (Windows)
+title: Merge AppLocker policies manually
 description: This topic for IT professionals describes the steps to manually merge AppLocker policies to update the Group Policy Object (GPO).
-ms.assetid: 3605f293-e5f2-481d-8efd-775f9f23c30f
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
+ms.author: vinpa
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
-audience: ITPro
-ms.collection: M365-security-compliance
+author: vinaypamnani-msft
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Merge AppLocker policies manually
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals describes the steps to manually merge AppLocker policies to update the Group Policy Object (GPO).
 
-If you have created multiple AppLocker policies and need to merge them to create one AppLocker policy, you can either manually merge the policies or use the Windows PowerShell cmdlets for AppLocker. You cannot automatically merge policies by using the AppLocker console. You must create one rule collection from two or more policies. For info about merging policies by using the cmdlet, see [Merge AppLocker policies by using Set-ApplockerPolicy](merge-applocker-policies-by-using-set-applockerpolicy.md).
+If you have created multiple AppLocker policies and need to merge them to create one AppLocker policy, you can either manually merge the policies or use the Windows PowerShell cmdlets for AppLocker. You can't automatically merge policies by using the AppLocker console. You must create one rule collection from two or more policies. For info about merging policies by using the cmdlet, see [Merge AppLocker policies by using Set-ApplockerPolicy](merge-applocker-policies-by-using-set-applockerpolicy.md).
 
 The AppLocker policy is saved in XML format, and the exported policy can be edited with any text or XML editor. Rule collections are specified within the **RuleCollection Type** element. The XML schema includes five attributes for the different rule collections, as shown in the following table:
 
@@ -51,7 +39,7 @@ Rule enforcement is specified with the **EnforcementMode** element. The three en
 | AuditOnly | Audit only| 
 | Enabled | Enforce rules| 
  
-Each of the three condition types use specific elements. For XML examples of the different rule types, see Merge AppLocker policies manually.
+Each of the three condition types uses specific elements. For XML examples of the different rule types, see Merge AppLocker policies manually.
 
 Membership in the local **Administrators** group, or equivalent, is the minimum required to complete this procedure.
 
@@ -63,4 +51,4 @@ Membership in the local **Administrators** group, or equivalent, is the minimum 
 4.  Open the policy where you want to add the copied rules.
 5.  Select and expand the rule collection where you want to add the rules.
 6.  At the bottom of the rule list for the collection, after the closing element, paste the rules that you copied from the first policy file. Verify that the opening and closing elements are intact, and then save the policy.
-7.  Upload the policy to a reference computer to ensure that it is functioning properly within the GPO.
+7.  Upload the policy to a reference computer to ensure that it's functioning properly within the GPO.

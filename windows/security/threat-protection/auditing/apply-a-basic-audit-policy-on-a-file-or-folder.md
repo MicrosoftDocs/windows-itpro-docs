@@ -1,21 +1,23 @@
 ---
-title: Apply a basic audit policy on a file or folder (Windows 10)
+title: Apply a basic audit policy on a file or folder 
 description: Apply audit policies to individual files and folders on your computer by setting the permission type to record access attempts in the security log.
 ms.assetid: 565E7249-5CD0-4B2E-B2C0-B3A0793A51E2
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: none
-author: dansimp
-manager: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection: 
+  - highpri
+  - tier3
 ms.topic: conceptual
 ms.date: 09/06/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Apply a basic audit policy on a file or folder
@@ -64,7 +66,7 @@ To complete this procedure, you must be signed in as a member of the built-in Ad
  
 ## More considerations
 
--   After you turn on object access auditing, view the security login Event Viewer to review the results of your changes.
+-   After you turn on object access auditing, view the security log in Event Viewer to review the results of your changes.
 -   You can set up file and folder auditing only on NTFS drives.
 -   Because the security log is limited in size, carefully select the files and folders to be audited. Also, consider the amount of disk space that you want to devote to the security log. The maximum size for the security log is defined in Event Viewer.
  

@@ -1,17 +1,16 @@
 ---
 title: Deploying App-V packages by using electronic software distribution (ESD)
 description: Deploying App-V packages by using electronic software distribution (ESD)
-author: greg-lindsay
-ms.pagetype: mdop, appcompat, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.prod: w10
+author: aczechowski
+ms.prod: windows-client
 ms.date: 09/27/2018
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-apps
 ---
+
 # Deploying App-V packages by using electronic software distribution (ESD)
 
 [!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
@@ -28,7 +27,7 @@ To learn more about how to deploy virtualized packages using an ESD, see [How to
 
 To learn how to configure the App-V client to enable only administrators to publish and unpublish packages when you’re using an ESD, see [How to enable only administrators to publish packages by using an ESD](appv-enable-administrators-to-publish-packages-with-electronic-software-distribution-solutions.md).
 
-## Related topics
+## Related articles
 
 - [App-V and Citrix integration](https://www.microsoft.com/download/details.aspx?id=40885)
 - [Operations for App-V](appv-operations.md)

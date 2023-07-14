@@ -1,18 +1,19 @@
 ---
-title: Audit Security System Extension (Windows 10)
+title: Audit Security System Extension 
 description: The Advanced Security Audit policy setting, Audit Security System Extension, determines if audit events related to security system extensions are generated.
 ms.assetid: 9f3c6bde-42b2-4a0a-b353-ed3106ebc005
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
+manager: aaroncz
+ms.author: vinpa
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/06/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # Audit Security System Extension

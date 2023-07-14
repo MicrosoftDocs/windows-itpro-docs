@@ -1,87 +1,89 @@
 ---
-title: Policy CSP - ADMX_DistributedLinkTracking
-description: Policy CSP - ADMX_DistributedLinkTracking
-ms.author: dansimp
+title: ADMX_DistributedLinkTracking Policy CSP
+description: Learn more about the ADMX_DistributedLinkTracking Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 03/22/2021
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_DistributedLinkTracking-Begin -->
 # Policy CSP - ADMX_DistributedLinkTracking
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<hr/>
+<!-- ADMX_DistributedLinkTracking-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_DistributedLinkTracking-Editable-End -->
 
-<!--Policies-->
-## ADMX_DistributedLinkTracking policies  
+<!-- DLT_AllowDomainMode-Begin -->
+## DLT_AllowDomainMode
 
-<dl>
-  <dd>
-    <a href="#admx-distributedlinktracking-dlt_allowdomainmode">ADMX_DistributedLinkTracking/DLT_AllowDomainMode</a>
-  </dd>
-</dl>
+<!-- DLT_AllowDomainMode-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DLT_AllowDomainMode-Applicability-End -->
 
+<!-- DLT_AllowDomainMode-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_DistributedLinkTracking/DLT_AllowDomainMode
+```
+<!-- DLT_AllowDomainMode-OmaUri-End -->
 
-<hr/>
+<!-- DLT_AllowDomainMode-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Specifies that Distributed Link Tracking clients in this domain may use the Distributed Link Tracking (DLT) server, which runs on domain controllers. The DLT client enables programs to track linked files that are moved within an NTFS volume, to another NTFS volume on the same computer, or to an NTFS volume on another computer. The DLT client can more reliably track links when allowed to use the DLT server. This policy shouldn't be set unless the DLT server is running on all domain controllers in the domain.
+<!-- DLT_AllowDomainMode-Description-End -->
 
-<!--Policy-->
-<a href="" id="admx-distributedlinktracking-dlt_allowdomainmode"></a>**ADMX_DistributedLinkTracking/DLT_AllowDomainMode**  
+<!-- DLT_AllowDomainMode-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+**Note** This policy setting applies to all sites in Trusted zones.
+<!-- DLT_AllowDomainMode-Editable-End -->
 
-<!--SupportedSKUs-->
+<!-- DLT_AllowDomainMode-DFProperties-Begin -->
+**Description framework properties**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DLT_AllowDomainMode-DFProperties-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DLT_AllowDomainMode-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+**ADMX mapping**:
 
-> [!div class = "checklist"]
-> * Machine
+| Name | Value |
+|:--|:--|
+| Name | DLT_AllowDomainMode |
+| Friendly Name | Allow Distributed Link Tracking clients to use domain resources |
+| Location | Computer Configuration |
+| Path | System |
+| Registry Key Name | Software\Policies\Microsoft\Windows\System |
+| Registry Value Name | DLT_AllowDomainMode |
+| ADMX File Name | DistributedLinkTracking.admx |
+<!-- DLT_AllowDomainMode-AdmxBacked-End -->
 
-<hr/>
+<!-- DLT_AllowDomainMode-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DLT_AllowDomainMode-Examples-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy specifies that Distributed Link Tracking clients in this domain may use the Distributed Link Tracking (DLT) server, which runs on domain controllers.  
-The DLT client enables programs to track linked  files that are moved within an NTFS volume, to another NTFS volume on the same computer, or to an NTFS volume on  another computer.   
-The DLT client can more reliably track links when allowed to use the DLT server.  
-This policy should not be set unless the DLT server is running on all domain controllers in the domain.
+<!-- DLT_AllowDomainMode-End -->
 
-> [!NOTE]
-> This policy setting applies to all sites in Trusted zones.
+<!-- ADMX_DistributedLinkTracking-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_DistributedLinkTracking-CspMoreInfo-End -->
 
-<!--/Description-->
+<!-- ADMX_DistributedLinkTracking-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow Distributed Link Tracking clients to use domain resources*
--   GP name: *DLT_AllowDomainMode*
--   GP path: *Windows\System!DLT_AllowDomainMode*
--   GP ADMX file name: *DistributedLinkTracking.admx*
+## Related articles
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-
-<!--/Policies-->
-
+[Policy configuration service provider](policy-configuration-service-provider.md)

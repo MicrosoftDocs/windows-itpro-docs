@@ -1,100 +1,130 @@
 ---
-title: Policy CSP - Troubleshooting
-description: The Policy CSP - Troubleshooting setting allows IT admins to configure how to apply recommended troubleshooting for known problems on the devices in their domains.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: MariciaAlforque
+title: Troubleshooting Policy CSP
+description: Learn more about the Troubleshooting Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/11/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Troubleshooting-Begin -->
 # Policy CSP - Troubleshooting
 
+<!-- Troubleshooting-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Troubleshooting-Editable-End -->
 
+<!-- AllowRecommendations-Begin -->
+## AllowRecommendations
 
-<hr/>
+<!-- AllowRecommendations-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- AllowRecommendations-Applicability-End -->
 
-<!--Policies-->
-## Troubleshooting policies  
+<!-- AllowRecommendations-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Troubleshooting/AllowRecommendations
+```
+<!-- AllowRecommendations-OmaUri-End -->
 
-<dl>
-  <dd>
-    <a href="#troubleshooting-allowrecommendations">Troubleshooting/AllowRecommendations</a>
-  </dd>
-</dl>
+<!-- AllowRecommendations-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting configures how troubleshooting for known problems can be applied on the device and lets administrators configure how it's applied to their domains/IT environments.
 
+Not configuring this policy setting will allow the user to configure how troubleshooting is applied.
 
-<hr/>
+Enabling this policy allows you to configure how troubleshooting is applied on the user's device. You can select from one of the following values:
 
-<!--Policy-->
-<a href="" id="troubleshooting-allowrecommendations"></a>**Troubleshooting/AllowRecommendations**  
+0 = Don't allow users, system features, or Microsoft to apply troubleshooting.
 
-<!--SupportedSKUs-->
+1 = Only automatically apply troubleshooting for critical problems by system features and Microsoft.
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+2 = Automatically apply troubleshooting for critical problems by system features and Microsoft. Notify users when troubleshooting for other problems is available and allow users to choose to apply or ignore.
 
-<!--/SupportedSKUs-->
-<hr/>
+3 = Automatically apply troubleshooting for critical and other problems by system features and Microsoft. Notify users when troubleshooting has solved a problem.
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+4 = Automatically apply troubleshooting for critical and other problems by system features and Microsoft. Don't notify users when troubleshooting has solved a problem.
 
-> [!div class = "checklist"]
-> * Device
+5 = Allow the user to choose their own troubleshooting settings.
 
-<hr/>
+After setting this policy, you can use the following instructions to check devices in your domain for available troubleshooting from Microsoft:
 
-<!--/Scope-->
-<!--Description-->
-This policy setting allows IT admins to configure how to apply recommended troubleshooting for known problems on the devices in their domains or IT environments.
+1. Create a bat script with the following contents:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Troubleshooting: Allow users to access recommended troubleshooting for known problems*
--   GP name: *TroubleshootingAllowRecommendations*
--   GP path: *Troubleshooting and Diagnostics/Microsoft Support Diagnostic Tool*
--   GP ADMX file name: *MSDT.admx*
+rem The following batch script triggers Recommended Troubleshooting schtasks /run /TN "\Microsoft\Windows\Diagnosis\RecommendedTroubleshootingScanner".
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-This is a numeric policy setting with merge algorithm (lowest value is the most secure) that uses the most restrictive settings for complex manageability scenarios.
+2. To create a new immediate task, navigate to the Group Policy Management Editor > Computer Configuration > Preferences and select Control Panel Settings.
 
-Supported values:  
--   0 (default) - Turn this feature off.
--   1 - Turn this feature off but still apply critical troubleshooting.
--   2 - Notify users when recommended troubleshooting is available, then allow the user to run or ignore it.
--   3 - Run recommended troubleshooting automatically and notify the user after it ran successfully.
--   4 - Run recommended troubleshooting automatically without notifying the user.
--   5 - Allow the user to choose their own recommended troubleshooting settings.
+3. Under Control Panel settings, right-click on Scheduled Tasks and select New. Select Immediate Task (At least Windows 7).
 
-By default, this policy is not configured and the SKU based defaults are used for managed devices. Current policy values for SKU's are as follows:
+4. Provide name and description as appropriate, then under Security Options set the user account to System and select the Run with highest privileges checkbox.
 
-|SKU|Unmanaged Default|Managed Default|
-|--- |--- |--- |
-|Home|Prompt (OOBE)|Off|
-|Pro|Prompt (OOBE)|Off|
-|Education|On (auto)|Off|
-|Enterprise|Off|Off|
-|Government|Off|Off|
+5. In the Actions tab, create a new action, select Start a Program as its type, then enter the file created in step 1.
 
-<!--/SupportedValues-->
-<!--Example-->
+6. Configure the task to deploy to your domain.
+<!-- AllowRecommendations-Description-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- AllowRecommendations-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowRecommendations-Editable-End -->
 
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
+<!-- AllowRecommendations-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Policies-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowRecommendations-DFProperties-End -->
 
+<!-- AllowRecommendations-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Off - Don't allow users, system features, or Microsoft to apply troubleshooting. |
+| 1 (Default) | Critical - Automatically apply troubleshooting for critical problems detected by system features and Microsoft. Don't notify users when troubleshooting has solved a problem. |
+| 2 | Prompt - Automatically apply troubleshooting for critical problems detected by system features and Microsoft. Prompt users when troubleshooting for other problems is available and allow the user to choose to apply or ignore. |
+| 3 | Notify - Automatically apply troubleshooting for critical and other problems detected by system features and Microsoft. Notify users when troubleshooting has solved a problem. |
+| 4 | Silent - Automatically apply troubleshooting for critical and other problems detected by system features and Microsoft. Don't notify users when troubleshooting has solved a problem. |
+| 5 | Configurable - Allow the user to choose their own troubleshooting settings. |
+<!-- AllowRecommendations-AllowedValues-End -->
+
+<!-- AllowRecommendations-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TroubleshootingAllowRecommendations |
+| Friendly Name | Troubleshooting: Allow users to access recommended troubleshooting for known problems |
+| Location | Computer Configuration |
+| Path | System > Troubleshooting and Diagnostics > Microsoft Support Diagnostic Tool |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Troubleshooting\AllowRecommendations |
+| Registry Value Name | TroubleshootingAllowRecommendations |
+| ADMX File Name | MSDT.admx |
+<!-- AllowRecommendations-GpMapping-End -->
+
+<!-- AllowRecommendations-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowRecommendations-Examples-End -->
+
+<!-- AllowRecommendations-End -->
+
+<!-- Troubleshooting-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Troubleshooting-CspMoreInfo-End -->
+
+<!-- Troubleshooting-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

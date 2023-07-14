@@ -1,23 +1,21 @@
 ---
-title: 4774(S, F) An account was mapped for logon. (Windows 10)
+title: 4774(S, F) An account was mapped for logon. 
 description: Describes security event 4774(S, F) An account was mapped for logon. This event is generated when an account is mapped for logon.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
-# 4774(S, F): An account was mapped for logon.
-
-
-Success events do not appear to occur. Failure event [has been reported](http://forum.ultimatewindowssecurity.com/Topic7313-282-1.aspx). 
+# 4774(S, F): An account was mapped for logon
 
 ***Subcategory:***&nbsp;[Audit Credential Validation](audit-credential-validation.md)
 
@@ -25,11 +23,11 @@ Success events do not appear to occur. Failure event [has been reported](http://
 
 *An account was mapped for logon.*
 
-*Authentication Package:Schannel*
+*Authentication Package:* `<Authentication package>`
 
-*Account UPN:*<*Acccount*>@<*Domain*>
+*Account UPN:* `<Acccount>@<Domain>`
 
-*Mapped Name:*<*Account*>
+*Mapped Name:* `<Account>`
 
 ***Required Server Roles:*** no information.
 
@@ -39,5 +37,4 @@ Success events do not appear to occur. Failure event [has been reported](http://
 
 ## Security Monitoring Recommendations
 
--   There is no recommendation for this event in this document.
-
+- There is no recommendation for this event in this document.

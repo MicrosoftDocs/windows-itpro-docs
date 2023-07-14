@@ -1,82 +1,80 @@
 ---
-title: Policy CSP - TaskManager
-description: Learn how to use the Policy CSP - TaskManager setting to determine whether non-administrators can use Task Manager to end tasks.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+title: TaskManager Policy CSP
+description: Learn more about the TaskManager Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- TaskManager-Begin -->
 # Policy CSP - TaskManager
 
+<!-- TaskManager-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskManager-Editable-End -->
 
-<hr/>
+<!-- AllowEndTask-Begin -->
+## AllowEndTask
 
-<!--Policies-->
-## TaskManager policies  
+<!-- AllowEndTask-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+<!-- AllowEndTask-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#taskmanager-allowendtask">TaskManager/AllowEndTask</a>
-  </dd>
-</dl>
+<!-- AllowEndTask-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/TaskManager/AllowEndTask
+```
+<!-- AllowEndTask-OmaUri-End -->
 
+<!-- AllowEndTask-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting determines whether non-administrators can use Task Manager to end tasks - enabled (1) or disabled (0). Default: enabled.
+<!-- AllowEndTask-Description-End -->
 
-<hr/>
+<!-- AllowEndTask-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowEndTask-Editable-End -->
 
-<!--Policy-->
-<a href="" id="taskmanager-allowendtask"></a>**TaskManager/AllowEndTask**  
+<!-- AllowEndTask-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--SupportedSKUs-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowEndTask-DFProperties-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowEndTask-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/SupportedSKUs-->
-<hr/>
+| Value | Description |
+|:--|:--|
+| 0 | Disabled. EndTask functionality is blocked in TaskManager. |
+| 1 (Default) | Enabled. Users can perform EndTask in TaskManager. |
+<!-- AllowEndTask-AllowedValues-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowEndTask-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowEndTask-Examples-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowEndTask-End -->
 
-<hr/>
+<!-- TaskManager-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- TaskManager-CspMoreInfo-End -->
 
-<!--/Scope-->
-<!--Description-->
-This setting determines whether non-administrators can use Task Manager to end tasks.
+<!-- TaskManager-End -->
 
-Value type is integer. Supported values:  
--  0 - Disabled. EndTask functionality is blocked in TaskManager.
--  1 - Enabled (default).  Users can perform EndTask in TaskManager.
+## Related articles
 
-<!--/Description-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Example-->
-
-<!--/Example-->
-<!--Validation-->
-**Validation procedure:**  
-When this policy is set to 1 - users CAN execute 'End task' on processes in TaskManager 
-When the policy is set to 0 - users CANNOT execute 'End task' on processes in TaskManager
-
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
-
-
-<!--/Policies-->
-
+[Policy configuration service provider](policy-configuration-service-provider.md)

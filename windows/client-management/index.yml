@@ -6,18 +6,18 @@ summary: Find out how to apply custom configurations to Windows client devices. 
 metadata:
   title: Manage Windows client # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn about the administrative tools, tasks, and best practices for managing Windows clients across your enterprise. # Required; article description that is displayed in search results. < 160 chars.
-  services: windows-10
-  ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: subservice
-  ms.topic: landing-page # Required
+  ms.topic: landing-page
+  ms.prod: windows-client
+  ms.technology: itpro-manage
   ms.collection:
-    - windows-10
     - highpri
-  author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
-  ms.author: greglin #Required; microsoft alias of author; optional team alias.
-  ms.date: 08/05/2021 #Required; mm/dd/yyyy format.
+    - tier1
+  author: aczechowski
+  ms.author: aaroncz
+  manager: dougeby
+  ms.date: 04/13/2023
   localization_priority: medium
-    
+
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 landingContent:
@@ -28,24 +28,53 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Administrative Tools in Windows 10
-            url: administrative-tools-in-windows-10.md
-          - text: Create mandatory user profiles
-            url: mandatory-user-profile.md
-          - text: Mobile device management (MDM)
-            url: mdm/index.md
+          - text: Mobile device management (MDM) overview
+            url: mdm-overview.md
+      - linkListType: concept
+        links:
           - text: MDM for device updates
-            url: mdm/device-update-management.md
-          - text: Mobile device enrollment
-            url: mdm/mobile-device-enrollment.md
+            url: device-update-management.md
+          - text: Enterprise settings, policies, and app management
+            url: windows-mdm-enterprise-settings.md
+          - text: Windows Tools/Administrative Tools
+            url: client-tools/administrative-tools-in-windows.md
+          - text: Create mandatory user profiles
+            url: client-tools/mandatory-user-profile.md
 
-  # Card (optional)
-  - title: CSP reference documentation
+  - title: Device enrollment
     linkLists:
       - linkListType: overview
         links:
-          - text: Configuration service provider reference
-            url: mdm/configuration-service-provider-reference.md
+          - text: Mobile device enrollment
+            url: mobile-device-enrollment.md
+      - linkListType: concept
+        links:
+          - text: Enroll Windows devices
+            url: mdm-enrollment-of-windows-devices.md
+          - text: Automatic enrollment using Azure AD
+            url: azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md
+          - text: Automatic enrollment using group policy
+            url: enroll-a-windows-10-device-automatically-using-group-policy.md
+          - text: Bulk enrollment
+            url: bulk-enrollment-using-windows-provisioning-tool.md
+
+  # Card (optional)
+  - title: Configuration service provider reference
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: CSP reference
+            url: mdm/index.yml
+      - linkListType: concept
+        links:
+          - text: Understanding ADMX policies
+            url: understanding-admx-backed-policies.md
+          - text: WMI Bridge Provider
+            url: using-powershell-scripting-with-the-wmi-bridge-provider.md
+          - text: OMA DM protocol support
+            url: oma-dm-protocol-support.md
+      - linkListType: reference
+        links:
           - text: DynamicManagement CSP
             url: mdm/dynamicmanagement-csp.md
           - text: BitLocker CSP
@@ -59,11 +88,11 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Troubleshoot Windows 10 clients
-            url: windows-10-support-solutions.md
+          - text: Troubleshoot Windows clients
+            url: /troubleshoot/windows-client/welcome-windows-client
           - text: Advanced troubleshooting for Windows networking
-            url: troubleshoot-networking.md
-          - text: Advanced troubleshooting for Windows start-up
-            url: troubleshoot-networking.md
-          - text: Advanced troubleshooting for Windows networking
-            url: troubleshoot-windows-startup.md
+            url: /troubleshoot/windows-client/networking/networking-overview
+          - text: Advanced troubleshooting for Windows start-up and performance
+            url: /troubleshoot/windows-client/performance/performance-overview
+          - text: Advanced troubleshooting for user profiles and logon
+            url: /troubleshoot/windows-client/user-profiles-and-logon/userprofiles-and-logon-overview

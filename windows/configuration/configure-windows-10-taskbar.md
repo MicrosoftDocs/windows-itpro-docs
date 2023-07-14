@@ -1,29 +1,30 @@
 ---
-title: Configure Windows 10 taskbar (Windows 10)
-description: Administrators can pin additional apps to the taskbar and remove default pinned apps from the taskbar by adding a section to a layout modification XML file. 
-keywords: ["taskbar layout","pin apps"]
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-author: greg-lindsay
-ms.author: greglin
+title: Configure Windows 10 taskbar
+description: Administrators can pin more apps to the taskbar and remove default pinned apps from the taskbar by adding a section to a layout modification XML file.
+ms.prod: windows-client
+author: lizgt2000
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 01/18/2018
 ms.reviewer: 
-manager: dansimp
-ms.collection: highpri
+manager: aaroncz
+ms.collection:
+ - highpri
+ - tier2
+ms.technology: itpro-configure
 ---
+
 # Configure Windows 10 taskbar
 
-Starting in Windows 10, version 1607, administrators can pin additional apps to the taskbar and remove default pinned apps from the taskbar by adding a `<TaskbarLayout>` section to a layout modification XML file. This method never removes user-pinned apps from the taskbar.
+Starting in Windows 10, version 1607, administrators can pin more apps to the taskbar and remove default pinned apps from the taskbar by adding a `<TaskbarLayout>` section to a layout modification XML file. This method never removes user-pinned apps from the taskbar.
 
 > [!NOTE]
 > The only aspect of the taskbar that can currently be configured by the layout modification XML file is the layout.
 
-You can specify different taskbar configurations based on device locale and region. There is no limit on the number of apps that you can pin. You specify apps using the [Application User Model ID (AUMID)](./find-the-application-user-model-id-of-an-installed-app.md) or Desktop Application Link Path (the local path to the application). 
+You can specify different taskbar configurations based on device locale and region. There's no limit on the number of apps that you can pin. You specify apps using the [Application User Model ID (AUMID)](./find-the-application-user-model-id-of-an-installed-app.md) or Desktop Application Link Path (the local path to the application). 
 
-If you specify an app to be pinned that is not provisioned for the user on the computer, the pinned icon won't appear on the taskbar.
+If you specify an app to be pinned that isn't provisioned for the user on the computer, the pinned icon won't appear on the taskbar.
 
 The order of apps in the XML file dictates the order of pinned apps on the taskbar from left to right, to the right of any existing apps pinned by the user.
 
@@ -40,8 +41,8 @@ The following example shows how apps will be pinned: Windows default apps to the
 **To configure the taskbar:**
 
 1. Create the XML file.
-   * If you are also [customizing the Start layout](customize-and-export-start-layout.md), use `Export-StartLayout` to create the XML, and then add the `<CustomTaskbarLayoutCollection>` section from [the following sample](#sample-taskbar-configuration-added-to-start-layout-xml-file) to the file.
-   * If you are only configuring the taskbar, use [the following sample](#sample-taskbar-configuration-xml-file) to create a layout modification XML file.
+   * If you're also [customizing the Start layout](customize-and-export-start-layout.md), use `Export-StartLayout` to create the XML, and then add the `<CustomTaskbarLayoutCollection>` section from [the following sample](#sample-taskbar-configuration-added-to-start-layout-xml-file) to the file.
+   * If you're only configuring the taskbar, use [the following sample](#sample-taskbar-configuration-xml-file) to create a layout modification XML file.
 2. Edit and save the XML file. You can use [AUMID](./find-the-application-user-model-id-of-an-installed-app.md) or Desktop Application Link Path to identify the apps to pin to the taskbar.
    * Add `xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"` to the first line of the file, before the closing \>.
    * Use `<taskbar:UWA>` and [AUMID](./find-the-application-user-model-id-of-an-installed-app.md) to pin Universal Windows Platform apps.
@@ -55,7 +56,7 @@ The following example shows how apps will be pinned: Windows default apps to the
 
 ### Tips for finding AUMID and Desktop Application Link Path
 
-In the layout modification XML file, you will need to add entries for applications in the XML markup. In order to pin an application, you need either its AUMID or Desktop Application Link Path. 
+In the layout modification XML file, you'll need to add entries for applications in the XML markup. In order to pin an application, you need either its AUMID or Desktop Application Link Path. 
 
 The easiest way to find this data for an application is to:
 1.  Pin the application to the Start menu on a reference or testing PC.
@@ -207,7 +208,7 @@ By adding `PinListPlacement="Replace"` to `<CustomTaskbarLayoutCollection>`, you
 
 ## Configure taskbar by country or region
 
-The following example shows you how to configure taskbars by country or region. When the layout is applied to a computer, if there is no `<TaskbarPinList>` node with a region tag for the current region, the first `<TaskbarPinList>` node that has no specified region will be applied. When you specify one or more countries or regions in a `<TaskbarPinList>` node, the specified apps are pinned on computers configured for any of the specified countries or regions. 
+The following example shows you how to configure taskbars by country or region. When the layout is applied to a computer, if there's no `<TaskbarPinList>` node with a region tag for the current region, the first `<TaskbarPinList>` node that has no specified region will be applied. When you specify one or more countries or regions in a `<TaskbarPinList>` node, the specified apps are pinned on computers configured for any of the specified countries or regions. 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -326,5 +327,5 @@ The resulting taskbar for computers in any other country region:
 - [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
 - [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
 - [Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
-- [Customize Windows 10 Start and tasbkar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
+- [Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 - [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)

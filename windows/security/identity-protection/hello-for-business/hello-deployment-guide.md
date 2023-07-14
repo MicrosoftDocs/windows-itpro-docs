@@ -1,28 +1,10 @@
 ---
 title: Windows Hello for Business Deployment Overview
-description: Use this deployment guide to successfully deploy Windows Hello for Business in an existing environment. 
-keywords: identity, PIN, biometric, Hello, passport
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security, mobile
-audience: ITPro
-author: mapalko
-ms.author: mapalko
-manager: dansimp
-ms.collection:
-  - M365-identity-device-management
-  - highpri
-ms.topic: article
-localizationpriority: medium
+description: Use this deployment guide to successfully deploy Windows Hello for Business in an existing environment.
 ms.date: 02/15/2022
+ms.topic: article
 ---
 # Windows Hello for Business Deployment Overview
-
-**Applies to**
-
-- Windows 10, version 1703 or later
-- Windows 11
 
 Windows Hello for Business is the springboard to a world without passwords. It replaces username and password sign-in to Windows with strong user authentication based on an asymmetric key pair.
 
@@ -39,7 +21,7 @@ This guide assumes that baseline infrastructure exists which meets the requireme
 - Multi-factor Authentication is required during Windows Hello for Business provisioning
 - Proper name resolution, both internal and external names
 - Active Directory and an adequate number of domain controllers per site to support authentication
-- Active Directory Certificate Services 2012 or later (Note: certificate services are not needed for cloud trust deployments)
+- Active Directory Certificate Services 2012 or later (Note: certificate services are not needed for cloud Kerberos trust deployments)
 - One or more workstation computers running Windows 10, version 1703 or later
 
 If you are installing a server role for the first time, ensure the appropriate server operating system is installed, updated with the latest patches, and joined to the domain. This document provides guidance to install and configure the specific roles on that server.  
@@ -48,30 +30,30 @@ Do not begin your deployment until the hosting servers and infrastructure (not r
 
 ## Deployment and trust models
 
-Windows Hello for Business has three deployment models: Azure AD cloud only, hybrid, and on-premises. Hybrid has three trust models: *Key trust*, *certificate trust*, and *cloud trust*. On-premises deployment models only support *Key trust* and *certificate trust*.
+Windows Hello for Business has three deployment models: Azure AD cloud only, hybrid, and on-premises. Hybrid has three trust models: *Key Trust*, *Certificate Trust*, and *cloud Kerberos trust*. On-premises deployment models only support *Key Trust* and *Certificate Trust*.
 
 Hybrid deployments are for enterprises that use Azure Active Directory. On-premises deployments are for enterprises who exclusively use on-premises Active Directory. Remember that the environments that use Azure Active Directory must use the hybrid deployment model for all domains in that forest.
 
 The trust model determines how you want users to authenticate to the on-premises Active Directory:
 
 - The key-trust model is for enterprises who do not want to issue end-entity certificates to their users and have an adequate number of 2016 domain controllers in each site to support authentication. This still requires Active Directory Certificate Services for domain controller certificates.
-- The cloud-trust model is also for hybrid enterprises who do not want to issue end-entity certificates to their users and have an adequate number of 2016 domain controllers in each site to support authentication. This trust model is simpler to deploy than key trust and does not require Active Directory Certificate Services. We recommend using cloud trust instead of key trust if the clients in your enterprise support it.
+- The cloud-trust model is also for hybrid enterprises who do not want to issue end-entity certificates to their users and have an adequate number of 2016 domain controllers in each site to support authentication. This trust model is simpler to deploy than key trust and does not require Active Directory Certificate Services. We recommend using **cloud Kerberos trust** instead of **Key Trust** if the clients in your enterprise support it.
 - The certificate-trust model is for enterprises that *do* want to issue end-entity certificates to their users and have the benefits of certificate expiration and renewal, similar to how smart cards work today.
 - The certificate trust model also supports enterprises which are not ready to deploy Windows Server 2016 Domain Controllers.
 
 > [!Note]
-> RDP does not support authentication with Windows Hello for Business key trust or cloud trust deployments as a supplied credential. RDP is only supported with certificate trust deployments as a supplied credential at this time. Windows Hello for Business key trust and cloud trust can be used with [Windows Defender Remote Credential Guard](../remote-credential-guard.md).
+> RDP does not support authentication with Windows Hello for Business Key Trust or cloud Kerberos trust deployments as a supplied credential. RDP is only supported with certificate trust deployments as a supplied credential at this time. Windows Hello for Business Key Trust and cloud Kerberos trust can be used with [Windows Defender Remote Credential Guard](../remote-credential-guard.md).
 
 Following are the various deployment guides and models included in this topic:
 
-- [Hybrid Azure AD Joined Cloud Trust Deployment](hello-hybrid-cloud-trust.md)
+- [Hybrid Azure AD Joined cloud Kerberos trust Deployment](hello-hybrid-cloud-kerberos-trust.md)
 - [Hybrid Azure AD Joined Key Trust Deployment](hello-hybrid-key-trust.md)
 - [Hybrid Azure AD Joined Certificate Trust Deployment](hello-hybrid-cert-trust.md)
 - [Azure AD Join Single Sign-on Deployment Guides](hello-hybrid-aadj-sso.md)
 - [On Premises Key Trust Deployment](hello-deployment-key-trust.md)
 - [On Premises Certificate Trust Deployment](hello-deployment-cert-trust.md)
 
-For Windows Hello for Business hybrid [certificate trust prerequisites](hello-hybrid-cert-trust-prereqs.md#directory-synchronization) and [key trust prerequisites](hello-hybrid-key-trust-prereqs.md#directory-synchronization) deployments, you will need Azure Active Directory Connect to synchronize user accounts in the on-premises Active Directory with Azure Active Directory. For on-premises deployments, both key and certificate trust, use the Azure MFA server where the credentials are not synchronized to Azure Active Directory. Learn how to [deploy Multifactor Authentication Services (MFA) for key trust](hello-key-trust-validate-deploy-mfa.md) and [for certificate trust](hello-cert-trust-validate-deploy-mfa.md) deployments.
+For Windows Hello for Business hybrid [certificate trust prerequisites](/windows/security/identity-protection/hello-for-business/hello-hybrid-cert-trust#directory-synchronization) and [key trust prerequisites](/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust#directory-synchronization) deployments, you will need Azure Active Directory Connect to synchronize user accounts in the on-premises Active Directory with Azure Active Directory. For on-premises deployments, both key and certificate trust, use the Azure MFA server where the credentials are not synchronized to Azure Active Directory. Learn how to [deploy Multifactor Authentication Services (MFA) for key trust](hello-key-trust-validate-deploy-mfa.md) and [for certificate trust](hello-cert-trust-validate-deploy-mfa.md) deployments.
 
 ## Provisioning
 

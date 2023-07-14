@@ -1,37 +1,39 @@
 ---
-title: Create symbolic links (Windows 10)
+title: Create symbolic links 
 description: Describes the best practices, location, values, policy management, and security considerations for the Create symbolic links security policy setting.
 ms.assetid: 882922b9-0ff8-4ee9-8afc-4475515ee3fd
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Create symbolic links
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management, and security considerations for the **Create symbolic links** security policy setting.
 
 ## Reference
 
-This user right determines if users can create a symbolic link from the device they are logged on to.
+This user right determines if users can create a symbolic link from the device they're logged on to.
 
-A symbolic link is a file-system object that points to another file-system object. The object that's pointed to is called the target. Symbolic links are transparent to users. The links appear as normal files or directories, and they can be acted upon by the user or application in exactly the same manner. Symbolic links are designed to aid in migration and application compatibility with UNIX operating systems. Microsoft has implemented symbolic links to function just like UNIX links.
+A symbolic link is a file system object that points to another file system object that is called the target. Symbolic links are transparent to users. The links appear as normal files or directories, and they can be acted upon by the user or application in exactly the same manner. Symbolic links are designed to aid in migration and application compatibility with UNIX operating systems. Microsoft has implemented symbolic links to function just like UNIX links.
 
->**Warning:**   This privilege should only be given to trusted users. Symbolic links can expose security vulnerabilities in applications that aren't designed to handle them.
+> [!WARNING]
+> This privilege should only be given to trusted users. Symbolic links can expose security vulnerabilities in applications that aren't designed to handle them.
+
 Constant: SeCreateSymbolicLinkPrivilege
 
 ### Possible values
@@ -41,7 +43,7 @@ Constant: SeCreateSymbolicLinkPrivilege
 
 ### Best practices
 
--   Only trusted users should get this user right. Symbolic links can expose security vulnerabilities in applications that are not designed to handle them.
+-   Only trusted users should get this user right. Symbolic links can expose security vulnerabilities in applications that aren't designed to handle them.
 
 ### Location
 
@@ -66,7 +68,7 @@ The following table lists the actual and effective default policy values. Defaul
 
 This section describes different features and tools available to help you manage this policy.
 
-A restart of the device is not required for this policy setting to be effective.
+A restart of the device isn't required for this policy setting to be effective.
 
 Any change to the user rights assignment for an account becomes effective the next time the owner of the account logs on.
 
@@ -95,7 +97,7 @@ Users who have the **Create symbolic links** user right could inadvertently or m
 
 ### Countermeasure
 
-Do not assign the **Create symbolic links** user right to standard users. Restrict this right to trusted administrators. You can use the **fsutil** command to establish a symbolic link file system setting that controls the kind of symbolic links that can be created on a computer.
+Don't assign the **Create symbolic links** user right to standard users. Restrict this right to trusted administrators. You can use the **fsutil** command to establish a symbolic link file system setting that controls the kind of symbolic links that can be created on a computer.
 
 ### Potential impact
 

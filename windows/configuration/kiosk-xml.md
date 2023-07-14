@@ -1,18 +1,15 @@
 ---
 title: Assigned Access configuration kiosk XML reference (Windows 10/11)
 description: Learn about the assigned access configuration (kiosk) for XML and XSD for kiosk device configuration in Windows 10/11.
-ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
 ms.reviewer: sybruckm
-manager: dansimp
-keywords: ["lockdown", "app restrictions", "applocker"]
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: edu, security
-author: greg-lindsay
+manager: aaroncz
+ms.prod: windows-client
+author: lizgt2000
 ms.localizationpriority: medium
-ms.author: greglin
+ms.author: lizlong
 ms.topic: article
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Assigned Access configuration (kiosk) XML reference
@@ -64,7 +61,7 @@ ms.topic: article
                               <!-- A link file is required for desktop applications to show on start layout, the link file can be placed under
                                    "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs" if the link file is shared for all users or
                                    "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only 
-                                   see document https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop
+                                   see document https://learn.microsoft.com/windows/configuration/start-layout-xml-desktop
                               -->
                               <!-- for inbox desktop applications, a link file might already exist and can be used directly -->
                               <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs\Accessories\paint.lnk" />
@@ -197,7 +194,7 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
                               <!-- A link file is required for desktop applications to show on start layout, the link file can be placed under
                                    "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs" if the link file is shared for all users or
                                    "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only 
-                                   see document https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop
+                                   see document https://learn.microsoft.com/windows/configuration/start-layout-xml-desktop
                               -->
                               <!-- for inbox desktop applications, a link file might already exist and can be used directly -->
                               <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs\Accessories\paint.lnk" />
@@ -254,16 +251,38 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
 
 ```
 
+## Microsoft Edge Kiosk XML Sample
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration
+  xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+  xmlns:v4="http://schemas.microsoft.com/AssignedAccess/2021/config"
+  >
+  <Profiles>
+    <Profile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}">      
+        <KioskModeApp v4:ClassicAppPath="%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe" v4:ClassicAppArguments="--no-first-run --kiosk-idle-timeout-minutes=5 --kiosk www.bing.com" />
+        <v4:BreakoutSequence Key="Ctrl+A"/>
+    </Profile>
+  </Profiles>
+  <Configs>
+    <Config>
+      <Account>EdgeKioskUser</Account>
+      <DefaultProfile Id="{AFF9DA33-AE89-4039-B646-3A5706E92957}"/>
+    </Config>
+  </Configs>
+</AssignedAccessConfiguration>
+```
+
 ## Global Profile Sample XML
 
 Global Profile is supported on:
 
-- Windows 10 version 2004+
 - Windows 11
+- Windows 10, version 2004 and later
 
-Global Profile is designed for scenarios where a user does not have a designated profile, yet IT Admin still wants the user to run in lockdown mode, or used as mitigation when a profile cannot be determined for a user.
+Global Profile is designed for scenarios where a user doesn't have a designated profile, yet you still want the user to run in lockdown mode. It's also used as mitigation when a profile can't be determined for a user.
 
-This sample demonstrates that only a global profile is used, no active user configured. Global profile will be applied when every non-admin account logs in.
+This sample demonstrates that only a global profile is used, with no active user configured. Global Profile will be applied when every non-admin account signs in.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -294,7 +313,7 @@ This sample demonstrates that only a global profile is used, no active user conf
                               <!-- A link file is required for desktop applications to show on start layout, the link file can be placed under
                                    "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs" if the link file is shared for all users or
                                    "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only 
-                                   see document https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop
+                                   see document https://learn.microsoft.com/windows/configuration/start-layout-xml-desktop
                               -->
                               <!-- for inbox desktop applications, a link file might already exist and can be used directly -->
                               <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs\Accessories\paint.lnk" />
@@ -346,7 +365,7 @@ Below sample shows dedicated profile and global profile mixed usage, a user woul
                               <!-- A link file is required for desktop applications to show on start layout, the link file can be placed under
                                    "%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs" if the link file is shared for all users or
                                    "%AppData%\Microsoft\Windows\Start Menu\Programs" if the link file is for the specific user only 
-                                   see document https://docs.microsoft.com/windows/configuration/start-layout-xml-desktop
+                                   see document https://learn.microsoft.com/windows/configuration/start-layout-xml-desktop
                               -->
                               <!-- for inbox desktop applications, a link file might already exist and can be used directly -->
                               <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%AllUsersProfile%\Microsoft\Windows\Start Menu\Programs\Accessories\paint.lnk" />
@@ -642,13 +661,12 @@ IT Admin now can specify user access to Downloads folder, Removable drives, or n
 
 ## XSD for AssignedAccess configuration XML
 
->[!NOTE]
->Updated for Windows 10, version 1903+.
+> [!NOTE]
+> Updated for Windows 10, version 1903 and later.
 
-The following XML schema is for AssignedAccess Configuration up to Windows 10 1803 release:
+The following XML schema is for AssignedAccess Configuration up to Windows 10, version 1803 release:
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?>
 <xs:schema
     elementFormDefault="qualified"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
@@ -656,11 +674,13 @@ The following XML schema is for AssignedAccess Configuration up to Windows 10 18
     xmlns:default="http://schemas.microsoft.com/AssignedAccess/2017/config"
     xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
     xmlns:v3="http://schemas.microsoft.com/AssignedAccess/2020/config"
+    xmlns:v4="http://schemas.microsoft.com/AssignedAccess/2021/config"
     targetNamespace="http://schemas.microsoft.com/AssignedAccess/2017/config"
     >
 
     <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/201810/config"/>
     <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/2020/config"/>
+    <xs:import namespace="http://schemas.microsoft.com/AssignedAccess/2021/config"/>
 
     <xs:complexType name="profile_list_t">
         <xs:sequence minOccurs="1" >
@@ -670,7 +690,13 @@ The following XML schema is for AssignedAccess Configuration up to Windows 10 18
 
     <xs:complexType name="kioskmodeapp_t">
         <xs:attribute name="AppUserModelId" type="xs:string"/>
+        <xs:attributeGroup ref="ClassicApp_attributeGroup"/>
     </xs:complexType>
+
+    <xs:attributeGroup name="ClassicApp_attributeGroup">
+        <xs:attribute ref="v4:ClassicAppPath"/>
+        <xs:attribute ref="v4:ClassicAppArguments" use="optional"/>
+    </xs:attributeGroup>
 
     <xs:complexType name="profile_t">
         <xs:choice>
@@ -680,7 +706,19 @@ The following XML schema is for AssignedAccess Configuration up to Windows 10 18
                 <xs:element name="StartLayout" type="xs:string" minOccurs="1" maxOccurs="1"/>
                 <xs:element name="Taskbar" type="taskbar_t" minOccurs="1" maxOccurs="1"/>
             </xs:sequence>
-            <xs:element name="KioskModeApp" type="kioskmodeapp_t" minOccurs="1" maxOccurs="1"/>
+            <xs:sequence minOccurs="1" maxOccurs="1">
+                <xs:element name="KioskModeApp" type="kioskmodeapp_t" minOccurs="1" maxOccurs="1">
+                    <xs:key name="mutualExclusionAumidOrClassicAppPath">
+                        <xs:selector xpath="."/>
+                        <xs:field xpath="@AppUserModelId|@v4:ClassicAppPath"/>
+                    </xs:key>
+                    <xs:unique name="mutualExclusionAumidOrClassicAppArgumentsOptional">
+                        <xs:selector xpath="."/>
+                        <xs:field xpath="@AppUserModelId|@v4:ClassicAppArguments"/>
+                    </xs:unique>
+                </xs:element>
+                <xs:element ref="v4:BreakoutSequence" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
         </xs:choice>
         <xs:attribute name="Id" type="guid_t" use="required"/>
         <xs:attribute name="Name" type="xs:string" use="optional"/>
@@ -781,6 +819,7 @@ The following XML schema is for AssignedAccess Configuration up to Windows 10 18
     <xs:simpleType name="specialGroupType_t">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Visitor"/>
+            <xs:enumeration value="DeviceOwner"/>
         </xs:restriction>
     </xs:simpleType>
 

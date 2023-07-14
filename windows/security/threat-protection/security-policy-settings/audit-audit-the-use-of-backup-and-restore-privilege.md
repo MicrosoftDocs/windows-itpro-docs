@@ -3,24 +3,24 @@ title: "Audit: Audit the use of Backup and Restore privilege (Windows 10)"
 description: "Describes the best practices, location, values, and security considerations for the 'Audit: Audit the use of Backup and Restore privilege' security policy setting."
 ms.assetid: f656a2bb-e8d6-447b-8902-53df3a7756c5
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/01/2019
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Audit: Audit the use of Backup and Restore privilege
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Audit: Audit the use of Backup and Restore privilege** security policy setting.
@@ -62,11 +62,11 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a computer restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a computer restart when they're saved locally or distributed through Group Policy.
 
 ### Auditing
 
-Enabling this policy setting in conjunction with the **Audit privilege use** policy setting records any instance of user rights that are being exercised in the security log. If **Audit privilege use** is enabled but **Audit: Audit the use of Backup and Restore privilege** is disabled, when users back up or restore user rights, those events will not be audited.
+Enabling this policy setting in conjunction with the **Audit privilege use** policy setting records any instance of user rights that are being exercised in the security log. If **Audit privilege use** is enabled but **Audit: Audit the use of Backup and Restore privilege** is disabled, when users back up or restore user rights, those events won't be audited.
 
 Enabling this policy setting when the **Audit privilege use** policy setting is also enabled generates an audit event for every file that is backed up or restored. This setup can help you to track down an administrator who is accidentally or maliciously restoring data in an unauthorized manner.
 

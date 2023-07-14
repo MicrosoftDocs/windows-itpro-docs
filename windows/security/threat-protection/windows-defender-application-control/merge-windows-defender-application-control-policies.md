@@ -1,17 +1,16 @@
 ---
-title: Merge Windows Defender Application Control policies (WDAC) (Windows)
-description: Learn how to merge WDAC policies as part of your policy lifecycle management. 
+title: Merge Windows Defender Application Control policies (WDAC) 
+description: Learn how to merge WDAC policies as part of your policy lifecycle management.
 keywords: security, malware
-ms.prod: m365-security
+ms.prod: windows-client
 audience: ITPro
-ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: jogeurte
 ms.author: jogeurte
 ms.manager: jsuther
-manager: dansimp
+manager: aaroncz
 ms.date: 04/22/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ms.topic: article
 ms.localizationpriority: medium
 ---
@@ -25,16 +24,16 @@ ms.localizationpriority: medium
 -   Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-This article shows how to merge multiple policy XML files together and how to merge rules directly into a policy. WDAC deployments often include a few base policies and optional supplemental policies for specific use cases.
+This article shows how to merge multiple policy XML files together and how to merge rules directly into a policy. Windows Defender Application Control deployments often include a few base policies and optional supplemental policies for specific use cases.
 
 > [!NOTE]
-> Prior to Windows version 1903, including Windows Server 2019 and earlier, only one WDAC policy can be active on a system at a time. If you need to use WDAC on systems running these earlier versions of Windows, you must merge all policies before deploying.
+> Prior to Windows version 1903, including Windows Server 2019 and earlier, only one Windows Defender Application Control policy can be active on a system at a time. If you need to use WDAC on systems running these earlier versions of Windows, you must merge all policies before deploying.
 
 ## Merge multiple WDAC policy XML files together
 
-There are many scenarios where you may want to merge two or more policy files together. For example, if you [use audit events to create WDAC policy rules](audit-windows-defender-application-control-policies.md), you can merge those rules with your existing WDAC base policy. To merge the two WDAC policies referenced in that article, complete the following steps in an elevated Windows PowerShell session.
+There are many scenarios where you may want to merge two or more policy files together. For example, if you [use audit events to create Windows Defender Application Control policy rules](audit-windows-defender-application-control-policies.md), you can merge those rules with your existing WDAC base policy. To merge the two WDAC policies referenced in that article, complete the following steps in an elevated Windows PowerShell session.
 
 1. Initialize the variables that will be used:
 
@@ -45,7 +44,7 @@ There are many scenarios where you may want to merge two or more policy files to
    $MergedPolicy=$env:userprofile+"\Desktop\"+$PolicyName+"_Merged.xml"
    ```
 
-2. Use [Merge-CIPolicy](/powershell/module/configci/merge-cipolicy) to merge two policies and create a new WDAC policy:
+2. Use [Merge-CIPolicy](/powershell/module/configci/merge-cipolicy) to merge two policies and create a new Windows Defender Application Control policy:
 
    ```powershell
    Merge-CIPolicy -PolicyPaths $LamnaPolicy,$EventsPolicy -OutputFilePath $MergedPolicy
@@ -93,6 +92,6 @@ Now that you have your new, merged policy, you can convert and deploy the policy
    > [!NOTE]
    > In the sample commands above, for policies targeting Windows 10 version 1903+ or Windows 11, replace the string "{InsertPolicyID}" with the actual PolicyID GUID (including braces **{ }**) found in your policy XML file. For Windows 10 versions prior to 1903, use the name SiPolicy.p7b for the binary file name.
 
-2. Upload your merged policy XML and the associated binary to the source control solution you are using for your WDAC policies. such as [GitHub](https://github.com/) or a document management solution such as [Office 365 SharePoint](https://products.office.com/sharepoint/collaboration).
+2. Upload your merged policy XML and the associated binary to the source control solution you are using for your Windows Defender Application Control policies. such as [GitHub](https://github.com/) or a document management solution such as [Office 365 SharePoint](https://products.office.com/sharepoint/collaboration).
 
 3. Deploy the merged policy using your preferred deployment solution. See [Deploying Windows Defender Application Control (WDAC) policies](windows-defender-application-control-deployment-guide.md)

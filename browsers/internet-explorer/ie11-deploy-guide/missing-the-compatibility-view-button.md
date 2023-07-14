@@ -3,7 +3,7 @@ ms.localizationpriority: medium
 ms.mktglfcycl: support
 description: Internet Explorer 11 uses the latest standards mode, which simplifies web page compatibility for users by removing the **Compatibility View** button and reducing the number of compatibility options in the F12 developer tools for developers.
 author: dansimp
-ms.prod: ie11
+ms.prod: windows-client
 ms.assetid: 501c96c9-9f03-4913-9f4b-f67bd9edbb61
 ms.reviewer: 
 audience: itpro

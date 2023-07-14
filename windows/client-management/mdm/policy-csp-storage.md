@@ -1,829 +1,937 @@
 ---
-title: Policy CSP - Storage
-description: Learn to use the Policy CSP - Storage settings to automatically clean some of the user’s files to free up disk space.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+title: Storage Policy CSP
+description: Learn more about the Storage Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/11/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- Storage-Begin -->
 # Policy CSP - Storage
 
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
+
+<!-- Storage-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Storage-Editable-End -->
 
-<hr/>
-
-<!--Policies-->
-## Storage policies  
-
-<dl>
-  <dd>
-    <a href="#storage-allowdiskhealthmodelupdates">Storage/AllowDiskHealthModelUpdates</a>
-  </dd>
-  <dd>
-    <a href="#storage-allowstoragesenseglobal">Storage/AllowStorageSenseGlobal</a>
-  </dd>
-  <dd>
-    <a href="#storage-allowstoragesensetemporaryfilescleanup">Storage/AllowStorageSenseTemporaryFilesCleanup</a>
-  </dd>
-  <dd>
-    <a href="#storage-configstoragesensecloudcontentdehydrationthreshold">Storage/ConfigStorageSenseCloudContentDehydrationThreshold</a>
-  </dd>
-  <dd>
-    <a href="#storage-configstoragesensedownloadscleanupthreshold">Storage/ConfigStorageSenseDownloadsCleanupThreshold</a>
-  </dd>
-  <dd>
-    <a href="#storage-configstoragesenseglobalcadence">Storage/ConfigStorageSenseGlobalCadence</a>
-  </dd>
-  <dd>
-    <a href="#storage-configstoragesenserecyclebincleanupthreshold">Storage/ConfigStorageSenseRecycleBinCleanupThreshold</a>
-  </dd>
-  <dd>
-    <a href="#storage-enhancedstoragedevices">Storage/EnhancedStorageDevices</a>
-  </dd>
-  <dd>
-    <a href="#storage-removablediskdenywriteaccess">Storage/RemovableDiskDenyWriteAccess</a>
-  </dd>
-  <dd>
-    <a href="#storage-wpddevicesdenyreadaccessperdevice">Storage/WPDDevicesDenyReadAccessPerDevice</a>
-  </dd>
-  <dd>
-    <a href="#storage-wpddevicesdenyreadaccessperuser">Storage/WPDDevicesDenyReadAccessPerUser</a>
-  </dd>
-  <dd>
-    <a href="#storage-wpddevicesdenywriteaccessperdevice">Storage/WPDDevicesDenyWriteAccessPerDevice</a>
-  </dd>
-  <dd>
-    <a href="#storage-wpddevicesdenywriteaccessperuser">Storage/WPDDevicesDenyWriteAccessPerUser</a>
-  </dd>
-</dl>
-
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="storage-allowdiskhealthmodelupdates"></a>**Storage/AllowDiskHealthModelUpdates**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Allows disk health model updates.
-
-Value type is integer.
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Allow downloading updates to the Disk Failure Prediction Model*
--   GP name: *SH_AllowDiskHealthModelUpdates*
--   GP path: *System/Storage Health*
--   GP ADMX file name: *StorageHealth.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-The following list shows the supported values:
+<!-- AllowDiskHealthModelUpdates-Begin -->
+## AllowDiskHealthModelUpdates
 
--   0 - Do not allow
--   1 (default) - Allow
-
-<!--/SupportedValues-->
-<!--/Policy-->
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="storage-allowstoragesenseglobal"></a>**Storage/AllowStorageSenseGlobal**  
+<!-- AllowDiskHealthModelUpdates-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- AllowDiskHealthModelUpdates-Applicability-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowDiskHealthModelUpdates-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Storage/AllowDiskHealthModelUpdates
+```
+<!-- AllowDiskHealthModelUpdates-OmaUri-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|||
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowDiskHealthModelUpdates-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Allows downloading new updates to ML Model parameters for predicting storage disk failure.
 
-<!--/SupportedSKUs-->
-<hr/>
+Enabled:
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+Updates would be downloaded for the Disk Failure Prediction Failure Model.
 
-> [!div class = "checklist"]
-> * Device
+Disabled:
 
-<hr/>
+Updates wouldn't be downloaded for the Disk Failure Prediction Failure Model.
 
-<!--/Scope-->
-<!--Description-->
-Storage Sense can automatically clean some of the user’s files to free up disk space. By default, Storage Sense is automatically turned on when the machine runs into low disk space and is set to run whenever the machine runs into storage pressure. This cadence can be changed in Storage settings or set with the Storage/ConfigStorageSenseGlobalCadence group policy.
+Not configured:
 
-If you enable this policy setting without setting a cadence, Storage Sense is turned on for the machine with the default cadence of "during low free disk space." Users cannot disable Storage Sense, but they can adjust the cadence (unless you also configure the Storage/ConfigStorageSenseGlobalCadence group policy).
+Same as Enabled.
+<!-- AllowDiskHealthModelUpdates-Description-End -->
 
-If you disable this policy setting, the machine will turn off Storage Sense. Users cannot enable Storage Sense.
+<!-- AllowDiskHealthModelUpdates-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowDiskHealthModelUpdates-Editable-End -->
 
-If you do not configure this policy setting, Storage Sense is turned off by default until the user runs into low disk space or the user enables it manually. Users can configure this setting in Storage settings.
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Allow Storage Sense*
--   GP name: *SS_AllowStorageSenseGlobal*
--   GP path: *System/Storage Sense*
--   GP ADMX file name: *StorageSense.admx*
+<!-- AllowDiskHealthModelUpdates-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowDiskHealthModelUpdates-DFProperties-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- AllowDiskHealthModelUpdates-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Example-->
-<!--Validation-->
+| Value | Description |
+|:--|:--|
+| 0 | Don't allow. |
+| 1 (Default) | Allow. |
+<!-- AllowDiskHealthModelUpdates-AllowedValues-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- AllowDiskHealthModelUpdates-GpMapping-Begin -->
+**Group policy mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | SH_AllowDiskHealthModelUpdates |
+| Friendly Name | Allow downloading updates to the Disk Failure Prediction Model |
+| Location | Computer Configuration |
+| Path | System > Storage Health |
+| Registry Key Name | Software\Policies\Microsoft\Windows\StorageHealth |
+| Registry Value Name | AllowDiskHealthModelUpdates |
+| ADMX File Name | StorageHealth.admx |
+<!-- AllowDiskHealthModelUpdates-GpMapping-End -->
+
+<!-- AllowDiskHealthModelUpdates-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowDiskHealthModelUpdates-Examples-End -->
 
-<!--Policy-->
-<a href="" id="storage-allowstoragesensetemporaryfilescleanup"></a>**Storage/AllowStorageSenseTemporaryFilesCleanup**  
+<!-- AllowDiskHealthModelUpdates-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowStorageSenseGlobal-Begin -->
+## AllowStorageSenseGlobal
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|||
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowStorageSenseGlobal-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- AllowStorageSenseGlobal-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowStorageSenseGlobal-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Storage/AllowStorageSenseGlobal
+```
+<!-- AllowStorageSenseGlobal-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowStorageSenseGlobal-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Storage Sense can automatically clean some of the user's files to free up disk space. By default, Storage Sense is automatically turned on when the machine runs into low disk space and is set to run whenever the machine runs into storage pressure. This cadence can be changed in Storage settings or set with the "Configure Storage Sense cadence" group policy.
 
-> [!div class = "checklist"]
-> * Device
+Enabled:
 
-<hr/>
+Storage Sense is turned on for the machine, with the default cadence as 'during low free disk space'. Users can't disable Storage Sense, but they can adjust the cadence (unless you also configure the "Configure Storage Sense cadence" group policy).
 
-<!--/Scope-->
-<!--Description-->
-When Storage Sense runs, it can delete the user’s temporary files that are not in use.
+Disabled:
 
-If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy does not have any effect.
+Storage Sense is turned off the machine. Users can't enable Storage Sense.
 
-If you enable this policy setting, Storage Sense will delete the user’s temporary files that are not in use. Users cannot disable this setting in Storage settings.
+Not Configured:
 
-If you disable this policy setting, Storage Sense will not delete the user’s temporary files. Users cannot enable this setting in Storage settings.
+By default, Storage Sense is turned off until the user runs into low disk space or the user enables it manually. Users can configure this setting in Storage settings.
+<!-- AllowStorageSenseGlobal-Description-End -->
 
-If you do not configure this policy setting, Storage Sense will delete the user’s temporary files by default. Users can configure this setting in Storage settings.
+<!-- AllowStorageSenseGlobal-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowStorageSenseGlobal-Editable-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Allow Storage Sense Temporary Files cleanup*
--   GP name: *SS_AllowStorageSenseTemporaryFilesCleanup*
--   GP path: *System/Storage Sense*
--   GP ADMX file name: *StorageSense.admx*
+<!-- AllowStorageSenseGlobal-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowStorageSenseGlobal-DFProperties-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- AllowStorageSenseGlobal-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--/Example-->
-<!--Validation-->
+| Value | Description |
+|:--|:--|
+| 1 | Allow. |
+| 0 (Default) | Block. |
+<!-- AllowStorageSenseGlobal-AllowedValues-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- AllowStorageSenseGlobal-GpMapping-Begin -->
+**Group policy mapping**:
 
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | SS_AllowStorageSenseGlobal |
+| Friendly Name | Allow Storage Sense |
+| Location | Computer Configuration |
+| Path | System > Storage Sense |
+| Registry Key Name | Software\Policies\Microsoft\Windows\StorageSense |
+| Registry Value Name | AllowStorageSenseGlobal |
+| ADMX File Name | StorageSense.admx |
+<!-- AllowStorageSenseGlobal-GpMapping-End -->
 
-<!--Policy-->
-<a href="" id="storage-configstoragesensecloudcontentdehydrationthreshold"></a>**Storage/ConfigStorageSenseCloudContentDehydrationThreshold**  
+<!-- AllowStorageSenseGlobal-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowStorageSenseGlobal-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- AllowStorageSenseGlobal-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|||
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowStorageSenseTemporaryFilesCleanup-Begin -->
+## AllowStorageSenseTemporaryFilesCleanup
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowStorageSenseTemporaryFilesCleanup-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- AllowStorageSenseTemporaryFilesCleanup-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- AllowStorageSenseTemporaryFilesCleanup-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Storage/AllowStorageSenseTemporaryFilesCleanup
+```
+<!-- AllowStorageSenseTemporaryFilesCleanup-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- AllowStorageSenseTemporaryFilesCleanup-Description-Begin -->
+<!-- Description-Source-ADMX -->
+When Storage Sense runs, it can delete the user's temporary files that aren't in use.
 
-<hr/>
+If the group policy "Allow Storage Sense" is disabled, then this policy doesn't have any effect.
 
-<!--/Scope-->
-<!--Description-->
-When Storage Sense runs, it can dehydrate cloud-backed content that hasn’t been opened in a certain amount of days.
+Enabled:
 
-If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy does not have any effect.
+Storage Sense will delete the user's temporary files that aren't in use. Users can't disable this setting in Storage settings.
 
-If you enable this policy setting, you must provide the minimum number of days a cloud-backed file can remain unopened before Storage Sense dehydrates it. Supported values are: 0–365.
+Disabled:
 
-If you set this value to zero, Storage Sense will not dehydrate any cloud-backed content. The default value is 0, which never dehydrates cloud-backed content.
+Storage Sense won't delete the user's temporary files. Users can't enable this setting in Storage settings.
 
-If you disable or do not configure this policy setting, then Storage Sense will not dehydrate any cloud-backed content by default. Users can configure this setting in Storage settings.
+Not Configured:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Configure Storage Sense Cloud Content dehydration threshold*
--   GP name: *SS_ConfigStorageSenseCloudContentDehydrationThreshold*
--   GP path: *System/Storage Sense*
--   GP ADMX file name: *StorageSense.admx*
+By default, Storage Sense will delete the user's temporary files. Users can configure this setting in Storage settings.
+<!-- AllowStorageSenseTemporaryFilesCleanup-Description-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+<!-- AllowStorageSenseTemporaryFilesCleanup-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowStorageSenseTemporaryFilesCleanup-Editable-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- AllowStorageSenseTemporaryFilesCleanup-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- AllowStorageSenseTemporaryFilesCleanup-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
+<!-- AllowStorageSenseTemporaryFilesCleanup-AllowedValues-Begin -->
+**Allowed values**:
 
-<hr/>
+| Value | Description |
+|:--|:--|
+| 1 (Default) | Allow. |
+| 0 | Block. |
+<!-- AllowStorageSenseTemporaryFilesCleanup-AllowedValues-End -->
 
-<!--Policy-->
-<a href="" id="storage-configstoragesensedownloadscleanupthreshold"></a>**Storage/ConfigStorageSenseDownloadsCleanupThreshold**  
+<!-- AllowStorageSenseTemporaryFilesCleanup-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | SS_AllowStorageSenseTemporaryFilesCleanup |
+| Friendly Name | Allow Storage Sense Temporary Files cleanup |
+| Location | Computer Configuration |
+| Path | System > Storage Sense |
+| Registry Key Name | Software\Policies\Microsoft\Windows\StorageSense |
+| Registry Value Name | AllowStorageSenseTemporaryFilesCleanup |
+| ADMX File Name | StorageSense.admx |
+<!-- AllowStorageSenseTemporaryFilesCleanup-GpMapping-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|||
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- AllowStorageSenseTemporaryFilesCleanup-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowStorageSenseTemporaryFilesCleanup-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- AllowStorageSenseTemporaryFilesCleanup-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ConfigStorageSenseCloudContentDehydrationThreshold-Begin -->
+## ConfigStorageSenseCloudContentDehydrationThreshold
 
-> [!div class = "checklist"]
-> * Device
+<!-- ConfigStorageSenseCloudContentDehydrationThreshold-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- ConfigStorageSenseCloudContentDehydrationThreshold-Applicability-End -->
 
-<hr/>
+<!-- ConfigStorageSenseCloudContentDehydrationThreshold-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Storage/ConfigStorageSenseCloudContentDehydrationThreshold
+```
+<!-- ConfigStorageSenseCloudContentDehydrationThreshold-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-When Storage Sense runs, it can delete files in the user’s Downloads folder if they haven’t been opened for more than a certain number of days.
+<!-- ConfigStorageSenseCloudContentDehydrationThreshold-Description-Begin -->
+<!-- Description-Source-ADMX -->
+When Storage Sense runs, it can dehydrate cloud-backed content that hasn't been opened in a certain amount of days.
 
-If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy does not have any effect.
+If the group policy "Allow Storage Sense" is disabled, then this policy doesn't have any effect.
 
-If you enable this policy setting, you must provide the minimum number of days a file can remain unopened before Storage Sense deletes it from the Downloads folder. Supported values are: 0-365.
+Enabled:
 
-If you set this value to zero, Storage Sense will not delete files in the user’s Downloads folder. The default is 0, or never deleting files in the Downloads folder.
+You must provide the minimum number of days a cloud-backed file can remain unopened before Storage Sense dehydrates it from the sync root. Supported values are: 0 - 365.
 
-If you disable or do not configure this policy setting, then Storage Sense will not delete files in the user’s Downloads folder by default. Users can configure this setting in Storage settings.
+If you set this value to zero, Storage Sense won't dehydrate any cloud-backed content. The default value is 0, or never dehydrating cloud-backed content.
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Configure Storage Storage Downloads cleanup threshold*
--   GP name: *SS_ConfigStorageSenseDownloadsCleanupThreshold*
--   GP path: *System/Storage Sense*
--   GP ADMX file name: *StorageSense.admx*
+Disabled or Not Configured:
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+By default, Storage Sense won't dehydrate any cloud-backed content. Users can configure this setting in Storage settings.
+<!-- ConfigStorageSenseCloudContentDehydrationThreshold-Description-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
+<!-- ConfigStorageSenseCloudContentDehydrationThreshold-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigStorageSenseCloudContentDehydrationThreshold-Editable-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- ConfigStorageSenseCloudContentDehydrationThreshold-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-365]` |
+| Default Value  | 0 |
+<!-- ConfigStorageSenseCloudContentDehydrationThreshold-DFProperties-End -->
 
-<hr/>
+<!-- ConfigStorageSenseCloudContentDehydrationThreshold-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--Policy-->
-<a href="" id="storage-configstoragesenseglobalcadence"></a>**Storage/ConfigStorageSenseGlobalCadence**  
+| Name | Value |
+|:--|:--|
+| Name | SS_ConfigStorageSenseCloudContentDehydrationThreshold |
+| Friendly Name | Configure Storage Sense Cloud Content dehydration threshold |
+| Location | Computer Configuration |
+| Path | System > Storage Sense |
+| Registry Key Name | Software\Policies\Microsoft\Windows\StorageSense |
+| ADMX File Name | StorageSense.admx |
+<!-- ConfigStorageSenseCloudContentDehydrationThreshold-GpMapping-End -->
 
-<!--SupportedSKUs-->
+<!-- ConfigStorageSenseCloudContentDehydrationThreshold-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigStorageSenseCloudContentDehydrationThreshold-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|||
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ConfigStorageSenseCloudContentDehydrationThreshold-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ConfigStorageSenseDownloadsCleanupThreshold-Begin -->
+## ConfigStorageSenseDownloadsCleanupThreshold
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ConfigStorageSenseDownloadsCleanupThreshold-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- ConfigStorageSenseDownloadsCleanupThreshold-Applicability-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- ConfigStorageSenseDownloadsCleanupThreshold-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Storage/ConfigStorageSenseDownloadsCleanupThreshold
+```
+<!-- ConfigStorageSenseDownloadsCleanupThreshold-OmaUri-End -->
 
-<hr/>
+<!-- ConfigStorageSenseDownloadsCleanupThreshold-Description-Begin -->
+<!-- Description-Source-ADMX -->
+When Storage Sense runs, it can delete files in the user's Downloads folder if they haven't been opened for more than a certain number of days.
 
-<!--/Scope-->
-<!--Description-->
-Storage Sense can automatically clean some of the user’s files to free up disk space.
-If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy does not have any effect.
+If the group policy "Allow Storage Sense" is disabled, then this policy doesn't have any effect.
 
-If you enable this policy setting, you must provide the desired Storage Sense cadence.
+Enabled:
 
-The following are supported options:
+You must provide the minimum number of days a file can remain unopened before Storage Sense deletes it from Downloads folder. Supported values are: 0 - 365.
 
-- 1 – Daily
-- 7 – Weekly
-- 30 – Monthly
-- 0 – During low free disk space
+If you set this value to zero, Storage Sense won't delete files in the user's Downloads folder. The default is 0, or never deleting files in the Downloads folder.
 
-The default is 0 (during low free disk space).
+Disabled or Not Configured:
 
-If you do not configure this policy setting, then the Storage Sense cadence is set to “during low free disk space” by default. Users can configure this setting in Storage settings.
+By default, Storage Sense won't delete files in the user's Downloads folder. Users can configure this setting in Storage settings.
+<!-- ConfigStorageSenseDownloadsCleanupThreshold-Description-End -->
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Configure Storage Sense cadence*
--   GP name: *SS_ConfigStorageSenseGlobalCadence*
--   GP path: *System/Storage Sense*
--   GP ADMX file name: *StorageSense.admx*
+<!-- ConfigStorageSenseDownloadsCleanupThreshold-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigStorageSenseDownloadsCleanupThreshold-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+<!-- ConfigStorageSenseDownloadsCleanupThreshold-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-365]` |
+| Default Value  | 0 |
+<!-- ConfigStorageSenseDownloadsCleanupThreshold-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- ConfigStorageSenseDownloadsCleanupThreshold-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | SS_ConfigStorageSenseDownloadsCleanupThreshold |
+| Friendly Name | Configure Storage Storage Downloads cleanup threshold |
+| Location | Computer Configuration |
+| Path | System > Storage Sense |
+| Registry Key Name | Software\Policies\Microsoft\Windows\StorageSense |
+| ADMX File Name | StorageSense.admx |
+<!-- ConfigStorageSenseDownloadsCleanupThreshold-GpMapping-End -->
 
-<hr/>
+<!-- ConfigStorageSenseDownloadsCleanupThreshold-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigStorageSenseDownloadsCleanupThreshold-Examples-End -->
 
-<!--Policy-->
-<a href="" id="storage-configstoragesenserecyclebincleanupthreshold"></a>**Storage/ConfigStorageSenseRecycleBinCleanupThreshold**  
+<!-- ConfigStorageSenseDownloadsCleanupThreshold-End -->
 
-<!--SupportedSKUs-->
+<!-- ConfigStorageSenseGlobalCadence-Begin -->
+## ConfigStorageSenseGlobalCadence
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|||
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ConfigStorageSenseGlobalCadence-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- ConfigStorageSenseGlobalCadence-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ConfigStorageSenseGlobalCadence-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Storage/ConfigStorageSenseGlobalCadence
+```
+<!-- ConfigStorageSenseGlobalCadence-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ConfigStorageSenseGlobalCadence-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Storage Sense can automatically clean some of the user's files to free up disk space.
 
-> [!div class = "checklist"]
-> * Device
+If the group policy "Allow Storage Sense" is disabled, then this policy doesn't have any effect.
 
-<hr/>
+Enabled:
 
-<!--/Scope-->
-<!--Description-->
-When Storage Sense runs, it can delete files in the user’s Recycle Bin if they have been there for over a certain amount of days.
+You must provide the desired Storage Sense cadence. Supported options are: daily, weekly, monthly, and during low free disk space. The default is 0 (during low free disk space).
 
-If the Storage/AllowStorageSenseGlobal policy is disabled, then this policy does not have any effect.
+Disabled or Not Configured:
 
-If you enable this policy setting, you must provide the minimum age threshold (in days) of a file in the Recycle Bin before Storage Sense will delete it. Supported values are: 0–365.
+By default, the Storage Sense cadence is set to "during low free disk space". Users can configure this setting in Storage settings.
+<!-- ConfigStorageSenseGlobalCadence-Description-End -->
 
-If you set this value to zero, Storage Sense will not delete files in the user’s Recycle Bin. The default is 30 days.
+<!-- ConfigStorageSenseGlobalCadence-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-If you disable or do not configure this policy setting, Storage Sense will delete files in the user’s Recycle Bin that have been there for over 30 days by default. Users can configure this setting in Storage settings.
+Use the following integer values for the supported options:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Configure Storage Sense Recycle Bin cleanup threshold*
--   GP name: *SS_ConfigStorageSenseRecycleBinCleanupThreshold*
--   GP path: *System/Storage Sense*
--   GP ADMX file name: *StorageSense.admx*
+- `0`: During low free disk space (default)
+- `1`: Daily
+- `7`: Weekly
+- `30`: Monthly
+<!-- ConfigStorageSenseGlobalCadence-Editable-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+<!-- ConfigStorageSenseGlobalCadence-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/SupportedValues-->
-<!--Example-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-4294967295]` |
+| Default Value  | 0 |
+<!-- ConfigStorageSenseGlobalCadence-DFProperties-End -->
 
-<!--/Example-->
-<!--Validation-->
+<!-- ConfigStorageSenseGlobalCadence-GpMapping-Begin -->
+**Group policy mapping**:
 
-<!--/Validation-->
-<!--/Policy-->
+| Name | Value |
+|:--|:--|
+| Name | SS_ConfigStorageSenseGlobalCadence |
+| Friendly Name | Configure Storage Sense cadence |
+| Location | Computer Configuration |
+| Path | System > Storage Sense |
+| Registry Key Name | Software\Policies\Microsoft\Windows\StorageSense |
+| ADMX File Name | StorageSense.admx |
+<!-- ConfigStorageSenseGlobalCadence-GpMapping-End -->
 
-<hr/>
+<!-- ConfigStorageSenseGlobalCadence-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigStorageSenseGlobalCadence-Examples-End -->
 
-<!--Policy-->
-<a href="" id="storage-enhancedstoragedevices"></a>**Storage/EnhancedStorageDevices**  
+<!-- ConfigStorageSenseGlobalCadence-End -->
 
-<!--SupportedSKUs-->
+<!-- ConfigStorageSenseRecycleBinCleanupThreshold-Begin -->
+## ConfigStorageSenseRecycleBinCleanupThreshold
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ConfigStorageSenseRecycleBinCleanupThreshold-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- ConfigStorageSenseRecycleBinCleanupThreshold-Applicability-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ConfigStorageSenseRecycleBinCleanupThreshold-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Storage/ConfigStorageSenseRecycleBinCleanupThreshold
+```
+<!-- ConfigStorageSenseRecycleBinCleanupThreshold-OmaUri-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ConfigStorageSenseRecycleBinCleanupThreshold-Description-Begin -->
+<!-- Description-Source-ADMX -->
+When Storage Sense runs, it can delete files in the user's Recycle Bin if they've been there for over a certain amount of days.
 
-> [!div class = "checklist"]
-> * Device
+If the group policy "Allow Storage Sense" is disabled, then this policy doesn't have any effect.
 
-<hr/>
+Enabled:
 
-<!--/Scope-->
-<!--Description-->
+You must provide the minimum age threshold (in days) of a file in the Recycle Bin before Storage Sense will delete it. Supported values are: 0 - 365.
+
+If you set this value to zero, Storage Sense won't delete files in the user's Recycle Bin. The default is 30 days.
+
+Disabled or Not Configured:
+
+By default, Storage Sense will delete files in the user's Recycle Bin that have been there for over 30 days. Users can configure this setting in Storage settings.
+<!-- ConfigStorageSenseRecycleBinCleanupThreshold-Description-End -->
+
+<!-- ConfigStorageSenseRecycleBinCleanupThreshold-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigStorageSenseRecycleBinCleanupThreshold-Editable-End -->
+
+<!-- ConfigStorageSenseRecycleBinCleanupThreshold-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0-365]` |
+| Default Value  | 30 |
+<!-- ConfigStorageSenseRecycleBinCleanupThreshold-DFProperties-End -->
+
+<!-- ConfigStorageSenseRecycleBinCleanupThreshold-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | SS_ConfigStorageSenseRecycleBinCleanupThreshold |
+| Friendly Name | Configure Storage Sense Recycle Bin cleanup threshold |
+| Location | Computer Configuration |
+| Path | System > Storage Sense |
+| Registry Key Name | Software\Policies\Microsoft\Windows\StorageSense |
+| ADMX File Name | StorageSense.admx |
+<!-- ConfigStorageSenseRecycleBinCleanupThreshold-GpMapping-End -->
+
+<!-- ConfigStorageSenseRecycleBinCleanupThreshold-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigStorageSenseRecycleBinCleanupThreshold-Examples-End -->
+
+<!-- ConfigStorageSenseRecycleBinCleanupThreshold-End -->
+
+<!-- EnhancedStorageDevices-Begin -->
+## EnhancedStorageDevices
+
+<!-- EnhancedStorageDevices-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+<!-- EnhancedStorageDevices-Applicability-End -->
+
+<!-- EnhancedStorageDevices-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Storage/EnhancedStorageDevices
+```
+<!-- EnhancedStorageDevices-OmaUri-End -->
+
+<!-- EnhancedStorageDevices-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting configures whether or not Windows will activate an Enhanced Storage device.
 
-If you enable this policy setting, Windows will not activate unactivated Enhanced Storage devices.
+- If you enable this policy setting, Windows won't activate unactivated Enhanced Storage devices.
 
-If you disable or do not configure this policy setting, Windows will activate unactivated Enhanced Storage devices.
+- If you disable or don't configure this policy setting, Windows will activate unactivated Enhanced Storage devices.
+<!-- EnhancedStorageDevices-Description-End -->
 
-<!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+<!-- EnhancedStorageDevices-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnhancedStorageDevices-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not allow Windows to activate Enhanced Storage devices*
--   GP name: *TCGSecurityActivationDisabled*
--   GP path: *System/Enhanced Storage Access*
--   GP ADMX file name: *enhancedstorage.admx*
+<!-- EnhancedStorageDevices-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnhancedStorageDevices-DFProperties-End -->
 
-<hr/>
+<!-- EnhancedStorageDevices-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="storage-removablediskdenywriteaccess"></a>**Storage/RemovableDiskDenyWriteAccess**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | TCGSecurityActivationDisabled |
+| Friendly Name | Do not allow Windows to activate Enhanced Storage devices |
+| Location | Computer Configuration |
+| Path | System > Enhanced Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\EnhancedStorageDevices |
+| Registry Value Name | TCGSecurityActivationDisabled |
+| ADMX File Name | EnhancedStorage.admx |
+<!-- EnhancedStorageDevices-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- EnhancedStorageDevices-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnhancedStorageDevices-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnhancedStorageDevices-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RemovableDiskDenyWriteAccess-Begin -->
+## RemovableDiskDenyWriteAccess
 
-> [!div class = "checklist"]
-> * Device
+<!-- RemovableDiskDenyWriteAccess-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+<!-- RemovableDiskDenyWriteAccess-Applicability-End -->
 
-<hr/>
+<!-- RemovableDiskDenyWriteAccess-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Storage/RemovableDiskDenyWriteAccess
+```
+<!-- RemovableDiskDenyWriteAccess-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
-If you enable this policy setting, write access is denied to this removable storage class. If you disable or do not configure this policy setting, write access is allowed to this removable storage class. 
+<!-- RemovableDiskDenyWriteAccess-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting denies write access to removable disks.
 
-> [!Note]
-> To require that users write data to BitLocker-protected storage, enable the policy setting "Deny write access to drives not protected by BitLocker," which is located in "Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Removable Data Drives."
+- If you enable this policy setting, write access is denied to this removable storage class.
 
-Supported values:  
--  0 - Disable
--  1 - Enable
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *Removable Disks: Deny write access*
--   GP name: *RemovableDisks_DenyWrite_Access_2*
--   GP element: *RemovableDisks_DenyWrite_Access_2*
--   GP path: *System/Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
+> [!NOTE]
+> To require that users write data to BitLocker-protected storage, enable the policy setting "Deny write access to drives not protected by BitLocker," which is located in "Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Removable Data Drives".
+<!-- RemovableDiskDenyWriteAccess-Description-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+<!-- RemovableDiskDenyWriteAccess-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RemovableDiskDenyWriteAccess-Editable-End -->
 
-<!--/SupportedValues-->
-<!--Example-->
-Example for setting the device custom OMA-URI setting to enable this policy:  
-To deny write access to removable storage within Intune’s custom profile, set OMA-URI to ```./Device/Vendor/MSFT/Policy/Config/Storage/RemovableDiskDenyWriteAccess```, Data type to Integer, and Value to 1.
+<!-- RemovableDiskDenyWriteAccess-DFProperties-Begin -->
+**Description framework properties**:
 
-See [Use custom settings for Windows 10 devices in Intune](/intune/custom-settings-windows-10) for information on how to create custom profiles.
-<!--/Example-->
-<!--Validation-->
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- RemovableDiskDenyWriteAccess-DFProperties-End -->
 
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
+<!-- RemovableDiskDenyWriteAccess-AllowedValues-Begin -->
+**Allowed values**:
 
-<!--Policy-->
-<a href="" id="storage-wpddevicesdenyreadaccessperdevice"></a>**Storage/WPDDevicesDenyReadAccessPerDevice**  
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- RemovableDiskDenyWriteAccess-AllowedValues-End -->
 
-<!--SupportedSKUs-->
+<!-- RemovableDiskDenyWriteAccess-GpMapping-Begin -->
+**Group policy mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | RemovableDisks_DenyWrite_Access_2 |
+| Friendly Name | Removable Disks: Deny write access |
+| Location | Computer Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{53f5630d-b6bf-11d0-94f2-00a0c91efb8b} |
+| ADMX File Name | RemovableStorage.admx |
+<!-- RemovableDiskDenyWriteAccess-GpMapping-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- RemovableDiskDenyWriteAccess-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RemovableDiskDenyWriteAccess-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- RemovableDiskDenyWriteAccess-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- WPDDevicesDenyReadAccessPerDevice-Begin -->
+## WPDDevicesDenyReadAccessPerDevice
 
-<hr/>
+<!-- WPDDevicesDenyReadAccessPerDevice-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- WPDDevicesDenyReadAccessPerDevice-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
-This policy will do the enforcement over the following protocols which are used by most portable devices, e.g. mobile/IOS/Android:
+<!-- WPDDevicesDenyReadAccessPerDevice-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Storage/WPDDevicesDenyReadAccessPerDevice
+```
+<!-- WPDDevicesDenyReadAccessPerDevice-OmaUri-End -->
 
-- Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth
-- Media Transfer Protocol (MTP) over USB, IP, and Bluetooth
-- Mass Storage Class (MSC) over USB
+<!-- WPDDevicesDenyReadAccessPerDevice-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting denies read access to removable disks, which may include media players, cellular phones, auxiliary displays, and CE devices.
 
-To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/en-us/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46).
+- If you enable this policy setting, read access is denied to this removable storage class.
 
-If enabled, this policy will block end-user from Read access on any Windows Portal devices, e.g. mobile/iOS/Android.
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
+<!-- WPDDevicesDenyReadAccessPerDevice-Description-End -->
 
->[!NOTE]
-> WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage, e.g. if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browser the USB via explorer.
+<!-- WPDDevicesDenyReadAccessPerDevice-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-Supported values for this policy are:
-- Not configured
-- Enabled
-- Disabled
+This policy does enforcement over the following protocols that are used by most portable devices, for example, mobile/IOS/Android:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *WPD Devices: Deny read access*
--   GP name: *WPDDevices_DenyRead_Access_2*
--   GP path: *System/Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="storage-wpddevicesdenyreadaccessperuser"></a>**Storage/WPDDevicesDenyReadAccessPerUser**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy will do the enforcement over the following protocols which are used by most portable devices, e.g. mobile/IOS/Android:
-
-- Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth
-- Media Transfer Protocol (MTP) over USB, IP, and Bluetooth
-- Mass Storage Class (MSC) over USB
-
-To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/en-us/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46).
-
-If enabled, this policy will block end-user from Read access on any Windows Portal devices, e.g. mobile/iOS/Android.
+- Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth.
+- Media Transfer Protocol (MTP) over USB, IP, and Bluetooth.
+- Mass Storage Class (MSC) over USB.
+<!-- version note from old article, which doesn't align with version applicability above
+To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46). -->
 
 >[!NOTE]
-> WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage, e.g. if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browser the USB via explorer.
+> WPD policy isn't a reliable policy for removable storage. You can't use WPD policy to entirely block removable storage. For example, if a user inserts a USB drive to a device with a WPD policy, the policy may block PTP or MTP, but the user can still browse the drive in Windows Explorer.
+<!-- WPDDevicesDenyReadAccessPerDevice-Editable-End -->
 
-Supported values for this policy are:  
-- Not configured
-- Enabled
-- Disabled
+<!-- WPDDevicesDenyReadAccessPerDevice-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *WPD Devices: Deny read access*
--   GP name: *WPDDevices_DenyRead_Access_1*
--   GP path: *System/Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- WPDDevicesDenyReadAccessPerDevice-DFProperties-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+<!-- WPDDevicesDenyReadAccessPerDevice-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/SupportedValues-->
-<!--Validation-->
+**ADMX mapping**:
 
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | WPDDevices_DenyRead_Access_2 |
+| Friendly Name | WPD Devices: Deny read access |
+| Location | Computer Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{6AC27878-A6FA-4155-BA85-F98F491D4F33} |
+| Registry Value Name | Deny_Read |
+| ADMX File Name | RemovableStorage.admx |
+<!-- WPDDevicesDenyReadAccessPerDevice-AdmxBacked-End -->
 
-<!--Policy-->
-<a href="" id="storage-wpddevicesdenywriteaccessperdevice"></a>**Storage/WPDDevicesDenyWriteAccessPerDevice**  
+<!-- WPDDevicesDenyReadAccessPerDevice-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- WPDDevicesDenyReadAccessPerDevice-Examples-End -->
 
-<!--SupportedSKUs-->
+<!-- WPDDevicesDenyReadAccessPerDevice-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- WPDDevicesDenyReadAccessPerUser-Begin -->
+## WPDDevicesDenyReadAccessPerUser
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- WPDDevicesDenyReadAccessPerUser-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- WPDDevicesDenyReadAccessPerUser-Applicability-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- WPDDevicesDenyReadAccessPerUser-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Storage/WPDDevicesDenyReadAccessPerUser
+```
+<!-- WPDDevicesDenyReadAccessPerUser-OmaUri-End -->
 
-> [!div class = "checklist"]
-> * Device
+<!-- WPDDevicesDenyReadAccessPerUser-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting denies read access to removable disks, which may include media players, cellular phones, auxiliary displays, and CE devices.
 
-<hr/>
+- If you enable this policy setting, read access is denied to this removable storage class.
 
-<!--/Scope-->
-<!--Description-->
-This policy will do the enforcement over the following protocols which are used by most portable devices, e.g. mobile/IOS/Android:
+- If you disable or don't configure this policy setting, read access is allowed to this removable storage class.
+<!-- WPDDevicesDenyReadAccessPerUser-Description-End -->
 
-- Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth
-- Media Transfer Protocol (MTP) over USB, IP, and Bluetooth
-- Mass Storage Class (MSC) over USB
+<!-- WPDDevicesDenyReadAccessPerUser-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
-To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/en-us/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46).
+This policy does enforcement over the following protocols that are used by most portable devices, for example, mobile/IOS/Android:
 
-If enabled, this will block end-user from Write access on any Windows Portal devices, e.g. mobile/iOS/Android.
-
->[!NOTE]
-> WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage, e.g. if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browser the USB via explorer.
-
-Supported values for this policy are:  
-- Not configured
-- Enabled
-- Disabled
-
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *WPD Devices: Deny write access*
--   GP name: *WPDDevices_DenyWrite_Access_2*
--   GP path: *System/Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
-
-<!--/ADMXMapped-->
-<!--SupportedValues-->
-
-<!--/SupportedValues-->
-<!--Validation-->
-
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="storage-wpddevicesdenywriteaccessperuser"></a>**Storage/WPDDevicesDenyWriteAccessPerUser**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-This policy will do the enforcement over the following protocols which are used by most portable devices, e.g. mobile/IOS/Android:
-
-- Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth
-- Media Transfer Protocol (MTP) over USB, IP, and Bluetooth
-- Mass Storage Class (MSC) over USB
-
-To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/en-us/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46).
-
-If enabled, this will block end-user from Write access on any Windows Portal devices, e.g. mobile/iOS/Android.
+- Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth.
+- Media Transfer Protocol (MTP) over USB, IP, and Bluetooth.
+- Mass Storage Class (MSC) over USB.
+<!-- version note from old article, which doesn't align with version applicability above
+To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46). -->
 
 >[!NOTE]
-> WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage, e.g. if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browser the USB via explorer.
+> WPD policy isn't a reliable policy for removable storage. You can't use WPD policy to entirely block removable storage. For example, if a user inserts a USB drive to a device with a WPD policy, the policy may block PTP or MTP, but the user can still browse the drive in Windows Explorer.
+<!-- WPDDevicesDenyReadAccessPerUser-Editable-End -->
 
-Supported values for this policy are:  
-- Not configured
-- Enabled
-- Disabled
+<!-- WPDDevicesDenyReadAccessPerUser-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/Description-->
-<!--ADMXMapped-->
-ADMX Info:  
--   GP Friendly name: *WPD Devices: Deny write access*
--   GP name: *WPDDevices_DenyWrite_Access_1*
--   GP path: *System/Removable Storage Access*
--   GP ADMX file name: *RemovableStorage.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- WPDDevicesDenyReadAccessPerUser-DFProperties-End -->
 
-<!--/ADMXMapped-->
-<!--SupportedValues-->
+<!-- WPDDevicesDenyReadAccessPerUser-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--/SupportedValues-->
-<!--Validation-->
+**ADMX mapping**:
 
-<!--/Validation-->
-<!--/Policy-->
-<hr/>
+| Name | Value |
+|:--|:--|
+| Name | WPDDevices_DenyRead_Access_1 |
+| Friendly Name | WPD Devices: Deny read access |
+| Location | User Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{6AC27878-A6FA-4155-BA85-F98F491D4F33} |
+| Registry Value Name | Deny_Read |
+| ADMX File Name | RemovableStorage.admx |
+<!-- WPDDevicesDenyReadAccessPerUser-AdmxBacked-End -->
 
-<!--/Policies-->
+<!-- WPDDevicesDenyReadAccessPerUser-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- WPDDevicesDenyReadAccessPerUser-Examples-End -->
+
+<!-- WPDDevicesDenyReadAccessPerUser-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerDevice-Begin -->
+## WPDDevicesDenyWriteAccessPerDevice
+
+<!-- WPDDevicesDenyWriteAccessPerDevice-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- WPDDevicesDenyWriteAccessPerDevice-Applicability-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerDevice-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Storage/WPDDevicesDenyWriteAccessPerDevice
+```
+<!-- WPDDevicesDenyWriteAccessPerDevice-OmaUri-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerDevice-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting denies write access to removable disks, which may include media players, cellular phones, auxiliary displays, and CE devices.
+
+- If you enable this policy setting, write access is denied to this removable storage class.
+
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
+<!-- WPDDevicesDenyWriteAccessPerDevice-Description-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerDevice-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
+This policy does enforcement over the following protocols that are used by most portable devices, for example, mobile/IOS/Android:
+
+- Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth.
+- Media Transfer Protocol (MTP) over USB, IP, and Bluetooth.
+- Mass Storage Class (MSC) over USB.
+<!-- version note from old article, which doesn't align with version applicability above
+To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46). -->
+
+>[!NOTE]
+> WPD policy isn't a reliable policy for removable storage. You can't use WPD policy to entirely block removable storage. For example, if a user inserts a USB drive to a device with a WPD policy, the policy may block PTP or MTP, but the user can still browse the drive in Windows Explorer.
+<!-- WPDDevicesDenyWriteAccessPerDevice-Editable-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerDevice-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- WPDDevicesDenyWriteAccessPerDevice-DFProperties-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerDevice-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | WPDDevices_DenyWrite_Access_2 |
+| Friendly Name | WPD Devices: Deny write access |
+| Location | Computer Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{6AC27878-A6FA-4155-BA85-F98F491D4F33} |
+| Registry Value Name | Deny_Write |
+| ADMX File Name | RemovableStorage.admx |
+<!-- WPDDevicesDenyWriteAccessPerDevice-AdmxBacked-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerDevice-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- WPDDevicesDenyWriteAccessPerDevice-Examples-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerDevice-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerUser-Begin -->
+## WPDDevicesDenyWriteAccessPerUser
+
+<!-- WPDDevicesDenyWriteAccessPerUser-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- WPDDevicesDenyWriteAccessPerUser-Applicability-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerUser-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/Storage/WPDDevicesDenyWriteAccessPerUser
+```
+<!-- WPDDevicesDenyWriteAccessPerUser-OmaUri-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerUser-Description-Begin -->
+<!-- Description-Source-ADMX -->
+This policy setting denies write access to removable disks, which may include media players, cellular phones, auxiliary displays, and CE devices.
+
+- If you enable this policy setting, write access is denied to this removable storage class.
+
+- If you disable or don't configure this policy setting, write access is allowed to this removable storage class.
+<!-- WPDDevicesDenyWriteAccessPerUser-Description-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerUser-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+
+This policy does enforcement over the following protocols that are used by most portable devices, for example, mobile/IOS/Android:
+
+- Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth.
+- Media Transfer Protocol (MTP) over USB, IP, and Bluetooth.
+- Mass Storage Class (MSC) over USB.
+<!-- version note from old article, which doesn't align with version applicability above
+To enable this policy, the minimum OS requirement is Windows 10, version 1809 and [KB5003217 (OS Build 17763.1971)](https://support.microsoft.com/topic/may-20-2021-kb5003217-os-build-17763-1971-preview-08687c95-0740-421b-a205-54aa2c716b46). -->
+
+>[!NOTE]
+> WPD policy isn't a reliable policy for removable storage. You can't use WPD policy to entirely block removable storage. For example, if a user inserts a USB drive to a device with a WPD policy, the policy may block PTP or MTP, but the user can still browse the drive in Windows Explorer.
+<!-- WPDDevicesDenyWriteAccessPerUser-Editable-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerUser-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- WPDDevicesDenyWriteAccessPerUser-DFProperties-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerUser-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
+
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | WPDDevices_DenyWrite_Access_1 |
+| Friendly Name | WPD Devices: Deny write access |
+| Location | User Configuration |
+| Path | System > Removable Storage Access |
+| Registry Key Name | Software\Policies\Microsoft\Windows\RemovableStorageDevices\{6AC27878-A6FA-4155-BA85-F98F491D4F33} |
+| Registry Value Name | Deny_Write |
+| ADMX File Name | RemovableStorage.admx |
+<!-- WPDDevicesDenyWriteAccessPerUser-AdmxBacked-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerUser-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- WPDDevicesDenyWriteAccessPerUser-Examples-End -->
+
+<!-- WPDDevicesDenyWriteAccessPerUser-End -->
+
+<!-- Storage-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- Storage-CspMoreInfo-End -->
+
+<!-- Storage-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

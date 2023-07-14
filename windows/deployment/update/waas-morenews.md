@@ -1,15 +1,14 @@
 ---
 title: Windows as a service news & resources
 description: The latest news for Windows as a service with resources to help you learn more about them.
-ms.prod: w10
+ms.prod: windows-client
 ms.topic: article
-ms.manager: elizapo
-audience: itpro
-author: jaimeo
-ms.author: jaimeo
-ms.reviewer: 
-manager: laurawi
+author: mestew
+ms.author: mstewart
+manager: aaroncz
 ms.localizationpriority: high
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 # Windows as a service - More news
 
@@ -31,7 +30,6 @@ Here's more news about [Windows as a service](windows-as-a-service.md):
 <li><a href="https://blogs.windows.com/windowsexperience/2019/01/15/application-compatibility-in-the-windows-ecosystem/#A8urpp1QEp6DHzmP.97">Application compatibility in the Windows ecosystem</a> - January 15, 2019</li>
 <li><a href="https://blogs.windows.com/windowsexperience/2018/12/10/windows-monthly-security-and-quality-updates-overview/#UJJpisSpvyLokbHm.97">Windows monthly security and quality updates overview</a> - January 10, 2019</li>
 <li><a href="https://blogs.windows.com/windowsexperience/2018/12/19/driver-quality-in-the-windows-ecosystem/#ktuodfovWAMAkssM.97">Driver quality in the Windows ecosystem</a> - December 19, 2018</li>
-<li><a href="http://m365mdp.mpsn.libsynpro.com/001-windows-10-monthly-quality-updates">Modern Desktop Podcast - Episode 001 – Windows 10 Monthly Quality Updates</a> - December 18, 2018</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Measuring-Delivery-Optimization-and-its-impact-to-your-network/ba-p/301809#M409">Measuring Delivery Optimization and its impact to your network</a> - December 13, 2018</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181">LTSC: What is it, and when should it be used?</a> - November 29, 2018</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Local-Experience-Packs-What-are-they-and-when-should-you-use/ba-p/286841">Local Experience Packs: What are they and when should you use them?</a> - November 14, 2018</li>
@@ -45,7 +43,7 @@ Here's more news about [Windows as a service](windows-as-a-service.md):
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-7-servicing-stack-updates-managing-change-and/ba-p/260434">Windows 7 Servicing Stack Updates: Managing Change and Appreciating Cumulative Updates</a> - September 21, 2018</li>
 <li><a href="https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/">Helping customers shift to a modern desktop</a> - September 6, 2018</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-next-for-Windows-10-and-Windows-Server-quality-updates/ba-p/229461">What&#39;s next for Windows 10 and Windows Server quality updates</a> - August 16, 2018</li>
-<li><a href="https://www.youtube-nocookie.com/watch/BwB10v55WSk">Windows 10 monthly updates</a> - August 1, 2018 (<strong>video</strong>)</li>
+<li><a href="https://www.youtube.com/watch?v=BwB10v55WSk">Windows 10 monthly updates</a> - August 1, 2018 (<strong>video</strong>)</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-update-servicing-cadence/ba-p/222376">Windows 10 update servicing cadence</a> - August 1, 2018</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-quality-updates-explained-amp-the-end-of-delta/ba-p/214426">Windows 10 quality updates explained and the end of delta updates</a> - July 11, 2018</li>
 <li><a href="https://blogs.windows.com/windowsexperience/2018/06/14/ai-powers-windows-10-april-2018-update-rollout/#67LrSyWdwgTyciSG.97">AI Powers Windows 10 April 2018 Update Rollout</a> - June 14, 2018</li>

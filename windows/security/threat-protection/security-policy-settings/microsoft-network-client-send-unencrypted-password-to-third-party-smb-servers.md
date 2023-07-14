@@ -1,50 +1,50 @@
 ---
-title: Microsoft network client Send unencrypted password (Windows 10)
+title: Microsoft network client Send unencrypted password 
 description: Learn about best practices and more for the security policy setting, Microsoft network client Send unencrypted password to third-party SMB servers.
 ms.assetid: 97a76b93-afa7-4dd9-bb52-7c9e289b6017
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 
 # Microsoft network client: Send unencrypted password to third-party SMB servers
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, policy management and security considerations for the **Microsoft network client: Send unencrypted password to third-party SMB servers** security policy setting.
 
 ## Reference
 
-The Server Message Block (SMB) protocol provides the basis for file and print sharing and many other networking operations, such as remote Windows administration. This policy setting allows or prevents the SMB redirector to send plaintext passwords to a non-Microsoft server service that does not support password encryption during authentication.
+The Server Message Block (SMB) protocol provides the basis for file and print sharing and many other networking operations, such as remote Windows administration. This policy setting allows or prevents the SMB redirector to send plaintext passwords to a non-Microsoft server service that doesn't support password encryption during authentication.
 
 ### Possible values
 
 -   Enabled
 
-    The Server Message Block (SMB) redirector is allowed to send plaintext passwords to a non-Microsoft server service that does not support password encryption during authentication.
+    The Server Message Block (SMB) redirector is allowed to send plaintext passwords to a non-Microsoft server service that doesn't support password encryption during authentication.
 
 -   Disabled
 
-    The Server Message Block (SMB) redirector only sends encrypted passwords to non-Microsoft SMB server services. If those server services do not support password encryption, the authentication request will fail.
+    The Server Message Block (SMB) redirector only sends encrypted passwords to non-Microsoft SMB server services. If those server services don't support password encryption, the authentication request will fail.
 
 -   Not defined
 
 ### Best practices
 
--   It is advisable to set **Microsoft network client: Send unencrypted password to connect to third-party SMB servers** to Disabled.
+-   It's advisable to set **Microsoft network client: Send unencrypted password to connect to third-party SMB servers** to Disabled.
 
 ### Location
 
@@ -69,7 +69,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ## Security considerations
 
@@ -85,7 +85,7 @@ Disable the **Microsoft network client: Send unencrypted password to connect to 
 
 ### Potential impact
 
-Some older applications may not be able to communicate with the servers in your organization by means of the SMB protocol.
+Some older applications may not be able to communicate with the servers in your organization through the SMB protocol.
 
 ## Related topics
 

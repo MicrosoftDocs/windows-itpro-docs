@@ -1,91 +1,94 @@
 ---
-title: Policy CSP - CredentialsDelegation
-description: Learn how to use the Policy CSP - CredentialsDelegation setting so that remote host can allow delegation of non-exportable credentials.
-ms.author: dansimp
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
+title: CredentialsDelegation Policy CSP
+description: Learn more about the CredentialsDelegation Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/11/2023
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- CredentialsDelegation-Begin -->
 # Policy CSP - CredentialsDelegation
 
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
+<!-- CredentialsDelegation-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- CredentialsDelegation-Editable-End -->
 
-<hr/>
+<!-- RemoteHostAllowsDelegationOfNonExportableCredentials-Begin -->
+## RemoteHostAllowsDelegationOfNonExportableCredentials
 
-<!--Policies-->
-## CredentialsDelegation policies  
+<!-- RemoteHostAllowsDelegationOfNonExportableCredentials-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+<!-- RemoteHostAllowsDelegationOfNonExportableCredentials-Applicability-End -->
 
-<dl>
-  <dd>
-    <a href="#credentialsdelegation-remotehostallowsdelegationofnonexportablecredentials">CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials</a>
-  </dd>
-</dl>
+<!-- RemoteHostAllowsDelegationOfNonExportableCredentials-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials
+```
+<!-- RemoteHostAllowsDelegationOfNonExportableCredentials-OmaUri-End -->
 
-
-<hr/>
-
-<!--Policy-->
-<a href="" id="credentialsdelegation-remotehostallowsdelegationofnonexportablecredentials"></a>**CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|Yes|Yes|
-|Business|Yes|Yes|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-Remote host allows delegation of non-exportable credentials
+<!-- RemoteHostAllowsDelegationOfNonExportableCredentials-Description-Begin -->
+<!-- Description-Source-ADMX -->
+Remote host allows delegation of non-exportable credentials.
 
 When using credential delegation, devices provide an exportable version of credentials to the remote host. This exposes users to the risk of credential theft from attackers on the remote host.
 
-If you enable this policy setting, the host supports Restricted Admin or Remote Credential Guard mode.
+- If you enable this policy setting, the host supports Restricted Admin or Remote Credential Guard mode.
 
-If you disable or do not configure this policy setting, Restricted Administration and Remote Credential Guard mode are not supported. User will always need to pass their credentials to the host.
+- If you disable or don't configure this policy setting, Restricted Administration and Remote Credential Guard mode aren't supported. User will always need to pass their credentials to the host.
+<!-- RemoteHostAllowsDelegationOfNonExportableCredentials-Description-End -->
 
-<!--/Description-->
+<!-- RemoteHostAllowsDelegationOfNonExportableCredentials-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RemoteHostAllowsDelegationOfNonExportableCredentials-Editable-End -->
 
+<!-- RemoteHostAllowsDelegationOfNonExportableCredentials-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remote host allows delegation of non-exportable credentials*
--   GP name: *AllowProtectedCreds*
--   GP path: *System/Credentials Delegation*
--   GP ADMX file name: *CredSsp.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- RemoteHostAllowsDelegationOfNonExportableCredentials-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- RemoteHostAllowsDelegationOfNonExportableCredentials-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | AllowProtectedCreds |
+| Friendly Name | Remote host allows delegation of non-exportable credentials |
+| Location | Computer Configuration |
+| Path | System > Credentials Delegation |
+| Registry Key Name | Software\Policies\Microsoft\Windows\CredentialsDelegation |
+| Registry Value Name | AllowProtectedCreds |
+| ADMX File Name | CredSsp.admx |
+<!-- RemoteHostAllowsDelegationOfNonExportableCredentials-AdmxBacked-End -->
 
-<!--/Policies-->
+<!-- RemoteHostAllowsDelegationOfNonExportableCredentials-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RemoteHostAllowsDelegationOfNonExportableCredentials-Examples-End -->
 
+<!-- RemoteHostAllowsDelegationOfNonExportableCredentials-End -->
+
+<!-- CredentialsDelegation-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- CredentialsDelegation-CspMoreInfo-End -->
+
+<!-- CredentialsDelegation-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

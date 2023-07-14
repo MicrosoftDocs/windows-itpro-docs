@@ -1,16 +1,15 @@
 ---
 title: Add image for secondary Microsoft Edge tiles (Windows 10)
 description: Add app tiles on Windows 10 that's a secondary tile.
-ms.prod: w10
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
+ms.prod: windows-client
 ms.localizationpriority: medium
-author: greg-lindsay
-ms.author: greglin
+author: lizgt2000
+ms.author: lizlong
 ms.topic: article
 ms.reviewer: 
-manager: dansimp
+manager: aaroncz
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Add image for secondary Microsoft Edge tiles 
@@ -71,7 +70,7 @@ In Windows 10, version 1703, by using the PowerShell cmdlet `export-StartLayoutE
 
     In the previous command, `-path` is a required parameter that specifies the path and file name for the export file. You can specify a local path or a UNC path (for example, \\\\FileServer01\\StartLayouts\\StartLayoutMarketing.xml).
 
-    Use a file name of your choice—for example, StartLayoutMarketing.xml. Include the .xml file name extension. The [Export-StartLayout](/powershell/module/startlayout/export-startlayout) cmdlet does not append the file name extension, and the policy settings require the extension.
+    Use a file name of your choice—for example, StartLayoutMarketing.xml. Include the .xml file name extension. The [Export-StartLayout](/powershell/module/startlayout/export-startlayout) cmdlet doesn't append the file name extension, and the policy settings require the extension.
 
 3. If you’d like to change the image for a secondary tile to your own custom image, open the layout.xml file, and look for the images that the tile references.
    - For example, your layout.xml contains `Square150x150LogoUri="ms-appdata:///local/PinnedTiles/21581260870/hires.png" Wide310x150LogoUri="ms-appx:///"` 
@@ -85,13 +84,13 @@ In Windows 10, version 1703, by using the PowerShell cmdlet `export-StartLayoutE
 
 ## Configure policy settings
 
-You can apply the customized Start layout with images for secondary tiles by using [mobile device management](customize-windows-10-start-screens-by-using-mobile-device-management.md) or [a provisioning package](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md). However, because you are including the images for secondary tiles, you must configure an additional setting to import the Edge assets.
+You can apply the customized Start layout with images for secondary tiles by using [mobile device management](customize-windows-10-start-screens-by-using-mobile-device-management.md) or [a provisioning package](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md). However, because you're including the images for secondary tiles, you must configure another setting to import the Edge assets.
 
 ### Using MDM
 
 In Microsoft Intune, you create a device restrictions policy to apply to device group. For other MDM solutions, you may need to use an OMA-URI setting for Start layout, based on the [Policy configuration service provider (CSP)](/windows/client-management/mdm/policy-configuration-service-provider). The OMA-URI setting is `./User/Vendor/MSFT/Policy/Config/Start/StartLayout`.
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+1. Sign in to the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Devices** > **Configuration profiles** > **Create profile**.
 3. Enter the following properties:
 
@@ -135,7 +134,7 @@ The **export-StartLayout** and **export-StartLayoutEdgeAssets** cmdlets produce 
 
 2. Copy the contents of assets.xml into an online tool that escapes characters.
 
-3. During the procedure to create a provisioning package, you will copy the text with the escape characters and paste it in the customizations.xml file for your project. 
+3. When you create a provisioning package, you'll copy the text with the escape characters and paste it in the customizations.xml file for your project. 
 
 #### Create a provisioning package that contains a customized Start layout
 
@@ -149,22 +148,22 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 2. Choose **Advanced provisioning**.
 
-3. Name your project, and click **Next**.
+3. Name your project, and select **Next**.
 
-4. Choose **All Windows desktop editions** and click **Next**.
+4. Choose **All Windows desktop editions** and select **Next**.
 
-5. On **New project**, click **Finish**. The workspace for your package opens.
+5. On **New project**, select **Finish**. The workspace for your package opens.
 
-6. Expand **Runtime settings** &gt; **Policies** &gt; **Start**, and click **StartLayout**.
+6. Expand **Runtime settings** &gt; **Policies** &gt; **Start**, and select **StartLayout**.
 
    >[!TIP]
    >If **Start** is not listed, check the type of settings you selected in step 4. You must create the project using settings for **All Windows desktop editions**.
 
-7. Enter **layout.xml**. This value creates a placeholder in the customizations.xml file that you will replace with the contents of the layout.xml file in a later step.
+7. Enter **layout.xml**. This value creates a placeholder in the customizations.xml file that you'll replace with the contents of the layout.xml file in a later step.
 
 8. In the **Available customizations** pane, select **ImportEdgeAssets**.
 
-9. Enter **assets.xml**. This value creates a placeholder in the customizations.xml file that you will replace with the contents of the assets.xml file in a later step.
+9. Enter **assets.xml**. This value creates a placeholder in the customizations.xml file that you'll replace with the contents of the assets.xml file in a later step.
 
 10. Save your project and close Windows Configuration Designer.
 
@@ -194,22 +193,22 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
     -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by clicking **Select...** and choosing the certificate you want to use to sign the package.
 
-21. Click **Next** to specify the output location where you want the provisioning package to go when it's built. By default, Windows Imaging and Configuration Designer (ICD) uses the project folder as the output location.
+21. Select **Next** to specify the output location where you want the provisioning package to go when it's built. By default, Windows Imaging and Configuration Designer (ICD) uses the project folder as the output location.
 
-    Optionally, you can click **Browse** to change the default output location.
+    Optionally, you can select **Browse** to change the default output location.
 
-22. Click **Next**.
+22. Select **Next**.
 
-23. Click **Build** to start building the package. The provisioning package doesn't take long to build. The project information is displayed in the build page and the progress bar indicates the build status.
+23. Select **Build** to start building the package. The provisioning package doesn't take long to build. The project information is displayed in the build page and the progress bar indicates the build status.
 
-    If you need to cancel the build, click **Cancel**. This cancels the current build process, closes the wizard, and takes you back to the **Customizations Page**.
+    If you need to cancel the build, select **Cancel**. It cancels the current build process, closes the wizard, and takes you back to the **Customizations Page**.
 
 24. If your build fails, an error message will show up that includes a link to the project folder. You can scan the logs to determine what caused the error. Once you fix the issue, try building the package again.
 
     If your build is successful, the name of the provisioning package, output directory, and project directory will be shown.
 
-    -   If you choose, you can build the provisioning package again and pick a different path for the output package. To do this, click **Back** to change the output package name and path, and then click **Next** to start another build.
-    -   If you are done, click **Finish** to close the wizard and go back to the **Customizations Page**.
+    -   If you choose, you can build the provisioning package again and pick a different path for the output package. To change the path, select **Back** to change the output package name and path, and then select **Next** to start another build.
+    -   If you're done, select **Finish** to close the wizard and go back to the **Customizations Page**.
 
 25. Copy the provisioning package to the target device.
 

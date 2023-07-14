@@ -1,22 +1,13 @@
 ---
 title: Set up student PCs to join domain
-description: Learn how to use Configuration Designer to easily provision student devices to join Active Directory.
-keywords: school, student PC setup, Windows Configuration Designer
-ms.prod: w10
-ms.mktglfcycl: plan
-ms.sitesec: library
-ms.localizationpriority: medium
-author: dansimp
-ms.author: dansimp
-ms.date: 07/27/2017
-ms.reviewer: 
-manager: dansimp
+description: Learn how to use Windows Configuration Designer to provision student devices to join Active Directory.
+ms.topic: how-to
+ms.date: 08/10/2022
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Set up student PCs to join domain
-**Applies to:**
-
--   Windows 10  
 
 If your school uses Active Directory, use the Windows Configuration Designer tool to create a provisioning package that will configure a PC for student use that is joined to the Active Directory domain. 
 
@@ -29,12 +20,12 @@ Follow the steps in [Provision PCs with common settings for initial deployment (
 1. In the **Account Management** step:
 
     > [!WARNING] 
-    > If you don't create a local administrator account and the device fails to enroll in Active Directory for any reason, you will have to reimage the device and start over. As a best practice, we recommend:
+    > If you don't create a local administrator account and the device fails to enroll in Active Directory for any reason, you'll have to reimage the device and start over. As a best practice, we recommend:
     >   - Use a least-privileged domain account to join the device to the domain.
     >   - Create a temporary administrator account to use for debugging or reprovisioning if the device fails to enroll successfully.
     >   - [Use Group Policy to delete the temporary administrator account](/archive/blogs/canitpro/group-policy-creating-a-standard-local-admin-account) after the device is enrolled in Active Directory.
 
-2. After you're done with the wizard, do not click **Create**. Instead, click the **Switch to advanced editor** to switch the project to the advanced editor to see all the available **Runtine settings**.
+2. After you're done with the wizard, don't click **Create**. Instead, click the **Switch to advanced editor** to switch the project to the advanced editor to see all the available **Runtime settings**.
 3. Find the **SharedPC** settings group.
     - Set **EnableSharedPCMode** to **TRUE** to configure the PC for shared use.
 4. (Optional) To configure the PC for secure testing, follow these steps.
@@ -43,7 +34,7 @@ Follow the steps in [Provision PCs with common settings for initial deployment (
 
       **Figure 7** - Add the account to use for test-taking
 
-      ![Add the account to use for test-taking.](images/wcd_settings_assignedaccess.png)
+      ![Add the account to use for test-taking.](images/wcd/wcd_settings_assignedaccess.png)
 
       The account can be in one of the following formats:
       - username
@@ -58,15 +49,11 @@ Follow the steps in [Provision PCs with common settings for initial deployment (
 5. To configure other settings to make Windows education ready, see [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md) and follow the guidance on what settings you can set using Windows Configuration Designer.
 
 6. Follow the steps to [build a package](/windows/configuration/provisioning-packages/provisioning-create-package#build-package). 
-   - You will see the file path for your provisioning package. By default, this is set to %windir%\Users\*your_username<em>\Windows Imaging and Configuration Designer (WICD)\*Project name</em>). 
+   - You'll see the file path for your provisioning package. By default, this path is set to %windir%\Users\*your_username<em>\Windows Imaging and Configuration Designer (WICD)\*Project name</em>). 
    - Copy the provisioning package to a USB drive.
 
      > [!IMPORTANT]
      > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
-
 ## Apply package
 Follow the steps in [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package) to apply the package that you created.
-
-
-

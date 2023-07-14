@@ -21,7 +21,7 @@ ms.date: 07/27/2017
 
 If you already manage software distribution and updates on your network through software distribution tools, you can also use these tools for ongoing deployments of Internet Explorer. Software distribution tools include:
 
--   **System Center R2 2012 System Center 2012 R2 Configuration Manager.** Deploy and install Internet Explorer 11 on your user's computers through a software distribution package. For more information about using this tool, see [System Center R2 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682129(v=technet.10)).
+-   **Configuration Manager** Deploy and install Internet Explorer 11 on your user's computers through a software distribution package. For more information about using this tool, see [Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682129(v=technet.10)).
 
 -   **Windows Server Update Services (WSUS).** Download a single copy of the IE11 updates, caching them to local servers so your users' computers can receive the updates directly from the WSUS servers, instead of through Windows Update. For more information about using this tool, see [Windows Server Update Services](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh852345(v=ws.11)).
 

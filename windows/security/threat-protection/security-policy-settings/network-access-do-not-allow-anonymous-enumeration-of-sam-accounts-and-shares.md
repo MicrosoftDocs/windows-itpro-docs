@@ -1,21 +1,20 @@
 ---
-title: Network access Do not allow anonymous enumeration (Windows 10)
+title: Network access Do not allow anonymous enumeration 
 description: Learn about best practices and more for the security policy setting, Network access Do not allow anonymous enumeration of SAM accounts and shares.
 ms.assetid: 3686788d-4cc7-4222-9163-cbc7c3362d73
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network access: Do not allow anonymous enumeration of SAM accounts and shares
@@ -27,7 +26,7 @@ Describes the best practices, location, values, and security considerations for 
 
 ## Reference
 
-This policy setting determines which additional permissions will be assigned for anonymous connections to the device. Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to give access to users in a trusted domain that does not maintain a reciprocal trust. However, even with this policy setting enabled, anonymous users will have access to resources with permissions that explicitly include the built-in group, ANONYMOUS LOGON.
+This policy setting determines which other permissions will be assigned for anonymous connections to the device. Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This permission is convenient, for example, when an administrator wants to give access to users in a trusted domain that doesn't maintain a reciprocal trust. However, even with this policy setting enabled, anonymous users will have access to resources with permissions that explicitly include the built-in group, ANONYMOUS LOGON.
 
 This policy setting has no impact on domain controllers.
 Misuse of this policy setting is a common error that can cause data loss or problems with data access or security.
@@ -38,7 +37,7 @@ Misuse of this policy setting is a common error that can cause data loss or prob
 
 -   Disabled
 
-    No additional permissions can be assigned by the administrator for anonymous connections to the device. Anonymous connections will rely on default permissions. However, an unauthorized user could anonymously list account names and use the information to attempt to guess passwords or perform social-engineering attacks.
+    No other permissions can be assigned by the administrator for anonymous connections to the device. Anonymous connections will rely on default permissions. However, an unauthorized user could anonymously list account names and use the information to attempt to guess passwords or perform social-engineering attacks.
 
 -   Not defined
 
@@ -65,7 +64,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ### Policy conflicts
 
@@ -89,7 +88,7 @@ Enable the **Network access: Do not allow anonymous enumeration of SAM accounts 
 
 ### Potential impact
 
-It is impossible to grant access to users of another domain across a one-way trust because administrators in the trusting domain are unable to enumerate lists of accounts in the other domain. Users who access file and print servers anonymously are unable to list the shared network resources on those servers; the users must be authenticated before they can view the lists of shared folders and printers.
+It's impossible to grant access to users of another domain across a one-way trust because administrators in the trusting domain are unable to enumerate lists of accounts in the other domain. Users who access file and print servers anonymously are unable to list the shared network resources on those servers; the users must be authenticated before they can view the lists of shared folders and printers.
 
 ## Related topics
 

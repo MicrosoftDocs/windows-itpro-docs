@@ -1,24 +1,12 @@
 ---
-title: Smart Card Removal Policy Service (Windows)
+title: Smart Card Removal Policy Service 
 description: This topic for the IT professional describes the role of the removal policy service (ScPolicySvc) in smart card implementation.
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.collection: M365-identity-device-management
+ms.reviewer: ardenw
 ms.topic: article
-ms.localizationpriority: medium
 ms.date: 09/24/2021
-ms.reviewer: 
 ---
 
 # Smart Card Removal Policy Service
-
-Applies To: Windows 10, Windows 11, Windows Server 2016
 
 This topic for the IT professional describes the role of the removal policy service (ScPolicySvc) in smart card implementation.
 
@@ -30,7 +18,7 @@ The smart card removal policy service is applicable when a user has signed in wi
 
 The numbers in the previous figure represent the following actions:
 
-1.  Winlogon is not directly involved in monitoring for smart card removal events. The sequence of steps that are involved when a smart card is removed begins with the smart card credential provider in the sign-in UI process. When a user successfully signs in with a smart card, the smart card credential provider captures the reader name. This information is then stored in the registry with the session identifier where the sign in was initiated.
+1.  Winlogon is not directly involved in monitoring for smart card removal events. The sequence of steps that are involved when a smart card is removed begins with the smart card credential provider in the sign-in UI process. When a user successfully signs in with a smart card, the smart card credential provider captures the reader name. This information is then stored in the registry with the session identifier where the sign-in was initiated.
 
 2.  The smart card resource manager service notifies the smart card removal policy service that a sign-in has occurred.
 

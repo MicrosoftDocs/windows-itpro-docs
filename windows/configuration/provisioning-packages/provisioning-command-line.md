@@ -1,15 +1,15 @@
 ---
 title: Windows Configuration Designer command-line interface (Windows 10/11)
 description: Learn more about the ICD syntax, switches, and arguments that you can use in the Windows Configuration Designer command-line interface for Windows10/11 client devices.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-author: greg-lindsay
-ms.author: greglin
+ms.prod: windows-client
+author: lizgt2000
+ms.author: lizlong
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: gkomatsu
-manager: dansimp
+manager: aaroncz
+ms.technology: itpro-configure
+ms.date: 12/31/2017
 ---
 
 # Windows Configuration Designer command-line interface (reference)

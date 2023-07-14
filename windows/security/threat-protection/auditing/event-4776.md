@@ -1,17 +1,21 @@
 ---
-title: 4776(S, F) The computer attempted to validate the credentials for an account. (Windows 10)
+title: 4776(S, F) The computer attempted to validate the credentials for an account. 
 description: Describes security event 4776(S, F) The computer attempted to validate the credentials for an account.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/13/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.collection: 
+  - highpri
+  - tier3
+ms.topic: reference
 ---
 
 # 4776(S, F): The computer attempted to validate the credentials for an account.
@@ -29,13 +33,13 @@ This event occurs only on the computer that is authoritative for the provided cr
 
 It shows successful and unsuccessful credential validation attempts.
 
-It shows only the computer name (**Source Workstation**) from which the authentication attempt was performed (authentication source). For example, if you authenticate from CLIENT-1 to SERVER-1 using a domain account you will see CLIENT-1 in the **Source Workstation** field. Information about the destination computer (SERVER-1) is not presented in this event.
+It shows only the computer name (**Source Workstation**) from which the authentication attempt was performed (authentication source). For example, if you authenticate from CLIENT-1 to SERVER-1 using a domain account you'll see CLIENT-1 in the **Source Workstation** field. Information about the destination computer (SERVER-1) isn't presented in this event.
 
-If a credential validation attempt fails, you will see a Failure event with **Error Code** parameter value not equal to “**0x0**”.
+If a credential validation attempt fails, you'll see a Failure event with **Error Code** parameter value not equal to "**0x0**".
 
 The main advantage of this event is that on domain controllers you can see all authentication attempts for domain accounts when NTLM authentication was used.
 
-For monitoring local account logon attempts, it is better to use event “[4624](event-4624.md): An account was successfully logged on” because it contains more details and is more informative.
+For monitoring local account logon attempts, it's better to use event "[4624](event-4624.md): An account was successfully logged on" because it contains more details and is more informative.
 
 This event also generates when a workstation unlock event occurs.
 
@@ -82,7 +86,7 @@ This event does *not* generate when a domain account logs on locally to a domain
 
 ***Field Descriptions:***
 
--   **Authentication Package** \[Type = UnicodeString\]: the name of [Authentication Package](/windows/win32/secauthn/authentication-packages) which was used for credential validation. It is always “**MICROSOFT\_AUTHENTICATION\_PACKAGE\_V1\_0**” for [4776](event-4776.md) event.
+-   **Authentication Package** \[Type = UnicodeString\]: the name of [Authentication Package](/windows/win32/secauthn/authentication-packages) that was used for credential validation. It's always "**MICROSOFT\_AUTHENTICATION\_PACKAGE\_V1\_0**" for [4776](event-4776.md) event.
 
 > **Note**&nbsp;&nbsp;**Authentication package** is a DLL that encapsulates the authentication logic used to determine whether to permit a user to log on. [Local Security Authority](/windows/win32/secgloss/l-gly#_security_local_security_authority_gly) (LSA) authenticates a user logon by sending the request to an authentication package. The authentication package then examines the logon information and either authenticates or rejects the user logon attempt.
 
@@ -98,7 +102,7 @@ This event does *not* generate when a domain account logs on locally to a domain
 
 -   **Source Workstation** \[Type = UnicodeString\]: the name of the computer from which the logon attempt originated.
 
--   **Error Code** \[Type = HexInt32\]: contains error code for Failure events. For Success events this parameter has “**0x0**” value. The table below contains most common error codes for this event:
+-   **Error Code** \[Type = HexInt32\]: contains error code for Failure events. For Success events this parameter has "**0x0**" value. The table below contains most common error codes for this event:
 
 | Error Code | Description                                                                                                                                                                                                                                                                               |
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -123,18 +127,18 @@ For 4776(S, F): The computer attempted to validate the credentials for an accoun
 
 | **Type of monitoring required**     | **Recommendation**          |
 |-----------------|---------|
-| **High-value accounts**: You might have high-value domain or local accounts for which you need to monitor each action.<br>Examples of high-value accounts are database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts and so on. | Monitor this event with the **“Logon Account”** that corresponds to the high-value account or accounts.        |
-| **Anomalies or malicious actions**: You might have specific requirements for detecting anomalies or monitoring potential malicious actions. For example, you might need to monitor for use of an account outside of working hours.                                                                                | When you monitor for anomalies or malicious actions, use the **“Logon Account”** value (with other information) to monitor how or when a particular account is being used.<br>To monitor activity of specific user accounts outside of working hours, monitor the appropriate **Logon Account + Source Workstation** pairs. |
-| **Non-active accounts**: You might have non-active, disabled, or guest accounts, or other accounts that should never be used. | Monitor this event with the **“Logon Account”** that should never be used.   |
-| **Account allow list**: You might have a specific allow list of accounts that are the only ones allowed to perform actions corresponding to particular events.   | If this event corresponds to a “allow list-only” action, review the **“Logon Account”** for accounts that are outside the allow list.     |
-| **Restricted-use computers**: You might have certain computers from which certain people (accounts) should not log on.   | Monitor the target **Source Workstation** for credential validation requests from the **“Logon Account”** that you are concerned about.  |
-| **Account naming conventions**: Your organization might have specific naming conventions for account names.  | Monitor “**Logon Account”** for names that don’t comply with naming conventions. |
+| **High-value accounts**: You might have high-value domain or local accounts for which you need to monitor each action.<br>Examples of high-value accounts are database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts and so on. | Monitor this event with the **"Logon Account"** that corresponds to the high-value account or accounts.        |
+| **Anomalies or malicious actions**: You might have specific requirements for detecting anomalies or monitoring potential malicious actions. For example, you might need to monitor for use of an account outside of working hours.                                                                                | When you monitor for anomalies or malicious actions, use the **"Logon Account"** value (with other information) to monitor how or when a particular account is being used.<br>To monitor activity of specific user accounts outside of working hours, monitor the appropriate **Logon Account + Source Workstation** pairs. |
+| **Non-active accounts**: You might have non-active, disabled, or guest accounts, or other accounts that should never be used. | Monitor this event with the **"Logon Account"** that should never be used.   |
+| **Account allow list**: You might have a specific allow list of accounts that are the only ones allowed to perform actions corresponding to particular events.   | If this event corresponds to a "allow list-only" action, review the **"Logon Account"** for accounts that are outside the allow list.     |
+| **Restricted-use computers**: You might have certain computers from which certain people (accounts) shouldn't log on.   | Monitor the target **Source Workstation** for credential validation requests from the **"Logon Account"** that you're concerned about.  |
+| **Account naming conventions**: Your organization might have specific naming conventions for account names.  | Monitor "**Logon Account"** for names that don't comply with naming conventions. |
 
--   If NTLM authentication should not be used for a specific account, monitor for that account. Don’t forget that local logon will always use NTLM authentication if an account logs on to a device where its user account is stored.
+-   If NTLM authentication shouldn't be used for a specific account, monitor for that account. Don't forget that local logon will always use NTLM authentication if an account logs on to a device where its user account is stored.
 
--   You can use this event to collect all NTLM authentication attempts in the domain, if needed. Don’t forget that local logon will always use NTLM authentication if the account logs on to a device where its user account is stored.
+-   You can use this event to collect all NTLM authentication attempts in the domain, if needed. Don't forget that local logon will always use NTLM authentication if the account logs on to a device where its user account is stored.
 
--   If a local account should be used only locally (for example, network logon or terminal services logon is not allowed), you need to monitor for all events where **Source Workstation** and **Computer** (where the event was generated and where the credentials are stored) have different values.
+-   If a local account should be used only locally (for example, network logon or terminal services logon isn't allowed), you need to monitor for all events where **Source Workstation** and **Computer** (where the event was generated and where the credentials are stored) have different values.
 
 -   Consider tracking the following errors for the reasons listed:
 

@@ -3,24 +3,24 @@ title: "Network security: Allow Local System to use computer identity for NTLM (
 description: Location, values, policy management, and security considerations for the policy setting, Network security Allow Local System to use computer identity for NTLM.
 ms.assetid: c46a658d-b7a4-4139-b7ea-b9268c240053
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/04/2021
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network security: Allow Local System to use computer identity for NTLM
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the location, values, policy management, and security considerations for the **Network security: Allow Local System to use computer identity for NTLM** security policy setting.
@@ -35,9 +35,9 @@ When a service connects with the device identity, signing and encryption are sup
 
 | Setting | Windows Server 2008 and Windows Vista | At least Windows Server 2008 R2 and Windows 7 |
 | - | - | - | 
-| Enabled | Services running as Local System that use Negotiate will use the computer identity. This value might cause some authentication requests between Windows operating systems to fail and log an error.| Services running as Local System that use Negotiate will use the computer identity. This is the default behavior. |
-| Disabled| Services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously. This is the default behavior.| Services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously.|
-|Neither|Services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously. | Services running as Local System that use Negotiate will use the computer identity. This might cause some authentication requests between Windows operating systems to fail and log an error.| 
+| Enabled | Services running as Local System that use Negotiate will use the computer identity. This value might cause some authentication requests between Windows operating systems to fail and log an error.| Services running as Local System that use Negotiate will use the computer identity. This behavior is the default behavior. |
+| Disabled| Services running as Local System that uses Negotiate when reverting to NTLM authentication will authenticate anonymously. This behavior is the default behavior.| Services running as Local System that uses Negotiate when reverting to NTLM authentication will authenticate anonymously.|
+|Neither|Services running as Local System that uses Negotiate when reverting to NTLM authentication will authenticate anonymously. | Services running as Local System that uses Negotiate will use the computer identity. This behavior might cause some authentication requests between Windows operating systems to fail and log an error.| 
  
 ### Location
 
@@ -61,17 +61,17 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ### Policy conflict considerations
 
-The policy [Network security: Allow LocalSystem NULL session fallback](network-security-allow-localsystem-null-session-fallback.md), if enabled, will allow NTLM or Kerberos authentication to be used when a system service attempts authentication. This will increase the success of interoperability at the expense of security.
+The policy [Network security: Allow LocalSystem NULL session fallback](network-security-allow-localsystem-null-session-fallback.md), if enabled, will allow NTLM or Kerberos authentication to be used when a system service attempts authentication. This privilege will increase the success of interoperability at the expense of security.
 
 The anonymous authentication behavior is different for Windows Server 2008 and Windows Vista than later versions of Windows. Configuring and applying this policy setting on those systems might not produce the same results.
 
 ### Group Policy
 
-This policy setting can be configured by using the Group Policy Management Console (GPMC) to be distributed through Group Policy Objects (GPOs). If this policy is not contained in a distributed GPO, this policy can be configured on the local computer by using the Local Security Policy snap-in.
+This policy setting can be configured by using the Group Policy Management Console (GPMC) to be distributed through Group Policy Objects (GPOs). If this policy isn't contained in a distributed GPO, this policy can be configured on the local computer by using the Local Security Policy snap-in.
 
 ## Security considerations
 
@@ -89,7 +89,7 @@ You can configure the **Network security: Allow Local System to use computer ide
 
 ### Potential impact
 
-If you do not configure this policy setting on Windows Server 2008 and Windows Vista, services running as Local System that use the default credentials will use the NULL session and revert to NTLM authentication for Windows operating systems earlier than Windows Vista or Windows Server 2008.
+If you don't configure this policy setting on Windows Server 2008 and Windows Vista, services running as Local System that uses the default credentials will use the NULL session and revert to NTLM authentication for Windows operating systems earlier than Windows Vista or Windows Server 2008.
 Beginning with Windows Server 2008 R2 and Windows 7, the system allows Local System services that use Negotiate to use the computer identity when reverting to NTLM authentication.
 
 ## Related articles

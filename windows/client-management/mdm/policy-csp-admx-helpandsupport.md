@@ -1,234 +1,271 @@
 ---
-title: Policy CSP - ADMX_HelpAndSupport
-description: Policy CSP - ADMX_HelpAndSupport
-ms.author: dansimp
+title: ADMX_HelpAndSupport Policy CSP
+description: Learn more about the ADMX_HelpAndSupport Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 09/03/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_HelpAndSupport-Begin -->
 # Policy CSP - ADMX_HelpAndSupport
->[!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!--Policies-->
-## ADMX_HelpAndSupport policies  
+<!-- ADMX_HelpAndSupport-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_HelpAndSupport-Editable-End -->
 
-<dl>
-  <dd>
-    <a href="#admx-helpandsupport-activehelp">ADMX_HelpAndSupport/ActiveHelp</a>
-  </dd>
-  <dd>
-    <a href="#admx-helpandsupport-hpexplicitfeedback">ADMX_HelpAndSupport/HPExplicitFeedback</a>
-  </dd>
-  <dd>
-    <a href="#admx-helpandsupport-hpimplicitfeedback">ADMX_HelpAndSupport/HPImplicitFeedback</a>
-  </dd>
-  <dd>
-    <a href="#admx-helpandsupport-hponlineassistance">ADMX_HelpAndSupport/HPOnlineAssistance</a>
-  </dd>
-</dl>
+<!-- ActiveHelp-Begin -->
+## ActiveHelp
 
+<!-- ActiveHelp-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ActiveHelp-Applicability-End -->
 
-<hr/>
+<!-- ActiveHelp-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_HelpAndSupport/ActiveHelp
+```
+<!-- ActiveHelp-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-helpandsupport-activehelp"></a>**ADMX_HelpAndSupport/ActiveHelp**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * Device
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- ActiveHelp-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether active content links in trusted assistance content are rendered. By default, the Help viewer renders trusted assistance content with active elements such as ShellExecute links and Guided Help links.
 
-If you enable this policy setting, active content links are not rendered. The text is displayed, but there are no clickable links for these elements.
+- If you enable this policy setting, active content links aren't rendered. The text is displayed, but there are no clickable links for these elements.
 
-If you disable or do not configure this policy setting, the default behavior applies (Help viewer renders trusted assistance content with active elements).
+- If you disable or don't configure this policy setting, the default behavior applies (Help viewer renders trusted assistance content with active elements).
+<!-- ActiveHelp-Description-End -->
 
-<!--/Description-->
+<!-- ActiveHelp-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ActiveHelp-Editable-End -->
 
+<!-- ActiveHelp-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off Active Help*
--   GP name: *ActiveHelp*
--   GP path: *Windows Components/Online Assistance*
--   GP ADMX file name: *HelpAndSupport.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ActiveHelp-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- ActiveHelp-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-helpandsupport-hpexplicitfeedback"></a>**ADMX_HelpAndSupport/HPExplicitFeedback**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | ActiveHelp |
+| Friendly Name | Turn off Active Help |
+| Location | Computer Configuration |
+| Path | Windows Components > Online Assistance |
+| Registry Key Name | Software\Policies\Microsoft\Assistance\Client\1.0 |
+| Registry Value Name | NoActiveHelp |
+| ADMX File Name | HelpAndSupport.admx |
+<!-- ActiveHelp-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ActiveHelp-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ActiveHelp-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ActiveHelp-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- HPExplicitFeedback-Begin -->
+## HPExplicitFeedback
 
-> [!div class = "checklist"]
-> * User
+<!-- HPExplicitFeedback-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- HPExplicitFeedback-Applicability-End -->
 
-<hr/>
+<!-- HPExplicitFeedback-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_HelpAndSupport/HPExplicitFeedback
+```
+<!-- HPExplicitFeedback-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- HPExplicitFeedback-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether users can provide ratings for Help content.
 
-If you enable this policy setting, ratings controls are not added to Help content.
+- If you enable this policy setting, ratings controls aren't added to Help content.
 
-If you disable or do not configure this policy setting, ratings controls are added to Help topics.
+- If you disable or don't configure this policy setting, ratings controls are added to Help topics.
 
 Users can use the control to provide feedback on the quality and usefulness of the Help and Support content.
+<!-- HPExplicitFeedback-Description-End -->
 
-<!--/Description-->
+<!-- HPExplicitFeedback-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HPExplicitFeedback-Editable-End -->
 
+<!-- HPExplicitFeedback-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off Help Ratings*
--   GP name: *HPExplicitFeedback*
--   GP path: *System/Internet Communication Management/Internet Communication settings*
--   GP ADMX file name: *HelpAndSupport.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HPExplicitFeedback-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- HPExplicitFeedback-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-helpandsupport-hpimplicitfeedback"></a>**ADMX_HelpAndSupport/HPImplicitFeedback**  
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | HPExplicitFeedback |
+| Friendly Name | Turn off Help Ratings |
+| Location | User Configuration |
+| Path | InternetManagement > Internet Communication settings |
+| Registry Key Name | Software\Policies\Microsoft\Assistance\Client\1.0 |
+| Registry Value Name | NoExplicitFeedback |
+| ADMX File Name | HelpAndSupport.admx |
+<!-- HPExplicitFeedback-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HPExplicitFeedback-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HPExplicitFeedback-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- HPExplicitFeedback-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- HPImplicitFeedback-Begin -->
+## HPImplicitFeedback
 
-<hr/>
+<!-- HPImplicitFeedback-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- HPImplicitFeedback-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- HPImplicitFeedback-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_HelpAndSupport/HPImplicitFeedback
+```
+<!-- HPImplicitFeedback-OmaUri-End -->
+
+<!-- HPImplicitFeedback-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether users can participate in the Help Experience Improvement program. The Help Experience Improvement program collects information about how customers use Windows Help so that Microsoft can improve it.
 
-If you enable this policy setting, users cannot participate in the Help Experience Improvement program.
+- If you enable this policy setting, users can't participate in the Help Experience Improvement program.
 
-If you disable or do not configure this policy setting, users can turn on the Help Experience Improvement program feature from the Help and Support settings page.
+- If you disable or don't configure this policy setting, users can turn on the Help Experience Improvement program feature from the Help and Support settings page.
+<!-- HPImplicitFeedback-Description-End -->
 
-<!--/Description-->
+<!-- HPImplicitFeedback-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HPImplicitFeedback-Editable-End -->
 
+<!-- HPImplicitFeedback-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off Help Experience Improvement Program*
--   GP name: *HPImplicitFeedback*
--   GP path: *System/Internet Communication Management/Internet Communication settings*
--   GP ADMX file name: *HelpAndSupport.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HPImplicitFeedback-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- HPImplicitFeedback-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-helpandsupport-hponlineassistance"></a>**ADMX_HelpAndSupport/HPOnlineAssistance**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | HPImplicitFeedback |
+| Friendly Name | Turn off Help Experience Improvement Program |
+| Location | User Configuration |
+| Path | InternetManagement > Internet Communication settings |
+| Registry Key Name | Software\Policies\Microsoft\Assistance\Client\1.0 |
+| Registry Value Name | NoImplicitFeedback |
+| ADMX File Name | HelpAndSupport.admx |
+<!-- HPImplicitFeedback-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- HPImplicitFeedback-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HPImplicitFeedback-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HPImplicitFeedback-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- HPOnlineAssistance-Begin -->
+## HPOnlineAssistance
 
-> [!div class = "checklist"]
-> * User
+<!-- HPOnlineAssistance-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- HPOnlineAssistance-Applicability-End -->
 
-<hr/>
+<!-- HPOnlineAssistance-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_HelpAndSupport/HPOnlineAssistance
+```
+<!-- HPOnlineAssistance-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- HPOnlineAssistance-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting specifies whether users can search and view content from Windows Online in Help and Support. Windows Online provides the most up-to-date Help content for Windows.
 
-If you enable this policy setting, users are prevented from accessing online assistance content from Windows Online.
+- If you enable this policy setting, users are prevented from accessing online assistance content from Windows Online.
 
-If you disable or do not configure this policy setting, users can access online assistance if they have a connection to the Internet and have not disabled Windows Online from the Help and Support Options page.
+- If you disable or don't configure this policy setting, users can access online assistance if they've a connection to the Internet and haven't disabled Windows Online from the Help and Support Options page.
+<!-- HPOnlineAssistance-Description-End -->
 
-<!--/Description-->
+<!-- HPOnlineAssistance-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HPOnlineAssistance-Editable-End -->
 
+<!-- HPOnlineAssistance-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off Windows Online*
--   GP name: *HPOnlineAssistance*
--   GP path: *System/Internet Communication Management/Internet Communication settings*
--   GP ADMX file name: *HelpAndSupport.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HPOnlineAssistance-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- HPOnlineAssistance-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
+| Name | Value |
+|:--|:--|
+| Name | HPOnlineAssistance |
+| Friendly Name | Turn off Windows Online |
+| Location | User Configuration |
+| Path | InternetManagement > Internet Communication settings |
+| Registry Key Name | Software\Policies\Microsoft\Assistance\Client\1.0 |
+| Registry Value Name | NoOnlineAssist |
+| ADMX File Name | HelpAndSupport.admx |
+<!-- HPOnlineAssistance-AdmxBacked-End -->
 
-<!--/Policies-->
+<!-- HPOnlineAssistance-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HPOnlineAssistance-Examples-End -->
 
+<!-- HPOnlineAssistance-End -->
+
+<!-- ADMX_HelpAndSupport-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_HelpAndSupport-CspMoreInfo-End -->
+
+<!-- ADMX_HelpAndSupport-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

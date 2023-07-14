@@ -1,22 +1,25 @@
 ---
 title: Service Host service refactoring in Windows 10 version 1703
 description: Learn about the SvcHost Service Refactoring introduced in Windows 10 version 1703.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: mobile
-ms.author: greglin
-author: greg-lindsay
+author: nicholasswhite
+ms.author: nwhite
+manager: aaroncz
 ms.date: 07/20/2017
-ms.reviewer: 
-manager: dansimp
+ms.topic: article
+ms.prod: windows-client
+ms.technology: itpro-apps
+ms.localizationpriority: medium
+ms.colletion: tier1
+ms.reviewer:
 ---
 
 # Changes to Service Host grouping in Windows 10
 
-> Applies to: Windows 10
+**Applies to**:
 
-The **Service Host (svchost.exe)** is a shared-service process that serves as a shell for loading services from DLL files. Services are organized into related host groups, and each group runs inside a different instance of the Service Host process. In this way, a problem in one instance does not affect other instances. Service Host groups are determined by combining the services with matching security requirements. For example:
+- Windows 10
+
+The **Service Host (svchost.exe)** is a shared-service process that serves as a shell for loading services from DLL files. Services are organized into related host groups, and each group runs inside a different instance of the Service Host process. In this way, a problem in one instance doesn't affect other instances. Service Host groups are determined by combining the services with matching security requirements. For example:
 
 * Local Service
 * Local Service No Network
@@ -33,7 +36,7 @@ Benefits of this design change include:
 
 * Increased reliability by insulating critical network services from the failure of another non-network service in the host, and adding the ability to restore networking connectivity seamlessly when networking components crash.
 * Reduced support costs by eliminating the troubleshooting overhead associated with isolating misbehaving services in the shared host.
-* Increased security by providing additional inter-service isolation 
+* Increased security by providing more inter-service isolation 
 * Increased scalability by allowing per-service settings and privileges 
 * Improved resource management through per-service CPU, I/O and memory management and increase clear diagnostic data (report CPU, I/O and network usage per service).
 
@@ -58,24 +61,24 @@ Compare that to the same view of running processes in Windows 10 version 1703:
 
 
 ## Exceptions
-Some services will continue to be grouped on PCs running with 3.5GB or higher RAM. For example, the Base Filtering Engine (BFE) and the Windows Firewall (Mpssvc) will be grouped together in a single host group, as will the RPC Endpoint Mapper and Remote Procedure Call services.
+Some services will continue to be grouped on PCs running with 3.5 GB or higher RAM. For example, the Base Filtering Engine (BFE) and the Windows Firewall (Mpssvc) will be grouped together in a single host group, as will the RPC Endpoint Mapper and Remote Procedure Call services.
 
 If you need to identify services that will continue to be grouped, in addition to seeing them in Task Manager and using command line tools, you can look for the *SvcHostSplitDisable* value in their respective service keys under 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services.
 
 The default value of **1** prevents the service from being split.
 
-For example, this is the registry key configuration for BFE:
+For example, the registry key configuration for BFE is:
 ![Example of a service that cannot be separated.](media/svchost-separation-disabled.png)
 
 ## Memory footprint
 
-Be aware that separating services increases the total number of SvcHost instances, which increases memory utilization. (Service grouping provided a modest reduction to the overall resource footprint of the services involved.) 
+Separating services increases the total number of SvcHost instances, which increases memory utilization. (Service grouping provided a modest reduction to the overall resource footprint of the services involved.) 
 
-Consider the following:
+Consider the following example:
 
 
-|Grouped Services (< 3.5GB) | Split Services (3.5GB+)
+|Grouped Services (< 3.5 GB) | Split Services (3.5 GB+)
 |--------------------------------------- | ------------------------------------------ | 
 |![Memory utilization for grouped services.](media/svchost-grouped-utilization.png)   |![Memory utilization for separated services](media/svchost-separated-utilization.png)       |
 

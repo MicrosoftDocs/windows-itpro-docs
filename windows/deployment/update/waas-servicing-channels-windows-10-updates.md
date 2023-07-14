@@ -1,16 +1,14 @@
 ---
 title: Assign devices to servicing channels for Windows client updates
 description: Learn how to assign devices to servicing channels for Windows 10 updates locally, by using Group Policy, and by using MDM
-ms.prod: w10
-ms.mktglfcycl: deploy
-author: jaimeo
+ms.prod: windows-client
+author: mestew
 ms.localizationpriority: medium
-ms.author: jaimeo
-ms.reviewer: 
-manager: laurawi
+ms.author: mstewart
+manager: aaroncz
 ms.topic: article
-ms.custom:
-- seo-marvel-apr2020
+ms.technology: itpro-updates
+ms.date: 12/31/2017
 ---
 
 # Assign devices to servicing channels for Windows 10 updates
@@ -50,10 +48,10 @@ The General Availability Channel is the default servicing channel for all Window
 
 To get started with the Windows Insider Program for Business, follows these steps:
 
-1. On the [Windows Insider](https://insider.windows.com) website, go to **For Business > Getting Started** to [register your organizational Azure AD account](https://insider.windows.com/insidersigninaad/).
-2. **Register your domain**. Rather than have each user register individually for Insider Preview builds, administrators can [register their domain](https://insider.windows.com/for-business-organization-admin/) and control settings centrally.</br>**Note:** The signed-in user needs to be a **Global Administrator** of the Azure AD domain in order to be able to register the domain.
+1. On the [Windows Insider](https://www.microsoft.com/windowsinsider/for-business) website, select **Register** to register your organizational Azure AD account.
+2. Follow the prompts to register your tenant.</br>**Note:** The signed-in user needs to be a **Global Administrator** of the Azure AD domain in order to be able to register.
 3. Make sure the **Allow Telemetry** setting is set to **2** or higher.
-4. For Windows 10, version 1709 or later, set policies to manage preview builds and their delivery:
+4. For Windows devices, set policies to manage preview builds and their delivery:
 
 The **Manage preview builds** setting gives administrators control over enabling or disabling preview build installation on a device. You can also decide to stop preview builds once the release is public.
 * Group Policy: **Computer Configuration/Administrative Templates/Windows Components/Windows Update/Windows Update for Business** - *Manage preview builds*
@@ -63,7 +61,7 @@ The **Branch Readiness Level** settings allow you to choose between preview flig
 * Group Policy: **Computer Configuration/Administrative Templates/Windows Components/Windows Update/ Windows Update for Business** - *Select when Preview Builds and feature updates are received*
 * MDM: **Update/BranchReadinessLevel**
 
-For more information, see [Windows Insider Program for Business](/windows-insider/at-work-pro/wip-4-biz-get-started)
+For more information, see [Windows Insider Program for Business](/windows-insider/business/register).
 
 ## Block access to Windows Insider Program
 

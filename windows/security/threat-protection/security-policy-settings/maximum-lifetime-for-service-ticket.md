@@ -1,21 +1,20 @@
 ---
-title: Maximum lifetime for service ticket (Windows 10)
+title: Maximum lifetime for service ticket 
 description: Describes the best practices, location, values, policy management, and security considerations for the Maximum lifetime for service ticket security policy setting.
 ms.assetid: 484bf05a-3858-47fc-bc02-6599ca860247
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Maximum lifetime for service ticket
@@ -31,16 +30,16 @@ The **Maximum lifetime for service ticket** policy setting determines the maximu
 
 The possible values for this Group Policy setting are:
 
--   A user-defined number of minutes from 10 through 99,999, or 0 (in which case service tickets do not expire).
+-   A user-defined number of minutes from 10 through 99,999, or 0 (in which case service tickets don't expire).
 -   Not defined.
 
-If a client presents an expired session ticket when it requests a connection to a server, the server returns an error message. The client must request a new session ticket from the Kerberos V5 KDC. After a connection is authenticated, however, it no longer matters whether the session ticket remains valid. Session tickets are used only to authenticate new connections with servers. Ongoing operations are not interrupted if the session ticket that authenticated the connection expires during the connection.
+If a client presents an expired session ticket when it requests a connection to a server, the server returns an error message. The client must request a new session ticket from the Kerberos V5 KDC. After a connection is authenticated, however, it no longer matters whether the session ticket remains valid. Session tickets are used only to authenticate new connections with servers. Ongoing operations aren't interrupted if the session ticket that authenticated the connection expires during the connection.
 
-If the value for this policy setting is too high, users might be able to access network resources outside of their logon hours. In addition, users whose accounts have been disabled might be able to continue accessing network services by using valid service tickets that were issued before their account was disabled. If the value is set to 0, service tickets never expire.
+If the value for this policy setting is too high, users might be able to access network resources outside of their sign-in hours. In addition, users whose accounts have been disabled might be able to continue accessing network services by using valid service tickets that were issued before their account was disabled. If the value is set to 0, service tickets never expire.
 
 ### Best practices
 
--   It is advisable to set **Maximum lifetime for service ticket** to **600** minutes.
+-   It's advisable to set **Maximum lifetime for service ticket** to **600** minutes.
 
 ### Location
 
@@ -63,7 +62,7 @@ The following table lists the actual and effective default policy values. Defaul
 
 This section describes features, tools, and guidance to help you manage this policy.
 
-A restart of the device is not required for this policy setting to be effective.
+A restart of the device isn't required for this policy setting to be effective.
 
 This policy setting is configured on the domain controller.
 
@@ -86,7 +85,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-If you configure the value for the **Maximum lifetime for service ticket** setting too high, users might be able to access network resources outside of their logon hours. Also, users whose accounts were disabled might continue to have access to network services with valid service tickets that were issued before their accounts were disabled.
+If you configure the value for the **Maximum lifetime for service ticket** setting too high, users might be able to access network resources outside of their sign-in hours. Also, users whose accounts were disabled might continue to have access to network services with valid service tickets that were issued before their accounts were disabled.
 
 ### Countermeasure
 
@@ -94,7 +93,7 @@ Configure the **Maximum lifetime for service ticket** setting to 600 minutes.
 
 ### Potential impact
 
-None. This is the default configuration.
+None. This non-impact state is the default configuration.
 
 ## Related topics
 

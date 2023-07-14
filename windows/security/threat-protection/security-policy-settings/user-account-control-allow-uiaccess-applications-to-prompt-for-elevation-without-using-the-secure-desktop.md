@@ -1,26 +1,26 @@
 ---
-title: User Account Control Allow UIAccess applications to prompt for elevation without using the secure desktop (Windows 10)
+title: User Account Control Allow UIAccess applications to prompt for elevation without using the secure desktop 
 description: Best practices and more for the policy setting, User Account Control Allow UIAccess applications to prompt for elevation without using the secure desktop.
 ms.assetid: fce20472-3c93-449d-b520-13c4c74a9892
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop** security policy setting.
@@ -91,7 +91,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a computer restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a computer restart when they're saved locally or distributed through Group Policy.
 
 ### Group Policy
 
@@ -99,7 +99,7 @@ All auditing capabilities are integrated in Group Policy. You can configure, dep
 
 ### Policy interactions
 
-If you plan to enable this setting, you should also review the effect of the [User Account Control: Behavior of the elevation prompt for standard users](user-account-control-behavior-of-the-elevation-prompt-for-standard-users.md) setting. If it is configured as **Automatically deny elevation requests**, elevation requests are not presented to the user. If you disable this setting, the secure desktop can only be disabled by the user of the interactive desktop or by disabling the [User Account Control: Switch to the secure desktop when prompting for elevation](user-account-control-switch-to-the-secure-desktop-when-prompting-for-elevation.md) setting, which by default is enabled.
+If you plan to enable this setting, you should also review the effect of the [User Account Control: Behavior of the elevation prompt for standard users](user-account-control-behavior-of-the-elevation-prompt-for-standard-users.md) setting. If it's configured as **Automatically deny elevation requests**, elevation requests aren't presented to the user. If you disable this setting, the secure desktop can only be disabled by the user of the interactive desktop or by disabling the [User Account Control: Switch to the secure desktop when prompting for elevation](user-account-control-switch-to-the-secure-desktop-when-prompting-for-elevation.md) setting, which by default is enabled.
 
 ## Security considerations
 
@@ -107,13 +107,13 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-UIA programs are designed to interact with Windows and application programs on behalf of a user. This setting allows UIA programs to bypass the secure desktop to increase usability in certain cases, but it allows elevation requests to appear on the regular interactive desktop instead of on the secure desktop. This increases the risk that a malicious program could intercept data that is being transferred between the UI and the application. Because UIA programs must be able to respond to prompts regarding security issues, such as the UAC elevation prompt, UIA programs must be highly trusted. To be considered trusted, a UIA program must be digitally signed. By default, UIA programs can be run only from the following protected paths:
+UIA programs are designed to interact with Windows and application programs on behalf of a user. This setting allows UIA programs to bypass the secure desktop to increase usability in certain cases, but it allows elevation requests to appear on the regular interactive desktop instead of on the secure desktop. This requests-appearance increases the risk that a malicious program could intercept data that is being transferred between the UI and the application. Because UIA programs must be able to respond to prompts regarding security issues, such as the UAC elevation prompt, UIA programs must be highly trusted. To be considered trusted, a UIA program must be digitally signed. By default, UIA programs can be run only from the following protected paths:
 
 -   ..\\Program Files\\ (and subfolders)
 -   ..\\Program Files (x86)\\ (and subfolders, in 64-bit versions of Windows only)
 -   ..\\Windows\\System32\\
 
-The requirement to be in a protected path can be disabled by the [User Account Control: Only elevate UIAccess applications that are installed in secure locations](user-account-control-only-elevate-uiaccess-applications-that-are-installed-in-secure-locations.md) setting. Although this setting applies to any UIA program, it is used primarily in certain Windows Remote Assistance scenarios.
+The requirement to be in a protected path can be disabled by the [User Account Control: Only elevate UIAccess applications that are installed in secure locations](user-account-control-only-elevate-uiaccess-applications-that-are-installed-in-secure-locations.md) setting. Although this setting applies to any UIA program, it's used primarily in certain Windows Remote Assistance scenarios.
 
 ### Countermeasure
 

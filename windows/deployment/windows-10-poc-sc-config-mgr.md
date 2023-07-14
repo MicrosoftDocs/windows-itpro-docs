@@ -1,79 +1,78 @@
 ---
-title: Steps to deploy Windows 10 with Microsoft Endpoint Configuration Manager
-description: In this article, you'll learn how to deploy Windows 10 in a test lab using Microsoft endpoint configuration manager.
-ms.prod: w10
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: deploy
-keywords: deployment, automate, tools, configure, sccm
+title: Steps to deploy Windows 10 with Configuration Manager
+description: Learn how to deploy Windows 10 in a test lab using Microsoft Configuration Manager.
+ms.prod: windows-client
+ms.technology: itpro-deploy
 ms.localizationpriority: medium
-ms.reviewer: 
-manager: laurawi
-ms.audience: itpro
-ms.author: greglin
-author: greg-lindsay
-audience: itpro
-ms.topic: article
-ms.custom: seo-marvel-apr2020
+manager: aaroncz
+ms.author: frankroj
+author: frankroj
+ms.topic: tutorial
+ms.date: 11/23/2022
 ---
 
-# Deploy Windows 10 in a test lab using Microsoft Endpoint Configuration Manager
+# Deploy Windows 10 in a test lab using Configuration Manager
 
-**Applies to**
+*Applies to:*
 
-- Windows 10
+- Windows 10
 
-**Important**: This guide leverages the proof of concept (PoC) environment, and some settings that are configured in the following guides:
-
-- [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md)
-- [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md)
-
-Please complete all steps in these guides before attempting the procedures in this guide. If you wish to skip the Windows 10 deployment procedures in the MDT guide and move directly to this guide, you must at least install MDT and the Windows ADK before performing procedures in this guide. All steps in the first guide are required before attempting the procedures in this guide.
+> [!IMPORTANT]
+> This guide uses the proof of concept (PoC) environment, and some settings that are configured in the following guides:
+>
+> - [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md)
+> - [Deploy Windows 10 in a test lab using the Microsoft Deployment Toolkit](windows-10-poc-mdt.md)
+>
+> Complete all steps in these guides before you start the procedures in this guide. If you want to skip the Windows 10 deployment procedures in the MDT guide, and move directly to this guide, at least install MDT and the Windows ADK before starting this guide. All steps in the first guide are required before attempting the procedures in this guide.
 
 The PoC environment is a virtual network running on Hyper-V with three virtual machines (VMs):
 
 - **DC1**: A contoso.com domain controller, DNS server, and DHCP server.
 - **SRV1**: A dual-homed contoso.com domain member server, DNS server, and default gateway providing NAT service for the PoC network.
-- **PC1**: A contoso.com member computer running Windows 7, Windows 8, or Windows 8.1 that has been cloned from a physical computer on your corporate network for testing purposes.
+- **PC1**: A contoso.com member computer running Windows 7, Windows 8, or Windows 8.1 that has been cloned from a physical computer on your network for testing purposes.
 
->This guide leverages the Hyper-V server role to perform procedures. If you do not complete all steps in a single session, consider using [checkpoints](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn818483(v=ws.11)) and [saved states](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee247418(v=ws.10)) to pause, resume, or restart your work.
+This guide uses the Hyper-V server role to perform procedures. If you don't complete all steps in a single session, consider using [checkpoints](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn818483(v=ws.11)) and [saved states](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee247418(v=ws.10)) to pause, resume, or restart your work.
 
->Multiple features and services are installed on SRV1 in this guide. This is not a typical installation, and is only done to set up a lab environment with a bare minimum of resources. However, if less than 4 GB of RAM is allocated to SRV1 in the Hyper-V console, some procedures will be extremely slow to complete. If resources are limited on the Hyper-V host, consider reducing RAM allocation on DC1 and PC1, and then increasing the RAM allocation on SRV1. You can adjust RAM allocation for a VM by right-clicking the VM in the Hyper-V Manager console, clicking **Settings**, clicking **Memory**, and modifying the value next to **Maximum RAM**.
+Multiple features and services are installed on SRV1 in this guide. This configuration isn't a typical installation, and is only done to set up a lab environment with a bare minimum of resources. However, if less than 4 GB of RAM is allocated to SRV1 in the Hyper-V console, some procedures will be slow to complete. If resources are limited on the Hyper-V host, consider reducing RAM allocation on DC1 and PC1, and then increasing the RAM allocation on SRV1. You can adjust RAM allocation for a VM by right-clicking the VM in the Hyper-V Manager console, select **Settings**, select **Memory**, and modify the value next to **Maximum RAM**.
 
 ## In this guide
 
-This guide provides end-to-end instructions to install and configure Microsoft Endpoint Configuration Manager, and use it to deploy a Windows 10 image. Depending on the speed of your Hyper-V host, the procedures in this guide will require 6-10 hours to complete.
+This guide provides end-to-end instructions to install and configure Microsoft Configuration Manager, and use it to deploy a Windows 10 image. Depending on the speed of your Hyper-V host, the procedures in this guide will require 6-10 hours to complete.
 
-Topics and procedures in this guide are summarized in the following table. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed.
+The procedures in this guide are summarized in the following table. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed.
 
-
-|Topic|Description|Time|
+|Procedure|Description|Time|
 |--- |--- |--- |
 |[Install prerequisites](#install-prerequisites)|Install prerequisite Windows Server roles and features, download, install and configure SQL Server, configure firewall rules, and install the Windows ADK.|60 minutes|
-|[Install Microsoft Endpoint Configuration Manager](#install-microsoft-endpoint-configuration-manager)|Download Microsoft Endpoint Configuration Manager, configure prerequisites, and install the package.|45 minutes|
+|[Install Microsoft Configuration Manager](#install-microsoft-configuration-manager)|Download Microsoft Configuration Manager, configure prerequisites, and install the package.|45 minutes|
 |[Download MDOP and install DaRT](#download-mdop-and-install-dart)|Download the Microsoft Desktop Optimization Pack 2015 and install DaRT 10.|15 minutes|
 |[Prepare for Zero Touch installation](#prepare-for-zero-touch-installation)|Prerequisite procedures to support Zero Touch installation.|60 minutes|
 |[Create a boot image for Configuration Manager](#create-a-boot-image-for-configuration-manager)|Use the MDT wizard to create the boot image in Configuration Manager.|20 minutes|
 |[Create a Windows 10 reference image](#create-a-windows-10-reference-image)|This procedure can be skipped if it was done previously, otherwise instructions are provided to create a reference image.|0-60 minutes|
-|[Add a Windows 10 operating system image](#add-a-windows-10-operating-system-image)|Add a Windows 10 operating system image and distribute it.|10 minutes|
+|[Add a Windows 10 OS image](#add-a-windows-10-os-image)|Add a Windows 10 OS image and distribute it.|10 minutes|
 |[Create a task sequence](#create-a-task-sequence)|Create a Configuration Manager task sequence with MDT integration using the MDT wizard|15 minutes|
-|[Finalize the operating system configuration](#finalize-the-operating-system-configuration)|Enable monitoring, configure rules, and distribute content.|30 minutes|
+|[Finalize the OS configuration](#finalize-the-os-configuration)|Enable monitoring, configure rules, and distribute content.|30 minutes|
 |[Deploy Windows 10 using PXE and Configuration Manager](#deploy-windows-10-using-pxe-and-configuration-manager)|Deploy Windows 10 using Configuration Manager deployment packages and task sequences.|60 minutes|
 |[Replace a client with Windows 10 using Configuration Manager](#replace-a-client-with-windows-10-using-configuration-manager)|Replace a client computer with Windows 10 using Configuration Manager.|90 minutes|
 |[Refresh a client with Windows 10 using Configuration Manager](#refresh-a-client-with-windows-10-using-configuration-manager)|Use a task sequence to refresh a client with Windows 10 using Configuration Manager and MDT|90 minutes|
 
 ## Install prerequisites
 
-1. Before installing Microsoft Endpoint Configuration Manager, we must install prerequisite services and features. Type the following command at an elevated Windows PowerShell prompt on SRV1:
+1. Before installing Microsoft Configuration Manager, we must install prerequisite services and features. Enter the following command at an elevated Windows PowerShell prompt on SRV1:
 
     ```powershell
     Install-WindowsFeature Web-Windows-Auth,Web-ISAPI-Ext,Web-Metabase,Web-WMI,BITS,RDC,NET-Framework-Features,Web-Asp-Net,Web-Asp-Net45,NET-HTTP-Activation,NET-Non-HTTP-Activ
     ```
 
-    >If the request to add features fails, retry the installation by typing the command again.
+    > [!NOTE]
+    > If the request to add features fails, retry the installation by typing the command again.
 
-2. Download [SQL Server 2014 SP2](https://www.microsoft.com/evalcenter/evaluate-sql-server-2014-sp2) from the Microsoft Evaluation Center as an .ISO file on the Hyper-V host computer. Save the file to the **C:\VHD** directory.
-3. When you have downloaded the file **SQLServer2014SP2-FullSlipstream-x64-ENU.iso** and placed it in the C:\VHD directory, type the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
+2. Download [SQL Server](https://www.microsoft.com/evalcenter/evaluate-sql-server-2022) from the Microsoft Evaluation Center as an .ISO file on the Hyper-V host computer. Save the file to the **C:\VHD** directory.
+
+    > [!NOTE]
+    > The rest of this article describes the installation of SQL Server 2014. If you download a different version of SQL Server, you may need to modify the installation steps.
+
+1. When you've downloaded the file **SQLServer2014SP2-FullSlipstream-x64-ENU.iso** and placed it in the C:\VHD directory, enter the following command at an elevated Windows PowerShell prompt on the Hyper-V host:
 
     ```powershell
     Set-VMDvdDrive -VMName SRV1 -Path c:\VHD\SQLServer2014SP2-FullSlipstream-x64-ENU.iso
@@ -81,15 +80,15 @@ Topics and procedures in this guide are summarized in the following table. An es
 
     This command mounts the .ISO file to drive D on SRV1.
 
-4. Type the following command at an elevated Windows PowerShell prompt on SRV1 to install SQL Server:
+4. Enter the following command at an elevated Windows PowerShell prompt on SRV1 to install SQL Server:
 
-    ```powershell
+    ```cmd
     D:\setup.exe /q /ACTION=Install /ERRORREPORTING="False" /FEATURES=SQLENGINE,RS,IS,SSMS,TOOLS,ADV_SSMS,CONN /INSTANCENAME=MSSQLSERVER /INSTANCEDIR="C:\Program Files\Microsoft SQL Server" /SQLSVCACCOUNT="NT AUTHORITY\System" /SQLSYSADMINACCOUNTS="BUILTIN\ADMINISTRATORS" /SQLSVCSTARTUPTYPE=Automatic /AGTSVCACCOUNT="NT AUTHORITY\SYSTEM" /AGTSVCSTARTUPTYPE=Automatic /RSSVCACCOUNT="NT AUTHORITY\System" /RSSVCSTARTUPTYPE=Automatic /ISSVCACCOUNT="NT AUTHORITY\System" /ISSVCSTARTUPTYPE=Disabled /ASCOLLATION="Latin1_General_CI_AS" /SQLCOLLATION="SQL_Latin1_General_CP1_CI_AS" /TCPENABLED="1" /NPENABLED="1" /IAcceptSQLServerLicenseTerms
     ```
 
     Installation will take several minutes. When installation is complete, the following output will be displayed:
 
-    ```dos
+    ```console
     Microsoft (R) SQL Server 2014 12.00.5000.00
     Copyright (c) Microsoft Corporation.  All rights reserved.
 
@@ -103,22 +102,21 @@ Topics and procedures in this guide are summarized in the following table. An es
     Success
     One or more affected files have operations pending.
     You should restart your computer to complete this process.
-    PS C:\>
     ```
 
-5. Type the following commands at an elevated Windows PowerShell prompt on SRV1:
+5. Enter the following commands at an elevated Windows PowerShell prompt on SRV1:
 
     ```powershell
-    New-NetFirewallRule -DisplayName "SQL Server" -Direction Inbound –Protocol TCP –LocalPort 1433 -Action allow
-    New-NetFirewallRule -DisplayName "SQL Admin Connection" -Direction Inbound –Protocol TCP –LocalPort 1434 -Action allow
-    New-NetFirewallRule -DisplayName "SQL Database Management" -Direction Inbound –Protocol UDP –LocalPort 1434 -Action allow
-    New-NetFirewallRule -DisplayName "SQL Service Broker" -Direction Inbound –Protocol TCP –LocalPort 4022 -Action allow
-    New-NetFirewallRule -DisplayName "SQL Debugger/RPC" -Direction Inbound –Protocol TCP –LocalPort 135 -Action allow
+    New-NetFirewallRule -DisplayName "SQL Server" -Direction Inbound -Protocol TCP -LocalPort 1433 -Action allow
+    New-NetFirewallRule -DisplayName "SQL Admin Connection" -Direction Inbound -Protocol TCP -LocalPort 1434 -Action allow
+    New-NetFirewallRule -DisplayName "SQL Database Management" -Direction Inbound -Protocol UDP -LocalPort 1434 -Action allow
+    New-NetFirewallRule -DisplayName "SQL Service Broker" -Direction Inbound -Protocol TCP -LocalPort 4022 -Action allow
+    New-NetFirewallRule -DisplayName "SQL Debugger/RPC" -Direction Inbound -Protocol TCP -LocalPort 135 -Action allow
     ```
 
 6. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](/windows-hardware/get-started/adk-install) on SRV1 using the default installation settings. The current version is the ADK for Windows 10, version 2004. Installation might require several minutes to acquire all components.
 
-## Install Microsoft Endpoint Configuration Manager
+## Install Microsoft Configuration Manager
 
 1. On SRV1, temporarily disable IE Enhanced Security Configuration for Administrators by typing the following commands at an elevated Windows PowerShell prompt:
 
@@ -128,11 +126,13 @@ Topics and procedures in this guide are summarized in the following table. An es
     Stop-Process -Name Explorer
     ```
 
-2. Download [Microsoft Endpoint Manager and Endpoint Protection](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) on SRV1 (download the executable file anywhere on SRV1), double-click the file, enter **C:\configmgr** for **Unzip to folder**, and click **Unzip**. The C:\configmgr directory will be automatically created. Click **OK** and then close the **WinZip Self-Extractor** dialog box when finished.
+2. Download [Microsoft Configuration Manager (current branch)](https://www.microsoft.com/evalcenter/evaluate-microsoft-endpoint-configuration-manager) and extract the contents on SRV1.
 
-3. Before starting the installation, verify that WMI is working on SRV1. See the following examples. Verify that **Running** is displayed under **Status** and **True** is displayed next to **TcpTestSucceeded**:
+3. Open the file, enter **C:\configmgr** for **Unzip to folder**, and select **Unzip**. The `C:\configmgr` directory will be automatically created. Select **OK** and then close the **WinZip Self-Extractor** dialog box when finished.
 
-    ```dos
+4. Before starting the installation, verify that WMI is working on SRV1. See the following examples. Verify that **Running** is displayed under **Status** and **True** is displayed next to **TcpTestSucceeded**:
+
+    ```powershell
     Get-Service Winmgmt
 
     Status   Name               DisplayName
@@ -157,57 +157,70 @@ Topics and procedures in this guide are summarized in the following table. An es
 
     You can also verify WMI using the WMI console by typing **wmimgmt.msc**, right-clicking **WMI Control (Local)** in the console tree, and then clicking **Properties**.
 
-    If the WMI service is not started, attempt to start it or reboot the computer.  If WMI is running but errors are present, see [WMIDiag](https://blogs.technet.microsoft.com/askperf/2015/05/12/wmidiag-2-2-is-here/) for troubleshooting information.
+    If the WMI service isn't started, attempt to start it or reboot the computer.  If WMI is running but errors are present, see [WMIDiag](https://blogs.technet.microsoft.com/askperf/2015/05/12/wmidiag-2-2-is-here/) for troubleshooting information.
 
-4. To extend the Active Directory schema, type the following command at an elevated Windows PowerShell prompt:
+5. To extend the Active Directory schema, enter the following command at an elevated Windows PowerShell prompt:
 
-    ```powershell
-    cmd /c C:\configmgr\SMSSETUP\BIN\X64\extadsch.exe
+    ```cmd
+    C:\configmgr\SMSSETUP\BIN\X64\extadsch.exe
     ```
 
-5. Temporarily switch to the DC1 VM, and type the following command at an elevated command prompt on DC1:
+6. Temporarily switch to the DC1 VM, and enter the following command at an elevated command prompt on DC1:
 
-    ```dos
+    ```cmd
     adsiedit.msc
     ```
 
-6. Right-click **ADSI Edit**, click **Connect to**, select **Default (Domain or server that you logged in to)** under **Computer** and then click **OK**.
-7. Expand **Default naming context**>**DC=contoso,DC=com**, and then in the console tree right-click **CN=System**, point to **New**, and then click **Object**.
-8. Click **container** and then click **Next**.
-9. Next to **Value**, type **System Management**, click **Next**, and then click **Finish**.
-10. Right-click **CN=system Management** and then click **Properties**.
-11. On the **Security** tab, click **Add**, click **Object Types**, select **Computers**, and click **OK**.
-12. Under **Enter the object names to select**, type **SRV1** and click **OK**.
-13. The **SRV1** computer account will be highlighted, select **Allow** next to **Full control**.
-14. Click **Advanced**, click **SRV1 (CONTOSO\SRV1$)** and click **Edit**.
-15. Next to **Applies to**, choose **This object and all descendant objects**, and then click **OK** three times.
-16. Close the ADSI Edit console and switch back to SRV1.
-17. To start Configuration Manager installation, type the following command at an elevated Windows PowerShell prompt on SRV1:
+7. Right-click **ADSI Edit**, select **Connect to**, select **Default (Domain or server that you logged in to)** under **Computer** and then select **OK**.
 
-    ```powershell
-    cmd /c C:\configmgr\SMSSETUP\BIN\X64\Setup.exe
+8. Expand **Default naming context**>**DC=contoso,DC=com**, and then in the console tree right-click **CN=System**, point to **New**, and then select **Object**.
+
+9. Select **container** and then select **Next**.
+
+10. Next to **Value**, enter **System Management**, select **Next**, and then select **Finish**.
+
+11. Right-click **CN=system Management** and then select **Properties**.
+
+12. On the **Security** tab, select **Add**, select **Object Types**, select **Computers**, and select **OK**.
+
+13. Under **Enter the object names to select**, enter **SRV1** and select **OK**.
+
+14. The **SRV1** computer account will be highlighted, select **Allow** next to **Full control**.
+
+15. Select **Advanced**, select **SRV1 (CONTOSO\SRV1$)** and select **Edit**.
+
+16. Next to **Applies to**, choose **This object and all descendant objects**, and then select **OK** three times.
+
+17. Close the ADSI Edit console and switch back to SRV1.
+
+18. To start Configuration Manager installation, enter the following command at an elevated Windows PowerShell prompt on SRV1:
+
+    ```cmd
+    C:\configmgr\SMSSETUP\BIN\X64\Setup.exe
     ```
 
-18. Provide the following in the Microsoft Endpoint Manager Setup Wizard:
-    - **Before You Begin**: Read the text and click *Next*.
+19. Provide the following information in the Configuration Manager Setup Wizard:
+
+    - **Before You Begin**: Read the text and select *Next*.
     - **Getting Started**: Choose **Install a Configuration Manager primary site** and select the **Use typical installation options for a stand-alone primary site** checkbox.
-        - Click **Yes** in response to the popup window.
+        - Select **Yes** in response to the popup window.
     - **Product Key**: Choose **Install the evaluation edition of this Product**.
     - **Microsoft Software License Terms**: Read the terms and then select the **I accept these license terms** checkbox.
     - **Prerequisite Licenses**: Review license terms and select all three checkboxes on the page.
     - **Prerequisite Downloads**: Choose **Download required files** and enter **c:\windows\temp** next to **Path**.
     - **Site and Installation Settings**: Site code: **PS1**, Site name: **Contoso**.
         - use default settings for all other options
-    - **Usage Data**: Read the text and click **Next**.
+    - **Usage Data**: Read the text and select **Next**.
     - **Service Connection Point Setup**: Accept the default settings (SRV1.contoso.com is automatically added under Select a server to use).
-    - **Settings Summary**: Review settings and click **Next**.
-    - **Prerequisite Check**: No failures should be listed. Ignore any warnings and click **Begin Install**.
+    - **Settings Summary**: Review settings and select **Next**.
+    - **Prerequisite Check**: No failures should be listed. Ignore any warnings and select **Begin Install**.
 
-    >There should be at most three warnings present: WSUS on site server, configuration for SQL Server memory usage, and SQL Server process memory allocation. These warnings can safely be ignored in this test environment.
+    > [!NOTE]
+    > There should be at most three warnings present: WSUS on site server, configuration for SQL Server memory usage, and SQL Server process memory allocation. These warnings can safely be ignored in this test environment.
 
-    Depending on the speed of the Hyper-V host and resources allocated to SRV1, installation can require approximately one hour. Click **Close** when installation is complete.
+    Depending on the speed of the Hyper-V host and resources allocated to SRV1, installation can require approximately one hour. Select **Close** when installation is complete.
 
-19. If desired, re-enable IE Enhanced Security Configuration at this time on SRV1:
+20. If desired, re-enable IE Enhanced Security Configuration at this time on SRV1:
 
     ```powershell
     Set-ItemProperty -Path $AdminKey -Name "IsInstalled" -Value 1
@@ -218,24 +231,30 @@ Topics and procedures in this guide are summarized in the following table. An es
 
 > [!IMPORTANT]
 > This step requires an MSDN subscription or volume licence agreement. For more information, see [Ready for Windows 10: MDOP 2015 and more tools are now available](https://blogs.technet.microsoft.com/windowsitpro/2015/08/17/ready-for-windows-10-mdop-2015-and-more-tools-are-now-available/).
+<!--
+
+THE LINK REFERENCED IN THE BELOW URL IS DEAD SO COMMENTING OUT
+
 > If your organization qualifies and does not already have an MSDN subscription, you can obtain a [free MSDN subscription with BizSpark](/archive/blogs/zainnab/bizspark-free-msdn-subscription-for-start-up-companies/).
+-->
 
 1. Download the [Microsoft Desktop Optimization Pack 2015](https://msdn.microsoft.com/subscriptions/downloads/#ProductFamilyId=597) to the Hyper-V host using an MSDN subscription. Download the .ISO file (mu_microsoft_desktop_optimization_pack_2015_x86_x64_dvd_5975282.iso, 2.79 GB) to the C:\VHD directory on the Hyper-V host.
 
-2. Type the following command at an elevated Windows PowerShell prompt on the Hyper-V host to mount the MDOP file on SRV1:
+2. Enter the following command at an elevated Windows PowerShell prompt on the Hyper-V host to mount the MDOP file on SRV1:
 
     ```powershell
     Set-VMDvdDrive -VMName SRV1 -Path c:\VHD\mu_microsoft_desktop_optimization_pack_2015_x86_x64_dvd_5975282.iso
     ```
 
-3. Type the following command at an elevated Windows PowerShell prompt on SRV1:
+3. Enter the following command at an elevated Windows PowerShell prompt on SRV1:
 
-    ```powershell
-    cmd /c "D:\DaRT\DaRT 10\Installers\en-us\x64\MSDaRT100.msi"
+    ```cmd
+    D:\DaRT\DaRT 10\Installers\en-us\x64\MSDaRT100.msi
     ```
 
 4. Install DaRT 10 using default settings.
-5. Type the following commands at an elevated Windows PowerShell prompt on SRV1:
+
+5. Enter the following commands at an elevated Windows PowerShell prompt on SRV1:
 
     ```powershell
     Copy-Item "C:\Program Files\Microsoft DaRT\v10\Toolsx64.cab" -Destination "C:\Program Files\Microsoft Deployment Toolkit\Templates\Distribution\Tools\x64"
@@ -244,11 +263,11 @@ Topics and procedures in this guide are summarized in the following table. An es
 
 ## Prepare for Zero Touch installation
 
-This section contains several procedures to support Zero Touch installation with Microsoft Endpoint Configuration Manager.
+This section contains several procedures to support Zero Touch installation with Microsoft Configuration Manager.
 
 ### Create a folder structure
 
-1. Type the following commands at a Windows PowerShell prompt on SRV1:
+1. Enter the following commands at a Windows PowerShell prompt on SRV1:
 
     ```powershell
     New-Item -ItemType Directory -Path "C:\Sources\OSD\Boot"
@@ -263,81 +282,108 @@ This section contains several procedures to support Zero Touch installation with
 
 ### Enable MDT ConfigMgr integration
 
-1. On SRV1, click **Start**, type **configmgr**, and then click **Configure ConfigMgr Integration**.
-2. Type **PS1** next to **Site code**, and then click **Next**.
-3. Verify **The process completed successfully** is displayed, and then click **Finish**.
+1. On SRV1, select **Start**, enter `configmgr`, and then select **Configure ConfigMgr Integration**.
+
+2. Enter `PS1` as the **Site code**, and then select **Next**.
+
+3. Verify **The process completed successfully** is displayed, and then select **Finish**.
 
 ### Configure client settings
 
-1. On SRV1, click **Start**, type **configuration manager**, right-click **Configuration Manager Console**, and then click **Pin to Taskbar**.
-2. Click **Desktop**, and then launch the Configuration Manager console from the taskbar.
-3. If the console notifies you that an update is available, click **OK**. It is not necessary to install updates to complete this lab.
-4. In the console tree, open the **Administration** workspace (in the lower left corner) and click **Client Settings**.
+1. On SRV1, select **Start**, enter **configuration manager**, right-click **Configuration Manager Console**, and then select **Pin to Taskbar**.
+
+2. Select **Desktop**, and then launch the Configuration Manager console from the taskbar.
+
+3. If the console notifies you that an update is available, select **OK**. It isn't necessary to install updates to complete this lab.
+
+4. In the console tree, open the **Administration** workspace (in the lower left corner) and select **Client Settings**.
+
 5. In the display pane, double-click **Default Client Settings**.
-6. Click **Computer Agent**, next to **Organization name displayed in Software Center** type **Contoso**, and then click **OK**.
+
+6. Select **Computer Agent**, next to **Organization name displayed in Software Center** enter **Contoso**, and then select **OK**.
 
 ### Configure the network access account
 
-1. In the Administration workspace, expand **Site Configuration** and click **Sites**.
-2. On the **Home** ribbon at the top of the console window, click **Configure Site Components** and then click **Software Distribution**.
+1. in the **Administration** workspace, expand **Site Configuration** and select **Sites**.
+
+2. On the **Home** ribbon at the top of the console window, select **Configure Site Components** and then select **Software Distribution**.
+
 3. On the **Network Access Account** tab, choose **Specify the account that accesses network locations**.
-4. Click the yellow starburst and then click **New Account**.
-5. Click **Browse** and then under **Enter the object name to select**, type **CM_NAA** and click **OK**.
-6. Next to **Password** and **Confirm Password**, type **pass\@word1**, and then click **OK** twice.
+
+4. Select the yellow starburst and then select **New Account**.
+
+5. Select **Browse** and then under **Enter the object name to select**, enter **CM_NAA** and select **OK**.
+
+6. Next to **Password** and **Confirm Password**, enter **pass\@word1**, and then select **OK** twice.
 
 ### Configure a boundary group
 
-1. In the Administration workspace, expand **Hierarchy Configuration**, right-click **Boundaries** and then click **Create Boundary**.
-2. Next to **Description**, type **PS1**, next to **Type** choose **Active Directory Site**, and then click **Browse**.
-3. Choose **Default-First-Site-Name** and then click **OK** twice.
-4. In the Administration workspace, right-click **Boundary Groups** and then click **Create Boundary Group**.
-5. Next to **Name**, type **PS1 Site Assignment and Content Location**, click **Add**, select the **Default-First-Site-Name** boundary and then click **OK**.
-6. On the **References** tab in the **Create Boundary Group** window select the **Use this boundary group for site assignment** checkbox.
-7. Click **Add**, select the **\\\SRV1.contoso.com** checkbox, and then click **OK** twice.
+1. in the **Administration** workspace, expand **Hierarchy Configuration**, right-click **Boundaries** and then select **Create Boundary**.
+
+2. Next to **Description**, enter **PS1**, next to **Type** choose **Active Directory Site**, and then select **Browse**.
+
+3. Choose **Default-First-Site-Name** and then select **OK** twice.
+
+4. in the **Administration** workspace, right-click **Boundary Groups** and then select **Create Boundary Group**.
+
+5. Next to **Name**, enter **PS1 Site Assignment and Content Location**, select **Add**, select the **Default-First-Site-Name** boundary and then select **OK**.
+
+6. On the **References** tab in the **Create Boundary Group** window, select the **Use this boundary group for site assignment** checkbox.
+
+7. Select **Add**, select the **\\\SRV1.contoso.com** checkbox, and then select **OK** twice.
 
 ### Add the state migration point role
 
-1. In the Administration workspace, expand **Site Configuration**, click **Sites**, and then in on the **Home** ribbon at the top of the console click **Add Site System Roles**.
-2. In the Add site System Roles Wizard, click **Next** twice and then on the Specify roles for this server page, select the **State migration point** checkbox.
-3. Click **Next**, click the yellow starburst, type **C:\MigData** for the **Storage folder**, and click **OK**.
-4. Click **Next**, and then verify under **Boundary groups** that **PS1 Site Assignment and Content Location** is displayed.
-5. Click **Next** twice and then click **Close**.
+1. in the **Administration** workspace, expand **Site Configuration**, select **Sites**, and then in on the **Home** ribbon at the top of the console select **Add Site System Roles**.
+
+2. In the Add site System Roles Wizard, select **Next** twice and then on the Specify roles for this server page, select the **State migration point** checkbox.
+
+3. Select **Next**, select the yellow starburst, enter **C:\MigData** for the **Storage folder**, and select **OK**.
+
+4. Select **Next**, and then verify under **Boundary groups** that **PS1 Site Assignment and Content Location** is displayed.
+
+5. Select **Next** twice and then select **Close**.
 
 ### Enable PXE on the distribution point
 
 > [!IMPORTANT]
-> Before enabling PXE in Configuration Manager, ensure that any previous installation of WDS does not cause conflicts. Configuration Manager will automatically configure the WDS service to manage PXE requests. To disable a previous installation, if it exists, type the following commands at an elevated Windows PowerShell prompt on SRV1:
+> Before enabling PXE in Configuration Manager, ensure that any previous installation of WDS does not cause conflicts. Configuration Manager will automatically configure the WDS service to manage PXE requests. To disable a previous installation, if it exists, enter the following commands at an elevated Windows PowerShell prompt on SRV1:
 
-```powershell
-WDSUTIL /Set-Server /AnswerClients:None
+```cmd
+WDSUTIL.exe /Set-Server /AnswerClients:None
 ```
 
-1. Determine the MAC address of the internal network adapter on SRV1. To determine this, type the following command at an elevated Windows PowerShell prompt on SRV1:
+1. Determine the MAC address of the internal network adapter on SRV1. Enter the following command at an elevated Windows PowerShell prompt on SRV1:
 
     ```powershell
     (Get-NetAdapter "Ethernet").MacAddress
     ```
 
-    > If the internal network adapter, assigned an IP address of 192.168.0.2, is not named "Ethernet" then replace the name "Ethernet" in the previous command with the name of this network adapter. You can review the names of network adapters and the IP addresses assigned to them by typing **ipconfig**.
+    > [!NOTE]
+    > If the internal network adapter, assigned an IP address of 192.168.0.2, isn't named "Ethernet" then replace the name "Ethernet" in the previous command with the name of this network adapter. You can review the names of network adapters and the IP addresses assigned to them by typing **ipconfig**.
 
-2. In the Microsoft Endpoint Manager console, in the **Administration** workspace, click **Distribution Points**.
-3. In the display pane, right-click **SRV1.CONTOSO.COM** and then click **Properties**.
+2. In the Configuration Manager console, in the **Administration** workspace, select **Distribution Points**.
+
+3. In the display pane, right-click **SRV1.CONTOSO.COM** and then select **Properties**.
+
 4. On the PXE tab, select the following settings:
-   - **Enable PXE support for clients**. Click **Yes** in the popup that appears.
+
+   - **Enable PXE support for clients**. Select **Yes** in the popup that appears.
    - **Allow this distribution point to respond to incoming PXE requests**
-   - **Enable unknown computer support**. Click **OK** in the popup that appears.
+   - **Enable unknown computer support**. Select **OK** in the popup that appears.
    - **Require a password when computers use PXE**
    - **Password** and **Confirm password**: pass@word1
-   - **Respond to PXE requests on specific network interfaces**: Click the yellow starburst and then enter the MAC address determined in the first step of this procedure.
+   - **Respond to PXE requests on specific network interfaces**: Select the yellow starburst and then enter the MAC address determined in the first step of this procedure.
 
      See the following example:
      ![Config Mgr PXE.](images/configmgr-pxe.png)
 
-5. Click **OK**.
-6. Wait for a minute, then type the following command at an elevated Windows PowerShell prompt on SRV1, and verify that the files displayed are present:
+5. Select **OK**.
 
-    ```powershell
-    cmd /c dir /b C:\RemoteInstall\SMSBoot\x64
+6. Wait for a minute, then enter the following command at an elevated Windows PowerShell prompt on SRV1, and verify that the files displayed are present:
+
+    ```cmd
+    dir /b C:\RemoteInstall\SMSBoot\x64
 
     abortpxe.com
     bootmgfw.efi
@@ -348,61 +394,78 @@ WDSUTIL /Set-Server /AnswerClients:None
     wdsnbp.com
     ```
 
-    >If these files are not present in the C:\RemoteInstall directory, verify that the REMINST share is configured as C:\RemoteInstall. You can view the properties of this share by typing "net share REMINST" at a command prompt. If the share path is set to a different value, then replace C:\RemoteInstall with your REMINST share path. 
-    >You can also type the following command at an elevated Windows PowerShell prompt to open the Configuration Manager Trace Log Tool. In the tool, click **File**, click **Open**, and then open the **distmgr.log** file. If errors are present, they will be highlighted in red:
-
-    ```powershell
-    Invoke-Item 'C:\Program Files\Microsoft Configuration Manager\tools\cmtrace.exe'
-    ```
-
-    The log file will updated continuously while Configuration Manager is running. Wait for Configuration Manager to repair any issues that are present, and periodically re-check that the files are present in the REMINST share location. Close the Configuration Manager Trace Log Tool when done. You will see the following line in distmgr.log that indicates the REMINST share is being populated with necessary files:
-
-    `Running: WDSUTIL.exe /Initialize-Server /REMINST:"C:\RemoteInstall"`
-
-    Once the files are present in the REMINST share location, you can close the cmtrace tool.
+    > [!NOTE]
+    > If these files aren't present in the C:\RemoteInstall directory, verify that the REMINST share is configured as C:\RemoteInstall. You can view the properties of this share by typing `net.exe share REMINST` at a command prompt. If the share path is set to a different value, then replace C:\RemoteInstall with your REMINST share path.
+    >
+    > You can also enter the following command at an elevated Windows PowerShell prompt to open CMTrace. In the tool, select **File**, select **Open**, and then open the **distmgr.log** file. If errors are present, they will be highlighted in red:
+    >
+    > ```cmd
+    > "C:\Program Files\Microsoft Configuration Manager\tools\cmtrace.exe"
+    > ```
+    >
+    > The log file is updated continuously while Configuration Manager is running. Wait for Configuration Manager to repair any issues that are present, and periodically recheck that the files are present in the REMINST share location. Close CMTrace when done. You'll see the following line in distmgr.log that indicates the REMINST share is being populated with necessary files:
+    >
+    > `Running: WDSUTIL.exe /Initialize-Server /REMINST:"C:\RemoteInstall"`
+    >
+    > Once the files are present in the REMINST share location, you can close the CMTrace tool.
 
 ### Create a branding image file
 
-1. If you have a bitmap (.BMP) image for suitable use as a branding image, copy it to the C:\Sources\OSD\Branding folder on SRV1. Otherwise, use the following step to copy a simple branding image.
-2. Type the following command at an elevated Windows PowerShell prompt:
+1. If you have a bitmap (.BMP) image for suitable use as a branding image, copy it to the C:\Sources\OSD\Branding folder on SRV1. Otherwise, use the following step to copy a branding image.
+
+2. Enter the following command at an elevated Windows PowerShell prompt:
 
     ```powershell
     Copy-Item -Path "C:\ProgramData\Microsoft\User Account Pictures\user.bmp" -Destination "C:\Sources\OSD\Branding\contoso.bmp"
     ```
 
-    >You can open C:\Sources\OSD\Branding\contoso.bmp in MSPaint.exe if desired to customize this image.
+    > [!NOTE]
+    > You can open C:\Sources\OSD\Branding\contoso.bmp in Microsoft Paint to customize this image.
 
 ### Create a boot image for Configuration Manager
 
-1. In the Configuration Manager console, in the **Software Library** workspace, expand **Operating Systems**, right-click **Boot Images**, and then click **Create Boot Image using MDT**.
-2. On the Package Source page, under **Package source folder to be created (UNC Path):**, type **\\\SRV1\Sources$\OSD\Boot\Zero Touch WinPE x64**, and then click **Next**.
-    - The Zero Touch WinPE x64 folder does not yet exist. The folder will be created later.
-3. On the General Settings page, type **Zero Touch WinPE x64** next to **Name**, and click **Next**.
-4. On the Options page, under **Platform** choose **x64**, and click **Next**.
-5. On the Components page, in addition to the default selection of **Microsoft Data Access Components (MDAC/ADO) support**, select the **Microsoft Diagnostics and Recovery Toolkit (DaRT)** checkbox, and click **Next**.
-6. On the Customization page, select the **Use a custom background bitmap file** checkbox, and under **UNC path**, type or browse to **\\\SRV1\Sources$\OSD\Branding\contoso.bmp**, and then click **Next** twice. It will take a few minutes to generate the boot image.
-7. Click **Finish**.
-8. In the console display pane, right-click the **Zero Touch WinPE x64** boot image, and then click **Distribute Content**.
-9. In the Distribute Content Wizard, click **Next**, click **Add** and select **Distribution Point**, select the **SRV1.CONTOSO.COM** checkbox, click **OK**, click **Next** twice, and then click **Close**.
-10. Use the CMTrace application to view the **distmgr.log** file again and verify that the boot image has been distributed. To open CMTrace, type the following command at an elevated Windows PowerShell prompt on SRV1:
+1. In the Configuration Manager console, in the **Software Library** workspace, expand **Operating Systems**, right-click **Boot Images**, and then select **Create Boot Image using MDT**.
+
+2. On the Package Source page, under **Package source folder to be created (UNC Path):**, enter **\\\SRV1\Sources$\OSD\Boot\Zero Touch WinPE x64**, and then select **Next**.
+
+    - The Zero Touch WinPE x64 folder doesn't yet exist. The folder will be created later.
+
+3. On the General Settings page, enter **Zero Touch WinPE x64** next to **Name**, and select **Next**.
+
+4. On the Options page, under **Platform** choose **x64**, and select **Next**.
+
+5. On the Components page, in addition to the default selection of **Microsoft Data Access Components (MDAC/ADO) support**, select the **Microsoft Diagnostics and Recovery Toolkit (DaRT)** checkbox, and select **Next**.
+
+6. On the Customization page, select the **Use a custom background bitmap file** checkbox, and under **UNC path**, enter or browse to **\\\SRV1\Sources$\OSD\Branding\contoso.bmp**, and then select **Next** twice. It will take a few minutes to generate the boot image.
+
+7. Select **Finish**.
+
+8. In the console display pane, right-click the **Zero Touch WinPE x64** boot image, and then select **Distribute Content**.
+
+9. In the Distribute Content Wizard, select **Next**, select **Add** and select **Distribution Point**, select the **SRV1.CONTOSO.COM** checkbox, select **OK**, select **Next** twice, and then select **Close**.
+
+10. Use the CMTrace application to view the **distmgr.log** file again and verify that the boot image has been distributed. To open CMTrace, enter the following command at an elevated Windows PowerShell prompt on SRV1:
 
     ```powershell
     Invoke-Item 'C:\Program Files\Microsoft Configuration Manager\tools\cmtrace.exe'
     ```
 
-    In the trace tool, click **Tools** on the menu and choose **Find**. Search for "**STATMSG: ID=2301**". For example:
+    In the trace tool, select **Tools** on the menu and choose **Find**. Search for "**STATMSG: ID=2301**". For example:
 
     ```console
     STATMSG: ID=2301 SEV=I LEV=M SOURCE="SMS Server" COMP="SMS_DISTRIBUTION_MANAGER" SYS=SRV1.CONTOSO.COM SITE=PS1 PID=924 TID=1424 GMTDATE=Tue Oct 09 22:36:30.986 2018 ISTR0="Zero Touch WinPE x64" ISTR1="PS10000A" ISTR2="" ISTR3="" ISTR4="" ISTR5="" ISTR6="" ISTR7="" ISTR8="" ISTR9="" NUMATTRS=1 AID0=400 AVAL0="PS10000A"    SMS_DISTRIBUTION_MANAGER    10/9/2018 3:36:30 PM    1424 (0x0590)
     ```
 
 11. You can also review status by clicking the **Zero Touch WinPE x64** image, and then clicking **Content Status** under **Related Objects** in the bottom right-hand corner of the console, or by entering **\Monitoring\Overview\Distribution Status\Content Status** on the location bar in the console. Double-click **Zero Touch WinPE x64** under **Content Status** in the console tree and verify that a status of **Successfully distributed content** is displayed on the **Success** tab.
-12. Next, in the **Software Library** workspace, double-click **Zero Touch WinPE x64** and then click the **Data Source** tab.
-13. Select the **Deploy this boot image from the PXE-enabled distribution point** checkbox, and click **OK**.
+
+12. Next, in the **Software Library** workspace, double-click **Zero Touch WinPE x64** and then select the **Data Source** tab.
+
+13. Select the **Deploy this boot image from the PXE-enabled distribution point** checkbox, and select **OK**.
+
 14. Review the distmgr.log file again for "**STATMSG: ID=2301**" and verify that there are three folders under **C:\RemoteInstall\SMSImages** with boot images. See the following example:
 
-    ```console
-    cmd /c dir /s /b C:\RemoteInstall\SMSImages
+    ```cmd
+    dir /s /b C:\RemoteInstall\SMSImages
 
     C:\RemoteInstall\SMSImages\PS100004
     C:\RemoteInstall\SMSImages\PS100005
@@ -412,13 +475,14 @@ WDSUTIL /Set-Server /AnswerClients:None
     C:\RemoteInstall\SMSImages\PS100006\WinPE.PS100006.wim
     ```
 
-    >The first two images (*.wim files) are default boot images. The third is the new boot image with DaRT.
+    > [!NOTE]
+    > The first two images (`*.wim` files) are default boot images. The third is the new boot image with DaRT.
 
 ### Create a Windows 10 reference image
 
-If you have already completed steps in [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md) then you have already created a Windows 10 reference image. In this case, skip to the next procedure in this guide: [Add a Windows 10 operating system image](#add-a-windows-10-operating-system-image). If you have not yet created a Windows 10 reference image, complete the steps in this section.
+If you've already completed steps in [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md) then you've already created a Windows 10 reference image. In this case, skip to the next procedure in this guide: [Add a Windows 10 OS image](#add-a-windows-10-os-image). If you've not yet created a Windows 10 reference image, complete the steps in this section.
 
-1. In [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md) the Windows 10 Enterprise .iso file was saved to the c:\VHD directory as **c:\VHD\w10-enterprise.iso**. The first step in creating a deployment share is to mount this file on SRV1.  To mount the Windows 10 Enterprise DVD on SRV1, open an elevated Windows PowerShell prompt on the Hyper-V host computer and type the following command:
+1. In [Step by step guide: Deploy Windows 10 in a test lab](windows-10-poc.md) the Windows 10 Enterprise .iso file was saved to the c:\VHD directory as **c:\VHD\w10-enterprise.iso**. The first step in creating a deployment share is to mount this file on SRV1.  To mount the Windows 10 Enterprise DVD on SRV1, open an elevated Windows PowerShell prompt on the Hyper-V host computer and enter the following command:
 
     ```powershell
     Set-VMDvdDrive -VMName SRV1 -Path c:\VHD\w10-enterprise.iso
@@ -426,7 +490,7 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
 
 2. Verify that the Windows Enterprise installation DVD is mounted on SRV1 as drive letter D.
 
-3. The Windows 10 Enterprise installation files will be used to create a deployment share on SRV1 using the MDT deployment workbench. To open the deployment workbench, click **Start**, type **deployment**, and then click **Deployment Workbench**.
+3. The Windows 10 Enterprise installation files will be used to create a deployment share on SRV1 using the MDT deployment workbench. To open the deployment workbench, select **Start**, enter **deployment**, and then select **Deployment Workbench**.
 
 4. In the Deployment Workbench console, right-click **Deployment Shares** and select **New Deployment Share**.
 
@@ -434,58 +498,61 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
     - Deployment share path: **C:\MDTBuildLab**
     - Share name: **MDTBuildLab$**
     - Deployment share description: **MDT build lab**
-    - Options: click **Next** to accept the default
-    - Summary: click **Next**
+    - Options: Select **Next** to accept the default
+    - Summary: Select **Next**
     - Progress: settings will be applied
-    - Confirmation: click **Finish**
+    - Confirmation: Select **Finish**
 
 6. Expand the **Deployment Shares** node, and then expand **MDT build lab**.
 
-7. Right-click the **Operating Systems** node, and then click **New Folder**. Name the new folder **Windows 10**. Complete the wizard using default values and click **Finish**.
+7. Right-click the **Operating Systems** node, and then select **New Folder**. Name the new folder **Windows 10**. Complete the wizard using default values and select **Finish**.
 
-7. Right-click the **Windows 10** folder created in the previous step, and then click **Import Operating System**.
+8. Right-click the **Windows 10** folder created in the previous step, and then select **Import Operating System**.
 
-8. Use the following settings for the Import Operating System Wizard:
+9. Use the following settings for the Import Operating System Wizard:
     - OS Type: **Full set of source files**
     - Source: **D:\\**
     - Destination: **W10Ent_x64**
-    - Summary: click **Next**
-    - Confirmation: click **Finish**
+    - Summary: Select **Next**
+    - Confirmation: Select **Finish**
 
-9. For purposes of this test lab, we will not add applications, such as Microsoft Office, to the deployment share. For information about adding applications, see the [Add applications](deploy-windows-mdt/create-a-windows-10-reference-image.md#add-applications) section of the [Create a Windows 10 reference image](deploy-windows-mdt/create-a-windows-10-reference-image.md) topic in the TechNet library.
+10. For purposes of this test lab, we won't add applications, such as Microsoft Office, to the deployment share. For more information about adding applications, see [Add applications](deploy-windows-mdt/create-a-windows-10-reference-image.md#add-applications).
 
-10. The next step is to create a task sequence to reference the operating system that was imported. To create a task sequence, right-click the **Task Sequences** node under **MDT Build Lab** and then click **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
+11. The next step is to create a task sequence to reference the OS that was imported. To create a task sequence, right-click the **Task Sequences** node under **MDT Build Lab** and then select **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
+
     - Task sequence ID: **REFW10X64-001**
     - Task sequence name: **Windows 10 Enterprise x64 Default Image**
     - Task sequence comments: **Reference Build**
     - Template: **Standard Client Task Sequence**
-    - Select OS: click **Windows 10 Enterprise Evaluation in W10Ent_x64 install.wim**
+    - Select OS: Select **Windows 10 Enterprise Evaluation in W10Ent_x64 install.wim**
     - Specify Product Key: **Do not specify a product key at this time**
     - Full Name: **Contoso**
     - Organization: **Contoso**
-    - Internet Explorer home page: **http://www.contoso.com**
+    - Internet Explorer home page: **`http://www.contoso.com`**
     - Admin Password: **Do not specify an Administrator password at this time**
-    - Summary: click **Next**
-    - Confirmation: click **Finish**
+    - Summary: Select **Next**
+    - Confirmation: Select **Finish**
 
-11. Edit the task sequence to add the Microsoft NET Framework 3.5, which is required by many applications. To edit the task sequence, double-click **Windows 10 Enterprise x64 Default Image** that was created in the previous step.
+12. Edit the task sequence to add the Microsoft NET Framework 3.5, which is required by many applications. To edit the task sequence, double-click **Windows 10 Enterprise x64 Default Image** that was created in the previous step.
 
-12. Click the **Task Sequence** tab. Under **State Restore** click **Tattoo** to highlight it, then click **Add** and choose **New Group**. A new group will be added under Tattoo.
+13. Select the **Task Sequence** tab. Under **State Restore**, select **Tattoo** to highlight it, then select **Add** and choose **New Group**. A new group will be added under Tattoo.
 
-13. On the Properties tab of the group that was created in the previous step, change the Name from New Group to **Custom Tasks (Pre-Windows Update)** and then click **Apply**. To see the name change, click **Tattoo**, then click the new group again.
+14. On the Properties tab of the group that was created in the previous step, change the Name from New Group to **Custom Tasks (Pre-Windows Update)** and then select **Apply**. To see the name change, select **Tattoo**, then select the new group again.
 
-14. Click the **Custom Tasks (Pre-Windows Update)** group again, click **Add**, point to **Roles**, and then click **Install Roles and Features**.
+15. Select the **Custom Tasks (Pre-Windows Update)** group again, select **Add**, point to **Roles**, and then select **Install Roles and Features**.
 
-15. Under **Select the roles and features that should be installed**, select **.NET Framework 3.5 (includes .NET 2.0 and 3.0)** and then click **Apply**.
+16. Under **Select the roles and features that should be installed**, select **.NET Framework 3.5 (includes .NET 2.0 and 3.0)** and then select **Apply**.
 
-16. Enable Windows Update in the task sequence by clicking the **Windows Update (Post-Application Installation)** step, clicking the **Options** tab, and clearing the **Disable this step** checkbox.
-    >Note: Since we are not installing applications in this test lab, there is no need to enable the Windows Update Pre-Application Installation step. However, you should enable this step if you are also installing applications.
+17. Enable Windows Update in the task sequence by clicking the **Windows Update (Post-Application Installation)** step, clicking the **Options** tab, and clearing the **Disable this step** checkbox.
 
-17. Click **OK** to complete editing the task sequence.
+    > [!NOTE]
+    > Since we aren't installing applications in this test lab, there's no need to enable the Windows Update Pre-Application Installation step. However, you should enable this step if you're also installing applications.
 
-18. The next step is to configure the MDT deployment share rules. To configure rules in the Deployment Workbench, right-click MDT build lab (C:\MDTBuildLab) and click **Properties**, and then click the **Rules** tab.
+18. Select **OK** to complete editing the task sequence.
 
-19. Replace the default rules with the following text:
+19. The next step is to configure the MDT deployment share rules. To configure rules in the Deployment Workbench, right-click MDT build lab (C:\MDTBuildLab) and select **Properties**, and then select the **Rules** tab.
+
+20. Replace the default rules with the following text:
 
     ```ini
     [Settings]
@@ -520,7 +587,7 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
     SkipFinalSummary=NO
     ```
 
-20. Click **Apply** and then click **Edit Bootstrap.ini**. Replace the contents of the Bootstrap.ini file with the following text, and save the file:
+21. Select **Apply** and then select **Edit Bootstrap.ini**. Replace the contents of the Bootstrap.ini file with the following text, and save the file:
 
     ```ini
     [Settings]
@@ -534,82 +601,86 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
     SkipBDDWelcome=YES
     ```
 
-21. Click **OK** to complete the configuration of the deployment share.
+22. Select **OK** to complete the configuration of the deployment share.
 
-22. Right-click **MDT build lab (C:\MDTBuildLab)** and then click **Update Deployment Share**.
+23. Right-click **MDT build lab (C:\MDTBuildLab)** and then select **Update Deployment Share**.
 
-23. Accept all default values in the Update Deployment Share Wizard by clicking **Next**.  The update process will take 5 to 10 minutes. When it has completed, click **Finish**.
+24. Accept all default values in the Update Deployment Share Wizard by clicking **Next**.  The update process will take 5 to 10 minutes. When it has completed, select **Finish**.
 
-24. Copy **c:\MDTBuildLab\Boot\LiteTouchPE_x86.iso** on SRV1 to the **c:\VHD** directory on the Hyper-V host computer. Note that in MDT, the x86 boot image can deploy both x86 and x64 operating systems, except on computers based on Unified Extensible Firmware Interface (UEFI).
+25. Copy **c:\MDTBuildLab\Boot\LiteTouchPE_x86.iso** on SRV1 to the **c:\VHD** directory on the Hyper-V host computer. In MDT, the x86 boot image can deploy both x86 and x64 operating systems, except on computers based on Unified Extensible Firmware Interface (UEFI).
 
-    >Hint: Top copy the file, right-click the **LiteTouchPE_x86.iso** file and click **Copy** on SRV1, then open the **c:\VHD** folder on the Hyper-V host, right-click inside the folder and click **Paste**.
+    > [!TIP]
+    > To copy the file, right-click the **LiteTouchPE_x86.iso** file, and select **Copy** on SRV1. Then open the **c:\VHD** folder on the Hyper-V host, right-click inside the folder, and select **Paste**.
 
-25. Open a Windows PowerShell prompt on the Hyper-V host computer and type the following commands:
+26. Open a Windows PowerShell prompt on the Hyper-V host computer and enter the following commands:
 
     ```powershell
-    New-VM –Name REFW10X64-001 -SwitchName poc-internal -NewVHDPath "c:\VHD\REFW10X64-001.vhdx" -NewVHDSizeBytes 60GB
+    New-VM -Name REFW10X64-001 -SwitchName poc-internal -NewVHDPath "c:\VHD\REFW10X64-001.vhdx" -NewVHDSizeBytes 60GB
     Set-VMMemory -VMName REFW10X64-001 -DynamicMemoryEnabled $true -MinimumBytes 1024MB -MaximumBytes 1024MB -Buffer 20
     Set-VMDvdDrive -VMName REFW10X64-001 -Path c:\VHD\LiteTouchPE_x86.iso
     Start-VM REFW10X64-001
     vmconnect localhost REFW10X64-001
     ```
 
-26. In the Windows Deployment Wizard, select **Windows 10 Enterprise x64 Default Image**, and then click **Next**.
+27. In the Windows Deployment Wizard, select **Windows 10 Enterprise x64 Default Image**, and then select **Next**.
 
-27. Accept the default values on the Capture Image page, and click **Next**. Operating system installation will complete after 5 to 10 minutes and then the VM will reboot automatically. Allow the system to boot normally (do not press a key). The process is fully automated.
+28. Accept the default values on the Capture Image page, and select **Next**. OS installation will complete after 5 to 10 minutes and then the VM will reboot automatically. Allow the system to boot normally, don't press a key. The process is fully automated.
 
-    Additional system restarts will occur to complete updating and preparing the operating system. Setup will complete the following procedures:
+    Other system restarts will occur to complete updating and preparing the OS. Setup will complete the following procedures:
 
-    - Install the Windows 10 Enterprise operating system.
+    - Install the Windows 10 Enterprise OS.
     - Install added applications, roles, and features.
-    - Update the operating system using Windows Update (or WSUS if optionally specified).
+    - Update the OS using Windows Update (or WSUS if optionally specified).
     - Stage Windows PE on the local disk.
     - Run System Preparation (Sysprep) and reboot into Windows PE.
     - Capture the installation to a Windows Imaging (WIM) file.
     - Turn off the virtual machine.
 
-    This step requires from 30 minutes to 2 hours, depending on the speed of the Hyper-V host and your network's download speed. After some time, you will have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep. The image is located in the C:\MDTBuildLab\Captures folder on SRV1. The file name is **REFW10X64-001.wim**.
+    This step requires from 30 minutes to 2 hours, depending on the speed of the Hyper-V host and your network's download speed. After some time, you'll have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep. The image is located in the C:\MDTBuildLab\Captures folder on SRV1. The file name is **REFW10X64-001.wim**.
 
-### Add a Windows 10 operating system image
+### Add a Windows 10 OS image
 
-1. Type the following commands at an elevated Windows PowerShell prompt on SRV1:
+1. Enter the following commands at an elevated Windows PowerShell prompt on SRV1:
 
     ```powershell
     New-Item -ItemType Directory -Path "C:\Sources\OSD\OS\Windows 10 Enterprise x64"
     cmd /c copy /z "C:\MDTBuildLab\Captures\REFW10X64-001.wim" "C:\Sources\OSD\OS\Windows 10 Enterprise x64"
     ```
 
-2. In the Configuration Manager console, in the **Software Library** workspace, expand **Operating Systems**, right-click **Operating System Images**, and then click **Add Operating System Image**.
+2. In the Configuration Manager console, in the **Software Library** workspace, expand **Operating Systems**, right-click **Operating System Images**, and then select **Add Operating System Image**.
 
-3. On the Data Source page, under **Path:**, type or browse to **\\\SRV1\Sources$\OSD\OS\Windows 10 Enterprise x64\REFW10X64-001.wim**, and click **Next**.
+3. On the Data Source page, under **Path:**, enter or browse to **\\\SRV1\Sources$\OSD\OS\Windows 10 Enterprise x64\REFW10X64-001.wim**, and select **Next**.
 
-4. On the General page, next to **Name:**, type **Windows 10 Enterprise x64**, click **Next** twice, and then click **Close**.
+4. On the General page, next to **Name:**, enter **Windows 10 Enterprise x64**, select **Next** twice, and then select **Close**.
 
-5. Distribute the operating system image to the SRV1 distribution point by right-clicking the **Windows 10 Enterprise x64** operating system image and then clicking **Distribute Content**.
+5. Distribute the OS image to the SRV1 distribution point by right-clicking the **Windows 10 Enterprise x64** OS image and then clicking **Distribute Content**.
 
-6. In the Distribute Content Wizard, click **Next**, click **Add**, click **Distribution Point**, add the **SRV1.CONTOSO.COM** distribution point, click **OK**, click **Next** twice and then click **Close**.
+6. In the Distribute Content Wizard, select **Next**, select **Add**, select **Distribution Point**, add the **SRV1.CONTOSO.COM** distribution point, select **OK**, select **Next** twice and then select **Close**.
 
-7. Enter **\Monitoring\Overview\Distribution Status\Content Status** on the location bar (be sure there is no space at the end of the location or you will get an error), click **Windows 10 Enterprise x64**, and monitor the status of content distribution until it is successful and no longer in progress. Refresh the view with the F5 key or by right-clicking **Windows 10 Enterprise x64** and clicking **Refresh**. Processing of the image on the site server can take several minutes.
+7. Enter **\Monitoring\Overview\Distribution Status\Content Status** on the location bar. (Make sure there's no space at the end of the location or you'll get an error.) Select **Windows 10 Enterprise x64** and monitor the status of content distribution until it's successful and no longer in progress. Refresh the view with the F5 key or by right-clicking **Windows 10 Enterprise x64** and clicking **Refresh**. Processing of the image on the site server can take several minutes.
 
-    >If content distribution is not successful, verify that sufficient disk space is available.
+    > [!NOTE]
+    > If content distribution isn't successful, verify that sufficient disk space is available.
 
 ### Create a task sequence
 
->Complete this section slowly. There are a large number of similar settings from which to choose.
+> [!TIP]
+> Complete this section slowly. There are a large number of similar settings from which to choose.
 
-1. In the Configuration Manager console, in the **Software Library** workspace expand **Operating Systems**, right-click **Task Sequences**, and then click **Create MDT Task Sequence**.
+1. In the Configuration Manager console, in the **Software Library** workspace expand **Operating Systems**, right-click **Task Sequences**, and then select **Create MDT Task Sequence**.
 
-2. On the Choose Template page, select the **Client Task Sequence** template and click **Next**.
+2. On the Choose Template page, select the **Client Task Sequence** template and select **Next**.
 
-3. On the General page, type **Windows 10 Enterprise x64** under **Task sequence name:** and then click **Next**.
+3. On the General page, enter **Windows 10 Enterprise x64** under **Task sequence name:** and then select **Next**.
 
 4. On the Details page, enter the following settings:
+
    - Join a domain: **contoso.com**
-   - Account: click **Set**
+   - Account: Select **Set**
      - User name: **contoso\CM_JD**
      - Password: **pass@word1**
      - Confirm password: **pass@word1**
-     - Click **OK**
+     - Select **OK**
    - Windows Settings
        - User name: **Contoso**
        - Organization name: **Contoso**
@@ -617,43 +688,44 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
    - Administrator Account: **Enable the account and specify the local administrator password**
      - Password: **pass@word1**
      - Confirm password: **pass@word1**
-   - Click **Next**
+   - Select **Next**
 
-5. On the Capture Settings page, accept the default settings and click **Next**.
+5. On the Capture Settings page, accept the default settings and select **Next**.
 
-6. On the Boot Image page, browse and select the **Zero Touch WinPE x64** boot image package, click **OK**, and then click **Next**.
+6. On the Boot Image page, browse and select the **Zero Touch WinPE x64** boot image package, select **OK**, and then select **Next**.
 
-7. On the MDT Package page, select **Create a new Microsoft Deployment Toolkit Files package**, under **Package source folder to be created (UNC Path):**, type **\\\SRV1\Sources$\OSD\MDT\MDT** (MDT is repeated here, not a typo), and then click **Next**.
+7. On the MDT Package page, select **Create a new Microsoft Deployment Toolkit Files package**, under **Package source folder to be created (UNC Path):**, enter **\\\SRV1\Sources$\OSD\MDT\MDT** (MDT is repeated here, not a typo), and then select **Next**.
 
-8. On the MDT Details page, next to **Name:** type **MDT** and then click **Next**.
+8. On the MDT Details page, next to **Name:** enter **MDT** and then select **Next**.
 
-9. On the OS Image page, browse and select the **Windows 10 Enterprise x64** package, click **OK**, and then click **Next**.
+9. On the OS Image page, browse and select the **Windows 10 Enterprise x64** package, select **OK**, and then select **Next**.
 
-10. On the Deployment Method page, accept the default settings for **Zero Touch Installation** and click **Next**.
+10. On the Deployment Method page, accept the default settings for **Zero Touch Installation** and select **Next**.
 
-11. On the Client Package page, browse and select the **Microsoft Corporation Configuration Manager Client package**, click **OK**, and then click **Next**.
+11. On the Client Package page, browse and select the **Microsoft Corporation Configuration Manager Client package**, select **OK**, and then select **Next**.
 
-12. On the USMT Package page, browse and select the **Microsoft Corporation User State Migration Tool for Windows 10.0.14393.0** package, click **OK**, and then click **Next**.
+12. On the USMT Package page, browse and select the **Microsoft Corporation User State Migration Tool for Windows 10.0.14393.0** package, select **OK**, and then select **Next**.
 
-13. On the Settings Package page, select **Create a new settings package**, and under **Package source folder to be created (UNC Path):**, type **\\\SRV1\Sources$\OSD\Settings\Windows 10 x64 Settings**, and then click **Next**.
+13. On the Settings Package page, select **Create a new settings package**, and under **Package source folder to be created (UNC Path):**, enter **\\\SRV1\Sources$\OSD\Settings\Windows 10 x64 Settings**, and then select **Next**.
 
-14. On the Settings Details page, next to **Name:**, type **Windows 10 x64 Settings**, and click **Next**.
+14. On the Settings Details page, next to **Name:**, enter **Windows 10 x64 Settings**, and select **Next**.
 
-15. On the Sysprep Package page, click **Next** twice.
+15. On the Sysprep Package page, select **Next** twice.
 
-16. On the Confirmation page, click **Finish**.
+16. On the Confirmation page, select **Finish**.
 
 ### Edit the task sequence
 
-1. In the Configuration Manager console, in the **Software Library** workspace, click **Task Sequences**, right-click **Windows 10 Enterprise x64**, and then click **Edit**.
+1. In the Configuration Manager console, in the **Software Library** workspace, select **Task Sequences**, right-click **Windows 10 Enterprise x64**, and then select **Edit**.
 
-2. Scroll down to the **Install** group and click the **Set Variable for Drive Letter** action.
+2. Scroll down to the **Install** group and select the **Set Variable for Drive Letter** action.
 
-3. Change the Value under **OSDPreserveDriveLetter** from **False** to **True**, and then click **Apply**.
+3. Change the Value under **OSDPreserveDriveLetter** from **False** to **True**, and then select **Apply**.
 
-4. In the **State Restore** group, click the **Set Status 5** action, click **Add** in the upper left corner, point to **User State**, and click **Request State Store**. This adds a new action immediately after **Set Status 5**.
+4. In the **State Restore** group, select the **Set Status 5** action, select **Add** in the upper left corner, point to **User State**, and select **Request State Store**. This action adds a new step immediately after **Set Status 5**.
 
-5. Configure the **Request State Store** action that was just added with the following settings:
+5. Configure this **Request State Store** step with the following settings:
+
     - Request state storage location to: **Restore state from another computer**
     - Select the **If computer account fails to connect to state store, use the Network Access account** checkbox.
     - Options tab: Select the **Continue on error** checkbox.
@@ -661,43 +733,45 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
         - Variable: **USMTLOCAL**
         - Condition: **not equals**
         - Value: **True**
-        - Click **OK**
-    - Click **Apply**
+        - Select **OK**
+    - Select **Apply**
 
-6. In the **State Restore** group, click **Restore User State**, click **Add**, point to **User State**, and click **Release State Store**.
+6. In the **State Restore** group, select **Restore User State**, select **Add**, point to **User State**, and select **Release State Store**.
 
-7. Configure the **Release State Store** action that was just added with the following settings:
+7. Configure this **Release State Store** step with the following settings:
+
     - Options tab: Select the **Continue on error** checkbox.
     - Add Condition: **Task Sequence Variable**:
         - Variable: **USMTLOCAL**
         - Condition: **not equals**
         - Value: **True**
-        - Click **OK**
-    - Click **OK**
+        - Select **OK**
+    - Select **OK**
 
-### Finalize the operating system configuration
+### Finalize the OS configuration
 
->If you completed all procedures in [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md) then the MDT deployment share is already present on SRV1.  In this case, skip the first four steps below and begin with step 5 to edit CustomSettings.ini.
+> [!NOTE]
+> If you completed all procedures in [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md) then the MDT deployment share is already present on SRV1. In this case, skip the first four steps below and begin with step 5 to edit CustomSettings.ini.
 
-1. In the MDT deployment workbench on SRV1, right-click **Deployment Shares** and then click **New Deployment Share**.
+1. In the MDT deployment workbench on SRV1, right-click **Deployment Shares** and then select **New Deployment Share**.
 
 2. Use the following settings for the New Deployment Share Wizard:
     - Deployment share path: **C:\MDTProduction**
     - Share name: **MDTProduction$**
     - Deployment share description: **MDT Production**
-    - Options: click **Next** to accept the default
-    - Summary: click **Next**
+    - Options: Select **Next** to accept the default
+    - Summary: Select **Next**
     - Progress: settings will be applied
-    - Confirmation: click **Finish**
+    - Confirmation: Select **Finish**
 
-3. Right-click the **MDT Production** deployment share, and click **Properties**.
+3. Right-click the **MDT Production** deployment share, and select **Properties**.
 
-4. Click the **Monitoring** tab, select the **Enable monitoring for this deployment share** checkbox, and then click **OK**.
+4. Select the **Monitoring** tab, select the **Enable monitoring for this deployment share** checkbox, and then select **OK**.
 
-5. Type the following command at an elevated Windows PowerShell prompt on SRV1:
+5. Enter the following command at an elevated Windows PowerShell prompt on SRV1:
 
-    ```powershell
-    notepad "C:\Sources\OSD\Settings\Windows 10 x64 Settings\CustomSettings.ini"
+    ```cmd
+    notepad.exe "C:\Sources\OSD\Settings\Windows 10 x64 Settings\CustomSettings.ini"
     ```
 
 6. Replace the contents of the file with the following text, and then save the file:
@@ -718,42 +792,43 @@ If you have already completed steps in [Deploy Windows 10 in a test lab using Mi
     ApplyGPOPack=NO
     ```
 
-    >As noted previously, if you wish to migrate accounts other than those in the Contoso domain, then change the OSDMigrateAdditionalCaptureOptions option. For example, the following option will capture settings from all user accounts:
+    > [!NOTE]
+    > To migrate accounts other than those in the Contoso domain, then change the OSDMigrateAdditionalCaptureOptions option. For example, the following option will capture settings from all user accounts:
+    >
+    > ```ini
+    > OSDMigrateAdditionalCaptureOptions=/all
+    > ```
 
-    ```ini
-    OSDMigrateAdditionalCaptureOptions=/all
-    ```
+7. Return to the Configuration Manager console, and in the **Software Library** workspace, expand **Application Management**, select **Packages**, right-click **Windows 10 x64 Settings**, and then select **Update Distribution Points**. Select **OK** in the popup that appears.
 
-7. Return to the Configuration Manager console, and in the Software Library workspace, expand **Application Management**, click **Packages**, right-click **Windows 10 x64 Settings**, and then click **Update Distribution Points**. Click **OK** in the popup that appears.
+8. In the **Software Library** workspace, expand **Operating Systems**, select **Task Sequences**, right-click **Windows 10 Enterprise x64**, and then select **Distribute Content**.
 
-8. In the Software Library workspace, expand **Operating Systems**, click **Task Sequences**, right-click **Windows 10 Enterprise x64**, and then click **Distribute Content**.
+9. In the Distribute Content Wizard, select **Next** twice, select **Add**, select **Distribution Point**, select the **SRV1.CONTOSO.COM** distribution point, select **OK**, select **Next** twice and then select **Close**.
 
-9. In the Distribute Content Wizard, click **Next** twice, click **Add**, click **Distribution Point**, select the **SRV1.CONTOSO.COM** distribution point, click **OK**, click **Next** twice and then click **Close**.
-
-10. Enter **\Monitoring\Overview\Distribution Status\Content Status\Windows 10 Enterprise x64** on the location bar, double-click **Windows 10 Enterprise x64**, and monitor the status of content distribution until it is successful and no longer in progress. Refresh the view with the F5 key or by right-clicking **Windows 10 Enterprise x64** and clicking **Refresh**.
+10. Enter **\Monitoring\Overview\Distribution Status\Content Status\Windows 10 Enterprise x64** on the location bar, double-click **Windows 10 Enterprise x64**, and monitor the status of content distribution until it's successful and no longer in progress. Refresh the view with the F5 key or by right-clicking **Windows 10 Enterprise x64** and clicking **Refresh**.
 
 ### Create a deployment for the task sequence
 
-1. In the Software Library workspace, expand **Operating Systems**, click **Task Sequences**, right-click **Windows 10 Enterprise x64**, and then click **Deploy**.
+1. In the **Software Library** workspace, expand **Operating Systems**, select **Task Sequences**, right-click **Windows 10 Enterprise x64**, and then select **Deploy**.
 
-2. On the General page, next to **Collection**, click **Browse**, select the **All Unknown Computers** collection, click **OK**, and then click **Next**.
+2. On the General page, next to **Collection**, select **Browse**, select the **All Unknown Computers** collection, select **OK**, and then select **Next**.
 
 3. On the Deployment Settings page, use the following settings:
     - Purpose: **Available**
-    - Make available to the following: **Only media and PXE**
-    - Click **Next**.
-4. Click **Next** five times to accept defaults on the Scheduling, User Experience, Alerts, and Distribution Points pages.
+    - Make available to the following clients: **Only media and PXE**
+    - Select **Next**.
+4. Select **Next** five times to accept defaults on the Scheduling, User Experience, Alerts, and Distribution Points pages.
 
-5. Click **Close**.
+5. Select **Close**.
 
 ## Deploy Windows 10 using PXE and Configuration Manager
 
-In this first deployment scenario, we will deploy Windows 10 using PXE. This scenario creates a new computer that does not have any migrated users or settings.
+In this first deployment scenario, you'll deploy Windows 10 using PXE. This scenario creates a new computer that doesn't have any migrated users or settings.
 
-1. Type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
+1. Enter the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
 
     ```powershell
-    New-VM –Name "PC4" –NewVHDPath "c:\vhd\pc4.vhdx" -NewVHDSizeBytes 40GB -SwitchName poc-internal -BootDevice NetworkAdapter -Generation 2
+    New-VM -Name "PC4" -NewVHDPath "c:\vhd\pc4.vhdx" -NewVHDSizeBytes 40GB -SwitchName poc-internal -BootDevice NetworkAdapter -Generation 2
     Set-VMMemory -VMName "PC4" -DynamicMemoryEnabled $true -MinimumBytes 512MB -MaximumBytes 2048MB -Buffer 20
     Start-VM PC4
     vmconnect localhost PC4
@@ -761,30 +836,31 @@ In this first deployment scenario, we will deploy Windows 10 using PXE. This sce
 
 2. Press ENTER when prompted to start the network boot service.
 
-3. In the Task Sequence Wizard, provide the password: **pass@word1**, and then click **Next**.
+3. In the Task Sequence Wizard, provide the password: **pass@word1**, and then select **Next**.
 
-4. Before you click **Next** in the Task Sequence Wizard, press the **F8** key. A command prompt will open.
+4. Before you select **Next** in the Task Sequence Wizard, press the **F8** key. A command prompt will open.
 
-5. At the command prompt, type **explorer.exe** and review the Windows PE file structure.
+5. At the command prompt, enter **explorer.exe** and review the Windows PE file structure.
 
 6. The smsts.log file is critical for troubleshooting any installation problems that might be encountered. Depending on the deployment phase, the smsts.log file is created in different locations:
    - X:\Windows\temp\SMSTSLog\smsts.log before disks are formatted.
    - X:\smstslog\smsts.log after disks are formatted.
-   - C:\\_SMSTaskSequence\Logs\Smstslog\smsts.log before the Microsoft Endpoint Manager client is installed.
-   - C:\Windows\ccm\logs\Smstslog\smsts.log after the Microsoft Endpoint Manager client is installed.
+   - C:\\_SMSTaskSequence\Logs\Smstslog\smsts.log before the Configuration Manager client is installed.
+   - C:\Windows\ccm\logs\Smstslog\smsts.log after the Configuration Manager client is installed.
    - C:\Windows\ccm\logs\smsts.log when the task sequence is complete.
 
      Note: If a reboot is pending on the client, the reboot will be blocked as long as the command window is open.
 
-7. In the explorer window, click **Tools** and then click **Map Network Drive**.
+7. In the explorer window, select **Tools** and then select **Map Network Drive**.
 
-8. Do not map a network drive at this time. If you need to save the smsts.log file, you can use this method to save the file to a location on SRV1.
+8. Don't map a network drive at this time. If you need to save the smsts.log file, you can use this method to save the file to a location on SRV1.
 
 9. Close the Map Network Drive window, the Explorer window, and the command prompt.
 
-10. The **Windows 10 Enterprise x64** task sequence is selected in the Task Sequence Wizard. Click **Next** to continue with the deployment.
+10. The **Windows 10 Enterprise x64** task sequence is selected in the Task Sequence Wizard. Select **Next** to continue with the deployment.
 
 11. The task sequence will require several minutes to complete. You can monitor progress of the task sequence using the MDT Deployment Workbench under Deployment Shares > MDTProduction > Monitoring. The task sequence will:
+
     - Install Windows 10
     - Install the Configuration Manager client and hotfix
     - Join the computer to the contoso.com domain
@@ -792,7 +868,7 @@ In this first deployment scenario, we will deploy Windows 10 using PXE. This sce
 
 12. When Windows 10 installation has completed, sign in to PC4 using the **contoso\administrator** account.
 
-13. Right-click **Start**, click **Run**, type **control appwiz.cpl**, press ENTER, click **Turn Windows features on or off**, and verify that **.NET Framework 3.5 (includes .NET 2.0 and 3.0)** is installed. This is a feature included in the reference image.
+13. Right-click **Start**, select **Run**, enter **control appwiz.cpl**, press ENTER, select **Turn Windows features on or off**, and verify that **.NET Framework 3.5 (includes .NET 2.0 and 3.0)** is installed. This feature is included in the reference image.
 
 14. Shut down the PC4 VM.
 
@@ -801,253 +877,284 @@ In this first deployment scenario, we will deploy Windows 10 using PXE. This sce
 
 ## Replace a client with Windows 10 using Configuration Manager
 
->Before starting this section, you can delete computer objects from Active Directory that were created as part of previous deployment procedures. Use the Active Directory Users and Computers console on DC1 to remove stale entries under contoso.com\Computers, but do not delete the computer account (hostname) for PC1. There should be at least two computer accounts present in the contoso.com\Computers container: one for SRV1, and one for the hostname of PC1. It is not required to delete the stale entries, this is only done to remove clutter.
+> [!NOTE]
+> Before you start this section, you can delete computer objects from Active Directory that were created as part of previous deployment procedures. Use the Active Directory Users and Computers console on DC1 to remove stale entries under contoso.com\Computers, but do not delete the computer account (hostname) for PC1. There should be at least two computer accounts present in the contoso.com\Computers container: one for SRV1, and one for the hostname of PC1. It's not required to delete the stale entries, this action is only done to remove clutter.
 
 ![contoso.com\Computers.](images/poc-computers.png)
 
-In the replace procedure, PC1 will not be migrated to a new operating system. It is simplest to perform this procedure before performing the refresh procedure. After refreshing PC1, the operating system will be new. The next (replace) procedure does not install a new operating system on PC1 but rather performs a side-by-side migration of PC1 and another computer (PC4), to copy users and settings from PC1 to the new computer.
+In the replace procedure, PC1 won't be migrated to a new OS. It's simplest to perform this procedure before performing the refresh procedure. After you refresh PC1, the OS will be new. The next (replace) procedure doesn't install a new OS on PC1 but rather performs a side-by-side migration of PC1 and another computer (PC4), to copy users and settings from PC1 to the new computer.
 
 ### Create a replace task sequence
 
-1. On SRV1, in the Configuration Manager console, in the Software Library workspace, expand **Operating Systems**, right-click **Task Sequences**, and then click **Create MDT Task Sequence**.
+1. On SRV1, in the Configuration Manager console, in the **Software Library** workspace, expand **Operating Systems**, right-click **Task Sequences**, and then select **Create MDT Task Sequence**.
 
-2. On the Choose Template page, select **Client Replace Task Sequence** and click **Next**.
+2. On the Choose Template page, select **Client Replace Task Sequence** and select **Next**.
 
-3. On the General page, type the following:
+3. On the General page, enter the following information:
+
     - Task sequence name: **Replace Task Sequence**
     - Task sequence comments: **USMT backup only**
 
-4. Click **Next**, and on the Boot Image page, browse and select the **Zero Touch WinPE x64** boot image package. Click **OK** and then click **Next** to continue.
-5. On the MDT Package page, browse and select the **MDT** package. Click **OK** and then click **Next** to continue.
-6. On the USMT Package page, browse and select the **Microsoft Corporation User State Migration Tool for Windows** package. Click **OK** and then click **Next** to continue.
-7. On the Settings Package page, browse and select the **Windows 10 x64 Settings** package. Click **OK** and then click **Next** to continue.
-8. On the Summary page, review the details and then click **Next**.
-9. On the Confirmation page, click **Finish**.
+4. Select **Next**, and on the Boot Image page, browse and select the **Zero Touch WinPE x64** boot image package. Select **OK** and then select **Next** to continue.
 
->If an error is displayed at this stage it can be caused by a corrupt MDT integration. To repair it, close the Configuration Manager console, remove MDT integration, and then restore MDT integration.
+5. On the MDT Package page, browse and select the **MDT** package. Select **OK** and then select **Next** to continue.
+
+6. On the USMT Package page, browse and select the **Microsoft Corporation User State Migration Tool for Windows** package. Select **OK** and then select **Next** to continue.
+
+7. On the Settings Package page, browse and select the **Windows 10 x64 Settings** package. Select **OK** and then select **Next** to continue.
+
+8. On the Summary page, review the details and then select **Next**.
+
+9. On the Confirmation page, select **Finish**.
+
+> [!NOTE]
+> If an error is displayed at this stage, it can be caused by a corrupt MDT integration. To repair it, close the Configuration Manager console, remove MDT integration, and then restore MDT integration.
 
 ### Deploy PC4
 
-Create a VM named PC4 to receive the applications and settings from PC1. This VM represents a new computer that will replace PC1. To create this VM, type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
+Create a VM named PC4 to receive the applications and settings from PC1. This VM represents a new computer that will replace PC1. To create this VM, enter the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
 
 ```powershell
-New-VM –Name "PC4" –NewVHDPath "c:\vhd\pc4.vhdx" -NewVHDSizeBytes 60GB -SwitchName poc-internal -BootDevice NetworkAdapter -Generation 2
+New-VM -Name "PC4" -NewVHDPath "c:\vhd\pc4.vhdx" -NewVHDSizeBytes 60GB -SwitchName poc-internal -BootDevice NetworkAdapter -Generation 2
 Set-VMMemory -VMName "PC4" -DynamicMemoryEnabled $true -MinimumBytes 1024MB -MaximumBytes 2048MB -Buffer 20
 Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 ```
 
->Hyper-V enables us to define a static MAC address on PC4. In a real-world scenario you must determine the MAC address of the new computer.
+> [!NOTE]
+> Hyper-V lets you define a static MAC address on PC4. In a real-world scenario, you must determine the MAC address of the new computer.
 
 ### Install the Configuration Manager client on PC1
 
 1. Verify that the PC1 VM is running and in its original state, which was saved as a checkpoint and then restored in [Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit](windows-10-poc-mdt.md).
 
-2. If a PC1 checkpoint has not already been saved, then save a checkpoint by typing the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
+2. If you haven't already saved a checkpoint for PC1, then do it now. Enter the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
 
     ```powershell
     Checkpoint-VM -Name PC1 -SnapshotName BeginState
     ```
 
-3. On SRV1, in the Configuration Manager console, in the Administration workspace, expand **Hierarchy Configuration** and click on **Discovery Methods**.
+3. On SRV1, in the Configuration Manager console, in the **Administration** workspace, expand **Hierarchy Configuration** and select on **Discovery Methods**.
+
 4. Double-click **Active Directory System Discovery** and on the **General** tab select the **Enable Active Directory System Discovery** checkbox.
-5. Click the yellow starburst, click **Browse**, select **contoso\Computers**, and then click **OK** three times.
-6. When a popup dialog box asks if you want to run full discovery, click **Yes**.
-7. In the Assets and Compliance workspace, click **Devices** and verify that the computer account names for SRV1 and PC1 are displayed. See the following example (GREGLIN-PC1 is the computer account name of PC1 in this example):
 
->If you do not see the computer account for PC1, try clicking the **Refresh** button in the upper right corner of the console.
+5. Select the yellow starburst, select **Browse**, select **contoso\Computers**, and then select **OK** three times.
 
-The **Client** column indicates that the Configuration Manager client is not currently installed. This procedure will be carried out next.
+6. When a popup dialog box asks if you want to run full discovery, select **Yes**.
 
-8. Sign in to PC1 using the contoso\administrator account and type the following at an elevated command prompt to remove any pre-existing client configuration, if it exists. Note: this command requires an elevated command prompt not an elevated Windows PowerShell prompt:
+7. In the **Assets and Compliance** workspace, select **Devices** and verify that the computer account names for SRV1 and PC1 are displayed. See the following example (GREGLIN-PC1 is the computer account name of PC1 in this example):
 
-    ```dos
-    sc stop ccmsetup
+    > [!TIP]
+    > If you don't see the computer account for PC1, select **Refresh** in the upper right corner of the console.
+
+    The **Client** column indicates that the Configuration Manager client isn't currently installed. This procedure will be carried out next.
+
+8. Sign in to PC1 using the contoso\administrator account and enter the following command at an elevated command prompt to remove any pre-existing client configuration, if it exists.
+
+    > [!Note]
+    > This command requires an elevated command prompt, not an elevated Windows PowerShell prompt.
+
+    ```cmd
+    sc.exe stop ccmsetup
     "\\SRV1\c$\Program Files\Microsoft Configuration Manager\Client\CCMSetup.exe" /Uninstall
     ```
 
-    >If PC1 still has Configuration Manager registry settings that were applied by Group Policy, startup scripts, or other policies in its previous domain, these might not all be removed by CCMSetup /Uninstall and can cause problems with installation or registration of the client in its new environment. It might be necessary to manually remove these settings if they are present. For more information, see [Manual removal of the Configuration Manager client](/archive/blogs/michaelgriswold/manual-removal-of-the-sccm-client).
+    > [!NOTE]
+    > If PC1 still has Configuration Manager registry settings that were applied by Group Policy, startup scripts, or other policies in its previous domain, these might not all be removed by `CCMSetup /Uninstall` and can cause problems with installation or registration of the client in its new environment. It might be necessary to manually remove these settings if they are present. For more information, see [Manual removal of the Configuration Manager client](/archive/blogs/michaelgriswold/manual-removal-of-the-sccm-client).
 
-9. On PC1, temporarily stop Windows Update from queuing items for download and clear all BITS jobs from the queue. From an elevated command prompt, type:
+9. On PC1, temporarily stop Windows Update from queuing items for download and clear all BITS jobs from the queue. From an elevated command prompt, enter:
 
-    ```dos
-    net stop wuauserv
-    net stop BITS
+    ```cmd
+    net.exe stop wuauserv
+    net.exe stop BITS
     ```
 
-    Verify that both services were stopped successfully, then type the following at an elevated command prompt:
+    Verify that both services were stopped successfully, then enter the following command at an elevated command prompt:
 
-    ```dos
+    ```cmd
     del "%ALLUSERSPROFILE%\Application Data\Microsoft\Network\Downloader\qmgr*.dat"
-    net start BITS
-    bitsadmin /list /allusers
+    net.exe start BITS
+    bitsadmin.exe /list /allusers
     ```
 
-    Verify that BITSAdmin displays 0 jobs.
+    Verify that BITSAdmin displays zero jobs.
 
-10. To install the Configuration Manager client as a standalone process, type the following at an elevated command prompt:
+10. To install the Configuration Manager client as a standalone process, enter the following command at an elevated command prompt:
 
-    ```dos
+    ```cmd
     "\\SRV1\c$\Program Files\Microsoft Configuration Manager\Client\CCMSetup.exe" /mp:SRV1.contoso.com /logon SMSSITECODE=PS1
     ```
 
 11. On PC1, using file explorer, open the **C:\Windows\ccmsetup** directory. During client installation, files will be downloaded here.
-12. Installation progress will be captured in the file: **c:\windows\ccmsetup\logs\ccmsetup.log**. You can periodically open this file in notepad, or you can type the following command at an elevated Windows PowerShell prompt to monitor installation progress:
+
+12. Installation progress will be captured in the file: **c:\windows\ccmsetup\logs\ccmsetup.log**. You can periodically open this file in notepad, or you can enter the following command at an elevated Windows PowerShell prompt to monitor installation progress:
 
     ```powershell
     Get-Content -Path c:\windows\ccmsetup\logs\ccmsetup.log -Wait
     ```
 
-    Installation might require several minutes, and display of the log file will appear to hang while some applications are installed. This is normal. When setup is complete, verify that **CcmSetup is existing with return code 0** is displayed on the last line of the ccmsetup.log file and then press **CTRL-C** to break out of the Get-Content operation (if you are viewing the log in Windows PowerShell the last line will be wrapped). A return code of 0 indicates that installation was successful and you should now see a directory created at **C:\Windows\CCM** that contains files used in registration of the client with its site.
+    Installation might require several minutes, and display of the log file will appear to hang while some applications are installed. This behavior is normal. When setup is complete, verify that **CcmSetup is existing with return code 0** is displayed on the last line of the ccmsetup.log file. Then press **CTRL-C** to break out of the Get-Content operation. If you're viewing the log file in Windows PowerShell, the last line will be wrapped. A return code of `0` indicates that installation was successful and you should now see a directory created at **C:\Windows\CCM** that contains files used in registration of the client with its site.
 
 13. On PC1, open the Configuration Manager control panel applet by typing the following command from a command prompt:
 
-    ```dos
-    control smscfgrc
+    ```cmd
+    control.exe smscfgrc
     ```
 
-14. Click the **Site** tab, click **Configure Settings**, and click **Find Site**. The client will report that it has found the PS1 site. See the following example:
+14. Select the **Site** tab, select **Configure Settings**, and select **Find Site**. The client will report that it has found the PS1 site. See the following example:
 
     ![site.](images/configmgr-site.png)
 
-    If the client is not able to find the PS1 site, review any error messages that are displayed in **C:\Windows\CCM\Logs\ClientIDManagerStartup.log** and **LocationServices.log**. A common reason the site code is not located is because a previous configuration exists. For example, if a previous site code is configured at **HKLM\SOFTWARE\Microsoft\SMS\Mobile Client\GPRequestedSiteAssignmentCode** this must be deleted or updated.
+    If the client isn't able to find the PS1 site, review any error messages that are displayed in **C:\Windows\CCM\Logs\ClientIDManagerStartup.log** and **LocationServices.log**. A common reason the client can't locate the site code is because a previous configuration exists. For example, if a previous site code is configured at **HKLM\SOFTWARE\Microsoft\SMS\Mobile Client\GPRequestedSiteAssignmentCode**, delete or update this entry.
 
-15. On SRV1, in the Assets and Compliance workspace, click **Device Collections** and then double-click **All Desktop and Server Clients**. This node will be added under **Devices**.
+15. On SRV1, in the **Assets and Compliance** workspace, select **Device Collections** and then double-click **All Desktop and Server Clients**. This node will be added under **Devices**.
 
-16. Click **All Desktop and Server Clients** and verify that the computer account for PC1 is displayed here with **Yes** and **Active** in the **Client** and **Client Activity** columns, respectively. You might have to refresh the view and wait few minutes for the client to appear here.  See the following example:
+16. Select **All Desktop and Server Clients** and verify that the computer account for PC1 is displayed here with **Yes** and **Active** in the **Client** and **Client Activity** columns, respectively. You might have to refresh the view and wait few minutes for the client to appear here.  See the following example:
 
     ![client.](images/configmgr-client.png)
 
-    >It might take several minutes for the client to fully register with the site and complete a client check. When it is complete you will see a green check mark over the client icon as shown above. To refresh the client, click it and then press **F5** or right-click the client and click **Refresh**.
+    > [!NOTE]
+    > It might take several minutes for the client to fully register with the site and complete a client check. When it's complete you will see a green check mark over the client icon as shown above. To refresh the client, select it and then press **F5** or right-click the client and select **Refresh**.
 
 ### Create a device collection and deployment
 
-1. On SRV1, in the Configuration Manager console, in the Asset and Compliance workspace, right-click **Device Collections** and then click **Create Device Collection**.
+1. On SRV1, in the Configuration Manager console, in the **Assets and Compliance** workspace, right-click **Device Collections** and then select **Create Device Collection**.
 
 2. Use the following settings in the **Create Device Collection Wizard**:
+
     - General > Name: **Install Windows 10 Enterprise x64**
     - General > Limiting collection: **All Systems**
     - Membership Rules > Add Rule: **Direct Rule**
-    - The **Create Direct Membership Rule Wizard** opens, click **Next**
+    - The **Create Direct Membership Rule Wizard** opens, select **Next**
     - Search for Resources > Resource class: **System Resource**
     - Search for Resources > Attribute name: **Name**
     - Search for Resources > Value: **%**
     - Select Resources > Value: Select the computername associated with the PC1 VM
-    - Click **Next** twice and then click **Close** in both windows (Next, Next, Close, then Next, Next, Close)
+    - Select **Next** twice and then select **Close** in both windows (Next, Next, Close, then Next, Next, Close)
 
 3. Double-click the Install Windows 10 Enterprise x64 device collection and verify that the PC1 computer account is displayed.
 
-4. In the Software Library workspace, expand **Operating Systems**, click **Task Sequences**, right-click **Windows 10 Enterprise x64** and then click **Deploy**.
+4. In the **Software Library** workspace, expand **Operating Systems**, select **Task Sequences**, right-click **Windows 10 Enterprise x64** and then select **Deploy**.
 
 5. Use the following settings in the Deploy Software wizard:
-    - General > Collection: Click Browse and select **Install Windows 10 Enterprise x64**
+    - General > Collection: Select Browse and select **Install Windows 10 Enterprise x64**
     - Deployment Settings > Purpose: **Available**
-    - Deployment Settings > Make available to the following: **Configuration Manager clients, media and PXE**
-    - Scheduling > Click **Next**
-    - User Experience > Click **Next**
-    - Alerts > Click **Next**
-    - Distribution Points > Click **Next**
-    - Summary > Click **Next**
-    - Verify that the wizard completed successfully and then click **Close**
+    - Deployment Settings > Make available to the following clients: **Configuration Manager clients, media and PXE**
+    - Scheduling > select **Next**
+    - User Experience > select **Next**
+    - Alerts > select **Next**
+    - Distribution Points > select **Next**
+    - Summary > select **Next**
+    - Verify that the wizard completed successfully and then select **Close**
 
 ### Associate PC4 with PC1
 
-1. On SRV1 in the Configuration Manager console, in the Assets and Compliance workspace, right-click **Devices** and then click **Import Computer Information**.
+1. On SRV1 in the Configuration Manager console, in the **Assets and Compliance** workspace, right-click **Devices** and then select **Import Computer Information**.
 
-2. On the Select Source page, choose **Import single computer** and click **Next**.
+2. On the Select Source page, choose **Import single computer** and select **Next**.
 
 3. On the Single Computer page, use the following settings:
+
     - Computer Name: **PC4**
     - MAC Address: **00:15:5D:83:26:FF**
-    - Source Computer: \<type the hostname of PC1, or click **Search** twice, click the hostname, and click **OK**\>
+    - Source Computer: \<enter the hostname of PC1, or select **Search** twice, select the hostname, and select **OK**\>
 
-4. Click **Next**, and on the User Accounts page choose **Capture and restore specified user accounts**, then click the yellow starburst next to **User accounts to migrate**.
+4. Select **Next**, and on the User Accounts page choose **Capture and restore specified user accounts**, then select the yellow starburst next to **User accounts to migrate**.
 
-5. Click **Browse** and then under Enter the object name to select type **user1** and click OK twice.
+5. Select **Browse** and then under **Enter the object name to select** enter **user1** and select **OK** twice.
 
-6. Click the yellow starburst again and repeat the previous step to add the **contoso\administrator** account.
+6. Select the yellow starburst again and repeat the previous step to add the **contoso\administrator** account.
 
-7. Click **Next** twice, and on the Choose Target Collection page, choose **Add computers to the following collection**, click **Browse**, choose **Install Windows 10 Enterprise x64**, click **OK**, click **Next** twice, and then click **Close**.
+7. Select **Next** twice, and on the Choose Target Collection page, choose **Add computers to the following collection**, select **Browse**, choose **Install Windows 10 Enterprise x64**, select **OK**, select **Next** twice, and then select **Close**.
 
-8. In the Assets and Compliance workspace, click **User State Migration** and review the computer association in the display pane. The source computer will be the computername of PC1 (GREGLIN-PC1 in this example), the destination computer will be **PC4**, and the migration type will be **side-by-side**.
+8. In the **Assets and Compliance** workspace, select **User State Migration** and review the computer association in the display pane. The source computer will be the computername of PC1 (GREGLIN-PC1 in this example), the destination computer will be **PC4**, and the migration enter will be **side-by-side**.
 
-9. Right-click the association in the display pane and then click **Specify User Accounts**. You can add or remove user account here. Click **OK**.
+9. Right-click the association in the display pane and then select **Specify User Accounts**. You can add or remove user account here. Select **OK**.
 
-10. Right-click the association in the display pane and then click **View Recovery Information**. Note that a recovery key has been assigned, but a user state store location has not. Click **Close**.
+10. Right-click the association in the display pane and then select **View Recovery Information**. You'll see that a recovery key has been assigned, but a user state store location hasn't. Select **Close**.
 
-11. Click **Device Collections** and then double-click **Install Windows 10 Enterprise x64**. Verify that **PC4** is displayed in the collection. You might have to update and refresh the collection, or wait a few minutes, but do not proceed until PC4 is available. See the following example:
+11. Select **Device Collections** and then double-click **Install Windows 10 Enterprise x64**. Verify that **PC4** is displayed in the collection. You might have to update and refresh the collection, or wait a few minutes, but don't proceed until PC4 is available. See the following example:
 
     ![collection.](images/configmgr-collection.png)
 
 ### Create a device collection for PC1
 
-1. On SRV1, in the Configuration Manager console, in the Assets and Compliance workspace, right-click **Device Collections** and then click **Create Device Collection**.
+1. On SRV1, in the Configuration Manager console, in the **Assets and Compliance** workspace, right-click **Device Collections** and then select **Create Device Collection**.
 
 2. Use the following settings in the **Create Device Collection Wizard**:
+
     - General > Name: **USMT Backup (Replace)**
     - General > Limiting collection: **All Systems**
     - Membership Rules > Add Rule: **Direct Rule**
-    - The **Create Direct Membership Rule Wizard** opens, click **Next**
+    - The **Create Direct Membership Rule Wizard** opens, select **Next**
     - Search for Resources > Resource class: **System Resource**
     - Search for Resources > Attribute name: **Name**
     - Search for Resources > Value: **%**
     - Select Resources > Value: Select the computername associated with the PC1 VM (GREGLIN-PC1 in this example).
-    - Click **Next** twice and then click **Close** in both windows.
+    - Select **Next** twice and then select **Close** in both windows.
 
-3. Click **Device Collections** and then double-click **USMT Backup (Replace)**. Verify that the computer name/hostname associated with PC1 is displayed in the collection. Do not proceed until this name is displayed.  
+3. Select **Device Collections** and then double-click **USMT Backup (Replace)**. Verify that the computer name/hostname associated with PC1 is displayed in the collection. Don't proceed until this name is displayed.  
 
 ### Create a new deployment
 
-In the Configuration Manager console, in the Software Library workspace under Operating Systems, click **Task Sequences**, right-click **Replace Task Sequence**, click **Deploy**, and use the following settings:
+In the Configuration Manager console, in the **Software Library** workspace, under **Operating Systems**, select **Task Sequences**, right-click **Replace Task Sequence**, select **Deploy**, and use the following settings:
 
 - General > Collection: **USMT Backup (Replace)**
 - Deployment Settings > Purpose: **Available**
-- Deployment Settings > Make available to the following: **Only Configuration Manager Clients**
-- Scheduling: Click **Next**
-- User Experience: Click **Next**
-- Alerts: Click **Next**
-- Distribution Points: Click **Next**
-- Click **Next** and then click **Close**.
+- Deployment Settings > Make available to the following clients: **Only Configuration Manager Clients**
+- Scheduling: Select **Next**
+- User Experience: Select **Next**
+- Alerts: Select **Next**
+- Distribution Points: Select **Next**
+- Select **Next** and then select **Close**.
 
 ### Verify the backup
 
 1. On PC1, open the Configuration Manager control panel applet by typing the following command in a command prompt:
 
-    ```dos
-    control smscfgrc
+    ```cmd
+    control.exe smscfgrc
     ```
 
-2. On the **Actions** tab, click **Machine Policy Retrieval & Evaluation Cycle**, click **Run Now**, click **OK**, and then click **OK** again. This is one method that can be used to run a task sequence in addition to the Client Notification method that will be demonstrated in the computer refresh procedure.
+2. On the **Actions** tab, select **Machine Policy Retrieval & Evaluation Cycle**, select **Run Now**, select **OK**, and then select **OK** again. This method is one that you can use to run a task sequence in addition to the Client Notification method that will be demonstrated in the computer refresh procedure.
 
-3. Type the following at an elevated command prompt to open the Software Center:
+3. Enter the following command at an elevated command prompt to open the Software Center:
 
-    ```dos
+    ```cmd
     C:\Windows\CCM\SCClient.exe
     ```
 
-4. In the Software Center , click **Available Software** and then select the **Replace Task Sequence** checkbox. See the following example:
+4. In Software Center, select **Available Software**, and then select the **Replace Task Sequence** checkbox. See the following example:
 
     ![software.](images/configmgr-software-cntr.png)
 
-    >If you do not see any available software, try running step #2 again to start the Machine Policy Retrieval & Evaluation Cycle. You should see an alert that new software is available.
+    > [!NOTE]
+    > If you don't see any available software, try running step #2 again to start the Machine Policy Retrieval & Evaluation Cycle. You should see an alert that new software is available.
 
-5. Click **INSTALL SELECTED** and then click **INSTALL OPERATING SYSTEM**.
+5. Select **INSTALL SELECTED** and then select **INSTALL OPERATING SYSTEM**.
+
 6. Allow the **Replace Task Sequence** to complete, then verify that the C:\MigData folder on SRV1 contains the USMT backup.
 
 ### Deploy the new computer
 
-1. Start PC4 and press ENTER for a network boot when prompted. To start PC4, type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
+1. Start PC4 and press ENTER for a network boot when prompted. To start PC4, enter the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
 
     ```powershell
     Start-VM PC4
     vmconnect localhost PC4
     ```
 
-1. In the **Welcome to the Task Sequence Wizard**, enter **pass@word1** and click **Next**.
-1. Choose the **Windows 10 Enterprise X64** image.
-1. Setup will install the operating system using the Windows 10 Enterprise x64 reference image, install the configuration manager client, join PC4 to the domain, and restore users and settings from PC1.
-1. Save checkpoints for all VMs if you wish to review their status at a later date. This is not required (checkpoints do take up space on the Hyper-V host). Note: the next procedure will install a new OS on PC1 update its status in Configuration Manager and in Active Directory as a Windows 10 device, so you cannot return to a previous checkpoint only on the PC1 VM without a conflict. Therefore, if you do create a checkpoint, you should do this for all VMs.
+2. In the **Welcome to the Task Sequence Wizard**, enter **pass@word1** and select **Next**.
 
-    To save a checkpoint for all VMs, type the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
+3. Choose the **Windows 10 Enterprise X64** image.
+
+4. Setup will install the OS using the Windows 10 Enterprise x64 reference image, install the configuration manager client, join PC4 to the domain, and restore users and settings from PC1.
+
+5. Save checkpoints for all VMs if you wish to review their status at a later date. This action isn't required, as checkpoints do take up space on the Hyper-V host.
+
+    > [!Note]
+    > The next procedure will install a new OS on PC1, and update its status in Configuration Manager and in Active Directory as a Windows 10 device. So you can't return to a previous checkpoint only on the PC1 VM without a conflict. Therefore, if you do create a checkpoint, you should do this action for all VMs.
+
+    To save a checkpoint for all VMs, enter the following commands at an elevated Windows PowerShell prompt on the Hyper-V host:
 
     ```powershell
     Checkpoint-VM -Name DC1 -SnapshotName cm-refresh
@@ -1059,23 +1166,22 @@ In the Configuration Manager console, in the Software Library workspace under Op
 
 ### Initiate the computer refresh
 
-1. On SRV1, in the Assets and Compliance workspace, click **Device Collections** and then double-click **Install Windows 10 Enterprise x64**.
-2. Right-click the computer account for PC1, point to **Client Notification**, click **Download Computer Policy**, and click **OK** in the popup dialog box.
-3. On PC1, in the notification area, click **New software is available** and then click **Open Software Center**.
-4. In the Software Center, click **Operating Systems**, click **Windows 10 Enterprise x64**, click **Install** and then click **INSTALL OPERATING SYSTEM**. See the following example:
+1. On SRV1, in the **Assets and Compliance** workspace, select **Device Collections** and then double-click **Install Windows 10 Enterprise x64**.
+
+2. Right-click the computer account for PC1, point to **Client Notification**, select **Download Computer Policy**, and select **OK** in the popup dialog box.
+
+3. On PC1, in the notification area, select **New software is available** and then select **Open Software Center**.
+
+4. In the Software Center, select **Operating Systems**, select **Windows 10 Enterprise x64**, select **Install** and then select **INSTALL OPERATING SYSTEM**. See the following example:
 
     ![installOS.](images/configmgr-install-os.png)
 
-    The computer will restart several times during the installation process. Installation includes downloading updates, reinstalling the Configuration Manager Client Agent, and restoring the user state. You can view status of the installation in the Configuration Manager console by accessing the Monitoring workspace, clicking **Deployments**, and then double-clicking the deployment associated with the **Install Windows 10 Enterprise x64** collection. Under **Asset Details**, right-click the device and then click **More Details**. Click the **Status** tab to see a list of tasks that have been performed.  See the following example:
+    The computer will restart several times during the installation process. Installation includes downloading updates, reinstalling the Configuration Manager Client Agent, and restoring the user state. You can view status of the installation in the Configuration Manager console by accessing the **Monitoring** workspace, clicking **Deployments**, and then double-clicking the deployment associated with the **Install Windows 10 Enterprise x64** collection. Under **Asset Details**, right-click the device and then select **More Details**. Select the **Status** tab to see a list of tasks that have been performed.  See the following example:
 
     ![asset.](images/configmgr-asset.png)
 
     You can also monitor progress of the installation by using the MDT deployment workbench and viewing the **Monitoring** node under **Deployment Shares\MDT Production**.
 
-    When installation has completed, sign in using the contoso\administrator account or the contoso\user1 account and verify that applications and settings have been successfully backed up and restored to your new Windows 10 Enterprise operating system.
+    When installation has completed, sign in using the contoso\administrator account or the contoso\user1 account and verify that applications and settings have been successfully backed up and restored to your new Windows 10 Enterprise OS.
 
-    ![post-refresh.](images/configmgr-post-refresh.png) 
-
-## Related Topics
-
-[System Center 2012 Configuration Manager Survival Guide](https://social.technet.microsoft.com/wiki/contents/articles/7075.system-center-2012-configuration-manager-survival-guide.aspx#Step-by-Step_Guides)
+    ![post-refresh.](images/configmgr-post-refresh.png)

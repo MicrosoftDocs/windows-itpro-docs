@@ -1,18 +1,16 @@
 ---
 title: Manage Configurations for UE-V
 description: Learn to manage the configuration of the User Experience Virtualization (UE-V) service and also learn to manage storage locations for UE-V resources.
-author: greg-lindsay
-ms.pagetype: mdop, virtualization
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.prod: w10
+author: aczechowski
+ms.prod: windows-client
+ms.collection: tier3
 ms.date: 04/19/2017
 ms.reviewer: 
-manager: dansimp
-ms.author: greglin
+manager: dougeby
+ms.author: aaroncz
 ms.topic: article
+ms.technology: itpro-configure
 ---
-
 
 # Manage Configurations for UE-V
 
@@ -27,11 +25,11 @@ You can use Group Policy Objects to modify the settings that define how UE-V syn
 
 [Configuring UE-V with Group Policy Objects](uev-configuring-uev-with-group-policy-objects.md)
 
-## Configuring UE-V with Microsoft Endpoint Configuration Manager
+## Configuring UE-V with Microsoft Configuration Manager
 
 You can use Microsoft Endpoint Configuration Manager to manage the UE-V service by using the UE-V Configuration Pack.
 
-[Configuring UE-V with Microsoft Endpoint Configuration Manager](uev-configuring-uev-with-system-center-configuration-manager.md)
+[Configuring UE-V with Microsoft Configuration Manager](uev-configuring-uev-with-system-center-configuration-manager.md)
 
 ## Administering UE-V with PowerShell and WMI
 

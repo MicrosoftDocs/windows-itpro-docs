@@ -1,33 +1,33 @@
 ---
-title: Network access Do not allow anonymous enumeration of SAM accounts (Windows 10)
+title: Network access Do not allow anonymous enumeration of SAM accounts 
 description: Describes the best practices, location, values, and security considerations for the Network access Do not allow anonymous enumeration of SAM accounts security policy setting.
 ms.assetid: 6ee25b33-ad43-4097-b031-7be680f64c7c
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Network access: Do not allow anonymous enumeration of SAM accounts
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the best practices, location, values, and security considerations for the **Network access: Do not allow anonymous enumeration of SAM accounts** security policy setting.
 
 ## Reference
 
-This policy setting determines which additional permissions will be assigned for anonymous connections to the device. Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This is convenient, for example, when an administrator wants to give access to users in a trusted domain that does not maintain a reciprocal trust.
+This policy setting determines which other permissions will be assigned for anonymous connections to the device. Windows allows anonymous users to perform certain activities, such as enumerating the names of domain accounts and network shares. This permission is convenient, for example, when an administrator wants to give access to users in a trusted domain that doesn't maintain a reciprocal trust.
 
 This policy setting has no impact on domain controllers.
 
@@ -39,7 +39,7 @@ Misuse of this policy setting is a common error that can cause data loss or prob
 
 -   Disabled
 
-    No additional permissions can be assigned by the administrator for anonymous connections to the device. Anonymous connections will rely on default permissions.
+    No other permissions can be assigned by the administrator for anonymous connections to the device. Anonymous connections will rely on default permissions.
 
 -   Not defined
 
@@ -66,7 +66,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ### Policy conflicts
 
@@ -90,7 +90,7 @@ Enable the **Network access: Do not allow anonymous enumeration of SAM accounts*
 
 ### Potential impact
 
-It is impossible to grant access to users of another domain across a one-way trust because administrators in the trusting domain are unable to enumerate lists of accounts in the other domain. Users who access file and print servers anonymously are unable to list the shared network resources on those servers; the users must be authenticated before they can view the lists of shared folders and printers.
+It's impossible to grant access to users of another domain across a one-way trust because administrators in the trusting domain are unable to enumerate lists of accounts in the other domain. Users who access file and print servers anonymously are unable to list the shared network resources on those servers; the users must be authenticated before they can view the lists of shared folders and printers.
 
 ## Related topics
 

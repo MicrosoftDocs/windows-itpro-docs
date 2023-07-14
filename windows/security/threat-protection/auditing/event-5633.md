@@ -1,17 +1,18 @@
 ---
-title: 5633(S, F) A request was made to authenticate to a wired network. (Windows 10)
+title: 5633(S, F) A request was made to authenticate to a wired network. 
 description: Describes security event 5633(S, F) A request was made to authenticate to a wired network.
 ms.pagetype: security
-ms.prod: m365-security
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
-author: dansimp
+ms.localizationpriority: low
+author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.technology: windows-sec
+manager: aaroncz
+ms.author: vinpa
+ms.technology: itpro-security
+ms.topic: reference
 ---
 
 # 5633(S, F): A request was made to authenticate to a wired network.
@@ -103,7 +104,7 @@ It typically generates when network adapter connects to new wired network.
 
 -   **Reason Code** \[Type = UnicodeString\]: contains Reason Text (explanation of Reason Code) and Reason Code for wired authentication results. See more information about reason codes for wired authentication here: <https://msdn.microsoft.com/library/windows/desktop/dd877212(v=vs.85).aspx>, <https://technet.microsoft.com/library/cc727747(v=ws.10).aspx>.
 
--   **Error Code** \[Type = HexInt32\]: unique [EAP error code](https://msdn.microsoft.com/library/windows/desktop/aa813691(v=vs.85).aspx).
+-   **Error Code** \[Type = HexInt32\]: unique [EAP error code](/windows/win32/eaphost/eap-related-error-and-information-constants).
 
 ## Security Monitoring Recommendations
 

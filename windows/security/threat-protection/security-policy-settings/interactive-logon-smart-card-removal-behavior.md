@@ -1,26 +1,26 @@
 ---
-title: Interactive logon Smart card removal behavior (Windows 10)
+title: Interactive logon Smart card removal behavior 
 description: Best practices, location, values, policy management, and security considerations for the security policy setting, Interactive logon Smart card removal behavior.
 ms.assetid: 61487820-9d49-4979-b15d-c7e735999460
 ms.reviewer: 
-ms.author: dansimp
-ms.prod: m365-security
+ms.author: vinpa
+ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
-manager: dansimp
+author: vinaypamnani-msft
+manager: aaroncz
 audience: ITPro
-ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: windows-sec
+ms.technology: itpro-security
 ---
 
 # Interactive logon: Smart card removal behavior
 
 **Applies to**
+-   Windows 11
 -   Windows 10
 
 Describes the recommended practices, location, values, policy management, and security considerations for the **Interactive logon: Smart card removal behavior** security policy setting.

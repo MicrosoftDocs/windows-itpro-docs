@@ -1,1119 +1,1354 @@
 ---
-title: Policy CSP - ADMX_Taskbar
-description: Policy CSP - ADMX_Taskbar
-ms.author: dansimp
+title: ADMX_Taskbar Policy CSP
+description: Learn more about the ADMX_Taskbar Area in Policy CSP.
+author: vinaypamnani-msft
+manager: aaroncz
+ms.author: vinpa
+ms.date: 05/10/2023
 ms.localizationpriority: medium
-ms.topic: article
-ms.prod: w10
-ms.technology: windows
-author: dansimp
-ms.date: 10/26/2020
-ms.reviewer: 
-manager: dansimp
+ms.prod: windows-client
+ms.technology: itpro-manage
+ms.topic: reference
 ---
 
+<!-- Auto-Generated CSP Document -->
+
+<!-- ADMX_Taskbar-Begin -->
 # Policy CSP - ADMX_Taskbar
 
-<hr/>
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-> [!TIP]
-> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+<!-- ADMX_Taskbar-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Taskbar-Editable-End -->
 
-<!--Policies-->
-## ADMX_Taskbar policies  
+<!-- DisableNotificationCenter-Begin -->
+## DisableNotificationCenter
 
-<dl>
-  <dd>
-    <a href="#admx-taskbar-disablenotificationcenter">ADMX_Taskbar/DisableNotificationCenter</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-enablelegacyballoonnotifications">ADMX_Taskbar/EnableLegacyBalloonNotifications</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-hidescahealth">ADMX_Taskbar/HideSCAHealth</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-hidescanetwork">ADMX_Taskbar/HideSCANetwork</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-hidescapower">ADMX_Taskbar/HideSCAPower</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-hidescavolume">ADMX_Taskbar/HideSCAVolume</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-noballoonfeatureadvertisements">ADMX_Taskbar/NoBalloonFeatureAdvertisements</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-nopinningstoretotaskbar">ADMX_Taskbar/NoPinningStoreToTaskbar</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-nopinningtodestinations">ADMX_Taskbar/NoPinningToDestinations</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-nopinningtotaskbar">ADMX_Taskbar/NoPinningToTaskbar</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-noremotedestinations">ADMX_Taskbar/NoRemoteDestinations</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-nosystraysystempromotion">ADMX_Taskbar/NoSystraySystemPromotion</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-showwindowsstoreappsontaskbar">ADMX_Taskbar/ShowWindowsStoreAppsOnTaskbar</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-taskbarlockall">ADMX_Taskbar/TaskbarLockAll</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-taskbarnoaddremovetoolbar">ADMX_Taskbar/TaskbarNoAddRemoveToolbar</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-taskbarnodragtoolbar">ADMX_Taskbar/TaskbarNoDragToolbar</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-taskbarnomultimon">ADMX_Taskbar/TaskbarNoMultimon</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-taskbarnonotification">ADMX_Taskbar/TaskbarNoNotification</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-taskbarnopinnedlist">ADMX_Taskbar/TaskbarNoPinnedList</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-taskbarnoredock">ADMX_Taskbar/TaskbarNoRedock</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-taskbarnoresize">ADMX_Taskbar/TaskbarNoResize</a>
-  </dd>
-  <dd>
-    <a href="#admx-taskbar-taskbarnothumbnail">ADMX_Taskbar/TaskbarNoThumbnail</a>
-  </dd>
-</dl>
+<!-- DisableNotificationCenter-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- DisableNotificationCenter-Applicability-End -->
 
+<!-- DisableNotificationCenter-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/DisableNotificationCenter
+```
 
-<hr/>
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Taskbar/DisableNotificationCenter
+```
+<!-- DisableNotificationCenter-OmaUri-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-disablenotificationcenter"></a>**ADMX_Taskbar/DisableNotificationCenter**  
-
-<!--SupportedSKUs-->
-
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- DisableNotificationCenter-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting removes Notifications and Action Center from the notification area on the taskbar.
 
 The notification area is located at the far right end of the taskbar and includes icons for current notifications and the system clock.
 
-If this setting is enabled, Notifications and Action Center is not displayed in the notification area. The user will be able to read notifications when they appear, but they won’t be able to review any notifications they miss.
+- If this setting is enabled, Notifications and Action Center isn't displayed in the notification area. The user will be able to read notifications when they appear, but they won't be able to review any notifications they miss.
 
-If you disable or do not configure this policy setting, Notification and Security and Maintenance will be displayed on the taskbar.
+- If you disable or don't configure this policy setting, Notification and Security and Maintenance will be displayed on the taskbar.
 
 A reboot is required for this policy setting to take effect.
+<!-- DisableNotificationCenter-Description-End -->
 
-<!--/Description-->
+<!-- DisableNotificationCenter-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- DisableNotificationCenter-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove Notifications and Action Center*
--   GP name: *DisableNotificationCenter*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+<!-- DisableNotificationCenter-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- DisableNotificationCenter-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-enablelegacyballoonnotifications"></a>**ADMX_Taskbar/EnableLegacyBalloonNotifications**  
+<!-- DisableNotificationCenter-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | DisableNotificationCenter |
+| Friendly Name | Remove Notifications and Action Center |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | DisableNotificationCenter |
+| ADMX File Name | Taskbar.admx |
+<!-- DisableNotificationCenter-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- DisableNotificationCenter-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- DisableNotificationCenter-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- DisableNotificationCenter-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- EnableLegacyBalloonNotifications-Begin -->
+## EnableLegacyBalloonNotifications
 
-<hr/>
+<!-- EnableLegacyBalloonNotifications-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- EnableLegacyBalloonNotifications-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- EnableLegacyBalloonNotifications-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/EnableLegacyBalloonNotifications
+```
+<!-- EnableLegacyBalloonNotifications-OmaUri-End -->
+
+<!-- EnableLegacyBalloonNotifications-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy disables the functionality that converts balloons to toast notifications.
 
-If you enable this policy setting, system and application notifications will render as balloons instead of toast notifications.
+- If you enable this policy setting, system and application notifications will render as balloons instead of toast notifications.
 
-Enable this policy setting if a specific app or system component that uses balloon notifications has compatibility issues with toast notifications. 
+Enable this policy setting if a specific app or system component that uses balloon notifications has compatibility issues with toast notifications.
 
-If you disable or don’t configure this policy setting, all notifications will appear as toast notifications.
+- If you disable or don't configure this policy setting, all notifications will appear as toast notifications.
 
 A reboot is required for this policy setting to take effect.
+<!-- EnableLegacyBalloonNotifications-Description-End -->
 
-<!--/Description-->
+<!-- EnableLegacyBalloonNotifications-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableLegacyBalloonNotifications-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Disable showing balloon notifications as toasts.*
--   GP name: *EnableLegacyBalloonNotifications*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+<!-- EnableLegacyBalloonNotifications-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- EnableLegacyBalloonNotifications-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-hidescahealth"></a>**ADMX_Taskbar/HideSCAHealth**  
+<!-- EnableLegacyBalloonNotifications-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | EnableLegacyBalloonNotifications |
+| Friendly Name | Disable showing balloon notifications as toasts. |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | EnableLegacyBalloonNotifications |
+| ADMX File Name | Taskbar.admx |
+<!-- EnableLegacyBalloonNotifications-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- EnableLegacyBalloonNotifications-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableLegacyBalloonNotifications-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- EnableLegacyBalloonNotifications-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- HideSCAHealth-Begin -->
+## HideSCAHealth
 
-<hr/>
+<!-- HideSCAHealth-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- HideSCAHealth-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- HideSCAHealth-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/HideSCAHealth
+```
+<!-- HideSCAHealth-OmaUri-End -->
+
+<!-- HideSCAHealth-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to remove Security and Maintenance from the system control area.
 
-If you enable this policy setting, the Security and Maintenance icon is not displayed in the system notification area.
+- If you enable this policy setting, the Security and Maintenance icon isn't displayed in the system notification area.
 
-If you disable or do not configure this policy setting, the Security and Maintenance icon is displayed in the system notification area.
+- If you disable or don't configure this policy setting, the Security and Maintenance icon is displayed in the system notification area.
+<!-- HideSCAHealth-Description-End -->
 
-<!--/Description-->
+<!-- HideSCAHealth-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideSCAHealth-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove the Security and Maintenance icon*
--   GP name: *HideSCAHealth*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+<!-- HideSCAHealth-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HideSCAHealth-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-hidescanetwork"></a>**ADMX_Taskbar/HideSCANetwork**  
+<!-- HideSCAHealth-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | HideSCAHealth |
+| Friendly Name | Remove the Security and Maintenance icon |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | HideSCAHealth |
+| ADMX File Name | Taskbar.admx |
+<!-- HideSCAHealth-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HideSCAHealth-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideSCAHealth-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- HideSCAHealth-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- HideSCANetwork-Begin -->
+## HideSCANetwork
 
-<hr/>
+<!-- HideSCANetwork-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- HideSCANetwork-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- HideSCANetwork-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/HideSCANetwork
+```
+<!-- HideSCANetwork-OmaUri-End -->
+
+<!-- HideSCANetwork-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to remove the networking icon from the system control area.
 
-If you enable this policy setting, the networking icon is not displayed in the system notification area.
+- If you enable this policy setting, the networking icon isn't displayed in the system notification area.
 
-If you disable or do not configure this policy setting, the networking icon is displayed in the system notification area.
+- If you disable or don't configure this policy setting, the networking icon is displayed in the system notification area.
+<!-- HideSCANetwork-Description-End -->
 
-<!--/Description-->
+<!-- HideSCANetwork-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideSCANetwork-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove the networking icon*
--   GP name: *HideSCANetwork*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+<!-- HideSCANetwork-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HideSCANetwork-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-hidescapower"></a>**ADMX_Taskbar/HideSCAPower**  
+<!-- HideSCANetwork-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | HideSCANetwork |
+| Friendly Name | Remove the networking icon |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | HideSCANetwork |
+| ADMX File Name | Taskbar.admx |
+<!-- HideSCANetwork-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HideSCANetwork-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideSCANetwork-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- HideSCANetwork-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- HideSCAPower-Begin -->
+## HideSCAPower
 
-<hr/>
+<!-- HideSCAPower-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- HideSCAPower-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- HideSCAPower-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/HideSCAPower
+```
+<!-- HideSCAPower-OmaUri-End -->
+
+<!-- HideSCAPower-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to remove the battery meter from the system control area.
 
-If you enable this policy setting, the battery meter is not displayed in the system notification area.
+- If you enable this policy setting, the battery meter isn't displayed in the system notification area.
 
-If you disable or do not configure this policy setting, the battery meter is displayed in the system notification area.
+- If you disable or don't configure this policy setting, the battery meter is displayed in the system notification area.
+<!-- HideSCAPower-Description-End -->
 
-<!--/Description-->
+<!-- HideSCAPower-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideSCAPower-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove the battery meter*
--   GP name: *HideSCAPower*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+<!-- HideSCAPower-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HideSCAPower-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-hidescavolume"></a>**ADMX_Taskbar/HideSCAVolume**  
+<!-- HideSCAPower-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | HideSCAPower |
+| Friendly Name | Remove the battery meter |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | HideSCAPower |
+| ADMX File Name | Taskbar.admx |
+<!-- HideSCAPower-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HideSCAPower-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideSCAPower-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- HideSCAPower-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- HideSCAVolume-Begin -->
+## HideSCAVolume
 
-<hr/>
+<!-- HideSCAVolume-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- HideSCAVolume-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- HideSCAVolume-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/HideSCAVolume
+```
+<!-- HideSCAVolume-OmaUri-End -->
+
+<!-- HideSCAVolume-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to remove the volume control icon from the system control area.
 
-If you enable this policy setting, the volume control icon is not displayed in the system notification area.
+- If you enable this policy setting, the volume control icon isn't displayed in the system notification area.
 
-If you disable or do not configure this policy setting, the volume control icon is displayed in the system notification area.
+- If you disable or don't configure this policy setting, the volume control icon is displayed in the system notification area.
+<!-- HideSCAVolume-Description-End -->
 
-<!--/Description-->
+<!-- HideSCAVolume-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- HideSCAVolume-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove the volume control icon*
--   GP name: *HideSCAVolume*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+<!-- HideSCAVolume-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- HideSCAVolume-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-noballoonfeatureadvertisements"></a>**ADMX_Taskbar/NoBalloonFeatureAdvertisements**  
+<!-- HideSCAVolume-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | HideSCAVolume |
+| Friendly Name | Remove the volume control icon |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | HideSCAVolume |
+| ADMX File Name | Taskbar.admx |
+<!-- HideSCAVolume-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- HideSCAVolume-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- HideSCAVolume-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- HideSCAVolume-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoBalloonFeatureAdvertisements-Begin -->
+## NoBalloonFeatureAdvertisements
 
-<hr/>
+<!-- NoBalloonFeatureAdvertisements-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoBalloonFeatureAdvertisements-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoBalloonFeatureAdvertisements-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/NoBalloonFeatureAdvertisements
+```
+<!-- NoBalloonFeatureAdvertisements-OmaUri-End -->
+
+<!-- NoBalloonFeatureAdvertisements-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to turn off feature advertisement balloon notifications.
 
-If you enable this policy setting, certain notification balloons that are marked as feature advertisements are not shown.
+If you enable this policy setting, certain notification balloons that are marked as feature advertisements aren't shown.
 
-If you disable do not configure this policy setting, feature advertisement balloons are shown.
+If you disable don't configure this policy setting, feature advertisement balloons are shown.
+<!-- NoBalloonFeatureAdvertisements-Description-End -->
 
-<!--/Description-->
+<!-- NoBalloonFeatureAdvertisements-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoBalloonFeatureAdvertisements-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off feature advertisement balloon notifications*
--   GP name: *NoBalloonFeatureAdvertisements*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+<!-- NoBalloonFeatureAdvertisements-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoBalloonFeatureAdvertisements-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-nopinningstoretotaskbar"></a>**ADMX_Taskbar/NoPinningStoreToTaskbar**  
+<!-- NoBalloonFeatureAdvertisements-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | NoBalloonFeatureAdvertisements |
+| Friendly Name | Turn off feature advertisement balloon notifications |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoBalloonFeatureAdvertisements |
+| ADMX File Name | Taskbar.admx |
+<!-- NoBalloonFeatureAdvertisements-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoBalloonFeatureAdvertisements-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoBalloonFeatureAdvertisements-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoBalloonFeatureAdvertisements-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoPinningStoreToTaskbar-Begin -->
+## NoPinningStoreToTaskbar
 
-<hr/>
+<!-- NoPinningStoreToTaskbar-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoPinningStoreToTaskbar-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoPinningStoreToTaskbar-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/NoPinningStoreToTaskbar
+```
+<!-- NoPinningStoreToTaskbar-OmaUri-End -->
+
+<!-- NoPinningStoreToTaskbar-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to control pinning the Store app to the Taskbar.
 
-If you enable this policy setting, users cannot pin the Store app to the Taskbar. If the Store app is already pinned to the Taskbar, it will be removed from the Taskbar on next login.
+- If you enable this policy setting, users can't pin the Store app to the Taskbar. If the Store app is already pinned to the Taskbar, it will be removed from the Taskbar on next login.
 
-If you disable or do not configure this policy setting, users can pin the Store app to the Taskbar.
+- If you disable or don't configure this policy setting, users can pin the Store app to the Taskbar.
+<!-- NoPinningStoreToTaskbar-Description-End -->
 
-<!--/Description-->
+<!-- NoPinningStoreToTaskbar-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoPinningStoreToTaskbar-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not allow pinning Store app to the Taskbar*
--   GP name: *NoPinningStoreToTaskbar*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+<!-- NoPinningStoreToTaskbar-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoPinningStoreToTaskbar-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-nopinningtodestinations"></a>**ADMX_Taskbar/NoPinningToDestinations**  
+<!-- NoPinningStoreToTaskbar-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | NoPinningStoreToTaskbar |
+| Friendly Name | Do not allow pinning Store app to the Taskbar |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoPinningStoreToTaskbar |
+| ADMX File Name | Taskbar.admx |
+<!-- NoPinningStoreToTaskbar-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoPinningStoreToTaskbar-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoPinningStoreToTaskbar-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoPinningStoreToTaskbar-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoPinningToDestinations-Begin -->
+## NoPinningToDestinations
 
-<hr/>
+<!-- NoPinningToDestinations-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoPinningToDestinations-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoPinningToDestinations-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/NoPinningToDestinations
+```
+<!-- NoPinningToDestinations-OmaUri-End -->
+
+<!-- NoPinningToDestinations-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to control pinning items in Jump Lists.
 
-If you enable this policy setting, users cannot pin files, folders, websites, or other items to their Jump Lists in the Start Menu and Taskbar. Users also cannot unpin existing items pinned to their Jump Lists. Existing items already pinned to their Jump Lists will continue to show.
+- If you enable this policy setting, users can't pin files, folders, websites, or other items to their Jump Lists in the Start Menu and Taskbar. Users also can't unpin existing items pinned to their Jump Lists. Existing items already pinned to their Jump Lists will continue to show.
 
-If you disable or do not configure this policy setting, users can pin files, folders, websites, and other items to a program's Jump List so that the items is always present in this menu.
+- If you disable or don't configure this policy setting, users can pin files, folders, websites, and other items to a program's Jump List so that the items is always present in this menu.
+<!-- NoPinningToDestinations-Description-End -->
 
-<!--/Description-->
+<!-- NoPinningToDestinations-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoPinningToDestinations-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not allow pinning items in Jump Lists*
--   GP name: *NoPinningToDestinations*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+<!-- NoPinningToDestinations-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoPinningToDestinations-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-nopinningtotaskbar"></a>**ADMX_Taskbar/NoPinningToTaskbar**  
+<!-- NoPinningToDestinations-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | NoPinningToDestinations |
+| Friendly Name | Do not allow pinning items in Jump Lists |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoPinningToDestinations |
+| ADMX File Name | Taskbar.admx |
+<!-- NoPinningToDestinations-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoPinningToDestinations-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoPinningToDestinations-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoPinningToDestinations-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- NoPinningToTaskbar-Begin -->
+## NoPinningToTaskbar
 
-<hr/>
+<!-- NoPinningToTaskbar-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoPinningToTaskbar-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoPinningToTaskbar-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/NoPinningToTaskbar
+```
+<!-- NoPinningToTaskbar-OmaUri-End -->
+
+<!-- NoPinningToTaskbar-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to control pinning programs to the Taskbar.
 
-If you enable this policy setting, users cannot change the programs currently pinned to the Taskbar. If any programs are already pinned to the Taskbar, these programs continue to show in the Taskbar. However, users cannot unpin these programs already pinned to the Taskbar, and they cannot pin new programs to the Taskbar.
+- If you enable this policy setting, users can't change the programs currently pinned to the Taskbar. If any programs are already pinned to the Taskbar, these programs continue to show in the Taskbar. However, users can't unpin these programs already pinned to the Taskbar, and they can't pin new programs to the Taskbar.
 
-If you disable or do not configure this policy setting, users can change the programs currently pinned to the Taskbar.
+- If you disable or don't configure this policy setting, users can change the programs currently pinned to the Taskbar.
+<!-- NoPinningToTaskbar-Description-End -->
 
-<!--/Description-->
+<!-- NoPinningToTaskbar-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoPinningToTaskbar-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not allow pinning programs to the Taskbar*
--   GP name: *NoPinningToTaskbar*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+<!-- NoPinningToTaskbar-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoPinningToTaskbar-DFProperties-End -->
 
-<hr/>
+<!-- NoPinningToTaskbar-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-taskbar-noremotedestinations"></a>**ADMX_Taskbar/NoRemoteDestinations**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | NoPinningToTaskbar |
+| Friendly Name | Do not allow pinning programs to the Taskbar |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoPinningToTaskbar |
+| ADMX File Name | Taskbar.admx |
+<!-- NoPinningToTaskbar-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NoPinningToTaskbar-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoPinningToTaskbar-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoPinningToTaskbar-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoRemoteDestinations-Begin -->
+## NoRemoteDestinations
 
-> [!div class = "checklist"]
-> * User
+<!-- NoRemoteDestinations-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoRemoteDestinations-Applicability-End -->
 
-<hr/>
+<!-- NoRemoteDestinations-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/NoRemoteDestinations
+```
+<!-- NoRemoteDestinations-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoRemoteDestinations-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to control displaying or tracking items in Jump Lists from remote locations.
 
 The Start Menu and Taskbar display Jump Lists off of programs. These menus include files, folders, websites and other relevant items for that program. This helps users more easily reopen their most important documents and other tasks.
 
-If you enable this policy setting, the Start Menu and Taskbar only track the files that the user opens locally on this computer. Files that the user opens over the network from remote computers are not tracked or shown in the Jump Lists. Use this setting to reduce network traffic, particularly over slow network connections.
+- If you enable this policy setting, the Start Menu and Taskbar only track the files that the user opens locally on this computer. Files that the user opens over the network from remote computers aren't tracked or shown in the Jump Lists. Use this setting to reduce network traffic, particularly over slow network connections.
 
-If you disable or do not configure this policy setting, all files that the user opens appear in the menus, including files located remotely on another computer.  Note: This setting does not prevent Windows from displaying remote files that the user has explicitly pinned to the Jump Lists. See the "Do not allow pinning items in Jump Lists" policy setting.
+- If you disable or don't configure this policy setting, all files that the user opens appear in the menus, including files located remotely on another computer.
 
+> [!NOTE]
+> This setting doesn't prevent Windows from displaying remote files that the user has explicitly pinned to the Jump Lists. See the "Do not allow pinning items in Jump Lists" policy setting.
+<!-- NoRemoteDestinations-Description-End -->
 
-<!--/Description-->
+<!-- NoRemoteDestinations-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoRemoteDestinations-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not display or track items in Jump Lists from remote locations*
--   GP name: *NoRemoteDestinations*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+<!-- NoRemoteDestinations-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoRemoteDestinations-DFProperties-End -->
 
-<hr/>
+<!-- NoRemoteDestinations-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-taskbar-nosystraysystempromotion"></a>**ADMX_Taskbar/NoSystraySystemPromotion**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | NoRemoteDestinations |
+| Friendly Name | Do not display or track items in Jump Lists from remote locations |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoRemoteDestinations |
+| ADMX File Name | Taskbar.admx |
+<!-- NoRemoteDestinations-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NoRemoteDestinations-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoRemoteDestinations-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoRemoteDestinations-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- NoSystraySystemPromotion-Begin -->
+## NoSystraySystemPromotion
 
-> [!div class = "checklist"]
-> * User
+<!-- NoSystraySystemPromotion-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- NoSystraySystemPromotion-Applicability-End -->
 
-<hr/>
+<!-- NoSystraySystemPromotion-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/NoSystraySystemPromotion
+```
+<!-- NoSystraySystemPromotion-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- NoSystraySystemPromotion-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to turn off automatic promotion of notification icons to the taskbar.
 
-If you enable this policy setting, newly added notification icons are not temporarily promoted to the Taskbar. Users can still configure icons to be shown or hidden in the Notification Control Panel.
+- If you enable this policy setting, newly added notification icons aren't temporarily promoted to the Taskbar. Users can still configure icons to be shown or hidden in the Notification Control Panel.
 
-If you disable or do not configure this policy setting, newly added notification icons are temporarily promoted to the Taskbar.
+- If you disable or don't configure this policy setting, newly added notification icons are temporarily promoted to the Taskbar.
+<!-- NoSystraySystemPromotion-Description-End -->
 
-<!--/Description-->
+<!-- NoSystraySystemPromotion-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- NoSystraySystemPromotion-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off automatic promotion of notification icons to the taskbar*
--   GP name: *NoSystraySystemPromotion*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+<!-- NoSystraySystemPromotion-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- NoSystraySystemPromotion-DFProperties-End -->
 
-<hr/>
+<!-- NoSystraySystemPromotion-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-taskbar-showwindowsstoreappsontaskbar"></a>**ADMX_Taskbar/ShowWindowsStoreAppsOnTaskbar**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | NoSystraySystemPromotion |
+| Friendly Name | Turn off automatic promotion of notification icons to the taskbar |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | NoSystraySystemPromotion |
+| ADMX File Name | Taskbar.admx |
+<!-- NoSystraySystemPromotion-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- NoSystraySystemPromotion-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- NoSystraySystemPromotion-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- NoSystraySystemPromotion-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- ShowWindowsStoreAppsOnTaskbar-Begin -->
+## ShowWindowsStoreAppsOnTaskbar
 
-> [!div class = "checklist"]
-> * User
+<!-- ShowWindowsStoreAppsOnTaskbar-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- ShowWindowsStoreAppsOnTaskbar-Applicability-End -->
 
-<hr/>
+<!-- ShowWindowsStoreAppsOnTaskbar-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/ShowWindowsStoreAppsOnTaskbar
+```
+<!-- ShowWindowsStoreAppsOnTaskbar-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- ShowWindowsStoreAppsOnTaskbar-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows users to see Windows Store apps on the taskbar.
 
-If you enable this policy setting, users will see Windows Store apps on the taskbar.
+- If you enable this policy setting, users will see Windows Store apps on the taskbar.
 
-If you disable this policy setting, users won’t see Windows Store apps on the taskbar.
+- If you disable this policy setting, users won't see Windows Store apps on the taskbar.
 
-If you don’t configure this policy setting, the default setting for the user’s device will be used, and the user can choose to change it.
+- If you don't configure this policy setting, the default setting for the user's device will be used, and the user can choose to change it.
+<!-- ShowWindowsStoreAppsOnTaskbar-Description-End -->
 
-<!--/Description-->
+<!-- ShowWindowsStoreAppsOnTaskbar-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ShowWindowsStoreAppsOnTaskbar-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Show Windows Store apps on the taskbar*
--   GP name: *ShowWindowsStoreAppsOnTaskbar*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+<!-- ShowWindowsStoreAppsOnTaskbar-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ShowWindowsStoreAppsOnTaskbar-DFProperties-End -->
 
-<hr/>
+<!-- ShowWindowsStoreAppsOnTaskbar-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-taskbar-taskbarlockall"></a>**ADMX_Taskbar/TaskbarLockAll**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | ShowWindowsStoreAppsOnTaskbar |
+| Friendly Name | Show Windows Store apps on the taskbar |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | ShowWindowsStoreAppsOnTaskbar |
+| ADMX File Name | Taskbar.admx |
+<!-- ShowWindowsStoreAppsOnTaskbar-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- ShowWindowsStoreAppsOnTaskbar-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ShowWindowsStoreAppsOnTaskbar-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- ShowWindowsStoreAppsOnTaskbar-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TaskbarLockAll-Begin -->
+## TaskbarLockAll
 
-> [!div class = "checklist"]
-> * User
+<!-- TaskbarLockAll-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TaskbarLockAll-Applicability-End -->
 
-<hr/>
+<!-- TaskbarLockAll-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarLockAll
+```
+<!-- TaskbarLockAll-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- TaskbarLockAll-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to lock all taskbar settings.
 
-If you enable this policy setting, the user cannot access the taskbar control panel. The user is also unable to resize, move or rearrange toolbars on their taskbar.
+- If you enable this policy setting, the user can't access the taskbar control panel. The user is also unable to resize, move or rearrange toolbars on their taskbar.
 
-If you disable or do not configure this policy setting, the user will be able to set any taskbar setting that is not prevented by another policy setting.
+- If you disable or don't configure this policy setting, the user will be able to set any taskbar setting that isn't prevented by another policy setting.
+<!-- TaskbarLockAll-Description-End -->
 
-<!--/Description-->
+<!-- TaskbarLockAll-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskbarLockAll-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Lock all taskbar settings*
--   GP name: *TaskbarLockAll*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+<!-- TaskbarLockAll-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TaskbarLockAll-DFProperties-End -->
 
-<hr/>
+<!-- TaskbarLockAll-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-taskbar-taskbarnoaddremovetoolbar"></a>**ADMX_Taskbar/TaskbarNoAddRemoveToolbar**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | TaskbarLockAll |
+| Friendly Name | Lock all taskbar settings |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | TaskbarLockAll |
+| ADMX File Name | Taskbar.admx |
+<!-- TaskbarLockAll-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- TaskbarLockAll-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TaskbarLockAll-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TaskbarLockAll-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TaskbarNoAddRemoveToolbar-Begin -->
+## TaskbarNoAddRemoveToolbar
 
-> [!div class = "checklist"]
-> * User
+<!-- TaskbarNoAddRemoveToolbar-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TaskbarNoAddRemoveToolbar-Applicability-End -->
 
-<hr/>
+<!-- TaskbarNoAddRemoveToolbar-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarNoAddRemoveToolbar
+```
+<!-- TaskbarNoAddRemoveToolbar-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- TaskbarNoAddRemoveToolbar-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to prevent users from adding or removing toolbars.
 
-If you enable this policy setting, the user is not allowed to add or remove any toolbars to the taskbar. Applications are not able to add toolbars either.
+- If you enable this policy setting, the user isn't allowed to add or remove any toolbars to the taskbar. Applications aren't able to add toolbars either.
 
-If you disable or do not configure this policy setting, the users and applications are able to add toolbars to the taskbar.
+- If you disable or don't configure this policy setting, the users and applications are able to add toolbars to the taskbar.
+<!-- TaskbarNoAddRemoveToolbar-Description-End -->
 
-<!--/Description-->
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Prevent users from adding or removing toolbars*
--   GP name: *TaskbarNoAddRemoveToolbar*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+<!-- TaskbarNoAddRemoveToolbar-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskbarNoAddRemoveToolbar-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
->
+<!-- TaskbarNoAddRemoveToolbar-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TaskbarNoAddRemoveToolbar-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-taskbarnodragtoolbar"></a>**ADMX_Taskbar/TaskbarNoDragToolbar**  
+<!-- TaskbarNoAddRemoveToolbar-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | TaskbarNoAddRemoveToolbar |
+| Friendly Name | Prevent users from adding or removing toolbars |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | TaskbarNoAddRemoveToolbar |
+| ADMX File Name | Taskbar.admx |
+<!-- TaskbarNoAddRemoveToolbar-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TaskbarNoAddRemoveToolbar-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TaskbarNoAddRemoveToolbar-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TaskbarNoAddRemoveToolbar-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- TaskbarNoDragToolbar-Begin -->
+## TaskbarNoDragToolbar
 
-<hr/>
+<!-- TaskbarNoDragToolbar-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TaskbarNoDragToolbar-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- TaskbarNoDragToolbar-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarNoDragToolbar
+```
+<!-- TaskbarNoDragToolbar-OmaUri-End -->
+
+<!-- TaskbarNoDragToolbar-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to prevent users from rearranging toolbars.
 
-If you enable this policy setting, users are not able to drag or drop toolbars to the taskbar.
+- If you enable this policy setting, users aren't able to drag or drop toolbars to the taskbar.
 
-If you disable or do not configure this policy setting, users are able to rearrange the toolbars on the taskbar.
+- If you disable or don't configure this policy setting, users are able to rearrange the toolbars on the taskbar.
+<!-- TaskbarNoDragToolbar-Description-End -->
 
-<!--/Description-->
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Prevent users from rearranging toolbars*
--   GP name: *TaskbarNoDragToolbar*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+<!-- TaskbarNoDragToolbar-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskbarNoDragToolbar-Editable-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+<!-- TaskbarNoDragToolbar-DFProperties-Begin -->
+**Description framework properties**:
 
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TaskbarNoDragToolbar-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-taskbarnomultimon"></a>**ADMX_Taskbar/TaskbarNoMultimon**  
+<!-- TaskbarNoDragToolbar-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | TaskbarNoDragToolbar |
+| Friendly Name | Prevent users from rearranging toolbars |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | TaskbarNoDragToolbar |
+| ADMX File Name | Taskbar.admx |
+<!-- TaskbarNoDragToolbar-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TaskbarNoDragToolbar-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TaskbarNoDragToolbar-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TaskbarNoDragToolbar-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- TaskbarNoMultimon-Begin -->
+## TaskbarNoMultimon
 
-<hr/>
+<!-- TaskbarNoMultimon-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TaskbarNoMultimon-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- TaskbarNoMultimon-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarNoMultimon
+```
+<!-- TaskbarNoMultimon-OmaUri-End -->
+
+<!-- TaskbarNoMultimon-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to prevent taskbars from being displayed on more than one monitor.
 
-If you enable this policy setting, users are not able to show taskbars on more than one display. The multiple display section is not enabled in the taskbar properties dialog.
+- If you enable this policy setting, users aren't able to show taskbars on more than one display. The multiple display section isn't enabled in the taskbar properties dialog.
 
-If you disable or do not configure this policy setting, users can show taskbars on more than one display.
+- If you disable or don't configure this policy setting, users can show taskbars on more than one display.
+<!-- TaskbarNoMultimon-Description-End -->
 
-<!--/Description-->
+<!-- TaskbarNoMultimon-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskbarNoMultimon-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Do not allow taskbars on more than one display*
--   GP name: *TaskbarNoMultimon*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+<!-- TaskbarNoMultimon-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TaskbarNoMultimon-DFProperties-End -->
 
-<hr/>
+<!-- TaskbarNoMultimon-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-taskbar-taskbarnonotification"></a>**ADMX_Taskbar/TaskbarNoNotification**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | TaskbarNoMultimon |
+| Friendly Name | Do not allow taskbars on more than one display |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | TaskbarNoMultimon |
+| ADMX File Name | Taskbar.admx |
+<!-- TaskbarNoMultimon-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- TaskbarNoMultimon-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TaskbarNoMultimon-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TaskbarNoMultimon-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TaskbarNoNotification-Begin -->
+## TaskbarNoNotification
 
-> [!div class = "checklist"]
-> * User
+<!-- TaskbarNoNotification-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TaskbarNoNotification-Applicability-End -->
 
-<hr/>
+<!-- TaskbarNoNotification-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarNoNotification
+```
+<!-- TaskbarNoNotification-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- TaskbarNoNotification-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to turn off all notification balloons.
 
-If you enable this policy setting, no notification balloons are shown to the user.
+- If you enable this policy setting, no notification balloons are shown to the user.
 
-If you disable or do not configure this policy setting, notification balloons are shown to the user.
+- If you disable or don't configure this policy setting, notification balloons are shown to the user.
+<!-- TaskbarNoNotification-Description-End -->
 
-<!--/Description-->
+<!-- TaskbarNoNotification-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskbarNoNotification-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off all balloon notifications*
--   GP name: *TaskbarNoNotification*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+<!-- TaskbarNoNotification-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TaskbarNoNotification-DFProperties-End -->
 
-<!--Policy-->
-<a href="" id="admx-taskbar-taskbarnopinnedlist"></a>**ADMX_Taskbar/TaskbarNoPinnedList**  
+<!-- TaskbarNoNotification-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--SupportedSKUs-->
+**ADMX mapping**:
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+| Name | Value |
+|:--|:--|
+| Name | TaskbarNoNotification |
+| Friendly Name | Turn off all balloon notifications |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | TaskbarNoNotification |
+| ADMX File Name | Taskbar.admx |
+<!-- TaskbarNoNotification-AdmxBacked-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TaskbarNoNotification-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TaskbarNoNotification-Examples-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TaskbarNoNotification-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- TaskbarNoPinnedList-Begin -->
+## TaskbarNoPinnedList
 
-<hr/>
+<!-- TaskbarNoPinnedList-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TaskbarNoPinnedList-Applicability-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- TaskbarNoPinnedList-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarNoPinnedList
+```
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarNoPinnedList
+```
+<!-- TaskbarNoPinnedList-OmaUri-End -->
+
+<!-- TaskbarNoPinnedList-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to remove pinned programs from the taskbar.
 
-If you enable this policy setting, pinned programs are prevented from being shown on the Taskbar. Users cannot pin programs to the Taskbar.
+- If you enable this policy setting, pinned programs are prevented from being shown on the Taskbar. Users can't pin programs to the Taskbar.
 
-If you disable or do not configure this policy setting, users can pin programs so that the program shortcuts stay on the Taskbar.
+- If you disable or don't configure this policy setting, users can pin programs so that the program shortcuts stay on the Taskbar.
+<!-- TaskbarNoPinnedList-Description-End -->
 
-<!--/Description-->
+<!-- TaskbarNoPinnedList-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskbarNoPinnedList-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Remove pinned programs from the Taskbar*
--   GP name: *TaskbarNoPinnedList*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+<!-- TaskbarNoPinnedList-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TaskbarNoPinnedList-DFProperties-End -->
 
-<hr/>
+<!-- TaskbarNoPinnedList-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-taskbar-taskbarnoredock"></a>**ADMX_Taskbar/TaskbarNoRedock**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | TaskbarNoPinnedList |
+| Friendly Name | Remove pinned programs from the Taskbar |
+| Location | Computer and User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | TaskbarNoPinnedList |
+| ADMX File Name | Taskbar.admx |
+<!-- TaskbarNoPinnedList-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- TaskbarNoPinnedList-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TaskbarNoPinnedList-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TaskbarNoPinnedList-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TaskbarNoRedock-Begin -->
+## TaskbarNoRedock
 
-> [!div class = "checklist"]
-> * User
+<!-- TaskbarNoRedock-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TaskbarNoRedock-Applicability-End -->
 
-<hr/>
+<!-- TaskbarNoRedock-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarNoRedock
+```
+<!-- TaskbarNoRedock-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- TaskbarNoRedock-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to prevent users from moving taskbar to another screen dock location.
 
-If you enable this policy setting, users are not able to drag their taskbar to another area of the monitor(s).
+- If you enable this policy setting, users aren't able to drag their taskbar to another area of the monitor(s).
 
-If you disable or do not configure this policy setting, users are able to drag their taskbar to another area of the monitor unless prevented by another policy setting.
+- If you disable or don't configure this policy setting, users are able to drag their taskbar to another area of the monitor unless prevented by another policy setting.
+<!-- TaskbarNoRedock-Description-End -->
 
-<!--/Description-->
+<!-- TaskbarNoRedock-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskbarNoRedock-Editable-End -->
 
+<!-- TaskbarNoRedock-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Prevent users from moving taskbar to another screen dock location*
--   GP name: *TaskbarNoRedock*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TaskbarNoRedock-DFProperties-End -->
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+<!-- TaskbarNoRedock-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
 
-<!--Policy-->
-<a href="" id="admx-taskbar-taskbarnoresize"></a>**ADMX_Taskbar/TaskbarNoResize**  
+| Name | Value |
+|:--|:--|
+| Name | TaskbarNoRedock |
+| Friendly Name | Prevent users from moving taskbar to another screen dock location |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | TaskbarNoRedock |
+| ADMX File Name | Taskbar.admx |
+<!-- TaskbarNoRedock-AdmxBacked-End -->
 
-<!--SupportedSKUs-->
+<!-- TaskbarNoRedock-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TaskbarNoRedock-Examples-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- TaskbarNoRedock-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TaskbarNoResize-Begin -->
+## TaskbarNoResize
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TaskbarNoResize-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TaskbarNoResize-Applicability-End -->
 
-> [!div class = "checklist"]
-> * User
+<!-- TaskbarNoResize-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarNoResize
+```
+<!-- TaskbarNoResize-OmaUri-End -->
 
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
+<!-- TaskbarNoResize-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to prevent users from resizing the taskbar.
 
-If you enable this policy setting, users are not be able to resize their taskbar.
+- If you enable this policy setting, users aren't be able to resize their taskbar.
 
-If you disable or do not configure this policy setting, users are able to resize their taskbar unless prevented by another setting.
+- If you disable or don't configure this policy setting, users are able to resize their taskbar unless prevented by another setting.
+<!-- TaskbarNoResize-Description-End -->
 
-<!--/Description-->
+<!-- TaskbarNoResize-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskbarNoResize-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Prevent users from resizing the taskbar*
--   GP name: *TaskbarNoResize*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+<!-- TaskbarNoResize-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TaskbarNoResize-DFProperties-End -->
 
-<hr/>
+<!-- TaskbarNoResize-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
-<!--Policy-->
-<a href="" id="admx-taskbar-taskbarnothumbnail"></a>**ADMX_Taskbar/TaskbarNoThumbnail**  
+**ADMX mapping**:
 
-<!--SupportedSKUs-->
+| Name | Value |
+|:--|:--|
+| Name | TaskbarNoResize |
+| Friendly Name | Prevent users from resizing the taskbar |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | TaskbarNoResize |
+| ADMX File Name | Taskbar.admx |
+<!-- TaskbarNoResize-AdmxBacked-End -->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|Yes|Yes|
-|Education|Yes|Yes|
+<!-- TaskbarNoResize-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TaskbarNoResize-Examples-End -->
 
-<!--/SupportedSKUs-->
-<hr/>
+<!-- TaskbarNoResize-End -->
 
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
+<!-- TaskbarNoThumbnail-Begin -->
+## TaskbarNoThumbnail
 
-> [!div class = "checklist"]
-> * User
+<!-- TaskbarNoThumbnail-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- TaskbarNoThumbnail-Applicability-End -->
 
-<hr/>
+<!-- TaskbarNoThumbnail-OmaUri-Begin -->
+```User
+./User/Vendor/MSFT/Policy/Config/ADMX_Taskbar/TaskbarNoThumbnail
+```
+<!-- TaskbarNoThumbnail-OmaUri-End -->
 
-<!--/Scope-->
-<!--Description-->
+<!-- TaskbarNoThumbnail-Description-Begin -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to turn off taskbar thumbnails.
 
-If you enable this policy setting, the taskbar thumbnails are not displayed and the system uses standard text for the tooltips.
+- If you enable this policy setting, the taskbar thumbnails aren't displayed and the system uses standard text for the tooltips.
 
-If you disable or do not configure this policy setting, the taskbar thumbnails are displayed.
+- If you disable or don't configure this policy setting, the taskbar thumbnails are displayed.
+<!-- TaskbarNoThumbnail-Description-End -->
 
-<!--/Description-->
+<!-- TaskbarNoThumbnail-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- TaskbarNoThumbnail-Editable-End -->
 
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Turn off taskbar thumbnails*
--   GP name: *TaskbarNoThumbnail*
--   GP path: *Start Menu and Taskbar*
--   GP ADMX file name: *Taskbar.admx*
+<!-- TaskbarNoThumbnail-DFProperties-Begin -->
+**Description framework properties**:
 
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- TaskbarNoThumbnail-DFProperties-End -->
 
-<!--/Policies-->
+<!-- TaskbarNoThumbnail-AdmxBacked-Begin -->
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
+**ADMX mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | TaskbarNoThumbnail |
+| Friendly Name | Turn off taskbar thumbnails |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | TaskbarNoThumbnail |
+| ADMX File Name | Taskbar.admx |
+<!-- TaskbarNoThumbnail-AdmxBacked-End -->
+
+<!-- TaskbarNoThumbnail-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- TaskbarNoThumbnail-Examples-End -->
+
+<!-- TaskbarNoThumbnail-End -->
+
+<!-- ADMX_Taskbar-CspMoreInfo-Begin -->
+<!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
+<!-- ADMX_Taskbar-CspMoreInfo-End -->
+
+<!-- ADMX_Taskbar-End -->
+
+## Related articles
+
+[Policy configuration service provider](policy-configuration-service-provider.md)

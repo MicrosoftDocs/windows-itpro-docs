@@ -1,25 +1,15 @@
 ---
-title: Smart Card Troubleshooting (Windows)
+title: Smart Card Troubleshooting 
 description: Describes the tools and services that smart card developers can use to help identify certificate issues with the smart card deployment.
-ms.prod: m365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-audience: ITPro
-author: dansimp
-ms.author: dansimp
-manager: dansimp
-ms.collection:
-  - M365-identity-device-management
+ms.reviewer: ardenw
+ms.collection: 
   - highpri
+  - tier2
 ms.topic: article
-ms.localizationpriority: medium
 ms.date: 09/24/2021
 ---
 
 # Smart Card Troubleshooting
-
-Applies To: Windows 10, Windows 11, Windows Server 2016 and above
 
 This article explains tools and services that smart card developers can use to help identify certificate issues with the smart card deployment.
 
