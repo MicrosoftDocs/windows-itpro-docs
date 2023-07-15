@@ -51,7 +51,7 @@ Note about Windows Server 2012 R2
   - [Step 6: Add optional components to boot image](#step-6-add-optional-components-to-boot-image)
     - [List of optional components](#list-of-optional-components)
   - [Step 7: Add cumulative update (CU) to boot image](#step-7-add-cumulative-update-cu-to-boot-image)
-  - [Step 8: Copy boot files from mounted image to ADK installation location](#step-8-copy-boot-files-from-mounted-image-to-adk-installation-location)
+  - [Step 8: Copy boot files from mounted image to ADK installation path](#step-8-copy-boot-files-from-mounted-image-to-adk-installation-path)
   - [Step 9: Perform component cleanup](#step-9-perform-component-cleanup)
   - [Step 10: Verify all desired packages have been added to boot image](#step-10-verify-all-desired-packages-have-been-added-to-boot-image)
   - [Step 11: Unmount boot image and save changes](#step-11-unmount-boot-image-and-save-changes)
@@ -87,11 +87,11 @@ Note about Windows Server 2012 R2
 
 ## Step 3: Backup existing boot image
 
-Before modifying the desired boot image, make a backup copy of the boot image. For example,
+- Before modifying the desired boot image, make a backup copy of the boot image. For example,
 
-- For the boot image included with the **Windows PE add-on for the Windows ADK**, the boot image is located at `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim`.
+  - For the boot image included with the **Windows PE add-on for the Windows ADK**, the boot image is located at `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim`.
 
-- For the boot image included with Microsoft Configuration Manager, the boot image is located at `<ConfigMgr_Install_Directory>\OSD\boot\x64\boot.wim`
+  - For the boot image included with Microsoft Configuration Manager, the boot image is located at `<ConfigMgr_Install_Directory>\OSD\boot\x64\boot.wim`
 
 ## Step 4: Mount boot image to temporary mount folder
 
@@ -111,7 +111,7 @@ For more information, see [Modify a Windows image using DISM: Mount an image](/w
 
 ## Step 5: Add drivers to boot image
 
-If needed, add any drivers to the boot image.
+- If needed, add any drivers to the boot image.
 
 ```powershell
 Command to be determined
@@ -195,9 +195,9 @@ For more information, see [Add or Remove Packages Offline Using DISM](/windows-h
 >
 > Make sure not to apply the cumulative update (CU) until all desired optional components have been installed. This will make sure that the optional components are also properly updated by the cumulative update. If in the future any additional optional components need to be added to the boot image, make sure to reapply the cumulative update.
 
-## Step 8: Copy boot files from mounted image to ADK installation location
+## Step 8: Copy boot files from mounted image to ADK installation path
 
-- Copy the updated bootmgr files from the updated boot image to the ADK installation location.
+- Copy the updated bootmgr files from the updated boot image to the ADK installation path.
 - This step doesn't update or change the boot image. However, it makes sure that the latest bootmgr files are available to the ADK when creating bootable media. In particular, this step is needed when addressing the BlackLotus UEFI bootkit vulnerability as documented in [KB5025885: How to manage the Windows Boot Manager revocations for Secure Boot changes associated with CVE-2023-24932](https://prod.support.services.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d) and [CVE-2023-24932](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24932).
 
 ```powershell
@@ -207,7 +207,7 @@ Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files 
 ```
 
 ```cmd
-CMD commands to be determined
+Command to be determined
 ```
 
 ## Step 9: Perform component cleanup
@@ -276,4 +276,4 @@ DISM.exe /Export-Image /SourceImageFile:"<Boot_image_path>\<boot_image>.wim" /So
 
 For more information, see [Modify a Windows image using DISM: Reduce the size of an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#reduce-the-size-of-an-image) and [DISM Image Management Command-Line Options: /Export-Image](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14#export-image).
 
-Once the export has completed, delete the original boot image and then rename the exported boot image with the name of the original boot image.
+- Once the export has completed, delete the original boot image and then rename the exported boot image with the name of the original boot image.
