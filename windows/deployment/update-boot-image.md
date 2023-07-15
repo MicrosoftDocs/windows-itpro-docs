@@ -52,7 +52,6 @@ Note about Windows Server 2012 R2
 - [Step 11: Unmount boot image and save changes](#step-11-unmount-boot-image-and-save-changes)
 - [Step 12: Export boot image to reduce size](#step-12-export-boot-image-to-reduce-size)
 
-
 ## Step 1: Download and install ADK
 
 - Download and install the **Windows Assessment and Deployment Kit (Windows ADK)** from [Download and install the Windows ADK](/windows-hardware/get-started/adk-install).
@@ -273,3 +272,9 @@ DISM.exe /Export-Image /SourceImageFile:"<Boot_image_path>\<boot_image>.wim" /So
 For more information, see [Modify a Windows image using DISM: Reduce the size of an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#reduce-the-size-of-an-image) and [DISM Image Management Command-Line Options: /Export-Image](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14#export-image).
 
 - Once the export has completed, delete the original boot image and then rename the exported boot image with the name of the original boot image.
+
+## Considerations for Microsoft Configuration Manager
+
+## Considerations for Microsoft Deployment Toolkit (MDT)
+
+## Considerations for Windows Deployment Services (WDS)
