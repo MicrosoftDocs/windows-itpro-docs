@@ -39,23 +39,19 @@ Note about Windows Server 2012 R2
 
 ## Steps
 
-- [Update Windows PE boot image with the latest cumulative update](#update-windows-pe-boot-image-with-the-latest-cumulative-update)
-  - [Prerequisites](#prerequisites)
-  - [Overview](#overview)
-  - [Steps](#steps)
-  - [Step 1: Download and install ADK](#step-1-download-and-install-adk)
-  - [Step 2: Download cumulative update (CU)](#step-2-download-cumulative-update-cu)
-  - [Step 3: Backup existing boot image](#step-3-backup-existing-boot-image)
-  - [Step 4: Mount boot image to temporary mount folder](#step-4-mount-boot-image-to-temporary-mount-folder)
-  - [Step 5: Add drivers to boot image](#step-5-add-drivers-to-boot-image)
-  - [Step 6: Add optional components to boot image](#step-6-add-optional-components-to-boot-image)
-    - [List of optional components](#list-of-optional-components)
-  - [Step 7: Add cumulative update (CU) to boot image](#step-7-add-cumulative-update-cu-to-boot-image)
-  - [Step 8: Copy boot files from mounted image to ADK installation path](#step-8-copy-boot-files-from-mounted-image-to-adk-installation-path)
-  - [Step 9: Perform component cleanup](#step-9-perform-component-cleanup)
-  - [Step 10: Verify all desired packages have been added to boot image](#step-10-verify-all-desired-packages-have-been-added-to-boot-image)
-  - [Step 11: Unmount boot image and save changes](#step-11-unmount-boot-image-and-save-changes)
-  - [Step 12: Export boot image to reduce size](#step-12-export-boot-image-to-reduce-size)
+- [Step 1: Download and install ADK](#step-1-download-and-install-adk)
+- [Step 2: Download cumulative update (CU)](#step-2-download-cumulative-update-cu)
+- [Step 3: Backup existing boot image](#step-3-backup-existing-boot-image)
+- [Step 4: Mount boot image to temporary mount folder](#step-4-mount-boot-image-to-temporary-mount-folder)
+- [Step 5: Add drivers to boot image](#step-5-add-drivers-to-boot-image)
+- [Step 6: Add optional components to boot image](#step-6-add-optional-components-to-boot-image)
+- [Step 7: Add cumulative update (CU) to boot image](#step-7-add-cumulative-update-cu-to-boot-image)
+- [Step 8: Copy boot files from mounted image to ADK installation path](#step-8-copy-boot-files-from-mounted-image-to-adk-installation-path)
+- [Step 9: Perform component cleanup](#step-9-perform-component-cleanup)
+- [Step 10: Verify all desired packages have been added to boot image](#step-10-verify-all-desired-packages-have-been-added-to-boot-image)
+- [Step 11: Unmount boot image and save changes](#step-11-unmount-boot-image-and-save-changes)
+- [Step 12: Export boot image to reduce size](#step-12-export-boot-image-to-reduce-size)
+
 
 ## Step 1: Download and install ADK
 
