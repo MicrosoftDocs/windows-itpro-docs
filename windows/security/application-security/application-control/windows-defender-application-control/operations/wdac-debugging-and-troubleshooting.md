@@ -132,7 +132,7 @@ Here's an example of detailed EventData from a typical WDAC enforcement mode blo
 
 #### Event 3077 - WDAC enforcement block event
 
-![Example 3077 block event for PowerShell.exe.](/windows/security/threat-protection/windows-defender-application-control/images/event-3077.png)
+![Example 3077 block event for PowerShell.exe.](../images/event-3077.png)
 
 | Element name | Description |
 | ----- | ----- |
@@ -160,7 +160,7 @@ Here's an example of detailed EventData from a typical WDAC enforcement mode blo
 
 #### Event 3089 - WDAC signature information event
 
-![Example 3089 signature information event for PowerShell.exe.](/windows/security/threat-protection/windows-defender-application-control/images/event-3089.png)
+![Example 3089 signature information event for PowerShell.exe.](../images/event-3089.png)
 
 | Element name | Description |
 | ----- | ----- |

@@ -27,7 +27,7 @@ ms.topic: article
 - Windows Server 2019 and above
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
 Windows Defender Application Control (WDAC) includes an option called **managed installer** that helps balance security and manageability when enforcing application control policies. This option lets you automatically allow applications installed by a designated software distribution solution, such as Microsoft Configuration Manager (MEMCM) or Microsoft Intune.
 
@@ -230,15 +230,15 @@ Below are steps to create a WDAC policy that allows Windows to boot and enables 
     Set-RuleOption -FilePath <XML filepath> -Option 13
     ```
 
-4. Deploy your WDAC policy. See [Deploying Windows Defender Application Control (WDAC) policies](windows-defender-application-control-deployment-guide.md).
+4. Deploy your WDAC policy. See [Deploying Windows Defender Application Control (WDAC) policies](../deployment/wdac-deployment-guide.md).
 
 > [!NOTE]
 > Your WDAC policy must include rules for all system/boot components, kernel drivers, and any other authorized applications that can't be deployed through a managed installer.
 
 ## Remove Managed Installer feature
 
-To remove the Managed Installer feature from the device, you'll need to remove the Managed Installer AppLocker policy from the device by following the instructions at [Delete an AppLocker rule: Clear AppLocker policies on a single system or remote systems](applocker/delete-an-applocker-rule.md#to-clear-applocker-policies-on-a-single-system-or-remote-systems).
+To remove the Managed Installer feature from the device, you'll need to remove the Managed Installer AppLocker policy from the device by following the instructions at [Delete an AppLocker rule: Clear AppLocker policies on a single system or remote systems](../applocker/delete-an-applocker-rule.md#to-clear-applocker-policies-on-a-single-system-or-remote-systems).
 
 ## Related articles
 
-- [Managed installer and ISG technical reference and troubleshooting guide](configure-wdac-managed-installer.md)
+- [Managed installer and ISG technical reference and troubleshooting guide](../operations/configure-wdac-managed-installer.md)

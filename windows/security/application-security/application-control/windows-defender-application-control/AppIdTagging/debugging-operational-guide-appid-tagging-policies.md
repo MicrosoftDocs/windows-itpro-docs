@@ -29,7 +29,7 @@ ms.topic: article
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
-After deployment of the WDAC AppId Tagging policy, WDAC will log a 3099 policy deployed event in the [Event Viewer logs](../event-id-explanations.md). You first should ensure that the policy has been successfully deployed onto the system by verifying the presence of the 3099 event. 
+After deployment of the WDAC AppId Tagging policy, WDAC will log a 3099 policy deployed event in the [Event Viewer logs](../operations/event-id-explanations.md). You first should ensure that the policy has been successfully deployed onto the system by verifying the presence of the 3099 event. 
 
 ## Verifying Tags on Running Processes
 

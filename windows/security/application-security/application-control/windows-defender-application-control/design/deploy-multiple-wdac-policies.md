@@ -27,7 +27,7 @@ ms.topic: article
 -   Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
 Prior to Windows 10 1903, Windows Defender Application Control only supported a single active policy on a system at any given time. This limited customers in situations where multiple policies with different intents would be useful. Beginning with Windows 10 version 1903, WDAC supports up to 32 active policies on a device at once in order to enable the following scenarios:
 
@@ -116,4 +116,3 @@ For more information on deploying multiple policies, optionally using Microsoft 
 * If the maximum number of policies is exceeded, the device may bluescreen referencing ci.dll with a bug check value of 0x0000003b. 
 * If policies are loaded without requiring a reboot such as `PS_UpdateAndCompareCIPolicy`, they will still count towards this limit. 
 * This may pose an especially large challenge if the value of `{PolicyGUID}.cip` changes between releases. It may result in a long window between a change and the resultant reboot.
-

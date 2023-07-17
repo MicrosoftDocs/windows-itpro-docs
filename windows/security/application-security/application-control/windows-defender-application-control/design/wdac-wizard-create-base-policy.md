@@ -27,9 +27,9 @@ ms.technology: itpro-security
 - Windows Server 2016 and above
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
-When creating policies for use with Windows Defender Application Control (WDAC), it's recommended to start with a template policy, and then add or remove rules to suit your application control scenario. For this reason, the WDAC Wizard offers three template policies to start from and customize during the base policy creation workflow. Prerequisite information about application control can be accessed through the [WDAC design guide](windows-defender-application-control-design-guide.md). This page outlines the steps to create a new application control policy from a template, configure the policy options, and the signer and file rules.
+When creating policies for use with Windows Defender Application Control (WDAC), it's recommended to start with a template policy, and then add or remove rules to suit your application control scenario. For this reason, the WDAC Wizard offers three template policies to start from and customize during the base policy creation workflow. Prerequisite information about application control can be accessed through the [WDAC design guide](wdac-design-guide.md). This page outlines the steps to create a new application control policy from a template, configure the policy options, and the signer and file rules.
 
 ## Template Base Policies
 
@@ -39,13 +39,13 @@ Each of the template policies has a unique set of policy allowlist rules that af
 |---------------------------------|-------------------------------------------------------------------|
 | **Default Windows Mode**      | Default Windows mode authorizes the following components: </br><ul><li>Windows operating components - any binary installed by a fresh install of Windows</li><li>Apps installed from the Microsoft Store</li><li>Microsoft Office365 apps, OneDrive, and Microsoft Teams</li><li>Third-party [Windows Hardware Compatible drivers](/windows-hardware/drivers/install/whql-release-signature)</li></ul>|
 | **Allow Microsoft Mode**      | Allow mode authorizes the following components: </br><ul><li>Windows operating components - any binary installed by a fresh install of Windows</li><li>Apps installed from the Microsoft Store</li><li>Microsoft Office365 apps, OneDrive, and Microsoft Teams</li><li>Third-party [Windows Hardware Compatible drivers](/windows-hardware/drivers/install/whql-release-signature)</li><li>*All Microsoft-signed software*</li></ul>|
-| **Signed and Reputable Mode** | Signed and Reputable mode authorizes the following components: </br><ul><li>Windows operating components - any binary installed by a fresh install of Windows</li><li>Apps installed from the Microsoft Store</li><li>Microsoft Office365 apps, OneDrive, and Microsoft Teams</li><li>Third-party [Windows Hardware Compatible drivers](/windows-hardware/drivers/install/whql-release-signature)</li><li>All Microsoft-signed software</li><li>*Files with good reputation per [Microsoft Defender's Intelligent Security Graph technology](use-windows-defender-application-control-with-intelligent-security-graph.md)*</li></ul>|
+| **Signed and Reputable Mode** | Signed and Reputable mode authorizes the following components: </br><ul><li>Windows operating components - any binary installed by a fresh install of Windows</li><li>Apps installed from the Microsoft Store</li><li>Microsoft Office365 apps, OneDrive, and Microsoft Teams</li><li>Third-party [Windows Hardware Compatible drivers](/windows-hardware/drivers/install/whql-release-signature)</li><li>All Microsoft-signed software</li><li>*Files with good reputation per [Microsoft Defender's Intelligent Security Graph technology](use-wdac-with-intelligent-security-graph.md)*</li></ul>|
 
 *Italicized content denotes the changes in the current policy with respect to the policy prior.*
 
 More information about the Default Windows Mode and Allow Microsoft Mode policies can be accessed through the [Example Windows Defender Application Control base policies article](example-wdac-base-policies.md).
 
-![Selecting a base template for the policy.](images/wdac-wizard-template-selection.png)
+![Selecting a base template for the policy.](../images/wdac-wizard-template-selection.png)
 
 Once the base template is selected, give the policy a name and choose where to save the application control policy on disk.
 
@@ -62,7 +62,7 @@ The following table has a description of each policy rule, beginning with the le
 | **Advanced Boot Options Menu** | The F8 preboot menu is disabled by default for all Windows Defender Application Control policies. Setting this rule option allows the F8 menu to appear to physically present users. |
 | **Allow Supplemental Policies** | Use this option on a base policy to allow supplemental policies to expand it. |
 | **Disable Script Enforcement** | This option disables script enforcement options. Unsigned PowerShell scripts and interactive PowerShell are no longer restricted to [Constrained Language Mode](/powershell/module/microsoft.powershell.core/about/about_language_modes). NOTE: This option is required to run HTA files, and is only supported with the Windows 10 May 2019 Update (1903) and higher. Using it on earlier versions of Windows 10 isn't supported and may have unintended results. |
-|**[Hypervisor-protected code integrity (HVCI)](../../hardware-security/enable-virtualization-based-protection-of-code-integrity.md)**| When enabled, policy enforcement uses virtualization-based security to run the code integrity service inside a secure environment. HVCI provides stronger protections against kernel malware.|
+|**[Hypervisor-protected code integrity (HVCI)](../../../../hardware-security/enable-virtualization-based-protection-of-code-integrity.md)**| When enabled, policy enforcement uses virtualization-based security to run the code integrity service inside a secure environment. HVCI provides stronger protections against kernel malware.|
 | **Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by the Microsoft Intelligent Security Graph (ISG). |
 | **Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as Microsoft Configuration Manager, that has been defined as a managed installer. |
 | **Require WHQL** | By default, legacy drivers that aren't Windows Hardware Quality Labs (WHQL) signed are allowed to execute. Enabling this rule requires that every executed driver is WHQL signed and removes legacy driver support. Henceforth, every new Windows–compatible driver must be WHQL certified. |
@@ -71,7 +71,7 @@ The following table has a description of each policy rule, beginning with the le
 | **User Mode Code Integrity** | Windows Defender Application Control policies restrict both kernel-mode and user-mode binaries. By default, only kernel-mode binaries are restricted. Enabling this rule option validates user mode executables and scripts. |
 
 > [!div class="mx-imgBorder"]
-> ![Rule options UI for Windows Allowed mode policy.](images/wdac-wizard-rule-options-UI-advanced-collapsed.png)
+> ![Rule options UI for Windows Allowed mode policy.](../images/wdac-wizard-rule-options-UI-advanced-collapsed.png)
 
 ### Advanced Policy Rules Description
 
@@ -86,7 +86,7 @@ Selecting the **+ Advanced Options** label shows another column of policy rules,
 | **Invalidate EAs on Reboot** | When the Intelligent Security Graph option (14) is used, WDAC sets an extended file attribute that indicates that the file was authorized to run. This option causes WDAC to periodically revalidate the reputation for files authorized by the ISG.|
 | **Require EV Signers** | This option isn't currently supported. |
 
-![Rule options UI for Windows Allowed mode.](images/wdac-wizard-rule-options-UI.png)
+![Rule options UI for Windows Allowed mode.](../images/wdac-wizard-rule-options-UI.png)
 
 > [!NOTE]
 > We recommend that you **enable Audit Mode** initially because it allows you to test new Windows Defender Application Control policies before you enforce them. With audit mode, no application is blocked—instead the policy logs an event whenever an application outside the policy is started. For this reason, all templates have Audit Mode enabled by default.
@@ -107,7 +107,7 @@ The Publisher file rule type uses properties in the code signing certificate cha
 | **File name** | FilePublisher | Most specific. Combination of the file name, publisher, and PCA certificate and a minimum version number. Files from the publisher with the specified name and greater or equal to the specified version are affected. |
 
 
-![Custom filepublisher file rule creation.](images/wdac-wizard-custom-publisher-rule.png)
+![Custom filepublisher file rule creation.](../images/wdac-wizard-custom-publisher-rule.png)
 
 ### Filepath Rules
 
@@ -125,7 +125,7 @@ The Wizard supports the creation of [file name rules](select-types-of-rules-to-c
 | **Internal name** | Specifies the internal name of the binary. |
 
 > [!div class="mx-imgBorder"]
-> ![Custom file attributes rule.](images/wdac-wizard-custom-file-attribute-rule.png)
+> ![Custom file attributes rule.](../images/wdac-wizard-custom-file-attribute-rule.png)
 
 ### File Hash Rules
 

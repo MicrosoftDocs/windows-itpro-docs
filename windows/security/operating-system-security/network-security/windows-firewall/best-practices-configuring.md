@@ -19,7 +19,7 @@ network. These recommendations cover a wide range of deployments including home
 networks and enterprise desktop/server systems.
 
 To open Windows Firewall, go to the **Start** menu, select **Run**,
-type **WF.msc**, and then select **OK**. See also [Open Windows Firewall](./open-windows-firewall-with-advanced-security.md).
+type **WF.msc**, and then select **OK**. See also [Open Windows Firewall](open-windows-firewall-with-advanced-security.md).
 
 ## Keep default settings
 
@@ -45,7 +45,7 @@ Firewall whenever possible. These settings have been designed to secure your dev
 > [!IMPORTANT]
 > To maintain maximum security, do not change the default Block setting for inbound connections.
 
-For more on configuring basic firewall settings, see [Turn on Windows Firewall and Configure Default Behavior](./turn-on-windows-firewall-and-configure-default-behavior.md) and [Checklist: Configuring Basic Firewall Settings](./checklist-configuring-basic-firewall-settings.md).
+For more on configuring basic firewall settings, see [Turn on Windows Firewall and Configure Default Behavior](turn-on-windows-firewall-and-configure-default-behavior.md) and [Checklist: Configuring Basic Firewall Settings](checklist-configuring-basic-firewall-settings.md).
 
 ## Understand rule precedence for inbound rules
 
@@ -58,7 +58,7 @@ This rule-adding task can be accomplished by right-clicking either **Inbound Rul
 *Figure 3: Rule Creation Wizard*
 
 > [!NOTE]
->This article does not cover step-by-step rule configuration. See the [Windows Firewall with Advanced Security Deployment Guide](./windows-firewall-with-advanced-security-deployment-guide.md) for general guidance on policy creation.
+>This article does not cover step-by-step rule configuration. See the [Windows Firewall with Advanced Security Deployment Guide](windows-firewall-with-advanced-security-deployment-guide.md) for general guidance on policy creation.
 
 In many cases, allowing specific types of inbound traffic will be required for applications to function in the network. Administrators should keep the following rule precedence behaviors in mind when allowing these inbound exceptions.
 
@@ -108,7 +108,7 @@ Creation of application rules at runtime can also be prohibited by administrator
 
 *Figure 4: Dialog box to allow access*
 
-See also [Checklist: Creating Inbound Firewall Rules](./checklist-creating-inbound-firewall-rules.md).
+See also [Checklist: Creating Inbound Firewall Rules](checklist-creating-inbound-firewall-rules.md).
 
 ## Establish local policy merge and application rules
 
@@ -202,7 +202,7 @@ What follows are a few general guidelines for configuring outbound rules.
 - It's recommended to Allow Outbound by default for most deployments for the sake of simplification around app deployments, unless the enterprise prefers tight security controls over ease-of-use
 - In high security environments, an inventory of all enterprise-spanning apps must be taken and logged by the administrator or administrators. Records must include whether an app used requires network connectivity. Administrators will need to create new rules specific to each app that needs network connectivity and push those rules centrally, via group policy (GP), Mobile Device Management (MDM), or both (for hybrid or co-management environments)
 
-For tasks related to creating outbound rules, see [Checklist: Creating Outbound Firewall Rules](./checklist-creating-outbound-firewall-rules.md).
+For tasks related to creating outbound rules, see [Checklist: Creating Outbound Firewall Rules](checklist-creating-outbound-firewall-rules.md).
 
 ## Document your changes
 

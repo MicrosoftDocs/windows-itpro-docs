@@ -27,7 +27,7 @@ ms.topic: article
 - Windows Server 2016 and later
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [WDAC feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [WDAC feature availability](../feature-availability.md).
 
 Windows Defender Application Control (WDAC) can control what runs on Windows 10, Windows 11, and Windows Server 2016 and later, by setting policies that specify whether a driver or application is trusted. A policy includes *policy rules* that control options such as audit mode, and *file rules* (or *file rule levels*) that specify how applications are identified and trusted.
 
@@ -117,7 +117,7 @@ As part of normal operations, they'll eventually install software updates, or pe
 
 ## File rule precedence order
 
-WDAC has a built-in file rule conflict logic that translates to precedence order. It first processes all explicit deny rules it finds. Then, it processes any explicit allow rules. If no deny or allow rule exists, WDAC checks for a [Managed Installer claim](deployment/deploy-wdac-policies-with-memcm.md) if allowed by the policy. Lastly, WDAC falls back to the [ISG](use-windows-defender-application-control-with-intelligent-security-graph.md) if allowed by the policy.
+WDAC has a built-in file rule conflict logic that translates to precedence order. It first processes all explicit deny rules it finds. Then, it processes any explicit allow rules. If no deny or allow rule exists, WDAC checks for a [Managed Installer claim](../deployment/deploy-wdac-policies-with-memcm.md) if allowed by the policy. Lastly, WDAC falls back to the [ISG](use-wdac-with-intelligent-security-graph.md) if allowed by the policy.
 
 > [!NOTE]
 > To make it easier to reason over your WDAC policies, we recommend maintaining separate ALLOW and DENY policies on Windows versions that support [multiple WDAC policies](/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies).

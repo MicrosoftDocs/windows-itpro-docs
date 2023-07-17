@@ -32,7 +32,7 @@ Similar to Windows Defender Application Control (WDAC) policies, WDAC AppId tagg
 
 ## Deploy AppId tagging policies with MDM
 
-Custom AppId tagging policies can be deployed to endpoints using [the OMA-URI feature in MDM](../deployment/deploy-windows-defender-application-control-policies-using-intune.md#deploy-wdac-policies-with-custom-oma-uri).
+Custom AppId tagging policies can be deployed to endpoints using [the OMA-URI feature in MDM](../deployment/deploy-wdac-policies-using-intune.md#deploy-wdac-policies-with-custom-oma-uri).
 
 ## Deploy AppId tagging policies with Configuration Manager
 

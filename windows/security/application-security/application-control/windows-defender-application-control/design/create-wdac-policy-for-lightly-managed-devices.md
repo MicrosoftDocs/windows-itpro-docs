@@ -27,14 +27,14 @@ ms.technology: itpro-security
 - Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
 This section outlines the process to create a Windows Defender Application Control (WDAC) policy for **lightly managed devices** within an organization. Typically, organizations that are new to application control will be most successful if they start with a permissive policy like the one described in this article. Organizations can choose to harden the policy over time to achieve a stronger overall security posture on their WDAC-managed devices as described in later articles.
 
 > [!NOTE]
 > Some of the Windows Defender Application Control options described in this topic are only available on Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's WDAC policies, consider whether your managed clients can use all or some of these features and assess the impact for any features that may be unavailable on your clients. You may need to adapt this guidance to meet your specific organization's needs.
 
-As in [Windows Defender Application Control deployment in different scenarios: types of devices](types-of-devices.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
+As in [Windows Defender Application Control deployment in different scenarios: types of devices](common-wdac-use-cases.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
 
 **Alice Pena** is the IT team lead tasked with the rollout of WDAC. Lamna currently has loose application usage policies and a culture of maximum app flexibility for users. So, Alice knows she'll need to take an incremental approach to application control and use different policies for different workloads.
 
@@ -97,7 +97,7 @@ Alice follows these steps to complete this task:
 1. Modify the policy to remove unsupported rule:
 
     > [!NOTE]
-    > `SmartAppControl.xml` is available on Windows 11 version 22H2 and later. This policy includes "Enabled:Conditional Windows Lockdown Policy" rule that is unsupported for enterprise WDAC policies and must be removed. For more information, see [WDAC and Smart App Control](windows-defender-application-control.md#wdac-and-smart-app-control). If you are using an example policy other than `SmartAppControl.xml`, skip this step.
+    > `SmartAppControl.xml` is available on Windows 11 version 22H2 and later. This policy includes "Enabled:Conditional Windows Lockdown Policy" rule that is unsupported for enterprise WDAC policies and must be removed. For more information, see [WDAC and Smart App Control](../wdac.md#wdac-and-smart-app-control). If you are using an example policy other than `SmartAppControl.xml`, skip this step.
 
     ```powershell
     [xml]$xml = Get-Content $LamnaPolicy
@@ -191,7 +191,7 @@ In order to minimize user productivity impact, Alice has defined a policy that m
 
 - **Intelligent Security Graph (ISG)**
 
-  See [security considerations with the Intelligent Security Graph](use-windows-defender-application-control-with-intelligent-security-graph.md#security-considerations-with-the-isg-option)
+  See [security considerations with the Intelligent Security Graph](use-wdac-with-intelligent-security-graph.md#security-considerations-with-the-isg-option)
 
   Possible mitigations:
 
@@ -227,4 +227,4 @@ In order to minimize user productivity impact, Alice has defined a policy that m
 ## Up next
 
 - [Create a Windows Defender Application Control policy for fully managed devices](create-wdac-policy-for-fully-managed-devices.md)
-- [Prepare to deploy Windows Defender Application Control policies](windows-defender-application-control-deployment-guide.md)
+- [Prepare to deploy Windows Defender Application Control policies](../deployment/wdac-deployment-guide.md)

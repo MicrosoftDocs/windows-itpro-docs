@@ -21,7 +21,7 @@ ms.technology: itpro-security
 - Windows Server 2016 and above
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. For more information, see [Windows Defender Application Control feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. For more information, see [Windows Defender Application Control feature availability](../feature-availability.md).
 
 ## What is code signing and why is it important?
 
@@ -38,7 +38,7 @@ You can use catalog files to easily add a signature to an existing application w
 > [!NOTE]
 > Since catalogs identify the files they sign by hash, any change to the file may invalidate its signature. You will need to deploy updated catalog signatures any time the application is updated. Integrating code signing with your app development or app deployment processes is generally the best approach. Be aware of self-updating apps, as their app binaries may change without your knowledge.
 
-To learn how to create and manage catalog files for existing apps, see [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-windows-defender-application-control.md).
+To learn how to create and manage catalog files for existing apps, see [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-wdac.md).
 
 ## Signed WDAC policies
 
@@ -51,5 +51,5 @@ For more information on using signed policies, see [Use signed policies to prote
 Some ways to obtain code signing certificates for your own use, include:
 
 - Purchase a code signing certificate from one of the [Microsoft Trusted Root Program participants](/security/trusted-root/participants-list).
-- To use your own digital certificate or public key infrastructure (PKI) to issue code signing certificates, see [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md).
+- To use your own digital certificate or public key infrastructure (PKI) to issue code signing certificates, see [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-wdac.md).
 - Use Microsoft's [Azure Code Signing (ACS) service](https://aka.ms/AzureCodeSigning).

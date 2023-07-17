@@ -74,7 +74,7 @@ This category includes the following subcategories:
 - [Audit Process Creation](audit-process-creation.md)
 - [Audit Process Termination](audit-process-termination.md)
 - [Audit RPC Events](audit-rpc-events.md)
-- [Audit Token Right Adjusted](./audit-token-right-adjusted.md)
+- [Audit Token Right Adjusted](audit-token-right-adjusted.md)
 
 ## DS Access
 

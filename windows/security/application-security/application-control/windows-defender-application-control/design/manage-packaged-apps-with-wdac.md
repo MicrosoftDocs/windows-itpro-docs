@@ -27,7 +27,7 @@ ms.topic: article
 - Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [WDAC feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [WDAC feature availability](../feature-availability.md).
 
 This article for IT professionals describes concepts and lists procedures to help you manage packaged apps with Windows Defender Application Control (WDAC) as part of your overall application control strategy.
 
@@ -96,7 +96,7 @@ Use the following steps to create a WDAC PFN rule for an app that is installed o
 7. Select **Create Rule**.
 8. Create any other rules desired, then complete the Wizard.
 
-![Create PFN rule from WDAC Wizard](images/wdac-wizard-custom-pfn-rule.png)
+![Create PFN rule from WDAC Wizard](../images/wdac-wizard-custom-pfn-rule.png)
 
 ##### Create a PFN rule using a custom string
 
@@ -109,4 +109,4 @@ Use the following steps to create a PFN rule with a custom string value:
 5. Select **Create Rule**.
 6. Create any other rules desired, then complete the Wizard.
 
-![Create PFN rule with custom string from WDAC Wizard](images/wdac-wizard-custom-manual-pfn-rule.png)
+![Create PFN rule with custom string from WDAC Wizard](../images/wdac-wizard-custom-manual-pfn-rule.png)

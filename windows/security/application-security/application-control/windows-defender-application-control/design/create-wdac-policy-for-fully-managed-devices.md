@@ -27,14 +27,14 @@ ms.technology: itpro-security
 - Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
 This section outlines the process to create a Windows Defender Application Control (WDAC) policy for **fully managed devices** within an organization. The key difference between this scenario and [lightly managed devices](create-wdac-policy-for-lightly-managed-devices.md) is that all software deployed to a fully managed device is managed by IT and users of the device can't install arbitrary apps. Ideally, all apps are deployed using a software distribution solution, such as Microsoft Intune. Additionally, users on fully managed devices should ideally run as standard user and only authorized IT pros have administrative access.
 
 > [!NOTE]
 > Some of the Windows Defender Application Control options described in this topic are only available on Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's WDAC policies, consider whether your managed clients can use all or some of these features and assess the impact for any features that may be unavailable on your clients. You may need to adapt this guidance to meet your specific organization's needs.
 
-As described in [common Windows Defender Application Control deployment scenarios](types-of-devices.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
+As described in [common Windows Defender Application Control deployment scenarios](common-wdac-use-cases.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
 
 **Alice Pena** is the IT team lead tasked with the rollout of WDAC.
 
@@ -163,5 +163,5 @@ Alice has defined a policy for Lamna's fully managed devices that makes some tra
 
 ## Up next
 
-- [Create a Windows Defender Application Control policy for fixed-workload devices using a reference computer](create-initial-default-policy.md)
-- [Prepare to deploy Windows Defender Application Control policies](windows-defender-application-control-deployment-guide.md)
+- [Create a Windows Defender Application Control policy for fixed-workload devices using a reference computer](create-wdac-policy-using-reference-computer.md)
+- [Prepare to deploy Windows Defender Application Control policies](../deployment/wdac-deployment-guide.md)

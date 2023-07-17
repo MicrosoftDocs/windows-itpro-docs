@@ -70,7 +70,7 @@ Just as there are differences in managing each rule collection, you need to mana
 
 1.  Gather information about which Packaged apps are running in your environment. For information about how to gather this information, see [Create list of apps deployed to each business group](create-list-of-applications-deployed-to-each-business-group.md).
 
-2.  Create AppLocker rules for specific packaged apps based on your policy strategies. For more information, see [Create a rule for packaged apps](create-a-rule-for-packaged-apps.md) and [Understanding AppLocker default rules](./understanding-applocker-default-rules.md).
+2.  Create AppLocker rules for specific packaged apps based on your policy strategies. For more information, see [Create a rule for packaged apps](create-a-rule-for-packaged-apps.md) and [Understanding AppLocker default rules](understanding-applocker-default-rules.md).
 
 3.  Continue to update the AppLocker policies as new package apps are introduced into your environment. To do this update, see [Add rules for packaged apps to existing AppLocker rule-set](add-rules-for-packaged-apps-to-existing-applocker-rule-set.md).
 

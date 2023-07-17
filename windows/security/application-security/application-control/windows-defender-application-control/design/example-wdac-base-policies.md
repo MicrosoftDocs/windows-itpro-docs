@@ -21,7 +21,7 @@ ms.technology: itpro-security
 - Windows Server 2016 and above
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. For more information, see [Windows Defender Application Control feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. For more information, see [Windows Defender Application Control feature availability](../feature-availability.md).
 
 When you create policies for use with Windows Defender Application Control (WDAC), start from an existing base policy and then add or remove rules to build your own custom policy. Windows includes several example policies that you can use. These example policies are provided "as-is". You should thoroughly test the policies you deploy using safe deployment methods.
 

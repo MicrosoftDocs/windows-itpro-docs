@@ -21,9 +21,9 @@ ms.topic: overview
 - Windows Server 2016 and above
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
-You should now have one or more Windows Defender Application Control (WDAC) policies ready to deploy. If you haven't yet completed the steps described in the [WDAC Design Guide](windows-defender-application-control-design-guide.md), do so now before proceeding.
+You should now have one or more Windows Defender Application Control (WDAC) policies ready to deploy. If you haven't yet completed the steps described in the [WDAC Design Guide](../design/wdac-design-guide.md), do so now before proceeding.
 
 ## Convert your WDAC policy XML to binary
 
@@ -56,13 +56,13 @@ All Windows Defender Application Control policy changes should be deployed in au
 ## Choose how to deploy WDAC policies
 
 > [!IMPORTANT]
-> Due to a known issue, you should always activate new **signed** WDAC Base policies with a reboot on systems with [**memory integrity**](../../hardware-security/enable-virtualization-based-protection-of-code-integrity.md) enabled. We recommend [deploying via script](deployment/deploy-wdac-policies-with-script.md) in this case.
+> Due to a known issue, you should always activate new **signed** WDAC Base policies with a reboot on systems with [**memory integrity**](../../../../hardware-security/enable-virtualization-based-protection-of-code-integrity.md) enabled. We recommend [deploying via script](deploy-wdac-policies-with-script.md) in this case.
 >
 > This issue does not affect updates to signed Base policies that are already active on the system, deployment of unsigned policies, or deployment of supplemental policies (signed or unsigned). It also does not affect deployments to systems that are not running memory integrity.
 
 There are several options to deploy Windows Defender Application Control policies to managed endpoints, including:
 
-- [Deploy using a Mobile Device Management (MDM) solution](deployment/deploy-windows-defender-application-control-policies-using-intune.md), such as Microsoft Intune
-- [Deploy using Microsoft Configuration Manager](deployment/deploy-wdac-policies-with-memcm.md)
-- [Deploy via script](deployment/deploy-wdac-policies-with-script.md)
-- [Deploy via group policy](deployment/deploy-windows-defender-application-control-policies-using-group-policy.md)
+- [Deploy using a Mobile Device Management (MDM) solution](deploy-wdac-policies-using-intune.md), such as Microsoft Intune
+- [Deploy using Microsoft Configuration Manager](deploy-wdac-policies-with-memcm.md)
+- [Deploy via script](deploy-wdac-policies-with-script.md)
+- [Deploy via group policy](deploy-wdac-policies-using-group-policy.md)

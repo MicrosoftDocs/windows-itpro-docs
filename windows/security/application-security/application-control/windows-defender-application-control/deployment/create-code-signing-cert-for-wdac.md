@@ -27,9 +27,9 @@ ms.technology: itpro-security
 - Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
-As you deploy Windows Defender Application Control (WDAC), you might need to sign catalog files or WDAC policies internally. To do this signing, you'll either need a publicly issued code signing certificate or an internal CA. If you've purchased a code-signing certificate, you can skip this article, and instead follow other articles listed in the [Windows Defender Application Control Deployment Guide](windows-defender-application-control-deployment-guide.md).
+As you deploy Windows Defender Application Control (WDAC), you might need to sign catalog files or WDAC policies internally. To do this signing, you'll either need a publicly issued code signing certificate or an internal CA. If you've purchased a code-signing certificate, you can skip this article, and instead follow other articles listed in the [Windows Defender Application Control Deployment Guide](wdac-deployment-guide.md).
 
 If you have an internal CA, complete these steps to create a code signing certificate.
 
@@ -45,7 +45,7 @@ If you have an internal CA, complete these steps to create a code signing certif
 
 2. When connected, right-click **Certificate Templates**, and then select **Manage** to open the Certification Templates Console.
 
-    ![CA snap-in showing Certificate Templates.](images/dg-fig27-managecerttemp.png)
+    ![CA snap-in showing Certificate Templates.](../images/dg-fig27-managecerttemp.png)
 
     Figure 1. Manage the certificate templates
 
@@ -61,7 +61,7 @@ If you have an internal CA, complete these steps to create a code signing certif
 
 8. In the **Edit Basic Constraints Extension** dialog box, select **Enable this extension**, as shown in Figure 2.
 
-    ![Edit Basic Constraints Extension.](images/dg-fig29-enableconstraints.png)
+    ![Edit Basic Constraints Extension.](../images/dg-fig29-enableconstraints.png)
 
     Figure 2. Select constraints on the new template
 
@@ -77,7 +77,7 @@ When this certificate template has been created, you must publish it to the CA p
 
 1. In the Certification Authority MMC snap-in, right-click **Certification Templates**, point to **New**, and then select **Certificate Template to Issue**, as shown in Figure 3.
 
-    ![Select Certificate Template to Issue.](images/dg-fig30-selectnewcert.png)
+    ![Select Certificate Template to Issue.](../images/dg-fig30-selectnewcert.png)
 
     Figure 3. Select the new certificate template to issue
 
@@ -95,7 +95,7 @@ Now that the template is available to be issued, you must request one from the c
 
 4. In the **Request Certificate** list, select your newly created code signing certificate, and then select the blue text that requests additional information, as shown in Figure 4.
 
-    ![Request Certificates: more information required.](images/dg-fig31-getmoreinfo.png)
+    ![Request Certificates: more information required.](../images/dg-fig31-getmoreinfo.png)
 
     Figure 4. Get more information for your code signing certificate
 

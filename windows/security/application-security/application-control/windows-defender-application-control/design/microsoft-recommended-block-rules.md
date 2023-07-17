@@ -21,7 +21,7 @@ ms.topic: reference
 - Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [WDAC feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [WDAC feature availability](../feature-availability.md).
 
 Members of the security community<sup>*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass WDAC.
 
@@ -1540,4 +1540,4 @@ The blocklist policy that follows includes "Allow all" rules for both kernel and
 
 ## More information
 
-- [Merge WDAC policies](merge-windows-defender-application-control-policies.md)
+- [Merge WDAC policies](../deployment/merge-wdac-policies.md)

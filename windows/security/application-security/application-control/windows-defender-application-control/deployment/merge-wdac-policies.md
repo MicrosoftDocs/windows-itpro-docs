@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 -   Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
 This article shows how to merge multiple policy XML files together and how to merge rules directly into a policy. Windows Defender Application Control deployments often include a few base policies and optional supplemental policies for specific use cases.
 
@@ -33,7 +33,7 @@ This article shows how to merge multiple policy XML files together and how to me
 
 ## Merge multiple WDAC policy XML files together
 
-There are many scenarios where you may want to merge two or more policy files together. For example, if you [use audit events to create Windows Defender Application Control policy rules](audit-windows-defender-application-control-policies.md), you can merge those rules with your existing WDAC base policy. To merge the two WDAC policies referenced in that article, complete the following steps in an elevated Windows PowerShell session.
+There are many scenarios where you may want to merge two or more policy files together. For example, if you [use audit events to create Windows Defender Application Control policy rules](audit-wdac-policies.md), you can merge those rules with your existing WDAC base policy. To merge the two WDAC policies referenced in that article, complete the following steps in an elevated Windows PowerShell session.
 
 1. Initialize the variables that will be used:
 
@@ -57,7 +57,7 @@ There are many scenarios where you may want to merge two or more policy files to
 
 Besides merging multiple policy XML files, you can also merge rules created with the New-CIPolicyRule cmdlet directly into an existing WDAC policy XML file. Directly merging rules is a convenient way to update your policy without creating extra policy XML files. For example, to add rules that allow the WDAC Wizard and the WDAC RefreshPolicy.exe tool, follow these steps:
 
-1. Install the [WDAC Wizard](wdac-wizard.md) packaged MSIX app.
+1. Install the [WDAC Wizard](../design/wdac-wizard.md) packaged MSIX app.
 2. Download the [Refresh Policy tool](https://aka.ms/refreshpolicy) for your processor architecture and save it to your desktop as RefreshPolicy.exe.
 3. From a PowerShell session, run the following commands to create packaged app allow rules for the WDAC Wizard:
 
@@ -94,4 +94,4 @@ Now that you have your new, merged policy, you can convert and deploy the policy
 
 2. Upload your merged policy XML and the associated binary to the source control solution you are using for your Windows Defender Application Control policies. such as [GitHub](https://github.com/) or a document management solution such as [Office 365 SharePoint](https://products.office.com/sharepoint/collaboration).
 
-3. Deploy the merged policy using your preferred deployment solution. See [Deploying Windows Defender Application Control (WDAC) policies](windows-defender-application-control-deployment-guide.md)
+3. Deploy the merged policy using your preferred deployment solution. See [Deploying Windows Defender Application Control (WDAC) policies](wdac-deployment-guide.md)

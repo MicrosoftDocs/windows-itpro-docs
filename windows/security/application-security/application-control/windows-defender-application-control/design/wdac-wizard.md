@@ -21,7 +21,7 @@ ms.date: 05/24/2022
 - Windows Server 2016 and above
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
 The Windows Defender Application Control policy wizard is an open-source Windows desktop application written in C# and bundled as an MSIX package. It was built to provide security architects with security, and system administrators with a more user-friendly means to create, edit, and merge Application Control policies. This tool uses the [ConfigCI PowerShell cmdlets](/powershell/module/configci) in the backend so the output policy of the tool and PowerShell cmdlets is identical.
 
@@ -31,7 +31,7 @@ Download the tool from the official [Windows Defender Application Control Policy
 
 ### Supported clients
 
-As the tool uses the cmdlets in the background, it's functional on clients only where the cmdlets are supported. For more information, see [Application Control feature availability](feature-availability.md). Specifically, the tool verifies that the client meets one of the following requirements:
+As the tool uses the cmdlets in the background, it's functional on clients only where the cmdlets are supported. For more information, see [Application Control feature availability](../feature-availability.md). Specifically, the tool verifies that the client meets one of the following requirements:
 
 - Windows 10, version 1909 or later
 - For pre-1909 builds, the Enterprise SKU of Windows is installed

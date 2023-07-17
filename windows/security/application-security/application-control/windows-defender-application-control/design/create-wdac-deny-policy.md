@@ -72,7 +72,7 @@ Merge-CIPolicy -PolicyPaths $ DenyPolicy, $ExistingPolicy -OutputFilePath $Exist
 
 ## Best Practices
 
-1. **Test first in Audit mode** - as with all new policies, we recommend rolling out your new deny policy in Audit Mode and monitoring the [3076 audit block events](event-id-explanations.md) to ensure only the applications you intended to block are blocked. More information on monitoring block events via the Event Viewer logs and Advanced Hunting: [Managing and troubleshooting Windows Defender Application Control policies](windows-defender-application-control-operational-guide.md)
+1. **Test first in Audit mode** - as with all new policies, we recommend rolling out your new deny policy in Audit Mode and monitoring the [3076 audit block events](../operations/event-id-explanations.md) to ensure only the applications you intended to block are blocked. More information on monitoring block events via the Event Viewer logs and Advanced Hunting: [Managing and troubleshooting Windows Defender Application Control policies](../operations/wdac-operational-guide.md)
 
 2. **Recommended Deny Rules Types** - signer and file attribute rules are recommended from a security, manageability, and performance perspective. Hash rules should only be used if necessary. Since the hash of a file changes with any change to the file, it's hard to keep up with a hash-based block policy where the attacker can trivially update the file. While WDAC has optimized parsing of hash rules, some devices may see performance impacts at runtime evaluation if policies have tens of thousands or more hash rules.
 

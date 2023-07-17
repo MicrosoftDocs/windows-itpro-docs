@@ -19,7 +19,7 @@ ms.topic: how-to
 - Windows 10
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. For more information, see [Windows Defender Application Control feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. For more information, see [Windows Defender Application Control feature availability](../feature-availability.md).
 
 You can use Microsoft Intune to deploy and run critical Win32 applications, and Windows components that are normally blocked in S mode, on your Intune-managed Windows 10 in S mode devices. For example, PowerShell.exe.
 
@@ -31,7 +31,7 @@ For an overview and brief demo of this feature, see this video:
 
 ## Policy authorization process
 
-![Basic diagram of the policy authorization flow.](images/wdac-intune-policy-authorization.png)
+![Basic diagram of the policy authorization flow.](../images/wdac-intune-policy-authorization.png)
 
 The general steps for expanding the S mode base policy on your Intune-managed Windows 10 in S mode devices are to generate a supplemental policy, sign that policy, upload the signed policy to Intune, and assign it to user or device groups. Because you need access to PowerShell cmdlets to generate your supplemental policy, you should create and manage your policies on a non-S mode device. Once the policy has been uploaded to Intune, before deploying the policy more broadly, assign it to a single test Windows 10 in S mode device to verify expected functioning.
 
@@ -39,7 +39,7 @@ The general steps for expanding the S mode base policy on your Intune-managed Wi
 
     This policy expands the S mode base policy to authorize more applications. Anything authorized by either the S mode base policy or your supplemental policy is allowed to run. Your supplemental policies can specify filepath rules, trusted publishers, and more.
 
-    For more information on creating supplemental policies, see [Deploy multiple WDAC policies](deploy-multiple-windows-defender-application-control-policies.md). For more information on the right type of rules to create for your policy, see [Deploy WDAC policy rules and file rules](select-types-of-rules-to-create.md).
+    For more information on creating supplemental policies, see [Deploy multiple WDAC policies](../design/deploy-multiple-wdac-policies.md). For more information on the right type of rules to create for your policy, see [Deploy WDAC policy rules and file rules](../design/select-types-of-rules-to-create.md).
 
     The following instructions are a basic set for creating an S mode supplemental policy:
 
@@ -81,7 +81,7 @@ The general steps for expanding the S mode base policy on your Intune-managed Wi
 
 2. Sign the policy.
 
-    Supplemental S mode policies must be digitally signed. To sign your policy, use your organization's custom Public Key Infrastructure (PKI). For more information on signing using an internal CA, see [Create a code signing cert for WDAC](create-code-signing-cert-for-windows-defender-application-control.md).
+    Supplemental S mode policies must be digitally signed. To sign your policy, use your organization's custom Public Key Infrastructure (PKI). For more information on signing using an internal CA, see [Create a code signing cert for WDAC](create-code-signing-cert-for-wdac.md).
 
       > [!TIP]
       > For more information, see [Azure Code Signing, democratizing trust for developers and consumers](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/azure-code-signing-democratizing-trust-for-developers-and/ba-p/3604669).
@@ -97,19 +97,19 @@ The general steps for expanding the S mode base policy on your Intune-managed Wi
 
 ## Standard process for deploying apps through Intune
 
-![Basic diagram for deploying apps through Intune.](images/wdac-intune-app-deployment.png)
+![Basic diagram for deploying apps through Intune.](../images/wdac-intune-app-deployment.png)
 
 For more information on the existing procedure of packaging signed catalogs and app deployment, see [Win32 app management in Microsoft Intune](/mem/intune/apps/apps-win32-app-management).
 
 ## Optional: Process for deploying apps using catalogs
 
-![Basic diagram for deploying Apps using catalogs.](images/wdac-intune-app-catalogs.png)
+![Basic diagram for deploying Apps using catalogs.](../images/wdac-intune-app-catalogs.png)
 
 Your supplemental policy can be used to significantly relax the S mode base policy, but there are security trade-offs you must consider in doing so. For example, you can use a signer rule to trust an external signer, but that authorizes all apps signed by that certificate, which may include apps you don't want to allow as well.
 
 Instead of authorizing signers external to your organization, Intune has functionality to make it easier to authorize existing applications by using signed catalogs. This feature doesn't require repackaging or access to the source code. It works for apps that may be unsigned or even signed apps when you don't want to trust all apps that may share the same signing certificate.
 
-The basic process is to generate a catalog file for each app using Package Inspector, then sign the catalog files using a custom PKI. To authorize the catalog signing certificate in the supplemental policy, use the **Add-SignerRule** PowerShell cmdlet as shown earlier in step 1 of the [Policy authorization process](#policy-authorization-process). After that, use the [Standard process for deploying apps through Intune](#standard-process-for-deploying-apps-through-intune) outlined earlier. For more information on generating catalogs, see [Deploy catalog files to support WDAC](deploy-catalog-files-to-support-windows-defender-application-control.md).
+The basic process is to generate a catalog file for each app using Package Inspector, then sign the catalog files using a custom PKI. To authorize the catalog signing certificate in the supplemental policy, use the **Add-SignerRule** PowerShell cmdlet as shown earlier in step 1 of the [Policy authorization process](#policy-authorization-process). After that, use the [Standard process for deploying apps through Intune](#standard-process-for-deploying-apps-through-intune) outlined earlier. For more information on generating catalogs, see [Deploy catalog files to support WDAC](deploy-catalog-files-to-support-wdac.md).
 
 > [!NOTE]
 > Every time an app updates, you need to deploy an updated catalog. Try to avoid using catalog files for applications that auto-update, and direct users not to update applications on their own.

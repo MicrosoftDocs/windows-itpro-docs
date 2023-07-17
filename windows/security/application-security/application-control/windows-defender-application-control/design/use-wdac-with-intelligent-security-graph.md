@@ -27,7 +27,7 @@ ms.topic: article
 - Windows Server 2019 and above
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
 Application control can be difficult to implement in organizations that don't deploy and manage applications through an IT-managed system. In such environments, users can acquire the applications they want to use for work, making it hard to build an effective application control policy.
 
@@ -112,4 +112,4 @@ Packaged apps aren't supported with the ISG and will need to be separately autho
 The ISG doesn't authorize kernel mode drivers. The WDAC policy must have rules that allow the necessary drivers to run.  
 
 > [!NOTE]
-> A rule that explicitly denies or allows a file will take precedence over that file's reputation data. Microsoft Intune's built-in WDAC support includes the option to trust apps with good reputation via the ISG, but it has no option to add explicit allow or deny rules. In most cases, customers using application control will need to deploy a custom WDAC policy (which can include the ISG option if desired) using [Intune's OMA-URI functionality](deployment/deploy-windows-defender-application-control-policies-using-intune.md#deploy-wdac-policies-with-custom-oma-uri).
+> A rule that explicitly denies or allows a file will take precedence over that file's reputation data. Microsoft Intune's built-in WDAC support includes the option to trust apps with good reputation via the ISG, but it has no option to add explicit allow or deny rules. In most cases, customers using application control will need to deploy a custom WDAC policy (which can include the ISG option if desired) using [Intune's OMA-URI functionality](../deployment/deploy-wdac-policies-using-intune.md#deploy-wdac-policies-with-custom-oma-uri).

@@ -27,7 +27,7 @@ ms.topic: article
 - Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
 This topic describes the decisions you need to make to establish the processes for managing and maintaining Windows Defender Application Control (WDAC) policies.
 
@@ -37,7 +37,7 @@ The first step in implementing application control is to consider how your polic
 
 Most Windows Defender Application Control policies will evolve over time and proceed through a set of identifiable phases during their lifetime. Typically, these phases include:
 
-1. [Define (or refine) the "circle-of-trust"](understand-windows-defender-application-control-policy-design-decisions.md) for the policy and build an audit mode version of the policy XML. In audit mode, block events are generated but files aren't prevented from executing.
+1. [Define (or refine) the "circle-of-trust"](understand-wdac-policy-design-decisions.md) for the policy and build an audit mode version of the policy XML. In audit mode, block events are generated but files aren't prevented from executing.
 2. [Deploy the audit mode policy](/windows/security/threat-protection/windows-defender-application-control/audit-windows-defender-application-control-policies) to intended devices.
 3. [Monitor audit block events](/windows/security/threat-protection/windows-defender-application-control/event-id-explanations) from the intended devices and add/edit/delete rules as needed to address unexpected/unwanted blocks.
 4. Repeat steps 2-3 until the remaining block events meet expectations.
@@ -45,7 +45,7 @@ Most Windows Defender Application Control policies will evolve over time and pro
 6. [Deploy the enforced mode policy](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide) to intended devices. We recommend using staged rollouts for enforced policies to detect and respond to issues before deploying the policy broadly.
 7. Repeat steps 1-6 anytime the desired "circle-of-trust" changes.  
 
-![Recommended WDAC policy deployment process.](images/policyflow.png)
+![Recommended WDAC policy deployment process.](../images/policyflow.png)
 
 ### Keep WDAC policies in a source control or document management solution
 
@@ -56,7 +56,7 @@ To effectively manage Windows Defender Application Control policies, you should 
 Use the [Set-CIPolicyIDInfo](/powershell/module/configci/set-cipolicyidinfo) cmdlet to give each policy a descriptive name and set a unique ID in order to differentiate each policy when reviewing Windows Defender Application Control events or when viewing the policy XML document. Although you can specify a string value for PolicyId, for policies using the multiple policy format we recommend using the -ResetPolicyId switch to let the system autogenerate a unique ID for the policy.
 
 > [!NOTE]
-> PolicyID only applies to policies using the [multiple policy format](deploy-multiple-windows-defender-application-control-policies.md) on computers running Windows 10, version 1903 and above, or Windows 11. Running -ResetPolicyId on a policy created for pre-1903 computers will convert it to multiple policy format and prevent it from running on those earlier versions of Windows 10.
+> PolicyID only applies to policies using the [multiple policy format](deploy-multiple-wdac-policies.md) on computers running Windows 10, version 1903 and above, or Windows 11. Running -ResetPolicyId on a policy created for pre-1903 computers will convert it to multiple policy format and prevent it from running on those earlier versions of Windows 10.
 > PolicyID should be set only once per policy and use different PolicyID's for the audit and enforced mode versions of each policy.
 
 In addition, we recommend using the [Set-CIPolicyVersion](/powershell/module/configci/set-cipolicyversion) cmdlet to increment the policy's internal version number when you make changes to the policy. The version must be defined as a standard four-part version string (for example, "1.0.0.0").
@@ -71,7 +71,7 @@ Each time that a process is blocked by Windows Defender Application Control, eve
 
 Collecting these events in a central location can help you maintain your Windows Defender Application Control policy and troubleshoot rule configuration problems. Event collection technologies such as those available in Windows allow administrators to subscribe to specific event channels and have the events from source computers aggregated into a forwarded event log on a Windows Server operating system collector. For more info about setting up an event subscription, see [Configure Computers to Collect and Forward Events](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc748890(v=ws.11)).
 
-Additionally, Windows Defender Application Control events are collected by [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) and can be queried using the [advanced hunting](querying-application-control-events-centrally-using-advanced-hunting.md) feature.
+Additionally, Windows Defender Application Control events are collected by [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) and can be queried using the [advanced hunting](../operations/querying-application-control-events-centrally-using-advanced-hunting.md) feature.
 
 ## Application and user support policy
 

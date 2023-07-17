@@ -21,11 +21,11 @@ ms.technology: itpro-security
 - Windows Server 2016 and later
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. For more information, see [Windows Defender Application Control feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. For more information, see [Windows Defender Application Control feature availability](../feature-availability.md).
 
 *Catalog files* can be important in your deployment of Windows Defender Application Control (WDAC) if you have unsigned line-of-business (LOB) applications for which the process of signing is difficult. You can also use catalog files to add your own signature to apps you get from independent software vendors (ISV) when you don't want to trust all code signed by that ISV. In this way, catalog files provide a convenient way for you to "bless" apps for use in your WDAC-managed environment. And, you can create catalog files for existing apps without requiring access to the original source code or needing any expensive repackaging.
 
-You need to [obtain a code signing certificate for your own use](use-code-signing-to-simplify-application-control-for-classic-windows-applications.md#obtain-code-signing-certificates-for-your-own-use) and use it to sign the catalog file. Then, distribute the signed catalog file using your preferred content deployment mechanism.
+You need to [obtain a code signing certificate for your own use](use-code-signing-for-better-control-and-protection.md#obtain-code-signing-certificates-for-your-own-use) and use it to sign the catalog file. Then, distribute the signed catalog file using your preferred content deployment mechanism.
 
 Finally, add a signer rule to your WDAC policy for your signing certificate. Then, any apps covered by your signed catalog files are able to run, even if the apps were previously unsigned. With this foundation, you can more easily build a WDAC policy that blocks all unsigned code, because most malware is unsigned.
 
@@ -46,7 +46,7 @@ To create a catalog file for an existing app, you can use a tool called **Packag
     $PolicyBinary = $env:USERPROFILE+"\Desktop\"+$PolicyId.substring(11)+".cip"
     ```
 
-    Then apply the policy as described in [Deploy Windows Defender Application Control policies with script](deployment/deploy-wdac-policies-with-script.md).
+    Then apply the policy as described in [Deploy Windows Defender Application Control policies with script](deploy-wdac-policies-with-script.md).
 
 2. Start Package Inspector to monitor file creation on a **local drive** where you install the app, for example, drive C:
 
@@ -121,7 +121,7 @@ For the code signing certificate that you use to sign the catalog file, import i
 
 3. Verify the catalog file's digital signature. Right-click the catalog file, and then select **Properties**. On the **Digital Signatures** tab, verify that your signing certificate exists with a **sha256** algorithm, as shown in Figure 1.
 
-   ![Digital Signature list in file Properties.](images/dg-fig12-verifysigning.png)
+   ![Digital Signature list in file Properties.](../images/dg-fig12-verifysigning.png)
 
    Figure 1. Verify that the signing certificate exists.
 
@@ -144,7 +144,7 @@ The following process walks you through the deployment of a signed catalog file 
    > [!NOTE]
    > You can use any OU name. Also, security group filtering is an option when you consider different ways of combining WDAC policies.
 
-   ![Group Policy Management, create a GPO.](images/dg-fig13-createnewgpo.png)
+   ![Group Policy Management, create a GPO.](../images/dg-fig13-createnewgpo.png)
 
    Figure 2. Create a new GPO.
 
@@ -154,7 +154,7 @@ The following process walks you through the deployment of a signed catalog file 
 
 5. Within the selected GPO, navigate to **Computer Configuration\\Preferences\\Windows Settings\\Files**. Right-click **Files**, point to **New**, and then select **File**, as shown in Figure 3.
 
-   ![Group Policy Management Editor, New File.](images/dg-fig14-createnewfile.png)
+   ![Group Policy Management Editor, New File.](../images/dg-fig14-createnewfile.png)
 
    Figure 3. Create a new file.
 
@@ -164,7 +164,7 @@ The following process walks you through the deployment of a signed catalog file 
 
 7. To keep versions consistent, in the **New File Properties** dialog box as shown in Figure 4, select **Replace** from the **Action** list so that the newest version is always used.
 
-   ![File Properties, Replace option.](images/dg-fig15-setnewfileprops.png)
+   ![File Properties, Replace option.](../images/dg-fig15-setnewfileprops.png)
 
    Figure 4. Set the new file properties.
 
@@ -197,7 +197,7 @@ Complete the following steps to create a new deployment package for catalog file
 
 3. Name the package, set your organization as the manufacturer, and select an appropriate version number.
 
-    ![Create Package and Program Wizard.](images/dg-fig16-specifyinfo.png)
+    ![Create Package and Program Wizard.](../images/dg-fig16-specifyinfo.png)
 
     Figure 5. Specify information about the new package.
 
@@ -218,7 +218,7 @@ Complete the following steps to create a new deployment package for catalog file
     - From the **Program can run** list, select **Whether or not a user is logged on**.
     - From the **Drive mode** list, select **Runs with UNC name**.
 
-    ![Standard Program page of wizard.](images/dg-fig17-specifyinfo.png)
+    ![Standard Program page of wizard.](../images/dg-fig17-specifyinfo.png)
 
     Figure 6. Specify information about the standard program.
 
@@ -246,7 +246,7 @@ After you create the deployment package, deploy it to a collection so that the c
 
     - Select the **Commit changes at deadline or during a maintenance window (requires restarts)** check box.
 
-    ![Deploy Software Wizard, User Experience page.](images/dg-fig18-specifyux.png)
+    ![Deploy Software Wizard, User Experience page.](../images/dg-fig18-specifyux.png)
 
     Figure 7. Specify the user experience.
 
@@ -271,13 +271,13 @@ You can configure software inventory to find catalog files on your managed syste
 
 3. Name the new policy, and under **Select and then configure the custom settings for client devices**, select the **Software Inventory** check box, as shown in Figure 8.
 
-    ![Create Custom Client Device Settings.](images/dg-fig19-customsettings.png)
+    ![Create Custom Client Device Settings.](../images/dg-fig19-customsettings.png)
 
     Figure 8. Select custom settings.
 
 4. In the navigation pane, select **Software Inventory**, and then select **Set Types**, as shown in Figure 9.
 
-    ![Software Inventory settings for devices.](images/dg-fig20-setsoftwareinv.png)
+    ![Software Inventory settings for devices.](../images/dg-fig20-setsoftwareinv.png)
 
     Figure 9. Set the software inventory.
 
@@ -290,7 +290,7 @@ You can configure software inventory to find catalog files on your managed syste
 
 7. In the **Path Properties** dialog box, select **Variable or path name**, and then type `C:\Windows\System32\catroot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}` in the box, as shown in Figure 10.
 
-    ![Path Properties, specifying a path.](images/dg-fig21-pathproperties.png)
+    ![Path Properties, specifying a path.](../images/dg-fig21-pathproperties.png)
 
     Figure 10. Set the path properties.
 
@@ -313,7 +313,7 @@ At the time of the next software inventory cycle, when the targeted clients rece
 
 ## Allow apps signed by your catalog signing certificate in your WDAC policy
 
-Now that you have your signed catalog file, you can add a signer rule to your policy that allows anything signed with that certificate. If you haven't yet created a WDAC policy, see the [Windows Defender Application Control design guide](windows-defender-application-control-design-guide.md).
+Now that you have your signed catalog file, you can add a signer rule to your policy that allows anything signed with that certificate. If you haven't yet created a WDAC policy, see the [Windows Defender Application Control design guide](../design/wdac-design-guide.md).
 
 On a computer where the signed catalog file has been deployed, you can use [New-CiPolicyRule](/powershell/module/configci/new-cipolicyrule) to create a signer rule from any file included in that catalog. Then use [Merge-CiPolicy](/powershell/module/configci/merge-cipolicy) to add the rule to your policy XML. Be sure to replace the path values in the following sample:
 

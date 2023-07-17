@@ -27,7 +27,7 @@ ms.topic: article
 - Windows Server 2019 and above
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
 You can use Windows Defender Application Control (WDAC) policies to control applications and also to control whether specific plug-ins, add-ins, and modules can run from specific apps (such as a line-of-business application or a browser):
 

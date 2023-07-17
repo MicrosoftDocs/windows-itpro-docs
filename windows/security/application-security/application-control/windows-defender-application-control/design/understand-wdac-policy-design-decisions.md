@@ -27,7 +27,7 @@ ms.topic: article
 - Windows Server 2016 and above
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
 This article is for the IT professional. It lists the design questions, possible answers, and ramifications for decisions made, when planning application control policies deployment using Windows Defender Application Control (WDAC), within a Windows operating system environment.
 
@@ -44,7 +44,7 @@ You should consider using Windows Defender Application Control as part of your o
 
 ## Decide what policies to create
 
-Beginning with Windows 10, version 1903, Windows Defender Application Control allows [multiple simultaneous policies](deploy-multiple-windows-defender-application-control-policies.md) to be applied to each device. This concurrent application opens up many new use cases for organizations, but your policy management can easily become unwieldy without a well-thought-out plan for the number and types of policies to create.
+Beginning with Windows 10, version 1903, Windows Defender Application Control allows [multiple simultaneous policies](deploy-multiple-wdac-policies.md) to be applied to each device. This concurrent application opens up many new use cases for organizations, but your policy management can easily become unwieldy without a well-thought-out plan for the number and types of policies to create.
 
 The first step is to define the desired "circle-of-trust" for your WDAC policies. By "circle-of-trust," we mean a description of the business intent of the policy expressed in natural language. This "circle-of-trust" definition will guide you as you create the actual policy rules for your policy XML.
 
@@ -63,8 +63,8 @@ Organizations with well-defined, centrally managed app management and deployment
 | Possible answers | Design considerations|
 | - | - |
 | All apps are centrally managed and deployed using endpoint management tools like [Microsoft Intune](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager). | Organizations that centrally manage all apps are best-suited for application control. Windows Defender Application Control options like [managed installer](configure-authorized-apps-deployed-with-a-managed-installer.md) can make it easy to authorize apps that are deployed by the organization's app distribution management solution. |
-| Some apps are centrally managed and deployed, but teams can install other apps for their members. | [Supplemental policies](deploy-multiple-windows-defender-application-control-policies.md) can be used to allow team-specific exceptions to your core organization-wide Windows Defender Application Control policy. Alternatively, teams can use managed installers to install their team-specific apps, or admin-only file path rules can be used to allow apps installed by admin users. |
-| Users and teams are free to download and install apps but the organization wants to restrict that right to prevalent and reputable apps only. | Windows Defender Application Control can integrate with Microsoft's [Intelligent Security Graph](use-windows-defender-application-control-with-intelligent-security-graph.md) (the same source of intelligence that powers Microsoft Defender Antivirus and Windows Defender SmartScreen) to allow only apps and binaries that have positive reputation. |
+| Some apps are centrally managed and deployed, but teams can install other apps for their members. | [Supplemental policies](deploy-multiple-wdac-policies.md) can be used to allow team-specific exceptions to your core organization-wide Windows Defender Application Control policy. Alternatively, teams can use managed installers to install their team-specific apps, or admin-only file path rules can be used to allow apps installed by admin users. |
+| Users and teams are free to download and install apps but the organization wants to restrict that right to prevalent and reputable apps only. | Windows Defender Application Control can integrate with Microsoft's [Intelligent Security Graph](use-wdac-with-intelligent-security-graph.md) (the same source of intelligence that powers Microsoft Defender Antivirus and Windows Defender SmartScreen) to allow only apps and binaries that have positive reputation. |
 | Users and teams are free to download and install apps without restriction. | Windows Defender Application Control policies can be deployed in audit mode to gain insight into the apps and binaries running in your organization without impacting user and team productivity.|
 
 ### Are internally developed line-of-business (LOB) apps and apps developed by third-party companies digitally signed?
@@ -73,8 +73,8 @@ Traditional Win32 apps on Windows can run without being digitally signed. This p
 
 | Possible answers | Design considerations |
 | - | - |
-| All apps used in your organization must be signed. | Organizations that enforce [codesigning](use-code-signing-to-simplify-application-control-for-classic-windows-applications.md) for all executable code are best-positioned to protect their Windows computers from malicious code execution. Windows Defender Application Control rules can be created to authorize apps and binaries from the organization's internal development teams and from trusted independent software vendors (ISV). |
-| Apps used in your organization don't need to meet any codesigning requirements. | Organizations can  [use built-in Windows tools](deploy-catalog-files-to-support-windows-defender-application-control.md) to add organization-specific App Catalog signatures to existing apps as a part of the app deployment process, which can be used to authorize code execution. Solutions like Microsoft Intune offer multiple ways to distribute signed App Catalogs. | 
+| All apps used in your organization must be signed. | Organizations that enforce [codesigning](../deployment/use-code-signing-for-better-control-and-protection.md) for all executable code are best-positioned to protect their Windows computers from malicious code execution. Windows Defender Application Control rules can be created to authorize apps and binaries from the organization's internal development teams and from trusted independent software vendors (ISV). |
+| Apps used in your organization don't need to meet any codesigning requirements. | Organizations can  [use built-in Windows tools](../deployment/deploy-catalog-files-to-support-wdac.md) to add organization-specific App Catalog signatures to existing apps as a part of the app deployment process, which can be used to authorize code execution. Solutions like Microsoft Intune offer multiple ways to distribute signed App Catalogs. | 
  
 ### Are there specific groups in your organization that need customized application control policies?
 

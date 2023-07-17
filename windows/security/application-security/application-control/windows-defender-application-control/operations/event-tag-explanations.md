@@ -102,22 +102,22 @@ The Application Control policy rule option values can be derived from the "Optio
 - Identify the hex code listed in the "Options" field.
 - Convert the hex code to binary.
 
-:::image type="content" source="images/event-3099-options.png" alt-text="Event 3099 policy rule options.":::
+:::image type="content" source="../images/event-3099-options.png" alt-text="Event 3099 policy rule options.":::
 
 For a simple solution for converting hex to binary, follow these steps:
 
 1. Open the Calculator app.
-1. Select the menu icon. :::image type="icon" source="images/calculator-menu-icon.png" border="false":::
+1. Select the menu icon. :::image type="icon" source="../images/calculator-menu-icon.png" border="false":::
 1. Select **Programmer** mode.
-1. Select **HEX**. :::image type="icon" source="images/hex-icon.png" border="false":::
+1. Select **HEX**. :::image type="icon" source="../images/hex-icon.png" border="false":::
 1. Enter your hex code. For example, `80881000`.
-1. Switch to the **Bit Toggling Keyboard**. :::image type="icon" source="images/bit-toggling-keyboard-icon.png" border="false":::
+1. Switch to the **Bit Toggling Keyboard**. :::image type="icon" source="../images/bit-toggling-keyboard-icon.png" border="false":::
 
-:::image type="content" source="images/calculator-with-hex-in-binary.png" alt-text="An example of the calculator app in programmer mode, with a hex code converted into binary.":::
+:::image type="content" source="../images/calculator-with-hex-in-binary.png" alt-text="An example of the calculator app in programmer mode, with a hex code converted into binary.":::
 
 This view provides the hex code in binary form, with each bit address shown separately.  The bit addresses start at 0 in the bottom right.  Each bit address correlates to a specific event policy-rule option.  If the bit address holds a value of 1, the setting is in the policy.
 
-Next, use the bit addresses and their values from the following table to determine the state of each [policy rule-option](select-types-of-rules-to-create.md#table-1-windows-defender-application-control-policy---policy-rule-options). For example, if the bit address of 16 holds a value of 1, then the **Enabled: Audit Mode (Default)** option is in the policy. This setting means that the policy is in audit mode.
+Next, use the bit addresses and their values from the following table to determine the state of each [policy rule-option](../design/select-types-of-rules-to-create.md#table-1-windows-defender-application-control-policy---policy-rule-options). For example, if the bit address of 16 holds a value of 1, then the **Enabled: Audit Mode (Default)** option is in the policy. This setting means that the policy is in audit mode.
 
 | Bit Address | Policy Rule Option |
 |-------|------|

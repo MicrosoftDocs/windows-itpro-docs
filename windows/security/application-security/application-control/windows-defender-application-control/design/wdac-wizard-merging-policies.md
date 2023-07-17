@@ -25,8 +25,8 @@ Beginning in Windows 10 version 1903, Windows Defender Application Control (WDAC
 Select the policies you wish to merge into one policy using the `+ Add Policy` button under the table. Once added, policies will be enumerated within the table. To remove a policy from the table, if accidentally added, highlight the policy row and select the `- Remove Policy` button. Confirmation will be required before the policy is withdrawn from the table. 
 
 > [!NOTE]
-> The policy type and ID of the final output policy will be determined based on the type and ID of the **first policy** in the policy list table. For instance, if a legacy policy format policy and a multi-policy format policy are merged together, the output format of the policy will be whichever policy is specified first in the table. For more information on policy formats, visit the [Multiple Windows Defender Application Control (WDAC) Policies page](deploy-multiple-windows-defender-application-control-policies.md).
+> The policy type and ID of the final output policy will be determined based on the type and ID of the **first policy** in the policy list table. For instance, if a legacy policy format policy and a multi-policy format policy are merged together, the output format of the policy will be whichever policy is specified first in the table. For more information on policy formats, visit the [Multiple Windows Defender Application Control (WDAC) Policies page](deploy-multiple-wdac-policies.md).
 
 Lastly, select a filepath save location for the final merged policy using the `Browse` button. If a minimum of two policies are selected, and the save location is specified, select the `Next` button to build the policy. 
 
-![Merging WDAC policies into a final WDAC policy.](images/wdac-wizard-merge.png)
+![Merging WDAC policies into a final WDAC policy.](../images/wdac-wizard-merge.png)

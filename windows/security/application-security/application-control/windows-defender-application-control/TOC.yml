@@ -1,7 +1,7 @@
 - name: Application Control for Windows
   href: index.yml
 - name: About application control for Windows
-  href: windows-defender-application-control.md
+  href: wdac.md
   expanded: true
   items:
     - name: WDAC and AppLocker Overview
@@ -9,120 +9,120 @@
     - name: WDAC and AppLocker Feature Availability
       href: feature-availability.md
     - name: Virtualization-based protection of code integrity
-      href: ../../application-security/application-control/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
+      href: ../introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
 - name: WDAC design guide
-  href: windows-defender-application-control-design-guide.md
+  href: design/wdac-design-guide.md
   items:
     - name: Plan for WDAC policy lifecycle management
-      href: plan-windows-defender-application-control-management.md
+      href: design/plan-wdac-management.md
     - name: Design your WDAC policy
       items:
         - name: Understand WDAC policy design decisions
-          href: understand-windows-defender-application-control-policy-design-decisions.md
+          href: design/understand-wdac-policy-design-decisions.md
         - name: Understand WDAC policy rules and file rules
-          href: select-types-of-rules-to-create.md
+          href: design/select-types-of-rules-to-create.md
           items:
             - name: Allow apps installed by a managed installer
-              href: configure-authorized-apps-deployed-with-a-managed-installer.md
+              href: design/configure-authorized-apps-deployed-with-a-managed-installer.md
             - name: Allow reputable apps with Intelligent Security Graph (ISG)
-              href: use-windows-defender-application-control-with-intelligent-security-graph.md
+              href: design/use-wdac-with-intelligent-security-graph.md
             - name: Allow COM object registration
-              href: allow-com-object-registration-in-windows-defender-application-control-policy.md
+              href: design/allow-com-object-registration-in-wdac-policy.md
             - name: Use WDAC with .NET hardening
-              href: use-windows-defender-application-control-with-dynamic-code-security.md
+              href: design/wdac-and-dotnet.md
             - name: Script enforcement with Windows Defender Application Control
               href: design/script-enforcement.md
             - name: Manage packaged apps with WDAC
-              href: manage-packaged-apps-with-windows-defender-application-control.md
+              href: design/manage-packaged-apps-with-wdac.md
             - name: Use WDAC to control specific plug-ins, add-ins, and modules
-              href: use-windows-defender-application-control-policy-to-control-specific-plug-ins-add-ins-and-modules.md
+              href: design/use-wdac-policy-to-control-specific-plug-ins-add-ins-and-modules.md
             - name: Understand WDAC policy settings
-              href: understanding-wdac-policy-settings.md
+              href: design/understanding-wdac-policy-settings.md
         - name: Use multiple WDAC policies
-          href: deploy-multiple-windows-defender-application-control-policies.md
+          href: design/deploy-multiple-wdac-policies.md
     - name: Create your WDAC policy
       items:
         - name: Example WDAC base policies
-          href: example-wdac-base-policies.md
+          href: design/example-wdac-base-policies.md
         - name: Policy creation for common WDAC usage scenarios
-          href: types-of-devices.md
+          href: design/common-wdac-use-cases.md
           items:
             - name: Create a WDAC policy for lightly managed devices
-              href: create-wdac-policy-for-lightly-managed-devices.md
+              href: design/create-wdac-policy-for-lightly-managed-devices.md
             - name: Create a WDAC policy for fully managed devices
-              href: create-wdac-policy-for-fully-managed-devices.md
+              href: design/create-wdac-policy-for-fully-managed-devices.md
             - name: Create a WDAC policy for fixed-workload devices
-              href: create-initial-default-policy.md
+              href: design/create-wdac-policy-using-reference-computer.md
             - name: Create a WDAC deny list policy
-              href: create-wdac-deny-policy.md
+              href: design/create-wdac-deny-policy.md
             - name: Microsoft recommended block rules
-              href: microsoft-recommended-block-rules.md
+              href: design/microsoft-recommended-block-rules.md
             - name: Microsoft recommended driver block rules
-              href: microsoft-recommended-driver-block-rules.md
+              href: design/microsoft-recommended-driver-block-rules.md
         - name: Use the WDAC Wizard tool
-          href: wdac-wizard.md
+          href: design/wdac-wizard.md
           items:
             - name: Create a base WDAC policy with the Wizard
-              href: wdac-wizard-create-base-policy.md
+              href: design/wdac-wizard-create-base-policy.md
             - name: Create a supplemental WDAC policy with the Wizard
-              href: wdac-wizard-create-supplemental-policy.md
+              href: design/wdac-wizard-create-supplemental-policy.md
             - name: Editing a WDAC policy with the Wizard
-              href: wdac-wizard-editing-policy.md
+              href: design/wdac-wizard-editing-policy.md
             - name: Creating WDAC Policy Rules from WDAC Events
-              href: wdac-wizard-parsing-event-logs.md
+              href: design/wdac-wizard-parsing-event-logs.md
             - name: Merging multiple WDAC policies with the Wizard
-              href: wdac-wizard-merging-policies.md
+              href: design/wdac-wizard-merging-policies.md
 - name: WDAC deployment guide
-  href: windows-defender-application-control-deployment-guide.md
+  href: deployment/wdac-deployment-guide.md
   items:
     - name: Deploy WDAC policies with MDM
-      href: deployment/deploy-windows-defender-application-control-policies-using-intune.md
+      href: deployment/deploy-wdac-policies-using-intune.md
     - name: Deploy WDAC policies with Configuration Manager
       href: deployment/deploy-wdac-policies-with-memcm.md
     - name: Deploy WDAC policies with script
       href: deployment/deploy-wdac-policies-with-script.md
     - name: Deploy WDAC policies with group policy
-      href: deployment/deploy-windows-defender-application-control-policies-using-group-policy.md
+      href: deployment/deploy-wdac-policies-using-group-policy.md
     - name: Audit WDAC policies
-      href: audit-windows-defender-application-control-policies.md
+      href: deployment/audit-wdac-policies.md
     - name: Merge WDAC policies
-      href: merge-windows-defender-application-control-policies.md
+      href: deployment/merge-wdac-policies.md
     - name: Enforce WDAC policies
-      href: enforce-windows-defender-application-control-policies.md
+      href: deployment/enforce-wdac-policies.md
     - name: Use code signing for added control and protection with WDAC
-      href: use-code-signing-to-simplify-application-control-for-classic-windows-applications.md
+      href: deployment/use-code-signing-for-better-control-and-protection.md
       items:
         - name: Deploy catalog files to support WDAC
-          href: deploy-catalog-files-to-support-windows-defender-application-control.md
+          href: deployment/deploy-catalog-files-to-support-wdac.md
         - name: Use signed policies to protect Windows Defender Application Control against tampering
-          href: use-signed-policies-to-protect-windows-defender-application-control-against-tampering.md
+          href: deployment/use-signed-policies-to-protect-wdac-against-tampering.md
         - name: "Optional: Create a code signing cert for WDAC"
-          href: create-code-signing-cert-for-windows-defender-application-control.md
+          href: deployment/create-code-signing-cert-for-wdac.md
     - name: Disable WDAC policies
-      href: disable-windows-defender-application-control-policies.md
+      href: deployment/disable-wdac-policies.md
     - name: LOB Win32 Apps on S Mode
-      href: LOB-win32-apps-on-s.md
+      href: deployment/LOB-win32-apps-on-s.md
 - name: WDAC operational guide
-  href: windows-defender-application-control-operational-guide.md
+  href: operations/wdac-operational-guide.md
   items:
     - name: WDAC debugging and troubleshooting
       href: operations/wdac-debugging-and-troubleshooting.md
     - name: Understanding Application Control event IDs
-      href: event-id-explanations.md
+      href: operations/event-id-explanations.md
     - name: Understanding Application Control event tags
-      href: event-tag-explanations.md
+      href: operations/event-tag-explanations.md
     - name: Query WDAC events with Advanced hunting
-      href: querying-application-control-events-centrally-using-advanced-hunting.md
+      href: operations/querying-application-control-events-centrally-using-advanced-hunting.md
     - name: Known Issues
       href: operations/known-issues.md
     - name: Managed installer and ISG technical reference and troubleshooting guide
-      href: configure-wdac-managed-installer.md
+      href: operations/configure-wdac-managed-installer.md
     - name: CITool.exe technical reference
       href: operations/citool-commands.md
     - name: Inbox WDAC policies
       href: operations/inbox-wdac-policies.md
 - name: WDAC AppId Tagging guide
-  href: AppIdTagging/windows-defender-application-control-appid-tagging-guide.md
+  href: AppIdTagging/wdac-appid-tagging-guide.md
   items:
     - name: Creating AppId Tagging Policies
       href: AppIdTagging/design-create-appid-tagging-policies.md

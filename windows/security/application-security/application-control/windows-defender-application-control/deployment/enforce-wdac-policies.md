@@ -24,7 +24,7 @@ ms.localizationpriority: medium
 -   Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
 You should now have one or more Windows Defender Application Control policies broadly deployed in audit mode. You have analyzed events collected from the devices with those policies and you're ready to enforce. Use this procedure to prepare and deploy your WDAC policies in enforcement mode.
 
@@ -33,11 +33,11 @@ You should now have one or more Windows Defender Application Control policies br
 
 ## Convert WDAC **base** policy from audit to enforced
 
-As described in [common Windows Defender Application Control deployment scenarios](types-of-devices.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
+As described in [common Windows Defender Application Control deployment scenarios](../design/common-wdac-use-cases.md), we'll use the example of **Lamna Healthcare Company (Lamna)** to illustrate this scenario. Lamna is attempting to adopt stronger application policies, including the use of application control to prevent unwanted or unauthorized applications from running on their managed devices.
 
 **Alice Pena** is the IT team lead responsible for Lamna's WDAC rollout.
 
-Alice previously created and deployed a policy for the organization's [fully managed devices](create-wdac-policy-for-fully-managed-devices.md). They updated the policy based on audit event data as described in [Use audit events to create WDAC policy rules](audit-windows-defender-application-control-policies.md) and redeployed it. All remaining audit events are as expected and Alice is ready to switch to enforcement mode.
+Alice previously created and deployed a policy for the organization's [fully managed devices](../design/create-wdac-policy-for-fully-managed-devices.md). They updated the policy based on audit event data as described in [Use audit events to create WDAC policy rules](audit-wdac-policies.md) and redeployed it. All remaining audit events are as expected and Alice is ready to switch to enforcement mode.
 
 1. Initialize the variables that will be used and create the enforced policy by copying the audit version.
 
@@ -111,4 +111,4 @@ Since the enforced policy was given a unique PolicyID in the previous procedure,
 
 ## Deploy your enforced policy and supplemental policies
 
-Now that your base policy is in enforced mode, you can begin to deploy it to your managed endpoints. For information about deploying policies, see [Deploying Windows Defender Application Control (WDAC) policies](windows-defender-application-control-deployment-guide.md).
+Now that your base policy is in enforced mode, you can begin to deploy it to your managed endpoints. For information about deploying policies, see [Deploying Windows Defender Application Control (WDAC) policies](wdac-deployment-guide.md).
