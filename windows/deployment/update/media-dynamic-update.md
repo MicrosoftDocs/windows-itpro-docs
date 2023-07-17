@@ -85,24 +85,24 @@ Properly updating the installation media involves a large number of actions oper
 
 This table shows the correct sequence for applying the various tasks to the files. For example, the full sequence starts with adding the servicing stack update to WinRE (1) and concludes with adding boot manager from WinPE to the new media (28).
 
-|Task  |WinRE (winre.wim)  |WinPE (boot.wim)  |Operating system (install.wim)  | New media |
-|---------|---------|---------|---------|------|
-|Add servicing stack Dynamic Update     |  1       | 9        | 18        |
-|Add language pack     | 2        |   10      |  19       |
-|Add localized optional packages     |  3       | 11        |         |
-|Add font support     |  4       |  12       |         |
-|Add text-to-speech      | 5        |   13      |         |
-|Update Lang.ini     |         |  14       |         |
-|Add Features on Demand     |         |         |  20       |
-|Add Safe OS Dynamic Update     | 6        |        |       |
-|Add Setup Dynamic Update     |         |         |         | 26
-|Add setup.exe from WinPE     |         |         |         | 27
-|Add boot manager from WinPE     |         |         |         | 28
-|Add latest cumulative update     |         | 15        | 21        |
-|Clean up the image     |  7       | 16        | 22        |
-|Add Optional Components     |         |         |  23       |
-|Add .NET and .NET cumulative updates     |         |        | 24        |
-|Export image     | 8        |  17       | 25        |
+|Task                               |WinRE (winre.wim)  |WinPE (boot.wim)  |Operating system (install.wim)  | New media |
+|-----------------------------------|-------------------|------------------|--------------------------------|-----------|
+|Add servicing stack Dynamic Update | 1                 | 9                | 18                             |           | 
+|Add language pack                  | 2                 | 10               | 19                             |           |
+|Add localized optional packages    | 3                 | 11               |                                |           |
+|Add font support                   | 4                 | 12               |                                |           |
+|Add text-to-speech                 | 5                 | 13               |                                |           |
+|Update Lang.ini                    |                   | 14               |                                |           |
+|Add Features on Demand             |                   |                  | 20                             |           |
+|Add Safe OS Dynamic Update         | 6                 |                  |                                |           |
+|Add Setup Dynamic Update           |                   |                  |                                | 26        |
+|Add setup.exe from WinPE           |                   |                  |                                | 27        |
+|Add boot manager from WinPE        |                   |                  |                                | 28        |
+|Add latest cumulative update       |                   | 15               | 21                             |           |
+|Clean up the image                 | 7                 | 16               | 22                             |           |
+|Add Optional Components            |                   |                  | 23                             |           |
+|Add .NET and .NET cumulative updates |                 |                  | 24                             |           |
+|Export image                       | 8                 | 17               | 25                             |           |
 
 > [!NOTE]
 > Starting in February 2021, the latest cumulative update and servicing stack update will be combined and distributed in the Microsoft Update Catalog as a new combined cumulative update. For Steps 1, 9, and 18 that require the servicing stack update for updating the installation media, you should use the combined cumulative update. For more information on the combined cumulative update, see [Servicing stack updates](./servicing-stack-updates.md).
