@@ -55,22 +55,22 @@ You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https
 ### Windows 11, version 21H2 Dynamic Update packages
 **Title**, **Product** and **Description** are required to distinguish each Dynamic Package. Latest cumulative update has the Servicing Stack embedded. Servicing Stack published seperately only if required as a prerequisite for a given cumulative Update.
 
-| Update packages                   |Title                                                          |Product                                                                        |Description       |
-|-----------------------------------|---------------------------------------------------------------|-------------------------------------------------------------------------------|------------------|
-|Safe OS Dynamic Update             | YYYY-MM Dynamic Update for Windows 11                         |Windows Safe OS Dynamic Update                                                 | ComponentUpdate |
-|Setup Dynamic Update               | YYYY-MM Dynamic Update for Windows 11                         |Windows 10 and later Dynamic Update                                            | SetupUpdate      |
-|Latest cumulative update           | YYYY-MM Cumulative Update for Windows 11                      |                                                                               |                  |
-|Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Windows 11 Version 22H2    |                                                                               |                  |
+| Update packages                   |Title                                                          |Product                                       |Description       |
+|-----------------------------------|---------------------------------------------------------------|----------------------------------------------|------------------|
+|Safe OS Dynamic Update             | YYYY-MM Dynamic Update for Windows 11                         |Windows Safe OS Dynamic Update                | ComponentUpdate  |
+|Setup Dynamic Update               | YYYY-MM Dynamic Update for Windows 11                         |Windows 10 and later Dynamic Update           | SetupUpdate      |
+|Latest cumulative update           | YYYY-MM Cumulative Update for Windows 11                      |                                              |                  |
+|Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Windows 11 Version 21H2    |                                              |                  |
 
 ### For Windows 10, version 22H2 Dynamic Update packages
 **Title**, **Product** and **Description** are required to distinguish each Dynamic Package. Latest cumulative update has the Servicing Stack embedded. Servicing Stack published seperately only if required as a prerequisite for a given cumulative Update.
 
-| Update packages                   |Title                                                          |Product                                                                        |Description       |
-|-----------------------------------|---------------------------------------------------------------|-------------------------------------------------------------------------------|------------------|
-|Safe OS Dynamic Update             | YYYY-MM Dynamic Update for Windows 10 Version 22H2            |Windows Safe OS Dynamic Update                                                 | ComponentUpdate |
-|Setup Dynamic Update               | YYYY-MM Dynamic Update for Windows 10 Version 22H2            |Windows 10 and later Dynamic Update                                            | SetupUpdate      |
-|Latest cumulative update           | YYYY-MM Cumulative Update for Windows 10 Version 22H2         |                                                                               |                  |
-|Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Windows 10 Version 22H2    |                                                                               |                  |
+| Update packages                   |Title                                                          |Product                                       |Description       |
+|-----------------------------------|---------------------------------------------------------------|----------------------------------------------|------------------|
+|Safe OS Dynamic Update             | YYYY-MM Dynamic Update for Windows 10 Version 22H2            |Windows Safe OS Dynamic Update                | ComponentUpdate  |
+|Setup Dynamic Update               | YYYY-MM Dynamic Update for Windows 10 Version 22H2            |Windows 10 and later Dynamic Update           | SetupUpdate      |
+|Latest cumulative update           | YYYY-MM Cumulative Update for Windows 10 Version 22H2         |                                              |                  |
+|Servicing stack Dynamic Update     | YYYY-MM Servicing Stack Update for Windows 10 Version 22H2    |                                              |                  |
 
 If you want to customize the image with additional languages or Features on Demand, download supplemental media ISO files from the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx). For example, if Dynamic Update will be disabled for your devices, and if users require specific Features on Demand, you can preinstall these into the image.
 
@@ -124,11 +124,11 @@ Optional Components, along with the .NET feature, can be installed offline, howe
 
 These examples are for illustration only, and therefore lack error handling. The script assumes that the following packages are stored locally in this folder structure:
 
-|Folder  |Description  |
-|---------|---------|
-|C:\mediaRefresh     |  Parent folder that contains the PowerShell script       |
-|C:\mediaRefresh\oldMedia |  Folder that contains the original media that will be refreshed. For example, contains Setup.exe, and \sources folder.       |
-|C:\mediaRefresh\newMedia     | Folder that will contain the updated media. It is copied from \oldMedia, then used as the target for all update and cleanup operations.        |
+|Folder                     |Description                                                                                                                              |
+|---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+|C:\mediaRefresh            | Parent folder that contains the PowerShell script                                                                                       |
+|C:\mediaRefresh\oldMedia   | Folder that contains the original media that will be refreshed. For example, contains Setup.exe, and \sources folder.                   |
+|C:\mediaRefresh\newMedia   | Folder that will contain the updated media. It is copied from \oldMedia, then used as the target for all update and cleanup operations. |
 
 ### Get started
 
