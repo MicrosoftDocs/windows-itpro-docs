@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "windows/security/identity-protection/hello-for-business/test.md",
+      "redirect_url": "/windows/security/windows/security/identity-protection/hello-for-business/webauthn-apis",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/security/identity-protection/hello-for-business/WebAuthnAPIs.md",
       "redirect_url": "/windows/security/windows/security/identity-protection/hello-for-business/webauthn-apis",
       "redirect_document_id": false
@@ -21922,6 +21927,11 @@
     },
     {
       "source_path": "windows/deployment/update/update-compliance-schema-waasdeploymentstatus.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-schema-wudostatus.md",
       "redirect_url": "/windows/deployment/update/wufb-reports-overview",
       "redirect_document_id": false
     },
