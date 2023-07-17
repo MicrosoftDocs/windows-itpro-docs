@@ -6,7 +6,7 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.topic: article
-ms.date: 04/26/2023
+ms.date: 07/11/2023
 ms.technology: itpro-updates
 ---
 
@@ -52,9 +52,7 @@ Windows Update for Business reports uses an [Azure Log Analytics workspaces](/az
 
 ## <a name="bkmk_enroll"></a> Enroll into Windows Update for Business reports
 
-Enroll into Windows Update for Business reports by configuring its settings through either the Azure Workbook or from the Microsoft 365 admin center. Completing the Windows Update for Business reports configuration removes needing to specify [`CommercialID`](update-compliance-get-started.md#get-your-commercialid), which was needed by Update Compliance, the predecessor of Windows Update for Business reports.
-
-Use one of the following methods to enroll into Windows Update for Business reports:
+Enroll into Windows Update for Business reports by configuring its settings through either the Azure Workbook or from the Microsoft 365 admin center. Use one of the following methods to enroll into Windows Update for Business reports:
 
 ##### <a name="bkmk_enroll-workbook"></a> Enroll through the Azure Workbook (recommended method)
 
