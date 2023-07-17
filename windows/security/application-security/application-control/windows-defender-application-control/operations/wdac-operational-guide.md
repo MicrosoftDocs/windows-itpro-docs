@@ -1,30 +1,12 @@
 ---
-title: Managing and troubleshooting Windows Defender Application Control policies 
+title: Managing and troubleshooting Windows Defender Application Control policies
 description: Gather information about how your deployed Windows Defender Application Control policies are behaving.
-keywords: security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
-author: jsuther1974
-ms.reviewer: jogeurte
-ms.author: vinpa
-manager: aaroncz
 ms.date: 03/30/2023
-ms.technology: itpro-security
 ms.topic: article
 ---
 
 # Windows Defender Application Control operational guide
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).

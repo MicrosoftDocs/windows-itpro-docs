@@ -1,15 +1,9 @@
 ---
 title: Use AppLocker and Software Restriction Policies in the same domain
 description: This article for IT professionals describes concepts and procedures to help you manage your application control strategy using Software Restriction Policies and AppLocker.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 11/07/2022
-ms.technology: itpro-security
 ---
 
 # Use AppLocker and Software Restriction Policies in the same domain

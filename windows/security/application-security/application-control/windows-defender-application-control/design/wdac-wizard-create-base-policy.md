@@ -1,30 +1,12 @@
 ---
 title: Windows Defender Application Control Wizard Base Policy Creation
 description: Creating new base application control policies with the Microsoft Windows Defender Application (WDAC) Wizard.
-keywords: allow listing, block listing, security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
-author: jgeurten
-ms.reviewer: jsuther1974
-ms.author: vinpa
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 06/07/2023
-ms.technology: itpro-security
 ---
 
 # Creating a new Base Policy with the Wizard
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
@@ -65,7 +47,7 @@ The following table has a description of each policy rule, beginning with the le
 |**[Hypervisor-protected code integrity (HVCI)](../../../../hardware-security/enable-virtualization-based-protection-of-code-integrity.md)**| When enabled, policy enforcement uses virtualization-based security to run the code integrity service inside a secure environment. HVCI provides stronger protections against kernel malware.|
 | **Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by the Microsoft Intelligent Security Graph (ISG). |
 | **Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as Microsoft Configuration Manager, that has been defined as a managed installer. |
-| **Require WHQL** | By default, legacy drivers that aren't Windows Hardware Quality Labs (WHQL) signed are allowed to execute. Enabling this rule requires that every executed driver is WHQL signed and removes legacy driver support. Henceforth, every new Windows–compatible driver must be WHQL certified. |
+| **Require WHQL** | By default, legacy drivers that aren't Windows Hardware Quality Labs (WHQL) signed are allowed to execute. Enabling this rule requires that every executed driver is WHQL signed and removes legacy driver support. Henceforth, every new Windows-compatible driver must be WHQL certified. |
 | **Update Policy without Rebooting** | Use this option to allow future Windows Defender Application Control policy updates to apply without requiring a system reboot. |
 | **Unsigned System Integrity Policy** | Allows the policy to remain unsigned. When this option is removed, the policy must be signed and have UpdatePolicySigners added to the policy to enable future policy modifications. |
 | **User Mode Code Integrity** | Windows Defender Application Control policies restrict both kernel-mode and user-mode binaries. By default, only kernel-mode binaries are restricted. Enabling this rule option validates user mode executables and scripts. |
@@ -89,7 +71,7 @@ Selecting the **+ Advanced Options** label shows another column of policy rules,
 ![Rule options UI for Windows Allowed mode.](../images/wdac-wizard-rule-options-UI.png)
 
 > [!NOTE]
-> We recommend that you **enable Audit Mode** initially because it allows you to test new Windows Defender Application Control policies before you enforce them. With audit mode, no application is blocked—instead the policy logs an event whenever an application outside the policy is started. For this reason, all templates have Audit Mode enabled by default.
+> We recommend that you **enable Audit Mode** initially because it allows you to test new Windows Defender Application Control policies before you enforce them. With audit mode, no application is blocked-instead the policy logs an event whenever an application outside the policy is started. For this reason, all templates have Audit Mode enabled by default.
 
 ## Creating custom file rules
 
@@ -105,7 +87,6 @@ The Publisher file rule type uses properties in the code signing certificate cha
 | **Publisher** | Publisher | This rule is a combination of the PCACertificate rule and the common name (CN) of the leaf certificate. Any file signed by a major CA but with a leaf from a specific company, for example, a device driver corp, is affected. |
 | **File version** | SignedVersion | This rule is a combination of PCACertificate, publisher, and a version number. Anything from the specified publisher with a version at or above the one specified is affected. |
 | **File name** | FilePublisher | Most specific. Combination of the file name, publisher, and PCA certificate and a minimum version number. Files from the publisher with the specified name and greater or equal to the specified version are affected. |
-
 
 ![Custom filepublisher file rule creation.](../images/wdac-wizard-custom-publisher-rule.png)
 

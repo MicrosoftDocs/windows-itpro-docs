@@ -1,15 +1,9 @@
 ---
 title: Understanding the publisher rule condition in AppLocker
 description: This topic explains the AppLocker publisher rule condition, what controls are available, and how it's applied.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: itpro-security
 ---
 
 # Understanding the publisher rule condition in AppLocker

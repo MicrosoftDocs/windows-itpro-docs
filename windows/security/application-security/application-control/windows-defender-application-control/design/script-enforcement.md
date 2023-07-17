@@ -1,27 +1,13 @@
 ---
 title: Understand WDAC script enforcement
 description: WDAC script enforcement
-keywords: security, malware
-ms.prod: windows-client
-audience: ITPro
-author: jsuther1974
-ms.reviewer: jogeurte
-ms.author: jogeurte
 ms.manager: jsuther
-manager: aaroncz
 ms.date: 05/26/2023
-ms.technology: itpro-security
 ms.topic: article
 ms.localizationpriority: medium
 ---
 
 # Script enforcement with Windows Defender Application Control (WDAC)
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).

@@ -1,30 +1,12 @@
 ---
-title: Understand Windows Defender Application Control (WDAC) policy rules and file rules 
+title: Understand Windows Defender Application Control (WDAC) policy rules and file rules
 description: Learn how WDAC policy rules and file rules can control your Windows 10 and Windows 11 computers.
-keywords: security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
-author: jgeurten
-ms.reviewer: jsuther1974
-ms.author: vinpa
-manager: aaroncz
 ms.date: 06/07/2023
-ms.technology: itpro-security
 ms.topic: article
 ---
 
 # Understand Windows Defender Application Control (WDAC) policy rules and file rules
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and later
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [WDAC feature availability](../feature-availability.md).
@@ -38,7 +20,7 @@ To modify the policy rule options of an existing WDAC policy XML, use the [WDAC 
 You can set several rule options within a WDAC policy. Table 1 describes each rule option, and whether supplemental policies can set them. Some rule options are reserved for future work or not supported.
 
 > [!NOTE]
-> We recommend that you use **Enabled:Audit Mode** initially because it allows you to test new WDAC policies before you enforce them. With audit mode, no application is blocked—instead the policy logs an event whenever an application outside the policy is started. To allow these applications, you can capture the policy information from the event log, and then merge that information into the existing policy. When the **Enabled:Audit Mode** is deleted, the policy runs in enforced mode.
+> We recommend that you use **Enabled:Audit Mode** initially because it allows you to test new WDAC policies before you enforce them. With audit mode, no application is blocked-instead the policy logs an event whenever an application outside the policy is started. To allow these applications, you can capture the policy information from the event log, and then merge that information into the existing policy. When the **Enabled:Audit Mode** is deleted, the policy runs in enforced mode.
 
 ### Table 1. Windows Defender Application Control policy - policy rule options
 

@@ -1,30 +1,12 @@
 ---
-title: Create a code signing cert for Windows Defender Application Control 
+title: Create a code signing cert for Windows Defender Application Control
 description: Learn how to set up a publicly issued code signing certificate, so you can sign catalog files or WDAC policies internally.
-keywords: security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
 ms.topic: conceptual
-author: jsuther1974
-ms.reviewer: jogeurte
-ms.author: vinpa
-manager: aaroncz
 ms.date: 12/01/2022
-ms.technology: itpro-security
 ---
 
 # Optional: Create a code signing cert for Windows Defender Application Control  
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).

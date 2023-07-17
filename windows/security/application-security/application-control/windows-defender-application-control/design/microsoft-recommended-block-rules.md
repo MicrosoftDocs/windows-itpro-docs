@@ -1,24 +1,12 @@
 ---
 title: Microsoft recommended block rules
 description: View a list of recommended block rules, based on knowledge shared between Microsoft and the wider security community.
-ms.prod: windows-client
-ms.technology: itpro-security
 ms.localizationpriority: medium
-author: jsuther1974
-ms.reviewer: jgeurten
-ms.author: vinpa
-manager: aaroncz
 ms.date: 06/14/2023
 ms.topic: reference
 ---
 
 # Microsoft recommended block rules
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [WDAC feature availability](../feature-availability.md).
@@ -99,7 +87,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 > [!NOTE]
 > This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered.
 
-Certain software applications may allow other code to run by design. Unless these applications are business critical, you should block them in your WDAC policy. In addition, when an application version is upgraded to fix a security vulnerability or potential WDAC bypass, add *deny* rules to your application control policies for that application’s previous, less secure versions.
+Certain software applications may allow other code to run by design. Unless these applications are business critical, you should block them in your WDAC policy. In addition, when an application version is upgraded to fix a security vulnerability or potential WDAC bypass, add *deny* rules to your application control policies for that application's previous, less secure versions.
 
 Microsoft recommends that you install the latest security updates. For example, updates help resolve several issues in PowerShell modules that allowed an attacker to bypass WDAC. These modules can be blocked by their corresponding hashes.
 
@@ -198,7 +186,7 @@ The blocklist policy that follows includes "Allow all" rules for both kernel and
     <Deny ID="ID_DENY_WSLCONFIG" FriendlyName="wslconfig.exe" FileName="wslconfig.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <Deny ID="ID_DENY_WSLHOST" FriendlyName="wslhost.exe" FileName="wslhost.exe" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65355.65355.65355.65355" />
     <!-- pick the correct version of msxml3.dll, msxml6.dll, and jscript9.dll based on the release you are supporting -->
-    <!-- the versions of these files in the 1903 release have this issue fixed, so they don’t need to be blocked -->
+    <!-- the versions of these files in the 1903 release have this issue fixed, so they don't need to be blocked -->
     <!-- RS1 Windows 1607
     <Deny  ID="ID_DENY_MSXML3"        FriendlyName="msxml3.dll"         FileName="msxml3.dll" MinimumFileVersion ="8.110.14393.2550"/>
     <Deny  ID="ID_DENY_MSXML6"        FriendlyName="msxml6.dll"         FileName="msxml6.dll" MinimumFileVersion ="6.30.14393.2550"/>

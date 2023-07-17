@@ -1,15 +1,9 @@
 ---
 title: Understanding the file hash rule condition in AppLocker
 description: This topic explains the AppLocker file hash rule condition, the advantages and disadvantages, and how it's applied.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: itpro-security
 ---
 
 # Understanding the file hash rule condition in AppLocker

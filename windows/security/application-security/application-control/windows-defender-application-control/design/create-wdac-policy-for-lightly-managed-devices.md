@@ -1,30 +1,12 @@
 ---
-title: Create a WDAC policy for lightly managed devices 
+title: Create a WDAC policy for lightly managed devices
 description: Windows Defender Application Control restricts which applications users are allowed to run and the code that runs in the system core.
-keywords: security, malware
 ms.topic: conceptual
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
-author: jsuther1974
-ms.reviewer: jogeurte
-ms.author: vinpa
-manager: aaroncz
 ms.date: 11/07/2022
-ms.technology: itpro-security
 ---
 
 # Create a WDAC policy for lightly managed devices
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
@@ -52,12 +34,12 @@ Alice identifies the following key factors to arrive at the "circle-of-trust" fo
 
 Based on the above, Alice defines the pseudo-rules for the policy:
 
-1. **“Windows works”** rules that authorize:
+1. **"Windows works"** rules that authorize:
    - Windows
    - WHQL (third-party kernel drivers)
    - Windows Store signed apps
 
-1. **"ConfigMgr works”** rules that include:
+1. **"ConfigMgr works"** rules that include:
     - Signer and hash rules for Configuration Manager components to properly function.
     - **Allow Managed Installer** rule to authorize Configuration Manager as a managed installer.
 

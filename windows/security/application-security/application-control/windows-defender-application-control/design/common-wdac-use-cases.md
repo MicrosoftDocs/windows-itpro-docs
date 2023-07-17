@@ -1,35 +1,17 @@
 ---
-title: Policy creation for common WDAC usage scenarios 
+title: Policy creation for common WDAC usage scenarios
 description: Develop a plan for deploying Windows Defender Application Control (WDAC) in your organization based on these common scenarios.
-keywords: security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
-author: jsuther1974
-ms.reviewer: jogeurte
-ms.author: vinpa
-manager: aaroncz
 ms.date: 04/05/2023
-ms.technology: itpro-security
 ms.topic: article
 ---
 
 # Windows Defender Application Control deployment in different scenarios: types of devices
 
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
-
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
 
-Typically, deployment of Windows Defender Application Control (WDAC) happens best in phases, rather than being a feature that you simply “turn on.” The choice and sequence of phases depends on the way various computers and other devices are used in your organization, and to what degree IT manages those devices. The following table can help you begin to develop a plan for deploying WDAC in your organization. It's common for organizations to have device use cases across each of the categories described.
+Typically, deployment of Windows Defender Application Control (WDAC) happens best in phases, rather than being a feature that you simply "turn on." The choice and sequence of phases depends on the way various computers and other devices are used in your organization, and to what degree IT manages those devices. The following table can help you begin to develop a plan for deploying WDAC in your organization. It's common for organizations to have device use cases across each of the categories described.
 
 ## Types of devices
 

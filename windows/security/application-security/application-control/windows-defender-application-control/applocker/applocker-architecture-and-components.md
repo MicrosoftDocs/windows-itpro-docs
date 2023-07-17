@@ -1,15 +1,9 @@
 ---
 title: AppLocker architecture and components
 description: This topic for IT professional describes AppLocker’s basic architecture and its major components.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: itpro-security
 ---
 
 # AppLocker architecture and components

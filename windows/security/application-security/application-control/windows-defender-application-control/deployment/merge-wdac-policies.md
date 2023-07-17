@@ -1,27 +1,13 @@
 ---
-title: Merge Windows Defender Application Control policies (WDAC) 
+title: Merge Windows Defender Application Control policies (WDAC)
 description: Learn how to merge WDAC policies as part of your policy lifecycle management.
-keywords: security, malware
-ms.prod: windows-client
-audience: ITPro
-author: jsuther1974
-ms.reviewer: jogeurte
-ms.author: jogeurte
 ms.manager: jsuther
-manager: aaroncz
 ms.date: 04/22/2021
-ms.technology: itpro-security
 ms.topic: article
 ms.localizationpriority: medium
 ---
 
 # Merge Windows Defender Application Control (WDAC) policies
-
-**Applies to:**
-
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).

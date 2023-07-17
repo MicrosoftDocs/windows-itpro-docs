@@ -1,15 +1,9 @@
 ---
 title: Tools to use with AppLocker
 description: This topic for the IT professional describes the tools available to create and administer AppLocker policies.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: itpro-security
 ---
 
 # Tools to use with AppLocker

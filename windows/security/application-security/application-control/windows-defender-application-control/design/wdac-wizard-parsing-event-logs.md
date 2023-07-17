@@ -1,30 +1,12 @@
 ---
 title: Windows Defender Application Control Wizard WDAC Event Parsing
 description: Creating WDAC policy rules from the WDAC event logs and the MDE Advanced Hunting WDAC events.
-keywords: WDAC event parsing, allow listing, block listing, security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
-author: jgeurten
-ms.reviewer: jsuther1974
-ms.author: vinpa
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 02/01/2023
-ms.technology: itpro-security
 ---
 
 # Creating WDAC Policy Rules from WDAC Events in the Wizard
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
@@ -34,7 +16,6 @@ As of [version 2.2.0.0](https://webapp-wdac-wizard.azurewebsites.net/archives.ht
 1. [WDAC event log events on the system](#wdac-event-viewer-log-parsing)
 2. [Exported WDAC events (EVTX files) from any system](#wdac-event-log-file-parsing)
 3. [Exported WDAC events from MDE Advanced Hunting](#mde-advanced-hunting-wdac-event-parsing)
-
 
 ## WDAC Event Viewer Log Parsing
 
@@ -134,7 +115,6 @@ To create a rule and add it to the WDAC policy:
 
 > [!WARNING]
 > It is not recommended to deploy the event log policy on its own, as it likely lacks rules to authorize Windows and may cause blue screens.
-
 
 ## Up next
 

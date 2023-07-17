@@ -1,20 +1,8 @@
 ---
-title: Understanding Application Control event tags 
+title: Understanding Application Control event tags
 description: Learn what different Windows Defender Application Control event tags signify.
-keywords: security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
-author: jsuther1974
-ms.reviewer: jogeurte
-ms.author: vinpa
-manager: aaroncz
 ms.date: 05/09/2023
-ms.technology: itpro-security
 ms.topic: article
 ---
 
@@ -169,7 +157,7 @@ The rule means trust anything signed by a certificate that chains to this root C
 | 18 | Microsoft ECC Product Root CA 2018 |
 | 19 | Microsoft ECC Devices Root CA 2017 |
 
-For well-known roots, the TBS hashes for the certificates are baked into the code for Windows Defender Application Control. For example, they don’t need to be listed as TBS hashes in the policy file.
+For well-known roots, the TBS hashes for the certificates are baked into the code for Windows Defender Application Control. For example, they don't need to be listed as TBS hashes in the policy file.
 
 ## Status values
 

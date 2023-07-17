@@ -1,31 +1,12 @@
 ---
 title: WDAC and AppLocker Overview
 description: Compare Windows application control technologies.
-keywords: security, malware, allow-list, block-list
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
-author: vinaypamnani-msft
-ms.reviewer: jsuther
-ms.author: vinpa
-manager: aaroncz
 ms.date: 04/04/2023
-ms.custom: asr
-ms.technology: itpro-security
 ms.topic: article
 ---
 
 # Windows Defender Application Control and AppLocker Overview
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).

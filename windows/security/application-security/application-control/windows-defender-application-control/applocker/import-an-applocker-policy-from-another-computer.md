@@ -1,14 +1,8 @@
 ---
 title: Import an AppLocker policy from another computer
 description: This topic for IT professionals describes how to import an AppLocker policy.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
-ms.technology: itpro-security
 ms.date: 12/31/2017
 ---
 

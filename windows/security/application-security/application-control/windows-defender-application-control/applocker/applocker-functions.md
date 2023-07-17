@@ -1,15 +1,9 @@
 ---
 title: AppLocker functions
 description: This article for the IT professional lists the functions and security levels for the Software Restriction Policies (SRP) and AppLocker features.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: itpro-security
 ---
 
 # AppLocker functions

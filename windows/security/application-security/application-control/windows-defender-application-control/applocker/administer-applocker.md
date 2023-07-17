@@ -1,15 +1,9 @@
 ---
 title: Administer AppLocker
 description: This topic for IT professionals provides links to specific procedures to use when administering AppLocker policies.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 02/28/2019
-ms.technology: itpro-security
 ---
 
 # Administer AppLocker

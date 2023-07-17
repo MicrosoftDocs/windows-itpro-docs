@@ -1,30 +1,12 @@
 ---
-title: Create a WDAC policy using a reference computer 
+title: Create a WDAC policy using a reference computer
 description: To create a Windows Defender Application Control (WDAC) policy that allows all code installed on a reference computer within your organization, follow this guide.
-keywords: security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
-author: jsuther1974
-ms.reviewer: jogeurte
-ms.author: vinpa
-manager: aaroncz
 ms.date: 08/08/2022
-ms.technology: itpro-security
 ms.topic: article
 ---
 
 # Create a WDAC policy using a reference computer
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
@@ -40,7 +22,7 @@ As described in [common Windows Defender Application Control deployment scenario
 
 ## Create a custom base policy using a reference device
 
-Alice previously created a policy for the organization's fully managed end-user devices. She now wants to use WDAC to protect Lamna's critical infrastructure servers. Lamna's imaging practice for infrastructure systems is to establish a “golden” image as a reference for what an ideal system should look like, and then use that image to clone more company assets. Alice decides to use these same "golden" image systems to create the WDAC policies, which will result in separate custom base policies for each type of infrastructure server. As with imaging, she'll have to create policies from multiple golden computers based on model, department, application set, and so on.
+Alice previously created a policy for the organization's fully managed end-user devices. She now wants to use WDAC to protect Lamna's critical infrastructure servers. Lamna's imaging practice for infrastructure systems is to establish a "golden" image as a reference for what an ideal system should look like, and then use that image to clone more company assets. Alice decides to use these same "golden" image systems to create the WDAC policies, which will result in separate custom base policies for each type of infrastructure server. As with imaging, she'll have to create policies from multiple golden computers based on model, department, application set, and so on.
 
 > [!NOTE]
 > Make sure the reference computer is virus and malware-free, and install any software you want to be scanned before creating the WDAC policy. <br><br> Each installed software application should be validated as trustworthy before you create a policy. <br><br> We recommend that you review the reference computer for software that can load arbitrary DLLs and run code or scripts that could render the PC more vulnerable. Examples include software aimed at development or scripting such as msbuild.exe (part of Visual Studio and the .NET Framework) which can be removed if you don't want to run scripts. You can remove or disable such software on the reference computer.
@@ -53,7 +35,7 @@ Alice identifies the following key factors to arrive at the "circle-of-trust" fo
 
 Based on the above, Alice defines the pseudo-rules for the policy:
 
-1. **“Windows works”** rules that authorize:
+1. **"Windows works"** rules that authorize:
    - Windows
    - WHQL (third-party kernel drivers)
    - Windows Store signed apps

@@ -1,15 +1,9 @@
 ---
 title: Create a list of apps deployed to each business group
 description: This topic describes the process of gathering app usage requirements from each business group to implement application control policies by using AppLocker.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: itpro-security
 ---
 
 # Create a list of apps deployed to each business group

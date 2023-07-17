@@ -1,27 +1,13 @@
 ---
 title: Inbox WDAC policies
 description: This article describes the inbox WDAC policies that may be active on a device.
-keywords: security, malware
-ms.prod: windows-client
-audience: ITPro
-author: jsuther1974
-ms.reviewer: jogeurte
-ms.author: jogeurte
 ms.manager: jsuther
-manager: aaroncz
 ms.date: 03/10/2023
-ms.technology: itpro-security
 ms.topic: article
 ms.localizationpriority: medium
 ---
 
 # Inbox WDAC policies
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).

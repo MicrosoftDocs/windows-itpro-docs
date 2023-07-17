@@ -1,14 +1,8 @@
 ---
 title: Maintain AppLocker policies
 description: Learn how to maintain rules within AppLocker policies. View common AppLocker maintenance scenarios and see the methods to use to maintain AppLocker policies.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
-ms.technology: itpro-security
 ms.date: 12/31/2017
 ---
 

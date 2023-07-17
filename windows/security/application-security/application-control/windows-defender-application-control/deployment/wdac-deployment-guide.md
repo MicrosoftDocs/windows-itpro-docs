@@ -1,24 +1,12 @@
 ---
 title: Deploying Windows Defender Application Control (WDAC) policies
 description: Learn how to plan and implement a WDAC deployment.
-ms.prod: windows-client
-ms.technology: itpro-security
 ms.localizationpriority: medium
-author: jgeurten
-ms.reviewer: aaroncz
-ms.author: jogeurte
-manager: jsuther
 ms.date: 01/23/2023
 ms.topic: overview
 ---
 
 # Deploying Windows Defender Application Control (WDAC) policies
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).

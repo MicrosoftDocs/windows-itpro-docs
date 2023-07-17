@@ -1,24 +1,12 @@
 ---
 title: Deploy Windows Defender Application Control policies with Configuration Manager
 description: You can use Microsoft Configuration Manager to configure Windows Defender Application Control (WDAC). Learn how with this step-by-step guide.
-ms.prod: windows-client
-ms.technology: itpro-security
-author: jgeurten
-ms.reviewer: aaroncz
-ms.author: jogeurte
-manager: aaroncz
 ms.date: 06/27/2022
 ms.topic: how-to
 ms.localizationpriority: medium
 ---
 
 # Deploy WDAC policies by using Microsoft Configuration Manager
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Application Control feature availability](../feature-availability.md).

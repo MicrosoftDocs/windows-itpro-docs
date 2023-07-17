@@ -1,27 +1,13 @@
 ---
-title: Enforce Windows Defender Application Control (WDAC) policies 
+title: Enforce Windows Defender Application Control (WDAC) policies
 description: Learn how to switch a WDAC policy from audit to enforced mode.
-keywords: security, malware
-ms.prod: windows-client
-audience: ITPro
-author: jsuther1974
-ms.reviewer: jogeurte
-ms.author: jogeurte
 ms.manager: jsuther
-manager: aaroncz
 ms.date: 04/22/2021
-ms.technology: itpro-security
 ms.topic: article
 ms.localizationpriority: medium
 ---
 
 # Enforce Windows Defender Application Control (WDAC) policies
-
-**Applies to:**
-
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
@@ -55,8 +41,7 @@ Alice previously created and deployed a policy for the organization's [fully man
    $EnforcedPolicyID = $EnforcedPolicyID.Substring(11)
    ```
 
-
-3. *[Optionally]* Use [Set-RuleOption](/powershell/module/configci/set-ruleoption) to enable rule options 9 (“Advanced Boot Options Menu”) and 10 (“Boot Audit on Failure”). Option 9 allows users to disable WDAC enforcement for a single boot session from a pre-boot menu. Option 10 instructs Windows to switch the policy from enforcement to audit only if a boot critical kernel-mode driver is blocked. We strongly recommend these options when deploying a new enforced policy to your first deployment ring. Then, if no issues are found, you can remove the options and restart your deployment.
+3. *[Optionally]* Use [Set-RuleOption](/powershell/module/configci/set-ruleoption) to enable rule options 9 ("Advanced Boot Options Menu") and 10 ("Boot Audit on Failure"). Option 9 allows users to disable WDAC enforcement for a single boot session from a pre-boot menu. Option 10 instructs Windows to switch the policy from enforcement to audit only if a boot critical kernel-mode driver is blocked. We strongly recommend these options when deploying a new enforced policy to your first deployment ring. Then, if no issues are found, you can remove the options and restart your deployment.
 
    ```powershell
    Set-RuleOption -FilePath $EnforcedPolicyXML -Option 9

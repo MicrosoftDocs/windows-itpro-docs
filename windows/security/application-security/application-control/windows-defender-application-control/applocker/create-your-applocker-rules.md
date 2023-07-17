@@ -1,15 +1,9 @@
 ---
 title: Create Your AppLocker rules
 description: This topic for the IT professional describes what you need to know about AppLocker rules and the methods that you can to create rules.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: itpro-security
 ---
 
 # Create Your AppLocker rules

@@ -2,23 +2,11 @@
 title: Example Windows Defender Application Control base policies
 description: When creating a Windows Defender Application Control (WDAC) policy for an organization, start from one of the many available example base policies.
 ms.topic: reference
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: jsuther1974
-ms.reviewer: jogeurte
-ms.author: vinpa
-manager: aaroncz
 ms.date: 03/31/2023
-ms.technology: itpro-security
 ---
 
 # Windows Defender Application Control example base policies
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. For more information, see [Windows Defender Application Control feature availability](../feature-availability.md).

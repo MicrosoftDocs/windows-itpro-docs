@@ -1,15 +1,9 @@
 ---
 title: Script rules in AppLocker
 description: This article describes the file formats and available default rules for the script rule collection.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 06/15/2022
-ms.technology: itpro-security
 ---
 
 # Script rules in AppLocker

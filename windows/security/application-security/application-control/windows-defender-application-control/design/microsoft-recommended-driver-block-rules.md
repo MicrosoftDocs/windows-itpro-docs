@@ -1,33 +1,15 @@
 ---
 title: Microsoft recommended driver block rules
 description: View a list of recommended block rules to block vulnerable third-party drivers discovered by Microsoft and the security research community.
-keywords: security, malware, kernel mode, driver
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
 ms.collection:
-  - highpri
-  - tier3
-author: jgeurten
-ms.reviewer: jsuther
-ms.author: vinpa
-manager: aaroncz
+- highpri
+- tier3
 ms.date: 06/06/2023
-ms.technology: itpro-security
 ms.topic: article
 ---
 
 # Microsoft recommended driver block rules
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).

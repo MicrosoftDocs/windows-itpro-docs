@@ -1,25 +1,12 @@
 ---
 title: Windows Defender Application Control feature availability
 description: Compare Windows Defender Application Control (WDAC) and AppLocker feature availability.
-ms.prod: windows-client
-ms.technology: itpro-security
 ms.localizationpriority: medium
-author: jgeurten
-ms.reviewer: aaroncz
-ms.author: jogeurte
-manager: aaroncz
 ms.date: 05/26/2023
-ms.custom: asr
 ms.topic: overview
 ---
 
 # Windows Defender Application Control and AppLocker feature availability
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. See below to learn more.

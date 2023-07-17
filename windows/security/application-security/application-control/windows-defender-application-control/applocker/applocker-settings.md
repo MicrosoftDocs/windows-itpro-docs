@@ -1,15 +1,9 @@
 ---
 title: AppLocker settings
 description: This topic for the IT professional lists the settings used by AppLocker.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: itpro-security
 ---
 
 # AppLocker settings

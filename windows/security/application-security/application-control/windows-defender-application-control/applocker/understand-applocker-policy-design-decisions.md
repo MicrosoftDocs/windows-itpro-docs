@@ -1,15 +1,9 @@
 ---
 title: Understand AppLocker policy design decisions
 description: Review some common considerations while you're planning to use AppLocker to deploy application control policies within a Windows environment.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 10/13/2017
-ms.technology: itpro-security
 ---
 
 # Understand AppLocker policy design decisions

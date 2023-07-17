@@ -1,24 +1,12 @@
 ---
-title: Deploy WDAC policies using Mobile Device Management (MDM) 
+title: Deploy WDAC policies using Mobile Device Management (MDM)
 description: You can use an MDM like Microsoft Intune to configure Windows Defender Application Control (WDAC). Learn how with this step-by-step guide.
-ms.prod: windows-client
-ms.technology: itpro-security
 ms.localizationpriority: medium
-author: jsuther1974
-ms.reviewer: jogeurte
-ms.author: vinpa
-manager: aaroncz
 ms.date: 01/23/2023
 ms.topic: how-to
 ---
 
 # Deploy WDAC policies using Mobile Device Management (MDM)
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).

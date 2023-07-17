@@ -1,14 +1,8 @@
 ---
 title: Understanding Windows Defender Application Control (WDAC) secure settings
 description: Learn about secure settings in Windows Defender Application Control.
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: jgeurten
-ms.reviewer: vinpa
-ms.author: jogeurte
-manager: aaroncz
 ms.date: 04/05/2023
-ms.technology: itpro-security
 ms.topic: article
 ---
 
@@ -30,7 +24,7 @@ An example settings section of a Windows Defender Application Control policy:
 
 ## Example Scenario
 
-An application that may want to restrict its capabilities, when used on a system with an active Windows Defender Application Control policy. Application authors can define a WDAC policy, setting their application queries, in order to disable certain features. For example, if Contoso’s Foo Application wants to disable a risky feature, such as macro execution, they can define a WDAC policy setting, and query for it at runtime. Contoso can then instruct IT administrators to configure the setting in their WDAC policy, if they don’t want Foo Application to execute macros on a system with a WDAC policy.
+An application that may want to restrict its capabilities, when used on a system with an active Windows Defender Application Control policy. Application authors can define a WDAC policy, setting their application queries, in order to disable certain features. For example, if Contoso's Foo Application wants to disable a risky feature, such as macro execution, they can define a WDAC policy setting, and query for it at runtime. Contoso can then instruct IT administrators to configure the setting in their WDAC policy, if they don't want Foo Application to execute macros on a system with a WDAC policy.
 
 ## WldpQuerySecurityPolicy
 
@@ -67,7 +61,7 @@ Pointer to receive the value type.
 
 #### Value [in, out]
 
-Pointer to a buffer to receive the value. The buffer should be of size “ValueSize”. If this value is NULL, this function returns the required buffer size for Value.
+Pointer to a buffer to receive the value. The buffer should be of size "ValueSize". If this value is NULL, this function returns the required buffer size for Value.
 
 #### ValueSize [in, out]
 

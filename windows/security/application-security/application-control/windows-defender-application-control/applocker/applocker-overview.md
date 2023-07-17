@@ -1,9 +1,6 @@
 ---
 title: AppLocker
 description: This article provides a description of AppLocker and can help you decide if your organization can benefit from deploying AppLocker application control policies.
-ms.author: vinpa
-author: vinaypamnani-msft
-manager: aaroncz
 ms.collection:
 - highpri
 - tier3

@@ -1,15 +1,9 @@
 ---
 title: What Is AppLocker
 description: This topic for the IT professional describes what AppLocker is and how its features differ from Software Restriction Policies.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: itpro-security
 ---
 
 # What Is AppLocker?

@@ -1,15 +1,9 @@
 ---
 title: Configure the Application Identity service
 description: This topic for IT professionals shows how to configure the Application Identity service to start automatically or manually.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 07/01/2021
-ms.technology: itpro-security
 ---
 
 # Configure the Application Identity service

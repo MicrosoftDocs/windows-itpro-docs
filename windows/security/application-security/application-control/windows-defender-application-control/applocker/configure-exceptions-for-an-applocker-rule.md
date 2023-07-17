@@ -1,15 +1,9 @@
 ---
 title: Add exceptions for an AppLocker rule
 description: This topic for IT professionals describes the steps to specify which apps can or cannot run as exceptions to an AppLocker rule.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: itpro-security
 ---
 
 # Add exceptions for an AppLocker rule

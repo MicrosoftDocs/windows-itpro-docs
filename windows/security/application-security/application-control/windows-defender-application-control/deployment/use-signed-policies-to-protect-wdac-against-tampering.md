@@ -1,24 +1,12 @@
 ---
 title: Use signed policies to protect Windows Defender Application Control against tampering
 description: Signed Windows Defender Application Control (WDAC) policies give organizations the highest level of malware protection available in Windows 10 and Windows 11.
-ms.prod: windows-client
 ms.localizationpriority: medium
 ms.topic: conceptual
-author: jsuther1974
-ms.reviewer: jogeurte
-ms.author: vinpa
-manager: aaroncz
 ms.date: 11/04/2022
-ms.technology: itpro-security
 ---
 
 # Use signed policies to protect Windows Defender Application Control against tampering
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. For more information, see [Windows Defender Application Control feature availability](../feature-availability.md).

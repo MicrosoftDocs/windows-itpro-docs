@@ -1,30 +1,12 @@
 ---
-title: Windows Defender Application Control design guide 
+title: Windows Defender Application Control design guide
 description: Microsoft Windows Defender Application Control allows organizations to control what apps and drivers will run on their managed Windows devices.
-keywords: security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
-author: jsuther1974
-ms.reviewer: isbrahm
-ms.author: vinpa
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 02/20/2018
-ms.technology: itpro-security
 ---
 
 # Windows Defender Application Control design guide
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).

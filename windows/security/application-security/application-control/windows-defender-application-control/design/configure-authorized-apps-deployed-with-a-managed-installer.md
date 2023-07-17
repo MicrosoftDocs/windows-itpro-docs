@@ -1,30 +1,12 @@
 ---
-title: Allow apps deployed with a WDAC managed installer 
+title: Allow apps deployed with a WDAC managed installer
 description: Explains how to configure a custom Managed Installer.
-keywords: security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
-author: jsuther1974
-ms.reviewer: jogeurte
-ms.author: vinpa
-manager: aaroncz
 ms.date: 02/02/2023
-ms.technology: itpro-security
 ms.topic: article
 ---
 
 # Automatically allow apps deployed by a managed installer with Windows Defender Application Control
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2019 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).

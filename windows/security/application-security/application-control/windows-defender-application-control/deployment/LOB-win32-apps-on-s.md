@@ -1,22 +1,12 @@
 ---
 title: Allow LOB Win32 apps on Intune-managed S Mode devices
 description: Using Windows Defender Application Control (WDAC) supplemental policies, you can expand the S Mode base policy on your Intune-managed devices.
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: jsuther1974
-ms.reviewer: jogeurte
-ms.author: vinpa
-manager: aaroncz
 ms.date: 04/05/2023
-ms.technology: itpro-security
 ms.topic: how-to
 ---
 
 # Allow line-of-business Win32 apps on Intune-managed S Mode devices
-
-**Applies to:**
-
-- Windows 10
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. For more information, see [Windows Defender Application Control feature availability](../feature-availability.md).

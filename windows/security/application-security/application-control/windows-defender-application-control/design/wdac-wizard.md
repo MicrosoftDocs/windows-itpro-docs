@@ -1,24 +1,12 @@
 ---
 title: Windows Defender Application Control Wizard
 description: The Windows Defender Application Control policy wizard tool allows you to create, edit, and merge application control policies in a simple to use Windows application.
-ms.prod: windows-client
-ms.technology: itpro-security
 ms.localizationpriority: medium
-author: jgeurten
-ms.reviewer: isbrahm
-ms.author: vinpa
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 05/24/2022
 ---
 
 # Windows Defender Application Control Wizard
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).

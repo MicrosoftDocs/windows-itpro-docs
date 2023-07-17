@@ -1,30 +1,12 @@
 ---
-title: Remove Windows Defender Application Control policies  
+title: Remove Windows Defender Application Control policies
 description: Learn how to disable both signed and unsigned Windows Defender Application Control policies, within Windows and within the BIOS.
-keywords: security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
-author: jsuther1974
-ms.reviewer: jogeurte
-ms.author: vinpa
-manager: aaroncz
 ms.date: 11/04/2022
-ms.technology: itpro-security
 ms.topic: article
 ---
 
 # Remove Windows Defender Application Control (WDAC) policies
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).

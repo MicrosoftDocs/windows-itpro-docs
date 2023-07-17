@@ -1,15 +1,9 @@
 ---
 title: Plan for AppLocker policy management
 description: This topic describes the decisions you need to make to establish the processes for managing and maintaining AppLocker policies.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: itpro-security
 ---
 
 # Plan for AppLocker policy management

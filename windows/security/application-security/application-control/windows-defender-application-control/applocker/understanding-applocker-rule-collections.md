@@ -1,15 +1,9 @@
 ---
 title: Understanding AppLocker rule collections
 description: This topic explains the five different types of AppLocker rules used to enforce AppLocker policies.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: itpro-security
 ---
 
 # Understanding AppLocker rule collections

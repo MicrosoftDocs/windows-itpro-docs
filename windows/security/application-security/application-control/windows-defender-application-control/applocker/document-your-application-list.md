@@ -1,15 +1,9 @@
 ---
 title: Document your app list
 description: This planning topic describes the app information that you should document when you create a list of apps for AppLocker policies.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: itpro-security
 ---
 
 # Document your app list

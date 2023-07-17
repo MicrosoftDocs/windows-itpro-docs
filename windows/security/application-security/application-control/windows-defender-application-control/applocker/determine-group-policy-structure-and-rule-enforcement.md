@@ -1,15 +1,9 @@
 ---
 title: Determine the Group Policy structure and rule enforcement
 description: This overview topic describes the process to follow when you're planning to deploy AppLocker rules.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: itpro-security
 ---
 
 # Determine the Group Policy structure and rule enforcement

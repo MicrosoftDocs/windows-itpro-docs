@@ -1,30 +1,12 @@
 ---
-title: Use audit events to create WDAC policy rules 
+title: Use audit events to create WDAC policy rules
 description: Audits allow admins to discover apps, binaries, and scripts that should be added to the WDAC policy.
-keywords: security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
-author: jsuther1974
-ms.reviewer: jogeurte
-ms.author: vinpa
-manager: aaroncz
 ms.date: 05/03/2018
-ms.technology: itpro-security
 ms.topic: article
 ---
 
 # Use audit events to create WDAC policy rules
-
-**Applies to:**
-
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Application Control feature availability](../feature-availability.md).
@@ -59,7 +41,7 @@ To familiarize yourself with creating WDAC rules from audit events, follow these
 4. Use [New-CIPolicy](/powershell/module/configci/new-cipolicy) to generate a new WDAC policy from logged audit events. This example uses a **FilePublisher** file rule level and a **Hash** fallback level. Warning messages are redirected to a text file **EventsPolicyWarnings.txt**.
 
    ```powershell
-   New-CIPolicy -FilePath $EventsPolicy -Audit -Level FilePublisher -Fallback SignedVersion,FilePublisher,Hash –UserPEs -MultiplePolicyFormat 3> $EventsPolicyWarnings
+   New-CIPolicy -FilePath $EventsPolicy -Audit -Level FilePublisher -Fallback SignedVersion,FilePublisher,Hash -UserPEs -MultiplePolicyFormat 3> $EventsPolicyWarnings
    ```
 
    > [!NOTE]

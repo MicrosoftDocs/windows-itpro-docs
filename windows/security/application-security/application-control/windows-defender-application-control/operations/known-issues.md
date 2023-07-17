@@ -1,27 +1,13 @@
 ---
 title: WDAC Admin Tips & Known Issues
 description: WDAC Known Issues
-keywords: security, malware
-ms.prod: windows-client
-audience: ITPro
-author: jsuther1974
-ms.reviewer: jogeurte
-ms.author: jogeurte
 ms.manager: jsuther
-manager: aaroncz
 ms.date: 05/09/2023
-ms.technology: itpro-security
 ms.topic: article
 ms.localizationpriority: medium
 ---
 
 # WDAC Admin Tips & Known Issues
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and later
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -87,13 +73,13 @@ Installing .msi files directly from the internet to a computer protected by WDAC
 For example, this command fails:
 
 ```console
-msiexec –i https://download.microsoft.com/download/2/E/3/2E3A1E42-8F50-4396-9E7E-76209EA4F429/Windows10_Version_1511_ADMX.msi
+msiexec -i https://download.microsoft.com/download/2/E/3/2E3A1E42-8F50-4396-9E7E-76209EA4F429/Windows10_Version_1511_ADMX.msi
 ```
 
 As a workaround, download the MSI file and run it locally:
 
 ```console
-msiexec –i c:\temp\Windows10_Version_1511_ADMX.msi  
+msiexec -i c:\temp\Windows10_Version_1511_ADMX.msi  
 ```
 ### Slow boot and performance with custom policies
 
@@ -108,6 +94,5 @@ If you can't allowlist the Windows signers, or build off the WDAC base templates
 :::image type="content" source="../images/known-issue-appid-dll-rule.png" alt-text="Allow all dlls in the policy.":::
 
 :::image type="content" source="../images/known-issue-appid-dll-rule-xml.png" alt-text="Allow all dll files in the xml policy.":::
-
 
 Since AppId Tagging policies evaluate but can't tag dll files, this rule will short circuit dll evaluation and improve evaluation performance.

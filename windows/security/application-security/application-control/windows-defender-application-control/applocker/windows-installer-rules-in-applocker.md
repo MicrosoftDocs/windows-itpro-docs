@@ -1,15 +1,9 @@
 ---
 title: Windows Installer rules in AppLocker
 description: This topic describes the file formats and available default rules for the Windows Installer rule collection.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: itpro-security
 ---
 
 # Windows Installer rules in AppLocker

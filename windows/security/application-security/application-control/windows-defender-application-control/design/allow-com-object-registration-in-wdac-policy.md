@@ -1,30 +1,12 @@
 ---
-title: Allow COM object registration in a WDAC policy 
+title: Allow COM object registration in a WDAC policy
 description: You can allow COM object registration in a Windows Defender Application Control policy.
-keywords: security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
-author: vinaypamnani-msft
-ms.reviewer: jsuther
-ms.author: vinpa
-manager: aaroncz
-ms.technology: itpro-security
 ms.date: 04/05/2023
 ms.topic: article
 ---
 
 # Allow COM object registration in a Windows Defender Application Control policy
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and later
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Application Control feature availability](../feature-availability.md).
@@ -38,8 +20,8 @@ Windows Defender Application Control (WDAC) enforces a built-in allowlist for CO
 > [!NOTE]
 > To add this functionality to other versions of Windows 10, you can install the following or later updates.
 
-- [Windows 10, 1809 June 18, 2019—KB4501371 (OS Build 17763.592)](https://support.microsoft.com/help/4501371/windows-10-update-kb4501371)
-- [Windows 10, 1607 June 18, 2019—KB4503294 (OS Build 14393.3053)](https://support.microsoft.com/help/4503294/windows-10-update-kb4503294)
+- [Windows 10, 1809 June 18, 2019-KB4501371 (OS Build 17763.592)](https://support.microsoft.com/help/4501371/windows-10-update-kb4501371)
+- [Windows 10, 1607 June 18, 2019-KB4503294 (OS Build 14393.3053)](https://support.microsoft.com/help/4503294/windows-10-update-kb4503294)
 
 ### Get COM object GUID
 
@@ -49,13 +31,13 @@ You can get the COM application GUID from the 8036 COM object block events in Ev
 
 Three elements:
 
-- Provider: platform on which code is running (values are  PowerShell, WSH, IE, VBA, MSI, or a wildcard “AllHostIds”)
+- Provider: platform on which code is running (values are  PowerShell, WSH, IE, VBA, MSI, or a wildcard "AllHostIds")
 - Key: GUID for the program you wish to run, in the format Key="{33333333-4444-4444-1616-161616161616}"
 - ValueName: needs to be set to "EnterpriseDefinedClsId"
 
 One attribute:
 
-- Value: needs to be “true” for allow and “false” for deny
+- Value: needs to be "true" for allow and "false" for deny
 
   > [!NOTE]
   > Deny only works in base policies, not supplemental policies

@@ -1,30 +1,12 @@
 ---
-title: Plan for WDAC policy management 
+title: Plan for WDAC policy management
 description: Learn about the decisions you need to make to establish the processes for managing and maintaining Windows Defender Application Control policies.
-keywords: security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
-author: jsuther1974
-ms.reviewer: jogeurte
-ms.author: vinpa
-manager: aaroncz
 ms.date: 11/02/2022
-ms.technology: itpro-security
 ms.topic: article
 ---
 
 # Plan for Windows Defender Application Control lifecycle policy management
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).

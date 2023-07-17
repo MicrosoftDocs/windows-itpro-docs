@@ -1,15 +1,9 @@
 ---
 title: Create a rule that uses a publisher condition
 description: This topic for IT professionals shows how to create an AppLocker rule with a publisher condition.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: itpro-security
 ---
 
 # Create a rule that uses a publisher condition

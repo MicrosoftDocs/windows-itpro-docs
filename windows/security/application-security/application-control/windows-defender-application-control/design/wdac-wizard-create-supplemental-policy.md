@@ -1,30 +1,12 @@
 ---
 title: Windows Defender Application Control Wizard Supplemental Policy Creation
 description: Creating supplemental application control policies with the WDAC Wizard.
-keywords: allowlisting, blocklisting, security, malware, supplemental policy
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
-author: jgeurten
-ms.reviewer: isbrahm
-ms.author: vinpa
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 06/07/2023
-ms.technology: itpro-security
 ---
 
 # Creating a new Supplemental Policy with the Wizard
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
@@ -59,7 +41,7 @@ Supplemental policies can only configure three policy rules. The following table
 
 | Rule option | Description |
 |------------ | ----------- |
-| **Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). |
+| **Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft's Intelligent Security Graph (ISG). |
 | **Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as Microsoft Configuration Manager, that has been defined as a managed installer. |
 | **Disable Runtime FilePath Rule Protection** | This option disables the default runtime check that only allows FilePath rules for paths that are only writable by an administrator. |
 
@@ -79,7 +61,6 @@ The Publisher file rule type uses properties in the code signing certificate cha
 | **Publisher** | Publisher | This rule is a combination of the PCACertificate rule and the common name (CN) of the leaf certificate. Any file signed by a major CA but with a leaf from a specific company, for example, a device driver publisher, is affected. |
 | **File version** | SignedVersion | This rule is a combination of the PCACertificate and Publisher rule, and a version number. Anything from the specified publisher with a version at or above the one specified is affected. |
 | **File name** | FilePublisher | Most specific. Combination of the file name, publisher, and PCA certificate and a minimum version number. Files from the publisher with the specified name and greater or equal to the specified version are affected. |
-
 
 ![Custom filepublisher file rule creation.](../images/wdac-wizard-custom-publisher-rule.png)
 
@@ -102,7 +83,7 @@ The Wizard supports the creation of [file name rules](select-types-of-rules-to-c
 
 ### File Hash Rules
 
-Lastly, the Wizard supports creating file rules using the hash of the file. Although this level is specific, it can cause extra administrative overhead to maintain the current product versions’ hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. By default, the Wizard uses file hash as the fallback in case a file rule can't be created using the specified file rule level.
+Lastly, the Wizard supports creating file rules using the hash of the file. Although this level is specific, it can cause extra administrative overhead to maintain the current product versions' hash values. Each time a binary is updated, the hash value changes, therefore requiring a policy update. By default, the Wizard uses file hash as the fallback in case a file rule can't be created using the specified file rule level.
 
 #### Deleting Signing Rules
   

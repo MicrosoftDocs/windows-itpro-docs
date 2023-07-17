@@ -1,30 +1,12 @@
 ---
-title: Understand Windows Defender Application Control policy design decisions  
+title: Understand Windows Defender Application Control policy design decisions
 description: Understand Windows Defender Application Control policy design decisions.
-keywords: security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-manager: aaroncz
-ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
-author: jsuther1974
-ms.reviewer: isbrahm
-ms.author: vinpa
 ms.date: 02/08/2018
-ms.technology: itpro-security
 ms.topic: article
 ---
 
 # Understand Windows Defender Application Control policy design decisions 
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
@@ -78,7 +60,7 @@ Traditional Win32 apps on Windows can run without being digitally signed. This p
  
 ### Are there specific groups in your organization that need customized application control policies?
 
-Most business teams or departments have specific security requirements that pertain to data access and the applications used to access that data. Consider the scope of the project for each group and the group’s priorities before you deploy application control policies for the entire organization. There's overhead in managing policies that might lead you to choose between broad, organization-wide policies and multiple team-specific policies.
+Most business teams or departments have specific security requirements that pertain to data access and the applications used to access that data. Consider the scope of the project for each group and the group's priorities before you deploy application control policies for the entire organization. There's overhead in managing policies that might lead you to choose between broad, organization-wide policies and multiple team-specific policies.
 
 | Possible answers | Design considerations |
 | - | - |

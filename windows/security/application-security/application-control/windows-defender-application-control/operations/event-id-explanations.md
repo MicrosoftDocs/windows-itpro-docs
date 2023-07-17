@@ -1,24 +1,12 @@
 ---
 title: Understanding Application Control event IDs
 description: Learn what different Windows Defender Application Control event IDs signify.
-ms.prod: windows-client
-ms.technology: itpro-security
 ms.localizationpriority: medium
-author: jsuther1974
-ms.reviewer: jogeurte
-ms.author: vinpa
-manager: aaroncz
 ms.date: 03/24/2023
 ms.topic: reference
 ---
 
 # Understanding Application Control events
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and later (limited events)
 
 ## WDAC Events Overview
 
@@ -28,13 +16,13 @@ WDAC logs events when a policy is loaded, when a file is blocked, or when a file
 
 WDAC events are generated under two locations in the Windows Event Viewer:
 
-- **Applications and Services logs – Microsoft – Windows – CodeIntegrity – Operational** includes events about Application Control policy activation and the control of executables, dlls, and drivers.
-- **Applications and Services logs – Microsoft – Windows – AppLocker – MSI and Script** includes events about the control of MSI installers, scripts, and COM objects.
+- **Applications and Services logs - Microsoft - Windows - CodeIntegrity - Operational** includes events about Application Control policy activation and the control of executables, dlls, and drivers.
+- **Applications and Services logs - Microsoft - Windows - AppLocker - MSI and Script** includes events about the control of MSI installers, scripts, and COM objects.
 
 Most app and script failures that occur when WDAC is active can be diagnosed using these two event logs. This article describes in greater detail the events that exist in these logs. To understand the meaning of different data elements, or tags, found in the details of these events, see [Understanding Application Control event tags](event-tag-explanations.md).
 
 > [!NOTE]
-> **Applications and Services logs – Microsoft – Windows – AppLocker – MSI and Script** events are not included on Windows Server Core edition.
+> **Applications and Services logs - Microsoft - Windows - AppLocker - MSI and Script** events are not included on Windows Server Core edition.
 
 ## WDAC block events for executables, dlls, and drivers
 
@@ -51,7 +39,7 @@ These events are found in the **CodeIntegrity - Operational** event log.
 
 ## WDAC block events for packaged apps, MSI installers, scripts, and COM objects
 
-These events are found in the **AppLocker – MSI and Script** event log.
+These events are found in the **AppLocker - MSI and Script** event log.
 
 | Event ID | Explanation |
 |--------|-----------|

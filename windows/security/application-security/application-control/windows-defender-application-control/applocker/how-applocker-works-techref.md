@@ -1,15 +1,9 @@
 ---
 title: How AppLocker works
 description: This topic for the IT professional provides links to topics about AppLocker architecture and components, processes and interactions, rules and policies.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: itpro-security
 ---
 
 # How AppLocker works

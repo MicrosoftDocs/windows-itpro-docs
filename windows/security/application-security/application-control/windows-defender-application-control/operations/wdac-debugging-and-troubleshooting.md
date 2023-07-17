@@ -1,23 +1,11 @@
 ---
 title: WDAC debugging and troubleshooting guide
 description: Learn how to debug and troubleshoot app and script failures when using WDAC
-author: valemieux
-ms.author: jogeurte
-ms.reviewer: jsuther1974
 ms.topic: how-to
 ms.date: 04/06/2023
-ms.custom: template-how-to
-ms.prod: windows-client
-ms.technology: itpro-security
 ---
 
 # WDAC debugging and troubleshooting
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and later
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
@@ -92,8 +80,8 @@ Run the following commands from an elevated PowerShell window to collect the dia
 
 WDAC events are generated under two locations:
 
-- Applications and Services logs – Microsoft – Windows – CodeIntegrity – Operational
-- Applications and Services logs – Microsoft – Windows – AppLocker – MSI and Script
+- Applications and Services logs - Microsoft - Windows - CodeIntegrity - Operational
+- Applications and Services logs - Microsoft - Windows - AppLocker - MSI and Script
 
 Within the CiDiag output directory, these event logs are called CIOperational.evtx and ALMsiAndScript.evtx, respectively.
 
@@ -101,14 +89,14 @@ Within the CiDiag output directory, these event logs are called CIOperational.ev
 
 Sometimes, you may be able to supplement the information contained in the core WDAC event logs with information found in these other event logs. CIDiag.exe doesn't collect the ones shown in *italics*.
 
-- Applications and Services logs – Microsoft – Windows – CodeIntegrity – Verbose
-- Applications and Services logs – Microsoft – Windows – AppLocker – EXE and DLL
-- Applications and Services logs – Microsoft – Windows – AppLocker – Packaged app-Deployment
-- Applications and Services logs – Microsoft – Windows – AppLocker – Packaged app-Execution
-- Applications and Services logs – Microsoft – Windows – AppID - Operational
-- Applications and Services logs – Microsoft – Windows – CAPI2 - Operational
-- Applications and Services logs – Microsoft – Windows – DeviceGuard - Operational
-- *Applications and Services logs – Microsoft – Windows – PowerShell - \**
+- Applications and Services logs - Microsoft - Windows - CodeIntegrity - Verbose
+- Applications and Services logs - Microsoft - Windows - AppLocker - EXE and DLL
+- Applications and Services logs - Microsoft - Windows - AppLocker - Packaged app-Deployment
+- Applications and Services logs - Microsoft - Windows - AppLocker - Packaged app-Execution
+- Applications and Services logs - Microsoft - Windows - AppID - Operational
+- Applications and Services logs - Microsoft - Windows - CAPI2 - Operational
+- Applications and Services logs - Microsoft - Windows - DeviceGuard - Operational
+- *Applications and Services logs - Microsoft - Windows - PowerShell - \**
 - *Windows - Application*
 - *Windows - System*
 
@@ -119,10 +107,10 @@ Having gathered the necessary diagnostic information from a device, you're ready
 1. Verify the set of WDAC policies that are active and enforced. Confirm that only those policies you expect to be active are currently active. Be aware of the [Windows inbox policies](inbox-wdac-policies.md) that may also be active. You can use either of these methods:
 
     - Review the output from *CiTool.exe -lp*, if applicable, which was saved to the CIDiag output directory as CiToolOutput.json. See [use Microsoft Edge to view the formatted json file](/microsoft-edge/devtools-guide-chromium/json-viewer/json-viewer).
-    - Review all [policy activation events](/windows/security/threat-protection/windows-defender-application-control/event-id-explanations#wdac-policy-activation-events) from the core WDAC event log found at  **Applications and Services logs – Microsoft – Windows – CodeIntegrity – Operational**. Within the CIDiag output directory, this event log is called CIOperational.evtx.
+    - Review all [policy activation events](/windows/security/threat-protection/windows-defender-application-control/event-id-explanations#wdac-policy-activation-events) from the core WDAC event log found at  **Applications and Services logs - Microsoft - Windows - CodeIntegrity - Operational**. Within the CIDiag output directory, this event log is called CIOperational.evtx.
 
-2. Review any [block events for executables, dlls, and drivers](/windows/security/threat-protection/windows-defender-application-control/event-id-explanations#wdac-block-events-for-executables-dlls-and-drivers) from the core WDAC event log found at  **Applications and Services logs – Microsoft – Windows – CodeIntegrity – Operational**. Within the CIDiag output directory, this event log is called CIOperational.evtx. Use information from the block events and their correlated 3089 signature details event(s) to investigate any blocks that are unexplained or unexpected. See the blocked executable example described later in this article for reference.
-3. Review any [block events for packaged apps, MSI installers, scripts, and COM objects](/windows/security/threat-protection/windows-defender-application-control/event-id-explanations#wdac-block-events-for-packaged-apps-msi-installers-scripts-and-com-objects) from the core script enforcement event log found at  **Applications and Services logs – Microsoft – Windows – AppLocker – MSI and Script**. Within the CIDiag output directory, this event log is called ALMsiAndScript.evtx. Use information from the block events and their correlated 8038 signature details event(s) to investigate any blocks that are unexplained or unexpected.
+2. Review any [block events for executables, dlls, and drivers](/windows/security/threat-protection/windows-defender-application-control/event-id-explanations#wdac-block-events-for-executables-dlls-and-drivers) from the core WDAC event log found at  **Applications and Services logs - Microsoft - Windows - CodeIntegrity - Operational**. Within the CIDiag output directory, this event log is called CIOperational.evtx. Use information from the block events and their correlated 3089 signature details event(s) to investigate any blocks that are unexplained or unexpected. See the blocked executable example described later in this article for reference.
+3. Review any [block events for packaged apps, MSI installers, scripts, and COM objects](/windows/security/threat-protection/windows-defender-application-control/event-id-explanations#wdac-block-events-for-packaged-apps-msi-installers-scripts-and-com-objects) from the core script enforcement event log found at  **Applications and Services logs - Microsoft - Windows - AppLocker - MSI and Script**. Within the CIDiag output directory, this event log is called ALMsiAndScript.evtx. Use information from the block events and their correlated 8038 signature details event(s) to investigate any blocks that are unexplained or unexpected.
 
 Most WDAC-related issues, including app and script failures, can be diagnosed using the preceding steps.
 

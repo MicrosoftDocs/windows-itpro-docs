@@ -1,24 +1,12 @@
 ---
 title: Deploy catalog files to support Windows Defender Application Control
 description: Catalog files simplify running unsigned applications in the presence of a Windows Defender Application Control (WDAC) policy.
-ms.prod: windows-client
 ms.localizationpriority: medium
 ms.topic: how-to
-author: jsuther1974
-ms.reviewer: jgeurten
-ms.author: vinpa
-manager: aaroncz
 ms.date: 11/30/2022
-ms.technology: itpro-security
 ---
 
 # Deploy catalog files to support Windows Defender Application Control
-
-**Applies to:**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 and later
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control are only available on specific Windows versions. For more information, see [Windows Defender Application Control feature availability](../feature-availability.md).

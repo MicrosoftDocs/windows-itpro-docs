@@ -1,15 +1,9 @@
 ---
 title: Refresh an AppLocker policy
 description: This topic for IT professionals describes the steps to force an update for an AppLocker policy.
-ms.reviewer: 
-ms.author: vinpa
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-manager: aaroncz
 ms.topic: conceptual
 ms.date: 09/21/2017
-ms.technology: itpro-security
 ---
 
 # Refresh an AppLocker policy

@@ -1,30 +1,12 @@
 ---
 title: Create your Windows Defender Application Control AppId Tagging Policies
 description: Create your Windows Defender Application Control AppId tagging policies for Windows devices.
-keywords: security, malware
-ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: windows-client
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-audience: ITPro
-author: jgeurten
-ms.reviewer: jsuther1974
-ms.author: vinpa
-manager: aaroncz
 ms.date: 04/29/2022
-ms.technology: itpro-security
 ms.topic: article
 ---
 
 # Creating your WDAC AppId Tagging Policies
-
-**Applies to:**
-
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
 
 > [!NOTE]
 > Some capabilities of Windows Defender Application Control (WDAC) are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](../feature-availability.md).
@@ -43,7 +25,6 @@ You can use the Windows Defender Application Control (WDAC) Wizard and the Power
 	> If your AppId Tagging Policy does build off the base templates or does not allow Windows in-box processes, you will notice significant performance regressions, especially during boot. For this reason, it is strongly recommended to build off the base templates. 
 	For more information on the issue, see the [AppId Tagging Known Issue](../operations/known-issues.md#slow-boot-and-performance-with-custom-policies).
 
-
 2. 	Set the following rule-options using the Wizard toggles:
 
 	![Configuring the policy rule-options.](../images/appid-wdac-wizard-2.png)
@@ -57,7 +38,6 @@ You can use the Windows Defender Application Control (WDAC) Wizard and the Power
 	- File attribute rules: Create a rule based off a file's immutable properties like the original filename, file description, product name or internal name.
 	- Package app name rules: Create a rule based off the package family name of an appx/msix.
 	- Hash rules: Create a rule based off the PE Authenticode hash of a file. 
-
 
 	For more information on creating new policy file rules, see the guidelines provided in the [creating policy file rules section](../design/wdac-wizard-create-base-policy.md#creating-custom-file-rules).
 
