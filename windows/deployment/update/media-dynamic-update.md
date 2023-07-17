@@ -8,7 +8,7 @@ ms.author: mstewart
 manager: aaroncz
 ms.topic: article
 ms.technology: itpro-updates
-ms.date: 07/06/2023
+ms.date: 07/17/2023
 ms.reviewer: stevedia
 ---
 
@@ -147,7 +147,7 @@ $LANG_FONT_CAPABILITY = "jpan"
 
 # Declare media for FOD and LPs
 # Note: Starting with Windows 11, version 21H2, the language pack (LANGPACK) ISO has been superseded by the FOD ISO.
-# Language packs and the \Windows Preinstallation Environment packages are par of the LOF ISO.
+# Language packs and the \Windows Preinstallation Environment packages are part of the LOF ISO.
 # If you are using this script for Windows 10, modify to mount and use the LANGPACK ISO.
 $FOD_ISO_PATH    = "C:\mediaRefresh\packages\FOD-PACKAGES_OEM_PT1_amd64fre_MULTI.iso"
 
@@ -309,7 +309,7 @@ Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SAFE_OS_DU_PATH -ErrorAction
 
 # Perform image cleanup
 Write-Output "$(Get-TS): Performing image cleanup on WinRE"
-DISM /image:$WINRE_MOUNT /cleanup-image /StartComponentCleanup | Out-Null
+DISM /image:$WINRE_MOUNT /cleanup-image /StartComponentCleanup /ResetBase /Defer | Out-Null
 
 # Dismount
 Dismount-WindowsImage -Path $WINRE_MOUNT  -Save -ErrorAction stop | Out-Null
