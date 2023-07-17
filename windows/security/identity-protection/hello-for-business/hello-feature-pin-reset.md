@@ -163,7 +163,7 @@ You can configure Windows devices to use the **Microsoft PIN Reset Service** usi
 - Value: **True**
 
 >[!NOTE]
-> You must replace `TenantId` with the identifier of your Azure Active Directory tenant. To look up your Tenant ID, see [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant) or try the following, ensuring to sign-in with your organization's account::
+> You must replace `TenantId` with the identifier of your Azure Active Directory tenant. To look up your Tenant ID, see [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/how-to-find-tenant) or try the following, ensuring to sign-in with your organization's account::
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization?$select=id

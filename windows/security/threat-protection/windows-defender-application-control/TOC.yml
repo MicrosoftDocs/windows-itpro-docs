@@ -9,7 +9,7 @@
     - name: WDAC and AppLocker Feature Availability
       href: feature-availability.md
     - name: Virtualization-based protection of code integrity
-      href: ../device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
+      href: ../../application-security/application-control/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
 - name: WDAC design guide
   href: windows-defender-application-control-design-guide.md
   items:
