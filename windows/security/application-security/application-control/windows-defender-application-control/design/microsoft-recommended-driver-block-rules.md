@@ -1,5 +1,5 @@
 ---
-title: Microsoft recommended driver block rules 
+title: Microsoft recommended driver block rules
 description: View a list of recommended block rules to block vulnerable third-party drivers discovered by Microsoft and the security research community.
 keywords: security, malware, kernel mode, driver
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -59,7 +59,7 @@ The blocklist is updated with each new major release of Windows, typically 1-2 t
 
 Customers who always want the most up-to-date driver blocklist can also use Windows Defender Application Control (WDAC) to apply the latest recommended driver blocklist contained in this article. For your convenience, we've provided a download of the most up-to-date vulnerable driver blocklist along with instructions to apply it on your computer at the end of this article. Otherwise, you can use the XML provided below to create your own custom WDAC policies.
 
-[!INCLUDE [microsoft-vulnerable-driver-blocklist](../../../../includes/licensing/microsoft-vulnerable-driver-blocklist.md)]
+[!INCLUDE [microsoft-vulnerable-driver-blocklist](../../../../../../includes/licensing/microsoft-vulnerable-driver-blocklist.md)]
 
 ## Blocking vulnerable drivers using WDAC
 

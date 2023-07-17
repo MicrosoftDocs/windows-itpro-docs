@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-ms.collection: 
+ms.collection:
   - highpri
   - tier3
 author: vinaypamnani-msft
@@ -73,7 +73,7 @@ Smart App Control enforces the [Microsoft Recommended Driver Block rules](design
 - Microsoft.Build.Framework.dll
 - Wslhost.dll
 
-[!INCLUDE [windows-defender-application-control-wdac](../../../../includes/licensing/windows-defender-application-control-wdac.md)]
+[!INCLUDE [windows-defender-application-control-wdac](../../../../../includes/licensing/windows-defender-application-control-wdac.md)]
 
 ## Related articles
 
