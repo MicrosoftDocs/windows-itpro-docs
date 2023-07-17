@@ -21926,6 +21926,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/deployment/update/update-compliance-schema-wudostatus.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },    
+    {
       "source_path": "windows/deployment/update/update-compliance-schema-wudoaggregatedstatus.md",
       "redirect_url": "/windows/deployment/update/wufb-reports-overview",
       "redirect_document_id": false
