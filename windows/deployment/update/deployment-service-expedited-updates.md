@@ -8,7 +8,7 @@ ms.author: mstewart
 manager: aaroncz
 ms.topic: article
 ms.technology: itpro-updates
-ms.date: 02/14/2023
+ms.date: 07/31/2023
 ---
 
 # Deploy expedited updates with Windows Update for Business deployment service
