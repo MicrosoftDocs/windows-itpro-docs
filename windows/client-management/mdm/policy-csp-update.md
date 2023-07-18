@@ -2426,7 +2426,9 @@ Number of days before feature updates are installed on devices automatically reg
 <!-- ConfigureDeadlineForFeatureUpdates-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> After the deadline passes, restarts will occur regardless of active hours and users won't be able to reschedule.
+> 
+> - After the deadline passes, restarts will occur regardless of active hours and users won't be able to reschedule.
+> - When this policy is used, the download, installation, and reboot settings from [Update/AllowAutoUpdate](#allowautoupdate) are ignored.
 <!-- ConfigureDeadlineForFeatureUpdates-Editable-End -->
 
 <!-- ConfigureDeadlineForFeatureUpdates-DFProperties-Begin -->
@@ -2483,7 +2485,9 @@ Number of days before quality updates are installed on devices automatically reg
 <!-- ConfigureDeadlineForQualityUpdates-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> After the deadline passes, restarts will occur regardless of active hours and users won't be able to reschedule.
+> 
+> - After the deadline passes, restarts will occur regardless of active hours and users won't be able to reschedule.
+> - When this policy is used, the download, installation, and reboot settings from [Update/AllowAutoUpdate](#allowautoupdate) are ignored.
 <!-- ConfigureDeadlineForQualityUpdates-Editable-End -->
 
 <!-- ConfigureDeadlineForQualityUpdates-DFProperties-Begin -->
