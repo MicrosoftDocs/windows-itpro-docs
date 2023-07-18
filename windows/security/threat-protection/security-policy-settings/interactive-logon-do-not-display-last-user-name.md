@@ -1,5 +1,5 @@
 ---
-title: Interactive logon Don't display last signed-in 
+title: Interactive logon Don't display last signed-in
 description: Describes the best practices, location, values, and security considerations for the Interactive logon Don't display last user name security policy setting.
 ms.prod: windows-client
 ms.mktglfcycl: deploy
@@ -11,7 +11,7 @@ manager: aaroncz
 audience: ITPro
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.reviewer: 
+ms.reviewer:
 ms.author: vinpa
 ms.technology: itpro-security
 ---
@@ -19,8 +19,11 @@ ms.technology: itpro-security
 # Interactive logon: Don't display last signed-in
 
 **Applies to**
--   Windows 11
--   Windows 10
+- Windows 11
+- Windows 10
+- Windows Server 2022
+- Windows Server 2019
+- Windows Server 2016
 
 Describes the best practices, location, values, and security considerations for the **Interactive logon: Don't display last signed-in** security policy setting. Before Windows 10 version 1703, this policy setting was named **Interactive logon:Do not display last user name.**
 
@@ -56,7 +59,7 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 | Domain controller effective default settings | Disabled|
 | Member server effective default settings | Disabled|
 | Effective GPO default settings on client computers | Disabled|
- 
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.
