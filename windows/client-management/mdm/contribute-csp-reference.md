@@ -67,7 +67,7 @@ If it's incorrect or needs to be updated, [Send feedback to Microsoft with the F
 
 ### Feedback for policy allowed values
 
-Policy allowed values are defined in the DDF v2 file for the CSP. When applicable, each policy node in the markdown file includes a `[Policy-Name]-AllowedValues-Begin` section that contains the operating system applicability.
+Policy allowed values are defined in the DDF v2 file for the CSP. When applicable, each policy node in the markdown file includes a `[Policy-Name]-AllowedValues-Begin` section that contains a table that describes the allowed values for the policy.
 
 If these values are incorrect or need to be updated, [Send feedback to Microsoft with the Feedback Hub app](https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332).
 
