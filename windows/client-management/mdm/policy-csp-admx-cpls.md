@@ -1,6 +1,6 @@
 ---
-title: [CSP-Name] Policy CSP
-description: Learn more about the [CSP-Name] Area in Policy CSP.
+title: ADMX_Cpls Policy CSP
+description: Learn more about the ADMX_Cpls Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
@@ -13,73 +13,82 @@ ms.topic: reference
 
 <!-- Auto-Generated CSP Document -->
 
-<!-- [CSP-Name]-Begin -->
-# Policy CSP - [CSP-Name]
+<!-- ADMX_Cpls-Begin -->
+# Policy CSP - ADMX_Cpls
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
-<!-- [CSP-Name]-Editable-Begin -->
+<!-- ADMX_Cpls-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- [CSP-Name]-Editable-End -->
+<!-- ADMX_Cpls-Editable-End -->
 
-<!-- [Policy-Name]-Begin -->
-## [Policy-Name]
+<!-- UseDefaultTile-Begin -->
+## UseDefaultTile
 
-<!-- [Policy-Name]-Applicability-Begin -->
+<!-- UseDefaultTile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 21H1 [10.0.19043.1202] and later |
-<!-- [Policy-Name]-Applicability-End -->
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- UseDefaultTile-Applicability-End -->
 
-<!-- [Policy-Name]-OmaUri-Begin -->
+<!-- UseDefaultTile-OmaUri-Begin -->
 ```Device
-./Device/Vendor/MSFT/Policy/Config/[CSP-Name]/[Policy-Name]
+./Device/Vendor/MSFT/Policy/Config/ADMX_Cpls/UseDefaultTile
 ```
-<!-- [Policy-Name]-OmaUri-End -->
+<!-- UseDefaultTile-OmaUri-End -->
 
-<!-- [Policy-Name]-Description-Begin -->
+<!-- UseDefaultTile-Description-Begin -->
 <!-- Description-Source-ADMX -->
-This policy setting allows an administrator to...
-<!-- [Policy-Name]-Description-End -->
+This policy setting allows an administrator to standardize the account pictures for all users on a system to the default account picture. One application for this policy setting is to standardize the account pictures to a company logo.
 
-<!-- [Policy-Name]-Editable-Begin -->
+> [!NOTE]
+> The default account picture is stored at %PROGRAMDATA%\Microsoft\User Account Pictures\user.jpg. The default guest picture is stored at %PROGRAMDATA%\Microsoft\User Account Pictures\guest.jpg. If the default pictures don't exist, an empty frame is displayed.
+
+- If you enable this policy setting, the default user account picture will display for all users on the system with no customization allowed.
+
+- If you disable or don't configure this policy setting, users will be able to customize their account pictures.
+<!-- UseDefaultTile-Description-End -->
+
+<!-- UseDefaultTile-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- [Policy-Name]-Editable-End -->
+<!-- UseDefaultTile-Editable-End -->
 
-<!-- [Policy-Name]-DFProperties-Begin -->
+<!-- UseDefaultTile-DFProperties-Begin -->
 **Description framework properties**:
 
 | Property name | Property value |
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
-<!-- [Policy-Name]-DFProperties-End -->
+<!-- UseDefaultTile-DFProperties-End -->
 
-<!-- [Policy-Name]-AdmxBacked-Begin -->
+<!-- UseDefaultTile-AdmxBacked-Begin -->
 [!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
 | Name | Value |
 |:--|:--|
-| Name | [Policy-Name] |
-| Friendly Name | [Group policy friendly name] |
-| Location | [Computer/User Configuration] |
-| Path | [Group policy path] |
-| ADMX File Name | [ADMX-File-Name] |
-<!-- [Policy-Name]-AdmxBacked-End -->
+| Name | UseDefaultTile |
+| Friendly Name | Apply the default account picture to all users |
+| Location | Computer Configuration |
+| Path | Control Panel > User Accounts |
+| Registry Key Name | Software\Microsoft\Windows\CurrentVersion\Policies\Explorer |
+| Registry Value Name | UseDefaultTile |
+| ADMX File Name | Cpls.admx |
+<!-- UseDefaultTile-AdmxBacked-End -->
 
-<!-- [Policy-Name]-Examples-Begin -->
+<!-- UseDefaultTile-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- [Policy-Name]-Examples-End -->
+<!-- UseDefaultTile-Examples-End -->
 
-<!-- [Policy-Name]-End -->
+<!-- UseDefaultTile-End -->
 
-<!-- [CSP-Name]-CspMoreInfo-Begin -->
+<!-- ADMX_Cpls-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
-<!-- [CSP-Name]-CspMoreInfo-End -->
+<!-- ADMX_Cpls-CspMoreInfo-End -->
 
-<!-- [CSP-Name]-End -->
+<!-- ADMX_Cpls-End -->
 
 ## Related articles
 
