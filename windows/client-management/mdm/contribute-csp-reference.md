@@ -13,7 +13,7 @@ ms.topic: reference
 
 # Contributing to the CSP reference articles
 
-CSP reference articles are automatically generated using the [device description framework (DDF)](configuration-service-provider-ddf.md) v2 files that define the CSP. When applicable, the CSP definition includes a mapping to a group policy. These mappings are utilized by the automation, when possible, to provide a friendly description for the CSP policies.
+CSP reference articles are automatically generated using the [device description framework (DDF)](configuration-service-provider-ddf.md) v2 files that define the CSP. When applicable, the CSP definition includes a mapping to a group policy. The automation uses this mapping, when possible, to provide a friendly description for the CSP policies.
 
 > [!IMPORTANT]
 > Each automated CSP article provides editable sections to provide additional information about the CSP or the policies within the CSP. Any edits outside the designated editable sections are overwritten by the automation.
@@ -41,9 +41,9 @@ Each automated CSP article is broken into three sections.
 
 ## Provide feedback on documentation
 
-As most of the CSP articles are automated, the feedback for these articles is best addressed when submitted using [Feedback Hub app](https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332). However for non-automated content, use the [Microsoft Learn documentation contributor guide][CONTRIB-1].
+As most of the CSP articles are automated, the feedback for these articles is best addressed when submitted using [Feedback Hub app](https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332). However for nonautomated content, use the [Microsoft Learn documentation contributor guide][CONTRIB-1].
 
-Use the sections below to determine where you should submit feedback.
+Use these sections to determine where you should submit feedback.
 
 ### Feedback for policy description
 
@@ -53,27 +53,27 @@ Policy descriptions are sourced from DDF or ADMX files and are located within th
 - `Description-Source-DDF` or `Description-Source-DDF-Forced`: The description was captured from the DDF file that defines the CSP. If this description is incorrect, [Send feedback to Microsoft with the Feedback Hub app](https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332).
 - `Description-Source-Manual-Forced`: The description is defined in the automation code. If this description is incorrect, [submit an issue](/contribute/#create-quality-issues).
 
-Any additional information about the policy setting can be provided in the `[Policy-Name]-Editable-Begin` section that immediately follows the `<[CSP-Name]-Description-End>` section. This section provides the ability to further expand the policy description, and is generated manually. For any feedback for the editable content, use the [Microsoft Learn documentation contributor guide][CONTRIB-1] to update the section or submit an issue.
+Any additional information about the policy setting can be provided in the `[Policy-Name]-Editable-Begin` section that immediately follows the `<[CSP-Name]-Description-End>` section. This section allows further expansion of the policy description, and is generated manually. For any feedback for the editable content, use the [Microsoft Learn documentation contributor guide][CONTRIB-1] to update the section or submit an issue.
 
 ### Feedback for policy examples
 
-Policy examples are not provided by the automation. Each policy node in the markdown file includes a `[Policy-Name]-Examples-Begin` section which contains the examples. If the example is incorrect or needs to be updated, use the [Microsoft Learn documentation contributor guide][CONTRIB-1] to update the example or submit an issue.
+Policy examples aren't provided by the automation. Each policy node in the markdown file includes a `[Policy-Name]-Examples-Begin` section that contains the examples. If the example is incorrect or needs to be updated, use the [Microsoft Learn documentation contributor guide][CONTRIB-1] to update the example or submit an issue.
 
 ### Feedback for policy applicability
 
-Policy applicability is defined in the DDF v2 file for the CSP. Each policy node in the markdown file includes a `[Policy-Name]-Applicability-Begin` section which contains the operating system applicability.
+Policy applicability is defined in the DDF v2 file for the CSP. Each policy node in the markdown file includes a `[Policy-Name]-Applicability-Begin` section that contains the operating system applicability.
 
-If it is incorrect or needs to be updated, [Send feedback to Microsoft with the Feedback Hub app](https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332).
+If it's incorrect or needs to be updated, [Send feedback to Microsoft with the Feedback Hub app](https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332).
 
 ### Feedback for policy allowed values
 
-Policy allowed values are defined in the DDF v2 file for the CSP. When applicable, each policy node in the markdown file includes a `[Policy-Name]-AllowedValues-Begin` section which contains the operating system applicability.
+Policy allowed values are defined in the DDF v2 file for the CSP. When applicable, each policy node in the markdown file includes a `[Policy-Name]-AllowedValues-Begin` section that contains the operating system applicability.
 
 If these values are incorrect or need to be updated, [Send feedback to Microsoft with the Feedback Hub app](https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332).
 
 ### Feedback for group policy mapping
 
-Group policy mappings are defined in the DDF v2 file for the CSP. When applicable, each policy node in the markdown file includes a `[Policy-Name]-AdmxBacked-Begin` or `[Policy-Name]-GpMapping-Begin` section which contains the group policy mapping.
+Group policy mappings are defined in the DDF v2 file for the CSP. When applicable, each policy node in the markdown file includes a `[Policy-Name]-AdmxBacked-Begin` or `[Policy-Name]-GpMapping-Begin` section that contains the group policy mapping.
 
 If this mapping is incorrect, [Send feedback to Microsoft with the Feedback Hub app](https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332).
 
