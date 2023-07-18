@@ -23,8 +23,7 @@ CSP reference articles are automatically generated using the [device description
 Each automated CSP article is broken into three sections.
 
 > [!NOTE]
-> To view these sections, visit the article that you want to update, then select the **Pencil** icon
->
+> To view these sections, visit the article that you want to update, then select the **Pencil** icon.
 > :::image type="content" source="images/csp-pencil-edit-icon.png" alt-text="Screenshot showing the Pencil icon to edit a published article":::
 
 1. **Header**: The header includes the CSP name, and provides an editable section where additional information about the CSP can be provided.
