@@ -8,7 +8,7 @@ ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
-ms.topic: ref
+ms.topic: reference
 ---
 
 # Contributing to the CSP reference articles
@@ -25,7 +25,7 @@ Each automated CSP article is broken into three sections.
 > [!NOTE]
 > To view these sections, visit the article that you want to update, then select the **Pencil** icon
 >
-> :::image type="content" source="../../../images/pencil-icon.png" alt-text="Screenshot showing the Pencil icon to edit a published article":::
+> :::image type="content" source="images/csp-pencil-edit-icon.png" alt-text="Screenshot showing the Pencil icon to edit a published article":::
 
 1. **Header**: The header includes the CSP name, and provides an editable section where additional information about the CSP can be provided.
 
@@ -41,7 +41,7 @@ Each automated CSP article is broken into three sections.
 
 ## Provide feedback on documentation
 
-As most of the CSP articles are automated, the feedback for these articles is best addressed when submitted using [Feedback Hub app](https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332). However for non-automated content, use the guidance for [Editing Windows IT professional documentation](../../../CONTRIBUTING.md).
+As most of the CSP articles are automated, the feedback for these articles is best addressed when submitted using [Feedback Hub app](https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332). However for non-automated content, use the [Microsoft Learn documentation contributor guide][CONTRIB-1].
 
 Use the sections below to determine where you should submit feedback.
 
@@ -51,13 +51,13 @@ Policy descriptions are sourced from DDF or ADMX files and are located within th
 
 - `Description-Source-ADMX` or `Description-Source-ADMX-Forced`: The description was captured from the group policy that the CSP setting maps to. If this description is incorrect, [Send feedback to Microsoft with the Feedback Hub app](https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332).
 - `Description-Source-DDF` or `Description-Source-DDF-Forced`: The description was captured from the DDF file that defines the CSP. If this description is incorrect, [Send feedback to Microsoft with the Feedback Hub app](https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332).
-- `Description-Source-Manual-Forced`: The description is defined in the automation code. If this description is incorrect, [submit a GitHub issue](../../../CONTRIBUTING.md#using-issues-to-provide-feedback-on-documentation).
+- `Description-Source-Manual-Forced`: The description is defined in the automation code. If this description is incorrect, [submit an issue](/contribute/#create-quality-issues).
 
-Any additional information about the policy setting can be provided in the `[Policy-Name]-Editable-Begin` section that immediately follows the `<[CSP-Name]-Description-End>` section. This section provides the ability to further expand the policy description, and is generated manually. For any feedback for the editable content, use the guidance for [Editing Windows IT professional documentation](../../../CONTRIBUTING.md) to update the section or submit an issue.
+Any additional information about the policy setting can be provided in the `[Policy-Name]-Editable-Begin` section that immediately follows the `<[CSP-Name]-Description-End>` section. This section provides the ability to further expand the policy description, and is generated manually. For any feedback for the editable content, use the [Microsoft Learn documentation contributor guide][CONTRIB-1] to update the section or submit an issue.
 
 ### Feedback for policy examples
 
-Policy examples are not provided by the automation. Each policy node in the markdown file includes a `[Policy-Name]-Examples-Begin` section which contains the examples. If the example is incorrect or needs to be updated, use the guidance for [Editing Windows IT professional documentation](../../../CONTRIBUTING.md) to update the example or submit an issue.
+Policy examples are not provided by the automation. Each policy node in the markdown file includes a `[Policy-Name]-Examples-Begin` section which contains the examples. If the example is incorrect or needs to be updated, use the [Microsoft Learn documentation contributor guide][CONTRIB-1] to update the example or submit an issue.
 
 ### Feedback for policy applicability
 
@@ -79,8 +79,12 @@ If this mapping is incorrect, [Send feedback to Microsoft with the Feedback Hub 
 
 ### Other feedback
 
-For any other feedback, use the guidance for [Editing Windows IT professional documentation](../../../CONTRIBUTING.md).
+For any other feedback, use the [Microsoft Learn documentation contributor guide][CONTRIB-1].
 
 ## Related articles
 
-- [Contributor guide overview](https://learn.microsoft.com/contribute/)
+- [Contributor guide overview][CONTRIB-1]
+
+<!-- Links -->
+
+[CONTRIB-1]: /contribute
