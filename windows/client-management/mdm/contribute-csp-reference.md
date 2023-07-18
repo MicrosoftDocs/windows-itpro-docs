@@ -44,6 +44,8 @@ CSP articles are automated using the DDF v2 and ADMX files, which are part of th
 
 Automated CSP articles however do contain [editable content](#csp-article-structure), which is preserved by the automation. For any feedback about the editable content, use the [Microsoft Learn documentation contributor guide][CONTRIB-1].
 
+:::image type="content" source="images/csp-feedback-flow.svg" alt-text="Diagram showing the feedback flow for CSP articles":::
+
 Use these sections to determine where you should submit feedback.
 
 ### Feedback for policy description
