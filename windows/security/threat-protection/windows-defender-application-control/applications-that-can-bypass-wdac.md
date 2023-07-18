@@ -1,5 +1,5 @@
 ---
-title: Microsoft recommended block rules
+title: Applications that can bypass WDAC and how to block them
 description: View a list of recommended block rules, based on knowledge shared between Microsoft and the wider security community.
 ms.prod: windows-client
 ms.technology: itpro-security
@@ -12,7 +12,7 @@ ms.date: 06/14/2023
 ms.topic: reference
 ---
 
-# Microsoft recommended block rules
+# Applications that can bypass WDAC and how to block them
 
 **Applies to:**
 

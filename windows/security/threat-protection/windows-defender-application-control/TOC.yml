@@ -55,8 +55,8 @@
               href: create-initial-default-policy.md
             - name: Create a WDAC deny list policy
               href: create-wdac-deny-policy.md
-            - name: Microsoft recommended block rules
-              href: microsoft-recommended-block-rules.md
+            - name: Applications that can bypass WDAC and how to block them
+              href: applications-that-can-bypass-wdac.md
             - name: Microsoft recommended driver block rules
               href: microsoft-recommended-driver-block-rules.md
         - name: Use the WDAC Wizard tool
