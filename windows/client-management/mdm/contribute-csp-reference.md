@@ -4,7 +4,7 @@ description: Learn more about contributing to the CSP reference articles.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 07/18/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,7 +16,7 @@ ms.topic: reference
 CSP reference articles are automatically generated using the [device description framework (DDF)](configuration-service-provider-ddf.md) v2 files that define the CSP. When applicable, the CSP definition includes a mapping to a group policy. The automation uses this mapping, when possible, to provide a friendly description for the CSP policies.
 
 > [!IMPORTANT]
-> Each automated CSP article provides editable sections to provide additional information about the CSP or the policies within the CSP. Any edits outside the designated editable sections are overwritten by the automation.
+> Each automated CSP article provides editable sections to provide additional information about the CSP, the policies within the CSP, and usage examples. Any edits outside the designated editable sections are overwritten by the automation.
 
 ## CSP article structure
 
@@ -40,7 +40,9 @@ Each automated CSP article is broken into three sections.
 
 ## Provide feedback on documentation
 
-As most of the CSP articles are automated, the feedback for these articles is best addressed when submitted using [Feedback Hub app](https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332). However for nonautomated content, use the [Microsoft Learn documentation contributor guide][CONTRIB-1].
+CSP articles are automated using the DDF v2 and ADMX files, which are part of the Windows codebase. Intune settings catalog also uses the DDF v2 files to present the settings and help text. As such, the feedback for these articles is best addressed when submitted directly to the engineering team using [Feedback Hub app](https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332). CSP reference articles as well as the Intune settings catalog are updated periodically using the latest copy of DDF v2 files, and benefit from the feedback addressed by the engineering team.
+
+Automated CSP articles however do contain [editable content](#csp-article-structure), which is preserved by the automation. For any feedback about the editable content, use the [Microsoft Learn documentation contributor guide][CONTRIB-1].
 
 Use these sections to determine where you should submit feedback.
 
