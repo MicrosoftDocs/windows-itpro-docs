@@ -21962,12 +21962,12 @@
     },
     {
       "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-update.md",
-      "redirect_url": "/windows/security/security-foundations/windows-autopatch-groups-windows-update",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-update",
       "redirect_document_id": true
     },
     {
       "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-overview.md",
-      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-quality-update-overview",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-overview",
       "redirect_document_id": true
     },
     {
