@@ -21954,6 +21954,76 @@
       "source_path": "windows/security/security-foundations.md",
       "redirect_url": "/windows/security/security-foundations/index",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-update-management.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-update-management",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-update.md",
+      "redirect_url": "/windows/security/security-foundations/windows-autopatch-groups-windows-update",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-quality-update-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-end-user-exp.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-end-user-exp",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-signals.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-signals",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-communications.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-communications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-reports-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-summary-dashboard.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-summary-dashboard",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-all-devices-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-status-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-all-devices-historical-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-trending-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-eligible-devices-historical-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-ineligible-devices-historical-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-feature-update-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-end-user-exp.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-manage-windows-feature-update-release",
+      "redirect_document_id": true
     }
   ]
 }
