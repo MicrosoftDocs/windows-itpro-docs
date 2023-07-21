@@ -89,18 +89,18 @@ EnableBootToCloudSharedPCMode setting is used to configure **Boot to Cloud** fea
 
 ### MDM Policies
 
-When enabling this mode, these MDM policies are applied for the Device scope (all users):
+When this mode is enabled, these MDM policies are applied for the Device scope (all users):
 
 | Setting                                                                                                                    | Value   | Value Description                                           |
 |----------------------------------------------------------------------------------------------------------------------------|---------|-------------------------------------------------------------|
 | [WindowsLogon/OverrideShellProgram](policy-csp-windowslogon.md#overrideshellprogram)                                       | 1       | Apply Lightweight Shell                                     |
 | [ADMX_CredentialProviders/DefaultCredentialProvider](policy-csp-admx-credentialproviders.md#defaultcredentialprovider)     | Enabled | Configures default credential provider to password provider |
-| [ADMX_Logon/DisableExplorerRunLegacy_2](policy-csp-admx-logon.md#disableexplorerrunlegacy_2)                               | Enabled | Do not process the computer legacy run list                 |
+| [ADMX_Logon/DisableExplorerRunLegacy_2](policy-csp-admx-logon.md#disableexplorerrunlegacy_2)                               | Enabled | Don't process the computer legacy run list                 |
 | [TextInput/EnableTouchKeyboardAutoInvokeInDesktopMode](policy-csp-textinput.md#enabletouchkeyboardautoinvokeindesktopmode) | 1       | When no keyboard is attached                                |
 
 ### Group Policies
 
-When enabling this mode, these local group policies are configured for all users:
+When this mode is enabled, these local group policies are configured for all users:
 
 | Policy setting                                                                                                         | Status                                |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
@@ -133,7 +133,7 @@ When enabling this mode, these local group policies are configured for all users
 
 ### Registry
 
-When enabling this mode, these registry changes made:
+When this mode is enabled, these registry changes are performed:
 
 | Registry setting                                                                             | Status |
 |----------------------------------------------------------------------------------------------|--------|
