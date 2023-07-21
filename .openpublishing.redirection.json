@@ -20786,6 +20786,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/client-management/mdm/policy-csp-cloudpc.md",
+      "redirect_url": "/windows/client-management/mdm/clouddesktop-csp",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "education/windows/education-scenarios-store-for-business.md",
       "redirect_url": "/windows/resources",
       "redirect_document_id": false
@@ -21934,7 +21939,7 @@
       "source_path": "windows/deployment/update/update-compliance-schema-wudostatus.md",
       "redirect_url": "/windows/deployment/update/wufb-reports-overview",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows/deployment/update/update-compliance-schema-wudoaggregatedstatus.md",
       "redirect_url": "/windows/deployment/update/wufb-reports-overview",
