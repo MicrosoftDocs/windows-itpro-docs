@@ -87,7 +87,7 @@ EnableBootToCloudSharedPCMode setting is used to configure **Boot to Cloud** fea
 > [!NOTE]
 > It is recommended not to set any of the policies enforced by this setting to different values, as these policies help provide a smooth UX experience for the **Boot to Cloud** feature for shared user mode.
 
-## MDM Policies
+### MDM Policies
 
 When enabling this mode, these MDM policies are applied for the Device scope (all users):
 
@@ -98,7 +98,7 @@ When enabling this mode, these MDM policies are applied for the Device scope (al
 | [ADMX_Logon/DisableExplorerRunLegacy_2](policy-csp-admx-logon.md#disableexplorerrunlegacy_2)                               | Enabled | Do not process the computer legacy run list                 |
 | [TextInput/EnableTouchKeyboardAutoInvokeInDesktopMode](policy-csp-textinput.md#enabletouchkeyboardautoinvokeindesktopmode) | 1       | When no keyboard is attached                                |
 
-## Group Policies
+### Group Policies
 
 When enabling this mode, these local group policies are configured for all users:
 
@@ -131,7 +131,7 @@ When enabling this mode, these local group policies are configured for all users
 | Start Menu and Taskbar/Notifications/Remove Notifications and Action Center                                            | Enabled                               |
 | System/Logon/Do not process the legacy run list                                                                        | Enabled                               |
 
-## Registry
+### Registry
 
 When enabling this mode, these registry changes made:
 
