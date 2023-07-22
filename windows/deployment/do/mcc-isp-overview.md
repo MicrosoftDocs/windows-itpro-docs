@@ -37,6 +37,8 @@ Microsoft Connected Cache uses Delivery Optimization as the backbone for Microso
 - Endpoint protection: Windows Defender definition updates
 - Xbox: Xbox Game Pass (PC only)
 
+Do you peer with [Microsoft (ASN 8075)](/azure/internet-peering/)? Microsoft Connected Cache complements peering by offloading static content that is served off of multiple CDNs such as Akamai, Lumen, and Edgecast. Microsoft Peering mainly caches dynamic content - by onboarding to Microsoft Connected Cache, you will cache static content that otherwise would be served by CDN. 
+
 For the full list of content endpoints that Microsoft Connected Cache for ISPs supports, see [Microsoft Connected Cache content and services endpoints](delivery-optimization-endpoints.md).
 
 ## How MCC works
