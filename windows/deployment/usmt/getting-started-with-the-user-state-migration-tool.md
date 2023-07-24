@@ -31,13 +31,13 @@ This article outlines the general process that you should follow to migrate file
 
     You can use the `MigXML.xsd` file to help you write and validate the .xml files. For more information about how to modify these files, see [USMT XML Reference](usmt-xml-reference.md).
 
-6. Create a [Config.xml File](usmt-configxml-file.md) if you want to exclude any components from the migration. To create this file, use the [ScanState Syntax](usmt-scanstate-syntax.md) option together with the other .xml files when you use the `ScanState.exe` command. For example, the following command creates a `Config.xml` file by using the `MigDocs.xml` and `MigApp.xml` files:
+6. Create a [Config.xml File](usmt-configxml-file.md) if you want to exclude any components from the migration. To create this file, run the `ScanState.exe` command with the [/genconfig](usmt-scanstate-syntax.md#migration-rule-options) option and specify the .xml files that you use with `ScanState.exe` as arguments. For example, the following command creates a `Config.xml` file by using the `MigDocs.xml` and `MigApp.xml` files:
 
     ```cmd
     ScanState.exe /genconfig:Config.xml /i:MigDocs.xml /i:MigApp.xml /v:13 /l:ScanState.log
     ```
 
-7. Review the migration state of the components listed in the `Config.xml` file, and specify `migrate=no` for any components that you don't want to migrate.
+7. Review and modify the `Config.xml` file to specify components that you don't want to migrate. Open the `Config.xml` that you generated, review the migration state of the components listed in it, and specify `migrate=no` for any components that you don't want to migrate.
 
 ## Step 2: Collect files and settings from the source computer
 
