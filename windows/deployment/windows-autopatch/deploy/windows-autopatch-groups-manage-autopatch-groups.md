@@ -181,31 +181,3 @@ When you create or edit the Custom or Default Autopatch group, Windows Autopatch
 #### Device conflict post device registration
 
 Autopatch groups will keep monitoring for all device conflict scenarios listed in the [Manage device conflict scenarios when using Autopatch groups](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#manage-device-conflict-scenarios-when-using-autopatch-groups) section even after devices were successfully registered with the service.
-
-## Known issues
-
-This section lists known issues with Autopatch groups during its public preview.
-
-### Autopatch group Azure AD group remediator
-
-- **Status: Active**
-
-The Windows Autopatch team is aware that the Windows Autopatch service isn't automatically restoring the Azure AD groups that get created during the Autopatch groups creation/editing process. If the following Azure AD groups, that belong to the Default Autopatch group and other Azure AD groups that get created with Custom Autopatch groups, are deleted or renamed, they won't be automatically remediated on your behalf yet:
-
-- Windows Autopatch – Test
-- Windows Autopatch – Ring1
-- Windows Autopatch – Ring2
-- Windows Autopatch – Ring3
-- Windows Autopatch – Last
-
-The Windows Autopatch team is currently developing the Autopatch group Azure AD group remediator feature and plan to make it available during public preview.
-
-> [!NOTE]
-> The Autopatch group remediator won't remediate the service-based deployment rings:
-> 
-> - Modern Workplace Devices-Windows Autopatch-Test
-> - Modern Workplace Devices-Windows Autopatch-First
-> - Modern Workplace Devices-Windows Autopatch-Fast
-> - Modern Workplace Devices-Windows Autopatch-Broad
-> 
-> Use the [Policy health feature](../operate/windows-autopatch-policy-health-and-remediation.md) to restore these groups, if needed. For more information, see [restore deployment groups](../operate/windows-autopatch-policy-health-and-remediation.md#restore-deployment-groups).
