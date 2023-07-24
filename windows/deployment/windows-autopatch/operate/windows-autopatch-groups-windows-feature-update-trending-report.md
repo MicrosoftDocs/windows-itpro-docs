@@ -22,7 +22,7 @@ Windows Autopatch provides a visual representation of Windows OS upgrade trends 
 **To view the Feature update trending report:**
 
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-1. Navigate to **Reports** > **Windows Autopatch** > **Windows feature updates (public preview)**.
+1. Navigate to **Reports** > **Windows Autopatch** > **Windows feature updates**.
 1. Select the **Reports** tab.
 1. Select **Feature update trending**.
 

@@ -15,7 +15,7 @@ ms.collection:
   - tier1
 ---
 
-# Software update management: Windows Autopatch groups experience (public preview)
+# Software update management
 
 Keeping your devices up to date is a balance of speed and stability. Windows Autopatch connects all devices to a modern cloud-based infrastructure to manage updates on your behalf.
 

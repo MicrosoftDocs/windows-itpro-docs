@@ -41,9 +41,6 @@ Communications are posted to, as appropriate for the type of communication, to t
 
 ### Opt out of receiving emails for standard communications
 
-> [!IMPORTANT]
-> This feature is in **public preview**. This feature is being actively developed and may not be complete. You can test and use these features in production environments and provide feedback.
-
 If you don't want to receive standard communications for Windows Updates releases via email, you can choose to opt out.
 
 **To opt out of receiving emails for standard communications:**

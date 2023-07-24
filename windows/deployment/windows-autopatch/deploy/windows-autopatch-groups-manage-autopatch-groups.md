@@ -58,9 +58,6 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
 > [!TIP]
 > [Update rings](/mem/intune/protect/windows-10-update-rings) and [feature updates](/mem/intune/protect/windows-10-feature-updates) for Windows 10 and later policies that are created and managed by Windows Autopatch can be restored using the [Policy health](../operate/windows-autopatch-policy-health-and-remediation.md) feature. For more information on remediation actions, see [restore Windows update policies](../operate/windows-autopatch-policy-health-and-remediation.md#restore-windows-update-policies).
 
-> [!NOTE]
-> During the public preview, Autopatch groups opt-in page will show a banner to let you know when one or more prerequisites are failing. Once you remediate the issue to meet the prerequisites, it can take up to an hour for your tenant to have the "Use preview" button available.
-
 ## Create a Custom Autopatch group
 
 > [!NOTE]
@@ -72,9 +69,6 @@ Before you start managing Autopatch groups, ensure you’ve met the following pr
 1. Select **Devices** from the left navigation menu.
 1. Under the **Windows Autopatch** section, select **Release management**.
 1. In the **Release management** blade, select **Autopatch groups (preview)**.
-1. Only during the public preview:
-    1. Review the [Microsoft Privacy Statement](../overview/windows-autopatch-privacy.md) and the [Autopatch groups Public Preview Addendum](../references/windows-autopatch-groups-public-preview-addendum.md).
-    1. Select the **I have reviewed and agree to the Autopatch groups Public Preview Addendum** checkbox. Then, select **Use preview** to test out Autopatch groups. If the **Use preview** option is greyed out, ensure you meet all the [Autopatch group prerequisites](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#autopatch-groups-prerequisites).
 1. In the **Autopatch groups** blade, select **Create**.
 1. In **Basics** page, enter a **name** and a **description** then select **Next: Deployment rings**.
     1. Enter up to 64 characters for the Autopatch group name and 150 characters maximum for the description. The Autopatch group name is appended to both the update rings and the DSS policy names that get created once the Custom Autopatch group is created.
