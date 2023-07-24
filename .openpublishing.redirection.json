@@ -21956,6 +21956,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/application-management/system-apps-windows-client-os.md",
+      "redirect_url": "/windows/application-management/apps-in-windows-10",
+      "redirect_document_id": false
+    },
+    {      
       "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-update-management.md",
       "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-update-management",
       "redirect_document_id": true
@@ -22024,6 +22029,11 @@
       "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-end-user-exp.md",
       "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-manage-windows-feature-update-release",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/application-management/provisioned-apps-windows-client-os.md",
+      "redirect_url": "/windows/application-management/apps-in-windows-10",
+      "redirect_document_id": false
     }
   ]
 }
