@@ -94,7 +94,8 @@ The elevation process is further secured by directing the prompt to the *secure 
 When an executable file requests elevation, the *interactive desktop*, also called the *user desktop*, is switched to the secure desktop. The secure desktop dims the user desktop and displays an elevation prompt that must be responded to before continuing. When the user selects **Yes** or **No**, the desktop switches back to the user desktop.
 
 On the secure desktop, it is not possible to paste a password you may have in the clipboard. This ability was removed in Windows 10, version 1709, and is present in all subsequent releases.
-
+> [!NOTE]
+> Starting in **Windows Server 2019**, it's not possible to paste the content of the clipboard on the secure desktop.
 Malware can present an imitation of the secure desktop, but when the **User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode** policy setting is set to **Prompt for consent**, the malware doesn't gain elevation if the user selects **Yes** on the imitation. If the policy setting is set to **Prompt for credentials**, malware imitating the credential prompt may be able to gather the credentials from the user. However, the malware doesn't gain elevated privilege and the system has other protections that mitigate malware from taking control of the user interface even with a harvested password.
 
 While malware could present an imitation of the secure desktop, this issue can't occur unless a user previously installed the malware on the PC. Because processes requiring an administrator access token can't silently install when UAC is enabled, the user must explicitly provide consent by selecting **Yes** or by providing administrator credentials. The specific behavior of the UAC elevation prompt is dependent upon security policies.
