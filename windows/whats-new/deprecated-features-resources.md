@@ -1,7 +1,7 @@
 ---
 title: Resources for deprecated features in the Windows client
 description: Resources and details for deprecated features in the Windows Client.
-ms.date: 02/14/2023
+ms.date: 07/31/2023
 ms.prod: windows-client
 ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
@@ -21,6 +21,7 @@ appliesto:
 
 This article provides additional resources about [deprecated features for Windows client](deprecated-features.md) that may be needed by IT professionals. The following information is provided to help IT professionals plan for the removal of deprecated features:
 
+## TLS versions 1.0 and 1.2 
 ## Microsoft Support Diagnostic Tool resources
 
 The [Microsoft Support Diagnostic Tool (MSDT)](/windows-server/administration/windows-commands/msdt) gathers diagnostic data for analysis by support professionals. MSDT is the engine used to run legacy Windows built-in troubleshooters. There are currently 28 built-in troubleshooters for MSDT. Half of the built-in troubleshooters have already been [redirected](#redirected-msdt-troubleshooters) to the Get Help platform, while the other half will be [retired](#retired-msdt-troubleshooters).  

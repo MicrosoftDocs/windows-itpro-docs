@@ -1,7 +1,7 @@
 ---
 title: Deprecated features in the Windows client
 description: Review the list of features that Microsoft is no longer developing in Windows 10 and Windows 11.
-ms.date: 06/08/2023
+ms.date: 07/31/2023
 ms.prod: windows-client
 ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
@@ -36,6 +36,7 @@ The features in this article are no longer being actively developed, and might b
 
 |Feature    |  Details and mitigation  | Deprecation announced |
 | ----------- | --------------------- | ---- |
+| TLS 1.0 and 1.1 | To increase the security posture of Windows customers and encourage modern protocol adoption, TLS versions 1.0 and 1.1 will soon be disabled by default in the operating system. Starting in Windows 11 Insider Preview builds in September 2023 and continuing in future Windows OS releases, TLS 1.0 and 1.1 will be disabled by default. There is an option to re-enable TLS 1.0 or TLS 1.1 for users who need to maintain compatibility. For more information, see [Resources for deprecated features](deprecated-features-resources.md). | July 2023| 
 | Cortana in Windows <!--7987543--> | Cortana in Windows as a standalone app is deprecated. This change only impacts Cortana in Windows, and your productivity assistant, Cortana, will continue to be available in Outlook mobile, Teams mobile, Microsoft Teams display, and Microsoft Teams rooms. | June 2023 | 
 | Microsoft Support Diagnostic Tool (MSDT) <!--6968128--> | [MSDT](/windows-server/administration/windows-commands/msdt) is deprecated and will be removed in a future release of Windows. MSDT is used to gather diagnostic data for analysis by support professionals. For more information, see [Resources for deprecated features](deprecated-features-resources.md) | January 2023 |
 | Universal Windows Platform (UWP) Applications for 32-bit Arm <!--7116112-->| This change is applicable only to devices with an Arm processor, for example Snapdragon processors from Qualcomm. If you have a PC built with a processor from Intel or AMD, this content is not applicable. If you are not sure which type of processor you have, check **Settings** > **System** > **About**.</br> </br> Support for 32-bit Arm versions of applications will be removed in a future release of Windows 11. After this change, for the small number of applications affected, app features might be different and you might notice a difference in performance. For more technical details about this change, see [Update app architecture from Arm32 to Arm64](/windows/arm/arm32-to-arm64). | January 2023 |
