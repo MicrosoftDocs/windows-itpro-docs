@@ -5,7 +5,7 @@ ms.prod: windows-client
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.author: vinpa
-ms.reviewer: 
+ms.reviewer:
 manager: aaroncz
 ms.custom: asr
 ms.technology: itpro-security
@@ -21,12 +21,12 @@ ms.topic: article
 - Windows 11
 - Windows Server 2016 and higher
 
-Windows includes a set of hardware and OS technologies that, when configured together, allow enterprises to "lock down" Windows systems so they behave more like mobile devices. In this configuration, [**Windows Defender Application Control (WDAC)**](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) is used to restrict devices to run only approved apps, while the OS is hardened against kernel memory attacks using [**memory integrity**](enable-virtualization-based-protection-of-code-integrity.md).
+Windows includes a set of hardware and OS technologies that, when configured together, allow enterprises to "lock down" Windows systems so they behave more like mobile devices. In this configuration, [**Windows Defender Application Control (WDAC)**](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) is used to restrict devices to run only approved apps, while the OS is hardened against kernel memory attacks using [**memory integrity**](../../hardware-security/enable-virtualization-based-protection-of-code-integrity.md).
 
 > [!NOTE]
 > Memory integrity is sometimes referred to as *hypervisor-protected code integrity (HVCI)* or *hypervisor enforced code integrity*, and was originally released as part of *Device Guard*. Device Guard is no longer used except to locate memory integrity and VBS settings in Group Policy or the Windows registry.
 
-WDAC policies and memory integrity are powerful protections that can be used separately. However, when these two technologies are configured to work together, they present a strong protection capability for Windows devices.  
+WDAC policies and memory integrity are powerful protections that can be used separately. However, when these two technologies are configured to work together, they present a strong protection capability for Windows devices.
 
 Using WDAC to restrict devices to only authorized apps has these advantages over other solutions:
 
@@ -44,6 +44,6 @@ WDAC has no specific hardware or software requirements.
 
 ## Related articles
 
-- [Windows Defender Application Control](../windows-defender-application-control/windows-defender-application-control.md)
-- [Memory integrity](enable-virtualization-based-protection-of-code-integrity.md)
+- [Windows Defender Application Control](../../threat-protection/windows-defender-application-control/windows-defender-application-control.md)
+- [Memory integrity](../../hardware-security/enable-virtualization-based-protection-of-code-integrity.md)
 - [Driver compatibility with memory integrity](https://techcommunity.microsoft.com/t5/windows-hardware-certification/driver-compatibility-with-device-guard-in-windows-10/ba-p/364865)

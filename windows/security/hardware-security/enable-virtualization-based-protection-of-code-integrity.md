@@ -1,29 +1,21 @@
 ---
 title: Enable memory integrity
 description: This article explains the steps to opt in to using memory integrity on Windows devices.
-ms.prod: windows-client
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: vinpa
-author: vinaypamnani-msft
-manager: aaroncz
-audience: ITPro
-ms.collection: 
+ms.collection:
   - highpri
   - tier2
 ms.topic: conceptual
 ms.date: 03/16/2023
-ms.reviewer: 
-ms.technology: itpro-security
+appliesto:
+  - "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>"
+  - "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
+  - "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2022</a>"
+  - "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2019</a>"
+  - "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
 ---
 
 # Enable virtualization-based protection of code integrity
-
-**Applies to** 
-
-- Windows 10
-- Windows 11
-- Windows Server 2016 or higher
 
 **Memory integrity** is a virtualization-based security (VBS) feature available in Windows. Memory integrity and VBS improve the threat model of Windows and provide stronger protections against malware trying to exploit the Windows kernel. VBS uses the Windows hypervisor to create an isolated virtual environment that becomes the root of trust of the OS that assumes the kernel can be compromised. Memory integrity is a critical component that protects and hardens Windows by running kernel mode code integrity within the isolated virtual environment of VBS. Memory integrity also restricts kernel memory allocations that could be used to compromise the system.
 
@@ -73,7 +65,7 @@ Enabling in Intune requires using the Code Integrity node in the [Virtualization
 
 4. Select **Enabled** and under **Virtualization Based Protection of Code Integrity**, select **Enabled without UEFI lock**. Only select **Enabled with UEFI lock** if you want to prevent memory integrity from being disabled remotely or by policy update. Once enabled with UEFI lock, you must have access to the UEFI BIOS menu to turn off Secure Boot if you want to turn off memory integrity.
 
-   ![Enable memory integrity using Group Policy.](../images/enable-hvci-gp.png)
+   ![Enable memory integrity using Group Policy.](images/enable-hvci-gp.png)
 
 5. Select **Ok** to close the editor.
 

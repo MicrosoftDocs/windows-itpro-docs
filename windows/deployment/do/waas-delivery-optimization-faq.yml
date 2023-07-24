@@ -12,7 +12,7 @@ metadata:
     - highpri
     - tier3
   ms.topic: faq
-  ms.date: 06/28/2023
+  ms.date: 07/11/2023
 title: Delivery Optimization Frequently Asked Questions
 summary: |
   **Applies to**
@@ -35,7 +35,7 @@ sections:
 
       - question: What are the requirements if I use a proxy?
         answer: For Delivery Optimization to successfully use the proxy, you should set up the proxy by using Windows proxy settings or Internet Explorer proxy settings. For details see [Using a proxy with Delivery Optimization](../do/delivery-optimization-proxy.md). Most content downloaded with Delivery Optimization uses byte range requests. Make sure your proxy allows byte range requests. For more information, see [Proxy requirements for Windows Update](/windows/deployment/update/windows-update-troubleshooting).
-           
+
       - question: What hostnames should I allow through my firewall to support Delivery Optimization?
         answer: | 
           **For communication between clients and the Delivery Optimization cloud service**:
@@ -57,6 +57,11 @@ sections:
 
           For more information, see [Endpoints for Delivery Optimization and Microsoft Connected Cache](../do/delivery-optimization-endpoints.md) for a list of all content endpoints needed.
 
+      - question: My firewall requires IP addresses and can't process FQDNs. How do I configure it to download content with Delivery Optimization?
+        answer: | 
+          Microsoft content, such as Windows updates, are hosted and delivered globally via Content Delivery Networks (CDNs) and [Microsoft Connected Cache](waas-microsoft-connected-cache.md) (MCC) servers, which are hosted within Internet Service Provider (ISP) networks. 
+          The network of CDNs and MCCs allows Microsoft to reach the scale required to meet the demand of the Windows user base. Given this delivery infrastructure changes dynamically, providing an exhaustive list of IPs and keeping it up to date isn't feasible. 
+        
       - question: Does Delivery Optimization use multicast?
         answer: No. It relies on the cloud service for peer discovery, resulting in a list of peers and their IP addresses. Client devices then connect to their peers to obtain download files over TCP/IP.
           
@@ -100,7 +105,7 @@ sections:
 
       - question: How are downloads initiated by Delivery Optimization?
         answer: |
-         Delivery Optimization only starts when an application or service that's integrated with Delivery Optimization starts a download. For example, the Microsoft Edge browser. For more information about Delivery Optimization callers, see [Types of download content supported by Delivery Optimization](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization).
+          Delivery Optimization only starts when an application or service that's integrated with Delivery Optimization starts a download. For example, the Microsoft Edge browser. For more information about Delivery Optimization callers, see [Types of download content supported by Delivery Optimization](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization).
             
       - question: How does Delivery Optimization determine which content is available for peering?
         answer: |
@@ -120,9 +125,9 @@ sections:
           Delivery Optimization is an HTTP downloader used by most content providers from Microsoft. When a device is configured to use Delivery Optimization peering (on by default), it does so with the HTTP downloader capabilities to optimize bandwidth usage. 
           If you'd like to disable peer-to-peer capabilities of Delivery Optimization, change the Delivery Optimization [Download mode](waas-delivery-optimization-reference.md#download-mode) setting to '0', which will disable peer-to-peer and provide hash checks. [Download mode](waas-delivery-optimization-reference.md#download-mode) set to '99' should only be used when the device is offline and doesn't have internet access.
           Don't set **Download mode** to '100' (Bypass), which can cause some content to fail to download. Starting in Windows 11, Download mode '100' is deprecated.
-         
+
           > [!NOTE]
-          > Disabling Delivery Optimization won't prevent content from downloading to your devices. If you're looking to pause updates, you need to set policies for the relevant components such as Windows Update, Windows Store or Edge browser.  If you're looking to reduce the load on your network, look into using Delivery Optimization Peer-to-Peer, Microsoft Connected Cache or apply the [network throttling policies](waas-delivery-optimization-reference.md#maximum-download-bandwidth) available for Delivery Optimization.
+          > Disabling Delivery Optimization won't prevent content from downloading to your devices. If you're looking to pause updates, you need to set policies for the relevant components such as Windows Update, Windows Store or Microsoft Edge browser.  If you're looking to reduce the load on your network, look into using Delivery Optimization Peer-to-Peer, Microsoft Connected Cache or apply the [network throttling policies](waas-delivery-optimization-reference.md#maximum-download-bandwidth) available for Delivery Optimization.
       
       - question: Delivery Optimization is using device resources and I can't tell why?
         answer: |

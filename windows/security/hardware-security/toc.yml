@@ -4,7 +4,7 @@ items:
   - name: Hardware root of trust
     items:
       - name: Windows Defender System Guard
-        href: ../threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows.md
+        href: how-hardware-based-root-of-trust-helps-protect-windows.md
       - name: Trusted Platform Module
         href: ../information-protection/tpm/trusted-platform-module-top-node.md
         items:
@@ -38,10 +38,10 @@ items:
             href: ../information-protection/pluton/pluton-as-tpm.md
   - name: Silicon assisted security
     items:
-      - name: Virtualization-based security (VBS)
+      - name: Virtualization-based security (VBS) 🔗
         href: /windows-hardware/design/device-experiences/oem-vbs
       - name: Memory integrity (HVCI)
-        href: ../threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity.md
+        href: enable-virtualization-based-protection-of-code-integrity.md
       - name: Memory integrity and VBS enablement 🔗
         href: /windows-hardware/design/device-experiences/oem-hvci-enablement
       - name: Hardware-enforced stack protection
@@ -49,6 +49,6 @@ items:
       - name: Secured-core PC 🔗
         href: /windows-hardware/design/device-experiences/oem-highly-secure-11
       - name: Kernel Direct Memory Access (DMA) protection
-        href: ../information-protection/kernel-dma-protection-for-thunderbolt.md
+        href: kernel-dma-protection-for-thunderbolt.md
       - name: System Guard Secure Launch
-        href: ../threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md
+        href: system-guard-secure-launch-and-smm-protection.md
