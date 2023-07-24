@@ -19,7 +19,7 @@ ms.reviewer: stevedia
 -   Windows 10
 -   Windows 11
 
-This topic explains how to acquire and apply Dynamic Update packages to existing Windows images *prior to deployment* and includes Windows PowerShell scripts you can use to automate this process.
+This article explains how to acquire and apply Dynamic Update packages to existing Windows images *prior to deployment* and includes Windows PowerShell scripts you can use to automate this process.
 
 Volume-licensed media is available for each release of Windows in the Volume Licensing Service Center (VLSC) and other relevant channels such as Windows Update for Business, Windows Server Update Services (WSUS), and Visual Studio Subscriptions. You can use Dynamic Update to ensure that Windows devices have the latest feature update packages as part of an in-place upgrade while preserving language pack and Features on Demand (FODs) that might have been previously installed. Dynamic Update also eliminates the need to install a separate quality update as part of the in-place upgrade process.
 
@@ -29,7 +29,7 @@ Whenever installation of a feature update starts (whether from media or an envir
 
 - Updates to Setup.exe binaries or other files that Setup uses for feature updates
 - Updates for the "safe operating system" (SafeOS) that is used for the Windows recovery environment
-- Updates to the servicing stack necessary to complete the feature update (see [Servicing stack updates](servicing-stack-updates.md) for more information)
+- Updates to the servicing stack necessary to complete the feature update For more information, see [Servicing stack updates](servicing-stack-updates.md).
 - The latest cumulative (quality) update
 - Updates to applicable drivers already published by manufacturers specifically intended for Dynamic Update
 
@@ -39,10 +39,10 @@ Devices must be able to connect to the internet to obtain Dynamic Updates. In so
 
 ## Acquire Dynamic Update packages
 
-You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx). At that site, use the search bar in the upper right to find the Dynamic Update packages for a particular release. The various Dynamic Update packages might not all be present in the results from a single search, so you might have to search with different keywords to find all of the updates. And you'll need to check various parts of the results to be sure you've identified the needed files. The following tables shows the key values to search for or look for in the results. 
+You can obtain Dynamic Update packages from the [Microsoft Update Catalog](https://catalog.update.microsoft.com). At that site, use the search bar in the upper right to find the Dynamic Update packages for a particular release. The various Dynamic Update packages might not all be present in the results from a single search, so you might have to search with different keywords to find all of the updates. Check various parts of the results to be sure you've identified the needed files. The following tables show the key values to search for or look for in the results. 
 
 ### Windows 11, version 22H2 Dynamic Update packages
-**Title** can distinguish each Dynamic Package. Cumulative Update has the Servicing Stack embedded. Servicing Stack published only if required for a given Cumulative Update.
+**Title** can distinguish each Dynamic Package. Cumulative updates have the Servicing Stack embedded. The Servicing Stack is published only if required for a given cumulative update.
 
 | Update packages                   |Title                                                          |
 |-----------------------------------|---------------------------------------------------------------|
