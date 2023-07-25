@@ -89,7 +89,7 @@ Enable-BitLocker -MountPoint "C:" -EncryptionMethod XtsAes256 -UsedSpaceOnly -Pi
 
 ## Related Articles
 
-- [BitLocker: FAQs](bitlocker-frequently-asked-questions.yml)
+- [BitLocker: FAQs](faq.yml)
 - [Microsoft BitLocker Administration and Management (MBAM)](/microsoft-desktop-optimization-pack/mbam-v25/)
 - [Overview of BitLocker Device Encryption in Windows](bitlocker-device-encryption-overview-windows-10.md#bitlocker-device-encryption)
 - [BitLocker Group Policy Reference](./bitlocker-group-policy-settings.md)

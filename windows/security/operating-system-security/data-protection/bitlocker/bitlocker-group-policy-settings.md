@@ -1323,6 +1323,6 @@ PCR 7 measurements are a mandatory logo requirement for systems that support Mod
 
 - [Trusted Platform Module](/windows/device-security/tpm/trusted-platform-module-overview)
 - [TPM Group Policy settings](/windows/device-security/tpm/trusted-platform-module-services-group-policy-settings)
-- [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.yml)
+- [BitLocker frequently asked questions (FAQ)](faq.yml)
 - [BitLocker overview](index.md)
 - [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)

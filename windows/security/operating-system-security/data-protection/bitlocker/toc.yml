@@ -4,26 +4,7 @@ items:
 - name: BitLocker device encryption
   href: bitlocker-device-encryption-overview-windows-10.md
 - name: BitLocker frequently asked questions (FAQ)
-  href: bitlocker-frequently-asked-questions.yml
-  items:
-  - name: Overview and requirements
-    href: bitlocker-overview-and-requirements-faq.yml
-  - name: Upgrading
-    href: bitlocker-upgrading-faq.yml
-  - name: Deployment and administration
-    href: bitlocker-deployment-and-administration-faq.yml
-  - name: Key management
-    href: bitlocker-key-management-faq.yml
-  - name: BitLocker To Go
-    href: bitlocker-to-go-faq.yml
-  - name: Active Directory Domain Services
-    href: bitlocker-and-adds-faq.yml
-  - name: Security
-    href: bitlocker-security-faq.yml
-  - name: BitLocker Network Unlock
-    href: bitlocker-network-unlock-faq.yml
-  - name: General
-    href: bitlocker-using-with-other-programs-faq.yml
+  href: faq.yml
 - name: "Prepare your organization for BitLocker: Planning and policies"
   href: prepare-your-organization-for-bitlocker-planning-and-policies.md
 - name: BitLocker deployment comparison
