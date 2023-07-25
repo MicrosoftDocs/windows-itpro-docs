@@ -1,7 +1,7 @@
 ---
 title: BitLocker overview
 description: This article provides a high-level overview of BitLocker, including a list of system requirements, practical applications, and deprecated features.
-ms.collection: 
+ms.collection:
   - highpri
   - tier1
 ms.topic: conceptual

@@ -211,7 +211,7 @@ This section covers two examples of using an AppLocker XML file to the **Protect
 - [Create a Packaged App rule for Store apps](#create-a-packaged-app-rule-for-store-apps)
 - [Create an Executable rule for unsigned apps](#create-an-executable-rule-for-unsigned-apps)
 
-For more info about AppLocker, see the [AppLocker](../../threat-protection/windows-defender-application-control/applocker/applocker-overview.md) content.
+For more info about AppLocker, see the [AppLocker](../../application-security/application-control/windows-defender-application-control/applocker/applocker-overview.md) content.
 
 #### Create a Packaged App rule for Store apps
 
@@ -600,7 +600,7 @@ You can restrict which files are protected by WIP when they're downloaded from a
 
 - [What is Azure Rights Management?](/information-protection/understand-explore/what-is-azure-rms)
 
-- [Create a Windows Information Protection (WIP) protection policy using Microsoft Intune](./overview-create-wip-policy.md)
+- [Create a Windows Information Protection (WIP) protection policy using Microsoft Intune](overview-create-wip-policy.md)
 
 - [Intune MAM Without Enrollment](/archive/blogs/configmgrdogs/intune-mam-without-enrollment)
 
