@@ -1,26 +1,17 @@
 ---
-title: BitLocker Use BitLocker Drive Encryption Tools to manage BitLocker 
-description: This article for the IT professional describes how to use tools to manage BitLocker.
+title: How to use the BitLocker drive encryption tools to manage BitLocker 
+description: Learn how to use tools to manage BitLocker.
 ms.collection: 
-  - highpri
   - tier1
-ms.topic: conceptual
-ms.date: 11/08/2022
+ms.topic: how-to
+ms.date: 07/25/2023
 ---
 
-# BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker
+# How to use the BitLocker drive encryption tools to manage BitLocker
 
-This article for the IT professional describes how to use tools to manage BitLocker.
+BitLocker drive encryption tools include the command-line tools *manage-bde.exe*, *repair-bde.exe*, and the cmdlets for Windows PowerShell.
 
-BitLocker Drive Encryption Tools include the command-line tools manage-bde and repair-bde and the BitLocker cmdlets for Windows PowerShell.
-
-Both manage-bde and the BitLocker cmdlets can be used to perform any task that can be accomplished through the BitLocker control panel and are appropriate to use for automated deployments and other scripting scenarios.
-
-Repair-bde is a special circumstance tool that is provided for disaster recovery scenarios in which a BitLocker protected drive can't be unlocked normally or using the recovery console.
-
-1. [Manage-bde](#manage-bde)
-2. [Repair-bde](#repair-bde)
-3. [BitLocker cmdlets for Windows PowerShell](#bitlocker-cmdlets-for-windows-powershell)
+The tools can be used to perform any tasks that can be accomplished through the BitLocker control panel and are appropriate to use for automated deployments and other scripting scenarios.
 
 ## Manage-bde
 
@@ -87,26 +78,24 @@ manage-bde.exe -protectors -add -pw C:
 manage-bde.exe -on C:
 ```
 
-## Repair-bde
+## BitLocker Repair Tool
 
 Hard disk areas on which BitLocker stores critical information could be damaged, for example, when a hard disk fails or if Windows exits unexpectedly.
 
-The BitLocker Repair Tool (Repair-bde) can be used to access encrypted data on a severely damaged hard disk if the drive was encrypted with BitLocker. Repair-bde can reconstruct critical parts of the drive and salvage recoverable data as long as a valid recovery password or recovery key is used to decrypt the data. If the BitLocker metadata data on the drive has become corrupt, the backup key package in addition to the recovery password or recovery key must be supplied. This key package is backed up in Active Directory Domain Services (AD DS) if the default settings for AD DS backup are used. With this key package and either the recovery password or recovery key, portions of a corrupted BitLocker-protected drive can be decrypted. Each key package will work only for a drive that has the corresponding drive identifier. The BitLocker Recovery Password Viewer can be used to obtain this key package from AD DS.
+The BitLocker Repair Tool (*repair-bde.exe*) is useful for disaster recovery scenarios, in which a BitLocker protected drive can't be unlocked normally or using the recovery console.
+
+The Repair Tool can reconstruct critical parts of the drive and salvage recoverable data, as long as a valid recovery password or recovery key is used to decrypt the data. If the BitLocker metadata data on the drive is corrupt, the backup key package in addition to the recovery password or recovery key must be supplied. The key package is backed up in Active Directory Domain Services (AD DS) if the default settings for AD DS backup are used. With the key package and either the recovery password or recovery key, portions of a corrupted BitLocker-protected drive can be decrypted. Each key package works only for a drive that has the corresponding drive identifier. The BitLocker Recovery Password Viewer can be used to obtain this key package from AD DS.
 
 > [!TIP]
-> If recovery information is not being backed up to AD DS or if key packages need to be saved in an alternative way, the command:
+> If recovery information is not backed up to AD DS or if key packages need to be saved in an alternative way, use the following command to generate a key package for a volume:
 >
 > `manage-bde.exe -KeyPackage`
->
-> can be used to generate a key package for a volume.
 
-The Repair-bde command-line tool is intended for use when the operating system doesn't start or when the BitLocker Recovery Console can't be started. Use Repair-bde if the following conditions are true:
+The Repair Tool is intended for use when the operating system doesn't start or when the BitLocker Recovery Console can't be started. Use Repair-bde in the following conditions:
 
-- The drive has been encrypted using BitLocker Drive Encryption.
-
-- Windows doesn't start, or the BitLocker recovery console can't be started.
-
-- There isn't a backup copy of the data that is contained on the encrypted drive.
+- The drive is encrypted using BitLocker Drive Encryption
+- Windows doesn't start, or the BitLocker recovery console can't start
+- There isn't a backup copy of the data that is contained on the encrypted drive
 
 > [!NOTE]
 > Damage to the drive may not be related to BitLocker. Therefore, it is recommended to try other tools to help diagnose and resolve the problem with the drive before using the BitLocker Repair Tool. The Windows Recovery Environment (Windows RE) provides additional options to repair computers.
@@ -233,7 +222,7 @@ Add-BitLockerKeyProtector C: -ADAccountOrGroupProtector -ADAccountOrGroup S-1-5-
 ## Related articles
 
 - [BitLocker overview](index.md)
-- [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.yml)
+- [BitLocker frequently asked questions (FAQ)](faq.yml)
 - [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)
 - [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md)
 - [BitLocker: How to deploy on Windows Server 2012](bitlocker-how-to-deploy-on-windows-server.md)
