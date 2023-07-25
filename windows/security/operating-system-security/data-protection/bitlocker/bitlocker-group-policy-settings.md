@@ -4,7 +4,7 @@ description: This article for IT professionals describes the function, location,
 ms.collection: 
   - highpri
   - tier1
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 11/08/2022
 ---
 
