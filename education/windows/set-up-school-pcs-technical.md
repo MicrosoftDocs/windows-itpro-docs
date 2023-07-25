@@ -1,7 +1,7 @@
 ---
 title: Set up School PCs app technical reference overview
 description: Describes the purpose of the Set up School PCs app for Windows 10 devices.
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 08/10/2022
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
