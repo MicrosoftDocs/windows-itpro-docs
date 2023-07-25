@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 
-title: Windows client deployment documentation # < 60 chars
-summary: Learn about deploying and updating Windows client devices in your organization # < 160 chars
+title: Deploy and update Windows # < 60 chars; shows at top of hub page
+summary: Learn about deploying and updating Windows client devices in your organization. # < 160 chars
 
 metadata:
-  title: Windows client deployment documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Windows client deployment documentation # Required; browser tab title displayed in search results. Include the brand. < 60 chars.
   description: Learn about deploying and updating Windows client devices in your organization. # Required; article description that is displayed in search results. < 160 chars.
   ms.topic: hub-page
   ms.prod: windows-client
@@ -15,10 +15,8 @@ metadata:
   author: aczechowski
   ms.author: aaroncz
   manager: dansimp
-  ms.date: 07/19/2023
+  ms.date: 07/24/2023
   localization_priority: medium
-    
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
 # common graphics: https://review.learn.microsoft.com/content-production-service/internal/image-gallery?branch=main
 
@@ -38,7 +36,7 @@ productDirectory:
           url:  update/plan-define-strategy.md
 
     - title: Prepare
-      imageSrc: media/common/i_tasks.svg
+      imageSrc: /media/common/i_tasks.svg
       links:
         - text: Prepare to deploy Windows updates
           url: update/prepare-deploy-windows.md
@@ -126,8 +124,10 @@ additionalContent:
             url: volume-activation/plan-for-volume-activation-client.md
           - text: Subscription activation
             url: windows-10-subscription-activation.md
-          - text: Volume activation management tool (VAMT) 
+          - text: Volume activation management tool (VAMT)
             url: volume-activation/introduction-vamt.md
+          - text: Activate using key management service (KMS)
+            url: volume-activation/activate-using-key-management-service-vamt.md
           - text: Windows commercial licensing overview
             url: /windows/whats-new/windows-licensing
 
