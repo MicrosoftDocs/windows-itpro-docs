@@ -4,7 +4,7 @@ description: Learn more about the CloudDesktop CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 07/21/2023
+ms.date: 07/25/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -46,7 +46,7 @@ The following list shows the CloudDesktop configuration service provider nodes:
 
 <!-- Device-EnableBootToCloudSharedPCMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-Setting this node to "true" configures boot to cloud for Shared PC mode. This mode enables users to seamlessly sign-in to a Cloud PC. For using this mode, users must install and configure a Cloud Provider application on their PC and must have a Cloud PC provisioned.
+Setting this node to "true" configures boot to cloud for Shared PC mode. Boot to cloud mode enables users to seamlessly sign-in to a Cloud PC. Shared PC mode allows multiple users to sign-in on the device and use for shared purpose. For enabling boot to cloud shared pc feature, Cloud Provider application must be installed on the PC and the user must have a Cloud PC provisioned.
 <!-- Device-EnableBootToCloudSharedPCMode-Description-End -->
 
 <!-- Device-EnableBootToCloudSharedPCMode-Editable-Begin -->
@@ -69,7 +69,7 @@ Setting this node to "true" configures boot to cloud for Shared PC mode. This mo
 | Value | Description |
 |:--|:--|
 | false (Default) | Not configured. |
-| true | Boot to cloud Shared PC mode enabled. |
+| true | Boot to cloud shared pc mode enabled. |
 <!-- Device-EnableBootToCloudSharedPCMode-AllowedValues-End -->
 
 <!-- Device-EnableBootToCloudSharedPCMode-Examples-Begin -->
@@ -93,9 +93,10 @@ When this mode is enabled, these MDM policies are applied for the Device scope (
 
 | Setting                                                                                                                    | Value   | Value Description                                           |
 |----------------------------------------------------------------------------------------------------------------------------|---------|-------------------------------------------------------------|
+| [CloudDesktop/BootToCloudMode](policy-csp-clouddesktop.md#boottocloudmode)                                                 | 1       | Enable Boot to Cloud Desktop                                |
 | [WindowsLogon/OverrideShellProgram](policy-csp-windowslogon.md#overrideshellprogram)                                       | 1       | Apply Lightweight Shell                                     |
 | [ADMX_CredentialProviders/DefaultCredentialProvider](policy-csp-admx-credentialproviders.md#defaultcredentialprovider)     | Enabled | Configures default credential provider to password provider |
-| [ADMX_Logon/DisableExplorerRunLegacy_2](policy-csp-admx-logon.md#disableexplorerrunlegacy_2)                               | Enabled | Don't process the computer legacy run list                 |
+| [ADMX_Logon/DisableExplorerRunLegacy_2](policy-csp-admx-logon.md#disableexplorerrunlegacy_2)                               | Enabled | Don't process the computer legacy run list                  |
 | [TextInput/EnableTouchKeyboardAutoInvokeInDesktopMode](policy-csp-textinput.md#enabletouchkeyboardautoinvokeindesktopmode) | 1       | When no keyboard is attached                                |
 
 ### Group Policies

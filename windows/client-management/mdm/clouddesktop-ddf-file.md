@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 07/21/2023
+ms.date: 07/25/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -31,7 +31,7 @@ The following XML file contains the device description framework (DDF) for the C
       <AccessType>
         <Get />
       </AccessType>
-      <Description>The CloudDesktop configuration service provider is used to configure various Cloud PC related scenarios.</Description>
+      <Description>The CloudDesktop configuration service provider is used to configure different Cloud PC related scenarios.</Description>
       <DFFormat>
         <node />
       </DFFormat>
@@ -60,7 +60,7 @@ The following XML file contains the device description framework (DDF) for the C
           <Replace />
         </AccessType>
         <DefaultValue>false</DefaultValue>
-        <Description>Setting this node to "true" configures boot to cloud for Shared PC mode. This mode enables users to seamlessly sign-in to a Cloud PC. For using this mode, users must install and configure a Cloud Provider application on their PC and must have a Cloud PC provisioned.</Description>
+        <Description>Setting this node to "true" configures boot to cloud for Shared PC mode. Boot to cloud mode enables users to seamlessly sign-in to a Cloud PC. Shared PC mode allows multiple users to sign-in on the device and use for shared purpose. For enabling boot to cloud shared pc feature, Cloud Provider application must be installed on the PC and the user must have a Cloud PC provisioned.</Description>
         <DFFormat>
           <bool />
         </DFFormat>
@@ -81,7 +81,7 @@ The following XML file contains the device description framework (DDF) for the C
           </MSFT:Enum>
           <MSFT:Enum>
             <MSFT:Value>true</MSFT:Value>
-            <MSFT:ValueDescription>Boot to cloud Shared PC mode enabled</MSFT:ValueDescription>
+            <MSFT:ValueDescription>Boot to cloud shared pc mode enabled</MSFT:ValueDescription>
           </MSFT:Enum>
         </MSFT:AllowedValues>
       </DFProperties>
