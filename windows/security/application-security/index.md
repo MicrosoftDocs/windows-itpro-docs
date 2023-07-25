@@ -1,12 +1,6 @@
 ---
 title: Windows application security
 description: Get an overview of application security in Windows
-ms.reviewer:
-manager: aaroncz
-ms.author: paoloma
-author: paolomatarazzo
-ms.prod: windows-client
-ms.technology: itpro-security
 ms.date: 03/09/2023
 ms.topic: article
 ---
