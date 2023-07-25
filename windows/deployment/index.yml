@@ -26,37 +26,50 @@ productDirectory:
     - title: Plan
       imageSrc: /media/common/i_overview.svg
       links:
+        - text: Plan for Windows 11
+          url: /windows/whats-new/windows-11-plan?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
         - text: Create a deployment plan
           url: update/create-deployment-plan.md
         - text: Define readiness criteria
           url: update/plan-define-readiness.md
-        - text: Evaluate infrastructure and tools
-          url: update/eval-infra-tools.md
         - text: Define your servicing strategy
-          url:  update/plan-define-strategy.md
+          url: update/plan-define-strategy.md
+        - text: Determine application readiness
+          url: update/plan-determine-app-readiness.md
+        - text: Plan for volume activation
+          url: volume-activation/plan-for-volume-activation-client.md
 
     - title: Prepare
       imageSrc: /media/common/i_tasks.svg
       links:
+        - text: Prepare for Windows 11
+          url: /windows/whats-new/windows-11-prepare?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
         - text: Prepare to deploy Windows updates
           url: update/prepare-deploy-windows.md
         - text: Prepare updates using Windows Update for Business
           url: update/waas-manage-updates-wufb.md
-        - text: Prepare for Zero Touch Installation of Windows 10 with Configuration Manager
-          url: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
+        - text: Evaluate and update infrastructure
+          url: update/update-policies.md
         - text: Set up Delivery Optimization for Windows client updates
-          url: do/index.yml
-
+          url: do/waas-delivery-optimization-setup.md?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json
+        - text: Prepare for imaging with Configuration Manager
+          url: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
 
     - title: Deploy
       imageSrc: /media/common/i_deploy.svg
       links:
         - text: Deploy Windows with Autopilot
-          url: /mem/autopilot
+          url: /mem/autopilot/tutorial/autopilot-scenarios
         - text: Assign devices to servicing channels
           url: update/waas-servicing-channels-windows-10-updates.md
+        - text: Deploy updates with Intune
+          url: update/deploy-updates-intune.md
         - text: Deploy Windows updates with Configuration Manager
           url: update/deploy-updates-configmgr.md
+        - text: Upgrade Windows using Configuration Manager
+          url: deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager.md
+        - text: Check release health
+          url: update/check-release-health.md
 
 additionalContent:
   sections:
@@ -147,19 +160,19 @@ additionalContent:
         links:
           - text: Download and install the Windows ADK
             url: /windows-hardware/get-started/adk-install
-#          - text: 
-#            url: 
+          - text: Deployment tools
+            url: /windows-hardware/manufacture/desktop/boot-and-install-windows
 #          - text: 
 #            url: 
 #          - text: 
 #            url: 
 
-#      - title: Release and lifecycle
-#        links:
-#          - text: Windows release health dashboard
-#            url: /windows/release-health
-#          - text: 
-#            url: 
+      - title: Community
+        links:
+          - text: Windows IT pro blog
+            url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog
+          - text: Windows office hours
+            url: https://aka.ms/windows/officehours
 #          - text: 
 #            url: 
 #          - text: 
