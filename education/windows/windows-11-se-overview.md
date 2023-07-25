@@ -1,8 +1,8 @@
 ---
 title: Windows 11 SE Overview
 description: Learn about Windows 11 SE, and the apps that are included with the operating system.
-ms.topic: article
-ms.date: 03/09/2023
+ms.topic: overview
+ms.date: 07/25/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
 ms.collection:
@@ -104,7 +104,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Dyknow`                                  | 7.9.13.7          | Win32    | `Dyknow`                                  |
 | `e-Speaking Voice and Speech recognition` | 4.4.0.11          | Win32    | `e-speaking`                              |
 | `EasyReader`                              | 10.0.4.498        | Win32    | `Dolphin Computer Access`                 |
-| `Easysense 2`                             | 1.32.0001         | Win32    | `Data Harvest`                            |                   
+| `Easysense 2`                             | 1.32.0001         | Win32    | `Data Harvest`                            |
 | `Epson iProjection`                       | 3.31              | Win32    | `Epson`                                   |
 | `eTests`                                  | 4.0.25            | Win32    | `CASAS`                                   |
 | `Exam Writepad`                           | 22.10.14.1834     | Win32    | `Sheldnet`                                |
