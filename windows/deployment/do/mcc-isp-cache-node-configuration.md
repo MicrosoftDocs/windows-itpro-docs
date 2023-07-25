@@ -13,7 +13,7 @@ ms.collection: tier3
 
 # Cache node configuration
 
-All cache node configuration takes place within Azure portal. This article outlines all of the settings that you'll be able to configure. 
+All cache node configuration takes place within Azure portal. This article outlines all of the settings that you are able to configure. 
 
 ## Settings
 
