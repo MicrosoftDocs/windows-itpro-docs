@@ -10,8 +10,7 @@ ms.date: 11/08/2022
 
 # BitLocker overview
 
-Bitlocker is a disk encryption feature included with Windows, designed to protect data by providing encryption for entire volumes.
-
+Bitlocker is a disk encryption feature included with Windows, designed to protect data by providing encryption for entire volumes.\
 BitLocker addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned devices.
 
 BitLocker provides the maximum protection when used with a Trusted Platform Module (TPM) version 1.2 or later versions. The TPM is a hardware component installed in many devices ant it works with BitLocker to help protect user data and to ensure that a computer hasn't been tampered with while the system is offline.
@@ -54,6 +53,3 @@ A partition subject to encryption can't be marked as an active partition. This r
 When installing the BitLocker optional component on a server, the Enhanced Storage feature also needs to be installed. The Enhanced Storage feature is used to support hardware encrypted drives.
 
 [!INCLUDE [bitlocker](../../../../../includes/licensing/bitlocker-enablement.md)]
-
-## Next steps
-
