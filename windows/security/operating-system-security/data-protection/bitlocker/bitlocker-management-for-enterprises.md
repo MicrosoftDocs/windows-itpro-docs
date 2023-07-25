@@ -104,7 +104,7 @@ Enable-BitLocker -MountPoint "C:" -EncryptionMethod XtsAes256 -UsedSpaceOnly -Pi
 - [Windows Server Installation Options](/windows-server/get-started-19/install-upgrade-migrate-19/)
 - [How to update local source media to add roles and features](/archive/blogs/joscon/how-to-update-local-source-media-to-add-roles-and-features)
 - [How to add or remove optional components on Server Core](/archive/blogs/server_core/using-features-on-demand-with-updated-systems-and-patched-images) *(Features on Demand)*
-- [How to deployBitLocker on Windows Server](bitlocker-how-to-deploy-on-windows-server.md)  
+- [How to deploy BitLocker on Windows Server](bitlocker-how-to-deploy-on-windows-server.md)  
 - [How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md)
 - [Shielded VMs and Guarded Fabric](https://blogs.technet.microsoft.com/windowsserver/2016/05/10/a-closer-look-at-shielded-vms-in-windows-server-2016/)
 
