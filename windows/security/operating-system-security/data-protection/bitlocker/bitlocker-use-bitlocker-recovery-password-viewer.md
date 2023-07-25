@@ -22,7 +22,7 @@ To complete the procedures in this scenario, the following requirements must be 
 
 - Domain administrator credentials
 - Devices must be joined to the domain
-- On the domain-joined devices, BitLocker must enabled
+- On the domain-joined devices, BitLocker must be enabled
 
 The following procedures describe the most common tasks performed by using the BitLocker Recovery Password Viewer.
 
