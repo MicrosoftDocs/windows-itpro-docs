@@ -75,6 +75,8 @@
       "author":{
         "application-security//**/*.md": "vinaypamnani-msft",
         "application-security//**/*.yml": "vinaypamnani-msft",
+        "application-security/application-control/windows-defender-application-control/**/*.md": "jsuther1974",
+        "application-security/application-control/windows-defender-application-control/**/*.yml": "jsuther1974",
         "application-security/application-control/user-account-control/*.md": "paolomatarazzo",
         "hardware-security/**/*.md": "vinaypamnani-msft",
         "hardware-security/**/*.yml": "vinaypamnani-msft",
@@ -92,6 +94,8 @@
       "ms.author":{
         "application-security//**/*.md": "vinpa",
         "application-security//**/*.yml": "vinpa",
+        "application-security/application-control/windows-defender-application-control/**/*.md": "jsuther",
+        "application-security/application-control/windows-defender-application-control/**/*.yml": "jsuther",
         "application-security/application-control/user-account-control/*.md": "paoloma",
         "application-security/application-control/user-account-control/*.yml": "paoloma",
         "hardware-security//**/*.md": "vinpa",
@@ -108,18 +112,18 @@
         "operating-system-security/network-security/windows-firewall/*.yml": "nganguly"
       },
       "appliesto": {
-        "threat-protection/windows-defender-application-control/applocker/*.md": [
+        "application-security//**/*.md": [
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
+        ],
+        "application-security/application-control/user-account-control/**/*.md": [
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2022</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2019</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
         ],
-        "application-security//**/*.md": [
-          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
-          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
-        ],
-        "application-security/application-control/user-account-control/**/*.md": [
+        "application-security/application-control/windows-defender-application-control/**/*.md": [
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2022</a>",
@@ -195,6 +199,7 @@
         ]
       },
       "ms.reviewer": {
+        "application-security/application-control/windows-defender-application-control/**/*.md": "vinpa",
         "application-security/application-isolation/microsoft-defender-application-guard/*.md": "sazankha",
         "identity-protection/hello-for-business/*.md": "erikdau",
         "identity-protection/credential-guard/*.md": "zwhittington",
@@ -205,11 +210,11 @@
         "operating-system-security/device-management/windows-security-configuration-framework/*.md": "jmunck"
       },
       "ms.collection": {
+        "application-security/application-control/windows-defender-application-control/**/*.md": "tier3",
         "identity-protection/hello-for-business/*.md": "tier1",
         "information-protection/pluton/*.md": "tier1",
         "information-protection/tpm/*.md": "tier1",
         "threat-protection/auditing/*.md": "tier3",
-        "threat-protection/windows-defender-application-control/*.md": "tier3",
         "operating-system-security/data-protection/bitlocker/*.md": "tier1",
         "operating-system-security/data-protection/personal-data-encryption/*.md": "tier1",
         "operating-system-security/network-security/windows-firewall/*.md": "tier3"
