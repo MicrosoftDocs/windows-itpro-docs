@@ -6,7 +6,6 @@ ms.author: jogeurte
 ms.reviewer: jsuther1974
 ms.topic: how-to
 ms.date: 04/06/2023
-ms.custom: template-how-to
 ms.prod: windows-client
 ms.technology: itpro-security
 ---

@@ -11,7 +11,6 @@ metadata:
   author: tiaraquan #Required; your GitHub user alias, with correct capitalization.
   ms.author: tiaraquan #Required; microsoft alias of author; optional team alias.
   ms.date: 05/30/2022 #Required; mm/dd/yyyy format.
-  ms.custom: intro-hub-or-landing
   ms.prod: windows-client
   ms.technology: itpro-updates
   ms.collection:
