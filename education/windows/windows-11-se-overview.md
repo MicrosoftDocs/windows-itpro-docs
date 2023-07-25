@@ -93,6 +93,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `CKAuthenticator`                         | 3.6+              | Win32    | `ContentKeeper`                           |
 | `Class Policy`                            | 116.0.0           | Win32    | `Class Policy`                            |
 | `Classroom.cloud`                         | 1.40.0004         | Win32    | `NetSupport`                              |
+| `Clipchamp`                               | 2.5.2.            | `Store`  | `Microsoft`                               | 
 | `CoGat Secure Browser`                    | 11.0.0.19         | Win32    | `Riverside Insights`                      |
 | `ColorVeil`                               | 4.0.0.175         | Win32    | `East-Tec`                                | 
 | `ContentKeeper Cloud`                     | 9.01.45           | Win32    | `ContentKeeper Technologies`              |
@@ -100,7 +101,8 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Dragon Professional Individual`          | 15.00.100         | Win32    | `Nuance Communications`                   |
 | `DRC INSIGHT Online Assessments`          | 13.0.0.0          | `Store`  | `Data recognition Corporation`            |
 | `Duo from Cisco`                          | 3.0.0             | Win32    | `Cisco`                                   |
-| `e-Speaking Voice and Speech recognition` | 4.4.0.8           | Win32    | `e-speaking`                              |
+| `Dyknow`                                  | 7.9.13.7          | Win32    | `Dyknow`                                  |
+| `e-Speaking Voice and Speech recognition` | 4.4.0.11          | Win32    | `e-speaking`                              |
 | `EasyReader`                              | 10.0.4.498        | Win32    | `Dolphin Computer Access`                 |
 | `Easysense 2`                             | 1.32.0001         | Win32    | `Data Harvest`                            |                   
 | `Epson iProjection`                       | 3.31              | Win32    | `Epson`                                   |
@@ -112,10 +114,10 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Ghotit Real Writer & Reader`             | 10.14.2.3         | Win32    | `Ghotit Ltd`                              |
 | `GoGuardian`                              | 1.4.4             | Win32    | `GoGuardian`                              |
 | `Google Chrome`                           | 110.0.5481.178    | Win32    | `Google`                                  |
-| `GuideConnect`                            | 1.23              | Win32    | `Dolphin Computer Access`                 |
+| `GuideConnect`                            | 1.24              | Win32    | `Dolphin Computer Access`                 |
 | `Illuminate Lockdown Browser`             | 2.0.5             | Win32    | `Illuminate Education`                    |
 | `Immunet`                                 | 7.5.8.21178       | Win32    | `Immunet`                                 |
-| `Impero Backdrop Client`                  | 4.4.86            | Win32    | `Impero Software`                         |
+| `Impero Backdrop Client`                  | 5.0.87            | Win32    | `Impero Software`                         |
 | `IMT Lazarus`                             | 2.86.0            | Win32    | `IMTLazarus`                              |
 | `Inspiration 10`                          | 10.11             | Win32    | `TechEdology Ltd`                         |
 | `JAWS for Windows`                        | 2022.2112.24      | Win32    | `Freedom Scientific`                      |
@@ -126,6 +128,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `LanSchool Classic`                       | 9.1.0.46          | Win32    | `Stoneware, Inc.`                         |
 | `LanSchool Air`                           | 2.0.13312         | Win32    | `Stoneware, Inc.`                         |
 | `Lightspeed Smart Agent`                  | 1.9.1             | Win32    | `Lightspeed Systems`                      |
+| `Lightspeed Filter Agent`                 | 2.3.4             | Win32    | `Lightspeed Systems`                      |
 | `MetaMoJi ClassRoom`                      | 3.12.4.0          | `Store`  | `MetaMoJi Corporation`                    |
 | `Microsoft Connect`                       | 10.0.22000.1      | `Store`  | `Microsoft`                               |
 | `Mozilla Firefox`                         | 105.0.0           | Win32    | `Mozilla`                                 |
@@ -137,29 +140,32 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `NetSupport School`                       | 14.00.0012        | Win32    | `NetSupport`                              |
 | `NextUp Talker`                           | 1.0.49            | Win32    | `NextUp Technologies`                     |
 | `NonVisual Desktop Access`                | 2021.3.1          | Win32    | `NV Access`                               |
-| `NWEA Secure Testing Browser`             | 5.4.356.0         | Win32    | `NWEA`                                    |
+| `NWEA Secure Testing Browser`             | 5.4.387.0         | Win32    | `NWEA`                                    |
 | `PC Talker Neo`                           | 2209              | Win32    | `Kochi System Development`                |
 | `PC Talker Neo Plus`                      | 2209              | Win32    | `Kochi System Development`                |
 | `PaperCut`                                | 22.0.6            | Win32    | `PaperCut Software International Pty Ltd` |
 | `Pearson TestNav`                         | 1.11.3            | `Store`  | `Pearson`                                 |
+| `Project Monarch Outlook`                 | 1.2022.2250001    | `Store`  | `Microsoft`                               |
 | `Questar Secure Browser`                  | 5.0.1.456         | Win32    | `Questar, Inc`                            |
 | `ReadAndWriteForWindows`                  | 12.0.74           | Win32    | `Texthelp Ltd.`                           |
-| `Remote Desktop client (MSRDC)`           | 1.2.3213.0        | Win32    | `Microsoft`                               |
+| `Remote Desktop client (MSRDC)`           | 1.2.4066.0        | Win32    | `Microsoft`                               |
 | `Remote Help`                             | 4.0.1.13          | Win32    | `Microsoft`                               |
 | `Respondus Lockdown Browser`              | 2.0.9.03          | Win32    | `Respondus`                               |
-| `Safe Exam Browser`                       | 3.4.1.505         | Win32    | `Safe Exam Browser`                       |
-|`SchoolYear`                               | 3.4.7             | Win32    |`SchoolYear`                               |
+| `Safe Exam Browser`                       | 3.5.0.544         | Win32    | `Safe Exam Browser`                       |
+|`SchoolYear`                               | 3.4.21             | Win32    |`SchoolYear`                              |
+|`School Manager`                           | 3.6.8.1109        | Win32    |`School Manager`                           |
 | `Senso.Cloud`                             | 2021.11.15.0      | Win32    | `Senso.Cloud`                             |
+| `Skoolnext`                               | 2.19              | Win32    | `Skool.net`                               |
 | `Smoothwall Monitor`                      | 2.9.2             | Win32    | `Smoothwall Ltd`                          |
-| `SuperNova Magnifier & Screen Reader`     | 21.02             | Win32    | `Dolphin Computer Access`                 |
+| `SuperNova Magnifier & Screen Reader`     | 22.02             | Win32    | `Dolphin Computer Access`                 |
 | `SuperNova Magnifier & Speech`            | 21.03             | Win32    | `Dolphin Computer Access`                 |
 |`TX Secure Browser`                        | 15.0.0            | Win32    | `Cambium Development`                     |
 | `VitalSourceBookShelf`                    | 10.2.26.0         | Win32    | `VitalSource Technologies Inc`            |
 | `Winbird`                                 | 19                | Win32    | `Winbird Co., Ltd.`                       |
 | `WordQ`                                   | 5.4.29            | Win32    | `WordQ`                                   |
 | `Zoom`                                    | 5.12.8 (10232)    | Win32    | `Zoom`                                    |
-| `ZoomText Fusion`                         | 2022.2109.10      | Win32    | `Freedom Scientific`                      |
-| `ZoomText Magnifier/Reader`               | 2022.2109.25      | Win32    | `Freedom Scientific`                      |
+| `ZoomText Fusion`                         | 2023.2303.77.400  | Win32    | `Freedom Scientific`                      |
+| `ZoomText Magnifier/Reader`               | 2023.2303.33.400  | Win32    | `Freedom Scientific`                      |
 
 ## Add your own applications
 

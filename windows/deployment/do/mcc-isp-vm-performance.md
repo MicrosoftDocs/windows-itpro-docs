@@ -3,7 +3,7 @@ title: Enhancing cache performance
 manager: aaroncz
 description: How to enhance performance on a virtual machine used with Microsoft Connected Cache for ISPs
 ms.prod: windows-client
-author: amyzhou
+author: amymzhou
 ms.author: amyzhou
 ms.topic: reference
 ms.technology: itpro-updates

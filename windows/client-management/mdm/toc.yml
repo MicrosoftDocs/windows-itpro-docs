@@ -3,6 +3,8 @@ items:
   href: index.yml
   expanded: true
   items:
+  - name: Contributing to CSP reference
+    href: contribute-csp-reference.md
   - name: Device description framework (DDF) files
     href: configuration-service-provider-ddf.md
   - name: Support scenarios

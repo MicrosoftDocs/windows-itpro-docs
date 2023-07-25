@@ -37,7 +37,7 @@ To make a policy effectively inactive before removing it, you can first replace 
 5. If applicable, remove option **0 Enabled:UMCI** to convert the policy to kernel mode only.
 
 > [!IMPORTANT]
-> After a policy has been removed, you must restart the computer for it to take effect. You can't remove WDAC policies rebootlessly.
+> After you remove a policy, restart the computer for it to take effect. You can't remove WDAC policies without restarting the device.
 
 ### Remove WDAC policies using CiTool.exe
 
