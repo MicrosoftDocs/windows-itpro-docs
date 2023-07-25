@@ -19,7 +19,7 @@ items:
       href: bitlocker-management-for-enterprises.md
     - name: Configure BitLocker on Windows Server
       href: bitlocker-how-to-deploy-on-windows-server.md
-    - name: Use BitLocker Drive Encryption Tools to manage BitLocker
+    - name: Manage BitLocker with Drive Encryption Tools
       href: bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md
     - name: Use BitLocker Recovery Password Viewer
       href: bitlocker-use-bitlocker-recovery-password-viewer.md

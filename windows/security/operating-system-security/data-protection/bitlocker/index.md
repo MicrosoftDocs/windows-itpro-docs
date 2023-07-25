@@ -10,30 +10,19 @@ ms.date: 11/08/2022
 
 # BitLocker overview
 
-This article provides a high-level overview of BitLocker, including a list of system requirements, practical applications, and deprecated features.
+Bitlocker is a disk encryption feature included with Windows, designed to protect data by providing encryption for entire volumes.
 
-BitLocker Drive Encryption is a data protection feature that integrates with the operating system and addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned computers.
+BitLocker addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned devices.
 
-BitLocker provides the maximum protection when used with a Trusted Platform Module (TPM) version 1.2 or later versions. The TPM is a hardware component installed in many newer computers by the computer manufacturers. It works with BitLocker to help protect user data and to ensure that a computer hasn't been tampered with while the system was offline.
+BitLocker provides the maximum protection when used with a Trusted Platform Module (TPM) version 1.2 or later versions. The TPM is a hardware component installed in many devices ant it works with BitLocker to help protect user data and to ensure that a computer hasn't been tampered with while the system is offline.
 
-On computers that don't have a TPM version 1.2 or later versions, BitLocker can still be used to encrypt the Windows operating system drive. However, this implementation requires the user to insert a USB startup key to start the computer or resume from hibernation. Starting with Windows 8, an operating system volume password can be used to protect the operating system volume on a computer without TPM. Both options don't provide the pre-startup system integrity verification offered by BitLocker with a TPM.
+On computers that don't have a TPM, BitLocker can still be used to encrypt the Windows operating system drive. However, this implementation requires the user to insert a USB startup key to start the device or resume from hibernation. An operating system volume password can be used to protect the operating system volume on a computer without TPM. Both options don't provide the pre-startup system integrity verification offered by BitLocker with a TPM.
 
 In addition to the TPM, BitLocker offers the option to lock the normal startup process until the user supplies a personal identification number (PIN) or inserts a removable device (such as a USB flash drive) that contains a startup key. These additional security measures provide multifactor authentication and assurance that the computer won't start or resume from hibernation until the correct PIN or startup key is presented.
 
 ## Practical applications
 
-Data on a lost or stolen computer is vulnerable to unauthorized access, either by running a software-attack tool against it or by transferring the computer's hard disk to a different computer. BitLocker helps mitigate unauthorized data access by enhancing file and system protections. BitLocker also helps render data inaccessible when BitLocker-protected computers are decommissioned or recycled.
-
-There are two additional tools in the Remote Server Administration Tools that can be used to manage BitLocker.
-
-- **BitLocker Recovery Password Viewer**. The BitLocker Recovery Password Viewer enables the BitLocker Drive Encryption recovery passwords that have been backed up to Active Directory Domain Services (AD DS) to be located and viewed. This tool can be used to help recover data that is stored on a drive that has been encrypted by using BitLocker. The BitLocker Recovery Password Viewer tool is an extension for the Active Directory Users and Computers Microsoft Management Console (MMC) snap-in.
-
-    By using this tool, a computer object's **Properties** dialog box can be examined to view the corresponding BitLocker recovery passwords. Additionally, a domain container can be searched for a BitLocker recovery password across all the domains in the Active Directory forest by right clicking on the domain container. Viewing recovery passwords can only be viewed by domain administrator or having delegated permissions by a domain administrator.
-
-- **BitLocker Drive Encryption Tools**. BitLocker Drive Encryption Tools include the command-line tools, manage-bde and repair-bde, and the BitLocker cmdlets for Windows PowerShell. Both manage-bde and the BitLocker cmdlets can be used to perform any task that can be accomplished through the
-BitLocker control panel, and they're appropriate to be used for automated deployments and other scripting scenarios. Repair-bde is provided for disaster recovery scenarios in which a BitLocker-protected drive can't be unlocked normally or by using the recovery console.
-
-[!INCLUDE [bitlocker](../../../../../includes/licensing/bitlocker-enablement.md)]
+Data on a lost or stolen device is vulnerable to unauthorized access, either by running a software-attack tool against it or by transferring the computer's hard drive to a different computer. BitLocker helps mitigate unauthorized data access by enhancing file and system protections. BitLocker also helps render data inaccessible when BitLocker-protected devices are decommissioned or recycled.
 
 ## System requirements
 
@@ -63,6 +52,8 @@ When installed on a new computer, Windows automatically creates the partitions t
 A partition subject to encryption can't be marked as an active partition. This requirement applies to the operating system drives, fixed data drives, and removable data drives.
 
 When installing the BitLocker optional component on a server, the Enhanced Storage feature also needs to be installed. The Enhanced Storage feature is used to support hardware encrypted drives.
+
+[!INCLUDE [bitlocker](../../../../../includes/licensing/bitlocker-enablement.md)]
 
 ## Next steps
 

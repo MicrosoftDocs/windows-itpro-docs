@@ -3,7 +3,7 @@ title: How to use BitLocker Recovery Password Viewer
 description: Learn how to use the BitLocker Recovery Password Viewer tool.
 ms.collection: 
   - tier1
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/25/2023
 ---
 
@@ -43,4 +43,3 @@ The following procedures describe the most common tasks performed by using the B
 1. In Active Directory Users and Computers, right-click the domain container and select **Find BitLocker Recovery Password**
 1. In the **Find BitLocker Recovery Password** dialog box, type the first eight characters of the recovery password in the **Password ID (first 8 characters)** box, and select **Search**
 1. Once the recovery password is located, you can use the previous procedure to copy it
-
