@@ -59,7 +59,7 @@ sections:
 
       - question: My firewall requires IP addresses and can't process FQDNs. How do I configure it to download content with Delivery Optimization?
         answer: | 
-          Microsoft content, such as Windows updates, are hosted and delivered globally via Content Delivery Networks (CDNs) and Microsoft's Connected Cache (MCC) servers, which are hosted within Internet Service Provider (ISP) networks. 
+          Microsoft content, such as Windows updates, are hosted and delivered globally via Content Delivery Networks (CDNs) and [Microsoft Connected Cache](waas-microsoft-connected-cache.md) (MCC) servers, which are hosted within Internet Service Provider (ISP) networks. 
           The network of CDNs and MCCs allows Microsoft to reach the scale required to meet the demand of the Windows user base. Given this delivery infrastructure changes dynamically, providing an exhaustive list of IPs and keeping it up to date isn't feasible. 
         
       - question: Does Delivery Optimization use multicast?

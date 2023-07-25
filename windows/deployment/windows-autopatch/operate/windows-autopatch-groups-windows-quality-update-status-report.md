@@ -1,7 +1,7 @@
 ---
 title: Quality update status report
 description: Provides a per device view of the current update status for all Windows Autopatch enrolled devices with Autopatch groups.
-ms.date: 05/01/2023
+ms.date: 07/25/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -15,10 +15,7 @@ ms.collection:
   - tier1
 ---
 
-# Quality update status report (public preview)
-
-> [!IMPORTANT]
-> Windows Autopatch groups is in **public preview**. This feature is being actively developed and might not be complete. You can test and use these features in production environments and provide feedback.<p>The Windows Autopatch group experience only applies if you’ve opted-in to use Windows Autopatch groups.</p><br>**To opt-in to use Windows Autopatch groups:**<ol><li>Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and select **Devices** from the left navigation menu.</li><li>Under **Windows Autopatch**, select **Release Management**, then select **Autopatch groups (preview)**.</li><li>Review the **[Microsoft Privacy Statement](../overview/windows-autopatch-privacy.md)** and the **[Autopatch groups Public Preview Addendum](../references/windows-autopatch-groups-public-preview-addendum.md)**. If you agree, select the **I have reviewed and agree to the Autopatch groups Public Preview Addendum** checkbox. Then, select **Use preview** to test out Windows Autopatch groups and its bundled feature set. If the **Use preview** option is greyed out, ensure you meet all the [Autopatch group prerequisites](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#autopatch-groups-prerequisites).</li></ol>
+# Quality update status report
 
 The Quality update status report provides a per device view of the current update status for all Windows Autopatch enrolled devices.
 
@@ -65,6 +62,9 @@ The following information is available as optional columns in the Quality update
 | User Last Logged On | The last user who logged on as reported from Intune |
 | Primary User UPN | The Primary User UPN as reported from Intune |
 | Hex Error Code | The hex error provided from Windows Update |
+| Cadence Type | The cadence type configured in the quality update ring schedule |
+| Quality update Installed Time | The time the update was installed as reported from Windows Update |
+| Servicing Channel | The Client Servicing Channel as defined in Windows Update |
 
 > [!NOTE]
 > The Service State, Service Substate, Client State, Client Substate, Servicing Channel, and Hex Error Code columns may not display any values. These columns are supplemental and might not display for all devices

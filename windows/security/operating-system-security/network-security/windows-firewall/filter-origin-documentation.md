@@ -154,7 +154,7 @@ To disable stealth-mode, see [Disable stealth mode in Windows](/troubleshoot/win
 
 Network drops from Universal Windows Platform (UWP) default inbound/outbound block filters are often caused by the UWP app not being configured correctly (that is, the UWP app is missing the correct capability tokens or loopback isn't enabled) or the private range is configured incorrectly. 
 
-For more information on how to debug drops caused by UWP default block filters, see [Troubleshooting UWP App Connectivity Issues](./troubleshooting-uwp-firewall.md).
+For more information on how to debug drops caused by UWP default block filters, see [Troubleshooting UWP App Connectivity Issues](troubleshooting-uwp-firewall.md).
 
 **WSH default**
 

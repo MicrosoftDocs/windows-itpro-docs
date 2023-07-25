@@ -1,7 +1,7 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 07/10/2023 
+ms.date: 07/25/2023 
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
@@ -22,6 +22,18 @@ This article lists new and updated feature releases, and service releases, with 
 Minor corrections such as typos, style, or formatting issues aren't listed.
 
 ## July 2023
+
+### July feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Windows Autopatch groups overview](../deploy/windows-autopatch-groups-overview.md) | General Availability |
+| [Manage Windows Autopatch groups](../deploy/windows-autopatch-groups-manage-autopatch-groups.md) | General Availability |
+| [Customize Windows Update settings](../operate/windows-autopatch-groups-windows-update.md) | General Availability |
+| [Windows quality updates](../operate/windows-autopatch-groups-windows-quality-update-overview.md) | General Availability |
+| [Windows feature updates](../operate/windows-autopatch-groups-windows-feature-update-overview.md) | General Availability |
+| [Windows quality and feature update reports](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md) | General Availability |
+| [Policy health and remediation](../operate/windows-autopatch-policy-health-and-remediation.md) | General Availability |
 
 ### July service releases
 

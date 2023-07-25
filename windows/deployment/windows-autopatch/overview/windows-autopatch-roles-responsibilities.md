@@ -1,7 +1,7 @@
 ---
 title: Roles and responsibilities
 description: This article describes the roles and responsibilities provided by Windows Autopatch and what the customer must do
-ms.date: 06/27/2023
+ms.date: 07/25/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -49,7 +49,7 @@ This article outlines your responsibilities and Windows Autopatch's responsibili
 | [Allow or block Microsoft 365 Apps for enterprise updates](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#allow-or-block-microsoft-365-app-updates) | :heavy_check_mark: | :x: |
 | [Manage driver and firmware updates](../operate/windows-autopatch-manage-driver-and-firmware-updates.md) | :heavy_check_mark: | :x: |
 | [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) |  :heavy_check_mark: | :x: |
-| [Register devices/add devices to the Windows Autopatch Device Registration group](../deploy/windows-autopatch-register-devices.md#steps-to-register-devices-using-the-classic-method) | :heavy_check_mark: | :x: |
+| [Register devices/add devices to the Windows Autopatch Device Registration group](../deploy/windows-autopatch-register-devices.md) | :heavy_check_mark: | :x: |
 | [Run the pre-registration device readiness checks](../deploy/windows-autopatch-register-devices.md#about-the-registered-not-ready-and-not-registered-tabs) | :x: | :heavy_check_mark: |
 | [Automatically assign devices to First, Fast & Broad deployment rings at device registration](../operate/windows-autopatch-update-management.md#deployment-ring-calculation-logic) | :x: | :heavy_check_mark: |
 | [Manually override device assignments to First, Fast & Broad deployment rings](../operate/windows-autopatch-update-management.md#moving-devices-in-between-deployment-rings) | :heavy_check_mark: | :x: |
