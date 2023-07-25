@@ -64,22 +64,5 @@ A partition subject to encryption can't be marked as an active partition. This r
 
 When installing the BitLocker optional component on a server, the Enhanced Storage feature also needs to be installed. The Enhanced Storage feature is used to support hardware encrypted drives.
 
-## In this section
+## Next steps
 
-| Article | Description |
-| - | - |
-| [Overview of BitLocker Device Encryption in Windows 10](bitlocker-device-encryption-overview-windows-10.md) | This article provides an overview of the ways in which BitLocker Device Encryption can help protect data on devices running Windows 10. |
-| [BitLocker frequently asked questions (FAQ)](faq.yml) | This article answers frequently asked questions concerning the requirements to use, upgrade, deploy and administer, and key management policies for BitLocker.|
-| [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)| This article explains the procedure you can use to plan your BitLocker deployment. |
-| [BitLocker basic deployment](bitlocker-basic-deployment.md) | This article explains how BitLocker features can be used to protect your data through drive encryption. |
-| [BitLocker: How to deploy on Windows Server](bitlocker-how-to-deploy-on-windows-server.md)| This article explains how to deploy BitLocker on Windows Server.|
-| [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md) | This article describes how BitLocker Network Unlock works and how to configure it. |
-| [BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md)| This article describes how to use tools to manage BitLocker.|
-| [BitLocker: Use BitLocker Recovery Password Viewer](bitlocker-use-bitlocker-recovery-password-viewer.md) | This article describes how to use the BitLocker Recovery Password Viewer. |
-| [BitLocker Group Policy settings](bitlocker-group-policy-settings.md) | This article describes the function, location, and effect of each group policy setting that is used to manage BitLocker. |
-| [BCD settings and BitLocker](bcd-settings-and-bitlocker.md) | This article describes the BCD settings that are used by BitLocker.|
-| [BitLocker Recovery Guide](bitlocker-recovery-guide-plan.md)| This article describes how to recover BitLocker keys from AD DS. |
-| [Protect BitLocker from pre-boot attacks](./bitlocker-countermeasures.md)| This detailed guide helps you understand the circumstances under which the use of pre-boot authentication is recommended for devices running Windows 10, Windows 8.1, Windows 8, or Windows 7; and when it can be safely omitted from a device's configuration. |
-| [Troubleshoot BitLocker](/troubleshoot/windows-client/windows-security/bitlocker-issues-troubleshooting) | This guide describes the resources that can help you troubleshoot BitLocker issues, and provides solutions for several common BitLocker issues. |
-| [Protecting cluster shared volumes and storage area networks with BitLocker](protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md)| This article describes how to protect CSVs and SANs with BitLocker.|
-| [Enabling Secure Boot and BitLocker Device Encryption on Windows IoT Core](/windows/iot-core/secure-your-device/SecureBootAndBitLocker) | This article describes how to use BitLocker with Windows IoT Core |
