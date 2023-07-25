@@ -21,7 +21,25 @@ appliesto:
 
 This article provides additional resources about [deprecated features for Windows client](deprecated-features.md) that may be needed by IT professionals. The following information is provided to help IT professionals plan for the removal of deprecated features:
 
-## TLS versions 1.0 and 1.2 
+## TLS versions 1.0 and 1.1 will be disabled by default
+
+Over the past several years, internet standards and regulatory bodies have [deprecated or disallowed](https://www.ietf.org/rfc/rfc8996.html) TLS versions 1.0 and 1.1 due to various security issues. Starting in Windows 11 Insider Preview builds for September 2023 and continuing in future Windows OS releases, TLS 1.0 and 1.1 will be disabled by default. This change increases the security posture of Windows customers and encourages modern protocol adoption. For organizations that need to use these versions, there's an option to re-enable TLS 1.0 or TLS 1.1.
+
+### TLS diagnostic events
+
+Applications that fail when TLS 1.0 and 1.1 are disabled can be identified by reviewing the event logs. In the System EventLog, SChannel EventID 36871 may be logged with the following description:
+
+```log
+A fatal error occurred while creating a TLS <client/server> credential. The internal error state is 10013. The SSPI client process is <process ID>.
+```
+
+### TLS 1.0 and 1.1 guidance for IT admins
+
+The impact of disabling TLS versions 1.0 and 1.1 depends largely on the Windows applications using TLS. For example, TLS 1.0 and TLS 1.1 have already been disabled by [Microsoft 365](lifecycle/announcements/transport-layer-security-1x-disablement) products as well as [WinHTTP and WinINet API surfaces](https://support.microsoft.com/topic/kb5017811-manage-transport-layer-security-tls-1-0-and-1-1-after-default-behavior-change-on-september-20-2022-e95b1b47-9c7c-4d64-9baf-610604a64c3e). Most newer versions of applications support TLS 1.2 or higher protocol versions. If an application starts failing after this change, the first step is to look for a newer version of the application that has TLS 1.2 or TLS 1.3 support.
+
+
+###
+
 ## Microsoft Support Diagnostic Tool resources
 
 The [Microsoft Support Diagnostic Tool (MSDT)](/windows-server/administration/windows-commands/msdt) gathers diagnostic data for analysis by support professionals. MSDT is the engine used to run legacy Windows built-in troubleshooters. There are currently 28 built-in troubleshooters for MSDT. Half of the built-in troubleshooters have already been [redirected](#redirected-msdt-troubleshooters) to the Get Help platform, while the other half will be [retired](#retired-msdt-troubleshooters).  
