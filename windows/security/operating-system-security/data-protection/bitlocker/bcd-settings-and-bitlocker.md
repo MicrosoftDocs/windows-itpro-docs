@@ -1,7 +1,7 @@
 ---
 title: BCD settings and BitLocker 
 description: This article for IT professionals describes the BCD settings that are used by BitLocker.
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 11/08/2022
 ---
 
