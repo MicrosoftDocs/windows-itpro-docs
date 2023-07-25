@@ -123,8 +123,6 @@
               href: references/windows-autopatch-microsoft-365-policies.md
         - name: Changes made at tenant enrollment
           href: references/windows-autopatch-changes-to-tenant.md
-        - name: Windows Autopatch groups public preview addendum
-          href: references/windows-autopatch-groups-public-preview-addendum.md
         - name: Driver and firmware updates public preview addendum
           href: references/windows-autopatch-driver-and-firmware-updates-public-preview-addendum.md
     - name: What's new

@@ -22031,6 +22031,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "windows/deployment/windows-autopatch/references/windows-autopatch-groups-public-preview-addendum.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/deploy/windows-autopatch-groups-overview",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "windows/application-management/provisioned-apps-windows-client-os.md",
       "redirect_url": "/windows/application-management/apps-in-windows-10",
       "redirect_document_id": false
