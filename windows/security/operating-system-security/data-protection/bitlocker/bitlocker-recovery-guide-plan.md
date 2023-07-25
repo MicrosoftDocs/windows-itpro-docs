@@ -331,17 +331,17 @@ It can also be configured using mobile device management (MDM), including in Int
 
 **`<LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRecoveryMessage</LocURI>`**
 
-![Custom URL.](./images/bl-intune-custom-url.png)
+![Custom URL.](images/bl-intune-custom-url.png)
 
 Example of a customized recovery screen:
 
-![Customized BitLocker Recovery Screen.](./images/bl-password-hint1.png)
+![Customized BitLocker Recovery Screen.](images/bl-password-hint1.png)
 
 ### BitLocker recovery key hints
 
 BitLocker metadata has been enhanced starting in Windows 10, version 1903, to include information about when and where the BitLocker recovery key was backed up. This information isn't exposed through the UI or any public API. It's used solely by the BitLocker recovery screen in the form of hints to help a user locate a volume's recovery key. Hints are displayed on the recovery screen and refer to the location where the key has been saved. Hints are displayed on both the modern (blue) and legacy (black) recovery screen. The hints apply to both the boot manager recovery screen and the WinRE unlock screen.
 
-![Customized BitLocker recovery screen.](./images/bl-password-hint2.png)
+![Customized BitLocker recovery screen.](images/bl-password-hint2.png)
 
 > [!IMPORTANT]
 > It is not recommend to print recovery keys or saving them to a file. Instead, use Active Directory backup or a cloud-based backup. Cloud-based backup includes Azure Active Directory (Azure AD) and Microsoft account.
@@ -378,7 +378,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 **Result:** The hints for the Microsoft account and custom URL are displayed.
 
-![Example 1 of Customized BitLocker recovery screen.](./images/rp-example1.png)
+![Example 1 of Customized BitLocker recovery screen.](images/rp-example1.png)
 
 #### Example 2 (single recovery key with single backup)
 
@@ -392,7 +392,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 **Result:** Only the custom URL is displayed.
 
-![Example 2 of customized BitLocker recovery screen.](./images/rp-example2.png)
+![Example 2 of customized BitLocker recovery screen.](images/rp-example2.png)
 
 #### Example 3 (single recovery key with multiple backups)
 
@@ -406,7 +406,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 **Result:** Only the Microsoft Account hint is displayed.
 
-![Example 3 of customized BitLocker recovery screen.](./images/rp-example3.png)
+![Example 3 of customized BitLocker recovery screen.](images/rp-example3.png)
 
 #### Example 4  (multiple recovery passwords)
 
@@ -435,7 +435,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 **Result:** Only the hint for a successfully backed up key is displayed, even if it isn't the most recent key.
 
-![Example 4 of customized BitLocker recovery screen.](./images/rp-example4.png)
+![Example 4 of customized BitLocker recovery screen.](images/rp-example4.png)
 
 #### Example 5  (multiple recovery passwords)
 
@@ -461,7 +461,7 @@ There are rules governing which hint is shown during the recovery (in the order 
 
 **Result:** The hint for the most recent key is displayed.
 
-![Example 5 of customized BitLocker recovery screen.](./images/rp-example5.png)
+![Example 5 of customized BitLocker recovery screen.](images/rp-example5.png)
 
 ## Using additional recovery information
 

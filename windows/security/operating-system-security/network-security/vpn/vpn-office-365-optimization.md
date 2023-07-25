@@ -11,13 +11,13 @@ This article describes how to configure the recommendations in the article [VPN 
 The recommendations can be implemented for the built-in Windows VPN client using a *Force Tunneling with Exclusions* approach, defining IP-based exclusions even when using *force tunneling*. Certain traffic can be *split* to use the physical interface, while still forcing all other traffic via the VPN interface. Traffic addressed to defined destinations (like those listed in the Microsoft 365 optimized categories) follows a much more direct and efficient path, without the need to traverse or *hairpin* via the VPN tunnel and back out of the organization's network. For cloud-services like Microsoft 365, this makes a significant difference in performance and usability for remote users.
 
 > [!NOTE]
-> The term *force tunneling with exclusions* is sometimes confusingly called *split tunnels* by other vendors and in some online documentation. For Windows VPN, the term *split tunneling* is defined differently, as described in the article [VPN routing decisions](./vpn-routing.md#split-tunnel-configuration).
+> The term *force tunneling with exclusions* is sometimes confusingly called *split tunnels* by other vendors and in some online documentation. For Windows VPN, the term *split tunneling* is defined differently, as described in the article [VPN routing decisions](vpn-routing.md#split-tunnel-configuration).
 
 ## Solution Overview
 
 The solution is based upon the use of a VPN Configuration Service Provider Reference profile ([VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)) and the embedded [ProfileXML](/windows/client-management/mdm/vpnv2-profile-xsd). These are used to configure the VPN profile on the device. Various provisioning approaches can be used to create and deploy the VPN profile as discussed in the article [Step 6. Configure Windows 10 client Always On VPN connections](/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files).
 
-Typically, these VPN profiles are distributed using a Mobile Device Management solution like Intune, as described in [VPN profile options](./vpn-profile-options.md#apply-profilexml-using-intune) and [Configure the VPN client by using Intune](/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#configure-the-vpn-client-by-using-intune).
+Typically, these VPN profiles are distributed using a Mobile Device Management solution like Intune, as described in [VPN profile options](vpn-profile-options.md#apply-profilexml-using-intune) and [Configure the VPN client by using Intune](/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#configure-the-vpn-client-by-using-intune).
 
 To enable the use of force tunneling in Windows 10 or Windows 11 VPN, the `<RoutingPolicyType>` setting is typically configured with a value of _ForceTunnel_ in your existing Profile XML (or script) by way of the following entry, under the `<NativeProfile></NativeProfile>` section:
 
@@ -640,7 +640,7 @@ Write-Host "$Message"
 
 ```
 
-An example of an [Intune-ready XML file](./vpn-profile-options.md#apply-profilexml-using-intune) that can be used to create a force tunnel VPN connection with Microsoft 365 exclusions is provided below, or refer to the guidance in [Create the ProfileXML configuration files](/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files) to create the initial XML file.
+An example of an [Intune-ready XML file](vpn-profile-options.md#apply-profilexml-using-intune) that can be used to create a force tunnel VPN connection with Microsoft 365 exclusions is provided below, or refer to the guidance in [Create the ProfileXML configuration files](/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files) to create the initial XML file.
 
 >[!NOTE]
 >This XML is formatted for use with Intune and cannot contain any carriage returns or whitespace.

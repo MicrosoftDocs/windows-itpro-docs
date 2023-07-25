@@ -666,4 +666,4 @@ You can get more info with the following links:
 -   [Event Queries and Event XML](/previous-versions/bb399427(v=vs.90))
 -   [Event Query Schema](/windows/win32/wes/queryschema-schema)
 -   [Windows Event Collector](/windows/win32/wec/windows-event-collector)
--   [4625(F): An account failed to log on](./auditing/event-4625.md)
+-   [4625(F): An account failed to log on](auditing/event-4625.md)

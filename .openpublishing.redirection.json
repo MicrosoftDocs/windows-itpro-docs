@@ -21934,7 +21934,7 @@
       "source_path": "windows/deployment/update/update-compliance-schema-wudostatus.md",
       "redirect_url": "/windows/deployment/update/wufb-reports-overview",
       "redirect_document_id": false
-    },    
+    },
     {
       "source_path": "windows/deployment/update/update-compliance-schema-wudoaggregatedstatus.md",
       "redirect_url": "/windows/deployment/update/wufb-reports-overview",
@@ -21956,6 +21956,721 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/select-types-of-rules-to-create",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/select-types-of-rules-to-create.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/select-types-of-rules-to-create",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/AppIdTagging/debugging-operational-guide-appid-tagging-policies.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/AppIdTagging/debugging-operational-guide-appid-tagging-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/wdac-wizard.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/wdac-wizard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/wdac-wizard-parsing-event-logs.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/wdac-wizard-parsing-event-logs",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/wdac-wizard-merging-policies.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/wdac-wizard-merging-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/configure-authorized-apps-deployed-with-a-managed-installer.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/configure-authorized-apps-deployed-with-a-managed-installer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/create-wdac-deny-policy.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/create-wdac-deny-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/create-wdac-policy-for-fully-managed-devices.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/create-wdac-policy-for-fully-managed-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/create-wdac-policy-for-lightly-managed-devices.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/create-wdac-policy-for-lightly-managed-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/create-initial-default-policy.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/create-wdac-policy-using-reference-computer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/deploy-multiple-wdac-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/example-wdac-base-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/manage-packaged-apps-with-windows-defender-application-control.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/manage-packaged-apps-with-wdac",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-block-rules.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/microsoft-recommended-block-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/microsoft-recommended-driver-block-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/plan-windows-defender-application-control-management.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/plan-wdac-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/design/script-enforcement.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/script-enforcement",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/understand-windows-defender-application-control-policy-design-decisions.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/understand-wdac-policy-design-decisions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/understanding-wdac-policy-settings.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/understanding-wdac-policy-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/use-windows-defender-application-control-policy-to-control-specific-plug-ins-add-ins-and-modules.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/use-wdac-policy-to-control-specific-plug-ins-add-ins-and-modules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/use-windows-defender-application-control-with-intelligent-security-graph.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/use-wdac-with-intelligent-security-graph",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/use-windows-defender-application-control-with-dynamic-code-security.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/wdac-and-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/wdac-design-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/wdac-wizard-create-base-policy.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/wdac-wizard-create-base-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/wdac-wizard-create-supplemental-policy.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/wdac-wizard-create-supplemental-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/wdac-wizard-editing-policy.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/wdac-wizard-editing-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/operations/citool-commands.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/operations/citool-commands",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/event-id-explanations.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/operations/event-id-explanations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/event-tag-explanations.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/operations/event-tag-explanations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/operations/inbox-wdac-policies.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/operations/inbox-wdac-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/operations/known-issues.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/operations/known-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/querying-application-control-events-centrally-using-advanced-hunting.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/operations/querying-application-control-events-centrally-using-advanced-hunting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/operations/wdac-debugging-and-troubleshooting.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/operations/wdac-debugging-and-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-operational-guide.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/operations/wdac-operational-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/feature-availability.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/feature-availability",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/index.yml",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/configure-wdac-managed-installer.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/operations/configure-wdac-managed-installer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/types-of-devices.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/common-wdac-use-cases",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/allow-com-object-registration-in-windows-defender-application-control-policy.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/allow-com-object-registration-in-wdac-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/deployment/wdac-deployment-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/use-signed-policies-to-protect-windows-defender-application-control-against-tampering.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/deployment/use-signed-policies-to-protect-wdac-against-tampering",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/create-your-applocker-rules.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/create-your-applocker-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/delete-an-applocker-rule.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/delete-an-applocker-rule",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/deploy-applocker-policies-by-using-the-enforce-rules-setting.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/deploy-applocker-policies-by-using-the-enforce-rules-setting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/deploy-the-applocker-policy-into-production.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/deploy-the-applocker-policy-into-production",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/determine-group-policy-structure-and-rule-enforcement.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/determine-group-policy-structure-and-rule-enforcement",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/determine-which-applications-are-digitally-signed-on-a-reference-computer.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/determine-which-applications-are-digitally-signed-on-a-reference-computer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/determine-your-application-control-objectives.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/determine-your-application-control-objectives",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/display-a-custom-url-message-when-users-try-to-run-a-blocked-application.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/display-a-custom-url-message-when-users-try-to-run-a-blocked-application",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/dll-rules-in-applocker.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/dll-rules-in-applocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/document-group-policy-structure-and-applocker-rule-enforcement.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/document-group-policy-structure-and-applocker-rule-enforcement",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/document-your-application-list.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/document-your-application-list",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/document-your-applocker-rules.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/document-your-applocker-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/edit-an-applocker-policy.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/edit-an-applocker-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/edit-applocker-rules.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/edit-applocker-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/enable-the-dll-rule-collection.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/enable-the-dll-rule-collection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/enforce-applocker-rules.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/enforce-applocker-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/executable-rules-in-applocker.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/executable-rules-in-applocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/export-an-applocker-policy-from-a-gpo.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/export-an-applocker-policy-from-a-gpo",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/export-an-applocker-policy-to-an-xml-file.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/export-an-applocker-policy-to-an-xml-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/how-applocker-works-techref.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/how-applocker-works-techref",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/import-an-applocker-policy-from-another-computer.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/import-an-applocker-policy-from-another-computer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/create-your-applocker-policies.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/create-your-applocker-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/create-list-of-applications-deployed-to-each-business-group.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/create-list-of-applications-deployed-to-each-business-group",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/create-applocker-default-rules.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/create-applocker-default-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/create-a-rule-that-uses-a-publisher-condition.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/create-a-rule-that-uses-a-publisher-condition",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/AppIdTagging/deploy-appid-tagging-policies.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/AppIdTagging/deploy-appid-tagging-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/AppIdTagging/design-create-appid-tagging-policies.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/AppIdTagging/design-create-appid-tagging-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/AppIdTagging/windows-defender-application-control-appid-tagging-guide.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/AppIdTagging/wdac-appid-tagging-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/add-rules-for-packaged-apps-to-existing-applocker-rule-set.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/add-rules-for-packaged-apps-to-existing-applocker-rule-set",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/administer-applocker.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/administer-applocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/applocker-architecture-and-components.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/applocker-architecture-and-components",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/applocker-functions.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/applocker-functions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/applocker-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/applocker-policies-deployment-guide.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/applocker-policies-deployment-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/applocker-policies-design-guide.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/applocker-policies-design-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/import-an-applocker-policy-into-a-gpo.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/import-an-applocker-policy-into-a-gpo",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/applocker-policy-use-scenarios.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/applocker-policy-use-scenarios",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/applocker-settings.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/applocker-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/applocker-technical-reference.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/applocker-technical-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/configure-an-applocker-policy-for-audit-only.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/configure-an-applocker-policy-for-audit-only",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/configure-an-applocker-policy-for-enforce-rules.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/configure-an-applocker-policy-for-enforce-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/configure-exceptions-for-an-applocker-rule.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/configure-exceptions-for-an-applocker-rule",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/configure-the-application-identity-service.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/configure-the-application-identity-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/configure-the-appLocker-reference-device.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/configure-the-appLocker-reference-device",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/create-a-rule-for-packaged-apps.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/create-a-rule-for-packaged-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/create-a-rule-that-uses-a-file-hash-condition.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/create-a-rule-that-uses-a-file-hash-condition",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/create-a-rule-that-uses-a-path-condition.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/create-a-rule-that-uses-a-path-condition",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/applocker-processes-and-interactions.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/applocker-processes-and-interactions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/maintain-applocker-policies.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/maintain-applocker-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/manage-packaged-apps-with-applocker.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/manage-packaged-apps-with-applocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/merge-applocker-policies-by-using-set-applockerpolicy.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/merge-applocker-policies-by-using-set-applockerpolicy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/understanding-the-publisher-rule-condition-in-applocker.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/understanding-the-publisher-rule-condition-in-applocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/use-a-reference-computer-to-create-and-maintain-applocker-policies.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/use-a-reference-computer-to-create-and-maintain-applocker-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/use-applocker-and-software-restriction-policies-in-the-same-domain.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/use-applocker-and-software-restriction-policies-in-the-same-domain",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/use-the-applocker-windows-powershell-cmdlets.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/use-the-applocker-windows-powershell-cmdlets",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/using-event-viewer-with-applocker.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/using-event-viewer-with-applocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/using-software-restriction-policies-and-applocker-policies.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/using-software-restriction-policies-and-applocker-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/what-is-applocker.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/what-is-applocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/windows-installer-rules-in-applocker.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/windows-installer-rules-in-applocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/working-with-applocker-policies.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/working-with-applocker-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/working-with-applocker-rules.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/working-with-applocker-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/understanding-the-path-rule-condition-in-applocker.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/understanding-the-path-rule-condition-in-applocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/audit-windows-defender-application-control-policies.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/deployment/audit-wdac-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/deploy-catalog-files-to-support-windows-defender-application-control.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/deployment/deploy-catalog-files-to-support-wdac",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/deployment/deploy-windows-defender-application-control-policies-using-group-policy.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/deployment/deploy-wdac-policies-using-group-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/deployment/deploy-windows-defender-application-control-policies-using-intune.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/deployment/deploy-wdac-policies-using-intune",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/deployment/deploy-wdac-policies-with-memcm.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/deployment/deploy-wdac-policies-with-memcm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/deployment/deploy-wdac-policies-with-script.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/deployment/deploy-wdac-policies-with-script",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/disable-windows-defender-application-control-policies.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/deployment/disable-wdac-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/enforce-windows-defender-application-control-policies.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/deployment/enforce-wdac-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/LOB-win32-apps-on-s.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/deployment/LOB-win32-apps-on-s",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/merge-windows-defender-application-control-policies.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/deployment/merge-wdac-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/deployment/use-code-signing-for-better-control-and-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/create-code-signing-cert-for-windows-defender-application-control.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/deployment/create-code-signing-cert-for-wdac",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/wdac-and-applocker-overview.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/wdac-and-applocker-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/understanding-the-file-hash-rule-condition-in-applocker.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/understanding-the-file-hash-rule-condition-in-applocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/understanding-applocker-rule-condition-types.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/understanding-applocker-rule-condition-types",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/merge-applocker-policies-manually.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/merge-applocker-policies-manually",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/monitor-application-usage-with-applocker.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/monitor-application-usage-with-applocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/optimize-applocker-performance.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/optimize-applocker-performance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/packaged-apps-and-packaged-app-installer-rules-in-applocker.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/packaged-apps-and-packaged-app-installer-rules-in-applocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/plan-for-applocker-policy-management.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/plan-for-applocker-policy-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/refresh-an-applocker-policy.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/refresh-an-applocker-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/requirements-for-deploying-applocker-policies.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/requirements-for-deploying-applocker-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/requirements-to-use-applocker.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/requirements-to-use-applocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/run-the-automatically-generate-rules-wizard.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/run-the-automatically-generate-rules-wizard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/script-rules-in-applocker.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/script-rules-in-applocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/understanding-applocker-rule-exceptions.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/understanding-applocker-rule-exceptions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/security-considerations-for-applocker.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/security-considerations-for-applocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/test-and-update-an-applocker-policy.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/test-and-update-an-applocker-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/tools-to-use-with-applocker.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/tools-to-use-with-applocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/understand-applocker-enforcement-settings.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/understand-applocker-enforcement-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/understand-applocker-policy-design-decisions.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/understand-applocker-policy-design-decisions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/understand-applocker-rules-and-enforcement-setting-inheritance-in-group-policy.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/understand-applocker-rules-and-enforcement-setting-inheritance-in-group-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/understand-the-applocker-policy-deployment-process.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/understand-the-applocker-policy-deployment-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/understanding-applocker-allow-and-deny-actions-on-rules.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/understanding-applocker-allow-and-deny-actions-on-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/understanding-applocker-default-rules.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/understanding-applocker-default-rules",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/understanding-applocker-rule-behavior.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/understanding-applocker-rule-behavior",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/understanding-applocker-rule-collections.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/understanding-applocker-rule-collections",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/applocker/test-an-applocker-policy-by-using-test-applockerpolicy.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/applocker/test-an-applocker-policy-by-using-test-applockerpolicy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control.md",
+      "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/wdac",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/application-management/system-apps-windows-client-os.md",
       "redirect_url": "/windows/application-management/apps-in-windows-10",
       "redirect_document_id": false
@@ -21964,6 +22679,131 @@
       "source_path": "windows/application-management/provisioned-apps-windows-client-os.md",
       "redirect_url": "/windows/application-management/apps-in-windows-10",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-and-adds-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-deployment-and-administration-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-frequently-asked-questions.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-key-management-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-network-unlock-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-overview-and-requirements-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-security-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-to-go-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-upgrading-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/bitlocker/bitlocker-using-with-other-programs-faq.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/bitlocker/faq",
+      "redirect_document_id": false
+    },
+    {      
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-update-management.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-update-management",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-update.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-update",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-end-user-exp.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-end-user-exp",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-signals.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-signals",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-communications.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-communications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-reports-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-summary-dashboard.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-summary-dashboard",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-all-devices-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-status-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-all-devices-historical-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-trending-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-eligible-devices-historical-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-ineligible-devices-historical-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-feature-update-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-end-user-exp.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-manage-windows-feature-update-release",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/references/windows-autopatch-groups-public-preview-addendum.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/deploy/windows-autopatch-groups-overview",
+      "redirect_document_id": true
     }
   ]
 }
