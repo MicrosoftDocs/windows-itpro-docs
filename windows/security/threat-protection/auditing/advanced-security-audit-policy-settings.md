@@ -2,13 +2,11 @@
 title: Advanced security audit policy settings 
 description: This reference for IT professionals provides information about the advanced audit policy settings that are available in Windows and the audit events that they generate.
 ms.assetid: 93b28b92-796f-4036-a53b-8b9e80f9f171
-ms.reviewer: This reference for IT professionals provides information about the advanced audit policy settings that are available in Windows and the audit events that they generate.
 ms.author: vinpa
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: low
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro
