@@ -2,7 +2,7 @@
 ms.date: 07/05/2023
 title: Windows Hello for Business Deployment Prerequisite Overview
 description: Overview of all the different infrastructure requirements for Windows Hello for Business deployment models
-ms.topic: article
+ms.topic: overview
 ms.collection:
 - tier1
 appliesto: 
