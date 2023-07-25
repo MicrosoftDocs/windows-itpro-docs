@@ -2,7 +2,7 @@
 title: Remote Desktop
 description: Learn how Windows Hello for Business supports using biometrics with remote desktop
 ms.date: 02/24/2021
-ms.topic: article
+ms.topic: conceptual
 ms.collection:
   - tier1
 ---
@@ -10,6 +10,7 @@ ms.collection:
 # Remote Desktop
 
 **Requirements**
+
 - Hybrid and On-premises Windows Hello for Business deployments
 - Azure AD joined, Hybrid Azure AD joined, and Enterprise joined devices
 
@@ -24,9 +25,8 @@ Microsoft continues to investigate supporting using keys trust for supplied cred
 - Hybrid and On-premises Windows Hello for Business deployments
 - Azure AD joined, Hybrid Azure AD joined, and Enterprise joined devices
 - Biometric enrollments
-- Windows 10, version 1809 or later
 
-Users using earlier versions of Windows 10 could authenticate to a remote desktop using Windows Hello for Business but were limited to using their PIN as their authentication gesture.  Windows 10, version 1809 or later introduces the ability for users to authenticate to a remote desktop session using their Windows Hello for Business biometric gesture.  The feature is on by default, so your users can take advantage of it as soon as they upgrade to Windows 10, version 1809.
+The ability for users to authenticate to a remote desktop session using their Windows Hello for Business biometric is on by default.
 
 ### How does it work
 
