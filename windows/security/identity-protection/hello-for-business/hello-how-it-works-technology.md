@@ -94,8 +94,8 @@ In Windows 10 and Windows 11, cloud experience host is an application used while
 
 ### Related to cloud experience host
 
-- [Windows Hello for Business](./hello-identity-verification.md)
-- [Managed Windows Hello in organization](./hello-manage-in-organization.md)
+- [Windows Hello for Business](hello-identity-verification.md)
+- [Managed Windows Hello in organization](hello-manage-in-organization.md)
 
 ### More information on cloud experience host
 
