@@ -1,0 +1,19 @@
+{
+  "redirections": [
+    {
+      "source_path": "windows/hub/release-information.md",
+      "redirect_url": "/windows/release-health/release-information",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/hub/windows-10-landing.yml",
+      "redirect_url": "/windows/windows-10",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/hub/windows-10.yml",
+      "redirect_url": "/windows/windows-10",
+      "redirect_document_id": false
+    }
+  ]
+}
