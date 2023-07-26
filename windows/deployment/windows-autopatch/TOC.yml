@@ -70,12 +70,12 @@
                     items:
                       - name: Manage Windows feature updates
                         href: operate/windows-autopatch-groups-manage-windows-feature-update-release.md
-                  - name: Microsoft 365 Apps for enterprise
-                    href: operate/windows-autopatch-microsoft-365-apps-enterprise.md
-                  - name: Microsoft Edge
-                    href: operate/windows-autopatch-edge.md
-                  - name: Microsoft Teams
-                    href: operate/windows-autopatch-teams.md
+              - name: Microsoft 365 Apps for enterprise
+                href: operate/windows-autopatch-microsoft-365-apps-enterprise.md
+              - name: Microsoft Edge
+                href: operate/windows-autopatch-edge.md
+              - name: Microsoft Teams
+                href: operate/windows-autopatch-teams.md
         - name: Windows quality and feature update reports
           href: operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md
           items:
