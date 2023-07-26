@@ -384,8 +384,6 @@ items:
           href: policy-csp-cellular.md
         - name: CloudDesktop
           href: policy-csp-clouddesktop.md
-        - name: CloudPC
-          href: policy-csp-cloudpc.md
         - name: Connectivity
           href: policy-csp-connectivity.md
         - name: ControlPolicyConflict
@@ -631,6 +629,11 @@ items:
       items:
       - name: ClientCertificateInstall DDF file
         href: clientcertificateinstall-ddf-file.md
+    - name: CloudDesktop
+      href: clouddesktop-csp.md
+      items:
+      - name: CloudDesktop DDF file
+        href: clouddesktop-ddf-file.md
     - name: CM_CellularEntries
       href: cm-cellularentries-csp.md
     - name: CMPolicy
