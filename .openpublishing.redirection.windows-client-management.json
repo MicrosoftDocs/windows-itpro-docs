@@ -641,6 +641,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/client-management/mdm/policy-csp-cloudpc.md",
+      "redirect_url": "/windows/client-management/mdm/clouddesktop-csp",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/client-management/mdm/policy-csp-location.md",
       "redirect_url": "/windows/client-management/mdm/policy-configuration-service-provider",
       "redirect_document_id": false
