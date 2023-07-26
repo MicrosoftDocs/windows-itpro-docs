@@ -16,7 +16,6 @@ appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2019</a>
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016</a>
 ---
----
 
 # Update Windows PE boot image with the latest cumulative update
 
@@ -100,7 +99,7 @@ Mount-WindowsImage -Path "<Mount_folder_path>" -ImagePath "<Boot_image_path>\<bo
 
 For more information, see [Mount-WindowsImage](/powershell/module/dism/mount-windowsimage)
 
-### [**Command Line]**](#tab/command-line)
+### [**Command Line**](#tab/command-line)
 
 ```cmd
 DISM.exe /Mount-image /imagefile:"<Boot_image_path>" /Index:1 /MountDir:"<Mount_folder_path>"
@@ -120,7 +119,7 @@ For more information, see [Modify a Windows image using DISM: Mount an image](/w
 Command to be determined
 ```
 
-### [**Command Line]**](#tab/command-line)
+### [**Command Line**](#tab/command-line)
 
 ```cmd
 DISM.exe/Image:"<Mount_folder_path>" /Add-Driver /Driver:"<Dirver_INF_source_path>\<driver>.inf"
@@ -149,7 +148,7 @@ Add-WindowsPackage -PackagePath "C:\Program Files (x86)\Windows Kits\10\Assessme
 
 For more information, see [Add-WindowsPackage](/powershell/module/dism/add-windowspackage).
 
-### [**Command Line]**](#tab/command-line)
+### [**Command Line**](#tab/command-line)
 
 ```cmd
 DISM.exe /Image:"<Mount_folder_path>" /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\<Component>.cab" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\<Component2>.cab"
@@ -169,7 +168,7 @@ For more information, see [Add or Remove Packages Offline Using DISM](/windows-h
 Add-WindowsPackage -PackagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\<Component>_en-us.cab" -Path "<Mount_folder_path>" -Verbose
 ```
 
-### [**Command Line]**](#tab/command-line)
+### [**Command Line**](#tab/command-line)
 
 ```cmd
 DISM.exe /Image:"<Mount_folder_path>" /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\<Component>_en-us.cab" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\<Component2>_en-us.cab"
@@ -206,7 +205,7 @@ Add-WindowsPackage -PackagePath "<Path_to_CU_MSU_update>" -Path "<Mount_folder_p
 
 For more information, see [Add-WindowsPackage](/powershell/module/dism/add-windowspackage)
 
-### [**Command Line]**](#tab/command-line)
+### [**Command Line**](#tab/command-line)
 
 ```cmd
 DISM.exe /Image:"<Mount_folder_path>" /Add-Package /PackagePath:"<Path_to_CU_MSU_update>"
@@ -233,7 +232,7 @@ Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgr.efi" "C:\Program Files (
 Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi" -Force
 ```
 
-### [**Command Line]**](#tab/command-line)
+### [**Command Line**](#tab/command-line)
 
 ```cmd
 Command to be determined
@@ -253,7 +252,7 @@ Start-Process "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment 
 Start-Process "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\DISM\dism.exe" -ArgumentList " /Image:"<Mount_folder_path>" /Cleanup-image /StartComponentCleanup /Resetbase" -Wait -LoadUserProfile
 ```
 
-### [**Command Line]**](#tab/command-line)
+### [**Command Line**](#tab/command-line)
 
 ```cmd
 DISM.exe /Image:"<Mount_folder_path>" /Cleanup-image /StartComponentCleanup /Resetbase /Defer
@@ -277,7 +276,7 @@ Get-WindowsPackage -Path "<Mount_folder_path>"
 
 For more information, see [Get-WindowsPackage](/powershell/module/dism/get-windowspackage).
 
-### [**Command Line]**](#tab/command-line)
+### [**Command Line**](#tab/command-line)
 
 ```cmd
 DISM.exe /Image:"<Mount_folder_path>" /Get-Packages
@@ -299,7 +298,7 @@ Dismount-WindowsImage -Path "<Mount_folder_path>" -Save -Verbose
 
 For more information, see [Dismount-WindowsImage](/powershell/module/dism/dismount-windowsimage).
 
-### [**Command Line]**](#tab/command-line)
+### [**Command Line**](#tab/command-line)
 
 ```cmd
 DISM.exe /Unmount-Image /MountDir:"<Mount_folder_path>" /Commit
@@ -321,7 +320,7 @@ Export-WindowsImage -SourceImagePath "<Boot_image_path>\<boot_image>.wim" -Sourc
 
 For more information, see [Export-WindowsImage](/powershell/module/dism/export-windowsimage).
 
-### [**Command Line]**](#tab/command-line)
+### [**Command Line**](#tab/command-line)
 
 ```cmd
 DISM.exe /Export-Image /SourceImageFile:"<Boot_image_path>\<boot_image>.wim" /SourceIndex:1 /DestinationImageFile:"<Boot_image_path>\<boot_image>-export.wim"
