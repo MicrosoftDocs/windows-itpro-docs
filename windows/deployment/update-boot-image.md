@@ -108,6 +108,8 @@ DISM.exe /Mount-image /imagefile:"<Boot_image_path>" /Index:1 /MountDir:"<Mount_
 
 For more information, see [Modify a Windows image using DISM: Mount an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism) and [DISM Image Management Command-Line Options: /Mount-Image](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14#mount-image).
 
+---
+
 ## Step 5: Add drivers to boot image
 
 - If needed, add any drivers to the boot image.
