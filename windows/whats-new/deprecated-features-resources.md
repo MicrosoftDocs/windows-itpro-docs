@@ -36,9 +36,7 @@ For developer guidance and for a list of common applications known to rely on TL
 
 Applications that fail when TLS 1.0 and 1.1 are disabled can be identified by reviewing the event logs. In the System Event Log, SChannel EventID 36871 may be logged with the following description:
 
-```log
-A fatal error occurred while creating a TLS <client/server> credential. The internal error state is 10013. The SSPI client process is <process ID>.
-```
+`A fatal error occurred while creating a TLS <client/server> credential. The internal error state is 10013. The SSPI client process is <process ID>.`
 
 ### TLS 1.0 and 1.1 guidance for IT professionals
 
