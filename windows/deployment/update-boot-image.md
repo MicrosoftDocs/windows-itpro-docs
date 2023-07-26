@@ -92,7 +92,7 @@ Note about Windows Server 2012 R2
 
 - Create a new empty empty folder to mount the boot image to. For example, `C:\Mount`.
 
-#### [**PowerShell**](#tab/powershell)
+### [**PowerShell**](#tab/powershell)
 
 ```powershell
 Mount-WindowsImage -Path "<Mount_folder_path>" -ImagePath "<Boot_image_path>\<boot_image>.wim" -Index 1 -Verbose
@@ -100,7 +100,7 @@ Mount-WindowsImage -Path "<Mount_folder_path>" -ImagePath "<Boot_image_path>\<bo
 
 For more information, see [Mount-WindowsImage](/powershell/module/dism/mount-windowsimage)
 
-#### [**CMD**](#tab/cmd)
+### [**Command Line]**](#tab/command-line)
 
 ```cmd
 DISM.exe /Mount-image /imagefile:"<Boot_image_path>" /Index:1 /MountDir:"<Mount_folder_path>"
@@ -114,9 +114,13 @@ For more information, see [Modify a Windows image using DISM: Mount an image](/w
 
 - If needed, add any drivers to the boot image.
 
+### [**PowerShell**](#tab/powershell)
+
 ```powershell
 Command to be determined
 ```
+
+### [**Command Line]**](#tab/command-line)
 
 ```cmd
 DISM.exe/Image:"<Mount_folder_path>" /Add-Driver /Driver:"<Dirver_INF_source_path>\<driver>.inf"
@@ -125,6 +129,8 @@ DISM.exe /Image:"<Mount_folder_path>" /Add-Driver /Driver:"<Dirvers_source_path"
 ```
 
 For more information, see [Add and Remove Driver packages to an offline Windows Image](/windows-hardware/manufacture/desktop/add-and-remove-drivers-to-an-offline-windows-image)
+
+---
 
 > [!IMPORTANT]
 >
@@ -135,15 +141,21 @@ For more information, see [Add and Remove Driver packages to an offline Windows 
 - Add any desired optional components to the boot image.
 - The below examples assumes an x64 boot image. If a different architecture is being used, then adjust the commands accordingly.
 
+### [**PowerShell**](#tab/powershell)
+
 ```powershell
 Add-WindowsPackage -PackagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\<Component>.cab" -Path "<Mount_folder_path>" -Verbose
 ```
 
 For more information, see [Add-WindowsPackage](/powershell/module/dism/add-windowspackage).
 
+### [**Command Line]**](#tab/command-line)
+
 ```cmd
 DISM.exe /Image:"<Mount_folder_path>" /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\<Component>.cab" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\<Component2>.cab"
 ```
+
+---
 
 You can add as many desired optional components as needed on a single DISM.exe command line.
 
@@ -151,15 +163,21 @@ For more information, see [Add or Remove Packages Offline Using DISM](/windows-h
 
 - Make sure that after adding the optional component to also add the language specific component for that optional component. For example, for English United States (en-us), add the following:
 
+### [**PowerShell**](#tab/powershell)
+
 ```powershell
 Add-WindowsPackage -PackagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\<Component>_en-us.cab" -Path "<Mount_folder_path>" -Verbose
 ```
+
+### [**Command Line]**](#tab/command-line)
 
 ```cmd
 DISM.exe /Image:"<Mount_folder_path>" /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\<Component>_en-us.cab" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\<Component2>_en-us.cab"
 ```
 
 You can add as many desired optional components as needed on a single DISM.exe command line.
+
+---
 
 > [!IMPORTANT]
 >
@@ -180,17 +198,23 @@ You can add as many desired optional components as needed on a single DISM.exe c
 
 - Apply the cumulative update (CU) downloaded earlier in the walkthrough to the boot image.
 
+### [**PowerShell**](#tab/powershell)
+
 ```powershell
 Add-WindowsPackage -PackagePath "<Path_to_CU_MSU_update>" -Path "<Mount_folder_path>" -Verbose
 ```
 
 For more information, see [Add-WindowsPackage](/powershell/module/dism/add-windowspackage)
 
+### [**Command Line]**](#tab/command-line)
+
 ```cmd
 DISM.exe /Image:"<Mount_folder_path>" /Add-Package /PackagePath:"<Path_to_CU_MSU_update>"
 ```
 
 For more information, see [Add or Remove Packages Offline Using DISM](/windows-hardware/manufacture/desktop/add-or-remove-packages-offline-using-dism) and [DISM Operating System Package (.cab or .msu) Servicing Command-Line Options: /Add-Package](/windows-hardware/manufacture/desktop/dism-operating-system-package-servicing-command-line-options#add-package).
+
+---
 
 > [!IMPORTANT]
 >
@@ -201,25 +225,35 @@ For more information, see [Add or Remove Packages Offline Using DISM](/windows-h
 - Copy the updated bootmgr files from the updated boot image to the ADK installation path.
 - This step doesn't update or change the boot image. However, it makes sure that the latest bootmgr files are available to the ADK when creating bootable media. In particular, this step is needed when addressing the BlackLotus UEFI bootkit vulnerability as documented in [KB5025885: How to manage the Windows Boot Manager revocations for Secure Boot changes associated with CVE-2023-24932](https://prod.support.services.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d) and [CVE-2023-24932](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24932).
 
+### [**PowerShell**](#tab/powershell)
+
 ```powershell
 Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi" -Force
 
 Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi" -Force
 ```
 
+### [**Command Line]**](#tab/command-line)
+
 ```cmd
 Command to be determined
 ```
 
+---
+
 ## Step 9: Perform component cleanup
 
 - Run DISM.exe commands that will clean up the mounted image and help reduce its size
+
+### [**PowerShell**](#tab/powershell)
 
 ```powershell
 Start-Process "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\DISM\dism.exe" -ArgumentList " /Image:"<Mount_folder_path>" /Cleanup-image /StartComponentCleanup /Resetbase /Defer" -Wait -LoadUserProfile
 
 Start-Process "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\DISM\dism.exe" -ArgumentList " /Image:"<Mount_folder_path>" /Cleanup-image /StartComponentCleanup /Resetbase" -Wait -LoadUserProfile
 ```
+
+### [**Command Line]**](#tab/command-line)
 
 ```cmd
 DISM.exe /Image:"<Mount_folder_path>" /Cleanup-image /StartComponentCleanup /Resetbase /Defer
@@ -229,9 +263,13 @@ DISM.exe /Image:"<Mount_folder_path>" /Cleanup-image /StartComponentCleanup /Res
 
 For more information, see [Modify a Windows image using DISM: Reduce the size of an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#reduce-the-size-of-an-image) and [DISM Operating System Package (.cab or .msu) Servicing Command-Line Options: /Cleanup-Image](/windows-hardware/manufacture/desktop/dism-operating-system-package-servicing-command-line-options#cleanup-image).
 
+---
+
 ## Step 10: Verify all desired packages have been added to boot image
 
 - After the optional components and the cumulative update (CU) have been applied to the boot image, verify that they are showing as installed.
+
+### [**PowerShell**](#tab/powershell)
 
 ```powershell
 Get-WindowsPackage -Path "<Mount_folder_path>"
@@ -239,15 +277,21 @@ Get-WindowsPackage -Path "<Mount_folder_path>"
 
 For more information, see [Get-WindowsPackage](/powershell/module/dism/get-windowspackage).
 
+### [**Command Line]**](#tab/command-line)
+
 ```cmd
 DISM.exe /Image:"<Mount_folder_path>" /Get-Packages
 ```
 
 For more information, see [DISM Operating System Package (.cab or .msu) Servicing Command-Line Options: /Get-Packages](/windows-hardware/manufacture/desktop/dism-operating-system-package-servicing-command-line-options#get-packages).
 
+---
+
 ## Step 11: Unmount boot image and save changes
 
 - Once drivers, optional components, and the cumulative update (CU) have been applied to the boot image, unmount the boot image and save changes.
+
+### [**PowerShell**](#tab/powershell)
 
 ```powershell
 Dismount-WindowsImage -Path "<Mount_folder_path>" -Save -Verbose
@@ -255,15 +299,21 @@ Dismount-WindowsImage -Path "<Mount_folder_path>" -Save -Verbose
 
 For more information, see [Dismount-WindowsImage](/powershell/module/dism/dismount-windowsimage).
 
+### [**Command Line]**](#tab/command-line)
+
 ```cmd
 DISM.exe /Unmount-Image /MountDir:"<Mount_folder_path>" /Commit
 ```
 
 For more information, see [Modify a Windows image using DISM: Unmounting an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#unmounting-an-image) and [DISM Image Management Command-Line Options: /Unmount-Image](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14#unmount-image).
 
+---
+
 ## Step 12: Export boot image to reduce size
 
 - Once the boot image has been unmounted and saved, its size can be further reduced by exporting it.
+
+### [**PowerShell**](#tab/powershell)
 
 ```powershell
 Export-WindowsImage -SourceImagePath "<Boot_image_path>\<boot_image>.wim" -SourceIndex 1 -DestinationImagePath "<Boot_image_path>\<boot_image>-export.wim" -CompressionType max -Verbose
@@ -271,11 +321,15 @@ Export-WindowsImage -SourceImagePath "<Boot_image_path>\<boot_image>.wim" -Sourc
 
 For more information, see [Export-WindowsImage](/powershell/module/dism/export-windowsimage).
 
+### [**Command Line]**](#tab/command-line)
+
 ```cmd
 DISM.exe /Export-Image /SourceImageFile:"<Boot_image_path>\<boot_image>.wim" /SourceIndex:1 /DestinationImageFile:"<Boot_image_path>\<boot_image>-export.wim"
 ```
 
 For more information, see [Modify a Windows image using DISM: Reduce the size of an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#reduce-the-size-of-an-image) and [DISM Image Management Command-Line Options: /Export-Image](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14#export-image).
+
+---
 
 - Once the export has completed, delete the original boot image and then rename the exported boot image with the name of the original boot image.
 
