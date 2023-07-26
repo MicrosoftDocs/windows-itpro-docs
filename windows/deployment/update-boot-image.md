@@ -92,7 +92,7 @@ Note about Windows Server 2012 R2
 
 - Create a new empty empty folder to mount the boot image to. For example, `C:\Mount`.
 
-#### [**Intune**](#tab/powershell)
+#### [**PowerShell**](#tab/powershell)
 
 ```powershell
 Mount-WindowsImage -Path "<Mount_folder_path>" -ImagePath "<Boot_image_path>\<boot_image>.wim" -Index 1 -Verbose
@@ -100,7 +100,7 @@ Mount-WindowsImage -Path "<Mount_folder_path>" -ImagePath "<Boot_image_path>\<bo
 
 For more information, see [Mount-WindowsImage](/powershell/module/dism/mount-windowsimage)
 
-#### [**Intune**](#tab/cmd)
+#### [**CMD**](#tab/cmd)
 
 ```cmd
 DISM.exe /Mount-image /imagefile:"<Boot_image_path>" /Index:1 /MountDir:"<Mount_folder_path>"
