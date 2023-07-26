@@ -41,7 +41,7 @@ The following instructions provide details how to configure your devices. Select
 
 To configure devices using Microsoft Intune, [create a **Settings catalog** policy][MEM-2], and use the settings listed under the category **`Local Policies Security Options`**:
 
-:::image type="content" source="./images/uac-settings-catalog.png" alt-text="Screenshot that shows the UAC policies in the Intune settings catalog." lightbox="./images/uac-settings-catalog.png" border="True":::
+:::image type="content" source="images/uac-settings-catalog.png" alt-text="Screenshot that shows the UAC policies in the Intune settings catalog." lightbox="images/uac-settings-catalog.png" border="True":::
 
 Assign the policy to a security group that contains as members the devices or users that you want to configure.
 

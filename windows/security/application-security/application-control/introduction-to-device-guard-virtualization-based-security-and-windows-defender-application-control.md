@@ -44,6 +44,6 @@ WDAC has no specific hardware or software requirements.
 
 ## Related articles
 
-- [Windows Defender Application Control](../../threat-protection/windows-defender-application-control/windows-defender-application-control.md)
+- [Windows Defender Application Control](windows-defender-application-control/wdac.md)
 - [Memory integrity](../../hardware-security/enable-virtualization-based-protection-of-code-integrity.md)
 - [Driver compatibility with memory integrity](https://techcommunity.microsoft.com/t5/windows-hardware-certification/driver-compatibility-with-device-guard-in-windows-10/ba-p/364865)

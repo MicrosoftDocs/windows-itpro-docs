@@ -183,7 +183,7 @@ Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the 
 
 ### Add an AppLocker policy file
 
-For this example, we're going to add an AppLocker XML file to the **App Rules** list. You'll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](../../threat-protection/windows-defender-application-control/applocker/applocker-overview.md) content.
+For this example, we're going to add an AppLocker XML file to the **App Rules** list. You'll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](../../application-security/application-control/windows-defender-application-control/applocker/applocker-overview.md) content.
 
 **To create an app rule and xml file using the AppLocker tool**
 
