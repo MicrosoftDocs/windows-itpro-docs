@@ -89,7 +89,7 @@ Before modifying the desired boot image, make a backup copy of the boot image. F
 
 Create a new empty empty folder to mount the boot image to. For example, `C:\Mount`.
 
-### [:::image type="icon" source="images/icons/powershell-color-18.svg"::: **PowerShell**](#tab/powershell)
+### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
 Mount-WindowsImage -Path "<Mount_folder_path>" -ImagePath "<Boot_image_path>\<boot_image>.wim" -Index 1 -Verbose
@@ -97,7 +97,7 @@ Mount-WindowsImage -Path "<Mount_folder_path>" -ImagePath "<Boot_image_path>\<bo
 
 For more information, see [Mount-WindowsImage](/powershell/module/dism/mount-windowsimage).
 
-### [:::image type="icon" source="images/icons/terminal-18.svg"::: **Command Line**](#tab/command-line)
+### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
 
 ```cmd
 DISM.exe /Mount-image /imagefile:"<Boot_image_path>" /Index:1 /MountDir:"<Mount_folder_path>"
@@ -111,7 +111,7 @@ For more information, see [Modify a Windows image using DISM: Mount an image](/w
 
 If needed, add any drivers to the boot image:
 
-### [:::image type="icon" source="images/icons/powershell-color-18.svg"::: **PowerShell**](#tab/powershell)
+### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
 Command to be determined
@@ -141,7 +141,7 @@ For more information, see [Add and Remove Driver packages to an offline Windows 
 
 1. Add any desired optional components to the boot image:
 
-    ### [:::image type="icon" source="images/icons/powershell-color-18.svg"::: **PowerShell**](#tab/powershell)
+    ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
     ```powershell
     Add-WindowsPackage -PackagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\<Component>.cab" -Path "<Mount_folder_path>" -Verbose
@@ -169,7 +169,7 @@ For more information, see [Add and Remove Driver packages to an offline Windows 
 
     For example, for English United States (en-us), add the following:
 
-    ### [:::image type="icon" source="images/icons/powershell-color-18.svg"::: **PowerShell**](#tab/powershell)
+    ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
     ```powershell
     Add-WindowsPackage -PackagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\<Component>_en-us.cab" -Path "<Mount_folder_path>" -Verbose
@@ -208,7 +208,7 @@ For more information, see [Add and Remove Driver packages to an offline Windows 
 
 Apply the cumulative update (CU) downloaded earlier in the walkthrough to the boot image:
 
-### [:::image type="icon" source="images/icons/powershell-color-18.svg"::: **PowerShell**](#tab/powershell)
+### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
 Add-WindowsPackage -PackagePath "<Path_to_CU_MSU_update>" -Path "<Mount_folder_path>" -Verbose
@@ -234,7 +234,7 @@ For more information, see [Add or Remove Packages Offline Using DISM](/windows-h
 
 Copy the updated bootmgr files from the updated boot image to the ADK installation path:
 
-### [:::image type="icon" source="images/icons/powershell-color-18.svg"::: **PowerShell**](#tab/powershell)
+### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
 Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi" -Force
@@ -256,7 +256,7 @@ This step doesn't update or change the boot image. However, it makes sure that t
 
 Run **DISM.exe** commands that will clean up the mounted image and help reduce its size:
 
-### [:::image type="icon" source="images/icons/powershell-color-18.svg"::: **PowerShell**](#tab/powershell)
+### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
 Start-Process "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\DISM\dism.exe" -ArgumentList " /Image:"<Mount_folder_path>" /Cleanup-image /StartComponentCleanup /Resetbase /Defer" -Wait -LoadUserProfile
@@ -280,7 +280,7 @@ For more information, see [Modify a Windows image using DISM: Reduce the size of
 
 After the optional components and the cumulative update (CU) have been applied to the boot image, verify that they are showing as installed:
 
-### [:::image type="icon" source="images/icons/powershell-color-18.svg"::: **PowerShell**](#tab/powershell)
+### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
 Get-WindowsPackage -Path "<Mount_folder_path>"
@@ -302,7 +302,7 @@ For more information, see [DISM Operating System Package (.cab or .msu) Servicin
 
 Once drivers, optional components, and the cumulative update (CU) have been applied to the boot image, unmount the boot image and save changes.
 
-### [:::image type="icon" source="images/icons/powershell-color-18.svg"::: **PowerShell**](#tab/powershell)
+### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
 Dismount-WindowsImage -Path "<Mount_folder_path>" -Save -Verbose
@@ -324,7 +324,7 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
 
 1. Once the boot image has been unmounted and saved, its size can be further reduced by exporting it:
 
-    ### [:::image type="icon" source="images/icons/powershell-color-18.svg"::: **PowerShell**](#tab/powershell)
+    ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
     ```powershell
     Export-WindowsImage -SourceImagePath "<Boot_image_path>\<boot_image>.wim" -SourceIndex 1 -DestinationImagePath "<Boot_image_path>\<boot_image>-export.wim" -CompressionType max -Verbose
