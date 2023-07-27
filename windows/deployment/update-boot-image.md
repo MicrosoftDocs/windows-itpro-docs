@@ -89,7 +89,7 @@ Before modifying the desired boot image, make a backup copy of the boot image. F
 
 Create a new empty empty folder to mount the boot image to. For example, `C:\Mount`.
 
-### [:::image type="icon" source="images/icons/powershell.svg"::: **PowerShell**](#tab/powershell)
+### [:::image type="icon" source="images/icons/powershell.svg"{width=50%,height:50%}::: **PowerShell**](#tab/powershell)
 
 ```powershell
 Mount-WindowsImage -Path "<Mount_folder_path>" -ImagePath "<Boot_image_path>\<boot_image>.wim" -Index 1 -Verbose
@@ -97,7 +97,7 @@ Mount-WindowsImage -Path "<Mount_folder_path>" -ImagePath "<Boot_image_path>\<bo
 
 For more information, see [Mount-WindowsImage](/powershell/module/dism/mount-windowsimage).
 
-### [:::image type="icon" source="images/icons/command-prompt.svg"::: **Command Line**](#tab/command-line)
+### [:::image type="icon" source="images/icons/command-prompt.svg"{width=50%,height:50%}::: **Command Line**](#tab/command-line)
 
 ```cmd
 DISM.exe /Mount-image /imagefile:"<Boot_image_path>" /Index:1 /MountDir:"<Mount_folder_path>"
@@ -117,7 +117,7 @@ If needed, add any drivers to the boot image:
 Command to be determined
 ```
 
-### [:::image type="icon" source="images/icons/command-prompt.svg"::: **Command Line**](#tab/command-line)
+### [:::image type="icon" source="images/icons/command-prompt.svg"{width=18px,height:18px}::: **Command Line**](#tab/command-line)
 
 ```cmd
 DISM.exe /Image:"<Mount_folder_path>" /Add-Driver /Driver:"<Dirver_INF_source_path>\<driver>.inf"
@@ -342,7 +342,7 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
 
     ---
 
-1. Once the export has completed, delete the original boot image and then rename the exported boot image with the name of the original boot image.
+1. Once the export has completed, delete the original updated boot image and then rename the exported boot image with the name of the original updated boot image.
 
 ## Microsoft Configuration Manager considerations
 
