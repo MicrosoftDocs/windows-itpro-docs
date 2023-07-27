@@ -97,7 +97,7 @@ Mount-WindowsImage -Path "<Mount_folder_path>" -ImagePath "<Boot_image_path>\<bo
 
 For more information, see [Mount-WindowsImage](/powershell/module/dism/mount-windowsimage).
 
-### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+### [:::image type="icon" source="images/icons/terminal-18.svg"::: **Command Line**](#tab/command-line)
 
 ```cmd
 DISM.exe /Mount-image /imagefile:"<Boot_image_path>" /Index:1 /MountDir:"<Mount_folder_path>"
@@ -169,7 +169,7 @@ For more information, see [Add and Remove Driver packages to an offline Windows 
 
     For example, for English United States (en-us), add the following:
 
-    ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **PowerShell**](#tab/powershell)
+    ### [:::image type="icon" source="images/icons/powershell-color-18.svg"::: **PowerShell**](#tab/powershell)
 
     ```powershell
     Add-WindowsPackage -PackagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\<Component>_en-us.cab" -Path "<Mount_folder_path>" -Verbose
