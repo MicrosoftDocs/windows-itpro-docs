@@ -1,12 +1,10 @@
 items:
   - name: Overview
     href: index.md
-  - name: Windows credential theft mitigation guide
-    href: windows-credential-theft-mitigation-guide-abstract.md
   - name: Passwordless sign-in
     items:
-    - name: Windows Hello for Business 🔗
-      href: hello-for-business/index.yml
+    - name: Windows Hello for Business
+      href: hello-for-business/toc.yml
     - name: Windows presence sensing
       href: https://support.microsoft.com/windows/wake-your-windows-11-pc-when-you-approach-82285c93-440c-4e15-9081-c9e38c1290bb
     - name: Windows Hello for Business Enhanced Security Sign-in (ESS) 🔗
