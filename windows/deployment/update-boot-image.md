@@ -167,7 +167,7 @@ For more information, see [Add and Remove Driver packages to an offline Windows 
 
 1. Make sure that after adding the optional component to also add the language specific component for that optional component. This needs to be done for every optional component that is added to the boot image.
 
-  For example, for English United States (en-us), add the following:
+    For example, for English United States (en-us), add the following:
 
     ### [:::image type="icon" source="images/icons/powershell-24.png"::: **PowerShell**](#tab/powershell)
 
@@ -324,23 +324,23 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
 
 1. Once the boot image has been unmounted and saved, its size can be further reduced by exporting it:
 
-  # [**PowerShell**](#tab/powershell)
+    ### [**PowerShell**](#tab/powershell)
 
-  ```powershell
-  Export-WindowsImage -SourceImagePath "<Boot_image_path>\<boot_image>.wim" -SourceIndex 1 -DestinationImagePath "<Boot_image_path>\<boot_image>-export.wim" -CompressionType max -Verbose
-  ```
+    ```powershell
+    Export-WindowsImage -SourceImagePath "<Boot_image_path>\<boot_image>.wim" -SourceIndex 1 -DestinationImagePath "<Boot_image_path>\<boot_image>-export.wim" -CompressionType max -Verbose
+    ```
 
-  For more information, see [Export-WindowsImage](/powershell/module/dism/export-windowsimage).
+    For more information, see [Export-WindowsImage](/powershell/module/dism/export-windowsimage).
 
-  # [**Command Line**](#tab/command-line)
+    ### [**Command Line**](#tab/command-line)
 
-  ```cmd
-  DISM.exe /Export-Image /SourceImageFile:"<Boot_image_path>\<boot_image>.wim" /SourceIndex:1 /DestinationImageFile:"<Boot_image_path>\<boot_image>-export.wim"
-  ```
+    ```cmd
+    DISM.exe /Export-Image /SourceImageFile:"<Boot_image_path>\<boot_image>.wim" /SourceIndex:1 /DestinationImageFile:"<Boot_image_path>\<boot_image>-export.wim"
+    ```
 
-  For more information, see [Modify a Windows image using DISM: Reduce the size of an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#reduce-the-size-of-an-image) and [DISM Image Management Command-Line Options: /Export-Image](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14#export-image).
+    For more information, see [Modify a Windows image using DISM: Reduce the size of an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#reduce-the-size-of-an-image) and [DISM Image Management Command-Line Options: /Export-Image](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14#export-image).
 
-  ---
+    ---
 
 1. Once the export has completed, delete the original boot image and then rename the exported boot image with the name of the original boot image.
 
