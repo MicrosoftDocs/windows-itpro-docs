@@ -1,6 +1,6 @@
 items:
   - name: Overview
-    href: ../identity.md
+    href: index.md
   - name: Windows credential theft mitigation guide
     href: windows-credential-theft-mitigation-guide-abstract.md
   - name: Passwordless sign-in

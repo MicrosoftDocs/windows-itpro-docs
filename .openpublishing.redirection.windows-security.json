@@ -171,6 +171,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/security/identity.md",
+      "redirect_url": "/windows/security/identity-protection",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/security/hardware-protection/tpm/trusted-platform-module-top-node.md",
       "redirect_url": "/windows/security/information-protection/tpm/trusted-platform-module-top-node",
       "redirect_document_id": false
