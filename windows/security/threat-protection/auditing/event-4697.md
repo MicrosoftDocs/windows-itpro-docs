@@ -1,11 +1,11 @@
 ---
-title: 4697(S) A service was installed in the system. (Windows 10)
+title: 4697(S) A service was installed in the system. 
 description: Describes security event 4697(S) A service was installed in the system.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 

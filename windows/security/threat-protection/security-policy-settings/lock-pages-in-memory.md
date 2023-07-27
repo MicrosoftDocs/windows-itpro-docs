@@ -1,5 +1,5 @@
 ---
-title: Lock pages in memory (Windows 10)
+title: Lock pages in memory 
 description: Describes the best practices, location, values, policy management, and security considerations for the Lock pages in memory security policy setting.
 ms.assetid: cc724979-aec0-496d-be4e-7009aef660a3
 ms.reviewer: 

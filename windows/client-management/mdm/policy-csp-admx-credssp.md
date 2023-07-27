@@ -4,7 +4,7 @@ description: Learn more about the ADMX_CredSsp Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/11/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,10 +16,7 @@ ms.topic: reference
 <!-- ADMX_CredSsp-Begin -->
 # Policy CSP - ADMX_CredSsp
 
-> [!TIP]
-> This CSP contains ADMX-backed policies which require a special SyncML format to enable or disable. You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
->
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+[!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
 <!-- ADMX_CredSsp-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -31,7 +28,7 @@ ms.topic: reference
 <!-- AllowDefaultCredentials-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowDefaultCredentials-Applicability-End -->
 
 <!-- AllowDefaultCredentials-OmaUri-Begin -->
@@ -50,17 +47,21 @@ This policy setting applies when server authentication was achieved by using a t
 
 The policy becomes effective the next time the user signs on to a computer running Windows.
 
-- If you disable or do not configure (by default) this policy setting, delegation of default credentials is not permitted to any computer. Applications depending upon this delegation behavior might fail authentication. For more information, see KB.
+- If you disable or don't configure (by default) this policy setting, delegation of default credentials isn't permitted to any computer. Applications depending upon this delegation behavior might fail authentication. For more information, see KB.
 
 FWlink for KB:
+
 <https://go.microsoft.com/fwlink/?LinkId=301508>
 
 > [!NOTE]
 > The "Allow delegating default credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
-TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine.
+
 TERMSRV/* Remote Desktop Session Host running on all machines.
+
 TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com.
 <!-- AllowDefaultCredentials-Description-End -->
 
@@ -73,13 +74,12 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowDefaultCredentials-DFProperties-End -->
 
 <!-- AllowDefaultCredentials-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -106,7 +106,7 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 <!-- AllowDefCredentialsWhenNTLMOnly-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowDefCredentialsWhenNTLMOnly-Applicability-End -->
 
 <!-- AllowDefCredentialsWhenNTLMOnly-OmaUri-Begin -->
@@ -123,14 +123,17 @@ This policy setting applies when server authentication was achieved via NTLM.
 
 - If you enable this policy setting, you can specify the servers to which the user's default credentials can be delegated (default credentials are those that you use when first logging on to Windows).
 
-- If you disable or do not configure (by default) this policy setting, delegation of default credentials is not permitted to any machine.
+- If you disable or don't configure (by default) this policy setting, delegation of default credentials isn't permitted to any machine.
 
 > [!NOTE]
 > The "Allow delegating default credentials with NTLM-only server authentication" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
-TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine.
+
 TERMSRV/* Remote Desktop Session Host running on all machines.
+
 TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com.
 <!-- AllowDefCredentialsWhenNTLMOnly-Description-End -->
 
@@ -143,13 +146,12 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowDefCredentialsWhenNTLMOnly-DFProperties-End -->
 
 <!-- AllowDefCredentialsWhenNTLMOnly-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -176,7 +178,7 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 <!-- AllowEncryptionOracle-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowEncryptionOracle-Applicability-End -->
 
 <!-- AllowEncryptionOracle-OmaUri-Begin -->
@@ -187,7 +189,7 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 
 <!-- AllowEncryptionOracle-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Encryption Oracle Remediation
+Encryption Oracle Remediation.
 
 This policy setting applies to applications using the CredSSP component (for example: Remote Desktop Connection).
 
@@ -195,9 +197,9 @@ Some versions of the CredSSP protocol are vulnerable to an encryption oracle att
 
 If you enable this policy setting, CredSSP version support will be selected based on the following options:
 
-Force Updated Clients: Client applications which use CredSSP will not be able to fall back to the insecure versions and services using CredSSP will not accept unpatched clients. **Note** this setting should not be deployed until all remote hosts support the newest version.
+Force Updated Clients: Client applications which use CredSSP won't be able to fall back to the insecure versions and services using CredSSP won't accept unpatched clients. Note this setting shouldn't be deployed until all remote hosts support the newest version.
 
-Mitigated: Client applications which use CredSSP will not be able to fall back to the insecure version but services using CredSSP will accept unpatched clients. See the link below for important information about the risk posed by remaining unpatched clients.
+Mitigated: Client applications which use CredSSP won't be able to fall back to the insecure version but services using CredSSP will accept unpatched clients. See the link below for important information about the risk posed by remaining unpatched clients.
 
 Vulnerable: Client applications which use CredSSP will expose the remote servers to attacks by supporting fall back to the insecure versions and services using CredSSP will accept unpatched clients.
 
@@ -213,13 +215,12 @@ For more information about the vulnerability and servicing requirements for prot
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowEncryptionOracle-DFProperties-End -->
 
 <!-- AllowEncryptionOracle-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -245,7 +246,7 @@ For more information about the vulnerability and servicing requirements for prot
 <!-- AllowFreshCredentials-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowFreshCredentials-Applicability-End -->
 
 <!-- AllowFreshCredentials-OmaUri-Begin -->
@@ -262,17 +263,21 @@ This policy setting applies when server authentication was achieved via a truste
 
 - If you enable this policy setting, you can specify the servers to which the user's fresh credentials can be delegated (fresh credentials are those that you are prompted for when executing the application).
 
-- If you do not configure (by default) this policy setting, after proper mutual authentication, delegation of fresh credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*).
+- If you don't configure (by default) this policy setting, after proper mutual authentication, delegation of fresh credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*).
 
-- If you disable this policy setting, delegation of fresh credentials is not permitted to any machine.
+- If you disable this policy setting, delegation of fresh credentials isn't permitted to any machine.
 
 > [!NOTE]
 > The "Allow delegating fresh credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard is permitted when specifying the SPN.
 
 For Example:
-TERMSRV/host.humanresources.fabrikam.com
-Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+
+TERMSRV/host.humanresources.fabrikam.com.
+
+Remote Desktop Session Host running on host.humanresources.fabrikam.com machine.
+
 TERMSRV/* Remote Desktop Session Host running on all machines.
+
 TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com.
 <!-- AllowFreshCredentials-Description-End -->
 
@@ -285,13 +290,12 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowFreshCredentials-DFProperties-End -->
 
 <!-- AllowFreshCredentials-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -318,7 +322,7 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 <!-- AllowFreshCredentialsWhenNTLMOnly-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowFreshCredentialsWhenNTLMOnly-Applicability-End -->
 
 <!-- AllowFreshCredentialsWhenNTLMOnly-OmaUri-Begin -->
@@ -335,16 +339,19 @@ This policy setting applies when server authentication was achieved via NTLM.
 
 - If you enable this policy setting, you can specify the servers to which the user's fresh credentials can be delegated (fresh credentials are those that you are prompted for when executing the application).
 
-- If you do not configure (by default) this policy setting, after proper mutual authentication, delegation of fresh credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*).
+- If you don't configure (by default) this policy setting, after proper mutual authentication, delegation of fresh credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*).
 
-- If you disable this policy setting, delegation of fresh credentials is not permitted to any machine.
+- If you disable this policy setting, delegation of fresh credentials isn't permitted to any machine.
 
 > [!NOTE]
 > The "Allow delegating fresh credentials with NTLM-only server authentication" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
-TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine.
+
 TERMSRV/* Remote Desktop Session Host running on all machines.
+
 TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in humanresources.fabrikam.com.
 <!-- AllowFreshCredentialsWhenNTLMOnly-Description-End -->
 
@@ -357,13 +364,12 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowFreshCredentialsWhenNTLMOnly-DFProperties-End -->
 
 <!-- AllowFreshCredentialsWhenNTLMOnly-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -390,7 +396,7 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 <!-- AllowSavedCredentials-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowSavedCredentials-Applicability-End -->
 
 <!-- AllowSavedCredentials-OmaUri-Begin -->
@@ -407,16 +413,19 @@ This policy setting applies when server authentication was achieved via a truste
 
 - If you enable this policy setting, you can specify the servers to which the user's saved credentials can be delegated (saved credentials are those that you elect to save/remember using the Windows credential manager).
 
-- If you do not configure (by default) this policy setting, after proper mutual authentication, delegation of saved credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*).
+- If you don't configure (by default) this policy setting, after proper mutual authentication, delegation of saved credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*).
 
-- If you disable this policy setting, delegation of saved credentials is not permitted to any machine.
+- If you disable this policy setting, delegation of saved credentials isn't permitted to any machine.
 
 > [!NOTE]
 > The "Allow delegating saved credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
-TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine.
+
 TERMSRV/* Remote Desktop Session Host running on all machines.
+
 TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in humanresources.fabrikam.com.
 <!-- AllowSavedCredentials-Description-End -->
 
@@ -429,13 +438,12 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowSavedCredentials-DFProperties-End -->
 
 <!-- AllowSavedCredentials-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -462,7 +470,7 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 <!-- AllowSavedCredentialsWhenNTLMOnly-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- AllowSavedCredentialsWhenNTLMOnly-Applicability-End -->
 
 <!-- AllowSavedCredentialsWhenNTLMOnly-OmaUri-Begin -->
@@ -479,16 +487,19 @@ This policy setting applies when server authentication was achieved via NTLM.
 
 - If you enable this policy setting, you can specify the servers to which the user's saved credentials can be delegated (saved credentials are those that you elect to save/remember using the Windows credential manager).
 
-- If you do not configure (by default) this policy setting, after proper mutual authentication, delegation of saved credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*) if the client machine is not a member of any domain. If the client is domain-joined, by default the delegation of saved credentials is not permitted to any machine.
+- If you don't configure (by default) this policy setting, after proper mutual authentication, delegation of saved credentials is permitted to Remote Desktop Session Host running on any machine (TERMSRV/*) if the client machine isn't a member of any domain. If the client is domain-joined, by default the delegation of saved credentials isn't permitted to any machine.
 
-- If you disable this policy setting, delegation of saved credentials is not permitted to any machine.
+- If you disable this policy setting, delegation of saved credentials isn't permitted to any machine.
 
 > [!NOTE]
 > The "Allow delegating saved credentials with NTLM-only server authentication" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
-TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine.
+
 TERMSRV/* Remote Desktop Session Host running on all machines.
+
 TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in humanresources.fabrikam.com.
 <!-- AllowSavedCredentialsWhenNTLMOnly-Description-End -->
 
@@ -501,13 +512,12 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- AllowSavedCredentialsWhenNTLMOnly-DFProperties-End -->
 
 <!-- AllowSavedCredentialsWhenNTLMOnly-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -534,7 +544,7 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 <!-- DenyDefaultCredentials-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DenyDefaultCredentials-Applicability-End -->
 
 <!-- DenyDefaultCredentials-OmaUri-Begin -->
@@ -547,17 +557,20 @@ TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all
 <!-- Description-Source-ADMX -->
 This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
 
-- If you enable this policy setting, you can specify the servers to which the user's default credentials cannot be delegated (default credentials are those that you use when first logging on to Windows).
+- If you enable this policy setting, you can specify the servers to which the user's default credentials can't be delegated (default credentials are those that you use when first logging on to Windows).
 
-- If you disable or do not configure (by default) this policy setting, this policy setting does not specify any server.
+- If you disable or don't configure (by default) this policy setting, this policy setting doesn't specify any server.
 
 > [!NOTE]
-> The "Deny delegating default credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials cannot be delegated. The use of a single wildcard character is permitted when specifying the SPN.
+> The "Deny delegating default credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can't be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
-TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine.
+
 TERMSRV/* Remote Desktop Session Host running on all machines.
-TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com
+
+TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com.
 
 This policy setting can be used in combination with the "Allow delegating default credentials" policy setting to define exceptions for specific servers that are otherwise permitted when using wildcard characters in the "Allow delegating default credentials" server list.
 <!-- DenyDefaultCredentials-Description-End -->
@@ -571,13 +584,12 @@ This policy setting can be used in combination with the "Allow delegating defaul
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DenyDefaultCredentials-DFProperties-End -->
 
 <!-- DenyDefaultCredentials-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -604,7 +616,7 @@ This policy setting can be used in combination with the "Allow delegating defaul
 <!-- DenyFreshCredentials-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DenyFreshCredentials-Applicability-End -->
 
 <!-- DenyFreshCredentials-OmaUri-Begin -->
@@ -617,17 +629,20 @@ This policy setting can be used in combination with the "Allow delegating defaul
 <!-- Description-Source-ADMX -->
 This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
 
-- If you enable this policy setting, you can specify the servers to which the user's fresh credentials cannot be delegated (fresh credentials are those that you are prompted for when executing the application).
+- If you enable this policy setting, you can specify the servers to which the user's fresh credentials can't be delegated (fresh credentials are those that you are prompted for when executing the application).
 
-- If you disable or do not configure (by default) this policy setting, this policy setting does not specify any server.
+- If you disable or don't configure (by default) this policy setting, this policy setting doesn't specify any server.
 
 > [!NOTE]
-> The "Deny delegating fresh credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials cannot be delegated. The use of a single wildcard character is permitted when specifying the SPN.
+> The "Deny delegating fresh credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can't be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
-TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine.
+
 TERMSRV/* Remote Desktop Session Host running on all machines.
-TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com
+
+TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com.
 
 This policy setting can be used in combination with the "Allow delegating fresh credentials" policy setting to define exceptions for specific servers that are otherwise permitted when using wildcard characters in the "Allow delegating fresh credentials" server list.
 <!-- DenyFreshCredentials-Description-End -->
@@ -641,13 +656,12 @@ This policy setting can be used in combination with the "Allow delegating fresh 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DenyFreshCredentials-DFProperties-End -->
 
 <!-- DenyFreshCredentials-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -674,7 +688,7 @@ This policy setting can be used in combination with the "Allow delegating fresh 
 <!-- DenySavedCredentials-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DenySavedCredentials-Applicability-End -->
 
 <!-- DenySavedCredentials-OmaUri-Begin -->
@@ -687,17 +701,20 @@ This policy setting can be used in combination with the "Allow delegating fresh 
 <!-- Description-Source-ADMX -->
 This policy setting applies to applications using the Cred SSP component (for example: Remote Desktop Connection).
 
-- If you enable this policy setting, you can specify the servers to which the user's saved credentials cannot be delegated (saved credentials are those that you elect to save/remember using the Windows credential manager).
+- If you enable this policy setting, you can specify the servers to which the user's saved credentials can't be delegated (saved credentials are those that you elect to save/remember using the Windows credential manager).
 
-- If you disable or do not configure (by default) this policy setting, this policy setting does not specify any server.
+- If you disable or don't configure (by default) this policy setting, this policy setting doesn't specify any server.
 
 > [!NOTE]
-> The "Deny delegating saved credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials cannot be delegated. The use of a single wildcard character is permitted when specifying the SPN.
+> The "Deny delegating saved credentials" policy setting can be set to one or more Service Principal Names (SPNs). The SPN represents the target server to which the user credentials can't be delegated. The use of a single wildcard character is permitted when specifying the SPN.
 
 For Example:
-TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine
+
+TERMSRV/host.humanresources.fabrikam.com Remote Desktop Session Host running on host.humanresources.fabrikam.com machine.
+
 TERMSRV/* Remote Desktop Session Host running on all machines.
-TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com
+
+TERMSRV/*.humanresources.fabrikam.com Remote Desktop Session Host running on all machines in .humanresources.fabrikam.com.
 
 This policy setting can be used in combination with the "Allow delegating saved credentials" policy setting to define exceptions for specific servers that are otherwise permitted when using wildcard characters in the "Allow delegating saved credentials" server list.
 <!-- DenySavedCredentials-Description-End -->
@@ -711,13 +728,12 @@ This policy setting can be used in combination with the "Allow delegating saved 
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- DenySavedCredentials-DFProperties-End -->
 
 <!-- DenySavedCredentials-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 
@@ -744,7 +760,7 @@ This policy setting can be used in combination with the "Allow delegating saved 
 <!-- RestrictedRemoteAdministration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 2004 [10.0.19041.1202] and later <br> :heavy_check_mark: Windows 10, version 2009 [10.0.19042.1202] and later <br> :heavy_check_mark: Windows 10, version 21H1 [10.0.19043.1202] and later <br> :heavy_check_mark: Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- RestrictedRemoteAdministration-Applicability-End -->
 
 <!-- RestrictedRemoteAdministration-OmaUri-Begin -->
@@ -755,10 +771,11 @@ This policy setting can be used in combination with the "Allow delegating saved 
 
 <!-- RestrictedRemoteAdministration-Description-Begin -->
 <!-- Description-Source-ADMX -->
-When running in Restricted Admin or Remote Credential Guard mode, participating apps do not expose signed in or supplied credentials to a remote host. Restricted Admin limits access to resources located on other servers or networks from the remote host because credentials are not delegated. Remote Credential Guard does not limit access to resources because it redirects all requests back to the client device.
+When running in Restricted Admin or Remote Credential Guard mode, participating apps don't expose signed in or supplied credentials to a remote host. Restricted Admin limits access to resources located on other servers or networks from the remote host because credentials aren't delegated. Remote Credential Guard doesn't limit access to resources because it redirects all requests back to the client device.
 
 Participating apps:
-Remote Desktop Client
+
+Remote Desktop Client.
 
 - If you enable this policy setting, the following options are supported:
 
@@ -768,13 +785,13 @@ Require Remote Credential Guard: Participating applications must use Remote Cred
 
 Require Restricted Admin: Participating applications must use Restricted Admin to connect to remote hosts.
 
-- If you disable or do not configure this policy setting, Restricted Admin and Remote Credential Guard mode are not enforced and participating apps can delegate credentials to remote devices.
+- If you disable or don't configure this policy setting, Restricted Admin and Remote Credential Guard mode aren't enforced and participating apps can delegate credentials to remote devices.
 
 > [!NOTE]
 > To disable most credential delegation, it may be sufficient to deny delegation in Credential Security Support Provider (CredSSP) by modifying Administrative template settings (located at Computer Configuration\Administrative Templates\System\Credentials Delegation).
 
 > [!NOTE]
-> On Windows 8.1 and Windows Server 2012 R2, enabling this policy will enforce Restricted Administration mode, regardless of the mode chosen. These versions do not support Remote Credential Guard.
+> On Windows 8.1 and Windows Server 2012 R2, enabling this policy will enforce Restricted Administration mode, regardless of the mode chosen. These versions don't support Remote Credential Guard.
 <!-- RestrictedRemoteAdministration-Description-End -->
 
 <!-- RestrictedRemoteAdministration-Editable-Begin -->
@@ -786,13 +803,12 @@ Require Restricted Admin: Participating applications must use Restricted Admin t
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- RestrictedRemoteAdministration-DFProperties-End -->
 
 <!-- RestrictedRemoteAdministration-AdmxBacked-Begin -->
-> [!TIP]
-> This is an ADMX-backed policy and requires SyncML format for configuration. For an example of SyncML format, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+[!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
 

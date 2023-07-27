@@ -124,6 +124,15 @@ sections:
       - question: What is Event ID 300?
         answer: |
           This event is created when Windows Hello for Business is successfully created and registered with Azure Active Directory (Azure AD). Applications or services can trigger actions on this event. For example, a certificate provisioning service can listen to this event and trigger a certificate request. This is a normal condition and no further action is required.
+      - question: What happens when an unauthorized user gains possession of a device enrolled in Windows Hello for Business?
+        answer: |
+          The unauthorized user won't be able to utilize any biometric options and will have the only option to enter a PIN.
+
+          If the user attempts to unlock the device by entering random PINs, after three unsuccessful attempts the credential provider will display the following message: **You've entered an incorrect PIN several times. To try again, enter A1B2C3 below**.
+          Upon entering the challenge phrase *A1B2C3*, the user will be granted one more opportunity to enter the PIN. If unsuccessful, the provider will be disabled, leaving the user with the only option to reboot the device. Following the reboot, the aforementioned pattern repeats.
+          
+          If unsuccessful attempts continue, the device will enter a lockout state, lasting for 1 minute after the first reboot, 2 minutes after the fourth reboot, and 10 minutes after the fifth reboot. The duration of each lockout increases accordingly. This behavior is a result of the TPM 2.0 anti-hammering feature.
+          For more information about the TPM anti-hammering feature, see [TPM 2.0 anti-hammering](/windows/security/information-protection/tpm/tpm-fundamentals#tpm-20-anti-hammering).
 
   - name: Design and planning
     questions:
@@ -165,7 +174,7 @@ sections:
         answer: |
           A user will be prompted to set up a Windows Hello for Business key on an Azure AD registered devices  if the feature is enabled by policy. If the user has an existing Windows Hello container, the Windows Hello for Business key will be enrolled in that container and will be protected using existing gestures.
 
-          If a user has signed into their Azure AD registered device with Windows Hello, their Windows Hello for Business key will be used to authenticate the user's work identity when they try to use Azure AD resources. The Windows Hello for Business key meets Azure AD multi-factor authentication (MFA) requirements and reduces the number of MFA prompts users will see when accessing resources. 
+          If a user has signed into their Azure AD registered device with Windows Hello, their Windows Hello for Business key will be used to authenticate the user's work identity when they try to use Azure AD resources. The Windows Hello for Business key meets Azure AD multifactor authentication (MFA) requirements and reduces the number of MFA prompts users will see when accessing resources. 
 
           It's possible to Azure AD register a domain joined device. If the domain joined device has a convenience PIN, sign in with the convenience PIN will no longer work. This configuration isn't supported by Windows Hello for Business. 
 
@@ -176,12 +185,12 @@ sections:
       - question: Does Windows Hello for Business work with Azure Active Directory Domain Services (Azure AD DS) clients?
         answer: |
           No, Azure AD DS is a separately managed environment in Azure, and hybrid device registration with cloud Azure AD isn't available for it via Azure AD Connect. Hence, Windows Hello for Business doesn't work with Azure AD DS.
-      - question: Is Windows Hello for Business considered multi-factor authentication?
+      - question: Is Windows Hello for Business considered multifactor authentication?
         answer: |
           Windows Hello for Business is two-factor authentication based on the observed authentication factors of: *something you have*, *something you know*, and *something that's part of you*. Windows Hello for Business incorporates two of these factors: something you have (the user's private key protected by the device's security module) and something you know (your PIN). With the proper hardware, you can enhance the user experience by introducing biometrics. By using biometrics, you can replace the "something you know" authentication factor with the "something that is part of you" factor, with the assurances that users can fall back to the "something you know factor".
 
           > [!NOTE]
-          > The Windows Hello for Business key meets Azure AD multi-factor authentication (MFA) requirements and reduces the number of MFA prompts users will see when accessing resources. For more information, see [What is a Primary Refresh Token](/azure/active-directory/devices/concept-primary-refresh-token#when-does-a-prt-get-an-mfa-claim).
+          > The Windows Hello for Business key meets Azure AD multifactor authentication (MFA) requirements and reduces the number of MFA prompts users will see when accessing resources. For more information, see [What is a Primary Refresh Token](/azure/active-directory/devices/concept-primary-refresh-token#when-does-a-prt-get-an-mfa-claim).
       - question: Which is a better or more secure for of authentication, key or certificate?
         answer: |
           Both types of authentication provide the same security; one is not more secure than the other.
@@ -207,7 +216,7 @@ sections:
     questions:      
       - question: Can I use an external Windows Hello compatible camera when my computer has a built-in Windows Hello compatible camera?
         answer: |
-          Yes. Starting with Windows 10, version 21H1 an external Windows Hello compatible camera can be used if a device already supports an internal Windows Hello camera. When both cameras are present, the external camera is used for face authentication. For more information, see [IT tools to support Windows 10, version 21H1](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/it-tools-to-support-windows-10-version-21h1/ba-p/2365103). However, using external Hello cameras and accessories is restricted if ESS is enabled, please see [Windows Hello Enhanced Sign-in Security](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security#pluggableperipheral-biometric-sensors).
+          Yes, you can use an external Windows Hello compatible camera if a device has an internal Windows Hello camera. When both cameras are present, the external camera is used for face authentication. For more information, see [IT tools to support Windows 10, version 21H1](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/it-tools-to-support-windows-10-version-21h1/ba-p/2365103). If ESS is enabled, see [Windows Hello Enhanced Sign-in Security](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security).
       - question: Can I use an external Windows Hello compatible camera or other Windows Hello compatible accessory when my laptop lid is closed or docked?
         answer: |
           Some laptops and tablets with keyboards that close may not use an external Windows Hello compatible camera or other Windows Hello compatible accessory when the computer is docked with the lid closed. The issue has been addressed in Windows 11, version 22H2.
@@ -216,7 +225,7 @@ sections:
           Windows Hello for Business credentials need access to device state, which is not available in private browser mode or incognito mode. Hence it can't be used in private browser or Incognito mode.
       - question: Can I use both a PIN and biometrics to unlock my device?
         answer: |
-          You can use *multi-factor unlock* to require users to provide an extra factor to unlock their device. Authentication remains two-factor, but another factor is required before Windows allows the user to reach the desktop. To learn more, see [Multifactor Unlock](feature-multifactor-unlock.md).
+          You can use *multifactor unlock* to require users to provide an extra factor to unlock their device. Authentication remains two-factor, but another factor is required before Windows allows the user to reach the desktop. To learn more, see [Multifactor Unlock](feature-multifactor-unlock.md).
 
   - name: Cloud Kerberos trust
     questions:

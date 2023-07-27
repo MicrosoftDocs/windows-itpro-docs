@@ -1,5 +1,5 @@
 ---
-title: Audit system events (Windows 10)
+title: Audit system events 
 description: Determines whether to audit when a user restarts or shuts down the computer or when an event occurs that affects either the system security or the security log.
 ms.assetid: BF27588C-2AA7-4365-A4BF-3BB377916447
 ms.reviewer: 
@@ -8,7 +8,7 @@ ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro

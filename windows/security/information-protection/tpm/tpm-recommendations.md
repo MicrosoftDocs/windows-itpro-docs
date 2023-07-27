@@ -1,5 +1,5 @@
 ---
-title: TPM recommendations (Windows)
+title: TPM recommendations 
 description: This topic provides recommendations for Trusted Platform Module (TPM) technology for Windows.
 ms.prod: windows-client
 author: paolomatarazzo
@@ -52,7 +52,7 @@ TPM 2.0 products and systems have important security advantages over TPM 1.2, in
 
   - For the list of algorithms that Windows supports in the platform cryptographic storage provider, see [CNG Cryptographic Algorithm Providers](/windows/win32/seccertenroll/cng-cryptographic-algorithm-providers).
 
-  - TPM 2.0 achieved ISO standardization ([ISO/IEC 11889:2015](https://www.microsoft.com/security/blog/2015/06/29/governments-recognize-the-importance-of-tpm-2-0-through-iso-adoption).
+  - TPM 2.0 achieved ISO standardization ([ISO/IEC 11889:2015](https://www.microsoft.com/security/blog/2015/06/29/governments-recognize-the-importance-of-tpm-2-0-through-iso-adoption)).
 
   - Use of TPM 2.0 may help eliminate the need for OEMs to make exception to standard configurations for certain countries and regions.
 
@@ -106,7 +106,7 @@ The following table defines which Windows features require TPM support.
  Windows Features | TPM Required | Supports TPM 1.2  | Supports TPM 2.0  | Details  |
 -|-|-|-|-
  Measured Boot | Yes | Yes | Yes | Measured Boot requires TPM 1.2 or 2.0 and UEFI Secure Boot. TPM 2.0 is recommended since it supports newer cryptographic algorithms. TPM 1.2 only supports the SHA-1 algorithm which is being deprecated.  
- BitLocker | No | Yes | Yes | TPM 1.2 or 2.0 are supported but TPM 2.0 is recommended. [Automatic Device Encryption requires Modern Standby](../bitlocker/bitlocker-device-encryption-overview-windows-10.md#bitlocker-device-encryption) including TPM 2.0 support
+ BitLocker | No | Yes | Yes | TPM 1.2 or 2.0 are supported but TPM 2.0 is recommended. [Automatic Device Encryption requires Modern Standby](../../operating-system-security/data-protection/bitlocker/bitlocker-device-encryption-overview-windows-10.md#bitlocker-device-encryption) including TPM 2.0 support
  Device Encryption | Yes | N/A | Yes | Device Encryption requires Modern Standby/Connected Standby certification, which requires TPM 2.0.
  Windows Defender Application Control (Device Guard) | No | Yes | Yes
  Windows Defender System Guard (DRTM) | Yes | No | Yes | TPM 2.0 and UEFI firmware is required.

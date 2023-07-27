@@ -1,5 +1,5 @@
 ---
-title: Audit Process Termination (Windows 10)
+title: Audit Process Termination 
 description: The Advanced Security Audit policy setting, Audit Process Termination, determines if audit events are generated when an attempt is made to end a process.
 ms.assetid: 65d88e53-14aa-48a4-812b-557cebbf9e50
 ms.reviewer: 
@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/06/2021
 ms.technology: itpro-security

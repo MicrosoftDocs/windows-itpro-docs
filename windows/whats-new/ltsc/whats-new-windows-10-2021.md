@@ -9,14 +9,13 @@ ms.localizationpriority: high
 ms.topic: conceptual
 ms.technology: itpro-fundamentals
 ms.date: 04/05/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/" target="_blank">Windows 10 Enterprise LTSC 2021</a>
 ---
 
 # What's new in Windows 10 Enterprise LTSC 2021
 
-**Applies to**
--   Windows 10 Enterprise LTSC 2021
-
-This article lists new and updated features and content that is of interest to IT Pros for Windows 10 Enterprise LTSC 2021, compared to Windows 10 Enterprise LTSC 2019 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](index.md).
+This article lists new and updated features and content that is of interest to IT Pros for Windows 10 Enterprise LTSC 2021, compared to Windows 10 Enterprise LTSC 2019 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](overview.md).
 
 > [!NOTE]
 > Features in Windows 10 Enterprise LTSC 2021 are equivalent to Windows 10, version 21H2.<br>
@@ -244,4 +243,4 @@ WPA3 H2E standards are supported for enhanced Wi-Fi security.
 
 ## See Also
 
-[Windows 10 Enterprise LTSC](index.md): A short description of the LTSC servicing channel with links to information about each release.
+[Windows 10 Enterprise LTSC](overview.md): A short description of the LTSC servicing channel with links to information about each release.

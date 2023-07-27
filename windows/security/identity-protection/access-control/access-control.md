@@ -2,7 +2,7 @@
 ms.date: 11/22/2022
 title: Access Control Overview
 description: Description of the access controls in Windows, which is the process of authorizing users, groups, and computers to access objects on the network or computer.
-ms.topic: article
+ms.topic: overview
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
@@ -38,6 +38,8 @@ This content set contains:
   - [Microsoft Accounts](/windows-server/identity/ad-ds/manage/understand-microsoft-accounts)
   - [Service Accounts](/windows-server/identity/ad-ds/manage/understand-service-accounts)
   - [Active Directory Security Groups](/windows-server/identity/ad-ds/manage/understand-security-groups)
+
+[!INCLUDE [access-control-aclsscals](../../../../includes/licensing/access-control-aclsscals.md)]
 
 ## Practical applications
 

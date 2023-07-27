@@ -1,7 +1,7 @@
 ---
 title: Roles and responsibilities
 description: This article describes the roles and responsibilities provided by Windows Autopatch and what the customer must do
-ms.date: 03/08/2023
+ms.date: 07/25/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -10,6 +10,9 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: hathind
+ms.collection:
+  - highpri
+  - tier1
 ---
 
 # Roles and responsibilities
@@ -44,8 +47,9 @@ This article outlines your responsibilities and Windows Autopatch's responsibili
 | Remove your devices from existing unsupported [Windows update](../references/windows-autopatch-windows-update-unsupported-policies.md) and [Microsoft 365](../references/windows-autopatch-microsoft-365-policies.md) policies | :heavy_check_mark: | :x: |
 | [Turn on or off expedited Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md#expedited-releases) | :heavy_check_mark: | :x: |
 | [Allow or block Microsoft 365 Apps for enterprise updates](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#allow-or-block-microsoft-365-app-updates) | :heavy_check_mark: | :x: |
+| [Manage driver and firmware updates](../operate/windows-autopatch-manage-driver-and-firmware-updates.md) | :heavy_check_mark: | :x: |
 | [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) |  :heavy_check_mark: | :x: |
-| [Register devices/add devices to the Windows Autopatch Device Registration group](../deploy/windows-autopatch-register-devices.md#steps-to-register-devices-using-the-classic-method) | :heavy_check_mark: | :x: |
+| [Register devices/add devices to the Windows Autopatch Device Registration group](../deploy/windows-autopatch-register-devices.md) | :heavy_check_mark: | :x: |
 | [Run the pre-registration device readiness checks](../deploy/windows-autopatch-register-devices.md#about-the-registered-not-ready-and-not-registered-tabs) | :x: | :heavy_check_mark: |
 | [Automatically assign devices to First, Fast & Broad deployment rings at device registration](../operate/windows-autopatch-update-management.md#deployment-ring-calculation-logic) | :x: | :heavy_check_mark: |
 | [Manually override device assignments to First, Fast & Broad deployment rings](../operate/windows-autopatch-update-management.md#moving-devices-in-between-deployment-rings) | :heavy_check_mark: | :x: |
@@ -66,6 +70,7 @@ This article outlines your responsibilities and Windows Autopatch's responsibili
 | [Maintain the Test deployment ring membership](../operate/windows-autopatch-update-management.md#deployment-ring-calculation-logic) | :heavy_check_mark: | :x: |
 | Monitor [Windows update signals](../operate/windows-autopatch-windows-quality-update-signals.md) for safe update release | :x: | :heavy_check_mark: |
 | Test specific [business update scenarios](../operate/windows-autopatch-windows-quality-update-signals.md) | :heavy_check_mark: | :x: |
+| [Manage driver and firmware updates](../operate/windows-autopatch-manage-driver-and-firmware-updates.md) | :heavy_check_mark: | :x: |
 | [Customize Windows Update settings](../operate/windows-autopatch-windows-update.md) |  :heavy_check_mark: | :x: |
 | [Define and implement service default release schedule](../operate/windows-autopatch-windows-quality-update-overview.md) | :x: | :heavy_check_mark: |
 | Communicate the update [release schedule](../operate/windows-autopatch-windows-quality-update-communications.md) | :x: | :heavy_check_mark: |

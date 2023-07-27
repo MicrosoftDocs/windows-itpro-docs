@@ -1,7 +1,7 @@
 ---
 title: Device alerts
 description: Provide notifications and information about the necessary steps to keep your devices up to date. 
-ms.date: 05/01/2023
+ms.date: 07/25/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -10,12 +10,12 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: adnich
+ms.collection:
+  - highpri
+  - tier1
 ---
 
-# Device alerts (public preview)
-
-> [!IMPORTANT]
-> Windows Autopatch groups is in **public preview**. This feature is being actively developed and might not be complete. You can test and use these features in production environments and provide feedback.<p>The Windows Autopatch group experience only applies if you’ve opted-in to use Windows Autopatch groups.</p><br>**To opt-in to use Windows Autopatch groups:**<ol><li>Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and select **Devices** from the left navigation menu.</li><li>Under **Windows Autopatch**, select **Release Management**, then select **Autopatch groups (preview)**.</li><li>Review the **[Microsoft Privacy Statement](../overview/windows-autopatch-privacy.md)** and the **[Autopatch groups Public Preview Addendum](../references/windows-autopatch-groups-public-preview-addendum.md)**. If you agree, select the **I have reviewed and agree to the Autopatch groups Public Preview Addendum** checkbox. Then, select **Use preview** to test out Windows Autopatch groups and its bundled feature set. If the **Use preview** option is greyed out, ensure you meet all the [Autopatch group prerequisites](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#autopatch-groups-prerequisites).</li></ol>
+# Device alerts
 
 Windows Autopatch and Windows Updates use Device alerts to provide notifications and information about the necessary steps to keep your devices up to date. In Windows Autopatch reporting, every device is provided with a section for alerts. If no alerts are listed, no action is needed. Navigate to **Reports** > **Quality update status** or **Feature update status** > **Device** > select the **Device alerts** column. The provided information will help you understand:
 

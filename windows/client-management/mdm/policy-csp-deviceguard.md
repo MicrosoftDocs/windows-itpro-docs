@@ -4,7 +4,7 @@ description: Learn more about the DeviceGuard Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- ConfigureSystemGuardLaunch-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- ConfigureSystemGuardLaunch-Applicability-End -->
 
 <!-- ConfigureSystemGuardLaunch-OmaUri-Begin -->
@@ -42,7 +42,7 @@ Secure Launch configuration: 0 - Unmanaged, configurable by Administrative user,
 
 <!-- ConfigureSystemGuardLaunch-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-For more information about System Guard, see [Introducing Windows Defender System Guard runtime attestation](https://www.microsoft.com/security/blog/2018/04/19/introducing-windows-defender-system-guard-runtime-attestation) and [How a hardware-based root of trust helps protect Windows 10](/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows).
+For more information about System Guard, see [Introducing Windows Defender System Guard runtime attestation](https://www.microsoft.com/security/blog/2018/04/19/introducing-windows-defender-system-guard-runtime-attestation) and [How a hardware-based root of trust helps protect Windows 10](/windows/security/hardware-security/how-hardware-based-root-of-trust-helps-protect-windows).
 <!-- ConfigureSystemGuardLaunch-Editable-End -->
 
 <!-- ConfigureSystemGuardLaunch-DFProperties-Begin -->
@@ -50,7 +50,7 @@ For more information about System Guard, see [Introducing Windows Defender Syste
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- ConfigureSystemGuardLaunch-DFProperties-End -->
@@ -91,7 +91,7 @@ For more information about System Guard, see [Introducing Windows Defender Syste
 <!-- EnableVirtualizationBasedSecurity-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- EnableVirtualizationBasedSecurity-Applicability-End -->
 
 <!-- EnableVirtualizationBasedSecurity-OmaUri-Begin -->
@@ -114,7 +114,7 @@ Turns On Virtualization Based Security(VBS)
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- EnableVirtualizationBasedSecurity-DFProperties-End -->
@@ -154,7 +154,7 @@ Turns On Virtualization Based Security(VBS)
 <!-- LsaCfgFlags-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- LsaCfgFlags-Applicability-End -->
 
 <!-- LsaCfgFlags-OmaUri-Begin -->
@@ -177,7 +177,7 @@ Credential Guard Configuration: 0 - Turns off CredentialGuard remotely if config
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- LsaCfgFlags-DFProperties-End -->
@@ -218,7 +218,7 @@ Credential Guard Configuration: 0 - Turns off CredentialGuard remotely if config
 <!-- RequirePlatformSecurityFeatures-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :x: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- RequirePlatformSecurityFeatures-Applicability-End -->
 
 <!-- RequirePlatformSecurityFeatures-OmaUri-Begin -->
@@ -242,7 +242,7 @@ This setting lets users turn on Credential Guard with virtualization-based secur
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- RequirePlatformSecurityFeatures-DFProperties-End -->

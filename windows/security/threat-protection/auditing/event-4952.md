@@ -1,11 +1,11 @@
 ---
-title: 4952(F) Parts of a rule have been ignored because its minor version number was not recognized by Windows Firewall. The other parts of the rule will be enforced. (Windows 10)
+title: 4952(F) Parts of a rule have been ignored because its minor version number was not recognized by Windows Firewall. The other parts of the rule will be enforced. 
 description: Security event 4952(F) Parts of a rule have been ignored because its minor version number was not recognized by Windows Firewall.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 

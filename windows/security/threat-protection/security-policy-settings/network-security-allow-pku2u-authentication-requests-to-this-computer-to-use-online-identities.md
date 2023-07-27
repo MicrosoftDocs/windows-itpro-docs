@@ -1,5 +1,5 @@
 ---
-title: Network security Allow PKU2U authentication requests to this computer to use online identities (Windows 10)
+title: Network security Allow PKU2U authentication requests to this computer to use online identities 
 description: Best practices for the Network Security Allow PKU2U authentication requests to this computer to use online identities security setting.
 ms.assetid: e04a854e-d94d-4306-9fb3-56e9bd7bb926
 ms.reviewer: 

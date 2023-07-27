@@ -2,10 +2,9 @@
 title: Deploy certificates for remote desktop sign-in
 description: Learn how to deploy certificates to cloud Kerberos trust and key trust users, to enable remote desktop sign-in with supplied credentials.
 ms.collection: 
-  - ContentEngagementFY23
   - tier1
-ms.topic: article
-ms.date: 03/15/2023
+ms.topic: how-to
+ms.date: 07/25/2023
 ---
 
 # Deploy certificates for remote desktop (RDP) sign-in
@@ -88,8 +87,11 @@ Follow these steps to create a certificate template:
 
 ## Deploy certificates via Intune
 
-> [!NOTE]
+> [!CAUTION]
 > This process is applicable to both *Azure AD joined* and *hybrid Azure AD joined* devices that are managed via Intune.
+>
+> If you deploy certificates via Intune and configure Windows Hello for Business via group policy, the devices will fail to obtain a certificate, logging the error code `0x82ab0011` in the `DeviceManagement-Enterprise-Diagnostic-Provider` log.\
+> To avoid the error, configure Windows Hello for Business via Intune instead of group policy.
 
 Deploying a certificate to Azure AD joined or hybrid Azure AD joined devices may be achieved using the Simple Certificate Enrollment Protocol (SCEP) or PKCS (PFX) via Intune. For guidance deploying the required infrastructure, refer to:
 

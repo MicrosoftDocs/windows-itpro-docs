@@ -1,11 +1,11 @@
 ---
-title: 4937(S) A lingering object was removed from a replica. (Windows 10)
+title: 4937(S) A lingering object was removed from a replica. 
 description: Describes security event 4937(S) A lingering object was removed from a replica.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 

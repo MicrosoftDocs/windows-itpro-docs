@@ -1,5 +1,5 @@
 ---
-title: Recommended URLs for Windows Information Protection (Windows 10)
+title: Recommended URLs for Windows Information Protection 
 description: Recommended URLs to add to your Enterprise Cloud Resources and Neutral Resources network settings, when used with Windows Information Protection (WIP).
 ms.prod: windows-client
 ms.localizationpriority: medium
@@ -28,7 +28,7 @@ This table includes the recommended URLs to add to your Enterprise Cloud Resourc
 |If your organization uses... |Add these entries to your Enterprise Cloud Resources network setting<br>(Replace "contoso" with your domain name(s)|
 |-----------------------------|---------------------------------------------------------------------|
 |Sharepoint Online |- `contoso.sharepoint.com`<br/>- `contoso-my.sharepoint.com`<br/>- `contoso-files.sharepoint.com` |
-|Yammer |- `www.yammer.com`<br/>- `yammer.com`<br/>- `persona.yammer.com` |
+|Viva Engage |- `www.yammer.com`<br/>- `yammer.com`<br/>- `persona.yammer.com` |
 |Outlook Web Access (OWA) |- `outlook.office.com`<br/>- `outlook.office365.com`<br/>- `attachments.office.net` |
 |Microsoft Dynamics |`contoso.crm.dynamics.com` |
 |Visual Studio Online |`contoso.visualstudio.com` |

@@ -4,7 +4,7 @@ metadata:
   description: Answers to frequently asked questions about Windows Autopatch.
   ms.prod: windows-client
   ms.topic: faq
-  ms.date: 05/04/2023
+  ms.date: 07/19/2023
   audience: itpro
   ms.localizationpriority: medium
   manager: dougeby
@@ -31,10 +31,10 @@ sections:
           Autopatch isn't available for 'A' or 'F' series licensing.
       - question: Will Windows Autopatch support local domain join Windows 10?
         answer: | 
-          Windows Autopatch doesn't support local (on-premise) domain join. Windows Autopatch supports [Hybrid AD join](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or pure [Azure AD join](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
+          Windows Autopatch doesn't support local (on-premises) domain join. Windows Autopatch supports [Hybrid AD join](/azure/active-directory/devices/concept-azure-ad-join-hybrid) or pure [Azure AD join](/azure/active-directory/devices/concept-azure-ad-join-hybrid).
       - question: Will Windows Autopatch be available for state and local government customers?
         answer: |
-          Windows Autopatch is available for all Windows E3 customers using Azure commercial cloud. However, Autopatch isn't currently supported for government cloud (GCC) customers.
+          Windows Autopatch is available for all Windows E3 customers using Azure commercial cloud. However, Autopatch isn't currently supported for government cloud (GCC) customers. Although Windows 365 Enterprise is in the Azure Commercial cloud, when Windows 365 Enterprise is used with a GCC customer tenant, Autopatch is not suppported.
       - question: What if I enrolled into Windows Autopatch using the promo code? Will I still have access to the service?
         answer: |
           Yes. For those who used the promo code to access Windows Autopatch during public preview, you'll continue to have access to Windows Autopatch even when the promo code expires. There's no additional action you have to take to continue using Windows Autopatch.

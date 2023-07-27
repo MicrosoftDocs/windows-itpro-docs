@@ -1,7 +1,7 @@
 ---
 title: Windows Autopatch groups overview
 description: This article explains what Autopatch groups are
-ms.date: 05/03/2023
+ms.date: 07/20/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -10,14 +10,14 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: andredm7
+ms.collection:
+  - highpri
+  - tier1
 ---
 
-# Windows Autopatch groups overview (public preview)
+# Windows Autopatch groups overview
 
-> [!IMPORTANT]
-> Windows Autopatch groups is in **public preview**. This feature is being actively developed and might not be complete. You can test and use these features in production environments and provide feedback.<p>The Windows Autopatch group experience only applies if you’ve opted-in to use Windows Autopatch groups.</p><br>**To opt-in to use Windows Autopatch groups:**<ol><li>Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and select **Devices** from the left navigation menu.</li><li>Under **Windows Autopatch**, select **Release Management**, then select **Autopatch groups (preview)**.</li><li>Review the **[Microsoft Privacy Statement](../overview/windows-autopatch-privacy.md)** and the **[Autopatch groups Public Preview Addendum](../references/windows-autopatch-groups-public-preview-addendum.md)**. If you agree, select the **I have reviewed and agree to the Autopatch groups Public Preview Addendum** checkbox. Then, select **Use preview** to test out Windows Autopatch groups and its bundled feature set. If the **Use preview** option is greyed out, ensure you meet all the [Autopatch group prerequisites](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#autopatch-groups-prerequisites).</li></ol>
-
-As organizations move to a managed-service model where Microsoft manages update processes on their behalf, they’re challenged with having the right representation of their organizational structures followed by their own deployment cadence. Windows Autopatch groups helps organizations manage updates in a way that makes sense for their businesses with no extra cost or unplanned disruptions.
+As organizations move to a managed-service model where Microsoft manages update processes on their behalf, they’re challenged with having the right representation of their organizational structures followed by their own deployment cadence. Windows Autopatch groups help organizations manage updates in a way that makes sense for their businesses with no extra cost or unplanned disruptions.
 
 ## What are Windows Autopatch groups?
 
@@ -64,7 +64,7 @@ The Default Autopatch group uses Windows Autopatch’s default update management
 The Default Autopatch group is intended to serve organizations that are looking to:
 
 - Enroll into the service
-- Align to Windows Autopatch’s default update management process without requiring additional customizations.
+- Align to Windows Autopatch’s default update management process without requiring more customizations.
 
 The Default Autopatch group **can’t** be deleted or renamed. However, you can customize its deployment ring composition to add and/or remove deployment rings, and you can also customize the update deployment cadences for each deployment ring within it.
 
@@ -160,7 +160,7 @@ Autopatch groups creates two different layers. Each layer contains its own deplo
 
 The service-based deployment ring set is exclusively used to keep Windows Autopatch updated with both service and device-level configuration policies, apps and APIs needed for core functions of the service.
 
-The following are the Azure AD assigned groups that represent the service-based deployment rings. These groups cannot be deleted or renamed:
+The following are the Azure AD assigned groups that represent the service-based deployment rings. These groups can't be deleted or renamed:
 
 - Modern Workplace Devices-Windows Autopatch-Test
 - Modern Workplace Devices-Windows Autopatch-First
@@ -174,7 +174,7 @@ The following are the Azure AD assigned groups that represent the service-based 
 
 The software-based deployment ring set is exclusively used with software update management policies, such as the Windows update ring and feature update policies, in the Default Windows Autopatch group.
 
-The following are the Azure AD assigned groups that represent the software updates-based deployment rings. These groups cannot be deleted or renamed:
+The following are the Azure AD assigned groups that represent the software updates-based deployment rings. These groups can't be deleted or renamed:
 
 - Windows Autopatch - Test
 - Windows Autopatch – Ring1
@@ -203,7 +203,7 @@ The following are three common uses for using Autopatch groups.
 
 | Scenario | Solution |
 | ----- | ----- |
-| You’re working as the IT admin at Contoso Ltd. And manage several Microsoft and non-Microsoft cloud services. You don’t have extra time to spend setting up and managing several Autopatch groups.<p>Your organization currently operates its update management by using five deployment rings, but there’s an opportunity to have flexible deployment cadences if it’s pre-communicated to your end-users.</p> | If you don’t have thousands of devices to manage, use the Default Autopatch group for your organization. You can edit the Default Autopatch group to include additional deployment rings and/or slightly modify some of its default deployment cadences.<p>The Default Autopatch group is pre-configured and doesn’t require extra configurations when registering devices with the Windows Autopatch service.</p><p>The following is a visual representation of a gradual rollout for the Default Autopatch group pre-configured and fully managed by the Windows Autopatch service.</p> |
+| You’re working as the IT admin at Contoso Ltd. And manage several Microsoft and non-Microsoft cloud services. You don’t have extra time to spend setting up and managing several Autopatch groups.<p>Your organization currently operates its update management by using five deployment rings, but there’s an opportunity to have flexible deployment cadences if it’s precommunicated to your end-users.</p> | If you don’t have thousands of devices to manage, use the Default Autopatch group for your organization. You can edit the Default Autopatch group to include additional deployment rings and/or slightly modify some of its default deployment cadences.<p>The Default Autopatch group is preconfigured and doesn’t require extra configurations when registering devices with the Windows Autopatch service.</p><p>The following is a visual representation of a gradual rollout for the Default Autopatch group preconfigured and fully managed by the Windows Autopatch service.</p> |
 
 :::image type="content" source="../media/autopatch-groups-default-autopatch-group.png" alt-text="Default Autopatch group" lightbox="../media/autopatch-groups-default-autopatch-group.png":::
 
@@ -211,7 +211,7 @@ The following are three common uses for using Autopatch groups.
 
 | Scenario | Solution |
 | ----- | ----- |
-| You’re working as the IT admin at Contoso Ltd. Your organization needs to plan a gradual rollout of software updates within specific critical business units or departments to help mitigate the risk of end-user disruption. | You can create a Custom Autopatch group for each of your business units, for example, the finance department and breakdown the deployment ring composition per the different user personas or based on how critical certain user groups can be for the department and subsequently for the business.<p>The following is a visual representation of a gradual rollout for Contoso’s Finance department.</p> |
+| You’re working as the IT admin at Contoso Ltd. Your organization needs to plan a gradual rollout of software updates within specific critical business units or departments to help mitigate the risk of end-user disruption. | You can create a Custom Autopatch group for each of your business units. For example, you can create a Custom Autopatch group for the finance department and breakdown the deployment ring composition per the different user personas or based on how critical certain user groups can be for the department and then for the business.<p>The following is a visual representation of a gradual rollout for Contoso’s Finance department.</p> |
 
 :::image type="content" source="../media/autopatch-groups-finance-department-example.png" alt-text="Finance department example" lightbox="../media/autopatch-groups-finance-department-example.png":::
 
@@ -240,12 +240,9 @@ Autopatch groups works with the following software update workloads:
 - [Windows quality updates](../operate/windows-autopatch-groups-windows-quality-update-overview.md)
 - [Windows feature updates](../operate/windows-autopatch-groups-windows-feature-update-overview.md)
 
-> [!IMPORTANT]
-> [Microsoft Edge](../operate/windows-autopatch-edge.md) and [Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md) are supported through the (classic) service-based deployment rings. Other software update workloads aren’t currently supported.
-
 ### Maximum number of Autopatch groups
 
-Windows Autopatch will support up to 50 Autopatch groups in your tenant. You can create up to 49 [Custom Autopatch groups](#about-custom-autopatch-groups) in addition to the [Default Autopatch group](#about-the-default-autopatch-group). Each Autopatch group supports up to 15 deployment rings.
+Windows Autopatch supports up to 50 Autopatch groups in your tenant. You can create up to 49 [Custom Autopatch groups](#about-custom-autopatch-groups) in addition to the [Default Autopatch group](#about-the-default-autopatch-group). Each Autopatch group supports up to 15 deployment rings.
 
 > [!TIP]
 > If you reach the maximum number of Autopatch groups supported (50), and try to create more Custom Autopatch groups, the "**Create**" option in the Autopatch groups blade will be greyed out.

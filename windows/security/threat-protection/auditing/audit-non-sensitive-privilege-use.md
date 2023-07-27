@@ -1,5 +1,5 @@
 ---
-title: Audit Non-Sensitive Privilege Use (Windows 10)
+title: Audit Non-Sensitive Privilege Use 
 description: This article for the IT professional describes the Advanced Security Audit policy setting, Audit Non-Sensitive Privilege Use, which determines whether the operating system generates audit events when non-sensitive privileges (user rights) are used.
 ms.assetid: 8fd74783-1059-443e-aa86-566d78606627
 ms.reviewer: 
@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/06/2021
 ms.technology: itpro-security

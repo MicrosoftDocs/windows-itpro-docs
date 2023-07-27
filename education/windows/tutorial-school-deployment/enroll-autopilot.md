@@ -1,7 +1,7 @@
 ---
 title: Enrollment in Intune with Windows Autopilot
 description: Learn how to join Azure AD and enroll in Intune using Windows Autopilot.
-ms.date: 08/31/2022
+ms.date: 03/08/2023
 ms.topic: tutorial
 ---
 
@@ -97,7 +97,7 @@ To deploy the ESP to devices, you need to create an ESP profile in Microsoft Int
 For more information, see [Set up the Enrollment Status Page][MEM-3].
 
 > [!CAUTION]
-> When targeting an ESP to **Windows 11 SE** devices, only applications included in the [<u>approved app list</u>][EDU-1] should part of the ESP configuration.
+> The Enrollment Status Page (ESP) is compatible with Windows 11 SE. However, due to the E Mode policy, devices may not complete the enrollment. For more information, see [Enrollment Status Page][EDU-3].
 
 ### Autopilot end-user experience
 
@@ -144,5 +144,6 @@ With the devices joined to Azure AD tenant and managed by Intune, you can use In
 
 [EDU-1]: /education/windows/windows-11-se-overview
 [EDU-2]: /intune-education/windows-11-se-overview#windows-autopilot
+[EDU-3]: ../tutorial-deploy-apps-winse/considerations.md#enrollment-status-page
 
 [SURF-1]: /surface/surface-autopilot-registration-support

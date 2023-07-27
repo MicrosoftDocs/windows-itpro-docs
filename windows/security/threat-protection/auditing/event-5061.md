@@ -1,11 +1,11 @@
 ---
-title: 5061(S, F) Cryptographic operation. (Windows 10)
+title: 5061(S, F) Cryptographic operation. 
 description: Describes security event 5061(S, F) Cryptographic operation. This event is generated when a cryptographic operation is performed using a Key Storage Provider.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 

@@ -1,5 +1,5 @@
 ---
-title: Audit Filtering Platform Connection (Windows 10)
+title: Audit Filtering Platform Connection 
 description: The policy setting, Audit Filtering Platform Connection, decides if audit events are generated when connections are allow/blocked by Windows Filtering Platform.
 ms.assetid: d72936e9-ff01-4d18-b864-a4958815df59
 ms.reviewer: 
@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/06/2021
 ms.technology: itpro-security

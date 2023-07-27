@@ -1,11 +1,11 @@
 ---
-title: 5890(S) An object was added to the COM+ Catalog. (Windows 10)
+title: 5890(S) An object was added to the COM+ Catalog. 
 description: Describes security event 5890(S) An object was added to the COM+ Catalog.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 

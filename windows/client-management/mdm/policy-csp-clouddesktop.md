@@ -4,7 +4,7 @@ description: Learn more about the CloudDesktop Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 03/23/2023
+ms.date: 07/25/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -16,8 +16,7 @@ ms.topic: reference
 <!-- CloudDesktop-Begin -->
 # Policy CSP - CloudDesktop
 
-> [!IMPORTANT]
-> This CSP contains preview policies that are under development and only applicable for [Windows Insider Preview builds](/windows-insider/). These policies are subject to change and may have dependencies on other features or services in preview.
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- CloudDesktop-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -29,7 +28,7 @@ ms.topic: reference
 <!-- BootToCloudMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :x: Windows SE | :heavy_check_mark: Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
 <!-- BootToCloudMode-Applicability-End -->
 
 <!-- BootToCloudMode-OmaUri-Begin -->
@@ -40,7 +39,7 @@ ms.topic: reference
 
 <!-- BootToCloudMode-Description-Begin -->
 <!-- Description-Source-DDF -->
-This policy allows the user to configure the boot to cloud mode. Boot to Cloud mode enables users to seamlessly sign-in to a Cloud PC that is provisioned for them by an IT Admin. For using boot to cloud mode, users need to install and configure a Cloud Provider application (eg: Win365) on their PC and need to have a Cloud PC provisioned to them. For successful use of this policy, OverrideShellProgram policy needs to be configured as well. This policy supports the below options: 1. Not Configured: Machine will not trigger the Cloud PC connection automatically. 2. Enable Boot to Cloud Desktop: Users who have a Cloud PC provisioned will get connected seamlessly to the Cloud PC as they finish sign-in operation.
+This policy allows the user to configure the boot to cloud mode. Boot to Cloud mode enables users to seamlessly sign-in to a Cloud PC that's provisioned for them by an IT Admin. For using boot to cloud mode, users need to install and configure a Cloud Provider application (eg: Win365) on their PC and need to have a Cloud PC provisioned to them. For successful use of this policy, OverrideShellProgram policy needs to be configured as well. This policy supports the below options: 1. Not Configured: Machine won't trigger the Cloud PC connection automatically. 2. Enable Boot to Cloud Desktop: Users who have a Cloud PC provisioned will get connected seamlessly to the Cloud PC as they finish sign-in operation.
 <!-- BootToCloudMode-Description-End -->
 
 <!-- BootToCloudMode-Editable-Begin -->
@@ -52,7 +51,7 @@ This policy allows the user to configure the boot to cloud mode. Boot to Cloud m
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- BootToCloudMode-DFProperties-End -->
@@ -71,6 +70,69 @@ This policy allows the user to configure the boot to cloud mode. Boot to Cloud m
 <!-- BootToCloudMode-Examples-End -->
 
 <!-- BootToCloudMode-End -->
+
+<!-- SetMaxConnectionTimeout-Begin -->
+## SetMaxConnectionTimeout
+
+<!-- SetMaxConnectionTimeout-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows Insider Preview [10.0.22631.2050] |
+<!-- SetMaxConnectionTimeout-Applicability-End -->
+
+<!-- SetMaxConnectionTimeout-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/CloudDesktop/SetMaxConnectionTimeout
+```
+<!-- SetMaxConnectionTimeout-OmaUri-End -->
+
+<!-- SetMaxConnectionTimeout-Description-Begin -->
+<!-- Description-Source-DDF -->
+IT admins can use this policy to set the max connection timeout. The connection timeout decides the max wait time for connecting to Cloud PC after sign in. The default max value is 5 min. For best user experience, it's recommended to continue with the default timeout of 5 min. Update only if it takes more than 5 min to connect to the Cloud PC in your organization.
+<!-- SetMaxConnectionTimeout-Description-End -->
+
+<!-- SetMaxConnectionTimeout-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- SetMaxConnectionTimeout-Editable-End -->
+
+<!-- SetMaxConnectionTimeout-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 5 |
+<!-- SetMaxConnectionTimeout-DFProperties-End -->
+
+<!-- SetMaxConnectionTimeout-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 5 (Default) | 5 min. |
+| 6 | 6 min. |
+| 7 | 7 min. |
+| 8 | 8 min. |
+| 9 | 9 min. |
+| 10 | 10 min. |
+| 11 | 11 min. |
+| 12 | 12 min. |
+| 13 | 13 min. |
+| 14 | 14 min. |
+| 15 | 15 min. |
+| 16 | 16 min. |
+| 17 | 17 min. |
+| 18 | 18 min. |
+| 19 | 19 min. |
+| 20 | 20 min. |
+<!-- SetMaxConnectionTimeout-AllowedValues-End -->
+
+<!-- SetMaxConnectionTimeout-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- SetMaxConnectionTimeout-Examples-End -->
+
+<!-- SetMaxConnectionTimeout-End -->
 
 <!-- CloudDesktop-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->

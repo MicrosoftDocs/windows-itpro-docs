@@ -1,5 +1,5 @@
 ---
-title: Interactive logon Number of previous logons to cache (in case domain controller is not available) (Windows 10)
+title: Interactive logon Number of previous logons to cache (in case domain controller is not available) 
 description: Best practices and more for the security policy setting, Interactive logon Number of previous logons to cache (in case domain controller is not available).
 ms.assetid: 660e925e-cc3e-4098-a41e-eb8db8062d8d
 ms.reviewer: 
@@ -52,7 +52,7 @@ encrypting the information and keeping the cached credentials in the system's re
 
 ### Best practices
 
-The [Windows security baselines](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines) don't recommend configuring this setting. 
+The [Windows security baselines](../../operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines.md) don't recommend configuring this setting. 
 
 ### Location
 

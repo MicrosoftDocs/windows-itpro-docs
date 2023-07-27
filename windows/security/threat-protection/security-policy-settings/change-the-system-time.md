@@ -1,5 +1,5 @@
 ---
-title: Change the system time - security policy setting (Windows 10)
+title: Change the system time - security policy setting 
 description: Describes the best practices, location, values, policy management, and security considerations for the Change the system time security policy setting.
 ms.assetid: f2f6637d-acbc-4352-8ca3-ec563f918e65
 ms.reviewer: 

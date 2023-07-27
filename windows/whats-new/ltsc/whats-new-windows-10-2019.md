@@ -9,14 +9,13 @@ ms.localizationpriority: medium
 ms.topic: conceptual
 ms.technology: itpro-fundamentals
 ms.date: 04/05/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/" target="_blank">Windows 10 Enterprise LTSC 2019</a>
 ---
 
 # What's new in Windows 10 Enterprise LTSC 2019
 
-**Applies to**
--   Windows 10 Enterprise LTSC 2019
-
-This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2019, compared to Windows 10 Enterprise LTSC 2016 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](index.md).
+This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2019, compared to Windows 10 Enterprise LTSC 2016 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](overview.md).
 
 >[!NOTE]
 >Features in Windows 10 Enterprise LTSC 2019 are equivalent to Windows 10, version 1809.
@@ -457,7 +456,7 @@ Windows 10 Enterprise LTSC 2019 adds many new [configuration service providers (
 
 Some of the other new CSPs are:
 
-- The [DynamicManagement CSP](/windows/client-management/mdm/dynamicmanagement-csp) allows you to manage devices differently depending on location, network, or time. For example, managed devices can have cameras disabled when at a work location, the cellular service can be disabled when outside the country to avoid roaming charges, or the wireless network can be disabled when the device isn't within the corporate building or campus. Once configured, these settings will be enforced even if the device can't reach the management server when the location or network changes. The dynamic management CSP enables configuration of policies that change how the device is managed in addition to setting the conditions on which the change occurs.
+- The [DynamicManagement CSP](/windows/client-management/mdm/dynamicmanagement-csp) allows you to manage devices differently depending on location, network, or time. For example, managed devices can have cameras disabled when at a work location, the cellular service can be disabled when outside the country/region to avoid roaming charges, or the wireless network can be disabled when the device isn't within the corporate building or campus. Once configured, these settings will be enforced even if the device can't reach the management server when the location or network changes. The dynamic management CSP enables configuration of policies that change how the device is managed in addition to setting the conditions on which the change occurs.
 
 - The [CleanPC CSP](/windows/client-management/mdm/cleanpc-csp) allows removal of user-installed and pre-installed applications, with the option to persist user data.
 
@@ -577,4 +576,4 @@ See the following example:
 
 ## See also
 
-[Windows 10 Enterprise LTSC](index.md): A short description of the LTSC servicing channel with links to information about each release.
+[Windows 10 Enterprise LTSC](overview.md): A short description of the LTSC servicing channel with links to information about each release.

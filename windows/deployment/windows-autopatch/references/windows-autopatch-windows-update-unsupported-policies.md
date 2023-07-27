@@ -10,13 +10,15 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: adnich
+ms.collection:
+  - tier2
 ---
 
 # Windows update policies
 
 ## Deployment rings for Windows 10 and later
 
-The following policies contain settings which apply to both Windows quality and feature updates. After onboarding there will be four of these policies in your tenant with the following naming convention:
+The following policies contain settings that apply to both Windows quality and feature updates. After onboarding there will be four of these policies in your tenant with the following naming convention:
 
 **Modern Workplace Update Policy [ring name] – [Windows Autopatch]**
 
@@ -44,7 +46,7 @@ The following policies contain settings which apply to both Windows quality and 
 | Deadline for Windows feature updates | 5 | 5 | 5 | 5 |
 | Deadline for Windows quality updates | 0 | 2 | 2 | 5 |
 | Grace period | 0 | 2 | 2 | 2 |
-| Auto-restart before deadline | Yes | Yes | Yes | Yes |
+| Auto restart before deadline | Yes | Yes | Yes | Yes |
 
 ### Windows 10 and later assignments
 
@@ -59,7 +61,7 @@ The service deploys policies using Microsoft Intune to control how Windows featu
 
 ### Windows feature updates for Windows 10 and later
 
-These policies control the minimum target version of Windows which a device is meant to accept. Throughout the rest of the article, you will see these policies referred to as DSS policies. After onboarding there will be four of these policies in your tenant with the following naming convention:
+These policies control the minimum target version of Windows that a device is meant to accept. Throughout the rest of the article, these policies are referred to as DSS policies. After onboarding, there will be four of these policies in your tenant with the following naming convention:
 
 **Modern Workplace DSS Policy [ring name]**
 
@@ -79,7 +81,7 @@ These policies control the minimum target version of Windows which a device is m
 
 #### Windows 11 testing
 
-To allow customers to test Windows 11 in their environment, there's a separate DSS policy which enables you to test Windows 11 before broadly adopting within your environment.
+To allow customers to test Windows 11 in their environment, there's a separate DSS policy that enables you to test Windows 11 before broadly adopting within your environment.
 
 ##### Windows 11 deployment setting
 
@@ -97,11 +99,11 @@ To allow customers to test Windows 11 in their environment, there's a separate D
 
 ## Conflicting and unsupported policies
 
-Deploying any of the following policies to a Windows Autopatch device will make that device ineligible for management since the device will prevent us from delivering the service as designed.
+Deploying any of the following policies to a Windows Autopatch device makes that device ineligible for management since the device prevents us from delivering the service as designed.
 
 ### Update policies
 
-Window Autopatch deploys mobile device management (MDM) policies to configure devices and requires a specific configuration. If any policies from the [Update Policy CSP](/windows/client-management/mdm/policy-csp-update) are deployed to devices that aren't on the permitted list, those devices will be excluded from management.
+Window Autopatch deploys mobile device management (MDM) policies to configure devices and requires a specific configuration. If any policies from the [Update Policy CSP](/windows/client-management/mdm/policy-csp-update) are deployed to devices that aren't on the permitted list, those devices are excluded from management.
 
 | Allowed policy | Policy CSP | Description |
 | ----- | ----- | ----- |
@@ -111,7 +113,7 @@ Window Autopatch deploys mobile device management (MDM) policies to configure de
 
 ### Group policy and other policy managers
 
-Group policy as well as other policy managers can take precedence over mobile device management (MDM) policies. For Windows quality updates, if any policies or configurations are detected which modify the following hives in the registry, the device could become ineligible for management:
+Group policy and other policy managers can take precedence over mobile device management (MDM) policies. For Windows quality updates, if any policies or configurations are detected which modify the following hives in the registry, the device could become ineligible for management:
 
 - `HKLM\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\PolicyState`
 - `HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`

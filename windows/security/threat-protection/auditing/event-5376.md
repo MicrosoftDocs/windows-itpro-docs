@@ -1,11 +1,11 @@
 ---
-title: 5376(S) Credential Manager credentials were backed up. (Windows 10)
+title: 5376(S) Credential Manager credentials were backed up. 
 description: Describes security event 5376(S) Credential Manager credentials were backed up.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 

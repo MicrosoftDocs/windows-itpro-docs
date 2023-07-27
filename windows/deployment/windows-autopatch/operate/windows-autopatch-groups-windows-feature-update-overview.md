@@ -1,7 +1,7 @@
 ---
-title: Windows feature updates overview with Autopatch groups
+title: Windows feature updates overview
 description: This article explains how Windows feature updates are managed with Autopatch groups
-ms.date: 05/03/2023
+ms.date: 07/25/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -10,12 +10,12 @@ author: tiaraquan
 ms.author: tiaraquan
 manager: dougeby
 ms.reviewer: andredm7
+ms.collection:
+  - highpri
+  - tier1
 ---
 
-# Windows feature updates overview: Autopatch groups experience (public preview) 
-
-> [!IMPORTANT]
-> Windows Autopatch groups is in **public preview**. This feature is being actively developed and might not be complete. You can test and use these features in production environments and provide feedback.<p>The Windows Autopatch group experience only applies if you’ve opted-in to use Windows Autopatch groups.</p><br>**To opt-in to use Windows Autopatch groups:**<ol><li>Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and select **Devices** from the left navigation menu.</li><li>Under **Windows Autopatch**, select **Release Management**, then select **Autopatch groups (preview)**.</li><li>Review the **[Microsoft Privacy Statement](../overview/windows-autopatch-privacy.md)** and the **[Autopatch groups Public Preview Addendum](../references/windows-autopatch-groups-public-preview-addendum.md)**. If you agree, select the **I have reviewed and agree to the Autopatch groups Public Preview Addendum** checkbox. Then, select **Use preview** to test out Windows Autopatch groups and its bundled feature set. If the **Use preview** option is greyed out, ensure you meet all the [Autopatch group prerequisites](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#autopatch-groups-prerequisites).</li></ol>
+# Windows feature updates overview
 
 Microsoft provides robust mobile device management (MDM) solutions such as Microsoft Intune, Windows Update for Business, Configuration Manager etc. However, the administration of these solutions to keep Windows devices up to date with the latest Windows feature releases rests on your organization’s IT admins. The Windows feature update process is considered one of the most expensive and time consuming tasks for IT since it requires incremental rollout and validation.
 
@@ -100,6 +100,9 @@ There are two scenarios that the Global release is used:
 | ----- | ----- |
 | Scenario #1 | You assign Azure AD groups to be used with the deployment ring (Last) or you add additional deployment rings when you customize the [Default Autopatch group](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#edit-the-default-or-a-custom-autopatch-group).<p>A global Windows feature update policy is automatically assigned behind the scenes to the newly added deployment rings or when you assigned Azure AD groups to the deployment ring (Last) in the Default Autopatch group.</p> |
 | Scenario #2 | You create new [Custom Autopatch groups](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#create-a-custom-autopatch-group).<p>The global Windows feature policy is automatically assigned behind the scenes to all deployment rings as part of the Custom Autopatch groups you create.</p> |
+
+> [!NOTE]
+> Global releases don't show up in the Windows feature updates release management blade.
 
 #### Policy configuration values
 

@@ -1,5 +1,5 @@
 ---
-title: Accounts Block Microsoft accounts (Windows 10)
+title: Accounts Block Microsoft accounts 
 description: Describes the best practices, location, values, management, and security considerations for the Accounts Block Microsoft accounts security policy setting.
 ms.assetid: 94c76f45-057c-4d80-8d01-033cf28ef2f7
 ms.reviewer: 
@@ -20,10 +20,12 @@ ms.technology: itpro-security
 # Accounts: Block Microsoft accounts
 
 **Applies to**
--   Windows 11
--   Windows 10
+-   Windows 10, version 1607 and earlier
 
 Describes the best practices, location, values, management, and security considerations for the **Accounts: Block Microsoft accounts** security policy setting.
+
+> [!IMPORTANT]
+> In Windows 10, version 1703 and later, this policy is no longer effective because the process for adding Microsoft Accounts changed. For Windows 10, version 1703 and later, instead of using this policy use the "Block all consumer Microsoft user account authentication" policy located under Computer Configuration\Administrative Templates\Windows Components\Microsoft account.
 
 ## Reference
 

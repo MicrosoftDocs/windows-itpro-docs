@@ -1,11 +1,11 @@
 ---
-title: 4704(S) A user right was assigned. (Windows 10)
+title: 4704(S) A user right was assigned. 
 description: Describes security event 4704(S) A user right was assigned. This event is generated when a user right is assigned to an account.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 

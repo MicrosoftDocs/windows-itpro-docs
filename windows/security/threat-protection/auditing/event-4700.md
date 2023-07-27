@@ -1,11 +1,11 @@
 ---
-title: 4700(S) A scheduled task was enabled. (Windows 10)
+title: 4700(S) A scheduled task was enabled. 
 description: Describes security event 4700(S) A scheduled task was enabled. This event is generated every time a scheduled task is enabled.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 

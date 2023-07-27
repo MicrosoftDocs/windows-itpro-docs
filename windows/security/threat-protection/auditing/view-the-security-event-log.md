@@ -1,5 +1,5 @@
 ---
-title: View the security event log (Windows 10)
+title: View the security event log 
 description: The security log records each event as defined by the audit policies you set on each object.
 ms.assetid: 20DD2ACD-241A-45C5-A92F-4BE0D9F198B9
 ms.reviewer: 

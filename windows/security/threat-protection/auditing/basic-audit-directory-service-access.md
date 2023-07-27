@@ -1,5 +1,5 @@
 ---
-title: Basic audit directory service access (Windows 10)
+title: Basic audit directory service access 
 description: Determines whether to audit the event of a user accessing an Active Directory object that has its own system access control list (SACL) specified.
 ms.assetid: 52F02EED-3CFE-4307-8D06-CF1E27693D09
 ms.reviewer: 
@@ -8,7 +8,7 @@ ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 manager: aaroncz
 audience: ITPro

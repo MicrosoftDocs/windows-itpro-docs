@@ -1,188 +1,278 @@
 ---
 title: SecureAssessment DDF file
-description: View the OMA DM device description framework (DDF) for the SecureAssessment configuration service provider. DDF files are used only with OMA DM provisioning XML
-ms.reviewer:
+description: View the XML file containing the device description framework (DDF) for the SecureAssessment configuration service provider.
+author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.topic: reference
+ms.date: 07/06/2023
+ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 12/05/2017
+ms.topic: reference
 ---
+
+<!-- Auto-Generated CSP Document -->
 
 # SecureAssessment DDF file
 
-This topic shows the OMA DM device description framework (DDF) for the **SecureAssessment** configuration service provider. DDF files are used only with OMA DM provisioning XML.
-
-Looking for the DDF XML files? See [CSP DDF files download](configuration-service-provider-ddf.md).
-
-The XML below is the current version for this CSP.
+The following XML file contains the device description framework (DDF) for the SecureAssessment configuration service provider.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
-  "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
-  [<?oma-dm-ddf-ver supported-versions="1.2"?>]>
+<!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN" "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"[<?oma-dm-ddf-ver supported-versions="1.2"?>]>
 <MgmtTree xmlns:MSFT="http://schemas.microsoft.com/MobileDevice/DM">
   <VerDTD>1.2</VerDTD>
-      <Node>
-        <NodeName>SecureAssessment</NodeName>
-        <Path>./Vendor/MSFT</Path>
-        <DFProperties>
-          <AccessType>
-            <Get />
-          </AccessType>
-          <Description>Settings related to the configuration of the Secure Assessment Browser.</Description>
-          <DFFormat>
-            <node />
-          </DFFormat>
-          <Occurrence>
-            <One />
-          </Occurrence>
-          <Scope>
-            <Permanent />
-          </Scope>
-          <DFType>
-            <MIME>com.microsoft/1.1/MDM/SecureAssessment</MIME>
-          </DFType>
-        </DFProperties>
-        <Node>
-          <NodeName>LaunchURI</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Link to an assessment that's automatically loaded when the Secure Assessment Browser is launched.</Description>
-            <DFFormat>
-              <chr />
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <CaseSense>
-              <CIS />
-            </CaseSense>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>TesterAccount</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-              <Add />
-              <Delete />
-              <Replace />
-            </AccessType>
-            <Description>The user name of the test taking account.  To specify a domain account, use domain\user. To specify an Azure Active Directory account, use username@tenant.com. To specify a local account, use the username.</Description>
-            <DFFormat>
-              <chr />
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <CaseSense>
-              <CIS />
-            </CaseSense>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>AllowScreenMonitoring</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-              <Replace />
-            </AccessType>
-            <DefaultValue>false</DefaultValue>
-            <Description>Indicates if screen monitoring is allowed by the app.</Description>
-            <DFFormat>
-              <bool />
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <CaseSense>
-              <CIS />
-            </CaseSense>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>RequirePrinting</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-              <Replace />
-            </AccessType>
-            <DefaultValue>false</DefaultValue>
-            <Description>Indicates if printing is required by the app.</Description>
-            <DFFormat>
-              <bool />
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <CaseSense>
-              <CIS />
-            </CaseSense>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>AllowTextSuggestions</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-              <Replace />
-            </AccessType>
-            <DefaultValue>false</DefaultValue>
-            <Description>Indicates if keyboard text suggestions are allowed by the app.</Description>
-            <DFFormat>
-              <bool />
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <CaseSense>
-              <CIS />
-            </CaseSense>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-      </Node>
+  <MSFT:Diagnostics>
+  </MSFT:Diagnostics>
+  <Node>
+    <NodeName>SecureAssessment</NodeName>
+    <Path>./Vendor/MSFT</Path>
+    <DFProperties>
+      <AccessType>
+        <Get />
+      </AccessType>
+      <Description>Settings related to the configuration of the Secure Assessment Browser.</Description>
+      <DFFormat>
+        <node />
+      </DFFormat>
+      <Occurrence>
+        <One />
+      </Occurrence>
+      <Scope>
+        <Permanent />
+      </Scope>
+      <DFType>
+        <MIME />
+      </DFType>
+      <MSFT:Applicability>
+        <MSFT:OsBuildVersion>10.0.15063</MSFT:OsBuildVersion>
+        <MSFT:CspVersion>1.0</MSFT:CspVersion>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+      </MSFT:Applicability>
+    </DFProperties>
+    <Node>
+      <NodeName>LaunchURI</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>Link to an assessment that's automatically loaded when the Secure Assessment Browser is launched.</Description>
+        <DFFormat>
+          <chr />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME />
+        </DFType>
+        <CaseSense>
+          <CIS />
+        </CaseSense>
+        <MSFT:AllowedValues ValueType="RegEx">
+          <MSFT:Value><![CDATA[/^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/]]></MSFT:Value>
+        </MSFT:AllowedValues>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>TesterAccount</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>The user name of the test taking account.  To specify a domain account, use domain\user. To specify an AAD account, use username@tenant.com. To specify a local account, use the username.</Description>
+        <DFFormat>
+          <chr />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME />
+        </DFType>
+        <CaseSense>
+          <CIS />
+        </CaseSense>
+        <MSFT:AllowedValues ValueType="None">
+        </MSFT:AllowedValues>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>AllowScreenMonitoring</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Get />
+          <Replace />
+        </AccessType>
+        <DefaultValue>0</DefaultValue>
+        <Description>Indicates if screen monitoring is allowed by the app.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Permanent />
+        </Scope>
+        <DFType>
+          <MIME />
+        </DFType>
+        <CaseSense>
+          <CIS />
+        </CaseSense>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>Screen monitoring is allowed</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Screen monitoring is not allowed</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>RequirePrinting</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Get />
+          <Replace />
+        </AccessType>
+        <DefaultValue>1</DefaultValue>
+        <Description>Indicates if printing is required by the app.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Permanent />
+        </Scope>
+        <DFType>
+          <MIME />
+        </DFType>
+        <CaseSense>
+          <CIS />
+        </CaseSense>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>Printing is allowed</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Printing is not allowed</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>AllowTextSuggestions</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Get />
+          <Replace />
+        </AccessType>
+        <DefaultValue>0</DefaultValue>
+        <Description>Indicates if keyboard text suggestions are allowed by the app.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Permanent />
+        </Scope>
+        <DFType>
+          <MIME />
+        </DFType>
+        <CaseSense>
+          <CIS />
+        </CaseSense>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>Keyboard text suggestions are allowed</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>0</MSFT:Value>
+            <MSFT:ValueDescription>Keyboard text suggestions are not allowed</MSFT:ValueDescription>
+          </MSFT:Enum>
+        </MSFT:AllowedValues>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>Assessments</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>Enables support for multiple assessments and for assessment grouping. The structure is specified by an XML.</Description>
+        <DFFormat>
+          <chr />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME />
+        </DFType>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>10.0.22621.521</MSFT:OsBuildVersion>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="XSD">
+          <MSFT:Value><![CDATA[
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="AssessmentsRoot">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Assessments">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Assessment" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="TestName"/>
+                    <xs:element type="xs:string" name="TestUri"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></MSFT:Value>
+        </MSFT:AllowedValues>
+      </DFProperties>
+    </Node>
+  </Node>
 </MgmtTree>
 ```
 
-## Related topics
+## Related articles
 
-[SecureAssessment CSP](secureassessment-csp.md)
+[SecureAssessment configuration service provider reference](secureassessment-csp.md)

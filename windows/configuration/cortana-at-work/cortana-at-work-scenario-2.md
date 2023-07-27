@@ -13,6 +13,8 @@ ms.technology: itpro-configure
 ---
 
 # Test scenario 2 – Perform a Bing search with Cortana
+<!--Using include for Cortana in Windows deprecation -->
+[!INCLUDE [Deprecation of Cortana in Windows](./includes/cortana-deprecation.md)]
 
 1. Select the  **Cortana**  icon in the taskbar.
 

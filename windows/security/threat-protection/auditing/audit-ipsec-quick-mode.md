@@ -1,5 +1,5 @@
 ---
-title: Audit IPsec Quick Mode (Windows 10)
+title: Audit IPsec Quick Mode 
 description: The policy setting, Audit IPsec Quick Mode, decides if audit events are generated for the results of the IKE protocol and AuthIP during Quick Mode negotiations.
 ms.assetid: 7be67a15-c2ce-496a-9719-e25ac7699114
 ms.reviewer: 
@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/06/2021
 ms.technology: itpro-security

@@ -1,11 +1,11 @@
 ---
-title: 4765(S) SID History was added to an account. (Windows 10)
+title: 4765(S) SID History was added to an account. 
 description: Describes security event 4765(S) SID History was added to an account. This event is generated when SID History is added to an account.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 

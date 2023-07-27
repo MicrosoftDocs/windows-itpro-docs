@@ -1,0 +1,15 @@
+items:
+- name: User Account Control (UAC)
+  items:
+  - name: Overview
+    href: user-account-control/index.md
+  - name: How UAC works
+    href: user-account-control/how-it-works.md
+  - name: UAC settings and configuration
+    href: user-account-control/settings-and-configuration.md
+- name: Windows Defender Application Control and virtualization-based protection of code integrity
+  href: introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
+- name: Windows Defender Application Control
+  href: windows-defender-application-control/wdac.md
+- name: Smart App Control
+  href: windows-defender-application-control/wdac.md

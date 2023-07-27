@@ -4,7 +4,7 @@ description: Learn more about the ControlPolicyConflict Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 01/09/2023
+ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- MDMWinsOverGP-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :x: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- MDMWinsOverGP-Applicability-End -->
 
 <!-- MDMWinsOverGP-OmaUri-Begin -->
@@ -37,14 +37,14 @@ ms.topic: reference
 
 <!-- MDMWinsOverGP-Description-Begin -->
 <!-- Description-Source-DDF -->
-If set to 1 then any MDM policy that is set that has an equivalent GP policy will result in GP service blocking the setting of the policy by GP MMC. Setting the value to 0 (zero) or deleting the policy will remove the GP policy blocks restore the saved GP policies.
+If set to 1 then any MDM policy that's set that has an equivalent GP policy will result in GP service blocking the setting of the policy by GP MMC. Setting the value to 0 (zero) or deleting the policy will remove the GP policy blocks restore the saved GP policies.
 <!-- MDMWinsOverGP-Description-End -->
 
 <!-- MDMWinsOverGP-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 
 > [!NOTE]
-> MDMWinsOverGP only applies to policies in Policy CSP. MDM policies win over Group Policies where applicable; not all Group Policies are available via MDM or CSP. It does not apply to other MDM settings with equivalent GP settings that are defined in other CSPs such as the [Defender CSP](defender-csp.md).
+> MDMWinsOverGP only applies to policies in Policy CSP. MDM policies win over Group Policies where applicable; not all Group Policies are available via MDM or CSP. It does not apply to other MDM settings with equivalent GP settings that are defined in other CSPs such as the [Defender CSP](defender-csp.md). Nor does it apply to the [Update Policy CSP](policy-csp-update.md) for managing Windows updates. 
 
 This policy is used to ensure that MDM policy wins over GP when policy is configured on MDM channel. The default value is 0. The MDM policies in Policy CSP will behave as described if this policy value is set 1.
 
@@ -74,7 +74,7 @@ The MDM Diagnostic report shows the applied configurations states of a device in
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 0 |
 <!-- MDMWinsOverGP-DFProperties-End -->

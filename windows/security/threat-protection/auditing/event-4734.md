@@ -1,11 +1,11 @@
 ---
-title: 4734(S) A security-enabled local group was deleted. (Windows 10)
+title: 4734(S) A security-enabled local group was deleted. 
 description: Describes security event 4734(S) A security-enabled local group was deleted.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 

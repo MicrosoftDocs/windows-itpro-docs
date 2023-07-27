@@ -4,7 +4,7 @@ description: Learn more about the WiFi CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 02/28/2023
+ms.date: 07/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -59,7 +59,7 @@ The following list shows the WiFi configuration service provider nodes:
 <!-- Device-Profile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Profile-Applicability-End -->
 
 <!-- Device-Profile-OmaUri-Begin -->
@@ -82,7 +82,7 @@ Identifies the Wi-Fi network configuration. Each Wi-Fi network configuration is 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- Device-Profile-DFProperties-End -->
 
@@ -98,7 +98,7 @@ Identifies the Wi-Fi network configuration. Each Wi-Fi network configuration is 
 <!-- Device-Profile-{SSID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Profile-{SSID}-Applicability-End -->
 
 <!-- Device-Profile-{SSID}-OmaUri-Begin -->
@@ -124,9 +124,8 @@ SSID is the name of network you're connecting to, while Profile name is the name
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
-| Atomic Required | True |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
 <!-- Device-Profile-{SSID}-DFProperties-End -->
 
@@ -142,7 +141,7 @@ SSID is the name of network you're connecting to, while Profile name is the name
 <!-- Device-Profile-{SSID}-ProfileSource-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Profile-{SSID}-ProfileSource-Applicability-End -->
 
 <!-- Device-Profile-{SSID}-ProfileSource-OmaUri-Begin -->
@@ -165,7 +164,7 @@ Allows for defining which administrative entity is setting this Wi-Fi profile. T
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 0 |
 <!-- Device-Profile-{SSID}-ProfileSource-DFProperties-End -->
@@ -191,7 +190,7 @@ Allows for defining which administrative entity is setting this Wi-Fi profile. T
 <!-- Device-Profile-{SSID}-Proxy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Profile-{SSID}-Proxy-Applicability-End -->
 
 <!-- Device-Profile-{SSID}-Proxy-OmaUri-Begin -->
@@ -214,7 +213,7 @@ Optional node. The format is url:port. Configuration of the network proxy (if an
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Profile-{SSID}-Proxy-DFProperties-End -->
 
@@ -230,7 +229,7 @@ Optional node. The format is url:port. Configuration of the network proxy (if an
 <!-- Device-Profile-{SSID}-ProxyPacUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Profile-{SSID}-ProxyPacUrl-Applicability-End -->
 
 <!-- Device-Profile-{SSID}-ProxyPacUrl-OmaUri-Begin -->
@@ -255,7 +254,7 @@ Optional node. URL to the PAC file location.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Profile-{SSID}-ProxyPacUrl-DFProperties-End -->
 
@@ -271,7 +270,7 @@ Optional node. URL to the PAC file location.
 <!-- Device-Profile-{SSID}-ProxyWPAD-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Profile-{SSID}-ProxyWPAD-Applicability-End -->
 
 <!-- Device-Profile-{SSID}-ProxyWPAD-OmaUri-Begin -->
@@ -296,7 +295,7 @@ Optional node. The presence of the field enables WPAD for proxy lookup.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Profile-{SSID}-ProxyWPAD-DFProperties-End -->
 
@@ -321,7 +320,7 @@ Optional node. The presence of the field enables WPAD for proxy lookup.
 <!-- Device-Profile-{SSID}-WiFiCost-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Profile-{SSID}-WiFiCost-Applicability-End -->
 
 <!-- Device-Profile-{SSID}-WiFiCost-OmaUri-Begin -->
@@ -344,7 +343,7 @@ Optional node. If the policy is active selecting one of the values from the foll
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- Device-Profile-{SSID}-WiFiCost-DFProperties-End -->
@@ -371,7 +370,7 @@ Optional node. If the policy is active selecting one of the values from the foll
 <!-- Device-Profile-{SSID}-WlanXml-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Profile-{SSID}-WlanXml-Applicability-End -->
 
 <!-- Device-Profile-{SSID}-WlanXml-OmaUri-Begin -->
@@ -383,6 +382,7 @@ Optional node. If the policy is active selecting one of the values from the foll
 <!-- Device-Profile-{SSID}-WlanXml-Description-Begin -->
 <!-- Description-Source-DDF -->
 XML describing the network configuration and follows Windows WLAN_profile schema.
+
 Link to schema: <https://msdn.microsoft.com/library/windows/desktop/ms707341(v=vs.85).aspx>
 <!-- Device-Profile-{SSID}-WlanXml-Description-End -->
 
@@ -401,7 +401,7 @@ If it exists in the blob, the **keyType** and **protected** elements must come b
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- Device-Profile-{SSID}-WlanXml-DFProperties-End -->
 
@@ -417,7 +417,7 @@ If it exists in the blob, the **keyType** and **protected** elements must come b
 <!-- User-Profile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-Profile-Applicability-End -->
 
 <!-- User-Profile-OmaUri-Begin -->
@@ -440,7 +440,7 @@ Identifies the Wi-Fi network configuration. Each Wi-Fi network configuration is 
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Get |
 <!-- User-Profile-DFProperties-End -->
 
@@ -456,7 +456,7 @@ Identifies the Wi-Fi network configuration. Each Wi-Fi network configuration is 
 <!-- User-Profile-{SSID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-Profile-{SSID}-Applicability-End -->
 
 <!-- User-Profile-{SSID}-OmaUri-Begin -->
@@ -482,9 +482,8 @@ SSID is the name of network you're connecting to, while Profile name is the name
 
 | Property name | Property value |
 |:--|:--|
-| Format | node |
+| Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
-| Atomic Required | True |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
 <!-- User-Profile-{SSID}-DFProperties-End -->
 
@@ -500,7 +499,7 @@ SSID is the name of network you're connecting to, while Profile name is the name
 <!-- User-Profile-{SSID}-ProfileSource-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- User-Profile-{SSID}-ProfileSource-Applicability-End -->
 
 <!-- User-Profile-{SSID}-ProfileSource-OmaUri-Begin -->
@@ -523,7 +522,7 @@ Allows for defining which administrative entity is setting this Wi-Fi profile. T
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Get, Replace |
 | Default Value  | 0 |
 <!-- User-Profile-{SSID}-ProfileSource-DFProperties-End -->
@@ -549,7 +548,7 @@ Allows for defining which administrative entity is setting this Wi-Fi profile. T
 <!-- User-Profile-{SSID}-Proxy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-Profile-{SSID}-Proxy-Applicability-End -->
 
 <!-- User-Profile-{SSID}-Proxy-OmaUri-Begin -->
@@ -572,7 +571,7 @@ Optional node. The format is url:port. Configuration of the network proxy (if an
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-Profile-{SSID}-Proxy-DFProperties-End -->
 
@@ -588,7 +587,7 @@ Optional node. The format is url:port. Configuration of the network proxy (if an
 <!-- User-Profile-{SSID}-ProxyPacUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-Profile-{SSID}-ProxyPacUrl-Applicability-End -->
 
 <!-- User-Profile-{SSID}-ProxyPacUrl-OmaUri-Begin -->
@@ -613,7 +612,7 @@ Optional node. URL to the PAC file location.
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-Profile-{SSID}-ProxyPacUrl-DFProperties-End -->
 
@@ -629,7 +628,7 @@ Optional node. URL to the PAC file location.
 <!-- User-Profile-{SSID}-ProxyWPAD-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-Profile-{SSID}-ProxyWPAD-Applicability-End -->
 
 <!-- User-Profile-{SSID}-ProxyWPAD-OmaUri-Begin -->
@@ -654,7 +653,7 @@ Optional node. The presence of the field enables WPAD for proxy lookup.
 
 | Property name | Property value |
 |:--|:--|
-| Format | bool |
+| Format | `bool` |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-Profile-{SSID}-ProxyWPAD-DFProperties-End -->
 
@@ -679,7 +678,7 @@ Optional node. The presence of the field enables WPAD for proxy lookup.
 <!-- User-Profile-{SSID}-WiFiCost-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- User-Profile-{SSID}-WiFiCost-Applicability-End -->
 
 <!-- User-Profile-{SSID}-WiFiCost-OmaUri-Begin -->
@@ -702,7 +701,7 @@ Optional node. If the policy is active selecting one of the values from the foll
 
 | Property name | Property value |
 |:--|:--|
-| Format | int |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
 | Default Value  | 1 |
 <!-- User-Profile-{SSID}-WiFiCost-DFProperties-End -->
@@ -729,7 +728,7 @@ Optional node. If the policy is active selecting one of the values from the foll
 <!-- User-Profile-{SSID}-WlanXml-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| :heavy_check_mark: Device <br> :heavy_check_mark: User | :x: Home <br> :heavy_check_mark: Pro <br> :heavy_check_mark: Enterprise <br> :heavy_check_mark: Education <br> :heavy_check_mark: Windows SE | :heavy_check_mark: Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-Profile-{SSID}-WlanXml-Applicability-End -->
 
 <!-- User-Profile-{SSID}-WlanXml-OmaUri-Begin -->
@@ -741,6 +740,7 @@ Optional node. If the policy is active selecting one of the values from the foll
 <!-- User-Profile-{SSID}-WlanXml-Description-Begin -->
 <!-- Description-Source-DDF -->
 XML describing the network configuration and follows Windows WLAN_profile schema.
+
 Link to schema: <https://msdn.microsoft.com/library/windows/desktop/ms707341(v=vs.85).aspx>
 <!-- User-Profile-{SSID}-WlanXml-Description-End -->
 
@@ -759,7 +759,7 @@ If it exists in the blob, the **keyType** and **protected** elements must come b
 
 | Property name | Property value |
 |:--|:--|
-| Format | chr (string) |
+| Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
 <!-- User-Profile-{SSID}-WlanXml-DFProperties-End -->
 

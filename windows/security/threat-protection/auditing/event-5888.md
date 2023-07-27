@@ -1,11 +1,11 @@
 ---
-title: 5888(S) An object in the COM+ Catalog was modified. (Windows 10)
+title: 5888(S) An object in the COM+ Catalog was modified. 
 description: Describes security event 5888(S) An object in the COM+ Catalog was modified.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/08/2021
 ms.reviewer: 

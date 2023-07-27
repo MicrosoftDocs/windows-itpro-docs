@@ -12,13 +12,11 @@ ms.topic: overview
 ms.collection:
   - highpri
   - tier1
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
 
 # Windows 11 overview
-
-**Applies to**:
-
-- Windows 11
 
 Windows 11 is the next client operating system, and includes features that organizations should know. Windows 11 is built on the same foundation as Windows 10. If you use Windows 10, then Windows 11 is a natural transition. It's an update to what you know, and what you're familiar with.
 

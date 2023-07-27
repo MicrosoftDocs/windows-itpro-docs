@@ -1,11 +1,11 @@
 ---
-title: 4621(S) Administrator recovered system from CrashOnAuditFail. (Windows 10)
+title: 4621(S) Administrator recovered system from CrashOnAuditFail. 
 description: Describes security event 4621(S) Administrator recovered system from CrashOnAuditFail.
 ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 

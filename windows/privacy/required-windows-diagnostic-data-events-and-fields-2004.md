@@ -6,8 +6,8 @@ ms.technology: itpro-privacy
 localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: dougeby
-ms.date: 05/28/2020
+manager: laurawi
+ms.date: 05/23/2023
 ms.collection: highpri
 ms.topic: reference
 ---
@@ -393,7 +393,7 @@ The following fields are available:
 - **DecisionSystemDiskSize_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemDiskSize_CU22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemDiskSize_CU23H2Setup**  The count of the number of this particular object type present on this device.
-- **DecisionSystemDiskSize_NI22H2Setup** The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_NI22H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemDiskSize_RS1**  The total number of objects of this type present on this device.
 - **DecisionSystemDiskSize_RS2**  The total number of objects of this type present on this device.
 - **DecisionSystemDiskSize_RS3**  The total number of objects of this type present on this device.
@@ -2422,7 +2422,7 @@ The following fields are available:
 - **WUDeferUpgradePeriod**  Retrieves if deferral is set for Upgrades.
 - **WUDODownloadMode**  Retrieves whether DO is turned on and how to acquire/distribute updates Delivery Optimization (DO) allows users to deploy previously downloaded Windows Update updates to other devices on the same network.
 - **WULCUVersion**  Version of the LCU Installed on the machine.
-- **WUMachineId**  Retrieves the Windows Update (WU) Machine Identifier.
+- **WUMachineId**  Retrieves the Windows Update Machine Identifier.
 - **WUPauseState**  Retrieves Windows Update setting to determine if updates are paused.
 - **WUServer**  Retrieves the HTTP(S) URL of the WSUS server that is used by Automatic Updates and API callers (by default).
 
@@ -2473,7 +2473,6 @@ Fires at the beginning and end of the HVCI auto-enablement process in sysprep.
 The following fields are available:
 
 - **wilActivity**  Contains the thread ID used to match the begin and end events, and for the end event also a HResult indicating sucess or failure.
-
 
 ### Microsoft.Windows.Security.CodeIntegrity.HVCISysprep.HvciScanGetResultFailed
 
@@ -3114,6 +3113,37 @@ The following fields are available:
 
 ## Direct to update events
 
+### Microsoft.Windows.DirectToUpdate.DTUCoordinatorCheckApplicability
+
+This event indicates that the Coordinator CheckApplicability call succeeded. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **ApplicabilityResult**  Result of CheckApplicability function.
+- **CampaignID**  Campaign ID being run.
+- **ClientID**  Client ID being run.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
+- **IsCTA**  If device has the CTA regkey set.
+- **IsDeviceAADDomainJoined**  Indicates whether the device is logged in to the AAD (Azure Active Directory) domain.
+- **IsDeviceADDomainJoined**  Indicates whether the device is logged in to the AD (Active Directory) domain.
+- **IsDeviceCloverTrail**  Indicates whether the device has a Clover Trail system installed.
+- **IsDeviceDiskSpaceLow**  If device disk space is low.
+- **IsDeviceEnterpriseSku**  If device is an Enterprise SKU.
+- **IsDeviceFeatureUpdatingPaused**  Indicates whether Feature Update is paused on the device.
+- **IsDeviceNetworkMetered**  Indicates whether the device is connected to a metered network.
+- **IsDeviceOobeBlocked**  Indicates whether the OOBE (Out of Box Experience) is blocked on the device.
+- **IsDeviceRequireUpdateApproval**  Indicates whether user approval is required to install updates on the device.
+- **IsDeviceSccmManaged**  Indicates whether the device is running the Microsoft SCCM (System Center Configuration Manager) to keep the operating system and applications up to date.
+- **IsDeviceUninstallActive**  Indicates whether the OS (operating system) on the device was recently updated.
+- **IsDeviceUpdateNotificationLevel**  Indicates whether the device has a set policy to control update notifications.
+- **IsDeviceUpdateServiceManaged**  Indicates whether the device uses WSUS (Windows Server Update Services).
+- **IsDeviceWUFBManaged**  If device is WUfB managed.
+- **IsDeviceZeroExhaust**  Indicates whether the device subscribes to the Zero Exhaust policy to minimize connections from Windows to Microsoft.
+- **IsGreaterThanMaxRetry**  Indicates whether the DTU (Direct to Update) service has exceeded its maximum retry count.
+- **IsVolumeLicensed**  Indicates whether a volume license was used to authenticate the operating system or applications on the device.
+
+
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorCheckApplicabilityGenericFailure
 
 This event indicatse that we have received an unexpected error in the Direct to Update (DTU) Coordinators CheckApplicability call. The data collected with this event is used to help keep Windows secure and up to date.
@@ -3190,6 +3220,19 @@ The following fields are available:
 - **hResult**  HRESULT of the failure.
 
 
+### Microsoft.Windows.DirectToUpdate.DTUCoordinatorDownloadIgnoredFailure
+
+This event indicates that we have received an error in the Direct to Update (DTU) Coordinator Download call that will be ignored. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  Campaign ID being run.
+- **ClientID**  Client ID being run.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
+- **hResult**  HRESULT of the failure.
+
+
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorDownloadSuccess
 
 This event indicates that the Coordinator Download call succeeded. The data collected with this event is used to help keep Windows secure and up to date.
@@ -3251,6 +3294,18 @@ The following fields are available:
 - **CoordinatorVersion**  Coordinator version of DTU.
 - **CV**  Correlation vector.
 - **hResult**  HRESULT of the failure.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUCoordinatorInstallSuccess
+
+This event indicates that the Coordinator Install call succeeded. The data collected with this event is used to help keep Windows secure and up to date.
+
+The following fields are available:
+
+- **CampaignID**  Campaign ID being run.
+- **ClientID**  Client ID being run.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
 
 
 ### Microsoft.Windows.DirectToUpdate.DTUCoordinatorProgressCallBack
@@ -3525,6 +3580,25 @@ The following fields are available:
 - **State**  State of the workflow.
 
 
+### Microsoft.Windows.DirectToUpdate.DTUNotificationUXEvaluation
+
+This event indicates that Applicability DLL ran a set of applicability tests. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **Action**  The enumeration code of action that was handled.
+- **ActiveTestExpectedResults**  Bitmask of expected results of applicability tests.
+- **ActiveTestResults**  The bitmask results of applicability tests.
+- **ActiveTestsRun**  The bitmask of applicability tests that were run.
+- **CampaignID**  The ID of the campaign being run.
+- **ClientID**  The ID of the client being run.
+- **CoordinatorVersion**  The coordinator version of Direct To Update.
+- **CV**  Correlation vector.
+- **FullTestResults**  The bitmask of results of applicability tests.
+- **FullTestsRun**  The bitmask of applicability tests that were run.
+- **SuppressedTests**  The bitmask of applicability tests that were unable to run due to suppression caused by the configuration settings.
+
+
 ### Microsoft.Windows.DirectToUpdate.DTUNotificationUXEvaluationError
 
 This event indicates that Applicability DLL failed on a test. The data collected with this event is used to help keep Windows up to date and performing properly.
@@ -3537,6 +3611,20 @@ The following fields are available:
 - **CV**  Correlation vector.
 - **FailedTest**  The enumeration code of the test that failed.
 - **HRESULT**  An error (if any) that occurred.
+
+
+### Microsoft.Windows.DirectToUpdate.DTUNotificationUXExit
+
+This event indicates that DTUNotificationUX has finished execution. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **CampaignID**  The ID of the campaign being run.
+- **ClientID**  The ID of the client being run.
+- **CoordinatorVersion**  Coordinator version of DTU.
+- **CV**  Correlation vector.
+- **HRESULTCausingExit**  HRESULT Causing an abnormal exit, or S_OK for normal exits.
+- **ProcessExitCode**  The exit code that DTUNotificationUX returns to DTUCoordinator.
 
 
 ### Microsoft.Windows.DirectToUpdate.DTUNotificationUXExitingState
@@ -3753,7 +3841,7 @@ The following fields are available:
 - **FlightId**  The ID of the Windows Insider build the device received.
 - **InstallDate**  The date the driver was installed.
 - **InstallFlags**  The driver installation flags.
-- **OptionalData**  Metadata specific to Windows Update (WU) associated with the driver (flight IDs, recovery IDs, etc.)
+- **OptionalData**  Metadata specific to Windows Update associated with the driver (flight IDs, recovery IDs, etc.)
 - **RebootRequired**  Indicates whether a reboot is required after the installation.
 - **RollbackPossible**  Indicates whether this driver can be rolled back.
 - **WuTargetedHardwareId**  Indicates that the driver was installed because the device hardware ID was targeted by the Windows Update.
@@ -4708,12 +4796,6 @@ This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedevic
 The following fields are available:
 
 - **InventoryVersion**  The version of the inventory file generating the events.
-
-
-### Microsoft.Windows.Inventory.General.AppHealthStaticAdd
-
-This event sends details collected for a specific application on the source device. The data collected with this event is used to keep Windows performing properly.
-
 
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousMemorySlotArrayInfoAdd
@@ -8722,7 +8804,6 @@ The following fields are available:
 
 - **wilActivity**  This struct provides a Windows Internal Library context used for Product and Service diagnostics.
 
-
 ### Microsoft.Windows.Update.Orchestrator.DeferRestart
 
 This event indicates that a restart required for installing updates was postponed. The data collected with this event is used to help keep Windows secure and up to date.
@@ -9012,7 +9093,7 @@ The following fields are available:
 
 - **updaterCmdLine**  The command line requested by the updater.
 - **updaterId**  The ID of the updater that requested the work.
-- **wuDeviceid** Windows Update device ID.
+- **wuDeviceid**  Windows Update device ID.
 
 
 ### Microsoft.Windows.Update.Orchestrator.UniversalOrchestratorScheduleWorkNonSystem
@@ -9359,7 +9440,7 @@ The following fields are available:
 - **PresentationCount**  Number of times the interaction campaign has been presented.
 - **ResultId**  The result ID currently recorded for the interaction campaign.
 - **StateCreationTime**  Time the state was created.
-- **StateModificationTime** Time the state was last modified.
+- **StateModificationTime**  Time the state was last modified.
 - **ThrottlingRoll**  Randomly generated throttling roll for the interaction campaign.
 
 
