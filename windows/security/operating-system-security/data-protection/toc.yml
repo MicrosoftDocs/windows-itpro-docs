@@ -1,13 +1,11 @@
 items:
-- name: Overview
-  href: index.md
 - name: BitLocker
   href: bitlocker/toc.yml
 - name: Encrypted Hard Drive
   href: encrypted-hard-drive.md
-- name: Personal Data Encryption (PDE)
+- name: Personal data encryption (PDE)
   href: personal-data-encryption/toc.yml
-- name: Configure S/MIME for Windows
+- name: Email Encryption (S/MIME)
   href: configure-s-mime.md
 - name: Windows Information Protection (WIP)
   href: ../../information-protection/windows-information-protection/protect-enterprise-data-using-wip.md

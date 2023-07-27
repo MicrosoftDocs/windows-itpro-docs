@@ -29,7 +29,7 @@ When the PIN is created, it establishes a trusted relationship with the identity
 Even though local passwords are local to the device, they're less secure than a PIN, as described in the next section.
 
 >[!NOTE]
->For details on how Hello uses asymmetric key pairs for authentication, see [Windows Hello for Business](hello-overview.md#benefits-of-windows-hello).
+>For details on how Hello uses asymmetric key pairs for authentication, see [Windows Hello for Business](index.md#benefits-of-windows-hello).
 
 ## PIN is backed by hardware
 
