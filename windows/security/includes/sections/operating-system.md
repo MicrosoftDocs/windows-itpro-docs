@@ -42,7 +42,7 @@ ms.topic: include
 | **[Server Message Block (SMB) file service](/windows-server/storage/file-server/file-server-smb-overview)** | SMB Encryption provides end-to-end encryption of SMB data and protects data from eavesdropping occurrences on internal networks. In Windows 11, the SMB protocol has significant security updates, including AES-256 bits encryption, accelerated SMB signing, Remote Directory Memory Access (RDMA) network encryption, and SMB over QUIC for untrusted networks. Windows 11 introduces AES-256-GCM and AES-256-CCM cryptographic suites for SMB 3.1.1 encryption. Windows administrators can mandate the use of more advanced security or continue to use the more compatible, and still-safe, AES-128 encryption. |
 | **[Server Message Block Direct (SMB Direct)](/windows-server/storage/file-server/smb-direct)** | SMB Direct (SMB over remote direct memory access) is a storage protocol that enables direct memory-to-memory data transfers between device and storage, with minimal CPU usage, while using standard RDMA-capable network adapters.<br><br>SMB Direct supports encryption, and now you can operate with the same safety as traditional TCP and the performance of RDMA. Previously, enabling SMB encryption disabled direct data placement, making RDMA as slow as TCP. Now data is encrypted before placement, leading to relatively minor performance degradation while adding AES-128 and AES-256 protected packet privacy. |
 
-## Data Protection
+## Encryption And Data Protection
 
 | Security Measures | Features & Capabilities |
 |:---|:---|
