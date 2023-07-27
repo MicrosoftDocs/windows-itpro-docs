@@ -7224,6 +7224,13 @@
       "source_path": "windows/security/trusted-boot.md",
       "redirect_url": "/windows/security/operating-system-security/system-security/trusted-boot",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/password-support-policy.md",
+      "redirect_url": "https://support.microsoft.com/help/4490115",
+      "redirect_document_id": false
     }
   ]
 }
+
+

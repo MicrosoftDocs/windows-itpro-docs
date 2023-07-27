@@ -20,8 +20,6 @@ items:
       displayName: VSC
     - name: Enterprise Certificate Pinning
       href: enterprise-certificate-pinning.md
-  - name: Security policy settings 🔗
-    href: ../threat-protection/security-policy-settings/security-policy-settings.md
   - name: Advanced credential protection
     items:
     - name: Windows LAPS (Local Administrator Password Solution) 🔗
@@ -43,5 +41,3 @@ items:
     href: /windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection
   - name: Local Accounts
     href: access-control/local-accounts.md
-  - name: Technical support policy for lost or forgotten passwords
-    href: password-support-policy.md
