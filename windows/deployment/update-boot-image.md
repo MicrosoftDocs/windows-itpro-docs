@@ -141,53 +141,53 @@ For more information, see [Add and Remove Driver packages to an offline Windows 
 
 1. Add any desired optional components to the boot image:
 
-  ### [:::image type="icon" source="images/icons/powershell-16.png"::: **PowerShell**](#tab/powershell)
+    ### [:::image type="icon" source="images/icons/powershell-16.png"::: **PowerShell**](#tab/powershell)
 
-  ```powershell
-  Add-WindowsPackage -PackagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\<Component>.cab" -Path "<Mount_folder_path>" -Verbose
-  ```
+    ```powershell
+    Add-WindowsPackage -PackagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\<Component>.cab" -Path "<Mount_folder_path>" -Verbose
+    ```
 
-  This example assumes an x64 boot image. If a different architecture is being used, then adjust the commands accordingly.
+    This example assumes an x64 boot image. If a different architecture is being used, then adjust the commands accordingly.
 
-  For more information, see [Add-WindowsPackage](/powershell/module/dism/add-windowspackage).
+    For more information, see [Add-WindowsPackage](/powershell/module/dism/add-windowspackage).
 
-  ### [:::image type="icon" source="images/icons/command-prompt-16.png"::: **Command Line**](#tab/command-line)
+    ### [:::image type="icon" source="images/icons/command-prompt-16.png"::: **Command Line**](#tab/command-line)
 
-  ```cmd
-  DISM.exe /Image:"<Mount_folder_path>" /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\<Component>.cab" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\<Component2>.cab"
-  ```
+    ```cmd
+    DISM.exe /Image:"<Mount_folder_path>" /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\<Component>.cab" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\<Component2>.cab"
+    ```
 
-  This example assumes an x64 boot image. If a different architecture is being used, then adjust the commands accordingly.
+    This example assumes an x64 boot image. If a different architecture is being used, then adjust the commands accordingly.
 
-  You can add as many desired optional components as needed on a single **DISM.exe** command line.
+    You can add as many desired optional components as needed on a single **DISM.exe** command line.
 
-  For more information, see [Add or Remove Packages Offline Using DISM](/windows-hardware/manufacture/desktop/add-or-remove-packages-offline-using-dism) and [DISM Operating System Package (.cab or .msu) Servicing Command-Line Options: /Add-Package](/windows-hardware/manufacture/desktop/dism-operating-system-package-servicing-command-line-options#add-package).
+    For more information, see [Add or Remove Packages Offline Using DISM](/windows-hardware/manufacture/desktop/add-or-remove-packages-offline-using-dism) and [DISM Operating System Package (.cab or .msu) Servicing Command-Line Options: /Add-Package](/windows-hardware/manufacture/desktop/dism-operating-system-package-servicing-command-line-options#add-package).
 
-  ---
+    ---
 
 1. Make sure that after adding the optional component to also add the language specific component for that optional component. This needs to be done for every optional component that is added to the boot image.
 
   For example, for English United States (en-us), add the following:
 
-  ### [:::image type="icon" source="images/icons/powershell-24.png"::: **PowerShell**](#tab/powershell)
+    ### [:::image type="icon" source="images/icons/powershell-24.png"::: **PowerShell**](#tab/powershell)
 
-  ```powershell
-  Add-WindowsPackage -PackagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\<Component>_en-us.cab" -Path "<Mount_folder_path>" -Verbose
-  ```
+    ```powershell
+    Add-WindowsPackage -PackagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\<Component>_en-us.cab" -Path "<Mount_folder_path>" -Verbose
+    ```
 
-  This example assumes an x64 boot image. If a different architecture is being used, then adjust the commands accordingly.
+    This example assumes an x64 boot image. If a different architecture is being used, then adjust the commands accordingly.
 
-  ### [:::image type="icon" source="images/icons/command-prompt-24.png"::: **Command Line**](#tab/command-line)
+    ### [:::image type="icon" source="images/icons/command-prompt-24.png"::: **Command Line**](#tab/command-line)
 
-  ```cmd
-  DISM.exe /Image:"<Mount_folder_path>" /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\<Component>_en-us.cab" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\<Component2>_en-us.cab"
-  ```
+    ```cmd
+    DISM.exe /Image:"<Mount_folder_path>" /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\<Component>_en-us.cab" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\<Component2>_en-us.cab"
+    ```
 
-  This example assumes an x64 boot image. If a different architecture is being used, then adjust the commands accordingly.
+    This example assumes an x64 boot image. If a different architecture is being used, then adjust the commands accordingly.
 
-  You can add as many desired optional components as needed on a single DISM.exe command line.
+    You can add as many desired optional components as needed on a single DISM.exe command line.
 
-  ---
+    ---
 
 > [!IMPORTANT]
 >
@@ -300,7 +300,7 @@ For more information, see [DISM Operating System Package (.cab or .msu) Servicin
 
 ## Step 11: Unmount boot image and save changes
 
-- Once drivers, optional components, and the cumulative update (CU) have been applied to the boot image, unmount the boot image and save changes.
+Once drivers, optional components, and the cumulative update (CU) have been applied to the boot image, unmount the boot image and save changes.
 
 ### [**PowerShell**](#tab/powershell)
 
@@ -324,7 +324,7 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
 
 1. Once the boot image has been unmounted and saved, its size can be further reduced by exporting it:
 
-  ### [**PowerShell**](#tab/powershell)
+  # [**PowerShell**](#tab/powershell)
 
   ```powershell
   Export-WindowsImage -SourceImagePath "<Boot_image_path>\<boot_image>.wim" -SourceIndex 1 -DestinationImagePath "<Boot_image_path>\<boot_image>-export.wim" -CompressionType max -Verbose
@@ -332,7 +332,7 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
 
   For more information, see [Export-WindowsImage](/powershell/module/dism/export-windowsimage).
 
-  ### [**Command Line**](#tab/command-line)
+  # [**Command Line**](#tab/command-line)
 
   ```cmd
   DISM.exe /Export-Image /SourceImageFile:"<Boot_image_path>\<boot_image>.wim" /SourceIndex:1 /DestinationImageFile:"<Boot_image_path>\<boot_image>-export.wim"
@@ -344,8 +344,8 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
 
 1. Once the export has completed, delete the original boot image and then rename the exported boot image with the name of the original boot image.
 
-## Considerations for Microsoft Configuration Manager
+## Microsoft Configuration Manager considerations
 
-## Considerations for Microsoft Deployment Toolkit (MDT)
+## Microsoft Deployment Toolkit (MDT) considerations
 
-## Considerations for Windows Deployment Services (WDS)
+## Windows Deployment Services (WDS) considerations
