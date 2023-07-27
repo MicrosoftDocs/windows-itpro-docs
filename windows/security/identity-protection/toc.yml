@@ -43,6 +43,8 @@ items:
     href: ../threat-protection/security-policy-settings/security-policy-settings.md
   - name: Advanced credential protection
     items:
+    - name: Configuring LSA Protection
+      href: /windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection
     - name: Windows Defender Credential Guard
       href: credential-guard/toc.yml
     - name: Windows Defender Remote Credential Guard
