@@ -176,6 +176,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-overview.md",
+      "redirect_url": "/windows/security/identity-protection/hello-for-business",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/security/hardware-protection/tpm/trusted-platform-module-top-node.md",
       "redirect_url": "/windows/security/information-protection/tpm/trusted-platform-module-top-node",
       "redirect_document_id": false
@@ -648,6 +653,11 @@
     {
       "source_path": "windows/security/information-protection/bitlocker/ts-bitlocker-intune-issues.md",
       "redirect_url": "/troubleshoot/windows-client/windows-security/enforcing-bitlocker-policies-by-using-intune-known-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/windows-credential-theft-mitigation-guide-abstract.md",
+      "redirect_url": "/windows/security/identity-protection",
       "redirect_document_id": false
     },
     {

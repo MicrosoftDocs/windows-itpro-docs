@@ -104,9 +104,7 @@ landingContent:
       - linkListType: concept
         links:
         - text: Windows Hello for Business
-          url: identity-protection/hello-for-business/hello-overview.md
-        - text: Windows Credential Theft Mitigation
-          url: identity-protection/windows-credential-theft-mitigation-guide-abstract.md
+          url: identity-protection/hello-for-business/index.md
         - text: Protect domain credentials
           url: identity-protection/credential-guard/credential-guard.md
         - text: Windows Defender Credential Guard
