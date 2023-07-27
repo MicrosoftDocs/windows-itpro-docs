@@ -3,8 +3,8 @@ items:
     href: index.md
   - name: Passwordless sign-in
     items:
-    - name: Windows Hello for Business
-      href: hello-for-business/toc.yml
+    - name: Windows Hello for Business 🔗
+      href: hello-for-business/index.md
     - name: Windows presence sensing
       href: https://support.microsoft.com/windows/wake-your-windows-11-pc-when-you-approach-82285c93-440c-4e15-9081-c9e38c1290bb
     - name: Windows Hello for Business Enhanced Security Sign-in (ESS) 🔗
