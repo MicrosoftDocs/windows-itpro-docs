@@ -10,7 +10,6 @@ metadata:
   ms.prod: windows-client
   ms.technology: itpro-security
   ms.collection:
-    - highpri
     - tier1
   author: paolomatarazzo
   ms.author: paoloma
@@ -62,8 +61,6 @@ landingContent:
         links:
         - text: Trusted boot
           url: operating-system-security\system-security\trusted-boot.md
-        - text: Encryption and data protection
-          url: operating-system-security/data-protection/index.md
         - text: Windows security baselines
           url: operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines.md
         - text: Virtual private network guide
