@@ -111,7 +111,7 @@ For more information, see [Modify a Windows image using DISM: Mount an image](/w
 
 If needed, add any drivers to the boot image:
 
-### [:::image type="icon" source="images/icons/powershell-color-18.svg"::: **PowerShell**](#tab/powershell)
+### [:::image type="icon" source="images/icons/powershell-color-18.svg"(#tab/powershell)
 
 ```powershell
 Command to be determined
