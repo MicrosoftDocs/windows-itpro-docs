@@ -1,6 +1,6 @@
 items:
   - name: Overview
-    href: ../hardware.md
+    href: index.md
   - name: Hardware root of trust
     items:
       - name: Windows Defender System Guard
