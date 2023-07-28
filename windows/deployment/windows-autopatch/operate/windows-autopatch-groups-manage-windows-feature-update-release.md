@@ -120,11 +120,11 @@ The following table is an example of the Windows feature update policies that we
 
 | Policy name | Feature update version | Rollout options | First deployment date| Final deployment date availability | Day between groups | Support end date |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| Windows Autopatch - DSS Policy - My feature update release – Phase 1  | Windows 10 21H2 | Make update available as soon as possible | April 24, 2023 | April 24, 2023 | N/A | June 10, 2024 |
-| Windows Autopatch - DSS Policy - My feature update release – Phase 2  | Windows 10 21H2 | Make update available as soon as possible | June 26, 2023 | July 17, 2023 | 7 | June 10, 2024 |
-| Windows Autopatch - DSS Policy - My feature update release – Phase 3 | Windows 10 21H2 | Make update available as soon as possible | July 24, 2023 | August 14, 2023 | 7 | June 10, 2024 |
-| Windows Autopatch - DSS Policy - My feature update release – Phase 4  | Windows 10 21H2 | Make update available as soon as possible | August 28, 2023 | September 10, 2023 | 7 | June 10, 2024 |
-| Windows Autopatch - DSS Policy - My feature update release – Phase 5  | Windows 10 21H2 | Make update available as soon as possible | September 25, 2023 | October 16, 2023 | 7 | June 10, 2024 |
+| Windows Autopatch - DSS Policy - My feature update release – Phase 1  | Windows 10 21H2 | Make update available as soon as possible | April 24, 2023 | April 24, 2023 | N/A | June 11, 2024 |
+| Windows Autopatch - DSS Policy - My feature update release – Phase 2  | Windows 10 21H2 | Make update available as soon as possible | June 26, 2023 | July 17, 2023 | 7 | June 11, 2024 |
+| Windows Autopatch - DSS Policy - My feature update release – Phase 3 | Windows 10 21H2 | Make update available as soon as possible | July 24, 2023 | August 14, 2023 | 7 | June 11, 2024 |
+| Windows Autopatch - DSS Policy - My feature update release – Phase 4  | Windows 10 21H2 | Make update available as soon as possible | August 28, 2023 | September 10, 2023 | 7 | June 11, 2024 |
+| Windows Autopatch - DSS Policy - My feature update release – Phase 5  | Windows 10 21H2 | Make update available as soon as possible | September 25, 2023 | October 16, 2023 | 7 | June 11, 2024 |
 
 ## Create a custom release
 
