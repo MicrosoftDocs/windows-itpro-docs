@@ -17,9 +17,9 @@ metadata:
 
 highlightedContent:
   items:
-  - title: Get started with Windows 11
+  - title: Get started with Windows security
     itemType: get-started
-    url: /windows/whats-new/windows-11-overview
+    url: introduction.md
   - title: Windows 11, version 22H2
     itemType: whats-new
     url: /windows/whats-new/whats-new-windows-11-version-22H2
