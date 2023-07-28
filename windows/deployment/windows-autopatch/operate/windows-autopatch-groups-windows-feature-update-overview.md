@@ -82,10 +82,10 @@ If your tenant is enrolled with Windows Autopatch, you can see the following def
 
 | Policy name | Phase mapping | Feature update version | Rollout options | First deployment ring availability | Final deployment ring availability | Day between deployment rings | Support end date |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| Windows Autopatch – DSS Policy [Test] | Phase 1 | Windows 10 21H2 | Make update available as soon as possible | May 9, 2023  | N/A | N/A | June 10, 2024 |
-| Windows Autopatch – DSS Policy [First] | Phase 2 | Windows 10 21H2 | Make update available as soon as possible | May 16, 2023  | N/A | N/A | June 10, 2024 |
-| Windows Autopatch – DSS Policy [Fast] | Phase 3 | Windows 10 21H2 | Make update available as soon as possible | May 23, 2023  | N/A | N/A | June 10, 2024 |
-| Windows Autopatch – DSS Policy [Broad] | Phase 4 | Windows 10 21H2 | Make update available as soon as possible | May 30, 2023  | N/A | N/A | June 10, 2024 |
+| Windows Autopatch – DSS Policy [Test] | Phase 1 | Windows 10 21H2 | Make update available as soon as possible | May 9, 2023  | N/A | N/A | June 11, 2024 |
+| Windows Autopatch – DSS Policy [First] | Phase 2 | Windows 10 21H2 | Make update available as soon as possible | May 16, 2023  | N/A | N/A | June 11, 2024 |
+| Windows Autopatch – DSS Policy [Fast] | Phase 3 | Windows 10 21H2 | Make update available as soon as possible | May 23, 2023  | N/A | N/A | June 11, 2024 |
+| Windows Autopatch – DSS Policy [Broad] | Phase 4 | Windows 10 21H2 | Make update available as soon as possible | May 30, 2023  | N/A | N/A | June 11, 2024 |
 
 > [!NOTE]
 > Gradual rollout settings aren't configured in the default Windows Update feature policy. If the date of the final group availability is changed to a past date, all remaining devices are offered the update as soon as possible. For more information, see [rollout options for Windows Updates in Microsoft Intune](/mem/intune/protect/windows-update-rollout-options#make-updates-available-gradually).
@@ -110,7 +110,7 @@ See the following table on how Windows Autopatch configures the values for its g
 
 | Policy name | Feature update version | Rollout options | First deployment ring availability | Final deployment ring availability | Day between deployment rings | Support end date |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| Windows Autopatch – Global DSS Policy [Test] | Windows 10 21H2 | Make update available as soon as possible | N/A  | N/A | N/A | June 10, 2024 |
+| Windows Autopatch – Global DSS Policy [Test] | Windows 10 21H2 | Make update available as soon as possible | N/A  | N/A | N/A | June 11, 2024 |
 
 > [!NOTE]
 > Gradual rollout settings aren't configured in the default Windows Update feature policy. If the date of the final group availability is changed to be a past date, all remaining devices are offered the update as soon as possible. For more information, see [rollout options for Windows Updates in Microsoft Intune](/mem/intune/protect/windows-update-rollout-options#make-updates-available-gradually).
