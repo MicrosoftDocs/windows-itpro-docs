@@ -21,20 +21,14 @@ appliesto:
 
 <!-- 7894697 -->
 
-This walkthrough describes how to update a Windows PE (WinPE) boot image with the latest cumulative update.
+Microsoft recommends updating Windows PE (WinPE) boot images with the latest cumulative update for maximum security and protection. The latest cumulative updates may also resolve known issues. This walkthrough describes how to update a WinPE boot image with the latest cumulative update.
 
 ## Prerequisites
 
 - [Windows Assessment and Deployment Kit (Windows ADK)](/windows-hardware/get-started/adk-install) - It's recommended to use the latest version of the ADK.
 - [Windows PE add-on for the Windows ADK](/windows-hardware/get-started/adk-install). Make sure the version of Windows PE matches the version of Windows ADK that is being used.
-- Boot image - This can be `winpe.wim` included with the Windows ADK.
+- Windows PE boot image
 - Latest cumulative update downloaded from the [Microsoft Update Catalog](https://catalog.update.microsoft.com/) site.
-
-## Overview
-
-Note about boot.wim from installation media
-Note about Win11 ADK only having x64 boot images
-Note about Windows Server 2012 R2
 
 ## Steps
 
@@ -45,7 +39,7 @@ Note about Windows Server 2012 R2
 - [Step 5: Add drivers to boot image](#step-5-add-drivers-to-boot-image)
 - [Step 6: Add optional components to boot image](#step-6-add-optional-components-to-boot-image)
 - [Step 7: Add cumulative update (CU) to boot image](#step-7-add-cumulative-update-cu-to-boot-image)
-- [Step 8: Copy boot files from mounted image to ADK installation path](#step-8-copy-boot-files-from-mounted-image-to-adk-installation-path)
+- [Step 8: Copy boot files from mounted boot image to ADK installation path](#step-8-copy-boot-files-from-mounted-boot-image-to-adk-installation-path)
 - [Step 9: Perform component cleanup](#step-9-perform-component-cleanup)
 - [Step 10: Verify all desired packages have been added to boot image](#step-10-verify-all-desired-packages-have-been-added-to-boot-image)
 - [Step 11: Unmount boot image and save changes](#step-11-unmount-boot-image-and-save-changes)
@@ -55,11 +49,15 @@ Note about Windows Server 2012 R2
 
 1. Download and install the **Windows Assessment and Deployment Kit (Windows ADK)** from [Download and install the Windows ADK](/windows-hardware/get-started/adk-install).
 
-1. Download and install the **Windows PE add-on for the Windows ADK** from [Download and install the Windows ADK](/windows-hardware/get-started/adk-install). Make sure to download and install both components.
+1. Download and install the **Windows PE add-on for the Windows ADK** from [Download and install the Windows ADK](/windows-hardware/get-started/adk-install). The **Windows PE add-on for the Windows ADK** is a separate download and install from the **Windows Assessment and Deployment Kit (Windows ADK)**. Make sure to individually download and install both.
 
-It's strongly recommended to download and install the latest version of the ADK. When installing the Windows ADK, it's only necessary to install the **Deployment Tools**.
+> [!IMPORTANT]
+>
+> It's strongly recommended to download and install the latest version of the Windows ADK and the Windows PE add-on for the Windows ADK. The latest versions of the Windows PE add-on for the Windows ADK only include 64-bit boot images.
 
-The paths in this article assume the Windows ADK was installed to the default location of `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit`. If the Windows ADK was installed to a different location, then adjust the paths accordingly.
+When installing the Windows ADK, for the purpose of this walk-through, it's only necessary to install the **Deployment Tools**. One of the tools installed will be the **Deployment and Imaging Tools Environment** command prompt. When using the **Command Line** option instead of the **PowerShell** option to run commands, make sure to run the commands from this **Deployment and Imaging Tools Environment** command prompt. The **Deployment and Imaging Tools Environment** command prompt can be found in the Start Menu under **Windows Kits** > **Deployment and Imaging Tools Environment**.
+
+The paths in this article assume the Windows ADK was installed to the default location of `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit`. If the Windows ADK was installed to a different location, then adjust the paths during the walk-through accordingly.
 
 ## Step 2: Download cumulative update (CU)
 
@@ -79,33 +77,39 @@ The paths in this article assume the Windows ADK was installed to the default lo
 
 ## Step 3: Backup existing boot image
 
-Before modifying the desired boot image, make a backup copy of the boot image. For example:
+Before modifying the desired boot image, make a backup copy of the boot image that needs to be updated. For example:
 
 - For the boot image included with the **Windows PE add-on for the Windows ADK**, the boot image is located at `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim`.
 
 - For the boot image included with Microsoft Configuration Manager, the boot image is located at `<ConfigMgr_Install_Directory>\OSD\boot\x64\boot.wim`
 
-## Step 4: Mount boot image to temporary mount folder
+## Step 4: Mount boot image to mount folder
 
-Create a new empty empty folder to mount the boot image to. For example, `C:\Mount`.
+1. Create a new empty empty folder to mount the boot image to. For example, `C:\Mount`.
 
-### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
+1. Mount the boot image to the mount folder using one of the following methods:
 
-```powershell
-Mount-WindowsImage -Path "<Mount_folder_path>" -ImagePath "<Boot_image_path>\<boot_image>.wim" -Index 1 -Verbose
-```
+  ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
-For more information, see [Mount-WindowsImage](/powershell/module/dism/mount-windowsimage).
+  From an elevated **PowerShell** command prompt, run the following command to mount the boot image to the mount folder:
 
-### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+  ```powershell
+  Mount-WindowsImage -Path "<Mount_folder_path>" -ImagePath "<Boot_image_path>\<boot_image>.wim" -Index 1 -Verbose
+  ```
 
-```cmd
-DISM.exe /Mount-image /imagefile:"<Boot_image_path>" /Index:1 /MountDir:"<Mount_folder_path>"
-```
+  For more information, see [Mount-WindowsImage](/powershell/module/dism/mount-windowsimage).
 
-For more information, see [Modify a Windows image using DISM: Mount an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism) and [DISM Image Management Command-Line Options: /Mount-Image](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14#mount-image).
+  ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
 
----
+  From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to mount the boot image to the mount folder:
+
+  ```cmd
+  DISM.exe /Mount-image /imagefile:"<Boot_image_path>" /Index:1 /MountDir:"<Mount_folder_path>"
+  ```
+
+  For more information, see [Modify a Windows image using DISM: Mount an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism) and [DISM Image Management Command-Line Options: /Mount-Image](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14#mount-image).
+
+  ---
 
 ## Step 5: Add drivers to boot image
 
@@ -113,11 +117,15 @@ If needed, add any drivers to the boot image:
 
 ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
+From an elevated **PowerShell** command prompt, run the following command to add drivers to the boot image:
+
 ```powershell
 Command to be determined
 ```
 
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+
+From an elevated **Deployment and Imaging Tools Environment** command prompt, run one of the following command to add drivers to the boot image:
 
 ```cmd
 DISM.exe /Image:"<Mount_folder_path>" /Add-Driver /Driver:"<Driver_INF_source_path>\<driver>.inf"
@@ -143,6 +151,8 @@ For more information, see [Add and Remove Driver packages to an offline Windows 
 
     ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
+    From an elevated **PowerShell** command prompt, run the following command to add optional components to the boot image:
+
     ```powershell
     Add-WindowsPackage -PackagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\<Component>.cab" -Path "<Mount_folder_path>" -Verbose
     ```
@@ -152,6 +162,8 @@ For more information, see [Add and Remove Driver packages to an offline Windows 
     For more information, see [Add-WindowsPackage](/powershell/module/dism/add-windowspackage).
 
     ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+
+    From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to add optional components to the boot image:
 
     ```cmd
     DISM.exe /Image:"<Mount_folder_path>" /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\<Component>.cab" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\<Component2>.cab"
@@ -171,19 +183,23 @@ For more information, see [Add and Remove Driver packages to an offline Windows 
 
     ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
+    From an elevated **PowerShell** command prompt, run the following command to add the language components for the optional components to the boot image:
+
     ```powershell
     Add-WindowsPackage -PackagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\<Component>_en-us.cab" -Path "<Mount_folder_path>" -Verbose
     ```
 
-    This example assumes an x64 boot image. If a different architecture is being used, then adjust the commands accordingly.
+    This example assumes a 64-bit boot image. If a different architecture is being used, then adjust the paths accordingly.
 
     ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+
+    From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to add the language components for the optional components to the boot image:
 
     ```cmd
     DISM.exe /Image:"<Mount_folder_path>" /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\<Component>_en-us.cab" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\<Component2>_en-us.cab"
     ```
 
-    This example assumes an x64 boot image. If a different architecture is being used, then adjust the commands accordingly.
+    This example assumes a 64-bit boot image. If a different architecture is being used, then adjust the paths accordingly.
 
     You can add as many desired optional components as needed on a single DISM.exe command line.
 
@@ -210,6 +226,8 @@ Apply the cumulative update (CU) downloaded earlier in the walkthrough to the bo
 
 ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
+From an elevated **PowerShell** command prompt, run the following command to add the cumulative update (CU) to the boot image:
+
 ```powershell
 Add-WindowsPackage -PackagePath "<Path_to_CU_MSU_update>" -Path "<Mount_folder_path>" -Verbose
 ```
@@ -217,6 +235,8 @@ Add-WindowsPackage -PackagePath "<Path_to_CU_MSU_update>" -Path "<Mount_folder_p
 For more information, see [Add-WindowsPackage](/powershell/module/dism/add-windowspackage)
 
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+
+From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to add the cumulative update (CU) to the boot image:
 
 ```cmd
 DISM.exe /Image:"<Mount_folder_path>" /Add-Package /PackagePath:"<Path_to_CU_MSU_update>"
@@ -230,11 +250,13 @@ For more information, see [Add or Remove Packages Offline Using DISM](/windows-h
 >
 > Make sure not to apply the cumulative update (CU) until all desired optional components have been installed. This will make sure that the optional components are also properly updated by the cumulative update. If in the future any additional optional components need to be added to the boot image, make sure to reapply the cumulative update.
 
-## Step 8: Copy boot files from mounted image to ADK installation path
+## Step 8: Copy boot files from mounted boot image to ADK installation path
 
 Copy the updated bootmgr files from the updated boot image to the ADK installation path:
 
 ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
+
+From an elevated **PowerShell** command prompt, run the following command to copy the boot files from the mounted boot image to the ADK installation path:
 
 ```powershell
 Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi" -Force
@@ -243,6 +265,8 @@ Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files 
 ```
 
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+
+From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to copy the boot files from the mounted boot image to the ADK installation path:
 
 ```cmd
 Command to be determined
@@ -254,9 +278,11 @@ This step doesn't update or change the boot image. However, it makes sure that t
 
 ## Step 9: Perform component cleanup
 
-Run **DISM.exe** commands that will clean up the mounted image and help reduce its size:
+Run **DISM.exe** commands that will clean up the mounted boot image and help reduce its size:
 
 ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
+
+From an elevated **PowerShell** command prompt, run the following command to clean up the mounted boot image and help reduce its size:
 
 ```powershell
 Start-Process "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\DISM\dism.exe" -ArgumentList " /Image:"<Mount_folder_path>" /Cleanup-image /StartComponentCleanup /Resetbase /Defer" -Wait -LoadUserProfile
@@ -265,6 +291,8 @@ Start-Process "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment 
 ```
 
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+
+From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to clean up the mounted boot image and help reduce its size:
 
 ```cmd
 DISM.exe /Image:"<Mount_folder_path>" /Cleanup-image /StartComponentCleanup /Resetbase /Defer
@@ -282,6 +310,8 @@ After the optional components and the cumulative update (CU) have been applied t
 
 ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
+From an elevated **PowerShell** command prompt, run the following command to verify that all optional components and the cumulative update (CU) have been applied to the boot image:
+
 ```powershell
 Get-WindowsPackage -Path "<Mount_folder_path>"
 ```
@@ -289,6 +319,8 @@ Get-WindowsPackage -Path "<Mount_folder_path>"
 For more information, see [Get-WindowsPackage](/powershell/module/dism/get-windowspackage).
 
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+
+From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to verify that all optional components and the cumulative update (CU) have been applied to the boot image:
 
 ```cmd
 DISM.exe /Image:"<Mount_folder_path>" /Get-Packages
@@ -302,6 +334,8 @@ For more information, see [DISM Operating System Package (.cab or .msu) Servicin
 
 Once drivers, optional components, and the cumulative update (CU) have been applied to the boot image, unmount the boot image and save changes.
 
+From an elevated **PowerShell** command prompt, run the following command to unmount the boot image and save changes:
+
 ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
 ```powershell
@@ -311,6 +345,8 @@ Dismount-WindowsImage -Path "<Mount_folder_path>" -Save -Verbose
 For more information, see [Dismount-WindowsImage](/powershell/module/dism/dismount-windowsimage).
 
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+
+From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to unmount the boot image and save changes:
 
 ```cmd
 DISM.exe /Unmount-Image /MountDir:"<Mount_folder_path>" /Commit
@@ -326,6 +362,8 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
 
     ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
+    From an elevated **PowerShell** command prompt, run the following command to further reduce the size of the boot image by exporting it:
+
     ```powershell
     Export-WindowsImage -SourceImagePath "<Boot_image_path>\<boot_image>.wim" -SourceIndex 1 -DestinationImagePath "<Boot_image_path>\<boot_image>-export.wim" -CompressionType max -Verbose
     ```
@@ -333,6 +371,8 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
     For more information, see [Export-WindowsImage](/powershell/module/dism/export-windowsimage).
 
     ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+
+    From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to further reduce the size of the boot image by exporting it:
 
     ```cmd
     DISM.exe /Export-Image /SourceImageFile:"<Boot_image_path>\<boot_image>.wim" /SourceIndex:1 /DestinationImageFile:"<Boot_image_path>\<boot_image>-export.wim"
@@ -342,10 +382,19 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
 
     ---
 
-1. Once the export has completed, delete the original updated boot image and then rename the exported boot image with the name of the original updated boot image.
+1. Once the export has completed:
+  
+    1. Delete the original updated boot image.
+    1. Rename the exported boot image with the name of the original updated boot image.
 
 ## Microsoft Configuration Manager considerations
 
 ## Microsoft Deployment Toolkit (MDT) considerations
 
 ## Windows Deployment Services (WDS) considerations
+
+The **boot.wim** that is part of Windows installation media isn't supported for use for deploying Windows 11 with Windows Deployment Services (WDS). For more information, see [Windows Deployment Services (WDS) boot.wim support](wds-boot-support.md)
+
+## Windows Server 2012 R2
+
+This walk-through isn't intended for use with Windows Server 2012 R2. There may be additional steps necessary when using Windows Server 2012 R2, such as also having to apply the latest servicing stack update (SSU) to the WinPE boot image. For server OSes, it's strongly recommended to use Windows Server 2016 or later for this walk-through. For more information see, [Windows Server 2012 R2 Lifecycle](/lifecycle/products/windows-server-2012-r2).
