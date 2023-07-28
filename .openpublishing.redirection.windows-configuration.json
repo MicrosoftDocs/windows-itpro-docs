@@ -1,0 +1,289 @@
+{
+  "redirections": [
+    {
+      "source_path": "windows/configuration/basic-level-windows-diagnostic-events-and-fields-1703.md",
+      "redirect_url": "/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1703",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/basic-level-windows-diagnostic-events-and-fields-1709.md",
+      "redirect_url": "/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1709",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/basic-level-windows-diagnostic-events-and-fields.md",
+      "redirect_url": "/windows/privacy/basic-level-windows-diagnostic-events-and-fields",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/configure-devices-without-mdm.md",
+      "redirect_url": "/windows/configuration/provisioning-packages/provisioning-packages",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/configure-windows-diagnostic-data-in-your-organization.md",
+      "redirect_url": "/windows/privacy/configure-windows-diagnostic-data-in-your-organization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/configure-windows-telemetry-in-your-organization.md",
+      "redirect_url": "/windows/configuration/configure-windows-diagnostic-data-in-your-organization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/cortana-at-work/cortana-at-work-crm.md",
+      "redirect_url": "/windows/resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/cortana-at-work/cortana-at-work-powerbi.md",
+      "redirect_url": "/windows/resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/diagnostic-data-viewer-overview.md",
+      "redirect_url": "/windows/privacy/diagnostic-data-viewer-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/enhanced-diagnostic-data-windows-analytics-events-and-fields.md",
+      "redirect_url": "/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/EventName.md",
+      "redirect_url": "/windows/configuration/enhanced-telemetry-windows-analytics-events-and-fields",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/gdpr-win10-whitepaper.md",
+      "redirect_url": "/windows/privacy/gdpr-win10-whitepaper",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk-shared-pc.md",
+      "redirect_url": "/windows/configuration/kiosk-methods",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/kiosk-troubleshoot.md",
+      "redirect_url": "/troubleshoot/windows-client/shell-experience/kiosk-mode-issues-troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/manage-connections-from-windows-operating-system-components-to-microsoft-services.md",
+      "redirect_url": "/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/manage-wifi-sense-in-enterprise.md",
+      "redirect_url": "/windows/resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/manage-windows-endpoints-version-1709.md",
+      "redirect_url": "/windows/privacy/manage-windows-endpoints",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/mobile-devices/configure-mobile.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/mobile-devices/lockdown-xml.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/mobile-devices/mobile-lockdown-designer.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/mobile-devices/product-ids-in-windows-10-mobile.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/mobile-devices/provisioning-configure-mobile.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/mobile-devices/provisioning-nfc.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/mobile-devices/provisioning-package-splitter.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/mobile-devices/set-up-a-kiosk-for-windows-10-for-mobile-edition.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/mobile-devices/settings-that-can-be-locked-down.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/mobile-devices/start-layout-xml-mobile.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/multi-app-kiosk-troubleshoot.md",
+      "redirect_url": "/windows/configuration/kiosk-troubleshoot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/multi-app-kiosk-xml.md",
+      "redirect_url": "/windows/configuration/kiosk-xml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/provisioning-packages/provision-pcs-with-apps-and-certificates.md",
+      "redirect_url": "/windows/configuration/provisioning-packages/provision-pcs-with-apps",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/set-up-a-device-for-anyone-to-use.md",
+      "redirect_url": "/windows/configuration/kiosk-shared-pc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/set-up-a-kiosk-for-windows-10-for-desktop-editions.md",
+      "redirect_url": "/windows/configuration/setup-kiosk-digital-signage",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/setup-kiosk-digital-signage.md",
+      "redirect_url": "/windows/configuration/kiosk-single-app",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/start-layout-troubleshoot.md",
+      "redirect_url": "/troubleshoot/windows-client/shell-experience/troubleshoot-start-menu-errors",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/start-taskbar-lockscreen.md",
+      "redirect_url": "/windows/configuration/windows-10-start-layout-options-and-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/stop-employees-from-using-the-windows-store.md",
+      "redirect_url": "/windows/configuration/stop-employees-from-using-microsoft-store",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/use-json-customize-start-menu-windows.md",
+      "redirect_url": "/windows/configuration/customize-start-menu-layout-windows-11",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-automatictime.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-callandmessagingenhancement.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-calling.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-deviceinfo.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-embeddedlockdownprofiles.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-initialsetup.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-internetexplorer.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-messaging.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-modemconfigurations.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-multivariant.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-nfc.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-otherassets.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-rcspresence.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-shell.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-textinput.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-theme.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/windows-10-accessibility-for-ITPros.md",
+      "redirect_url": "/windows/configuration/windows-accessibility-for-ITPros",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/windows-diagnostic-data-1703.md",
+      "redirect_url": "/windows/privacy/windows-diagnostic-data-1703",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/windows-diagnostic-data-1709.md",
+      "redirect_url": "/windows/configuration/windows-diagnostic-data",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/configuration/windows-diagnostic-data.md",
+      "redirect_url": "/windows/privacy/windows-diagnostic-data",
+      "redirect_document_id": false
+    }
+  ]
+}

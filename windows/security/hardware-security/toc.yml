@@ -48,6 +48,8 @@ items:
         href: https://techcommunity.microsoft.com/t5/windows-os-platform-blog/understanding-hardware-enforced-stack-protection/ba-p/1247815
       - name: Secured-core PC 🔗
         href: /windows-hardware/design/device-experiences/oem-highly-secure-11
+      - name: Secured-core PC configuration lock
+        href: /windows/client-management/config-lock 🔗
       - name: Kernel Direct Memory Access (DMA) protection
         href: kernel-dma-protection-for-thunderbolt.md
       - name: System Guard Secure Launch
