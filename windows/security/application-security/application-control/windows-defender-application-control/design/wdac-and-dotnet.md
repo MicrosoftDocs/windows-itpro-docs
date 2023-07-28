@@ -14,11 +14,11 @@ The EA set on the NI file only applies to the currently active WDAC policies. If
 
 In some cases, if an NI file is blocked, you may see a "false positive" block event in the *CodeIntegrity - Operational* event log as described in [WDAC Admin Tips & Known Issues](/windows/security/threat-protection/windows-defender-application-control/operations/known-issues#net-native-images-may-generate-false-positive-block-events).
 
-To mitigate any performance impact caused when the WDAC EA isn't valid or missing, use any of the following strategies:
+To mitigate any performance impact caused when the WDAC EA isn't valid or missing:
 
-1. Work with the app developer to pre-compile their NI and digitally sign it. Then, ensure your WDAC policies allow that signature;
-2. Run *ngen.exe update* to force .NET to regenerate all NI files immediately after applying changes to your WDAC policies;
-3. [Create and sign a catalog file](/windows/security/threat-protection/windows-defender-application-control/deploy-catalog-files-to-support-windows-defender-application-control) for the native images
+- Avoid updating the WDAC policies often.
+- Run `ngen update` (on all machine architectures) to force .NET to regenerate all NI files immediately after applying changes to your WDAC policies.
+- Migrate applications to .NET Core (.NET 6 or greater).
 
 ## WDAC and .NET hardening
 

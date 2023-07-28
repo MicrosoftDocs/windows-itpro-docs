@@ -110,11 +110,11 @@ Autopatch groups set up the [feature updates for Windows 10 and later policies](
 
 | Policy name | Azure AD group assignment |Feature update version | Rollout options | First deployment ring availability | Final deployment ring availability | Day between deployment rings | Support end date |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| Windows Autopatch - DSS Policy [Test] | Windows Autopatch - Test | Windows 10 20H2 | Make update available as soon as possible | N/A | N/A | N/A | May 8, 2023; 7:00PM |
-| Windows Autopatch - DSS Policy [Ring1] | Windows Autopatch - Ring1 | Windows 10 20H2 | Make update available as soon as possible | N/A | N/A | N/A | May 8, 2023; 7:00PM |
-| Windows Autopatch - DSS Policy [Ring2] | Windows Autopatch - Ring2 | Windows 10 20H2 | Make update available as soon as possible | December 14, 2022 | December 21, 2022 | 1 | May 8, 2023; 7:00PM |
-| Windows Autopatch - DSS Policy [Ring3] | Windows Autopatch - Ring3 | Windows 10 20H2 | Make update available as soon as possible | December 15, 2022 | December 29, 2022 | 1 | May 8, 2023; 7:00PM |
-| Windows Autopatch - DSS Policy [Last] | Windows Autopatch - Last | Windows 10 20H2 | Make update available as soon as possible | December 15, 2022 | December 29, 2022 | 1 | May 8, 2023; 7:00PM |
+| Windows Autopatch - DSS Policy [Test] | Windows Autopatch - Test | Windows 10 21H2 | Make update available as soon as possible | N/A | N/A | N/A | June 11, 2024; 1:00AM |
+| Windows Autopatch - DSS Policy [Ring1] | Windows Autopatch - Ring1 | Windows 10 21H2 | Make update available as soon as possible | N/A | N/A | N/A | June 11, 2024; 1:00AM |
+| Windows Autopatch - DSS Policy [Ring2] | Windows Autopatch - Ring2 | Windows 10 21H2 | Make update available as soon as possible | December 14, 2022 | December 21, 2022 | 1 | June 11, 2024; 1:00AM |
+| Windows Autopatch - DSS Policy [Ring3] | Windows Autopatch - Ring3 | Windows 10 21H2 | Make update available as soon as possible | December 15, 2022 | December 29, 2022 | 1 | June 11, 2024; 1:00AM |
+| Windows Autopatch - DSS Policy [Last] | Windows Autopatch - Last | Windows 10 21H2 | Make update available as soon as possible | December 15, 2022 | December 29, 2022 | 1 | June 11, 2024; 1:00AM |
 
 ### About Custom Autopatch groups
 
