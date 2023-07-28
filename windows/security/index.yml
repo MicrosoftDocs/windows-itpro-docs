@@ -14,7 +14,21 @@ metadata:
   ms.author: paoloma
   manager: aaroncz
   ms.date: 07/28/2023
-  
+
+highlightedContent:
+  items:
+  - title: Get started with Windows 11
+    itemType: get-started
+    url: /windows/whats-new/windows-11-overview
+  - title: Windows 11, version 22H2
+    itemType: whats-new
+    url: /windows/whats-new/whats-new-windows-11-version-22H2
+  - title: Windows 11, version 22H2 group policy settings reference 
+    itemType: download
+    url: https://www.microsoft.com/en-us/download/details.aspx?id=104594
+  - title: Windows security features licensing
+    itemType: overview
+    url: /windows/whats-new/windows-licensing
   
 productDirectory:
   items:
