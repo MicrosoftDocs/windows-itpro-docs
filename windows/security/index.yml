@@ -1,8 +1,9 @@
+title: Windows client security documentation
+description: Learn how to secure Windows clients for your organization.
+summary: test
+brand: windows
+
 metadata:
-  title: Windows client security documentation
-  description: Learn how to secure Windows clients for your organization.
-  summary: test
-  brand: windows
   ms.topic: hub-page
   ms.prod: windows-client
   ms.collection:
