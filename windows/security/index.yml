@@ -1,162 +1,150 @@
-### YamlMime:Landing
-
-title: Windows security
-summary: Built with Zero Trust principles at the core to safeguard data and access anywhere, keeping you protected and productive.
-
 metadata:
-  title: Windows security
-  description: Learn about Windows security technologies and how to use them to protect your data and devices.
-  ms.topic: landing-page
+  title: Windows client security documentation
+  description: Learn how to secure Windows clients for your organization.
+  summary: test
+  brand: windows
+  ms.topic: hub-page
   ms.prod: windows-client
-  ms.technology: itpro-security
   ms.collection:
+    - highpri
     - tier1
   author: paolomatarazzo
   ms.author: paoloma
-  ms.date: 12/19/2022
+  manager: aaroncz
+  ms.date: 07/28/2023
+  
+  
+  productDirectory:
+  items:
 
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+    - title: Hardware security
+      imageSrc: /media/common/i_usb.svg
+      links:
+        - url: /windows/security/hardware-security
+          text: Trusted Platform Module
+        - url: /windows/security/hardware-security
+          text: Windows Defender System Guard firmware protection
+        - url: /windows/security/hardware-security
+          text: System Guard Secure Launch and SMM protection enablement
+        - url: /windows/security/hardware-security
+          text: Virtualization-based protection of code integrity
+        - url: /windows/security/hardware-security
+          text: Kernel DMA Protection
+        - url: /windows/security/hardware-security
+          text: Learn more about hardware security >
 
-landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: Zero Trust and Windows
-    linkLists:
-      - linkListType: overview
-        links:
-        - text: Overview
-          url: zero-trust-windows-device-health.md
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: Hardware security
-    linkLists:
-      - linkListType: overview
-        links:
-        - text: Overview
-          url: hardware.md
-      - linkListType: concept
-        links:
-        - text: Trusted Platform Module
-          url: information-protection/tpm/trusted-platform-module-top-node.md
-        - text: Windows Defender System Guard firmware protection
-          url: hardware-security/how-hardware-based-root-of-trust-helps-protect-windows.md
-        - text: System Guard Secure Launch and SMM protection enablement
-          url: hardware-security/system-guard-secure-launch-and-smm-protection.md
-        - text: Virtualization-based protection of code integrity
-          url: hardware-security/enable-virtualization-based-protection-of-code-integrity.md
-        - text: Kernel DMA Protection
-          url: hardware-security/kernel-dma-protection-for-thunderbolt.md
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: Operating system security
-    linkLists:
-      - linkListType: overview
-        links:
-        - text: Overview
-          url: operating-system-security/index.md
-      - linkListType: concept
-        links:
-        - text: Trusted boot
-          url: operating-system-security\system-security\trusted-boot.md
-        - text: Windows security baselines
-          url: operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines.md
-        - text: Virtual private network guide
-          url: operating-system-security/network-security/vpn/vpn-guide.md
-        - text: Windows Defender Firewall
-          url: operating-system-security/network-security/windows-firewall/windows-firewall-with-advanced-security.md
-        - text: Virus & threat protection
-          url: threat-protection/index.md
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: Application security
-    linkLists:
-      - linkListType: overview
-        links:
-        - text: Overview
-          url: application-security/index.md
-      - linkListType: concept
-        links:
-        - text: Application Control and virtualization-based protection
-          url: application-security/application-control/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
-        - text: Application Control
-          url: application-security/application-control/windows-defender-application-control/wdac.md
-        - text: Application Guard
-          url: application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview.md
-        - text: Windows Sandbox
-          url: application-security\application-isolation\windows-sandbox\windows-sandbox-overview.md
-        - text: Microsoft Defender SmartScreen
-          url: operating-system-security\virus-and-threat-protection\microsoft-defender-smartscreen\index.md
-        - text: S/MIME for Windows
-          url: operating-system-security/data-protection/configure-s-mime.md
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: User security and secured identity
-    linkLists:
-      - linkListType: overview
-        links:
-        - text: Overview
-          url: identity.md
-      - linkListType: concept
-        links:
-        - text: Windows Hello for Business
-          url: identity-protection/hello-for-business/index.md
-        - text: Protect domain credentials
-          url: identity-protection/credential-guard/credential-guard.md
-        - text: Windows Defender Credential Guard
-          url: identity-protection/credential-guard/credential-guard.md
-        - text: Lost or forgotten passwords
-          url: identity-protection/password-support-policy.md
-        - text: Access control
-          url: identity-protection/access-control/access-control.md
-        - text: Smart cards
-          url: identity-protection/smart-cards/smart-card-windows-smart-card-technical-reference.md
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: Cloud services
-    linkLists:
-      - linkListType: concept
-        links:
-        - text: Mobile device management
-          url: /windows/client-management/mdm/
-        - text: Azure Active Directory
-          url: https://www.microsoft.com/security/business/identity-access-management/azure-active-directory
-        - text: Your Microsoft Account
-          url: identity-protection/access-control/microsoft-accounts.md
-        - text: OneDrive
-          url: /onedrive/onedrive
-        - text: Family safety
-          url: operating-system-security\system-security\windows-defender-security-center\wdsc-family-options.md
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: Security foundations
-    linkLists:
-      - linkListType: overview
-        links:
-        - text: Overview
-          url: security-foundations/index.md
-      - linkListType: reference
-        links:
-          - text: Microsoft Security Development Lifecycle
-            url: threat-protection/msft-security-dev-lifecycle.md
-          - text: Microsoft Bug Bounty
-            url: /microsoft-365/security/intelligence/microsoft-bug-bounty-program
-          - text: Common Criteria Certifications
-            url: threat-protection/windows-platform-common-criteria.md
-          - text: Federal Information Processing Standard (FIPS) 140 Validation
-            url: threat-protection/fips-140-validation.md
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: Privacy controls
-    linkLists:
-      - linkListType: reference
-        links:
-        - text: Windows and Privacy Compliance
-          url: /windows/privacy/windows-10-and-privacy-compliance
+    - title: OS security
+      imageSrc: /media/common/i_threat-protection.svg
+      links:
+        - url: /windows/security/operating-system-security
+          text: Trusted boot
+        - url: /windows/security/operating-system-security
+          text: Encryption and data protection
+        - url: /windows/security/operating-system-security
+          text: Windows security baselines
+        - url: /windows/security/operating-system-security
+          text: Network security
+        - url: /windows/security/operating-system-security
+          text: Microsoft Defender Application Guard
+        - url: /windows/security/operating-system-security
+          text: Learn more about OS security >
+
+    - title: Identity protection
+      imageSrc: /media/common/i_identity-protection.svg
+      links:
+        - url: /windows/security/identity-protection
+          text: Access control
+        - url: /windows/security/identity-protection/credential-guard
+          text: Windows Defender Credential Guard
+        - url: /windows/security/identity-protection/hello-for-business
+          text: Windows Hello for Business
+        - url: /windows/security/identity-protection
+          text: Smart cards
+        - url: /windows/security/identity-protection
+          text: Virtual smart cards
+        - url: /windows/security/identity-protection
+          text: Learn more about identity protection >
+
+    - title: Application security
+      imageSrc: /media/common/i_queries.svg
+      links:
+        - url: /windows/security/application-security
+          text: Feature 1
+        - url: /windows/security/application-security
+          text: Feature 2
+        - url: /windows/security/application-security
+          text: Feature 3
+        - url: /windows/security/application-security
+          text: Feature 4
+        - url: /windows/security/application-security
+          text: Feature 5
+        - url: /windows/security/application-security
+          text: Learn more about application security >
+
+    - title: Security foundations
+      imageSrc: /media/common/i_build.svg
+      links:
+        - url: /windows/security/security-foundations
+          text: Feature 1
+        - url: /windows/security/security-foundations
+          text: Feature 2
+        - url: /windows/security/security-foundations
+          text: Feature 3
+        - url: /windows/security/security-foundations
+          text: Feature 4
+        - url: /windows/security/security-foundations
+          text: Feature 5
+        - url: /windows/security/security-foundations
+          text: Learn more about security foundations >
+
+    - title: Cloud security
+      imageSrc: /media/common/i_cloud-security.svg
+      links:
+        - url: /windows/security/cloud-security
+          text: Feature 1
+        - url: /windows/security/cloud-security
+          text: Feature 2
+        - url: /windows/security/cloud-security
+          text: Feature 3
+        - url: /windows/security/cloud-security
+          text: Feature 4
+        - url: /windows/security/cloud-security
+          text: Feature 5
+        - url: /windows/security/cloud-security
+          text: Learn more about cloud security >
+
+additionalContent:
+  sections:
+    - title: More Windows resources
+      items:
+
+        - title: Windows Server
+          links:
+            - text: Windows Server documentation
+              url: /windows-server
+            - text: What's new in Windows Server 2022?
+              url: /windows-server/get-started/whats-new-in-windows-server-2022
+            - text: Windows Server blog
+              url: https://cloudblogs.microsoft.com/windowsserver/
+
+        - title: Windows product site and blogs
+          links:
+            - text: Find out how Windows enables your business to do more
+              url: https://www.microsoft.com/microsoft-365/windows
+            - text: Windows blogs
+              url: https://blogs.windows.com/
+            - text: Windows IT Pro blog
+              url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog
+            - text: Microsoft Intune blog
+              url: https://techcommunity.microsoft.com/t5/microsoft-intune-blog/bg-p/MicrosoftEndpointManagerBlog
+            - text: "Windows help & learning: end-user documentation"
+              url: https://support.microsoft.com/windows
+
+        - title: Participate in the community
+          links:
+            - text: Windows community
+              url: https://techcommunity.microsoft.com/t5/windows/ct-p/Windows10
+            - text: Microsoft Intune community
+              url: https://techcommunity.microsoft.com/t5/microsoft-intune/bd-p/Microsoft-Intune
+            - text: Microsoft Support community
+              url: https://answers.microsoft.com/windows/forum
