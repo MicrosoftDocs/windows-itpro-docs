@@ -1,15 +1,11 @@
 ---
 title: Using Outlook on the web with WIP 
 description: Options for using Outlook on the web with Windows Information Protection (WIP).
-ms.prod: windows-client
-ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.topic: conceptual
 ms.date: 02/26/2019
-ms.reviewer: 
-ms.technology: itpro-security
 ---
 
 # Using Outlook on the web with Windows Information Protection (WIP)

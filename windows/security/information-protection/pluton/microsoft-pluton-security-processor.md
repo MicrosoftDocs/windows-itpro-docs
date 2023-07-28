@@ -1,17 +1,10 @@
 ---
 title: Microsoft Pluton security processor
 description: Learn more about Microsoft Pluton security processor
-ms.reviewer: 
-ms.prod: windows-client
-author: vinaypamnani-msft
-ms.author: vinpa
-manager: aaroncz
-ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 09/15/2022
 appliesto: 
   - ✅ <b>Windows 11, version 22H2</b>
-ms.technology: itpro-security
 ---
 
 # Microsoft Pluton security processor
