@@ -51,6 +51,8 @@ Microsoft recommends updating Windows PE (WinPE) boot images with the latest cum
 
     When installing the Windows ADK, for the purpose of this walk-through, it's only necessary to install the **Deployment Tools**. One of the tools installed will be the **Deployment and Imaging Tools Environment** command prompt. When using the **Command Line** option instead of the **PowerShell** option to run the commands in this walk-through, make sure to run the commands from the **Deployment and Imaging Tools Environment** command prompt. The **Deployment and Imaging Tools Environment** command prompt can be found in the Start Menu under **Windows Kits** > **Deployment and Imaging Tools Environment**.
 
+    The paths in this article assume the Windows ADK was installed to the default location of `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit`. If the Windows ADK was installed to a different location, then adjust the paths during the walk-through accordingly.
+
 1. Download and install the **Windows PE add-on for the Windows ADK** from [Download and install the Windows ADK](/windows-hardware/get-started/adk-install). The **Windows PE add-on for the Windows ADK** is a separate download and install from the **Windows Assessment and Deployment Kit (Windows ADK)**. Make sure to individually download and install both.
 
 > [!IMPORTANT]
@@ -59,9 +61,7 @@ Microsoft recommends updating Windows PE (WinPE) boot images with the latest cum
 >
 > However, since the Microsoft Deployment Toolkit (MDT) doesn't support versions of Windows or the Windows ADK beyond Windows 10, the recommendation is to instead use the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads). This version was the last version of the Windows ADK supported by MDT.
 >
-> Additionally, the latest versions of the **Windows PE add-on for the Windows ADK** only includes 64-bit boot images. If a 32-bit boot image is required, then the recommendation in this scenario is to also use the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads). This version was the last version of the Windows ADK to include both 32-bit and 64-bit boot images.
-
-The paths in this article assume the Windows ADK was installed to the default location of `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit`. If the Windows ADK was installed to a different location, then adjust the paths during the walk-through accordingly.
+> Additionally, the latest versions of the **Windows PE add-on for the Windows ADK** only includes 64-bit boot images. If a 32-bit boot image is required, then the recommendation in this scenario is to also use the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads). This version of the Windows ADK was the last version to include both 32-bit and 64-bit boot images.
 
 ## Step 2: Download cumulative update (CU)
 
@@ -344,9 +344,9 @@ For more information, see [DISM Operating System Package (.cab or .msu) Servicin
 
 Once drivers, optional components, and the cumulative update (CU) have been applied to the boot image, unmount the boot image and save changes.
 
-From an elevated **PowerShell** command prompt, run the following command to unmount the boot image and save changes:
-
 ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
+
+From an elevated **PowerShell** command prompt, run the following command to unmount the boot image and save changes:
 
 ```powershell
 Dismount-WindowsImage -Path "<Mount_folder_path>" -Save -Verbose
@@ -403,7 +403,7 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
 
 ## Windows Deployment Services (WDS) considerations
 
-The **boot.wim** that is part of Windows installation media isn't supported for use for deploying Windows 11 with Windows Deployment Services (WDS). For more information, see [Windows Deployment Services (WDS) boot.wim support](wds-boot-support.md)
+The **boot.wim** that is part of Windows installation media isn't supported for deploying Windows 11 with Windows Deployment Services (WDS). Additionally, the **boot.wim** from Windows 11 installation media isn't supported for deploying any version of Windows with Windows Deployment Services (WDS). For more information, see [Windows Deployment Services (WDS) boot.wim support](wds-boot-support.md)
 
 ## Windows Server 2012 R2
 
