@@ -62,6 +62,11 @@ sections:
           Microsoft content, such as Windows updates, are hosted and delivered globally via Content Delivery Networks (CDNs) and [Microsoft Connected Cache](waas-microsoft-connected-cache.md) (MCC) servers, which are hosted within Internet Service Provider (ISP) networks. 
           The network of CDNs and MCCs allows Microsoft to reach the scale required to meet the demand of the Windows user base. Given this delivery infrastructure changes dynamically, providing an exhaustive list of IPs and keeping it up to date isn't feasible. 
         
+      - question: Delivery Optimization is downloading Windows content on my devices directly from an IP Address, is it expected? 
+        answer: | 
+          When Delivery Optimization downloads from a [Microsoft Connected Cache](waas-microsoft-connected-cache.md) server that is hosted by your Internet Service Provider, the download will be pulled directly from the IP Address of that server. If the Microsoft Connected cache is not available, the download will fallback seamlessly to the CDN instead.
+          Delivery Optimization Peers are used in parallel if available. 
+
       - question: Does Delivery Optimization use multicast?
         answer: No. It relies on the cloud service for peer discovery, resulting in a list of peers and their IP addresses. Client devices then connect to their peers to obtain download files over TCP/IP.
           
