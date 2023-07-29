@@ -35,7 +35,7 @@ Microsoft recommends updating Windows PE (WinPE) boot images with the latest cum
 - [Step 1: Download and install ADK](#step-1-download-and-install-adk)
 - [Step 2: Download cumulative update (CU)](#step-2-download-cumulative-update-cu)
 - [Step 3: Backup existing boot image](#step-3-backup-existing-boot-image)
-- [Step 4: Mount boot image to temporary mount folder](#step-4-mount-boot-image-to-temporary-mount-folder)
+- [Step 4: Mount boot image to mount folder](#step-4-mount-boot-image-to-mount-folder)
 - [Step 5: Add drivers to boot image](#step-5-add-drivers-to-boot-image)
 - [Step 6: Add optional components to boot image](#step-6-add-optional-components-to-boot-image)
 - [Step 7: Add cumulative update (CU) to boot image](#step-7-add-cumulative-update-cu-to-boot-image)
@@ -49,7 +49,7 @@ Microsoft recommends updating Windows PE (WinPE) boot images with the latest cum
 
 1. Download and install the **Windows Assessment and Deployment Kit (Windows ADK)** from [Download and install the Windows ADK](/windows-hardware/get-started/adk-install).
 
-  When installing the Windows ADK, for the purpose of this walk-through, it's only necessary to install the **Deployment Tools**. One of the tools installed will be the **Deployment and Imaging Tools Environment** command prompt. When using the **Command Line** option instead of the **PowerShell** option to run the commands in this walk-through, make sure to run the commands from the **Deployment and Imaging Tools Environment** command prompt. The **Deployment and Imaging Tools Environment** command prompt can be found in the Start Menu under **Windows Kits** > **Deployment and Imaging Tools Environment**.
+    When installing the Windows ADK, for the purpose of this walk-through, it's only necessary to install the **Deployment Tools**. One of the tools installed will be the **Deployment and Imaging Tools Environment** command prompt. When using the **Command Line** option instead of the **PowerShell** option to run the commands in this walk-through, make sure to run the commands from the **Deployment and Imaging Tools Environment** command prompt. The **Deployment and Imaging Tools Environment** command prompt can be found in the Start Menu under **Windows Kits** > **Deployment and Imaging Tools Environment**.
 
 1. Download and install the **Windows PE add-on for the Windows ADK** from [Download and install the Windows ADK](/windows-hardware/get-started/adk-install). The **Windows PE add-on for the Windows ADK** is a separate download and install from the **Windows Assessment and Deployment Kit (Windows ADK)**. Make sure to individually download and install both.
 
@@ -99,25 +99,25 @@ Adjust the above paths for 32-bit boot images (only available in Windows 10 ADKs
 
 1. Mount the boot image to the mount folder using one of the following methods:
 
-  ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
+    ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
-  From an elevated **PowerShell** command prompt, run the following command to mount the boot image to the mount folder:
+    From an elevated **PowerShell** command prompt, run the following command to mount the boot image to the mount folder:
 
-  ```powershell
-  Mount-WindowsImage -Path "<Mount_folder_path>" -ImagePath "<Boot_image_path>\<boot_image>.wim" -Index 1 -Verbose
-  ```
+    ```powershell
+    Mount-WindowsImage -Path "<Mount_folder_path>" -ImagePath "<Boot_image_path>\<boot_image>.wim" -Index 1 -Verbose
+    ```
 
-  For more information, see [Mount-WindowsImage](/powershell/module/dism/mount-windowsimage).
+    For more information, see [Mount-WindowsImage](/powershell/module/dism/mount-windowsimage).
 
-  ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+    ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
 
-  From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to mount the boot image to the mount folder:
+    From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to mount the boot image to the mount folder:
 
-  ```cmd
-  DISM.exe /Mount-image /imagefile:"<Boot_image_path>" /Index:1 /MountDir:"<Mount_folder_path>"
-  ```
+    ```cmd
+    DISM.exe /Mount-image /imagefile:"<Boot_image_path>" /Index:1 /MountDir:"<Mount_folder_path>"
+    ```
 
-  For more information, see [Modify a Windows image using DISM: Mount an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism) and [DISM Image Management Command-Line Options: /Mount-Image](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14#mount-image).
+    For more information, see [Modify a Windows image using DISM: Mount an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism) and [DISM Image Management Command-Line Options: /Mount-Image](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14#mount-image).
 
   ---
 
