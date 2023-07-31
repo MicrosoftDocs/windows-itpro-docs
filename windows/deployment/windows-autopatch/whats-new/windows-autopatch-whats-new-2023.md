@@ -1,7 +1,7 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 07/25/2023 
+ms.date: 07/31/2023 
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
@@ -27,6 +27,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Article | Description |
 | ----- | ----- |
+| [Roles and responsibilities](../overview/windows-autopatch-roles-responsibilities.md) | Updated article to include Windows Autopatch groups |
 | [Windows Autopatch groups overview](../deploy/windows-autopatch-groups-overview.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
 | [Manage Windows Autopatch groups](../deploy/windows-autopatch-groups-manage-autopatch-groups.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
 | [Customize Windows Update settings](../operate/windows-autopatch-groups-windows-update.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
