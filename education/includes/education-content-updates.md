@@ -2,6 +2,16 @@
 
 
 
+## Week of July 24, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 7/24/2023 | [Windows 11 SE Overview](/education/windows/windows-11-se-overview) | modified |
+| 7/25/2023 | [Set up Windows devices for education](/education/windows/set-up-windows-10) | modified |
+| 7/25/2023 | [Windows 10 editions for education customers](/education/windows/windows-editions-for-education-customers) | modified |
+
+
 ## Week of July 10, 2023
 
 
@@ -35,18 +45,3 @@
 | 7/14/2023 | [Set up Azure Active Directory](/education/windows/tutorial-school-deployment/set-up-azure-ad) | added |
 | 7/14/2023 | [Set up device management](/education/windows/tutorial-school-deployment/set-up-microsoft-intune) | added |
 | 7/14/2023 | [Troubleshoot Windows devices](/education/windows/tutorial-school-deployment/troubleshoot-overview) | added |
-
-
-## Week of June 19, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 6/23/2023 | [Important considerations before deploying apps with managed installer](/education/windows/tutorial-deploy-apps-winse/considerations) | added |
-| 6/23/2023 | [Create policies to enable applications](/education/windows/tutorial-deploy-apps-winse/create-policies) | added |
-| 6/23/2023 | [Applications deployment considerations](/education/windows/tutorial-deploy-apps-winse/deploy-apps) | added |
-| 6/23/2023 | [Deploy policies to enable applications](/education/windows/tutorial-deploy-apps-winse/deploy-policies) | added |
-| 6/23/2023 | [Deploy applications to Windows 11 SE with Intune](/education/windows/tutorial-deploy-apps-winse/index) | added |
-| 6/23/2023 | [Troubleshoot app deployment issues in Windows SE](/education/windows/tutorial-deploy-apps-winse/troubleshoot) | added |
-| 6/23/2023 | [Validate the applications deployed to Windows SE devices](/education/windows/tutorial-deploy-apps-winse/validate-apps) | added |
-| 6/23/2023 | [Configure applications with Microsoft Intune](/education/windows/tutorial-school-deployment/configure-device-apps) | modified |

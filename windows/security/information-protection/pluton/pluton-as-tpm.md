@@ -1,17 +1,10 @@
 ---
 title: Microsoft Pluton as Trusted Platform Module (TPM 2.0)
 description: Learn more about Microsoft Pluton security processor as Trusted Platform Module (TPM 2.0)
-ms.reviewer: 
-ms.prod: windows-client
-author: vinaypamnani-msft
-ms.author: vinpa
-manager: aaroncz
-ms.localizationpriority: medium
 ms.topic: conceptual
 ms.date: 09/15/2022
 appliesto: 
   - ✅ <b>Windows 11, version 22H2</b>
-ms.technology: itpro-security
 ---
 
 # Microsoft Pluton as Trusted Platform Module
@@ -32,7 +25,7 @@ Pluton is integrated within the SoC subsystem, and provides a flexible, updatabl
 
 ## Enable Microsoft Pluton as TPM
 
-Devices with Ryzen 6000 and Qualcomm Snapdragon® 8cx Gen 3 series processors are Pluton Capable, however enabling and providing an option to enable Pluton is at the discretion of the device manufacturer. Pluton is supported on these devices and can be enabled from the Unified Extensible Firmware Interface (UEFI) setup options for the device.
+Devices with Ryzen 6000 and Qualcomm Snapdragon&reg; 8cx Gen 3 series processors are Pluton Capable, however enabling and providing an option to enable Pluton is at the discretion of the device manufacturer. Pluton is supported on these devices and can be enabled from the Unified Extensible Firmware Interface (UEFI) setup options for the device.
 
 UEFI setup options differ from product to product, visit the product website and check for guidance to enable Pluton as TPM.
 
