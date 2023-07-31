@@ -39,7 +39,7 @@ landingContent:
       - linkListType: concept
         links:
         - text: Trusted Platform Module
-          url: information-protection/tpm/trusted-platform-module-top-node.md
+          url: hardware-security/tpm/trusted-platform-module-top-node.md
         - text: Windows Defender System Guard firmware protection
           url: hardware-security/how-hardware-based-root-of-trust-helps-protect-windows.md
         - text: System Guard Secure Launch and SMM protection enablement

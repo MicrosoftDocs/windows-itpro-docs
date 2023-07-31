@@ -12724,6 +12724,76 @@
       "source_path": "windows/update/waas-wufb-group-policy.md",
       "redirect_url": "/windows/deployment/update/waas-wufb-group-policy",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/tpm/how-windows-uses-the-tpm.md",
+      "redirect_url": "/windows/security/hardware-security/tpm/how-windows-uses-the-tpm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/tpm/initialize-and-configure-ownership-of-the-tpm.md",
+      "redirect_url": "/windows/security/hardware-security/tpm/initialize-and-configure-ownership-of-the-tpm",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/tpm/manage-tpm-commands.md",
+      "redirect_url": "/windows/security/hardware-security/tpm/manage-tpm-commands",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/tpm/manage-tpm-lockout.md",
+      "redirect_url": "/windows/security/hardware-security/tpm/manage-tpm-lockout",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices.md",
+      "redirect_url": "/windows/security/hardware-security/tpm/switch-pcr-banks-on-tpm-2-0-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/tpm/tpm-fundamentals.md",
+      "redirect_url": "/windows/security/hardware-security/tpm/tpm-fundamentals",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/tpm/change-the-tpm-owner-password.md",
+      "redirect_url": "/windows/security/hardware-security/tpm/change-the-tpm-owner-password",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/tpm/tpm-recommendations.md",
+      "redirect_url": "/windows/security/hardware-security/tpm/tpm-recommendations",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/tpm/trusted-platform-module-services-group-policy-settings.md",
+      "redirect_url": "/windows/security/hardware-security/tpm/trusted-platform-module-services-group-policy-settings",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/tpm/trusted-platform-module-top-node.md",
+      "redirect_url": "/windows/security/hardware-security/tpm/trusted-platform-module-top-node",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/tpm/trusted-platform-module-overview.md",
+      "redirect_url": "/windows/security/hardware-security/tpm/trusted-platform-module-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/tpm/backup-tpm-recovery-information-to-ad-ds.md",
+      "redirect_url": "/windows/security/hardware-security/tpm/backup-tpm-recovery-information-to-ad-ds",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/pluton/microsoft-pluton-security-processor.md",
+      "redirect_url": "/windows/security/hardware-security/pluton/microsoft-pluton-security-processor",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/information-protection/pluton/pluton-as-tpm.md",
+      "redirect_url": "/windows/security/hardware-security/pluton/pluton-as-tpm",
+      "redirect_document_id": false
     }
   ]
 }
