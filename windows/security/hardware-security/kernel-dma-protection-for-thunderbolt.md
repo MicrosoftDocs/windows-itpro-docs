@@ -5,7 +5,7 @@ ms.collection:
   - highpri
   - tier1
 ms.topic: conceptual
-ms.date: 03/30/2023
+ms.date: 07/31/2023
 ---
 
 # Kernel DMA Protection
@@ -49,9 +49,9 @@ Kernel DMA Protection isn't compatible with other BitLocker DMA attacks counterm
 
 Systems that support Kernel DMA Protection will enable the feature automatically, with no user or IT admin configuration required.
 
-You can use the Windows Security app to check if Kernel DMA Protection is enabled:
+You can use the Windows Security settings to check if Kernel DMA Protection is enabled:
 
-1. Open Windows Security app
+1. Open **Windows Security**.
 1. Select **Device security > Core isolation details > Memory access protection**
 
 :::image type="content" source="images/kernel-dma-protection-security-center.png" alt-text="Screenshot of Kernel DMA protection in Windows Security." lightbox="images/kernel-dma-protection-security-center.png" border="true":::
