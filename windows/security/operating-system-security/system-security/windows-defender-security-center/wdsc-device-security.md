@@ -13,7 +13,7 @@ You can choose to hide the section from users of the machine. This option can be
 
 ## Hide the Device security section
 
-You can choose to hide the entire section by using Group Policy. The section won't appear on the home page of **Windows Security**, and its icon won't be shown on the navigation bar on the side of the app. You can hide the device security section by using Group Policy only.
+You can choose to hide the entire section by using Group Policy. The section won't appear on the home page of **Windows Security**, and its icon won't be shown on the navigation bar on the side. You can hide the device security section by using Group Policy only.
 
 > [!IMPORTANT]
 > You must have Windows 10, version 1803 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.

@@ -26,3 +26,5 @@ items:
     href: windows-defender-security-center\wdsc-device-performance-health.md
   - name: Family options
     href: windows-defender-security-center\wdsc-family-options.md
+  - name: Customize contact information
+    href: windows-defender-security-center\wdsc-customize-contact-information.md

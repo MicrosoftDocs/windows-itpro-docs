@@ -16,7 +16,7 @@ This section can be hidden from users of the machine. This option can be useful 
 
 ## Hide the Device performance & health section
 
-You can choose to hide the entire section by using Group Policy. The section won't appear on the home page of **Windows Security**, and its icon won't be shown on the navigation bar on the side of the app.
+You can choose to hide the entire section by using Group Policy. The section won't appear on the home page of **Windows Security**, and its icon won't be shown on the navigation bar on the side.
 
 This section can be hidden only by using Group Policy.
 
