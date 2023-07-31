@@ -18,19 +18,18 @@ appliesto:
 
 # Temporary enterprise feature control in Windows 11
 <!--7790977-->
-New features and enhancements are introduced through the monthly cumulative update to provide continuous innovation for Windows 11. To give organizations time to plan and prepare, some of these new features are temporarily turned off by default. Features that are turned off by default are listed in the KB article for the monthly cumulative update. Typically, a feature is selected to be off by default because it either impacts the user experience or IT administrators significantly.
+New features and enhancements are introduced through the monthly cumulative update to provide continuous innovation for Windows 11. To give organizations time to plan and prepare, some of these new features might be:
+
+- Temporarily turned off by default using [temporary enterprise feature control](#temporary-enterprise-feature-control)
+- Controlled by a policy that allows for [permanent enterprise feature control](#permanent-enterprise-feature-control)
+
+Features that are turned off by default are listed in the KB article for the monthly cumulative update. Typically, a feature is selected to be off by default because it either impacts the user experience or IT administrators significantly. For example, a feature might be turned off by default if it requires a change in user behavior or if it requires IT administrators to take action before the feature can be used.
+
+## Temporary enterprise feature control
 
 Features behind temporary enterprise control are automatically disabled for devices that have their Windows updates managed by policies.
 
-## Windows 11 features behind temporary enterprise feature control
-
-The following features are behind temporary enterprise control in Windows 11:
-
-| Feature | KB article where the feature was introduced | Feature update that ends temporary control |
-|---|---|---|
-| Touch-optimized taskbar for 2-in-1 devices | [February 28, 2023 - KB5022913](https://support.microsoft.com/topic/february-28-2023-kb5022913-os-build-22621-1344-preview-3e38c0d9-924d-4f3f-b0b6-3bd49b2657b9) | 2023 annual feature update |
-
-## Enable features behind temporary enterprise feature control
+### Enable features behind temporary enterprise feature control
 
 Features that are behind temporary enterprise control will be enabled when one of the following conditions is met:
 
@@ -38,7 +37,7 @@ Features that are behind temporary enterprise control will be enabled when one o
 - The device receives a policy that enables features behind temporary enterprise control
   - When the policy is enabled, all features on the device behind temporary control are turned on when the device next restarts.
 
-## Policy settings for temporary enterprise feature control
+### Policy settings for temporary enterprise feature control
 
 You can use a policy to enable features that are behind temporary enterprise feature control. When this policy is enabled, all features that were disabled behind temporary enterprise feature control are turned on when the device next reboots. The following polices apply to Windows 11, version 22H2 with [KB5022845](https://support.microsoft.com/en-us/topic/february-14-2023-kb5022845-os-build-22621-1265-90a807f4-d2e8-486e-8a43-d09e66319f38) and later:
 
@@ -46,3 +45,29 @@ You can use a policy to enable features that are behind temporary enterprise fea
 
 - **CSP**: ./Device/Vendor/MSFT/Policy/Config/Update/[AllowTemporaryEnterpriseFeatureControl](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowtemporaryenterprisefeaturecontrol)
    - In the Intune [settings catalog](/mem/intune/configuration/settings-catalog), this setting is named **Allow Temporary Enterprise Feature Control** under the **Windows Update for Business** category.
+
+### Windows 11 features behind temporary enterprise feature control
+
+The following features are behind temporary enterprise control in Windows 11:
+
+| Feature | KB article where the feature was introduced | Feature update that ends temporary control |
+|---|---|---|
+| Touch-optimized taskbar for 2-in-1 devices | [February 28, 2023 - KB5022913](https://support.microsoft.com/topic/february-28-2023-kb5022913-os-build-22621-1344-preview-3e38c0d9-924d-4f3f-b0b6-3bd49b2657b9) | 2023 annual feature update |
+| ---| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
+| ---| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
+
+
+## Permanent enterprise feature control
+
+New features and enhancements used to be introduced only in feature updates. However, with continuous innovation for Windows 11, new features are introduced more frequently through the monthly cumulative update. Some new features can be controlled through policies that enable you to configure them for your organization. When a feature can be controlled by a policy, it has permanent enterprise feature control.
+
+### Windows 11 features with permanent enterprise feature control
+
+The following features introduced through the monthly cumulative updates allow permanent enterprise feature control:
+
+| Feature | KB article where the feature was introduced | Feature enabled by default | CSP and Group Policy |
+|---|---|---|---|
+| Configure search on the taskbar| [February 28, 2023 - KB5022913](https://support.microsoft.com/topic/february-28-2023-kb5022913-os-build-22621-1344-preview-3e38c0d9-924d-4f3f-b0b6-3bd49b2657b9)| Yes | **CSP**: ./Device/Vendor/MSFT/Policy/Config/Search/[ConfigureSearchOnTaskbarMode](/windows/client-management/mdm/policy-csp-search#configuresearchontaskbarmode) </br> </br>**Group Policy**: Computer Configuration\Administrative Templates\Windows Components\Search\\**Configures search on the taskbar**|
+| ---|---|---|--- </br> </br>---|
+
+
