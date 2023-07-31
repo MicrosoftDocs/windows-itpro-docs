@@ -170,7 +170,7 @@ Device conflict across different deployment rings in different Autopatch groups 
 | -----  | ----- |
 | You, the IT admin at Contoso Ltd., are using several Custom Autopatch groups. While navigating through devices in the Windows Autopatch Devices blade (**Not ready** tab), you notice that the same device is part of different deployment rings across several different Custom Autopatch groups. | You must resolve this conflict.<p>Autopatch groups informs you about the device conflict in the **Devices** > **Not ready** tab. You’re required to manually indicate which of the existing Custom Autopatch groups the device should exclusively belong to.</p> |
 
-#### Device conflict prior device registration
+#### Device conflict prior to device registration
 
 When you create or edit the Custom or Default Autopatch group, Windows Autopatch checks if the devices that are part of the Azure AD groups, used in Autopatch groups’ deployment rings, are registered with the service.
 
