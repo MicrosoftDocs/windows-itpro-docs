@@ -28,3 +28,5 @@ items:
     href: windows-defender-security-center\wdsc-family-options.md
   - name: Customize contact information
     href: windows-defender-security-center\wdsc-customize-contact-information.md
+  - name: Hide notifications
+    href: windows-defender-security-center\wdsc-hide-notifications.md
