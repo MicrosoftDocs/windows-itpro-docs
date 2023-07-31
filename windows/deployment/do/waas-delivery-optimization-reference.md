@@ -6,7 +6,7 @@ ms.prod: windows-client
 author: cmknox
 ms.localizationpriority: medium
 ms.author: carmenf
-ms.topic: article
+ms.topic: reference
 ms.technology: itpro-updates
 ms.date: 07/31/2023
 ms.collection: tier3
