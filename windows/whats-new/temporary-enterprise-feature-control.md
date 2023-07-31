@@ -53,8 +53,15 @@ The following features are behind temporary enterprise control in Windows 11:
 | Feature | KB article where the feature was introduced | Feature update that ends temporary control |
 |---|---|---|
 | Touch-optimized taskbar for 2-in-1 devices | [February 28, 2023 - KB5022913](https://support.microsoft.com/topic/february-28-2023-kb5022913-os-build-22621-1344-preview-3e38c0d9-924d-4f3f-b0b6-3bd49b2657b9) | 2023 annual feature update |
+| Selecting **Uninstall** for a Win32 app uses the **Installed Apps** page in **Settings** rather than **Programs and Features** under the **Control Panel** | [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
 | ---| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
 | ---| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
+| ---| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
+| ---| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
+| ---| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
+| ---| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
+| ---| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
+
 
 
 ## Permanent enterprise feature control
@@ -69,5 +76,6 @@ The following features introduced through the monthly cumulative updates allow p
 |---|---|---|---|
 | Configure search on the taskbar| [February 28, 2023 - KB5022913](https://support.microsoft.com/topic/february-28-2023-kb5022913-os-build-22621-1344-preview-3e38c0d9-924d-4f3f-b0b6-3bd49b2657b9)| Yes | **CSP**: ./Device/Vendor/MSFT/Policy/Config/Search/[ConfigureSearchOnTaskbarMode](/windows/client-management/mdm/policy-csp-search#configuresearchontaskbarmode) </br> </br>**Group Policy**: Computer Configuration\Administrative Templates\Windows Components\Search\\**Configures search on the taskbar**|
 | ---|---|---|--- </br> </br>---|
-
+| ---|---|---|--- </br> </br>---|
+| ---|---|---|--- </br> </br>---|
 
