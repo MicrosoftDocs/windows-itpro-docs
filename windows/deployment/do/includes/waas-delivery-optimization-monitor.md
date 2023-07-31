@@ -5,7 +5,7 @@ manager: aaroncz
 ms.prod: windows-client
 ms.technology: itpro-deploy
 ms.topic: include
-ms.date: 04/06/2022
+ms.date: 07/31/2023
 ms.localizationpriority: medium
 ---
 <!--This file is shared by do/waas-delivery-optimization-setup.md and the update/update-compliance-get-started.md articles -->
@@ -27,13 +27,13 @@ ms.localizationpriority: medium
 | FileSizeInCache | Size of the file in the cache |
 | TotalBytesDownloaded | The number of bytes from any source downloaded so far |
 | PercentPeerCaching |The percentage of bytes downloaded from peers versus over HTTP |
-| BytesFromPeers | Total bytes downloaded from peer devices (sum of bytes downloaded from LAN, Group, and Internet Peers) |
+| BytesFromPeers | Total bytes downloaded from peer devices (sum of bytes downloaded from LAN, Group, and Internet Peers) |
 | BytesfromHTTP | Total number of bytes received over HTTP. This metric represents all HTTP sources, which includes BytesFromCacheServer |
 | Status | Current state of the operation. Possible values are: **Downloading** (download in progress); **Complete** (download completed, but isn't uploading yet); **Caching** (download completed successfully and is ready to upload or uploading); **Paused** (download/upload paused by caller) |
 | Priority | Priority of the download; values are **foreground** or **background** |
 | BytesFromCacheServer | Total number of bytes received from cache server (MCC) |
 | BytesFromLanPeers | Total number of bytes received from peers found on the LAN |
-| BytesFromGroupPeers | Total number of bytes received from peers found in the group. (Note: Group mode is LAN + Group. If peers are found on the LAN, those bytes will be registered in 'BytesFromLANPeers'.)  |
+| BytesFromGroupPeers | Total number of bytes received from peers found in the group. (Note: Group mode is LAN + Group. If peers are found on the LAN, those bytes are registered in 'BytesFromLANPeers'.)  |
 | BytesFromInternetPeers | Total number of bytes received from internet peers |
 | BytesToLanPeers | Total number of bytes delivered from peers found on the LAN |
 | BytesToGroupPeers | Total number of bytes delivered from peers found in the group |
@@ -179,22 +179,22 @@ This cmdlet lists local configuration and policies that are applied to Delivery 
 DownloadMode:Simple
 DownloadModeProvider:Mdm Provider
 
-The provider is listed as "Default Provider" if it is using the Delivery Optimization platform configured default. 
+The provider is listed as "Default Provider" if it's using the Delivery Optimization platform configured default. 
 
 The cmdlet returns the following data:
 
 - BatteryPctToSeed: Corresponds to the [DOMinBatteryPercentageAllowedToUpload](../waas-delivery-optimization-reference.md#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) policy.
 - WorkingDirectory: The local folder containing the Delivery Optimization cache.
-- MinTotalDiskSize: Corresponds to the [DOMinDiskSizeAllowedToPeer](../waas-delivery-optimization-reference#minimum-disk-size-allowed-to-use-peer-caching) policy.
-- MinTotalRAM: Corresponds to the [DOMinRAMAllowedToPeer](../waas-delivery-optimization-reference#minimum-ram-inclusive-allowed-to-use-peer-caching) policy.
-- VpnPeerCachingAllowed: Corresponds to the [DOAllowVPNPeerCaching](../waas-delivery-optimization-reference#enable-peer-caching-while-the-device-connects-via-vpn) policy.
+- MinTotalDiskSize: Corresponds to the [DOMinDiskSizeAllowedToPeer](../waas-delivery-optimization-reference.md#minimum-disk-size-allowed-to-use-peer-caching) policy.
+- MinTotalRAM: Corresponds to the [DOMinRAMAllowedToPeer](../waas-delivery-optimization-reference.md#minimum-ram-inclusive-allowed-to-use-peer-caching) policy.
+- VpnPeerCachingAllowed: Corresponds to the [DOAllowVPNPeerCaching](../waas-delivery-optimization-reference.md#enable-peer-caching-while-the-device-connects-via-vpn) policy.
 - VpnKeywords: List of keywords used to identify a VPN adapter.
-- SetHoursToLimitDownloadBackground: Corresponds to the [DOSetHoursToLimitBackgroundDownloadBandwidth](../waas-delivery-optimization-reference#set-business-hours-to-limit-background-download-bandwidth) policy.
-- SetHoursToLimitDownloadForeground: Corresponds to the [DOSetHoursToLimitForegroundDownloadBandwidth](../waas-delivery-optimization-reference#set-business-hours-to-limit-foreground-download-bandwidth) policy.
-- DownloadMode: Corresponds to the [DODownloadMode](../waas-delivery-optimization-reference#download-mode) policy.
-- DownBackLimitBps: Corresponds to the [DOMaxBackgroundDownloadBandwidth](../waas-delivery-optimization-reference#maximum-background-download-bandwidth-in-kbs) policy.
-- DownloadForegroundLimitBps: Corresponds to the [DOMaxForegroundDownloadBandwidth](../waas-delivery-optimization-reference#maximum-foreground-download-bandwidth-in-kbs) policy.
-- DownBackLimitPct: Corresponds to the [DOPercentageMaxBackgroundBandwidth](../waas-delivery-optimization-reference#maximum-background-download-bandwidth) policy.
-- DownloadForegroundLimitPct: Corresponds to the [DOPercentageMaxForegroundBandwidth](../waas-delivery-optimization-reference#maximum-foreground-download-bandwidth) policy.
-- MaxUploadRatePct: Corresponds to the [DOMaxUploadBandwidth](../waas-delivery-optimization-reference#max-upload-bandwidth) policy (deprecated in Windows 10, version 2004).
-- UploadLimitMonthlyGB: Corresponds to the [DOMonthlyUploadDataCap](../waas-delivery-optimization-reference#monthly-upload-data-cap) policy.
+- SetHoursToLimitDownloadBackground: Corresponds to the [DOSetHoursToLimitBackgroundDownloadBandwidth](../waas-delivery-optimization-reference.md#set-business-hours-to-limit-background-download-bandwidth) policy.
+- SetHoursToLimitDownloadForeground: Corresponds to the [DOSetHoursToLimitForegroundDownloadBandwidth](../waas-delivery-optimization-reference.md#set-business-hours-to-limit-foreground-download-bandwidth) policy.
+- DownloadMode: Corresponds to the [DODownloadMode](../waas-delivery-optimization-reference.md#download-mode) policy.
+- DownBackLimitBps: Corresponds to the [DOMaxBackgroundDownloadBandwidth](../waas-delivery-optimization-reference.md#maximum-background-download-bandwidth-in-kbs) policy.
+- DownloadForegroundLimitBps: Corresponds to the [DOMaxForegroundDownloadBandwidth](../waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) policy.
+- DownBackLimitPct: Corresponds to the [DOPercentageMaxBackgroundBandwidth](../waas-delivery-optimization-reference.md#maximum-background-download-bandwidth) policy.
+- DownloadForegroundLimitPct: Corresponds to the [DOPercentageMaxForegroundBandwidth](../waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth) policy.
+- MaxUploadRatePct: Corresponds to the [DOMaxUploadBandwidth](../waas-delivery-optimization-reference.md#max-upload-bandwidth) policy (deprecated in Windows 10, version 2004).
+- UploadLimitMonthlyGB: Corresponds to the [DOMonthlyUploadDataCap](../waas-delivery-optimization-reference.md#monthly-upload-data-cap) policy.

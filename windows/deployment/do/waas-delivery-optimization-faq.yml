@@ -12,7 +12,7 @@ metadata:
     - highpri
     - tier3
   ms.topic: faq
-  ms.date: 07/11/2023
+  ms.date: 07/31/2023
 title: Delivery Optimization Frequently Asked Questions
 summary: |
   **Applies to**
@@ -64,7 +64,7 @@ sections:
         
       - question: Delivery Optimization is downloading Windows content on my devices directly from an IP Address, is it expected? 
         answer: | 
-          When Delivery Optimization downloads from a [Microsoft Connected Cache](waas-microsoft-connected-cache.md) server that is hosted by your Internet Service Provider, the download will be pulled directly from the IP Address of that server. If the Microsoft Connected cache is not available, the download will fallback seamlessly to the CDN instead. Delivery Optimization Peers are used in parallel if available. 
+          When Delivery Optimization downloads from a [Microsoft Connected Cache](waas-microsoft-connected-cache.md) server that is hosted by your Internet Service Provider, the download will be pulled directly from the IP Address of that server. If the Microsoft Connected cache isn't available, the download will fall back seamlessly to the CDN instead. Delivery Optimization Peers are used in parallel if available. 
 
       - question: Does Delivery Optimization use multicast?
         answer: No. It relies on the cloud service for peer discovery, resulting in a list of peers and their IP addresses. Client devices then connect to their peers to obtain download files over TCP/IP.
@@ -135,7 +135,7 @@ sections:
       
       - question: Delivery Optimization is using device resources and I can't tell why?
         answer: |
-          Delivery Optimization is used by most content providers from Microsoft. A complete list can be found [here](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization). Oftentimes customers may not realize the vast application of Delivery Optimization and how it's used across different apps. Content providers have the option to run downloads in the foreground or background. It's good to check any apps running in the background to see what is running. Also note that depending on the app, closing the app may not necessarily stop the download.
+          Delivery Optimization is used by most content providers from Microsoft. A complete list can be found [here](waas-delivery-optimization.md#types-of-download-content-supported-by-delivery-optimization). Often customers may not realize the vast application of Delivery Optimization and how it's used across different apps. Content providers have the option to run downloads in the foreground or background. It's good to check any apps running in the background to see what is running. Also note that depending on the app, closing the app may not necessarily stop the download.
 
       - question: What Delivery Optimization settings are available?
         answer: |
