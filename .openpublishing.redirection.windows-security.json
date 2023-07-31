@@ -7234,6 +7234,31 @@
       "source_path": "windows/security/hardware.md",
       "redirect_url": "/windows/security/hardware-security",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/introduction/index.md",
+      "redirect_url": "/windows/security/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-platform-common-criteria.md",
+      "redirect_url": "/windows/security/security-foundations/certification/windows-platform-common-criteria",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/fips-140-validation.md",
+      "redirect_url": "/windows/security/security-foundations/certification/fips-140-validation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/msft-security-dev-lifecycle.md",
+      "redirect_url": "/windows/security/security-foundations/msft-security-dev-lifecycle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/zero-trust-windows-device-health.md",
+      "redirect_url": "/windows/security/introduction/zero-trust-windows-device-health",
+      "redirect_document_id": false
     }
   ]
 }
