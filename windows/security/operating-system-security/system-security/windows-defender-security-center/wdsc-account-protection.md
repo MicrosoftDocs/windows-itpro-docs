@@ -1,7 +1,7 @@
 ---
-title: Account protection in the Windows Security app
+title: Account protection in Windows Security
 description: Use the Account protection section to manage security for your account and sign in to Microsoft.
-ms.date: 12/31/2018
+ms.date: 07/31/2023
 ms.topic: article
 ---
 
@@ -18,7 +18,7 @@ You can also choose to hide the section from users of the device. This is useful
 
 ## Hide the Account protection section
 
-You can choose to hide the entire section by using Group Policy. The section won't appear on the home page of the Windows Security app, and its icon won't be shown on the navigation bar on the side of the app.
+You can choose to hide the entire section by using Group Policy. The section won't appear on the home page of **Windows Security**, and its icon won't be shown on the navigation bar on the side.
 
 You can only configure these settings by using Group Policy.
 
@@ -32,6 +32,6 @@ You can only configure these settings by using Group Policy.
 1. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy).
 
 > [!NOTE]
-> If you hide all sections then the app will show a restricted interface, as in the following screenshot:
+> If you hide all sections then **Windows Security** will show a restricted interface, as in the following screenshot:
 >
-> ![Screenshot of the Windows Security app with all sections hidden by Group Policy.](images/wdsc-all-hide.png)
+> ![Screenshot of the Windows Security with all sections hidden by Group Policy.](images/wdsc-all-hide.png)
