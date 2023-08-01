@@ -70,61 +70,17 @@ For more info, see [Configure Windows diagnostic data in your organization](conf
 
 Customers who use services that depend on Windows diagnostic data, such as [Microsoft Managed Desktop](/microsoft-365/managed-desktop/service-description/device-policies#windows-diagnostic-data), may be impacted by the behavioral changes when they're released. These services will be updated to address these changes and guidance will be published on how to configure them properly.
 
-## Significant changes coming to the Windows diagnostic data processor configuration
-
-Currently, to enroll devices in the [Window diagnostic data processor configuration](configure-windows-diagnostic-data-in-your-organization.md#enable-windows-diagnostic-data-processor-configuration) option, IT admins can use policies, such as the “Allow commercial data pipeline” policy, at the individual device level.
-
-To enable efficiencies and help us implement our plan to [store and process EU Data for European enterprise customers in the EU](https://blogs.microsoft.com/eupolicy/2021/05/06/eu-data-boundary/), we'll be introducing the following significant change for enterprise Windows devices that have diagnostic data turned on.
-
-***We’ll stop using policies, such as the “Allow commercial data pipeline” policy, to configure the processor option. Instead, we’ll be introducing an organization-wide configuration based on Azure Active Directory (Azure AD) to determine Microsoft’s role in data processing.***
-
-We’re making this change to help ensure the diagnostic data for all devices in an organization is processed in a consistent way, and in the same geographic region.
-
-### Devices in Azure AD tenants with a billing address in the European Union (EU) or European Free Trade Association (EFTA)
-
-For Windows devices with diagnostic data turned on and that are joined to an [Azure AD tenant with billing address](/azure/cost-management-billing/manage/change-azure-account-profile) in the EU or EFTA, the Windows diagnostic data for that device will be automatically configured for the processor option. The Windows diagnostic data for those devices will be processed in Europe.
-
-From a compliance standpoint, this change means that Microsoft will be the processor and the organization will be the controller of the Windows diagnostic data. IT admins for those organizations will become responsible for responding to their users’ [data subject requests](/compliance/regulatory/gdpr-dsr-windows).
-
-### Devices in Azure AD tenants with a billing address outside of the EU and EFTA
-
-For Windows devices with diagnostic data turned on and that are joined to an [Azure AD tenant with billing address](/azure/cost-management-billing/manage/change-azure-account-profile) outside of the EU and EFTA, to enable the processor configuration option, the organization must sign up for any of the following enterprise services, which rely on diagnostic data:
-
-- [Update Compliance](/windows/deployment/update/update-compliance-monitor)
-- [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview)
-- [Windows Update for Business deployment service](/windows/deployment/update/deployment-service-overview)
-- [Microsoft Managed Desktop](/managed-desktop/intro/)
-- [Endpoint analytics (in Microsoft Intune)](/mem/analytics/overview)
-
-*(Additional licensing requirements may apply to use these services.)*
-
-If you don’t sign up for any of these enterprise services, Microsoft will act as controller for the diagnostic data.
+## Significant change to the Windows diagnostic data processor configuration
 
 > [!NOTE]
-> In all cases, enrollment in the Windows diagnostic data processor configuration requires a device to be joined to an Azure AD tenant. If a device isn't properly enrolled, Microsoft will act as the controller for Windows diagnostic data in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and the [Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) terms won't apply.
+> The information in this section applies to the following versions of Windows:
+> - Windows 10, versions 20H2, 21H2, 22H2, and newer
+> - Windows 11, versions 21H2, 22H2, and newer
 
-### Rollout plan for this change
+Previously, IT admins could use policies (for example, the “Allow commercial data pipeline” policy) at the individual device level to enroll devices in the Windows diagnostic data processor configuration.
 
-This change will rollout in phases, starting  with Windows devices enrolled in the [Dev Channel](/windows-insider/flighting#dev-channel) of the Windows Insider program. Starting in build 25169, devices in the Dev Channel that are joined to an Azure AD tenant with a billing address in the EU or EFTA will be automatically enabled for the processor configuration option.
+Starting with the January 2023 preview cumulative update, how you enable the processor configuration option depends on the billing address of the Azure AD tenant to which your devices are joined.
 
-During this initial rollout, the following conditions apply to devices in the Dev Channel that are joined to an Azure AD tenant with a billing address outside of the EU or EFTA:
+We made this change to help ensure the diagnostic data for all devices in an organization is processed in a consistent way and in the same geographic region, and to help us implement our plan to [store and process EU Data for European enterprise customers in the EU](https://blogs.microsoft.com/eupolicy/2021/05/06/eu-data-boundary/).
 
-- Devices can't be enabled for the Windows diagnostic data processor configuration at this time.
-- The processor configuration will be disabled in any devices that were previously enabled.
-- Microsoft will act as the controller for Windows diagnostic data in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and the [Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) terms won't apply.
-
-It's recommended Insiders on these devices pause flighting if these changes aren't acceptable.
-
-For Windows devices in the Dev Channel that aren't joined to an Azure AD tenant, Microsoft will act as the controller for Windows diagnostic data in accordance with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement) and the [Data Protection Addendum](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) terms won't apply.
-
-For other Windows devices (not in the Dev Channel), the change will rollout with the January 2023 release preview cumulative update for Windows 10 versions 20H2, 21H2 and 22H2, and Windows 11 versions 21H2 and 22H2.
-
-To prepare for this change, ensure that you meet the [prerequisites](configure-windows-diagnostic-data-in-your-organization.md#prerequisites) for Windows diagnostic data processor configuration, join your devices to Azure AD (can be a hybrid Azure AD join), and keep your devices secure and up to date with quality updates. If you're outside of the EU or EFTA, sign up for any of the enterprise services.
-
-As part of this change, the following policies will no longer be supported to configure the processor option:
- - Allow commercial data pipeline
- - Allow Desktop Analytics Processing
- - Allow Update Compliance Processing
- - Allow WUfB Cloud Processing
- - Allow Microsoft Managed Desktop Processing
- - Configure the Commercial ID
+For more information, see [Enable Windows diagnostic data processor configuration](configure-windows-diagnostic-data-in-your-organization.md#enable-windows-diagnostic-data-processor-configuration).
