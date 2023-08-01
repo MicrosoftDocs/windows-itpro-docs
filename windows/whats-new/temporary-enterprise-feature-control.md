@@ -52,15 +52,15 @@ The following features are behind temporary enterprise control in Windows 11:
 
 | Feature | KB article where the feature was introduced | Feature update that ends temporary control |
 |---|---|---|
-| Touch-optimized taskbar for 2-in-1 devices | [February 28, 2023 - KB5022913](https://support.microsoft.com/topic/february-28-2023-kb5022913-os-build-22621-1344-preview-3e38c0d9-924d-4f3f-b0b6-3bd49b2657b9) | 2023 annual feature update |
-| Selecting **Uninstall** for a Win32 app from the right-click menu uses the **Installed Apps** page in **Settings** rather than **Programs and Features** under the **Control Panel** | [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
-| ---| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
-| ---| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
-| ---| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
-| ---| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
-| ---| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
-| ---| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
-| ---| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
+| Touch-optimized taskbar for 2-in-1 devices <!--8092554-->| [February 28, 2023 - KB5022913](https://support.microsoft.com/topic/february-28-2023-kb5022913-os-build-22621-1344-preview-3e38c0d9-924d-4f3f-b0b6-3bd49b2657b9) | 2023 annual feature update |
+| Selecting **Uninstall** for a Win32 app from the right-click menu uses the **Installed Apps** page in **Settings** rather than **Programs and Features** under the **Control Panel** <!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
+| ---<!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
+| ---<!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
+| ---<!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
+| ---<!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
+| ---<!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
+| ---<!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
+| ---<!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
 
 
 
@@ -74,7 +74,9 @@ The following features introduced through the monthly cumulative updates allow p
 
 | Feature | KB article where the feature was introduced | Feature enabled by default | CSP and Group Policy |
 |---|---|---|---|
-| Configure search on the taskbar| [February 28, 2023 - KB5022913](https://support.microsoft.com/topic/february-28-2023-kb5022913-os-build-22621-1344-preview-3e38c0d9-924d-4f3f-b0b6-3bd49b2657b9)| Yes | **CSP**: ./Device/Vendor/MSFT/Policy/Config/Search/[ConfigureSearchOnTaskbarMode](/windows/client-management/mdm/policy-csp-search#configuresearchontaskbarmode) </br> </br>**Group Policy**: Computer Configuration\Administrative Templates\Windows Components\Search\\**Configures search on the taskbar**|
-| The **Recommended** section of the **Start Menu** displays personalized website recommendations |[September 2023 - KBXXXXXXX](https://support.microsoft.com/)| No |**CSP**: ./Device/Vendor/MSFT/Policy/Config/Start/[HideRecoPersonalizedSites](/windows/client-management/mdm/policy-csp-start)</br> </br>**Group Policy**: Computer Configuration\Administrative Templates\Start Many and Taskbar\\**Remove Personalized Website Recommendations from the Recommended section in the Start Menu**|
-| Transfer files to another PC using WiFi direct|[September 2023 - KBXXXXXXX](https://support.microsoft.com/)|Yes|**CSP**: ./Device/Vendor/MSFT/Policy/Config/Wifi/[AllowWiFiDirect](/windows/client-management/mdm/policy-csp-wifi#allowwifidirect)|
-| Windows Copilot |---|---|--- </br> </br>---|
+| Configure search on the taskbar <!--8092554-->| [February 28, 2023 - KB5022913](https://support.microsoft.com/topic/february-28-2023-kb5022913-os-build-22621-1344-preview-3e38c0d9-924d-4f3f-b0b6-3bd49b2657b9)| Yes | **CSP**: ./Device/Vendor/MSFT/Policy/Config/Search/[ConfigureSearchOnTaskbarMode](/windows/client-management/mdm/policy-csp-search#configuresearchontaskbarmode) </br> </br>**Group Policy**: Computer Configuration\Administrative Templates\Windows Components\Search\\**Configures search on the taskbar**|
+| The **Recommended** section of the **Start Menu** displays personalized website recommendations <!--8092554-->|[September 2023 - KBXXXXXXX](https://support.microsoft.com/)| No |**CSP**: ./Device/Vendor/MSFT/Policy/Config/Start/[HideRecoPersonalizedSites](/windows/client-management/mdm/policy-csp-start)</br> </br>**Group Policy**: Computer Configuration\Administrative Templates\Start Menu and Taskbar\\**Remove Personalized Website Recommendations from the Recommended section in the Start Menu**|
+| Transfer files to another PC using WiFi direct<!--8092554-->|[September 2023 - KBXXXXXXX](https://support.microsoft.com/)|Yes|**CSP**: ./Device/Vendor/MSFT/Policy/Config/Wifi/[AllowWiFiDirect](/windows/client-management/mdm/policy-csp-wifi#allowwifidirect)|
+| Windows Copilot <!--8092554--> | [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | No |**CSP**: ./User/Vendor/MSFT/WindowsAI/[AllowWindowsCopilot](/windows/client-management/mdm/policy-csp-windowsai#allowwindowscopilot) </br> </br> **Group Policy**: User Configuration\Administrative Templates\Windows Components\Windows Copilot\\**Enable windows copilot entrypoints to allow windows copilot**|
+| Windows Copilot displays on the taskbar <!--8092554--> | [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | Yes| **CSP**: ./Device and User/Vendor/MSFT/Policy/Config/Start/[HideCopilotButton](/windows/client-management/mdm/policy-csp-start#hidecopilotbutton) </br> </br> **Group Policy**: Computer and User Configuration\Administrative Templates\Start Menu and Taskbar\\**Hide the Copilot button**
+
