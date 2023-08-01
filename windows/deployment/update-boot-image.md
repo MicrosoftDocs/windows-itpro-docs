@@ -140,10 +140,9 @@ From an elevated **PowerShell** command prompt, run the following command to add
 ```powershell
 Add-WindowsDriver -Path "<Mount_folder_path>" -Driver "<Driver_INF_source_path>\<driver>.inf"
 
-Example:
+# Example:
 
-Add-WindowsDriver -Path "C:\Mount" -Driver "C:\Drivers\driver.inf"
-
+# Add-WindowsDriver -Path "C:\Mount" -Driver "C:\Drivers\driver.inf"
 ```
 
 or
@@ -200,6 +199,12 @@ Drivers are not affected by the cumulative update installed later in this walkth
 
     ```powershell
     Add-WindowsPackage -PackagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\<Component>.cab" -Path "<Mount_folder_path>" -Verbose
+    ```
+
+    **Example**:
+
+    ```powershell
+    Add-WindowsPackage -PackagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-WMI.cab" -Path "C:\Mount" -Verbose
     ```
 
     This example assumes an x64 boot image. If a different architecture is being used, then adjust the commands accordingly.
