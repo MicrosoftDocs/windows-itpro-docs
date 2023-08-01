@@ -130,8 +130,8 @@ See the documentation at <https://go.microsoft.com/fwlink/?linkid=2011107> for i
 > [!NOTE]
 > Configuring this setting doesn't affect the operation of optional analytics processor services like Desktop Analytics and Windows Update for Business reports.
 
-> [!IMPORTANT]
-> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
+> [!NOTE]
+> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Enable Windows diagnostic data processor configuration](../../privacy/configure-windows-diagnostic-data-in-your-organization.md#enable-windows-diagnostic-data-processor-configuration).
 <!-- AllowCommercialDataPipeline-Editable-End -->
 
 <!-- AllowCommercialDataPipeline-DFProperties-Begin -->
@@ -206,8 +206,8 @@ This setting has no effect on devices unless they're properly enrolled in Deskto
 
 <!-- AllowDesktopAnalyticsProcessing-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-> [!IMPORTANT]
-> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
+> [!NOTE]
+> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Enable Windows diagnostic data processor configuration](../../privacy/configure-windows-diagnostic-data-in-your-organization.md#enable-windows-diagnostic-data-processor-configuration).
 <!-- AllowDesktopAnalyticsProcessing-Editable-End -->
 
 <!-- AllowDesktopAnalyticsProcessing-DFProperties-Begin -->
@@ -578,8 +578,8 @@ This setting has no effect on devices unless they're properly enrolled in Micros
 
 <!-- AllowMicrosoftManagedDesktopProcessing-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-> [!IMPORTANT]
-> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
+> [!NOTE]
+> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Enable Windows diagnostic data processor configuration](../../privacy/configure-windows-diagnostic-data-in-your-organization.md#enable-windows-diagnostic-data-processor-configuration).
 <!-- AllowMicrosoftManagedDesktopProcessing-Editable-End -->
 
 <!-- AllowMicrosoftManagedDesktopProcessing-DFProperties-Begin -->
@@ -768,8 +768,8 @@ If you disable or don't configure this policy setting, devices won't appear in U
 
 <!-- AllowUpdateComplianceProcessing-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-> [!IMPORTANT]
-> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
+> [!NOTE]
+> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Enable Windows diagnostic data processor configuration](../../privacy/configure-windows-diagnostic-data-in-your-organization.md#enable-windows-diagnostic-data-processor-configuration).
 <!-- AllowUpdateComplianceProcessing-Editable-End -->
 
 <!-- AllowUpdateComplianceProcessing-DFProperties-Begin -->
@@ -892,8 +892,8 @@ If you disable or don't configure this policy setting, devices enrolled to the W
 
 <!-- AllowWUfBCloudProcessing-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-> [!IMPORTANT]
-> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
+> [!NOTE]
+> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Enable Windows diagnostic data processor configuration](../../privacy/configure-windows-diagnostic-data-in-your-organization.md#enable-windows-diagnostic-data-processor-configuration).
 <!-- AllowWUfBCloudProcessing-Editable-End -->
 
 <!-- AllowWUfBCloudProcessing-DFProperties-Begin -->
