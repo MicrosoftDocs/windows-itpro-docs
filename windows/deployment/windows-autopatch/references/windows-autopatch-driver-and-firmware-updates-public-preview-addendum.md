@@ -2,8 +2,8 @@
 title: Driver and firmware updates for Windows Autopatch Public Preview Addendum
 description:  This article explains how driver and firmware updates are managed in Autopatch
 ms.date: 06/26/2023 
-ms.prod: w11
-ms.technology: windows
+ms.prod: windows-client
+ms.technology: itpro-updates
 ms.topic: conceptual
 ms.localizationpriority: medium
 author: tiaraquan
@@ -14,11 +14,11 @@ msreviewer: hathind
 
 # Driver and Firmware Updates for Windows Autopatch Public Preview Addendum
 
-**This Driver and Firmware Updates for Windows Autopatch Public Preview Addendum ("Addendum") to the Microsoft Product Terms’ Universal License Terms for Online Services** (as provided at: [Microsoft Product Terms](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all)  (the "**Product Terms**")) is entered into between Microsoft Corporation, a Washington corporation having its principal place of business at One Microsoft Way, Redmond, Washington, USA 98052-6399 (or based on where Customer lives, one of Microsoft's affiliates) ("**Microsoft**"), and you ("**Customer**").
+**This Driver and Firmware Updates for Windows Autopatch Public Preview Addendum ("Addendum") to the Microsoft Product Terms' Universal License Terms for Online Services** (as provided at: [Microsoft Product Terms](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/all)  (the "**Product Terms**")) is entered into between Microsoft Corporation, a Washington corporation having its principal place of business at One Microsoft Way, Redmond, Washington, USA 98052-6399 (or based on where Customer lives, one of Microsoft's affiliates) ("**Microsoft**"), and you ("**Customer**").
 
 For good and valuable consideration, the receipt and sufficiency of which is acknowledged, the parties agree as follows:
 
-Microsoft desires to preview the Driver and Firmware Updates for Windows Autopatch service it's developing ("**Driver and Firmware Updates Preview**”) in order to evaluate it. Customer would like to particulate this Driver and Firmware Updates Preview under the Product Terms and this Addendum. Driver and Firmware Updates Preview consists of features and services that are in preview, beta, or other prerelease form. Driver and Firmware Updates Preview is subject to the "preview" terms set forth in the Product Terms’ Universal License Terms for Online Services.
+Microsoft desires to preview the Driver and Firmware Updates for Windows Autopatch service it's developing ("**Driver and Firmware Updates Preview**") in order to evaluate it. Customer would like to particulate this Driver and Firmware Updates Preview under the Product Terms and this Addendum. Driver and Firmware Updates Preview consists of features and services that are in preview, beta, or other prerelease form. Driver and Firmware Updates Preview is subject to the "preview" terms set forth in the Product Terms' Universal License Terms for Online Services.
 
 ## Definitions
 
