@@ -33,9 +33,9 @@ With Windows 11 2022 update, the vulnerable driver blocklist  is enabled by defa
 
 > [!NOTE]
 >
-> - The Windows Security app is updated separately from the OS and ships out of box. The version with the vulnerable driver blocklist toggle is in the final validation ring and will ship to all customers very soon. Initially, you will be able to view the configuration state only and the toggle will appear grayed out. The ability to turn the toggle on or off will come with a future Windows update.
+> - **Windows Security** is updated separately from the OS and ships out of box. The version with the vulnerable driver blocklist toggle is in the final validation ring and will ship to all customers very soon. Initially, you will be able to view the configuration state only and the toggle will appear grayed out. The ability to turn the toggle on or off will come with a future Windows update.
 >
-> - For Windows Insiders, the option to turn Microsoft's vulnerable driver blocklist on or off using the Windows Security app is grayed out when HVCI, Smart App Control, or S mode is enabled. You must disable HVCI or Smart App Control, or switch the device out of S mode, and restart the device before you can turn off the Microsoft vulnerable driver blocklist.
+> - For Windows Insiders, the option to turn Microsoft's vulnerable driver blocklist on or off using **Windows Security** settings is grayed out when HVCI, Smart App Control, or S mode is enabled. You must disable HVCI or Smart App Control, or switch the device out of S mode, and restart the device before you can turn off the Microsoft vulnerable driver blocklist.
 
 The blocklist is updated with each new major release of Windows, typically 1-2 times per year, including most recently with the Windows 11 2022 update released in September 2022. The most current blocklist is now also available for Windows 10 20H2 and Windows 11 21H2 users as an optional update from Windows Update. Microsoft will occasionally publish future updates through regular Windows servicing.
 

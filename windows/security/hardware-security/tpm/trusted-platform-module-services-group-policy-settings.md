@@ -1,15 +1,11 @@
 ---
-title: TPM Group Policy settings 
+title: TPM Group Policy settings
 description: This topic describes the Trusted Platform Module (TPM) Services that can be controlled centrally by using Group Policy settings.
 ms.topic: conceptual
-ms.date: 02/02/2023
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
+ms.date: 07/31/2023
 ---
 
 # TPM Group Policy settings
-
 
 This topic describes the Trusted Platform Module (TPM) Services that can be controlled centrally by using Group Policy settings.
 
@@ -34,11 +30,11 @@ This policy setting configured which TPM authorization values are stored in the 
 
 There are three TPM owner authentication settings that are managed by the Windows operating system. You can choose a value of **Full**, **Delegate**, or **None**.
 
--   **Full**   This setting stores the full TPM owner authorization, the TPM administrative delegation blob, and the TPM user delegation blob in the local registry. With this setting, you can use the TPM without requiring remote or external storage of the TPM owner authorization value. This setting is appropriate for scenarios that do not require you to reset the TPM anti-hammering logic or change the TPM owner authorization value. Some TPM-based applications may require that this setting is changed before features that depend on the TPM anti-hammering logic can be used. Full owner authorization in TPM 1.2 is similar to lockout authorization in TPM 2.0. Owner authorization has a different meaning for TPM 2.0.
+-   **Full**   This setting stores the full TPM owner authorization, the TPM administrative delegation blob, and the TPM user delegation blob in the local registry. With this setting, you can use the TPM without requiring remote or external storage of the TPM owner authorization value. This setting is appropriate for scenarios that do not require you to reset the TPM anti-hammering logic or change the TPM owner authorization value. Some TPM-based applications may require that this setting is changed before features that depend on the TPM anti-hammering logic can be used. Full owner authorization in TPM 1.2 is similar to lockout authorization in TPM 2.0. Owner authorization has a different meaning for TPM 2.0.
 
--   **Delegated**   This setting stores only the TPM administrative delegation blob and the TPM user delegation blob in the local registry. This setting is appropriate for use with TPM-based applications that depend on the TPM antihammering logic. This is the default setting in Windows prior to version 1703.
+-   **Delegated**   This setting stores only the TPM administrative delegation blob and the TPM user delegation blob in the local registry. This setting is appropriate for use with TPM-based applications that depend on the TPM antihammering logic. This is the default setting in Windows prior to version 1703.
 
--   **None**   This setting provides compatibility with previous operating systems and applications. You can also use it for scenarios when TPM owner authorization cannot be stored locally. Using this setting might cause issues with some TPM-based applications.
+-   **None**   This setting provides compatibility with previous operating systems and applications. You can also use it for scenarios when TPM owner authorization cannot be stored locally. Using this setting might cause issues with some TPM-based applications.
 
 > [!NOTE]
 > If the operating system managed TPM authentication setting is changed from **Full** to **Delegated**, the full TPM owner authorization value will be regenerated, and any copies of the previously set TPM owner authorization value will be invalid.
@@ -57,7 +53,6 @@ The following table shows the TPM owner authorization values in the registry.
 | 2          | Delegated |
 | 4          | Full      |
 
-
 If you enable this policy setting, the Windows operating system will store the TPM owner authorization in the registry of the local computer according to the TPM authentication setting you choose.
 
 On Windows 10 prior to version 1607, if you disable or do not configure this policy setting, and the **Turn on TPM backup to Active Directory Domain Services** policy setting is also disabled or not configured, the default setting is to store the full TPM authorization value in the local registry. If this policy is disabled or not configured, and the **Turn on TPM backup to Active Directory Domain Services** policy setting is enabled, only the administrative delegation and the user delegation blobs are stored in the local registry.
@@ -73,9 +68,9 @@ This setting helps administrators prevent the TPM hardware from entering a locko
 
 For each standard user, two thresholds apply. Exceeding either threshold prevents the user from sending a command that requires authorization to the TPM. Use the following policy settings to set the lockout duration:
 
--   [Standard User Individual Lockout Threshold](#standard-user-individual-lockout-threshold)   This value is the maximum number of authorization failures that each standard user can have before the user is not allowed to send commands that require authorization to the TPM.
+-   [Standard User Individual Lockout Threshold](#standard-user-individual-lockout-threshold)   This value is the maximum number of authorization failures that each standard user can have before the user is not allowed to send commands that require authorization to the TPM.
 
--   [Standard User Total Lockout Threshold](#standard-user-total-lockout-threshold)   This value is the maximum total number of authorization failures that all standard users can have before all standard users are not allowed to send commands that require authorization to the TPM.
+-   [Standard User Total Lockout Threshold](#standard-user-total-lockout-threshold)   This value is the maximum total number of authorization failures that all standard users can have before all standard users are not allowed to send commands that require authorization to the TPM.
 
 An administrator with the TPM owner password can fully reset the TPM's hardware lockout logic by using the Windows Defender Security Center. Each time an administrator resets the TPM's hardware lockout logic, all prior standard user TPM authorization failures are ignored. This allows standard users to immediately use the TPM normally.
 
@@ -107,32 +102,36 @@ If you do not configure this policy setting, a default value of 9 is used. A val
 
 ## Configure the system to use legacy Dictionary Attack Prevention Parameters setting for TPM 2.0
 
-Introduced in Windows 10, version 1703, this policy setting configures the TPM to use the Dictionary Attack Prevention Parameters (lockout threshold and recovery time) to the values that were used for Windows 10 Version 1607 and below. 
+Introduced in Windows 10, version 1703, this policy setting configures the TPM to use the Dictionary Attack Prevention Parameters (lockout threshold and recovery time) to the values that were used for Windows 10 Version 1607 and below.
 
 > [!IMPORTANT]
-> Setting this policy will take effect only if:  
-> -   The TPM was originally prepared using a version of Windows after Windows 10 Version 1607
-> -   The system has a TPM 2.0. 
-> 
+> Setting this policy will take effect only if:
+>
+> - The TPM was originally prepared using a version of Windows after Windows 10 Version 1607
+> - The system has a TPM 2.0.
+
 > [!NOTE]
 > Enabling this policy will only take effect after the TPM maintenance task runs (which typically happens after a system restart). Once this policy has been enabled on a system and has taken effect (after a system restart), disabling it will have no impact and the system's TPM will remain configured using the legacy Dictionary Attack Prevention parameters, regardless of the value of this group policy. The only ways for the disabled setting of this policy to take effect on a system where it was once enabled are to either:
+>
 > -  Disable it from group policy
 > -  Clear the TPM on the system
 
-## TPM Group Policy settings in the Windows Security app
+## TPM Group Policy settings in Windows Security
 
-You can change what users see about TPM in the Windows Security app. The Group Policy settings for the TPM area in the Windows Security app are located at:
+You can change what users see about TPM in **Windows Security**. The Group Policy settings for the TPM area in **Windows Security** are located at:
 
-**Computer Configuration\\Administrative Templates\\Windows Components\\Windows Security\\Device security** 
+**Computer Configuration\\Administrative Templates\\Windows Components\\Windows Security\\Device security**
 
 ### Disable the Clear TPM button
-If you don't want users to be able to click the **Clear TPM** button in the Windows Security app, you can disable it with this Group Policy setting. Select **Enabled** to make the **Clear TPM** button unavailable for use.
+
+If you don't want users to be able to click the **Clear TPM** button in **Windows Security**, you can disable it with this Group Policy setting. Select **Enabled** to make the **Clear TPM** button unavailable for use.
 
 ### Hide the TPM Firmware Update recommendation
+
 If you don't want users to see the recommendation to update TPM firmware, you can disable it with this setting. Select **Enabled** to prevent users from seeing a recommendation to update their TPM firmware when a vulnerable firmware is detected.
 
 ## Related topics
 
-- [Trusted Platform Module](trusted-platform-module-top-node.md) 
+- [Trusted Platform Module](trusted-platform-module-top-node.md)
 - [TPM Cmdlets in Windows PowerShell](/powershell/module/trustedplatformmodule/?view=win10-ps&preserve-view=true)
 - [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](../../operating-system-security/data-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies.md)

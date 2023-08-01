@@ -37,17 +37,17 @@ appliesto:
 
 To enable memory integrity on Windows devices with supporting hardware throughout an enterprise, use any of these options:
 
-- [Windows Security app](#windows-security-app)
+- [Windows Security settings](#windows-security)
 - [Microsoft Intune (or another MDM provider)](#enable-memory-integrity-using-intune)
 - [Group Policy](#enable-memory-integrity-using-group-policy)
 - [Microsoft Configuration Manager](https://cloudblogs.microsoft.com/enterprisemobility/2015/10/30/managing-windows-10-device-guard-with-configuration-manager/)
 - [Registry](#use-registry-keys-to-enable-memory-integrity)
 
-### Windows Security app
+### Windows Security
 
-**Memory integrity** can be turned on in the Windows Security app and found at **Windows Security** > **Device security** > **Core isolation details** > **Memory integrity**. For more information, see [Device protection in Windows Security](https://support.microsoft.com/help/4096339/windows-10-device-protection-in-windows-defender-security-center).
+**Memory integrity** can be turned on in **Windows Security** settings and found at **Windows Security** > **Device security** > **Core isolation details** > **Memory integrity**. For more information, see [Device protection in Windows Security](https://support.microsoft.com/help/4096339/windows-10-device-protection-in-windows-defender-security-center).
 
-Beginning with Windows 11 22H2, the Windows Security app shows a warning if memory integrity is turned off. The warning indicator also appears on the Windows Security icon in the Windows Taskbar and in the Windows Notification Center. The user can dismiss the warning from within the Windows Security app.
+Beginning with Windows 11 22H2, **Windows Security** shows a warning if memory integrity is turned off. The warning indicator also appears on the Windows Security icon in the Windows Taskbar and in the Windows Notification Center. The user can dismiss the warning from within **Windows Security**.
 
 To proactively dismiss the memory integrity warning, you can set the **Hardware_HVCI_Off** (DWORD) registry value under `HKLM\SOFTWARE\Microsoft\Windows Security Health\State` to 0. After you change the registry value, you must restart the device for the change to take effect.
 
