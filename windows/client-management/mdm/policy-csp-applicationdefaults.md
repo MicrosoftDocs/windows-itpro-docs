@@ -90,7 +90,7 @@ To create the SyncML, follow these steps:
     Starting in Windows 11, version 22H2, two new attributes are available for further customization of the policy. These attributes can be used to change how often the policy associations are applied.
 
     - **Version** attribute for `DefaultAssociations`. This attribute is used to control when **Suggested** associations are applied. Whenever the **Version** value is incremented, a **Suggested** association is applied one time.
-    - **Suggested** attribute for `Association`. The default value is false. If it's false, the **Association** is applied on every sign-in. If it's' true, the **Association** is only applied once for the current **DefaultAssociations** Version. When the **Version** is incremented, the **Association** is applied once again, on next sign-in.
+    - **Suggested** attribute for `Association`. The default value is false. If it's false, the **Association** is applied on every sign-in. If it's true, the **Association** is only applied once for the current **DefaultAssociations** Version. When the **Version** is incremented, the **Association** is applied once again, on next sign-in.
 
     In the following example, the **Association** for `.htm` is applied on first sign-in of the user, and all others are applied on every sign-in. If **Version** is incremented, and the updated file is deployed to the user, the **Association** for `.htm` is applied again:
 
