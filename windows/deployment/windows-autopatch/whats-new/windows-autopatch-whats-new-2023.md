@@ -1,7 +1,7 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 07/31/2023 
+ms.date: 08/01/2023 
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
@@ -20,6 +20,14 @@ ms.collection:
 This article lists new and updated feature releases, and service releases, with their corresponding Message center post numbers (if applicable).
 
 Minor corrections such as typos, style, or formatting issues aren't listed.
+
+## August 2023
+
+### August feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Device alerts](../operate/windows-autopatch-device-alerts.md) | Added `'InstallSetupBlock'` to the [Alert resolutions section](../operate/windows-autopatch-device-alerts.md#alert-resolutions) |
 
 ## July 2023
 
