@@ -2,9 +2,7 @@
 title: Microsoft Pluton security processor
 description: Learn more about Microsoft Pluton security processor
 ms.topic: conceptual
-ms.date: 09/15/2022
-appliesto: 
-  - ✅ <b>Windows 11, version 22H2</b>
+ms.date: 07/31/2023
 ---
 
 # Microsoft Pluton security processor
