@@ -957,12 +957,12 @@
     },
     {
       "source_path": "windows/deployment/windows-autopilot/user-driven-aad.md",
-      "redirect_url": "/windows/deployment/windows-autopilot/user-driven",
+      "redirect_url": "/mem/autopilot/user-driven",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/windows-autopilot/user-driven-hybrid.md",
-      "redirect_url": "/windows/deployment/windows-autopilot/user-driven",
+      "redirect_url": "/mem/autopilot/user-driven",
       "redirect_document_id": false
     },
     {
@@ -977,22 +977,22 @@
     },
     {
       "source_path": "windows/deployment/windows-autopilot/windows-10-autopilot.md",
-      "redirect_url": "/windows/deployment/windows-autopilot/windows-autopilot",
+      "redirect_url": "/mem/autopilot/windows-autopilot",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/windows-autopilot/windows-autopilot-requirements-configuration.md",
-      "redirect_url": "/windows/deployment/windows-autopilot/windows-autopilot-requirements",
+      "redirect_url": "/mem/autopilot/windows-autopilot-requirements",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/windows-autopilot/windows-autopilot-requirements-licensing.md",
-      "redirect_url": "/windows/deployment/windows-autopilot/windows-autopilot-requirements",
+      "redirect_url": "/mem/autopilot/windows-autopilot-requirements",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/windows-autopilot/windows-autopilot-requirements-network.md",
-      "redirect_url": "/windows/deployment/windows-autopilot/windows-autopilot-requirements",
+      "redirect_url": "/mem/autopilot/windows-autopilot-requirements",
       "redirect_document_id": false
     },
     {
@@ -1002,12 +1002,12 @@
     },
     {
       "source_path": "windows/deployment/windows-autopilot/windows-autopilot-reset-local.md",
-      "redirect_url": "/windows/deployment/windows-autopilot/windows-autopilot-reset",
+      "redirect_url": "/mem/autopilot/windows-autopilot-reset",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/windows-autopilot/windows-autopilot-reset-remote.md",
-      "redirect_url": "/windows/deployment/windows-autopilot/windows-autopilot-reset",
+      "redirect_url": "/mem/autopilot/windows-autopilot-reset",
       "redirect_document_id": false
     },
     {
@@ -1028,6 +1028,16 @@
     {
       "source_path": "windows/deployment/windows-autopilot/windows-autopilot.md",
       "redirect_url": "/mem/autopilot/windows-autopilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/demonstrate-deployment-on-vm.md",
+      "redirect_url": "/mem/autopilot/tutorial/autopilot-scenarios",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/index.yml",
+      "redirect_url": "/mem/autopilot/",
       "redirect_document_id": false
     }
   ]
