@@ -1,7 +1,7 @@
 ---
 title: Device alerts
 description: Provide notifications and information about the necessary steps to keep your devices up to date. 
-ms.date: 07/25/2023
+ms.date: 08/01/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
