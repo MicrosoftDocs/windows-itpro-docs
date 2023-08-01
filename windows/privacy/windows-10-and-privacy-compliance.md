@@ -145,15 +145,12 @@ An administrator can disable a user’s ability to delete their device’s diagn
 
 #### _2.3.7 Diagnostic data: Enabling the Windows diagnostic data processor configuration_
 
-> [!IMPORTANT]
-> There are some significant changes planned for the Windows diagnostic data processor configuration.  To learn more, [review this information](changes-to-windows-diagnostic-data-collection.md#significant-changes-coming-to-the-windows-diagnostic-data-processor-configuration).
-
 **Applies to:**
 
 - Windows 11 Enterprise, Professional, and Education editions
 - Windows 10 Enterprise, Professional, and Education, version 1809 with July 2021 update and newer
 
-The Windows diagnostic data processor configuration enables IT administrators to be the controller, as defined by the European Union General Data Protection Regulation (GDPR), for the Windows diagnostic data collected from Windows devices that are Azure Active Directory (AAD)-joined and meet the configuration requirements. For more information, see [Enable Windows diagnostic data processor configuration](configure-windows-diagnostic-data-in-your-organization.md#enable-windows-diagnostic-data-processor-configuration) in [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md). Windows diagnostic data does not include data processed by Microsoft in connection with providing service-based capabilities.
+The Windows diagnostic data processor configuration enables IT administrators to be the controller, as defined by the European Union General Data Protection Regulation (GDPR), for the Windows diagnostic data collected from Windows devices that are Azure Active Directory (AAD)-joined and meet the configuration requirements. For more information, see [Enable Windows diagnostic data processor configuration](configure-windows-diagnostic-data-in-your-organization.md#enable-windows-diagnostic-data-processor-configuration). Windows diagnostic data does not include data processed by Microsoft in connection with providing service-based capabilities.
 
 The Windows diagnostic data collected from devices enabled with the Windows diagnostic data processor configuration may be associated with a specific Azure Active Directory User ID or device ID. The Windows diagnostic data processor configuration provides you with controls that help respond to data subject requests (DSRs) to delete diagnostic data, at user account closure, for a specific Azure AD User ID. Additionally, you’re able to execute an export DSR for diagnostic data related to a specific Azure AD User ID. For more information, see [The process for exercising data subject rights](#3-the-process-for-exercising-data-subject-rights). Microsoft also will accommodate a tenant account closure, either because you decide to close your Azure or Azure AD tenant account, or because you decide you no longer wish to be the data controller for Windows diagnostic data, but still wish to remain an Azure customer.
 
