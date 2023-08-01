@@ -2,7 +2,6 @@
 metadata:
   title: IE and Microsoft Edge FAQ for IT Pros
   description: Describes frequently asked questions about Internet Explorer and Microsoft Edge for IT professionals. 
-  audience: ITPro
   manager: msmets
   author: ramakoni1
   ms.author: ramakoni
@@ -10,7 +9,6 @@ metadata:
   ms.prod: internet-explorer
   ms.technology:
   ms.topic: faq
-  ms.custom: CI=111020
   ms.localizationpriority: medium
   ms.date: 01/23/2020
 title: Internet Explorer and Microsoft Edge frequently asked questions (FAQ) for IT Pros
