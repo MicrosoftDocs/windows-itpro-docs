@@ -48,7 +48,8 @@ The hard disk must be partitioned with at least two drives:
 
 When installed on a new computer, Windows automatically creates the partitions that are required for BitLocker.
 
-A partition subject to encryption can't be marked as an active partition. This requirement applies to the operating system drives, fixed data drives, and removable data drives.
+> [!IMPORTANT]
+> An encrypted partition can't be marked as active.
 
 When installing the BitLocker optional component on a server, the Enhanced Storage feature also needs to be installed. The Enhanced Storage feature is used to support hardware encrypted drives.
 

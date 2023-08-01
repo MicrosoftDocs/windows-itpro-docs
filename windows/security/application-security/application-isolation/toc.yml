@@ -1,6 +1,6 @@
 items:
 - name: Microsoft Defender Application Guard (MDAG)
-  href: ../../threat-protection\microsoft-defender-application-guard\md-app-guard-overview.md
+  href: microsoft-defender-application-guard/md-app-guard-overview.md
 - name: MDAG for Edge standalone mode
   href: microsoft-defender-application-guard/md-app-guard-overview.md
 - name: MDAG for Edge enterprise mode and enterprise management 🔗
@@ -9,7 +9,7 @@ items:
   href: https://support.microsoft.com/office/application-guard-for-office-9e0fb9c2-ffad-43bf-8ba3-78f785fdba46
 - name: MDAG configure via MDM 🔗
   href: /windows/client-management/mdm/windowsdefenderapplicationguard-csp
-- name: Windows containers 🔗
+- name: App containers 🔗
   href: /virtualization/windowscontainers/about
 - name: Windows Sandbox
   href: windows-sandbox/windows-sandbox-overview.md

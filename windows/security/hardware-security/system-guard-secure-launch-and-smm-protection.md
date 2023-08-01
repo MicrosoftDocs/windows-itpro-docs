@@ -2,7 +2,7 @@
 title: System Guard Secure Launch and SMM protection
 description: Explains how to configure System Guard Secure Launch and System Management Mode (SMM protection) to improve the startup security of Windows 10 devices.
 ms.localizationpriority: medium
-ms.date: 11/30/2021
+ms.date: 07/31/2023
 ms.topic: conceptual
 ---
 
@@ -19,7 +19,7 @@ You can enable System Guard Secure Launch by using any of these options:
 
 - [Mobile Device Management (MDM)](#mobile-device-management)
 - [Group Policy](#group-policy)
-- [Windows Security app](#windows-security-app)
+- [Windows Security settings](#windows-security)
 - [Registry](#registry)
 
 ### Mobile Device Management
@@ -34,11 +34,11 @@ System Guard Secure Launch can be configured for Mobile Device Management (MDM) 
 
     ![Secure Launch Configuration.](images/secure-launch-group-policy.png)
 
-### Windows Security app
+### Windows Security
 
 Click **Start** > **Settings** > **Update & Security** > **Windows Security** > **Open Windows Security** > **Device security** > **Core isolation** > **Firmware protection**.
 
-  ![Windows Security app.](images/secure-launch-security-app.png)
+  ![Windows Security settings.](images/secure-launch-security-app.png)
 
 ### Registry
 
@@ -58,7 +58,7 @@ Click **Start** > **Settings** > **Update & Security** > **Windows Security** > 
 
 To verify that Secure Launch is running, use System Information (MSInfo32). Click **Start**, search for **System Information**, and look under **Virtualization-based Security Services Running** and **Virtualization-based Security Services Configured**.
 
-![Verifying Secure Launch is running in the Windows Security app.](images/secure-launch-msinfo.png)
+![Verifying Secure Launch is running in the Windows Security settings.](images/secure-launch-msinfo.png)
 
 > [!NOTE]
 > To enable System Guard Secure launch, the platform must meet all the baseline requirements for [System Guard](how-hardware-based-root-of-trust-helps-protect-windows.md), [Device Guard](../application-security/application-control/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md), [Credential Guard](../identity-protection/credential-guard/credential-guard-requirements.md), and [Virtualization Based Security](/windows-hardware/design/device-experiences/oem-vbs).

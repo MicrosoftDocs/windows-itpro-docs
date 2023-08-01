@@ -1,7 +1,7 @@
 ---
-title: Device & performance health in the Windows Security app
+title: Device & performance health in Windows Security
 description: Use the Device & performance health section to see the status of the machine and note any storage, update, battery, driver, or hardware configuration issues
-ms.date: 12/31/2018
+ms.date: 07/31/2023
 ms.topic: article
 ---
 
@@ -12,11 +12,11 @@ The **Device performance & health** section contains information about hardware,
 
 The [Windows 10 IT pro troubleshooting topic](/windows/client-management/windows-10-support-solutions), and the main [Windows 10 documentation library](/windows/windows-10/) can also be helpful for resolving issues.
 
-In Windows 10, version 1709 and later, the section can be hidden from users of the machine. This option can be useful if you don't want employees in your organization to see or have access to user-configured options for the features shown in the section.
+This section can be hidden from users of the machine. This option can be useful if you don't want employees in your organization to see or have access to user-configured options for the features shown in the section.
 
 ## Hide the Device performance & health section
 
-You can choose to hide the entire section by using Group Policy. The section won't appear on the home page of the Windows Security app, and its icon won't be shown on the navigation bar on the side of the app.
+You can choose to hide the entire section by using Group Policy. The section won't appear on the home page of **Windows Security**, and its icon won't be shown on the navigation bar on the side.
 
 This section can be hidden only by using Group Policy.
 
@@ -30,6 +30,6 @@ This section can be hidden only by using Group Policy.
 1. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy).
 
 > [!NOTE]
-> If you hide all sections then the app will show a restricted interface, as in the following screenshot:
+> If you hide all sections then **Windows Security** will show a restricted interface, as in the following screenshot:
 >
-> ![Screenshot of the Windows Security app with all sections hidden by Group Policy.](images/wdsc-all-hide.png)
+> ![Screenshot of the Windows Security with all sections hidden by Group Policy.](images/wdsc-all-hide.png)

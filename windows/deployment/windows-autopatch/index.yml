@@ -10,6 +10,7 @@ metadata:
   ms.topic: landing-page # Required
   author: tiaraquan #Required; your GitHub user alias, with correct capitalization.
   ms.author: tiaraquan #Required; microsoft alias of author; optional team alias.
+  manager: dougeby
   ms.date: 05/30/2022 #Required; mm/dd/yyyy format.
   ms.prod: windows-client
   ms.technology: itpro-updates

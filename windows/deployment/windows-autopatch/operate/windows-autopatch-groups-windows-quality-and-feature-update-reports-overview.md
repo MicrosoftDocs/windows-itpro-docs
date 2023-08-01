@@ -17,7 +17,7 @@ ms.collection:
 
 # Windows quality and feature update reports overview
 
-## Windows quality reports
+## Windows quality update reports
 
 The Windows quality reports provide you with information about:
 

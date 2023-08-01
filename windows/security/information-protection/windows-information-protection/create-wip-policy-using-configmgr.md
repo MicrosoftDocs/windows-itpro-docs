@@ -1,15 +1,12 @@
 ---
 title: Create and deploy a WIP policy in Configuration Manager
 description: Use Microsoft Configuration Manager to create and deploy a Windows Information Protection (WIP) policy. Choose protected apps, WIP-protection level, and find enterprise data.
-ms.prod: windows-client
-ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.reviewer: rafals
 ms.topic: how-to
 ms.date: 07/15/2022
-ms.technology: itpro-security
 ---
 
 # Create and deploy a Windows Information Protection policy in Configuration Manager
@@ -97,15 +94,14 @@ If you don't know the publisher or product name, you can find them for both desk
 
 **To find the Publisher and Product Name values for Store apps without installing them**
 
-1. Go to the [Microsoft Store for Business](https://businessstore.microsoft.com/store) website, and find your app. For example, Microsoft OneNote.
+1. Go to the [Microsoft Store](https://apps.microsoft.com/) website, and find your app. For example, Microsoft OneNote.
 
    > [!NOTE]
-   > 
    > If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the protected apps list. For info about how to do this, see the steps in [Add an AppLocker policy file](#add-an-applocker-policy-file) in this article.
 
-2. Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, `9wzdncrfhvjl`.
+2. Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is `https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl`, and you'd copy the ID value, `9wzdncrfhvjl`.
 
-3. In a browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values. For example, run https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata, where `9wzdncrfhvjl` is replaced with your ID value.
+3. In a browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values. For example, run `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`, where `9wzdncrfhvjl` is replaced with your ID value.
 
    The API runs and opens a text editor with the app details.
 
