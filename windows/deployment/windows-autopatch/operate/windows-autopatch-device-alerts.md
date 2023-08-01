@@ -1,7 +1,7 @@
 ---
 title: Device alerts
 description: Provide notifications and information about the necessary steps to keep your devices up to date. 
-ms.date: 07/25/2023
+ms.date: 08/01/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -79,6 +79,7 @@ Alert resolutions are provided through the Windows Update service and provide th
 | `InstallIssueRedirection` | A known folder that doesn't support redirection to another drive might have been redirected to another drive. | The Windows Update service has reported that the Windows Update file location may be redirected to an invalid location. Check your Windows Installation, and retry the update.<p>If the alert persists, [submit a support request](../operate/windows-autopatch-support-request.md).</p> |
 | `InstallMissingInfo` | Windows Update doesn't have the information it needs about the update to finish the installation. | The Windows Update service has reported that another update may have replaced the one you're trying to install. Check the update, and then try reinstalling it. |
 | `InstallOutOfMemory` | The installation couldn't be completed because Windows ran out of memory. | The Windows Update service has reported the system doesn't have sufficient system memory to perform the update.<p>Restart Windows, then try the installation again.</p><p>If it still fails, allocate more memory to the device, or increase the size of the virtual memory pagefile(s). For more information, see [How to determine the appropriate page file size for 64-bit versions of Windows](/troubleshoot/windows-client/performance/how-to-determine-the-appropriate-page-file-size-for-64-bit-versions-of-windows).</p> |
+| `InstallSetupBlock` | There is an application or driver blocking the upgrade. | The Windows Update service has detected that an application or driver is hindering the upgrade process. Utilize the SetupDiag utility to identify and diagnose any compatibility problems.<p>For more information, see [SetupDiag - Windows Deployment](/windows/deployment/upgrade/setupdiag).</p> |
 | `InstallSetupError` | Windows Setup encountered an error while installing. | The Windows Update service has reported an error during installation.Review the last reported HEX error code in [Quality update status report](../operate/windows-autopatch-groups-windows-quality-update-status-report.md) to further investigate.<p>If the alert persists, [submit a support request](../operate/windows-autopatch-support-request.md).</p> |
 | `PolicyConflict` | There are client policies (MDM, GP) that conflict with Windows Update settings. | The Windows Update service has reported a policy conflict. Review  the [Windows Autopatch Policy Health dashboard](../operate/windows-autopatch-policy-health-and-remediation.md).<p>If the alert persists, [submit a support request](../operate/windows-autopatch-support-request.md).</p> |
 | `PolicyConflictDeferral` | The Deferral Policy configured on the device is preventing the update from installing. | The Windows Update service has reported a policy conflict. Review  the [Windows Autopatch Policy Health dashboard](../operate/windows-autopatch-policy-health-and-remediation.md).<p>If the alert persists, [submit a support request](../operate/windows-autopatch-support-request.md).</p> |
