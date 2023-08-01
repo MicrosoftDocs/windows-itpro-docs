@@ -81,7 +81,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/security/application-security/application-control/windows-defender-application-control/design/microsoft-recommended-driver-block-rules.md",
+      "source_path": "windows/security/application-security/application-control/windows-defender-application-control/design/microsoft-recommended-block-rules.md",
       "redirect_url": "/windows/security/application-security/application-control/windows-defender-application-control/design/applications-that-can-bypass-wdac",
       "redirect_document_id": false
     },
