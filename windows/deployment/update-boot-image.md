@@ -139,6 +139,11 @@ From an elevated **PowerShell** command prompt, run the following command to add
 
 ```powershell
 Add-WindowsDriver -Path "<Mount_folder_path>" -Driver "<Driver_INF_source_path>\<driver>.inf"
+
+Example:
+
+Add-WindowsDriver -Path "C:\Mount" -Driver "C:\Drivers\driver.inf"
+
 ```
 
 or
@@ -146,6 +151,11 @@ or
 ```powershell
 Add-WindowsDriver -Path "<Mount_folder_path>" -Driver "<Drivers_source_path>" -Recurse
 ```
+
+**Example**:
+
+Add-WindowsDriver -Path "C:\Mount" -Driver "C:\Drivers\" -Recurse
+
 
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
 
@@ -423,7 +433,7 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
 
 ### How Microsoft Configuration Manager creates boot images
 
-Microsoft Configuration Manager creates its own boot images by taking the `winpe.wim` from the Windows ADK, adding some [optional components it requires](#microsoft-configuration-manager-boot-image-required-components) to function correctly, and then saving the boot image as `boot.wim` in the directory `<ConfigMgr_Install_Directory>\OSD\boot\<architecture>\boot.wim`. This `boot.wim` boot image is considered the pristine authoritative copy of the boot image by Configuration Manager and is never touched, modified, or updated by Configuration Manager except in some very specific scenarios. Instead, when changes such as:
+Microsoft Configuration Manager creates its own boot images by taking the `winpe.wim` from the Windows ADK, adding some [optional components it requires](#configuration-manager-boot-image-required-components) to function correctly, and then saving the boot image as `boot.wim` in the directory `<ConfigMgr_Install_Directory>\OSD\boot\<architecture>\boot.wim`. This `boot.wim` boot image is considered the pristine authoritative copy of the boot image by Configuration Manager and is never touched, modified, or updated by Configuration Manager except in some very specific scenarios. Instead, when changes such as:
 
 - Adding drivers
 - Adding optional components
@@ -479,7 +489,7 @@ When using Configuration Manager, the `winpe.wim` boot image from the Windows AD
 
 By updating `winpe.wim` from the Windows ADK, this will ensure that the cumulative update will stay applied regardless of what changes are made to the boot image via Configuration Manager.
 
-### Boot image required components
+### Configuration Manager boot image required components
 
 The following components are required by Microsoft Configuration Manager boot images for Configuration Manager to function correctly:
 
