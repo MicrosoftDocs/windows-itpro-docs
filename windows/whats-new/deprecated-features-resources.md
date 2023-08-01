@@ -30,7 +30,7 @@ The following information can help IT professionals to:
 - Identify issues related to TLS 1.0 and 1.1 disablement
 - Re-enable TLS 1.0 and 1.1, if needed
 
-For developer guidance and for a list of common applications known to rely on TLS 1.0 or 1.1, see the [Announcing the disablement of TLS 1.0 and TLS 1.1 in Windows](https://techcommunity.microsoft.com/) blog post.
+For developer guidance and for a list of common applications known to rely on TLS 1.0 or 1.1, see the [Announcing the disablement of TLS 1.0 and TLS 1.1 in Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/tls-1-0-and-tls-1-1-soon-to-be-disabled-in-windows/ba-p/3887947) blog post.
 
 ### TLS diagnostic events
 
