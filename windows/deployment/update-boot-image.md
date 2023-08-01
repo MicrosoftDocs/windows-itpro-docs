@@ -109,7 +109,9 @@ Adjust the above paths for 32-bit boot images (only available in Windows 10 ADKs
 
     **Example**:
 
-    `Mount-WindowsImage -Path "C:\Mount" -ImagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" -Index 1 -Verbose`
+    ```powershell
+    Mount-WindowsImage -Path "C:\Mount" -ImagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" -Index 1 -Verbose
+    ```
 
     For more information, see [Mount-WindowsImage](/powershell/module/dism/mount-windowsimage).
 
@@ -123,7 +125,9 @@ Adjust the above paths for 32-bit boot images (only available in Windows 10 ADKs
 
     Example:
 
-    **DISM.exe /Mount-image /imagefile:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" /Index:1 /MountDir:"C:\Mount"**
+    ```cmd
+    DISM.exe /Mount-image /imagefile:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" /Index:1 /MountDir:"C:\Mount"
+    ```
 
     For more information, see [Modify a Windows image using DISM: Mount an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism) and [DISM Image Management Command-Line Options: /Mount-Image](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14#mount-image).
 
@@ -135,14 +139,10 @@ If needed, add any drivers to the boot image:
 
 ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
-From an elevated **PowerShell** command prompt, run the following command to add drivers to the boot image:
+From an elevated **PowerShell** command prompt, run one of the following commands to add drivers to the boot image:
 
 ```powershell
 Add-WindowsDriver -Path "<Mount_folder_path>" -Driver "<Driver_INF_source_path>\<driver>.inf"
-
-# Example:
-
-# Add-WindowsDriver -Path "C:\Mount" -Driver "C:\Drivers\driver.inf"
 ```
 
 or
@@ -151,14 +151,21 @@ or
 Add-WindowsDriver -Path "<Mount_folder_path>" -Driver "<Drivers_source_path>" -Recurse
 ```
 
-**Example**:
+**Examples**:
 
-Add-WindowsDriver -Path "C:\Mount" -Driver "C:\Drivers\" -Recurse
+```powershell
+Add-WindowsDriver -Path "C:\Mount" -Driver "C:\Drivers\driver.inf"
+```
 
+or
+
+```powershell
+Add-WindowsDriver -Path "C:\Mount" -Driver "C:\Drivers" -Recurse
+```
 
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
 
-From an elevated **Deployment and Imaging Tools Environment** command prompt, run one of the following command to add drivers to the boot image:
+From an elevated **Deployment and Imaging Tools Environment** command prompt, run one of the following commands to add drivers to the boot image:
 
 ```cmd
 DISM.exe /Image:"<Mount_folder_path>" /Add-Driver /Driver:"<Driver_INF_source_path>\<driver>.inf"
@@ -168,6 +175,18 @@ or
 
 ```cmd
 DISM.exe /Image:"<Mount_folder_path>" /Add-Driver /Driver:"<Drivers_source_path>" /Recurse
+```
+
+**Examples**:
+
+```cmd
+DISM.exe /Image:"C:\Mount" /Add-Driver /Driver:"C:\Drivers\driver.inf"
+```
+
+or
+
+```cmd
+DISM.exe /Image:"C:\Mount" /Add-Driver /Driver:"C:\Drivers" /Recurse
 ```
 
 For more information, see [Add and Remove Driver packages to an offline Windows Image](/windows-hardware/manufacture/desktop/add-and-remove-drivers-to-an-offline-windows-image)
@@ -207,7 +226,7 @@ Drivers are not affected by the cumulative update installed later in this walkth
     Add-WindowsPackage -PackagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-WMI.cab" -Path "C:\Mount" -Verbose
     ```
 
-    This example assumes an x64 boot image. If a different architecture is being used, then adjust the commands accordingly.
+    These examples assume a 64-bit boot image. If a different architecture is being used, then adjust the paths in the commands accordingly.
 
     For more information, see [Add-WindowsPackage](/powershell/module/dism/add-windowspackage).
 
@@ -219,7 +238,13 @@ Drivers are not affected by the cumulative update installed later in this walkth
     DISM.exe /Image:"<Mount_folder_path>" /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\<Component>.cab" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\<Component2>.cab"
     ```
 
-    This example assumes an x64 boot image. If a different architecture is being used, then adjust the commands accordingly.
+    **Example**:
+
+    ```cmd
+    DISM.exe /Image:"C:\Mount" /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-WMI.cab" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-SecureStartup.cab"
+    ```
+
+    These examples assume a 64-bit boot image image. If a different architecture is being used, then adjust the paths in the commands accordingly.
 
     You can add as many desired optional components as needed on a single **DISM.exe** command line.
 
@@ -239,7 +264,13 @@ Drivers are not affected by the cumulative update installed later in this walkth
     Add-WindowsPackage -PackagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\<Component>_en-us.cab" -Path "<Mount_folder_path>" -Verbose
     ```
 
-    This example assumes a 64-bit boot image. If a different architecture is being used, then adjust the paths accordingly.
+    **Example**:
+
+    ```powershell
+     Add-WindowsPackage -PackagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-WMI_en-us.cab" -Path "C:\Mount" -Verbose   
+    ```
+
+    These examples assume a 64-bit boot image. If a different architecture is being used, then adjust the paths accordingly.
 
     ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
 
@@ -249,7 +280,13 @@ Drivers are not affected by the cumulative update installed later in this walkth
     DISM.exe /Image:"<Mount_folder_path>" /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\<Component>_en-us.cab" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\<Component2>_en-us.cab"
     ```
 
-    This example assumes a 64-bit boot image. If a different architecture is being used, then adjust the paths accordingly.
+    **Example**:
+
+    ```cmd
+    DISM.exe /Image:"C:\Mount" /Add-Package /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-WMI_en-us.cab" /PackagePath:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\en-us\WinPE-SecureStartup_en-us.cab"
+    ```
+
+    These examples assume a 64-bit boot image. If a different architecture is being used, then adjust the paths accordingly.
 
     You can add as many desired optional components as needed on a single DISM.exe command line.
 
@@ -279,6 +316,12 @@ From an elevated **PowerShell** command prompt, run the following command to add
 Add-WindowsPackage -PackagePath "<Path_to_CU_MSU_update>" -Path "<Mount_folder_path>" -Verbose
 ```
 
+**Example**:
+
+```powershell
+Add-WindowsPackage -PackagePath "C:\Updates\windows11.0-kb5026372-x64_d2e542ce70571b093d815adb9013ed467a3e0a85.msu" -Path "C:\Mount" -Verbose
+```
+
 For more information, see [Add-WindowsPackage](/powershell/module/dism/add-windowspackage)
 
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
@@ -287,6 +330,12 @@ From an elevated **Deployment and Imaging Tools Environment** command prompt, ru
 
 ```cmd
 DISM.exe /Image:"<Mount_folder_path>" /Add-Package /PackagePath:"<Path_to_CU_MSU_update>"
+```
+
+**Example**:
+
+```cmd
+DISM.exe /Image:"C:\Mount" /Add-Package /PackagePath:"C:\Updates\windows11.0-kb5026372-x64_d2e542ce70571b093d815adb9013ed467a3e0a85.msu"
 ```
 
 For more information, see [Add or Remove Packages Offline Using DISM](/windows-hardware/manufacture/desktop/add-or-remove-packages-offline-using-dism) and [DISM Operating System Package (.cab or .msu) Servicing Command-Line Options: /Add-Package](/windows-hardware/manufacture/desktop/dism-operating-system-package-servicing-command-line-options#add-package).
@@ -309,6 +358,14 @@ From an elevated **PowerShell** command prompt, run the following command to cop
 Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi" -Force
 
 Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi" -Force
+```
+
+**Example**:
+
+```powershell
+Copy-Item "C:\Mount\Windows\Boot\EFI\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi" -Force
+
+Copy-Item "C:\Mount\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi" -Force
 ```
 
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
@@ -337,6 +394,14 @@ Start-Process "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment 
 Start-Process "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\DISM\dism.exe" -ArgumentList " /Image:"<Mount_folder_path>" /Cleanup-image /StartComponentCleanup /Resetbase" -Wait -LoadUserProfile
 ```
 
+**Example**:
+
+```powershell
+Start-Process "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\DISM\dism.exe" -ArgumentList " /Image:"C:\Mount" /Cleanup-image /StartComponentCleanup /Resetbase /Defer" -Wait -LoadUserProfile
+
+Start-Process "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\DISM\dism.exe" -ArgumentList " /Image:"C:\Mount" /Cleanup-image /StartComponentCleanup /Resetbase" -Wait -LoadUserProfile
+```
+
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
 
 From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to clean up the mounted boot image and help reduce its size:
@@ -345,6 +410,14 @@ From an elevated **Deployment and Imaging Tools Environment** command prompt, ru
 DISM.exe /Image:"<Mount_folder_path>" /Cleanup-image /StartComponentCleanup /Resetbase /Defer
 
 DISM.exe /Image:"<Mount_folder_path>" /Cleanup-image /StartComponentCleanup /Resetbase
+```
+
+**Example**:
+
+```cmd
+DISM.exe /Image:"C:\Mount" /Cleanup-image /StartComponentCleanup /Resetbase /Defer
+
+DISM.exe /Image:"C:\Mount" /Cleanup-image /StartComponentCleanup /Resetbase
 ```
 
 For more information, see [Modify a Windows image using DISM: Reduce the size of an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#reduce-the-size-of-an-image) and [DISM Operating System Package (.cab or .msu) Servicing Command-Line Options: /Cleanup-Image](/windows-hardware/manufacture/desktop/dism-operating-system-package-servicing-command-line-options#cleanup-image).
@@ -363,6 +436,12 @@ From an elevated **PowerShell** command prompt, run the following command to ver
 Get-WindowsPackage -Path "<Mount_folder_path>"
 ```
 
+**Example**:
+
+```powershell
+Get-WindowsPackage -Path "C:\Mount"
+```
+
 For more information, see [Get-WindowsPackage](/powershell/module/dism/get-windowspackage).
 
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
@@ -371,6 +450,12 @@ From an elevated **Deployment and Imaging Tools Environment** command prompt, ru
 
 ```cmd
 DISM.exe /Image:"<Mount_folder_path>" /Get-Packages
+```
+
+**Example**:
+
+```cmd
+DISM.exe /Image:"C:\Mount" /Get-Packages
 ```
 
 For more information, see [DISM Operating System Package (.cab or .msu) Servicing Command-Line Options: /Get-Packages](/windows-hardware/manufacture/desktop/dism-operating-system-package-servicing-command-line-options#get-packages).
@@ -389,6 +474,12 @@ From an elevated **PowerShell** command prompt, run the following command to unm
 Dismount-WindowsImage -Path "<Mount_folder_path>" -Save -Verbose
 ```
 
+**Example**:
+
+```powershell
+Dismount-WindowsImage -Path "C:\Mount" -Save -Verbose
+```
+
 For more information, see [Dismount-WindowsImage](/powershell/module/dism/dismount-windowsimage).
 
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
@@ -397,6 +488,12 @@ From an elevated **Deployment and Imaging Tools Environment** command prompt, ru
 
 ```cmd
 DISM.exe /Unmount-Image /MountDir:"<Mount_folder_path>" /Commit
+```
+
+**Example:**
+
+```cmd
+DISM.exe /Unmount-Image /MountDir:"C:\Mount" /Commit
 ```
 
 For more information, see [Modify a Windows image using DISM: Unmounting an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#unmounting-an-image) and [DISM Image Management Command-Line Options: /Unmount-Image](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14#unmount-image).
@@ -413,6 +510,12 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
 
     ```powershell
     Export-WindowsImage -SourceImagePath "<Boot_image_path>\<boot_image>.wim" -SourceIndex 1 -DestinationImagePath "<Boot_image_path>\<boot_image>-export.wim" -CompressionType max -Verbose
+    ```
+
+    **Example**:
+
+    ```powershell
+    Export-WindowsImage -SourceImagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" -SourceIndex 1 -DestinationImagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe-export.wim" -CompressionType max -Verbose
     ```
 
     For more information, see [Export-WindowsImage](/powershell/module/dism/export-windowsimage).
