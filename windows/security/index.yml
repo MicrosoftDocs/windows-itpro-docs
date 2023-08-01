@@ -85,16 +85,16 @@ productDirectory:
     - title: Application security
       imageSrc: /media/common/i_queries.svg
       links:
-        - url: /windows/security/application-security
-          text: Feature 1
-        - url: /windows/security/application-security
-          text: Feature 2
-        - url: /windows/security/application-security
-          text: Feature 3
-        - url: /windows/security/application-security
-          text: Feature 4
-        - url: /windows/security/application-security
-          text: Feature 5
+        - url: /windows/security/application-security/application-control/windows-defender-application-control/wdac
+          text: Windows Defender Application Control (WDAC)
+        - url: /windows/security/application-security/application-control/user-account-control
+          text: User Account Control (UAC)
+        - url: /windows/security/application-security/application-control/windows-defender-application-control/design/microsoft-recommended-driver-block-rules
+          text: Microsoft vulnerable driver blocklist
+        - url: /windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview
+          text: Microsoft Defender Application Guard
+        - url: /windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview
+          text: Windows Sandbox
         - url: /windows/security/application-security
           text: Learn more about application security >
 
