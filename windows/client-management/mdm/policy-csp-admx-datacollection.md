@@ -47,7 +47,7 @@ If you disable or don't configure this policy setting, then Microsoft won't be a
 <!-- CommercialIdPolicy-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 > [!NOTE]
-> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Enable Windows diagnostic data processor configuration](../../privacy/configure-windows-diagnostic-data-in-your-organization.md#enable-windows-diagnostic-data-processor-configuration).
+> Starting with the January 2023 preview cumulative update, this policy is no longer supported to configure the processor option. For more information, see [Enable Windows diagnostic data processor configuration](/windows/privacy/configure-windows-diagnostic-data-in-your-organization.md#enable-windows-diagnostic-data-processor-configuration).
 <!-- CommercialIdPolicy-Editable-End -->
 
 <!-- CommercialIdPolicy-DFProperties-Begin -->
