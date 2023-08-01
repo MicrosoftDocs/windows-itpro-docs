@@ -107,6 +107,10 @@ Adjust the above paths for 32-bit boot images (only available in Windows 10 ADKs
     Mount-WindowsImage -Path "<Mount_folder_path>" -ImagePath "<Boot_image_path>\<boot_image>.wim" -Index 1 -Verbose
     ```
 
+    **Example**:
+
+    `Mount-WindowsImage -Path "C:\Mount" -ImagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" -Index 1 -Verbose`
+
     For more information, see [Mount-WindowsImage](/powershell/module/dism/mount-windowsimage).
 
     ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
@@ -116,6 +120,10 @@ Adjust the above paths for 32-bit boot images (only available in Windows 10 ADKs
     ```cmd
     DISM.exe /Mount-image /imagefile:"<Boot_image_path>" /Index:1 /MountDir:"<Mount_folder_path>"
     ```
+
+    **Example**:
+
+    `MDISM.exe /Mount-image /imagefile:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" /Index:1 /MountDir:"C:\Mount"`
 
     For more information, see [Modify a Windows image using DISM: Mount an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism) and [DISM Image Management Command-Line Options: /Mount-Image](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14#mount-image).
 
@@ -130,7 +138,13 @@ If needed, add any drivers to the boot image:
 From an elevated **PowerShell** command prompt, run the following command to add drivers to the boot image:
 
 ```powershell
-Command to be determined
+Add-WindowsDriver -Path "<Mount_folder_path>" -Driver "<Driver_INF_source_path>\<driver>.inf"
+```
+
+or
+
+```powershell
+Add-WindowsDriver -Path "<Mount_folder_path>" -Driver "<Drivers_source_path>" -Recurse
 ```
 
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
@@ -144,16 +158,27 @@ DISM.exe /Image:"<Mount_folder_path>" /Add-Driver /Driver:"<Driver_INF_source_pa
 or
 
 ```cmd
-DISM.exe /Image:"<Mount_folder_path>" /Add-Driver /Driver:"<Drivers_source_path" /Recurse
+DISM.exe /Image:"<Mount_folder_path>" /Add-Driver /Driver:"<Drivers_source_path>" /Recurse
 ```
 
 For more information, see [Add and Remove Driver packages to an offline Windows Image](/windows-hardware/manufacture/desktop/add-and-remove-drivers-to-an-offline-windows-image)
 
 ---
 
+Drivers are not affected by the cumulative update installed later in this walkthrough. Once a driver is added to a boot image, it does not need to be added again if a newer cumulative update is installed at a later point in time.
+
+> [!TIP]
+>
+> A full set of drivers is not needed in Windows PE boot images. Only a small subset of drivers is needed that provide basic functionality while in WinPE. In most cases, no drivers need to be added to an out of box Windows ADK boot image since it already has many drivers built in. Don't add drivers to a boot image until it is verifed that they are needed. When drivers do need to be added, generally only network (NIC) drivers are needed. Occasionally, mass storage (disk) may also be needed. Some Surface devices may also need keyboard and mouse drivers.
+
 > [!IMPORTANT]
 >
-> For Microsoft Configuration Manager boot images, don't manually add drivers to the boot image using the above steps. Instead, add drivers through Configuration Manager via the **Drivers** tab in the **Properties** of the boot image. This will ensure that the drivers in the boot image can be properly managed through Configuration Manager. Drivers are not affected by the cumulative update installed later in this walkthrough.
+> For Microsoft Configuration Manager and Microsoft Deployment Toolkit (MDT) boot images, don't manually add drivers to the boot image using the above steps. Instead, add drivers to the boot images via Microsoft Configuration Manager or Microsoft Deployment Toolkit (MDT):
+>
+> - In Configuration Manager, via the **Drivers** tab in the **Properties** of the boot image.
+> - In Microsoft Deployment Toolkit (MDT), via the **Out-of-Box Drivers** tab in the **Properties** of the boot image.
+>
+> This will ensure that the drivers in the boot image can be properly managed through Configuration Manager or Microsoft Deployment Toolkit (MDT).
 
 ## Step 6: Add optional components to boot image
 
@@ -215,11 +240,11 @@ For more information, see [Add and Remove Driver packages to an offline Windows 
 
     ---
 
-For a list of all available WinPE optional components including descriptions for each component, see [WinPE Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference?view=windows-11#winpe-optional-components).
+For a list of all available WinPE optional components including descriptions for each component, see [WinPE Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference#winpe-optional-components).
 
 > [!IMPORTANT]
 >
-> When adding optional components, make sure to install optional components that are prerequisites of other optional components. Additionally, make sure that the prerequisite is installed firts. For more information on adding optional components, see [WinPE Optional Components (OC) Reference: How to add Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference?view=windows-11#how-to-add-optional-components).
+> When adding optional components, make sure to install optional components that are prerequisites of other optional components. Additionally, make sure that the prerequisite is installed first. For more information on adding optional components, see [WinPE Optional Components (OC) Reference: How to add Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference#how-to-add-optional-components).
 
 > [!IMPORTANT]
 >
@@ -396,13 +421,15 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
 
 ## Microsoft Configuration Manager considerations
 
-Microsoft Configuration Manager creates its own boot images by taking the `winpe.wim` from the Windows ADK, adding some optional components it requires to function correctly, and then saving the boot image as `boot.wim` in the directory `<ConfigMgr_Install_Directory>\OSD\boot\<architecture>\boot.wim`. This `boot.wim` boot image is considered the pristine authoritative copy of the boot image by Configuration Manager and is almost never touched, modified, or updated by Configuration Manager. Instead, when changes such as:
+### How Microsoft Configuration Manager creates boot images
+
+Microsoft Configuration Manager creates its own boot images by taking the `winpe.wim` from the Windows ADK, adding some [optional components it requires](#microsoft-configuration-manager-boot-image-required-components) to function correctly, and then saving the boot image as `boot.wim` in the directory `<ConfigMgr_Install_Directory>\OSD\boot\<architecture>\boot.wim`. This `boot.wim` boot image is considered the pristine authoritative copy of the boot image by Configuration Manager and is never touched, modified, or updated by Configuration Manager except in some very specific scenarios. Instead, when changes such as:
 
 - Adding drivers
 - Adding additional optional components
 - Enabling the command prompt
 
-are done in the properties of the boot image in Configuration Manager, Configuration Manager makes a copy of `boot.wim`, applies the changes to the copy, and then saves the new boot image as `boot.<package_id>.wim`. If any additional changes are done to the boot image, Configuration Manager discards the previously created `boot.<package_id>.wim` boot image, makes a copy of `boot.wim`, applies the changes to the copy, and then saves the new boot image as `boot.<package_id>.wim`. In other words, `boot.wim` is never touched. Any time any changes are made to a boot image, both the new changes and any changes done in the past are reapplied to a new copy of `boot.wim`. The new changes are not applyed the existing copy of `boot.<package_id>.wim`.
+are done in the properties of the boot image in Configuration Manager, Configuration Manager makes a copy of `boot.wim`, applies the changes to the copy, and then saves the new boot image as `boot.<package_id>.wim`. If any additional changes are done to the boot image, Configuration Manager discards the previously created `boot.<package_id>.wim` boot image, makes a copy of `boot.wim`, applies the changes to the copy, and then saves the new boot image as `boot.<package_id>.wim`. In other words, `boot.wim` is never touched. Any time any changes are made to a boot image, both the new changes and any changes done in the past are reapplied to a new copy of `boot.wim`. The new changes are not applied the existing copy of `boot.<package_id>.wim`.
 
 This process makes has the following advantages:
 
@@ -413,33 +440,54 @@ This process makes has the following advantages:
 
 There are two scenarios when the `boot.wim` boot image is updated by Configuration Manager:
 
-1. When updating between versions of Configuration Manager or when applying hotfix roll ups (HFRUs) to Configuration Manager, `boot.wim` may be updated as part of the update process.
+1. When upgrading between versions of Configuration Manager or when applying hotfix roll ups (HFRUs) to Configuration Manager, `boot.wim` may be updated as part of the upgrade process.
 1. When selecting the option **Reload this boot image with the current Windows PE version from the Windows ADK** in the **Update Distribution Points Wizard**.
 
 In theses scenarios, the `boot.wim` boot image is updated using the `winpe.wim` boot image from the Windows ADK as described earlier in this section. This process creates a new pristine copy of the `boot.wim` boot image using the current version of the `winpe.wim` boot image that is part of the Windows ADK.
 
+### Which boot image should be updated?
+
+When adding a cumulative update to a Configuration Manager boot image, it's recommended to update the `winpe.wim` boot image from the Windows ADK. After updating the `winpe.wim` boot image from the Windows ADK, generate a new `boot.wim` boot image for Configuration Manager by using the **Reload this boot image with the current Windows PE version from the Windows ADK** option in the **Update Distribution Points Wizard**.
+
+The `winpe.wim` boot image from the Windows ADK should be updated when using Configuration Manager because:
+
+1. If `boot.wim` is updated, then the next time `boot.wim` is updated via a Configuration Manager upgrade or the **Reload this boot image with the current Windows PE version from the Windows ADK** option, the changes made to `boot.wim` including the cumulative updates applied will be lost. If the `winpe.wim` boot image from the Windows ADK is updated instead, the the changes to the boot image including the cumulative updates applied will be preserved.
+
+1. If `boot.<package_id>.wim` is updated, then it will not only face the issues when `boot.wim` is updated, but it will also lose any changes, including the cumulative update, when any changes are done to the boot image (e.g. adding drivers, enabling the command prompt, etc.). Additionally, it will change the hash value of the boot image which can lead to download failures when downloading the boot image from a distribution point.
+
+By updating `winpe.wim` from the Windows ADK, this will ensure that the cumulative update will stay applied regardless of what changes are made to the boot image via Configuration Manager.
+
 ### Microsoft Configuration Manager boot image required components
 
-The following components are required by Microsoft Configuration Manager in the boot image for Configuration Manager to function correctly:
+The following components are required by Microsoft Configuration Manager boot images for Configuration Manager to function correctly:
 
-- Scripting/WinPE-Scripting (WinPE-Scripting)
-- Startup/WinPE-SecureStartup (WinPE-SecureStartup)
-- Network/WinPE-WDS-Tools (WinPE-WDS-Tools)
-- Scripting/WinPE-WMI (WinPE-WMI)
+| Feature | File Name | Dependance |
+|---------|-----------|------------|
+| Scripting/WinPE-Scripting | `WinPE-Scripting.cab` | NA |
+| Network/WinPE-WDS-Tools | `WinPE-WDS-Tools.cab` | NA |
+| Scripting/WinPE-WMI | `WinPE-WMI.cab` | NA |
+| Startup/WinPE-SecureStartup | `WinPE-SecureStartup.cab` | Scripting/WinPE-WMI (`WinPE-WMI.cab`) |
 
-Once any optional components has been manually added to a boot image, Configuration Manager will detect that the optional component has already been added. It will not try to add the optional component again whenever it is updating the boot image.
+When adding optional components to any boot image used by Configuration Manager during the [Step 6: Add optional components to boot image](#step-6-add-optional-components-to-boot-image) step, make sure to add the above components in the above order to the boot image.
 
-### Adding optional components manually vs. adding optional components through Configuration Manager
+### Add optional components manually
 
-For Microsoft Configuration Manager boot images, make sure to add any desired optional components manually using the above command lines instead of adding them through Configuration Manager via the **Optional Components** tab in the **Properties** of the boot image. This is because the cumulative update being applied at the next step will also update any optional components as needed. If the optional components are instead added through Configuration Manager, then the optional components will not be updated with the cumulative update. This could lead to unexpected behaviors and problems.
+For Microsoft Configuration Manager boot images, when applying a cumulative update to a boot image, make sure to add any desired optional components manually using the above command lines instead of adding them through Configuration Manager via the **Optional Components** tab in the **Properties** of the boot image. Optional components need to be added to the boot image manually instead of via Configuration Manager because:
+
+- When the cumulative update is applied, it will also update any optional components as needed.
+- If the optional components are instead added through Configuration Manager after a cumulative update has been applied to the boot image, then the optional components will not be updated with the cumulative update. This could lead to unexpected behaviors and problems.
+
+Once any optional components has been manually added to a boot image, if that optional component is attempted to be added via the **Optional Components** tab in the **Properties** of the boot image in Configuration Manager, Configuration Manager will detect that the optional component has already been added and it will not try to add the optional component again.
 
 ## Microsoft Deployment Toolkit (MDT) considerations
 
 Copy boot files
 
+since the Microsoft Deployment Toolkit (MDT) doesn't support versions of Windows or the Windows ADK beyond Windows 10, the recommendation is to instead use the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads). This version was the last version of the Windows ADK supported by MDT.
+
 ## Windows Deployment Services (WDS) considerations
 
-The **boot.wim** that is part of Windows installation media isn't supported for deploying Windows 11 with Windows Deployment Services (WDS). Additionally, the **boot.wim** from Windows 11 installation media isn't supported for deploying any version of Windows with Windows Deployment Services (WDS). For more information, see [Windows Deployment Services (WDS) boot.wim support](wds-boot-support.md)
+The **boot.wim** that is part of Windows installation media isn't supported for deploying Windows 11 with Windows Deployment Services (WDS). Additionally, the **boot.wim** from Windows 11 installation media isn't supported for deploying any version of Windows with Windows Deployment Services (WDS). For more information, see [Windows Deployment Services (WDS) boot.wim support](wds-boot-support.md).
 
 ## Windows Server 2012 R2
 
