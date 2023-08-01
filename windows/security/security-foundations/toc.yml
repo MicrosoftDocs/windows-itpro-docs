@@ -1,8 +1,10 @@
 items:
 - name: Overview
   href: index.md
+- name: Zero Trust and Windows
+  href: zero-trust-windows-device-health.md
 - name: Microsoft Security Development Lifecycle
-  href: ../threat-protection/msft-security-dev-lifecycle.md
+  href: msft-security-dev-lifecycle.md
 - name: Certification
   href: certification/toc.yml
 - name: Zero Trust and Windows

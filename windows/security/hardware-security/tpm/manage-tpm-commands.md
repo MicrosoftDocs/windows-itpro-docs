@@ -1,14 +1,8 @@
 ---
-title: Manage TPM commands 
+title: Manage TPM commands
 description: This article for the IT professional describes how to manage which Trusted Platform Module (TPM) commands are available to domain users and to local users.
 ms.topic: conceptual
 ms.date: 04/26/2023
-appliesto:
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2022</a>
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2019</a>
-  - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016</a>
 ---
 
 # Manage TPM commands
