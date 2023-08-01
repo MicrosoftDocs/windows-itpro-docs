@@ -59,7 +59,7 @@ Microsoft recommends updating Windows PE (WinPE) boot images with the latest cum
 >
 > It's strongly recommended to download and install the latest version of the Windows ADK and the Windows PE add-on for the Windows ADK.
 >
-> However, since the Microsoft Deployment Toolkit (MDT) doesn't support versions of Windows or the Windows ADK beyond Windows 10, the recommendation is to instead use the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads). This version was the last version of the Windows ADK supported by MDT.
+> However, the Microsoft Deployment Toolkit (MDT) doesn't support versions of Windows or the Windows ADK beyond Windows 10. If using MDT, the recommendation is to instead use the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads). This version was the last version of the Windows ADK supported by MDT.
 >
 > Additionally, the latest versions of the **Windows PE add-on for the Windows ADK** only includes 64-bit boot images. If a 32-bit boot image is required, then the recommendation in this scenario is to also use the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads). This version of the Windows ADK was the last version to include both 32-bit and 64-bit boot images.
 
@@ -121,9 +121,9 @@ Adjust the above paths for 32-bit boot images (only available in Windows 10 ADKs
     DISM.exe /Mount-image /imagefile:"<Boot_image_path>" /Index:1 /MountDir:"<Mount_folder_path>"
     ```
 
-    **Example**:
+    Example:
 
-    `MDISM.exe /Mount-image /imagefile:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" /Index:1 /MountDir:"C:\Mount"`
+    **DISM.exe /Mount-image /imagefile:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" /Index:1 /MountDir:"C:\Mount"**
 
     For more information, see [Modify a Windows image using DISM: Mount an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism) and [DISM Image Management Command-Line Options: /Mount-Image](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14#mount-image).
 
@@ -165,18 +165,18 @@ For more information, see [Add and Remove Driver packages to an offline Windows 
 
 ---
 
-Drivers are not affected by the cumulative update installed later in this walkthrough. Once a driver is added to a boot image, it does not need to be added again if a newer cumulative update is installed at a later point in time.
+Drivers are not affected by the cumulative update installed later in this walkthrough. Once a driver is added to a boot image, it does not need to be added again if a newer cumulative update is applied to the boot image at a later point in time.
 
 > [!TIP]
 >
-> A full set of drivers is not needed in Windows PE boot images. Only a small subset of drivers is needed that provide basic functionality while in WinPE. In most cases, no drivers need to be added to an out of box Windows ADK boot image since it already has many drivers built in. Don't add drivers to a boot image until it is verifed that they are needed. When drivers do need to be added, generally only network (NIC) drivers are needed. Occasionally, mass storage (disk) may also be needed. Some Surface devices may also need keyboard and mouse drivers.
+> A full set of drivers is not needed in Windows PE boot images. Only a small subset of drivers is needed that provide basic functionality while in WinPE. In most cases, no drivers need to be added to an out of box Windows ADK boot image since it already has many drivers built in. Don't add drivers to a boot image until it is verified that they are needed. When drivers do need to be added, generally only network (NIC) drivers are needed. Occasionally, mass storage (disk) may also be needed. Some Surface devices may also need keyboard and mouse drivers.
 
 > [!IMPORTANT]
 >
 > For Microsoft Configuration Manager and Microsoft Deployment Toolkit (MDT) boot images, don't manually add drivers to the boot image using the above steps. Instead, add drivers to the boot images via Microsoft Configuration Manager or Microsoft Deployment Toolkit (MDT):
 >
 > - In Configuration Manager, via the **Drivers** tab in the **Properties** of the boot image.
-> - In Microsoft Deployment Toolkit (MDT), via the **Out-of-Box Drivers** tab in the **Properties** of the boot image.
+> - In Microsoft Deployment Toolkit (MDT), via the **Drivers and Patches** tab under the **Windows PE** tab in the **Properties** of the deployment share.
 >
 > This will ensure that the drivers in the boot image can be properly managed through Configuration Manager or Microsoft Deployment Toolkit (MDT).
 
@@ -426,38 +426,60 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
 Microsoft Configuration Manager creates its own boot images by taking the `winpe.wim` from the Windows ADK, adding some [optional components it requires](#microsoft-configuration-manager-boot-image-required-components) to function correctly, and then saving the boot image as `boot.wim` in the directory `<ConfigMgr_Install_Directory>\OSD\boot\<architecture>\boot.wim`. This `boot.wim` boot image is considered the pristine authoritative copy of the boot image by Configuration Manager and is never touched, modified, or updated by Configuration Manager except in some very specific scenarios. Instead, when changes such as:
 
 - Adding drivers
-- Adding additional optional components
+- Adding optional components
 - Enabling the command prompt
 
-are done in the properties of the boot image in Configuration Manager, Configuration Manager makes a copy of `boot.wim`, applies the changes to the copy, and then saves the new boot image as `boot.<package_id>.wim`. If any additional changes are done to the boot image, Configuration Manager discards the previously created `boot.<package_id>.wim` boot image, makes a copy of `boot.wim`, applies the changes to the copy, and then saves the new boot image as `boot.<package_id>.wim`. In other words, `boot.wim` is never touched. Any time any changes are made to a boot image, both the new changes and any changes done in the past are reapplied to a new copy of `boot.wim`. The new changes are not applied the existing copy of `boot.<package_id>.wim`.
+are done in the properties of the boot image in Configuration Manager, Configuration Manager makes a copy of `boot.wim`, applies the changes to the copy, and then saves the new boot image as `boot.<package_id>.wim`. If any additional changes are done to the boot image, Configuration Manager discards the previously created `boot.<package_id>.wim` boot image, makes a new copy of `boot.wim`, applies the changes to the copy, and then saves the new boot image as `boot.<package_id>.wim`. In other words, `boot.wim` is never touched. Any time any changes are made to a boot image, both the new changes and any changes done in the past are all reapplied to a new copy of `boot.wim`.
 
 This process makes has the following advantages:
 
 1. Keeps `boot.wim` pristine.
+
 1. Makes sure that when changes are made to a boot image, they are being done to a copy of a pristine version of the boot image that hasn't had been modified in the past. This helps avoid corruption and/or corrects issues with existing boot images.
+
 1. Helps manage components in the boot image. The process doesn't need to know what components it might need to remove from the boot image each time the boot image is rebuilt. Instead, it just needs to know what components to add to the boot image.
+
 1. Reduces the size of the boot image that can occur when components are removed from the boot image.
 
 There are two scenarios when the `boot.wim` boot image is updated by Configuration Manager:
 
 1. When upgrading between versions of Configuration Manager or when applying hotfix roll ups (HFRUs) to Configuration Manager, `boot.wim` may be updated as part of the upgrade process.
+
 1. When selecting the option **Reload this boot image with the current Windows PE version from the Windows ADK** in the **Update Distribution Points Wizard**.
 
 In theses scenarios, the `boot.wim` boot image is updated using the `winpe.wim` boot image from the Windows ADK as described earlier in this section. This process creates a new pristine copy of the `boot.wim` boot image using the current version of the `winpe.wim` boot image that is part of the Windows ADK.
 
-### Which boot image should be updated?
+### Which boot image should be updated with the cumulative update?
 
-When adding a cumulative update to a Configuration Manager boot image, it's recommended to update the `winpe.wim` boot image from the Windows ADK. After updating the `winpe.wim` boot image from the Windows ADK, generate a new `boot.wim` boot image for Configuration Manager by using the **Reload this boot image with the current Windows PE version from the Windows ADK** option in the **Update Distribution Points Wizard**.
+When adding a cumulative update to a Configuration Manager boot image, it's recommended to update the `winpe.wim` boot image from the Windows ADK. After updating the `winpe.wim` boot image from the Windows ADK, generate a new `boot.wim` boot image for Configuration Manager by using the following steps:
 
-The `winpe.wim` boot image from the Windows ADK should be updated when using Configuration Manager because:
+1. Open the Microsoft Configuration manager console.
 
-1. If `boot.wim` is updated, then the next time `boot.wim` is updated via a Configuration Manager upgrade or the **Reload this boot image with the current Windows PE version from the Windows ADK** option, the changes made to `boot.wim` including the cumulative updates applied will be lost. If the `winpe.wim` boot image from the Windows ADK is updated instead, the the changes to the boot image including the cumulative updates applied will be preserved.
+1. In the Microsoft Configuration manager console, navigate to **Software Library** > **Overview** > **Operating Systems** > **Boot Images**.
+
+1. In the **Boot Images** pane, select the desired boot image.
+
+1. In the toolbar, select **Update Distribution Points**.
+
+1. In the **Update Distribution Points Wizard** window that appears:
+
+    1. In the **General**/**Update distribution points with this image** page, select the **Reload this boot image with the current Windows PE version from the Windows ADK** option, and then select the **Next >** button.
+
+    1. In the **Summary** page, select the **Next >** button.
+
+    1. The **Progress** page will appears while the boot image builds.
+
+    1. Once the boot image finishes building, the **Completion**/**The task "Update Distribution Points Wizard" completed successfully** page will appear. Select the **Close** button.
+
+When using Configuration Manager, the `winpe.wim` boot image from the Windows ADK should be updated instead of the `boot.wim` from Configuration Manager because:
+
+1. If `boot.wim` is updated, then the next time `boot.wim` is updated via a Configuration Manager upgrade or the **Reload this boot image with the current Windows PE version from the Windows ADK** option, the changes made to `boot.wim` including the cumulative updates applied will be lost. If the `winpe.wim` boot image from the Windows ADK is updated instead, then the changes to the boot image including the cumulative updates applied will persist and be preserved.
 
 1. If `boot.<package_id>.wim` is updated, then it will not only face the issues when `boot.wim` is updated, but it will also lose any changes, including the cumulative update, when any changes are done to the boot image (e.g. adding drivers, enabling the command prompt, etc.). Additionally, it will change the hash value of the boot image which can lead to download failures when downloading the boot image from a distribution point.
 
 By updating `winpe.wim` from the Windows ADK, this will ensure that the cumulative update will stay applied regardless of what changes are made to the boot image via Configuration Manager.
 
-### Microsoft Configuration Manager boot image required components
+### Boot image required components
 
 The following components are required by Microsoft Configuration Manager boot images for Configuration Manager to function correctly:
 
@@ -469,6 +491,8 @@ The following components are required by Microsoft Configuration Manager boot im
 | Startup/WinPE-SecureStartup | `WinPE-SecureStartup.cab` | Scripting/WinPE-WMI (`WinPE-WMI.cab`) |
 
 When adding optional components to any boot image used by Configuration Manager during the [Step 6: Add optional components to boot image](#step-6-add-optional-components-to-boot-image) step, make sure to add the above components in the above order to the boot image.
+
+After adding the required components to the boot image, any additional optional components can also be added to the boot image.
 
 ### Add optional components manually
 
