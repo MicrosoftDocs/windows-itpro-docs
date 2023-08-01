@@ -6,8 +6,6 @@ items:
     href: /microsoft-365/security/defender-endpoint/attack-surface-reduction
   - name: Tamper protection for MDE 🔗
     href: /microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection
-  - name: Microsoft Vulnerable Driver Blocklist 🔗
-    href: ../../application-security/application-control/windows-defender-application-control/design/microsoft-recommended-driver-block-rules.md
   - name: Controlled folder access 🔗
     href: /microsoft-365/security/defender-endpoint/controlled-folders
   - name: Exploit protection 🔗
