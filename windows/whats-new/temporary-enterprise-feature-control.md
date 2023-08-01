@@ -55,10 +55,10 @@ The following features are behind temporary enterprise control in Windows 11:
 | Touch-optimized taskbar for 2-in-1 devices <!--8092554-->| [February 28, 2023 - KB5022913](https://support.microsoft.com/topic/february-28-2023-kb5022913-os-build-22621-1344-preview-3e38c0d9-924d-4f3f-b0b6-3bd49b2657b9) | 2023 annual feature update |
 | Selecting **Uninstall** for a Win32 app from the right-click menu uses the **Installed Apps** page in **Settings** rather than **Programs and Features** under the **Control Panel** <!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
 | Windows Ink allows users to handwrite directly onto most editable fields <!--8092554, WIP.23481-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
-| Windows Spotlight provides a minimized experience, opportunities to learn more about each image, and allows users to preview images at full screen.<!--8092554, WIP., AllowWindowsSpotlight-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
-| Recommended section added to File Explorer Home<!--8092554, DisableGraphRecentItems-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
-| ---<!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
-| ---<!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
+| Windows Spotlight provides a minimized experience, opportunities to learn more about each image, and allows users to preview images at full screen.<!--8092554, WIP.23511, AllowWindowsSpotlight-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
+| Recommended section added to File Explorer Home for users signed into Windows with an Azure AD account. <!--8092554, DisableGraphRecentItems, WIP.23475, WIP.23403-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
+| Changes to folder options for File Explorer <!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
+|  DevHub Experiences <!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
 | ---<!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
 | ---<!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
 
@@ -79,5 +79,6 @@ The following features introduced through the monthly cumulative updates allow p
 | Transfer files to another PC using WiFi direct<!--8092554, WIP.23506-->|[September 2023 - KBXXXXXXX](https://support.microsoft.com/)|Yes|**CSP**: ./Device/Vendor/MSFT/Policy/Config/Wifi/[AllowWiFiDirect](/windows/client-management/mdm/policy-csp-wifi#allowwifidirect)|
 | Windows Copilot <!--8092554, WIP.23493 --> | [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | No |**CSP**: ./User/Vendor/MSFT/WindowsAI/[AllowWindowsCopilot](/windows/client-management/mdm/policy-csp-windowsai#allowwindowscopilot) </br> </br> **Group Policy**: User Configuration\Administrative Templates\Windows Components\Windows Copilot\\**Enable windows copilot entrypoints to allow windows copilot**|
 | Windows Copilot displays on the taskbar <!--8092554--> | [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | Yes| **CSP**: ./Device and User/Vendor/MSFT/Policy/Config/Start/[HideCopilotButton](/windows/client-management/mdm/policy-csp-start#hidecopilotbutton) </br> </br> **Group Policy**: Computer and User Configuration\Administrative Templates\Start Menu and Taskbar\\**Hide the Copilot button**|
-| DevHome? | | | |
+| Dev Home? <!--WIP.23506--> | | | |
 
+ 
