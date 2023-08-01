@@ -3,9 +3,6 @@ title: Trusted Platform Module (TPM) fundamentals
 description: Learn about the components of the Trusted Platform Module and how they're used to mitigate dictionary attacks.
 ms.topic: conceptual
 ms.date: 03/09/2023
-appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10 and later</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016 and later</a>
 ---
 
 # TPM fundamentals
