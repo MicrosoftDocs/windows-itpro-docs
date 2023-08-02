@@ -1,7 +1,7 @@
 ---
 title: Windows operating system security
 description: Securing the operating system includes system security, encryption, network security, and threat protection.
-ms.date: 09/21/2021
+ms.date: 08/02/2023
 ms.topic: article
 ---
 
@@ -13,4 +13,4 @@ Watch the latest [Microsoft Mechanics Windows 11 security](https://youtu.be/tg9Q
 
 Use the links in the following sections to learn more about the operating system security features and capabilities in Windows.
 
-[!INCLUDE [operating-system-security](../includes/sections/operating-system.md)]
+[!INCLUDE [operating-system-security](../includes/sections/operating-system-security.md)]
