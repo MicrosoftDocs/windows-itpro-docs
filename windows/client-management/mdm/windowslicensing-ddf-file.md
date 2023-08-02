@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 06/02/2023
+ms.date: 08/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -342,6 +342,10 @@ The following XML file contains the device description framework (DDF) for the W
           <DFType>
             <MIME />
           </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          </MSFT:Applicability>
           <MSFT:AllowedValues ValueType="ENUM">
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
@@ -373,6 +377,10 @@ The following XML file contains the device description framework (DDF) for the W
           <DFType>
             <MIME />
           </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          </MSFT:Applicability>
         </DFProperties>
       </Node>
       <Node>
@@ -394,6 +402,10 @@ The following XML file contains the device description framework (DDF) for the W
           <DFType>
             <MIME />
           </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          </MSFT:Applicability>
         </DFProperties>
       </Node>
       <Node>
@@ -415,6 +427,10 @@ The following XML file contains the device description framework (DDF) for the W
           <DFType>
             <MIME />
           </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          </MSFT:Applicability>
         </DFProperties>
       </Node>
       <Node>
@@ -436,6 +452,10 @@ The following XML file contains the device description framework (DDF) for the W
           <DFType>
             <MIME />
           </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          </MSFT:Applicability>
           <MSFT:AllowedValues ValueType="ENUM">
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
@@ -467,6 +487,10 @@ The following XML file contains the device description framework (DDF) for the W
           <DFType>
             <MIME />
           </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          </MSFT:Applicability>
         </DFProperties>
       </Node>
     </Node>
@@ -600,7 +624,7 @@ The following XML file contains the device description framework (DDF) for the W
           <DDFName />
         </DFType>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>10.0.22621</MSFT:OsBuildVersion>
+          <MSFT:OsBuildVersion>10.0.22621, 10.0.22000.1165</MSFT:OsBuildVersion>
           <MSFT:CspVersion>1.4</MSFT:CspVersion>
         </MSFT:Applicability>
       </DFProperties>

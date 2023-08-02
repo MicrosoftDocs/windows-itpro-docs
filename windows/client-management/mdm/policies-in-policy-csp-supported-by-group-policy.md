@@ -4,7 +4,7 @@ description: Learn about the policies in Policy CSP supported by Group Policy.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 06/02/2023
+ms.date: 08/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -252,6 +252,8 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 ## Cryptography
 
 - [AllowFipsAlgorithmPolicy](policy-csp-cryptography.md)
+- [TLSCipherSuites](policy-csp-cryptography.md)
+- [ConfigureEllipticCurveCryptography](policy-csp-cryptography.md)
 
 ## Defender
 
@@ -690,6 +692,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [HideRecommendedSection](policy-csp-start.md)
 - [HideRecommendedPersonalizedSites](policy-csp-start.md)
 - [HideTaskViewButton](policy-csp-start.md)
+- [HideCopilotButton](policy-csp-start.md)
 - [DisableControlCenter](policy-csp-start.md)
 - [ForceStartSize](policy-csp-start.md)
 - [DisableContextMenus](policy-csp-start.md)
@@ -703,6 +706,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [SimplifyQuickSettings](policy-csp-start.md)
 - [DisableEditingQuickSettings](policy-csp-start.md)
 - [HideTaskViewButton](policy-csp-start.md)
+- [HideCopilotButton](policy-csp-start.md)
 
 ## Storage
 
@@ -842,6 +846,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [ConfigureDeadlineNoAutoReboot](policy-csp-update.md)
 - [ConfigureDeadlineNoAutoRebootForFeatureUpdates](policy-csp-update.md)
 - [ConfigureDeadlineNoAutoRebootForQualityUpdates](policy-csp-update.md)
+- [AllowOptionalContent](policy-csp-update.md)
 
 ## UserRights
 
