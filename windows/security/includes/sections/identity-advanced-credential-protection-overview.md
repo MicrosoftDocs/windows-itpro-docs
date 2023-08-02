@@ -1,11 +1,11 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 06/02/2023
+ms.date: 08/02/2023
 ms.topic: include
 ---
 
-The following table lists the edition applicability for all Advanced Credential Protection features.
+The following table lists the edition applicability for all Advanced credential protection features.
 
 |Feature|Windows Pro|Windows Enterprise|Windows Pro Education/SE|Windows Education|
 |:-:|:-:|:-:|:-:|:-:|
@@ -16,7 +16,7 @@ The following table lists the edition applicability for all Advanced Credential 
 |[Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard)|❌|Yes|❌|Yes|
 |[Windows Defender Remote Credential Guard](/windows/security/identity-protection/remote-credential-guard)|Yes|Yes|Yes|Yes|
 
-The following table lists the licensing applicability for all Advanced Credential Protection features.
+The following table lists the licensing applicability for all Advanced credential protection features.
 
 |Feature|Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
 |:-:|:-:|:-:|:-:|:-:|:-:|

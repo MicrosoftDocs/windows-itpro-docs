@@ -1,11 +1,11 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 06/02/2023
+ms.date: 08/02/2023
 ms.topic: include
 ---
 
-The following table lists the edition applicability for all Passwordless Sign In features.
+The following table lists the edition applicability for all Passwordless sign in features.
 
 |Feature|Windows Pro|Windows Enterprise|Windows Pro Education/SE|Windows Education|
 |:-:|:-:|:-:|:-:|:-:|
@@ -16,7 +16,7 @@ The following table lists the edition applicability for all Passwordless Sign In
 |[Federated sign-in](/education/windows/federated-sign-in)|❌|❌|Yes|Yes|
 |[Smart Cards for Windows Service](/windows/security/identity-protection/smart-cards/smart-card-smart-cards-for-windows-service)|Yes|Yes|Yes|Yes|
 
-The following table lists the licensing applicability for all Passwordless Sign In features.
+The following table lists the licensing applicability for all Passwordless sign in features.
 
 |Feature|Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
 |:-:|:-:|:-:|:-:|:-:|:-:|

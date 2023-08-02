@@ -1,11 +1,11 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 06/02/2023
+ms.date: 08/02/2023
 ms.topic: include
 ---
 
-The following table lists the edition applicability for all Data Protection features.
+The following table lists the edition applicability for all Encryption and data protection features.
 
 |Feature|Windows Pro|Windows Enterprise|Windows Pro Education/SE|Windows Education|
 |:-:|:-:|:-:|:-:|:-:|
@@ -15,7 +15,7 @@ The following table lists the edition applicability for all Data Protection feat
 |[Personal data encryption (PDE)](/windows/security/information-protection/personal-data-encryption/overview-pde)|❌|Yes|❌|Yes|
 |[Email Encryption (S/MIME)](/windows/security/identity-protection/configure-s-mime)|Yes|Yes|Yes|Yes|
 
-The following table lists the licensing applicability for all Data Protection features.
+The following table lists the licensing applicability for all Encryption and data protection features.
 
 |Feature|Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
 |:-:|:-:|:-:|:-:|:-:|:-:|
