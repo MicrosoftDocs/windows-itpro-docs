@@ -47,7 +47,7 @@ Smart App Control is only available on clean installation of Windows 11 version 
 
 ### Smart App Control Enforced Blocks
 
-Smart App Control enforces the [Microsoft Recommended Driver Block rules](design/microsoft-recommended-driver-block-rules.md) and the [Microsoft Recommended Block Rules](design/microsoft-recommended-block-rules.md), with a few exceptions for compatibility considerations. The following are not blocked by Smart App Control:
+Smart App Control enforces the [Microsoft Recommended Driver Block rules](design/microsoft-recommended-driver-block-rules.md) and the [Microsoft Recommended Block Rules](design/applications-that-can-bypass-wdac.md), with a few exceptions for compatibility considerations. The following are not blocked by Smart App Control:
 
 - Infdefaultinstall.exe
 - Microsoft.Build.dll
