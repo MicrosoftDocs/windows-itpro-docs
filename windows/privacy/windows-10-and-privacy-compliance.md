@@ -162,8 +162,6 @@ We recommend that IT administrators who have enabled the Windows diagnostic data
 >[!Note]
 >Tenant account closure will lead to the deletion of all data associated with that tenant.
 
-Specific services that depend on Windows diagnostic data will also result in the enterprise becoming controllers of their Windows diagnostic data. These services include Update Compliance, Windows Update for Business reports, Windows Update for Business, and Microsoft Managed Desktop. For more information, see [Related Windows product considerations](#5-related-windows-product-considerations).
-
 For more information on how Microsoft can help you honor rights and fulfill obligations under the GDPR when using Windows diagnostic data processor configurations, see [General Data Protection Regulation Summary](/compliance/regulatory/gdpr).
 
 ## 3. The process for exercising data subject rights
@@ -230,10 +228,6 @@ An administrator can configure privacy-related settings, such as choosing to onl
 ### 5.3 Microsoft Managed Desktop
 
 [Microsoft Managed Desktop (MMD)](/microsoft-365/managed-desktop/service-description/) is a service that provides your users with a secure modern experience and always keeps devices up to date with the latest versions of Windows Enterprise edition, Office 365 ProPlus, and Microsoft security services.
-
-### 5.4 Update Compliance
-
-[Update Compliance](/windows/deployment/update/update-compliance-monitor) is a service that enables organizations to monitor security, quality and feature updates for Windows Professional, Education, and Enterprise editions, and view a report of device and update issues related to compliance that need attention. Update Compliance uses Windows diagnostic data for all its reporting.
 
 ### 5.5 Windows Update for Business reports
 
