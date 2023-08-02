@@ -1,19 +1,19 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 05/04/2023
+ms.date: 08/02/2023
 ms.topic: include
 ---
 
 ## Windows edition and licensing requirements
 
-The following table lists the Windows editions that support Microsoft Vulnerable Driver Blocklist:
+The following table lists the Windows editions that support Microsoft vulnerable driver blocklist:
 
 |Windows Pro|Windows Enterprise|Windows Pro Education/SE|Windows Education|
 |:---:|:---:|:---:|:---:|
 |Yes|Yes|Yes|Yes|
 
-Microsoft Vulnerable Driver Blocklist license entitlements are granted by the following licenses:
+Microsoft vulnerable driver blocklist license entitlements are granted by the following licenses:
 
 |Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
 |:---:|:---:|:---:|:---:|:---:|
