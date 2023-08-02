@@ -436,9 +436,9 @@ This step doesn't update or change the boot image. However, it makes sure that t
 
 In particular, this step is needed when addressing the BlackLotus UEFI bootkit vulnerability as documented in [KB5025885: How to manage the Windows Boot Manager revocations for Secure Boot changes associated with CVE-2023-24932](https://prod.support.services.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d) and [CVE-2023-24932](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24932).
 
-> [!IMPORTANT]
+> [!NOTE]
 >
-> If using Microsoft Deployment Toolkit (MDT), make sure to also follow the section [Copy updated boot files to MDT deployment share](#copy-updated-boot-files-to-mdt-deployment-share) before proceeding to the next step.
+> Both **Microsoft Configuration Manager** and **Microsoft Deployment Toolkit (MDT)** will automatically extract these bootmgr boot files from the boot images as needed. No additional steps are needed for these products.
 
 ## Step 9: Perform component cleanup
 
@@ -588,6 +588,12 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
     DISM.exe /Export-Image /SourceImageFile:"<Boot_image_path>\<boot_image>.wim" /SourceIndex:1 /DestinationImageFile:"<Boot_image_path>\<boot_image>-export.wim"
     ```
 
+    **Example**:
+
+    ```cmd
+    DISM.exe /Export-Image /SourceImageFile:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" /SourceIndex:1 /DestinationImageFile:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe-export.wim"
+    ```
+
     For more information, see [Modify a Windows image using DISM: Reduce the size of an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#reduce-the-size-of-an-image) and [DISM Image Management Command-Line Options: /Export-Image](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14#export-image).
 
     ---
@@ -637,7 +643,7 @@ When adding a cumulative update to a Configuration Manager boot image, it's reco
 
 By updating `winpe.wim` from the Windows ADK, this will ensure that the cumulative update will stay applied regardless of what changes are made to the `boot.wim` boot image via Configuration Manager.
 
-After updating the `winpe.wim` boot image from the Windows ADK, generate a new `boot.wim` boot image for Configuration Manager by using the following steps:
+After updating the `winpe.wim` boot image from the Windows ADK, generate a new `boot.wim` boot image for Configuration Manager that contains the cumulative update by using the following steps:
 
 1. Open the Microsoft Configuration manager console.
 
@@ -658,8 +664,6 @@ After updating the `winpe.wim` boot image from the Windows ADK, generate a new `
     1. Once the boot image finishes building, the **Completion**/**The task "Update Distribution Points Wizard" completed successfully** page will appear. Select the **Close** button.
 
 This process in addition to updating the boot image used by Configuration Manager will also update the boot images and the boot files used by any PXE enabled distribution points.
-
-When using Configuration Manager, the `winpe.wim` boot image from the Windows ADK should be updated instead of the `boot.wim` from Configuration Manager because:
 
 ### Add optional components manually to Configuration Manager boot images
 
@@ -691,6 +695,32 @@ After completing the walkthrough, update any Configuration Manager boot media to
 
 ## Microsoft Deployment Toolkit (MDT) considerations
 
+When adding a cumulative update to a Microsoft Deployment Toolkit (MDT) boot image, it's recommended to update the `winpe.wim` boot image from the Windows ADK instead of directly updating the `LiteTouchPE_<arch>.wim` boot image in the MDT Deployment Share. The `winpe.wim` boot image from the Windows ADK should be updated instead of the `LiteTouchPE_<arch>.wim` boot image from the MDT Deployment Share because if `LiteTouchPE_<arch>.wim` is updated, then the next time the MDT Deployment Share is updated, the changes made to `LiteTouchPE_<arch>.wim`, including the applied cumulative update, may be lost. If the `winpe.wim` boot image from the Windows ADK is updated instead, then the changes to the MDT boot image including the applied cumulative update will persist and be preserved when the MDT Deployment Share is updated.
+
+After updating the `winpe.wim` boot image from the Windows ADK, generate a new `LiteTouchPE_<arch>.wim` boot image for MDT that contains the cumulative update by using the following steps:
+
+1. Open the Microsoft Configuration manager console.
+
+1. In the Microsoft Configuration manager console, navigate to **Software Library** > **Overview** > **Operating Systems** > **Boot Images**.
+
+1. In the **Boot Images** pane, select the desired boot image.
+
+1. In the toolbar, select **Update Distribution Points**.
+
+1. In the **Update Distribution Points Wizard** window that appears:
+
+    1. In the **General**/**Update distribution points with this image** page, select the **Reload this boot image with the current Windows PE version from the Windows ADK** option, and then select the **Next >** button.
+
+    1. In the **Summary** page, select the **Next >** button.
+
+    1. The **Progress** page will appears while the boot image builds.
+
+    1. Once the boot image finishes building, the **Completion**/**The task "Update Distribution Points Wizard" completed successfully** page will appear. Select the **Close** button.
+
+This process in addition to updating the boot image used by Configuration Manager will also update the boot images and the boot files used by any PXE enabled distribution points.
+
+### MDT and Windows ADK versions
+
 Microsoft Deployment Toolkit (MDT) doesn't support versions of Windows or the Windows ADK beyond Windows 10. When using MDT, the recommendation is to use the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads) instead of the latest version of the Windows ADK. **ADK for Windows 10, version 2004** was the last version of the Windows ADK supported by MDT.
 
 ### MDT boot image required components
@@ -698,7 +728,7 @@ Microsoft Deployment Toolkit (MDT) doesn't support versions of Windows or the Wi
 The following components are required by Microsoft Configuration Manager boot images for Configuration Manager to function correctly:
 
 | **Feature** | **File Name** | **Dependency** | **Required by MDT** |
-|---------|-----------|------------|
+| --- | --- | --- | --- |
 | Scripting/WinPE-Scripting | `WinPE-Scripting.cab` | NA | Yes |
 | Scripting/WinPE-WMI | `WinPE-WMI.cab` | NA | Yes |
 | File management/WinPE-FMAPI | `WinPE-FMAPI.cab` | NA | Yes |
@@ -709,51 +739,13 @@ When adding optional components to any boot image used by MDT during the [Step 6
 
 For a list of all available WinPE optional components including descriptions for each component, see [WinPE Optional Components (OC) Reference: WinPE Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference#winpe-optional-components).
 
-### Copy updated boot files to MDT deployment share
+### Update MDT boot image
 
-When the MDT deployment share is created, it copies the bootmgr boot files from the Windows ADK to the MDT deployment share. When using MDT, if the cumulative update updates the bootmgr boot files, these updated bootmgr boot files need to be manually copied to the MDT deployment share. This should be done during [Step 8: Copy boot files from mounted boot image to ADK installation path](#step-8-copy-boot-files-from-mounted-boot-image-to-adk-installation-path):
-
-### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
-
-From an elevated **PowerShell** command prompt, run the following commands to copy the updated bootmgr boot files from the mounted boot image to the MDT deployment share:
-
-```powershell
-Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgr.efi" "<DeploymentShare>\Boot\x64\bootmgr.efi" -Force
-
-Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgfw.efi" "<DeploymentShare>\Boot\x64\EFI\Boot\bootx64.efi" -Force
-```
-
-**Example**:
-
-```powershell
-Copy-Item "C:\Mount\Windows\Boot\EFI\bootmgr.efi" "C:\DeploymentShare\Boot\x64\bootmgr.efi" -Force
-
-Copy-Item "C:\Mount\Windows\Boot\EFI\bootmgfw.efi" "C:\DeploymentShare\Boot\x64\EFI\Boot\bootx64.efi" -Force
-```
-
-### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
-
-From an elevated command prompt, run the following commands to copy the updated bootmgr boot files from the mounted boot image to the MDT deployment share:
-
-```cmd
-copy "<Mount_folder_path>\Windows\Boot\EFI\bootmgr.efi" "<DeploymentShare>\Boot\x64\bootmgr.efi" /Y
-
-copy "<Mount_folder_path>\Windows\Boot\EFI\bootmgfw.efi" "<DeploymentShare>\Boot\x64\EFI\Boot\bootx64.efi" /Y
-```
-
-**Example**:
-
-```cmd
-copy "C:\Mount\Windows\Boot\EFI\bootmgr.efi" "C:\DeploymentShare\Boot\x64\bootmgr.efi" /Y
-
-copy "C:\Mount\Windows\Boot\EFI\bootmgfw.efi" "C:\DeploymentShare\Boot\x64\EFI\Boot\bootx64.efi" /Y
-```
-
----
+After completing the walkthrough, .
 
 ### Updating MDT boot media
 
-After completing the walkthrough, update any MDT boot media to ensure that the boot media has both the updated boot image and if applicable, updated boot files.
+After completing the walkthrough and updating the Deployment Share, update any MDT boot media to ensure that the boot media has both the updated boot image and if applicable, updated boot files.
 
 ## Windows Deployment Services (WDS) considerations
 
