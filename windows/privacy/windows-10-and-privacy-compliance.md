@@ -229,7 +229,7 @@ An administrator can configure privacy-related settings, such as choosing to onl
 
 [Microsoft Managed Desktop (MMD)](/microsoft-365/managed-desktop/service-description/) is a service that provides your users with a secure modern experience and always keeps devices up to date with the latest versions of Windows Enterprise edition, Office 365 ProPlus, and Microsoft security services.
 
-### 5.5 Windows Update for Business reports
+### 5.4 Windows Update for Business reports
 
 [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview) is a cloud-based solution that provides information about an organization’s Azure Active Directory-joined devices' compliance with Windows updates. Windows Update for Business reports uses Windows diagnostic data for all its reporting.
 
