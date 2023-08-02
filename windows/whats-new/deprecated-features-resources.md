@@ -1,7 +1,7 @@
 ---
 title: Resources for deprecated features in the Windows client
-description: Resources and details for deprecated features in the Windows Client.
-ms.date: 02/14/2023
+description: Resources and details for deprecated features in the Windows client.
+ms.date: 08/01/2023
 ms.prod: windows-client
 ms.technology: itpro-fundamentals
 ms.localizationpriority: medium
@@ -20,6 +20,50 @@ appliesto:
 # Resources for deprecated features
 
 This article provides additional resources about [deprecated features for Windows client](deprecated-features.md) that may be needed by IT professionals. The following information is provided to help IT professionals plan for the removal of deprecated features:
+
+## TLS versions 1.0 and 1.1 disablement resources
+
+Over the past several years, internet standards and regulatory bodies have [deprecated or disallowed](https://www.ietf.org/rfc/rfc8996.html) TLS versions 1.0 and 1.1 due to various security issues. Starting in Windows 11 Insider Preview builds for September 2023 and continuing in future Windows OS releases, TLS 1.0 and 1.1 are disabled by default. This change increases the security posture of Windows customers and encourages modern protocol adoption. For organizations that need to use these versions, there's an option to re-enable TLS 1.0 or TLS 1.1.
+
+The following information can help IT professionals to:
+
+- Identify issues related to TLS 1.0 and 1.1 disablement
+- Re-enable TLS 1.0 and 1.1, if needed
+
+For developer guidance and for a list of common applications known to rely on TLS 1.0 or 1.1, see the [Announcing the disablement of TLS 1.0 and TLS 1.1 in Windows](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/tls-1-0-and-tls-1-1-soon-to-be-disabled-in-windows/ba-p/3887947) blog post.
+
+### TLS diagnostic events
+
+Applications that fail when TLS 1.0 and 1.1 are disabled can be identified by reviewing the event logs. In the System Event Log, SChannel EventID 36871 may be logged with the following description:
+
+`A fatal error occurred while creating a TLS <client/server> credential. The internal error state is 10013. The SSPI client process is <process ID>.`
+
+### TLS 1.0 and 1.1 guidance for IT professionals
+
+The impact of disabling TLS versions 1.0 and 1.1 depends on the Windows applications using TLS. For example, TLS 1.0 and TLS 1.1 are already disabled by [Microsoft 365](/lifecycle/announcements/transport-layer-security-1x-disablement) products as well as [WinHTTP and WinINet API surfaces](https://support.microsoft.com/topic/kb5017811-manage-transport-layer-security-tls-1-0-and-1-1-after-default-behavior-change-on-september-20-2022-e95b1b47-9c7c-4d64-9baf-610604a64c3e). Most newer versions of applications support TLS 1.2 or higher protocol versions. If an application starts failing after this change, the first step is to discover if a newer version of the application has TLS 1.2 or TLS 1.3 support.
+
+Using the system default settings for the best balance of security and performance is recommended. Organizations that limit TLS cipher suites using [Group Policy](/windows-server/security/tls/manage-tls) or [PowerShell cmdlets](/powershell/module/tls) should also verify that [cipher suites](/windows/win32/secauthn/tls-cipher-suites-in-windows-11) needed for TLS 1.3 and TLS 1.2 are enabled.
+
+If there are no alternatives available and TLS 1.0 or TLS 1.1 is needed, the protocol versions can be re-enabled with a system [registry setting](/windows-server/security/tls/tls-registry-settings). To override a system default and set a (D)TLS or SSL protocol version to the **Enabled** state:
+
+   - **TLS 1.0**:
+     ```registry
+     [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Client]
+           "Enabled" = dword:00000001
+     [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.0\Server]
+           "Enabled" = dword:00000001
+     ```
+
+   - **TLS 1.1**:
+
+     ```registry
+     [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client]
+           "Enabled" = dword:00000001
+     [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server]
+           "Enabled" = dword:00000001
+     ```
+
+Re-enabling TLS 1.0 or TLS 1.1 on machines should only be done as a last resort, and as a temporary solution until incompatible applications can be updated or replaced. Support for these legacy TLS versions may be completely removed in the future.
 
 ## Microsoft Support Diagnostic Tool resources
 

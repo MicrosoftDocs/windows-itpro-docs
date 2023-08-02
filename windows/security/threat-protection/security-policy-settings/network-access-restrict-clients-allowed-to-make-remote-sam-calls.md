@@ -172,4 +172,4 @@ If the policy is defined, admin tools, scripts and software that formerly enumer
 
 ## Next steps
 
-[Security Options](./security-options.md)
+[Security Options](security-options.md)

@@ -10,7 +10,6 @@ metadata:
   ms.prod: windows-client
   ms.technology: itpro-security
   ms.collection:
-    - highpri
     - tier1
   author: paolomatarazzo
   ms.author: paoloma
@@ -40,15 +39,15 @@ landingContent:
       - linkListType: concept
         links:
         - text: Trusted Platform Module
-          url: information-protection/tpm/trusted-platform-module-top-node.md
+          url: hardware-security/tpm/trusted-platform-module-top-node.md
         - text: Windows Defender System Guard firmware protection
-          url: threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows.md
+          url: hardware-security/how-hardware-based-root-of-trust-helps-protect-windows.md
         - text: System Guard Secure Launch and SMM protection enablement
-          url: threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md
+          url: hardware-security/system-guard-secure-launch-and-smm-protection.md
         - text: Virtualization-based protection of code integrity
-          url: threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity.md
+          url: hardware-security/enable-virtualization-based-protection-of-code-integrity.md
         - text: Kernel DMA Protection
-          url: information-protection/kernel-dma-protection-for-thunderbolt.md
+          url: hardware-security/kernel-dma-protection-for-thunderbolt.md
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
@@ -62,14 +61,12 @@ landingContent:
         links:
         - text: Trusted boot
           url: operating-system-security\system-security\trusted-boot.md
-        - text: Encryption and data protection
-          url: operating-system-security/data-protection/index.md
         - text: Windows security baselines
-          url: threat-protection/windows-security-configuration-framework/windows-security-baselines.md
+          url: operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines.md
         - text: Virtual private network guide
-          url: identity-protection/vpn/vpn-guide.md
+          url: operating-system-security/network-security/vpn/vpn-guide.md
         - text: Windows Defender Firewall
-          url: threat-protection/windows-firewall/windows-firewall-with-advanced-security.md
+          url: operating-system-security/network-security/windows-firewall/windows-firewall-with-advanced-security.md
         - text: Virus & threat protection
           url: threat-protection/index.md
 # Cards and links should be based on top customer tasks or top subjects
@@ -84,17 +81,17 @@ landingContent:
       - linkListType: concept
         links:
         - text: Application Control and virtualization-based protection
-          url: threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
+          url: application-security/application-control/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
         - text: Application Control
-          url: threat-protection/windows-defender-application-control/windows-defender-application-control.md
+          url: application-security/application-control/windows-defender-application-control/wdac.md
         - text: Application Guard
-          url: threat-protection/microsoft-defender-application-guard/md-app-guard-overview.md
+          url: application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview.md
         - text: Windows Sandbox
           url: application-security\application-isolation\windows-sandbox\windows-sandbox-overview.md
         - text: Microsoft Defender SmartScreen
           url: operating-system-security\virus-and-threat-protection\microsoft-defender-smartscreen\index.md
         - text: S/MIME for Windows
-          url: identity-protection/configure-s-mime.md
+          url: operating-system-security/data-protection/configure-s-mime.md
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
@@ -107,9 +104,7 @@ landingContent:
       - linkListType: concept
         links:
         - text: Windows Hello for Business
-          url: identity-protection/hello-for-business/hello-overview.md
-        - text: Windows Credential Theft Mitigation
-          url: identity-protection/windows-credential-theft-mitigation-guide-abstract.md
+          url: identity-protection/hello-for-business/index.md
         - text: Protect domain credentials
           url: identity-protection/credential-guard/credential-guard.md
         - text: Windows Defender Credential Guard

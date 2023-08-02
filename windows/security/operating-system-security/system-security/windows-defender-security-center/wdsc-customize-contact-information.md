@@ -1,13 +1,13 @@
 ---
-title: Customize Windows Security contact information
+title: Customize Windows Security contact information in Windows Security
 description: Provide information to your employees on how to contact your IT department when a security issue occurs
-ms.date: 12/31/2018
+ms.date: 07/31/2023
 ms.topic: article
 ---
 
-# Customize the Windows Security app for your organization
+# Customize the Windows Security settings for your organization
 
-You can add information about your organization in a contact card to the Windows Security app. You can include a link to a support site, a phone number for a help desk, and an email address for email-based support.
+You can add information about your organization in a contact card in **Windows Security**. You can include a link to a support site, a phone number for a help desk, and an email address for email-based support.
 
 ![The Windows Security custom fly-out.](images/security-center-custom-flyout.png)
 
@@ -16,7 +16,7 @@ This information will also be shown in some enterprise-specific notifications (i
 Users can select the displayed information to initiate a support request:
 
 - Select **Call** or the phone number to open Skype to start a call to the displayed number.
-- Select  **Email** or the email address to create a new email in the machine's default email app address to the displayed email.
+- Select **Email** or the email address to create a new email in the machine's default email app addressed to the displayed email.
 - Select **Help portal** or the website URL to open the machine's default web browser and go to the displayed address.
 
 ## Requirements

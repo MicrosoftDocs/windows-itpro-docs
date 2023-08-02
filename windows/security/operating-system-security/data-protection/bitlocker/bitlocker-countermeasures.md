@@ -72,7 +72,7 @@ Pre-boot authentication with a PIN can mitigate an attack vector for devices tha
 
 On the other hand, Pre-boot authentication-prompts can be inconvenient to users. In addition, users who forget their PIN or lose their startup key are denied access to their data until they can contact their organization's support team to obtain a recovery key. Pre-boot authentication can also make it more difficult to update unattended desktops and remotely administered servers because a PIN needs to be entered when a computer reboots or resumes from hibernation.
 
-To address these issues, [BitLocker Network Unlock](./bitlocker-how-to-enable-network-unlock.md) can be deployed. Network Unlock allows systems within the physical enterprise security perimeter that meet the hardware requirements and have BitLocker enabled with TPM+PIN to boot into Windows without user intervention. It requires direct ethernet connectivity to an enterprise Windows Deployment Services (WDS) server.
+To address these issues, [BitLocker Network Unlock](bitlocker-how-to-enable-network-unlock.md) can be deployed. Network Unlock allows systems within the physical enterprise security perimeter that meet the hardware requirements and have BitLocker enabled with TPM+PIN to boot into Windows without user intervention. It requires direct ethernet connectivity to an enterprise Windows Deployment Services (WDS) server.
 
 ### Protecting Thunderbolt and other DMA ports
 
@@ -92,7 +92,7 @@ If kernel DMA protection isn't enabled, follow these steps to protect Thunderbol
 
     - MDM: [DataProtection/AllowDirectMemoryAccess](/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) policy
 
-    - Group Policy: [Disable new DMA devices when this computer is locked](./bitlocker-group-policy-settings.md#disable-new-dma-devices-when-this-computer-is-locked) (This setting isn't configured by default.)
+    - Group Policy: [Disable new DMA devices when this computer is locked](bitlocker-group-policy-settings.md#disable-new-dma-devices-when-this-computer-is-locked) (This setting isn't configured by default.)
 
 For Thunderbolt v1 and v2 (DisplayPort Connector), refer to the **Thunderbolt Mitigation** section in [Blocking the SBP-2 driver and Thunderbolt controllers to reduce 1394 DMA and Thunderbolt DMA threats to BitLocker](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d). For SBP-2 and 1394 (also known as Firewire), refer to the **SBP-2 Mitigation** section in [Blocking the SBP-2 driver and Thunderbolt controllers to reduce 1394 DMA and Thunderbolt DMA threats to BitLocker](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d).
 
@@ -166,7 +166,7 @@ Mitigation:
 > [!IMPORTANT]
 > These settings are **not configured** by default.
 
-For some systems, bypassing TPM-only may require opening the case, and may require soldering, but could possibly be done for a reasonable cost. Bypassing a TPM with a PIN protector would cost much more, and require brute forcing the PIN. With a sophisticated enhanced PIN, it could be nearly impossible. The Group Policy setting for [enhanced PIN](./bitlocker-group-policy-settings.md) is:
+For some systems, bypassing TPM-only may require opening the case, and may require soldering, but could possibly be done for a reasonable cost. Bypassing a TPM with a PIN protector would cost much more, and require brute forcing the PIN. With a sophisticated enhanced PIN, it could be nearly impossible. The Group Policy setting for [enhanced PIN](bitlocker-group-policy-settings.md) is:
 
 - *Computer Configuration* > *Policies* > *Administrative Templates* > *Windows Components* > *BitLocker Drive Encryption* > *Operating System Drives* > **Allow enhanced PINs for startup**
 
@@ -178,6 +178,6 @@ For secure administrative workstations, Microsoft recommends a TPM with PIN prot
 ## Related articles
 
 - [Blocking the SBP-2 driver and Thunderbolt controllers to reduce 1394 DMA and Thunderbolt DMA threats to BitLocker](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d)
-- [BitLocker Group Policy settings](./bitlocker-group-policy-settings.md)
+- [BitLocker Group Policy settings](bitlocker-group-policy-settings.md)
 - [BitLocker CSP](/windows/client-management/mdm/bitlocker-csp)
 - [Winlogon automatic restart sign-on (ARSO)](/windows-server/identity/ad-ds/manage/component-updates/winlogon-automatic-restart-sign-on--arso-)
