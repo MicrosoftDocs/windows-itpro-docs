@@ -325,7 +325,7 @@ The diagnostic data setting on the device should be set to Required diagnostic d
 - settings-win.data.microsoft.com
 - *.blob.core.windows.net
 
-Tenants with billing addresses in countries or regions in the Middle East and Africa, as well as European countries or regions not in the EU, also use the eu-v10c.events.data.microsoft.com and eu-watsonc.events.data.microsoft.com endpoints. Their data will be processed in the EU, but those tenants are not considered part of the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn).
+Tenants with billing addresses in countries or regions in the Middle East and Africa, as well as European countries or regions not in the EU, also use the eu-v10c.events.data.microsoft.com and eu-watsonc.events.data.microsoft.com endpoints. Their diagnostic data is processed in Europe, but those tenants aren't considered part of the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn).
 
 >[!Note]
 > - Windows diagnostic data collected from a device before it was enabled with Windows diagnostic data processor configuration will be deleted when this configuration is enabled.
