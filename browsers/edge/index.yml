@@ -10,7 +10,6 @@ metadata:
   keywords: Microsoft Edge Legacy, Windows 10
   ms.localizationpriority: medium
   ms.topic: landing-page # Required
-  ms.collection: collection # Optional; Remove if no collection is used.
   author: dougeby #Required; your GitHub user alias, with correct capitalization.
   ms.author: pashort #Required; microsoft alias of author; optional team alias.
   ms.date: 07/07/2020 #Required; mm/dd/yyyy format.
