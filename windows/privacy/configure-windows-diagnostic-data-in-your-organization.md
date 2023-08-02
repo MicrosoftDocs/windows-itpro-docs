@@ -342,16 +342,12 @@ Starting with the January 2023 preview cumulative update, how you enable the pro
 
 For Windows devices with diagnostic data turned on and that are joined to an [Azure AD tenant with billing address](/azure/cost-management-billing/manage/change-azure-account-profile) in the EU or EFTA, the Windows diagnostic data for that device will be automatically configured for the processor option. The Windows diagnostic data for those devices will be processed in Europe.
 
-> [!NOTE]
-> The Windows diagnostic data processor configuration has components for which work is in progress to be included in the EU Data Boundary, but completion of this work is delayed beyond January 1, 2023. These components will be included in the EU Data Boundary in the coming months. In the meantime, Microsoft will temporarily transfer data out of the EU Data Boundary as part of service operations to ensure uninterrupted operation of the services customers signed up for.
-
 From a compliance standpoint, this change means that Microsoft will be the processor and the organization will be the controller of the Windows diagnostic data. IT admins for those organizations will become responsible for responding to their users’ [data subject requests](/compliance/regulatory/gdpr-dsr-windows).
 
 #### Devices in Azure AD tenants with a billing address outside of the EU and EFTA
 
 For Windows devices with diagnostic data turned on and that are joined to an [Azure AD tenant with billing address](/azure/cost-management-billing/manage/change-azure-account-profile) outside of the EU and EFTA, to enable the processor configuration option, the organization must sign up for any of the following enterprise services, which rely on diagnostic data:
 
-- [Update Compliance](/windows/deployment/update/update-compliance-monitor)
 - [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview)
 - [Windows Update for Business deployment service](/windows/deployment/update/deployment-service-overview)
 - [Microsoft Managed Desktop](/managed-desktop/intro/)
