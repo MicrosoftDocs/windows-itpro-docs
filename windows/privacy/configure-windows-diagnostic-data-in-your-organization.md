@@ -325,6 +325,8 @@ The diagnostic data setting on the device should be set to Required diagnostic d
 - settings-win.data.microsoft.com
 - *.blob.core.windows.net
 
+Tenants with billing addresses in countries or regions in the Middle East and Africa, as well as European countries or regions not in the EU, also use the eu-v10c.events.data.microsoft.com and eu-watsonc.events.data.microsoft.com endpoints. Their data will be processed in the EU, but those tenants are not considered part of the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn).
+
 >[!Note]
 > - Windows diagnostic data collected from a device before it was enabled with Windows diagnostic data processor configuration will be deleted when this configuration is enabled.
 > - When you enable devices with the Windows diagnostic data processor configuration, users may continue to submit feedback through various channels such as Windows feedback hub or Edge feedback. However, the feedback data is not subject to the terms of the Windows diagnostic data processor configuration. If this is not desired, we recommend that you disable feedback using the available policies or application management solutions.
