@@ -292,8 +292,6 @@ Drivers are not affected by the cumulative update installed later in this walkth
 
     ---
 
-For a list of all available WinPE optional components including descriptions for each component, see [WinPE Optional Components (OC) Reference: WinPE Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference#winpe-optional-components).
-
 > [!IMPORTANT]
 >
 > When adding optional components, make sure check if an optional component has a prerequisite of another optional component. When an optional component does have a prerequisite, make sure that the prerequisite component is installed first. For more information on adding optional components, see [WinPE Optional Components (OC) Reference: How to add Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference#how-to-add-optional-components).
@@ -303,6 +301,25 @@ For a list of all available WinPE optional components including descriptions for
 > Both **Microsoft Configuration Manager** and **Microsoft Deployment Toolkit (MDT)** boot images require certain optional components to work properly. Make sure to add these required components when using either **Microsoft Configuration Manager** and **Microsoft Deployment Toolkit (MDT)**
 >
 > Additionally, when adding any optional component for either **Microsoft Configuration Manager** or **Microsoft Deployment Toolkit (MDT)** boot images, make sure to add the components manually using the above command lines instead of adding them through **Configuration Manager** or **MDT**. For more information, see [Microsoft Configuration Manager considerations](#microsoft-configuration-manager-considerations) or [Microsoft Deployment Toolkit (MDT) considerations](#microsoft-deployment-toolkit-mdt-considerations).
+
+### Popular optional components
+
+The following is a list of popular optional components that are commonly added to boot images:
+
+| **Feature** | **File Name** | **Dependency** | **Purpose** | **Required by ConfigMgr** | **Required by MDT** |
+| --- | --- | --- | --- | --- |
+| Scripting/WinPE-Scripting | `WinPE-Scripting.cab` | NA | | Yes | Yes |
+| Network/WinPE-WDS-Tools | `WinPE-WDS-Tools.cab` | NA | | Yes | No |
+| Scripting/WinPE-WMI | `WinPE-WMI.cab` | NA | | Yes | Yes |
+| Startup/WinPE-SecureStartup | `WinPE-SecureStartup.cab` | Scripting/WinPE-WMI (`WinPE-WMI.cab`) | Yes | Yes|
+| File management/WinPE-FMAPI | `WinPE-FMAPI.cab` | NA | | No | Yes |
+| Windows PowerShell/WinPE-PowerShell | `WinPE-PowerShell.cab` | Scripting/WinPE-Scripting <br> Scripting/WinPE-WMI <br> Microsoft .NET/WinPE-NetFx | Supports running PowerShell commands and scripts in WinPE | No | No |
+| Microsoft .NET/WinPE-NetFx | `WinPE-NetFx.cab` | Scripting/WinPE-WMI | Supports .Net applications in WinPE | No | No |
+| Network/WinPE-Dot3Svc | `WinPE-Dot3Svc.cab` | NA | Supports the 802.1X network protocol in WinPE | No | No |
+| HTML/WinPE-HTA | `WinPE-HTA.cab` | Scripting/WinPE-WMI (`WinPE-WMI.cab`) | Supports running HTML applications in WinPE | No | No |
+| Database/WinPE-MDAC | `WinPE-MDAC.cab` | NA | Supports connecting to databases in WinPE | No | No |
+
+For a full list of all available WinPE optional components including descriptions for each component, see [WinPE Optional Components (OC) Reference: WinPE Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference#winpe-optional-components).
 
 ## Step 7: Add cumulative update (CU) to boot image
 
@@ -630,14 +647,14 @@ Once any optional components has been manually added to a boot image, if that op
 
 The following components are required by Microsoft Configuration Manager boot images for Configuration Manager to function correctly:
 
-| Feature | File Name | Dependency |
-|---------|-----------|------------|
-| Scripting/WinPE-Scripting | `WinPE-Scripting.cab` | NA |
-| Network/WinPE-WDS-Tools | `WinPE-WDS-Tools.cab` | NA |
-| Scripting/WinPE-WMI | `WinPE-WMI.cab` | NA |
-| Startup/WinPE-SecureStartup | `WinPE-SecureStartup.cab` | Scripting/WinPE-WMI (`WinPE-WMI.cab`) |
+| **Feature** | **File Name** | **Dependency** | **Required by ConfigMgr** |
+| --- | --- | --- | --- |
+| Scripting/WinPE-Scripting | `WinPE-Scripting.cab` | NA | Yes |
+| Network/WinPE-WDS-Tools | `WinPE-WDS-Tools.cab` | NA | Yes |
+| Scripting/WinPE-WMI | `WinPE-WMI.cab` | NA | Yes |
+| Startup/WinPE-SecureStartup | `WinPE-SecureStartup.cab` | Scripting/WinPE-WMI (`WinPE-WMI.cab`) | Yes |
 
-When adding optional components to any boot image used by Configuration Manager during the [Step 6: Add optional components to boot image](#step-6-add-optional-components-to-boot-image) step, make sure to first add the above required components in the above order to the boot image. After adding the required components to the boot image, any additional optional components can also be added to the boot image.
+When adding optional components to any boot image used by Configuration Manager during the [Step 6: Add optional components to boot image](#step-6-add-optional-components-to-boot-image) step, make sure to first add the above required components in the above order to the boot image. After adding the required components to the boot image, add any additional desired optional components to the boot image.
 
 For a list of all available WinPE optional components including descriptions for each component, see [WinPE Optional Components (OC) Reference: WinPE Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference#winpe-optional-components).
 
@@ -653,15 +670,15 @@ Microsoft Deployment Toolkit (MDT) doesn't support versions of Windows or the Wi
 
 The following components are required by Microsoft Configuration Manager boot images for Configuration Manager to function correctly:
 
-| Feature | File Name | Dependency |
+| **Feature** | **File Name** | **Dependency** | **Required by MDT** |
 |---------|-----------|------------|
-| Scripting/WinPE-Scripting | `WinPE-Scripting.cab` | NA |
-| Scripting/WinPE-WMI | `WinPE-WMI.cab` | NA |
-| File management/WinPE-FMAPI | `WinPE-FMAPI.cab` | NA |
-| Startup/WinPE-SecureStartup | `WinPE-SecureStartup.cab` | Scripting/WinPE-WMI (`WinPE-WMI.cab`) |
-| HTML/WinPE-HTA | `WinPE-HTA.cab` | Scripting/WinPE-WMI (`WinPE-WMI.cab`) |
+| Scripting/WinPE-Scripting | `WinPE-Scripting.cab` | NA | Yes |
+| Scripting/WinPE-WMI | `WinPE-WMI.cab` | NA | Yes |
+| File management/WinPE-FMAPI | `WinPE-FMAPI.cab` | NA | Yes |
+| Startup/WinPE-SecureStartup | `WinPE-SecureStartup.cab` | Scripting/WinPE-WMI (`WinPE-WMI.cab`) | Yes |
+| HTML/WinPE-HTA | `WinPE-HTA.cab` | Scripting/WinPE-WMI (`WinPE-WMI.cab`) | Yes |
 
-When adding optional components to any boot image used by MDT during the [Step 6: Add optional components to boot image](#step-6-add-optional-components-to-boot-image) step, make sure to first add the above required components in the above order to the boot image. After adding the required components to the boot image, any additional optional components can also be added to the boot image.
+When adding optional components to any boot image used by MDT during the [Step 6: Add optional components to boot image](#step-6-add-optional-components-to-boot-image) step, make sure to first add the above required components in the above order to the boot image. After adding the required components to the boot image, add any additional desired optional components to the boot image.
 
 For a list of all available WinPE optional components including descriptions for each component, see [WinPE Optional Components (OC) Reference: WinPE Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference#winpe-optional-components).
 
