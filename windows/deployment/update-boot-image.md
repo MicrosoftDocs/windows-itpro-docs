@@ -294,7 +294,7 @@ Drivers are not affected by the cumulative update installed later in this walkth
 
 > [!IMPORTANT]
 >
-> When adding optional components, make sure check if an optional component has a prerequisite of another optional component. When an optional component does have a prerequisite, make sure that the prerequisite component is installed first. For more information on adding optional components, see [WinPE Optional Components (OC) Reference: How to add Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference#how-to-add-optional-components).
+> When adding optional components, make sure to check if an optional component has a prerequisite for another optional component. When an optional component does have a prerequisite, make sure that the prerequisite component is installed first. For more information on adding optional components, see [WinPE Optional Components (OC) Reference: How to add Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference#how-to-add-optional-components).
 
 > [!IMPORTANT]
 >
@@ -308,11 +308,11 @@ The following is a list of popular optional components that are commonly added t
 
 | **Feature** | **File Name** | **Dependency** | **Purpose** | **Required by ConfigMgr** | **Required by MDT** |
 | --- | --- | --- | --- | --- |
-| Scripting/WinPE-Scripting | `WinPE-Scripting.cab` | NA | | Yes | Yes |
-| Network/WinPE-WDS-Tools | `WinPE-WDS-Tools.cab` | NA | | Yes | No |
-| Scripting/WinPE-WMI | `WinPE-WMI.cab` | NA | | Yes | Yes |
-| Startup/WinPE-SecureStartup | `WinPE-SecureStartup.cab` | Scripting/WinPE-WMI (`WinPE-WMI.cab`) | Yes | Yes|
-| File management/WinPE-FMAPI | `WinPE-FMAPI.cab` | NA | | No | Yes |
+| Scripting/WinPE-Scripting | `WinPE-Scripting.cab` | NA | Supports running non-PowerShell scripts in WinPE | Yes | Yes |
+| Network/WinPE-WDS-Tools | `WinPE-WDS-Tools.cab` | NA | Supports WDS in WinPE, including image capture and multicast | Yes | No |
+| Scripting/WinPE-WMI | `WinPE-WMI.cab` | NA | Supports WMI and WMI scripting in WinPE | Yes | Yes |
+| Startup/WinPE-SecureStartup | `WinPE-SecureStartup.cab` | Scripting/WinPE-WMI | Supports managing BitLocker and TPMs within WinPE | Yes | Yes|
+| File management/WinPE-FMAPI | `WinPE-FMAPI.cab` | NA | Supports access to the Windows PE File Management API | No | Yes |
 | Windows PowerShell/WinPE-PowerShell | `WinPE-PowerShell.cab` | Scripting/WinPE-Scripting <br> Scripting/WinPE-WMI <br> Microsoft .NET/WinPE-NetFx | Supports running PowerShell commands and scripts in WinPE | No | No |
 | Microsoft .NET/WinPE-NetFx | `WinPE-NetFx.cab` | Scripting/WinPE-WMI | Supports .Net applications in WinPE | No | No |
 | Network/WinPE-Dot3Svc | `WinPE-Dot3Svc.cab` | NA | Supports the 802.1X network protocol in WinPE | No | No |
