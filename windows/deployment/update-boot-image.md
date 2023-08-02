@@ -292,11 +292,11 @@ Drivers are not affected by the cumulative update installed later in this walkth
 
     ---
 
-For a list of all available WinPE optional components including descriptions for each component, see [WinPE Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference#winpe-optional-components).
+For a list of all available WinPE optional components including descriptions for each component, see [WinPE Optional Components (OC) Reference: WinPE Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference#winpe-optional-components).
 
 > [!IMPORTANT]
 >
-> When adding optional components, make sure to install optional components that are prerequisites of other optional components. Additionally, make sure that the prerequisite is installed first. For more information on adding optional components, see [WinPE Optional Components (OC) Reference: How to add Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference#how-to-add-optional-components).
+> When adding optional components, make sure check if an optional component has a prerequisite of another optional component. When an optional component does have a prerequisite, make sure that the prerequisite component is installed first. For more information on adding optional components, see [WinPE Optional Components (OC) Reference: How to add Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference#how-to-add-optional-components).
 
 > [!IMPORTANT]
 >
@@ -348,11 +348,11 @@ For more information, see [Add or Remove Packages Offline Using DISM](/windows-h
 
 ## Step 8: Copy boot files from mounted boot image to ADK installation path
 
-Copy the updated bootmgr files from the updated boot image to the ADK installation path:
+Some cumulative updates will update the bootmgr boot files in the boot image. After these bootmgr boot files have been updated in the boot image, it's recommended to copy these updated bootmgr boot files from the boot image back to the Windows ADK. This will ensure that the Windows ADK has the updated bootmgr boot files.
 
 ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
-From an elevated **PowerShell** command prompt, run the following command to copy the boot files from the mounted boot image to the ADK installation path:
+From an elevated **PowerShell** command prompt, run the following command to copy the updated bootmgr boot files from the mounted boot image to the ADK installation path:
 
 ```powershell
 Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi" -Force
@@ -370,15 +370,31 @@ Copy-Item "C:\Mount\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windo
 
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
 
-From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to copy the boot files from the mounted boot image to the ADK installation path:
+From an elevated command prompt, run the following command to copy the updated bootmgr boot files from the mounted boot image to the ADK installation path:
 
 ```cmd
-Command to be determined
+copy "<Mount_folder_path>\Windows\Boot\EFI\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi" /Y
+
+copy "<Mount_folder_path>\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi" /Y
+```
+
+**Example**:
+
+```cmd
+copy "C:\Mount\Windows\Boot\EFI\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi" /Y
+
+copy "C:\Mount\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi" /Y
 ```
 
 ---
 
-This step doesn't update or change the boot image. However, it makes sure that the latest bootmgr files are available to the ADK when creating bootable media. In particular, this step is needed when addressing the BlackLotus UEFI bootkit vulnerability as documented in [KB5025885: How to manage the Windows Boot Manager revocations for Secure Boot changes associated with CVE-2023-24932](https://prod.support.services.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d) and [CVE-2023-24932](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24932).
+This step doesn't update or change the boot image. However, it makes sure that the latest bootmgr boot files are available to the ADK when creating bootable media. This includes any product that uses the ADK to create bootable media.
+
+In particular, this step is needed when addressing the BlackLotus UEFI bootkit vulnerability as documented in [KB5025885: How to manage the Windows Boot Manager revocations for Secure Boot changes associated with CVE-2023-24932](https://prod.support.services.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d) and [CVE-2023-24932](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24932).
+
+> [!IMPORTANT]
+>
+> If using Microsoft Deployment Toolkit (MDT), make sure to also follow the section [Copy updated boot files to MDT deployment share](#copy-updated-boot-files-to-mdt-deployment-share) before proceeding to the next step.
 
 ## Step 9: Perform component cleanup
 
@@ -569,7 +585,15 @@ In theses scenarios, the `boot.wim` boot image is updated using the `winpe.wim` 
 
 ### Which boot image should be updated with the cumulative update?
 
-When adding a cumulative update to a Configuration Manager boot image, it's recommended to update the `winpe.wim` boot image from the Windows ADK. After updating the `winpe.wim` boot image from the Windows ADK, generate a new `boot.wim` boot image for Configuration Manager by using the following steps:
+When adding a cumulative update to a Configuration Manager boot image, it's recommended to update the `winpe.wim` boot image from the Windows ADK instead of directly updating the `boot.wim` boot image generated by Configuration Manager. The `winpe.wim` boot image from the Windows ADK should be updated instead of the `boot.wim` boot image generated by Configuration Manager for the following reasons:
+
+1. If `boot.wim` is updated, then the next time `boot.wim` is updated via a Configuration Manager upgrade or the **Reload this boot image with the current Windows PE version from the Windows ADK** option, the changes made to `boot.wim` including the applied cumulative update will be lost. If the `winpe.wim` boot image from the Windows ADK is updated instead, then the changes to the Configuration Manager boot image including the applied cumulative update will persist and be preserved when Configuration Manager does update the `boot.wim` boot image.
+
+1. If `boot.<package_id>.wim` is updated, then it will not only face the issues when `boot.wim` is updated, but it will also lose any changes, including the applied cumulative update, when any changes are done to the boot image (e.g. adding drivers, enabling the command prompt, etc.). Additionally, it will change the hash value of the boot image which can lead to download failures when downloading the boot image from a distribution point.
+
+By updating `winpe.wim` from the Windows ADK, this will ensure that the cumulative update will stay applied regardless of what changes are made to the `boot.wim` boot image via Configuration Manager.
+
+After updating the `winpe.wim` boot image from the Windows ADK, generate a new `boot.wim` boot image for Configuration Manager by using the following steps:
 
 1. Open the Microsoft Configuration manager console.
 
@@ -589,30 +613,11 @@ When adding a cumulative update to a Configuration Manager boot image, it's reco
 
     1. Once the boot image finishes building, the **Completion**/**The task "Update Distribution Points Wizard" completed successfully** page will appear. Select the **Close** button.
 
+This process in addition to updating the boot image used by Configuration Manager will also update the boot images and the boot files used by any PXE enabled distribution points.
+
 When using Configuration Manager, the `winpe.wim` boot image from the Windows ADK should be updated instead of the `boot.wim` from Configuration Manager because:
 
-1. If `boot.wim` is updated, then the next time `boot.wim` is updated via a Configuration Manager upgrade or the **Reload this boot image with the current Windows PE version from the Windows ADK** option, the changes made to `boot.wim` including the cumulative updates applied will be lost. If the `winpe.wim` boot image from the Windows ADK is updated instead, then the changes to the boot image including the cumulative updates applied will persist and be preserved.
-
-1. If `boot.<package_id>.wim` is updated, then it will not only face the issues when `boot.wim` is updated, but it will also lose any changes, including the cumulative update, when any changes are done to the boot image (e.g. adding drivers, enabling the command prompt, etc.). Additionally, it will change the hash value of the boot image which can lead to download failures when downloading the boot image from a distribution point.
-
-By updating `winpe.wim` from the Windows ADK, this will ensure that the cumulative update will stay applied regardless of what changes are made to the boot image via Configuration Manager.
-
-### Configuration Manager boot image required components
-
-The following components are required by Microsoft Configuration Manager boot images for Configuration Manager to function correctly:
-
-| Feature | File Name | Dependance |
-|---------|-----------|------------|
-| Scripting/WinPE-Scripting | `WinPE-Scripting.cab` | NA |
-| Network/WinPE-WDS-Tools | `WinPE-WDS-Tools.cab` | NA |
-| Scripting/WinPE-WMI | `WinPE-WMI.cab` | NA |
-| Startup/WinPE-SecureStartup | `WinPE-SecureStartup.cab` | Scripting/WinPE-WMI (`WinPE-WMI.cab`) |
-
-When adding optional components to any boot image used by Configuration Manager during the [Step 6: Add optional components to boot image](#step-6-add-optional-components-to-boot-image) step, make sure to add the above components in the above order to the boot image.
-
-After adding the required components to the boot image, any additional optional components can also be added to the boot image.
-
-### Add optional components manually
+### Add optional components manually to Configuration Manager boot images
 
 For Microsoft Configuration Manager boot images, when applying a cumulative update to a boot image, make sure to add any desired optional components manually using the above command lines instead of adding them through Configuration Manager via the **Optional Components** tab in the **Properties** of the boot image. Optional components need to be added to the boot image manually instead of via Configuration Manager because:
 
@@ -621,11 +626,90 @@ For Microsoft Configuration Manager boot images, when applying a cumulative upda
 
 Once any optional components has been manually added to a boot image, if that optional component is attempted to be added via the **Optional Components** tab in the **Properties** of the boot image in Configuration Manager, Configuration Manager will detect that the optional component has already been added and it will not try to add the optional component again.
 
+### Configuration Manager boot image required components
+
+The following components are required by Microsoft Configuration Manager boot images for Configuration Manager to function correctly:
+
+| Feature | File Name | Dependency |
+|---------|-----------|------------|
+| Scripting/WinPE-Scripting | `WinPE-Scripting.cab` | NA |
+| Network/WinPE-WDS-Tools | `WinPE-WDS-Tools.cab` | NA |
+| Scripting/WinPE-WMI | `WinPE-WMI.cab` | NA |
+| Startup/WinPE-SecureStartup | `WinPE-SecureStartup.cab` | Scripting/WinPE-WMI (`WinPE-WMI.cab`) |
+
+When adding optional components to any boot image used by Configuration Manager during the [Step 6: Add optional components to boot image](#step-6-add-optional-components-to-boot-image) step, make sure to first add the above required components in the above order to the boot image. After adding the required components to the boot image, any additional optional components can also be added to the boot image.
+
+For a list of all available WinPE optional components including descriptions for each component, see [WinPE Optional Components (OC) Reference: WinPE Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference#winpe-optional-components).
+
+### Updating Configuration Manager boot media
+
+After completing the walkthrough, update any Configuration Manager boot media to ensure that the boot media has both the updated boot image and if applicable, updated boot files.
+
 ## Microsoft Deployment Toolkit (MDT) considerations
 
-Copy boot files
+Microsoft Deployment Toolkit (MDT) doesn't support versions of Windows or the Windows ADK beyond Windows 10. When using MDT, the recommendation is to use the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads) instead of the latest version of the Windows ADK. **ADK for Windows 10, version 2004** was the last version of the Windows ADK supported by MDT.
 
-since the Microsoft Deployment Toolkit (MDT) doesn't support versions of Windows or the Windows ADK beyond Windows 10, the recommendation is to instead use the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads). This version was the last version of the Windows ADK supported by MDT.
+### MDT boot image required components
+
+The following components are required by Microsoft Configuration Manager boot images for Configuration Manager to function correctly:
+
+| Feature | File Name | Dependency |
+|---------|-----------|------------|
+| Scripting/WinPE-Scripting | `WinPE-Scripting.cab` | NA |
+| Scripting/WinPE-WMI | `WinPE-WMI.cab` | NA |
+| File management/WinPE-FMAPI | `WinPE-FMAPI.cab` | NA |
+| Startup/WinPE-SecureStartup | `WinPE-SecureStartup.cab` | Scripting/WinPE-WMI (`WinPE-WMI.cab`) |
+| HTML/WinPE-HTA | `WinPE-HTA.cab` | Scripting/WinPE-WMI (`WinPE-WMI.cab`) |
+
+When adding optional components to any boot image used by MDT during the [Step 6: Add optional components to boot image](#step-6-add-optional-components-to-boot-image) step, make sure to first add the above required components in the above order to the boot image. After adding the required components to the boot image, any additional optional components can also be added to the boot image.
+
+For a list of all available WinPE optional components including descriptions for each component, see [WinPE Optional Components (OC) Reference: WinPE Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference#winpe-optional-components).
+
+### Copy updated boot files to MDT deployment share
+
+When the MDT deployment share is created, it copies the bootmgr boot files from the Windows ADK to the MDT deployment share. When using MDT, if the cumulative update updates the bootmgr boot files, these updated bootmgr boot files need to be manually copied to the MDT deployment share. This should be done during [Step 8: Copy boot files from mounted boot image to ADK installation path](#step-8-copy-boot-files-from-mounted-boot-image-to-adk-installation-path):
+
+### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
+
+From an elevated **PowerShell** command prompt, run the following commands to copy the updated bootmgr boot files from the mounted boot image to the MDT deployment share:
+
+```powershell
+Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgr.efi" "<DeploymentShare>\Boot\x64\bootmgr.efi" -Force
+
+Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgfw.efi" "<DeploymentShare>\Boot\x64\EFI\Boot\bootx64.efi" -Force
+```
+
+**Example**:
+
+```powershell
+Copy-Item "C:\Mount\Windows\Boot\EFI\bootmgr.efi" "C:\DeploymentShare\Boot\x64\bootmgr.efi" -Force
+
+Copy-Item "C:\Mount\Windows\Boot\EFI\bootmgfw.efi" "C:\DeploymentShare\Boot\x64\EFI\Boot\bootx64.efi" -Force
+```
+
+### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+
+From an elevated command prompt, run the following commands to copy the updated bootmgr boot files from the mounted boot image to the MDT deployment share:
+
+```cmd
+copy "<Mount_folder_path>\Windows\Boot\EFI\bootmgr.efi" "<DeploymentShare>\Boot\x64\bootmgr.efi" /Y
+
+copy "<Mount_folder_path>\Windows\Boot\EFI\bootmgfw.efi" "<DeploymentShare>\Boot\x64\EFI\Boot\bootx64.efi" /Y
+```
+
+**Example**:
+
+```cmd
+copy "C:\Mount\Windows\Boot\EFI\bootmgr.efi" "C:\DeploymentShare\Boot\x64\bootmgr.efi" /Y
+
+copy "C:\Mount\Windows\Boot\EFI\bootmgfw.efi" "C:\DeploymentShare\Boot\x64\EFI\Boot\bootx64.efi" /Y
+```
+
+---
+
+### Updating MDT boot media
+
+After completing the walkthrough, update any MDT boot media to ensure that the boot media has both the updated boot image and if applicable, updated boot files.
 
 ## Windows Deployment Services (WDS) considerations
 
