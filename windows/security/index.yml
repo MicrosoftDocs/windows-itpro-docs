@@ -37,16 +37,16 @@ productDirectory:
     - title: Hardware security
       imageSrc: /media/common/i_usb.svg
       links:
-        - url: /windows/security/hardware-security
+        - url: /windows/security/hardware-security/tpm/trusted-platform-module-overview
           text: Trusted Platform Module
-        - url: /windows/security/hardware-security
-          text: Windows Defender System Guard firmware protection
-        - url: /windows/security/hardware-security
-          text: System Guard Secure Launch and SMM protection enablement
-        - url: /windows/security/hardware-security
-          text: Virtualization-based protection of code integrity
-        - url: /windows/security/hardware-security
-          text: Kernel DMA Protection
+        - url: /windows/security/hardware-security/pluton/microsoft-pluton-security-processor
+          text: Microsoft Pluton
+        - url: /windows/security/hardware-security/how-hardware-based-root-of-trust-helps-protect-windows
+          text: Windows Defender System Guard
+        - url: /windows-hardware/design/device-experiences/oem-vbs
+          text: Virtualization-based security (VBS)
+        - url: /windows-hardware/design/device-experiences/oem-highly-secure-11
+          text: Secured-core PC
         - url: /windows/security/hardware-security
           text: Learn more about hardware security >
 
@@ -55,30 +55,30 @@ productDirectory:
       links:
         - url: /windows/security/operating-system-security
           text: Trusted boot
-        - url: /windows/security/operating-system-security
-          text: Encryption and data protection
-        - url: /windows/security/operating-system-security
+        - url: /windows/security/operating-system-security/system-security/windows-defender-security-center/windows-defender-security-center
+          text: Windows security settings
+        - url: 	/windows/security/operating-system-security/data-protection/bitlocker/
+          text: BitLocker
+        - url: /windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines
           text: Windows security baselines
-        - url: /windows/security/operating-system-security
-          text: Network security
-        - url: /windows/security/operating-system-security
-          text: Microsoft Defender Application Guard
+        - url: /windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/
+          text: MMicrosoft Defender SmartScreen
         - url: /windows/security/operating-system-security
           text: Learn more about OS security >
 
     - title: Identity protection
       imageSrc: /media/common/i_identity-protection.svg
       links:
-        - url: /windows/security/identity-protection
-          text: Access control
-        - url: /windows/security/identity-protection/credential-guard
-          text: Windows Defender Credential Guard
         - url: /windows/security/identity-protection/hello-for-business
           text: Windows Hello for Business
-        - url: /windows/security/identity-protection
-          text: Smart cards
-        - url: /windows/security/identity-protection
-          text: Virtual smart cards
+        - url: /windows/security/identity-protection/credential-guard
+          text: Windows Defender Credential Guard
+        - url: /windows-server/identity/laps/laps-overview
+          text: Windows LAPS (Local Administrator Password Solution)
+        - url: /windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection
+          text: Enhanced phishing protection with SmartScreen
+        - url: /education/windows/federated-sign-in
+          text: Federated sign-in (EDU)
         - url: /windows/security/identity-protection
           text: Learn more about identity protection >
 
@@ -109,6 +109,8 @@ productDirectory:
           text: Microsoft Security Development Lifecycle (SDL)
         - url: https://www.microsoft.com/msrc/bounty-windows-insider-preview
           text: Microsoft Windows Insider Preview bounty program
+        - url: https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/
+          text: OneFuzz service
         - url: /windows/security/security-foundations
           text: Learn more about security foundations >
 

@@ -48,7 +48,7 @@ ms.topic: include
 |**[Microsoft vulnerable driver blocklist](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules)**|Yes|Yes|Yes|Yes|Yes|
 |**[Microsoft Windows Insider Preview bounty program](https://www.microsoft.com/msrc/bounty-windows-insider-preview)**|Yes|Yes|Yes|Yes|Yes|
 |**[Modern device management through (MDM)](/windows/client-management/mdm-overview)**|Yes|Yes|Yes|Yes|Yes|
-|**OneFuzz service**|Yes|Yes|Yes|Yes|Yes|
+|**[OneFuzz service](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)**|Yes|Yes|Yes|Yes|Yes|
 |**Opportunistic Wireless Encryption (OWE)**|Yes|Yes|Yes|Yes|Yes|
 |**[Personal data encryption (PDE)](/windows/security/information-protection/personal-data-encryption/overview-pde)**|❌|Yes|Yes|Yes|Yes|
 |**Privacy Resource Usage**|Yes|Yes|Yes|Yes|Yes|
