@@ -50,17 +50,17 @@ You can use a policy to enable features that are behind temporary enterprise fea
 
 The following features are behind temporary enterprise control in Windows 11:
 
-| Feature | KB article where the feature was introduced | Feature update that ends temporary control |
-|---|---|---|
-| Touch-optimized taskbar for 2-in-1 devices <!--8092554-->| [February 28, 2023 - KB5022913](https://support.microsoft.com/topic/february-28-2023-kb5022913-os-build-22621-1344-preview-3e38c0d9-924d-4f3f-b0b6-3bd49b2657b9) | 2023 annual feature update |
-| Selecting **Uninstall** for a Win32 app from the right-click menu uses the **Installed Apps** page in **Settings** rather than **Programs and Features** under the **Control Panel** <!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
-| Windows Ink allows users to handwrite directly onto most editable fields <!--8092554, WIP.23481-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
-| Windows Spotlight provides a minimized experience, opportunities to learn more about each image, and allows users to preview images at full screen.<!--8092554, WIP.23511, AllowWindowsSpotlight-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
-| Recommended section added to File Explorer Home for users signed into Windows with an Azure AD account. <!--8092554, DisableGraphRecentItems, WIP.23475, WIP.23403-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
-| Changes to folder options for File Explorer <!--8092554, WIP.23481-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
-|  DevHub Experiences <!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
-| ---<!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
-| ---<!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
+| Feature | KB article where the feature was introduced | Feature update that ends temporary control | Notes |
+|---|---|---|---|
+| Touch-optimized taskbar for 2-in-1 devices <!--8092554-->| [February 28, 2023 - KB5022913](https://support.microsoft.com/topic/february-28-2023-kb5022913-os-build-22621-1344-preview-3e38c0d9-924d-4f3f-b0b6-3bd49b2657b9) | 2023 annual feature update | |
+| Selecting **Uninstall** for a Win32 app from the right-click menu uses the **Installed Apps** page in **Settings** rather than **Programs and Features** under the **Control Panel** <!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | |
+| Windows Ink allows users to handwrite directly onto most editable fields <!--8092554, WIP.23481-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | |
+| Windows Spotlight provides a minimized experience, opportunities to learn more about each image, and allows users to preview images at full screen.<!--8092554, WIP.23511, AllowWindowsSpotlight-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | |
+| Recommended section added to File Explorer Home for users signed into Windows with an Azure AD account. <!--8092554, DisableGraphRecentItems, WIP.23475, WIP.23403-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | |
+| Changes to folder options for File Explorer <!--8092554, WIP.23481-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | **Registry settings**: </br>  - Hide Folder Merge conflict: `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\HideMergeConflicts` </br></br> - Always show icons, never thumbnails: `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\IconsOnly` </br> -Display file icon on thumbnails: `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\ShowTypeOverlay` </br> - Display file type information on Folder tips: `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\FolderContentsInfoTip` </br> - Hide empty drives: `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\HideDrivesWithNoMedia` </br> - Hide Protected OS files: `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\ShowSuperHidden` </br> - Show Drive letters: `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\ShowDriveLettersFirst` </br> - Show popup description for Folder and Desktop items: `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\ShowInfoTip` </br> - Show encrypted or compressed NTFS files in color: `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\ShowEncryptCompressedColor` </br> - Use sharing wizard: `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\SharingWizardOn` |
+|  DevHub Experiences <!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | |
+| ---<!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | |
+| ---<!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | | 
 
 
 
