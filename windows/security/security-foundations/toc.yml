@@ -9,5 +9,3 @@ items:
   href: certification/toc.yml
 - name: Zero Trust and Windows
   href: zero-trust-windows-device-health.md
-- name: Security features licensing and edition requirements
-  href: licensing-and-edition-requirements.md
