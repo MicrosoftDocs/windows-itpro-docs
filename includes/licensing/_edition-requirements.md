@@ -44,11 +44,11 @@ ms.topic: include
 |**[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)**|Yes|Yes|Yes|Yes|
 |**[Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)**|Yes|Yes|Yes|Yes|
 |**[Microsoft Pluton](/windows/security/hardware-security/pluton/microsoft-pluton-security-processor)**|Yes|Yes|Yes|Yes|
-|**Microsoft Security Development Lifecycle (SDL)**|Yes|Yes|Yes|Yes|
+|**[Microsoft Security Development Lifecycle (SDL)](/windows/security/security-foundations/msft-security-dev-lifecycle)**|Yes|Yes|Yes|Yes|
 |**[Microsoft vulnerable driver blocklist](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules)**|Yes|Yes|Yes|Yes|
 |**[Microsoft Windows Insider Preview bounty program](https://www.microsoft.com/msrc/bounty-windows-insider-preview)**|Yes|Yes|Yes|Yes|
 |**[Modern device management through (MDM)](/windows/client-management/mdm-overview)**|Yes|Yes|Yes|Yes|
-|**OneFuzz service**|Yes|Yes|Yes|Yes|
+|**[OneFuzz service](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)**|Yes|Yes|Yes|Yes|
 |**Opportunistic Wireless Encryption (OWE)**|Yes|Yes|Yes|Yes|
 |**[Personal data encryption (PDE)](/windows/security/information-protection/personal-data-encryption/overview-pde)**|❌|Yes|❌|Yes|
 |**Privacy Resource Usage**|Yes|Yes|Yes|Yes|
