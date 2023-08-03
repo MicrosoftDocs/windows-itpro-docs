@@ -26,9 +26,9 @@ highlightedContent:
   - title: Windows 11, version 22H2 group policy settings reference 
     itemType: download
     url: https://www.microsoft.com/en-us/download/details.aspx?id=104594
-  - title: Windows security features licensing
+  - title: Security features licensing and edition requirements
     itemType: overview
-    url: /windows/whats-new/windows-licensing
+    url: /windows/security/licensing-and-edition-requirements
 
 
 productDirectory:
