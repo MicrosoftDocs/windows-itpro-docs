@@ -17,7 +17,7 @@ This article describes the default local user accounts for Windows operating sys
 
 ## About local user accounts
 
-Local user accounts are stored locally on the device. These accounts can be assigned rights and permissions on a particular device, but on that device only. Local user accounts are security principals that are used to secure and manage access to the resources on a device, for services or users.
+Local user accounts are defined locally on a device, and can be assigned rights and permissions on the device only. Local user accounts are security principals that are used to secure and manage access to the resources on a device, for services or users.
 
 ## Default local user accounts
 
@@ -84,9 +84,8 @@ HelpAssistant is the primary account that is used to establish a Remote Assistan
 
 The SIDs that pertain to the default HelpAssistant account include:
 
-- SID: `S-1-5-<domain>-13`, display name Terminal Server User. This group includes all users who sign in to a server with Remote Desktop Services enabled. Note: In Windows Server 2008, Remote Desktop Services is called Terminal Services.
-
-- SID: `S-1-5-<domain>-14`, display name Remote Interactive Logon. This group includes all users who connect to the computer by using a remote desktop connection. This group is a subset of the Interactive group. Access tokens that contain the Remote Interactive Logon SID also contain the Interactive SID.
+- SID: `S-1-5-<domain>-13`, display name *Terminal Server User*. This group includes all users who sign in to a server with Remote Desktop Services enabled.
+- SID: `S-1-5-<domain>-14`, display name *Remote Interactive Logon*. This group includes all users who connect to the computer by using a remote desktop connection. This group is a subset of the Interactive group. Access tokens that contain the Remote Interactive Logon SID also contain the Interactive SID.
 
 For the Windows Server operating system, Remote Assistance is an optional component that isn't installed by default. You must install Remote Assistance before it can be used.
 
@@ -109,7 +108,7 @@ For details about the HelpAssistant account attributes, see the following table.
 
 The DefaultAccount account, also known as the Default System Managed Account (DSMA), is a well-known user account type. DefaultAccount can be used to run processes that are either multi-user aware or user-agnostic.
 
-The DSMA is disabled by default on the desktop SKUs and on the Server operating systems with the desktop experience.
+The DSMA is disabled by default on the desktop editions and on the Server operating systems with the desktop experience.
 
 The DSMA has a well-known RID of `503`. The security identifier (SID) of the DSMA will thus have a well-known SID in the following format: `S-1-5-21-\<ComputerIdentifier>-503`.
 
@@ -154,13 +153,13 @@ On the other hand, the SYSTEM account does appear on an NTFS file system volume 
 > [!NOTE]
 > To grant the account Administrators group file permissions does not implicitly give permission to the SYSTEM account. The SYSTEM account's permissions can be removed from a file, but we do not recommend removing them.
 
-## NETWORK SERVICE
+### NETWORK SERVICE
 
-The NETWORK SERVICE account is a predefined local account used by the service control manager (SCM). A service that runs in the context of the NETWORK SERVICE account presents the computer's credentials to remote servers. For more information, see [NetworkService Account](/windows/desktop/services/networkservice-account).
+The *NETWORK SERVICE* account is a predefined local account used by the service control manager (SCM). A service that runs in the context of the NETWORK SERVICE account presents the computer's credentials to remote servers. For more information, see [NetworkService Account](/windows/desktop/services/networkservice-account).
 
-## LOCAL SERVICE
+### LOCAL SERVICE
 
-The LOCAL SERVICE account is a predefined local account used by the service control manager. It has minimum privileges on the local computer and presents anonymous credentials on the network. For more information, see [LocalService Account](/windows/desktop/services/localservice-account).
+The *LOCAL SERVICE* account is a predefined local account used by the service control manager. It has minimum privileges on the local computer and presents anonymous credentials on the network. For more information, see [LocalService Account](/windows/desktop/services/localservice-account).
 
 ## How to manage local user accounts
 
@@ -196,7 +195,7 @@ Each of these approaches is described in the following sections.
 
 User Account Control (UAC) is a security feature that informs you when a program makes a change that requires administrative permissions. UAC works by adjusting the permission level of your user account. By default, UAC is set to notify you when applications try to make changes to your computer, but you can change when UAC notifies you.
 
-UAC makes it possible for an account with administrative rights to be treated as a standard user non-administrator account until full rights, also called elevation, is requested and approved. For example, UAC lets an administrator enter credentials during a non-administrator's user session to perform occasional administrative tasks without having to switch users, sign out, or use the **Run as** command.
+UAC makes it possible for an account with administrative rights to be treated as a standard user non-administrator account until full rights, also called elevation, is requested and approved. For example, UAC lets an administrator enter credentials during a non-administrator's user session to perform occasional administrative tasks without having to switch users, sign out, or use the *Run as* command.
 
 In addition, UAC can require administrators to specifically approve applications that make system-wide changes before those applications are granted permission to run, even in the administrator's user session.
 

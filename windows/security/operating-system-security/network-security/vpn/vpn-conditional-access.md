@@ -1,7 +1,7 @@
 ---
 title: VPN and conditional access
 description: Learn how to integrate the VPN client with the Conditional Access platform, and how to create access rules for Azure Active Directory (Azure AD) connected apps.
-ms.date: 05/23/2023
+ms.date: 08/03/2023
 ms.topic: conceptual
 ---
 
