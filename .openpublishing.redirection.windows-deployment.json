@@ -1039,6 +1039,71 @@
       "source_path": "windows/deployment/windows-autopilot/index.yml",
       "redirect_url": "/mem/autopilot/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy.md",
+      "redirect_url": "/windows/deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/act-technical-reference.md",
+      "redirect_url": "/windows/deployment/planning/compatibility-administrator-users-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/index.md",
+      "redirect_url": "/windows/deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/add-store-apps-to-image.md",
+      "redirect_url": "/windows/deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/deploy-updates-configmgr.md",
+      "redirect_url": "/mem/configmgr/osd/deploy-use/manage-windows-as-a-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/deploy-updates-intune.md",
+      "redirect_url": "/mem/intune/protect/windows-update-for-business-configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/index.md",
+      "redirect_url": "/windows/deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/olympia/olympia-enrollment-guidelines.md",
+      "redirect_url": "/windows-insider/business/register",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/WIP4Biz-intro.md",
+      "redirect_url": "/windows-insider/business/register",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/waas-morenews.md",
+      "redirect_url": "/windows/deployment/update/waas-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/windows-as-a-service.md",
+      "redirect_url": "/windows/deployment/update/waas-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-10-deployment-tools.md",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-10-deployment-tools-reference.md",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
+      "redirect_document_id": false
     }
   ]
 }
