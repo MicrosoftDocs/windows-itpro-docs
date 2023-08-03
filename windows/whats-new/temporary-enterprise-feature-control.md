@@ -57,7 +57,7 @@ The following features are behind temporary enterprise control in Windows 11:
 | Windows Ink allows users to handwrite directly onto most editable fields <!--8092554, WIP.23481-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
 | Windows Spotlight provides a minimized experience, opportunities to learn more about each image, and allows users to preview images at full screen.<!--8092554, WIP.23511, AllowWindowsSpotlight-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
 | Recommended section added to File Explorer Home for users signed into Windows with an Azure AD account. <!--8092554, DisableGraphRecentItems, WIP.23475, WIP.23403-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
-| Changes to folder options for File Explorer <!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
+| Changes to folder options for File Explorer <!--8092554, WIP.23481-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
 |  DevHub Experiences <!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
 | ---<!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
 | ---<!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |
