@@ -250,7 +250,7 @@ Drivers are not affected by the cumulative update installed later in this walkth
     **Example**:
 
     ```powershell
-    Add-WindowsPackage -PackagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-WMI.cab" -Path "C:\Mount" -Verbose
+    Add-WindowsPackage -PackagePath "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\WinPE_OCs\WinPE-Scripting.cab" -Path "C:\Mount" -Verbose
     ```
 
     These examples assume a 64-bit boot image. If a different architecture is being used, then adjust the paths in the commands accordingly.
@@ -390,18 +390,74 @@ For more information, see [Add or Remove Packages Offline Using DISM](/windows-h
 >
 > Make sure not to apply the cumulative update (CU) until all desired optional components have been installed. This will make sure that the optional components are also properly updated by the cumulative update. If in the future any additional optional components need to be added to the boot image, make sure to reapply the cumulative update.
 
+### Servicing stack update (SSU) and error 0x800f0823
+
+Sometimes when applying a cumulative update (CU) to a boot image, you may receive the following error:
+
+### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
+
+```powershell
+VERBOSE: Target Image Version <WinPE version>
+WARNING: Failed to add package <Cumulative_Update_Path>\<Cumulative_Update>.msu
+WARNING: Add-WindowsPackage failed. Error code = 0x800f0823
+Add-WindowsPackage : An error occurred applying the Unattend.xml file from the .msu package.
+For more information, review the log file.
+At line:1 char:1
++ Add-WindowsPackage -PackagePath "<Cumulative_Update_Path>\<Cumulative_Update> ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Add-WindowsPackage], COMException
+    + FullyQualifiedErrorId : Microsoft.Dism.Commands.AddWindowsPackageCommand
+```
+
+### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+
+```cmd
+Error: 0x800f0823
+
+Package <Cumulative_Update_Path>\<Cumulative_Update>.msu may have failed due to pending updates to servicing components in the image. Try the command again.
+The DISM log file can be found at C:\Windows\Logs\DISM\dism.log
+```
+
+---
+
+Inspecting the **DISM.log** will reveal the following error:
+
+```cmd
+Package "Package_for_RollupFix~<Cumulative_Update>" requires Servicing Stack v<Required_Servicing_Stack_Version> but current Servicing Stack is v<Current_Servicing_Stack_Version>. [HRESULT = 0x800f0823 - CBS_E_NEW_SERVICING_STACK_REQUIRED]
+Failed to initialize internal package [HRESULT = 0x800f0823 - CBS_E_NEW_SERVICING_STACK_REQUIRED]
+Failed to create internal package [HRESULT = 0x800f0823 - CBS_E_NEW_SERVICING_STACK_REQUIRED]
+Failed to create windows update package [HRESULT = 0x800f0823 - CBS_E_NEW_SERVICING_STACK_REQUIRED]
+DISM Package Manager: PID=6020 TID=6112 Failed opening package. - CDISMPackageManager::Internal_CreatePackageByPath(hr:0x800f0823)
+DISM Package Manager: PID=6020 TID=6112 Failed to get the underlying CBS package. - CDISMPackageManager::OpenPackageByPath(hr:0x800f0823)
+DISM Package Manager: PID=6020 TID=6112 The specified package cannot be added to this Windows Image due to a version mismatch. - GetCbsErrorMsg
+DISM Package Manager: PID=6020 TID=6112 Failed to open package at location [<Temp_Path>\<Cumulative_Update>.cab]. - CPackageManagerUnattendHandler::Internal_ProcessPackageFromSource(hr:0x800f0823)
+DISM Package Manager: PID=6020 TID=6112 Failed to install package from source [0] - trying next source location. hr = [0x800F0823] - CPackageManagerUnattendHandler::Internal_UnattendInstallPackage
+DISM Package Manager: PID=6020 TID=6112 Failed to Install the package [Multiple_Packages~~~~0.0.0.0]. - CPackageManagerUnattendHandler::Internal_UnattendInstallPackage(hr:0x800f0823)
+DISM Package Manager: PID=6020 TID=6112 Package failed to install [Multiple_Packages~~~~0.0.0.0]. - CPackageManagerUnattendHandler::Internal_UnattendProcessPackage(hr:0x800f0823)
+DISM Package Manager: PID=6020 TID=6112 Failed to process package at node <package[1]>. - CPackageManagerUnattendHandler::Apply(hr:0x800f0823)
+DISM Package Manager: PID=6020 TID=6112 Failed to Apply the unattend. - CDISMPackageManager::Apply(hr:0x800f0823)
+DISM Unattend Manager: PID=6020 TID=6112 "Error applying unattend for provider: DISM Package Manager" - CUnattendManager::Apply(hr:0x800f0823)
+DISM Package Manager: PID=6020 TID=6112 Failed applying the unattend file from the MSU package. - CMsuPackage::ApplyMsuUnattend(hr:0x800f0823)
+DISM Package Manager: PID=6020 TID=6112 Failed to apply the MSU unattend file to the image. - CMsuPackage::Install(hr:0x800f0823)
+DISM Package Manager: PID=6020 TID=6112 Failed while processing command add-package. - CPackageManagerCLIHandler::ExecuteCmdLine(hr:0x800f0823)
+```
+
+The problem occurs when the WinPE boot image that is being serviced requires installation of a servicing stack update (SSU) before installation of the cumulative update (CU) can occur. The problem usually occurs when using older Windows ADKs and older versions of Windows PE. The suggested fix is to upgrade to the latest version of the Windows ADK and Windows PE which most likely won't need a servicing stack update (SSU) installed before installing the cumulative update (CU).
+
+For scenarios where an older version of the Windows ADK and Windows PE need to be used, for example when using Microsoft Deployment Toolkit (MDT), the servicing stack update needs to be installed before installing the cumulative update. The following steps outline how to install the servicing stack update (SSU) before installing the cumulative update (CU) to the boot image:
+
 ## Step 8: Copy boot files from mounted boot image to ADK installation path
 
 Some cumulative updates will update the bootmgr boot files in the boot image. After these bootmgr boot files have been updated in the boot image, it's recommended to copy these updated bootmgr boot files from the boot image back to the Windows ADK. This will ensure that the Windows ADK has the updated bootmgr boot files.
 
 ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
-From an elevated **PowerShell** command prompt, run the following command to copy the updated bootmgr boot files from the mounted boot image to the ADK installation path:
+From an elevated **PowerShell** command prompt, run the following command to copy the updated bootmgr boot files from the mounted boot image to the ADK installation path. These commands need confirmation to overwrite the existing bootmgr boot files:
 
 ```powershell
-Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi" -Force
+Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi"
 
-Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi" -Force
+Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi"
 ```
 
 **Example**:
@@ -412,23 +468,27 @@ Copy-Item "C:\Mount\Windows\Boot\EFI\bootmgr.efi" "C:\Program Files (x86)\Window
 Copy-Item "C:\Mount\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi" -Force
 ```
 
+To overwrite the bootmgr boot files without confirmation, for example in a script, add the `-Force` parameter to the end of the command line.
+
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
 
-From an elevated command prompt, run the following command to copy the updated bootmgr boot files from the mounted boot image to the ADK installation path:
+From an elevated command prompt, run the following command to copy the updated bootmgr boot files from the mounted boot image to the ADK installation path. These commands need confirmation to overwrite the existing bootmgr boot files::
 
 ```cmd
-copy "<Mount_folder_path>\Windows\Boot\EFI\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi" /Y
+copy "<Mount_folder_path>\Windows\Boot\EFI\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi"
 
-copy "<Mount_folder_path>\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi" /Y
+copy "<Mount_folder_path>\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi"
 ```
 
 **Example**:
 
 ```cmd
-copy "C:\Mount\Windows\Boot\EFI\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi" /Y
+copy "C:\Mount\Windows\Boot\EFI\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi"
 
-copy "C:\Mount\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi" /Y
+copy "C:\Mount\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi"
 ```
+
+To overwrite the bootmgr boot files without confirmation, for example in a script, add the `/Y` parameter to the end of the command line.
 
 ---
 
