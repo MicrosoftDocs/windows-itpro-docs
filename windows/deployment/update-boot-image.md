@@ -357,7 +357,7 @@ Apply the cumulative update (CU) downloaded earlier in the walkthrough to the bo
 From an elevated **PowerShell** command prompt, run the following command to add the cumulative update (CU) to the boot image:
 
 ```powershell
-Add-WindowsPackage -PackagePath "<Path_to_CU_MSU_update>" -Path "<Mount_folder_path>" -Verbose
+Add-WindowsPackage -PackagePath "<Path_to_CU_MSU_update>\<CU>.msu" -Path "<Mount_folder_path>" -Verbose
 ```
 
 **Example**:
@@ -373,7 +373,7 @@ For more information, see [Add-WindowsPackage](/powershell/module/dism/add-windo
 From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to add the cumulative update (CU) to the boot image:
 
 ```cmd
-DISM.exe /Image:"<Mount_folder_path>" /Add-Package /PackagePath:"<Path_to_CU_MSU_update>"
+DISM.exe /Image:"<Mount_folder_path>" /Add-Package /PackagePath:"<Path_to_CU_MSU_update>\<CU>.msu"
 ```
 
 **Example**:
@@ -392,7 +392,7 @@ For more information, see [Add or Remove Packages Offline Using DISM](/windows-h
 
 ### Servicing stack update (SSU) and error 0x800f0823
 
-Sometimes when applying a cumulative update (CU) to a boot image, you may receive the following error:
+Sometimes when applying a cumulative update (CU) to a boot image, you may receive error `0x800f0823`:
 
 ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
@@ -422,29 +422,125 @@ The DISM log file can be found at C:\Windows\Logs\DISM\dism.log
 
 Inspecting the **DISM.log** will reveal the following error:
 
+### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
+
+```powershell
+Package "Package_for_RollupFix~<Cumulative_Update>" requires Servicing Stack v<Required_Servicing_Stack_Version> but current Servicing Stack is v<Current_Servicing_Stack_Version>. [HRESULT = 0x800f0823 - CBS_E_NEW_SERVICING_STACK_REQUIRED]
+Failed to initialize internal package [HRESULT = 0x800f0823 - CBS_E_NEW_SERVICING_STACK_REQUIRED]
+Failed to create internal package [HRESULT = 0x800f0823 - CBS_E_NEW_SERVICING_STACK_REQUIRED]
+Failed to create windows update package [HRESULT = 0x800f0823 - CBS_E_NEW_SERVICING_STACK_REQUIRED]
+DISM Package Manager: PID=<PID> TID=<TID> Failed opening package. - CDISMPackageManager::Internal_CreatePackageByPath(hr:0x800f0823)
+DISM Package Manager: PID=<PID> TID=<TID> Failed to get the underlying CBS package. - CDISMPackageManager::OpenPackageByPath(hr:0x800f0823)
+DISM Package Manager: PID=<PID> TID=<TID> The specified package cannot be added to this Windows Image due to a version mismatch. - GetCbsErrorMsg
+DISM Package Manager: PID=<PID> TID=<TID> Failed to open package at location [<Temp_Path>\<Cumulative_Update>.cab]. - CPackageManagerUnattendHandler::Internal_ProcessPackageFromSource(hr:0x800f0823)
+DISM Package Manager: PID=<PID> TID=<TID> Failed to install package from source [0] - trying next source location. hr = [0x800F0823] - CPackageManagerUnattendHandler::Internal_UnattendInstallPackage
+DISM Package Manager: PID=<PID> TID=<TID> Failed to Install the package [Multiple_Packages~~~~0.0.0.0]. - CPackageManagerUnattendHandler::Internal_UnattendInstallPackage(hr:0x800f0823)
+DISM Package Manager: PID=<PID> TID=<TID> Package failed to install [Multiple_Packages~~~~0.0.0.0]. - CPackageManagerUnattendHandler::Internal_UnattendProcessPackage(hr:0x800f0823)
+DISM Package Manager: PID=<PID> TID=<TID> Failed to process package at node <package[1]>. - CPackageManagerUnattendHandler::Apply(hr:0x800f0823)
+DISM Package Manager: PID=<PID> TID=<TID> Failed to Apply the unattend. - CDISMPackageManager::Apply(hr:0x800f0823)
+DISM Unattend Manager: PID=<PID> TID=<TID> "Error applying unattend for provider: DISM Package Manager" - CUnattendManager::Apply(hr:0x800f0823)
+DISM Package Manager: PID=<PID> TID=<TID> Failed applying the unattend file from the MSU package. - CMsuPackage::ApplyMsuUnattend(hr:0x800f0823)
+DISM Package Manager: PID=<PID> TID=<TID> Failed to apply the MSU unattend file to the image. - CMsuPackage::Install(hr:0x800f0823)
+API: PID=<PID> TID=<TID> Failed to install msu package <Path_to_CU_MSU_update>\<MSU_Cumulative_Update>.msu - CAddPackageCommandObject::InternalExecute(hr:0x800f0823)
+API: PID=<PID> TID=<TID> InternalExecute failed - CBaseCommandObject::Execute(hr:0x800f0823)
+API: PID=<PID> TID=<TID> CAddPackageCommandObject internal execution failed - DismAddPackageInternal(hr:0x800f0823)
+```
+
+### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+
 ```cmd
 Package "Package_for_RollupFix~<Cumulative_Update>" requires Servicing Stack v<Required_Servicing_Stack_Version> but current Servicing Stack is v<Current_Servicing_Stack_Version>. [HRESULT = 0x800f0823 - CBS_E_NEW_SERVICING_STACK_REQUIRED]
 Failed to initialize internal package [HRESULT = 0x800f0823 - CBS_E_NEW_SERVICING_STACK_REQUIRED]
 Failed to create internal package [HRESULT = 0x800f0823 - CBS_E_NEW_SERVICING_STACK_REQUIRED]
 Failed to create windows update package [HRESULT = 0x800f0823 - CBS_E_NEW_SERVICING_STACK_REQUIRED]
-DISM Package Manager: PID=6020 TID=6112 Failed opening package. - CDISMPackageManager::Internal_CreatePackageByPath(hr:0x800f0823)
-DISM Package Manager: PID=6020 TID=6112 Failed to get the underlying CBS package. - CDISMPackageManager::OpenPackageByPath(hr:0x800f0823)
-DISM Package Manager: PID=6020 TID=6112 The specified package cannot be added to this Windows Image due to a version mismatch. - GetCbsErrorMsg
-DISM Package Manager: PID=6020 TID=6112 Failed to open package at location [<Temp_Path>\<Cumulative_Update>.cab]. - CPackageManagerUnattendHandler::Internal_ProcessPackageFromSource(hr:0x800f0823)
-DISM Package Manager: PID=6020 TID=6112 Failed to install package from source [0] - trying next source location. hr = [0x800F0823] - CPackageManagerUnattendHandler::Internal_UnattendInstallPackage
-DISM Package Manager: PID=6020 TID=6112 Failed to Install the package [Multiple_Packages~~~~0.0.0.0]. - CPackageManagerUnattendHandler::Internal_UnattendInstallPackage(hr:0x800f0823)
-DISM Package Manager: PID=6020 TID=6112 Package failed to install [Multiple_Packages~~~~0.0.0.0]. - CPackageManagerUnattendHandler::Internal_UnattendProcessPackage(hr:0x800f0823)
-DISM Package Manager: PID=6020 TID=6112 Failed to process package at node <package[1]>. - CPackageManagerUnattendHandler::Apply(hr:0x800f0823)
-DISM Package Manager: PID=6020 TID=6112 Failed to Apply the unattend. - CDISMPackageManager::Apply(hr:0x800f0823)
-DISM Unattend Manager: PID=6020 TID=6112 "Error applying unattend for provider: DISM Package Manager" - CUnattendManager::Apply(hr:0x800f0823)
-DISM Package Manager: PID=6020 TID=6112 Failed applying the unattend file from the MSU package. - CMsuPackage::ApplyMsuUnattend(hr:0x800f0823)
-DISM Package Manager: PID=6020 TID=6112 Failed to apply the MSU unattend file to the image. - CMsuPackage::Install(hr:0x800f0823)
-DISM Package Manager: PID=6020 TID=6112 Failed while processing command add-package. - CPackageManagerCLIHandler::ExecuteCmdLine(hr:0x800f0823)
+DISM Package Manager: PID=<PID> TID=<TID> Failed opening package. - CDISMPackageManager::Internal_CreatePackageByPath(hr:0x800f0823)
+DISM Package Manager: PID=<PID> TID=<TID> Failed to get the underlying CBS package. - CDISMPackageManager::OpenPackageByPath(hr:0x800f0823)
+DISM Package Manager: PID=<PID> TID=<TID> The specified package cannot be added to this Windows Image due to a version mismatch. - GetCbsErrorMsg
+DISM Package Manager: PID=<PID> TID=<TID> Failed to open package at location [<Temp_Path>\<Cumulative_Update>.cab]. - CPackageManagerUnattendHandler::Internal_ProcessPackageFromSource(hr:0x800f0823)
+DISM Package Manager: PID=<PID> TID=<TID> Failed to install package from source [0] - trying next source location. hr = [0x800F0823] - CPackageManagerUnattendHandler::Internal_UnattendInstallPackage
+DISM Package Manager: PID=<PID> TID=<TID> Failed to Install the package [Multiple_Packages~~~~0.0.0.0]. - CPackageManagerUnattendHandler::Internal_UnattendInstallPackage(hr:0x800f0823)
+DISM Package Manager: PID=<PID> TID=<TID> Package failed to install [Multiple_Packages~~~~0.0.0.0]. - CPackageManagerUnattendHandler::Internal_UnattendProcessPackage(hr:0x800f0823)
+DISM Package Manager: PID=<PID> TID=<TID> Failed to process package at node <package[1]>. - CPackageManagerUnattendHandler::Apply(hr:0x800f0823)
+DISM Package Manager: PID=<PID> TID=<TID> Failed to Apply the unattend. - CDISMPackageManager::Apply(hr:0x800f0823)
+DISM Unattend Manager: PID=<PID> TID=<TID> "Error applying unattend for provider: DISM Package Manager" - CUnattendManager::Apply(hr:0x800f0823)
+DISM Package Manager: PID=<PID> TID=<TID> Failed applying the unattend file from the MSU package. - CMsuPackage::ApplyMsuUnattend(hr:0x800f0823)
+DISM Package Manager: PID=<PID> TID=<TID> Failed to apply the MSU unattend file to the image. - CMsuPackage::Install(hr:0x800f0823)
+DISM Package Manager: PID=<PID> TID=<TID> Failed while processing command add-package. - CPackageManagerCLIHandler::ExecuteCmdLine(hr:0x800f0823)
 ```
+
+---
 
 The problem occurs when the WinPE boot image that is being serviced requires installation of a servicing stack update (SSU) before installation of the cumulative update (CU) can occur. The problem usually occurs when using older Windows ADKs and older versions of Windows PE. The suggested fix is to upgrade to the latest version of the Windows ADK and Windows PE which most likely won't need a servicing stack update (SSU) installed before installing the cumulative update (CU).
 
-For scenarios where an older version of the Windows ADK and Windows PE need to be used, for example when using Microsoft Deployment Toolkit (MDT), the servicing stack update needs to be installed before installing the cumulative update. The following steps outline how to install the servicing stack update (SSU) before installing the cumulative update (CU) to the boot image:
+For scenarios where an older version of the Windows ADK and Windows PE need to be used, for example when using Microsoft Deployment Toolkit (MDT), the servicing stack update needs to be installed before installing the cumulative update. The servicing stack update (SSU) is contained within the cumulative update (CU). To obtain the servicing stack update (SSU) so that it can be applied, it can be extracted from the cumulative update (CU).
+
+The following steps outline how to extract and then install the servicing stack update (SSU) to the boot image. Once the before servicing stack update (SSU) has been installed, then the cumulative update (CU) should install to the boot image without error. These steps are only necessary if error 0x800f0823 occurs when installing the cumulative update (CU) to the boot image. If error 0x800f0823 isn't occur when installing the cumulative update (CU) to the boot image, then skip to the next step [Step 8: Copy boot files from mounted boot image to ADK installation path](#step-8-copy-boot-files-from-mounted-boot-image-to-adk-installation-path):
+
+1. Create a folder to extract the servicing stack update (SSU) into. For example, `C:\Updates\Extract`:
+
+1. Extract the contents of the cumulative update (CU) to the folder created in the previous step using the following command:
+
+    ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
+
+    ```powershell
+    Start-Process "expand.exe" -ArgumentList " -f:* `"<Cumulative_Update_Path>\<Cumulative_Update>.msu`" `"<Extract_Path>`"" -Wait -LoadUserProfile
+    ```
+
+    **Example**:
+
+    ```powershell
+    Start-Process "expand.exe" -ArgumentList " -f:* `"C:\Updates\windows10.0-kb5028166-x64_fe3aa2fef685c0e76e1f5d34d529624294273f41.msu`" `"C:\Updates\Extract`"" -Wait -LoadUserProfile
+    ```
+
+    ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+
+    ```cmd
+    expand.exe -f:* "<Cumulative_Update_Path>\<Cumulative_Update>.msu" "<Extract_Path>"
+    ```
+
+    **Example**:
+
+    ```cmd
+    expand.exe -f:* "C:\Updates\windows10.0-kb5028166-x64_fe3aa2fef685c0e76e1f5d34d529624294273f41.msu" "C:\Updates\Extract"
+    ```
+
+    ---
+
+1. Inspect the contents of the extracted files in the extract folder and identify the servicing stack update (SSU) CAB file. One of the files should be called `SSU-<Version>-<Arch>.cab`. For example, `SSU-19041.3205-x64.cab`. Make a note of the name of the servicing stack update (SSU) CAB file.
+
+1. Apply the servicing stack update (SSU) CAB file to the boot image using the following command:
+
+    ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
+
+    From an elevated **PowerShell** command prompt, run the following command to add the cumulative update (CU) to the boot image:
+
+    ```powershell
+    Add-WindowsPackage -PackagePath "<Path_to_SSU_CAB_update>\<SSU>.cab" -Path "<Mount_folder_path>" -Verbose
+    ```
+
+    **Example**:
+
+    ```powershell
+    Add-WindowsPackage -PackagePath "C:\Updates\Extract\SSU-19041.3205-x64.cab" -Path "C:\Mount" -Verbose
+    ```
+
+    ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+
+    From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to add the cumulative update (CU) to the boot image:
+
+    ```cmd
+    DISM.exe /Image:"<Mount_folder_path>" /Add-Package /PackagePath:"<Path_to_SSU_CAB_update>\<SSU>.cab"
+    ```
+
+    **Example**:
+
+    ```cmd
+    DISM.exe /Image:"C:\Mount" /Add-Package /PackagePath:"C:\Updates\Extract\SSU-19041.3205-x64.cab"
+    ```
+
+    ---
+
+1. Attempt to apply the cumulative update (CU) to the boot image again using the commands from [Step 7: Add cumulative update (CU) to boot image](#step-7-add-cumulative-update-cu-to-boot-image).
 
 ## Step 8: Copy boot files from mounted boot image to ADK installation path
 
@@ -517,7 +613,7 @@ Start-Process "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment 
 **Example**:
 
 ```powershell
-Start-Process "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\DISM\dism.exe" -ArgumentList " /Image:"C:\Mount" /Cleanup-image /StartComponentCleanup /Resetbase /Defer" -Wait -LoadUserProfile
+Start-Process "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\DISM\dism.exe" -ArgumentList " /Image:`"C:\Mount`" /Cleanup-image /StartComponentCleanup /Resetbase /Defer" -Wait -LoadUserProfile
 
 Start-Process "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\DISM\dism.exe" -ArgumentList " /Image:"C:\Mount" /Cleanup-image /StartComponentCleanup /Resetbase" -Wait -LoadUserProfile
 ```
