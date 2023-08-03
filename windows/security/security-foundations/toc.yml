@@ -7,5 +7,3 @@ items:
   href: msft-security-dev-lifecycle.md
 - name: Certification
   href: certification/toc.yml
-- name: Zero Trust and Windows
-  href: zero-trust-windows-device-health.md

@@ -41,8 +41,8 @@ items:
                 tocHref: /windows/security/hardware-security/
                 topicHref: /windows/security/hardware-security/
               - name: Operating system security
-                tocHref: /windows/security/os-security/
-                topicHref: /windows/security/os-security/
+                tocHref: /windows/security/operating-system-security/
+                topicHref: /windows/security/operating-system-security/
               - name: Identity protection
                 tocHref: /windows/security/identity-protection/
                 topicHref: /windows/security/identity-protection/
