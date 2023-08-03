@@ -15,8 +15,8 @@ The following table lists the Windows editions that support Federated sign-in:
 
 Federated sign-in license entitlements are granted by the following licenses:
 
-|Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
+|Windows Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
 |:---:|:---:|:---:|:---:|:---:|
-|No|No|No|Yes|Yes|
+|Yes|No|No|Yes|Yes|
 
 For more information about Windows licensing, see [Windows licensing overview](/windows/whats-new/windows-licensing).
