@@ -18,6 +18,10 @@ appliesto:
 
 # Enterprise feature control in Windows 11
 <!--7790977-->
+
+> [!WARNING]
+> THIS IS AN IN-PROGRESS ROUGH DRAFT. The wording and feature list may change before publishing. 
+
 New features and enhancements are introduced through the monthly cumulative update to provide continuous innovation for Windows 11. To give organizations time to plan and prepare, some of these new features might be:
 
 - Temporarily turned off by default using [temporary enterprise feature control](#temporary-enterprise-feature-control)
@@ -58,9 +62,10 @@ The following features are behind temporary enterprise control in Windows 11:
 | Windows Spotlight provides a minimized experience, opportunities to learn more about each image, and allows users to preview images at full screen.<!--8092554, WIP.23511, AllowWindowsSpotlight-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | |
 | Recommended section added to File Explorer Home for users signed into Windows with an Azure AD account. <!--8092554, DisableGraphRecentItems, WIP.23475, WIP.23403-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | |
 | Changes to folder options for File Explorer <!--8092554, WIP.23481-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | **Registry settings**: </br> - Hide folder merge conflict: `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\HideMergeConflicts` </br></br> - Always show icons, never thumbnails: `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\IconsOnly` </br> -Display file icon on thumbnails: `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\ShowTypeOverlay` </br> - Display file type information on folder tips: `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\FolderContentsInfoTip` </br> - Hide empty drives: `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\HideDrivesWithNoMedia` </br> - Hide protected OS files: `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\ShowSuperHidden` </br> - Show drive letters: `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\ShowDriveLettersFirst` </br> - Show popup description for folder and desktop items: `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\ShowInfoTip` </br> - Show encrypted or compressed NTFS files in color: `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\ShowEncryptCompressedColor` </br> - Use sharing wizard: `HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced\SharingWizardOn` |
-|  DevHub Experiences <!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | |
-| ---<!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | |
-| ---<!--8092554-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | | 
+| Windows Copilot <!--8092554, WIP.23493 -->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | |
+|  Dev Home experiences <!--8092554, WIP.23506-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update |  |
+| Windows Copilot <!--8092554, WIP.23493 -->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | |
+
 
 
 
