@@ -17,10 +17,10 @@ Conditional Access Platform components used for Device Compliance include the fo
 - [Conditional Access Framework](/archive/blogs/tip_of_the_day/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn)
 - [Azure AD Connect Health](/azure/active-directory/connect-health/active-directory-aadconnect-health)
 - [Windows Health Attestation Service](../../system-security/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices.md) (optional)
-- Azure AD Certificate Authority - It is a requirement that the client certificate used for the cloud-based device compliance solution be issued by an Azure Active Directory-based Certificate Authority (CA). An Azure AD CA is essentially a mini-CA cloud tenant in Azure. The Azure AD CA cannot be configured as part of an on-premises Enterprise CA.
+- Azure AD Certificate Authority - It's a requirement that the client certificate used for the cloud-based device compliance solution be issued by an Azure Active Directory-based Certificate Authority (CA). An Azure AD CA is essentially a mini-CA cloud tenant in Azure. The Azure AD CA can't be configured as part of an on-premises Enterprise CA.
 See also [Always On VPN deployment for Windows Server and Windows 10](/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/always-on-vpn-deploy).
 - Azure AD-issued short-lived certificates - When a VPN connection attempt is made, the Azure AD Token Broker on the local device communicates with Azure Active Directory, which then checks for health based on compliance rules. If compliant, Azure AD sends back a short-lived certificate that is used to authenticate the VPN. Note that certificate authentication methods such as EAP-TLS can be used. When the client reconnects and determines that the certificate has expired, the client will again check with Azure AD for health validation before a new certificate is issued.
-- [Microsoft Intune device compliance policies](/mem/intune/protect/device-compliance-get-started) - Cloud-based device compliance leverages Microsoft Intune Compliance Policies, which are capable of querying the device state and define compliance rules for the following, among other things.
+- [Microsoft Intune device compliance policies](/mem/intune/protect/device-compliance-get-started): Cloud-based device compliance uses Microsoft Intune Compliance Policies, which are capable of querying the device state and define compliance rules for the following, among other things.
   - Antivirus status
   - Auto-update status and update compliance
   - Password policy compliance
@@ -35,7 +35,7 @@ The following client-side components are also required:
 
 ## VPN device compliance
 
-At this time, the Azure AD certificates issued to users do not contain a CRL Distribution Point (CDP) and are not suitable for Key Distribution Centers (KDCs) to issue Kerberos tokens. For users to gain access to on-premises resources such as files on a network share, client authentication certificates must be deployed to the Windows profiles of the users, and their VPNv2 profiles must contain the &lt;SSO&gt; section.
+At this time, the Azure AD certificates issued to users don't contain a CRL Distribution Point (CDP) and aren't suitable for Key Distribution Centers (KDCs) to issue Kerberos tokens. For users to gain access to on-premises resources such as files on a network share, client authentication certificates must be deployed to the Windows profiles of the users, and their VPNv2 profiles must contain the &lt;SSO&gt; section.
 
 Server-side infrastructure requirements to support VPN device compliance include:
 
@@ -91,7 +91,7 @@ See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](/windows/clien
 - [Tip of the Day: The Conditional Access Framework and Device Compliance for VPN (Part 3)](/archive/blogs/tip_of_the_day/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn-part-3)
 - [Tip of the Day: The Conditional Access Framework and Device Compliance for VPN (Part 4)](/archive/blogs/tip_of_the_day/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn-part-4)
 
-## Related topics
+## Related articles
 
 - [VPN technical guide](vpn-guide.md)
 - [VPN connection types](vpn-connection-type.md)

@@ -2,7 +2,7 @@
 title: Windows 11 SE Overview
 description: Learn about Windows 11 SE, and the apps that are included with the operating system.
 ms.topic: overview
-ms.date: 07/25/2023
+ms.date: 08/03/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11 SE</a>
 ms.collection:
@@ -35,8 +35,8 @@ The following table lists the different application types available in Windows o
 | --- | --- | :---: | ---|
 |Progressive Web Apps (PWAs) | PWAs are web-based applications that can run in a browser and that can be installed as standalone apps. |✅|PWAs are enabled by default in Windows 11 SE.|
 | Web apps | Web apps are web-based applications that run in a browser. | ✅ | Web apps are enabled by default in Windows 11 SE. |
-|Win32| Win32 applications are Windows classic applications that may require installation |⛔| If users try to install or execute Win32 applications that haven't been allowed to run, they'll fail.|
-|Universal Windows Platform (UWP)/Store apps |UWP apps are commonly obtained from the Microsoft Store and may require installation |⛔|If users try to install or execute UWP applications that haven't been allowed to run, they'll fail.|
+|Win32| Win32 applications are Windows classic applications that may require installation |⛔| If users try to install or execute Win32 applications that haven't been allowed to run, they fail.|
+|Universal Windows Platform (UWP)/Store apps |UWP apps are commonly obtained from the Microsoft Store and may require installation |⛔|If users try to install or execute UWP applications that haven't been allowed to run, they fail.|
 
 > [!IMPORTANT]
 > If there are specific Win32 or UWP applications that you want to allow, work with Microsoft to get them enabled. For more information, see [Add your own applications](#add-your-own-applications).
@@ -169,7 +169,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 
 ## Add your own applications
 
-If the applications you need aren't in the [available applications list](#available-applications), then you can submit an application request at [aka.ms/eduapprequest](https://aka.ms/eduapprequest). Anyone from a school district can submit the request. In the form, sign in with your school account, such as `user@contoso.edu`. We'll update you using this email account.
+If the applications you need aren't in the [available applications list](#available-applications), you can submit an application request at [aka.ms/eduapprequest](https://aka.ms/eduapprequest). Anyone from a school district can submit the request. In the form, sign in with your school account, such as `user@contoso.edu`. We'll update you using this email account.
 
 Microsoft reviews every app request to make sure each app meets the following requirements:
 
