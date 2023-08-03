@@ -1,5 +1,5 @@
 ---
-title: Temporary enterprise feature control in Windows 11
+title: Enterprise feature control in Windows 11
 description: Learn about the Windows 11 features behind temporary enterprise feature control.
 ms.prod: windows-client
 ms.technology: itpro-fundamentals
@@ -16,7 +16,7 @@ appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11, version 22H2 and later</a>
 ---
 
-# Temporary enterprise feature control in Windows 11
+# Enterprise feature control in Windows 11
 <!--7790977-->
 New features and enhancements are introduced through the monthly cumulative update to provide continuous innovation for Windows 11. To give organizations time to plan and prepare, some of these new features might be:
 
