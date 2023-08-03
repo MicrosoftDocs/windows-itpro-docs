@@ -1,6 +1,4 @@
 items:
-- name: Windows security
-  href: index.yml
 - name: Introduction to Windows security
   href: introduction.md
 - name: Security features licensing and edition requirements

@@ -85,14 +85,14 @@ productDirectory:
     - title: Application security
       imageSrc: /media/common/i_queries.svg
       links:
-        - url: /windows/security/application-security/application-control/windows-defender-application-control/wdac
+        - url: /windows/security/application-security/application-control/windows-defender-application-control/
           text: Windows Defender Application Control (WDAC)
         - url: /windows/security/application-security/application-control/user-account-control
           text: User Account Control (UAC)
         - url: /windows/security/application-security/application-control/windows-defender-application-control/design/microsoft-recommended-driver-block-rules
           text: Microsoft vulnerable driver blocklist
         - url: /windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview
-          text: Microsoft Defender Application Guard
+          text: Microsoft Defender Application Guard (MDAG)
         - url: /windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview
           text: Windows Sandbox
         - url: /windows/security/application-security
@@ -101,32 +101,30 @@ productDirectory:
     - title: Security foundations
       imageSrc: /media/common/i_build.svg
       links:
-        - url: /windows/security/security-foundations
-          text: Feature 1
-        - url: /windows/security/security-foundations
-          text: Feature 2
-        - url: /windows/security/security-foundations
-          text: Feature 3
-        - url: /windows/security/security-foundations
-          text: Feature 4
-        - url: /windows/security/security-foundations
-          text: Feature 5
+        - url: /windows/security/security-foundations/certification/fips-140-validation
+          text: FIPS 140-2 validation
+        - url: /windows/security/security-foundations/certification/windows-platform-common-criteria
+          text: Common Criteria Certifications
+        - url: /windows/security/security-foundations/msft-security-dev-lifecycle
+          text: Microsoft Security Development Lifecycle (SDL)
+        - url: https://www.microsoft.com/msrc/bounty-windows-insider-preview
+          text: Microsoft Windows Insider Preview bounty program
         - url: /windows/security/security-foundations
           text: Learn more about security foundations >
 
     - title: Cloud security
       imageSrc: /media/common/i_cloud-security.svg
       links:
-        - url: /windows/security/cloud-security
-          text: Feature 1
-        - url: /windows/security/cloud-security
-          text: Feature 2
-        - url: /windows/security/cloud-security
-          text: Feature 3
-        - url: /windows/security/cloud-security
-          text: Feature 4
-        - url: /windows/security/cloud-security
-          text: Feature 5
+        - url: /mem/intune/protect/security-baselines
+          text: Security baselines with Intune
+        - url: /windows/deployment/windows-autopatch
+          text: Windows Autopatch
+        - url: /windows/deployment/windows-autopilot
+          text: Windows Autopilot
+        - url: /universal-print
+          text: Universal Print
+        - url: /windows/client-management/mdm/remotewipe-csp
+          text: Remote wipe
         - url: /windows/security/cloud-security
           text: Learn more about cloud security >
 

@@ -44,7 +44,7 @@ ms.topic: include
 |**[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)**|Yes|Yes|Yes|Yes|
 |**[Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)**|Yes|Yes|Yes|Yes|
 |**[Microsoft Pluton](/windows/security/hardware-security/pluton/microsoft-pluton-security-processor)**|Yes|Yes|Yes|Yes|
-|**Microsoft Security Development Lifecycle (SDL)**|Yes|Yes|Yes|Yes|
+|**[Microsoft Security Development Lifecycle (SDL)](/windows/security/security-foundations/msft-security-dev-lifecycle)**|Yes|Yes|Yes|Yes|
 |**[Microsoft vulnerable driver blocklist](/windows/security/threat-protection/windows-defender-application-control/microsoft-recommended-driver-block-rules)**|Yes|Yes|Yes|Yes|
 |**[Microsoft Windows Insider Preview bounty program](https://www.microsoft.com/msrc/bounty-windows-insider-preview)**|Yes|Yes|Yes|Yes|
 |**[Modern device management through (MDM)](/windows/client-management/mdm-overview)**|Yes|Yes|Yes|Yes|

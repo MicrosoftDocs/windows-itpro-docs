@@ -3,7 +3,11 @@ items:
   href: index.md
 - name: Zero Trust and Windows
   href: zero-trust-windows-device-health.md
-- name: Microsoft Security Development Lifecycle
-  href: msft-security-dev-lifecycle.md
+- name: Offensive research
+  items:
+  - name: Microsoft Security Development Lifecycle
+    href: msft-security-dev-lifecycle.md
+  - name: Microsoft Windows Insider Preview bounty program 🔗
+    href: https://www.microsoft.com/msrc/bounty-windows-insider-preview
 - name: Certification
   href: certification/toc.yml
