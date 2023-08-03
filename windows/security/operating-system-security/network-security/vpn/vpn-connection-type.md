@@ -1,7 +1,7 @@
 ---
-title: VPN connection types (Windows 10 and Windows 11)
+title: VPN connection types
 description: Learn about Windows VPN platform clients and the VPN connection-type features that can be configured.
-ms.date: 05/24/2022
+ms.date: 08/03/2023
 ms.topic: conceptual
 ---
 
@@ -16,6 +16,7 @@ There are many options for VPN clients. In Windows, the built-in plug-in and the
 ## Built-in VPN client
 
 Tunneling protocols:
+
 - [Internet Key Exchange version 2 (IKEv2)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff687731(v=ws.10)): configure the IPsec/IKE tunnel cryptographic properties using the **Cryptography Suite** setting in the [VPNv2 Configuration Service Provider (CSP)](/windows/client-management/mdm/vpnv2-csp).
 - [L2TP](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff687761(v=ws.10)): L2TP with pre-shared key (PSK) authentication can be configured using the **L2tpPsk** setting in the [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp).
 - [PPTP](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff687676(v=ws.10))
