@@ -5,9 +5,7 @@ ms.prod: windows-client
 ms.localizationpriority: medium
 author: vinaypamnani-msft
 ms.author: vinpa
-ms.reviewer:
 manager: aaroncz
-ms.custom: asr
 ms.technology: itpro-security
 ms.date: 03/16/2023
 ms.topic: article

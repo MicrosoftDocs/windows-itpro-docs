@@ -42,7 +42,7 @@ Anti-malware software can use the boot measurements of the operating system star
 
 The TPM has several Group Policy settings that might be useful in certain enterprise scenarios. For more info, see [TPM Group Policy Settings](trusted-platform-module-services-group-policy-settings.md).
 
-[!INCLUDE [trusted-platform-module-tpm-20](../../../../includes/licensing/trusted-platform-module-tpm-20.md)]
+[!INCLUDE [trusted-platform-module-tpm-20](../../../../includes/licensing/trusted-platform-module-tpm.md)]
 
 ## New and changed functionality
 
