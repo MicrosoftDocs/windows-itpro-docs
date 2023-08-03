@@ -1,5 +1,5 @@
 ---
-ms.date: 05/24/2023
+ms.date: 08/03/2023
 title: VPN routing decisions
 description: Learn about approaches that either send all data through a VPN or only selected data. The one you choose impacts capacity planning and security expectations.
 ms.topic: conceptual
