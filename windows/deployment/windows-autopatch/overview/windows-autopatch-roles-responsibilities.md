@@ -1,7 +1,7 @@
 ---
 title: Roles and responsibilities
 description: This article describes the roles and responsibilities provided by Windows Autopatch and what the customer must do
-ms.date: 07/31/2023
+ms.date: 08/04/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -87,7 +87,7 @@ This article outlines your responsibilities and Windows Autopatch's responsibili
 | Understand the health of [Up to date](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#up-to-date-devices) devices and investigate devices that are<ul><li>[Not up to date](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#not-up-to-date-devices)</li><li>[Not ready](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#not-ready-devices)</li><li>have [Device alerts](../operate/windows-autopatch-device-alerts.md)</li></ul>
 | [Raise, manage and resolve a service incident if an update management area isn't meeting the service level objective](windows-autopatch-overview.md#update-management) | :x: | :heavy_check_mark: |
 | [Exclude a device](../operate/windows-autopatch-exclude-device.md) | :heavy_check_mark: | :x: |
-| [Register a device that was previously excluded (upon customers request)](../operate/windows-autopatch-exclude-devie.md) | :x: | :heavy_check_mark: |
+| [Register a device that was previously excluded (upon customers request)](../operate/windows-autopatch-exclude-device.md) | :x: | :heavy_check_mark: |
 | [Request unenrollment from Windows Autopatch](../operate/windows-autopatch-unenroll-tenant.md) | :heavy_check_mark: | :x: |
 | [Remove Windows Autopatch data from the service and exclude devices](../operate/windows-autopatch-unenroll-tenant.md#microsofts-responsibilities-during-unenrollment) | :x: | :heavy_check_mark: |
 | [Maintain update configuration & update devices post unenrollment from Windows Autopatch](../operate/windows-autopatch-unenroll-tenant.md#your-responsibilities-after-unenrolling-your-tenant) | :heavy_check_mark: | :x: |
