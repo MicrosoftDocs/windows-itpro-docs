@@ -515,7 +515,7 @@ The following steps outline how to extract and then install the servicing stack 
 
     ---
 
-1. Inspect the contents of the extracted files in the extract folder and identify the servicing stack update (SSU) CAB file. One of the files should be called `SSU-<Version>-<Arch>.cab`. For example, `SSU-19041.3205-x64.cab`. Make a note of the name of the servicing stack update (SSU) CAB file.
+1. Inspect the extracted files in the extract folder and identify the servicing stack update (SSU) CAB file. One of the files should be called `SSU-<Version>-<Arch>.cab`. For example, `SSU-19041.3205-x64.cab`. Make a note of the name of the servicing stack update (SSU) CAB file.
 
 1. Using the name of the servicing stack update (SSU) CAB file obtained in the previous step, apply the servicing stack update (SSU) CAB file to the boot image using the following command:
 
@@ -783,35 +783,35 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
   
     1. Delete the original updated boot image:
 
-    ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
+        ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
-    From an elevated **PowerShell** command prompt, run the following command to delete the original updated boot image:
+        From an elevated **PowerShell** command prompt, run the following command to delete the original updated boot image:
 
-    ```powershell
-    Remove-Item -Path "<Boot_image_path>\<boot_image>.wim" -Force
-    ```
+        ```powershell
+        Remove-Item -Path "<Boot_image_path>\<boot_image>.wim" -Force
+        ```
 
-    **Example**:
+        **Example**:
 
-    ```powershell
-    Remove-Item - Path "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" -Force
-    ```
+        ```powershell
+        Remove-Item - Path "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" -Force
+        ```
 
-    ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+        ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
 
-    From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to delete the original updated boot image:
+        From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to delete the original updated boot image:
 
-    ```cmd
-    del "<Boot_image_path>\<boot_image>.wim" /Y
-    ```
+        ```cmd
+        del "<Boot_image_path>\<boot_image>.wim" /Y
+        ```
 
-    **Example**:
+        **Example**:
 
-    ```cmd
-    del "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" /Y
-    ```
+        ```cmd
+        del "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" /Y
+        ```
 
-    ---
+        ---
 
     1. Rename the exported boot image with the name of the original boot image:
 
@@ -954,7 +954,6 @@ After completing the walkthrough, update any Configuration Manager boot media to
 ## Microsoft Deployment Toolkit (MDT) considerations
 
 When adding a cumulative update to a Microsoft Deployment Toolkit (MDT) boot image, it's recommended to update the `winpe.wim` boot image from the Windows ADK instead of directly updating the `LiteTouchPE_<arch>.wim` boot image in the MDT Deployment Share. The `winpe.wim` boot image from the Windows ADK should be updated instead of the `LiteTouchPE_<arch>.wim` boot image from the MDT Deployment Share because if `LiteTouchPE_<arch>.wim` is updated, then the next time the MDT Deployment Share is updated, the changes made to `LiteTouchPE_<arch>.wim`, including the applied cumulative update, may be lost. If the `winpe.wim` boot image from the Windows ADK is updated instead, then the changes to the MDT boot image including the applied cumulative update will persist and be preserved when the MDT Deployment Share is updated.
-
 
 ### Updating the boot image in MDT
 
