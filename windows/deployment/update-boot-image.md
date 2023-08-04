@@ -100,7 +100,7 @@ Adjust the above paths for 32-bit boot images (only available in Windows 10 ADKs
 The following commands will backup the 64-bit boot image included with the **Windows PE add-on for the Windows ADK**:
 ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
-From an elevated **PowerShell** command prompt, run the following command to create a backup copy of the 64-bit boot image included with the Windows ADK. This command won't automatically overwrite a backup of a boot image if one already exists:
+From an elevated **PowerShell** command prompt, run the following command to create a backup copy of the 64-bit boot image included with the Windows ADK. This commands needs confirmation to overwrite an existing backed up boot image if one already exists:
 
 ```powershell
 Copy-Item "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.bak.wim"
@@ -108,15 +108,19 @@ Copy-Item "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\
 
 Adjust paths and file names accordingly to back up other boot images.
 
+To overwrite an existing backed up boot image without confirmation, for example in a script, add the `-Force` parameter to the end of the command line.
+
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
 
-From an elevated command prompt, run the following command to create a backup copy of the 64-bit boot image included with the Windows ADK. This command won't automatically overwrite a backup of a boot image if one already exists:
+From an elevated command prompt, run the following command to create a backup copy of the 64-bit boot image included with the Windows ADK. This commands needs confirmation to overwrite an existing backed up boot image if one already exist:
 
 ```cmd
 copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.bak.wim"
 ```
 
 Adjust paths and file names accordingly to back up other boot images.
+
+To overwrite an existing backed up boot image without confirmation, for example in a script, add the `/Y` parameter to the end of the command line.
 
 ---
 
@@ -474,7 +478,11 @@ The problem occurs when the WinPE boot image that is being serviced requires ins
 
 For scenarios where an older version of the Windows ADK and Windows PE need to be used, for example when using Microsoft Deployment Toolkit (MDT), the servicing stack update needs to be installed before installing the cumulative update. The servicing stack update (SSU) is contained within the cumulative update (CU). To obtain the servicing stack update (SSU) so that it can be applied, it can be extracted from the cumulative update (CU).
 
-The following steps outline how to extract and then install the servicing stack update (SSU) to the boot image. Once the before servicing stack update (SSU) has been installed, then the cumulative update (CU) should install to the boot image without error. These steps are only necessary if error 0x800f0823 occurs when installing the cumulative update (CU) to the boot image. If error 0x800f0823 isn't occur when installing the cumulative update (CU) to the boot image, then skip to the next step [Step 8: Copy boot files from mounted boot image to ADK installation path](#step-8-copy-boot-files-from-mounted-boot-image-to-adk-installation-path):
+The following steps outline how to extract and then install the servicing stack update (SSU) to the boot image. Once the before servicing stack update (SSU) has been installed, then the cumulative update (CU) should install to the boot image without error:
+
+> [!IMPORTANT]
+>
+> These steps are only necessary if error `0x800f0823` occurs when installing the cumulative update (CU) to the boot image. If error `0x800f0823` didn't occur when installing the cumulative update (CU) to the boot image, then skip to the next step [Step 8: Copy boot files from mounted boot image to ADK installation path](#step-8-copy-boot-files-from-mounted-boot-image-to-adk-installation-path)
 
 1. Create a folder to extract the servicing stack update (SSU) into. For example, `C:\Updates\Extract`:
 
@@ -508,7 +516,7 @@ The following steps outline how to extract and then install the servicing stack 
 
 1. Inspect the contents of the extracted files in the extract folder and identify the servicing stack update (SSU) CAB file. One of the files should be called `SSU-<Version>-<Arch>.cab`. For example, `SSU-19041.3205-x64.cab`. Make a note of the name of the servicing stack update (SSU) CAB file.
 
-1. Apply the servicing stack update (SSU) CAB file to the boot image using the following command:
+1. Using the name of the servicing stack update (SSU) CAB file obtained in the previous step, apply the servicing stack update (SSU) CAB file to the boot image using the following command:
 
     ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
@@ -548,10 +556,14 @@ Some cumulative updates will update the bootmgr boot files in the boot image. Af
 
 ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
-From an elevated **PowerShell** command prompt, run the following command to copy the updated bootmgr boot files from the mounted boot image to the ADK installation path. These commands need confirmation to overwrite the existing bootmgr boot files:
+From an elevated **PowerShell** command prompt, run the following commands to copy the updated bootmgr boot files from the mounted boot image to the ADK installation path. These commands will also back up any existing bootmgr boot files its finds. The commands need confirmation to overwrite the existing bootmgr boot files and if they exist, any backed up bootmgr boot files:
 
 ```powershell
+Copy-Item "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.bak.efi"
+
 Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi"
+
+Copy-Item "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.bak.efi"
 
 Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi"
 ```
@@ -559,19 +571,27 @@ Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files 
 **Example**:
 
 ```powershell
+Copy-Item "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.bak.efi"
+
 Copy-Item "C:\Mount\Windows\Boot\EFI\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi" -Force
+
+Copy-Item "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.bak.efi"
 
 Copy-Item "C:\Mount\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi" -Force
 ```
 
-To overwrite the bootmgr boot files without confirmation, for example in a script, add the `-Force` parameter to the end of the command line.
+To overwrite the bootmgr boot files and any backed up bootmgr boot file without confirmation, for example in a script, add the `-Force` parameter to the end of the command lines.
 
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
 
-From an elevated command prompt, run the following command to copy the updated bootmgr boot files from the mounted boot image to the ADK installation path. These commands need confirmation to overwrite the existing bootmgr boot files::
+From an elevated command prompt, run the following command to copy the updated bootmgr boot files from the mounted boot image to the ADK installation path. These commands will also back up any existing bootmgr boot files its finds. The commands need confirmation to overwrite the existing bootmgr boot files and if they exist, any backed up bootmgr boot files:
 
 ```cmd
+copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.bak.efi"
+
 copy "<Mount_folder_path>\Windows\Boot\EFI\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi"
+
+copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.bak.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi"
 
 copy "<Mount_folder_path>\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi"
 ```
@@ -579,12 +599,16 @@ copy "<Mount_folder_path>\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)
 **Example**:
 
 ```cmd
+copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.bak.efi"
+
 copy "C:\Mount\Windows\Boot\EFI\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi"
+
+copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.bak.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi"
 
 copy "C:\Mount\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi"
 ```
 
-To overwrite the bootmgr boot files without confirmation, for example in a script, add the `/Y` parameter to the end of the command line.
+To overwrite the bootmgr boot files and any backed up bootmgr boot file without confirmation, for example in a script, add the `/Y` parameter to the end of the command lines.
 
 ---
 
@@ -756,8 +780,69 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
 
 1. Once the export has completed:
   
-    1. Delete the original updated boot image.
-    1. Rename the exported boot image with the name of the original updated boot image.
+    1. Delete the original updated boot image:
+
+    ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
+
+    From an elevated **PowerShell** command prompt, run the following command to delete the original updated boot image:
+
+    ```powershell
+    Remove-Item -Path "<Boot_image_path>\<boot_image>.wim" -Force
+    ```
+
+    **Example**:
+
+    ```powershell
+    Remove-Item - Path "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" -Force
+    ```
+
+    ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+
+    From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to delete the original updated boot image:
+
+    ```cmd
+    del "<Boot_image_path>\<boot_image>.wim" /Y
+    ```
+
+    **Example**:
+
+    ```cmd
+    del "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" /Y
+    ```
+
+    ---
+
+    1. Rename the exported boot image with the name of the original boot image:
+
+    ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
+
+    From an elevated **PowerShell** command prompt, run the following command to rename the exported boot image with the name of the original boot image:
+
+    ```powershell
+    Rename-Item -Path "<Boot_image_path>\<exported_boot_image>.wim" -NewName "<original_boot_image_name>.wim"
+    ```
+
+    **Example**:
+
+    ```powershell
+    Rename-Item -Path "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe-export.wim" -NewName "winpe.wim"
+    ```
+
+    ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+
+    From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to rename the exported boot image with the name of the original boot image:
+
+    ```cmd
+    rename "<Boot_image_path>\<boot_image>-export.wim" "<original_boot_image_name>.wim"
+    ```
+
+    **Example**:
+
+    ```cmd
+    rename "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe-export.wim" "winpe.wim"
+    ```
+
+    ---
 
 ## Microsoft Configuration Manager considerations
 
