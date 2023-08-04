@@ -44,6 +44,7 @@ Microsoft recommends updating Windows PE (WinPE) boot images with the latest cum
 - [Step 10: Verify all desired packages have been added to boot image](#step-10-verify-all-desired-packages-have-been-added-to-boot-image)
 - [Step 11: Unmount boot image and save changes](#step-11-unmount-boot-image-and-save-changes)
 - [Step 12: Export boot image to reduce size](#step-12-export-boot-image-to-reduce-size)
+- [Step 13: Update boot images in products that utilize the boot images (optional)](#step-13-update-boot-image-in-products-that-utilize-the-boot-image-if-applicable)
 
 ## Step 1: Download and install ADK
 
@@ -844,6 +845,16 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
 
     ---
 
+## Step 13: Update boot image in products that utilize the boot image (if applicable)
+
+After the default `winpe.wim` boot image from the Windows ADK has been updated, additional steps usually need to take place in the product(s) that utilize the boot image . The following links contain information on how to update the boot image for several popular products that utilize boot images:
+
+- [Microsoft Configuration Manager](#updating-the-boot-image-in-configuration-manager)
+- [Microsoft Deployment Toolkit (MDT)](#updating-the-boot-image-in-mdt)
+- Windows Deployment Services
+
+For any other products that utilize boot images, please consult their documentation on how to finish updating the boot image.
+
 ## Microsoft Configuration Manager considerations
 
 ### How Microsoft Configuration Manager creates boot images
@@ -884,6 +895,8 @@ When adding a cumulative update to a Configuration Manager boot image, it's reco
 
 By updating `winpe.wim` from the Windows ADK, this will ensure that the cumulative update will stay applied regardless of what changes are made to the `boot.wim` boot image via Configuration Manager.
 
+### Updating the boot image in Configuration Manager
+
 After updating the `winpe.wim` boot image from the Windows ADK, generate a new `boot.wim` boot image for Configuration Manager that contains the cumulative update by using the following steps:
 
 1. Open the Microsoft Configuration manager console.
@@ -904,7 +917,11 @@ After updating the `winpe.wim` boot image from the Windows ADK, generate a new `
 
     1. Once the boot image finishes building, the **Completion**/**The task "Update Distribution Points Wizard" completed successfully** page will appear. Select the **Close** button.
 
-This process in addition to updating the boot image used by Configuration Manager will also update the boot images and the boot files used by any PXE enabled distribution points.
+This process updates the boot image used by Configuration Manager. It will also update the boot image and the boot files used by any PXE enabled distribution points.
+
+> [!IMPORTANT]
+>
+> If there are multiple boot images used in the environment for PXE enabled distribution points, make sure to update all of the PXE enabled boot images with the same cumulative update. This will ensure that the PXE enabled distribution points all use the latest version of the bootmgr boot files extracted from the boot images (if applicable).
 
 ### Add optional components manually to Configuration Manager boot images
 
@@ -938,27 +955,26 @@ After completing the walkthrough, update any Configuration Manager boot media to
 
 When adding a cumulative update to a Microsoft Deployment Toolkit (MDT) boot image, it's recommended to update the `winpe.wim` boot image from the Windows ADK instead of directly updating the `LiteTouchPE_<arch>.wim` boot image in the MDT Deployment Share. The `winpe.wim` boot image from the Windows ADK should be updated instead of the `LiteTouchPE_<arch>.wim` boot image from the MDT Deployment Share because if `LiteTouchPE_<arch>.wim` is updated, then the next time the MDT Deployment Share is updated, the changes made to `LiteTouchPE_<arch>.wim`, including the applied cumulative update, may be lost. If the `winpe.wim` boot image from the Windows ADK is updated instead, then the changes to the MDT boot image including the applied cumulative update will persist and be preserved when the MDT Deployment Share is updated.
 
+
+### Updating the boot image in MDT
+
 After updating the `winpe.wim` boot image from the Windows ADK, generate a new `LiteTouchPE_<arch>.wim` boot image for MDT that contains the cumulative update by using the following steps:
 
-1. Open the Microsoft Configuration manager console.
+1. Open the Microsoft Deployment Toolkit (MDT) Deployment Workbench console.
 
-1. In the Microsoft Configuration manager console, navigate to **Software Library** > **Overview** > **Operating Systems** > **Boot Images**.
+1. In the Deployment Workbench console, navigate to **Deployment Workbench** > **Deployment Shares** > **MDT Deployment Share**.
 
-1. In the **Boot Images** pane, select the desired boot image.
+1. Right click on **MDT Deployment Share** and select **Update Deployment Share**.
 
-1. In the toolbar, select **Update Distribution Points**.
+1. In the **Update Deployment Share Wizard** window that appears:
 
-1. In the **Update Distribution Points Wizard** window that appears:
-
-    1. In the **General**/**Update distribution points with this image** page, select the **Reload this boot image with the current Windows PE version from the Windows ADK** option, and then select the **Next >** button.
+    1. In the **Options** page, select the **Completely regenerate the boot images** option, and then select the **Next >** button.
 
     1. In the **Summary** page, select the **Next >** button.
 
-    1. The **Progress** page will appears while the boot image builds.
+    1. The **Progress** page will appears while the boot image and deployment share builds.
 
-    1. Once the boot image finishes building, the **Completion**/**The task "Update Distribution Points Wizard" completed successfully** page will appear. Select the **Close** button.
-
-This process in addition to updating the boot image used by Configuration Manager will also update the boot images and the boot files used by any PXE enabled distribution points.
+    1. Once the boot image and deployment share finishes building, the **Confirmation**/**The process completed successfully** page will appear. Select the **Finish** button.
 
 ### MDT and Windows ADK versions
 
