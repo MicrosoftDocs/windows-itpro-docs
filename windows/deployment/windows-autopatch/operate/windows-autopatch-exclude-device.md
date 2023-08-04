@@ -1,7 +1,7 @@
 ---
 title: Exclude a device
 description: This article explains how to exclude a device from the Windows Autopatch service
-ms.date: 08/04/2023
+ms.date: 08/08/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
