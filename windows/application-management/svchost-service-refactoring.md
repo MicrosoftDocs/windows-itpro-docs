@@ -5,7 +5,6 @@ author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
 ms.date: 08/04/2023
-manager: aaroncz
 ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-apps
