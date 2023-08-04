@@ -76,7 +76,7 @@
                 href: operate/windows-autopatch-edge.md
               - name: Microsoft Teams
                 href: operate/windows-autopatch-teams.md
-        - name: Windows quality and feature update reports
+        - name: Windows quality and feature update reports overview
           href: operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md
           items:
             - name: Windows quality update reports
