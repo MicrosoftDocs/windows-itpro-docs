@@ -1,7 +1,7 @@
 ---
 title: How to configure cryptographic settings for IKEv2 VPN connections
 description: Learn how to update the IKEv2 cryptographic settings of VPN servers and clients by running VPN cmdlets to secure connections.
-ms.date: 06/28/2023
+ms.date: 08/03/2023
 ms.topic: how-to
 ---
 
@@ -9,8 +9,8 @@ ms.topic: how-to
 
 In IKEv2 VPN connections, the default setting for IKEv2 cryptographic settings are:
 
-- Encryption Algorithm           : DES3  
-- Integrity, Hash Algorithm      : SHA1  
+- Encryption Algorithm: DES3  
+- Integrity, Hash Algorithm: SHA1  
 - Diffie Hellman Group (Key Size): DH2
 
 These settings aren't secure for IKE exchanges.  
@@ -31,9 +31,9 @@ On an earlier version of Windows Server, run [Set-VpnServerIPsecConfiguration](/
 Set-VpnServerIPsecConfiguration -CustomPolicy
 ```
 
-## VPN client 
+## VPN client
 
-For VPN client, you need to configure each VPN connection. 
+For VPN client, you need to configure each VPN connection.
 For example, run [Set-VpnConnectionIPsecConfiguration (version 4.0)](/powershell/module/vpnclient/set-vpnconnectionipsecconfiguration?view=win10-ps&preserve-view=true) and specify the name of the connection:
 
 ```powershell
@@ -44,8 +44,8 @@ Set-VpnConnectionIPsecConfiguration -ConnectionName <String>
 
 The following commands configure the IKEv2 cryptographic settings to:  
 
-- Encryption Algorithm           : AES128  
-- Integrity, Hash Algorithm      : SHA256  
+- Encryption Algorithm: AES128  
+- Integrity, Hash Algorithm: SHA256  
 - Diffie Hellman Group (Key Size): DH14  
 
 ### IKEv2 VPN Server  
