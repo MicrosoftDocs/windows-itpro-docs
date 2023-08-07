@@ -36,7 +36,7 @@ Microsoft recommends updating Windows PE (WinPE) boot images with the latest cum
 - [Step 2: Download cumulative update (CU)](#step-2-download-cumulative-update-cu)
 - [Step 3: Backup existing boot image](#step-3-backup-existing-boot-image)
 - [Step 4: Mount boot image to mount folder](#step-4-mount-boot-image-to-mount-folder)
-- [Step 5: Add drivers to boot image](#step-5-add-drivers-to-boot-image)
+- [Step 5: Add drivers to boot image (optional)](#step-5-add-drivers-to-boot-image-optional)
 - [Step 6: Add optional components to boot image](#step-6-add-optional-components-to-boot-image)
 - [Step 7: Add cumulative update (CU) to boot image](#step-7-add-cumulative-update-cu-to-boot-image)
 - [Step 8: Copy boot files from mounted boot image to ADK installation path](#step-8-copy-boot-files-from-mounted-boot-image-to-adk-installation-path)
@@ -44,7 +44,7 @@ Microsoft recommends updating Windows PE (WinPE) boot images with the latest cum
 - [Step 10: Verify all desired packages have been added to boot image](#step-10-verify-all-desired-packages-have-been-added-to-boot-image)
 - [Step 11: Unmount boot image and save changes](#step-11-unmount-boot-image-and-save-changes)
 - [Step 12: Export boot image to reduce size](#step-12-export-boot-image-to-reduce-size)
-- [Step 13: Update boot images in products that utilize the boot images (optional)](#step-13-update-boot-image-in-products-that-utilize-the-boot-image-if-applicable)
+- [Step 13: Update boot images in products that utilize the boot images (optional)](#step-13-update-boot-image-in-products-that-utilize-it-if-applicable)
 
 ## Step 1: Download and install ADK
 
@@ -115,6 +115,8 @@ Adjust paths and file names accordingly to back up other boot images.
 
 To automatically overwrite an existing backed up boot image without confirmation, for example in a script, add the `-Force` parameter to the end of the command line.
 
+For more information, see [Copy-Item](/powershell/module/microsoft.powershell.management/copy-item).
+
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
 
 From an elevated command prompt, run the following command to create a backup copy of the 64-bit boot image included with the Windows ADK. If a backed-up boot image already exists, this command needs confirmation before it overwrites the existing backed up boot image:
@@ -126,6 +128,8 @@ copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windo
 Adjust paths and file names accordingly to back up other boot images.
 
 To automatically overwrite an existing backed up boot image without confirmation, for example in a script, add the `/Y` parameter to the end of the command line.
+
+For more information, see [copy](/windows-server/administration/windows-commands/copy).
 
 ---
 
@@ -173,7 +177,7 @@ To automatically overwrite an existing backed up boot image without confirmation
 
   ---
 
-## Step 5: Add drivers to boot image
+## Step 5: Add drivers to boot image (optional)
 
 If needed, add any drivers to the boot image:
 
@@ -815,6 +819,8 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
         Remove-Item - Path "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" -Force
         ```
 
+        For more information, see [Remove-Item](/powershell/module/microsoft.powershell.management/remove-item).
+
         ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
 
         From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to delete the original updated boot image:
@@ -828,6 +834,8 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
         ```cmd
         del "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" /Y
         ```
+
+        For more information, see [del](/windows-server/administration/windows-commands/del).
 
         ---
 
@@ -847,6 +855,8 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
         Rename-Item -Path "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe-export.wim" -NewName "winpe.wim"
         ```
 
+        For more information, see [Rename-Item](/powershell/module/microsoft.powershell.management/rename-item).
+
         ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
 
         From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to rename the exported boot image with the name of the original boot image:
@@ -861,6 +871,8 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
         rename "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe-export.wim" "winpe.wim"
         ```
 
+        For more information, see [rename](/windows-server/administration/windows-commands/rename).
+
         ---
 
 ## Step 13: Update boot image in products that utilize it (if applicable)
@@ -868,7 +880,7 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
 After the default `winpe.wim` boot image from the Windows ADK has been updated, additional steps usually need to take place in the product(s) that utilize the boot image. The following links contain information on how to update the boot image for several popular products that utilize boot images:
 
 - [Microsoft Configuration Manager](#updating-the-boot-image-in-configuration-manager)
-- [Microsoft Deployment Toolkit (MDT)](#updating-the-boot-image-in-mdt)
+- [Microsoft Deployment Toolkit (MDT)](#updating-the-boot-image-and-boot-media-in-mdt)
 - Windows Deployment Services
 
 For any other products that utilize boot images, consult the product's documentation on updating the boot image.
@@ -980,7 +992,7 @@ For a list of all available WinPE optional components including descriptions for
 
 ### Updating Configuration Manager boot media
 
-After completing the walkthrough, including updating boot images in Configuration Manager, update any Configuration Manager task sequence media. Updating any Configuration Manager task sequence media ensures that the task sequence media has both the updated boot image and if applicable, updated boot files.
+After completing the walkthrough, including updating boot images in Configuration Manager, update any Configuration Manager task sequence media. Updating any Configuration Manager task sequence media ensures that the task sequence media has both the updated boot image and if applicable, updated boot files. For more information, see [Create task sequence media](/mem/configmgr/osd/deploy-use/create-task-sequence-media).
 
 ## Microsoft Deployment Toolkit (MDT) considerations
 
@@ -1036,4 +1048,4 @@ The **boot.wim** that is part of Windows installation media isn't supported for 
 
 ## Windows Server 2012 R2
 
-This walk-through isn't intended for use with Windows Server 2012 R2. There may be additional steps necessary when using Windows Server 2012 R2, such as also having to apply the latest servicing stack update (SSU) to the WinPE boot image. For server OSes, it's recommended to use Windows Server 2016 or later for this walk-through. For more information, see [Windows Server 2012 R2 Lifecycle](/lifecycle/products/windows-server-2012-r2).
+This walk-through isn't intended for use with Windows Server 2012 R2. Although the steps in this article may work with Windows Server 2012 R2 older versions of the Windows ADK, it may have compatibility problems with versions of the Windows ADK that are newer than the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads). For server OSes, it's recommended to use Windows Server 2016 or later for this walk-through. For more information, see [Windows Server 2012 R2 Lifecycle](/lifecycle/products/windows-server-2012-r2).
