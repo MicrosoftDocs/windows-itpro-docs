@@ -76,8 +76,7 @@
         "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11 SE</a>",
         "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
         ]
-      },
-      "uhfHeaderId": "MSDocsHeader-Windows"
+      }
     },
     "externalReference": [],
     "template": "op.html",
