@@ -263,7 +263,6 @@ This article lists the policies in Policy CSP that are applicable for the Surfac
 
 ## Start
 
-- [HideCopilotButton](policy-csp-start.md#hidecopilotbutton)
 - [HideRecommendedPersonalizedSites](policy-csp-start.md#hiderecommendedpersonalizedsites)
 - [StartLayout](policy-csp-start.md#startlayout)
 
