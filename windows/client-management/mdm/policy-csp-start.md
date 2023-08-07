@@ -4,7 +4,7 @@ description: Learn more about the Start Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 08/07/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
