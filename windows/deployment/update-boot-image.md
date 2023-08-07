@@ -207,6 +207,8 @@ or
 Add-WindowsDriver -Path "C:\Mount" -Driver "C:\Drivers" -Recurse
 ```
 
+For more information, see [Add-WindowsDriver](/powershell/module/dism/add-windowsdriver).
+
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
 
 From an elevated **Deployment and Imaging Tools Environment** command prompt, run one of the following commands to add drivers to the boot image:
@@ -320,6 +322,8 @@ The cumulative update installed later in this walkthrough doesn't affect drivers
 
     These examples assume a 64-bit boot image. If a different architecture is being used, then adjust the paths accordingly.
 
+    For more information, see [Add-WindowsPackage](/powershell/module/dism/add-windowspackage).
+
     ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
 
     From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to add the language components for the optional components to the boot image:
@@ -337,6 +341,8 @@ The cumulative update installed later in this walkthrough doesn't affect drivers
     These examples assume a 64-bit boot image. If a different architecture is being used, then adjust the paths accordingly.
 
     You can add as many desired optional components as needed on a single DISM.exe command line.
+
+    For more information, see [Add or Remove Packages Offline Using DISM](/windows-hardware/manufacture/desktop/add-or-remove-packages-offline-using-dism) and [DISM Operating System Package (.cab or .msu) Servicing Command-Line Options: /Add-Package](/windows-hardware/manufacture/desktop/dism-operating-system-package-servicing-command-line-options#add-package).
 
     ---
 
@@ -603,6 +609,8 @@ Copy-Item "C:\Mount\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windo
 
 To overwrite the bootmgr boot files and any backed up bootmgr boot file without confirmation, for example in a script, add the `-Force` parameter to the end of the command lines.
 
+For more information, see [Copy-Item](/powershell/module/microsoft.powershell.management/copy-item).
+
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
 
 From an elevated command prompt, run the following command to copy the updated bootmgr boot files from the mounted boot image to the ADK installation path. These commands also back up any existing bootmgr boot files its finds. When applicable, the commands need confirmation to overwrite any existing files:
@@ -630,6 +638,9 @@ copy "C:\Mount\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windows Ki
 ```
 
 To overwrite the bootmgr boot files and any backed up bootmgr boot file without confirmation, for example in a script, add the `/Y` parameter to the end of the command lines.
+
+
+For more information, see [copy](/windows-server/administration/windows-commands/copy).
 
 ---
 
