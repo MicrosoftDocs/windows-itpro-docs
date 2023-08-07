@@ -64,7 +64,6 @@ The following features are behind temporary enterprise control in Windows 11:
 | Windows Copilot <!--8092554, WIP.23493 -->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | |
 | Dev Home <!--8092554, WIP.23506-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | `Get-AppxPackage -Name Microsoft.Windows.DevHome` |
 
-
 ## Permanent enterprise feature control
 
 New features and enhancements used to be introduced only in feature updates. However, with continuous innovation for Windows 11, new features are introduced more frequently through the monthly cumulative update. Some new features can be controlled through policies that enable you to configure them for your organization. When a feature can be controlled by a policy, it has permanent enterprise feature control.
