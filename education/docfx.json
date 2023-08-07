@@ -41,7 +41,7 @@
       "manager": "aaroncz",
       "ms.localizationpriority": "medium",
       "breadcrumb_path": "/education/breadcrumb/toc.json",
-      "uhfHeaderId": "MSDocsHeader-Windows",
+      "uhfHeaderId": "MSDocsHeader-M365-IT",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
       "feedback_product_url": "https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332",
@@ -76,7 +76,8 @@
         "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11 SE</a>",
         "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
         ]
-      }
+      },
+      "uhfHeaderId": "MSDocsHeader-Windows"
     },
     "externalReference": [],
     "template": "op.html",

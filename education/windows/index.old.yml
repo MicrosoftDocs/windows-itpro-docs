@@ -1,0 +1,73 @@
+  - title: Get started
+    linkLists:
+      - linkListType: tutorial
+        links:
+        - text: Deploy and manage Windows devices in a school
+          url: tutorial-school-deployment/index.md
+        - text: Prepare your tenant
+          url: tutorial-school-deployment/set-up-azure-ad.md
+        - text: Configure settings and applications with Microsoft Intune
+          url: tutorial-school-deployment/configure-devices-overview.md
+        - text: Manage devices with Microsoft Intune
+          url: tutorial-school-deployment/manage-overview.md
+        - text: Management functionalities for Surface devices
+          url: tutorial-school-deployment/manage-surface-devices.md     
+
+  - title: Learn about Windows 11 SE
+    linkLists:
+      - linkListType: concept
+        links:
+        - text: What is Windows 11 SE?
+          url: windows-11-se-overview.md
+        - text: Windows 11 SE settings
+          url: windows-11-se-settings-list.md
+      - linkListType: whats-new
+        links:
+        - text: Configure federated sign-in
+          url: federated-sign-in.md
+        - text: Configure education themes
+          url: edu-themes.md
+        - text: Configure Stickers
+          url: edu-stickers.md
+      - linkListType: video
+        links:
+        - text: Deploy Windows 11 SE using Set up School PCs
+          url: https://www.youtube.com/watch?v=Ql2fbiOop7c
+
+  - title: Deploy devices with Set up School PCs
+    linkLists:
+      - linkListType: concept
+        links:
+        - text: What is Set up School PCs?
+          url: set-up-school-pcs-technical.md
+      - linkListType: how-to-guide
+        links:
+        - text: Use the Set up School PCs app
+          url: use-set-up-school-pcs-app.md
+      - linkListType: reference
+        links:
+        - text: Provisioning package settings
+          url: set-up-school-pcs-provisioning-package.md
+      - linkListType: video
+        links:
+        - text: Use the Set up School PCs App
+          url: https://www.youtube.com/watch?v=2ZLup_-PhkA
+
+  - title: Configure devices
+    linkLists:
+      - linkListType: concept
+        links:
+        - text: Take tests and assessments in Windows
+          url: take-tests-in-windows.md
+        - text: Considerations for shared and guest devices
+          url: /windows/configuration/shared-devices-concepts?context=/education/context/context
+        - text: Change Windows editions
+          url: change-home-to-edu.md
+      - linkListType: how-to-guide
+        links:
+        - text: Configure Take a Test in kiosk mode
+          url: edu-take-a-test-kiosk-mode.md
+        - text: Configure Shared PC
+          url: /windows/configuration/set-up-shared-or-guest-pc?context=/education/context/context
+        - text: Get and deploy Minecraft Education
+          url: get-minecraft-for-education.md
