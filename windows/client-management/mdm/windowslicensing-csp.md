@@ -4,7 +4,7 @@ description: Learn more about the WindowsLicensing CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 08/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -15,6 +15,8 @@ ms.topic: reference
 
 <!-- WindowsLicensing-Begin -->
 # WindowsLicensing CSP
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- WindowsLicensing-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -161,7 +163,7 @@ Returns TRUE if the entered product key can be used for an edition upgrade of Wi
 <!-- Device-DeviceLicensingService-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-DeviceLicensingService-Applicability-End -->
 
 <!-- Device-DeviceLicensingService-OmaUri-Begin -->
@@ -200,7 +202,7 @@ Device Based Subscription.
 <!-- Device-DeviceLicensingService-DeviceLicensingLastError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-DeviceLicensingService-DeviceLicensingLastError-Applicability-End -->
 
 <!-- Device-DeviceLicensingService-DeviceLicensingLastError-OmaUri-Begin -->
@@ -239,7 +241,7 @@ Returns the last error code of Refresh/Remove Device License operation. Value wo
 <!-- Device-DeviceLicensingService-DeviceLicensingLastErrorDescription-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-DeviceLicensingService-DeviceLicensingLastErrorDescription-Applicability-End -->
 
 <!-- Device-DeviceLicensingService-DeviceLicensingLastErrorDescription-OmaUri-Begin -->
@@ -278,7 +280,7 @@ Returns last error description from Device Licensing. Value would be empty, if e
 <!-- Device-DeviceLicensingService-DeviceLicensingStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-DeviceLicensingService-DeviceLicensingStatus-Applicability-End -->
 
 <!-- Device-DeviceLicensingService-DeviceLicensingStatus-OmaUri-Begin -->
@@ -317,7 +319,7 @@ Returns the status of Refresh/Remove Device License operation.
 <!-- Device-DeviceLicensingService-LicenseType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-DeviceLicensingService-LicenseType-Applicability-End -->
 
 <!-- Device-DeviceLicensingService-LicenseType-OmaUri-Begin -->
@@ -795,7 +797,7 @@ This setting is only applicable to devices available in S mode.
 
 <!-- Device-Status-Description-Begin -->
 <!-- Description-Source-DDF -->
-Returns the status of an edition upgrade on Windows 10 desktop and mobile devices.	 Status: 0 = Failed, 1 = Pending, 2 = In progress, 3 = Completed, 4 = Unknown.
+Returns the status of an edition upgrade on Windows 10 desktop and mobile devices.     Status: 0 = Failed, 1 = Pending, 2 = In progress, 3 = Completed, 4 = Unknown.
 <!-- Device-Status-Description-End -->
 
 <!-- Device-Status-Editable-Begin -->
@@ -997,7 +999,7 @@ Returns the status of the subscription.
 <!-- Device-Subscriptions-DisableSubscription-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
 <!-- Device-Subscriptions-DisableSubscription-Applicability-End -->
 
 <!-- Device-Subscriptions-DisableSubscription-OmaUri-Begin -->
@@ -1045,7 +1047,7 @@ Disable or Enable subscription activation on a device.
 <!-- Device-Subscriptions-RemoveSubscription-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
 <!-- Device-Subscriptions-RemoveSubscription-Applicability-End -->
 
 <!-- Device-Subscriptions-RemoveSubscription-OmaUri-Begin -->
@@ -1084,7 +1086,7 @@ Remove subscription uninstall subscription license. It also reset subscription t
 <!-- Device-Subscriptions-SubscriptionLastError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
 <!-- Device-Subscriptions-SubscriptionLastError-Applicability-End -->
 
 <!-- Device-Subscriptions-SubscriptionLastError-OmaUri-Begin -->
@@ -1123,7 +1125,7 @@ Error code of last subscription operation. Value would be empty(0) in absence of
 <!-- Device-Subscriptions-SubscriptionLastErrorDescription-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
 <!-- Device-Subscriptions-SubscriptionLastErrorDescription-Applicability-End -->
 
 <!-- Device-Subscriptions-SubscriptionLastErrorDescription-OmaUri-Begin -->
@@ -1162,7 +1164,7 @@ Error description of last subscription operation. Value would be empty, if error
 <!-- Device-Subscriptions-SubscriptionStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
 <!-- Device-Subscriptions-SubscriptionStatus-Applicability-End -->
 
 <!-- Device-Subscriptions-SubscriptionStatus-OmaUri-Begin -->
@@ -1201,7 +1203,7 @@ Status of last subscription operation.
 <!-- Device-Subscriptions-SubscriptionType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
 <!-- Device-Subscriptions-SubscriptionType-Applicability-End -->
 
 <!-- Device-Subscriptions-SubscriptionType-OmaUri-Begin -->
