@@ -527,6 +527,8 @@ The following steps outline how to extract and then install the servicing stack 
     Start-Process "expand.exe" -ArgumentList " -f:* `"C:\Updates\windows10.0-kb5028166-x64_fe3aa2fef685c0e76e1f5d34d529624294273f41.msu`" `"C:\Updates\Extract`"" -Wait -LoadUserProfile
     ```
 
+    For more information, see [Start-Process](/powershell/module/microsoft.powershell.management/start-process) and [expand](/windows-server/administration/windows-commands/expand).
+
     ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
 
     ```cmd
@@ -538,6 +540,8 @@ The following steps outline how to extract and then install the servicing stack 
     ```cmd
     expand.exe -f:* "C:\Updates\windows10.0-kb5028166-x64_fe3aa2fef685c0e76e1f5d34d529624294273f41.msu" "C:\Updates\Extract"
     ```
+
+    For more information, see [expand](/windows-server/administration/windows-commands/expand).
 
     ---
 
@@ -559,6 +563,8 @@ The following steps outline how to extract and then install the servicing stack 
     Add-WindowsPackage -PackagePath "C:\Updates\Extract\SSU-19041.3205-x64.cab" -Path "C:\Mount" -Verbose
     ```
 
+    For more information, see [Add-WindowsPackage](/powershell/module/dism/add-windowspackage).
+
     ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
 
     From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to add the cumulative update (CU) to the boot image:
@@ -572,6 +578,8 @@ The following steps outline how to extract and then install the servicing stack 
     ```cmd
     DISM.exe /Image:"C:\Mount" /Add-Package /PackagePath:"C:\Updates\Extract\SSU-19041.3205-x64.cab"
     ```
+
+    For more information, see [Add or Remove Packages Offline Using DISM](/windows-hardware/manufacture/desktop/add-or-remove-packages-offline-using-dism) and [DISM Operating System Package (.cab or .msu) Servicing Command-Line Options: /Add-Package](/windows-hardware/manufacture/desktop/dism-operating-system-package-servicing-command-line-options#add-package).
 
     ---
 
