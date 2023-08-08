@@ -54,7 +54,7 @@ You can use a policy to enable features that are behind temporary enterprise fea
 
 The following features are behind temporary enterprise control in Windows 11:
 
-| Feature | KB article where the feature was introduced | Feature update that ends temporary control | Notes |
+| Feature | KB article where the feature was introduced | Feature update that ends temporary control | Notes | 
 |---|---|---|---|
 | Touch-optimized taskbar for 2-in-1 devices <!--8092554, WIP.25197-->| [February 28, 2023 - KB5022913](https://support.microsoft.com/topic/february-28-2023-kb5022913-os-build-22621-1344-preview-3e38c0d9-924d-4f3f-b0b6-3bd49b2657b9) | 2023 annual feature update | |
 | Selecting **Uninstall** for a Win32 app from the right-click menu uses the **Installed Apps** page in **Settings** rather than **Programs and Features** under the **Control Panel** <!--8092554, WIP.25300-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | |
