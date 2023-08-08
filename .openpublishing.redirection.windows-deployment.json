@@ -1104,6 +1104,11 @@
       "source_path": "windows/deployment/windows-10-deployment-tools-reference.md",
       "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-deregister-devices.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-exclude-device",
+      "redirect_document_id": true
     }
   ]
 }
