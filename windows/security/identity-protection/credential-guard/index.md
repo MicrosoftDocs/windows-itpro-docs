@@ -2,7 +2,7 @@
 title: Windows Defender Credential Guard overview
 description: Learn about Windows Defender Credential Guard and how it isolates secrets so that only privileged system software can access them.
 ms.date: 08/08/2023
-ms.topic: conceptual
+ms.topic: overview
 ms.collection: 
   - highpri
   - tier1
