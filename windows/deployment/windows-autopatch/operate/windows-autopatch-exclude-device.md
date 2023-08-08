@@ -18,7 +18,7 @@ ms.collection:
 
 To avoid end-user disruption, excluding a device in Windows Autopatch only deletes the Windows Autopatch device record itself. Excluding a device can't delete the Microsoft Intune and/or the Azure Active Directory device records. Microsoft assumes you'll keep managing those devices yourself in some capacity.
 
-When you exclude a device from the Windows Autopatch service, the device is flagged as "excluded" so Windows Autopatch doesn't try to restore the device into the service again, since the exclusion command doesn't trigger device membership removal from the **Windows Autopatch Device Registration** group, or any other Azure AD group, used with Autopatch groups.
+When you exclude a device from the Windows Autopatch service, the device is flagged as **excluded** so Windows Autopatch doesn't try to restore the device into the service again, since the exclusion command doesn't trigger device membership removal from the **Windows Autopatch Device Registration** group, or any other Azure AD group, used with Autopatch groups.
 
 > [!IMPORTANT]
 > The Azure AD team doesn't recommend appending query statements to remove specific device from a dynamic query due to dynamic query performance issues.
