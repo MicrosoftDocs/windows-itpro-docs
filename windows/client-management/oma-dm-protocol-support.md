@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-manage
 author: vinaypamnani-msft
-ms.date: 06/26/2017
+ms.date: 08/08/2023
 appliesto:
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -38,26 +38,26 @@ The following table shows the OMA DM standards that Windows uses.
 
 Common elements are used by other OMA DM element types. The following table lists the OMA DM common elements used to configure the devices. For more information about OMA DM common elements, see "SyncML Representation Protocol Device Management Usage" (OMA-SyncML-DMRepPro-V1_1_2-20030613-A) available from the [OMA website](https://www.openmobilealliance.org/release/DM/V1_1_2-20031209-A/).
 
-|Element|Description|
-|--- |--- |
-|Chal|Specifies an authentication challenge. The server or client can send a challenge to the other if no credentials or inadequate credentials were given in the original request message.|
-|Cmd|Specifies the name of an OMA DM command referenced in a Status element.|
-|CmdID|Specifies the unique identifier for an OMA DM command.|
-|CmdRef|Specifies the ID of the command for which status or results information is being returned. This element takes the value of the CmdID element of the corresponding request message.|
-|Cred|Specifies the authentication credential for the originator of the message.|
-|Final|Indicates that the current message is the last message in the package.|
-|LocName|Specifies the display name in the Target and Source elements, used for sending a user ID for MD5 authentication.|
-|LocURI|Specifies the address of the target or source location. If the address contains a non-alphanumeric character, it must be properly escaped according to the URL encoding standard.|
-|MsgID|Specifies a unique identifier for an OMA DM session message.|
-|MsgRef|Specifies the ID of the corresponding request message. This element takes the value of the request message MsgID element.|
-|RespURI|Specifies the URI that the recipient must use when sending a response to this message.|
-|SessionID|Specifies the identifier of the OMA DM session associated with the containing message.<div class="alert">**Note**<br>  If the server doesn't notify the device that it supports a new version (through SyncApplicationVersion node in the DMClient CSP), the client returns the SessionID in integer in decimal format. If the server supports DM session sync version 2.0, which is used in Windows, the device client returns 2 bytes.</div>|
-|Source|Specifies the message source address.|
-|SourceRef|Specifies the source of the corresponding request message. This element takes the value of the request message Source element and is returned in the Status or Results element.|
-|Target|Specifies the address of the node, in the DM Tree, that is the target of the OMA DM command.|
-|TargetRef|Specifies the target address in the corresponding request message. This element takes the value of the request message Target element and is returned in the Status or Results element.|
-|VerDTD|Specifies the major and minor version identifier of the OMA DM representation protocol specification used to represent the message.|
-|VerProto|Specifies the major and minor version identifier of the OMA DM protocol specification used with the message.|
+| Element | Description |
+|:--|:--|
+| Chal      | Specifies an authentication challenge. The server or client can send a challenge to the other if no credentials or inadequate credentials were given in the original request message. |
+| Cmd       | Specifies the name of an OMA DM command referenced in a Status element. |
+| CmdID     | Specifies the unique identifier for an OMA DM command. |
+| CmdRef    | Specifies the ID of the command for which status or results information is being returned. This element takes the value of the CmdID element of the corresponding request message. |
+| Cred      | Specifies the authentication credential for the originator of the message. |
+| Final     | Indicates that the current message is the last message in the package. |
+| LocName   | Specifies the display name in the Target and Source elements, used for sending a user ID for MD5 authentication. |
+| LocURI    | Specifies the address of the target or source location. If the address contains a non-alphanumeric character, it must be properly escaped according to the URL encoding standard. |
+| MsgID     | Specifies a unique identifier for an OMA DM session message. |
+| MsgRef    | Specifies the ID of the corresponding request message. This element takes the value of the request message MsgID element. |
+| RespURI   | Specifies the URI that the recipient must use when sending a response to this message. |
+| SessionID | Specifies the identifier of the OMA DM session associated with the containing message. If the server doesn't notify the device that it supports a new version (through SyncApplicationVersion node in the DMClient CSP), the client returns the SessionID in integer in decimal format. If the server supports DM session sync version 2.0, which is used in Windows, the device client returns 2 bytes. |
+| Source    | Specifies the message source address. |
+| SourceRef | Specifies the source of the corresponding request message. This element takes the value of the request message Source element and is returned in the Status or Results element. |
+| Target    | Specifies the address of the node, in the DM Tree, that is the target of the OMA DM command. |
+| TargetRef | Specifies the target address in the corresponding request message. This element takes the value of the request message Target element and is returned in the Status or Results element. |
+| VerDTD    | Specifies the major and minor version identifier of the OMA DM representation protocol specification used to represent the message. |
+| VerProto  | Specifies the major and minor version identifier of the OMA DM protocol specification used with the message. |
 
 ## Device management session
 
