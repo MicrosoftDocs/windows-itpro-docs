@@ -33,14 +33,14 @@ Stickers aren't enabled by default. Follow the instructions below to configure y
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
-[!INCLUDE [intune-custom-settings-1](includes/intune-custom-settings-1.md)]
+[!INCLUDE [intune-custom-settings-1](includes/configure/intune-custom-settings-1.md)]
 
 | Setting |
 |--------|
 | <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Stickers/EnableStickers`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
 
-[!INCLUDE [intune-custom-settings-2](includes/intune-custom-settings-2.md)]
-[!INCLUDE [intune-custom-settings-info](includes/intune-custom-settings-info.md)]
+[!INCLUDE [intune-custom-settings-2](includes/configure/intune-custom-settings-2.md)]
+[!INCLUDE [intune-custom-settings-info](includes/configure/intune-custom-settings-info.md)]
 
 > [!TIP]
 > Use the following Graph call to automatically create the custom policy in your tenant without assignments nor scope tags. <sup>[1](#footnote1)</sup>

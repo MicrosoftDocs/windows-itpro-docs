@@ -79,7 +79,7 @@ To use web sign-in with a federated identity provider, your devices must be conf
 
 To configure federated sign-in using Microsoft Intune, [create a custom profile][MEM-1] with the following settings:
 
-[!INCLUDE [intune-custom-settings-1](includes/intune-custom-settings-1.md)]
+[!INCLUDE [intune-custom-settings-1](includes/configure/intune-custom-settings-1.md)]
 
 | Setting |
 |--------|
@@ -121,7 +121,7 @@ To use web sign-in with a federated identity provider, your devices must be conf
 
 To configure federated sign-in using Microsoft Intune, [create a custom profile][MEM-1] with the following settings:
 
-[!INCLUDE [intune-custom-settings-1](includes/intune-custom-settings-1.md)]
+[!INCLUDE [intune-custom-settings-1](includes/configure/intune-custom-settings-1.md)]
 
 | Setting |
 |--------|

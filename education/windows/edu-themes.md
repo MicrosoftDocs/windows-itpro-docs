@@ -23,14 +23,14 @@ Education themes aren't enabled by default. Follow the instructions below to con
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
-[!INCLUDE [intune-custom-settings-1](includes/intune-custom-settings-1.md)]
+[!INCLUDE [intune-custom-settings-1](includes/configure/intune-custom-settings-1.md)]
 
 | Setting |
 |--------|
 | <li> OMA-URI: **`./Vendor/MSFT/Policy/Config/Education/EnableEduThemes`** </li><li>Data type: **Integer** </li><li>Value: **1**</li>|
 
-[!INCLUDE [intune-custom-settings-2](includes/intune-custom-settings-2.md)]
-[!INCLUDE [intune-custom-settings-info](includes/intune-custom-settings-info.md)]
+[!INCLUDE [intune-custom-settings-2](includes/configure/intune-custom-settings-2.md)]
+[!INCLUDE [intune-custom-settings-info](includes/configure/intune-custom-settings-info.md)]
 
 #### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
