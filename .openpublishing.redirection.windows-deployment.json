@@ -1039,6 +1039,11 @@
       "source_path": "windows/deployment/windows-autopilot/index.yml",
       "redirect_url": "/mem/autopilot/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-deregister-devices.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-exclude-device",
+      "redirect_document_id": true
     }
   ]
 }
