@@ -66,6 +66,7 @@ The following table shows the conditions supported in Windows client provisionin
 | ProcessorName | P1 | Supported | String | Use to target settings based on the processor name. |
 | AoAc ("Always On, Always Connected") | P1 | Supported | Boolean | Set the value to **0** (false) or **1** (true). If this condition is TRUE, the system supports the S0 low power idle model. |
 | PowerPlatformRole | P1 | Supported | Enumeration | Indicates the preferred power management profile. Set the value based on the [POWER_PLATFORM_ROLE enumeration](/windows/win32/api/winnt/ne-winnt-power_platform_role).  |
+| SocIdentifier | P1 | Supported | String | Use to target settings based on the Soc Identifier. Available since 25301 OS build version. |
 | Architecture | P1 | Supported | String | Matches the PROCESSOR_ARCHITECTURE environment variable. |
 | Server | P1 | Supported | Boolean | Set the value to **0** (false) or **1** (true) to identify a server. |
 | Region | P1 | Supported | Enumeration | Use to target settings based on country/region, using the 2-digit alpha ISO code per [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). |
