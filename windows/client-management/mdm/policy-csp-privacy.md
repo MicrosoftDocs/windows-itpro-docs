@@ -4,7 +4,7 @@ description: Learn more about the Privacy Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 08/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -15,6 +15,8 @@ ms.topic: reference
 
 <!-- Privacy-Begin -->
 # Policy CSP - Privacy
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- Privacy-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -2934,7 +2936,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!-- LetAppsAccessHumanPresence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.25000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25000] |
 <!-- LetAppsAccessHumanPresence-Applicability-End -->
 
 <!-- LetAppsAccessHumanPresence-OmaUri-Begin -->
@@ -2994,7 +2996,7 @@ This policy setting specifies whether Windows apps can access the human presence
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.25000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25000] |
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessHumanPresence_ForceAllowTheseApps-OmaUri-Begin -->
@@ -3044,7 +3046,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.25000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25000] |
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessHumanPresence_ForceDenyTheseApps-OmaUri-Begin -->
@@ -3094,7 +3096,7 @@ List of semi-colon delimited Package Family Names of Microsoft Store Apps. Liste
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.25000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25000] |
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-Applicability-End -->
 
 <!-- LetAppsAccessHumanPresence_UserInControlOfTheseApps-OmaUri-Begin -->
