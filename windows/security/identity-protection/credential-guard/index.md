@@ -1,7 +1,7 @@
 ---
 title: Windows Defender Credential Guard overview
 description: Learn about Windows Defender Credential Guard and how it isolates secrets so that only privileged system software can access them.
-ms.date: 06/26/2023
+ms.date: 08/08/2023
 ms.topic: conceptual
 ms.collection: 
   - highpri
@@ -89,7 +89,7 @@ Applications prompt and expose credentials to risk if they require:
 - Credential delegation
 - MS-CHAPv2
 
-Applications may cause performance issues when they attempt to hook the isolated Windows Defender Credential Guard process (LSAIso.exe).
+Applications may cause performance issues when they attempt to hook the isolated Windows Defender Credential Guard process `LSAIso.exe`.
 
 Services or protocols that rely on Kerberos, such as file shares or remote desktop, continue to work and aren't affected by Windows Defender Credential Guard.
 
