@@ -2,7 +2,7 @@
 title: Windows Hello for Business Deployment Overview
 description: Use this deployment guide to successfully deploy Windows Hello for Business in an existing environment.
 ms.date: 02/15/2022
-ms.topic: article
+ms.topic: overview
 ---
 # Windows Hello for Business Deployment Overview
 

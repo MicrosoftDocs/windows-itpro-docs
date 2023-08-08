@@ -101,7 +101,7 @@ To configure the cloud Kerberos trust policy:
     > [!IMPORTANT]
     > *Tenant ID* in the OMA-URI must be replaced with the tenant ID for your Azure AD tenant. See [How to find your Azure AD tenant ID][AZ-3] for instructions on looking up your tenant ID.
 
-    :::image type="content" alt-text ="Intune custom-device configuration policy creation" source="./images/hello-cloud-trust-intune.png" lightbox="./images/hello-cloud-trust-intune-large.png":::
+    :::image type="content" alt-text ="Intune custom-device configuration policy creation" source="images/hello-cloud-trust-intune.png" lightbox="images/hello-cloud-trust-intune-large.png":::
 
 1. Assign the policy to a security group that contains as members the devices or users that you want to configure.
 
@@ -147,7 +147,7 @@ The Windows Hello for Business provisioning process begins immediately after a u
 You can determine the status of the prerequisite check by viewing the **User Device Registration** admin log under **Applications and Services Logs** > **Microsoft** > **Windows**.\
 This information is also available using the `dsregcmd /status` command from a console. For more information, see [dsregcmd][AZ-4].
 
-:::image type="content" alt-text="Cloud Kerberos trust prerequisite check in the user device registration log" source="./images/cloud-trust-prereq-check.png" lightbox="./images/cloud-trust-prereq-check.png":::
+:::image type="content" alt-text="Cloud Kerberos trust prerequisite check in the user device registration log" source="images/cloud-trust-prereq-check.png" lightbox="images/cloud-trust-prereq-check.png":::
 
 The cloud Kerberos trust prerequisite check detects whether the user has a partial TGT before allowing provisioning to start. The purpose of this check is to validate whether Azure AD Kerberos is set up for the user's domain and tenant. If Azure AD Kerberos is set up, the user will receive a partial TGT during sign-in with one of their other unlock methods. This check has three states: Yes, No, and Not Tested. The *Not Tested* state is reported if cloud Kerberos trust isn't being enforced by policy or if the device is Azure AD joined.
 

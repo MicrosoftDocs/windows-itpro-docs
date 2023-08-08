@@ -1,22 +1,22 @@
 ---
 title: VPN profile options 
 description: Windows adds Virtual Private Network (VPN) profile options to help manage how users connect. VPNs give users secure remote access to the company network.
-ms.date: 05/17/2018
+ms.date: 08/03/2023
 ms.topic: conceptual
 ---
 
 # VPN profile options
 
-Most of the VPN settings in Windows 10 and Windows 11 can be configured in VPN profiles using Microsoft Intune or Microsoft Configuration Manager. All VPN settings in Windows 10 and Windows 11 can be configured using the **ProfileXML** node in the [VPNv2 configuration service provider (CSP)](/windows/client-management/mdm/vpnv2-csp). 
+Most of the VPN settings in Windows can be configured in VPN profiles using Microsoft Intune or Microsoft Configuration Manager. VPN settings can be configured using the **ProfileXML** node in the [VPNv2 configuration service provider (CSP)](/windows/client-management/mdm/vpnv2-csp).
 
 >[!NOTE]
 >If you're not familiar with CSPs, read [Introduction to configuration service providers (CSPs)](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) first.
 
 The following table lists the VPN settings and whether the setting can be configured in Intune and Configuration Manager, or can only be configured using **ProfileXML**.
 
-| Profile setting | Can be configured in Intune and Configuration Manager | 
-| --- | --- | 
-| Connection type | Yes | 
+| Profile setting | Can be configured in Intune and Configuration Manager |
+| --- | --- |
+| Connection type | Yes |
 | Routing: split-tunnel routes | Yes, except exclusion routes |
 | Routing: forced-tunnel | Yes |
 | Authentication (EAP) | Yes, if connection type is built in |
@@ -33,15 +33,14 @@ The following table lists the VPN settings and whether the setting can be config
 | Traffic filters | Yes |
 | Proxy settings | Yes, by PAC/WPAD file or server and port |
 
-> [!NOTE] 
+> [!NOTE]
 > VPN proxy settings are only used on Force Tunnel Connections. On Split Tunnel Connections, the general proxy settings are used.
 
 The ProfileXML node was added to the VPNv2 CSP to allow users to deploy VPN profile as a single blob. This node is useful for deploying profiles with features that aren't yet supported by MDMs. You can get more examples in the [ProfileXML XSD](/windows/client-management/mdm/vpnv2-profile-xsd) article.
 
-
 ## Sample Native VPN profile
 
-The following sample is a sample Native VPN profile. This blob would fall under the ProfileXML node. 
+The following sample is a sample Native VPN profile. This blob would fall under the ProfileXML node.
 
 ```xml
 <VPNProfile>  

@@ -755,4 +755,4 @@ Health attestation is a key feature of Windows 10 that includes client and cloud
 
 - [Protect derived domain credentials with Credential Guard](/windows/access-protection/credential-guard/credential-guard)
 - [Device Guard deployment guide](/windows/device-security/device-guard/device-guard-deployment-guide)
-- [Trusted Platform Module technology overview](../../information-protection/tpm/trusted-platform-module-overview.md)
+- [Trusted Platform Module technology overview](../../hardware-security/tpm/trusted-platform-module-overview.md)

@@ -1,7 +1,7 @@
 ---
 title: policy health and remediation
 description: Describes what Autopatch does it detects policies in the tenant are either missing or modified to states that affect the service
-ms.date: 05/01/2023
+ms.date: 07/25/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -15,10 +15,7 @@ ms.collection:
   - tier1
 ---
 
-# Policy health and remediation (public preview)
-
-> [!IMPORTANT]
-> This feature is in **public preview**. This feature is being actively developed and may not be complete. You can test and use these features in production environments and provide feedback.
+# Policy health and remediation
 
 Windows Autopatch uses Microsoft Intune policies to set configurations and deliver the service. Windows Autopatch continuously monitors the policies and maintains all configurations related to the operation of the service.
 
@@ -61,7 +58,7 @@ The minimum role required to restore configurations is **Intune Service Administ
 
 There will be an alert for each policy that is missing or has deviated from the service defined values.
 
-## Restore Windows update policies  
+## Restore Windows Update policies  
 
 **To initiate remediation actions for Windows quality update policies:**
 
@@ -83,19 +80,14 @@ There will be an alert for each policy that is missing or has deviated from the 
 
 ## Restore deployment groups  
 
-**To initiate remediation action for missing groups:**
+Windows Autopatch will automatically restore any missing groups that are required by the service. When a missing deployment group is restored, and the policies are also missing, the policies be restored to the deployment groups.
 
-1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-1. Navigate to **Tenant administration** > **Tenant management** > **Actions**.
-1. Select **Restore missing group** to launch the workflow.
-1. Review the message and select **Restore group**.
+If policies are misconfigured or unassigned, admins must restore them. In the Release management blade, the service will raise a Policy error workflow that you must complete to repair Windows Update policies. All other policies must be restored from the Tenant administration blade.
 
-When a missing deployment group is restored, the policies will be reassigned back to the deployment groups. In the Release management blade, the service will raise a Policy Error that you'll need to complete to repair Windows Update policies. Due to the asynchronous run of service detectors, it may take up to four (4) hours for this error to be displayed.
+Due to the asynchronous run of service detectors, it might take up to four (4) hours for this error to be displayed.
 
 > [!NOTE]
-> While Windows Autopatch continuously monitors the policies, all policy alerts are raised within four (4) hours of detection.<p>Alerts will remain active until an IT admin completes the action to restore them to a healthy state.</p>
-
-There are no Autopatch reports for policy alerts and actions at this time.
+> While Windows Autopatch continuously monitors the policies, all policy alerts are raised within four (4) hours of detection.<p>Alerts will remain active until an IT admin completes the action to restore them to a healthy state.</p><p>There are no Autopatch reports for policy alerts and actions at this time.</p>
 
 ## Use audit logs to track actions in Microsoft Intune
 

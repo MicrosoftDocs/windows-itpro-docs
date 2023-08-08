@@ -52,7 +52,7 @@ encrypting the information and keeping the cached credentials in the system's re
 
 ### Best practices
 
-The [Windows security baselines](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines) don't recommend configuring this setting. 
+The [Windows security baselines](../../operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines.md) don't recommend configuring this setting. 
 
 ### Location
 

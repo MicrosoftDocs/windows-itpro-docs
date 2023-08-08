@@ -37,6 +37,7 @@
         "tier2"
       ],
       "breadcrumb_path": "/microsoft-store/breadcrumb/toc.json",
+      "uhfHeaderId": "MSDocsHeader-M365-IT",
       "ms.author": "trudyha",
       "audience": "ITPro",
       "ms.service": "store-for-business",

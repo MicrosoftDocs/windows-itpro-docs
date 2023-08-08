@@ -29,7 +29,7 @@ The **Billing account** page allows you to manage organization information, purc
 
 ## Organization information
 
-We need your business address, email contact, and tax-exemption certificates that apply to your country or locale.
+We need your business address, email contact, and tax-exemption certificates that apply to your country/region or locale.
 
 ### Business address and email contact
 
@@ -46,7 +46,7 @@ We need an email address in case we need to contact you about your Microsoft Sto
 4. Make your updates, and then select **Save**. 
 
 ### Organization tax information
-Taxes for Microsoft Store for Business purchases are determined by your business address. Businesses in these countries can provide their VAT number or local equivalent:
+Taxes for Microsoft Store for Business purchases are determined by your business address. Businesses in these countries/regions can provide their VAT number or local equivalent:
 - Austria
 - Belgium
 - Bulgaria
@@ -102,7 +102,7 @@ If you qualify for tax-exempt status in your market, start a service request to 
 
 You'll need this documentation:
 
-|Country or locale | Documentation |
+|Country/Region or locale | Documentation |
 |------------------|----------------|
 | United States | Sales Tax Exemption Certificate |
 | Canada | Certificate of Exemption (or equivalent letter of authorization) |

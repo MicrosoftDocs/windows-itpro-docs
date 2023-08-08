@@ -2,14 +2,11 @@
 title: List of enlightened Microsoft apps for use with Windows Information Protection (WIP) 
 description: Learn the difference between enlightened and unenlightened apps. Find out which enlightened apps are provided by Microsoft. Learn how to allow-list them.
 ms.reviewer: 
-ms.prod: windows-client
-ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.topic: conceptual
 ms.date: 05/02/2019
-ms.technology: itpro-security
 ---
 
 # List of enlightened Microsoft apps for use with Windows Information Protection (WIP)

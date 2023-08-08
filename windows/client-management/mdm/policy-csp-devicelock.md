@@ -4,7 +4,7 @@ description: Learn more about the DeviceLock Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 08/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -121,7 +121,7 @@ Allow Administrator account lockout This security setting determines whether the
 <!-- AllowIdleReturnWithoutPassword-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowIdleReturnWithoutPassword-Applicability-End -->
 
 <!-- AllowIdleReturnWithoutPassword-OmaUri-Begin -->
@@ -789,7 +789,7 @@ On HoloLens, this timeout is controlled by the device's system sleep timeout, re
 <!-- MaxInactivityTimeDeviceLockWithExternalDisplay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- MaxInactivityTimeDeviceLockWithExternalDisplay-Applicability-End -->
 
 <!-- MaxInactivityTimeDeviceLockWithExternalDisplay-OmaUri-Begin -->

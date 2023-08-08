@@ -9,7 +9,11 @@ items:
   href: protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices.md
 - name: Cryptography and certificate management
   href: cryptography-certificate-mgmt.md
-- name: Windows Security app
+- name: Security policy settings
+  href: ../../threat-protection/security-policy-settings/security-policy-settings.md
+- name: Security auditing
+  href: ../../threat-protection/auditing/security-auditing-overview.md
+- name: Windows Security settings
   href: windows-defender-security-center/windows-defender-security-center.md
   items:
   - name: Virus & threat protection
@@ -26,3 +30,7 @@ items:
     href: windows-defender-security-center\wdsc-device-performance-health.md
   - name: Family options
     href: windows-defender-security-center\wdsc-family-options.md
+  - name: Customize contact information
+    href: windows-defender-security-center\wdsc-customize-contact-information.md
+  - name: Hide notifications
+    href: windows-defender-security-center\wdsc-hide-notifications.md

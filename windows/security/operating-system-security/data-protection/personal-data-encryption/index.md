@@ -16,7 +16,7 @@ ms.date: 03/13/2023
 ### Required
 
 - [Azure AD joined device](/azure/active-directory/devices/concept-azure-ad-join)
-- [Windows Hello for Business Overview](../../../identity-protection/hello-for-business/hello-overview.md)
+- [Windows Hello for Business Overview](../../../identity-protection/hello-for-business/index.md)
 - Windows 11, version 22H2 and later Enterprise and Education editions
 
 ### Not supported with PDE
