@@ -94,7 +94,7 @@ To configure devices using the registry, use the following settings:
 |--|
 | **Key path:** `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard` <br>**Key name:** `EnableVirtualizationBasedSecurity`<br>**Type:** `REG_DWORD`<br>**Value:** `1` (to enable Virtualization Based Security)|
 | **Key path:** `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard` <br>**Key name:** `RequirePlatformSecurityFeatures`<br>**Type:** `REG_DWORD`<br>**Value:**<br>&emsp;`1` (to use Secure Boot)<br>&emsp;`3` (to use Secure Boot and DMA protection) |
-| **Key path:** `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` <br>**Key name:** `LsaCfgFlags`<br>**Type:** `REG_DWORD`</li><li><br>**Value:**&emsp;`1` (to enable Credential Guard with UEFI lock)<br>&emsp;`2` (to enable Credential Guard without lock)|
+| **Key path:** `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` <br>**Key name:** `LsaCfgFlags`<br>**Type:** `REG_DWORD`<br>**Value:**<br>&emsp;`1` (to enable Credential Guard with UEFI lock)<br>&emsp;`2` (to enable Credential Guard without lock)|
 
 Restart the device to enable Credential Guard.
 
