@@ -89,7 +89,7 @@ Windows Server Update Services (WSUS): you set up a WSUS server, which downloads
 You can set up, control, and manage the server and update process with several tools:
 
 - A standalone Windows Server Update Services server operated directly
-- [Configuration Manager](deploy-updates-configmgr.md)
+- Configuration Manager
 - Non-Microsoft tools
 
 For more information, see [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus).
