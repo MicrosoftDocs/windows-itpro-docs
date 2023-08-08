@@ -20,25 +20,6 @@
         - text: Deploy Windows 11 SE using Set up School PCs
           url: https://www.youtube.com/watch?v=Ql2fbiOop7c
 
-  - title: Deploy devices with Set up School PCs
-    linkLists:
-      - linkListType: concept
-        links:
-        - text: What is Set up School PCs?
-          url: set-up-school-pcs-technical.md
-      - linkListType: how-to-guide
-        links:
-        - text: Use the Set up School PCs app
-          url: use-set-up-school-pcs-app.md
-      - linkListType: reference
-        links:
-        - text: Provisioning package settings
-          url: set-up-school-pcs-provisioning-package.md
-      - linkListType: video
-        links:
-        - text: Use the Set up School PCs App
-          url: https://www.youtube.com/watch?v=2ZLup_-PhkA
-
   - title: Configure devices
     linkLists:
       - linkListType: concept

@@ -40,6 +40,8 @@ productDirectory:
       links:
         - url: /education/windows/tutorial-school-deployment/
           text: "Tutorial: deploy and manage Windows devices in a school"
+        - url: use-set-up-school-pcs-app.md
+          text: Deploy devices with Set up School PCs
         - url: /windows/deployment
           text: Learn more about Windows deployment >
 
@@ -58,7 +60,7 @@ productDirectory:
           text: Management functionalities for Surface devices
         - url: /education/windows/get-minecraft-for-education
           text: Get and deploy Minecraft Education
-        - url: 
+        - url: get-minecraft-for-education.md
           text: Configure settings and applications with Microsoft Intune
         - url: /windows/client-management
           text: Learn more about Windows management >
@@ -68,6 +70,10 @@ productDirectory:
       links:
         - url: /windows/configuration/education/windows/federated-sign-in
           text: Configure federated sign-in for Windows devices
+        - url: set-up-school-pcs-provisioning-package.md
+          text: Provisioning package settings
+        - url: https://www.youtube.com/watch?v=2ZLup_-PhkA
+          text: "Video: Use the Set up School PCs App"
 
 additionalContent:
   sections:
