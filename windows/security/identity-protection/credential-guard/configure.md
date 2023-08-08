@@ -398,7 +398,7 @@ bcdedit /set vsmlaunchtype off
 ## Next steps
 
 - Review the advices and sample code for making your environment more secure and robust with Windows Defender Credential Guard in the [Additional mitigations](additional-mitigations.md) article
-- Review [considerations and known issues when using Windows Defender Credential Guard](considerations-known-issues)
+- Review [considerations and known issues when using Windows Defender Credential Guard](considerations-known-issues.md)
 
 <!--links-->
 
