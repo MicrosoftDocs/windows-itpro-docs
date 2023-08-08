@@ -7334,6 +7334,41 @@
       "source_path": "windows/security/zero-trust-windows-device-health.md",
       "redirect_url": "/windows/security/security-foundations/zero-trust-windows-device-health",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/credential-guard/credential-guard.md",
+      "redirect_url": "/windows/security/identity-protection/credential-guard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/credential-guard/credential-guard-considerations.md",
+      "redirect_url": "/windows/security/identity-protection/credential-guard/considerations-known-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/credential-guard/credential-guard-how-it-works.md",
+      "redirect_url": "/windows/security/identity-protection/credential-guard/how-it-works",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/credential-guard/credential-guard-known-issues.md",
+      "redirect_url": "/windows/security/identity-protection/credential-guard/considerations-known-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/credential-guard/credential-guard-manage.md",
+      "redirect_url": "/windows/security/identity-protection/credential-guard/configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/credential-guard/credential-guard-protection-limits.md",
+      "redirect_url": "/windows/security/identity-protection/credential-guard/how-it-works",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/credential-guard/credential-guard-requirements.md",
+      "redirect_url": "/windows/security/identity-protection/credential-guard/index",
+      "redirect_document_id": false
     }
   ]
 }
