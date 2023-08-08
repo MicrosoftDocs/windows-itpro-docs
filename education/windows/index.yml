@@ -68,7 +68,7 @@ productDirectory:
     - title: Learn how to configure Windows
       imageSrc: /media/common/i_config-tools.svg
       links:
-        - url: /windows/configuration/education/windows/federated-sign-in
+        - url: federated-sign-in.md
           text: Configure federated sign-in for Windows devices
         - url: set-up-school-pcs-provisioning-package.md
           text: Provisioning package settings
@@ -77,17 +77,36 @@ productDirectory:
 
 additionalContent:
   sections:
-    - title: More Windows resources
-      items:
+    - title: For developers # < 60 chars (optional)
+      summary: Are you an app developer looking for information about developing solutions on Microsoft Education products? Start here. # < 160 chars (optional)
+    - items:
+        # Card
+        - title: UWP apps for education
+          summary: Learn how to write universal apps for education.
+          url: /windows/uwp/apps-for-education/
+        # Card
+        - title: Take a test API
+          summary: Learn how web applications can use the API to provide a locked down experience for taking tests.
+          url: /windows/uwp/apps-for-education/take-a-test-api
 
-        - title: Windows Server
-          links:
-            - text: Windows Server documentation
-              url: /windows-server
-            - text: What's new in Windows Server 2022?
-              url: /windows-server/get-started/whats-new-in-windows-server-2022
-            - text: Windows Server blog
-              url: https://cloudblogs.microsoft.com/windowsserver/
+        - title: Office dev center
+          summary: Integrate with Office 365 across devices and services to extend Microsoft enterprise-scale compliance and security to students, teachers, and staff in your education app.
+          url: https://developer.microsoft.com/office/
+
+        - title: Data Streamer
+          summary: Bring new STEM experiences into the classroom with real-time data in Excel using Data Streamer. Data Streamer can send data to Excel from a sensor or application.
+          url: /microsoft-365/education/data-streamer
+    - title: For partners # < 60 chars (optional)
+      summary: Looking for resources available to Microsoft Education partners? Start here. # < 160 chars (optional)
+    - items:
+
+        - title: Microsoft Partner Network
+          summary: Discover the latest news and resources for Microsoft Education products, solutions, licensing and readiness.
+          url: https://partner.microsoft.com/explore/education
+
+        - title: Education Partner community Yammer group
+          summary: Sign in with your Microsoft Partner account and join the Education Partner community private group on Yammer.
+          url: https://www.yammer.com/mepn/
 
         - title: Windows product site and blogs
           links:
