@@ -20,7 +20,7 @@ UCClient acts as an individual device's record. It contains data such as the cur
 |---|---|---|---|
 | **AzureADDeviceId** |  [string](/azure/kusto/query/scalar-data-types/string) | `71db1a1a-f1a6-4a25-b88f-79c2f513dae0` | Azure AD Device ID |
 | **AzureADTenantId** |  [string](/azure/kusto/query/scalar-data-types/string) | `69ca04b0-703d-4b3a-9184-c4e3c15d6f5e` | Azure AD Tenant ID |
-| **Country** |  [string](/azure/kusto/query/scalar-data-types/string) | `US` | The last-reported location of device (country), based on IP address. Shown as country code. |
+| **Country** |  [string](/azure/kusto/query/scalar-data-types/string) | `US` | The last-reported location of device (country or region), based on IP address. Shown as country code. |
 | **DeviceFamily** |  [string](/azure/kusto/query/scalar-data-types/string) | `PC, Phone` | The device family such as PC, Phone. |
 | **DeviceName** |  [string](/azure/kusto/query/scalar-data-types/string) | `JohnPC-Contoso` | Client-provided device name |
 | **GlobalDeviceId** |  [string](/azure/kusto/query/scalar-data-types/string) | `g:9832741921341` | The global device identifier |
@@ -34,11 +34,11 @@ UCClient acts as an individual device's record. It contains data such as the cur
 | **OSFeatureUpdateEOSTime** |  [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The end of service date of the feature update currently installed on the device. |
 | **OSFeatureUpdateReleaseTime** |  [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The release date of the feature update currently installed on the device. |
 | **OSFeatureUpdateStatus** |  [string](/azure/kusto/query/scalar-data-types/string) | `InService;EndOfService` | Whether or not the device is on the latest available feature update, for its feature update. |
-| **OSQualityUpdateComplianceStatus** |  [string](/azure/kusto/query/scalar-data-types/string) | `NotCompliant` | Whether or not the device is on the latest quality update being offered by the Windows Update for Business deployment service, else NotApplicable. |
+| **OSQualityUpdateComplianceStatus** |  [string](/azure/kusto/query/scalar-data-types/string) | `NotCompliant` | Whether or not the device is on the latest quality update offered by the Windows Update for Business deployment service, else NotApplicable. |
 | **OSQualityUpdateReleaseTime** |  [datetime](/azure/kusto/query/scalar-data-types/datetime) | `2020-05-14 09:26:03.478039` | The release date of the quality update currently installed on the device. |
 | **OSQualityUpdateStatus** |  [string](/azure/kusto/query/scalar-data-types/string)| `Latest;NotLatest` | Whether or not the device is on the latest available quality update, for its feature update. | 
 | **OSRevisionNumber** |  [int](/azure/kusto/query/scalar-data-types/int) | `836` | The revision, in int format, this device is on. |
-| **OSSecurityUpdateComplianceStatus** |  [string](/azure/kusto/query/scalar-data-types/string) | `NotCompliant` | Whether or not the device is on the latest security update (quality update where the Classification=Security) being offered by the Windows Update for Business deployment service, else NotApplicable. |
+| **OSSecurityUpdateComplianceStatus** |  [string](/azure/kusto/query/scalar-data-types/string) | `NotCompliant` | Whether or not the device is on the latest security update (quality update where the Classification=Security) offered by the Windows Update for Business deployment service, else NotApplicable. |
 | **OSSecurityUpdateStatus** |  [string](/azure/kusto/query/scalar-data-types/string)| `Latest;NotLatest;MultipleSecurityUpdatesMissing` | Whether or not the device is on the latest available security update, for its feature update. |
 | **OSServicingChannel** |  [string](/azure/kusto/query/scalar-data-types/string) | `SAC` | The elected Windows 10 servicing channel of the device. |
 | **OSVersion** |  [string](/azure/kusto/query/scalar-data-types/string) | `1909` | The Windows 10 operating system version currently installed on the device, such as 19H2, 20H1, 20H2. |
