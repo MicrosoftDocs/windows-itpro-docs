@@ -115,6 +115,31 @@ To disable the policy **Disable allowing users to select when a password is requ
    1. Leave the slider for **Allow users to select when a password is required when resuming from connected standby** at the default of **Disabled**
    1. select **Next**
 
+
+!INCLUDE [intune-settings-catalog-1](../../../../../includes/configure/intune-settings-catalog-1.md)]
+
+| Category | Setting name | Value |
+|--|--|--|
+| Device Guard | Credential Guard | Select one of the options:<br>&emsp;- **Enabled with UEFI lock**<br>&emsp;- **Enabled without lock** |
+
+>[!IMPORTANT]
+> If you want to be able to turn off Windows Defender Credential Guard remotely, choose the option **Enabled without lock**.
+
+[!INCLUDE [intune-settings-catalog-2](../../../../includes/configure/intune-settings-catalog-2.md)]
+
+> [!TIP]
+> You can also configure Credential Guard by using an *account protection* profile in endpoint security. For more information, see [Account protection policy settings for endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security-account-protection-profile-settings).
+
+Alternatively, you can configure devices using a [custom policy][INT-1] with the [DeviceGuard Policy CSP][CSP-1].\
+The policy settings are located under: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/`.
+
+| Setting |
+|--|
+| **Setting name**: Turn On Virtualization Based Security<br>**Policy CSP name**: `EnableVirtualizationBasedSecurity` |
+| **Setting name**: Credential Guard Configuration<br>**Policy CSP name**: `LsaCfgFlags` |
+
+
+
 <!--links used in this document-->
 
 [CSP-1]: /windows/client-management/mdm/policy-csp-localpoliciessecurityoptions
