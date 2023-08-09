@@ -54,25 +54,9 @@ Category: `Administrative Templates`
 
 ## Disable kernel-mode crash dumps and live dumps\
 
-`Disable Kernel-Mode Crash Dumps``
-
-Category: `Memory Dump`
-
-`Allow Live Dump`:Block
-`Allow Crash Dump`: Block
-
 ## Disable Windows Error Reporting (WER)/user-mode crash dumps for PDE
 
-**Administrative Templates**, scroll down and expand **Windows Components**
-Under **Windows Components**, scroll down and select **Windows Error Reporting**. Make sure to only select **Windows Error Reporting** and not to expand it
-When the settings for the **Windows Error Reporting** subcategory appear under **Setting name** in the lower pane, select **Disable Windows Error Reporting**, and then select the **X** in the top right corner of the **Settings picker** window to close the window
-Change **Disable Windows Error Reporting** from **Disabled** to **Enabled** by selecting the slider next to the option
-
 ## Disable hibernation
-
-1. Under **Browse by category**, scroll down and select **Power**
-      1. When the settings for the **Power** category appear under **Setting name** in the lower pane, select **Allow Hibernate**, and then select the **X** in the top right corner of the **Settings picker** window to close the window
-   1. Change **Allow Hibernate** from **Allow** to **Block** by selecting the slider next to the option
 
 ## Disable allowing users to select when a password is required when resuming from connected standby for PDE
 
@@ -90,47 +74,20 @@ Because of this undesired outcome, it's recommended to explicitly disable this p
 
 ## Disable allowing users to select when a password is required when resuming from connected standby in Intune
 
-To disable the policy **Disable allowing users to select when a password is required when resuming from connected standby** using Intune, follow the below steps:
-
-1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
-1. In the **Home** screen, select **Devices** in the left pane
-1. In the **Devices | Overview** screen, under **Policy**, select **Configuration Profiles**
-1. In the **Devices | Configuration profiles** screen, make sure **Profiles** is selected at the top, and then select **Create profile**
-1. In the **Create profile** window that opens:
-   1. Under **Platform**, select **Windows 10 and later**
-   1. Under **Profile type**, select **Settings catalog**
-   1. Select **Create** to close the **Create profile** window
-1. The **Create profile** screen will open. In the **Basics** page:
-    1. Next to **Name**, enter **Disable allowing users to select when a password is required when resuming from connected standby**
-    1. Next to **Description**, enter a description
-    1. Select **Next**.
-
-1. In the **Configuration settings** page:
-   1. Select **Add settings**
-   1. In the **Settings picker** window that opens:
-      1. Under **Browse by category**, expand **Administrative Templates**
-      1. Under **Administrative Templates**, scroll down and expand **System**
-      1. Under **System**, scroll down and select **Logon**
-      1. When the settings for the **Logon** subcategory appear under **Setting name** in the lower pane, select **Allow users to select when a password is required when resuming from connected standby**, and then select the **X** in the top right corner of the **Settings picker** window to close the window
-   1. Leave the slider for **Allow users to select when a password is required when resuming from connected standby** at the default of **Disabled**
-   1. select **Next**
-
-
 [!INCLUDE [intune-settings-catalog-1](../../../../../includes/configure/intune-settings-catalog-1.md)]
 
 | Category | Setting name | Value |
 |--|--|--|
-| Device Guard | Credential Guard | Select one of the options:<br>&emsp;- **Enabled with UEFI lock**<br>&emsp;- **Enabled without lock** |
-
->[!IMPORTANT]
-> If you want to be able to turn off Windows Defender Credential Guard remotely, choose the option **Enabled without lock**.
+|`Memory Dump`|`Allow Live Dump`|Block||
+|`Memory Dump`|`Allow Crash Dump`|Block||
+|`Administrative Templates`| `System > Logon` | Select **Allow users to select when a password is required when resuming from connected standby:** <br>&emsp;- **Disabled**|
+|**Power**|**Allow Hibernate**|Change **Allow Hibernate** from **Allow** to **Block** by selecting the slider next to the option|
+|`Administrative Templates`| **Windows Components > Windows Error Reporting** | Change **Disable Windows Error Reporting** from **Disabled** to **Enabled** by selecting the slider next to the option|
 
 [!INCLUDE [intune-settings-catalog-2](../../../../../includes/configure/intune-settings-catalog-2.md)]
 
-> [!TIP]
-> You can also configure Credential Guard by using an *account protection* profile in endpoint security. For more information, see [Account protection policy settings for endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security-account-protection-profile-settings).
+Alternatively, you can configure devices using a [custom policy][INT-1] with the [Policy CSP][CSP-1].\
 
-Alternatively, you can configure devices using a [custom policy][INT-1] with the [DeviceGuard Policy CSP][CSP-1].\
 The policy settings are located under: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/`.
 
 | Setting |
