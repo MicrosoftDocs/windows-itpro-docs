@@ -1,7 +1,9 @@
 items:
 - name: Overview
   href: index.md
-- name: Configure PDE with Intune
+- name: Configure PD`E
+  href: configure.md
+- name: (Old) Configure PDE with Intune
   href: configure-pde-in-intune.md
 - name: Enable Personal Data Encryption (PDE)
   href: intune-enable-pde.md
