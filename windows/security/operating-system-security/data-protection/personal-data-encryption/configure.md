@@ -9,13 +9,9 @@ ms.date: 03/13/2023
 
 This article describes the Personal Data Encryption (PDE) settings and how to configure them via Microsoft Intune or configuration Service Provider (CSP).
 
+## Prerequisites
 
-
-The various required and recommended policies needed for Personal Data Encryption (PDE) can be configured in Intune. The following links for both required and recommended policies contain step by step instructions on how to configure these policies in Intune.
-
-## Required prerequisites
-
-1. [Enable Personal Data Encryption (PDE)](intune-enable-pde.md)
+1. [Enable PDE](#enable-personal-data-encryption-pde)
 1. [Disable Winlogon automatic restart sign-on (ARSO)](intune-disable-arso.md)
 
 ## Security hardening recommendations
@@ -28,51 +24,23 @@ The various required and recommended policies needed for Personal Data Encryptio
 
 ## PDE settings list
 
-## PDE configuration
+The following table lists the available settings for PDE.
 
-### Enable Personal Data Encryption (PDE)
+| Setting name | Description | Details |
+|-|-|-|
+|Enable PDE|By default, Personal Data Encryption (PDE) is not enabled on devices. Before PDE can be used on a device, it must be enabled.| This setting is required.|
+|Disable Winlogon automatic restart sign-on (ARSO)| Winlogon ARSO isn't supported for use with PDE. To use PDE, ARSO must be disabled.| This setting is required.|
+|Disable kernel-mode crash dumps and live dumps for PDE.|Kernel-mode crash dumps and live dumps can potentially cause the keys used by Personal Data Encryption (PDE) to protect content to be exposed. For greatest security, disable kernel-mode crash dumps and live dumps.|This setting is recommended.|
 
-By default, Personal Data Encryption (PDE) is not enabled on devices. Before PDE can be used on a device, it needs to be enabled.  This can be done via a custom OMA-URI policy assigned to the device.
 
 > [!NOTE]
 > Enabling the PDE policy on devices only enables the PDE feature. It does not protect any content. To protect content via PDE, use the [PDE APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager). The PDE APIs can be used to create custom applications and scripts to specify which content to protect and at what level to protect the content. Additionally, the PDE APIs can't be used to protect content until the PDE policy has been enabled.
 
 ## Enable Personal Data Encryption (PDE) in Intune
 
-To enable Personal Data Encryption (PDE) using Intune, follow the below steps:
-
-1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-1. In the **Home** screen, select **Devices** in the left pane
-1. In the **Devices | Overview** screen, under **Policy**, select **Configuration Profiles**
-1. In the **Devices | Configuration profiles** screen, make sure **Profiles** is selected at the top, and then select **Create profile**
-1. In the **Create profile** window that opens:
-   1. Under **Platform**, select **Windows 10 and later**
-   1. Under **Profile type**, select **Templates**
-   1. When the templates appears, under **Template name**, select **Custom**
-   1. Select **Create** to close the **Create profile** window
-1. The **Custom** screen will open. In the **Basics** page:
-   1. Next to **Name**, enter **Personal Data Encryption**
-   1. Next to **Description**, enter a description
-   1. Select **Next**
-1. In **Configuration settings** page:
-   1. Next to **OMA-URI Settings**, select **Add**
-   1. In the **Add Row** window that opens:
-     1. Next to **Name**, enter **Personal Data Encryption**
-     1. Next to **Description**, enter a description
-     1. Next to **OMA-URI**, enter in:
-        **`./User/Vendor/MSFT/PDE/EnablePersonalDataEncryption`**
-     1. Next to **Data type**, select **Integer**
-     1. Next to **Value**, enter in **1**
-     1. Select **Save** to close the **Add Row** window
-   1. Select **Next**
-1. In the **Assignments** page:
-   1. Under **Included groups**, select **Add groups**
-        > [!NOTE]
-        > Make sure to add the correct groups under **Included groups** and not under **Excluded groups**. Accidentally adding the desired device groups under **Excluded groups** will result in those devices being excluded and they won't receive the configuration profile.
-   1. In the **Select groups to include** window that opens, select the groups that the configuration profile should be assigned to, and then select **Select** to close the **Select groups to include** window
-   1. Under **Included groups** > **Groups**, ensure the correct group(s) are selected, and then select **Next**
-1. In **Applicability Rules**, configure if necessary and then select **Next**
-1. In **Review + create** page, review the configuration to make sure everything is configured correctly, and then select **Create**
+**`./User/Vendor/MSFT/PDE/EnablePersonalDataEncryption`**
+**Data type**, select **Integer**
+**Value**, enter in **1**
 
 ### Configure PDE with Microsoft Intune
 
@@ -92,16 +60,7 @@ The policy settings are located under: `./Device/Vendor/MSFT/`.
 
 ## Disable Winlogon automatic restart sign-on (ARSO)
 
-Winlogon automatic restart sign-on (ARSO) isn't supported for use with Personal Data Encryption (PDE). For this reason, in order to use PDE, ARSO needs to be disabled.
 
-To disable ARSO using Intune, follow the below steps:
-
-1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
-1. In the **Home** screen, select **Devices** in the left pane
-1. In the **Devices | Overview** screen, under **Policy**, select **Configuration Profiles**
-1. In the **Devices | Configuration profiles** screen, make sure **Profiles** is selected at the top, and then select **Create profile**
-1. In the **Create profile** window that opens:
-   1. Under **Platform**, select **Windows 10 and later**
    1. Under **Profile type**, select **Templates**
    1. When the templates appear, under **Template name**, select **Administrative templates**
    1. Select **Create** to close the **Create profile** window.
@@ -125,10 +84,9 @@ To disable ARSO using Intune, follow the below steps:
    1. Under **Included groups** > **Groups**, ensure the correct group(s) are selected, and then select **Next**
 1. In **Review + create** page, review the configuration to make sure everything is configured correctly, and then select **Create**
 
-## Additional PDE configurations in Intune
 ## Disable kernel-mode crash dumps and live dumps for PDE
 
-Kernel-mode crash dumps and live dumps can potentially cause the keys used by Personal Data Encryption (PDE) to protect content to be exposed. For greatest security, disable kernel-mode crash dumps and live dumps.
+
 
 To disable kernel-mode crash dumps and live dumps using Intune, follow the below steps:
 
