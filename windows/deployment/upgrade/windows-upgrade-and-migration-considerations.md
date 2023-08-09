@@ -7,7 +7,7 @@ ms.prod: windows-client
 author: frankroj
 ms.topic: article
 ms.technology: itpro-deploy
-ms.date: 10/28/2022
+ms.date: 08/09/2023
 ---
 
 # Windows upgrade and migration considerations
@@ -29,12 +29,15 @@ Windows Easy Transfer is a software wizard for transferring files and settings f
 With Windows Easy Transfer, files and settings can be transferred using a network share, a USB flash drive (UFD), or the Easy Transfer cable. However, you can't use a regular universal serial bus (USB) cable to transfer files and settings with Windows Easy Transfer. An Easy Transfer cable can be purchased on the Web, from your computer manufacturer, or at an electronics store.
 
 > [!NOTE]
+>
 > Windows Easy Transfer [is not available in Windows 10](https://support.microsoft.com/help/4026265/windows-windows-easy-transfer-is-not-available-in-windows-10).
 
 ### Migrate with the User State Migration Tool
 You can use USMT to automate migration during large deployments of the Windows operating system. USMT uses configurable migration rule (.xml) files to control exactly which user accounts, user files, operating system settings, and application settings are migrated and how they're migrated. You can use USMT for both *side-by-side* migrations, where one piece of hardware is being replaced, or *wipe-and-load* (or *refresh*) migrations, when only the operating system is being upgraded.
 
-Note USMT supports devices that are joined to an Active Directory domain. USMT does not support hybrid or AAD joined devices. 
+> [!IMPORTANT]
+>
+> USMT only supports devices that are joined to a local Active Directory domain. USMT doesn't support Azure AD joined devices. 
 
 ## Upgrade and migration considerations
 Whether you're upgrading or migrating to a new version of Windows, you must be aware of the following issues and considerations:
