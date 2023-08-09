@@ -1,7 +1,7 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 08/02/2023
+ms.date: 08/09/2023
 ms.topic: include
 ---
 
@@ -71,7 +71,7 @@ ms.topic: include
 |**[Virtual private network (VPN)](/windows/security/identity-protection/vpn/vpn-guide)**|Yes|Yes|Yes|Yes|
 |**[Virtualization-based security (VBS)](/windows-hardware/design/device-experiences/oem-vbs)**|Yes|Yes|Yes|Yes|
 |**[WiFi Security](https://support.microsoft.com/windows/faster-and-more-secure-wi-fi-in-windows-26177a28-38ed-1a8e-7eca-66f24dc63f09)**|Yes|Yes|Yes|Yes|
-|**[Windows application software development kit (SDK)](/windows/security/security-foundations/certification/windows-platform-common-criteria%23security-and-privacy)**|Yes|Yes|Yes|Yes|
+|**[Windows application software development kit (SDK)](https://developer.microsoft.com/windows/downloads/windows-sdk/)**|Yes|Yes|Yes|Yes|
 |**[Windows Autopatch](/windows/deployment/windows-autopatch/)**|❌|Yes|❌|Yes|
 |**[Windows Autopilot](/windows/deployment/windows-autopilot)**|Yes|Yes|Yes|Yes|
 |**[Windows Defender Application Control (WDAC)](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)**|Yes|Yes|Yes|Yes|
