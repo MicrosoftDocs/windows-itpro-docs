@@ -1,0 +1,59 @@
+{
+  "redirections": [
+    {
+      "source_path": "windows/privacy/basic-level-windows-diagnostic-events-and-fields.md",
+      "redirect_url": "/windows/privacy/required-windows-diagnostic-data-events-and-fields-2004",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/privacy/deploy-data-processor-service-windows.md",
+      "redirect_url": "/windows/privacy/windows-10-and-privacy-compliance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/privacy/gdpr-it-guidance.md",
+      "redirect_url": "/windows/privacy/windows-10-and-privacy-compliance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/privacy/gdpr-win10-whitepaper.md",
+      "redirect_url": "/windows/privacy/windows-10-and-privacy-compliance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/privacy/license-terms-windows-diagnostic-data-for-powershell.md",
+      "redirect_url": "/legal/windows/license-terms-windows-diagnostic-data-for-powershell",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/privacy/manage-windows-1709-endpoints.md",
+      "redirect_url": "/windows/privacy/manage-windows-21h2-endpoints",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/privacy/manage-windows-1803-endpoints.md",
+      "redirect_url": "/windows/privacy/manage-windows-21h2-endpoints",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/privacy/manage-windows-endpoints.md",
+      "redirect_url": "/windows/privacy/manage-windows-2004-endpoints",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/privacy/windows-endpoints-1709-non-enterprise-editions.md",
+      "redirect_url": "/windows/privacy/windows-endpoints-21h1-non-enterprise-editions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/privacy/windows-endpoints-1803-non-enterprise-editions.md",
+      "redirect_url": "/windows/privacy/windows-endpoints-21h1-non-enterprise-editions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/privacy/windows-personal-data-services-configuration.md",
+      "redirect_url": "/windows/privacy/windows-10-and-privacy-compliance",
+      "redirect_document_id": false
+    }
+  ]
+}

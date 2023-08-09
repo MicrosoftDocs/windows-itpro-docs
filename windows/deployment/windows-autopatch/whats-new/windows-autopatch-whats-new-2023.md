@@ -1,7 +1,7 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 06/26/2023 
+ms.date: 08/08/2023 
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
@@ -21,6 +21,36 @@ This article lists new and updated feature releases, and service releases, with 
 
 Minor corrections such as typos, style, or formatting issues aren't listed.
 
+## August 2023
+
+### August feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Exclude a device](../operate/windows-autopatch-exclude-device.md) | Renamed Deregister a device to [Exclude a device](../operate/windows-autopatch-exclude-device.md). Added the [Restore device](../operate/windows-autopatch-exclude-device.md#restore-a-device-or-multiple-devices-previously-excluded) feature |
+| [Device alerts](../operate/windows-autopatch-device-alerts.md) | Added `'InstallSetupBlock'` to the [Alert resolutions section](../operate/windows-autopatch-device-alerts.md#alert-resolutions) |
+
+## July 2023
+
+### July feature releases or updates
+
+| Article | Description |
+| ----- | ----- |
+| [Roles and responsibilities](../overview/windows-autopatch-roles-responsibilities.md) | Updated article to include Windows Autopatch groups |
+| [Windows Autopatch groups overview](../deploy/windows-autopatch-groups-overview.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+| [Manage Windows Autopatch groups](../deploy/windows-autopatch-groups-manage-autopatch-groups.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+| [Customize Windows Update settings](../operate/windows-autopatch-groups-windows-update.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+| [Windows quality updates](../operate/windows-autopatch-groups-windows-quality-update-overview.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+| [Windows feature updates](../operate/windows-autopatch-groups-windows-feature-update-overview.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+| [Windows quality and feature update reports](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+| [Policy health and remediation](../operate/windows-autopatch-policy-health-and-remediation.md) | General Availability<ul><li>[MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+
+### July service releases
+
+| Message center post number | Description |
+| ----- | ----- |
+| [MC628172](https://admin.microsoft.com/adminportal/home#/MessageCenter) | General Availability: New Features in Windows Autopatch |
+
 ## June 2023
 
 ### June feature releases or updates
@@ -36,6 +66,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Message center post number | Description |
 | ----- | ----- |
+| [MC617077](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Windows Autopatch Public Preview: Drivers and Firmware Management |
 | [MC604889](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Expanding Windows Autopatch availability in August 2023 |
 | [MC602590](https://admin.microsoft.com/adminportal/home#/MessageCenter) | June 2023 Windows Autopatch baseline configuration update |
 | [MC591864](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Updated ticket categories to reduce how long it takes to resolve support requests |

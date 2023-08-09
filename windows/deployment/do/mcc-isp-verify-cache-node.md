@@ -3,7 +3,7 @@ title: Verify cache node functionality and monitor health and performance
 manager: aaroncz
 description: How to verify the functionality of a cache node
 ms.prod: windows-client
-author: amyzhou
+author: amymzhou
 ms.author: amyzhou
 ms.topic: article
 ms.date: 12/31/2017

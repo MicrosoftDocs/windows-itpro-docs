@@ -2,15 +2,9 @@ items:
 - name: Manage Windows applications
   href: index.yml
 - name: Application management
-  items: 
-    - name: Apps in Windows client OS
-      items:
-        - name: Common app types
-          href: apps-in-windows-10.md
-        - name: Provisioned apps in Windows client OS
-          href: provisioned-apps-windows-client-os.md
-        - name: System apps in Windows client OS
-          href: system-apps-windows-client-os.md
+  items:
+    - name: Common app types
+      href: apps-in-windows-10.md
     - name: Add features in Windows client
       href: add-apps-and-features.md
     - name: Sideload apps

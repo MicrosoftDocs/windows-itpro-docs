@@ -4,7 +4,7 @@ description: Learn more about the PassportForWork CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 08/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -34,6 +34,7 @@ The following list shows the PassportForWork configuration service provider node
     - [Policies](#devicetenantidpolicies)
       - [DisablePostLogonProvisioning](#devicetenantidpoliciesdisablepostlogonprovisioning)
       - [EnablePinRecovery](#devicetenantidpoliciesenablepinrecovery)
+      - [EnableWindowsHelloProvisioningForSecurityKeys](#devicetenantidpoliciesenablewindowshelloprovisioningforsecuritykeys)
       - [ExcludeSecurityDevices](#devicetenantidpoliciesexcludesecuritydevices)
         - [TPM12](#devicetenantidpoliciesexcludesecuritydevicestpm12)
       - [PINComplexity](#devicetenantidpoliciespincomplexity)
@@ -264,6 +265,55 @@ If the user forgets their PIN, it can be changed to a new PIN using the Windows 
 <!-- Device-{TenantId}-Policies-EnablePinRecovery-Examples-End -->
 
 <!-- Device-{TenantId}-Policies-EnablePinRecovery-End -->
+
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-Begin -->
+#### Device/{TenantId}/Policies/EnableWindowsHelloProvisioningForSecurityKeys
+
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-Applicability-End -->
+
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/PassportForWork/{TenantId}/Policies/EnableWindowsHelloProvisioningForSecurityKeys
+```
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-OmaUri-End -->
+
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-Description-Begin -->
+<!-- Description-Source-DDF -->
+Enable Windows Hello provisioning if users sign-in to their devices with FIDO2 security keys.
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-Description-End -->
+
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-Editable-End -->
+
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | False |
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-DFProperties-End -->
+
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| false (Default) | Disabled. |
+| true | Enabled. |
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-AllowedValues-End -->
+
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-Examples-End -->
+
+<!-- Device-{TenantId}-Policies-EnableWindowsHelloProvisioningForSecurityKeys-End -->
 
 <!-- Device-{TenantId}-Policies-ExcludeSecurityDevices-Begin -->
 #### Device/{TenantId}/Policies/ExcludeSecurityDevices

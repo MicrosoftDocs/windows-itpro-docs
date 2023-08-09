@@ -1,0 +1,164 @@
+{
+  "redirections": [
+    {
+      "source_path": "education/developers.yml",
+      "redirect_url": "/education",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/get-started/change-history-ms-edu-get-started.md",
+      "redirect_url": "/microsoft-365/education/deploy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/get-started/configure-microsoft-store-for-education.md",
+      "redirect_url": "/microsoft-365/education/deploy/microsoft-store-for-education",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/get-started/enable-microsoft-teams.md",
+      "redirect_url": "/microsoft-365/education/deploy/set-up-teams-for-education",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/get-started/finish-setup-and-other-tasks.md",
+      "redirect_url": "/microsoft-365/education/deploy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/get-started/get-started-with-microsoft-education.md",
+      "redirect_url": "/microsoft-365/education/deploy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/get-started/inclusive-classroom-it-admin.md",
+      "redirect_url": "/microsoft-365/education/deploy/inclusive-classroom-it-admin",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/get-started/index.md",
+      "redirect_url": "/education/get-started/get-started-with-microsoft-education",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/get-started/set-up-office365-edu-tenant.md",
+      "redirect_url": "/microsoft-365/education/deploy/create-your-office-365-tenant",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/get-started/set-up-windows-10-education-devices.md",
+      "redirect_url": "/microsoft-365/education/deploy/set-up-windows-10-education-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/get-started/set-up-windows-education-devices.md",
+      "redirect_url": "/microsoft-365/education/deploy/set-up-windows-10-education-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/get-started/use-intune-for-education.md",
+      "redirect_url": "/microsoft-365/education/deploy/use-intune-for-education",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/get-started/use-school-data-sync.md",
+      "redirect_url": "/microsoft-365/education/deploy/school-data-sync",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/itadmins.yml",
+      "redirect_url": "/education",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/partners.yml",
+      "redirect_url": "/education",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/change-history-edu.md",
+      "redirect_url": "/education/windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/change-to-pro-education.md",
+      "redirect_url": "/education/windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/education-scenarios-store-for-business.md",
+      "redirect_url": "/windows/resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/enable-s-mode-on-surface-go-devices.md",
+      "redirect_url": "/windows/deployment/s-mode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/get-minecraft-device-promotion.md",
+      "redirect_url": "/education/windows/get-minecraft-for-education",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/s-mode-switch-to-edu.md",
+      "redirect_url": "/education/windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/school-get-minecraft.md",
+      "redirect_url": "/education/windows/get-minecraft-for-education",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/set-up-school-pcs-shared-pc-mode.md",
+      "redirect_url": "/windows/configuration/set-up-shared-or-guest-pc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/switch-to-pro-education.md",
+      "redirect_url": "/education/windows/change-to-pro-education",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/swithc-to-pro-de.md",
+      "redirect_url": "/education/windows/switch-to-pro-education",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/take-a-test-multiple-pcs.md",
+      "redirect_url": "/education/windows/edu-take-a-test-kiosk-mode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/take-a-test-single-pc.md",
+      "redirect_url": "/education/windows/take-tests-in-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/take-tests-in-windows-10.md",
+      "redirect_url": "/education/windows/take-tests-in-windows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/teacher-get-minecraft.md",
+      "redirect_url": "/education/windows/get-minecraft-for-education",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/test-windows10s-for-edu.md",
+      "redirect_url": "/windows/deployment/s-mode",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/windows-10-pro-to-pro-edu-upgrade.md",
+      "redirect_url": "/education/windows/change-to-pro-education",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "education/windows/windows-automatic-redeployment.md",
+      "redirect_url": "/education/windows/autopilot-reset",
+      "redirect_document_id": false
+    }
+  ]
+}

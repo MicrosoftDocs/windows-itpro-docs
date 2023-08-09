@@ -4,7 +4,7 @@ description: Learn more about the WiFi CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 07/06/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -126,7 +126,6 @@ SSID is the name of network you're connecting to, while Profile name is the name
 |:--|:--|
 | Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
-| Atomic Required | True |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
 <!-- Device-Profile-{SSID}-DFProperties-End -->
 
@@ -485,7 +484,6 @@ SSID is the name of network you're connecting to, while Profile name is the name
 |:--|:--|
 | Format | `node` |
 | Access Type | Add, Delete, Get, Replace |
-| Atomic Required | True |
 | Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
 <!-- User-Profile-{SSID}-DFProperties-End -->
 

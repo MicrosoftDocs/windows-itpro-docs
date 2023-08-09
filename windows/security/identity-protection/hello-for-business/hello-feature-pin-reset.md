@@ -4,7 +4,7 @@ description: Learn how Microsoft PIN reset services enable you to help users rec
 ms.collection: 
   - highpri
   - tier1
-ms.date: 03/10/2023
+ms.date: 07/03/2023
 ms.topic: how-to
 ---
 
@@ -63,13 +63,11 @@ You may find that PIN reset from settings only works post login. Also, the lock 
 - Hybrid Windows Hello for Business deployment
 - Azure AD registered, Azure AD joined, and Hybrid Azure AD joined
 
-
 When non-destructive PIN reset is enabled on a client, a 256-bit AES key is generated locally. The key is added to a user's Windows Hello for Business container and keys as the PIN reset protector. This PIN reset protector is encrypted using a public key retrieved from the Microsoft PIN reset service and then stored on the client for later use during PIN reset. After a user initiates a PIN reset, completes authentication and multi-factor authentication to Azure AD, the encrypted PIN reset protector is sent to the Microsoft PIN reset service, decrypted, and returned to the client. The decrypted PIN reset protector is used to change the PIN used to authorize Windows Hello for Business keys and it's then cleared from memory.
 
 Using Group Policy, Microsoft Intune or a compatible MDM solution, you can configure Windows devices to securely use the **Microsoft PIN Reset Service** which enables users to reset their forgotten PIN without requiring re-enrollment.
 
 >[!IMPORTANT]
-> The Microsoft PIN Reset service only works with **Enterprise Edition** for Windows 10, version 1709 to 1809 and later, and Windows 11. The feature works with **Enterprise Edition** and **Pro** edition with Windows 10, version 1903 and later, Windows 11.
 > The Microsoft PIN Reset service is not currently available in Azure Government.
 
 ### Summary
@@ -165,7 +163,7 @@ You can configure Windows devices to use the **Microsoft PIN Reset Service** usi
 - Value: **True**
 
 >[!NOTE]
-> You must replace `TenantId` with the identifier of your Azure Active Directory tenant. To look up your Tenant ID, see [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/active-directory-how-to-find-tenant) or try the following, ensuring to sign-in with your organization's account::
+> You must replace `TenantId` with the identifier of your Azure Active Directory tenant. To look up your Tenant ID, see [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/how-to-find-tenant) or try the following, ensuring to sign-in with your organization's account::
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization?$select=id

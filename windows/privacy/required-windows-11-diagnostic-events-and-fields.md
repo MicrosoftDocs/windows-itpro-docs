@@ -1983,7 +1983,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Security.CodeIntegrity.State.Current
 
-This event indicates the overall CodeIntegrity Policy state and count of policies, fired on reboot and when policy changes rebootlessly. The data collected with this event is used to help keep Windows secure.
+This event indicates the overall CodeIntegrity Policy state and count of policies, which occur when the device restarts and when policy changes without a restart. The data collected with this event is used to help keep Windows secure.
 
 The following fields are available:
 
@@ -2006,7 +2006,7 @@ The following fields are available:
 
 ### Microsoft.Windows.Security.CodeIntegrity.State.PolicyDetails
 
-This individual policy state event fires once per policy on reboot and whenever any policy change occurs rebootlessly. The data collected with this event is used to help keep Windows secure.
+This individual policy state event occurs once per policy when the device restarts and whenever any policy change occurs without a restart. The data collected with this event is used to help keep Windows secure.
 
 The following fields are available:
 

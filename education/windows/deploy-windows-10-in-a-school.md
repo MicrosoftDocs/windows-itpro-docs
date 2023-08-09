@@ -68,7 +68,7 @@ Office 365 Education allows:
 - Students and faculty to access up to 1 TB of personal cloud storage that users inside and outside the educational institution can share through OneDrive for Business.
 - Teachers to provide collaboration in the classroom through Microsoft SharePoint Online team sites.
 - Students and faculty to use Office 365 Video to manage videos.
-- Students and faculty to use Yammer to collaborate through private social networking.
+- Students and faculty to use Viva Engage to collaborate through private social networking.
 - Students and faculty to access classroom resources from anywhere on any device (including iOS and Android devices).
 
 For more information about Office 365 Education features and a FAQ, go to [Office 365 Education](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans).
@@ -236,7 +236,7 @@ Now that you've created your new Office 365 Education subscription, add the doma
 To make it easier for faculty and students to join your Office 365 Education subscription (or *tenant*), allow them to automatically sign up to your tenant (*automatic tenant join*). In automatic tenant join, when a faculty member or student signs up for Office 365, Office 365 automatically adds (joins) the user to your Office 365 tenant.
 
 > [!NOTE]
-> By default, automatic tenant join is enabled in Office 365 Education, except for certain areas in Europe, the Middle East, and Africa. These countries require opt-in steps to add new users to existing Office 365 tenants. Check your country requirements to determine the automatic tenant join default configuration. Also, if you use Azure AD Connect, then automatic tenant join is disabled.
+> By default, automatic tenant join is enabled in Office 365 Education, except for certain areas in Europe, the Middle East, and Africa. These countries/regions require opt-in steps to add new users to existing Office 365 tenants. Check your country/region requirements to determine the automatic tenant join default configuration. Also, if you use Azure AD Connect, then automatic tenant join is disabled.
 
 Office 365 uses the domain portion of the user’s email address to know which Office 365 tenant to join. For example, if a faculty member or student provides an email address of user@contoso.edu, then Office 365 automatically performs one of the following tasks:
 
