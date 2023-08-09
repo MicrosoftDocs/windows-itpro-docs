@@ -1807,7 +1807,7 @@ This policy setting allows an organization to prevent its devices from showing f
 <!-- DoNotSyncBrowserSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- DoNotSyncBrowserSettings-Applicability-End -->
 
 <!-- DoNotSyncBrowserSettings-OmaUri-Begin -->
