@@ -116,7 +116,7 @@ To disable the policy **Disable allowing users to select when a password is requ
    1. select **Next**
 
 
-!INCLUDE [intune-settings-catalog-1](../../../../../includes/configure/intune-settings-catalog-1.md)]
+[!INCLUDE [intune-settings-catalog-1](../../../../../includes/configure/intune-settings-catalog-1.md)]
 
 | Category | Setting name | Value |
 |--|--|--|
@@ -125,7 +125,7 @@ To disable the policy **Disable allowing users to select when a password is requ
 >[!IMPORTANT]
 > If you want to be able to turn off Windows Defender Credential Guard remotely, choose the option **Enabled without lock**.
 
-[!INCLUDE [intune-settings-catalog-2](../../../../includes/configure/intune-settings-catalog-2.md)]
+[!INCLUDE [intune-settings-catalog-2](../../../../../includes/configure/intune-settings-catalog-2.md)]
 
 > [!TIP]
 > You can also configure Credential Guard by using an *account protection* profile in endpoint security. For more information, see [Account protection policy settings for endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security-account-protection-profile-settings).
