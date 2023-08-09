@@ -1,7 +1,7 @@
 ---
 title: Windows Autopatch groups overview
 description: This article explains what Autopatch groups are
-ms.date: 05/03/2023
+ms.date: 07/20/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -15,10 +15,7 @@ ms.collection:
   - tier1
 ---
 
-# Windows Autopatch groups overview (public preview)
-
-> [!IMPORTANT]
-> Windows Autopatch groups is in **public preview**. This feature is being actively developed and might not be complete. You can test and use these features in production environments and provide feedback.<p>The Windows Autopatch group experience only applies if you’ve opted-in to use Windows Autopatch groups.</p><br>**To opt-in to use Windows Autopatch groups:**<ol><li>Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and select **Devices** from the left navigation menu.</li><li>Under **Windows Autopatch**, select **Release Management**, then select **Autopatch groups (preview)**.</li><li>Review the **[Microsoft Privacy Statement](../overview/windows-autopatch-privacy.md)** and the **[Autopatch groups Public Preview Addendum](../references/windows-autopatch-groups-public-preview-addendum.md)**. If you agree, select the **I have reviewed and agree to the Autopatch groups Public Preview Addendum** checkbox. Then, select **Use preview** to test out Windows Autopatch groups and its bundled feature set. If the **Use preview** option is greyed out, ensure you meet all the [Autopatch group prerequisites](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#autopatch-groups-prerequisites).</li></ol>
+# Windows Autopatch groups overview
 
 As organizations move to a managed-service model where Microsoft manages update processes on their behalf, they’re challenged with having the right representation of their organizational structures followed by their own deployment cadence. Windows Autopatch groups help organizations manage updates in a way that makes sense for their businesses with no extra cost or unplanned disruptions.
 
@@ -113,11 +110,11 @@ Autopatch groups set up the [feature updates for Windows 10 and later policies](
 
 | Policy name | Azure AD group assignment |Feature update version | Rollout options | First deployment ring availability | Final deployment ring availability | Day between deployment rings | Support end date |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
-| Windows Autopatch - DSS Policy [Test] | Windows Autopatch - Test | Windows 10 20H2 | Make update available as soon as possible | N/A | N/A | N/A | May 8, 2023; 7:00PM |
-| Windows Autopatch - DSS Policy [Ring1] | Windows Autopatch - Ring1 | Windows 10 20H2 | Make update available as soon as possible | N/A | N/A | N/A | May 8, 2023; 7:00PM |
-| Windows Autopatch - DSS Policy [Ring2] | Windows Autopatch - Ring2 | Windows 10 20H2 | Make update available as soon as possible | December 14, 2022 | December 21, 2022 | 1 | May 8, 2023; 7:00PM |
-| Windows Autopatch - DSS Policy [Ring3] | Windows Autopatch - Ring3 | Windows 10 20H2 | Make update available as soon as possible | December 15, 2022 | December 29, 2022 | 1 | May 8, 2023; 7:00PM |
-| Windows Autopatch - DSS Policy [Last] | Windows Autopatch - Last | Windows 10 20H2 | Make update available as soon as possible | December 15, 2022 | December 29, 2022 | 1 | May 8, 2023; 7:00PM |
+| Windows Autopatch - DSS Policy [Test] | Windows Autopatch - Test | Windows 10 21H2 | Make update available as soon as possible | N/A | N/A | N/A | June 11, 2024; 1:00AM |
+| Windows Autopatch - DSS Policy [Ring1] | Windows Autopatch - Ring1 | Windows 10 21H2 | Make update available as soon as possible | N/A | N/A | N/A | June 11, 2024; 1:00AM |
+| Windows Autopatch - DSS Policy [Ring2] | Windows Autopatch - Ring2 | Windows 10 21H2 | Make update available as soon as possible | December 14, 2022 | December 21, 2022 | 1 | June 11, 2024; 1:00AM |
+| Windows Autopatch - DSS Policy [Ring3] | Windows Autopatch - Ring3 | Windows 10 21H2 | Make update available as soon as possible | December 15, 2022 | December 29, 2022 | 1 | June 11, 2024; 1:00AM |
+| Windows Autopatch - DSS Policy [Last] | Windows Autopatch - Last | Windows 10 21H2 | Make update available as soon as possible | December 15, 2022 | December 29, 2022 | 1 | June 11, 2024; 1:00AM |
 
 ### About Custom Autopatch groups
 
@@ -242,9 +239,6 @@ Autopatch groups works with the following software update workloads:
 
 - [Windows quality updates](../operate/windows-autopatch-groups-windows-quality-update-overview.md)
 - [Windows feature updates](../operate/windows-autopatch-groups-windows-feature-update-overview.md)
-
-> [!IMPORTANT]
-> [Microsoft Edge](../operate/windows-autopatch-edge.md) and [Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md) are supported through the (classic) service-based deployment rings. Other software update workloads aren’t currently supported.
 
 ### Maximum number of Autopatch groups
 

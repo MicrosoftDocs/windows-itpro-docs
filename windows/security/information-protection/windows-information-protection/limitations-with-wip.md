@@ -1,15 +1,12 @@
 ---
 title: Limitations while using Windows Information Protection (WIP)
 description: This section includes info about the common problems you might encounter while using Windows Information Protection (WIP).
-ms.prod: windows-client
 author: aczechowski
 ms.author: aaroncz
 manager: dougeby
 ms.reviewer: rafals
 ms.topic: conceptual
 ms.date: 04/05/2019
-ms.localizationpriority: medium
-ms.technology: itpro-security
 ---
 
 # Limitations while using Windows Information Protection (WIP)

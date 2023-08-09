@@ -29,7 +29,7 @@ You can purchase products and services from Microsoft Store for Business using y
 - Japan Commercial Bureau (JCB)
 
 > [!NOTE]
-> Not all cards available in all countries. When you add a payment option, Microsoft Store for Business shows which cards are available in your region.
+> Not all cards available in all countries/regions. When you add a payment option, Microsoft Store for Business shows which cards are available in your region.
 
 ## Add a payment method
 

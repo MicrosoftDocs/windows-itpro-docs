@@ -1,7 +1,7 @@
 ---
-title: Windows quality and feature update reports overview with Windows Autopatch Groups experience
+title: Windows quality and feature update reports overview
 description: This article details the types of reports available and info about update device eligibility, device update health, device update trends in Windows Autopatch groups
-ms.date: 05/01/2023
+ms.date: 07/25/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -15,18 +15,16 @@ ms.collection:
   - tier1
 ---
 
-# Windows quality and feature update reports overview: Windows Autopatch groups experience (public preview)
+# Windows quality and feature update reports overview
 
-> [!IMPORTANT]
-> Windows Autopatch groups is in **public preview**. This feature is being actively developed and might not be complete. You can test and use these features in production environments and provide feedback.<p>The Windows Autopatch group experience only applies if you’ve opted-in to use Windows Autopatch groups.</p><br>**To opt-in to use Windows Autopatch groups:**<ol><li>Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and select **Devices** from the left navigation menu.</li><li>Under **Windows Autopatch**, select **Release Management**, then select **Autopatch groups (preview)**.</li><li>Review the **[Microsoft Privacy Statement](../overview/windows-autopatch-privacy.md)** and the **[Autopatch groups Public Preview Addendum](../references/windows-autopatch-groups-public-preview-addendum.md)**. If you agree, select the **I have reviewed and agree to the Autopatch groups Public Preview Addendum** checkbox. Then, select **Use preview** to test out Windows Autopatch groups and its bundled feature set. If the **Use preview** option is greyed out, ensure you meet all the [Autopatch group prerequisites](../deploy/windows-autopatch-groups-manage-autopatch-groups.md#autopatch-groups-prerequisites).</li></ol>
-
-## Windows quality reports
+## Windows quality update reports
 
 The Windows quality reports provide you with information about:
 
-Quality update device readiness
-Device update health
-Device update alerts
+- Quality update device readiness
+- Device update health
+- Device update alerts
+
 Together, these reports provide insight into the quality update state and compliance of Windows devices that are enrolled into Windows Autopatch.
 
 The Windows quality report types are organized into the following focus areas:
@@ -109,4 +107,4 @@ Within each 24-hour reporting period, devices that are Not Ready are reevaluated
 
 ## Data export
 
-Select **Export devices** to export data for each report type. Only selected columns will be exported.
+Select **Export devices** to export data for each report type. Only selected columns are exported.
