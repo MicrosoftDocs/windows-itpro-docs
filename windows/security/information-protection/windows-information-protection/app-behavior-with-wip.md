@@ -3,7 +3,7 @@ title: Unenlightened and enlightened app behavior while using Windows Informatio
 description: Learn how unenlightened and enlightened apps might behave, based on Windows Information Protection (WIP) network policies, app configuration, and other criteria
 author: aczechowski
 ms.author: aaroncz
-manager: dougeby
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 02/26/2019
 ms.reviewer: 
