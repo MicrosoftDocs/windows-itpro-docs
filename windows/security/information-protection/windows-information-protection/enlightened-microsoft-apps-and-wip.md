@@ -4,7 +4,7 @@ description: Learn the difference between enlightened and unenlightened apps. Fi
 ms.reviewer: 
 author: aczechowski
 ms.author: aaroncz
-manager: dougeby
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 05/02/2019
 ---
