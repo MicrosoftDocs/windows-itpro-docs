@@ -29,6 +29,9 @@ Before you begin sign up, ensure you have the following components:
 
 1. **Azure Pay-As-You-Go subscription**: Microsoft Connected Cache is a completely free-of-charge service hosted in Azure. You'll need to have a Pay-As-You-Go subscription in order to onboard to our service. To create a subscription, go to the [Pay-As-You-Go subscription page](https://azure.microsoft.com/offers/ms-azr-0003p/).
 
+   > [!NOTE]
+   > Microsoft Connected Cache is a completely free service for operators. None of the resources created in Azure will incur any charges. However, be aware that any additional services that might be selected as part of the Azure sign-up process might incur charges.
+
 1. **Access to Azure portal**: Ensure you have the credentials needed to access your organization's Azure portal.
 
 1. **Peering DB**: Ensure your organization's [Peering DB](https://www.peeringdb.com/) page is up-to-date and active. Check that the NOC email listed is accurate, and that you have access to this email. 

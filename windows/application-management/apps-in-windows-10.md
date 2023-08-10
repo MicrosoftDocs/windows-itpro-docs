@@ -45,14 +45,15 @@ There are different types of apps that can run on your Windows client devices. T
   - **Windows Presentation Foundation (WPF)**: Using .NET, you can create a WPF desktop app that runs on the device, or create a WPF web app. This app is commonly used by organizations that create line of business (LOB) desktop apps. For more information, see [WPF Application Development](/dotnet/desktop/wpf/app-development).
   - **Windows Forms (WinForm)**: Using .NET, you can create a Windows Forms desktop app that runs on the device, and doesn't require a web browser or internet access. Just like Win32 apps, WinForm apps can access the local hardware and file system of the computer where the app is running. For more information, see [Desktop Guide (Windows Forms .NET)](/dotnet/desktop/winforms/overview).
 
-- **Windows apps**: 
+- **Windows apps**:
 
   > [!TIP]
   > Starting with Windows 10, you can use the **Windows UI Library (WinUI 3)** to create .NET, Win32 desktop, and UWP apps. This library includes native Windows UI controls and other user interface elements familiar to Windows users. For more information, see [Windows UI Library (WinUI)](/windows/apps/winui/).
 
   - **Apps**: All apps installed in `C:\Program Files\WindowsApps`. There are two classes of apps:
 
-    - **Provisioned**: Installed in user account the first time you sign in with a new user account. For a list of some common provisioned apps, see [Provisioned apps installed with the Windows client OS](provisioned-apps-windows-client-os.md).
+    - **Provisioned**: Installed in user account the first time you sign in with a new user account. To get a list of all the provisioned apps, use Windows PowerShell: `Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName` The output lists all the provisioned apps, and their package names. For more information, see [Get-AppxProvisionedPackage](/powershell/module/dism/get-appxprovisionedpackage).
+
     - **Installed**: Installed as part of the OS.
 
   - **Universal Windows Platform (UWP) apps**: These apps run and can be installed on many Windows platforms, including tablets, Microsoft HoloLens, Xbox, and more. All UWP apps are Windows apps. Not all Windows apps are UWP apps.
@@ -63,7 +64,7 @@ There are different types of apps that can run on your Windows client devices. T
 
     For more information, see [Get started developing apps for Windows desktop](/windows/apps/get-started) and [Make your apps great on Windows 11](/windows/apps/get-started/make-apps-great-for-windows).
 
-  - **System apps**: Apps installed in the `C:\Windows\` directory. These apps are part of the Windows OS. For a list of some common system apps, see [System apps installed with the Windows client OS](system-apps-windows-client-os.md).
+  - **System apps**: Apps installed in the `C:\Windows\` directory. These apps are part of the Windows OS. To get a list of all the system apps, use Windows PowerShell: `Get-AppxPackage -PackageTypeFilter Main | ? { $_.SignatureKind -eq "System" } | Sort Name | Format-Table Name, InstallLocation` The output lists all the system apps, and their installation location. For more information, see [Get-AppxPackage](/powershell/module/appx/get-appxpackage).
 
 - **Web apps** and **Progressive web apps (PWA)**: These apps run on a server, and don't run on the end user device. To use these apps, users must use a web browser and have internet access. **Progressive web apps** are designed to work for all users, work with any browser, and work on any platform.
 

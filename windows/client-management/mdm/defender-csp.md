@@ -4,7 +4,7 @@ description: Learn more about the Defender CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 07/06/2023
+ms.date: 08/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -34,7 +34,9 @@ The following list shows the Defender configuration service provider nodes:
     - [ASROnlyPerRuleExclusions](#configurationasronlyperruleexclusions)
     - [DataDuplicationDirectory](#configurationdataduplicationdirectory)
     - [DataDuplicationLocalRetentionPeriod](#configurationdataduplicationlocalretentionperiod)
+    - [DataDuplicationMaximumQuota](#configurationdataduplicationmaximumquota)
     - [DataDuplicationRemoteLocation](#configurationdataduplicationremotelocation)
+    - [DaysUntilAggressiveCatchupQuickScan](#configurationdaysuntilaggressivecatchupquickscan)
     - [DefaultEnforcement](#configurationdefaultenforcement)
     - [DeviceControl](#configurationdevicecontrol)
       - [PolicyGroups](#configurationdevicecontrolpolicygroups)
@@ -44,6 +46,7 @@ The following list shows the Defender configuration service provider nodes:
         - [{RuleId}](#configurationdevicecontrolpolicyrulesruleid)
           - [RuleData](#configurationdevicecontrolpolicyrulesruleidruledata)
     - [DeviceControlEnabled](#configurationdevicecontrolenabled)
+    - [DisableCacheMaintenance](#configurationdisablecachemaintenance)
     - [DisableCpuThrottleOnIdleScans](#configurationdisablecputhrottleonidlescans)
     - [DisableDatagramProcessing](#configurationdisabledatagramprocessing)
     - [DisableDnsOverTcpParsing](#configurationdisablednsovertcpparsing)
@@ -58,20 +61,24 @@ The following list shows the Defender configuration service provider nodes:
     - [DisableSmtpParsing](#configurationdisablesmtpparsing)
     - [DisableSshParsing](#configurationdisablesshparsing)
     - [DisableTlsParsing](#configurationdisabletlsparsing)
+    - [EnableConvertWarnToBlock](#configurationenableconvertwarntoblock)
     - [EnableDnsSinkhole](#configurationenablednssinkhole)
     - [EnableFileHashComputation](#configurationenablefilehashcomputation)
     - [EngineUpdatesChannel](#configurationengineupdateschannel)
+    - [ExcludedIpAddresses](#configurationexcludedipaddresses)
     - [HideExclusionsFromLocalAdmins](#configurationhideexclusionsfromlocaladmins)
     - [HideExclusionsFromLocalUsers](#configurationhideexclusionsfromlocalusers)
     - [IntelTDTEnabled](#configurationinteltdtenabled)
     - [MeteredConnectionUpdates](#configurationmeteredconnectionupdates)
     - [OobeEnableRtpAndSigUpdate](#configurationoobeenablertpandsigupdate)
     - [PassiveRemediation](#configurationpassiveremediation)
+    - [PerformanceModeStatus](#configurationperformancemodestatus)
     - [PlatformUpdatesChannel](#configurationplatformupdateschannel)
     - [RandomizeScheduleTaskTimes](#configurationrandomizescheduletasktimes)
     - [ScanOnlyIfIdleEnabled](#configurationscanonlyifidleenabled)
     - [SchedulerRandomizationTime](#configurationschedulerrandomizationtime)
     - [SecuredDevicesConfiguration](#configurationsecureddevicesconfiguration)
+    - [SecurityIntelligenceLocationUpdateAtScheduledTimeOnly](#configurationsecurityintelligencelocationupdateatscheduledtimeonly)
     - [SecurityIntelligenceUpdatesChannel](#configurationsecurityintelligenceupdateschannel)
     - [SupportLogLocation](#configurationsupportloglocation)
     - [TamperProtection](#configurationtamperprotection)
@@ -306,7 +313,7 @@ This settings controls whether Network Protection is allowed to be configured in
 <!-- Device-Configuration-AllowSwitchToAsyncInspection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Configuration-AllowSwitchToAsyncInspection-Applicability-End -->
 
 <!-- Device-Configuration-AllowSwitchToAsyncInspection-OmaUri-Begin -->
@@ -468,6 +475,45 @@ Define the retention period in days of how much time the evidence data will be k
 
 <!-- Device-Configuration-DataDuplicationLocalRetentionPeriod-End -->
 
+<!-- Device-Configuration-DataDuplicationMaximumQuota-Begin -->
+### Configuration/DataDuplicationMaximumQuota
+
+<!-- Device-Configuration-DataDuplicationMaximumQuota-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+<!-- Device-Configuration-DataDuplicationMaximumQuota-Applicability-End -->
+
+<!-- Device-Configuration-DataDuplicationMaximumQuota-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/DataDuplicationMaximumQuota
+```
+<!-- Device-Configuration-DataDuplicationMaximumQuota-OmaUri-End -->
+
+<!-- Device-Configuration-DataDuplicationMaximumQuota-Description-Begin -->
+<!-- Description-Source-DDF -->
+Defines the maximum data duplication quota in MB that can be collected. When the quota is reached the filter will stop duplicating any data until the service manages to dispatch the existing collected data, thus decreasing the quota again below the maximum.
+<!-- Device-Configuration-DataDuplicationMaximumQuota-Description-End -->
+
+<!-- Device-Configuration-DataDuplicationMaximumQuota-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-DataDuplicationMaximumQuota-Editable-End -->
+
+<!-- Device-Configuration-DataDuplicationMaximumQuota-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Configuration-DataDuplicationMaximumQuota-DFProperties-End -->
+
+<!-- Device-Configuration-DataDuplicationMaximumQuota-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-DataDuplicationMaximumQuota-Examples-End -->
+
+<!-- Device-Configuration-DataDuplicationMaximumQuota-End -->
+
 <!-- Device-Configuration-DataDuplicationRemoteLocation-Begin -->
 ### Configuration/DataDuplicationRemoteLocation
 
@@ -506,6 +552,47 @@ Define data duplication remote location for device control.
 <!-- Device-Configuration-DataDuplicationRemoteLocation-Examples-End -->
 
 <!-- Device-Configuration-DataDuplicationRemoteLocation-End -->
+
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-Begin -->
+### Configuration/DaysUntilAggressiveCatchupQuickScan
+
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-Applicability-End -->
+
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/DaysUntilAggressiveCatchupQuickScan
+```
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-OmaUri-End -->
+
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-Description-Begin -->
+<!-- Description-Source-DDF -->
+Configure how many days can pass before an aggressive quick scan is triggered. The valid interval is [7-60] days. If set to 0, aggressive quick scans will be disabled. By default, the value is set to 25 days.
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-Description-End -->
+
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-Editable-End -->
+
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0,7-60]` |
+| Default Value  | 25 |
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-DFProperties-End -->
+
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-Examples-End -->
+
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-End -->
 
 <!-- Device-Configuration-DefaultEnforcement-Begin -->
 ### Configuration/DefaultEnforcement
@@ -873,6 +960,45 @@ Control Device Control feature.
 
 <!-- Device-Configuration-DeviceControlEnabled-End -->
 
+<!-- Device-Configuration-DisableCacheMaintenance-Begin -->
+### Configuration/DisableCacheMaintenance
+
+<!-- Device-Configuration-DisableCacheMaintenance-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+<!-- Device-Configuration-DisableCacheMaintenance-Applicability-End -->
+
+<!-- Device-Configuration-DisableCacheMaintenance-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/DisableCacheMaintenance
+```
+<!-- Device-Configuration-DisableCacheMaintenance-OmaUri-End -->
+
+<!-- Device-Configuration-DisableCacheMaintenance-Description-Begin -->
+<!-- Description-Source-DDF -->
+Defines whether the cache maintenance idle task will perform the cache maintenance or not.
+<!-- Device-Configuration-DisableCacheMaintenance-Description-End -->
+
+<!-- Device-Configuration-DisableCacheMaintenance-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-DisableCacheMaintenance-Editable-End -->
+
+<!-- Device-Configuration-DisableCacheMaintenance-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Configuration-DisableCacheMaintenance-DFProperties-End -->
+
+<!-- Device-Configuration-DisableCacheMaintenance-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-DisableCacheMaintenance-Examples-End -->
+
+<!-- Device-Configuration-DisableCacheMaintenance-End -->
+
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-Begin -->
 ### Configuration/DisableCpuThrottleOnIdleScans
 
@@ -928,7 +1054,7 @@ Indicates whether the CPU will be throttled for scheduled scans while the device
 <!-- Device-Configuration-DisableDatagramProcessing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Configuration-DisableDatagramProcessing-Applicability-End -->
 
 <!-- Device-Configuration-DisableDatagramProcessing-OmaUri-Begin -->
@@ -1282,7 +1408,7 @@ This setting disables Inbound connection filtering for Network Protection.
 
 <!-- Device-Configuration-DisableLocalAdminMerge-Description-Begin -->
 <!-- Description-Source-DDF -->
-When this value is set to false, it allows a local admin the ability to specify some settings for complex list type that will then merge /override the Preference settings with the Policy settings.
+When this value is set to no, it allows a local admin the ability to specify some settings for complex list type that will then merge /override the Preference settings with the Policy settings.
 <!-- Device-Configuration-DisableLocalAdminMerge-Description-End -->
 
 <!-- Device-Configuration-DisableLocalAdminMerge-Editable-Begin -->
@@ -1304,8 +1430,8 @@ When this value is set to false, it allows a local admin the ability to specify 
 
 | Value | Description |
 |:--|:--|
-| 1 | Disable Local Admin Merge. |
-| 0 (Default) | Enable Local Admin Merge. |
+| 1 | Yes. |
+| 0 (Default) | No. |
 <!-- Device-Configuration-DisableLocalAdminMerge-AllowedValues-End -->
 
 <!-- Device-Configuration-DisableLocalAdminMerge-Examples-Begin -->
@@ -1559,6 +1685,55 @@ This setting disables TLS Parsing for Network Protection.
 
 <!-- Device-Configuration-DisableTlsParsing-End -->
 
+<!-- Device-Configuration-EnableConvertWarnToBlock-Begin -->
+### Configuration/EnableConvertWarnToBlock
+
+<!-- Device-Configuration-EnableConvertWarnToBlock-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-Configuration-EnableConvertWarnToBlock-Applicability-End -->
+
+<!-- Device-Configuration-EnableConvertWarnToBlock-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/EnableConvertWarnToBlock
+```
+<!-- Device-Configuration-EnableConvertWarnToBlock-OmaUri-End -->
+
+<!-- Device-Configuration-EnableConvertWarnToBlock-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting controls whether network protection blocks network traffic instead of displaying a warning.
+<!-- Device-Configuration-EnableConvertWarnToBlock-Description-End -->
+
+<!-- Device-Configuration-EnableConvertWarnToBlock-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-EnableConvertWarnToBlock-Editable-End -->
+
+<!-- Device-Configuration-EnableConvertWarnToBlock-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-EnableConvertWarnToBlock-DFProperties-End -->
+
+<!-- Device-Configuration-EnableConvertWarnToBlock-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 | Warn verdicts are converted to block. |
+| 0 (Default) | Warn verdicts aren't converted to block. |
+<!-- Device-Configuration-EnableConvertWarnToBlock-AllowedValues-End -->
+
+<!-- Device-Configuration-EnableConvertWarnToBlock-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-EnableConvertWarnToBlock-Examples-End -->
+
+<!-- Device-Configuration-EnableConvertWarnToBlock-End -->
+
 <!-- Device-Configuration-EnableDnsSinkhole-Begin -->
 ### Configuration/EnableDnsSinkhole
 
@@ -1709,6 +1884,45 @@ Enable this policy to specify when devices receive Microsoft Defender engine upd
 <!-- Device-Configuration-EngineUpdatesChannel-Examples-End -->
 
 <!-- Device-Configuration-EngineUpdatesChannel-End -->
+
+<!-- Device-Configuration-ExcludedIpAddresses-Begin -->
+### Configuration/ExcludedIpAddresses
+
+<!-- Device-Configuration-ExcludedIpAddresses-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-ExcludedIpAddresses-Applicability-End -->
+
+<!-- Device-Configuration-ExcludedIpAddresses-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/ExcludedIpAddresses
+```
+<!-- Device-Configuration-ExcludedIpAddresses-OmaUri-End -->
+
+<!-- Device-Configuration-ExcludedIpAddresses-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows an administrator to explicitly disable network packet inspection made by wdnisdrv on a particular set of IP addresses.
+<!-- Device-Configuration-ExcludedIpAddresses-Description-End -->
+
+<!-- Device-Configuration-ExcludedIpAddresses-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-ExcludedIpAddresses-Editable-End -->
+
+<!-- Device-Configuration-ExcludedIpAddresses-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Configuration-ExcludedIpAddresses-DFProperties-End -->
+
+<!-- Device-Configuration-ExcludedIpAddresses-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-ExcludedIpAddresses-Examples-End -->
+
+<!-- Device-Configuration-ExcludedIpAddresses-End -->
 
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-Begin -->
 ### Configuration/HideExclusionsFromLocalAdmins
@@ -2008,6 +2222,55 @@ Setting to control automatic remediation for Sense scans.
 
 <!-- Device-Configuration-PassiveRemediation-End -->
 
+<!-- Device-Configuration-PerformanceModeStatus-Begin -->
+### Configuration/PerformanceModeStatus
+
+<!-- Device-Configuration-PerformanceModeStatus-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Device-Configuration-PerformanceModeStatus-Applicability-End -->
+
+<!-- Device-Configuration-PerformanceModeStatus-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/PerformanceModeStatus
+```
+<!-- Device-Configuration-PerformanceModeStatus-OmaUri-End -->
+
+<!-- Device-Configuration-PerformanceModeStatus-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting allows IT admins to configure performance mode in either enabled or disabled mode for managed devices.
+<!-- Device-Configuration-PerformanceModeStatus-Description-End -->
+
+<!-- Device-Configuration-PerformanceModeStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-PerformanceModeStatus-Editable-End -->
+
+<!-- Device-Configuration-PerformanceModeStatus-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-PerformanceModeStatus-DFProperties-End -->
+
+<!-- Device-Configuration-PerformanceModeStatus-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Performance mode is enabled (default). A service restart is required after changing this value. |
+| 1 | Performance mode is disabled. A service restart is required after changing this value. |
+<!-- Device-Configuration-PerformanceModeStatus-AllowedValues-End -->
+
+<!-- Device-Configuration-PerformanceModeStatus-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-PerformanceModeStatus-Examples-End -->
+
+<!-- Device-Configuration-PerformanceModeStatus-End -->
+
 <!-- Device-Configuration-PlatformUpdatesChannel-Begin -->
 ### Configuration/PlatformUpdatesChannel
 
@@ -2101,7 +2364,7 @@ In Microsoft Defender Antivirus, randomize the start time of the scan to any int
 | Value | Description |
 |:--|:--|
 | 1 (Default) | Widen or narrow the randomization period for scheduled scans. Specify a randomization window of between 1 and 23 hours by using the setting SchedulerRandomizationTime. |
-| 0 | Scheduled tasks will begin at a random time within 4 hours after the time specified in Task Scheduler. |
+| 0 | Scheduled tasks won't be randomized. |
 <!-- Device-Configuration-RandomizeScheduleTaskTimes-AllowedValues-End -->
 
 <!-- Device-Configuration-RandomizeScheduleTaskTimes-Examples-Begin -->
@@ -2238,6 +2501,55 @@ Defines what are the devices primary ids that should be secured by Defender Devi
 <!-- Device-Configuration-SecuredDevicesConfiguration-Examples-End -->
 
 <!-- Device-Configuration-SecuredDevicesConfiguration-End -->
+
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-Begin -->
+### Configuration/SecurityIntelligenceLocationUpdateAtScheduledTimeOnly
+
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-Applicability-End -->
+
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/SecurityIntelligenceLocationUpdateAtScheduledTimeOnly
+```
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-OmaUri-End -->
+
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting allows you to configure security intelligence updates according to the scheduler for VDI-configured computers. It's used together with the shared security intelligence location (SecurityIntelligenceLocation).
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-Description-End -->
+
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-Editable-End -->
+
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-DFProperties-End -->
+
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 | If you enable this setting and configure SecurityIntelligenceLocation, updates from the configured location occur only at the previously configured scheduled update time. |
+| 0 (Default) | If you either disable or don't configure this setting, updates occur whenever a new security intelligence update is detected at the location that's specified by SecurityIntelligenceLocation. |
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-AllowedValues-End -->
+
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-Examples-End -->
+
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-End -->
 
 <!-- Device-Configuration-SecurityIntelligenceUpdatesChannel-Begin -->
 ### Configuration/SecurityIntelligenceUpdatesChannel

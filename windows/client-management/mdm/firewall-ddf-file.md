@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 06/02/2023
+ms.date: 08/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -2815,6 +2815,10 @@ The following XML file contains the device description framework (DDF) for the F
           <DFType>
             <DDFName />
           </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.22621</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.0</MSFT:CspVersion>
+          </MSFT:Applicability>
         </DFProperties>
         <Node>
           <NodeName>
@@ -3025,6 +3029,10 @@ The following XML file contains the device description framework (DDF) for the F
               <DFType>
                 <MIME />
               </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.25398</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.0</MSFT:CspVersion>
+              </MSFT:Applicability>
               <MSFT:AllowedValues ValueType="ENUM">
                 <MSFT:Enum>
                   <MSFT:Value>false</MSFT:Value>
@@ -3055,6 +3063,10 @@ The following XML file contains the device description framework (DDF) for the F
               <DFType>
                 <DDFName />
               </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.25398</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.0</MSFT:CspVersion>
+              </MSFT:Applicability>
             </DFProperties>
             <Node>
               <NodeName>EnableFirewall</NodeName>
@@ -3244,6 +3256,10 @@ The following XML file contains the device description framework (DDF) for the F
               <DFType>
                 <DDFName />
               </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.25398</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.0</MSFT:CspVersion>
+              </MSFT:Applicability>
             </DFProperties>
             <Node>
               <NodeName>EnableFirewall</NodeName>
@@ -3433,6 +3449,10 @@ The following XML file contains the device description framework (DDF) for the F
               <DFType>
                 <DDFName />
               </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.25398</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.0</MSFT:CspVersion>
+              </MSFT:Applicability>
             </DFProperties>
             <Node>
               <NodeName>EnableFirewall</NodeName>
@@ -4424,6 +4444,10 @@ This is a string in Security Descriptor Definition Language (SDDL) format..</Des
           <DFType>
             <DDFName />
           </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.22621</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.0</MSFT:CspVersion>
+          </MSFT:Applicability>
         </DFProperties>
         <Node>
           <NodeName>
@@ -4808,6 +4832,10 @@ If not specified - a new rule is disabled by default.</Description>
               <DFType>
                 <MIME />
               </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.25398</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.0</MSFT:CspVersion>
+              </MSFT:Applicability>
               <MSFT:AllowedValues ValueType="Flag">
                 <MSFT:Enum>
                   <MSFT:Value>0x1</MSFT:Value>
