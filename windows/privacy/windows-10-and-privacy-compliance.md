@@ -233,7 +233,7 @@ An administrator can configure privacy-related settings, such as choosing to onl
 
 [Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview) is a cloud service that automates Windows, Microsoft 365 Apps for enterprise, Microsoft Edge, and Microsoft Teams updates to improve security and productivity across your organization. Windows Autopatch reports use Windows diagnostic data for their reporting.
 
-### 5.5 Windows updates reports on Microsoft Intune
+### 5.5 Windows updates reports (in Microsoft Intune)
 
 Microsoft Intune is a cloud-based endpoint management solution. It manages user access and simplifies app and device management across your many devices, including mobile devices, desktop computers, and virtual endpoints. Microsoft Intune includes reports that help you prepare a Windows upgrade or update. For example, [App and driver compatibility reports](/mem/intune/protect/windows-update-compatibility-reports), [Windows driver updates](/mem/intune/protect/windows-driver-updates-overview), and [Autopilot](/autopilot/windows-autopilot). These reports use Windows diagnostic data for their reporting.
 
