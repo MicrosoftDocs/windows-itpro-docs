@@ -81,6 +81,6 @@ Previously, IT admins could use policies (for example, the “Allow commercial d
 
 Starting with the January 2023 preview cumulative update, how you enable the processor configuration option depends on the billing address of the Azure AD tenant to which your devices are joined.
 
-We made this change to help ensure the diagnostic data for all devices in an organization is processed in a consistent way and in the same geographic region, and to help us implement our plan to [store and process EU Data for European enterprise customers in the EU](privacy/eudb/eu-data-boundary-learn).
+We made this change to help ensure the diagnostic data for all devices in an organization is processed in a consistent way and in the same geographic region, and to help us implement our plan to [store and process EU Data for European enterprise customers in the EU](/privacy/eudb/eu-data-boundary-learn).
 
 For more information, see [Enable Windows diagnostic data processor configuration](configure-windows-diagnostic-data-in-your-organization.md#enable-windows-diagnostic-data-processor-configuration).
