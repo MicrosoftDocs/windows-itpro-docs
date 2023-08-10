@@ -4,7 +4,7 @@ description: Learn more and understand the different types of apps that run on W
 author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
-ms.date: 08/04/2023
+ms.date: 02/09/2023
 ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-apps
