@@ -4,7 +4,7 @@ description: Allow enterprise background tasks unrestricted access to computer r
 author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
-ms.date: 08/04/2023
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-apps
