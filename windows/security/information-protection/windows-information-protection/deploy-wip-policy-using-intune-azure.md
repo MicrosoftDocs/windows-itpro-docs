@@ -3,7 +3,7 @@ title: Deploy your Windows Information Protection (WIP) policy using the Azure p
 description: After you've created your Windows Information Protection (WIP) policy, you'll need to deploy it to your organization's enrolled devices.
 author: aczechowski
 ms.author: aaroncz
-manager: dougeby
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 03/05/2019
 ms.reviewer: 

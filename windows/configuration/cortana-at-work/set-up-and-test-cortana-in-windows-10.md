@@ -1,7 +1,7 @@
 ---
 title: Set up and test Cortana in Windows 10, version 2004 and later
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 description: Cortana includes powerful configuration options specifically to optimize unique small to medium-sized business and enterprise environments.
 ms.prod: windows-client
 ms.collection: tier3

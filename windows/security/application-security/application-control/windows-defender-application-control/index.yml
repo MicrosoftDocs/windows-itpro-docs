@@ -33,8 +33,8 @@ landingContent:
         links:
           - text: Using code signing to simplify application control
             url: deployment/use-code-signing-for-better-control-and-protection.md
-          - text: Microsoft's Recommended Blocklist
-            url: design/microsoft-recommended-block-rules.md
+          - text: Applications that can bypass WDAC and how to block them
+            url: design/applications-that-can-bypass-wdac.md
           - text: Microsoft's Recommended Driver Blocklist
             url: design/microsoft-recommended-driver-block-rules.md
           - text: Example WDAC policies

@@ -3,7 +3,7 @@ title: Create a Windows Information Protection (WIP) policy using Microsoft Conf
 description: Microsoft Configuration Manager helps you create and deploy your enterprise data protection (WIP) policy, including letting you choose your protected apps, your WIP-protection level, and how to find enterprise data on the network.
 author: aczechowski
 ms.author: aaroncz
-manager: dougeby
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 02/26/2019
 ---

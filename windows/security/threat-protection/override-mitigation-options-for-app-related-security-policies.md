@@ -4,7 +4,7 @@ description: How to use Group Policy to override individual Process Mitigation O
 ms.prod: windows-client
 author: aczechowski
 ms.author: aaroncz
-manager: dougeby
+manager: aaroncz
 ms.localizationpriority: medium
 ms.technology: itpro-security
 ms.date: 12/31/2017

@@ -4,7 +4,7 @@ description: Learn more about the MixedReality Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 08/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -17,6 +17,8 @@ ms.topic: reference
 # Policy CSP - MixedReality
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- MixedReality-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -538,6 +540,153 @@ Windows Network Connectivity Status Indicator may get a false positive internet-
 
 <!-- DisallowNetworkConnectivityPassivePolling-End -->
 
+<!-- EnableStartMenuSingleHandGesture-Begin -->
+## EnableStartMenuSingleHandGesture
+
+<!-- EnableStartMenuSingleHandGesture-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
+<!-- EnableStartMenuSingleHandGesture-Applicability-End -->
+
+<!-- EnableStartMenuSingleHandGesture-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MixedReality/EnableStartMenuSingleHandGesture
+```
+<!-- EnableStartMenuSingleHandGesture-OmaUri-End -->
+
+<!-- EnableStartMenuSingleHandGesture-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting controls if pinching your thumb and index finger, while looking at the Start icon on your wrist, to open the Start menu is enabled or not.
+<!-- EnableStartMenuSingleHandGesture-Description-End -->
+
+<!-- EnableStartMenuSingleHandGesture-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableStartMenuSingleHandGesture-Editable-End -->
+
+<!-- EnableStartMenuSingleHandGesture-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- EnableStartMenuSingleHandGesture-DFProperties-End -->
+
+<!-- EnableStartMenuSingleHandGesture-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Don't allow pinching your thumb and index finger, while looking at the Start icon on your wrist, to open the Start menu. |
+| 1 (Default) | Allow pinching your thumb and index finger, while looking at the Start icon on your wrist, to open the Start menu. |
+<!-- EnableStartMenuSingleHandGesture-AllowedValues-End -->
+
+<!-- EnableStartMenuSingleHandGesture-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableStartMenuSingleHandGesture-Examples-End -->
+
+<!-- EnableStartMenuSingleHandGesture-End -->
+
+<!-- EnableStartMenuVoiceCommand-Begin -->
+## EnableStartMenuVoiceCommand
+
+<!-- EnableStartMenuVoiceCommand-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
+<!-- EnableStartMenuVoiceCommand-Applicability-End -->
+
+<!-- EnableStartMenuVoiceCommand-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MixedReality/EnableStartMenuVoiceCommand
+```
+<!-- EnableStartMenuVoiceCommand-OmaUri-End -->
+
+<!-- EnableStartMenuVoiceCommand-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting controls if using voice commands to open the Start menu is enabled or not.
+<!-- EnableStartMenuVoiceCommand-Description-End -->
+
+<!-- EnableStartMenuVoiceCommand-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableStartMenuVoiceCommand-Editable-End -->
+
+<!-- EnableStartMenuVoiceCommand-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- EnableStartMenuVoiceCommand-DFProperties-End -->
+
+<!-- EnableStartMenuVoiceCommand-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Using voice commands to open the Start menu is disabled. |
+| 1 (Default) | Using voice commands to open the Start menu is enabled. |
+<!-- EnableStartMenuVoiceCommand-AllowedValues-End -->
+
+<!-- EnableStartMenuVoiceCommand-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableStartMenuVoiceCommand-Examples-End -->
+
+<!-- EnableStartMenuVoiceCommand-End -->
+
+<!-- EnableStartMenuWristTap-Begin -->
+## EnableStartMenuWristTap
+
+<!-- EnableStartMenuWristTap-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
+<!-- EnableStartMenuWristTap-Applicability-End -->
+
+<!-- EnableStartMenuWristTap-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MixedReality/EnableStartMenuWristTap
+```
+<!-- EnableStartMenuWristTap-OmaUri-End -->
+
+<!-- EnableStartMenuWristTap-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting controls if tapping the Star icon on your wrist to open the Start menu is enabled or not.
+<!-- EnableStartMenuWristTap-Description-End -->
+
+<!-- EnableStartMenuWristTap-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableStartMenuWristTap-Editable-End -->
+
+<!-- EnableStartMenuWristTap-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- EnableStartMenuWristTap-DFProperties-End -->
+
+<!-- EnableStartMenuWristTap-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Don't allow tapping the Start icon on your wrist to open the Start menu. |
+| 1 (Default) | Allow tapping the Start icon on your wrist to open the Start menu. |
+<!-- EnableStartMenuWristTap-AllowedValues-End -->
+
+<!-- EnableStartMenuWristTap-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableStartMenuWristTap-Examples-End -->
+
+<!-- EnableStartMenuWristTap-End -->
+
 <!-- EyeTrackingCalibrationPrompt-Begin -->
 ## EyeTrackingCalibrationPrompt
 
@@ -851,6 +1000,153 @@ The following example XML string shows the value to enable this policy:
 <!-- NtpClientEnabled-Examples-End -->
 
 <!-- NtpClientEnabled-End -->
+
+<!-- PreferLogonAsOtherUser-Begin -->
+## PreferLogonAsOtherUser
+
+<!-- PreferLogonAsOtherUser-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
+<!-- PreferLogonAsOtherUser-Applicability-End -->
+
+<!-- PreferLogonAsOtherUser-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MixedReality/PreferLogonAsOtherUser
+```
+<!-- PreferLogonAsOtherUser-OmaUri-End -->
+
+<!-- PreferLogonAsOtherUser-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy configures whether the Sign-In App should prefer showing Other User panel to user.
+<!-- PreferLogonAsOtherUser-Description-End -->
+
+<!-- PreferLogonAsOtherUser-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PreferLogonAsOtherUser-Editable-End -->
+
+<!-- PreferLogonAsOtherUser-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- PreferLogonAsOtherUser-DFProperties-End -->
+
+<!-- PreferLogonAsOtherUser-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- PreferLogonAsOtherUser-AllowedValues-End -->
+
+<!-- PreferLogonAsOtherUser-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PreferLogonAsOtherUser-Examples-End -->
+
+<!-- PreferLogonAsOtherUser-End -->
+
+<!-- RequireStartIconHold-Begin -->
+## RequireStartIconHold
+
+<!-- RequireStartIconHold-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
+<!-- RequireStartIconHold-Applicability-End -->
+
+<!-- RequireStartIconHold-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MixedReality/RequireStartIconHold
+```
+<!-- RequireStartIconHold-OmaUri-End -->
+
+<!-- RequireStartIconHold-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting controls if it's require that the Start icon to be pressed for 2 seconds to open the Start menu.
+<!-- RequireStartIconHold-Description-End -->
+
+<!-- RequireStartIconHold-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RequireStartIconHold-Editable-End -->
+
+<!-- RequireStartIconHold-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- RequireStartIconHold-DFProperties-End -->
+
+<!-- RequireStartIconHold-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Don't require the Start icon to be pressed for 2 seconds. |
+| 1 | Require the Start icon to be pressed for 2 seconds. |
+<!-- RequireStartIconHold-AllowedValues-End -->
+
+<!-- RequireStartIconHold-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RequireStartIconHold-Examples-End -->
+
+<!-- RequireStartIconHold-End -->
+
+<!-- RequireStartIconVisible-Begin -->
+## RequireStartIconVisible
+
+<!-- RequireStartIconVisible-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows Insider Preview |
+<!-- RequireStartIconVisible-Applicability-End -->
+
+<!-- RequireStartIconVisible-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MixedReality/RequireStartIconVisible
+```
+<!-- RequireStartIconVisible-OmaUri-End -->
+
+<!-- RequireStartIconVisible-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting controls if it's required that the Start icon to be looked at when you tap it to open the Start menu.
+<!-- RequireStartIconVisible-Description-End -->
+
+<!-- RequireStartIconVisible-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RequireStartIconVisible-Editable-End -->
+
+<!-- RequireStartIconVisible-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- RequireStartIconVisible-DFProperties-End -->
+
+<!-- RequireStartIconVisible-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Don't require the Start icon to be looked at when you tap it. |
+| 1 | Require the Start icon to be looked at when you tap it. |
+<!-- RequireStartIconVisible-AllowedValues-End -->
+
+<!-- RequireStartIconVisible-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RequireStartIconVisible-Examples-End -->
+
+<!-- RequireStartIconVisible-End -->
 
 <!-- SkipCalibrationDuringSetup-Begin -->
 ## SkipCalibrationDuringSetup

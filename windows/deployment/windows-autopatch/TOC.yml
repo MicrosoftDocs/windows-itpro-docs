@@ -76,7 +76,7 @@
                 href: operate/windows-autopatch-edge.md
               - name: Microsoft Teams
                 href: operate/windows-autopatch-teams.md
-        - name: Windows quality and feature update reports
+        - name: Windows quality and feature update reports overview
           href: operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md
           items:
             - name: Windows quality update reports
@@ -107,8 +107,8 @@
           href: operate/windows-autopatch-manage-driver-and-firmware-updates.md
         - name: Submit a support request
           href: operate/windows-autopatch-support-request.md
-        - name: Deregister a device
-          href: operate/windows-autopatch-deregister-devices.md
+        - name: Exclude a device
+          href: operate/windows-autopatch-exclude-device.md
         - name: Unenroll your tenant
           href: operate/windows-autopatch-unenroll-tenant.md
     - name: References

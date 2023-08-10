@@ -21,9 +21,10 @@ ms.collection:
 
 The Windows quality reports provide you with information about:
 
-Quality update device readiness
-Device update health
-Device update alerts
+- Quality update device readiness
+- Device update health
+- Device update alerts
+
 Together, these reports provide insight into the quality update state and compliance of Windows devices that are enrolled into Windows Autopatch.
 
 The Windows quality report types are organized into the following focus areas:
@@ -106,4 +107,4 @@ Within each 24-hour reporting period, devices that are Not Ready are reevaluated
 
 ## Data export
 
-Select **Export devices** to export data for each report type. Only selected columns will be exported.
+Select **Export devices** to export data for each report type. Only selected columns are exported.
