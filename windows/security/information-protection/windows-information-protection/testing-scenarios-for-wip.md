@@ -4,7 +4,7 @@ description: A list of suggested testing scenarios that you can use to test Wind
 ms.reviewer: 
 author: aczechowski
 ms.author: aaroncz
-manager: dougeby
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 03/05/2019
 ---

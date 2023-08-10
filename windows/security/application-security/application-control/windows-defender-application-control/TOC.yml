@@ -55,8 +55,8 @@
               href: design/create-wdac-policy-using-reference-computer.md
             - name: Create a WDAC deny list policy
               href: design/create-wdac-deny-policy.md
-            - name: Microsoft recommended block rules
-              href: design/microsoft-recommended-block-rules.md
+            - name: Applications that can bypass WDAC and how to block them
+              href: design/applications-that-can-bypass-wdac.md
             - name: Microsoft recommended driver block rules
               href: design/microsoft-recommended-driver-block-rules.md
         - name: Use the WDAC Wizard tool

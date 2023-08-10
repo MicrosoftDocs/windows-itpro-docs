@@ -37,7 +37,7 @@ When the system boots, Pluton hardware initialization is performed by loading th
 
 ![Diagram showing the Microsoft Pluton Firmware load flow](../images/pluton/pluton-firmware-load.png)
 
-[!INCLUDE [microsoft-pluton-security-processor](../../../../includes/licensing/microsoft-pluton-security-processor.md)]
+[!INCLUDE [microsoft-pluton](../../../../includes/licensing/microsoft-pluton.md)]
 
 ## Related topics
 

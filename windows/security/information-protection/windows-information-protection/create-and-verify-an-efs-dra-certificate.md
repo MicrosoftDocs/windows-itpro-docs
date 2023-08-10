@@ -3,7 +3,7 @@ title: Create an EFS Data Recovery Agent certificate
 description: Follow these steps to create, verify, and perform a quick recovery by using an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate.
 author: aczechowski
 ms.author: aaroncz
-manager: dougeby
+manager: aaroncz
 ms.reviewer: rafals
 ms.topic: how-to
 ms.date: 07/15/2022
