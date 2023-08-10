@@ -4,7 +4,7 @@ description: Learn how to sideload line-of-business (LOB) apps in Windows client
 author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
-ms.date: 08/04/2023
+ms.date: 12/07/2017
 ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-apps
