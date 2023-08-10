@@ -16,6 +16,8 @@ appliesto:
   - ✅ <b>Windows 11</b>
 ---
 
+<!-- MAXADO-8138352 -->
+
 # Accessibility information for IT professionals
 
 Microsoft is dedicated to making its products and services accessible and usable for everyone. Windows includes accessibility features that benefit all users. These features make it easier to customize the computer and give users with different abilities options to improve their experience with Windows.
