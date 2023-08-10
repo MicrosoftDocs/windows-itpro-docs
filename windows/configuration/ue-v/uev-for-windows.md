@@ -6,7 +6,7 @@ ms.prod: windows-client
 ms.collection: tier3
 ms.date: 05/02/2017
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.author: aaroncz
 ms.topic: article
 ms.technology: itpro-configure

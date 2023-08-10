@@ -1,19 +1,19 @@
 ---
 author: paolomatarazzo
 ms.author: paoloma
-ms.date: 05/04/2023
+ms.date: 08/02/2023
 ms.topic: include
 ---
 
 ## Windows edition and licensing requirements
 
-The following table lists the Windows editions that support Manage by Mobile Device Management (MDM) and group policy:
+The following table lists the Windows editions that support Secured-core PC firmware protection:
 
 |Windows Pro|Windows Enterprise|Windows Pro Education/SE|Windows Education|
 |:---:|:---:|:---:|:---:|
 |Yes|Yes|Yes|Yes|
 
-Manage by Mobile Device Management (MDM) and group policy license entitlements are granted by the following licenses:
+Secured-core PC firmware protection license entitlements are granted by the following licenses:
 
 |Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
 |:---:|:---:|:---:|:---:|:---:|

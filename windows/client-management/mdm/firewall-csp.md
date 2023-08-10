@@ -4,7 +4,7 @@ description: Learn more about the Firewall CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/15/2023
+ms.date: 08/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -15,6 +15,8 @@ ms.topic: reference
 
 <!-- Firewall-Begin -->
 # Firewall CSP
+
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
 
 <!-- Firewall-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
@@ -3061,7 +3063,7 @@ This value configures the security association idle time, in seconds. Security a
 <!-- Device-MdmStore-HyperVFirewallRules-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-OmaUri-Begin -->
@@ -3100,7 +3102,7 @@ A list of rules controlling traffic through the Windows Firewall for Hyper-V con
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-OmaUri-Begin -->
@@ -3142,7 +3144,7 @@ Unique alpha numeric identifier for the rule. The rule name mustn't include a fo
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Action-OmaUri-Begin -->
@@ -3194,7 +3196,7 @@ Specifies the action the rule enforces:
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Direction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Direction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Direction-OmaUri-Begin -->
@@ -3249,7 +3251,7 @@ If not specified the default is OUT.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Enabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Enabled-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Enabled-OmaUri-Begin -->
@@ -3299,7 +3301,7 @@ If not specified - a new rule is disabled by default.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalAddressRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalAddressRanges-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalAddressRanges-OmaUri-Begin -->
@@ -3351,7 +3353,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalPortRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalPortRanges-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-LocalPortRanges-OmaUri-Begin -->
@@ -3391,7 +3393,7 @@ Comma Separated list of ranges for eg. 100-120,200,300-320. If not specified the
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Name-OmaUri-Begin -->
@@ -3430,7 +3432,7 @@ Specifies the friendly name of the Hyper-V Firewall rule.
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Priority-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Priority-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Priority-OmaUri-Begin -->
@@ -3470,7 +3472,7 @@ This value represents the order of rule enforcement. A lower priority rule is ev
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Profiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Profiles-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Profiles-OmaUri-Begin -->
@@ -3520,7 +3522,7 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Protocol-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Protocol-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Protocol-OmaUri-Begin -->
@@ -3560,7 +3562,7 @@ Specifies the profiles to which the rule belongs: Domain, Private, Public. See [
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemoteAddressRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemoteAddressRanges-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemoteAddressRanges-OmaUri-Begin -->
@@ -3610,7 +3612,7 @@ An IPv6 address range in the format of "start address - end address" with no spa
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemotePortRanges-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemotePortRanges-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-RemotePortRanges-OmaUri-Begin -->
@@ -3650,7 +3652,7 @@ Comma Separated list of ranges for eg. 100-120,200,300-320. If not specified the
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Status-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-Status-OmaUri-Begin -->
@@ -3689,7 +3691,7 @@ Provides information about the specific version of the rule in deployment for mo
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-VMCreatorId-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-VMCreatorId-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVFirewallRules-{FirewallRuleName}-VMCreatorId-OmaUri-Begin -->
@@ -3729,7 +3731,7 @@ This field specifies the VM Creator ID that this rule is applicable to. A NULL G
 <!-- Device-MdmStore-HyperVVMSettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVVMSettings-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-OmaUri-Begin -->
@@ -3768,7 +3770,7 @@ Settings for the Windows Firewall for Hyper-V containers. Each setting applies o
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-OmaUri-Begin -->
@@ -3810,7 +3812,7 @@ VM Creator ID that these settings apply to. Valid format is a GUID.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-AllowHostPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-AllowHostPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-AllowHostPolicyMerge-OmaUri-Begin -->
@@ -3859,7 +3861,7 @@ This value is used as an on/off switch. If this value is true, applicable host f
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultInboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultInboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultInboundAction-OmaUri-Begin -->
@@ -3909,7 +3911,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultOutboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultOutboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DefaultOutboundAction-OmaUri-Begin -->
@@ -3959,7 +3961,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-OmaUri-Begin -->
@@ -3997,7 +3999,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-AllowLocalPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-AllowLocalPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-AllowLocalPolicyMerge-OmaUri-Begin -->
@@ -4047,7 +4049,7 @@ This value is used as an on/off switch. If this value is false, Hyper-V Firewall
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultInboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultInboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultInboundAction-OmaUri-Begin -->
@@ -4097,7 +4099,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultOutboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultOutboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-DefaultOutboundAction-OmaUri-Begin -->
@@ -4147,7 +4149,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-EnableFirewall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-EnableFirewall-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-DomainProfile-EnableFirewall-OmaUri-Begin -->
@@ -4196,7 +4198,7 @@ This value is an on/off switch for the Hyper-V Firewall enforcement.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableFirewall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableFirewall-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableFirewall-OmaUri-Begin -->
@@ -4245,7 +4247,7 @@ This value is an on/off switch for the Hyper-V Firewall. This value controls the
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableLoopback-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableLoopback-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-EnableLoopback-OmaUri-Begin -->
@@ -4294,7 +4296,7 @@ This value is an on/off switch for loopback traffic. This determines if this VM 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-OmaUri-Begin -->
@@ -4332,7 +4334,7 @@ This value is an on/off switch for loopback traffic. This determines if this VM 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-AllowLocalPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-AllowLocalPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-AllowLocalPolicyMerge-OmaUri-Begin -->
@@ -4382,7 +4384,7 @@ This value is used as an on/off switch. If this value is false, Hyper-V Firewall
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultInboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultInboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultInboundAction-OmaUri-Begin -->
@@ -4432,7 +4434,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultOutboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultOutboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-DefaultOutboundAction-OmaUri-Begin -->
@@ -4482,7 +4484,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-EnableFirewall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-EnableFirewall-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PrivateProfile-EnableFirewall-OmaUri-Begin -->
@@ -4531,7 +4533,7 @@ This value is an on/off switch for the Hyper-V Firewall enforcement.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-OmaUri-Begin -->
@@ -4569,7 +4571,7 @@ This value is an on/off switch for the Hyper-V Firewall enforcement.
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-AllowLocalPolicyMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-AllowLocalPolicyMerge-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-AllowLocalPolicyMerge-OmaUri-Begin -->
@@ -4619,7 +4621,7 @@ This value is used as an on/off switch. If this value is false, Hyper-V Firewall
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultInboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultInboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultInboundAction-OmaUri-Begin -->
@@ -4669,7 +4671,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultOutboundAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultOutboundAction-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-DefaultOutboundAction-OmaUri-Begin -->
@@ -4719,7 +4721,7 @@ This value is the action that the Hyper-V Firewall does by default (and evaluate
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-EnableFirewall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview [10.0.25398] |
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-EnableFirewall-Applicability-End -->
 
 <!-- Device-MdmStore-HyperVVMSettings-{VMCreatorId}-PublicProfile-EnableFirewall-OmaUri-Begin -->

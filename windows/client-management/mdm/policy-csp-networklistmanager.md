@@ -4,7 +4,7 @@ description: Learn more about the NetworkListManager Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 08/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -37,7 +37,7 @@ ms.topic: reference
 
 <!-- AllowedTlsAuthenticationEndpoints-Description-Begin -->
 <!-- Description-Source-DDF -->
-List of URLs (seperated by Unicode character 0xF000) to endpoints accessible only within an enterprise's network. If any of the URLs can be resolved over HTTPS, the network would be considered authenticated.
+List of URLs (separated by Unicode character 0xF000) to endpoints accessible only within an enterprise's network. If any of the URLs can be resolved over HTTPS, the network would be considered authenticated.
 <!-- AllowedTlsAuthenticationEndpoints-Description-End -->
 
 <!-- AllowedTlsAuthenticationEndpoints-Editable-Begin -->

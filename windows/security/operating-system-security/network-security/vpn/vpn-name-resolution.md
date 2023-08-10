@@ -1,7 +1,7 @@
 ---
 title: VPN name resolution
 description: Learn how name resolution works when using a VPN connection.
-ms.date: 05/24/2023
+ms.date: 08/03/2023
 ms.topic: conceptual
 ---
 

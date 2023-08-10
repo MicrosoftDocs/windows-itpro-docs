@@ -2,6 +2,14 @@
 
 
 
+## Week of July 31, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 8/3/2023 | [Windows 11 SE Overview](/education/windows/windows-11-se-overview) | modified |
+
+
 ## Week of July 24, 2023
 
 
