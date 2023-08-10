@@ -1,13 +1,13 @@
 ---
 title: How to use Single Sign-On (SSO) over VPN and Wi-Fi connections
 description: Explains requirements to enable Single Sign-On (SSO) to on-premises domain resources over WiFi or VPN connections.
-ms.date: 12/28/2022
+ms.date: 08/03/2023
 ms.topic: how-to
 ---
 
 # How to use Single Sign-On (SSO) over VPN and Wi-Fi connections
 
-This article explains requirements to enable Single Sign-On (SSO) to on-premises domain resources over WiFi or VPN connections. The following scenarios are typically used:
+This article explains requirements to enable Single Sign-On (SSO) to on-premises domain resources over Wi-Fi or VPN connections. The following scenarios are typically used:
 
 - Connecting to a network using Wi-Fi or VPN
 - Use credentials for Wi-Fi or VPN authentication to also authenticate requests to access domain resources, without being prompted for domain credentials
@@ -17,15 +17,15 @@ For example, you want to connect to a corporate network and access an internal w
 The credentials that are used for the connection authentication are placed in *Credential Manager* as the default credentials for the **logon session**. Credential Manager stores credentials that can be used for specific domain resources. These are based on the target name of the resource:
 
 - For VPN, the VPN stack saves its credential as the **session default**
-- For WiFi, Extensible Authentication Protocol (EAP) provides support
+- For Wi-Fi, Extensible Authentication Protocol (EAP) provides support
 
 The credentials are placed in Credential Manager as a *session credential*:
 
 - A *session credential* implies that it is valid for the current user session
-- The credentials are cleaned up when the WiFi or VPN connection is disconnected
+- The credentials are cleaned up when the Wi-Fi or VPN connection is disconnected
 
 > [!NOTE]
-> In Windows 10, version 21H2 and later, the *session credential* is not visible in Credential Manager.
+> In Windows 10, version 21H2 and later, the *session credential* isn't visible in Credential Manager.
 
 For example, if someone using Microsoft Edge tries to access a domain resource, Microsoft Edge has the right Enterprise Authentication capability. This allows [WinInet](/windows/win32/wininet/wininet-reference) to release the credentials that it gets from Credential Manager to the SSP that is requesting it.
 For more information about the Enterprise Authentication capability, see [App capability declarations](/windows/uwp/packaging/app-capability-declarations).

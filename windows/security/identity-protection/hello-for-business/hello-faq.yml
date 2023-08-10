@@ -8,7 +8,7 @@ metadata:
     - highpri
     - tier1
   ms.topic: faq
-  ms.date: 03/09/2023
+  ms.date: 08/03/2023
 
 title: Common questions about Windows Hello for Business
 summary: Windows Hello for Business replaces password sign-in with strong authentication, using an asymmetric key pair. This Frequently Asked Questions (FAQ) article is intended to help you learn more about Windows Hello for Business.

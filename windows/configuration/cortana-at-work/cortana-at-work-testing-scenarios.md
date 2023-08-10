@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 06/28/2021
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.technology: itpro-configure
 ---
 
