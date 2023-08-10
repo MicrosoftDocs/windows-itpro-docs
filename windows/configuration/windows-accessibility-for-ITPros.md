@@ -107,7 +107,7 @@ Windows 11, version 22H2, includes improvements for people with disabilities: sy
 
 ## Assistive technology devices built into Windows
 
-- [Hear text read aloud with Narrator](https://support.microsoft.com/windows/hear-text-read-aloud-with-narrator-040f16c1-4632-b64e-110a-da4a0ac56917). Narrator reads text on your PC screen aloud and describes events, such as notifications or calendar appointments, so you can use your PC without a display.
+- [Hear text read aloud with Narrator](https://support.microsoft.com/windows/hear-text-read-aloud-with-narrator-040f16c1-4632-b64e-110a-da4a0ac56917). Narrator reads text on your PC screen aloud and describes events, such as notifications or calendar appointments, so you can use your PC without a display. Now the user is able to download and install 10 more natural languages.
 
 - [Use voice recognition](https://support.microsoft.com/windows/use-voice-recognition-in-windows-83ff75bd-63eb-0b6c-18d4-6fae94050571).
 
