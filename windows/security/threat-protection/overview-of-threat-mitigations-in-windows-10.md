@@ -5,7 +5,7 @@ ms.prod: windows-client
 ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz
-manager: dougeby
+manager: aaroncz
 ms.technology: itpro-security
 ms.date: 12/31/2017
 ms.topic: article
