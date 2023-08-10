@@ -225,22 +225,15 @@ An administrator can configure privacy-related settings, such as choosing to onl
 >[!Note]
 >The Windows diagnostic data processor configuration is not available for Surface Hub.
 
-### 5.3 Microsoft Managed Desktop
-
-[Microsoft Managed Desktop (MMD)](/managed-desktop/overview/service-plan) is a service that provides your users with a secure modern experience and always keeps devices up to date with the latest versions of Windows Enterprise edition, Microsoft 365 Apps, and Microsoft security services.
-
-> [!NOTE]
-> MMD will transition to end-of-life on July 31, 2024 and is no longer accepting new customers.
-
-### 5.4 Windows Update for Business reports
+### 5.3 Windows Update for Business reports
 
 [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview) is a cloud-based solution that provides information about an organization’s Azure Active Directory-joined devices' compliance with Windows updates. Windows Update for Business reports uses Windows diagnostic data for all of its reporting.
 
-### 5.5 Windows Autopatch
+### 5.4 Windows Autopatch
 
 [Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview) is a cloud service that automates Windows, Microsoft 365 Apps for enterprise, Microsoft Edge, and Microsoft Teams updates to improve security and productivity across your organization. Windows Autopatch reports use Windows diagnostic data for their reporting.
 
-### 5.6 Windows updates reports on Microsoft Intune
+### 5.5 Windows updates reports on Microsoft Intune
 
 Microsoft Intune is a cloud-based endpoint management solution. It manages user access and simplifies app and device management across your many devices, including mobile devices, desktop computers, and virtual endpoints. Microsoft Intune includes reports that help you prepare a Windows upgrade or update. For example, [App and driver compatibility reports](/mem/intune/protect/windows-update-compatibility-reports), [Windows driver updates](/mem/intune/protect/windows-driver-updates-overview), and [Autopilot](/autopilot/windows-autopilot). These reports use Windows diagnostic data for their reporting.
 
