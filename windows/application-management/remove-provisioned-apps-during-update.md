@@ -4,7 +4,7 @@ description: How to keep provisioned apps that were removed from your machine fr
 author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
-ms.date: 08/04/2023
+ms.date: 05/25/2018
 ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-apps
