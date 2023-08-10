@@ -1,8 +1,8 @@
 ---
 title: Learn about the different app types in Windows 10/11 | Microsoft Docs
 description: Learn more and understand the different types of apps that run on Windows 10 and Windows 11. For example, learn more about UWP, WPF, Win32, and Windows Forms apps, including the best way to install these apps.
-author: nicholasswhite
-ms.author: nwhite
+author: aczechowski
+ms.author: aaroncz
 manager: aaroncz
 ms.date: 02/09/2023
 ms.topic: article
