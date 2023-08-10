@@ -99,9 +99,9 @@ Windows deployment can be configured using several different methods that provid
 
 If you want the ability to fully control and apply restrictions on data being sent back to Microsoft, you can use [Configuration Manager](/mem/configmgr/) as a deployment solution. Configuration Manager can be used to deploy a customized boot image using a variety of [deployment methods](/mem/configmgr/osd/get-started/prepare-for-operating-system-deployment). You can further restrict any Configuration Manager-specific diagnostic data from being sent back to Microsoft by turning off this setting as outlined in the instructions [here](/mem/configmgr/core/plan-design/diagnostics/frequently-asked-questions).
 
-Alternatively, your administrators can also choose to use Windows Autopilot. Autopilot lessens the overall burden of deployment while allowing administrators to fully customize the out-of-box experience. However, since Windows Autopilot is a cloud-based solution, administrators should be aware that a minimal set of device identifiers are sent back to Microsoft during initial device boot up. This device-specific information is used to identify the device so that it can receive the administrator-configured Autopilot profile and policies.
+Alternatively, your administrators can also choose to use Windows Autopilot. Windows Autopilot lessens the overall burden of deployment while allowing administrators to fully customize the out-of-box experience. However, since Windows Autopilot is a cloud-based solution, administrators should be aware that a minimal set of device identifiers are sent back to Microsoft during initial device boot up. This device-specific information is used to identify the device so that it can receive the administrator-configured Windows Autopilot profile and policies.
 
-You can use the following articles to learn more about Autopilot and how to use Autopilot to deploy Windows:
+You can use the following articles to learn more about Windows Autopilot and how to use Windows Autopilot to deploy Windows:
 
 - [Overview of Windows Autopilot](/windows/deployment/windows-Autopilot/windows-Autopilot)
 - [Windows Autopilot deployment process](/windows/deployment/windows-Autopilot/deployment-process)
@@ -235,7 +235,7 @@ An administrator can configure privacy-related settings, such as choosing to onl
 
 ### 5.5 Windows updates reports (in Microsoft Intune)
 
-Microsoft Intune is a cloud-based endpoint management solution. It manages user access and simplifies app and device management across your many devices, including mobile devices, desktop computers, and virtual endpoints. Microsoft Intune includes reports that help you prepare a Windows upgrade or update. For example, [App and driver compatibility reports](/mem/intune/protect/windows-update-compatibility-reports), [Windows driver updates](/mem/intune/protect/windows-driver-updates-overview), and [Autopilot](/autopilot/windows-autopilot). These reports use Windows diagnostic data for their reporting.
+Microsoft Intune is a cloud-based endpoint management solution. It manages user access and simplifies app and device management across your many devices, including mobile devices, desktop computers, and virtual endpoints. Microsoft Intune includes reports that help you prepare a Windows upgrade or update. For example, [App and driver compatibility reports](/mem/intune/protect/windows-update-compatibility-reports), [Windows driver updates](/mem/intune/protect/windows-driver-updates-overview), and [Windows Autopilot](/autopilot/windows-autopilot). These reports use Windows diagnostic data for their reporting.
 
 ## Additional Resources
 
