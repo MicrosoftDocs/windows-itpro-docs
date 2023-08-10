@@ -1,7 +1,7 @@
 ---
 title: Configure Cortana in Windows 10 and Windows 11
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 description: Cortana includes powerful configuration options specifically to optimize for unique small to medium-sized business and for enterprise environments.
 ms.prod: windows-client
 ms.collection: tier3

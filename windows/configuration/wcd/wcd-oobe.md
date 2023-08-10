@@ -1,7 +1,7 @@
 ---
 title: OOBE (Windows 10)
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 description: This section describes the OOBE settings that you can configure in provisioning packages for Windows 10 using Windows Configuration Designer.
 ms.prod: windows-client
 author: aczechowski

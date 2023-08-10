@@ -4,7 +4,7 @@ description: Learn about an approach to collect events from devices in your orga
 ms.prod: windows-client
 author: aczechowski
 ms.author: aaroncz
-manager: dougeby
+manager: aaroncz
 ms.date: 02/28/2019
 ms.localizationpriority: medium
 ms.technology: itpro-security
