@@ -4,7 +4,7 @@ description: Learn how to add Windows 10 and Windows 11 optional features using 
 author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
-ms.date: 08/04/2023
+ms.date: 08/30/2021
 ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-apps
