@@ -357,6 +357,9 @@ For Windows devices with diagnostic data turned on and that are joined to an [Az
 
 *(Additional licensing requirements may apply to use these services.)*
 
+> [!NOTE]
+> Microsoft Managed Desktop will transition to end-of-life on July 31, 2024 and is no longer accepting new customers.
+
 If you don’t sign up for any of these enterprise services, Microsoft will act as controller for the diagnostic data.
 
 ### Enabling Windows diagnostic data processor configuration on older versions of Windows
