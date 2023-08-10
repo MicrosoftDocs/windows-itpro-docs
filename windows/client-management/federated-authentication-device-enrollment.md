@@ -63,10 +63,10 @@ After the device gets a response from the server, the device sends a POST reques
 
 The following logic is applied:
 
-1. The device first tries HTTPS. If the server cert isn't trusted by the device, the HTTPS fails.
+1. The device first tries HTTPS. If the device doesn't trust the server cert, the HTTPS attempt fails.
 1. If that fails, the device tries HTTP to see whether it's redirected:
-   - If the device isn't redirected, it prompts the user for the server address.
-   - If the device is redirected, it prompts the user to allow the redirect.
+   - If the device isn't redirected, the user is prompted for the server address.
+   - If the device is redirected, the user is prompted to allow the redirect.
 
 The following example shows a request via an HTTP POST command to the discovery web service given `user@contoso.com` as the email address
 
@@ -116,13 +116,13 @@ The following example shows the discovery service request.
 The discovery response is in the XML format and includes the following fields:
 
 - Enrollment service URL (EnrollmentServiceUrl) - Specifies the URL of the enrollment endpoint that is exposed by the management service. The device should call this URL after the user has been authenticated. This field is mandatory.
-- Authentication policy (AuthPolicy) - Indicates what type of authentication is required. For the MDM server, OnPremise is the supported value, which means that the user will be authenticated when calling the management service URL. This field is mandatory.
+- Authentication policy (AuthPolicy) - Indicates what type of authentication is required. For the MDM server, OnPremise is the supported value, which means that the user is authenticated when calling the management service URL. This field is mandatory.
 - In Windows, Federated is added as another supported value. This addition allows the server to use the Web Authentication Broker to perform customized user authentication, and term of usage acceptance.
 
 > [!NOTE]
 > The HTTP server response must not set Transfer-Encoding to Chunked; it must be sent as one message.
 
-When authentication policy is set to be Federated, Web Authentication Broker (WAB) will be used by the enrollment client to get a security token. The WAB start page URL is provided by the discovery service in the response message. The enrollment client will call the WAB API within the response message to start the WAB process. WAB pages are server hosted web pages. The server should build those pages to fit the device screen nicely and be as consistent as possible to other builds in the MDM enrollment UI. The opaque security token that is returned from WAB as an endpage will be used by the enrollment client as the device security secret during the client certificate enrollment request call.
+When authentication policy is set to be Federated, Web Authentication Broker (WAB) is used by the enrollment client to get a security token. The WAB start page URL is provided by the discovery service in the response message. The enrollment client calls the WAB API within the response message to start the WAB process. WAB pages are server hosted web pages. The server should build those pages to fit the device screen nicely and be as consistent as possible to other builds in the MDM enrollment UI. The opaque security token that is returned from WAB as an endpage is used by the enrollment client as the device security secret during the client certificate enrollment request call.
 
 > [!NOTE]
 > Instead of relying on the user agent string that is passed during authentication to get information, such as the OS version, use the following guidance:
@@ -139,7 +139,7 @@ A new XML tag, **AuthenticationServiceUrl**, is introduced in the DiscoveryRespo
 The following are the explicit requirements for the server.
 
 - The `<DiscoveryResponse>``<AuthenticationServiceUrl>` element must support HTTPS.
-- The authentication server must use a device trusted root certificate. Otherwise, the WAP call will fail.
+- The authentication server must use a device trusted root certificate. Otherwise, the WAP call fails.
 - WP doesn't support Windows Integrated Authentication (WIA) for ADFS during WAB authentication. ADFS 2012 R2 if used needs to be configured to not attempt WIA for Windows device.
 
 The enrollment client issues an HTTPS request as follows:
@@ -148,8 +148,8 @@ The enrollment client issues an HTTPS request as follows:
 AuthenticationServiceUrl?appru=<appid>&amp;login_hint=<User Principal Name>
 ```
 
-- `<appid>` is of the form ms-app://string
-- `<User Principal Name>` is the name of the enrolling user, for example, user@constoso.com as input by the user in an enrollment sign-in page. The value of this attribute serves as a hint that can be used by the authentication server as part of the authentication.
+- `<appid>` is of the form `ms-app://string`
+- `<User Principal Name>` is the name of the enrolling user, for example, user@constoso.com as input by the user in an enrollment sign-in page. The value of this attribute serves as a hint that is used by the authentication server as part of the authentication.
 
 After authentication is complete, the auth server should return an HTML form document with a POST method action of appid identified in the query string parameter.
 
@@ -183,7 +183,7 @@ Content-Length: 556
 </html>
 ```
 
-The server has to send a POST to a redirect URL of the form ms-app://string (the URL scheme is ms-app) as indicated in the POST method action. The security token value is the base64-encoded string `http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\#base64binary` contained in the `<wsse:BinarySecurityToken>` EncodingType attribute. Windows does the binary encode when it sends it back to enrollment server, in the form it's just HTML encoded. This string is opaque to the enrollment client; the client doesn't interpret the string.
+The server has to send a POST to a redirect URL of the form `ms-app://string` (the URL scheme is ms-app) as indicated in the POST method action. The security token value is the base64-encoded string `http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd\#base64binary` contained in the `<wsse:BinarySecurityToken>` EncodingType attribute. Windows does the binary encode when it sends it back to enrollment server, in the form its just HTML encoded. This string is opaque to the enrollment client; the client doesn't interpret the string.
 
 The following example shows a response received from the discovery web service that requires authentication via WAB.
 
@@ -371,7 +371,7 @@ This web service implements the MS-WSTEP protocol. It processes the RequestSecur
 
 The RequestSecurityToken (RST) must have the user credential and a certificate request. The user credential in an RST SOAP envelope is the same as in GetPolicies, and can vary depending on whether the authentication policy is OnPremise or Federated. The BinarySecurityToken in an RST SOAP body contains a Base64-encoded PKCS\#10 certificate request, which is generated by the client based on the enrollment policy. The client could have requested an enrollment policy by using MS-XCEP before requesting a certificate using MS-WSTEP. If the PKCS\#10 certificate request is accepted by the certification authority (CA) (the key length, hashing algorithm, and so on, match the certificate template), the client can enroll successfully.
 
-The RequestSecurityToken will use a custom TokenType (`http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentToken`), because our enrollment token is more than an X.509 v3 certificate. For more information, see the Response section.
+The RequestSecurityToken uses a custom TokenType (`http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentToken`), because our enrollment token is more than an X.509 v3 certificate. For more information, see the Response section.
 
 The RST may also specify many AdditionalContext items, such as DeviceType and Version. Based on these values, for example, the web service can return device-specific and version-specific DM configuration.
 
@@ -466,14 +466,14 @@ After validating the request, the web service looks up the assigned certificate 
 > [!NOTE]
 > The HTTP server response must not set Transfer-Encoding to Chunked; it must be sent as one message.
 
-Similar to the TokenType in the RST, the RSTR will use a custom ValueType in the BinarySecurityToken (`http://schemas.microsoft.com/ConfigurationManager/Enrollment/DeviceEnrollmentProvisionDoc`), because the token is more than an X.509 v3 certificate.
+Similar to the TokenType in the RST, the RSTR uses a custom ValueType in the BinarySecurityToken (`http://schemas.microsoft.com/ConfigurationManager/Enrollment/DeviceEnrollmentProvisionDoc`), because the token is more than an X.509 v3 certificate.
 
 The provisioning XML contains:
 
 - The requested certificates (required)
 - The DM client configuration (required)
 
-The client will install the client certificate, the enterprise root certificate, and intermediate CA certificate if there's one. The DM configuration includes the name and address of the DM server, which client certificate to use, and schedules when the DM client calls back to the server.
+The client installs the client certificate, the enterprise root certificate, and intermediate CA certificate if there's one. The DM configuration includes the name and address of the DM server, which client certificate to use, and schedules when the DM client calls back to the server.
 
 Enrollment provisioning XML should contain a maximum of one root certificate and one intermediate CA certificate that is needed to chain up the MDM client certificate. More root and intermediate CA certificates could be provisioned during an OMA DM session.
 

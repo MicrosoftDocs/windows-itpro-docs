@@ -56,9 +56,9 @@ The scenarios presented in this guide illustrate how you can control device inst
 |--|--|
 | Scenario #1: Prevent installation of all printers | In this scenario, the administrator wants to prevent users from installing any printers. Thus is a basic scenario to introduce you to the 'prevent/allow' functionality of Device Installation policies in Group Policy. |
 | Scenario #2: Prevent installation of a specific printer | In this scenario, the administrator allows standard users to install all printers while but preventing them from installing a specific one. |
-| Scenario #3: Prevent installation of all printers while allowing a specific printer to be installed | In this scenario, you'll combine what you learned from both scenario #1 and scenario #2. The administrator wants to allow standard users to install only a specific printer while preventing the installation of all other printers. This scenario is a more realistic one and brings you a step farther in understanding of the Device Installation Restrictions policies. |
+| Scenario #3: Prevent installation of all printers while allowing a specific printer to be installed | In this scenario, you combine what you learned from both scenario #1 and scenario #2. The administrator wants to allow standard users to install only a specific printer while preventing the installation of all other printers. This scenario is a more realistic one and brings you a step farther in understanding of the Device Installation Restrictions policies. |
 | Scenario #4: Prevent installation of a specific USB device | This scenario, although similar to scenario #2, brings another layer of complexity-how does device connectivity work in the PnP tree. The administrator wants to prevent standard users from installing a specific USB device. By the end of the scenario, you should understand the way devices are nested in layers under the PnP device connectivity tree. |
-| Scenario #5: Prevent installation of all USB devices while allowing an installation of only an authorized USB thumb drive | In this scenario, combining all previous four scenarios, you'll learn how to protect a machine from all unauthorized USB devices. The administrator wants to allow users to install only a small set of authorized USB devices while preventing any other USB device from being installed. In addition, this scenario includes an explanation of how to apply the 'prevent' functionality to existing USB devices that have already been installed on the machine, and the administrator likes to prevent any farther interaction with them (blocking them all together). This scenario builds on the policies and structure we introduced in the first four scenarios and therefore it's preferred to go over them first before attempting this scenario. |
+| Scenario #5: Prevent installation of all USB devices while allowing an installation of only an authorized USB thumb drive | In this scenario, combining all previous four scenarios, you learn how to protect a machine from all unauthorized USB devices. The administrator wants to allow users to install only a small set of authorized USB devices while preventing any other USB device from being installed. In addition, this scenario includes an explanation of how to apply the 'prevent' functionality to existing USB devices that have already been installed on the machine, and the administrator likes to prevent any farther interaction with them (blocking them all together). This scenario builds on the policies and structure we introduced in the first four scenarios and therefore it's preferred to go over them first before attempting this scenario. |
 
 ## Technology Review
 
@@ -95,7 +95,7 @@ Hardware IDs are the identifiers that provide the exact match between a device a
 
 Windows uses these identifiers to select a driver if the operating system can't find a match with the device ID or any of the other hardware IDs. Compatible IDs are listed in the order of decreasing suitability. These strings are optional, and, when provided, they're generic, such as Disk. When a match is made using a compatible ID, you can typically use only the most basic functions of the device.
 
-When you install a device, such as a printer, a USB storage device, or a keyboard, Windows searches for driver packages that match the device you are attempting to install. During this search, Windows assigns a "rank" to each driver package it discovers with at least one match to a hardware or compatible ID. The rank indicates how well the driver matches the device. Lower rank numbers indicate better matches between the driver and the device. A rank of zero represents the best possible match. A match with the device ID to one in the driver package results in a lower (better) rank than a match to one of the other hardware IDs. Similarly, a match to a hardware ID results in a better rank than a match to any of the compatible IDs. After Windows ranks all of the driver packages, it installs the one with the lowest overall rank. For more information about the process of ranking and selecting driver packages, see [How Windows selects a driver package for a device](/windows-hardware/drivers/install/how-windows-selects-a-driver-for-a-device).
+When you install a device, such as a printer, a USB storage device, or a keyboard, Windows searches for driver packages that match the device you're attempting to install. During this search, Windows assigns a "rank" to each driver package it discovers with at least one match to a hardware or compatible ID. The rank indicates how well the driver matches the device. Lower rank numbers indicate better matches between the driver and the device. A rank of zero represents the best possible match. A match with the device ID to one in the driver package results in a lower (better) rank than a match to one of the other hardware IDs. Similarly, a match to a hardware ID results in a better rank than a match to any of the compatible IDs. After Windows ranks all of the driver packages, it installs the one with the lowest overall rank. For more information about the process of ranking and selecting driver packages, see [How Windows selects a driver package for a device](/windows-hardware/drivers/install/how-windows-selects-a-driver-for-a-device).
 
 > [!NOTE]
 > For more information about the driver installation process, see the "Technology review" section of the Step-by-Step Guide to Driver Signing and Staging.
@@ -168,7 +168,7 @@ Note: This policy setting takes precedence over any other policy settings that a
 
 ### Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria
 
-This policy setting will change the evaluation order in which Allow and Prevent policy settings are applied when more than one install policy setting is applicable for a given device. Enable this policy setting to ensure that overlapping device match criteria is applied based on an established hierarchy where more specific match criteria supersedes less specific match criteria. The hierarchical order of evaluation for policy settings that specify device match criteria is as follows:
+This policy setting changes the evaluation order in which Allow and Prevent policy settings are applied when more than one install policy setting is applicable for a given device. Enable this policy setting to ensure that overlapping device match criteria is applied based on an established hierarchy where more specific match criteria supersedes less specific match criteria. The hierarchical order of evaluation for policy settings that specify device match criteria is as follows:
 
 > **Device instance IDs** > **Device IDs** > **Device setup class** > **Removable devices**
 
@@ -177,7 +177,7 @@ This policy setting will change the evaluation order in which Allow and Prevent 
 >
 > If you disable or don't configure this policy setting, the default evaluation is used. By default, all "Prevent installation..." policy settings have precedence over any other policy setting that allows Windows to install a device.
 
-Some of these policies take precedence over other policies. The flowchart shown below illustrates how Windows processes them to determine whether a user can install a device or not, as shown in Figure below.
+Some of these policies take precedence over other policies. The following flowchart illustrates how Windows processes them to determine whether a user can install a device or not.
 
 ![Device Installation policies flow chart.](images/device-installation-flowchart.png)<br/>_Device Installation policies flow chart_
 
@@ -216,7 +216,7 @@ To find device identification strings using Device Manager
 
 1. Make sure your printer is plugged in and installed.
 
-1. To open Device Manager, click the Start button, type mmc devmgmt.msc in the Start Search box, and then press ENTER; or search for Device Manager as application.
+1. To open Device Manager, select the Start button, type mmc devmgmt.msc in the Start Search box, and then press ENTER; or search for Device Manager as application.
 
 1. Device Manager starts and displays a tree representing all of the devices detected on your computer. At the top of the tree is a node with your computers name next to it. Lower nodes represent the various categories of hardware into which your computers devices are grouped.
 
@@ -317,9 +317,9 @@ Creating the policy to prevent all printers from being installed:
 
 1. Open **Prevent installation of devices using drivers that match these device setup classes** policy and select the 'Enable' radio button.
 
-1. In the lower left side, in the 'Options' window, click the 'Show...' box. This option will take you to a table where you can enter the class identifier to block.
+1. In the lower left side, in the 'Options' window, click the 'Show...' box. This option takes you to a table where you can enter the class identifier to block.
 
-1. Enter the printer class GUID you found above with the curly braces: `{4d36e979-e325-11ce-bfc1-08002be10318}`.
+1. Enter the printer class GUID you found with the curly braces: `{4d36e979-e325-11ce-bfc1-08002be10318}`.
 
     ![List of prevent Class GUIDs](images/device-installation-gpo-prevent-class-list.png)<br/>_List of prevent Class GUIDs_
 

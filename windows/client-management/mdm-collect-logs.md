@@ -15,14 +15,14 @@ To help diagnose enrollment or device management issues in Windows devices manag
 ## Download the MDM Diagnostic Information log from Windows devices
 
 1. On your managed device, go to **Settings** > **Accounts** > **Access work or school**.
-1. Click your work or school account, then click **Info**.
+1. Select your work or school account, then select **Info**.
 
    ![Access work or school page in Settings.](images/diagnose-mdm-failures15.png)
 
-1. At the bottom of the **Settings** page, click **Create report**.
+1. At the bottom of the **Settings** page, select **Create report**.
 
    ![Access work or school page and then Create report.](images/diagnose-mdm-failures16.png)
-1. A window opens that shows the path to the log files. Click **Export**.
+1. A window opens that shows the path to the log files. Select **Export**.
 
    ![Access work or school log files.](images/diagnose-mdm-failures17.png)
 
@@ -40,12 +40,12 @@ mdmdiagnosticstool.exe -area "DeviceEnrollment;DeviceProvisioning;Autopilot" -zi
 
 ### Understanding zip structure
 
-The zip file will have logs according to the areas that were used in the command. This explanation is based on DeviceEnrollment, DeviceProvisioning and Autopilot areas. It applies to the zip files collected via command line or Feedback Hub
+The zip file has logs according to the areas that were used in the command. This explanation is based on DeviceEnrollment, DeviceProvisioning and Autopilot areas. It applies to the zip files collected via command line or Feedback Hub
 
 - DiagnosticLogCSP_Collector_Autopilot_*: Autopilot etls
 - DiagnosticLogCSP_Collector_DeviceProvisioning_*: Provisioning etls (Microsoft-Windows-Provisioning-Diagnostics-Provider)
 - MDMDiagHtmlReport.html: Summary snapshot of MDM configurations and policies. Includes, management url, MDM server device ID, certificates, policies.
-- MdmDiagLogMetadata, json: mdmdiagnosticstool metadata file, contains command-line arguments used to run the tool
+- MdmDiagLogMetadata.json: mdmdiagnosticstool metadata file that contains command-line arguments used to run the tool.
 - MDMDiagReport.xml: contains a more detailed view into the MDM configurations, such as enrollment variables, provisioning packages, multivariant conditions, and others. For more information about diagnosing provisioning packages, see [Diagnose provisioning packages](/windows/configuration/provisioning-packages/diagnose-provisioning-packages).
 - MdmDiagReport_RegistryDump.reg: contains dumps from common MDM registry locations
 - MdmLogCollectorFootPrint.txt: mdmdiagnosticslog tool logs from running the command
@@ -65,23 +65,23 @@ In this location, the **Admin** channel logs events by default. However, if you 
 
 ### Collect admin logs
 
-1. Right click on the **Admin** node.
+1. Right-click the **Admin** node.
 1. Select **Save all events as**.
 1. Choose a location and enter a filename.
-1. Click **Save**.
+1. Select **Save**.
 1. Choose **Display information for these languages** and then select **English**.
-1. Click **Ok**.
+1. Select **Ok**.
 
-For more detailed logging, you can enable **Debug** logs. Right click on the **Debug** node and then click **Enable Log**.
+For more detailed logging, you can enable **Debug** logs. Right-click on the **Debug** node and then select **Enable Log**.
 
 ### Collect debug logs
 
-1. Right click on the **Debug** node.
+1. Right-click on the **Debug** node.
 1. Select **Save all events as**.
 1. Choose a location and enter a filename.
-1. Click **Save**.
+1. Select **Save**.
 1. Choose **Display information for these languages** and then select **English**.
-1. Click **Ok**.
+1. Select **Ok**.
 
 You can open the log files (.evtx files) in the Event Viewer on a Windows device.
 
@@ -241,17 +241,17 @@ For best results, ensure that the PC or VM on which you're viewing logs matches 
     ![event viewer screenshot.](images/diagnose-mdm-failures9.png)
 
 1. Navigate to the etl file that you got from the device and then open the file.
-1. Click **Yes** when prompted to save it to the new log format.
+1. Select **Yes** when prompted to save it to the new log format.
 
     ![event viewer prompt.](images/diagnose-mdm-failures10.png)
 
     ![diagnose mdm failures.](images/diagnose-mdm-failures11.png)
 
-1. The new view contains traces from the channel. Click on **Filter Current Log** from the **Actions** menu.
+1. The new view contains traces from the channel. Select **Filter Current Log** from the **Actions** menu.
 
     ![event viewer actions.](images/diagnose-mdm-failures12.png)
 
-1. Add a filter to Event sources by selecting **DeviceManagement-EnterpriseDiagnostics-Provider** and click **OK**.
+1. Add a filter to Event sources by selecting **DeviceManagement-EnterpriseDiagnostics-Provider** and select **OK**.
 
     ![event filter for Device Management.](images/diagnose-mdm-failures13.png)
 

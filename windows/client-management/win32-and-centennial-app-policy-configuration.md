@@ -18,7 +18,7 @@ Starting from the following Windows versions `Replace` command is supported:
 - Windows 10, version 1803 with KB4512509 and KB installed
 - Windows 10, version 1709 with KB4516071 and KB installed
 
-When the ADMX policies are ingested, the registry keys to which each policy is written are checked so that known system registry keys, or registry keys that are used by existing inbox policies or system components, are not overwritten. This precaution helps to avoid security concerns over opening the entire registry. Currently, the ingested policies are not allowed to write to locations within the **System**, **Software\Microsoft**, and **Software\Policies\Microsoft** keys, except for the following locations:
+When the ADMX policies are ingested, the registry keys to which each policy is written are checked so that known system registry keys, or registry keys that are used by existing inbox policies or system components, aren't overwritten. This precaution helps to avoid security concerns over opening the entire registry. Currently, the ingested policies aren't allowed to write to locations within the **System**, **Software\Microsoft**, and **Software\Policies\Microsoft** keys, except for the following locations:
 
 - Software\Policies\Microsoft\Office\
 - Software\Microsoft\Office\
@@ -190,7 +190,7 @@ The following ADMX file example shows how to ingest a Win32 or Desktop Bridge ap
 **Request Syncml**:
 
 The ADMX file is escaped and sent in SyncML format through the Policy CSP URI, `./Vendor/MSFT/Policy/ConfigOperations/ADMXInstall/{AppName}/{SettingType}/{FileUid or AdmxFileName}`.
-When the ADMX file is imported, the policy states for each new policy are the same as those in a regular MDM policy: Enabled, Disabled, or Not Configured.
+When the ADMX file is imported, the policy states for each new policy are the same as the ones in a regular MDM policy: Enabled, Disabled, or Not Configured.
 
 The following example shows an ADMX file in SyncML format:
 
@@ -356,7 +356,7 @@ The following example shows an ADMX file in SyncML format:
 
 The following example shows how to derive a Win32 or Desktop Bridge app policy name and policy area name:
 
-```XML
+```xml
 <categories>
     <category name="ParentCategoryArea"/>
     <category name="Category1">
@@ -396,9 +396,9 @@ The policy {AreaName} format is {AppName}~{SettingType}~{CategoryPathFromAdmx}.
 
 Therefore, from the example:
 
-- Class: User
-- Policy name: L_PolicyPreventRun_1
-- Policy area name: ContosoCompanyApp~Policy~ParentCategoryArea~Category2~Category3
+- Class: `User`
+- Policy name: `L_PolicyPreventRun_1`
+- Policy area name: `ContosoCompanyApp~Policy~ParentCategoryArea~Category2~Category3`
 - URI: `./user/Vendor/MSFT/Policy/Config/ContosoCompanyApp~Policy~ParentCategoryArea~Category2~Category3/L_PolicyPreventRun_1`
 
 ## ADMX-backed app policy examples

@@ -74,7 +74,7 @@ For details about Microsoft mobile device management protocols for Windows, see 
 | [BitLocker CSP](mdm/bitlocker-csp.md) | Added a new node AllowStandardUserEncryption.<br><li>Added support for Pro edition. |
 | [Defender CSP](mdm/defender-csp.md) | Added a new node Health/ProductStatus. |
 | [DevDetail CSP](mdm/devdetail-csp.md) | Added a new node SMBIOSSerialNumber. |
-| [EnterpriseModernAppManagement CSP](mdm/enterprisemodernappmanagement-csp.md) | Added NonRemovable setting under AppManagement node. |
+| [EnterpriseModernAppManagement CSP](mdm/enterprisemodernappmanagement-csp.md) | Added Non-Removable setting under AppManagement node. |
 | [Office CSP](mdm/office-csp.md) | Added FinalStatus setting. |
 | [PassportForWork CSP](mdm/passportforwork-csp.md) | Added new settings. |
 | [RemoteWipe CSP](mdm/remotewipe-csp.md) | Added new settings. |

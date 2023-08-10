@@ -11,7 +11,7 @@ The following list shows the general server requirements for using OMA DM to man
 
 - The OMA DM server must support the OMA DM v1.1.2 or later protocol.
 
-- Secure Sockets Layer (SSL) must be on the OMA DM server, and it must provide server certificate-based authentication, data integrity check, and data encryption. If the certificate isn't issued by a commercial Certification Authority whose root certificate is pre-installed in the device, you must provision the enterprise root certificate in the device's Root store.
+- Secure Sockets Layer (TLS/SSL) must be on the OMA DM server, and it must provide server certificate-based authentication, data integrity check, and data encryption. If the certificate isn't issued by a commercial Certification Authority whose root certificate is preinstalled in the device, you must provision the enterprise root certificate in the device's Root store.
 
 - To authenticate the client at the application level, you must use either Basic or MD5 client authentication.
 

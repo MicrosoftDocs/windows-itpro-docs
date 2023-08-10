@@ -62,6 +62,6 @@ These tools were included in previous versions of Windows. The associated docume
 > [!TIP]
 > If the linked content in this list doesn't provide the information you need to use that tool, send feedback with the **This page** link in the **Feedback** section at the bottom of this article.
 
-## Related topics
+## Related articles
 
 [Diagnostic data viewer](/windows/privacy/diagnostic-data-viewer-overview)

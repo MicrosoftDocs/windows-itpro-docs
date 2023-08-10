@@ -23,11 +23,11 @@ Auto certificate renewal is the only supported MDM client certificate renewal me
 
 For Windows devices, during the MDM client certificate enrollment phase or during MDM management section, the enrollment server or MDM server could configure the device to support automatic MDM client certificate renewal using [CertificateStore CSP's](mdm/certificatestore-csp.md) ROBOSupport node under `CertificateStore/My/WSTEP/Renew` URL.
 
-With automatic renewal, the PKCS#7 message content isn't base64 encoded separately. With manual certificate renewal, there's an additional base64 encoding for PKCS#7 message content.
+With automatic renewal, the PKCS#7 message content isn't base64 encoded separately. With manual certificate renewal, base64 encoding for PKCS#7 message content is required.
 
-During the automatic certificate renewal process, if the root certificate isn't trusted by the device, the authentication will fail. Use one of device pre-installed root certificates, or configure the root cert over a DM session using the [CertificateStore CSP](mdm/certificatestore-csp.md).
+During the automatic certificate renewal process, if the device doesn't trust the root certificate, the authentication fails. Use one of device preinstalled root certificates, or configure the root cert over a DM session using the [CertificateStore CSP](mdm/certificatestore-csp.md).
 
-During the automatic certificate renew process, the device will deny HTTP redirect request from the server. It won't deny the request if the same redirect URL that the user accepted during the initial MDM enrollment process is used.
+During the automatic certificate renewal process, the device denies HTTP redirect request from the server. It doesn't deny the request if the same redirect URL that the user accepted during the initial MDM enrollment process is used.
 
 The following example shows the details of an automatic renewal request.
 
@@ -89,15 +89,15 @@ In Windows, the renewal period can only be set during the MDM enrollment phase. 
 
 For more information about the parameters, see the [CertificateStore configuration service provider](mdm/certificatestore-csp.md).
 
-Unlike manual certificate renewal, the device will not do an automatic MDM client certificate renewal if the certificate is already expired. To make sure the device has enough time to automatically renew, we recommend you set a renewal period a couple months (40-60 days) before the certificate expires. And, set the renewal retry interval to every few days, like every 4-5 days instead of every 7 days (weekly). This change increases the chance that the device will try to connect at different days of the week.
+Unlike manual certificate renewal, the device doesn't perform an automatic MDM client certificate renewal if the certificate is already expired. To make sure the device has enough time to automatically renew, we recommend you set a renewal period a couple months (40-60 days) before the certificate expires. And, set the renewal retry interval to every few days, like every 4-5 days instead of every seven days (weekly). This change increases the chance that the device will try to connect at different days of the week.
 
 ## Certificate renewal response
 
-When RequestType is set to Renew, the web service verifies the following (in additional to initial enrollment):
+When RequestType is set to Renew, the web service verifies the following (in addition to the initial enrollment):
 
 - The signature of the PKCS#7 BinarySecurityToken is correct
 - The client's certificate is in the renewal period
-- The certificate was issued by the enrollment service
+- The certificate is issued by the enrollment service
 - The requester is the same as the requester for initial enrollment
 - For standard client's request, the client hasn't been blocked
 

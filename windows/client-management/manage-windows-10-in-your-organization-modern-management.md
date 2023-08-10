@@ -38,7 +38,7 @@ As indicated in the diagram, Microsoft continues to provide support for deep man
 
 With Windows, you can continue to use traditional OS deployment, but you can also "manage out of the box". To transform new devices into fully configured, fully managed devices, you can:
 
-- Avoid re-imaging by using dynamic provisioning, enabled by a cloud-based device management service such as [Windows Autopilot](/mem/autopilot/windows-autopilot) or [Microsoft Intune](/mem/intune/fundamentals/).
+- Avoid reimaging by using dynamic provisioning, enabled by a cloud-based device management service such as [Windows Autopilot](/mem/autopilot/windows-autopilot) or [Microsoft Intune](/mem/intune/fundamentals/).
 
 - Create self-contained provisioning packages built with the Windows Configuration Designer. For more information, see [Provisioning packages for Windows](/windows/configuration/provisioning-packages/provisioning-packages).
 
@@ -100,7 +100,7 @@ There are various steps you can take to begin the process of modernizing device 
 
 **Assess current management practices, and look for investments you might make today.** Which of your current practices need to stay the same, and which can you change? Specifically, what elements of traditional management do you need to retain and where can you modernize? Whether you take steps to minimize custom imaging, reevaluate settings management, or reassesses authentication and compliance, the benefits can be immediate. You can use [Group policy analytics in Microsoft Intune](/mem/intune/configuration/group-policy-analytics) to help determine which group policies supported by cloud-based MDM providers, including Microsoft Intune.
 
-**Assess the different use cases and management needs in your environment.** Are there groups of devices that could benefit from lighter, simplified management? BYOD devices, for example, are natural candidates for cloud-based management. Users or devices handling more highly regulated data might require an on-premises Active Directory domain for authentication. Configuration Manager and EMS provide you the flexibility to stage implementation of modern management scenarios while targeting different devices the way that best suits your business needs.
+**Assess the different use cases and management needs in your environment.** Are there groups of devices that could benefit from lighter, simplified management? BYOD devices, for example, are natural candidates for cloud-based management. Users or devices handling more highly regulated data might require an on-premises Active Directory domain for authentication. Configuration Manager and EMS provide you with the flexibility to stage implementation of modern management scenarios while targeting different devices the way that best suits your business needs.
 
 **Review the decision trees in this article.** With the different options in Windows, plus Configuration Manager and Enterprise Mobility + Security, you have the flexibility to handle imaging, authentication, settings, and management tools for any scenario.
 

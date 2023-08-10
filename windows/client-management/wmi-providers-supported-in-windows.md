@@ -12,7 +12,7 @@ Windows Management Infrastructure (WMI) providers (and the classes they support)
 > [!NOTE]
 > Applications installed using WMI classes are not removed when the MDM account is removed from device.
 
-The child node names of the result from a WMI query are separated by a forward slash (/) and not URI escaped. Here is an example query.
+The child node names of the result from a WMI query are separated by a forward slash (/) and not URI escaped. Here's an example query.
 
 Get the list of network adapters from the device.
 
@@ -169,7 +169,7 @@ For links to these classes, see [**MDM Bridge WMI Provider**](/windows/win32/dmw
 | [**Win32\_VideoController**](/windows/win32/cimwin32prov/win32-videocontroller)                         |                              |
 | **Win32\_WindowsUpdateAgentVersion**                                                                    |                              |
 
-## Related topics
+## Related articles
 
 [CIM Video Controller](/windows/win32/cimwin32prov/cim-videocontroller)
 [Configuration service provider reference](mdm/index.yml)

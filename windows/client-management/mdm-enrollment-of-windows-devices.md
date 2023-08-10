@@ -42,11 +42,11 @@ To join a domain:
 
 1. Type in your Azure AD username. This username is the email address you use to log into Microsoft Office 365 and similar services.
 
-    If the tenant is a cloud-only, password hash sync, or pass-through authentication tenant, this page will change to show the organization's custom branding, and you'll be able to enter your password directly on this page. If the tenant is part of a federated domain, you'll be redirected to the organization's on-premises federation server, such as Active Directory Federation Services (AD FS) for authentication.
+    If the tenant is a cloud-only, password hash sync, or pass-through authentication tenant, this page changes to show the organization's custom branding, and you're able to enter your password directly on this page. If the tenant is part of a federated domain, you're redirected to the organization's on-premises federation server, such as Active Directory Federation Services (AD FS) for authentication.
 
     Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
 
-    If your Azure AD tenant has auto-enrollment configured, your device will also be enrolled into MDM during this flow. For more information, see [these steps](azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md). If your tenant isn't configured for auto-enrollment, you'll have to go through the enrollment flow a second time to [connect your device to MDM](#enroll-in-device-management-only). After you complete the flow, your device will be connected to your organization's Azure AD domain.
+    If your Azure AD tenant has autoenrollment configured, your device also gets enrolled into MDM during this flow. For more information, see [these steps](azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md). If your tenant isn't configured for autoenrollment, you must go through the enrollment flow a second time to [connect your device to MDM](#enroll-in-device-management-only). After you complete the flow, your device will be connected to your organization's Azure AD domain.
 
     ![azure ad signin.](images/unifiedenrollment-rs1-13.png)
 
@@ -82,7 +82,7 @@ To create a local account and connect the device:
 
     Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
 
-    If your Azure AD tenant has auto-enrollment configured, your device will also be enrolled into MDM during this flow. For more information, see [this blog post](https://blogs.technet.microsoft.com/enterprisemobility/2015/08/14/windows-10-azure-ad-and-microsoft-intune-automatic-mdm-enrollment-powered-by-the-cloud/). If your tenant isn't configured for auto-enrollment, you'll have to go through the enrollment flow a second time to connect your device to MDM.
+    If your Azure AD tenant has autoenrollment configured, your device also gets enrolled into MDM during this flow. For more information, see [this blog post](https://blogs.technet.microsoft.com/enterprisemobility/2015/08/14/windows-10-azure-ad-and-microsoft-intune-automatic-mdm-enrollment-powered-by-the-cloud/). If your tenant isn't configured for autoenrollment, you must go through the enrollment flow a second time to connect your device to MDM.
 
     After you reach the end of the flow, your device should be connected to your organization's Azure AD domain. You may now sign out of your current account and sign in using your Azure AD username.
 
@@ -97,9 +97,9 @@ There are a few instances where your device can't be connected to an Azure AD do
 | Your device is connected to an Azure AD domain. | Your device can only be connected to a single Azure AD domain at a time. |
 | Your device is already connected to an Active Directory domain. | Your device can either be connected to an Azure AD domain or an Active Directory domain. You can't connect to both simultaneously. |
 | Your device already has a user connected to a work account. | You can either connect to an Azure AD domain or connect to a work or school account. You can't connect to both simultaneously. |
-| You're logged in as a standard user. | Your device can only be connected to an Azure AD domain if you're logged in as an administrative user. You'll need to switch to an administrator account to continue. |
-| Your device is already managed by MDM. | The connect to Azure AD flow will attempt to enroll your device into MDM if your Azure AD tenant has a preconfigured MDM endpoint. Your device must be unenrolled from MDM to be able to connect to Azure AD in this case. |
-| Your device is running Home edition. | This feature isn't available on Windows Home edition, so you'll be unable to connect to an Azure AD domain. You'll need to upgrade to Pro, Enterprise, or Education edition to continue. |
+| You're logged in as a standard user. | Your device can only be connected to an Azure AD domain if you're logged in as an administrative user. You must switch to an administrator account to continue. |
+| Your device is already managed by MDM. | The connect to Azure AD flow attempts to enroll your device into MDM if your Azure AD tenant has a preconfigured MDM endpoint. Your device must be unenrolled from MDM to be able to connect to Azure AD in this case. |
+| Your device is running Home edition. | This feature isn't available on Windows Home edition, so you can't connect to an Azure AD domain. You must upgrade to Pro, Enterprise, or Education edition to continue. |
 
 ## Connect personally owned devices
 
@@ -107,7 +107,7 @@ Personally owned devices, also known as bring your own device (BYOD), can be con
 
 All Windows devices can be connected to a work or school account. You can connect to a work or school account either through the Settings app or through any of the numerous Universal Windows Platform (UWP) apps, such as the universal Office apps.
 
-### Register device in AAD and enroll in MDM
+### Register device in Azure AD and enroll in MDM
 
 To create a local account and connect the device:
 
@@ -131,9 +131,9 @@ To create a local account and connect the device:
 
     Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
 
-    If your Azure AD tenant has auto-enrollment configured, your device will also be enrolled into MDM during this flow. For more information, see [this blog post](https://blogs.technet.microsoft.com/enterprisemobility/2015/08/14/windows-10-azure-ad-and-microsoft-intune-automatic-mdm-enrollment-powered-by-the-cloud/). If your tenant isn't configured for auto-enrollment, you'll have to go through the enrollment flow a second time to [connect your device to MDM](#enroll-in-device-management-only).
+    If your Azure AD tenant has autoenrollment configured, your device also gets enrolled into MDM during this flow. For more information, see [this blog post](https://blogs.technet.microsoft.com/enterprisemobility/2015/08/14/windows-10-azure-ad-and-microsoft-intune-automatic-mdm-enrollment-powered-by-the-cloud/). If your tenant isn't configured for autoenrollment, you must go through the enrollment flow a second time to [connect your device to MDM](#enroll-in-device-management-only).
 
-    You'll see the status page that shows the progress of your device being set up.
+    You can see the status page that shows the progress of your device being set up.
 
     ![corporate sign in - screen and option](images/unifiedenrollment-rs1-26.png)
 
@@ -151,7 +151,7 @@ There are a few instances where your device may not be able to connect to work.
 | We couldn't find your identity in your organization's cloud. | The username you entered wasn't found on your Azure AD tenant. |
 | Your device is already being managed by an organization. | Your device is either already managed by MDM or Microsoft Configuration Manager. |
 | You don't have the right privileges to perform this operation. Talk to your admin. | You can't enroll your device into MDM as a standard user. You must be on an administrator account. |
-| We couldn't auto-discover a management endpoint matching the username entered. Check your username and try again. If you know the URL to your management endpoint, enter it. | You need to provide the server URL for your MDM or check the spelling of the username you entered. |
+| We couldn't autodiscover a management endpoint matching the username entered. Check your username and try again. If you know the URL to your management endpoint, enter it. | You need to provide the server URL for your MDM or check the spelling of the username you entered. |
 
 ## Enroll in device management only
 
@@ -177,27 +177,27 @@ All Windows devices can be connected to MDM. You can connect to an MDM through t
 
    ![set up work or school account screen](images/unifiedenrollment-rs1-32.png)
 
-1. If the device finds an endpoint that only supports on-premises authentication, this page will change and ask you for your password. If the device finds an MDM endpoint that supports federated authentication, you'll be presented with a new window that will ask you for more authentication information.
+1. If the device finds an endpoint that only supports on-premises authentication, this page changes and ask you for your password. If the device finds an MDM endpoint that supports federated authentication, you're presented with a new window that asks you for more authentication information.
 
-   Based on IT policy, you may also be prompted to provide a second factor of authentication at this point. You'll see the enrollment progress on screen.
+   Based on IT policy, you may also be prompted to provide a second factor of authentication at this point. You can see the enrollment progress on screen.
 
    ![screen to set up your device](images/unifiedenrollment-rs1-33-b.png)
 
-   After you complete the flow, your device will be connected to your organization's MDM.
+   After you complete the flow, your device is connected to your organization's MDM.
 
 ## Connect your Windows device to work using a deep link
 
-Windows devices may be connected to work using a deep link. Users will be able to select or open a link in a particular format from anywhere in Windows, and be directed to the new enrollment experience.
+Windows devices may be connected to work using a deep link. Users can select or open a link in a particular format from anywhere in Windows, and be directed to the new enrollment experience.
 
-The deep link used for connecting your device to work will always use the following format.
+The deep link used for connecting your device to work uses the following format.
 
 **ms-device-enrollment:?mode={mode\_name}**:
 
 | Parameter | Description | Supported Value for Windows |
 |--|--|--|
-| mode | Describes which mode will be executed in the enrollment app. | Mobile Device Management (MDM), Adding Work Account (AWA), and Azure Active Directory-joined. |
+| mode | Describes which mode is executed in the enrollment app. | Mobile Device Management (MDM), Adding Work Account (AWA), and Azure Active Directory-joined. |
 | username | Specifies the email address or UPN of the user who should be enrolled into MDM. | string |
-| servername | Specifies the MDM server URL that will be used to enroll the device. | string |
+| servername | Specifies the MDM server URL that is used to enroll the device. | string |
 | accesstoken | Custom parameter for MDM servers to use as they see fit. Typically, this parameter's value can be used as a token to validate the enrollment request. | string |
 | deviceidentifier | Custom parameter for MDM servers to use as they see fit. Typically, this parameter's value can be used to pass in a unique device identifier. | GUID |
 | tenantidentifier | Custom parameter for MDM servers to use as they see fit. Typically, this parameter's value can be used to identify which tenant the device or user belongs to. | GUID or string |
@@ -215,7 +215,7 @@ To connect your devices to MDM using deep links:
 
 1. Create a link to launch the built-in enrollment app using the URI **ms-device-enrollment:?mode=mdm**, and user-friendly display text, such as **Click here to connect Windows to work**:
 
-    (This link will launch the flow equivalent to the Enroll into the device management option.)
+    This link launches the flow equivalent to the Enroll into the device management option.
 
     - IT admins can add this link to a welcome email that users can select to enroll into MDM.
 
@@ -232,7 +232,7 @@ To connect your devices to MDM using deep links:
 
     ![set up a work or school account screen](images/deeplinkenrollment3.png)
 
-1. If the device finds an endpoint that only supports on-premises authentication, this page will change and ask you for your password. If the device finds an MDM endpoint that supports federated authentication, you'll be presented with a new window that will ask you for more authentication information. Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
+1. If the device finds an endpoint that only supports on-premises authentication, this page changes and asks you for your password. If the device finds an MDM endpoint that supports federated authentication, you're presented with a new window that asks for more authentication information. Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
 
     After you complete the flow, your device will be connected to your organization's MDM.
 
@@ -240,7 +240,7 @@ To connect your devices to MDM using deep links:
 
 ## Manage connections
 
-To manage your work or school connections, select **Settings** > **Accounts** > **Access work or school**. Your connections will show on this page and selecting one will expand options for that connection.
+To manage your work or school connections, select **Settings** > **Accounts** > **Access work or school**. Your connections are displayed on this page and selecting one expands options for that connection.
 
 ![managing work or school account.](images/unifiedenrollment-rs1-34-b.png)
 
@@ -248,21 +248,21 @@ To manage your work or school connections, select **Settings** > **Accounts** > 
 
 The **Info** button can be found on work or school connections involving MDM. This button is included in the following scenarios:
 
-- Connecting your device to an Azure AD domain that has auto-enroll into MDM configured.
-- Connecting your device to a work or school account that has auto-enroll into MDM configured.
+- Connecting your device to an Azure AD domain that has autoenroll into MDM configured.
+- Connecting your device to a work or school account that has autoenroll into MDM configured.
 - Connecting your device to MDM.
 
-Selecting the **Info** button will open a new page in the Settings app that provides details about your MDM connection. You'll be able to view your organization's support information (if configured) on this page. You'll also be able to start a sync session that forces your device to communicate to the MDM server and fetch any updates to policies if needed.
+Selecting the **Info** button opens a new page in the Settings app that provides details about your MDM connection. You're able to view your organization's support information (if configured) on this page. You can also start a sync session that forces your device to communicate to the MDM server and fetch any updates to policies if needed.
 
-Selecting the **Info** button will show a list of policies and line-of-business apps installed by your organization. Here's an example screenshot.
+Selecting the **Info** button shows a list of policies and line-of-business apps installed by your organization. Here's an example screenshot.
 
 ![work or school info.](images/unifiedenrollment-rs1-35-b.png)
 
 ### Disconnect
 
-The **Disconnect** button can be found on all work connections. Generally, selecting the **Disconnect** button will remove the connection from the device. There are a few exceptions to this functionality:
+The **Disconnect** button can be found on all work connections. Generally, selecting the **Disconnect** button removes the connection from the device. There are a few exceptions to this functionality:
 
-- Devices that enforce the AllowManualMDMUnenrollment policy won't allow users to remove MDM enrollments. These connections must be removed by a server-initiated unenroll command.
+- Devices that enforce the AllowManualMDMUnenrollment policy don't allow users to remove MDM enrollments. These connections must be removed by a server-initiated unenroll command.
 - On mobile devices, you can't disconnect from Azure AD. These connections can only be removed by wiping the device.
 
 > [!WARNING]
@@ -272,6 +272,6 @@ The **Disconnect** button can be found on all work connections. Generally, selec
 
 You can collect diagnostic logs around your work connections by going to **Settings** > **Accounts** > **Access work or school**, and then selecting the **Export your management logs** link under **Related Settings**. Next, select **Export**, and follow the path displayed to retrieve your management log files.
 
-You can get the advanced diagnostic report by going to **Settings** > **Accounts** > **Access work or school**, and selecting the **Info** button. At the bottom of the Settings page, you'll see the button to create a report.
+You can get the advanced diagnostic report by going to **Settings** > **Accounts** > **Access work or school**, and selecting the **Info** button. At the bottom of the Settings page, you see the button to create a report.
 
 For more information, see [Collect MDM logs](mdm-collect-logs.md).

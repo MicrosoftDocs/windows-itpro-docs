@@ -9,7 +9,7 @@ appliesto:
 
 # Secured-core PC configuration lock
 
-In an enterprise organization, IT administrators enforce policies on their corporate devices to keep the devices in a compliant state and protect the OS by preventing users from changing configurations and creating config drift. Config drift occurs when users with local admin rights change settings and put the device out of sync with security policies. Devices in a non-compliant state can be vulnerable until the next sync and configuration reset with the MDM. Windows 11 with config lock enables IT administrators to prevent config drift and keep the OS configuration in the desired state. With config lock, the OS monitors the registry keys that configure each feature and when it detects a drift, reverts to the IT-desired state in seconds.
+In an enterprise organization, IT administrators enforce policies on their corporate devices to keep the devices in a compliant state and protect the OS by preventing users from changing configurations and creating config drift. Config drift occurs when users with local admin rights change settings and put the device out of sync with security policies. Devices in a noncompliant state can be vulnerable until the next sync and configuration reset with the MDM. Windows 11 with config lock enables IT administrators to prevent config drift and keep the OS configuration in the desired state. With config lock, the OS monitors the registry keys that configure each feature and when it detects a drift, reverts to the IT-desired state in seconds.
 
 Secured-core configuration lock (config lock) is a new [secured-core PC (SCPC)](/windows-hardware/design/device-experiences/oem-highly-secure) feature that prevents configuration drift from secured-core PC features caused by unintentional misconfiguration. In short, it ensures a device intended to be a secured-core PC remains a secured-core PC.
 
@@ -23,7 +23,7 @@ To summarize, config lock:
 
 ## Configuration Flow
 
-After a [secured-core PCs](/windows-hardware/design/device-experiences/oem-highly-secure) reaches the desktop, config lock will prevent configuration drift by detecting if the device is a secured-core PC or not. When the device isn't a secured-core PC, the lock won't apply. If the device is a secured-core PC, config lock will lock the policies listed under [List of locked policies](#list-of-locked-policies).
+After a [secured-core PCs](/windows-hardware/design/device-experiences/oem-highly-secure) reaches the desktop, config lock will prevent configuration drift by detecting if the device is a secured-core PC or not. When the device isn't a secured-core PC, the lock doesn't apply. If the device is a secured-core PC, config lock locks the policies listed under [List of locked policies](#list-of-locked-policies).
 
 ## Enabling config lock using Microsoft Intune
 
@@ -34,23 +34,24 @@ The steps to turn on config lock using Microsoft Intune are as follows:
 1. Ensure that the device to turn on config lock is enrolled in Microsoft Intune.
 1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** > **Configuration Profiles** > **Create a profile**.
 1. Select the following and press **Create**:
-    - **Platform**: Windows 10 and later
-    - **Profile type**: Templates
+    - **Platform**: `Windows 10 and later`
+    - **Profile type**: `Templates`
     - **Template name**: Custom
 
     :::image type="content" source="images/configlock-mem-createprofile.png" alt-text="In Configuration profiles, the Create a profile page is showing, with the Platform set to Windows 10 and later, and a Profile Type of Templates.":::
 
 1. Name your profile.
 1. When you reach the Configuration Settings step, select "Add" and add the following information:
-    - **OMA-URI**: ./Vendor/MSFT/DMClient/Provider/MS%20DM%20Server/ConfigLock/Lock
-    - **Data type**: Integer
-    - **Value**: 1 </br>
+    - **OMA-URI**: `./Vendor/MSFT/DMClient/Provider/MS%20DM%20Server/ConfigLock/Lock`
+    - **Data type**: `Integer`
+    - **Value**: `1`
+
     To turn off config lock, change the value to 0.
 
-    :::image type="content" source="images/configlock-mem-editrow.png" alt-text="In the Configuration settings step, the Edit Row page is shown with a Name of config lock, a Description of Turn on config lock and the OMA-URI set as above, along with a Data type of Integer set to a Value of 1.":::
+    :::image type="content" source="images/configlock-mem-editrow.png" alt-text="In the Configuration settings step, the Edit Row page is shown with a Name of config lock, a Description of Turn-on config lock and the OMA-URI set, along with a Data type of Integer set to a Value of 1.":::
 
 1. Select the devices to turn on config lock. If you're using a test tenant, you can select "+ Add all devices".
-1. You'll not need to set any applicability rules for test purposes.
+1. You don't need to set any applicability rules for test purposes.
 1. Review the Configuration and select "Create" if everything is correct.
 1. After the device syncs with the Microsoft Intune server, you can confirm if the config lock was successfully enabled.
 

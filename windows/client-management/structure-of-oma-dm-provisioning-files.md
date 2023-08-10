@@ -22,7 +22,7 @@ The following table shows the OMA DM versions that are supported.
 
 ## File format
 
-The following example shows the general structure of the XML document sent by the server using OMA DM version 1.2.1 for demonstration purposes only. The initial XML packages exchanged between client and server could contain additional XML tags. For a detailed description and samples for those packages, see the [OMA Device Management Protocol 1.2.1](https://www.openmobilealliance.org/release/DM/V1_2_1-20080617-A/OMA-TS-DM_Protocol-V1_2_1-20080617-A.pdf) specification.
+The following example shows the general structure of the XML document sent by the server using OMA DM version 1.2.1 for demonstration purposes only. The initial XML packages exchanged between client and server could contain more XML tags. For a detailed description and samples for those packages, see the [OMA Device Management Protocol 1.2.1](https://www.openmobilealliance.org/release/DM/V1_2_1-20080617-A/OMA-TS-DM_Protocol-V1_2_1-20080617-A.pdf) specification.
 
 ```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
@@ -97,7 +97,7 @@ SyncBody contains one or more DM commands. The SyncBody can contain multiple DM 
 
 **Code example**
 
-The following example shows the body component of a DM message. In this example, SyncBody contains only one command, Get. This command is indicated by the &lt;Final /&gt; tag that occurs immediately after the terminating tag for the Get command.
+The following example shows the body component of a DM message. In this example, SyncBody contains only one command, Get. This command is indicated by the `<Final />` tag that occurs immediately after the terminating tag for the Get command.
 
 ```xml
 <SyncBody>
