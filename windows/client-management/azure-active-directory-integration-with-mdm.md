@@ -1,20 +1,11 @@
 ---
 title: Azure Active Directory integration with MDM
 description: Azure Active Directory is the world's largest enterprise cloud identity management service.
-ms.reviewer:
-manager: aaroncz
-ms.author: vinpa
 ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
 ms.collection:
 - highpri
 - tier2
-ms.date: 04/05/2023
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+ms.date: 08/10/2023
 ---
 
 # Azure Active Directory integration with MDM
@@ -256,12 +247,12 @@ Location: ms-appx-web://App1/ToUResponse?error=access_denied&error_description=A
 
 The following table shows the error codes.
 
-|Cause|HTTP status|Error|Description|
-|--- |--- |--- |--- |
-|api-version|302|invalid_request|unsupported version|
-|Tenant or user data are missing or other required prerequisites for device enrollment aren't met|302|unauthorized_client|unauthorized user or tenant|
-|Azure AD token validation failed|302|unauthorized_client|unauthorized_client|
-|internal service error|302|server_error|internal service error|
+| Cause                                                                                            | HTTP status | Error               | Description                 |
+|--------------------------------------------------------------------------------------------------|-------------|---------------------|-----------------------------|
+| api-version                                                                                      | 302         | invalid_request     | unsupported version         |
+| Tenant or user data are missing or other required prerequisites for device enrollment aren't met | 302         | unauthorized_client | unauthorized user or tenant |
+| Azure AD token validation failed                                                                 | 302         | unauthorized_client | unauthorized_client         |
+| internal service error                                                                           | 302         | server_error        | internal service error      |
 
 ## Enrollment protocol with Azure AD
 

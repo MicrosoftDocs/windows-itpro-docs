@@ -1,20 +1,8 @@
 ---
 title: Windows Libraries
 description: All about Windows Libraries, which are containers for users' content, such as Documents and Pictures.
-ms.prod: windows-client
-author: vinaypamnani-msft
-ms.author: vinpa
-manager: aaroncz
-ms.reviewer:
-ms.technology: itpro-manage
 ms.topic: article
-ms.date: 04/11/2023
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2022</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2019</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016</a>
+ms.date: 08/10/2023
 ---
 
 # Windows libraries

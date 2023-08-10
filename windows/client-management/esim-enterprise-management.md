@@ -1,16 +1,9 @@
 ---
 title: eSIM Enterprise Management
 description: Learn how Mobile Device Management (MDM) Providers support the eSIM Profile Management Solution on Windows.
-ms.prod: windows-client
-author: vinaypamnani-msft
 ms.localizationpriority: medium
-ms.author: vinpa
 ms.topic: conceptual
-ms.technology: itpro-manage
-ms.date: 12/31/2017
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+ms.date: 08/10/2023
 ---
 
 # How Mobile Device Management Providers support eSIM Management on Windows

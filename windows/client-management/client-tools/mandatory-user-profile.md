@@ -1,20 +1,11 @@
 ---
 title: Create mandatory user profiles
 description: A mandatory user profile is a special type of pre-configured roaming user profile that administrators can use to specify settings for users.
-ms.prod: windows-client
-author: vinaypamnani-msft
-ms.author: vinpa
-ms.date: 04/11/2023
-ms.reviewer:
-manager: aaroncz
+ms.date: 08/10/2023
 ms.topic: article
 ms.collection:
 - highpri
 - tier2
-ms.technology: itpro-manage
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Create mandatory user profiles
@@ -127,13 +118,9 @@ In a domain, you modify properties for the user account to point to the mandator
 ### How to apply a mandatory user profile to users
 
 1. Open **Active Directory Users and Computers** (dsa.msc).
-
 1. Navigate to the user account that you will assign the mandatory profile to.
-
 1. Right-click the user name and open **Properties**.
-
 1. On the **Profile** tab, in the **Profile path** field, enter the path to the shared folder without the extension. For example, if the folder name is `\\server\share\profile.v6`, you would enter `\\server\share\profile`.
-
 1. Click **OK**.
 
 It may take some time for this change to replicate to all domain controllers.

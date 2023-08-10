@@ -1,17 +1,9 @@
 ---
 title: Mobile Device Management overview
 description: Windows provides an enterprise-level solution to mobile management, to help IT pros comply with security policies while avoiding compromise of user's privacy.
-ms.date: 04/05/2023
-ms.technology: itpro-manage
+ms.date: 08/10/2023
 ms.topic: article
-ms.prod: windows-client
 ms.localizationpriority: medium
-author: vinaypamnani-msft
-ms.author: vinpa
-manager: aaroncz
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ms.collection:
 - highpri
 - tier2

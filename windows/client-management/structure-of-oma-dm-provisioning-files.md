@@ -1,17 +1,8 @@
 ---
 title: Structure of OMA DM provisioning files
 description: Learn about the structure of OMA DM provisioning files, for example how each message is composed of a header, specified by the SyncHdr element, and a message body.
-ms.reviewer: 
-manager: aaroncz
-ms.author: vinpa
 ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 06/26/2017
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+ms.date: 08/10/2023
 ---
 
 # Structure of OMA DM provisioning files
@@ -24,10 +15,10 @@ Each message is composed of a header, specified by the SyncHdr element, and a me
 
 The following table shows the OMA DM versions that are supported.
 
-|Version|Format|
-|--- |--- |
-|OMA DM version 1.1.2|<code>&lt;SyncML xmlns='SYNCML:SYNCML1.1'&gt;</code></p><p><code>&lt;/SyncML&gt;</code>|
-|OMA DM version 1.2|<code>&lt;SyncML xmlns='SYNCML:SYNCML1.2'&gt;</code></p><p><code>&lt;/SyncML&gt;</code>|
+| Version              | Format                                       |
+|----------------------|----------------------------------------------|
+| OMA DM version 1.1.2 | `<SyncML xmlns='SYNCML:SYNCML1.1'></SyncML>` |
+| OMA DM version 1.2   | `<SyncML xmlns='SYNCML:SYNCML1.2'></SyncML>` |
 
 ## File format
 
@@ -84,8 +75,6 @@ The following example shows the header component of a DM message. In this case, 
 
 > [!NOTE]
 > The `<LocURI>` node value for the `<Source>` element in the SyncHdr of the device-generated DM package should be the same as the value of ./DevInfo/DevID. For more information about DevID, see [DevInfo configuration service provider](mdm/devinfo-csp.md).
-
- 
 
 ```xml
 <SyncHdr>

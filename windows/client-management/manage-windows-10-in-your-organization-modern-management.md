@@ -1,18 +1,9 @@
 ---
 title: Manage Windows devices in your organization - transitioning to modern management
 description: This article offers strategies for deploying and managing Windows devices, including deploying Windows in a mixed environment.
-ms.prod: windows-client
 ms.localizationpriority: medium
-ms.date: 04/05/2023
-author: vinaypamnani-msft
-ms.author: vinpa
-ms.reviewer:
-manager: aaroncz
+ms.date: 08/10/2023
 ms.topic: overview
-ms.technology: itpro-manage
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Manage Windows devices in your organization - transitioning to modern management

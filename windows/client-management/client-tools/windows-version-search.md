@@ -1,17 +1,8 @@
 ---
 title: What version of Windows am I running?
 description: Discover which version of Windows you're running to determine whether or not your device is enrolled in the Long-Term Servicing Channel or General Availability Channel.
-ms.prod: windows-client
-author: vinaypamnani-msft
-ms.author: vinpa
-ms.date: 04/13/2023
-ms.reviewer:
-manager: aaroncz
+ms.date: 08/10/2023
 ms.topic: troubleshooting
-ms.technology: itpro-manage
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # What version of Windows am I running?

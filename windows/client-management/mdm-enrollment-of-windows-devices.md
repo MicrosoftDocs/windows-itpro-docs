@@ -1,20 +1,11 @@
 ---
 title: MDM enrollment of Windows devices
 description: Learn about mobile device management (MDM) enrollment of Windows devices to simplify access to your organization's resources.
-ms.reviewer:
-manager: aaroncz
-ms.author: vinpa
 ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
 ms.collection:
 - highpri
 - tier2
-ms.date: 04/05/2023
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+ms.date: 08/10/2023
 ---
 
 # MDM enrollment of Windows devices

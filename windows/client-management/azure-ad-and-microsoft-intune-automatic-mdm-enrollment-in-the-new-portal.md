@@ -1,17 +1,8 @@
 ---
 title: Automatic MDM enrollment in the Intune admin center
 description: Automatic MDM enrollment in the Intune admin center
-ms.author: vinpa
 ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 04/05/2023
-ms.reviewer:
-manager: aaroncz
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+ms.date: 08/10/2023
 ---
 
 # Automatic MDM enrollment in the Intune admin center
