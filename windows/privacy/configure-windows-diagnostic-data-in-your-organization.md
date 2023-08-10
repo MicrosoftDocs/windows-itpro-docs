@@ -352,13 +352,10 @@ For Windows devices with diagnostic data turned on and that are joined to an [Az
 
 - [Windows Update for Business reports](/windows/deployment/update/wufb-reports-overview)
 - [Windows Update for Business deployment service](/windows/deployment/update/deployment-service-overview)
-- [Microsoft Managed Desktop](/managed-desktop/intro/)
-- [Endpoint analytics (in Microsoft Intune)](/mem/analytics/overview)
+- [Windows Autopatch](/windows/deployment/windows-autopatch/overview/windows-autopatch-overview)
+- [Windows updates reports (in Microsoft Intune)](/mem/intune/protect/data-enable-windows-data#windows-data)
 
 *(Additional licensing requirements may apply to use these services.)*
-
-> [!NOTE]
-> Microsoft Managed Desktop will transition to end-of-life on July 31, 2024 and is no longer accepting new customers.
 
 If you don’t sign up for any of these enterprise services, Microsoft will act as controller for the diagnostic data.
 
