@@ -8,11 +8,13 @@ ms.localizationpriority: medium
 ms.author: aaroncz
 ms.date: 10/05/2017
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.technology: itpro-configure
 ---
 
 # Set up and test custom voice commands in Cortana for your organization
+<!--Using include for Cortana in Windows deprecation -->
+[!INCLUDE [Deprecation of Cortana in Windows](./includes/cortana-deprecation.md)]
 
 >[!NOTE]
 >This content applies to Cortana in versions 1909 and earlier, but will not be available in future releases.

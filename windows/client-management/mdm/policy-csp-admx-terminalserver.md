@@ -4,7 +4,7 @@ description: Learn more about the ADMX_TerminalServer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 06/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1165,9 +1165,8 @@ This policy setting allows you to specify a list of Secure Hash Algorithm 1 (SHA
 
 - If you disable or don't configure this policy setting, no publisher is treated as a trusted .rdp publisher.
 
-Note:
-
-You can define this policy setting in the Computer Configuration node or in the User Configuration node.
+> [!NOTE]
+> You can define this policy setting in the Computer Configuration node or in the User Configuration node.
 
 - If you configure this policy setting for the computer, the list of certificate thumbprints trusted for a user is a combination of the list defined for the computer and the list defined for the user.
 
@@ -1233,9 +1232,8 @@ This policy setting allows you to specify a list of Secure Hash Algorithm 1 (SHA
 
 - If you disable or don't configure this policy setting, no publisher is treated as a trusted .rdp publisher.
 
-Note:
-
-You can define this policy setting in the Computer Configuration node or in the User Configuration node.
+> [!NOTE]
+> You can define this policy setting in the Computer Configuration node or in the User Configuration node.
 
 - If you configure this policy setting for the computer, the list of certificate thumbprints trusted for a user is a combination of the list defined for the computer and the list defined for the user.
 
@@ -5606,9 +5604,8 @@ This policy setting allows you to specify whether Remote Desktop Services uses a
 
 - If you disable or don't configure this policy setting, mandatory user profiles aren't used by users connecting remotely to the RD Session Host server.
 
-Note:
-
-For this policy setting to take effect, you must also enable and configure the "Set path for Remote Desktop Services Roaming User Profile" policy setting.
+> [!NOTE]
+> For this policy setting to take effect, you must also enable and configure the "Set path for Remote Desktop Services Roaming User Profile" policy setting.
 <!-- TS_USER_MANDATORY_PROFILES-Description-End -->
 
 <!-- TS_USER_MANDATORY_PROFILES-Editable-Begin -->

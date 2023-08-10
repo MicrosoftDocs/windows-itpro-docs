@@ -1,0 +1,63 @@
+items:
+- name: Overview
+  href: index.md
+- name: BitLocker device encryption
+  href: bitlocker-device-encryption-overview-windows-10.md
+- name: BitLocker Countermeasures
+  href: bitlocker-countermeasures.md
+- name: Deployment guides
+  items:
+    - name: Planning for BitLocker
+      href: prepare-your-organization-for-bitlocker-planning-and-policies.md
+    - name: BitLocker basic deployment
+      href: bitlocker-basic-deployment.md
+    - name: BitLocker deployment comparison
+      href: bitlocker-deployment-comparison.md
+- name: How-to guides
+  items:
+    - name: Manage BitLocker in your organization
+      href: bitlocker-management-for-enterprises.md
+    - name: Configure BitLocker on Windows Server
+      href: bitlocker-how-to-deploy-on-windows-server.md
+    - name: Manage BitLocker with Drive Encryption Tools
+      href: bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md
+    - name: Use BitLocker Recovery Password Viewer
+      href: bitlocker-use-bitlocker-recovery-password-viewer.md
+    - name: BitLocker Recovery Guide
+      href: bitlocker-recovery-guide-plan.md
+    - name: Protect cluster shared volumes and storage area networks with BitLocker
+      href: protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md
+- name: BitLocker features
+  items:
+    - name: Network Unlock
+      href: bitlocker-how-to-enable-network-unlock.md
+- name: Reference
+  items:
+    - name: BitLocker Group Policy settings
+      href: bitlocker-group-policy-settings.md
+    - name: BCD settings
+      href: bcd-settings-and-bitlocker.md
+    - name: BitLocker frequently asked questions (FAQ)
+      href: faq.yml
+- name: Troubleshooting
+  items:
+    - name: Troubleshoot BitLocker 🔗
+      href: /troubleshoot/windows-client/windows-security/bitlocker-issues-troubleshooting
+    - name: "BitLocker cannot encrypt a drive: known issues 🔗"
+      href: /troubleshoot/windows-client/windows-security/bitlocker-cannot-encrypt-a-drive-known-issues
+    - name: "Enforcing BitLocker policies by using Intune: known issues 🔗"
+      href: /troubleshoot/windows-client/windows-security/enforcing-bitlocker-policies-by-using-intune-known-issues
+    - name: "BitLocker Network Unlock: known issues 🔗"
+      href: /troubleshoot/windows-client/windows-security/bitlocker-network-unlock-known-issues
+    - name: "BitLocker recovery: known issues 🔗"
+      href: /troubleshoot/windows-client/windows-security/bitlocker-recovery-known-issues
+    - name: "BitLocker configuration: known issues 🔗"
+      href: /troubleshoot/windows-client/windows-security/bitlocker-configuration-known-issues
+    - name: Troubleshoot BitLocker and TPM issues
+      items:
+        - name: "BitLocker cannot encrypt a drive: known TPM issues 🔗"
+          href: /troubleshoot/windows-client/windows-security/bitlocker-cannot-encrypt-a-drive-known-tpm-issues
+        - name: "BitLocker and TPM: other known issues 🔗"
+          href: /troubleshoot/windows-client/windows-security/bitlocker-and-tpm-other-known-issues
+        - name: Decode Measured Boot logs to track PCR changes 🔗
+          href: /troubleshoot/windows-client/windows-security/decode-measured-boot-logs-to-track-pcr-changes

@@ -1,0 +1,1114 @@
+{
+  "redirections": [
+    {
+      "source_path": "windows/deployment/deploy-windows-mdt/create-a-task-sequence-with-configuration-manager-and-mdt.md",
+      "redirect_url": "/windows/deployment/deploy-windows-sccm/create-a-task-sequence-with-configuration-manager-and-mdt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-windows-mdt/deploy-a-windows-11-image-using-mdt.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-windows-mdt/deploy-windows-10-with-configuration-manager.md",
+      "redirect_url": "/windows/deployment/deploy-windows-sccm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/prepare-for-windows-deployment-with-mdt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-windows-mdt/key-features-in-mdt.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit#key-features-in-mdt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-windows-mdt/mdt-lite-touch-components.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/get-started-with-the-microsoft-deployment-toolkit#mdt-lite-touch-components",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-windows-sccm/add-a-windows-10-operating-system-image-using-configuration-manager.md",
+      "redirect_url": "/windows/deployment/deploy-windows-cm/add-a-windows-10-operating-system-image-using-configuration-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-windows-sccm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md",
+      "redirect_url": "/windows/deployment/deploy-windows-cm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-windows-sccm/create-a-custom-windows-pe-boot-image-with-configuration-manager.md",
+      "redirect_url": "/windows/deployment/deploy-windows-cm/create-a-custom-windows-pe-boot-image-with-configuration-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-windows-sccm/create-a-task-sequence-with-configuration-manager-and-mdt.md",
+      "redirect_url": "/windows/deployment/deploy-windows-cm/create-a-task-sequence-with-configuration-manager-and-mdt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-windows-sccm/create-an-application-to-deploy-with-windows-10-using-configuration-manager.md",
+      "redirect_url": "/windows/deployment/deploy-windows-cm/create-an-application-to-deploy-with-windows-10-using-configuration-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-windows-sccm/deploy-windows-10-using-pxe-and-configuration-manager.md",
+      "redirect_url": "/windows/deployment/deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-windows-sccm/deploy-windows-10-with-configuration-manager.md",
+      "redirect_url": "/windows/deployment/deploy-windows-cm/get-started-with-configuraton-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md",
+      "redirect_url": "/windows/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-windows-sccm/finalize-the-os-configuration-for-windows-10-deployment-with-configuration-manager.md",
+      "redirect_url": "/windows/deployment/deploy-windows-cm/finalize-the-os-configuration-for-windows-10-deployment-with-configuration-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-windows-sccm/get-started-with-configuraton-manager.md",
+      "redirect_url": "/windows/deployment/deploy-windows-cm/get-started-with-configuraton-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-windows-sccm/integrate-configuration-manager-with-mdt.md",
+      "redirect_url": "/windows/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager#integrate-configuration-manager-with-mdt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-windows-sccm/monitor-windows-10-deployment-with-configuration-manager.md",
+      "redirect_url": "/windows/deployment/deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager#procedures",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-windows-sccm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md",
+      "redirect_url": "/windows/deployment/deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-windows-sccm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md",
+      "redirect_url": "/windows/deployment/deploy-windows-cm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-windows-sccm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md",
+      "redirect_url": "/windows/deployment/deploy-windows-cm/replace-a-windows-7-client-with-windows-10-using-configuration-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-windows-sccm/upgrade-to-windows-10-with-configuraton-manager.md",
+      "redirect_url": "/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuraton-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/do/mcc-enterprise.md",
+      "redirect_url": "/windows/deployment/do/waas-microsoft-connected-cache",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/features-lifecycle.md",
+      "redirect_url": "/windows/whats-new/feature-lifecycle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/windows-10-1703-removed-features.md",
+      "redirect_url": "/windows/deployment/planning/windows-10-removed-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/windows-10-1709-removed-features.md",
+      "redirect_url": "/windows/deployment/planning/windows-10-removed-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/windows-10-1803-removed-features.md",
+      "redirect_url": "/windows/deployment/planning/windows-10-removed-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/windows-10-1809-removed-features.md",
+      "redirect_url": "/windows/deployment/planning/windows-10-removed-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/windows-10-1903-removed-features.md",
+      "redirect_url": "/windows/deployment/planning/windows-10-removed-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/windows-10-creators-update-deprecation.md",
+      "redirect_url": "/windows/deployment/planning/windows-10-1703-removed-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/windows-10-deprecated-features.md",
+      "redirect_url": "/windows/whats-new/deprecated-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/windows-10-fall-creators-deprecation.md",
+      "redirect_url": "/windows/deployment/planning/windows-10-1709-removed-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/windows-10-removed-features.md",
+      "redirect_url": "/windows/whats-new/removed-features",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/change-history-for-update-windows-10.md",
+      "redirect_url": "/windows/deployment/deploy-whats-new",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/delivery-optimization-proxy.md",
+      "redirect_url": "/windows/deployment/do/delivery-optimization-proxy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/delivery-optimization-workflow.md",
+      "redirect_url": "/windows/deployment/do/delivery-optimization-workflow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/device-health-get-started.md",
+      "redirect_url": "/configmgr/desktop-analytics/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/device-health-monitor.md",
+      "redirect_url": "/configmgr/desktop-analytics/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/device-health-using.md",
+      "redirect_url": "/configmgr/desktop-analytics/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/feature-update-conclusion.md",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/feature-update-maintenance-window.md",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/feature-update-mission-critical.md",
+      "redirect_url": "/windows/deployment/waas-manage-updates-wufb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/quality-updates.md",
+      "redirect_url": "/windows/deployment/update/release-cycle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-configuration-manual.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-configuration-mem.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-configuration-script.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-delivery-optimization.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-feature-update-status.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-get-started.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-monitor.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-need-attention.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-perspectives.md",
+      "redirect_url": "/windows/deployment/update/update-compliance-using",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-privacy.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-safeguard-holds.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-schema-waasdeploymentstatus.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-schema-waasinsiderstatus.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-schema-waasupdatestatus.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-schema-wudoaggregatedstatus.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-schema-wudostatus.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-schema.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-security-update-status.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-using.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-configuration-manual.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-configuration-manual",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-configuration-mem.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-configuration-intune",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-configuration-script.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-configuration-script",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-enable.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-enable",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-help.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-help",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-overview.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-prerequisites.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-prerequisites",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-schema-ucclient.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucclient",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-schema-ucclientreadinessstatus.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucclientreadinessstatus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-schema-ucclientupdatestatus.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucclientupdatestatus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-schema-ucdevicealert.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucdevicealert",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-schema-ucserviceupdatestatus.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucserviceupdatestatus",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-schema-ucupdatealert.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-schema-ucupdatealert",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-schema.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-schema",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-use.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-use",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-v2-workbook.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-workbook",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-compliance-wdav-status.md",
+      "redirect_url": "/windows/deployment/update/update-compliance-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/update-status-admin-center.md",
+      "redirect_url": "/windows/deployment/update/wufb-reports-admin-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/waas-delivery-optimization-faq.md",
+      "redirect_url": "/windows/deployment/do/waas-delivery-optimization-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/waas-delivery-optimization-reference.md",
+      "redirect_url": "/windows/deployment/do/waas-delivery-optimization-reference",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/waas-delivery-optimization-setup.md",
+      "redirect_url": "/windows/deployment/do/waas-delivery-optimization-setup",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/waas-delivery-optimization.md",
+      "redirect_url": "/windows/deployment/do/waas-delivery-optimization",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/waas-deployment-rings-windows-10-updates.md",
+      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/waas-manage-updates-configuration-manager.md",
+      "redirect_url": "/configmgr/osd/deploy-use/manage-windows-as-a-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/waas-microsoft-connected-cache.md",
+      "redirect_url": "/windows/deployment/do/waas-microsoft-connected-cache",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/waas-mobile-updates.md",
+      "redirect_url": "/windows/deployment/update/waas-configure-wufb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/waas-optimize-windows-10.md",
+      "redirect_url": "/windows/deployment/do/waas-optimize-windows-10",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/waas-servicing-branches-windows-10-updates.md",
+      "redirect_url": "/windows/deployment/update/waas-servicing-channels-windows-10-updates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/waas-servicing-differences.md",
+      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/waas-windows-insider-for-business-aad.md",
+      "redirect_url": "/windows-insider/at-work-pro/wip-4-biz-add",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/waas-windows-insider-for-business-faq.md",
+      "redirect_url": "/windows-insider/at-work-pro/wip-4-biz-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/waas-windows-insider-for-business.md",
+      "redirect_url": "/windows-insider/at-work-pro/wip-4-biz-get-started",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/waas-wufb-intune.md",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/windows-analytics-azure-portal.md",
+      "redirect_url": "/configmgr/desktop-analytics/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/windows-analytics-FAQ-troubleshooting.md",
+      "redirect_url": "/configmgr/desktop-analytics/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/windows-analytics-get-started.md",
+      "redirect_url": "/configmgr/desktop-analytics/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/windows-analytics-overview.md",
+      "redirect_url": "/configmgr/desktop-analytics/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/windows-analytics-privacy.md",
+      "redirect_url": "/configmgr/desktop-analytics/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/windows-update-errors.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/common-windows-update-errors?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/windows-update-resources.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/additional-resources-for-windows-update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/windows-update-sources.md",
+      "redirect_url": "/windows/deployment/update/how-windows-update-works",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/windows-update-troubleshooting.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/windows-update-issues-troubleshooting?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/wufb-autoupdate.md",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/wufb-basics.md",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/wufb-managedrivers.md",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/wufb-manageupdate.md",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/wwufb-onboard.md",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness.md",
+      "redirect_url": "/configmgr/desktop-analytics/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/quick-fixes.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/windows-10-upgrade-quick-fixes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/resolution-procedures.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/windows-10-upgrade-resolution-procedures?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/troubleshoot-upgrade-errors.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/windows-10-upgrade-issues-troubleshooting?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/upgrade-error-codes.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/windows-10-upgrade-error-codes?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/upgrade-readiness-additional-insights.md",
+      "redirect_url": "/configmgr/desktop-analytics/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/upgrade-readiness-architecture.md",
+      "redirect_url": "/configmgr/desktop-analytics/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/upgrade-readiness-data-sharing.md",
+      "redirect_url": "/configmgr/desktop-analytics/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/upgrade-readiness-deploy-windows.md",
+      "redirect_url": "/configmgr/desktop-analytics/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/upgrade-readiness-deployment-script.md",
+      "redirect_url": "/configmgr/desktop-analytics/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/upgrade-readiness-get-started.md",
+      "redirect_url": "/configmgr/desktop-analytics/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/upgrade-readiness-identify-apps.md",
+      "redirect_url": "/configmgr/desktop-analytics/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/upgrade-readiness-monitor-deployment.md",
+      "redirect_url": "/configmgr/desktop-analytics/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/upgrade-readiness-requirements.md",
+      "redirect_url": "/configmgr/desktop-analytics/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/upgrade-readiness-resolve-issues.md",
+      "redirect_url": "/configmgr/desktop-analytics/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/upgrade-readiness-target-new-OS.md",
+      "redirect_url": "/configmgr/desktop-analytics/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/upgrade-readiness-upgrade-overview.md",
+      "redirect_url": "/configmgr/desktop-analytics/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/upgrade-to-windows-10-with-system-center-configuraton-manager.md",
+      "redirect_url": "/windows/deployment/deploy-windows-sccm/upgrade-to-windows-10-with-configuraton-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/upgrade-windows-phone-8-1-to-10.md",
+      "redirect_url": "/windows/deployment/upgrade/windows-10-edition-upgrades",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/use-upgrade-readiness-to-manage-windows-upgrades.md",
+      "redirect_url": "/configmgr/desktop-analytics/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/upgrade/windows-10-edition-downgrades.md",
+      "redirect_url": "/windows/deployment/upgrade/windows-10-edition-upgrades",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/usmt/usmt-common-issues.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/usmt-common-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/usmt/usmt-return-codes.md",
+      "redirect_url": "/troubleshoot/windows-client/deployment/usmt-return-codes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-10-architecture-posters.md",
+      "redirect_url": "/windows/deployment/windows-10-deployment-scenarios",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-10-auto-pilot.md",
+      "redirect_url": "/windows/deployment/windows-autopilot/windows-10-autopilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-10-enterprise-activation-subscription.md",
+      "redirect_url": "/windows/deployment/windows-10-enterprise-subscription-activation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-10-enterprise-subscription-activation.md",
+      "redirect_url": "/windows/deployment/windows-10-subscription-activation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/deploy/index.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/deploy/windows-autopatch-admin-contacts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/index.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-update-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-fu-end-user-exp.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-end-user-exp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-fu-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-update-management.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-update-management",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-end-user-exp.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-manage-windows-feature-update-release",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-feature-update-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-feature-update-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-all-devices-historical-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-trending-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-all-devices-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-status-report",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-communications.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-communications",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-eligible-devices-historical-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-end-user-exp.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-end-user-exp",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-ineligible-devices-historical-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-reports-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-signals.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-signals",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-summary-dashboard.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-quality-update-summary-dashboard",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-windows-update.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-groups-windows-update",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-all-devices-historical-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-all-devices-historical-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-all-devices-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-all-devices-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-communications.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-communications",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-eligible-devices-historical-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-eligible-devices-historical-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-end-user-exp.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-end-user-exp",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-ineligible-devices-historical-report.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-ineligible-devices-historical-report",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-reports-overview.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-reports-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-signals.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-signals",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-summary-dashboard.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-windows-quality-update-summary-dashboard",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-wqu-unsupported-policies.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/references/windows-autopatch-wqu-unsupported-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/prepare/index.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/prepare/windows-autopatch-prerequisites",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/references/windows-autopatch-groups-public-preview-addendum.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/deploy/windows-autopatch-groups-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/references/windows-autopatch-preview-addendum.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/overview/windows-autopatch-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/references/windows-autopatch-privacy.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/overview/windows-autopatch-privacy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/references/windows-autopatch-wqu-unsupported-policies.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/references/windows-autopatch-windows-update-unsupported-policies",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/add-devices.md",
+      "redirect_url": "/mem/autopilot/add-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/administer.md",
+      "redirect_url": "/windows/deployment/windows-autopilot/add-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/autopilot-device-guidelines.md",
+      "redirect_url": "/mem/autopilot/autopilot-device-guidelines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/autopilot-faq.md",
+      "redirect_url": "/mem/autopilot/autopilot-faq",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/autopilot-mbr.md",
+      "redirect_url": "/mem/autopilot/autopilot-mbr",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/autopilot-support.md",
+      "redirect_url": "/mem/autopilot/autopilot-support",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/autopilot-update.md",
+      "redirect_url": "/mem/autopilot/autopilot-update",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/bitlocker.md",
+      "redirect_url": "/mem/autopilot/bitlocker",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/configure-autopilot.md",
+      "redirect_url": "/windows/deployment/windows-autopilot/add-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/deployment-process.md",
+      "redirect_url": "/mem/autopilot/deployment-process",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/dfci-management.md",
+      "redirect_url": "/mem/autopilot/dfci-management",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/enrollment-status.md",
+      "redirect_url": "/mem/autopilot/enrollment-status",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/existing-devices.md",
+      "redirect_url": "/mem/autopilot/existing-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/intune-connector.md",
+      "redirect_url": "/intune/windows-autopilot-hybrid",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/known-issues.md",
+      "redirect_url": "/mem/autopilot/known-issues",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/policy-conflicts.md",
+      "redirect_url": "/mem/autopilot/policy-conflicts",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/profiles.md",
+      "redirect_url": "/mem/autopilot/profiles",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/registration-auth.md",
+      "redirect_url": "/mem/autopilot/registration-auth",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/self-deploying.md",
+      "redirect_url": "/mem/autopilot/self-deploying",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/troubleshooting.md",
+      "redirect_url": "/mem/autopilot/troubleshooting",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/user-driven-aad.md",
+      "redirect_url": "/mem/autopilot/user-driven",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/user-driven-hybrid.md",
+      "redirect_url": "/mem/autopilot/user-driven",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/user-driven.md",
+      "redirect_url": "/mem/autopilot/user-driven",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/white-glove.md",
+      "redirect_url": "/mem/autopilot/white-glove",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/windows-10-autopilot.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/windows-autopilot-requirements-configuration.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/windows-autopilot-requirements-licensing.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/windows-autopilot-requirements-network.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/windows-autopilot-requirements.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot-requirements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/windows-autopilot-reset-local.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot-reset",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/windows-autopilot-reset-remote.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot-reset",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/windows-autopilot-reset.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot-reset",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/windows-autopilot-scenarios.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot-scenarios",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/windows-autopilot-whats-new.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot-whats-new",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/windows-autopilot.md",
+      "redirect_url": "/mem/autopilot/windows-autopilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/demonstrate-deployment-on-vm.md",
+      "redirect_url": "/mem/autopilot/tutorial/autopilot-scenarios",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/index.yml",
+      "redirect_url": "/mem/autopilot/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy.md",
+      "redirect_url": "/windows/deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/act-technical-reference.md",
+      "redirect_url": "/windows/deployment/planning/compatibility-administrator-users-guide",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/index.md",
+      "redirect_url": "/windows/deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/add-store-apps-to-image.md",
+      "redirect_url": "/windows/deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/deploy-updates-configmgr.md",
+      "redirect_url": "/mem/configmgr/osd/deploy-use/manage-windows-as-a-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/deploy-updates-intune.md",
+      "redirect_url": "/mem/intune/protect/windows-update-for-business-configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/index.md",
+      "redirect_url": "/windows/deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/olympia/olympia-enrollment-guidelines.md",
+      "redirect_url": "/windows-insider/business/register",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/WIP4Biz-intro.md",
+      "redirect_url": "/windows-insider/business/register",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/waas-morenews.md",
+      "redirect_url": "/windows/deployment/update/waas-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/windows-as-a-service.md",
+      "redirect_url": "/windows/deployment/update/waas-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-10-deployment-tools.md",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-10-deployment-tools-reference.md",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-deregister-devices.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-exclude-device",
+      "redirect_document_id": true
+    }
+  ]
+}

@@ -4,7 +4,7 @@ description: Learn more about the Defender Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 08/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -443,6 +443,9 @@ This policy setting allows you to manage whether or not to scan for malicious so
 
 <!-- AllowIntrusionPreventionSystem-Begin -->
 ## AllowIntrusionPreventionSystem
+
+> [!NOTE]
+> This policy is deprecated and may be removed in a future release.
 
 <!-- AllowIntrusionPreventionSystem-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
@@ -1764,6 +1767,8 @@ Same as Disabled.
 | 0 (Default) | Disabled. |
 | 1 | Enabled. |
 | 2 | Audit Mode. |
+| 3 | Block disk modification only. |
+| 4 | Audit disk modification only. |
 <!-- EnableControlledFolderAccess-AllowedValues-End -->
 
 <!-- EnableControlledFolderAccess-GpMapping-Begin -->

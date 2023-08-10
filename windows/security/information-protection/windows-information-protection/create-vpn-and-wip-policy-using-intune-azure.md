@@ -1,15 +1,12 @@
 ---
 title: Associate and deploy a VPN policy for Windows Information Protection (WIP) using the Azure portal for Microsoft Intune 
 description: After you've created and deployed your Windows Information Protection (WIP) policy, use Microsoft Intune to link it to your Virtual Private Network (VPN) policy
-ms.prod: windows-client
-ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz
-manager: dougeby
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 02/26/2019
 ms.reviewer: 
-ms.technology: itpro-security
 ---
 
 # Associate and deploy a VPN policy for Windows Information Protection (WIP) using Microsoft Intune

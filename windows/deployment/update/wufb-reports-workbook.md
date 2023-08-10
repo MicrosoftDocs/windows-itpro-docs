@@ -6,7 +6,7 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.topic: article
-ms.date: 04/26/2023
+ms.date: 06/23/2023
 ms.technology: itpro-updates
 ---
 
@@ -35,6 +35,7 @@ To access the Windows Update for Business reports workbook:
 1. When the gallery opens, select the **Windows Update for Business reports** workbook. If needed, you can filter workbooks by name in the gallery.
 1. When the workbook opens, you may need to specify which **Subscription** and **Workspace** you used when [enabling Windows Update for Business reports](wufb-reports-enable.md).
 
+
 ## Summary tab
 
 The **Summary** tab gives you a brief high-level overview of the devices that you've enrolled into Windows Update for Business reports.  The **Summary** tab contains tiles above the **Overall security update status** chart.
@@ -43,13 +44,13 @@ The **Summary** tab gives you a brief high-level overview of the devices that yo
 
 Each of these tiles contains an option to **View details**. When **View details** is selected for a tile, a flyout appears with additional information.
 
-:::image type="content" source="media/33771278-workbook-summary-tab-tiles.png" alt-text="Screenshot of the summary tab tiles in the Windows Update for Business reports workbook":::
+:::image type="content" source="media/8037522-workbook-summary-tab-tiles.png" alt-text="Screenshot of the summary tab tiles in the Windows Update for Business reports workbook":::
 
 | Tile name | Description | View details description |
 |---|---|------|
 | **Enrolled devices** | Total number of devices that are enrolled into Windows Update for Business reports | Displays multiple charts about the operating systems (OS) for enrolled devices: </br> **OS Version** </br> **OS Edition** </br> **OS Servicing Channel** </br> **OS Architecture**|
-|**Active alerts** | Total number of active alerts on enrolled devices | Displays the top three active alert subtypes and the count of devices in each. </br> </br> Select the count of **Devices** to display a table of the devices. This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial). </br> </br> Select an **AlertSubtype** to display a list containing: </br> - Each **Error Code** in the alert subtype </br>- A **Description** of the error code </br> - A **Recommendation** to help you remediate the error code </br> - A count of **Devices** with the specific error code |
-|  **Windows 11 eligibility** | Percentage of devices that are capable of running Windows 11 | Displays the following items: </br> - **Windows 11 Readiness Status** chart </br> - **Readiness Reason(s) Breakdown** chart that displays  Windows 11 requirements that aren't met. </br> - A table for **Readiness reason**. Select a reason to display a list of devices that don't meet a specific requirement for Windows 11. |
+|**Active alerts** | Total number of active alerts on enrolled devices | Displays the top three active alert subtypes and the count of devices in each. </br> </br> Select the count of **Devices** to display a table of the devices. This table is limited to the first 1000 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial). </br> </br> Select an **AlertSubtype** to display a list containing: </br> - Each **Error Code** in the alert subtype </br>- A **Description** of the error code </br> - A **Recommendation** to help you remediate the error code </br> - A count of **Devices** with the specific error code |
+|  **Windows 11 adoption** | Number of devices that are running Windows 11 | Displays the following items: </br> - **Windows 11 Device Count** chart, broken down by Windows 11 version </br> - **Windows 11 Eligibility Status** contains a **Readiness status** chart that lists the count of devices by OS version that are either capable or not capable of running Windows 11. </br> - The **Device List** allows you to choose a Windows 11 **Ineligibility Reason** to display devices that don't meet the selected requirement. <!--8037522-->|
 
 ### Summary tab charts
 
@@ -63,15 +64,14 @@ The charts displayed in the **Summary** tab give you a general idea of the overa
 
 ## Quality updates tab
 
-The **Quality updates** tab displays generalized data at the top by using tiles. The quality update data becomes more specific as you navigate lower in this tab. The top of the **Quality updates** tab contains tiles with the following information:
+The **Quality updates** tab displays generalized data at the top by using tiles. The quality update data becomes more specific as you navigate lower in this tab. The top of the **Quality updates** tab contains tiles with the following information and drill-down options:
 
-- **Latest security update**: Count of devices that have reported successful installation of the latest security update.
-- **Missing one security update**: Count of devices that haven't installed the latest security update.
-- **Missing multiple security updates**: Count of devices that are missing two or more security updates.
-- **Active alerts**: Count of active update and device alerts for quality updates.
-
-Selecting **View details** on any of the tiles displays a flyout with a chart that displays the first 250 items. Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
-
+| Tile name | Description | Drill-in description |
+|---|---|---|
+|**Latest security update**| Count of devices that have reported successful installation of the latest security update. | - Select **View details** to display a flyout with a chart that displays the first 1000 items. </br> - Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial). | 
+| **Missing one security update** | Count of devices that haven't installed the latest security update.| - Select **View details** to display a flyout with a chart that displays the first 1000 items. </br> - Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).|
+| **Missing multiple security updates** | Count of devices that are missing two or more security updates. | - Select **View details** to display a flyout with a chart that displays the first 1000 items. </br> - Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial). |
+| **Expedite performance** | Overview of the progress for the expedited deployments of the latest security update. | - Select **View details** to display a flyout with a chart that displays the total progress of each deployment, number of alerts, and count of devices. </br> - Select the count from the **Alerts** column to display the alerts, by name, for the deployment. Selecting the device count for the alert name displays a list of devices with the alert. </br> - Select the count in the **TotalDevices** column to display a list of clients and their information for the deployment. <!--7626683-->|
 
 Below the tiles, the **Quality updates** tab is subdivided into **Update status** and **Device status** groups. These different chart groups allow you to easily discover trends in compliance data. For instance, you may remember that about third of your devices were in the installing state yesterday, but this number didn't change as much as you were expecting. That unexpected trend may cause you to investigate and resolve a potential issue before end users are impacted.
 
@@ -79,10 +79,9 @@ Below the tiles, the **Quality updates** tab is subdivided into **Update status*
 
 The **Update status** group for quality updates contains the following items:
 
-- **Update states for all security releases**: Chart containing the number of devices in a specific state, such as installing, for security updates.
+- **Update states for all security releases**: The update states for the last 3 security updates are used to populate this chart. The total number of update states is approximately 3 times the number of devices that have reported update data to Windows Update for Business reports in the past 30 days.
 - **Update alerts for all security releases**: Chart containing the count of active errors and warnings for security updates.
 
-:::image type="content" source="media/33771278-update-deployment-status-table.png" alt-text="Screenshot of the charts and table in the workbook's quality updates tab" lightbox="media/33771278-update-deployment-status-table.png":::
 
 The **Update deployment status** table displays the quality updates for each operating system version that were released within the last 60 days. For each update, drill-in further by selecting a value from the following columns:
 
@@ -90,7 +89,7 @@ The **Update deployment status** table displays the quality updates for each ope
 |---|---|---|
 |**Alerts**| Number of different error codes encountered by devices for the update. | Selecting this number lists the alert name for each error code and a count of devices with the error. Select the device count to display a list of devices that have an active alert for the error code.  
 | **KB Number** | KB number for the update |  Selecting the KB number will open the support information webpage for the update.|
-| **Total devices** | Number of devices that have been offered the update, or are installing, have installed, or canceled the update. | Selecting the device count opens a device list table. This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).  |
+| **Total devices** | Number of devices that have been offered the update, or are installing, have installed, or canceled the update. | Selecting the device count opens a device list table. This table is limited to the first 1000 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).  |
 
 ### <a name="bkmk_device-group-quality"></a> Device status group for quality updates
 
@@ -99,7 +98,7 @@ The **Device status** group for quality updates contains the following items:
 - **OS build number**: Chart containing a count of devices by OS build that are getting security updates.
 - **Device alerts**: Chart containing the count of active device errors and warnings for quality updates.
 - **Device compliance status**: Table containing a list of devices getting security updates and update installation information including active alerts for the devices.
-  - This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
+  - This table is limited to the first 1000 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
 ## Feature updates tab
 
@@ -110,7 +109,7 @@ The **Feature updates** tab displays generalized data at the top by using tiles.
 - **Nearing EOS** Count of devices that are within 18 months of their end of service date.
 - **Active alerts**: Count of active update and device alerts for feature updates.
 
-Just like the [**Quality updates** tab](#quality-updates-tab), the **Feature updates** tab is also subdivided into **Update status** and **Device status** groups below the tiles. Selecting **View details** on any of the tiles displays a flyout with a chart that displays the first 250 items. Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
+Just like the [**Quality updates** tab](#quality-updates-tab), the **Feature updates** tab is also subdivided into **Update status** and **Device status** groups below the tiles. Selecting **View details** on any of the tiles displays a flyout with a chart that displays the first 1000 items. Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
 ### <a name="bkmk_update-group-feature"></a> Update status group for feature updates
 
@@ -120,13 +119,13 @@ The **Update status** group for feature updates contains the following items:
 - **Safeguard holds**: Chart containing count of devices per operating system version that are under a safeguard hold for a feature update
 - **Update alerts**: Chart containing the count of active errors and warnings for feature updates.
 
-**Update deployment status** table for feature updates displays the installation status by targeted operating system version. For each operating system version targeted the following columns are available:
+**Update deployment status** table for feature updates displays the installation status by targeted operating system version. For each operating system version targeted, the following columns are available:
 
 | Column name | Description | Drill-in description |
 |---|---|---|
 | **Total progress** | Percentage of devices that installed the targeted operating system version feature update within the last 30 days. | A bar graph is included in this column. Use the **Total devices** drill-in for additional information. |
 |**Alerts**| Number of different error codes encountered by devices for the update. | Selecting this number lists the alert name for each error code and a count of devices with the error. Select the device count to display a list of devices that have an active alert for the error code.  |
-| **Total Devices** | Count of devices for each targeted operating system version that have been offered the update, or are installing, have installed, or canceled the feature update.| Selecting the device count opens a device list table. This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial). |
+| **Total Devices** | Count of devices for each targeted operating system version that have been offered the update, or are installing, have installed, or canceled the feature update.| Selecting the device count opens a device list table. This table is limited to the first 1000 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial). |
 
 ### <a name="bkmk_device-group-feature"></a> Device status group for feature updates
 
@@ -135,7 +134,7 @@ The **Device status** group for feature updates contains the following items:
 - **Windows 11 readiness status**: Chart containing how many devices that have a status of capable, not capable, or unknown for Windows 11 readiness.
 - **Device alerts**: Count of active device alerts for feature updates in each alert classification.
 - **Device compliance status**: Table containing a list of devices getting a feature update and installation information including active alerts for the devices.
-  - This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
+  - This table is limited to the first 1000 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
 ## Driver updates tab
 
@@ -146,7 +145,7 @@ The **Driver update** tab provides information on driver and firmware update dep
 **Total policies**: The total number of deployment polices for driver and firmware updates from [Windows Update for Business deployment service](deployment-service-overview.md)
 **Active alerts**: Count of active alerts for driver deployments
 
-Selecting **View details** on any of the tiles displays a flyout with a chart that displays the first 250 items. Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
+Selecting **View details** on any of the tiles displays a flyout with a chart that displays the first 1000 items. Select `...` from the flyout to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
 :::image type="content" source="media/7539531-wufb-reports-workbook-drivers.png" alt-text="Screenshot of the update status tab for driver updates." lightbox="media/7539531-wufb-reports-workbook-drivers.png":::
 
@@ -168,7 +167,7 @@ The **Device status** group for driver updates contains the following items:
 
 - **Device alerts**: Count of active device alerts for driver updates in each alert classification.
 - **Device compliance status**: Table containing a list of devices getting a driver update and installation information including active alerts for the devices.
-  - This table is limited to the first 250 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
+  - This table is limited to the first 1000 rows. Select `...` to export the full list, or display the query in [Log Analytics](/azure/azure-monitor/logs/log-analytics-tutorial).
 
 ## <a name="bkmk_do"></a> Delivery Optimization
 
@@ -189,6 +188,17 @@ The Delivery Optimization tab is further divided into the following groups:
 
 :::image type="content" source="media/wufb-do-overview.png" alt-text="Screenshot of the summary tab in the Windows Update for Business reports workbook for Delivery Optimization." lightbox="media/wufb-do-overview.png":::
 
+## Understanding update states
+
+Updates can go though many phases from when they're initially deployed to being installed on the device. Transition from one state to another can be rapid, which makes some states less likely to be displayed in reports. The workbook can report the following high-level states for a device update: <!--8052067-->
+
+- **Offering**: The update is being offered to the device for installation
+- **Installing**: The update is in the process of being installed on the device
+- **Installed**: The update has been installed on the device
+- **Cancelled**: The update was cancelled from the [deployment service](deployment-service-overview.md) before it was installed
+- **Uninstalled**: The update was uninstalled from the device by either an admin or a user
+- **OnHold**: The update was put on hold from the [deployment service](deployment-service-overview.md) before it was installed
+- **Unknown**: This state occurs when there's a record for the device in the [UCClient](wufb-reports-schema-ucclient.md) table, but there isn't a record for the specific update for the specific device in the [UCClientUpdateStatus](wufb-reports-schema-ucclientupdatestatus.md) table. This means that there is no record of the update for the device in question.
 
 ## Customize the workbook
 

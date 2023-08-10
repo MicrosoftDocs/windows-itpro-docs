@@ -4,7 +4,7 @@ description: Learn about the policies in Policy CSP supported by Group Policy.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/01/2023
+ms.date: 08/07/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -40,8 +40,6 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [AllowDeveloperUnlock](policy-csp-applicationmanagement.md)
 - [AllowGameDVR](policy-csp-applicationmanagement.md)
 - [AllowSharedUserAppData](policy-csp-applicationmanagement.md)
-- [RequirePrivateStoreOnly](policy-csp-applicationmanagement.md)
-- [MSIAlwaysInstallWithElevatedPrivileges](policy-csp-applicationmanagement.md)
 - [MSIAllowUserControlOverInstall](policy-csp-applicationmanagement.md)
 - [RestrictAppDataToSystemVolume](policy-csp-applicationmanagement.md)
 - [RestrictAppToSystemVolume](policy-csp-applicationmanagement.md)
@@ -178,59 +176,6 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [SyncFavoritesBetweenIEAndMicrosoftEdge](policy-csp-browser.md)
 - [UnlockHomeButton](policy-csp-browser.md)
 - [UseSharedFolderForBooks](policy-csp-browser.md)
-- [AllowAddressBarDropdown](policy-csp-browser.md)
-- [AllowAutofill](policy-csp-browser.md)
-- [AllowCookies](policy-csp-browser.md)
-- [AllowDeveloperTools](policy-csp-browser.md)
-- [AllowDoNotTrack](policy-csp-browser.md)
-- [AllowExtensions](policy-csp-browser.md)
-- [AllowFlash](policy-csp-browser.md)
-- [AllowFlashClickToRun](policy-csp-browser.md)
-- [AllowFullScreenMode](policy-csp-browser.md)
-- [AllowInPrivate](policy-csp-browser.md)
-- [AllowMicrosoftCompatibilityList](policy-csp-browser.md)
-- [ConfigureTelemetryForMicrosoft365Analytics](policy-csp-browser.md)
-- [AllowPasswordManager](policy-csp-browser.md)
-- [AllowPopups](policy-csp-browser.md)
-- [AllowPrinting](policy-csp-browser.md)
-- [AllowSavingHistory](policy-csp-browser.md)
-- [AllowSearchEngineCustomization](policy-csp-browser.md)
-- [AllowSearchSuggestionsinAddressBar](policy-csp-browser.md)
-- [AllowSideloadingOfExtensions](policy-csp-browser.md)
-- [AllowSmartScreen](policy-csp-browser.md)
-- [AllowWebContentOnNewTabPage](policy-csp-browser.md)
-- [AlwaysEnableBooksLibrary](policy-csp-browser.md)
-- [ClearBrowsingDataOnExit](policy-csp-browser.md)
-- [ConfigureAdditionalSearchEngines](policy-csp-browser.md)
-- [ConfigureFavoritesBar](policy-csp-browser.md)
-- [ConfigureHomeButton](policy-csp-browser.md)
-- [ConfigureOpenMicrosoftEdgeWith](policy-csp-browser.md)
-- [DisableLockdownOfStartPages](policy-csp-browser.md)
-- [EnableExtendedBooksTelemetry](policy-csp-browser.md)
-- [AllowTabPreloading](policy-csp-browser.md)
-- [AllowPrelaunch](policy-csp-browser.md)
-- [EnterpriseModeSiteList](policy-csp-browser.md)
-- [PreventTurningOffRequiredExtensions](policy-csp-browser.md)
-- [HomePages](policy-csp-browser.md)
-- [LockdownFavorites](policy-csp-browser.md)
-- [ConfigureKioskMode](policy-csp-browser.md)
-- [ConfigureKioskResetAfterIdleTimeout](policy-csp-browser.md)
-- [PreventAccessToAboutFlagsInMicrosoftEdge](policy-csp-browser.md)
-- [PreventFirstRunPage](policy-csp-browser.md)
-- [PreventCertErrorOverrides](policy-csp-browser.md)
-- [PreventSmartScreenPromptOverride](policy-csp-browser.md)
-- [PreventSmartScreenPromptOverrideForFiles](policy-csp-browser.md)
-- [PreventLiveTileDataCollection](policy-csp-browser.md)
-- [PreventUsingLocalHostIPAddressForWebRTC](policy-csp-browser.md)
-- [ProvisionFavorites](policy-csp-browser.md)
-- [SendIntranetTraffictoInternetExplorer](policy-csp-browser.md)
-- [SetDefaultSearchEngine](policy-csp-browser.md)
-- [SetHomeButtonURL](policy-csp-browser.md)
-- [SetNewTabPageURL](policy-csp-browser.md)
-- [ShowMessageWhenOpeningSitesInInternetExplorer](policy-csp-browser.md)
-- [SyncFavoritesBetweenIEAndMicrosoftEdge](policy-csp-browser.md)
-- [UnlockHomeButton](policy-csp-browser.md)
-- [UseSharedFolderForBooks](policy-csp-browser.md)
 
 ## Camera
 
@@ -252,6 +197,8 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 ## Cryptography
 
 - [AllowFipsAlgorithmPolicy](policy-csp-cryptography.md)
+- [TLSCipherSuites](policy-csp-cryptography.md)
+- [ConfigureEllipticCurveCryptography](policy-csp-cryptography.md)
 
 ## Defender
 
@@ -347,7 +294,6 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [EnablePerProcessDpi](policy-csp-display.md)
 - [TurnOnGdiDPIScalingForApps](policy-csp-display.md)
 - [TurnOffGdiDPIScalingForApps](policy-csp-display.md)
-- [EnablePerProcessDpi](policy-csp-display.md)
 - [EnablePerProcessDpiForApps](policy-csp-display.md)
 - [DisablePerProcessDpiForApps](policy-csp-display.md)
 
@@ -362,6 +308,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 
 ## Experience
 
+- [AllowScreenRecorder](policy-csp-experience.md)
 - [AllowSpotlightCollection](policy-csp-experience.md)
 - [AllowThirdPartySuggestionsInWindowsSpotlight](policy-csp-experience.md)
 - [AllowWindowsSpotlight](policy-csp-experience.md)
@@ -517,6 +464,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [DisallowNotificationMirroring](policy-csp-notifications.md)
 - [DisallowTileNotification](policy-csp-notifications.md)
 - [EnableExpandedToastNotifications](policy-csp-notifications.md)
+- [DisableAccountNotifications](policy-csp-notifications.md)
 - [DisallowCloudNotification](policy-csp-notifications.md)
 - [WnsEndpoint](policy-csp-notifications.md)
 
@@ -628,7 +576,6 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [PublishUserActivities](policy-csp-privacy.md)
 - [UploadUserActivities](policy-csp-privacy.md)
 - [AllowCrossDeviceClipboard](policy-csp-privacy.md)
-- [DisablePrivacyExperience](policy-csp-privacy.md)
 - [LetAppsActivateWithVoice](policy-csp-privacy.md)
 - [LetAppsActivateWithVoiceAboveLock](policy-csp-privacy.md)
 
@@ -662,7 +609,6 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 
 - [ConfigureTaskbarCalendar](policy-csp-settings.md)
 - [PageVisibilityList](policy-csp-settings.md)
-- [PageVisibilityList](policy-csp-settings.md)
 - [AllowOnlineTips](policy-csp-settings.md)
 
 ## SmartScreen
@@ -689,18 +635,8 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [HideRecommendedPersonalizedSites](policy-csp-start.md)
 - [HideTaskViewButton](policy-csp-start.md)
 - [DisableControlCenter](policy-csp-start.md)
-- [ForceStartSize](policy-csp-start.md)
-- [DisableContextMenus](policy-csp-start.md)
-- [ShowOrHideMostUsedApps](policy-csp-start.md)
-- [HideFrequentlyUsedApps](policy-csp-start.md)
-- [HideRecentlyAddedApps](policy-csp-start.md)
-- [StartLayout](policy-csp-start.md)
-- [ConfigureStartPins](policy-csp-start.md)
-- [HideRecommendedSection](policy-csp-start.md)
-- [HideRecommendedPersonalizedSites](policy-csp-start.md)
 - [SimplifyQuickSettings](policy-csp-start.md)
 - [DisableEditingQuickSettings](policy-csp-start.md)
-- [HideTaskViewButton](policy-csp-start.md)
 
 ## Storage
 
@@ -719,7 +655,6 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [AllowBuildPreview](policy-csp-system.md)
 - [AllowFontProviders](policy-csp-system.md)
 - [AllowLocation](policy-csp-system.md)
-- [AllowTelemetry](policy-csp-system.md)
 - [TelemetryProxy](policy-csp-system.md)
 - [DisableOneDriveFileSync](policy-csp-system.md)
 - [AllowWUfBCloudProcessing](policy-csp-system.md)
@@ -765,7 +700,6 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [RestrictLanguagePacksAndFeaturesInstall](policy-csp-timelanguagesettings.md)
 - [BlockCleanupOfUnusedPreinstalledLangPacks](policy-csp-timelanguagesettings.md)
 - [MachineUILanguageOverwrite](policy-csp-timelanguagesettings.md)
-- [RestrictLanguagePacksAndFeaturesInstall](policy-csp-timelanguagesettings.md)
 
 ## Troubleshooting
 
@@ -840,6 +774,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [ConfigureDeadlineNoAutoReboot](policy-csp-update.md)
 - [ConfigureDeadlineNoAutoRebootForFeatureUpdates](policy-csp-update.md)
 - [ConfigureDeadlineNoAutoRebootForQualityUpdates](policy-csp-update.md)
+- [AllowOptionalContent](policy-csp-update.md)
 
 ## UserRights
 

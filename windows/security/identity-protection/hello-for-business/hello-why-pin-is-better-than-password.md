@@ -29,7 +29,7 @@ When the PIN is created, it establishes a trusted relationship with the identity
 Even though local passwords are local to the device, they're less secure than a PIN, as described in the next section.
 
 >[!NOTE]
->For details on how Hello uses asymmetric key pairs for authentication, see [Windows Hello for Business](hello-overview.md#benefits-of-windows-hello).
+>For details on how Hello uses asymmetric key pairs for authentication, see [Windows Hello for Business](index.md#benefits-of-windows-hello).
 
 ## PIN is backed by hardware
 
@@ -66,6 +66,6 @@ To configure account lockout threshold, follow these steps:
 
 ## Why do you need a PIN to use biometrics?
 
-Windows Hello enables biometric sign-in for Windows: fingerprint, iris, or facial recognition. When you set up Windows Hello, you're asked to create a PIN first. This PIN enables you to sign in using the PIN when you can't use your preferred biometric because of an injury or because the sensor is unavailable or not working properly.
+Windows Hello enables biometric sign-in for Windows: fingerprint, iris, or facial recognition. When you set up Windows Hello, you're asked to create a PIN after the biometric setup. The PIN enables you to sign in when you can't use your preferred biometric because of an injury or because the sensor is unavailable or not working properly.
 
 If you only had a biometric sign-in configured and, for any reason, were unable to use that method to sign in, you would have to sign in using your account and password, which doesn't provide you with the same level of protection as Hello.

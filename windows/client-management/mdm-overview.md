@@ -56,7 +56,7 @@ For more information about the MDM policies defined in the MDM security baseline
 
 For information about the MDM policies defined in the Intune security baseline, see [Windows security baseline settings for Intune](/mem/intune/protect/security-baseline-settings-mdm-all).
 
-[!INCLUDE [manage-by-mobile-device-management-mdm-and-group-policy](../../includes/licensing/manage-by-mobile-device-management-mdm-and-group-policy.md)]
+[!INCLUDE [modern-device-management-through-mdm](../../includes/licensing/modern-device-management-through-mdm.md)]
 
 ## Frequently Asked Questions
 
