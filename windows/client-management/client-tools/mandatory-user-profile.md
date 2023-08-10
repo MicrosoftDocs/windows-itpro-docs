@@ -47,7 +47,7 @@ First, you create a default user profile with the customizations that you want, 
 1. Configure the computer settings that you want to include in the user profile. For example, you can configure settings for the desktop background, uninstall default apps, install line-of-business apps, and so on.
 
    > [!NOTE]
-   > Unlike previous versions of Windows, you cannot apply a Start and taskbar layout using a mandatory profile. For alternative methods for customizing the Start menu and taskbar, see [Related topics](#related-topics).
+   > Unlike previous versions of Windows, you cannot apply a Start and taskbar layout using a mandatory profile. For alternative methods for customizing the Start menu and taskbar, see [Related topics](#related-articles).
 
 1. [Create an answer file (Unattend.xml)](/windows-hardware/customize/desktop/wsim/create-or-open-an-answer-file) that sets the [CopyProfile](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-copyprofile) parameter to **True**. The CopyProfile parameter causes Sysprep to copy the currently signed-on user's profile folder to the default user profile. You can use [Windows System Image Manager](/windows-hardware/customize/desktop/wsim/windows-system-image-manager-technical-reference), which is part of the Windows Assessment and Deployment Kit (ADK) to create the Unattend.xml file.
 
