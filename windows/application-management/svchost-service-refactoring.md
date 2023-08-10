@@ -4,7 +4,7 @@ description: Learn about the SvcHost Service Refactoring introduced in Windows 1
 author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
-ms.date: 08/04/2023
+ms.date: 07/20/2017
 ms.topic: article
 ms.prod: windows-client
 ms.technology: itpro-apps
