@@ -1,17 +1,8 @@
 ---
 title: Enterprise settings and policy management
 description: The DM client manages the interaction between a device and a server. Learn more about the client-server management workflow.
-ms.reviewer:
-manager: aaroncz
-ms.author: vinpa
 ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 04/05/2023
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+ms.date: 08/10/2023
 ---
 
 # Enterprise settings and policy management
@@ -20,7 +11,7 @@ The actual management interaction between the device and server is done via the 
 
 Enterprise MDM settings are exposed via various configuration service providers to the DM client. For the list of available configuration service providers, see [Configuration service provider reference](mdm/index.yml).
 
-Windows currently supports one MDM server. The DM client that is configured via the enrollment process is granted access to enterprise related settings. The DM client is configured during the enrollment process to be invoked by the task scheduler to periodically poll the MDM server.
+Windows currently supports one MDM server. The DM client that is configured via the enrollment process is granted access to enterprise related settings. During the enrollment process, the task scheduler is configured to invoke the DM client to periodically poll the MDM server.
 
 The following diagram shows the work flow between server and client.
 
@@ -30,7 +21,7 @@ The following diagram shows the work flow between server and client.
 
 This protocol defines an HTTPS-based client/server communication with DM SyncML XML as the package payload that carries management requests and execution results. The configuration request is addressed via a managed object (MO). The settings supported by the managed object are represented in a conceptual tree structure. This logical view of configurable device settings simplifies the way the server addresses the device settings by isolating the implementation details from the conceptual tree structure.
 
-To facilitate security-enhanced communication with the remote server for enterprise management, Windows supports certificate-based mutual authentication over an encrypted SSL HTTP channel between the DM client and management service. The server and client certificates are provisioned during the enrollment process.
+To facilitate security-enhanced communication with the remote server for enterprise management, Windows supports certificate-based mutual authentication over an encrypted TLS/SSL HTTP channel between the DM client and management service. The server and client certificates are provisioned during the enrollment process.
 
 The DM client configuration, company policy enforcement, business application management, and device inventory are all exposed or expressed via configuration service providers (CSPs). CSPs are the Windows term for managed objects. The DM client communicates with the server and sends configuration request to CSPs. The server only needs to know the logical local URIs defined by those CSP nodes in order to use the DM protocol XML to manage the device.
 

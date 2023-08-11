@@ -1,17 +1,8 @@
 ---
 title: Structure of OMA DM provisioning files
 description: Learn about the structure of OMA DM provisioning files, for example how each message is composed of a header, specified by the SyncHdr element, and a message body.
-ms.reviewer: 
-manager: aaroncz
-ms.author: vinpa
 ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 06/26/2017
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+ms.date: 08/10/2023
 ---
 
 # Structure of OMA DM provisioning files
@@ -24,14 +15,14 @@ Each message is composed of a header, specified by the SyncHdr element, and a me
 
 The following table shows the OMA DM versions that are supported.
 
-|Version|Format|
-|--- |--- |
-|OMA DM version 1.1.2|<code>&lt;SyncML xmlns='SYNCML:SYNCML1.1'&gt;</code></p><p><code>&lt;/SyncML&gt;</code>|
-|OMA DM version 1.2|<code>&lt;SyncML xmlns='SYNCML:SYNCML1.2'&gt;</code></p><p><code>&lt;/SyncML&gt;</code>|
+| Version              | Format                                       |
+|----------------------|----------------------------------------------|
+| OMA DM version 1.1.2 | `<SyncML xmlns='SYNCML:SYNCML1.1'></SyncML>` |
+| OMA DM version 1.2   | `<SyncML xmlns='SYNCML:SYNCML1.2'></SyncML>` |
 
 ## File format
 
-The following example shows the general structure of the XML document sent by the server using OMA DM version 1.2.1 for demonstration purposes only. The initial XML packages exchanged between client and server could contain additional XML tags. For a detailed description and samples for those packages, see the [OMA Device Management Protocol 1.2.1](https://www.openmobilealliance.org/release/DM/V1_2_1-20080617-A/OMA-TS-DM_Protocol-V1_2_1-20080617-A.pdf) specification.
+The following example shows the general structure of the XML document sent by the server using OMA DM version 1.2.1 for demonstration purposes only. The initial XML packages exchanged between client and server could contain more XML tags. For a detailed description and samples for those packages, see the [OMA Device Management Protocol 1.2.1](https://www.openmobilealliance.org/release/DM/V1_2_1-20080617-A/OMA-TS-DM_Protocol-V1_2_1-20080617-A.pdf) specification.
 
 ```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
@@ -85,8 +76,6 @@ The following example shows the header component of a DM message. In this case, 
 > [!NOTE]
 > The `<LocURI>` node value for the `<Source>` element in the SyncHdr of the device-generated DM package should be the same as the value of ./DevInfo/DevID. For more information about DevID, see [DevInfo configuration service provider](mdm/devinfo-csp.md).
 
- 
-
 ```xml
 <SyncHdr>
    <VerDTD>1.2</VerDTD>
@@ -108,7 +97,7 @@ SyncBody contains one or more DM commands. The SyncBody can contain multiple DM 
 
 **Code example**
 
-The following example shows the body component of a DM message. In this example, SyncBody contains only one command, Get. This command is indicated by the &lt;Final /&gt; tag that occurs immediately after the terminating tag for the Get command.
+The following example shows the body component of a DM message. In this example, SyncBody contains only one command, Get. This command is indicated by the `<Final />` tag that occurs immediately after the terminating tag for the Get command.
 
 ```xml
 <SyncBody>
