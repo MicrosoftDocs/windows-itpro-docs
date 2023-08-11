@@ -1,6 +1,6 @@
 ---
-title: Update Windows PE boot image with the latest cumulative updates
-description: This article describes how to update a Windows PE (WinPE) boot image with the latest cumulative update.
+title: Customize Windows PE boot images
+description: This article describes how to customize a Windows PE (WinPE) boot image including updating with the latest cumulative update, adding drivers, and adding optional components.
 ms.prod: windows-client
 ms.localizationpriority: medium
 author: frankroj
@@ -17,11 +17,15 @@ appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/windows-server-release-info" target="_blank">Windows Server 2016</a>
 ---
 
-# Update Windows PE boot image with the latest cumulative update
+# Customize Windows PE boot images
 
 <!-- 7894697 -->
 
-Microsoft recommends updating Windows PE (WinPE) boot images with the latest cumulative update for maximum security and protection. The latest cumulative updates may also resolve known issues. This walkthrough describes how to update a WinPE boot image with the latest cumulative update.
+Thw Windows PE (WinPE) boot images that are included with the Windows ADK have a minimal amount of features and drivers. However the boot images can be customized by adding drivers, optional components, and applying the latest cumulative update.
+
+Microsoft recommends updating Windows PE boot images with the latest cumulative update for maximum security and protection. The latest cumulative updates may also resolve known issues. For example, the Windows PE boot image can be updated with the latest cumulative update to address the BlackLotus UEFI bootkit vulnerability as documented in [KB5025885: How to manage the Windows Boot Manager revocations for Secure Boot changes associated with CVE-2023-24932](https://prod.support.services.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d) and [CVE-2023-24932](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24932).
+
+This walkthrough describes how to customize a Windows PE boot image including updating with the latest cumulative update, adding drivers, and adding optional components. Additionally this walkthrough will go over how customizations in boot images affect several different popular products that utilize boot images, such as Microsoft Configuration Manager, Microsoft Deployment Toolkit (MDT), and Windows Deployment Services (WDS).
 
 ## Prerequisites
 
@@ -72,7 +76,7 @@ Microsoft recommends updating Windows PE (WinPE) boot images with the latest cum
 
 1. Go to the [Microsoft Update Catalog](https://catalog.update.microsoft.com/) site and search for the latest cumulative update. The Windows version of the cumulative update should match the version of the Windows PE boot image that is being updated.
 
-1. When searching the [Microsoft Update Catalog](https://catalog.update.microsoft.com/) site, use the search term `"<year>-<month> cumulative update for windows <x>"` where `year` is the four digit current year, `<month>` is the two digit current month, and `<x>` is the version of Windows that Windows PE is based on. Make sure to include the quotes (`"`). For example, to search for the latest cumulative update for Windows 11 in July 2023, use the search term `"2023-07 cumulative update for windows 11"`, again making sure to include the quotes. If the cumulative update hasn't been released yet for the current month, then search on the previous month.
+1. When searching the [Microsoft Update Catalog](https://catalog.update.microsoft.com/) site, use the search term `"<year>-<month> cumulative update for windows <x>"` where `year` is the four digit current year, `<month>` is the two digit current month, and `<x>` is the version of Windows that Windows PE is based on. Make sure to include the quotes (`"`). For example, to search for the latest cumulative update for Windows 11 in August 2023, use the search term `"2023-08 cumulative update for windows 11"`, again making sure to include the quotes. If the cumulative update hasn't been released yet for the current month, then search on the previous month.
 
 1. Once the cumulative update has been found, download the appropriate version for the version and architecture of Windows that matches the Windows PE boot image. For example, if the version of the Windows PE boot image is Windows 11 22H2 64-bit, then download the **Cumulative Update for Windows 11 Version 22H2 for x64-based Systems** version of the update.
 
@@ -394,7 +398,7 @@ Add-WindowsPackage -PackagePath "<Path_to_CU_MSU_update>\<CU>.msu" -Path "<Mount
 **Example**:
 
 ```powershell
-Add-WindowsPackage -PackagePath "C:\Updates\windows11.0-kb5028185-x64_c78aa5899ba74efdd0e354dfab80940402b3efa4.msu" -Path "C:\Mount" -Verbose
+Add-WindowsPackage -PackagePath "C:\Updates\windows11.0-kb5029263-x64_4f5fe19bbec786f5e445d3e71bcdf234fe2cbbec.msu" -Path "C:\Mount" -Verbose
 ```
 
 For more information, see [Add-WindowsPackage](/powershell/module/dism/add-windowspackage)
@@ -410,7 +414,7 @@ DISM.exe /Image:"<Mount_folder_path>" /Add-Package /PackagePath:"<Path_to_CU_MSU
 **Example**:
 
 ```cmd
-DISM.exe /Image:"C:\Mount" /Add-Package /PackagePath:"C:\Updates\windows11.0-kb5028185-x64_c78aa5899ba74efdd0e354dfab80940402b3efa4.msu"
+DISM.exe /Image:"C:\Mount" /Add-Package /PackagePath:"C:\Updates\windows11.0-kb5029263-x64_4f5fe19bbec786f5e445d3e71bcdf234fe2cbbec.msu"
 ```
 
 For more information, see [Add or Remove Packages Offline Using DISM](/windows-hardware/manufacture/desktop/add-or-remove-packages-offline-using-dism) and [DISM Operating System Package (.cab or .msu) Servicing Command-Line Options: /Add-Package](/windows-hardware/manufacture/desktop/dism-operating-system-package-servicing-command-line-options#add-package).
@@ -608,11 +612,11 @@ Copy-Item "<Mount_folder_path>\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files 
 ```powershell
 Copy-Item "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.bak.efi"
 
-Copy-Item "C:\Mount\Windows\Boot\EFI\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi" -Force
+Copy-Item "C:\Mount\Windows\Boot\EFI\bootmgr.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\bootmgr.efi"
 
 Copy-Item "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.bak.efi"
 
-Copy-Item "C:\Mount\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi" -Force
+Copy-Item "C:\Mount\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\Media\EFI\Boot\bootx64.efi"
 ```
 
 To overwrite the bootmgr boot files and any backed up bootmgr boot file without confirmation, for example in a script, add the `-Force` parameter to the end of the command lines.
@@ -647,18 +651,17 @@ copy "C:\Mount\Windows\Boot\EFI\bootmgfw.efi" "C:\Program Files (x86)\Windows Ki
 
 To overwrite the bootmgr boot files and any backed up bootmgr boot file without confirmation, for example in a script, add the `/Y` parameter to the end of the command lines.
 
-
 For more information, see [copy](/windows-server/administration/windows-commands/copy).
 
 ---
 
-This step doesn't update or change the boot image. However, it makes sure that the latest bootmgr boot files are available to the Windows ADK when creating bootable media via the Windows ADK. When these files are updated in the Windows ADK, products that use the Windows ADK to create bootable media also have access to the updated bootmgr boot files.
+This step doesn't update or change the boot image. However, it makes sure that the latest bootmgr boot files are available to the Windows ADK when creating bootable media via the Windows ADK. When these files are updated in the Windows ADK, products that use the Windows ADK to create bootable media, such as **Microsoft Deployment Toolkit (MDT)**, also have access to the updated bootmgr boot files.
 
 In particular, this step is needed when addressing the BlackLotus UEFI bootkit vulnerability as documented in [KB5025885: How to manage the Windows Boot Manager revocations for Secure Boot changes associated with CVE-2023-24932](https://prod.support.services.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d) and [CVE-2023-24932](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-24932).
 
 > [!NOTE]
 >
-> Both **Microsoft Configuration Manager** and **Microsoft Deployment Toolkit (MDT)** will automatically extract these bootmgr boot files from the boot images as needed. No additional steps are needed for these products.
+> **Microsoft Configuration Manager** automatically extracts these bootmgr boot files from the boot images as needed. No additional steps are needed for **Microsoft Configuration Manager**.
 
 ## Step 9: Perform component cleanup
 
@@ -682,7 +685,7 @@ Start-Process "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment 
 Start-Process "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\DISM\dism.exe" -ArgumentList " /Image:"C:\Mount" /Cleanup-image /StartComponentCleanup /Resetbase" -Wait -LoadUserProfile
 ```
 
-For more information, see [Modify a Windows image using DISM: Reduce the size of an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#reduce-the-size-of-an-image) and [DISM Operating System Package (.cab or .msu) Servicing Command-Line Options: /Cleanup-Image](/windows-hardware/manufacture/desktop/dism-operating-system-package-servicing-command-line-options#cleanup-image).
+For more information, see [Modify a Windows image using DISM: Reduce the size of an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#reduce-the-size-of-an-image), [DISM Operating System Package (.cab or .msu) Servicing Command-Line Options: /Cleanup-Image](/windows-hardware/manufacture/desktop/dism-operating-system-package-servicing-command-line-options#cleanup-image), and [Start-Process](/powershell/module/microsoft.powershell.management/start-process).
 
 ### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
 
@@ -845,13 +848,13 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
         From an elevated **Deployment and Imaging Tools Environment** command prompt, run the following command to delete the original updated boot image:
 
         ```cmd
-        del "<Boot_image_path>\<boot_image>.wim" /Y
+        del "<Boot_image_path>\<boot_image>.wim" /F
         ```
 
         **Example**:
 
         ```cmd
-        del "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" /Y
+        del "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" /F
         ```
 
         For more information, see [del](/windows-server/administration/windows-commands/del).
@@ -952,34 +955,6 @@ The `winpe.wim` boot image from the Windows ADK should be updated because if `bo
 
 Updating `winpe.wim` from the Windows ADK ensures that the cumulative update stays applied regardless of what changes are made to the `boot.wim` boot image via Configuration Manager.
 
-### Updating the boot image in Configuration Manager
-
-After updating the `winpe.wim` boot image from the Windows ADK, generate a new `boot.wim` boot image for Configuration Manager so that it contains the cumulative update. A new `boot.wim` boot image can be generated by using the following steps:
-
-1. Open the Microsoft Configuration manager console.
-
-1. In the Microsoft Configuration manager console, navigate to **Software Library** > **Overview** > **Operating Systems** > **Boot Images**.
-
-1. In the **Boot Images** pane, select the desired boot image.
-
-1. In the toolbar, select **Update Distribution Points**.
-
-1. When the **Update Distribution Points Wizard** window that appears:
-
-    1. In the **General**/**Update distribution points with this image** page, select the **Reload this boot image with the current Windows PE version from the Windows ADK** option, and then select the **Next >** button.
-
-    1. In the **Summary** page, select the **Next >** button.
-
-    1. The **Progress** page appears while the boot image builds.
-
-    1. Once the boot image finishes building, the **The task "Update Distribution Points Wizard" completed successfully**/**Completion** page appears. Select the **Close** button.
-
-This process updates the boot image used by Configuration Manager. It also updates the boot image and the bootmgr boot files used by any PXE enabled distribution points.
-
-> [!IMPORTANT]
->
-> If there are multiple boot images used in the environment for PXE enabled distribution points, make sure to update all of the PXE enabled boot images with the same cumulative update. This will ensure that the PXE enabled distribution points all use the version of the bootmgr boot files extracted from the boot images (if applicable).
-
 ### Add optional components manually to Configuration Manager boot images
 
 For Microsoft Configuration Manager boot images, when applying a cumulative update to a boot image, make sure to add any desired optional components manually using the command lines from the walkthrough instead of adding them through Configuration Manager. Optional components are added to boot images in Configuration Manager via the **Optional Components** tab in the **Properties** of the boot image.
@@ -1009,37 +984,43 @@ When adding optional components to any boot image used by Configuration Manager 
 
 For a list of all available WinPE optional components including descriptions for each component, see [WinPE Optional Components (OC) Reference: WinPE Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference#winpe-optional-components).
 
+### Updating the boot image in Configuration Manager
+
+After updating the `winpe.wim` boot image from the Windows ADK, generate a new `boot.wim` boot image for Configuration Manager so that it contains the cumulative update. A new `boot.wim` boot image can be generated by using the following steps:
+
+1. Open the Microsoft Configuration manager console.
+
+1. In the Microsoft Configuration manager console, navigate to **Software Library** > **Overview** > **Operating Systems** > **Boot Images**.
+
+1. In the **Boot Images** pane, select the desired boot image.
+
+1. In the toolbar, select **Update Distribution Points**.
+
+1. When the **Update Distribution Points Wizard** window that appears:
+
+    1. In the **General**/**Update distribution points with this image** page, select the **Reload this boot image with the current Windows PE version from the Windows ADK** option, and then select the **Next >** button.
+
+    1. In the **Summary** page, select the **Next >** button.
+
+    1. The **Progress** page appears while the boot image builds.
+
+    1. Once the boot image finishes building, the **The task "Update Distribution Points Wizard" completed successfully**/**Completion** page appears. Select the **Close** button.
+
+This process updates the boot image used by Configuration Manager. It also updates the boot image and the bootmgr boot files used by any PXE enabled distribution points.
+
+> [!IMPORTANT]
+>
+> If there are multiple boot images used in the environment for PXE enabled distribution points, make sure to update all of the PXE enabled boot images with the same cumulative update. This will ensure that the PXE enabled distribution points all use the version of the bootmgr boot files extracted from the boot images (if applicable).
+
 ### Updating Configuration Manager boot media
 
-After completing the walkthrough, including updating boot images in Configuration Manager, update any Configuration Manager task sequence media. Updating any Configuration Manager task sequence media ensures that the task sequence media has both the updated boot image and if applicable, updated boot files. For more information, see [Create task sequence media](/mem/configmgr/osd/deploy-use/create-task-sequence-media).
+After completing the walkthrough, including updating boot images in Configuration Manager, update any Configuration Manager task sequence media. Updating any Configuration Manager task sequence media ensures that the task sequence media has both the updated boot image. If applicable, it will also updat bootmgr boot files on the media by extracting the latest versions from the boot image. For more information on creating Configuration Manager task sequence media, see [Create task sequence media](/mem/configmgr/osd/deploy-use/create-task-sequence-media).
 
 ## Microsoft Deployment Toolkit (MDT) considerations
 
 When adding a cumulative update to a Microsoft Deployment Toolkit (MDT) boot image, it's recommended to update the `winpe.wim` boot image from the Windows ADK instead of directly updating the `LiteTouchPE_<arch>.wim` boot image in the MDT Deployment Share.
 
 The `winpe.wim` boot image from the Windows ADK should be updated because if `LiteTouchPE_<arch>.wim` is updated instead, then the next time the MDT Deployment Share is updated, the changes made to `LiteTouchPE_<arch>.wim`, including the applied cumulative update, will be lost. If the `winpe.wim` boot image from the Windows ADK is updated with the cumulative update instead, then the cumulative update persists and is preserved even when the MDT Deployment Share is updated.
-
-### Updating the boot image and boot media in MDT
-
-After updating the `winpe.wim` boot image from the Windows ADK, generate a new `LiteTouchPE_<arch>.wim` boot image for MDT that contains the cumulative update by using the following steps:
-
-1. Open the Microsoft Deployment Toolkit (MDT) Deployment Workbench console.
-
-1. In the Deployment Workbench console, navigate to **Deployment Workbench** > **Deployment Shares** > **MDT Deployment Share**.
-
-1. Right click on **MDT Deployment Share** and select **Update Deployment Share**.
-
-1. In the **Update Deployment Share Wizard** window that appears:
-
-    1. In the **Options** page, select the **Completely regenerate the boot images** option, and then select the **Next >** button.
-
-    1. In the **Summary** page, select the **Next >** button.
-
-    1. The **Progress** page appears while the boot image and deployment share build.
-
-    1. Once the boot image and deployment share finish building, the **The process completed successfully**/**Confirmation** page appears. Select the **Finish** button.
-
-These steps also update the MDT boot media in the MDT Deployment Share. After following the above steps, use the newly updated ISO files in the `<DeploymnetShare>\Boot` folder to create new MDT boot media.
 
 ### MDT and Windows ADK versions
 
@@ -1061,10 +1042,70 @@ When adding optional components to any boot image used by MDT during the [Step 6
 
 For a list of all available WinPE optional components including descriptions for each component, see [WinPE Optional Components (OC) Reference: WinPE Optional Components](/windows-hardware/manufacture/desktop/winpe-add-packages--optional-components-reference#winpe-optional-components).
 
+### Updating the boot image and boot media in MDT
+
+After updating the `winpe.wim` boot image from the Windows ADK, generate a new `LiteTouchPE_<arch>.wim` boot image for MDT that contains the cumulative update followed by creating new MDT boot media. New MDT boot images and MDT boot media can be generated by using the following steps:
+
+1. Make sure [Step 8: Copy boot files from mounted boot image to ADK installation path](#step-8-copy-boot-files-from-mounted-boot-image-to-adk-installation-path) has been completed. MDT copies the bootmgr boot files from the Windows ADK installation path to its deployment share. Following this step makes sure that the deployment share has the latest bootmgr boot files which are needed when creating MDT boot media.
+
+1. Open the Microsoft Deployment Toolkit (MDT) Deployment Workbench console.
+
+1. In the Deployment Workbench console, navigate to **Deployment Workbench** > **Deployment Shares** > **MDT Deployment Share**.
+
+1. Right click on **MDT Deployment Share** and select **Update Deployment Share**.
+
+1. In the **Update Deployment Share Wizard** window that appears:
+
+    1. In the **Options** page, select the **Completely regenerate the boot images** option, and then select the **Next >** button.
+
+    1. In the **Summary** page, select the **Next >** button.
+
+    1. The **Progress** page appears while the boot image and deployment share build.
+
+    1. Once the boot image and deployment share finish building, the **The process completed successfully**/**Confirmation** page appears. Select the **Finish** button.
+
+These steps also update the MDT boot media in the MDT Deployment Share. After following the above steps, use the newly updated ISO files in the `<DeploymentShare>\Boot` folder to create new MDT boot media.
+
 ## Windows Deployment Services (WDS) considerations
+
+### Update boot image and boot files in WDS
+
+If the WDS boot image modified was the original WDS boot image in the <RemoteInstall> folder, then the only additional step to take is to restart `Windows Deployment Services Server` service. This can be done using the following command lines:
+
+### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
+
+From an elevated **PowerShell** command prompt, run the following command to to restart the `Windows Deployment Services Server` service:
+
+```powershell
+Restart-Service -Name WDSServer
+```
+
+For more information, see [Restart-Service](/powershell/module/microsoft.powershell.management/restart-service).
+
+### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+
+From an elevated command prompt, run the following command to `Windows Deployment Services Server` service:
+
+```cmd
+wdsutil.exe /Stop-Server
+wdsutil.exe /Start-Server
+```
+
+or
+
+```cmd
+net.exe stop WDSServer
+net.exe start WDSServer
+```
+
+For more information, see [wdsutil stop-server](/windows-server/administration/windows-commands/wdsutil-stop-server) and [wdsutil start-server](/windows-server/administration/windows-commands/wdsutil-start-server).
+
+---
+
+## Boot.wim support
 
 The **boot.wim** that is part of Windows installation media isn't supported for deploying Windows 11 with Windows Deployment Services (WDS). Additionally, the **boot.wim** from Windows 11 installation media isn't supported for deploying any version of Windows with Windows Deployment Services (WDS). For more information, see [Windows Deployment Services (WDS) boot.wim support](wds-boot-support.md).
 
 ## Windows Server 2012 R2
 
-This walk-through isn't intended for use with Windows Server 2012 R2. Although the steps in this article may work with Windows Server 2012 R2 older versions of the Windows ADK, it may have compatibility problems with versions of the Windows ADK that are newer than the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads). For server OSes, it's recommended to use Windows Server 2016 or later for this walk-through. For more information, see [Windows Server 2012 R2 Lifecycle](/lifecycle/products/windows-server-2012-r2).
+This walk-through isn't intended for use with Windows Server 2012 R2. Although the steps in this article may work with Windows Server 2012 R2 when using older versions of the Windows ADK, it may have compatibility problems with versions of the Windows ADK that are newer than the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads). For server OSes, it's recommended to use Windows Server 2016 or later for this walk-through. For more information, see [Windows Server 2012 R2 Lifecycle](/lifecycle/products/windows-server-2012-r2).
