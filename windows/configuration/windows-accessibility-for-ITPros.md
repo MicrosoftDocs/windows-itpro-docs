@@ -17,6 +17,8 @@ appliesto:
 ---
 
 <!-- MAXADO-8138357 -->
+<!-- MAXADO-8138352 -->
+<!-- MAXADO-8138354 -->
 
 # Accessibility information for IT professionals
 
@@ -36,7 +38,7 @@ Windows 11, version 22H2, includes improvements for people with disabilities: sy
 
 ## Vision
 
-- [Use Narrator to use devices without a screen](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1). Narrator describes Windows and apps and enables you to control devices by using a keyboard, controller, or with a range of gestures on touch-supported devices. Starting in Windows 11, version 22H2, Narrator includes more natural voices.
+- [Use Narrator to use devices without a screen](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1). Narrator describes Windows and apps and enables you to control devices by using a keyboard, controller, or with a range of gestures on touch-supported devices. Now the user is able to download and install 10 more natural languages.
 
 - [Create accessible apps](/windows/apps/develop/accessibility). You can develop accessible apps just like Mail, Groove, and Store that work well with Narrator and other leading screen readers.
 
