@@ -4,7 +4,7 @@ metadata:
   title: Frequently asked questions for Personal Data Encryption (PDE)
   description: Answers to common questions regarding Personal Data Encryption (PDE).
   ms.topic: faq
-  ms.date: 03/13/2023
+  ms.date: 08/11/2023
 
 title: Frequently asked questions for Personal Data Encryption (PDE)
 summary: |
@@ -47,7 +47,7 @@ sections:
 
       - question: Can users manually encrypt and decrypt files with PDE?
         answer: |
-          Currently users can decrypt files manually but they can't encrypt files manually. For information on how a user can manually decrypt a file, see the section **Disable PDE and decrypt files** in [Personal Data Encryption (PDE)](index.md).
+          Currently users can decrypt files manually but they can't encrypt files manually. For information on how a user can manually decrypt a file, see the section [Decrypt PDE-encrypted content](configure.md#decrypt-pde-encrypted-content). 
 
       - question: If a user signs into Windows with a password instead of Windows Hello for Business, will they be able to access their PDE protected content?
         answer: |

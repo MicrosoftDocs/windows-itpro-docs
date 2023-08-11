@@ -14,7 +14,7 @@ This article describes the Personal Data Encryption (PDE) settings and how to co
 >
 > The PDE APIs can be used to create custom applications and scripts to specify which content to protect and at what level to protect the content. Additionally, the PDE APIs can't be used to protect content until the PDE policy has been enabled.
 
-## PDE settings list
+## PDE settings
 
 The following table lists the required settings to enable PDE.
 
@@ -22,9 +22,6 @@ The following table lists the required settings to enable PDE.
 |-|-|
 |Enable Personal Data Encryption|PDE isn't enabled by default. Before PDE can be used, you must enable it.|
 |Sign-in and lock last interactive user automatically after a restart| Winlogon automatic restart sign-on (ARSO) isn't supported for use with PDE. To use PDE, ARSO must be disabled.|
-
-> [!NOTE]
-> Enabling the PDE policy on devices only enables the PDE feature. It does not protect any content. To protect content via PDE, use the [PDE APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager). The PDE APIs can be used to create custom applications and scripts to specify which content to protect and at what level to protect the content. Additionally, the PDE APIs can't be used to protect content until the PDE policy has been enabled.
 
 ## PDE hardening recommendations
 
