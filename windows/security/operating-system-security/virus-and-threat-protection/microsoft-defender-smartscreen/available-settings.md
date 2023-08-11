@@ -1,7 +1,7 @@
 ---
 title: Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings
 description: A list of all available settings for Microsoft Defender SmartScreen using Group Policy and mobile device management (MDM) settings.
-ms.date: 05/31/2023
+ms.date: 08/11/2023
 ms.topic: reference
 ---
 # Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings
@@ -29,7 +29,7 @@ Setting|Supported on|Description|
 
 If you manage your policies using Microsoft Intune, use these MDM policy settings. All settings support desktop computers running Windows 10/11 Pro or Windows 10/11 Enterprise, enrolled with Microsoft Intune.
 
-For Microsoft Defender SmartScreen Edge MDM policies, see [Policy CSP - Browser](/windows/client-management/mdm/policy-csp-browser).
+For Microsoft Defender SmartScreen Microsoft Edge MDM policies, see [Policy CSP - Browser](/windows/client-management/mdm/policy-csp-browser).
 
 |Setting|Supported versions|Details|
 |--- |--- |--- |

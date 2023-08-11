@@ -1,17 +1,8 @@
 ---
 title: Known issues in MDM
 description: Learn about known issues for Windows devices in MDM
-ms.reviewer:
-manager: aaroncz
-ms.author: vinpa
 ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
-ms.date: 04/12/2023
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+ms.date: 08/10/2023
 ---
 
 # Known issues
@@ -36,7 +27,7 @@ The certificate setting under "SSL Settings" in the IIS server for SCEP must be 
 
 ## MDM enrollment fails on the Windows device when traffic is going through proxy
 
-When the Windows device is configured to use a proxy that requires authentication, the enrollment will fail. To work around this issue, the user can use a proxy that doesn't require authentication or remove the proxy setting from the connected network.
+When the Windows device is configured to use a proxy that requires authentication, the enrollment fails. To work around this issue, the user can use a proxy that doesn't require authentication or remove the proxy setting from the connected network.
 
 ## Server-initiated unenrollment failure
 
@@ -46,7 +37,7 @@ Remote server unenrollment is disabled for mobile devices enrolled via Azure Act
 
 ## Certificates causing issues with Wi-Fi and VPN
 
-When using the ClientCertificateInstall to install certificates to the device store and the user store and both certificates are sent to the device in the same MDM payload, the certificate intended for the device store will also get installed in the user store. This dual installation may cause issues with Wi-Fi or VPN when choosing the correct certificate to establish a connection. We're working to fix this issue.
+When using the ClientCertificateInstall to install certificates to the device store and the user store and both certificates are sent to the device in the same MDM payload, the certificate intended for the device store also gets installed in the user store. This dual installation may cause issues with Wi-Fi or VPN when choosing the correct certificate to establish a connection. We're working to fix this issue.
 
 ## Version information for Windows 11
 
@@ -65,7 +56,7 @@ A production ready deployment must have the appropriate certificate details as p
 
 EAP XML must be updated with relevant information for your environment. This task can be done either manually by editing the XML sample below, or by using the step by step UI guide. After the EAP XML is updated, refer to instructions from your MDM to deploy the updated configuration as follows:
 
-- For Wi-Fi, look for the &lt;EAPConfig&gt; section of your current WLAN Profile XML (This detail is what you specify for the WLanXml node in the Wi-Fi CSP). Within these tags, you'll find the complete EAP configuration. Replace the section under &lt;EAPConfig&gt; with your updated XML and update your Wi-Fi profile. You might need to refer to your MDM's guidance on how to deploy a new Wi-Fi profile.
+- For Wi-Fi, look for the &lt;EAPConfig&gt; section of your current WLAN Profile XML (This detail is what you specify for the WLanXml node in the Wi-Fi CSP). Within these tags, you can find the complete EAP configuration. Replace the section under &lt;EAPConfig&gt; with your updated XML and update your Wi-Fi profile. You might need to refer to your MDM's guidance on how to deploy a new Wi-Fi profile.
 - For VPN, EAP Configuration is a separate field in the MDM Configuration. Work with your MDM provider to identify and update the appropriate Field.
 
 For information about EAP Settings, see [Extensible Authentication Protocol (EAP) for network access](/windows-server/networking/technologies/extensible-authentication-protocol/network-access).
@@ -208,7 +199,7 @@ Alternatively you can use the following procedure to create an EAP Configuration
     > [!NOTE]
     > For PEAP or TTLS, select the appropriate method and continue following this procedure.
 
-1. Click the **Properties** button underneath the drop-down menu.
+1. Select the **Properties** button underneath the drop-down menu.
 
 1. In the **Smart Card or other Certificate Properties** menu, select the **Advanced** button.
 
@@ -218,7 +209,7 @@ Alternatively you can use the following procedure to create an EAP Configuration
 
     :::image type="content" alt-text="configure certificate selection window." source="images/certfiltering3.png":::
 
-1. Click **OK** to close the windows to get back to the main `rasphone.exe` dialog box.
+1. Select **OK** to close the windows to get back to the main `rasphone.exe` dialog box.
 
 1. Close the rasphone dialog box.
 
