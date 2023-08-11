@@ -45,14 +45,6 @@ sections:
         answer: |
           No. PDE protected content can only be accessed after signing on locally to Windows with Windows Hello for Business credentials.
 
-      - question: How can it be determined if a file is protected with PDE?
-        answer: |
-          - Files protected with PDE and EFS will both show a padlock on the file's icon. To verify whether a file is protected with PDE vs. EFS:
-            1. In the properties of the file, navigate to **General** > **Advanced**. The option **Encrypt contents to secure data** should be selected.
-            2. Select the **Details** button.
-            3. If the file is protected with PDE, under **Protection status:**, the item **Personal Data Encryption is:** will be marked as **On**.
-          - [`cipher.exe`](/windows-server/administration/windows-commands/cipher) can also be used to show the encryption state of the file.
-
       - question: Can users manually encrypt and decrypt files with PDE?
         answer: |
           Currently users can decrypt files manually but they can't encrypt files manually. For information on how a user can manually decrypt a file, see the section **Disable PDE and decrypt files** in [Personal Data Encryption (PDE)](index.md).
@@ -64,9 +56,3 @@ sections:
       - question: What encryption method and strength does PDE use?
         answer: |
           PDE uses AES-CBC with a 256-bit key to encrypt content.
-
-additionalContent: |
-  ## See also
-    - [Personal Data Encryption (PDE)](index.md)
-    - [Configure Personal Data Encryption (PDE) polices in Intune](configure-pde-in-intune.md)
-    
