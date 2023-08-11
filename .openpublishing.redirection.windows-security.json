@@ -7334,6 +7334,51 @@
       "source_path": "windows/security/zero-trust-windows-device-health.md",
       "redirect_url": "/windows/security/security-foundations/zero-trust-windows-device-health",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/personal-data-encryption/configure-pde-in-intune.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/personal-data-encryption/intune-disable-arso.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/personal-data-encryption/intune-disable-hibernation.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/personal-data-encryption/intune-disable-memory-dumps.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/personal-data-encryption/intune-disable-password-connected-standby.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/personal-data-encryption/intune-disable-wer.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/personal-data-encryption/intune-enable-pde.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/configure",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/personal-data-encryption/includes/pde-description.md",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/operating-system-security/data-protection/personal-data-encryption/faq-pde.yml",
+      "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/faq",
+      "redirect_document_id": false
     }
   ]
 }
