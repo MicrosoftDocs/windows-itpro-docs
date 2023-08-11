@@ -4,7 +4,7 @@ description: Learn more about the RemoteManagement Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- AllowBasicAuthentication_Client-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowBasicAuthentication_Client-Applicability-End -->
 
 <!-- AllowBasicAuthentication_Client-OmaUri-Begin -->
@@ -87,7 +87,7 @@ This policy setting allows you to manage whether the Windows Remote Management (
 <!-- AllowBasicAuthentication_Service-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowBasicAuthentication_Service-Applicability-End -->
 
 <!-- AllowBasicAuthentication_Service-OmaUri-Begin -->
@@ -146,7 +146,7 @@ This policy setting allows you to manage whether the Windows Remote Management (
 <!-- AllowCredSSPAuthenticationClient-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowCredSSPAuthenticationClient-Applicability-End -->
 
 <!-- AllowCredSSPAuthenticationClient-OmaUri-Begin -->
@@ -205,7 +205,7 @@ This policy setting allows you to manage whether the Windows Remote Management (
 <!-- AllowCredSSPAuthenticationService-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowCredSSPAuthenticationService-Applicability-End -->
 
 <!-- AllowCredSSPAuthenticationService-OmaUri-Begin -->
@@ -264,7 +264,7 @@ This policy setting allows you to manage whether the Windows Remote Management (
 <!-- AllowRemoteServerManagement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowRemoteServerManagement-Applicability-End -->
 
 <!-- AllowRemoteServerManagement-OmaUri-Begin -->
@@ -336,7 +336,7 @@ Example IPv6 filters:\n3FFE:FFFF:7654:FEDA:1245:BA98:0000:0000-3. FFE:FFFF:7654:
 <!-- AllowUnencryptedTraffic_Client-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowUnencryptedTraffic_Client-Applicability-End -->
 
 <!-- AllowUnencryptedTraffic_Client-OmaUri-Begin -->
@@ -395,7 +395,7 @@ This policy setting allows you to manage whether the Windows Remote Management (
 <!-- AllowUnencryptedTraffic_Service-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowUnencryptedTraffic_Service-Applicability-End -->
 
 <!-- AllowUnencryptedTraffic_Service-OmaUri-Begin -->
@@ -454,7 +454,7 @@ This policy setting allows you to manage whether the Windows Remote Management (
 <!-- DisallowDigestAuthentication-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisallowDigestAuthentication-Applicability-End -->
 
 <!-- DisallowDigestAuthentication-OmaUri-Begin -->
@@ -513,7 +513,7 @@ This policy setting allows you to manage whether the Windows Remote Management (
 <!-- DisallowNegotiateAuthenticationClient-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisallowNegotiateAuthenticationClient-Applicability-End -->
 
 <!-- DisallowNegotiateAuthenticationClient-OmaUri-Begin -->
@@ -572,7 +572,7 @@ This policy setting allows you to manage whether the Windows Remote Management (
 <!-- DisallowNegotiateAuthenticationService-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisallowNegotiateAuthenticationService-Applicability-End -->
 
 <!-- DisallowNegotiateAuthenticationService-OmaUri-Begin -->
@@ -631,7 +631,7 @@ This policy setting allows you to manage whether the Windows Remote Management (
 <!-- DisallowStoringOfRunAsCredentials-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- DisallowStoringOfRunAsCredentials-Applicability-End -->
 
 <!-- DisallowStoringOfRunAsCredentials-OmaUri-Begin -->
@@ -692,7 +692,7 @@ If you enable and then disable this policy setting,any values that were previous
 <!-- SpecifyChannelBindingTokenHardeningLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- SpecifyChannelBindingTokenHardeningLevel-Applicability-End -->
 
 <!-- SpecifyChannelBindingTokenHardeningLevel-OmaUri-Begin -->
@@ -757,7 +757,7 @@ If HardeningLevel is set to None, all requests are accepted (though they aren't 
 <!-- TrustedHosts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- TrustedHosts-Applicability-End -->
 
 <!-- TrustedHosts-OmaUri-Begin -->
@@ -816,7 +816,7 @@ This policy setting allows you to manage whether the Windows Remote Management (
 <!-- TurnOnCompatibilityHTTPListener-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- TurnOnCompatibilityHTTPListener-Applicability-End -->
 
 <!-- TurnOnCompatibilityHTTPListener-OmaUri-Begin -->
@@ -879,7 +879,7 @@ A listener might be automatically created on port 80 to ensure backward compatib
 <!-- TurnOnCompatibilityHTTPSListener-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- TurnOnCompatibilityHTTPSListener-Applicability-End -->
 
 <!-- TurnOnCompatibilityHTTPSListener-OmaUri-Begin -->
