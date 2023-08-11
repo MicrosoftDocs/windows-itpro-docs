@@ -5,7 +5,7 @@ ms.reviewer:
 ms.prod: windows-client
 author: aczechowski
 ms.author: aaroncz
-manager: dougeby
+manager: aaroncz
 ms.date: 08/14/2017
 ms.localizationpriority: medium
 ms.technology: itpro-security

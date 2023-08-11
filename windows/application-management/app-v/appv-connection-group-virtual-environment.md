@@ -5,7 +5,7 @@ author: aczechowski
 ms.prod: windows-client
 ms.date: 06/25/2018
 ms.reviewer: 
-manager: dougeby
+manager: aaroncz
 ms.author: aaroncz
 ms.topic: article
 ms.technology: itpro-apps
