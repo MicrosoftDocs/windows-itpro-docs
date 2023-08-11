@@ -20,8 +20,8 @@ The following table lists the required settings to enable PDE.
 
 | Setting name | Description |
 |-|-|
-|Enable PDE|PDE isn't enabled by default. Before PDE can be used, you must enable it.|
-|Disable Winlogon automatic restart sign-on (ARSO)| Winlogon ARSO isn't supported for use with PDE. To use PDE, ARSO must be disabled.|
+|Enable Personal Data Encryption|PDE isn't enabled by default. Before PDE can be used, you must enable it.|
+|Sign-in and lock last interactive user automatically after a restart| Winlogon automatic restart sign-on (ARSO) isn't supported for use with PDE. To use PDE, ARSO must be disabled.|
 
 > [!NOTE]
 > Enabling the PDE policy on devices only enables the PDE feature. It does not protect any content. To protect content via PDE, use the [PDE APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager). The PDE APIs can be used to create custom applications and scripts to specify which content to protect and at what level to protect the content. Additionally, the PDE APIs can't be used to protect content until the PDE policy has been enabled.
@@ -32,10 +32,10 @@ The following table lists the recommended settings to improve PDE's security.
 
 | Setting name | Description |
 |-|-|
-|Disable kernel-mode crash dumps and live dumps|Kernel-mode crash dumps and live dumps can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable kernel-mode crash dumps and live dumps.|
-|Disable Windows Error Reporting (WER)/user-mode crash dumps|Disabling Windows Error Reporting prevents user-mode crash dumps. User-mode crash dumps can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable user-mode crash dumps.|
-|Disable hibernation|Hibernation files can potentially cause the keys used by Personal Data Encryption (PDE) to protect content to be exposed. For greatest security, disable hibernation.|
-|Allowing users to select when a password is required when resuming from connected standby disabled|When this policy isn't configured on Azure AD joined devices, users on a Connected Standby device can change the amount of time after the device´s screen turns off before a password is required to wake the device. During the time when the screen turns off but a password isn't required, the keys used by PDE to protect content could potentially be exposed. It's recommended to explicitly disable this policy on Azure AD joined devices.|
+|Kernel-mode crash dumps and live dumps|Kernel-mode crash dumps and live dumps can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable kernel-mode crash dumps and live dumps.|
+|Windows Error Reporting (WER)/user-mode crash dumps|Disabling Windows Error Reporting prevents user-mode crash dumps. User-mode crash dumps can potentially cause the keys used by PDE to protect content to be exposed. For greatest security, disable user-mode crash dumps.|
+|Hibernation|Hibernation files can potentially cause the keys used by Personal Data Encryption (PDE) to protect content to be exposed. For greatest security, disable hibernation.|
+|Allow users to select when a password is required when resuming from connected standby |When this policy isn't configured on Azure AD joined devices, users on a Connected Standby device can change the amount of time after the device´s screen turns off before a password is required to wake the device. During the time when the screen turns off but a password isn't required, the keys used by PDE to protect content could potentially be exposed. It's recommended to explicitly disable this policy on Azure AD joined devices.|
 
 ## Configure PDE with Microsoft Intune
 
@@ -43,13 +43,13 @@ The following table lists the recommended settings to improve PDE's security.
 
 | Category | Setting name | Value |
 |--|--|--|
-|**PDE**|**Enable Personal Data Encryption (User)**|Enable Personal Data Encryption|
-|**Administrative Templates > Windows Components > Windows Logon Options**|**Sign-in and lock last interactive user automatically after a restart**|Enabled|
-|**Memory Dump**|**Allow Live Dump**|Block|
-|**Memory Dump**|**Allow Crash Dump**|Block|
-|**Administrative Templates > System > Logon** | **Allow users to select when a password is required when resuming from connected standby** | Disabled|
-|**Power**|**Allow Hibernate**|Block|
-|**Administrative Templates > Windows Components > Windows Error Reporting** | **Disable Windows Error Reporting** | **Enabled**|
+|**PDE**|Enable Personal Data Encryption (User)|Enable Personal Data Encryption|
+|**Administrative Templates > Windows Components > Windows Logon Options**|Sign-in and lock last interactive user automatically after a restart|Disabled|
+|**Memory Dump**|Allow Live Dump|Block|
+|**Memory Dump**|Allow Crash Dump|Block|
+|**Administrative Templates > Windows Components > Windows Error Reporting** | Disable Windows Error Reporting | Enabled|
+|**Power**|Allow Hibernate|Block|
+|**Administrative Templates > System > Logon** | Allow users to select when a password is required when resuming from connected standby | Disabled|
 
 [!INCLUDE [intune-settings-catalog-2](../../../../../includes/configure/intune-settings-catalog-2.md)]
 
@@ -72,14 +72,16 @@ Alternatively, you can configure devices using the [Policy CSP][CSP-1] and [PDE 
 |OMA-URI|Format|Value|
 |-|-|-|
 |`./User/Vendor/MSFT/PDE/EnablePersonalDataEncryption`|int|`1`|
+|`./Device/Vendor/MSFT/Policy/Config/WindowsLogon/AllowAutomaticRestartSignOn`|string|`</disabled>`|
 |`./Device/Vendor/MSFT/Policy/Config/MemoryDump/AllowCrashDump`| int| `0`|
 |`./Device/Vendor/MSFT/Policy/Config/MemoryDump/AllowLiveDump` |int| `0`|
 |`./Device/Vendor/MSFT/Policy/Config/ErrorReporting/DisableWindowsErrorReporting`|string|`</disabled>`|
+|`./Device/Vendor/MSFT/Policy/Config/Power/AllowHibernate` |int| `0`|
 |`./Device/Vendor/MSFT/Policy/Config/ADMX_CredentialProviders/AllowDomainDelayLock`|string|`</disabled>`|
 
-## Disable PDE and decrypt content
+## Disable PDE
 
-Once PDE is enabled, it isn't recommended to disable it. However if you need to disable PDE, you can do so using the following steps:
+Once PDE is enabled, it isn't recommended to disable it. However if you need to disable PDE, you can do so using the following steps.
 
 ### Disable PDE with a settings catalog policy in Intune
 
@@ -93,38 +95,42 @@ Once PDE is enabled, it isn't recommended to disable it. However if you need to 
 
 ### Disable PDE with CSP
 
+You can disable PDE with CSP using the following setting:
+
 |OMA-URI|Format|Value|
 |-|-|-|
 |`./User/Vendor/MSFT/PDE/EnablePersonalDataEncryption`|int|`0`|
 
-Disabling PDE doesn't decrypt any PDE protected content. It only prevents the PDE API from being able to protect any additional content. PDE protected files can be manually decrypted using the following steps:
+## Decrypt PDE-encrypted content
+
+Disabling PDE doesn't decrypt any PDE protected content. It only prevents the PDE API from being able to protect any additional content. PDE-protected files can be manually decrypted using the following steps:
 
 1. Open the properties of the file
-2. Under the **General** tab, select **Advanced...**
-3. Uncheck the option **Encrypt contents to secure data**
-4. Select **OK**, and then **OK** again
+1. Under the **General** tab, select **Advanced...**
+1. Uncheck the option **Encrypt contents to secure data**
+1. Select **OK**, and then **OK** again
 
-PDE protected files can also be decrypted using [WINS-1]. Using `cipher.exe` can be helpful to decrypt files in the following scenarios:
+PDE-protected files can also be decrypted using [`cipher.exe`][WINS-1], which can be helpful in the following scenarios:
 
 - Decrypting a large number of files on a device
-- Decrypting files on a large number of devices.
+- Decrypting files on multiple of devices
 
 To decrypt files on a device using `cipher.exe`:
 
 - Decrypt all files under a directory including subdirectories:
 
-    ```cmd
-    cipher.exe /d /s:<path_to_directory>
-    ```
+  ```cmd
+  cipher.exe /d /s:<path_to_directory>
+  ```
 
 - Decrypt a single file or all of the files in the specified directory, but not any subdirectories:
 
-    ```cmd
-    cipher.exe /d <path_to_file_or_directory>
-    ```
+  ```cmd
+  cipher.exe /d <path_to_file_or_directory>
+  ```
 
 > [!IMPORTANT]
-> Once a user selects to manually decrypt a file, the user will not be able to manually protect the file again using PDE.
+> Once a user selects to manually decrypt a file, the user won't be able to manually protect the file again using PDE.
 
 ## Next steps
 
@@ -132,7 +138,7 @@ To decrypt files on a device using `cipher.exe`:
 
 <!--links used in this document-->
 
-[CSP-1]: /windows/client-management/mdm/policy-csp-localpoliciessecurityoptions
+[CSP-1]: /windows/client-management/mdm/policy-configuration-service-provider
 [CSP-2]: /windows/client-management/mdm/personaldataencryption-csp
 
 [WINS-1]: /windows-server/administration/windows-commands/cipher
