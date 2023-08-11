@@ -24,17 +24,15 @@ Unlike BitLocker that releases data encryption keys at boot, PDE doesn't release
 
 To use PDE, the following prerequisites must be met:
 
-- The devices must be [Azure AD joined](/azure/active-directory/devices/concept-azure-ad-join)
-  - Domain-joined and hybrid Azure AD joined devices aren't supported
-- Users must sign in with [Windows Hello for Business](../../../identity-protection/hello-for-business/index.md)
-  - [FIDO/security key authentication](/azure/active-directory/authentication/howto-authentication-passwordless-security-key) isn't supported
 - Windows 11, version 22H2 and later
+- The devices must be [Azure AD joined][AAD-1]. Domain-joined and hybrid Azure AD joined devices aren't supported
+- Users must sign in using [Windows Hello for Business](../../../identity-protection/hello-for-business/index.md). Password and [security key][AAD-2] sign in aren't supported
 
 [!INCLUDE [personal-data-encryption-pde](../../../../../includes/licensing/personal-data-encryption-pde.md)]
 
 ## PDE protection levels
 
-PDE uses **AES-CBC** with a **256-bit key** to protect content and offers two levels of protection. The level of protection is determined based on the organizational needs. These levels can be set via the [PDE APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager).
+PDE uses *AES-CBC* with a *256-bit key* to protect content and offers two levels of protection. The level of protection is determined based on the organizational needs. These levels can be set via the [PDE APIs](/uwp/api/windows.security.dataprotection.userdataprotectionmanager).
 
 | Item | Level 1 | Level 2 |
 |---|---|---|
@@ -86,14 +84,29 @@ For EFS protected files, under **Users who can access this file:**, there will b
 
 Encryption information including what encryption method is being used to protect the file can be obtained with the [`cipher.exe /c`](/windows-server/administration/windows-commands/cipher) command.
 
+### Recommendations for using PDE
+
+The following are recommendations for using PDE:
+
+- Enable [BitLocker Drive Encryption](../bitlocker/index.md). Although PDE works without BitLocker, it's recommended to enable BitLocker. PDE is meant to work alongside BitLocker for increased security at it isn't a replacement for BitLocker
+- Backup solution such as [OneDrive in Microsoft 365](/sharepoint/onedrive-overview). In certain scenarios, such as TPM resets or destructive PIN resets, the keys used by PDE to protect content will be lost making any PDE-protected concent inaccessible. The only way to recover such content is from a backup. If the files are synced to OneDrive, to regain access you have to re-sync OneDrive
+- [Windows Hello for Business PIN reset service](../../../identity-protection/hello-for-business/hello-feature-pin-reset.md). Destructive PIN resets will cause keys used by PDE to protect content to be lost, making any content protected with PDE inaccessible after the destructive PIN reset has occurred. Content protected with PDE will need to be recovered from a backup after a destructive PIN reset. For this reason, Windows Hello for Business PIN reset service is recommended since it provides non-destructive PIN resets
+- [Windows Hello Enhanced Sign-in Security](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security) offers additional security when authenticating with Windows Hello for Business via biometrics or PIN
+
 ## Windows out of box applications that support PDE
 
-Certain Windows applications support PDE out of the box. If PDE is enabled on a device, these applications will utilize PDE.
+Certain Windows applications support PDE out of the box. If PDE is enabled on a device, these applications will utilize PDE:
 
-- Mail
-  - Supports protecting both email bodies and attachments
+| App name | Details |
+|-|-|
+| Mail | Supports protecting both email bodies and attachments|
 
 ## Next steps
 
 - Learn about the available options to configure Personal Data Encryption (PDE) and how to configure them via Microsoft Intune or configuration Service Provider (CSP): [PDE settings and configuration](configure.md)
 - Review the [Personal Data Encryption (PDE) FAQ](faq.yml)
+
+<!--links used in this document-->
+
+[AAD-1]: /azure/active-directory/devices/concept-azure-ad-join
+[AAD-2]: /azure/active-directory/authentication/howto-authentication-passwordless-security-key
