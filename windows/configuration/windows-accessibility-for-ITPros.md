@@ -16,6 +16,8 @@ appliesto:
   - ✅ <b>Windows 11</b>
 ---
 
+<!-- MAXADO-8138352 -->
+
 # Accessibility information for IT professionals
 
 Microsoft is dedicated to making its products and services accessible and usable for everyone. Windows includes accessibility features that benefit all users. These features make it easier to customize the computer and give users with different abilities options to improve their experience with Windows.
@@ -34,7 +36,7 @@ Windows 11, version 22H2, includes improvements for people with disabilities: sy
 
 ## Vision
 
-- [Use Narrator to use devices without a screen](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1). Narrator describes Windows and apps and enables you to control devices by using a keyboard, controller, or with a range of gestures on touch-supported devices. Starting in Windows 11, version 22H2, Narrator includes more natural voices.
+- [Use Narrator to use devices without a screen](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1). Narrator describes Windows and apps and enables you to control devices by using a keyboard, controller, or with a range of gestures on touch-supported devices. Now the user is able to download and install 10 more natural languages.
 
 - [Create accessible apps](/windows/apps/develop/accessibility). You can develop accessible apps just like Mail, Groove, and Store that work well with Narrator and other leading screen readers.
 
@@ -108,7 +110,7 @@ Windows 11, version 22H2, includes improvements for people with disabilities: sy
 ## Assistive technology devices built into Windows
 
 - [Hear text read aloud with Narrator](https://support.microsoft.com/windows/hear-text-read-aloud-with-narrator-040f16c1-4632-b64e-110a-da4a0ac56917). Narrator reads text on your PC screen aloud and describes events, such as notifications or calendar appointments, so you can use your PC without a display.
-
+  
 - [Use voice recognition](https://support.microsoft.com/windows/use-voice-recognition-in-windows-83ff75bd-63eb-0b6c-18d4-6fae94050571).
 
 - [Save time with keyboard shortcuts](https://support.microsoft.com/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec).
