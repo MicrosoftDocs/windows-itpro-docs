@@ -1,7 +1,7 @@
 ---
 title: VPN authentication options 
 description: Learn about the EAP authentication methods that Windows supports in VPNs to provide secure authentication using username/password and certificate-based methods.
-ms.date: 09/23/2021
+ms.date: 08/03/2023
 ms.topic: conceptual
 ---
 
@@ -9,7 +9,7 @@ ms.topic: conceptual
 
 In addition to older and less-secure password-based authentication methods (which should be avoided), the built-in VPN solution uses Extensible Authentication Protocol (EAP) to provide secure authentication using both user name and password, and certificate-based methods. You can only configure EAP-based authentication if you select a built-in VPN type (IKEv2, L2TP, PPTP or Automatic).
 
-Windows supports a number of EAP authentication methods. 
+Windows supports a number of EAP authentication methods.
 
 - EAP-Microsoft Challenge Handshake Authentication Protocol version 2 (EAP-MSCHAPv2):
   - User name and password authentication
@@ -43,7 +43,7 @@ Windows supports a number of EAP authentication methods.
 
   - Fast Reconnect: reduces the delay between an authentication request by a client and the response by the Network Policy Server (NPS) or other Remote Authentication Dial-in User Service (RADIUS) server. This reduces resource requirements for both client and server, and minimizes the number of times that users are prompted for credentials.
 
-  - [Cryptobinding](/openspecs/windows_protocols/ms-peap/757a16c7-0826-4ba9-bb71-8c3f1339e937): By deriving and exchanging values from the PEAP phase 1 key material (**Tunnel Key**) and from the PEAP phase 2 inner EAP method key material (**Inner Session Key**), it is possible to prove that the two authentications terminate at the same two entities (PEAP peer and PEAP server). This process, termed "cryptobinding", is used to protect the PEAP negotiation against "Man in the Middle" attacks.
+  - [Cryptobinding](/openspecs/windows_protocols/ms-peap/757a16c7-0826-4ba9-bb71-8c3f1339e937): By deriving and exchanging values from the PEAP phase 1 key material (**Tunnel Key**) and from the PEAP phase 2 inner EAP method key material (**Inner Session Key**), it's possible to prove that the two authentications terminate at the same two entities (PEAP peer and PEAP server). This process, termed "cryptobinding", is used to protect the PEAP negotiation against "Man in the Middle" attacks.
 
 - Tunneled Transport Layer Security (TTLS)
   - Inner method
@@ -71,14 +71,14 @@ For a UWP VPN plug-in, the app vendor controls the authentication method to be u
 
 ## Configure authentication
 
-See [EAP configuration](/windows/client-management/mdm/eap-configuration) for EAP XML configuration. 
+See [EAP configuration](/windows/client-management/mdm/eap-configuration) for EAP XML configuration.
 
 >[!NOTE]
 >To configure Windows Hello for Business authentication, follow the steps in [EAP configuration](/windows/client-management/mdm/eap-configuration) to create a smart card certificate. [Learn more about Windows Hello for Business.](../../../identity-protection/hello-for-business/hello-identity-verification.md).
 
 The following image shows the field for EAP XML in a Microsoft Intune VPN profile. The EAP XML field only appears when you select a built-in connection type (automatic, IKEv2, L2TP, PPTP).
 
-:::image type="content" source="images/vpn-eap-xml.png" alt-text="EAP XML configuration in Intune profile.":::
+:::image type="content" source="images/vpn-eap-xml.png" alt-text="Screenshot showing EAP XML configuration in Intune profile.":::
 
 ## Related topics
 
@@ -90,3 +90,4 @@ The following image shows the field for EAP XML in a Microsoft Intune VPN profil
 - [VPN auto-triggered profile options](vpn-auto-trigger-profile.md)
 - [VPN security features](vpn-security-features.md)
 - [VPN profile options](vpn-profile-options.md)
+- [Extensible Authentication Protocol (EAP) for network access](/windows-server/networking/technologies/extensible-authentication-protocol/network-access)

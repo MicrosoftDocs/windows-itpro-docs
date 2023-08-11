@@ -71,7 +71,7 @@ The following table describes settings that you can configure using the wizards 
 
 | Step | Description | Desktop wizard | Kiosk wizard | HoloLens wizard |
 | --- | --- | --- | --- | --- |
-| Set up device | Assign device name, enter product key to upgrade Windows, configure shared used, remove pre-installed software | ✔️ | ✔️ | ✔️ |
+| Set up device | Assign device name, enter product key to upgrade Windows, configure shared use, remove pre-installed software | ✔️ | ✔️ | ✔️ |
 | Set up network | Connect to a Wi-Fi network | ✔️ | ✔️ | ✔️ |
 | Account management | Enroll device in Active Directory, enroll device in Azure Active Directory, or create a local administrator account | ✔️ | ✔️ | ✔️ |
 | Bulk Enrollment in Azure AD | Enroll device in Azure Active Directory using Bulk Token</br></br> [Set up Azure AD join in your organization](/azure/active-directory/active-directory-azureadjoin-setup), before you use Windows Configuration Designer wizard to configure bulk Azure AD enrollment. | ✔️ | ✔️ | ✔️ |

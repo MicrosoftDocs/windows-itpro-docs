@@ -75,6 +75,7 @@ The following list shows the SurfaceHub configuration service provider nodes:
   - [Properties](#properties)
     - [AllowAutoProxyAuth](#propertiesallowautoproxyauth)
     - [AllowSessionResume](#propertiesallowsessionresume)
+    - [DefaultAutomaticFraming](#propertiesdefaultautomaticframing)
     - [DefaultVolume](#propertiesdefaultvolume)
     - [DisableSigninSuggestions](#propertiesdisablesigninsuggestions)
     - [DoNotShowMyMeetingsAndFiles](#propertiesdonotshowmymeetingsandfiles)
@@ -1878,7 +1879,7 @@ The name of the domain admin group to add to the administrators group on the dev
 
 <!-- Device-Management-GroupSid-Description-Begin -->
 <!-- Description-Source-DDF -->
-The sid of the domain admin group to add to the administrators group on the device.
+The SID of the domain admin group to add to the administrators group on the device.
 <!-- Device-Management-GroupSid-Description-End -->
 
 <!-- Device-Management-GroupSid-Editable-Begin -->
@@ -2153,6 +2154,46 @@ Specifies whether to allow the ability to resume a session when the session time
 <!-- Device-Properties-AllowSessionResume-Examples-End -->
 
 <!-- Device-Properties-AllowSessionResume-End -->
+
+<!-- Device-Properties-DefaultAutomaticFraming-Begin -->
+### Properties/DefaultAutomaticFraming
+
+<!-- Device-Properties-DefaultAutomaticFraming-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 20H2 [10.0.19042] and later |
+<!-- Device-Properties-DefaultAutomaticFraming-Applicability-End -->
+
+<!-- Device-Properties-DefaultAutomaticFraming-OmaUri-Begin -->
+```Device
+./Vendor/MSFT/SurfaceHub/Properties/DefaultAutomaticFraming
+```
+<!-- Device-Properties-DefaultAutomaticFraming-OmaUri-End -->
+
+<!-- Device-Properties-DefaultAutomaticFraming-Description-Begin -->
+<!-- Description-Source-DDF -->
+Specifies whether the Surface Hub 2 Smart Camera feature to automatically zoom and keep users centered in the video is enabled.
+<!-- Device-Properties-DefaultAutomaticFraming-Description-End -->
+
+<!-- Device-Properties-DefaultAutomaticFraming-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Properties-DefaultAutomaticFraming-Editable-End -->
+
+<!-- Device-Properties-DefaultAutomaticFraming-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `bool` |
+| Access Type | Get, Replace |
+| Default Value  | true |
+<!-- Device-Properties-DefaultAutomaticFraming-DFProperties-End -->
+
+<!-- Device-Properties-DefaultAutomaticFraming-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Properties-DefaultAutomaticFraming-Examples-End -->
+
+<!-- Device-Properties-DefaultAutomaticFraming-End -->
 
 <!-- Device-Properties-DefaultVolume-Begin -->
 ### Properties/DefaultVolume

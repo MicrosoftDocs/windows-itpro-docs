@@ -239,5 +239,19 @@
   "need_generate_pdf_url_template": true,
   "contribution_branch_mappings": {},
   "need_generate_pdf": false,
-  "need_generate_intellisense": false
+  "need_generate_intellisense": false,
+  "redirection_files": [
+    ".openpublishing.redirection.browsers.json",
+    ".openpublishing.redirection.education.json",
+    ".openpublishing.redirection.json",
+    ".openpublishing.redirection.store-for-business.json",
+    ".openpublishing.redirection.windows-application-management.json",
+    ".openpublishing.redirection.windows-client-management.json",
+    ".openpublishing.redirection.windows-configuration.json",
+    ".openpublishing.redirection.windows-deployment.json",
+    ".openpublishing.redirection.windows-hub.json",
+    ".openpublishing.redirection.windows-privacy.json",
+    ".openpublishing.redirection.windows-security.json",
+    ".openpublishing.redirection.windows-whats-new.json"
+  ]
 }

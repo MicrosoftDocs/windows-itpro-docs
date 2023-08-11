@@ -95,7 +95,7 @@ Each calculated values used in the Delivery Optimization report are listed below
 In the **Efficiency By Group** subsection, the **GroupID** is displayed as an encoded SHA256 hash. You can create a mapping of original to encoded GroupIDs using the following PowerShell example:
 
 ```powershell
-$text = "<myOriginalGroupID>" ;
+$text = "<myOriginalGroupID>`0" ; # The `0 null terminator is required
 
 $hashObj = [System.Security.Cryptography.HashAlgorithm]::Create('sha256') ; $dig = $hashObj.ComputeHash([System.Text.Encoding]::Unicode.GetBytes($text)) ; $digB64 = [System.Convert]::ToBase64String($dig) ; Write-Host "$text ==> $digB64"
 ```

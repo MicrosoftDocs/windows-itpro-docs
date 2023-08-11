@@ -33,6 +33,9 @@ sections:
       - question: Can I load Windows 11 SE on any hardware? 
         answer: |
           Windows 11 SE is only available on devices that are built for education. To learn more, see [Windows 11 SE Overview](/education/windows/windows-11-se-overview).
+      - question: Can I PXE boot a Windows SE device?
+        answer: |
+          No, Secure Boot prevents Windows SE devices from booting via PXE. As a workaround, you can use a UEFI bootable USB device to boot the device.
   - name: Applications and settings
     questions:
       - question: How can I install applications on Windows 11 SE?

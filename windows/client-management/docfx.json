@@ -39,10 +39,13 @@
         "tier2"
       ],
       "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
-      "uhfHeaderId": "MSDocsHeader-M365-IT",
+      "uhfHeaderId": "MSDocsHeader-Windows",
       "ms.technology": "itpro-manage",
       "audience": "ITPro",
+      "ms.prod": "windows-client",
       "ms.topic": "article",
+      "ms.author": "vinpa",
+      "author": "vinaypamnani-msft",
       "manager": "aaroncz",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/windows-itpro-docs",
@@ -72,7 +75,18 @@
         "Windows 10"
       ]
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "appliesto": {
+        "./*.md": [
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
+        ],
+        "client-tools/*.md": [
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
+        ]
+      }
+    },
     "template": [],
     "dest": "win-client-management",
     "markdownEngineName": "markdig"

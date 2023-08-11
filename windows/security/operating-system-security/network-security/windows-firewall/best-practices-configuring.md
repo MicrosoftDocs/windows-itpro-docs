@@ -19,7 +19,7 @@ network. These recommendations cover a wide range of deployments including home
 networks and enterprise desktop/server systems.
 
 To open Windows Firewall, go to the **Start** menu, select **Run**,
-type **WF.msc**, and then select **OK**. See also [Open Windows Firewall](./open-windows-firewall-with-advanced-security.md).
+type **WF.msc**, and then select **OK**. See also [Open Windows Firewall](open-windows-firewall-with-advanced-security.md).
 
 ## Keep default settings
 
@@ -45,7 +45,7 @@ Firewall whenever possible. These settings have been designed to secure your dev
 > [!IMPORTANT]
 > To maintain maximum security, do not change the default Block setting for inbound connections.
 
-For more on configuring basic firewall settings, see [Turn on Windows Firewall and Configure Default Behavior](./turn-on-windows-firewall-and-configure-default-behavior.md) and [Checklist: Configuring Basic Firewall Settings](./checklist-configuring-basic-firewall-settings.md).
+For more on configuring basic firewall settings, see [Turn on Windows Firewall and Configure Default Behavior](turn-on-windows-firewall-and-configure-default-behavior.md) and [Checklist: Configuring Basic Firewall Settings](checklist-configuring-basic-firewall-settings.md).
 
 ## Understand rule precedence for inbound rules
 
@@ -58,7 +58,7 @@ This rule-adding task can be accomplished by right-clicking either **Inbound Rul
 *Figure 3: Rule Creation Wizard*
 
 > [!NOTE]
->This article does not cover step-by-step rule configuration. See the [Windows Firewall with Advanced Security Deployment Guide](./windows-firewall-with-advanced-security-deployment-guide.md) for general guidance on policy creation.
+>This article does not cover step-by-step rule configuration. See the [Windows Firewall with Advanced Security Deployment Guide](windows-firewall-with-advanced-security-deployment-guide.md) for general guidance on policy creation.
 
 In many cases, allowing specific types of inbound traffic will be required for applications to function in the network. Administrators should keep the following rule precedence behaviors in mind when allowing these inbound exceptions.
 
@@ -108,7 +108,7 @@ Creation of application rules at runtime can also be prohibited by administrator
 
 *Figure 4: Dialog box to allow access*
 
-See also [Checklist: Creating Inbound Firewall Rules](./checklist-creating-inbound-firewall-rules.md).
+See also [Checklist: Creating Inbound Firewall Rules](checklist-creating-inbound-firewall-rules.md).
 
 ## Establish local policy merge and application rules
 
@@ -143,6 +143,36 @@ In general, to maintain maximum security, admins should only push firewall excep
 > [!NOTE]
 > The use of wildcard patterns, such as *C:\*\\teams.exe* is not supported in application rules. We currently only support rules created using the full path to the application(s).
 
+## Understand Group Policy Processing  
+
+The Windows Firewall settings configured via group policy are stored in the registry. By default, group policies are refreshed in the background every 90 minutes, with a random offset of 0 to 30 minutes.
+
+Windows Firewall monitors the registry for changes, and if something is written to the registry it notifies the *Windows Filtering Platform (WFP)*, which performs the following actions:
+
+- Reads all firewall rules and settings
+- Applies any new filters
+- Removes the old filters
+
+> [!NOTE]
+> The actions are triggered whenever something is written to, or deleted from the registry location the GPO settings are stored, regardless if there's really a configuration change. During the process, IPsec connections are disconnected.
+
+Many policy implementations specify that they are updated only when changed. However, you might want to update unchanged policies, such as reapplying a desired policy setting in case a user has changed it. To control the behavior of the registry group policy processing, you can use the policy `Computer Configuration > Administrative Templates > System > Group Policy > Configure registry policy processing`. The *Process even if the Group Policy objects have not changed* option updates and reapplies the policies even if the policies have not changed. This option is disabled by default.
+
+If you enable the option *Process even if the Group Policy objects have not changed*, the WFP filters get reapplied during **every** background refresh. In case you have ten group policies, the WFP filters get reapplied ten times during the refresh interval. If an error happens during policy processing, the applied settings may be incomplete, resulting in issues like:
+
+- Windows Defender Firewall blocks inbound or outbound traffic allowed by group policies
+- Local Firewall settings are applied instead of group policy settings
+- IPsec connections cannot establish
+
+The temporary solution is to refresh the group policy settings, using the command `gpupdate.exe /force`, which requires connectivity to a domain controller.
+
+To avoid the issue, leave the policy `Computer Configuration > Administrative Templates > System > Group Policy > Configure registry policy processing` to the default value of *Not Configured* or, if already configured, configure it *Disabled*.
+
+> [!IMPORTANT]
+> The checkbox next to **Process even if the Group Policy objects have not changed** must be unchecked. If you leave it unchecked, WFP filters are written only in case there's a configuration change.
+>
+> If there's a requirement to force registry deletion and rewrite, then disable background processing by checking the checkbox next to **Do not apply during periodic background processing**.
+
 ## Know how to use "shields up" mode for active attacks
 
 An important firewall feature you can use to mitigate damage during an active attack is the "shields up" mode. It's an informal term referring to an easy method a firewall administrator can use to temporarily increase security in the face of an active attack.
@@ -172,7 +202,7 @@ What follows are a few general guidelines for configuring outbound rules.
 - It's recommended to Allow Outbound by default for most deployments for the sake of simplification around app deployments, unless the enterprise prefers tight security controls over ease-of-use
 - In high security environments, an inventory of all enterprise-spanning apps must be taken and logged by the administrator or administrators. Records must include whether an app used requires network connectivity. Administrators will need to create new rules specific to each app that needs network connectivity and push those rules centrally, via group policy (GP), Mobile Device Management (MDM), or both (for hybrid or co-management environments)
 
-For tasks related to creating outbound rules, see [Checklist: Creating Outbound Firewall Rules](./checklist-creating-outbound-firewall-rules.md).
+For tasks related to creating outbound rules, see [Checklist: Creating Outbound Firewall Rules](checklist-creating-outbound-firewall-rules.md).
 
 ## Document your changes
 

@@ -1,7 +1,7 @@
 ---
-title: Virus and threat protection in the Windows Security app
+title: Virus and threat protection in Windows Security
 description: Use the Virus & threat protection section to see and configure Microsoft Defender Antivirus, Controlled folder access, and 3rd-party AV products.
-ms.date: 12/31/2017
+ms.date: 07/31/2023
 ms.topic: article
 ---
 
@@ -13,7 +13,7 @@ In Windows 10, version 1803, this section also contains information and settings
 
 IT administrators and IT pros can get more configuration information from these articles:
 
-- [Microsoft Defender Antivirus in the Windows Security app](/microsoft-365/security/defender-endpoint/microsoft-defender-security-center-antivirus)
+- [Microsoft Defender Antivirus in Windows Security](/microsoft-365/security/defender-endpoint/microsoft-defender-security-center-antivirus)
 - [Microsoft Defender Antivirus documentation library](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10)
 - [Protect important folders with Controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders)
 - [Defend yourself from cybercrime with new Office 365 capabilities](https://blogs.office.com/2018/04/05/defend-yourself-from-cybercrime-with-new-office-365-capabilities/)
@@ -24,7 +24,7 @@ You can hide the **Virus & threat protection** section or the **Ransomware prote
 
 ## Hide the Virus & threat protection section
 
-You can choose to hide the entire section by using Group Policy. The section won't appear on the home page of the Windows Security app, and its icon won't be shown on the navigation bar on the side of the app.
+You can choose to hide the entire section by using Group Policy. The section won't appear on the home page of **Windows Security**, and its icon won't be shown on the navigation bar on the side.
 
 This section can be hidden only by using Group Policy.
 
@@ -38,13 +38,13 @@ This section can be hidden only by using Group Policy.
 1. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy).
 
 > [!NOTE]
-> If you hide all sections then the app will show a restricted interface, as in the following screenshot:
+> If you hide all sections then **Windows Security** will show a restricted interface, as in the following screenshot:
 >
-> ![Screenshot of the Windows Security app with all sections hidden by Group Policy.](images/wdsc-all-hide.png)
+> ![Screenshot of the Windows Security with all sections hidden by Group Policy.](images/wdsc-all-hide.png)
 
 ## Hide the Ransomware protection area
 
-You can choose to hide the **Ransomware protection** area by using Group Policy. The area won't appear on the **Virus & threat protection** section of the Windows Security app.
+You can choose to hide the **Ransomware protection** area by using Group Policy. The area won't appear on the **Virus & threat protection** section of **Windows Security**.
 
 This area can be hidden only by using Group Policy.
 

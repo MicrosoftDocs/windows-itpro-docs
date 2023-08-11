@@ -1,7 +1,7 @@
 ---
 title: User Account Control settings and configuration
 description: Learn about the User Account Control settings and how to configure them via Intune, CSP, group policy and registry.
-ms.date: 05/26/2023
+ms.date: 07/31/2023
 ms.topic: how-to
 ---
 
@@ -9,11 +9,11 @@ ms.topic: how-to
 
 ## User Account Control settings list
 
-The following table lists the available settings to configure the UAC behavior, and their default values.  
+The following table lists the available settings to configure the UAC behavior, and their default values.
 
 |Setting name| Description|
 |-|-|
-|Run all administrators in Admin Approval Mode|Controls the behavior of all UAC policy settings.<br><br>**Enabled (default)**: Admin Approval Mode is enabled. This policy must be enabled and related UAC settings configured. The policy allows the built-in Administrator account and members of the Administrators group to run in Admin Approval Mode.<br>**Disabled**: Admin Approval Mode and all related UAC policy settings are disabled. Note: If this policy setting is disabled, the Windows Security app notifies you that the overall security of the operating system has been reduced.|
+|Run all administrators in Admin Approval Mode|Controls the behavior of all UAC policy settings.<br><br>**Enabled (default)**: Admin Approval Mode is enabled. This policy must be enabled and related UAC settings configured. The policy allows the built-in Administrator account and members of the Administrators group to run in Admin Approval Mode.<br>**Disabled**: Admin Approval Mode and all related UAC policy settings are disabled. Note: If this policy setting is disabled, **Windows Security** notifies you that the overall security of the operating system has been reduced.|
 |Admin Approval Mode for the Built-in Administrator account|Controls the behavior of Admin Approval Mode for the built-in Administrator account.<br><br>**Enabled**: The built-in Administrator account uses Admin Approval Mode. By default, any operation that requires elevation of privilege prompts the user to approve the operation.<br>**Disabled (default)** : The built-in Administrator account runs all applications with full administrative privilege.|
 |Switch to the secure desktop when prompting for elevation|This policy setting controls whether the elevation request prompt is displayed on the interactive user's desktop or the secure desktop.<br><br>**Enabled (default)**: All elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users.<br>**Disabled**: All elevation requests go to the interactive user's desktop. Prompt behavior policy settings for administrators and standard users are used.|
 |Behavior of the elevation prompt for administrators in Admin Approval Mode|Controls the behavior of the elevation prompt for administrators.<br><br>**Elevate without prompting**: Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials. **Use this option only in the most constrained environments**.<br>**Prompt for credentials on the secure desktop**: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege.<br>**Prompt for consent on the secure desktop**: When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.<br>**Prompt for credentials**: When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.<br>**Prompt for consent**: When an operation requires elevation of privilege, the user is prompted to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.<br>**Prompt for consent for non-Windows binaries (default)**: When an operation for a non-Microsoft application requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.|
@@ -41,7 +41,7 @@ The following instructions provide details how to configure your devices. Select
 
 To configure devices using Microsoft Intune, [create a **Settings catalog** policy][MEM-2], and use the settings listed under the category **`Local Policies Security Options`**:
 
-:::image type="content" source="./images/uac-settings-catalog.png" alt-text="Screenshot that shows the UAC policies in the Intune settings catalog." lightbox="./images/uac-settings-catalog.png" border="True":::
+:::image type="content" source="images/uac-settings-catalog.png" alt-text="Screenshot that shows the UAC policies in the Intune settings catalog." lightbox="images/uac-settings-catalog.png" border="True":::
 
 Assign the policy to a security group that contains as members the devices or users that you want to configure.
 
@@ -82,7 +82,7 @@ The policy settings are located under: `Computer Configuration\Windows Settings\
 
 #### [:::image type="icon" source="../../../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
 
-The registry keys are found under the key: `HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System`.  
+The registry keys are found under the key: `HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System`.
 
 | Setting name | Registry key name | Value |
 | - | - | - |

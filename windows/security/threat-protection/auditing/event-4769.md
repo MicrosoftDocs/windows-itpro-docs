@@ -5,7 +5,7 @@ ms.pagetype: security
 ms.prod: windows-client
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.localizationpriority: none
+ms.localizationpriority: low
 author: vinaypamnani-msft
 ms.date: 09/07/2021
 ms.reviewer: 
@@ -261,7 +261,7 @@ The table below contains the list of the most common error codes for this event:
 | 0x43 | KRB\_AP\_ERR\_NO\_TGT                  | No TGT was presented or available                                           | In user-to-user authentication if the service doesn't possess a ticket granting ticket, it should return the error KRB\_AP\_ERR\_NO\_TGT.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | 0x44 | KDC\_ERR\_WRONG\_REALM                 | Incorrect domain or principal                                               | Although this error rarely occurs, it occurs when a client presents a cross-realm TGT to a realm other than the one specified in the TGT. Typically, this results from incorrectly configured DNS.                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
--   **Transited Services** \[Type = UnicodeString\]: this field contains list of SPNs which were requested if Kerberos delegation was used.
+-   **Transited Services** \[Type = UnicodeString\]: this field contains list of SPNs which were requested if constrained Kerberos delegation was used. 
 
 > **Note**&nbsp;&nbsp;**Service Principal Name (SPN)** is the name by which a client uniquely identifies an instance of a service. If you install multiple instances of a service on computers throughout a forest, each instance must have its own SPN. A given service instance can have multiple SPNs if there are multiple names that clients might use for authentication. For example, an SPN always includes the name of the host computer on which the service instance is running, so a service instance might register an SPN for each name or alias of its host.
 

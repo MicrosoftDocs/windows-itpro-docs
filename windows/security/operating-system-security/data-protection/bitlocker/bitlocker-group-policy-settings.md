@@ -4,7 +4,7 @@ description: This article for IT professionals describes the function, location,
 ms.collection: 
   - highpri
   - tier1
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 11/08/2022
 ---
 
@@ -15,7 +15,7 @@ This article for IT professionals describes the function, location, and effect o
 Group Policy administrative templates or local computer policy settings can be used to control what BitLocker drive encryption tasks and configurations can be performed by users, for example through the **BitLocker Drive Encryption** control panel. Which of these policies are configured and how they're configured depends on how BitLocker is implemented and what level of interaction is desired for end users.
 
 > [!NOTE]
-> A separate set of Group Policy settings supports the use of the Trusted Platform Module (TPM). For details about those settings, see [TPM Group Policy settings](../../../information-protection/tpm/trusted-platform-module-services-group-policy-settings.md).
+> A separate set of Group Policy settings supports the use of the Trusted Platform Module (TPM). For details about those settings, see [TPM Group Policy settings](../../../hardware-security/tpm/trusted-platform-module-services-group-policy-settings.md).
 
 BitLocker Group Policy settings can be accessed using the Local Group Policy Editor and the Group Policy Management Console (GPMC) under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption**.
 
@@ -219,7 +219,7 @@ This policy setting is applied when BitLocker is turned on. The startup PIN must
 
 Originally, BitLocker allowed a length from 4 to 20 characters for a PIN. Windows Hello has its own PIN for sign-in, length of which can be 4 to 127 characters. Both BitLocker and Windows Hello use the TPM to prevent PIN brute-force attacks.
 
-The TPM can be configured to use Dictionary Attack Prevention parameters ([lockout threshold and lockout duration](../../../information-protection/tpm/trusted-platform-module-services-group-policy-settings.md) to control how many failed authorizations attempts are allowed before the TPM is locked out, and how much time must elapse before another attempt can be made.
+The TPM can be configured to use Dictionary Attack Prevention parameters ([lockout threshold and lockout duration](../../../hardware-security/tpm/trusted-platform-module-services-group-policy-settings.md) to control how many failed authorizations attempts are allowed before the TPM is locked out, and how much time must elapse before another attempt can be made.
 
 The Dictionary Attack Prevention Parameters provide a way to balance security needs with usability. For example, when BitLocker is used with a TPM + PIN configuration, the number of PIN guesses is limited over time. A TPM 2.0 in this example could be configured to allow only 32 PIN guesses immediately, and then only one more guess every two hours. This number of attempts totals to a maximum of about 4415 guesses per year. If the PIN is four digits, all 9999 possible PIN combinations could be attempted in a little over two years.
 
@@ -1323,6 +1323,6 @@ PCR 7 measurements are a mandatory logo requirement for systems that support Mod
 
 - [Trusted Platform Module](/windows/device-security/tpm/trusted-platform-module-overview)
 - [TPM Group Policy settings](/windows/device-security/tpm/trusted-platform-module-services-group-policy-settings)
-- [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.yml)
+- [BitLocker frequently asked questions (FAQ)](faq.yml)
 - [BitLocker overview](index.md)
 - [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)
