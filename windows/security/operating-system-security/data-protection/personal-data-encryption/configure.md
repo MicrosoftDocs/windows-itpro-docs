@@ -74,6 +74,115 @@ Category: `Administrative Templates`
 
 [!INCLUDE [intune-settings-catalog-2](../../../../../includes/configure/intune-settings-catalog-2.md)]
 
+
+> [!TIP]
+> Use the following Graph call to automatically create the settings catalog policy in your tenant without assignments nor scope tags. <sup>[1](#footnote1)</sup>
+
+```msgraph-interactive
+POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies
+Content-Type: application/json
+
+{
+    "id": "00-0000-0000-0000-000000000000",
+    "name": "_MSLearn_PDE",
+    "description": "",
+    "platforms": "windows10",
+    "technologies": "mdm",
+    "roleScopeTagIds": [
+      "0"
+    ],
+    "settings": [
+      {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_admx_credentialproviders_allowdomaindelaylock",
+          "choiceSettingValue": {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+            "value": "device_vendor_msft_policy_config_admx_credentialproviders_allowdomaindelaylock_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_errorreporting_disablewindowserrorreporting",
+          "choiceSettingValue": {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+            "value": "device_vendor_msft_policy_config_errorreporting_disablewindowserrorreporting_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_windowslogon_allowautomaticrestartsignon",
+          "choiceSettingValue": {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+            "value": "device_vendor_msft_policy_config_windowslogon_allowautomaticrestartsignon_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_memorydump_allowcrashdump",
+          "choiceSettingValue": {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+            "value": "device_vendor_msft_policy_config_memorydump_allowcrashdump_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_memorydump_allowlivedump",
+          "choiceSettingValue": {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+            "value": "device_vendor_msft_policy_config_memorydump_allowlivedump_0",
+            "children": []
+          }
+        }
+      },
+      {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "user_vendor_msft_pde_enablepersonaldataencryption",
+          "choiceSettingValue": {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+            "value": "user_vendor_msft_pde_enablepersonaldataencryption_1",
+            "children": []
+          }
+        }
+      },
+      {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+        "settingInstance": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+          "settingDefinitionId": "device_vendor_msft_policy_config_power_allowhibernate",
+          "choiceSettingValue": {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+            "value": "device_vendor_msft_policy_config_power_allowhibernate_0",
+            "children": []
+          }
+        }
+      }
+    ]
+  }
+```
+
+<sup><a name="footnote1"></a>1</sup> When using this call, authenticate to your tenant in the Graph Explorer window. If it's the first time using Graph Explorer, you may need to authorize the application to access your tenant or to modify the existing permissions. This graph call requires *DeviceManagementConfiguration.ReadWrite.All* permissions.
+
+
 Alternatively, you can configure devices using a [custom policy][INT-1] with the [Policy CSP][CSP-1].\
 
 |OMA-URI|Format|Value|
