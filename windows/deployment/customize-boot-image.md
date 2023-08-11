@@ -663,7 +663,7 @@ In particular, this step is needed when addressing the BlackLotus UEFI bootkit v
 
 > [!NOTE]
 >
-> **Microsoft Configuration Manager** automatically extracts these bootmgr boot files from the boot images as needed. No additional steps are needed for **Microsoft Configuration Manager**.
+> **Microsoft Configuration Manager** and **Windows Deployment Services (WDS)** automatically extract the bootmgr boot files from the boot images when the boot images are updated in these products. They don't use the bootmgr boot files from the Windows ADK.
 
 ## Step 9: Perform component cleanup
 
@@ -906,6 +906,9 @@ After the default `winpe.wim` boot image from the Windows ADK has been updated, 
 - [Microsoft Configuration Manager](#updating-the-boot-image-in-configuration-manager)
 - [Microsoft Deployment Toolkit (MDT)](#updating-the-boot-image-and-boot-media-in-mdt)
 - Windows Deployment Services
+  - [Original WDS boot image is updated](#original-wds-boot-image-is-updated)
+  - [WDS boot image is replaced with new updated boot image](#wds-boot-image-is-replaced-with-new-updated-boot-image)
+  - [Add updated boot image as a new boot image in WDS](#add-updated-boot-image-as-a-new-boot-image-in-wds)
 
 For any other products that utilize boot images, consult the product's documentation on updating the boot image.
 
@@ -1070,9 +1073,7 @@ These steps also update the MDT boot media in the MDT Deployment Share. After fo
 
 ## Windows Deployment Services (WDS) considerations
 
-### Update boot image and boot files in WDS
-
-### Boot image in WDS is updated
+### Original WDS boot image is updated
 
 If the WDS boot image modified was the original WDS boot image in the `<RemoteInstall>` folder, then the only additional step to take is to restart `Windows Deployment Services Server` service. WDS can be restarted by using the following command lines:
 
@@ -1106,7 +1107,7 @@ For more information, see [wdsutil stop-server](/windows-server/administration/w
 
 ---
 
-### Existing boot image in WDS is updated with a new update boot image
+### WDS boot image is replaced with new updated boot image
 
 In the following boot image replacement scenario for WDS:
 
@@ -1185,7 +1186,7 @@ then follow these steps to update the boot image in WDS:
 
     ---
 
-### Updated boot image is added as a new boot image in WDS
+### Add updated boot image as a new boot image in WDS
 
 In the following boot image scenario for WDS:
 
