@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender SmartScreen overview
 description: Learn how Microsoft Defender SmartScreen protects against phishing or malware websites and applications, and the downloading of potentially malicious files.
-ms.date: 05/31/2023
+ms.date: 08/11/2023
 ms.topic: article
 ms.localizationpriority: high
 ms.collection:
@@ -45,7 +45,7 @@ Microsoft Defender SmartScreen provide an early warning system against websites 
 
 ## Submit files to Microsoft Defender SmartScreen for review
 
-If you believe a warning or block was incorrectly shown for a file or application, or if you believe an undetected file is malware, you can [submit a file](https://www.microsoft.com/wdsi/filesubmission/) to Microsoft for review. For more information, see [Submit files for analysis](/microsoft-365/security/intelligence/submission-guide).
+If you believe a warning or block was incorrectly shown for a file or application, or if you believe an undetected file is malware, [submit a file](https://www.microsoft.com/wdsi/filesubmission/) to Microsoft for review. For more information, see [Submit files for analysis](/microsoft-365/security/intelligence/submission-guide).
 
 When submitting a file for Microsoft Defender SmartScreen, make sure to select **Microsoft Defender SmartScreen** from the product menu.
 
