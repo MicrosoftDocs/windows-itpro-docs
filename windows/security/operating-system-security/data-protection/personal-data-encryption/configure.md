@@ -2,7 +2,7 @@
 title: PDE settings and configuration
 description: Learn about the available options to configure Personal Data Encryption (PDE) and how to configure them via Microsoft Intune or configuration Service Provider (CSP).
 ms.topic: how-to
-ms.date: 03/13/2023
+ms.date: 08/11/2023
 ---
 
 # PDE settings and configuration
@@ -94,8 +94,6 @@ The policy settings are located under: `./Device/Vendor/MSFT/Policy/Config/Devic
 |--|
 | **Setting name**: Turn On Virtualization Based Security<br>**Policy CSP name**: `EnableVirtualizationBasedSecurity` |
 | **Setting name**: Credential Guard Configuration<br>**Policy CSP name**: `LsaCfgFlags` |
-
-
 
 <!--links used in this document-->
 
