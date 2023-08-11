@@ -85,8 +85,10 @@ This walkthrough describes how to customize a Windows PE boot image including up
 > [!TIP]
 >
 > It is recommended to use the full cumulative update when updating boot images with a cumulative update. However, instead of downloading the full cumulative update, the cumulative update for SafeOS can be downloaded and used instead. This will reduce the size of the final updated boot image. If any issues occur with a boot image updated with the SafeOS cumulative update, then use the full cumulative update instead.
+
+> [!NOTE]
 >
-> The SafeOS cumulative update can be found in the [Microsoft Update Catalog](https://catalog.update.microsoft.com/) site by searching on...
+> When updating the boot image in the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads), download the cumulative update for Windows 10 Version 22H2.
 
 ## Step 3: Backup existing boot image
 
@@ -1024,7 +1026,7 @@ The `winpe.wim` boot image from the Windows ADK should be updated because if `Li
 
 ### MDT and Windows ADK versions
 
-Microsoft Deployment Toolkit (MDT) doesn't support versions of Windows or the Windows ADK beyond Windows 10. When MDT is used, the recommendation is to use the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads) instead of the latest version of the Windows ADK. **ADK for Windows 10, version 2004** was the last version of the Windows ADK supported by MDT.
+Microsoft Deployment Toolkit (MDT) doesn't support versions of Windows or the Windows ADK beyond Windows 10. When MDT is used, the recommendation is to use the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads) instead of the latest version of the Windows ADK. **ADK for Windows 10, version 2004** was the last version of the Windows ADK supported by MDT. When updating the boot image for the ADK for Windows 10, version 2004 with a cumulative update, use the cumulative update for Windows 10 Version 22H2.
 
 ### MDT boot image required components
 
