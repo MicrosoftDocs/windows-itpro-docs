@@ -69,12 +69,12 @@ Alternatively, you can configure devices using the [Policy CSP][CSP-1] and [PDE 
 |OMA-URI|Format|Value|
 |-|-|-|
 |`./User/Vendor/MSFT/PDE/EnablePersonalDataEncryption`|int|`1`|
-|`./Device/Vendor/MSFT/Policy/Config/WindowsLogon/AllowAutomaticRestartSignOn`|string|`/<disabled/>`|
+|`./Device/Vendor/MSFT/Policy/Config/WindowsLogon/AllowAutomaticRestartSignOn`|string|`<disabled/>`|
 |`./Device/Vendor/MSFT/Policy/Config/MemoryDump/AllowCrashDump`| int| `0`|
 |`./Device/Vendor/MSFT/Policy/Config/MemoryDump/AllowLiveDump` |int| `0`|
-|`./Device/Vendor/MSFT/Policy/Config/ErrorReporting/DisableWindowsErrorReporting`|string|`/<disabled/>`|
+|`./Device/Vendor/MSFT/Policy/Config/ErrorReporting/DisableWindowsErrorReporting`|string|`<enabled/>`|
 |`./Device/Vendor/MSFT/Policy/Config/Power/AllowHibernate` |int| `0`|
-|`./Device/Vendor/MSFT/Policy/Config/ADMX_CredentialProviders/AllowDomainDelayLock`|string|`/<disabled/>`|
+|`./Device/Vendor/MSFT/Policy/Config/ADMX_CredentialProviders/AllowDomainDelayLock`|string|`<disabled/>`|
 
 ## Disable PDE
 
