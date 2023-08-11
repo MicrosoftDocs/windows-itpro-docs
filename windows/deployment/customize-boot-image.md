@@ -1070,11 +1070,13 @@ These steps also update the MDT boot media in the MDT Deployment Share. After fo
 
 ### Update boot image and boot files in WDS
 
-If the WDS boot image modified was the original WDS boot image in the <RemoteInstall> folder, then the only additional step to take is to restart `Windows Deployment Services Server` service. This can be done using the following command lines:
+### Boot image in WDS is updated
 
-### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
+If the WDS boot image modified was the original WDS boot image in the `<RemoteInstall>` folder, then the only additional step to take is to restart `Windows Deployment Services Server` service. This can be done using the following command lines:
 
-From an elevated **PowerShell** command prompt, run the following command to to restart the `Windows Deployment Services Server` service:
+#### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
+
+From an elevated **PowerShell** command prompt, run the following command to restart the `Windows Deployment Services Server` service:
 
 ```powershell
 Restart-Service -Name WDSServer
@@ -1082,9 +1084,9 @@ Restart-Service -Name WDSServer
 
 For more information, see [Restart-Service](/powershell/module/microsoft.powershell.management/restart-service).
 
-### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+#### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
 
-From an elevated command prompt, run the following command to `Windows Deployment Services Server` service:
+From an elevated command prompt, run the following command to restart the `Windows Deployment Services Server` service:
 
 ```cmd
 wdsutil.exe /Stop-Server
@@ -1101,6 +1103,164 @@ net.exe start WDSServer
 For more information, see [wdsutil stop-server](/windows-server/administration/windows-commands/wdsutil-stop-server) and [wdsutil start-server](/windows-server/administration/windows-commands/wdsutil-start-server).
 
 ---
+
+### Existing boot image in WDS is updated with a new update boot image
+
+In the following boot image replacement scenario for WDS:
+
+- The boot image modified as part of this guide is outside of the `<RemoteInstall>` folder, for example the `winpe.wim` boot image that comes with the Windows ADK
+- An existing boot image in WDS is being replaced with the updated boot image
+
+then follow these steps to update the boot image in WDS:
+
+1. Replace the existing boot image in WDS with the modified boot image using the following command lines:
+
+    #### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
+
+    In PowerShell, the original boot image needs to be removed first and then replaced with a new image. From an elevated **PowerShell** command prompt, run the following commands to replace an existing boot image in WDS with a new boot image:
+
+    ```powershell
+    Remove-WdsBootImage -Architecture <Architecture_x64_or_x86> -ImageName "<Name_Of_Existing_Boot_Image_In_WDS>"
+    Import-WdsBootImage -Path "<Path_To_Updated_Boot_Image>\<boot_image>.wim" -NewImageName "<Name_Of_Existing_Boot_Image_In_WDS>"
+    ```
+
+    **Example**:
+
+    ```powershell
+    Remove-WdsBootImage -Architecture x64 -ImageName "Microsoft Windows PE (amd64)"
+    Import-WdsBootImage -Path "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" -NewImageName "Microsoft Windows PE (amd64)"
+    ```
+
+    For more information, see [Remove-WdsBootImage](/powershell/module/wds/remove-wdsbootimage) and [Import-WdsBootImage](/powershell/module/wds/import-wdsbootimage).
+
+    #### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+
+    From an elevated command prompt, run the following command to replace an existing boot image in WDS with a new boot image:
+
+    ```cmd
+    wdsutil.exe /Verbose /Progress /Replace-Image /Image:"<Name_Of_Existing_Boot_Image_In_WDS>" /ImageType:Boot /Architecture:<Architecture_x64_orx86> /ReplacementImage /ImageFile:"<Path_To_Updated_Boot_Image>\<boot_image>.wim"
+    ```
+
+    **Example**:
+
+    ```cmd
+    wdsutil.exe /Verbose /Progress /Replace-Image /Image:"Microsoft Windows PE (amd64)" /ImageType:Boot /Architecture:x64 /ReplacementImage /ImageFile:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim"
+    ```
+
+    For more information, see [wdsutil replace-image](/windows-server/administration/windows-commands/wdsutil-replace-image).
+
+    ---
+
+2. Once the existing boot image in WDS has been replaced, restart the WDS service:
+
+    #### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
+
+    From an elevated **PowerShell** command prompt, run the following command to to restart the `Windows Deployment Services Server` service:
+
+    ```powershell
+    Restart-Service -Name WDSServer
+    ```
+
+    For more information, see [Restart-Service](/powershell/module/microsoft.powershell.management/restart-service).
+
+    #### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+
+    From an elevated command prompt, run the following command to restart the `Windows Deployment Services Server` service:
+
+    ```cmd
+    wdsutil.exe /Stop-Server
+    wdsutil.exe /Start-Server
+    ```
+
+    or
+
+    ```cmd
+    net.exe stop WDSServer
+    net.exe start WDSServer
+    ```
+
+    For more information, see [wdsutil stop-server](/windows-server/administration/windows-commands/wdsutil-stop-server) and [wdsutil start-server](/windows-server/administration/windows-commands/wdsutil-start-server).
+
+    ---
+
+### Updated boot image is added as a new boot image in WDS
+
+In the following boot image scenario for WDS:
+
+- The boot image modified as part of this guide is outside of the `<RemoteInstall>` folder, for example the `winpe.wim` boot image that comes with the Windows ADK
+- The updated boot image is being added as a new boot image in WDS
+
+then follow these steps to add the boot image in WDS:
+
+1. Add the updated boot image to WDS using the following command lines:
+
+    #### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
+
+    From an elevated **PowerShell** command prompt, run the following commands to add the updated boot image in WDS as a new boot image:
+
+    ```powershell
+    Import-WdsBootImage -Path "<Path_To_Updated_Boot_Image>\<boot_image>.wim" -NewImageName "<Boot_Image_Name_In_WDS>"
+    ```
+
+    **Example**:
+
+    ```powershell
+    Import-WdsBootImage -Path "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" -NewImageName "Microsoft Windows PE (amd64) - Updated"
+    ```
+
+    For more information, see [Import-WdsBootImage](/powershell/module/wds/import-wdsbootimage).
+
+    #### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+
+    From an elevated command prompt, run the following command to replace an existing boot image in WDS with a new boot image:
+
+    ```cmd
+    wdsutil.exe /Verbose /Progress /Add-Image /ImageFile:"<Path_To_Updated_Boot_Image>\<boot_image>.wim" /ImageType:Boot /Name:"<Boot_Image_Name_In_WDS>"
+
+    ```
+
+    **Example**:
+
+    ```cmd
+    wdsutil.exe /Verbose /Progress /Add-Image /ImageFile:"C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" /ImageType:Boot /Name:"Microsoft Windows PE (amd64) - Updated"
+
+    ```
+
+    For more information, see [wdsutil add-image](/windows-server/administration/windows-commands/wdsutil-add-image).
+
+    ---
+
+2. Once the existing boot image in WDS has been replaced, restart the WDS service:
+
+    #### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
+
+    From an elevated **PowerShell** command prompt, run the following command to to restart the `Windows Deployment Services Server` service:
+
+    ```powershell
+    Restart-Service -Name WDSServer
+    ```
+
+    For more information, see [Restart-Service](/powershell/module/microsoft.powershell.management/restart-service).
+
+    #### [:::image type="icon" source="images/icons/command-line-18.svg"::: **Command Line**](#tab/command-line)
+
+    From an elevated command prompt, run the following command to restart the `Windows Deployment Services Server` service:
+
+    ```cmd
+    wdsutil.exe /Stop-Server
+    wdsutil.exe /Start-Server
+    ```
+
+    or
+
+    ```cmd
+    net.exe stop WDSServer
+    net.exe start WDSServer
+    ```
+
+    For more information, see [wdsutil stop-server](/windows-server/administration/windows-commands/wdsutil-stop-server) and [wdsutil start-server](/windows-server/administration/windows-commands/wdsutil-start-server).
+
+    ---
 
 ## Boot.wim support
 
