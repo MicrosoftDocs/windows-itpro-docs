@@ -16,6 +16,7 @@ appliesto:
   - ✅ <b>Windows 11</b>
 ---
 
+<!-- MAXADO-8138357 -->
 <!-- MAXADO-8138352 -->
 
 # Accessibility information for IT professionals
@@ -110,7 +111,9 @@ Windows 11, version 22H2, includes improvements for people with disabilities: sy
 ## Assistive technology devices built into Windows
 
 - [Hear text read aloud with Narrator](https://support.microsoft.com/windows/hear-text-read-aloud-with-narrator-040f16c1-4632-b64e-110a-da4a0ac56917). Narrator reads text on your PC screen aloud and describes events, such as notifications or calendar appointments, so you can use your PC without a display.
-  
+
+- Scripting functionality has been added to Narrator. There is store delivery of Narrator extension scripts which currently include an Outlook script and an Excel script.
+
 - [Use voice recognition](https://support.microsoft.com/windows/use-voice-recognition-in-windows-83ff75bd-63eb-0b6c-18d4-6fae94050571).
 
 <!-- MAXADO-8138354 -->
