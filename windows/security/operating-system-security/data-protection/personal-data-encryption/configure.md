@@ -76,12 +76,14 @@ Category: `Administrative Templates`
 
 Alternatively, you can configure devices using a [custom policy][INT-1] with the [Policy CSP][CSP-1].\
 
-The policy settings are located under: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/`.
+|OMA-URI|Format|Value|
+|-|-|-|
+|`./User/Vendor/MSFT/PDE/EnablePersonalDataEncryption`|int|`1`|
+|`./Device/Vendor/MSFT/Policy/Config/MemoryDump/AllowCrashDump`| int| `0`|
+|`./Device/Vendor/MSFT/Policy/Config/MemoryDump/AllowLiveDump` |int| `0`|
+|`./Device/Vendor/MSFT/Policy/Config/ErrorReporting/DisableWindowsErrorReporting`|string|`</disabled>`|
+|`./Device/Vendor/MSFT/Policy/Config/ADMX_CredentialProviders/AllowDomainDelayLock`|string|`</disabled>`|
 
-| Setting |
-|--|
-| **Setting name**: Turn On Virtualization Based Security<br>**Policy CSP name**: `EnableVirtualizationBasedSecurity` |
-| **Setting name**: Credential Guard Configuration<br>**Policy CSP name**: `LsaCfgFlags` |
 
 ## Disable PDE and decrypt content
 
