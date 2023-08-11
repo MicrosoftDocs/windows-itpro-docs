@@ -17,6 +17,7 @@ appliesto:
 ---
 
 <!-- MAXADO-8138352 -->
+<!-- MAXADO-8138354 -->
 
 # Accessibility information for IT professionals
 
@@ -112,6 +113,8 @@ Windows 11, version 22H2, includes improvements for people with disabilities: sy
 - [Hear text read aloud with Narrator](https://support.microsoft.com/windows/hear-text-read-aloud-with-narrator-040f16c1-4632-b64e-110a-da4a0ac56917). Narrator reads text on your PC screen aloud and describes events, such as notifications or calendar appointments, so you can use your PC without a display.
   
 - [Use voice recognition](https://support.microsoft.com/windows/use-voice-recognition-in-windows-83ff75bd-63eb-0b6c-18d4-6fae94050571).
+
+- With spellings experience in voice access, you can dictate a complex or non-standard word letter-by-letter and add it to Windows dictionary. The next time you try to dictate the same word, voice access improves its recognition.
 
 - [Save time with keyboard shortcuts](https://support.microsoft.com/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec).
 
