@@ -113,7 +113,7 @@ Windows 11, version 22H2, includes improvements for people with disabilities: sy
 
 - [Use voice recognition](https://support.microsoft.com/windows/use-voice-recognition-in-windows-83ff75bd-63eb-0b6c-18d4-6fae94050571).
 
-- With spellings experience in voice access, users can dictate complex, non-standard words letter-by-letter and add it to Windows dictionary. The next time users try to dictate the same word, voice access improves it’s recognition.
+- With spellings experience in voice access, you can dictate a complex or non-standard word letter-by-letter and add it to Windows dictionary. The next time you try to dictate the same word, voice access improves its recognition.
 
 - [Save time with keyboard shortcuts](https://support.microsoft.com/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec).
 
