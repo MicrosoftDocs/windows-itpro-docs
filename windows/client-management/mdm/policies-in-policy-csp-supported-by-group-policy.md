@@ -637,7 +637,6 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [DisableControlCenter](policy-csp-start.md)
 - [SimplifyQuickSettings](policy-csp-start.md)
 - [DisableEditingQuickSettings](policy-csp-start.md)
-- [HideCopilotButton](policy-csp-start.md)
 
 ## Storage
 
