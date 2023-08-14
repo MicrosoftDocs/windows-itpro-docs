@@ -229,7 +229,7 @@ The following options are available for the policy:
 
 - **Not configured** (default):
   - Optional updates aren't installed on the device and the **Get the latest updates as soon as they're available** option is disabled.
-  - 
+
 
 #### I want to enable features introduced via servicing that are off by default
 <!--6544872-->
