@@ -1,18 +1,17 @@
 ---
-title: BitLocker Countermeasures
-description: Windows uses technologies including TPM, Secure Boot, Trusted Boot, and Early Launch Anti-malware (ELAM) to protect against attacks on the BitLocker encryption key.
+title: BitLocker countermeasures
+description: Windows uses technologies including TPM, Secure Boot, Trusted Boot, and Early Launch Anti-malware (ELAM) to protect against attacks on the BitLocker encryption key. 
 ms.topic: conceptual
 ms.date: 11/08/2022
 ---
 
-# BitLocker Countermeasures
+# BitLocker countermeasures
 
-Windows uses technologies including trusted platform module (TPM), secure boot, and measured boot to help protect BitLocker encryption keys against attacks. BitLocker is part of a strategic approach to securing data against offline attacks through encryption technology. Data on a lost or stolen computer is vulnerable. For example, there could be unauthorized access, either by running a software attack tool against the computer or by transferring the computer's hard disk to a different computer.
+Windows uses technologies including *trusted platform module (TPM)*, *Secure Boot*, and *Measured Boot* to help protect BitLocker encryption keys against attacks. BitLocker is part of a strategic approach to securing data against offline attacks through encryption technology. Data on a lost or stolen device is vulnerable. For example, there could be unauthorized access, either by running a software attack tool against the device or by transferring the device's hard disk to a different device.
 
-BitLocker helps mitigate unauthorized data access on lost or stolen computers before the authorized operating system is started. This mitigation is done by:
+BitLocker helps mitigate unauthorized data access on lost or stolen devices before the authorized operating system is started. This mitigation is done by:
 
-- **Encrypting volumes on a computer.** For example, BitLocker can be turned on for the operating system volume, a volume on a fixed drive. or removable data drive (such as a USB flash drive, SD card, etc.) Turning on BitLocker for the operating system volume encrypts all system files on the volume, including the paging files and hibernation files. The only exception is for the System partition, which includes the Windows Boot Manager and minimal boot collateral required for decryption of the operating system volume after the key is unsealed.
-
+- **Encrypting volumes.** For example, BitLocker can be turned on for the operating system volume, a volume on a fixed drive, or removable data drive (such as a USB flash drive, SD card, etc.). Turning on BitLocker for the operating system volume encrypts all system files on the volume, including the paging files and hibernation files. The only exception is for the System partition, which includes the Windows Boot Manager and minimal boot collateral required for decryption of the operating system volume after the key is unsealed.
 - **Ensuring the integrity of early boot components and boot configuration data.** On devices that have a TPM version 1.2 or higher, BitLocker uses the enhanced security capabilities of the TPM to make data accessible only if the computer's BIOS firmware code and configuration, original boot sequence, boot components, and BCD configuration all appear unaltered and the encrypted disk is located in the original computer. On systems that use TPM PCR[7], BCD setting changes deemed safe are permitted to improve usability.
 
 The next sections provide more details about how Windows protects against various attacks on the BitLocker encryption keys in Windows 11, Windows 10, Windows 8.1, and Windows 8.
@@ -21,16 +20,15 @@ For more information about how to enable the best overall security configuration
 
 ## Protection before startup
 
-Before Windows starts, security features implemented as part of the device hardware and firmware must be relied on, including TPM and secure boot. Fortunately, many modern computers feature a TPM and secure boot.
+Before Windows starts, security features implemented as part of the device hardware and firmware must be relied on, including TPM and secure boot. These features help ensure that the device hasn't been tampered with while the system was offline. The following sections provide more details about how Windows uses these features to protect against attacks on the BitLocker encryption keys.
 
 ### Trusted Platform Module
 
-A trusted platform module (TPM) is a microchip designed to provide basic security-related functions, primarily involving encryption keys. On some platforms, TPM can alternatively be implemented as a part of secure firmware. BitLocker binds encryption keys with the TPM to ensure that a computer hasn't been tampered with while the system was offline. For more info about TPM, see [Trusted Platform Module](/windows/device-security/tpm/trusted-platform-module-overview).
+A TPM is a microchip designed to provide basic security-related functions, primarily involving encryption keys. BitLocker binds encryption keys with the TPM to ensure that a computer hasn't been tampered with while the system was offline. For more information about TPM, see [Trusted Platform Module](/windows/device-security/tpm/trusted-platform-module-overview).
 
-### UEFI and secure boot
+### UEFI and Secure Boot
 
-Unified Extensible Firmware Interface (UEFI) is a programmable boot environment that initializes devices and starts the operating system's bootloader.
-
+Unified Extensible Firmware Interface (UEFI) is a programmable boot environment that initializes devices and starts the operating system's bootloader.\
 The UEFI specification defines a firmware execution authentication process called [Secure Boot](../../system-security/secure-the-windows-10-boot-process.md). Secure Boot blocks untrusted firmware and bootloaders (signed or unsigned) from being able to start on the system.
 
 By default, BitLocker provides integrity protection for Secure Boot by utilizing the TPM PCR[7] measurement. An unauthorized EFI firmware, EFI boot application, or bootloader can't run and acquire the BitLocker key.
@@ -38,9 +36,6 @@ By default, BitLocker provides integrity protection for Secure Boot by utilizing
 ### BitLocker and reset attacks
 
 To defend against malicious reset attacks, BitLocker uses the TCG Reset Attack Mitigation, also known as MOR bit (Memory Overwrite Request), before extracting keys into memory.
-
->[!NOTE]
->This does not protect against physical attacks where an attacker opens the case and attacks the hardware.
 
 ## Security policies
 

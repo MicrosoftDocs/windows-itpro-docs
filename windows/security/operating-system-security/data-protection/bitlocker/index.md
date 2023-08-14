@@ -1,11 +1,11 @@
 ---
 title: BitLocker overview
-description: Learn about BitLocker requirements, practical applications, and deprecated features.
+description: Learn about BitLocker practical applications and requirements.
 ms.collection:
   - highpri
   - tier1
 ms.topic: overview
-ms.date: 08/03/2023
+ms.date: 08/14/2023
 ---
 
 # BitLocker overview
