@@ -15,11 +15,11 @@ appliesto:
 
 [Setting description]
 
-### [:::image type="icon" source="images/icons/intune.svg"::: **MDM**](#tab/mdm)
+#### [:::image type="icon" source="images/icons/intune.svg"::: **CSP**](#tab/csp)
 
-[MDM setting]
+[CSP setting]
 
-### [:::image type="icon" source="images/icons/group-policy.svg"::: **Group policy**](#tab/group-policy)
+#### [:::image type="icon" source="images/icons/group-policy.svg"::: **Group policy**](#tab/group-policy)
 
 [Group policy setting]
 
@@ -27,10 +27,10 @@ appliesto:
 
 [Setting description]
 
-### [:::image type="icon" source="images/icons/intune.svg"::: **MDM**](#tab/mdm)
+#### [:::image type="icon" source="images/icons/intune.svg"::: **CSP**](#tab/csp)
 
-[MDM setting]
+[CSP setting]
 
-### [:::image type="icon" source="images/icons/group-policy.svg"::: **Group policy**](#tab/group-policy)
+#### [:::image type="icon" source="images/icons/group-policy.svg"::: **Group policy**](#tab/group-policy)
 
 [Group policy setting]
