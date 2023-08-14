@@ -200,6 +200,37 @@ When you disable this setting, users will see **Some settings are managed by you
 
 If you use Windows Server Update Server (WSUS), you can prevent users from scanning Windows Update. To do this, use **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Remove access to use all Windows Update features**.
 
+#### I want to enable optional updates
+<!--7991583-->
+(*Starting in Windows 11, version 22H2 or later*)
+
+In addition to the monthly cumulative update, optional updates are available to provide new features and nonsecurity changes. Most optional updates are released on the fourth Tuesday of the month, known as optional nonsecurity preview releases. Optional updates can also include features that are gradually rolled out, known as controlled feature rollouts (CFRs). Installation of optional updates isn't enabled by default for devices that receive updates using Windows Update for Business. However, you can enable optional updates for devices by using the **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Manage updates offered from Windows Update > Enable optional updates** policy.
+
+To keep the timing of updates consistent, the **Enable optional updates** policy respects the [deferral period for quality updates](#configure-when-devices-receive-quality-updates). This policy allows you to choose if devices should receive CFRs in addition to the optional nonsecurity preview releases, or if the end-user can make the decision to install optional updates. This policy can change the behavior of the **Get the latest updates as soon as they're available** option in **Settings** > **Update & security** > ***Windows Update** > **Advanced options**. 
+
+The following options are available for the policy:
+
+- **Automatically receive optional updates (including CFRs)**:
+   - The latest optional nonsecurity updates and CFRs are automatically installed on the device. The quality update deferral period is applied to the installation of these updates.
+   - The **Get the latest updates as soon as they're available** option is selected and users can't change the setting.
+   - Devices will receive CFRs in early phases of the rollout.
+
+- **Automatically receive optional updates**:
+   - The latest optional nonsecurity updates are automatically installed on the device but CFRs aren't. The quality update deferral period is applied to the installation of these updates.
+   - The **Get the latest updates as soon as they're available** option isn't selected and users can't change the setting.
+
+- **Users can select which optional updates to receive**:
+   - Users can select which optional updates to install from **Settings** > **Update & security** > **Windows Update** > **Advanced options** > **Optional updates**.
+     - Optional updates are offered to the device, but user interaction is required to install them unless the **Get the latest updates as soon as they're available** option is also enabled.  
+     - CFRs are offered to the device, but not necessarily in the early phases of the rollout.
+   - Users can enable the **Get the latest updates as soon as they're available** option in **Settings** > **Update & security** > ***Windows Update** > **Advanced options**. If the user enables the **Get the latest updates as soon as they're available**, then:
+     - The device will receive CFRs in early phases of the rollout.
+     - Optional updates are automatically installed on the device.
+
+- **Not configured** (default):
+  - Optional updates aren't installed on the device and the **Get the latest updates as soon as they're available** option is disabled.
+  - 
+
 #### I want to enable features introduced via servicing that are off by default
 <!--6544872-->
 (*Starting in Windows 11, version 22H2 or later*)

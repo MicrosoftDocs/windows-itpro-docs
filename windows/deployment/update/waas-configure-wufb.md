@@ -216,6 +216,7 @@ In addition to the monthly cumulative update, optional updates are available to 
 
 To keep the timing of updates consistent, the **Enable optional updates** policy respects the [deferral period for quality updates](#configure-when-devices-receive-quality-updates). This policy allows you to choose if devices should receive CFRs in addition to the optional nonsecurity preview releases, or if the end-user can make the decision to install optional updates. This policy can change the behavior of the **Get the latest updates as soon as they're available** option in **Settings** > **Update & security** > ***Windows Update** > **Advanced options**. 
 
+:::image type="content" source="media/7991583-update-seeker-enabled.png" alt-text="Screenshot of the Get the latest updates as soon as they're available option in the Windows updates page of Settings." lightbox="media/7991583-update-seeker-enabled.png":::
 
 The following options are available for the policy:
 
