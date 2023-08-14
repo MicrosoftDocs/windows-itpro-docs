@@ -4,7 +4,7 @@ description: Learn more about the SystemServices Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- ConfigureHomeGroupListenerServiceStartupMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ConfigureHomeGroupListenerServiceStartupMode-Applicability-End -->
 
 <!-- ConfigureHomeGroupListenerServiceStartupMode-OmaUri-Begin -->
@@ -76,7 +76,7 @@ This setting determines whether the service's start type is Automatic(2), Manual
 <!-- ConfigureHomeGroupProviderServiceStartupMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ConfigureHomeGroupProviderServiceStartupMode-Applicability-End -->
 
 <!-- ConfigureHomeGroupProviderServiceStartupMode-OmaUri-Begin -->
@@ -126,7 +126,7 @@ This setting determines whether the service's start type is Automatic(2), Manual
 <!-- ConfigureXboxAccessoryManagementServiceStartupMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ConfigureXboxAccessoryManagementServiceStartupMode-Applicability-End -->
 
 <!-- ConfigureXboxAccessoryManagementServiceStartupMode-OmaUri-Begin -->
@@ -185,7 +185,7 @@ This setting determines whether the service's start type is Automatic(2), Manual
 <!-- ConfigureXboxLiveAuthManagerServiceStartupMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ConfigureXboxLiveAuthManagerServiceStartupMode-Applicability-End -->
 
 <!-- ConfigureXboxLiveAuthManagerServiceStartupMode-OmaUri-Begin -->
@@ -244,7 +244,7 @@ This setting determines whether the service's start type is Automatic(2), Manual
 <!-- ConfigureXboxLiveGameSaveServiceStartupMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ConfigureXboxLiveGameSaveServiceStartupMode-Applicability-End -->
 
 <!-- ConfigureXboxLiveGameSaveServiceStartupMode-OmaUri-Begin -->
@@ -303,7 +303,7 @@ This setting determines whether the service's start type is Automatic(2), Manual
 <!-- ConfigureXboxLiveNetworkingServiceStartupMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ConfigureXboxLiveNetworkingServiceStartupMode-Applicability-End -->
 
 <!-- ConfigureXboxLiveNetworkingServiceStartupMode-OmaUri-Begin -->
