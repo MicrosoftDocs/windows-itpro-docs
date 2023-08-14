@@ -4,7 +4,7 @@ description: Learn more about the NodeCache CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -62,7 +62,7 @@ The following list shows the NodeCache configuration service provider nodes:
 <!-- Device-{ProviderID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProviderID}-Applicability-End -->
 
 <!-- Device-{ProviderID}-OmaUri-Begin -->
@@ -102,7 +102,7 @@ Group settings per DM server. Each group of settings is distinguished by the ser
 <!-- Device-{ProviderID}-CacheVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProviderID}-CacheVersion-Applicability-End -->
 
 <!-- Device-{ProviderID}-CacheVersion-OmaUri-Begin -->
@@ -141,7 +141,7 @@ Character string representing the cache version set by the server.
 <!-- Device-{ProviderID}-ChangedNodes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProviderID}-ChangedNodes-Applicability-End -->
 
 <!-- Device-{ProviderID}-ChangedNodes-OmaUri-Begin -->
@@ -180,7 +180,7 @@ List of nodes whose values don't match their expected values as specified in /No
 <!-- Device-{ProviderID}-ChangedNodesData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-{ProviderID}-ChangedNodesData-Applicability-End -->
 
 <!-- Device-{ProviderID}-ChangedNodesData-OmaUri-Begin -->
@@ -219,7 +219,7 @@ XML containing nodes whose values don't match their expected values as specified
 <!-- Device-{ProviderID}-Nodes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProviderID}-Nodes-Applicability-End -->
 
 <!-- Device-{ProviderID}-Nodes-OmaUri-Begin -->
@@ -258,7 +258,7 @@ Root node for cached nodes.
 <!-- Device-{ProviderID}-Nodes-{NodeID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProviderID}-Nodes-{NodeID}-Applicability-End -->
 
 <!-- Device-{ProviderID}-Nodes-{NodeID}-OmaUri-Begin -->
@@ -298,7 +298,7 @@ Information about each cached node is stored under NodeID as specified by the se
 <!-- Device-{ProviderID}-Nodes-{NodeID}-AutoSetExpectedValue-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-{ProviderID}-Nodes-{NodeID}-AutoSetExpectedValue-Applicability-End -->
 
 <!-- Device-{ProviderID}-Nodes-{NodeID}-AutoSetExpectedValue-OmaUri-Begin -->
@@ -337,7 +337,7 @@ This will automatically set the value on the device to match the node's actual v
 <!-- Device-{ProviderID}-Nodes-{NodeID}-ExpectedValue-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProviderID}-Nodes-{NodeID}-ExpectedValue-Applicability-End -->
 
 <!-- Device-{ProviderID}-Nodes-{NodeID}-ExpectedValue-OmaUri-Begin -->
@@ -395,7 +395,7 @@ Here's an example for setting the ExpectedValue to nonexistent.
 <!-- Device-{ProviderID}-Nodes-{NodeID}-NodeURI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-{ProviderID}-Nodes-{NodeID}-NodeURI-Applicability-End -->
 
 <!-- Device-{ProviderID}-Nodes-{NodeID}-NodeURI-OmaUri-Begin -->
@@ -434,7 +434,7 @@ This node's value is a complete OMA DM node URI. It can specify either an interi
 <!-- User-{ProviderID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-{ProviderID}-Applicability-End -->
 
 <!-- User-{ProviderID}-OmaUri-Begin -->
@@ -474,7 +474,7 @@ Group settings per DM server. Each group of settings is distinguished by the ser
 <!-- User-{ProviderID}-CacheVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-{ProviderID}-CacheVersion-Applicability-End -->
 
 <!-- User-{ProviderID}-CacheVersion-OmaUri-Begin -->
@@ -513,7 +513,7 @@ Character string representing the cache version set by the server.
 <!-- User-{ProviderID}-ChangedNodes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-{ProviderID}-ChangedNodes-Applicability-End -->
 
 <!-- User-{ProviderID}-ChangedNodes-OmaUri-Begin -->
@@ -552,7 +552,7 @@ List of nodes whose values don't match their expected values as specified in /No
 <!-- User-{ProviderID}-ChangedNodesData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-{ProviderID}-ChangedNodesData-Applicability-End -->
 
 <!-- User-{ProviderID}-ChangedNodesData-OmaUri-Begin -->
@@ -591,7 +591,7 @@ XML containing nodes whose values don't match their expected values as specified
 <!-- User-{ProviderID}-Nodes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-{ProviderID}-Nodes-Applicability-End -->
 
 <!-- User-{ProviderID}-Nodes-OmaUri-Begin -->
@@ -630,7 +630,7 @@ Root node for cached nodes.
 <!-- User-{ProviderID}-Nodes-{NodeID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-{ProviderID}-Nodes-{NodeID}-Applicability-End -->
 
 <!-- User-{ProviderID}-Nodes-{NodeID}-OmaUri-Begin -->
@@ -670,7 +670,7 @@ Information about each cached node is stored under NodeID as specified by the se
 <!-- User-{ProviderID}-Nodes-{NodeID}-AutoSetExpectedValue-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-{ProviderID}-Nodes-{NodeID}-AutoSetExpectedValue-Applicability-End -->
 
 <!-- User-{ProviderID}-Nodes-{NodeID}-AutoSetExpectedValue-OmaUri-Begin -->
@@ -709,7 +709,7 @@ This will automatically set the value on the device to match the node's actual v
 <!-- User-{ProviderID}-Nodes-{NodeID}-ExpectedValue-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-{ProviderID}-Nodes-{NodeID}-ExpectedValue-Applicability-End -->
 
 <!-- User-{ProviderID}-Nodes-{NodeID}-ExpectedValue-OmaUri-Begin -->
@@ -767,7 +767,7 @@ Here's an example for setting the ExpectedValue to nonexistent.
 <!-- User-{ProviderID}-Nodes-{NodeID}-NodeURI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- User-{ProviderID}-Nodes-{NodeID}-NodeURI-Applicability-End -->
 
 <!-- User-{ProviderID}-Nodes-{NodeID}-NodeURI-OmaUri-Begin -->

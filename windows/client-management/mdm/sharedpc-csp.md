@@ -4,7 +4,7 @@ description: Learn more about the SharedPC CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -51,7 +51,7 @@ The following list shows the SharedPC configuration service provider nodes:
 <!-- Device-AccountModel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-AccountModel-Applicability-End -->
 
 <!-- Device-AccountModel-OmaUri-Begin -->
@@ -101,7 +101,7 @@ Configures which type of accounts are allowed to use the PC. Allowed values: 0 (
 <!-- Device-DeletionPolicy-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-DeletionPolicy-Applicability-End -->
 
 <!-- Device-DeletionPolicy-OmaUri-Begin -->
@@ -151,7 +151,7 @@ Configures when accounts will be deleted. Allowed values: 0 (delete immediately)
 <!-- Device-DiskLevelCaching-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-DiskLevelCaching-Applicability-End -->
 
 <!-- Device-DiskLevelCaching-OmaUri-Begin -->
@@ -192,7 +192,7 @@ Stop deleting accounts when available disk space reaches this threshold, given a
 <!-- Device-DiskLevelDeletion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-DiskLevelDeletion-Applicability-End -->
 
 <!-- Device-DiskLevelDeletion-OmaUri-Begin -->
@@ -234,7 +234,7 @@ For example, if the DiskLevelCaching is set to 50 and the DiskLevelDeletion is s
 <!-- Device-EnableAccountManager-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-EnableAccountManager-Applicability-End -->
 
 <!-- Device-EnableAccountManager-OmaUri-Begin -->
@@ -283,7 +283,7 @@ Enable the account manager for shared PC mode. If used, this value must be set b
 <!-- Device-EnableSharedPCMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-EnableSharedPCMode-Applicability-End -->
 
 <!-- Device-EnableSharedPCMode-OmaUri-Begin -->
@@ -332,7 +332,7 @@ Setting this node to "true" triggers the action to configure a device to Shared 
 <!-- Device-EnableSharedPCModeWithOneDriveSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-EnableSharedPCModeWithOneDriveSync-Applicability-End -->
 
 <!-- Device-EnableSharedPCModeWithOneDriveSync-OmaUri-Begin -->
@@ -381,7 +381,7 @@ Setting this node to "1" triggers the action to configure a device to Shared PC 
 <!-- Device-EnableWindowsInsiderPreviewFlighting-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-EnableWindowsInsiderPreviewFlighting-Applicability-End -->
 
 <!-- Device-EnableWindowsInsiderPreviewFlighting-OmaUri-Begin -->
@@ -430,7 +430,7 @@ Setting this node to "1" enables Windows Insider Preview flighting and the abili
 <!-- Device-InactiveThreshold-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-InactiveThreshold-Applicability-End -->
 
 <!-- Device-InactiveThreshold-OmaUri-Begin -->
@@ -471,7 +471,7 @@ Accounts will start being deleted when they haven't been logged-on during the sp
 <!-- Device-KioskModeAUMID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-KioskModeAUMID-Applicability-End -->
 
 <!-- Device-KioskModeAUMID-OmaUri-Begin -->
@@ -510,7 +510,7 @@ Specifies the AUMID of the app to use with assigned access. If used, this value 
 <!-- Device-KioskModeUserTileDisplayText-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-KioskModeUserTileDisplayText-Applicability-End -->
 
 <!-- Device-KioskModeUserTileDisplayText-OmaUri-Begin -->
@@ -549,7 +549,7 @@ Specifies the display text for the account shown on the sign-in screen which lau
 <!-- Device-MaintenanceStartTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-MaintenanceStartTime-Applicability-End -->
 
 <!-- Device-MaintenanceStartTime-OmaUri-Begin -->
@@ -590,7 +590,7 @@ Daily start time of maintenance hour. Given in minutes from midnight. Default is
 <!-- Device-MaxPageFileSizeMB-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-MaxPageFileSizeMB-Applicability-End -->
 
 <!-- Device-MaxPageFileSizeMB-OmaUri-Begin -->
@@ -631,7 +631,7 @@ Maximum size of the paging file in MB. Applies only to systems with less than 32
 <!-- Device-RestrictLocalStorage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-RestrictLocalStorage-Applicability-End -->
 
 <!-- Device-RestrictLocalStorage-OmaUri-Begin -->
@@ -680,7 +680,7 @@ Restricts the user from using local storage. This node is optional. If used, thi
 <!-- Device-SetEduPolicies-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-SetEduPolicies-Applicability-End -->
 
 <!-- Device-SetEduPolicies-OmaUri-Begin -->
@@ -730,7 +730,7 @@ A boolean value that specifies whether the policies for education environment ar
 <!-- Device-SetPowerPolicies-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-SetPowerPolicies-Applicability-End -->
 
 <!-- Device-SetPowerPolicies-OmaUri-Begin -->
@@ -780,7 +780,7 @@ The default value is Not Configured and the effective power settings are determi
 <!-- Device-SignInOnResume-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-SignInOnResume-Applicability-End -->
 
 <!-- Device-SignInOnResume-OmaUri-Begin -->
@@ -829,7 +829,7 @@ Require signing in on waking up from sleep. If used, this value must be set befo
 <!-- Device-SleepTimeout-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-SleepTimeout-Applicability-End -->
 
 <!-- Device-SleepTimeout-OmaUri-Begin -->
