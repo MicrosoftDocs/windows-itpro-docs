@@ -48,7 +48,7 @@ Kerberos armoring is part of RFC 6113. When a device supports Kerberos armoring,
 - All the domain controllers in these domains must be configured to support Kerberos armoring. Set the **KDC support for claims, compound authentication, and Kerberos armoring** Group Policy setting to either **Supported** or **Always provide claims**.
 - All the devices with Windows Defender Credential Guard that the users will be restricted to must be configured to support Kerberos armoring. Enable the **Kerberos client support for claims, compound authentication and Kerberos armoring** Group Policy settings under **Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Kerberos**.
 
-### Protecting domain-joined device secrets
+### Protect domain-joined device secrets
 
 Since domain-joined devices also use shared secrets for authentication, attackers can steal those secrets as well. By deploying device certificates with Windows Defender Credential Guard, the private key can be protected. Then authentication policies can require that users sign on to devices that authenticate using those certificates. This prevents shared secrets stolen from the device to be used with stolen user credentials to sign on as the user.
 
@@ -57,33 +57,33 @@ Domain-joined device certificate authentication has the following requirements:
 - Devices' accounts are in Windows Server 2012 domain functional level or higher.
 - All domain controllers in those domains have KDC certificates which satisfy strict KDC validation certificate requirements:
   - KDC EKU present
-  -    DNS domain name matches the DNSName field of the SubjectAltName (SAN) extension
+  - DNS domain name matches the DNSName field of the SubjectAltName (SAN) extension
 - Windows devices have the CA issuing the domain controller certificates in the enterprise store.
 - A process is established to ensure the identity and trustworthiness of the device in a similar manner as you would establish the identity and trustworthiness of a user before issuing them a smartcard.
 
-#### Deploying domain-joined device certificates
+#### Deploy domain-joined device certificates
 
 To guarantee that certificates with the required issuance policy are only installed on the devices these users must use, they must be deployed manually on each device. The same security procedures used for issuing smart cards to users should be applied to device certificates.
 
 For example, let's say you wanted to use the High Assurance policy only on these devices. Using a Windows Server Enterprise certificate authority, you would create a new template.
 
-**Creating a new certificate template**
+**Create a new certificate template**
 
-1.  From the Certificate Manager console, right-click **Certificate Templates**, and then click **Manage.**
-2.  Right-click **Workstation Authentication**, and then click **Duplicate Template**.
-3.  Right-click the new template, and then click **Properties**.
-4.  On the **Extensions** tab, click **Application Policies**, and then click **Edit**.
-5.  Click **Client Authentication**, and then click **Remove**.
-6.  Add the ID-PKInit-KPClientAuth EKU. Click **Add**, click **New**, and then specify the following values:
+1.  From the Certificate Manager console, right-click **Certificate Templates > Manage**
+1.  Right-click **Workstation Authentication > Duplicate Template**
+1.  Right-click the new template, and then select **Properties**
+1.  On the **Extensions** tab, select **Application Policies > Edit**
+1.  Select **Client Authentication**, and then select **Remove**
+1.  Add the ID-PKInit-KPClientAuth EKU. Select **Add > New**, and then specify the following values:
     -   Name: Kerberos Client Auth
     -   Object Identifier: 1.3.6.1.5.2.3.4
-7.  On the **Extensions** tab, click **Issuance Policies**, and then click **Edit**.
-8.  Under **Issuance Policies**, click**High Assurance**.
-9.  On the **Subject name** tab, clear the **DNS name** check box, and then select the **User Principal Name (UPN)** check box.
+1.  On the **Extensions** tab, select **Issuance Policies > Edit**
+1.  Under **Issuance Policies**, select **High Assurance**
+1.  On the **Subject name** tab, clear the **DNS name** check box, and then select the **User Principal Name (UPN)** check box
 
 Then on the devices that are running Windows Defender Credential Guard, enroll the devices using the certificate you just created.
 
-**Enrolling devices in a certificate**
+**Enroll devices in a certificate**
 
 Run the following command:
 ```powershell
@@ -128,25 +128,25 @@ Authentication policies have the following requirements:
 
 **Creating an authentication policy restricting users to the specific universal security group**
 
-1. Open Active Directory Administrative Center.
-1. Click **Authentication**, click **New**, and then click **Authentication Policy**.
-1. In the **Display name** box, enter a name for this authentication policy.
-1. Under the **Accounts** heading, click **Add**.
-1. In the **Select Users, Computers, or Service Accounts** dialog box, type the name of the user account you wish to restrict, and then click **OK**.
-1. Under the **User Sign On** heading, click the **Edit** button.
-1. Click **Add a condition**.
-1. In the **Edit Access Control Conditions** box, ensure that it reads **User** &gt; **Group** &gt; **Member of each** &gt; **Value**, and then click **Add items**.
-1. In the **Select Users, Computers, or Service Accounts** dialog box, type the name of the universal security group that you created with the set-IssuancePolicyToGroupLink script, and then click **OK**.
-1. Click **OK** to close the **Edit Access Control Conditions** box.
-1. Click **OK** to create the authentication policy.
-1. Close Active Directory Administrative Center.
+1. Open Active Directory Administrative Center
+1. Select **Authentication > New > Authentication Policy**
+1. In the **Display name** box, enter a name for this authentication policy
+1. Under the **Accounts** heading, select **Add**
+1. In the **Select Users, Computers, or Service Accounts** dialog box, type the name of the user account you wish to restrict, and then select **OK**
+1. Under the **User Sign On** heading, select the **Edit** button
+1. Select **Add a condition**
+1. In the **Edit Access Control Conditions** box, ensure that it reads **User > Group > Member of each > Value**, and then select **Add items**
+1. In the **Select Users, Computers, or Service Accounts** dialog box, type the name of the universal security group that you created with the set-IssuancePolicyToGroupLink script, and then select **OK**
+1. Select **OK** to close the **Edit Access Control Conditions** box
+1. Select **OK** to create the authentication policy
+1. Select Active Directory Administrative Center
 
 > [!NOTE]
 > When the authentication policy enforces policy restrictions, users will not be able to sign on using devices that do not have a certificate with the appropriate issuance policy deployed. This applies to both local and remote sign on scenarios. Therefore, it is strongly recommended to first only audit policy restrictions to ensure you don't have unexpected failures.
 
 #### Discover authentication failures due to authentication policies
 
-To make tracking authentication failures due to authentication policies easier, an operational log exists with just those events. To enable the logs on the domain controllers, in Event Viewer, navigate to **Applications and Services Logs\\Microsoft\\Windows\\Authentication, right-click AuthenticationPolicyFailures-DomainController**, and then click **Enable Log**.
+To make tracking authentication failures due to authentication policies easier, an operational log exists with just those events. To enable the logs on the domain controllers, in Event Viewer, navigate to **Applications and Services Logs\\Microsoft\\Windows\\Authentication, right-click AuthenticationPolicyFailures-DomainController**, and then select **Enable Log**.
 
 To learn more about authentication policy events, see [Authentication Policies and Authentication Policy Silos](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn486813(v=ws.11)).
 

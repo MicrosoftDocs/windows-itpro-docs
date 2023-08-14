@@ -219,7 +219,7 @@ The following issue affects Citrix applications:
 <a name="bkmk_note1"></a>
 
 > [!NOTE]
-> **Note 1**: Products that connect to Virtualization Based Security (VBS) protected processes can cause Windows Defender Credential Guard-enabled devices to exhibit high CPU usage. For technical and troubleshooting information, see [KB4032786 High CPU usage in the LSAISO process on Windows](/troubleshoot/windows-client/performance/lsaiso-process-high-cpu-usage).
+> Products that connect to Virtualization Based Security (VBS) protected processes can cause Windows Defender Credential Guard-enabled devices to exhibit high CPU usage. For technical and troubleshooting information, see [KB4032786 High CPU usage in the LSAISO process on Windows](/troubleshoot/windows-client/performance/lsaiso-process-high-cpu-usage).
 >
 > For more technical information on LSAISO.exe, see [Isolated User Mode (IUM) Processes](/windows/win32/procthread/isolated-user-mode--ium--processes).
 
