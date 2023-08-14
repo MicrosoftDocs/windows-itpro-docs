@@ -270,7 +270,8 @@ The following are quick-reference tables of the supported policy values for Wind
 
 | GPO Key |	Key type | Value |
 | --- | --- | --- |
-| AllowTemporaryEnterpriseFeatureControl </br> </br>*Added in Windows 11, version 22H2*| REG_DWORD | 1: Automatically receive optional updates (including CFRs)</br> 2: Automatically receive optional updates </br> 3: Users can select which optional updates to receive </br> Other value or absent: Don't receive optional updates|
+| AllowOptionalContent</br> </br>*Added in Windows 11, version 22H2*| REG_DWORD | 1: Automatically receive optional updates (including CFRs)</br> 2: Automatically receive optional updates </br> 3: Users can select which optional updates to receive </br> Other value or absent: Don't receive optional updates|
+| AllowTemporaryEnterpriseFeatureControl </br> </br>*Added in Windows 11, version 22H2*| REG_DWORD | 1: Allowed. All features in the latest monthly cumulative update are enabled.</br> Other value or absent: Features that are shipped turned off by default will remain off |
 | BranchReadinessLevel	| REG_DWORD | 2: Systems take feature updates for the Windows Insider build - Fast </br> 4: Systems take feature updates for the Windows Insider build - Slow </br> 8: Systems take feature updates for the Release Windows Insider build </br></br> Other value or absent: Receive all applicable updates |
 | DeferFeatureUpdates | REG_DWORD | 1: Defer feature updates</br>Other value or absent: Don't defer feature updates |
 | DeferFeatureUpdatesPeriodinDays | REG_DWORD | 0-365: Defer feature updates by given days |
@@ -285,7 +286,7 @@ The following are quick-reference tables of the supported policy values for Wind
 
 | MDM Key | Key type | Value |
 | --- | --- | --- |
-| AllowTemporaryEnterpriseFeatureControl </br> </br>*Added in Windows 11, version 22H2*| REG_DWORD | 1: Automatically receive optional updates (including CFRs)</br> 2: Automatically receive optional updates </br> 3: Users can select which optional updates to receive </br> Other value or absent: Don't receive optional updates|
+| AllowOptionalContent </br> </br>*Added in Windows 11, version 22H2*| REG_DWORD | 1: Automatically receive optional updates (including CFRs)</br> 2: Automatically receive optional updates </br> 3: Users can select which optional updates to receive </br> Other value or absent: Don't receive optional updates|
 | AllowTemporaryEnterpriseFeatureControl </br> </br>*Added in Windows 11, version 22H2*| REG_DWORD | 1: Allowed. All features in the latest monthly cumulative update are enabled.</br> Other value or absent: Features that are shipped turned off by default will remain off |
 | BranchReadinessLevel | REG_DWORD |2: Systems take feature updates for the Windows Insider build - Fast </br> 4: Systems take feature updates for the Windows Insider build - Slow </br> 8: Systems take feature updates for the Release Windows Insider build  </br>32: Systems take feature updates from General Availability Channel </br>Note: Other value or absent: Receive all applicable updates |
 | DeferFeatureUpdatesPeriodinDays | REG_DWORD | 0-365: Defer feature updates by given days |
