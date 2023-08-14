@@ -851,6 +851,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/security/introduction/index.md",
+      "redirect_url": "/windows/security/introduction",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/security/introduction/security-features-edition-requirements.md",
       "redirect_url": "/windows/security/licensing-and-edition-requirements",
       "redirect_document_id": false
@@ -1413,6 +1418,11 @@
     {
       "source_path": "windows/security/threat-protection/device-guard/steps-to-deploy-windows-defender-application-control.md",
       "redirect_url": "/windows/security/threat-protection/windows-defender-application-control/create-initial-default-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/fips-140-validation.md",
+      "redirect_url": "/windows/security/security-foundations/certification/fips-140-validation",
       "redirect_document_id": false
     },
     {
@@ -4058,6 +4068,11 @@
     {
       "source_path": "windows/security/threat-protection/microsoft-defender-smartscreen/phishing-protection-microsoft-defender-smartscreen.md",
       "redirect_url": "/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/msft-security-dev-lifecycle.md",
+      "redirect_url": "/windows/security/security-foundations/msft-security-dev-lifecycle",
       "redirect_document_id": false
     },
     {
@@ -7251,6 +7266,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/security/threat-protection/windows-platform-common-criteria.md",
+      "redirect_url": "/windows/security/security-foundations/certification/windows-platform-common-criteria",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/security/threat-protection/windows-sandbox/windows-sandbox-architecture.md",
       "redirect_url": "/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-architecture",
       "redirect_document_id": false
@@ -7308,26 +7328,6 @@
     {
       "source_path": "windows/security/trusted-boot.md",
       "redirect_url": "/windows/security/operating-system-security/system-security/trusted-boot",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/security/introduction/index.md",
-      "redirect_url": "/windows/security/introduction",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/security/threat-protection/windows-platform-common-criteria.md",
-      "redirect_url": "/windows/security/security-foundations/certification/windows-platform-common-criteria",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/security/threat-protection/fips-140-validation.md",
-      "redirect_url": "/windows/security/security-foundations/certification/fips-140-validation",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/security/threat-protection/msft-security-dev-lifecycle.md",
-      "redirect_url": "/windows/security/security-foundations/msft-security-dev-lifecycle",
       "redirect_document_id": false
     },
     {

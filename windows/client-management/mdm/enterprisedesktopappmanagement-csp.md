@@ -4,7 +4,7 @@ description: Learn more about the EnterpriseDesktopAppManagement CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -62,7 +62,7 @@ The following list shows the EnterpriseDesktopAppManagement configuration servic
 <!-- Device-MSI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MSI-Applicability-End -->
 
 <!-- Device-MSI-OmaUri-Begin -->
@@ -101,7 +101,7 @@ Product Type is MSI.
 <!-- Device-MSI-{ProductID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MSI-{ProductID}-Applicability-End -->
 
 <!-- Device-MSI-{ProductID}-OmaUri-Begin -->
@@ -142,7 +142,7 @@ The MSI product code for the application.
 <!-- Device-MSI-{ProductID}-DownloadInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MSI-{ProductID}-DownloadInstall-Applicability-End -->
 
 <!-- Device-MSI-{ProductID}-DownloadInstall-OmaUri-Begin -->
@@ -194,7 +194,7 @@ For more information, see [DownloadInstall XSD Schema](#downloadinstall-xsd-sche
 <!-- Device-MSI-{ProductID}-InstallDate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MSI-{ProductID}-InstallDate-Applicability-End -->
 
 <!-- Device-MSI-{ProductID}-InstallDate-OmaUri-Begin -->
@@ -233,7 +233,7 @@ Installation date of the application.
 <!-- Device-MSI-{ProductID}-InstallPath-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MSI-{ProductID}-InstallPath-Applicability-End -->
 
 <!-- Device-MSI-{ProductID}-InstallPath-OmaUri-Begin -->
@@ -272,7 +272,7 @@ Installation path of the application.
 <!-- Device-MSI-{ProductID}-LastError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MSI-{ProductID}-LastError-Applicability-End -->
 
 <!-- Device-MSI-{ProductID}-LastError-OmaUri-Begin -->
@@ -311,7 +311,7 @@ The last error code during the application installation process. This is typical
 <!-- Device-MSI-{ProductID}-LastErrorDesc-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MSI-{ProductID}-LastErrorDesc-Applicability-End -->
 
 <!-- Device-MSI-{ProductID}-LastErrorDesc-OmaUri-Begin -->
@@ -350,7 +350,7 @@ Contains the last error code description. The LastErrorDesc value is looked up f
 <!-- Device-MSI-{ProductID}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MSI-{ProductID}-Name-Applicability-End -->
 
 <!-- Device-MSI-{ProductID}-Name-OmaUri-Begin -->
@@ -389,7 +389,7 @@ Name of the application.
 <!-- Device-MSI-{ProductID}-Publisher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MSI-{ProductID}-Publisher-Applicability-End -->
 
 <!-- Device-MSI-{ProductID}-Publisher-OmaUri-Begin -->
@@ -428,7 +428,7 @@ Publisher of application.
 <!-- Device-MSI-{ProductID}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MSI-{ProductID}-Status-Applicability-End -->
 
 <!-- Device-MSI-{ProductID}-Status-OmaUri-Begin -->
@@ -467,7 +467,7 @@ Status of the application. Valid values: 10-Initialized, 20-Download In Progress
 <!-- Device-MSI-{ProductID}-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-MSI-{ProductID}-Version-Applicability-End -->
 
 <!-- Device-MSI-{ProductID}-Version-OmaUri-Begin -->
@@ -506,7 +506,7 @@ MSI Product Version.
 <!-- Device-MSI-UpgradeCode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-MSI-UpgradeCode-Applicability-End -->
 
 <!-- Device-MSI-UpgradeCode-OmaUri-Begin -->
@@ -545,7 +545,7 @@ MSI Product Version.
 <!-- Device-MSI-UpgradeCode-{Guid}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-MSI-UpgradeCode-{Guid}-Applicability-End -->
 
 <!-- Device-MSI-UpgradeCode-{Guid}-OmaUri-Begin -->
@@ -585,7 +585,7 @@ A gateway (or device management server) uses this method to detect matching upgr
 <!-- User-MSI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-MSI-Applicability-End -->
 
 <!-- User-MSI-OmaUri-Begin -->
@@ -624,7 +624,7 @@ Product Type is MSI.
 <!-- User-MSI-{ProductID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-MSI-{ProductID}-Applicability-End -->
 
 <!-- User-MSI-{ProductID}-OmaUri-Begin -->
@@ -665,7 +665,7 @@ The MSI product code for the application.
 <!-- User-MSI-{ProductID}-DownloadInstall-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-MSI-{ProductID}-DownloadInstall-Applicability-End -->
 
 <!-- User-MSI-{ProductID}-DownloadInstall-OmaUri-Begin -->
@@ -717,7 +717,7 @@ For more information, see [DownloadInstall XSD Schema](#downloadinstall-xsd-sche
 <!-- User-MSI-{ProductID}-InstallDate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-MSI-{ProductID}-InstallDate-Applicability-End -->
 
 <!-- User-MSI-{ProductID}-InstallDate-OmaUri-Begin -->
@@ -756,7 +756,7 @@ Installation date of the application.
 <!-- User-MSI-{ProductID}-InstallPath-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-MSI-{ProductID}-InstallPath-Applicability-End -->
 
 <!-- User-MSI-{ProductID}-InstallPath-OmaUri-Begin -->
@@ -795,7 +795,7 @@ Installation path of the application.
 <!-- User-MSI-{ProductID}-LastError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-MSI-{ProductID}-LastError-Applicability-End -->
 
 <!-- User-MSI-{ProductID}-LastError-OmaUri-Begin -->
@@ -834,7 +834,7 @@ The last error code during the application installation process. This is typical
 <!-- User-MSI-{ProductID}-LastErrorDesc-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-MSI-{ProductID}-LastErrorDesc-Applicability-End -->
 
 <!-- User-MSI-{ProductID}-LastErrorDesc-OmaUri-Begin -->
@@ -873,7 +873,7 @@ Contains the last error code description. The LastErrorDesc value is looked up f
 <!-- User-MSI-{ProductID}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-MSI-{ProductID}-Name-Applicability-End -->
 
 <!-- User-MSI-{ProductID}-Name-OmaUri-Begin -->
@@ -912,7 +912,7 @@ Name of the application.
 <!-- User-MSI-{ProductID}-Publisher-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-MSI-{ProductID}-Publisher-Applicability-End -->
 
 <!-- User-MSI-{ProductID}-Publisher-OmaUri-Begin -->
@@ -951,7 +951,7 @@ Publisher of application.
 <!-- User-MSI-{ProductID}-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-MSI-{ProductID}-Status-Applicability-End -->
 
 <!-- User-MSI-{ProductID}-Status-OmaUri-Begin -->
@@ -990,7 +990,7 @@ Status of the application. Valid values: 10-Initialized, 20-Download In Progress
 <!-- User-MSI-{ProductID}-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- User-MSI-{ProductID}-Version-Applicability-End -->
 
 <!-- User-MSI-{ProductID}-Version-OmaUri-Begin -->
@@ -1029,7 +1029,7 @@ MSI Product Version.
 <!-- User-MSI-UpgradeCode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-MSI-UpgradeCode-Applicability-End -->
 
 <!-- User-MSI-UpgradeCode-OmaUri-Begin -->
@@ -1068,7 +1068,7 @@ MSI Product Version.
 <!-- User-MSI-UpgradeCode-{Guid}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- User-MSI-UpgradeCode-{Guid}-Applicability-End -->
 
 <!-- User-MSI-UpgradeCode-{Guid}-OmaUri-Begin -->
