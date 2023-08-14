@@ -15,22 +15,26 @@ appliesto:
 
 [Setting description]
 
-#### [:::image type="icon" source="images/icons/intune.svg"::: **CSP**](#tab/csp)
+### [:::image type="icon" source="images/icons/intune.svg"::: **CSP**](#tab/csp)
 
 [CSP setting]
 
-#### [:::image type="icon" source="images/icons/group-policy.svg"::: **Group policy**](#tab/group-policy)
+### [:::image type="icon" source="images/icons/group-policy.svg"::: **Group policy**](#tab/group-policy)
 
 [Group policy setting]
+
+---
 
 ## Turn off Windows Copilot
 
 [Setting description]
 
-#### [:::image type="icon" source="images/icons/intune.svg"::: **CSP**](#tab/csp)
+### [:::image type="icon" source="images/icons/intune.svg"::: **CSP**](#tab/csp)
 
 [CSP setting]
 
-#### [:::image type="icon" source="images/icons/group-policy.svg"::: **Group policy**](#tab/group-policy)
+### [:::image type="icon" source="images/icons/group-policy.svg"::: **Group policy**](#tab/group-policy)
 
 [Group policy setting]
+
+---
