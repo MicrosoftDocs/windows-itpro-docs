@@ -11,7 +11,7 @@ ms.collection:
 manager: aaroncz
 ms.topic: how-to
 ms.technology: itpro-updates
-ms.date: 02/28/2023
+ms.date: 08/22/2023
 ---
 
 # Walkthrough: Use Group Policy to configure Windows Update for Business
@@ -22,7 +22,7 @@ ms.date: 02/28/2023
 - Windows 10
 - Windows 11
 
-> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
 ## Overview 
 

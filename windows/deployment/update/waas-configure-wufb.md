@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 ms.author: mstewart
 ms.topic: article
 ms.technology: itpro-updates
-ms.date: 05/19/2023
+ms.date: 08/22/2023
 ---
 
 # Configure Windows Update for Business
@@ -162,7 +162,7 @@ In cases where the pause policy is first applied after the configured start date
 | MDM for Windows 10, version 1607 or later: </br>../Vendor/MSFT/Policy/Config/Update/</br>**PauseQualityUpdates** | **1607:** \Microsoft\PolicyManager\default\Update\PauseQualityUpdates</br>**1703:** \Microsoft\PolicyManager\default\Update\PauseQualityUpdatesStartTime |
 | MDM for Windows 10, version 1511: </br>../Vendor/MSFT/Policy/Config/Update/</br>**DeferUpgrade** | \Microsoft\PolicyManager\default\Update\Pause |
 
-You can check the date that quality updates were paused by checking the registry key **PausedQualityDate** under **HKLM\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings**. 
+You can check the date that quality updates were paused by checking the registry key **PausedQualityDate** under **HKLM\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings**.
 
 The local group policy editor (GPEdit.msc) won't reflect whether the quality update pause period has expired. Although the device will resume quality updates after 35 days automatically, the pause check box will remain selected in the policy editor. To check whether a device has automatically resumed taking quality Updates, check the status registry key **PausedQualityStatus** under **HKLM\SOFTWARE\Microsoft\WindowsUpdate\UpdatePolicy\Settings** for the following values:
 
@@ -210,6 +210,42 @@ Starting with Windows 10, version 1607, you can selectively opt out of receiving
 | GPO for Windows 10, version 1607 or later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > **Do not include drivers with Windows Updates** | \Policies\Microsoft\Windows\WindowsUpdate\ExcludeWUDriversInQualityUpdate  |
 | MDM for Windows 10, version 1607 and later: </br>../Vendor/MSFT/Policy/Config/Update/</br>**ExcludeWUDriversInQualityUpdate** | \Microsoft\PolicyManager\default\Update\ExcludeWUDriversInQualityUpdate |
 
+## Enable optional updates
+<!--7991583-->
+In addition to the monthly cumulative update, optional updates are available to provide new features and nonsecurity changes. Most optional updates are released on the fourth Tuesday of the month, known as optional nonsecurity preview releases. Optional updates can also include features that are gradually rolled out, known as controlled feature rollouts (CFRs). Installation of optional updates isn't enabled by default for devices that receive updates using Windows Update for Business. However, you can enable optional updates for devices by using the **Enable optional updates** policy.
+
+To keep the timing of updates consistent, the **Enable optional updates** policy respects the [deferral period for quality updates](#configure-when-devices-receive-quality-updates). This policy allows you to choose if devices should receive CFRs in addition to the optional nonsecurity preview releases, or if the end-user can make the decision to install optional updates. This policy can change the behavior of the **Get the latest updates as soon as they're available** option in **Settings** > **Update & security** > ***Windows Update** > **Advanced options**. 
+
+
+The following options are available for the policy:
+
+- **Automatically receive optional updates (including CFRs)**:
+   - The latest optional nonsecurity updates and CFRs are automatically installed on the device. The quality update deferral period is applied to the installation of these updates.
+   - The **Get the latest updates as soon as they're available** option is selected and users can't change the setting.
+   - Devices will receive CFRs in early phases of the rollout.
+
+- **Automatically receive optional updates**:
+   - The latest optional nonsecurity updates are automatically installed on the device but CFRs aren't. The quality update deferral period is applied to the installation of these updates.
+   - The **Get the latest updates as soon as they're available** option isn't selected and users can't change the setting.
+
+- **Users can select which optional updates to receive**:
+   - Users can select which optional updates to install from **Settings** > **Update & security** > **Windows Update** > **Advanced options** > **Optional updates**.
+     - Optional updates are offered to the device, but user interaction is required to install them unless the **Get the latest updates as soon as they're available** option is also enabled.  
+     - CFRs are offered to the device, but not necessarily in the early phases of the rollout.
+   - Users can enable the **Get the latest updates as soon as they're available** option in **Settings** > **Update & security** > ***Windows Update** > **Advanced options**. If the user enables the **Get the latest updates as soon as they're available**, then:
+     - The device will receive CFRs in early phases of the rollout.
+     - Optional updates are automatically installed on the device.
+
+- **Not configured** (default):
+  - Optional updates aren't installed on the device and the **Get the latest updates as soon as they're available** option is disabled.
+
+**Policies to enable optional updates**
+
+| Policy | Sets registry key under HKLM\Software |
+| --- | --- |
+| GPO for Windows 11, version 22H2 with [KBxxxxxxx](https://support.microsoft.com/en-us/topic/february-14-2023-kb5022845-os-build-22621-1265-90a807f4-d2e8-486e-8a43-d09e66319f38) and later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Manage updates offered from Windows Update > **Enable optional updates**| \Policies\Microsoft\Windows\WindowsUpdate\AllowOptionalContent |
+| MDM for Windows 11, version 22H2 with [KBxxxxxxx](https://support.microsoft.com/en-us/topic/february-14-2023-kb5022845-os-build-22621-1265-90a807f4-d2e8-486e-8a43-d09e66319f38) and later: </br>./Device/Vendor/MSFT/Policy/Config/Update/</br>**[AllowOptionalContent](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowoptionalcontent)** | \Policies\Microsoft\Windows\WindowsUpdate\AllowOptionalContent |
+
 ## Enable features that are behind temporary enterprise feature control
 <!--6544872-->
 
@@ -221,8 +257,8 @@ The features that are behind temporary enterprise feature control will be enable
 
 | Policy | Sets registry key under HKLM\Software |
 | --- | --- |
-| GPO for Windows 11, version 22H2 with [kb5022845](https://support.microsoft.com/en-us/topic/february-14-2023-kb5022845-os-build-22621-1265-90a807f4-d2e8-486e-8a43-d09e66319f38) and later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Manage end user experience > **Enable features introduced via servicing that are off by default**| \Policies\Microsoft\Windows\WindowsUpdate\AllowTemporaryEnterpriseFeatureControl  |
-| MDM for Windows 11, version 22H2 with [kb5022845](https://support.microsoft.com/en-us/topic/february-14-2023-kb5022845-os-build-22621-1265-90a807f4-d2e8-486e-8a43-d09e66319f38) and later: </br>../Vendor/MSFT/Policy/Config/Update/</br>**[AllowTemporaryEnterpriseFeatureControl](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowtemporaryenterprisefeaturecontrol)** | \Microsoft\PolicyManager\default\Update\AllowTemporaryEnterpriseFeatureControl |
+| GPO for Windows 11, version 22H2 with [KB5022845](https://support.microsoft.com/en-us/topic/february-14-2023-kb5022845-os-build-22621-1265-90a807f4-d2e8-486e-8a43-d09e66319f38) and later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Manage end user experience > **Enable features introduced via servicing that are off by default**| \Policies\Microsoft\Windows\WindowsUpdate\AllowTemporaryEnterpriseFeatureControl  |
+| MDM for Windows 11, version 22H2 with [KB5022845](https://support.microsoft.com/en-us/topic/february-14-2023-kb5022845-os-build-22621-1265-90a807f4-d2e8-486e-8a43-d09e66319f38) and later: </br>./Device/Vendor/MSFT/Policy/Config/Update/</br>**[AllowTemporaryEnterpriseFeatureControl](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowtemporaryenterprisefeaturecontrol)** | \Microsoft\PolicyManager\default\Update\AllowTemporaryEnterpriseFeatureControl |
 
 
 ## Summary: MDM and Group Policy settings for Windows 10, version 1703 and later
@@ -233,7 +269,7 @@ The following are quick-reference tables of the supported policy values for Wind
 
 | GPO Key |	Key type | Value |
 | --- | --- | --- |
-| AllowTemporaryEnterpriseFeatureControl </br> </br>*Added in Windows 11, version 22H2*| REG_DWORD | 1: Allowed. All features in the latest monthly cumulative update are enabled.</br> Other value or absent: Features that are shipped turned off by default will remain off |
+| AllowTemporaryEnterpriseFeatureControl </br> </br>*Added in Windows 11, version 22H2*| REG_DWORD | 1: Automatically receive optional updates (including CFRs)</br> 2: Automatically receive optional updates </br> 3: Users can select which optional updates to receive </br> Other value or absent: Don't receive optional updates|
 | BranchReadinessLevel	| REG_DWORD | 2: Systems take feature updates for the Windows Insider build - Fast </br> 4: Systems take feature updates for the Windows Insider build - Slow </br> 8: Systems take feature updates for the Release Windows Insider build </br></br> Other value or absent: Receive all applicable updates |
 | DeferFeatureUpdates | REG_DWORD | 1: Defer feature updates</br>Other value or absent: Don't defer feature updates |
 | DeferFeatureUpdatesPeriodinDays | REG_DWORD | 0-365: Defer feature updates by given days |
@@ -248,6 +284,7 @@ The following are quick-reference tables of the supported policy values for Wind
 
 | MDM Key | Key type | Value |
 | --- | --- | --- |
+| AllowTemporaryEnterpriseFeatureControl </br> </br>*Added in Windows 11, version 22H2*| REG_DWORD | 1: Automatically receive optional updates (including CFRs)</br> 2: Automatically receive optional updates </br> 3: Users can select which optional updates to receive </br> Other value or absent: Don't receive optional updates|
 | AllowTemporaryEnterpriseFeatureControl </br> </br>*Added in Windows 11, version 22H2*| REG_DWORD | 1: Allowed. All features in the latest monthly cumulative update are enabled.</br> Other value or absent: Features that are shipped turned off by default will remain off |
 | BranchReadinessLevel | REG_DWORD |2: Systems take feature updates for the Windows Insider build - Fast </br> 4: Systems take feature updates for the Windows Insider build - Slow </br> 8: Systems take feature updates for the Release Windows Insider build  </br>32: Systems take feature updates from General Availability Channel </br>Note: Other value or absent: Receive all applicable updates |
 | DeferFeatureUpdatesPeriodinDays | REG_DWORD | 0-365: Defer feature updates by given days |
@@ -272,3 +309,4 @@ When a device running a newer version sees an update available on Windows Update
 | PauseFeatureUpdates | PauseFeatureUpdatesStartTime |
 | PauseQualityUpdates | PauseQualityUpdatesStartTime |
 
+ 
