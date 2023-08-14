@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "windows/deployment/add-store-apps-to-image.md",
+      "redirect_url": "/windows/deployment/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/deployment/deploy-windows-mdt/create-a-task-sequence-with-configuration-manager-and-mdt.md",
       "redirect_url": "/windows/deployment/deploy-windows-sccm/create-a-task-sequence-with-configuration-manager-and-mdt",
       "redirect_document_id": false
@@ -111,13 +116,28 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/deployment/deploy.md",
+      "redirect_url": "/windows/deployment/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/deployment/do/mcc-enterprise.md",
       "redirect_url": "/windows/deployment/do/waas-microsoft-connected-cache",
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/deployment/planning/act-technical-reference.md",
+      "redirect_url": "/windows/deployment/planning/compatibility-administrator-users-guide",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/deployment/planning/features-lifecycle.md",
       "redirect_url": "/windows/whats-new/feature-lifecycle",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/index.md",
+      "redirect_url": "/windows/deployment/",
       "redirect_document_id": false
     },
     {
@@ -181,6 +201,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/deployment/update/deploy-updates-configmgr.md",
+      "redirect_url": "/mem/configmgr/osd/deploy-use/manage-windows-as-a-service",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/deploy-updates-intune.md",
+      "redirect_url": "/mem/intune/protect/windows-update-for-business-configure",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/deployment/update/device-health-get-started.md",
       "redirect_url": "/configmgr/desktop-analytics/overview",
       "redirect_document_id": false
@@ -208,6 +238,16 @@
     {
       "source_path": "windows/deployment/update/feature-update-mission-critical.md",
       "redirect_url": "/windows/deployment/waas-manage-updates-wufb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/index.md",
+      "redirect_url": "/windows/deployment/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/olympia/olympia-enrollment-guidelines.md",
+      "redirect_url": "/windows-insider/business/register",
       "redirect_document_id": false
     },
     {
@@ -441,6 +481,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/deployment/update/waas-morenews.md",
+      "redirect_url": "/windows/deployment/update/waas-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/deployment/update/waas-optimize-windows-10.md",
       "redirect_url": "/windows/deployment/do/waas-optimize-windows-10",
       "redirect_document_id": false
@@ -501,6 +546,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/deployment/update/windows-as-a-service.md",
+      "redirect_url": "/windows/deployment/update/waas-overview",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/deployment/update/windows-update-errors.md",
       "redirect_url": "/troubleshoot/windows-client/deployment/common-windows-update-errors?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json",
       "redirect_document_id": false
@@ -518,6 +568,11 @@
     {
       "source_path": "windows/deployment/update/windows-update-troubleshooting.md",
       "redirect_url": "/troubleshoot/windows-client/deployment/windows-update-issues-troubleshooting?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/WIP4Biz-intro.md",
+      "redirect_url": "/windows-insider/business/register",
       "redirect_document_id": false
     },
     {
@@ -676,6 +731,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/deployment/windows-10-deployment-tools-reference.md",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-10-deployment-tools.md",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/deployment/windows-10-enterprise-activation-subscription.md",
       "redirect_url": "/windows/deployment/windows-10-enterprise-subscription-activation",
       "redirect_document_id": false
@@ -694,6 +759,11 @@
       "source_path": "windows/deployment/windows-autopatch/operate/index.md",
       "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-update-management",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-deregister-devices.md",
+      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-exclude-device",
+      "redirect_document_id": true
     },
     {
       "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-fu-end-user-exp.md",
@@ -901,6 +971,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/deployment/windows-autopilot/demonstrate-deployment-on-vm.md",
+      "redirect_url": "/mem/autopilot/tutorial/autopilot-scenarios",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/deployment/windows-autopilot/deployment-process.md",
       "redirect_url": "/mem/autopilot/deployment-process",
       "redirect_document_id": false
@@ -918,6 +993,11 @@
     {
       "source_path": "windows/deployment/windows-autopilot/existing-devices.md",
       "redirect_url": "/mem/autopilot/existing-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/windows-autopilot/index.yml",
+      "redirect_url": "/mem/autopilot/",
       "redirect_document_id": false
     },
     {
@@ -1029,86 +1109,6 @@
       "source_path": "windows/deployment/windows-autopilot/windows-autopilot.md",
       "redirect_url": "/mem/autopilot/windows-autopilot",
       "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/deployment/windows-autopilot/demonstrate-deployment-on-vm.md",
-      "redirect_url": "/mem/autopilot/tutorial/autopilot-scenarios",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/deployment/windows-autopilot/index.yml",
-      "redirect_url": "/mem/autopilot/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/deployment/deploy.md",
-      "redirect_url": "/windows/deployment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/deployment/planning/act-technical-reference.md",
-      "redirect_url": "/windows/deployment/planning/compatibility-administrator-users-guide",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/deployment/planning/index.md",
-      "redirect_url": "/windows/deployment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/deployment/add-store-apps-to-image.md",
-      "redirect_url": "/windows/deployment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/deployment/update/deploy-updates-configmgr.md",
-      "redirect_url": "/mem/configmgr/osd/deploy-use/manage-windows-as-a-service",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/deployment/update/deploy-updates-intune.md",
-      "redirect_url": "/mem/intune/protect/windows-update-for-business-configure",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/deployment/update/index.md",
-      "redirect_url": "/windows/deployment/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/deployment/update/olympia/olympia-enrollment-guidelines.md",
-      "redirect_url": "/windows-insider/business/register",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/deployment/update/WIP4Biz-intro.md",
-      "redirect_url": "/windows-insider/business/register",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/deployment/update/waas-morenews.md",
-      "redirect_url": "/windows/deployment/update/waas-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/deployment/update/windows-as-a-service.md",
-      "redirect_url": "/windows/deployment/update/waas-overview",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/deployment/windows-10-deployment-tools.md",
-      "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/deployment/windows-10-deployment-tools-reference.md",
-      "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/deployment/windows-autopatch/operate/windows-autopatch-deregister-devices.md",
-      "redirect_url": "/windows/deployment/windows-autopatch/operate/windows-autopatch-exclude-device",
-      "redirect_document_id": true
     }
   ]
 }

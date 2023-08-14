@@ -1,6 +1,8 @@
 items:
   - name: Transport layer security (TLS) 🔗
     href: /windows-server/security/tls/tls-ssl-schannel-ssp-overview
+  - name: Domain Name System (DNS) security 🔗
+    href: /windows-server/networking/dns/doh-client-support
   - name: Wi-Fi Security
     href: https://support.microsoft.com/windows/faster-and-more-secure-wi-fi-in-windows-26177a28-38ed-1a8e-7eca-66f24dc63f09
   - name: Extensible Authentication Protocol (EAP) for network access
