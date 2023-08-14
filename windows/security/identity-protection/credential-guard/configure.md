@@ -1,7 +1,7 @@
 ---
 title: Configure Windows Defender Credential Guard 
 description: Learn how to configure Windows Defender Credential Guard using MDM, Group Policy, or the registry.
-ms.date: 06/20/2023
+ms.date: 08/14/2023
 ms.collection:
   - highpri
   - tier2

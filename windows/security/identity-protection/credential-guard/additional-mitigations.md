@@ -1,5 +1,5 @@
 ---
-ms.date: 06/20/2023
+ms.date: 08/14/2023
 title: Additional mitigations
 description: Advice and sample code for making your domain environment more secure and robust with Windows Defender Credential Guard.
 ms.topic: article

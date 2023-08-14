@@ -1,11 +1,11 @@
 ---
-ms.date: 01/06/2023
+ms.date: 08/14/2023
 title: Considerations and known issues when using Windows Defender Credential Guard
 description: Considerations, recommendations and known issues when using Windows Defender Credential Guard.
 ms.topic: troubleshooting
 ---
 
-# Considerations when using Windows Defender Credential Guard
+# Considerations and known issues when using Windows Defender Credential Guard
 
 It's recommended that in addition to deploying Windows Defender Credential Guard, organizations move away from passwords to other authentication methods, such as Windows Hello for Business, FIDO 2 security keys or smart cards.
 
