@@ -34,23 +34,25 @@ As the depth and breadth of protections provided by Windows Defender Credential 
 
 Test scenarios required for operations in an organization before upgrading a device using Windows Defender Credential Guard.
 
-## Saved Windows credentials protected
+## Saved Windows credentials considerations
 
-Domain credentials that are stored in *Credential Manager* are protected with Windows Defender Credential Guard. Credential Manager allows you to store three types of credentials:
+*Credential Manager* allows you to store three types of credentials:
 
 - Windows credentials
 - Certificate-based credentials
 - Generic credentials
 
+Domain credentials that are stored in *Credential Manager* are protected with Windows Defender Credential Guard.
+
 Generic credentials, such as user names and passwords that you use to sign in websites, aren't protected since the applications require your clear-text password. If the application doesn't need a copy of the password, they can save domain credentials as Windows credentials that are protected. Windows credentials are used to connect to other computers on a network.
 
 The following considerations apply to the Windows Defender Credential Guard protections for Credential Manager:
 
-- Windows credentials saved by the Remote Desktop client can't be sent to a remote host. Attempts to use saved Windows credentials fail, displaying the error message *Logon attempt failed.*
+- Windows credentials saved by the Remote Desktop client can't be sent to a remote host. Attempts to use saved Windows credentials fail, displaying the error message *Logon attempt failed*
 - Applications that extract Windows credentials fail
-- When credentials are backed up from a PC that has Windows Defender Credential Guard enabled, the Windows credentials can't be restored. If you need to back up your credentials, you must do so before you enable Windows Defender Credential Guard. Otherwise, you can't restore those credentials
+- When credentials are backed up from a PC that has Windows Defender Credential Guard enabled, the Windows credentials can't be restored. If you need to back up your credentials, you must do so before you enable Windows Defender Credential Guard
 
-## Clearing TPM considerations
+## TPM clearing considerations
 
 Virtualization-based Security (VBS) uses the TPM to protect its key. When the TPM is cleared, the TPM protected key used to encrypt VBS secrets is lost.
 
@@ -74,7 +76,7 @@ Active Directory domain-joined devices automatically provision a bound public ke
 
 Since Credential Guard can't decrypt the protected private key, Windows uses the domain-joined computer's password for authentication to the domain. Unless other policies are deployed, there shouldn't be a loss of functionality. If a device is configured to only use public key, then it can't authenticate with password until that policy is disabled. For more information on Configuring devices to only use public key, see [Domain-joined Device Public Key Authentication](/windows-server/security/kerberos/domain-joined-device-public-key-authentication).
 
-Also if any access control checks including authentication policies require devices to have either the KEY TRUST IDENTITY (S-1-18-4) or FRESH PUBLIC KEY IDENTITY (S-1-18-3) well-known SIDs, then those access checks fail. For more information about authentication policies, see [Authentication Policies and Authentication Policy Silos](/windows-server/security/credentials-protection-and-management/authentication-policies-and-authentication-policy-silos). For more information about well-known SIDs, see [[MS-DTYP] Section 2.4.2.4 Well-known SID Structures](/openspecs/windows_protocols/ms-dtyp/81d92bba-d22b-4a8c-908a-554ab29148ab).
+Also if any access control checks including authentication policies require devices to have either the `KEY TRUST IDENTITY (S-1-18-4)` or `FRESH PUBLIC KEY IDENTITY (S-1-18-3)` well-known SIDs, then those access checks fail. For more information about authentication policies, see [Authentication Policies and Authentication Policy Silos](/windows-server/security/credentials-protection-and-management/authentication-policies-and-authentication-policy-silos). For more information about well-known SIDs, see [[MS-DTYP] Section 2.4.2.4 Well-known SID Structures](/openspecs/windows_protocols/ms-dtyp/81d92bba-d22b-4a8c-908a-554ab29148ab).
 
 ### Breaking DPAPI on domain-joined devices
 
@@ -107,11 +109,11 @@ Windows Defender Credential Guard blocks certain authentication capabilities. Ap
 
 This article describes known issues when Windows Defender Credential Guard is enabled.
 
-## Single sign-on for Network services breaks after upgrading to Windows 11, version 22H2  
+### Single sign-on for Network services breaks after upgrading to Windows 11, version 22H2  
 
 Devices that use 802.1x wireless or wired network, RDP, or VPN connections that rely on insecure protocols with password-based authentication are unable to use SSO to sign in and are forced to manually re-authenticate in every new Windows session when Windows Defender Credential Guard is running.  
 
-### Affected devices
+#### Affected devices
 
 Any device with Windows Defender Credential Guard enabled may encounter the issue. As part of the Windows 11, version 22H2 update, eligible devices that didn't disable Windows Defender Credential Guard, have it enabled by default. This affected all devices on Enterprise (E3 and E5) and Education licenses, as well as some Pro licenses*, as long as they met the [minimum hardware requirements](index.md#hardware-and-software-requirements).
   
@@ -123,7 +125,7 @@ All Windows Pro devices that previously ran Windows Defender Credential Guard on
 >
 > You can Windows Defender Credential Guard can be disabled after upgrade by following the [disablement instructions](configure.md#disable-windows-defender-credential-guard).
 
-### Cause of the issue
+#### Cause of the issue
 
 Applications and services are affected by the issue when they rely on insecure protocols that use password-based authentication. Such protocols are considered insecure because they can lead to password disclosure on the client or the server, and Windows Defender Credential Guard blocks them. Affected protocols include:
 
@@ -136,7 +138,7 @@ Applications and services are affected by the issue when they rely on insecure p
 > [!NOTE]
 > Since only SSO is blocked for MS-CHAP, WDigest, and NTLM v1, these protocols can still be used by prompting the user to supply credentials.
 
-### How to confirm the issue
+#### How to confirm the issue
 
 MS-CHAP and NTLMv1 are relevant to the SSO breakage after the Windows 11, version 22H2 update. To confirm if Windows Defender Credential Guard is blocking MS-CHAP or NTLMv1, open the Event Viewer (`eventvwr.exe`) and go to `Application and Services Logs\Microsoft\Windows\NTLM\Operational`. Check the following logs:
 
@@ -183,8 +185,7 @@ MS-CHAP and NTLMv1 are relevant to the SSO breakage after the Windows 11, versio
   :::column-end:::
 :::row-end:::
 
-
-### How to fix the issue
+#### How to fix the issue
 
 We recommend moving away from MSCHAPv2-based connections, such as PEAP-MSCHAPv2 and EAP-MSCHAPv2, to certificate-based authentication, like PEAP-TLS or EAP-TLS. Windows Defender Credential Guard doesn't block certificate-based authentication.  
 
@@ -195,7 +196,7 @@ For a more immediate, but less secure fix, [disable Windows Defender Credential 
 >
 > If Windows Defender Credential Guard is explicitly disabled, the device won't automatically enable Credential Guard after the update.  
 
-## Issues with third-party applications
+### Issues with third-party applications
 
 The following issue affects MSCHAPv2:
 
@@ -222,7 +223,7 @@ The following issue affects Citrix applications:
 >
 > For more technical information on LSAISO.exe, see [Isolated User Mode (IUM) Processes](/windows/win32/procthread/isolated-user-mode--ium--processes).
 
-### Vendor support
+#### Vendor support
 
 The following products and services don't support Windows Defender Credential Guard :
 
