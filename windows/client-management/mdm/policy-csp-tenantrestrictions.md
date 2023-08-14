@@ -4,7 +4,7 @@ description: Learn more about the TenantRestrictions Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- ConfigureTenantRestrictions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20348.320] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1320] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1320] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1320] and later <br> ✅ Windows 10, version 21H2 [10.0.19044] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.320] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1320] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1320] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1320] and later <br> ✅ Windows 10, version 21H2 [10.0.19044] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigureTenantRestrictions-Applicability-End -->
 
 <!-- ConfigureTenantRestrictions-OmaUri-Begin -->
