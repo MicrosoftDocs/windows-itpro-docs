@@ -4,7 +4,7 @@ description: Learn more about the NetworkListManager Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/02/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -26,7 +26,7 @@ ms.topic: reference
 <!-- AllowedTlsAuthenticationEndpoints-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- AllowedTlsAuthenticationEndpoints-Applicability-End -->
 
 <!-- AllowedTlsAuthenticationEndpoints-OmaUri-Begin -->
@@ -79,7 +79,7 @@ Invoke-WebRequest -Uri https://nls.corp.contoso.com -Method get -UseBasicParsing
 <!-- ConfiguredTlsAuthenticationNetworkName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- ConfiguredTlsAuthenticationNetworkName-Applicability-End -->
 
 <!-- ConfiguredTlsAuthenticationNetworkName-OmaUri-Begin -->
