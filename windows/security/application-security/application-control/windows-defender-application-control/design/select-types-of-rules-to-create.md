@@ -127,7 +127,7 @@ Filepath rules don't provide the same security guarantees that explicit signer r
 
 ### User-writable filepaths
 
-By default, WDAC performs a user-writeability check at runtime that ensures that the current permissions on the specified filepath only allows write access for admin users.
+By default, WDAC performs a user-writeability check at runtime that ensures that the current permissions on the specified filepath only allow write access for admin users.
 
 There's a defined list of SIDs that WDAC recognizes as admins. If a filepath allows write permissions for any SID not in this list, the filepath is considered to be user-writeable, even if the SID is associated to a custom admin user. To handle these special cases, you can override WDAC's runtime admin-writeable check with the **Disabled:Runtime FilePath Rule Protection** option described earlier.
 
