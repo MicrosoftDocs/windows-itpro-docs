@@ -4,7 +4,7 @@ description: Learn more about the DeviceInstallation Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- AllowInstallationOfMatchingDeviceIDs-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowInstallationOfMatchingDeviceIDs-Applicability-End -->
 
 <!-- AllowInstallationOfMatchingDeviceIDs-OmaUri-Begin -->
@@ -131,7 +131,7 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
 <!-- AllowInstallationOfMatchingDeviceInstanceIDs-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AllowInstallationOfMatchingDeviceInstanceIDs-Applicability-End -->
 
 <!-- AllowInstallationOfMatchingDeviceInstanceIDs-OmaUri-Begin -->
@@ -235,7 +235,7 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 <!-- AllowInstallationOfMatchingDeviceSetupClasses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AllowInstallationOfMatchingDeviceSetupClasses-Applicability-End -->
 
 <!-- AllowInstallationOfMatchingDeviceSetupClasses-OmaUri-Begin -->
@@ -347,7 +347,7 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
 <!-- EnableInstallationPolicyLayering-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ [10.0.20348.256] and later <br> ✅ Windows 10, version 1809 [10.0.17763.2145] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1714] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1151] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348.256] and later <br> ✅ Windows 10, version 1809 [10.0.17763.2145] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1714] and later <br> ✅ Windows 10, version 2004 [10.0.19041.1151] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- EnableInstallationPolicyLayering-Applicability-End -->
 
 <!-- EnableInstallationPolicyLayering-OmaUri-Begin -->
@@ -463,7 +463,7 @@ You can also change the evaluation order of device installation policy settings 
 <!-- PreventDeviceMetadataFromNetwork-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- PreventDeviceMetadataFromNetwork-Applicability-End -->
 
 <!-- PreventDeviceMetadataFromNetwork-OmaUri-Begin -->
@@ -522,7 +522,7 @@ This policy setting allows you to prevent Windows from retrieving device metadat
 <!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-Applicability-End -->
 
 <!-- PreventInstallationOfDevicesNotDescribedByOtherPolicySettings-OmaUri-Begin -->
@@ -621,7 +621,7 @@ You can also block installation by using a custom profile in Intune.
 <!-- PreventInstallationOfMatchingDeviceIDs-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PreventInstallationOfMatchingDeviceIDs-Applicability-End -->
 
 <!-- PreventInstallationOfMatchingDeviceIDs-OmaUri-Begin -->
@@ -725,7 +725,7 @@ For example, this custom profile blocks installation and usage of USB devices wi
 <!-- PreventInstallationOfMatchingDeviceInstanceIDs-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- PreventInstallationOfMatchingDeviceInstanceIDs-Applicability-End -->
 
 <!-- PreventInstallationOfMatchingDeviceInstanceIDs-OmaUri-Begin -->
@@ -836,7 +836,7 @@ To prevent installation of devices with matching device instance IDs by using cu
 <!-- PreventInstallationOfMatchingDeviceSetupClasses-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PreventInstallationOfMatchingDeviceSetupClasses-Applicability-End -->
 
 <!-- PreventInstallationOfMatchingDeviceSetupClasses-OmaUri-Begin -->
