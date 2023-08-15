@@ -64,7 +64,6 @@ To register the applications, follow these steps:
   :::column-end:::
   :::column span="1":::
     :::image type="content" alt-text="Screenshot showing the PIN reset client permissions page." source="images/pinreset/pin-reset-client-prompt.png" lightbox="images/pinreset/pin-reset-client-prompt.png":::
-    :::image type="content" alt-text="Screenshot showing the PIN reset service permissions final page." source="images/pinreset/pin-reset-service-prompt-2.png" lightbox="images/pinreset/pin-reset-service-prompt-2.png":::
   :::column-end:::
 :::row-end:::
 :::row:::
