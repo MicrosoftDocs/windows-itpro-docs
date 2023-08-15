@@ -52,18 +52,18 @@ To register the applications, follow these steps:
 
 :::row:::
   :::column span="3":::
-  1. Go to the [Microsoft PIN Reset Service Production website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent), and sign in using a *Global Administrator* account you use to manage your Azure Active Directory tenant. Review the permissions requested by the *Microsoft Pin Reset Service Production* application and select **Accept** to give consent to the application to access your organization
+  1. Go to the [Microsoft PIN Reset Service Production website][APP-1], and sign in using a *Global Administrator* account you use to manage your Azure Active Directory tenant. Review the permissions requested by the *Microsoft Pin Reset Service Production* application and select **Accept** to give consent to the application to access your organization
   :::column-end:::
   :::column span="1":::
-    :::image type="content" alt-text="Screenshot showing the PIN reset service permissions page." source="images/pinreset/pin-reset-service-prompt.png" lightbox="images/pinreset/pin-reset-service-prompt.png" border="false":::
+    :::image type="content" alt-text="Screenshot showing the PIN reset service permissions page." source="images/pinreset/pin-reset-service-prompt.png" lightbox="images/pinreset/pin-reset-service-prompt.png" border="true":::
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column span="3":::
-  2. Go to the [Microsoft PIN Reset Client Production website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent), and sign in using a *Global Administrator* account you use to manage your Azure Active Directory tenant. Review the permissions requested by the *Microsoft Pin Reset Client Production* application, and select **Next**.
+  2. Go to the [Microsoft PIN Reset Client Production website][APP-2], and sign in using a *Global Administrator* account you use to manage your Azure Active Directory tenant. Review the permissions requested by the *Microsoft Pin Reset Client Production* application, and select **Next**.
   :::column-end:::
   :::column span="1":::
-    :::image type="content" alt-text="Screenshot showing the PIN reset client permissions page." source="images/pinreset/pin-reset-client-prompt.png" lightbox="images/pinreset/pin-reset-client-prompt.png" border="false":::
+    :::image type="content" alt-text="Screenshot showing the PIN reset client permissions page." source="images/pinreset/pin-reset-client-prompt.png" lightbox="images/pinreset/pin-reset-client-prompt.png" border="true":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -71,15 +71,15 @@ To register the applications, follow these steps:
   3. Review the permissions requested by the *Microsoft Pin Reset Service Production* application and select **Accept** to confirm consent to both applications to access your organization
   :::column-end:::
   :::column span="1":::
-    :::image type="content" alt-text="Screenshot showing the PIN reset service permissions final page." source="images/pinreset/pin-reset-service-prompt-2.png" lightbox="images/pinreset/pin-reset-service-prompt-2.png" border="false":::
+    :::image type="content" alt-text="Screenshot showing the PIN reset service permissions final page." source="images/pinreset/pin-reset-service-prompt-2.png" lightbox="images/pinreset/pin-reset-service-prompt-2.png" border="true":::
   :::column-end:::
 :::row-end:::
 
 ### Confirm that the two PIN Reset service principals are registered in your tenant
 
-1. Sign in to the [Microsoft Entra Manager admin center](https://entra.microsoft.com).
-1. Select **Azure Active Directory** > **Applications** > **Enterprise applications**.
-1. Search by application name "Microsoft PIN" and both **Microsoft Pin Reset Service Production** and **Microsoft Pin Reset Client Production** will show up in the list.
+1. Sign in to the [Microsoft Entra Manager admin center](https://entra.microsoft.com)
+1. Select **Azure Active Directory > Applications > Enterprise applications**
+1. Search by application name "Microsoft PIN" and both **Microsoft Pin Reset Service Production** and **Microsoft Pin Reset Client Production** will show up in the list
    :::image type="content" alt-text="PIN reset service permissions page." source="images/pinreset/pin-reset-applications.png" lightbox="images/pinreset/pin-reset-applications-expanded.png":::
 
 ## Enable PIN recovery on the clients
@@ -239,3 +239,5 @@ You may find that PIN reset from Settings only works post login. Also, the lock 
 [CSP-1]: /windows/client-management/mdm/passportforwork-csp
 [CSP-2]: /windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls
 [INT-1]: /mem/intune/configuration/settings-catalog
+[APP-1]: https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&redirect_uri=https%3A%2F%2Fcred.microsoft.com&prompt=admin_consent
+[APP-2]: https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&prompt=admin_consent
