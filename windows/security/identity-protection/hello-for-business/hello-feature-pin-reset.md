@@ -221,6 +221,8 @@ For Azure AD-joined devices:
 1. Follow the instructions provided by the provisioning process
 1. When finished, unlock your desktop using your newly created PIN
 
+:::image type="content" alt-text="Animation showing the PIN reset experience above lock." source="images/pinreset/pin-reset.gif" border="false":::
+
 For Hybrid Azure AD-joined devices:
 
 1. If the PIN credential provider isn't selected, expand the **Sign-in options** link, and select the PIN pad icon
