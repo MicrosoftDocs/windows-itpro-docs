@@ -50,13 +50,28 @@ Before you can use non-destructive PIN reset, you must register two applications
 
 To register the applications, follow these steps:
 
+:::row:::
+  :::column span="1":::
+  Go to the [Microsoft PIN Reset Client Production website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent), and sign in using a *Global Administrator* account you use to manage your Azure Active Directory tenant. Review the permissions requested by the *Microsoft Pin Reset Service Production* application and select **Accept** to give consent to both applications to access your organization
+  :::column-end:::
+  :::column span="3":::
+  ![PIN reset service application in Azure.](images/pinreset/pin-reset-service-prompt.png)
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="1":::
+  Go to the [Microsoft PIN Reset Client Production website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent), and sign in using a *Global Administrator* account you use to manage your Azure Active Directory tenant. Review the permissions requested by the *Microsoft Pin Reset Service Production* application and select **Accept** to give consent to both applications to access your organization
+  :::column-end:::
+  :::column span="3":::
+    ![PIN reset client application in Azure.](images/pinreset/pin-reset-client-prompt.png)
+  :::column-end:::
+:::row-end:::
+
 1. Go to the [Microsoft PIN Reset Client Production website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent), and sign in using a *Global Administrator* account you use to manage your Azure Active Directory tenant.
 1. After you've signed in, review the permissions requested by the *Microsoft Pin Reset Client Production* application, and select **Next**
-   ![PIN reset client application in Azure.](images/pinreset/pin-reset-client-prompt.png)
-1. Review the permissions requested by the *Microsoft Pin Reset Service Production* application
-  ![PIN reset service application in Azure.](images/pinreset/pin-reset-service-prompt.png)
-
-Select **Accept** to give consent to both applications to access your organization.
+    ![PIN reset client application in Azure.](images/pinreset/pin-reset-client-prompt.png)
+1. Review the permissions requested by the *Microsoft Pin Reset Service Production* application and select **Accept** to give consent to both applications to access your organization
+    ![PIN reset service application in Azure.](images/pinreset/pin-reset-service-prompt.png)
 
 ### Confirm that the two PIN Reset service principals are registered in your tenant
 
@@ -86,14 +101,15 @@ The following instructions provide details how to configure your devices. Select
 
 >[!NOTE]
 > You can also configure PIN recovery from the **Endpoint security** blade:
+>
 > 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
 > 1. Select **Endpoint security > Account protection > Create Policy**
 
-Alternatively, you can configure devices using a [custom policy][INT-1] with the [PassportForWork CSP][CSP-1].\
+Alternatively, you can configure devices using a [custom policy][INT-1] with the [PassportForWork CSP][CSP-1].
 
 | OMA-URI |Data type| Value|
 |-|-|-|
-| `./Vendor/MSFT/Policy/PassportForWork/`*TenantId*`/Policies/EnablePinRecovery`| `Boolean` |`Tue`|
+| `./Vendor/MSFT/Policy/PassportForWork/`*TenantId*`/Policies/EnablePinRecovery`| Boolean | Tue |
 
 >[!NOTE]
 > You must replace `TenantId` with the identifier of your Azure Active Directory tenant. To look up your Tenant ID, see [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/how-to-find-tenant) or try the following, ensuring to sign-in with your organization's account::
@@ -104,21 +120,11 @@ GET https://graph.microsoft.com/v1.0/organization?$select=id
 
 #### [:::image type="icon" source="../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
-You can configure Windows devices to use the **Microsoft PIN Reset Service** using a Group Policy Object (GPO).
-
-1. Using the Group Policy Management Console (GPMC), scope a domain-based Group Policy to computer accounts in Active Directory.
-1. Edit the Group Policy object from Step 1.
-1. Enable the **Use PIN Recovery** policy setting located under **Computer Configuration > Administrative Templates > Windows Components > Windows Hello for Business**.
-1. Close the Group Policy Management Editor to save the Group Policy object.
-
-[!INCLUDE [gpo-settings-1](../../../../includes/configure/gpo-settings-1.md)] `Computer Configuration\Administrative Templates\System\Device Guard`:
+[!INCLUDE [gpo-settings-1](../../../../includes/configure/gpo-settings-1.md)] **Computer Configuration > Administrative Templates > Windows Components > Windows Hello for Business**:
 
 | Group policy setting | Value |
 | - | - |
-|Turn On Virtualization Based Security | **Enabled** and select one of the options listed under the **Credential Guard Configuration** dropdown:<br>&emsp;- **Enabled with UEFI lock**<br>&emsp;- **Enabled without lock**|
-
->[!IMPORTANT]
-> If you want to be able to turn off Windows Defender Credential Guard remotely, choose the option **Enabled without lock**.
+| **Use PIN Recovery** | **Enabled** |
 
 [!INCLUDE [gpo-settings-2](../../../../includes/configure/gpo-settings-2.md)]
 
@@ -166,45 +172,33 @@ The _PIN reset_ configuration can be viewed by running [**dsregcmd /status**](/a
 +----------------------------------------------------------------------+
 ```
 
-## Configure Web Sign-in Allowed URLs for Third Party Identity Providers on Azure AD Joined Devices
+## Configure allowed URLs for federated identity providers on Azure AD joined devices
 
-**Applies to:**
+**Applies to:** Azure AD joined devices
 
-- Azure AD joined devices
+PIN reset on Azure AD-joined devices uses a flow called *web sign-in* to authenticate the users above lock. Web sign-in only allows navigation to specific domains. If web sign-in attempts to navigate to a domain that isn't allowed, it displays a page with the error message *We can't open that page right now*.\
+If you have a federated environment and authentication is handled using AD FS or a third-party identity provider, then you must configure your devices with a policy to allow a list of domains that can be reached during PIN reset flows. When set, it ensures that authentication pages from that identity provider can be used during Azure AD joined PIN reset.
 
-The [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls) policy allows you to specify a list of domains that can be reached during PIN reset flows on Azure AD-joined devices. If you have a federated environment and authentication is handled using AD FS or a third-party identity provider, then this policy should be set. When set, it ensures that authentication pages from that identity provider can be used during Azure AD joined PIN reset.
+[!INCLUDE [intune-settings-catalog-1](../../../../includes/configure/intune-settings-catalog-1.md)]
 
-### Configure Web Sign-in Allowed URLs using Microsoft Intune
+| Category | Setting name | Value |
+|--|--|--|
+| **Authentication** | Configure Web Sign In Allowed Urls | Provide a semicolon delimited list of domains needed for authentication during the PIN reset scenario. An example value would be **signin.contoso.com;portal.contoso.com**|
 
-1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
-1. Select **Devices** > **Configuration profiles** > **Create profile**
-1. Enter the following properties:
-    - **Platform**: Select **Windows 10 and later**
-    - **Profile type**: Select **Templates**
-    - In the list of templates that is loaded, select **Custom** > **Create**
-1. In **Basics**, enter the following properties:
-    - **Name**: Enter a descriptive name for the profile
-    - **Description**: Enter a description for the profile. This setting is optional, but recommended
-1. Select **Next**
-1. In **Configuration settings**, select **Add** and enter the following settings:
-    - Name: **Web Sign In Allowed URLs**
-    - Description: **(Optional) List of domains that are allowed during PIN reset flows**
-    - OMA-URI: `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls`
-    - Data type: **String**
-    - Value: Provide a semicolon delimited list of domains needed for authentication during the PIN reset scenario. An example value would be **signin.contoso.com;portal.contoso.com**
-    :::image type="content" alt-text="Custom Configuration for ConfigureWebSignInAllowedUrls policy." source="images/pinreset/allowlist.png" lightbox="images/pinreset/allowlist-expanded.png":::
-1. Select **Save** > **Next**
-1. In **Assignments**, select the security groups that will receive the policy
-1. Select **Next**
-1. In **Applicability Rules**, select **Next**
-1. In **Review + create**, review your settings and select **Create**
+[!INCLUDE [intune-settings-catalog-2](../../../../includes/configure/intune-settings-catalog-2.md)]
+
+Alternatively, you can configure devices using a [custom policy][INT-1] with the [Policy CSP][CSP-2].
+
+| OMA-URI |Data type| Value|
+|-|-|-|
+| `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls`| String |Provide a semicolon delimited list of domains needed for authentication during the PIN reset scenario. An example value would be **signin.contoso.com;portal.contoso.com**|
 
 > [!NOTE]
 > For Azure Government, there is a known issue with PIN reset on Azure AD Joined devices failing. When the user attempts to launch PIN reset, the PIN reset UI shows an error page that says, "We can't open that page right now." The ConfigureWebSignInAllowedUrls policy can be used to work around this issue. If you are experiencing this problem and you are using Azure US Government cloud, set **login.microsoftonline.us** as the value for the ConfigureWebSignInAllowedUrls policy.
 
 ## Use PIN reset
 
-Destructive and non-destructive PIN reset use the same steps for initiating a PIN reset. If users have forgotten their PINs, but have an alternate sign-in method, they can navigate to Sign-in options in *Settings* and initiate a PIN reset from the PIN options. If users don't have an alternate way to sign into their devices, PIN reset can also be initiated from the Windows lock screen in the *PIN credential provider*. Users must authenticate and complete multi-factor authentication to reset their PIN. After PIN reset is complete, users can sign in using their new PIN.
+Destructive and non-destructive PIN reset use the same steps for initiating a PIN reset. If users have forgotten their PINs, but have an alternate sign-in method, they can navigate to Sign-in options in *Settings* and initiate a PIN reset from the PIN options. If users don't have an alternate way to sign into their devices, PIN reset can also be initiated from the Windows lock screen with the *PIN credential provider*. Users must authenticate and complete multi-factor authentication to reset their PIN. After PIN reset is complete, users can sign in using their new PIN.
 
 >[!IMPORTANT]
 >For hybrid Azure AD-joined devices, users must have corporate network connectivity to domain controllers to complete destructive PIN reset. If AD FS is being used for certificate trust or for on-premises only deployments, users must also have corporate network connectivity to federation services to reset their PIN.
@@ -241,4 +235,5 @@ You may find that PIN reset from Settings only works post login. Also, the lock 
 <!--links-->
 
 [CSP-1]: /windows/client-management/mdm/passportforwork-csp
+[CSP-2]: /windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls
 [INT-1]: /mem/intune/configuration/settings-catalog
