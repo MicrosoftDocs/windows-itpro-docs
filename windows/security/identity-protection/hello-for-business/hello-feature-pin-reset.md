@@ -48,7 +48,6 @@ Before you can use non-destructive PIN reset, you must register two applications
 - Microsoft Pin Reset Service Production
 - Microsoft Pin Reset Client Production
 
-
 To register the applications, follow these steps:
 
 :::row:::
@@ -65,6 +64,14 @@ To register the applications, follow these steps:
   :::column-end:::
   :::column span="1":::
     :::image type="content" alt-text="Screenshot showing the PIN reset client permissions page." source="images/pinreset/pin-reset-client-prompt.png" lightbox="images/pinreset/pin-reset-client-prompt.png":::
+    :::image type="content" alt-text="Screenshot showing the PIN reset service permissions final page." source="images/pinreset/pin-reset-service-prompt-2.png" lightbox="images/pinreset/pin-reset-service-prompt-2.png":::
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="3":::
+  3. Review the permissions requested by the *Microsoft Pin Reset Service Production* application and select **Accept** to give consent to both applications to access your organization.
+  :::column-end:::
+  :::column span="1":::
     :::image type="content" alt-text="Screenshot showing the PIN reset service permissions final page." source="images/pinreset/pin-reset-service-prompt-2.png" lightbox="images/pinreset/pin-reset-service-prompt-2.png":::
   :::column-end:::
 :::row-end:::
