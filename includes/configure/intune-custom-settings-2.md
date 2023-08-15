@@ -1,6 +1,9 @@
 ---
-ms.date: 11/08/2022
+author: paolomatarazzo
+ms.author: paoloma
+ms.date: 08/15/2023
 ms.topic: include
+ms.prod: windows-client
 ---
 
 7. Select **Next**
