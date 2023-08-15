@@ -191,9 +191,9 @@ If you have a federated environment and authentication is handled using AD FS or
 
 Alternatively, you can configure devices using a [custom policy][INT-1] with the [Policy CSP][CSP-2].
 
-| OMA-URI |Data type| Value|
-|-|-|-|
-| `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls`| String |Provide a semicolon delimited list of domains needed for authentication during the PIN reset scenario. An example value would be **signin.contoso.com;portal.contoso.com**|
+| Setting |
+|--------|
+| <li> OMA-URI: `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls` </li><li>Data type: String </li><li>Value: Provide a semicolon delimited list of domains needed for authentication during the PIN reset scenario. An example value would be **signin.contoso.com;portal.contoso.com**</li>|
 
 > [!NOTE]
 > For Azure Government, there is a known issue with PIN reset on Azure AD Joined devices failing. When the user attempts to launch PIN reset, the PIN reset UI shows an error page that says, "We can't open that page right now." The ConfigureWebSignInAllowedUrls policy can be used to work around this issue. If you are experiencing this problem and you are using Azure US Government cloud, set **login.microsoftonline.us** as the value for the ConfigureWebSignInAllowedUrls policy.
