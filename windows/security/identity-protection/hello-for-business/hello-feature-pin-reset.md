@@ -45,17 +45,18 @@ The following table compares destructive and non-destructive PIN reset:
 
 Before you can use non-destructive PIN reset, you must register two applications in your Azure Active Directory tenant:
 
-- Microsoft Pin Reset Client Production
 - Microsoft Pin Reset Service Production
+- Microsoft Pin Reset Client Production
+
 
 To register the applications, follow these steps:
 
 :::row:::
-  :::column span="3":::
-  1. Go to the [Microsoft PIN Reset Client Production website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent), and sign in using a *Global Administrator* account you use to manage your Azure Active Directory tenant. Review the permissions requested by the *Microsoft Pin Reset Service Production* application and select **Accept** to give consent to both applications to access your organization
+  :::column span="2":::
+  1. Go to the [Microsoft PIN Reset Service Production website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent), and sign in using a *Global Administrator* account you use to manage your Azure Active Directory tenant. Review the permissions requested by the *Microsoft Pin Reset Service Production* application and select **Accept** to give consent to both applications to access your organization
   :::column-end:::
-  :::column span="1":::
-  ![PIN reset service application in Azure.](images/pinreset/pin-reset-service-prompt.png)
+  :::column span="2":::
+    :::image type="content" alt-text="Screenshot showing the PIN reset service permissions page." source="images/pinreset/pin-reset-service-prompt.png" lightbox="images/pinreset/pin-reset-service-prompt.png":::
   :::column-end:::
 :::row-end:::
 :::row:::
