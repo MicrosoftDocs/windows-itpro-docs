@@ -186,13 +186,16 @@ When running in *Restricted Admin* or *Remote Credential Guard* mode, participat
 
 [!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
 
-Alternatively, you can configure devices using a [custom policy][INT-1] with the [DeviceGuard Policy CSP][CSP-1].\
-The policy settings are located under: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/`.
+Alternatively, you can configure devices using a [custom policy][INT-1] with the [Policy CSP][CSP-2].
 
-| Setting |
-|--|
-| **Setting name**: Turn On Virtualization Based Security<br>**Policy CSP name**: `EnableVirtualizationBasedSecurity` |
-| **Setting name**: Restrict delegation of credentials to remote servers<br>**Policy CSP name**: `LsaCfgFlags` |
+| OMA-URI |Data type| Value|
+|-|-|-|
+| `./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/RestrictedRemoteAdministration`| string | <enabled/> |
+
+0 = Disabled
+1 = RequireRestrictedAdmin
+2 = RequireRemoteCredentialGuard
+3 = PreferRemoteCredentialGuard
 
 #### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
 
@@ -259,3 +262,4 @@ Here are some additional considerations for Remote Credential Guard:
 
 [INT-1]: /mem/intune/configuration/settings-catalog
 [CSP-1]: /windows/client-management/mdm/policy-csp-credentialsdelegation
+[CSP-2]: /windows/client-management/mdm/policy-csp-admx-credssp
