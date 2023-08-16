@@ -10,7 +10,8 @@ ms.localizationpriority: medium
 ---
 
 # Monitor Delivery Optimization
-blurb
+
+To monitor Delivery Optimization, you can use either the Windows Update for Business Delivery Optimization Report or Windows PowerShell cmdlets.
 
 ## Monitor with Windows Update for Business Delivery Optimization Report
 
