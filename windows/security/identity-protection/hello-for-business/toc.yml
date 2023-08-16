@@ -110,9 +110,9 @@ items:
     href: hello-and-password-changes.md
 - name: Windows Hello for Business features
   items:
-  - name: PIN Reset
+  - name: PIN reset
     href: hello-feature-pin-reset.md
-  - name: Dual Enrollment
+  - name: Dual enrollment
     href: hello-feature-dual-enrollment.md  
   - name: Dynamic Lock
     href: hello-feature-dynamic-lock.md
