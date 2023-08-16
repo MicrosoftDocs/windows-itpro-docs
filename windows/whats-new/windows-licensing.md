@@ -67,7 +67,7 @@ The following table describes the unique Windows Enterprise edition features:
 
 | OS-based feature | Description |
 |-|-|
-|**[Windows Defender Credential Guard][WIN-1]**|Protects against user credential harvesting and pass-the-hash attacks or pass the token attacks.|
+|**[Credential Guard][WIN-1]**|Protects against user credential harvesting and pass-the-hash attacks or pass the token attacks.|
 |**[Managed Microsoft Defender Application Guard (MDAG) for Microsoft Edge][WIN-11]**| Isolates enterprise-defined untrusted sites with virtualization-based security from Windows, protecting your organization while users browse the Internet.|
 |**[Modern BitLocker Management][WIN-2]** | Allows you to eliminate on-premises tools to monitor and support BitLocker recovery scenarios. |  
 |**[Personal Data Encryption][WIN-3]**|Encrypts individual's content using Windows Hello for Business to link the encryption keys to user credentials.|
@@ -141,7 +141,7 @@ The following table lists the Windows 11 Enterprise features and their Windows e
 
 | OS-based feature |Windows Pro|Windows Enterprise|
 |-|-|-|
-|**[Windows Defender Credential Guard][WIN-1]**|❌|Yes|
+|**[Credential Guard][WIN-1]**|❌|Yes|
 |**[Microsoft Defender Application Guard (MDAG) for Microsoft Edge][WIN-11]**|Yes|Yes|
 |**[Modern BitLocker Management][WIN-2]**|Yes|Yes|
 |**[Personal data encryption (PDE)][WIN-3]**|❌|Yes|

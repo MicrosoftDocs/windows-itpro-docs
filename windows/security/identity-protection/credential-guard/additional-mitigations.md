@@ -1,20 +1,20 @@
 ---
 ms.date: 08/14/2023
 title: Additional mitigations
-description: Advice and sample code for making your domain environment more secure and robust with Windows Defender Credential Guard.
+description: Advice and sample code for making your domain environment more secure and robust with Credential Guard.
 ms.topic: article
 ---
 
 # Additional mitigations
 
-Windows Defender Credential Guard offers mitigations against attacks on derived credentials, preventing the use of stolen credentials elsewhere. However, devices can still be vulnerable to certain attacks, even if the derived credentials are protected by Windows Defender Credential Guard. These attacks can include abusing privileges and use of derived credentials directly from a compromised device, re-using stolen credentials prior to the enablement of Windows Defender Credential Guard, and abuse of management tools and weak application configurations. Because of this, additional mitigation also must be deployed to make the domain environment more robust.
+Credential Guard offers mitigations against attacks on derived credentials, preventing the use of stolen credentials elsewhere. However, devices can still be vulnerable to certain attacks, even if the derived credentials are protected by Credential Guard. These attacks can include abusing privileges and use of derived credentials directly from a compromised device, re-using stolen credentials prior to the enablement of Credential Guard, and abuse of management tools and weak application configurations. Because of this, additional mitigation also must be deployed to make the domain environment more robust.
 
 ## Additional security qualifications
 
-All devices that meet baseline protections for hardware, firmware, and software can use Windows Defender Credential Guard.\
+All devices that meet baseline protections for hardware, firmware, and software can use Credential Guard.\
 Devices that meet more qualifications can provide added protections to further reduce the attack surface.
 
-The following table list qualifications for improved security. We recommend meeting the additional qualifications to strengthen the level of security that Windows Defender Credential Guard can provide.
+The following table list qualifications for improved security. We recommend meeting the additional qualifications to strengthen the level of security that Credential Guard can provide.
 
 |Protection |Requirements|Security Benefits|
 |---|---|---|
@@ -37,7 +37,7 @@ The following table list qualifications for improved security. We recommend meet
 
 ## Restrict domain users to specific domain-joined devices
 
-Credential theft attacks allow the attacker to steal secrets from one device and use them from another device. If a user can sign on to multiple devices then any device could be used to steal credentials. How do you ensure that users only sign on with devices that have Windows Defender Credential Guard enabled? By deploying authentication policies that restrict them to specific domain-joined devices that have been configured with Windows Defender Credential Guard. For the domain controller to know what device a user is signing on from, Kerberos armoring must be used.
+Credential theft attacks allow the attacker to steal secrets from one device and use them from another device. If a user can sign on to multiple devices then any device could be used to steal credentials. How do you ensure that users only sign on with devices that have Credential Guard enabled? By deploying authentication policies that restrict them to specific domain-joined devices that have been configured with Credential Guard. For the domain controller to know what device a user is signing on from, Kerberos armoring must be used.
 
 ### Kerberos armoring
 
@@ -46,11 +46,11 @@ Kerberos armoring is part of RFC 6113. When a device supports Kerberos armoring,
 **To enable Kerberos armoring for restricting domain users to specific domain-joined devices**
 - Users need to be in domains that are running Windows Server 2012 R2 or higher
 - All the domain controllers in these domains must be configured to support Kerberos armoring. Set the **KDC support for claims, compound authentication, and Kerberos armoring** Group Policy setting to either **Supported** or **Always provide claims**.
-- All the devices with Windows Defender Credential Guard that the users will be restricted to must be configured to support Kerberos armoring. Enable the **Kerberos client support for claims, compound authentication and Kerberos armoring** Group Policy settings under **Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Kerberos**.
+- All the devices with Credential Guard that the users will be restricted to must be configured to support Kerberos armoring. Enable the **Kerberos client support for claims, compound authentication and Kerberos armoring** Group Policy settings under **Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Kerberos**.
 
 ### Protect domain-joined device secrets
 
-Since domain-joined devices also use shared secrets for authentication, attackers can steal those secrets as well. By deploying device certificates with Windows Defender Credential Guard, the private key can be protected. Then authentication policies can require that users sign on to devices that authenticate using those certificates. This prevents shared secrets stolen from the device to be used with stolen user credentials to sign on as the user.
+Since domain-joined devices also use shared secrets for authentication, attackers can steal those secrets as well. By deploying device certificates with Credential Guard, the private key can be protected. Then authentication policies can require that users sign on to devices that authenticate using those certificates. This prevents shared secrets stolen from the device to be used with stolen user credentials to sign on as the user.
 
 Domain-joined device certificate authentication has the following requirements:
 
@@ -81,7 +81,7 @@ For example, let's say you wanted to use the High Assurance policy only on these
 1.  Under **Issuance Policies**, select **High Assurance**
 1.  On the **Subject name** tab, clear the **DNS name** check box, and then select the **User Principal Name (UPN)** check box
 
-Then on the devices that are running Windows Defender Credential Guard, enroll the devices using the certificate you just created.
+Then on the devices that are running Credential Guard, enroll the devices using the certificate you just created.
 
 **Enroll devices in a certificate**
 

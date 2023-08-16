@@ -149,9 +149,9 @@ Windows Hello enhancements include:
 
 ### Credential protection
 
-#### Windows Defender Credential Guard
+#### Credential Guard
 
-[Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard) is now available for ARM64 devices, for extra protection against credential theft for enterprises deploying ARM64 devices in their organizations, such as Surface Pro X.
+[Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard) is now available for ARM64 devices, for extra protection against credential theft for enterprises deploying ARM64 devices in their organizations, such as Surface Pro X.
 
 ### Privacy controls
 
