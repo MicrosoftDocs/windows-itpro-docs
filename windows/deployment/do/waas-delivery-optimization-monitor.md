@@ -1,12 +1,17 @@
 ---
-author: mestew
-ms.author: mstewart
+author: carmenf
+ms.author: cmknox
 manager: aaroncz
 ms.prod: windows-client
 ms.technology: itpro-deploy
 ms.topic: reference
 ms.date: 07/31/2023
 ms.localizationpriority: medium
+ms.reviewer: mstewart
+Title: Monitor Delivery Optimization
+Description: How to monitor Delivery Optimization
+
+
 ---
 
 # Monitor Delivery Optimization
@@ -19,7 +24,7 @@ Windows Update for Business Delivery Optimization Report provides you with infor
 
 :::image type="content" source="../update/media/wufb-do-overview.png" alt-text="This screenshot shows the Windows Update for Business report, Delivery Optimization status in Update Compliance." lightbox= "../update/media/wufb-do-overview.png":::
 
-For details, see [Windows Update for Business Delivery Optimization Report](./update/wufb-reports-overview.md).
+For details, see [Windows Update for Business Delivery Optimization Report](/windows/deployment/update/wufb-reports-overview).
 
 ## Windows PowerShell cmdlets
 
