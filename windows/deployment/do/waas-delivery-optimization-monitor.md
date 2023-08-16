@@ -1,4 +1,6 @@
 ---
+title: Monitor Delivery Optimization
+description: How to monitor Delivery Optimization
 author: cmknox
 ms.author: carmenf
 manager: aaroncz
@@ -8,8 +10,6 @@ ms.topic: reference
 ms.date: 07/31/2023
 ms.localizationpriority: medium
 ms.reviewer: mstewart
-Title: Monitor Delivery Optimization
-Description: How to monitor Delivery Optimization
 ---
 
 # Monitor Delivery Optimization
