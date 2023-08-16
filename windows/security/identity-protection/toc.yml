@@ -37,7 +37,7 @@ items:
       href: credential-guard/toc.yml
     - name: Windows Defender Remote Credential Guard
       href: remote-credential-guard.md
-  - name: LSA Protection
+  - name: LSA Protection 🔗
     href: /windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection
   - name: Local Accounts
     href: access-control/local-accounts.md
