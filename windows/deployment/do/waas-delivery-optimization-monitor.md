@@ -1,6 +1,6 @@
 ---
-author: carmenf
-ms.author: cmknox
+author: cmknox
+ms.author: carmenf
 manager: aaroncz
 ms.prod: windows-client
 ms.technology: itpro-deploy
@@ -10,8 +10,6 @@ ms.localizationpriority: medium
 ms.reviewer: mstewart
 Title: Monitor Delivery Optimization
 Description: How to monitor Delivery Optimization
-
-
 ---
 
 # Monitor Delivery Optimization
