@@ -44,7 +44,7 @@ landingContent:
           - text: Delivery Optimization recommended settings
             url: waas-delivery-optimization-setup.md#recommended-delivery-optimization-settings
           - text: Windows PowerShell for Delivery Optimization
-            url: waas-delivery-optimization-monitor.md#windows-powershell-cmdlets
+            url: includes/waas-delivery-optimization-monitor.md#windows-powershell-cmdlets
           - text: Troubleshoot Delivery Optimization
             url: waas-delivery-optimization-setup.md#troubleshooting
           - text: Delivery Optimization Frequently Asked Questions
