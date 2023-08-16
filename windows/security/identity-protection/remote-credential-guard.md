@@ -190,7 +190,49 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 | Setting |
 |--------|
-| - OMA-URI: `./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/RestrictedRemoteAdministration` <br>- Data type: string <br>- Value: `"<enabled/><data id=\"RestrictedRemoteAdministrationDrop\" value=\"2\"/>"`|
+| - OMA-URI: `./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/RestrictedRemoteAdministration` <br>- Data type: string <br>- Value: `<enabled/><data id=\"RestrictedRemoteAdministrationDrop\" value=\"2\"/>`|
+
+```Device
+./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/RestrictedRemoteAdministration
+```
+
+```Device
+<enabled/><data id=\"RestrictedRemoteAdministrationDrop\" value=\"2\"/>
+```
+
+:::row:::
+  :::column span="4":::
+  Setting
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="1":::
+  **OMA-URI**
+  :::column-end:::
+  :::column span="3":::
+  ```Device
+  ./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/RestrictedRemoteAdministration
+  ```
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="1":::
+  **Data type**
+  :::column-end:::
+  :::column span="3":::
+  string
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="1":::
+  **Value**
+  :::column-end:::
+  :::column span="3":::
+  ```Device
+  <enabled/><data id=\"RestrictedRemoteAdministrationDrop\" value=\"2\"/>
+  ```
+  :::column-end:::
+:::row-end:::
 
 0 = Disabled
 1 = RequireRestrictedAdmin
