@@ -10,6 +10,7 @@ ms.topic: article
 ms.technology: itpro-updates
 ms.date: 05/09/2023
 ms.collection: tier3
+ms.reviewer: mstewart
 ---
 
 # What is Microsoft Connected Cache?

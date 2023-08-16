@@ -1,6 +1,7 @@
 ---
-author: amyzhou
-ms.author: amyzhou
+ms.author: carmenf
+author: cmknox
+ms.reviewer: mstewart
 manager: aaroncz
 ms.prod: windows-client
 ms.technology: itpro-deploy
