@@ -37,9 +37,9 @@ Connected Cache (early preview) supports the following scenarios:
 
 When clients download cloud-managed content, they use Delivery Optimization from the cache server installed on a Windows server or VM. Cloud-managed content includes the following types:
 
-- Windows Update for Business: Windows feature and quality updates
+- Windows updates: Windows feature and quality updates
 - Office Click-to-Run apps: Microsoft 365 Apps and updates
-- Client apps: Microsoft Store apps and updates
+- Client apps: Intune, store apps, and updates
 - Endpoint protection: Windows Defender definition updates
 
 For the full list of content endpoints that Microsoft Connected Cache for Enterprise and Education supports, see [Microsoft Connected Cache content and services endpoints](delivery-optimization-endpoints.md).

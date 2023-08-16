@@ -1,7 +1,7 @@
 ---
-title: Deploying your cache node
+title: MCC for Enterprise and Education (early preview)
 manager: aaroncz
-description: How to deploy Microsoft Connected Cache (MCC) for Enterprise and Education cache node
+description: How to deploy a Microsoft Connected Cache (MCC) for Enterprise and Education cache node
 ms.prod: windows-client
 author: amymzhou
 ms.author: amyzhou
@@ -11,7 +11,7 @@ ms.technology: itpro-updates
 ms.collection: tier3
 ---
 
-# Deploying your cache node
+# Deploying your enterprise cache node
 
 **Applies to**
 
@@ -129,7 +129,7 @@ Installing MCC on your Windows device is a simple process. A PowerShell script p
 - Downloads, installs, and deploys EFLOW
 - Enables Microsoft Update so EFLOW can stay up to date
 - Creates a virtual machine
-- Enables the firewall and opens ports 80 and 22 for inbound and outbound traffic. Port 80 is used by MCC, and port 22 is used for SSH communications.
+- Enables the firewall and opens ports 80 for inbound and outbound traffic. Port 80 is used by MCC.
 - Configures Connected Cache tuning settings.
 - Creates the necessary *FREE* Azure resource - IoT Hub/IoT Edge.
 - Deploys the MCC container to server.
