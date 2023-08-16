@@ -95,24 +95,12 @@ The client device:
 
 [!INCLUDE [windows-defender-remote-credential-guard](../../../includes/licensing/windows-defender-remote-credential-guard.md)]
 
-## Enable Remote Credential Guard on the remote host
+## Enable delegation of non-exportable credentials on the remote hosts
 
+This policy is required on the remote hosts to support Remote Credential Guard and Restricted Admin mode. It allows the remote host to delegate non-exportable credentials to the client device.\
+If you disable or don't configure this setting, Restricted Admin and Remote Credential Guard mode are not supported. User will always need to pass their credentials to the host.
 
-To enable Remote Credential Guard on the remote host, you can use:
-
-- Microsoft Intune/MDM
-- Group policy
-- Registry
-
-[!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
-
-
-> GPO [Remote host allows delegation of non-exportable credentials](/windows/client-management/mdm/policy-csp-credentialsdelegation) should be enabled for delegation of non-exportable credentials.
-
-
-
-
-To enable Remote Credential Guard on the remote host, you can use:
+To enable delegation of non-exportable credentials on the remote hosts, you can use:
 
 - Microsoft Intune/MDM
 - Group policy
@@ -122,7 +110,65 @@ To enable Remote Credential Guard on the remote host, you can use:
 
 #### [:::image type="icon" source="../images/icons/intune.svg" border="false"::: **Intune/MDM**](#tab/intune)
 
-### Configure Remote Credential Guard with Intune
+### Enable delegation of non-exportable credentials on the remote hosts with Intune
+
+[!INCLUDE [intune-settings-catalog-1](../../../includes/configure/intune-settings-catalog-1.md)]
+
+| Category | Setting name | Value |
+|--|--|--|
+| Administrative Templates > System > Credentials Delegation | Remote host allows delegation of non-exportable credentials | Enabled |
+
+[!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
+
+Alternatively, you can configure devices using a [custom policy][INT-1] with the [Policy CSP][CSP-1].
+
+| OMA-URI |Data type| Value|
+|-|-|-|
+| `./Device/Vendor/MSFT/Policy/Config/CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials`| string | <enabled/> |
+
+#### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
+
+### Enable delegation of non-exportable credentials on the remote hosts with group policy
+
+[!INCLUDE [gpo-settings-1](../../../includes/configure/gpo-settings-1.md)] `Computer Configuration\Administrative Templates\System\Credentials Delegation`:
+
+| Group policy setting | Value |
+| - | - |
+| Remote host allows delegation of non-exportable credentials | Enabled |
+
+[!INCLUDE [gpo-settings-2](../../../includes/configure/gpo-settings-2.md)]
+
+#### [:::image type="icon" source="../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
+
+### Enable delegation of non-exportable credentials on the remote hosts with registry settings
+
+To configure devices using the registry, use the following settings:
+
+| Setting |
+|--|
+| **Key path:** `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CredentialsDelegation` <br>**Key name:** `AllowProtectedCreds`<br>**Type:** `REG_DWORD`<br>**Value:** `1` |
+
+You can add this by running the following command from an elevated command prompt:
+
+```cmd
+reg.exe add HKLM\SOFTWARE\Policies\Microsoft\Windows\CredentialsDelegation /v AllowProtectedCreds /d 1 /t REG_DWORD
+```
+
+---
+
+## Enable Remote Credential Guard on the client devices
+
+To enable Remote Credential Guard on the clients, you can use:
+
+- Microsoft Intune/MDM
+- Group policy
+- Registry
+
+[!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
+
+#### [:::image type="icon" source="../images/icons/intune.svg" border="false"::: **Intune/MDM**](#tab/intune)
+
+### Configure Remote Credential Guard on the client devices with Intune
 
 [!INCLUDE [intune-settings-catalog-1](../../../includes/configure/intune-settings-catalog-1.md)]
 
@@ -150,7 +196,7 @@ The policy settings are located under: `./Device/Vendor/MSFT/Policy/Config/Devic
 
 #### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
 
-### Configure Remote Credential Guard with group policy
+### Configure Remote Credential Guard on the client devices with group policy
 
 [!INCLUDE [gpo-settings-1](../../../includes/configure/gpo-settings-1.md)] `Computer Configuration\Administrative Templates\System\Credentials Delegation`:
 
@@ -170,7 +216,7 @@ The policy settings are located under: `./Device/Vendor/MSFT/Policy/Config/Devic
 
 #### [:::image type="icon" source="../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
 
-### Configure Remote Credential Guard with registry settings
+### Configure Remote Credential Guard on the client devices with registry settings
 
 To configure devices using the registry, use the following settings:
 
@@ -208,3 +254,8 @@ Here are some additional considerations for Remote Credential Guard:
 - Remote Credential Guard only works with the RDP protocol
 - No credentials are sent to the target device, but the target device still acquires Kerberos Service Tickets on its own
 - The server and client must authenticate using Kerberos
+
+<!--links-->
+
+[INT-1]: /mem/intune/configuration/settings-catalog
+[CSP-1]: /windows/client-management/mdm/policy-csp-credentialsdelegation

@@ -111,7 +111,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 | OMA-URI |Data type| Value|
 |-|-|-|
-| `./Vendor/MSFT/Policy/PassportForWork/`*TenantId*`/Policies/EnablePinRecovery`| Boolean | Tue |
+| `./Vendor/MSFT/Policy/PassportForWork/`*TenantId*`/Policies/EnablePinRecovery`| Boolean | True |
 
 >[!NOTE]
 > You must replace `TenantId` with the identifier of your Azure Active Directory tenant. To look up your Tenant ID, see [How to find your Azure Active Directory tenant ID](/azure/active-directory/fundamentals/how-to-find-tenant) or try the following, ensuring to sign-in with your organization's account::
