@@ -188,9 +188,9 @@ When running in *Restricted Admin* or *Remote Credential Guard* mode, participat
 
 Alternatively, you can configure devices using a [custom policy][INT-1] with the [Policy CSP][CSP-2].
 
-| OMA-URI |Data type| Value|
-|-|-|-|
-| `./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/RestrictedRemoteAdministration`| string | <enabled/> |
+| Setting |
+|--------|
+| - OMA-URI: `./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/RestrictedRemoteAdministration` <br>- Data type: string <br>- Value: `"<enabled/><data id=\"RestrictedRemoteAdministrationDrop\" value=\"2\"/>"`|
 
 0 = Disabled
 1 = RequireRestrictedAdmin
