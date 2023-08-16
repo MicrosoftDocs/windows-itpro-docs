@@ -3,8 +3,9 @@ title: MCC for ISPs Overview
 manager: aaroncz
 description: Overview for Microsoft Connected Cache for ISPs
 ms.prod: windows-client
-author: amymzhou
-ms.author: amyzhou
+ms.author: carmenf
+author: cmknox
+ms.reviewer: mstewart
 ms.topic: article
 ms.date: 07/27/2023
 ms.technology: itpro-updates

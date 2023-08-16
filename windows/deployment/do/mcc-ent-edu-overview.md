@@ -3,12 +3,13 @@ title: MCC for Enterprise and Education Overview
 manager: aaroncz
 description: Overview of Microsoft Connected Cache (MCC) for Enterprise and Education.
 ms.prod: windows-client
-author: amymzhou
-ms.author: amyzhou
+ms.author: carmenf
+author: cmknox
 ms.topic: article
 ms.date: 05/09/2023
 ms.technology: itpro-updates
 ms.collection: tier3
+ms.reviewer: mstewart
 ---
 
 # Microsoft Connected Cache for Enterprise and Education Overview

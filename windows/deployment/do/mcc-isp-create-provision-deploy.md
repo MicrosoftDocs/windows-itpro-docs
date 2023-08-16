@@ -9,6 +9,7 @@ ms.topic: article
 ms.date: 05/09/2023
 ms.technology: itpro-updates
 ms.collection: tier3
+ms.reviewer: mstewart
 ---
 
 # Create, configure, provision, and deploy the cache node in Azure portal
