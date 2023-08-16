@@ -60,7 +60,7 @@ To further harden security, we also recommend that you implement Local Administr
 
 For further information on LAPS, see [Microsoft Security Advisory 3062591](https://technet.microsoft.com/library/security/3062591.aspx).
 
-[!INCLUDE [windows-defender-remote-credential-guard](../../../includes/licensing/windows-defender-remote-credential-guard.md)]
+[!INCLUDE [remote-credential-guard](../../../includes/licensing/remote-credential-guard.md)]
 
 ## Remote Credential Guard requirements
 
@@ -127,7 +127,7 @@ Beginning with Windows 10 version 1703, you can enable Remote Credential Guard o
      > When **Restrict Credential Delegation** is enabled, the /restrictedAdmin switch will be ignored. Windows will enforce the policy configuration instead and will use Remote Credential Guard.
 
   - If you want to require Remote Credential Guard, choose **Require Remote Credential Guard**. With this setting, a Remote Desktop connection will succeed only if the remote computer meets the [requirements](#remote-credential-guard-requirements) listed earlier in this topic.
-  - If you  want to require Restricted Admin mode, choose **Require Restricted Admin**. For information about Restricted Admin mode, see the table in  [Comparing Remote Credential Guard with other Remote Desktop connection options](#comparing-windows-defender-remote-credential-guard-with-other-remote-desktop-connection-options), earlier in this topic.
+  - If you  want to require Restricted Admin mode, choose **Require Restricted Admin**. For information about Restricted Admin mode, see the table in  [Comparing Remote Credential Guard with other Remote Desktop connection options](#comparing-remote-credential-guard-with-other-remote-desktop-connection-options), earlier in this topic.
 
 1. Click **OK**
 1. Close the Group Policy Management Console

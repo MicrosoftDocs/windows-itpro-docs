@@ -61,7 +61,7 @@ The requirements to run Credential Guard in Hyper-V virtual machines are:
 > [!NOTE]
 > Credential Guard is not supported on Hyper-V or Azure generation 1 VMs. Credential Guard is available on generation 2 VMs only.
 
-[!INCLUDE [windows-defender-credential-guard](../../../../includes/licensing/windows-defender-credential-guard.md)]
+[!INCLUDE [credential-guard](../../../../includes/licensing/credential-guard.md)]
 
 ## Application requirements
 

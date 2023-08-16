@@ -17,7 +17,7 @@ This article describes how to configure Credential Guard using Microsoft Intune,
 Starting in **Windows 11, version 22H2**, Credential Guard is turned on by default on devices that [meet the requirements](index.md#hardware-and-software-requirements). The default enablement is **without UEFI Lock**, which allows administrators to disable Credential Gurad remotely, if needed.\
 If Credential Guard or VBS are disabled *before* a device is updated to Windows 11, version 22H2 or later, default enablement doesn't overwrite the existing settings.
 
-While the default state of Credential Guard changed, system administrators can [enable](#enable-and-configure-windows-defender-credential-guard) or [disable](#disable-windows-defender-credential-guard) it using one of the methods described in this article.
+While the default state of Credential Guard changed, system administrators can [enable](#enable-and-configure-credential-guard) or [disable](#disable-credential-guard) it using one of the methods described in this article.
 
 > [!IMPORTANT]
 > For information about known issues related to default enablement, see [Credential Guard: known issues](considerations-known-issues.md#single-sign-on-for-network-services-breaks-after-upgrading-to-windows-11-version-22h2).
@@ -25,7 +25,7 @@ While the default state of Credential Guard changed, system administrators can [
 > [!NOTE]
 > Devices running Windows 11 Pro/Pro Edu 22H2 or later may have Virtualization-based Security (VBS) and/or Credential Guard automatically enabled if they meet the other requirements for default enablement, and have previously run Credential Guard. For example if Credential Guard was enabled on an Enterprise device that later downgraded to Pro.
 >
-> To determine whether the Pro device is in this state, check if the following registry key exists: `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0\IsolatedCredentialsRootSecret`. In this scenario, if you wish to disable VBS and Credential Guard, follow the instructions to [disable Virtualization-based Security](#disable-virtualization-based-security). If you wish to disable Credential Guard only, without disabling VBS, use the procedures to [disable Credential Guard](#disable-windows-defender-credential-guard).
+> To determine whether the Pro device is in this state, check if the following registry key exists: `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0\IsolatedCredentialsRootSecret`. In this scenario, if you wish to disable VBS and Credential Guard, follow the instructions to [disable Virtualization-based Security](#disable-virtualization-based-security). If you wish to disable Credential Guard only, without disabling VBS, use the procedures to [disable Credential Guard](#disable-credential-guard).
 
 ## Enable and configure Credential Guard
 
@@ -226,7 +226,7 @@ If you're running with a TPM, the TPM PCR mask value will be something other tha
 
 There are different options to disable Credential Guard. The option you choose depends on how Credential Guard is configured:
 
-- Credential Guard running in a virtual machine can be [disabled by the host](#disable-windows-defender-credential-guard-for-a-virtual-machine)
+- Credential Guard running in a virtual machine can be [disabled by the host](#disable-credential-guard-for-a-virtual-machine)
 - If Credential Guard is enabled **with UEFI Lock**, follow the procedure described in [disable Credential Guard with UEFI Lock](#disable-credential-guard-with-uefi-lock)
 - If Credential Guard is enabled **without UEFI Lock**, or as part of the automatic enablement in the Windows 11, version 22H2 update, use one of the following options to disable it:
   - Microsoft Intune/MDM
@@ -301,7 +301,7 @@ If Credential Guard is enabled with UEFI lock, follow this procedure since the s
 > [!NOTE]
 > This scenario requires physical presence at the machine to press a function key to accept the change.
 
-1. Follow the steps in [Disable Credential Guard](#disable-windows-defender-credential-guard)
+1. Follow the steps in [Disable Credential Guard](#disable-credential-guard)
 1. Delete the Credential Guard EFI variables by using bcdedit. From an elevated command prompt, type the following commands:
 
    ```cmd

@@ -123,7 +123,7 @@ All Windows Pro devices that previously ran Credential Guard on an eligible lice
 > To determine if a Windows Pro device receives default enablement when upgraded to **Windows 11, version 22H2**, check if the registry key `IsolatedCredentialsRootSecret` is present in `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0`.
 > If it's' present, the device enables Credential Guard after the update.
 >
-> You can Credential Guard can be disabled after upgrade by following the [disablement instructions](configure.md#disable-windows-defender-credential-guard).
+> You can Credential Guard can be disabled after upgrade by following the [disablement instructions](configure.md#disable-credential-guard).
 
 #### Cause of the issue
 
@@ -189,10 +189,10 @@ MS-CHAP and NTLMv1 are relevant to the SSO breakage after the Windows 11, versio
 
 We recommend moving away from MSCHAPv2-based connections, such as PEAP-MSCHAPv2 and EAP-MSCHAPv2, to certificate-based authentication, like PEAP-TLS or EAP-TLS. Credential Guard doesn't block certificate-based authentication.  
 
-For a more immediate, but less secure fix, [disable Credential Guard](configure.md#disable-windows-defender-credential-guard). Credential Guard doesn't have per-protocol or per-application policies, and it can either be turned on or off. If you disable Credential Guard, you leave stored domain credentials vulnerable to theft.
+For a more immediate, but less secure fix, [disable Credential Guard](configure.md#disable-credential-guard). Credential Guard doesn't have per-protocol or per-application policies, and it can either be turned on or off. If you disable Credential Guard, you leave stored domain credentials vulnerable to theft.
 
 > [!TIP]
-> To prevent default enablement, configure your devices [to disable Credential Guard](configure.md#disable-windows-defender-credential-guard) before updating to Windows 11, version 22H2. If the setting is not configured (which is the default state) and if the device is eligible, the device automatically enable Credential Guard after the update.
+> To prevent default enablement, configure your devices [to disable Credential Guard](configure.md#disable-credential-guard) before updating to Windows 11, version 22H2. If the setting is not configured (which is the default state) and if the device is eligible, the device automatically enable Credential Guard after the update.
 >
 > If Credential Guard is explicitly disabled, the device won't automatically enable Credential Guard after the update.  
 
