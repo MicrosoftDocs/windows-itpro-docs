@@ -14,7 +14,7 @@
     - name: Set up Delivery Optimization for Windows
       href: waas-delivery-optimization-setup.md
     - name: Monitor Delivery Optimization for Windows
-      href: do/includes/waas-delivery-optimization-monitor.md
+      href: waas-delivery-optimization-monitor.md
     - name: Configure Delivery Optimization settings using Microsoft Intune
       href: /mem/intune/configuration/delivery-optimization-windows
   - name: Resources for Delivery Optimization
