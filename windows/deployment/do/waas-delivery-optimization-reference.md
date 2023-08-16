@@ -323,7 +323,7 @@ The device can download from peers while on battery regardless of this policy.
 
 MDM Setting: **DOCacheHost**
 
-Set this policy to designate one or more Microsoft Connected Cache servers to be used by Delivery Optimization. You can set one or more FQDNs or IP Addresses that are comma-separated, for example: myhost.somerandomhost.com,myhost2.somerandomhost.com,10.10.1.7. **By default, this policy has no value.** When multiple FQDNs or IP Addresses are listed, the Microsoft Connected Cache server priority order is determined based on the order as they are listed. If the first server fails, it will move the the next one. If the last server fails, it will fallback to the CDN.
+Set this policy to designate one or more Microsoft Connected Cache servers to be used by Delivery Optimization. You can set one or more FQDNs or IP Addresses that are comma-separated, for example: myhost.somerandomhost.com,myhost2.somerandomhost.com,10.10.1.7. **By default, this policy has no value.** When multiple FQDNs or IP Addresses are listed, the Microsoft Connected Cache server priority order is determined based on the order as they are listed. If the first server fails, it will move the the next one. When the last server fails, it will fallback to the CDN.
 
 >[!IMPORTANT]
 > Any value will signify that the policy is set. For example, an empty string ("") isn't considered empty.
