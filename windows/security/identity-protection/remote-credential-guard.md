@@ -22,7 +22,7 @@ This article describes how to configure and use Remote Credential Guard.
 > [!IMPORTANT]
 > For information on Remote Desktop connection scenarios involving helpdesk support, see [Remote Desktop connections and helpdesk support scenarios](#remote-desktop-connections-and-helpdesk-support-scenarios) in this article.
 
-## Compare Remote Credential Guard with other Remote Desktop connection options
+## Compare Remote Credential Guard with other connection options
 
 Use the following table to compare different Remote Desktop connection security options:
 
