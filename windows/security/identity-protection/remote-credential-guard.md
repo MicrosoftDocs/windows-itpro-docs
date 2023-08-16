@@ -202,14 +202,14 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 :::row:::
   :::column span="4":::
-  Setting
+  **Setting**
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column span="1":::
   **OMA-URI**
   :::column-end:::
-  :::column span="3":::
+  :::column span="7":::
   ```Device
   ./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/RestrictedRemoteAdministration
   ```
@@ -219,7 +219,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
   :::column span="1":::
   **Data type**
   :::column-end:::
-  :::column span="3":::
+  :::column span="7":::
   string
   :::column-end:::
 :::row-end:::
@@ -227,7 +227,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
   :::column span="1":::
   **Value**
   :::column-end:::
-  :::column span="3":::
+  :::column span="7":::
   ```Device
   <enabled/><data id=\"RestrictedRemoteAdministrationDrop\" value=\"2\"/>
   ```
