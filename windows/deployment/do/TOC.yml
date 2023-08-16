@@ -36,7 +36,7 @@
       - name: Requirements
         href: mcc-enterprise-prerequisites.md
       - name: Deploy Microsoft Connected Cache
-        href: mcc-enterprise--portal-deploy.md
+        href: mcc-enterprise-portal-deploy.md
       - name: Update or uninstall MCC
         href: mcc-enterprise-update-uninstall.md
       - name: Appendix
