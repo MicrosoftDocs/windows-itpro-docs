@@ -1,8 +1,8 @@
 ---
 ms.date: 08/14/2023
 title: Additional mitigations
-description: Advice and sample code for making your domain environment more secure and robust with Credential Guard.
-ms.topic: article
+description: Learn how to improve the security of your domain environment with additional mitigations for Credential Guard and sample code.
+ms.topic: reference
 ---
 
 # Additional mitigations
@@ -41,9 +41,10 @@ Credential theft attacks allow the attacker to steal secrets from one device and
 
 ### Kerberos armoring
 
-Kerberos armoring is part of RFC 6113. When a device supports Kerberos armoring, its TGT is used to protect the user's proof of possession which can mitigate offline dictionary attacks. Kerberos armoring also provides the additional benefit of signed KDC errors this mitigates tampering which can result in things such as downgrade attacks. 
+Kerberos armoring is part of RFC 6113. When a device supports Kerberos armoring, its TGT is used to protect the user's proof of possession which can mitigate offline dictionary attacks. Kerberos armoring also provides the additional benefit of signed KDC errors this mitigates tampering which can result in things such as downgrade attacks.
 
-**To enable Kerberos armoring for restricting domain users to specific domain-joined devices**
+To enable Kerberos armoring for restricting domain users to specific domain-joined devices:
+
 - Users need to be in domains that are running Windows Server 2012 R2 or higher
 - All the domain controllers in these domains must be configured to support Kerberos armoring. Set the **KDC support for claims, compound authentication, and Kerberos armoring** Group Policy setting to either **Supported** or **Always provide claims**.
 - All the devices with Credential Guard that the users will be restricted to must be configured to support Kerberos armoring. Enable the **Kerberos client support for claims, compound authentication and Kerberos armoring** Group Policy settings under **Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Kerberos**.
@@ -86,6 +87,7 @@ Then on the devices that are running Credential Guard, enroll the devices using 
 **Enroll devices in a certificate**
 
 Run the following command:
+
 ```powershell
 CertReq -EnrollCredGuardCert MachineAuthentication
 ```
