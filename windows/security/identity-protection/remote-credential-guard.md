@@ -49,14 +49,14 @@ With Remote Credential Guard:
 - You can connect to other systems using SSO
 - User credentials remain on the client. An attacker can act on behalf of the user *only* when the session is ongoing
 
-With [Restricted Admin mode](https://social.technet.microsoft.com/wiki/contents/articles/32905.how-to-enable-restricted-admin-mode-for-remote-desktop.aspx):
+With [Restricted Admin mode][TECH-1]:
 
 - Connect to other systems using host's identity
 - Highest protection level
 - Requires user account administrator rights on the remote host
 - User logs on to the server as local administrator, so an attacker cannot act on behalf of the *domain user*. Any attack is local to the server
 
-For further technical information, see [Remote Desktop Protocol](/windows/win32/termserv/remote-desktop-protocol) and [How Kerberos works](/previous-versions/windows/it-pro/windows-2000-server/cc961963(v=technet.10)).
+For further technical information, see [Remote Desktop Protocol][LEARN-2] and [How Kerberos works][KERB].
 
 Restricted Admin mode provides a method of interactively logging on to a remote host server without transmitting your credentials to the server. This prevents your credentials from being harvested during the initial connection process if the server has been compromised.
 
@@ -68,9 +68,9 @@ For helpdesk support scenarios in which personnel require administrative access 
 
 We recommend to use Restricted Admin mode option instead. For helpdesk support scenarios, RDP connections should only be initiated using the `/RestrictedAdmin` switch. This helps to ensure that credentials and other user resources are not exposed to compromised remote hosts. For more information, see [Mitigating Pass-the-Hash and Other Credential Theft v2](https://download.microsoft.com/download/7/7/A/77ABC5BD-8320-41AF-863C-6ECFB10CB4B9/Mitigating-Pass-the-Hash-Attacks-and-Other-Credential-Theft-Version-2.pdf).
 
-To further harden security, we also recommend that you implement Local Administrator Password Solution (LAPS), which automates local administrator password management. LAPS mitigates the risk of lateral escalation and other cyberattacks  facilitated when customers use the same administrative local account and password combination on all their computers.
+To further harden security, we also recommend that you implement Windows Local Administrator Password Solution (LAPS), which automates local administrator password management. LAPS mitigates the risk of lateral escalation and other cyberattacks  facilitated when customers use the same administrative local account and password combination on all their computers.
 
-For further information on LAPS, see [Microsoft Security Advisory 3062591](https://technet.microsoft.com/library/security/3062591.aspx).
+For more information about LAPS, see [What is Windows LAPS][LEARN-1].
 
 ## Remote Credential Guard requirements
 
@@ -122,21 +122,21 @@ To enable delegation of non-exportable credentials on the remote hosts, you can 
 
 Alternatively, you can configure devices using a [custom policy][INT-1] with the [Policy CSP][CSP-1].
 
-| OMA-URI |Data type| Value|
-|-|-|-|
-| `./Device/Vendor/MSFT/Policy/Config/CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials`| string | <enabled/> |
+| Setting |
+|--------|
+| - OMA-URI: `./Device/Vendor/MSFT/Policy/Config/CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials` <br>- Data type: string <br>- Value: `<enabled/>`|
 
 #### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
 
 ### Enable delegation of non-exportable credentials on the remote hosts with group policy
 
-[!INCLUDE [gpo-settings-1](../../../includes/configure/gpo-settings-1.md)] `Computer Configuration\Administrative Templates\System\Credentials Delegation`:
+[!INCLUDE [gpo-settings-1][GPO-1]] `Computer Configuration\Administrative Templates\System\Credentials Delegation`:
 
 | Group policy setting | Value |
 | - | - |
 | Remote host allows delegation of non-exportable credentials | Enabled |
 
-[!INCLUDE [gpo-settings-2](../../../includes/configure/gpo-settings-2.md)]
+[!INCLUDE [gpo-settings-2][GPO-2]]
 
 #### [:::image type="icon" source="../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
 
@@ -192,48 +192,6 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 |--------|
 | - OMA-URI: `./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/RestrictedRemoteAdministration` <br>- Data type: string <br>- Value: `<enabled/><data id=\"RestrictedRemoteAdministrationDrop\" value=\"2\"/>`|
 
-```Device
-./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/RestrictedRemoteAdministration
-```
-
-```Device
-<enabled/><data id=\"RestrictedRemoteAdministrationDrop\" value=\"2\"/>
-```
-
-:::row:::
-  :::column span="4":::
-  **Setting**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column span="1":::
-  **OMA-URI**
-  :::column-end:::
-  :::column span="7":::
-  ```Device
-  ./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/RestrictedRemoteAdministration
-  ```
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column span="1":::
-  **Data type**
-  :::column-end:::
-  :::column span="7":::
-  string
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column span="1":::
-  **Value**
-  :::column-end:::
-  :::column span="7":::
-  ```Device
-  <enabled/><data id=\"RestrictedRemoteAdministrationDrop\" value=\"2\"/>
-  ```
-  :::column-end:::
-:::row-end:::
-
 0 = Disabled
 1 = RequireRestrictedAdmin
 2 = RequireRemoteCredentialGuard
@@ -243,21 +201,21 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 ### Configure Remote Credential Guard on the client devices with group policy
 
-[!INCLUDE [gpo-settings-1](../../../includes/configure/gpo-settings-1.md)] `Computer Configuration\Administrative Templates\System\Credentials Delegation`:
+[!INCLUDE [gpo-settings-1][GPO-1]] `Computer Configuration\Administrative Templates\System\Credentials Delegation`:
 
 | Group policy setting | Value |
 | - | - |
 | Restrict delegation of credentials to remote servers| **Enabled** and in the dropdown, select one of the options:<br>&emsp;- **Restrict Credential Delegation**<br>&emsp;- **Require Remote Credential Guard**<br>&emsp;- **Require Restricted Admin**|
 
-[!INCLUDE [gpo-settings-2](../../../includes/configure/gpo-settings-2.md)]
+[!INCLUDE [gpo-settings-2][GPO2]]
 
-- If you want to require either [Restricted Admin mode](https://social.technet.microsoft.com/wiki/contents/articles/32905.remote-desktop-services-enable-restricted-admin-mode.aspx) or Remote Credential Guard, choose **Restrict Credential Delegation**. In this configuration, Remote Credential Guard is preferred, but it will use Restricted Admin mode (if supported) when Remote Credential Guard cannot be used
+- If you want to require either Restricted Admin mode or Remote Credential Guard, choose **Restrict Credential Delegation**. In this configuration, Remote Credential Guard is preferred, but it will use Restricted Admin mode (if supported) when Remote Credential Guard cannot be used
      > [!NOTE]
      > Neither Remote Credential Guard nor Restricted Admin mode will send credentials in clear text to the Remote Desktop server.
      > When **Restrict Credential Delegation** is enabled, the /restrictedAdmin switch will be ignored. Windows will enforce the policy configuration instead and will use Remote Credential Guard.
 
-- If you want to require Remote Credential Guard, choose **Require Remote Credential Guard**. With this setting, a Remote Desktop connection will succeed only if the remote computer meets the [requirements](#remote-credential-guard-requirements) listed earlier in this topic.
-- If you  want to require Restricted Admin mode, choose **Require Restricted Admin**. For information about Restricted Admin mode, see the table in  [Comparing Remote Credential Guard with other Remote Desktop connection options](#comparing-windows-defender-remote-credential-guard-with-other-remote-desktop-connection-options), earlier in this topic.
+- If you want to require Remote Credential Guard, choose **Require Remote Credential Guard**. With this setting, a Remote Desktop connection will succeed only if the remote computer meets the [requirements](#remote-credential-guard-requirements) listed earlier in this topic
+- If you  want to require Restricted Admin mode, choose **Require Restricted Admin**
 
 #### [:::image type="icon" source="../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
 
@@ -302,6 +260,12 @@ Here are some additional considerations for Remote Credential Guard:
 
 <!--links-->
 
-[INT-1]: /mem/intune/configuration/settings-catalog
 [CSP-1]: /windows/client-management/mdm/policy-csp-credentialsdelegation
 [CSP-2]: /windows/client-management/mdm/policy-csp-admx-credssp
+[GPO-1]: ../../../includes/configure/gpo-settings-1.md
+[GPO-2]: ../../../includes/configure/gpo-settings-1.md
+[INT-1]: /mem/intune/configuration/settings-catalog
+[KERB]: /previous-versions/windows/it-pro/windows-2000-server/cc961963(v=technet.10)
+[LEARN-1]: /windows-server/identity/laps/laps-overview
+[LEARN-2]: /windows/win32/termserv/remote-desktop-protocol
+[TECH-1]: https://social.technet.microsoft.com/wiki/contents/articles/32905.how-to-enable-restricted-admin-mode-for-remote-desktop.aspx
