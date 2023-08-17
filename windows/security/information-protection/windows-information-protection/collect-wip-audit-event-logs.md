@@ -1,15 +1,12 @@
 ---
 title: How to collect Windows Information Protection (WIP) audit event logs 
 description: How to collect & understand Windows Information Protection audit event logs via the Reporting configuration service provider (CSP) or Windows Event Forwarding.
-ms.prod: windows-client
-ms.localizationpriority: medium
 author: aczechowski
 ms.author: aaroncz
-manager: dougeby
+manager: aaroncz
 ms.topic: conceptual
 ms.date: 02/26/2019
 ms.reviewer: 
-ms.technology: itpro-security
 ---
 
 # How to collect Windows Information Protection (WIP) audit event logs

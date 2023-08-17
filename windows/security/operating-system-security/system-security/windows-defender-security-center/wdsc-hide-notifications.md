@@ -1,13 +1,13 @@
 ---
-title: Hide notifications from the Windows Security app
-description: Prevent Windows Security app notifications from appearing on user endpoints
-ms.date: 12/31/2018
+title: Hide notifications from Windows Security
+description: Prevent Windows Security notifications from appearing on user endpoints
+ms.date: 07/31/2023
 ms.topic: article
 ---
 
-# Hide Windows Security app notifications
+# Hide Windows Security notifications
 
-The Windows Security app is used by many Windows security features to provide notifications about the health and security of the machine. These include notifications about firewalls, antivirus products, Windows Defender SmartScreen, and others.
+**Windows Security** is used by many Windows security features to provide notifications about the health and security of the machine. These include notifications about firewalls, antivirus products, Windows Defender SmartScreen, and others.
 
 In some cases, it may not be appropriate to show these notifications, for example, if you want to hide regular status updates, or if you want to hide all notifications to the employees in your organization.
 
@@ -16,7 +16,7 @@ There are two levels to hiding notifications:
 1. Hide non-critical notifications, such as regular updates about the number of scans Microsoft Defender Antivirus ran in the past week
 2. Hide all notifications
 
-If you set **Hide all notifications** to **Enabled**, changing the **Hide non-critical notifications** setting will have no effect.
+If you set **Hide all notifications** to **Enabled**, changing the **Hide non-critical notifications** setting has no effect.
 
 You can only use Group Policy to change these settings.
 
@@ -30,38 +30,45 @@ These notifications can be hidden only by using Group Policy.
 > You must have Windows 10, version 1903 or higher. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.
 
 1. Download the latest [Administrative Templates (.admx) for Windows 10, v2004](https://www.microsoft.com/download/101445).
-1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
-1. In **Group Policy Management Editor**, go to **Computer configuration** and click **Administrative templates**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and select **Edit**.
+1. In **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 1. Expand the tree to **Windows components > Windows Security > Notifications**. For Windows 10 version 1803 and below, the path would be **Windows components > Windows Defender Security Center > Notifications**
-1. Open the **Hide non-critical notifications** setting and set it to **Enabled**. Click **OK**.
+1. Open the **Hide non-critical notifications** setting and set it to **Enabled**. Select **OK**.
 1. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy).
 
 ## Use Group Policy to hide all notifications
 
-You can hide all notifications that are sourced from the Windows Security app. This option may be useful if you don't want users of the machines from inadvertently modifying settings, running antivirus scans, or otherwise performing security-related actions without your input.
+You can hide all notifications that are sourced from **Windows Security**. This option may be useful if you don't want users of the machines from inadvertently modifying settings, running antivirus scans, or otherwise performing security-related actions without your input.
 
 These notifications can be hidden only by using Group Policy.
 
 > [!IMPORTANT]
 > You must have Windows 10, version 1903 or higher. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.
 
-1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
-1. In **Group Policy Management Editor**, go to **Computer configuration** and click **Administrative templates**.
+1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and select **Edit**.
+1. In **Group Policy Management Editor**, go to **Computer configuration** and select **Administrative templates**.
 1. Expand the tree to **Windows components > Windows Security > Notifications**. For Windows 10 version 1803 and below, the path would be **Windows components > Windows Defender Security Center > Notifications**.
 
     > [!NOTE]
     > For Windows 10 version 2004 and above the path would be **Windows components > Windows Security > Notifications**.
 
-1. Open the **Hide all notifications** setting and set it to **Enabled**. Click **OK**.
+1. Open the **Hide all notifications** setting and set it to **Enabled**. Select **OK**.
 1. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy).
 
 > [!NOTE]
 > You can use the following registry key and DWORD value to **Hide all notifications**.
-> **[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]**
-    **"DisableNotifications"=dword:00000001**
+>
+> ```text
+> [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]
+>   "DisableNotifications"=dword:00000001
+> ```
+>
 > You can use the following registry key and DWORD value to **Hide not-critical notifications**.
->**[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]**
-     **"DisableEnhancedNotifications"=dword:00000001**
+>
+> ```text
+> [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\Notifications]
+>   "DisableEnhancedNotifications"=dword:00000001
+> ```
 
 ## Notifications
 
@@ -79,7 +86,7 @@ These notifications can be hidden only by using Group Policy.
 | Follow-up action (restart) | Microsoft Defender Antivirus found _threat_ in _file_. Restart your device. | WDAV_REBOOT | Yes |Virus & threat protection notification|
 | Follow-up action (Full scan) | Microsoft Defender Antivirus found _threat_ in _file_. Run a full scan of your device. | FULLSCAN_REQUIRED | Yes |Virus & threat protection notification|
 | Sample submission prompt | Review files that Windows Defender will send to Microsoft. Sending this information can improve how Microsoft Defender Antivirus helps protect your device. | SAMPLE_SUBMISSION_REQUIRED | Yes |Virus & threat protection notification|
-| OS support ending warning | Support for your version of Windows is ending. When this support ends, Microsoft Defender Antivirus won’t be supported, and your device might be at risk. | SUPPORT_ENDING | Yes |Virus & threat protection notification|
+| OS support ending warning | Support for your version of Windows is ending. When this support ends, Microsoft Defender Antivirus won't be supported, and your device might be at risk. | SUPPORT_ENDING | Yes |Virus & threat protection notification|
 | OS support ended, device at risk | Support for your version of Windows has ended. Microsoft Defender Antivirus is no longer supported, and your device might be at risk. | SUPPORT_ENDED _and_ SUPPORT_ENDED_NO_DEFENDER | Yes |Virus & threat protection notification|
 | Summary notification, items found | Microsoft Defender Antivirus successfully took action on _n_ threats since your last summary. Your device was scanned _n_ times. | RECAP_FOUND_THREATS_SCANNED | No |Virus & threat protection notification|
 | Summary notification, items found, no scan count | Microsoft Defender Antivirus successfully took action on _n_ threats since your last summary. | RECAP_FOUND_THREATS | No |Virus & threat protection notification|

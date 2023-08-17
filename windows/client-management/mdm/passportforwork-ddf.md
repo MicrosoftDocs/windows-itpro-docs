@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 06/02/2023
+ms.date: 08/02/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -801,6 +801,45 @@ If you disable or do not configure this policy setting, the PIN recovery secret 
             <MSFT:Applicability>
               <MSFT:OsBuildVersion>10.0.15063</MSFT:OsBuildVersion>
               <MSFT:CspVersion>1.3</MSFT:CspVersion>
+            </MSFT:Applicability>
+            <MSFT:AllowedValues ValueType="ENUM">
+              <MSFT:Enum>
+                <MSFT:Value>false</MSFT:Value>
+                <MSFT:ValueDescription>Disabled</MSFT:ValueDescription>
+              </MSFT:Enum>
+              <MSFT:Enum>
+                <MSFT:Value>true</MSFT:Value>
+                <MSFT:ValueDescription>Enabled</MSFT:ValueDescription>
+              </MSFT:Enum>
+            </MSFT:AllowedValues>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>EnableWindowsHelloProvisioningForSecurityKeys</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <DefaultValue>False</DefaultValue>
+            <Description>Enable Windows Hello provisioning if users sign-in to their devices with FIDO2 security keys.</Description>
+            <DFFormat>
+              <bool />
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME />
+            </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.6</MSFT:CspVersion>
             </MSFT:Applicability>
             <MSFT:AllowedValues ValueType="ENUM">
               <MSFT:Enum>

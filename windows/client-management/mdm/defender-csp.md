@@ -4,7 +4,7 @@ description: Learn more about the Defender CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 07/06/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -34,7 +34,9 @@ The following list shows the Defender configuration service provider nodes:
     - [ASROnlyPerRuleExclusions](#configurationasronlyperruleexclusions)
     - [DataDuplicationDirectory](#configurationdataduplicationdirectory)
     - [DataDuplicationLocalRetentionPeriod](#configurationdataduplicationlocalretentionperiod)
+    - [DataDuplicationMaximumQuota](#configurationdataduplicationmaximumquota)
     - [DataDuplicationRemoteLocation](#configurationdataduplicationremotelocation)
+    - [DaysUntilAggressiveCatchupQuickScan](#configurationdaysuntilaggressivecatchupquickscan)
     - [DefaultEnforcement](#configurationdefaultenforcement)
     - [DeviceControl](#configurationdevicecontrol)
       - [PolicyGroups](#configurationdevicecontrolpolicygroups)
@@ -44,6 +46,7 @@ The following list shows the Defender configuration service provider nodes:
         - [{RuleId}](#configurationdevicecontrolpolicyrulesruleid)
           - [RuleData](#configurationdevicecontrolpolicyrulesruleidruledata)
     - [DeviceControlEnabled](#configurationdevicecontrolenabled)
+    - [DisableCacheMaintenance](#configurationdisablecachemaintenance)
     - [DisableCpuThrottleOnIdleScans](#configurationdisablecputhrottleonidlescans)
     - [DisableDatagramProcessing](#configurationdisabledatagramprocessing)
     - [DisableDnsOverTcpParsing](#configurationdisablednsovertcpparsing)
@@ -58,20 +61,24 @@ The following list shows the Defender configuration service provider nodes:
     - [DisableSmtpParsing](#configurationdisablesmtpparsing)
     - [DisableSshParsing](#configurationdisablesshparsing)
     - [DisableTlsParsing](#configurationdisabletlsparsing)
+    - [EnableConvertWarnToBlock](#configurationenableconvertwarntoblock)
     - [EnableDnsSinkhole](#configurationenablednssinkhole)
     - [EnableFileHashComputation](#configurationenablefilehashcomputation)
     - [EngineUpdatesChannel](#configurationengineupdateschannel)
+    - [ExcludedIpAddresses](#configurationexcludedipaddresses)
     - [HideExclusionsFromLocalAdmins](#configurationhideexclusionsfromlocaladmins)
     - [HideExclusionsFromLocalUsers](#configurationhideexclusionsfromlocalusers)
     - [IntelTDTEnabled](#configurationinteltdtenabled)
     - [MeteredConnectionUpdates](#configurationmeteredconnectionupdates)
     - [OobeEnableRtpAndSigUpdate](#configurationoobeenablertpandsigupdate)
     - [PassiveRemediation](#configurationpassiveremediation)
+    - [PerformanceModeStatus](#configurationperformancemodestatus)
     - [PlatformUpdatesChannel](#configurationplatformupdateschannel)
     - [RandomizeScheduleTaskTimes](#configurationrandomizescheduletasktimes)
     - [ScanOnlyIfIdleEnabled](#configurationscanonlyifidleenabled)
     - [SchedulerRandomizationTime](#configurationschedulerrandomizationtime)
     - [SecuredDevicesConfiguration](#configurationsecureddevicesconfiguration)
+    - [SecurityIntelligenceLocationUpdateAtScheduledTimeOnly](#configurationsecurityintelligencelocationupdateatscheduledtimeonly)
     - [SecurityIntelligenceUpdatesChannel](#configurationsecurityintelligenceupdateschannel)
     - [SupportLogLocation](#configurationsupportloglocation)
     - [TamperProtection](#configurationtamperprotection)
@@ -120,7 +127,7 @@ The following list shows the Defender configuration service provider nodes:
 <!-- Device-Configuration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Configuration-Applicability-End -->
 
 <!-- Device-Configuration-OmaUri-Begin -->
@@ -159,7 +166,7 @@ An interior node to group Windows Defender configuration information.
 <!-- Device-Configuration-AllowDatagramProcessingOnWinServer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-AllowDatagramProcessingOnWinServer-Applicability-End -->
 
 <!-- Device-Configuration-AllowDatagramProcessingOnWinServer-OmaUri-Begin -->
@@ -208,7 +215,7 @@ This settings controls whether Network Protection is allowed to enable datagram 
 <!-- Device-Configuration-AllowNetworkProtectionDownLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-AllowNetworkProtectionDownLevel-Applicability-End -->
 
 <!-- Device-Configuration-AllowNetworkProtectionDownLevel-OmaUri-Begin -->
@@ -257,7 +264,7 @@ This settings controls whether Network Protection is allowed to be configured in
 <!-- Device-Configuration-AllowNetworkProtectionOnWinServer-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Configuration-AllowNetworkProtectionOnWinServer-Applicability-End -->
 
 <!-- Device-Configuration-AllowNetworkProtectionOnWinServer-OmaUri-Begin -->
@@ -306,7 +313,7 @@ This settings controls whether Network Protection is allowed to be configured in
 <!-- Device-Configuration-AllowSwitchToAsyncInspection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Configuration-AllowSwitchToAsyncInspection-Applicability-End -->
 
 <!-- Device-Configuration-AllowSwitchToAsyncInspection-OmaUri-Begin -->
@@ -355,7 +362,7 @@ Control whether network protection can improve performance by switching from rea
 <!-- Device-Configuration-ASROnlyPerRuleExclusions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Configuration-ASROnlyPerRuleExclusions-Applicability-End -->
 
 <!-- Device-Configuration-ASROnlyPerRuleExclusions-OmaUri-Begin -->
@@ -394,7 +401,7 @@ Apply ASR only per rule exclusions.
 <!-- Device-Configuration-DataDuplicationDirectory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DataDuplicationDirectory-Applicability-End -->
 
 <!-- Device-Configuration-DataDuplicationDirectory-OmaUri-Begin -->
@@ -433,7 +440,7 @@ Define data duplication directory for device control.
 <!-- Device-Configuration-DataDuplicationLocalRetentionPeriod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DataDuplicationLocalRetentionPeriod-Applicability-End -->
 
 <!-- Device-Configuration-DataDuplicationLocalRetentionPeriod-OmaUri-Begin -->
@@ -468,13 +475,52 @@ Define the retention period in days of how much time the evidence data will be k
 
 <!-- Device-Configuration-DataDuplicationLocalRetentionPeriod-End -->
 
+<!-- Device-Configuration-DataDuplicationMaximumQuota-Begin -->
+### Configuration/DataDuplicationMaximumQuota
+
+<!-- Device-Configuration-DataDuplicationMaximumQuota-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+<!-- Device-Configuration-DataDuplicationMaximumQuota-Applicability-End -->
+
+<!-- Device-Configuration-DataDuplicationMaximumQuota-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/DataDuplicationMaximumQuota
+```
+<!-- Device-Configuration-DataDuplicationMaximumQuota-OmaUri-End -->
+
+<!-- Device-Configuration-DataDuplicationMaximumQuota-Description-Begin -->
+<!-- Description-Source-DDF -->
+Defines the maximum data duplication quota in MB that can be collected. When the quota is reached the filter will stop duplicating any data until the service manages to dispatch the existing collected data, thus decreasing the quota again below the maximum.
+<!-- Device-Configuration-DataDuplicationMaximumQuota-Description-End -->
+
+<!-- Device-Configuration-DataDuplicationMaximumQuota-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-DataDuplicationMaximumQuota-Editable-End -->
+
+<!-- Device-Configuration-DataDuplicationMaximumQuota-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Configuration-DataDuplicationMaximumQuota-DFProperties-End -->
+
+<!-- Device-Configuration-DataDuplicationMaximumQuota-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-DataDuplicationMaximumQuota-Examples-End -->
+
+<!-- Device-Configuration-DataDuplicationMaximumQuota-End -->
+
 <!-- Device-Configuration-DataDuplicationRemoteLocation-Begin -->
 ### Configuration/DataDuplicationRemoteLocation
 
 <!-- Device-Configuration-DataDuplicationRemoteLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DataDuplicationRemoteLocation-Applicability-End -->
 
 <!-- Device-Configuration-DataDuplicationRemoteLocation-OmaUri-Begin -->
@@ -507,13 +553,54 @@ Define data duplication remote location for device control.
 
 <!-- Device-Configuration-DataDuplicationRemoteLocation-End -->
 
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-Begin -->
+### Configuration/DaysUntilAggressiveCatchupQuickScan
+
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-Applicability-End -->
+
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/DaysUntilAggressiveCatchupQuickScan
+```
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-OmaUri-End -->
+
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-Description-Begin -->
+<!-- Description-Source-DDF -->
+Configure how many days can pass before an aggressive quick scan is triggered. The valid interval is [7-60] days. If set to 0, aggressive quick scans will be disabled. By default, the value is set to 25 days.
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-Description-End -->
+
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-Editable-End -->
+
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[0,7-60]` |
+| Default Value  | 25 |
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-DFProperties-End -->
+
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-Examples-End -->
+
+<!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-End -->
+
 <!-- Device-Configuration-DefaultEnforcement-Begin -->
 ### Configuration/DefaultEnforcement
 
 <!-- Device-Configuration-DefaultEnforcement-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DefaultEnforcement-Applicability-End -->
 
 <!-- Device-Configuration-DefaultEnforcement-OmaUri-Begin -->
@@ -562,7 +649,7 @@ Control Device Control default enforcement. This is the enforcement applied if t
 <!-- Device-Configuration-DeviceControl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DeviceControl-Applicability-End -->
 
 <!-- Device-Configuration-DeviceControl-OmaUri-Begin -->
@@ -600,7 +687,7 @@ Control Device Control default enforcement. This is the enforcement applied if t
 <!-- Device-Configuration-DeviceControl-PolicyGroups-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DeviceControl-PolicyGroups-Applicability-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyGroups-OmaUri-Begin -->
@@ -638,7 +725,7 @@ Control Device Control default enforcement. This is the enforcement applied if t
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-Applicability-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-OmaUri-Begin -->
@@ -676,7 +763,7 @@ Control Device Control default enforcement. This is the enforcement applied if t
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-GroupData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-GroupData-Applicability-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyGroups-{GroupId}-GroupData-OmaUri-Begin -->
@@ -715,7 +802,7 @@ For more information, see [Microsoft Defender for Endpoint Device Control Remova
 <!-- Device-Configuration-DeviceControl-PolicyRules-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DeviceControl-PolicyRules-Applicability-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyRules-OmaUri-Begin -->
@@ -753,7 +840,7 @@ For more information, see [Microsoft Defender for Endpoint Device Control Remova
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-Applicability-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-OmaUri-Begin -->
@@ -791,7 +878,7 @@ For more information, see [Microsoft Defender for Endpoint Device Control Remova
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-RuleData-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-RuleData-Applicability-End -->
 
 <!-- Device-Configuration-DeviceControl-PolicyRules-{RuleId}-RuleData-OmaUri-Begin -->
@@ -830,7 +917,7 @@ For more information, see [Microsoft Defender for Endpoint Device Control Remova
 <!-- Device-Configuration-DeviceControlEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-DeviceControlEnabled-Applicability-End -->
 
 <!-- Device-Configuration-DeviceControlEnabled-OmaUri-Begin -->
@@ -873,13 +960,52 @@ Control Device Control feature.
 
 <!-- Device-Configuration-DeviceControlEnabled-End -->
 
+<!-- Device-Configuration-DisableCacheMaintenance-Begin -->
+### Configuration/DisableCacheMaintenance
+
+<!-- Device-Configuration-DisableCacheMaintenance-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
+<!-- Device-Configuration-DisableCacheMaintenance-Applicability-End -->
+
+<!-- Device-Configuration-DisableCacheMaintenance-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/DisableCacheMaintenance
+```
+<!-- Device-Configuration-DisableCacheMaintenance-OmaUri-End -->
+
+<!-- Device-Configuration-DisableCacheMaintenance-Description-Begin -->
+<!-- Description-Source-DDF -->
+Defines whether the cache maintenance idle task will perform the cache maintenance or not.
+<!-- Device-Configuration-DisableCacheMaintenance-Description-End -->
+
+<!-- Device-Configuration-DisableCacheMaintenance-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-DisableCacheMaintenance-Editable-End -->
+
+<!-- Device-Configuration-DisableCacheMaintenance-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Configuration-DisableCacheMaintenance-DFProperties-End -->
+
+<!-- Device-Configuration-DisableCacheMaintenance-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-DisableCacheMaintenance-Examples-End -->
+
+<!-- Device-Configuration-DisableCacheMaintenance-End -->
+
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-Begin -->
 ### Configuration/DisableCpuThrottleOnIdleScans
 
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-Applicability-End -->
 
 <!-- Device-Configuration-DisableCpuThrottleOnIdleScans-OmaUri-Begin -->
@@ -928,7 +1054,7 @@ Indicates whether the CPU will be throttled for scheduled scans while the device
 <!-- Device-Configuration-DisableDatagramProcessing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Configuration-DisableDatagramProcessing-Applicability-End -->
 
 <!-- Device-Configuration-DisableDatagramProcessing-OmaUri-Begin -->
@@ -977,7 +1103,7 @@ Control whether network protection inspects User Datagram Protocol (UDP) traffic
 <!-- Device-Configuration-DisableDnsOverTcpParsing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableDnsOverTcpParsing-Applicability-End -->
 
 <!-- Device-Configuration-DisableDnsOverTcpParsing-OmaUri-Begin -->
@@ -1026,7 +1152,7 @@ This setting disables DNS over TCP Parsing for Network Protection.
 <!-- Device-Configuration-DisableDnsParsing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableDnsParsing-Applicability-End -->
 
 <!-- Device-Configuration-DisableDnsParsing-OmaUri-Begin -->
@@ -1075,7 +1201,7 @@ This setting disables DNS Parsing for Network Protection.
 <!-- Device-Configuration-DisableFtpParsing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableFtpParsing-Applicability-End -->
 
 <!-- Device-Configuration-DisableFtpParsing-OmaUri-Begin -->
@@ -1124,7 +1250,7 @@ This setting disables FTP Parsing for Network Protection.
 <!-- Device-Configuration-DisableGradualRelease-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableGradualRelease-Applicability-End -->
 
 <!-- Device-Configuration-DisableGradualRelease-OmaUri-Begin -->
@@ -1173,7 +1299,7 @@ Enable this policy to disable gradual rollout of Defender updates.
 <!-- Device-Configuration-DisableHttpParsing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableHttpParsing-Applicability-End -->
 
 <!-- Device-Configuration-DisableHttpParsing-OmaUri-Begin -->
@@ -1222,7 +1348,7 @@ This setting disables HTTP Parsing for Network Protection.
 <!-- Device-Configuration-DisableInboundConnectionFiltering-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableInboundConnectionFiltering-Applicability-End -->
 
 <!-- Device-Configuration-DisableInboundConnectionFiltering-OmaUri-Begin -->
@@ -1271,7 +1397,7 @@ This setting disables Inbound connection filtering for Network Protection.
 <!-- Device-Configuration-DisableLocalAdminMerge-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableLocalAdminMerge-Applicability-End -->
 
 <!-- Device-Configuration-DisableLocalAdminMerge-OmaUri-Begin -->
@@ -1282,7 +1408,7 @@ This setting disables Inbound connection filtering for Network Protection.
 
 <!-- Device-Configuration-DisableLocalAdminMerge-Description-Begin -->
 <!-- Description-Source-DDF -->
-When this value is set to false, it allows a local admin the ability to specify some settings for complex list type that will then merge /override the Preference settings with the Policy settings.
+When this value is set to no, it allows a local admin the ability to specify some settings for complex list type that will then merge /override the Preference settings with the Policy settings.
 <!-- Device-Configuration-DisableLocalAdminMerge-Description-End -->
 
 <!-- Device-Configuration-DisableLocalAdminMerge-Editable-Begin -->
@@ -1304,8 +1430,8 @@ When this value is set to false, it allows a local admin the ability to specify 
 
 | Value | Description |
 |:--|:--|
-| 1 | Disable Local Admin Merge. |
-| 0 (Default) | Enable Local Admin Merge. |
+| 1 | Yes. |
+| 0 (Default) | No. |
 <!-- Device-Configuration-DisableLocalAdminMerge-AllowedValues-End -->
 
 <!-- Device-Configuration-DisableLocalAdminMerge-Examples-Begin -->
@@ -1320,7 +1446,7 @@ When this value is set to false, it allows a local admin the ability to specify 
 <!-- Device-Configuration-DisableNetworkProtectionPerfTelemetry-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableNetworkProtectionPerfTelemetry-Applicability-End -->
 
 <!-- Device-Configuration-DisableNetworkProtectionPerfTelemetry-OmaUri-Begin -->
@@ -1369,7 +1495,7 @@ This setting disables the gathering and send of performance telemetry from Netwo
 <!-- Device-Configuration-DisableRdpParsing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableRdpParsing-Applicability-End -->
 
 <!-- Device-Configuration-DisableRdpParsing-OmaUri-Begin -->
@@ -1418,7 +1544,7 @@ This setting disables RDP Parsing for Network Protection.
 <!-- Device-Configuration-DisableSmtpParsing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableSmtpParsing-Applicability-End -->
 
 <!-- Device-Configuration-DisableSmtpParsing-OmaUri-Begin -->
@@ -1467,7 +1593,7 @@ This setting disables SMTP Parsing for Network Protection.
 <!-- Device-Configuration-DisableSshParsing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableSshParsing-Applicability-End -->
 
 <!-- Device-Configuration-DisableSshParsing-OmaUri-Begin -->
@@ -1516,7 +1642,7 @@ This setting disables SSH Parsing for Network Protection.
 <!-- Device-Configuration-DisableTlsParsing-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-DisableTlsParsing-Applicability-End -->
 
 <!-- Device-Configuration-DisableTlsParsing-OmaUri-Begin -->
@@ -1559,13 +1685,62 @@ This setting disables TLS Parsing for Network Protection.
 
 <!-- Device-Configuration-DisableTlsParsing-End -->
 
+<!-- Device-Configuration-EnableConvertWarnToBlock-Begin -->
+### Configuration/EnableConvertWarnToBlock
+
+<!-- Device-Configuration-EnableConvertWarnToBlock-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
+<!-- Device-Configuration-EnableConvertWarnToBlock-Applicability-End -->
+
+<!-- Device-Configuration-EnableConvertWarnToBlock-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/EnableConvertWarnToBlock
+```
+<!-- Device-Configuration-EnableConvertWarnToBlock-OmaUri-End -->
+
+<!-- Device-Configuration-EnableConvertWarnToBlock-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting controls whether network protection blocks network traffic instead of displaying a warning.
+<!-- Device-Configuration-EnableConvertWarnToBlock-Description-End -->
+
+<!-- Device-Configuration-EnableConvertWarnToBlock-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-EnableConvertWarnToBlock-Editable-End -->
+
+<!-- Device-Configuration-EnableConvertWarnToBlock-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-EnableConvertWarnToBlock-DFProperties-End -->
+
+<!-- Device-Configuration-EnableConvertWarnToBlock-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 | Warn verdicts are converted to block. |
+| 0 (Default) | Warn verdicts aren't converted to block. |
+<!-- Device-Configuration-EnableConvertWarnToBlock-AllowedValues-End -->
+
+<!-- Device-Configuration-EnableConvertWarnToBlock-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-EnableConvertWarnToBlock-Examples-End -->
+
+<!-- Device-Configuration-EnableConvertWarnToBlock-End -->
+
 <!-- Device-Configuration-EnableDnsSinkhole-Begin -->
 ### Configuration/EnableDnsSinkhole
 
 <!-- Device-Configuration-EnableDnsSinkhole-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-EnableDnsSinkhole-Applicability-End -->
 
 <!-- Device-Configuration-EnableDnsSinkhole-OmaUri-Begin -->
@@ -1614,7 +1789,7 @@ This setting enables the DNS Sinkhole feature for Network Protection, respecting
 <!-- Device-Configuration-EnableFileHashComputation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Configuration-EnableFileHashComputation-Applicability-End -->
 
 <!-- Device-Configuration-EnableFileHashComputation-OmaUri-Begin -->
@@ -1663,7 +1838,7 @@ Enables or disables file hash computation feature. When this feature is enabled 
 <!-- Device-Configuration-EngineUpdatesChannel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-EngineUpdatesChannel-Applicability-End -->
 
 <!-- Device-Configuration-EngineUpdatesChannel-OmaUri-Begin -->
@@ -1710,13 +1885,52 @@ Enable this policy to specify when devices receive Microsoft Defender engine upd
 
 <!-- Device-Configuration-EngineUpdatesChannel-End -->
 
+<!-- Device-Configuration-ExcludedIpAddresses-Begin -->
+### Configuration/ExcludedIpAddresses
+
+<!-- Device-Configuration-ExcludedIpAddresses-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-ExcludedIpAddresses-Applicability-End -->
+
+<!-- Device-Configuration-ExcludedIpAddresses-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/ExcludedIpAddresses
+```
+<!-- Device-Configuration-ExcludedIpAddresses-OmaUri-End -->
+
+<!-- Device-Configuration-ExcludedIpAddresses-Description-Begin -->
+<!-- Description-Source-DDF -->
+Allows an administrator to explicitly disable network packet inspection made by wdnisdrv on a particular set of IP addresses.
+<!-- Device-Configuration-ExcludedIpAddresses-Description-End -->
+
+<!-- Device-Configuration-ExcludedIpAddresses-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-ExcludedIpAddresses-Editable-End -->
+
+<!-- Device-Configuration-ExcludedIpAddresses-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- Device-Configuration-ExcludedIpAddresses-DFProperties-End -->
+
+<!-- Device-Configuration-ExcludedIpAddresses-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-ExcludedIpAddresses-Examples-End -->
+
+<!-- Device-Configuration-ExcludedIpAddresses-End -->
+
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-Begin -->
 ### Configuration/HideExclusionsFromLocalAdmins
 
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-Applicability-End -->
 
 <!-- Device-Configuration-HideExclusionsFromLocalAdmins-OmaUri-Begin -->
@@ -1767,7 +1981,7 @@ This policy setting controls whether or not exclusions are visible to local admi
 <!-- Device-Configuration-HideExclusionsFromLocalUsers-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-HideExclusionsFromLocalUsers-Applicability-End -->
 
 <!-- Device-Configuration-HideExclusionsFromLocalUsers-OmaUri-Begin -->
@@ -1816,7 +2030,7 @@ This policy setting controls whether or not exclusions are visible to local user
 <!-- Device-Configuration-IntelTDTEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- Device-Configuration-IntelTDTEnabled-Applicability-End -->
 
 <!-- Device-Configuration-IntelTDTEnabled-OmaUri-Begin -->
@@ -1866,7 +2080,7 @@ This policy setting configures the Intel TDT integration level for Intel TDT-cap
 <!-- Device-Configuration-MeteredConnectionUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-MeteredConnectionUpdates-Applicability-End -->
 
 <!-- Device-Configuration-MeteredConnectionUpdates-OmaUri-Begin -->
@@ -1915,7 +2129,7 @@ Allow managed devices to update through metered connections. Default is 0 - not 
 <!-- Device-Configuration-OobeEnableRtpAndSigUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-OobeEnableRtpAndSigUpdate-Applicability-End -->
 
 <!-- Device-Configuration-OobeEnableRtpAndSigUpdate-OmaUri-Begin -->
@@ -1964,7 +2178,7 @@ This setting allows you to configure whether real-time protection and Security I
 <!-- Device-Configuration-PassiveRemediation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-PassiveRemediation-Applicability-End -->
 
 <!-- Device-Configuration-PassiveRemediation-OmaUri-Begin -->
@@ -2008,13 +2222,62 @@ Setting to control automatic remediation for Sense scans.
 
 <!-- Device-Configuration-PassiveRemediation-End -->
 
+<!-- Device-Configuration-PerformanceModeStatus-Begin -->
+### Configuration/PerformanceModeStatus
+
+<!-- Device-Configuration-PerformanceModeStatus-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+<!-- Device-Configuration-PerformanceModeStatus-Applicability-End -->
+
+<!-- Device-Configuration-PerformanceModeStatus-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/PerformanceModeStatus
+```
+<!-- Device-Configuration-PerformanceModeStatus-OmaUri-End -->
+
+<!-- Device-Configuration-PerformanceModeStatus-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting allows IT admins to configure performance mode in either enabled or disabled mode for managed devices.
+<!-- Device-Configuration-PerformanceModeStatus-Description-End -->
+
+<!-- Device-Configuration-PerformanceModeStatus-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-PerformanceModeStatus-Editable-End -->
+
+<!-- Device-Configuration-PerformanceModeStatus-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-PerformanceModeStatus-DFProperties-End -->
+
+<!-- Device-Configuration-PerformanceModeStatus-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Performance mode is enabled (default). A service restart is required after changing this value. |
+| 1 | Performance mode is disabled. A service restart is required after changing this value. |
+<!-- Device-Configuration-PerformanceModeStatus-AllowedValues-End -->
+
+<!-- Device-Configuration-PerformanceModeStatus-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-PerformanceModeStatus-Examples-End -->
+
+<!-- Device-Configuration-PerformanceModeStatus-End -->
+
 <!-- Device-Configuration-PlatformUpdatesChannel-Begin -->
 ### Configuration/PlatformUpdatesChannel
 
 <!-- Device-Configuration-PlatformUpdatesChannel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-PlatformUpdatesChannel-Applicability-End -->
 
 <!-- Device-Configuration-PlatformUpdatesChannel-OmaUri-Begin -->
@@ -2067,7 +2330,7 @@ Enable this policy to specify when devices receive Microsoft Defender platform u
 <!-- Device-Configuration-RandomizeScheduleTaskTimes-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-RandomizeScheduleTaskTimes-Applicability-End -->
 
 <!-- Device-Configuration-RandomizeScheduleTaskTimes-OmaUri-Begin -->
@@ -2101,7 +2364,7 @@ In Microsoft Defender Antivirus, randomize the start time of the scan to any int
 | Value | Description |
 |:--|:--|
 | 1 (Default) | Widen or narrow the randomization period for scheduled scans. Specify a randomization window of between 1 and 23 hours by using the setting SchedulerRandomizationTime. |
-| 0 | Scheduled tasks will begin at a random time within 4 hours after the time specified in Task Scheduler. |
+| 0 | Scheduled tasks won't be randomized. |
 <!-- Device-Configuration-RandomizeScheduleTaskTimes-AllowedValues-End -->
 
 <!-- Device-Configuration-RandomizeScheduleTaskTimes-Examples-Begin -->
@@ -2116,7 +2379,7 @@ In Microsoft Defender Antivirus, randomize the start time of the scan to any int
 <!-- Device-Configuration-ScanOnlyIfIdleEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-ScanOnlyIfIdleEnabled-Applicability-End -->
 
 <!-- Device-Configuration-ScanOnlyIfIdleEnabled-OmaUri-Begin -->
@@ -2165,7 +2428,7 @@ In Microsoft Defender Antivirus, this setting will run scheduled scans only if t
 <!-- Device-Configuration-SchedulerRandomizationTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-SchedulerRandomizationTime-Applicability-End -->
 
 <!-- Device-Configuration-SchedulerRandomizationTime-OmaUri-Begin -->
@@ -2206,7 +2469,7 @@ This setting allows you to configure the scheduler randomization in hours. The r
 <!-- Device-Configuration-SecuredDevicesConfiguration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Configuration-SecuredDevicesConfiguration-Applicability-End -->
 
 <!-- Device-Configuration-SecuredDevicesConfiguration-OmaUri-Begin -->
@@ -2239,13 +2502,62 @@ Defines what are the devices primary ids that should be secured by Defender Devi
 
 <!-- Device-Configuration-SecuredDevicesConfiguration-End -->
 
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-Begin -->
+### Configuration/SecurityIntelligenceLocationUpdateAtScheduledTimeOnly
+
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-Applicability-End -->
+
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/SecurityIntelligenceLocationUpdateAtScheduledTimeOnly
+```
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-OmaUri-End -->
+
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting allows you to configure security intelligence updates according to the scheduler for VDI-configured computers. It's used together with the shared security intelligence location (SecurityIntelligenceLocation).
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-Description-End -->
+
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-Editable-End -->
+
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-DFProperties-End -->
+
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 | If you enable this setting and configure SecurityIntelligenceLocation, updates from the configured location occur only at the previously configured scheduled update time. |
+| 0 (Default) | If you either disable or don't configure this setting, updates occur whenever a new security intelligence update is detected at the location that's specified by SecurityIntelligenceLocation. |
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-AllowedValues-End -->
+
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-Examples-End -->
+
+<!-- Device-Configuration-SecurityIntelligenceLocationUpdateAtScheduledTimeOnly-End -->
+
 <!-- Device-Configuration-SecurityIntelligenceUpdatesChannel-Begin -->
 ### Configuration/SecurityIntelligenceUpdatesChannel
 
 <!-- Device-Configuration-SecurityIntelligenceUpdatesChannel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-SecurityIntelligenceUpdatesChannel-Applicability-End -->
 
 <!-- Device-Configuration-SecurityIntelligenceUpdatesChannel-OmaUri-Begin -->
@@ -2295,7 +2607,7 @@ Enable this policy to specify when devices receive Microsoft Defender security i
 <!-- Device-Configuration-SupportLogLocation-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-SupportLogLocation-Applicability-End -->
 
 <!-- Device-Configuration-SupportLogLocation-OmaUri-Begin -->
@@ -2346,7 +2658,7 @@ More details:
 <!-- Device-Configuration-TamperProtection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Configuration-TamperProtection-Applicability-End -->
 
 <!-- Device-Configuration-TamperProtection-OmaUri-Begin -->
@@ -2388,7 +2700,7 @@ Tamper protection helps protect important security features from unwanted change
 <!-- Device-Configuration-ThrottleForScheduledScanOnly-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Configuration-ThrottleForScheduledScanOnly-Applicability-End -->
 
 <!-- Device-Configuration-ThrottleForScheduledScanOnly-OmaUri-Begin -->
@@ -2437,7 +2749,7 @@ A CPU usage limit can be applied to scheduled scans only, or to scheduled and cu
 <!-- Device-Detections-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Detections-Applicability-End -->
 
 <!-- Device-Detections-OmaUri-Begin -->
@@ -2476,7 +2788,7 @@ An interior node to group all threats detected by Windows Defender.
 <!-- Device-Detections-{ThreatId}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Detections-{ThreatId}-Applicability-End -->
 
 <!-- Device-Detections-{ThreatId}-OmaUri-Begin -->
@@ -2516,7 +2828,7 @@ The ID of a threat that has been detected by Windows Defender.
 <!-- Device-Detections-{ThreatId}-Category-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Detections-{ThreatId}-Category-Applicability-End -->
 
 <!-- Device-Detections-{ThreatId}-Category-OmaUri-Begin -->
@@ -2659,7 +2971,7 @@ Threat category ID. Supported values:
 <!-- Device-Detections-{ThreatId}-CurrentStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Detections-{ThreatId}-CurrentStatus-Applicability-End -->
 
 <!-- Device-Detections-{ThreatId}-CurrentStatus-OmaUri-Begin -->
@@ -2724,7 +3036,7 @@ Information about the current status of the threat. The following list shows the
 <!-- Device-Detections-{ThreatId}-ExecutionStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Detections-{ThreatId}-ExecutionStatus-Applicability-End -->
 
 <!-- Device-Detections-{ThreatId}-ExecutionStatus-OmaUri-Begin -->
@@ -2763,7 +3075,7 @@ Information about the execution status of the threat.
 <!-- Device-Detections-{ThreatId}-InitialDetectionTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Detections-{ThreatId}-InitialDetectionTime-Applicability-End -->
 
 <!-- Device-Detections-{ThreatId}-InitialDetectionTime-OmaUri-Begin -->
@@ -2802,7 +3114,7 @@ The first time this particular threat was detected.
 <!-- Device-Detections-{ThreatId}-LastThreatStatusChangeTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Detections-{ThreatId}-LastThreatStatusChangeTime-Applicability-End -->
 
 <!-- Device-Detections-{ThreatId}-LastThreatStatusChangeTime-OmaUri-Begin -->
@@ -2841,7 +3153,7 @@ The last time this particular threat was changed.
 <!-- Device-Detections-{ThreatId}-Name-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Detections-{ThreatId}-Name-Applicability-End -->
 
 <!-- Device-Detections-{ThreatId}-Name-OmaUri-Begin -->
@@ -2880,7 +3192,7 @@ The name of the specific threat.
 <!-- Device-Detections-{ThreatId}-NumberOfDetections-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Detections-{ThreatId}-NumberOfDetections-Applicability-End -->
 
 <!-- Device-Detections-{ThreatId}-NumberOfDetections-OmaUri-Begin -->
@@ -2919,7 +3231,7 @@ Number of times this threat has been detected on a particular client.
 <!-- Device-Detections-{ThreatId}-Severity-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Detections-{ThreatId}-Severity-Applicability-End -->
 
 <!-- Device-Detections-{ThreatId}-Severity-OmaUri-Begin -->
@@ -2972,7 +3284,7 @@ Threat severity ID. The following list shows the supported values:
 <!-- Device-Detections-{ThreatId}-URL-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Detections-{ThreatId}-URL-Applicability-End -->
 
 <!-- Device-Detections-{ThreatId}-URL-OmaUri-Begin -->
@@ -3011,7 +3323,7 @@ URL link for additional threat information.
 <!-- Device-Health-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-Applicability-End -->
 
 <!-- Device-Health-OmaUri-Begin -->
@@ -3050,7 +3362,7 @@ An interior node to group information about Windows Defender health status.
 <!-- Device-Health-ComputerState-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-ComputerState-Applicability-End -->
 
 <!-- Device-Health-ComputerState-OmaUri-Begin -->
@@ -3105,7 +3417,7 @@ Provide the current state of the device. The following list shows the supported 
 <!-- Device-Health-DefenderEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-DefenderEnabled-Applicability-End -->
 
 <!-- Device-Health-DefenderEnabled-OmaUri-Begin -->
@@ -3144,7 +3456,7 @@ Indicates whether the Windows Defender service is running.
 <!-- Device-Health-DefenderVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-DefenderVersion-Applicability-End -->
 
 <!-- Device-Health-DefenderVersion-OmaUri-Begin -->
@@ -3183,7 +3495,7 @@ Version number of Windows Defender on the device.
 <!-- Device-Health-EngineVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-EngineVersion-Applicability-End -->
 
 <!-- Device-Health-EngineVersion-OmaUri-Begin -->
@@ -3222,7 +3534,7 @@ Version number of the current Windows Defender engine on the device.
 <!-- Device-Health-FullScanOverdue-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-FullScanOverdue-Applicability-End -->
 
 <!-- Device-Health-FullScanOverdue-OmaUri-Begin -->
@@ -3261,7 +3573,7 @@ Indicates whether a Windows Defender full scan is overdue for the device. A Full
 <!-- Device-Health-FullScanRequired-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-FullScanRequired-Applicability-End -->
 
 <!-- Device-Health-FullScanRequired-OmaUri-Begin -->
@@ -3300,7 +3612,7 @@ Indicates whether a Windows Defender full scan is required.
 <!-- Device-Health-FullScanSigVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-FullScanSigVersion-Applicability-End -->
 
 <!-- Device-Health-FullScanSigVersion-OmaUri-Begin -->
@@ -3339,7 +3651,7 @@ Signature version used for the last full scan of the device.
 <!-- Device-Health-FullScanTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-FullScanTime-Applicability-End -->
 
 <!-- Device-Health-FullScanTime-OmaUri-Begin -->
@@ -3378,7 +3690,7 @@ Time of the last Windows Defender full scan of the device.
 <!-- Device-Health-IsVirtualMachine-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Health-IsVirtualMachine-Applicability-End -->
 
 <!-- Device-Health-IsVirtualMachine-OmaUri-Begin -->
@@ -3417,7 +3729,7 @@ Indicates whether the device is a virtual machine.
 <!-- Device-Health-NisEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-NisEnabled-Applicability-End -->
 
 <!-- Device-Health-NisEnabled-OmaUri-Begin -->
@@ -3456,7 +3768,7 @@ Indicates whether network protection is running.
 <!-- Device-Health-ProductStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- Device-Health-ProductStatus-Applicability-End -->
 
 <!-- Device-Health-ProductStatus-OmaUri-Begin -->
@@ -3568,7 +3880,7 @@ Provide the current state of the product. This is a bitmask flag value that can 
 <!-- Device-Health-QuickScanOverdue-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-QuickScanOverdue-Applicability-End -->
 
 <!-- Device-Health-QuickScanOverdue-OmaUri-Begin -->
@@ -3607,7 +3919,7 @@ Indicates whether a Windows Defender quick scan is overdue for the device. A Qui
 <!-- Device-Health-QuickScanSigVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-QuickScanSigVersion-Applicability-End -->
 
 <!-- Device-Health-QuickScanSigVersion-OmaUri-Begin -->
@@ -3646,7 +3958,7 @@ Signature version used for the last quick scan of the device.
 <!-- Device-Health-QuickScanTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-QuickScanTime-Applicability-End -->
 
 <!-- Device-Health-QuickScanTime-OmaUri-Begin -->
@@ -3685,7 +3997,7 @@ Time of the last Windows Defender quick scan of the device.
 <!-- Device-Health-RebootRequired-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-RebootRequired-Applicability-End -->
 
 <!-- Device-Health-RebootRequired-OmaUri-Begin -->
@@ -3724,7 +4036,7 @@ Indicates whether a device reboot is needed.
 <!-- Device-Health-RtpEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-RtpEnabled-Applicability-End -->
 
 <!-- Device-Health-RtpEnabled-OmaUri-Begin -->
@@ -3763,7 +4075,7 @@ Indicates whether real-time protection is running.
 <!-- Device-Health-SignatureOutOfDate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-SignatureOutOfDate-Applicability-End -->
 
 <!-- Device-Health-SignatureOutOfDate-OmaUri-Begin -->
@@ -3802,7 +4114,7 @@ Indicates whether the Windows Defender signature is outdated.
 <!-- Device-Health-SignatureVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Health-SignatureVersion-Applicability-End -->
 
 <!-- Device-Health-SignatureVersion-OmaUri-Begin -->
@@ -3841,7 +4153,7 @@ Version number of the current Windows Defender signatures on the device.
 <!-- Device-Health-TamperProtectionEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- Device-Health-TamperProtectionEnabled-Applicability-End -->
 
 <!-- Device-Health-TamperProtectionEnabled-OmaUri-Begin -->
@@ -3880,7 +4192,7 @@ Indicates whether the Windows Defender tamper protection feature is enabled.
 <!-- Device-OfflineScan-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-OfflineScan-Applicability-End -->
 
 <!-- Device-OfflineScan-OmaUri-Begin -->
@@ -3920,7 +4232,7 @@ OfflineScan action starts a Microsoft Defender Offline scan on the computer wher
 <!-- Device-RollbackEngine-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-RollbackEngine-Applicability-End -->
 
 <!-- Device-RollbackEngine-OmaUri-Begin -->
@@ -3960,7 +4272,7 @@ RollbackEngine action rolls back Microsoft Defender engine to it's last known go
 <!-- Device-RollbackPlatform-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-RollbackPlatform-Applicability-End -->
 
 <!-- Device-RollbackPlatform-OmaUri-Begin -->
@@ -4000,7 +4312,7 @@ RollbackPlatform action rolls back Microsoft Defender to it's last known good in
 <!-- Device-Scan-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Scan-Applicability-End -->
 
 <!-- Device-Scan-OmaUri-Begin -->
@@ -4048,7 +4360,7 @@ Node that can be used to start a Windows Defender scan on a device.
 <!-- Device-UpdateSignature-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-UpdateSignature-Applicability-End -->
 
 <!-- Device-UpdateSignature-OmaUri-Begin -->

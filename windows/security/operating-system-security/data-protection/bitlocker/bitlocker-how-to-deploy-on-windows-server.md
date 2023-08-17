@@ -97,6 +97,6 @@ Enable-WindowsOptionalFeature -Online -FeatureName BitLocker, BitLocker-Utilitie
 ## Related articles
 
 - [BitLocker overview](index.md)
-- [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.yml)
+- [BitLocker frequently asked questions (FAQ)](faq.yml)
 - [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)
 - [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md)

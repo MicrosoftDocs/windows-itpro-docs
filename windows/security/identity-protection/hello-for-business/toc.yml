@@ -1,11 +1,9 @@
 items:
-- name: Windows Hello for Business documentation
-  href: index.yml
+- name: Overview
+  href: index.md
 - name: Concepts
   expanded: true
   items:
-  - name: Windows Hello for Business overview
-    href: hello-overview.md
   - name: Passwordless strategy
     href: passwordless-strategy.md
   - name: Why a PIN is better than a password
@@ -112,9 +110,9 @@ items:
     href: hello-and-password-changes.md
 - name: Windows Hello for Business features
   items:
-  - name: PIN Reset
+  - name: PIN reset
     href: hello-feature-pin-reset.md
-  - name: Dual Enrollment
+  - name: Dual enrollment
     href: hello-feature-dual-enrollment.md  
   - name: Dynamic Lock
     href: hello-feature-dynamic-lock.md

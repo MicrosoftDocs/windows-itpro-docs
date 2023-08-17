@@ -36,11 +36,13 @@
       - name: Requirements
         href: mcc-enterprise-prerequisites.md
       - name: Deploy Microsoft Connected Cache
-        href: mcc-enterprise-deploy.md
+        href: mcc-enterprise-portal-deploy.md
       - name: Update or uninstall MCC
         href: mcc-enterprise-update-uninstall.md
       - name: Appendix
         href: mcc-enterprise-appendix.md
+      - name: MCC for Enterprise and Education (early preview)
+        href: mcc-enterprise-deploy.md      
     - name: MCC for ISPs
       items:
       - name: MCC for ISPs Overview

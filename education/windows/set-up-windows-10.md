@@ -1,7 +1,7 @@
 ---
 title: Set up Windows devices for education
 description: Decide which option for setting up Windows 10 is right for you.
-ms.topic: article
+ms.topic: conceptual
 ms.date: 08/10/2022
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
@@ -9,11 +9,12 @@ appliesto:
 
 # Set up Windows devices for education
 
-You have two tools to choose from to set up PCs for your classroom: 
-* Set up School PCs 
-* Windows Configuration Designer
+You have two tools to choose from to set up PCs for your classroom:
 
-Choose the tool that is appropriate for how your students will sign in (Active Directory, Azure Active Directory, or no account). 
+- Set up School PCs 
+- Windows Configuration Designer
+
+Choose the tool that is appropriate for how your students will sign in (Active Directory, Azure Active Directory, or no account).
 
 You can use the following diagram to compare the tools.
 
@@ -29,4 +30,4 @@ You can use the following diagram to compare the tools.
 ## Related topics
 
 [Take tests in Windows](take-tests-in-windows.md)
-[Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)
+[Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)S

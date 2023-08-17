@@ -39,7 +39,7 @@
         "tier2"
       ],
       "breadcrumb_path": "/windows/resources/breadcrumb/toc.json",
-      "uhfHeaderId": "MSDocsHeader-M365-IT",
+      "uhfHeaderId": "MSDocsHeader-Windows",
       "ms.localizationpriority": "medium",
       "ms.prod": "windows-client",
       "ms.technology": "itpro-security",
@@ -75,9 +75,13 @@
       "author":{
         "application-security//**/*.md": "vinaypamnani-msft",
         "application-security//**/*.yml": "vinaypamnani-msft",
+        "application-security/application-control/windows-defender-application-control/**/*.md": "jsuther1974",
+        "application-security/application-control/windows-defender-application-control/**/*.yml": "jsuther1974",
         "application-security/application-control/user-account-control/*.md": "paolomatarazzo",
         "hardware-security/**/*.md": "vinaypamnani-msft",
         "hardware-security/**/*.yml": "vinaypamnani-msft",
+        "information-protection/**/*.md": "vinaypamnani-msft",
+        "information-protection/**/*.yml": "vinaypamnani-msft",
         "identity-protection/**/*.md": "paolomatarazzo",
         "identity-protection/**/*.yml": "paolomatarazzo",
         "operating-system-security/**/*.md": "vinaypamnani-msft",
@@ -92,10 +96,14 @@
       "ms.author":{
         "application-security//**/*.md": "vinpa",
         "application-security//**/*.yml": "vinpa",
+        "application-security/application-control/windows-defender-application-control/**/*.md": "jsuther",
+        "application-security/application-control/windows-defender-application-control/**/*.yml": "jsuther",
         "application-security/application-control/user-account-control/*.md": "paoloma",
         "application-security/application-control/user-account-control/*.yml": "paoloma",
         "hardware-security//**/*.md": "vinpa",
         "hardware-security//**/*.yml": "vinpa",
+        "information-protection/**/*.md": "vinpa",
+        "information-protection/**/*.yml": "vinpa",
         "identity-protection/**/*.md": "paoloma",
         "identity-protection/**/*.yml": "paoloma",
         "operating-system-security/**/*.md": "vinpa",
@@ -108,13 +116,6 @@
         "operating-system-security/network-security/windows-firewall/*.yml": "nganguly"
       },
       "appliesto": {
-        "threat-protection/windows-defender-application-control/applocker/*.md": [
-          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
-          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
-          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2022</a>",
-          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2019</a>",
-          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
-        ],
         "application-security//**/*.md": [
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
@@ -126,9 +127,26 @@
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2019</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
         ],
-        "hardware-security//**/*.md": [
+        "application-security/application-control/windows-defender-application-control/**/*.md": [
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2022</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2019</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
+        ],
+        "hardware-security/**/*.md": [
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>"
+        ],
+        "hardware-security/pluton/**/*.md": [
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>"
+        ],
+        "hardware-security/tpm/**/*.md": [
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 10</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2022</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2019</a>",
+          "✅ <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info\" target=\"_blank\">Windows Server 2016</a>"
         ],
         "identity-protection/**/*.md": [
           "✅ <a href=\"https://learn.microsoft.com/windows/release-health/supported-versions-windows-client\" target=\"_blank\">Windows 11</a>",
@@ -195,6 +213,7 @@
         ]
       },
       "ms.reviewer": {
+        "application-security/application-control/windows-defender-application-control/**/*.md": "vinpa",
         "application-security/application-isolation/microsoft-defender-application-guard/*.md": "sazankha",
         "identity-protection/hello-for-business/*.md": "erikdau",
         "identity-protection/credential-guard/*.md": "zwhittington",
@@ -205,11 +224,11 @@
         "operating-system-security/device-management/windows-security-configuration-framework/*.md": "jmunck"
       },
       "ms.collection": {
+        "application-security/application-control/windows-defender-application-control/**/*.md": "tier3",
         "identity-protection/hello-for-business/*.md": "tier1",
         "information-protection/pluton/*.md": "tier1",
         "information-protection/tpm/*.md": "tier1",
         "threat-protection/auditing/*.md": "tier3",
-        "threat-protection/windows-defender-application-control/*.md": "tier3",
         "operating-system-security/data-protection/bitlocker/*.md": "tier1",
         "operating-system-security/data-protection/personal-data-encryption/*.md": "tier1",
         "operating-system-security/network-security/windows-firewall/*.md": "tier3"
