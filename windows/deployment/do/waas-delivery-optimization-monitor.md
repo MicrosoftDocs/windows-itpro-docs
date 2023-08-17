@@ -1,20 +1,16 @@
 ---
-<<<<<<< HEAD:windows/deployment/do/waas-delivery-optimization-monitor.md
+manager: aaroncz
 title: Monitor Delivery Optimization
 description: How to monitor Delivery Optimization
-author: cmknox
-ms.author: carmenf
-=======
-ms.author: carmenf
-author: cmknox
-ms.reviewer: mstewart
->>>>>>> 2d5324c920c19c25aaced5a5387f0c6025f451c9:windows/deployment/do/includes/waas-delivery-optimization-monitor.md
-manager: aaroncz
+ms.collection:
+  - tier3
 ms.prod: windows-client
-ms.technology: itpro-deploy
+ms.technology: itpro-updates
 ms.topic: reference
-ms.date: 07/31/2023
+ms.date: 08/13/2023
 ms.localizationpriority: medium
+ms.author: carmenf
+author: cmknox
 ms.reviewer: mstewart
 ---
 
