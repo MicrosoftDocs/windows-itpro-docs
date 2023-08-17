@@ -24,48 +24,35 @@ This article describes how to configure and use Remote Credential Guard.
 
 ## Compare Remote Credential Guard with other connection options
 
-Use the following table to compare different Remote Desktop connection security options:
-
-|Feature|Remote Desktop|Remote Credential Guard|Restricted Admin mode|
-|-|-|-|-|
-| Single sign-on (SSO) to other systems as signed in user|✅|✅|❌ Remote Desktop session connects to other resources as remote host's identity |
-| Prevent use of domain identity during connection |❌|❌|✅|
-| Prevent use of credentials after disconnection|❌|✅|✅|
-| Prevent Pass-the-Hash (PtH)|❌|✅|✅|
-| Supported authentication | Any negotiable protocol | Kerberos only | Any negotiable protocol |
-| Multi-hop RDP | ✅ | ✅ | ❌ Not allowed for user as the session is running as a local host account |
-| Credentials supported from the remote desktop client device | - Signed on credentials<br>- Supplied credentials<br>- Saved credentials | - Signed on credentials | Signed on credentials<br>- Supplied credentials<br>- Saved credentials |
-| RDP access granted with | Membership of *Remote Desktop Users* group on remote host | Membership of *Remote Desktop Users* group on remote host | Local user on the remote host, with membership of the *Administrators* group |
-
 Using a Remote Desktop session without Remote Credential Guard has the following security implications:
 
 - Credentials are sent to and stored on the remote host
 - Credentials are not protected from attackers on the remote host
 - Attacker can use credentials after disconnection
 
-With Remote Credential Guard:
+The security benefits of [Restricted Admin mode][TECH-1] include:
 
 - Credentials are not sent to the remote host
-- You can connect to other systems using SSO
-- User credentials remain on the client. An attacker can act on behalf of the user *only* when the session is ongoing
+- An attacker cannot act on behalf of the user and any attack is local to the server
 
-With [Restricted Admin mode][TECH-1]:
+The security benefits of Remote Credential Guard include:
 
-- Connect to other systems using host's identity
-- Highest protection level
-- Requires user account administrator rights on the remote host
-- User logs on to the server as local administrator, so an attacker cannot act on behalf of the *domain user*. Any attack is local to the server
+- Credentials are not sent to the remote host
+- During the remote session. you can connect to other systems using SSO. All the authentication requests are redirected back to the client device
+- An attacker can act on behalf of the user only when the session is ongoing
 
-For further technical information, see [Remote Desktop Protocol][LEARN-2] and [How Kerberos works][KERB].
+Use the following table to compare different Remote Desktop connection security options:
 
-Restricted Admin mode provides a method of interactively logging on to a remote host server without transmitting your credentials to the server. This prevents your credentials from being harvested during the initial connection process if the server has been compromised.
-
-Using this mode with administrator credentials, the remote desktop client attempts to interactively logon to a host that also supports this mode without sending credentials. When the host verifies that the user account connecting to it has administrator rights and supports Restricted Admin mode, the connection succeeds. Otherwise, the connection attempt fails. Restricted Admin mode does not at any point send plain text or other re-usable forms of credentials to remote computers.
-
-<!-- rewording here -->
-
-- Restricted Admin limits access to resources located on other servers or networks from the remote host because credentials are not delegated
-- Remote Credential Guard does not limit access to resources because it redirects all requests back to the client device
+|Feature|Remote Desktop|Remote Credential Guard|Restricted Admin mode|
+|-|-|-|-|
+| Single sign-on (SSO) to other systems as signed in user|✅|✅|❌ Remote Desktop session connects to other resources as remote host's identity (`SYSTEM`)|
+| Prevent use of user's identity during connection |❌|❌|✅|
+| Prevent use of credentials after disconnection|❌|✅|✅|
+| Prevent Pass-the-Hash (PtH)|❌|✅|✅|
+| Supported authentication | Any negotiable protocol | Kerberos only | Any negotiable protocol |
+| Multi-hop RDP | ✅ | ✅ | ❌ Not allowed for user as the session is running as remote host's identity (`SYSTEM`)|
+| Credentials supported from the remote desktop client device | - Signed on credentials<br>- Supplied credentials<br>- Saved credentials | - Signed on credentials<br>- Supplied credentials<br> | - Signed on credentials<br>- Supplied credentials<br>- Saved credentials |
+| RDP access granted with | Membership of *Remote Desktop Users* group on remote host | Membership of *Remote Desktop Users* group on remote host | Membership of *Administrators* group on remote host|
 
 ## Remote Credential Guard requirements
 
@@ -121,7 +108,7 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 
 #### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
 
-[!INCLUDE [gpo-settings-1](../../../includes/configure/gpo-settings-1.md)] `Computer Configuration\Administrative Templates\System\Credentials Delegation`:
+[!INCLUDE [gpo-settings-1](../../../includes/configure/gpo-settings-1.md)] **Computer Configuration\Administrative Templates\System\Credentials Delegation**:
 
 | Group policy setting | Value |
 | - | - |
@@ -135,7 +122,7 @@ To configure devices using the registry, use the following settings:
 
 | Setting |
 |--|
-|- Key path: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CredentialsDelegation` <br>- Key name: `AllowProtectedCreds`<br>- Type: `REG_DWORD`<br>- Value:`1`|
+|- Key path: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CredentialsDelegation` <br>- Key name: `AllowProtectedCreds`<br>- Type: `REG_DWORD`<br>- Value: `1`|
 
 You can add this by running the following command from an elevated command prompt:
 
@@ -150,21 +137,19 @@ reg.exe add HKLM\SOFTWARE\Policies\Microsoft\Windows\CredentialsDelegation /v Al
 To enable Remote Credential Guard on the clients, you must configure a policy that enbables delegation of credentials to the remote hosts.\
 The policy can have different values, depending on the level of security you want to enforce:
 
-- Disabled
-- Require Restricted Admin: participating applications must use Restricted Admin to connect to remote hosts
-- Require Remote Credential Guard: participating applications must use Remote Credential Guard to connect to remote hosts
-- Restrict credential delegation: participating applications must use Restricted Admin or Remote Credential Guard to connect to remote hosts. In this configuration, Remote Credential Guard is preferred, but it will use Restricted Admin mode (if supported) when Remote Credential Guard cannot be used
+- **Disabled**: *Restricted Admin* and *Remote Credential Guard* mode are not enforced and participating apps can delegate credentials to remote devices.
+- **Require Restricted Admin**: the Remote Desktop Client must use Restricted Admin to connect to remote hosts
+- **Require Remote Credential Guard**: Remote Desktop Client must use Remote Credential Guard to connect to remote hosts
+- **Restrict credential delegation**: Remote Desktop Client must use Restricted Admin or Remote Credential Guard to connect to remote hosts. In this configuration, Remote Credential Guard is preferred, but it will use Restricted Admin mode (if supported) when Remote Credential Guard can't be used
 
 > [!NOTE]
-> When running in *Restricted Admin* or *Remote Credential Guard* mode, participating apps do not expose signed in or supplied credentials to a remote host.
-> When *Restrict Credential Delegation* is enabled, the `/restrictedAdmin` switch will be ignored. Windows will enforce the policy configuration instead and will use Remote Credential Guard.
+> When *Restrict Credential Delegation* is enabled, the `/restrictedAdmin` switch will be ignored. Windows enforces the policy configuration instead and uses Remote Credential Guard.
 
 To configure your clients, you can use:
 
 - Microsoft Intune/MDM
 - Group policy
 - Registry
-
 
 [!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
 
@@ -174,7 +159,7 @@ To configure your clients, you can use:
 
 | Category | Setting name | Value |
 |--|--|--|
-| Administrative Templates > System > Credentials Delegation | Restrict delegation of credentials to remote servers | Select **Enabled** and in the dropdown, select one of the options:<br>&emsp;- **Restrict Credential Delegation**<br>&emsp;- **Require Remote Credential Guard**<br>&emsp;- **Require Restricted Admin** |
+| Administrative Templates > System > Credentials Delegation | Restrict delegation of credentials to remote servers | Select **Enabled** and in the dropdown, select one of the options:<br>&emsp;- **Restrict Credential Delegation**<br>&emsp;- **Require Remote Credential Guard** |
 
 [!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
 
@@ -187,22 +172,19 @@ Alternatively, you can configure devices using a [custom policy](../../../includ
 Possible values for `RestrictedRemoteAdministrationDrop` are:
 
 - `0`: Disabled
-- `1`: RequireRestrictedAdmin
-- `2`: RequireRemoteCredentialGuard
-- `3`: PreferRemoteCredentialGuard
+- `1`: Require Restricted Admin
+- `2`: Require Remote Credential Guard
+- `3`: Restrict credential delegation
 
 #### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
 
-[!INCLUDE [gpo-settings-1](../../../includes/configure/gpo-settings-1.md)] `Computer Configuration\Administrative Templates\System\Credentials Delegation`:
+[!INCLUDE [gpo-settings-1](../../../includes/configure/gpo-settings-1.md)] **Computer Configuration\Administrative Templates\System\Credentials Delegation**:
 
 | Group policy setting | Value |
 | - | - |
-| Restrict delegation of credentials to remote servers| **Enabled** and in the dropdown, select one of the options:<br>&emsp;- **Restrict Credential Delegation**<br>&emsp;- **Require Remote Credential Guard**<br>&emsp;- **Require Restricted Admin**|
+| Restrict delegation of credentials to remote servers| **Enabled** and in the dropdown, select one of the options:<br>&emsp;- **Restrict Credential Delegation**<br>&emsp;- **Require Remote Credential Guard**|
 
 [!INCLUDE [gpo-settings-2](../../../includes/configure/gpo-settings-2.md)]
-
-- If you want to require Remote Credential Guard, choose **Require Remote Credential Guard**. With this setting, a Remote Desktop connection will succeed only if the remote computer meets the [requirements](#remote-credential-guard-requirements) listed earlier in this topic
-- If you  want to require Restricted Admin mode, choose **Require Restricted Admin**
 
 #### [:::image type="icon" source="../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
 
@@ -210,28 +192,37 @@ To configure devices using the registry, use the following settings:
 
 | Setting |
 |-|
-|  Key path: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` <br>- Key name: `DisableRestrictedAdmin`<br>- Type: `REG_DWORD`<br>- Value:`1`|
+|  Key path: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` <br>- Key name: `DisableRestrictedAdmin`<br>- Type: `REG_DWORD`<br>- Value:`2`|
 
 You can add this by running the following command from an elevated command prompt:
 
 ```cmd
-reg.exe add HKLM\SYSTEM\CurrentControlSet\Control\Lsa /v DisableRestrictedAdmin /d 1 /t REG_DWORD
+reg.exe add HKLM\SYSTEM\CurrentControlSet\Control\Lsa /v DisableRestrictedAdmin /d 2 /t REG_DWORD
 ```
+
+Possible values for `DisableRestrictedAdmin` are:
+
+- `0`: Disabled
+- `1`: Require Restricted Admin
+- `2`: Require Remote Credential Guard
+- `3`: Restrict credential delegation
 
 ---
 
 ## Use Remote Credential Guard
 
-### Use Remote Credential Guard with a parameter to Remote Desktop Connection
+Once a client receives the policy, you can connect to the remote host using Remote Credential Guard by opening the Remote Desktop Client (`mstsc.exe`). The user will be automatically authenticated to the remote host:
 
-If you don't use Group Policy in your organization, you can add the `remoteGuard` parameter when you start Remote Desktop Connection to turn on Remote Credential Guard for that connection:
+:::image type="content" source="images/remote-credential-guard.gif" alt-text="Animation showing a client connecting to a remote server using Remote Credential Guard.":::
 
-```cmd
-mstsc.exe /remoteGuard
-```
+> [!TIP]
+> If you don't want to configure your clients to use Remote Credential Guard, you can use the following command to turn Remote Credential Guard on for a specific connection only:
+> ```cmd
+> mstsc.exe /remoteGuard
+> ```
 
 > [!NOTE]
-> The user must be authorized to connect to the remote server using Remote Desktop Protocol, for example by being a member of the Remote Desktop Users local group on the remote computer.
+> The user must be authorized to connect to the remote server using the Remote Desktop protocol, for example by being a member of the Remote Desktop Users local group on the remote host.
 
 ## Remote Desktop connections and helpdesk support scenarios
 
@@ -258,8 +249,6 @@ Here are some additional considerations for Remote Credential Guard:
 [CSP-1]: /windows/client-management/mdm/policy-csp-credentialsdelegation
 [CSP-2]: /windows/client-management/mdm/policy-csp-admx-credssp
 [INT-3]: /mem/intune/configuration/settings-catalog
-[KERB]: /previous-versions/windows/it-pro/windows-2000-server/cc961963(v=technet.10)
 [LEARN-1]: /windows-server/identity/laps/laps-overview
-[LEARN-2]: /windows/win32/termserv/remote-desktop-protocol
 [TECH-1]: https://social.technet.microsoft.com/wiki/contents/articles/32905.how-to-enable-restricted-admin-mode-for-remote-desktop.aspx
 [PTH-1]: https://download.microsoft.com/download/7/7/A/77ABC5BD-8320-41AF-863C-6ECFB10CB4B9/Mitigating-Pass-the-Hash-Attacks-and-Other-Credential-Theft-Version-2.pdf
