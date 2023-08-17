@@ -14,7 +14,7 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
 ---
 
-(../../../includes/configure/tab-intro.md)# Remote Credential Guard
+# Remote Credential Guard
 
 Remote Credential Guard helps you protect your credentials over a Remote Desktop (RDP) connection by redirecting Kerberos requests back to the device that's requesting the connection. If the target device is compromised, your credentials are not exposed because both credential and credential derivatives are never passed over the network to the target device. Remote Credential Guard also provides single sign-on experiences for Remote Desktop sessions.\
 This article describes how to configure and use Remote Credential Guard.
@@ -34,7 +34,7 @@ Use the following table to compare different Remote Desktop connection security 
 | Prevent Pass-the-Hash (PtH)|❌|✅|✅|
 | Supported authentication | Any negotiable protocol | Kerberos only | Any negotiable protocol |
 | Multi-hop RDP | ✅ | ✅ | ❌ Not allowed for user as the session is running as a local host account |
-| Credentials supported from the remote desktop client device | <ul><li><b>Signed on</b> credentials <li> <b>Supplied</b> credentials<li> <b>Saved</b> credentials </ul> | <ul><li> <b>Signed on</b> credentials only | <ul><li><b>Signed on</b> credentials<li><b>Supplied</b> credentials<li><b>Saved</b> credentials</ul> |
+| Credentials supported from the remote desktop client device | - Signed on credentials<br>- Supplied credentials<br>- Saved credentials | - Signed on credentials | Signed on credentials<br>- Supplied credentials<br>- Saved credentials |
 | RDP access granted with | Membership of *Remote Desktop Users* group on remote host | Membership of *Remote Desktop Users* group on remote host | Local user on the remote host, with membership of the *Administrators* group |
 
 Using a Remote Desktop session without Remote Credential Guard has the following security implications:
