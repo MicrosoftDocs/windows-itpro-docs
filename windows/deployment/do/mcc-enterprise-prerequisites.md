@@ -3,8 +3,9 @@ title: Requirements for Microsoft Connected Cache (MCC) for Enterprise and Educa
 manager: aaroncz
 description: Overview of requirements for Microsoft Connected Cache (MCC) for Enterprise and Education.
 ms.prod: windows-client
-author: amymzhou
-ms.author: amyzhou
+ms.author: carmenf
+author: cmknox
+ms.reviewer: mstewart
 ms.topic: article
 ms.date: 12/31/2017
 ms.technology: itpro-updates
