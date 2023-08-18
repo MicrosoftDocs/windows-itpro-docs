@@ -161,11 +161,7 @@ To configure your clients, you can use:
 
 | Category | Setting name | Value |
 |--|--|--|
-| **Administrative Templates > System > Credentials Delegation** | Restrict delegation of credentials to remote servers | Select **Enabled** and in the dropdown, select one of the options:<ul><li>**Restrict Credential Delegation**</li><li>**Require Remote Credential Guard**</li></ul> |
-
-| Setting |
-|--|
-| **- Category:** Administrative Templates > System > Credentials Delegation<br>**- Setting name:** Restrict delegation of credentials to remote servers<br>**- Value:** Select **Enabled** and in the dropdown, select one of the options:<br>**Restrict Credential Delegation**<br>**Require Remote Credential Guard**|
+| **Administrative Templates > System > Credentials Delegation** | Restrict delegation of credentials to remote servers | Select **Enabled** and in the dropdown, select one of the options:<br>- **Restrict Credential Delegation**<br>- **Require Remote Credential Guard**|
 
 [!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
 
@@ -173,14 +169,7 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 
 | Setting |
 |--|
-|<ul><li>OMA-URI: `./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/RestrictedRemoteAdministration`</li><li>Data type: string</li><li>Value: `<enabled/><data id=\"RestrictedRemoteAdministrationDrop\" value=\"2\"/>`</li></ul> |
-
-Possible values for `RestrictedRemoteAdministrationDrop` are:
-
-- `0`: Disabled
-- `1`: Require Restricted Admin
-- `2`: Require Remote Credential Guard
-- `3`: Restrict credential delegation
+|- **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/RestrictedRemoteAdministration`<br>- **Data type:** string<br>- **Value:** `<enabled/><data id=\"RestrictedRemoteAdministrationDrop\" value=\"2\"/>`<br>Possible values for `RestrictedRemoteAdministrationDrop` are:<br>- `0`: Disabled<br>- `1`: Require Restricted Admin<br>- `2`: Require Remote Credential Guard<br>- `3`: Restrict credential delegation |
 
 #### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
 
@@ -188,7 +177,7 @@ Possible values for `RestrictedRemoteAdministrationDrop` are:
 
 | Group policy path | Group policy setting | Value |
 | - | - | - |
-| **Computer Configuration\Administrative Templates\System\Credentials Delegation** | Restrict delegation of credentials to remote servers| **Enabled** and in the dropdown, select one of the options:<li>**Restrict Credential Delegation**</li><li>**Require Remote Credential Guard**</li>|
+| **Computer Configuration\Administrative Templates\System\Credentials Delegation** | Restrict delegation of credentials to remote servers| **Enabled** and in the dropdown, select one of the options:<br>- **Restrict Credential Delegation**<br>- **Require Remote Credential Guard**|
 
 [!INCLUDE [gpo-settings-2](../../../includes/configure/gpo-settings-2.md)]
 
