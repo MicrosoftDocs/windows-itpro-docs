@@ -7,6 +7,7 @@ ms.reviewer:
 author: aczechowski
 manager: aaroncz
 ms.author: aaroncz
+ms.collection: must-keep
 ms.topic: article
 ms.technology: itpro-apps
 ---
