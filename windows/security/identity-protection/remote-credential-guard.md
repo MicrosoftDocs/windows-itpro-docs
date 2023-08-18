@@ -96,7 +96,7 @@ To enable delegation of non-exportable credentials on the remote hosts, you can 
 
 | Category | Setting name | Value |
 |--|--|--|
-| Administrative Templates > System > Credentials Delegation | Remote host allows delegation of non-exportable credentials | Enabled |
+| **Administrative Templates > System > Credentials Delegation** | Remote host allows delegation of non-exportable credentials | Enabled |
 
 [!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
 
@@ -108,11 +108,11 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 
 #### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
 
-[!INCLUDE [gpo-settings-1](../../../includes/configure/gpo-settings-1.md)] **Computer Configuration\Administrative Templates\System\Credentials Delegation**:
+[!INCLUDE [gpo-settings-1](../../../includes/configure/gpo-settings-1.md)]
 
-| Group policy setting | Value |
-| - | - |
-| Remote host allows delegation of non-exportable credentials | Enabled |
+| Group policy path | Group policy setting | Value |
+| - | - | - |
+| **Computer Configuration\Administrative Templates\System\Credentials Delegation** | Remote host allows delegation of non-exportable credentials | Enabled |
 
 [!INCLUDE [gpo-settings-2](../../../includes/configure/gpo-settings-2.md)]
 
@@ -178,11 +178,11 @@ Possible values for `RestrictedRemoteAdministrationDrop` are:
 
 #### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
 
-[!INCLUDE [gpo-settings-1](../../../includes/configure/gpo-settings-1.md)] **Computer Configuration\Administrative Templates\System\Credentials Delegation**:
+[!INCLUDE [gpo-settings-1](../../../includes/configure/gpo-settings-1.md)]
 
-| Group policy setting | Value |
-| - | - |
-| Restrict delegation of credentials to remote servers| **Enabled** and in the dropdown, select one of the options:<br>&emsp;- **Restrict Credential Delegation**<br>&emsp;- **Require Remote Credential Guard**|
+| Group policy path | Group policy setting | Value |
+| - | - | - |
+| **Computer Configuration\Administrative Templates\System\Credentials Delegation** | Restrict delegation of credentials to remote servers| **Enabled** and in the dropdown, select one of the options:<br>&emsp;- **Restrict Credential Delegation**<br>&emsp;- **Require Remote Credential Guard**|
 
 [!INCLUDE [gpo-settings-2](../../../includes/configure/gpo-settings-2.md)]
 

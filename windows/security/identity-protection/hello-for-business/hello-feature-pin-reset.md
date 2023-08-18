@@ -122,11 +122,11 @@ GET https://graph.microsoft.com/v1.0/organization?$select=id
 
 #### [:::image type="icon" source="../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
-[!INCLUDE [gpo-settings-1](../../../../includes/configure/gpo-settings-1.md)] **Computer Configuration > Administrative Templates > Windows Components > Windows Hello for Business**:
+[!INCLUDE [gpo-settings-1](../../../../includes/configure/gpo-settings-1.md)]
 
-| Group policy setting | Value |
-| - | - |
-| **Use PIN Recovery** | **Enabled** |
+| Group policy path | Group policy setting | Value |
+| - | - | - |
+|**Computer Configuration > Administrative Templates > Windows Components > Windows Hello for Business**| Use PIN Recovery | Enabled |
 
 [!INCLUDE [gpo-settings-2](../../../../includes/configure/gpo-settings-2.md)]
 
