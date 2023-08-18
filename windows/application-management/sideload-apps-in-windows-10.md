@@ -1,24 +1,21 @@
 ---
-title: Sideload LOB apps in Windows client OS | Microsoft Docs
-description: Learn how to sideload line-of-business (LOB) apps in Windows client operating systems, including Windows 10/11. When you sideload an app, you deploy a signed app package to a device.
+title: Sideload line of business apps
+description: Learn how to sideload line-of-business (LOB) apps in Windows client operating systems. When you sideload an app, you deploy a signed app package to a device.
 author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
 ms.date: 12/07/2017
-ms.topic: article
+ms.topic: how-to
 ms.prod: windows-client
 ms.technology: itpro-apps
 ms.localizationpriority: medium
 ms.collection: tier2
-ms.reviewer:
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
-# Sideload line of business (LOB) apps in Windows client devices
-
-**Applies to**:
-
-- Windows 10
-- Windows 11
+# Sideload line of business (LOB) apps
 
 > [!NOTE]
 > Starting with Windows 10 2004, sideloading is enabled by default. You can deploy a signed package onto a device without a special configuration.
@@ -27,7 +24,7 @@ Sideloading apps is when you install apps that aren't from an official source, s
 
 When you sideload an app, you deploy a signed app package to a device. You maintain the signing, hosting, and deployment of these apps. Sideloading was also available with Windows 8 and Windows 8.1
 
-Starting with Windows 10, sideloading is different than earlier versions of Windows:
+Starting with Windows 10, sideloading is different than earlier versions of Windows:
 
 - You can unlock a device for sideloading using an enterprise policy, or through the **Settings** app.
 - License keys aren't required.
