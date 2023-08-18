@@ -63,24 +63,20 @@ To use Remote Credential Guard, the remote host and the Remote Desktop client mu
 
 The remote host:
 
-- Must allow Restricted Admin connections
 - Must allow the user to access via Remote Desktop connections
-- Must allow delegation of non-exportable credentials
+- Must allow delegation of non-exportable credentials to the client device
 
 The client device:
 
 - Must be running the Remote Desktop Windows application. The Remote Desktop Universal Windows Platform (UWP) application doesn't support Remote Credential Guard
 - Must use Kerberos authentication to connect to the remote host. If the client cannot connect to a domain controller, then RDP attempts to fall back to NTLM. Remote Credential Guard does not allow NTLM fallback because this would expose credentials to risk
 
-> [!NOTE]
-> Remote Desktop client devices running earlier versions than Windows 10, version 1607, only support signed-in credentials. Therefore, the client device must also be joined to an Active Directory domain. Both Remote Desktop client and server must either be joined to the same domain, or the Remote Desktop server can be joined to a domain that has a trust relationship to the client device's domain.
-
 [!INCLUDE [windows-defender-remote-credential-guard](../../../includes/licensing/windows-defender-remote-credential-guard.md)]
 
 ## Enable delegation of non-exportable credentials on the remote hosts
 
 This policy is required on the remote hosts to support Remote Credential Guard and Restricted Admin mode. It allows the remote host to delegate non-exportable credentials to the client device.\
-If you disable or don't configure this setting, Restricted Admin and Remote Credential Guard mode are not supported. User will always need to pass their credentials to the host.
+If you disable or don't configure this setting, Restricted Admin and Remote Credential Guard mode are not supported. User will always need to pass their credentials to the host, exposing users to the risk of credential theft from attackers on the remote host.
 
 To enable delegation of non-exportable credentials on the remote hosts, you can use:
 
@@ -134,10 +130,17 @@ reg.exe add HKLM\SYSTEM\CurrentControlSet\Control\Lsa /v DisableRestrictedAdmin 
 
 ## Enable delegation of credentials on the clients
 
-To enable Remote Credential Guard on the clients, you must configure a policy that enbables delegation of credentials to the remote hosts.\
+To enable Remote Credential Guard on the clients, you can configure a policy that enbables delegation of credentials to the remote hosts.
+
+> [!TIP]
+> If you don't want to configure your clients to use Remote Credential Guard, you can use the following command to turn Remote Credential Guard on for a specific connection only:
+> ```cmd
+> mstsc.exe /remoteGuard
+> ```
+
 The policy can have different values, depending on the level of security you want to enforce:
 
-- **Disabled**: *Restricted Admin* and *Remote Credential Guard* mode are not enforced and participating apps can delegate credentials to remote devices.
+- **Disabled**: *Restricted Admin* and *Remote Credential Guard* mode are not enforced and the Remote Desktop Client can delegate credentials to remote devices
 - **Require Restricted Admin**: the Remote Desktop Client must use Restricted Admin to connect to remote hosts
 - **Require Remote Credential Guard**: Remote Desktop Client must use Remote Credential Guard to connect to remote hosts
 - **Restrict credential delegation**: Remote Desktop Client must use Restricted Admin or Remote Credential Guard to connect to remote hosts. In this configuration, Remote Credential Guard is preferred, but it will use Restricted Admin mode (if supported) when Remote Credential Guard can't be used
@@ -214,12 +217,6 @@ Possible values for `AllowProtectedCreds` are:
 Once a client receives the policy, you can connect to the remote host using Remote Credential Guard by opening the Remote Desktop Client (`mstsc.exe`). The user will be automatically authenticated to the remote host:
 
 :::image type="content" source="images/remote-credential-guard.gif" alt-text="Animation showing a client connecting to a remote server using Remote Credential Guard.":::
-
-> [!TIP]
-> If you don't want to configure your clients to use Remote Credential Guard, you can use the following command to turn Remote Credential Guard on for a specific connection only:
-> ```cmd
-> mstsc.exe /remoteGuard
-> ```
 
 > [!NOTE]
 > The user must be authorized to connect to the remote server using the Remote Desktop protocol, for example by being a member of the Remote Desktop Users local group on the remote host.
