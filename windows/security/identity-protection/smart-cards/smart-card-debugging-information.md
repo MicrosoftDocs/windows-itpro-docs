@@ -5,7 +5,7 @@ ms.reviewer: ardenw
 ms.collection: 
   - highpri
   - tier2
-ms.topic: article
+ms.topic: troubleshooting
 ms.date: 09/24/2021
 ---
 

@@ -2,7 +2,7 @@
 title: How Windows Hello for Business works - Provisioning
 description: Explore the provisioning flows for Windows Hello for Business, from within a variety of environments.
 ms.date: 2/15/2022
-ms.topic: article
+ms.topic: overview
 ---
 # Windows Hello for Business Provisioning
 

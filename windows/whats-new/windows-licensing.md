@@ -7,7 +7,7 @@ ms.author: paoloma
 manager: aaroncz
 ms.collection:
 - tier2
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 05/04/2023
 appliesto:
 - ✅ <a href=/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
