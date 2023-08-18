@@ -90,6 +90,87 @@ The following truncated response displays a **Catalog ID** of  `e317aa8a0455ca60
 }
 ```
 
+The deployment service can display more information about updates that were released on or after January 2023. Using [product revision](/graph/api/resources/windowsupdates-productrevision) gives you additional information about the updates, such as the KB numbers, and the `MajorVersion.MinorVersion.BuildNumber.UpdateBuildRevision`. Windows 10 and 11 share the same major and minor versions, but have different build numbers. 
+
+Use the following to display the product revision information for the most recent quality update:
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$expand=microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions&$orderby=releaseDateTime desc&$top=1
+```
+
+
+The following truncated response displays information about KB5029244 for Windows 10, version 22H2, and KB5029263 for Windows 11, version 22H2:
+
+```json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/catalog/entries(microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions())",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
+            "id": "e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5",
+            "displayName": "08/08/2023 - 2023.08 B SecurityUpdate for Windows 10 and later",
+            "deployableUntilDateTime": null,
+            "releaseDateTime": "2023-08-08T00:00:00Z",
+            "isExpeditable": true,
+            "qualityUpdateClassification": "security",
+            "catalogName": "2023-08 Cumulative Update for Windows 10 and later",
+            "shortName": "2023.08 B",
+            "qualityUpdateCadence": "monthly",
+            "cveSeverityInformation": {
+                "maxSeverity": "critical",
+                "maxBaseScore": 9.8,
+                "exploitedCves@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/catalog/entries('e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5')/microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/cveSeverityInformation/exploitedCves",
+                "exploitedCves": [
+                    {
+                        "number": "ADV230003",
+                        "url": "https://msrc.microsoft.com/update-guide/vulnerability/ADV230003"
+                    },
+                    {
+                        "number": "CVE-2023-38180",
+                        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-38180"
+                    }
+                ]
+            },
+            "productRevisions@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/catalog/entries('e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5')/microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions",
+            "productRevisions": [
+                {
+                    "id": "10.0.19045.3324",
+                    "displayName": "Windows 10, version 22H2, build 19045.3324",
+                    "releaseDateTime": "2023-08-08T00:00:00Z",
+                    "version": "22H2",
+                    "product": "Windows 10",
+                    "osBuild": {
+                        "majorVersion": 10,
+                        "minorVersion": 0,
+                        "buildNumber": 19045,
+                        "updateBuildRevision": 3324
+                    },
+                    "knowledgeBaseArticle@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/catalog/entries('e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5')/microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions('10.0.19045.3324')/knowledgeBaseArticle/$entity",
+                    "knowledgeBaseArticle": {
+                        "id": "KB5029244",
+                        "url": "https://support.microsoft.com/help/5029244"
+                    }
+                },
+                {
+                    "id": "10.0.22621.2134",
+                    "displayName": "Windows 11, version 22H2, build 22621.2134",
+                    "releaseDateTime": "2023-08-08T00:00:00Z",
+                    "version": "22H2",
+                    "product": "Windows 11",
+                    "osBuild": {
+                        "majorVersion": 10,
+                        "minorVersion": 0,
+                        "buildNumber": 22621,
+                        "updateBuildRevision": 2134
+                    },
+                    "knowledgeBaseArticle@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/windows/updates/catalog/entries('e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5')/microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/productRevisions('10.0.22621.2134')/knowledgeBaseArticle/$entity",
+                    "knowledgeBaseArticle": {
+                        "id": "KB5029263",
+                        "url": "https://support.microsoft.com/help/5029263"
+                    }
+                },
+```
+
 ## Create a deployment
 
 When creating a deployment, there are [multiple options](/graph/api/resources/windowsupdates-deploymentsettings) available to define how the deployment behaves. The following example creates a deployment for the `08/08/2023 - 2023.08 B SecurityUpdate for Windows 10 and later` security update with catalog entry ID `e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5`, and defines the `expedite` and `userExperience` deployment options in the request body.
