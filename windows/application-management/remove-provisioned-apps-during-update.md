@@ -96,7 +96,7 @@ You're now ready to update your computer. After the update, check the list of ap
 
 ## Registry keys for provisioned apps
 
-```syntax
+```console
 Windows Registry Editor Version 5.00
 ;1709 Registry Keys
 
