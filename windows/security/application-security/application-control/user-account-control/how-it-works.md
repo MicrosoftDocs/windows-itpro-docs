@@ -4,7 +4,7 @@ description: Learn about User Account Control (UAC) components and how it intera
 ms.collection: 
   - highpri
   - tier2
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/24/2023
 ---
 
