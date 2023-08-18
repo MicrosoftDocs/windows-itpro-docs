@@ -101,7 +101,7 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 
 | Setting |
 |--------|
-| - OMA-URI: `./Device/Vendor/MSFT/Policy/Config/CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials` <br>- Data type: string <br>- Value: `<enabled/>`|
+| **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials`<ul><li>**Data type:** string</li>**Value:** `<enabled/>`</ul></li>|
 
 #### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
 
@@ -112,14 +112,13 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 | **Computer Configuration\Administrative Templates\System\Credentials Delegation** | Remote host allows delegation of nonexportable credentials | Enabled |
 
 [!INCLUDE [gpo-settings-2](../../../includes/configure/gpo-settings-2.md)]
-
 #### [:::image type="icon" source="../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
 
 To configure devices using the registry, use the following settings:
 
 | Setting |
 |-|
-|  Key path: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` <li>Key name: `DisableRestrictedAdmin`</li><li>Type: `REG_DWORD`</li><li>Value:`0`</li>|
+|  Key path: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` <ul><li>Key name: `DisableRestrictedAdmin`</li><li>Type: `REG_DWORD`</li><li>Value: `0`</li></ul>|
 
 You can add this by running the following command from an elevated command prompt:
 
@@ -162,7 +161,7 @@ To configure your clients, you can use:
 
 | Category | Setting name | Value |
 |--|--|--|
-| Administrative Templates > System > Credentials Delegation | Restrict delegation of credentials to remote servers | Select **Enabled** and in the dropdown, select one of the options:<br>&emsp;- **Restrict Credential Delegation**<br>&emsp;- **Require Remote Credential Guard** |
+| **Administrative Templates > System > Credentials Delegation** | Restrict delegation of credentials to remote servers | Select **Enabled** and in the dropdown, select one of the options:<ul><li>**Restrict Credential Delegation**</li><li>**Require Remote Credential Guard**</li></ul> |
 
 [!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
 
@@ -170,7 +169,7 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 
 | Setting |
 |--|
-|- OMA-URI: `./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/RestrictedRemoteAdministration` <br>- Data type: string <br>- Value: `<enabled/><data id=\"RestrictedRemoteAdministrationDrop\" value=\"2\"/>` |
+|<ul><li>OMA-URI: `./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/RestrictedRemoteAdministration`</li><li>Data type: string</li><li>Value: `<enabled/><data id=\"RestrictedRemoteAdministrationDrop\" value=\"2\"/>`</li></ul> |
 
 Possible values for `RestrictedRemoteAdministrationDrop` are:
 
