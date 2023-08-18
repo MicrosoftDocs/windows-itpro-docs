@@ -5,7 +5,7 @@ items:
   items:
     - name: Common app types
       href: apps-in-windows-10.md
-    - name: Add features in Windows client
+    - name: Add or hide Windows features
       href: add-apps-and-features.md
     - name: Sideload apps
       href: sideload-apps-in-windows-10.md
