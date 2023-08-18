@@ -16,7 +16,10 @@ appliesto:
 
 # Remote Credential Guard
 
-Remote Credential Guard helps you protect your credentials over a Remote Desktop (RDP) connection by redirecting Kerberos requests back to the device that's requesting the connection. If the target device is compromised, your credentials are not exposed because both credential and credential derivatives are never passed over the network to the target device. Remote Credential Guard also provides single sign-on experiences for Remote Desktop sessions.\
+## Overview
+
+Remote Credential Guard helps you protect your credentials over a Remote Desktop (RDP) connection by redirecting Kerberos requests back to the device that's requesting the connection. If the target device is compromised, your credentials are not exposed because both credential and credential derivatives are never passed over the network to the target device. Remote Credential Guard also provides single sign-on experiences for Remote Desktop sessions.
+
 This article describes how to configure and use Remote Credential Guard.
 
 > [!IMPORTANT]
@@ -38,19 +41,19 @@ The security benefits of [Restricted Admin mode][TECH-1] include:
 The security benefits of Remote Credential Guard include:
 
 - Credentials are not sent to the remote host
-- During the remote session. you can connect to other systems using SSO. All the authentication requests are redirected back to the client device
+- During the remote session you can connect to other systems using SSO
 - An attacker can act on behalf of the user only when the session is ongoing
 
 Use the following table to compare different Remote Desktop connection security options:
 
 |Feature|Remote Desktop|Remote Credential Guard|Restricted Admin mode|
 |-|-|-|-|
-| Single sign-on (SSO) to other systems as signed in user|✅|✅|❌ Remote Desktop session connects to other resources as remote host's identity (`SYSTEM`)|
+| Single sign-on (SSO) to other systems as signed in user|✅|✅|❌ Remote Desktop session connects to other resources as the remote host's identity |
 | Prevent use of user's identity during connection |❌|❌|✅|
 | Prevent use of credentials after disconnection|❌|✅|✅|
 | Prevent Pass-the-Hash (PtH)|❌|✅|✅|
 | Supported authentication | Any negotiable protocol | Kerberos only | Any negotiable protocol |
-| Multi-hop RDP | ✅ | ✅ | ❌ Not allowed for user as the session is running as remote host's identity (`SYSTEM`)|
+| Multi-hop RDP | ✅ | ✅ | ❌ Not allowed for user as the session is running as remote the host's identity |
 | Credentials supported from the remote desktop client device | - Signed on credentials<br>- Supplied credentials<br>- Saved credentials | - Signed on credentials<br>- Supplied credentials<br> | - Signed on credentials<br>- Supplied credentials<br>- Saved credentials |
 | RDP access granted with | Membership of *Remote Desktop Users* group on remote host | Membership of *Remote Desktop Users* group on remote host | Membership of *Administrators* group on remote host|
 
@@ -60,15 +63,12 @@ To use Remote Credential Guard, the remote host and the Remote Desktop client mu
 
 The remote host:
 
-- Must be running at least Windows 10, version 1607 or Windows Server 2016
 - Must allow Restricted Admin connections
-- Must allow the client's domain user to access Remote Desktop connections
+- Must allow the user to access via Remote Desktop connections
 - Must allow delegation of non-exportable credentials
 
 The client device:
 
-- Must be running at least Windows 10, version 1607 or Windows Server 2016 to use the user's signed-in credentials
-- Must be running at least Windows 10, version 1703 to be able to supply credentials, which is sent to the remote device. This allows users to run as different users without having to send credentials to the remote machine
 - Must be running the Remote Desktop Windows application. The Remote Desktop Universal Windows Platform (UWP) application doesn't support Remote Credential Guard
 - Must use Kerberos authentication to connect to the remote host. If the client cannot connect to a domain controller, then RDP attempts to fall back to NTLM. Remote Credential Guard does not allow NTLM fallback because this would expose credentials to risk
 
@@ -121,13 +121,13 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 To configure devices using the registry, use the following settings:
 
 | Setting |
-|--|
-|- Key path: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CredentialsDelegation` <br>- Key name: `AllowProtectedCreds`<br>- Type: `REG_DWORD`<br>- Value: `1`|
+|-|
+|  Key path: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` <br>- Key name: `DisableRestrictedAdmin`<br>- Type: `REG_DWORD`<br>- Value:`0`|
 
 You can add this by running the following command from an elevated command prompt:
 
 ```cmd
-reg.exe add HKLM\SOFTWARE\Policies\Microsoft\Windows\CredentialsDelegation /v AllowProtectedCreds /d 1 /t REG_DWORD
+reg.exe add HKLM\SYSTEM\CurrentControlSet\Control\Lsa /v DisableRestrictedAdmin /d 0 /t REG_DWORD
 ```
 
 ---
@@ -191,16 +191,16 @@ Possible values for `RestrictedRemoteAdministrationDrop` are:
 To configure devices using the registry, use the following settings:
 
 | Setting |
-|-|
-|  Key path: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` <br>- Key name: `DisableRestrictedAdmin`<br>- Type: `REG_DWORD`<br>- Value:`2`|
+|--|
+|- Key path: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CredentialsDelegation` <br>- Key name: `AllowProtectedCreds`<br>- Type: `REG_DWORD`<br>- Value: `1`|
 
 You can add this by running the following command from an elevated command prompt:
 
 ```cmd
-reg.exe add HKLM\SYSTEM\CurrentControlSet\Control\Lsa /v DisableRestrictedAdmin /d 2 /t REG_DWORD
+reg.exe add HKLM\SOFTWARE\Policies\Microsoft\Windows\CredentialsDelegation /v AllowProtectedCreds /d 1 /t REG_DWORD
 ```
 
-Possible values for `DisableRestrictedAdmin` are:
+Possible values for `AllowProtectedCreds` are:
 
 - `0`: Disabled
 - `1`: Require Restricted Admin
