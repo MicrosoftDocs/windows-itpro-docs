@@ -8,7 +8,7 @@ ms.author: mstewart
 manager: aaroncz
 ms.topic: article
 ms.technology: itpro-updates
-ms.date: 07/31/2023
+ms.date: 08/22/2023
 ---
 
 # Deploy expedited updates with Windows Update for Business deployment service
@@ -47,13 +47,13 @@ All of the [prerequisites for the Windows Update for Business deployment service
 
 ## List catalog entries for expedited updates
 
-Each update is associated with a unique [catalog entry](/graph/api/resources/windowsupdates-catalogentry). You can query the catalog to find updates that can be expedited. The `id` returned is the **Catalog ID** and is used to create a deployment. The following query lists all security updates that can be deployed as expedited updates by the deployment service. Using `$top=3` and ordering by `ReleaseDateTimeshows` displays the three most recent updates.
+Each update is associated with a unique [catalog entry](/graph/api/resources/windowsupdates-catalogentry). You can query the catalog to find updates that can be expedited. The `id` returned is the **Catalog ID** and is used to create a deployment. The following query lists all security updates that can be deployed as expedited updates by the deployment service. Using `$top=1` and ordering by `ReleaseDateTimeshows` displays the most recent update that can be deployed as expedited.
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry') and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/isExpeditable eq true&$orderby=releaseDateTime desc&$top=3
+GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries?$filter=isof('microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry') and microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/isExpeditable eq true&$orderby=releaseDateTime desc&$top=1
 ```
 
-The following truncated response displays a **Catalog ID** of  `693fafea03c24cca819b3a15123a8880f217b96a878b6d6a61be021d476cc432` for the `01/10/2023 - 2023.01 B Security Updates for Windows 10 and later` security update:
+The following truncated response displays a **Catalog ID** of  `e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5` for the `08/08/2023 - 2023.08 B SecurityUpdate for Windows 10 and later` security update:
 
 ```json
 {
@@ -61,21 +61,38 @@ The following truncated response displays a **Catalog ID** of  `693fafea03c24cca
     "value": [
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
-            "id": "693fafea03c24cca819b3a15123a8880f217b96a878b6d6a61be021d476cc432",
-            "displayName": "01/10/2023 - 2023.01 B Security Updates for Windows 10 and later",
+            "id": "e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5",
+            "displayName": "08/08/2023 - 2023.08 B SecurityUpdate for Windows 10 and later",
             "deployableUntilDateTime": null,
-            "releaseDateTime": "2023-01-10T00:00:00Z",
+            "releaseDateTime": "2023-08-08T00:00:00Z",
             "isExpeditable": true,
-            "qualityUpdateClassification": "security"
-        },
-        ...
+            "qualityUpdateClassification": "security",
+            "catalogName": "2023-08 Cumulative Update for Windows 10 and later",
+            "shortName": "2023.08 B",
+            "qualityUpdateCadence": "monthly",
+            "cveSeverityInformation": {
+                "maxSeverity": "critical",
+                "maxBaseScore": 9.8,
+                "exploitedCves@odata.context": "https://graph.microsoft.com/$metadata#admin/windows/updates/catalog/entries('e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5')/microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry/cveSeverityInformation/exploitedCves",
+                "exploitedCves": [
+                    {
+                        "number": "ADV230003",
+                        "url": "https://msrc.microsoft.com/update-guide/vulnerability/ADV230003"
+                    },
+                    {
+                        "number": "CVE-2023-38180",
+                        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-38180"
+                    }
+                ]
+            }
+        }
     ]
 }
 ```
 
 ## Create a deployment
 
-When creating a deployment, there are [multiple options](/graph/api/resources/windowsupdates-deploymentsettings) available to define how the deployment behaves. The following example creates a deployment for the `01/10/2023 - 2023.01 B Security Updates for Windows 10 and later` security update with catalog entry ID `693fafea03c24cca819b3a15123a8880f217b96a878b6d6a61be021d476cc432`, and defines the `expedite` and `userExperience` deployment options in the request body.
+When creating a deployment, there are [multiple options](/graph/api/resources/windowsupdates-deploymentsettings) available to define how the deployment behaves. The following example creates a deployment for the `08/08/2023 - 2023.08 B SecurityUpdate for Windows 10 and later` security update with catalog entry ID `e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5`, and defines the `expedite` and `userExperience` deployment options in the request body.
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/admin/windows/updates/deployments
@@ -87,7 +104,7 @@ content-type: application/json
         "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
         "catalogEntry": {
             "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
-            "id": "693fafea03c24cca819b3a15123a8880f217b96a878b6d6a61be021d476cc432"
+            "id": "e317aa8a0455ca604de95329b524ec921ca57f2e6ed3ff88aac757a7468998a5"
         }
     },
     "settings": {
