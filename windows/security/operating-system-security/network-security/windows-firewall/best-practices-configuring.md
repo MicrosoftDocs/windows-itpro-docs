@@ -6,7 +6,7 @@ ms.date: 11/09/2022
 ms.collection: 
   - highpri
   - tier3
-ms.topic: article
+ms.topic: best-practice
 ---
 
 # Best practices for configuring Windows Defender Firewall

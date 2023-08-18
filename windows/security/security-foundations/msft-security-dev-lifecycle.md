@@ -4,13 +4,13 @@ description: Download the Microsoft Security Development Lifecycle white paper t
 author: paolomatarazzo
 ms.author: paoloma
 manager: aaroncz
-ms.topic: article
+ms.topic: conceptual
 ms.date: 07/31/2023
 ---
 
 # Microsoft Security Development Lifecycle
 
-The Security Development Lifecycle (SDL) is a security assurance process that is focused on software development. As a Microsoft-wide initiative and a mandatory policy since 2004, the SDL has played a critical role in embedding security and privacy in software and culture at Microsoft. 
+The Security Development Lifecycle (SDL) is a security assurance process that is focused on software development. As a Microsoft-wide initiative and a mandatory policy since 2004, the SDL has played a critical role in embedding security and privacy in software and culture at Microsoft.
 
 [:::image type="content" source="images/simplified-sdl.png" alt-text="Simplified secure development lifecycle":::](https://www.microsoft.com/en-us/securityengineering/sdl)
 

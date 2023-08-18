@@ -1,7 +1,7 @@
 ---
 title: Windows security foundations
 description: Get an overview of security foundations, including the security development lifecycle, common criteria, and the bug bounty program.
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 06/15/2023
 author: paolomatarazzo
 ms.author: paoloma
