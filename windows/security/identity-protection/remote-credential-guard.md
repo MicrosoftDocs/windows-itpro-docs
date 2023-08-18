@@ -18,7 +18,7 @@ appliesto:
 
 ## Overview
 
-Remote Credential Guard helps you protect your credentials over a Remote Desktop (RDP) connection by redirecting Kerberos requests back to the device that's requesting the connection. If the target device is compromised, your credentials aren't exposed because both credential and credential derivatives are never passed over the network to the target device. Remote Credential Guard also provides single sign-on experiences for Remote Desktop sessions.
+Remote Credential Guard helps protecting credentials over a Remote Desktop (RDP) connection by redirecting Kerberos requests back to the device that's requesting the connection. If the target device is compromised, the credentials aren't exposed because both credential and credential derivatives are never passed over the network to the target device. Remote Credential Guard also provides single sign-on experiences for Remote Desktop sessions.
 
 This article describes how to configure and use Remote Credential Guard.
 
@@ -101,7 +101,7 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 
 | Setting |
 |--------|
-| **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials`<ul><li>**Data type:** string</li>**Value:** `<enabled/>`</ul></li>|
+| - **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/CredentialsDelegation/RemoteHostAllowsDelegationOfNonExportableCredentials`<br>- **Data type:** string<br>- **Value:** `<enabled/>`|
 
 #### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
 
@@ -118,7 +118,7 @@ To configure devices using the registry, use the following settings:
 
 | Setting |
 |-|
-| **- Key path:** `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` <br>**- Key name:** `DisableRestrictedAdmin`<br>**- Type:** `REG_DWORD`<br>**- Value:** `0`|
+| - **Key path:** `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` <br>- **Key name:** `DisableRestrictedAdmin`<br>- **Type:** `REG_DWORD`<br>- **Value:** `0`|
 
 You can add this by running the following command from an elevated command prompt:
 
@@ -169,7 +169,7 @@ Alternatively, you can configure devices using a [custom policy][INT-3] with the
 
 | Setting |
 |--|
-|- **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/RestrictedRemoteAdministration`<br>- **Data type:** string<br>- **Value:** `<enabled/><data id=\"RestrictedRemoteAdministrationDrop\" value=\"2\"/>`<br>Possible values for `RestrictedRemoteAdministrationDrop` are:<br>- `0`: Disabled<br>- `1`: Require Restricted Admin<br>- `2`: Require Remote Credential Guard<br>- `3`: Restrict credential delegation |
+|- **OMA-URI:** `./Device/Vendor/MSFT/Policy/Config/ADMX_CredSsp/RestrictedRemoteAdministration`<br>- **Data type:** string<br>- **Value:** `<enabled/><data id=\"RestrictedRemoteAdministrationDrop\" value=\"2\"/>`<br><br>Possible values for `RestrictedRemoteAdministrationDrop` are:<br>- `0`: Disabled<br>- `1`: Require Restricted Admin<br>- `2`: Require Remote Credential Guard<br>- `3`: Restrict credential delegation |
 
 #### [:::image type="icon" source="../images/icons/group-policy.svg" border="false"::: **Group policy**](#tab/gpo)
 
