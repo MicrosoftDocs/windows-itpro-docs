@@ -27,8 +27,8 @@ Windows includes optional features that aren't installed by default, but you can
 
 1. In the Settings app, search for "optional" and select **Optional features**.
 
-  > [!TIP]
-  > You can also use the following shortcut to open it directly: [`ms-settings:optionalfeatures`](ms-settings:optionalfeatures).
+   > [!TIP]
+   > You can also use the following shortcut to open it directly: [`ms-settings:optionalfeatures`](ms-settings:optionalfeatures).
 
 1. To add a feature:
 
