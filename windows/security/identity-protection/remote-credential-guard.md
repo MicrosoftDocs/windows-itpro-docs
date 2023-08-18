@@ -119,7 +119,7 @@ To configure devices using the registry, use the following settings:
 
 | Setting |
 |-|
-|  Key path: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` <br>- Key name: `DisableRestrictedAdmin`<br>- Type: `REG_DWORD`<br>- Value:`0`|
+|  Key path: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` <li>Key name: `DisableRestrictedAdmin`</li><li>Type: `REG_DWORD`</li><li>Value:`0`</li>|
 
 You can add this by running the following command from an elevated command prompt:
 
@@ -185,7 +185,7 @@ Possible values for `RestrictedRemoteAdministrationDrop` are:
 
 | Group policy path | Group policy setting | Value |
 | - | - | - |
-| **Computer Configuration\Administrative Templates\System\Credentials Delegation** | Restrict delegation of credentials to remote servers| **Enabled** and in the dropdown, select one of the options:<br>&emsp;- **Restrict Credential Delegation**<br>&emsp;- **Require Remote Credential Guard**|
+| **Computer Configuration\Administrative Templates\System\Credentials Delegation** | Restrict delegation of credentials to remote servers| **Enabled** and in the dropdown, select one of the options:<li>**Restrict Credential Delegation**</li><li>**Require Remote Credential Guard**</li>|
 
 [!INCLUDE [gpo-settings-2](../../../includes/configure/gpo-settings-2.md)]
 
@@ -215,7 +215,8 @@ For more information about LAPS, see [What is Windows LAPS][LEARN-1].
 Here are some additional considerations for Remote Credential Guard:
 
 - Remote Credential Guard doesn't support compound authentication. For example, if you're trying to access a file server from a remote host that requires a device claim, access will be denied
-- Remote Credential Guard can be used only when connecting to a device that is joined to an Active Directory domain. It can't be used when connecting to remote devices joined to Azure Active Directory
+- Remote Credential Guard can be used only when connecting to a device that is joined to an Active Directory domain. It can't be used when connecting to remote devices joined to Azure Active Directory (Azure AD)
+- Remote Credentail Guard can be used from an Azure AD joined client to connect to an Active Directory joined remote host, as long as the client can authenticate using Kerberos
 - Remote Credential Guard only works with the RDP protocol
 - No credentials are sent to the target device, but the target device still acquires Kerberos Service Tickets on its own
 - The server and client must authenticate using Kerberos
