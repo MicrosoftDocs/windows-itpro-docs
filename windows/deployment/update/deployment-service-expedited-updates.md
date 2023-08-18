@@ -91,7 +91,7 @@ The following truncated response displays a **Catalog ID** of  `e317aa8a0455ca60
 ```
 
 The deployment service can display more information about updates that were released on or after January 2023. Using [product revision](/graph/api/resources/windowsupdates-productrevision) gives you additional information about the updates, such as the KB numbers, and the `MajorVersion.MinorVersion.BuildNumber.UpdateBuildRevision`. Windows 10 and 11 share the same major and minor versions, but have different build numbers. 
-
+<!--8092737-->
 Use the following to display the product revision information for the most recent quality update:
 
 ```msgraph-interactive
