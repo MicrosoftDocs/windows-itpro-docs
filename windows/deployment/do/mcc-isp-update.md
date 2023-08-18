@@ -3,8 +3,9 @@ title: Update or uninstall your cache node
 manager: aaroncz
 description: How to update or uninstall your cache node
 ms.prod: windows-client
-author: amymzhou
-ms.author: amyzhou
+ms.author: carmenf
+author: cmknox
+ms.reviewer: mstewart
 ms.topic: article
 ms.date: 12/31/2017
 ms.technology: itpro-updates

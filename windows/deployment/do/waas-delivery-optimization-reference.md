@@ -10,6 +10,7 @@ ms.topic: reference
 ms.technology: itpro-updates
 ms.date: 07/31/2023
 ms.collection: tier3
+ms.reviewer: mstewart
 ---
 
 # Delivery Optimization reference

@@ -1,6 +1,7 @@
 ---
-author: mestew
-ms.author: mstewart
+ms.author: carmenf
+author: cmknox
+ms.reviewer: mstewart
 manager: aaroncz
 ms.prod: windows-client
 ms.technology: itpro-deploy

@@ -12,6 +12,7 @@ ms.collection:
   - highpri
 ms.topic: overview
 ms.date: 12/31/2017
+ms.reviewer: mstewart
 ---
 
 # What is Delivery Optimization?
