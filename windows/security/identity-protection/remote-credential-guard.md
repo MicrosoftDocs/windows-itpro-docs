@@ -153,7 +153,6 @@ To configure your clients, you can use:
 
 - Microsoft Intune/MDM
 - Group policy
-- Registry
 
 [!INCLUDE [tab-intro](../../../includes/configure/tab-intro.md)]
 
@@ -190,27 +189,6 @@ Possible values for `RestrictedRemoteAdministrationDrop` are:
 
 [!INCLUDE [gpo-settings-2](../../../includes/configure/gpo-settings-2.md)]
 
-#### [:::image type="icon" source="../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
-
-To configure devices using the registry, use the following settings:
-
-| Setting |
-|--|
-|- Key path: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CredentialsDelegation` <br>- Key name: `AllowProtectedCreds`<br>- Type: `REG_DWORD`<br>- Value: `1`|
-
-You can use the following command from an elevated command prompt:
-
-```cmd
-reg.exe add HKLM\SOFTWARE\Policies\Microsoft\Windows\CredentialsDelegation /v AllowProtectedCreds /d 1 /t REG_DWORD
-```
-
-Possible values for `AllowProtectedCreds` are:
-
-- `0`: Disabled
-- `1`: Require Restricted Admin
-- `2`: Require Remote Credential Guard
-- `3`: Restrict credential delegation
-
 ---
 
 ## Use Remote Credential Guard
@@ -241,6 +219,7 @@ Here are some additional considerations for Remote Credential Guard:
 - Remote Credential Guard only works with the RDP protocol
 - No credentials are sent to the target device, but the target device still acquires Kerberos Service Tickets on its own
 - The server and client must authenticate using Kerberos
+- Remote Credential Guard is only supported for direct connections to the target machines and not for the ones via Remote Desktop Connection Broker and Remote Desktop Gateway
 
 <!--links-->
 
