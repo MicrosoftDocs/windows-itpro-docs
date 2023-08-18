@@ -118,7 +118,7 @@ To configure devices using the registry, use the following settings:
 
 | Setting |
 |-|
-|  Key path: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` <ul><li>Key name: `DisableRestrictedAdmin`</li><li>Type: `REG_DWORD`</li><li>Value: `0`</li></ul>|
+| **- Key path:** `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` <br>**- Key name:** `DisableRestrictedAdmin`<br>**- Type:** `REG_DWORD`<br>**- Value:** `0`|
 
 You can add this by running the following command from an elevated command prompt:
 
@@ -163,6 +163,10 @@ To configure your clients, you can use:
 |--|--|--|
 | **Administrative Templates > System > Credentials Delegation** | Restrict delegation of credentials to remote servers | Select **Enabled** and in the dropdown, select one of the options:<ul><li>**Restrict Credential Delegation**</li><li>**Require Remote Credential Guard**</li></ul> |
 
+| Setting |
+|--|
+| **- Category:** Administrative Templates > System > Credentials Delegation<br>**- Setting name:** Restrict delegation of credentials to remote servers<br>**- Value:** Select **Enabled** and in the dropdown, select one of the options:<br>**Restrict Credential Delegation**<br>**Require Remote Credential Guard**|
+
 [!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
 
 Alternatively, you can configure devices using a [custom policy][INT-3] with the [Policy CSP][CSP-2].
@@ -189,6 +193,8 @@ Possible values for `RestrictedRemoteAdministrationDrop` are:
 [!INCLUDE [gpo-settings-2](../../../includes/configure/gpo-settings-2.md)]
 
 #### [:::image type="icon" source="../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
+
+Not documented.
 
 ---
 
