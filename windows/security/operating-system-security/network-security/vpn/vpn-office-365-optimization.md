@@ -1,7 +1,7 @@
 ---
 title: Optimize Microsoft 365 traffic for remote workers with the Windows VPN client
 description: Learn how to optimize Microsoft 365 traffic for remote workers with the Windows VPN client
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/03/2023
 ---
 # Optimize Microsoft 365 traffic for remote workers with the Windows VPN client
