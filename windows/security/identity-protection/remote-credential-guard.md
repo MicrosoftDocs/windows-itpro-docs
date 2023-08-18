@@ -5,7 +5,7 @@ ms.collection:
 - highpri
 - tier1
 ms.topic: how-to
-ms.date: 08/16/2023
+ms.date: 08/18/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
@@ -188,6 +188,8 @@ Possible values for `RestrictedRemoteAdministrationDrop` are:
 | **Computer Configuration\Administrative Templates\System\Credentials Delegation** | Restrict delegation of credentials to remote servers| **Enabled** and in the dropdown, select one of the options:<li>**Restrict Credential Delegation**</li><li>**Require Remote Credential Guard**</li>|
 
 [!INCLUDE [gpo-settings-2](../../../includes/configure/gpo-settings-2.md)]
+
+#### [:::image type="icon" source="../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
 
 ---
 
