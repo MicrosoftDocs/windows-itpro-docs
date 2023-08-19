@@ -6,7 +6,8 @@ author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
 manager: aaroncz
-ms.topic: article
+ms.topic: reference
+ms.collection: must-keep
 ms.technology: itpro-configure
 ms.date: 12/31/2017
 ---
