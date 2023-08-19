@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.collection:
 - highpri
 - tier3
+- must-keep
 ms.date: 04/06/2023
 ms.topic: article
 ---

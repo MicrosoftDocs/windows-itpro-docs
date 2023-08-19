@@ -224,7 +224,7 @@
         "operating-system-security/device-management/windows-security-configuration-framework/*.md": "jmunck"
       },
       "ms.collection": {
-        "application-security/application-control/windows-defender-application-control/**/*.md": "tier3",
+        "application-security/application-control/windows-defender-application-control/**/*.md": [ "tier3", "must-keep" ],
         "identity-protection/hello-for-business/*.md": "tier1",
         "information-protection/pluton/*.md": "tier1",
         "information-protection/tpm/*.md": "tier1",
