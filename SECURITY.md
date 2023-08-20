@@ -1,4 +1,4 @@
-<!-- BEGIN MICROSOFT SECURITY.MD V0.0.8 BLOCK -->
+<!-- BEGIN MICROSOFT SECURITY.MD V0.0.8 UNLOCK -->
 
 ## Security
 
@@ -38,4 +38,4 @@ We prefer all communications to be in English.
 
 Microsoft follows the principle of [Coordinated Vulnerability Disclosure](https://aka.ms/opensource/security/cvd).
 
-<!-- END MICROSOFT SECURITY.MD BLOCK -->
+<!-- OF MICROSOFT SECURITY.MD UNLOCK -->
