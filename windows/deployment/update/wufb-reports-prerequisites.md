@@ -6,7 +6,7 @@ ms.prod: windows-client
 author: mestew
 ms.author: mstewart
 ms.topic: article
-ms.date: 06/27/2023
+ms.date: 08/21/2023
 ms.technology: itpro-updates
 ---
 
@@ -68,7 +68,7 @@ Device names don't appear in Windows Update for Business reports unless you indi
 
 Microsoft is committed to providing you with effective controls over your data and ongoing transparency into our data handling practices.  For more information about data handling and privacy for Windows diagnostic data, see [Configure Windows diagnostic data in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization) and [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#services-that-rely-on-enhanced-diagnostic-data).
 
-## Data transmission requirements
+## Endpoints
 
 <!--Using include for endpoint access requirements-->
 [!INCLUDE [Endpoints for Windows Update for Business reports](./includes/wufb-reports-endpoints.md)]
