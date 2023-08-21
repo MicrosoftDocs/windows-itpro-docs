@@ -57,7 +57,7 @@ To enable Credential Guard, you can use:
 > [!TIP]
 > You can also configure Credential Guard by using an *account protection* profile in endpoint security. For more information, see [Account protection policy settings for endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security-account-protection-profile-settings).
 
-Alternatively, you can configure devices using a [custom policy][INT-1] with the [DeviceGuard Policy CSP][CSP-1].\
+Alternatively, you can configure devices using a [custom policy][INT-1] with the [DeviceGuard Policy CSP][CSP-1].
 
 | Setting |
 |--------|
@@ -248,7 +248,7 @@ If Credential Guard is enabled via Intune and without UEFI Lock, disabling the s
 
 [!INCLUDE [intune-settings-catalog-2](../../../../includes/configure/intune-settings-catalog-2.md)]
 
-Alternatively, you can configure devices using a [custom policy][INT-1] with the [DeviceGuard Policy CSP][CSP-1].\
+Alternatively, you can configure devices using a [custom policy][INT-1] with the [DeviceGuard Policy CSP][CSP-1].
 
 | Setting |
 |--------|
@@ -352,12 +352,11 @@ If VBS is enabled via Intune and without UEFI Lock, disabling the same policy se
 
 [!INCLUDE [intune-settings-catalog-2](../../../../includes/configure/intune-settings-catalog-2.md)]
 
-Alternatively, you can configure devices using a [custom policy][INT-1] with the [DeviceGuard Policy CSP][CSP-1].\
-The policy settings is located under: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/`.
+Alternatively, you can configure devices using a [custom policy][INT-1] with the [DeviceGuard Policy CSP][CSP-1].
 
 | Setting |
-|--|
-| **Setting name**: Credential Guard Configuration<br>**Policy CSP name**: `EnableVirtualizationBasedSecurity` |
+|--------|
+| **Setting name**: Turn On Virtualization Based Security<br>**OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/EnableVirtualizationBasedSecurity`<br>**Data type**: int<br>**Value:** `0`|
 
 Once the policy is applied, restart the device.
 
