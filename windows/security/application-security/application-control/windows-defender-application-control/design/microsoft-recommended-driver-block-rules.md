@@ -1206,7 +1206,7 @@ To check that the policy was successfully applied on your computer:
     <FileAttrib ID="ID_FILEATTRIB_BS_MEM" FriendlyName="BSMEM64_W10 FileAttribute" FileName="BSMEM64_W10.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="10.0.1806.2201" />
     <FileAttrib ID="ID_FILEATTRIB_BSMI" FriendlyName="" FileName="BSMI.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.0.3" />
     <FileAttrib ID="ID_FILEATTRIB_CORSAIRLLACCESS" FriendlyName="CorsairLLAccess\000547560fea0dd4b477eb28bf781ea67bf83c748945ce8923f90fdd14eb7a4b FileAttribute" FileName="Corsair LL Access" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.23.65535" />
-    <FileAttrib ID="ID_FILEATTRIB_CPUZ_DRIVER" FriendlyName="" FileName="cpuz.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.4.3" />
+    <FileAttrib ID="ID_FILEATTRIB_CPUZ_DRIVER" FriendlyName="CPUID cpuz.sys\1e16a01ef44e4c56e87abfbe03b2989b0391b172c3ec162783ad640be65ab961" FileName="cpuz.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_CTIIO" FriendlyName="MicSys CtiIo\2121a2bb8ebbf2e6e82c782b6f3c6b7904f686aa495def25cf1cf52a42e16109 FileAttribute" FileName="CtiIo64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.1.23.0405" />
     <FileAttrib ID="ID_FILEATTRIB_DRIVER7" FriendlyName="Asus driver7.sys\1beb15c90dcf7a5234ed077833a0a3e900969b60be1d04fcebce0a9f8994bdbb FileAttribute" FileName="Driver7" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
     <FileAttrib ID="ID_FILEATTRIB_EIO64" FriendlyName="ASUS EIO64.sys\1fac3fab8ea2137a7e81a26de121187bf72e7d16ffa3e9aec3886e2376d3c718 FileAttribute" FileName="EIO.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535"/>
@@ -1232,7 +1232,7 @@ To check that the policy was successfully applied on your computer:
     <FileAttrib ID="ID_FILEATTRIB_LV_DIAG" FriendlyName="LenovoDiagnosticsDriver FileAttribute" FileName="LenovoDiagnosticsDriver.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="2.0.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_LV561V64" FriendlyName="LV561V64 LogiTech FileAttribute" FileName="Lv561av.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_MONITOR" FriendlyName="IOBit Monitor.sys FileAttribute" FileName="Monitor.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="15.0.0.2" />
-    <FileAttrib ID="ID_FILEATTRIB_MSIO" FriendlyName="MicSys MSIO\0f035948848432bc243704041739e49b528f35c82a5be922d9e3b8a4c44398ff FileAttribute" FileName="MsIo64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.3.23.0405" />
+    <FileAttrib ID="ID_FILEATTRIB_MSIO" FriendlyName="MicSys MSIO\0f035948848432bc243704041739e49b528f35c82a5be922d9e3b8a4c44398ff FileAttribute" FileName="MsIo64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_MTCBSV64" FriendlyName="mtcBSv64.sys FileAttribute" FileName="mtcBSv64.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="21.2.0.0" />
     <FileAttrib ID="ID_FILEATTRIB_MYDRIVERS" FriendlyName="mydrivers.sys FileAttribute" FileName="mydrivers.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="65535.65535.65535.65535" />
     <FileAttrib ID="ID_FILEATTRIB_NCHGBIOS2X64" FriendlyName="" FileName="NCHGBIOS2x64.SYS" MinimumFileVersion="0.0.0.0" MaximumFileVersion="4.2.4.0" />
@@ -1993,6 +1993,16 @@ To check that the policy was successfully applied on your computer:
       <CertPublisher Value="HP Inc." />
       <FileAttribRef RuleID="ID_FILEATTRIB_ETDSUPPORT" />
     </Signer>
+    <Signer ID="ID_SIGNER_CPUZ_1" Name="DigiCert EV Code Signing CA">
+      <CertRoot Type="TBS" Value="2D54C16A8F8B69CCDEA48D0603C132F547A5CF75" />
+      <CertPublisher Value="CPUID S.A.R.L.U." />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CPUZ_DRIVER" />
+    </Signer>
+    <Signer ID="ID_SIGNER_CPUZ_2" Name="Certum Extended Validation Code Signing 2021 CA">
+      <CertRoot Type="TBS" Value="56F431D13FD6F7974905196A6367D252A955C5FE34DB1E48CFA3EB569707809D63DE4A0FF8FEF57BE69C23284D9144EA" />
+      <CertPublisher Value="CPUID" />
+      <FileAttribRef RuleID="ID_FILEATTRIB_CPUZ_DRIVER" />
+    </Signer>
     <Signer ID="ID_SIGNER_BAOJI" Name="VeriSign Class 3 Code Signing 2010 CA - Baoji zhihengtaiye co.,ltd">
       <CertRoot Type="TBS" Value="ED37AD43BC52426943019F77F35ED1A6B063B5B7" />
     </Signer>
@@ -2118,6 +2128,8 @@ To check that the policy was successfully applied on your computer:
           <DeniedSigner SignerId="ID_SIGNER_CAPCOM" />
           <DeniedSigner SignerId="ID_SIGNER_CHEAT_ENGINE" />
           <DeniedSigner SignerId="ID_SIGNER_COMODO_IQVW" />
+          <DeniedSigner SignerId="ID_SIGNER_CPUZ_1" />
+          <DeniedSigner SignerId="ID_SIGNER_CPUZ_2" />
           <DeniedSigner SignerId="ID_SIGNER_DIGICERT_EV" />
           <DeniedSigner SignerId="ID_SIGNER_ELBY" />
           <DeniedSigner SignerId="ID_SIGNER_ENE" />
