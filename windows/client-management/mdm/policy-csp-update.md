@@ -4,7 +4,7 @@ description: Learn more about the Update Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -25,6 +25,7 @@ ms.topic: reference
 Update CSP policies are listed below based on the group policy area:
 
 - [Windows Insider Preview](#windows-insider-preview)
+  - [AllowOptionalContent](#allowoptionalcontent)
   - [ConfigureDeadlineNoAutoRebootForFeatureUpdates](#configuredeadlinenoautorebootforfeatureupdates)
   - [ConfigureDeadlineNoAutoRebootForQualityUpdates](#configuredeadlinenoautorebootforqualityupdates)
 - [Manage updates offered from Windows Update](#manage-updates-offered-from-windows-update)
@@ -106,13 +107,72 @@ Update CSP policies are listed below based on the group policy area:
 
 ## Windows Insider Preview
 
+<!-- AllowOptionalContent-Begin -->
+### AllowOptionalContent
+
+<!-- AllowOptionalContent-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- AllowOptionalContent-Applicability-End -->
+
+<!-- AllowOptionalContent-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/Update/AllowOptionalContent
+```
+<!-- AllowOptionalContent-OmaUri-End -->
+
+<!-- AllowOptionalContent-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy enables devices to get offered optional updates and users interact with the 'Get the latest updates as soon as they're available' toggle on the Windows Update Settings page.
+<!-- AllowOptionalContent-Description-End -->
+
+<!-- AllowOptionalContent-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- AllowOptionalContent-Editable-End -->
+
+<!-- AllowOptionalContent-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- AllowOptionalContent-DFProperties-End -->
+
+<!-- AllowOptionalContent-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Device doesn't receive optional updates. |
+| 1 | Device receives optional updates and user can install from WU Settings page. |
+| 2 | Device receives optional updates and install them as soon as they're available. |
+<!-- AllowOptionalContent-AllowedValues-End -->
+
+<!-- AllowOptionalContent-GpMapping-Begin -->
+**Group policy mapping**:
+
+| Name | Value |
+|:--|:--|
+| Name | AllowOptionalContent |
+| Path | WindowsUpdate > AT > WindowsComponents > WindowsUpdateCat |
+<!-- AllowOptionalContent-GpMapping-End -->
+
+<!-- AllowOptionalContent-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- AllowOptionalContent-Examples-End -->
+
+<!-- AllowOptionalContent-End -->
+
 <!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Begin -->
 ### ConfigureDeadlineNoAutoRebootForFeatureUpdates
 
 <!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-Applicability-End -->
 
 <!-- ConfigureDeadlineNoAutoRebootForFeatureUpdates-OmaUri-Begin -->
@@ -171,7 +231,7 @@ When enabled, devices won't automatically restart outside of active hours until 
 <!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-Applicability-End -->
 
 <!-- ConfigureDeadlineNoAutoRebootForQualityUpdates-OmaUri-Begin -->
@@ -232,7 +292,7 @@ When enabled, devices won't automatically restart outside of active hours until 
 <!-- AllowNonMicrosoftSignedUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowNonMicrosoftSignedUpdate-Applicability-End -->
 
 <!-- AllowNonMicrosoftSignedUpdate-OmaUri-Begin -->
@@ -281,7 +341,7 @@ Allows the IT admin to manage whether Automatic Updates accepts updates signed b
 <!-- AutomaticMaintenanceWakeUp-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- AutomaticMaintenanceWakeUp-Applicability-End -->
 
 <!-- AutomaticMaintenanceWakeUp-OmaUri-Begin -->
@@ -350,7 +410,7 @@ The maintenance wakeup policy specifies if Automatic Maintenance should make a w
 <!-- BranchReadinessLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- BranchReadinessLevel-Applicability-End -->
 
 <!-- BranchReadinessLevel-OmaUri-Begin -->
@@ -393,6 +453,7 @@ Pause Updates | To prevent Feature Updates from being offered to the device, you
 | 16 (Default) | {0x10} - Semi-annual Channel (Targeted). Device gets all applicable feature updates from Semi-annual Channel (Targeted). |
 | 32 | 2 {0x20} - Semi-annual Channel. Device gets feature updates from Semi-annual Channel. (*Only applicable to releases prior to 1903, for all releases 1903 and after the Semi-annual Channel and Semi-annual Channel (Targeted) into a single Semi-annual Channel with a value of 16). |
 | 64 | {0x40} - Release Preview of Quality Updates Only. |
+| 128 | {0x80} - Canary Channel. |
 <!-- BranchReadinessLevel-AllowedValues-End -->
 
 <!-- BranchReadinessLevel-GpMapping-Begin -->
@@ -420,7 +481,7 @@ Pause Updates | To prevent Feature Updates from being offered to the device, you
 <!-- DeferFeatureUpdatesPeriodInDays-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DeferFeatureUpdatesPeriodInDays-Applicability-End -->
 
 <!-- DeferFeatureUpdatesPeriodInDays-OmaUri-Begin -->
@@ -479,7 +540,7 @@ Pause Updates | To prevent Feature Updates from being offered to the device, you
 <!-- DeferQualityUpdatesPeriodInDays-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DeferQualityUpdatesPeriodInDays-Applicability-End -->
 
 <!-- DeferQualityUpdatesPeriodInDays-OmaUri-Begin -->
@@ -542,7 +603,7 @@ If you disable or don't configure this policy, Windows Update won't alter its be
 <!-- DisableWUfBSafeguards-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763.1490] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1110] and later <br> ✅ Windows 10, version 1909 [10.0.18363.1110] and later <br> ✅ Windows 10, version 2004 [10.0.19041.546] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763.1490] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1110] and later <br> ✅ Windows 10, version 1909 [10.0.18363.1110] and later <br> ✅ Windows 10, version 2004 [10.0.19041.546] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DisableWUfBSafeguards-Applicability-End -->
 
 <!-- DisableWUfBSafeguards-OmaUri-Begin -->
@@ -601,7 +662,7 @@ IT admins can, if necessary, opt devices out of safeguard protections using this
 <!-- ExcludeWUDriversInQualityUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- ExcludeWUDriversInQualityUpdate-Applicability-End -->
 
 <!-- ExcludeWUDriversInQualityUpdate-OmaUri-Begin -->
@@ -666,7 +727,7 @@ If you disable or don't configure this policy, Windows Update will include updat
 <!-- ManagePreviewBuilds-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ManagePreviewBuilds-Applicability-End -->
 
 <!-- ManagePreviewBuilds-OmaUri-Begin -->
@@ -750,7 +811,7 @@ If you disable or don't configure this policy, Windows Update won't offer you an
 <!-- PauseFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- PauseFeatureUpdates-Applicability-End -->
 
 <!-- PauseFeatureUpdates-OmaUri-Begin -->
@@ -818,7 +879,7 @@ Pause Updates | To prevent Feature Updates from being offered to the device, you
 <!-- PauseFeatureUpdatesStartTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PauseFeatureUpdatesStartTime-Applicability-End -->
 
 <!-- PauseFeatureUpdatesStartTime-OmaUri-Begin -->
@@ -871,7 +932,7 @@ Specifies the date and time when the IT admin wants to start pausing the Feature
 <!-- PauseQualityUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- PauseQualityUpdates-Applicability-End -->
 
 <!-- PauseQualityUpdates-OmaUri-Begin -->
@@ -943,7 +1004,7 @@ If you disable or don't configure this policy, Windows Update won't alter its be
 <!-- PauseQualityUpdatesStartTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PauseQualityUpdatesStartTime-Applicability-End -->
 
 <!-- PauseQualityUpdatesStartTime-OmaUri-Begin -->
@@ -998,7 +1059,7 @@ Specifies the date and time when the IT admin wants to start pausing the Quality
 <!-- ProductVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1202] and later <br> ✅ Windows 10, version 2009 [10.0.19042.1202] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1202] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ProductVersion-Applicability-End -->
 
 <!-- ProductVersion-OmaUri-Begin -->
@@ -1066,7 +1127,7 @@ Supported value type is a string containing a Windows product. For example, "Win
 <!-- TargetReleaseVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134.1488] and later <br> ✅ Windows 10, version 1809 [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 [10.0.18362.836] and later <br> ✅ Windows 10, version 1909 [10.0.18363.836] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134.1488] and later <br> ✅ Windows 10, version 1809 [10.0.17763.1217] and later <br> ✅ Windows 10, version 1903 [10.0.18362.836] and later <br> ✅ Windows 10, version 1909 [10.0.18363.836] and later <br> ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- TargetReleaseVersion-Applicability-End -->
 
 <!-- TargetReleaseVersion-OmaUri-Begin -->
@@ -1130,7 +1191,7 @@ Supported value type is a string containing Windows version number. For example,
 <!-- AllowUpdateService-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowUpdateService-Applicability-End -->
 
 <!-- AllowUpdateService-OmaUri-Begin -->
@@ -1195,7 +1256,7 @@ Specifies whether the device could use Microsoft Update, Windows Server Update S
 <!-- DetectionFrequency-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- DetectionFrequency-Applicability-End -->
 
 <!-- DetectionFrequency-OmaUri-Begin -->
@@ -1267,7 +1328,7 @@ This policy should be enabled only when [UpdateServiceUrl](#updateserviceurl) is
 <!-- DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240.18818] and later <br> ✅ Windows 10, version 1607 [10.0.14393.4169] and later <br> ✅ Windows 10, version 1703 [10.0.15063.2108] and later <br> ✅ Windows 10, version 1709 [10.0.16299.2166] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1967] and later <br> ✅ Windows 10, version 1809 [10.0.17763.1697] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1316] and later <br> ✅ Windows 10, version 1909 [10.0.18363.1316] and later <br> ✅ Windows 10, version 2004 [10.0.19041.746] and later <br> ✅ Windows 10, version 2009 [10.0.19042.746] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240.18818] and later <br> ✅ Windows 10, version 1607 [10.0.14393.4169] and later <br> ✅ Windows 10, version 1703 [10.0.15063.2108] and later <br> ✅ Windows 10, version 1709 [10.0.16299.2166] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1967] and later <br> ✅ Windows 10, version 1809 [10.0.17763.1697] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1316] and later <br> ✅ Windows 10, version 1909 [10.0.18363.1316] and later <br> ✅ Windows 10, version 2004 [10.0.19041.746] and later <br> ✅ Windows 10, version 2009 [10.0.19042.746] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection-Applicability-End -->
 
 <!-- DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection-OmaUri-Begin -->
@@ -1331,7 +1392,7 @@ This policy should be enabled only when [UpdateServiceUrl](#updateserviceurl) is
 <!-- FillEmptyContentUrls-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- FillEmptyContentUrls-Applicability-End -->
 
 <!-- FillEmptyContentUrls-OmaUri-Begin -->
@@ -1397,7 +1458,7 @@ Allows Windows Update Agent to determine the download URL when it's missing from
 <!-- SetPolicyDrivenUpdateSourceForDriverUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForDriverUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForDriverUpdates-OmaUri-Begin -->
@@ -1466,7 +1527,7 @@ Configure this policy to specify whether to receive **Windows Driver Updates** f
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForFeatureUpdates-OmaUri-Begin -->
@@ -1535,7 +1596,7 @@ Configure this policy to specify whether to receive **Windows Feature Updates** 
 <!-- SetPolicyDrivenUpdateSourceForOtherUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForOtherUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForOtherUpdates-OmaUri-Begin -->
@@ -1604,7 +1665,7 @@ Configure this policy to specify whether to receive **Other Updates** from Windo
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-Applicability-End -->
 
 <!-- SetPolicyDrivenUpdateSourceForQualityUpdates-OmaUri-Begin -->
@@ -1673,7 +1734,7 @@ Configure this policy to specify whether to receive **Windows Quality Updates** 
 <!-- SetProxyBehaviorForUpdateDetection-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240.18696] and later <br> ✅ Windows 10, version 1607 [10.0.14393.3930] and later <br> ✅ Windows 10, version 1703 [10.0.15063.2500] and later <br> ✅ Windows 10, version 1709 [10.0.16299.2107] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1726] and later <br> ✅ Windows 10, version 1809 [10.0.17763.1457] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1082] and later <br> ✅ Windows 10, version 1909 [10.0.18363.1082] and later <br> ✅ Windows 10, version 2004 [10.0.19041.508] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240.18696] and later <br> ✅ Windows 10, version 1607 [10.0.14393.3930] and later <br> ✅ Windows 10, version 1703 [10.0.15063.2500] and later <br> ✅ Windows 10, version 1709 [10.0.16299.2107] and later <br> ✅ Windows 10, version 1803 [10.0.17134.1726] and later <br> ✅ Windows 10, version 1809 [10.0.17763.1457] and later <br> ✅ Windows 10, version 1903 [10.0.18362.1082] and later <br> ✅ Windows 10, version 1909 [10.0.18363.1082] and later <br> ✅ Windows 10, version 2004 [10.0.19041.508] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- SetProxyBehaviorForUpdateDetection-Applicability-End -->
 
 <!-- SetProxyBehaviorForUpdateDetection-OmaUri-Begin -->
@@ -1741,7 +1802,7 @@ This policy setting doesn't impact those customers who have, per Microsoft recom
 <!-- UpdateServiceUrl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- UpdateServiceUrl-Applicability-End -->
 
 <!-- UpdateServiceUrl-OmaUri-Begin -->
@@ -1816,7 +1877,7 @@ The following list shows the supported values:
 <!-- UpdateServiceUrlAlternate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- UpdateServiceUrlAlternate-Applicability-End -->
 
 <!-- UpdateServiceUrlAlternate-OmaUri-Begin -->
@@ -1874,7 +1935,7 @@ Specifies an alternate intranet server to host updates from Microsoft Update. Yo
 <!-- ActiveHoursEnd-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- ActiveHoursEnd-Applicability-End -->
 
 <!-- ActiveHoursEnd-OmaUri-Begin -->
@@ -1942,7 +2003,7 @@ Note that the default max active hours range is 18 hours from the active hours s
 <!-- ActiveHoursMaxRange-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- ActiveHoursMaxRange-Applicability-End -->
 
 <!-- ActiveHoursMaxRange-OmaUri-Begin -->
@@ -2001,7 +2062,7 @@ If you disable or don't configure this policy, the default max active hours rang
 <!-- ActiveHoursStart-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- ActiveHoursStart-Applicability-End -->
 
 <!-- ActiveHoursStart-OmaUri-Begin -->
@@ -2069,7 +2130,7 @@ Note that the default max active hours range is 18 hours from the active hours s
 <!-- AllowAutoUpdate-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- AllowAutoUpdate-Applicability-End -->
 
 <!-- AllowAutoUpdate-OmaUri-Begin -->
@@ -2079,41 +2140,8 @@ Note that the default max active hours range is 18 hours from the active hours s
 <!-- AllowAutoUpdate-OmaUri-End -->
 
 <!-- AllowAutoUpdate-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.
-
-> [!NOTE]
-> This policy doesn't apply to %WINDOWS_ARM_VERSION_6_2%.
-
-This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:
-
-2 = Notify before downloading and installing any updates.
-
-When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
-
-3 = (Default setting) Download the updates automatically and notify when they're ready to be installed.
-
-Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
-
-4 = Automatically download updates and install them on the schedule specified below.
-
-When "Automatic" is selected as the scheduled install time, Windows will automatically check, download, and install updates. The device will reboot as per Windows default settings unless configured by group policy. (Applies to Windows 10, version 1809 and higher)
-
-Specify the schedule using the options in the Group Policy Setting. For version 1709 and above, there is an additional choice of limiting updating to a weekly, bi-weekly, or monthly occurrence. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart).
-
-On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer isn't in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
-
-5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option hasn't been carried over to any Win 10 Versions)
-
-With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators won't be allowed to disable the configuration for Automatic Updates.
-
-7 = Notify for install and notify for restart. (Windows Server only)
-
-With this option from Windows Server 2016, applicable only to Server SKU devices, local administrators will be allowed to use Windows Update to proceed with installations or reboots manually.
-
-If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.
-
-If the status is set to Not Configured, use of Automatic Updates isn't specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
+<!-- Description-Source-DDF -->
+Enables the IT admin to manage automatic update behavior to scan, download, and install updates. Important. This option should be used only for systems under regulatory compliance, as you won't get security updates as well. If the policy isn't configured, end-users get the default behavior (Auto install and restart).
 <!-- AllowAutoUpdate-Description-End -->
 
 <!-- AllowAutoUpdate-Editable-Begin -->
@@ -2169,7 +2197,7 @@ If the status is set to Not Configured, use of Automatic Updates isn't specified
 <!-- AllowAutoWindowsUpdateDownloadOverMeteredNetwork-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- AllowAutoWindowsUpdateDownloadOverMeteredNetwork-Applicability-End -->
 
 <!-- AllowAutoWindowsUpdateDownloadOverMeteredNetwork-OmaUri-Begin -->
@@ -2235,7 +2263,7 @@ This policy is accessible through the Update setting in the user interface or Gr
 <!-- AllowMUUpdateService-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AllowMUUpdateService-Applicability-End -->
 
 <!-- AllowMUUpdateService-OmaUri-Begin -->
@@ -2245,41 +2273,8 @@ This policy is accessible through the Update setting in the user interface or Gr
 <!-- AllowMUUpdateService-OmaUri-End -->
 
 <!-- AllowMUUpdateService-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.
-
-> [!NOTE]
-> This policy doesn't apply to %WINDOWS_ARM_VERSION_6_2%.
-
-This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:
-
-2 = Notify before downloading and installing any updates.
-
-When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
-
-3 = (Default setting) Download the updates automatically and notify when they're ready to be installed.
-
-Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
-
-4 = Automatically download updates and install them on the schedule specified below.
-
-When "Automatic" is selected as the scheduled install time, Windows will automatically check, download, and install updates. The device will reboot as per Windows default settings unless configured by group policy. (Applies to Windows 10, version 1809 and higher)
-
-Specify the schedule using the options in the Group Policy Setting. For version 1709 and above, there is an additional choice of limiting updating to a weekly, bi-weekly, or monthly occurrence. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart).
-
-On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer isn't in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
-
-5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option hasn't been carried over to any Win 10 Versions)
-
-With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators won't be allowed to disable the configuration for Automatic Updates.
-
-7 = Notify for install and notify for restart. (Windows Server only)
-
-With this option from Windows Server 2016, applicable only to Server SKU devices, local administrators will be allowed to use Windows Update to proceed with installations or reboots manually.
-
-If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.
-
-If the status is set to Not Configured, use of Automatic Updates isn't specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
+<!-- Description-Source-DDF -->
+Allows the IT admin to manage whether to scan for app updates from Microsoft Update.
 <!-- AllowMUUpdateService-Description-End -->
 
 <!-- AllowMUUpdateService-Editable-Begin -->
@@ -2338,7 +2333,7 @@ If the status is set to Not Configured, use of Automatic Updates isn't specified
 <!-- AllowTemporaryEnterpriseFeatureControl-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621.1344] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621.1344] and later |
 <!-- AllowTemporaryEnterpriseFeatureControl-Applicability-End -->
 
 <!-- AllowTemporaryEnterpriseFeatureControl-OmaUri-Begin -->
@@ -2409,7 +2404,7 @@ Features introduced via servicing (outside of the annual feature update) are off
 <!-- ConfigureDeadlineForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigureDeadlineForFeatureUpdates-Applicability-End -->
 
 <!-- ConfigureDeadlineForFeatureUpdates-OmaUri-Begin -->
@@ -2468,7 +2463,7 @@ Number of days before feature updates are installed on devices automatically reg
 <!-- ConfigureDeadlineForQualityUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigureDeadlineForQualityUpdates-Applicability-End -->
 
 <!-- ConfigureDeadlineForQualityUpdates-OmaUri-Begin -->
@@ -2527,7 +2522,7 @@ Number of days before quality updates are installed on devices automatically reg
 <!-- ConfigureDeadlineGracePeriod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigureDeadlineGracePeriod-Applicability-End -->
 
 <!-- ConfigureDeadlineGracePeriod-OmaUri-Begin -->
@@ -2582,7 +2577,7 @@ Minimum number of days from update installation until restarts occur automatical
 <!-- ConfigureDeadlineGracePeriodForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763.1852] and later <br> ✅ Windows 10, version 1909 [10.0.18363.1474] and later <br> ✅ Windows 10, version 2004 [10.0.19041.906] and later <br> ✅ Windows 10, version 2009 [10.0.19042.906] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763.1852] and later <br> ✅ Windows 10, version 1909 [10.0.18363.1474] and later <br> ✅ Windows 10, version 2004 [10.0.19041.906] and later <br> ✅ Windows 10, version 2009 [10.0.19042.906] and later <br> ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- ConfigureDeadlineGracePeriodForFeatureUpdates-Applicability-End -->
 
 <!-- ConfigureDeadlineGracePeriodForFeatureUpdates-OmaUri-Begin -->
@@ -2637,7 +2632,7 @@ Minimum number of days from update installation until restarts occur automatical
 <!-- ConfigureDeadlineNoAutoReboot-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1903 [10.0.18362] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1903 [10.0.18362] and later |
 <!-- ConfigureDeadlineNoAutoReboot-Applicability-End -->
 
 <!-- ConfigureDeadlineNoAutoReboot-OmaUri-Begin -->
@@ -2700,7 +2695,7 @@ When enabled, devices won't automatically restart outside of active hours until 
 <!-- ConfigureFeatureUpdateUninstallPeriod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- ConfigureFeatureUpdateUninstallPeriod-Applicability-End -->
 
 <!-- ConfigureFeatureUpdateUninstallPeriod-OmaUri-Begin -->
@@ -2741,7 +2736,7 @@ Enable enterprises/IT admin to configure feature update uninstall period.
 <!-- NoUpdateNotificationsDuringActiveHours-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- NoUpdateNotificationsDuringActiveHours-Applicability-End -->
 
 <!-- NoUpdateNotificationsDuringActiveHours-OmaUri-Begin -->
@@ -2814,7 +2809,7 @@ If you select "Apply only during active hours" in conjunction with Option 1 or 2
 <!-- ScheduledInstallDay-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ScheduledInstallDay-Applicability-End -->
 
 <!-- ScheduledInstallDay-OmaUri-Begin -->
@@ -2824,41 +2819,8 @@ If you select "Apply only during active hours" in conjunction with Option 1 or 2
 <!-- ScheduledInstallDay-OmaUri-End -->
 
 <!-- ScheduledInstallDay-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.
-
-> [!NOTE]
-> This policy doesn't apply to %WINDOWS_ARM_VERSION_6_2%.
-
-This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:
-
-2 = Notify before downloading and installing any updates.
-
-When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
-
-3 = (Default setting) Download the updates automatically and notify when they're ready to be installed.
-
-Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
-
-4 = Automatically download updates and install them on the schedule specified below.
-
-When "Automatic" is selected as the scheduled install time, Windows will automatically check, download, and install updates. The device will reboot as per Windows default settings unless configured by group policy. (Applies to Windows 10, version 1809 and higher)
-
-Specify the schedule using the options in the Group Policy Setting. For version 1709 and above, there is an additional choice of limiting updating to a weekly, bi-weekly, or monthly occurrence. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart).
-
-On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer isn't in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
-
-5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option hasn't been carried over to any Win 10 Versions)
-
-With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators won't be allowed to disable the configuration for Automatic Updates.
-
-7 = Notify for install and notify for restart. (Windows Server only)
-
-With this option from Windows Server 2016, applicable only to Server SKU devices, local administrators will be allowed to use Windows Update to proceed with installations or reboots manually.
-
-If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.
-
-If the status is set to Not Configured, use of Automatic Updates isn't specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
+<!-- Description-Source-DDF -->
+Enables the IT admin to schedule the day of the update installation. The data type is a integer.
 <!-- ScheduledInstallDay-Description-End -->
 
 <!-- ScheduledInstallDay-Editable-Begin -->
@@ -2918,7 +2880,7 @@ If the status is set to Not Configured, use of Automatic Updates isn't specified
 <!-- ScheduledInstallEveryWeek-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ScheduledInstallEveryWeek-Applicability-End -->
 
 <!-- ScheduledInstallEveryWeek-OmaUri-Begin -->
@@ -2928,41 +2890,8 @@ If the status is set to Not Configured, use of Automatic Updates isn't specified
 <!-- ScheduledInstallEveryWeek-OmaUri-End -->
 
 <!-- ScheduledInstallEveryWeek-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.
-
-> [!NOTE]
-> This policy doesn't apply to %WINDOWS_ARM_VERSION_6_2%.
-
-This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:
-
-2 = Notify before downloading and installing any updates.
-
-When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
-
-3 = (Default setting) Download the updates automatically and notify when they're ready to be installed.
-
-Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
-
-4 = Automatically download updates and install them on the schedule specified below.
-
-When "Automatic" is selected as the scheduled install time, Windows will automatically check, download, and install updates. The device will reboot as per Windows default settings unless configured by group policy. (Applies to Windows 10, version 1809 and higher)
-
-Specify the schedule using the options in the Group Policy Setting. For version 1709 and above, there is an additional choice of limiting updating to a weekly, bi-weekly, or monthly occurrence. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart).
-
-On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer isn't in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
-
-5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option hasn't been carried over to any Win 10 Versions)
-
-With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators won't be allowed to disable the configuration for Automatic Updates.
-
-7 = Notify for install and notify for restart. (Windows Server only)
-
-With this option from Windows Server 2016, applicable only to Server SKU devices, local administrators will be allowed to use Windows Update to proceed with installations or reboots manually.
-
-If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.
-
-If the status is set to Not Configured, use of Automatic Updates isn't specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
+<!-- Description-Source-DDF -->
+Enables the IT admin to schedule the update installation on the every week. Value type is integer.
 <!-- ScheduledInstallEveryWeek-Description-End -->
 
 <!-- ScheduledInstallEveryWeek-Editable-Begin -->
@@ -3016,7 +2945,7 @@ If the status is set to Not Configured, use of Automatic Updates isn't specified
 <!-- ScheduledInstallFirstWeek-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ScheduledInstallFirstWeek-Applicability-End -->
 
 <!-- ScheduledInstallFirstWeek-OmaUri-Begin -->
@@ -3026,41 +2955,8 @@ If the status is set to Not Configured, use of Automatic Updates isn't specified
 <!-- ScheduledInstallFirstWeek-OmaUri-End -->
 
 <!-- ScheduledInstallFirstWeek-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.
-
-> [!NOTE]
-> This policy doesn't apply to %WINDOWS_ARM_VERSION_6_2%.
-
-This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:
-
-2 = Notify before downloading and installing any updates.
-
-When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
-
-3 = (Default setting) Download the updates automatically and notify when they're ready to be installed.
-
-Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
-
-4 = Automatically download updates and install them on the schedule specified below.
-
-When "Automatic" is selected as the scheduled install time, Windows will automatically check, download, and install updates. The device will reboot as per Windows default settings unless configured by group policy. (Applies to Windows 10, version 1809 and higher)
-
-Specify the schedule using the options in the Group Policy Setting. For version 1709 and above, there is an additional choice of limiting updating to a weekly, bi-weekly, or monthly occurrence. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart).
-
-On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer isn't in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
-
-5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option hasn't been carried over to any Win 10 Versions)
-
-With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators won't be allowed to disable the configuration for Automatic Updates.
-
-7 = Notify for install and notify for restart. (Windows Server only)
-
-With this option from Windows Server 2016, applicable only to Server SKU devices, local administrators will be allowed to use Windows Update to proceed with installations or reboots manually.
-
-If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.
-
-If the status is set to Not Configured, use of Automatic Updates isn't specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
+<!-- Description-Source-DDF -->
+Enables the IT admin to schedule the update installation on the first week of the month. Value type is integer.
 <!-- ScheduledInstallFirstWeek-Description-End -->
 
 <!-- ScheduledInstallFirstWeek-Editable-Begin -->
@@ -3123,7 +3019,7 @@ These policies are not exclusive and can be used in any combination. Together wi
 <!-- ScheduledInstallFourthWeek-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ScheduledInstallFourthWeek-Applicability-End -->
 
 <!-- ScheduledInstallFourthWeek-OmaUri-Begin -->
@@ -3133,41 +3029,8 @@ These policies are not exclusive and can be used in any combination. Together wi
 <!-- ScheduledInstallFourthWeek-OmaUri-End -->
 
 <!-- ScheduledInstallFourthWeek-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.
-
-> [!NOTE]
-> This policy doesn't apply to %WINDOWS_ARM_VERSION_6_2%.
-
-This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:
-
-2 = Notify before downloading and installing any updates.
-
-When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
-
-3 = (Default setting) Download the updates automatically and notify when they're ready to be installed.
-
-Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
-
-4 = Automatically download updates and install them on the schedule specified below.
-
-When "Automatic" is selected as the scheduled install time, Windows will automatically check, download, and install updates. The device will reboot as per Windows default settings unless configured by group policy. (Applies to Windows 10, version 1809 and higher)
-
-Specify the schedule using the options in the Group Policy Setting. For version 1709 and above, there is an additional choice of limiting updating to a weekly, bi-weekly, or monthly occurrence. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart).
-
-On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer isn't in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
-
-5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option hasn't been carried over to any Win 10 Versions)
-
-With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators won't be allowed to disable the configuration for Automatic Updates.
-
-7 = Notify for install and notify for restart. (Windows Server only)
-
-With this option from Windows Server 2016, applicable only to Server SKU devices, local administrators will be allowed to use Windows Update to proceed with installations or reboots manually.
-
-If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.
-
-If the status is set to Not Configured, use of Automatic Updates isn't specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
+<!-- Description-Source-DDF -->
+Enables the IT admin to schedule the update installation on the fourth week of the month. Value type is integer.
 <!-- ScheduledInstallFourthWeek-Description-End -->
 
 <!-- ScheduledInstallFourthWeek-Editable-Begin -->
@@ -3230,7 +3093,7 @@ These policies are not exclusive and can be used in any combination. Together wi
 <!-- ScheduledInstallSecondWeek-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ScheduledInstallSecondWeek-Applicability-End -->
 
 <!-- ScheduledInstallSecondWeek-OmaUri-Begin -->
@@ -3240,41 +3103,8 @@ These policies are not exclusive and can be used in any combination. Together wi
 <!-- ScheduledInstallSecondWeek-OmaUri-End -->
 
 <!-- ScheduledInstallSecondWeek-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.
-
-> [!NOTE]
-> This policy doesn't apply to %WINDOWS_ARM_VERSION_6_2%.
-
-This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:
-
-2 = Notify before downloading and installing any updates.
-
-When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
-
-3 = (Default setting) Download the updates automatically and notify when they're ready to be installed.
-
-Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
-
-4 = Automatically download updates and install them on the schedule specified below.
-
-When "Automatic" is selected as the scheduled install time, Windows will automatically check, download, and install updates. The device will reboot as per Windows default settings unless configured by group policy. (Applies to Windows 10, version 1809 and higher)
-
-Specify the schedule using the options in the Group Policy Setting. For version 1709 and above, there is an additional choice of limiting updating to a weekly, bi-weekly, or monthly occurrence. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart).
-
-On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer isn't in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
-
-5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option hasn't been carried over to any Win 10 Versions)
-
-With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators won't be allowed to disable the configuration for Automatic Updates.
-
-7 = Notify for install and notify for restart. (Windows Server only)
-
-With this option from Windows Server 2016, applicable only to Server SKU devices, local administrators will be allowed to use Windows Update to proceed with installations or reboots manually.
-
-If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.
-
-If the status is set to Not Configured, use of Automatic Updates isn't specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
+<!-- Description-Source-DDF -->
+Enables the IT admin to schedule the update installation on the second week of the month. Value type is integer.
 <!-- ScheduledInstallSecondWeek-Description-End -->
 
 <!-- ScheduledInstallSecondWeek-Editable-Begin -->
@@ -3337,7 +3167,7 @@ These policies are not exclusive and can be used in any combination. Together wi
 <!-- ScheduledInstallThirdWeek-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- ScheduledInstallThirdWeek-Applicability-End -->
 
 <!-- ScheduledInstallThirdWeek-OmaUri-Begin -->
@@ -3347,41 +3177,8 @@ These policies are not exclusive and can be used in any combination. Together wi
 <!-- ScheduledInstallThirdWeek-OmaUri-End -->
 
 <!-- ScheduledInstallThirdWeek-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.
-
-> [!NOTE]
-> This policy doesn't apply to %WINDOWS_ARM_VERSION_6_2%.
-
-This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:
-
-2 = Notify before downloading and installing any updates.
-
-When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
-
-3 = (Default setting) Download the updates automatically and notify when they're ready to be installed.
-
-Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
-
-4 = Automatically download updates and install them on the schedule specified below.
-
-When "Automatic" is selected as the scheduled install time, Windows will automatically check, download, and install updates. The device will reboot as per Windows default settings unless configured by group policy. (Applies to Windows 10, version 1809 and higher)
-
-Specify the schedule using the options in the Group Policy Setting. For version 1709 and above, there is an additional choice of limiting updating to a weekly, bi-weekly, or monthly occurrence. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart).
-
-On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer isn't in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
-
-5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option hasn't been carried over to any Win 10 Versions)
-
-With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators won't be allowed to disable the configuration for Automatic Updates.
-
-7 = Notify for install and notify for restart. (Windows Server only)
-
-With this option from Windows Server 2016, applicable only to Server SKU devices, local administrators will be allowed to use Windows Update to proceed with installations or reboots manually.
-
-If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.
-
-If the status is set to Not Configured, use of Automatic Updates isn't specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
+<!-- Description-Source-DDF -->
+Enables the IT admin to schedule the update installation on the third week of the month. Value type is integer.
 <!-- ScheduledInstallThirdWeek-Description-End -->
 
 <!-- ScheduledInstallThirdWeek-Editable-Begin -->
@@ -3444,7 +3241,7 @@ These policies are not exclusive and can be used in any combination. Together wi
 <!-- ScheduledInstallTime-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- ScheduledInstallTime-Applicability-End -->
 
 <!-- ScheduledInstallTime-OmaUri-Begin -->
@@ -3454,41 +3251,8 @@ These policies are not exclusive and can be used in any combination. Together wi
 <!-- ScheduledInstallTime-OmaUri-End -->
 
 <!-- ScheduledInstallTime-Description-Begin -->
-<!-- Description-Source-ADMX -->
-Specifies whether this computer will receive security updates and other important downloads through the Windows automatic updating service.
-
-> [!NOTE]
-> This policy doesn't apply to %WINDOWS_ARM_VERSION_6_2%.
-
-This setting lets you specify whether automatic updates are enabled on this computer. If the service is enabled, you must select one of the four options in the Group Policy Setting:
-
-2 = Notify before downloading and installing any updates.
-
-When Windows finds updates that apply to this computer, users will be notified that updates are ready to be downloaded. After going to Windows Update, users can download and install any available updates.
-
-3 = (Default setting) Download the updates automatically and notify when they're ready to be installed.
-
-Windows finds updates that apply to the computer and downloads them in the background (the user isn't notified or interrupted during this process). When the downloads are complete, users will be notified that they're ready to install. After going to Windows Update, users can install them.
-
-4 = Automatically download updates and install them on the schedule specified below.
-
-When "Automatic" is selected as the scheduled install time, Windows will automatically check, download, and install updates. The device will reboot as per Windows default settings unless configured by group policy. (Applies to Windows 10, version 1809 and higher)
-
-Specify the schedule using the options in the Group Policy Setting. For version 1709 and above, there is an additional choice of limiting updating to a weekly, bi-weekly, or monthly occurrence. If no schedule is specified, the default schedule for all installations will be every day at 3:00 AM. If any updates require a restart to complete the installation, Windows will restart the computer automatically. (If a user is signed in to the computer when Windows is ready to restart, the user will be notified and given the option to delay the restart).
-
-On %WINDOWS_CLIENT_VERSION_6_2% and later, you can set updates to install during automatic maintenance instead of a specific schedule. Automatic maintenance will install updates when the computer isn't in use and avoid doing so when the computer is running on battery power. If automatic maintenance is unable to install updates for 2 days, Windows Update will install updates right away. Users will then be notified about an upcoming restart, and that restart will only take place if there is no potential for accidental data loss.
-
-5 = Allow local administrators to select the configuration mode that Automatic Updates should notify and install updates. (This option hasn't been carried over to any Win 10 Versions)
-
-With this option, local administrators will be allowed to use the Windows Update control panel to select a configuration option of their choice. Local administrators won't be allowed to disable the configuration for Automatic Updates.
-
-7 = Notify for install and notify for restart. (Windows Server only)
-
-With this option from Windows Server 2016, applicable only to Server SKU devices, local administrators will be allowed to use Windows Update to proceed with installations or reboots manually.
-
-If the status for this policy is set to Disabled, any updates that are available on Windows Update must be downloaded and installed manually. To do this, search for Windows Update using Start.
-
-If the status is set to Not Configured, use of Automatic Updates isn't specified at the Group Policy level. However, an administrator can still configure Automatic Updates through Control Panel.
+<!-- Description-Source-DDF -->
+ the IT admin to schedule the time of the update installation. The data type is a integer. Supported values are 0-23, where 0 = 12 AM and 23 = 11 PM. The default value is 3.
 <!-- ScheduledInstallTime-Description-End -->
 
 <!-- ScheduledInstallTime-Editable-Begin -->
@@ -3536,7 +3300,7 @@ If the status is set to Not Configured, use of Automatic Updates isn't specified
 <!-- SetDisablePauseUXAccess-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- SetDisablePauseUXAccess-Applicability-End -->
 
 <!-- SetDisablePauseUXAccess-OmaUri-Begin -->
@@ -3601,7 +3365,7 @@ Once enabled user access to pause updates is removed.
 <!-- SetDisableUXWUAccess-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- SetDisableUXWUAccess-Applicability-End -->
 
 <!-- SetDisableUXWUAccess-OmaUri-Begin -->
@@ -3666,7 +3430,7 @@ If you enable this setting user access to Windows Update scan, download and inst
 <!-- SetEDURestart-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SetEDURestart-Applicability-End -->
 
 <!-- SetEDURestart-OmaUri-Begin -->
@@ -3739,7 +3503,7 @@ These settings are designed for education devices that remain in carts overnight
 <!-- UpdateNotificationLevel-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- UpdateNotificationLevel-Applicability-End -->
 
 <!-- UpdateNotificationLevel-OmaUri-Begin -->
@@ -3813,7 +3577,7 @@ If you select "Apply only during active hours" in conjunction with Option 1 or 2
 <!-- AutoRestartDeadlinePeriodInDays-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- AutoRestartDeadlinePeriodInDays-Applicability-End -->
 
 <!-- AutoRestartDeadlinePeriodInDays-OmaUri-Begin -->
@@ -3878,7 +3642,7 @@ Enabling either of the following two policies will override the above policy:
 <!-- AutoRestartDeadlinePeriodInDaysForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- AutoRestartDeadlinePeriodInDaysForFeatureUpdates-Applicability-End -->
 
 <!-- AutoRestartDeadlinePeriodInDaysForFeatureUpdates-OmaUri-Begin -->
@@ -3943,7 +3707,7 @@ Enabling either of the following two policies will override the above policy:
 <!-- AutoRestartNotificationSchedule-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AutoRestartNotificationSchedule-Applicability-End -->
 
 <!-- AutoRestartNotificationSchedule-OmaUri-Begin -->
@@ -4013,7 +3777,7 @@ If you disable or don't configure this policy, the default period will be used.
 <!-- AutoRestartRequiredNotificationDismissal-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- AutoRestartRequiredNotificationDismissal-Applicability-End -->
 
 <!-- AutoRestartRequiredNotificationDismissal-OmaUri-Begin -->
@@ -4080,7 +3844,7 @@ If you disable or don't configure this policy, the default method will be used.
 <!-- DeferUpdatePeriod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DeferUpdatePeriod-Applicability-End -->
 
 <!-- DeferUpdatePeriod-OmaUri-Begin -->
@@ -4167,7 +3931,7 @@ Other/can't defer:
 <!-- DeferUpgradePeriod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DeferUpgradePeriod-Applicability-End -->
 
 <!-- DeferUpgradePeriod-OmaUri-Begin -->
@@ -4224,7 +3988,7 @@ Allows IT Admins to specify additional upgrade delays for up to 8 months. Suppor
 <!-- DisableDualScan-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DisableDualScan-Applicability-End -->
 
 <!-- DisableDualScan-OmaUri-Begin -->
@@ -4294,7 +4058,7 @@ If this policy is disabled or not configured, then the Windows Update client may
 <!-- EngagedRestartDeadline-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- EngagedRestartDeadline-Applicability-End -->
 
 <!-- EngagedRestartDeadline-OmaUri-Begin -->
@@ -4364,7 +4128,7 @@ Enabling any of the following policies will override the above policy:
 <!-- EngagedRestartDeadlineForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- EngagedRestartDeadlineForFeatureUpdates-Applicability-End -->
 
 <!-- EngagedRestartDeadlineForFeatureUpdates-OmaUri-Begin -->
@@ -4434,7 +4198,7 @@ Enabling any of the following policies will override the above policy:
 <!-- EngagedRestartSnoozeSchedule-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- EngagedRestartSnoozeSchedule-Applicability-End -->
 
 <!-- EngagedRestartSnoozeSchedule-OmaUri-Begin -->
@@ -4504,7 +4268,7 @@ Enabling any of the following policies will override the above policy:
 <!-- EngagedRestartSnoozeScheduleForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- EngagedRestartSnoozeScheduleForFeatureUpdates-Applicability-End -->
 
 <!-- EngagedRestartSnoozeScheduleForFeatureUpdates-OmaUri-Begin -->
@@ -4574,7 +4338,7 @@ Enabling any of the following policies will override the above policy:
 <!-- EngagedRestartTransitionSchedule-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- EngagedRestartTransitionSchedule-Applicability-End -->
 
 <!-- EngagedRestartTransitionSchedule-OmaUri-Begin -->
@@ -4644,7 +4408,7 @@ Enabling any of the following policies will override the above policy:
 <!-- EngagedRestartTransitionScheduleForFeatureUpdates-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1809 [10.0.17763] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1809 [10.0.17763] and later |
 <!-- EngagedRestartTransitionScheduleForFeatureUpdates-Applicability-End -->
 
 <!-- EngagedRestartTransitionScheduleForFeatureUpdates-OmaUri-Begin -->
@@ -4714,7 +4478,7 @@ Enabling any of the following policies will override the above policy:
 <!-- IgnoreMOAppDownloadLimit-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IgnoreMOAppDownloadLimit-Applicability-End -->
 
 <!-- IgnoreMOAppDownloadLimit-OmaUri-Begin -->
@@ -4774,7 +4538,7 @@ To validate this policy:
 <!-- IgnoreMOUpdateDownloadLimit-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- IgnoreMOUpdateDownloadLimit-Applicability-End -->
 
 <!-- IgnoreMOUpdateDownloadLimit-OmaUri-Begin -->
@@ -4834,7 +4598,7 @@ To validate this policy:
 <!-- PauseDeferrals-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- PauseDeferrals-Applicability-End -->
 
 <!-- PauseDeferrals-OmaUri-Begin -->
@@ -4895,7 +4659,7 @@ To validate this policy:
 <!-- PhoneUpdateRestrictions-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- PhoneUpdateRestrictions-Applicability-End -->
 
 <!-- PhoneUpdateRestrictions-OmaUri-Begin -->
@@ -4936,7 +4700,7 @@ This policy is deprecated. Use Update/RequireUpdateApproval instead.
 <!-- RequireDeferUpgrade-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- RequireDeferUpgrade-Applicability-End -->
 
 <!-- RequireDeferUpgrade-OmaUri-Begin -->
@@ -4997,7 +4761,7 @@ This policy is deprecated. Use Update/RequireUpdateApproval instead.
 <!-- RequireUpdateApproval-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- RequireUpdateApproval-Applicability-End -->
 
 <!-- RequireUpdateApproval-OmaUri-Begin -->
@@ -5048,7 +4812,7 @@ This policy is deprecated. Use Update/RequireUpdateApproval instead.
 <!-- ScheduleImminentRestartWarning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- ScheduleImminentRestartWarning-Applicability-End -->
 
 <!-- ScheduleImminentRestartWarning-OmaUri-Begin -->
@@ -5118,7 +4882,7 @@ If you disable or don't configure this policy, the default notification behavior
 <!-- ScheduleRestartWarning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- ScheduleRestartWarning-Applicability-End -->
 
 <!-- ScheduleRestartWarning-OmaUri-Begin -->
@@ -5190,7 +4954,7 @@ If you disable or don't configure this policy, the default notification behavior
 <!-- SetAutoRestartNotificationDisable-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- SetAutoRestartNotificationDisable-Applicability-End -->
 
 <!-- SetAutoRestartNotificationDisable-OmaUri-Begin -->

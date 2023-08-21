@@ -4,7 +4,7 @@ description: Learn more about the MixedReality Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/11/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -18,6 +18,8 @@ ms.topic: reference
 
 [!INCLUDE [ADMX-backed CSP tip](includes/mdm-admx-csp-note.md)]
 
+[!INCLUDE [Windows Insider tip](includes/mdm-insider-csp-note.md)]
+
 <!-- MixedReality-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
 These policies are only supported on [Microsoft HoloLens 2](/hololens/hololens2-hardware). They're not supported on HoloLens (first gen) Development Edition or HoloLens (first gen) Commercial Suite devices.
@@ -29,7 +31,7 @@ These policies are only supported on [Microsoft HoloLens 2](/hololens/hololens2-
 <!-- AADGroupMembershipCacheValidityInDays-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AADGroupMembershipCacheValidityInDays-Applicability-End -->
 
 <!-- AADGroupMembershipCacheValidityInDays-OmaUri-Begin -->
@@ -83,7 +85,7 @@ Steps to use this policy correctly:
 <!-- AllowCaptivePortalBeforeLogon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- AllowCaptivePortalBeforeLogon-Applicability-End -->
 
 <!-- AllowCaptivePortalBeforeLogon-OmaUri-Begin -->
@@ -133,7 +135,7 @@ This opt-in policy can help with the setup of new devices in new areas or new us
 <!-- AllowLaunchUriInSingleAppKiosk-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- AllowLaunchUriInSingleAppKiosk-Applicability-End -->
 
 <!-- AllowLaunchUriInSingleAppKiosk-OmaUri-Begin -->
@@ -185,7 +187,7 @@ For more information on the Launcher API, see [Launcher Class (Windows.System) -
 <!-- AutoLogonUser-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- AutoLogonUser-Applicability-End -->
 
 <!-- AutoLogonUser-OmaUri-Begin -->
@@ -234,7 +236,7 @@ On a device where you configure this policy, the user specified in the policy ne
 <!-- AutomaticDisplayAdjustment-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- AutomaticDisplayAdjustment-Applicability-End -->
 
 <!-- AutomaticDisplayAdjustment-OmaUri-Begin -->
@@ -283,7 +285,7 @@ This policy controls if the HoloLens displays will be automatically adjusted for
 <!-- BrightnessButtonDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- BrightnessButtonDisabled-Applicability-End -->
 
 <!-- BrightnessButtonDisabled-OmaUri-Begin -->
@@ -332,7 +334,7 @@ This policy setting controls if pressing the brightness button changes the brigh
 <!-- ConfigureMovingPlatform-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- ConfigureMovingPlatform-Applicability-End -->
 
 <!-- ConfigureMovingPlatform-OmaUri-Begin -->
@@ -383,7 +385,7 @@ For more information, see [Moving platform mode on low dynamic motion moving pla
 <!-- ConfigureNtpClient-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- ConfigureNtpClient-Applicability-End -->
 
 <!-- ConfigureNtpClient-OmaUri-Begin -->
@@ -494,7 +496,7 @@ The following XML string is an example of the value for this policy:
 <!-- DisallowNetworkConnectivityPassivePolling-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- DisallowNetworkConnectivityPassivePolling-Applicability-End -->
 
 <!-- DisallowNetworkConnectivityPassivePolling-OmaUri-Begin -->
@@ -538,13 +540,160 @@ Windows Network Connectivity Status Indicator may get a false positive internet-
 
 <!-- DisallowNetworkConnectivityPassivePolling-End -->
 
+<!-- EnableStartMenuSingleHandGesture-Begin -->
+## EnableStartMenuSingleHandGesture
+
+<!-- EnableStartMenuSingleHandGesture-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- EnableStartMenuSingleHandGesture-Applicability-End -->
+
+<!-- EnableStartMenuSingleHandGesture-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MixedReality/EnableStartMenuSingleHandGesture
+```
+<!-- EnableStartMenuSingleHandGesture-OmaUri-End -->
+
+<!-- EnableStartMenuSingleHandGesture-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting controls if pinching your thumb and index finger, while looking at the Start icon on your wrist, to open the Start menu is enabled or not.
+<!-- EnableStartMenuSingleHandGesture-Description-End -->
+
+<!-- EnableStartMenuSingleHandGesture-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableStartMenuSingleHandGesture-Editable-End -->
+
+<!-- EnableStartMenuSingleHandGesture-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- EnableStartMenuSingleHandGesture-DFProperties-End -->
+
+<!-- EnableStartMenuSingleHandGesture-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Don't allow pinching your thumb and index finger, while looking at the Start icon on your wrist, to open the Start menu. |
+| 1 (Default) | Allow pinching your thumb and index finger, while looking at the Start icon on your wrist, to open the Start menu. |
+<!-- EnableStartMenuSingleHandGesture-AllowedValues-End -->
+
+<!-- EnableStartMenuSingleHandGesture-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableStartMenuSingleHandGesture-Examples-End -->
+
+<!-- EnableStartMenuSingleHandGesture-End -->
+
+<!-- EnableStartMenuVoiceCommand-Begin -->
+## EnableStartMenuVoiceCommand
+
+<!-- EnableStartMenuVoiceCommand-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- EnableStartMenuVoiceCommand-Applicability-End -->
+
+<!-- EnableStartMenuVoiceCommand-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MixedReality/EnableStartMenuVoiceCommand
+```
+<!-- EnableStartMenuVoiceCommand-OmaUri-End -->
+
+<!-- EnableStartMenuVoiceCommand-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting controls if using voice commands to open the Start menu is enabled or not.
+<!-- EnableStartMenuVoiceCommand-Description-End -->
+
+<!-- EnableStartMenuVoiceCommand-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableStartMenuVoiceCommand-Editable-End -->
+
+<!-- EnableStartMenuVoiceCommand-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- EnableStartMenuVoiceCommand-DFProperties-End -->
+
+<!-- EnableStartMenuVoiceCommand-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Using voice commands to open the Start menu is disabled. |
+| 1 (Default) | Using voice commands to open the Start menu is enabled. |
+<!-- EnableStartMenuVoiceCommand-AllowedValues-End -->
+
+<!-- EnableStartMenuVoiceCommand-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableStartMenuVoiceCommand-Examples-End -->
+
+<!-- EnableStartMenuVoiceCommand-End -->
+
+<!-- EnableStartMenuWristTap-Begin -->
+## EnableStartMenuWristTap
+
+<!-- EnableStartMenuWristTap-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- EnableStartMenuWristTap-Applicability-End -->
+
+<!-- EnableStartMenuWristTap-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MixedReality/EnableStartMenuWristTap
+```
+<!-- EnableStartMenuWristTap-OmaUri-End -->
+
+<!-- EnableStartMenuWristTap-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting controls if tapping the Star icon on your wrist to open the Start menu is enabled or not.
+<!-- EnableStartMenuWristTap-Description-End -->
+
+<!-- EnableStartMenuWristTap-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- EnableStartMenuWristTap-Editable-End -->
+
+<!-- EnableStartMenuWristTap-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 1 |
+<!-- EnableStartMenuWristTap-DFProperties-End -->
+
+<!-- EnableStartMenuWristTap-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 | Don't allow tapping the Start icon on your wrist to open the Start menu. |
+| 1 (Default) | Allow tapping the Start icon on your wrist to open the Start menu. |
+<!-- EnableStartMenuWristTap-AllowedValues-End -->
+
+<!-- EnableStartMenuWristTap-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- EnableStartMenuWristTap-Examples-End -->
+
+<!-- EnableStartMenuWristTap-End -->
+
 <!-- EyeTrackingCalibrationPrompt-Begin -->
 ## EyeTrackingCalibrationPrompt
 
 <!-- EyeTrackingCalibrationPrompt-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- EyeTrackingCalibrationPrompt-Applicability-End -->
 
 <!-- EyeTrackingCalibrationPrompt-OmaUri-Begin -->
@@ -593,7 +742,7 @@ This policy controls when a new person uses HoloLens device, if HoloLens should 
 <!-- FallbackDiagnostics-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- FallbackDiagnostics-Applicability-End -->
 
 <!-- FallbackDiagnostics-OmaUri-Begin -->
@@ -643,7 +792,7 @@ This policy setting controls, when and if diagnostic logs can be collected using
 <!-- HeadTrackingMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- HeadTrackingMode-Applicability-End -->
 
 <!-- HeadTrackingMode-OmaUri-Begin -->
@@ -690,7 +839,7 @@ This policy configures behavior of HUP to determine, which algorithm to use for 
 <!-- ManualDownDirectionDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- ManualDownDirectionDisabled-Applicability-End -->
 
 <!-- ManualDownDirectionDisabled-OmaUri-Begin -->
@@ -740,7 +889,7 @@ When the system automatically determines the down direction, it's using the meas
 <!-- MicrophoneDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- MicrophoneDisabled-Applicability-End -->
 
 <!-- MicrophoneDisabled-OmaUri-Begin -->
@@ -789,7 +938,7 @@ This policy setting controls whether microphone on HoloLens 2 is disabled or not
 <!-- NtpClientEnabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- NtpClientEnabled-Applicability-End -->
 
 <!-- NtpClientEnabled-OmaUri-Begin -->
@@ -852,13 +1001,160 @@ The following example XML string shows the value to enable this policy:
 
 <!-- NtpClientEnabled-End -->
 
+<!-- PreferLogonAsOtherUser-Begin -->
+## PreferLogonAsOtherUser
+
+<!-- PreferLogonAsOtherUser-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- PreferLogonAsOtherUser-Applicability-End -->
+
+<!-- PreferLogonAsOtherUser-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MixedReality/PreferLogonAsOtherUser
+```
+<!-- PreferLogonAsOtherUser-OmaUri-End -->
+
+<!-- PreferLogonAsOtherUser-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy configures whether the Sign-In App should prefer showing Other User panel to user.
+<!-- PreferLogonAsOtherUser-Description-End -->
+
+<!-- PreferLogonAsOtherUser-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- PreferLogonAsOtherUser-Editable-End -->
+
+<!-- PreferLogonAsOtherUser-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- PreferLogonAsOtherUser-DFProperties-End -->
+
+<!-- PreferLogonAsOtherUser-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Disabled. |
+| 1 | Enabled. |
+<!-- PreferLogonAsOtherUser-AllowedValues-End -->
+
+<!-- PreferLogonAsOtherUser-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- PreferLogonAsOtherUser-Examples-End -->
+
+<!-- PreferLogonAsOtherUser-End -->
+
+<!-- RequireStartIconHold-Begin -->
+## RequireStartIconHold
+
+<!-- RequireStartIconHold-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- RequireStartIconHold-Applicability-End -->
+
+<!-- RequireStartIconHold-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MixedReality/RequireStartIconHold
+```
+<!-- RequireStartIconHold-OmaUri-End -->
+
+<!-- RequireStartIconHold-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting controls if it's require that the Start icon to be pressed for 2 seconds to open the Start menu.
+<!-- RequireStartIconHold-Description-End -->
+
+<!-- RequireStartIconHold-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RequireStartIconHold-Editable-End -->
+
+<!-- RequireStartIconHold-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- RequireStartIconHold-DFProperties-End -->
+
+<!-- RequireStartIconHold-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Don't require the Start icon to be pressed for 2 seconds. |
+| 1 | Require the Start icon to be pressed for 2 seconds. |
+<!-- RequireStartIconHold-AllowedValues-End -->
+
+<!-- RequireStartIconHold-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RequireStartIconHold-Examples-End -->
+
+<!-- RequireStartIconHold-End -->
+
+<!-- RequireStartIconVisible-Begin -->
+## RequireStartIconVisible
+
+<!-- RequireStartIconVisible-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- RequireStartIconVisible-Applicability-End -->
+
+<!-- RequireStartIconVisible-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MixedReality/RequireStartIconVisible
+```
+<!-- RequireStartIconVisible-OmaUri-End -->
+
+<!-- RequireStartIconVisible-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy setting controls if it's required that the Start icon to be looked at when you tap it to open the Start menu.
+<!-- RequireStartIconVisible-Description-End -->
+
+<!-- RequireStartIconVisible-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- RequireStartIconVisible-Editable-End -->
+
+<!-- RequireStartIconVisible-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- RequireStartIconVisible-DFProperties-End -->
+
+<!-- RequireStartIconVisible-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 0 (Default) | Don't require the Start icon to be looked at when you tap it. |
+| 1 | Require the Start icon to be looked at when you tap it. |
+<!-- RequireStartIconVisible-AllowedValues-End -->
+
+<!-- RequireStartIconVisible-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- RequireStartIconVisible-Examples-End -->
+
+<!-- RequireStartIconVisible-End -->
+
 <!-- SkipCalibrationDuringSetup-Begin -->
 ## SkipCalibrationDuringSetup
 
 <!-- SkipCalibrationDuringSetup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- SkipCalibrationDuringSetup-Applicability-End -->
 
 <!-- SkipCalibrationDuringSetup-OmaUri-Begin -->
@@ -909,7 +1205,7 @@ This policy configures whether the device will take the user through the eye tra
 <!-- SkipTrainingDuringSetup-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- SkipTrainingDuringSetup-Applicability-End -->
 
 <!-- SkipTrainingDuringSetup-OmaUri-Begin -->
@@ -959,7 +1255,7 @@ It skips the training experience of interactions with the hummingbird and Start 
 <!-- VisitorAutoLogon-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ [10.0.20348] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ [10.0.20348] and later |
 <!-- VisitorAutoLogon-Applicability-End -->
 
 <!-- VisitorAutoLogon-OmaUri-Begin -->
@@ -1008,7 +1304,7 @@ This policy controls whether a visitor user will be automatically logged in. Vis
 <!-- VolumeButtonDisabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 10, version 2004 [10.0.19041] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041] and later |
 <!-- VolumeButtonDisabled-Applicability-End -->
 
 <!-- VolumeButtonDisabled-OmaUri-Begin -->

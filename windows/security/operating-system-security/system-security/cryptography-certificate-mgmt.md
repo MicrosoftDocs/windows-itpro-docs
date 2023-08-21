@@ -2,7 +2,7 @@
 title: Cryptography and Certificate Management
 description: Get an overview of cryptography and certificate management in Windows
 ms.topic: conceptual
-ms.date: 09/07/2021
+ms.date: 08/11/2023
 ms.reviewer: skhadeer, raverma
 ---
 

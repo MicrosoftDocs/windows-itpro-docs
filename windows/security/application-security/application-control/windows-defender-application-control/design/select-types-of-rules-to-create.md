@@ -2,7 +2,7 @@
 title: Understand Windows Defender Application Control (WDAC) policy rules and file rules
 description: Learn how WDAC policy rules and file rules can control your Windows 10 and Windows 11 computers.
 ms.localizationpriority: medium
-ms.date: 06/07/2023
+ms.date: 08/11/2023
 ms.topic: article
 ---
 
@@ -32,7 +32,7 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 | **3 Enabled:Audit Mode (Default)** | Instructs WDAC to log information about applications, binaries, and scripts that would have been blocked, if the policy was enforced. You can use this option to identify the potential impact of your WDAC policy, and use the audit events to refine the policy before enforcement. To enforce a WDAC policy, delete this option. | No |
 | **4 Disabled:Flight Signing** | If enabled, binaries from Windows Insider builds aren't trusted. This option is useful for organizations that only want to run released binaries, not prerelease Windows builds. | No |
 | **5 Enabled:Inherit Default Policy** | This option is reserved for future use and currently has no effect. | Yes |
-| **6 Enabled:Unsigned System Integrity Policy (Default)** | Allows the policy to remain unsigned. When this option is removed, the policy must be signed and any supplemental policies must also be signed. The certificates that are trusted for future policy updates must be identified in the UpdatePolicySigners section. Certificates that are trusted for supplemental policies must be identified in the SupplementalPolicySigners section. | Yes |
+| **6 Enabled:Unsigned System Integrity Policy (Default)** | Allows the policy to remain unsigned. When this option is removed, the policy must be signed and any supplemental policies must also be signed. The certificates that are trusted for future policy updates must be identified in the UpdatePolicySigners section. Certificates that are trusted for supplemental policies must be identified in the SupplementalPolicySigners section. | No |
 | **7 Allowed:Debug Policy Augmented** | This option isn't currently supported. | Yes |
 | **8 Required:EV Signers** | This option isn't currently supported. | No |
 | **9 Enabled:Advanced Boot Options Menu** | The F8 preboot menu is disabled by default for all WDAC policies. Setting this rule option allows the F8 menu to appear to physically present users. | No |
@@ -127,7 +127,7 @@ Filepath rules don't provide the same security guarantees that explicit signer r
 
 ### User-writable filepaths
 
-By default, WDAC performs a user-writeability check at runtime that ensures that the current permissions on the specified filepath and its parent directories (recursively) don't allow standard users write access.
+By default, WDAC performs a user-writeability check at runtime that ensures that the current permissions on the specified filepath only allow write access for admin users.
 
 There's a defined list of SIDs that WDAC recognizes as admins. If a filepath allows write permissions for any SID not in this list, the filepath is considered to be user-writeable, even if the SID is associated to a custom admin user. To handle these special cases, you can override WDAC's runtime admin-writeable check with the **Disabled:Runtime FilePath Rule Protection** option described earlier.
 

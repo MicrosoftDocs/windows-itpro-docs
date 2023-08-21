@@ -1,6 +1,7 @@
 ---
-author: amymzhou
-ms.author: amyzhou
+ms.author: carmenf
+author: cmknox
+ms.reviewer: mstewart
 manager: aaroncz
 ms.date: 10/18/2022
 ms.prod: windows-client

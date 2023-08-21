@@ -1,6 +1,4 @@
 items:
-  - name: Assigned Access (kiosk mode)
-    href: /windows/configuration/kiosk-methods
   - name: Security baselines
     href: windows-security-configuration-framework/windows-security-baselines.md
     items:

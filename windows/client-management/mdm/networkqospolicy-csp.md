@@ -4,7 +4,7 @@ description: Learn more about the NetworkQoSPolicy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -60,7 +60,7 @@ The following list shows the NetworkQoSPolicy configuration service provider nod
 <!-- Device-{Name}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- Device-{Name}-Applicability-End -->
 
 <!-- Device-{Name}-OmaUri-Begin -->
@@ -100,7 +100,7 @@ The value of this node should be a policy name.
 <!-- Device-{Name}-AppPathNameMatchCondition-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- Device-{Name}-AppPathNameMatchCondition-Applicability-End -->
 
 <!-- Device-{Name}-AppPathNameMatchCondition-OmaUri-Begin -->
@@ -139,7 +139,7 @@ Specifies the name of an application to be used to match the network traffic, su
 <!-- Device-{Name}-DestinationPortMatchCondition-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- Device-{Name}-DestinationPortMatchCondition-Applicability-End -->
 
 <!-- Device-{Name}-DestinationPortMatchCondition-OmaUri-Begin -->
@@ -178,7 +178,7 @@ Specifies a single port or a range of ports to be used to match the network traf
 <!-- Device-{Name}-DSCPAction-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- Device-{Name}-DSCPAction-Applicability-End -->
 
 <!-- Device-{Name}-DSCPAction-OmaUri-Begin -->
@@ -218,7 +218,7 @@ The differentiated services code point (DSCP) value to apply to matching network
 <!-- Device-{Name}-IPProtocolMatchCondition-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- Device-{Name}-IPProtocolMatchCondition-Applicability-End -->
 
 <!-- Device-{Name}-IPProtocolMatchCondition-OmaUri-Begin -->
@@ -258,7 +258,7 @@ Specifies the IP protocol used to match the network traffic. Valid values are 0:
 <!-- Device-{Name}-PriorityValue8021Action-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- Device-{Name}-PriorityValue8021Action-Applicability-End -->
 
 <!-- Device-{Name}-PriorityValue8021Action-OmaUri-Begin -->
@@ -298,7 +298,7 @@ The IEEE 802.1p value to apply to matching network traffice. Valid values are 0-
 <!-- Device-{Name}-SourcePortMatchCondition-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- Device-{Name}-SourcePortMatchCondition-Applicability-End -->
 
 <!-- Device-{Name}-SourcePortMatchCondition-OmaUri-Begin -->
@@ -337,7 +337,7 @@ Specifies a single port or a range of ports to be used to match the network traf
 <!-- Device-Version-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042] and later |
 <!-- Device-Version-Applicability-End -->
 
 <!-- Device-Version-OmaUri-Begin -->
