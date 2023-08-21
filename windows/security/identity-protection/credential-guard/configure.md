@@ -280,8 +280,8 @@ If Credential Guard is enabled without UEFI Lock and without Group Policy, it's 
 
 | Setting |
 |-|
-| **Key path**: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` <br>**Key name**: `LsaCfgFlags`<br>**Type**: `REG_DWORD`<br>- **Value**: `0`|
-| **Key path**: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard` <br>**Key name**: `LsaCfgFlags`<br>**Type**: `REG_DWORD`<br>- **Value**: `0`|
+| **Key path**: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` <br>**Key name**: `LsaCfgFlags`<br>**Type**: `REG_DWORD`<br>**Value**: `0`|
+| **Key path**: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard` <br>**Key name**: `LsaCfgFlags`<br>**Type**: `REG_DWORD`<br>**Value**: `0`|
 
 > [!NOTE]
 > Deleting these registry settings may not disable Credential Guard. They must be set to a value of 0.
