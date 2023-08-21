@@ -1,5 +1,5 @@
 ---
-title: Deploy drivers and firmware updates.
+title: Deploy drivers and firmware updates
 titlesuffix: Windows Update for Business deployment service
 description: Use Windows Update for Business deployment service to deploy driver and firmware updates to devices.
 ms.prod: windows-client
