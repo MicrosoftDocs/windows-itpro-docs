@@ -61,7 +61,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 | Setting |
 |--------|
-| **Setting name**: Turn On Virtualization Based Security<br>**OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/EnableVirtualizationBasedSecurity`<br>**Data type**: int<br>**Value:** `1`|
+| **Setting name**: Turn On Virtualization Based Security<br>**OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/EnableVirtualizationBasedSecurity`<br>**Data type**: int<br>**Value**: `1`|
 | **Setting name**: Credential Guard Configuration<br>**OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/LsaCfgFlags`<br>**Data type**: int<br>**Value**:<br>&emsp;**Enabled with UEFI lock**: `1`<br>&emsp;**Enabled without lock**: `2`|
 
 Once the policy is applied, restart the device.
@@ -91,9 +91,9 @@ To configure devices using the registry, use the following settings:
 
 | Setting |
 |--|
-| **Key path:** `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard` <br>**Key name:** `EnableVirtualizationBasedSecurity`<br>**Type:** `REG_DWORD`<br>**Value:** `1` (to enable Virtualization Based Security)|
-| **Key path:** `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard` <br>**Key name:** `RequirePlatformSecurityFeatures`<br>**Type:** `REG_DWORD`<br>**Value:**<br>&emsp;`1` (to use Secure Boot)<br>&emsp;`3` (to use Secure Boot and DMA protection) |
-| **Key path:** `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` <br>**Key name:** `LsaCfgFlags`<br>**Type:** `REG_DWORD`<br>**Value:**<br>&emsp;`1` (to enable Credential Guard with UEFI lock)<br>&emsp;`2` (to enable Credential Guard without lock)|
+| **Key path**: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard` <br>**Key name**: `EnableVirtualizationBasedSecurity`<br>**Type**: `REG_DWORD`<br>**Value**: `1` (to enable Virtualization Based Security)|
+| **Key path**: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard` <br>**Key name**: `RequirePlatformSecurityFeatures`<br>**Type**: `REG_DWORD`<br>**Value**:<br>&emsp;`1` (to use Secure Boot)<br>&emsp;`3` (to use Secure Boot and DMA protection) |
+| **Key path**: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` <br>**Key name**: `LsaCfgFlags`<br>**Type**: `REG_DWORD`<br>**Value**:<br>&emsp;`1` (to enable Credential Guard with UEFI lock)<br>&emsp;`2` (to enable Credential Guard without lock)|
 
 Restart the device to apply the change.
 
@@ -280,8 +280,8 @@ If Credential Guard is enabled without UEFI Lock and without Group Policy, it's 
 
 | Setting |
 |-|
-| - **Key path:** `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` <br>- **Key name:** `LsaCfgFlags`<br>- **Type:** `REG_DWORD`<br>- **Value:** `0`|
-| - **Key path:** `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard` <br>- **Key name:** `LsaCfgFlags`<br>- **Type:** `REG_DWORD`<br>- **Value:** `0`|
+| **Key path**: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` <br>**Key name**: `LsaCfgFlags`<br>**Type**: `REG_DWORD`<br>- **Value**: `0`|
+| **Key path**: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard` <br>**Key name**: `LsaCfgFlags`<br>**Type**: `REG_DWORD`<br>- **Value**: `0`|
 
 > [!NOTE]
 > Deleting these registry settings may not disable Credential Guard. They must be set to a value of 0.
@@ -356,7 +356,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 | Setting |
 |--------|
-| **Setting name**: Turn On Virtualization Based Security<br>**OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/EnableVirtualizationBasedSecurity`<br>**Data type**: int<br>**Value:** `0`|
+| **Setting name**: Turn On Virtualization Based Security<br>**OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/EnableVirtualizationBasedSecurity`<br>**Data type**: int<br>**Value**: `0`|
 
 Once the policy is applied, restart the device.
 
@@ -364,24 +364,33 @@ Once the policy is applied, restart the device.
 
 ### Disable  VBS with group policy
 
-1. Configure the policy used to enable VBS to **Disabled**. The policy setting path is: `Computer Configuration\Administrative Templates\System\Device Guard\Turn on Virtualization Based Security`
-1. Once the policy is applied, restart the device
+Configure the policy used to enable VBS to **Disabled**.
+
+[!INCLUDE [gpo-settings-1](../../../../includes/configure/gpo-settings-1.md)]
+
+| Group policy path | Group policy setting | Value |
+| - | - | - |
+| **Computer Configuration\Administrative Templates\System\Device Guard\Turn on Virtualization Based Security** |Turn On Virtualization Based Security | **Disabled** |
+
+[!INCLUDE [gpo-settings-2](../../../../includes/configure/gpo-settings-2.md)]
+
+Once the policy is applied, restart the device
 
 #### [:::image type="icon" source="../../images/icons/windows-os.svg" border="false"::: **Registry**](#tab/reg)
 
 ### Disable VBS with registry settings
 
-1. Delete the following registry keys:
+Delete the following registry keys:
 
-    | Setting |
-    |--|
-    | Key path: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard` <br>Key name: `EnableVirtualizationBasedSecurity` |
-    | Key path: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard` <br>Key name: `RequirePlatformSecurityFeatures`|
+| Setting |
+|--|
+| Key path: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard` <br>Key name: `EnableVirtualizationBasedSecurity` |
+| Key path: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard` <br>Key name: `RequirePlatformSecurityFeatures`|
 
-    > [!IMPORTANT]
-    > If you manually remove the registry settings, make sure to delete them all, otherwise the device might go into BitLocker recovery.
+> [!IMPORTANT]
+> If you manually remove the registry settings, make sure to delete them all, otherwise the device might go into BitLocker recovery.
 
-1. Restart the device
+Restart the device to apply the change.
 
 ---
 
