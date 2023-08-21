@@ -4,7 +4,7 @@ description: Learn how Windows Hello for Business replaces passwords with strong
 ms.collection: 
   - highpri
   - tier1
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 04/24/2023
 ---
 # Windows Hello for Business Overview
