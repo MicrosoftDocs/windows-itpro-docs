@@ -10,7 +10,7 @@ ms.date: 08/11/2023
 Starting in Windows 11, version 22H2, Personal Data Encryption (PDE) is a security feature that provides file-based data encryption capabilities to Windows.
 
 PDE utilizes Windows Hello for Business to link *data encryption keys* with user credentials. When a user signs in to a device using Windows Hello for Business, decryption keys are released, and encrypted data is accessible to the user.\
-When a user logs off, decryption keys are discarded and data is inaccessible, even if another user signs in to the device.
+When a user logs off, decryption keys are discarded and data is inaccessible, even if another user signs into the device.
 
 The use of Windows Hello for Business offers the following advantages:
 
@@ -26,7 +26,10 @@ To use PDE, the following prerequisites must be met:
 
 - Windows 11, version 22H2 and later
 - The devices must be [Azure AD joined][AAD-1]. Domain-joined and hybrid Azure AD joined devices aren't supported
-- Users must sign in using [Windows Hello for Business](../../../identity-protection/hello-for-business/index.md). Password and [security key][AAD-2] sign in aren't supported
+- Users must sign in using [Windows Hello for Business](../../../identity-protection/hello-for-business/index.md)
+
+> [!IMPORTANT]
+> If you sign in with a password or a [security key][AAD-2], you can't access PDE protected content.
 
 [!INCLUDE [personal-data-encryption-pde](../../../../../includes/licensing/personal-data-encryption-pde.md)]
 
@@ -64,8 +67,8 @@ PDE is meant to work alongside BitLocker. PDE isn't a replacement for BitLocker,
 | Item | PDE | BitLocker |
 |--|--|--|
 | Release of decryption key | At user sign-in via Windows Hello for Business | At boot |
-| Decryption keys discarded | When user signs out of Windows or one minute after Windows lock screen is engaged | At reboot |
-| Files protected | Individual specified files | Entire volume/drive |
+| Decryption keys discarded | When user signs out of Windows or one minute after Windows lock screen is engaged | At shutdown |
+| Protected content | All files in protected folders | Entire volume/drive |
 | Authentication to access protected content | Windows Hello for Business | When BitLocker with TPM + PIN is enabled, BitLocker PIN plus Windows sign-in |
 
 ## Differences between PDE and EFS
@@ -89,7 +92,7 @@ Encryption information including what encryption method is being used to protect
 The following are recommendations for using PDE:
 
 - Enable [BitLocker Drive Encryption](../bitlocker/index.md). Although PDE works without BitLocker, it's recommended to enable BitLocker. PDE is meant to work alongside BitLocker for increased security at it isn't a replacement for BitLocker
-- Backup solution such as [OneDrive in Microsoft 365](/sharepoint/onedrive-overview). In certain scenarios, such as TPM resets or destructive PIN resets, the keys used by PDE to protect content will be lost making any PDE-protected concent inaccessible. The only way to recover such content is from a backup. If the files are synced to OneDrive, to regain access you must re-sync OneDrive
+- Backup solution such as [OneDrive in Microsoft 365](/sharepoint/onedrive-overview). In certain scenarios, such as TPM resets or destructive PIN resets, the keys used by PDE to protect content will be lost making any PDE-protected content inaccessible. The only way to recover such content is from a backup. If the files are synced to OneDrive, to regain access you must re-sync OneDrive
 - [Windows Hello for Business PIN reset service](../../../identity-protection/hello-for-business/hello-feature-pin-reset.md). Destructive PIN resets will cause keys used by PDE to protect content to be lost, making any content protected with PDE inaccessible. After a destructive PIN reset, content protected with PDE must be recovered from a backup. For this reason, Windows Hello for Business PIN reset service is recommended since it provides non-destructive PIN resets
 - [Windows Hello Enhanced Sign-in Security](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security) offers additional security when authenticating with Windows Hello for Business via biometrics or PIN
 
