@@ -1,20 +1,24 @@
 ---
-title: Prerequisites for the Windows Update for Business deployment service
-description: Prerequisites for using the Windows Update for Business deployment service. 
+title: Prerequisites for the deployment service
+titlesuffix: Windows Update for Business deployment service
+description: Prerequisites for using the Windows Update for Business deployment service for updating devices in your organization. 
 ms.prod: windows-client
-author: mestew
-ms.localizationpriority: medium
-ms.author: mstewart
-manager: aaroncz
-ms.topic: article
 ms.technology: itpro-updates
+ms.topic: how-to
+ms.author: mstewart
+author: mestew
+manager: aaroncz
+ms.collection:
+  - tier1
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 02/14/2023
 ---
 
 # Windows Update for Business deployment service prerequisites
 <!--7512398-->
-***(Applies to: Windows 11 & Windows 10)***
-
 Before you begin the process of deploying updates with Windows Update for Business deployment service, ensure you meet the prerequisites.
 
 ## Azure and Azure Active Directory
