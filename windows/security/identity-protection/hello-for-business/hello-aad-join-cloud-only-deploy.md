@@ -3,6 +3,7 @@ title: Windows Hello for Business cloud-only deployment
 description: Learn how to configure Windows Hello for Business in a cloud-only deployment scenario.
 ms.date: 06/23/2021
 ms.topic: how-to
+ms.custom: has-azure-ad-ps-ref
 ---
 # Cloud-only deployment
 
