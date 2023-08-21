@@ -2,8 +2,9 @@
 metadata:
   title: Microsoft Connected Cache Frequently Asked Questions
   description: The following article is a list of frequently asked questions for Microsoft Connected Cache.
-  author: amymzhou
-  ms.author: amyzhou
+  ms.author: carmenf
+  author: cmknox
+  ms.reviewer: mstewart
   manager: aaroncz
   ms.collection:
     - highpri
@@ -54,8 +55,8 @@ sections:
         answer: You can choose to route your traffic using manual CIDR blocks or BGP. If you have multiple Microsoft Connected Cache(s), you can allocate subsets of CIDR blocks to each cache node if you wish. However, since Microsoft Connected Cache has automatic load balancing, we recommend adding all of your traffic to all of your cache nodes.  
       - question: Should I add any load balancing mechanism?
         answer: You don't need to add any load balancing. Our service will take care of routing traffic if you have multiple cache nodes serving the same CIDR blocks based on the reported health of the cache node.  
-      - question: How many Microsoft Connected Cache instances will I need? How do we set up if we support multiple countries?
-        answer: As stated in the table above, the recommended configuration will achieve near the maximum possible egress of 40 Gbps with a two-port link aggregated NIC and four cache drives. We have a feature coming soon that will help you estimate the number of cache nodes needed. If your ISP spans multiple countries, you can set up separate cache nodes per country.  
+      - question: How many Microsoft Connected Cache instances will I need? How do we set up if we support multiple countries or regions?
+        answer: As stated in the table above, the recommended configuration will achieve near the maximum possible egress of 40 Gbps with a two-port link aggregated NIC and four cache drives. We have a feature coming soon that will help you estimate the number of cache nodes needed. If your ISP spans multiple countries or regions, you can set up separate cache nodes per country or region.  
       - question: Where should we install Microsoft Connected Cache?
         answer: You are in control of your hardware and you can pick the location based on your traffic and end customers. You can choose the location where you have your routers or where you have dense traffic or any other parameters.
       - question: How long would a piece of content live within the Microsoft Connected Cache? Is content purged from the cache?
@@ -67,7 +68,7 @@ sections:
       - question: Is IPv6 supported?
         answer: No, we don't currently support IPV6. We plan to support it in the future.   
       - question: Is Microsoft Connected Cache stable and reliable?
-        answer: We have already successfully onboarded ISPs in many countries around the world and have received positive feedback! However, you can always start off with a portion of your CIDR blocks to test out the performance of MCC before expanding to more customers.
+        answer: We have already successfully onboarded ISPs in many countries and regions around the world and have received positive feedback! However, you can always start off with a portion of your CIDR blocks to test out the performance of MCC before expanding to more customers.
       - question: How does Microsoft Connected Cache populate its content?
         answer: Microsoft Connected Cache is a cold cache warmed by client requests. The client requests content and that is what fills up the cache. There's no off-peak cache fill necessary. Microsoft Connected Cache will reach out to different CDN providers just like a client device would. The traffic flow from Microsoft Connected Cache will vary depending on how you currently transit to each of these CDN providers. The content can come from third party CDNs or from AFD.
       - question: What CDNs will Microsoft Connected Cache pull content from?

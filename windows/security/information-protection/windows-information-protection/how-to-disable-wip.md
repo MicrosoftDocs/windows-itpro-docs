@@ -6,7 +6,7 @@ ms.topic: how-to
 author: lizgt2000
 ms.author: lizlong
 ms.reviewer: aaroncz
-manager: dougeby
+manager: aaroncz
 ---
 
 # How to disable Windows Information Protection (WIP)

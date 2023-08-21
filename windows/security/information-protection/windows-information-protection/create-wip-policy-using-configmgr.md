@@ -3,7 +3,7 @@ title: Create and deploy a WIP policy in Configuration Manager
 description: Use Microsoft Configuration Manager to create and deploy a Windows Information Protection (WIP) policy. Choose protected apps, WIP-protection level, and find enterprise data.
 author: aczechowski
 ms.author: aaroncz
-manager: dougeby
+manager: aaroncz
 ms.reviewer: rafals
 ms.topic: how-to
 ms.date: 07/15/2022
