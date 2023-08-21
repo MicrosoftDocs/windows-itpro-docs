@@ -1,14 +1,19 @@
 ---
 title: How to check Windows release health
 description: Check the release health status of Microsoft 365 services before you call support to see if there's an active service interruption.
-ms.date: 06/07/2023
+ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: how-to
 ms.author: mstewart
 author: mestew
 manager: aaroncz
-ms.reviewer: mstewart
-ms.topic: how-to
-ms.prod: windows-client
-ms.technology: itpro-updates
+ms.collection:
+  - tier2
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+ms.date: 06/07/2023
 ---
 
 # How to check Windows release health
