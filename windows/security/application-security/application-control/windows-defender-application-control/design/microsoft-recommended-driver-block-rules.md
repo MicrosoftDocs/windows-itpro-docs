@@ -41,8 +41,6 @@ The blocklist is updated with each new major release of Windows, typically 1-2 t
 
 Customers who always want the most up-to-date driver blocklist can also use Windows Defender Application Control (WDAC) to apply the latest recommended driver blocklist contained in this article. For your convenience, we've provided a download of the most up-to-date vulnerable driver blocklist along with instructions to apply it on your computer at the end of this article. Otherwise, you can use the XML provided below to create your own custom WDAC policies.
 
-[!INCLUDE [microsoft-vulnerable-driver-blocklist](../../../../../../includes/licensing/microsoft-vulnerable-driver-blocklist.md)]
-
 ## Blocking vulnerable drivers using WDAC
 
 Microsoft recommends enabling [HVCI](../../../../hardware-security/enable-virtualization-based-protection-of-code-integrity.md) or S mode to protect your devices against security threats. If this setting isn't possible, Microsoft recommends blocking [this list of drivers](#vulnerable-driver-blocklist-xml) within your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can cause devices or software to malfunction, and in rare cases, blue screen. It's recommended to first validate this policy in [audit mode](/windows/security/threat-protection/windows-defender-application-control/audit-windows-defender-application-control-policies) and review the audit block events.
