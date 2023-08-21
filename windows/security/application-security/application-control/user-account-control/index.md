@@ -4,7 +4,7 @@ description: Learn how User Account Control (UAC) helps to prevent unauthorized 
 ms.collection: 
   - highpri
   - tier2
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 05/24/2023
 ---
 
