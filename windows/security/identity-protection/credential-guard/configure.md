@@ -27,11 +27,11 @@ While the default state of Credential Guard changed, system administrators can [
 >
 > To determine whether the Pro device is in this state, check if the following registry key exists: `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0\IsolatedCredentialsRootSecret`. In this scenario, if you wish to disable VBS and Credential Guard, follow the instructions to [disable Virtualization-based Security](#disable-virtualization-based-security). If you wish to disable Credential Guard only, without disabling VBS, use the procedures to [disable Credential Guard](#disable-credential-guard).
 
-## Enable and configure Credential Guard
+## Enable Credential Guard
 
 Credential Guard should be enabled before a device is joined to a domain or before a domain user signs in for the first time. If Credential Guard is enabled after domain join, the user and device secrets may already be compromised.
 
-To enable and configure Credential Guard, you can use:
+To enable Credential Guard, you can use:
 
 - Microsoft Intune/MDM
 - Group policy
@@ -58,12 +58,11 @@ To enable and configure Credential Guard, you can use:
 > You can also configure Credential Guard by using an *account protection* profile in endpoint security. For more information, see [Account protection policy settings for endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security-account-protection-profile-settings).
 
 Alternatively, you can configure devices using a [custom policy][INT-1] with the [DeviceGuard Policy CSP][CSP-1].\
-The policy settings are located under: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/`.
 
 | Setting |
-|--|
-| **Setting name**: Turn On Virtualization Based Security<br>**Policy CSP name**: `EnableVirtualizationBasedSecurity` |
-| **Setting name**: Credential Guard Configuration<br>**Policy CSP name**: `LsaCfgFlags` |
+|--------|
+| **Setting name**: Turn On Virtualization Based Security<br>**OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/EnableVirtualizationBasedSecurity`<br>**Data type**: int<br>**Value:** `1`|
+| **Setting name**: Credential Guard Configuration<br>**OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/LsaCfgFlags`<br>**Data type**: int<br>**Value**:<br>&emsp;**Enabled with UEFI lock**: `1`<br>&emsp;**Enabled without lock**: `2`|
 
 Once the policy is applied, restart the device.
 
@@ -71,11 +70,11 @@ Once the policy is applied, restart the device.
 
 ### Configure Credential Guard with group policy
 
-[!INCLUDE [gpo-settings-1](../../../../includes/configure/gpo-settings-1.md)] `Computer Configuration\Administrative Templates\System\Device Guard`:
+[!INCLUDE [gpo-settings-1](../../../../includes/configure/gpo-settings-1.md)]
 
-| Group policy setting | Value |
-| - | - |
-|Turn On Virtualization Based Security | **Enabled** and select one of the options listed under the **Credential Guard Configuration** dropdown:<br>&emsp;- **Enabled with UEFI lock**<br>&emsp;- **Enabled without lock**|
+| Group policy path | Group policy setting | Value |
+| - | - | - |
+| **Computer Configuration\Administrative Templates\System\Device Guard** |Turn On Virtualization Based Security | **Enabled** and select one of the options listed under the **Credential Guard Configuration** dropdown:<br>&emsp;- **Enabled with UEFI lock**<br>&emsp;- **Enabled without lock**|
 
 >[!IMPORTANT]
 > If you want to be able to turn off Credential Guard remotely, choose the option **Enabled without lock**.
@@ -96,14 +95,14 @@ To configure devices using the registry, use the following settings:
 | **Key path:** `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\DeviceGuard` <br>**Key name:** `RequirePlatformSecurityFeatures`<br>**Type:** `REG_DWORD`<br>**Value:**<br>&emsp;`1` (to use Secure Boot)<br>&emsp;`3` (to use Secure Boot and DMA protection) |
 | **Key path:** `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` <br>**Key name:** `LsaCfgFlags`<br>**Type:** `REG_DWORD`<br>**Value:**<br>&emsp;`1` (to enable Credential Guard with UEFI lock)<br>&emsp;`2` (to enable Credential Guard without lock)|
 
-Restart the device to enable Credential Guard.
+Restart the device to apply the change.
 
 > [!TIP]
 > You can enable Credential Guard by setting the registry entries in the [*FirstLogonCommands*](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-firstlogoncommands) unattend setting.
 
 ---
 
-### Verify if Credential Guard is running
+### Verify if Credential Guard is enabled
 
 Checking the task list or Task Manager if `LsaIso.exe` is running is not a recommended method for determining whether Credential Guard is running. Instead, use one of the following methods:
 
@@ -250,11 +249,10 @@ If Credential Guard is enabled via Intune and without UEFI Lock, disabling the s
 [!INCLUDE [intune-settings-catalog-2](../../../../includes/configure/intune-settings-catalog-2.md)]
 
 Alternatively, you can configure devices using a [custom policy][INT-1] with the [DeviceGuard Policy CSP][CSP-1].\
-The policy settings is located under: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/`.
 
 | Setting |
-|--|
-| **Setting name**: Credential Guard Configuration<br>**Policy CSP name**: `LsaCfgFlags` |
+|--------|
+| **Setting name**: Credential Guard Configuration<br>**OMA-URI**: `./Device/Vendor/MSFT/Policy/Config/DeviceGuard/LsaCfgFlags`<br>**Data type**: int<br>**Value**: `0`|
 
 Once the policy is applied, restart the device.
 
@@ -264,11 +262,11 @@ Once the policy is applied, restart the device.
 
 If Credential Guard is enabled via Group Policy and without UEFI Lock, disabling the same group policy setting will disable Credential Guard.
 
-[!INCLUDE [gpo-settings-1](../../../../includes/configure/gpo-settings-1.md)] `Computer Configuration\Administrative Templates\System\Device Guard`:
+[!INCLUDE [gpo-settings-1](../../../../includes/configure/gpo-settings-1.md)]
 
-| Group policy setting | Value |
-| - | - |
-|Turn On Virtualization Based Security | **Disabled** |
+| Group policy path | Group policy setting | Value |
+| - | - | - |
+| **Computer Configuration\Administrative Templates\System\Device Guard** |Turn On Virtualization Based Security | **Disabled** |
 
 [!INCLUDE [gpo-settings-2](../../../../includes/configure/gpo-settings-2.md)]
 
@@ -280,15 +278,15 @@ Once the policy is applied, restart the device.
 
 If Credential Guard is enabled without UEFI Lock and without Group Policy, it's sufficient to edit the registry keys as described below to disable Credential Guard.
 
-1. Change the following registry settings to 0:
+| Setting |
+|-|
+| - **Key path:** `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa` <br>- **Key name:** `LsaCfgFlags`<br>- **Type:** `REG_DWORD`<br>- **Value:** `0`|
+| - **Key path:** `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard` <br>- **Key name:** `LsaCfgFlags`<br>- **Type:** `REG_DWORD`<br>- **Value:** `0`|
 
-   - `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\LsaCfgFlags`
-   - `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeviceGuard\LsaCfgFlags`
+> [!NOTE]
+> Deleting these registry settings may not disable Credential Guard. They must be set to a value of 0.
 
-     > [!NOTE]
-     > Deleting these registry settings may not disable Credential Guard. They must be set to a value of 0.
-
-1. Restart the device
+Restart the device to apply the change.
 
 ---
 
