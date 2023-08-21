@@ -4,7 +4,7 @@ titlesuffix: Windows Update for Business deployment service
 description: Use Windows Update for Business deployment service to deploy feature updates to devices in your organization. 
 ms.prod: windows-client
 ms.technology: itpro-updates
-ms.topic: how-to
+ms.topic: conceptual
 ms.author: mstewart
 author: mestew
 manager: aaroncz

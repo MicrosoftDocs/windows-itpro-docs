@@ -4,7 +4,7 @@ titlesuffix: Windows Update for Business deployment service
 description: Use Windows Update for Business deployment service to deploy driver and firmware updates to devices.
 ms.prod: windows-client
 ms.technology: itpro-updates
-ms.topic: how-to
+ms.topic: conceptual
 author: mestew
 ms.author: mstewart
 manager: aaroncz

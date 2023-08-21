@@ -3,7 +3,7 @@ title: How to check Windows release health
 description: Check the release health status of Microsoft 365 services before you call support to see if there's an active service interruption.
 ms.prod: windows-client
 ms.technology: itpro-updates
-ms.topic: how-to
+ms.topic: conceptual
 ms.author: mstewart
 author: mestew
 manager: aaroncz
