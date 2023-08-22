@@ -5,6 +5,7 @@ ms.prod: windows-client
 ms.collection: 
   - highpri
   - tier3
+  - must-keep
 ms.topic: conceptual
 ms.date: 09/08/2021
 ---

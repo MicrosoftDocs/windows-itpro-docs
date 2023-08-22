@@ -5,7 +5,8 @@ ms.prod: windows-client
 author: aczechowski
 ms.localizationpriority: medium
 ms.author: aaroncz
-ms.topic: article
+ms.topic: reference
+ms.collection: must-keep
 ms.date: 03/30/2018
 ms.reviewer: 
 manager: aaroncz
