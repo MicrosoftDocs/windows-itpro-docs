@@ -3,7 +3,9 @@ title: Manage UE-V Service and Packages with Windows PowerShell and WMI
 description: Managing the UE-V service and packages with Windows PowerShell and WMI
 author: aczechowski
 ms.prod: windows-client
-ms.collection: tier3
+ms.collection:
+ - tier3
+ - must-keep
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: aaroncz

@@ -6,6 +6,7 @@ ms.date: 11/09/2022
 ms.collection: 
   - highpri
   - tier3
+  - must-keep
 ms.topic: best-practice
 ---
 
