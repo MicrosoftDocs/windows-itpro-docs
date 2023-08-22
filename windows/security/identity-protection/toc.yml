@@ -3,6 +3,10 @@ items:
     href: index.md
   - name: Passwordless sign-in
     items:
+    - name: Passwordless strategy
+      href: passwordless-strategy.md
+    - name: Passwordless experience
+      href: passwordless-experience.md
     - name: Windows Hello for Business 🔗
       href: hello-for-business/index.md
     - name: Windows presence sensing
