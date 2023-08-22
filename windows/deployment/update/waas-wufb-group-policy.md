@@ -1,7 +1,8 @@
 ---
 title: Configure Windows Update for Business via Group Policy
-description: Walk through of how to configure Windows Update for Business settings using Group Policy.
+description: Walk through of how to configure Windows Update for Business settings using Group Policy to update devices.
 ms.prod: windows-client
+ms.technology: itpro-updates
 author: mestew
 ms.localizationpriority: medium
 ms.author: mstewart
@@ -9,18 +10,17 @@ ms.collection:
   - highpri
   - tier2
 manager: aaroncz
-ms.topic: how-to
-ms.technology: itpro-updates
+ms.topic: conceptual
+appliesto:
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
 ms.date: 08/22/2023
 ---
 
 # Walkthrough: Use Group Policy to configure Windows Update for Business
-
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 

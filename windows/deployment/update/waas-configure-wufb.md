@@ -6,21 +6,20 @@ ms.prod: windows-client
 author: mestew
 ms.localizationpriority: medium
 ms.author: mstewart
-ms.topic: article
+ms.topic: conceptual
 ms.technology: itpro-updates
+ms.collection:
+  - tier1
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
 ms.date: 08/22/2023
 ---
 
 # Configure Windows Update for Business
-
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-- Windows Server 2016
-- Windows Server 2019
-- Windows Server 2022
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
@@ -244,8 +243,8 @@ The following options are available for the policy:
 
 | Policy | Sets registry key under HKLM\Software |
 | --- | --- |
-| GPO for Windows 11, version 22H2 with [KBxxxxxxx](https://support.microsoft.com/en-us/topic/february-14-2023-kb5022845-os-build-22621-1265-90a807f4-d2e8-486e-8a43-d09e66319f38) and later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Manage updates offered from Windows Update > **Enable optional updates**| \Policies\Microsoft\Windows\WindowsUpdate\AllowOptionalContent |
-| MDM for Windows 11, version 22H2 with [KBxxxxxxx](https://support.microsoft.com/en-us/topic/february-14-2023-kb5022845-os-build-22621-1265-90a807f4-d2e8-486e-8a43-d09e66319f38) and later: </br>./Device/Vendor/MSFT/Policy/Config/Update/</br>**[AllowOptionalContent](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowoptionalcontent)** | \Policies\Microsoft\Windows\WindowsUpdate\AllowOptionalContent |
+| GPO for Windows 11, version 22H2 with [KB5029351](https://support.microsoft.com/help/5029351) and later: </br>Computer Configuration > Administrative Templates > Windows Components > Windows Update > Manage updates offered from Windows Update > **Enable optional updates**| \Policies\Microsoft\Windows\WindowsUpdate\AllowOptionalContent |
+| MDM for Windows 11, version 22H2 with [KB5029351](https://support.microsoft.com/help/5029351) and later: </br>./Device/Vendor/MSFT/Policy/Config/Update/</br>**[AllowOptionalContent](/windows/client-management/mdm/policy-csp-update?toc=/windows/deployment/toc.json&bc=/windows/deployment/breadcrumb/toc.json#allowoptionalcontent)** | \Policies\Microsoft\Windows\WindowsUpdate\AllowOptionalContent |
 
 ## Enable features that are behind temporary enterprise feature control
 <!--6544872-->
