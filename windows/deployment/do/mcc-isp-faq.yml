@@ -2,8 +2,9 @@
 metadata:
   title: Microsoft Connected Cache Frequently Asked Questions
   description: The following article is a list of frequently asked questions for Microsoft Connected Cache.
-  author: amymzhou
-  ms.author: amyzhou
+  ms.author: carmenf
+  author: cmknox
+  ms.reviewer: mstewart
   manager: aaroncz
   ms.collection:
     - highpri

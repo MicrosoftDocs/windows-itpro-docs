@@ -1,7 +1,7 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 08/08/2023 
+ms.date: 08/21/2023 
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
@@ -27,7 +27,8 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Article | Description |
 | ----- | ----- |
-| [Exclude a device](../operate/windows-autopatch-exclude-device.md) | Renamed Deregister a device to [Exclude a device](../operate/windows-autopatch-exclude-device.md). Added the [Restore device](../operate/windows-autopatch-exclude-device.md#restore-a-device-or-multiple-devices-previously-excluded) feature |
+| [Manage driver and firmware updates](../operate/windows-autopatch-manage-driver-and-firmware-updates.md) | General Availability<ul><li>[MC661218](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
+| [Exclude a device](../operate/windows-autopatch-exclude-device.md) | Renamed Deregister a device to [Exclude a device](../operate/windows-autopatch-exclude-device.md). Added the [Restore device](../operate/windows-autopatch-exclude-device.md#restore-a-device-or-multiple-devices-previously-excluded) feature <ul><li>[MC667662](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
 | [Device alerts](../operate/windows-autopatch-device-alerts.md) | Added `'InstallSetupBlock'` to the [Alert resolutions section](../operate/windows-autopatch-device-alerts.md#alert-resolutions) |
 
 ## July 2023
