@@ -1275,6 +1275,6 @@ This walk-through isn't intended for use with Windows Server 2012 R2. Although t
 
 ## Related articles
 
-- [Create bootable Windows PE media: Update the Windows PE add-on for the Windows ADK](/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)
+- [Create bootable Windows PE media: Update the Windows PE add-on for the Windows ADK](/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive#update-the-windows-pe-add-on-for-the-windows-adk)
 - [Update Windows installation media with Dynamic Update: Update WinPE](/windows/deployment/update/media-dynamic-update#update-winpe)
 - [KB5025885: How to manage the Windows Boot Manager revocations for Secure Boot changes associated with CVE-2023-24932: Updating bootable media](https://prod.support.services.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d?preview=true#updatebootable5025885)
