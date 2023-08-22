@@ -52,10 +52,7 @@ The `CreateDriverUpdatePolicy` is created for the Test, First, Fast, and Broad d
 
 | Policy name | DisplayName | Description | Approval Type | DeploymentDeferralInDays |
 | ----- | ----- | ----- | ----- | ----- |
-| `CreateDriverUpdatePolicy` | Windows Autopatch – Driver Update Policy [Test/First/Fast/Broad] | Driver Update Policy for device Test/First/Fast/Broad group | Automatic | `0` |
-
-> [!NOTE]
-> In public preview, the DeploymentDeferralInDays setting is set to `0` for all deployment rings.
+| `CreateDriverUpdatePolicy` | Windows Autopatch – Driver Update Policy [**Test/First/Fast/Broad**] | Driver Update Policy for **Test/First/Fast/Broad** group | Automatic | `0` |
 
 ## Feedback and support
 
