@@ -3,7 +3,9 @@ title: Troubleshooting UE-V
 description: Use this technical reference to find resources for troubleshooting User Experience Virtualization (UE-V) for Windows 10.
 author: aczechowski
 ms.prod: windows-client
-ms.collection: tier3
+ms.collection:
+ - tier3
+ - must-keep
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: aaroncz
