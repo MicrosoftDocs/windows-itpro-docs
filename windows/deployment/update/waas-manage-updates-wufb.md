@@ -5,7 +5,6 @@ description: Learn how Windows Update for Business lets you manage when devices 
 ms.prod: windows-client
 ms.topic: overview
 author: mestew
-ms.localizationpriority: medium
 ms.author: mstewart
 ms.collection:
   - highpri
