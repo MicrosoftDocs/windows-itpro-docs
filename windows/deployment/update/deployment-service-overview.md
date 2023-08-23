@@ -1,19 +1,23 @@
 ---
-title: Windows Update for Business deployment service
-description: Overview of deployment service to control approval, scheduling, and safeguarding of Windows updates
+title: Overview of the deployment service
+titlesuffix: Windows Update for Business deployment service
+description: Overview of deployment service to control approval, scheduling, and safeguarding of Windows updates with the deployment service.
 ms.prod: windows-client
-author: mestew
-ms.localizationpriority: medium
-ms.author: mstewart
-manager: aaroncz
-ms.topic: overview
 ms.technology: itpro-updates
-ms.date: 12/31/2017
+ms.topic: conceptual
+ms.author: mstewart
+author: mestew
+manager: aaroncz
+ms.collection:
+  - tier1
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+ms.date: 02/14/2023
 ---
 
 # Windows Update for Business deployment service
-
-***(Applies to: Windows 11 & Windows 10)***
 
 The Windows Update for Business deployment service is a cloud service within the Windows Update for Business product family. It's designed to work with your existing [Windows Update for Business](waas-manage-updates-wufb.md) policies and [Windows Update for Business reports](wufb-reports-overview.md). The deployment service provides control over the approval, scheduling, and safeguarding of updates delivered from Windows Update to managed devices. The service is privacy focused and backed by leading industry compliance certifications.
 

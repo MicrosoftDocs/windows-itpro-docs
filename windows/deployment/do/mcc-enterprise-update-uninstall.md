@@ -6,11 +6,14 @@ ms.prod: windows-client
 ms.author: carmenf
 author: cmknox
 ms.reviewer: mstewart
-ms.topic: article
+ms.topic: how-to
 ms.date: 12/31/2017
 ms.technology: itpro-updates
-ms.collection: tier3
+ms.collection:
+  - tier3
+  - must-keep
 ---
+
 # Update or uninstall Microsoft Connected Cache for Enterprise and Education
 
 Throughout the preview phase, we'll send you security and feature updates for MCC. Follow these steps to perform the update.
