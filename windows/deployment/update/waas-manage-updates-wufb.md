@@ -18,12 +18,6 @@ ms.date: 12/31/2017
 
 # What is Windows Update for Business?
 
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
 Windows Update for Business is a free service that is available for the following editions of Windows 10 and Windows 11:
