@@ -1,6 +1,6 @@
 ---
 title: Opt out of safeguard holds
-description: How to install an update in your organization even when a safeguard hold for an known issue has been applied to it. 
+description: How to install an update in your organization even when a safeguard hold for a known issue has been applied to it. 
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -22,7 +22,7 @@ Safeguard holds prevent a device with a known compatibility issue from being off
 
 IT admins can, if necessary, opt devices out of safeguard protections by using the disable safeguards policy. In a Mobile Device Management (MDM) tool, use the **Update/DisableWUfBSafeguards** CSP. In Group Policy, use the **Disable safeguards for Feature Updates** Group Policy. This policy is available to Windows Update for Business devices running the following operating systems:
 - Windows 11 
-- Windows 10, version 1809 or later with the October 2020 security update.
+- Windows 10, version 1809, or later, with the October 2020 security update.
 
 > [!CAUTION]
 > Opting out of a safeguard hold can put devices at risk from known performance issues. 

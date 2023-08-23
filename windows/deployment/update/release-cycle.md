@@ -26,7 +26,7 @@ This article provides details on the types of updates that Microsoft provides, a
 |Release type | Description | Release cycle |
 |---|---|---|
 | [Monthly security update release](#monthly-security-update-release)| A cumulative update release that includes both security and nonsecurity content | Second Tuesday of each month, typically published at 10:00 AM Pacific Time (PST/PDT) |
-| [Optional nonsecurity preview release](#optional-non-security-preview-release)| An optional cumulative update release that's typically used for early validation of the monthly security update release| Fourth Tuesday of each month, typically published at 10:00 AM Pacific Time (PST/PDT) |
+| [Optional nonsecurity preview release](#optional-nonsecurity-preview-release)| An optional cumulative update release that's typically used for early validation of the monthly security update release| Fourth Tuesday of each month, typically published at 10:00 AM Pacific Time (PST/PDT) |
 | [Out-of-band (OOB) release](#oob-releases) | Resolves a recently identified issue or vulnerability | As needed |
 | [Annual feature update](#annual-feature-updates) | An update with new features and enhancements that also changes the Windows version | Once a year in the second half of the calendar year |
 | [Continuous innovation for Windows 11](#continuous-innovation-for-windows-11)| Introduces new features and enhancements for Windows 11 | Periodically included in an optional nonsecurity preview release then in the monthly security update releases |
@@ -44,7 +44,7 @@ Most people are familiar with the **monthly security update release**. The **mon
 - Latest cumulative update (LCU)
 
 
-**Monthly security update releases** are cumulative. The release includes both new and previously released security fixes, along with nonsecurity content introduced in the prior month's [**Optional non-security preview release**](#optional-non-security-preview-release). These updates help keep Windows devices secure and compliant by deploying stability fixes and addressing security vulnerabilities. Most organizations consider monthly security update releases as mandatory.
+**Monthly security update releases** are cumulative. The release includes both new and previously released security fixes, along with nonsecurity content introduced in the prior month's [**Optional non-security preview release**](#optional-nonsecurity-preview-release). These updates help keep Windows devices secure and compliant by deploying stability fixes and addressing security vulnerabilities. Most organizations consider monthly security update releases as mandatory.
 
 Monthly security update releases are available through the following channels:
 
