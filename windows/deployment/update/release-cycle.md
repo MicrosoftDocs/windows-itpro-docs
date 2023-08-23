@@ -44,7 +44,7 @@ Most people are familiar with the **monthly security update release**. The **mon
 - Latest cumulative update (LCU)
 
 
-**Monthly security update releases** are cumulative. The release includes both new and previously released security fixes, along with nonsecurity content introduced in the prior month's [**Optional non-security preview release**](#optional-nonsecurity-preview-release). These updates help keep Windows devices secure and compliant by deploying stability fixes and addressing security vulnerabilities. Most organizations consider monthly security update releases as mandatory.
+**Monthly security update releases** are cumulative. The release includes both new and previously released security fixes, along with nonsecurity content introduced in the prior month's [**Optional nonsecurity preview release**](#optional-nonsecurity-preview-release). These updates help keep Windows devices secure and compliant by deploying stability fixes and addressing security vulnerabilities. Most organizations consider monthly security update releases as mandatory.
 
 Monthly security update releases are available through the following channels:
 
@@ -56,9 +56,9 @@ Many update management tools, such as [Microsoft Configuration Manager](/mem/con
 
 ## Optional nonsecurity preview release
 
-**Optional non-security preview releases** provide IT admins an opportunity for early validation of that content prior to the **monthly security update release**. Admins can test and validate production-quality releases ahead of the planned monthly security update release for the following month. These updates are optional, cumulative, nonsecurity preview releases. New features might initially be deployed in the prior month's **optional non-security preview release**, then ship in the following **monthly security update release**. These releases are only offered to the most recent, supported versions of Windows.
+**Optional nonsecurity preview releases** provide IT admins an opportunity for early validation of that content prior to the **monthly security update release**. Admins can test and validate production-quality releases ahead of the planned monthly security update release for the following month. These updates are optional, cumulative, nonsecurity preview releases. New features might initially be deployed in the prior month's **optional nonsecurity preview release**, then ship in the following **monthly security update release**. These releases are only offered to the most recent, supported versions of Windows.
 
-**Optional non-security preview releases** might commonly be referred to as:
+**Optional nonsecurity preview releases** might commonly be referred to as:
 
 - C or D week releases (meaning the third or fourth week of the month)
 - Preview updates
@@ -66,7 +66,7 @@ Many update management tools, such as [Microsoft Configuration Manager](/mem/con
 - LCU preview
 
 > [!Important]
-> Starting in April 2023, all **optional non-security preview releases** will be released on the fourth Tuesday of the month. This change in release cadence gives admins a consistent time cycle for testing and validating fixes and features.
+> Starting in April 2023, all **optional nonsecurity preview releases** will be released on the fourth Tuesday of the month. This change in release cadence gives admins a consistent time cycle for testing and validating fixes and features.
 
 To access the optional nonsecurity preview release:
 - Navigate to **Settings** > **Update & Security** > **Windows Update** and select **Check for updates**. 
@@ -89,7 +89,7 @@ Some key considerations about OOB releases include:
 
 ## Continuous innovation for Windows 11
 
-Starting with Windows 11, version 22H2, new features and enhancements are introduced periodically to provide continuous innovation for Windows 11. These features and enhancements use the normal update servicing channels you're already familiar with. At first, new features are introduced with an **optional non-security preview release** and gradually rolled out to unmanaged clients. These new features are released later as part of a **monthly security update release**.
+Starting with Windows 11, version 22H2, new features and enhancements are introduced periodically to provide continuous innovation for Windows 11. These features and enhancements use the normal update servicing channels you're already familiar with. At first, new features are introduced with an **optional nonsecurity preview release** and gradually rolled out to unmanaged clients. These new features are released later as part of a **monthly security update release**.
 
 Some of the new features may be disruptive to organizations. By default, these select features are turned off temporarily for all managed devices until the next annual feature update is installed. In this scenario, a device is considered managed if it uses one of the following to determine which updates to install:
 
