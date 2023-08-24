@@ -255,7 +255,7 @@ For example, Configuration Manager Software Update Policy settings exclude Autop
 | Device setting | Recommended configuration |
 | ----- | ----- |
 | Enable software updates | No |
-| Enable management of the Office 365 Client Agent |
+| Enable management of the Office 365 Client Agent | No |
 
 #### Existing Mobile Device Management (MDM) policies
 
