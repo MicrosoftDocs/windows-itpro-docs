@@ -27,6 +27,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Article | Description |
 | ----- | ----- |
+| [Deployment guide](../overview/windows-autopatch-deployment-guide.md) | New guide. This guide explains how to successfully deploy Windows Autopatch in your environment |
 | [Windows quality updates](../operate/windows-autopatch-groups-windows-quality-update-overview.md) | Added the **This pause is related to Windows Update** option to the [Pause and resume a release feature](../operate/windows-autopatch-groups-windows-quality-update-overview.md#pause-and-resume-a-release) |
 | [Manage driver and firmware updates](../operate/windows-autopatch-manage-driver-and-firmware-updates.md)| Added [policy settings](../operate/windows-autopatch-manage-driver-and-firmware-updates.md#view-driver-and-firmware-policies-created-by-windows-autopatch) for all deployment rings |
 | [Manage driver and firmware updates](../operate/windows-autopatch-manage-driver-and-firmware-updates.md) | General Availability<ul><li>[MC661218](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
