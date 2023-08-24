@@ -10,7 +10,7 @@
           href: overview/windows-autopatch-roles-responsibilities.md
         - name: Privacy
           href: overview/windows-autopatch-privacy.md
-        - name: Windows Autopatch deployment guide
+        - name: Deployment guide
           href: overview/windows-autopatch-deployment-guide.md
         - name: FAQ
           href: overview/windows-autopatch-faq.yml
