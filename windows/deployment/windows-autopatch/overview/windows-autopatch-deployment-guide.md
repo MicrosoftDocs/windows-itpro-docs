@@ -1,5 +1,5 @@
 ---
-title: Deployment guide
+title: Windows Autopatch deployment guide
 description: This guide explains how to successfully deploy Windows Autopatch in your environment
 ms.date: 08/24/2023
 ms.prod: windows-client
@@ -34,11 +34,11 @@ This guide:
 
 ## Determine your objectives
 
-In this section, details some common objectives when using Windows Autopatch.  
+This section details some common objectives when using Windows Autopatch.  
 
 Once an organization is onboarded, Windows Autopatch automatically creates multiple progressive deployment rings and applies the latest updates according to Windows Autopatch recommended practices and your organization's custom configuration. While there are options to adjust configurations such as quality update cadence, the service provides you with a baseline to begin establishing your update objectives.
 
-Use Windows Autopatch service to solve the following challenges:
+Use Windows Autopatch to solve the following challenges:
 
 - Difficulty developing and defending update cadence and general best practices
 - Increase visibility and improve issue reporting
@@ -58,49 +58,49 @@ The following deployment steps can be used as a guide to help you to create your
 
 :::image type="content" source="../media/windows-autopatch-deployment-journey.png" alt-text="Windows Autopatch deployment journey" lightbox="../media/windows-autopatch-deployment-journey.png":::
 
-### Step 1: Prepare
+### Step one: Prepare
 
 [Review the prerequisites](../prepare/windows-autopatch-prerequisites.md) and [enroll your tenant](../prepare/windows-autopatch-enroll-tenant.md) into the Windows Autopatch service. At this stage, your devices aren't affected.  You can enroll your tenant and review the service options before registering your devices.
 
-| Steps | Description |
+| Step | Description |
 | ----- | ----- |
 | **1A: Set up the service** | <ul><li>Prepare your environment, review existing update policies and [General Considerations](#general-considerations)</li><li>Review and understand [changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) when enrolling into the service</li><li>Enroll into the service and [add your admin contacts](../deploy/windows-autopatch-admin-contacts.md)</li><li>Review [Roles and responsibilities](../overview/windows-autopatch-roles-responsibilities.md)</li><li>Verify the [changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) completed successfully</li></ul> |
 | **1B: Confirm update service needs and configure your workloads** | <ul><li>[Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md): Expedite preferences and cadence customizations</li><li>[Windows feature updates](../operate/windows-autopatch-windows-feature-update-overview.md): Servicing version preferences</li><li>[Driver and firmware updates](../operate/windows-autopatch-manage-driver-and-firmware-updates.md): Set to either Manual or Automatic</li><li>[Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md): Set to either Monthly Enterprise Channel or opt-out</li><li>[Microsoft Edge](../operate/windows-autopatch-edge.md): Required. Beta and Stable Channel</li><li>[Microsoft Teams](../operate/windows-autopatch-teams.md): Required. Automatic</li></ul> |
 | **1C: Consider your Autopatch groups distribution** | Organizations have a range of Windows devices including desktop computers, laptops and tablets that might be grouped across multiple logical or physical locations. When planning your Autopatch groups strategy, consider the Autopatch group structure that best fits your organizational needs. It's recommended to utilize the service defaults as much as possible. However, if necessary, you can customize the [Default Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-the-default-autopatch-group) with additional deployment rings and/or [create your own Custom Autopatch group(s)](../deploy/windows-autopatch-groups-overview.md#about-the-default-autopatch-group).<br><br><ul><li> Review your device inventory and consider a representative mix of devices across your distribution</li><li>Review your Azure AD groups that you wish to use to register devices into the service</li><li>Review [device registration options](../deploy/windows-autopatch-device-registration-overview.md) and [register your first devices](../deploy/windows-autopatch-register-devices.md)</li></ul> |
 | **1D: Review network optimization** | It's important to [prepare your network](../prepare/windows-autopatch-configure-network.md) to ensure that your devices have access to updates in the most efficient way, without impacting your infrastructure.<br><br>A recommended approach to manage bandwidth consumption is to utilize [Delivery Optimization](../prepare/windows-autopatch-configure-network.md#delivery-optimization). You can use Delivery Optimization to reduce bandwidth consumption by sharing the work of downloading these packages amongst multiple devices in your deployment. |
 
-### Step 2: Evaluate
+### Step two: Evaluate
 
 Evaluate Windows Autopatch with around 50 devices to ensure the service meets your needs. You can adjust this number based on your organizational make-up. It's recommended to monitor one update cycle during this evaluation step.
 
-| Steps | Description |
+| Step | Description |
 | ----- | ----- |
 | **2A: Review reporting capabilities** | <ul><li>[Windows quality update reports](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#windows-quality-update-reports)</li><li>[Windows feature update reports](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#windows-feature-update-reports)</li><li>[Windows Update for Business (WufB) reports](/mem/intune/protect/windows-update-compatibility-reports#use-the-windows-feature-update-device-readiness-report)</li></ul>Windows Autopatch quality and feature update reports provide a progress view on the latest update cycle for your devices. These reports should be reviewed often to ensure you understand the update state of your Windows Autopatch devices.<br><br>There might be times when using Windows Autopatch for update deployment that it's beneficial to review Windows Update for Business (WUfB) reports.<br><br>For example, when preparing to deploy Windows 11, you might find it useful to evaluate your devices using the [Windows feature update device readiness](/mem/intune/protect/windows-update-compatibility-reports#use-the-windows-feature-update-device-readiness-report) and [Windows feature update compatibility risks reports](/mem/intune/protect/windows-update-compatibility-reports#use-the-windows-feature-update-compatibility-risks-report) in Intune.|
 | **2B: Review operational changes** | As part of the introduction of Windows Autopatch, you should consider how the service integrates with your existing operational processes.<br><ul><li>Identify service desk and end user computing process changes</li><li>Identify any alignment with third party support agreements</li><li>Review the default Windows Autopatch support process and alignment with your existing Premier and Unified support options</li><li>Identify IT admin process change & service interaction points</li></ul> |
-| **2C: Educate end users and key stakeholders**| Educate your end users by creating guides for the Windows Autopatch end user experience.<ul><li>[Windows quality updates](../operate/windows-autopatch-groups-windows-quality-update-end-user-exp.md)</li><li>[Windows feature updates](../operate/windows-autopatch-groups-windows-feature-update-overview.md)</li>[Microsoft 365 Apps for enterprise updates](../operate/windows-autopatch-microsoft-365-apps-enterprise.md)<li>[Microsoft Edge](../operate/windows-autopatch-edge.md)</li><li>[Microsoft Teams](../operate/windows-autopatch-teams.md)</li></ul><br>Include your IT support and help desk in the early stages of the Windows Autopatch deployment and planning process. Early involvement allows your support staff to:<br><ul><li>Gain knowledge and experience in identifying and resolving update issues more effectively</li><li>Prepare them for support production rollouts. Knowledgeable help desk and support teams also help end users adopt to changes</li></ul><br>Your support staff can experience a walkthrough of the Windows Autopatch admin experience through the [Windows Autopatch demo site](https://aka.ms/autopatchdemo). |
+| **2C: Educate end users and key stakeholders**| Educate your end users by creating guides for the Windows Autopatch end user experience.<ul><li>[Windows quality updates](../operate/windows-autopatch-groups-windows-quality-update-end-user-exp.md)</li><li>[Windows feature updates](../operate/windows-autopatch-groups-windows-feature-update-overview.md)</li>[Microsoft 365 Apps for enterprise updates](../operate/windows-autopatch-microsoft-365-apps-enterprise.md)<li>[Microsoft Edge](../operate/windows-autopatch-edge.md)</li><li>[Microsoft Teams](../operate/windows-autopatch-teams.md)</li></ul><br>Include your IT support and help desk in the early stages of the Windows Autopatch deployment and planning process. Early involvement allows your support staff to:<br><ul><li>Gain knowledge and experience in identifying and resolving update issues more effectively</li><li>Prepare them to support production rollouts. Knowledgeable help desk and support teams also help end users adopt to changes</li></ul><br>Your support staff can experience a walkthrough of the Windows Autopatch admin experience through the [Windows Autopatch demo site](https://aka.ms/autopatchdemo). |
 | **2D: Pilot planning** | Identify target pilot group(s) of up to 500 devices. It's recommended to include a cross-section of your organizational make-up to ensure your pilot results are representative of your organizational environment. |
 
-### Step 3: Pilot
+### Step three: Pilot
 
 Plan to pilot the service with around 500 devices to provide sufficient pilot coverage to be ready for deployment. You can adjust this number based on your organizational make-up. It's recommended to monitor one to two update cycles during the pilot step.
 
-| Steps | Description |
+| Step | Description |
 | ----- | ----- |
 | **3A: Register devices** | Register pilot device group(s) |
 | **3B: Monitor update process success** |<ul><li>Quality update: One to two update cycles</li><li>Feature update: Set of pilot devices scheduled across several weeks</li><li>Drivers and firmware: One to two update cycles</li><li>Microsoft 365 Apps for enterprise (if not opted-out): One to two update cycles</li><li>Microsoft Edge: One to two update cycles</li><li>Microsoft Teams: One to two update cycles</li> |
 | **3C: Review reports** |<ul><li>[Quality update reports](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#windows-quality-update-reports): Monitor data in the reports across one to two update cycles</li><li>[Feature update reports](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#windows-feature-update-reports): Monitor data in the reports across the update schedule</li><li>[Windows Update for Business (WufB) reports](/mem/intune/protect/windows-update-compatibility-reports#use-the-windows-feature-update-device-readiness-report): Monitor data in the report across one to two update cycles</li></ul> |
 | **3D: Implement operational changes** |<ul><li>Pilot Service Desk, end user computing and third party (if applicable) process changes with pilot representatives</li><li>IT admins must:<ul><li>Review deployment progress using Windows Autopatch reports</li><li>Respond to identified actions to help improve success rates</li></ul></ul> |
-| **3E: Communicate with stakeholders** | Review and action the stakeholder communications plan. |
+| **3E: Communicate with stakeholders** | Review and action your stakeholder communication plan. |
 | **3F: Deployment planning** | Prepare target deployment groups for phased deployment of Windows Autopatch. |
 
-### Step 4: Deploy
+### Step four: Deploy
 
 Following a successful pilot, you can commence deployment to your broader organization.  The pace at which you deploy is dependent on your own requirements; for example, deploying in groups of 500 to 5000 per week are commonly used approaches to complete the deployment of Windows Autopatch.
 
-| Steps | Description |
+| Step | Description |
 | ----- | ----- |
 | **4A: Review reports** |<ul><li>Review deployment progress using Windows Autopatch reports</li><li>Respond to identified actions to help improve success rates</li></ul> |
-| **4B: Communicate with stakeholders** | Review and action the stakeholder communications plan |
+| **4B: Communicate with stakeholders** | Review and action your stakeholder communication plan |
 | **4C: Complete operational changes** |<ul><li>Service Desk readiness is complete and in place</li><li>IT admins take the required action(s) based on the Autopatch reports</li></ul> |
 
 ## Migration considerations
@@ -117,7 +117,7 @@ Once migrated, there are several configuration tasks that you no longer need to 
 
 | Autopatch benefit | Configuration Manager | Windows Update for Business (WufB) |
 | ----- | ----- | ----- |
-| Automated setup and on-going configuration of Windows Update policies | Manage and perform recurring tasks such as:<ul><li>Download updates</li>Distribute to distribution points</li><li>Target update collections</li></ul> | Manage "static" deployment ring policies |
+| Automated setup and on-going configuration of Windows Update policies | Manage and perform recurring tasks such as:<ul><li>Download updates</li><li>Distribute to distribution points</li><li>Target update collections</li></ul> | Manage "static" deployment ring policies |
 | Automated management of deployment ring membership | Manually check collection membership and targets | Manage "static" deployment ring membership |
 | Maintain minimum Windows feature version and progressively move between servicing versions | Spend time developing, testing and rolling-out task sequence | Set up and deploy Windows feature update policies |
 | Service provides release management, signal monitoring, testing, and Windows Update deployment | Setup, target and monitor update test collections | Manage Test deployment rings and manually monitor update signals |
@@ -144,15 +144,15 @@ Service management benefits include:
 
 #### Assessing your readiness to migrate from Windows Update for Business (WufB) to Windows Autopatch
 
-When moving from Windows Update for Business (WufB) to Windows Autopatch, you can accelerate and simplify your adoption by assessing how ready you're to quickly migrate to the Windows Autopatch service by considering key differences that might impact your deployment:
+When moving from Windows Update for Business (WufB) to Windows Autopatch, you can accelerate and simplify your adoption by assessing your readiness to quickly migrate to the Windows Autopatch service by considering key differences that might impact your deployment:
 
 | Step | Assessment step | Recommendation |
 | ----- | ----- | ----- |
-| **One** | Use "user based" vs. "device based" targeting | Windows Autopatch doesn't support "user based" targeting.  If your Windows Update deployment is "user based", you must plan to move to a device-based targeting model by adding and registering devices into Windows Autopatch. Use the [Consider your Autopatch groups guidance](#step-1-prepare) |
-| **Two** | Use Microsoft Edge channels | Windows Autopatch deploys Microsoft Edge Stable channel to devices in all deployment rings except for the Test deployment ring. The Test deployment ring is configured for the Microsoft Edge Beta channel. If you're currently using different channels, you should prepare your teams to understand that your Windows Autopatch devices will start using these channels. For more information, see [Confirm update service needs and configure your workloads](#step-1-prepare). |
-| **Three** | Use Microsoft 365 Apps for enterprise | Windows Autopatch deploys the Monthly Enterprise Channel to all Microsoft 365 Apps for enterprise clients. If your organization is utilizing a different channel and you don't wish to adopt the Monthly Enterprise Channel, you can opt out of updates for Microsoft 365 Apps for enterprise. For more information, see [Confirm update service needs and configure your workloads](#step-1-prepare) |
-| **Four** | Prepare your policies | You should consider any existing policy configurations in your Windows Update for Business (WUfB), Intune or on-premises environment that could impact your deployment of Windows Autopatch. For more information, review [General considerations](#general-considerations) |
-| **Five** | Use network optimization technologies | We recommend you consider your network optimization technologies as part of your Windows Autopatch deployment.  However, if you're already using Windows Update for Business (WufB) it's likely you already have your network optimization solution in place.  For more information, see [Review network optimization](#step-1-prepare) |
+| **1** | "user based" vs. "device based" targeting | Windows Autopatch doesn't support "user based" targeting.  If your Windows Update deployment is "user based", you must plan to move to a device-based targeting model by adding and registering devices into Windows Autopatch. Use the [Consider your Autopatch groups guidance](#step-one-prepare) |
+| **2** | Microsoft Edge channels | Windows Autopatch deploys Microsoft Edge Stable channel to devices in all deployment rings except for the Test deployment ring. The Test deployment ring is configured for the Microsoft Edge Beta channel. If you're currently using different channels, you should prepare your teams to understand that your Windows Autopatch devices will start using these channels. For more information, see [Confirm update service needs and configure your workloads](#step-one-prepare). |
+| **3** | Microsoft 365 Apps for enterprise | Windows Autopatch deploys the Monthly Enterprise Channel to all Microsoft 365 Apps for enterprise clients. If your organization is utilizing a different channel and you don't wish to adopt the Monthly Enterprise Channel, you can opt out of updates for Microsoft 365 Apps for enterprise. For more information, see [Confirm update service needs and configure your workloads](#step-one-prepare) |
+| **4** | Prepare your policies | You should consider any existing policy configurations in your Windows Update for Business (WUfB), Intune or on-premises environment that could impact your deployment of Windows Autopatch. For more information, review [General considerations](#general-considerations) |
+| **5** | Network optimization technologies | We recommend you consider your network optimization technologies as part of your Windows Autopatch deployment.  However, if you're already using Windows Update for Business (WufB) it's likely you already have your network optimization solution in place.  For more information, see [Review network optimization](#step-one-prepare) |
 
 ### Optimized deployment path: Windows Update for Business (WufB) to Windows Autopatch
 
@@ -160,11 +160,11 @@ Once you have assessed your readiness state to ensure you're aligned to Windows 
 
 | Step | Example timeline | Task |
 | ----- | ----- | ----- |
-| **Step 1: Prepare > Set up the service** | Week one | Follow our standard guidance to turn on the Windows Autopatch service<ul><li>Prepare your environment, review existing update policies and [General Considerations](#general-considerations)</li><li>Review and understand the [changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) when enrolling into the service</li><li>Enroll into the service and [add your admin contacts](../deploy/windows-autopatch-admin-contacts.md)</li><li>Review [Roles and responsibilities](../overview/windows-autopatch-roles-responsibilities.md)</li><li>Verify the [changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) have completed successfully</li></ul> |
-| **Step 1: Prepare > Adjust the service configuration based on your migration readiness** | Week one | <ul><li>[Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md)</li><li>[Windows feature updates](../operate/windows-autopatch-windows-feature-update-overview.md)</li><li>[Driver and firmware updates](../operate/windows-autopatch-manage-driver-and-firmware-updates.md)</li><li>[Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md)</li><li>[Microsoft Edge](../operate/windows-autopatch-edge.md)</li><li>[Microsoft Teams](../operate/windows-autopatch-teams.md)</li><li>Use the [Default Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-the-default-autopatch-group) or [create a Custom Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-custom-autopatch-groups)</li></ul> |
-| **Step 2: Evaluate** | Week one to month two | Evaluate with around 50 devices for one update cycle to confirm the correct service configurations are in place |
-| **Step 3: Pilot** | Month two to three | Pilot with around 500 - 5000 devices for one update cycle to ensure you can further validate with your key stakeholders and Service Desk teams |
-| **Step 4: Deploy** | Month three to six | Phase deployments as necessary to migrate your estate. You can move as quickly as you feel comfortable |
+| **Step one: Prepare > Set up the service** | Week one | Follow our standard guidance to turn on the Windows Autopatch service<ul><li>Prepare your environment, review existing update policies and [General Considerations](#general-considerations)</li><li>Review and understand the [changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) when enrolling into the service</li><li>Enroll into the service and [add your admin contacts](../deploy/windows-autopatch-admin-contacts.md)</li><li>Review [Roles and responsibilities](../overview/windows-autopatch-roles-responsibilities.md)</li><li>Verify the [changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) have completed successfully</li></ul> |
+| **Step one: Prepare > Adjust the service configuration based on your migration readiness** | Week one | <ul><li>[Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md)</li><li>[Windows feature updates](../operate/windows-autopatch-windows-feature-update-overview.md)</li><li>[Driver and firmware updates](../operate/windows-autopatch-manage-driver-and-firmware-updates.md)</li><li>[Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md)</li><li>[Microsoft Edge](../operate/windows-autopatch-edge.md)</li><li>[Microsoft Teams](../operate/windows-autopatch-teams.md)</li><li>Use the [Default Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-the-default-autopatch-group) or [create a Custom Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-custom-autopatch-groups)</li></ul> |
+| **Step two: Evaluate** | Week one to month two | Evaluate with around 50 devices for one update cycle to confirm the correct service configurations are in place |
+| **Step three: Pilot** | Month two to three | Pilot with around 500 - 5000 devices for one update cycle to ensure you can further validate with your key stakeholders and Service Desk teams |
+| **Step four: Deploy** | Month three to six | Phase deployments as necessary to migrate your estate. You can move as quickly as you feel comfortable |
 
 ### Migrating from Configuration Manager to Windows Autopatch
 
@@ -176,10 +176,10 @@ When moving from Configuration Manager to Windows Autopatch, the fastest path to
 
 | Step | Assessment step | Recommendation |
 | ----- | ----- | ----- |
-| **One** | Turn on co-management | If you're using co-management across Configuration Manager and your managed devices, you meet the key requirements to use Windows Autopatch.<br><br>If you don't have co-management, see [How to use co-management in Configuration Manager](/mem/configmgr/comanage/how-to-enable) |
-| **Two** | Use required co-management workloads | Using Windows Autopatch requires that your managed devices use the following three co-management workloads:<ul><li>Windows Update policies workload</li><li>Device configuration workload</li><li>Office Click-to-Run apps workload</li></ul><br>If you have these workloads configured, you meet the key requirements to use Windows Autopatch. If you don't have these workloads configured, review [How to switch Configuration Manager workloads to Intune](/mem/configmgr/comanage/how-to-switch-workloads) |
-| **Three** | Prepare your policies | You should consider any existing policy configurations in your Configuration Manager (or on-premises) environment that could impact your deployment of Windows Autopatch. For more information, review [General considerations](#general-considerations) |
-| **Four** | Ensure Configuration Manager collections or Azure AD device groups readiness | To move devices to Windows Autopatch, you must register devices with the Windows Autopatch service. To do so, use either Azure AD device groups, or Configuration Manager collections. Ensure you have either Azure AD device groups or Configuration Manager collections that allow you to evaluate, pilot and then migrate to the Windows Autopatch service. For more information, see [Register your devices](../deploy/windows-autopatch-register-devices.md#before-you-begin). |  
+| **1** | Turn on co-management | If you're using co-management across Configuration Manager and your managed devices, you meet the key requirements to use Windows Autopatch.<br><br>If you don't have co-management, see [How to use co-management in Configuration Manager](/mem/configmgr/comanage/how-to-enable) |
+| **2** | Use required co-management workloads | Using Windows Autopatch requires that your managed devices use the following three co-management workloads:<ul><li>Windows Update policies workload</li><li>Device configuration workload</li><li>Office Click-to-Run apps workload</li></ul><br>If you have these workloads configured, you meet the key requirements to use Windows Autopatch. If you don't have these workloads configured, review [How to switch Configuration Manager workloads to Intune](/mem/configmgr/comanage/how-to-switch-workloads) |
+| **3** | Prepare your policies | You should consider any existing policy configurations in your Configuration Manager (or on-premises) environment that could impact your deployment of Windows Autopatch. For more information, review [General considerations](#general-considerations) |
+| **4** | Ensure Configuration Manager collections or Azure AD device groups readiness | To move devices to Windows Autopatch, you must register devices with the Windows Autopatch service. To do so, use either Azure AD device groups, or Configuration Manager collections. Ensure you have either Azure AD device groups or Configuration Manager collections that allow you to evaluate, pilot and then migrate to the Windows Autopatch service. For more information, see [Register your devices](../deploy/windows-autopatch-register-devices.md#before-you-begin). |  
 
 ### Optimized deployment path: Configuration Manager to Windows Autopatch
 
@@ -187,11 +187,11 @@ Once you have assessed your readiness state to ensure you're aligned to Windows 
 
 | Step | Example timeline | Task |
 | ----- | ----- | ----- |
-| **Step 1: Prepare > Set up the service** | Week one | Follow our standard guidance to turn on the Windows Autopatch service<ul><li>Prepare your environment, review existing update policies and [General Considerations](#general-considerations).</li><li>Review and understand the [changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) when enrolling into the service</li><li>Enroll into the service and [add your admin contacts](../deploy/windows-autopatch-admin-contacts.md)</li><li>Review [Roles and responsibilities](../overview/windows-autopatch-roles-responsibilities.md)</li><li>Verify the [changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) have completed successfully.</li></ul> |
-| **Step 1: Prepare > Adjust the service configuration based on your migration readiness** | Week one | <ul><li>[Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md)</li><li>[Windows feature updates](../operate/windows-autopatch-windows-feature-update-overview.md)</li><li>[Driver and firmware updates](../operate/windows-autopatch-manage-driver-and-firmware-updates.md)</li><li>[Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md)</li><li>[Microsoft Edge](../operate/windows-autopatch-edge.md)</li><li>[Microsoft Teams](../operate/windows-autopatch-teams.md)</li><li>Use the [Default Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-the-default-autopatch-group) or [create a Custom Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-custom-autopatch-groups)</li></ul> |
-| **Step 2: Evaluate** | Week one to month two | Evaluate with around 50 devices for one update cycle to confirm the correct service configurations are in place |
-| **Step 3: Pilot** | Month two to three | Pilot with around 500 - 5000 devices for one update cycle to ensure you can further validate with your key stakeholders and Service Desk teams |
-| **Step 4: Deploy** | Month three to six | Phase deployments as necessary to migrate your estate. You can move as quickly as you feel comfortable |
+| **[Step one: Prepare > Set up the service](#step-one-prepare)** | Week one | Follow our standard guidance to turn on the Windows Autopatch service<ul><li>Prepare your environment, review existing update policies and [General Considerations](#general-considerations).</li><li>Review and understand the [changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) when enrolling into the service</li><li>Enroll into the service and [add your admin contacts](../deploy/windows-autopatch-admin-contacts.md)</li><li>Review [Roles and responsibilities](../overview/windows-autopatch-roles-responsibilities.md)</li><li>Verify the [changes made at tenant enrollment](../references/windows-autopatch-changes-to-tenant.md) have completed successfully.</li></ul> |
+| **[Step one: Prepare > Adjust the service configuration based on your migration readiness](#step-one-prepare)** | Week one | <ul><li>[Windows quality updates](../operate/windows-autopatch-windows-quality-update-overview.md)</li><li>[Windows feature updates](../operate/windows-autopatch-windows-feature-update-overview.md)</li><li>[Driver and firmware updates](../operate/windows-autopatch-manage-driver-and-firmware-updates.md)</li><li>[Microsoft 365 Apps for enterprise](../operate/windows-autopatch-microsoft-365-apps-enterprise.md)</li><li>[Microsoft Edge](../operate/windows-autopatch-edge.md)</li><li>[Microsoft Teams](../operate/windows-autopatch-teams.md)</li><li>Use the [Default Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-the-default-autopatch-group) or [create a Custom Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-custom-autopatch-groups)</li></ul> |
+| **[Step two: Evaluate](#step-two-evaluate)** | Week one to month two | Evaluate with around 50 devices for one update cycle to confirm the correct service configurations are in place |
+| **[Step three: Pilot](#step-three-pilot)** | Month two to three | Pilot with around 500 - 5000 devices for one update cycle to ensure you can further validate with your key stakeholders and Service Desk teams |
+| **[Step four: Deploy](#step-four-deploy)** | Month three to six | Phase deployments as necessary to migrate your estate. You can move as quickly as you feel comfortable |
 
 ## General considerations
 
@@ -237,9 +237,9 @@ Any policies, scripts or settings that create or edit values in the following re
 
 #### Windows and Microsoft 365 Apps for enterprise updates
 
-When Configuration Manager is deployed, and if Software Update policies are configured, the Software Update policies could conflict with Windows Update for Business and Office Update policies.  
+When Configuration Manager is deployed, and if Software Update policies are configured, the Software Update policies could conflict with Windows Update for Business and Office Update policies.
 
-Configuration Manager could require custom settings to disable software updates and assist with troubleshooting conflicting legacy, on-premises, configurations to ensure that Autopatch deliver Windows and Office updates. It's safe to implement this change if you aren't managing third party updates from Configuration Manager.
+Configuration Manager could require custom settings to disable software updates and assist with troubleshooting conflicting legacy, on-premises configurations to ensure that Autopatch delivers Windows and Office updates. It's safe to implement this change if you aren't managing third party updates from Configuration Manager.
 
 To ensure that Software Update Policies don't conflict with Windows Update for Business (WufB) and Office Update policies, create a Software Update Policy in Configuration Manager that has:
 
@@ -257,11 +257,14 @@ For example, Configuration Manager Software Update Policy settings exclude Autop
 | Enable software updates | No |
 | Enable management of the Office 365 Client Agent | No |
 
+> [!NOTE]
+> There is no requirement to create a Configuration Manager Software Update Policy if the policies aren’t in use.
+
 #### Existing Mobile Device Management (MDM) policies
 
 | Policy | Description |
 | ----- | ----- |
-| **MDM to win over GP** | As part of the tenant enrollment process, Autopatch deploys a Device configuration profile, which applies to all registered devices to set Mobile Device Management (MDM) to win over Group Policy (GP) with the "MDMWinsOverGP" CSP.<br><br>When applied, any MDM policy that's set, and has an equivalent GP Policy, results in the GP service blocking the policy setting. Setting the value to 0 (zero) or deleting the policy removes the GP policy blocks and restore the saved GP policies.<br><br>This setting doesn't apply to all scenarios. This setting doesn't work for:<ul><li>User scoped settings. This setting applies to device scoped settings only</li><li>Any custom Group Policy Object (GPO) outside of ADMX. For example, Microsoft Edge or Chrome settings</li><li>Any Windows Update for Business policies (WUfB). When you use Windows Update for Business (WUfB), ensure all previous Group Policies (GP) are removed that relate to Windows Update to ensure that Autopatch policies can take effect.</li></ul><br><br>For more information and guidance on the expected behavior applied through this policy, see [ControlPolicyConflict Policy CSP](/windows/client-management/mdm/policy-csp-controlpolicyconflict). |
+| **MDM to win over GP** | As part of the tenant enrollment process, Autopatch deploys a Device configuration profile, which applies to all registered devices to set Mobile Device Management (MDM) to win over Group Policy (GP) with the "MDMWinsOverGP" CSP.<br><br>When applied, any MDM policy that's set, and has an equivalent GP Policy, results in the GP service blocking the policy setting. Setting the value to 0 (zero) or deleting the policy removes the GP policy blocks and restore the saved GP policies.<br><br>This setting doesn't apply to all scenarios. This setting doesn't work for:<ul><li>User scoped settings. This setting applies to device scoped settings only</li><li>Any custom Group Policy Object (GPO) outside of ADMX. For example, Microsoft Edge or Chrome settings</li><li>Any Windows Update for Business policies (WUfB). When you use Windows Update for Business (WUfB), ensure all previous Group Policies (GP) are removed that relate to Windows Update to ensure that Autopatch policies can take effect</li></ul><br><br>For more information and guidance on the expected behavior applied through this policy, see [ControlPolicyConflict Policy CSP](/windows/client-management/mdm/policy-csp-controlpolicyconflict) |
 | **Windows Update for Business (WufB) policies** | If you have any existing *Deployment rings for Windows 10 and later or Windows feature update DSS policies* in place, ensure that the assignments don't target Windows Autopatch devices. This is to avoid creating policy conflicts and unexpected update behaviour, which could impact update compliance and end user experience. |
 | **Update Policy CSP** | If any policies from the [Update Policy CSP](/windows/client-management/mdm/policy-csp-update) that aren't deployed and managed by Windows Autopatch are deployed to devices, policy conflicts and unexpected update behavior could occur and could affect update compliance and the end user experience. |
 
@@ -287,8 +290,8 @@ Change management relies on clear and helpful communication about upcoming chang
 - Identify groups being impacted by the Autopatch deployment
 - Identify key stakeholders in the impacted groups
 - Determine the types of communications needed
-- Develop your messaging based on the Recommended deployment steps
-- Create your stakeholder and communication plan schedule based on the Recommended deployment steps
+- Develop your messaging based on the [Recommended deployment steps](#recommended-deployment-steps)
+- Create your stakeholder and communication plan schedule based on the [Recommended deployment steps](#recommended-deployment-steps)
 - Have communications drafted and reviewed, and consider your delivery channels such as:  
     - Social media posts
     - Internal messaging app (for example, Microsoft Teams)
@@ -321,8 +324,8 @@ First contact your Microsoft Account team who can work with you to establish any
 
 Once you're underway with your deployment, consider joining the [Windows Autopatch Private Community (APC)](https://aka.ms/WindowsAutopatchPrivateCommunity) where you can:
 
-- Engage directly with the Windows Autopatch Engineering Teams and other Autopatch customers.
-- Gain access to exclusive virtual meetings, focus groups, surveys, Teams discussions and previews.  
+- Engage directly with the Windows Autopatch Engineering Teams and other Autopatch customers
+- Gain access to exclusive virtual meetings, focus groups, surveys, Teams discussions and previews
 
 ### Windows Autopatch Technology Adoption Program (TAP)  
 
