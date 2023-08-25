@@ -68,7 +68,9 @@ To register the applications, follow these steps:
 :::row-end:::
 :::row:::
   :::column span="3":::
-  3. Review the permissions requested by the *Microsoft Pin Reset Service Production* application and select **Accept** to confirm consent to both applications to access your organization
+  3. Review the permissions requested by the *Microsoft Pin Reset Service Production* application and select **Accept** to confirm consent to both applications to access your organization.
+  >[!NOTE]
+  >After accepance, the redirect page will show a blank page. This is a known behavior.
   :::column-end:::
   :::column span="1":::
     :::image type="content" alt-text="Screenshot showing the PIN reset service permissions final page." source="images/pinreset/pin-reset-service-prompt-2.png" lightbox="images/pinreset/pin-reset-service-prompt-2.png" border="true":::
@@ -178,7 +180,7 @@ The _PIN reset_ configuration can be viewed by running [**dsregcmd /status**](/a
 
 **Applies to:** Azure AD joined devices
 
-PIN reset on Azure AD-joined devices uses a flow called *web sign-in* to authenticate users in the lock screen. Web sign-in only allows navigation to specific domains. If web sign-in attempts to navigate to a domain that isn't allowed, it displays a page with the error message: *We can't open that page right now*.\
+PIN reset on Azure AD-joined devices uses a flow called *web sign-in* to authenticate users in the lock screen. Web sign-in only allows navigation to specific domains. If web sign-in attempts to navigate to a domain that isn't allowed, it displays a page with the error message: *"We can't open that page right now"*.\
 If you have a federated environment and authentication is handled using AD FS or a third-party identity provider, then you must configure your devices with a policy to allow a list of domains that can be reached during PIN reset flows. When set, it ensures that authentication pages from that identity provider can be used during Azure AD joined PIN reset.
 
 [!INCLUDE [intune-settings-catalog-1](../../../../includes/configure/intune-settings-catalog-1.md)]
@@ -196,7 +198,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 | <li> OMA-URI: `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls` </li><li>Data type: String </li><li>Value: Provide a semicolon delimited list of domains needed for authentication during the PIN reset scenario. An example value would be **signin.contoso.com;portal.contoso.com**</li>|
 
 > [!NOTE]
-> For Azure Government, there is a known issue with PIN reset on Azure AD Joined devices failing. When the user attempts to launch PIN reset, the PIN reset UI shows an error page that says, "We can't open that page right now." The ConfigureWebSignInAllowedUrls policy can be used to work around this issue. If you are experiencing this problem and you are using Azure US Government cloud, set **login.microsoftonline.us** as the value for the ConfigureWebSignInAllowedUrls policy.
+> For Azure Government, there is a known issue with PIN reset on Azure AD Joined devices failing. When the user attempts to launch PIN reset, the PIN reset UI shows an error page that says, *"We can't open that page right now"*. The ConfigureWebSignInAllowedUrls policy can be used to work around this issue. If you are experiencing this problem and you are using Azure US Government cloud, set **login.microsoftonline.us** as the value for the ConfigureWebSignInAllowedUrls policy.
 
 ## Use PIN reset
 
