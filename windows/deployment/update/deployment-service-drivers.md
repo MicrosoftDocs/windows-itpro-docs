@@ -1,19 +1,24 @@
 ---
-title: Deploy drivers and firmware updates with Windows Update for Business deployment service.
-description: Use Windows Update for Business deployment service to deploy driver and firmware updates. 
+title: Deploy drivers and firmware updates
+titlesuffix: Windows Update for Business deployment service
+description: Use Windows Update for Business deployment service to deploy driver and firmware updates to devices.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
 author: mestew
-ms.localizationpriority: medium
 ms.author: mstewart
 manager: aaroncz
-ms.topic: article
-ms.technology: itpro-updates
+ms.collection:
+  - tier1
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 06/22/2023
 ---
 
 # Deploy drivers and firmware updates with Windows Update for Business deployment service
 <!--7260403, 7512398-->
-***(Applies to: Windows 11 & Windows 10)***
 
 The Windows Update for Business deployment service is used to approve and schedule software updates. The deployment service exposes its capabilities through the [Microsoft Graph API](/graph/use-the-api). You can call the API directly, through a [Graph SDK](/graph/sdks/sdks-overview), or integrate them with a management tool such as [Microsoft Intune](/mem/intune). 
 

@@ -2,7 +2,7 @@
 ms.date: 08/03/2023
 title: Local Accounts
 description: Learn how to secure and manage access to the resources on a standalone or member server for services or users.
-ms.topic: conceptual
+ms.topic: concept-article
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>

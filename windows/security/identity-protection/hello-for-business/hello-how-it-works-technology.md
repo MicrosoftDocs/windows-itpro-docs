@@ -2,7 +2,7 @@
 title: How Windows Hello for Business works - technology and terms
 description: Explore technology and terms associated with Windows Hello for Business. Learn how Windows Hello for Business works.
 ms.date: 10/08/2018
-ms.topic: article
+ms.topic: glossary
 ---
 
 # Technology and terms

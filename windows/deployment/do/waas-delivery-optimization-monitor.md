@@ -1,23 +1,36 @@
 ---
+manager: aaroncz
+title: Monitor Delivery Optimization
+description: How to monitor Delivery Optimization
+ms.collection:
+  - tier3
+ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: reference
+ms.date: 08/13/2023
+ms.localizationpriority: medium
 ms.author: carmenf
 author: cmknox
 ms.reviewer: mstewart
-manager: aaroncz
-ms.prod: windows-client
-ms.technology: itpro-deploy
-ms.topic: include
-ms.date: 07/31/2023
-ms.localizationpriority: medium
 ---
-<!--This file is shared by do/waas-delivery-optimization-setup.md and the update/update-compliance-get-started.md articles -->
 
-## Monitor Delivery Optimization
+# Monitor Delivery Optimization
 
-### Windows PowerShell cmdlets
+To monitor Delivery Optimization, you can use either the Windows Update for Business Delivery Optimization Report or Windows PowerShell cmdlets.
+
+## Monitor with Windows Update for Business Delivery Optimization Report
+
+Windows Update for Business Delivery Optimization Report provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer, Microsoft Connected Cache (MCC), HTTP source/CDN distribution over the past 28 days.
+
+:::image type="content" source="../update/media/wufb-do-overview.png" alt-text="This screenshot shows the Windows Update for Business report, Delivery Optimization status in Update Compliance." lightbox= "../update/media/wufb-do-overview.png":::
+
+For details, see [Windows Update for Business Delivery Optimization Report](/windows/deployment/update/wufb-reports-overview).
+
+## Windows PowerShell cmdlets
 
 **Starting in Windows 10, version 1703**, you can use new PowerShell cmdlets to check the performance of Delivery Optimization.
 
-#### Analyze usage
+### Analyze usage
 
 `Get-DeliveryOptimizationStatus` returns a real-time snapshot of all current Delivery Optimization jobs.
 
@@ -113,7 +126,7 @@ Using the `-Verbose` option returns additional information:
 
 Starting in Windows 10, version 1803, `Get-DeliveryOptimizationPerfSnapThisMonth` returns data similar to data from `Get-DeliveryOptimizationPerfSnap` but limited to the current calendar month.
 
-#### Manage the Delivery Optimization cache
+### Manage the Delivery Optimization cache
 
 **Starting in Windows 10, version 1903:**
 
@@ -133,7 +146,7 @@ You can now "pin" files to keep them persistent in the cache, only with files th
 - `-IncludePinnedFiles` deletes all files that are pinned.
 - `-Force` deletes the cache with no prompts.
 
-#### Work with Delivery Optimization logs
+### Work with Delivery Optimization logs
 
 **Starting in Windows 10, version 2004:**
 
@@ -184,18 +197,19 @@ The provider is listed as "Default Provider" if it's using the Delivery Optimiza
 
 The cmdlet returns the following data:
 
-- BatteryPctToSeed: Corresponds to the [DOMinBatteryPercentageAllowedToUpload](../waas-delivery-optimization-reference.md#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) policy.
+- BatteryPctToSeed: Corresponds to the [DOMinBatteryPercentageAllowedToUpload](waas-delivery-optimization-reference.md#allow-uploads-while-the-device-is-on-battery-while-under-set-battery-level) policy.
 - WorkingDirectory: The local folder containing the Delivery Optimization cache.
-- MinTotalDiskSize: Corresponds to the [DOMinDiskSizeAllowedToPeer](../waas-delivery-optimization-reference.md#minimum-disk-size-allowed-to-use-peer-caching) policy.
-- MinTotalRAM: Corresponds to the [DOMinRAMAllowedToPeer](../waas-delivery-optimization-reference.md#minimum-ram-inclusive-allowed-to-use-peer-caching) policy.
-- VpnPeerCachingAllowed: Corresponds to the [DOAllowVPNPeerCaching](../waas-delivery-optimization-reference.md#enable-peer-caching-while-the-device-connects-via-vpn) policy.
+- MinTotalDiskSize: Corresponds to the [DOMinDiskSizeAllowedToPeer](waas-delivery-optimization-reference.md#minimum-disk-size-allowed-to-use-peer-caching) policy.
+- MinTotalRAM: Corresponds to the [DOMinRAMAllowedToPeer](waas-delivery-optimization-reference.md#minimum-ram-inclusive-allowed-to-use-peer-caching) policy.
+- VpnPeerCachingAllowed: Corresponds to the [DOAllowVPNPeerCaching](waas-delivery-optimization-reference.md#enable-peer-caching-while-the-device-connects-via-vpn) policy.
 - VpnKeywords: List of keywords used to identify a VPN adapter.
-- SetHoursToLimitDownloadBackground: Corresponds to the [DOSetHoursToLimitBackgroundDownloadBandwidth](../waas-delivery-optimization-reference.md#set-business-hours-to-limit-background-download-bandwidth) policy.
-- SetHoursToLimitDownloadForeground: Corresponds to the [DOSetHoursToLimitForegroundDownloadBandwidth](../waas-delivery-optimization-reference.md#set-business-hours-to-limit-foreground-download-bandwidth) policy.
-- DownloadMode: Corresponds to the [DODownloadMode](../waas-delivery-optimization-reference.md#download-mode) policy.
-- DownBackLimitBps: Corresponds to the [DOMaxBackgroundDownloadBandwidth](../waas-delivery-optimization-reference.md#maximum-background-download-bandwidth-in-kbs) policy.
-- DownloadForegroundLimitBps: Corresponds to the [DOMaxForegroundDownloadBandwidth](../waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) policy.
-- DownBackLimitPct: Corresponds to the [DOPercentageMaxBackgroundBandwidth](../waas-delivery-optimization-reference.md#maximum-background-download-bandwidth) policy.
-- DownloadForegroundLimitPct: Corresponds to the [DOPercentageMaxForegroundBandwidth](../waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth) policy.
-- MaxUploadRatePct: Corresponds to the [DOMaxUploadBandwidth](../waas-delivery-optimization-reference.md#max-upload-bandwidth) policy (deprecated in Windows 10, version 2004).
-- UploadLimitMonthlyGB: Corresponds to the [DOMonthlyUploadDataCap](../waas-delivery-optimization-reference.md#monthly-upload-data-cap) policy.
+- SetHoursToLimitDownloadBackground: Corresponds to the [DOSetHoursToLimitBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#set-business-hours-to-limit-background-download-bandwidth) policy.
+- SetHoursToLimitDownloadForeground: Corresponds to the [DOSetHoursToLimitForegroundDownloadBandwidth](waas-delivery-optimization-reference.md#set-business-hours-to-limit-foreground-download-bandwidth) policy.
+- DownloadMode: Corresponds to the [DODownloadMode](waas-delivery-optimization-reference.md#download-mode) policy.
+- DownBackLimitBps: Corresponds to the [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-background-download-bandwidth-in-kbs) policy.
+- DownloadForegroundLimitBps: Corresponds to the [DOMaxForegroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) policy.
+- DownBackLimitPct: Corresponds to the [DOPercentageMaxBackgroundBandwidth](waas-delivery-optimization-reference.md#maximum-background-download-bandwidth) policy.
+- DownloadForegroundLimitPct: Corresponds to the [DOPercentageMaxForegroundBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth) policy.
+- MaxUploadRatePct: Corresponds to the [DOMaxUploadBandwidth](waas-delivery-optimization-reference.md#max-upload-bandwidth) policy (deprecated in Windows 10, version 2004).
+- UploadLimitMonthlyGB: Corresponds to the [DOMonthlyUploadDataCap](waas-delivery-optimization-reference.md#monthly-upload-data-cap) policy.
+
