@@ -42,7 +42,7 @@ This policy setting allows you to specify an ACL in two different ways. You can 
 
 -   Blank
 
-    This value represents how the local security policy deletes the policy enforcement key. This value deletes the policy and then sets it as Not defined. The Blank value is set by using the ACL editor to empty the list, and then pressing OK.
+    This value represents how the local security policy deletes the policy enforcement key. This value deletes the policy and then sets it as Not defined. To set a blank value, select "Define this policy setting" and leave the Security descriptor empty, and then select OK.
 
 ### Location
 

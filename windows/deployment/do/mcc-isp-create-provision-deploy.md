@@ -9,6 +9,7 @@ ms.topic: article
 ms.date: 05/09/2023
 ms.technology: itpro-updates
 ms.collection: tier3
+ms.reviewer: mstewart
 ---
 
 # Create, configure, provision, and deploy the cache node in Azure portal
@@ -82,7 +83,7 @@ To set up and enable BGP routing for your cache node, follow the steps below:
 1. Under **Routing information**, select the routing method you would like to use. For more information, see [Client routing](#client-routing).
 
     - If you choose **Manual routing**, enter your address range/CIDR blocks.  
-    - If you choose **BGP routing**, enter the ASN and IP addresses of the neighborship.  
+    - If you choose **BGP routing**, enter the ASN and IP addresses of the neighborship. Use your ASN, the one used to sign up for MCC. MCC will be automatically assigned as the same ASN as the neighbor.
     > [!NOTE]
     > **Prefix count** and **IP Space** will stop displaying `0` when BGP is successfully established.
 

@@ -10,6 +10,8 @@
           href: overview/windows-autopatch-roles-responsibilities.md
         - name: Privacy
           href: overview/windows-autopatch-privacy.md
+        - name: Deployment guide
+          href: overview/windows-autopatch-deployment-guide.md
         - name: FAQ
           href: overview/windows-autopatch-faq.yml
     - name: Prepare
@@ -107,8 +109,8 @@
           href: operate/windows-autopatch-manage-driver-and-firmware-updates.md
         - name: Submit a support request
           href: operate/windows-autopatch-support-request.md
-        - name: Deregister a device
-          href: operate/windows-autopatch-deregister-devices.md
+        - name: Exclude a device
+          href: operate/windows-autopatch-exclude-device.md
         - name: Unenroll your tenant
           href: operate/windows-autopatch-unenroll-tenant.md
     - name: References

@@ -14,7 +14,7 @@ metadata:
     - tier3
   author: aczechowski
   ms.author: aaroncz
-  manager: dougeby
+  manager: aaroncz
   ms.date: 03/07/2022 #Required; mm/dd/yyyy format.
   localization_priority: medium
     
@@ -41,10 +41,10 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Delivery Optimization settings
+          - text: Delivery Optimization recommended settings
             url: waas-delivery-optimization-setup.md#recommended-delivery-optimization-settings
-          - text: Windows PowerShell for Delivery Optimization
-            url: waas-delivery-optimization-setup.md#windows-powershell-cmdlets
+          - text: Monitor Delivery Optimization for Windows
+            url: waas-delivery-optimization-monitor.md
           - text: Troubleshoot Delivery Optimization
             url: waas-delivery-optimization-setup.md#troubleshooting
           - text: Delivery Optimization Frequently Asked Questions
