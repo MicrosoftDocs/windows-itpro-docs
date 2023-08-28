@@ -1,20 +1,24 @@
 ---
-title: Windows Update for Business reports Data Schema - UCDeviceAlert
-manager: aaroncz
-description: UCDeviceAlert schema
+title: UCDeviceAlert data schema
+titleSuffix: Windows Update for Business reports
+description: UCDeviceAlert schema for Windows Update for Business reports. UCDeviceAlert is an individual device's record about an alert.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: reference
 author: mestew
 ms.author: mstewart
-ms.topic: reference
+manager: aaroncz
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 06/06/2022
-ms.technology: itpro-updates
 ---
 
 # UCDeviceAlert
 <!--37063317, 30141258, 37063041-->
-***(Applies to: Windows 11 & Windows 10)***
-
 These alerts are activated as a result of an issue that is device-specific. It isn't specific to the combination of a specific update and a specific device. Like UpdateAlerts, the AlertType indicates where the Alert comes from (ServiceDeviceAlert, ClientDeviceAlert). For example, an EndOfService alert is a ClientDeviceAlert, as a build no longer being serviced (EOS) is a client-wide state. Meanwhile, DeviceRegistrationIssues in the Windows Update for Business deployment service will be a ServiceDeviceAlert, as it's a device-wide state in the service to not be correctly registered.
+
+# Schema for UCDeviceAlert
 
 |Field |Type |Example |Description |
 |---|---|---|---|
