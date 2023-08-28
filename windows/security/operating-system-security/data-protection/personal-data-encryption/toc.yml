@@ -1,19 +1,7 @@
 items:
-- name: Overview
+- name: PDE overview
   href: index.md
-- name: Configure PDE with Intune
-  href: configure-pde-in-intune.md
-- name: Enable Personal Data Encryption (PDE)
-  href: intune-enable-pde.md
-- name: Disable Winlogon automatic restart sign-on (ARSO) for PDE
-  href: intune-disable-arso.md
-- name: Disable kernel-mode crash dumps and live dumps for PDE
-  href: intune-disable-memory-dumps.md
-- name: Disable Windows Error Reporting (WER)/user-mode crash dumps for PDE
-  href: intune-disable-wer.md
-- name: Disable hibernation for PDE
-  href: intune-disable-hibernation.md
-- name: Disable allowing users to select when a password is required when resuming from connected standby for PDE
-  href: intune-disable-password-connected-standby.md
+- name: Configure PDE
+  href: configure.md
 - name: PDE frequently asked questions (FAQ)
-  href: faq-pde.yml
+  href: faq.yml
