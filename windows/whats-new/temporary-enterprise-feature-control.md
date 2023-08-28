@@ -1,6 +1,6 @@
 ---
 title: Enterprise feature control in Windows 11
-description: Learn about the Windows 11 features behind temporary enterprise feature control.
+description: Learn about the Windows 11 features behind temporary enterprise feature control and permanent feature control.
 ms.prod: windows-client
 ms.technology: itpro-fundamentals
 ms.author: mstewart
@@ -20,7 +20,7 @@ appliesto:
 <!--7790977-->
 
 > [!WARNING]
-> THIS IS AN IN-PROGRESS ROUGH DRAFT. The wording and feature list may change before publishing. 
+> THIS IS AN IN-PROGRESS ROUGH DRAFT. The wording and feature list may change before publishing. Last updated: 08/28/2023
 
 New features and enhancements are introduced through the monthly cumulative update to provide continuous innovation for Windows 11. To give organizations time to plan and prepare, some of these new features might be:
 
@@ -62,6 +62,7 @@ The following features are behind temporary enterprise control in Windows 11:
 | Windows Spotlight provides a minimized experience, opportunities to learn more about each image, and allows users to preview images at full screen.<!--8092554, WIP.23511 & WIP.25281, AllowWindowsSpotlight-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | This feature also has a permanent control: </br></br> **CSP**: ./User/Vendor/MSFT/Policy/Config/Experience/[AllowWindowsSpotlight](/windows/client-management/mdm/policy-csp-experience#allowwindowsspotlight)</br> </br>**Group Policy**: User Configuration\Administrative Templates\Windows Components\Cloud Content\\**Turn off all Windows spotlight features**| |
 | Windows Copilot <!--8092554, WIP.23493 -->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | This feature has multiple permanent controls. For more information, see the [Windows 11 features with permanent enterprise feature control](#windows-11-features-with-permanent-enterprise-feature-control) section|
 | Dev Home <!--8092554, WIP.23506-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | `Get-AppxPackage -Name Microsoft.Windows.DevHome` |
+|Dev Drive <!--8092554, WIP.23466-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | 2023 annual feature update | This feature has multiple permanent controls. For more information, see the [Windows 11 features with permanent enterprise feature control](#windows-11-features-with-permanent-enterprise-feature-control) section | 
 
 ## Permanent enterprise feature control
 
@@ -79,3 +80,4 @@ The following features introduced through the monthly cumulative updates allow p
 | Transfer files to another PC using WiFi direct<!--8092554, WIP.23506-->|[September 2023 - KBXXXXXXX](https://support.microsoft.com/)|Yes|**CSP**: ./Device/Vendor/MSFT/Policy/Config/Wifi/[AllowWiFiDirect](/windows/client-management/mdm/policy-csp-wifi#allowwifidirect)|
 | Windows Copilot <!--8092554, WIP.23493 --> | [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | Yes |**CSP**: ./User/Vendor/MSFT/WindowsAI/[TurnOffWindowsCopilot](/windows/client-management/mdm/policy-csp-windowsai#turnoffwindowscopilot) </br> </br> **Group Policy**: User Configuration\Administrative Templates\Windows Components\Windows Copilot\\**Turn off Windows Copilot**|
 | Windows Copilot taskbar display <!--8092554, WIP.23493--> | [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | Yes| **CSP**: ./Device and User/Vendor/MSFT/Policy/Config/Start/[HideCopilotButton](/windows/client-management/mdm/policy-csp-start#hidecopilotbutton) </br> </br> **Group Policy**: Computer and User Configuration\Administrative Templates\Start Menu and Taskbar\\**Hide the Copilot button**|
+|Dev Drive <!--8092554, WIP.23466-->| [September 2023 - KBXXXXXXX](https://support.microsoft.com/) | Yes |**CSPs**: </br> - ./Device/Vendor/MSFT/Policy/Config/ADMX_FileSys/[EnableDevDrive](/windows/client-management/mdm/policy-csp-admx-filesys#enableeeverive) </br> - ./Device/Vendor/MSFT/Policy/Config/ADMX_FileSys/[DevDriveAttachPolicy](/windows/client-management/mdm/policy-csp-admx-filesys#devdriveattachpolicy) </br> </br> **Group Policies**:  </br> - Computer and User Configuration\Administrative Templates\System\FileSystem\\**Enable dev drive** </br> - Computer and User Configuration\Administrative Templates\System\FileSystem\\**Dev drive filter attach policy**|
