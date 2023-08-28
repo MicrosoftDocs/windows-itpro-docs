@@ -10,9 +10,8 @@ ms.author: mstewart
 manager: aaroncz
 ms.localizationpriority: medium
 appliesto: 
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-- ✅ devices managed by <a href=https://learn.microsoft.com/mem/intune/fundamentals/what-is-intune target=_blank>Microsoft Intune</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11 and Windows 10</a>
+- devices managed by <a href=https://learn.microsoft.com/mem/intune/fundamentals/what-is-intune target=_blank>Microsoft Intune</a>
 ms.date: 03/08/2023
 ---
 
