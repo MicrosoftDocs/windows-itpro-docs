@@ -7,7 +7,7 @@ author: frankroj
 manager: aaroncz
 ms.author: frankroj
 ms.topic: article
-ms.date: 07/26/2023
+ms.date: 08/22/2023
 ms.technology: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -1272,3 +1272,9 @@ The **boot.wim** that is part of Windows installation media isn't supported for 
 ## Windows Server 2012 R2
 
 This walk-through isn't intended for use with Windows Server 2012 R2. Although the steps in this article may work with Windows Server 2012 R2 when using older versions of the Windows ADK. However it may have compatibility problems with versions of the Windows ADK that are newer than the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads). For server OSes, it's recommended to use Windows Server 2016 or later for this walk-through. For more information, see [Windows Server 2012 R2 Lifecycle](/lifecycle/products/windows-server-2012-r2).
+
+## Related articles
+
+- [Create bootable Windows PE media: Update the Windows PE add-on for the Windows ADK](/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive#update-the-windows-pe-add-on-for-the-windows-adk)
+- [Update Windows installation media with Dynamic Update: Update WinPE](/windows/deployment/update/media-dynamic-update#update-winpe)
+- [KB5025885: How to manage the Windows Boot Manager revocations for Secure Boot changes associated with CVE-2023-24932: Updating bootable media](https://prod.support.services.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d?preview=true#updatebootable5025885)

@@ -1,24 +1,21 @@
 ---
-title: Learn about the different app types in Windows 10/11 | Microsoft Docs
+title: Overview of apps on Windows client devices
 description: Learn more and understand the different types of apps that run on Windows 10 and Windows 11. For example, learn more about UWP, WPF, Win32, and Windows Forms apps, including the best way to install these apps.
 author: aczechowski
 ms.author: aaroncz
 manager: aaroncz
 ms.date: 02/09/2023
-ms.topic: article
+ms.topic: overview
 ms.prod: windows-client
 ms.technology: itpro-apps
 ms.localizationpriority: medium
 ms.collection: tier2
-ms.reviewer:
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ---
 
 # Overview of apps on Windows client devices
-
-**Applies to**:
-
-- Windows 10
-- Windows 11
 
 ## Before you begin
 

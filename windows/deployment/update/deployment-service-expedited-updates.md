@@ -1,20 +1,24 @@
 ---
-title: Deploy expedited updates with Windows Update for Business deployment service
-description: Use Windows Update for Business deployment service to deploy expedited updates.
+title: Deploy expedited updates
+titlesuffix: Windows Update for Business deployment service
+description: Learn how to use Windows Update for Business deployment service to deploy expedited updates to devices in your organization. 
 ms.prod: windows-client
-author: mestew
-ms.localizationpriority: medium
-ms.author: mstewart
-manager: aaroncz
-ms.topic: article
 ms.technology: itpro-updates
+ms.topic: conceptual
+ms.author: mstewart
+author: mestew
+manager: aaroncz
+ms.collection:
+  - tier1
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 02/14/2023
 ---
 
 # Deploy expedited updates with Windows Update for Business deployment service
-
 <!--7512398-->
-***(Applies to: Windows 11 & Windows 10)***
 
 In this article, you will:
 > [!div class="checklist"]
