@@ -1,6 +1,6 @@
 ---
 title: Prerequisites for the deployment service
-titlesuffix: Windows Update for Business deployment service
+titleSuffix: Windows Update for Business deployment service
 description: Prerequisites for using the Windows Update for Business deployment service for updating devices in your organization. 
 ms.prod: windows-client
 ms.technology: itpro-updates
