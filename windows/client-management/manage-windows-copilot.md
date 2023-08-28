@@ -15,7 +15,7 @@ This article lists settings available to manage Windows Copilot. To learn more a
 
 ## Hide the Copilot button from the taskbar
 
-This policy setting allows you to hide the Copilot button. If you enable this policy setting, the Copilot button will be hidden and the Settings toggle will be disabled.
+This policy setting allows you to hide the Copilot button. If you enable this policy setting, the Copilot button is hidden and the Settings toggle is disabled.
 
 |                  | Setting                                                                                                          |
 |------------------|------------------------------------------------------------------------------------------------------------------|
@@ -24,22 +24,13 @@ This policy setting allows you to hide the Copilot button. If you enable this po
 
 ## Turn off Windows Copilot
 
-This policy setting allows you to turn off Windows Copilot.
-
-- If you enable this policy setting, users will not be able to use Copilot. The Copilot icon will not appear on the taskbar either.
-- If you disable or do not configure this policy setting, users will be able to use Copilot when it's available to them.
+This policy setting allows you to turn off Windows Copilot. If you enable this policy setting, users can't use Copilot. The Copilot icon doesn't appear on the taskbar either. If you disable or don't configure this policy setting, users can use Copilot when it's available to them.
 
 |                  | Setting                                                                                                 |
 |------------------|---------------------------------------------------------------------------------------------------------|
 | **CSP**          | ./User/Vendor/MSFT/WindowsAI/[TurnOffWindowsCopilot](mdm/policy-csp-windowsai.md#turnoffwindowscopilot) |
 | **Group policy** | User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button**    |
 
-### [:::image type="icon" source="images/icons/intune.svg"::: **CSP**](#tab/csp)
+## Related articles
 
-[CSP setting]
-
-### [:::image type="icon" source="images/icons/group-policy.svg"::: **Group policy**](#tab/group-policy)
-
-[Group policy setting]
-
----
+- [Welcome to Copilot in Windows](https://support.microsoft.com/windows/welcome-to-copilot-in-windows-675708af-8c16-4675-afeb-85a5a476ccb0)
