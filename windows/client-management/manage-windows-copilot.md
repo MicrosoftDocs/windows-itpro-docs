@@ -9,25 +9,30 @@ appliesto:
 
 # Manage Windows Copilot
 
-[Introduction]
+Windows is the first PC platform to provide centralized AI assistance for customers. Together, with Bing Chat and first and third-party plugins, Windows Copilot helps you bring your ideas to life, complete complex projects and collaborate instead of spending energy finding, launching and working across multiple applications.
+
+This article lists settings available to manage Windows Copilot. To learn more about Windows Copilot, see [Welcome to Copilot in Windows](https://support.microsoft.com/windows/welcome-to-copilot-in-windows-675708af-8c16-4675-afeb-85a5a476ccb0).
 
 ## Hide the Copilot button from the taskbar
 
-[Setting description]
+This policy setting allows you to hide the Copilot button. If you enable this policy setting, the Copilot button will be hidden and the Settings toggle will be disabled.
 
-### [:::image type="icon" source="images/icons/intune.svg"::: **CSP**](#tab/csp)
-
-[CSP setting]
-
-### [:::image type="icon" source="images/icons/group-policy.svg"::: **Group policy**](#tab/group-policy)
-
-[Group policy setting]
-
----
+|                  | Setting                                                                                                          |
+|------------------|------------------------------------------------------------------------------------------------------------------|
+| **CSP**          | ./[Device/User]/Vendor/MSFT/Policy/Config/Start/[HideCopilotButton](mdm/policy-csp-start.md#hidecopilotbutton)   |
+| **Group policy** | Computer or User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button** |
 
 ## Turn off Windows Copilot
 
-[Setting description]
+This policy setting allows you to turn off Windows Copilot.
+
+- If you enable this policy setting, users will not be able to use Copilot. The Copilot icon will not appear on the taskbar either.
+- If you disable or do not configure this policy setting, users will be able to use Copilot when it's available to them.
+
+|                  | Setting                                                                                                 |
+|------------------|---------------------------------------------------------------------------------------------------------|
+| **CSP**          | ./User/Vendor/MSFT/WindowsAI/[TurnOffWindowsCopilot](mdm/policy-csp-windowsai.md#turnoffwindowscopilot) |
+| **Group policy** | User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button**    |
 
 ### [:::image type="icon" source="images/icons/intune.svg"::: **CSP**](#tab/csp)
 
