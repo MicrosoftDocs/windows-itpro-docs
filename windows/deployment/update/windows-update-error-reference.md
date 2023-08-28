@@ -2,22 +2,19 @@
 title: Windows Update error code list by component
 description: Learn about reference information for Windows Update error codes, including automatic update errors, UI errors, and reporter errors.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: reference
 author: mestew
 ms.author: mstewart
 manager: aaroncz
 ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
 ms.date: 09/18/2018
-ms.topic: article
-ms.technology: itpro-updates
 ---
 
 # Windows Update error codes by component
-
-**Applies to**
-
--   Windows 10
--   Windows 11
-
 
 This section lists the error codes for Microsoft Windows Update. 
 

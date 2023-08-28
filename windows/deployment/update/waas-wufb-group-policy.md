@@ -195,7 +195,7 @@ Still more options are available in **Computer Configuration > Administrative Te
 
 Every Windows device provides users with various controls they can use to manage Windows Updates. They can access these controls by Search to find Windows Updates or by going selecting **Updates and Security** in **Settings**. We provide the ability to disable a variety of these controls that are accessible to users.
  
-Users with access to update pause settings can prevent both feature and quality updates for 7 days. You can prevent users from pausing updates through the Windows Update settings page by using **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Remove access to “Pause updates**.
+Users with access to update pause settings can prevent both feature and quality updates for 7 days. You can prevent users from pausing updates through the Windows Update settings page by using **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Remove access to Pause updates**.
 When you disable this setting, users will see **Some settings are managed by your organization** and the update pause settings are greyed out.
 
 If you use Windows Server Update Server (WSUS), you can prevent users from scanning Windows Update. To do this, use **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Remove access to use all Windows Update features**.
