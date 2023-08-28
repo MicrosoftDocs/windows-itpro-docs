@@ -34,14 +34,14 @@ This section lists the error codes for Microsoft Windows Update.
 
 | Error code |                  Message                    |                                                       Description                                                        |
 |------------|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| 0x80243001 | `WU_E_INSTALLATION_RESULTS_UNKNOWN_VERSION` | The results of download and installation could not be read from the registry due to an unrecognized data format version. |
-| 0x80243002 |  `WU_E_INSTALLATION_RESULTS_INVALID_DATA`   |       The results of download and installation could not be read from the registry due to an invalid data format.        |
-| 0x80243003 |    `WU_E_INSTALLATION_RESULTS_NOT_FOUND`    |           The results of download and installation are not available; the operation may have failed to start.            |
+| 0x80243001 | `WU_E_INSTALLATION_RESULTS_UNKNOWN_VERSION` | The results of download and installation couldn't be read from the registry due to an unrecognized data format version. |
+| 0x80243002 |  `WU_E_INSTALLATION_RESULTS_INVALID_DATA`   |       The results of download and installation couldn't be read from the registry due to an invalid data format.        |
+| 0x80243003 |    `WU_E_INSTALLATION_RESULTS_NOT_FOUND`    |           The results of download and installation aren't available; the operation may have failed to start.            |
 | 0x80243004 |           `WU_E_TRAYICON_FAILURE`           |                    A failure occurred when trying to create an icon in the taskbar notification area.                    |
 | 0x80243FFD |              `WU_E_NON_UI_MODE`             |                    Unable to show UI when in non-UI mode; Windows Update client UI modules may not be installed.                     |
 | 0x80243FFE |     `WU_E_WUCLTUI_UNSUPPORTED_VERSION`      |                                 Unsupported version of Windows Update client UI exported functions.                                  |
 | 0x80243FFF |          `WU_E_AUCLIENT_UNEXPECTED`         |                   There was a user interface error not covered by another `WU_E_AUCLIENT_*` error code.                  |
-| 0x8024043D |          `WU_E_SERVICEPROP_NOTAVAIL`         |                   The requested service property is not available.                  |
+| 0x8024043D |          `WU_E_SERVICEPROP_NOTAVAIL`         |                   The requested service property isn't available.                  |
 
 ## Inventory errors
 
@@ -57,25 +57,25 @@ This section lists the error codes for Microsoft Windows Update.
 
 | Error code |            Message              |                                                          Description                                                           |
 |------------|---------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| 0x8024E001 |  `WU_E_EE_UNKNOWN_EXPRESSION`   |                An expression evaluator operation could not be completed because an expression was unrecognized.                |
-| 0x8024E002 |  `WU_E_EE_INVALID_EXPRESSION`   |                  An expression evaluator operation could not be completed because an expression was invalid.                   |
-| 0x8024E003 |   `WU_E_EE_MISSING_METADATA`    | An expression evaluator operation could not be completed because an expression contains an incorrect number of metadata nodes. |
-| 0x8024E004 |    `WU_E_EE_INVALID_VERSION`    |   An expression evaluator operation could not be completed because the version of the serialized expression data is invalid.   |
-| 0x8024E005 |    `WU_E_EE_NOT_INITIALIZED`    |                                       The expression evaluator could not be initialized.                                       |
-| 0x8024E006 | `WU_E_EE_INVALID_ATTRIBUTEDATA` |                An expression evaluator operation could not be completed because there was an invalid attribute.                |
-| 0x8024E007 |     `WU_E_EE_CLUSTER_ERROR`     |  An expression evaluator operation could not be completed because the cluster state of the computer could not be determined.   |
+| 0x8024E001 |  `WU_E_EE_UNKNOWN_EXPRESSION`   |                An expression evaluator operation couldn't be completed because an expression was unrecognized.                |
+| 0x8024E002 |  `WU_E_EE_INVALID_EXPRESSION`   |                  An expression evaluator operation couldn't be completed because an expression was invalid.                   |
+| 0x8024E003 |   `WU_E_EE_MISSING_METADATA`    | An expression evaluator operation couldn't be completed because an expression contains an incorrect number of metadata nodes. |
+| 0x8024E004 |    `WU_E_EE_INVALID_VERSION`    |   An expression evaluator operation couldn't be completed because the version of the serialized expression data is invalid.   |
+| 0x8024E005 |    `WU_E_EE_NOT_INITIALIZED`    |                                       The expression evaluator couldn't be initialized.                                       |
+| 0x8024E006 | `WU_E_EE_INVALID_ATTRIBUTEDATA` |                An expression evaluator operation couldn't be completed because there was an invalid attribute.                |
+| 0x8024E007 |     `WU_E_EE_CLUSTER_ERROR`     |  An expression evaluator operation couldn't be completed because the cluster state of the computer couldn't be determined.   |
 | 0x8024EFFF |       `WU_E_EE_UNEXPECTED`      |                     There was an expression evaluator error not covered by another `WU_E_EE_*` error code.                     |
  
 ## Reporter errors
 
 | Error code |                 Message                   |                                                     Description                                                      |
 |------------|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| 0x80247001 |        `WU_E_OL_INVALID_SCANFILE`         |                      An operation could not be completed because the scan package was invalid.                       |
-| 0x80247002 |       `WU_E_OL_NEWCLIENT_REQUIRED`        | An operation could not be completed because the scan package requires a greater version of the Windows Update Agent. |
+| 0x80247001 |        `WU_E_OL_INVALID_SCANFILE`         |                      An operation couldn't be completed because the scan package was invalid.                       |
+| 0x80247002 |       `WU_E_OL_NEWCLIENT_REQUIRED`        | An operation couldn't be completed because the scan package requires a greater version of the Windows Update Agent. |
 | 0x80247FFF |           `WU_E_OL_UNEXPECTED`            |                                        Search using the scan package failed.                                         |
 | 0x8024F001 |     `WU_E_REPORTER_EVENTCACHECORRUPT`     |                                         The event cache file was defective.                                          |
-| 0x8024F002 | `WU_E_REPORTER_EVENTNAMESPACEPARSEFAILED` |                            The XML in the event namespace descriptor could not be parsed.                            |
-| 0x8024F003 |           `WU_E_INVALID_EVENT`            |                            The XML in the event namespace descriptor could not be parsed.                            |
+| 0x8024F002 | `WU_E_REPORTER_EVENTNAMESPACEPARSEFAILED` |                            The XML in the event namespace descriptor couldn't be parsed.                            |
+| 0x8024F003 |           `WU_E_INVALID_EVENT`            |                            The XML in the event namespace descriptor couldn't be parsed.                            |
 | 0x8024F004 |            `WU_E_SERVER_BUSY`             |                            The server rejected an event because the server was too busy.                             |
 | 0x8024FFFF |         `WU_E_REPORTER_UNEXPECTED`        |                            There was a reporter error not covered by another error code.                             |
 
@@ -84,7 +84,7 @@ The components that download the `Wuredir.cab` file and then parse the `Wuredir.
 
 | Error code |      Message                 | Description                                                                              |
 |----------- |------------------------------|------------------------------------------------------------------------------------------|
-| 0x80245001 | `WU_E_REDIRECTOR_LOAD_XML`   | The redirector XML document could not be loaded into the DOM class.                      |
+| 0x80245001 | `WU_E_REDIRECTOR_LOAD_XML`   | The redirector XML document couldn't be loaded into the DOM class.                      |
 | 0x80245002 | `WU_E_REDIRECTOR_S_FALSE`    | The redirector XML document is missing some required information.                        |
 | 0x80245003 | `WU_E_REDIRECTOR_ID_SMALLER` | The redirectorId in the downloaded redirector cab is less than in the cached cab.        |
 | 0x80245FFF | `WU_E_REDIRECTOR_UNEXPECTED` | The redirector failed for reasons not covered by another `WU_E_REDIRECTOR_*` error code. |
@@ -121,9 +121,9 @@ The following errors map to `SOAP_ERROR_CODE`s from the `Atlsoap.h` file. These 
 | 0x80244010 |     `WU_E_PT_EXCEEDED_MAX_SERVER_TRIPS`      |                                                       The number of round trips to the server exceeded the maximum limit.                                                        |
 | 0x80244011 |         `WU_E_PT_SUS_SERVER_NOT_SET`         |                                                                WUServer policy value is missing in the registry.                                                                 |
 | 0x80244012 |       `WU_E_PT_DOUBLE_INITIALIZATION`        |                                                        Initialization failed because the object was already initialized.                                                         |
-| 0x80244013 |       `WU_E_PT_INVALID_COMPUTER_NAME`        |                                                                    The computer name could not be determined.                                                                    |
+| 0x80244013 |       `WU_E_PT_INVALID_COMPUTER_NAME`        |                                                                    The computer name couldn't be determined.                                                                    |
 | 0x80244015 |       `WU_E_PT_REFRESH_CACHE_REQUIRED`       |                   The reply from the server indicates that the server was changed or the cookie was invalid; refresh the state of the internal cache and retry.                  |
-| 0x80244016 |      `WU_E_PT_HTTP_STATUS_BAD_REQUEST`       |                                            Same as HTTP status 400 - the server could not process the request due to invalid syntax.                                             |
+| 0x80244016 |      `WU_E_PT_HTTP_STATUS_BAD_REQUEST`       |                                            Same as HTTP status 400 - the server couldn't process the request due to invalid syntax.                                             |
 | 0x80244017 |         `WU_E_PT_HTTP_STATUS_DENIED`         |                                                  Same as HTTP status 401 - the requested resource requires user authentication.                                                  |
 | 0x80244018 |       `WU_E_PT_HTTP_STATUS_FORBIDDEN`        |                                                Same as HTTP status 403 - server understood the request but declined to fulfill it.                                               |
 | 0x80244019 |       `WU_E_PT_HTTP_STATUS_NOT_FOUND`        |                                        Same as HTTP status 404 - the server cannot find the requested URI (Uniform Resource Identifier).                                         |
@@ -144,14 +144,14 @@ The following errors map to `SOAP_ERROR_CODE`s from the `Atlsoap.h` file. These 
 | 0x80244028 |      `WU_E_PT_NO_AUTH_COOKIES_CREATED`       |                                                   Windows Update Agent was unable to create any valid authentication cookies.                                                    |
 | 0x80244029 |        `WU_E_PT_INVALID_CONFIG_PROP`         |                                                                    A configuration property value was wrong.                                                                     |
 | 0x8024402A |        `WU_E_PT_CONFIG_PROP_MISSING`         |                                                                   A configuration property value was missing.                                                                    |
-| 0x8024402B |       `WU_E_PT_HTTP_STATUS_NOT_MAPPED`       |                               The HTTP request could not be completed and the reason did not correspond to any of the `WU_E_PT_HTTP_*` error codes.                              |
+| 0x8024402B |       `WU_E_PT_HTTP_STATUS_NOT_MAPPED`       |                               The HTTP request couldn't be completed and the reason did not correspond to any of the `WU_E_PT_HTTP_*` error codes.                              |
 | 0x8024402C |     `WU_E_PT_WINHTTP_NAME_NOT_RESOLVED`      |                                       Same as ERROR_WINHTTP_NAME_NOT_RESOLVED - the proxy server or target server name cannot be resolved.                                       |
 | 0x8024402F |     `WU_E_PT_ECP_SUCCEEDED_WITH_ERRORS`      |                                                             External cab file processing completed with some errors.                                                             |
 | 0x80244030 |          `WU_E_PT_ECP_INIT_FAILED`           |                                                           The external cab processor initialization did not complete.                                                            |
 | 0x80244031 |      `WU_E_PT_ECP_INVALID_FILE_FORMAT`       |                                                                    The format of a metadata file was invalid.                                                                    |
 | 0x80244032 |        `WU_E_PT_ECP_INVALID_METADATA`        |                                                                  External cab processor found invalid metadata.                                                                  |
-| 0x80244033 |   `WU_E_PT_ECP_FAILURE_TO_EXTRACT_DIGEST`    |                                                        The file digest could not be extracted from an external cab file.                                                         |
-| 0x80244034 | `WU_E_PT_ECP_FAILURE_TO_DECOMPRESS_CAB_FILE` |                                                                 An external cab file could not be decompressed.                                                                  |
+| 0x80244033 |   `WU_E_PT_ECP_FAILURE_TO_EXTRACT_DIGEST`    |                                                        The file digest couldn't be extracted from an external cab file.                                                         |
+| 0x80244034 | `WU_E_PT_ECP_FAILURE_TO_DECOMPRESS_CAB_FILE` |                                                                 An external cab file couldn't be decompressed.                                                                  |
 | 0x80244035 |      `WU_E_PT_ECP_FILE_LOCATION_ERROR`       |                                                             External cab processor was unable to get file locations.                                                             |
 | 0x80244FFF |             `WU_E_PT_UNEXPECTED`             |                                                       A communication error not covered by another `WU_E_PT_*` error code.                                                       |
 | 0x8024502D |           `WU_E_PT_SAME_REDIR_ID`            |                       Windows Update Agent failed to download a redirector cabinet file with a new redirectorId value from the server during the recovery.                       |
@@ -161,12 +161,12 @@ The following errors map to `SOAP_ERROR_CODE`s from the `Atlsoap.h` file. These 
 
 | Error code |             Message               |                                                                Description                                                                 |
 |------------|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| 0x80246001 |     `WU_E_DM_URLNOTAVAILABLE`     |                    A download manager operation could not be completed because the requested file does not have a URL.                     |
-| 0x80246002 |    `WU_E_DM_INCORRECTFILEHASH`    |                      A download manager operation could not be completed because the file digest was not recognized.                       |
-| 0x80246003 |    `WU_E_DM_UNKNOWNALGORITHM`     |          A download manager operation could not be completed because the file metadata requested an unrecognized hash algorithm.           |
-| 0x80246004 |   `WU_E_DM_NEEDDOWNLOADREQUEST`   |                   An operation could not be completed because a download request is required from the download handler.                    |
-| 0x80246005 |        `WU_E_DM_NONETWORK`        |                    A download manager operation could not be completed because the network connection was unavailable.                     |
-| 0x80246006 |    `WU_E_DM_WRONGBITSVERSION`     | A download manager operation could not be completed because the version of Background Intelligent Transfer Service (BITS) is incompatible. |
+| 0x80246001 |     `WU_E_DM_URLNOTAVAILABLE`     |                    A download manager operation couldn't be completed because the requested file does not have a URL.                     |
+| 0x80246002 |    `WU_E_DM_INCORRECTFILEHASH`    |                      A download manager operation couldn't be completed because the file digest was not recognized.                       |
+| 0x80246003 |    `WU_E_DM_UNKNOWNALGORITHM`     |          A download manager operation couldn't be completed because the file metadata requested an unrecognized hash algorithm.           |
+| 0x80246004 |   `WU_E_DM_NEEDDOWNLOADREQUEST`   |                   An operation couldn't be completed because a download request is required from the download handler.                    |
+| 0x80246005 |        `WU_E_DM_NONETWORK`        |                    A download manager operation couldn't be completed because the network connection was unavailable.                     |
+| 0x80246006 |    `WU_E_DM_WRONGBITSVERSION`     | A download manager operation couldn't be completed because the version of Background Intelligent Transfer Service (BITS) is incompatible. |
 | 0x80246007 |      `WU_E_DM_NOTDOWNLOADED`      |                                                    The update has not been downloaded.                                                     |
 | 0x80246008 |   `WU_E_DM_FAILTOCONNECTTOBITS`   | A download manager operation failed because the download manager was unable to connect the Background Intelligent Transfer Service (BITS). |
 | 0x80246009 |   `WU_E_DM_BITSTRANSFERERROR`     |    A download manager operation failed because there was an unspecified Background Intelligent Transfer Service (BITS) transfer error.     |
@@ -178,7 +178,7 @@ The following errors map to `SOAP_ERROR_CODE`s from the `Atlsoap.h` file. These 
 
 | Error code |                Message                 |                                                                 Description                                                                 |
 |------------|----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| 0x80242000 |      `WU_E_UH_REMOTEUNAVAILABLE`       |                     A request for a remote update handler could not be completed because no remote process is available.                    |
+| 0x80242000 |      `WU_E_UH_REMOTEUNAVAILABLE`       |                     A request for a remote update handler couldn't be completed because no remote process is available.                    |
 | 0x80242001 |          `WU_E_UH_LOCALONLY`           |                       A request for a remote update handler could not be completed because the handler is local only.                       |
 | 0x80242002 |        `WU_E_UH_UNKNOWNHANDLER`        |                     A request for an update handler could not be completed because the handler could not be recognized.                     |
 | 0x80242003 |     `WU_E_UH_REMOTEALREADYACTIVE`      |                                  A remote update handler could not be created because one already exists.                                   |
