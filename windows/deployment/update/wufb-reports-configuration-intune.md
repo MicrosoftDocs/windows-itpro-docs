@@ -1,5 +1,5 @@
 ---
-title: Configuring Microsoft Intune devices
+title: Configure devices using Microsoft Intune
 titleSuffix: Windows Update for Business reports
 description: How to configure devices to use Windows Update for Business reports from Microsoft Intune.
 ms.prod: windows-client
