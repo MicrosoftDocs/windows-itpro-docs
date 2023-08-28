@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot the deployment service
-titlesuffix: Windows Update for Business deployment service
+titleSuffix: Windows Update for Business deployment service
 description: Solutions to commonly encountered problems when using the Windows Update for Business deployment service.
 ms.prod: windows-client
 ms.technology: itpro-updates
