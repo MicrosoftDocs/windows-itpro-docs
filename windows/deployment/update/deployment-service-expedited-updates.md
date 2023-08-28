@@ -1,6 +1,6 @@
 ---
 title: Deploy expedited updates
-titlesuffix: Windows Update for Business deployment service
+titleSuffix: Windows Update for Business deployment service
 description: Learn how to use Windows Update for Business deployment service to deploy expedited updates to devices in your organization. 
 ms.prod: windows-client
 ms.technology: itpro-updates
