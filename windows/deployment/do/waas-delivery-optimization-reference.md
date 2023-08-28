@@ -276,9 +276,7 @@ Starting in Windows 10, version 1803, allows you to delay the use of an HTTP sou
 
 MDM Setting: **DelayCacheServerFallbackForeground**
 
-Starting in Windows 10, version 1903, allows you to delay the fallback from cache server to the HTTP source for foreground content download by X seconds. If the 'Delay foreground download from HTTP' policy is set, it will apply first (to allow downloads from peers) and then this policy will be applied. **By default, this policy isn't set.**
-
-By default this policy isn't set. So,
+Starting in Windows 10, version 1903, allows you to delay the fallback from cache server to the HTTP source for foreground content download by X seconds. If the 'Delay foreground download from HTTP policy is set, it will apply first (to allow downloads from peers) and then this policy will be applied. **By default, this policy isn't set.**
 
 ### Delay Background Download Cache Server Fallback (in secs)
 
