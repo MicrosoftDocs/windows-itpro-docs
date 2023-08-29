@@ -108,11 +108,11 @@ The following errors map to `SOAPCLIENT_ERROR`s through the `Atlsoap.h` file. Th
 | `x8024400A` |    `WU_E_PT_SOAPCLIENT_PARSE`    |                     Same as `SOAPCLIENT_PARSE_ERROR` - `SOAP` client failed to parse the response from the server.                    |
 
 ## Other Protocol Talker errors
-The following errors map to `SOAP_ERROR_CODE`s from the `Atlsoap.h` file. These errors are obtained from the `m_fault.m_soapErrCode` member of the `CClientWebService` object when `GetClientError()` returns `SOAPCLIENT_SOAPFAULT`. 
 
+The following errors map to `SOAP_ERROR_CODE`s from the `Atlsoap.h` file. These errors are obtained from the `m_fault.m_soapErrCode` member of the `CClientWebService` object when `GetClientError()` returns `SOAPCLIENT_SOAPFAULT`.
 
-| Error code |   Message  |    Description   |
-|---|---|---|
+| Error code |             Message              |                                                              Description                                                              |
+|------------|----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | `0x8024400B` |            `WU_E_PT_SOAP_VERSION`            |                                    Same as `SOAP_E_VERSION_MISMATCH` - `SOAP` client found an unrecognizable namespace for the `SOAP` envelope.                                  |
 | `0x8024400C` |        `WU_E_PT_SOAP_MUST_UNDERSTAND`        |                                               Same as `SOAP_E_MUST_UNDERSTAND` - `SOAP` client was unable to understand a header.                                                |
 | `0x8024400D` |            `WU_E_PT_SOAP_CLIENT`             |                                            Same as `SOAP_E_CLIENT` - `SOAP` client found the message was malformed; fix before resending.                                        |
@@ -124,7 +124,7 @@ The following errors map to `SOAP_ERROR_CODE`s from the `Atlsoap.h` file. These 
 | `0x80244013` |       `WU_E_PT_INVALID_COMPUTER_NAME`        |                                                                    The computer name couldn't be determined.                                                                    |
 | `0x80244015` |       `WU_E_PT_REFRESH_CACHE_REQUIRED`       |                   The reply from the server indicates that the server was changed or the cookie was invalid; refresh the state of the internal cache and retry.                  |
 | `0x80244016` |      `WU_E_PT_HTTP_STATUS_BAD_REQUEST`       |                                            Same as HTTP status 400 - the server couldn't process the request due to invalid syntax.                                             |
-| `0x80244017`` |         `WU_E_PT_HTTP_STATUS_DENIED`         |                                                  Same as HTTP status 401 - the requested resource requires user authentication.                                                  |
+| `0x80244017` |         `WU_E_PT_HTTP_STATUS_DENIED`         |                                                  Same as HTTP status 401 - the requested resource requires user authentication.                                                  |
 | `0x80244018` |       `WU_E_PT_HTTP_STATUS_FORBIDDEN`        |                                                Same as HTTP status 403 - server understood the request but declined to fulfill it.                                               |
 | `0x80244019` |       `WU_E_PT_HTTP_STATUS_NOT_FOUND`        |                                        Same as HTTP status 404 - the server can't find the requested URI (Uniform Resource Identifier).                                         |
 | `0x8024401A` |       `WU_E_PT_HTTP_STATUS_BAD_METHOD`       |                                                            Same as HTTP status 405 - the HTTP method isn't allowed.                                                             |
