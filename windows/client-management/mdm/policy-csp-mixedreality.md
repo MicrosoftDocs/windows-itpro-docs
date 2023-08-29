@@ -4,7 +4,7 @@ description: Learn more about the MixedReality Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 08/29/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -489,6 +489,110 @@ The following XML string is an example of the value for this policy:
 <!-- ConfigureNtpClient-Examples-End -->
 
 <!-- ConfigureNtpClient-End -->
+
+<!-- ConfigureSharedAccount-Begin -->
+## ConfigureSharedAccount
+
+<!-- ConfigureSharedAccount-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+<!-- ConfigureSharedAccount-Applicability-End -->
+
+<!-- ConfigureSharedAccount-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Policy/Config/MixedReality/ConfigureSharedAccount
+```
+<!-- ConfigureSharedAccount-OmaUri-End -->
+
+<!-- ConfigureSharedAccount-Description-Begin -->
+<!-- Description-Source-DDF -->
+This policy specifies the configuration for Shared Accounts on the device. Shared Accounts are AAD accounts that are deployed to the device by an IT admin and can be used by anyone with physical access to the device. These accounts excel in deployments where the HoloLens device is used like a tool shared between multiple people and it doesn't matter which account is used to access AAD resources. Because these accounts can be signed in without requiring the user to provide credentials, you should ensure that these devices are physically secure, with access granted only to authorized personnel. You should also lock down these accounts to only have access to the required resources.
+<!-- ConfigureSharedAccount-Description-End -->
+
+<!-- ConfigureSharedAccount-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- ConfigureSharedAccount-Editable-End -->
+
+<!-- ConfigureSharedAccount-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `chr` (string) |
+| Access Type | Add, Delete, Get, Replace |
+<!-- ConfigureSharedAccount-DFProperties-End -->
+
+<!-- ConfigureSharedAccount-AllowedValues-Begin -->
+**Allowed values**:
+
+<br>
+<details>
+  <summary>Expand to see schema XML</summary>
+
+```xml
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:element name="SharedAccountConfiguration">
+    <xsd:complexType mixed="true">
+      <xsd:sequence>
+        <xsd:element minOccurs="1" maxOccurs="1" name="SharedAccount">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:choice>
+                <xsd:element name="IssuerThumbprint">
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="40" />
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="IssuerName">
+                  <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                      <xsd:maxLength value="512" />
+                    </xsd:restriction>
+                  </xsd:simpleType>
+                </xsd:element>
+              </xsd:choice>
+              <xsd:element minOccurs="0" maxOccurs="1" name="EkuOidRequirements">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element maxOccurs="5" name="Oid">
+                      <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                          <xsd:maxLength value="100" />
+                        </xsd:restriction>
+                      </xsd:simpleType>
+                    </xsd:element>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+              <xsd:element minOccurs="0" maxOccurs="1" name="AutoLogon">
+                <xsd:complexType>
+                  <xsd:simpleContent>
+                    <xsd:extension base="xsd:string">
+                      <xsd:attribute name="forced" type="xsd:boolean" />
+                    </xsd:extension>
+                  </xsd:simpleContent>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
+```
+
+</details>
+<!-- ConfigureSharedAccount-AllowedValues-End -->
+
+<!-- ConfigureSharedAccount-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- ConfigureSharedAccount-Examples-End -->
+
+<!-- ConfigureSharedAccount-End -->
 
 <!-- DisallowNetworkConnectivityPassivePolling-Begin -->
 ## DisallowNetworkConnectivityPassivePolling

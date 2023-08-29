@@ -4,7 +4,7 @@ description: Learn more about the FileExplorer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 08/29/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -167,8 +167,8 @@ Turning off files from Office.com will prevent File Explorer from requesting rec
 
 | Value | Description |
 |:--|:--|
-| 0 (Default) | File Explorer will request cloud file metadata and display it in the Quick access view. |
-| 1 | File Explorer won't request cloud file metadata or display it in the Quick access view. |
+| 0 (Default) | File Explorer will request cloud file metadata and display it in the homepage and other views. |
+| 1 | File Explorer won't request cloud file metadata or display it in the homepage or other views. |
 <!-- DisableGraphRecentItems-AllowedValues-End -->
 
 <!-- DisableGraphRecentItems-GpMapping-Begin -->

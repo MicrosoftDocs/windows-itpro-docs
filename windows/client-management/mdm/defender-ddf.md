@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/02/2023
+ms.date: 08/29/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1060,6 +1060,7 @@ The following XML file contains the device description framework (DDF) for the D
             <MSFT:CspVersion>1.3</MSFT:CspVersion>
           </MSFT:Applicability>
           <MSFT:AllowedValues ValueType="None">
+            <MSFT:List Delimiter="|" />
           </MSFT:AllowedValues>
         </DFProperties>
       </Node>
@@ -2194,7 +2195,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Replace />
           </AccessType>
           <DefaultValue>25</DefaultValue>
-          <Description>Configure how many days can pass before an aggressive quick scan is triggered. The valid interval is [7-60] days. If set to 0, aggressive quick scans will be disabled. By default, the value is set to 25 days.</Description>
+          <Description>Configure how many days can pass before an aggressive quick scan is triggered. The valid interval is [7-60] days. If not configured, aggressive quick scans will be disabled. By default, the value is set to 25 days when enabled.</Description>
           <DFFormat>
             <int />
           </DFFormat>
@@ -2212,7 +2213,7 @@ The following XML file contains the device description framework (DDF) for the D
             <MSFT:CspVersion>1.3</MSFT:CspVersion>
           </MSFT:Applicability>
           <MSFT:AllowedValues ValueType="Range">
-            <MSFT:Value>[0,7-60]</MSFT:Value>
+            <MSFT:Value>[7-60]</MSFT:Value>
           </MSFT:AllowedValues>
         </DFProperties>
       </Node>
@@ -2333,6 +2334,7 @@ The following XML file contains the device description framework (DDF) for the D
             <MSFT:CspVersion>1.3</MSFT:CspVersion>
           </MSFT:Applicability>
           <MSFT:AllowedValues ValueType="None">
+            <MSFT:List Delimiter="|" />
           </MSFT:AllowedValues>
         </DFProperties>
       </Node>
@@ -2345,9 +2347,10 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
-          <Description>Defines the maximum data duplication quota in MB that can be collected. When the quota is reached the filter will stop duplicating any data until the service manages to dispatch the existing collected data, thus decreasing the quota again below the maximum.</Description>
+          <DefaultValue>500</DefaultValue>
+          <Description>Defines the maximum data duplication quota in MB that can be collected. When the quota is reached the filter will stop duplicating any data until the service manages to dispatch the existing collected data, thus decreasing the quota again below the maximum. The valid interval is [5-5000] MB. By default, the maximum quota will be 500 MB.</Description>
           <DFFormat>
-            <chr />
+            <int />
           </DFFormat>
           <Occurrence>
             <One />
@@ -2362,7 +2365,8 @@ The following XML file contains the device description framework (DDF) for the D
             <MSFT:OsBuildVersion>10.0.17763</MSFT:OsBuildVersion>
             <MSFT:CspVersion>1.3</MSFT:CspVersion>
           </MSFT:Applicability>
-          <MSFT:AllowedValues ValueType="None">
+          <MSFT:AllowedValues ValueType="Range">
+            <MSFT:Value>[5-5000]</MSFT:Value>
           </MSFT:AllowedValues>
         </DFProperties>
       </Node>
@@ -2487,7 +2491,7 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
-          <DefaultValue>0</DefaultValue>
+          <DefaultValue>0x0</DefaultValue>
           <Description>Setting to control automatic remediation for Sense scans.</Description>
           <DFFormat>
             <int />
@@ -2506,6 +2510,10 @@ The following XML file contains the device description framework (DDF) for the D
             <MSFT:CspVersion>1.3</MSFT:CspVersion>
           </MSFT:Applicability>
           <MSFT:AllowedValues ValueType="Flag">
+            <MSFT:Enum>
+              <MSFT:Value>0x0</MSFT:Value>
+              <MSFT:ValueDescription>Passive Remediation is turned off (default)</MSFT:ValueDescription>
+            </MSFT:Enum>
             <MSFT:Enum>
               <MSFT:Value>0x1</MSFT:Value>
               <MSFT:ValueDescription>PASSIVE_REMEDIATION_FLAG_SENSE_AUTO_REMEDIATION: Passive Remediation Sense AutoRemediation</MSFT:ValueDescription>
@@ -2599,6 +2607,45 @@ The following XML file contains the device description framework (DDF) for the D
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
               <MSFT:ValueDescription>SMTP parsing is enabled</MSFT:ValueDescription>
+            </MSFT:Enum>
+          </MSFT:AllowedValues>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>DisableQuicParsing</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <DefaultValue>0</DefaultValue>
+          <Description>This setting disables QUIC Parsing for Network Protection.</Description>
+          <DFFormat>
+            <int />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME />
+          </DFType>
+          <MSFT:Applicability>
+            <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.3</MSFT:CspVersion>
+          </MSFT:Applicability>
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>QUIC parsing is disabled</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>0</MSFT:Value>
+              <MSFT:ValueDescription>QUIC parsing is enabled</MSFT:ValueDescription>
             </MSFT:Enum>
           </MSFT:AllowedValues>
         </DFProperties>
@@ -2729,9 +2776,10 @@ The following XML file contains the device description framework (DDF) for the D
             <Get />
             <Replace />
           </AccessType>
+          <DefaultValue>0</DefaultValue>
           <Description>Defines whether the cache maintenance idle task will perform the cache maintenance or not.</Description>
           <DFFormat>
-            <chr />
+            <int />
           </DFFormat>
           <Occurrence>
             <One />
@@ -2746,7 +2794,15 @@ The following XML file contains the device description framework (DDF) for the D
             <MSFT:OsBuildVersion>10.0.17763</MSFT:OsBuildVersion>
             <MSFT:CspVersion>1.3</MSFT:CspVersion>
           </MSFT:Applicability>
-          <MSFT:AllowedValues ValueType="None">
+          <MSFT:AllowedValues ValueType="ENUM">
+            <MSFT:Enum>
+              <MSFT:Value>1</MSFT:Value>
+              <MSFT:ValueDescription>Cache maintenance is disabled</MSFT:ValueDescription>
+            </MSFT:Enum>
+            <MSFT:Enum>
+              <MSFT:Value>0</MSFT:Value>
+              <MSFT:ValueDescription>Cache maintenance is enabled (default)</MSFT:ValueDescription>
+            </MSFT:Enum>
           </MSFT:AllowedValues>
         </DFProperties>
       </Node>
