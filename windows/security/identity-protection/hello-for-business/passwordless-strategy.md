@@ -317,7 +317,7 @@ The following image shows the SCRIL setting for a user in Active Directory Admin
 > 1. Enable the setting.
 > 1. Save changes again.
 >
-> When you upgrade the domain to Windows Server 2016 domain forest functional level or later, the domain controller automatically does this action for you.
+> When you upgrade the domain functional level to Windows Server 2016 or later, the domain controller automatically does this action for you.
 
 The following image shows the SCRIL setting for a user in Active Directory Administrative Center on Windows Server 2016:
 

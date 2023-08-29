@@ -2,12 +2,15 @@
 title: Get started with Windows Update
 description: An overview of learning resources for Windows Update, including documents on architecture, log files, and common errors.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
 author: mestew
 ms.author: mstewart
 manager: aaroncz
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
 ms.date: 09/18/2018
-ms.topic: article
-ms.technology: itpro-updates
 ---
 
 # Get started with Windows Update
@@ -31,7 +34,7 @@ To understand the changes to the Windows Update architecture that UUP introduces
 
 ![Windows Update terminology.](images/update-terminology.png)
 
-- **Update UI** – The user interface to initiate Windows Update check and history. Available under **Settings --> Update & Security --> Windows Update**. 
+- **Update UI** - The user interface to initiate Windows Update check and history. Available under **Settings --> Update & Security --> Windows Update**. 
 - **Update Session Orchestrator (USO)**- A Windows OS component that orchestrates the sequence of downloading and installing various update types from Windows Update.  
 
    Update types- 
@@ -51,5 +54,5 @@ To understand the changes to the Windows Update architecture that UUP introduces
  
 Additional components include the following- 
 
-- **CompDB** – A generic term to refer to the XML describing information about target build composition, available diff packages, and conditional rules. 
-- **Action List** – The payload and additional information needed to perform an update. The action list is consumed by the UpdateAgent, as well as other installers to determine what payload to download. It's also consumed by the "Install Agent" to determine what actions need to be taken, such as installing or removing packages.  
+- **CompDB** - A generic term to refer to the XML describing information about target build composition, available diff packages, and conditional rules. 
+- **Action List** - The payload and additional information needed to perform an update. The action list is consumed by the UpdateAgent, as well as other installers to determine what payload to download. It's also consumed by the "Install Agent" to determine what actions need to be taken, such as installing or removing packages.  
