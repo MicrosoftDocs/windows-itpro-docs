@@ -1,24 +1,20 @@
 ---
-title: Assign devices to servicing channels for Windows client updates
+title: Assign devices to servicing channels for updates
 description: Learn how to assign devices to servicing channels for Windows 10 updates locally, by using Group Policy, and by using MDM
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
 author: mestew
-ms.localizationpriority: medium
 ms.author: mstewart
 manager: aaroncz
-ms.topic: article
-ms.technology: itpro-updates
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
 ms.date: 12/31/2017
 ---
 
-# Assign devices to servicing channels for Windows 10 updates
-
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-
+# Assign devices to servicing channels for Windows updates
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
@@ -29,12 +25,12 @@ The General Availability Channel is the default servicing channel for all Window
 
 | Edition | General Availability Channel | Long-Term Servicing Channel | Insider Program |
 | --- | --- | --- | --- |
-| Home | ![no.](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-| Pro | ![yes.](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-| Enterprise  | ![yes.](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-| Enterprise LTSC  | ![no.](images/crossmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) |
-| Pro Education | ![yes.](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-| Education  | ![yes.](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
+| Home | No | No | Yes |
+| Pro | Yes | No | Yes |
+| Enterprise  | Yes | No | Yes |
+| Enterprise LTSC  | No | Yes | No |
+| Pro Education | Yes | No | Yes |
+| Education  | Yes | No | Yes |
 
 
 >[!NOTE]
@@ -46,7 +42,7 @@ The General Availability Channel is the default servicing channel for all Window
 
 ## Enroll devices in the Windows Insider Program
 
-To get started with the Windows Insider Program for Business, follows these steps:
+To get started with the Windows Insider Program for Business, follow these steps:
 
 1. On the [Windows Insider](https://www.microsoft.com/windowsinsider/for-business) website, select **Register** to register your organizational Azure AD account.
 2. Follow the prompts to register your tenant.</br>**Note:** The signed-in user needs to be a **Global Administrator** of the Azure AD domain in order to be able to register.

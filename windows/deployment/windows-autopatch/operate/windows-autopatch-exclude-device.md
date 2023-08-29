@@ -53,4 +53,4 @@ You can view the excluded devices in the **Not registered** tab to make it easie
 1. Select **Windows Autopatch** in the left navigation menu.
 1. Select **Devices**.
 1. In the **Not registered** tab, select the device(s) you want to restore.
-1. Once a device or multiple devices are selected, select **Device actions**. Then, select **Restore device**.
+1. Once a device or multiple devices are selected, select **Device actions**. Then, select **Restore excluded device**.

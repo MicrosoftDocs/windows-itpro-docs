@@ -24,7 +24,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Overview of apps in Windows
-            url: apps-in-windows-10.md
+            url: overview-windows-apps.md
           - text: Add or hide Windows features
             url: add-apps-and-features.md
           - text: Sideload LOB apps

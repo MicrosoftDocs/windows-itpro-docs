@@ -7,6 +7,7 @@ ms.date: 03/08/2018
 ms.reviewer: 
 manager: aaroncz
 ms.author: aaroncz
+ms.collection: must-keep
 ms.technology: itpro-apps
 ---
 

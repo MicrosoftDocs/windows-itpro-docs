@@ -8,6 +8,7 @@ ms.date: 05/02/2022
 ms.reviewer: 
 manager: aaroncz
 ms.author: aaroncz
+ms.collection: must-keep
 ms.topic: how-to
 ---
 

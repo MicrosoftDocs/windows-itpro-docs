@@ -1,19 +1,21 @@
 ---
 title: Windows Update for Business reports overview
-manager: aaroncz
+titleSuffix: Windows Update for Business reports
 description: Overview of Windows Update for Business reports to explain what it's used for and the cloud services it relies on.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: overview
 author: mestew
 ms.author: mstewart
-ms.topic: article
+manager: aaroncz
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
 ms.date: 11/15/2022
-ms.technology: itpro-updates
 ---
 
 # Windows Update for Business reports overview
 <!--37063317, 30141258, 37063041-->
-***(Applies to: Windows 11 & Windows 10)***
-
 Windows Update for Business reports is a cloud-based solution that provides information about your Azure Active Directory-joined devices' compliance with Windows updates. Windows Update for Business reports is offered through the [Azure portal](https://portal.azure.com), and it's included as part of the Windows 10 or Windows 11 prerequisite licenses. Windows Update for Business reports helps you:
 
 - Monitor security, quality, driver, and feature updates for Windows 11 and Windows 10 devices
