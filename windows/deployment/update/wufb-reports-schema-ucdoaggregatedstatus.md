@@ -20,7 +20,7 @@ ms.date: 11/17/2022
 
 UCDOAggregatedStatus is an aggregation of all individual UDDOStatus records across the tenant and summarizes bandwidth savings across all devices enrolled using [Delivery Optimization and Microsoft Connected Cache](/windows/deployment/do).
 
-# Schema for UCDOAggregatedStatus
+## Schema for UCDOAggregatedStatus
 
 |Field |Type |Example |Description |
 |---|---|---|---|

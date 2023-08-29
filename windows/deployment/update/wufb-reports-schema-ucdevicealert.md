@@ -18,7 +18,7 @@ ms.date: 06/06/2022
 <!--37063317, 30141258, 37063041-->
 These alerts are activated as a result of an issue that is device-specific. It isn't specific to the combination of a specific update and a specific device. Like UpdateAlerts, the AlertType indicates where the Alert comes from (ServiceDeviceAlert, ClientDeviceAlert). For example, an EndOfService alert is a ClientDeviceAlert, as a build no longer being serviced (EOS) is a client-wide state. Meanwhile, DeviceRegistrationIssues in the Windows Update for Business deployment service will be a ServiceDeviceAlert, as it's a device-wide state in the service to not be correctly registered.
 
-# Schema for UCDeviceAlert
+## Schema for UCDeviceAlert
 
 |Field |Type |Example |Description |
 |---|---|---|---|
