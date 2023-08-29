@@ -18,7 +18,7 @@ ms.date: 11/15/2022
 <!--37063317, 30141258, 37063041-->
 When the visualizations provided in the default experience don't fulfill your reporting needs, or if you need to troubleshoot issues with devices, it's valuable to understand the schema for Windows Update for Business reports and have a high-level understanding of the capabilities of [Azure Monitor log queries](/azure/azure-monitor/log-query/query-language) to power additional dashboards, integration with external data analysis tools, automated alerting, and more.
 
-## Schema
+## Schemas for Windows Update for Business reports
 
 The following table summarizes the different tables that are part of the Windows Update for Business reports solution. To learn how to navigate Azure Monitor Logs to find this data, see [Get started with log queries in Azure Monitor](/azure/azure-monitor/log-query/get-started-queries).
 

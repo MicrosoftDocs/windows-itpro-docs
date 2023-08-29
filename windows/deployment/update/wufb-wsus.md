@@ -68,13 +68,10 @@ The policy can be configured using the following two methods:
 2. Configuration Service Provider (CSP) Policies: **SetPolicyDrivenUpdateSourceFor&lt;Update Type>**:
 
 > [!NOTE]
-> You should configure **all** of these policies if you are using CSPs.
+> - You should configure **all** of these policies if you are using CSPs.
+> - Editing the registry to change the behavior of update policies isn't recommended. Use Group Policy or the Configuration Service Provider (CSP) policy instead of directly writing to the registry. However, if you choose to edit the registry, ensure you've configured the `UseUpdateClassPolicySource` registry key too, or the scan source won't be altered. 
 
 - [Update/SetPolicyDrivenUpdateSourceForDriverUpdates](/windows/client-management/mdm/policy-csp-update#update-setpolicydrivenupdatesourcefordriver)
 - [Update/SetPolicyDrivenUpdateSourceForFeatureUpdates](/windows/client-management/mdm/policy-csp-update#update-setpolicydrivenupdatesourceforfeature)
 - [Update/SetPolicyDrivenUpdateSourceForOtherUpdates](/windows/client-management/mdm/policy-csp-update#update-setpolicydrivenupdatesourceforother)
 - [Update/SetPolicyDrivenUpdateSourceForQualityUpdates](/windows/client-management/mdm/policy-csp-update#update-setpolicydrivenupdatesourceforquality)
-
-
-> [!NOTE]
-> Editing the registry to change the behavior of update policies isn't recommended. Use Group Policy or the Configuration Service Provider (CSP) policy instead of directly writing to the registry. However, if you choose to edit the registry, ensure you've configured the `UseUpdateClassPolicySource` registry key too, or the scan source won't be altered. 
