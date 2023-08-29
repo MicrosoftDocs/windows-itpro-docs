@@ -111,8 +111,8 @@ The following errors map to `SOAPCLIENT_ERROR`s through the `Atlsoap.h` file. Th
 The following errors map to `SOAP_ERROR_CODE`s from the `Atlsoap.h` file. These errors are obtained from the `m_fault.m_soapErrCode` member of the `CClientWebService` object when `GetClientError()` returns `SOAPCLIENT_SOAPFAULT`. 
 
 
-| Error code |                   Message                    |                                                                                   Description                                                                                    |
-|------------|----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Error code |   Message  |    Description   |
+|---|---|---|
 | `0x8024400B` |            `WU_E_PT_SOAP_VERSION`            |                                    Same as `SOAP_E_VERSION_MISMATCH` - `SOAP` client found an unrecognizable namespace for the `SOAP` envelope.                                  |
 | `0x8024400C` |        `WU_E_PT_SOAP_MUST_UNDERSTAND`        |                                               Same as `SOAP_E_MUST_UNDERSTAND` - `SOAP` client was unable to understand a header.                                                |
 | `0x8024400D` |            `WU_E_PT_SOAP_CLIENT`             |                                            Same as `SOAP_E_CLIENT` - `SOAP` client found the message was malformed; fix before resending.                                        |
