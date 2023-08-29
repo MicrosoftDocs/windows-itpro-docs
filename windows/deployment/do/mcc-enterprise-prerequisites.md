@@ -1,23 +1,21 @@
 ---
 title: Requirements for Microsoft Connected Cache (MCC) for Enterprise and Education
-manager: aaroncz
 description: Overview of requirements for Microsoft Connected Cache (MCC) for Enterprise and Education.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
 ms.author: carmenf
 author: cmknox
+manager: aaroncz
 ms.reviewer: mstewart
-ms.topic: article
-ms.date: 12/31/2017
-ms.technology: itpro-updates
 ms.collection: tier3
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+ms.date: 05/01/2023
 ---
 
 # Requirements of Microsoft Connected Cache for Enterprise and Education (early preview)
-
-**Applies to**
-
-- Windows 10
-- Windows 11
 
 > [!NOTE]
 > We're still accepting Enterprise and Education customers to join the early preview. To register your interest, fill out the survey located at [https://aka.ms/MSConnectedCacheSignup](https://aka.ms/MSConnectedCacheSignup).

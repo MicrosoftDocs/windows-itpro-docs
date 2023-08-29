@@ -1,23 +1,23 @@
 ---
 title: Deploying your cache node
-manager: aaroncz
 description: How to deploy a Microsoft Connected Cache (MCC) for Enterprise and Education cache node
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: how-to
 ms.author: carmenf
 author: cmknox
 ms.reviewer: mstewart
-ms.topic: article
-ms.date: 12/31/2017
-ms.technology: itpro-updates
+manager: aaroncz
 ms.collection: tier3
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+ms.date: 03/10/2023
 ---
 
-# Deploying your cache node
+# Deploy your cache node
 
-**Applies to**
-
-- Windows 10
-- Windows 11
+This article describes how to deploy a Microsoft Connected Cache (MCC) for Enterprise and Education cache node.
 
 ## Steps to deploy MCC
 

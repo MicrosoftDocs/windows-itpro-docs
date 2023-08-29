@@ -1,24 +1,22 @@
 ---
 title: Microsoft Connected Cache content and services endpoints
 description: List of fully qualified domain names, ports, and associated content types to use Delivery Optimization and Microsoft Connected Cache.
-ms.date: 03/31/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: reference
-ms.localizationpriority: medium
 author: cmknox
 ms.author: carmenf
 ms.reviewer: mstewart
 manager: aaroncz
 ms.collection: tier3
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+ms.date: 03/31/2023
 ---
 
 # Microsoft Connected Cache content and services endpoints
-
-_Applies to:_
-
-- Windows 11
-- Windows 10
 
 > [!NOTE]
 > All ports are outbound.
