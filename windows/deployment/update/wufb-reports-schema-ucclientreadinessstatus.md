@@ -1,20 +1,25 @@
 ---
-title: Windows Update for Business reports Data Schema - UCClientReadinessStatus
-manager: aaroncz
-description: UCClientReadinessStatus schema
+title: UCClientReadinessStatus data schema
+titleSuffix: Windows Update for Business reports
+description: UCClientReadinessStatus schema for Windows Update for Business reports. UCClientReadinessStatus is an individual device's record about Windows 11 readiness.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: reference
 author: mestew
 ms.author: mstewart
-ms.topic: reference
+manager: aaroncz
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
 ms.date: 06/06/2022
-ms.technology: itpro-updates
 ---
 
 # UCClientReadinessStatus
 <!--37063317, 30141258, 37063041-->
-***(Applies to: Windows 10)***
 
 UCClientReadinessStatus is an individual device's record about its readiness for updating to Windows 11. If the device isn't capable of running Windows 11, the record includes which Windows 11 [hardware requirements](/windows/whats-new/windows-11-requirements#hardware-requirements) the device doesn't meet.
+
+## Schema for UCClientReadinessStatus
 
 |Field |Type |Example |Description |
 |---|---|---|---|
