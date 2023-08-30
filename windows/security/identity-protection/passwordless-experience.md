@@ -74,7 +74,7 @@ Alternatively, you can configure devices using a [custom policy][INT-2] with the
 :::row-end:::
 :::row:::
   :::column span="3":::
-  **Passwordless experience turned on**: the password credential provider :::image type="icon" source="../images/icons/key.svg" border="false"::: is missing for a user who signed in with stron credentials. The user can sign in using a strong credential or can opt to use the *Other user* option to sign in with a password.
+  **Passwordless experience turned on**: the password credential provider :::image type="icon" source="../images/icons/key.svg" border="false"::: is missing for the last user who signed in with strong credentials. A user can either sign in using a strong credential or opt to use the *Other user* option to sign in with a password.
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/passwordless-experience/lock-screen-on.png" lightbox="images/passwordless-experience/lock-screen-on.png" alt-text="Screenshot of the Windows lock screen showing the fingerprint and PIN credential providers only. The password credential provider is missing.":::
@@ -92,7 +92,7 @@ When Passwordless experience is enabled, users can't use the password credential
 >[!NOTE]
 > RDP sign in defaults to the strong credential used during sign-in. However, a suers can select the option *Use a different account* to sign in with a password.
 >
-> *Run as* different user experience is not impacted by Passwordless experience.
+> *Run as different user* is not impacted by Passwordless experience.
 
 Example of UAC elevation experience:
 
@@ -118,11 +118,11 @@ Example of UAC elevation experience:
 Here's a list of recommendations to consider before enabling Passwordless experience:
 
 - If Windows Hello for Business is enabled, configure the [PIN reset](hello-for-business/hello-feature-pin-reset.md) feature to allow users to reset their PIN from the lock screen. The PIN reset experience is improved starting in Windows 11, version 22H2 with [KB5030310][KB-1]
-- Don't configure the security policy *Interactive logon: Don't display username at sign-in*, as it prevents Passwordless experience from working
+- Don't configure the security policy *Interactive logon: Don't display last signed-in*, as it prevents Passwordless experience from working
 - Don't disable the password credential provider using the *Exclude credential providers* policy. The key differences between the two policies are:
   - The *Exclude credential providers* policy disables passwords for *all accounts*, including local accounts. Passwordless experience only applies to Microsoft Entra ID accounts that sign in with strong credentials. It also excludes *Other User* from the policy, so users have a backup sign in option
   - RDP and in-session authentication scenarios aren't supported with the Exclude credential providers policy. Passwordless experience hides passwords from in-session auth scenarios like Password Manager in a web browser, UAC prompts, etc.
-- To facilitate helpdesk support operations, consider enabling the local administrator account and randomizing its password using the [Windows Local Administrator Password Solution (LAPS)][SERV-1]
+- To facilitate helpdesk support operations, consider enabling the local administrator account or create a separate one, randomizing its password using the [Windows Local Administrator Password Solution (LAPS)][SERV-1]
 
 ## Provide feedback
 
