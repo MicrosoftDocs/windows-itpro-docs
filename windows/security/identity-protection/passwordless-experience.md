@@ -12,22 +12,38 @@ ms.topic: how-to
 
 ## Passwordless experience overview
 
-Starting in Windows 11, version 22H2 with [KB5030310](https://support.microsoft.com/kb/5030310), *Passwordless experience* is a security policy that promotes a passwordless user experience on Microsoft Entra joined devices.\
-Once the policy is enabled, users with strong credentials (e.g. Windows Hello for Business, FIDO2 key):
+Starting in Windows 11, version 22H2 with [KB5030310][KB-1], *Passwordless experience* is a security policy that promotes a passwordless user experience on Microsoft Entra joined devices.\
+Passwordless experience hides passwords from certain Windows authentication scenarios, helping organizations to gradually move away from passwords.
+
+Once the policy is enabled, users with strong credentials (e.g. Windows Hello for Business, FIDO2 key, etc.):
 
 - Don't see the option to sign in using the password credential provider on the Windows lock screen
-- In-session authentication scenarios (e.g. UAC elevation, Run as administrator) don't allow the user to use a password
-- <kbd>CTRL</kbd>-<kbd>ALT</kbd>-<kbd>DEL</kbd> doest't offer the option for the user to change their password
+- In-session authentication scenarios (e.g. UAC elevation, password manager in the browser, etc.) don't prompt the user to use a password
+- The *Change password* option is hidden from the *Accounts* page in the Settings app
+  
+  >[!NOTE]
+  >Users can still reset their password using <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>DEL</kbd> > **Manage your account**
 
 This article explains how to enable Passwordless experience and describes the user experience.
 
 >[!TIP]
-> The Passwordless experience policy doesn't affect the initial sign-in experience and local accounts. It only applies to subsequent sign-ins for Microsoft Entra ID accounts.
+> The Passwordless experience policy doesn't affect the initial sign-in experience and local accounts. It only applies to subsequent sign-ins for Microsoft Entra ID accounts. It also doesn't prevent a user from signing in with a password when using the *Other user* option in the lock screen. The password credential provider is hidden only for the last signed in user who signed in with strong credentials. Passwordless experience is not about preventing users from using username/password, rather to guide and educate them to avoid using passwords.
 >
 > To achieve passwordless sign-in from the first sign-in, use the Web sign-in feature. For more information, see [Article to complete](https://learn.microsoft.com).
 
+## Requirements
+
+To enable Passwordless experience, the client must meet the following requirements:
+
+- Windows 11, version 22H2 with [KB5030310][KB-1] or above
+- Strong credentials enrolled for the user
+- Microsoft Entra ID joined
+- MDM-managed: Microsoft Intune or other MDM solution
+
 >[!NOTE]
 >Microsoft Entra hybrid joined devices and Active Directory domain joined devices are currently out of scope.
+
+To improve the user experience in case of recover
 
 ## Enable Passwordless experience with Intune
 
@@ -66,7 +82,7 @@ Alternatively, you can configure devices using a [custom policy][INT-2] with the
   :::column-end:::
 :::row-end:::
 
-If users are blocked, they can use a recovery mechanism such as PIN Reset which has an improved experience.
+If users for, they can use a recovery mechanism such as PIN Reset which has an improved experience.
 
 ### In-session authentication experience
 
@@ -99,26 +115,29 @@ Depending on [how UAC is configured][UAC-1], end-users see different experiences
   :::column-end:::
 :::row-end:::
 
-## Frequently Asked Questions (FAQs)
+### Recovery scenario
 
-Q: What is the difference between the existing GP and the new policy?
-A: This new policy is a comprehensive policy for hiding passwords from Windows, compared to the existing GP
+Example: When TPM is cleared out/something goes wrong, on demand web-based experience for credential recovery will show up. 
 
-Q: What happens if a user can't sign in with biometrics and forgot their PIN?
-A: The user can use the PIN Reset feature to reset their PIN. Once the PIN Reset feature is configured, a user can reset a PIN from the lock screen and the Settings app.
+Add animation
 
-Q: Can a user still sign in with a password once the policy is enabled?
-A: Yes, a user can select the *Other user* option in the lock screen and use a username and password to sign in. The password credential provider is hidden only for the last signed in user who signed in with strong credentials. Passwordless experience is not about preventing users from using username/password, rather to guide and educate them to avoid using passwords.
+## Recommendations
 
-Q: If I enable the security policy *Don't display last signed-in*, will the user be able to sign in with a password? 
-A: Yes, enabling the policy *Don't display last signed-in* prevents Passwordless experience from working. The user can sign in with a password like when selecting the *Other user* option.
+Here's a list of recommendations to consider when enabling Passwordless experience.
 
-Q: What's the difference between the group policy and the new policy?
-A: The existing GP, once configured, disables passwords for "All accounts", so there's no strong recovery mechanism to get on the machine. RDP, RunAs, and in-session auth scenarios aren't supported with this GP. The new policy hides passwords from in-session auth scenarios like Password Manager in a web browser, Run as administrator, etc. It also excludes *Other User* from the policy, so you can sign in from this account as a backup mechanism.
+- If Windows Hello for Business is enabled, make sure to configure the [PIN reset](hello-for-business/hello-feature-pin-reset.md) feature to allow users to reset their PIN from the lock screen. The PIN reset experience is improved starting in Windows 11, version 22H2 with [KB5030310][KB-1]
+- Don't configure the security policy *Interactive logon: Don't display username at sign-in*, as it prevents Passwordless experience from working
+- Don't disable the password credential provider using the *Exclude credential providers* policy. Passwordless experience is a comprehensive policy for hiding passwords from Windows, while the *Exclude credential providers* policy disables passwords for *All accounts*. RDP, RunAs, and in-session auth scenarios aren't supported with this *Exclude credential providers* policy. The new policy hides passwords from in-session auth scenarios like Password Manager in a web browser, Run as administrator, etc. It also excludes *Other User* from the policy, so you can sign in from this account as a backup mechanism.
+
+## Provide feedback
+
+To provide feedback for Passwordless experience, open [**Feedback Hub**][FHUB] and use the category **Security and Privacy > Passwordless experience**.
 
 <!--links used in this document-->
 
+[KB-1]: https://support.microsoft.com/kb/5030310
 [CSP-1]: /windows/client-management/mdm/policy-csp-authentication#enablepasswordlessexperience
 [CSP-2]: /windows/client-management/mdm/policy-csp-authentication#enablewebsignin
 [INT-2]: /mem/intune/configuration/custom-settings-windows-10
 [UAC-1]: /windows/security/application-security/application-control/user-account-control/settings-and-configuration?tabs=intune
+[FHUB]: feedback-hub://?tabid=2&newFeedback=true&feedbackType=1
