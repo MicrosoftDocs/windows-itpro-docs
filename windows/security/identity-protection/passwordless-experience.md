@@ -30,7 +30,7 @@ The password credential provider is hidden only for the last signed in user who 
 This article explains how to enable Passwordless experience and describes the user experiences.
 
 >[!TIP]
-> To achieve passwordless sign-in from the first sign-in, use the Web sign-in feature. For more information about Web sign-in, see [Article to complete](https://learn.microsoft.com).
+> Windows Hello for Business user can achieve passwordless sign-in from the first sign-in using the Web sign-in feature. For more information about Web sign-in, see [Article to complete](https://learn.microsoft.com).
 
 ## System requirements
 
