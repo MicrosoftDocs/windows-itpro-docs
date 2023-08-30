@@ -58,8 +58,7 @@ The steps to use Intune's custom OMA-URI functionality are:
     - **Data type**: Base64 (file)
     - **Certificate file**: Upload your binary format policy file. To do this, change your {GUID}.cip file to {GUID}.bin. You don't need to upload a Base64 file, as Intune converts the uploaded .bin file to Base64 on your behalf.
 
-    > [!div class="mx-imgBorder"]
-    > ![Configure custom WDAC.](../images/wdac-intune-custom-oma-uri.png)
+    :::image type="content" alt-text="Configure custom WDAC." source="../images/wdac-intune-custom-oma-uri.png" lightbox="../images/wdac-intune-custom-oma-uri.png":::
 
 > [!NOTE]
 > For the _Policy GUID_ value, do not include the curly brackets.
