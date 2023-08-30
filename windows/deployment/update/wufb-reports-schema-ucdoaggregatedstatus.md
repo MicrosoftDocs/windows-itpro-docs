@@ -1,21 +1,26 @@
 ---
-title: Windows Update for Business reports Data Schema - UCDOAggregatedStatus
-ms.reviewer: carmenf
-manager: aaroncz
-description: UCDOAggregatedStatus schema
+title: UCDOAggregatedStatus data schema
+titleSuffix: Windows Update for Business reports
+description: UCDOAggregatedStatus schema for Windows Update for Business reports. UCDOAggregatedStatus is an aggregation of all UDDOStatus records across the tenant.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: reference
 author: mestew
 ms.author: mstewart
-ms.topic: reference
+manager: aaroncz
+ms.reviewer: carmenf
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
 ms.date: 11/17/2022
-ms.technology: itpro-updates
 ---
 
 # UCDOAggregatedStatus
 <!--37063317, 30141258, 37063041-->
-***(Applies to: Windows 11 & Windows 10)***
 
 UCDOAggregatedStatus is an aggregation of all individual UDDOStatus records across the tenant and summarizes bandwidth savings across all devices enrolled using [Delivery Optimization and Microsoft Connected Cache](/windows/deployment/do).
+
+## Schema for UCDOAggregatedStatus
 
 |Field |Type |Example |Description |
 |---|---|---|---|

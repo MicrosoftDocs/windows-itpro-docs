@@ -1,20 +1,24 @@
 ---
-title: Windows Update for Business reports Data Schema - UCServiceUpdateStatus
-manager: aaroncz
-description: UCServiceUpdateStatus schema
+title: UCServiceUpdateStatus data schema
+titleSuffix: Windows Update for Business reports
+description: UCServiceUpdateStatus schema for Windows Update for Business reports. UCServiceUpdateStatus has service-side information for one device and one update.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: reference
 author: mestew
 ms.author: mstewart
-ms.topic: reference
+manager: aaroncz
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
 ms.date: 06/06/2022
-ms.technology: itpro-updates
 ---
 
 # UCServiceUpdateStatus
 <!--37063317, 30141258, 37063041-->
-***(Applies to: Windows 11 & Windows 10)***
-
 Update Event that comes directly from the service-side. The event has only service-side information for one device (client), and one update, in one deployment. This event has certain fields removed from it in favor of being able to show data in near real time.
+
+## Schema for UCServiceUpdateStatus
 
 | Field | Type | Example | Description |
 |---|---|---|---|

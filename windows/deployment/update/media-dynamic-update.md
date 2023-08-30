@@ -1,23 +1,21 @@
 ---
 title: Update Windows installation media with Dynamic Update
-description: Learn how to deploy feature updates to your mission critical devices
+description: Learn how to acquire and apply Dynamic Update packages to existing Windows images prior to deployment
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
 author: mestew
-ms.localizationpriority: medium
 ms.author: mstewart
 manager: aaroncz
-ms.topic: article
-ms.technology: itpro-updates
-ms.date: 07/17/2023
 ms.reviewer: stevedia
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+ms.date: 07/17/2023
 ---
 
 # Update Windows installation media with Dynamic Update
-
-**Applies to**
-
--   Windows 10
--   Windows 11
 
 This article explains how to acquire and apply Dynamic Update packages to existing Windows images *prior to deployment* and includes Windows PowerShell scripts you can use to automate this process.
 

@@ -1,13 +1,16 @@
 ---
 title: Windows Update security
 manager: aaroncz
-description: Overview of the security for Windows Update.
+description: Overview of the security for Windows Update including security for the metadata exchange and content download.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
 author: mestew
 ms.author: mstewart
-ms.topic: article
-ms.date: 10/25/2022
-ms.technology: itpro-updates
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+ms.date: 08/28/2023
 ---
 
 # Windows Update security
