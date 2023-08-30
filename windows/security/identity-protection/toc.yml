@@ -5,7 +5,7 @@ items:
     items:
     - name: Passwordless strategy
       href: passwordless-strategy.md
-    - name: Passwordless experience
+    - name: Windows Passwordless experience
       href: passwordless-experience.md
     - name: Windows Hello for Business 🔗
       href: hello-for-business/index.md
