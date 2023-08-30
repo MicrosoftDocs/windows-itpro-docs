@@ -25,16 +25,16 @@ Once the policy is enabled, users with strong credentials (for example, Windows 
   >Users can reset their password using <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>DEL</kbd> > **Manage your account**
 
 Passwordless experience doesn't affect the initial sign-in experience and local accounts. It only applies to subsequent sign-ins for Microsoft Entra ID accounts. It also doesn't prevent a user from signing in with a password when using the *Other user* option in the lock screen.\
-The password credential provider is hidden only for the last signed in user who signed in with strong credentials. Passwordless experience is not about preventing users from using passwords, rather to guide and educate them to avoid using passwords.
+The password credential provider is hidden only for the last signed in user who signed in with strong credentials. Passwordless experience is not about preventing users from using passwords, rather to guide and educate them to not use passwords.
 
 This article explains how to enable Passwordless experience and describes the user experiences.
 
 >[!TIP]
-> To achieve passwordless sign-in from the first sign-in, use the Web sign-in feature. For more information, read [Article to complete](https://learn.microsoft.com).
+> To achieve passwordless sign-in from the first sign-in, use the Web sign-in feature. For more information about Web sign-in, see [Article to complete](https://learn.microsoft.com).
 
 ## System requirements
 
-To enable Passwordless experience, the devices must meet the following requirements:
+Passwordless experience has the following requirements:
 
 - Windows 11, version 22H2 with [KB5030310][KB-1] or later
 - Microsoft Entra ID joined
@@ -65,10 +65,10 @@ Alternatively, you can configure devices using a [custom policy][INT-2] with the
 ### Lock screen experience
 
 :::row:::
-  :::column span="3":::
+  :::column span="1":::
   **Passwordless experience turned off**: users can sign in using a password, as indicated by the presence of the password credential provider icon :::image type="icon" source="../images/icons/key.svg" border="false"::: in the Windows lock screen.
   :::column-end:::
-  :::column span="1":::
+  :::column span="3":::
   :::image type="content" source="images/passwordless-experience/lock-screen-off.png" lightbox="images/passwordless-experience/lock-screen-off.png" alt-text="Screenshot of the Windows lock screen showing the fingerprint, PIN and password credential providers.":::
   :::column-end:::
 :::row-end:::
