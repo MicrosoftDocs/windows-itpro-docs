@@ -65,35 +65,36 @@ Alternatively, you can configure devices using a [custom policy][INT-2] with the
 ### Lock screen experience
 
 :::row:::
-  :::column span="1":::
-  **Passwordless experience turned off**: users can sign in using a password, as indicated by the presence of the password credential provider icon :::image type="icon" source="../images/icons/key.svg" border="false"::: in the Windows lock screen.
-  :::column-end:::
   :::column span="3":::
+  **Passwordless experience turned off**: users can sign in using a password, as indicated by the presence of the password credential provider  :::image type="icon" source="../images/icons/key.svg" border="false"::: in the Windows lock screen.
+  :::column-end:::
+  :::column span="1":::
   :::image type="content" source="images/passwordless-experience/lock-screen-off.png" lightbox="images/passwordless-experience/lock-screen-off.png" alt-text="Screenshot of the Windows lock screen showing the fingerprint, PIN and password credential providers.":::
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column span="3":::
-  **Passwordless experience turned on**: the password credential provider icon :::image type="icon" source="../images/icons/key.svg" border="false"::: is missing for a user who enrolled in Windows Hello for Business or signed in with FIDO2 keys.
+  **Passwordless experience turned on**: the password credential provider :::image type="icon" source="../images/icons/key.svg" border="false"::: is missing for a user who signed in with stron credentials. The user can sign in using a strong credential or can opt to use the *Other user* option to sign in with a password.
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/passwordless-experience/lock-screen-on.png" lightbox="images/passwordless-experience/lock-screen-on.png" alt-text="Screenshot of the Windows lock screen showing the fingerprint and PIN credential providers only. The password credential provider is missing.":::
   :::column-end:::
 :::row-end:::
 
-### In-session authentication experience
+### In-session authentication experiences
 
-RDP experience, Password Manager in a web browser, UAC elevation, Connecting to file shares, UAC elevation
+When Passwordless experience is enabled, users can't use the password credential provider for in-session authentication scenarios. In-session authentication scenarios include:
 
-Scenarios:
+- Password Manager in a web browser
+- Connecting to file shares or intranet sites
+- User Account Control (UAC) elevation, except if a local user account is used for elevation
 
-RDP connection
-Show password from the ones stored in Microsoft Edge: doesn't allow to type password but only a WHFB unlock
-Run as admin
-Run as different user
-Above PIN reset
+>[!NOTE]
+> RDP sign in defaults to the strong credential used during sign-in. However, a suers can select the option *Use a different account* to sign in with a password.
+>
+> *Run as* different user experience is not impacted by Passwordless experience.
 
-Depending on [how UAC is configured][UAC-1], end-users see different experiences when they need to elevate their privileges.
+Example of UAC elevation experience:
 
 :::row:::
   :::column span="3":::
@@ -105,7 +106,7 @@ Depending on [how UAC is configured][UAC-1], end-users see different experiences
 :::row-end:::
 :::row:::
   :::column span="3":::
-  **Passwordless experience turned on**: UAC elevation doesn't allow the user to use the password credential provider for the currently logged on user. The user can authenticate using a strong credential or a local user account.
+  **Passwordless experience turned on**: UAC elevation doesn't allow the user to use the password credential provider for the currently logged on user. The user can authenticate using a strong credential or a local user account, if available.
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/passwordless-experience/uac-on.png" lightbox="images/passwordless-experience/uac-on.png" alt-text="Screenshot of the UAC prompt showing fingerprint and PIN options only.":::
@@ -121,6 +122,7 @@ Here's a list of recommendations to consider before enabling Passwordless experi
 - Don't disable the password credential provider using the *Exclude credential providers* policy. The key differences between the two policies are:
   - The *Exclude credential providers* policy disables passwords for *all accounts*, including local accounts. Passwordless experience only applies to Microsoft Entra ID accounts that sign in with strong credentials. It also excludes *Other User* from the policy, so users have a backup sign in option
   - RDP and in-session authentication scenarios aren't supported with the Exclude credential providers policy. Passwordless experience hides passwords from in-session auth scenarios like Password Manager in a web browser, UAC prompts, etc.
+- To facilitate helpdesk support operations, consider enabling the local administrator account and randomizing its password using the [Windows Local Administrator Password Solution (LAPS)][SERV-1]
 
 ## Provide feedback
 
@@ -128,8 +130,9 @@ To provide feedback for Passwordless experience, open [**Feedback Hub**][FHUB] a
 
 <!--links used in this document-->
 
-[KB-1]: https://support.microsoft.com/kb/5030310
 [CSP-1]: /windows/client-management/mdm/policy-csp-authentication#enablepasswordlessexperience
-[INT-2]: /mem/intune/configuration/custom-settings-windows-10
-[UAC-1]: /windows/security/application-security/application-control/user-account-control/settings-and-configuration?tabs=intune
 [FHUB]: feedback-hub://?tabid=2&newFeedback=true&feedbackType=1
+[INT-2]: /mem/intune/configuration/custom-settings-windows-10
+[KB-1]: https://support.microsoft.com/kb/5030310
+[SERV-1]: /windows-server/identity/laps/laps-overview
+[UAC-1]: /windows/security/application-security/application-control/user-account-control/settings-and-configuration?tabs=intune
