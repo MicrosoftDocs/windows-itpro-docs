@@ -336,4 +336,3 @@ In this configuration, passwords for SCRIL-configured users expire based on Acti
 
 > [!NOTE]
 > Some components within Windows 10, such as Data Protection APIs and NTLM authentication, still need artifacts of a user possessing a password. This configuration provides interoperability by reducing the usage surface while Microsoft continues to close the gaps to remove the password completely.
-
