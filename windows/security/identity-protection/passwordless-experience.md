@@ -12,24 +12,25 @@ ms.topic: how-to
 
 ## Passwordless experience overview
 
-Starting in Windows 11, version 22H2 with [KB5030310][KB-1], *Passwordless experience* is a security policy that promotes a passwordless user experience on Microsoft Entra joined devices.\
-Passwordless experience hides passwords from certain Windows authentication scenarios, preparing organizations to gradually move away from passwords.
+Starting in Windows 11, version 22H2 with [KB5030310][KB-1], *Passwordless experience* is a security policy that promotes a user experience without passwords on Microsoft Entra joined devices.\
+Passwordless experience hides passwords from certain Windows authentication scenarios, helping organizations and preparing users to gradually move away from passwords.
 
-Once the policy is enabled, users with strong credentials (e.g. Windows Hello for Business, FIDO2 key, etc.):
+Once the policy is enabled, users with strong credentials (for example, Windows Hello for Business, FIDO2 key, etc.):
 
-- Don't have the option to sign in using the password credential provider on the Windows lock screen
-- In-session authentication scenarios (e.g. UAC elevation, password manager in the browser, etc.) don't prompt the user to use a password
-- The *Change password* option is hidden from the *Accounts* page in the Settings app
+- Can't sign in using the password credential provider on the Windows lock screen
+- Aren't prompted to use a password during in-session authentications (for example, UAC elevation, password manager in the browser, etc.)
+- Don't have the option to use *Accounts > Change password* in the Settings app
   
   >[!NOTE]
-  >Users can still reset their password using <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>DEL</kbd> > **Manage your account**
+  >Users can reset their password using <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>DEL</kbd> > **Manage your account**
+
+Passwordless experience doesn't affect the initial sign-in experience and local accounts. It only applies to subsequent sign-ins for Microsoft Entra ID accounts. It also doesn't prevent a user from signing in with a password when using the *Other user* option in the lock screen.\
+The password credential provider is hidden only for the last signed in user who signed in with strong credentials. Passwordless experience is not about preventing users from using passwords, rather to guide and educate them to avoid using passwords.
 
 This article explains how to enable Passwordless experience and describes the user experiences.
 
 >[!TIP]
-> The Passwordless experience policy doesn't affect the initial sign-in experience and local accounts. It only applies to subsequent sign-ins for Microsoft Entra ID accounts. It also doesn't prevent a user from signing in with a password when using the *Other user* option in the lock screen. The password credential provider is hidden only for the last signed in user who signed in with strong credentials. Passwordless experience is not about preventing users from using username/password, rather to guide and educate them to avoid using passwords.
->
-> To achieve passwordless sign-in from the first sign-in, use the Web sign-in feature. For more information, see [Article to complete](https://learn.microsoft.com).
+> To achieve passwordless sign-in from the first sign-in, use the Web sign-in feature. For more information, read [Article to complete](https://learn.microsoft.com).
 
 ## System requirements
 
@@ -80,8 +81,6 @@ Alternatively, you can configure devices using a [custom policy][INT-2] with the
   :::column-end:::
 :::row-end:::
 
-If users for, they can use a recovery mechanism such as PIN Reset which has an improved experience.
-
 ### In-session authentication experience
 
 RDP experience, Password Manager in a web browser, UAC elevation, Connecting to file shares, UAC elevation
@@ -106,7 +105,7 @@ Depending on [how UAC is configured][UAC-1], end-users see different experiences
 :::row-end:::
 :::row:::
   :::column span="3":::
-  **Passwordless experience turned on**: UAC elevation prompts don't allow the user to use a password.
+  **Passwordless experience turned on**: UAC elevation doesn't allow the user to use the password credential provider for the currently logged on user. The user can authenticate using a strong credential or a local user account.
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/passwordless-experience/uac-on.png" lightbox="images/passwordless-experience/uac-on.png" alt-text="Screenshot of the UAC prompt showing fingerprint and PIN options only.":::
