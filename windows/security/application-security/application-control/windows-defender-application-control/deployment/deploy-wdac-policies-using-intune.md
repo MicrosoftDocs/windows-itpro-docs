@@ -28,10 +28,10 @@ Intune's built-in Windows Defender Application Control support allows you to con
 - [Optional] Reputable apps as defined by the Intelligent Security Graph (ISG)
 
 > [!NOTE]
-> Intune's built-in policies use the pre-1903 single-policy format version of the DefaultWindows policy. Use the [improved Intune WDAC experience](mem/intune/protect/endpoint-security-app-control-policy), currently in public preview, to create and deploy multiple-policy format files. Or, you can use Intune's custom OMA-URI feature to deploy your own multiple-policy format WDAC policies and leverage features available on Windows 10 1903+ or Windows 11 as described later in this topic.
+> Intune's built-in policies use the pre-1903 single-policy format version of the DefaultWindows policy. Use the [improved Intune WDAC experience](/mem/intune/protect/endpoint-security-app-control-policy), currently in public preview, to create and deploy multiple-policy format files. Or, you can use Intune's custom OMA-URI feature to deploy your own multiple-policy format WDAC policies and leverage features available on Windows 10 1903+ or Windows 11 as described later in this topic.
 
 > [!NOTE]
-> Intune currently uses the AppLocker CSP to deploy its built-in policies. The AppLocker CSP always requests a device restart when it applies WDAC policies. Use the [improved Intune WDAC experience](mem/intune/protect/endpoint-security-app-control-policy), currently in public preview, to deploy your own WDAC policies without a restart. Or, you can use Intune's custom OMA-URI feature with the ApplicationControl CSP.
+> Intune currently uses the AppLocker CSP to deploy its built-in policies. The AppLocker CSP always requests a device restart when it applies WDAC policies. Use the [improved Intune WDAC experience](/mem/intune/protect/endpoint-security-app-control-policy), currently in public preview, to deploy your own WDAC policies without a restart. Or, you can use Intune's custom OMA-URI feature with the ApplicationControl CSP.
 
 To use Intune's built-in WDAC policies, configure [Endpoint Protection for Windows 10 (and later)](/mem/intune/protect/endpoint-protection-windows-10?toc=/intune/configuration/toc.json&bc=/intune/configuration/breadcrumb/toc.json).
 
