@@ -174,7 +174,7 @@ If you deployed Windows Hello for Business using the key trust model, and want t
 
 1. [Set up Azure AD Kerberos in your hybrid environment](#deploy-azure-ad-kerberos).
 1. [Enable cloud Kerberos trust via Group Policy or Intune](#configure-windows-hello-for-business-policy).
-1. For hybrid Azure AD joined devices, sign out and sign in to the device using Windows Hello for Business.
+1. For Azure AD joined devices, sign out and sign in to the device using Windows Hello for Business.
 
 > [!NOTE]
 > For hybrid Azure AD joined devices, users must perform the first sign in with new credentials while having line of sight to a DC.

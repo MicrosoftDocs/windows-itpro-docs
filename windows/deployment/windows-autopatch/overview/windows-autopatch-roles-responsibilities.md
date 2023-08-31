@@ -1,7 +1,7 @@
 ---
 title: Roles and responsibilities
 description: This article describes the roles and responsibilities provided by Windows Autopatch and what the customer must do
-ms.date: 08/08/2023
+ms.date: 08/31/2023
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -30,6 +30,7 @@ This article outlines your responsibilities and Windows Autopatch's responsibili
 | Review the [prerequisites](../prepare/windows-autopatch-prerequisites.md) | :heavy_check_mark: | :x: |
 | Review the [FAQ](../overview/windows-autopatch-faq.yml) | :heavy_check_mark: | :x: |
 | [Review the service data platform and privacy compliance details](../overview/windows-autopatch-privacy.md) | :heavy_check_mark: | :x: |
+| Consult the [Deployment guide](../overview/windows-autopatch-deployment-guide.md) | :heavy_check_mark: | :x: |
 | Ensure device [prerequisites](../prepare/windows-autopatch-prerequisites.md) are met and in place prior to enrollment | :heavy_check_mark: | :x: |
 | Ensure [infrastructure and environment prerequisites](../prepare/windows-autopatch-configure-network.md) are met and in place prior to enrollment | :heavy_check_mark: | :x: |
 | Prepare to remove your devices from existing unsupported [Windows update](../references/windows-autopatch-windows-update-unsupported-policies.md) and [Microsoft 365](../references/windows-autopatch-microsoft-365-policies.md) policies | :heavy_check_mark: | :x: |
@@ -37,6 +38,8 @@ This article outlines your responsibilities and Windows Autopatch's responsibili
 | [Enroll tenant into the Windows Autopatch service](../prepare/windows-autopatch-enroll-tenant.md)<ul><li>[Fix issues identified by the Readiness assessment tool](../prepare/windows-autopatch-fix-issues.md)</li><li>If required, [submit a tenant enrollment support request](../prepare/windows-autopatch-enrollment-support-request.md)</li></ul> | :heavy_check_mark: | :x: |
 | [Manage and respond to tenant enrollment support requests](../prepare/windows-autopatch-enrollment-support-request.md) | :x: | :heavy_check_mark: |
 | Identify stakeholders for deployment communications | :heavy_check_mark: | :x: |
+
+For more information and assistance with preparing for your Windows Autopatch deployment journey, see [Need additional guidance](../overview/windows-autopatch-deployment-guide.md#need-additional-guidance).
 
 ## Deploy
 
@@ -46,7 +49,7 @@ This article outlines your responsibilities and Windows Autopatch's responsibili
 | [Deploy and configure Windows Autopatch service configuration](../references/windows-autopatch-changes-to-tenant.md) | :x: | :heavy_check_mark: |
 | Educate users on the Windows Autopatch end user update experience<ul><li>[Windows quality update end user experience](../operate/windows-autopatch-groups-windows-quality-update-end-user-exp.md)</li><li>[Windows feature update end user experience](../operate/windows-autopatch-groups-manage-windows-feature-update-release.md)</li><li>[Microsoft 365 Apps for enterprise end user experience](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#end-user-experience)</li><li>[Microsoft Edge end user experience](../operate/windows-autopatch-edge.md)</li><li>[Microsoft Teams end user experience](../operate/windows-autopatch-teams.md#end-user-experience)</li></ul> | :heavy_check_mark: | :x: |
 | Review network optimization<ul><li>[Prepare your network](../prepare/windows-autopatch-configure-network.md)</li><li>[Delivery Optimization](../prepare/windows-autopatch-configure-network.md#delivery-optimization) | :heavy_check_mark: | :x: |
-| Review existing configurations<ul><li>Remove your devices from existing unsupported [Windows Update](../references/windows-autopatch-windows-update-unsupported-policies.md) and [Microsoft 365](../references/windows-autopatch-microsoft-365-policies.md) policies</li></ul>|  :heavy_check_mark: | :x: |
+| Review existing configurations<ul><li>Remove your devices from existing unsupported [Windows Update](../references/windows-autopatch-windows-update-unsupported-policies.md) and [Microsoft 365](../references/windows-autopatch-microsoft-365-policies.md) policies</li><li>Consult [General considerations](../overview/windows-autopatch-deployment-guide.md#general-considerations)</li></ul>|  :heavy_check_mark: | :x: |
 | Confirm your update service needs and configure your workloads<ul><li>[Turn on or off expedited Windows quality updates](../operate/windows-autopatch-groups-windows-quality-update-overview.md#expedited-releases)</li><li>[Allow or block Microsoft 365 Apps for enterprise updates](../operate/windows-autopatch-microsoft-365-apps-enterprise.md#allow-or-block-microsoft-365-app-updates)</li><li>[Manage driver and firmware updates](../operate/windows-autopatch-manage-driver-and-firmware-updates.md)</li><li>[Customize Windows Update settings](../operate/windows-autopatch-windows-update.md)</li><li>Decide your [Windows feature update versions(s)](../operate/windows-autopatch-groups-windows-feature-update-overview.md)</li></ul>| :heavy_check_mark: | :x: |
 | [Consider your Autopatch groups distribution](../deploy/windows-autopatch-groups-overview.md)<ul><li>[Default Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-the-default-autopatch-group)</li><li>[Custom Autopatch group](../deploy/windows-autopatch-groups-overview.md#about-custom-autopatch-groups)</li></ul> | :heavy_check_mark: | :x: |
 | [Register devices](../deploy/windows-autopatch-register-devices.md)<ul><li>[Review your device registration options](../deploy/windows-autopatch-device-registration-overview.md)</li><li>[Register your first devices](../deploy/windows-autopatch-register-devices.md) | :heavy_check_mark: | :x: |
@@ -83,11 +86,11 @@ This article outlines your responsibilities and Windows Autopatch's responsibili
 | [Pause updates (Windows Autopatch initiated)](../operate/windows-autopatch-groups-windows-quality-update-signals.md) | :x: | :heavy_check_mark: |
 | [Pause updates (initiated by you)](../operate/windows-autopatch-groups-windows-quality-update-overview.md#pause-and-resume-a-release) | :heavy_check_mark: | :x: |
 | Run [on-going post-registration device readiness checks](../deploy/windows-autopatch-post-reg-readiness-checks.md) | :x: | :heavy_check_mark: |
-| Maintain existing configurations<ul><li>Remove your devices from existing and unsupported [Windows update](../references/windows-autopatch-windows-update-unsupported-policies.md) and [Microsoft 365](../references/windows-autopatch-microsoft-365-policies.md) policies</li></ul> | :heavy_check_mark: | :x: |
+| Maintain existing configurations<ul><li>Remove your devices from existing and unsupported [Windows update](../references/windows-autopatch-windows-update-unsupported-policies.md) and [Microsoft 365](../references/windows-autopatch-microsoft-365-policies.md) policies</li><li>Consult [General considerations](../overview/windows-autopatch-deployment-guide.md#general-considerations)</ul> | :heavy_check_mark: | :x: |
 | Understand the health of [Up to date](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#up-to-date-devices) devices and investigate devices that are<ul><li>[Not up to date](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#not-up-to-date-devices)</li><li>[Not ready](../operate/windows-autopatch-groups-windows-quality-and-feature-update-reports-overview.md#not-ready-devices)</li><li>have [Device alerts](../operate/windows-autopatch-device-alerts.md)</li></ul>
 | [Raise, manage and resolve a service incident if an update management area isn't meeting the service level objective](windows-autopatch-overview.md#update-management) | :x: | :heavy_check_mark: |
 | [Exclude a device](../operate/windows-autopatch-exclude-device.md) | :heavy_check_mark: | :x: |
-| [Register a device that was previously excluded (upon customers request)](../operate/windows-autopatch-exclude-device.md) | :x: | :heavy_check_mark: |
+| [Register a device that was previously excluded](../operate/windows-autopatch-exclude-device.md#restore-a-device-or-multiple-devices-previously-excluded) | :heavy_check_mark: | :x: |
 | [Request unenrollment from Windows Autopatch](../operate/windows-autopatch-unenroll-tenant.md) | :heavy_check_mark: | :x: |
 | [Remove Windows Autopatch data from the service and exclude devices](../operate/windows-autopatch-unenroll-tenant.md#microsofts-responsibilities-during-unenrollment) | :x: | :heavy_check_mark: |
 | [Maintain update configuration & update devices post unenrollment from Windows Autopatch](../operate/windows-autopatch-unenroll-tenant.md#your-responsibilities-after-unenrolling-your-tenant) | :heavy_check_mark: | :x: |

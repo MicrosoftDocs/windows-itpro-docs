@@ -1,7 +1,7 @@
 ---
 title: Configure Credential Guard 
 description: Learn how to configure Credential Guard using MDM, Group Policy, or the registry.
-ms.date: 08/14/2023
+ms.date: 08/31/2023
 ms.collection:
   - highpri
   - tier2
@@ -14,7 +14,8 @@ This article describes how to configure Credential Guard using Microsoft Intune,
 
 ## Default enablement
 
-Starting in **Windows 11, version 22H2**, Credential Guard is turned on by default on devices that [meet the requirements](index.md#hardware-and-software-requirements). The default enablement is **without UEFI Lock**, which allows administrators to disable Credential Gurad remotely, if needed.\
+Starting in **Windows 11, version 22H2**, Credential Guard is turned on by default on devices that [meet the requirements](index.md#hardware-and-software-requirements). The default enablement is **without UEFI Lock**, which allows administrators to disable Credential Guard remotely, if needed.
+
 If Credential Guard or VBS are disabled *before* a device is updated to Windows 11, version 22H2 or later, default enablement doesn't overwrite the existing settings.
 
 While the default state of Credential Guard changed, system administrators can [enable](#enable-credential-guard) or [disable](#disable-credential-guard) it using one of the methods described in this article.

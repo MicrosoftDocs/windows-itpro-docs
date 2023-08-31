@@ -1,5 +1,5 @@
 ---
-ms.date: 08/16/2023
+ms.date: 08/31/2023
 title: Considerations and known issues when using Credential Guard
 description: Considerations, recommendations and known issues when using Credential Guard.
 ms.topic: troubleshooting
@@ -11,7 +11,8 @@ It's recommended that in addition to deploying Credential Guard, organizations m
 
 ## Wi-fi and VPN considerations
 
-When you enable Credential Guard, you can no longer use NTLM classic authentication for single sign-on. You'll be forced to enter your credentials to use these protocols and can't save the credentials for future use.\
+When you enable Credential Guard, you can no longer use NTLM classic authentication for single sign-on. You'll be forced to enter your credentials to use these protocols and can't save the credentials for future use.
+
 If you're using WiFi and VPN endpoints that are based on MS-CHAPv2, they're subject to similar attacks as for NTLMv1.
 
 For WiFi and VPN connections, it's recommended to move from MSCHAPv2-based connections (such as PEAP-MSCHAPv2 and EAP-MSCHAPv2), to certificate-based authentication (such as PEAP-TLS or EAP-TLS).
@@ -115,13 +116,13 @@ Devices that use 802.1x wireless or wired network, RDP, or VPN connections that 
 
 #### Affected devices
 
-Any device with Credential Guard enabled may encounter the issue. As part of the Windows 11, version 22H2 update, eligible devices that didn't disable Credential Guard, have it enabled by default. This affected all devices on Enterprise (E3 and E5) and Education licenses, as well as some Pro licenses*, as long as they met the [minimum hardware requirements](index.md#hardware-and-software-requirements).
+Any device with Credential Guard enabled may encounter the issue. As part of the Windows 11, version 22H2 update, eligible devices that didn't disable Credential Guard, have it enabled by default. This affected all devices on Enterprise (E3 and E5) and Education licenses, as well as some Pro licenses, as long as they met the [minimum hardware requirements](index.md#hardware-and-software-requirements).
   
 All Windows Pro devices that previously ran Credential Guard on an eligible license and later downgraded to Pro, and which still meet the [minimum hardware requirements](index.md#hardware-and-software-requirements), will receive default enablement.  
 
 > [!TIP]
 > To determine if a Windows Pro device receives default enablement when upgraded to **Windows 11, version 22H2**, check if the registry key `IsolatedCredentialsRootSecret` is present in `Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\MSV1_0`.
-> If it's' present, the device enables Credential Guard after the update.
+> If it's present, the device enables Credential Guard after the update.
 >
 > You can Credential Guard can be disabled after upgrade by following the [disablement instructions](configure.md#disable-credential-guard).
 

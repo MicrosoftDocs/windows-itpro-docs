@@ -1,5 +1,5 @@
 ---
-ms.date: 08/16/2023
+ms.date: 08/31/2023
 title: How Credential Guard works
 description: Learn how Credential Guard uses virtualization to protect secrets, so that only privileged system software can access them.
 ms.topic: conceptual
