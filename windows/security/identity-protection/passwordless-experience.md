@@ -4,7 +4,7 @@ description: Learn how Passwordless experience enables your organization to move
 ms.collection: 
   - highpri
   - tier1
-ms.date: 08/15/2023
+ms.date: 08/30/2023
 ms.topic: how-to
 ---
 
@@ -30,7 +30,7 @@ The password credential provider is hidden only for the last signed in user who 
 This article explains how to enable Passwordless experience and describes the user experiences.
 
 >[!TIP]
-> Windows Hello for Business user can achieve passwordless sign-in from the first sign-in using the Web sign-in feature. For more information about Web sign-in, see [Article to complete](https://learn.microsoft.com).
+> Windows Hello for Business users can achieve passwordless sign-in from the first sign-in using the Web sign-in feature. For more information about Web sign-in, see [Article to complete](https://learn.microsoft.com).
 
 ## System requirements
 
