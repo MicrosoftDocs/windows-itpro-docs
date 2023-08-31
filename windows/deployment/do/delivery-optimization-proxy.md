@@ -1,6 +1,6 @@
 ---
 title: Using a proxy with Delivery Optimization
-description: Settings to use with various proxy configurations to allow Delivery Optimization to work
+description: Settings to use with various proxy configurations to allow Delivery Optimization to work in your environment.
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -13,6 +13,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
 ms.date: 06/02/2023
 ---
 

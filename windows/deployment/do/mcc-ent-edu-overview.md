@@ -1,6 +1,6 @@
 ---
 title: MCC for Enterprise and Education Overview
-description: Overview of Microsoft Connected Cache (MCC) for Enterprise and Education.
+description: Overview, supported scenarios, and content types for Microsoft Connected Cache (MCC) for Enterprise and Education.
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: conceptual
@@ -11,7 +11,8 @@ ms.reviewer: mstewart
 ms.collection: tier3
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
-- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise and Education</a>	
 ms.date: 05/09/2023
 ---
 

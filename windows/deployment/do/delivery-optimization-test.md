@@ -1,6 +1,6 @@
 ---
 title: Testing Delivery Optimization
-description: Explanation of Delivery Optimization distributed cache and high-level design. Demonstrate how Delivery Optimization peer-to-peer works in different test scenarios.
+description: Explanation of Delivery Optimization distributed cache and high-level design. Demonstrate how Delivery Optimization peer-to-peer works in different scenarios.
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: reference
@@ -13,6 +13,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-delivery-optimization target=_blank>Delivery Optimization</a>
 ms.date: 11/08/2022
 ---
 

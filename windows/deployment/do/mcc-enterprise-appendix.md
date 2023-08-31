@@ -1,9 +1,9 @@
 ---
-title: Appendix
-description: Appendix on Microsoft Connected Cache (MCC) for Enterprise and Education.
+title: Appendix for MCC for Enterprise and Education
+description: This article contains reference information for Microsoft Connected Cache (MCC) for Enterprise and Education.
 ms.prod: windows-client
 ms.technology: itpro-updates
-ms.topic: how-to
+ms.topic: reference
 ms.author: carmenf
 author: cmknox
 manager: aaroncz
@@ -14,6 +14,7 @@ ms.collection:
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/deployment/do/waas-microsoft-connected-cache target=_blank>Microsoft Connected Cache for Enterprise and Education</a>
 ms.date: 02/06/2023
 ---
 
