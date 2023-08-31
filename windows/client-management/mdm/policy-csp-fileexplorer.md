@@ -4,7 +4,7 @@ description: Learn more about the FileExplorer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/29/2023
+ms.date: 08/30/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -145,7 +145,7 @@ When This PC location is restricted, give the user the option to enumerate and n
 
 <!-- DisableGraphRecentItems-Description-Begin -->
 <!-- Description-Source-ADMX -->
-Turning off files from Office.com will prevent File Explorer from requesting recent cloud file metadata and displaying it in the Quick access view.
+Turning off this setting will prevent File Explorer from requesting cloud file metadata and displaying it in the homepage and other views in File Explorer. Any insights and files available based on account activity will be stopped in views such as Recent, Recommended, Favorites, etc.
 <!-- DisableGraphRecentItems-Description-End -->
 
 <!-- DisableGraphRecentItems-Editable-Begin -->
@@ -177,7 +177,7 @@ Turning off files from Office.com will prevent File Explorer from requesting rec
 | Name | Value |
 |:--|:--|
 | Name | DisableGraphRecentItems |
-| Friendly Name | Turn off files from Office.com in Quick access view |
+| Friendly Name | Turn off account-based insights, recent, favorite, and recommended files in File Explorer |
 | Location | Computer Configuration |
 | Path | WindowsComponents > File Explorer |
 | Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |

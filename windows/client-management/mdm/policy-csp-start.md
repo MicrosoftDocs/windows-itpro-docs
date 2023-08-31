@@ -4,7 +4,7 @@ description: Learn more about the Start Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/29/2023
+ms.date: 08/30/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -1506,8 +1506,8 @@ To validate this policy, do the following steps:
 <!-- HideRecommendedPersonalizedSites-OmaUri-End -->
 
 <!-- HideRecommendedPersonalizedSites-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy setting allows you to hide the personalized websites in the recommended section of the Start Menu. If you enable this policy setting, the Start Menu will no longer show personalized website recommendations in the recommended section of the start menu.
+<!-- Description-Source-ADMX -->
+Remove Personalized Website Recommendations from the Recommended section in the Start Menu.
 <!-- HideRecommendedPersonalizedSites-Description-End -->
 
 <!-- HideRecommendedPersonalizedSites-Editable-Begin -->
@@ -1539,7 +1539,12 @@ This policy setting allows you to hide the personalized websites in the recommen
 | Name | Value |
 |:--|:--|
 | Name | HideRecommendedPersonalizedSites |
-| Path | StartMenu > AT > StartMenu |
+| Friendly Name | Remove Personalized Website Recommendations from the Recommended section in the Start Menu |
+| Location | Computer and User Configuration |
+| Path | Start Menu and Taskbar |
+| Registry Key Name | Software\Policies\Microsoft\Windows\Explorer |
+| Registry Value Name | HideRecommendedPersonalizedSites |
+| ADMX File Name | StartMenu.admx |
 <!-- HideRecommendedPersonalizedSites-GpMapping-End -->
 
 <!-- HideRecommendedPersonalizedSites-Examples-Begin -->

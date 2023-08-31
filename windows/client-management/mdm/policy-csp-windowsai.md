@@ -4,7 +4,7 @@ description: Learn more about the WindowsAI Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/29/2023
+ms.date: 08/30/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -38,7 +38,7 @@ ms.topic: reference
 <!-- TurnOffWindowsCopilot-OmaUri-End -->
 
 <!-- TurnOffWindowsCopilot-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting allows you to turn off Windows Copilot.
 
 - If you enable this policy setting, users won't be able to use Copilot. The Copilot icon won't appear on the taskbar either.
@@ -75,7 +75,12 @@ This policy setting allows you to turn off Windows Copilot.
 | Name | Value |
 |:--|:--|
 | Name | TurnOffWindowsCopilot |
-| Path | WindowsCopilot > AT > WindowsComponents > WindowsCopilot |
+| Friendly Name | Turn off Windows Copilot |
+| Location | User Configuration |
+| Path | Windows Components > Windows Copilot |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\WindowsCopilot |
+| Registry Value Name | TurnOffWindowsCopilot |
+| ADMX File Name | WindowsCopilot.admx |
 <!-- TurnOffWindowsCopilot-GpMapping-End -->
 
 <!-- TurnOffWindowsCopilot-Examples-Begin -->
