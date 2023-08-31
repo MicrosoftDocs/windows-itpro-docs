@@ -1,7 +1,7 @@
 ---
 title: Manage driver and firmware updates
 description: This article explains how you can manage driver and firmware updates with Windows Autopatch
-ms.date: 08/21/2023 
+ms.date: 08/22/2023 
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: how-to
@@ -46,16 +46,16 @@ Switching the toggle between Automatic and Self-managed modes creates driver pro
 
 1. Go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 1. Navigate to **Devices** > **Driver updates for Windows 10 and later**.
-1. Windows Autopatch creates four policies. The policy names begin with **Windows Autopatch – Driver Update Policy** and end with the name of the ring to which they're targeted in brackets. For example, **Windows Autopatch – Driver Update Policy [Test]**.
+1. Windows Autopatch creates four policies. The policy names begin with **Windows Autopatch – Driver Update Policy** and end with the name of the deployment ring to which they're targeted in brackets. For example, **Windows Autopatch – Driver Update Policy [Test]**.
 
 The `CreateDriverUpdatePolicy` is created for the Test, First, Fast, and Broad deployment rings. The policy settings are defined in the following table:
 
 | Policy name | DisplayName | Description | Approval Type | DeploymentDeferralInDays |
 | ----- | ----- | ----- | ----- | ----- |
-| `CreateDriverUpdatePolicy` | Windows Autopatch – Driver Update Policy [Test/First/Fast/Broad] | Driver Update Policy for device Test/First/Fast/Broad group | Automatic | `0` |
-
-> [!NOTE]
-> In public preview, the DeploymentDeferralInDays setting is set to `0` for all deployment rings.
+| `CreateDriverUpdatePolicy` | Windows Autopatch – Driver Update Policy [**Test**] | Driver Update Policy for device **Test** group | Automatic | `0` |
+| `CreateDriverUpdatePolicy`| Windows Autopatch – Driver Update Policy [**First**] | Driver Update Policy for device **First** group | Automatic | `1` |
+| `CreateDriverUpdatePolicy` |Windows Autopatch – Driver Update Policy [**Fast**] | Driver Update Policy for device **Fast** group | Automatic | `6` |
+| `CreateDriverUpdatePolicy` | Windows Autopatch – Driver Update Policy [**Broad**] | Driver Update Policy for device **Broad** group | Automatic | `9` |
 
 ## Feedback and support
 

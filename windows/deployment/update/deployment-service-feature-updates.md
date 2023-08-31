@@ -1,20 +1,24 @@
 ---
-title: Deploy feature updates with Windows Update for Business deployment service.
-description: Use Windows Update for Business deployment service to deploy feature updates. 
+title: Deploy feature updates 
+titleSuffix: Windows Update for Business deployment service
+description: Use Windows Update for Business deployment service to deploy feature updates to devices in your organization. 
 ms.prod: windows-client
-author: mestew
-ms.localizationpriority: medium
-ms.author: mstewart
-manager: aaroncz
-ms.topic: article
 ms.technology: itpro-updates
-ms.date: 02/14/2023
+ms.topic: conceptual
+ms.author: mstewart
+author: mestew
+manager: aaroncz
+ms.collection:
+  - tier1
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+ms.date: 08/29/2023
 ---
 
 # Deploy feature updates with Windows Update for Business deployment service
 <!--7512398-->
-***(Applies to: Windows 11 & Windows 10)***
-
 The Windows Update for Business deployment service is used to approve and schedule software updates. The deployment service exposes its capabilities through the [Microsoft Graph API](/graph/use-the-api). You can call the API directly, through a [Graph SDK](/graph/sdks/sdks-overview), or integrate them with a management tool such as [Microsoft Intune](/mem/intune). 
 
 This article uses [Graph Explorer](/graph/graph-explorer/graph-explorer-overview) to walk through the entire process of deploying a feature update to clients. In this article, you will:
@@ -82,7 +86,8 @@ The following truncated response displays a **Catalog ID** of  `d9049ddb-0ca8-4b
             "displayName": "Windows 11, version 22H2",
             "deployableUntilDateTime": "2025-10-14T00:00:00Z",
             "releaseDateTime": "2022-09-20T00:00:00Z",
-            "version": "Windows 11, version 22H2"
+            "version": "Windows 11, version 22H2",
+            "buildNumber": "22621"
         }
     ]
 }

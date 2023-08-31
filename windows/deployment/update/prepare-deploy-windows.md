@@ -2,28 +2,26 @@
 title: Prepare to deploy Windows
 description: Final steps to get ready to deploy Windows, including preparing infrastructure, environment, applications, devices, network, capability, and users
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
 author: mestew
-ms.localizationpriority: medium
 ms.author: mstewart
 manager: aaroncz
-ms.topic: article
-ms.technology: itpro-updates
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 12/31/2017
 ---
 
 # Prepare to deploy Windows
 
-**Applies to**
-
--   Windows 10
--   Windows 11
-
-Having worked through the activities in the planning phase, you should be in a good position to prepare your environment and process to deploy Windows client. The planning phase will have left you with these useful items:
+Having worked through the activities in the planning phase, you should be in a good position to prepare your environment and process to deploy Windows client. The planning phase left you with these useful items:
 
 - A clear understanding of necessary personnel and their roles and criteria for [rating app readiness](plan-define-readiness.md)
 - A plan for [testing and validating](plan-determine-app-readiness.md) apps
 - An assessment of your [deployment infrastructure](eval-infra-tools.md) and definitions for operational readiness
-- A [deployment plan](create-deployment-plan.md) that defines the rings you want to use 
+- A [deployment plan](create-deployment-plan.md) that defines the rings you want to use
 
 Now you're ready to actually start making changes in your environment to get ready to deploy.
 
@@ -33,26 +31,26 @@ Now you're ready to actually start making changes in your environment to get rea
 - Update non-Microsoft security tools like security agents or servers.
 - Update non-Microsoft management tools like data loss prevention agents.
 
-Your infrastructure probably includes many different components and tools. You’ll need to ensure your environment isn’t affected by issues due to the changes you make to the various parts of the infrastructure. Follow these steps:
+Your infrastructure probably includes many different components and tools. You need to ensure your environment isn't affected by issues due to the changes you make to the various parts of the infrastructure. Follow these steps:
 
-1.	Review all of the infrastructure changes that you’ve identified in your plan. It’s important to understand the changes that need to be made and to detail how to implement them.  This process prevents problems later on.
+1.	Review all of the infrastructure changes that you've identified in your plan. It's important to understand the changes that need to be made and to detail how to implement them.  This process prevents problems later on.
 
-2.	Validate your changes. You’ll validate the changes for your infrastructure’s components and tools, to help you understand how your changes could affect your production environment. 
+2.	Validate your changes. You validate the changes for your infrastructure's components and tools, to help you understand how your changes could affect your production environment. 
 
 3.	Implement the changes. Once the changes have been validated, you can implement the changes across the wider infrastructure.
 
 
-You should also look at your organization’s environment’s configuration and outline how you’ll implement any necessary changes previously identified in the plan phase to support the update. Consider what you’ll need to do for the various settings and policies that currently underpin the environment. For example:
+You should also look at your organization's environment's configuration and outline how you'll implement any necessary changes previously identified in the plan phase to support the update. Consider what you need to do for the various settings and policies that currently underpin the environment. For example:
 
-- Implement new draft security guidance. New versions of Windows can include new features that improve your environment’s security. Your security teams will want to make appropriate changes to security-related configurations.
+- Implement new draft security guidance. New versions of Windows can include new features that improve your environment's security. Your security teams will want to make appropriate changes to security-related configurations.
 
 - Update security baselines. Security teams understand the relevant security baselines and will have to work to make sure all baselines fit into whatever guidance they have to adhere to.
 
-However, your configuration will consist of many different settings and policies. It’s important to only apply changes where they are necessary, and where you gain a clear improvement. Otherwise, your environment might face issues that will slow down the update process. You want to ensure your environment isn’t affected adversely because of changes you make. For example:
+However, your configuration will consist of many different settings and policies. It's important to only apply changes where they're necessary, and where you gain a clear improvement. Otherwise, your environment might face issues that slow down the update process. You want to ensure your environment isn't affected adversely because of changes you make. For example:
 
-1.	Review new security settings. Your security team will review the new security settings to understand how they can best be set to facilitate the update, and to also investigate the potential effects they might have on your environment.
+1.	Review new security settings. Your security team reviews the new security settings to understand how they can best be set to facilitate the update, and to also investigate the potential effects they might have on your environment.
 
-2.	Review security baselines for changes. Security teams will also review all the necessary security baselines, to ensure the changes can be implemented, and ensure your environment remains compliant.
+2.	Review security baselines for changes. Security teams also review all the necessary security baselines, to ensure the changes can be implemented, and ensure your environment remains compliant.
 
 3.	Implement and validate security settings and baseline changes. Your security teams will then implement all of the security settings and baselines, having addressed any potential outstanding issues.
 
@@ -142,9 +140,9 @@ You can also create and run scripts to perform additional cleanup actions on dev
 
 - Compact the operating system by running **Compact.exe /CompactOS:always**.
 
-- Remove Windows Features on Demand that the user doesn't need. See [Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) for more guidance.
+- Remove Windows Features on Demand that the user doesn't need. For more information, see [Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities).
 
-- Move Windows Known Folders to OneDrive. See [Use Group Policy to control OneDrive sync settings](/onedrive/use-group-policy) for more information.
+- Move Windows Known Folders to OneDrive. For more information, see [Use Group Policy to control OneDrive sync settings](/onedrive/use-group-policy).
 
 - Clean up the Software Distribution folder. Try deploying these commands as a batch file to run on devices to reset the download state of Windows Updates:
 
@@ -167,9 +165,9 @@ You can also create and run scripts to perform additional cleanup actions on dev
 
 ## Prepare capability
 
-In the plan phase, you determined the specific infrastructure and configuration changes that needed to be implemented to add new capabilities to the environment. Now you can move on to implementing those changes defined in the plan phase. You'll need to complete these higher-level tasks to gain those new capabilities:
+In the plan phase, you determined the specific infrastructure and configuration changes that needed to be implemented to add new capabilities to the environment. Now you can move on to implementing those changes defined in the plan phase. You need to complete these higher-level tasks to gain those new capabilities:
 
-- Enable capabilities across the environment by implementing the changes. For example, implement updates to relevant ADMX templates in Active Directory. New Windows versions will come with new policies that you use to update ADMX templates. 
+- Enable capabilities across the environment by implementing the changes. For example, implement updates to relevant ADMX templates in Active Directory. New Windows versions come with new policies that you use to update ADMX templates. 
 
 - Validate new changes to understand how they affect the wider environment.
 
@@ -177,12 +175,12 @@ In the plan phase, you determined the specific infrastructure and configuration 
 
 ## Prepare users
 
-Users often feel like they are forced into updating their devices randomly. They often don't fully understand why an update is needed, and they don't know when updates would be applied to their devices ahead of time. It's best to ensure that upcoming updates are communicated clearly and with adequate warning.
+Users often feel like they're forced into updating their devices randomly. They often don't fully understand why an update is needed, and they don't know when updates would be applied to their devices ahead of time. It's best to ensure that upcoming updates are communicated clearly and with adequate warning.
 
-You can employ a variety of measures to achieve this goal, for example:
+You can employ various measures to achieve this goal, for example:
 
 - Send overview email about the update and how it will be deployed to the entire organization.
 - Send personalized emails to users about the update with specific details.
 - Set an opt-out deadline for employees that need to remain on the current version for a bit longer, due to a business need.
-- Provide the ability to voluntarily update at users’ convenience.
+- Provide the ability to voluntarily update at users' convenience.
 - Inform users of a mandatory installation date when the update will be installed on all devices.

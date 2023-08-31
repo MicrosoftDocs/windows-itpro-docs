@@ -1,15 +1,17 @@
 ---
 title: Cache node configuration
 manager: aaroncz
-description: Configuring a cache node on Azure portal
+description: Configuring a cache node on Azure portal.
 ms.prod: windows-client
 ms.author: carmenf
 author: cmknox
 ms.reviewer: mstewart
-ms.topic: article
+ms.topic: reference
 ms.date: 12/31/2017
 ms.technology: itpro-updates
-ms.collection: tier3
+ms.collection:
+  - tier3
+  - must-keep
 ---
 
 # Cache node configuration
