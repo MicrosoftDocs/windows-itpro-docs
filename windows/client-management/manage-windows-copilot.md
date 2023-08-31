@@ -13,15 +13,6 @@ Windows is the first PC platform to provide centralized AI assistance for custom
 
 This article lists settings available to manage Windows Copilot. To learn more about Windows Copilot, see [Welcome to Copilot in Windows](https://support.microsoft.com/windows/welcome-to-copilot-in-windows-675708af-8c16-4675-afeb-85a5a476ccb0).
 
-## Hide the Copilot button from the taskbar
-
-This policy setting allows you to hide the Copilot button. If you enable this policy setting, the Copilot button is hidden and the Settings toggle is disabled.
-
-|                  | Setting                                                                                                          |
-|------------------|------------------------------------------------------------------------------------------------------------------|
-| **CSP**          | ./[Device/User]/Vendor/MSFT/Policy/Config/Start/[HideCopilotButton](mdm/policy-csp-start.md#hidecopilotbutton)   |
-| **Group policy** | Computer or User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button** |
-
 ## Turn off Windows Copilot
 
 This policy setting allows you to turn off Windows Copilot. If you enable this policy setting, users can't use Copilot. The Copilot icon doesn't appear on the taskbar either. If you disable or don't configure this policy setting, users can use Copilot when it's available to them.
@@ -29,7 +20,16 @@ This policy setting allows you to turn off Windows Copilot. If you enable this p
 |                  | Setting                                                                                                 |
 |------------------|---------------------------------------------------------------------------------------------------------|
 | **CSP**          | ./User/Vendor/MSFT/WindowsAI/[TurnOffWindowsCopilot](mdm/policy-csp-windowsai.md#turnoffwindowscopilot) |
-| **Group policy** | User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button**    |
+| **Group policy** | User Configuration > Administrative Templates > Windows Copilot > **Turn off Windows Copilot**          |
+
+## Hide the Copilot button from the taskbar
+
+This policy setting allows you to hide the Copilot button. If you enable this policy setting, the Copilot button is hidden and the Settings toggle is disabled. You can still open Copilot in other ways such as the `Win + C` keyboard shortcut.
+
+|                  | Setting                                                                                                          |
+|------------------|------------------------------------------------------------------------------------------------------------------|
+| **CSP**          | ./[Device/User]/Vendor/MSFT/Policy/Config/Start/[HideCopilotButton](mdm/policy-csp-start.md#hidecopilotbutton)   |
+| **Group policy** | Computer or User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button** |
 
 ## Related articles
 
