@@ -1,14 +1,15 @@
 ### YamlMime:FAQ
 metadata:
-  title: Windows Update for Business reports - Frequently Asked Questions (FAQ)
+  title: Frequently Asked Questions (FAQ)
+  titleSuffix: Windows Update for Business reports
   description: Answers to frequently asked questions about Windows Update for Business reports.
   ms.prod: windows-client
+  ms.technology: itpro-updates
   ms.topic: faq
-  ms.date: 06/20/2023
   manager: aaroncz
   author: mestew
   ms.author: mstewart
-  ms.technology: itpro-updates
+  ms.date: 06/20/2023
 title: Frequently Asked Questions about Windows Update for Business reports
 summary: |
   This article answers frequently asked questions about Windows Update for Business reports. <!--7760853-->

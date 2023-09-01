@@ -51,7 +51,7 @@ First, you create a default user profile with the customizations that you want, 
 
 1. [Create an answer file (Unattend.xml)](/windows-hardware/customize/desktop/wsim/create-or-open-an-answer-file) that sets the [CopyProfile](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-copyprofile) parameter to **True**. The CopyProfile parameter causes Sysprep to copy the currently signed-on user's profile folder to the default user profile. You can use [Windows System Image Manager](/windows-hardware/customize/desktop/wsim/windows-system-image-manager-technical-reference), which is part of the Windows Assessment and Deployment Kit (ADK) to create the Unattend.xml file.
 
-1. Uninstall any application you don't need or want from the PC. For examples on how to uninstall Windows Application see [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps&preserve-view=true). For a list of uninstallable applications, see [Understand the different apps included in Windows](/windows/application-management/apps-in-windows-10).
+1. Uninstall any application you don't need or want from the PC. For examples on how to uninstall Windows Application see [Remove-AppxProvisionedPackage](/powershell/module/dism/remove-appxprovisionedpackage?view=win10-ps&preserve-view=true). For a list of uninstallable applications, see [Understand the different apps included in Windows](/windows/application-management/overview-windows-apps).
 
    > [!NOTE]
    > It is highly recommended to uninstall unwanted or unneeded apps as it will speed up user sign-in times.
