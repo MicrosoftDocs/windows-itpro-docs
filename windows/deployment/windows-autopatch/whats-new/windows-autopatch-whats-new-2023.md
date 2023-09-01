@@ -1,7 +1,7 @@
 ---
 title: What's new 2023
 description: This article lists the 2023 feature releases and any corresponding Message center post numbers.
-ms.date: 08/31/2023 
+ms.date: 09/05/2023 
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.topic: whats-new
@@ -20,6 +20,12 @@ ms.collection:
 This article lists new and updated feature releases, and service releases, with their corresponding Message center post numbers (if applicable).
 
 Minor corrections such as typos, style, or formatting issues aren't listed.
+
+## September 2023
+
+| Article | Description |
+| ----- | ----- |
+| [Conflicting configurations](../references/windows-autopatch-conflicting-configurations.md) | New feature. This article explains how to remediate conflicting configurations<ul><li>[MC671811](https://admin.microsoft.com/adminportal/home#/MessageCenter)</li></ul> |
 
 ## August 2023
 
