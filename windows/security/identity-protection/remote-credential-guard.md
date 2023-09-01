@@ -26,11 +26,11 @@ Administrator credentials are highly privileged and must be protected. By using 
 
 The following diagram helps you to understand how a standard Remote Desktop session to a server without Remote Credential Guard works:
 
-![RDP connection to a server without Remote Credential Guard.png.](images/rdp-to-a-server-without-windows-defender-remote-credential-guard.png)
+![Screenshot of RDP connection to a server without Remote Credential Guard.png.](images/rdp-to-a-server-without-windows-defender-remote-credential-guard.png)
 
 The following diagram helps you to understand how Remote Credential Guard works, what it helps to protect against, and compares it with the [Restricted Admin mode](https://social.technet.microsoft.com/wiki/contents/articles/32905.how-to-enable-restricted-admin-mode-for-remote-desktop.aspx) option:
 
-![Remote Credential Guard.](images/windows-defender-remote-credential-guard-with-remote-admin-mode.png)
+![Screenshot of remote Credential Guard.](images/windows-defender-remote-credential-guard-with-remote-admin-mode.png)
 
 As illustrated, Remote Credential Guard blocks NTLM (allowing only Kerberos), prevents Pass-the-Hash (PtH) attacks, and also prevents use of credentials after disconnection.
 
@@ -118,7 +118,7 @@ Beginning with Windows 10 version 1703, you can enable Remote Credential Guard o
 
 1. From the Group Policy Management Console, go to **Computer Configuration** -> **Administrative Templates** -> **System** -> **Credentials Delegation**
 1. Double-click **Restrict delegation of credentials to remote servers**
-    ![Remote Credential Guard Group Policy.](images/remote-credential-guard-gp.png)
+    ![Screenshot of Remote Credential Guard Group Policy.](images/remote-credential-guard-gp.png)
 1. Under **Use the following restricted mode**:
   - If you want to require either [Restricted Admin mode](https://social.technet.microsoft.com/wiki/contents/articles/32905.remote-desktop-services-enable-restricted-admin-mode.aspx) or Remote Credential Guard, choose **Restrict Credential Delegation**. In this configuration, Remote Credential Guard is preferred, but it will use Restricted Admin mode (if supported) when Remote Credential Guard cannot be used
 

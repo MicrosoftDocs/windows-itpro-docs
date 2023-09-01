@@ -211,13 +211,11 @@ When Credential Guard is enabled on Windows, the Java GSS API doesn't authentica
 
 The following issue affects McAfee Application and Change Control (MACC):
 
-- [KB88869 Windows machines exhibit high CPU usage with McAfee Application and Change Control (MACC) installed when Credential Guard is enabled](https://kcm.trellix.com/corporate/index?page=content&id=KB88869) <sup>[Note 1](#bkmk_note1)</sup>
+- [KB88869 Windows machines exhibit high CPU usage with McAfee Application and Change Control (MACC) installed when Credential Guard is enabled](https://kcm.trellix.com/corporate/index?page=content&id=KB88869)
 
 The following issue affects Citrix applications:
 
-- Windows machines exhibit high CPU usage with Citrix applications installed when Credential Guard is enabled. <sup>[Note 1](#bkmk_note1)</sup>
-
-<a name="bkmk_note1"></a>
+- Windows machines exhibit high CPU usage with Citrix applications installed when Credential Guard is enabled.
 
 > [!NOTE]
 > Products that connect to Virtualization Based Security (VBS) protected processes can cause Credential Guard-enabled devices to exhibit high CPU usage. For technical and troubleshooting information, see [KB4032786 High CPU usage in the LSAISO process on Windows](/troubleshoot/windows-client/performance/lsaiso-process-high-cpu-usage).
@@ -226,9 +224,8 @@ The following issue affects Citrix applications:
 
 #### Vendor support
 
-The following products and services don't support Credential Guard :
+The following products and services don't support Credential Guard:
 
-- [Support for Hypervisor-Protected Code Integrity and Credential Guard on Windows with McAfee encryption products](https://kcm.trellix.com/corporate/index?page=content&id=KB86009KB86009)
 - [Check Point Endpoint Security Client support for Microsoft Credential Guard and Hypervisor-Protected Code Integrity features](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk113912)
 - [*VMware Workstation and Device/Credential Guard aren't compatible* error in VMware Workstation on Windows 10 host (2146361)](https://kb.vmware.com/s/article/2146361)
 - [ThinkPad support for Hypervisor-Protected Code Integrity and Credential Guard in Microsoft Windows](https://support.lenovo.com/in/en/solutions/ht503039)

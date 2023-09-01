@@ -74,7 +74,7 @@ Windows Defender Firewall also now supports [Windows Subsystem for Linux (WSL)](
 
 ### Virus and threat protection
 
-[Attack surface area reduction](/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction) - IT admins can configure devices with advanced web protection that enables them to define allowlists and blocklists for specific URL's and IP addresses.
+[Attack surface area reduction](/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction) - IT admins can configure devices with advanced web protection that enables them to define allowlists and blocklists for specific URLs and IP addresses.
 [Next generation protection](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) - Controls have been extended to protection from ransomware, credential misuse, and attacks that are transmitted through removable storage.
   - Integrity enforcement capabilities - Enable remote runtime attestation of Windows 10 platform.
   - [Tamper-proofing](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection) capabilities - Uses virtualization-based security to isolate critical Microsoft Defender for Endpoint security capabilities away from the OS and attackers.

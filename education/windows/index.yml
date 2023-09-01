@@ -86,7 +86,7 @@ productDirectory:
         - url: /windows/security/identity-protection/hello-for-business
           text: Windows Hello for Business
         - url: /windows/security/identity-protection/credential-guard
-          text: Windows Defender Credential Guard
+          text: Credential Guard
         - url: /windows-server/identity/laps/laps-overview
           text: Windows LAPS (Local Administrator Password Solution)
         - url: /windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection

@@ -135,7 +135,7 @@ In most cases, the Windows Pro edition comes pre-installed on a business-class d
 - A developer that is developing applications that must be tested and certified on Pro, as that is how it will be delivered to customers
 - A Windows Pro device that was pre-configured for a specific purpose and is certified on Pro only
 
-In these cases, you want the PC to be configured, secured, monitored, and updated with the enterprise management and security tools that come with the Windows Enterprise user subscription. Your Windows Enterprise E3 subscriptions does not block these scenarios.
+In these cases, you want the PC to be configured, secured, monitored, and updated with the enterprise management and security tools that come with the Windows Enterprise user subscription. Your Windows Enterprise E3 subscription doesn't block these scenarios.
 
 The following table lists the Windows 11 Enterprise features and their Windows edition requirements:
 

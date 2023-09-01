@@ -1,7 +1,7 @@
 ---
 title: Introduction to Windows security
 description: System security book.
-ms.date: 08/01/2023
+ms.date: 09/01/2023
 ms.topic: tutorial
 ms.author: paoloma
 content_well_notification: 
@@ -25,7 +25,7 @@ A Zero Trust security model gives the right people the right access at the right
 1. When verified, give people and devices access to only necessary resources for the necessary amount of time
 1. Use continuous analytics to drive threat detection and improve defenses
 
-For Windows 11, the Zero Trust principle of *verify explicitly* applies to risks introduced by both devices and people. Windows 11 provides *chip-to-cloud security*, enabling IT administrators to implement strong authorization and authentication processes with features like [Windows Hello for Business](identity-protection/hello-for-business/index.md). IT administrators also gain attestation and measurements for determining if a device meets requirements and can be trusted. Windows 11 works out-of-the-box with Microsoft Intune and Azure Active Directory, which enable timely and seamless access decisions. Furthermore, IT administrators can easily customize Windows to meet specific user and policy requirements for access, privacy, compliance, and more.
+For Windows 11, the Zero Trust principle of *verify explicitly* applies to risks introduced by both devices and people. Windows 11 provides *chip-to-cloud security*, enabling IT administrators to implement strong authorization and authentication processes with features like [Windows Hello for Business](identity-protection/hello-for-business/index.md). IT administrators also gain attestation and measurements for determining if a device meets requirements and can be trusted. Windows 11 works out-of-the-box with Microsoft Intune and Azure Active Directory, which enables timely and seamless access decisions. Furthermore, IT administrators can easily customize Windows to meet specific user and policy requirements for access, privacy, compliance, and more.
 
 ### Security, by default
 

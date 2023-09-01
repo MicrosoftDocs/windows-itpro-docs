@@ -105,7 +105,7 @@ Restart the device to apply the change.
 
 ### Verify if Credential Guard is enabled
 
-Checking the task list or Task Manager if `LsaIso.exe` is running is not a recommended method for determining whether Credential Guard is running. Instead, use one of the following methods:
+Checking Task Manager if `LsaIso.exe` is running isn't a recommended method for determining whether Credential Guard is running. Instead, use one of the following methods:
 
 - System Information
 - PowerShell
@@ -157,7 +157,7 @@ Open the Event Viewer (`eventvwr.exe`) and go to `Windows Logs\System` and filte
 :::row-end:::
 :::row:::
   :::column span="1":::
-  14 (Information)
+  `14` (Information)
   :::column-end:::
   :::column span="3":::
   ```logging
@@ -169,7 +169,7 @@ Open the Event Viewer (`eventvwr.exe`) and go to `Windows Logs\System` and filte
 :::row-end:::
 :::row:::
   :::column span="1":::
-  15 (Warning)
+  `15` (Warning)
   :::column-end:::
   :::column span="3":::
   ```logging
@@ -180,7 +180,7 @@ Open the Event Viewer (`eventvwr.exe`) and go to `Windows Logs\System` and filte
 :::row-end:::
 :::row:::
   :::column span="1":::
-  16 (Warning)
+  `16` (Warning)
   :::column-end:::
   :::column span="3":::
   ```logging
@@ -190,7 +190,7 @@ Open the Event Viewer (`eventvwr.exe`) and go to `Windows Logs\System` and filte
 :::row-end:::
 :::row:::
   :::column span="1":::
-  17
+  `17`
   :::column-end:::
   :::column span="3":::
   ```logging
@@ -199,7 +199,7 @@ Open the Event Viewer (`eventvwr.exe`) and go to `Windows Logs\System` and filte
   :::column-end:::
 :::row-end:::
 
-The following event indicates wether TPM is used for key protection. Path: `Applications and Services logs > Microsoft > Windows > Kernel-Boot`
+The following event indicates whether TPM is used for key protection. Path: `Applications and Services logs > Microsoft > Windows > Kernel-Boot`
 
 :::row:::
   :::column span="1":::
@@ -220,7 +220,7 @@ The following event indicates wether TPM is used for key protection. Path: `Appl
   :::column-end:::
 :::row-end:::
 
-If you're running with a TPM, the TPM PCR mask value will be something other than 0.
+If you're running with a TPM, the TPM PCR mask value is something other than 0.
 
 ## Disable Credential Guard
 
@@ -239,7 +239,7 @@ There are different options to disable Credential Guard. The option you choose d
 
 ### Disable Credential Guard with Intune
 
-If Credential Guard is enabled via Intune and without UEFI Lock, disabling the same policy setting will disable Credential Guard.
+If Credential Guard is enabled via Intune and without UEFI Lock, disabling the same policy setting disables Credential Guard.
 
 [!INCLUDE [intune-settings-catalog-1](../../../../includes/configure/intune-settings-catalog-1.md)]
 
@@ -261,7 +261,7 @@ Once the policy is applied, restart the device.
 
 ### Disable  Credential Guard with group policy
 
-If Credential Guard is enabled via Group Policy and without UEFI Lock, disabling the same group policy setting will disable Credential Guard.
+If Credential Guard is enabled via Group Policy and without UEFI Lock, disabling the same group policy setting disables Credential Guard.
 
 [!INCLUDE [gpo-settings-1](../../../../includes/configure/gpo-settings-1.md)]
 
@@ -277,7 +277,7 @@ Once the policy is applied, restart the device.
 
 ### Disable Credential Guard with registry settings
 
-If Credential Guard is enabled without UEFI Lock and without Group Policy, it's sufficient to edit the registry keys as described below to disable Credential Guard.
+If Credential Guard is enabled without UEFI Lock and without Group Policy, it's sufficient to edit the registry keys to disable it.
 
 | Setting |
 |-|
@@ -314,7 +314,7 @@ If Credential Guard is enabled with UEFI lock, follow this procedure since the s
    mountvol X: /d
    ```
 
-1. Restart the device. Before the OS boots, a prompt will appear notifying that UEFI was modified, and asking for confirmation. The prompt must be confirmed for the changes to persist.
+1. Restart the device. Before the OS boots, a prompt appears notifying that UEFI was modified, and asking for confirmation. The prompt must be confirmed for the changes to persist.
 
 ### Disable Credential Guard for a virtual machine
 
@@ -343,7 +343,7 @@ Use one of the following options to disable VBS:
 
 ### Disable VBS with Intune
 
-If VBS is enabled via Intune and without UEFI Lock, disabling the same policy setting will disable VBS.
+If VBS is enabled via Intune and without UEFI Lock, disabling the same policy setting disables VBS.
 
 [!INCLUDE [intune-settings-catalog-1](../../../../includes/configure/intune-settings-catalog-1.md)]
 
@@ -404,7 +404,7 @@ bcdedit /set vsmlaunchtype off
 
 ## Next steps
 
-- Review the advices and sample code for making your environment more secure and robust with Credential Guard in the [Additional mitigations](additional-mitigations.md) article
+- Review the advice and sample code for making your environment more secure and robust with Credential Guard in the [Additional mitigations](additional-mitigations.md) article
 - Review [considerations and known issues when using Credential Guard](considerations-known-issues.md)
 
 <!--links-->
