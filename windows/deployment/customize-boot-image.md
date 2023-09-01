@@ -108,7 +108,7 @@ Before modifying the desired boot image, make a backup copy of the boot image th
 
 Adjust the above paths for 32-bit boot images (only available with Windows 10 ADKs).
 
-The following commands backs up the 64-bit boot image included with the **Windows PE add-on for the Windows ADK**:
+The following command backs up the 64-bit boot image included with the **Windows PE add-on for the Windows ADK**:
 ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
 From an elevated **PowerShell** command prompt, run the following command to create a backup copy of the 64-bit boot image included with the Windows ADK. If a backed-up boot image already exists, this command needs confirmation before it overwrites the existing backed up boot image:
@@ -1019,7 +1019,7 @@ This process updates the boot image used by Configuration Manager. It also updat
 
 ### Updating Configuration Manager boot media
 
-After completing the walkthrough, including updating boot images in Configuration Manager, update any Configuration Manager task sequence media. Updating any Configuration Manager task sequence media ensures that the task sequence media has both the updated boot image. If applicable, it will also updat bootmgr boot files on the media by extracting the latest versions from the boot image. For more information on creating Configuration Manager task sequence media, see [Create task sequence media](/mem/configmgr/osd/deploy-use/create-task-sequence-media).
+After completing the walkthrough, including updating boot images in Configuration Manager, update any Configuration Manager task sequence media. Updating any Configuration Manager task sequence media ensures that the task sequence media has both the updated boot image. If applicable, it will also update bootmgr boot files on the media by extracting the latest versions from the boot image. For more information on creating Configuration Manager task sequence media, see [Create task sequence media](/mem/configmgr/osd/deploy-use/create-task-sequence-media).
 
 ## Microsoft Deployment Toolkit (MDT) considerations
 
