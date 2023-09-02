@@ -1,7 +1,7 @@
 ---
 title: Windows 10 editions for education customers
 description: Learn about the two Windows 10 editions that are designed for the needs of education institutions.
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 07/25/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>

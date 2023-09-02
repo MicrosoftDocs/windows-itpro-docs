@@ -1,22 +1,23 @@
 ---
 title: Manage additional Windows Update settings
-description: In this article, learn about additional settings to control the behavior of Windows Update.
+description: In this article, learn about additional settings to control the behavior of Windows Update in your organization.
 ms.prod: windows-client
-ms.localizationpriority: medium
+ms.technology: itpro-updates
+ms.topic: conceptual
 author: mestew
 ms.author: mstewart
 manager: aaroncz
-ms.topic: how-to
 ms.collection:
   - highpri
   - tier2
-ms.technology: itpro-updates
+ms.localizationpriority: medium
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
 ms.date: 04/25/2023
 ---
 
 # Manage additional Windows Update settings
-
-***(Applies to: Windows 11 & Windows 10)***
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 

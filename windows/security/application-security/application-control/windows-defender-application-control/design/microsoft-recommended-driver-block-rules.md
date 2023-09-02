@@ -5,6 +5,7 @@ ms.localizationpriority: medium
 ms.collection:
 - highpri
 - tier3
+- must-keep
 ms.date: 06/06/2023
 ms.topic: article
 ---
@@ -40,8 +41,6 @@ With Windows 11 2022 update, the vulnerable driver blocklist  is enabled by defa
 The blocklist is updated with each new major release of Windows, typically 1-2 times per year, including most recently with the Windows 11 2022 update released in September 2022. The most current blocklist is now also available for Windows 10 20H2 and Windows 11 21H2 users as an optional update from Windows Update. Microsoft will occasionally publish future updates through regular Windows servicing.
 
 Customers who always want the most up-to-date driver blocklist can also use Windows Defender Application Control (WDAC) to apply the latest recommended driver blocklist contained in this article. For your convenience, we've provided a download of the most up-to-date vulnerable driver blocklist along with instructions to apply it on your computer at the end of this article. Otherwise, you can use the XML provided below to create your own custom WDAC policies.
-
-[!INCLUDE [microsoft-vulnerable-driver-blocklist](../../../../../../includes/licensing/microsoft-vulnerable-driver-blocklist.md)]
 
 ## Blocking vulnerable drivers using WDAC
 

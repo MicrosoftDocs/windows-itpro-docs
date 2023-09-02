@@ -9,6 +9,7 @@ ms.topic: article
 ms.date: 12/31/2017
 ms.technology: itpro-updates
 ms.collection: tier3
+ms.reviewer: mstewart
 ---
 
 # Operator sign up and service onboarding for Microsoft Connected Cache

@@ -3,7 +3,9 @@ title: Using UE-V with Application Virtualization applications
 description: Learn how to use User Experience Virtualization (UE-V) with Microsoft Application Virtualization (App-V).
 author: aczechowski
 ms.prod: windows-client
-ms.collection: tier3
+ms.collection:
+ - tier3
+ - must-keep
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: aaroncz

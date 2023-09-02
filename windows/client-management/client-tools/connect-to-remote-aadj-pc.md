@@ -1,20 +1,12 @@
 ---
 title: Connect to remote Azure Active Directory joined device
 description: Learn how to use Remote Desktop Connection to connect to an Azure AD joined device.
-ms.prod: windows-client
-author: vinaypamnani-msft
 ms.localizationpriority: medium
-ms.author: vinpa
-ms.date: 04/11/2023
-manager: aaroncz
+ms.date: 08/10/2023
 ms.topic: article
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
 ms.collection:
 - highpri
 - tier2
-ms.technology: itpro-manage
 ---
 
 # Connect to remote Azure Active Directory joined device

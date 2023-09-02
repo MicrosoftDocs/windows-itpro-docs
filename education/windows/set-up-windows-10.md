@@ -1,7 +1,7 @@
 ---
 title: Set up Windows devices for education
 description: Decide which option for setting up Windows 10 is right for you.
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 08/10/2022
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>

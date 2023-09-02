@@ -1,39 +1,46 @@
 ### YamlMime:Landing
 
 title: Windows application management
-summary: Learn about managing applications in Windows client, including how to remove background task resource restrictions.
+summary: Learn about managing applications in Windows client, including common app types.
 
 metadata:
   title: Windows application management
-  description: Learn about managing applications in Windows 10 and Windows 11.
+  description: Learn about managing applications in Windows client.
   author: aczechowski
   ms.author: aaroncz
   manager: aaroncz
-  ms.date: 08/24/2021
+  ms.date: 08/18/2023
   ms.topic: landing-page
   ms.prod: windows-client
   ms.collection:
     - tier1
     - highpri
 
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
+
 landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: Manage Windows applications
+  - title: Manage applications
     linkLists:
-      - linkListType: overview
+      - linkListType: how-to-guide
         links:
-          - text: Understand apps in Windows client OS
-            url: apps-in-windows-10.md
-          - text: How to add features
+          - text: Overview of apps in Windows
+            url: overview-windows-apps.md
+          - text: Add or hide Windows features
             url: add-apps-and-features.md
           - text: Sideload LOB apps
             url: sideload-apps-in-windows-10.md
           - text: Keep removed apps from returning during an update
             url: remove-provisioned-apps-during-update.md
 
-  # Card (optional)
+  - title: Manage services
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Per-user services in Windows
+            url: per-user-services-in-windows.md
+          - text: Changes to Service Host grouping in Windows 10
+            url: svchost-service-refactoring.md
+
   - title: Application Virtualization (App-V) 
     linkLists:
       - linkListType: overview
@@ -52,15 +59,3 @@ landingContent:
             url: app-v/appv-troubleshooting.md
           - text: Technical Reference for App-V
             url: app-v/appv-technical-reference.md
-
-  # Card (optional)
-  - title: Windows System Services
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Changes to Service Host grouping in Windows 10
-            url: svchost-service-refactoring.md
-          - text: Per-user services in Windows
-            url: per-user-services-in-windows.md
-          - text: Per-user services in Windows
-            url: per-user-services-in-windows.md
