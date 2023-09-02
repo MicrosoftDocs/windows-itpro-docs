@@ -97,5 +97,5 @@ Services or protocols that rely on Kerberos, such as file shares or remote deskt
 
 - Learn [how Credential Guard works](how-it-works.md)
 - Learn [how to configure Credential Guard](configure.md)
-- Review the advices and sample code for making your environment more secure and robust with Credential Guard in the [Additional mitigations](additional-mitigations.md) article
+- Review the advice and sample code for making your environment more secure and robust with Credential Guard in the [Additional mitigations](additional-mitigations.md) article
 - Review [considerations and known issues when using Credential Guard](considerations-known-issues.md)
