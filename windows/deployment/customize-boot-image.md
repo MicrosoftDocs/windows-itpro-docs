@@ -7,7 +7,7 @@ author: frankroj
 manager: aaroncz
 ms.author: frankroj
 ms.topic: article
-ms.date: 08/22/2023
+ms.date: 09/01/2023
 ms.technology: itpro-deploy
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -108,7 +108,7 @@ Before modifying the desired boot image, make a backup copy of the boot image th
 
 Adjust the above paths for 32-bit boot images (only available with Windows 10 ADKs).
 
-The following commands backs up the 64-bit boot image included with the **Windows PE add-on for the Windows ADK**:
+The following command backs up the 64-bit boot image included with the **Windows PE add-on for the Windows ADK**:
 ### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
 From an elevated **PowerShell** command prompt, run the following command to create a backup copy of the 64-bit boot image included with the Windows ADK. If a backed-up boot image already exists, this command needs confirmation before it overwrites the existing backed up boot image:
@@ -840,7 +840,7 @@ For more information, see [Modify a Windows image using DISM: Unmounting an imag
         **Example**:
 
         ```powershell
-        Remove-Item - Path "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" -Force
+        Remove-Item -Path "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Preinstallation Environment\amd64\en-us\winpe.wim" -Force
         ```
 
         For more information, see [Remove-Item](/powershell/module/microsoft.powershell.management/remove-item).
@@ -1019,7 +1019,7 @@ This process updates the boot image used by Configuration Manager. It also updat
 
 ### Updating Configuration Manager boot media
 
-After completing the walkthrough, including updating boot images in Configuration Manager, update any Configuration Manager task sequence media. Updating any Configuration Manager task sequence media ensures that the task sequence media has both the updated boot image. If applicable, it will also updat bootmgr boot files on the media by extracting the latest versions from the boot image. For more information on creating Configuration Manager task sequence media, see [Create task sequence media](/mem/configmgr/osd/deploy-use/create-task-sequence-media).
+After completing the walkthrough, including updating boot images in Configuration Manager, update any Configuration Manager task sequence media. Updating any Configuration Manager task sequence media ensures that the task sequence media has both the updated boot image. If applicable, it will also update bootmgr boot files on the media by extracting the latest versions from the boot image. For more information on creating Configuration Manager task sequence media, see [Create task sequence media](/mem/configmgr/osd/deploy-use/create-task-sequence-media).
 
 ## Microsoft Deployment Toolkit (MDT) considerations
 
@@ -1154,7 +1154,7 @@ then follow these steps to update the boot image in WDS:
 
     ---
 
-2. Once the existing boot image in WDS has been replaced, restart the WDS service:
+1. Once the existing boot image in WDS has been replaced, restart the WDS service:
 
     #### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
@@ -1233,7 +1233,7 @@ then follow these steps to add the boot image in WDS:
 
     ---
 
-2. Once the existing boot image in WDS has been replaced, restart the WDS service:
+1. Once the existing boot image in WDS has been replaced, restart the WDS service:
 
     #### [:::image type="icon" source="images/icons/powershell-18.svg"::: **PowerShell**](#tab/powershell)
 
@@ -1271,7 +1271,12 @@ The **boot.wim** that is part of Windows installation media isn't supported for 
 
 ## Windows Server 2012 R2
 
-This walk-through isn't intended for use with Windows Server 2012 R2. Although the steps in this article may work with Windows Server 2012 R2 when using older versions of the Windows ADK. However it may have compatibility problems with versions of the Windows ADK that are newer than the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads). For server OSes, it's recommended to use Windows Server 2016 or later for this walk-through. For more information, see [Windows Server 2012 R2 Lifecycle](/lifecycle/products/windows-server-2012-r2).
+This walk-through isn't intended for use with Windows Server 2012 R2. The steps in this article may work with Windows Server 2012 R2 when using older versions of the Windows ADK. However, it may have compatibility problems with versions of the Windows ADK that are newer than the [ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install#other-adk-downloads). To resolve compatibility problems with newer ADKs and Windows Server 2012 R2:
+
+1. Upgrade Windows Server 2012 R2 to a newer version of Windows Server.
+1. Perform the boot image customizations on a computer running a version of Windows that supports the newer ADKs, for example Windows 10 or Windows 11, and then transfer the modified boot image to the Windows Server 2012 R2 server.
+
+For more information, see [Windows Server 2012 R2 Lifecycle](/lifecycle/products/windows-server-2012-r2).
 
 ## Related articles
 
