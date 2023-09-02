@@ -205,7 +205,7 @@ The following issue affects MSCHAPv2:
 
 The following issue affects the Java GSS API. See the following Oracle bug database article:
 
-- [JDK-8161921: Credential Guard doesn't allow sharing of TGT with Java](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=8161921)
+- [JDK-8161921: Credential Guard doesn't allow sharing of TGT with Java](https://bugs.java.com/bugdatabase/view_bug?bug_id=8161921)
 
 When Credential Guard is enabled on Windows, the Java GSS API doesn't authenticate. Credential Guard blocks specific application authentication capabilities and doesn't provide the TGT session key to applications, regardless of registry key settings. For more information, see [Application requirements](index.md#application-requirements).
 
