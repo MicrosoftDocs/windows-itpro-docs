@@ -4,7 +4,7 @@ description: Learn more about the CloudDesktop CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 07/25/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -35,7 +35,7 @@ The following list shows the CloudDesktop configuration service provider nodes:
 <!-- Device-EnableBootToCloudSharedPCMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows Insider Preview [10.0.22631.2050] |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview [10.0.22631.2050] |
 <!-- Device-EnableBootToCloudSharedPCMode-Applicability-End -->
 
 <!-- Device-EnableBootToCloudSharedPCMode-OmaUri-Begin -->

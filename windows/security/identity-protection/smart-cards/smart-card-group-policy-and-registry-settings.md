@@ -2,7 +2,7 @@
 title: Smart Card Group Policy and Registry Settings 
 description: Discover the Group Policy, registry key, local security policy, and credential delegation policy settings that are available for configuring smart cards.
 ms.reviewer: ardenw
-ms.topic: article
+ms.topic: reference
 ms.date: 11/02/2021
 ---
 

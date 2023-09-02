@@ -4,9 +4,9 @@ description: Details on Microsoft Connected Cache (MCC) for Internet Service Pro
 ms.prod: windows-client
 ms.technology: itpro-updates
 ms.localizationpriority: medium
-author: amymzhou
-ms.author: amyzhou
-ms.reviewer: carmenf
+ms.author: carmenf
+author: cmknox
+ms.reviewer: mstewart
 manager: aaroncz
 ms.topic: how-to
 ms.date: 05/20/2022
