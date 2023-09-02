@@ -1,22 +1,20 @@
 ---
 title: Evaluate infrastructure and tools
-description: Steps to make sure your infrastructure is ready to deploy updates
+description: Review the steps to ensure your infrastructure is ready to deploy updates to clients in your organization.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: article
 author: mestew
 ms.author: mstewart
 manager: aaroncz
 ms.localizationpriority: medium
-ms.topic: article
-ms.technology: itpro-updates
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 12/31/2017
 ---
 
 # Evaluate infrastructure and tools
-
-**Applies to**
-
--   Windows 10
--   Windows 11
 
 Before you deploy an update, it's best to assess your deployment infrastructure (that is, tools such as Configuration Manager, Microsoft Intune, or similar) and current configurations (such as security baselines, administrative templates, and policies that affect updates). Then, set some criteria to define your operational readiness.
 

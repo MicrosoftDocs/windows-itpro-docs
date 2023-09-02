@@ -13,7 +13,7 @@ ms.date: 08/03/2023
 Bitlocker is a Windows disk encryption feature, designed to protect data by providing encryption for entire volumes.\
 BitLocker addresses the threats of data theft or exposure from lost, stolen, or inappropriately decommissioned devices.
 
-BitLocker provides maximum protection when used with a Trusted Platform Module (TPM). A TPM is a hardware component installed in many devices ant it works with BitLocker to help protect user data and to ensure that a computer hasn't been tampered with while the system is offline.
+BitLocker provides maximum protection when used with a Trusted Platform Module (TPM). A TPM is a hardware component installed in many devices and it works with BitLocker to help protect user data and to ensure that a computer hasn't been tampered with while the system is offline.
 
 On devices that don't have a TPM, BitLocker can still be used to encrypt the Windows operating system drive. However, this implementation requires the user to insert a USB startup key to start the device or resume from hibernation. An operating system volume password can be used to protect the operating system volume on a computer without TPM. Both options don't provide the pre-startup system integrity verification offered by BitLocker with a TPM.
 

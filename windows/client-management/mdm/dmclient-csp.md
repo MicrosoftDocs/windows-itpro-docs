@@ -4,7 +4,7 @@ description: Learn more about the DMClient CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -143,7 +143,7 @@ The following list shows the DMClient configuration service provider nodes:
 <!-- Device-HWDevID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-HWDevID-Applicability-End -->
 
 <!-- Device-HWDevID-OmaUri-Begin -->
@@ -182,7 +182,7 @@ Returns the hardware device ID.
 <!-- Device-Provider-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-Applicability-End -->
 
 <!-- Device-Provider-OmaUri-Begin -->
@@ -221,7 +221,7 @@ The root node for all settings that belong to a single management server.
 <!-- Device-Provider-{ProviderID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-OmaUri-Begin -->
@@ -261,7 +261,7 @@ This node contains the URI-encoded value of the bootstrapped device management a
 <!-- Device-Provider-{ProviderID}-AADDeviceID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Provider-{ProviderID}-AADDeviceID-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-AADDeviceID-OmaUri-Begin -->
@@ -300,7 +300,7 @@ Device ID used for AAD device registration.
 <!-- Device-Provider-{ProviderID}-AADResourceID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-AADResourceID-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-AADResourceID-OmaUri-Begin -->
@@ -340,7 +340,7 @@ For more information about Azure AD enrollment, see [Azure Active Directory inte
 <!-- Device-Provider-{ProviderID}-AADSendDeviceToken-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-Provider-{ProviderID}-AADSendDeviceToken-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-AADSendDeviceToken-OmaUri-Begin -->
@@ -388,7 +388,7 @@ For Azure AD backed enrollments, this will cause the client to send a Device Tok
 <!-- Device-Provider-{ProviderID}-CertRenewTimeStamp-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-CertRenewTimeStamp-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-CertRenewTimeStamp-OmaUri-Begin -->
@@ -427,7 +427,7 @@ The time in OMA DM standard time format. This node is designed to reduce the ris
 <!-- Device-Provider-{ProviderID}-CommercialID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Provider-{ProviderID}-CommercialID-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-CommercialID-OmaUri-Begin -->
@@ -466,7 +466,7 @@ Configures the identifier used to uniquely associate this diagnostic data of thi
 <!-- Device-Provider-{ProviderID}-ConfigLock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Provider-{ProviderID}-ConfigLock-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ConfigLock-OmaUri-Begin -->
@@ -508,7 +508,7 @@ This node enables [Config Lock](../config-lock.md) feature. If enabled, policies
 <!-- Device-Provider-{ProviderID}-ConfigLock-Lock-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Provider-{ProviderID}-ConfigLock-Lock-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ConfigLock-Lock-OmaUri-Begin -->
@@ -557,7 +557,7 @@ This node specifies how the client will perform the lock mode for SecureCore PC.
 <!-- Device-Provider-{ProviderID}-ConfigLock-SecureCore-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Provider-{ProviderID}-ConfigLock-SecureCore-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ConfigLock-SecureCore-OmaUri-Begin -->
@@ -596,7 +596,7 @@ The node returns the boolean value whether the device is a SecureCore PC.
 <!-- Device-Provider-{ProviderID}-ConfigLock-UnlockDuration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Provider-{ProviderID}-ConfigLock-UnlockDuration-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ConfigLock-UnlockDuration-OmaUri-Begin -->
@@ -636,7 +636,7 @@ This node, when it's set, tells the client to set how many minutes the device sh
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-OmaUri-Begin -->
@@ -675,7 +675,7 @@ Parent node for ConfigRefresh nodes.
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Cadence-OmaUri-Begin -->
@@ -716,7 +716,7 @@ This node determines the number of minutes between refreshes.
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-Enabled-OmaUri-Begin -->
@@ -765,7 +765,7 @@ This node determines whether or not a periodic settings refresh for MDM policies
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ConfigRefresh-PausePeriod-OmaUri-Begin -->
@@ -806,7 +806,7 @@ This node determines the number of minutes ConfigRefresh should be paused for.
 <!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-OmaUri-Begin -->
@@ -845,7 +845,7 @@ These nodes provision custom text for the enrollment page.
 <!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-BodyText-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-BodyText-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-BodyText-OmaUri-Begin -->
@@ -884,7 +884,7 @@ Specifies the body text of the all done page that appears at the end of the MDM 
 <!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkHref-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkHref-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkHref-OmaUri-Begin -->
@@ -923,7 +923,7 @@ Specifies the URL that's shown at the end of the MDM enrollment flow.
 <!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkText-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkText-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-HyperlinkText-OmaUri-Begin -->
@@ -962,7 +962,7 @@ Specifies the display text for the URL that's shown at the end of the MDM enroll
 <!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Title-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Title-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-CustomEnrollmentCompletePage-Title-OmaUri-Begin -->
@@ -1001,7 +1001,7 @@ Specifies the title of the all done page that appears at the end of the MDM enro
 <!-- Device-Provider-{ProviderID}-EnableOmaDmKeepAliveMessage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1511 [10.0.10586] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1511 [10.0.10586] and later |
 <!-- Device-Provider-{ProviderID}-EnableOmaDmKeepAliveMessage-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-EnableOmaDmKeepAliveMessage-OmaUri-Begin -->
@@ -1082,7 +1082,7 @@ Here's an example of DM message sent by the device when it's in pending state:
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-OmaUri-Begin -->
@@ -1120,7 +1120,7 @@ Here's an example of DM message sent by the device when it's in pending state:
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert0-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert0-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert0-OmaUri-Begin -->
@@ -1159,7 +1159,7 @@ The node contains the primary certificate - the public key to use.
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert1-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert1-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-Cert1-OmaUri-Begin -->
@@ -1198,7 +1198,7 @@ The node contains the secondary certificate - the public key to use.
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-SecurityMode-OmaUri-Begin -->
@@ -1249,7 +1249,7 @@ This node specifies how the client will perform the app layer signing and encryp
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-UseCertIfRevocationCheckOffline-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-UseCertIfRevocationCheckOffline-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-EnhancedAppLayerSecurity-UseCertIfRevocationCheckOffline-OmaUri-Begin -->
@@ -1298,7 +1298,7 @@ This node, when it's set, tells the client to use the certificate even when the 
 <!-- Device-Provider-{ProviderID}-EnrollmentType-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Provider-{ProviderID}-EnrollmentType-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-EnrollmentType-OmaUri-Begin -->
@@ -1337,7 +1337,7 @@ Type of MDM enrollment (Device or Full).
 <!-- Device-Provider-{ProviderID}-EntDeviceName-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-EntDeviceName-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-EntDeviceName-OmaUri-Begin -->
@@ -1376,7 +1376,7 @@ Character string that contains the user-friendly device name used by the IT admi
 <!-- Device-Provider-{ProviderID}-EntDMID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-EntDMID-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-EntDMID-OmaUri-Begin -->
@@ -1417,7 +1417,7 @@ Character string that contains the unique enterprise device ID. The value is set
 <!-- Device-Provider-{ProviderID}-ExchangeID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-ExchangeID-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ExchangeID-OmaUri-Begin -->
@@ -1470,7 +1470,7 @@ Character string that contains the unique Exchange device ID used by the Outlook
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-OmaUri-Begin -->
@@ -1508,7 +1508,7 @@ Character string that contains the unique Exchange device ID used by the Outlook
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-OmaUri-Begin -->
@@ -1557,7 +1557,7 @@ This node decides whether or not the MDM progress page displays the Collect Logs
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-BlockInStatusPage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-BlockInStatusPage-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-BlockInStatusPage-OmaUri-Begin -->
@@ -1608,7 +1608,7 @@ Device Only. This node determines whether or not the MDM progress page is blocki
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-OmaUri-Begin -->
@@ -1647,7 +1647,7 @@ This node allows the MDM to set custom error text, detailing what the user needs
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-OmaUri-Begin -->
@@ -1687,7 +1687,7 @@ This node contains a list of LocURIs that refer to App Packages the ISV expects 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-OmaUri-Begin -->
@@ -1727,7 +1727,7 @@ This node contains a list of LocURIs that refer to App Packages the ISV expects 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-OmaUri-Begin -->
@@ -1767,7 +1767,7 @@ This node contains a list of LocURIs that refer to Wi-Fi profiles and VPN profil
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-OmaUri-Begin -->
@@ -1807,7 +1807,7 @@ This node contains a list of LocURIs that refer to certs the ISV expects to prov
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-OmaUri-Begin -->
@@ -1847,7 +1847,7 @@ This node contains a list of LocURIs that refer to Policies the ISV expects to p
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-OmaUri-Begin -->
@@ -1887,7 +1887,7 @@ This node contains a list of LocURIs that refer to SCEP certs the ISV expects to
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-OmaUri-Begin -->
@@ -1935,7 +1935,7 @@ This node, when doing a get, tells the server if the "First Syncs" are done and 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-OmaUri-Begin -->
@@ -1983,7 +1983,7 @@ This node is set by the server to inform the UX that the server has finished pro
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipDeviceStatusPage-OmaUri-Begin -->
@@ -2032,7 +2032,7 @@ Device only. This node decides whether or not the MDM device progress page skips
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-SkipUserStatusPage-OmaUri-Begin -->
@@ -2081,7 +2081,7 @@ Device only. This node decides whether or not the MDM user progress page skips a
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-TimeOutUntilSyncFailure-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-TimeOutUntilSyncFailure-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-TimeOutUntilSyncFailure-OmaUri-Begin -->
@@ -2122,7 +2122,7 @@ This node determines how long we will poll until we surface an error message to 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-OmaUri-Begin -->
@@ -2171,7 +2171,7 @@ Integer node determining if a Device was Successfully provisioned. 0 is failure,
 <!-- Device-Provider-{ProviderID}-ForceAadToken-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042.1766] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1766] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1766] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.739] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.1766] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.1766] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.1766] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.739] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-ForceAadToken-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ForceAadToken-OmaUri-Begin -->
@@ -2222,7 +2222,7 @@ Force device to send device AAD token during check-in as a separate header.
 <!-- Device-Provider-{ProviderID}-HelpEmailAddress-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-HelpEmailAddress-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-HelpEmailAddress-OmaUri-Begin -->
@@ -2261,7 +2261,7 @@ The character string that allows the user experience to include a customized hel
 <!-- Device-Provider-{ProviderID}-HelpPhoneNumber-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-HelpPhoneNumber-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-HelpPhoneNumber-OmaUri-Begin -->
@@ -2300,7 +2300,7 @@ The character string that allows the user experience to include a customized hel
 <!-- Device-Provider-{ProviderID}-HelpWebsite-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-HelpWebsite-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-HelpWebsite-OmaUri-Begin -->
@@ -2339,7 +2339,7 @@ The character string that allows the user experience to include a customized hel
 <!-- Device-Provider-{ProviderID}-HWDevID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Provider-{ProviderID}-HWDevID-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-HWDevID-OmaUri-Begin -->
@@ -2378,7 +2378,7 @@ Returns the hardware device ID.
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-OmaUri-Begin -->
@@ -2417,7 +2417,7 @@ The interior node for linked enrollment.
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-OmaUri-Begin -->
@@ -2457,7 +2457,7 @@ This is an execution node and will trigger a silent MMP-C enrollment, using the 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-EnrollStatus-OmaUri-Begin -->
@@ -2512,7 +2512,7 @@ Returns the current enrollment or un-enrollment status of the linked enrollment.
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-LastError-OmaUri-Begin -->
@@ -2551,7 +2551,7 @@ return the last error for enroll/unenroll.
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Priority-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Priority-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Priority-OmaUri-Begin -->
@@ -2599,7 +2599,7 @@ Optional. Allowed value is 0 or 1. 0 means the main enrollment has authority for
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2009 [10.0.19042.2193] and later <br> ✅ Windows 10, version 21H1 [10.0.19043.2193] and later <br> ✅ Windows 10, version 21H2 [10.0.19044.2193] and later <br> ✅ Windows 11, version 21H2 [10.0.22000.918] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-OmaUri-Begin -->
@@ -2639,7 +2639,7 @@ This is an execution node and will trigger a silent MMP-C unenroll, there is no 
 <!-- Device-Provider-{ProviderID}-ManagementServerAddressList-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- Device-Provider-{ProviderID}-ManagementServerAddressList-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ManagementServerAddressList-OmaUri-Begin -->
@@ -2693,7 +2693,7 @@ The list of management server URLs in the format `<URL1>` `<URL2>` `<URL3>`, and
 <!-- Device-Provider-{ProviderID}-ManagementServerToUpgradeTo-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1703 [10.0.15063] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1703 [10.0.15063] and later |
 <!-- Device-Provider-{ProviderID}-ManagementServerToUpgradeTo-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ManagementServerToUpgradeTo-OmaUri-Begin -->
@@ -2732,7 +2732,7 @@ Specify the Discovery server URL of the MDM server to upgrade to for a MAM enrol
 <!-- Device-Provider-{ProviderID}-ManagementServiceAddress-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-ManagementServiceAddress-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-ManagementServiceAddress-OmaUri-Begin -->
@@ -2774,7 +2774,7 @@ The character string that contains the device management server address. It can 
 <!-- Device-Provider-{ProviderID}-MaxSyncApplicationVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-MaxSyncApplicationVersion-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-MaxSyncApplicationVersion-OmaUri-Begin -->
@@ -2813,7 +2813,7 @@ Used by the client to indicate the latest DM session version that it supports.
 <!-- Device-Provider-{ProviderID}-MultipleSession-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Provider-{ProviderID}-MultipleSession-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-MultipleSession-OmaUri-Begin -->
@@ -2853,7 +2853,7 @@ Used by the client to indicate the latest DM session version that it supports.
 <!-- Device-Provider-{ProviderID}-MultipleSession-IntervalForScheduledRetriesForUserSession-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Provider-{ProviderID}-MultipleSession-IntervalForScheduledRetriesForUserSession-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-MultipleSession-IntervalForScheduledRetriesForUserSession-OmaUri-Begin -->
@@ -2894,7 +2894,7 @@ The waiting time (in minutes) for the initial set of retries as specified by the
 <!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionAtUserLogonSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionAtUserLogonSync-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionAtUserLogonSync-OmaUri-Begin -->
@@ -2935,7 +2935,7 @@ Optional. Maximum number of concurrent user sync sessions at User Login. Default
 <!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionForBackgroundSync-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionForBackgroundSync-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-MultipleSession-NumAllowedConcurrentUserSessionForBackgroundSync-OmaUri-Begin -->
@@ -2976,7 +2976,7 @@ Optional. Maximum number of concurrent user sync sessions in background. Default
 <!-- Device-Provider-{ProviderID}-MultipleSession-NumberOfScheduledRetriesForUserSession-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ❌ Pro <br> ❌ Enterprise <br> ❌ Education <br> ❌ Windows SE <br> ❌ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- Device-Provider-{ProviderID}-MultipleSession-NumberOfScheduledRetriesForUserSession-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-MultipleSession-NumberOfScheduledRetriesForUserSession-OmaUri-Begin -->
@@ -3017,7 +3017,7 @@ The number of times the DM client should retry connecting to the server when the
 <!-- Device-Provider-{ProviderID}-NumberOfDaysAfterLostContactToUnenroll-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- Device-Provider-{ProviderID}-NumberOfDaysAfterLostContactToUnenroll-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-NumberOfDaysAfterLostContactToUnenroll-OmaUri-Begin -->
@@ -3056,7 +3056,7 @@ Number of days after last successful sync to unenroll.
 <!-- Device-Provider-{ProviderID}-Poll-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-Poll-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-Poll-OmaUri-Begin -->
@@ -3095,7 +3095,7 @@ Polling schedules must utilize the DMClient CSP. The Registry paths previously a
 <!-- Device-Provider-{ProviderID}-Poll-AllUsersPollOnFirstLogin-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-Poll-AllUsersPollOnFirstLogin-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-Poll-AllUsersPollOnFirstLogin-OmaUri-Begin -->
@@ -3144,7 +3144,7 @@ Boolean value that allows the IT admin to require the device to start a manageme
 <!-- Device-Provider-{ProviderID}-Poll-IntervalForFirstSetOfRetries-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-Poll-IntervalForFirstSetOfRetries-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-Poll-IntervalForFirstSetOfRetries-OmaUri-Begin -->
@@ -3183,7 +3183,7 @@ The waiting time (in minutes) for the initial set of retries as specified by the
 <!-- Device-Provider-{ProviderID}-Poll-IntervalForRemainingScheduledRetries-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-Poll-IntervalForRemainingScheduledRetries-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-Poll-IntervalForRemainingScheduledRetries-OmaUri-Begin -->
@@ -3222,7 +3222,7 @@ The waiting time (in minutes) for the initial set of retries as specified by the
 <!-- Device-Provider-{ProviderID}-Poll-IntervalForSecondSetOfRetries-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-Poll-IntervalForSecondSetOfRetries-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-Poll-IntervalForSecondSetOfRetries-OmaUri-Begin -->
@@ -3261,7 +3261,7 @@ The waiting time (in minutes) for the second set of retries as specified by the 
 <!-- Device-Provider-{ProviderID}-Poll-NumberOfFirstRetries-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-Poll-NumberOfFirstRetries-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-Poll-NumberOfFirstRetries-OmaUri-Begin -->
@@ -3300,7 +3300,7 @@ The number of times the DM client should retry to connect to the server when the
 <!-- Device-Provider-{ProviderID}-Poll-NumberOfRemainingScheduledRetries-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-Poll-NumberOfRemainingScheduledRetries-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-Poll-NumberOfRemainingScheduledRetries-OmaUri-Begin -->
@@ -3339,7 +3339,7 @@ The number of times the DM client should retry connecting to the server when the
 <!-- Device-Provider-{ProviderID}-Poll-NumberOfSecondRetries-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-Poll-NumberOfSecondRetries-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-Poll-NumberOfSecondRetries-OmaUri-Begin -->
@@ -3378,7 +3378,7 @@ The number of times the DM client should retry a second round of connecting to t
 <!-- Device-Provider-{ProviderID}-Poll-PollOnLogin-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-Poll-PollOnLogin-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-Poll-PollOnLogin-OmaUri-Begin -->
@@ -3427,7 +3427,7 @@ Boolean value that allows the IT admin to require the device to start a manageme
 <!-- Device-Provider-{ProviderID}-PublisherDeviceID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-PublisherDeviceID-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-PublisherDeviceID-OmaUri-Begin -->
@@ -3466,7 +3466,7 @@ The PublisherDeviceID is a device-unique ID created based on the enterprise Publ
 <!-- Device-Provider-{ProviderID}-Push-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-Push-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-Push-OmaUri-Begin -->
@@ -3505,7 +3505,7 @@ Not configurable during WAP Provisioning XML. If removed, DM sessions triggered 
 <!-- Device-Provider-{ProviderID}-Push-ChannelURI-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-Push-ChannelURI-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-Push-ChannelURI-OmaUri-Begin -->
@@ -3544,7 +3544,7 @@ A string that contains the channel that the WNS client has negotiated for the OM
 <!-- Device-Provider-{ProviderID}-Push-PFN-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-Push-PFN-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-Push-PFN-OmaUri-Begin -->
@@ -3583,7 +3583,7 @@ A string provided by the Windows 10 ecosystem for an MDM solution. Used to regis
 <!-- Device-Provider-{ProviderID}-Push-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-Push-Status-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-Push-Status-OmaUri-Begin -->
@@ -3622,7 +3622,7 @@ An integer that maps to a known error state or condition on the system. Valid va
 <!-- Device-Provider-{ProviderID}-Recovery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-Recovery-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-Recovery-OmaUri-Begin -->
@@ -3661,7 +3661,7 @@ Parent node for Recovery nodes.
 <!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-Recovery-AllowRecovery-OmaUri-Begin -->
@@ -3710,7 +3710,7 @@ This node determines whether or not the client will automatically initiate a MDM
 <!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-Recovery-InitiateRecovery-OmaUri-Begin -->
@@ -3759,7 +3759,7 @@ This node initiates a recovery action. The server can specify prerequisites befo
 <!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000.1165] and later <br> ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-Recovery-RecoveryStatus-OmaUri-Begin -->
@@ -3799,7 +3799,7 @@ This node tracks the status of a Recovery request from the InitiateRecovery node
 <!-- Device-Provider-{ProviderID}-RequireMessageSigning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-RequireMessageSigning-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-RequireMessageSigning-OmaUri-Begin -->
@@ -3848,7 +3848,7 @@ Primarily used for SSL bridging mode where firewalls and proxies are deployed an
 <!-- Device-Provider-{ProviderID}-SignedEntDMID-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-SignedEntDMID-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-SignedEntDMID-OmaUri-Begin -->
@@ -3887,7 +3887,7 @@ Character string that contains the device ID. This node and the nodes CertRenewT
 <!-- Device-Provider-{ProviderID}-SyncApplicationVersion-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-SyncApplicationVersion-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-SyncApplicationVersion-OmaUri-Begin -->
@@ -3930,7 +3930,7 @@ Used by the management server to set the DM session version that the server and 
 <!-- Device-Provider-{ProviderID}-Unenroll-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-Unenroll-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-Unenroll-OmaUri-Begin -->
@@ -3990,7 +3990,7 @@ The following SyncML shows how to remotely unenroll the device. This command sho
 <!-- Device-Provider-{ProviderID}-UPN-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Provider-{ProviderID}-UPN-Applicability-End -->
 
 <!-- Device-Provider-{ProviderID}-UPN-OmaUri-Begin -->
@@ -4029,7 +4029,7 @@ Allows the management server to update the User Principal Name (UPN) of the enro
 <!-- Device-Unenroll-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-Unenroll-Applicability-End -->
 
 <!-- Device-Unenroll-OmaUri-Begin -->
@@ -4068,7 +4068,7 @@ The node accepts unenrollment requests by way of the OMA DM Exec command and cal
 <!-- Device-UpdateManagementServiceAddress-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- Device-UpdateManagementServiceAddress-Applicability-End -->
 
 <!-- Device-UpdateManagementServiceAddress-OmaUri-Begin -->
@@ -4108,7 +4108,7 @@ For provisioning packages only. Specifies the list of servers (semicolon delimit
 <!-- User-Provider-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Provider-Applicability-End -->
 
 <!-- User-Provider-OmaUri-Begin -->
@@ -4147,7 +4147,7 @@ The root node for all settings that belong to a single management server.
 <!-- User-Provider-{ProviderID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1507 [10.0.10240] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1507 [10.0.10240] and later |
 <!-- User-Provider-{ProviderID}-Applicability-End -->
 
 <!-- User-Provider-{ProviderID}-OmaUri-Begin -->
@@ -4187,7 +4187,7 @@ This node contains the URI-encoded value of the bootstrapped device management a
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-Applicability-End -->
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-OmaUri-Begin -->
@@ -4225,7 +4225,7 @@ This node contains the URI-encoded value of the bootstrapped device management a
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-Applicability-End -->
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-AllowCollectLogsButton-OmaUri-Begin -->
@@ -4274,7 +4274,7 @@ This node decides whether or not the MDM progress page displays the Collect Logs
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-Applicability-End -->
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-CustomErrorText-OmaUri-Begin -->
@@ -4313,7 +4313,7 @@ This node allows the MDM to set custom error text, detailing what the user needs
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-Applicability-End -->
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedModernAppPackages-OmaUri-Begin -->
@@ -4353,7 +4353,7 @@ This node contains a list of LocURIs that refer to App Packages the ISV expects 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-Applicability-End -->
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedMSIAppPackages-OmaUri-Begin -->
@@ -4393,7 +4393,7 @@ This node contains a list of LocURIs that refer to App Packages the ISV expects 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-Applicability-End -->
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedNetworkProfiles-OmaUri-Begin -->
@@ -4433,7 +4433,7 @@ This node contains a list of LocURIs that refer to Wi-Fi profiles and VPN profil
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-Applicability-End -->
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPFXCerts-OmaUri-Begin -->
@@ -4473,7 +4473,7 @@ This node contains a list of LocURIs that refer to certs the ISV expects to prov
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-Applicability-End -->
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedPolicies-OmaUri-Begin -->
@@ -4513,7 +4513,7 @@ This node contains a list of LocURIs that refer to Policies the ISV expects to p
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-Applicability-End -->
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ExpectedSCEPCerts-OmaUri-Begin -->
@@ -4553,7 +4553,7 @@ This node contains a list of LocURIs that refer to SCEP certs the ISV expects to
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-Applicability-End -->
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-IsSyncDone-OmaUri-Begin -->
@@ -4601,7 +4601,7 @@ This node, when doing a get, tells the server if the "First Syncs" are done and 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-Applicability-End -->
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-ServerHasFinishedProvisioning-OmaUri-Begin -->
@@ -4649,7 +4649,7 @@ This node is set by the server to inform the UX that the server has finished pro
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1709 [10.0.16299] and later |
+| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1709 [10.0.16299] and later |
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-Applicability-End -->
 
 <!-- User-Provider-{ProviderID}-FirstSyncStatus-WasDeviceSuccessfullyProvisioned-OmaUri-Begin -->

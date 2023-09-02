@@ -2,7 +2,7 @@
 title: Windows and cloud security
 description: Get an overview of cloud security features in Windows
 ms.date: 08/02/2023
-ms.topic: conceptual
+ms.topic: overview
 author: paolomatarazzo
 ms.author: paoloma
 ---

@@ -22,7 +22,7 @@ If you're a customer of *Azure US Government* cloud, PIN reset also attempts to 
 
 ### Resolve PIN Reset allowed domains issue
 
-To resolve the error, you can configure a list of allowed domains for PIN reset using the [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls) policy. For information on how to configure the policy, see [PIN Reset - Configure Web Sign-in Allowed URLs for Third Party Identity Providers on Azure AD Joined Devices](hello-feature-pin-reset.md#configure-web-sign-in-allowed-urls-for-third-party-identity-providers-on-azure-ad-joined-devices).
+To resolve the error, you can configure a list of allowed domains for PIN reset using the [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls) policy. For information on how to configure the policy, see [Configure allowed URLs for federated identity providers on Azure AD joined devices](hello-feature-pin-reset.md#configure-allowed-urls-for-federated-identity-providers-on-azure-ad-joined-devices).
 
 ## Hybrid key trust sign in broken due to user public key deletion
 

@@ -1,21 +1,24 @@
 ---
-title: Windows Update for Business reports Data Schema - UCDOStatus
-ms.reviewer: carmenf
-manager: aaroncz
-description: UCDOStatus schema
+title: UCDOStatus data schema
+titleSuffix: Windows Update for Business reports
+description: UCDOStatus schema for Windows Update for Business reports. UCDOStatus provides information, for a single device, on its DO and MCC bandwidth utilization.
 ms.prod: windows-client
+ms.topic: reference
 author: mestew
 ms.author: mstewart
-ms.topic: reference
+manager: aaroncz
+ms.reviewer: carmenf
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
 ms.date: 11/17/2022
-ms.technology: itpro-updates
 ---
 
 # UCDOStatus
 <!--37063317, 30141258, 37063041-->
-***(Applies to: Windows 11 & Windows 10)***
-
 UCDOStatus provides information, for a single device, on its bandwidth utilization across content types in the event they use [Delivery Optimization and Microsoft Connected Cache](/windows/deployment/do).
+
+## Data schema for UCDOStatus
 
 |Field |Type |Example |Description |
 |---|---|---|---|

@@ -1,19 +1,21 @@
 ---
 title: Use the Windows Update for Business reports data
-manager: aaroncz
+titleSuffix: Windows Update for Business reports
 description: How to use the Windows Update for Business reports data for custom solutions using tools like Azure Monitor Logs.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
 author: mestew
 ms.author: mstewart
-ms.topic: article
+manager: aaroncz
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
 ms.date: 11/15/2022
-ms.technology: itpro-updates
 ---
 
 # Use Windows Update for Business reports
 <!--37063317, 30141258, 37063041-->
-***(Applies to: Windows 11 & Windows 10)***
-
 In this article, you'll learn how to use Windows Update for Business reports to monitor Windows updates for your devices. To configure your environment for use with Windows Update for Business reports, see [Enable Windows Update for Business reports](wufb-reports-enable.md).
 
 ## Display Windows Update for Business reports data
