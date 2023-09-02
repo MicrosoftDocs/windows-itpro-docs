@@ -10,6 +10,7 @@ ms.topic: reference
 ms.technology: itpro-updates
 ms.date: 07/31/2023
 ms.collection: tier3
+ms.reviewer: mstewart
 ---
 
 # Delivery Optimization reference
@@ -275,9 +276,7 @@ Starting in Windows 10, version 1803, allows you to delay the use of an HTTP sou
 
 MDM Setting: **DelayCacheServerFallbackForeground**
 
-Starting in Windows 10, version 1903, allows you to delay the fallback from cache server to the HTTP source for foreground content download by X seconds. If the 'Delay foreground download from HTTP' policy is set, it will apply first (to allow downloads from peers) and then this policy will be applied. **By default, this policy isn't set.**
-
-By default this policy isn't set. So,
+Starting in Windows 10, version 1903, allows you to delay the fallback from cache server to the HTTP source for foreground content download by X seconds. If the 'Delay foreground download from HTTP policy is set, it will apply first (to allow downloads from peers) and then this policy will be applied. **By default, this policy isn't set.**
 
 ### Delay Background Download Cache Server Fallback (in secs)
 
@@ -323,7 +322,7 @@ The device can download from peers while on battery regardless of this policy.
 
 MDM Setting: **DOCacheHost**
 
-Set this policy to designate one or more Microsoft Connected Cache servers to be used by Delivery Optimization. You can set one or more FQDNs or IP Addresses that are comma-separated, for example: myhost.somerandomhost.com,myhost2.somerandomhost.com,10.10.1.7. **By default, this policy has no value.**
+Set this policy to designate one or more Microsoft Connected Cache servers to be used by Delivery Optimization. You can set one or more FQDNs or IP Addresses that are comma-separated, for example: myhost.somerandomhost.com,myhost2.somerandomhost.com,10.10.1.7. **By default, this policy has no value.** Delivery Optimization client will connect to the listed Microsoft Connected Cache servers in the order as they are listed. When multiple FQDNs or IP Addresses are listed, the Microsoft Connected Cache server priority order is determined based on the order as they are listed. If the first server fails, it will move the the next one. When the last server fails, it will fallback to the CDN.
 
 >[!IMPORTANT]
 > Any value will signify that the policy is set. For example, an empty string ("") isn't considered empty.

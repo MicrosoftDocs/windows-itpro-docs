@@ -3,8 +3,9 @@ title: MCC for ISPs Overview
 manager: aaroncz
 description: Overview for Microsoft Connected Cache for ISPs
 ms.prod: windows-client
-author: amymzhou
-ms.author: amyzhou
+ms.author: carmenf
+author: cmknox
+ms.reviewer: mstewart
 ms.topic: article
 ms.date: 07/27/2023
 ms.technology: itpro-updates
@@ -31,9 +32,9 @@ Microsoft Connected Cache (preview) supports the following scenarios:
 
 Microsoft Connected Cache uses Delivery Optimization as the backbone for Microsoft content delivery. Microsoft Connected Cache caches the following types:
 
-- Windows Update for Business: Windows feature and quality updates
+- Windows updates: Windows feature and quality updates
 - Office Click-to-Run apps: Microsoft 365 Apps and updates
-- Client apps: Microsoft Store apps and updates
+- Client apps: Intune, store apps, and updates
 - Endpoint protection: Windows Defender definition updates
 - Xbox: Xbox Game Pass (PC only)
 
