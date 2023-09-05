@@ -1,64 +1,93 @@
 ---
-ms.date: 08/17/2017
+ms.date: 08/31/2023
 title: Additional mitigations
-description: Advice and sample code for making your domain environment more secure and robust with Windows Defender Credential Guard.
-ms.topic: article
+description: Learn how to improve the security of your domain environment with additional mitigations for Credential Guard and sample code.
+ms.topic: reference
 ---
 
 # Additional mitigations
 
-Windows Defender Credential Guard can provide mitigation against attacks on derived credentials and prevent the use of stolen credentials elsewhere. However, PCs can still be vulnerable to certain attacks, even if the derived credentials are protected by Windows Defender Credential Guard. These attacks can include abusing privileges and use of derived credentials directly from a compromised device, re-using previously stolen credentials prior to Windows Defender Credential Guard, and abuse of management tools and weak application configurations. Because of this, additional mitigation also must be deployed to make the domain environment more robust.
+Credential Guard offers mitigations against attacks on derived credentials, preventing the use of stolen credentials elsewhere. However, devices can still be vulnerable to certain attacks, even if the derived credentials are protected by Credential Guard. These attacks can include abusing privileges and use of derived credentials directly from a compromised device, re-using stolen credentials prior to the enablement of Credential Guard, and abuse of management tools and weak application configurations. Because of this, additional mitigation also must be deployed to make the domain environment more robust.
 
-## Restricting domain users to specific domain-joined devices
+## Additional security qualifications
 
-Credential theft attacks allow the attacker to steal secrets from one device and use them from another device. If a user can sign on to multiple devices then any device could be used to steal credentials. How do you ensure that users only sign on with devices that have Windows Defender Credential Guard enabled? By deploying authentication policies that restrict them to specific domain-joined devices that have been configured with Windows Defender Credential Guard. For the domain controller to know what device a user is signing on from, Kerberos armoring must be used.
+All devices that meet baseline protections for hardware, firmware, and software can use Credential Guard.\
+Devices that meet more qualifications can provide added protections to further reduce the attack surface.
+
+The following table list qualifications for improved security. We recommend meeting the additional qualifications to strengthen the level of security that Credential Guard can provide.
+
+|Protection |Requirements|Security Benefits|
+|---|---|---|
+|**Secure Boot configuration and management**|- BIOS password or stronger authentication must be supported</br> - In the BIOS configuration, BIOS authentication must be set</br> - There must be support for protected BIOS option to configure list of permitted boot devices (for example, *Boot only from internal hard drive*) and boot device order, overriding `BOOTORDER` modification made by the operating system | - Prevent other operating systems from starting <br> -Prevent changes to the BIOS settings|
+|**Hardware Rooted Trust Platform Secure Boot**|- Boot Integrity (Platform Secure Boot) must be supported. See the Windows Hardware Compatibility Program requirements under System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby</br> - Hardware Security Test Interface (HSTI) must be implemented. See [Hardware Security Testability Specification](/windows-hardware/test/hlk/testref/hardware-security-testability-specification)|- Boot Integrity (Platform Secure Boot) from Power-On provides protections against physically present attackers, and defense-in-depth against malware. </br> - HSTI provides security assurance for correctly secured silicon and platform|
+|**Firmware Update through Windows Update**|- Firmware must support field updates through Windows Update and UEFI encapsulation update|Helps ensure that firmware updates are fast, secure, and reliable.|
+|**Securing Boot Configuration and Management**|- Required BIOS capabilities: ability of OEM to add ISV, OEM, or Enterprise Certificate in Secure Boot DB at manufacturing time </br> - Required configurations: Microsoft UEFI CA must be removed from Secure Boot DB. Support for 3rd-party UEFI modules is permitted but should use ISV-provided certificates or OEM certificate for the specific UEFI software|- Enterprises can choose to allow proprietary EFI drivers/applications to run </br> - Removing Microsoft UEFI CA from Secure Boot DB provides full control to enterprises over software that runs before the operating system boots|
+|**VBS enablement of No-Execute (NX) protection for UEFI runtime services**|- VBS enables NX protection on UEFI runtime service code and data memory regions. UEFI runtime service code must support read-only page protections, and UEFI runtime service data must not be executable. UEFI runtime service must meet the following requirements: </br>&emsp; - Implement UEFI 2.6 `EFI_MEMORY_ATTRIBUTES_TABLE`. All UEFI runtime service memory (code and data) must be described by this table </br>&emsp; - PE sections must be page-aligned in memory (not required for in non-volatile storage). </br>&emsp; - The Memory Attributes Table needs to correctly mark code and data as `RO/NX` for configuration by the OS </br>&emsp; - All entries must include attributes `EFI_MEMORY_RO`, `EFI_MEMORY_XP`, or both. </br>&emsp; - No entries may be left with neither of the above attributes, indicating memory that is both executable and writable. Memory must be either readable and executable or writable and non-executable </br> (**SEE IMPORTANT INFORMATION AFTER THIS TABLE**)|- Vulnerabilities in UEFI runtime, if any, are blocked from compromising VBS (such as in functions like *UpdateCapsule* and *SetVariable*) </br> - Reduces the attack surface to VBS from system firmware.|
+|**Firmware support for SMM protection**|- The [Windows SMM Security Mitigations Table (WSMT) specification](https://download.microsoft.com/download/1/8/A/18A21244-EB67-4538-BAA2-1A54E0E490B6/WSMT.docx) contains details of an ACPI table that was created for use with Windows operating systems that support Windows virtualization-based features.|- Protects against potential vulnerabilities in UEFI runtime services, if any, will be blocked from compromising VBS (such as in functions like UpdateCapsule and SetVariable)<br>- Reduces the attack surface to VBS from system firmware<br>- Blocks additional security attacks against SMM|
+
+> [!IMPORTANT]
+>
+> Regarding **VBS enablement of NX protection for UEFI runtime services**:
+>
+> - It only applies to UEFI runtime service memory, and not UEFI boot service memory
+> - The protection is applied by VBS on OS page tables
+> - Don't use sections that are both writable and executable
+> - Don't attempt to directly modify executable system memory
+> - Don't use dynamic code
+
+## Restrict domain users to specific domain-joined devices
+
+Credential theft attacks allow the attacker to steal secrets from one device and use them from another device. If a user can sign on to multiple devices then any device could be used to steal credentials. How do you ensure that users only sign on with devices that have Credential Guard enabled? By deploying authentication policies that restrict them to specific domain-joined devices that have been configured with Credential Guard. For the domain controller to know what device a user is signing on from, Kerberos armoring must be used.
 
 ### Kerberos armoring
 
-Kerberos armoring is part of RFC 6113. When a device supports Kerberos armoring, its TGT is used to protect the user's proof of possession which can mitigate offline dictionary attacks. Kerberos armoring also provides the additional benefit of signed KDC errors this mitigates tampering which can result in things such as downgrade attacks. 
+Kerberos armoring is part of RFC 6113. When a device supports Kerberos armoring, its TGT is used to protect the user's proof of possession which can mitigate offline dictionary attacks. Kerberos armoring also provides the additional benefit of signed KDC errors this mitigates tampering which can result in things such as downgrade attacks.
 
-**To enable Kerberos armoring for restricting domain users to specific domain-joined devices**
+To enable Kerberos armoring for restricting domain users to specific domain-joined devices:
+
 - Users need to be in domains that are running Windows Server 2012 R2 or higher
 - All the domain controllers in these domains must be configured to support Kerberos armoring. Set the **KDC support for claims, compound authentication, and Kerberos armoring** Group Policy setting to either **Supported** or **Always provide claims**.
-- All the devices with Windows Defender Credential Guard that the users will be restricted to must be configured to support Kerberos armoring. Enable the **Kerberos client support for claims, compound authentication and Kerberos armoring** Group Policy settings under **Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Kerberos**.
+- All the devices with Credential Guard that the users will be restricted to must be configured to support Kerberos armoring. Enable the **Kerberos client support for claims, compound authentication and Kerberos armoring** Group Policy settings under **Computer Configuration** -&gt; **Administrative Templates** -&gt; **System** -&gt; **Kerberos**.
 
-### Protecting domain-joined device secrets
+### Protect domain-joined device secrets
 
-Since domain-joined devices also use shared secrets for authentication, attackers can steal those secrets as well. By deploying device certificates with Windows Defender Credential Guard, the private key can be protected. Then authentication policies can require that users sign on to devices that authenticate using those certificates. This prevents shared secrets stolen from the device to be used with stolen user credentials to sign on as the user.
+Since domain-joined devices also use shared secrets for authentication, attackers can steal those secrets as well. By deploying device certificates with Credential Guard, the private key can be protected. Then authentication policies can require that users sign on to devices that authenticate using those certificates. This prevents shared secrets stolen from the device to be used with stolen user credentials to sign on as the user.
 
 Domain-joined device certificate authentication has the following requirements:
+
 - Devices' accounts are in Windows Server 2012 domain functional level or higher.
 - All domain controllers in those domains have KDC certificates which satisfy strict KDC validation certificate requirements:
   - KDC EKU present
-  -    DNS domain name matches the DNSName field of the SubjectAltName (SAN) extension
+  - DNS domain name matches the DNSName field of the SubjectAltName (SAN) extension
 - Windows devices have the CA issuing the domain controller certificates in the enterprise store.
 - A process is established to ensure the identity and trustworthiness of the device in a similar manner as you would establish the identity and trustworthiness of a user before issuing them a smartcard.
 
-#### Deploying domain-joined device certificates
+#### Deploy domain-joined device certificates
 
 To guarantee that certificates with the required issuance policy are only installed on the devices these users must use, they must be deployed manually on each device. The same security procedures used for issuing smart cards to users should be applied to device certificates.
 
 For example, let's say you wanted to use the High Assurance policy only on these devices. Using a Windows Server Enterprise certificate authority, you would create a new template.
 
-**Creating a new certificate template**
+**Create a new certificate template**
 
-1.  From the Certificate Manager console, right-click **Certificate Templates**, and then click **Manage.**
-2.  Right-click **Workstation Authentication**, and then click **Duplicate Template**.
-3.  Right-click the new template, and then click **Properties**.
-4.  On the **Extensions** tab, click **Application Policies**, and then click **Edit**.
-5.  Click **Client Authentication**, and then click **Remove**.
-6.  Add the ID-PKInit-KPClientAuth EKU. Click **Add**, click **New**, and then specify the following values:
+1.  From the Certificate Manager console, right-click **Certificate Templates > Manage**
+1.  Right-click **Workstation Authentication > Duplicate Template**
+1.  Right-click the new template, and then select **Properties**
+1.  On the **Extensions** tab, select **Application Policies > Edit**
+1.  Select **Client Authentication**, and then select **Remove**
+1.  Add the ID-PKInit-KPClientAuth EKU. Select **Add > New**, and then specify the following values:
     -   Name: Kerberos Client Auth
     -   Object Identifier: 1.3.6.1.5.2.3.4
-7.  On the **Extensions** tab, click **Issuance Policies**, and then click **Edit**.
-8.  Under **Issuance Policies**, click**High Assurance**.
-9.  On the **Subject name** tab, clear the **DNS name** check box, and then select the **User Principal Name (UPN)** check box.
+1.  On the **Extensions** tab, select **Issuance Policies > Edit**
+1.  Under **Issuance Policies**, select **High Assurance**
+1.  On the **Subject name** tab, clear the **DNS name** check box, and then select the **User Principal Name (UPN)** check box
 
-Then on the devices that are running Windows Defender Credential Guard, enroll the devices using the certificate you just created.
+Then on the devices that are running Credential Guard, enroll the devices using the certificate you just created.
 
-**Enrolling devices in a certificate**
+**Enroll devices in a certificate**
 
 Run the following command:
+
 ```powershell
 CertReq -EnrollCredGuardCert MachineAuthentication
 ```
@@ -88,7 +117,7 @@ From a Windows PowerShell command prompt, run the following command:
 .\set-IssuancePolicyToGroupLink.ps1 -IssuancePolicyName:"<name of issuance policy>" -groupOU:"<Name of OU to create>" -groupName:"<name of Universal security group to create>"
 ```
 
-### Restricting user sign-on
+### Restrict user sign-on
 
 So we now have completed the following:
 
@@ -101,25 +130,25 @@ Authentication policies have the following requirements:
 
 **Creating an authentication policy restricting users to the specific universal security group**
 
-1. Open Active Directory Administrative Center.
-1. Click **Authentication**, click **New**, and then click **Authentication Policy**.
-1. In the **Display name** box, enter a name for this authentication policy.
-1. Under the **Accounts** heading, click **Add**.
-1. In the **Select Users, Computers, or Service Accounts** dialog box, type the name of the user account you wish to restrict, and then click **OK**.
-1. Under the **User Sign On** heading, click the **Edit** button.
-1. Click **Add a condition**.
-1. In the **Edit Access Control Conditions** box, ensure that it reads **User** &gt; **Group** &gt; **Member of each** &gt; **Value**, and then click **Add items**.
-1. In the **Select Users, Computers, or Service Accounts** dialog box, type the name of the universal security group that you created with the set-IssuancePolicyToGroupLink script, and then click **OK**.
-1. Click **OK** to close the **Edit Access Control Conditions** box.
-1. Click **OK** to create the authentication policy.
-1. Close Active Directory Administrative Center.
+1. Open Active Directory Administrative Center
+1. Select **Authentication > New > Authentication Policy**
+1. In the **Display name** box, enter a name for this authentication policy
+1. Under the **Accounts** heading, select **Add**
+1. In the **Select Users, Computers, or Service Accounts** dialog box, type the name of the user account you wish to restrict, and then select **OK**
+1. Under the **User Sign On** heading, select the **Edit** button
+1. Select **Add a condition**
+1. In the **Edit Access Control Conditions** box, ensure that it reads **User > Group > Member of each > Value**, and then select **Add items**
+1. In the **Select Users, Computers, or Service Accounts** dialog box, type the name of the universal security group that you created with the set-IssuancePolicyToGroupLink script, and then select **OK**
+1. Select **OK** to close the **Edit Access Control Conditions** box
+1. Select **OK** to create the authentication policy
+1. Select Active Directory Administrative Center
 
 > [!NOTE]
 > When the authentication policy enforces policy restrictions, users will not be able to sign on using devices that do not have a certificate with the appropriate issuance policy deployed. This applies to both local and remote sign on scenarios. Therefore, it is strongly recommended to first only audit policy restrictions to ensure you don't have unexpected failures.
 
-#### Discovering authentication failures due to authentication policies
+#### Discover authentication failures due to authentication policies
 
-To make tracking authentication failures due to authentication policies easier, an operational log exists with just those events. To enable the logs on the domain controllers, in Event Viewer, navigate to **Applications and Services Logs\\Microsoft\\Windows\\Authentication, right-click AuthenticationPolicyFailures-DomainController**, and then click **Enable Log**.
+To make tracking authentication failures due to authentication policies easier, an operational log exists with just those events. To enable the logs on the domain controllers, in Event Viewer, navigate to **Applications and Services Logs\\Microsoft\\Windows\\Authentication, right-click AuthenticationPolicyFailures-DomainController**, and then select **Enable Log**.
 
 To learn more about authentication policy events, see [Authentication Policies and Authentication Policy Silos](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn486813(v=ws.11)).
 
