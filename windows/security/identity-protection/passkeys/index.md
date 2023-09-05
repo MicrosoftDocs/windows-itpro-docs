@@ -51,10 +51,11 @@ The general steps to create a passkey are the same, regardless of *where* you wa
 :::row:::
   :::column span="3":::
   3. Choose where to save the passkey. By default, Windows prompts to save the passkey locally if you're using Windows Hello or Windows Hello for Business. If you select the option **Use another device**, you can choose to save the passkey on one of the following locations:
-    - **This Windows device** - the passkey is saved locally on your Windows device, and protected by Windows Hello (biometrics and PIN)
-    - **iPhone, iPad or Android device** - the passkey is stored on a phone or tablet, protected by the device's biometrics, if offered by the device. This option requires you to scan a QR code with your phone or tablet
-    - **linked device** - the key is stored on a *linked* device typically a phone or tablet, protected by the device's biometrics, if offered by the device. This option requires the linked device to be connected via Bluetooth to the Windows device
-    - **Security key** - the passkey is saved to a security key (FIDO2 key), protected by the key's biometrics, if offered by the key
+
+      - **This Windows device** - the passkey is saved locally on your Windows device, and protected by Windows Hello (biometrics and PIN)
+      - **iPhone, iPad or Android device** - the passkey is stored on a phone or tablet, protected by the device's biometrics, if offered by the device. This option requires you to scan a QR code with your phone or tablet
+      - **linked device** - the key is stored on a *linked* device typically a phone or tablet, protected by the device's biometrics, if offered by the device. This option requires the linked device to be connected via Bluetooth to the Windows device
+      - **Security key** - the passkey is saved to a security key (FIDO2 key), protected by the key's biometrics, if offered by the key
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/save-passkey.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/save-passkey.png" border="false":::
@@ -65,9 +66,26 @@ Select one of the following options to learn how to save a passkey, based on whe
 
 #### [**Windows device**](#tab/windows)
 
+:::row:::
+  :::column span="3":::
+  4. Select **Save** to save the passkey
+  :::column-end:::
+  :::column span="1":::
+    :::image type="content" source="images/save-passkey-hello.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/save-passkey-hello.png" border="false":::
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="3":::
+  5. Confirmation screen
+  :::column-end:::
+  :::column span="1":::
+  :::image type="content" source="images/save-passkey-hello-confirmation.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/save-passkey-hello-confirmation.png" border="false":::
+  :::column-end:::
+:::row-end:::
+
 #### [**Phone or tablet**](#tab/mobile)
 
-#### [**Linked device**](#tab/mobile)
+#### [**Linked device**](#tab/linked)
 
 #### [**Security key**](#tab/key)
 
@@ -114,10 +132,11 @@ Select one of the following options to learn how to save a passkey, based on whe
 
 #### [**Phone or tablet**](#tab/mobile)
 
-#### [**Linked device**](#tab/mobile)
+#### [**Linked device**](#tab/linked)
 
 #### [**Security key**](#tab/key)
 
+---
 
 ### Manage passkeys
 
