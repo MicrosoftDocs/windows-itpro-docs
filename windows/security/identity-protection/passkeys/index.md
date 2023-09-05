@@ -47,11 +47,11 @@ Follow these steps to create a passkey:
 :::row-end:::
 :::row:::
   :::column span="3":::
-
-&emsp; - **This Windows device**: the passkey is saved locally on your Windows device, and protected by Windows Hello (biometrics and PIN)
-&emsp; - **iPhone, iPad or Android device**: the passkey is stored on a phone or tablet, protected by the device's biometrics, if offered by the device. This option requires you to scan a QR code with your phone or tablet
-&emsp; - **linked device**: the key is stored on a *linked* device, typically a phone or tablet, protected by the device's biometrics or a PIN. This option is only supported for Android devices and requires the linked device to be connected via Bluetooth to the Windows device
-&emsp; - **Security key**: the passkey is saved to a security key (FIDO2 key), protected by the key's biometrics, if offered by the key
+<br>&emsp;
+- **This Windows device**: the passkey is saved locally on your Windows device, and protected by Windows Hello (biometrics and PIN)<br>&emsp;
+- **iPhone, iPad or Android device**: the passkey is stored on a phone or tablet, protected by the device's biometrics, if offered by the device. This option requires you to scan a QR code with your phone or tablet<br>&emsp;
+- **linked device**: the key is stored on a *linked* device, typically a phone or tablet, protected by the device's biometrics or a PIN. This option is only supported for Android devices and requires the linked device to be connected via Bluetooth to the Windows device<br>&emsp;
+- **Security key**: the passkey is saved to a security key (FIDO2 key), protected by the key's biometrics, if offered by the key
 
   :::column-end:::
   :::column span="1":::
