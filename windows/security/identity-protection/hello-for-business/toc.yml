@@ -108,6 +108,8 @@ items:
     href: hello-and-password-changes.md
 - name: Windows Hello for Business features
   items:
+  - name: Windows Hello for Business passwordless experience
+    href: ../passwordless-experience.md
   - name: PIN reset
     href: hello-feature-pin-reset.md
   - name: Dual enrollment

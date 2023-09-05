@@ -1,5 +1,5 @@
 ---
-title: Passwordless experience
+title: Windows Hello for Business passwordless experience
 description: Learn how Passwordless experience enables your organization to move away from passwords.
 ms.collection: 
   - highpri
@@ -8,14 +8,14 @@ ms.date: 08/30/2023
 ms.topic: how-to
 ---
 
-# Passwordless experience
+# Windows Hello for Business passwordless experience
 
-## Passwordless experience overview
+## Overview
 
-Starting in Windows 11, version 22H2 with [KB5030310][KB-1], *Passwordless experience* is a security policy that promotes a user experience without passwords on Microsoft Entra joined devices.\
-Passwordless experience hides passwords from certain Windows authentication scenarios, helping organizations and preparing users to gradually move away from passwords.
+Starting in Windows 11, version 22H2 with [KB5030310][KB-1], *Windows Hello for Business passwordless experience* is a security policy that promotes a user experience without passwords on Microsoft Entra joined devices.\
+When the policy is enabled, certain Windows authentication scenarios don't offer the users the option to use a password, helping organizations and preparing users to gradually move away from passwords.
 
-Once the policy is enabled, users with strong credentials (for example, Windows Hello for Business, FIDO2 key, etc.):
+With Windows Hello for Business passwordless experience, users with strong credentials (for example, Windows Hello for Business, FIDO2 key, etc.):
 
 - Can't sign in using the password credential provider on the Windows lock screen
 - Aren't prompted to use a password during in-session authentications (for example, UAC elevation, password manager in the browser, etc.)
@@ -24,17 +24,17 @@ Once the policy is enabled, users with strong credentials (for example, Windows 
   >[!NOTE]
   >Users can reset their password using <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>DEL</kbd> > **Manage your account**
 
-Passwordless experience doesn't affect the initial sign-in experience and local accounts. It only applies to subsequent sign-ins for Microsoft Entra ID accounts. It also doesn't prevent a user from signing in with a password when using the *Other user* option in the lock screen.\
-The password credential provider is hidden only for the last signed in user who signed in with strong credentials. Passwordless experience is not about preventing users from using passwords, rather to guide and educate them to not use passwords.
+Windows Hello for Business passwordless experience doesn't affect the initial sign-in experience and local accounts. It only applies to subsequent sign-ins for Microsoft Entra ID accounts. It also doesn't prevent a user from signing in with a password when using the *Other user* option in the lock screen.\
+The password credential provider is hidden only for the last signed in user who signed in with strong credentials. Windows Hello for Business passwordless experience is not about preventing users from using passwords, rather to guide and educate them to not use passwords.
 
-This article explains how to enable Passwordless experience and describes the user experiences.
+This article explains how to enable Windows Hello for Business passwordless experience and describes the user experiences.
 
 >[!TIP]
 > Windows Hello for Business users can achieve passwordless sign-in from the first sign-in using the Web sign-in feature. For more information about Web sign-in, see [Article to complete](https://learn.microsoft.com).
 
 ## System requirements
 
-Passwordless experience has the following requirements:
+Windows Hello for Business passwordless experience has the following requirements:
 
 - Windows 11, version 22H2 with [KB5030310][KB-1] or later
 - Microsoft Entra ID joined
@@ -44,7 +44,7 @@ Passwordless experience has the following requirements:
 >[!NOTE]
 >Microsoft Entra hybrid joined devices and Active Directory domain joined devices are currently out of scope.
 
-## Enable Passwordless experience with Intune
+## Enable Windows Hello for Business passwordless experience with Intune
 
 [!INCLUDE [intune-settings-catalog-1](../../../includes/configure/intune-settings-catalog-1.md)]
 
@@ -83,7 +83,7 @@ Alternatively, you can configure devices using a [custom policy][INT-2] with the
 
 ### In-session authentication experiences
 
-When Passwordless experience is enabled, users can't use the password credential provider for in-session authentication scenarios. In-session authentication scenarios include:
+When Windows Hello for Business passwordless experience is enabled, users can't use the password credential provider for in-session authentication scenarios. In-session authentication scenarios include:
 
 - Password Manager in a web browser
 - Connecting to file shares or intranet sites
@@ -92,7 +92,7 @@ When Passwordless experience is enabled, users can't use the password credential
 >[!NOTE]
 > RDP sign in defaults to the strong credential used during sign-in. However, a suers can select the option *Use a different account* to sign in with a password.
 >
-> *Run as different user* is not impacted by Passwordless experience.
+> *Run as different user* is not impacted by Windows Hello for Business passwordless experience.
 
 Example of UAC elevation experience:
 
@@ -115,18 +115,18 @@ Example of UAC elevation experience:
 
 ## Recommendations
 
-Here's a list of recommendations to consider before enabling Passwordless experience:
+Here's a list of recommendations to consider before enabling Windows Hello for Business passwordless experience:
 
 - If Windows Hello for Business is enabled, configure the [PIN reset](hello-for-business/hello-feature-pin-reset.md) feature to allow users to reset their PIN from the lock screen. The PIN reset experience is improved starting in Windows 11, version 22H2 with [KB5030310][KB-1]
-- Don't configure the security policy *Interactive logon: Don't display last signed-in*, as it prevents Passwordless experience from working
+- Don't configure the security policy *Interactive logon: Don't display last signed-in*, as it prevents Windows Hello for Business passwordless experience from working
 - Don't disable the password credential provider using the *Exclude credential providers* policy. The key differences between the two policies are:
-  - The *Exclude credential providers* policy disables passwords for *all accounts*, including local accounts. Passwordless experience only applies to Microsoft Entra ID accounts that sign in with strong credentials. It also excludes *Other User* from the policy, so users have a backup sign in option
-  - RDP and in-session authentication scenarios aren't supported with the Exclude credential providers policy. Passwordless experience hides passwords from in-session auth scenarios like Password Manager in a web browser, UAC prompts, etc.
+  - The *Exclude credential providers* policy disables passwords for *all accounts*, including local accounts. Windows Hello for Business passwordless experience only applies to Microsoft Entra ID accounts that sign in with strong credentials. It also excludes *Other User* from the policy, so users have a backup sign in option
+  - RDP and in-session authentication scenarios aren't supported with the Exclude credential providers policy. Windows Hello for Business passwordless experience hides passwords from in-session auth scenarios like Password Manager in a web browser, UAC prompts, etc.
 - To facilitate helpdesk support operations, consider enabling the local administrator account or create a separate one, randomizing its password using the [Windows Local Administrator Password Solution (LAPS)][SERV-1]
 
 ## Provide feedback
 
-To provide feedback for Passwordless experience, open [**Feedback Hub**][FHUB] and use the category **Security and Privacy > Passwordless experience**.
+To provide feedback for Windows Hello for Business passwordless experience, open [**Feedback Hub**][FHUB] and use the category **Security and Privacy > Passwordless experience**.
 
 <!--links used in this document-->
 
