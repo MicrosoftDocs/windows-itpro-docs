@@ -48,16 +48,16 @@ Follow these steps to create a passkey:
   :::column-end:::
 :::row-end:::
 :::row:::
+:::column span="1":::
+  :::image type="content" source="images/save-passkey.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/save-passkey.png" border="false":::
+  :::column-end:::
   :::column span="3":::
 
-  - **This Windows device**: the passkey is saved locally on your Windows device, and protected by Windows Hello (biometrics and PIN)\
-  - **iPhone, iPad or Android device**: the passkey is stored on a phone or tablet, protected by the device's biometrics, if offered by the device. This option requires you to scan a QR code with your phone or tablet\
-  - **linked device**: the key is stored on a *linked* device typically a phone or tablet, protected by the device's biometrics, if offered by the device. This option requires the linked device to be connected via Bluetooth to the Windows device\
-  - **Security key**: the passkey is saved to a security key (FIDO2 key), protected by the key's biometrics, if offered by the key
+- **This Windows device**: the passkey is saved locally on your Windows device, and protected by Windows Hello (biometrics and PIN)\
+- **iPhone, iPad or Android device**: the passkey is stored on a phone or tablet, protected by the device's biometrics, if offered by the device. This option requires you to scan a QR code with your phone or tablet\
+- **linked device**: the key is stored on a *linked* device typically a phone or tablet, protected by the device's biometrics, if offered by the device. This option requires the linked device to be connected via Bluetooth to the Windows device\
+- **Security key**: the passkey is saved to a security key (FIDO2 key), protected by the key's biometrics, if offered by the key
 
-  :::column-end:::
-  :::column span="1":::
-  :::image type="content" source="images/save-passkey.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/save-passkey.png" border="false":::
   :::column-end:::
 :::row-end:::
 
@@ -294,6 +294,11 @@ To view and manage passkeys saved for apps or websites, go to **Settings > Accou
 
 - A list of saved passkeys is displayed and you can filter them by name
 - To delete a passkey, select **... > Delete passkey** next to the passkey name
+
+:::image type="content" source="images/delete.png" alt-text="Screenshot of the Settings app showing the delete option for a passkey." lightbox="images/delete.png" border="false":::
+
+> [!NOTE]
+> You can't delete the passkey used to sign in to your Windows device, either Microsoft Entra ID or Microsoft Account.
 
 ## Provide feedback
 
