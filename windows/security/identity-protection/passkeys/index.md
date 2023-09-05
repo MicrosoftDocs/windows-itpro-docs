@@ -3,7 +3,7 @@ title: Passkeys
 description: Learn about passkeys and how to use them on Windows devices.
 ms.collection: 
 - highpri
-- tier2
+- tier1
 ms.topic: article
 ms.date: 09/05/2023
 appliesto: 
@@ -42,9 +42,7 @@ Follow these steps to create a passkey:
 :::row-end:::
 :::row:::
   :::column span="4":::
-
-  3. Choose where to save the passkey and select **Next**. By default, Windows prompts to save the passkey locally if you're using Windows Hello or Windows Hello for Business. If you select the option **Use another device**, you can choose to save the passkey on one of the following locations:
-
+  3. Choose where to save the passkey. By default, Windows prompts to save the passkey locally if you're using Windows Hello or Windows Hello for Business. If you select the option **Use another device**, you can choose to save the passkey on one of the following locations:
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -60,15 +58,20 @@ Follow these steps to create a passkey:
   :::image type="content" source="images/save-passkey.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/save-passkey.png" border="false":::
   :::column-end:::
 :::row-end:::
+:::row:::
+  :::column span="4":::
+  4. Select **Next**
+  :::column-end:::
+:::row-end:::
 
-Select one of the following options to learn how to save a passkey, based on where you want to store it.
+Pick one of the following options to learn how to save a passkey, based on where you want to store it.
 
 #### [**Windows device**](#tab/windows)
 
 :::row:::
   :::column span="3":::
 
-  4. Select a Windows Hello verification method
+  5. Select a Windows Hello verification method
 
   :::column-end:::
   :::column span="1":::
@@ -78,7 +81,7 @@ Select one of the following options to learn how to save a passkey, based on whe
 :::row:::
   :::column span="3":::
 
-  5. The passkey is saved to your Windows device. To confirm select **OK**
+  6. The passkey is saved to your Windows device. To confirm select **OK**
 
   :::column-end:::
   :::column span="1":::
@@ -91,7 +94,7 @@ Select one of the following options to learn how to save a passkey, based on whe
 :::row:::
   :::column span="3":::
 
-  4. Scan the QR code with your phone or tablet, and follow the instructions to save the passkey
+  5. Scan the QR code with your phone or tablet, and follow the instructions to save the passkey
 
   :::column-end:::
   :::column span="1":::
@@ -101,7 +104,7 @@ Select one of the following options to learn how to save a passkey, based on whe
 :::row:::
   :::column span="3":::
 
-  5. Once the passkey is saved to your phone or tablet, confirm by selecting **OK**
+  6. Once the passkey is saved to your phone or tablet, confirm by selecting **OK**
 
   :::column-end:::
   :::column span="1":::
@@ -114,7 +117,7 @@ Select one of the following options to learn how to save a passkey, based on whe
 :::row:::
   :::column span="3":::
 
-  4. Select the linked device option and confirm the notification sent to the device
+  5. Select the linked device option and confirm the notification sent to the device
 
   :::column-end:::
   :::column span="1":::
@@ -124,7 +127,7 @@ Select one of the following options to learn how to save a passkey, based on whe
 :::row:::
   :::column span="3":::
 
-  5. The passkey is saved to your linked device. To confirm select **OK**
+  6. The passkey is saved to your linked device. To confirm select **OK**
 
   :::column-end:::
   :::column span="1":::
@@ -137,14 +140,14 @@ Select one of the following options to learn how to save a passkey, based on whe
 :::row:::
   :::column span="4":::
 
-  4. Unlock the security key using the key's unlock mechaniosm (for example, biometrics or PIN)
+  5. Unlock the security key using the key's unlock mechaniosm (for example, biometrics or PIN)
 
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column span="3":::
 
-  5. The passkey is saved to the security key. Confirm by selecting **OK**
+  6. The passkey is saved to the security key. Confirm by selecting **OK**
 
   :::column-end:::
   :::column span="1":::
@@ -160,27 +163,21 @@ Follow these steps to use a passkey:
 
 :::row:::
   :::column span="3":::
-
-  1. Go to a website or app that supports passkeys
-
+  1. Open a website or app that supports passkeys
   :::column-end:::
   :::column span="1":::
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column span="3":::
-
   2. Select **Sign in with a passkey**, or a similar option
-
   :::column-end:::
   :::column span="1":::
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column span="3":::
-
-  3. If the passkey is stored locally and protected by Windows Hello, you'll be prompted to use Windows Hello to sign in. If you select the option **Use another device**, you can choose one of the following options:
-
+  3. If a passkey is stored locally and protected by Windows Hello, you'll be prompted to use Windows Hello to sign in. If you select the option **Use another device**, you can choose one of the following options:
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -195,7 +192,7 @@ Follow these steps to use a passkey:
   :::column-end:::
 :::row-end:::
 
-Select one of the following options to learn how to save a passkey, based on where you want to store it.
+Pick one of the following options to learn how to use a passkey, based on where you saved it.
 
 #### [**Windows device**](#tab/windows)
 
@@ -206,7 +203,7 @@ Select one of the following options to learn how to save a passkey, based on whe
 
   :::column-end:::
   :::column span="1":::
-    :::image type="content" source="images/hello-use.png" alt-text="Screenshot showing the Windows Hello prompt for a verification method." lightbox="images/save-use.png" border="false":::
+    :::image type="content" source="images/hello-use.png" alt-text="Screenshot showing the Windows Hello prompt for a verification method." lightbox="images/hello-use.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -216,7 +213,7 @@ Select one of the following options to learn how to save a passkey, based on whe
 
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/save-passkey-hello-confirmation.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/save-passkey-hello-confirmation.png" border="false":::
+  :::image type="content" source="images/hello-use.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/hello-use.png" border="false":::
   :::column-end:::
 :::row-end:::
 
@@ -229,7 +226,7 @@ Select one of the following options to learn how to save a passkey, based on whe
 
   :::column-end:::
   :::column span="1":::
-    :::image type="content" source="images/save-passkey-hello.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/save-passkey-hello.png" border="false":::
+    :::image type="content" source="images/hello-use.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/hello-use.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -239,7 +236,7 @@ Select one of the following options to learn how to save a passkey, based on whe
 
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/save-passkey-hello-confirmation.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/save-passkey-hello-confirmation.png" border="false":::
+  :::image type="content" source="images/hello-use.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/hello-use.png" border="false":::
   :::column-end:::
 :::row-end:::
 
@@ -252,7 +249,7 @@ Select one of the following options to learn how to save a passkey, based on whe
 
   :::column-end:::
   :::column span="1":::
-    :::image type="content" source="images/save-passkey-hello.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/save-passkey-hello.png" border="false":::
+    :::image type="content" source="images/hello-use.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/hello-use.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -262,7 +259,7 @@ Select one of the following options to learn how to save a passkey, based on whe
 
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/save-passkey-hello-confirmation.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/save-passkey-hello-confirmation.png" border="false":::
+  :::image type="content" source="images/hello-use.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/hello-use.png" border="false":::
   :::column-end:::
 :::row-end:::
 
@@ -275,7 +272,7 @@ Select one of the following options to learn how to save a passkey, based on whe
 
   :::column-end:::
   :::column span="1":::
-    :::image type="content" source="images/save-passkey-hello.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/save-passkey-hello.png" border="false":::
+    :::image type="content" source="images/hello-use.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/hello-use.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -285,7 +282,7 @@ Select one of the following options to learn how to save a passkey, based on whe
 
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/save-passkey-hello-confirmation.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/save-passkey-hello-confirmation.png" border="false":::
+  :::image type="content" source="images/hello-use.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/hello-use.png" border="false":::
   :::column-end:::
 :::row-end:::
 
