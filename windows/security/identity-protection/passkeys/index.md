@@ -46,7 +46,8 @@ Follow these steps to create a passkey:
   3. Choose where to save the passkey and select **Next**. By default, Windows prompts to save the passkey locally if you're using Windows Hello or Windows Hello for Business. If you select the option **Use another device**, you can choose to save the passkey on one of the following locations:
 
   :::column-end:::
-:::row-end::::::row:::
+:::row-end:::
+:::row:::
   :::column span="3":::
 
   - **This Windows device**: the passkey is saved locally on your Windows device, and protected by Windows Hello (biometrics and PIN)\
