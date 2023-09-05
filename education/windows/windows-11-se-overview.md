@@ -89,7 +89,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Brave Browser`                           | 106.0.5249.119    | `Win32`    | `Brave`                                   |
 | `Bulb Digital Portfolio`                  | 0.0.7.0           | `Store`  | `Bulb`                                    |
 | `CA Secure Browser`                       | 14.0.0            | `Win32`    | `Cambium Development`                     |
-| `Cisco Umbrella`                          | 3.0.110.0         | `Win32`    | `Cisco`                                   |
+| `Cisco Umbrella`                          | 3.0.343.0         | `Win32`    | `Cisco`                                   |
 | `CKAuthenticator`                         | 3.6+              | `Win32`    | `ContentKeeper`                           |
 | `Class Policy`                            | 116.0.0           | `Win32`    | `Class Policy`                            |
 | `Classroom.cloud`                         | 1.40.0004         | `Win32`    | `NetSupport`                              |
@@ -107,7 +107,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Easysense 2`                             | 1.32.0001         | `Win32`    | `Data Harvest`                            |
 | `Epson iProjection`                       | 3.31              | `Win32`    | `Epson`                                   |
 | `eTests`                                  | 4.0.25            | `Win32`    | `CASAS`                                   |
-| `Exam Writepad`                           | 22.10.14.1834     | `Win32`    | `Sheldnet`                                |
+| `Exam Writepad`                           | 23.2.4.2338       | `Win32`    | `Sheldnet`                                |
 | `FirstVoices Keyboard`                    | 15.0.270          | `Win32`    | `SIL International`                       |
 | `FortiClient`                             | 7.2.0.4034+       | `Win32`    | `Fortinet`                                |
 | `Free NaturalReader`                      | 16.1.2            | `Win32`    | `Natural Soft`                            |
@@ -135,8 +135,9 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Mobile Plans`                            | 5.1911.3171.0     | `Store`  | `Microsoft Corporation`                   |
 | `NAPLAN`                                  | 5.2.2             | `Win32`    | `NAP`                                     |
 | `Netref Student`                          | 23.1.0            | `Win32`    | `NetRef`                                  |
-| `NetSupport Manager`                      | 12.01.0014        | `Win32`    | `NetSupport`                              |
-| `NetSupport Notify`                       | 5.10.1.215        | `Win32`    | `NetSupport`                              |
+| `NetSupport DNA`                          | 4.80.0000         | `Win32`    | `NetSupport`                              |
+| `NetSupport Manager`                      | 14.00.0012        | `Win32`    | `NetSupport`                              |
+| `NetSupport Notify`                       | 5.10.1.223        | `Win32`    | `NetSupport`                              |
 | `NetSupport School`                       | 14.00.0012        | `Win32`    | `NetSupport`                              |
 | `NextUp Talker`                           | 1.0.49            | `Win32`    | `NextUp Technologies`                     |
 | `NonVisual Desktop Access`                | 2021.3.1          | `Win32`    | `NV Access`                               |
@@ -148,7 +149,7 @@ The following applications can also run on Windows 11 SE, and can be deployed us
 | `Project Monarch Outlook`                 | 1.2022.2250001    | `Store`  | `Microsoft`                               |
 | `Questar Secure Browser`                  | 5.0.1.456         | `Win32`    | `Questar, Inc`                            |
 | `ReadAndWriteForWindows`                  | 12.0.74           | `Win32`    | `Texthelp Ltd.`                           |
-| `Remote Desktop client (MSRDC)`           | 1.2.4066.0        | `Win32`    | `Microsoft`                               |
+| `Remote Desktop client (MSRDC)`           | 1.2.4240.0        | `Win32`    | `Microsoft`                               |
 | `Remote Help`                             | 4.0.1.13          | `Win32`    | `Microsoft`                               |
 | `Respondus Lockdown Browser`              | 2.0.9.03          | `Win32`    | `Respondus`                               |
 | `Safe Exam Browser`                       | 3.5.0.544         | `Win32`    | `Safe Exam Browser`                       |

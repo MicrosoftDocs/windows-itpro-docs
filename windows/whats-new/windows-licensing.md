@@ -67,7 +67,7 @@ The following table describes the unique Windows Enterprise edition features:
 
 | OS-based feature | Description |
 |-|-|
-|**[Windows Defender Credential Guard][WIN-1]**|Protects against user credential harvesting and pass-the-hash attacks or pass the token attacks.|
+|**[Credential Guard][WIN-1]**|Protects against user credential harvesting and pass-the-hash attacks or pass the token attacks.|
 |**[Managed Microsoft Defender Application Guard (MDAG) for Microsoft Edge][WIN-11]**| Isolates enterprise-defined untrusted sites with virtualization-based security from Windows, protecting your organization while users browse the Internet.|
 |**[Modern BitLocker Management][WIN-2]** | Allows you to eliminate on-premises tools to monitor and support BitLocker recovery scenarios. |  
 |**[Personal Data Encryption][WIN-3]**|Encrypts individual's content using Windows Hello for Business to link the encryption keys to user credentials.|
@@ -135,13 +135,13 @@ In most cases, the Windows Pro edition comes pre-installed on a business-class d
 - A developer that is developing applications that must be tested and certified on Pro, as that is how it will be delivered to customers
 - A Windows Pro device that was pre-configured for a specific purpose and is certified on Pro only
 
-In these cases, you want the PC to be configured, secured, monitored, and updated with the enterprise management and security tools that come with the Windows Enterprise user subscription. Your Windows Enterprise E3 subscriptions does not block these scenarios.
+In these cases, you want the PC to be configured, secured, monitored, and updated with the enterprise management and security tools that come with the Windows Enterprise user subscription. Your Windows Enterprise E3 subscription doesn't block these scenarios.
 
 The following table lists the Windows 11 Enterprise features and their Windows edition requirements:
 
 | OS-based feature |Windows Pro|Windows Enterprise|
 |-|-|-|
-|**[Windows Defender Credential Guard][WIN-1]**|❌|Yes|
+|**[Credential Guard][WIN-1]**|❌|Yes|
 |**[Microsoft Defender Application Guard (MDAG) for Microsoft Edge][WIN-11]**|Yes|Yes|
 |**[Modern BitLocker Management][WIN-2]**|Yes|Yes|
 |**[Personal data encryption (PDE)][WIN-3]**|❌|Yes|
