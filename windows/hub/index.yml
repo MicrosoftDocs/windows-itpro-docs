@@ -70,7 +70,7 @@ productDirectory:
         - url: /windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines
           text: Windows security baselines
         - url: /windows/security/identity-protection/credential-guard/credential-guard-how-it-works
-          text: Windows Defender Credential Guard
+          text: Credential Guard
         - url: /windows/security/identity-protection/hello-for-business/hello-hybrid-cloud-kerberos-trust
           text: Windows Hello for Business cloud Kerberos trust
         - url: /windows/security/threat-protection/windows-defender-application-control
