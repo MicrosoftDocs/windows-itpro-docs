@@ -125,6 +125,7 @@ GET https://graph.microsoft.com/v1.0/organization?$select=id
 #### [:::image type="icon" source="../../images/icons/group-policy.svg"::: **GPO**](#tab/gpo)
 
 [!INCLUDE [gpo-settings-1](../../../../includes/configure/gpo-settings-1.md)]
+[!INCLUDE [gpo-settings-1](../../../../includes/configure/gpo-settings-1.md)]
 
 | Group policy path | Group policy setting | Value |
 | - | - | - |

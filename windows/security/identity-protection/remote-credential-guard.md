@@ -5,7 +5,7 @@ ms.collection:
 - highpri
 - tier1
 ms.topic: how-to
-ms.date: 08/21/2023
+ms.date: 09/06/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
@@ -47,6 +47,7 @@ The security benefits of [Restricted Admin mode][TECH-1] include:
 
 Use the following table to compare different Remote Desktop connection security options:
 
+| Feature | Remote Desktop | Remote Credential Guard | Restricted Admin mode |
 | Feature | Remote Desktop | Remote Credential Guard | Restricted Admin mode |
 |--|--|--|--|
 | Single sign-on (SSO) to other systems as signed in user | ✅ | ✅ | ❌ |
