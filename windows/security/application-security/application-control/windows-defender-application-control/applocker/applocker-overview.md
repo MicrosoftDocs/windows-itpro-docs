@@ -4,6 +4,7 @@ description: This article provides a description of AppLocker and can help you d
 ms.collection:
 - highpri
 - tier3
+- must-keep
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 06/07/2023

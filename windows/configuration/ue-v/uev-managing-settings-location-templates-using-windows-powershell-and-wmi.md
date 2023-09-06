@@ -3,7 +3,9 @@ title: Managing UE-V Settings Location Templates Using Windows PowerShell and WM
 description: Managing UE-V Settings Location Templates Using Windows PowerShell and WMI
 author: aczechowski
 ms.prod: windows-client
-ms.collection: tier3
+ms.collection:
+ - tier3
+ - must-keep
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: aaroncz

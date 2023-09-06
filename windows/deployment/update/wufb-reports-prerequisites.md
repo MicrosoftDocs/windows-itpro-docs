@@ -1,19 +1,21 @@
 ---
-title: Windows Update for Business reports prerequisites
-manager: aaroncz
-description: Prerequisites for Windows Update for Business reports
+title: Prerequisites for Windows Update for Business reports
+titleSuffix: Windows Update for Business reports
+description: List of prerequisites for enabling and using Windows Update for Business reports in your organization.
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
 author: mestew
 ms.author: mstewart
-ms.topic: article
-ms.date: 06/27/2023
-ms.technology: itpro-updates
+manager: aaroncz
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>	
+ms.date: 08/30/2023
 ---
 
 # Windows Update for Business reports prerequisites
 <!--37063317, 30141258, 37063041-->
-***(Applies to: Windows 11 & Windows 10)***
-
 Before you begin the process of adding Windows Update for Business reports to your Azure subscription, ensure you meet the prerequisites.
 
 ## Azure and Azure Active Directory
@@ -68,7 +70,7 @@ Device names don't appear in Windows Update for Business reports unless you indi
 
 Microsoft is committed to providing you with effective controls over your data and ongoing transparency into our data handling practices.  For more information about data handling and privacy for Windows diagnostic data, see [Configure Windows diagnostic data in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization) and [Changes to Windows diagnostic data collection](/windows/privacy/changes-to-windows-diagnostic-data-collection#services-that-rely-on-enhanced-diagnostic-data).
 
-## Data transmission requirements
+## Endpoints
 
 <!--Using include for endpoint access requirements-->
 [!INCLUDE [Endpoints for Windows Update for Business reports](./includes/wufb-reports-endpoints.md)]

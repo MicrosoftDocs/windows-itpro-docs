@@ -6,4 +6,4 @@ ms.topic: include
 ms.prod: windows-client
 ---
 
-To configure devices using Microsoft Intune, [create a *Settings catalog policy*](/mem/intune/configuration/settings-catalog) and use the following settings:
+To configure devices using Microsoft Intune, [create a Settings catalog policy](/mem/intune/configuration/settings-catalog) and use the following settings:

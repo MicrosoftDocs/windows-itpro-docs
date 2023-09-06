@@ -4,7 +4,7 @@ items:
 - name: Application management
   items:
     - name: Overview of apps in Windows
-      href: apps-in-windows-10.md
+      href: overview-windows-apps.md
     - name: Add or hide Windows features
       href: add-apps-and-features.md
     - name: Sideload line of business (LOB) apps

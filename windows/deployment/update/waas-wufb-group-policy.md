@@ -1,28 +1,28 @@
 ---
 title: Configure Windows Update for Business via Group Policy
-description: Walk through of how to configure Windows Update for Business settings using Group Policy.
+description: Walk through of how to configure Windows Update for Business settings using Group Policy to update devices.
 ms.prod: windows-client
+ms.technology: itpro-updates
+manager: aaroncz
+ms.topic: conceptual
 author: mestew
 ms.localizationpriority: medium
 ms.author: mstewart
 ms.collection:
   - highpri
   - tier2
-manager: aaroncz
-ms.topic: how-to
-ms.technology: itpro-updates
-ms.date: 02/28/2023
+appliesto:
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2022</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2019</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/windows-server-release-info target=_blank>Windows Server 2016</a>
+ms.date: 08/22/2023
 ---
 
 # Walkthrough: Use Group Policy to configure Windows Update for Business
 
-
-**Applies to**
-
-- Windows 10
-- Windows 11
-
-> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
+> **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
 ## Overview 
 
@@ -195,10 +195,41 @@ Still more options are available in **Computer Configuration > Administrative Te
 
 Every Windows device provides users with various controls they can use to manage Windows Updates. They can access these controls by Search to find Windows Updates or by going selecting **Updates and Security** in **Settings**. We provide the ability to disable a variety of these controls that are accessible to users.
  
-Users with access to update pause settings can prevent both feature and quality updates for 7 days. You can prevent users from pausing updates through the Windows Update settings page by using **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Remove access to “Pause updates**.
+Users with access to update pause settings can prevent both feature and quality updates for 7 days. You can prevent users from pausing updates through the Windows Update settings page by using **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Remove access to Pause updates**.
 When you disable this setting, users will see **Some settings are managed by your organization** and the update pause settings are greyed out.
 
 If you use Windows Server Update Server (WSUS), you can prevent users from scanning Windows Update. To do this, use **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Remove access to use all Windows Update features**.
+
+#### I want to enable optional updates
+<!--7991583-->
+(*Starting in Windows 11, version 22H2 or later*)
+
+In addition to the monthly cumulative update, optional updates are available to provide new features and nonsecurity changes. Most optional updates are released on the fourth Tuesday of the month, known as optional nonsecurity preview releases. Optional updates can also include features that are gradually rolled out, known as controlled feature rollouts (CFRs). Installation of optional updates isn't enabled by default for devices that receive updates using Windows Update for Business. However, you can enable optional updates for devices by using the **Computer Configuration > Administrative Templates > Windows Components > Windows Update > Manage updates offered from Windows Update > Enable optional updates** policy.
+
+To keep the timing of updates consistent, the **Enable optional updates** policy respects the [deferral period for quality updates](waas-configure-wufb.md#configure-when-devices-receive-quality-updates). This policy allows you to choose if devices should receive CFRs in addition to the optional nonsecurity preview releases, or if the end-user can make the decision to install optional updates. This policy can change the behavior of the **Get the latest updates as soon as they're available** option in **Settings** > **Update & security** > ***Windows Update** > **Advanced options**. 
+
+The following options are available for the policy:
+
+- **Automatically receive optional updates (including CFRs)**:
+   - The latest optional nonsecurity updates and CFRs are automatically installed on the device. The quality update deferral period is applied to the installation of these updates.
+   - The **Get the latest updates as soon as they're available** option is selected and users can't change the setting.
+   - Devices will receive CFRs in early phases of the rollout.
+
+- **Automatically receive optional updates**:
+   - The latest optional nonsecurity updates are automatically installed on the device but CFRs aren't. The quality update deferral period is applied to the installation of these updates.
+   - The **Get the latest updates as soon as they're available** option isn't selected and users can't change the setting.
+
+- **Users can select which optional updates to receive**:
+   - Users can select which optional updates to install from **Settings** > **Update & security** > **Windows Update** > **Advanced options** > **Optional updates**.
+     - Optional updates are offered to the device, but user interaction is required to install them unless the **Get the latest updates as soon as they're available** option is also enabled.  
+     - CFRs are offered to the device, but not necessarily in the early phases of the rollout.
+   - Users can enable the **Get the latest updates as soon as they're available** option in **Settings** > **Update & security** > ***Windows Update** > **Advanced options**. If the user enables the **Get the latest updates as soon as they're available**, then:
+     - The device will receive CFRs in early phases of the rollout.
+     - Optional updates are automatically installed on the device.
+
+- **Not configured** (default):
+  - Optional updates aren't installed on the device and the **Get the latest updates as soon as they're available** option is disabled.
+
 
 #### I want to enable features introduced via servicing that are off by default
 <!--6544872-->

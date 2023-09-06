@@ -80,7 +80,7 @@ The AssignedAccess CSP has been expanded to make it easy for administrators to c
 ## Security
 
 >[!NOTE]
->Windows security features have been rebranded as Windows Defender security features, including Windows Defender Device Guard, Windows Defender Credential Guard, and Windows Defender Firewall.
+>Windows security features have been rebranded as Windows Defender security features, including Windows Defender Device Guard, Credential Guard, and Windows Defender Firewall.
 
 **Windows security baselines** have been updated for Windows 10. A [security baseline](/windows/device-security/windows-security-baselines) is a group of Microsoft-recommended configuration settings and explains their security impact. For more information, and to download the Policy Analyzer tool, see [Microsoft Security Compliance Toolkit 1.0](/windows/device-security/security-compliance-toolkit-10).
 
