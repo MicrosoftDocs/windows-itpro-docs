@@ -48,7 +48,6 @@ The security benefits of [Restricted Admin mode][TECH-1] include:
 Use the following table to compare different Remote Desktop connection security options:
 
 | Feature | Remote Desktop | Remote Credential Guard | Restricted Admin mode |
-| Feature | Remote Desktop | Remote Credential Guard | Restricted Admin mode |
 |--|--|--|--|
 | Single sign-on (SSO) to other systems as signed in user | ✅ | ✅ | ❌ |
 | Multi-hop RDP | ✅ | ✅ | ❌ |
@@ -73,7 +72,7 @@ The client device:
 - Must be running the Remote Desktop Windows application. The Remote Desktop Universal Windows Platform (UWP) application doesn't support Remote Credential Guard
 - Must use Kerberos authentication to connect to the remote host. If the client can't connect to a domain controller, then RDP attempts to fall back to NTLM. Remote Credential Guard does not allow NTLM fallback because this would expose credentials to risk
 
-[!INCLUDE [windows-defender-remote-credential-guard](../../../includes/licensing/windows-defender-remote-credential-guard.md)]
+[!INCLUDE [remote-credential-guard](../../../includes/licensing/remote-credential-guard.md)]
 
 ## Enable delegation of nonexportable credentials on the remote hosts
 
