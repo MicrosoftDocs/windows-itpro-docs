@@ -89,7 +89,7 @@ Pick one of the following options to learn how to save a passkey, based on where
   :::column-end:::
 :::row-end:::
 
-#### [**Phone or tablet**](#tab/mobile)
+#### [:::image type="icon" source="images/qr-code.svg" border="false"::: **Phone or tablet**](#tab/mobile)
 
 :::row:::
   :::column span="3":::
@@ -217,7 +217,7 @@ Pick one of the following options to learn how to use a passkey, based on where 
   :::column-end:::
 :::row-end:::
 
-#### [**Phone or tablet**](#tab/mobile)
+#### [:::image type="icon" source="images/qr-code.svg" border="false"::: **Phone or tablet**](#tab/mobile)
 
 :::row:::
   :::column span="3":::
