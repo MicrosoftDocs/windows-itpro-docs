@@ -198,7 +198,7 @@ Once a client receives the policy, you can connect to the remote host using Remo
 
 ## Remote Desktop connections and helpdesk support scenarios
 
-For helpdesk support scenarios in which personnel requires administrative access via Remote Desktop sessions, it isn't recommended the use of Remote Credential Guard. If an RDP session is initiated to an already compromised client, the attacker could use that open channel to create sessions on the user's behalf. The attecker can access any of the user's resources for a limited time after the session disconnects.
+For helpdesk support scenarios in which personnel require administrative access via Remote Desktop sessions, it isn't recommended the use of Remote Credential Guard. If an RDP session is initiated to an already compromised client, the attacker could use that open channel to create sessions on the user's behalf. The attacker can access any of the user's resources for a limited time after the session disconnects.
 
 We recommend using Restricted Admin mode option instead. For helpdesk support scenarios, RDP connections should only be initiated using the `/RestrictedAdmin` switch. This helps to ensure that credentials and other user resources aren't exposed to compromised remote hosts. For more information, see [Mitigating Pass-the-Hash and Other Credential Theft v2][PTH-1].
 
@@ -212,7 +212,7 @@ Here are some additional considerations for Remote Credential Guard:
 
 - Remote Credential Guard doesn't support compound authentication. For example, if you're trying to access a file server from a remote host that requires a device claim, access will be denied
 - Remote Credential Guard can be used only when connecting to a device that is joined to an Active Directory domain. It can't be used when connecting to remote devices joined to Azure Active Directory (Azure AD)
-- Remote Credentail Guard can be used from an Azure AD joined client to connect to an Active Directory joined remote host, as long as the client can authenticate using Kerberos
+- Remote Credential Guard can be used from an Azure AD joined client to connect to an Active Directory joined remote host, as long as the client can authenticate using Kerberos
 - Remote Credential Guard only works with the RDP protocol
 - No credentials are sent to the target device, but the target device still acquires Kerberos Service Tickets on its own
 - The server and client must authenticate using Kerberos
