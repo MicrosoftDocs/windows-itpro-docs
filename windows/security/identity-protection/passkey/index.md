@@ -1,5 +1,5 @@
 ---
-title: Passkeys
+title: Passkey support in Windows
 description: Learn about passkeys and how to use them on Windows devices.
 ms.collection: 
 - highpri
@@ -9,6 +9,8 @@ ms.date: 09/05/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 ---
+
+# Passkey support in Windows
 
 ## Overview
 
@@ -104,7 +106,7 @@ Pick one of the following options to learn how to save a passkey, based on where
 :::row:::
   :::column span="3":::
 
-  6. Once the passkey is saved to your phone or tablet, confirm by selecting **OK**
+  6. Once the passkey is saved to your phone or tablet, select **OK**
 
   :::column-end:::
   :::column span="1":::
@@ -222,21 +224,18 @@ Pick one of the following options to learn how to use a passkey, based on where 
 :::row:::
   :::column span="3":::
 
-  4. Select a Windows Hello unlock option
+  4. Scan the QR code with your phone or tablet where you saved the passkey
 
   :::column-end:::
   :::column span="1":::
-    :::image type="content" source="images/hello-use.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/hello-use.png" border="false":::
+    :::image type="content" source="images/device-use.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/device-use.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
-  :::column span="3":::
+  :::column span="4":::
 
-  5. The passkey is saved to your Windows device. Confirm by selecting **OK**
+  5. You are signed in to the website or app
 
-  :::column-end:::
-  :::column span="1":::
-  :::image type="content" source="images/hello-use.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/hello-use.png" border="false":::
   :::column-end:::
 :::row-end:::
 
@@ -295,7 +294,7 @@ To view and manage passkeys saved for apps or websites, go to **Settings > Accou
 - A list of saved passkeys is displayed and you can filter them by name
 - To delete a passkey, select **... > Delete passkey** next to the passkey name
 
-:::image type="content" source="images/delete.png" alt-text="Screenshot of the Settings app showing the delete option for a passkey." lightbox="images/delete.png" border="false":::
+:::image type="content" source="images/delete-passkey.png" alt-text="Screenshot of the Settings app showing the delete option for a passkey." lightbox="images/delete-passkey.png" border="false":::
 
 > [!NOTE]
 > You can't delete the passkey used to sign in to your Windows device, either Microsoft Entra ID or Microsoft Account.

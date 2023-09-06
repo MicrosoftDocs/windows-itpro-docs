@@ -11,9 +11,9 @@ items:
       href: https://support.microsoft.com/windows/wake-your-windows-11-pc-when-you-approach-82285c93-440c-4e15-9081-c9e38c1290bb
     - name: Windows Hello for Business Enhanced Security Sign-in (ESS) 🔗
       href: /windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security
-    - name: Passkeys
-      href: passkeys/index.md
-    - name: FIDO 2 security key 🔗
+    - name: Passkey
+      href: passkey/index.md
+    - name: Security key (FIDO2) 🔗
       href: /azure/active-directory/authentication/howto-authentication-passwordless-security-key
     - name: Federated sign-in 🔗
       href: /education/windows/federated-sign-in
