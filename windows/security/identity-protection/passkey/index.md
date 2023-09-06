@@ -142,7 +142,7 @@ Pick one of the following options to learn how to save a passkey, based on where
 :::row:::
   :::column span="4":::
 
-  5. Unlock the security key using the key's unlock mechaniosm (for example, biometrics or PIN)
+  5. Unlock the security key using the key's unlock mechanism (for example, biometrics or PIN)
 
   :::column-end:::
 :::row-end:::
@@ -267,21 +267,20 @@ Pick one of the following options to learn how to use a passkey, based on where 
 :::row:::
   :::column span="3":::
 
-  4. Select a Windows Hello unlock option
+  4. Unlock the security key using the key's unlock mechanism (for example, biometrics or PIN)
 
   :::column-end:::
   :::column span="1":::
-    :::image type="content" source="images/hello-use.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/hello-use.png" border="false":::
+    :::image type="content" source="images/security-key-use.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/security-key-use.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column span="3":::
 
-  5. The passkey is saved to your Windows device. Confirm by selecting **OK**
+  5. You are signed in to the website or app
 
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/hello-use.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/hello-use.png" border="false":::
   :::column-end:::
 :::row-end:::
 
