@@ -50,7 +50,7 @@ Follow these steps to create a passkey:
 
 - **This Windows device**: the passkey is saved locally on your Windows device, and protected by Windows Hello (biometrics and PIN)
 - **iPhone, iPad or Android device**: the passkey is stored on a phone or tablet, protected by the device's biometrics, if offered by the device. This option requires you to scan a QR code with your phone or tablet
-- **linked device**: the key is stored on a *linked* device, typically a phone or tablet, protected by the device's biometrics or a PIN. This option is only supported for Android devices and requires the linked device to be connected via Bluetooth to the Windows device
+- **Linked device**: the key is stored on a *linked* device, typically a phone or tablet, protected by the device's biometrics or a PIN. This option is only supported for Android devices and requires the linked device to be connected via Bluetooth to the Windows device
 - **Security key**: the passkey is saved to a security key (FIDO2 key), protected by the key's biometrics, if offered by the key
 
   :::column-end:::
@@ -66,7 +66,7 @@ Follow these steps to create a passkey:
 
 Pick one of the following options to learn how to save a passkey, based on where you want to store it.
 
-#### [**Windows device**](#tab/windows)
+#### [:::image type="icon" source="images/laptop.svg" border="false"::: **Windows device**](#tab/windows)
 
 :::row:::
   :::column span="3":::
@@ -112,7 +112,7 @@ Pick one of the following options to learn how to save a passkey, based on where
   :::column-end:::
 :::row-end:::
 
-#### [**Linked device**](#tab/linked)
+#### [:::image type="icon" source="images/phone.svg" border="false"::: **Linked device**](#tab/linked)
 
 :::row:::
   :::column span="3":::
@@ -135,7 +135,7 @@ Pick one of the following options to learn how to save a passkey, based on where
   :::column-end:::
 :::row-end:::
 
-#### [**Security key**](#tab/key)
+#### [:::image type="icon" source="images/usb.svg" border="false"::: **Security key**](#tab/key)
 
 :::row:::
   :::column span="4":::
@@ -184,7 +184,7 @@ Follow these steps to use a passkey:
   :::column span="3":::
 - **This Windows device**: use this option to use a passkey that is stored locally on your Windows device, and protected by Windows Hello
 - **iPhone, iPad or Android device**: use this option if you want to sign in with a passkey stored on a phone or tablet. This option requires you to scan a QR code with your phone or tablet
-- **linked device**: use this option if you want to sign in with a passkey stored on a *linked* device. This option is only supported for Android devices and requires the linked device to be connected via Bluetooth to the Windows device
+- **Linked device**: use this option if you want to sign in with a passkey stored on a *linked* device. This option is only supported for Android devices and requires the linked device to be connected via Bluetooth to the Windows device
 - **Security key** - use this option if you want to sign in with a passkey stored on a security key (FIDO2 key)
   :::column-end:::
   :::column span="1":::
@@ -194,7 +194,7 @@ Follow these steps to use a passkey:
 
 Pick one of the following options to learn how to use a passkey, based on where you saved it.
 
-#### [**Windows device**](#tab/windows)
+#### [:::image type="icon" source="images/laptop.svg" border="false"::: **Windows device**](#tab/windows)**Windows device**](#tab/windows)
 
 :::row:::
   :::column span="3":::
@@ -240,7 +240,7 @@ Pick one of the following options to learn how to use a passkey, based on where 
   :::column-end:::
 :::row-end:::
 
-#### [**Linked device**](#tab/linked)
+#### [:::image type="icon" source="images/phone.svg" border="false"::: **Linked device**](#tab/linked)
 
 :::row:::
   :::column span="3":::
@@ -263,7 +263,7 @@ Pick one of the following options to learn how to use a passkey, based on where 
   :::column-end:::
 :::row-end:::
 
-#### [**Security key**](#tab/key)
+#### [:::image type="icon" source="images/usb.svg" border="false"::: **Security key**](#tab/key)
 
 :::row:::
   :::column span="3":::
