@@ -194,7 +194,7 @@ Follow these steps to use a passkey:
 
 Pick one of the following options to learn how to use a passkey, based on where you saved it.
 
-#### [:::image type="icon" source="images/laptop.svg" border="false"::: **Windows device**](#tab/windows)**Windows device**](#tab/windows)
+#### [:::image type="icon" source="images/laptop.svg" border="false"::: **Windows device**](#tab/windows)
 
 :::row:::
   :::column span="3":::
