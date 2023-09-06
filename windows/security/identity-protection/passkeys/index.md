@@ -46,8 +46,6 @@ Follow these steps to create a passkey:
   :::column-end:::
 :::row-end:::
 :::row:::
-  :::column span="1":::
-  :::column-end:::
   :::column span="3":::
 
 - **This Windows device**: the passkey is saved locally on your Windows device, and protected by Windows Hello (biometrics and PIN)
@@ -184,13 +182,13 @@ Follow these steps to use a passkey:
 :::row-end:::
 :::row:::
   :::column span="3":::
-- **This Windows device** - use this option to use a passkey that is stored locally on your Windows device, and protected by Windows Hello
-- **iPhone, iPad or Android device** - use this option if you want to sign in with a passkey stored on a phone or tablet. This option requires you to scan a QR code with your phone or tablet
-- **linked device** - use this option if you want to sign in with a passkey stored on a *linked* device. This option requires the linked device to be connected via Bluetooth to the Windows device
+- **This Windows device**: use this option to use a passkey that is stored locally on your Windows device, and protected by Windows Hello
+- **iPhone, iPad or Android device**: use this option if you want to sign in with a passkey stored on a phone or tablet. This option requires you to scan a QR code with your phone or tablet
+- **linked device**: use this option if you want to sign in with a passkey stored on a *linked* device. This option is only supported for Android devices and requires the linked device to be connected via Bluetooth to the Windows device
 - **Security key** - use this option if you want to sign in with a passkey stored on a security key (FIDO2 key)
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/use-passkey.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/save-passkey.png" border="false":::
+  :::image type="content" source="images/use-passkey.png" alt-text="Screenshot of the passkey dialog prompting the user to pick where the passkey is stored." lightbox="images/use-passkey.png" border="false":::
   :::column-end:::
 :::row-end:::
 
@@ -211,11 +209,11 @@ Pick one of the following options to learn how to use a passkey, based on where 
 :::row:::
   :::column span="3":::
 
-  5. The passkey is saved to your Windows device. Confirm by selecting **OK**
+  5. Select **OK** to continue signing in
 
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/hello-use.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/hello-use.png" border="false":::
+  :::image type="content" source="images/hello-use-confirm.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/hello-use-confirm.png" border="false":::
   :::column-end:::
 :::row-end:::
 
