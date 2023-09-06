@@ -7,13 +7,13 @@ ms.topic: include
 
 ## Windows edition and licensing requirements
 
-The following table lists the Windows editions that support Windows Defender Credential Guard:
+The following table lists the Windows editions that support Credential Guard:
 
 |Windows Pro|Windows Enterprise|Windows Pro Education/SE|Windows Education|
 |:---:|:---:|:---:|:---:|
 |No|Yes|No|Yes|
 
-Windows Defender Credential Guard license entitlements are granted by the following licenses:
+Credential Guard license entitlements are granted by the following licenses:
 
 |Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
 |:---:|:---:|:---:|:---:|:---:|
