@@ -1,5 +1,5 @@
 ---
-ms.date: 12/12/2022
+ms.date: 09/07/2023
 title: Prepare and deploy Active Directory Federation Services in an on-premises key trust
 description: Learn how to configure Active Directory Federation Services to support the Windows Hello for Business key trust model.
 appliesto: 
