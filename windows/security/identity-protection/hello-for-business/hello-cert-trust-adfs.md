@@ -1,7 +1,7 @@
 ---
 title: Prepare and deploy Active Directory Federation Services in an on-premises certificate trust model
 description: Learn how to configure Active Directory Federation Services to support the Windows Hello for Business on-premises certificate trust model.
-ms.date: 12/12/2022
+ms.date: 09/07/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
