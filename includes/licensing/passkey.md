@@ -7,13 +7,13 @@ ms.topic: include
 
 ## Windows edition and licensing requirements
 
-The following table lists the Windows editions that support Fast Identity Online (FIDO2) security key:
+The following table lists the Windows editions that support Passkey:
 
 |Windows Pro|Windows Enterprise|Windows Pro Education/SE|Windows Education|
 |:---:|:---:|:---:|:---:|
 |Yes|Yes|Yes|Yes|
 
-Fast Identity Online (FIDO2) security key license entitlements are granted by the following licenses:
+Passkey license entitlements are granted by the following licenses:
 
 |Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
 |:---:|:---:|:---:|:---:|:---:|

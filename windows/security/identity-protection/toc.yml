@@ -5,7 +5,7 @@ items:
     items:
     - name: Passwordless strategy
       href: passwordless-strategy.md
-    - name: Windows Hello for Business 🔗
+    - name: Windows Hello for Business
       href: hello-for-business/toc.yml
     - name: Windows presence sensing
       href: https://support.microsoft.com/windows/wake-your-windows-11-pc-when-you-approach-82285c93-440c-4e15-9081-c9e38c1290bb

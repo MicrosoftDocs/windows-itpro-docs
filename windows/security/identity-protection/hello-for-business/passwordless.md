@@ -44,6 +44,8 @@ Windows Hello for Business passwordless has the following requirements:
 >[!NOTE]
 >Microsoft Entra hybrid joined devices and Active Directory domain joined devices are currently out of scope.
 
+[!INCLUDE [windows-hello-for-business-passwordless](../../../../includes/licensing/windows-hello-for-business-passwordless.md)]
+
 ## Enable Windows Hello for Business passwordless with Intune
 
 [!INCLUDE [intune-settings-catalog-1](../../../../includes/configure/intune-settings-catalog-1.md)]

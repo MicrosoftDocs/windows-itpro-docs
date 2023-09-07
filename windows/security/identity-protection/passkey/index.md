@@ -22,16 +22,18 @@ Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can use any app
 
 Windows provides a native experience for passkey management starting in Windows 11, version 22H2 with [KB5030310][KB-1].
 
+[!INCLUDE [passkey](../../../../../includes/licensing/passkey.md)]
+
 ## User experiences
 
 ### Create a passkey
 
-Follow these steps to create a passkey:
+Follow these steps to create a passkey from a Windows device:
 
 :::row:::
   :::column span="4":::
 
-  1. Go to a website or app that supports passkeys
+  1. Open a website or app that supports passkeys
 
   :::column-end:::
 :::row-end:::
@@ -44,7 +46,7 @@ Follow these steps to create a passkey:
 :::row-end:::
 :::row:::
   :::column span="4":::
-  3. Choose where to save the passkey. By default, Windows prompts to save the passkey locally if you're using Windows Hello or Windows Hello for Business. If you select the option **Use another device**, you can choose to save the passkey on one of the following locations:
+  3. Choose where to save the passkey. By default, Windows prompts to save the passkey locally if you're using Windows Hello or Windows Hello for Business. If you select the option **Use another device**, you can choose to save the passkey in one of the following locations:
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -53,11 +55,11 @@ Follow these steps to create a passkey:
 - **This Windows device**: the passkey is saved locally on your Windows device, and protected by Windows Hello (biometrics and PIN)
 - **iPhone, iPad or Android device**: the passkey is stored on a phone or tablet, protected by the device's biometrics, if offered by the device. This option requires you to scan a QR code with your phone or tablet
 - **Linked device**: the key is stored on a *linked* device, typically a phone or tablet, protected by the device's biometrics or a PIN. This option is only supported for Android devices and requires the linked device to be connected via Bluetooth to the Windows device
-- **Security key**: the passkey is saved to a security key (FIDO2 key), protected by the key's biometrics, if offered by the key
+- **Security key**: the passkey is saved to a security key (FIDO2), protected by the key's unlock mechanism (for example, biometrics or PIN)
 
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/save-passkey.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/save-passkey.png" border="false":::
+  :::image type="content" source="images/save-passkey.png" alt-text="Screenshot showing a dialog box prompting the user to pick a location to store the passkey." lightbox="images/save-passkey.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -73,11 +75,11 @@ Pick one of the following options to learn how to save a passkey, based on where
 :::row:::
   :::column span="3":::
 
-  5. Select a Windows Hello verification method
+  5. Select a Windows Hello verification method and proceed with the verification, then select **OK**
 
   :::column-end:::
   :::column span="1":::
-    :::image type="content" source="images/hello-save.png" alt-text="Screenshot prompting the user to pick a Windows Hello verification method." lightbox="images/hello-save.png" border="false":::
+    :::image type="content" source="images/hello-save.png" alt-text="Screenshot showing the Windows Hello face verification method." lightbox="images/hello-save.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -87,7 +89,7 @@ Pick one of the following options to learn how to save a passkey, based on where
 
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/hello-save-confirmation.png" alt-text="Screenshot confirming that the passkey is saved to the Windows device" lightbox="images/hello-save-confirmation.png" border="false":::
+  :::image type="content" source="images/hello-save-confirm.png" alt-text="Screenshot confirming that the passkey is saved to the Windows device" lightbox="images/hello-save-confirm.png" border="false":::
   :::column-end:::
 :::row-end:::
 
@@ -96,11 +98,11 @@ Pick one of the following options to learn how to save a passkey, based on where
 :::row:::
   :::column span="3":::
 
-  5. Scan the QR code with your phone or tablet, and follow the instructions to save the passkey
+  5. Scan the QR code with your phone or tablet, and follow the instructions on the device to save the passkey
 
   :::column-end:::
   :::column span="1":::
-    :::image type="content" source="images/device-save-qr.png" alt-text="Screenshot showing the qr code asking the user to scan on phone or tablet." lightbox="images/device-save-qr.png" border="false":::
+    :::image type="content" source="images/device-save-qr.png" alt-text="Screenshot showing the qr code asking the user to scan on the device." lightbox="images/device-save-qr.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -119,7 +121,7 @@ Pick one of the following options to learn how to save a passkey, based on where
 :::row:::
   :::column span="3":::
 
-  5. Select the linked device option and confirm the notification sent to the device
+  5. Once the connection to the linked device is established, follow the instructions on the device to save the passkey
 
   :::column-end:::
   :::column span="1":::
@@ -129,7 +131,7 @@ Pick one of the following options to learn how to save a passkey, based on where
 :::row:::
   :::column span="3":::
 
-  6. The passkey is saved to your linked device. To confirm select **OK**
+  6. Once the passkey is saved to your linked device, select **OK**
 
   :::column-end:::
   :::column span="1":::
@@ -142,17 +144,17 @@ Pick one of the following options to learn how to save a passkey, based on where
 :::row:::
   :::column span="3":::
 
-  5. Select **OK** to confirm that you want to setup a security key, and unlock the security key using the key's unlock mechanism (for example, biometrics or PIN)
+  5. Select **OK** to confirm that you want to setup a security key, and unlock the security key using the key's unlock mechanism
 
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/security-key-setup.png" alt-text="Screenshot asking the user to confirm to use a security key." lightbox="images/security-key-setup.png" border="false":::
+  :::image type="content" source="images/security-key-setup.png" alt-text="Screenshot showing a prompt to use a security key to store the passkey." lightbox="images/security-key-setup.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column span="3":::
 
-  6. The passkey is saved to the security key. Confirm by selecting **OK**
+  6. Once the passkey is saved to the security key, select **OK**
 
   :::column-end:::
   :::column span="1":::
@@ -178,6 +180,7 @@ Follow these steps to use a passkey:
   2. Select **Sign in with a passkey**, or a similar option
   :::column-end:::
   :::column span="1":::
+  :::image type="content" source="images/website.png" alt-text="Screenshot of a website offering the passkey sign in option." lightbox="images/website.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -190,7 +193,7 @@ Follow these steps to use a passkey:
 - **This Windows device**: use this option to use a passkey that is stored locally on your Windows device, and protected by Windows Hello
 - **iPhone, iPad or Android device**: use this option if you want to sign in with a passkey stored on a phone or tablet. This option requires you to scan a QR code with your phone or tablet
 - **Linked device**: use this option if you want to sign in with a passkey stored on a *linked* device. This option is only supported for Android devices and requires the linked device to be connected via Bluetooth to the Windows device
-- **Security key** - use this option if you want to sign in with a passkey stored on a security key (FIDO2 key)
+- **Security key** - use this option if you want to sign in with a passkey stored on a security key (FIDO2)
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/use-passkey.png" alt-text="Screenshot of the passkey dialog prompting the user to pick where the passkey is stored." lightbox="images/use-passkey.png" border="false":::
@@ -218,7 +221,6 @@ Pick one of the following options to learn how to use a passkey, based on where 
 
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/hello-use-confirm.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/hello-use-confirm.png" border="false":::
   :::column-end:::
 :::row-end:::
 
@@ -231,7 +233,7 @@ Pick one of the following options to learn how to use a passkey, based on where 
 
   :::column-end:::
   :::column span="1":::
-    :::image type="content" source="images/device-use.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/device-use.png" border="false":::
+    :::image type="content" source="images/device-use.png" alt-text="Screenshot showing the QR code to scan from your phone or tablet." lightbox="images/device-use.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -247,21 +249,20 @@ Pick one of the following options to learn how to use a passkey, based on where 
 :::row:::
   :::column span="3":::
 
-  4. Select a Windows Hello unlock option
+  4. Once the connection to the linked device is established, follow the instructions on the device to use the passkey
 
   :::column-end:::
   :::column span="1":::
-    :::image type="content" source="images/hello-use.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/hello-use.png" border="false":::
+    :::image type="content" source="images/linked-device-use.png" alt-text="Screenshot showing that the linked device is connected to Windows." lightbox="images/linked-device-use.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column span="3":::
 
-  5. The passkey is saved to your Windows device. Confirm by selecting **OK**
+  5. You are signed in to the website or app
 
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/hello-use.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/hello-use.png" border="false":::
   :::column-end:::
 :::row-end:::
 
@@ -270,11 +271,11 @@ Pick one of the following options to learn how to use a passkey, based on where 
 :::row:::
   :::column span="3":::
 
-  4. Unlock the security key using the key's unlock mechanism (for example, biometrics or PIN)
+  4. Unlock the security key using the key's unlock mechanism
 
   :::column-end:::
   :::column span="1":::
-    :::image type="content" source="images/security-key-use.png" alt-text="Screenshot showing the passkey save dialog prompting the user to pick a location." lightbox="images/security-key-use.png" border="false":::
+    :::image type="content" source="images/security-key-use.png" alt-text="Screenshot showing a prompt asking the user to unlock the security key." lightbox="images/security-key-use.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
