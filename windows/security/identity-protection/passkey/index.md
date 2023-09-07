@@ -153,7 +153,7 @@ Pick one of the following options to learn how to save a passkey, based on where
 
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/device-save.png" alt-text="Screenshot confirming that the passkey is saved to the security key." lightbox="images/device-save.png" border="false":::
+  :::image type="content" source="images/security-key-save.png" alt-text="Screenshot confirming that the passkey is saved to the security key." lightbox="images/security-key-save.png" border="false":::
   :::column-end:::
 :::row-end:::
 
