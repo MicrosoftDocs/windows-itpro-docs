@@ -1,6 +1,6 @@
 ---
 title: Windows Hello for Business passwordless
-description: Learn how Passwordless experience enables your organization to move away from passwords.
+description: Learn how Windows Hello for Business passwordless enables your organization to move away from passwords.
 ms.collection: 
   - highpri
   - tier1
@@ -34,7 +34,7 @@ This article explains how to enable Windows Hello for Business passwordless and 
 
 ## System requirements
 
-Windows Hello for Business passwordless experience has the following requirements:
+Windows Hello for Business passwordless has the following requirements:
 
 - Windows 11, version 22H2 with [KB5030310][KB-1] or later
 - Microsoft Entra ID joined
@@ -44,15 +44,15 @@ Windows Hello for Business passwordless experience has the following requirement
 >[!NOTE]
 >Microsoft Entra hybrid joined devices and Active Directory domain joined devices are currently out of scope.
 
-## Enable Windows Hello for Business passwordless experience with Intune
+## Enable Windows Hello for Business passwordless with Intune
 
-[!INCLUDE [intune-settings-catalog-1](../../../includes/configure/intune-settings-catalog-1.md)]
+[!INCLUDE [intune-settings-catalog-1](../../../../includes/configure/intune-settings-catalog-1.md)]
 
 | Category | Setting name | Value |
 |--|--|--|
 | **Authentication** | Enable Passwordless Experience | Enabled |
 
-[!INCLUDE [intune-settings-catalog-2](../../../includes/configure/intune-settings-catalog-2.md)]
+[!INCLUDE [intune-settings-catalog-2](../../../../includes/configure/intune-settings-catalog-2.md)]
 
 Alternatively, you can configure devices using a [custom policy][INT-2] with the [Policy CSP][CSP-1].
 
@@ -66,24 +66,24 @@ Alternatively, you can configure devices using a [custom policy][INT-2] with the
 
 :::row:::
   :::column span="3":::
-  **Passwordless experience turned off**: users can sign in using a password, as indicated by the presence of the password credential provider  :::image type="icon" source="images/passwordless-experience/key-credential-provider.svg" border="false"::: in the Windows lock screen.
+  **Passwordless experience turned off**: users can sign in using a password, as indicated by the presence of the password credential provider  :::image type="icon" source="images/passwordless/key-credential-provider.svg" border="false"::: in the Windows lock screen.
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/passwordless-experience/lock-screen-off.png" lightbox="images/passwordless-experience/lock-screen-off.png" alt-text="Screenshot of the Windows lock screen showing the fingerprint, PIN and password credential providers.":::
+  :::image type="content" source="images/passwordless/lock-screen-off.png" lightbox="images/passwordless/lock-screen-off.png" alt-text="Screenshot of the Windows lock screen showing the fingerprint, PIN and password credential providers.":::
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column span="3":::
-  **Passwordless experience turned on**: the password credential provider :::image type="icon" source="images/passwordless-experience/key-credential-provider.svg" border="false"::: is missing for the last user who signed in with strong credentials. A user can either sign in using a strong credential or opt to use the *Other user* option to sign in with a password.
+  **Passwordless experience turned on**: the password credential provider :::image type="icon" source="images/passwordless/key-credential-provider.svg" border="false"::: is missing for the last user who signed in with strong credentials. A user can either sign in using a strong credential or opt to use the *Other user* option to sign in with a password.
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/passwordless-experience/lock-screen-on.png" lightbox="images/passwordless-experience/lock-screen-on.png" alt-text="Screenshot of the Windows lock screen showing the fingerprint and PIN credential providers only. The password credential provider is missing.":::
+  :::image type="content" source="images/passwordless/lock-screen-on.png" lightbox="images/passwordless/lock-screen-on.png" alt-text="Screenshot of the Windows lock screen showing the fingerprint and PIN credential providers only. The password credential provider is missing.":::
   :::column-end:::
 :::row-end:::
 
 ### In-session authentication experiences
 
-When Windows Hello for Business passwordless experience is enabled, users can't use the password credential provider for in-session authentication scenarios. In-session authentication scenarios include:
+When Windows Hello for Business passwordless is enabled, users can't use the password credential provider for in-session authentication scenarios. In-session authentication scenarios include:
 
 - Password Manager in a web browser
 - Connecting to file shares or intranet sites
@@ -92,7 +92,7 @@ When Windows Hello for Business passwordless experience is enabled, users can't 
 >[!NOTE]
 > RDP sign in defaults to the strong credential used during sign-in. However, a suers can select the option *Use a different account* to sign in with a password.
 >
-> *Run as different user* is not impacted by Windows Hello for Business passwordless experience.
+> *Run as different user* is not impacted by Windows Hello for Business passwordless.
 
 Example of UAC elevation experience:
 
@@ -101,7 +101,7 @@ Example of UAC elevation experience:
   **Passwordless experience turned off**: UAC elevation allows the user to authenticate using a password.
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/passwordless-experience/uac-off.png" lightbox="images/passwordless-experience/uac-off.png" alt-text="Screenshot of the UAC prompt showing username and password fields.":::
+  :::image type="content" source="images/passwordless/uac-off.png" lightbox="images/passwordless/uac-off.png" alt-text="Screenshot of the UAC prompt showing username and password fields.":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -109,24 +109,24 @@ Example of UAC elevation experience:
   **Passwordless experience turned on**: UAC elevation doesn't allow the user to use the password credential provider for the currently logged on user. The user can authenticate using a strong credential or a local user account, if available.
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/passwordless-experience/uac-on.png" lightbox="images/passwordless-experience/uac-on.png" alt-text="Screenshot of the UAC prompt showing fingerprint and PIN options only.":::
+  :::image type="content" source="images/passwordless/uac-on.png" lightbox="images/passwordless/uac-on.png" alt-text="Screenshot of the UAC prompt showing fingerprint and PIN options only.":::
   :::column-end:::
 :::row-end:::
 
 ## Recommendations
 
-Here's a list of recommendations to consider before enabling Windows Hello for Business passwordless experience:
+Here's a list of recommendations to consider before enabling Windows Hello for Business passwordless:
 
-- If Windows Hello for Business is enabled, configure the [PIN reset](hello-for-business/hello-feature-pin-reset.md) feature to allow users to reset their PIN from the lock screen. The PIN reset experience is improved starting in Windows 11, version 22H2 with [KB5030310][KB-1]
-- Don't configure the security policy *Interactive logon: Don't display last signed-in*, as it prevents Windows Hello for Business passwordless experience from working
+- If Windows Hello for Business is enabled, configure the [PIN reset](hello-feature-pin-reset.md) feature to allow users to reset their PIN from the lock screen. The PIN reset experience is improved starting in Windows 11, version 22H2 with [KB5030310][KB-1]
+- Don't configure the security policy *Interactive logon: Don't display last signed-in*, as it prevents Windows Hello for Business passwordless from working
 - Don't disable the password credential provider using the *Exclude credential providers* policy. The key differences between the two policies are:
-  - The *Exclude credential providers* policy disables passwords for *all accounts*, including local accounts. Windows Hello for Business passwordless experience only applies to Microsoft Entra ID accounts that sign in with strong credentials. It also excludes *Other User* from the policy, so users have a backup sign in option
-  - RDP and in-session authentication scenarios aren't supported with the Exclude credential providers policy. Windows Hello for Business passwordless experience hides passwords from in-session auth scenarios like Password Manager in a web browser, UAC prompts, etc.
+  - The *Exclude credential providers* policy disables passwords for *all accounts*, including local accounts. Windows Hello for Business passwordless only applies to Microsoft Entra ID accounts that sign in with strong credentials. It also excludes *Other User* from the policy, so users have a backup sign in option
+  - RDP and in-session authentication scenarios aren't supported with the Exclude credential providers policy. Windows Hello for Business passwordless hides passwords from in-session auth scenarios like Password Manager in a web browser, UAC prompts, etc.
 - To facilitate helpdesk support operations, consider enabling the local administrator account or create a separate one, randomizing its password using the [Windows Local Administrator Password Solution (LAPS)][SERV-1]
 
 ## Provide feedback
 
-To provide feedback for Windows Hello for Business passwordless experience, open [**Feedback Hub**][FHUB] and use the category **Security and Privacy > Passwordless experience**.
+To provide feedback for Windows Hello for Business passwordless, open [**Feedback Hub**][FHUB] and use the category **Security and Privacy > Passwordless experience**.
 
 <!--links used in this document-->
 
