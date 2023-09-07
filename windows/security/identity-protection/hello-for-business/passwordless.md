@@ -1,5 +1,5 @@
 ---
-title: Windows Hello for Business passwordless experience
+title: Windows Hello for Business passwordless
 description: Learn how Passwordless experience enables your organization to move away from passwords.
 ms.collection: 
   - highpri
@@ -8,14 +8,14 @@ ms.date: 09/06/2023
 ms.topic: how-to
 ---
 
-# Windows Hello for Business passwordless experience
+# Windows Hello for Business passwordless
 
 ## Overview
 
-Starting in Windows 11, version 22H2 with [KB5030310][KB-1], *Windows Hello for Business passwordless experience* is a security policy that promotes a user experience without passwords on Microsoft Entra joined devices.\
+Starting in Windows 11, version 22H2 with [KB5030310][KB-1], *Windows Hello for Business passwordless* is a security policy that promotes a user experience without passwords on Microsoft Entra joined devices.\
 When the policy is enabled, certain Windows authentication scenarios don't offer the users the option to use a password, helping organizations and preparing users to gradually move away from passwords.
 
-With Windows Hello for Business passwordless experience, users with strong credentials (for example, Windows Hello for Business, FIDO2 key, etc.):
+With Windows Hello for Business passwordless, users with strong credentials (for example, Windows Hello for Business, FIDO2 key, etc.):
 
 - Can't sign in using the password credential provider on the Windows lock screen
 - Aren't prompted to use a password during in-session authentications (for example, UAC elevation, password manager in the browser, etc.)
@@ -24,10 +24,10 @@ With Windows Hello for Business passwordless experience, users with strong crede
   >[!NOTE]
   >Users can reset their password using <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>DEL</kbd> > **Manage your account**
 
-Windows Hello for Business passwordless experience doesn't affect the initial sign-in experience and local accounts. It only applies to subsequent sign-ins for Microsoft Entra ID accounts. It also doesn't prevent a user from signing in with a password when using the *Other user* option in the lock screen.\
-The password credential provider is hidden only for the last signed in user who signed in with strong credentials. Windows Hello for Business passwordless experience is not about preventing users from using passwords, rather to guide and educate them to not use passwords.
+Windows Hello for Business passwordless doesn't affect the initial sign-in experience and local accounts. It only applies to subsequent sign-ins for Microsoft Entra ID accounts. It also doesn't prevent a user from signing in with a password when using the *Other user* option in the lock screen.\
+The password credential provider is hidden only for the last signed in user who signed in with strong credentials. Windows Hello for Business passwordless is not about preventing users from using passwords, rather to guide and educate them to not use passwords.
 
-This article explains how to enable Windows Hello for Business passwordless experience and describes the user experiences.
+This article explains how to enable Windows Hello for Business passwordless and describes the user experiences.
 
 >[!TIP]
 > Windows Hello for Business users can achieve passwordless sign-in from the first sign-in using the Web sign-in feature. For more information about Web sign-in, see [Article to complete](https://learn.microsoft.com).

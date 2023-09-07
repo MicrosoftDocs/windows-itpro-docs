@@ -28,7 +28,6 @@ ms.topic: include
 |**[Encrypted hard drive](/windows/security/information-protection/encrypted-hard-drive)**|Yes|Yes|Yes|Yes|Yes|
 |**[Enhanced phishing protection with SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/phishing-protection-microsoft-defender-smartscreen)**|Yes|Yes|Yes|Yes|Yes|
 |**[Exploit protection](/microsoft-365/security/defender-endpoint/exploit-protection)**|Yes|Yes|Yes|Yes|Yes|
-|**[Fast Identity Online (FIDO2) security key](/azure/active-directory/authentication/howto-authentication-passwordless-security-key)**|Yes|Yes|Yes|Yes|Yes|
 |**[Federal Information Processing Standard (FIPS) 140 validation](/windows/security/threat-protection/fips-140-validation)**|Yes|Yes|Yes|Yes|Yes|
 |**[Federated sign-in](/education/windows/federated-sign-in)**|❌|❌|❌|Yes|Yes|
 |**[Hardware-enforced stack protection](https://techcommunity.microsoft.com/t5/windows-os-platform-blog/understanding-hardware-enforced-stack-protection/ba-p/1247815)**|Yes|Yes|Yes|Yes|Yes|
@@ -51,6 +50,7 @@ ms.topic: include
 |**[Modern device management through (MDM)](/windows/client-management/mdm-overview)**|Yes|Yes|Yes|Yes|Yes|
 |**[OneFuzz service](https://www.microsoft.com/security/blog/2020/09/15/microsoft-onefuzz-framework-open-source-developer-tool-fix-bugs/)**|Yes|Yes|Yes|Yes|Yes|
 |**Opportunistic Wireless Encryption (OWE)**|Yes|Yes|Yes|Yes|Yes|
+|**[Passkey](/windows/security/identity-protection/passkey)**|Yes|Yes|Yes|Yes|Yes|
 |**[Personal data encryption (PDE)](/windows/security/information-protection/personal-data-encryption/overview-pde)**|❌|Yes|Yes|Yes|Yes|
 |**Privacy Resource Usage**|Yes|Yes|Yes|Yes|Yes|
 |**Privacy Transparency and Controls**|Yes|Yes|Yes|Yes|Yes|
@@ -60,6 +60,7 @@ ms.topic: include
 |**[Secured-core configuration lock](/windows/client-management/config-lock)**|Yes|Yes|Yes|Yes|Yes|
 |**[Secured-core PC firmware protection](/windows-hardware/design/device-experiences/oem-highly-secure-11)**|Yes|Yes|Yes|Yes|Yes|
 |**[Security baselines](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines)**|Yes|Yes|Yes|Yes|Yes|
+|**[Security key (FIDO2)](/azure/active-directory/authentication/howto-authentication-passwordless-security-key)**|Yes|Yes|Yes|Yes|Yes|
 |**[Server Message Block (SMB) file service](/windows-server/storage/file-server/file-server-smb-overview)**|Yes|Yes|Yes|Yes|Yes|
 |**[Server Message Block Direct (SMB Direct)](/windows-server/storage/file-server/smb-direct)**|Yes|Yes|Yes|Yes|Yes|
 |**[Smart App Control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)**|Yes|Yes|Yes|Yes|Yes|
@@ -81,6 +82,7 @@ ms.topic: include
 |**[Windows Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Hello for Business](/windows/security/identity-protection/hello-for-business)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Hello for Business Enhanced Security Sign-in (ESS)](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)**|Yes|Yes|Yes|Yes|Yes|
+|**[Windows Hello for Business passwordless](/windows/security/identity-protection/hello-for-business/passwordless)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows LAPS](/windows-server/identity/laps/laps-overview)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows presence sensing](https://support.microsoft.com/windows/wake-your-windows-11-pc-when-you-approach-82285c93-440c-4e15-9081-c9e38c1290bb)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Sandbox](/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview)**|Yes|Yes|Yes|Yes|Yes|
