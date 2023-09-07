@@ -5,7 +5,7 @@ ms.collection:
 - highpri
 - tier1
 ms.topic: article
-ms.date: 09/05/2023
+ms.date: 09/06/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 ---
@@ -140,10 +140,13 @@ Pick one of the following options to learn how to save a passkey, based on where
 #### [:::image type="icon" source="images/usb.svg" border="false"::: **Security key**](#tab/key)
 
 :::row:::
-  :::column span="4":::
+  :::column span="3":::
 
-  5. Unlock the security key using the key's unlock mechanism (for example, biometrics or PIN)
+  5. Select **OK** to confirm that you want to setup a security key, and unlock the security key using the key's unlock mechanism (for example, biometrics or PIN)
 
+  :::column-end:::
+  :::column span="1":::
+  :::image type="content" source="images/security-key-setup.png" alt-text="Screenshot asking the user to confirm to use a security key." lightbox="images/security-key-setup.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::

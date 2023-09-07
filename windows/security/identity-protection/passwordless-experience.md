@@ -4,7 +4,7 @@ description: Learn how Passwordless experience enables your organization to move
 ms.collection: 
   - highpri
   - tier1
-ms.date: 08/30/2023
+ms.date: 09/06/2023
 ms.topic: how-to
 ---
 
@@ -66,7 +66,7 @@ Alternatively, you can configure devices using a [custom policy][INT-2] with the
 
 :::row:::
   :::column span="3":::
-  **Passwordless experience turned off**: users can sign in using a password, as indicated by the presence of the password credential provider  :::image type="icon" source="../images/icons/key.svg" border="false"::: in the Windows lock screen.
+  **Passwordless experience turned off**: users can sign in using a password, as indicated by the presence of the password credential provider  :::image type="icon" source="images/passwordless-experience/key-credential-provider.svg" border="false"::: in the Windows lock screen.
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/passwordless-experience/lock-screen-off.png" lightbox="images/passwordless-experience/lock-screen-off.png" alt-text="Screenshot of the Windows lock screen showing the fingerprint, PIN and password credential providers.":::
@@ -74,7 +74,7 @@ Alternatively, you can configure devices using a [custom policy][INT-2] with the
 :::row-end:::
 :::row:::
   :::column span="3":::
-  **Passwordless experience turned on**: the password credential provider :::image type="icon" source="../images/icons/key.svg" border="false"::: is missing for the last user who signed in with strong credentials. A user can either sign in using a strong credential or opt to use the *Other user* option to sign in with a password.
+  **Passwordless experience turned on**: the password credential provider :::image type="icon" source="images/passwordless-experience/key.svg" border="false"::: is missing for the last user who signed in with strong credentials. A user can either sign in using a strong credential or opt to use the *Other user* option to sign in with a password.
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/passwordless-experience/lock-screen-on.png" lightbox="images/passwordless-experience/lock-screen-on.png" alt-text="Screenshot of the Windows lock screen showing the fingerprint and PIN credential providers only. The password credential provider is missing.":::
