@@ -22,7 +22,7 @@ Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can use any app
 
 Windows provides a native experience for passkey management starting in Windows 11, version 22H2 with [KB5030310][KB-1].
 
-[!INCLUDE [passkey](../../../includes/licensing/passkey.md)]
+[!INCLUDE [passkey](../../../../includes/licensing/passkey.md)]
 
 ## User experiences
 
