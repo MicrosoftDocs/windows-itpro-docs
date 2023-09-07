@@ -1,5 +1,5 @@
 ---
-ms.date: 12/12/2022
+ms.date: 09/07/2023
 title: Configure Windows Hello for Business Policy settings in an on-premises key trust
 description: Configure Windows Hello for Business Policy settings for Windows Hello for Business in an on-premises key trust scenario
 appliesto: 
