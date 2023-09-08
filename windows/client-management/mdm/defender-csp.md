@@ -4,7 +4,7 @@ description: Learn more about the Defender CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 08/29/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -57,6 +57,7 @@ The following list shows the Defender configuration service provider nodes:
     - [DisableInboundConnectionFiltering](#configurationdisableinboundconnectionfiltering)
     - [DisableLocalAdminMerge](#configurationdisablelocaladminmerge)
     - [DisableNetworkProtectionPerfTelemetry](#configurationdisablenetworkprotectionperftelemetry)
+    - [DisableQuicParsing](#configurationdisablequicparsing)
     - [DisableRdpParsing](#configurationdisablerdpparsing)
     - [DisableSmtpParsing](#configurationdisablesmtpparsing)
     - [DisableSshParsing](#configurationdisablesshparsing)
@@ -492,7 +493,7 @@ Define the retention period in days of how much time the evidence data will be k
 
 <!-- Device-Configuration-DataDuplicationMaximumQuota-Description-Begin -->
 <!-- Description-Source-DDF -->
-Defines the maximum data duplication quota in MB that can be collected. When the quota is reached the filter will stop duplicating any data until the service manages to dispatch the existing collected data, thus decreasing the quota again below the maximum.
+Defines the maximum data duplication quota in MB that can be collected. When the quota is reached the filter will stop duplicating any data until the service manages to dispatch the existing collected data, thus decreasing the quota again below the maximum. The valid interval is [5-5000] MB. By default, the maximum quota will be 500 MB.
 <!-- Device-Configuration-DataDuplicationMaximumQuota-Description-End -->
 
 <!-- Device-Configuration-DataDuplicationMaximumQuota-Editable-Begin -->
@@ -504,8 +505,10 @@ Defines the maximum data duplication quota in MB that can be collected. When the
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
+| Allowed Values | Range: `[5-5000]` |
+| Default Value  | 500 |
 <!-- Device-Configuration-DataDuplicationMaximumQuota-DFProperties-End -->
 
 <!-- Device-Configuration-DataDuplicationMaximumQuota-Examples-Begin -->
@@ -570,7 +573,7 @@ Define data duplication remote location for device control.
 
 <!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-Description-Begin -->
 <!-- Description-Source-DDF -->
-Configure how many days can pass before an aggressive quick scan is triggered. The valid interval is [7-60] days. If set to 0, aggressive quick scans will be disabled. By default, the value is set to 25 days.
+Configure how many days can pass before an aggressive quick scan is triggered. The valid interval is [7-60] days. If not configured, aggressive quick scans will be disabled. By default, the value is set to 25 days when enabled.
 <!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-Description-End -->
 
 <!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-Editable-Begin -->
@@ -584,7 +587,7 @@ Configure how many days can pass before an aggressive quick scan is triggered. T
 |:--|:--|
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
-| Allowed Values | Range: `[0,7-60]` |
+| Allowed Values | Range: `[7-60]` |
 | Default Value  | 25 |
 <!-- Device-Configuration-DaysUntilAggressiveCatchupQuickScan-DFProperties-End -->
 
@@ -989,9 +992,19 @@ Defines whether the cache maintenance idle task will perform the cache maintenan
 
 | Property name | Property value |
 |:--|:--|
-| Format | `chr` (string) |
+| Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
 <!-- Device-Configuration-DisableCacheMaintenance-DFProperties-End -->
+
+<!-- Device-Configuration-DisableCacheMaintenance-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 | Cache maintenance is disabled. |
+| 0 (Default) | Cache maintenance is enabled (default). |
+<!-- Device-Configuration-DisableCacheMaintenance-AllowedValues-End -->
 
 <!-- Device-Configuration-DisableCacheMaintenance-Examples-Begin -->
 <!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
@@ -1489,6 +1502,55 @@ This setting disables the gathering and send of performance telemetry from Netwo
 
 <!-- Device-Configuration-DisableNetworkProtectionPerfTelemetry-End -->
 
+<!-- Device-Configuration-DisableQuicParsing-Begin -->
+### Configuration/DisableQuicParsing
+
+<!-- Device-Configuration-DisableQuicParsing-Applicability-Begin -->
+| Scope | Editions | Applicable OS |
+|:--|:--|:--|
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
+<!-- Device-Configuration-DisableQuicParsing-Applicability-End -->
+
+<!-- Device-Configuration-DisableQuicParsing-OmaUri-Begin -->
+```Device
+./Device/Vendor/MSFT/Defender/Configuration/DisableQuicParsing
+```
+<!-- Device-Configuration-DisableQuicParsing-OmaUri-End -->
+
+<!-- Device-Configuration-DisableQuicParsing-Description-Begin -->
+<!-- Description-Source-DDF -->
+This setting disables QUIC Parsing for Network Protection.
+<!-- Device-Configuration-DisableQuicParsing-Description-End -->
+
+<!-- Device-Configuration-DisableQuicParsing-Editable-Begin -->
+<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+<!-- Device-Configuration-DisableQuicParsing-Editable-End -->
+
+<!-- Device-Configuration-DisableQuicParsing-DFProperties-Begin -->
+**Description framework properties**:
+
+| Property name | Property value |
+|:--|:--|
+| Format | `int` |
+| Access Type | Add, Delete, Get, Replace |
+| Default Value  | 0 |
+<!-- Device-Configuration-DisableQuicParsing-DFProperties-End -->
+
+<!-- Device-Configuration-DisableQuicParsing-AllowedValues-Begin -->
+**Allowed values**:
+
+| Value | Description |
+|:--|:--|
+| 1 | QUIC parsing is disabled. |
+| 0 (Default) | QUIC parsing is enabled. |
+<!-- Device-Configuration-DisableQuicParsing-AllowedValues-End -->
+
+<!-- Device-Configuration-DisableQuicParsing-Examples-Begin -->
+<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
+<!-- Device-Configuration-DisableQuicParsing-Examples-End -->
+
+<!-- Device-Configuration-DisableQuicParsing-End -->
+
 <!-- Device-Configuration-DisableRdpParsing-Begin -->
 ### Configuration/DisableRdpParsing
 
@@ -1916,6 +1978,7 @@ Allows an administrator to explicitly disable network packet inspection made by 
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `|`) |
 <!-- Device-Configuration-ExcludedIpAddresses-DFProperties-End -->
 
 <!-- Device-Configuration-ExcludedIpAddresses-Examples-Begin -->
@@ -2203,7 +2266,7 @@ Setting to control automatic remediation for Sense scans.
 |:--|:--|
 | Format | `int` |
 | Access Type | Add, Delete, Get, Replace |
-| Default Value  | 0 |
+| Default Value  | 0x0 |
 <!-- Device-Configuration-PassiveRemediation-DFProperties-End -->
 
 <!-- Device-Configuration-PassiveRemediation-AllowedValues-Begin -->
@@ -2211,6 +2274,7 @@ Setting to control automatic remediation for Sense scans.
 
 | Flag | Description |
 |:--|:--|
+| 0x0 (Default) | Passive Remediation is turned off (default). |
 | 0x1 | PASSIVE_REMEDIATION_FLAG_SENSE_AUTO_REMEDIATION: Passive Remediation Sense AutoRemediation. |
 | 0x2 | PASSIVE_REMEDIATION_FLAG_RTP_AUDIT: Passive Remediation Realtime Protection Audit. |
 | 0x4 | PASSIVE_REMEDIATION_FLAG_RTP_REMEDIATION: Passive Remediation Realtime Protection Remediation. |
@@ -2494,6 +2558,7 @@ Defines what are the devices primary ids that should be secured by Defender Devi
 |:--|:--|
 | Format | `chr` (string) |
 | Access Type | Add, Delete, Get, Replace |
+| Allowed Values | List (Delimiter: `|`) |
 <!-- Device-Configuration-SecuredDevicesConfiguration-DFProperties-End -->
 
 <!-- Device-Configuration-SecuredDevicesConfiguration-Examples-Begin -->

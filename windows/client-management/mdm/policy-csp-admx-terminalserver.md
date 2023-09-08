@@ -4,7 +4,7 @@ description: Learn more about the ADMX_TerminalServer Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 08/30/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -2457,6 +2457,9 @@ Per Device licensing mode requires that each device connecting to this RD Sessio
 - If you enable this policy setting, the Remote Desktop licensing mode that you specify is honored by the Remote Desktop license server and RD Session Host.
 
 - If you disable or don't configure this policy setting, the licensing mode isn't specified at the Group Policy level.
+
+> [!NOTE]
+> AAD Per User mode is deprecated on Windows 11 and above.
 <!-- TS_LICENSING_MODE-Description-End -->
 
 <!-- TS_LICENSING_MODE-Editable-Begin -->
