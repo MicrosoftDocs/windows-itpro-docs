@@ -15,9 +15,9 @@ ms.topic: how-to
 Starting in Windows 11, version 22H2 with [KB5030310][KB-1], *Windows Hello for Business passwordless* is a security policy that promotes a user experience without passwords on Microsoft Entra joined devices.\
 When the policy is enabled, certain Windows authentication scenarios don't offer the users the option to use a password, helping organizations and preparing users to gradually move away from passwords.
 
-With Windows Hello for Business passwordless, users with strong credentials (for example, Windows Hello for Business, FIDO2 key, etc.):
+With Windows Hello for Business passwordless, users who sign in with Windows Hello or a FIDO2 security key:
 
-- Can't sign in using the password credential provider on the Windows lock screen
+- Don't have the option to use the password credential provider on the Windows lock screen
 - Aren't prompted to use a password during in-session authentications (for example, UAC elevation, password manager in the browser, etc.)
 - Don't have the option to use *Accounts > Change password* in the Settings app
   
@@ -25,7 +25,7 @@ With Windows Hello for Business passwordless, users with strong credentials (for
   >Users can reset their password using <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>DEL</kbd> > **Manage your account**
 
 Windows Hello for Business passwordless doesn't affect the initial sign-in experience and local accounts. It only applies to subsequent sign-ins for Microsoft Entra ID accounts. It also doesn't prevent a user from signing in with a password when using the *Other user* option in the lock screen.\
-The password credential provider is hidden only for the last signed in user who signed in with strong credentials. Windows Hello for Business passwordless is not about preventing users from using passwords, rather to guide and educate them to not use passwords.
+The password credential provider is hidden only for the last signed in user who signed in Windows Hello or a FIDO2 security key. Windows Hello for Business passwordless is not about preventing users from using passwords, rather to guide and educate them to not use passwords.
 
 This article explains how to enable Windows Hello for Business passwordless and describes the user experiences.
 
@@ -38,7 +38,7 @@ Windows Hello for Business passwordless has the following requirements:
 
 - Windows 11, version 22H2 with [KB5030310][KB-1] or later
 - Microsoft Entra ID joined
-- Strong credentials enrolled for the user
+- Windows Hello for Busines credentials enrolled for the user, or a FIDO2 security key
 - MDM-managed: Microsoft Intune or other MDM solution
 
 >[!NOTE]
@@ -92,7 +92,7 @@ When Windows Hello for Business passwordless is enabled, users can't use the pas
 - User Account Control (UAC) elevation, except if a local user account is used for elevation
 
 >[!NOTE]
-> RDP sign in defaults to the strong credential used during sign-in. However, a suers can select the option *Use a different account* to sign in with a password.
+> RDP sign in defaults to the credential provider used during sign-in. However, a suers can select the option *Use a different account* to sign in with a password.
 >
 > *Run as different user* is not impacted by Windows Hello for Business passwordless.
 
@@ -108,7 +108,7 @@ Example of UAC elevation experience:
 :::row-end:::
 :::row:::
   :::column span="3":::
-  **Passwordless experience turned on**: UAC elevation doesn't allow the user to use the password credential provider for the currently logged on user. The user can authenticate using a strong credential or a local user account, if available.
+  **Passwordless experience turned on**: UAC elevation doesn't allow the user to use the password credential provider for the currently logged on user. The user can authenticate using Windows Hello, a FIDO2 security key or a local user account, if available.
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/passwordless/uac-on.png" lightbox="images/passwordless/uac-on.png" alt-text="Screenshot of the UAC prompt showing fingerprint and PIN options only.":::
@@ -122,8 +122,8 @@ Here's a list of recommendations to consider before enabling Windows Hello for B
 - If Windows Hello for Business is enabled, configure the [PIN reset](hello-feature-pin-reset.md) feature to allow users to reset their PIN from the lock screen. The PIN reset experience is improved starting in Windows 11, version 22H2 with [KB5030310][KB-1]
 - Don't configure the security policy *Interactive logon: Don't display last signed-in*, as it prevents Windows Hello for Business passwordless from working
 - Don't disable the password credential provider using the *Exclude credential providers* policy. The key differences between the two policies are:
-  - The *Exclude credential providers* policy disables passwords for *all accounts*, including local accounts. Windows Hello for Business passwordless only applies to Microsoft Entra ID accounts that sign in with strong credentials. It also excludes *Other User* from the policy, so users have a backup sign in option
-  - RDP and in-session authentication scenarios aren't supported with the Exclude credential providers policy. Windows Hello for Business passwordless hides passwords from in-session auth scenarios like Password Manager in a web browser, UAC prompts, etc.
+  - The Exclude credential providers policy disables passwords for *all accounts*, including local accounts. Windows Hello for Business passwordless only applies to Microsoft Entra ID accounts that sign in with Windows Hello or a FIDO2 security key. It also excludes *Other User* from the policy, so users have a backup sign in option
+  - Exclude credential providers policy prevents the use of passwords for RDP and *Run as* authentication scenarios
 - To facilitate helpdesk support operations, consider enabling the local administrator account or create a separate one, randomizing its password using the [Windows Local Administrator Password Solution (LAPS)][SERV-1]
 
 ## Provide feedback
