@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
-ms.date: 06/07/2023
+ms.date: 09/08/2023
 ---
 
 # How to check Windows release health
@@ -36,7 +36,7 @@ Ensure the following prerequisites are met to display the Windows release health
    - Most roles containing the word `administrator` give you access to the Windows release health page such as [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator), [Helpdesk Administrator](/azure/active-directory/roles/permissions-reference#helpdesk-administrator), and [Service Support Administrator](/azure/active-directory/roles/permissions-reference#service-support-administrator). For more information, see [Assign admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/assign-admin-roles).
 
 > [!NOTE]
-> Currently, Windows release health isn't available for Government Community Cloud (GCC) tenants.
+> Currently, Windows release health is available for Government Community Cloud (GCC) tenants, but isn't available for GCC High and DoD. <!--8337541-->
 
 ## How to review Windows release health information
 
