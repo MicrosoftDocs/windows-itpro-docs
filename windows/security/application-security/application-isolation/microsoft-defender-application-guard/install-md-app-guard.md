@@ -27,7 +27,8 @@ Standalone mode is applicable for:
 
 - Windows 10 Enterprise edition, version 1709 and later
 - Windows 10 Pro edition, version 1803 and later
-- Windows 11 and later
+- Windows 10 Education edition, version 1809 and later
+- Windows 11 Enterprise, Education, or Pro editions
 
 ## Enterprise-managed mode
 
@@ -36,7 +37,8 @@ You and your security department can define your corporate boundaries by explici
 Enterprise-managed mode is applicable for:
 
 - Windows 10 Enterprise edition, version 1709 and later
-- Windows 11 and later
+- Windows 10 Education edition, version 1809 and later
+- Windows 11 Enterprise or Education editions
 
 The following diagram shows the flow between the host PC and the isolated container.
 

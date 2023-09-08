@@ -67,7 +67,7 @@ Collecting these events in a central location can help you maintain your AppLock
 
 As new apps are deployed or existing apps are updated by the software publisher, you'll need to make revisions to your rule collections to ensure that the policy is current.
 
-You can edit an AppLocker policy by adding, changing, or removing rules. However, you can't specify a version for the policy by importing more rules. To ensure version control when modifying an AppLocker policy, use Group Policy management software that allows you to create versions of Group Policy Objects (GPOs). An example of this type of software is the Advanced Group Policy Management feature from the Microsoft Desktop Optimization Pack. For more info about Advanced Group Policy Management, see [Advanced Group Policy Management Overview](https://go.microsoft.com/fwlink/p/?LinkId=145013).
+You can edit an AppLocker policy by adding, changing, or removing rules. However, you can't specify a version for the policy by importing more rules. To ensure version control when modifying an AppLocker policy, use Group Policy management software that allows you to create versions of Group Policy Objects (GPOs). An example of this type of software is the Advanced Group Policy Management feature from the Microsoft Desktop Optimization Pack. For more information, see [Advanced Group Policy Management Overview](/microsoft-desktop-optimization-pack/agpm/).
 
 > [!IMPORTANT]
 > You should not edit an AppLocker rule collection while it is being enforced in Group Policy. Because AppLocker controls what files are allowed to run, making changes to a live policy can create unexpected behavior.
