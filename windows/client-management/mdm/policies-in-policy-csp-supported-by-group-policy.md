@@ -4,7 +4,7 @@ description: Learn about the policies in Policy CSP supported by Group Policy.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 08/29/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -634,6 +634,7 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 - [HideRecommendedSection](policy-csp-start.md)
 - [HideRecommendedPersonalizedSites](policy-csp-start.md)
 - [HideTaskViewButton](policy-csp-start.md)
+- [HideCopilotButton](policy-csp-start.md)
 - [DisableControlCenter](policy-csp-start.md)
 - [SimplifyQuickSettings](policy-csp-start.md)
 - [DisableEditingQuickSettings](policy-csp-start.md)
@@ -835,6 +836,10 @@ This article lists the policies in Policy CSP that have a group policy mapping.
 
 - [AllowAutoConnectToWiFiSenseHotspots](policy-csp-wifi.md)
 - [AllowInternetSharing](policy-csp-wifi.md)
+
+## WindowsAI
+
+- [TurnOffWindowsCopilot](policy-csp-windowsai.md)
 
 ## WindowsDefenderSecurityCenter
 
