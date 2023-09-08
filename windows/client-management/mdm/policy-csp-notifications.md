@@ -4,7 +4,7 @@ description: Learn more about the Notifications Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 08/30/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -38,8 +38,16 @@ ms.topic: reference
 <!-- DisableAccountNotifications-OmaUri-End -->
 
 <!-- DisableAccountNotifications-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy allows you to prevent Windows from displaying notifications to Microsoft account (MSA) and local users in Start (user tile). Notifications include getting users to: reauthenticate; backup their device; manage cloud storage quotas as well as manage their Microsoft 365 or XBOX subscription. If you enable this policy setting, Windows won't send account related notifications for local and MSA users to the user tile in Start.
+<!-- Description-Source-ADMX -->
+This policy allows you to prevent Windows from displaying notifications to Microsoft account (MSA) and local users in Start (user tile).
+
+Notifications include getting users to: reauthenticate; backup their device; manage cloud storage quotas as well as manage their Microsoft 365 or XBOX subscription.
+
+- If you enable this policy setting, Windows won't send account related notifications for local and MSA users to the user tile in Start.
+
+- If you disable or don't configure this policy setting, Windows will send account related notifications for local and MSA users to the user tile in Start.
+
+No reboots or service restarts are required for this policy setting to take effect.
 <!-- DisableAccountNotifications-Description-End -->
 
 <!-- DisableAccountNotifications-Editable-Begin -->
@@ -71,7 +79,12 @@ This policy allows you to prevent Windows from displaying notifications to Micro
 | Name | Value |
 |:--|:--|
 | Name | DisableAccountNotifications |
-| Path | AccountNotifications > AT > WindowsComponents > AccountNotifications |
+| Friendly Name | Turn off account notifications in Start |
+| Location | User Configuration |
+| Path | Windows Components > Account Notifications |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\AccountNotifications |
+| Registry Value Name | DisableAccountNotifications |
+| ADMX File Name | AccountNotifications.admx |
 <!-- DisableAccountNotifications-GpMapping-End -->
 
 <!-- DisableAccountNotifications-Examples-Begin -->
@@ -318,12 +331,16 @@ No reboots or service restarts are required for this policy setting to take effe
 <!-- EnableExpandedToastNotifications-OmaUri-End -->
 
 <!-- EnableExpandedToastNotifications-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting turns on multiple expanded toast notifications in action center.
 
 - If you enable this policy setting, the first three notifications of each application will be expanded by default in action center.
 
-- If you disable or don't configure this policy setting, only the first notification of each application will be expanded by default in action center. Windows 10 only. This will be immediately deprecated for Windows 11. No reboots or service restarts are required for this policy setting to take effect.
+- If you disable or don't configure this policy setting, only the first notification of each application will be expanded by default in action center.
+
+Windows 10 only. This will be immediately deprecated for Windows 11.
+
+No reboots or service restarts are required for this policy setting to take effect.
 <!-- EnableExpandedToastNotifications-Description-End -->
 
 <!-- EnableExpandedToastNotifications-Editable-Begin -->
@@ -355,7 +372,12 @@ This policy setting turns on multiple expanded toast notifications in action cen
 | Name | Value |
 |:--|:--|
 | Name | ExpandedToastNotifications |
-| Path | WPN > AT > StartMenu > NotificationsCategory |
+| Friendly Name | Turn on multiple expanded toast notifications in action center |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar > Notifications |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\PushNotifications |
+| Registry Value Name | EnableExpandedToastNotifications |
+| ADMX File Name | WPN.admx |
 <!-- EnableExpandedToastNotifications-GpMapping-End -->
 
 <!-- EnableExpandedToastNotifications-Examples-Begin -->

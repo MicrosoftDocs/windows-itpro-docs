@@ -440,6 +440,8 @@ items:
           href: policy-csp-feeds.md
         - name: FileExplorer
           href: policy-csp-fileexplorer.md
+        - name: FileSystem
+          href: policy-csp-filesystem.md
         - name: Games
           href: policy-csp-games.md
         - name: Handwriting
@@ -554,6 +556,8 @@ items:
           href: policy-csp-webthreatdefense.md
         - name: Wifi
           href: policy-csp-wifi.md
+        - name: WindowsAI
+          href: policy-csp-windowsai.md
         - name: WindowsAutopilot
           href: policy-csp-windowsautopilot.md
         - name: WindowsConnectionManager
