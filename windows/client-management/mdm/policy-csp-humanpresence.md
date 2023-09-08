@@ -4,7 +4,7 @@ description: Learn more about the HumanPresence Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 08/30/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -38,8 +38,8 @@ ms.topic: reference
 <!-- ForceAllowDimWhenExternalDisplayConnected-OmaUri-End -->
 
 <!-- ForceAllowDimWhenExternalDisplayConnected-Description-Begin -->
-<!-- Description-Source-DDF -->
-Determines whether Allow Adaptive Dimming When External Display Connected checkbox is forced checked/unchecked by the MDM policy. The user won't be able to change this setting and the checkbox in the UI will be greyed out.
+<!-- Description-Source-ADMX -->
+Determines whether Allow Adaptive Dimming When Battery Saver On checkbox is forced checked/unchecked by the MDM policy. The user won't be able to change this setting and the checkbox in the UI will be greyed out.
 <!-- ForceAllowDimWhenExternalDisplayConnected-Description-End -->
 
 <!-- ForceAllowDimWhenExternalDisplayConnected-Editable-Begin -->
@@ -72,7 +72,12 @@ Determines whether Allow Adaptive Dimming When External Display Connected checkb
 | Name | Value |
 |:--|:--|
 | Name | ForceAllowDimWhenExternalDisplayConnected |
-| Path | Sensors > AT > WindowsComponents > HumanPresence |
+| Friendly Name | Force Allow Dim When External Display Connected |
+| Location | Computer Configuration |
+| Path | Windows Components > Human Presence |
+| Registry Key Name | Software\Policies\Microsoft\HumanPresence |
+| Registry Value Name | ForceAllowDimWhenExternalDisplayConnected |
+| ADMX File Name | Sensors.admx |
 <!-- ForceAllowDimWhenExternalDisplayConnected-GpMapping-End -->
 
 <!-- ForceAllowDimWhenExternalDisplayConnected-Examples-Begin -->
@@ -97,8 +102,8 @@ Determines whether Allow Adaptive Dimming When External Display Connected checkb
 <!-- ForceAllowLockWhenExternalDisplayConnected-OmaUri-End -->
 
 <!-- ForceAllowLockWhenExternalDisplayConnected-Description-Begin -->
-<!-- Description-Source-DDF -->
-Determines whether Allow Lock on Leave When External Display Connected checkbox is forced checked/unchecked by the MDM policy. The user won't be able to change this setting and the checkbox in the UI will be greyed out.
+<!-- Description-Source-ADMX -->
+Determines whether Allow Lock on Leave When Battery Saver On checkbox is forced checked/unchecked by the MDM policy. The user won't be able to change this setting and the checkbox in the UI will be greyed out.
 <!-- ForceAllowLockWhenExternalDisplayConnected-Description-End -->
 
 <!-- ForceAllowLockWhenExternalDisplayConnected-Editable-Begin -->
@@ -131,7 +136,12 @@ Determines whether Allow Lock on Leave When External Display Connected checkbox 
 | Name | Value |
 |:--|:--|
 | Name | ForceAllowLockWhenExternalDisplayConnected |
-| Path | Sensors > AT > WindowsComponents > HumanPresence |
+| Friendly Name | Force Allow Lock When External Display Connected |
+| Location | Computer Configuration |
+| Path | Windows Components > Human Presence |
+| Registry Key Name | Software\Policies\Microsoft\HumanPresence |
+| Registry Value Name | ForceAllowLockWhenExternalDisplayConnected |
+| ADMX File Name | Sensors.admx |
 <!-- ForceAllowLockWhenExternalDisplayConnected-GpMapping-End -->
 
 <!-- ForceAllowLockWhenExternalDisplayConnected-Examples-Begin -->
@@ -156,7 +166,7 @@ Determines whether Allow Lock on Leave When External Display Connected checkbox 
 <!-- ForceAllowWakeWhenExternalDisplayConnected-OmaUri-End -->
 
 <!-- ForceAllowWakeWhenExternalDisplayConnected-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 Determines whether Allow Wake on Approach When External Display Connected checkbox is forced checked/unchecked by the MDM policy. The user won't be able to change this setting and the checkbox in the UI will be greyed out.
 <!-- ForceAllowWakeWhenExternalDisplayConnected-Description-End -->
 
@@ -190,7 +200,12 @@ Determines whether Allow Wake on Approach When External Display Connected checkb
 | Name | Value |
 |:--|:--|
 | Name | ForceAllowWakeWhenExternalDisplayConnected |
-| Path | Sensors > AT > WindowsComponents > HumanPresence |
+| Friendly Name | Force Allow Wake When External Display Connected |
+| Location | Computer Configuration |
+| Path | Windows Components > Human Presence |
+| Registry Key Name | Software\Policies\Microsoft\HumanPresence |
+| Registry Value Name | ForceAllowWakeWhenExternalDisplayConnected |
+| ADMX File Name | Sensors.admx |
 <!-- ForceAllowWakeWhenExternalDisplayConnected-GpMapping-End -->
 
 <!-- ForceAllowWakeWhenExternalDisplayConnected-Examples-Begin -->
@@ -215,7 +230,7 @@ Determines whether Allow Wake on Approach When External Display Connected checkb
 <!-- ForceDisableWakeWhenBatterySaverOn-OmaUri-End -->
 
 <!-- ForceDisableWakeWhenBatterySaverOn-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 Determines whether Disable Wake on Approach When Battery Saver On checkbox is forced checked/unchecked by the MDM policy. The user won't be able to change this setting and the checkbox in the UI will be greyed out.
 <!-- ForceDisableWakeWhenBatterySaverOn-Description-End -->
 
@@ -249,7 +264,12 @@ Determines whether Disable Wake on Approach When Battery Saver On checkbox is fo
 | Name | Value |
 |:--|:--|
 | Name | ForceDisableWakeWhenBatterySaverOn |
-| Path | Sensors > AT > WindowsComponents > HumanPresence |
+| Friendly Name | Force Disable Wake When Battery Saver On |
+| Location | Computer Configuration |
+| Path | Windows Components > Human Presence |
+| Registry Key Name | Software\Policies\Microsoft\HumanPresence |
+| Registry Value Name | ForceDisableWakeWhenBatterySaverOn |
+| ADMX File Name | Sensors.admx |
 <!-- ForceDisableWakeWhenBatterySaverOn-GpMapping-End -->
 
 <!-- ForceDisableWakeWhenBatterySaverOn-Examples-Begin -->
