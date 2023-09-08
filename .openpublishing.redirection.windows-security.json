@@ -7414,11 +7414,6 @@
       "source_path": "windows/security/operating-system-security/data-protection/personal-data-encryption/faq-pde.yml",
       "redirect_url": "/windows/security/operating-system-security/data-protection/personal-data-encryption/faq",
       "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/security/identity-protection/hello-for-business/passwordless-strategy.md",
-      "redirect_url": "/windows/security/identity-protection/passwordless-strategy",
-      "redirect_document_id": false
     }
   ]
 }

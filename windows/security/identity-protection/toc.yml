@@ -4,7 +4,7 @@ items:
   - name: Passwordless sign-in
     items:
     - name: Passwordless strategy
-      href: passwordless-strategy.md
+      href: hello-for-business/passwordless-strategy.md
     - name: Windows Hello for Business
       href: hello-for-business/toc.yml
     - name: Windows presence sensing
