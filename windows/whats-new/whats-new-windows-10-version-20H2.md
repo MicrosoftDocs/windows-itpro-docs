@@ -25,7 +25,7 @@ This article lists new and updated features and content that is of interest to I
 
 As with previous fall releases, Windows 10, version 20H2 is a scoped set of features for select performance improvements, enterprise features, and quality enhancements. As an [H2-targeted release](/lifecycle/faq/windows), 20H2 is serviced for 30 months from the release date for devices running Windows 10 Enterprise or Windows 10 Education editions. 
 
-To download and install Windows 10, version 20H2, use Windows Update (**Settings > Update & Security > Windows Update**). For more information, including a video, see [How to get the Windows 10 October 2020 Update](https://community.windows.com/videos/how-to-get-the-windows-10-october-2020-update/7c7_mWN0wi8). 
+To download and install Windows 10, version 20H2, use Windows Update (**Settings > Update & Security > Windows Update**).
 
 ## Microsoft Edge
 
