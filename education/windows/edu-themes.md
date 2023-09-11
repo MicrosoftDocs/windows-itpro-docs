@@ -15,11 +15,11 @@ Starting in **Windows 11, version 22H2**, you can deploy education themes to you
 :::image type="content" source="./images/win-11-se-themes-1.png" alt-text="Windows 11 desktop with 3 stickers" border="true":::
 
 Themes allow the end user to quickly configure the look and feel of the device, with preset wallpaper, accent color, and other settings.
-Students can choose their own themes, making it feel the device is their own. When students feel more ownership over their device, they tend to take better care of it. This is great news for schools looking to give that same device to a new student the next year.
+Students can choose their own themes, making it feel the device is their own. When students feel more ownership over their device, they tend to take better care of it.
 
 ## Enable education themes
 
-Education themes aren't enabled by default. Follow the instructions below to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
+Education themes aren't enabled by default. The following instructions describe how to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
 
 #### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
 
@@ -51,7 +51,7 @@ Follow the steps in [Apply a provisioning package][WIN-2] to apply the package t
 
 ## How to use the education themes
 
-Once the education themes are enabled, the device will download them as soon as a user signs in to the device.
+Once the education themes are enabled, the device downloads them as soon as a user signs in to the device.
 
 To change the theme, select **Settings** > **Personalization** > **Themes** > **Select a theme**
 
