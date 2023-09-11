@@ -35,7 +35,7 @@ items:
     - name: Declared Configuration Extensibility
       href: ../declared-configuration-extensibility.md
     - name: DeclaredConfiguration CSP
-      href: ../declaredconfiguration-csp.md
+      href: declaredconfiguration-csp.md
     - name: Authoring DSC resources
       href: ../declared-configuration-dsc.md
   - name: Configuration service providers (CSPs)
