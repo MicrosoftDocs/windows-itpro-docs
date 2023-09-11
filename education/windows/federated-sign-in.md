@@ -107,7 +107,7 @@ To configure federated sign-in using a provisioning package, use the following s
 | **Path**: `Policies/Authentication/ConfigureWebSignInAllowedUrls` <br>**Value**: Semicolon separated list of domains, for example: `samlidp.clever.com;clever.com;mobile-redirector.clever.com`|
 | **Path**: `Policies/Authentication/ConfigureWebCamAccessDomainNames` <br>**Value**: This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, separated by a semicolon. For example: `clever.com`|
 
-:::image type="content" source="images/federated-sign-in-settings-ppkg.png" alt-text="Custom policy showing the settings to be configured to enable federated sign-in" lightbox="images/federated-sign-in-settings-ppkg.png" border="true":::
+:::image type="content" source="images/federated-sign-in-settings-ppkg.png" alt-text="Screenshot of Custom policy showing the settings to be configured to enable federated sign-in" lightbox="images/federated-sign-in-settings-ppkg.png" border="true":::
 
 Apply the provisioning package to the single-user devices that require federated sign-in.
 
@@ -169,7 +169,7 @@ Once the devices are configured, a new sign-in experience becomes available.
 
 As users enter their username, they're redirected to the identity provider sign-in page. Once the Idp authenticates the users, they're signed-in. In the following animation, you can observe how the first sign-in process works for a student assigned (1:1) device:
 
-:::image type="content" source="./images/win-11-se-federated-sign-in.gif" alt-text="Windows 11 SE sign-in using federated sign-in through Clever and QR code badge, in a student assigned (1:1) device." border="false":::
+:::image type="content" source="./images/win-11-se-federated-sign-in.gif" alt-text="Screenshot of Windows 11 SE sign-in using federated sign-in through Clever and QR code badge, in a student assigned (1:1) device." border="false":::
 
 > [!IMPORTANT]
 > For student assigned (1:1) devices, once the policy is enabled, the first user who sign-in to the device will also set the disambiguation page to the identity provider domain on the device. This means that the device will be defaulting to that IdP. The user can exit the federated sign-in flow by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the standard Windows sign-in screen.
@@ -213,7 +213,7 @@ After the token sent by the IdP is validated, Azure AD searches for a matching u
 
 If the matching object is found, the user is signed-in. Otherwise, the user is presented with an error message. The following picture shows that a user with the ImmutableId *260051* can't be found:
 
-:::image type="content" source="images/federation/user-match-lookup-failure.png" alt-text="Azure AD sign-in error: a user with a matching ImmutableId can't be found in the tenant." lightbox="images/federation/user-match-lookup-failure.png":::
+:::image type="content" source="images/federation/user-match-lookup-failure.png" alt-text="Screenshot of Azure AD sign-in error: a user with a matching ImmutableId can't be found in the tenant." lightbox="images/federation/user-match-lookup-failure.png":::
 
 > [!IMPORTANT]
 > The ImmutableId matching is case-sensitive.
