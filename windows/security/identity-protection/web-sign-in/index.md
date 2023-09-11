@@ -27,7 +27,7 @@ To use web sign-in, the following prerequisites must be met:
 
 - The devices must have Internet access. This feature doesn't work without it, as the authentication is done over the Internet.
 - The device must be Microsoft Entra joined
-- Windows 11 Pro Edu/Education, version 22H2 with [5030310][KB-1]
+- Windows 11, version 22H2 with [5030310][KB-1]
 
 <!-- [!INCLUDE [federated-sign-in](../../includes/licensing/federated-sign-in.md)] -->
 
@@ -40,7 +40,7 @@ You can configure federated sign-in for student assigned (1:1) devices or studen
 
 To use web sign-in, your devices must be configured with different policies. Review the following instructions to configure your devices using either Microsoft Intune or a provisioning package (PPKG).
 
-#### [:::image type="icon" source="images/icons/intune.svg"::: **Intune**](#tab/intune)
+#### [:::image type="icon" source="../../images/icons/intune.svg"::: **Intune**](#tab/intune)
 
 [!INCLUDE [intune-settings-catalog-1](../../../../includes/configure/intune-settings-catalog-1.md)]
 
@@ -60,7 +60,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 | **OMA-URI**: `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls`<br>**Data type**: String <br>**Value**: Semicolon separated list of domains, for example: `samlidp.clever.com;clever.com;mobile-redirector.clever.com`|
 | **OMA-URI**: `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebCamAccessDomainNames`<br>**Data type**: String <br>**Value**: This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, separated by a semicolon. For example: `clever.com`|
 
-#### [:::image type="icon" source="images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
+#### [:::image type="icon" source="../../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
 To configure web sign-in using a provisioning package, use the following settings:
 
