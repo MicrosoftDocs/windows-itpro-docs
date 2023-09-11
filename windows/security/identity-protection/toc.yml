@@ -13,7 +13,7 @@ items:
       href: /windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security
     - name: Passkey
       href: passkey/index.md
-    - name: Security key (FIDO2) 🔗
+    - name: FIDO2 security key 🔗
       href: /azure/active-directory/authentication/howto-authentication-passwordless-security-key
     - name: Federated sign-in 🔗
       href: /education/windows/federated-sign-in

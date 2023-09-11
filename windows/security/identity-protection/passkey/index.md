@@ -14,9 +14,23 @@ appliesto:
 
 ## Overview
 
-Passkeys are a simple and more secure replacement for passwords when you sign into a web site or application that supports them. Passkeys are phish-resistant, recoverable, and faster to use than passwords.
+Passkeys provide a more secure and convenient method of logging into websites and applications that support them, compared to passwords. Unlike passwords, which users must remember and type, passkeys are stored as secrets on a device and can be unlocked using the device's unlock mechanism (such as biometrics or a PIN). Passkeys are designed to be used without the need for additional login challenges, making the authentication process faster and more convenient.
 
 Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can use any apps or websites that supports passkeys to create and sign in using passkeys with the Windows Hello native experience. Once a passkey is created, you can use Windows Hello (biometrics and PIN) or a companion device (phone or tablet) to sign in.
+
+This article describes how to create and use passkeys on Windows devices.
+
+## How passkeys work
+
+Passkeys utilize the FIDO industry security standard, which has been adopted by multiple platforms. Leading technology companies like Microsoft are backing passkeys as part of the FIDO Alliance, and numerous websites and apps are integrating support for passkeys.
+
+The FIDO protocols rely on standard public key cryptography techniques to offer more secure authentication. When a user registers with an online service, their client device generates a new key pair. The private key is stored securely on the device, while the public key is registered with the service. To authenticate, the client device must prove that it possesses the private key by signing a challenge. The private keys can only be used after being unlocked by the user using the Windows Hello unlock factor (biometrics or PIN).
+
+FIDO protocols prioritize user privacy, as they are designed to prevent online services from sharing information or tracking users across different services. Additionally, any biometric information used in the authentication process remains on the user's device and is not transmitted to the service.
+
+### Passkeys compared to passwords
+
+Passkeys have several advantages over passwords, including their ease of use and intuitive nature. Unlike passwords, passkeys do not require a creation process, do not need to be remembered, and do not need to be safeguarded. Additionally, passkeys are unique to each website or application, preventing their reuse. They are also highly secure because they are only stored on the user's devices, with the service only storing public keys. Passkeys are also resistant to phishing attempts, as they are enforced by the browsers or operating systems to only be used for the appropriate service, rather than relying on human verification. Finally, passkeys provide cross-device and cross-platform authentication, meaning that a passkey from one device can be used to sign in on another device.
 
 ## System requirements
 
@@ -55,7 +69,7 @@ Follow these steps to create a passkey from a Windows device:
 - **This Windows device**: the passkey is saved locally on your Windows device, and protected by Windows Hello (biometrics and PIN)
 - **iPhone, iPad or Android device**: the passkey is stored on a phone or tablet, protected by the device's biometrics, if offered by the device. This option requires you to scan a QR code with your phone or tablet
 - **Linked device**: the key is stored on a *linked* device, typically a phone or tablet, protected by the device's biometrics or a PIN. This option is only supported for Android devices and requires the linked device to be connected via Bluetooth to the Windows device
-- **Security key**: the passkey is saved to a security key (FIDO2), protected by the key's unlock mechanism (for example, biometrics or PIN)
+- **Security key**: the passkey is saved to a FIDO2 security key, protected by the key's unlock mechanism (for example, biometrics or PIN)
 
   :::column-end:::
   :::column span="1":::
@@ -193,7 +207,7 @@ Follow these steps to use a passkey:
 - **This Windows device**: use this option to use a passkey that is stored locally on your Windows device, and protected by Windows Hello
 - **iPhone, iPad or Android device**: use this option if you want to sign in with a passkey stored on a phone or tablet. This option requires you to scan a QR code with your phone or tablet
 - **Linked device**: use this option if you want to sign in with a passkey stored on a *linked* device. This option is only supported for Android devices and requires the linked device to be connected via Bluetooth to the Windows device
-- **Security key** - use this option if you want to sign in with a passkey stored on a security key (FIDO2)
+- **Security key** - use this option if you want to sign in with a passkey stored on a FIDO2 security key
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/use-passkey.png" alt-text="Screenshot of the passkey dialog prompting the user to pick where the passkey is stored." lightbox="images/use-passkey.png" border="false":::
