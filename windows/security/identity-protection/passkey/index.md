@@ -14,23 +14,23 @@ appliesto:
 
 ## Overview
 
-Passkeys provide a more secure and convenient method of logging into websites and applications that support them, compared to passwords. Unlike passwords, which users must remember and type, passkeys are stored as secrets on a device and can be unlocked using the device's unlock mechanism (such as biometrics or a PIN). Passkeys are designed to be used without the need for additional login challenges, making the authentication process faster and more convenient.
+Passkeys provide a more secure and convenient method of logging into websites and applications that support them, compared to passwords. Unlike passwords, which users must remember and type, passkeys are stored as secrets on a device and can be unlocked using the device's unlock mechanism (such as biometrics or a PIN). Passkeys can be used without the need for other sign in challenges, making the authentication process faster and more convenient.
 
-Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can use any apps or websites that supports passkeys to create and sign in using passkeys with the Windows Hello native experience. Once a passkey is created, you can use Windows Hello (biometrics and PIN) or a companion device (phone or tablet) to sign in.
+Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can use any apps or websites that support passkeys to create and sign in using passkeys with the Windows Hello native experience. Once a passkey is created, you can use Windows Hello (biometrics and PIN) or a companion device (phone or tablet) to sign in.
 
 This article describes how to create and use passkeys on Windows devices.
 
 ## How passkeys work
 
-Passkeys utilize the FIDO industry security standard, which has been adopted by multiple platforms. Leading technology companies like Microsoft are backing passkeys as part of the FIDO Alliance, and numerous websites and apps are integrating support for passkeys.
+Passkeys utilize the FIDO industry security standard, which is adopted by multiple platforms. Leading technology companies like Microsoft are backing passkeys as part of the FIDO Alliance, and numerous websites and apps are integrating support for passkeys.
 
-The FIDO protocols rely on standard public key cryptography techniques to offer more secure authentication. When a user registers with an online service, their client device generates a new key pair. The private key is stored securely on the device, while the public key is registered with the service. To authenticate, the client device must prove that it possesses the private key by signing a challenge. The private keys can only be used after being unlocked by the user using the Windows Hello unlock factor (biometrics or PIN).
+The FIDO protocols rely on standard public key cryptography techniques to offer more secure authentication. When a user registers with an online service, their client device generates a new key pair. The private key is stored securely on the device, while the public key is registered with the service. To authenticate, the client device must prove that it possesses the private key by signing a challenge. The private keys can only be used after they're unlocked by the user using the Windows Hello unlock factor (biometrics or PIN).
 
-FIDO protocols prioritize user privacy, as they are designed to prevent online services from sharing information or tracking users across different services. Additionally, any biometric information used in the authentication process remains on the user's device and is not transmitted to the service.
+FIDO protocols prioritize user privacy, as they're designed to prevent online services from sharing information or tracking users across different services. Additionally, any biometric information used in the authentication process remains on the user's device and isn't transmitted to the service.
 
 ### Passkeys compared to passwords
 
-Passkeys have several advantages over passwords, including their ease of use and intuitive nature. Unlike passwords, passkeys do not require a creation process, do not need to be remembered, and do not need to be safeguarded. Additionally, passkeys are unique to each website or application, preventing their reuse. They are also highly secure because they are only stored on the user's devices, with the service only storing public keys. Passkeys are also resistant to phishing attempts, as they are enforced by the browsers or operating systems to only be used for the appropriate service, rather than relying on human verification. Finally, passkeys provide cross-device and cross-platform authentication, meaning that a passkey from one device can be used to sign in on another device.
+Passkeys have several advantages over passwords, including their ease of use and intuitive nature. Unlike passwords, passkeys don't require a creation process, don't need to be remembered, and don't need to be safeguarded. Additionally, passkeys are unique to each website or application, preventing their reuse. They're also highly secure because they're only stored on the user's devices, with the service only storing public keys. Passkeys are resistant to phishing attempts, as they're enforced by the browsers or operating systems to only be used for the appropriate service, rather than relying on human verification. Finally, passkeys provide cross-device and cross-platform authentication, meaning that a passkey from one device can be used to sign in on another device.
 
 ## System requirements
 
@@ -60,7 +60,7 @@ Follow these steps to create a passkey from a Windows device:
 :::row-end:::
 :::row:::
   :::column span="4":::
-  3. Choose where to save the passkey. By default, Windows prompts to save the passkey locally if you're using Windows Hello or Windows Hello for Business. If you select the option **Use another device**, you can choose to save the passkey in one of the following locations:
+  3. Choose where to save the passkey. By default, Windows offers to save the passkey locally if you're using Windows Hello or Windows Hello for Business. If you select the option **Use another device**, you can choose to save the passkey in one of the following locations:
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -116,7 +116,7 @@ Pick one of the following options to learn how to save a passkey, based on where
 
   :::column-end:::
   :::column span="1":::
-    :::image type="content" source="images/device-save-qr.png" alt-text="Screenshot showing the qr code asking the user to scan on the device." lightbox="images/device-save-qr.png" border="false":::
+    :::image type="content" source="images/device-save-qr.png" alt-text="Screenshot showing the QR code asking the user to scan on the device." lightbox="images/device-save-qr.png" border="false":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -158,7 +158,7 @@ Pick one of the following options to learn how to save a passkey, based on where
 :::row:::
   :::column span="3":::
 
-  5. Select **OK** to confirm that you want to setup a security key, and unlock the security key using the key's unlock mechanism
+  5. Select **OK** to confirm that you want to set up a security key, and unlock the security key using the key's unlock mechanism
 
   :::column-end:::
   :::column span="1":::
@@ -199,7 +199,7 @@ Follow these steps to use a passkey:
 :::row-end:::
 :::row:::
   :::column span="3":::
-  3. If a passkey is stored locally and protected by Windows Hello, you'll be prompted to use Windows Hello to sign in. If you select the option **Use another device**, you can choose one of the following options:
+  3. If a passkey is stored locally and protected by Windows Hello, you're prompted to use Windows Hello to sign in. If you select the option **Use another device**, you can choose one of the following options:
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -253,7 +253,7 @@ Pick one of the following options to learn how to use a passkey, based on where 
 :::row:::
   :::column span="4":::
 
-  5. You are signed in to the website or app
+  5. You're signed in to the website or app
 
   :::column-end:::
 :::row-end:::
@@ -273,7 +273,7 @@ Pick one of the following options to learn how to use a passkey, based on where 
 :::row:::
   :::column span="3":::
 
-  5. You are signed in to the website or app
+  5. You're signed in to the website or app
 
   :::column-end:::
   :::column span="1":::
@@ -295,7 +295,7 @@ Pick one of the following options to learn how to use a passkey, based on where 
 :::row:::
   :::column span="3":::
 
-  5. You are signed in to the website or app
+  5. You're signed in to the website or app
 
   :::column-end:::
   :::column span="1":::

@@ -4,7 +4,7 @@ description: Learn how Windows Hello for Business passwordless enables your orga
 ms.collection: 
   - highpri
   - tier1
-ms.date: 09/06/2023
+ms.date: 09/11/2023
 ms.topic: how-to
 ---
 
@@ -17,15 +17,15 @@ When the policy is enabled, certain Windows authentication scenarios don't offer
 
 With Windows Hello for Business passwordless, users who sign in with Windows Hello or a FIDO2 security key:
 
-- Don't have the option to use the password credential provider on the Windows lock screen
+- Can't use the password credential provider on the Windows lock screen
 - Aren't prompted to use a password during in-session authentications (for example, UAC elevation, password manager in the browser, etc.)
-- Don't have the option to use *Accounts > Change password* in the Settings app
+- Don't have the option *Accounts > Change password* in the Settings app
   
   >[!NOTE]
   >Users can reset their password using <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>DEL</kbd> > **Manage your account**
 
 Windows Hello for Business passwordless doesn't affect the initial sign-in experience and local accounts. It only applies to subsequent sign-ins for Microsoft Entra ID accounts. It also doesn't prevent a user from signing in with a password when using the *Other user* option in the lock screen.\
-The password credential provider is hidden only for the last signed in user who signed in Windows Hello or a FIDO2 security key. Windows Hello for Business passwordless is not about preventing users from using passwords, rather to guide and educate them to not use passwords.
+The password credential provider is hidden only for the last signed in user who signed in Windows Hello or a FIDO2 security key. Windows Hello for Business passwordless isn't about preventing users from using passwords, rather to guide and educate them to not use passwords.
 
 This article explains how to enable Windows Hello for Business passwordless and describes the user experiences.
 
@@ -37,7 +37,7 @@ This article explains how to enable Windows Hello for Business passwordless and 
 Windows Hello for Business passwordless has the following requirements:
 
 - Windows 11, version 22H2 with [KB5030310][KB-1] or later
-- Microsoft Entra ID joined
+- Microsoft Entra joined
 - Windows Hello for Busines credentials enrolled for the user, or a FIDO2 security key
 - MDM-managed: Microsoft Intune or other MDM solution
 

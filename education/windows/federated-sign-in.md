@@ -1,6 +1,6 @@
 ---
 title: Configure federated sign-in for Windows devices
-description: Learn about federated sign-in in Windows how to configure it.
+description: Learn how federated sign-in in Windows works and how to configure it.
 ms.date: 09/11/2023
 ms.topic: how-to
 appliesto:

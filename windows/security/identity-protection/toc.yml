@@ -15,8 +15,6 @@ items:
       href: passkey/index.md
     - name: FIDO2 security key 🔗
       href: /azure/active-directory/authentication/howto-authentication-passwordless-security-key
-    - name: Federated sign-in 🔗
-      href: /education/windows/federated-sign-in
     - name: Smart Cards
       href: smart-cards/toc.yml
     - name: Virtual smart cards
@@ -24,6 +22,10 @@ items:
       displayName: VSC
     - name: Enterprise Certificate Pinning
       href: enterprise-certificate-pinning.md
+  - name: Web sign-in
+    href: web-sign-in/index.md
+  - name: Federated sign-in 🔗
+    href: /education/windows/federated-sign-in
   - name: Advanced credential protection
     items:
     - name: Windows LAPS (Local Administrator Password Solution) 🔗
