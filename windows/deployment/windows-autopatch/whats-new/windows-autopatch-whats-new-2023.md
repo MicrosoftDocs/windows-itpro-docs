@@ -33,6 +33,7 @@ Minor corrections such as typos, style, or formatting issues aren't listed.
 
 | Message center post number | Description |
 | ----- | ----- |
+| [MC674422](https://admin.microsoft.com/adminportal/home#/MessageCenter) | Public Preview: Windows Autopatch Reliability Report |
 | [MC672750](https://admin.microsoft.com/adminportal/home#/MessageCenter) | August 2023 Windows Autopatch baseline configuration update |
 
 ## August 2023
