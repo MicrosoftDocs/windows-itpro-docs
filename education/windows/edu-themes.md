@@ -12,7 +12,7 @@ appliesto:
 
 Starting in **Windows 11, version 22H2**, you can deploy education themes to your devices. The education themes are designed for students using devices in a school.
 
-:::image type="content" source="./images/win-11-se-themes-1.png" alt-text="Windows 11 desktop with 3 stickers" border="true":::
+:::image type="content" source="./images/win-11-se-themes-1.png" alt-text="Screenshot of Windows 11 desktop with 3 stickers" border="true":::
 
 Themes allow the end user to quickly configure the look and feel of the device, with preset wallpaper, accent color, and other settings.
 Students can choose their own themes, making it feel the device is their own. When students feel more ownership over their device, they tend to take better care of it.
@@ -55,7 +55,7 @@ Once the education themes are enabled, the device downloads them as soon as a us
 
 To change the theme, select **Settings** > **Personalization** > **Themes** > **Select a theme**
 
-:::image type="content" source="./images/win-11-se-themes.png" alt-text="Windows 11 education themes selection" border="true":::
+:::image type="content" source="./images/win-11-se-themes.png" alt-text="Screenshot of Windows 11 education themes selection" border="true":::
 
 -----------
 
