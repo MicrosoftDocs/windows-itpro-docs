@@ -13,7 +13,7 @@ ms.topic: how-to
 ## Overview
 
 Starting in Windows 11, version 22H2 with [KB5030310][KB-1], *Windows Hello for Business passwordless* is a security policy that promotes a user experience without passwords on Microsoft Entra joined devices.\
-When the policy is enabled, certain Windows authentication scenarios don't offer the users the option to use a password, helping organizations and preparing users to gradually move away from passwords.
+When the policy is enabled, certain Windows authentication scenarios don't offer users the option to use a password, helping organizations and preparing users to gradually move away from passwords.
 
 With Windows Hello for Business passwordless, users who sign in with Windows Hello or a FIDO2 security key:
 
@@ -30,7 +30,7 @@ The password credential provider is hidden only for the last signed in user who 
 This article explains how to enable Windows Hello for Business passwordless and describes the user experiences.
 
 >[!TIP]
-> Windows Hello for Business users can achieve passwordless sign-in from the first sign-in using the Web sign-in feature. For more information about Web sign-in, see [Article to complete](https://learn.microsoft.com).
+> Windows Hello for Business users can achieve passwordless sign-in from the first sign-in using the Web sign-in feature. For more information about Web sign-in, see [Web sign-in for Windows devices](../web-sign-in/index.md).
 
 ## System requirements
 
@@ -92,7 +92,7 @@ When Windows Hello for Business passwordless is enabled, users can't use the pas
 - User Account Control (UAC) elevation, except if a local user account is used for elevation
 
 >[!NOTE]
-> RDP sign in defaults to the credential provider used during sign-in. However, a suers can select the option *Use a different account* to sign in with a password.
+> RDP sign in defaults to the credential provider used during sign-in. However, a user can select the option *Use a different account* to sign in with a password.
 >
 > *Run as different user* is not impacted by Windows Hello for Business passwordless.
 
