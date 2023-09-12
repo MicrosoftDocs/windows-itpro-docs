@@ -11,22 +11,21 @@ ms.collection:
 
 # Web sign-in for Windows devices
 
-Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can enable your users to sign-in using a web experience on Microsoft Entra joined devices.
-This feature is called *Web sign-in*.\
+Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can enable your users to sign-in using a web experience on Microsoft Entra joined devices, unlocking new sign-in options and capabilities.
+This feature is called *Web sign-in*.
 
-Web sign-in is a *credential provider* on the Windows lock screen that enables users to sign in using a web interface, unlocking new sign-in options and capabilities. Initially introduced in Windows 10, it supported only Temporary Access Pass (TAP). With the release of Windows 11, the supported scenarios and capabilities of Web sign-in have been expanded.
-
-## Benefits of web sign-in
+Web sign-in is a *credential provider*, and it was initially introduced in Windows 10 with support for Temporary Access Pass (TAP) only. With the release of Windows 11, the supported scenarios and capabilities of Web sign-in have been expanded.\
+For example, with Web sign-in organizations can move to passwordless sign-in experiences, or enable users to sign-in with a federated identity.
 
 ## Prerequisites
 
-To use web sign-in, the following prerequisites must be met:
+To use web sign-in, the clients must meet the following prerequisites:
 
-- The devices must have Internet access. This feature doesn't work without it, as the authentication is done over the Internet.
-- The device must be Microsoft Entra joined
-- Windows 11, version 22H2 with [5030310][KB-1]
+- Windows 11, version 22H2 with [5030310][KB-1], or later
+- Must be Microsoft Entra joined
+- Must have Internet connectivity, as the authentication is done over the Internet
 
-<!-- [!INCLUDE [federated-sign-in](../../includes/licensing/federated-sign-in.md)] -->
+[!INCLUDE [federated-sign-in](../../../../includes/licensing/web-sign-in.md)]
 
 ## Configure web sign-in
 
@@ -72,7 +71,7 @@ Once the devices are configured, a new sign-in experience becomes available, as 
 
 :::image type="content" source="images/lock-screen.png" lightbox="images/lock-screen.png" alt-text="Screenshot of the Windows lock screen showing the Web sign-in credential provider.":::
 
-Here's a list of key scenarios that are supported by Web sign-in:
+Here's a list of key scenarios that are supported by Web sign-in, and a brief animation showing the user experience. Select the thumbnail to expand the animation.
 
 :::row:::
   :::column span="3":::
