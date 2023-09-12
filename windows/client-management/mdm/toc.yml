@@ -661,6 +661,11 @@ items:
       items:
       - name: CustomDeviceUI DDF file
         href: customdeviceui-ddf.md
+    - name: DeclaredConfiguration
+      href: declaredconfiguration-csp.md
+      items:
+      - name: DeclaredConfiguration DDF file
+        href: declaredconfiguration-ddf-file.md
     - name: Defender
       href: defender-csp.md
       items:
