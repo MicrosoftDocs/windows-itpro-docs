@@ -14,10 +14,7 @@ ms.collection:
 Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can enable your users to sign-in using a web experience on Microsoft Entra joined devices.
 This feature is called *Web sign-in*.\
 
-Web sign-in is a Windows credential provider that allows users to sign in to their Windows devices using a web interface, opening new sign in scenarios.
-
->[!Note:]
->Web sign-in was initially realeased in Windows 10, supporting Temporary Access Pass only. Windows 11 is the first version where Web sign-in capabilities are expanded.
+Web sign-in is a *credential provider* on the Windows lock screen that enables users to sign in using a web interface, unlocking new sign-in options and capabilities. Initially introduced in Windows 10, it supported only Temporary Access Pass (TAP). With the release of Windows 11, the supported scenarios and capabilities of Web sign-in have been expanded.
 
 ## Benefits of web sign-in
 
@@ -69,9 +66,47 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 ---
 
-## How to use Web sign-in
+## User experiences
 
-Once the devices are configured, a new sign-in experience becomes available.
+Once the devices are configured, a new sign-in experience becomes available, as indicated by the presence of the Web sign-in credential provider  :::image type="icon" source="images/passwordless/key-credential-provider.svg" border="false"::: in the Windows lock screen.
+
+:::image type="content" source="images/passwordless/lock-screen-off.png" lightbox="images/passwordless/lock-screen-off.png" alt-text="Screenshot of the Windows lock screen showing the fingerprint, PIN and password credential providers.":::
+
+Here's a list of key scenarios that are supported by Web sign-in:
+
+:::row:::
+  :::column span="3":::
+  **Passwordless first sign-in experience**: users can perform the first sign in to Windows passwordless, before enabli Windows Hello for Business. For example, using Microsoft Authenticator in the Web sign-in flow. When used in conjuction with passworless, the organization can hide the password credential provider from the lock screen as well as in-session authentication scenarios. For more information, see [Windows Hello for Business passwordless](../hello-for-business/passwordless.md).
+  :::column-end:::
+  :::column span="1":::
+  :::image type="content" source="images/tap.png" lightbox="images/passwordless/tap.gif" alt-text="Animation of the TAP sign in experience.":::
+  :::column-end:::
+:::row-end:::
+
+  :::column span="3":::
+  **Windows Hello for Business PIN reset**: the PIN reset flow is seamless and more robust than in previous versions. For more information, see [PIN reset](../hello-for-business/hello-feature-pin-reset.md).
+  :::column-end:::
+  :::column span="1":::
+  :::image type="content" source="images/tap.png" lightbox="../hello-for-business/images/pinreset/pin-reset.gif" alt-text="Animation of the PIN reset in experience.":::
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="3":::
+  **Temporary Access Pass (TAP)**: users can sign in using a Temporary Access Pass, which is a ...
+  :::column-end:::
+  :::column span="1":::
+  :::image type="content" source="images/tap.png" lightbox="images/passwordless/tap.gif" alt-text="Animation of the TAP sign in experience.":::
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column span="3":::
+  **Sign in with a federated identity**: if the Microsoft Entra ID tenant is federated with a third-party SAML-P identity provider (IdP), federated users can sign to the Windows devices.
+  :::column-end:::
+  :::column span="1":::
+  :::image type="content" source="images/tap.png" lightbox="images/passwordless/tap.gif" alt-text="Animation of the TAP sign in experience.":::
+  :::column-end:::
+:::row-end:::
+
 
 ## Important considerations
 
