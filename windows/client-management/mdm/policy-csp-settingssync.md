@@ -4,7 +4,7 @@ description: Learn more about the SettingsSync Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 08/10/2023
+ms.date: 08/30/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -101,7 +101,14 @@ If you don't set or disable this setting, syncing of the "accessibility" group i
 <!-- DisableLanguageSettingSync-OmaUri-End -->
 
 <!-- DisableLanguageSettingSync-Description-Begin -->
-<!-- Description-Source-Not-Found -->
+<!-- Description-Source-ADMX -->
+Prevent the "language preferences" group from syncing to and from this PC. This turns off and disables the "languages preferences" group on the "Windows backup" settings page in PC settings.
+
+If you enable this policy setting, the "language preferences", group won't be synced.
+
+Use the option "Allow users to turn language preferences syncing on" so that syncing is turned off by default but not disabled.
+
+If you don't set or disable this setting, syncing of the "language preferences" group is on by default and configurable by the user.
 <!-- DisableLanguageSettingSync-Description-End -->
 
 <!-- DisableLanguageSettingSync-Editable-Begin -->
@@ -118,7 +125,6 @@ If you don't set or disable this setting, syncing of the "accessibility" group i
 <!-- DisableLanguageSettingSync-DFProperties-End -->
 
 <!-- DisableLanguageSettingSync-AdmxBacked-Begin -->
-<!-- ADMX-Not-Found -->
 [!INCLUDE [ADMX-backed policy note](includes/mdm-admx-policy-note.md)]
 
 **ADMX mapping**:
@@ -126,6 +132,11 @@ If you don't set or disable this setting, syncing of the "accessibility" group i
 | Name | Value |
 |:--|:--|
 | Name | DisableLanguageSettingSync |
+| Friendly Name | Do not sync language preferences settings |
+| Location | Computer Configuration |
+| Path | Windows Components > Sync your settings |
+| Registry Key Name | Software\Policies\Microsoft\Windows\SettingSync |
+| Registry Value Name | DisableLanguageSettingSync |
 | ADMX File Name | SettingSync.admx |
 <!-- DisableLanguageSettingSync-AdmxBacked-End -->
 

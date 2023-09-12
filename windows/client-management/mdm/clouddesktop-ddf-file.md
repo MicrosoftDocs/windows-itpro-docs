@@ -4,7 +4,7 @@ description: View the XML file containing the device description framework (DDF)
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 07/25/2023
+ms.date: 08/29/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -47,7 +47,7 @@ The following XML file contains the device description framework (DDF) for the C
       <MSFT:Applicability>
         <MSFT:OsBuildVersion>22631.2050</MSFT:OsBuildVersion>
         <MSFT:CspVersion>1.0</MSFT:CspVersion>
-        <MSFT:EditionAllowList>0x4;0x30;0x31;0x7E;0x87;0x88;0x88*;0xA1;0xA2;0xA4;0xA5;0xB4;0xBC;0xBD;0xBF;</MSFT:EditionAllowList>
+        <MSFT:EditionAllowList>0x4;0x30;0x31;0x7E;0x88;0xA1;0xA2;0xA4;0xA5;0xBC;0xBF;0xCD;</MSFT:EditionAllowList>
       </MSFT:Applicability>
     </DFProperties>
     <Node>
@@ -60,7 +60,7 @@ The following XML file contains the device description framework (DDF) for the C
           <Replace />
         </AccessType>
         <DefaultValue>false</DefaultValue>
-        <Description>Setting this node to "true" configures boot to cloud for Shared PC mode. Boot to cloud mode enables users to seamlessly sign-in to a Cloud PC. Shared PC mode allows multiple users to sign-in on the device and use for shared purpose. For enabling boot to cloud shared pc feature, Cloud Provider application must be installed on the PC and the user must have a Cloud PC provisioned.</Description>
+        <Description>Setting this node to "true" configures boot to cloud for Shared PC mode. Boot to cloud mode enables users to seamlessly sign-in to a Cloud PC. Shared PC mode allows multiple users to sign-in on the device and use for shared purpose. For enabling Boot to Cloud Shared PC feature, Cloud Provider application must be installed on the PC and the user must have a Cloud PC provisioned.</Description>
         <DFFormat>
           <bool />
         </DFFormat>
