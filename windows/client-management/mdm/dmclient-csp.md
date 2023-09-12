@@ -2433,7 +2433,7 @@ Trigger to enroll for the Linked Enrollment.
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-This is an execution node and will trigger a silent MMP-C enrollment, using the Azure Active Directory device token pulled from the Azure AD-joined device. There is no user interaction needed.
+This is an execution node and will trigger a silent Declared Configuration enrollment, using the AAD device token pulled from the Azure AD-joined device. There is no user interaction needed. When the **DiscoveryEndpoint** is not set, the Enroll node will fail with `ERROR_FILE_NOT_FOUND (0x80070002)` and there is no scheduled task created for dual enrollment.
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-Editable-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Enroll-DFProperties-Begin -->
@@ -2615,7 +2615,7 @@ Trigger Unenroll for the Linked Enrollment.
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-This is an execution node and will trigger a silent MMP-C unenroll, there is no user interaction needed. On un-enrollment, all the settings/resources set by MMPC will be rolled back.
+This is an execution node and will trigger a silent Declared Configuration unenroll, without any user interaction. On un-enrollment, all the settings/resources set by Declared Configuration will be rolled back.
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-Editable-End -->
 
 <!-- Device-Provider-{ProviderID}-LinkedEnrollment-Unenroll-DFProperties-Begin -->
@@ -3973,7 +3973,7 @@ The following SyncML shows how to remotely unenroll the device. This command sho
              <LocURI>./Vendor/MSFT/DMClient/Provider/<ProviderID>/Unenroll</LocURI>
           </Target>
           <Meta>
-             <Format xmlns=”syncml:metinf”>chr</Format>
+             <Format xmlns="syncml:metinf">chr</Format>
           </Meta>
           <Data>TestMDMServer</Data>
           <!-- Data Field in Threshold is now IGNORED -->
