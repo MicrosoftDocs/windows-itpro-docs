@@ -100,9 +100,12 @@ Here's a list of key scenarios that are supported by Web sign-in, and a brief an
 :::row:::
   :::column span="3":::
   **Sign in with a federated identity**: if the Microsoft Entra ID tenant is federated with a third-party SAML-P identity provider (IdP), federated users can sign to the Windows devices.
+
+  > [!TIP]
+  > To simplify the sign in experience, configure the preferred tenant policy, as it automatically redirect the sign in prompt to the IdP. For more information, see
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/lock-screen.png" lightbox="../hello-for-business/images/pinreset/pin-reset.gif" alt-text="Animation of the sign in experience with a federated user.":::
+  :::image type="content" source="images/web-sign-in-federated-auth.png" lightbox="../hello-for-business/images/pinreset/web-sign-in-federated-auth.gif" alt-text="Animation of the sign in experience with a federated user.":::
   :::column-end:::
 :::row-end:::
 
