@@ -38,8 +38,8 @@ To use web sign-in, your devices must be configured with different policies. Rev
 | Category | Setting name | Value |
 |--|--|--|
 | Authentication | Enable Web Sign In | Enabled |
-| Authentication | Configure Web Sign In Allowed Urls | This setting is optional, and it contains a semicolon-separated list of domains, for example: `idp.example.com;example.com` |
-| Authentication | Configure Webcam Access Domain Names | This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, separated by a semicolon. For example: `example.com` |
+| Authentication | Configure Web Sign In Allowed Urls | This setting is optional, and it contains a list of domains, for example:<br>- `idp.example.com`<br>- `example.com` |
+| Authentication | Configure Webcam Access Domain Names | This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, for example: `example.com` |
 
 [!INCLUDE [intune-settings-catalog-2](../../../../includes/configure/intune-settings-catalog-2.md)]
 
@@ -47,9 +47,9 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 | OMA-URI | More information |
 |-|-|
-| `./Vendor/MSFT/Policy/Config/Authentication/EnableWebSignIn`| [EnableWebSignIn](../../../client-management/mdm/policy-csp-authentication.md#enablewebsignin) |
-| `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls`|[ConfigureWebSignInAllowedUrls](../../../client-management/mdm/policy-csp-authentication.md#configurewebsigninallowedurls)|
-| `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebCamAccessDomainNames`|[ConfigureWebcamAccessDomainNames](../../../client-management/mdm/policy-csp-authentication.md#configurewebcamaccessdomainnames)|
+| `./Vendor/MSFT/Policy/Config/Authentication/EnableWebSignIn`| [EnableWebSignIn](/windows/client-management/mdm/policy-csp-authentication#enablewebsignin) |
+| `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls`|[ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-authentication#configurewebsigninallowedurls)|
+| `./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebCamAccessDomainNames`|[ConfigureWebcamAccessDomainNames](/windows/client-management/mdm/policy-csp-authentication#configurewebcamaccessdomainnames)|
 
 #### [:::image type="icon" source="../../images/icons/provisioning-package.svg"::: **PPKG**](#tab/ppkg)
 
@@ -69,7 +69,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 Once the devices are configured, a new sign-in experience becomes available, as indicated by the presence of the Web sign-in credential provider :::image type="icon" source="images/web-sign-in-credential-provider.svg" border="false"::: in the Windows lock screen.
 
-:::image type="content" source="images/lock-screen.png" lightbox="images/lock-screen.png" alt-text="Screenshot of the Windows lock screen showing the Web sign-in credential provider.":::
+:::image type="content" source="images/lock-screen.png" border="false" lightbox="images/lock-screen.png" alt-text="Screenshot of the Windows lock screen showing the Web sign-in credential provider.":::
 
 Here's a list of key scenarios that are supported by Web sign-in, and a brief animation showing the user experience. Select the thumbnail to start the animation.
 
@@ -78,10 +78,12 @@ Here's a list of key scenarios that are supported by Web sign-in, and a brief an
   **Passwordless first sign-in experience**\
   Users can perform the first sign in to Windows passwordless, before enablig Windows Hello for Business. For example, using Microsoft Authenticator in the Web sign-in flow. When used in conjuction with Windows Hello for Business passworless, the organization can hide the password credential provider from the lock screen as well as in-session authentication scenarios.
 
-  For more information, see [Windows Hello for Business passwordless](../hello-for-business/passwordless.md).
+  To learn more:
+  - [Enable passwordless sign-in with Microsoft Authenticator][AAD-1]
+  - [Windows Hello for Business passwordless](../hello-for-business/passwordless.md)
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/lock-screen.png" lightbox="../hello-for-business/images/pinreset/pin-reset.gif" alt-text="Animation of the Web sign-in experience with Microsoft Authenticator.":::
+  :::image type="content" source="images/web-sign-in-authenticator.png border="false" lightbox="../hello-for-business/images/pinreset/web-sign-in-authenticator.gif" alt-text="Animation of the Web sign-in experience with Microsoft Authenticator.":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -90,7 +92,7 @@ Here's a list of key scenarios that are supported by Web sign-in, and a brief an
   The PIN reset flow is seamless and more robust than in previous versions. For more information, see [PIN reset](../hello-for-business/hello-feature-pin-reset.md).
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/lock-screen.png" lightbox="../hello-for-business/images/pinreset/pin-reset.gif" alt-text="Animation of the PIN reset in experience.":::
+  :::image type="content" source="images/lock-screen.png" border="false" lightbox="../hello-for-business/images/pinreset/pin-reset.gif" alt-text="Animation of the PIN reset in experience.":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -99,7 +101,7 @@ Here's a list of key scenarios that are supported by Web sign-in, and a brief an
   Users can sign in using a Temporary Access Pass, which is a ...
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/lock-screen.png" lightbox="../hello-for-business/images/pinreset/pin-reset.gif" alt-text="Animation of the TAP sign in experience.":::
+  :::image type="content" source="images/lock-screen.png" border="false" lightbox="../hello-for-business/images/pinreset/pin-reset.gif" alt-text="Animation of the TAP sign in experience.":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -111,7 +113,7 @@ Here's a list of key scenarios that are supported by Web sign-in, and a brief an
   > To simplify the sign in experience, configure the preferred tenant policy, as it automatically redirect the sign in prompt to the IdP. For more information, see
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/web-sign-in-federated-auth.png" lightbox="images/web-sign-in-federated-auth.gif" alt-text="Animation of the sign in experience with a federated user.":::
+  :::image type="content" source="images/web-sign-in-federated-auth.png" border="false" lightbox="images/web-sign-in-federated-auth.gif" alt-text="Animation of the sign in experience with a federated user.":::
   :::column-end:::
 :::row-end:::
 
@@ -145,3 +147,4 @@ To verify:
 [INT-1]: /mem/intune/configuration/custom-settings-windows-10
 [KB-1]: https://support.microsoft.com/kb/5030310
 [WIN-4]: /windows/client-management/mdm/policy-csp-authentication#preferredaadtenantdomainname
+[AAD-1]: /azure/active-directory/authentication/howto-authentication-passwordless-phone

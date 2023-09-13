@@ -6,4 +6,4 @@ ms.topic: include
 ms.prod: windows-client
 ---
 
-Use the following settings to [create a provisioning package](../../windows/configuration/provisioning-packages/provisioning-create-package.md):
+Use the following settings to [create a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package):

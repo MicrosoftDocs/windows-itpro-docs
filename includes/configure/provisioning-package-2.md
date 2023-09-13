@@ -6,4 +6,4 @@ ms.topic: include
 ms.prod: windows-client
 ---
 
-[Apply the provisioning package](../../windows/configuration/provisioning-packages/provisioning-apply-package.md) to the devices that you want to configure.
+[Apply the provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package) to the devices that you want to configure.
