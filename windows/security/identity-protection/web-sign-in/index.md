@@ -75,7 +75,8 @@ Here's a list of key scenarios that are supported by Web sign-in, and a brief an
 
 :::row:::
   :::column span="3":::
-  **Passwordless first sign-in experience**: users can perform the first sign in to Windows passwordless, before enablig Windows Hello for Business. For example, using Microsoft Authenticator in the Web sign-in flow. When used in conjuction with passworless, the organization can hide the password credential provider from the lock screen as well as in-session authentication scenarios. For more information, see [Windows Hello for Business passwordless](../hello-for-business/passwordless.md).
+  **Passwordless first sign-in experience**\
+  Uusers can perform the first sign in to Windows passwordless, before enablig Windows Hello for Business. For example, using Microsoft Authenticator in the Web sign-in flow. When used in conjuction with passworless, the organization can hide the password credential provider from the lock screen as well as in-session authentication scenarios. For more information, see [Windows Hello for Business passwordless](../hello-for-business/passwordless.md).
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/lock-screen.png" lightbox="../hello-for-business/images/pinreset/pin-reset.gif" alt-text="Animation of the Web sign-in experience with Microsoft Authenticator.":::
@@ -83,7 +84,8 @@ Here's a list of key scenarios that are supported by Web sign-in, and a brief an
 :::row-end:::
 :::row:::
   :::column span="3":::
-  **Windows Hello for Business PIN reset**: the PIN reset flow is seamless and more robust than in previous versions. For more information, see [PIN reset](../hello-for-business/hello-feature-pin-reset.md).
+  **Windows Hello for Business PIN reset**\
+  The PIN reset flow is seamless and more robust than in previous versions. For more information, see [PIN reset](../hello-for-business/hello-feature-pin-reset.md).
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/lock-screen.png" lightbox="../hello-for-business/images/pinreset/pin-reset.gif" alt-text="Animation of the PIN reset in experience.":::
@@ -91,7 +93,8 @@ Here's a list of key scenarios that are supported by Web sign-in, and a brief an
 :::row-end:::
 :::row:::
   :::column span="3":::
-  **Temporary Access Pass (TAP)**: users can sign in using a Temporary Access Pass, which is a ...
+  **Temporary Access Pass (TAP)**\
+  Users can sign in using a Temporary Access Pass, which is a ...
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/lock-screen.png" lightbox="../hello-for-business/images/pinreset/pin-reset.gif" alt-text="Animation of the TAP sign in experience.":::
@@ -99,7 +102,8 @@ Here's a list of key scenarios that are supported by Web sign-in, and a brief an
 :::row-end:::
 :::row:::
   :::column span="3":::
-  **Sign in with a federated identity**: if the Microsoft Entra ID tenant is federated with a third-party SAML-P identity provider (IdP), federated users can sign to the Windows devices.
+  **Sign in with a federated identity**\
+  If the Microsoft Entra ID tenant is federated with a third-party SAML-P identity provider (IdP), federated users can sign to the Windows devices.
 
   > [!TIP]
   > To simplify the sign in experience, configure the preferred tenant policy, as it automatically redirect the sign in prompt to the IdP. For more information, see
@@ -115,20 +119,24 @@ Here's a list of key scenarios that are supported by Web sign-in, and a brief an
 
 The following issues are known to affect Web sign-in:
 
+- Once enabled, the Web sign-in credential provider is the default credential provider for the device. To change the default credential provider, you must use the [Authentication CSP][WIN-4].
+
+You can use Group Policy to deploy an administrative template policy setting to the computer. This policy setting is found under **Computer Configuration > Policies > Administrative Templates > System > Logon**:
+
+To verify:
 - Non-federated users can't sign-in to the devices, including local accounts
 - The *Other user* button is missing from the sign-in screen
 
-### Preferred Azure AD tenant name
+### Sign in with federated identities
 
-To improve the user experience, you can configure the *preferred Azure AD tenant name* feature.\
-When using preferred AAD tenant name, the users bypass the disambiguation page and are redirected to the identity provider sign-in page. This configuration can be especially useful for student shared devices, where the disambiguation page is always shown.
-
-For more information about preferred tenant name, see [Authentication CSP - PreferredAadTenantDomainName][WIN-4].
+- To improve the user experience, you can configure the *preferred Azure AD tenant name* feature.
+  When using preferred AAD tenant name, the users can select the domain name during the sign-in process and redirected to the identity provider sign-in page.
+  For more information about preferred tenant name, see [Authentication CSP - PreferredAadTenantDomainName][WIN-4].
+- Disable Windows Hello provisioning
 
 ## Troubleshooting
 
-- The user can exit the federated sign-in flow by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the standard Windows sign-in screen
-- Select the *Other User* button, and the standard username/password credentials are available to log into the device
+- The user can exit the web sign-in flow by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the Windows lock screen
 
 <!--links-->
 
