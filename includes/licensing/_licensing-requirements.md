@@ -73,6 +73,7 @@ ms.topic: include
 |**[User Account Control (UAC)](/windows/security/application-security/application-control/user-account-control/)**|Yes|Yes|Yes|Yes|Yes|
 |**[Virtual private network (VPN)](/windows/security/identity-protection/vpn/vpn-guide)**|Yes|Yes|Yes|Yes|Yes|
 |**[Virtualization-based security (VBS)](/windows-hardware/design/device-experiences/oem-vbs)**|Yes|Yes|Yes|Yes|Yes|
+|**[Web sign-in](/windows/security/identity-protection/web-sign-in)**|Yes|Yes|Yes|Yes|Yes|
 |**[WiFi Security](https://support.microsoft.com/windows/faster-and-more-secure-wi-fi-in-windows-26177a28-38ed-1a8e-7eca-66f24dc63f09)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows application software development kit (SDK)](https://developer.microsoft.com/windows/downloads/windows-sdk/)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Autopatch](/windows/deployment/windows-autopatch/)**|❌|Yes|Yes|❌|❌|
