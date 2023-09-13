@@ -75,8 +75,8 @@ Here's a list of key scenarios that are supported by Web sign-in, and a brief an
 
 :::row:::
   :::column span="3":::
-  **Passwordless first sign-in experience**\
-  Users can perform the first sign in to Windows passwordless, before enablig Windows Hello for Business. For example, using Microsoft Authenticator in the Web sign-in flow. When used in conjuction with Windows Hello for Business passworless, the organization can hide the password credential provider from the lock screen as well as in-session authentication scenarios.
+  **Passwordless sign-in**\
+  Users can sign in to Windows passwordless, even before enrolling in Windows Hello for Business. For example, by using the Microsoft Authenticator. When used in conjuction with *Windows Hello for Business passworless*, the organization can hide the password credential provider from the lock screen as well as in-session authentication scenarios.
 
   To learn more:
   - [Enable passwordless sign-in with Microsoft Authenticator][AAD-1]
@@ -92,7 +92,7 @@ Here's a list of key scenarios that are supported by Web sign-in, and a brief an
   The PIN reset flow is seamless and more robust than in previous versions. For more information, see [PIN reset](../hello-for-business/hello-feature-pin-reset.md).
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/lock-screen.png" border="false" lightbox="../hello-for-business/images/pinreset/pin-reset.gif" alt-text="Animation of the PIN reset in experience.":::
+  :::image type="content" source="images/web-sign-in-pin-reset.png" border="false" lightbox="images/web-sign-in-pin-reset.gif" alt-text="Animation of the PIN reset in experience.":::
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -101,7 +101,7 @@ Here's a list of key scenarios that are supported by Web sign-in, and a brief an
   Users can sign in using a Temporary Access Pass, which is a ...
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/lock-screen.png" border="false" lightbox="../hello-for-business/images/pinreset/pin-reset.gif" alt-text="Animation of the TAP sign in experience.":::
+  :::image type="content" source="images/web-sign-in-pin-reset.png" border="false" lightbox="images/web-sign-in-pin-reset.gif" alt-text="Animation of the TAP sign in experience.":::
   :::column-end:::
 :::row-end:::
 :::row:::
