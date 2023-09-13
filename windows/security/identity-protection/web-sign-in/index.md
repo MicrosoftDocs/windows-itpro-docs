@@ -101,7 +101,7 @@ Here's a list of key scenarios that are supported by Web sign-in, and a brief an
   Users can sign in using a Temporary Access Pass, which is a ...
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/web-sign-in-pin-reset.png" border="false" lightbox="images/web-sign-in-pin-reset.gif" alt-text="Animation of the TAP sign in experience.":::
+  :::image type="content" source="images/web-sign-in-tap.png" border="false" lightbox="images/web-sign-in-tap.gif" alt-text="Animation of the TAP sign in experience.":::
   :::column-end:::
 :::row-end:::
 :::row:::
