@@ -4,7 +4,7 @@ description: Learn more about the DeclaredConfiguration CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 09/12/2023
+ms.date: 09/13/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -33,78 +33,36 @@ The new Declared Configuration device management model requires the server to de
 The following list shows the DeclaredConfiguration configuration service provider nodes:
 
 - ./Device/Vendor/MSFT/DeclaredConfiguration
-  - [Host](#devicehost)
-    - [Complete](#devicehostcomplete)
-      - [Documents](#devicehostcompletedocuments)
-        - [{DocID}](#devicehostcompletedocumentsdocid)
-          - [Document](#devicehostcompletedocumentsdociddocument)
-          - [Properties](#devicehostcompletedocumentsdocidproperties)
-            - [Abandoned](#devicehostcompletedocumentsdocidpropertiesabandoned)
-      - [Results](#devicehostcompleteresults)
-        - [{DocID}](#devicehostcompleteresultsdocid)
-          - [Document](#devicehostcompleteresultsdociddocument)
-    - [Inventory](#devicehostinventory)
-      - [Documents](#devicehostinventorydocuments)
-        - [{DocID}](#devicehostinventorydocumentsdocid)
-          - [Document](#devicehostinventorydocumentsdociddocument)
-      - [Results](#devicehostinventoryresults)
-        - [{DocID}](#devicehostinventoryresultsdocid)
-          - [Document](#devicehostinventoryresultsdociddocument)
-    - [Template](#devicehosttemplate)
-      - [Documents](#devicehosttemplatedocuments)
-        - [{DocID}](#devicehosttemplatedocumentsdocid)
-          - [Document](#devicehosttemplatedocumentsdociddocument)
-          - [Properties](#devicehosttemplatedocumentsdocidproperties)
-            - [Abandoned](#devicehosttemplatedocumentsdocidpropertiesabandoned)
-          - [Variables](#devicehosttemplatedocumentsdocidvariables)
-            - [{VariableName}](#devicehosttemplatedocumentsdocidvariablesvariablename)
-              - [Value](#devicehosttemplatedocumentsdocidvariablesvariablenamevalue)
-      - [Results](#devicehosttemplateresults)
-        - [{DocID}](#devicehosttemplateresultsdocid)
-          - [Document](#devicehosttemplateresultsdociddocument)
-  - [ManagementServiceConfiguration](#devicemanagementserviceconfiguration)
-    - [CertificateExpirationThreshold](#devicemanagementserviceconfigurationcertificateexpirationthreshold)
-    - [RefreshInterval](#devicemanagementserviceconfigurationrefreshinterval)
-    - [StartSyncSessionOnFailure](#devicemanagementserviceconfigurationstartsyncsessiononfailure)
-- ./User/Vendor/MSFT/DeclaredConfiguration
-  - [Host](#userhost)
-    - [Complete](#userhostcomplete)
-      - [Documents](#userhostcompletedocuments)
-        - [{DocID}](#userhostcompletedocumentsdocid)
-          - [Document](#userhostcompletedocumentsdociddocument)
-          - [Properties](#userhostcompletedocumentsdocidproperties)
-            - [Abandoned](#userhostcompletedocumentsdocidpropertiesabandoned)
-      - [Results](#userhostcompleteresults)
-        - [{DocID}](#userhostcompleteresultsdocid)
-          - [Document](#userhostcompleteresultsdociddocument)
-    - [Inventory](#userhostinventory)
-      - [Documents](#userhostinventorydocuments)
-        - [{DocID}](#userhostinventorydocumentsdocid)
-          - [Document](#userhostinventorydocumentsdociddocument)
-      - [Results](#userhostinventoryresults)
-        - [{DocID}](#userhostinventoryresultsdocid)
-          - [Document](#userhostinventoryresultsdociddocument)
-    - [Template](#userhosttemplate)
-      - [Documents](#userhosttemplatedocuments)
-        - [{DocID}](#userhosttemplatedocumentsdocid)
-          - [Document](#userhosttemplatedocumentsdociddocument)
-          - [Properties](#userhosttemplatedocumentsdocidproperties)
-            - [Abandoned](#userhosttemplatedocumentsdocidpropertiesabandoned)
-          - [Variables](#userhosttemplatedocumentsdocidvariables)
-            - [{VariableName}](#userhosttemplatedocumentsdocidvariablesvariablename)
-              - [Value](#userhosttemplatedocumentsdocidvariablesvariablenamevalue)
-      - [Results](#userhosttemplateresults)
-        - [{DocID}](#userhosttemplateresultsdocid)
-          - [Document](#userhosttemplateresultsdociddocument)
+  - [Host](#host)
+    - [Complete](#hostcomplete)
+      - [Documents](#hostcompletedocuments)
+        - [{DocID}](#hostcompletedocumentsdocid)
+          - [Document](#hostcompletedocumentsdociddocument)
+          - [Properties](#hostcompletedocumentsdocidproperties)
+            - [Abandoned](#hostcompletedocumentsdocidpropertiesabandoned)
+      - [Results](#hostcompleteresults)
+        - [{DocID}](#hostcompleteresultsdocid)
+          - [Document](#hostcompleteresultsdociddocument)
+    - [Inventory](#hostinventory)
+      - [Documents](#hostinventorydocuments)
+        - [{DocID}](#hostinventorydocumentsdocid)
+          - [Document](#hostinventorydocumentsdociddocument)
+      - [Results](#hostinventoryresults)
+        - [{DocID}](#hostinventoryresultsdocid)
+          - [Document](#hostinventoryresultsdociddocument)
+  - [ManagementServiceConfiguration](#managementserviceconfiguration)
+    - [CertificateExpirationThreshold](#managementserviceconfigurationcertificateexpirationthreshold)
+    - [RefreshInterval](#managementserviceconfigurationrefreshinterval)
+    - [StartSyncSessionOnFailure](#managementserviceconfigurationstartsyncsessiononfailure)
 <!-- DeclaredConfiguration-Tree-End -->
 
 <!-- Device-Host-Begin -->
-## Device/Host
+## Host
 
 <!-- Device-Host-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Host-Applicability-End -->
 
 <!-- Device-Host-OmaUri-Begin -->
@@ -137,12 +95,12 @@ The following list shows the DeclaredConfiguration configuration service provide
 <!-- Device-Host-End -->
 
 <!-- Device-Host-Complete-Begin -->
-### Device/Host/Complete
+### Host/Complete
 
 <!-- Device-Host-Complete-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Host-Complete-Applicability-End -->
 
 <!-- Device-Host-Complete-OmaUri-Begin -->
@@ -175,12 +133,12 @@ The following list shows the DeclaredConfiguration configuration service provide
 <!-- Device-Host-Complete-End -->
 
 <!-- Device-Host-Complete-Documents-Begin -->
-#### Device/Host/Complete/Documents
+#### Host/Complete/Documents
 
 <!-- Device-Host-Complete-Documents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Host-Complete-Documents-Applicability-End -->
 
 <!-- Device-Host-Complete-Documents-OmaUri-Begin -->
@@ -213,12 +171,12 @@ The following list shows the DeclaredConfiguration configuration service provide
 <!-- Device-Host-Complete-Documents-End -->
 
 <!-- Device-Host-Complete-Documents-{DocID}-Begin -->
-##### Device/Host/Complete/Documents/{DocID}
+##### Host/Complete/Documents/{DocID}
 
 <!-- Device-Host-Complete-Documents-{DocID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Host-Complete-Documents-{DocID}-Applicability-End -->
 
 <!-- Device-Host-Complete-Documents-{DocID}-OmaUri-Begin -->
@@ -253,12 +211,12 @@ The following list shows the DeclaredConfiguration configuration service provide
 <!-- Device-Host-Complete-Documents-{DocID}-End -->
 
 <!-- Device-Host-Complete-Documents-{DocID}-Document-Begin -->
-###### Device/Host/Complete/Documents/{DocID}/Document
+###### Host/Complete/Documents/{DocID}/Document
 
 <!-- Device-Host-Complete-Documents-{DocID}-Document-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Host-Complete-Documents-{DocID}-Document-Applicability-End -->
 
 <!-- Device-Host-Complete-Documents-{DocID}-Document-OmaUri-Begin -->
@@ -291,12 +249,12 @@ The following list shows the DeclaredConfiguration configuration service provide
 <!-- Device-Host-Complete-Documents-{DocID}-Document-End -->
 
 <!-- Device-Host-Complete-Documents-{DocID}-Properties-Begin -->
-###### Device/Host/Complete/Documents/{DocID}/Properties
+###### Host/Complete/Documents/{DocID}/Properties
 
 <!-- Device-Host-Complete-Documents-{DocID}-Properties-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Host-Complete-Documents-{DocID}-Properties-Applicability-End -->
 
 <!-- Device-Host-Complete-Documents-{DocID}-Properties-OmaUri-Begin -->
@@ -329,12 +287,12 @@ The following list shows the DeclaredConfiguration configuration service provide
 <!-- Device-Host-Complete-Documents-{DocID}-Properties-End -->
 
 <!-- Device-Host-Complete-Documents-{DocID}-Properties-Abandoned-Begin -->
-###### Device/Host/Complete/Documents/{DocID}/Properties/Abandoned
+###### Host/Complete/Documents/{DocID}/Properties/Abandoned
 
 <!-- Device-Host-Complete-Documents-{DocID}-Properties-Abandoned-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Host-Complete-Documents-{DocID}-Properties-Abandoned-Applicability-End -->
 
 <!-- Device-Host-Complete-Documents-{DocID}-Properties-Abandoned-OmaUri-Begin -->
@@ -377,12 +335,12 @@ The following list shows the DeclaredConfiguration configuration service provide
 <!-- Device-Host-Complete-Documents-{DocID}-Properties-Abandoned-End -->
 
 <!-- Device-Host-Complete-Results-Begin -->
-#### Device/Host/Complete/Results
+#### Host/Complete/Results
 
 <!-- Device-Host-Complete-Results-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Host-Complete-Results-Applicability-End -->
 
 <!-- Device-Host-Complete-Results-OmaUri-Begin -->
@@ -415,12 +373,12 @@ The following list shows the DeclaredConfiguration configuration service provide
 <!-- Device-Host-Complete-Results-End -->
 
 <!-- Device-Host-Complete-Results-{DocID}-Begin -->
-##### Device/Host/Complete/Results/{DocID}
+##### Host/Complete/Results/{DocID}
 
 <!-- Device-Host-Complete-Results-{DocID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Host-Complete-Results-{DocID}-Applicability-End -->
 
 <!-- Device-Host-Complete-Results-{DocID}-OmaUri-Begin -->
@@ -454,12 +412,12 @@ The following list shows the DeclaredConfiguration configuration service provide
 <!-- Device-Host-Complete-Results-{DocID}-End -->
 
 <!-- Device-Host-Complete-Results-{DocID}-Document-Begin -->
-###### Device/Host/Complete/Results/{DocID}/Document
+###### Host/Complete/Results/{DocID}/Document
 
 <!-- Device-Host-Complete-Results-{DocID}-Document-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Host-Complete-Results-{DocID}-Document-Applicability-End -->
 
 <!-- Device-Host-Complete-Results-{DocID}-Document-OmaUri-Begin -->
@@ -492,12 +450,12 @@ The following list shows the DeclaredConfiguration configuration service provide
 <!-- Device-Host-Complete-Results-{DocID}-Document-End -->
 
 <!-- Device-Host-Inventory-Begin -->
-### Device/Host/Inventory
+### Host/Inventory
 
 <!-- Device-Host-Inventory-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Host-Inventory-Applicability-End -->
 
 <!-- Device-Host-Inventory-OmaUri-Begin -->
@@ -530,12 +488,12 @@ The following list shows the DeclaredConfiguration configuration service provide
 <!-- Device-Host-Inventory-End -->
 
 <!-- Device-Host-Inventory-Documents-Begin -->
-#### Device/Host/Inventory/Documents
+#### Host/Inventory/Documents
 
 <!-- Device-Host-Inventory-Documents-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Host-Inventory-Documents-Applicability-End -->
 
 <!-- Device-Host-Inventory-Documents-OmaUri-Begin -->
@@ -568,12 +526,12 @@ The following list shows the DeclaredConfiguration configuration service provide
 <!-- Device-Host-Inventory-Documents-End -->
 
 <!-- Device-Host-Inventory-Documents-{DocID}-Begin -->
-##### Device/Host/Inventory/Documents/{DocID}
+##### Host/Inventory/Documents/{DocID}
 
 <!-- Device-Host-Inventory-Documents-{DocID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Host-Inventory-Documents-{DocID}-Applicability-End -->
 
 <!-- Device-Host-Inventory-Documents-{DocID}-OmaUri-Begin -->
@@ -608,12 +566,12 @@ The following list shows the DeclaredConfiguration configuration service provide
 <!-- Device-Host-Inventory-Documents-{DocID}-End -->
 
 <!-- Device-Host-Inventory-Documents-{DocID}-Document-Begin -->
-###### Device/Host/Inventory/Documents/{DocID}/Document
+###### Host/Inventory/Documents/{DocID}/Document
 
 <!-- Device-Host-Inventory-Documents-{DocID}-Document-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Host-Inventory-Documents-{DocID}-Document-Applicability-End -->
 
 <!-- Device-Host-Inventory-Documents-{DocID}-Document-OmaUri-Begin -->
@@ -646,12 +604,12 @@ The following list shows the DeclaredConfiguration configuration service provide
 <!-- Device-Host-Inventory-Documents-{DocID}-Document-End -->
 
 <!-- Device-Host-Inventory-Results-Begin -->
-#### Device/Host/Inventory/Results
+#### Host/Inventory/Results
 
 <!-- Device-Host-Inventory-Results-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Host-Inventory-Results-Applicability-End -->
 
 <!-- Device-Host-Inventory-Results-OmaUri-Begin -->
@@ -684,12 +642,12 @@ The following list shows the DeclaredConfiguration configuration service provide
 <!-- Device-Host-Inventory-Results-End -->
 
 <!-- Device-Host-Inventory-Results-{DocID}-Begin -->
-##### Device/Host/Inventory/Results/{DocID}
+##### Host/Inventory/Results/{DocID}
 
 <!-- Device-Host-Inventory-Results-{DocID}-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Host-Inventory-Results-{DocID}-Applicability-End -->
 
 <!-- Device-Host-Inventory-Results-{DocID}-OmaUri-Begin -->
@@ -723,12 +681,12 @@ The following list shows the DeclaredConfiguration configuration service provide
 <!-- Device-Host-Inventory-Results-{DocID}-End -->
 
 <!-- Device-Host-Inventory-Results-{DocID}-Document-Begin -->
-###### Device/Host/Inventory/Results/{DocID}/Document
+###### Host/Inventory/Results/{DocID}/Document
 
 <!-- Device-Host-Inventory-Results-{DocID}-Document-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- Device-Host-Inventory-Results-{DocID}-Document-Applicability-End -->
 
 <!-- Device-Host-Inventory-Results-{DocID}-Document-OmaUri-Begin -->
@@ -760,478 +718,8 @@ The following list shows the DeclaredConfiguration configuration service provide
 
 <!-- Device-Host-Inventory-Results-{DocID}-Document-End -->
 
-<!-- Device-Host-Template-Begin -->
-### Device/Host/Template
-
-<!-- Device-Host-Template-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- Device-Host-Template-Applicability-End -->
-
-<!-- Device-Host-Template-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/DeclaredConfiguration/Host/Template
-```
-<!-- Device-Host-Template-OmaUri-End -->
-
-<!-- Device-Host-Template-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- Device-Host-Template-Description-End -->
-
-<!-- Device-Host-Template-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-Host-Template-Editable-End -->
-
-<!-- Device-Host-Template-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Add, Delete, Get |
-<!-- Device-Host-Template-DFProperties-End -->
-
-<!-- Device-Host-Template-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-Host-Template-Examples-End -->
-
-<!-- Device-Host-Template-End -->
-
-<!-- Device-Host-Template-Documents-Begin -->
-#### Device/Host/Template/Documents
-
-<!-- Device-Host-Template-Documents-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- Device-Host-Template-Documents-Applicability-End -->
-
-<!-- Device-Host-Template-Documents-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/DeclaredConfiguration/Host/Template/Documents
-```
-<!-- Device-Host-Template-Documents-OmaUri-End -->
-
-<!-- Device-Host-Template-Documents-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- Device-Host-Template-Documents-Description-End -->
-
-<!-- Device-Host-Template-Documents-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-Host-Template-Documents-Editable-End -->
-
-<!-- Device-Host-Template-Documents-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Add, Delete, Get |
-<!-- Device-Host-Template-Documents-DFProperties-End -->
-
-<!-- Device-Host-Template-Documents-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-Host-Template-Documents-Examples-End -->
-
-<!-- Device-Host-Template-Documents-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Begin -->
-##### Device/Host/Template/Documents/{DocID}
-
-<!-- Device-Host-Template-Documents-{DocID}-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- Device-Host-Template-Documents-{DocID}-Applicability-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/DeclaredConfiguration/Host/Template/Documents/{DocID}
-```
-<!-- Device-Host-Template-Documents-{DocID}-OmaUri-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- Device-Host-Template-Documents-{DocID}-Description-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-Host-Template-Documents-{DocID}-Editable-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Add, Delete, Get |
-| Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
-| Allowed Values | Regular Expression: `[0-9A-Fa-f]{8}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{12}` |
-<!-- Device-Host-Template-Documents-{DocID}-DFProperties-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-Host-Template-Documents-{DocID}-Examples-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Document-Begin -->
-###### Device/Host/Template/Documents/{DocID}/Document
-
-<!-- Device-Host-Template-Documents-{DocID}-Document-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- Device-Host-Template-Documents-{DocID}-Document-Applicability-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Document-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/DeclaredConfiguration/Host/Template/Documents/{DocID}/Document
-```
-<!-- Device-Host-Template-Documents-{DocID}-Document-OmaUri-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Document-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- Device-Host-Template-Documents-{DocID}-Document-Description-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Document-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-Host-Template-Documents-{DocID}-Document-Editable-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Document-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `chr` (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Device-Host-Template-Documents-{DocID}-Document-DFProperties-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Document-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-Host-Template-Documents-{DocID}-Document-Examples-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Document-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Begin -->
-###### Device/Host/Template/Documents/{DocID}/Properties
-
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Applicability-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Properties-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/DeclaredConfiguration/Host/Template/Documents/{DocID}/Properties
-```
-<!-- Device-Host-Template-Documents-{DocID}-Properties-OmaUri-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Description-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Editable-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Properties-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Add, Delete, Get |
-<!-- Device-Host-Template-Documents-{DocID}-Properties-DFProperties-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Examples-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Properties-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Abandoned-Begin -->
-###### Device/Host/Template/Documents/{DocID}/Properties/Abandoned
-
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Abandoned-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Abandoned-Applicability-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Abandoned-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/DeclaredConfiguration/Host/Template/Documents/{DocID}/Properties/Abandoned
-```
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Abandoned-OmaUri-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Abandoned-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Abandoned-Description-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Abandoned-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Abandoned-Editable-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Abandoned-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `int` |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 0 |
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Abandoned-DFProperties-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Abandoned-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 (Default) | Insert Description Here. |
-| 1 | Insert Description Here. |
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Abandoned-AllowedValues-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Abandoned-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Abandoned-Examples-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Properties-Abandoned-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-Begin -->
-###### Device/Host/Template/Documents/{DocID}/Variables
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- Device-Host-Template-Documents-{DocID}-Variables-Applicability-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/DeclaredConfiguration/Host/Template/Documents/{DocID}/Variables
-```
-<!-- Device-Host-Template-Documents-{DocID}-Variables-OmaUri-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- Device-Host-Template-Documents-{DocID}-Variables-Description-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-Host-Template-Documents-{DocID}-Variables-Editable-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Add, Delete, Get |
-<!-- Device-Host-Template-Documents-{DocID}-Variables-DFProperties-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-Host-Template-Documents-{DocID}-Variables-Examples-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Begin -->
-###### Device/Host/Template/Documents/{DocID}/Variables/{VariableName}
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Applicability-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/DeclaredConfiguration/Host/Template/Documents/{DocID}/Variables/{VariableName}
-```
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-OmaUri-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Description-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Editable-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Add, Delete, Get |
-| Dynamic Node Naming | UniqueName: This node name references a variable in the templated document. |
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-DFProperties-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Examples-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-Begin -->
-###### Device/Host/Template/Documents/{DocID}/Variables/{VariableName}/Value
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-Applicability-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/DeclaredConfiguration/Host/Template/Documents/{DocID}/Variables/{VariableName}/Value
-```
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-OmaUri-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-Description-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-Editable-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `chr` (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-DFProperties-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-Examples-End -->
-
-<!-- Device-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-End -->
-
-<!-- Device-Host-Template-Results-Begin -->
-#### Device/Host/Template/Results
-
-<!-- Device-Host-Template-Results-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- Device-Host-Template-Results-Applicability-End -->
-
-<!-- Device-Host-Template-Results-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/DeclaredConfiguration/Host/Template/Results
-```
-<!-- Device-Host-Template-Results-OmaUri-End -->
-
-<!-- Device-Host-Template-Results-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- Device-Host-Template-Results-Description-End -->
-
-<!-- Device-Host-Template-Results-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-Host-Template-Results-Editable-End -->
-
-<!-- Device-Host-Template-Results-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Get |
-<!-- Device-Host-Template-Results-DFProperties-End -->
-
-<!-- Device-Host-Template-Results-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-Host-Template-Results-Examples-End -->
-
-<!-- Device-Host-Template-Results-End -->
-
-<!-- Device-Host-Template-Results-{DocID}-Begin -->
-##### Device/Host/Template/Results/{DocID}
-
-<!-- Device-Host-Template-Results-{DocID}-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- Device-Host-Template-Results-{DocID}-Applicability-End -->
-
-<!-- Device-Host-Template-Results-{DocID}-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/DeclaredConfiguration/Host/Template/Results/{DocID}
-```
-<!-- Device-Host-Template-Results-{DocID}-OmaUri-End -->
-
-<!-- Device-Host-Template-Results-{DocID}-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- Device-Host-Template-Results-{DocID}-Description-End -->
-
-<!-- Device-Host-Template-Results-{DocID}-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-Host-Template-Results-{DocID}-Editable-End -->
-
-<!-- Device-Host-Template-Results-{DocID}-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Get |
-| Dynamic Node Naming | ClientInventory |
-<!-- Device-Host-Template-Results-{DocID}-DFProperties-End -->
-
-<!-- Device-Host-Template-Results-{DocID}-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-Host-Template-Results-{DocID}-Examples-End -->
-
-<!-- Device-Host-Template-Results-{DocID}-End -->
-
-<!-- Device-Host-Template-Results-{DocID}-Document-Begin -->
-###### Device/Host/Template/Results/{DocID}/Document
-
-<!-- Device-Host-Template-Results-{DocID}-Document-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- Device-Host-Template-Results-{DocID}-Document-Applicability-End -->
-
-<!-- Device-Host-Template-Results-{DocID}-Document-OmaUri-Begin -->
-```Device
-./Device/Vendor/MSFT/DeclaredConfiguration/Host/Template/Results/{DocID}/Document
-```
-<!-- Device-Host-Template-Results-{DocID}-Document-OmaUri-End -->
-
-<!-- Device-Host-Template-Results-{DocID}-Document-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- Device-Host-Template-Results-{DocID}-Document-Description-End -->
-
-<!-- Device-Host-Template-Results-{DocID}-Document-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- Device-Host-Template-Results-{DocID}-Document-Editable-End -->
-
-<!-- Device-Host-Template-Results-{DocID}-Document-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `chr` (string) |
-| Access Type | Get |
-<!-- Device-Host-Template-Results-{DocID}-Document-DFProperties-End -->
-
-<!-- Device-Host-Template-Results-{DocID}-Document-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- Device-Host-Template-Results-{DocID}-Document-Examples-End -->
-
-<!-- Device-Host-Template-Results-{DocID}-Document-End -->
-
 <!-- Device-ManagementServiceConfiguration-Begin -->
-## Device/ManagementServiceConfiguration
+## ManagementServiceConfiguration
 
 <!-- Device-ManagementServiceConfiguration-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
@@ -1270,7 +758,7 @@ Configuration settings for WinDC behavior.
 <!-- Device-ManagementServiceConfiguration-End -->
 
 <!-- Device-ManagementServiceConfiguration-CertificateExpirationThreshold-Begin -->
-### Device/ManagementServiceConfiguration/CertificateExpirationThreshold
+### ManagementServiceConfiguration/CertificateExpirationThreshold
 
 <!-- Device-ManagementServiceConfiguration-CertificateExpirationThreshold-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
@@ -1311,7 +799,7 @@ This node determines the number of minutes as near expiration check for certific
 <!-- Device-ManagementServiceConfiguration-CertificateExpirationThreshold-End -->
 
 <!-- Device-ManagementServiceConfiguration-RefreshInterval-Begin -->
-### Device/ManagementServiceConfiguration/RefreshInterval
+### ManagementServiceConfiguration/RefreshInterval
 
 <!-- Device-ManagementServiceConfiguration-RefreshInterval-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
@@ -1352,7 +840,7 @@ This node determines the number of minutes between refreshes.
 <!-- Device-ManagementServiceConfiguration-RefreshInterval-End -->
 
 <!-- Device-ManagementServiceConfiguration-StartSyncSessionOnFailure-Begin -->
-### Device/ManagementServiceConfiguration/StartSyncSessionOnFailure
+### ManagementServiceConfiguration/StartSyncSessionOnFailure
 
 <!-- Device-ManagementServiceConfiguration-StartSyncSessionOnFailure-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
@@ -1399,1138 +887,6 @@ This node determines whether or not to start a sync session when failed to refre
 <!-- Device-ManagementServiceConfiguration-StartSyncSessionOnFailure-Examples-End -->
 
 <!-- Device-ManagementServiceConfiguration-StartSyncSessionOnFailure-End -->
-
-<!-- User-Host-Begin -->
-## User/Host
-
-<!-- User-Host-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Applicability-End -->
-
-<!-- User-Host-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host
-```
-<!-- User-Host-OmaUri-End -->
-
-<!-- User-Host-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Description-End -->
-
-<!-- User-Host-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Editable-End -->
-
-<!-- User-Host-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Add, Delete, Get |
-<!-- User-Host-DFProperties-End -->
-
-<!-- User-Host-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Examples-End -->
-
-<!-- User-Host-End -->
-
-<!-- User-Host-Complete-Begin -->
-### User/Host/Complete
-
-<!-- User-Host-Complete-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Complete-Applicability-End -->
-
-<!-- User-Host-Complete-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Complete
-```
-<!-- User-Host-Complete-OmaUri-End -->
-
-<!-- User-Host-Complete-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Complete-Description-End -->
-
-<!-- User-Host-Complete-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Complete-Editable-End -->
-
-<!-- User-Host-Complete-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Add, Delete, Get |
-<!-- User-Host-Complete-DFProperties-End -->
-
-<!-- User-Host-Complete-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Complete-Examples-End -->
-
-<!-- User-Host-Complete-End -->
-
-<!-- User-Host-Complete-Documents-Begin -->
-#### User/Host/Complete/Documents
-
-<!-- User-Host-Complete-Documents-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Complete-Documents-Applicability-End -->
-
-<!-- User-Host-Complete-Documents-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents
-```
-<!-- User-Host-Complete-Documents-OmaUri-End -->
-
-<!-- User-Host-Complete-Documents-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Complete-Documents-Description-End -->
-
-<!-- User-Host-Complete-Documents-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Complete-Documents-Editable-End -->
-
-<!-- User-Host-Complete-Documents-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Add, Delete, Get |
-<!-- User-Host-Complete-Documents-DFProperties-End -->
-
-<!-- User-Host-Complete-Documents-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Complete-Documents-Examples-End -->
-
-<!-- User-Host-Complete-Documents-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Begin -->
-##### User/Host/Complete/Documents/{DocID}
-
-<!-- User-Host-Complete-Documents-{DocID}-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Complete-Documents-{DocID}-Applicability-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/{DocID}
-```
-<!-- User-Host-Complete-Documents-{DocID}-OmaUri-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Complete-Documents-{DocID}-Description-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Complete-Documents-{DocID}-Editable-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Add, Delete, Get |
-| Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
-| Allowed Values | Regular Expression: `[0-9A-Fa-f]{8}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{12}` |
-<!-- User-Host-Complete-Documents-{DocID}-DFProperties-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Complete-Documents-{DocID}-Examples-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Document-Begin -->
-###### User/Host/Complete/Documents/{DocID}/Document
-
-<!-- User-Host-Complete-Documents-{DocID}-Document-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Complete-Documents-{DocID}-Document-Applicability-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Document-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/{DocID}/Document
-```
-<!-- User-Host-Complete-Documents-{DocID}-Document-OmaUri-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Document-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Complete-Documents-{DocID}-Document-Description-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Document-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Complete-Documents-{DocID}-Document-Editable-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Document-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `chr` (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- User-Host-Complete-Documents-{DocID}-Document-DFProperties-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Document-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Complete-Documents-{DocID}-Document-Examples-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Document-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Begin -->
-###### User/Host/Complete/Documents/{DocID}/Properties
-
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Applicability-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Properties-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/{DocID}/Properties
-```
-<!-- User-Host-Complete-Documents-{DocID}-Properties-OmaUri-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Description-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Editable-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Properties-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Add, Delete, Get |
-<!-- User-Host-Complete-Documents-{DocID}-Properties-DFProperties-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Examples-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Properties-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Abandoned-Begin -->
-###### User/Host/Complete/Documents/{DocID}/Properties/Abandoned
-
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Abandoned-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Abandoned-Applicability-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Abandoned-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/{DocID}/Properties/Abandoned
-```
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Abandoned-OmaUri-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Abandoned-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Abandoned-Description-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Abandoned-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Abandoned-Editable-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Abandoned-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `int` |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 0 |
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Abandoned-DFProperties-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Abandoned-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 (Default) | Insert Description Here. |
-| 1 | Insert Description Here. |
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Abandoned-AllowedValues-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Abandoned-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Abandoned-Examples-End -->
-
-<!-- User-Host-Complete-Documents-{DocID}-Properties-Abandoned-End -->
-
-<!-- User-Host-Complete-Results-Begin -->
-#### User/Host/Complete/Results
-
-<!-- User-Host-Complete-Results-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Complete-Results-Applicability-End -->
-
-<!-- User-Host-Complete-Results-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Results
-```
-<!-- User-Host-Complete-Results-OmaUri-End -->
-
-<!-- User-Host-Complete-Results-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Complete-Results-Description-End -->
-
-<!-- User-Host-Complete-Results-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Complete-Results-Editable-End -->
-
-<!-- User-Host-Complete-Results-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Get |
-<!-- User-Host-Complete-Results-DFProperties-End -->
-
-<!-- User-Host-Complete-Results-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Complete-Results-Examples-End -->
-
-<!-- User-Host-Complete-Results-End -->
-
-<!-- User-Host-Complete-Results-{DocID}-Begin -->
-##### User/Host/Complete/Results/{DocID}
-
-<!-- User-Host-Complete-Results-{DocID}-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Complete-Results-{DocID}-Applicability-End -->
-
-<!-- User-Host-Complete-Results-{DocID}-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Results/{DocID}
-```
-<!-- User-Host-Complete-Results-{DocID}-OmaUri-End -->
-
-<!-- User-Host-Complete-Results-{DocID}-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Complete-Results-{DocID}-Description-End -->
-
-<!-- User-Host-Complete-Results-{DocID}-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Complete-Results-{DocID}-Editable-End -->
-
-<!-- User-Host-Complete-Results-{DocID}-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Get |
-| Dynamic Node Naming | ClientInventory |
-<!-- User-Host-Complete-Results-{DocID}-DFProperties-End -->
-
-<!-- User-Host-Complete-Results-{DocID}-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Complete-Results-{DocID}-Examples-End -->
-
-<!-- User-Host-Complete-Results-{DocID}-End -->
-
-<!-- User-Host-Complete-Results-{DocID}-Document-Begin -->
-###### User/Host/Complete/Results/{DocID}/Document
-
-<!-- User-Host-Complete-Results-{DocID}-Document-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Complete-Results-{DocID}-Document-Applicability-End -->
-
-<!-- User-Host-Complete-Results-{DocID}-Document-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Results/{DocID}/Document
-```
-<!-- User-Host-Complete-Results-{DocID}-Document-OmaUri-End -->
-
-<!-- User-Host-Complete-Results-{DocID}-Document-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Complete-Results-{DocID}-Document-Description-End -->
-
-<!-- User-Host-Complete-Results-{DocID}-Document-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Complete-Results-{DocID}-Document-Editable-End -->
-
-<!-- User-Host-Complete-Results-{DocID}-Document-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `chr` (string) |
-| Access Type | Get |
-<!-- User-Host-Complete-Results-{DocID}-Document-DFProperties-End -->
-
-<!-- User-Host-Complete-Results-{DocID}-Document-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Complete-Results-{DocID}-Document-Examples-End -->
-
-<!-- User-Host-Complete-Results-{DocID}-Document-End -->
-
-<!-- User-Host-Inventory-Begin -->
-### User/Host/Inventory
-
-<!-- User-Host-Inventory-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Inventory-Applicability-End -->
-
-<!-- User-Host-Inventory-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Inventory
-```
-<!-- User-Host-Inventory-OmaUri-End -->
-
-<!-- User-Host-Inventory-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Inventory-Description-End -->
-
-<!-- User-Host-Inventory-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Inventory-Editable-End -->
-
-<!-- User-Host-Inventory-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Add, Delete, Get |
-<!-- User-Host-Inventory-DFProperties-End -->
-
-<!-- User-Host-Inventory-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Inventory-Examples-End -->
-
-<!-- User-Host-Inventory-End -->
-
-<!-- User-Host-Inventory-Documents-Begin -->
-#### User/Host/Inventory/Documents
-
-<!-- User-Host-Inventory-Documents-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Inventory-Documents-Applicability-End -->
-
-<!-- User-Host-Inventory-Documents-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Inventory/Documents
-```
-<!-- User-Host-Inventory-Documents-OmaUri-End -->
-
-<!-- User-Host-Inventory-Documents-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Inventory-Documents-Description-End -->
-
-<!-- User-Host-Inventory-Documents-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Inventory-Documents-Editable-End -->
-
-<!-- User-Host-Inventory-Documents-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Add, Delete, Get |
-<!-- User-Host-Inventory-Documents-DFProperties-End -->
-
-<!-- User-Host-Inventory-Documents-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Inventory-Documents-Examples-End -->
-
-<!-- User-Host-Inventory-Documents-End -->
-
-<!-- User-Host-Inventory-Documents-{DocID}-Begin -->
-##### User/Host/Inventory/Documents/{DocID}
-
-<!-- User-Host-Inventory-Documents-{DocID}-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Inventory-Documents-{DocID}-Applicability-End -->
-
-<!-- User-Host-Inventory-Documents-{DocID}-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Inventory/Documents/{DocID}
-```
-<!-- User-Host-Inventory-Documents-{DocID}-OmaUri-End -->
-
-<!-- User-Host-Inventory-Documents-{DocID}-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Inventory-Documents-{DocID}-Description-End -->
-
-<!-- User-Host-Inventory-Documents-{DocID}-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Inventory-Documents-{DocID}-Editable-End -->
-
-<!-- User-Host-Inventory-Documents-{DocID}-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Add, Delete, Get |
-| Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
-| Allowed Values | Regular Expression: `[0-9A-Fa-f]{8}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{12}` |
-<!-- User-Host-Inventory-Documents-{DocID}-DFProperties-End -->
-
-<!-- User-Host-Inventory-Documents-{DocID}-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Inventory-Documents-{DocID}-Examples-End -->
-
-<!-- User-Host-Inventory-Documents-{DocID}-End -->
-
-<!-- User-Host-Inventory-Documents-{DocID}-Document-Begin -->
-###### User/Host/Inventory/Documents/{DocID}/Document
-
-<!-- User-Host-Inventory-Documents-{DocID}-Document-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Inventory-Documents-{DocID}-Document-Applicability-End -->
-
-<!-- User-Host-Inventory-Documents-{DocID}-Document-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Inventory/Documents/{DocID}/Document
-```
-<!-- User-Host-Inventory-Documents-{DocID}-Document-OmaUri-End -->
-
-<!-- User-Host-Inventory-Documents-{DocID}-Document-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Inventory-Documents-{DocID}-Document-Description-End -->
-
-<!-- User-Host-Inventory-Documents-{DocID}-Document-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Inventory-Documents-{DocID}-Document-Editable-End -->
-
-<!-- User-Host-Inventory-Documents-{DocID}-Document-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `chr` (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- User-Host-Inventory-Documents-{DocID}-Document-DFProperties-End -->
-
-<!-- User-Host-Inventory-Documents-{DocID}-Document-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Inventory-Documents-{DocID}-Document-Examples-End -->
-
-<!-- User-Host-Inventory-Documents-{DocID}-Document-End -->
-
-<!-- User-Host-Inventory-Results-Begin -->
-#### User/Host/Inventory/Results
-
-<!-- User-Host-Inventory-Results-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Inventory-Results-Applicability-End -->
-
-<!-- User-Host-Inventory-Results-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Inventory/Results
-```
-<!-- User-Host-Inventory-Results-OmaUri-End -->
-
-<!-- User-Host-Inventory-Results-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Inventory-Results-Description-End -->
-
-<!-- User-Host-Inventory-Results-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Inventory-Results-Editable-End -->
-
-<!-- User-Host-Inventory-Results-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Get |
-<!-- User-Host-Inventory-Results-DFProperties-End -->
-
-<!-- User-Host-Inventory-Results-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Inventory-Results-Examples-End -->
-
-<!-- User-Host-Inventory-Results-End -->
-
-<!-- User-Host-Inventory-Results-{DocID}-Begin -->
-##### User/Host/Inventory/Results/{DocID}
-
-<!-- User-Host-Inventory-Results-{DocID}-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Inventory-Results-{DocID}-Applicability-End -->
-
-<!-- User-Host-Inventory-Results-{DocID}-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Inventory/Results/{DocID}
-```
-<!-- User-Host-Inventory-Results-{DocID}-OmaUri-End -->
-
-<!-- User-Host-Inventory-Results-{DocID}-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Inventory-Results-{DocID}-Description-End -->
-
-<!-- User-Host-Inventory-Results-{DocID}-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Inventory-Results-{DocID}-Editable-End -->
-
-<!-- User-Host-Inventory-Results-{DocID}-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Get |
-| Dynamic Node Naming | ClientInventory |
-<!-- User-Host-Inventory-Results-{DocID}-DFProperties-End -->
-
-<!-- User-Host-Inventory-Results-{DocID}-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Inventory-Results-{DocID}-Examples-End -->
-
-<!-- User-Host-Inventory-Results-{DocID}-End -->
-
-<!-- User-Host-Inventory-Results-{DocID}-Document-Begin -->
-###### User/Host/Inventory/Results/{DocID}/Document
-
-<!-- User-Host-Inventory-Results-{DocID}-Document-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Inventory-Results-{DocID}-Document-Applicability-End -->
-
-<!-- User-Host-Inventory-Results-{DocID}-Document-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Inventory/Results/{DocID}/Document
-```
-<!-- User-Host-Inventory-Results-{DocID}-Document-OmaUri-End -->
-
-<!-- User-Host-Inventory-Results-{DocID}-Document-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Inventory-Results-{DocID}-Document-Description-End -->
-
-<!-- User-Host-Inventory-Results-{DocID}-Document-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Inventory-Results-{DocID}-Document-Editable-End -->
-
-<!-- User-Host-Inventory-Results-{DocID}-Document-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `chr` (string) |
-| Access Type | Get |
-<!-- User-Host-Inventory-Results-{DocID}-Document-DFProperties-End -->
-
-<!-- User-Host-Inventory-Results-{DocID}-Document-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Inventory-Results-{DocID}-Document-Examples-End -->
-
-<!-- User-Host-Inventory-Results-{DocID}-Document-End -->
-
-<!-- User-Host-Template-Begin -->
-### User/Host/Template
-
-<!-- User-Host-Template-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Template-Applicability-End -->
-
-<!-- User-Host-Template-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Template
-```
-<!-- User-Host-Template-OmaUri-End -->
-
-<!-- User-Host-Template-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Template-Description-End -->
-
-<!-- User-Host-Template-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Template-Editable-End -->
-
-<!-- User-Host-Template-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Add, Delete, Get |
-<!-- User-Host-Template-DFProperties-End -->
-
-<!-- User-Host-Template-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Template-Examples-End -->
-
-<!-- User-Host-Template-End -->
-
-<!-- User-Host-Template-Documents-Begin -->
-#### User/Host/Template/Documents
-
-<!-- User-Host-Template-Documents-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Template-Documents-Applicability-End -->
-
-<!-- User-Host-Template-Documents-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Template/Documents
-```
-<!-- User-Host-Template-Documents-OmaUri-End -->
-
-<!-- User-Host-Template-Documents-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Template-Documents-Description-End -->
-
-<!-- User-Host-Template-Documents-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Template-Documents-Editable-End -->
-
-<!-- User-Host-Template-Documents-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Add, Delete, Get |
-<!-- User-Host-Template-Documents-DFProperties-End -->
-
-<!-- User-Host-Template-Documents-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Template-Documents-Examples-End -->
-
-<!-- User-Host-Template-Documents-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Begin -->
-##### User/Host/Template/Documents/{DocID}
-
-<!-- User-Host-Template-Documents-{DocID}-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Template-Documents-{DocID}-Applicability-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Template/Documents/{DocID}
-```
-<!-- User-Host-Template-Documents-{DocID}-OmaUri-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Template-Documents-{DocID}-Description-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Template-Documents-{DocID}-Editable-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Add, Delete, Get |
-| Dynamic Node Naming | ServerGeneratedUniqueIdentifier |
-| Allowed Values | Regular Expression: `[0-9A-Fa-f]{8}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{4}\-[0-9A-Fa-f]{12}` |
-<!-- User-Host-Template-Documents-{DocID}-DFProperties-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Template-Documents-{DocID}-Examples-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Document-Begin -->
-###### User/Host/Template/Documents/{DocID}/Document
-
-<!-- User-Host-Template-Documents-{DocID}-Document-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Template-Documents-{DocID}-Document-Applicability-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Document-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Template/Documents/{DocID}/Document
-```
-<!-- User-Host-Template-Documents-{DocID}-Document-OmaUri-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Document-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Template-Documents-{DocID}-Document-Description-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Document-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Template-Documents-{DocID}-Document-Editable-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Document-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `chr` (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- User-Host-Template-Documents-{DocID}-Document-DFProperties-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Document-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Template-Documents-{DocID}-Document-Examples-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Document-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Properties-Begin -->
-###### User/Host/Template/Documents/{DocID}/Properties
-
-<!-- User-Host-Template-Documents-{DocID}-Properties-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Template-Documents-{DocID}-Properties-Applicability-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Properties-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Template/Documents/{DocID}/Properties
-```
-<!-- User-Host-Template-Documents-{DocID}-Properties-OmaUri-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Properties-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Template-Documents-{DocID}-Properties-Description-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Properties-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Template-Documents-{DocID}-Properties-Editable-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Properties-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Add, Delete, Get |
-<!-- User-Host-Template-Documents-{DocID}-Properties-DFProperties-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Properties-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Template-Documents-{DocID}-Properties-Examples-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Properties-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Properties-Abandoned-Begin -->
-###### User/Host/Template/Documents/{DocID}/Properties/Abandoned
-
-<!-- User-Host-Template-Documents-{DocID}-Properties-Abandoned-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Template-Documents-{DocID}-Properties-Abandoned-Applicability-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Properties-Abandoned-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Template/Documents/{DocID}/Properties/Abandoned
-```
-<!-- User-Host-Template-Documents-{DocID}-Properties-Abandoned-OmaUri-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Properties-Abandoned-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Template-Documents-{DocID}-Properties-Abandoned-Description-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Properties-Abandoned-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Template-Documents-{DocID}-Properties-Abandoned-Editable-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Properties-Abandoned-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `int` |
-| Access Type | Add, Delete, Get, Replace |
-| Default Value  | 0 |
-<!-- User-Host-Template-Documents-{DocID}-Properties-Abandoned-DFProperties-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Properties-Abandoned-AllowedValues-Begin -->
-**Allowed values**:
-
-| Value | Description |
-|:--|:--|
-| 0 (Default) | Insert Description Here. |
-| 1 | Insert Description Here. |
-<!-- User-Host-Template-Documents-{DocID}-Properties-Abandoned-AllowedValues-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Properties-Abandoned-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Template-Documents-{DocID}-Properties-Abandoned-Examples-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Properties-Abandoned-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-Begin -->
-###### User/Host/Template/Documents/{DocID}/Variables
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Template-Documents-{DocID}-Variables-Applicability-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Template/Documents/{DocID}/Variables
-```
-<!-- User-Host-Template-Documents-{DocID}-Variables-OmaUri-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Template-Documents-{DocID}-Variables-Description-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Template-Documents-{DocID}-Variables-Editable-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Add, Delete, Get |
-<!-- User-Host-Template-Documents-{DocID}-Variables-DFProperties-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Template-Documents-{DocID}-Variables-Examples-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Begin -->
-###### User/Host/Template/Documents/{DocID}/Variables/{VariableName}
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Applicability-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Template/Documents/{DocID}/Variables/{VariableName}
-```
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-OmaUri-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Description-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Editable-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Add, Delete, Get |
-| Dynamic Node Naming | UniqueName: This node name references a variable in the templated document. |
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-DFProperties-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Examples-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-Begin -->
-###### User/Host/Template/Documents/{DocID}/Variables/{VariableName}/Value
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-Applicability-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Template/Documents/{DocID}/Variables/{VariableName}/Value
-```
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-OmaUri-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-Description-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-Editable-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `chr` (string) |
-| Access Type | Add, Delete, Get, Replace |
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-DFProperties-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-Examples-End -->
-
-<!-- User-Host-Template-Documents-{DocID}-Variables-{VariableName}-Value-End -->
-
-<!-- User-Host-Template-Results-Begin -->
-#### User/Host/Template/Results
-
-<!-- User-Host-Template-Results-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Template-Results-Applicability-End -->
-
-<!-- User-Host-Template-Results-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Template/Results
-```
-<!-- User-Host-Template-Results-OmaUri-End -->
-
-<!-- User-Host-Template-Results-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Template-Results-Description-End -->
-
-<!-- User-Host-Template-Results-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Template-Results-Editable-End -->
-
-<!-- User-Host-Template-Results-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Get |
-<!-- User-Host-Template-Results-DFProperties-End -->
-
-<!-- User-Host-Template-Results-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Template-Results-Examples-End -->
-
-<!-- User-Host-Template-Results-End -->
-
-<!-- User-Host-Template-Results-{DocID}-Begin -->
-##### User/Host/Template/Results/{DocID}
-
-<!-- User-Host-Template-Results-{DocID}-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Template-Results-{DocID}-Applicability-End -->
-
-<!-- User-Host-Template-Results-{DocID}-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Template/Results/{DocID}
-```
-<!-- User-Host-Template-Results-{DocID}-OmaUri-End -->
-
-<!-- User-Host-Template-Results-{DocID}-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Template-Results-{DocID}-Description-End -->
-
-<!-- User-Host-Template-Results-{DocID}-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Template-Results-{DocID}-Editable-End -->
-
-<!-- User-Host-Template-Results-{DocID}-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `node` |
-| Access Type | Get |
-| Dynamic Node Naming | ClientInventory |
-<!-- User-Host-Template-Results-{DocID}-DFProperties-End -->
-
-<!-- User-Host-Template-Results-{DocID}-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Template-Results-{DocID}-Examples-End -->
-
-<!-- User-Host-Template-Results-{DocID}-End -->
-
-<!-- User-Host-Template-Results-{DocID}-Document-Begin -->
-###### User/Host/Template/Results/{DocID}/Document
-
-<!-- User-Host-Template-Results-{DocID}-Document-Applicability-Begin -->
-| Scope | Editions | Applicable OS |
-|:--|:--|:--|
-| ✅ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
-<!-- User-Host-Template-Results-{DocID}-Document-Applicability-End -->
-
-<!-- User-Host-Template-Results-{DocID}-Document-OmaUri-Begin -->
-```User
-./User/Vendor/MSFT/DeclaredConfiguration/Host/Template/Results/{DocID}/Document
-```
-<!-- User-Host-Template-Results-{DocID}-Document-OmaUri-End -->
-
-<!-- User-Host-Template-Results-{DocID}-Document-Description-Begin -->
-<!-- Description-Source-Not-Found -->
-<!-- User-Host-Template-Results-{DocID}-Document-Description-End -->
-
-<!-- User-Host-Template-Results-{DocID}-Document-Editable-Begin -->
-<!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
-<!-- User-Host-Template-Results-{DocID}-Document-Editable-End -->
-
-<!-- User-Host-Template-Results-{DocID}-Document-DFProperties-Begin -->
-**Description framework properties**:
-
-| Property name | Property value |
-|:--|:--|
-| Format | `chr` (string) |
-| Access Type | Get |
-<!-- User-Host-Template-Results-{DocID}-Document-DFProperties-End -->
-
-<!-- User-Host-Template-Results-{DocID}-Document-Examples-Begin -->
-<!-- Add any examples for this policy here. Examples outside this section will get overwritten. -->
-<!-- User-Host-Template-Results-{DocID}-Document-Examples-End -->
-
-<!-- User-Host-Template-Results-{DocID}-Document-End -->
 
 <!-- DeclaredConfiguration-CspMoreInfo-Begin -->
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
