@@ -30,7 +30,7 @@ The policy setting has three components:
 ## Configure unlock factors
 
 > [!CAUTION]
-> On Windows 11, when the [DontDisplayLastUserName](/windows/security/threat-protection/security-policy-settings/interactive-logon-do-not-display-last-user-name) security policy is enabled, it is known to interfere with the ability to use multi factor unlock.
+> On Windows 10 and Windows 11, when the [DontDisplayLastUserName](/windows/security/threat-protection/security-policy-settings/interactive-logon-do-not-display-last-user-name) security policy is enabled, it is known to interfere with the ability to use multi factor unlock.
 
 The **First unlock factor credential providers** and **Second unlock factor credential providers** portion of the policy setting each contain a comma separated list of credential providers.
 
