@@ -83,7 +83,7 @@ Here's a list of key scenarios that are supported by Web sign-in, and a brief an
   - [Windows Hello for Business passwordless](../hello-for-business/passwordless.md)
   :::column-end:::
   :::column span="1":::
-  :::image type="content" source="images/web-sign-in-authenticator.png" border="false" lightbox="../hello-for-business/images/pinreset/web-sign-in-authenticator.gif" alt-text="Animation of the Web sign-in experience with Microsoft Authenticator.":::
+  :::image type="content" source="images/web-sign-in-authenticator.png" border="false" lightbox="images/web-sign-in-authenticator.gif" alt-text="Animation of the Web sign-in experience with Microsoft Authenticator.":::
   :::column-end:::
 :::row-end:::
 :::row:::
