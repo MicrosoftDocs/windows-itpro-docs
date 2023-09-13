@@ -1,7 +1,7 @@
 ---
 title: Web sign-in for Windows devices
 description: Learn how Web sign-in in Windows works and how to configure it.
-ms.date: 09/11/2023
+ms.date: 09/13/2023
 ms.topic: how-to
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
@@ -67,16 +67,18 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 
 ## User experiences
 
-Once the devices are configured, a new sign-in experience becomes available, as indicated by the presence of the Web sign-in credential provider - :::image type="icon" source="images/web-sign-in-credential-provider.svg" border="false"::: - in the Windows lock screen.
+Once the devices are configured, a new sign-in experience becomes available, as indicated by the presence of the Web sign-in credential provider :::image type="icon" source="images/web-sign-in-credential-provider.svg" border="false"::: in the Windows lock screen.
 
 :::image type="content" source="images/lock-screen.png" lightbox="images/lock-screen.png" alt-text="Screenshot of the Windows lock screen showing the Web sign-in credential provider.":::
 
-Here's a list of key scenarios that are supported by Web sign-in, and a brief animation showing the user experience. Select the thumbnail to expand the animation.
+Here's a list of key scenarios that are supported by Web sign-in, and a brief animation showing the user experience. Select the thumbnail to start the animation.
 
 :::row:::
   :::column span="3":::
   **Passwordless first sign-in experience**\
-  Uusers can perform the first sign in to Windows passwordless, before enablig Windows Hello for Business. For example, using Microsoft Authenticator in the Web sign-in flow. When used in conjuction with passworless, the organization can hide the password credential provider from the lock screen as well as in-session authentication scenarios. For more information, see [Windows Hello for Business passwordless](../hello-for-business/passwordless.md).
+  Users can perform the first sign in to Windows passwordless, before enablig Windows Hello for Business. For example, using Microsoft Authenticator in the Web sign-in flow. When used in conjuction with Windows Hello for Business passworless, the organization can hide the password credential provider from the lock screen as well as in-session authentication scenarios.
+
+  For more information, see [Windows Hello for Business passwordless](../hello-for-business/passwordless.md).
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/lock-screen.png" lightbox="../hello-for-business/images/pinreset/pin-reset.gif" alt-text="Animation of the Web sign-in experience with Microsoft Authenticator.":::
