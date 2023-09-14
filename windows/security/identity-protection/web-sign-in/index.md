@@ -75,9 +75,9 @@ Once the devices are configured, a new sign-in experience becomes available, as 
 
 Here's a list of key scenarios supported by Web sign-in, and a brief animation showing the user experience. Select the thumbnail to start the animation.
 
+### Passwordless sign-in
 :::row:::
   :::column span="3":::
-  **Passwordless sign-in**\
   Users can sign in to Windows passwordless, even before enrolling in Windows Hello for Business. For example, by using the Microsoft Authenticator app as a sign-in method.
 
   > [!TIP]
@@ -92,18 +92,22 @@ Here's a list of key scenarios supported by Web sign-in, and a brief animation s
   :::image type="content" source="images/web-sign-in-authenticator.png" border="false" lightbox="images/web-sign-in-authenticator.gif" alt-text="Animation of the Web sign-in experience with Microsoft Authenticator.":::
   :::column-end:::
 :::row-end:::
+
+### Windows Hello for Business PIN reset
+
 :::row:::
   :::column span="3":::
-  **Windows Hello for Business PIN reset**\
   The Windows Hello PIN reset flow is seamless and more robust than in previous versions. For more information, see [PIN reset](../hello-for-business/hello-feature-pin-reset.md).
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/web-sign-in-pin-reset.png" border="false" lightbox="images/web-sign-in-pin-reset.gif" alt-text="Animation of the PIN reset in experience.":::
   :::column-end:::
 :::row-end:::
+
+### Temporary Access Pass (TAP)
+
 :::row:::
   :::column span="3":::
-  **Temporary Access Pass (TAP)**\
   A Temporary Access Pass (TAP) is a time-limited passcode granted by an administrator to a user. Users can sign in with a TAP using the Web sign-in credential provider. For example:
   - to onboard Windows Hello for Business or a FIDO2 security key
   - if lost or forgotten FIDO2 security key and unknown password
@@ -115,9 +119,11 @@ Here's a list of key scenarios supported by Web sign-in, and a brief animation s
   :::image type="content" source="images/web-sign-in-tap.png" border="false" lightbox="images/web-sign-in-tap.gif" alt-text="Animation of the TAP sign in experience.":::
   :::column-end:::
 :::row-end:::
+
+### Sign in with a federated identity
+
 :::row:::
   :::column span="3":::
-  **Sign in with a federated identity**\
   If the Microsoft Entra ID tenant is federated with a third-party SAML-P identity provider (IdP), federated users can sign using the Web sign-in credential provider.
 > [!TIP]
 > To improve the user experience for federated identities:
