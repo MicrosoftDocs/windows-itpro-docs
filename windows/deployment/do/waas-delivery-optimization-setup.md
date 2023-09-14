@@ -110,17 +110,6 @@ Using MDM, go to **./Device/Vendor/MSFT/Policy/Config/DeliveryOptimization/** an
 
 [Learn more](delivery-optimization-test.md) about Delivery Optimization testing scenarios.
 
-<!--Using include file, waas-delivery-optimization-monitor.md, for shared content on DO monitoring-->
-[!INCLUDE [Monitor Delivery Optimization](includes/waas-delivery-optimization-monitor.md)]
-
-### Monitor with Windows Update for Business Delivery Optimization Report
-
-Windows Update for Business Delivery Optimization Report provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer, Microsoft Connected Cache (MCC), HTTP source/CDN distribution over the past 28 days.
-
-:::image type="content" source="/windows/deployment/update/images/wufb-do-overview.png" alt-text="This screenshot shows the Windows Update for Business report, Delivery Optimization status in Update Compliance." lightbox="/windows/deployment/update/images/wufb-do-overview.png":::
-
-For details, see [Windows Update for Business Delivery Optimization Report](../update/wufb-reports-overview.md).
-
 ## Troubleshooting
 
 This section summarizes common problems and some solutions to try.

@@ -268,24 +268,24 @@ Value | Description
 
 #### SecurityServicesConfigured
 
-This field indicates whether Windows Defender Credential Guard or memory integrity has been configured.
+This field indicates whether Credential Guard or memory integrity has been configured.
 
 Value | Description
 -|-
 **0.** | No services are configured.
-**1.** | If present, Windows Defender Credential Guard is configured.
+**1.** | If present, Credential Guard is configured.
 **2.** | If present, memory integrity is configured.
 **3.** | If present, System Guard Secure Launch is configured.
 **4.** | If present, SMM Firmware Measurement is configured.
 
 #### SecurityServicesRunning
 
-This field indicates whether Windows Defender Credential Guard or memory integrity is running.
+This field indicates whether Credential Guard or memory integrity is running.
 
 Value | Description
 -|-
 **0.** | No services running.
-**1.** | If present, Windows Defender Credential Guard is running.
+**1.** | If present, Credential Guard is running.
 **2.** | If present, memory integrity is running.
 **3.** | If present, System Guard Secure Launch is running.
 **4.** | If present, SMM Firmware Measurement is running.

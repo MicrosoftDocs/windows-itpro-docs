@@ -1,18 +1,9 @@
 ---
 title: What's new in MDM enrollment and management
 description: Discover what's new and breaking changes in mobile device management (MDM) enrollment and management experience across all Windows devices.
-ms.reviewer:
-manager: aaroncz
-ms.author: vinpa
 ms.topic: article
-ms.prod: windows-client
-ms.technology: itpro-manage
-author: vinaypamnani-msft
 ms.localizationpriority: medium
-ms.date: 04/05/2023
-appliesto:
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
-- ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+ms.date: 08/10/2023
 ---
 
 # What's new in mobile device enrollment and management
@@ -83,7 +74,7 @@ For details about Microsoft mobile device management protocols for Windows, see 
 | [BitLocker CSP](mdm/bitlocker-csp.md) | Added a new node AllowStandardUserEncryption.<br><li>Added support for Pro edition. |
 | [Defender CSP](mdm/defender-csp.md) | Added a new node Health/ProductStatus. |
 | [DevDetail CSP](mdm/devdetail-csp.md) | Added a new node SMBIOSSerialNumber. |
-| [EnterpriseModernAppManagement CSP](mdm/enterprisemodernappmanagement-csp.md) | Added NonRemovable setting under AppManagement node. |
+| [EnterpriseModernAppManagement CSP](mdm/enterprisemodernappmanagement-csp.md) | Added Non-Removable setting under AppManagement node. |
 | [Office CSP](mdm/office-csp.md) | Added FinalStatus setting. |
 | [PassportForWork CSP](mdm/passportforwork-csp.md) | Added new settings. |
 | [RemoteWipe CSP](mdm/remotewipe-csp.md) | Added new settings. |
@@ -93,4 +84,3 @@ For details about Microsoft mobile device management protocols for Windows, see 
 | [WindowsDefenderApplicationGuard CSP](mdm/windowsdefenderapplicationguard-csp.md) | Added new settings. |
 | [WindowsLicensing CSP](mdm/windowslicensing-csp.md) | Added S mode settings and SyncML examples. |
 | [Win32CompatibilityAppraiser CSP](mdm/win32compatibilityappraiser-csp.md) | New CSP. |
-

@@ -61,7 +61,7 @@ To verify that Secure Launch is running, use System Information (MSInfo32). Clic
 ![Verifying Secure Launch is running in the Windows Security settings.](images/secure-launch-msinfo.png)
 
 > [!NOTE]
-> To enable System Guard Secure launch, the platform must meet all the baseline requirements for [System Guard](how-hardware-based-root-of-trust-helps-protect-windows.md), [Device Guard](../application-security/application-control/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md), [Credential Guard](../identity-protection/credential-guard/credential-guard-requirements.md), and [Virtualization Based Security](/windows-hardware/design/device-experiences/oem-vbs).
+> To enable System Guard Secure launch, the platform must meet all the baseline requirements for [System Guard](how-hardware-based-root-of-trust-helps-protect-windows.md), [Device Guard](../application-security/application-control/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md), [Credential Guard](../identity-protection/credential-guard/index.md), and [Virtualization Based Security](/windows-hardware/design/device-experiences/oem-vbs).
 
 > [!NOTE]
 > For more information around AMD processors, see [Microsoft Security Blog: Force firmware code to be measured and attested by Secure Launch on Windows 10](https://www.microsoft.com/security/blog/2020/09/01/force-firmware-code-to-be-measured-and-attested-by-secure-launch-on-windows-10/).

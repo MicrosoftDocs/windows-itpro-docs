@@ -581,6 +581,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/client-management/mdm/policies-in-policy-csp-supported-by-iot-core.md",
+      "redirect_url": "/windows/iot-core/manage-your-device/csp-support",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/client-management/mdm/policies-in-policy-csp-supported-by-iot-enterprise.md",
       "redirect_url": "/windows/client-management/mdm/configuration-service-provider-reference",
       "redirect_document_id": false
