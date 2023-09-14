@@ -79,61 +79,67 @@ Here's a list of key scenarios supported by Web sign-in, and a brief animation s
 :::row:::
   :::column span="3":::
   Users can sign in to Windows passwordless, even before enrolling in Windows Hello for Business. For example, by using the Microsoft Authenticator app as a sign-in method.
-
-  > [!TIP]
-  > When used in conjuction with *Windows Hello for Business passworless*, you can hide the password credential provider from the lock screen as well as in-session authentication scenarios. This enables a truly passwordless Windows experience.
-
-  To learn more:
-  - [Enable passwordless sign-in with Microsoft Authenticator][AAD-1]
-  - [Passwordless authentication options for Microsoft Entra ID][AAD-2]
-  - [Windows Hello for Business passwordless](../hello-for-business/passwordless.md)
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/web-sign-in-authenticator.png" border="false" lightbox="images/web-sign-in-authenticator.gif" alt-text="Animation of the Web sign-in experience with Microsoft Authenticator.":::
   :::column-end:::
 :::row-end:::
 
+> [!TIP]
+> When used in conjuction with *Windows Hello for Business passworless*, you can hide the password credential provider from the lock screen as well as in-session authentication scenarios. This enables a truly passwordless Windows experience.
+To learn more:
+- [Enable passwordless sign-in with Microsoft Authenticator][AAD-1]
+- [Passwordless authentication options for Microsoft Entra ID][AAD-2]
+- [Windows Hello for Business passwordless](../hello-for-business/passwordless.md)
+
 ### Windows Hello for Business PIN reset
 
 :::row:::
   :::column span="3":::
-  The Windows Hello PIN reset flow is seamless and more robust than in previous versions. For more information, see [PIN reset](../hello-for-business/hello-feature-pin-reset.md).
+  The Windows Hello PIN reset flow is seamless and more robust than in previous versions.
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/web-sign-in-pin-reset.png" border="false" lightbox="images/web-sign-in-pin-reset.gif" alt-text="Animation of the PIN reset in experience.":::
   :::column-end:::
 :::row-end:::
 
+For more information, see [PIN reset](../hello-for-business/hello-feature-pin-reset.md).
+
 ### Temporary Access Pass (TAP)
 
 :::row:::
   :::column span="3":::
   A Temporary Access Pass (TAP) is a time-limited passcode granted by an administrator to a user. Users can sign in with a TAP using the Web sign-in credential provider. For example:
+
   - to onboard Windows Hello for Business or a FIDO2 security key
   - if lost or forgotten FIDO2 security key and unknown password
 
-  To learn more:
-  - [Use a Temporary Access Pass][AAD-3]
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/web-sign-in-tap.png" border="false" lightbox="images/web-sign-in-tap.gif" alt-text="Animation of the TAP sign in experience.":::
   :::column-end:::
 :::row-end:::
 
+For more information, see [Use a Temporary Access Pass][AAD-3].
+
 ### Sign in with a federated identity
 
 :::row:::
   :::column span="3":::
   If the Microsoft Entra ID tenant is federated with a third-party SAML-P identity provider (IdP), federated users can sign using the Web sign-in credential provider.
-> [!TIP]
-> To improve the user experience for federated identities:
-> - Configure the *preferred Azure AD tenant name* feature, which allows users to select the domain name during the sign-in process. The users are then automatically redirected to the identity provider sign-in page. For more information about preferred tenant name, see [Authentication CSP - PreferredAadTenantDomainName][WIN-1]
-> - Enable Windows Hello for Business. Once the user signs in, the user can enroll in Windows Hello for Business and then use it to sign in to the device
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/web-sign-in-federated-auth.png" border="false" lightbox="images/web-sign-in-federated-auth.gif" alt-text="Animation of the sign in experience with a federated user.":::
   :::column-end:::
 :::row-end:::
+
+> [!TIP]
+> To improve the user experience for federated identities:
+>
+> - Configure the *preferred Azure AD tenant name* feature, which allows users to select the domain name during the sign-in process. The users are then automatically redirected to the identity provider sign-in page.
+> - Enable Windows Hello for Business. Once the user signs in, the user can enroll in Windows Hello for Business and then use it to sign in to the device
+
+For more information about preferred tenant name, see [Authentication CSP - PreferredAadTenantDomainName][WIN-1].
 
 ## Important considerations
 
