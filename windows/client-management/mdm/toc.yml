@@ -32,7 +32,7 @@ items:
   - name: Declared Configuration protocol
     href: ../declared-configuration.md
     items:
-    - name: Declared Configuration Extensibility
+    - name: Declared Configuration extensibility
       href: ../declared-configuration-extensibility.md
     - name: DeclaredConfiguration CSP
       href: declaredconfiguration-csp.md

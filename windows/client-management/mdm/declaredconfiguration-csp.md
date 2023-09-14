@@ -25,7 +25,7 @@ The Primary MDM Management device management model is one where the MDM server i
 The new Declared Configuration device management model requires the server to deliver all the setting values to the device for the scenario configuration, in batch, asynchronously through the client Declared Configuration CSP.
 
 - During the client initiated OMA-DM session, the Declared Configuration server sends a configuration or an inventory Declared Configuration document to the client through the [Declared Configuration CSP URI](#declared-configuration-oma-uri). If the device verifies the syntax of the document is correct, the client stack pushes the request to its orchestrator to be processed asynchronously. The client stack then exits, returning control back to Declared Configuration service allowing the device to asynchronously process the request.
-- On the client, if there are any requests in process or completed, a [generic alert](#declared-configuration-document-generic-alert) is sent to the server summing up each document status, state, progress. This summation is sent on every client HTTP request to the Declared Configuration OMA-DM server.
+- On the client, if there are any requests in process or completed, a [generic alert](#declared-configuration-generic-alert) is sent to the server summing up each document status, state, progress. This summation is sent on every client HTTP request to the Declared Configuration OMA-DM server.
 - The Declared Configuration server uses the Alert to determine which requests are completed successfully or with errors. The server can then synchronously retrieve the Declared Configuration document process results through the [Declared Configuration CSP URI](#declared-configuration-oma-uri).
 <!-- DeclaredConfiguration-Editable-End -->
 
@@ -115,6 +115,7 @@ The following list shows the DeclaredConfiguration configuration service provide
 
 <!-- Device-Host-Complete-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The Server to Client flow of the Complete request, is the same as an Inventory request.
 <!-- Device-Host-Complete-Editable-End -->
 
 <!-- Device-Host-Complete-DFProperties-Begin -->
@@ -470,6 +471,7 @@ The following list shows the DeclaredConfiguration configuration service provide
 
 <!-- Device-Host-Inventory-Editable-Begin -->
 <!-- Add any additional information about this policy here. Anything outside this section will get overwritten. -->
+The Server to Client flow of the Inventory request, is the same as the Complete request.
 <!-- Device-Host-Inventory-Editable-End -->
 
 <!-- Device-Host-Inventory-DFProperties-Begin -->
@@ -892,15 +894,13 @@ This node determines whether or not to start a sync session when failed to refre
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
 ## Declared Configuration OMA URI
 
-A Declared Configuration request is sent using an OMA-URI similar to `./Device/Vendor/MSFT/DeclaredConfiguration/Host/[Complete|Inventory]/Documents/{document id guid}/Document`.
+A Declared Configuration request is sent using an OMA-URI similar to `./Device/Vendor/MSFT/DeclaredConfiguration/Host/[Complete|Inventory]/Documents/{DocID}/Document`.
 
 - The URI is prefixed with a targeted scope. The target of the scenario settings can only be device wide for Extensibility. The scope should be "Device".
-- `{document id guid}` is a unique identifier for the desired state of the configuration scenario. Every document must have a unique doc id, which must be a GUID.
-- The request can be a Configuration request, Inventory request or Complete.
+- `{DocID}` is a unique identifier for the desired state of the configuration scenario. Every document must have a ID, which must be a GUID.
+- The request can be a Configuration request, Inventory or Complete.
 
 Example URI for a Complete request: `./Device/Vendor/MSFT/DeclaredConfiguration/Host/Complete/Documents/27FEA311-68B9-4320-9FC4-296F6FDFAFE2/Document`
-
-The Server to Client flow of the configuration URI request, Complete, is the same as an Inventory request.
 
 ## DeclaredConfiguration Document XML
 
@@ -922,7 +922,7 @@ Here's an example that uses the built-in native MI provider **MSFT_FileDirectory
 </DeclaredConfiguration>
 ```
 
-The standard OMA-DM SyncML syntax is used to specify the DeclaredConfiguration CSP operations such as Replace, Set, and Delete. The SyncML's `<Data>` element's value is the specified desired state document, which is also expressed in XML and uses CDATA to ensure that the Declared Configuration client can properly interpret the SyncML.
+The standard OMA-DM SyncML syntax is used to specify the DeclaredConfiguration CSP operations such as Replace, Set, and Delete. The payload of the SyncML's `<Data>` element must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use [CDATA Section](http://www.w3.org/TR/REC-xml/#sec-cdata-sect) as shown in this example.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -990,7 +990,7 @@ Both MSFTExtensibilityMIProviderConfig and MSFTExtensibilityMIProviderInventory 
     |--|--|
     | name | Specifies the name of a MI Provider parameter. |
 
-## Declared Configuration Document generic alert
+## Declared Configuration generic alert
 
 On every client response to the server's request, the client constructs a Declared Configuration alert summing up the state of each of the documents that the Windows service has processed. Here's an example alert:
 

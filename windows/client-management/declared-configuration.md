@@ -28,7 +28,7 @@ The benefit of the Declared Configuration desired state model is that it's effic
 - [LinkedEnrollment/LastError](mdm/dmclient-csp.md#deviceproviderprovideridlinkedenrollmentlasterror)
 - [LinkedEnrollment/DiscoveryEndpoint](mdm/dmclient-csp.md#deviceproviderprovideridlinkedenrollmentdiscoveryendpoint)
 
-Here's a SyncML example for setting LinkedEnrolment/DiscoveryEndpoint and triggering LinkedEnrollment/Enroll:
+Here's a SyncML example for setting **LinkedEnrolment/DiscoveryEndpoint** and triggering **LinkedEnrollment/Enroll**:
 
 ```xml
 <SyncML xmlns="SYNCML:SYNCML1.1">

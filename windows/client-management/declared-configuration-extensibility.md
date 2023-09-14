@@ -62,7 +62,7 @@ To create a native WMI provider, follow the steps outlined in [How to Implement 
 
 This example provides more details about each step to demonstrate how to implement a sample native resource named `MSFT_FileDirectoryConfiguration`.
 
-### Step 1: Create the Resource Schema File in MOF Format
+### Step 1: Create the resource schema MOF file
 
 Create a sample schema MOF file used to generate the initial source code for the `MSFT_FileDirectoryConfiguration` native resource and place it in the project directory named `MSFT_FileDirectoryConfiguration`.
 
@@ -188,7 +188,7 @@ Copy the generated files from the `temp` folder that was specified with `-OutPat
 > [!NOTE]
 > With each update to the schema MOF file, `codegen.cmd` script to regenerate the source files must be executed again, which overwrites the source files if they exist. To prevent this, this example uses a temporary folder. It is best to minimize the updates to the schema MOF file since the main implementation should be merged with the most recent auto-generated source files.
 
-### Auto-generated MSFT_FileDirectoryConfiguration Resource
+### About MSFT_FileDirectoryConfiguration resource
 
 After you run the provider generator tool, several source and header files are created, including:
 
