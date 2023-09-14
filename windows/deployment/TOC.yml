@@ -311,23 +311,6 @@
                   href: configure-a-pxe-server-to-load-windows-pe.md
                 - name: Windows ADK for Windows 10 scenarios for IT Pros
                   href: windows-adk-scenarios-for-it-pros.md
-                - name: Windows To Go
-                  items:
-                    - name: Deploy Windows To Go in your organization
-                      href: deploy-windows-to-go.md
-                    - name: "Windows To Go: feature overview"
-                      href: planning/windows-to-go-overview.md
-                    - name: Best practice recommendations for Windows To Go
-                      href: planning/best-practice-recommendations-for-windows-to-go.md
-                    - name: Deployment considerations for Windows To Go
-                      href: planning/deployment-considerations-for-windows-to-go.md
-                    - name: Prepare your organization for Windows To Go
-                      href: planning/prepare-your-organization-for-windows-to-go.md
-                    - name: Security and data protection considerations for Windows To Go
-                      href: planning/security-and-data-protection-considerations-for-windows-to-go.md
-                    - name: "Windows To Go: frequently asked questions"
-                      href: planning/windows-to-go-frequently-asked-questions.yml
-        
                 - name: Volume Activation Management Tool (VAMT) technical reference
                   items:
                     - name: VAMT technical reference
