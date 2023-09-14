@@ -73,7 +73,7 @@ Once the devices are configured, a new sign-in experience becomes available, as 
 
 :::image type="content" source="images/lock-screen.png" border="false" lightbox="images/lock-screen.png" alt-text="Screenshot of the Windows lock screen showing the Web sign-in credential provider.":::
 
-Here's a list of key scenarios that are supported by Web sign-in, and a brief animation showing the user experience. Select the thumbnail to start the animation.
+Here's a list of key scenarios supported by Web sign-in, and a brief animation showing the user experience. Select the thumbnail to start the animation.
 
 :::row:::
   :::column span="3":::
@@ -85,7 +85,7 @@ Here's a list of key scenarios that are supported by Web sign-in, and a brief an
 
   To learn more:
   - [Enable passwordless sign-in with Microsoft Authenticator][AAD-1]
-  - [Passwordless authentication options for Azure Active Directory][AAD-2]
+  - [Passwordless authentication options for Microsoft Entra ID][AAD-2]
   - [Windows Hello for Business passwordless](../hello-for-business/passwordless.md)
   :::column-end:::
   :::column span="1":::
@@ -104,9 +104,9 @@ Here's a list of key scenarios that are supported by Web sign-in, and a brief an
 :::row:::
   :::column span="3":::
   **Temporary Access Pass (TAP)**\
-  A Temporary Access Pass (TAP) is a time-limited passcode granted by an administrator to a user. Users can sign in with a TAP using the Web sign-in credential provider. Examples of this scenario include:
+  A Temporary Access Pass (TAP) is a time-limited passcode granted by an administrator to a user. Users can sign in with a TAP using the Web sign-in credential provider. For example:
   - to onboard Windows Hello for Business or a FIDO2 security key
-  - in case of lost or forgotten FIDO2 security key and unknown password
+  - if lost or forgotten FIDO2 security key and unknown password
 
   To learn more:
   - [Use a Temporary Access Pass][AAD-3]
@@ -133,13 +133,13 @@ Here's a list of key scenarios that are supported by Web sign-in, and a brief an
 
 Here's a list of important considerations to keep in mind when configuring or using Web sign-in:
 
-- Cached credentials are not supported with Web sign-in. If the device is offline, the user can't use the Web sign-in credential provider to sign in
-- When signing off, the user is not displayed in the user selection list
+- Cached credentials aren't supported with Web sign-in. If the device is offline, the user can't use the Web sign-in credential provider to sign in
+- After sign out, the user isn't displayed in the user selection list
 - Once enabled, the Web sign-in credential provider is the default credential provider for new users signing in to the device. To change the default credential provider, you can use the [DefaultCredentialProvider][WIN-2] ADMX-backed policy
 
 ### Known issues
 
-- If you attempt to sign in while the device is offline, you will receive the following message: *It doesn't look that you're connected to the Internet. Check your connection and try again.*. Selecting the *Back to sign-in* option doesn't bring you back to the lock screen. As a workaround, you can press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the lock screen.
+- If you attempt to sign in while the device is offline, you get the following message: *It doesn't look that you're connected to the Internet. Check your connection and try again*. Selecting the *Back to sign-in* option doesn't bring you back to the lock screen. As a workaround, you can press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the lock screen.
 
 ## Provide feedback
 
