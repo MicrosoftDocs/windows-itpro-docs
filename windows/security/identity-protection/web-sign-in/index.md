@@ -11,11 +11,13 @@ ms.collection:
 
 # Web sign-in for Windows devices
 
-Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can enable your users to sign-in using a web experience on Microsoft Entra joined devices, unlocking new sign-in options and capabilities.
+Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can enable a web-based sign-in experience on Microsoft Entra joined devices, unlocking new sign-in options and capabilities.
 This feature is called *Web sign-in*.
 
-Web sign-in is a *credential provider*, and it was initially introduced in Windows 10 with support for Temporary Access Pass (TAP) only. With the release of Windows 11, the supported scenarios and capabilities of Web sign-in have been expanded.\
-For example, with Web sign-in organizations can move to passwordless sign-in experiences, or enable users to sign-in with a federated identity.
+Web sign-in is a *credential provider*, and it was initially introduced in Windows 10 with support for Temporary Access Pass (TAP) only. With the release of Windows 11, the supported scenarios and capabilities of Web sign-in are expanded.\
+For example, you can sign in with the Microsoft Authenticator app or with a SAML-P federated identity.
+
+This article describes how to configure Web sign-in and the supported key scenarios.
 
 ## Prerequisites
 
@@ -38,7 +40,7 @@ To use web sign-in, your devices must be configured with different policies. Rev
 | Category | Setting name | Value |
 |--|--|--|
 | Authentication | Enable Web Sign In | Enabled |
-| Authentication | Configure Web Sign In Allowed Urls | This setting is optional, and it contains a list of domains, for example:<br>- `idp.example.com`<br>- `example.com` |
+| Authentication | Configure Web Sign In Allowed Urls | This setting is optional, and it contains a list of domains required for sign in, for example:<br>- `idp.example.com`<br>- `example.com` |
 | Authentication | Configure Webcam Access Domain Names | This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, for example: `example.com` |
 
 [!INCLUDE [intune-settings-catalog-2](../../../../includes/configure/intune-settings-catalog-2.md)]
@@ -58,7 +60,7 @@ Alternatively, you can configure devices using a [custom policy][INT-1] with the
 | Path | Setting name | Value |
 |--|--|--|
 | `Policies/Authentication` | `EnableWebSignIn` | Enabled |
-| `Policies/Authentication` | `ConfigureWebSignInAllowedUrls` | This setting is optional, and it contains a semicolon-separated list of domains, for example: `idp.example.com;example.com` |
+| `Policies/Authentication` | `ConfigureWebSignInAllowedUrls` | This setting is optional, and it contains a semicolon-separated list of domains required for sign in, for example: `idp.example.com;example.com` |
 | `Policies/Authentication` | `ConfigureWebCamAccessDomainNames` | This setting is optional, and it should be configured if you need to use the webcam during the sign-in process. Specify the list of domains that are allowed to use the webcam during the sign-in process, separated by a semicolon. For example: `example.com` |
 
 [!INCLUDE [provisioning-package-2](../../../../includes/configure/provisioning-package-2.md)]
@@ -76,10 +78,14 @@ Here's a list of key scenarios that are supported by Web sign-in, and a brief an
 :::row:::
   :::column span="3":::
   **Passwordless sign-in**\
-  Users can sign in to Windows passwordless, even before enrolling in Windows Hello for Business. For example, by using the Microsoft Authenticator. When used in conjuction with *Windows Hello for Business passworless*, the organization can hide the password credential provider from the lock screen as well as in-session authentication scenarios.
+  Users can sign in to Windows passwordless, even before enrolling in Windows Hello for Business. For example, by using the Microsoft Authenticator app as a sign-in method.
+
+  > [!TIP]
+  > When used in conjuction with *Windows Hello for Business passworless*, you can hide the password credential provider from the lock screen as well as in-session authentication scenarios. This enables a truly passwordless Windows experience.
 
   To learn more:
   - [Enable passwordless sign-in with Microsoft Authenticator][AAD-1]
+  - [Passwordless authentication options for Azure Active Directory][AAD-2]
   - [Windows Hello for Business passwordless](../hello-for-business/passwordless.md)
   :::column-end:::
   :::column span="1":::
@@ -89,7 +95,7 @@ Here's a list of key scenarios that are supported by Web sign-in, and a brief an
 :::row:::
   :::column span="3":::
   **Windows Hello for Business PIN reset**\
-  The PIN reset flow is seamless and more robust than in previous versions. For more information, see [PIN reset](../hello-for-business/hello-feature-pin-reset.md).
+  The Windows Hello PIN reset flow is seamless and more robust than in previous versions. For more information, see [PIN reset](../hello-for-business/hello-feature-pin-reset.md).
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/web-sign-in-pin-reset.png" border="false" lightbox="images/web-sign-in-pin-reset.gif" alt-text="Animation of the PIN reset in experience.":::
@@ -98,7 +104,12 @@ Here's a list of key scenarios that are supported by Web sign-in, and a brief an
 :::row:::
   :::column span="3":::
   **Temporary Access Pass (TAP)**\
-  Users can sign in using a Temporary Access Pass, which is a ...
+  A Temporary Access Pass (TAP) is a time-limited passcode granted by an administrator to a user. Users can sign in with a TAP using the Web sign-in credential provider. Examples of this scenario include:
+  - to onboard Windows Hello for Business or a FIDO2 security key
+  - in case of lost or forgotten FIDO2 security key and unknown password
+
+  To learn more:
+  - [Use a Temporary Access Pass][AAD-3]
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/web-sign-in-tap.png" border="false" lightbox="images/web-sign-in-tap.gif" alt-text="Animation of the TAP sign in experience.":::
@@ -119,32 +130,33 @@ Here's a list of key scenarios that are supported by Web sign-in, and a brief an
 
 ## Important considerations
 
-### Known issues affecting student shared devices
+Here's a list of important considerations to keep in mind when configuring Web sign-in:
 
-The following issues are known to affect Web sign-in:
-
-- Once enabled, the Web sign-in credential provider is the default credential provider for the device. To change the default credential provider, you must use the [Authentication CSP][WIN-4].
-
-You can use Group Policy to deploy an administrative template policy setting to the computer. This policy setting is found under **Computer Configuration > Policies > Administrative Templates > System > Logon**:
-
-To verify:
-- Non-federated users can't sign-in to the devices, including local accounts
-- The *Other user* button is missing from the sign-in screen
+- Cached credentials are not supported. If the device is offline, the user can't use the Web sign-in credential provider to sign in
+- When signing off, the user is not displayed in the user selection list
+- Once enabled, the Web sign-in credential provider is the default credential provider for new users signing in to the device. To change the default credential provider, you can use the [DefaultCredentialProvider][WIN-2] ADMX-backed policy
 
 ### Sign in with federated identities
 
-- To improve the user experience, you can configure the *preferred Azure AD tenant name* feature.
-  When using preferred AAD tenant name, the users can select the domain name during the sign-in process and redirected to the identity provider sign-in page.
-  For more information about preferred tenant name, see [Authentication CSP - PreferredAadTenantDomainName][WIN-4].
-- Disable Windows Hello provisioning
+In case of federated identities, here are some tips to improve the user experience:
 
-## Troubleshooting
+- Configure the *preferred Azure AD tenant name* feature, which allows users to select the domain name during the sign-in process. The users are then automatically redirected to the identity provider sign-in page. For more information about preferred tenant name, see [Authentication CSP - PreferredAadTenantDomainName][WIN-1]
+- Enable Windows Hello for Business. Once the user signs in, the user can enroll in Windows Hello for Business and then use it to sign in to the device
 
-- The user can exit the web sign-in flow by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the Windows lock screen
+### Known issues
+
+- If you attempt to sign in while the device is offline, you will receive the following message: *It doesn't look that you're connected to the Internet. Check your connection and try again.*. Selecting the *Back to sign-in* option doesn't bring you back to the lock screen. As a workaround, you can press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the lock screen.
+
+## Provide feedback
+
+To provide feedback for Windows Hello for Business passwordless experience, open [**Feedback Hub**][FHUB] and use the category **Security and Privacy > Passwordless experience**.
 
 <!--links-->
 
+[AAD-1]: /azure/active-directory/authentication/howto-authentication-passwordless-phone
+[AAD-2]: /azure/active-directory/authentication/concept-authentication-passwordless
+[AAD-3]: /azure/active-directory/authentication/howto-authentication-temporary-access-pass
 [INT-1]: /mem/intune/configuration/custom-settings-windows-10
 [KB-1]: https://support.microsoft.com/kb/5030310
-[WIN-4]: /windows/client-management/mdm/policy-csp-authentication#preferredaadtenantdomainname
-[AAD-1]: /azure/active-directory/authentication/howto-authentication-passwordless-phone
+[WIN-1]: /windows/client-management/mdm/policy-csp-authentication#preferredaadtenantdomainname
+[WIN-2]: /windows/client-management/mdm/policy-csp-admx-credentialproviders#defaultcredentialprovider
