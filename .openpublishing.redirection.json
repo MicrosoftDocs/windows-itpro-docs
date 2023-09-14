@@ -1772,7 +1772,12 @@
     },
     {
       "source_path": "windows/deploy/deploy-windows-to-go.md",
-      "redirect_url": "/windows/deployment/deploy-windows-to-go",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/deploy-windows-to-go.md",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
       "redirect_document_id": false
     },
     {
@@ -11202,7 +11207,12 @@
     },
     {
       "source_path": "windows/plan/best-practice-recommendations-for-windows-to-go.md",
-      "redirect_url": "/windows/deployment/planning/best-practice-recommendations-for-windows-to-go",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/best-practice-recommendations-for-windows-to-go.md",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
       "redirect_document_id": false
     },
     {
@@ -11332,7 +11342,12 @@
     },
     {
       "source_path": "windows/plan/deployment-considerations-for-windows-to-go.md",
-      "redirect_url": "/windows/deployment/planning/deployment-considerations-for-windows-to-go",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/deployment-considerations-for-windows-to-go.md",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
       "redirect_document_id": false
     },
     {
@@ -11427,7 +11442,12 @@
     },
     {
       "source_path": "windows/plan/prepare-your-organization-for-windows-to-go.md",
-      "redirect_url": "/windows/deployment/planning/prepare-your-organization-for-windows-to-go",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/prepare-your-organization-for-windows-to-go.md",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
       "redirect_document_id": false
     },
     {
@@ -11462,7 +11482,12 @@
     },
     {
       "source_path": "windows/plan/security-and-data-protection-considerations-for-windows-to-go.md",
-      "redirect_url": "/windows/deployment/planning/security-and-data-protection-considerations-for-windows-to-go",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/security-and-data-protection-considerations-for-windows-to-go.md",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
       "redirect_document_id": false
     },
     {
@@ -11652,7 +11677,12 @@
     },
     {
       "source_path": "windows/plan/windows-to-go-overview.md",
-      "redirect_url": "/windows/deployment/planning/windows-to-go-overview",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/windows-to-go-overview.md",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
       "redirect_document_id": false
     },
     {
@@ -12723,6 +12753,11 @@
     {
       "source_path": "windows/update/waas-wufb-group-policy.md",
       "redirect_url": "/windows/deployment/update/waas-wufb-group-policy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/planning/windows-to-go-frequently-asked-questions.yml",
+      "redirect_url": "/windows/deployment/windows-deployment-scenarios-and-tools",
       "redirect_document_id": false
     }
   ]
