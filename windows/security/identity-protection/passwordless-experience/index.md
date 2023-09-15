@@ -10,8 +10,6 @@ ms.topic: how-to
 
 # Windows passwordless experience
 
-## Overview
-
 Starting in Windows 11, version 22H2 with [KB5030310][KB-1], *Windows passwordless experience* is a security policy that promotes a user experience without passwords on Microsoft Entra joined devices.\
 When the policy is enabled, certain Windows authentication scenarios don't offer users the option to use a password, helping organizations and preparing users to gradually move away from passwords.
 
@@ -44,7 +42,7 @@ Windows passwordless experience has the following requirements:
 >[!NOTE]
 >Microsoft Entra hybrid joined devices and Active Directory domain joined devices are currently out of scope.
 
-[!INCLUDE [windows-hello-for-business-passwordless](../../../../includes/licensing/windows-hello-for-business-passwordless.md)]
+[!INCLUDE [windows-passwordless-experience](../../../includes/licensing/windows-passwordless-experience.md)]
 
 ## Enable Windows passwordless experience with Intune
 
@@ -128,7 +126,7 @@ Here's a list of recommendations to consider before enabling Windows passwordles
 
 ## Known issues
 
-There's a known issue affecting the in-session authentication experience when using FIDO2 security keys, which may offer the option to use a password. The product group is aware of the behavior and is investigating further.
+There's a known issue affecting the in-session authentication experience when using FIDO2 security keys, where security keys aren't always an available option. The product group is aware of this behavior and plans to improve this in the future.
 
 ## Provide feedback
 

@@ -83,8 +83,8 @@ ms.topic: include
 |**[Windows Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Hello for Business](/windows/security/identity-protection/hello-for-business)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Hello for Business Enhanced Security Sign-in (ESS)](/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)**|Yes|Yes|Yes|Yes|Yes|
-|**[Windows Hello for Business passwordless](/windows/security/identity-protection/hello-for-business/passwordless)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows LAPS](/windows-server/identity/laps/laps-overview)**|Yes|Yes|Yes|Yes|Yes|
+|**[Windows passwordless experience](/windows/security/identity-protection/passwordless-experience)**|Yes|Yes|Yes|Yes|
 |**[Windows presence sensing](https://support.microsoft.com/windows/wake-your-windows-11-pc-when-you-approach-82285c93-440c-4e15-9081-c9e38c1290bb)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows Sandbox](/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview)**|Yes|Yes|Yes|Yes|Yes|
 |**[Windows security policy settings and auditing](/windows/security/threat-protection/security-policy-settings/security-policy-settings)**|Yes|Yes|Yes|Yes|Yes|

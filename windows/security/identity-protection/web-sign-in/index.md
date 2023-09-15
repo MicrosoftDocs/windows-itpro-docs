@@ -1,5 +1,5 @@
 ---
-title: Web sign-in for Windows devices
+title: Web sign-in for Windows
 description: Learn how Web sign-in in Windows works, key scenarios, and how to configure it.
 ms.date: 09/13/2023
 ms.topic: how-to
@@ -9,7 +9,7 @@ ms.collection:
   - tier1
 ---
 
-# Web sign-in for Windows devices
+# Web sign-in for Windows
 
 Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can enable a web-based sign-in experience on Microsoft Entra joined devices, unlocking new sign-in options and capabilities.
 This feature is called *Web sign-in*.
@@ -19,7 +19,7 @@ For example, you can sign in with the Microsoft Authenticator app or with a SAML
 
 This article describes how to configure Web sign-in and the supported key scenarios.
 
-## Prerequisites
+## System requirements
 
 To use web sign-in, the clients must meet the following prerequisites:
 

@@ -12,8 +12,6 @@ appliesto:
 
 # Passkey support in Windows
 
-## Overview
-
 Passkeys provide a more secure and convenient method of logging into websites and applications that support them, compared to passwords. Unlike passwords, which users must remember and type, passkeys are stored as secrets on a device and can be unlocked using the device's unlock mechanism (such as biometrics or a PIN). Passkeys can be used without the need for other sign in challenges, making the authentication process faster and more convenient.
 
 Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can use any apps or websites that support passkeys to create and sign in using passkeys with the Windows Hello native experience. Once a passkey is created, you can use Windows Hello (biometrics and PIN) or a companion device (phone or tablet) to sign in.
