@@ -90,7 +90,7 @@ Here's a list of key scenarios supported by Web sign-in, and a brief animation s
 To learn more:
 - [Enable passwordless sign-in with Microsoft Authenticator][AAD-1]
 - [Passwordless authentication options for Microsoft Entra ID][AAD-2]
-- [Windows Hello for Business passwordless](../hello-for-business/passwordless.md)
+- [Windows passwordless experience](../passwordless-experience/index.md)
 
 ### Windows Hello for Business PIN reset
 
