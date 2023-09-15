@@ -44,17 +44,17 @@ Windows passwordless experience has the following requirements:
 >[!NOTE]
 >Microsoft Entra hybrid joined devices and Active Directory domain joined devices are currently out of scope.
 
-[!INCLUDE [LICENSE][LIC-1]]
+[!INCLUDE [windows-hello-for-business-passwordless](../../../../includes/licensing/windows-hello-for-business-passwordless.md)]
 
 ## Enable Windows passwordless experience with Intune
 
-[!INCLUDE [intune-settings-catalog-1][CAT-1]]
+[!INCLUDE [intune-settings-catalog-1](../../../../includes/configure/intune-settings-catalog-1.md)]
 
 | Category | Setting name | Value |
 |--|--|--|
 | **Authentication** | Enable Passwordless Experience | Enabled |
 
-[!INCLUDE [intune-settings-catalog-2][CAT-2]]
+[!INCLUDE [intune-settings-catalog-2](../../../../includes/configure/intune-settings-catalog-2.md)]
 
 Alternatively, you can configure devices using a [custom policy][INT-2] with the [Policy CSP][CSP-1].
 
@@ -136,11 +136,8 @@ To provide feedback for Windows passwordless experience, open [**Feedback Hub**]
 
 <!--links used in this document-->
 
-[CAT-1]: ../../../../includes/configure/intune-settings-catalog-1.md
-[CAT-2]: ../../../../includes/configure/intune-settings-catalog-2.md
 [CSP-1]: /windows/client-management/mdm/policy-csp-authentication#enablepasswordlessexperience
 [FHUB]: feedback-hub://?tabid=2&newFeedback=true&feedbackType=1
 [INT-2]: /mem/intune/configuration/custom-settings-windows-10
 [KB-1]: https://support.microsoft.com/kb/5030310
 [SERV-1]: /windows-server/identity/laps/laps-overview
-[LIC-1]: ../../../../includes/licensing/windows-hello-for-business-passwordless.md
