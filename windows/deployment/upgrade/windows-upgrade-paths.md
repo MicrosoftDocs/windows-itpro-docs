@@ -1,6 +1,6 @@
 ---
-title: Windows 10 upgrade paths (Windows 10)
-description: You can upgrade to Windows 10 from a previous version of Windows if the upgrade path is supported.
+title: Windows upgrade paths 
+description: Upgrade to current versions of Windows from a previous version of Windows
 ms.prod: windows-client
 ms.localizationpriority: medium
 author: frankroj
@@ -14,25 +14,16 @@ ms.technology: itpro-deploy
 ms.date: 09/15/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 10</a>
+  - ✅ <a href="https://learn.microsoft.com/windows/release-health/supported-versions-windows-client" target="_blank">Windows 11</a>
 ---
 
-# Windows 10 upgrade paths
-
-> [!IMPORTANT]
->
-> This article deals with upgrading from Windows versions that are out of support. For a current version of this article, please see [Windows upgrade paths](windows-upgrade-paths.md) that deals with currently supported versions of Windows.
->
-> For more information, see:
->
-> - [Windows 8.1 support ended on January 10, 2023](https://support.microsoft.com/windows/windows-8-1-support-ended-on-january-10-2023-3cfd4cde-f611-496a-8057-923fba401e93).
-> - [Windows 7 support ended on January 14, 2020](https://support.microsoft.com/windows/windows-7-support-ended-on-january-14-2020-b75d4580-2cc7-895a-2c9c-1466d9a53962).
-> - [FAQ about Windows 7 ESU](https://learn.microsoft.com/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).
+# Windows upgrade paths
 
 ## Upgrade paths
 
-This article provides a summary of available upgrade paths to Windows 10. You can upgrade to Windows 10 from Windows 7 or a later operating system. Paths include upgrading from one release of Windows 10 to later release of Windows 10. Migrating from one edition of Windows 10 to a different edition of the same release is also supported.
+This article provides a summary of available upgrade paths to currently supported versions of Windows. You can upgrade to currently supported versions of Windows from previous versions of Windows that are also still supported. Paths include upgrading from one release of Windows to a later release of the same version of Windows. Migrating from one edition of Windows to a different edition of the same release is also supported.
 
-If you're also migrating to a different edition of Windows, see [Windows 10 edition upgrade](windows-10-edition-upgrades.md). Methods and supported paths are described on this page to change the edition of Windows. These methods require that you input a license or product key for the new Windows edition prior to starting the upgrade process. Edition downgrade is also supported for some paths. However, applications and settings aren't maintained when the Windows edition is downgraded.
+If you're also migrating to a different edition of Windows, see [Windows edition upgrade](windows-edition-upgrades.md). Methods and supported paths are described in this article to change the edition of Windows. These methods require that you input a license or product key for the new Windows edition prior to starting the upgrade process. Edition downgrade is also supported for some paths. However, applications and settings aren't maintained when the Windows edition is downgraded.
 
 - **Windows 10 version upgrade**: You can directly upgrade any General Availability Channel version of Windows 10 to a newer, supported General Availability Channel version of Windows 10, even if it involves skipping versions. Work with your account representative if your current version of Windows is out of support. See the [Windows lifecycle fact sheet](/lifecycle/faq/windows) for availability and service information.
 
