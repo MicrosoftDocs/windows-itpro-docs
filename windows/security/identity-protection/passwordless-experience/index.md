@@ -44,17 +44,17 @@ Windows passwordless experience has the following requirements:
 >[!NOTE]
 >Microsoft Entra hybrid joined devices and Active Directory domain joined devices are currently out of scope.
 
-[!INCLUDE [windows-hello-for-business-passwordless](../../../../includes/licensing/windows-hello-for-business-passwordless.md)]
+[!INCLUDE [LICENSE][LIC-1]]
 
 ## Enable Windows passwordless experience with Intune
 
-[!INCLUDE [intune-settings-catalog-1](../../../../includes/configure/intune-settings-catalog-1.md)]
+[!INCLUDE [intune-settings-catalog-1][CAT-1]]
 
 | Category | Setting name | Value |
 |--|--|--|
 | **Authentication** | Enable Passwordless Experience | Enabled |
 
-[!INCLUDE [intune-settings-catalog-2](../../../../includes/configure/intune-settings-catalog-2.md)]
+[!INCLUDE [intune-settings-catalog-2][CAT-2]]
 
 Alternatively, you can configure devices using a [custom policy][INT-2] with the [Policy CSP][CSP-1].
 
@@ -119,7 +119,7 @@ Example of UAC elevation experience:
 
 Here's a list of recommendations to consider before enabling Windows passwordless experience:
 
-- If Windows Hello for Business is enabled, configure the [PIN reset](hello-feature-pin-reset.md) feature to allow users to reset their PIN from the lock screen. The PIN reset experience is improved starting in Windows 11, version 22H2 with [KB5030310][KB-1]
+- If Windows Hello for Business is enabled, configure the [PIN reset](../hello-for-business/hello-feature-pin-reset.md) feature to allow users to reset their PIN from the lock screen. The PIN reset experience is improved starting in Windows 11, version 22H2 with [KB5030310][KB-1]
 - Don't configure the security policy *Interactive logon: Don't display last signed-in*, as it prevents Windows passwordless experience from working
 - Don't disable the password credential provider using the *Exclude credential providers* policy. The key differences between the two policies are:
   - The Exclude credential providers policy disables passwords for *all accounts*, including local accounts. Windows passwordless experience only applies to Microsoft Entra ID accounts that sign in with Windows Hello or a FIDO2 security key. It also excludes *Other User* from the policy, so users have a backup sign in option
@@ -134,13 +134,13 @@ There's a known issue affecting the in-session authentication experience when us
 
 To provide feedback for Windows passwordless experience, open [**Feedback Hub**][FHUB] and use the category **Security and Privacy > Passwordless experience**.
 
-
-
 <!--links used in this document-->
 
+[CAT-1]: ../../../../includes/configure/intune-settings-catalog-1.md
+[CAT-2]: ../../../../includes/configure/intune-settings-catalog-2.md
 [CSP-1]: /windows/client-management/mdm/policy-csp-authentication#enablepasswordlessexperience
 [FHUB]: feedback-hub://?tabid=2&newFeedback=true&feedbackType=1
 [INT-2]: /mem/intune/configuration/custom-settings-windows-10
 [KB-1]: https://support.microsoft.com/kb/5030310
 [SERV-1]: /windows-server/identity/laps/laps-overview
-[UAC-1]: /windows/security/application-security/application-control/user-account-control/settings-and-configuration?tabs=intune
+[LIC-1]: ../../../../includes/licensing/windows-hello-for-business-passwordless.md
