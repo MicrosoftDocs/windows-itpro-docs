@@ -31,25 +31,25 @@ The following table shows the methods and paths available to change the edition 
 >
 > Although it isn't displayed yet in the table, edition upgrade is also possible using [edition upgrade policy](/configmgr/compliance/deploy-use/upgrade-windows-version) in Microsoft Configuration Manager.
 
-- ❌ (X) = not supported.
-- ✅ (green checkmark) = supported, reboot required.
-- ☑️ (black checkmark) = supported, no reboot required.
+- Yes w/ reboot = supported, but reboot required.
+- Yes = supported, no reboot required.
+- No = not supported.
 
 | Edition upgrade | Using mobile device management (MDM) | Using a provisioning package | Using a command-line tool | Using Microsoft Store for Business or PC | Entering a product key manually | Purchasing a license from the Microsoft Store |
 |-----------------| ------------------------------------ | --------------------------- | ------------------------- | -------------------------------------- | ----------------------------------- | --------------------------------------------- |
-| **Home > Pro** | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ |
-| **Home > Pro for Workstations** | ❌ | ❌ | ❌ | ❌ | ✅ | ✅ |
-| **Home > Pro Education** | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ |
-| **Home > Education** | ✅ | ✅ | ✅ | ❌ | ✅ | ❌ |
-| **Pro > Pro for Workstations** | ☑️ | ☑️ | ☑️ | ☑️ <br>(Microsoft Store for Business) | ☑️ | ☑️ |
-| **Pro > Pro Education** | ☑️ | ☑️ | ☑️ | ☑️ <br>(Microsoft Store for Business) | ☑️ | ❌ |
-| **Pro > Education** | ✅ | ✅ | ✅ | ✅ <br>(Microsoft Store for Business) | ✅ | ❌ |
-| **Pro > Enterprise** | ☑️ | ☑️ | ☑️ | ☑️ <br>(1703 - PC)<br>(1709 - Microsoft Store for Business) | ☑️ | ❌ |
-| **Pro for Workstations > Pro Education** | ☑️ | ☑️ | ☑️ | ☑️ <br>(Microsoft Store for Business) | ☑️ | ❌ |
-| **Pro for Workstations > Education** | ✅ | ✅ | ✅ | ✅ <br>(Microsoft Store for Business) | ✅ | ❌ |
-| **Pro for Workstations > Enterprise** | ☑️ | ☑️ | ☑️ | ☑️ <br>(1703 - PC)<br>(1709 - Microsoft Store for Business) | ☑️ | ❌ |
-| **Pro Education > Education** | ✅ | ✅ | ✅ | ✅ <br>(Microsoft Store for Business) | ✅ | ❌ |
-| **Enterprise > Education** | ✅ | ✅ | ✅ | ✅ <br>(Microsoft Store for Business) | ✅ | ❌ |
+| **Home > Pro** | No | No | No | No | Yes w/ reboot | Yes w/ reboot |
+| **Home > Pro for Workstations** | No | No | No | No | Yes w/ reboot | Yes w/ reboot |
+| **Home > Pro Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | No | Yes w/ reboot | No |
+| **Home > Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | No | Yes w/ reboot | No |
+| **Pro > Pro for Workstations** | Yes | Yes | Yes | Yes <br>(Microsoft Store for Business) | Yes | Yes |
+| **Pro > Pro Education** | Yes | Yes | Yes | Yes <br>(Microsoft Store for Business) | Yes | No |
+| **Pro > Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot <br>(Microsoft Store for Business) | Yes w/ reboot | No |
+| **Pro > Enterprise** | Yes | Yes | Yes | Yes | Yes | No |
+| **Pro for Workstations > Pro Education** | Yes | Yes | Yes | Yes <br>(Microsoft Store for Business) | Yes | No |
+| **Pro for Workstations > Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot <br>(Microsoft Store for Business) | Yes w/ reboot | No |
+| **Pro for Workstations > Enterprise** | Yes | Yes | Yes | Yes | Yes | No |
+| **Pro Education > Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot <br>(Microsoft Store for Business) | Yes w/ reboot | No |
+| **Enterprise > Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot <br>(Microsoft Store for Business) | Yes w/ reboot | No |
 
 > [!NOTE]
 >
@@ -129,27 +129,19 @@ You can move directly from Enterprise to any valid destination edition. In this 
 
 ### Supported Windows 10 downgrade paths
 
-✔ = Supported downgrade path
-
-S = Supported; Not considered a downgrade or an upgrade
-
-[blank] = Not supported or not a downgrade
-
-#### Destination Edition: (Starting)
-
-- ✅ (green checkmark) = Supported downgrade path.
-- ☑️ (black checkmark) = Not considered a downgrade or an upgrade.
-- ❌ (X) = not supported or not a downgrade.
+- Yes = Supported downgrade path.
+- No = not supported or not a downgrade.
+- \- = Not considered a downgrade or an upgrade.
 
 | **Edition** | **Home** | **Pro** | **Pro for Workstations** | **Pro Education** | **Education** | **Enterprise LTSC** | **Enterprise** |
 |-----------------| ------------------------------------ | --------------------------- | ------------------------- | -------------------------------------- | ----------------------------------- | --------------------------------------------- |--------------------------------------------- |
-| **Home** | ☑️ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| **Pro** | ❌ | ☑️ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| **Pro for Workstations** | ❌ | ❌ | ☑️ | ❌ | ❌ | ❌ | ❌ |
-| **Pro Education** | ❌ | ❌ | ❌ | ☑️ | ❌ | ❌ | ❌ |
-| **Education** | ❌ | ✅ | ✅ | ✅ | ☑️ | ❌ | ☑️ |
-| **Enterprise LTSC** | ❌ | ❌ | ❌ | ❌ | ❌ | ☑️ | ❌ |
-| **Enterprise** | ❌ | ✅ | ✅ | ✅ | ☑️ | ❌ | ☑️ |
+| **Home** | - | No | No | No | No | No | No |
+| **Pro** | No | - | No | No | No | No | No |
+| **Pro for Workstations** | No | No | - | No | No | No | No |
+| **Pro Education** | No | No | No | - | No | No | No |
+| **Education** | No | Yes | Yes | Yes | - | No | - |
+| **Enterprise LTSC** | No | No | No | No | No | - | No |
+| **Enterprise** | No | Yes | Yes | Yes | - | No | - |
 
 > **Windows N/KN**: Windows "N" and "KN" SKUs follow the same rules shown in table.
 
