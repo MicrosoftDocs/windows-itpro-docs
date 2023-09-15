@@ -1,6 +1,6 @@
 ---
 title: Web sign-in for Windows devices
-description: Learn how Web sign-in in Windows works and how to configure it.
+description: Learn how Web sign-in in Windows works, key scenarios, and how to configure it.
 ms.date: 09/13/2023
 ms.topic: how-to
 appliesto:
@@ -148,6 +148,7 @@ Here's a list of important considerations to keep in mind when configuring or us
 - Cached credentials aren't supported with Web sign-in. If the device is offline, the user can't use the Web sign-in credential provider to sign in
 - After sign out, the user isn't displayed in the user selection list
 - Once enabled, the Web sign-in credential provider is the default credential provider for new users signing in to the device. To change the default credential provider, you can use the [DefaultCredentialProvider][WIN-2] ADMX-backed policy
+- The user can exit the Web sign-in flow by pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Delete</kbd> to get back to the Windows lock screen
 
 ### Known issues
 
