@@ -42,7 +42,7 @@ Windows passwordless experience has the following requirements:
 >[!NOTE]
 >Microsoft Entra hybrid joined devices and Active Directory domain joined devices are currently out of scope.
 
-[!INCLUDE [windows-passwordless-experience](../../../includes/licensing/windows-passwordless-experience.md)]
+[!INCLUDE [windows-passwordless-experience](../../../../includes/licensing/windows-passwordless-experience.md)]
 
 ## Enable Windows passwordless experience with Intune
 
