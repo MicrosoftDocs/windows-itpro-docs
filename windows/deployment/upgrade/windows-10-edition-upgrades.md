@@ -143,7 +143,7 @@ You can move directly from Enterprise to any valid destination edition. In this 
 | **Enterprise LTSC** | No | No | No | No | No | - | No |
 | **Enterprise** | No | Yes | Yes | Yes | - | No | - |
 
-> **Windows N/KN**: Windows "N" and "KN" SKUs follow the same rules shown in table.
+**Windows N/KN**: Windows **N** and **KN** SKUs follow the same rules shown in the table.
 
 The table may not represent more complex scenarios. For example, you can perform an upgrade from Pro to Pro for Workstation on a computer with an embedded Pro key using a Pro for Workstation license key. You can then later downgrade this computer back to Pro with the firmware-embedded key. The downgrade is allowed but only because the pre-installed OS is Pro.
 

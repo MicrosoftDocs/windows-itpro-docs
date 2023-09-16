@@ -26,7 +26,7 @@ appliesto:
 >
 > - [Windows 8.1 support ended on January 10, 2023](https://support.microsoft.com/windows/windows-8-1-support-ended-on-january-10-2023-3cfd4cde-f611-496a-8057-923fba401e93).
 > - [Windows 7 support ended on January 14, 2020](https://support.microsoft.com/windows/windows-7-support-ended-on-january-14-2020-b75d4580-2cc7-895a-2c9c-1466d9a53962).
-> - [FAQ about Windows 7 ESU](https://learn.microsoft.com/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).
+> - [FAQ about Windows 7 ESU](troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq).
 
 ## Upgrade paths
 
