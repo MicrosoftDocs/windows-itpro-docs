@@ -12,23 +12,23 @@ appliesto:
 
 # Passkey support in Windows
 
-Passkeys provide a more secure and convenient method of logging into websites and applications that support them, compared to passwords. Unlike passwords, which users must remember and type, passkeys are stored as secrets on a device and can be unlocked using the device's unlock mechanism (such as biometrics or a PIN). Passkeys can be used without the need for other sign in challenges, making the authentication process faster and more convenient.
+Passkeys provide a more secure and convenient method to logging into websites and applications compared to passwords. Unlike passwords, which users must remember and type, passkeys are stored as secrets on a device and can use a device's unlock mechanism (such as biometrics or a PIN). Passkeys can be used without the need for other sign in challenges, making the authentication process faster, secure, and more convenient.
 
-Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can use any apps or websites that support passkeys to create and sign in using passkeys with the Windows Hello native experience. Once a passkey is created, you can use Windows Hello (biometrics and PIN) or a companion device (phone or tablet) to sign in.
+Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can use passkeys with any applications or websites that support them to create and sign in with the Windows Hello native experience. Once a passkey is created and stored with Windows Hello, you can use Windows Hello (biometrics and PIN) or a companion device (phone or tablet) to sign in.
 
 This article describes how to create and use passkeys on Windows devices.
 
 ## How passkeys work
 
-Passkeys utilize the FIDO industry security standard, which is adopted by multiple platforms. Leading technology companies like Microsoft are backing passkeys as part of the FIDO Alliance, and numerous websites and apps are integrating support for passkeys.
+Microsoft has long been a founding member of the FIDO Alliance and has helped to define and use passkeys natively within a platform authenticator like Windows Hello. Passkeys utilize the FIDO industry security standard, which is adopted by all major platforms. Leading technology companies like Microsoft are backing passkeys as part of the FIDO Alliance, and numerous websites and apps are integrating support for passkeys.
 
-The FIDO protocols rely on standard public key cryptography techniques to offer more secure authentication. When a user registers with an online service, their client device generates a new key pair. The private key is stored securely on the device, while the public key is registered with the service. To authenticate, the client device must prove that it possesses the private key by signing a challenge. The private keys can only be used after they're unlocked by the user using the Windows Hello unlock factor (biometrics or PIN).
+The FIDO protocols rely on standard public/private key cryptography techniques to offer more secure authentication. When a user registers with an online service, their client device generates a new key pair. The private key is stored securely on the users device, while the public key is registered with the service. To authenticate, the client device must prove that it possesses the private key by signing a challenge. The private keys can only be used after they're unlocked by the user using the Windows Hello unlock factor (biometrics or PIN).
 
-FIDO protocols prioritize user privacy, as they're designed to prevent online services from sharing information or tracking users across different services. Additionally, any biometric information used in the authentication process remains on the user's device and isn't transmitted to the service.
+FIDO protocols prioritize user privacy, as they're designed to prevent online services from sharing information or tracking users across different services. Additionally, any biometric information used in the authentication process remains on the user's device and isn't transmitted across the network or to the service.
 
 ### Passkeys compared to passwords
 
-Passkeys have several advantages over passwords, including their ease of use and intuitive nature. Unlike passwords, passkeys don't require a creation process, don't need to be remembered, and don't need to be safeguarded. Additionally, passkeys are unique to each website or application, preventing their reuse. They're also highly secure because they're only stored on the user's devices, with the service only storing public keys. Passkeys are resistant to phishing attempts, as they're enforced by the browsers or operating systems to only be used for the appropriate service, rather than relying on human verification. Finally, passkeys provide cross-device and cross-platform authentication, meaning that a passkey from one device can be used to sign in on another device.
+Passkeys have several advantages over passwords, including their ease of use and intuitive nature. Unlike passwords, passkeys don't require a creation process, don't need to be remembered, and don't need to be safeguarded. Additionally, passkeys are unique to each website or application, preventing their reuse. They're highly secure because they're only stored on the user's devices, with the service only storing public keys. Passkeys are resistant to phishing attempts, as they're enforced by the browsers or operating systems to only be used for the appropriate service, rather than relying on human verification. Finally, passkeys provide cross-device and cross-platform authentication, meaning that a passkey from one device can be used to sign in on another device.
 
 ## System requirements
 
@@ -66,7 +66,7 @@ Follow these steps to create a passkey from a Windows device:
 
 - **This Windows device**: the passkey is saved locally on your Windows device, and protected by Windows Hello (biometrics and PIN)
 - **iPhone, iPad or Android device**: the passkey is stored on a phone or tablet, protected by the device's biometrics, if offered by the device. This option requires you to scan a QR code with your phone or tablet
-- **Linked device**: the key is stored on a *linked* device, typically a phone or tablet, protected by the device's biometrics or a PIN. This option is only supported for Android devices and requires the linked device to be connected via Bluetooth to the Windows device
+- **Linked device**: the key is stored on a *linked* device, typically a phone or tablet, protected by the device's biometrics or a PIN. This option is only supported for Android devices and requires the linked device to be connected via Bluetooth to the Windows device and becomes available after a passkey is created in the mobile device
 - **Security key**: the passkey is saved to a FIDO2 security key, protected by the key's unlock mechanism (for example, biometrics or PIN)
 
   :::column-end:::
