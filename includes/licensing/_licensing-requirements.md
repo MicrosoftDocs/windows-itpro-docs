@@ -14,13 +14,13 @@ ms.topic: include
 |**[App containers](/virtualization/windowscontainers/about/)**|Yes|Yes|Yes|Yes|Yes|
 |**[AppLocker](/windows/security/application-security/application-control/windows-defender-application-control/applocker/applocker-overview)**|❌|Yes|Yes|Yes|Yes|
 |**[Assigned Access (kiosk mode)](/windows/configuration/kiosk-methods)**|Yes|Yes|Yes|Yes|Yes|
-|**[Attack surface reduction (ASR)](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction?view=o365-worldwide)**|Yes|Yes|Yes|Yes|Yes|
+|**[Attack surface reduction (ASR)](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)**|Yes|Yes|Yes|Yes|Yes|
 |**[Azure Code Signing](/windows/security/application-security/application-control/windows-defender-application-control/deployment/use-code-signing-for-better-control-and-protection)**|Yes|Yes|Yes|Yes|Yes|
 |**[BitLocker enablement](/windows/security/operating-system-security/data-protection/bitlocker/)**|Yes|Yes|Yes|Yes|Yes|
 |**[BitLocker management](/windows/security/operating-system-security/data-protection/bitlocker/bitlocker-management-for-enterprises)**|❌|Yes|Yes|Yes|Yes|
 |**Bluetooth pairing and connection protection**|Yes|Yes|Yes|Yes|Yes|
 |**[Common Criteria certifications](/windows/security/security-foundations/certification/windows-platform-common-criteria)**|Yes|Yes|Yes|Yes|Yes|
-|**[Controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders?view=o365-worldwide)**|Yes|Yes|Yes|Yes|Yes|
+|**[Controlled folder access](/microsoft-365/security/defender-endpoint/controlled-folders)**|Yes|Yes|Yes|Yes|Yes|
 |**[Credential Guard](/windows/security/identity-protection/credential-guard/)**|❌|Yes|Yes|Yes|Yes|
 |**[Device health attestation service](/windows/security/operating-system-security/system-security/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices)**|Yes|Yes|Yes|Yes|Yes|
 |**[Direct Access](/windows-server/remote/remote-access/directaccess/directaccess)**|❌|Yes|Yes|Yes|Yes|
@@ -28,7 +28,7 @@ ms.topic: include
 |**[Email Encryption (S/MIME)](/windows/security/operating-system-security/data-protection/configure-s-mime)**|Yes|Yes|Yes|Yes|Yes|
 |**[Encrypted hard drive](/windows/security/operating-system-security/data-protection/encrypted-hard-drive)**|Yes|Yes|Yes|Yes|Yes|
 |**[Enhanced phishing protection with SmartScreen](/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection)**|Yes|Yes|Yes|Yes|Yes|
-|**[Exploit protection](/microsoft-365/security/defender-endpoint/exploit-protection?view=o365-worldwide)**|Yes|Yes|Yes|Yes|Yes|
+|**[Exploit protection](/microsoft-365/security/defender-endpoint/exploit-protection)**|Yes|Yes|Yes|Yes|Yes|
 |**[Federal Information Processing Standard (FIPS) 140 validation](/windows/security/security-foundations/certification/fips-140-validation)**|Yes|Yes|Yes|Yes|Yes|
 |**[Federated sign-in](/education/windows/federated-sign-in)**|❌|Yes|Yes|❌|❌|
 |**[FIDO2 security key](/azure/active-directory/authentication/howto-authentication-passwordless-security-key)**|Yes|Yes|Yes|Yes|Yes|
@@ -37,13 +37,13 @@ ms.topic: include
 |**[Kernel Direct Memory Access (DMA) protection](/windows/security/hardware-security/kernel-dma-protection-for-thunderbolt)**|Yes|Yes|Yes|Yes|Yes|
 |**[Local Security Authority (LSA) Protection](/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection)**|Yes|Yes|Yes|Yes|Yes|
 |**[Measured boot](/windows/compatibility/measured-boot)**|Yes|Yes|Yes|Yes|Yes|
-|**[Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows?view=o365-worldwide)**|Yes|Yes|Yes|Yes|Yes|
+|**[Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows)**|Yes|Yes|Yes|Yes|Yes|
 |**[Microsoft Defender Application Guard (MDAG) configure via MDM](/windows/client-management/mdm/windowsdefenderapplicationguard-csp)**|❌|Yes|Yes|Yes|Yes|
 |**[Microsoft Defender Application Guard (MDAG) for Edge enterprise mode and enterprise management](/windows/security/application-security/application-isolation/microsoft-defender-application-guard/configure-md-app-guard)**|❌|Yes|Yes|Yes|Yes|
 |**[Microsoft Defender Application Guard (MDAG) for Edge standalone mode](/windows/security/application-security/application-isolation/microsoft-defender-application-guard/md-app-guard-overview)**|Yes|Yes|Yes|Yes|Yes|
 |**[Microsoft Defender Application Guard (MDAG) for Microsoft Office](https://support.microsoft.com/office/application-guard-for-office-9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)**|❌|❌|❌|❌|❌|
 |**Microsoft Defender Application Guard (MDAG) public APIs**|❌|Yes|Yes|Yes|Yes|
-|**[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/?view=o365-worldwide)**|❌|❌|Yes|❌|Yes|
+|**[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)**|❌|❌|Yes|❌|Yes|
 |**[Microsoft Defender SmartScreen](/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/)**|Yes|Yes|Yes|Yes|Yes|
 |**[Microsoft Pluton](/windows/security/hardware-security/pluton/microsoft-pluton-security-processor)**|Yes|Yes|Yes|Yes|Yes|
 |**[Microsoft Security Development Lifecycle (SDL)](/windows/security/security-foundations/msft-security-dev-lifecycle)**|Yes|Yes|Yes|Yes|Yes|
@@ -67,7 +67,7 @@ ms.topic: include
 |**[Smart App Control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)**|Yes|Yes|Yes|Yes|Yes|
 |**[Smart Cards for Windows Service](/windows/security/identity-protection/smart-cards/smart-card-smart-cards-for-windows-service)**|Yes|Yes|Yes|Yes|Yes|
 |**Software Bill of Materials (SBOM)**|Yes|Yes|Yes|Yes|Yes|
-|**[Tamper protection settings for MDE](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection?view=o365-worldwide)**|Yes|Yes|Yes|Yes|Yes|
+|**[Tamper protection settings for MDE](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection)**|Yes|Yes|Yes|Yes|Yes|
 |**[Transport Layer Security (TLS)](/windows-server/security/tls/tls-ssl-schannel-ssp-overview)**|Yes|Yes|Yes|Yes|Yes|
 |**[Trusted Platform Module (TPM)](/windows/security/hardware-security/tpm/trusted-platform-module-overview)**|Yes|Yes|Yes|Yes|Yes|
 |**[Universal Print](/universal-print/)**|❌|Yes|Yes|Yes|Yes|
