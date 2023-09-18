@@ -105,8 +105,8 @@ productDirectory:
           text: Configuration Service Provider (CSP)
         - url: /windows/client-management/administrative-tools-in-windows-10
           text: Windows administrative tools
-        - url: /windows/client-management/client-tools/quick-assist
-          text: Use Quick Assist to help users
+        - url: /windows/client-management/manage-windows-copilot
+          text: Manage Windows Copilot
         - url: /windows/application-management/index
           text: Learn more about application management >
         - url: /windows/client-management
