@@ -2,6 +2,15 @@
 
 
 
+## Week of September 11, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/11/2023 | [Configure education themes for Windows 11](/education/windows/edu-themes) | modified |
+| 9/11/2023 | [Configure federated sign-in for Windows devices](/education/windows/federated-sign-in) | modified |
+
+
 ## Week of September 04, 2023
 
 
