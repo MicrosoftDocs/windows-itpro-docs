@@ -110,6 +110,8 @@ items:
   items:
   - name: PIN reset
     href: hello-feature-pin-reset.md
+  - name: Windows Hello Enhanced Security Sign-in (ESS) 🔗
+    href: /windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security
   - name: Dual enrollment
     href: hello-feature-dual-enrollment.md  
   - name: Dynamic Lock
