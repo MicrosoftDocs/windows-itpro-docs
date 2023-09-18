@@ -81,18 +81,18 @@ The following .xml file migrates all files and subfolders in `C:\Data`, except t
     <component type="Documents" context="System">
         <displayName _locID="miguser.sharedvideo">Test component</displayName>
         <role role="Data">
-            <rules>
-         <include>
-            <objectSet>
-                 <pattern type="File">C:\Data\* [*]</pattern>
-            </objectSet>
-          </include>
-         <exclude>
+           <rules>
+            <include>
              <objectSet>
-                   <pattern type="File"> C:\Data\temp\* [*]</pattern>
+                <pattern type="File">C:\Data\* [*]</pattern>
              </objectSet>
-         </exclude>  
-            </rules>
+            </include>
+            <exclude>
+             <objectSet>
+               <pattern type="File"> C:\Data\temp\* [*]</pattern>
+             </objectSet>
+            </exclude>  
+           </rules>
         </role>
     </component>
 </migration>
@@ -110,14 +110,14 @@ The following .xml file migrates any subfolders in `C:\`EngineeringDrafts`, but 
     <rules>
          <include>
             <objectSet>
-                 <pattern type="File"> C:\EngineeringDrafts\* [*]</pattern>
+              <pattern type="File"> C:\EngineeringDrafts\* [*]</pattern>
             </objectSet>
-          </include>
-      <exclude>
-        <objectSet>
-          <pattern type="File"> C:\EngineeringDrafts\ [*]</pattern>
-        </objectSet>
-      </exclude>
+         </include>
+         <exclude>
+            <objectSet>
+               <pattern type="File"> C:\EngineeringDrafts\ [*]</pattern>
+            </objectSet>
+         </exclude>
     </rules>
   </role>
 </component>
@@ -136,14 +136,14 @@ The following .xml file migrates all files and subfolders in `C:\EngineeringDraf
     <rules>
          <include>
             <objectSet>
-                 <pattern type="File"> C:\EngineeringDrafts\* [*]</pattern>
+               <pattern type="File"> C:\EngineeringDrafts\* [*]</pattern>
             </objectSet>
           </include>
-      <exclude>
-        <objectSet>
-          <pattern type="File"> C:\EngineeringDrafts\ [Sample.doc]</pattern>
-        </objectSet>
-      </exclude>
+         <exclude>
+            <objectSet>
+               <pattern type="File"> C:\EngineeringDrafts\ [Sample.doc]</pattern>
+            </objectSet>
+         </exclude>
     </rules>
   </role>
 </component>
@@ -175,15 +175,15 @@ The following .xml file excludes all `.mp3` files from the migration:
 ```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/excludefiles">
   <component context="System" type="Documents">
-        <displayName>Test</displayName>
+     <displayName>Test</displayName>
         <role role="Data">
-            <rules>
+           <rules>
              <unconditionalExclude>
-                        <objectSet>
-    <script>MigXmlHelper.GenerateDrivePatterns ("* [*.mp3]", "Fixed")</script>
-                        </objectSet> 
+                <objectSet>
+                   <script>MigXmlHelper.GenerateDrivePatterns ("* [*.mp3]", "Fixed")</script>
+                </objectSet> 
              </unconditionalExclude>
-            </rules>
+           </rules>
         </role>
     </component>
 </migration>
@@ -196,16 +196,16 @@ The following .xml file excludes only the files located on the C: drive.
 ```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/allfiles">
     <component type="Documents" context="System">
-        <displayName>Test</displayName>
-        <role role="Data">
+       <displayName>Test</displayName>
+         <role role="Data">
             <rules>
-  <unconditionalExclude>
-                    <objectSet>
-      <pattern type="File">c:\*[*]</pattern>
-                    </objectSet>
-  </unconditionalExclude>
+               <unconditionalExclude>
+                  <objectSet>
+                     <pattern type="File">c:\*[*]</pattern>
+                  </objectSet>
+               </unconditionalExclude>
             </rules>
-        </role>
+         </role>
     </component>
 </migration>
 ```
@@ -219,20 +219,20 @@ The following .xml file unconditionally excludes the `HKEY_CURRENT_USER` registr
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/miguser">
    <component type="Documents" context="User">
       <displayName>Test</displayName>
-      <role role="Data">
-         <rules>
-            <include>
-               <objectSet>
-                  <pattern type="Registry">HKCU\testReg[*]</pattern>
-               </objectSet>
-            </include>
-            <unconditionalExclude>
-               <objectSet>
-                  <pattern type="Registry">HKCU\*[*]</pattern>
-               </objectSet>
-            </unconditionalExclude>
-         </rules>
-      </role>
+         <role role="Data">
+            <rules>
+               <include>
+                  <objectSet>
+                    <pattern type="Registry">HKCU\testReg[*]</pattern>
+                  </objectSet>
+               </include>
+                  <unconditionalExclude>
+                    <objectSet>
+                       <pattern type="Registry">HKCU\*[*]</pattern>
+                    </objectSet>
+                  </unconditionalExclude>
+            </rules>
+         </role>
    </component>
 </migration>
 ```
@@ -246,23 +246,23 @@ The following .xml file unconditionally excludes the system folders of `C:\Windo
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/miguser">
    <component type="Documents" context="System">
       <displayName>Test</displayName>
-      <role role="Data">
+        <role role="Data">
          <rules>
-            <include>
-               <objectSet>
-    <script>MigXmlHelper.GenerateDrivePatterns ("* [*.doc]", "Fixed")</script>
-    <script>MigXmlHelper.GenerateDrivePatterns ("* [*.xls]", "Fixed")</script>
-    <script>MigXmlHelper.GenerateDrivePatterns ("* [*.ppt]", "Fixed")</script>
-               </objectSet>
-            </include>
-            <unconditionalExclude>
-               <objectSet>
-                  <pattern type="File">C:\Program Files\* [*]</pattern>
-<pattern type="File">C:\Windows\* [*]</pattern>
-               </objectSet>
-            </unconditionalExclude>
+           <include>
+              <objectSet>
+                 <script>MigXmlHelper.GenerateDrivePatterns ("* [*.doc]", "Fixed")</script>
+                 <script>MigXmlHelper.GenerateDrivePatterns ("* [*.xls]", "Fixed")</script>
+                 <script>MigXmlHelper.GenerateDrivePatterns ("* [*.ppt]", "Fixed")</script>
+              </objectSet>
+           </include>
+             <unconditionalExclude>
+              <objectSet>
+                <pattern type="File">C:\Program Files\* [*]</pattern>
+                <pattern type="File">C:\Windows\* [*]</pattern>
+              </objectSet>
+             </unconditionalExclude>
          </rules>
-      </role>
+        </role>
    </component>
 </migration>
 ```
