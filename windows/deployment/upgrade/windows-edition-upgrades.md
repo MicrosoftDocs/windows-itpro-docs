@@ -1,6 +1,6 @@
 ---
 title: Windows edition upgrade
-description: Windows can quickly upgrade from one edition of Windows to another, provided the upgrade path is supported.
+description: With Windows, you can quickly upgrade from one edition of Windows to another, provided the upgrade path is supported.
 manager: aaroncz
 ms.author: frankroj
 ms.prod: windows-client
@@ -19,37 +19,45 @@ appliesto:
 
 # Windows edition upgrade
 
-With Windows 10, you can quickly upgrade from one edition of Windows 10 to another, provided the upgrade path is supported. For information on what edition of Windows 10 is right for you, see [Compare Windows 10 Editions](https://go.microsoft.com/fwlink/p/?LinkID=690882). For a comprehensive list of all possible upgrade paths to Windows 10, see [Windows 10 upgrade paths](windows-10-upgrade-paths.md). Downgrading the edition of Windows is discussed in the [License expiration](#license-expiration) section on this page.
+With Windows, you can quickly upgrade from one edition of Windows to another, provided the upgrade path is supported. For information on what edition of Windows is right for you, see the following articles:
 
-The following table shows the methods and paths available to change the edition of Windows 10 that is running on your computer.
+- [Compare Windows 11 Editions](https://www.microsoft.com/windows/business/compare-windows-11).
+- [Explore Windows 11 Pro features](https://www.microsoft.com/windows/business/windows-11-pro).
+- [Windows 10 Pro vs Windows 11 Pro](https://www.microsoft.com/windows/business/windows-10-pro-vs-windows-11-pro).
+- [Compare Windows 10 Editions](https://go.microsoft.com/fwlink/p/?LinkID=690882).
+- [Windows For Business](https://www.microsoft.com/windows/business).
 
-> [!NOTE]
->
-> The reboot requirement for upgrading from Pro to Enterprise was removed in version 1607.
+For a comprehensive list of all possible upgrade paths to Windows, see [Windows upgrade paths](windows-upgrade-paths.md). Downgrading the edition of Windows is discussed in the [License expiration](#license-expiration) section on this page.
+
+The following table shows the methods and paths available to change the edition of Windows that is running on your computer.
 
 > [!TIP]
 >
-> Although it isn't displayed yet in the table, edition upgrade is also possible using [edition upgrade policy](/configmgr/compliance/deploy-use/upgrade-windows-version) in Microsoft Configuration Manager.
+> Although it isn't displayed yet in the table, edition upgrade is also possible using edition upgrade policy in Microsoft Configuration Manager. For more information, see [Upgrade Windows devices to a new edition with Configuration Manager](/mem/configmgr/compliance/deploy-use/upgrade-windows-version).
+
+| Edition upgrade | Using mobile device management (MDM) | Using a provisioning package | Using a command-line tool | Entering a product key manually |
+|-----------------| ------------------------------------ | --------------------------- | ------------------------- | ----------------------------------- |
+| **Home > Pro** | No | No | No | Yes w/ reboot |
+| **Home > Pro for Workstations** | No | No | No | Yes w/ reboot |
+| **Home > Pro Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot |
+| **Home > Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot |
+| **Pro > Pro for Workstations** | Yes | Yes | Yes | Yes |
+| **Pro > Pro Education** | Yes | Yes | Yes | Yes |
+| **Pro > Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot |
+| **Pro > Enterprise** | Yes | Yes | Yes | Yes |
+| **Pro for Workstations > Pro Education** | Yes | Yes | Yes | Yes |
+| **Pro for Workstations > Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot |
+| **Pro for Workstations > Enterprise** | Yes | Yes | Yes | Yes |
+| **Pro Education > Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot |
+| **Enterprise > Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot |
 
 - Yes w/ reboot = supported, but reboot required.
 - Yes = supported, no reboot required.
 - No = not supported.
 
-| Edition upgrade | Using mobile device management (MDM) | Using a provisioning package | Using a command-line tool | Using Microsoft Store for Business or PC | Entering a product key manually | Purchasing a license from the Microsoft Store |
-|-----------------| ------------------------------------ | --------------------------- | ------------------------- | -------------------------------------- | ----------------------------------- | --------------------------------------------- |
-| **Home > Pro** | No | No | No | No | Yes w/ reboot | Yes w/ reboot |
-| **Home > Pro for Workstations** | No | No | No | No | Yes w/ reboot | Yes w/ reboot |
-| **Home > Pro Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | No | Yes w/ reboot | No |
-| **Home > Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | No | Yes w/ reboot | No |
-| **Pro > Pro for Workstations** | Yes | Yes | Yes | Yes <br>(Microsoft Store for Business) | Yes | Yes |
-| **Pro > Pro Education** | Yes | Yes | Yes | Yes <br>(Microsoft Store for Business) | Yes | No |
-| **Pro > Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot <br>(Microsoft Store for Business) | Yes w/ reboot | No |
-| **Pro > Enterprise** | Yes | Yes | Yes | Yes | Yes | No |
-| **Pro for Workstations > Pro Education** | Yes | Yes | Yes | Yes <br>(Microsoft Store for Business) | Yes | No |
-| **Pro for Workstations > Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot <br>(Microsoft Store for Business) | Yes w/ reboot | No |
-| **Pro for Workstations > Enterprise** | Yes | Yes | Yes | Yes | Yes | No |
-| **Pro Education > Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot <br>(Microsoft Store for Business) | Yes w/ reboot | No |
-| **Enterprise > Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot <br>(Microsoft Store for Business) | Yes w/ reboot | No |
+> [!NOTE]
+>
+> Edition upgrades via Microsoft Store for Business is no longer available with the [retirement of Microsoft Store for Business](/announcements/microsoft-store-for-business-education-retiring).
 
 > [!NOTE]
 >
