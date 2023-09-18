@@ -37,8 +37,8 @@ The following table shows the methods and paths available to change the edition 
 
 | Edition upgrade | Using mobile device management (MDM) | Using a provisioning package | Using a command-line tool | Entering a product key manually |
 |-----------------| ------------------------------------ | --------------------------- | ------------------------- | ----------------------------------- |
-| **Home > Pro** | No | No | No | Yes w/ reboot |
-| **Home > Pro for Workstations** | No | No | No | Yes w/ reboot |
+| **Home > Pro** | ❌ | ❌ | ❌ | Yes w/ reboot |
+| **Home > Pro for Workstations** | ❌ | ❌ | ❌ | Yes w/ reboot |
 | **Home > Pro Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot |
 | **Home > Education** | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot | Yes w/ reboot |
 | **Pro > Pro for Workstations** | Yes | Yes | Yes | Yes |
@@ -53,7 +53,7 @@ The following table shows the methods and paths available to change the edition 
 
 - Yes w/ reboot = supported, but reboot required.
 - Yes = supported, no reboot required.
-- No = not supported.
+- ❌ = not supported.
 
 > [!NOTE]
 >
@@ -143,13 +143,13 @@ You can move directly from Enterprise to any valid destination edition. In this 
 
 | **Edition** | **Home** | **Pro** | **Pro for Workstations** | **Pro Education** | **Education** | **Enterprise LTSC** | **Enterprise** |
 |-----------------| ------------------------------------ | --------------------------- | ------------------------- | -------------------------------------- | ----------------------------------- | --------------------------------------------- |--------------------------------------------- |
-| **Home** | - | No | No | No | No | No | No |
-| **Pro** | No | - | No | No | No | No | No |
-| **Pro for Workstations** | No | No | - | No | No | No | No |
-| **Pro Education** | No | No | No | - | No | No | No |
-| **Education** | No | Yes | Yes | Yes | - | No | - |
-| **Enterprise LTSC** | No | No | No | No | No | - | No |
-| **Enterprise** | No | Yes | Yes | Yes | - | No | - |
+| **Home** | - | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| **Pro** | ❌ | - | ❌ | ❌ | ❌ | ❌ | ❌ |
+| **Pro for Workstations** | ❌ | ❌ | - | ❌ | ❌ | ❌ | ❌ |
+| **Pro Education** | ❌ | ❌ | ❌ | - | ❌ | ❌ | ❌ |
+| **Education** | ❌ | Yes | Yes | Yes | - | ❌ | - |
+| **Enterprise LTSC** | ❌ | ❌ | ❌ | ❌ | ❌ | - | ❌ |
+| **Enterprise** | ❌ | Yes | Yes | Yes | - | ❌ | - |
 
 **Windows N/KN**: Windows **N** and **KN** SKUs follow the same rules shown in the table.
 
