@@ -322,7 +322,7 @@ To learn more about passkeys and how developers can add passkey support to their
 
 The following video provides a demo of passkeys in action across different platforms:
 
-> [!VIDEO https://youtu.be/SWocv4BhCNg]
+> [!VIDEO https://www.youtube.com/embed/SWocv4BhCNg]
 
 ### :::image type="icon" source="../../images/icons/feedback.svg" border="false"::: Provide feedback
 
