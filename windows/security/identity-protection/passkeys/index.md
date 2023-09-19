@@ -304,7 +304,9 @@ Pick one of the following options to learn how to use a passkey, based on where 
 ### Manage passkeys
 
 > [!div class="nextstepaction"]
-> To view and manage passkeys saved for apps or websites, go to **Settings > Accounts > Passkeys**, or use the following shortcut: [Manage passkeys](ms-settings:savedpasskeys)
+> To view and manage passkeys saved for apps or websites, go to **Settings > Accounts > Passkeys**, or use the following shortcut:
+>
+> [Manage passkeys](ms-settings:savedpasskeys)
 
 - A list of saved passkeys is displayed and you can filter them by name
 - To delete a passkey, select **... > Delete passkey** next to the passkey name
@@ -318,19 +320,16 @@ Pick one of the following options to learn how to use a passkey, based on where 
 
 To learn more about passkeys and how developers can add passkey support to their apps and websites, visit [passkeys.dev][EXT-1].
 
-### Provide feedback
+The following video provides a demo of passkeys in action across different platforms:
 
-:::row:::
-  :::column span="1":::
-  :::image type="icon" source="../../images/icons/feedback.svg" border="false":::
-  :::column-end:::
-  :::column span="3":::
-    To provide feedback for passkeys, open [**Feedback Hub**][FHUB] and use the category **Security and Privacy > Passkey**.
-  :::column-end:::
-:::row-end:::
+> [!VIDEO https://youtu.be/SWocv4BhCNg]
+
+### :::image type="icon" source="../../images/icons/feedback.svg" border="false"::: Provide feedback
+
+To provide feedback for passkeys, open [**Feedback Hub**][FHUB] and use the category **Security and Privacy > Passkey**.
 
 <!--links used in this document-->
 
 [FHUB]: feedback-hub:?tabid=2&newFeedback=true
 [KB-1]: https://support.microsoft.com/kb/5030310
-[EXT-1]: https://passkey.dev
+[EXT-1]: https://passkeys.dev
