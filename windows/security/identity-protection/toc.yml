@@ -13,8 +13,8 @@ items:
       href: /azure/active-directory/authentication/howto-authentication-passwordless-security-key
     - name: Windows passwordless experience
       href: passwordless-experience/index.md
-    - name: Passkey
-      href: passkey/index.md
+    - name: Passkeys
+      href: passkeys/index.md
     - name: Smart Cards
       href: smart-cards/toc.yml
     - name: Virtual smart cards

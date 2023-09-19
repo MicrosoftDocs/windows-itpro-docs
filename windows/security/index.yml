@@ -78,7 +78,7 @@ productDirectory:
         - url: /windows/security/identity-protection/web-sign-in
           text: Web sign-in for Windows
         - url: /windows/security/identity-protection/passkey
-          text: Passkey support in Windows 
+          text: Support for passkeys in Windows
         - url: /windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/enhanced-phishing-protection
           text: Enhanced phishing protection with SmartScreen
         - url: /windows/security/identity-protection

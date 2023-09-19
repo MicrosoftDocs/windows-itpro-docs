@@ -1,5 +1,5 @@
 ---
-title: Passkey support in Windows
+title: Support for passkeys in Windows
 description: Learn about passkeys and how to use them on Windows devices.
 ms.collection: 
 - highpri
@@ -10,11 +10,14 @@ appliesto:
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 ---
 
-# Passkey support in Windows
+# Support for passkeys in Windows
 
 Passkeys provide a more secure and convenient method to logging into websites and applications compared to passwords. Unlike passwords, which users must remember and type, passkeys are stored as secrets on a device and can use a device's unlock mechanism (such as biometrics or a PIN). Passkeys can be used without the need for other sign in challenges, making the authentication process faster, secure, and more convenient.
 
-Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can use passkeys with any applications or websites that support them to create and sign in with the Windows Hello native experience. Once a passkey is created and stored with Windows Hello, you can use Windows Hello (biometrics and PIN) or a companion device (phone or tablet) to sign in.
+You can use passkeys with any applications or websites that support them to create and sign in with the Windows Hello native experience. Once a passkey is created and stored with Windows Hello, you can use Windows Hello (biometrics and PIN) or a companion device (phone or tablet) to sign in.
+
+> [!NOTE]
+> Windows provides a *native experience* for passkey management starting in Windows 11, version 22H2 with [KB5030310][KB-1]. However, passkey support is available in all supported versions of Windows clients.
 
 This article describes how to create and use passkeys on Windows devices.
 
@@ -30,11 +33,7 @@ FIDO protocols prioritize user privacy, as they're designed to prevent online se
 
 Passkeys have several advantages over passwords, including their ease of use and intuitive nature. Unlike passwords, passkeys don't require a creation process, don't need to be remembered, and don't need to be safeguarded. Additionally, passkeys are unique to each website or application, preventing their reuse. They're highly secure because they're only stored on the user's devices, with the service only storing public keys. Passkeys are resistant to phishing attempts, as they're enforced by the browsers or operating systems to only be used for the appropriate service, rather than relying on human verification. Finally, passkeys provide cross-device and cross-platform authentication, meaning that a passkey from one device can be used to sign in on another device.
 
-## System requirements
-
-Windows provides a native experience for passkey management starting in Windows 11, version 22H2 with [KB5030310][KB-1].
-
-[!INCLUDE [passkey](../../../../includes/licensing/passkey.md)]
+[!INCLUDE [passkey](../../../../includes/licensing/passkeys.md)]
 
 ## User experiences
 
@@ -105,7 +104,7 @@ Pick one of the following options to learn how to save a passkey, based on where
   :::column-end:::
 :::row-end:::
 
-#### [:::image type="icon" source="images/qr-code.svg" border="false"::: **Phone or tablet**](#tab/mobile)
+#### [:::image type="icon" source="images/qr-code.svg" border="false"::: **New phone or tablet**](#tab/mobile)
 
 :::row:::
   :::column span="3":::
@@ -128,7 +127,7 @@ Pick one of the following options to learn how to save a passkey, based on where
   :::column-end:::
 :::row-end:::
 
-#### [:::image type="icon" source="images/phone.svg" border="false"::: **Linked device**](#tab/linked)
+#### [:::image type="icon" source="images/phone.svg" border="false"::: **Linked phone or tablet**](#tab/linked)
 
 :::row:::
   :::column span="3":::
@@ -236,7 +235,7 @@ Pick one of the following options to learn how to use a passkey, based on where 
   :::column-end:::
 :::row-end:::
 
-#### [:::image type="icon" source="images/qr-code.svg" border="false"::: **Phone or tablet**](#tab/mobile)
+#### [:::image type="icon" source="images/qr-code.svg" border="false"::: **New phone or tablet**](#tab/mobile)
 
 :::row:::
   :::column span="3":::
@@ -256,7 +255,7 @@ Pick one of the following options to learn how to use a passkey, based on where 
   :::column-end:::
 :::row-end:::
 
-#### [:::image type="icon" source="images/phone.svg" border="false"::: **Linked device**](#tab/linked)
+#### [:::image type="icon" source="images/phone.svg" border="false"::: **Linked phone or tablet**](#tab/linked)
 
 :::row:::
   :::column span="3":::
@@ -312,7 +311,7 @@ To view and manage passkeys saved for apps or websites, go to **Settings > Accou
 :::image type="content" source="images/delete-passkey.png" alt-text="Screenshot of the Settings app showing the delete option for a passkey." lightbox="images/delete-passkey.png" border="false":::
 
 > [!NOTE]
-> You can't delete the passkey used to sign in to your Windows device, either Microsoft Entra ID or Microsoft Account.
+> Some passkeys for *login.microsoft.com* can't be deleted, as they're used with Microsoft Entra ID and/or Microsoft Account for signing in to the device and Microsoft services.
 
 ## Provide feedback
 

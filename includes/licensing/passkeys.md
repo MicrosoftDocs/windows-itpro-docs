@@ -7,13 +7,13 @@ ms.topic: include
 
 ## Windows edition and licensing requirements
 
-The following table lists the Windows editions that support Passkey:
+The following table lists the Windows editions that support passkeys:
 
 |Windows Pro|Windows Enterprise|Windows Pro Education/SE|Windows Education|
 |:---:|:---:|:---:|:---:|
 |Yes|Yes|Yes|Yes|
 
-Passkey license entitlements are granted by the following licenses:
+Passkeys license entitlements are granted by the following licenses:
 
 |Windows Pro/Pro Education/SE|Windows Enterprise E3|Windows Enterprise E5|Windows Education A3|Windows Education A5|
 |:---:|:---:|:---:|:---:|:---:|
