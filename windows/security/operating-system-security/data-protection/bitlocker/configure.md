@@ -58,6 +58,8 @@ With this policy setting, it can be configured whether BitLocker requires additi
 
 Computer or User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button**
 
+---
+
 ### Allow network unlock at startup 1
 
 With this policy setting, it can be configured whether BitLocker requires additional authentication each time the computer starts and whether BitLocker will be used with a Trusted Platform Module (TPM). This policy setting is applied when BitLocker is turned on.
@@ -74,6 +76,8 @@ With this policy setting, it can be configured whether BitLocker requires additi
 #### [:::image type="icon" source="../../../images/icons/group-policy.svg"::: **CSP**](#tab/csp)
 
 Computer or User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button**
+
+---
 
 ### Require additional authentication at startup 1
 
