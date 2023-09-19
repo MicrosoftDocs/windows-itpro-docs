@@ -318,15 +318,7 @@ Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can use the Set
 > [!NOTE]
 > Some passkeys for *login.microsoft.com* can't be deleted, as they're used with Microsoft Entra ID and/or Microsoft Account for signing in to the device and Microsoft services.
 
-## Next steps
-
-To learn more about passkeys and how developers can add passkey support to their apps and websites, visit [passkeys.dev][EXT-1].
-
-The following video provides a demo of passkeys in action across different platforms:
-
-> [!VIDEO https://www.youtube.com/embed/SWocv4BhCNg]
-
-### :::image type="icon" source="../../images/icons/feedback.svg" border="false"::: Provide feedback
+## :::image type="icon" source="../../images/icons/feedback.svg" border="false"::: Provide feedback
 
 To provide feedback for passkeys, open [**Feedback Hub**][FHUB] and use the category **Security and Privacy > Passkey**.
 
