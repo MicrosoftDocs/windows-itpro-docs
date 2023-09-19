@@ -303,7 +303,9 @@ Pick one of the following options to learn how to use a passkey, based on where 
 
 ### Manage passkeys
 
-To view and manage passkeys saved for apps or websites, go to **Settings > Accounts > Passkeys**:
+To view and manage passkeys saved for apps or websites, go to **Settings > Accounts > Passkeys**, or use the following shortcut:
+> [!div class="nextstepaction"]
+> [Manage passkeys](ms-settings:savedpasskeys)
 
 - A list of saved passkeys is displayed and you can filter them by name
 - To delete a passkey, select **... > Delete passkey** next to the passkey name
