@@ -8,16 +8,17 @@ ms.topic: article
 ms.date: 09/06/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ---
 
 # Support for passkeys in Windows
 
 Passkeys provide a more secure and convenient method to logging into websites and applications compared to passwords. Unlike passwords, which users must remember and type, passkeys are stored as secrets on a device and can use a device's unlock mechanism (such as biometrics or a PIN). Passkeys can be used without the need for other sign in challenges, making the authentication process faster, secure, and more convenient.
 
-You can use passkeys with any applications or websites that support them to create and sign in with the Windows Hello native experience. Once a passkey is created and stored with Windows Hello, you can use Windows Hello (biometrics and PIN) or a companion device (phone or tablet) to sign in.
+You can use passkeys with any applications or websites that support them, to create and sign in with Windows Hello. Once a passkey is created and stored with Windows Hello, you can use your device's biometrics or PIN to sign in. Alternatively, you can use a companion device (phone or tablet) to sign in.
 
 > [!NOTE]
-> Windows provides a *native experience* for passkey management starting in Windows 11, version 22H2 with [KB5030310][KB-1]. However, passkey support is available in all supported versions of Windows clients.
+> Starting in Windows 11, version 22H2 with [KB5030310][KB-1], Windows provides a native experience for passkey management. However, passkeys can be used in all supported versions of Windows clients.
 
 This article describes how to create and use passkeys on Windows devices.
 
@@ -303,8 +304,9 @@ Pick one of the following options to learn how to use a passkey, based on where 
 
 ### Manage passkeys
 
+Starting in Windows 11, version 22H2 with [KB5030310][KB-1], you can use the Settings app to view and manage passkeys saved for apps or websites. Go to **Settings > Accounts > Passkeys**, or use the following shortcut:
+
 > [!div class="nextstepaction"]
-> To view and manage passkeys saved for apps or websites, go to **Settings > Accounts > Passkeys**, or use the following shortcut:
 >
 > [Manage passkeys](ms-settings:savedpasskeys)
 
