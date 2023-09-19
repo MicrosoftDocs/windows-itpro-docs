@@ -314,11 +314,23 @@ Pick one of the following options to learn how to use a passkey, based on where 
 > [!NOTE]
 > Some passkeys for *login.microsoft.com* can't be deleted, as they're used with Microsoft Entra ID and/or Microsoft Account for signing in to the device and Microsoft services.
 
-## Provide feedback
+## Next steps
 
-To provide feedback for Windows Hello for Business passwordless experience, open [**Feedback Hub**][FHUB] and use the category **Security and Privacy > Passkey**.
+To learn more about passkeys and how developers can add passkey support to their apps and websites, visit [passkeys.dev][EXT-1].
+
+### Provide feedback
+
+:::row:::
+  :::column span="1":::
+  :::image type="icon" source="../../images/icons/feedback.svg" border="false":::
+  :::column-end:::
+  :::column span="3":::
+    To provide feedback for passkeys, open [**Feedback Hub**][FHUB] and use the category **Security and Privacy > Passkey**.
+  :::column-end:::
+:::row-end:::
 
 <!--links used in this document-->
 
-[FHUB]: feedback-hub://?tabid=2&newFeedback=true&feedbackType=1
+[FHUB]: feedback-hub:?tabid=2&newFeedback=true
 [KB-1]: https://support.microsoft.com/kb/5030310
+[EXT-1]: https://passkey.dev
