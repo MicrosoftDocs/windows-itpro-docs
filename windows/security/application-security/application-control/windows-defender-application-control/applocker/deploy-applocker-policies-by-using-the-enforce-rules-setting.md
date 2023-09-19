@@ -31,11 +31,11 @@ Rule enforcement is applied only to a collection of rules, not to individual rul
 
 ## Step 3: Update the policy
 
-You can edit an AppLocker policy by adding, changing, or removing rules. However, you can't specify a version for the AppLocker policy by importing more rules. To ensure version control when modifying an AppLocker policy, use Group Policy management software that allows you to create versions of GPOs. An example of this type of software is the [Advanced Group Policy Management](https://go.microsoft.com/fwlink/p/?LinkId=145013) feature from the 
-Microsoft Desktop Optimization Pack.
+You can edit an AppLocker policy by adding, changing, or removing rules. However, you can't specify a version for the AppLocker policy by importing more rules. To ensure version control when modifying an AppLocker policy, use Group Policy management software that allows you to create versions of GPOs. An example of this type of software is the [Advanced Group Policy Management](/microsoft-desktop-optimization-pack/agpm/) feature from the Microsoft Desktop Optimization Pack.
 
->**Caution:**  You should not edit an AppLocker rule collection while it is being enforced in Group Policy. Because AppLocker controls what files are allowed to run, making changes to a live policy can create unexpected behavior.
- 
+> [!CAUTION]
+> You should not edit an AppLocker rule collection while it is being enforced in Group Policy. Because AppLocker controls what files are allowed to run, making changes to a live policy can create unexpected behavior.
+
 For the procedure to update the GPO, see [Import an AppLocker policy into a GPO](import-an-applocker-policy-into-a-gpo.md).
 
 For the procedures to distribute policies for local PCs by using the Local Security Policy snap-in (secpol.msc), see [Export an AppLocker policy to an XML file](export-an-applocker-policy-to-an-xml-file.md) and [Import an AppLocker policy from another computer](import-an-applocker-policy-from-another-computer.md).

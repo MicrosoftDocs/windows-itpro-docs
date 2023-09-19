@@ -1,26 +1,26 @@
 ---
 title: Define readiness criteria
-description: Identify important roles and figure out how to classify apps
+description: Identify important roles and figure out how to classify apps so you can plan and manage your deployment
 ms.prod: windows-client
+ms.technology: itpro-updates
+ms.topic: conceptual
 author: mestew
 ms.author: mstewart
 manager: aaroncz
 ms.localizationpriority: medium
-ms.topic: article
-ms.technology: itpro-updates
+appliesto: 
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
+- ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
 ms.date: 12/31/2017
 ---
 
 # Define readiness criteria
 
-**Applies to**
-
--   Windows 10
--   Windows 11
+Planning and managing a deployment involves a variety of distinct activities and roles best suited to each activity. This article describes how to identify important roles and figure out how to classify apps.
 
 ## Figure out roles and personnel
 
-Planning and managing a deployment involves a variety of distinct activities and roles best suited to each. As you plan, it's worth figuring out which roles you'll need to carry out the deployment and who should fill them. Different roles are active at various phases of a deployment. Depending on the size and complexity of your organization, some of the roles could be filled by the same person. However, it's best to have an established *process manager*, who will oversee all of the tasks for the deployment.
+As you plan, it's worth figuring out which roles you'll need to carry out the deployment and who should fill them. Different roles are active at various phases of a deployment. Depending on the size and complexity of your organization, some of the roles could be filled by the same person. However, it's best to have an established *process manager*, who will oversee all of the tasks for the deployment.
 
 ### Process manager
 
@@ -50,13 +50,9 @@ This table sketches out one view of the other roles, with their responsibilities
 |Stakeholders     | Represent groups affected by updates, for example, heads of finance, end-user services, or change management        | Key decision maker for a business unit or department        | Plan, pilot deployment, broad deployment        |
 
 
-
-
-
-
 ## Set criteria for rating apps
 
-Some apps in your environment are fundamental to your core business activities. Other apps help workers perform their roles, but aren’t critical to your business operations. Before you start inventorying and assessing the apps in your environment, you should establish some criteria for categorizing your apps, and then determine a priority for each. This process will help you understand how best to deploy updates and how to resolve any issues that could arise.
+Some apps in your environment are fundamental to your core business activities. Other apps help workers perform their roles, but aren't critical to your business operations. Before you start inventorying and assessing the apps in your environment, you should establish some criteria for categorizing your apps, and then determine a priority for each. This process will help you understand how best to deploy updates and how to resolve any issues that could arise.
 
 In the Prepare phase, you'll apply the criteria you define now to every app in your organization.
 
@@ -78,7 +74,7 @@ Here's an example priority rating system; the specifics could vary for your orga
 |---------|---------|
 |1        | Any issues or risks identified must be investigated and resolved as soon as possible.        |
 |2     | Start investigating risks and issues within two business days and fix them *during* the current deployment cycle.    |
-|3     | Start investigating risks and issues within 10 business days. You don’t have to fix them all within the current deployment cycle. However, all issues must be fixed by the end of the next deployment cycle.        |
+|3     | Start investigating risks and issues within 10 business days. You don't have to fix them all within the current deployment cycle. However, all issues must be fixed by the end of the next deployment cycle.        |
 |4     | Start investigating risks and issues within 20 business days. You can fix them in the current or any future development cycle.        |
 
 Related to priority, but distinct, is the concept of severity. You should define a severity ranking as well, based on how you feel a problem with an app should affect the deployment cycle.

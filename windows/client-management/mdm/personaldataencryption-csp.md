@@ -4,7 +4,7 @@ description: Learn more about the PDE CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 05/10/2023
+ms.date: 08/10/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -36,7 +36,7 @@ The following list shows the PDE configuration service provider nodes:
 <!-- User-EnablePersonalDataEncryption-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- User-EnablePersonalDataEncryption-Applicability-End -->
 
 <!-- User-EnablePersonalDataEncryption-OmaUri-Begin -->
@@ -85,7 +85,7 @@ The [UserDataProtectionManager Class](/uwp/api/windows.security.dataprotection.u
 <!-- User-Status-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- User-Status-Applicability-End -->
 
 <!-- User-Status-OmaUri-Begin -->
@@ -127,7 +127,7 @@ Reports the current status of Personal Data Encryption (PDE) for the user.
 <!-- User-Status-PersonalDataEncryptionStatus-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE | ✅ Windows 11, version 22H2 [10.0.22621] and later |
+| ❌ Device <br> ✅ User | ❌ Pro <br> ✅ Enterprise <br> ✅ Education <br> ❌ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 22H2 [10.0.22621] and later |
 <!-- User-Status-PersonalDataEncryptionStatus-Applicability-End -->
 
 <!-- User-Status-PersonalDataEncryptionStatus-OmaUri-Begin -->

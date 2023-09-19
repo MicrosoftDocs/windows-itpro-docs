@@ -4,7 +4,7 @@ description: Learn more about the Notifications Area in Policy CSP.
 author: vinaypamnani-msft
 manager: aaroncz
 ms.author: vinpa
-ms.date: 07/06/2023
+ms.date: 08/30/2023
 ms.localizationpriority: medium
 ms.prod: windows-client
 ms.technology: itpro-manage
@@ -28,7 +28,7 @@ ms.topic: reference
 <!-- DisableAccountNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows Insider Preview |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows Insider Preview |
 <!-- DisableAccountNotifications-Applicability-End -->
 
 <!-- DisableAccountNotifications-OmaUri-Begin -->
@@ -38,8 +38,16 @@ ms.topic: reference
 <!-- DisableAccountNotifications-OmaUri-End -->
 
 <!-- DisableAccountNotifications-Description-Begin -->
-<!-- Description-Source-DDF -->
-This policy allows you to prevent Windows from displaying notifications to Microsoft account (MSA) and local users in Start (user tile). Notifications include getting users to: reauthenticate; backup their device; manage cloud storage quotas as well as manage their Microsoft 365 or XBOX subscription. If you enable this policy setting, Windows won't send account related notifications for local and MSA users to the user tile in Start.
+<!-- Description-Source-ADMX -->
+This policy allows you to prevent Windows from displaying notifications to Microsoft account (MSA) and local users in Start (user tile).
+
+Notifications include getting users to: reauthenticate; backup their device; manage cloud storage quotas as well as manage their Microsoft 365 or XBOX subscription.
+
+- If you enable this policy setting, Windows won't send account related notifications for local and MSA users to the user tile in Start.
+
+- If you disable or don't configure this policy setting, Windows will send account related notifications for local and MSA users to the user tile in Start.
+
+No reboots or service restarts are required for this policy setting to take effect.
 <!-- DisableAccountNotifications-Description-End -->
 
 <!-- DisableAccountNotifications-Editable-Begin -->
@@ -71,7 +79,12 @@ This policy allows you to prevent Windows from displaying notifications to Micro
 | Name | Value |
 |:--|:--|
 | Name | DisableAccountNotifications |
-| Path | AccountNotifications > AT > WindowsComponents > AccountNotifications |
+| Friendly Name | Turn off account notifications in Start |
+| Location | User Configuration |
+| Path | Windows Components > Account Notifications |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\AccountNotifications |
+| Registry Value Name | DisableAccountNotifications |
+| ADMX File Name | AccountNotifications.admx |
 <!-- DisableAccountNotifications-GpMapping-End -->
 
 <!-- DisableAccountNotifications-Examples-Begin -->
@@ -86,7 +99,7 @@ This policy allows you to prevent Windows from displaying notifications to Micro
 <!-- DisallowCloudNotification-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DisallowCloudNotification-Applicability-End -->
 
 <!-- DisallowCloudNotification-OmaUri-Begin -->
@@ -168,7 +181,7 @@ To validate the configuration:
 <!-- DisallowNotificationMirroring-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1607 [10.0.14393] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1607 [10.0.14393] and later |
 <!-- DisallowNotificationMirroring-Applicability-End -->
 
 <!-- DisallowNotificationMirroring-OmaUri-Begin -->
@@ -239,7 +252,7 @@ This feature can be turned off by apps that don't want to participate in notific
 <!-- DisallowTileNotification-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 1803 [10.0.17134] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 1803 [10.0.17134] and later |
 <!-- DisallowTileNotification-Applicability-End -->
 
 <!-- DisallowTileNotification-OmaUri-Begin -->
@@ -308,7 +321,7 @@ No reboots or service restarts are required for this policy setting to take effe
 <!-- EnableExpandedToastNotifications-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 10, version 2004 [10.0.19041.1620] and later |
+| ❌ Device <br> ✅ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 10, version 2004 [10.0.19041.1620] and later |
 <!-- EnableExpandedToastNotifications-Applicability-End -->
 
 <!-- EnableExpandedToastNotifications-OmaUri-Begin -->
@@ -318,12 +331,16 @@ No reboots or service restarts are required for this policy setting to take effe
 <!-- EnableExpandedToastNotifications-OmaUri-End -->
 
 <!-- EnableExpandedToastNotifications-Description-Begin -->
-<!-- Description-Source-DDF -->
+<!-- Description-Source-ADMX -->
 This policy setting turns on multiple expanded toast notifications in action center.
 
 - If you enable this policy setting, the first three notifications of each application will be expanded by default in action center.
 
-- If you disable or don't configure this policy setting, only the first notification of each application will be expanded by default in action center. Windows 10 only. This will be immediately deprecated for Windows 11. No reboots or service restarts are required for this policy setting to take effect.
+- If you disable or don't configure this policy setting, only the first notification of each application will be expanded by default in action center.
+
+Windows 10 only. This will be immediately deprecated for Windows 11.
+
+No reboots or service restarts are required for this policy setting to take effect.
 <!-- EnableExpandedToastNotifications-Description-End -->
 
 <!-- EnableExpandedToastNotifications-Editable-Begin -->
@@ -355,7 +372,12 @@ This policy setting turns on multiple expanded toast notifications in action cen
 | Name | Value |
 |:--|:--|
 | Name | ExpandedToastNotifications |
-| Path | WPN > AT > StartMenu > NotificationsCategory |
+| Friendly Name | Turn on multiple expanded toast notifications in action center |
+| Location | User Configuration |
+| Path | Start Menu and Taskbar > Notifications |
+| Registry Key Name | SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\PushNotifications |
+| Registry Value Name | EnableExpandedToastNotifications |
+| ADMX File Name | WPN.admx |
 <!-- EnableExpandedToastNotifications-GpMapping-End -->
 
 <!-- EnableExpandedToastNotifications-Examples-Begin -->
@@ -370,7 +392,7 @@ This policy setting turns on multiple expanded toast notifications in action cen
 <!-- WnsEndpoint-Applicability-Begin -->
 | Scope | Editions | Applicable OS |
 |:--|:--|:--|
-| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE | ✅ Windows 11, version 21H2 [10.0.22000] and later |
+| ✅ Device <br> ❌ User | ✅ Pro <br> ✅ Enterprise <br> ✅ Education <br> ✅ Windows SE <br> ✅ IoT Enterprise / IoT Enterprise LTSC | ✅ Windows 11, version 21H2 [10.0.22000] and later |
 <!-- WnsEndpoint-Applicability-End -->
 
 <!-- WnsEndpoint-OmaUri-Begin -->

@@ -1,7 +1,7 @@
 ---
 title: Validate and Deploy MFA for Windows Hello for Business with key trust
 description: Validate and deploy multi-factor authentication (MFA) for Windows Hello for Business in an on-premises key trust model.
-ms.date: 12/12/2022
+ms.date: 09/07/2023
 appliesto: 
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 11</a>
 - ✅ <a href=https://learn.microsoft.com/windows/release-health/supported-versions-windows-client target=_blank>Windows 10</a>
