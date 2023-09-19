@@ -128,7 +128,7 @@ Here's a list of recommendations to consider before enabling Windows passwordles
 
 There's a known issue affecting the in-session authentication experience when using FIDO2 security keys, where security keys aren't always an available option. The product group is aware of this behavior and plans to improve this in the future.
 
-## Provide feedback
+### :::image type="icon" source="../../images/icons/feedback.svg" border="false"::: Provide feedback
 
 To provide feedback for Windows passwordless experience, open [**Feedback Hub**][FHUB] and use the category **Security and Privacy > Passwordless experience**.
 
