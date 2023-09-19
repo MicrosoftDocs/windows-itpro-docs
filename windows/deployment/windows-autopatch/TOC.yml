@@ -127,8 +127,6 @@
               href: references/windows-autopatch-conflicting-configurations.md
         - name: Changes made at tenant enrollment
           href: references/windows-autopatch-changes-to-tenant.md
-        - name: Driver and firmware updates public preview addendum
-          href: references/windows-autopatch-driver-and-firmware-updates-public-preview-addendum.md
     - name: What's new
       href:
       items: 
