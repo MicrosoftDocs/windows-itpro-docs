@@ -235,7 +235,7 @@ Pick one of the following options to learn how to use a passkey, based on where 
   :::column-end:::
 :::row-end:::
 
-#### [:::image type="icon" source="images/qr-code.svg" border="false"::: **New phone or tablet**](#tab/mobile)
+#### [:::image type="icon" source="images/qr-code.svg" border="false"::: **Phone or tablet**](#tab/mobile)
 
 :::row:::
   :::column span="3":::
@@ -303,9 +303,8 @@ Pick one of the following options to learn how to use a passkey, based on where 
 
 ### Manage passkeys
 
-To view and manage passkeys saved for apps or websites, go to **Settings > Accounts > Passkeys**, or use the following shortcut:
 > [!div class="nextstepaction"]
-> [Manage passkeys](ms-settings:savedpasskeys)
+> To view and manage passkeys saved for apps or websites, go to **Settings > Accounts > Passkeys**, or use the following shortcut: [Manage passkeys](ms-settings:savedpasskeys)
 
 - A list of saved passkeys is displayed and you can filter them by name
 - To delete a passkey, select **... > Delete passkey** next to the passkey name
