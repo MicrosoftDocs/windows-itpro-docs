@@ -1074,6 +1074,10 @@ This policy setting allows you to configure the maximum percentage CPU utilizati
 - If you enable this setting, CPU utilization won't exceed the percentage specified.
 
 - If you disable or don't configure this setting, CPU utilization won't exceed the default value.
+
+> [!NOTE]
+> If ScanOnlyIfIdle (instructing the product to scan only when the computer is not in use) and DisableCpuThrottleOnIdleScans (instructing the product to disable CPU throttling on idle scans) are both enabled, then the value of AvgCPULoadFactor is ignored.
+
 <!-- AvgCPULoadFactor-Description-End -->
 
 <!-- AvgCPULoadFactor-Editable-Begin -->
@@ -2902,7 +2906,9 @@ Valid remediation action values are:
 <!-- Add any additional information about this CSP here. Anything outside this section will get overwritten. -->
 <!-- Links -->
 [TAMPER-1]: /microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection
+
 [TAMPER-2]: /microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection#what-about-exclusions
+
 <!-- Defender-CspMoreInfo-End -->
 
 <!-- Defender-End -->
@@ -2910,3 +2916,4 @@ Valid remediation action values are:
 ## Related articles
 
 [Policy configuration service provider](policy-configuration-service-provider.md)
+
