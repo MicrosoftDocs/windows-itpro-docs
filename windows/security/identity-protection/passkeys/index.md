@@ -65,8 +65,8 @@ Follow these steps to create a passkey from a Windows device:
   :::column span="3":::
 
 - **This Windows device**: the passkey is saved locally on your Windows device, and protected by Windows Hello (biometrics and PIN)
-- **iPhone, iPad or Android device**: the passkey is stored on a phone or tablet, protected by the device's biometrics, if offered by the device. This option requires you to scan a QR code with your phone or tablet
-- **Linked device**: the key is stored on a *linked* device, typically a phone or tablet, protected by the device's biometrics or a PIN. This option is only supported for Android devices and requires the linked device to be connected via Bluetooth to the Windows device and becomes available after a passkey is created in the mobile device
+- **iPhone, iPad or Android device**: the passkey is saved on a phone or tablet, protected by the device's biometrics, if offered by the device. This option requires you to scan a QR code with your phone or tablet, which must be in proximity of the Windows device
+- **Linked device**: the passkey is saved on a device paired via Bluetooth with the Windows device, protected by the device's biometrics or a PIN. This option is only supported for Android devices
 - **Security key**: the passkey is saved to a FIDO2 security key, protected by the key's unlock mechanism (for example, biometrics or PIN)
 
   :::column-end:::
@@ -110,7 +110,7 @@ Pick one of the following options to learn how to save a passkey, based on where
 :::row:::
   :::column span="3":::
 
-  5. Scan the QR code with your phone or tablet, and follow the instructions on the device to save the passkey
+  5. Scan the QR code with your phone or tablet. Wait for the connection to the device to be established and follow the instructions to save the passkey
 
   :::column-end:::
   :::column span="1":::
@@ -203,9 +203,9 @@ Follow these steps to use a passkey:
 :::row:::
   :::column span="3":::
 - **This Windows device**: use this option to use a passkey that is stored locally on your Windows device, and protected by Windows Hello
-- **iPhone, iPad or Android device**: use this option if you want to sign in with a passkey stored on a phone or tablet. This option requires you to scan a QR code with your phone or tablet
-- **Linked device**: use this option if you want to sign in with a passkey stored on a *linked* device. This option is only supported for Android devices and requires the linked device to be connected via Bluetooth to the Windows device
-- **Security key** - use this option if you want to sign in with a passkey stored on a FIDO2 security key
+- **iPhone, iPad or Android device**: use this option if you want to sign in with a passkey stored on a phone or tablet. This option requires you to scan a QR code with your phone or tablet, which must be in proximity of the Windows device
+- **Linked device**: use this option if you want to sign in with a passkey stored on a device paired via Bluetooth with the Windows device. This option is only supported for Android devices
+- **Security key**: use this option if you want to sign in with a passkey stored on a FIDO2 security key
   :::column-end:::
   :::column span="1":::
   :::image type="content" source="images/use-passkey.png" alt-text="Screenshot of the passkey dialog prompting the user to pick where the passkey is stored." lightbox="images/use-passkey.png" border="false":::
@@ -241,7 +241,7 @@ Pick one of the following options to learn how to use a passkey, based on where 
 :::row:::
   :::column span="3":::
 
-  4. Scan the QR code with your phone or tablet where you saved the passkey
+  4. Scan the QR code with your phone or tablet where you saved the passkey. Once the connection to the device is established, follow the instructions to use the passkey
 
   :::column-end:::
   :::column span="1":::
