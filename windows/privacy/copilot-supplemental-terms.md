@@ -31,9 +31,9 @@ Copilot in Windows is your AI companion that brings productivity to your fingert
 
 3. Bing Chat
 
-  a. Your Copilot in Windows experiences powered by Bing Chat are subject to Bing Chat’s terms of use [https://go.microsoft.com/fwlink/p/?linkid=2247757](https://go.microsoft.com/fwlink/p/?linkid=2247757).  
+  a. Your Copilot in Windows experiences powered by Bing Chat are subject to [Bing Chat’s terms of use](https://go.microsoft.com/fwlink/p/?linkid=2247757).  
 
-  b. If your organization is allowing you to use Bing Chat Enterprise, your Copilot in Windows experiences will be powered by Bing Chat Enterprise and will be subject to Bing Chat Enterprise’s terms of use [https://go.microsoft.com/fwlink/p/?linkid=2247908](https://go.microsoft.com/fwlink/p/?linkid=2247908).
+  b. If your organization is allowing you to use Bing Chat Enterprise, your Copilot in Windows experiences will be powered by Bing Chat Enterprise and will be subject to [Bing Chat Enterprise’s terms of use](https://go.microsoft.com/fwlink/p/?linkid=2247908).
 
 4. Using Copilot in Windows
 
