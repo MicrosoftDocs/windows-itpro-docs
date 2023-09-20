@@ -13,7 +13,7 @@ appliesto:
 
 # Support for passkeys in Windows
 
-Passkeys provide a more secure and convenient method to logging into websites and applications compared to passwords. Unlike passwords, which users must remember and type, passkeys are stored as secrets on a device and can use a device's unlock mechanism (such as biometrics or a PIN). Passkeys can be used without the need for other sign in challenges, making the authentication process faster, secure, and more convenient.
+Passkeys provide a more secure and convenient method to logging into websites and applications compared to passwords. Unlike passwords, which users must remember and type, passkeys are stored as secrets on a device and can use a device's unlock mechanism (such as biometrics or a PIN). Passkeys can be used without the need for other sign-in challenges, making the authentication process faster, secure, and more convenient.
 
 You can use passkeys with any applications or websites that support them, to create and sign in with Windows Hello. Once a passkey is created and stored with Windows Hello, you can use your device's biometrics or PIN to sign in. Alternatively, you can use a companion device (phone or tablet) to sign in.
 
@@ -32,7 +32,7 @@ FIDO protocols prioritize user privacy, as they're designed to prevent online se
 
 ### Passkeys compared to passwords
 
-Passkeys have several advantages over passwords, including their ease of use and intuitive nature. Unlike passwords, passkeys don't require a creation process, don't need to be remembered, and don't need to be safeguarded. Additionally, passkeys are unique to each website or application, preventing their reuse. They're highly secure because they're only stored on the user's devices, with the service only storing public keys. Passkeys are resistant to phishing attempts, as they're enforced by the browsers or operating systems to only be used for the appropriate service, rather than relying on human verification. Finally, passkeys provide cross-device and cross-platform authentication, meaning that a passkey from one device can be used to sign in on another device.
+Passkeys have several advantages over passwords, including their ease of use and intuitive nature. Unlike passwords, passkeys are easy to create, don't need to be remembered, and don't need to be safeguarded. Additionally, passkeys are unique to each website or application, preventing their reuse. They're highly secure because they're only stored on the user's devices, with the service only storing public keys. Passkeys are designed to prevent attackers to guess or obtain them, which helps to make them resistant to phishing attempts where the attacker may try to trick the user into revealing the private key. Passkeys are enforced by the browsers or operating systems to only be used for the appropriate service, rather than relying on human verification. Finally, passkeys provide cross-device and cross-platform authentication, meaning that a passkey from one device can be used to sign in on another device.
 
 [!INCLUDE [passkey](../../../../includes/licensing/passkeys.md)]
 
