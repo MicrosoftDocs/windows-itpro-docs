@@ -45,11 +45,6 @@ With this policy setting, it can be configured whether BitLocker requires additi
 
 With this policy setting, it can be configured whether BitLocker requires additional authentication each time the computer starts and whether BitLocker will be used with a Trusted Platform Module (TPM). This policy setting is applied when BitLocker is turned on.
 
-|                  | Setting                                                                                                          |
-|------------------|------------------------------------------------------------------------------------------------------------------|
-| **CSP**          | ./[Device/User]/Vendor/MSFT/Policy/Config/Start/[HideCopilotButton](mdm/policy-csp-start.md#hidecopilotbutton)   |
-| **Group policy** | Computer or User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button** |
-
 #### [:::image type="icon" source="../../../images/icons/intune.svg"::: **Intune**](#tab/intune) 
 
 ./[Device/User]/Vendor/MSFT/Policy/Config/Start/[HideCopilotButton](mdm/policy-csp-start.md#hidecopilotbutton)
@@ -64,11 +59,6 @@ Computer or User Configuration > Administrative Templates > Start Menu and Taskb
 
 With this policy setting, it can be configured whether BitLocker requires additional authentication each time the computer starts and whether BitLocker will be used with a Trusted Platform Module (TPM). This policy setting is applied when BitLocker is turned on.
 
-|                  | Setting                                                                                                          |
-|------------------|------------------------------------------------------------------------------------------------------------------|
-| **CSP**          | ./[Device/User]/Vendor/MSFT/Policy/Config/Start/[HideCopilotButton](mdm/policy-csp-start.md#hidecopilotbutton)   |
-| **Group policy** | Computer or User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button** |
-
 #### [:::image type="icon" source="../../../images/icons/intune.svg"::: **Intune**](#tab/intune) 
 
 ./[Device/User]/Vendor/MSFT/Policy/Config/Start/[HideCopilotButton](mdm/policy-csp-start.md#hidecopilotbutton)
@@ -82,11 +72,6 @@ Computer or User Configuration > Administrative Templates > Start Menu and Taskb
 ### Require additional authentication at startup 1
 
 With this policy setting, it can be configured whether BitLocker requires additional authentication each time the computer starts and whether BitLocker will be used with a Trusted Platform Module (TPM). This policy setting is applied when BitLocker is turned on.
-
-|                  | Setting                                                                                                          |
-|------------------|------------------------------------------------------------------------------------------------------------------|
-| **CSP**          | ./[Device/User]/Vendor/MSFT/Policy/Config/Start/[HideCopilotButton](mdm/policy-csp-start.md#hidecopilotbutton)   |
-| **Group policy** | Computer or User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button** |
 
 #### [:::image type="icon" source="../../../images/icons/intune.svg"::: **Intune**](#tab/intune) 
 
