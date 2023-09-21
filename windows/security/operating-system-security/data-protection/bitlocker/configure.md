@@ -94,6 +94,28 @@ Computer or User Configuration > Administrative Templates > Start Menu and Taskb
 
 #### [:::image type="icon" source="images/os-drive.svg"::: **OS data drive**](#tab/os)
 
+## OS data drive policies
+
+Here's a list of BitLocker policies applicable to the OS data drive:
+
+- [Allow devices compliant with InstantGo or HSTI to opt out of pre-boot PIN](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+- [Allow enhanced PINs for startup](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+- [Allow network unlock at startup](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+- [Allow Secure Boot for integrity validation](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+- [Choose how BitLocker-protected operating system drives can be recovered](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+- [Configure minimum PIN length for startup](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+- [Configure pre-boot recovery message and URL](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+- [Configure TPM platform validation profile for BIOS-based firmware configurations](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+- [Configure TPM platform validation profile for native UEFI firmware configurations](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+- [Configure use of hardware-based encryption for operating system drives](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+- [Configure use of passwords for operating system drives](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+- [Disallow standard users from changing the PIN or password](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+- [Enable use of BitLocker authentication requiring preboot keyboard input on slates](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+- [Enforce drive encryption type on operating system drives](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+- [Require additional authentication at startup](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+- [Reset platform validation data after BitLocker recovery](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+- [Use enhanced Boot Configuration Data validation profile](#choose-how-bitlocker-protected-removable-drives-can-be-recovered)
+
 | Title | Description |
 |-|-|
 |Choose default folder for recovery password| This policy setting allows you to specify the default path that is displayed when the BitLocker Drive Encryption setup wizard prompts the user to enter the location of a folder in which to save the recovery password. This policy setting is applied when you turn on BitLocker.  If you enable this policy setting, you can specify the path that will be used as the default folder location when the user chooses the option to save the recovery password in a folder. You can specify either a fully qualified path or include the target computer's environment variables in the path. If the path is not valid, the BitLocker setup wizard will display the computer's top-level folder view.  If you disable or do not configure this policy setting, the BitLocker setup wizard will display the computer's top-level folder view when the user chooses the option to save the recovery password in a folder.  Note: This policy setting does not prevent the user from saving the recovery password in another folder.|
@@ -141,10 +163,11 @@ This policy setting allows you to control how BitLocker-protected removable data
 | **CSP** | ./[Device/User]/Vendor/MSFT/Policy/Config/Start/[HideCopilotButton](mdm/policy-csp-start.md#hidecopilotbutton) |
 | **Group policy** | Computer or User Configuration > Administrative Templates > Start Menu and Taskbar > **Hide the Copilot button** |
 
-
 #### [:::image type="icon" source="images/unlocked-drive.svg"::: **Removable data drive**](#tab/removable)
 
-Here's a list of BitLocker policies applicable to  removable drives, and the paths for Intune settings catalog, CSP and group policy.
+## Removable data drive policies
+
+Here's a list of BitLocker policies applicable to removable drives, and the paths for Intune settings catalog, CSP and group policy.
 
 | Title | Description |
 |-|-|
