@@ -6,7 +6,7 @@ ms.technology: itpro-privacy
 ms.localizationpriority: high
 author: DHB-MSFT
 ms.author: danbrown
-manager: dougeby
+manager: laurawi
 ms.date: 05/11/2020
 ms.topic: reference
 ---
