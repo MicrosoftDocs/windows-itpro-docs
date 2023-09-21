@@ -49,11 +49,11 @@ For more information on the ROCA vulnerability, please see:
 
 If you enable this policy setting the following options are supported:
 
-Ignore: during authentication the domain controller won't probe any WHfB keys for the ROCA vulnerability.
+Ignore: during authentication, the domain controller won't probe any WHfB keys for the ROCA vulnerability.
 
-Audit: during authentication the domain controller will emit audit events for WHfB keys that are subject to the ROCA vulnerability (authentications will still succeed).
+Audit: during authentication, the domain controller will emit audit events for WHfB keys that are subject to the ROCA vulnerability (authentications will still succeed).
 
-Block: during authentication the domain controller will block the use of WHfB keys that are subject to the ROCA vulnerability (authentications will fail).
+Block: during authentication, the domain controller will block the use of WHfB keys that are subject to the ROCA vulnerability (authentications will fail).
 
 This setting only takes effect on domain controllers.
 
@@ -61,9 +61,9 @@ If not configured, domain controllers will default to using their local configur
 
 A reboot isn't required for changes to this setting to take effect.
 
-Note to avoid unexpected disruptions this setting shouldn't be set to Block until appropriate mitigations have been performed, for example patching of vulnerable TPMs.
+Note to avoid unexpected disruptions this setting shouldn't be set to Block until appropriate mitigations have been performed, for example, patching of vulnerable TPMs.
 
-More information is available at< https://go.microsoft.com/fwlink/?linkid=2116430>.
+More information is available at [Update your (TPM) firmware](https://support.microsoft.com/windows/update-your-security-processor-tpm-firmware-94205cbc-a492-8d79-cc55-1ecd6b0a8022)
 <!-- SamNGCKeyROCAValidation-Description-End -->
 
 <!-- SamNGCKeyROCAValidation-Editable-Begin -->
