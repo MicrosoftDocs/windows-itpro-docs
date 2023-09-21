@@ -17,9 +17,9 @@ Copilot in Windows is your AI companion that brings productivity to your fingert
 
 1. Preview
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a. COPILOT IN WINDOWS IS A PREVIEW FEATURE AND IS PROVIDED “AS-IS,” “WITH ALL FAULTS,” AND “AS AVAILABLE".  
+    a. COPILOT IN WINDOWS IS A PREVIEW FEATURE AND IS PROVIDED “AS-IS,” “WITH ALL FAULTS,” AND “AS AVAILABLE".  
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b. Microsoft makes no guarantees or promises about how Copilot in Windows operates or that it will function as intended.
+    b. Microsoft makes no guarantees or promises about how Copilot in Windows operates or that it will function as intended.
 
 2. Eligibility and Use Requirements.
 
