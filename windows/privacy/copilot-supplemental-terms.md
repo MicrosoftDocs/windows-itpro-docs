@@ -25,9 +25,9 @@ Copilot in Windows is your AI companion that brings productivity to your fingert
 
     a. You must be signed into Windows with your Microsoft account to access Copilot in Windows.  
 
-    b. If you are signed into Windows with your work or school account, your organization may have given you the ability to use Copilot in Windows. If you have access to Copilot in Windows but your organization has not enabled Bing Chat Enterprise, your use will be limited to Bing Chat’s current turn limit.
+    b. If you're signed into Windows with your work or school account, your organization may have given you the ability to use Copilot in Windows. If you have access to Copilot in Windows but your organization hasn't enabled Bing Chat Enterprise, your use will be limited to Bing Chat’s current turn limit.
 
-    c. Along with these Terms, your use of Copilot in Windows is also governed by the Microsoft Services Agreement, which is incorporated by reference. You agree that Copilot in Windows constitutes a Service, as defined in the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement). If there is any conflict between these Terms and the Microsoft Services Agreement, the conflicting provision in these Terms will control.
+    c. Along with these Terms, your use of Copilot in Windows is also governed by the Microsoft Services Agreement, which is incorporated by reference. You agree that Copilot in Windows constitutes a Service, as defined in the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement). If there's any conflict between these Terms and the Microsoft Services Agreement, the conflicting provision in these Terms will control.
 
 3. Bing Chat
 
@@ -49,11 +49,11 @@ Copilot in Windows is your AI companion that brings productivity to your fingert
 
 6. Ownership of Content
 
-    a. Microsoft does not claim ownership of any content you provide, post, input, or submit to, or receive from, Copilot in Windows, Bing Chat, or Bing Chat Enterprise (including feedback and suggestions). You will need to make your own determination regarding the intellectual property rights you have in output content and its commercial usability, taking into account, among other things, your usage scenario(s) and the laws of the relevant jurisdiction. You warrant and represent that you or your organization owns or otherwise controls all of the rights to your content as described in these Terms including, without limitation, all the rights necessary for you to provide, post, upload, input or submit the content.  
+    a. Microsoft doesn't claim ownership of any content you provide, post, input, or submit to, or receive from, Copilot in Windows, Bing Chat, or Bing Chat Enterprise (including feedback and suggestions). You'll need to make your own determination regarding the intellectual property rights you have in output content and its commercial usability, taking into account, among other things, your usage scenario(s) and the laws of the relevant jurisdiction. You warrant and represent that you or your organization owns or otherwise controls all of the rights to your content as described in these Terms including, without limitation, all the rights necessary for you to provide, post, upload, input or submit the content.  
 
 7. Third-party claims
 
-    a. You are responsible for responding to any third-party claims regarding your use of Copilot in Windows in compliance with applicable laws (including, but not limited to, copyright infringement or other claims relating to output content that was output during your use of Copilot in Windows).
+    a. You're responsible for responding to any third-party claims regarding your use of Copilot in Windows in compliance with applicable laws (including, but not limited to, copyright infringement or other claims relating to output content that was output during your use of Copilot in Windows).
 
 8. Reverse engineering  
 
