@@ -11,6 +11,8 @@ ms.date: 09/20/2023
 ms.topic: conceptual
 hideEdit: true
 layout: ContentPage
+ROBOTS: NOINDEX, NOFOLLOW
+feedback_system: None
 ---
 
 # COPILOT IN WINDOWS (PREVIEW) SUPPLEMENTAL TERMS
