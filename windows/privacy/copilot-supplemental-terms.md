@@ -7,8 +7,9 @@ ms.localizationpriority: medium
 author: DHB-MSFT
 ms.author: danbrown
 manager: laurawi
-ms.date: 09/21/2023
+ms.date: 09/20/2023
 ms.topic: conceptual
+hideEdit: true
 ---
 
 # COPILOT IN WINDOWS (PREVIEW) SUPPLEMENTAL TERMS
